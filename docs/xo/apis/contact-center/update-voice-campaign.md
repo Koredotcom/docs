@@ -4,7 +4,7 @@ Use this API to update the configuration details of an existing voice campaign u
 
 | **Method**       | PUT |
 |------------------|-----------|
-| **Endpoint**     | `https://((host))/agentassist/api/v1/public/{{botId}}/campaign/{{campaignId}}?campaignType=voice` |
+| **Endpoint**     | `https://((host))/agentassist/api/v1/public/{{IID}}/campaign/{{campaignId}}?campaignType=voice` |
 | **Content-Type** | `application/json` |
 | **Authorization**| `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope**    | Campaign Management |
@@ -14,14 +14,14 @@ Use this API to update the configuration details of an existing voice campaign u
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|-----------|
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `botId` | You can access it from the General Settings page of the bot. | string, required |
+| `IId` | The Application ID. | string, required |
 | `campaignId` | Unique ID of the campaign to be updated. For example: `cd-ed19e3c7-3682-5e72-a839-af9e0711xxxx` | string, required |
 
 ## Query Parameter
 
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|-----------|
-| `campaignType` | Type of Campaign. Use `"sms"` | string, required |
+| `campaignType` | Type of Campaign. Use `"voice"` | string, required |
 
 ## Sample Request
 
@@ -199,39 +199,37 @@ curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{botI
 
 ## Response Body Parameters
 
-### Response Parameters
-
-| Parameter                                              | Description                                                                 | Type                    |
+| **Parameter**                                              | **Description**                                                                 | **Type**                    |
 |--------------------------------------------------------|-----------------------------------------------------------------------------|-------------------------|
-| `status`                                               | Indicates the overall response status. Example: `"success"`                | String                  |
-| `message`                                              | Descriptive message about the result.                                      | String                  |
-| `id`                                                   | Unique identifier of the campaign (also repeated in `data.id`).            | String                  |
-| `data`                                                 | Contains the campaign configuration details.                               | Object                  |
+| `status`                                               | Indicates the overall response status. Example: `"success"`                | string                  |
+| `message`                                              | Descriptive message about the result.                                      | string                  |
+| `id`                                                   | Unique identifier of the campaign (also repeated in `data.id`).            | string                  |
+| `data`                                                 | Contains the campaign configuration details.                               | object                  |
 | `data.name`                                            | Display name of the campaign.                                              | String                  |
-| `data.lname`                                           | Lowercase name of the campaign, used internally.                           | String                  |
-| `data.description`                                     | Description of the campaign purpose and functionality.                     | String                  |
-| `data.priority`                                        | Campaign priority level.                                                   | String                  |
-| `data.dialingMode`                                     | Dialing mode used for the campaign. Example: `"Preview"`                  | String                  |
-| `data.dialingStrategy`                                 | Defines dialing strategy configuration.                                    | Object                  |
-| `data.dialingStrategy.callerId.phoneNumber`            | Caller ID phone number used for outbound calls.                            | String                  |
-| `data.dialingStrategy.callingHours`                    | Defines the allowed calling hours and schedule.                            | Object                  |
-| `data.dialingStrategy.callingHours.frequency`          | Calling frequency. Example: `"WEEKLY"`                                     | String                  |
-| `data.dialingStrategy.callingHours.days`               | Daily schedules with start/end time and day.                               | Array of Object         |
-| `data.dialingStrategy.callingHours.days[].start`       | Start time of calling window.                                              | String (hh:mm AM/PM)    |
-| `data.dialingStrategy.callingHours.days[].end`         | End time of calling window.                                                | String (hh:mm AM/PM)    |
-| `data.dialingStrategy.callingHours.days[].day`         | Day of the week. Example: `"MO"`, `"TU"`                                   | String (2-letter)       |
-| `data.dialingStrategy.callingHours.timezone`           | Timezone used for the calling schedule. Example: `"Asia/Kolkata"`         | String                  |
-| `data.dialingStrategy.dialingOrder`                    | Order in which records are dialed. Example: `"FIFO"`                       | String                  |
-| `data.dialingStrategy.maxAttemptsPerRecord`            | Maximum retry attempts for each record.                                    | Integer                 |
-| `data.dialingStrategy.defaultRetryPeriod`              | Default wait time between retries.                                         | Integer (minutes)       |
-| `data.dialingStrategy.maxRingTime`                     | Maximum ring time before hanging up.                                       | Integer (seconds)       |
-| `data.status`                                          | Current state of the campaign. Example: `"Ready"`                          | String                  |
-| `data.maxSkips`                                        | Maximum allowed skips for contacts in the dialing list.                    | Integer                 |
-| `data.createdAt`                                       | Campaign creation timestamp.                                               | String (ISO 8601)       |
-| `data.updatedAt`                                       | Last updated timestamp.                                                    | String (ISO 8601)       |
-| `data.schedule`                                        | Schedule configuration for the campaign.                                   | Object                  |
-| `data.schedule.isSchedulingEnabled`                    | Indicates whether campaign scheduling is enabled.                          | Boolean                 |
-| `data.schedule.isRecurrenceEnabled`                    | Indicates whether campaign recurrence is enabled.                          | Boolean                 |
-| `data.id`                                              | Unique identifier for the campaign.                                        | String                  |
-| `data.contactLists`                                    | Names of associated contact lists.                                         | Array of String         |
-| `data.enableMachineDetect`                             | Indicates whether machine detection is enabled.                            | Boolean                 |
+| `data.lname`                                           | Lowercase name of the campaign, used internally.                           | string                  |
+| `data.description`                                     | Description of the campaign purpose and functionality.                     | string                  |
+| `data.priority`                                        | Campaign priority level.                                                   | string                  |
+| `data.dialingMode`                                     | Dialing mode used for the campaign. Example: `"Preview"`                  | string                  |
+| `data.dialingStrategy`                                 | Defines dialing strategy configuration.                                    | object                  |
+| `data.dialingStrategy.callerId.phoneNumber`            | Caller ID phone number used for outbound calls.                            | string                  |
+| `data.dialingStrategy.callingHours`                    | Defines the allowed calling hours and schedule.                            | object                  |
+| `data.dialingStrategy.callingHours.frequency`          | Calling frequency. Example: `"WEEKLY"`                                     | string                  |
+| `data.dialingStrategy.callingHours.days`               | Daily schedules with start/end time and day.                               | array of object         |
+| `data.dialingStrategy.callingHours.days[].start`       | Start time of calling window. (hh:mm AM/PM)                                              | string    |
+| `data.dialingStrategy.callingHours.days[].end`         | End time of calling window. (hh:mm AM/PM)                                               | string     |
+| `data.dialingStrategy.callingHours.days[].day`         | Day of the week. (2-letter)  Example: `"MO"`, `"TU"`                                   | string       |
+| `data.dialingStrategy.callingHours.timezone`           | Timezone used for the calling schedule. Example: `"Asia/Kolkata"`         | string                  |
+| `data.dialingStrategy.dialingOrder`                    | Order in which records are dialed. Example: `"FIFO"`                       | string                  |
+| `data.dialingStrategy.maxAttemptsPerRecord`            | Maximum retry attempts for each record.                                    | integer                 |
+| `data.dialingStrategy.defaultRetryPeriod`              | Default wait time between retries. (minutes)                                        | integer        |
+| `data.dialingStrategy.maxRingTime`                     | Maximum ring time before hanging up. (seconds)                                      | integer        |
+| `data.status`                                          | Current state of the campaign. Example: `"Ready"`                          | string                  |
+| `data.maxSkips`                                        | Maximum allowed skips for contacts in the dialing list.                    | integer                 |
+| `data.createdAt`                                       | Campaign creation timestamp. (ISO 8601)                                                | string       |
+| `data.updatedAt`                                       | Last updated timestamp. (ISO 8601)                                                   | string        |
+| `data.schedule`                                        | Schedule configuration for the campaign.                                   | object                  |
+| `data.schedule.isSchedulingEnabled`                    | Indicates whether campaign scheduling is enabled.                          | boolean                 |
+| `data.schedule.isRecurrenceEnabled`                    | Indicates whether campaign recurrence is enabled.                          | boolean                 |
+| `data.id`                                              | Unique identifier for the campaign.                                        | string                  |
+| `data.contactLists`                                    | Names of associated contact lists.                                         | array of string         |
+| `data.enableMachineDetect`                             | Indicates whether machine detection is enabled.                            | boolean                 |

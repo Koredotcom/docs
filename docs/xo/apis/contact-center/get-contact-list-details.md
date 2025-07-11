@@ -14,7 +14,7 @@ Use this API to retrieve the full details of a specific contact list using its I
 | **Parameter**   | **Description**                                                                 | **Type**          |
 |-----------------|----------------------------------------------------------------------------------|-------------------|
 | `host`          | Environment URL, for example, `https://platform.kore.ai`                         | string, required  |
-| `IId`      | The application ID. | string, required  |
+| `IId`      | The Application ID. | string, required  |
 | `contactListId` | Unique identifier of the contact list to update.                                 | string, required  |
 
 ## Sample Request
@@ -24,7 +24,6 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/con
 --header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
 --header 'accountId: 67777ce93e25326494e9xxxx' \
 --header 'auth: <token>'
-
 ```
 
 ## Headers
@@ -88,7 +87,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/con
 | `isListInUse`       | Indicates if the list is currently in use.               | boolean   |
 | `listType`          | Type of list – usually `"call"`.                         | string    |
 | `campaignInUse`     | Campaigns currently using this list.                     | array     |
-| `source`            | `"passiveApi"` if created via API.                       | string    |
+| `source`            | `"passiveApiIntegration"` if created via API.                       | string    |
 | `apiConfigurations` | Data sync settings, like duplicate handling.             | object    |
 | `files`             | List of files associated with this contact list.         | array     |
 | `createdAt`         | ISO timestamp of when the contact list was created.      | string    |

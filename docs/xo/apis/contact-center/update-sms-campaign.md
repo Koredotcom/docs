@@ -14,7 +14,7 @@ Use this API to update an existing SMS campaign using the format, contact lists,
 | **Parameter** | **Description**                                                                                                         | **Type**         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------|------------------|
 | `host`        | Environment URL. For example: `https://platform.kore.ai`                                                                | string, required |
-| `IId`    | The application ID.                                | string, required |
+| `IId`    | The Application ID.                                | string, required |
 | `campaignId`  | Unique ID of the campaign to be updated. For example: `cd-ed19e3c7-3682-5e72-a839-af9e0711xxxx`                         | string, required |
 
 ## Query Parameter
@@ -125,7 +125,7 @@ curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{IID}
     "status": "success",
     "message": "Campaign Interactive Support SMS Campaign details updated successfully",
     "data": {
-        "_id": "cd-3aefda80-f98e-5f4f-ad41-92803abb036c",
+        "_id": "cd-3aefda80-f98e-5f4f-ad41-92803abbxxxx",
         "name": "Interactive Support SMS Campaign",
         "lname": "interactive support sms campaign",
         "description": "Updated: This campaign sends an SMS with a link or instructions to interact with a Kore.ai bot. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
@@ -133,7 +133,7 @@ curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{IID}
         "priority": "5",
         "dialingStrategy": {
             "callerId": {
-                "phoneNumber": "+919860792682"
+                "phoneNumber": "+919876543210"
             },
             "callingHours": {
                 "frequency": "WEEKLY",
@@ -167,7 +167,7 @@ curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{IID}
                 ]
             }
         },
-        "experienceFlow": "cf-67447605-115e-5dd2-a676-e158cf3b01d5",
+        "experienceFlow": "cf-67447605-115e-5dd2-a676-e158cf3bxxxx",
         "createdAt": "2025-06-27T09:25:53.320Z",
         "updatedAt": "2025-06-27T09:31:56.940Z",
         "schedule": {
@@ -214,4 +214,4 @@ curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{IID}
 | `campaignInstanceId`                       | Internal campaign instance identifier. For example: `cid-b1c6849b-b40f-550e-ace7-xxxx`          | string      |
 | `contactLists`                             | List of contact list names used in the campaign.                                                | array       |
 | `enableMachineDetect`                      | Indicates if machine detection is enabled (not applicable for SMS).                             | boolean     |
-| `data.format`                     | Specifies the message format (for example, `advanced`, `template`).                  | String  |
+| `data.format`                     | Specifies the message format (for example, `advanced`).                  | string  |

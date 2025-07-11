@@ -14,7 +14,7 @@ Retrieves the current status of a specific campaign using its campaign ID. Use t
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|----------|
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The application ID. | string, required |
+| `IId` | The Application ID. | string, required |
 | `campaignId` | Unique identifier of the campaign to trigger. | string, required |
 
 ## Query Parameter

@@ -4,7 +4,7 @@ Use this API to delete an active Voice campaign for a given stream ID and campai
 
 | **Method**     | DELETE                                                                                                                                            |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Endpoint**   | `https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign/{{campaignType}}?campaignType=voice`           |
+| **Endpoint**   | `https://{{host}}/agentassist/api/v1/public/{{IId}}/campaign/{{campaignType}}?campaignType=voice`           |
 | **Content-Type** | `application/json`                                                                                                                              |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)   |
 | **API Scope**  | Campaign Management                                                                                                                               |
@@ -13,8 +13,8 @@ Use this API to delete an active Voice campaign for a given stream ID and campai
 
 | **Parameter** | **Description**                                                                                      | **Type**          |
 |---------------|------------------------------------------------------------------------------------------------------|-------------------|
-| `host`          | Environment URL, for example, https://platform.kore.ai                                                | string, required  |
-| `botId`      | You can access it from the General Settings page of the bot.                      | string, required  |
+| `host`          | Environment URL, for example, `https://platform.kore.ai`                                                | string, required  |
+| `IId`      | The Application ID.                      | string, required  |
 | `campaignId`    | Unique identifier of the campaign to trigger.                                                        | string, required  |
 
 ## Query Parameters
@@ -112,36 +112,36 @@ curl --location --request DELETE 'https://{{host}}/agentassist/api/v1/public/{{b
 
 ## Response Body Parameters
 
-| Parameter                                            | Description                                                                                   | Type                  |
+| **Parameter**                                            | **Description**                                                                                   | **Type**                  |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------|
-| `status`                                            | Overall status of the API response. Example: `"success"`                                      | String                |
-| `message`                                           | Message indicating the result of the delete operation.                                        | String                |
-| `data`                                              | Object containing details of the deleted campaign.                                            | Object                |
-| `data._id`                                          | Unique identifier of the deleted campaign.                                                    | String                |
-| `data.name`                                         | Campaign name.                                                                                | String                |
-| `data.lname`                                        | Lowercase version of the campaign name.                                                       | String                |
-| `data.description`                                  | Description of the campaign objective and behavior.                                           | String                |
-| `data.priority`                                     | Priority assigned to the campaign.                                                            | String                |
-| `data.dialingMode`                                  | Dialing mode used by the campaign. Example: `"Preview"`                                       | String                |
-| `data.dialingStrategy`                              | Strategy configuration for dialing.                                                           | Object                |
-| `data.dialingStrategy.callerId.phoneNumber`         | Caller ID phone number used for outbound calls.                                               | String                |
-| `data.dialingStrategy.callingHours.frequency`       | Frequency of campaign execution. Example: `"WEEKLY"`                                          | String                |
-| `data.dialingStrategy.callingHours.days`            | List of days with start and end times for dialing.                                            | Array of Object       |
-| `data.dialingStrategy.callingHours.days[].day`      | Day of the week. Example: `"MO"`                                                              | String                |
-| `data.dialingStrategy.callingHours.days[].start`    | Start time of the campaign on that day.                                                       | String (HH:MM AM/PM)  |
-| `data.dialingStrategy.callingHours.days[].end`      | End time of the campaign on that day.                                                         | String (HH:MM AM/PM)  |
-| `data.dialingStrategy.callingHours.timezone`        | Time zone for the defined calling hours.                                                      | String                |
-| `data.dialingStrategy.dialingOrder`                 | Order in which contacts are dialed. Example: `"FIFO"`                                         | String                |
-| `data.dialingStrategy.maxAttemptsPerRecord`         | Maximum number of attempts allowed per contact.                                               | Integer               |
-| `data.dialingStrategy.defaultRetryPeriod`           | Time (in minutes) before retrying a failed attempt.                                            | Integer               |
-| `data.dialingStrategy.maxRingTime`                  | Maximum ring time per call attempt in seconds.                                                | Integer               |
-| `data.status`                                       | Current status of the campaign. Example: `"Stopped"`                                          | String                |
-| `data.maxSkips`                                     | Maximum number of skips allowed for this campaign.                                            | Integer               |
-| `data.createdAt`                                    | Timestamp of campaign creation.                                                               | String (ISO 8601)     |
-| `data.updatedAt`                                    | Timestamp of the last campaign update.                                                        | String (ISO 8601)     |
-| `data.schedule`                                     | Scheduling configuration of the campaign.                                                     | Object                |
-| `data.schedule.isSchedulingEnabled`                 | Indicates if scheduling is enabled.                                                           | Boolean               |
-| `data.schedule.isRecurrenceEnabled`                 | Indicates if recurrence is enabled.                                                           | Boolean               |
-| `data.campaignInstanceId`                           | Unique identifier for the campaign instance.                                                  | String                |
-| `data.contactLists`                                 | Names of contact lists linked to the campaign.                                                | Array of String       |
-| `data.enableMachineDetect`                          | Indicates if machine detection is enabled.                                                    | Boolean               |
+| `status`                                            | Overall status of the API response. Example: `"success"`                                      | string                |
+| `message`                                           | Message indicating the result of the delete operation.                                        | string                |
+| `data`                                              | Object containing details of the deleted campaign.                                            | object                |
+| `data._id`                                          | Unique identifier of the deleted campaign.                                                    | string                |
+| `data.name`                                         | Campaign name.                                                                                | string                |
+| `data.lname`                                        | Lowercase version of the campaign name.                                                       | string                |
+| `data.description`                                  | Description of the campaign objective and behavior.                                           | string                |
+| `data.priority`                                     | Priority assigned to the campaign.                                                            | string                |
+| `data.dialingMode`                                  | Dialing mode used by the campaign. Example: `"Preview"`                                       | string                |
+| `data.dialingStrategy`                              | Strategy configuration for dialing.                                                           | object                |
+| `data.dialingStrategy.callerId.phoneNumber`         | Caller ID phone number used for outbound calls.                                               | string                |
+| `data.dialingStrategy.callingHours.frequency`       | Frequency of campaign execution. Example: `"WEEKLY"`                                          | string                |
+| `data.dialingStrategy.callingHours.days`            | List of days with start and end times for dialing.                                            | array of object       |
+| `data.dialingStrategy.callingHours.days[].day`      | Day of the week. Example: `"MO"`                                                              | string                |
+| `data.dialingStrategy.callingHours.days[].start`    | Start time of the campaign on that day. (HH:MM AM/PM)                                                      | string   |
+| `data.dialingStrategy.callingHours.days[].end`      | End time of the campaign on that day. (HH:MM AM/PM)                                                         | string  |
+| `data.dialingStrategy.callingHours.timezone`        | Time zone for the defined calling hours.                                                      | string                |
+| `data.dialingStrategy.dialingOrder`                 | Order in which contacts are dialed. Example: `"FIFO"`                                         | string                |
+| `data.dialingStrategy.maxAttemptsPerRecord`         | Maximum number of attempts allowed per contact.                                               | integer               |
+| `data.dialingStrategy.defaultRetryPeriod`           | Time (in minutes) before retrying a failed attempt.                                            | integer               |
+| `data.dialingStrategy.maxRingTime`                  | Maximum ring time per call attempt in seconds.                                                | integer               |
+| `data.status`                                       | Current status of the campaign. Example: `"Stopped"`                                          | string                |
+| `data.maxSkips`                                     | Maximum number of skips allowed for this campaign.                                            | integer               |
+| `data.createdAt`                                    | Timestamp of campaign creation. (ISO 8601)                                                              | string      |
+| `data.updatedAt`                                    | Timestamp of the last campaign update. (ISO 8601)                                                       | string      |
+| `data.schedule`                                     | Scheduling configuration of the campaign.                                                     | object                |
+| `data.schedule.isSchedulingEnabled`                 | Indicates if scheduling is enabled.                                                           | boolean               |
+| `data.schedule.isRecurrenceEnabled`                 | Indicates if recurrence is enabled.                                                           | boolean               |
+| `data.campaignInstanceId`                           | Unique identifier for the campaign instance.                                                  | string                |
+| `data.contactLists`                                 | Names of contact lists linked to the campaign.                                                | array of string       |
+| `data.enableMachineDetect`                          | Indicates if machine detection is enabled.                                                    | boolean               |

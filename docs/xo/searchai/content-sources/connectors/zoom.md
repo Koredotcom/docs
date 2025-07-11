@@ -28,7 +28,7 @@ Zoom is a versatile communication platform widely utilized for video conferencin
   <tr>
    <td>Content Filtering
    </td>
-   <td>No
+   <td>Yes
    </td>
   </tr>
 </table>

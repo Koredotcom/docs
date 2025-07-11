@@ -14,7 +14,7 @@ Retrieves the current status and contact details of a voice campaign.
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|----------|
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The application ID. | string, required |
+| `IId` | The Application ID. | string, required |
 | `campaignId` | Unique identifier of the campaign to trigger. | string, required |
 
 ## Query Parameter
@@ -100,18 +100,18 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/{{c
 
 | **Parameter**                              | **Description**                                                                 | **Type**            |
 |----------------------------------------|-----------------------------------------------------------------------------|-----------------|
-| `status`                               | Indicates the success or failure of the request.                            | String          |
-| `data`                                 | Object containing paginated call attempt records.                           | Object          |
-| `data.results`                         | Array of call attempt results.                                              | Array<Object>   |
-| `data.results[].phoneNumber`           | Phone number that the system attempted to reach.                            | String          |
-| `data.results[].uniqueId`              | Unique identifier for the call attempt (if any).                            | String          |
-| `data.results[].dialerOutcome`         | Final outcome from the dialer (for example, `completed`, blank if in progress).    | String          |
-| `data.results[].numberOfAttemptsSoFar` | Number of call attempts made so far for the given number.                   | Integer         |
-| `data.results[].botSessionId`          | Identifier for the bot session associated with the call.                    | String          |
-| `data.results[].agentDispositionCodes` | List of agent-provided or system-generated disposition codes.               | Array<String>   |
-| `data.results[].botOutboundStatus`     | Final status of the outbound interaction (for example, `userHangUp`, `agentHangUp`).| String          |
-| `data.results[].botOutboundStatusDetail` | Additional detail about the outbound status.                              | String          |
-| `data.page`                            | Current page number of the response.                                        | Integer         |
-| `data.limit`                           | Maximum number of results per page.                                         | Integer         |
-| `data.totalPages`                      | Total number of pages available.                                            | Integer         |
-| `data.totalResults`                    | Total number of results across all pages.                                   | Integer         |
+| `status`                               | Indicates the success or failure of the request.                            | string          |
+| `data`                                 | Object containing paginated call attempt records.                           | object          |
+| `data.results`                         | Array of call attempt results.                                              | array  |
+| `data.results[].phoneNumber`           | Phone number that the system attempted to reach.                            |   string          |
+| `data.results[].uniqueId`              | Unique identifier for the call attempt (if any).                            | string          |
+| `data.results[].dialerOutcome`         | Final outcome from the dialer (for example, `completed`, blank if in progress).    | string          |
+| `data.results[].numberOfAttemptsSoFar` | Number of call attempts made so far for the given number.                   | integer         |
+| `data.results[].botSessionId`          | Identifier for the bot session associated with the call.                    | string          |
+| `data.results[].agentDispositionCodes` | List of agent-provided or system-generated disposition codes.               | array   |
+| `data.results[].botOutboundStatus`     | Final status of the outbound interaction (for example, `userHangUp`, `agentHangUp`).| string          |
+| `data.results[].botOutboundStatusDetail` | Additional detail about the outbound status.                              | string          |
+| `data.page`                            | Current page number of the response.                                        | integer         |
+| `data.limit`                           | Maximum number of results per page.                                         | integer         |
+| `data.totalPages`                      | Total number of pages available.                                            | integer         |
+| `data.totalResults`                    | Total number of results across all pages.                                   | integer         |

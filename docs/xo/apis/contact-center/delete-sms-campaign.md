@@ -4,7 +4,7 @@ Use this API to delete an active SMS campaign for a given stream ID and campaign
 
 | **Method**       | DELETE                                                                                                                                                                                                    |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}agentassist/api/v1/public/{{botId}}/campaign/{{campaignType}}?campaignType=sms`                                                                   |
+| **Endpoint**     | `https://{{host}}agentassist/api/v1/public/{{IId}}/campaign/{{campaignType}}?campaignType=sms`                                                                   |
 | **Content-Type** | `application/json`                                                                                                                                                                                         |
 | **Authorization**| `auth: {{JWT}}`  <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                                                                |
 | **API Scope**    | Campaign Management                                                                                                                                                                                        |
@@ -13,9 +13,15 @@ Use this API to delete an active SMS campaign for a given stream ID and campaign
 
 | **Parameter** | **Description**                                                                      | **Type**         |
 |---------------|--------------------------------------------------------------------------------------|------------------|
-| `host`          | Environment URL, for example, https://platform.kore.ai                              | string, required |
-| `botId`      | You can access it from the General Settings page of the bot.     | string, required |
+| `host`          | Environment URL, for example, `https://platform.kore.ai`                              | string, required |
+| `IId`      | The Application ID.     | string, required |
 | `campaignId`   | Unique identifier of the campaign to trigger.                                        | string, required |
+
+## Query Parameter
+
+| **Parameter** | **Description** | **Type** |
+|---------------|------------------|-----------|
+| `campaignType` | Type of Campaign. Use `"sms"` | string, required |
 
 ## Sample Request
 
@@ -25,6 +31,14 @@ curl --location --request DELETE 'https://{{host}}/agentassist/api/v1/public/{{b
 --header 'accountId: 67777ce93e25326494e9xxxx' \
 --header 'auth: <token>'
 ```
+
+## Headers
+
+| **Header** | **Description**                   | **Required/Optional** |
+|------------|-----------------------------------|------------------------|
+| `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
 
 ## Sample Response
 
@@ -93,31 +107,31 @@ curl --location --request DELETE 'https://{{host}}/agentassist/api/v1/public/{{b
 
 ## Response Body Parameters
 
-| Parameter                                                | Description                                                                                              | Type            |
+| **Parameter**                                                | **Description**                                                                                              | **Type**            |
 |----------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-----------------|
-| `status`                                                 | Indicates the success or failure of the request.                                                         | String          |
-| `message`                                                | Response message providing details about the result.                                                     | String          |
-| `data`                                                   | Object containing the SMS campaign details.                                                              | Object          |
-| `data._id`                                               | Unique identifier for the campaign.                                                                      | String (UUID)   |
-| `data.name`                                              | Display name of the SMS campaign.                                                                        | String          |
-| `data.lname`                                             | Lowercase or internal name of the campaign.                                                              | String          |
-| `data.description`                                       | Description of the campaign objective and functionality.                                                 | String          |
-| `data.priority`                                          | Priority level of the campaign.                                                                          | String or Number|
-| `data.format`                                            | Format of the SMS campaign (e.g., basic, advanced).                                                      | String          |
-| `data.dialingStrategy`                                   | Object containing dialing strategy settings.                                                             | Object          |
-| `data.dialingStrategy.callerId.phoneNumber`              | Phone number used as the caller ID for the SMS campaign.                                                 | String          |
-| `data.dialingStrategy.callingHours.frequency`            | Frequency at which the campaign runs (e.g., DAILY, WEEKLY).                                              | String          |
-| `data.dialingStrategy.callingHours.timezone`             | Time zone used for the campaign’s calling hours.                                                         | String          |
-| `data.dialingStrategy.callingHours.days`                 | Array of day-wise calling hour configurations.                                                           | Array<Object>   |
-| `data.dialingStrategy.callingHours.days[].day`           | Day of the week when the campaign runs.                                                                  | String (Enum)   |
-| `data.dialingStrategy.callingHours.days[].start`         | Start time for SMS campaign activity on the given day.                                                   | String (Time)   |
-| `data.dialingStrategy.callingHours.days[].end`           | End time for SMS campaign activity on the given day.                                                     | String (Time)   |
-| `data.experienceFlow`                                    | ID of the bot experience flow used in the SMS campaign.                                                  | String (UUID)   |
-| `data.status`                                            | Current status of the campaign (e.g., Ready, Stopped).                                                   | String          |
-| `data.createdAt`                                         | ISO timestamp when the campaign was created.                                                             | String (ISO 8601)|
-| `data.updatedAt`                                         | ISO timestamp when the campaign was last updated.                                                        | String (ISO 8601)|
-| `data.schedule`                                          | Object containing scheduling preferences.                                                                | Object          |
-| `data.schedule.isSchedulingEnabled`                      | Indicates whether scheduling is enabled.                                                                 | Boolean         |
-| `data.schedule.isRecurrenceEnabled`                      | Indicates whether recurrence is enabled.                                                                 | Boolean         |
-| `data.campaignInstanceId`                                | Unique identifier for the specific instance of the campaign.                                             | String (UUID)   |
-| `data.contactLists`                                      | List of contact group names associated with the campaign.                                                | Array<String>   |
+| `status`                                                 | Indicates the success or failure of the request.                                                         | string          |
+| `message`                                                | Response message providing details about the result.                                                     | string          |
+| `data`                                                   | Object containing the SMS campaign details.                                                              | object          |
+| `data._id`                                               | Unique identifier for the campaign. (UUID)                                                                      | string   |
+| `data.name`                                              | Display name of the SMS campaign.                                                                        | string          |
+| `data.lname`                                             | Lowercase or internal name of the campaign.                                                              | string          |
+| `data.description`                                       | Description of the campaign objective and functionality.                                                 | string          |
+| `data.priority`                                          | Priority level of the campaign.                                                                          | number|
+| `data.format`                                            | Format of the SMS campaign (for example, basic, advanced).                                                      | string          |
+| `data.dialingStrategy`                                   | Object containing dialing strategy settings.                                                             | object          |
+| `data.dialingStrategy.callerId.phoneNumber`              | Phone number used as the caller ID for the SMS campaign.                                                 | string          |
+| `data.dialingStrategy.callingHours.frequency`            | Frequency at which the campaign runs (for example, `DAILY`, `WEEKLY`).                                              | string          |
+| `data.dialingStrategy.callingHours.timezone`             | Time zone used for the campaign’s calling hours.                                                         | string          |
+| `data.dialingStrategy.callingHours.days`                 | Array of day-wise calling hour configurations.                                                           | array   |
+| `data.dialingStrategy.callingHours.days[].day`           | Day of the week when the campaign runs. (Enum)                                                                 | string    |
+| `data.dialingStrategy.callingHours.days[].start`         | Start time for SMS campaign activity on the given day. (Time)                                                  | string    |
+| `data.dialingStrategy.callingHours.days[].end`           | End time for SMS campaign activity on the given day. (Time)                                                    | string    |
+| `data.experienceFlow`                                    | ID of the bot experience flow used in the SMS campaign. (UUID)                                                 | string    |
+| `data.status`                                            | Current status of the campaign (for example, `Ready`, `Stopped`).                                                   | String          |
+| `data.createdAt`                                         | ISO timestamp when the campaign was created. (ISO 8601)                                                            | string |
+| `data.updatedAt`                                         | ISO timestamp when the campaign was last updated. (ISO 8601)                                                       | string |
+| `data.schedule`                                          | Object containing scheduling preferences.                                                                | object          |
+| `data.schedule.isSchedulingEnabled`                      | Indicates whether scheduling is enabled.                                                                 | boolean         |
+| `data.schedule.isRecurrenceEnabled`                      | Indicates whether recurrence is enabled.                                                                 | boolean         |
+| `data.campaignInstanceId`                                | Unique identifier for the specific instance of the campaign. (UUID)                                           | string    |
+| `data.contactLists`                                      | List of contact group names associated with the campaign.                                                | array  |

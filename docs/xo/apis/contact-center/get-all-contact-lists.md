@@ -14,7 +14,7 @@ Retrieves metadata for all contact lists associated with all voice campaigns.
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|----------|
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The application ID. | string, required |
+| `IId` | The Application ID. | string, required |
 
 ## Query Parameter
 
@@ -100,25 +100,25 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/con
 
 | **Parameter**                             | **Description**                                                                 | **Type**    |
 |---------------------------------------|-----------------------------------------------------------------------------|---------|
-| `status`                              | Indicates whether the API call was successful.                             | String  |
-| `message`                             | Optional message describing the result of the operation.                   | String  |
-| `data`                                | Array of contact list objects.                                             | Array   |
-| `data[].\_id`                         | Unique identifier of the contact list.                                     | String  |
-| `data[].name`                         | Name of the contact list.                                                  | String  |
-| `data[].description`                  | Description of the contact list.                                           | String  |
-| `data[].totalRecordCount`            | Number of contacts in the list.                                            | Number  |
-| `data[].status`                       | Current status of the contact list (for example, `Ready`).                        | String  |
-| `data[].mapping`                      | Object that maps fields in the contact list to expected keys.              | Object  |
-| `data[].mapping.firstName`           | Mapping for the contact's first name.                                      | String  |
-| `data[].mapping.lastName`            | Mapping for the contact's last name.                                       | String  |
-| `data[].mapping.phoneNumber`         | Mapping for the contact's phone number.                                    | String  |
-| `data[].mapping.timeZone`            | Mapping for the contact's timezone.                                        | String  |
-| `data[].mapping.uniqueId`            | Mapping for the contact's unique identifier.                               | String  |
-| `data[].isListInUse`                 | Indicates whether the list is currently in use in a campaign.              | Boolean |
-| `data[].listType`                    | Type of contact list (`call`, `sms`, etc.).                                | String  |
-| `data[].campaignInUse`               | Array of campaign IDs currently using this contact list.                   | Array   |
-| `data[].source`                      | Source of the contact list (`passiveApiIntegration`, `upload`, etc.).     | String  |
-| `data[].apiConfigurations`           | Configuration related to API data syncing.                                 | Object  |
-| `data[].apiConfigurations.dataSyncMode` | Mode for syncing data (for example, `allowDuplicates`).                        | String  |
-| `data[].files`                       | List of uploaded files associated with the contact list.                   | Array   |
-| `data[].updatedAt`                   | Timestamp of the last update to the contact list (ISO 8601 format).        | String  |
+| `status`                              | Indicates whether the API call was successful.                             | string  |
+| `message`                             | Optional message describing the result of the operation.                   | string  |
+| `data`                                | Array of contact list objects.                                             | array   |
+| `data[].\_id`                         | Unique identifier of the contact list.                                     | string  |
+| `data[].name`                         | Name of the contact list.                                                  | string  |
+| `data[].description`                  | Description of the contact list.                                           | string  |
+| `data[].totalRecordCount`            | Number of contacts in the list.                                            | number  |
+| `data[].status`                       | Current status of the contact list (for example, `Ready`).                        | string  |
+| `data[].mapping`                      | Object that maps fields in the contact list to expected keys.              | object  |
+| `data[].mapping.firstName`           | Mapping for the contact's first name.                                      | string  |
+| `data[].mapping.lastName`            | Mapping for the contact's last name.                                       | string  |
+| `data[].mapping.phoneNumber`         | Mapping for the contact's phone number.                                    | string  |
+| `data[].mapping.timeZone`            | Mapping for the contact's timezone.                                        | string  |
+| `data[].mapping.uniqueId`            | Mapping for the contact's unique identifier.                               | string  |
+| `data[].isListInUse`                 | Indicates whether the list is currently in use in a campaign.              | boolean |
+| `data[].listType`                    | Type of contact list (`call`, `sms`, etc.).                                | string  |
+| `data[].campaignInUse`               | Array of campaign IDs currently using this contact list.                   | array   |
+| `data[].source`                      | Source of the contact list (`passiveApiIntegration`, `upload`, etc.).     | string  |
+| `data[].apiConfigurations`           | Configuration related to API data syncing.                                 | object  |
+| `data[].apiConfigurations.dataSyncMode` | Mode for syncing data (for example, `allowDuplicates`).                        | string  |
+| `data[].files`                       | List of uploaded files associated with the contact list.                   | array   |
+| `data[].updatedAt`                   | Timestamp of the last update to the contact list (ISO 8601 format).        | string  |
