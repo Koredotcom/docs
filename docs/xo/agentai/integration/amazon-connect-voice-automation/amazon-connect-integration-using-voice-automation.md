@@ -27,8 +27,9 @@ After enabling the feature, create a connector under **Voice transfer integratio
 * **Connector Configuration**:
     * **Name**: Provide any desired name for the connector.
     * **Connector destination type**: Select **audio code** from the dropdown list.
-    * **Voice system type**: Select one or multiple options; it does not affect the functionality.
-    * **Enable Logs**: Ensure this option is enabled.
+    * **Voice system type**: Select one or multiple options; it does not affect the functionality. 
+    * **Encryption**: Select **Disabled**.  
+    * **Logging**: Select the option(s) to view the corresponding log in Connector Logs. It is recommended to select both the options.  
 * **Host and Port Details**: After creation, the connector configuration displays the IP address of the host, the protocol, and the port. This port should correspond to your Voice Gateway environment.
 * After the final configuration, it appears something like the following screenshot:  
 <img src="../images/test-kore-connector-3.png" alt="test-kore-connector" title="free text" style="border: 1px solid gray; zoom:80%;">  
