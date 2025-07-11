@@ -8,7 +8,7 @@ Streaming responses in large language models (LLMs) enable real-time, incrementa
 
 ## Current Capabilities
 
-We support the voice-based channel [Kore Voice Gateway](../channels/voice-gateway/configure-voice-gateway.md) for GenAI features, including Agent Node, with PlayHT as the supported TTS engine. Additionally, we provide seamless integration with models from OpenAI and Azure OpenAI. Our Custom Prompt capability enables integration with other LLMs, allowing businesses to use non-system models by defining their own prompts, provided the LLM supports streaming.
+We support the voice-based channel [Voice Gateway](../channels/voice-gateway/configure-voice-gateway.md) for GenAI features, including Agent Node, with Deepgram as the supported TTS engine. Additionally, we provide seamless integration with models from OpenAI and Azure OpenAI. Our Custom Prompt capability enables integration with other LLMs, allowing businesses to use non-system models by defining their own prompts, provided the LLM supports streaming.
 
 
 ### Benefits of Streaming
@@ -367,7 +367,7 @@ While streaming enhances real-time interactions and user experience, certain lim
 
 * Post-processing operations are not possible, as they require the complete response, which conflicts with the nature of streaming. 
 * Guardrails are not supported in streaming mode, as content moderation typically requires full-context evaluation, which is incompatible with token-by-token streaming.
-* The effectiveness of voice-based streaming also depends on the TTS engine’s support for bi-directional streaming, limiting compatibility to specific engines like PlayHT, Deepgram. 
+* The effectiveness of voice-based streaming also depends on the TTS engine’s support for bi-directional streaming, limiting compatibility to specific engines that offer this capability, such as Deepgram. 
 * When BotKit is enabled, interception of streamed response messages is unsupported due to the real-time delivery process.
 
 !!! note
