@@ -79,7 +79,8 @@ To access the feature, follow the steps below:
 
 * At least one custom script must be deployed and executed via API call or API/Function node.
 * If no custom script has been deployed and executed, or if it has been deployed but not yet executed, the following message is displayed. 
-    <img src="../images/no-data-to-display.png" alt="no data" title="no data" style="border: 1px solid gray; zoom:75%;">
+    
+      <img src="../images/no-data-to-display.png" alt="no data" title="no data" style="border: 1px solid gray; zoom:75%;">
 
 * If a previously deployed and executed script is undeployed, only the existing run-level and log data remain accessible. No new runs or logs will be generated unless the script is redeployed and executed again. 
  
