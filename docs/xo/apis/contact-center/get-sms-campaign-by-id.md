@@ -4,7 +4,7 @@ Use this API to fetch complete details of an existing SMS campaign using the cam
 
 | **Method**     | GET                                                                |
 |----------------|-------------------------------------------------------------------------|
-| **Endpoint**   | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign/{{campaignId}}/?accountId={{accountId}}` |
+| **Endpoint**   | `https://{{host}}/agentassist/api/v1/public/{{IId}}/campaign/{{campaignId}}` |
 | **Content-Type** | `application/json`                                                   |
 | **Authorization** | `auth: {{JWT}}`<br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope**  | Campaign Management                                                    |
@@ -14,29 +14,38 @@ Use this API to fetch complete details of an existing SMS campaign using the cam
 | **Parameter** | **Description**                                                                                           | **Type**           |
 |---------------|-----------------------------------------------------------------------------------------------------------|--------------------|
 | `host`        | Environment URL. For example: `https://platform.kore.ai`                                                  | string, required   |
-| `streamId`    | Bot ID or stream ID. You can access it from the General Settings page of the bot.                        | string, required   |
+| `IId`    | The Application ID.                        | string, required   |
 | `campaignId`  | Unique ID of the campaign to be updated. For example: `cd-ed19e3c7-3682-5e72-a839-af9e0711xxxx`           | string, required   |
-| `accountId`   | Unique ID associated with the account.                                                                    | string, required   |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign/{{campaignId}}/?accountId={{accountId}}' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign/{{campaignId}}' \
+--header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
+--header 'accountId: 67777ce93e25326494e9xxxx' \
 --header 'auth: <token>'
 ```
+
+## Headers
+
+| **Header** | **Description**                   | **Required/Optional** |
+|------------|-----------------------------------|------------------------|
+| `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
 
 ## Sample Response
 
 ```
 {
     "status": "success",
-    "message": "Campaign SMS From API - With Advanced Format - 2 retrieved successfully",
+    "message": "Campaign Interactive Support SMS Campaign retrieved successfully",
     "data": {
-        "_id": "cd-ed19e3c7-3682-5e72-a839-af9e0711xxxx",
-        "name": "SMS From API - With Advanced Format - 2",
-        "lname": "sms from api - with advanced format - 2",
-        "description": "SMS From API - With Advanced Format- 2",
-        "status": "Stopped",
+        "_id": "cd-3aefda80-f98e-5f4f-ad41-92803abbxxxx",
+        "name": "Interactive Support SMS Campaign",
+        "lname": "interactive support sms campaign",
+        "description": "Updated: This campaign sends an SMS with a link or instructions to interact with a Kore.ai bot. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
+        "status": "Ready",
         "priority": "5",
         "dialingStrategy": {
             "callerId": {
@@ -74,52 +83,50 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
                 ]
             }
         },
-        "experienceFlow": "cf-0d438227-57cb-5a42-82b8-0099453axxxx",
-        "totalMessagesSent": 0,
-        "direction": "advanced",
-        "createdAt": "2025-06-26T06:03:48.502Z",
-        "updatedAt": "2025-06-26T09:26:27.752Z",
+        "experienceFlow": "cf-67447605-115e-5dd2-a676-e158cf3bxxxx",
+        "createdAt": "2025-06-27T09:25:53.320Z",
+        "updatedAt": "2025-06-27T09:31:56.940Z",
         "schedule": {
             "isSchedulingEnabled": false,
             "isRecurrenceEnabled": false
         },
-        "campaignInstanceId": "cid-b1c6849b-b40f-550e-ace7-3b17aab9xxxx",
         "contactLists": [
-            "APIContctList"
+            "Renewal Due - May/June 2025"
         ],
-        "enableMachineDetect": false
+        "enableMachineDetect": false,
+        "format": "advanced"
     }
 }
 ```
 
 ## Response Body Parameters
 
-| **Parameter**                             | **Description**                                                                                       | **Type**     |
-|-------------------------------------------|-------------------------------------------------------------------------------------------------------|--------------|
-| `_id`                                     | Unique identifier for the campaign.                                                                   | string       |
-| `name`                                    | Campaign name.                                                                                        | string       |
-| `lname`                                   | Lowercase version of the campaign name.                                                               | string       |
-| `description`                             | Campaign description.                                                                                 | string       |
-| `status`                                  | Current campaign status. For example: `Ready`.                                                        | string       |
-| `priority`                                | Campaign priority. For example: `5`.                                                                  | string       |
-| `dialingStrategy`                         | Dialing configuration for the campaign.                                                               | object       |
-| `dialingStrategy.callerId`                | Caller ID configuration.                                                                              | object       |
-| `dialingStrategy.callerId.phoneNumber`    | Caller phone number in E.164 format.                                                                  | string       |
-| `dialingStrategy.callingHours`           | Allowed calling hours.                                                                                | object       |
-| `dialingStrategy.callingHours.frequency`  | Frequency of calls. For example: `WEEKLY`.                                                            | string       |
-| `dialingStrategy.callingHours.timezone`   | Time zone used for calling hours.                                                                     | string       |
-| `dialingStrategy.callingHours.days`       | List of daily calling windows.                                                                        | array        |
-| `dialingStrategy.callingHours.days.day`   | Day of the week. For example: `MO`, `TU`.                                                             | string       |
-| `dialingStrategy.callingHours.days.start` | Start time. For example: `9:00 AM`.                                                                   | string       |
-| `dialingStrategy.callingHours.days.end`   | End time. For example: `6:00 PM`.                                                                     | string       |
-| `experienceFlow`                          | Experience flow ID assigned.                                                                          | string       |
-| `totalMessagesSent`                       | Count of messages sent.                                                                               | integer      |
-| `direction`                               | Campaign format type. For example: `advanced`.                                                        | string       |
-| `createdAt`                               | Campaign creation timestamp in ISO format.                                                            | string       |
-| `updatedAt`                               | Last update timestamp in ISO format.                                                                  | string       |
-| `schedule`                                | Scheduling settings for the campaign.                                                                 | object       |
-| `schedule.isSchedulingEnabled`            | Indicates if scheduling is enabled for the campaign.                                                  | boolean      |
-| `schedule.isRecurrenceEnabled`            | Indicates if the campaign is set to repeat on a recurring schedule (for example, daily, weekly, etc.).             | boolean      |
-| `campaignInstanceId`                      | Internal campaign instance identifier. For example: `cid-b1c6849b-b40f-550e-ace7-3b17aab9dxxxx`.       | string       |
-| `contactLists`                            | List of contact list names used in the campaign.                                                      | array        |
-| `enableMachineDetect`                     | Indicates if machine detection is enabled (not applicable for SMS).                                   | boolean      |
+| **Parameter**                                          | **Description**                                                                                   | **Type**                  |
+|---------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------|
+| `status`                                          | Overall status of the API response. Example: `"success"`                                      | string                |
+| `message`                                         | Response message indicating the result of the request.                                        | string                |
+| `data`                                            | Contains the campaign details.                                                                | object                |
+| `data._id`                                        | Unique identifier of the campaign.                                                            | string                |
+| `data.name`                                       | Campaign name (title-cased).                                                                  | string                |
+| `data.lname`                                      | Lowercased campaign name.                                                                     | string                |
+| `data.description`                                | Detailed description of the campaign purpose and behavior.                                    | string                |
+| `data.status`                                     | Current status of the campaign. Example: `"Ready"`                                            | string                |
+| `data.priority`                                   | Priority level assigned to the campaign.                                                      | string                |
+| `data.dialingStrategy`                            | Configuration for dialing or communication strategy.                                          | object                |
+| `data.dialingStrategy.callerId.phoneNumber`       | Phone number used as the caller ID or sender ID.                                              | string                |
+| `data.dialingStrategy.callingHours`               | Campaign's operating schedule.                                                                | object                |
+| `data.dialingStrategy.callingHours.frequency`     | Frequency for running the campaign. Example: `"WEEKLY"`                                       | string                |
+| `data.dialingStrategy.callingHours.timezone`      | Time zone for the calling hours.                                                              | string                |
+| `data.dialingStrategy.callingHours.days`          | Days and time range when the campaign is active.                                              | array of object       |
+| `data.dialingStrategy.callingHours.days[].day`    | Day of the week when campaign runs. Example: `"MO"`                                           | string                |
+| `data.dialingStrategy.callingHours.days[].start`  | Campaign start time for the day. (HH:MM AM/PM)                                                             | string   |
+| `data.dialingStrategy.callingHours.days[].end`    | Campaign end time for the day. (HH:MM AM/PM)                                                                | string  |
+| `data.experienceFlow`                             | Associated experience flow ID used by the campaign.                                           | string                |
+| `data.createdAt`                                  | Timestamp when the campaign was created. (ISO 8601)                                                      | string     |
+| `data.updatedAt`                                  | Timestamp when the campaign was last updated. (ISO 8601)                                                  | string    |
+| `data.schedule`                                   | Scheduling configuration for the campaign.                                                    | object                |
+| `data.schedule.isSchedulingEnabled`               | Indicates whether the campaign has a scheduled start.                                         | boolean               |
+| `data.schedule.isRecurrenceEnabled`               | Indicates whether recurrence is enabled.                                                      | boolean               |
+| `data.contactLists`                               | Names of contact lists associated with the campaign.                                          | array of string       |
+| `data.enableMachineDetect`                        | Whether machine detection is enabled for the campaign.                                        | boolean               |
+| `data.format`                                     | Format of the campaign configuration. Example: `"advanced"`                                   | string                |

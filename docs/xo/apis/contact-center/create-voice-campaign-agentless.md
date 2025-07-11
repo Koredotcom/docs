@@ -4,7 +4,7 @@ Use this API to create a new outbound voice campaign with agentless dialing mode
 
 | **Method**        | POST                                                                                                                                                                                                                        |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType={{campaignType}}`                                                                                                     |
+| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{IId}}/campaign?campaignType=voice`                                                                                                     |
 | **Content-Type**  | `application/json`                                                                                                                                                                                                            |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                                                                                 |
 | **API Scope**     | Campaign Management                                                                                                                                                                                                           |
@@ -14,32 +14,33 @@ Use this API to create a new outbound voice campaign with agentless dialing mode
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|----------|
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `streamId` | botId or streamId. You can access it from the General Settings page of the bot. | string, required |
+| `IId` | The Application ID. | string, required |
 
-## Query Parameters
+## Query Parameter
 
 | **Parameter**   | **Description**                                  | **Type**           |
 |-----------------|--------------------------------------------------|--------------------|
-| `accountId`     | The unique ID associated with the account.       | string, required |
 | `campaignType`  | Type of Campaign. Use `"sms"`                    | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType={{campaignType}}' \
---header 'auth: <token>' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign?campaignType=voice' \
+--header 'auth: <token>>' \
 --header 'Content-Type: application/json' \
+--header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
+--header 'accountId: 67777ce93e25326494e9xxxx' \
 --data '{
-    "name": "Voice From API - With Agentless Dialing Mode- 2",
-    "description": "Voice From API - With Agentless Dialing Mode and Start Flow- 2",
+    "name": "Product Feedback Voice Campaign",
+    "description": "This voice campaign collects quick feedback on recent purchases. It asks brief questions on satisfaction, usage, and suggestions to help improve future products and customer experience.",
     "contactLists": [
-        "APIContctList"
+        "Recent Buyers - Q2 2025"
     ],
     "priority": "5",
     "dialingMode": "Agentless",
     "dialingStrategy": {
         "callerId": {
-            "phoneNumber": "+1345678902"
+            "phoneNumber": "+15101234567"
         },
         "callingHours": {
             "frequency": "WEEKLY",
@@ -73,43 +74,144 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
             ]
         },
         "dialingOrder": "FIFO",
-        "maxAttemptsPerRecord": 1,
-        "defaultRetryPeriod": 1,
-        "maxRingTime": 21
+        "maxAttemptsPerRecord": 3,
+        "defaultRetryPeriod": 10,
+        "maxRingTime": 30
     },
     "schedule": {
         "isSchedulingEnabled": false
     },
-    "experienceFlowName": "Voice Flow 2",
+    "experienceFlowName": "Voice Survey Entry Flow",
     "enableMachineDetect": false,
     "campaignType": "voice"
 }'
 ```
 
-## Header
+## Headers
 
 | **Header** | **Description**                   | **Required/Optional** |
 |------------|-----------------------------------|------------------------|
 | `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
+
+## Body Parameters
+
+| **Header**                                       | **Description**                                                  | **Type**              |
+|--------------------------------------------------|------------------------------------------------------------------|-----------------------|
+| `name`                                           | Name of the campaign.                                            | string, required      |
+| `description`                                    | Description of the campaign.                                     | string, optional      |
+| `contactLists`                                   | List of contact list names to use.                               | array of strings, required |
+| `priority`                                       | Campaign priority (for example, `"5"`).                          | string, required      |
+| `dialingMode`                                    | Must be set to `Agentless`.           | string, required      |
+| `dialingStrategy`                                | Strategy details for dialing (caller ID, hours, retry, ring time).| object, required      |
+| `dialingStrategy.callerId.phoneNumber`           | Outgoing caller ID number.                                       | object, required      |
+| `dialingStrategy.callingHours`                   | Weekly schedule with time zone and allowed calling windows.      | object, required      |
+| `dialingStrategy.dialingOrder`                   | Order of record processing (for example, `FIFO`).                | string, required      |
+| `dialingStrategy.maxAttemptsPerRecord`           | Max number of call attempts per contact.                         | number, required      |
+| `dialingStrategy.defaultRetryPeriod`             | Retry interval (in minutes).                                     | number, required      |
+| `dialingStrategy.maxRingTime`                    | Max ring duration per attempt (in seconds).                      | number, required      |
+| `schedule`                                       | Indicates if scheduled execution is enabled.                     | object, required      |
+| `schedule.isSchedulingEnabled`                   | Set to `false` to start immediately without scheduling.          | boolean, required     |
+| `queue_name`                                     | The queue to which answered calls are routed.                    | string, required      |
+| `enableMachineDetect`                            | Whether to enable machine detection.                             | boolean, optional     |
+| `maxSkips`                                       | Max number of record skips allowed per agent.                    | number, optional      |
+| `campaignType`                                   | Must be `"voice"`.                                               | string, required      |
 
 ## Sample Response
 
 ```
 {
     "status": "success",
-    "message": "Campaign Voice From API - With Agentless Dialing Mode- 2 creation in progress",
-    "id": "cd-02099ba-dc11-4bb0-a7ea-253863c8xxxx",
+    "message": "Campaign Product Feedback Voice Campaign creation in progress",
     "data": {
-        "campId": "cd-02099ba-dc11-4bb0-a7ea-253863c8xxxx"
+        "name": "Product Feedback Voice Campaign",
+        "lname": "product feedback voice campaign",
+        "description": "This voice campaign collects quick feedback on recent purchases. It asks brief questions on satisfaction, usage, and suggestions to help improve future products and customer experience.",
+        "priority": "5",
+        "dialingMode": "Agentless",
+        "dialingStrategy": {
+            "callerId": {
+                "phoneNumber": "+15123456789"
+            },
+            "callingHours": {
+                "frequency": "WEEKLY",
+                "days": [
+                    {
+                        "start": "9:00 AM",
+                        "end": "6:00 PM",
+                        "day": "MO"
+                    },
+                    {
+                        "start": "9:00 AM",
+                        "end": "6:00 PM",
+                        "day": "TU"
+                    },
+                    {
+                        "start": "9:00 AM",
+                        "end": "6:00 PM",
+                        "day": "WE"
+                    },
+                    {
+                        "start": "9:00 AM",
+                        "end": "6:00 PM",
+                        "day": "TH"
+                    },
+                    {
+                        "start": "9:00 AM",
+                        "end": "6:00 PM",
+                        "day": "FR"
+                    }
+                ],
+                "timezone": "Asia/Kolkata"
+            },
+            "dialingOrder": "FIFO",
+            "maxAttemptsPerRecord": 3,
+            "defaultRetryPeriod": 10,
+            "maxRingTime": 30
+        },
+        "experienceFlow": "cf-ecfa3927-eabc-52c4-8373-8a0b75d57955",
+        "status": "Preparing",
+        "createdAt": "2025-06-26T10:31:37.861Z",
+        "updatedAt": "2025-06-26T10:31:37.861Z",
+        "id": "cd-34696b5-94e3-4e6e-a40a-505ca005xxxx",
+        "contactLists": [
+            "Recent Buyers - Q2 2025"
+        ],
+        "enableMachineDetect": false
     }
 }
 ```
 
 ## Response Body Parameters
 
-| **Parameter**     | **Description**                                 | **Type** |
-|-------------------|-------------------------------------------------|----------|
-| `status`          | Status of the operation (`success`).            | string   |
-| `message`         | Descriptive message of the action result.       | string   |
-| `id`              | Unique identifier for the campaign.             | string   |
-| `data.campId`     | Unique ID of the campaign.                      | string   |
+| **Parameter**                                              | **Description**                                                                 | **Type**                    |
+|--------------------------------------------------------|-----------------------------------------------------------------------------|-------------------------|
+| `status`                                               | Indicates the overall response status. Example: `"success"`                | string                  |
+| `message`                                              | Descriptive message about the result.                                      | string                  |
+| `data`                                                 | Contains the campaign configuration details.                               | object                  |
+| `data.name`                                            | Display name of the campaign.                                              | string                  |
+| `data.lname`                                           | Lowercase name of the campaign, used internally.                           | string                  |
+| `data.description`                                     | Description of the campaign purpose and functionality.                     | string                  |
+| `data.priority`                                        | Campaign priority level.                                                   | string                  |
+| `data.dialingMode`                                     | Dialing mode used for the campaign. Example: `"Agentless"`                | string                  |
+| `data.dialingStrategy`                                 | Defines dialing strategy configuration.                                    | object                  |
+| `data.dialingStrategy.callerId.phoneNumber`            | Caller ID phone number used for outbound calls.                            | string                  |
+| `data.dialingStrategy.callingHours`                    | Defines the allowed calling hours and schedule.                            | object                  |
+| `data.dialingStrategy.callingHours.frequency`          | Calling frequency. Example: `"WEEKLY"`                                     | string                  |
+| `data.dialingStrategy.callingHours.days`               | Daily schedules with start/end time and day.                               | array of object         |
+| `data.dialingStrategy.callingHours.days[].start`       | Start time of calling window.  (hh:mm AM/PM)                                             | string    |
+| `data.dialingStrategy.callingHours.days[].end`         | End time of calling window. (hh:mm AM/PM)                                               | string     |
+| `data.dialingStrategy.callingHours.days[].day`         | Day of the week. (2-letter) Example: `"MO"`, `"TU"`                                   | string        |
+| `data.dialingStrategy.callingHours.timezone`           | Timezone used for the calling schedule. Example: `"Asia/Kolkata"`         | string                  |
+| `data.dialingStrategy.dialingOrder`                    | Order in which records are dialed. Example: `"FIFO"`                       | string                  |
+| `data.dialingStrategy.maxAttemptsPerRecord`            | Maximum retry attempts for each record.                                    | integer                 |
+| `data.dialingStrategy.defaultRetryPeriod`              | Default wait time between retries. (minutes)                                        | integer        |
+| `data.dialingStrategy.maxRingTime`                     | Maximum ring time before hanging up. (seconds)                                      | integer        |
+| `data.experienceFlow`                                  | Identifier of the experience flow used for automation.                     | string                  |
+| `data.status`                                          | Current state of the campaign. Example: `"Preparing"`                      | string                  |
+| `data.createdAt`                                       | Campaign creation timestamp. (ISO 8601)                                               | string       |
+| `data.updatedAt`                                       | Last updated timestamp. (ISO 8601)                                                     | string      |
+| `data.id`                                              | Unique identifier for the campaign.                                        | string                  |
+| `data.contactLists`                                    | Names of associated contact lists.                                         | array of string         |
+| `data.enableMachineDetect`                             | Indicates whether machine detection is enabled.                            | boolean                 |

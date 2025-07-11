@@ -8,15 +8,15 @@ The following table displays the features and the supported models.
 
 (✅ Supported | ❌ Not supported)
 
-| Model     | Answer Generation     | Vector Generation     | Metadata Extractor Agent     | Query Rephrase for Advanced Search API     | Query Transformation     | Result Type Classification     |
-|---|---|---|---|---|---|---|
-| Azure OpenAI - GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     |
-| Azure OpenAI - GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     |
-| OpenAI - GPT 3.5 Turbo, GPT 4, GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     |
-| OpenAI -   GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     |
-| Custom LLM     | ✅     | ✅     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     |
-| Kore.ai XO GPT     | ✅     | ✅     | ❌     | ❌     | ❌     | ❌     |
-| Amazon Bedrock     | ❌     | ❌     | ❌     | ❌     | ❌     | ❌     |
+| Model     | Answer Generation     | Vector Generation     | Metadata Extractor Agent     | Query Rephrase for Advanced Search API     | Query Transformation     | Result Type Classification     |Rephrase User Query|
+|---|---|---|---|---|---|---|---|
+| Azure OpenAI - GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     | ✅     |
+| Azure OpenAI - GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     | ✅     |
+| OpenAI - GPT 3.5 Turbo, GPT 4, GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     | ✅     |
+| OpenAI -   GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     | ✅     |
+| Custom LLM     | ✅     | ✅     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅     |
+| Kore.ai XO GPT     | ✅     | ✅     | ❌     | ❌     | ❌     | ❌     | ✅     |
+| Amazon Bedrock     | ❌     | ❌     | ❌     | ❌     | ❌     | ❌     |❌     |
 
 \* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts.* 
 
@@ -41,3 +41,57 @@ This feature is used to identify key terms within a query, removing noise and pr
 
 ## Result Type Classification
 This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
+
+## Rephrase User Query
+
+The Rephrase User Query feature enhances the virtual assistant’s understanding by reconstructing incomplete or ambiguous user inputs using the ongoing conversation history. This helps improve intent detection and entity extraction accuracy, especially when user input is fragmented across multiple messages.
+
+When users submit queries that are incomplete or rely on previous context (coreference), the system uses an LLM to rephrase the input at runtime. This rephrased version consolidates relevant details from earlier messages, helping the NLP engine better understand the user’s intent and extract entities more accurately.
+
+**Usage**
+The LLM rephrases the query using one of the following methods depending on the scenario:
+
+**Completeness**: The user query should be complete within the conversation context, allowing the application to identify the correct intent. If the user query is incomplete, the system urges the user to rephrase with more information. However, using this feature, the user query is automatically completed using the conversation context. 
+
+For example:
+
+* User: What is the weather forecast for New York tomorrow? 
+* Bot: It will be Sunny, with temperatures ranging between 30 and 35 degrees Celsius. 
+* User: How about Orlando? 
+
+Without rephrasing, the last query is ambiguous.
+
+Rephrased Query: What is the weather forecast for Orlando tomorrow?
+
+**Co-referencing**: Handles situations where the user refers to something previously mentioned using pronouns or vague references.
+
+For example:
+
+* User: I’ve had a headache for the past week.
+* Bot: I’m sorry to hear that. Have you taken any medication?
+* User: Yes, ibuprofen, but it’s not helping.
+* Bot: I see. How often do you take it?
+* User: Every six hours.
+
+Without rephrasing, the last user message is not meaningful and does not suggest the user intent.
+
+Rephrased Query: I take ibuprofen every six hours.
+
+**Completeness and Co-referencing**: Handles both issues together by reconstructing the full meaning.
+
+For example:
+
+* User: I want to apply for a personal loan.
+* Bot: You're eligible for up to $20,000.
+* User: How about a home loan?
+* Bot: You’re eligible for up to $100,000.
+* User: What about interest rates?
+
+Rephrased Query: What are the interest rates for personal and home loans?
+
+### Conversation History Length
+
+This setting controls how many previous messages (from both the user and the bot) are used to provide context for rephrasing. The default value is 5, and the maximum is 25. If the session history contains fewer messages than the configured number, only the available messages will be sent, even if the set value is higher. 
+
+You can access the Conversation History Length from **Repharse User Query > Advanced Settings**.
+

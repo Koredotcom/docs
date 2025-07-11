@@ -4,7 +4,7 @@ Use this API to create a new contact list for use in passive voice campaigns.
 
 | **Method**       | POST                                                                                                                             |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign/contactList/createContactList?accountId={{accountId}}`        |
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/contactList/createContactList`        |
 | **Content-Type** | `application/json`                                                                                                               |
 | **Authorization**| `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope**    | Campaign Management                                                                                                              |
@@ -14,34 +14,31 @@ Use this API to create a new contact list for use in passive voice campaigns.
 | **Parameter** | **Description**                                                                                     | **Type**          |
 |---------------|-----------------------------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                                            | string, required  |
-| `streamId`    | `botId` or `streamId`. You can access it from the **General Settings** page of the bot.            | string, required  |
-
-## Query Parameter
-
-| **Parameter** | **Description**                              | **Type**          |
-|---------------|----------------------------------------------|-------------------|
-| `accountId`   | The unique ID associated with the account.   | string, required  |
+| `IId`    | The Application ID.            | string, required  |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign/contactList/createContactList?accountId={{accountId}}' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/contactList/createContactList' \
 --header 'auth: <token>' \
---header 'iid: st-eb9fd8be-e88c-5ab0-908d-8da48793xxxx' \
 --header 'Content-Type: application/json' \
+--header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
+--header 'accountId: 67777ce93e25326494e9xxxx' \
 --data '{
-    "name": "Contact list of Passive June 27",
-    "description": "contact list Description",
-    "source": "passiveApi",
+    "name1": "Renewal Due - July 2025",
+    "description": "This list contains customers with services expiring in July 2025. It includes contact details and subscription info to help agents provide tailored support during live calls.",
+    "source": "passiveApiIntegration",
     "allowDuplicates": true
 }'
 ```
 
-## Header
+## Headers
 
-| **Header** | **Description**                                                                 | **Required/Optional** |
-|------------|----------------------------------------------------------------------------------|------------------------|
-| `iid`      | Stream or application ID. For example, `st-eb9fd8be-e88c-5ab0-908d-8da48793xxxx` | required               |
+| **Header** | **Description**                   | **Required/Optional** |
+|------------|-----------------------------------|------------------------|
+| `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
 
 ## Body Parameters
 
@@ -49,7 +46,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
 |-------------------|--------------------------------------------------------------------|------------------|
 | `name`            | Name of the contact list                                           | string, required |
 | `description`     | Description of the contact list                                    | string, optional |
-| `source`          | Source of the list. Use `passiveApi` for API-based ingestion       | string, required |
+| `source`          | Source of the list. Use `passiveApiIntegration` for API-based ingestion       | string, required |
 | `allowDuplicates` | Set to `true` to allow duplicate records                           | boolean, required |
 
 ## Sample Response

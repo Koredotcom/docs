@@ -28,7 +28,7 @@ Zoom is a versatile communication platform widely utilized for video conferencin
   <tr>
    <td>Content Filtering
    </td>
-   <td>No
+   <td>Yes
    </td>
   </tr>
 </table>
@@ -76,6 +76,14 @@ Currently, Search AI only fetches data for the past 30 days during sync. The con
 
 Note that the summary is generated only if the Meeting Summary with AI Companion feature in the host's account is enabled. End-to-end encrypted meetings do not have a summary at all. 
 
+## Advanced Filters
+
+You can now apply Advanced Filters to control which Zoom meetings are ingested. Supported filters include:
+
+* Date From: Only include meetings starting on or after this date.
+* Date To: Only include meetings ending on or before this date.
+
+If no filters are configured, the connector defaults to ingesting all summary-enabled meetings from the past 30 days. This feature helps reduce API usage and ensures only relevant meeting data enters Search AI.
 
 ## RACL Support in ZOOM
 

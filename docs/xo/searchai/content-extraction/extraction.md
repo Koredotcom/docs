@@ -42,7 +42,7 @@ The Text Extraction Model combines natural language processing (NLP) and machine
 
 * When **Chunk Size** is set to **pages**, every page is treated as a single chunk. 
 * When **Chunk Size** is set to **Chunk Tokens**, chunks are prepared using the following two parameters:
-    *  **Tokens**: Maximum number of tokens that can be present in a chunk. This field can take a maximum value of 1000. The optimal number depends on the nature of the content. Smaller chunks might be used for detailed, granular tasks, whereas larger chunks might be necessary for understanding context​​.
+    *  **Tokens**: Maximum number of tokens that can be present in a chunk. This field can take a maximum value of 5000. The optimal number depends on the nature of the content. Smaller chunks might be used for detailed, granular tasks, whereas larger chunks might be necessary for understanding context​​.
     * **Chunk Overlap**: Number of tokens that should overlap between two consecutive chunks.
 
 ### Layout Aware Extraction
