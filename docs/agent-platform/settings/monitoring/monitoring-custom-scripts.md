@@ -307,10 +307,12 @@ The record view offers log-specific insights at the script run level after each 
 * **Focused Debugging**: Script execution logs help effectively isolate and troubleshoot issues.
 * **Detailed Visibility**: Shows input, output, and log-level metadata, allowing in-depth analysis of what happened during the run.
 * **Structured Layout**: Displays data in a clear and organized format, often with expandable sections in the JSON editors to facilitate easy inspection of values.
-* **Actionable insights**: 
-      * Failures or performance bottlenecks.
-      * Unexpected inputs or outputs.
-      * Misconfigured logic or API responses.
+* **Actionable insights**:
+
+    * Failures or performance bottlenecks.
+    * Unexpected inputs or outputs.
+    * Misconfigured logic or API responses.
+
 * **Enhanced Usability**: With features such as keyboard navigation (e.g., J/K to switch records), copy-to-clipboard, expand/collapse, and scroll, users can efficiently explore logs.
 
 ### Steps to Access Record View
