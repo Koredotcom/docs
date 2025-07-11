@@ -110,11 +110,16 @@ To handle situations where there are delays in backend operations or unexpected 
 
 ###### Interaction Type
 
+You can play audio or background music (BGM) to users on hold when an agent initiates a tool call or checks the knowledge base. The Realtime TTS model supports audio playback only through an input URL and does not support speech input.
+
 The following options are available:
 
-* **Bot No Input Speech**: Enter the text that the bot will say when triggered by the no input timeout.
+* **Bot No Input Speech**: Enter the text that the bot will say when triggered by the no input timeout.  
+<img src="../images/interaction-types.png" alt="Interaction Type" title="Interaction Type" style="border: 1px solid gray; zoom:80%;">
+
 * **Bot No Input URL**: Enter a valid audio URL. The bot will play the audio file from this URL when triggered by the no-input timeout.  
-    <img src="../images/interaction-types.png" alt="Interaction Type" title="Interaction Type" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/background-music.png" alt="Interaction Type" title="Interaction Type" style="border: 1px solid gray; zoom:80%;">
+    
 
 ###### Bot No Input Retries
 
