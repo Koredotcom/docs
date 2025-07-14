@@ -70,14 +70,16 @@ agentUtils.setSkills([loanType[a]]); //setting the skill - loan type
 
 **deleteSkillById(skillId)** – Deletes a skill from the context of the current conversation.
 
-**deleteSkills(skillsToDelete)** – Deletes an array of skills from the context of the current conversation.
+**deleteSkills(skillsToDelete)** – You can use a skill ID or an array of skill IDs to delete skills from the conversation.  
+
+     Example: `agentUtils.deleteSkills(["skillAId", "skillBId"]);`
 
 ### Edit a Skill
 
 To edit the field values of an existing skill, follow these steps:
 
 1. Click the desired skill group to get the associated skills list;
-2. Click the **Edit** icon corresponding to the skill you want to update;
+2. Click the **Edit** icon corresponding to the skill you want to update;  
 <img src="../images/edit-skill-button.png" alt="Edit Skill Button" title="Edit Skill Button" style="border: 1px solid gray; zoom:70%;">
 
 3. Make your changes in the **Edit Skill** window;
