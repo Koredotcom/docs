@@ -2,7 +2,7 @@
 
 Human conversations are dynamic since they tend to switch between intents and entities, often combining multiple things into one.
 
-The XO Platform offers **Sub Intents** that are defined at the task level, and are the easiest way to shape dialog without having to manage context manually. This enables conversations to seamlessly branch into related intents as part of the primary intent, and work only within this context. An output context is added to the parent intent and an input context of the same name is added to the newly created child intent. Thus, the child intent can only be matched when the parent intent was matched during a previous portion of the conversation.
+The Platform offers **Sub Intents** that are defined at the task level, and are the easiest way to shape dialog without having to manage context manually. This enables conversations to seamlessly branch into related intents as part of the primary intent, and work only within this context. An output context is added to the parent intent and an input context of the same name is added to the newly created child intent. Thus, the child intent can only be matched when the parent intent was matched during a previous portion of the conversation.
 
 **Follow-up Intents** are helpful during the course of a dialog, a user utterance or intent cannot be attended to immediately. You can access such intents that come up during the execution of a different task, but that was never acted upon. These are stored in the _FollowupIntents_ array. You can then opt to ask users at the end of the dialog flow to select and perform tasks from a list of identified follow-up intents. You can also access this list to further train and refine their dialog flows.
 
@@ -10,9 +10,9 @@ The XO Platform offers **Sub Intents** that are defined at the task level, and a
 
 There are three ways to define Sub Intents:
 
-* **Add an Intent Node within the Dialog Task** – This intent is not available for any other dialog and since it is within the dialog, it is within its context. [Learn more](../use-cases/dialogs/node-types/working-with-the-user-intent-node.md){target="_blank"}.
-* **Use an existing Dialog Task** – This intent can be used over multiple dialogs. You can define the dialog as Sub Intent-only dialog and it cannot be invoked by user utterance nor will it appear in the list of available tasks when the user says help. [Learn more](../use-cases/dialogs/node-types/working-with-the-dialog-node.md){target="_blank"}.
-* **As linked Tasks** – The above two options are used when the sub intent is part of the dialog flow. For cases where the sub intent can be invoked by the user anywhere within the dialog, use the **Manage Sub Intents** and Exceptions option.
+* **Add an Intent Node within the Dialog Task**: This intent is not available for any other dialog and since it is within the dialog, it is within its context. [Learn more](../use-cases/dialogs/node-types/working-with-the-user-intent-node.md){target="_blank"}.
+* **Use an existing Dialog Task**: This intent can be used over multiple dialogs. You can define the dialog as Sub Intent-only dialog and it cannot be invoked by user utterance nor will it appear in the list of available tasks when the user says help. [Learn more](../use-cases/dialogs/node-types/working-with-the-dialog-node.md){target="_blank"}.
+* **As linked Tasks**: The above two options are used when the sub intent is part of the dialog flow. For cases where the sub intent can be invoked by the user anywhere within the dialog, use the Manage Sub Intents and Exceptions option.
 
 ## Linked Task Exceptions 
 
