@@ -443,13 +443,13 @@ Search AI represents the next generation of our search and retrieval platform, d
 <font size="4"> Intelligent and More Accurate Answer Generation</font>
 
 
-**[Agentic RAG Architecture](https://docs.kore.ai/xo/searchai/rag-agents/)**
+**Agentic RAG Architecture**
 
-Search AI leverages an Agentic RAG (Retrieval-Augmented Generation) architecture, where multiple autonomous agents collaborate to optimize query interpretation, retrieval, and response generation. This results in highly accurate, context-aware answers, especially for complex and multi-faceted queries.
+Search AI leverages an Agentic RAG (Retrieval-Augmented Generation) architecture, where multiple autonomous agents collaborate to optimize query interpretation, retrieval, and response generation. This results in highly accurate, context-aware answers, especially for complex and multi-faceted queries. [Learn More](../searchai/rag-agents.md)
 
-**[Advanced Retrieval Technology](https://docs.kore.ai/xo/searchai/retrieval/)**
+**Advanced Retrieval Technology**
 
-Search AI offers a hybrid retrieval method based on RAG Fusion, combining multiple keyword and vector scores to significantly boost accuracy, relevance, and performance of search results.
+Search AI offers a hybrid retrieval method based on RAG Fusion, combining multiple keyword and vector scores to significantly boost accuracy, relevance, and performance of search results. [Learn More](../searchai/retrieval.md)
 
 
 **Channel-Aware Response Formatting**
@@ -465,23 +465,23 @@ Search AI improves response accuracy by allowing users to send entire documents 
 <font size="4">Improved Content Ingestion Capabilities</font>
 
 
-**[ 6x More Connectivity Options](https://docsinternal-kore.github.io/docs/xo/searchai/content-sources/connectors/connector-directory/)**
+**6x More Connectivity Options**
 
 * With 60+ connectors available in Search AI, there is a 6x increase in connectivity options compared to SearchAssist. 
 * Support for both structured and unstructured data from connectors.
 * Universal RACL support across connectors.
 * Improved business user experience with streamlined configuration and setup.
+[Learn More](../searchai/content-sources/connectors/connector-directory.md)
 
 
-
-**[Superior Web Crawling](https://docs.kore.ai/xo/searchai/content-sources/web-crawl/)**
+**Superior Web Crawling**
 
 * New and improved crawler with significantly higher success rates.
 * 80% performance improvement in web crawling speed.
 * Better handling of complex website structures and dynamic content, including JavaScript-heavy pages.
+[Learn More](../searchai/content-sources/web-crawl.md)
 
 **Flexible Field Mapping for Content Ingestion from Third-party Applications**
-
 
 * Easily map fields from the source application to the Search AI schema to ensure consistency and relevance.
 * Use post-processor scripts to update the content received from the source application. 
@@ -490,37 +490,37 @@ Search AI improves response accuracy by allowing users to send entire documents 
 <font size="4">Advanced Content Extraction and Processing</font>
 
 
-**[Flexible Extraction Framework](https://docs.kore.ai/xo/searchai/content-extraction/extraction/)**
+**Flexible Extraction Framework**
 
 Search AI introduces a customizable extraction strategy framework that adapts to different document types, replacing SearchAssist's static one-size-fits-all approach.
 
-* [Image-based Document Extraction -](https://docs.kore.ai/xo/searchai/content-extraction/extraction/#image-based-document-extraction) Capture the semantic meaning between textual and image content through **VDR-based embeddings**, enabling greater accuracy for complex documents containing nontextual layouts such as tables or forms. By interpreting the visual structure alongside the text, Search AI ensures more reliable indexing from complex document structures. 
-* [Markdown Extraction -](https://docs.kore.ai/xo/searchai/content-extraction/extraction/#markdown-extraction) Transforms each page of a document into structured Markdown format before further processing. This strategy is particularly effective in preserving the semantic structure of the original content.
-* [Layout Aware Extraction -](https://docs.kore.ai/xo/searchai/content-extraction/extraction/#layout-aware-extraction) Identifies objects in documents by combining OCR technology, layout detection models, and layout awareness rules. This approach enhances Search AI's ability to comprehend tables, graphs, and charts in documents and generate answers based on this information.
-* [Advanced HTML Extraction - ](https://docs.kore.ai/xo/searchai/content-extraction/extraction/#advanced-html-extraction) Intelligent processing of images and tables from HTML documents
-* [Custom Extraction -](https://docs.kore.ai/xo/searchai/content-extraction/extraction/#custom-extraction) Allows enterprises to modify the search data pipeline by inserting their custom extraction logic.
+* [Image-based Document Extraction -](../searchai/content-extraction/extraction.md#image-based-document-extraction) Capture the semantic meaning between textual and image content through **VDR-based embeddings**, enabling greater accuracy for complex documents containing nontextual layouts such as tables or forms. By interpreting the visual structure alongside the text, Search AI ensures more reliable indexing from complex document structures. 
+* [Markdown Extraction -](../searchai/content-extraction/extraction.md#markdown-extraction) Transforms each page of a document into structured Markdown format before further processing. This strategy is particularly effective in preserving the semantic structure of the original content.
+* [Layout Aware Extraction -](../searchai/content-extraction/extraction.md#layout-aware-extraction) Identifies objects in documents by combining OCR technology, layout detection models, and layout awareness rules. This approach enhances Search AI's ability to comprehend tables, graphs, and charts in documents and generate answers based on this information.
+* [Advanced HTML Extraction - ](../searchai/content-extraction/extraction.md#advanced-html-extraction) Intelligent processing of images and tables from HTML documents
+* [Custom Extraction -](../searchai/content-extraction/extraction.md#custom-extraction) Allows enterprises to modify the search data pipeline by inserting their custom extraction logic.
 
 **Multimodal Content Support**
 
 Search AI supports the extraction and processing of diverse content types, including text, tables, images, and layout-based visual structures, using different extraction techniques. Users can define different extraction strategies for different types of content. This multimodal capability ensures efficient extraction for different types of content. 
 
 
-**[Custom Content Transformation During Extraction ](https://docs.kore.ai/xo/searchai/content-extraction/transformation/)**
+**Custom Content Transformation During Extraction**
 
-The content transformation layer used to enrich content immediately after extraction and before vectorization now features an additional API stage for custom processing of the extracted content. This allows developers to make custom changes to the content while preserving essential relationships and context of the original document. Additionally, developers can now define enrichment logic using JavaScript, replacing the earlier use of painless scripts. This change makes the enrichment process more developer-friendly and easier to maintain.
+The content transformation layer used to enrich content immediately after extraction and before vectorization now features an additional API stage for custom processing of the extracted content. This allows developers to make custom changes to the content while preserving essential relationships and context of the original document. Additionally, developers can now define enrichment logic using JavaScript, replacing the earlier use of painless scripts. This change makes the enrichment process more developer-friendly and easier to maintain. [Learn More](../searchai/content-extraction/transformation.md)
 
 
-**[Chunk-Level Processing](https://docs.kore.ai/xo/searchai/workbench/introduction/)**
+**Chunk-Level Processing**
 
-Chunk Workbench provides granular control over how content is transformed at the individual chunk level. This flexibility enables teams to tailor data processing to meet specific business needs, such as appending page summaries to each chunk for enhanced context and improved performance.
+Chunk Workbench provides granular control over how content is transformed at the individual chunk level. This flexibility enables teams to tailor data processing to meet specific business needs, such as appending page summaries to each chunk for enhanced context and improved performance. [Learn More](../searchai/workbench/introduction.md)
 
 
 **Multi-Vector Generation**
 
-Search AI supports multi-vector search, which allows you to associate multiple embedding vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different important fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize certain fields during search and retrieval. This leads to more relevant and accurate results.
+Search AI supports multi-vector search, which allows you to associate multiple embedding vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different important fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize certain fields during search and retrieval. This leads to more relevant and accurate results. [Learn More](../searchai/index-configuration.md)
 
 
-**[Enhanced Embedding Models](https://docs.kore.ai/xo/searchai/index-configuration/)**
+**Enhanced Embedding Models**
 
 Search AI supports advanced embedding models to improve semantic understanding across both structured and unstructured content types.
 
@@ -530,8 +530,8 @@ Search AI supports advanced embedding models to improve semantic understanding a
 
 <font size="4"> Gen AI Capabilities</font>
 
-* [Custom LLM support](https://docs.kore.ai/xo/generative-ai-tools/models-library/#custom-llm-integration-framework) for answer generation without requiring middleware
-* [Dynamic Models and Prompts for answers](https://docs.kore.ai/xo/apis/searchai/advance-search/) - Support for runtime selection of prompts and LLM models within the answer generation API, allowing developers to tailor responses dynamically based on query intent, user context, or application requirements.
+* [Custom LLM support](../generative-ai-tools/models-library.md#custom-llm-integration-framework) for answer generation without requiring middleware
+* [Dynamic Models and Prompts for answers](../apis/searchai/advance-search.md) - Support for runtime selection of prompts and LLM models within the answer generation API, allowing developers to tailor responses dynamically based on query intent, user context, or application requirements.
 
 
 <font size="4"> Developer Experience & Tools</font>
@@ -549,9 +549,8 @@ A comprehensive developer toolkit has been introduced, consolidating all platfor
 
 <font size="4"> Other Enhancements</font>
 
-
-* **Auto Training for real-time updates**: Automatically detects new content ingestion or updates to existing content and auto-trains the system for these updates, keeping the indexed content up-to-date always. 
-* **Greater Configuration Flexibility:** It offers more configurable answer generation properties than the standalone application, making it more user-friendly and flexible. 
+* Auto Training for real-time updates: Automatically detects new content ingestion or updates to existing content and auto-trains the system for these updates, keeping the indexed content up-to-date always. 
+* Greater Configuration Flexibility: It offers more configurable answer generation properties than the standalone application, making it more user-friendly and flexible. 
 
 
 <font size="4"> Integration with AI for Service Platform</font>
