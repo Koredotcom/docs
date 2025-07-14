@@ -16,7 +16,7 @@ Follow these steps to create a new Autonomous Agent:
     * The **Agent Creation Wizard** guides you through the setup process.
     <img src="../images/Advance_Agentic_App_1.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 3. Details and Purpose: Define your agent's name and purpose for optimal performance.
-    * **Icon**:Choose from the predefined icon library or upload a custom icon.
+    * **Icon**: Choose from the predefined icon library or upload a custom icon.
     * **Agent Name**: Enter a unique and meaningful name for your agent.
     * **Purpose of agent**: Define the intended functionality of the agent for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate agent.
 4. Configure Autonomous Agent: The configuration step establishes the technical foundation of your agent through API integration.  
@@ -35,7 +35,7 @@ Follow these steps to create a new Autonomous Agent:
   
      * **Content Type**: Enter a specific label that tells the API what kind of data you are sending.
 
-     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration:
+     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/deployment/app-deployment/#create-an-environment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from Agent Platform.
 
      1. Click **Curl Import** to open the import interface.
      2. Paste your CURL command into the text box.
