@@ -2,6 +2,18 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.15.1 July 12, 2025
+
+<u>Patch Release </u>
+
+<font size="4">Integration Enhancement</font>
+
+<a id="Call Transcript Timestamps from Amazon Connect"></a>
+
+Salesforce Amazon Connect now includes accurate timestamps in call transcripts. This helps the Agent Coaching and Playbook modules deliver guidance at the right moments, both during and after the call.
+
+<hr>
+
 ## v11.15.0 June 30, 2025
 
 <u>Minor Release</u>

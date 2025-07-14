@@ -527,9 +527,9 @@ Users can make direct outward calls
    </td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>All
    </td>
@@ -1185,9 +1185,9 @@ Users can make direct outward calls
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>    
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>All</td>
 </tr>
@@ -1807,9 +1807,9 @@ Users can make direct outward calls
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>All</td>
 </tr>
@@ -2441,9 +2441,9 @@ Users can make direct outward calls
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>Self</td>
 </tr>
@@ -3079,9 +3079,9 @@ Users can make direct outward calls
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>Self</td>
 </tr>
@@ -3896,15 +3896,13 @@ Users can make direct outward calls
 No</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>All
    <br>
 Self</td>
-<br>
-None</td>
 </tr>
 <tr>
    <td><strong>Dashboard Content</strong>

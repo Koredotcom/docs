@@ -3,6 +3,21 @@
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
 
+## v11.15.1 July 12, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">DialogGPT</font>
+
+**Sub-Intent Scoping Enhancement**
+
+DialogGPT has been optimised to manage sub-intents using dialog context, moving away from indexing. This change provides a clear separation between top-level intents and sub-intents, thereby improving the accuracy of the intent qualification and also providing developers with greater control. [Learn more :octicons-arrow-right-24:](../../automation/intelligence/sub-intents-and-follow-up-intents.md)
+
+<hr>
+
+
 ## v11.15.0 June 30, 2025
 
 <u>Minor Release</u>  

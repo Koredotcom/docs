@@ -2,6 +2,26 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.15.1 July 12, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Phone Numbers</font>
+
+**Outbound Call App Selection for Agent AI**
+
+Supervisors and administrators can now assign an app for Agent AI during outbound calls. This selection is configured per phone number, ensuring the correct app assists agents. The enhancement supports outbound calls that operate outside standard experience flows. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number)
+
+<font size="4">Text to Speech (TTS)</font>
+
+**Support for Additional ElevenLabs Voices**
+
+Eight new Arabic-language ElevenLabs voices are now available in the Voice Gateway TTS configuration. Platform users can select region-specific voices like Raed (AR-SA-Male) and Hasan (AR-EG-Male) for more localized experiences.
+
+<hr>
+
 ## v11.15.0 June 30, 2025
 
 <u> Minor Release </u>

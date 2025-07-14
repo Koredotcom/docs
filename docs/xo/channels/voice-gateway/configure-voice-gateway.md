@@ -14,7 +14,7 @@ Go to **The Product (For example, Automation AI/ Contact Center AI)** > **Flows 
 Steps to buy a new phone number:
 
 1. Click the **Phone Numbers** tab and click **Buy New Phone Number**. You can configure a custom local or toll-free number by clicking **Get New Phone Number** on the **Phone Number** window.  
-<img src="../images/buy-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/buy-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:70%;">
 
     1. Select a country in the **Country Name** field.
     2. Select either the **Local** or **Toll-Free Number** option.
@@ -26,11 +26,12 @@ Steps to buy a new phone number:
 2. Configure an available number with the following steps:
 
     1. Click the **Get Number** button.
-    2. On the **Forward to Phone Number** page, select whether the number will be reserved for Inbound Calls, Outbound Calls, or both, and click **Done**.  
-        <img src="../images/forward-to-phone-number.png" alt="Forward To Phone Number" title="Forward To Phone Number" style="border: 1px solid gray; zoom:70%;">
-    3. A success confirmation message is displayed, and the phone number is added.
-    4. You can now call this number to test your Use Cases.
-    5. When ready to go live, forward the calls you receive to this phone number or use this number as your customer support number.
+    2. On the **Forward to Phone Number** page, select whether the number will be reserved for Inbound Calls, Outbound Calls, or both.  
+    3. Select an App for outbound calls from the dropdown. AgentAI will trigger this app when the agent makes an outbound call with this phone number.  
+        <img src="../images/phone-number.png" alt="Forward To Phone Number" title="Forward To Phone Number" style="border: 1px solid gray; zoom:60%;">
+    4. Click **Done**. A success confirmation message is displayed, and the phone number is added.
+    5. You can now call this number to test your Use Cases.
+    6. When ready to go live, forward the calls you receive to this phone number or use this number as your customer support number.
 
 ### Attach Flow
 

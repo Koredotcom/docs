@@ -38,6 +38,10 @@ DialogGPT's functionality is built on a three-step process:
 
 DialogGPT processes user input and conversation history to identify relevant chunks. These chunks are segments of a dialog, FAQ, or Search AI embeddings stored in a vector database. It rephrases the input to optimize retrieval and uses a Retrieval-Augmented Generation (RAG) pipeline for precise chunk selection. This retrieval process operates independently of the Search AI pipeline, ensuring a streamlined and focused selection of relevant content.
 
+!!! note
+
+    From v11.15.1 release, only sub-intents relevant to the active dialog are appended to the dynamic variable {{dialogs_chunks}}, whereas previously, all sub-intents were indexed along with the top-level intent.
+
 
 ### Step 2: Intent Identification and Fulfillment Strategy
 

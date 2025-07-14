@@ -14,15 +14,15 @@ To sign up for an Admin account, you must meet the following requirements:
 
 ## Accessing the Admin Console
 
-You can access the Admin Console from the [XO Platform](https://bots.kore.ai/botbuilder){:target="_blank"} using the **Go To Admin Console** option, under your user account menu.
+You can access the Admin Console from the [Platform](https://platform.kore.ai/builder){:target="_blank"} using the **Go To Admin Console** option, under your user account menu.
 
 <img src="../images/adminconsole-img1-access-admin-xo.png" alt="Navigate to Admin Console" title="Navigate to Admin Console" style="border: 1px solid gray;zoom:50%;"/>
 
-You can also access the Admin Console by going directly to: [https://bots.kore.ai/Admin](https://bots.kore.ai/Admin) 
+You can also access the Admin Console by going directly to: [https://platform.kore.ai/Admin](https://platform.kore.ai/Admin) 
 
 !!! Note
 
-        These options are available only for the XO Platform account Administrator.
+    These options are available only for the XO Platform account Administrator.  
 
 In case you have access to multiple accounts, the same will be listed for selection.  You can set one as the default account.
 
@@ -98,4 +98,4 @@ To assign a role to a user follow these steps:
 
 !!! Note
 
-    _The role of Bot Owner is assigned at the time of Bot creation and can be changed either from the Bots Management module or from the XO Platform by the Bot Owner not from Role Management._
+    _The role of Bot Owner is assigned at the time of Bot creation and can be changed either from the Bots Management module or from the Platform by the Bot Owner not from Role Management._
