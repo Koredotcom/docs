@@ -1,19 +1,19 @@
 # Agentic Copilot: Enhancing Efficiency, Control, and Customer Experience 
 
-The Agentic Copilot is a powerful extension of the Agent AI widget that automates end-to-end customer conversations while keeping human agents fully in control. It enables Agent AI to proactively send contextual, empathetic responses without requiring manual input. Agents can supervise every interaction, cancel or override automated replies, edit responses, use the “[custom tab](https://docs.kore.ai/xo/agentai/configuration/widget-theming-layout-customization/#adding-a-custom-tab){:target="_blank"}” to manually run dialog tasks, and perform LLM-powered searches—allowing them to focus on service quality rather than repetitive tasks. 
+The Agentic Copilot is a powerful extension of the Agent AI widget that automates end-to-end customer conversations while keeping human agents fully in control. It enables Agent AI to proactively send contextual, empathetic responses without requiring manual input. Agents can supervise every interaction, cancel or override automated replies, edit responses, use the “[Custom Tab](https://docs.kore.ai/xo/agentai/configuration/widget-theming-layout-customization/#adding-a-custom-tab){:target="_blank"}” to manually run dialog tasks, and perform LLM-powered searches—allowing them to focus on service quality rather than repetitive tasks. 
 
 Agentic Copilot blends automation with human judgment, delivering fast, accurate, and personalized support at scale. It boosts agent productivity while keeping service empathetic and high quality. The LLM is constantly learning; hence, first call resolution (FCR) improves with better suggestions. Agents can now handle multiple conversations simultaneously.  
 
 ## Key Benefits
 
 * [Scalable Efficiency](#scalable-efficiency): Automates routine interactions, enabling agents to manage multiple customer conversations in parallel with less effort. 
-* [Human supervision - absolute control](#human-supervision-with-absolute-control): Agents can pause, cancel, override, or edit any automated message before it’s sent—ensuring quality assurance at all times. 
+* [Human Supervision - Absolute Control](#human-supervision-with-absolute-control): Agents can pause, cancel, override, or edit any automated message before it’s sent—ensuring quality assurance at all times. 
 * [Proactive Engagement](#proactive-engagement): Agent AI can initiate and respond to conversations based on context, reducing wait times and improving customer satisfaction.  
 * [Contextual Intelligence](#contextual-intelligence): Agentic Copilot uses real-time data and workflow logic to generate accurate, contextual replies. It can:  
     * Prompt users for inputs  
     * Extract entities from messages  
     * Dynamically adapt responses using tool calling—triggering external APIs or business systems for up-to-date information (for example, pricing, availability, customer status).  
-* [Personalised and empathetic responses](#empathetic-and-personalized-responses): Understands the conversation context and responds in a natural, empathetic tone—creating a more human-like experience. 
+* [Personalised and Empathetic Responses](#empathetic-and-personalized-responses): Understands the conversation context and responds in a natural, empathetic tone—creating a more human-like experience. 
 * [Robust Fail-Safes](#robust-fail-safes): In case of data delays or message generation issues, agents can intervene using pause-to-send controls. The system disables auto-send if a response fails.  
 
 ### Proactive Engagement 
@@ -73,9 +73,11 @@ Follow these steps to configure an Agentic Copilot app:
 
 ### Deleting an Agentic Copilot app  
 
-In this section, you can delete a configured app. When deleted, the connected apps automatically get disabled from the Agent AI widget. Follow these steps to delete a configured app:  
+In this section, you can delete a configured app. When deleted, the connected apps automatically get disabled from the Agent AI widget.  
 
-1. Click the “delete” button against a saved app.  
+Follow these steps to delete a configured app:  
+
+1. Click the “Delete” button for an app.  
 2. Click **Delete** on the confirmation screen.  
 <img src="../images/delete-app-4.png" alt="delete-app" title="delete-app" style="border: 1px solid gray; zoom:80%;">  
 
@@ -109,17 +111,17 @@ The Agentic Copilot runs end-to-end conversations autonomously, with Agents supe
 In the Agent AI widget, the Assist tab displays the Agentic Copilot messages. After the configured Welcome Events are executed, the Assist tab displays the message “*Agentic Copilot is actively listening to your conversation and ready to assist automatically.*”  
 <img src="../images/agentic-copilot-listening-7.png" alt="agentic-copilot-listening" title="agentic-copilot-listening" style="border: 1px solid gray; zoom:80%;">   
 
-The messages appear with a “Sending” button that delays auto sending up to 10 seconds (based on the time set in the **Set message delay before auto send** field of the **Agent AI Widget Settings** section). During this time, Agents can click “x” beside the “Sending” button to cancel auto send and then manually send or copy the messages. The following screenshot shows the auto send functionality button in progress along with the “Override” button:  
+The messages appear with a “Sending” button that delays auto sending up to 10 seconds (based on the time set in the **Set message delay before auto send** field of the **Agent AI Widget Settings** section). During this time, Agents can click “x” beside the **Sending** button to cancel auto send and then manually send or copy the messages. The following screenshot shows the Auto-Send functionality button in progress along with the **Override** button:  
 <img src="../images/agentic-messages-in-runtime-8.png" alt="agentic-messages-in-runtime" title="agentic-messages-in-runtime" style="border: 1px solid gray; zoom:80%;">  
 
-* To cancel auto sending, click “x” beside the “sending” button:  
+* To cancel auto sending, click “x” beside the **sending** button:  
 <img src="../images/agentic-messages-control-9.png" alt="agentic-messages-control" title="agentic-messages-control" style="border: 1px solid gray; zoom:80%;">   
 
-    * Click the “copy” icon to copy the message to the “chat response” field. 
-    * Click the “Send” button to send the message manually. 
-    * Click “Override” to discard the Agentic prompt and enter your own response manually. 
-    * To stop/resume the “auto send” function, click the “stop/resume” icon in the top-right corner of the Agent AI widget, next to the “pause/resume” icon.  
-    * To pause or resume the Agentic app function, click the “pause/resume” icon in the top-right corner of the Agent AI widget.  
+    * Click the “Copy” icon to copy the message to the **Chat Response** field. 
+    * Click the **Send** button to send the message manually. 
+    * Click **Override** to discard the Agentic prompt and enter your own response manually. 
+    * To stop/resume the “Auto-Send” function, click the “Stop/Resume” icon in the top-right corner of the Agent AI widget, next to the “Pause/Resume” icon.  
+    * To pause or resume the Agentic app function, click the “Pause/Resume” icon in the top-right corner of the Agent AI widget.  
 * When the **Allow Auto Send Message** feature is enabled, the timer for each Agentic response starts only after the previous message is sent. 
 * If the view doesn’t auto-scroll to the latest message, an **arrow** appears at the bottom-right, showing the number of stacked Agentic messages. Click the **arrow** to scroll to the latest messages. 
 * To regenerate a failed Agentic response, double-click the corresponding customer message.  
