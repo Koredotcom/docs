@@ -438,6 +438,7 @@ Users should start creating an App with any one Product and later can enable/add
 </table>
 
 ## Search AI
+
 Search AI represents the next generation of our search and retrieval platform, delivering performance improvements, advanced AI capabilities, and enterprise-grade features. This next-generation platform offers substantial enhancements across every aspect of the search experience, from data ingestion to answer generation. Below is a breakdown of new features across the product.
 
 <font size="4"> Intelligent and More Accurate Answer Generation</font>
@@ -445,11 +446,11 @@ Search AI represents the next generation of our search and retrieval platform, d
 
 **Agentic RAG Architecture**
 
-Search AI leverages an Agentic RAG (Retrieval-Augmented Generation) architecture, where multiple autonomous agents collaborate to optimize query interpretation, retrieval, and response generation. This results in highly accurate, context-aware answers, especially for complex and multi-faceted queries. [Learn More](../searchai/rag-agents.md)
+Search AI leverages an Agentic RAG (Retrieval-Augmented Generation) architecture, where multiple autonomous agents collaborate to optimize query interpretation, retrieval, and response generation. This results in highly accurate, context-aware answers, especially for complex and multi-faceted queries. [Learn more](../searchai/rag-agents.md).
 
 **Advanced Retrieval Technology**
 
-Search AI offers a hybrid retrieval method based on RAG Fusion, combining multiple keyword and vector scores to significantly boost accuracy, relevance, and performance of search results. [Learn More](../searchai/retrieval.md)
+Search AI offers a hybrid retrieval method based on RAG Fusion, combining multiple keyword and vector scores to significantly boost accuracy, relevance, and performance of search results. [Learn more](../searchai/retrieval.md).
 
 
 **Channel-Aware Response Formatting**
@@ -471,7 +472,7 @@ Search AI improves response accuracy by allowing users to send entire documents 
 * Support for both structured and unstructured data from connectors.
 * Universal RACL support across connectors.
 * Improved business user experience with streamlined configuration and setup.
-[Learn More](../searchai/content-sources/connectors/connector-directory.md)
+[Learn more](../searchai/content-sources/connectors/connector-directory.md).
 
 
 **Superior Web Crawling**
@@ -479,7 +480,7 @@ Search AI improves response accuracy by allowing users to send entire documents 
 * New and improved crawler with significantly higher success rates.
 * 80% performance improvement in web crawling speed.
 * Better handling of complex website structures and dynamic content, including JavaScript-heavy pages.
-[Learn More](../searchai/content-sources/web-crawl.md)
+[Learn more](../searchai/content-sources/web-crawl.md).
 
 **Flexible Field Mapping for Content Ingestion from Third-party Applications**
 
@@ -507,17 +508,17 @@ Search AI supports the extraction and processing of diverse content types, inclu
 
 **Custom Content Transformation During Extraction**
 
-The content transformation layer used to enrich content immediately after extraction and before vectorization now features an additional API stage for custom processing of the extracted content. This allows developers to make custom changes to the content while preserving essential relationships and context of the original document. Additionally, developers can now define enrichment logic using JavaScript, replacing the earlier use of painless scripts. This change makes the enrichment process more developer-friendly and easier to maintain. [Learn More](../searchai/content-extraction/transformation.md)
+The content transformation layer used to enrich content immediately after extraction and before vectorization now features an additional API stage for custom processing of the extracted content. This allows developers to make custom changes to the content while preserving essential relationships and context of the original document. Additionally, developers can now define enrichment logic using JavaScript, replacing the earlier use of painless scripts. This change makes the enrichment process more developer-friendly and easier to maintain. [Learn more](../searchai/content-extraction/transformation.md).
 
 
 **Chunk-Level Processing**
 
-Chunk Workbench provides granular control over how content is transformed at the individual chunk level. This flexibility enables teams to tailor data processing to meet specific business needs, such as appending page summaries to each chunk for enhanced context and improved performance. [Learn More](../searchai/workbench/introduction.md)
+Chunk Workbench provides granular control over how content is transformed at the individual chunk level. This flexibility enables teams to tailor data processing to meet specific business needs, such as appending page summaries to each chunk for enhanced context and improved performance. [Learn more](../searchai/workbench/introduction.md).
 
 
 **Multi-Vector Generation**
 
-Search AI supports multi-vector search, which allows you to associate multiple embedding vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different important fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize certain fields during search and retrieval. This leads to more relevant and accurate results. [Learn More](../searchai/index-configuration.md)
+Search AI supports multi-vector search, which allows you to associate multiple embedding vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different important fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize certain fields during search and retrieval. This leads to more relevant and accurate results. [Learn more](../searchai/index-configuration.md).
 
 
 **Enhanced Embedding Models**
