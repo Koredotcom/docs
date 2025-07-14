@@ -22,7 +22,10 @@ The Queue Visibility permission has been restructured to enhance clarity, minimi
 **Skill Reassignment in "Default No Agents Available Chat Flow"**
 
 The issue is resolved where previously assigned skills remained visible even after applying a new skill during the "Default No Agents Available Chat Flow." Skills are now properly removed when using `agentUtils.deleteSkills()` with Skill IDs.  
-For example, `agentUtils.deleteSkills(["skillAId", "skillBId"]);` [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/skills/skill-management.md#add-a-skill-using-a-script)
+
+For example, `agentUtils.deleteSkills(["skillAId", "skillBId"]);`
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/routing/skills/skill-management.md#add-a-skill-using-a-script)
 
 <hr>
 
