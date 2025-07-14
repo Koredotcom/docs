@@ -21,8 +21,8 @@ You can access the Admin Console from the [XO Platform](https://bots.kore.ai/bot
 You can also access the Admin Console by going directly to: [https://bots.kore.ai/Admin](https://bots.kore.ai/Admin) 
 
 !!! Note
-
-        These options are available only for the XO Platform account Administrator.
+        
+         These options are available only for the XO Platform account Administrator.
 
 In case you have access to multiple accounts, the same will be listed for selection.  You can set one as the default account.
 
