@@ -45,6 +45,7 @@ plugins:
       redirect_maps:
         'channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md': 'channels/voice-gateway/configure-voice-gateway.md' 
         'channels/kore.ai-voice-gateway/call-control-parameters.md': 'channels/voice-gateway/speech-customization.md'
+        'channels/voice-gateway/call-control-parameters.md': 'channels/voice-gateway/speech-customization.md'
 extra:
   version:
     provider: mike
