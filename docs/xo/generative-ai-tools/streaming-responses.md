@@ -1,6 +1,6 @@
 # Streaming Responses
 
-Streaming responses in large language models (LLMs) enable real-time, incremental output generation. Instead of waiting for the entire response to be computed, the model starts transmitting pieces of the output as they become available. This approach not only reduces latency and enhances user interaction but also fosters a sense of immediate connection, mirroring real-time communication. Streaming is particularly beneficial in applications requiring dynamic updates, such as conversational AI, speech-to-text systems, and real-time content-generation tools. 
+Streaming responses in large language models (LLMs) enable real-time, incremental output generation. Instead of waiting for the entire response to be computed, the model starts transmitting pieces of the output as they become available. This approach not only reduces latency and enhances user interaction but also fosters a sense of immediate connection, mirroring real-time communication. Streaming is particularly beneficial in applications requiring dynamic updates, such as conversational AI, speech-to-text systems, and real-time content-generation tools.
 
 ## Current Capabilities
 
@@ -111,11 +111,11 @@ This detailed analytics data can be found under **Usage Logs** in the platform.
 
 ## Considerations for Streaming
 
-While streaming enhances real-time interactions and user experience, certain limitations should be considered. 
+While streaming enhances real-time interactions and user experience, certain limitations should be considered.
 
-* Post-processing operations are not possible, as they require the complete response, which conflicts with the nature of streaming. 
+* Post-processing operations are not possible, as they require the complete response, which conflicts with the nature of streaming.
 * Guardrails are not supported in streaming mode, as content moderation typically requires full-context evaluation, which is incompatible with token-by-token streaming.
-* The effectiveness of voice-based streaming also depends on the TTS engine’s support for bi-directional streaming, limiting compatibility to specific engines that offer this capability, such as Deepgram. 
+* The effectiveness of voice-based streaming also depends on the TTS engine’s support for bi-directional streaming, limiting compatibility to specific engines that offer this capability, such as Deepgram.
 * When BotKit is enabled, interception of streamed response messages is unsupported due to the real-time delivery process.
 
 !!! note
