@@ -15,17 +15,14 @@ This update includes enhancements and bug fixes. The key enhancements included i
 The Queue Visibility permission has been restructured to enhance clarity, minimize configuration issues, and provide a more consistent experience for supervisors.
 
 * Queue Visibility now exclusively controls visibility of queues in the Monitor tab.
-* The “None” option has been removed from the permission settings.
-
-[Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+* The “None” option has been removed from the permission settings. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 <font size="4">Configuration</font>
 
 **Skill Reassignment in "Default No Agents Available Chat Flow"**
 
 The issue is resolved where previously assigned skills remained visible even after applying a new skill during the "Default No Agents Available Chat Flow." Skills are now properly removed when using `agentUtils.deleteSkills()` with Skill IDs.  
-For example, `agentUtils.deleteSkills(["skillAId", "skillBId"]);`  
-[Learn more :octicons-arrow-right-24:](../../contactcenter/routing/skills/skill-management.md#add-a-skill-using-a-script)
+For example, `agentUtils.deleteSkills(["skillAId", "skillBId"]);` [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/skills/skill-management.md#add-a-skill-using-a-script)
 
 <hr>
 

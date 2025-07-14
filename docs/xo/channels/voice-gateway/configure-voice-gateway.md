@@ -27,7 +27,7 @@ Steps to buy a new phone number:
 
     1. Click the **Get Number** button.
     2. On the **Forward to Phone Number** page, select whether the number will be reserved for Inbound Calls, Outbound Calls, or both.  
-    3. Select an app for outbound calls from the dropdown. AgentAI will trigger this app when the agent makes an outbound call with this phone number.  
+    3. Select an App for outbound calls from the dropdown. AgentAI will trigger this app when the agent makes an outbound call with this phone number.  
         <img src="../images/phone-number.png" alt="Forward To Phone Number" title="Forward To Phone Number" style="border: 1px solid gray; zoom:60%;">
     4. Click **Done**. A success confirmation message is displayed, and the phone number is added.
     5. You can now call this number to test your Use Cases.
