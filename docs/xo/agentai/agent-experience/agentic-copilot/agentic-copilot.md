@@ -102,7 +102,7 @@ The Agentic Copilot feature enables you to have autonomous, end-to-end task exec
     5. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 60 seconds.  
     <img src="../images/agentic-copilot-setting-6.png" alt="agentic-copilot-setting" title="agentic-copilot-setting" style="border: 1px solid gray; zoom:80%;">  
 
-### Agentic Copilot in Runtime 
+## Agentic Copilot in Runtime 
 
 The Agentic Copilot runs end-to-end conversations autonomously, with Agents supervising the conversations. Agents can cancel, override, or edit the Agentic conversations, as needed.  
 
