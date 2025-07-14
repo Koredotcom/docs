@@ -530,6 +530,7 @@ nav:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
+      - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - Genesys Cloud CX using Kore Data Table: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx-using-kore-data-table.md
