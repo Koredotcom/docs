@@ -83,7 +83,7 @@ Follow these steps to delete a configured app:
 
     !!! note
 
-        You can’t delete an in-use Agentic app; the delete button appears disabled, and a badge indicates the app is in use. 
+        You can’t delete an in-use Agentic app; the "Delete" button appears disabled, and a badge indicates the app is in use. 
 
 ### Enabling Agentic Copilot in Agent AI 
 
@@ -111,10 +111,10 @@ The Agentic Copilot runs end-to-end conversations autonomously, with Agents supe
 In the Agent AI widget, the Assist tab displays the Agentic Copilot messages. After the configured Welcome Events are executed, the Assist tab displays the message “*Agentic Copilot is actively listening to your conversation and ready to assist automatically.*”  
 <img src="../images/agentic-copilot-listening-7.png" alt="agentic-copilot-listening" title="agentic-copilot-listening" style="border: 1px solid gray; zoom:80%;">   
 
-The messages appear with a “Sending” button that delays auto sending up to 10 seconds (based on the time set in the **Set message delay before auto send** field of the **Agent AI Widget Settings** section). During this time, Agents can click “x” beside the **Sending** button to cancel auto send and then manually send or copy the messages. The following screenshot shows the Auto-Send functionality button in progress along with the **Override** button:  
+The messages appear with a “Sending” button that delays auto sending up to 10 seconds (based on the time set in the **Set message delay before auto send** field of the **Agent AI Widget Settings** section). During this time, Agents can click “X” beside the **Sending** button to cancel auto send and then manually send or copy the messages. The following screenshot shows the Auto-Send functionality button in progress along with the **Override** button:  
 <img src="../images/agentic-messages-in-runtime-8.png" alt="agentic-messages-in-runtime" title="agentic-messages-in-runtime" style="border: 1px solid gray; zoom:80%;">  
 
-* To cancel auto sending, click “x” beside the **sending** button:  
+* To cancel auto sending, click “X” beside the **Sending** button:  
 <img src="../images/agentic-messages-control-9.png" alt="agentic-messages-control" title="agentic-messages-control" style="border: 1px solid gray; zoom:80%;">   
 
     * Click the “Copy” icon to copy the message to the **Chat Response** field. 
