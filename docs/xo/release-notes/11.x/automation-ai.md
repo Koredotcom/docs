@@ -3,7 +3,6 @@
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
 
-
 ## v11.15.1 July 12, 2025
 
 <u> Patch Release </u>

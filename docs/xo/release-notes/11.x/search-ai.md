@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.15.1 July 12, 2025
+
+<u>Patch Release</U>
+
+This update includes only bug fixes.
+
+<hr>
+
 ## v11.15.0 June 30, 2025
 
 <u>Minor Release</u>
