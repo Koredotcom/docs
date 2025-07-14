@@ -290,8 +290,171 @@ The following table summarizes the versions covered in this document:
 
 | Model Version | Accuracy | Tokens/sec (TPS) | Latency (secs) | Benchmark Comparison | Test Data & Results |
 |--------------|----------|------------------|---------------|----------------------|----------------------|
+| Version 3.0  | 97%      | 37               | 0.92          | [Benchmark Summary v3](#benchmarks-summary-v3) | [Test data and results v3](./test-date-and-results/xogpt-answer-generation-v3.0.xlsx) |
 | Version 2.0  | 96%      | 54               | 1.03          | [Benchmark Summary v2](#benchmarks-summary-v2) | [Test data and results v2](../test-date-and-results/xogpt-answer-generation-v2.0.xlsx) |
 | Version 1.0  | 94%      | 20               | 1.36          | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) |
+
+
+### Version 3.0
+
+
+#### Model Choice
+
+We evaluate various community models suitable for response generation and fine-tune them using our proprietary data, as described in the previous section. One or more candidate models are used throughout the training and evaluation phase. The model that performs better in terms of accuracy, safety, latency, and other relevant metrics will be deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer versions of the model. Currently, we are using [Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) as the base model for fine-tuning and deployment.
+
+
+<table>
+  <tr>
+   <td> Base Model
+   </td>
+   <td>Developer
+   </td>
+   <td>Language
+   </td>
+   <td>Release Date
+   </td>
+   <td>Status
+   </td>
+   <td>Knowledge Cutoff
+   </td>
+  </tr>
+  <tr>
+   <td>Llama 3.1 8B Instruct
+   </td>
+   <td>Meta
+   </td>
+   <td>Multi-lingual
+   </td>
+   <td>July, 2024
+   </td>
+   <td>Static 
+   </td>
+   <td>December 2023
+   </td>
+  </tr>
+</table>
+
+
+
+##### Prompt Tuning
+
+To ensure that responses are accurate, relevant, and aligned with enterprise requirements, we employed a prompt tuning strategy. This involves using carefully designed prompts that guide the model to generate clear, well-structured outputs with a consistent tone.
+
+We continuously refine these prompts through extensive testing across a diverse range of evaluation categories, including toxicity, bias, ambiguity, hallucination, logical consistency, and robustness.
+
+Each prompt variation is evaluated in English as well as in multiple other languages, using translated datasets to ensure consistent multilingual performance. To validate scalability and stability, we additionally assess performance on longer source documents.
+
+After multiple iterations, we select the prompt that consistently delivers the highest accuracy and reliability across all tested scenarios.
+
+
+##### AWQ Model Quantization
+
+To optimize the performance and efficiency of the model, we apply AWQ (Activation-aware Weight Quantization), a technique designed to reduce memory and computational requirements while maintaining accuracy significantly. Below is a detailed breakdown of the quantization process and parameters used with AWQ for the Llama 3.1 8B Instruct model. 
+
+
+<table>
+  <tr>
+   <td><strong>Parameters</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Value</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Zero Point</strong>
+   </td>
+   <td>Indicates whether to include a zero-point in the quantization scheme for better weight representation.	
+   </td>
+   <td>True
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Quantization Group Size</strong>
+   </td>
+   <td>The size of the weight groups for quantization, balancing between compression and computational overhead.
+   </td>
+   <td>128
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Weight Precision</strong>
+   </td>
+   <td>The number of bits used to represent weights in the quantization process.
+   </td>
+   <td>4
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Quantization Version</strong>
+   </td>
+   <td>The specific version of AWQ is optimized for GEMM (General Matrix Multiplication) operations.
+   </td>
+   <td>"GEMM"
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Computation Data Type</strong>
+   </td>
+   <td>The data type is used for computation during inference with quantized weights.
+   </td>
+   <td>torch.float16
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Model Loading</strong>
+   </td>
+   <td>Configuration to load the model with reduced CPU memory usage for efficient deployment.
+   </td>
+   <td>{"low_cpu_mem_usage": True}
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tokenizer Loading</strong>
+   </td>
+   <td>This includes trust configuration for loading the tokenizer with remote code compatibility.
+   </td>
+   <td>trust_remote_code=True
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Quantization Benefits</strong>
+   </td>
+   <td>AWQ enables a lower memory footprint and faster inference without significant loss of accuracy.
+   </td>
+   <td>-
+   </td>
+  </tr>
+</table>
+
+
+
+#### Model Usage Notes
+
+
+
+* Context-Only Responses: The model responds strictly based on the content of the source document. It does not incorporate external knowledge or answer questions outside the provided context.
+* Language Consistency: For accurate results, the query and the source document must be in the same language. Mixing languages can lead to incomplete or irrelevant responses.
+* Output Formatting: The model can structure its responses based on formatting cues in the query. For example:
+    * “Provide the answer in bullet points”
+    * “Explain in step-by-step format”
+    * “Summarize the key points”
+
+
+#### Benchmarks Summary v3
+
+To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
+
+
+
+* Llama 3.1 8b: A powerful open-source large language model with 8 billion parameters, known for its strong performance across various tasks, including multilingual dialogue, text generation, and understanding.
+* Claude 3.5 Sonnet: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
+* Mistral 7b v2: An open-source large language model with 7 billion parameters, known for its strong performance despite its relatively small size.
+
+<img src="../images/ans-gen-bench-summary-v3.png" alt="Benchmarks Summary v3" title="Benchmarks Summary v3" style="border: 1px solid gray; zoom:70%;">
+
+
+By leveraging its strengths in performance, latency, and responsible AI principles, XO-GPT is well-positioned as a high-performing language model. The [Test Data and Results V3.0](./test-date-and-results/xogpt-answer-generation-v3.0.xlsx) report offers a more in-depth examination of the evaluation process and its results.
 
 
 

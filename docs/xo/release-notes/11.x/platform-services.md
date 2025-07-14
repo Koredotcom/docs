@@ -2,6 +2,21 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.15.1 July 12, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">LLM & Generative AI</font>
+
+**Enhanced Model Visibility Across GenAI Features**
+
+Configured language models are now visible and accessible across all GenAI features, regardless of prompt availability, with streamlined prompt creation workflows. This enhancement ensures users can always see and access their properly configured language models, with clear pathways to activate them through guided prompt creation.
+
+
+<hr>
+
 ## v11.15.0 June 30, 2025
 
 <u> Minor Release </u>  

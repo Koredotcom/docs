@@ -2,6 +2,33 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.15.1 July 12, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">User Management</font>
+
+**Refined Queue Visibility Permissions**
+
+The Queue Visibility permission has been restructured to enhance clarity, minimize configuration issues, and provide a more consistent experience for supervisors.
+
+* Queue Visibility now exclusively controls visibility of queues in the Monitor tab.
+* The “None” option has been removed from the permission settings. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+
+<font size="4">Configuration</font>
+
+**Skill Reassignment in "Default No Agents Available Chat Flow"**
+
+The issue is resolved where previously assigned skills remained visible even after applying a new skill during the "Default No Agents Available Chat Flow." Skills are now properly removed when using `agentUtils.deleteSkills()` with Skill IDs.  
+
+For example, `agentUtils.deleteSkills(["skillAId", "skillBId"]);`
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/routing/skills/skill-management.md#add-a-skill-using-a-script)
+
+<hr>
+
 ## v11.15.0 June 30, 2025
 
 <u>Minor Release</u>

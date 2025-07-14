@@ -40,7 +40,12 @@ theme:
 plugins:
   - search:
       lang: tr
-  - glightbox   
+  - glightbox  
+  - redirects:
+      redirect_maps:
+        'channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md': 'channels/voice-gateway/configure-voice-gateway.md' 
+        'channels/kore.ai-voice-gateway/call-control-parameters.md': 'channels/voice-gateway/speech-customization.md'
+        'channels/voice-gateway/call-control-parameters.md': 'channels/voice-gateway/speech-customization.md'
 extra:
   version:
     provider: mike
@@ -530,6 +535,7 @@ nav:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
+      - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - Genesys Cloud CX using Kore Data Table: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx-using-kore-data-table.md
@@ -792,7 +798,6 @@ nav:
         - Import User Data: administration/enrollment/importing-users-and-user-data.md
         - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
       - Security and Control:
-        - Security and Control Module Overview: administration/security-and-control/security-module-overview.md
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
         - Kore.ai Connector: administration/kore-ai-connector.md
         - Enterprise Key: administration/security-and-control/enterprise-key.md
