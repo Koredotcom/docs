@@ -1,6 +1,21 @@
-# Function Node - Automate Function Execution
+# Function Node - Empower Workflows with Custom Code
 
-A **Function** node lets you write and execute custom scripts using JavaScript or Python, or use custom functions within a script you have imported and deployed within the tools automation flow.
+The **Function** node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
+
+## Key Capabilities
+
+* Custom Script Execution: Write and execute JavaScript or Python code inline or leverage pre-deployed custom functions.
+* Dynamic Data Processing: Transform, validate, and manipulate data flowing through your automation.
+* Reusable Functions: Import and use pre-built functions from your organization's script library.
+
+## Common Use Cases
+
+* Data Transformation: Convert data formats, parse JSON/XML, or restructure information between nodes.
+* Business Logic Implementation: Apply custom validation rules, calculations, or decision-making logic.
+* Text Processing: Perform string manipulation, regex operations, or natural language processing.
+* Mathematical Operations: Execute complex calculations or statistical analysis on your data.
+
+In this document, you will learn how to add Function nodes to your flows, configure them with custom code or functions, handle inputs and outputs, and test your implementations.
 
 ## Add and Configure a Function Node
 
@@ -334,9 +349,10 @@ The **Debug** window generates the flow log and results for the given input(s), 
 
 <img src="../images/debug-log-function-node.png" alt="debug log" title="debug log" style="border: 1px solid gray; zoom:75%;">  
 
-## Access the AI Node’s Output
+## Access the Function Node’s Output
 
-The node’s output is stored in a context variable. You can access the variable using the syntax: `{{context.steps.&lt;<Functionnodename>>.output}`
+The node’s output is stored in a context variable. You can access the variable using the syntax: 
+`{{context.steps.FunctionNodeName.output}`
 
 For example, <code><em>context.steps.Bankingnode.output</em></code>
 
