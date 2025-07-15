@@ -68,21 +68,17 @@ The following list describes the columns displayed for each Kore.ai user.
   </tr>
 </table>
 
-
 Clicking on a specific User row from the Users page opens the **User Details** page, from where you can modify the following:
-
 
 * **[User Profile](#profile)**,
 * **[Sessions/Devices](#sessionsdevices)**, and
 * **[Manage Bots access](#manage-bots)**.
-
 
 ### Profile
 
 You can modify the user profile information of a specific user in your account, for example, to update their address or title.
 
 <img src="../images/bac-users-profile.png" alt="User Profile" title="User Profile" style="border: 1px solid gray;zoom:50%;"/>
-
 
 The following fields are accessible from this page:
 
