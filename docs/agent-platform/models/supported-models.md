@@ -17,30 +17,33 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
   <tr>
    <td>OpenAI</td>
    <td>
-<ul>
-
-<li>open ai-gpt-4o</li>
-<li>open ai-gpt-4o-mini</li>
-<li>open ai-gpt-3.5-turbo</li>
-<li>open ai-gpt-4</li>
-<li>open ai-gpt-4-0125-preview</li>
-<li>open ai-gpt-4-1106-preview</li>
-<li>open ai-gpt-4-turbo-preview</li>
-<li>open ai-gpt-4-0613</li>
-<li>open ai-gpt-3.5-turbo-1106</li>
-</ul>
+  <ul>
+    <li>open ai-gpt-4o</li>
+    <li>open ai-gpt-4o-mini</li>
+    <li>open ai-gpt-3.5-turbo</li>
+    <li>open ai-gpt-3.5-turbo-1106</li>
+    <li>open ai-gpt-4</li>
+    <li>open ai-gpt-4-0125-preview</li>
+    <li>open ai-gpt-4-1106-preview</li>
+    <li>open ai-gpt-4-turbo-preview</li>
+    <li>open ai-gpt-4-0613</li>
+    <li>open ai-gpt-4.1-2025-04-14</li>
+    <li>open ai-gpt-4.1-mini-2025-04-14</li>
+    <li>open ai-gpt-4.1-nano-2025-04-14</li>
+    <li>open ai-gpt-4.5-preview-2025-02-27</li>
+  </ul>
    </td>
   </tr>
   <tr>
    <td>Azure OpenAI
    </td>
    <td>
-    <ul>
+   <ul>
     <li>azure open ai-gpt-4</li>
     <li>azure open ai-gpt-3.5-turbo</li>
     <li>azure open ai-gpt-4o</li>
     <li>azure open ai-gpt-4o-mini</li>
-    </ul>
+  </ul>
    </td>
   </tr>
   <tr>
@@ -51,7 +54,10 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>anthropic-claude-3-haiku</li>
     <li>anthropic-claude-3-sonnet</li>
     <li>anthropic-claude-3-opus</li>
-    </ul>
+    <li>anthropic-claude-3-7-sonnet-20250219</li>
+    <li>anthropic-claude-3-5-sonnet-20241022</li>
+    <li>anthropic-claude-3-5-haiku-20241022</li>
+  </ul>
    </td>
   </tr>
  
@@ -59,10 +65,12 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    <td>Google
    </td>
    <td>
-<ul>
-
-<li>gemini-1.5-flash-latest</li>
-</ul>
+   <ul>
+    <li>gemini-1.5-flash-latest</li>
+    <li>gemini-2.0-flash</li>
+    <li>gemini-2.0-flash-lite</li>
+    <li>gemini-2.5-flash-preview-05-20</li>
+  </ul>
    </td>
   </tr>
 </table>
