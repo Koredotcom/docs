@@ -57,7 +57,7 @@ See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generatin
    </td>
   </tr>
   <tr>
-   <td>`streamId`
+   <td>streamId
    </td>
    <td>Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, 
 st-084d3c5e-376a-559f-9987-a012bb2bxxxx
@@ -79,7 +79,7 @@ st-084d3c5e-376a-559f-9987-a012bb2bxxxx
    </td>
   </tr>
   <tr>
-   <td>`accountId`
+   <td>accountId
    </td>
    <td>The account identifier associated with the API request. For example, 
 6639f7bd58c97ffac03bxxxx
@@ -127,7 +127,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`caseTmp`
+   <td>caseTmp
    </td>
    <td>Unique case template identifier
  </a>
@@ -136,7 +136,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`name`
+   <td>name
    </td>
    <td>Name or title of the case
    </td>
@@ -144,7 +144,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`desc`
+   <td>desc
    </td>
    <td>Case description
    </td>
@@ -152,7 +152,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`userInfo`
+   <td>userInfo
    </td>
    <td>User information object containing user details
    </td>
@@ -160,7 +160,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`id`
+   <td>id
    </td>
    <td> Unique user identifier. If you do not include user identifier `id`, you must provide either emailId or phoneNumber
    </td>
@@ -168,7 +168,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`name`
+   <td>name
    </td>
    <td>User's name
    </td>
@@ -176,7 +176,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`emailId`
+   <td>emailId
    </td>
    <td>User's email address (Mandatory if `id` is not present)
    </td>
@@ -184,7 +184,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`phoneNumber`
+   <td>phoneNumber
    </td>
    <td>User's phone number (Mandatory if `id` is not present)
    </td>
@@ -192,7 +192,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`source`
+   <td>source
    </td>
    <td>Source of the case (for example, rtm)
    </td>
@@ -200,7 +200,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`desc`
+   <td>desc
    </td>
    <td>Task description
    </td>
@@ -208,7 +208,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`dueDate`
+   <td>dueDate
    </td>
    <td>Due date of the case
    </td>

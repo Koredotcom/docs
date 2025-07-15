@@ -57,7 +57,7 @@ See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generatin
    </td>
   </tr>
   <tr>
-   <td>`streamId`
+   <td>streamId
    </td>
    <td>Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, 
 st-084d3c5e-376a-559f-9987-a012bb2bxxxx
@@ -79,7 +79,7 @@ st-084d3c5e-376a-559f-9987-a012bb2bxxxx
    </td>
   </tr>
   <tr>
-   <td>`accountId`
+   <td>accountId
    </td>
    <td>The account identifier associated with the API request. For example, 
 6639f7bd58c97ffac03bxxxx
@@ -151,7 +151,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`searchText`
+   <td>searchText
    </td>
    <td>Searching for the name of the tasks
  </a>
@@ -160,7 +160,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`unresolved`
+   <td>unresolved
    </td>
    <td>Retrieves the tasks that are still unresolved 
    </td>
@@ -168,7 +168,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`unassigned`
+   <td>unassigned
    </td>
    <td>Retrieves the tasks that are still unassigned
    </td>
@@ -176,7 +176,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`mycase`
+   <td>mycase
    </td>
    <td>Retrieves the tasks that are still assigned to me
    </td>
@@ -184,7 +184,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`priority`
+   <td>priority
    </td>
    <td> List of priorities to filter the tasks; for example, high, medium
    </td>
@@ -192,7 +192,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`status`
+   <td>status
    </td>
    <td>List of task statuses to filter by; for example, new, open
    </td>
@@ -200,7 +200,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`channel`
+   <td>channel
    </td>
    <td>List of communication channels to filter by; for example, email, chat
    </td>
@@ -208,7 +208,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`queues`
+   <td>queues
    </td>
    <td>List of queues to filter cases by; for instance, SupportQueue1
    </td>
@@ -216,7 +216,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`startDate`
+   <td>startDate
    </td>
    <td>Start date of the task (ISO 8601 format)
    </td>
@@ -224,7 +224,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`endDate`
+   <td>endDate
    </td>
    <td>End date of the task (ISO 8601 format)
    </td>
@@ -232,7 +232,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`sortBy`
+   <td>sortBy
    </td>
    <td>Field to sort by; for example, createdDate
    </td>
@@ -240,7 +240,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`dueDate`
+   <td>dueDate
    </td>
    <td>Filter by exact dueDate (ISO 8601 format)
    </td>
