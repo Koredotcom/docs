@@ -4,16 +4,16 @@ The **Function** node is a powerful component that enables you to extend your au
 
 ## Key Capabilities
 
-* Custom Script Execution: Write and execute JavaScript or Python code inline or leverage pre-deployed custom functions.
-* Dynamic Data Processing: Transform, validate, and manipulate data flowing through your automation.
-* Reusable Functions: Import and use pre-built functions from your organization's script library.
+* **Custom Script Execution**: Write and execute JavaScript or Python code inline or leverage pre-deployed custom functions.
+* **Dynamic Data Processing**: Transform, validate, and manipulate data flowing through your automation.
+* **Reusable Functions**: Import and use pre-built functions from your organization's script library.
 
 ## Common Use Cases
 
-* Data Transformation: Convert data formats, parse JSON/XML, or restructure information between nodes.
-* Business Logic Implementation: Apply custom validation rules, calculations, or decision-making logic.
-* Text Processing: Perform string manipulation, regex operations, or natural language processing.
-* Mathematical Operations: Execute complex calculations or statistical analysis on your data.
+* **Data Transformation**: Convert data formats, parse JSON/XML, or restructure information between nodes.
+* **Business Logic Implementation**: Apply custom validation rules, calculations, or decision-making logic.
+* **Text Processing**: Perform string manipulation, regex operations, or natural language processing.
+* **Mathematical Operations**: Execute complex calculations or statistical analysis on your data.
 
 In this document, you will learn how to add Function nodes to your flows, configure them with custom code or functions, handle inputs and outputs, and test your implementations.
 
