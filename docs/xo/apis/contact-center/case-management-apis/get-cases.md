@@ -57,7 +57,7 @@ See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generatin
    </td>
   </tr>
   <tr>
-   <td>`streamId`
+   <td>streamId
    </td>
    <td>Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, 
 st-084d3c5e-376a-559f-9987-a012bb2bxxxx
@@ -79,7 +79,7 @@ st-084d3c5e-376a-559f-9987-a012bb2bxxxx
    </td>
   </tr>
   <tr>
-   <td>`accountId`
+   <td>accountId
    </td>
    <td>The account identifier associated with the API request. For example, 
 6639f7bd58c97ffac03bxxxx
@@ -127,7 +127,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`searchText`
+   <td>searchText
    </td>
    <td>Search text to filter cases by their name or title
  </a>
@@ -136,7 +136,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`unresolved`
+   <td>unresolved
    </td>
    <td>Retrieves the cases that are still unresolved 
    </td>
@@ -144,7 +144,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`unassigned`
+   <td>unassigned
    </td>
    <td>Retrieves the cases that are still unassigned
    </td>
@@ -152,7 +152,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`mycase`
+   <td>mycase
    </td>
    <td>Indicates whether the current case is assigned to the current user
    </td>
@@ -160,7 +160,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`priority`
+   <td>priority
    </td>
    <td> List of priorities to filter the cases; for example, high, medium
    </td>
@@ -168,7 +168,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`status`
+   <td>status
    </td>
    <td>List of case statuses to filter by; for example, new, open
    </td>
@@ -176,7 +176,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`channel`
+   <td>channel
    </td>
    <td>List of communication channels to filter by; for example, email, chat
    </td>
@@ -184,7 +184,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`queues`
+   <td>queues
    </td>
    <td>List of queues to filter cases by; for instance, SupportQueue1
    </td>
@@ -192,7 +192,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`startDate`
+   <td>startDate
    </td>
    <td>Start date of the case (ISO 8601 format)
    </td>
@@ -200,7 +200,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`endDate`
+   <td>endDate
    </td>
    <td>End date of the case (ISO 8601 format)
    </td>
@@ -208,7 +208,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`sortBy`
+   <td>sortBy
    </td>
    <td>Field to sort by; for example, createdDate
    </td>
@@ -216,7 +216,7 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
    </td>
   </tr>
   <tr>
-   <td>`dueDate`
+   <td>dueDate
    </td>
    <td>Filter by exact dueDate (ISO 8601 format)
    </td>

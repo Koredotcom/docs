@@ -57,7 +57,7 @@ See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generatin
    </td>
   </tr>
   <tr>
-   <td>`streamId`
+   <td>streamId
    </td>
    <td>Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, 
 st-084d3c5e-376a-559f-9987-a012bb2bxxxx
@@ -66,7 +66,7 @@ st-084d3c5e-376a-559f-9987-a012bb2bxxxx
    </td>
   </tr>
   <tr>
-   <td>`caseId`
+   <td>caseId
    </td>
    <td>Unique identifier of the case to update. For example, ci-b4eaa6e-b3d9-4bb3-ae54-bb043b4axxxx
    </td>
@@ -87,7 +87,7 @@ st-084d3c5e-376a-559f-9987-a012bb2bxxxx
    </td>
   </tr>
   <tr>
-   <td>`accountId`
+   <td>accountId
    </td>
    <td>The account identifier associated with the API request. For example, 
 6639f7bd58c97ffac03bxxxx
@@ -271,7 +271,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`caseTmp`
+   <td>caseTmp
    </td>
    <td>Unique case template identifier
  </a>
@@ -280,7 +280,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`name`
+   <td>name
    </td>
    <td>Case name 
    </td>
@@ -288,7 +288,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`lname`
+   <td>lname
    </td>
    <td>Lowercase version or slug of the name
    </td>
@@ -296,7 +296,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`desc`
+   <td>desc
    </td>
    <td>Case description
    </td>
@@ -304,7 +304,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`tags`
+   <td>tags
    </td>
    <td> Array of tag strings
    </td>
@@ -312,7 +312,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`userInfo`
+   <td>userInfo
    </td>
    <td>Info about the user who created or owns the case
    </td>
@@ -320,7 +320,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`sessIds`
+   <td>sessIds
    </td>
    <td>Related session IDs
    </td>
@@ -328,7 +328,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`accountId`
+   <td>accountId
    </td>
    <td>Account identifier
    </td>
@@ -336,7 +336,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`lid`
+   <td>lid
    </td>
    <td>Stream or instance, or session ID
    </td>
@@ -344,7 +344,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`orgId`
+   <td>orgId
    </td>
    <td>Organization identifier
    </td>
@@ -352,7 +352,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`convIds`
+   <td>convIds
    </td>
    <td>Related conversation IDs
    </td>
@@ -360,7 +360,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`status`
+   <td>status
    </td>
    <td>Current case status
    </td>
@@ -368,7 +368,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`language`
+   <td>language
    </td>
    <td>Case language code (for example, english)
    </td>
@@ -376,7 +376,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`source`
+   <td>source
    </td>
    <td>Source of the case (for example, rtm)
    </td>
@@ -384,7 +384,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`conversationType`
+   <td>conversationType
    </td>
    <td>Type of conversation (expected case)
    </td>
@@ -392,7 +392,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`fields`
+   <td>fields
    </td>
    <td>Custom or system field definitions and values
    </td>
@@ -400,7 +400,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`participants`
+   <td>participants
    </td>
    <td>List of participant objects
    </td>
@@ -408,7 +408,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`queues`
+   <td>queues
    </td>
    <td>List of queues assigned to the case
    </td>
@@ -416,7 +416,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`priority`
+   <td>priority
    </td>
    <td>Priority metadata (level, color, and so on)
    </td>
@@ -424,7 +424,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`refId`
+   <td>refId
    </td>
    <td>Case reference ID
    </td>
@@ -432,7 +432,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`assigneeType`
+   <td>assigneeType
    </td>
    <td>Assignment type (unassigned, queues, and so on)
    </td>
@@ -440,7 +440,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`isActive`
+   <td>isActive
    </td>
    <td>Whether the case is active
    </td>
@@ -448,7 +448,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`taskIds`
+   <td>taskIds
    </td>
    <td>Array of associated task IDs
    </td>
@@ -456,7 +456,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`attachments`
+   <td>attachments
    </td>
    <td>Array of attachments
    </td>
@@ -464,7 +464,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`feedback`
+   <td>feedback
    </td>
    <td>Feedback data
    </td>
@@ -472,7 +472,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`createdBy`
+   <td>createdBy
    </td>
    <td>Creator information
    </td>
@@ -480,7 +480,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`updatedBy`
+   <td>updatedBy
    </td>
    <td>Last updated by info
    </td>
@@ -488,7 +488,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`timestampValue`
+   <td>timestampValue
    </td>
    <td>Timestamp (in ms) for tracking updates
    </td>
@@ -496,7 +496,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`activityIds`
+   <td>activityIds
    </td>
    <td>Related activity IDs
    </td>
@@ -504,7 +504,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`commentIds`
+   <td>commentIds
    </td>
    <td>Related comment IDs
    </td>
@@ -512,7 +512,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`resolutionCmts`
+   <td>resolutionCmts
    </td>
    <td>Resolution comments
    </td>
@@ -520,7 +520,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`dueDate`
+   <td>dueDate
    </td>
    <td>Case due date timestamp (in ms)
    </td>
@@ -528,7 +528,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`isBreached`
+   <td>isBreached
    </td>
    <td>SLA breach flag
    </td>
@@ -536,7 +536,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`supportCustomTasks`
+   <td>supportCustomTasks
    </td>
    <td>Indicates support for custom tasks
    </td>
@@ -544,7 +544,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`channel`
+   <td>channel
    </td>
    <td>Channels used (for example, chat, email)
    </td>
@@ -552,7 +552,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`createdAt`
+   <td>createdAt
    </td>
    <td>Case creation timestamp
    </td>
@@ -560,7 +560,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`updatedAt`
+   <td>updatedAt
    </td>
    <td>Last updated timestamp
    </td>
@@ -568,7 +568,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`currAssignee`
+   <td>currAssignee
    </td>
    <td>Current assigned agent information
    </td>
@@ -576,7 +576,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
    </td>
   </tr>
   <tr>
-   <td>`ETA`
+   <td>ETA
    </td>
    <td>Estimated time of resolution (ISO date string)
    </td>

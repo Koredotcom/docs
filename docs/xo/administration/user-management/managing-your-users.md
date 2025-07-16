@@ -68,21 +68,17 @@ The following list describes the columns displayed for each Kore.ai user.
   </tr>
 </table>
 
-
 Clicking on a specific User row from the Users page opens the **User Details** page, from where you can modify the following:
-
 
 * **[User Profile](#profile)**,
 * **[Sessions/Devices](#sessionsdevices)**, and
 * **[Manage Bots access](#manage-bots)**.
-
 
 ### Profile
 
 You can modify the user profile information of a specific user in your account, for example, to update their address or title.
 
 <img src="../images/bac-users-profile.png" alt="User Profile" title="User Profile" style="border: 1px solid gray;zoom:50%;"/>
-
 
 The following fields are accessible from this page:
 
@@ -168,13 +164,16 @@ The _password reset email_ sent message is displayed and an email is sent to the
 
 #### Delete User
 
-You can **Delete a User** using the **More** icon from the User Settings page. 
-You can also **Delete a User** from the Users page by hovering over the **user row and** clicking the delete icon or by selecting a user and clicking the **Delete Selected** link.
+As a Bots Admin, you can **Delete a User** using the **More** icon on the User Profile page. 
+You can also **Delete a User** from the Users page by hovering over the **user row** and clicking the delete icon or by selecting a user and clicking the **Delete Selected** link.
 
 !!! Note
 
     You cannot delete the Users if they are owners of the virtual assistant. You must change the respective bot ownership to someone else to delete the user.
 
+#### Transfer Ownership
+
+This option is accessible only to the **Primary Master Admin**. It allows you to transfer ownership of a specific bot. To proceed, select the new account owner by entering their email ID or name.
 
 ## User Settings
 
