@@ -103,7 +103,7 @@ bot-header: {{lang-code}}
    </td>
    <td>Required
    </td>
-   <td>False
+   <td>false
    </td>
    <td>‘True’ if you want to fetch the intents from configured tasks in the bot and ‘False’ if you want to fetch only for the published tasks.
    </td>
@@ -113,7 +113,7 @@ bot-header: {{lang-code}}
    </td>
    <td>Optional
    </td>
-   <td>False
+   <td>false
    </td>
    <td>By default, the API response is asynchronous. If you want to use synchronous mode, use the ‘sync’ parameter and set the value to ‘true’. For example,   
      https://{{host}}/api/v1.1/rest/bot/{{BotID}}/findIntent?fetchConfiguredTasks=false&sync=true
