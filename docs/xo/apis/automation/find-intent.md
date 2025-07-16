@@ -46,9 +46,6 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 </table>
 
 
- 
-
-
 ## Path Parameters
 
 
@@ -77,32 +74,54 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>Bot ID or Stream ID. You can access it from the General Settings page of the bot.
    </td>
   </tr>
-  <tr>
-   <td>fetchConfiguredTasks
-   </td>
-   <td>Required
-   </td>
-   <td><em>true </em>if you want to fetch the intents from configured tasks in the bot and <em>false </em>if you want to fetch only for the published tasks
-   </td>
-  </tr>
+  
 </table>
-
-
- 
-
 
 ### Bot Language
 
-Optionally, if multi-language is enabled for the Bot, you need to pass the bot-language header with the language code such as en, zh_cn etc. If the language code is not passed for a multi-lingual Bot, then the default language of the Bot will be considered.
+Optionally, if multi-language is enabled for the Bot, you need to pass the bot-language header with the language code, such as en, zh_cn, etc. If the language code is not passed for a multilingual Bot, the Bot's default language will be considered.
 
 
 ```json
 bot-header: {{lang-code}}
 ```
+## Query Parameters
 
-
- 
-
+<table>
+  <tr>
+   <td><strong>PARAMETER</strong>
+   </td>
+   <td><strong>REQUIRED/OPTIONAL</strong>
+   </td>
+   <td><strong>DEFAULT VALUE</strong>
+   </td>
+   <td><strong>DESCRIPTION</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>fetchConfiguredTasks
+   </td>
+   <td>Required
+   </td>
+   <td>False
+   </td>
+   <td>‘True’ if you want to fetch the intents from configured tasks in the bot and ‘False’ if you want to fetch only for the published tasks.
+   </td>
+  </tr>
+  <tr>
+   <td>sync
+   </td>
+   <td>Optional
+   </td>
+   <td>False
+   </td>
+   <td>By default, the API response is asynchronous. If you want to use synchronous mode, use the ‘sync’ parameter and set the value to ‘true’. For example,   
+     https://{{host}}/api/v1.1/rest/bot/{{BotID}}/findIntent?fetchConfiguredTasks=false&sync=true
+  
+   </td>
+  </tr>
+  
+</table>
 
 ## Sample Request
 
@@ -119,10 +138,6 @@ curl -X POST \
      "streamName": "{{bot name}}"
    }'
 ```
-
-
- 
-
 
 ## Body Parameters
 
