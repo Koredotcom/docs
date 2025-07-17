@@ -44,7 +44,7 @@ See <a href="../../../analytics/automations/conversation-flows">How to generate 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable
+<li>App Builder: Not Applicable
 
 <li>Admin Console: Profile Management > Delete Users Data
 </li>
@@ -126,9 +126,9 @@ curl -X DELETE \
   <tr>
    <td>botIds
    </td>
-   <td>The array of bot Ids from where the user details have to be deleted, for example, [“botId1”, “botId2”]
+   <td>The array of AI Agent Ids from where the user details have to be deleted, for example, [“botId1”, “botId2”]
    <ul>
-   <li>All the user details provided in the userIds parameter will be deleted from all the bots provided in botIds.
+   <li>All the user details provided in the userIds parameter will be deleted from all the agents identified by botIds.
    <li>This parameter is effective only if RemoveDataFromAllBots parameter is set to false.
    </ul>
    </td>
@@ -141,7 +141,7 @@ curl -X DELETE \
    <td>Determines if the specified users details have to be removed from all the Bots. Set to true or false.
    <ul>
    <li>This parameter is set to false by default.
-   <li>If it is set to true, the user details provided in userIds parameter will be deleted from all the bots in the organization. Data provided in botIds parameter will be ignored.
+   <li>If it is set to true, the user details provided in userIds parameter will be deleted from all the AI agents in the organization and botIds parameter will be ignored.
    </ul>
    </td>
   </tr>

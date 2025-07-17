@@ -35,7 +35,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable
+<li>App Builder: Not Applicable
 
 <li>Admin Console: Bot Definition > Bot Import
 </li>
@@ -68,7 +68,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
    <td>Required
    </td>
-   <td>The Bot ID or Stream ID of the bot into which you want to import the functions. You can get it under <strong>General Settings</strong> on the Bot Builder.
+   <td>The Bot ID or Stream ID of the bot into which you want to import the functions. You can get it under <strong>General Settings</strong> on the App Builder.
    </td>
   </tr>
 </table>

@@ -36,7 +36,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Intent and Entity Detection
+<li>App Builder: Intent and Entity Detection
 
 <li>Admin Console: Intent Identification > Intent and Entity Detection
 </li>

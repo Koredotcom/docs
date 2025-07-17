@@ -36,7 +36,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: NLP Configurations
+<li>App Builder: NLP Configurations
 
 <li>Admin Console: Test > NLP Configurations & Train
 </li>
@@ -68,7 +68,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td>The <em>Bot ID</em> or <em>Stream ID</em> that can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <em>Bot ID</em> or <em>Stream ID</em> that can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>

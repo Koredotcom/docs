@@ -23,7 +23,7 @@ To fetch the conversational messages between the bot and user in reverse chronol
 <strong>Note</strong>: The GET method shows the RTM interactions by default. To get the channel-specific interaction, use the channelType parameter in the GET method. For the channelType parameter values, see <a href="#Request_Body_Parameters">Request Body Parameters</a> section.
 <p>
 <strong>POST Method</strong><p>Version 1:<p>
-<code>https://{{host}}/api/public/bot/{{botId}}/getMessages </code>and <code>https://{{host}}/api/public/getMessages</code> for Bot Admin Console.
+<code>https://{{host}}/api/public/bot/{{botId}}/getMessages </code>and <code>https://{{host}}/api/public/getMessages</code> for Admin Console.
 <p>Version 2:<p>
 <code>https://{{host}}/api/public/bot/{{botId}}/getMessagesV2</code>
    </td>
@@ -58,7 +58,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Chat History \
+<li>App Builder: Chat History \
 OR
 
 <li>Admin Console: Bot Analytics > Chat History
@@ -966,7 +966,7 @@ It is recommended to programmatically iterate the request by dynamically updatin
    </td>
    <td>Number
    </td>    
-   <td>Informs whether the conversation was initiated from the Bot Builder; 1 for Yes, 0 for No.
+   <td>Informs whether the conversation was initiated from the App Builder; 1 for Yes, 0 for No.
    </td>
   </tr>
   <tr>

@@ -45,7 +45,7 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Fetch Gen AI and LLM Usage Logs
+<li>App Builder: Fetch Gen AI and LLM Usage Logs
 
 <li>Admin Console: API Scopes > Gen AI and LLM Usage Logs
 </li>

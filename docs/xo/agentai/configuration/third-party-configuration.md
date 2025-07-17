@@ -1,4 +1,4 @@
-The **Third Party Configuration** section enables you to manage bot configuration parameters (such as QueueIdentifier and custom data) within an embedded Agent AI app. This enables dynamic iframe URL generation for third-party CCaaS/CRM platforms, eliminating the need for a separate configuration within the third-party desktop. This document explains the process of configuring, editing, and deleting third party integrations.
+The **Third Party Configuration** section enables you to manage app configuration parameters (such as QueueIdentifier and custom data) within an embedded Agent AI app. This enables dynamic iframe URL generation for third-party CCaaS/CRM platforms, eliminating the need for a separate configuration within the third-party desktop. This document explains the process of configuring, editing, and deleting third party integrations.
 
 ## Configure a Third Party Integration
 
@@ -51,13 +51,13 @@ This section explains the process of configuring a third party integration.
   <tr>
    <td>AudiohookEnabled
    </td>
-   <td>A setting or flag indicating whether Kore audio processing is enabled for the bot. It’s a boolean value (specific to Genesys desktop).
+   <td>A setting or flag indicating whether Kore audio processing is enabled for the app. It’s a boolean value (specific to Genesys desktop).
    </td>
   </tr>
   <tr>
-   <td>BotLanguageCode
+   <td>AppLanguageCode
    </td>
-   <td>Specifies the language and locale the bot should use during interaction.
+   <td>Specifies the language and locale the app should use during interaction.
    </td>
   </tr>
   <tr>

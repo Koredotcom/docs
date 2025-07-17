@@ -66,9 +66,9 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 
 <img src="../images/summary-template-assist.png" alt="web-sdk-channel" title="summary-template-assist" style="border: 1px solid gray; zoom:80%;"> 
 
-## SCROLL BTNS IN ASSIST AND MYBOT
+## SCROLL BTNS IN ASSIST AND MY AI Agent (Bot)
 
-Contains scroll buttons in the Assist and MyBot tabs when the tab view becomes overflow (on scroll). These buttons include up and down arrows located on the widget tabs. 
+Contains scroll buttons in the Assist and My AI Agent (Bot) tabs when the tab view becomes overflow (on scroll). These buttons include up and down arrows located on the widget tabs. 
 
 **Note:** Scroll buttons the view upwards or downwards accordingly. A hover effect is also applied to the scroll buttons.
 
@@ -112,7 +112,7 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 
 ### INDIVIDUAL_LOADER
 
-Displays a loader when clicking the **Override Mode** button and entering values during agent-bot interaction.
+Displays a loader when clicking the **Override Mode** button and entering values during agent-AI Agent interaction.
 
 ```
 aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
@@ -134,11 +134,11 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 });
 ```
 
-## COMMON SEND AND COPY EVENTS (SEARCH, MYBOT, ASSIST)
+## COMMON SEND AND COPY EVENTS (SEARCH, MY AI Agent (Bot), ASSIST)
 
 ### Send and Copy Events
 
-These events are provided when the Agent clicks on the Send or Copy button on a bot message. You can customize the Send and Copy elements.
+These events are provided when the Agent clicks on the Send or Copy button on an AI Agent message. You can customize the Send and Copy elements.
 
 The following are the events for Send and Copy:
 

@@ -5,7 +5,7 @@
 
 ## How to Use
 
-koreUtil libraries can be used anywhere in the assistant where there is flexibility to write JavaScript code such as script node, message node, confirmation node, entity node, standard responses, answers to FAQs, small talk, event handlers, etc.
+koreUtil libraries can be used anywhere in the AI agent where there is flexibility to write JavaScript code such as script node, message node, confirmation node, entity node, standard responses, answers to FAQs, small talk, event handlers, etc.
 
 
 ## List of koreUtil libraries
@@ -471,7 +471,7 @@ No response is returned and the session ends.
 
 ### koreUtil.autoTranslate
 
-koreUtil.autotranslate is a Platform function that lets you automatically translate the virtual assistant response from a language in which the assistant is configured to the language in which the user is interacting or a language of your choice. This function uses a translation engine to translate the bot responses into user input language. For more information on how to configure a translation engine, [refer here](../../app-settings/language-management/managing-translation-services).
+koreUtil.autotranslate is a platform function that lets you automatically translate the AI Agent's response from a language in which it is configured to the language in which the user is interacting or a language of your choice. This function uses a translation engine to translate the bot responses into user input language. For more information on how to configure a translation engine, [refer here](../../app-settings/language-management/managing-translation-services).
 
 !!! note
     
@@ -491,7 +491,7 @@ Please refer below for the translation behavior:
   <tr>
    <td>Plain Text Responses
    </td>
-   <td>Refers to plain text responses defined anywhere in the virtual assistant. For example, prompts, responses etc.
+   <td>Refers to plain text responses defined anywhere in the application. For example, prompts, responses etc.
    </td>
    <td>Default: Auto-translated
 <br>
@@ -557,7 +557,7 @@ var message = message.concat(env.currency, ' ', accountBalance); print(message);
 Баланс вашего счета USD 5,278.00
 ```
 
-**Use Case-3:** To translate the bot responses in a particular language by passing the language code. An example where the assistant will respond only in German even though the user is interacting in any language:
+**Use Case-3:** To translate the bot responses in a particular language by passing the language code. An example where the agent will respond only in German even though the user is interacting in any language:
 
 **Example**
 
