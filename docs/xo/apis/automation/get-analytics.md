@@ -37,7 +37,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Metrics
+<li>App Builder: Metrics
 
 <li>Admin Console: Not Applicable
 </li>

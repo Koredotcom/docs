@@ -36,7 +36,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Management
+<li>App Builder: Batch Tests Management
 
 <li>Admin Console: Batch Tests Management
 </li>

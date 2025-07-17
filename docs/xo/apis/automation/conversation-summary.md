@@ -1,6 +1,6 @@
 # Conversation Summary API
 
-The API summarizes the conversation between a user and an agent. The agent can be a virtual agent or a human agent. The API accepts the conversation Id or the transcripts as input and provides an auto-generated conversation summary.
+The API summarizes the conversation between a user and an agent. The agent can be a AI agent or a human agent. The API accepts the conversation Id or the transcripts as input and provides an auto-generated conversation summary.
 
 The API uses open-source LLM fine-tuned and hosted by Kore.ai for summarizing conversations using a large number of sample conversation transcripts from various fields and industries.
 
@@ -37,7 +37,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>API Scope</strong>
    </td>
-   <td>Bot Builder: Conversation Summary
+   <td>App Builder: Conversation Summary
    </td>
   </tr>
 </table>

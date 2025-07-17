@@ -36,7 +36,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Manage Knowledge Graph
+<li>App Builder: Manage Knowledge Graph
 
 <li>Admin Console: Manage Knowledge Graph
 </li>
@@ -69,7 +69,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
    <td>Required
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
   </tr>
 </table>
