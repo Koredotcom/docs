@@ -9,7 +9,7 @@ In this article, you will learn how to work with this feature in order to protot
 
 ## Benefits
 
-Mock Scenes are specifically created for conversation designers to prototype bot-user interactions before the conversation moves to the development stage. The Conversation Designer in use within this feature is specifically adapted to allow designers to focus on the conversation flow itself, without worrying about the systems and logic building side of the Virtual Assistant.
+Mock Scenes are specifically created for conversation designers to prototype AI Agent-user interactions before the conversation moves to the development stage. The Conversation Designer in use within this feature is specifically adapted to allow designers to focus on the conversation flow itself, without worrying about the systems and logic building side of the Virtual Assistant.
 
 
 ## Major Features
@@ -57,12 +57,12 @@ After you add a scene, you are presented with a blank **Conversation View**, whe
 
 <img src="../images/mock-scenes-img3-blank-scene.png" alt="Conversation view - Blank scene" title="Conversation view - Blank scene" style="border:1px solid gray; zoom:70%;">
 
-To design a mock conversation scene, you can add _Bot_ and _User_ utterances, create conversation paths, link messages and scenes, add developer notes and collaborate using comments. You can also create a conversation timeline, using tags. 
+To design a mock conversation scene, you can add _AI Agent (Bot)_ and _User_ utterances, create conversation paths, link messages and scenes, add developer notes and collaborate using comments. You can also create a conversation timeline, using tags. 
 
 The Conversation Designer comes with the following features to help you design the conversation:
 
 
-### User and Bot Message Tabs
+### User and AI Agent (Bot) Message Tabs
 
 #### User Tab
 
@@ -72,7 +72,7 @@ This tab is used to enter possible messages from users either requesting informa
 * **Attachments**. For example, in a Travel VA, to upload a flight reservation..
 
 
-#### Bot Tab
+#### AI Agent (Bot) Tab
 
 This tab is used to design messages that the Virtual Assistant sends to users as a greeting, information, answer to a user query, or request for input. These messages can be:
 
@@ -96,7 +96,7 @@ This tab is used to design messages that the Virtual Assistant sends to users as
     <img src="../images/mock-scenes-img6-create-custom-tag.png" alt="Create Custom tag" title="Create Custom tag" style="border:1px solid gray; zoom:70%;">
 
 
-* **Paths**: Paths are different flows that the conversations might follow, based on the options provided by the VA or the user. For example, a Virtual Assistant expects a _yes_ or _no_ response from the user, and the path differs based upon the user response. Using the bot message, the template defines the number of alternate paths allowed. The business logic can also decide the number of paths.
+* **Paths**: Paths are different flows that the conversations might follow, based on the options provided by the VA or the user. For example, a Virtual Assistant expects a _yes_ or _no_ response from the user, and the path differs based upon the user response. Using the AI Agent (bot) message, the template defines the number of alternate paths allowed. The business logic can also decide the number of paths.
     * To continue the scene along a specific path, you can select the path either using the **Previous Path** (**&lt;-**) and **Next Path** (**->**) or select the options given to the user. You can also add additional paths using the **New Path** (**+**) option.
 
         <img src="../images/mock-scenes-img7-scene-conv-path.png" alt="Select Path" title="Select Path" style="border:1px solid gray; zoom:70%;">
@@ -197,7 +197,7 @@ This feature allows you to use one of the default themes, with either a Light or
 * Background Image
 * Overall Chat Widget
 * User Message Bubbles – text and background colors.
-* Bot Message Bubbles – text and background colors for various components.
+* AI Agent (Bot) Message Bubbles – text and background colors for various components.
 
 
 #### Background Image
@@ -226,7 +226,7 @@ This option is used to customize the color of the user message bubble and text.
 <img src="../images/mock-scene-customize-user-messages.png" alt="Preview Customization - User Messages" title="Preview Customization - User Messages" style="border:1px solid gray; zoom:60%;">
 
 
-#### Bot Messages and Templates
+#### AI Agent (Bot) Messages and Templates
 
 This option is used to customize the color of the Virtual Assistant message bubble and text. You can also customize the button template messages if any are used.
 
