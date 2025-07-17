@@ -60,7 +60,7 @@ Refer to [this](https://developer.monday.com/api-reference/docs/authentication) 
 * Go to the **app's OAuth** page. Enable the following scopes for the app. 
     * boards:read
     * users:read
-* Go to the **Redirect URL** tab on the same page and enter one of the following URLs depending upon your XO platform deployment. Click Save. 
+* Go to the **Redirect URL** tab on the same page and enter one of the following URLs depending upon your AI for Service platform deployment. Click Save. 
     * JP Region Callback URLs:[ https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
     * DE Region Callback URLs:[ https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
     * Prod Callback URLs: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback?__hstc=59894770.28210ac89bd49725c54c92ebeabe794b.1663135555706.1715322786391.1715330815958.698&__hssc=59894770.1.1715330815958&__hsfp=659442714)
