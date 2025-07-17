@@ -9,7 +9,7 @@ If clients prefer to use a different model (for reasons such as language or qual
 1. Set up a [service node](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-service-node/){:target="_blank"} to get the conversation transcript using the [ChatHistory API](https://developer.kore.ai/docs/bots/api-guide/conversation-history-api/){:target="_blank"}; the API includes the conversation summary.
 2. Send this transcript to the Summarization endpoint, and save the result in a Context Variable.
 3. Create a string-based [entity node](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/){:target="_blank"} to display the summary from the Context Variable.
-4. Ensure the dialog is enabled for the Agent AI chat/voice channel and the bot is published.
+4. Ensure the dialog is enabled for the Agent AI chat/voice channel and the app is published.
 5. Go to **Agent AI** > **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** > **Auto Summarization** > **Auto Summarization Model**, and select a **dialog task** under the “Custom Dialog Task” option.
 
 **Dialog Task flow for Summarization activities**:

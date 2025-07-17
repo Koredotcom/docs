@@ -14,7 +14,7 @@ aaWindowInstance.on('ON_SOCKET_CONNECTION', (configOptions) => {
 });
 ```
 
-### Listen to Bot responses
+### Listen to AI Agent responses
 
 This event allows you to perform all necessary actions after the socket connection is established. It also enables you to execute event listening tasks for further processing.
 
@@ -81,7 +81,7 @@ botOptions.dskSettings = {
 
 ## Widget Footer Tabs
 
-The Agent AI widget features multiple tabs in the footer section - **Assist**, **Mybot**, **Library**, and **Transcript** tabs - each serves a distinct purpose. Kore.ai is currently the offering **Search**, **Transcript**, and **Assist** tabs. However, the **Assist** tab consists only the search results. At this stage, Kore provides essential features like the search functionality for agents and transcriptions for voice conversations in the **Transcript** tab.
+The Agent AI widget features multiple tabs in the footer section - **Assist**, **My AI Agent (Bot)**, **Library**, and **Transcript** tabs - each serves a distinct purpose. Kore.ai is currently the offering **Search**, **Transcript**, and **Assist** tabs. However, the **Assist** tab consists only the search results. At this stage, Kore provides essential features like the search functionality for agents and transcriptions for voice conversations in the **Transcript** tab.
 
 ## Handling Messages
 
@@ -211,7 +211,7 @@ When toggle button is:
 
 ## User interface (UI) override option
 
-This feature allows user interface to follow the exact user experience (UX) implementation as in MyBot. This feature does not require any changes to the existing design.
+This feature allows user interface to follow the exact user experience (UX) implementation as in My AI Agent (Bot). This feature does not require any changes to the existing design.
 
 ### PROACTIVE_CLICK_EVENT
 

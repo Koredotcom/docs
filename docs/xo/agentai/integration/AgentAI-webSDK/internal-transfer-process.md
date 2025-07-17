@@ -1,6 +1,6 @@
 # Internal Transfer Process in SDK
 
-Agent transfer refers to the process of handing over a customer’s conversation from one agent to another within a conversational virtual assistant (VA) platform. This is typically done when the current agent is unable to assist the customer with their issue or request, or if the customer requests to speak with a different agent.
+Agent transfer refers to the process of handing over a customer’s conversation from one agent to another within a Conversational AI Agent platform. This is typically done when the current agent is unable to assist the customer with their issue or request, or if the customer requests to speak with a different agent.
 
 ## No Transfer in the Interaction
 
@@ -96,7 +96,7 @@ aaWindowInstance.internalTransfer(data);
 
 Step1: Scroll up the widget's summary when the TM1 has completed the task without having a conversation.
 
-Step2: The user, bot, and TM1 will all are included in the summary if TM1 and the user have a conversation.
+Step2: The user, AI Agent, and TM1 will all are included in the summary if TM1 and the user have a conversation.
 
 **Note:**  If Agent Desktop is unable to send the A1 exit event, expect the Agent1 exit event and Agent2 entry event. Whenever the A2’s entry event is received, consider the A1 to exit the conversation.
 
