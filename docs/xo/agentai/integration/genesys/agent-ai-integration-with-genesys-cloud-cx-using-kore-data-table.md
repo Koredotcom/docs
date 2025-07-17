@@ -1,4 +1,4 @@
-Integration of Agent AI in Genesys is a significant enhancement to our solution. Previously limited to a single bot and a department-specific approach, the solution has now been upgraded to support multiple bots and a queue-based functionality. This enhancement enables Genesys Cloud CX to offer a more flexible and scalable solution for businesses seeking to leverage AI to improve agent efficiency and customer satisfaction across multiple departments.
+Integration of Agent AI in Genesys is a significant enhancement to our solution. Previously limited to a single AI Agent and a department-specific approach, the solution has now been upgraded to support multiple bots and a queue-based functionality. This enhancement enables Genesys Cloud CX to offer a more flexible and scalable solution for businesses seeking to leverage AI to improve agent efficiency and customer satisfaction across multiple departments.
 
 !!! note
 
@@ -44,7 +44,7 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
    <td>Client App
    </td>
-   <td>To use any Kore.ai Bot SDKs, a client app must be created to get the authentication credentials to communicate between the Kore.ai bot and Agent AI. 
+   <td>To use any Kore AI Agent SDKs, a client app must be created to get the authentication credentials to communicate between the Kore AI Agent and Agent AI. 
 <p>
 <strong>Note: </strong>Only the default Client App is supported.
    </td>
@@ -56,17 +56,17 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
    <td>Custom Data / x_passthru_metadata
    </td>
-   <td>Use this to pass information to Agent AI Bot.
+   <td>Use this to pass information to Kore AI Agent.
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>Secure Custom Data / KvpConfig
    </td>
-   <td>Use this to pass sensitive information to Agent AI Bot.
+   <td>Use this to pass sensitive information to Kore AI Agent.
    </td>
    <td><a href="https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE" target="_blank">https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE</a>
    </td>
@@ -89,11 +89,11 @@ Create an Interaction Widget in Genesys for Agent AI
    <td>
 <ul>
 
-<li><strong>“multibot=true”, represents usage of new version of AgentAI integration that supports agent specific bot assistant</strong></li>
+<li><strong>“multibot=true”, represents usage of new version of Agent AI integration that supports agent specific AI Agent</strong></li>
 
 <li><strong>“x_metadata” - </strong>This param value equals the <code>URL</code>-<code>encoded string</code> of JSON object which consists of data required by Kore Middleware service to successfully generate Agent AI iframe URL.</li>
 
-<li><strong>“x_passthru_metadata”</strong> - This parameter value can be a JWE or JWT token, a base64 encoded string, or a URL-encoded JSON. It is stored as custom data in the bot context. (Optional Parameter)</li>
+<li><strong>“x_passthru_metadata”</strong> - This parameter value can be a JWE or JWT token, a base64 encoded string, or a URL-encoded JSON. It is stored as custom data in the app context. (Optional Parameter)</li>
 </ul>
    </td>
    <td><strong>x_metadata</strong>’s<strong> </strong>JSON object structure is 
@@ -113,17 +113,17 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>BotId
    </td>
-   <td>A unique identifier assigned to a bot.
+   <td>A unique identifier assigned to an AI Agent.
    </td>
    <td>Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details 
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>ClientId
    </td>
@@ -133,7 +133,7 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>ClientSecret 
    </td>
@@ -143,7 +143,7 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>AgentAssistWidgetURL
    </td>
@@ -155,27 +155,27 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>AudiohookEnabled
    </td>
-   <td>A setting or flag indicating whether Kore audio processing is enabled for the bot.
+   <td>A setting or flag indicating whether Kore audio processing is enabled for the AI Agent.
    </td>
    <td><strong>“true” </strong>if Kore audio processing should be enabled, otherwise <strong>“false”</strong>.
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>QueueIdentifier
    </td>
-   <td>It’s a unique identifier in the Data Table to fetch bot details at run time.
+   <td>It’s a unique identifier in the Data Table to fetch AI Agent details at run time.
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>KvpConfig
    </td>
@@ -195,7 +195,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>JWEPublicKey
    </td>
@@ -205,7 +205,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>RSPrivatePem
    </td>
@@ -217,7 +217,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Capture Bot Information in Kore Data Table
+   <td>Capture AI Agent Information in Kore Data Table
    </td>
    <td>Algorithm
    </td>
@@ -257,8 +257,8 @@ For on-prem, refer to corresponding host<strong> </strong>
 This document provides detailed, step-by-step instructions for setting up the integration of the Agent AI widget in the Genesys environment.
 
 ## Activities on Kore Platform
-* [Capture Bot information in Kore Data Table](#capture-bot-information-in-kore-data-table) 
-* [Access Custom Data and Secure Custom Data in Agent AI Bot](#access-custom-data-and-secure-custom-data-in-agent-ai-bot)
+* [Capture AI Agent information in Kore Data Table](#capture-bot-information-in-kore-data-table) 
+* [Access Custom Data and Secure Custom Data in AI Agent](#access-custom-data-and-secure-custom-data-in-agent-ai-bot)
 
 ## Activities on Genesys Cloud
 * [Generate Oauth ID to enable Kore Services to Connect with Genesys](#generate-oauth-id-to-enable-kore-services-to-connect-with-genesys)
@@ -282,22 +282,22 @@ This document provides detailed, step-by-step instructions for setting up the in
 * Genesys Administrator having access to Genesys Cloud account with Admin rights.
 * Kore Administrator having access to [Kore.ai](https://platform.kore.ai){:target="_blank"} Agent AI instance.
 
-## **Capture Bot Information in Kore Data Table**
+## **Capture AI Agent Information in Kore Data Table**
 
-Data Tables are used to store agent queue-specific bot credentials. Each record of the Kore Data Table represents a unique Genesys agent queue and its corresponding bot definitions. 
+Data Tables are used to store agent queue-specific AI Agent credentials. Each record of the Kore Data Table represents a unique Genesys agent queue and its corresponding AI Agent definitions. 
 
-If a single bot is used for several queues, create a record and insert the queue names, separated by commas, as the value for the QueueIdentifier, along with the bot details.
+If a single AI Agent is used for several queues, create a record and insert the queue names, separated by commas, as the value for the QueueIdentifier, along with the AI Agent details.
 
-Kore.ai matches the third-party queue name with the "QueueIdentifier" credential name in its bot credentials to render the appropriate bot.
+Kore.ai matches the third-party queue name with the "QueueIdentifier" credential name in its AI Agent credentials to render the appropriate AI Agent.
 
-* Bot credentials are fetched based on Genesys desktop queue names. If the Genesys queue name is of the “&lt;QUEUEIDENTIFIER>&lt;QDELIMITER>XXXXX” format, for example “ALPHAINC_CUSTOMERSERVICE_16092024,” then:
+* AI Agent credentials are fetched based on Genesys desktop queue names. If the Genesys queue name is of the “&lt;QUEUEIDENTIFIER>&lt;QDELIMITER>XXXXX” format, for example “ALPHAINC_CUSTOMERSERVICE_16092024,” then:
 * QueueIdentifier = **ALPHAINC** and <span id="qdl">qDelimiter</span> = “**_**”.
 * Update the QueueIdentifier in the Kore datatable.
 * Update the qDelimiter in the [Create an Interaction Widget in Genesys for Agent AI](#create-an-interaction-widget-in-genesys-for-agent-ai) section.
 
 !!! note
 
-    Multiple records with different bot credentials shouldn't be entered into the Kore Data Table for a single QueueIdentifier.
+    Multiple records with different AI Agent credentials shouldn't be entered into the Kore Data Table for a single QueueIdentifier.
 
 ### How to create a New Data Table
 
@@ -336,7 +336,7 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
         * **Column & Sort Order** – List of columns to be included in the index; you can select multiple columns and specify the sort order (ascending or descending) for each of the selected columns. (Select QueueIdentifier with ascending order.)  
         <img src="../kore-data-table/queue-finder-6.png" alt="queue-finder" title="queue-finder" style="border: 1px solid gray; zoom:80%;">
         
-    5. **Bot Assignments** (not applicable).
+    5. **AI Agent Assignments** (not applicable).
     6. **App Assignments** to let apps access data in this table.
         1. Select any app from the displayed list, or click **Create New App** and enter your app name:  
         <img src="../kore-data-table/create-new-app-7.png" alt="create-new-app" title="create-new-app" style="border: 1px solid gray; zoom:80%;">
@@ -354,7 +354,7 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
 
 ### Insert data into Data Table
 
-Set up necessary permissions and app assignments and insert bot-specific data into the Data Table.
+Set up necessary permissions and app assignments and insert AI Agent-specific data into the Data Table.
 
 1. Sign in to Kore.ai [XO Platform](http://platform.kore.ai){:target="_blank"}.
 2. Click **Data** > **Apps**.
@@ -597,7 +597,7 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
 
     !!! note
 
-        The same language should be configured in the **Kore Agent AI** bot.  
+        The same language should be configured in the **Kore AI Agent**.  
 
     <img src="../kore-data-table/select-supported-languages-33.png" alt="select-supported-languages" title="select-supported-languages" style="border: 1px solid gray; zoom:80%;">
 
@@ -676,7 +676,7 @@ wss://{**Kore Voice Gateway(KVG)**}[/audiosocket/genesys/?sipuri=xxx&token=xxx&b
 Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} to generate the token (token= &lt;token>.)
 
 8. Add credentials in the **Credentials** tab.
-9. Use the **ClientID** and **ClientSecret** of the bot you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
+9. Use the **ClientID** and **ClientSecret** of the AI Agent you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
 <img src="../kore-data-table/audiohook-credentials-44.png" alt="audiohook-credentials" title="audiohook-credentials" style="border: 1px solid gray; zoom:80%;">
 
 10. Click **Save**.
@@ -703,7 +703,7 @@ When a call comes to a Genesys number, it passes through an architect flow. If y
     * The **Transcription node** is optional, if you have already enabled Voice Transcription and Audio Monitoring in the queue level voice configuration.
     * Architect flow is required as a mandatory step, as it directs the incoming call to the Genesys agent desktop.
 
-## Access Custom Data and Secure Custom Data in Agent AI Bot
+## Access Custom Data and Secure Custom Data in AI Agent
 
 Custom Data and Secure Custom Data can be accessed in Welcome Events in Agent AI configuration page and in Dialog Tasks in Agent AI automation page.
 

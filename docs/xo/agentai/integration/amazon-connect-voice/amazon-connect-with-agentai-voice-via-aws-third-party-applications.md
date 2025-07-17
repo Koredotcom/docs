@@ -26,7 +26,7 @@ To onboard the Kore Agent AI account and create dialog tasks, refer to the [Agen
 
 #### KVS Trigger 
 
-This function retrieves call stream metadata and AWS credentials from the environment, generates a credential set (SessionToken, AccessKeyId, SecretAccessKey) for KVS access, and triggers the Transcriber to send transcripts to the Kore bot with the current Conversation ID.  
+This function retrieves call stream metadata and AWS credentials from the environment, generates a credential set (SessionToken, AccessKeyId, SecretAccessKey) for KVS access, and triggers the Transcriber to send transcripts to the Kore AI Agent with the current Conversation ID.  
 
 * Download the Lambda [from here](https://github.com/Koredotcom/korecc-twilio/raw/master/AmazonConnect/lambdas/KVS_Trigger.zip){:target="_blank"} and upload to the function you create. 
 * Go to **Create function**. 
