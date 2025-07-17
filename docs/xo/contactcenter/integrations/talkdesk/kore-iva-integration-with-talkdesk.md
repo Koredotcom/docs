@@ -1,6 +1,6 @@
-# Kore IVA (Voice Automation) Integration with Talkdesk
+# Kore AI Agent (Voice Automation) Integration with Talkdesk
 
-Talkdesk is a cloud-based contact center platform that helps businesses deliver exceptional customer experiences. It offers a wide range of features, including AI-powered automation, Omnichannel engagement, analytics and reporting, and industry-specific solutions. The Kore Voice Automation integration with Talkdesk leverages a websocket based approach to seamlessly enhance the functionality of Talkdesk’s contact center capabilities. This document explains the process of Kore IVA integration with Talkdesk.
+Talkdesk is a cloud-based contact center platform that helps businesses deliver exceptional customer experiences. It offers a wide range of features, including AI-powered automation, Omnichannel engagement, analytics and reporting, and industry-specific solutions. The Kore Voice Automation integration with Talkdesk leverages a websocket based approach to seamlessly enhance the functionality of Talkdesk’s contact center capabilities. This document explains the process of Kore AI Agent integration with Talkdesk.
 
 ## Architecture Diagram
 
@@ -9,11 +9,11 @@ Talkdesk is a cloud-based contact center platform that helps businesses deliver 
 ## Prerequisites
 
 * Talkdesk account with voice automation studio flow.
-* A Kore voice bot trained with few use cases.
+* A Kore Voice AI Agent trained with few use cases.
 
 ## How it Works
 
-The Kore IVA integration with Talkdesk operates as follows:
+The Kore AI Agent integration with Talkdesk operates as follows:
 
 * **Setup**: Kore.ai configures the integration by modifying bot details and voice stream URLs in Talkdesk's "Connect to autopilot - voice" flow.
 * **Interaction**: When a customer contacts Talkdesk, audio streams are sent to Kore via the "Conversation Orchestrator" node under Talkdesk studio flow. Kore handles automation and sends bot responses back to Talkdesk.
@@ -26,17 +26,17 @@ This streamlined process enhances Talkdesk's contact center capabilities with Ko
 The following steps are initiated after a call is established between a user and Talkdesk:
 
 1. The user audio is sent to the “Conversation Orchestrator” through the “Connect to Virtual Agent Voice” block within the Studio Flow.
-2. The user audio is forwarded to the Kore Voice Gateway (VG).
-3. Kore VG transfers the WSS traffic to SmartAssist using SIP over TLS or UDP.
-4. SmartAssist converts the speech to text and then sends it to the Bots Platform for identification.
-5. The Bots Platform generates the appropriate response, and SmartAssist converts that response into speech.
-6. SmartAssist returns the synthesized speech to Kore Voice Gateway using SIP. Speech response is received by the “Connect to Virtual Agent Voice” block on Talkdesk.
+2. The user audio is forwarded to the Voice Gateway (VG).
+3. Kore VG transfers the WSS traffic to Contact Center AI (CCAI) using SIP over TLS or UDP.
+4. CCAI converts the speech to text and then sends it to the Platform for identification.
+5. The Platform generates the appropriate response, and CCAI converts that response into speech.
+6. CCAI returns the synthesized speech to Voice Gateway using SIP. Speech response is received by the “Connect to Virtual Agent Voice” block on Talkdesk.
 7. The response is sent to the user.
 8. At the end of automation, if an agent transfer is required, that is handled using the Talkdesk Studio Flow (optional).
 
 ## Configuration Steps
 
-This section explains the configuration steps needed to integrate Kore IVA integration with Talkdesk.
+This section explains the configuration steps needed to integrate Kore AI Agent integration with Talkdesk.
 
 ### Step 1: Create and attach a Flow with a Phone Number
 
