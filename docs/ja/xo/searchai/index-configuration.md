@@ -14,7 +14,7 @@ Vectors or Embeddings are multidimensional numerical representations of the chun
 Vector Generation depends on the Kore.ai XO GPT model to generate embeddings. This requires setting up and configuring the model under Generative AI Tools.
 
 1. Go to the **Models Library** under **Generative AI Tools** and [configure Kore.ai XO GPT ](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/models-library/#pre-built-llm-integration)Model. Ensure that the vector generation feature is enabled during configuration. If you are using the same model for Answer Generation, enable that feature for the model too. [Learn More](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/xo-gpt-module/).
-2. Go to **Dynamic Conversations**, select the configured model for **Vector Generation** and** Answer Generation**, and use the toggle button to enable them. [Learn More.](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/dynamic-conversations-features/) 
+2. Go to **Dynamic Conversations**, select the configured model for **Vector Generation** and **Answer Generation**, and use the toggle button to enable them. [Learn More.](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/dynamic-conversations-features/) 
 
 ## Configuration
 

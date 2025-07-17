@@ -2,7 +2,7 @@
 
 Indexing is the process of generating vectors or embeddings from the extracted chunks and creating a knowledge Index that can be used for generating answers. 
 
-Vectors or Embeddings are multidimensional numerical representations of the chunks that carry their semantic information. Embedding Models are algorithms that can translate data into those multidimensional numbers. The Kore XO platform supports various embedding models, including MPNet, LaBSE, BGE-M3, E5, VDR, and custom models, allowing you to select a model tailored to your specific needs.
+Vectors or Embeddings are multidimensional numerical representations of the chunks that carry their semantic information. Embedding Models are algorithms that can translate data into those multidimensional numbers. The Kore AI for Service platform supports various embedding models, including MPNet, LaBSE, BGE-M3, E5, VDR, and custom models, allowing you to select a model tailored to your specific needs.
 
 **By default, when a new app is created, the BGE-M3 vector model is selected for generating embeddings.** 
 
