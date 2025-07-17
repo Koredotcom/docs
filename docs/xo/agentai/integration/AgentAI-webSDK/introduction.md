@@ -1,6 +1,6 @@
 # Agent AI Web SDK_v3.13.1
 
-Agent AI Web SDK provides a versatile and customizable solution for integrating chatbot functionalities into web applications. Built using JavaScript, Preact, and SCSS, this SDK enables seamless interaction, real-time event handling, and UI customization for an enhanced user experience.
+Agent AI Web SDK provides a versatile and customizable solution for integrating AI Agent functionalities into web applications. Built using JavaScript, Preact, and SCSS, this SDK enables seamless interaction, real-time event handling, and UI customization for an enhanced user experience.
 
 ## Prerequisites
 
@@ -14,8 +14,8 @@ To generate the above identifiers, follow these steps:
 
 1. Navigate to the [AgentAssist Configuration](https://agentassist.kore.ai/){:target="_blank"} page.
 2. Open the **Automations** section.
-3. Create a new bot or import an existing one.
-4. Once the bot is created or imported, its details will be displayed under the **Channels** section of the **Configuration** page.
+3. Create a new app or import an existing one.
+4. Once the app is created or imported, its details will be displayed under the **Channels** section of the **Configuration** page.
 
 Generate a JWT **(JSON Web Token)** using the above identifiers.
 
