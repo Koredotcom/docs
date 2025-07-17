@@ -9,13 +9,13 @@ Talkdesk is a cloud-based contact center platform that helps businesses deliver 
 ## Prerequisites
 
 * Talkdesk account with voice automation studio flow.
-* A Kore Voice AI Agent trained with few use cases.
+* A Kore voice bot trained with few use cases.
 
 ## How it Works
 
 The Kore AI Agent integration with Talkdesk operates as follows:
 
-* **Setup**: Kore.ai configures the integration by modifying bot details and voice stream URLs in Talkdesk's "Connect to autopilot - voice" flow.
+* **Setup**: Kore configures the integration by modifying bot details and voice stream URLs in Talkdesk's "Connect to autopilot - voice" flow.
 * **Interaction**: When a customer contacts Talkdesk, audio streams are sent to Kore via the "Conversation Orchestrator" node under Talkdesk studio flow. Kore handles automation and sends bot responses back to Talkdesk.
 * **Agent Handover**: If the customer requests for agent transfer, control returns to Talkdesk for human agent interaction.
 
@@ -27,16 +27,16 @@ The following steps are initiated after a call is established between a user and
 
 1. The user audio is sent to the “Conversation Orchestrator” through the “Connect to Virtual Agent Voice” block within the Studio Flow.
 2. The user audio is forwarded to the Voice Gateway (VG).
-3. Kore VG transfers the WSS traffic to Contact Center AI (CCAI) using SIP over TLS or UDP.
-4. CCAI converts the speech to text and then sends it to the Platform for identification.
-5. The Platform generates the appropriate response, and CCAI converts that response into speech.
+3. The VG transfers the WSS traffic to contact center using SIP over TLS or UDP.
+4. Contact Center AI (CCAI) converts the speech to text and then sends it to the Bots Platform for identification.
+5. The Bots Platform generates the appropriate response, and CCAI converts that response into speech.
 6. CCAI returns the synthesized speech to Voice Gateway using SIP. Speech response is received by the “Connect to Virtual Agent Voice” block on Talkdesk.
 7. The response is sent to the user.
 8. At the end of automation, if an agent transfer is required, that is handled using the Talkdesk Studio Flow (optional).
 
 ## Configuration Steps
 
-This section explains the configuration steps needed to integrate Kore AI Agent integration with Talkdesk.
+This section explains the configuration steps needed to integrate Kore AI Agent with Talkdesk.
 
 ### Step 1: Create and attach a Flow with a Phone Number
 
@@ -47,7 +47,7 @@ A Flow is a sequential process to help you define the end-to-end customer experi
 
 ### Step 2: Create a WSS URL
 
-When a customer calls the Talkdesk phone number, the audio stream is directed to audiosocket and a call is initiated to SmartAssist bot based on the number retrieved from the URL. The audio is streamed bidirectionally between the Kore bot and the Talkdesk end user.
+When a customer calls the Talkdesk phone number, the audio stream is directed to audiosocket and a call is initiated to the bot based on the number retrieved from the URL. The audio is streamed bidirectionally between the Kore bot and the Talkdesk end user.
 
 Create a WSS URL with botID, token ID, and phone number used in the Flow:
 
@@ -85,9 +85,9 @@ For Agent Transfer, configure **SIP BYE** in UXO by going to **Settings > Integr
 
 #### Talkdesk Side Configuration
 
-For Voice Automation, Kore.ai uses the "Connect to Autopilot Voice" node of Talkdesk. Check the Exits and Preferences of this node in the screenshot below.
+For Voice Automation, Kore uses the "Connect to Autopilot Voice" node of Talkdesk. Check the Exits and Preferences of this node in the screenshot below.
 
-On Agent Escalation, Kore.ai creates variables that are populated to **Ring Groups** > **Variables** in the flow context. This allows you to use information collected from an external source. [Learn more](https://studio.talkdesk.com/docs/preferences-assignment-dial#:~:text=the%20latter%20allows%20you%20to%20use%20information%20collected%20from%20an%20external%20source%20such%20as%20a%20Customer%20Relationship%20Manager){:target="_blank"}.  
+On Agent Escalation, Kore creates variables that are populated to **Ring Groups** > **Variables** in the flow context. This allows you to use information collected from an external source. [Learn more](https://studio.talkdesk.com/docs/preferences-assignment-dial#:~:text=the%20latter%20allows%20you%20to%20use%20information%20collected%20from%20an%20external%20source%20such%20as%20a%20Customer%20Relationship%20Manager){:target="_blank"}.  
 <img src="../images/agent-escalation-node-exits-tab-4.png" alt="agent-escalation-node-exits-tab" title="agent-escalation-node-exits-tab" style="border: 1px solid gray; zoom:80%;">  
 
 <img src="../images/agent-escalation-node-preferences-tab-5.png" alt="agent-escalation-node-preferences-tab" title="agent-escalation-node-preferences-tab" style="border: 1px solid gray; zoom:80%;">  
@@ -96,7 +96,7 @@ On Agent Escalation, Kore.ai creates variables that are populated to **Ring Grou
 
 !!! note
 
-    Kore.ai doesn’t pass any header information on Voice Automation Agent transfer. Talkdesk has a bidirectional streaming protocol. For requests of interactions to be escalated to human agents, Kore.ai uses the "Agent Escalation" node of Talkdesk. [Learn more](https://support.talkdesk.com/hc/en-us/articles/9484798498587-Conversation-Orchestrator-Streaming-Bidirectional-Audio#:~:text=If%20you%20need%20the%20call%20to%20be%20escalated%20to%20a%20live%20agent%2C%20then%20configure%20the%20%E2%80%9CEscalation%E2%80%9D%20exit%20and%20add%20an%20Assignment%20and%20Dial%20component%20step){:target="_blank"}.
+    Kore doesn’t pass any header information on Voice Automation Agent transfer. Talkdesk has a bidirectional streaming protocol. For requests of interactions to be escalated to human agents, Kore uses the "Agent Escalation" node of Talkdesk. [Learn more](https://support.talkdesk.com/hc/en-us/articles/9484798498587-Conversation-Orchestrator-Streaming-Bidirectional-Audio#:~:text=If%20you%20need%20the%20call%20to%20be%20escalated%20to%20a%20live%20agent%2C%20then%20configure%20the%20%E2%80%9CEscalation%E2%80%9D%20exit%20and%20add%20an%20Assignment%20and%20Dial%20component%20step){:target="_blank"}.
 
 ### Step 5: Testing the Studio Flow
 
