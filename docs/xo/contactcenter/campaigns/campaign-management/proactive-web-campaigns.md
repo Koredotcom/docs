@@ -142,9 +142,9 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
     Click the **Edit** icon to edit the details of an existing button. You can enter the Text for the button, select the Action performed on clicking the button, Background Colour, Text Colour for the button, and click **Save**.  
     <img src="../images/buttons.png" alt="Buttons" title="Buttons" style="border: 1px solid gray; zoom:80%;">  
-    The following options are available for the Actions:
-        1. **Send to URL** - Selecting this option displays the URL field where the user will be redirected.
-        2. **Send to Bot** - The conversation will be redirected to the bot.
+    The following options are available for the Actions:  
+        1. **Send to URL** - Selecting this option displays the URL field where the user will be redirected.  
+        2. **Send to AI Agent (Bot)** - The conversation will be redirected to the Ai Agent (bot).
         3. **Dismiss** - Dismiss the proactive chat offer.
 
 6. Under the **Appearance** section, select the **Message Bubble Alignment**, **Bubble Alignment**, and **Dark Shadow**.  
