@@ -1,6 +1,6 @@
 # Managing Namespace
 
-Chances are that you have defined tens or hundreds of (Environment or Content) variables and used them in the VA definitions. These variables could have been used in defining text prompts or messages, JavaScript, transitions, and service call definitions. Loading all these variables for every single task irrespective of their usage would lead to delays in response times impacting the user experience.
+Chances are that you have defined tens or hundreds of (Environment or Content) variables and used them in the App definitions. These variables could have been used in defining text prompts or messages, JavaScript, transitions, and service call definitions. Loading all these variables for every single task irrespective of their usage would lead to delays in response times impacting the user experience.
 
 Using **Namespaces** you can categorize variables and map them to various components. The XO Platform would load the variables only from the mapped namespaces while executing specific components.
 
@@ -20,7 +20,7 @@ Once the Variable Namespaces feature is enabled:
 2. All tasks and variables, if any, are automatically associated with this default namespace;
 3. You can define and manage namespaces;
 4. You can add or remove the Environment and Content variables to these namespaces. A variable can belong to one or more namespaces. You cannot remove the Environment and Content variables from the default namespace.
-5. You can map namespaces to the various components of the bot definition like:
+5. You can map namespaces to the various components of the app definition like:
     1. Tasks which include Dialog, and Alert;
     2. Nodes in Dialog Task;
     3. Knowledge Task;
@@ -34,8 +34,7 @@ Once Variable Namespaces are mapped, the following steps are implemented by the 
 
 1. Only the variables that belong to the namespace mapped to a component will be loaded;
 2. If the variable that is not mapped is referenced by the component, it will flag a “_variable not found_” error;
-3. The same logic applies to Bot functions used within the tasks.
-
+3. The same logic applies to App functions used within the tasks.
 
 ## Creating Namespaces
 
