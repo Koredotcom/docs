@@ -33,7 +33,7 @@ There are two ways of sharing an app with your co-developers – from Builder or
 
     <img src="../images/invite-user.png" alt="Invite user to account" title="Invite user to account" style="border:1px solid gray;zoom:60%;">
  
-To add users to workspace and invite them to access your virtual assistant from the Bot Builder, read the[ Invite Members](../../getting-started/accessing-the-platform/#invite-members-to-your-workspace){:target="_blank"} section in the Using Workspace article.
+To add users to workspace and invite them to access your agent from the Bot Builder, read the [Invite Members](../../getting-started/accessing-the-platform/#invite-members-to-your-workspace){:target="_blank"} section in the Using Workspace article.
 
 
 ### Change App Share Settings
@@ -54,7 +54,7 @@ To share an app with a developer or another user, if you do not have permission 
 
 Here are the steps for the account Admin to add users to your account.
 
-1. Log on to[ https://platform.kore.ai/](https://platform.kore.ai/) and select **Go To Admin Console**. You may be asked to login/re-login to the admin account. 
+1. Log on to [https://platform.kore.ai/](https://platform.kore.ai/) and select **Go To Admin Console**. You may be asked to login/re-login to the admin account. 
 
     <img src="../images/admin-console-navigation.png" alt="Navigate to Admin Console" title="Navigate to Admin Console" style="border:1px solid gray;zoom:60%;">
 
@@ -73,7 +73,7 @@ Here are the steps for the account Admin to add users to your account.
 
 You can make changes to the App user settings by modifying the **User Profile settings** from the **Admin Console**.
 
-Double click on the App User that you want to change the settings for and you can set the Admin as well as the Platform Access roles.[ See here for more](../../administration/user-management/role-management/){:target="_blank"}.
+Double click on the App User that you want to change the settings for and you can set the Admin as well as the Platform Access roles. [See here for more](../../administration/user-management/role-management/){:target="_blank"}.
 
 		
 ### Working with Shared Apps

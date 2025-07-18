@@ -80,7 +80,7 @@ Virtual Assistants are not smart by default. They are designed to show some leve
 
 ### Build a Rich Collection of Intents and Entities
 
-The key for a Conversational Virtual Assistant to understand humans is its ability to identify human intentions (Intents), extract relevant information Entities) from utterances and map the relevant action/task against those utterances (Dialog Task execution). This is achievable using [Natural Language Processing](../automation/natural-language/nlp-introduction.md) (NLP), which you can train according to your organization’s needs.
+The key for a Conversational Virtual Assistant to understand humans is its ability to identify human intentions (Intents), extract relevant information Entities from utterances and map the relevant action/task against those utterances (Dialog Task execution). This is achievable using [Natural Language Processing](../automation/natural-language/nlp-introduction.md) (NLP), which you can train according to your organization’s needs.
 
 
 ### Develop Conversations
