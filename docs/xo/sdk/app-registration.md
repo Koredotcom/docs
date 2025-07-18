@@ -10,7 +10,7 @@ When you register your app, you will need to select a security algorithm:
 
 **To register an app:**
 
-1. Open the AI Agent that you are working with.
+1. Open the bots that you are working with.
 2. From the **App Settings** menu, go to **Dev Tools > Web/Mobile SDK**.
 3. In the **JWT App** drop-down list, select your existing app registration or click **Add** to create a new.
 ![SDK Home](../images/sdkhome.png "SDK Home")
