@@ -75,9 +75,9 @@ Manage Batch Testing and Conversation Testing.
    </td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>APP Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage APP Owners and co-developers of an app.
    </td>
    <td>Full
    </td>
@@ -785,9 +785,9 @@ Manage Batch Testing and Conversation Testing.
    <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an app.
    </td>
    <td>View</td>
 </tr>
@@ -1407,9 +1407,9 @@ Manage Batch Testing and Conversation Testing.
    <td>View</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an app.
    </td>
    <td>View</td>
 </tr>
@@ -2041,9 +2041,9 @@ Manage Batch Testing and Conversation Testing.
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an App.
    </td>
    <td>No</td>
 </tr>
@@ -2679,9 +2679,9 @@ Manage Batch Testing and Conversation Testing.
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an App.
    </td>
    <td>No</td>
 </tr>
@@ -3333,9 +3333,9 @@ View
 No</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an App.
    </td>
    <td>Full
    <br>

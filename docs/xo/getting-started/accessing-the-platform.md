@@ -85,7 +85,7 @@ With Single Sign-on (SSO), you can sign in securely (after authentication) by us
 After you sign in to the Platform, you are directed to the landing page. From this page you can access various offerings as follows:
 
 * **Apps and Related Options** - Lists all the available apps. You can filter the apps by Pinned, Shared, My Apps, or All apps.   
-* **Data** – Define Data Tables, Table Views, and manipulate them from your Virtual Assistants and Process Apps.Thus taking care of your data needs, without having to depend on external services.
+* **Data** – Define Data Tables, Table Views, and manipulate them from your agents and Process Apps.Thus taking care of your data needs, without having to depend on external services.
 * **Invite Users** – You can invite members to collaborate on the App creation journey.
 * **Help** – Find useful resources and support methods to help you develop your App.
 * **Account Switcher** – If you are part of more than one organization, you can switch between accounts.
@@ -123,7 +123,7 @@ To invite users to your Kore.ai Platform account, follow these steps:
 
 !!! note
     
-    At this point, the user can only access virtual assistants built in this account and cannot build virtual assistants from the Platform for this account.
+    At this point, the user can only access agents built in this account and cannot build agents from the Platform for this account.
 
 ## Give Access to the Platform
 
@@ -144,7 +144,7 @@ After a user is invited to an account, the administrator can enable the Platform
 
 ## Using Workspace
 
-**Workspaces** are a way to organize people productively, while everyone is part of your wider team of Virtual Assistant developers. In the Platform, Workspaces are created when setting up your Kore.ai XO Platform account, and if you choose to use SSO.
+**Workspaces** are a way to organize people productively, while everyone is part of your wider team of AI Agent developers. In the Platform, Workspaces are created when setting up your Kore.ai XO Platform account, and if you choose to use SSO.
 
 Team members can join one or multiple Workspaces, or they can create their own. It’s easy to browse Workspaces within the same organization and to switch between them. Here is how it works.
 
@@ -168,7 +168,7 @@ If your email domain matches existing Workspaces within the XO Platform, then it
 
 ### Create Your Workspace
 
-If you are managing a team, as part of your organization’s VA development projects, then you may want to create your own Workspace. You can do so by choosing **Create New**, rather than requesting access to an existing Workspace.
+If you are managing a team, as part of your organization’s AI agent development projects, then you may want to create your own Workspace. You can do so by choosing **Create New**, rather than requesting access to an existing Workspace.
 
 <img src="../images/accplatform(3).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
