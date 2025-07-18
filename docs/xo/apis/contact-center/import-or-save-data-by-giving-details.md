@@ -1,11 +1,11 @@
 # Import data by accountId and orgId
 
-To save/import data which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience) by giving details with account Id and org Id.
+To save/import data which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience) by giving details with `accountId` and `orgId`.
 
 | **Parameter**    | **Description**                                                            | **Type**      |
 |--------------|------------------------------------------------------------------------|-----------|
 | **Method**       | POST                                                                   |           |
-| **Endpoint**     | `http://{{host}}/agentassist/api/public/analytics/{{instanceBotId}}/exportSmartAssistFunctionalities` |           |
+| **Endpoint**     | `http://{{host}}/agentassist/api/public/analytics/{{IId}}/exportSmartAssistFunctionalities` |           |
 | **Content Type** | `application/json`                                                     |           |
 | **Authorization**| `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |           |
 | **API Scope**    | SmartAssist Import and Export Feature                                   |           |
@@ -13,10 +13,10 @@ To save/import data which is one of (skillsGroups, Queues, StandardResponses, Wa
 ## Sample Request
 
 ```
-curl --location 'http://{{host}}/agentassist/api/v1/public/st-d2aa65cc-a2d2-5b6d-84d7-861509e2xxxx/queues' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/{{IId}}/queues' \
 --header 'accept: application/json' \
---header 'accountId: 649bdcaf5037ed113942xxxx' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy0zOWNkNmJhMC1mNmVlLTViYWUtOWI3ZC03M2I0YmE5N2FjOGIifQ.LAiNcKfUNeDaAtPei1nD6JZJbnEGsv1BKo1pQUexxxx' \
+--header 'accountId: {{accountId}}' \
+--header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --data '{
     "isActive": true,

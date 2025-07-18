@@ -1,11 +1,11 @@
 # Create Custom Dashboard
 
-Let’s create a dashboard using various metrics to analyze the performance of a Virtual Assistant and identify trends for business needs using a Banking Bot as an example.
+Let’s create a dashboard using various metrics to analyze the performance of an AI Agent and identify trends for business needs using a Banking AI Agents as an example.
 
 
 ## Problem Statement
 
-As a Banking Bot client, you want to track the following metrics:
+As a Banking AI Agent client, you want to track the following metrics:
 
 * Dollar Value Breakup
 * Customer Type Summary
@@ -24,9 +24,9 @@ Once the Dashboard is configured for the listed scenarios, it looks like the fol
 ## Pre-requisites
 
 
-* Bot building knowledge.
+* AI Agents building knowledge.
 * Custom Meta Tags usage. See here for more information.
-* A Banking Bot with the dialogs as follows:
+* A Banking AI Agents with the dialogs as follows:
 
 **Transfer Funds** – The Dialog task walks the user through the transfer steps.
 
@@ -206,7 +206,7 @@ Your Custom Dashboard is ready. Set the **Date Range** to see the required metri
 
 ### Filter the Messages using the Having Clause
 
-This query uses a **Having** clause, to display the number of filtered messages for _userIds_, where the user has interacted with the virtual assistant more than 12 times. The query setup and results are described below. Repeat the steps listed in the previous section with the following details:
+This query uses a **Having** clause, to display the number of filtered messages for _userIds_, where the user has interacted with the AI Agents more than 12 times. The query setup and results are described below. Repeat the steps listed in the previous section with the following details:
 
 1. **Add Widget**
 2. Query setup:

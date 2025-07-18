@@ -1,6 +1,6 @@
 # Control Transcription API
 
-This API is used to control the transcription session of a bot conversation. It lets you end an ongoing transcription session by sending the appropriate action.
+This API is used to control the transcription session of an AI Agent conversation. It lets you end an ongoing transcription session by sending the appropriate action.
 
 | **Field**         | **Value** |
 |-------------------|-----------|
@@ -15,13 +15,13 @@ This API is used to control the transcription session of a bot conversation. It 
 | **Parameter** | **Required/Optional** | **Description** |
 |---------------|------------------------|------------------|
 | `host`        | Required               | Environment URL, for example, `https://platform.kore.ai` |
-| `botId`       | Required               | Unique ID of the bot |
+| `botId`       | Required               | Unique ID of the AI Agent |
 
 ## Query Parameters
 
 | **Parameter**     | **Required/Optional** | **Description**                          |
 |-------------------|------------------------|------------------------------------------|
-| `conversationId`  | Required               | Unique identifier of the bot conversation |
+| `conversationId`  | Required               | Unique identifier of the AI Agent conversation |
 
 ## Sample Request
 **For start action**

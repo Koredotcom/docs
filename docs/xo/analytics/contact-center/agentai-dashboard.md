@@ -2,7 +2,7 @@
 
 The Agent AI Dashboard displays performance metrics of the Agent AI widget and the behavioral trends of the end users (agents and customers). You can filter data by channel or time period. Metrics include total sessions, widget suggestions, relevant suggestions, average widget suggestions used per session, help content and automations agents used to resolve customer issues, search behavior of agents, automation performance results, and agent feedback via likes and dislikes.
 
-To view the Dashboard, sign in to XO, and click **Agent AI** > **Analytics** > **Contact Center** > **Agent AI**.  
+To view the Dashboard, sign in to platform, and click **Agent AI** > **Analytics** > **Contact Center** > **Agent AI**.  
 <img src="../agentai-dashboard-images/agent-ai-dashboard-1.png" alt="agent-ai-dashboard" title="agent-ai-dashboard" style="border: 1px solid gray; zoom:80%;">
 
 # **Dashboard Filters**
@@ -32,7 +32,7 @@ This section lets you view and filter the Agent AI Widget’s performance data.
 
 ## **Total Sessions**
 
-It indicates the total number of uninterrupted interactions between the bot and the end user (customer or agent) over a selected time period on a selected channel. Each session has been set for 15 minutes. If a session lasts beyond 15 minutes but less than 30 minutes, it gets calculated as two sessions. The red superscripted percentage with an arrow symbol indicates a decrease, and the green one indicates an increase in the percentage of number of sessions over a selected time period over a previous session. For example, a number 532 and a 5.2% with a red downwards arrow implies 532 sessions over the interval shown (say, a week) and a 5.2% decrease over the previous week.  
+It indicates the total number of uninterrupted interactions between the AI Agents and the end user (customer or agent) over a selected time period on a selected channel. Each session has been set for 15 minutes. If a session lasts beyond 15 minutes but less than 30 minutes, it gets calculated as two sessions. The red superscripted percentage with an arrow symbol indicates a decrease, and the green one indicates an increase in the percentage of number of sessions over a selected time period over a previous session. For example, a number 532 and a 5.2% with a red downwards arrow implies 532 sessions over the interval shown (say, a week) and a 5.2% decrease over the previous week.  
 <img src="../agentai-dashboard-images/dashboard-total-sessions-4.png" alt="dashboard-total-sessions" title="dashboard-total-sessions" style="border: 1px solid gray; zoom:40%;">
 
 ## **Total Suggestions**

@@ -1,8 +1,8 @@
 # Users Dashboard
 
-Once you have implemented a virtual assistant, you can gain actionable insights on the type of users it handles, including unique, new, and returning users, and the user trends for a given period for different conversation types, conversation statuses, channels, languages, and custom conversational tags on the Users Dashboard.
+Once you have implemented an AI Agent, you can gain actionable insights on the type of users it handles, including unique, new, and returning users, and the user trends for a given period for different conversation types, conversation statuses, channels, languages, and custom conversational tags on the Users Dashboard.
 
-This dashboard displays the trends of total users interacting with the virtual assistant, with a breakup of new and returning users, which helps understand user trends and the user retention status of your business.
+This dashboard displays the trends of total users interacting with the AI Agents, with a breakup of new and returning users, which helps understand user trends and the user retention status of your business.
 
 For example, an e-Commerce company requiring insights on user trend-based data for their mobile app can use the Users Dashboard to determine the following:
 
@@ -25,25 +25,25 @@ For example, an e-Commerce company requiring insights on user trend-based data f
 
 ## User Trends Considerations
 
-* If User-A has interacted with the bot on 25-Jan-2022 for the first time and the dashboard is viewed between 23-Jan-2022 to 26-Jan-2022 then this user is considered a new user.
-* If User-B has interacted with the bot on 25-Jan-2022 for the first time and again interacted with the bot on 26-Jan-2022, and if the dashboard is viewed between 23-Jan-2022 to 26-Jan-2022, then this user is considered as:
+* If User-A has interacted with the AI Agents on 25-Jan-2022 for the first time and the dashboard is viewed between 23-Jan-2022 to 26-Jan-2022 then this user is considered a new user.
+* If User-B has interacted with the AI Agents on 25-Jan-2022 for the first time and again interacted with the AI Agents on 26-Jan-2022, and if the dashboard is viewed between 23-Jan-2022 to 26-Jan-2022, then this user is considered as:
     * A new user on 25-Jan-2022
     * A returning user on 26-Jan-2022
-* If User-C has interacted with the bot on 21-Jan-2022 for the first time and again interacted with the bot on 26-Jan-2022, and the dashboard is viewed between 23-Jan-2022 to 26-Jan-2022, then, this user is considered as a returning user. [Learn more about New and Returning Users](../../kb/new-and-returning-users.md)
+* If User-C has interacted with the AI Agents on 21-Jan-2022 for the first time and again interacted with the AI Agents on 26-Jan-2022, and the dashboard is viewed between 23-Jan-2022 to 26-Jan-2022, then, this user is considered as a returning user. [Learn more about New and Returning Users](../../kb/new-and-returning-users.md)
 
 The **Users Dashboard** provides insights on the following user trend metrics:
 
 
-* **Total Unique Users**: The total number of unique users who interacted with the virtual assistant.
-* **New Users**: The total number of users who have interacted with the virtual assistant for the first time in the selected period.
-* **Returning Users**: The total number of users who have already interacted with the virtual assistant earlier and have initiated another session in the selected period.
-* **Avg. Total Unique Users Per Day**: The total number of unique users who interacted with the virtual assistant in the selected period divided by the number of days in the selected period.
-* **Avg. New Users Per Day**: The total number of new users who interacted with the virtual assistant in the selected period divided by the number of days in the selected period.
+* **Total Unique Users**: The total number of unique users who interacted with the AI Agents.
+* **New Users**: The total number of users who have interacted with the AI Agents for the first time in the selected period.
+* **Returning Users**: The total number of users who have already interacted with the AI Agents earlier and have initiated another session in the selected period.
+* **Avg. Total Unique Users Per Day**: The total number of unique users who interacted with the AI Agents in the selected period divided by the number of days in the selected period.
+* **Avg. New Users Per Day**: The total number of new users who interacted with the AI Agents in the selected period divided by the number of days in the selected period.
 
 The key components of the Users Dashboard are:
 
 
-* **Users Trend**: The users’ trend shows the distribution of New Users, Returning Users, and Total Unique Users who have interacted with the virtual assistant over a period. This helps determine User Engagement for the selected period. 
+* **Users Trend**: The users’ trend shows the distribution of New Users, Returning Users, and Total Unique Users who have interacted with the AI Agents over a period. This helps determine User Engagement for the selected period. 
 
     **Graph- Users’ Trend for the Selected Period**
 
@@ -54,7 +54,7 @@ The key components of the Users Dashboard are:
     The increment/decrement of the above user metrics’ counts is displayed as percentage values.
 
 
-* **Returning Users**: Displays the graph for the day-wise returning users (in percentage) for the selected dates and other filters. Here, Day 0 is the first time a user interacts with the virtual assistant. The returning users % is calculated for the consecutive days for the selected period. For example, in the following image, the number of users is 100% on Day 0 (first interaction) and 0% on Day 1 since none of the users who have already interacted with the virtual assistant have initiated a conversation on the same channel/browser. 
+* **Returning Users**: Displays the graph for the day-wise returning users (in percentage) for the selected dates and other filters. Here, Day 0 is the first time a user interacts with the AI Agents. The returning users % is calculated for the consecutive days for the selected period. For example, in the following image, the number of users is 100% on Day 0 (first interaction) and 0% on Day 1 since none of the users who have already interacted with the AI Agents have initiated a conversation on the same channel/browser. 
 
     **Graph- Returning Users Trend for the Selected Period**
 

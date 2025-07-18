@@ -1,10 +1,10 @@
 # Get Intent Real Time Data
 
-To retrieve the most recent conversational data for the given Bot Id. Gets the latest 25 sessions data for the given Bot Id that completed the execution of the flow.
+To retrieve the most recent conversational data for the given `IId`. Gets the latest 25 sessions data for the given application ID that completed the execution of the flow.
 
 | **Method**       | GET                                                        |
 |--------------|------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/api/public/bot/{{BotID}}//intentrealtimedata` |
+| **Endpoint**     | `https://{{host}}/api/public/bot/{{IID}}//intentrealtimedata` |
 | **Content Type** | `application/json`                                         |
 | **Authorization**| `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                      |
@@ -14,18 +14,17 @@ To retrieve the most recent conversational data for the given Bot Id. Gets the l
 | **PARAMETER** | **DESCRIPTION**                                                        | **TYPE**            |
 |-----------|--------------------------------------------------------------------|-----------------|
 | host      | Environment URL, for example, https://platform.kore.ai          | string, required |
-| BotID     | Bot ID or Stream ID. You can access it from the General Settings page of the bot. | string, required |
+| IId     | The application ID. | string, required |
 
 ## Sample Request
 
 ```
-curl --location --request POST 'https://{{host}}/api/public/bot/st-e808d22c-fcbc-54b6-b450-6983ec2axxxx/intentrealtimedata' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy0yOGU0MWFjMi0zODJjLTVkNmUtOGQ0MC0zZDE0OGYy
-ZmI0YWMifQ.gW6cuRsv86ajX48gW0XYOmiUSAEp4K4r5JbM3wUISCM' \
+curl --location --request POST 'https://{{host}}/api/public/bot/{{IId}}/intentrealtimedata' \
+--header 'auth: <token>' \
 --header 'cache-control: no-cache' \
 --header 'postman-token: 363f7f10-e516-c464-dcf8-2fefcd86xxxx' \
 --header 'Format: application/json' \
---header 'accountId: 63c0e7de93e4c7694808xxxx'
+--header 'accountId: {{accountId}}'
 ```
 
 ## Sample Response

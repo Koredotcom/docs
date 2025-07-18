@@ -1,21 +1,19 @@
 # Building an AI Agent
-This document describes the process of implementing an AI Agent using the Kore.ai XO Platform.
 
-If you are new to the Kore.ai XO Platform and want to familiarize yourself with the terms and concepts we use, please refer to [Concepts and Terminology](./glossary/concepts-and-terminology.md).
+If you are new to the Platform and want to familiarize yourself with the terms and concepts we use, please refer to [Concepts and Terminology](./glossary/concepts-and-terminology.md).
 
 !!! Disclaimer
 
-    **PCI Compliance Disclaimer**: You must use data masking to collect credit card information but never capture CVV numbers. Kore.ai is committed to safeguarding all payment card data collected and processed for its business. However, card payment processing is not supported in Kore.ai-owned systems. If card payment processing is required during Bot interactions, you must transfer the processing to a PCI-compliant merchant.
+    **PCI Compliance Disclaimer**: You must use data masking to collect credit card information but never capture CVV numbers. Kore.ai is committed to safeguarding all payment card data collected and processed for its business. However, card payment processing is not supported in Kore.ai-owned systems. If card payment processing is required during agent interactions, you must transfer the processing to a PCI-compliant merchant.
 
 
 ## Steps for Building your AI Agent
 
-Once you get access to the Kore.ai XO Platform, you can build your first AI Agent by following the steps below.
-
+Once you get access to the Platform, you can build your first AI Agent by following the steps below.
 
 
 1. **Define / Design**: This is the step during which you clarify the necessary details, before you begin to actually build your agent.
-2. **Build / Develop**: At this stage, your agent takes shape within the Kore.ai XO Platform; you begin making the necessary configurations and developing it to continuously fit your organization’s needs.
+2. **Build / Develop**: At this stage, your agent takes shape within the Platform; you begin making the necessary configurations and developing it to continuously fit your organization’s needs.
 
 
 ## Define / Design the AI Agent
@@ -26,27 +24,11 @@ The first step to create a well-defined use case involves gathering market requi
 
 Next, get a good idea of what the agent needs to do. A clear description of each step and a flow chart of the various conversation flows will go a long way in easing the process of building the agent.
 
-Below, we present our recommendations when it comes to the design process and the questions you should ask when defining your agent.
-
-
-### Recommended Design Process
-
-We recommend that you follow the steps below while designing your agent:
-
-
-
-* **Understand your Users’ Needs**: To set the scope of the agent, the business sponsors, business analysts, and product owners play an important role in identifying the users’ needs by gathering market requirements and assessing internal needs.
-* **Set the Virtual Assistant Goals**: This involves converting the above-identified scope to a use case. It is advisable to involve the agent developer in this phase.
-* **Design a Virtual Assistant Conversation**: This helps define chatbot behavior in every possible scenario in its interaction with the user. Simulating conversations go a long way in identifying such scenarios.
-
-Once the agent capabilities and ideal use cases are well-defined, the developer can begin the process of configuring the tasks, define intents and entities, and build the conversational dialog.
 
 
 ### Questions to Ask during the Design Process
 
 Try to answer the following questions (some if not all):
-
-
 
 * **Who is the _target audience_?** Technical help agents targeted for a tech-savvy customer need a different design when compared to agents for a layperson, such as an airline’s customer. Hence assessing the target audience is always important.
 * **What Agent _persona_ will resonate the most with this group?** This will help define how the agent talks and acts in every situation.
@@ -57,32 +39,9 @@ Try to answer the following questions (some if not all):
 * **What _channels_ will the agent communicate through?** This will to some extent drive the way the agent is presented, the various options available for the agent are limited by the channel/medium it is used in.
 * **What _languages_ should the agent speak?** When catering to a multilingual community the language support is imperative and building the dictionary simultaneously is useful.
 
-
-## Build / Develop the AI Agent
-
-Once the agents capabilities and ideal use case are well-defined, the developer begins the process of configuring tasks, defining intents, entities, and building the conversational dialog.
-
-The general development process in the Kore.ai XO Platform involves the following steps:
-
-
-
-* Choose the type of agent to build;
-* Add your first agent;
-* Define the agents tasks;
-* Train the agent;
-* Enable communication channels;
-* Test your agent configuration;
-* Publish your agent;
-* Analyze and improve;
-
-
-![alt_text](../getting-started/images/bva(2).png "image_tooltip")
-
-
-
 ### Build an AI Agent Using the Setup Guide
 
-1. Sign in to the [XO Platform Homepage](https://platform.kore.ai/){:target="_blank"}.
+1. Sign in to the [Platform Homepage](https://platform.kore.ai/){:target="_blank"}.
 2. On the Homepage, click the **New App** button and then choose **New App**. The Get Started options are displayed.
 3. Under Automation AI, click **Create New** and then select your onboarding experience - **Guided Onboarding**.
 4. Click **Next** at the bottom-right corner, and follow the onscreen instructions to complete the onboarding journey.

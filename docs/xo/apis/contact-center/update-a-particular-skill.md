@@ -1,10 +1,10 @@
 # Update a Particular Skill
 
-To update the particular skill with the given Stream Id, Skill Group Id, and Skill Id.
+To update the particular skill with the given `IId`, `skillGroupId`, and `skillId`.
 
 | **Method**     | PUT                                                                                        |
 |------------|-------------------------------------------------------------------------------------------|
-| **Endpoint**   | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills/{skillId}` |
+| **Endpoint**   | `https://{{host}}/agentassist/api/v1/public/{{IId}}/skill-groups/{{skillGroupId}}/skills/{skillId}` |
 | **Content Type** | `application/json`                                                                         |
 | Authorization | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**  | SmartAssist Analytics                                                                      |
@@ -14,8 +14,8 @@ To update the particular skill with the given Stream Id, Skill Group Id, and Ski
 | **PARAMETER** | **DESCRIPTION**                                                         | **TYPE**          |
 |-----------|---------------------------------------------------------------------|---------------|
 | host      | Environment URL, for example, https://platform.kore.ai          | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
-| skillId   | Id of the Skill.                                                   | string, required |
+| IId     | The application ID. | string, required |
+| skillId   | ID of the Skill.                                                   | string, required |
 
 ## Sample Request
 

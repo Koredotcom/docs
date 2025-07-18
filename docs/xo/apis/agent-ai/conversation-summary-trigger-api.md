@@ -1,6 +1,6 @@
 # Conversation Summary Trigger API
 
-This API triggers a conversation summary event in the Agent AI system. It is used to send event data related to a conversation to the specified bot.
+This API triggers a conversation summary event in the Agent AI system. It is used to send event data related to a conversation to the specified AI Agent.
 
 | **Method**       | POST                                                                 |
 |------------------|----------------------------------------------------------------------|
@@ -13,7 +13,7 @@ This API triggers a conversation summary event in the Agent AI system. It is use
 | **Parameter** | **Required** | **Description**                                                                 |
 |---------------|--------------|---------------------------------------------------------------------------------|
 | `host`        | Yes          | The environment URL. For example, `https://platform.kore.ai`.                   |
-| `botId`       | Yes          | Bot ID or Stream ID. You can access it from the General Settings page of the bot. |
+| `botId`       | Yes          | AI Agent ID or Stream ID. You can access it from the General Settings page of the AI Agent. |
 
 ### Sample Request
 
@@ -43,7 +43,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/hooks/st-c04e225f-a30b-5a0a
 | **Parameter**          | **Description**                                                             | **Mandate** |
 |------------------------|------------------------------------------------------------------------------|-------------|
 | `conversationId`       | Unique identifier for the conversation.                                     | Required    |
-| `botId`                | Unique identifier for the bot.                                              | Required    |
+| `botId`                | Unique identifier for the AI Agent.                                              | Required    |
 | `events`               | List of events to be triggered.                                             | Required    |
 | `eventsName`           | Name of the event. For example, `"TRIGGER_SUMMARY_EVENT"`.                  | Required    |
 | `eventsData`           | Additional data for the event.                                              | Required    |
