@@ -1,7 +1,7 @@
 
 # SDK Security
 
-The Platform only accepts clients that are authorized to connect and exchange messages. You must register your SDK app with the Platform in the Platform tool and acquire client credentials. You can then use your client credentials to authorize the app and communication exchange between your user and AI Agent.
+The Platform only accepts clients that are authorized to connect and exchange messages. You must register your SDK app with the Platform in the Platform tool and acquire client credentials. You can then use your client credentials to authorize the app and communication exchange between your user and bot.
 
 ## Securing Your SDKs
 

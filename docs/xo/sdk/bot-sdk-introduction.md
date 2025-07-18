@@ -1,6 +1,6 @@
 # Bot SDKs
 
-Kore.ai offers Bots SDKs as a set of platform-specific client libraries that provide a quick and convenient way to get the Platform capability into custom applications and provide you with more control over the AI Agent you build.
+Kore.ai offers Bots SDKs as a set of platform-specific client libraries that provide a quick and convenient way to get the Platform capability into custom applications and provide you with more control over the bots you build.
 
 With just a few lines of code, you can embed our Platforms widget into your applications to enable end-users to interact with their applications using Natural Language Processing.
 
@@ -24,11 +24,11 @@ Bot SDKs are available for the following platforms:
 
 To get started with Bot SDKs, you must have an application to embed the SDK into, host a JWT generation web service, and register your app in the Platform. For more information, see [SDK Security](../sdk-security).
 
-You can also try out our tutorial using a sample AI Agent, a test application, and configuring your local host server for JWT generation. For more information, see the [Web SDK Tutorial](../tutorials/web-sdk).
+You can also try out our tutorial using a sample bots, a test application, and configuring your local host server for JWT generation. For more information, see the [Web SDK Tutorial](../tutorials/web-sdk).
 
 ## BotKit SDK
 
-The BotKit SDK enables you to define precise control of your AI Agent’s interactions.For example, if you have an AI Agent used to book a flight, it may take some time after a user request,s and available taxis can be displayed. Using an asynchronous call, while the user waits for a response, you can display a message such as _Looking for your flight_. The asynchronous     response request enables the Platform to process other requests and will post the response to the user when it becomes available. There are a variety of BotKit SDK events that you can capture, and control the bot using functions.
+The BotKit SDK enables you to define precise control of your bots’s interactions.For example, if you have an bots used to book a flight, it may take some time after a user request,s and available taxis can be displayed. Using an asynchronous call, while the user waits for a response, you can display a message such as _Looking for your flight_. The asynchronous     response request enables the Platform to process other requests and will post the response to the user when it becomes available. There are a variety of BotKit SDK events that you can capture, and control the bot using functions.
 
 To learn more about the BotKit SDK, see [Using the BotKit SDK](../using-the-botkit-sdk/).
 

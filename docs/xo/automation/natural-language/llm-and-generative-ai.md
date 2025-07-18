@@ -1,6 +1,6 @@
 # LLM and Generative AI Features
 
-The Kore.ai XO Platform offers a comprehensive solution for integrating Generative AI capabilities into conversational AI applications. By leveraging the Platform's Generative AI capabilities, users can create powerful, engaging, and human-like conversational experiences for their end-users.
+The Platform offers a comprehensive solution for integrating Generative AI capabilities into conversational AI applications. By leveraging the Platform's Generative AI capabilities, users can create powerful, engaging, and human-like conversational experiences for their end-users.
 
 **Pre-built Integrations**
 
@@ -38,13 +38,13 @@ The Integration of LLM and Generative AI enables the following features:
  
 ## Benefits
 
-All these features benefit VA developers, NLP developers, and testers as follows:
+All these features benefit AI Agent developers, NLP developers, and testers as follows:
 
 * Choose between custom and pre-built LLM integrations. 
 * Quickly create dialog tasks. 
 * Build custom use cases with Generative AI. 
 * Automate mundane tasks (dialog generation, training utterances). 
-* Get suggestions for better VA design and development. 
+* Get suggestions for better AI Agentdesign and development. 
 * Customize connections to LLMs and optimize prompts for specific use cases.
 
 ## Getting Started
