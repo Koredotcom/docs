@@ -1,6 +1,6 @@
 # Generative AI Features - Automation AI
 
-Utilize generative AI features to supercharge your virtual assistant with powerful tools that enhance productivity, enable natural conversations, improve intent detection, analyze customer sentiment, and support agent performance, all working together to create seamless end-user experiences through intuitive design.
+Utilize generative AI features to supercharge your AI Agent with powerful tools that enhance productivity, enable natural conversations, improve intent detection, analyze customer sentiment, and support agent performance, all working together to create seamless end-user experiences through intuitive design.
 
 ## Model Feature Matrix
 
@@ -12,8 +12,8 @@ The following table displays the features and the supported models.
 
     |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Responses|Rephrase User Query#|Zero-shot ML Model|
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI – <br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|✅|
-    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|✅|✅|✅|✅^|
+    |Azure OpenAI–<br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|✅|
+    |OpenAI–<br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|✅|✅|✅|✅^|
     |Provider's New LLM**|✅|✅|❌|✅|✅|✅|
     |Custom LLM|✅|✅|❌|✅|✅|✅|
     |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
@@ -24,25 +24,25 @@ The following table displays the features and the supported models.
 
     |Models|Automatic Dialog Generation|Conversation Test Case Suggestions|Conversation Summary|NLP Batch Test Case Suggestions|Training Utterance Suggestions|
     |:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI – <br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|
-    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini* |✅|✅|❌|✅|✅|
+    |Azure OpenAI–<br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|
+    |OpenAI–<br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini* |✅|✅|❌|✅|✅|
     |Provider's New LLM**|✅|✅|❌|✅|✅|
     |Custom LLM|✅|✅|✅|✅|✅|
     |Amazon Bedrock|✅|✅|❌|✅|✅|
     |Kore.ai XO GPT|❌|❌|✅|❌|❌|
 <hr>
 
+^ Currently, the Zero-shot ML Model doesn't support batch testing when using GPT 4.
 
-
-\* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts.* 
+\* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini don't include system prompts, but they can be used with custom prompts.* 
 
 \** *To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.*
 
-\# *The XO platform does not provide system prompts for the Rephrase User Query feature when you use OpenAI or Azure OpenAI models. To use this feature with these LLMs, you must create a custom prompt.*
+\# *The Platform doesn't provide system prompts for the Rephrase User Query feature when you use OpenAI or Azure OpenAI models. To use this feature with these LLMs, you must create a custom prompt.*
 
 ## Agent Node
 
-When enabled, this feature lets you add an Agent Node to Dialog Tasks. This node allows you to collect Entities from end-users in a free-flowing conversation (in the selected English/Non-English Bot Language) using LLM and Generative AI in the background. You can define the entities to be collected as well as rules & scenarios in English and Non-English Bot languages. You can configure node properties just like any other node. You can also use the Agent Node across Dialog Tasks.
+When enabled, this feature lets you add an Agent Node to Dialog Tasks. This node allows you to collect Entities from end-users in a free-flowing conversation (in the selected English/Non-English App Language) using LLM and Generative AI in the background. You can define the entities to be collected as well as rules & scenarios in English and Non-English App languages. You can configure node properties just like any other node. You can also use the Agent Node across Dialog Tasks.
 
 <img src="../images/agent-node.png" alt="Agent Node" title="Agent Node" style="border: 1px solid gray; zoom:70%;"> 
 
@@ -50,7 +50,7 @@ When enabled, this feature lets you add an Agent Node to Dialog Tasks. This node
 
 **Usage**
 
-When creating or editing a Dialog Task that’s created manually or[ auto-generated](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called Agent Node within your nodes list. 
+When creating or editing a Dialog Task that’s created manually or[ auto generated](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called Agent Node within your nodes list. 
 
 When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../automation/use-cases/dialogs/node-types/genai-node-v2.md).
 
@@ -65,7 +65,7 @@ This feature lets you define custom user prompts based on the conversation conte
 
 
 
-1. When building the Dialog Flow, click the **“Gen AI”**, and select the **Prompt Node** node. 
+1. When building the Dialog Flow, click the **Gen AI**, and select the **Prompt Node** node. 
 <img src="../images/genaiprompt.png" alt="Agent Node" title="Agent Node" style="border: 1px solid gray; zoom:70%;"> 
 
 2. Configuring the Component Properties in the following sections helps set up the node:
@@ -75,32 +75,33 @@ This feature lets you define custom user prompts based on the conversation conte
         * System Context
         * Temperature
         * Max Tokens
-1. **Advanced** **Controls**: Select the maximum wait time (**Timeout**) to receive a response from the LLM and the bot’s response (Timeout Error Handling) when a timeout error occurs.
-2. When you add custom tags to the **current message**, **user profile**, and **session** under **Instance Properties**, you can build custom profiles for the bot conversation. .
+1. **Advanced** **Controls**: Select the maximum wait time (**Timeout**) to receive a response from the LLM and the app’s response (Timeout Error Handling) when a timeout error occurs.
+2. When you add custom tags to the **current message**, **user profile**, and **session** under **Instance Properties**, you can build custom profiles for the app conversation. .
 3. Configuring node connections on an instance lets you define the connection rules for the conversation using transition conditions. This lets the conversation follow specific paths based on the user’s input.
 
-If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.[ Learn more](../automation/use-cases/dialogs/node-types/genai-prompt.md).
+If this feature is disabled, you can't configure the ML model to build custom prompts using OpenAI for different use cases.[ Learn more](../automation/use-cases/dialogs/node-types/genai-prompt.md).
 
 
 ## Repeat Responses
 
-This feature uses LLM to reiterate the recent bot responses when the Repeat Response event is triggered. Bot developers can enable the event and customize the trigger conditions. This empowers end-users to ask the bot to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](../automation/intelligence/event-handling.md#repeat-bot-response-event).
+This feature uses LLM to reiterate the recent app responses when the Repeat Response event is triggered. Platform user's can enable the event and customize the trigger conditions. This empowers end-users to ask the app to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](../automation/intelligence/event-handling.md#repeat-bot-response-event).
 
 
 
 ## Rephrase Responses
 
 
-The Response Rephrasing feature in AI for Service improves virtual assistant conversations by making them more natural, human-like, and emotionally intelligent. It supports rephrasing for both standard and structured content types, including JSON and JavaScript, and gives you flexible control over which parts of a conversation to rephrase.
+The Response Rephrasing feature in AI for Service improves an AI Agents
+conversations by making them more natural, human-like, and emotionally intelligent. It supports rephrasing for both standard and structured content types, including JSON and JavaScript, and gives you flexible control over which parts of a conversation to rephrase.
 
-The system sends all User Prompts, Error Prompts, and Bot Responses—along with the conversation context, to the LLM. Responses are rephrased in English or the selected app language, using contextual and emotional cues to create a more empathetic and natural user experience.
+The system sends all User Prompts, Error Prompts, and app Responses—along with the conversation context, to the LLM. Responses are rephrased in English or the selected app language, using contextual and emotional cues to create a more empathetic and natural user experience.
 
 The Default_V2 system prompt introduces support for advanced content formats and a wider range of response types, enabling more natural and consistent outputs. This prompt is available exclusively with the OpenAI GPT-4o model. Starting with the v10.14 release, all newly created custom prompts use the V2 format by default. Existing custom prompts remain fully functional and require no modifications.
 
 
 ### Node Level Configuration
 
-Enable this option to send User Prompts, Error Prompts, and Bot Responses from Message, Entity, and Confirmation nodes to the LLM for rephrasing. This setting is off by default, allowing you to configure rephrasing at the node level. You can add instructions in English or any other supported app language.  
+Enable this option to send User Prompts, Error Prompts, and app Responses from Message, Entity, and Confirmation nodes to the LLM for rephrasing. This setting is off by default, allowing you to configure rephrasing at the node level. You can add instructions in English or any other supported app language.  
 <img src="../images/rr-nodelevel.png" alt="Rephrase Responses" title="Rephrase Responses" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -129,7 +130,7 @@ For more settings, see [Change Settings for a Pre-built Model](#change-settings-
 
 This feature helps improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing user conversation.
 
-When a user intent and entity are split across multiple utterances or through the conversation, the feature enriches the user query by rephrasing the user’s multiple queries during runtime. This enriched user query contains all the conversation details so the bot can understand the actual meaning behind a user’s utterance. This enriched user query is fed to the natural language, improving accuracy by improving intent identification and entity extraction.
+When a user intent and entity are split across multiple utterances or through the conversation, the feature enriches the user query by rephrasing the user’s multiple queries during runtime. This enriched user query contains all the conversation details so the app can understand the actual meaning behind a user’s utterance. This enriched user query is fed to the natural language, improving accuracy by improving intent identification and entity extraction.
 
 **Usage**
 
@@ -139,39 +140,39 @@ The LLM rephrases the query using one of the following methods depending on the 
 
 For example: 
 User: What is the weather forecast for New York tomorrow? 
-Bot: It will be Sunny, with temperature ranging between 30 – 35 degrees Celsius. 
+App : It will be Sunny, with temperature ranging between 30–35 degrees Celsius. 
 User: How about Orlando? 
-Bot: Sorry, I cannot understand. Can you please rephrase?
+App : Sorry, I can't understand. Can you please rephrase?
 
-The query should be completed as “How about the weather forecast in Orlando tomorrow?”.
+The query should be completed as “How about the weather forecast in Orlando tomorrow?”
 
 **Co-referencing**: Coreference arises when multiple expressions or queries within text pertain to a common entity. In cases where a user’s query demonstrates incomplete coreference, the system prompts the user to rephrase the query with additional information. This enhances NLP’s ability to discern the correct intent and entities involved.
 
 For example: 
 User: I’ve been experiencing a persistent headache for the past week. 
-Bot: I’m sorry to hear that. Have you been taking any medication for it? 
+App : I’m sorry to hear that. Have you been taking any medication for it? 
 User: Yes, I’ve been taking ibuprofen, but it doesn’t seem to help much. 
-Bot: I see. How often do you take ibuprofen? 
+App : I see. How often do you take ibuprofen? 
 User: I take it every six hours 
-Bot: I don’t understand. Can you tell me how often you take ibuprofen?
+App : I don’t understand. Can you tell me how often you take ibuprofen?
 
-The co-reference in the user query should be expanded for NLP to identify the right intent and entities. The co-reference should be expanded as “I take ibuprofen every six hours”.
+The co-reference in the user query should be expanded for NLP to identify the right intent and entities. The co-reference should be expanded as “I take ibuprofen every six hours.”
 
 **Completeness and Co-referencing**: The following example illustrates completeness and co-referencing issues with the user’s input which triggers rephrasing.
 
 For example: 
 User: I want to apply for a personal loan.
 
-Bot: Sure, I can help you. You’re eligible to take a personal loan of up to 20,000\$.
+App : Sure, I can help you. You’re eligible to take a personal loan of up to 20,000\$.
 
 User: How about a Home loan? 
-Bot: You’re eligible to apply for a home loan as well. You can avail up to 100,000\$. 
+App : You’re eligible to apply for a home loan as well. You can avail up to 100,000\$. 
 User: What about the interest rates of both loans?
 
-The co-reference and the query have to be completed as “What is the interest rate of personal loan and home loan?
+The co-reference and the query have to be completed as “What's the interest rate of personal loan and home loan?
 
 ### Conversation History Length
-This setting allows you to specify the number of recent messages sent to the LLM as context for the user query rephrasing feature. These messages include both user messages and virtual assistant (VA) messages. The default value is 5. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. 
+This setting allows you to specify the number of recent messages sent to the LLM as context for the user query rephrasing feature. These messages include both user messages and an AI Agent messages. The default value is 5. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. 
 You can access the Conversation History Length from **Repharse User Query** > **Advanced Settings**.  
 
 <img src="../images/conv-history.png" alt="Conversation History Length" title="Conversation History Length" style="border: 1px solid gray; zoom:70%;">
@@ -182,9 +183,9 @@ You can access the Conversation History Length from **Repharse User Query** > **
 
     The Zero-shot model is production-ready in English but experimental in other languages. We advise caution before using it in production for non-English languages.
 
-This feature help the ML Engine identify the relevant intents from user utterances based on semantic similarity. By identifying the logical intent during run time, this feature eliminates the need for training data. The Zero-shot ML model requires well-defined intents to work well. This training approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
+This feature help the ML Engine identify the relevant intents from user utterances based on semantic similarity. By identifying the logical intent during run time, this feature eliminates the need for training data. The Zero-shot ML model requires well-defined intents to work well. This training approach is well-suited for an AI Agent with relatively fewer intents and distinct use cases.
 
-For the Zero-shot model feature, the XO Platform offers two template prompts for every supported model of Open AI and Azure Open AI. The template prompts are “Default” and “Zero-Shot-V2”. The “Zero-Shot-V2” is the advanced version of the “Default” template and is selected by default as you select the model. You can import both templates and create a custom prompt using them.
+For the Zero-shot model feature, the Platform offers two template prompts for every supported model of Open AI and Azure Open AI. The template prompts are “Default” and “Zero-Shot-V2.” The “Zero-Shot-V2” is the advanced version of the “Default” template and is selected by default as you select the model. You can import both templates and create a custom prompt using them.
 
 ### Conversation History Length
 
@@ -192,7 +193,7 @@ For the Zero-shot model feature, the XO Platform offers two template prompts for
 
     The conversation history length applies only to zero-shot v2 prompts.
 
-This setting allows you to specify the number of recent messages sent to the LLM as context for the user query rephrasing feature. These messages include both user messages and virtual assistant (VA) messages. The default value is 10. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. You can access the Conversation History Length from feature **Advanced Settings**.  
+This setting allows you to specify the number of recent messages sent to the LLM as context for the user query rephrasing feature. These messages include both user messages and an AI Agent messages. The default value is 10. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. You can access the Conversation History Length from feature **Advanced Settings**.  
 
 <img src="../images/zsm-as.png" alt="Conversation History Length" title="Conversation History Length" style="border: 1px solid gray; zoom:70%;">
 
@@ -211,7 +212,7 @@ If this feature is disabled, the system won’t identify and display the logical
 
 ## Few-shot ML Model
 
-The Few-shot model uses Kore Ai’s hosted embeddings to train virtual assistants based on intent names and training utterances. The model identifies the intents based on semantic similarity between user and training utterances.
+The Few-shot model uses Kore Ai’s hosted embeddings to train an AI Agent based on intent names and training utterances. The model identifies the intents based on semantic similarity between user and training utterances.
 
 !!! note
 
@@ -234,15 +235,15 @@ If this feature is disabled, the system won’t identify and display the logical
 
 ## Automatic Dialog Generation
 
-This feature auto-generates conversations and dialog flows in the selected language using the VA’s purpose and intent description provided (in English or the selected Non-English Bot Language) during the creation process. The Platform uses LLM and generative AI to create suitable Dialog Tasks for Conversation Design, Logic Building & Training by including the required nodes in the flow. 
+This feature auto generates conversations and dialog flows in the selected language using the VA’s purpose and intent description provided (in English or the selected Non-English App Language) during the creation process. The Platform uses LLM and generative AI to create suitable Dialog Tasks for Conversation Design, Logic Building & Training by including the required nodes in the flow. 
 
 You must provide an intent description, and the Platform handles the Conversation Generation for the Dialog Flow.
 
-You can preview the conversation flow, view the Bot Action taken, improvise the intent description, and regenerate the conversation to make it more human-like.
+You can preview the conversation flow, view the App Action taken, improvise the intent description, and regenerate the conversation to make it more human-like.
 
 The nodes and the flow for the Business Logic are automatically built for your conversation, and you only need to configure the flow transition.
 
-The Platform auto-defines the Entities, Prompts, Error Prompts, Bot Action nodes, Service Tasks, Request Definition, Connection Rules, and other parameters.
+The Platform auto defines the Entities, Prompts, Error Prompts, App Action nodes, Service Tasks, Request Definition, Connection Rules, and other parameters.
 
 
 
@@ -262,7 +263,7 @@ Once you enable this feature:
 4. The Platform sends the updated description to Generative AI in the background to get the new conversation.
 5. Once you’re satisfied with the conversation, generate a dialog task.
 
-If this feature is disabled, you will not have the option to auto-generate a dialog flow when first launching a Dialog Task.
+If this feature is disabled, you won't have the option to auto generate a dialog flow when first launching a Dialog Task.
 
 !!! note
 
@@ -272,7 +273,7 @@ If this feature is disabled, you will not have the option to auto-generate a dia
 
 ## Conversation Test Cases Suggestions
 
-This feature provides a regression tool or a Playbook that creates a conversation test suite for each intent (new and old) in English or Non-English Bot language to evaluate the impact of the change on the conversation execution.
+This feature provides a regression tool or a Playbook that creates a conversation test suite for each intent (new and old) in English or Non-English App language to evaluate the impact of the change on the conversation execution.
 
 
 <img src="../images/cpf(2).gif" alt="Conversation Test Cases Suggestions" title="Conversation Test Cases Suggestions" style="border: 1px solid gray; zoom:70%;">
@@ -281,18 +282,18 @@ This feature provides a regression tool or a Playbook that creates a conversatio
 
 You can view input/utterance suggestions at every conversation step simulating the various input types and scenarios. This feature helps check if the task/intent is robust enough to handle random user utterances.
 
-This feature also helps you predict and simulate the end user’s behavior and check if the VA can execute all the defined flows by generating user responses and presenting any digressions from the specified intent.
+This feature also helps you predict and simulate the end user’s behavior and check if the AI Agent can execute all the defined flows by generating user responses and presenting any digressions from the specified intent.
 
 **Usage**
 
 
 
-1. You can create a test suite by recording a live conversation with a VA by initiating the interaction or letting the VA initiate it.
+1. You can create a test suite by recording a live conversation with an AI Agent by initiating the interaction or letting an AI Agent initiate it.
 2. An icon displays to indicate the user input suggestions from Generative AI.
-3. The Platform triggers OpenAI or Anthropic Claude-1 based on your model selection to generate suggestions for user input where expected in English or a Non-English Bot Language.
+3. The Platform triggers OpenAI or Anthropic Claude-1 based on your model selection to generate suggestions for user input where expected in English or a Non-English App Language.
 4. The Platform shares the following information with OpenAI/Anthropic to generate suggestions.
 
-    * Randomly picked intents from the VA (Dialog, FAQ),
+    * Randomly picked intents from the AI Agent (Dialog, FAQ),
     * Conversation flow,
     * Current Intent, if any,
     * Current node type:
@@ -315,16 +316,16 @@ If the feature is disabled, the Platform doesn’t display the Generative AI sug
 
 ## Conversation Summarization
 
-This feature generates concise, natural language summaries of interactions between the virtual assistant, users, and human agents. It distills the key intents, entities, decisions, and outcomes into an easy-to-read synopsis. Companies can leverage conversation summarization to boost agent productivity, ensure process compliance, and create better contextual recommendations – without having to read lengthy transaction histories. It is pre-integrated with Kore.ai’s Contact Center platform. It is also extensible to third-party applications via API integration.
+This feature generates concise, natural language summaries of interactions between the an AI Agent, users, and human agents. It distills the key intents, entities, decisions, and outcomes into an easy-to-read synopsis. Companies can leverage conversation summarization to boost agent productivity, ensure process compliance, and create better contextual recommendations without having to read lengthy transaction histories. It's pre-integrated with Kore.ai’s Contact Center platform. It's also extensible to third-party applications via API integration.
 !!! note
 
-    For existing bots, by default, the feature is enabled with the Kore.ai XO GPT Model. For new bots, the feature is disabled.
+    For existing apps, by default, the feature is enabled with the Kore.ai XO GPT Model. For new apps, the feature is disabled.
 
 This feature is broadly implemented in two scenarios discussed below:
 
 **Scenario 1**
 
-In a contact center environment, the customer interacting with a VA may request to transfer to a live agent. During agent handoff, the agent must have the necessary context information and interaction history to assist the customers efficiently. The system generates the conversation transcript and interaction summary and routes it to the agent for better understanding.
+In a contact center environment, the customer interacting with an AI Agent may request to transfer to a live agent. During agent handoff, the agent must have the necessary context information and interaction history to assist the customers efficiently. The system generates the conversation transcript and interaction summary and routes it to the agent for better understanding.
 
 An example of the usage: When Conversation Summary is enabled and the conversation is transferred to an agent in SmartAssist, the Conversation Summary is displayed on the Agent Console, as shown in the screenshot below.
 
@@ -342,14 +343,14 @@ When closing a conversation request, contact centers require an agent to summari
 
 **Usage** 
 
-The system uses the[ Conversation Summary](../apis/automation/conversation-summary.md) public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses an open-source LLM to summarize conversations using a large number of sample conversation transcripts.
+The system uses the[ Conversation Summary](../apis/automation/conversation-summary.md) public API to fetch the details of the entire conversation between the customer and an AI Agent or human agent. The API uses an open-source LLM to summarize conversations using a large number of sample conversation transcripts.
 
 
 
 
 ## NLP Batch Test Cases Suggestions
 
-This feature lets you generate test cases based on the NLU Language selected, and add them to the test suite with minimum or no errors. You can give instructions in English or any Non-English bot language you’ve selected. Additionally, in case of a Multilingual NLU, the system generates utterances in the language prompted by the user. For instance, if your instructions are in Hindi, the utterances are generated in Hindi.
+This feature lets you generate test cases based on the NLU Language selected, and add them to the test suite with minimum or no errors. You can give instructions in English or any Non-English App language you’ve selected. Additionally, in case of a Multilingual NLU, the system generates utterances in the language prompted by the user. For instance, if your instructions are in Hindi, the utterances are generated in Hindi.
 
 
 **Usage**
@@ -365,7 +366,7 @@ This feature lets you generate test cases based on the NLU Language selected, an
     * Different scenarios to simulate end-user utterances,
     * Random training utterances and test cases that are generated to avoid duplicate test cases from Generative AI.
 
-If this feature is disabled, you will not have the option to generate test cases during batch testing.[ Learn more.](../automation/testing/regression-testing/batch-testing.md#generating-test-cases-automatically)
+If this feature is disabled, you won't have the option to generate test cases during batch testing.[ Learn more.](../automation/testing/regression-testing/batch-testing.md#generating-test-cases-automatically)
 
 
 
@@ -402,7 +403,7 @@ If this feature is disabled, you won’t see the Suggestions tab on the training
 
 ## Use Case Suggestions
 
-In the standard Virtual Assistant creation journey, use case suggestions help link the standard bot to a business scenario. Based on the selected use case, the system identifies and creates specific dialog tasks or interactions that the virtual assistant should be able to handle.
+In the standard AI Agent creation journey, use case suggestions help link the standard App to a business scenario. Based on the selected use case, the system identifies and creates specific dialog tasks or interactions that the an AI Agent should be able to handle.
 
 		
 
@@ -418,24 +419,24 @@ In the standard Virtual Assistant creation journey, use case suggestions help li
 
 Generating Use Cases automatically creates up to 30 customizable[ Dialog Tasks](../automation/use-cases/dialogs/dialog-tasks-overview.md) tailored to specific use cases. This streamlines the development process, as developers won’t need to manually create each interaction from scratch.
 
-LLM and Generative AI help generate accurate suggestions automatically without configuring any LLM settings for this feature. Providing a detailed bot description is crucial for the effective functioning of this feature. The more information you provide about the virtual assistant’s intended purpose and capabilities, the better the generated use case suggestions will be.
+LLM and Generative AI help generate accurate suggestions automatically without configuring any LLM settings for this feature. Providing a detailed App description is crucial for the effective functioning of this feature. The more information you provide about the an AI Agent’s intended purpose and capabilities, the better the generated use case suggestions will be.
 
 **Usage**
 
 
 
-1. The user initiates a new standard virtual assistant creation on the XO Platform.
-2. The user provides the Bot Name and selects the following:
+1. The user initiates a new standard an AI Agent creation on the the Platform.
+2. The user provides the App Name and selects the following:
     * Purpose 
-    * _Standard Bot_ for **Bot Type**.
+    * _Standard App_ for **App Type**.
     * _English_ for **Default Language**.
-1. When adding the short Bot description, the user must include specific details on the high-level scenarios the Bot needs to handle.
+1. When adding the short App description, the user must include specific details on the high-level scenarios the App needs to handle.
 2. The user generates use case suggestions by clicking **Get Use Cases**.
 3. Based on the user’s description, the system generates improved use case suggestions with the help of the OpenAI Model.
 <img src="../images/use-case-suggestions.png" alt="Use Case Suggestions" title="Use Case Suggestions" style="border: 1px solid gray; zoom:70%;"> 
 
 
 
-1. The user selects the relevant use cases from the suggestions to create and configure the VA accordingly.
+1. The user selects the relevant use cases from the suggestions to create and configure the an AI Agent accordingly.
 
-If you select Create without use cases when creating a bot, the system won’t provide use case suggestions for VA creation. Only the default Dialogs for Welcome and Fallback tasks are created for the VA.[ Learn more](../getting-started/building-a-virtual-assistant.md).
+If you select Create without use cases when creating a App , the system won’t provide use case suggestions for an AI Agent creation. Only the default Dialogs for Welcome and Fallback tasks are created for the VA.[ Learn more](../getting-started/building-a-virtual-assistant.md).

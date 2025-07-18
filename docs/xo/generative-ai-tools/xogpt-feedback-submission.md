@@ -9,7 +9,7 @@ We value your feedback to help refine and improve our XO GPT models. This docume
 ### Assess Frequency of Occurrence:
 
 * Measure how often issues occur across a wide range of samples.
-* Prioritize issues that appear frequently, as they are more likely to affect overall model performance.
+* Prioritize issues that appear frequently, as they're more likely to affect overall model performance.
 * Use occurrence rates to determine whether an issue requires immediate attention or further monitoring.
 
 
