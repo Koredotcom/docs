@@ -57,7 +57,7 @@ JSON object consisting of the following translatable elements
 
 ## Dialog Tasks
 
-JSON object consisting of the following translatable components of your VA’s [Dialog Tasks](../../../automation/use-cases/dialogs/dialog-tasks-overview){:target="_blank"}.
+JSON object consisting of the following translatable components of your AI Agent's [Dialog Tasks](../../../automation/use-cases/dialogs/dialog-tasks-overview){:target="_blank"}.
 
 <table border="1">
 <tr>

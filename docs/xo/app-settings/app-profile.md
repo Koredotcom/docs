@@ -88,10 +88,10 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
   <tr>
    <td>Subdomain (aka Tenancy URL)
    </td>
-   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the VA, for example, <em>kore</em>, for the <em>www.<strong>kore</strong>.someWebService.com</em> tenant-specific URL. When enabled define the following properties:
+   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the AI Agent, for example, <em>kore</em>, for the <em>www.<strong>kore</strong>.someWebService.com</em> tenant-specific URL. When enabled define the following properties:
 <ul>
 
-<li><strong>Help Hint</strong> – The text displayed to the end-user to prompt the user to enter a tenant-specific URL for the VA.
+<li><strong>Help Hint</strong> – The text displayed to the end-user to prompt the user to enter a tenant-specific URL for the AI Agent.
 
 <li><strong>Base URL</strong> – The base URL for the AI Agent that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://{tenant}.someWebService.com</em> where <em>{tenant}</em>, including the braces, represents the tenant name.
 </li>
@@ -114,7 +114,7 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
   <tr>
    <td>Error Message(s)
    </td>
-   <td>Edit or add custom <strong>HTTP Status Codes</strong> and error messages for your VA. For more information, see <a href="#customizing-error-messages">Customizing Error Messages</a>.
+   <td>Edit or add custom <strong>HTTP Status Codes</strong> and error messages for your AI Agent. For more information, see <a href="#customizing-error-messages">Customizing Error Messages</a>.
    </td>
   </tr>
 </table>

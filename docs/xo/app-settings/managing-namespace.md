@@ -76,7 +76,7 @@ You can find the option under the Component Properties section of the node. You 
 
 #### Knowledge Graph
 
-Navigate to **Automation AI > Virtual Assistant > FAQs**. Click **Manage KG**.
+Navigate to **Automation AI > KNOWLEDGE AI > FAQs**. Click **Manage KG**.
 
 On the **Knowledge Graph** screen, click the 3-dot menu icon and select **Manage Variable Namespaces**.
 
@@ -85,13 +85,13 @@ On the **Knowledge Graph** screen, click the 3-dot menu icon and select **Manage
 
 #### Small Talk
 
-Navigate to **Automation AI > Virtual Assistant > Small Talk**. Click the 3-dot menu icon on any of the groups.
+Navigate to **Automation AI > USE CASES > Small Talk**. Click the 3-dot menu icon on any of the groups.
 
 <img src="../images/managing-namespace-img9.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:70%;"/>
 
 
 #### Event Handlers
 
-Navigate to **Automation AI > Virtual Assistant > Events**. Click the 3-dot menu icon.
+Navigate to **Automation AI > CONVERSATION INTELLIGENCE> Events**. Click the 3-dot menu icon.
 
 <img src="../images/managing-namespace-img10.gif" alt="Event handlers" title="Event handlers" style="border: 1px solid gray;zoom:70%;"/>
