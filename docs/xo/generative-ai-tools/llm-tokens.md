@@ -75,7 +75,7 @@ Steps to get started with configuring your own LLM:
 
 While exploring the features with free tokens, follow the guidelines listed below to maintain the security and privacy of your data:
 
-* **Do not upload sensitive documents** until you have switched to your own LLM account. This precaution helps safeguard your confidential information.
+* **Don't upload sensitive documents** until you have switched to your own LLM account. This precaution helps safeguard your confidential information.
 
 * The free tokens are intended for exploration and testing purposes only. 
 

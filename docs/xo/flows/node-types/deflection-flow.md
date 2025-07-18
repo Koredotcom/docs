@@ -1,13 +1,13 @@
 # Deflection Flow
 
-This node transfers a conversation from the call to the chat channel, where the customer is provided a link to connect and interact via chat (either with an automated assistant or with a human agent).
+This node transfers a conversation from the call to the chat channel, where the customer is provided a link to connect and interact via chat (either with an automated agent or with a human agent).
 
 To configure this node, set up the following:
 
 1. Enter a **Custom Name** by which to identify the node later.
 2. Define the deflection flow that the callers will experience under the Deflection Setting. Select one of the following options:
     1. Trigger using user selection:
-        1. **Chat Automation** to route the customer to a chat automation assistant.
+        1. **Chat Automation** to route the customer to a chat automation agent.
         2. **Live Chat Agent** to connect the customer to a human agent.
     2. Trigger using Automation Context  
         <img src="../images/deflection-flow.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:80%;">

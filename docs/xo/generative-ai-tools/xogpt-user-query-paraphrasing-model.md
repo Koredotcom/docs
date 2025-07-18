@@ -3,16 +3,16 @@
 
 ## Introduction
 
-User Query Paraphrasing Model has been meticulously designed to enhance the quality and naturalness of chatbot interactions. By refining the language and structure of predefined responses, our model not only preserves the conversation's context but also co-refers to the details in the user query to the context. This ensures that responses are more engaging, human-like, and empathetic, significantly improving the overall user experience.
+User Query Paraphrasing Model has been meticulously designed to enhance the quality and naturalness of an AI Agent interactions. By refining the language and structure of predefined responses, our model not only preserves the conversation's context but also co-refers to the details in the user query to the context. This ensures that responses are more engaging, human-like, and empathetic, significantly improving the overall user experience.
 
-This model excels at creating interactions that feel more authentic and relatable. It intelligently adjusts responses to reflect the user's emotions and conversational flow, fostering a deeper connection and satisfaction. This technology is ideal for various applications, including customer support, virtual assistants, and interactive platforms, where the quality of communication directly impacts user engagement and loyalty. With our model, your chatbot can deliver responses that are not only accurate but also beautifully crafted to resonate with users.
+This model excels at creating interactions that feel more authentic and relatable. It intelligently adjusts responses to reflect the user's emotions and conversational flow, fostering a deeper connection and satisfaction. This technology is ideal for various applications, including customer support, an AI Agent, and interactive platforms, where the quality of communication directly impacts user engagement and loyalty. With our model, your AI Agent can deliver responses that aren't only accurate but also beautifully crafted to resonate with users.
 
 ### Challenges with Commercial Models
 
 * **Latency**: The time consumed by the commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This impacts the user experience.
 * **Cost**: Commercial models often have a per-request cost, and it rises with high scale usages. This makes managing costs difficult, especially for large-scale deployments.
 * **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is crucial in industries that involve sensitive or proprietary information.
-* **Lack of Customization**: Commercial models are not tailored to specific use cases or industries, leading to less accurate or relevant responses.
+* **Lack of Customization**: Commercial models aren't tailored to specific use cases or industries, leading to less accurate or relevant responses.
 * **Limited Control**: There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
 * **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
@@ -34,7 +34,7 @@ The XO GPT Query Paraphrasing Model offers several advantages for businesses see
 
 * **Cost-Effective Performance**
 
-    For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 100 input tokens for user-bot conversation and 10,000 daily interactions, where each response averages 15 tokens, the cost comparison between models is as follows:
+    For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 100 input tokens for user-AI Agent conversation and 10,000 daily interactions, where each response averages 15 tokens, the cost comparison between models is as follows:
 
 
 
@@ -138,7 +138,7 @@ The use cases of a user query paraphrasing span various domains, each benefiting
   <tr>
    <td rowspan="3" >Customer Support
    </td>
-   <td>Simplify complex user queries in chatbots or virtual assistants for accurate intent detection.
+   <td>Simplify complex user queries for an AI Agent for accurate intent detection.
    </td>
   </tr>
   <tr>
@@ -194,7 +194,7 @@ The use cases of a user query paraphrasing span various domains, each benefiting
    </td>
   </tr>
   <tr>
-   <td>Rephrase questions about workplace policies to ensure clarity in chatbot responses.
+   <td>Rephrase questions about workplace policies to ensure clarity in an AI Agent responses.
    </td>
   </tr>
   <tr>
@@ -258,11 +258,11 @@ The following section presents a few examples of the answers generated by the XO
 
 User: Hi, can you help me select a University for studying Physics?
 
-Bot: Sure, Here are some of the top Universities for studying Physics: 1. Harvard University 2. MIT 3. Stanford 4. University of Cambridge. Which sounds best to you?
+AI Agent: Sure, Here are some of the top Universities for studying Physics: 1. Harvard University 2. MIT 3. Stanford 4. University of Cambridge. Which sounds best to you?
 
 User: Which one is best in fee structure.
 
-Bot: Generally, the tuition fees for an Undergraduate course in Physics is most affordable at Stanford.
+AI Agent: Generally, the tuition fees for an Undergraduate course in Physics is most affordable at Stanford.
 
 User: Ok, I'll choose that one.
 
@@ -276,7 +276,7 @@ The model-building process consists of several key stages that form the backbone
 
 ## Model Benchmarks
 
-This section highlights the features, updates, and changes that vary across different versions of the User Query Paraphrasing Model. It provides version-specifics, which can help identify what is unique to each version. 
+This section highlights the features, updates, and changes that vary across different versions of the User Query Paraphrasing Model. It provides version-specifics, which can help identify what's unique to each version. 
 
 The following table summarizes the versions covered in this document:
 
@@ -292,7 +292,7 @@ The following table summarizes the versions covered in this document:
 
 #### Model Choice
 
-We evaluated various community models that are suited for response generation and fine-tuned our proprietary data described in the previous section. One or more candidate models were used throughout the training and evaluation phase. The model that performed better in terms of accuracy, safety, latency, etc. was deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer versions of the model. Currently, we are using [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) as the base model for fine-tuning and deployment.
+We evaluated various community models that are suited for response generation and fine-tuned our proprietary data described in the previous section. One or more candidate models were used throughout the training and evaluation phase. The model that performed better in terms of accuracy, safety, latency, etc. was deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer versions of the model. Currently, we're using [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) as the base model for fine-tuning and deployment.
 
 
 <table>
@@ -511,10 +511,10 @@ The model is hosted on infrastructure with A10 - g5-xlarge. Some of the other ge
 
 ### Benchmarks Summary v1
 
-To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
+To compare and contrast the performance of the fine-tuned model, we've considered the following other models: 
 
-* Flan-T5: An open-source language model designed for fine-tuned performance across a variety of natural language processing tasks, including summarization, translation, and conversational AI.
-* GPT-4: OpenAI's advanced language model, known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI.
+* Flan-T5: An open-source language model designed for fine-tuned performance across a variety of natural language processing tasks, including summarization, translation, and conversational AI agents.
+* GPT-4: OpenAI's advanced language model, known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI agents.
 
 <img src="../images/user01.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 

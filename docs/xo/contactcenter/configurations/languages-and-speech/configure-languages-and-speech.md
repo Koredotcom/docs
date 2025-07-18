@@ -8,7 +8,7 @@ Languages & Speech Page" title="Languages & Speech Page" style="border: 1px soli
 
 This section of the Contact Center AI module provides access to the following settings:
 
-* **[Supported languages for Bots and Agents](#list-of-supported-languages-for-bots-and-agents)**: Define the languages you want agents and automation to work with.
+* **[Language Supported for Bot & Agent](#list-of-supported-languages-for-ai-agents-bots-and-human-agents)**: Define the languages you want agents and automation to work with.
 * **[Voice Preferences](#voice-preferences)**: Choose the engines to use with Contact Center AI for Automated Speech Recognition (ASR) and Text-to-Speech (TTS).
 * **[List of Supported Dialects](#list-of-supported-dialects)**: Choose the supported dialects.
 * **[Hold Audio](#hold-audio)**: Define the default audio that plays to callers while on hold or waiting in the queue.
@@ -44,9 +44,9 @@ In the **Language** panel, click the **Delete (bin)** icon for the language you 
 <img src="../images/delete-language.png" alt="
 Delete Language" title="Delete Language" style="border: 1px solid gray; zoom:80%;">
 
-### List of Supported Languages for Bots and Agents
+### List of Supported Languages for AI Agents (Bots) and Human Agents
 
-The following languages are supported for bots and agents:
+The following languages are supported for AI Agents (Bots) and Human Agents:
 
 | Afrikaans       | English        | Indonesian      | Malayalam       | Sesotho         | Ukrainian       |
 |-----------------|----------------|-----------------|-----------------|-----------------|-----------------|

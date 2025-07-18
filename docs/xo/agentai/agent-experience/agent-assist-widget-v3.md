@@ -26,7 +26,7 @@ The following features are available in the Agent AI widget:
 
 ## Widget Tabs
 
-The widget consists of four tabs–Search, My Bot, Assist, Transcript (for Voice channel)–and two buttons (Settings and theme) to help agents perform different tasks and activities.
+The widget consists of four tabs–Search, My AI Agent (Bot), Assist, Transcript (for Voice channel)–and two buttons (Settings and theme) to help agents perform different tasks and activities.
 
 **Agent AI tabs:**
 
@@ -34,7 +34,7 @@ The widget consists of four tabs–Search, My Bot, Assist, Transcript (for Voice
 
 ### Search Tab
 
-This tab shows all configured Dialog Tasks at the app level and also gives search capabilities, wherein agents can search Dialog Tasks, frequently asked questions (FAQ), Generative AI answers, web pages, files, and more. The content in this section automatically updates based on agent interactions. Agents can scroll through the list to view all available automations. Selecting the “Run with Agent input” button moves the Dialog Task to the **My Bot** section, where it can be executed. The search functionality automatically updates the library list to match the search query. As you type, relevant words and phrases appear in real time.
+This tab shows all configured Dialog Tasks at the app level and also gives search capabilities, wherein agents can search Dialog Tasks, frequently asked questions (FAQ), Generative AI answers, web pages, files, and more. The content in this section automatically updates based on agent interactions. Agents can scroll through the list to view all available automations. Selecting the “Run with Agent input” button moves the Dialog Task to the **My AI Agent (Bot)** section, where it can be executed. The search functionality automatically updates the library list to match the search query. As you type, relevant words and phrases appear in real time.
 
 <img src="../WidgetContentUpdate_3.3.0/updated-search-functionality.png" alt="updated-search-functionality" title="updated-search-functionality" style="border: 1px solid gray; zoom:80%;">
 
@@ -205,7 +205,7 @@ The Transcription feature is available only for the voice calls. When a call beg
 The Settings tab gives you access to set:
 
 * The listening mode of the app.
-* Auto-scroll functionality of the content in the Assist, My Bot, and Transcript tabs.
+* Auto-scroll functionality of the content in the Assist, My AI Agent (Bot), and Transcript tabs.
 * Available documents and FAQs.
 * Option to choose a language.  
 <img src="../WidgetContentUpdate_3.3.0/widget-settings-section.png" alt="settings-tab-updated" title="settings-tab-updated" style="border: 1px solid gray; zoom:80%;">
@@ -215,7 +215,7 @@ The Settings tab gives you access to set:
 The Proactive Mode toggle allows you to put the app in listening mode. You can turn off the toggle if it is not working as expected.
 
 #### Auto-Scroll Content
-The Auto-Scroll Content toggle lets you manage the scrolling functionality of content in the Assist, My Bot, and Transcript tabs. You can turn on or off the toggle, as required.
+The Auto-Scroll Content toggle lets you manage the scrolling functionality of content in the Assist, My AI Agent (Bot), and Transcript tabs. You can turn on or off the toggle, as required.
 
 #### Help & Support
 
@@ -243,8 +243,8 @@ Agent Ai V3 introduces many additional features and updates over Agent AI V2. Th
 The following UI updates are done:
 
 * **Tab Configuration**:
-    * V2 features three tabs - **Assist**, **Library**, and **My Bot** - and a search bar at the bottom.
-    * V3 features four tabs - **Search**, **My Bot**, **Assist**, and **Settings**.
+    * V2 features three tabs - **Assist**, **Library**, and **My AI Agent (Bot)** - and a search bar at the bottom.
+    * V3 features four tabs - **Search**, **My AI Agent (Bot)**, **Assist**, and **Settings**.
 * **Library Tab Transformation**: The **Library** tab in V2 has been transformed into the **Search** tab in V3.
 * **Tab Placement**: In V2, tabs are positioned at the top but in V3 they are moved to the bottom of the screen.
 * **Sentiment Analysis** **Display**: The **Sentiment Analysis** display is always visible in V3, but it was visible only upon a customer utterance match in V2. V3 has badges, an icon (for example, Positive, Negative and Neutral), and an emoji for every customer utterance. Clicking the badge takes you to the sentiment graph (as was the case in V2).

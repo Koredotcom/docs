@@ -5,7 +5,7 @@ This document provides step-by-step instructions for integrating the Agent AI wi
 Administrators having access to a Five9 Admin Console and with privileges to set up the following configurations:
 
 * Five9 Chat enabled for your instance. Contact your Five9 representative.
-* Kore Administrators having access to [Kore.ai](https://agentassist.kore.ai/){:target="_blank"} Agent AI instance and familiarity with creating and configuring an Agent AI Bot.
+* Kore Administrators having access to [Kore.ai](https://agentassist.kore.ai/){:target="_blank"} Agent AI instance and familiarity with creating and configuring a Kore AI Agent.
 * Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, and Client Secret. Read [this doc](./../../../channels/adding-channels-to-your-bot.md){:target="_blank"} for a walkthrough.
 
 ## Definitions
@@ -38,7 +38,7 @@ Administrators having access to a Five9 Admin Console and with privileges to set
   <tr>
    <td>Client App
    </td>
-   <td>To use any Kore.ai Bot SDKs, a client app must be created to get the authentication credentials to communicate between the Kore.ai bot and Agent AI. 
+   <td>To use any Kore AI Agent SDKs, a client app must be created to get the authentication credentials to communicate between the Kore AI Agent and Agent AI. 
 <p>
 <strong>Note:</strong> Only the default Client App is supported.
    </td>
@@ -56,7 +56,7 @@ Administrators having access to a Five9 Admin Console and with privileges to set
   <tr>
    <td>BotId
    </td>
-   <td>A unique identifier assigned to a bot.
+   <td>A unique identifier assigned to an AI Agent.
    </td>
    <td><strong>Channels > Chat</strong> section of the <strong><a href="https://agentassist.kore.ai">Agent AI</a></strong> configuration portal.
    </td>
@@ -90,7 +90,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
   <tr>
    <td>BotLanguageCode
    </td>
-   <td>The Language configured in the Agent AI Bot.
+   <td>The Language configured in the Kore AI Agent.
    </td>
    <td>Refer to the <a href="https://docs.kore.ai/xo/agentai/agent-experience/supported-languages/">Supported Languages</a> doc to get the language code for all the supported languages.
    </td>
@@ -98,7 +98,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
   <tr>
    <td>Identifiers
    </td>
-   <td>It’s a unique identifier in the Data Table to fetch bot details at run time. It can be a skill name or campaign name.
+   <td>It’s a unique identifier in the Data Table to fetch AI Agent details at run time. It can be a skill name or campaign name.
    </td>
    <td>
    </td>
@@ -115,23 +115,23 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
 
 ## Configurations on the Kore Platform
 
-* [Capture Bot Information in the Kore Data Table](#capture-bot-information-in-the-kore-data-table)
+* [Capture AI Agent Information in the Kore Data Table](#capture-ai-agent-information-in-the-kore-data-table)
 
 ## Configurations on the Five9 Admin Console
 
 * [Create Connector](#create-connector)
 * [Five9 Account Setup to get Incoming Chat Requests](#five9-account-setup-to-get-incoming-chat-requests)
 
-## Capture Bot Information in the Kore Data Table
+## Capture AI Agent Information in the Kore Data Table
 
-Data Tables are used to store skill or campaign-specific bot credentials. Each record of the Kore Data Table represents a unique Five9 skill or campaign and its corresponding bot definitions. 
+Data Tables are used to store skill or campaign-specific AI Agent credentials. Each record of the Kore Data Table represents a unique Five9 skill or campaign and its corresponding AI Agent definitions. 
 
-If a single bot is used for several skills or campaigns, create a separate record for each skill or campaign, separated by commas as the value for the Identifiers, along with the bot details.
+If a single AI Agent is used for several skills or campaigns, create a separate record for each skill or campaign, separated by commas as the value for the Identifiers, along with the AI Agent details.
 
-Kore.ai matches the third-party skill or campaign name with the “Identifiers" credential name in its bot credentials to render the appropriate bot.
+Kore.ai matches the third-party skill or campaign name with the “Identifiers" credential name in its AI Agent credentials to render the appropriate AI Agent.
 
 !!! note
-    Do not enter multiple records with different bot credentials into the Kore Data Table for a single QueueIdentifier.
+    Do not enter multiple records with different AI Agent credentials into the Kore Data Table for a single QueueIdentifier.
 
 ### How to create a New Data Table
 
@@ -162,7 +162,7 @@ Kore.ai matches the third-party skill or campaign name with the “Identifiers" 
         * **Column & Sort Order** – List of columns to be included in the index; you can select multiple columns and specify the sort order (ascending or descending) for each of the selected columns. (Select Identifiers with ascending order.) 
             <img src="../images/indexes-page_3.png" alt="indexes-page" title="indexes-page" style="border: 1px solid gray; zoom:80%;"> 
 
-    * **Bot Assignments** (not applicable)
+    * **AI Agent Assignments** (not applicable)
     * **App Assignments** to let apps access data in this table.
         * Select any app from the displayed list, or click **Create New App** and enter your app name:  
             <img src="../images/create-new-app_4.png" alt="create-new-app" title="create-new-app" style="border: 1px solid gray; zoom:80%;">
@@ -181,7 +181,7 @@ Kore.ai matches the third-party skill or campaign name with the “Identifiers" 
 
 ### Insert data into Data Table
 
-Set up necessary permissions and app assignments and insert bot-specific data into the Data Table.
+Set up necessary permissions and app assignments and insert AI Agent-specific data into the Data Table.
 
 1. Sign in to Kore.ai [botbuilder](http://bots.kore.ai/botbuilder).
 2. Click **Data** > **Apps**.
