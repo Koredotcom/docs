@@ -1,6 +1,6 @@
 # Web & Mobile SDK: Message Formatting and Templates
 
-The Platform SDK allows you to override the default message formatting using markdown and apply templates to display custom-formatted AI Agent messages to users. This topic describes the following:
+The Platform SDK allows you to override the default message formatting using markdown and apply templates to display custom-formatted bot messages to users. This topic describes the following:
 
 * Supported template types
 * Template implementation details

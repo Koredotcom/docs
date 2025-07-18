@@ -2,7 +2,7 @@
 
 Kore.ai offers Bots SDKs as a set of platform-specific client libraries that provide a quick and convenient way to get the Platform capability into custom applications and provide you with more control over the AI Agent you build.
 
-With just a few lines of code, you can embed our Kore.ai widget into your applications to enable end-users to interact with their applications using Natural Language Processing.
+With just a few lines of code, you can embed our Platforms widget into your applications to enable end-users to interact with their applications using Natural Language Processing.
 
 Using our BotKit SDK that resides on your servers and enables interaction between the user and the Platform, you can intercept and customize messages and influence the conversation flow.
 
@@ -22,9 +22,9 @@ Bot SDKs are available for the following platforms:
     In Github, you can select a version-specific branch from the top-left corner.
 
 
-To get started with Kore.ai Bot SDKs, you must have an application to embed the SDK into, host a JWT generation web service, and register your app in the Platform. For more information, see [SDK Security](../sdk-security).
+To get started with Bot SDKs, you must have an application to embed the SDK into, host a JWT generation web service, and register your app in the Platform. For more information, see [SDK Security](../sdk-security).
 
-You can also try out our tutorial using a Kore.ai sample AI Agent, a test application, and configuring your local host server for JWT generation. For more information, see the [Kore.ai Web SDK Tutorial](../tutorials/web-sdk).
+You can also try out our tutorial using a sample AI Agent, a test application, and configuring your local host server for JWT generation. For more information, see the [Web SDK Tutorial](../tutorials/web-sdk).
 
 ## BotKit SDK
 

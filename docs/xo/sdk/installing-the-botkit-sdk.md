@@ -1,10 +1,10 @@
 # Installing the BotKit SDK
 
-The Kore.ai BotKit SDK runs as a Node.js application. You can add your own reverse proxy, firewall, and load balancer to meet your functional requirements for availability, scalability, and performance.
+The Platform BotKit SDK runs as a Node.js application. You can add your own reverse proxy, firewall, and load balancer to meet your functional requirements for availability, scalability, and performance.
 
 This section provides a high-level overview of BotKit SDK installation and configuration.
 
-For a detailed end-to-end tutorial on installation and setup using our Kore.ai Sample AI Agent, see this [Kore.ai BotKit SDK Tutorial](../tutorials/flight-search-sample-bot).
+For a detailed end-to-end tutorial on installation and setup using our Platform Sample AI Agent, see this [BotKit SDK Tutorial](../tutorials/flight-search-sample-bot).
 
 To install the BotKit SDK, you will need to:
 
@@ -30,7 +30,7 @@ For more information, see [SDK App Registration](../app-registration).
 
 ## Installation and Setup
 
-The Kore.ai BotKit SDK libraries can be downloaded from the Github repository at:
+The Platform BotKit SDK libraries can be downloaded from the Github repository at:
 
 [https://github.com/Koredotcom/BotKit](https://github.com/Koredotcom/BotKit)
 

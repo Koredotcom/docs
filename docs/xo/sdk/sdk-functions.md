@@ -1,6 +1,7 @@
 # Functions for the BotKit SDK
 
-The Kore.ai BotKit SDK provides functions that you can use for greater control of your AI Agent and provide a better user experience. \
+The Platform BotKit SDK provides functions that you can use for greater control of your AI Agent and provide a better user experience.
+
 The following functions are supported by the BotKit SDK.
 
 
