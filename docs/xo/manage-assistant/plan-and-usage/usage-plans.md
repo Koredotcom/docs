@@ -98,7 +98,7 @@ Select the wire transfer payment mode while adding funds. A wire transfer is a f
  
   <img src="../images/up(12).png" alt="order details" title="Order details" style="border: 1px solid gray;"/>
 
-* **Ability to Add Funds during pending Wire Transfer**: A Wire Transfer process may take four to eight days to complete. The paid credits are loaded only after the transfer is successful. If the VA runs out of balance and your Wire Transfer order is still in ‘Pending’ status, you can add funds using an alternative payment method like a credit card or PayPal.
+* **Ability to Add Funds during pending Wire Transfer**: A Wire Transfer process may take four to eight days to complete. The paid credits are loaded only after the transfer is successful. If the agent runs out of balance and your Wire Transfer order is still in ‘Pending’ status, you can add funds using an alternative payment method like a credit card or PayPal.
 
 
 ### Subscribe and Modify the Plan
