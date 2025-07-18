@@ -1,11 +1,10 @@
-
 # Quality AI Setup Guide
 
 Get started on the Quality AI module: Learn how to set up, configure, and use the Quality AI module.
 
 Steps to follow the Quality AI setup for third-party integration:
 
-1. Access the  **Quality AI** (QM) by navigating to the **Contact Center AI** > **User Management** > **Role Management** > **New Role** > **Other Modules**. 
+1. Access  **Quality AI** by navigating to the **Contact Center AI** > **User Management** > **Role Management** > **New Role** > **Other Modules**. 
 (Only the app owner has access to [Role Management](https://docs.kore.ai/xo/user-management/role-management/){:target=”_blank”}).
 
 2. Assign the relevant roles (Supervisor role) through User Management or configure the custom roles using the QM permission provided under the Other Modules section for new role creation under Role Management. See [Custom Role](https://docs.kore.ai/xo/user-management/role-management/#custom-role){:target=”_blank”}.
