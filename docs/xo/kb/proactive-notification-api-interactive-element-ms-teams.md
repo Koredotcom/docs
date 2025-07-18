@@ -24,7 +24,7 @@ The **message** component includes the following details:
 
 
 ```
-curl --location 'https://bots.kore.ai/api/public/bot/{{BotID}}/notify' \
+curl --location 'https://bots.kore.ai/api/public/bot/{{AppID}}/notify' \
 --header 'Content-Type: application/json' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --data-raw '{

@@ -626,7 +626,7 @@ This section describes the various error code responses sent to the Kore.ai XO P
   <tr>
    <td>1005
    </td>
-   <td>When a user closes the chat window or reconnects with the bot.
+   <td>When a user closes the chat window or reconnects with the AI Agent.
    </td>
   </tr>
   <tr>
@@ -638,7 +638,7 @@ This section describes the various error code responses sent to the Kore.ai XO P
   <tr>
    <td>1007
    </td>
-   <td>When VA finds non-utf-8 kind of messages instead of text messages.
+   <td>When AI Agent finds non-utf-8 kind of messages instead of text messages.
    </td>
   </tr>
   <tr>

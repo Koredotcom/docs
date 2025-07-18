@@ -46,7 +46,7 @@ To update an already enabled language for an assistant, follow the below steps:
 
 1. Go to **App Settings > Configurations > Language Management**.
 2. The platform will display all the languages under the **Standard Languages** section.
-3. Click on the language that is already enabled in the VA. The _Manage Language_ dialog appears, here you can:
+3. Click on the language that is already enabled in the AI Agent. The _Manage Language_ dialog appears, here you can:
 
     a. **Update the NLU language** – Updating the NLU language will need training for the AI Agent again.
 
@@ -59,7 +59,7 @@ To update an already enabled language for an assistant, follow the below steps:
 
 !!! note
 
-    - After you have configured a new language, to make the new language work, you must re-publish the VA. Until then, the AI Agent continues to function with the previously published languages.  
+    - After you have configured a new language, to make the new language work, you must re-publish the AI Agent. Until then, the AI Agent continues to function with the previously published languages.  
     - The default Synonym library is available only for English, French, Spanish, German, and Chinese languages. However, you can add custom synonyms for any language.  
     - **Tagalog Language Support—** Tagalog is supported only when it is the sole language enabled in the App. Since it uses the English alphabet, the system cannot reliably detect it when other languages are enabled in the same App.
 
@@ -85,7 +85,7 @@ Languages can be enabled or disabled by going to **Build > Configurations > Lang
 
 Once you have configured and enabled a language you can:
 
-  * Disable or deactivate a language that is previously enabled for the VA. The actual language-specific data that has been added while enabling the language will continue to exist in the AI Agent even after disabling the language. Disabling would prevent the users from talking  to the assistant in that language (can be viewed in the AI Agent export copy)
+  * Disable or deactivate a language that is previously enabled for the AI Agent. The actual language-specific data that has been added while enabling the language will continue to exist in the AI Agent even after disabling the language. Disabling would prevent the users from talking  to the assistant in that language (can be viewed in the AI Agent export copy)
   * If a language is disabled you can enable it again, since the data is preserved, you need not enter all the details.
 
 !!! note

@@ -1293,7 +1293,7 @@ Before installing office equipment, it is essential to verify that your office e
 
 Refer to the [Kore Cloud requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for the minimum technical requirements to run the application.
 
-  !!! Note
+!!! Note
 
     To ensure successful usage of Kore Cloud, please make sure to configure the necessary ports and services on your company firewall. Complete details can be found in the "Firewall Requirements" section within the above-provided link.
 

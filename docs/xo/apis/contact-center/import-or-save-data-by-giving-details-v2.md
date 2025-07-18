@@ -1,6 +1,6 @@
 # Import data by accountId and orgId (v2)
 
-To save/import data, which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience), by giving details with the account Id and org Id.
+To save/import data, which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience), by giving details with the `accountId` and `orgId`.
 
 !!! Note
 
