@@ -12,7 +12,7 @@ This section outlines the essential components, credentials, and permissions req
         * Configured to receive desktop chats
     * Agent AI Account
         * Enabled Web/Mobile channel
-        * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **agent ai** > **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
+        * Required AI Agent credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **agent ai** > **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
 * Roles and Permissions:
     * ServiceNow: Admin Role
     * Kore XO Platform (Optional): Required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}.
@@ -86,7 +86,7 @@ Application Name: **Agent AI by kore.ai**
 
 This section details the steps to set up the Agent AI app configuration.
 
-#### Add Agent AI Bot configuration in the ServiceNow Custom Table
+#### Add Kore AI Agent configuration in the ServiceNow Custom Table
 
 1. Change your ServiceNow scope from **Global** to **Agent AI by kore.ai**.
 2. Go to **All** > **Filter navigator**, and search **Kore_configuration**> **kore-config-customtable**.
@@ -147,7 +147,7 @@ Sample v2 URL: https\://<domain-name\>.kore.ai
 
 ### Step 4: Kore XO Configuration (Optional)
 
-This step is required if the chat client is routed through the Kore XO bot builder, and post agent transfer, it lands into the ServiceNow Agent workspace. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities){:target=”_blank”}.
+This step is required if the chat client is routed through the Kore XO AI Agent builder, and post agent transfer, it lands into the ServiceNow Agent workspace. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities){:target=”_blank”}.
 
 For passing the language code dynamically from Kore XO to the Agent AI widget inside ServiceNow, add the following javascript code inside a script node of Kore XO dialog task before the Agent Transfer node of ServiceNow. Without this script node, the language code will not be automatically sent to the Agent AI widget.
 
@@ -193,7 +193,7 @@ With the multibot solution in ServiceNow, you can configure multiple Agent AI bo
 
 Obtain the update set .xml file from the Kore representative. Once you successfully commit the update set, follow the below steps:
 
-#### Add Agent AI Bot Configuration in the ServiceNow Custom Table
+#### Add Kore AI Agent Configuration in the ServiceNow Custom Table
 
 1. Change your **ServiceNow** scope from **Global** to **Agent AI by kore.ai**.
 2. Go to **All** > **Filter** **navigator**, and search **Kore_configuration** > **kore-config-customtable**. 
@@ -201,7 +201,7 @@ Obtain the update set .xml file from the Kore representative. Once you successfu
 3. Click **New**.
 4. Add the **AgentAssist URL**, **Bot Id**, **Client Id**, **Client Secret**, **Language Code**, and **Queue Name** in the table fields.
     1. **Language Code**: To select a language other than English, select the **language code** from the dropdown list. The default language code is English (En).
-    2. **Queue Name**: To configure the same Agent AI bot credentials for multiple queues, use comma-separated queue names (for example, customer_queue, sales_queue, service_queue).
+    2. **Queue Name**: To configure the same Kore AI Agent credentials for multiple queues, use comma-separated queue names (for example, customer_queue, sales_queue, service_queue).
 
         !!! note
             **Client Secret** and **AAToken** fields are masked for security reasons. The **AAtoken** field must be empty for the widget to load, it automatically populates at the runtime.

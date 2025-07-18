@@ -1,7 +1,7 @@
 
-# DialogGPT Module
+# DialogGPT
 
-DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from virtual assistants. Using a powerful combination of text embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. 
+DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from an AI Agents. Using a powerful combination of text embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. 
 
 !!! note
 
@@ -21,9 +21,9 @@ DialogGPT is an intelligent, agentic orchestration engine that powers natural co
 
 ## Key Benefits
 
-* **Improved Customer Experience**: Customers enjoy more natural conversations with virtual assistants who understand the context and can simultaneously handle multiple requests.
+* **Improved Customer Experience**: Customers enjoy more natural conversations with an AI Agents who understand the context and can simultaneously handle multiple requests.
 * **Greater Accuracy**: The system better understands what customers request, even when requests are complex or industry-specific.
-* **Lower Costs**: It reduces manual effort in building, training, and maintaining virtual agents; it increases the self-service rate, minimizing transfers to human agents and lowering operational costs.
+* **Lower Costs**: It reduces manual effort in building, training, and maintaining an AI Agents; it increases the self-service rate, minimizing transfers to human agents and lowering operational costs.
 
 
 ## How DialogGPT Works

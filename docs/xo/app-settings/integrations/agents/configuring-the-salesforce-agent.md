@@ -1,24 +1,20 @@
 # Configuring the Salesforce Agent
 
-Salesforce is used for various needs of different teams in an organization, such as marketing, sales, commerce, service, and IT work as one from anywhere using the chat module. The Platform’s Salesforce Agent integration allows you to seamlessly hand off the virtual assistant conversations to your live agents on Salesforce.
+Salesforce is used for various needs of different teams in an organization, such as marketing, sales, commerce, service, and IT work as one from anywhere using the chat module. The Platform’s Salesforce Agent integration allows you to seamlessly hand off the AI Agent conversations to your live agents on Salesforce.
 
 Use the configuration steps below as general guidelines to enable the Salesforce Agent integration. You may notice minor differences based on the version of Salesforce you are using.
 
 
 ## Overview
 
-Kore.ai’s Virtual Assistant (VA) serves as the central point of interaction for the users. The VA facilitates communication and interaction between the user and the Salesforce agent using the chat module. In addition to its regular capabilities, the VA acts as an intermediary between the users and the Salesforce agents to hand over conversations seamlessly. The VA also allows you to integrate with the Salesforce platform.
-
-
-
-
+Kore.ai’s agent serves as the central point of interaction for the users. TheAI Agent facilitates communication and interaction between the user and the Salesforce agent using the chat module. In addition to its regular capabilities, the AI Agent acts as an intermediary between the users and the Salesforce agents to hand over conversations seamlessly. The AI Agent also allows you to integrate with the Salesforce platform.
 
 ## Configuration
 
 The Platform supports the following Salesforce integration methods for agent transfer:
 
 
-* **Live Chat (Legacy)**: This method enables agent transfer using Salesforce’s traditional live chat interface. It suits users with existing Live Chat setups and offers real-time messaging between virtual assistants and human agents.
+* **Live Chat (Legacy)**: This method enables agent transfer using Salesforce’s traditional live chat interface. It suits users with existing Live Chat setups and offers real-time messaging between AI Agent and human agents.
 * **Messaging for In-App and Web (MIAW)**: This is Salesforce’s latest messaging service, built for seamless and persistent conversations across in-app and web channels. MIAW offers an enhanced customer experience and is the default option for new integrations.
 
 
@@ -122,7 +118,7 @@ To retrieve the Button ID, follow these steps:
 #### Step 6: Enable the Salesforce Agent
 
 1. Log in to the Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
-2. Select a Virtual Assistant for which you want to configure the Salesforce agent.
+2. Select an AI Agent for which you want to configure the Salesforce agent.
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** and click the **Salesforce**.
 
    
@@ -139,23 +135,23 @@ To retrieve the Button ID, follow these steps:
 
     !!! Note
     
-        This option is available only when multiple agents are configured for your VA.
+        This option is available only when multiple agents are configured for your AI Agent.
 
 
-8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 
     <img src="../images/configuring-the-salesforce-agent-img13.png" alt="Map channels to use SF agent" title="Map channels to use SF agent" style="border: 1px solid gray;zoom:80%;"/>
 
 9. After mapping channels, click **Done**.
 10. Click **Save** to enable the Salesforce agent.
-11. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
+11. Publish the VA. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 #### Execution
 
 This section helps you verify how the conversations from the Platform are being handed over to the Salesforce agent after enabling it.
 
-To verify the data exchange between Kore.ai’s VA and Salesforce agent, follow these steps:
+To verify the data exchange between Kore.ai’s agent and Salesforce agent, follow these steps:
 
 1. Go to the Salesforce Chat Console and launch the Live Agent that you created in **Step 1**.
 
@@ -171,14 +167,14 @@ To verify the data exchange between Kore.ai’s VA and Salesforce agent, follow 
 
     <img src="../images/configuring-the-salesforce-agent-img15.png" alt="Open chat console" title="Open chat console" style="border: 1px solid gray;zoom:80%;"/>
 
-4. Open a virtual assistant for which you have enabled the Salesforce agent.
+4. Open an AI Agent for which you have enabled the Salesforce agent.
 5. Create a new **Agent Transfer Node** task. For example, create a **Talk to Live Agent** task with the **LiveChats** node and configure it to use the Salesforce agent. For more information, see [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node/){:target="_blank"}.
 
     <img src="../images/configuring-the-salesforce-agent-img16.png" alt="New Agent Transfer Node task" title="New Agent Transfer Node task" style="border: 1px solid gray;zoom:80%;"/>
 
-6. Click the **Talk to Bot** icon to launch the VA and enter **Help**.
+6. Click the **Talk to Bot** icon to launch the AI Agent and enter **Help**.
 7. Once you invoke the agent transfer dialog, the Salesforce Chat Console receives a notification alert.
-8. When a user initiates the chat from the VA, it transfers the conversation to the Salesforce agent and sends a message to the user. Agent receives a notification about this on Salesforce.
+8. When a user initiates the chat from the AI Agent, it transfers the conversation to the Salesforce agent and sends a message to the user. Agent receives a notification about this on Salesforce.
 9. Now, the connection between the Salesforce agent and the user has been established, and the conversation continues.  
 <img src="../images/configuring-the-salesforce-agent-img17.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
 
@@ -256,7 +252,7 @@ Under Company Information, locate the field Salesforce.com Organization ID.
 #### Step 5: Enable the Salesforce Agent
 
 1. Log in to the Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
-2. Select a Virtual Assistant for which you want to configure the Salesforce agent.
+2. Select an AI Agent for which you want to configure the Salesforce agent.
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** and click the **Salesforce**.
 
    
@@ -271,7 +267,7 @@ Under Company Information, locate the field Salesforce.com Organization ID.
 
     !!! Note
     
-        This option is available only when multiple agents are configured for your VA.
+        This option is available only when multiple agents are configured for your AI Agent.
 
 
 8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
@@ -280,7 +276,7 @@ Under Company Information, locate the field Salesforce.com Organization ID.
 
 9. After mapping channels, click **Done**.
 10. Click **Save** to enable the Salesforce agent.
-11. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
+11. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 

@@ -1,6 +1,6 @@
 # Feedback Survey
 
-The Kore.ai XO Platform allows you to design and create feedback surveys for products, services, and overall experiences using out-of-the-box templates on the web and mobile channels. You can configure a Virtual Assistant to launch these surveys at a certain point in a conversation or at the end of a conversation (when the _end-of-conversation_ event is triggered). The **NPS**, **CSAT**, and **Like/Dislike** survey types are currently supported.
+The Kore.ai XO Platform allows you to design and create feedback surveys for products, services, and overall experiences using out-of-the-box templates on the web and mobile channels. You can configure an AI Agent to launch these surveys at a certain point in a conversation or at the end of a conversation (when the _end-of-conversation_ event is triggered). The **NPS**, **CSAT**, and **Like/Dislike** survey types are currently supported.
 
 !!! Key Feature Highlights
 
@@ -78,7 +78,7 @@ Known as the **_New Promoter Score_**, this is a standard customer experience me
 
 ### CSAT Score Categorization
 
-**CSAT** or **Customer SATisfaction** is a customer experience metric that measures or quantifies how happy the customer is with a Virtual Assistant interaction. The customer is asked to rate on a **five-point scale**, **1** meaning very satisfied and **5** meaning very unsatisfied, for a survey question like “_How satisfied were you with the conversation?_” The response score is mapped to the relevant category as shown below:
+**CSAT** or **Customer SATisfaction** is a customer experience metric that measures or quantifies how happy the customer is with an agent interaction. The customer is asked to rate on a **five-point scale**, **1** meaning very satisfied and **5** meaning very unsatisfied, for a survey question like “_How satisfied were you with the conversation?_” The response score is mapped to the relevant category as shown below:
 
 
 <table>

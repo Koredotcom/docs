@@ -11,9 +11,9 @@ This flexible system gives developers complete control over conversation managem
 It allows you to include the types of conversations that you want DialogGPT to handle in user interactions. The following are the supported conversation types. Dialogs and FAQs are enabled by default and can not be disabled.
 
 
-* **Dialogs**: Dialogs are the virtual assistant's building blocks, enabling it to perform tasks and interact with users.
+* **Dialogs**: Dialogs are the AI Agents building blocks, enabling it to perform tasks and interact with users.
 * **FAQs**: Pre-defined questions and answers that provide quick and informative responses to common inquiries.
-* **Conversation Intents**: Common phrases in user interactions with the virtual assistant.
+* **Conversation Intents**: Common phrases in user interactions with An AI Agent.
 * **Knowledge from Search AI**: Deliver answers directly from enterprise data sources for users’ questions.
 
 To manage the conversation types, click **Settings**, turn the toggle on/off to enable/disable the conversation type and click **Save**.
@@ -54,7 +54,7 @@ The following is the intent event fulfillment behavior.
 * **Ambiguous Intents Identified**: Define the flow when ambiguous intent is identified. You can configure how the system should handle such situations.
     * Present Qualified Intents (Default): Display a list of intents for the user to select or respond to. The task chosen (Dialog, FAQ, or Answer) is triggered.
     * Execute Dialog task: Select the dialog task to execute.
-* **Answer Generation**: This event handles user inputs that need answers generated from Search AI documents. When Knowledge from Search AI is enabled in DialogGPT, the system activates the Answer Generation event and adds the default event handler to the bot.
+* **Answer Generation**: This event handles user inputs that need answers generated from Search AI documents. When Knowledge from Search AI is enabled in DialogGPT, the system activates the Answer Generation event and adds the default event handler to the App.
 
 * **Multiple Intents**: Define Multi-Intent fulfillment logic when the Conversation Orchestrator detects multiple intents in a user’s utterance. Users can modify the predefined Multi-Intent fulfillment dialog, gaining greater control and flexibility. By default, the platform executes the predefined dialog (Multiintent) to handle the Multi-Intent event.
 

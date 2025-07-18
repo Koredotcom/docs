@@ -1,6 +1,6 @@
 # Web Socket Connect & RTM
 
-Kore.ai SDK libraries use the WebSocket channel to communicate with the Kore.ai XO Platform. When using the Kore.ai XO Platform SDKs, only the JWT token must be generated and passed to the client SDK.
+Kore.ai SDK libraries use the WebSocket channel to communicate with the Platform. When using the Kore.ai XO Platform SDKs, only the JWT token must be generated and passed to the client SDK.
 
 ## Initializing
 
@@ -638,7 +638,7 @@ This section describes the various error code responses sent to the Kore.ai XO P
   <tr>
    <td>1007
    </td>
-   <td>When VA finds non-utf-8 kind of messages instead of text messages.
+   <td>When bot finds non-utf-8 kind of messages instead of text messages.
    </td>
   </tr>
   <tr>

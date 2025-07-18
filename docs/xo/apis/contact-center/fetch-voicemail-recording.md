@@ -4,7 +4,7 @@ This API facilitates the downloading of voicemail recordings. The API provides a
 
 | Method       | GET |
 |-------------|-----|
-| Endpoint    | `https://{{host}}/api/public/bot/{{:streamId}}/voicemail` |
+| Endpoint    | `https://{{host}}/api/public/bot/{{botId}}/voicemail?sessionId={{sessionId}}&transcription=true` |
 | Content Type | `application/json` |
 | Authorization | `auth: {{JWT}}`  <br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | API Scope   | SmartAssist Voicemail |
@@ -14,7 +14,7 @@ This API facilitates the downloading of voicemail recordings. The API provides a
 | PARAMETER | DESCRIPTION | TYPE |
 |-----------|-------------|------|
 | host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| botId     | botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Query Parameters
 
@@ -26,7 +26,7 @@ This API facilitates the downloading of voicemail recordings. The API provides a
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/api/public/bot/st-b110e148-7428-5295-960b-099e8167xxxx/voicemail?sessionId=67aa38026e199c8f470exxxx&transcription=true' \
+curl --location 'https://{{host}}/api/public/bot/{{botId}}/voicemail?sessionId=67aa38026e199c8f470exxxx&transcription=true' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTQ0YTIzOTNmLTk4MTEtNWY3Mi04NGUyLTM0YTY4MzI4N2I1ZCJ9.kW9tN1gTUW7QjFrHvwBp-EcRu8QhBK223Xi2NgZxxxx' \
 --data ''
 ```
@@ -39,7 +39,7 @@ curl --location 'https://{{host}}/api/public/bot/st-b110e148-7428-5295-960b-099e
    "voicemail recording": [
        {
            "fileName": "voicemail_67aa38026e199c8f470exxxx.wav",
-           "fileUrl": "https://uat-agentassist-az.korebots.com/api/getMediaStream/smartassistrecording/UAT/o-2b41857b-a1cb-5862-8faf-e3d99c3axxxx/st-b110e148-7428-5295-960b-099e8167xxxx/2025/10-02-2025/f-71f45a0e-da5a-5989-8a73-341a199bxxxx.wav?e=1739359482&n=3757551799&s=IldYeks0dFNacGtWbjJicGpNNU5KL0ZNUWtWZVhUQm9yelFMeVk2SDdkcWM9xxxx"
+           "fileUrl": "https://agentassist-az.korebots.com/api/getMediaStream/smartassistrecording/UAT/o-2b41857b-a1cb-5862-8faf-e3d99c3axxxx/st-b110e148-7428-5295-960b-099e8167xxxx/2025/10-02-2025/f-71f45a0e-da5a-5989-8a73-341a199bxxxx.wav?e=1739359482&n=3757551799&s=IldYeks0dFNacGtWbjJicGpNNU5KL0ZNUWtWZVhUQm9yelFMeVk2SDdkcWM9xxxx"
        }
    ],
    "transcriptions": [

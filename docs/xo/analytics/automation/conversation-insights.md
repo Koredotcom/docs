@@ -1,6 +1,6 @@
 # Conversation Insights
 
-Once a virtual assistant is published, it is important to understand and analyze its performance. Kore.ai XO platform provides various dashboards; one of them being NLP Insights that captures details like Intent Found, Intent Not Found, Unhandled Utterances, and so on. However, to categorize the utterances as True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN), you need to go through all the utterances across multiple tabs in NLP Insights. There could be millions of utterances that a bot designer needs to review, which could be tedious and time-consuming.
+Once an AI Agent is published, it is important to understand and analyze its performance platform provides various dashboards; one of them being NLP Insights that captures details like Intent Found, Intent Not Found, Unhandled Utterances, and so on. However, to categorize the utterances as True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN), you need to go through all the utterances across multiple tabs in NLP Insights. There could be millions of utterances that a AI Agents designer needs to review, which could be tedious and time-consuming.
 
 **To view the Conversation Insights dashboard, follow the steps**: 
 
@@ -11,7 +11,7 @@ Once a virtual assistant is published, it is important to understand and analyze
 2. Click the **Conversation Insights dashboard** under the **Automation** section of the **Analytics** panel. The **Conversation Insights dashboard** is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
 
-The Conversation Insights in the Kore.ai XO Platform groups the utterances in a cluster, based on their semantic meaning and provides a name to each of these groups, which avoids the need to analyze all the utterances of the cluster. Based on the utterances that are identified or unidentified, these cluster groups can be part of one or more intents. Below is a snapshot of where intents and utterance groups are plotted in a treemap. For more information on TP, TN, FP, and FN scenarios, see Appendix.
+The Conversation Insights in the Platform groups the utterances in a cluster, based on their semantic meaning and provides a name to each of these groups, which avoids the need to analyze all the utterances of the cluster. Based on the utterances that are identified or unidentified, these cluster groups can be part of one or more intents. Below is a snapshot of where intents and utterance groups are plotted in a treemap. For more information on TP, TN, FP, and FN scenarios, see Appendix.
 
 
 <img src="../images/conversation-insights-1.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
@@ -19,7 +19,7 @@ The Conversation Insights in the Kore.ai XO Platform groups the utterances in a 
 
 !!! note
 
-    The Kore.ai platform groups together all the similar utterances to form a cluster and gives a name to each created cluster. Conversation Insights allows the bot designers to identify FPs, and FNs, create new intents, and perform many more actions. Cluster labeling is crucial in decision-making in such scenarios.
+    The Kore.ai platform groups together all the similar utterances to form a cluster and gives a name to each created cluster. Conversation Insights allows the AI Agents designers to identify FPs, and FNs, create new intents, and perform many more actions. Cluster labeling is crucial in decision-making in such scenarios.
 
 
 The utterances in the platform are grouped using an algorithm to create clusters. The most frequently occurring **subject-verb-object** is identified to create a label for the cluster.
@@ -92,7 +92,7 @@ On the Conversation Insights page, the number of intents to be displayed is adju
 
 ### Grid View
 
-In the grid view, you can view all the intent and cluster details in a tabular format. This view is helpful when there is a large number of intents in the VA, and you can easily navigate through different intents and clusters.
+In the grid view, you can view all the intent and cluster details in a tabular format. This view is helpful when there is a large number of intents in the AI Agents, and you can easily navigate through different intents and clusters.
 
 The details **Intent Name, Cluster Count**, and **Utterance Count** are displayed as shown in the following screenshot.
 
@@ -103,7 +103,7 @@ Expand the Intent Name to see more details as follows:
 
 * **Clusters**: The clusters available for the specific intent.
 * **Utterance Count**: The utterance count of each cluster.
-* **Details**: The availability of the cluster in other intents of the VA.
+* **Details**: The availability of the cluster in other intents of the AI Agents.
 
 <img src="../images/conversation-insights-8.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
 
@@ -157,7 +157,7 @@ The **Intent View** page displays all the available clusters, utterances, and ot
 
 ## Utterance Validation
 
-The utterances grouped in the clusters can be validated and trained for an existing intent or a new intent, based on the requirements. Training the utterances and discovering new intents improves the performance of your virtual assistant.
+The utterances grouped in the clusters can be validated and trained for an existing intent or a new intent, based on the requirements. Training the utterances and discovering new intents improves the performance of your AI Agents.
 
 
 
@@ -315,7 +315,7 @@ The status of all the utterances is **Yet to review** by default. You can change
 
 Dataset Filters
 
-Once a VA is published, the Kore.ai XO platform provides an option to filter the datasets on the Conversation Insights dashboard, to analyze the data of the multiple conversations.
+Once an AI Agent is published, the platform provides an option to filter the datasets on the Conversation Insights dashboard, to analyze the data of the multiple conversations.
 On the dashboard, various filter criteria like **Date, Conversation Type**, **Conversation Status**, and in **More Filters** drop-down **Intent Type, Utterance Status**, and so on are available for filtering.
 
 <img src="../images/data-set-filters.png" alt="Data Set Filters" title="Data Set Filters" style="border: 1px solid gray; zoom:60%;">
@@ -329,7 +329,7 @@ This section provides more details about TP, TN, FP, and FN scenarios with examp
 
 **True Positive**
 
-True Positives (TP) refer to instances where the virtual assistant correctly identifies the intent of an utterance. For example, if the user says “What’s the weather today?”, and the virtual assistant correctly identifies the intent as “get_weather”, this would be a True Positive.
+True Positives (TP) refer to instances where the AI Agents correctly identifies the intent of an utterance. For example, if the user says “What’s the weather today?”, and the AI Agents correctly identifies the intent as “get_weather”, this would be a True Positive.
 In this example the intent is correctly mapped to **Check Balance**, hence it is a true positive.
 
 
@@ -339,7 +339,7 @@ In this example the intent is correctly mapped to **Check Balance**, hence it is
 
 **True Negative**
 
-True Negatives (TN) refer to instances where the virtual assistant correctly identifies that an utterance did not match any of the defined intents. For example, if the user says “I’m not sure what you mean”, and the virtual assistant correctly identifies that this does not match any of the defined intents, this would be a True Negative.
+True Negatives (TN) refer to instances where the AI Agents correctly identifies that an utterance did not match any of the defined intents. For example, if the user says “I’m not sure what you mean”, and the AI Agents correctly identifies that this does not match any of the defined intents, this would be a True Negative.
 In the following example, the user utterance “Extremely Likely” did not match with any defined intent and is categorized as Unidentified intent.
 
 
@@ -349,7 +349,7 @@ In the following example, the user utterance “Extremely Likely” did not matc
 
 **False Positive**
 
-False Positives (FP) refer to instances where the virtual assistant incorrectly identifies the intent of an utterance. For example, if the user provides his bank account name, and the virtual assistant incorrectly identifies the intent as “Close Account”, this would be a False Positive.
+False Positives (FP) refer to instances where the AI Agents incorrectly identifies the intent of an utterance. For example, if the user provides his bank account name, and the AI Agents incorrectly identifies the intent as “Close Account”, this would be a False Positive.
 
 
 <img src="../images/false-positive.png" alt="False Positive" title="False Positive" style="border: 1px solid gray; zoom:80%;">
@@ -358,7 +358,7 @@ False Positives (FP) refer to instances where the virtual assistant incorrectly 
 
 **False Negative**
 
-False Negatives (FN) refer to instances where the virtual assistant incorrectly identifies that an utterance did not match any of the defined intents. For example, if the user says “What’s the weather today?”, and the virtual assistant incorrectly identifies that this does not match any of the defined intents, this would be a False Negative.
+False Negatives (FN) refer to instances where the AI Agents incorrectly identifies that an utterance did not match any of the defined intents. For example, if the user says “What’s the weather today?”, and the AI Agents incorrectly identifies that this does not match any of the defined intents, this would be a False Negative.
 In this example, the “create account” utterance is wrongly mapped as an Unidentified intent and hence would be False Negative.
 
 

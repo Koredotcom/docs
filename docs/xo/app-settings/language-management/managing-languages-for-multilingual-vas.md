@@ -1,10 +1,10 @@
-# Managing Languages for Multilingual VAs
+# Managing Languages for Multilingual AI Agent
 
 You can enable a language for an existing assistant or update the language configuration for an existing assistant. Besides these functionalities, this article also shows you how to switch between languages and how to enable or disable a language.
 
-## Adding a language to a Virtual Assistant
+## Adding a language to an AI Agent
 
-The default App language is **English**. Follow these steps to add a new language for your virtual assistant:
+The default App language is **English**. Follow these steps to add a new language for your AI Agent:
 
 1. Go to **App Settings > Configurations > Language Management**.
 2. On the Language Management page, in the **_Standard Languages_** section, click the **+ Add Language** to add languages.  
@@ -38,7 +38,7 @@ The default App language is **English**. Follow these steps to add a new languag
 5. Once you have configured translations, click **Enable** to add/enable a new language for the assistant.
 
 
-## Updating a language for an existing Virtual Assistant
+## Updating a language for an existing AI Agent
 
 If you want to enable/disable input translation, change the NLU language of the already enabled language for an assistant or modify the dialog prompts then you can use the update feature. 
 
@@ -46,9 +46,9 @@ To update an already enabled language for an assistant, follow the below steps:
 
 1. Go to **App Settings > Configurations > Language Management**.
 2. The platform will display all the languages under the **Standard Languages** section.
-3. Click on the language that is already enabled in the VA. The _Manage Language_ dialog appears, here you can:
+3. Click on the language that is already enabled in the AI Agent. The _Manage Language_ dialog appears, here you can:
 
-    a. **Update the NLU language** – Updating the NLU language will need training for the virtual assistant again.
+    a. **Update the NLU language** – Updating the NLU language will need training for the AI Agent again.
 
     b. **Update the dialog prompts** – You can update the language pack file and upload it to update the dialog prompts.
 
@@ -59,21 +59,21 @@ To update an already enabled language for an assistant, follow the below steps:
 
 !!! note
 
-    - After you have configured a new language, to make the new language work, you must re-publish the VA. Until then, the VA continues to function with the previously published languages.  
+    - After you have configured a new language, to make the new language work, you must re-publish the AI Agent. Until then, the AI Agent continues to function with the previously published languages.  
     - The default Synonym library is available only for English, French, Spanish, German, and Chinese languages. However, you can add custom synonyms for any language.  
-    - **Tagalog Language Support—** Tagalog is supported only when it is the sole language enabled in the bot. Since it uses the English alphabet, the system cannot reliably detect it when other languages are enabled in the same bot.
+    - **Tagalog Language Support—** Tagalog is supported only when it is the sole language enabled in the App. Since it uses the English alphabet, the system cannot reliably detect it when other languages are enabled in the same App.
 
 
 ## Switching Languages 
 
-If you have configured multiple languages for a virtual assistant, you can switch the language to configure the virtual assistant from the top right corner (language dropdown) from within any area of your VA. The dropdown will display all the other supported languages with the corresponding NLU model that is configured for the language. 
+If you have configured multiple languages for an AI Agent, you can switch the language to configure the AI Agent from the top right corner (language dropdown) from within any area of your AI Agent. The dropdown will display all the other supported languages with the corresponding NLU model that is configured for the language. 
 
 <img src="../images/mlva-img12-switch-language-1.png" alt="Switch language" title="Switch language" style="border: 1px solid gray;zoom:50%;"/>  
 
 
 !!! note
 
-    The language dropdown will display the Bot Language and NLU language for the languages where the Bot Language is not equal to NLU language. If the Bot Language and the NLU language are the same then the language drop down will display only the Bot Language.
+    The language dropdown will display the App Language and NLU language for the languages where the App Language is not equal to NLU language. If the App Language and the NLU language are the same then the language drop down will display only the App Language.
 
 
 ## Disabling/Enabling Languages
@@ -85,7 +85,7 @@ Languages can be enabled or disabled by going to **Build > Configurations > Lang
 
 Once you have configured and enabled a language you can:
 
-  * Disable or deactivate a language that is previously enabled for the VA. The actual language-specific data that has been added while enabling the language will continue to exist in the VA even after disabling the language. Disabling would prevent the users from talking  to the assistant in that language (can be viewed in the VA export copy)
+  * Disable or deactivate a language that is previously enabled for the AI Agent. The actual language-specific data that has been added while enabling the language will continue to exist in the AI Agent even after disabling the language. Disabling would prevent the users from talking  to the assistant in that language (can be viewed in the AI Agent export copy)
   * If a language is disabled you can enable it again, since the data is preserved, you need not enter all the details.
 
 !!! note

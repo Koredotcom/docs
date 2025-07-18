@@ -4,7 +4,7 @@
 
 This Technical Design Document (TDD) presents a comprehensive overview of integrating a Bot platform with the NICE CXOne platform using Studio Script.
 
-This approach exclusively employs studio scripting to dispatch SIP headers, effectuate call transfer from the Bot, and seamlessly transition to NICE CXOne once the bot flow concludes. A VAH (Virtual Agent Hub) license and proxy are not required to host a SIP Backchannel configuration.
+This approach exclusively employs studio scripting to dispatch SIP headers, effectuate call transfer from the Bot, and seamlessly transition to NICE CXOne once the app flow concludes. A VAH (Virtual Agent Hub) license and proxy are not required to host a SIP Backchannel configuration.
 
 This document provides a high-level solution design for the scripting-only approach, utilizing SIP actions from the studio.
 
@@ -30,13 +30,13 @@ This document provides a high-level solution design for the scripting-only appro
 | Channel Specifications                 |                                                                                                                             |                                                                         |
 | ACD Configuration                      | - Skills creation and mapping<br>- Hours Of Operation<br>- Points of Contact<br>- Campaign<br>- Customization of scripts (2) | - Minimal functionality Voice call scripts (2)<br>- Main Script: Accept call on DID<br>- Spawn Script: SIP Trunk the call to Kore |
 | CXOne Studio Script                    | Customize Main and Spawn Scripts:<br>- Add SIP Headers<br>- Add DID                                                          | Share a sample of the main and spawn scripts:<br>[SIP Main Script](../voice-automation-nice-cxone-sip-integration/scripts/sip-main.pdf)<br>[SIP Spawn Script](../voice-automation-nice-cxone-sip-integration/scripts/sip-spawn.pdf) |
-| Setup Authentication                   | Configure CXOne Authentication to access the CXOne Signal API from the Kore bot.                                            |                                                                         |
+| Setup Authentication                   | Configure CXOne Authentication to access the CXOne Signal API from the Kore AI Agent.                                            |                                                                         |
 | **Kore IVR Configuration**             |                                                                                                                             |                                                                         |
-| Setup Kore IVR                         | Create an XO 11 account                                                                                                     |                                                                         |
+| Setup Kore IVR                         | Create an AI for Service account                                                                                                     |                                                                         |
 | Setup Voice Channel                    |                                                                                                                             |                                                                         |
 | SIP Trunk Configuration                | Network –<br>Incoming IP address: <br> **NICE IP address**<br>**216.20.235.167 – Dallas**<br>**216.20.237.167 – Los Angeles**<br>DID Number: *To be Procured & Provisioned*<br>Transport Type: TLS<br>Inbound Calls: Forward-to-PhoneNumber: *same as DID* | SIP URI (pre-filled)                                                    |
 | SIP Trunk Attach Flow                   | Create a Flow<br>Attach SIP configuration to Experience flow                                                                |                                                                         |
-| Kore XO 11 Bot Flow                     | Create a bot flow and read the SIP headers defined in the CXOne Studio script.                                              |                                                                         |
+| AI for Service App Flow                     | Create a AI Agent flow and read the SIP headers defined in the CXOne Studio script.                                              |                                                                         |
 | Signal API to return call to CXOne      | Get CXOne Authentication in Kore Bot<br>Trigger Signal API from Bot – The domain in the URL should match the customer’s NICE account domain. |                                                                         |
 
 ## CXOne Channel Specifications
@@ -80,14 +80,14 @@ ACD configuration includes
         2. Enter the value in the **headerValue**.  
             <img src="../images/sip-put-header.png" alt="Enter Header Value" title="Enter Header Value" style="border: 1px solid gray; zoom:70%;">
     6. Add the SIP Phone number in the **Placecall** action.
-        1. Provide the SIP DID number you configured in the Kore XO 11 platform SIP Trunk in the PhoneNumber property in the Placecall action.  
+        1. Provide the SIP DID number you configured in the AI for Service SIP Trunk in the PhoneNumber property in the Placecall action.  
             <img src="../images/place-calls.png" alt="Placecall" title="Placecall" style="border: 1px solid gray; zoom:60%;">  
             <img src="../images/sip-number.png" alt="SIP Number" title="SIP Number" style="border: 1px solid gray; zoom:60%;">
 
-## XO11 Configuration
+## AI for Service Configuration
 
-* A flow should be configured with an app on XO 11.  
-In the Script Task window, add the following code to pass the headers to the bot before the Run Automation action.  
+* A flow should be configured with an app on AI for Service.  
+In the Script Task window, add the following code to pass the headers to the AI Agent before the Run Automation action.  
 
 ```
 setCallFlowVariable('sipHeaders', context.BotUserSession.channels[0].handle.sipHeaders);
@@ -152,9 +152,9 @@ Configure a dialog task in Bot Builder to transition the request to NICE CXOne o
 9. Click **Save as Sample Response**.  
     <img src="../images/save-as-sample-response.png" alt="Save as Sample Response" title="Save as Sample response" style="border: 1px solid gray; zoom:70%;">  
 
-### Fetch the SIP Headers in the Bot
+### Fetch the SIP Headers in the AI Agent
 
-* A bot action with Script Node is used to extract the headers in a bot.  
+* A bot action with Script Node is used to extract the headers in an AI Agent.  
     <img src="../images/bot-action-script.png" alt="Bot action-Script Node" title="Bot action-Script Node" style="border: 1px solid gray; zoom:70%;">  
     <img src="../images/script.png" alt="Script Node" title="Script Node" style="border: 1px solid gray; zoom:70%;">  
   
@@ -172,9 +172,9 @@ Configure a dialog task in Bot Builder to transition the request to NICE CXOne o
 
     !!! Note
     
-        If the bot triggers the Signal API to transfer to a live agent or to end the conversation, the call must end from Kore, or the user should be disconnected from the Kore bot and SmartAssist flow.
+        If the AI Agent triggers the Signal API to transfer to a live agent or to end the conversation, the call must end from Kore, or the user should be disconnected from the Kore AI Agent and CCAI flow.
 
-### Trigger the Signal API on Kore Bot
+### Trigger the Signal API on Kore AI Agent
 
 1. Add a Bot action with a service node to trigger the Signal API.  
     <img src="../images/signal-api.png" alt="Bot action-Signal API" title="Bot action-Signal API" style="border: 1px solid gray; zoom:70%;">  

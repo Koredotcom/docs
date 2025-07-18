@@ -7,7 +7,7 @@ Steps to create a dialog task using the DHL action templates:
 1. Ensure that you have configured [DHL](configuring-the-dhl-action.md){:target="_blank"} and [installed templates](configuring-the-dhl-action.md#step-2-install-the-dhl-action-templates){:target="_blank"} successfully.
 If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
+2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
 3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
@@ -129,7 +129,7 @@ Steps to track the shipment using the DHL tracking ID:
     5. **trackShipmentMessage** – A message node with the script to display responses.
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to track shipment, as shown below.  
+5. Follow the prompts in the App console to track shipment, as shown below.  
 <img src="../images/dhl-tem-img7.png" alt="VA console prompt to track shipment" title="VA console prompt to track shipment" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Find Locations
@@ -438,7 +438,7 @@ Steps to find DHL locations using the country and postal codes:
     5. **getLocationsbyCoordinatesMessage** – A message node with the script to display responses.
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to find the location using the country and postal codes, as shown below.  
+5. Follow the prompts in the App console to find the location using the country and postal codes, as shown below.  
 <img src="../images/dhl-action-img11-tem-img2.png" alt="VA console prompt to find location" title="VA console prompt to find location" style="border: 1px solid gray;zoom:50%;"/>
 
 6. To view the location details, click and expand the desired item in the results.  

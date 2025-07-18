@@ -1,11 +1,11 @@
-# Multilingual Virtual Assistant Behavior
+# Multilingual AI Agent Behavior
 
-In the case of multi-lingual bots, while much of the bot behavior does not change with the language, but the language semantics does impose some restrictions. In this document we will list out the different behaviors that would be language-dependent, so you as bot developer can cater for such scenarios.
+In the case of multi-lingual AI Agent, while much of the AI Agent behavior does not change with the language, but the language semantics does impose some restrictions. In this document we will list out the different behaviors that would be language-dependent, so you as app developer can cater for such scenarios.
 
 
 ## Pattern Support
 
-We have seen in [this document](../../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. Those rules are for bots in the English language. Though the multilingual bots honor those rules, the language semantics impose some restrictions.
+We have seen in [this document](../../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. Those rules are for AI Agents in the English language. Though the multilingual AI Agents honor those rules, the language semantics impose some restrictions.
 
 Also, patterns can also be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../../automation/knowledge-ai/build-a-knowledge-graph/){:target="blank"} (using alternate question field), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly.
 
@@ -483,7 +483,7 @@ Here we will list out the NLP features and their support.
 
 !!! Note
 
-      The Spell Correction feature is not supported in Universal bots.
+      The Spell Correction feature is not supported in Universal Apps.
 
 
 <table border="1">
@@ -730,7 +730,7 @@ Catalan
 </td>
 </tr>
 <tr>
-<td><strong>Bot Synonyms (default)</strong>
+<td><strong>App Synonyms (default)</strong>
 </td>
 <td>
 
@@ -1009,9 +1009,9 @@ Hindi
 
 
 
-## Universal Bot Support
+## Universal App Support
 
-Here we will list out, language-wise, the trigger phrases used in training the Universal bot ([see here](../../../universal-bots/training-a-universal-bot){:target="_blank"}) in the supported languages.
+Here we will list out, language-wise, the trigger phrases used in training the Universal app ([see here](../../../universal-bots/training-a-universal-bot){:target="_blank"}) in the supported languages.
 
 
 <table border="1">

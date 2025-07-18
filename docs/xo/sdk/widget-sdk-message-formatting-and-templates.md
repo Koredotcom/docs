@@ -2,7 +2,7 @@
 
 Kore.ai Widget SDK allows you to override the default message formatting using markdown and apply templates to display custom formatted bot messages to users on the Widget SDK channel.
 
-For details on Web/Mobile SDK, [refer here](../web-mobile-sdk-message-formatting-and-templates).
+For details on Web/Mobile SDK, [refer here](widget-sdk-message-formatting-and-templates.md).
 
 ### Button Template
 
@@ -533,4 +533,4 @@ print(JSON.stringify(data));
 ![Line Chart template](../images/widget-message-templates/line-chart-template.png "Line Chart template")
 
 !!!note
-    To understand customized JavaScript responses and channel-specific templates, refer to _[Customize JavaScript Responses](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/#Customize_JavaScript_Responses)_ in _[User Prompts](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/)._
+    To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](../automation/use-cases/dialogs/prompt-editor.md).

@@ -8,7 +8,7 @@ This API facilitates the downloading of voice call recordings. The API provides 
 
 | **Method**        | GET                                                                                                  |
 |---------------|------------------------------------------------------------------------------------------------------|
-| **Endpoint**      | `https://{{host}}/api/public/bot/{{:streamId}}/v2/recordings`                                        |
+| **Endpoint**      | `https://{{host}}/api/public/bot/{{botId}}/v2/recordings?sessionId={{sessionId}}`                                        |
 | **Content Type**  | `application/json`                                                                                   |
 | **Authorization** | `auth: {{JWT}}` <br>                                     See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope**     | SmartAssist Recordings                                                                               |
@@ -18,7 +18,7 @@ This API facilitates the downloading of voice call recordings. The API provides 
 | **PARAMETER** | **DESCRIPTION**                                                           | **TYPE**          |
 |-----------|-----------------------------------------------------------------------|---------------|
 | host      | Environment URL, for example, https://platform.kore.ai            | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| botId     | botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Query Parameters
 
@@ -30,7 +30,7 @@ This API facilitates the downloading of voice call recordings. The API provides 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/api/public/bot/st-fd81a2b1-43af-544d-8082-831bc09cxxxx/v2/recordings?sessionId=65e7133a3242653c58d7xxxx' \
+curl --location 'https://{{host}}/api/public/bot/{{botId}}/v2/recordings?sessionId={{sessionId}}' \
 --header 'auth: {{JWT_TOKEN}}' \
 --header 'Content-Type: application/json'
 ```
@@ -42,8 +42,8 @@ curl --location 'https://{{host}}/api/public/bot/st-fd81a2b1-43af-544d-8082-831b
    "status": "success",
    "recording": [
        {
-           "fileName": "22d8ca62d5c430a03a8d06999289a7c0-merged.wav",
-           "fileUrl": "https://uat-smartassist.kore.ai/api/getMediaStream/smartassistrecording/UAT/o-ddda92ea-9174-5c0d-8938-4b5f13ab89bf/st-fd81a2b1-43af-544d-8082-831bc09c78a3/2024/05-03-2024/f-4a76076d-56f1-5b99-999f-5c760568405a.wav?e=1709706278&n=6398115875&s=InpqMWpnVzRkajFlc1RZeGVzaDBHM2pwWFFibzVwcEloTkkrSW5UbTZ0ek09Ig$$"
+           "fileName": "22d8ca62d5c430a03a8d06999289xxxx-merged.wav",
+           "fileUrl": "https://smartassist.kore.ai/api/getMediaStream/smartassistrecording/UAT/o-ddda92ea-9174-5c0d-8938-4b5f13abxxxx/st-fd81a2b1-43af-544d-8082-831bc09cxxxx/2024/05-03-2024/f-4a76076d-56f1-5b99-999f-5c760568xxxx.wav?e=1709706278&n=6398115875&s=InpqMWpnVzRkajFlc1RZeGVzaDBHM2pwWFFibzVwcEloTkkrSW5UbTZ0ek09xxxx"
        }
    ]
 }

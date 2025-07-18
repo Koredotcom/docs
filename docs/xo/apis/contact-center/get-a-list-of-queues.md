@@ -14,15 +14,15 @@ To create a queue with the given `streamId`.
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
 |-----------|-------------|------|
 | host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| streamId  | You can access it from the General Settings page of the bot. | string, required |
+| streamId  | botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'http://{{host}}/agentassist/api/v1/public/st-0aae83f7-49c7-58c8-921a-29d84d03xxxx/queues' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/{{streamId}}/queues' \
 --header 'accept: application/json' \
---header 'accountId: 64dc99337ac0b4d3d684xxxx' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTdlZjBkY2IwLTQ1ZTItNTY3YS1hYzMyLTkwNTA1NzdmMWIyYiJ9.7t145BjU0eZDdlnXYazmqkVT-8WpDIUgCquQM0xxxx' \
+--header 'accountId: {{accountId}}' \
+--header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --data ''
 ```

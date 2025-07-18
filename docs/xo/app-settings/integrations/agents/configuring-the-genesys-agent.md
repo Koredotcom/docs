@@ -1,13 +1,13 @@
 # Configuring the Genesys Agent
 
-Genesys Voice Platform unifies web and VoIP telephony networks to enable new and powerful voice self-service applications. Kore.ai XO Platform’s Genesys Agent integration allows you to seamlessly hand off the virtual assistant conversations to your live agents on Genesys. 
+Genesys Voice Platform unifies web and VoIP telephony networks to enable new and powerful voice self-service applications. Kore.ai XO Platform’s Genesys Agent integration allows you to seamlessly hand off the AI Agent conversations to your live agents on Genesys. 
 
 This post provides the configuration steps for enabling the Genesys Agent integration. Use the configurations provided below as general guidelines, as there could be some differences based on the version of the Intercom that you are using. 
 
 
 ## Overview
 
-Kore.ai’s Virtual Assistant (VA) serves as the central point of interaction for the users. In addition to its regular capabilities, the VA acts as a proxy or intermediary between the users and the Genesys agents to hand over conversations seamlessly. The VA also allows you to integrate with the Intercom platform. The VA facilitates communication and interaction between the user and the Genesys agent using the chat module. 
+Kore.ai’s AI Agent serves as the central point of interaction for the users. In addition to its regular capabilities, the AI Agent acts as a proxy or intermediary between the users and the Genesys agents to hand over conversations seamlessly. The AI Agent also allows you to integrate with the Intercom platform. The AI Agent facilitates communication and interaction between the user and the Genesys agent using the chat module. 
 
 
 The XO Platform supports the following Genesys integration methods for agent transfer:
@@ -125,7 +125,7 @@ To configure the agent, follow these steps:
 
 
 1. Log in to the Kore.ai XO Platform:[ https://platform.kore.ai/builder/home](https://bots.kore.ai/botbuilder).
-2. Select a Virtual Assistant for which you want to configure the Genesys agent.
+2. Select an AI Agent for which you want to configure the Genesys agent.
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** and click **Genesys**. 
 
 4. Click the **Configurations** tab and enter the following credentials for the Genesys Agent: 
@@ -140,30 +140,30 @@ To configure the agent, follow these steps:
 
 
 5. If you want to make Genesys the default agent, enable the **Default Agent System for all bot channels** option. 
- Note:  This option is available only when you have multiple agents configured for your VA. 
+ Note:  This option is available only when you have multiple agents configured for your AI Agent. 
  
 
 6. You can customize the channel mapping by clicking the **Manage** link. 
 
-7. Once you click **Manage**, you can map the channels you want the Genesys agent to hand over the conversations. To learn more about channel enablement, see[ Adding channels to your bot](../../../channels/adding-channels-to-your-bot.md).
+7. Once you click **Manage**, you can map the channels you want the Genesys agent to hand over the conversations. To learn more about channel enablement, see[ Adding channels to your app](../../../channels/adding-channels-to-your-bot.md).
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Genesys agent.
-10. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
+10. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution
 
 This section helps you verify how the conversations from the Kore.ai XO Platform are handed over to the Genesys agent after enabling it. 
 
-To verify the data exchange between Kore.ai’s VA and Genesys agent, follow these steps:
+To verify the data exchange between Kore.ai’s AI Agent and Genesys agent, follow these steps:
 
-1. Open a virtual assistant for which you have enabled the Genesys agent.
+1. Open an AI Agent for which you have enabled the Genesys agent.
 2. Create a new Agent Transfer Node task. For example, create a _PlatformAgent_ task with the _AgentTransfer_ node and configure it to use the Genesys agent. For more information, read the [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"} article.
 
     <img src="../images/configuring-the-genesys-agent-img4.png" alt="new Agent Transfer Node task" title="new Agent Transfer Node task" style="border: 1px solid gray;">
 
-3. Click the **Talk to Bot** icon to launch the VA and enter **Help**.
-4. When a user initiates the chat from the VA, it transfers the conversation to the Genesys agent and sends a message to the user.
+3. Click the **Talk to Bot** icon to launch the AI Agent and enter **Help**.
+4. When a user initiates the chat from the AI Agent, it transfers the conversation to the Genesys agent and sends a message to the user.
 5. Agent receives a notification about this on Genesys.
 6. Now, the connection between the Genesys agent and the user has been established, and the conversation continues.
 

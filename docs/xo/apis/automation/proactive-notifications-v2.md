@@ -47,7 +47,7 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    <td>
 <ul>
 
-<li>Bot Builder: Proactive Messages</li>
+<li>App Builder: Proactive Messages</li>
 
 <li>Admin Console: Channel Management > Proactive Messages</li>
 </ul>
@@ -80,9 +80,9 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
   <tr>
    <td><strong>BotId</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
 <p>
-<strong>Note</strong>: This is required only for Bot Builder API scope of Proactive Messages.
+<strong>Note</strong>: This is required only for App Builder API scope of Proactive Messages.
    </td>
    <td>Required
    </td>

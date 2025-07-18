@@ -83,6 +83,9 @@ A supervisor can view various cases of the following statuses:
 
 * **Unresolved:** Cases that are still active (work-in-progress) and not yet resolved or closed.
 
+  By clicking any of the existing unresolved cases, you can view the following sections of a case, such as associated tasks, customer details, current status, and activity logs.  
+    <img src="../images/manage-task-details.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
+
 * **Unassigned:** Cases that are identified but not yet assigned to a case manager or team member.
 
 * **All Cases:** Displays a comprehensive view of all cases within the system, regardless of their status.
@@ -96,9 +99,7 @@ A supervisor can view various cases of the following statuses:
     !!! Note
 
         The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. 
-        
-    By clicking any of the existing unresolved cases, you can view the following sections of a case, such as associated tasks, customer details, current status, and activity logs.  
-    <img src="../images/manage-task-details.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
+    
 
 ### Transfer or Update Cases
 
@@ -178,16 +179,12 @@ To Add a New Task:
 
 7. Select the task **Priority (Critical, High, Medium, Low)** from the dropdown list. By default, the **Status** is set to **Open**.
 
-8. Click **Save**. A success message of the task creation is displayed, and a new custom task is created and assigned to the agent.
+8. Click **Save**. A success message of the task creation is displayed, and a new custom task is created and assigned to the agent. Please note that agent cannot create or edit tasks once a case is closed. The system prevents task creation if required fields are missing or invalid.
 
     !!! note
 
         All the red asterisk (*) marked fields are mandatory to fill up.
-<img src="../images/task-message-successful.png" alt="Task Creation Successful" title="Task Creation Successful" style="border: 1px solid gray; zoom:70%;">
-
-    !!! note
-
-        The agent cannot create or edit tasks once a case is closed. The system prevents task creation if required fields are missing or invalid.
+       
 
 ### View Tasks Components
 
@@ -208,14 +205,14 @@ To assign a task:
 
 Review task activity enables agents to understand the task or case history and the rationale for specific actions.
 
-To monitor a task:
+* To monitor a task:
 
 1. To view task statuses, outstanding items, and overall workload, check the dashboard.  
 <img src="../images/task-monitor.png" alt="Dashboard Monitor" title="Dashboard Monitor" style="border: 1px solid gray; zoom:70%;">
 
 2. After tasks are completed, collect the feedback through comments and event details to review the progress of each task.
 
-To view task activity:
+* To view task activity:
 
 1. In the **Activity** section, select the **Expand** icon.
 

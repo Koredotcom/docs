@@ -1,6 +1,6 @@
 # Data Table
 
-Kore.ai takes care of your data needs, without having to depend on external services for it. Data offering lets you define Data Tables, Table Views, and manipulate them from your Virtual Assistant and Process Apps.
+Kore.ai takes care of your data needs, without having to depend on external services for it. Data offering lets you define Data Tables, Table Views, and manipulate them from your AI Agent and Process Apps.
 
 **Data Tables** allow you to persist custom data and retrieve it whenever needed. These can be used as data points collection for ‘feedback’ or ‘survey’ tasks, collecting user inputs that can be retrieved at a later point, etc.
 
@@ -11,7 +11,7 @@ Kore.ai takes care of your data needs, without having to depend on external serv
 * Joining two or more tables to create **custom Data Views**.
 * Support for **secure fields**, **indexing**, and **references**.
 * **APIs** to read, write, update, and delete data.
-* Ability to **scope** tables and views to specific bots. process apps and apps.
+* Ability to **scope** tables and views to specific apps. process apps and apps.
 
 
 ## Overview
@@ -20,7 +20,7 @@ Data Table offering on XO Platform is split into two parts:
 
 * **Data Definition** which includes:
     * Defining **Data Tables** and **Views**.
-    * **Granting access** to the bots, and processes for manipulating data from these Tables and Views.
+    * **Granting access** to the apps, and processes for manipulating data from these Tables and Views.
     * **Defining Apps** for securely exporting and importing definitions and for querying the data from views or data tables.
 
     <img src="../images/data-services-img1.png" alt="Define data" title="Define data" style="border: 1px solid gray;zoom:80%;"/>
@@ -32,7 +32,7 @@ In the document, we will be elaborating on each of these aspects. A brief knowle
 
 ## Data Definition
 
-For Data Definition, you need to access the **Data tab** of the Bot Builder Landing Page.
+For Data Definition, you need to access the **Data tab** of the App Builder Landing Page.
 
 From here you can:
 

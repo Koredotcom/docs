@@ -30,7 +30,7 @@ To fetch the conversation details and conversation summary between the bot and t
   <tr>
    <td><strong>API Scope</strong>
    </td>
-   <td>Bot Builder: Chat History
+   <td>App Builder: Chat History
    </td>
   </tr>
 </table>

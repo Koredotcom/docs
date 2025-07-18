@@ -36,7 +36,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Debug Logs
+<li>App Builder: Debug Logs
 
 <li>Admin Console: Not Applicable
 </li>
