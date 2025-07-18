@@ -24,7 +24,7 @@ curl --location --request GET 'https://{{host}}/agentassist/api/public/organizat
 --header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --header 'accountId: <accountId>'
---header 'Iid: <Iid>'
+--header 'IId: <IId>'
 ```
 
 ## Headers
@@ -33,7 +33,7 @@ curl --location --request GET 'https://{{host}}/agentassist/api/public/organizat
 |-----------|---------------|---------------------|
 | accountId | The account ID associated with the API request. | required |
 | auth | JWT token for authentication. | required |
-| Iid | The appId or streamId | required |
+| IId | The appId or streamId. | required |
 
 ## Sample Response
 

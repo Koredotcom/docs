@@ -4,7 +4,7 @@ To add an agent with the given Stream Id.
 
 | **METHOD**       | **POST**                                                         |
 |--------------|--------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents` |
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{IId}}/agents` |
 | **Content Type** | `application/json`                                           |
 | **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                        |
@@ -14,13 +14,13 @@ To add an agent with the given Stream Id.
 | **PARAMETER** | **DESCRIPTION**                                                                                         | **TYPE**        |
 |-----------|-----------------------------------------------------------------------------------------------------|-------------|
 | host      | Environment URL, for example, https://platform.kore.ai                                           | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot.                     | string, required |
+| IId     | The application ID.                     | string, required |
 | customId  | The customID of the agent, without any special characters or spaces, and up to 15 characters long. | string, optional |
 
 ## Sample Request
 
 ```
-curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents' \
+curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{IId}}/agents' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
