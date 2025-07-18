@@ -75,7 +75,7 @@ Create a Data Table to store app credentials on the XO Platform.
     
     4.4. **Indexes** for the table.
     
-    4.5. **Bot Assignments** to let AI Agents access data in this table.
+    4.5. **Bot Assignments** to let AI Agent access data in this table.
     
     4.6. **App Assignments** to let apps access data in this table.
     
