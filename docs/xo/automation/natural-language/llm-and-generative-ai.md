@@ -44,7 +44,7 @@ All these features benefit AI Agent developers, NLP developers, and testers as f
 * Quickly create dialog tasks. 
 * Build custom use cases with Generative AI. 
 * Automate mundane tasks (dialog generation, training utterances). 
-* Get suggestions for better AI Agentdesign and development. 
+* Get suggestions for better AI Agent design and development. 
 * Customize connections to LLMs and optimize prompts for specific use cases.
 
 ## Getting Started
