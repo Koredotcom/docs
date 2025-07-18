@@ -1,11 +1,11 @@
 # Using Variables
 
-**Variables** help you capture values that are commonly used by different tasks, nodes, and other VA elements. You can configure a variable as a key-value pair once in the VA settings and substitute key with value at runtime during the conversation flow. By capturing frequently used values in a single place, variables provide the advantages of reusability and consistency. For example, let’s say you are testing a flight booking app using a staging endpoint. If you configure the endpoint as a variable, it helps you to call the API from several places quickly. When you want to change the staging endpoint to production while publishing the VA, it is easy. Similarly, variables can be used to externalize content for messages and prompts from the dialog flow definition. Kore.ai platform allows VA developers to define two types of variables – Environment and Content.
+**Variables** help you capture values that are commonly used by different tasks, nodes, and other AI Agent elements. You can configure a variable as a key-value pair once in the App settings and substitute key with value at runtime during the conversation flow. By capturing frequently used values in a single place, variables provide the advantages of reusability and consistency. For example, let’s say you are testing a flight booking app using a staging endpoint. If you configure the endpoint as a variable, it helps you to call the API from several places quickly. When you want to change the staging endpoint to production while publishing the App, it is easy. Similarly, variables can be used to externalize content for messages and prompts from the dialog flow definition. Kore.ai platform allows App developers to define two types of variables – Environment and Content.
 
 
 ### Environment Variables
 
-Environment Variables are global, reusable components which can be used in multiple places to define the VA configuration. Every Environment Variable is a key-value pair. The Variable Keys can be used at various places in the VA configuration. The platform will resolve/replace the Variable Keys with Variables Values during the conversation. Some of the typical use cases where a developer can use environment variables are:
+Environment Variables are global, reusable components which can be used in multiple places to define the App configuration. Every Environment Variable is a key-value pair. The Variable Keys can be used at various places in the App configuration. The platform will resolve/replace the Variable Keys with Variables Values during the conversation. Some of the typical use cases where a developer can use environment variables are:
 
 
 * To manage the app across environments having different endpoint URLs. The app can be exported and imported based on the environment, and the infrastructure team will need to modify only the variable configuration file.
@@ -31,7 +31,7 @@ The latest Kore.ai XO Platform release introduces the **Secure Variable** featur
 
 * The **secure variable** is encrypted in the database and does not require any encryption key.
 * The original value is used only internally for all service calls, language translation, etc. while executing the virtual assistant definition.
-* During the export of a secure variable through **Bot** or **environment variables** import, it has an empty value, so the original value is not available in plain text.
+* During the export of a secure variable through **App** or **environment variables** import, it has an empty value, so the original value is not available in plain text.
 
 **Leveraging Encrypted Environment Variable Values for Additional Modules**
 
@@ -61,20 +61,20 @@ The availability of the environment variables has been extended to the **Field K
 
 ### Content Variables
 
-Bot building essentially requires extensive content management efforts. When it comes to multi-language VAs, it also involves tedious coordination efforts between the developers and globally-distributed content authors or copyright team. Content variables enable you to overcome that by abstracting VA flow development efforts from authoring or editing the content. Using Content Variables, programmers can avoid hard-coding the VA content, such as prompts, messages, or any data presented to the user, into VA components, and instead point to specific variables in centrally managed Content Variables files for each app language. You can export the language-specific content variable files to content editors, without exposing any app configurations. The writers can author the content in the exported file, which you can import back into the app.
+App building essentially requires extensive content management efforts. When it comes to multi-language Apps, it also involves tedious coordination efforts between the developers and globally-distributed content authors or copyright team. Content variables enable you to overcome that by abstracting AI Agent flow development efforts from authoring or editing the content. Using Content Variables, programmers can avoid hard-coding the AI Agent content, such as prompts, messages, or any data presented to the user, into AI Agent components, and instead point to specific variables in centrally managed Content Variables files for each app language. You can export the language-specific content variable files to content editors, without exposing any app configurations. The writers can author the content in the exported file, which you can import back into the app.
 
 !!! Note
 
     Ensure that the Environment or Content variable name does not contain any hyphen.
 
 
-### Defining Bot Variables and Securing Them
+### Defining App Variables and Securing Them
 
-Enabling the **secure variable** setting after defining an Environment (Bot) Variable, encrypts and securely stores credentials set as environment variables. To add a Bot variable, follow the steps below:
+Enabling the **secure variable** setting after defining an Environment (App) Variable, encrypts and securely stores credentials set as environment variables. To add a variable, follow the steps below:
 
 
 
-1. Open the VA for which you want to add the variables.
+1. Open the AI Agent for which you want to add the variables.
 2. Navigate to **App Settings > Variables** on the left menu, and select **Environment Variables** tab to add Environment variables, or **Content Variables** tab to add Content Variables.
 3. In the **Add Variable** panel, provide the following details:
     * **Variable Name**: Enter the environment variable name. For example, user credentials.
@@ -106,7 +106,7 @@ After switching the language, go to **App Settings > Variables > Content Variabl
 
 ### Using Environment Variables
 
-You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: `{{env.variableName}}`. If you are using it in JavaScript mode, it is _env.variableName_ Here’s an example from an app that uses two environment variables called _botType_ and _parameters_ to determine different app environments such as development, testing, and production. The following script node in one of the app’s tasks captures the _base URL_ of the app, depending on the current app environment.
+You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: `{{env.variableName}}`. If you are using it in JavaScript mode, it is _env.variableName_ Here’s an example from an app that uses two environment variables called _appType_ and _parameters_ to determine different app environments such as development, testing, and production. The following script node in one of the app’s tasks captures the _base URL_ of the app, depending on the current app environment.
 
 <img src="../images/env-and-content-variables-img8.png" alt="Script to capture Base URL of app" title="Script to capture Base URL of app" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -146,7 +146,7 @@ When the app reaches this node as a part of the user interaction, the user promp
 
 You can import and export variables between apps.
 
-1. On any of the Bot Variables page accessible from **App Settings > Variables > (Environment/Content) Variables**,
+1. On any of the  Variables page accessible from **App Settings > Variables > (Environment/Content) Variables**,
 2. Click the **ellipses next to Add Variables**
 3. _To Import_: Select **Import** to import variables from a JSON or CSV file
     1. Since the import will replace the existing variables, you are advised to take a backup of the same.
@@ -154,12 +154,12 @@ You can import and export variables between apps.
     3. Select a JSON or CSV file to import (see below for the file format)
 
 4. _To Export_: Select either **Export CSV** or **Export JSON** as the preferred format for the export file:
-    4. Bot variables are exported in the form of a JSON or CSV file based upon your selection.
+    4. App variables are exported in the form of a JSON or CSV file based upon your selection.
     5. This file includes both environment and content variables.
 
 <img src="../images/env-and-content-variables-img14.png" alt="Bot variable import/export" title="Bot variable import/export" style="border: 1px solid gray;zoom:50%;"/>
 
-The **Bot Variable file** contains the following information, the same needs to be present in your Import file. CSV files need a header row. You are advised to refer to the Export (or backup) file and use the same format for the Import file.
+The **App Variable file** contains the following information, the same needs to be present in your Import file. CSV files need a header row. You are advised to refer to the Export (or backup) file and use the same format for the Import file.
 
 * **key** (mandatory) – name of the variable
 * **scope**  – the scope of the variable corresponds to the Setup Option at the time of variable declaration (if not provided will be set to prePopulated) and can be

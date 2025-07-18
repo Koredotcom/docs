@@ -1,13 +1,13 @@
-# VA Authorization Overview
+# AI Agent Authorization Overview
 
 Kore.ai XO Platform’s Enterprise Integration Framework provides support for multiple authentication models that can be configured at a task level for each assistant, to use both authenticated and unauthenticated tasks in the same configuration.
 
-Developers can build custom authentication profiles for [virtual assistants](https://blog.kore.ai/a-complete-guide-to-chatbots){:target="_blank"} by defining subdomains through tenancy URLs, adding new fields through IDP form fields, and more. They can also test and validate the authorization definition before moving on to the next steps in the development process. The Platform passes user identity information and authentication tokens to the context as the web and mobile SDK initializes, so your VA can leverage existing authentication and authorization settings for end users.
+Developers can build custom authentication profiles for [AI Agents](https://blog.kore.ai/a-complete-guide-to-chatbots){:target="_blank"} by defining subdomains through tenancy URLs, adding new fields through IDP form fields, and more. They can also test and validate the authorization definition before moving on to the next steps in the development process. The Platform passes user identity information and authentication tokens to the context as the web and mobile SDK initializes, so your AI Agent can leverage existing authentication and authorization settings for end users.
 
 
 ## Supported Authentication Models
 
-The Platform lets you quickly enable one authentication profile across all VAs and tasks, or create custom profiles for each assistant and task: You can configure authentication for your assistant to access third-party web services, with support for the following authorization types. 
+The Platform lets you quickly enable one authentication profile across all AI Agents and tasks, or create custom profiles for each assistant and task: You can configure authentication for your assistant to access third-party web services, with support for the following authorization types. 
 
 
 ### Basic Auth

@@ -1,13 +1,13 @@
 # Configuring the NiceInContact (User Hub) Agent
 
-NiceInContact CXone virtual agent (user) hub simplifies the deployment of conversational virtual assistants and agents for customer self-service. Kore.ai XO Platform’s NiceInContact Agent integration allows you to seamlessly hand off the virtual assistant conversations to your live agents on Nice Chat.
+NiceInContact CXone virtual agent (user) hub simplifies the deployment of AI Agent and human agents for customer self-service. Kore.ai XO Platform’s NiceInContact Agent integration allows you to seamlessly hand off the AI Agent conversations to your live agents on Nice Chat.
 
 Use the configuration steps below as general guidelines to enable the NiceInContact User Hub integration. You may notice minor differences based on the version of the NiceInContact User Hub you are using.
 
 
 ## Overview
 
-Kore.ai’s virtual assistant (VA) serves as the central point of interaction for the users. The VA facilitates communication and interaction between the user and the NiceInContact User Hub. In addition to its regular capabilities, the VA acts as a proxy or intermediary between the users and the NiceInContact agents to hand over conversations seamlessly. The VA also allows you to integrate with the NiceInContact platform.
+Kore.ai’s agent serves as the central point of interaction for the users. The AI Agent facilitates communication and interaction between the user and the NiceInContact User Hub. In addition to its regular capabilities, the AI Agent acts as a proxy or intermediary between the users and the NiceInContact agents to hand over conversations seamlessly. The AI Agent also allows you to integrate with the NiceInContact platform.
 
 
 ## Configuration
@@ -64,7 +64,7 @@ Steps to create a point of contact:
 To enable the NiceInContact, follow these steps:
 
 1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
-2. Select a Virtual Assistant for which you want to configure the NiceInContact agent.
+2. Select an AI Agent for which you want to configure the NiceInContact agent.
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **Nice In Contact(UserHub)**..
 
 
@@ -78,29 +78,29 @@ To enable the NiceInContact, follow these steps:
 
     <img src="../images/configuring-the-niceincontact-userhub-img2.png" alt="NiceInContact Agent credentials" title="NiceInContact Agent credentials" style="border: 1px solid gray;">
 
-6. If you want to make NiceInContact the default agent, enable the Default Agent System for all bot channels option.
+6. If you want to make NiceInContact the default agent, enable the Default Agent System for all app channels option.
 
     <img src="../images/configuring-the-niceincontact-userhub-img3.png" alt="Making NiceInContact the default agent" title="Making NiceInContact the default agent" style="border: 1px solid gray;">
 
     !!! Note
     
-        This option is available only when multiple agents are configured for your VA.
+        This option is available only when multiple agents are configured for your AI Agent.
 
 7. You can customize the channel mapping by clicking the Manage link.
-8. Click Manage to map the channels you want to use to the Nice InContact User Hub agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click Manage to map the channels you want to use to the Nice InContact User Hub agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 9. After mapping channels, click **Done**.
 
     <img src="../images/configuring-the-niceincontact-userhub-img4.png" alt="Mapping channels" title="Mapping channels" style="border: 1px solid gray;">
 
 10. Click **Save** to enable the NiceInContact agent.
-11. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
+11. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution
 
 This section helps you verify how the conversations from the Kore.ai XO Platform are being handed over to the NiceInContact UserHub agent after enabling it.
 
-Steps to verify the data exchange between Kore.ai’s VA and NiceInContact User Hub agent:
+Steps to verify the data exchange between Kore.ai’s agent and NiceInContact User Hub agent:
 
 1. Log in to [https://login.incontact.com/](https://login.incontact.com/){:target="_blank"} with the user credentials that you created in Step 1.
 2. Navigate to **Applications > Max** to launch the Chat console.
@@ -115,14 +115,14 @@ Steps to verify the data exchange between Kore.ai’s VA and NiceInContact User 
 
     <img src="../images/configuring-the-niceincontact-userhub-img7.png" alt="Start conversaton" title="Start conversation" style="border: 1px solid gray;">
 
-5. Open a virtual assistant for which you have enabled the NiceInContact User Hub agent.
+5. Open an AI Agent for which you have enabled the NiceInContact User Hub agent.
 6. Create a new Agent Transfer Node task. For example, create a Talk to Live Agent task with the LiveChats node and configure it to use the Nice agent. For more information, see [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"}.
 
     <img src="../images/configuring-the-niceincontact-userhub-img8.png" alt="New Agent Transfer Node task" title="New Agent Transfer Node task" style="border: 1px solid gray;">
 
-7. Click the **Talk to Bot** icon at the bottom of the page to launch the VA and enter **Help**.
+7. Click the **Talk to Bot** icon at the bottom of the page to launch the AI Agent and enter **Help**.
 8. Once you invoke the agent transfer dialog, the NiceInContact Chat receives a notification alert.
-9. When a user initiates the chat from the VA, it transfers the conversation to the NiceInContact UserHub agent and sends a message to the user. Agent receives a notification about this on NiceInContact.
+9. When a user initiates the chat from the AI Agent, it transfers the conversation to the NiceInContact UserHub agent and sends a message to the user. Agent receives a notification about this on NiceInContact.
 10. Now, the connection between the NiceInContact UserHub agent and the user has been established, and the conversation continues.
 
     <img src="../images/configuring-the-niceincontact-userhub-img9.png" alt="Connection established NiceInContact UserHub agent and the user" title="Connection established NiceInContact UserHub agent and the user" style="border: 1px solid gray;">

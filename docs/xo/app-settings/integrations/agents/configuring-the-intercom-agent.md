@@ -1,13 +1,13 @@
 # Configuring the Intercom Agent
 
-Intercom is a Customer Communications Platform. It shows you who is using your product or website and makes it easy to communicate. Kore.ai XO Platform’s Intercom Agent integration allows you to seamlessly hand-off the virtual assistant conversations to your live agents on Intercom. 
+Intercom is a Customer Communications Platform. It shows you who is using your product or website and makes it easy to communicate. Kore.ai XO Platform’s Intercom Agent integration allows you to seamlessly hand-off the AI Agent conversations to your live agents on Intercom. 
 
 This post provides the configuration steps to be followed to enable the Intercom Agent integration. Use the configurations provided below as general guidelines as there could be some differences based on the version of the Intercom that you are using. 
 
 
 ## Overview
 
-Kore.ai’s virtual assistant (VA) serves as the central point of interaction for the users. In addition to its regular capabilities, the VA acts as a proxy or intermediary between the users and the Intercom agents to handover conversations seamlessly. The VA also allows you to integrate with the Intercom platform. The VA facilitates the communication and interaction between the user and the Intercom agent using the chat module.
+Kore.ai’s agent serves as the central point of interaction for the users. In addition to its regular capabilities, the AI Agent acts as a proxy or intermediary between the users and the Intercom agents to handover conversations seamlessly. The AI Agent also allows you to integrate with the Intercom platform. The AI Agent facilitates the communication and interaction between the user and the Intercom agent using the chat module.
 
 
 ## Configuration
@@ -81,35 +81,35 @@ To set up Intercom to receive messages, you will first need to create an app in 
 
     !!! Note
     
-        This option will be available only when you have multiple agents configured for your VA.
+        This option will be available only when you have multiple agents configured for your AI Agent.
 
 6. You can also customize the channel mapping by clicking the **Manage** link as shown below:
 
     <img src="../images/configuring-the-intercom-agent-img5.png" alt="Customize the channel mapping" title="Customize the channel mapping" style="border: 1px solid gray;">
 
-7. Once you click **Manage**, you can map the channels which you want to use Intercom agent for handovering the conversations. To learn more about channel enablement, read the[ Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"} article.
+7. Once you click **Manage**, you can map the channels which you want to use Intercom agent for handovering the conversations. To learn more about channel enablement, read the[ Adding channels to your app](../../../../channels/adding-channels-to-your-bot/){:target="_blank"} article.
 
     <img src="../images/configuring-the-intercom-agent-img6.png" alt="Map channels to intercom agent" title="Map channels to intercom agent" style="border: 1px solid gray;">
 
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Intercom agent.
-10. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
+10. Publish the App. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution
 
 This section helps you verify how the conversations from the Kore.ai XO Platform are being handed over to the Intercom agent after enabling it. 
 
-To verify the data exchange between the Kore.ai’s VA and Intercom agent, follow these steps:
+To verify the data exchange between the Kore.ai’s agent and Intercom agent, follow these steps:
 
-1. Open a virtual assistant for which you have enabled the Intercom agent.
+1. Open an app for which you have enabled the Intercom agent.
 2. Create a new Agent Transfer Node task. For example, create a PlatformAgent task with the UserChats node and configure it to use the Intercom agent. For more information, read the [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"} article.
 
     <img src="../images/configuring-the-intercom-agent-img7.png" alt="New Agent Transfer node task" title="New Agent Transfer node task" style="border: 1px solid gray;">
 
-3. Click the **Talk to Bot** icon to launch the VA and enter **Help**.
+3. Click the **Talk to Bot** icon to launch the app and enter **Help**.
 4. Once you invoke the agent transfer dialog, the Intercom Developer Hub receives a notification alert.
-5. When a user initiates the chat from the VA, it transfers the conversation to the Intercom agent and sends a message to the user. Agent receives a notification about this on the Intercom.
+5. When a user initiates the chat from the app, it transfers the conversation to the Intercom agent and sends a message to the user. Agent receives a notification about this on the Intercom.
 6. Now the connection between Intercom agent and the user has been established and the conversation continues.
 
     <img src="../images/configuring-the-intercom-agent-img8.png" alt="Connection established between Intercom agent and user" title="Connection established between Intercom agent and user" style="border: 1px solid gray;">

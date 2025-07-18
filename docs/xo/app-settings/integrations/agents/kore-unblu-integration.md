@@ -2,14 +2,14 @@
 
 ## Overview
 
-Unblu is a conversational platform that allows agents and advisors in your organization to collaborate with your customers and website visitors. It enables collaboration through online channels like live chat, secure text messaging, and video chat to achieve a better customer experience.
+Unblu is a conversational AI Agent that allows agents and advisors in your organization to collaborate with your customers and website visitors. It enables collaboration through online channels like live chat, secure text messaging, and video chat to achieve a better customer experience.
 
-Transferring a chat to a human agent from the bot is necessary if your bot is in the space of customer service. Chatbots are not meant to completely replace humans. At times, the chatbot fails to answer satisfactorily or the user wants to chat with a human being. If this happens, the chatbot should transfer the chats to a human agent or a customer care representative. To help users accomplish this task, Kore can be integrated with the Unblu application.
+Transferring a chat to a human agent from the AI Agent is necessary if your AI Agent is in the space of customer service. AI Agents are not meant to completely replace humans. At times, the AI Agent fails to answer satisfactorily or the user wants to chat with a human being. If this happens, the AI Agent should transfer the chats to a human agent or a customer care representative. To help users accomplish this task, Kore can be integrated with the Unblu application.
 
-Here, the bot is the core of the entire solution. Apart from performing all its functionalities, the bot also acts as a proxy between users and agents.
+Here, the AI Agent is the core of the entire solution. Apart from performing all its functionalities, the AI Agent also acts as a proxy between users and agents.
 
-* **Bot**: Chat Bot that the user interacts with.
-* **Users**: Users are the customers who are using this bot.
+* **App**: AI Agent that the user interacts with.
+* **Users**: Users are the customers who are using this AI Agent.
 * **Agent**: Agents are humans who chat with users. The agent will also need a chat window. For this, you can use _Unblu_ software.
 
 
@@ -17,7 +17,7 @@ Here, the bot is the core of the entire solution. Apart from performing all its 
 
 The prerequisites are listed below:
 
-* A fully functional bot.
+* A fully functional AI Agent.
 * An Unblu account.
 * Download BotKit SDK from Kore’s [GitHub](https://github.com/Koredotcom/BotKit){:target="_blank"}.
 * Download and install the &lt;_Node.js_> file. The BotKit SDK requires &lt;_node.js_> files to run on the same server where the SDK is installed. The &lt;_node.js_> version must be v12.0 and above.
@@ -28,7 +28,7 @@ The prerequisites are listed below:
 
 To perform the Kore-Unblu integration, follow the below steps:
 
-1. Log in to the Kore bots platform with valid credentials.
+1. Log in to the Kore AI Agent platform with valid credentials.
 2. Select the **Build** tab from the top menu
 3. Go to **Integrations** select the **Agent Transfer** option
 4. On the Agent Transfer page, next to **App Name**, click **Add** (you can select an existing app from the drop-down if you have already created one)
@@ -57,12 +57,12 @@ After completing the above configurations, make the required changes in the &lt;
 2. Under the **app** section, paste the **URL** (Ngrok or publicly accessible URL). Refer to the below image.  
 <img src="../images/kore-unblu-1.png" alt="Ngrok or publicly accessible URL" title="Ngrok or publicly accessible URL" style="border: 1px solid gray;">
 
-3. Under the **credentials** section, paste the Kore bot details: API Key (client secret), App ID (client id), and Bot Name. Refer to the below image.  
+3. Under the **credentials** section, paste the Kore app details: API Key (client secret), App ID (client id), and Bot Name. Refer to the below image.  
 <img src="../images/kore-unblu-2.png" alt="Kore bot details" title="Kore bot details" style="border: 1px solid gray;">  
 
     To find these details, 
 
-    1. Log in to the Kore bots platform with valid credentials.
+    1. Log in to the Kore apps platform with valid credentials.
     2. Select the **Build** tab from the top menu
     3. From **Integrations** select the **BotKit** option
     4. You can find the details as needed.

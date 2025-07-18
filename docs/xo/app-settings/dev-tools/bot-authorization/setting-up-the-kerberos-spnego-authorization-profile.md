@@ -18,7 +18,7 @@ The Kerberos SPNEGO auth profile can be configured from the following XO Platfor
 
 Steps to configure the Authorization for your assistant with Kerberos-SPNEGO auth profile:
 
-1. Open the virtual assistant (VA) for which you want to configure the Authorization profile.
+1. Open the AI Agent for which you want to configure the Authorization profile.
 2. Select the **Build** tab from the top menu.
 3. From the left-side vertical menus, click **Configurations > Authorization Profiles**.
 4. Click **New** to open the **New Authorization Mechanism** dialog.  
@@ -117,7 +117,7 @@ To configure the Kerberos SPNEGO authorization profile, define the fields descri
   <tr>
    <td>Authentication Types
    </td>
-   <td>Bot designers can set this setting to modify the Kerberos authentication behavior.
+   <td>App designers can set this setting to modify the Kerberos authentication behavior.
     <br>
     Choose one of the following Authentication Types:
     <ul>
