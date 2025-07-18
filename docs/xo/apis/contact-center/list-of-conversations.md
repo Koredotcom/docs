@@ -1,10 +1,10 @@
 # List of Conversations
 
-Get the list of conversations with the given IId.
+Get the list of conversations with the given `streamId`.
 
 | **Method**      | GET                                                       |
 |-------------|-----------------------------------------------------------|
-| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{IId}}/conversations?skip={}&limit={}&fields={}&status={}&source={}&language={}'` |
+| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations?skip={}&limit={}&fields={}&status={}&source={}&language={}'` |
 | **Content Type**| `application/json`                                        |
 | Authorization | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**   | SmartAssist Analytics                                     |
@@ -13,8 +13,8 @@ Get the list of conversations with the given IId.
 
 | **PARAMETER**  | **DESCRIPTION**                                               | **TYPE**         |
 |------------|-----------------------------------------------------------|--------------|
-| host       | The Environment URL. For example, https://platform.kore.ai | string, required |
-| IId   | The application ID. | string, required |
+| host       | The Environment URL. For example, `https://platform.kore.ai` | string, required |
+| streamId   | botId or streamId. You can get it from the general settings page. | string, required |
 | accountId  | Your Account ID.                                          | string, required |
 
 ## Sample Request

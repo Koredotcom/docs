@@ -1,10 +1,10 @@
 # List All Agents
 
-To retrieve the list of all agents with the given `IId`.
+To retrieve the list of all agents with the given `streamId`.
 
 | **Method**       | GET                                                     |
 |--------------|---------------------------------------------------------|
-| **Endpoint**     | `https://smartassist.kore.ai/agentassist/api/v1/public/{IId}/organizations/{orgId}/agents?page=1&includeQueues=True` |
+| **Endpoint**     | `https://smartassist.kore.ai/agentassist/api/v1/public/{streamId}/organizations/{orgId}/agents?page=1&includeQueues=True` |
 | **Content Type** | `application/json`                                      |
 | **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                   |
@@ -13,8 +13,8 @@ To retrieve the list of all agents with the given `IId`.
 
 | **PARAMETER** | **DESCRIPTION**                                                             | **TYPE**          |
 |-----------|-------------------------------------------------------------------------|---------------|
-| host      | Environment URL, for example, https://platform.kore.ai               | string, required |
-| IId     | The application ID. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`               | string, required |
+| streamId     | botId or streamId. You can get it from the general settings page. | string, required |
 | orgId     | The organization Id.                                                    | string, required |
 
 ## Query Parameters
@@ -27,7 +27,7 @@ To retrieve the list of all agents with the given `IId`.
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{IId}}/organizations/{{orgId}}/agents?page=1&includeQueues=True' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/organizations/{{orgId}}/agents?page=1&includeQueues=True' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}'
 --header 'accountId: {{YOUR_accountId}}'
 ```

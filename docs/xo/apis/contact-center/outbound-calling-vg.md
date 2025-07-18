@@ -24,7 +24,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 
 | **PARAMETER** | **DESCRIPTION**                                                                                          | **TYPE**           |
 |-----------|------------------------------------------------------------------------------------------------------|----------------|
-| host      | Environment URL, for example, https://platform.kore.ai                                             | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`                                             | string, required |
 | IId     |The application ID.                      | string, required |
 
 ## Query Parameters

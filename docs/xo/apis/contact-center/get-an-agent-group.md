@@ -4,7 +4,7 @@ To get the details of a particular agent group with the given `IId` and `agentGr
 
 | **Method**        | GET                                                              |
 |---------------|------------------------------------------------------------------|
-| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{IId}}/agent-groups/{{agentGroupId}}` |
+| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{agentGroupId}}` |
 | **Content Type**  | `application/json`                                              |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**     | SmartAssist Analytics                                           |
@@ -13,14 +13,14 @@ To get the details of a particular agent group with the given `IId` and `agentGr
 
 | **PARAMETER** | **DESCRIPTION**                                                    | **TYPE**         |
 |-----------|----------------------------------------------------------------|--------------|
-| host      | Environment URL, for example, https://platform.kore.ai     | string, required |
-| IId     | The application ID. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`     | string, required |
+| streamId     | The application ID. | string, required |
 | id        | The Agent Group id.                                            | string, required |
 
 ## Sample Request
 
 ```
-curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{IId}}/agent-groups/{{agentGroupId}}' \
+curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{agentGroupId}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

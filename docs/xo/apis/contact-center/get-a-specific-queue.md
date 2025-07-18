@@ -1,10 +1,10 @@
 # Get a Specific Queue
 
-To get a specific queue with the given `IId` and `queueId`.
+To get a specific queue with the given `streamId` and `queueId`.
 
 | **Method**       | GET                                              |
 |--------------|--------------------------------------------------|
-| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{IId}}/queues/{queueId}` |
+| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/{queueId}` |
 | **Content Type** | `application/json`                               |
 | **Authorization**| `auth: {{JWT}}`    <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                             |
 | **API Scope**    | Configuration                                    |
@@ -13,14 +13,14 @@ To get a specific queue with the given `IId` and `queueId`.
 
 | **Parameter** | **Description**                                                | **Type**         |
 |-----------|------------------------------------------------------------|--------------|
-| host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| IId     | The application ID. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| streamId     |botId or streamId. You can get it from the general settings page. | string, required |
 | id        | queueId. Can be taken from the /queues GET API.           | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'http://{{host}}/agentassist/api/v1/public/{{IID}}/queues/{{queueId}}' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/{{queueId}}' \
 --header 'accept: application/json' \
 --header 'accountId: {{accountId}}' \
 --header 'auth: <token>' \

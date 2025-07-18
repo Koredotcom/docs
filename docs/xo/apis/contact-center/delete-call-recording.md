@@ -4,7 +4,7 @@ This API is used to delete Voice Call Recordings. The response varies based on w
 
 | **Method**        | DELETE                                                                                   |
 |---------------|------------------------------------------------------------------------------------------|
-| **Endpoints**     | `https://{{host}}/api/public/bot/{{IId}}/v2/recordings?sessionId={{sessionId}}` |
+| **Endpoints**     | `https://{{host}}/api/public/bot/{{botId}}/v2/recordings?sessionId={{sessionId}}` |
 | **Content Type**  | `application/json`                                                                      |
 | Authorization | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**     | Delete Recordings
@@ -14,7 +14,7 @@ This API is used to delete Voice Call Recordings. The response varies based on w
 | **PARAMETER** | **DESCRIPTION**                                    | **TYPE**           |
 |-----------|------------------------------------------------|----------------|
 | host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| IId | The application ID. | string, required |
+| botId | botId or streamId. You can get it from the general settings page.| string, required |
 
 ## Query Parameter
 
@@ -25,7 +25,7 @@ This API is used to delete Voice Call Recordings. The response varies based on w
 ## Sample Request
 
 ```
-curl --location --request DELETE 'https://{{host}}/api/1.1/public/bot/{{IID}}/recordings?sessionId=6627b9adb9af28711b78xxxx' \
+curl --location --request DELETE 'https://{{host}}/api/1.1/public/bot/{{botID}}/recordings?sessionId=6627b9adb9af28711b78xxxx' \
 --header 'auth: <token>>'
 ```
 

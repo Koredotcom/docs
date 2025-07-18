@@ -1,10 +1,10 @@
 # Delete an Agent Group
 
-To delete the particular agent group with the given IId and Agent Group Id.
+To delete the particular agent group with the given `streamId` and `agentGroupId`.
 
 | **Method**       | DELETE                                                                                                  |
 |------------------|--------------------------------------------------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{IId}}/agent-groups/{{id}}`                          |
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{botId}}/agent-groups/{{id}}`                          |
 | **Content Type** | `application/json`                                                                                     |
 | **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope**    | SmartAssist Analytics                                                                                  |
@@ -14,14 +14,14 @@ To delete the particular agent group with the given IId and Agent Group Id.
 | **PARAMETER** | **DESCRIPTION**                                               | **TYPE**         |
 |---------------|---------------------------------------------------------------|------------------|
 | host          | Environment URL, for example, https://platform.kore.ai      | string, required |
-| IId         | the application ID. | string, required |
+| streamId         | botId or streamId. You can get it from the general settings page. | string, required |
 | id            | The Agent Group id.                                            | string, required |
 
 ## Sample Request
 
 ```
 curl --location --request DELETE \
-     'https://{{host}}/agentassist/api/v1/public/{{IId}}/agent-groups/{{id}}' \
+     'https://{{host}}/agentassist/api/v1/public/{{botId}}/agent-groups/{{id}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

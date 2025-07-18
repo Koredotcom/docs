@@ -4,7 +4,7 @@ Get a particular conversation by providing the Conversation Id.
 
 | **Method**       | GET                                                                                          |
 |--------------|----------------------------------------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{IId}}/conversations/{{conversationId}}` |
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations/{{conversationId}}` |
 | **Content Type** | `application/json`                                                                          |
 | **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                                                                           |
 | **API Scope**    | SmartAssist Analytics                                                                       |
@@ -13,13 +13,13 @@ Get a particular conversation by providing the Conversation Id.
 
 | **PARAMETER** | **DESCRIPTION**                                      | **TYPE**           |
 |-----------|--------------------------------------------------|----------------|
-| host      | The Environment URL. For example, https://platform.kore.ai | string, required |
-| IId  | The application ID. | string, required |
+| host      | The Environment URL. For example, `https://platform.kore.ai` | string, required |
+| streamId  | botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{IId}}/conversations/{{conversationId}}' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations/{{conversationId}}' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'accountId: {{YOUR_accountId}}'
 ```

@@ -1,10 +1,10 @@
 # Update a Specific Agent
 
-To update the details of a particular agent with the given `IId` and `agentId`.
+To update the details of a particular agent with the given `streamId` and `agentId`.
 
 | **Method**      | PUT                                                         |
 |-------------|-------------------------------------------------------------|
-| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{IId}}/agents/{{agentId}}` |
+| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}` |
 | **Content Type**| `application/json`                                          |
 | **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**   | SmartAssist Analytics                                       |
@@ -14,13 +14,13 @@ To update the details of a particular agent with the given `IId` and `agentId`.
 | **Parameter** | **Description**                                                                                            | **Type**         |
 |-----------|--------------------------------------------------------------------------------------------------------|--------------|
 | host      | Environment URL, for example, `https://platform.kore.ai`                                               | string, required |
-| IId     | The application ID.                        | string, required |
+| streamId     | botId or streamId. You can get it from the general settings page.                        | string, required |
 | agentId   | The Agent Id of the particular agent whose details are being retrieved.                                 | string, required |
 
 ## Sample Request
 
 ```
-curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{IId}}/agents/{{agentId}}' \
+curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}' \
      --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{

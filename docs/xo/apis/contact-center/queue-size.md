@@ -1,10 +1,10 @@
 # Queue Size
 
-To get the queueDetails by giving queueId and filters with the given `IId`.
+To get the queueDetails by giving queueId and filters with the given `streamId`.
 
 | **Method**       | POST                                                           |
 |--------------|----------------------------------------------------------------|
-| **Endpoint**     | `https://{host}/agentassist/api/v1/public/{{IId}}/monitor/queueStatsById/{{queueId}}` |
+| **Endpoint**     | `https://{host}/agentassist/api/v1/public/{{streamId}}/monitor/queueStatsById/{{queueId}}` |
 | **Content Type** | `application/json`                                             |
 | **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)|
 | **API Scope**    | SmartAssist Analytics                                          |
@@ -13,14 +13,14 @@ To get the queueDetails by giving queueId and filters with the given `IId`.
 
 | **PARAMETER** | **DESCRIPTION**                                                       | **TYPE**          |
 |-----------|-------------------------------------------------------------------|---------------|
-| Host      | The Environment URL. For example, https://platform.kore.ai     | string, required |
+| Host      | The Environment URL. For example, `https://platform.kore.ai`     | string, required |
 | queueId   | You can get the queueId in the /queues GET API.                   | string, required |
-| IId     | The application ID. | string, required |
+| streamId     | botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{IId}}/monitor/queueStatsById/{{queueId}}/' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/monitor/queueStatsById/{{queueId}}/' \
 --header 'auth: <token>' \
 --header 'accountId: {{accountId}}' \
 --header 'Content-Type: application/json' \

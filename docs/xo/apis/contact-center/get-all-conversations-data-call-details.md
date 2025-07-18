@@ -13,7 +13,7 @@ To retrieve the raw data for all conversations in a very detailed view. The days
 
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
 |-----------|-------------|------|
-| host | Environment URL, for example, https://platform.kore.ai | string, required |
+| host | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | accountId | The Account Id | string, required |
 
 ## Query Parameters

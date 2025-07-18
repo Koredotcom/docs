@@ -9,7 +9,7 @@ To get exported data which is one of (skillsGroups, Queues, StandardResponses, W
 | **PARAMETER** | **DESCRIPTION**                                                                                                          | **TYPE**         |
 |---------------|--------------------------------------------------------------------------------------------------------------------------|------------------|
 | **Method**        | GET                                                                                                                      |                  |
-| **Endpoint**      | `http://{{host}}/agentassist/api/public/analytics/{{IId}}/importSmartAssistFunctionalities?accountId=&orgId=&type=` |                  |
+| **Endpoint**      | `http://{{host}}/agentassist/api/public/analytics/{{streamId}}/importSmartAssistFunctionalities?accountId=&orgId=&type=` |                  |
 | **Content Type**  | `application/json`                                                                                                       |                  |
 | **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                     |                  |
 | **API Scope**     | SmartAssist Import and Export Feature                                                                                    |                  |
@@ -21,12 +21,12 @@ To get exported data which is one of (skillsGroups, Queues, StandardResponses, W
 | host          | Environment URL, for example, https://platform.kore.ai                                            | string, required |
 | AccountId     | The Account Id.                                                                                     | string, required |
 | OrgId         | The Organization Id.                                                                                | String, Required |
-| IId         | The application ID.                 | string, required |
+| botId         | botId or streamId. You can get it from the general settings page.                | string, required |
 
 ## Sample Request
 
 ```
-curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/analytics/{{IID}}/importSmartAssistFunctionalities?{{accountId}}&orgId={{orgId}}&type=skillGroups' \
+curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/analytics/{{botId}}/importSmartAssistFunctionalities?{{accountId}}&orgId={{orgId}}&type=skillGroups' \
 --header 'Accept: application/json, text/plain, */*' 
 --header 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' 
 --header 'AccountId: 63e0f303560867d78313xxxx' 

@@ -1,10 +1,10 @@
 # Get Intent Real Time Data
 
-To retrieve the most recent conversational data for the given `IId`. Gets the latest 25 sessions data for the given application ID that completed the execution of the flow.
+To retrieve the most recent conversational data for the given `botId`. Gets the latest 25 sessions data for the given application ID that completed the execution of the flow.
 
 | **Method**       | GET                                                        |
 |--------------|------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/api/public/bot/{{IID}}//intentrealtimedata` |
+| **Endpoint**     | `https://{{host}}/api/public/bot/{{botId}}//intentrealtimedata` |
 | **Content Type** | `application/json`                                         |
 | **Authorization**| `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                      |
@@ -13,13 +13,13 @@ To retrieve the most recent conversational data for the given `IId`. Gets the la
 
 | **PARAMETER** | **DESCRIPTION**                                                        | **TYPE**            |
 |-----------|--------------------------------------------------------------------|-----------------|
-| host      | Environment URL, for example, https://platform.kore.ai          | string, required |
-| IId     | The application ID. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`          | string, required |
+| botId     | botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Sample Request
 
 ```
-curl --location --request POST 'https://{{host}}/api/public/bot/{{IId}}/intentrealtimedata' \
+curl --location --request POST 'https://{{host}}/api/public/bot/{{botId}}/intentrealtimedata' \
 --header 'auth: <token>' \
 --header 'cache-control: no-cache' \
 --header 'postman-token: 363f7f10-e516-c464-dcf8-2fefcd86xxxx' \

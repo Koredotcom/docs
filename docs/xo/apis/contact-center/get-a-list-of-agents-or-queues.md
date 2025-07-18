@@ -4,7 +4,7 @@ To get all agents if you have `queuesIds` and all the queues if you have `agentI
 
 | **Method** | POST |
 |--------|------|
-| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{IId}}/queues/agents` |
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{botId}}/queues/agents` |
 | **Content Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Configuration |
@@ -13,14 +13,14 @@ To get all agents if you have `queuesIds` and all the queues if you have `agentI
 
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
 |-----------|-------------|------|
-| host | Environment URL, for example, https://platform.kore.ai | string, required |
-| IId |The application ID. | string, required |
+| host | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| botId |botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Sample Request
 
 When `queueIds` are passed:
 ```
-curl --location 'http://{{host}}/agentassist/api/v1/public/{{IID}}/queues/agents' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/{{botId}}/queues/agents' \
 --header 'accept: application/json' \
 --header 'accountId: {{accountId}}' \
 --header 'auth: <token>' \
@@ -31,7 +31,7 @@ curl --location 'http://{{host}}/agentassist/api/v1/public/{{IID}}/queues/agents
 ```
 When `agentIds` are passed:
 ```
-curl --location 'http://{{host}}/agentassist/api/v1/public/{{IID}}/queues/agents' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/{{botId}}/queues/agents' \
 --header 'accept: application/json' \
 --header 'accountId: {{accountId}}' \
 --header 'auth: <token>' \

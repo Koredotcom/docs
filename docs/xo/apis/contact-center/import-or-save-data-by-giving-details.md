@@ -5,7 +5,7 @@ To save/import data which is one of (skillsGroups, Queues, StandardResponses, Wa
 | **Parameter**    | **Description**                                                            | **Type**      |
 |--------------|------------------------------------------------------------------------|-----------|
 | **Method**       | POST                                                                   |           |
-| **Endpoint**     | `http://{{host}}/agentassist/api/public/analytics/{{IId}}/exportSmartAssistFunctionalities` |           |
+| **Endpoint**     | `http://{{host}}/agentassist/api/public/analytics/{{botId}}/exportSmartAssistFunctionalities` |           |
 | **Content Type** | `application/json`                                                     |           |
 | **Authorization**| `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |           |
 | **API Scope**    | SmartAssist Import and Export Feature                                   |           |
@@ -13,7 +13,7 @@ To save/import data which is one of (skillsGroups, Queues, StandardResponses, Wa
 ## Sample Request
 
 ```
-curl --location 'http://{{host}}/agentassist/api/v1/public/{{IId}}/queues' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/{{botId}}/queues' \
 --header 'accept: application/json' \
 --header 'accountId: {{accountId}}' \
 --header 'auth: <token>' \

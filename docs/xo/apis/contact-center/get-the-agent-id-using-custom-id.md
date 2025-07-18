@@ -8,7 +8,7 @@ To get the agent ID associated with a Custom ID (extension number).
 
 | **METHOD**   | GET                                                                                   |
 |--------------|---------------------------------------------------------------------------------------------|
-| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{IId}}/agents/customId/{{customId}}` |
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/customId/{{customId}}` |
 | **Content-Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token)|
 | **API Scope** | Configuration |
@@ -17,14 +17,14 @@ To get the agent ID associated with a Custom ID (extension number).
 
 | **Parameter** | **Description**                                                                 | **Type**          |
 |---------------|----------------------------------------------------------------------------------|-------------------|
-| host          | Environment URL, for example, https://platform.kore.ai                          | string, required  |
-| IId      | The application ID.      | string, required  |
+| host          | Environment URL, for example, `https://platform.kore.ai`                          | string, required  |
+| streamId      | botId or streamId. You can get it from the general settings page. application ID.      | string, required  |
 | customId      | The Agent’s ID from the customer’s system                                       | string, required  |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{IId}}/agents/customId/{{customId}}' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/customId/{{customId}}' \
 --header 'auth: {{jwt}}' \
 --header 'Content-Type: application/json' \
 --header 'accountId: {{accountId}}'

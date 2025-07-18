@@ -8,7 +8,7 @@ This API facilitates the downloading of voice call recordings. The API provides 
 
 | **Method**        | GET                                                                                                  |
 |---------------|------------------------------------------------------------------------------------------------------|
-| **Endpoint**      | `https://{{host}}/api/public/bot/{{IID}}/v2/recordings?sessionId={{sessionId}}`                                        |
+| **Endpoint**      | `https://{{host}}/api/public/bot/{{botId}}/v2/recordings?sessionId={{sessionId}}`                                        |
 | **Content Type**  | `application/json`                                                                                   |
 | **Authorization** | `auth: {{JWT}}` <br>                                     See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope**     | SmartAssist Recordings                                                                               |
@@ -18,7 +18,7 @@ This API facilitates the downloading of voice call recordings. The API provides 
 | **PARAMETER** | **DESCRIPTION**                                                           | **TYPE**          |
 |-----------|-----------------------------------------------------------------------|---------------|
 | host      | Environment URL, for example, https://platform.kore.ai            | string, required |
-| IId     | The application ID. | string, required |
+| botId     | botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Query Parameters
 
@@ -30,7 +30,7 @@ This API facilitates the downloading of voice call recordings. The API provides 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/api/public/bot/{{IID}}/v2/recordings?sessionId={{sessionId}}' \
+curl --location 'https://{{host}}/api/public/bot/{{botId}}/v2/recordings?sessionId={{sessionId}}' \
 --header 'auth: {{JWT_TOKEN}}' \
 --header 'Content-Type: application/json'
 ```

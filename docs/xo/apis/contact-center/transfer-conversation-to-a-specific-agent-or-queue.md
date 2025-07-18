@@ -4,7 +4,7 @@ To retrieve the recording of a specific call using either the `userId` or `sessi
 
 | **Method**   | POST                                                                                      |
 |----------|-------------------------------------------------------------------------------------------|
-| **Endpoint**| `https://{{host}}/agentassist/api/v1/public/{{IID}}/assign-conversation` |
+| **Endpoint**| `https://{{host}}/agentassist/api/v1/public/{{streamId}}/assign-conversation` |
 | **Content Type** | `application/json`                                                                          |
 | **Authorization** | `auth: {{JWT}}`<br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Routing                                                                                   |
@@ -14,7 +14,7 @@ To retrieve the recording of a specific call using either the `userId` or `sessi
 | **PARAMETER** | **DESCRIPTION**                                                                            | **TYPE**            |
 |-----------|----------------------------------------------------------------------------------------|-----------------|
 | host      | Environment URL, for example, `https://platform.kore.ai`                              | string, required|
-| IId  | The application ID.        | string, required|
+| streamId  | botId or streamId. You can get it from the general settings page.       | string, required|
 
 ## Query Parameters
 
@@ -33,7 +33,7 @@ Here is the HTML table converted to Markdown format:
 **Transfer to Agent**:
 
 ```
-curl --location 'http://host/agentassist/api/v1/public/{{IId}}/assign-conversation' \
+curl --location 'http://host/agentassist/api/v1/public/{{streamId}}/assign-conversation' \
 --header 'auth: <token>' \
 --header 'accountid: {{accountId}}' \
 --header 'Content-Type: application/json' \
@@ -46,7 +46,7 @@ curl --location 'http://host/agentassist/api/v1/public/{{IId}}/assign-conversati
 ```
 **Transfer to Queue**:
 ```
-curl --location 'http://localhost/agentassist/api/v1/public/{{IId}}/assign-conversation' \
+curl --location 'http://localhost/agentassist/api/v1/public/{{streamId}}/assign-conversation' \
 --header 'auth: <token>' \
 --header 'accountid: {{accountId}}' \
 --header 'Content-Type: application/json' \

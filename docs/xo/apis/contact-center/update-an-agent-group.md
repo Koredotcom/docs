@@ -1,10 +1,10 @@
 # Update an Agent Group
 
-To update a particular agent group with the given `IId` and `agentGroupId`.
+To update a particular agent group with the given `streamId` and `agentGroupId`.
 
 | **Method**      | PUT                                                               |
 |-------------|-------------------------------------------------------------------|
-| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{IId}}/agent-groups/{{agentGroupId}}` |
+| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{agentGroupId}}` |
 | **Content Type**| `application/json`                                                |
 | **Authorization** | `auth: {{JWT}}`                      <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                            |
 | **API Scope**   | SmartAssist Analytics                                            |
@@ -14,13 +14,13 @@ To update a particular agent group with the given `IId` and `agentGroupId`.
 | **Parameter** | **Description**                                                                                  | **Type**           |
 |-----------|----------------------------------------------------------------------------------------------|----------------|
 | host      | Environment URL, for example, https://platform.kore.ai                                     | string, required |
-| IId     | The application ID.               | string, required |
+| streamId     | The application ID.               | string, required |
 | id        | The Agent Group id.                                                                          | string, required |
 
 ## Sample Request
 
 ```
-curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{IId}}/agent-groups/{{agentGroupId}}' \
+curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{agentGroupId}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '
