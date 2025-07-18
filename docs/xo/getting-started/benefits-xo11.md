@@ -45,7 +45,7 @@ Key Capabilities:
 * Out-of-the-box event handlers to fulfill the user’s request.
 * Identifying the child bot intents from Universal Bot without the need for Bot Scoping Training; applicable for Universal Bots.
 
-With DialogGPT, businesses can overcome the limitations of traditional models, ensuring their virtual assistants provide a more accurate, responsive, and efficient user experience, all while simplifying the development process.
+With DialogGPT, businesses can overcome the limitations of traditional models, ensuring their agents provide a more accurate, responsive, and efficient user experience, all while simplifying the development process.
 
 <font size="4">Seamless Integration With Search Module - RAG Capabilities</font>
 
@@ -67,10 +67,10 @@ Key Capabilities
 
 * **Entity Collection**: The Agent Node simplifies the process of gathering entities within a conversation, reducing the need for multiple entity nodes. This streamlined approach enhances the user experience by making bot interactions more natural and user-friendly.
 * **System Context, Business Rules, and Exit Scenarios**: The Agent Node incorporates system context, business rules, and predefined exit scenarios to ensure accurate and relevant responses. This contextual intelligence helps guide the conversation, handle various user inputs effectively, and maintain alignment with enterprise business rules.
-* **Multilingual Support**: The Agent Node supports both English and non-English bot languages, enabling platform users to create virtual assistants that cater to a diverse user base and facilitate multilingual interactions.
+* **Multilingual Support**: The Agent Node supports both English and non-English bot languages, enabling platform users to create AI Agents that cater to a diverse user base and facilitate multilingual interactions.
 * **Configuration Flexibility**: The Agent Node can be configured like any other node in the XO Platform, providing flexibility in its integration within dialog tasks. This allows platform users to seamlessly incorporate the Agent Node into their existing conversational flows.
 * **Interaction with External Systems**: The introduction of tool calling expands the Agent Node's capabilities beyond text generation. It enables interaction with external systems and databases, facilitating real-time data retrieval, calculations, and system-specific operations. This integration allows for more dynamic and data-driven conversational experiences.
-* **Dynamic Prompt Enhancement**: The Agent Node's prompt is enhanced to include tool definitions and contextual information. The language model can dynamically decide whether to generate text or call a tool based on user input and ongoing conversation. The dynamic prompt adaptation ensures that the virtual assistant provides the most appropriate response or action at each step of the interaction.
+* **Dynamic Prompt Enhancement**: The Agent Node's prompt is enhanced to include tool definitions and contextual information. The language model can dynamically decide whether to generate text or call a tool based on user input and ongoing conversation. The dynamic prompt adaptation ensures that the agent provides the most appropriate response or action at each step of the interaction.
 
 <font size="4">Operational Efficiency</font>
 
@@ -498,7 +498,7 @@ Search AI introduces a customizable extraction strategy framework that adapts to
 * [Image-based Document Extraction -](../searchai/content-extraction/extraction.md#image-based-document-extraction) Capture the semantic meaning between textual and image content through **VDR-based embeddings**, enabling greater accuracy for complex documents containing nontextual layouts such as tables or forms. By interpreting the visual structure alongside the text, Search AI ensures more reliable indexing from complex document structures. 
 * [Markdown Extraction -](../searchai/content-extraction/extraction.md#markdown-extraction) Transforms each page of a document into structured Markdown format before further processing. This strategy is particularly effective in preserving the semantic structure of the original content.
 * [Layout Aware Extraction -](../searchai/content-extraction/extraction.md#layout-aware-extraction) Identifies objects in documents by combining OCR technology, layout detection models, and layout awareness rules. This approach enhances Search AI's ability to comprehend tables, graphs, and charts in documents and generate answers based on this information.
-* [Advanced HTML Extraction - ](../searchai/content-extraction/extraction.md#advanced-html-extraction) Intelligent processing of images and tables from HTML documents
+* [Advanced HTML Extraction -](../searchai/content-extraction/extraction.md#advanced-html-extraction) Intelligent processing of images and tables from HTML documents
 * [Custom Extraction -](../searchai/content-extraction/extraction.md#custom-extraction) Allows enterprises to modify the search data pipeline by inserting their custom extraction logic.
 
 **Multimodal Content Support**

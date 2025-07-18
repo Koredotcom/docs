@@ -1,6 +1,6 @@
 # Web & Mobile SDK: Message Formatting and Templates
 
-Kore.ai SDK allows you to override the default message formatting using markdown and apply templates to display custom-formatted bot messages to users. This topic describes the following:
+The Platform SDK allows you to override the default message formatting using markdown and apply templates to display custom-formatted AI Agent messages to users. This topic describes the following:
 
 * Supported template types
 * Template implementation details
@@ -16,7 +16,7 @@ The SDKs support the following message template types. Depending on the SDK, the
 Shows one of the following button choices for the end user for each option:
 
 * **URL button:** Opens a webpage in the application browser.
-* **Postback button:** Sends the payload defined by the developer to the XO Platform to initiate action, for example, opens a chat window to a live agent.
+* **Postback button:** Sends the payload defined by the developer to the Platform to initiate action, for example, opens a chat window to a live agent.
 
 **Required Parameters**
 
@@ -130,7 +130,7 @@ var message =
 
 ### Feedback Survey Templates
 
-The Kore.ai XO Platform supports three new templates for the web/mobile client as part of the feedback module. These include **NPS**, **CSAT**, and **Like/Dislike**.
+The Platform supports three new templates for the web/mobile client as part of the feedback module. These include **NPS**, **CSAT**, and **Like/Dislike**.
 
 While configuring the feedback survey, when the user selects a template, it’s available as an override for the web/mobile client in the dialog. The system presents the selected template configured for the survey when collecting feedback from the customer on the web/mobile client. These templates are available as generic templates during feedback survey configuration in the channel template override section.
 
@@ -497,7 +497,8 @@ print(JSON.stringify(message));
 
 ### Text Template
 
-Shows messages to the user using XO Platform defined default formatting. \
+Shows messages to the user using the Platform defined default formatting.
+
 **Example**
 
 ```javascript
@@ -878,7 +879,7 @@ on_user_message: function(requestId, data, callback) {
 
 ## Standard Markdown Support
 
-You can apply your formatting directly in JavaScript using Kore.ai markdown as described.
+You can apply your formatting directly in JavaScript using the Platform markdown as described.
 
 * **Bold** – *text to be bolded* Do not add spaces after or before the ” * ” symbol. For example, `Here is *bold*.`
 * **Italic** – ~test to be italicized~ Do not add spaces after or before the ” ~ ” symbol. For example, `Here is ~italics~.` Preceeding and succeeding _ will also italicise the enclosed text, i.e. `Here is _italics_.`
@@ -1047,4 +1048,4 @@ print(JSON.stringify(message));
 ```
 
 !!!note
-    To understand customized JavaScript responses and channel-specific templates, refer to _[Customize JavaScript Responses](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/#Customize_JavaScript_Responses)_ in _[User Prompts](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/)._
+    To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](../automation/use-cases/dialogs/prompt-editor.md).
