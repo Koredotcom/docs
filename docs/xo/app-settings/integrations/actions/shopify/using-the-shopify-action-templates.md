@@ -6,14 +6,14 @@ Steps to create a dialog task using the Shopify action templates:
 
 
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 
 3. On the Dialog Task pop-up, under the Integration, select the Shopify option to view the action templates.  
 <img src="../images/shopify-tem-img2.png" alt="Integrations - Shopify" title="Integrations - Shopify" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
 <img src="../images/shopify-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 ## Shopify Actions
@@ -357,7 +357,7 @@ Steps to find an order using an order ID:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to get an order by ID as shown below.  
+5. Follow the prompts in the App console to get an order by ID as shown below.  
 <img src="../images/shopify-tem-img7.png" alt="VA prompts to Get Order by ID" title="VA prompts to Get Order by ID" style="border: 1px solid gray;zoom:50%;"/>
 
 6. To view the order details for a given id click the **View Order** button.  
@@ -663,7 +663,7 @@ Steps to find orders by customer Id in Shopify:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to fetch orders by customer ID as shown below.  
+5. Follow the prompts in the App console to fetch orders by customer ID as shown below.  
 <img src="../images/shopify-tem-img13.png" alt="VA Prompt to Get Orders by Customer ID" title="VA prompt to Get Orders by Customer ID" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -752,7 +752,7 @@ Step to view products by name in Shopify:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to fetch products by name as shown below.  
+5. Follow the prompts in the App console to fetch products by name as shown below.  
 <img src="../images/shopify-tem-img16.png" alt="VA prompt to Get Products by Name" title="VA prompt to Get Products by Name" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Get Product by ID
@@ -841,7 +841,7 @@ Steps to get a product by ID in Shopify:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to find products by ID as shown below:  
+5. Follow the prompts in the App console to find products by ID as shown below:  
 <img src="../images/shopify-tem-img20.png" alt="VA prompt to Get Product by ID" title="VA prompt to Get Product by ID" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Get products by Collection ID
@@ -898,7 +898,7 @@ Steps to find products using the collection ID in Shopify:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to fetch products by collection ID as shown below.  
+5. Follow the prompts in the App console to fetch products by collection ID as shown below.  
 <img src="../images/shopify-tem-img23.png" alt="VA promot to Get Products by Collection ID" title="VA promot to Get Products by Collection ID" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Get variants by Product ID
@@ -918,5 +918,5 @@ Steps to get variants by product ID in Shopify:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to fetch variants using the product ID as shown below.  
+5. Follow the prompts in the App console to fetch variants using the product ID as shown below.  
 <img src="../images/shopify-tem-img26.png" alt="VA promot to Get Variants by Product ID" title="VA prompt to Get Variants by Product ID" style="border: 1px solid gray;zoom:50%;"/>

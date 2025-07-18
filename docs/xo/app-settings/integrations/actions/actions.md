@@ -18,7 +18,7 @@ The **Actions** module is available under the **App Settings** > **Integrations*
 
 ## Actions Enablement
 
-By default, your Virtual Assistant (VA) will not exchange data with any integration unless you authorize one or more actions through which it can communicate. You can enable an integration and perform actions in a third-party system. 
+By default, your AI Agent will not exchange data with any integration unless you authorize one or more actions through which it can communicate. You can enable an integration and perform actions in a third-party system. 
 
 
 ## Authorization Types
@@ -33,7 +33,7 @@ OAuth v2 is the new version of the open protocol to allow secure authorization v
 
 ### Basic HTTP Authentication
 
-HTTP Basic Auth is a simple method that creates a username and password style authentication for HTTP requests. This technique uses a header called Authorization, with a base64 encoded representation of the username and password. For more information, read the [Bot Authorization Overview](../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
+HTTP Basic Auth is a simple method that creates a username and password style authentication for HTTP requests. This technique uses a header called Authorization, with a base64 encoded representation of the username and password. For more information, read the [App Authorization Overview](../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 
 ### API Key
@@ -44,9 +44,9 @@ Actions can be authorized based on the authorization profiles that are supported
 
 !!! note
 
-    An email notification is sent to all the bot developers when the authorization token expires for any of the Prebuilt Action Integrations in the bot. The notification requests the bot developer to reauthorize. The integration moves to an error state as soon as the token expires. The service call fails during the run time, upon expiry of authorization token and an error message, "Something went wrong" is displayed to the end-user.
+    An email notification is sent to all the app developers when the authorization token expires for any of the Prebuilt Action Integrations in the App. The notification requests the app developer to reauthorize. The integration moves to an error state as soon as the token expires. The service call fails during the run time, upon expiry of authorization token and an error message, "Something went wrong" is displayed to the end-user.
 
-The email template which is sent to the bot developer upon token expiry is as follows:  
+The email template which is sent to the app developer upon token expiry is as follows:  
 <img src="../images/actions-img1.png" alt="Email Template" title="Email Template" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -74,10 +74,10 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
 | Freshservice ITSM | Integrates with Freshservice ITSM to create, view, update, search and delete tickets. | 6   | Basic Auth | [Learn more](./freshservice/configuring-the-freshservice-action.md){:target="_blank"} |
 | Google Maps | Integrates with Google Maps to find information regarding accurate Locations and places. | 2   | Basic Auth | [Learn more](./google-maps/configuring-the-google-maps-action.md){:target="_blank"} |
 | Here | Integrates with Here instance to find locations by text. | 1   | Basic Auth | [Learn more](./here/configuring-the-here-action.md){:target="_blank"} |
-| HubSpot | Integrates with HubSpot CRM to customize the lead details through a virtual assistant. | 10  | Dev OAuth and OAuth | [Learn more](./hubspot/configuring-the-hubspot-action.md){:target="_blank"} |
+| HubSpot | Integrates with HubSpot CRM to customize the lead details through an AI Agent. | 10  | Dev OAuth and OAuth | [Learn more](./hubspot/configuring-the-hubspot-action.md){:target="_blank"} |
 | JIRA | Integrates with JIRA to create, view, update and delete issues. | 5   | Basic Auth | [Learn more](./jira/configuring-the-jira-action.md){:target="_blank"} |
 | Microsoft Graph | Integrates with Microsoft Graph to create, view, and update events and to-do lists, and send emails to users. | 5   | Basic Auth | [Learn more](./microsoft-graph/configuring-the-microsoft-graph-action.md){:target="_blank"} |
-| OpenAI | Integrates with OpenAI ChatGPT to generate answers from context and extract skills from the resume through a virtual assistant. | 2   | API Key OAuth | [Learn more](./open-ai/configuring-the-openai-action.md){:target="_blank"} |
+| OpenAI | Integrates with OpenAI ChatGPT to generate answers from context and extract skills from the resume through an AI Agent. | 2   | API Key OAuth | [Learn more](./open-ai/configuring-the-openai-action.md){:target="_blank"} |
 | Salesforce CRM | Integrates with Salesforce CRM to power your conversations to create Leads / Opportunities and other functions. | 7   | Dev OAuth and OAuth | [Learn more](./salesforce/configuring-the-salesforce-crm-action.md){:target="_blank"} |
 | Shopify | Integrates with Shopify Shop instance to find information regarding Customers, Products, and Orders. | 6   | Basic OAuth | [Learn more](./shopify/configuring-the-shopify-action.md){:target="_blank"} |
 | ServiceNow | Integrates with ServiceNow to build the digital workflows on a single, unified platform. | 10  | Basic OAuth | [Learn more](./servicenow/configuring-the-servicenow-action.md){:target="_blank"} |

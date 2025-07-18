@@ -1,6 +1,6 @@
 # Manage Data Tables and Views in Admin Console
 
-The Kore.ai XO Platform now allows an administrator to view all data tables and views in the workspace. An administrator can also change the ownership of the data tables and views.
+The Platform now allows an administrator to view all data tables and views in the workspace. An administrator can also change the ownership of the data tables and views.
 
 
 ## View Data Tables and Change Ownership
@@ -9,7 +9,7 @@ As an administrator you can view all data tables in the workspace.
 
 To view data tables, follow these steps:
 
-1. Log in to the [Kore.ai Admin Console](https://qa1-bots.kore.ai/admin/){:target="_blank"} with your admin user credentials.
+1. Log in to the [Kore.ai Admin Console](https://platform.kore.ai/admin/){:target="_blank"} with your admin user credentials.
 2. Navigate to **Data Tables & View > Data Tables**.  
 <img src="../images/data-table-admin.png" alt="Data Tables" title="Data Tables" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -27,7 +27,7 @@ To view data tables, follow these steps:
 
 As an administrator you can view all table views in the workspace.
 
-1. Log in to the [Kore.ai Admin Console](https://qa1-bots.kore.ai/admin/){:target="_blank"} with your admin user credentials.
+1. Log in to the [Kore.ai Admin Console](https://platform.kore.ai/admin/){:target="_blank"} with your admin user credentials.
 2. Navigate to **Data Tables & View > Table Views**.  
 <img src="../images/data-view-admin.png" alt="Bot metrics" title="Bot metrics" style="border: 1px solid gray;zoom:50%;"/>
 

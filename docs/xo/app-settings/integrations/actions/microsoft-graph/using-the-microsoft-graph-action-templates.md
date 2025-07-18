@@ -10,7 +10,7 @@ Steps to create a dialog task using Microsoft Graph action templates:
 3. On the Dialog Task pop-up, under the Integration, select the **Microsoft Graph** option to view the action templates.  
 <img src="../images/ms-graph-tem-img2.png" alt="Integration - Microsoft Graph" title="Integration - Microsoft Graph" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
 <img src="../images/ms-graph-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -285,7 +285,7 @@ Steps to view all events in the Microsoft Graph integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all events as shown below:  
+5. Follow the prompts in the App console to view all events as shown below:  
 <img src="../images/ms-graph-tem-img6.png" alt="VA prompt to view all events" title="VA prompt to view all events" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You can now view events in the Microsoft Graph system.
@@ -373,7 +373,7 @@ Steps to view all to-do lists in the Microsoft Graph integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all to-do lists as shown below.  
+5. Follow the prompts in the App console to view all to-do lists as shown below.  
 <img src="../images/ms-graph-tem-img9.png" alt="VA prompt to view All Todo Lists" title="VA prompt to view All Todo Lists" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You can now view all to-do lists in the Microsoft Graph system.
@@ -506,7 +506,7 @@ Steps to create an event in the Microsoft Graph integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create an event as shown below.  
+5. Follow the prompts in the App console to create an event as shown below.  
 <img src="../images/ms-graph-tem-img12.png" alt="VA prompt to create an event" title="VA prompt to create an event" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You can now view this event in the Microsoft Graph system.
@@ -554,7 +554,7 @@ Steps to create a to-do list in the Microsoft Graph integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create a todo list as shown below.  
+5. Follow the prompts in the App console to create a todo list as shown below.  
 <img src="../images/ms-graph-tem-img15.png" alt="VA prompt to create todo list" title="VA prompt to create todo list" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You can now view this todo list in the Microsoft Graph system.
@@ -604,5 +604,5 @@ Steps to send email from the Microsoft Graph integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to send an email, as shown below.  
+5. Follow the prompts in the App console to send an email, as shown below.  
 <img src="../images/ms-graph-tem-img18.png" alt="VA prompt to send email" title="VA prompt to send email" style="border: 1px solid gray;zoom:50%;"/>
