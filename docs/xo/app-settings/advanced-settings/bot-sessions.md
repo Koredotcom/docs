@@ -1,8 +1,8 @@
 # Conversation Sessions
 
-Conversation sessions are defined as uninterrupted interactions between the bot and the user. These sessions are used in multiple analytics dashboards in the Bot Builder as well as Bot Admin Console platforms.
+Conversation sessions are defined as uninterrupted interactions between the AI Agent and the user. These sessions are used in multiple analytics dashboards in the App Builder as well as Admin Console platforms.
 
-Kore.ai virtual assistant platform allows you to customize how these Conversation Sessions are to be created and closed.
+Kore.ai platform allows you to customize how these Conversation Sessions are to be created and closed.
 
 !!! note
 
@@ -11,7 +11,7 @@ Kore.ai virtual assistant platform allows you to customize how these Conversatio
 
 ## Overview
 
-A Conversation Session is defined as an uninterrupted volley between the end-user and the bot.
+A Conversation Session is defined as an uninterrupted volley between the end-user and the AI Agent.
 
 
 * Before the release of v7.2 of the platform – a new session was created after the _inactivity duration (set as 15 mins)_ has elapsed since the end-users’ last interaction.
@@ -22,10 +22,10 @@ A Conversation Session is defined as an uninterrupted volley between the end-use
     * Proactively close the sessions after inactivity – see [Manage Sessions](#manage-sessions) to know more.
     * Not proactively close the sessions after inactivity – retain the v7.2 behavior described above;
 
-Conversation Sessions are created for all interactions with the virtual assistant. These include:
+Conversation Sessions are created for all interactions with the AI Agent. These include:
 
 * All conversations that include one or more messages from the user marked as **interactive sessions**. These include all end-user interactions across all channels and events including providing authorization details.
-* All Virtual assistant initiated conversion sessions like onConnect event messages are recorded as **non-interactive sessions**. These sessions will be updated as Interactive sessions as soon as a user message is received. Non-interactive sessions are not considered for calculating the billing sessions.
+* All AI Agent initiated conversion sessions like onConnect event messages are recorded as **non-interactive sessions**. These sessions will be updated as Interactive sessions as soon as a user message is received. Non-interactive sessions are not considered for calculating the billing sessions.
 * **Developer interactions** are also included as conversation sessions. A flag differentiates the user sessions from developer sessions and billing sessions are not created for these developer sessions.
 
 !!! note
@@ -72,7 +72,7 @@ Conversation Sessions are created for all interactions:
 
 * All **end-user interactions** across all channels and events – Conversation sessions are created for On_connect – Run a script, Run a Message, Trigger a Dialog scenario. There are two categories of these conversation sessions:
     * **Interactive sessions** are conversations that include one or more messages from the user.
-    * **Non-interactive sessions** are conversations with no messages from the user. All bot initiated conversion sessions start as ‘Non-interactive’. These sessions are updated as Interactive sessions as soon as a user message is received. The non-interactive sessions are not considered for calculating the billing sessions.
+    * **Non-interactive sessions** are conversations with no messages from the user. All AI Agent initiated conversion sessions start as ‘Non-interactive’. These sessions are updated as Interactive sessions as soon as a user message is received. The non-interactive sessions are not considered for calculating the billing sessions.
 
 * **Developer interactions** will also be considered for creating conversation sessions but these are marked as different from the user sessions and are not considered for Billing Sessions.
 
@@ -100,7 +100,7 @@ Conversation Sessions are created for all interactions:
 
 * Post-session closure, the following information or variables will be cleared:
     * Conversation session;
-    * Bot User Session (developer-defined variables without custom TTL)
+    * App User Session (developer-defined variables without custom TTL)
     * Dialog Context (Topic File and Conversation Details)
     * If configured, before closing the conversation session, the platform will proactively send a session closure message to the users on supported channels.
 

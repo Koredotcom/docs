@@ -20,7 +20,7 @@ This document provides detailed instructions on the integration process of the K
 * NiceCX administrator having access to a NICE CX Account and with privileges to set up the below configurations and able to receive calls and chats on agent desktop.
 * [NICE CX Studio](https://help.nice-incontact.com/content/studio/studio.htm){:target="_blank"} installed on your windows device.
 * Agent Assist Hub enabled for your account. Contact your NICE CX representative. Note this requires an extra license cost.
-* Access to Kore AgentAssist application and familiarity with creating and configuring an AgentAssist Bot.
+* Access to Kore AgentAssist application and familiarity with creating and configuring a Kore AI Agent.
 * Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID and SIP URI. Read [Configure Voice Channel](https://docs.kore.ai/agentassist/channels/voice/){:target="_blank"} and [Chat](https://docs.kore.ai/agentassist/channels/chat/){:target="_blank"} for a walkthrough.
 
 ## Definitions
@@ -75,7 +75,7 @@ NICE CX Studio > Import Chat & Voice Scripts and Configure Parameters
    </td>
    <td>BotId
    </td>
-   <td>A unique identifier assigned to a bot.
+   <td>A unique identifier assigned to an AI Agent.
    </td>
    <td><strong>Channels > Chat</strong> section of the <a href="https://agentassist.kore.ai" target=" blank">Agent AI</a> configuration portal.
    </td>
@@ -224,7 +224,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 
     !!! note
 
-        If the language parameter is not provided, English (en) is used as the default. Refer to this [doc](https://docs.kore.ai/agentassist/set-up-agentassist/supported-languages/){:target="_blank"} to obtain the language code corresponding to your bot’s language.  
+        If the language parameter is not provided, English (en) is used as the default. Refer to this [doc](https://docs.kore.ai/agentassist/set-up-agentassist/supported-languages/){:target="_blank"} to obtain the language code corresponding to your AI Agent's language.  
 
     <img src="../nice-max-images/configuration-parameters-8.png" alt="configuration-parameters" title="configuration-parameters" style="border: 1px solid gray; zoom:80%;">
 
@@ -247,8 +247,8 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         2. Bot Client Secret
         3. Bot ID
         4. Agent AI Widget URL
-        5. Bot Language Code - “en” is set as the default language. Refer to this [doc](https://docs.kore.ai/agentassist/set-up-agentassist/supported-languages/){:target="_blank"} to provide the language code for your bot's language.
-    2. Custom Data: The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot. Refer to [Access Custom Data in Agent AI Bot](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access customdata in the bot. 
+        5. Bot Language Code - “en” is set as the default language. Refer to this [doc](https://docs.kore.ai/agentassist/set-up-agentassist/supported-languages/){:target="_blank"} to provide the language code for your AI Agent's language.
+    2. Custom Data: The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this custom data will be accessible in the UserContext of the AI Agent. Refer to [Access Custom Data in Agent AI Bot](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the AI Agent. 
  
         Include your data in the customdata object (one key-value pair per line). For example: 
 

@@ -44,12 +44,12 @@ The training data for fine-tuning and evaluating the model is created using the 
 
 The training data consists of multiple samples for **each language** across various categories and use cases. Subsequent sections of this document provide more details about the model's accuracy for different use categories. 
 
-The complete training data is versioned and available in Kore.ai’s XO GPT Data Repository. This data is proprietary to Kore.ai. Access to it is restricted to Kore.ai and can be made available to specific customers/partners/prospects only if needed.   
+The complete training data is versioned and available in Kore.ai’s XO GPT Data Repository. This data is proprietary to Kore.ai. Access to It's restricted to Kore.ai and can be made available to specific customers/partners/prospects only if needed.   
 
 
 ### Data Processing
 
-Once the data is collected, it is cleaned to 
+Once the data is collected, It's cleaned to 
 
 * Remove any irrelevant or noisy content 
 * Standardizing formats 
@@ -85,7 +85,7 @@ While internal testing shows strong performance, real-world results may vary due
 
 ### Model Benchmarks
 
-This section highlights the features, updates, and changes that vary between different versions of the XO GPT Model. It provides version-specific information that can help identify what is unique to each version. 
+This section highlights the features, updates, and changes that vary between different versions of the XO GPT Model. It provides version-specific information that can help identify what's unique to each version. 
 
 * To view the Answer Generation Model benchmarking details, click [here](../generative-ai-tools/xogpt-answer-generation-model.md).
 * To view the Conversation Summary Model benchmarking details, click [here](../generative-ai-tools/xogpt-conversation-summarization-model.md).

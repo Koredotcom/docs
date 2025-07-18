@@ -14,7 +14,7 @@ For every user query, the Retrieval Engine shortlists relevant chunks from the p
 * **Latency**: The time consumed by the commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This impacts the user experience.
 * **Cost**: Commercial models often have a per-request cost, and it rises with high scale usages. This makes managing costs difficult, especially for large-scale deployments.
 * **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is crucial in industries that involve sensitive or proprietary information.
-* **Lack of Customization**: Commercial models are not tailored to specific use cases or industries, leading to less accurate or relevant responses.
+* **Lack of Customization**: Commercial models aren't tailored to specific use cases or industries, leading to less accurate or relevant responses.
 * **Limited Control**: There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
 * **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
@@ -210,7 +210,7 @@ The table presents various use cases or scenarios used to train the XO-GPT Inten
 
 ### Sample Outputs
 
-The DialogGPT model is a core component of the DialogGPT’s Conversation Management. It is designed to analyze user queries and generate structured responses tailored to the specific conversation types enabled within the system. It handles:
+The DialogGPT model is a core component of the DialogGPT’s Conversation Management. It's designed to analyze user queries and generate structured responses tailored to the specific conversation types enabled within the system. It handles:
 
 * **Fulfillment Type and Category Classification**: Classifies the appropriate fulfillment type and category required to address the user's request.
 * **Intent Identification**: Accurately determines the winning intents associated with each user query.
@@ -269,7 +269,7 @@ The model is critical in ensuring contextually relevant and goal-oriented intera
 <p>
 (Category 2)
    </td>
-   <td>When a user query occurs in the middle of an ongoing conversation and directly responds to a bot inquiry, it is treated as a ‘continue.’ 
+   <td>When a user query occurs in the middle of an ongoing conversation and directly responds to an AI Agentinquiry, It's treated as a ‘continue.’ 
    </td>
    <td>The conversation continues seamlessly based on the user input.
    </td>
@@ -290,12 +290,12 @@ The model is critical in ensuring contextually relevant and goal-oriented intera
 
 <li>Restart Interaction: when the user explicitly asks to start the conversation from the beginning or discard the ongoing context.</li>
 
-<li>End Interaction: where the user indicates they are done with the current interaction, either because their issue has been resolved or for other reasons</li>
+<li>End Interaction: where the user indicates they're done with the current interaction, either because their issue has been resolved or for other reasons</li>
 
-<li>Agent Transfer: this includes explicit and implicit requests for escalation to a human agent when the bot’s assistance is no longer sufficient.</li>
+<li>Agent Transfer: this includes explicit and implicit requests for escalation to a human agent when an AI Agent is no longer sufficient.</li>
 </ul>
    </td>
-   <td>Conversational intents can be configured as events within the bot. The corresponding event is automatically triggered based on the model's classification, enabling appropriate handling of the user’s input within the conversational flow.
+   <td>Conversational intents can be configured as events within the AI Agent. The corresponding event is automatically triggered based on the model's classification, enabling appropriate handling of the user’s input within the conversational flow.
    </td>
   </tr>
   <tr>
@@ -303,7 +303,7 @@ The model is critical in ensuring contextually relevant and goal-oriented intera
 <p>
 (Category 2)
    </td>
-   <td>When the user input is not deemed relevant for any of the above categories, it is categorized as No Intent. 
+   <td>When the user input isn't deemed relevant for any of the above categories, It's categorized as No Intent. 
    </td>
    <td>A Fallback Intent can be configured for cases where no intent is identified. This fallback is automatically triggered to handle unrecognized or unsupported user queries gracefully.
    </td>
@@ -319,15 +319,15 @@ Sample Input
 ```python
 [
 
-"Bot: Hello! How can I assist you today?"
+"AI Agent: Hello! How can I assist you today?"
 
 "User: I would like to schedule a virtual consultation with a healthcare provider."
 
-"Bot: Sure! Could you please provide me with a preferred date and time for your virtual consultation?"
+"AI Agent: Sure! Could you please provide me with a preferred date and time for your virtual consultation?"
 
 "User: I am available on October 15th at 3 PM."
 
-"Bot: Thank you. Let me check the availability of healthcare providers for that date and time. You are booked for a virtual consultation on October 15th at 3 PM. Is there anything else I can help you with today?"
+"AI Agent: Thank you. Let me check the availability of healthcare providers for that date and time. You are booked for a virtual consultation on October 15th at 3 PM. Is there anything else I can help you with today?"
 
 ]
 ```
@@ -440,11 +440,11 @@ Sample Input
 ```python
 [
 
-'Bot: Welcome to our banking service! How may I assist you today?', 
+'AI Agent: Welcome to our banking service! How may I assist you today?', 
 
 'User: Hi, I'm interested in some financial products.',
 
-'Bot: Certainly! I'd be happy to help. What specific financial products are you interested in?']
+'AI Agent: Certainly! I'd be happy to help. What specific financial products are you interested in?']
 ```
 
 **Active Dialog Context**
@@ -548,7 +548,7 @@ Sample Input
 
 "score": 0.60929346,
 
-"Primary Question": "What is the referral amount for a home loan ?",
+"Primary Question": "What's the referral amount for a home loan ?",
 
 "Alternate Questions": [],
 
@@ -590,7 +590,7 @@ Sample Input
 
 "score": 1.5174901,
 
-"chunkText": "The interest rate may change periodically based on market conditions, potentially affecting your monthly payments. 2. How much can I borrow for a home loan? The amount you can borrow depends on various factors, including your income, credit score, debt-to-income ratio, and the property's value. Lenders typically assess these criteria to determine your eligibility and loan amount. 3. What is a down payment, and how much do I need? A down payment is the upfront amount you pay when purchasing a home. It generally ranges from 3% to 20% of the home's purchase price. Some loan programs may allow for lower down payments, while others may require a higher percentage, depending on your creditworthiness and the lender's policies."
+"chunkText": "The interest rate may change periodically based on market conditions, potentially affecting your monthly payments. 2. How much can I borrow for a home loan? The amount you can borrow depends on various factors, including your income, credit score, debt-to-income ratio, and the property's value. Lenders typically assess these criteria to determine your eligibility and loan amount. 3. What's a down payment, and how much do I need? A down payment is the upfront amount you pay when purchasing a home. It generally ranges from 3% to 20% of the home's purchase price. Some loan programs may allow for lower down payments, while others may require a higher percentage, depending on your creditworthiness and the lender's policies."
 
 }
 
@@ -616,15 +616,15 @@ Output:
 ```python
 [
 
-'Bot: Hello! How can I assist you with your banking needs today?'
+'AI Agent: Hello! How can I assist you with your banking needs today?'
 
 'User: Hi, I'd like to set up automatic payments for my utility bills.'
 
-'Bot: Sure, I can help with that. Could you please provide the payment type and the account from which you'd like the payments to be made?'
+'AI Agent: Sure, I can help with that. Could you please provide the payment type and the account from which you'd like the payments to be made?'
 
 'User: I'll be setting up payments for electricity and water. Use my checking account ending in 1234.'
 
-'Bot: Got it. How much would you like to pay for each bill, and how often?'
+'AI Agent: Got it. How much would you like to pay for each bill, and how often?'
 
 ]
 ```
@@ -695,7 +695,7 @@ Output:
 **Conversation History**
 
 ```python
-['Bot: Hello! Welcome to ABC Bank. How can I assist you today?', 'User: Hi, I'd like to open a new account.', 'Bot: Great! We offer savings, current, and fixed deposit accounts. Which type of account would you like to open?', 'User: I would like to open a savings account.', 'Bot: To open a savings account, we will need some personal information and specific documents. Could you please provide your full name and contact details?', 'User: Sure, my name is John Doe, and my contact number is 123-456-7890.', 'Bot: Thank you, John. We also need you to submit a few documents, such as proof of your ID and proof of address. Do you have these documents ready?', 'User: Yes, I have my passport and a utility bill.', 'Bot: Perfect. Lastly, can you let us know the initial deposit amount you would like to make?']
+['AI Agent: Hello! Welcome to ABC Bank. How can I assist you today?', 'User: Hi, I'd like to open a new account.', 'AI Agent: Great! We offer savings, current, and fixed deposit accounts. Which type of account would you like to open?', 'User: I would like to open a savings account.', 'AI Agent: To open a savings account, we will need some personal information and specific documents. Could you please provide your full name and contact details?', 'User: Sure, my name is John Doe, and my contact number is 123-456-7890.', 'AI Agent: Thank you, John. We also need you to submit a few documents, such as proof of your ID and proof of address. Do you have these documents ready?', 'User: Yes, I have my passport and a utility bill.', 'AI Agent: Perfect. Lastly, can you let us know the initial deposit amount you would like to make?']
 ```
 
 **Active Dialog Context**
@@ -790,15 +790,15 @@ Output:
 **Conversation History** 
 
 ```python
-['Bot: Hello! How can I assist you today in managing your HR tasks?', "User: change supervisor",
+['AI Agent: Hello! How can I assist you today in managing your HR tasks?', "User: change supervisor",
 
-'Bot: I understand you want to update the reporting structure. Could you please provide me with the name of the employee whose supervisor you would like to change?']
+'AI Agent: I understand you want to update the reporting structure. Could you please provide me with the name of the employee whose supervisor you would like to change?']
 ```
 
 **Active Dialog Context**
 
 ```
-{'dialog_name': 'Supervisor Change', 'description': "This intent allows the manager to reassign employee's direct supervisor. It ensures that reporting structures are kept up-to-date and reflects organizational changes efficiently. It is exclusively for updating reporting structures.", 'current_node': {'name': 'employee_name', 'type': 'entity'}}
+{'dialog_name': 'Supervisor Change', 'description': "This intent allows the manager to reassign employee's direct supervisor. It ensures that reporting structures are kept up-to-date and reflects organizational changes efficiently. It's exclusively for updating reporting structures.", 'current_node': {'name': 'employee_name', 'type': 'entity'}}
 ```
 
 **Dialog Chunks** 
@@ -836,7 +836,7 @@ Output:
 
 "score": 0.5770545,
 
-"Primary Question": "What is the process to check my remaining leave balance?",
+"Primary Question": "What's the process to check my remaining leave balance?",
 
 "Alternate Questions": [],
 
@@ -884,7 +884,7 @@ Output:
 
 !!! note
 
-    When a bot has PII (Personally Identifiable Information) enabled, any user input that matches a PII field is masked to ensure user confidentiality. As a result, the masked input is not available for intent identification, which may impact the model's ability to recognize user intents accurately.
+    When an AI Agenthas PII (Personally Identifiable Information) enabled, any user input that matches a PII field is masked to ensure user confidentiality. As a result, the masked input isn't available for intent identification, which may impact the model's ability to recognize user intents accurately.
 
 ## XO GPT - Model Building Process
 
@@ -892,7 +892,7 @@ The model-building process consists of several key stages that form the backbone
 
 ## Model Benchmarks
 
-This section highlights the features, updates, and changes that vary across different versions of the Intent Identification Model. It provides version-specifics, which can help identify what is unique to each version.
+This section highlights the features, updates, and changes that vary across different versions of the Intent Identification Model. It provides version-specifics, which can help identify what's unique to each version.
 
 The following table summarizes the versions covered in this document:
 
@@ -904,7 +904,7 @@ The following table summarizes the versions covered in this document:
 
 #### Model Choice
 
-We evaluate various community models that are suitable for response generation and fine-tune with our proprietary data described in the previous section. One or more candidate models are used throughout the training and evaluation phase. The model that performs better in accuracy, safety, latency, etc., will be deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer model versions. Currently, we are using [Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) as one of the base models for fine-tuning and deployment.
+We evaluate various community models that are suitable for response generation and fine-tune with our proprietary data described in the previous section. One or more candidate models are used throughout the training and evaluation phase. The model that performs better in accuracy, safety, latency, etc., will be deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer model versions. Currently, we're using [Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) as one of the base models for fine-tuning and deployment.
 
 <table>
   <tr>
@@ -1183,9 +1183,9 @@ The model is hosted on infrastructure with 2 A10 GPUs. Some of the other general
 
 #### Benchmarks Summary v1
 
-To compare and contrast the performance of the fine-tuned model, we have considered the following other models:
+To compare and contrast the performance of the fine-tuned model, we've considered the following other models:
 
-* **Phi4**: A lightweight language model from Microsoft designed for efficiency and strong reasoning abilities in a smaller parameter range. It is optimized for cost-effective deployment while maintaining competitive performance on reasoning and language understanding tasks. 
+* **Phi4**: A lightweight language model from Microsoft designed for efficiency and strong reasoning abilities in a smaller parameter range. It's optimized for cost-effective deployment while maintaining competitive performance on reasoning and language understanding tasks. 
 * **GPT 4o**: A large language model developed by OpenAI, known for its advanced capabilities across various tasks (note: there's no official "GPT 4o mini" version).
 * **Llama 3.1 8b**: A powerful open-source large language model with 8 billion parameters, known for its strong performance across various tasks, including multilingual dialogue, text generation, and understanding.
 

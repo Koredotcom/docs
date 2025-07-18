@@ -9,7 +9,7 @@ Review the model and feature support matrix for the [GenAI Features](genai-featu
 
 ## Pre-built LLM Integration
 
-The XO Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompt templates and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the XO platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
+The Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompt templates and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the Platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
 
 
 **Configure Pre-built LLM Integration**
@@ -44,7 +44,7 @@ Steps to configure a pre-built LLM:
 
 ## Provider's New LLM Integration
 
-The XO Platform enables you to integrate newly launched language models into the out-of-box integration framework (OpenAI, Azure OpenAI, and Anthropic) with the required authentication. This ensures that newly launched models are immediately available without waiting for the platform to add them. Initially, these models do not include a pre-built/system prompt template, but you must create custom prompts for immediate use. Over time, the platform adds system prompts and templates while maintaining security and ensuring seamless adoption.
+The Platform enables you to integrate newly launched language models into the out-of-box integration framework (OpenAI, Azure OpenAI, and Anthropic) with the required authentication. This ensures that newly launched models are immediately available without waiting for the platform to add them. Initially, these models do not include a pre-built/system prompt template, but you must create custom prompts for immediate use. Over time, the platform adds system prompts and templates while maintaining security and ensuring seamless adoption.
 
 
 **Key Benefits**
@@ -84,11 +84,11 @@ Steps to configure a Provider's New LLM Integration:
 
 ## Custom LLM Integration Framework
 
-The XO Platform now enables enterprises to power up their virtual assistants with any Large Language Model (LLM) of their preference. The bring-your-own (BYO) model framework supports integrations with externally hosted models by third parties as well as models hosted by the enterprises themselves. It allows the creation of custom prompts that are optimized for their specific purposes and models. This generic framework works seamlessly with the Auth Profiles module of the platform, enabling enterprises to use the authentication mechanism of their choice.
+The Platform now enables enterprises to power up their AI Agent with any Large Language Model (LLM) of their preference. The bring-your-own (BYO) model framework supports integrations with externally hosted models by third parties as well as models hosted by the enterprises themselves. It allows the creation of custom prompts that are optimized for their specific purposes and models. This generic framework works seamlessly with the Auth Profiles module of the platform, enabling enterprises to use the authentication mechanism of their choice.
 
 !!! note
 
-    The Kore.ai XO Platform offers generative AI features for English and non-English NLU and VA languages.
+    The Platform offers generative AI features for English and non-English NLU and an AI Agent languages.
 
 
 **Configure Custom LLM Integration**
@@ -104,7 +104,7 @@ Steps to Integrate a Custom LLM:
 3. On the **Configuration** tab, enter the details like **Integration Name**, **Model Name**, **Endpoint**, and **Headers**.  
 <img src="../images/customint.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
 
-4. On the **Auth** tab, select an existing authorization profile from the drop-down or create a new profile to use for this request. For more information, see the[ Bot Authorization Overview](../app-settings/dev-tools/bot-authorization/bot-authentication.md) article. 
+4. On the **Auth** tab, select an existing authorization profile from the drop-down or create a new profile to use for this request. For more information, see the[ App Authorization Overview](../app-settings/dev-tools/bot-authorization/bot-authentication.md) article. 
     ![alt_text](images/llm-integration(15).png  )
 
     !!! note
@@ -131,7 +131,7 @@ Steps to Integrate a Custom LLM:
 ## Amazon Bedrock LLM Integration Framework
 
 
-XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the XO Platform. The users can create custom prompts for their specific use cases and use the connected models across GenAI features. While Amazon Bedrock is available as an OOB integration, XO Platform does not provide any system prompts or templates. Users can only use the model with the help of custom prompts.
+The Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the Platform. The users can create custom prompts for their specific use cases and use the connected models across GenAI features. While Amazon Bedrock is available as an OOB integration, the Platform doesn't provide any system prompts or templates. Users can only use the model with the help of custom prompts.
 
 !!! note
 
@@ -171,7 +171,7 @@ Steps to integrate an Amazon Bedrock:
 
 The platform now enables seamless configuration of custom and pre-built LLMs, including newly launched ones, by allowing you to use content, context, and environment variables, including secure ones. Secure Variables, particularly for environment settings, function just as smoothly as the current system ensures.
 
-Ensure all necessary variables are set up before configuring the LLM. For more details, see [Bot Variables](../app-settings/variables/using-bot-variables.md).
+Ensure all necessary variables are set up before configuring the LLM. For more details, see [App Variables](../app-settings/variables/using-bot-variables.md).
 
 
 !!! note
@@ -305,7 +305,7 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
 
 ## Kore.ai XO GPT Integration
 
-The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Current capabilities include Conversation Summarization, User Query Rephrasing, Vector Generation, Answer Generation, and DialogGPT - Conversation Orchestration.
+The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI Agents. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Current capabilities include Conversation Summarization, User Query Rephrasing, Vector Generation, Answer Generation, and DialogGPT - Conversation Orchestration.
 
 
 
@@ -344,7 +344,7 @@ When you reset/delete the integration, the system does the following:
 
 !!! note
 
-    This change impacts only the in-development copy of the VA. The changes will apply to the published version when you later publish the VA with NLP configurations.
+    This change impacts only the in-development copy of the app. The changes will apply to the published version when you later publish the app with NLP configurations.
 
 === "Reset Pre-build LLM Integration"
 

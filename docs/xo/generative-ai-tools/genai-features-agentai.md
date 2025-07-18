@@ -1,6 +1,6 @@
 # Generative AI Features - Agent AI
 
-Utilize generative AI features to supercharge your virtual assistant with powerful tools that enhance productivity, enable natural conversations, improve intent detection, analyze customer sentiment, and support agent performance, all working together to create seamless end-user experiences through intuitive design.
+Utilize generative AI features to supercharge your AI Agent with powerful tools that enhance productivity, enable natural conversations, improve intent detection, analyze customer sentiment, and support agent performance, all working together to create seamless end-user experiences through intuitive design.
 
 ## Model Feature Matrix
 
