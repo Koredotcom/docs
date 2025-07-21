@@ -115,7 +115,6 @@ Note:
 * Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024 and having the word ‘SearchAI’ in its title, define the rule as:
 ![Content Filters](images/confluenceserver/example3.png "Content Filters")
 
-
 ### Access Control
 
 SearchAI supports access control for content ingested using the **Confluence Data Center Connector**. To enable access control on the content, go to the **Permissions and Security** tab and select **Permission Aware** access.
