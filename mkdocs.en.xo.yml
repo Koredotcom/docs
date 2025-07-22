@@ -339,7 +339,7 @@ nav:
                 - ClickUp: searchai/content-sources/connectors/clickup.md
                 - Coda: searchai/content-sources/connectors/coda.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
-                - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Confluence Data Center: searchai/content-sources/connectors/confluence-server.md
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
                 - Datadog: searchai/content-sources/connectors/datadog.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md
