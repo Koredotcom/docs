@@ -81,9 +81,9 @@ To add a new Auth profile, you must first set up the required auth fields with t
 Otherwise, click **Add new auth**.
 <img src="../images/add-new-auth-profile.png" alt="add new auth profile" title="add new auth profile" style="border: 1px solid gray; zoom:75%;">  
 
-<ol start="3"><li>In the <b>New Authorization Mechanism</b> dialog, select the required option for <b>Authorization Type</b>. 
-<img src="../images/select-oauthv2.png" alt="select oauth v2" title="select oauth v2" style="border: 1px solid gray; zoom:75%;"></li>  
-<li>In the <b>Identity Provider Name</b> field, enter a name for the authorization type, which is mandatory.
+<ol start="3"><li>In the <b>New Authorization Mechanism</b> dialog, select the required option for <b>Authorization Type</b>.</li> 
+<img src="../images/select-oauthv2.png" alt="select oauth v2" title="select oauth v2" style="border: 1px solid gray; zoom:75%;"></ol>  
+<ol start="4"><li>In the <b>Identity Provider Name</b> field, enter a name for the authorization type, which is mandatory.
 <img src="../images/identity-provider.png" alt="identity provider" title="identity provider" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Provide the values for the mandatory authorization fields. For details, refer to the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#define-authorization-fields" target="_blank">Define Authorization Fields</a> section. 
 
