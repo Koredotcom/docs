@@ -1,16 +1,14 @@
 # Quality AI Setup Guide
 
-## Get started 
+Get started on the Quality Management (QM) module: Learn how to set up, configure, and use the QM module.
 
-Learn how to set up, configure, and use the Quality AI module.
-
-Follow the steps to set up Quality AI for Third-Party Integration:
+Follow these steps:
 
 1. **Configure QM Permissions**
 
-    a. Go to **User Management** > **Role Management** > **New Role** > **Other Modules**. [Learn more](../../user-management/role-management.md){:target=”_blank”}).
+    a. Go to **User Management** > **Role Management** > **New Role** > **Other Modules**. [Learn more](../../user-management/role-management.md){:target=”_blank”}.
 
-    b. Assign relevant roles (Supervisor role) or create custom roles with QM permissions. [Learn more](../../user-management/role-management.md/#custom-role){:target=”_blank”}).
+    b. Assign relevant roles (Supervisor role) or create custom roles with QM permissions. [Learn more](../../user-management/role-management.md/#custom-role){:target=”_blank”}.
     
 2. **Set up Contact Center**
 
