@@ -1,4 +1,4 @@
-# Virtual Assistant Health and Monitoring
+# Health and Monitoring
 
 The **Health and Monitoring** dashboard offers a goal-driven approach to improving the accuracy of the virtual assistant’s Natural Language Processing (NLP) model. The training data is analyzed along with the test coverage and test results of the test suites to provide insights into the NLP Model’s performance.
 
@@ -10,12 +10,6 @@ This dashboard lets you achieve the following:
 * Identify incorrect intent patterns, short training utterances, incorrect entity annotations, and training recommendations and take corrective action.
 * View the expected and matched results, and the detailed NLP analysis.
 * Tag specific test case results that need follow-up actions and collaborate with your team to improve the performance.
-
-!!! note
-
-    The Health & Monitoring Dashboard is available only post 9.3 release, i.e. post-July 24, 2022.
-    This feature only considers the latest In-development test executions.
-
 
 
 ## Navigating to Health and Monitoring
