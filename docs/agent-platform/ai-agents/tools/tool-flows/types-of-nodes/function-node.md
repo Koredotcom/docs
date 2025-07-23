@@ -361,4 +361,35 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 <p>Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see the available variables, nodes, and node outputs.</p>
 </div>
 
+## Import, Export, and Share a Tool with Function Node
 
+**Import a Tool**
+
+When you import a tool, a *.zip* package is imported from your local system with the flow definition, app definition, and environment variables JSON files from another environment. [Learn more](../../import-a-tool.md){:target="_blank"}.
+
+If the tool contains a **Function node**, its configuration is automatically fetched and populated in the new environment (tools automation flow) where the tool is being imported.
+
+### Script Linking Behavior
+
+* If the same script is already deployed in the new environment, the Function node is automatically linked (auto-linking). 
+
+* If the script is not deployed, validation errors are shown to help identify missing or unresolved scripts.
+
+   <img src="../images/import-validation.png" alt="import validation" title="import validation" style="border: 1px solid gray; zoom:75%;"> 
+
+**Export a Tool**
+
+When you export a tool that contains a **Function node**, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-tool.md){:target="_blank"}.
+
+The following confirmation window is displayed before the export begins.
+
+<img src="../images/export-checklist.png" alt="debug log" title="debug log" style="border: 1px solid gray; zoom:75%;"> 
+
+Do one of the following:
+
+* If you’re unsure, click **Let me check**.
+* If all necessary components—such as AI models, linked tools, and custom scripts or functions—are already in place, click **Yes, I will take care**.
+
+**Share a Tool**
+
+When you share a tool with another user within the same account, all configurations of the **Function node** are retained and available to the recipient as well.
