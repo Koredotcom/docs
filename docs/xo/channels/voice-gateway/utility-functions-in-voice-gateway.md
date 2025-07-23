@@ -10,7 +10,7 @@ The `agentUtils` library allows you to dynamically modify call transfer properti
 * **Transfer Types**: Change the type of transfer (for example, Skill-based, SIP-based).
 * **User Information**: Update user-specific information before routing the call to the agent.
 
-With `agentUtils`, you can adjust SmartAssist properties directly from the bot, which is ideal when you need to fine-tune call transfers by modifying parameters like SIP URIs or transfer methods before sending the call to the Outer Source or SmartAssist agent desktop.
+With `agentUtils`, you can adjust SmartAssist properties directly from the bot, which is ideal when you need to fine-tune call transfers by modifying parameters like SIP URIs or transfer methods before sending the call to the Outer Source or Agent Desktop.
 
 **Agent Transfer Node in XO Platform (Used with agentUtils)**
 
@@ -26,7 +26,7 @@ If you need to dynamically change the SIP transport type or update the SIP URI b
 
 ## Voice Utils (SmartAssist Library)
 
-The `voiceUtils` library is specifically for the SmartAssist Voice Gateway. It is used for transferring calls to external sources, such as SIP endpoints or phone numbers, **without involving the SmartAssist agent desktop**. This library supports functionalities like:../../flows/node-types/utils.md#script-nodes-call-flows-agent-utils-and-usersessionutils
+The `voiceUtils` library is specifically for the SmartAssist Voice Gateway. It is used for transferring calls to external sources, such as SIP endpoints or phone numbers, **without involving the Agent Desktop**. This library supports functionalities. [Learn more](../../flows/node-types/utils.md#script-nodes-call-flows-agent-utils-and-usersessionutils).
 
 * Hangup
 * Agent Transfer (via Invite and Refer)
