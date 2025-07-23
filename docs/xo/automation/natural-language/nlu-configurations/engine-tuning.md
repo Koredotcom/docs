@@ -690,7 +690,7 @@ Hyperparameters offer the means to further tailor the behavior of your Virtual A
 
 #### Network Type
 
-You can choose the Neural Network that you want to use. This setting is moved to the Machine Learning section post v8.1. [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#network-type){:target="_blank"}.
+You can choose the Neural Network that you want to use. This setting is moved to the Machine Learning section post v8.1. [Learn more](../training/machine-learning-engine.md#network-type){:target="_blank"}.
 
 #### Epochs
 
