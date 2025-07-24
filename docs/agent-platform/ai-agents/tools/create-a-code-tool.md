@@ -44,7 +44,7 @@ Define the **input parameters** required by the tool to perform its task. For ea
     * **boolean**: true or false
     * **list of values**: A restricted set of predefined values. This type is useful when the input must be one of a specific set of options. For this type of field, add all the values that the parameter can take. For example, a parameter priority of type enum might accept values like "low", "medium", or "high".  ![alt_text](images/codetools/enum-type.png "image_tooltip")
 
-    * **object**. A structured data type that includes one or more nested parameters. Use this when multiple related values must be grouped. For example, a location object might include fields like building,  city, and zip code. An object type can have a nested structure. Adhere to the **Sample Schema**for detailed structure and formatting guidelines. 
+    * **object**. A structured data type that includes one or more nested parameters. Use this when multiple related values must be grouped. For example, a location object might include fields like building,  city, and zip code. An object type can have a nested structure. Adhere to the **Sample Schema** for detailed structure and formatting guidelines.
     
     **Defining an object parameter** 
     

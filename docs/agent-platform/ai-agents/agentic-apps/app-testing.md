@@ -18,9 +18,9 @@ Whenever a user clicks on the Playground option, by default, a new user session 
 
 **Query Input**: Enter your query in the designated input field to initiate the simulation. In addition to typing, users can also provide **voice input** using their browser’s built-in speech recognition capabilities. The Playground uses browser-based Automatic Speech Recognition (ASR) functionality. Click the microphone icon next to the input field, provide speech input, which is automatically converted to text. The recognized text is then populated in the input field, ready to be submitted as a query.
 
-!!! note
- * Voice output is not supported. The application only provides text-based responses. 
- * For voice input, the application uses the built-in voice capabilities of the browser, which is supported by default on most of the commonly used browsers like Chrome, Firefox, Safari, and Edge.
+**Note**
+* Voice output is not supported. The application only provides text-based responses. 
+* For voice input, the application uses the built-in voice capabilities of the browser, which is supported by default on most of the commonly used browsers like Chrome, Firefox, Safari, and Edge.
 
 **Response Display**: The agent's response is displayed, providing immediate feedback on the input provided.
 

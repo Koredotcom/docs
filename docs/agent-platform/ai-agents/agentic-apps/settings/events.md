@@ -8,7 +8,7 @@ The Agent Platform enables developers to configure and customize the app’s beh
 
 Currently, Agent Platform supports the following three system events. By default, all the events are disabled. Go to the *Events* page under Settings, click on the *edit* icon to enable and configure them.
 
-![alt_text](images/events/home.png "image_tooltip")
+![Events](images/events/home.png "Events Page")
 
 
 ## Welcome Event
@@ -21,7 +21,7 @@ To enable and configure the Welcome event, follow these steps:
 
 * Click on the edit icon and enable the event status.  
 * Under Actions, configure the greeting message using the **Send Message to User** option that users see when a new session starts. You can either use AI to generate the message or provide a custom message. You can also include data from the memory stores as part of the custom messages. 
-![alt_text](images/events/welcome-event.png "image_tooltip")
+![Welcome Event](images/events/welcome-event.png "Welcome Event")
 
 
 ## Agent Handoff Event
@@ -42,7 +42,7 @@ These fields are useful for passing data, such as user IDs, user choices, etc, t
         * **Keep Alive**: Maintain the current session even after this event.
         * **Terminate Session**: End the session once the event is triggered. 
 
-![alt_text](images/events/handoff-event.png "image_tooltip")
+![Agent Handoff Event](images/events/handoff-event.png "Agent Handoff Event")
 
 ## End of Conversation Event
 
@@ -68,4 +68,4 @@ To enable and configure the event,
         * **Keep Alive**: Maintain the current session even after this event.
         * **Terminate Session**: End the session once the event is triggered.
 
-![alt_text](images/events/end-of-conv-event.png "image_tooltip")
+![End of Conversation Event](images/events/end-of-conv-event.png "End of Conversation Event")

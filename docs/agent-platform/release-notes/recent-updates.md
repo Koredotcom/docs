@@ -17,9 +17,15 @@ Document upload limits have been increased to support more detailed and context-
 * The file size limit has been increased to a maximum of 25MB.
 * The max token limit for document content has been increased to 800,000 tokens.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md)
+
+
 **Automatic Restoration of MCP Server Configuration on App Restore**
 
 Restoring an App version now includes the associated MCP Server configuration, eliminating inconsistencies and reducing manual effort. This enhancement ensures that tool connections and prompt contexts function as intended initially after a version rollback. This reduces manual intervention and the risk of misalignment after app restore.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/deployment/app-deployment.md)
+
 
 **Enhanced External Agent Integration**
 
@@ -28,17 +34,27 @@ The Agent Platform now offers enhanced flexibility and performance for integrati
 * Flexible Response Routing: Directly stream external agent responses to users for faster interactions, or route through the orchestrator for complex orchestration needs.
 * Contextual Metadata Passthrough: Pass structured contextual metadata with agent requests for seamless context continuity, improved personalization, and smoother system integration.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/external-agents.md)
+
 **System-Defined Parameters in Events**
 
 System Events, such as End of Conversation and Agent Handoff, now support defining parameters that do not rely on LLM for their values but use information already available with the system. These parameters can have static values or dynamic values derived from session context or memory. This is particularly useful for handling organizational or user-specific information that remains constant across sessions, or for sensitive information that should be hidden from the conversational layer.
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/events.md)
+
 
 **Playground Enhancements**
 
 The Playground now supports voice input, allowing users to interact with agentic applications using speech. This enhancement improves accessibility and user convenience while preserving the platform’s text-based response model.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md)
+
+
 **Support for Metadata Injection from AI for Service Platform**
 
 Developers can now leverage enhanced integration with the AI for Service platform by passing metadata, such as channel information or user data, into the Agentic App. This metadata is made available within agent prompts and tools, enabling more contextual and dynamic interactions.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/ai-for-service.md)
+
 
 <font size="4">No-code & Pro-code Tools</font>
 
@@ -74,6 +90,8 @@ Key highlights:
 * Enable default values for parameters to streamline tool usage and maintain consistency.
 * Define restricted value sets using enum parameters for dropdown-style input selection.
 * Apply type-specific validation to ensure data accuracy.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/create-a-code-tool.md)
 
 **Custom Script Functionality Extended Across All Agent Platform Tools**
 

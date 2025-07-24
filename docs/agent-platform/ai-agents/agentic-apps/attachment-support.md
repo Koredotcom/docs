@@ -13,7 +13,7 @@ For selected file types, the platform extracts the content and uses it as contex
 
 **How it works**:
 
-1. Users upload documents using the attachment option (enabled after the first message).
+1. Users upload documents using the attachment option.
 2. The platform automatically extracts content from supported files.
 3. Agents use the extracted content to provide contextually relevant responses.
 
@@ -178,7 +178,7 @@ To refer to the uploaded file information in the supervisor and agent prompts, u
 
 ### In Playground
 
-Use the **attach** option in the chat widget to upload files while testing your application. The attachment option becomes available after sending the first message.
+Use the **attach** option in the chat widget to upload files while testing your application. 
 
 ![alt_text](images/attachments/attach-option.png "image_tooltip")
 
@@ -201,7 +201,7 @@ For example, if a user uploads multiple documents but only wants the agent to re
 
 ## Important Points
 
-* Attachment Availability: The attachment option is enabled in the chat widget after the initial message, i.e., after a session has been started. 
+* Attachment Availability: You can attach files at any time during a conversation.  
 * Limitations: There is a limit on the number and size of files that can be uploaded. Refer to [this for more info](settings/app-configurations.md). 
 * Download URLs: Generated URLs are temporary and expire after 30 days.
 * Supported Content:  Only supported for specific file types. Refer to the [table above for supported file formats](#supported-file-formats-for-document-upload).
