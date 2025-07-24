@@ -1,6 +1,21 @@
-# Function Node - Automate Function Execution
+# Function Node - Empower Workflows with Custom Code
 
-A **Function** node lets you write and execute custom scripts using JavaScript or Python, or use custom functions within a script you have imported and deployed within the tools automation flow.
+The **Function** node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
+
+## Key Capabilities
+
+* **Custom Script Execution**: Write and execute JavaScript or Python code inline or leverage pre-deployed custom functions.
+* **Dynamic Data Processing**: Transform, validate, and manipulate data flowing through your automation.
+* **Reusable Functions**: Import and use pre-built functions from your organization's script library.
+
+## Common Use Cases
+
+* **Data Transformation**: Convert data formats, parse JSON/XML, or restructure information between nodes.
+* **Business Logic Implementation**: Apply custom validation rules, calculations, or decision-making logic.
+* **Text Processing**: Perform string manipulation, regex operations, or natural language processing.
+* **Mathematical Operations**: Execute complex calculations or statistical analysis on your data.
+
+In this document, you will learn how to add Function nodes to your flows, configure them with custom code or functions, handle inputs and outputs, and test your implementations.
 
 ## Add and Configure a Function Node
 
@@ -334,9 +349,10 @@ The **Debug** window generates the flow log and results for the given input(s), 
 
 <img src="../images/debug-log-function-node.png" alt="debug log" title="debug log" style="border: 1px solid gray; zoom:75%;">  
 
-## Access the AI Node’s Output
+## Access the Function Node’s Output
 
-The node’s output is stored in a context variable. You can access the variable using the syntax: `{{context.steps.&lt;<Functionnodename>>.output}`
+The node’s output is stored in a context variable. You can access the variable using the syntax: 
+`{{context.steps.FunctionNodeName.output}`
 
 For example, <code><em>context.steps.Bankingnode.output</em></code>
 
@@ -345,4 +361,35 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 <p>Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see the available variables, nodes, and node outputs.</p>
 </div>
 
+## Import, Export, and Share a Tool with Function Node
 
+**Import a Tool**
+
+When you import a tool, a *.zip* package is imported from your local system with the flow definition, app definition, and environment variables JSON files from another environment. [Learn more](../../import-a-tool.md){:target="_blank"}.
+
+If the tool contains a **Function node**, its configuration is automatically fetched and populated in the new environment (tools automation flow) where the tool is being imported.
+
+### Script Linking Behavior
+
+* If the same script is already deployed in the new environment, the Function node is automatically linked (auto-linking). 
+
+* If the script is not deployed, validation errors are shown to help identify missing or unresolved scripts.
+
+   <img src="../images/import-validation.png" alt="import validation" title="import validation" style="border: 1px solid gray; zoom:75%;"> 
+
+**Export a Tool**
+
+When you export a tool that contains a **Function node**, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-tool.md){:target="_blank"}.
+
+The following confirmation window is displayed before the export begins.
+
+<img src="../images/export-checklist.png" alt="debug log" title="debug log" style="border: 1px solid gray; zoom:75%;"> 
+
+Do one of the following:
+
+* If you’re unsure, click **Let me check**.
+* If all necessary components—such as AI models, linked tools, and custom scripts or functions—are already in place, click **Yes, I will take care**.
+
+**Share a Tool**
+
+When you share a tool with another user within the same account, all configurations of the **Function node** are retained and available to the recipient as well.

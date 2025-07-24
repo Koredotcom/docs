@@ -38,7 +38,7 @@ You can enable a single auth profile or create custom profiles tailored for acce
 
 OAuth 2.0 (OAuth2) is a standard authorization framework that enables applications to obtain limited, secure, and token-based access to a user’s account on an HTTP service, such as Google, Facebook, or GitHub without exposing the user's credentials. It supports multiple grant types, uses scopes for permissions, and enables long-term access with refresh tokens, making it ideal for API authentication.
 
-### Key Features
+**Key Features**
 
 * **Secure, Token-Based Authorization** – Grants access without sharing user credentials, using short-lived access tokens. 
 
@@ -50,6 +50,25 @@ OAuth 2.0 (OAuth2) is a standard authorization framework that enables applicatio
 
 * **Third-Party & Scalable Integration** – Widely adopted for API authentication, allowing secure third-party access (e.g., "*Sign in with Google*").
 
+### OAuth V2 Client Credential
+
+The Client Credentials flow is one of the OAuth 2.0 authorization grant types. It is primarily used in Machine-to-Machine (M2M) scenarios, where an application needs to access resources or perform operations on its own behalf — without user interaction.
+
+**How it Works**
+
+1. The client application authenticates with the Authorization Server by presenting its client ID and client secret.
+
+2. Upon successful authentication, the Authorization Server issues an access token.
+
+3. The client uses this token to authenticate API requests to the Resource Server.
+
+**Key Features**
+
+* **Client Credentials**: This flow uses the client's unique identifier (client ID) and a secret (client secret) to authenticate the application with the authorization server. 
+* **No User Interaction**: Unlike flows involving user authorization (e.g., authorization code flow), the client credentials flow doesn't require the user to log in or grant permissions. 
+* **Machine-to-Machine (M2M) Communication**: This flow is ideal for scenarios where one application needs to access resources owned by another application, such as microservices or server-to-server communication. 
+* **Resource Access**: The client uses the acquired access token to interact with the resource server and access protected resources. 
+* **Access Token**: The authorization server issues an access token, a short-lived credential that allows the client to access specific resources. 
 
 ## Add Authorization Profile
 
@@ -62,11 +81,11 @@ To add a new Auth profile, you must first set up the required auth fields with t
 Otherwise, click **Add new auth**.
 <img src="../images/add-new-auth-profile.png" alt="add new auth profile" title="add new auth profile" style="border: 1px solid gray; zoom:75%;">  
 
-<ol start="3"><li>In the <b>New Authorization Mechanism</b> dialog, select <i>oauth v2</i> for <b>Authorization Type</b>. 
-<img src="../images/select-oauthv2.png" alt="select oauth v2" title="select oauth v2" style="border: 1px solid gray; zoom:75%;"></li>  
-<li>In the <b>Identity Provider Name</b> field, enter a name for the authorization type, which is mandatory.
+<ol start="3"><li>In the <b>New Authorization Mechanism</b> dialog, select the required option for <b>Authorization Type</b>.</li> 
+<img src="../images/select-oauthv2.png" alt="select oauth v2" title="select oauth v2" style="border: 1px solid gray; zoom:75%;"></ol>  
+<ol start="4"><li>In the <b>Identity Provider Name</b> field, enter a name for the authorization type, which is mandatory.
 <img src="../images/identity-provider.png" alt="identity provider" title="identity provider" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Provide the values for the mandatory OAuth2 authorization fields. For details, refer to the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#define-authorization-fields" target="_blank">Define Authorization Fields</a> section. 
+<li>Provide the values for the mandatory authorization fields. For details, refer to the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#define-authorization-fields" target="_blank">Define Authorization Fields</a> section. 
 
 If the mandatory fields are left blank, validation error messages appear, as shown below.
 
@@ -78,7 +97,7 @@ If the mandatory fields are left blank, validation error messages appear, as sho
 <p>If the default <b>Username</b> and <b>Password</b> fields do not meet your authorization requirements, you can add <b>custom fields</b> using additional fields or authorization IDP form fields to the authorization process. For example, if a <b>PIN code</b> is required in addition to the standard login fields, you can include it as an extra input for the end user.</p>
 </div>
     
-<ol start="7"><li>(Optional) Click <b>+ Add Authorization Field</b> to add additional auth fields to your profile. For more information, see the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-field" target="_blank">Add Authorization Field</a> section.</li>
+<ol start="7"><li>(Optional step to be executed only when you select <b><i>OAuth V2</i></b> as the Authorization type) Click <b>+ Add Authorization Field</b> to add additional auth fields to your profile. This is rewquired For more information, see the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-field" target="_blank">Add Authorization Field</a> section.</li>
 <li>Click <b>Save new Auth</b>.</li>
 <img src="../images/save-new-auth.png" alt="save new auth" title="save new auth" style="border: 1px solid gray; zoom:75%;"></ol>
 
@@ -103,14 +122,16 @@ To configure the OAuth2 profile, define the fields described in the table below:
    </td>
    <td>MANDATE
    </td>
+   <td>AUTH TYPE</td>
   </tr>
   <tr>
    <td><strong>Authorization Type</strong>
    </td>
-   <td>Select an option from the dropdown. OAuth2 is currently supported.
+   <td>Select an option from the dropdown. <i>OAuth V2</i> and <i>OAuth v2 Client Credential</i> are currently supported.
    </td>
    <td>Required
    </td>
+   <td>OAuth V2 and OAuth v2 Client Credential</td>
   </tr>
   <tr>
    <td><strong>Identity Provider Name</strong>
@@ -119,6 +140,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    </td>
    <td>Required
    </td>
+   <td>OAuth V2 and OAuth v2 Client Credential</td>
   </tr>
   <tr>
    <td><strong>Description</strong>
@@ -127,6 +149,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    </td>
    <td>Optional
    </td>
+   <td>OAuth V2 and OAuth v2 Client Credential</td>
   </tr>
   <tr>
    <td><strong>Callback URL</strong>
@@ -135,6 +158,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    </td>
    <td>Required
    </td>
+   <td>OAuth V2 and OAuth v2 Client Credential</td>
   </tr>
   <tr>
    <td><strong>Client ID</strong>
@@ -152,6 +176,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    </td>
    <td>Required
    </td>
+   <td>OAuth V2 and OAuth v2 Client Credential</td>
   </tr>
   <tr>
    <td><strong>Client Secret</strong>
@@ -161,6 +186,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    </td>
    <td>Required
    </td>
+   <td>OAuth V2 and OAuth v2 Client Credential</td>
   </tr>
   <tr>
    <td><strong>Authorization URL</strong>
@@ -170,6 +196,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    </td>
    <td>Required
    </td>
+   <td>OAuth V2</td>
   </tr>
   <tr>
    <td><strong>Subdomain(aka tenancy URL)</strong>
@@ -185,6 +212,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    </td>
    <td>Required
    </td>
+   <td>OAuth V2</td>
   </tr>
   <tr>
    <td><strong>Token request URL</strong>
@@ -194,6 +222,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    </td>
    <td>Required
    </td>
+   <td>OAuth V2 and OAuth v2 Client Credential</td>
   </tr>
   <tr>
    <td><strong>Scope</strong>
@@ -204,6 +233,7 @@ Example: <code>read_profile</code>.
    </td>
    <td>Optional
    </td>
+   <td>OAuth V2 and OAuth v2 Client Credential</td>
   </tr>
   <tr>
    <td><strong>Additional Fields</strong>
@@ -213,6 +243,7 @@ Example: <code>read_profile</code>.
    </td>
    <td>Optional
    </td>
+   <td>OAuth V2</td>
   </tr>
   <tr>
    <td><strong>Authorization Fields</strong>
@@ -221,6 +252,7 @@ Example: <code>read_profile</code>.
     Refer <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-field" target="_blank">here</a>.</td>
    <td>Optional
    </td>
+   <td>OAuth V2</td>
   </tr>
   <tr>
    <td><strong>Refresh token URL</strong>
@@ -238,6 +270,7 @@ Example: <code>read_profile</code>.
    </td>
    <td>Optional
    </td>
+   <td>OAuth V2</td>
   </tr>
   <tr>
    <td><strong>Auth Error Status Code</strong>
@@ -247,12 +280,13 @@ Example: <code>read_profile</code>.
    </td>
    <td>Optional
    </td>
+   <td>OAuth V2 and OAuth v2 Client Credential</td>
   </tr>
 </table>
 
 ## Add Additional Field
 
-These fields are used to collect additional authorization details from end users and allow you to incorporate extra security measures, such as a PIN code, device ID, or other parameters, alongside the standard credentials. By customizing the authorization input fields, you can enhance security and align the authorization process with your specific business or compliance needs.
+These fields are used to collect additional authorization details from end users and allow you to incorporate extra security measures, such as a PIN code, device ID, or other parameters, alongside the standard credentials for *OAuth V2*. By customizing the authorization input fields, you can enhance security and align the authorization process with your specific business or compliance needs.
 
 
 To add additional fields, follow the steps below:

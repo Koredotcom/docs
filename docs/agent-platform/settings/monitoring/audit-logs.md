@@ -648,6 +648,75 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
   </table>
 
+   <table>
+   <tr>
+   <td colspan="3" align="center"><strong>Category</strong>: Manage Custom Scripts
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: <b><i>user ID</i></b>, <b><i>user name</i></b>, <b><i>IP Address</i></b>, and <b><i>custom script name</i></b> are displayed for all the category events below.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Custom script saved as draft
+   </td>
+   <td>Tracks the custom script saved as a draft.
+   </td>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>Custom script deployed
+   </td>
+   <td>Tracks the custom script deployment.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+    <tr>
+   <td>Custom script undeployed
+   </td>
+   <td>Tracks the custom script undeployment.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+      <tr>
+   <td>Custom script re-deployed
+   </td>
+   <td>Tracks the custom script redeployment.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+   <tr>
+   <td>Custom script deleted
+   </td>
+   <td>Tracks the custom script deletion.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+     <tr>
+   <td>Custom script exported
+   </td>
+   <td>Tracks the custom script export.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+  </table>
+
   <table>
      <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Guardrails
@@ -689,6 +758,42 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
 </table>
+
+<table>
+     <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Script
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: <b><i>user ID</i></b>, <b><i>user name</i></b>, <b><i>IP address</i></b>,<b><i> Agent ID</b></i>, <b><i>node name</b></i>, <b><i>node ID</i></b>, and <b><i>node type</b></i> are displayed for all the category events below.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Write Code
+   </td>
+   <td>Tracks the user's selection to write a custom script.
+   </td>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>Custom Function</td>
+   <td>Tracks the user's selection to execute a custom function.</td>
+   <td align="center">-
+   </td>
+  </tr>
+</table>
+
 
 ## Tool-Level Audit Logs
 

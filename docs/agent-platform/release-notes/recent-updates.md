@@ -2,6 +2,115 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
+## v1.0.9 July 23, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, and bug fixes summarized below.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Enhanced Support for Large Documents in Conversations**
+
+Document upload limits have been increased to support more detailed and context-rich conversations.
+
+* The file size limit has been increased to a maximum of 25MB.
+* The max token limit for document content has been increased to 800,000 tokens.
+
+**Automatic Restoration of MCP Server Configuration on App Restore**
+
+Restoring an App version now includes the associated MCP Server configuration, eliminating inconsistencies and reducing manual effort. This enhancement ensures that tool connections and prompt contexts function as intended initially after a version rollback. This reduces manual intervention and the risk of misalignment after app restore.
+
+**Enhanced External Agent Integration**
+
+The Agent Platform now offers enhanced flexibility and performance for integrating with external agents.
+
+* Flexible Response Routing: Directly stream external agent responses to users for faster interactions, or route through the orchestrator for complex orchestration needs.
+* Contextual Metadata Passthrough: Pass structured contextual metadata with agent requests for seamless context continuity, improved personalization, and smoother system integration.
+
+**System-Defined Parameters in Events**
+
+System Events, such as End of Conversation and Agent Handoff, now support defining parameters that do not rely on LLM for their values but use information already available with the system. These parameters can have static values or dynamic values derived from session context or memory. This is particularly useful for handling organizational or user-specific information that remains constant across sessions, or for sensitive information that should be hidden from the conversational layer.
+
+**Playground Enhancements**
+
+The Playground now supports voice input, allowing users to interact with agentic applications using speech. This enhancement improves accessibility and user convenience while preserving the platform’s text-based response model.
+
+**Support for Metadata Injection from AI for Service Platform**
+
+Developers can now leverage enhanced integration with the AI for Service platform by passing metadata, such as channel information or user data, into the Agentic App. This metadata is made available within agent prompts and tools, enabling more contextual and dynamic interactions.
+
+<font size="4">No-code & Pro-code Tools</font>
+
+**Introducing the 'Loop’ Node for Workflow Tools**
+
+The Loop node is a new workflow component that enables automatic iteration through arrays within your workflows. This powerful node allows you to define a sequence of steps that will repeatedly execute for each item within the input array. This functionality is ideal for various tasks such as processing multiple invoices, transforming batch data, or sending notifications to multiple recipients. Simply drop a loop node onto your canvas, configure it with your input array, and define the steps that should execute for each item.
+
+Key highlights:
+
+* Seamless integration and intuitive design:
+    * Easily accessible from the bottom tray, assets tray, or plus (+) icon.
+* Flexible configuration and smart error handling:
+    * Supports input arrays via context variables.
+    * Customize how outputs are collected from each iteration of the loop.
+    * Choose from built-in error-handling options to control how failures are managed:
+        * Continue on Error: Skip over failed iteration and continue looping.
+        * Remove failed results: Continue processing and exclude failed results from the final output array.
+        * Terminate execution: Break out of the loop immediately.
+* Smart path configuration: Separate "On Success" and "On Error" paths for robust logic.
+
+**Note:**
+
+1. The Loop node is currently available within the Tool Builder. Support for displaying related data in other parts of the product, including Monitoring, Analytics, and Import/Export, will be added in upcoming releases.
+2. A restriction was added in v1.0.7 on backward connections, preventing loops from being created. (Please see the section under parallel connections in the release notes) This restriction is no longer relevant as customers can now create loops natively.
+
+
+**Enhanced Parameter Configuration for Code Tools**
+
+Code tools now offer improved parameter configuration, supporting both default values and enumerated (list of values) inputs. These enhancements simplify tool execution, reduce repetitive inputs, and ensure better control over data validations.
+
+Key highlights:
+
+* Enable default values for parameters to streamline tool usage and maintain consistency.
+* Define restricted value sets using enum parameters for dropdown-style input selection.
+* Apply type-specific validation to ensure data accuracy.
+
+**Custom Script Functionality Extended Across All Agent Platform Tools**
+
+The Agent Platform now fully supports custom scripts across all modules.
+
+Key highlights:
+
+* Audit Logging: Full tracking of custom script activities, including *Write Code* and *Custom Function* executions via the Function node.
+* Import Tool: Automated population of Function node configurations and validation of script deployments.
+* Share Tool: Preserves Function node configurations when sharing with other users.
+* Tools Monitor Dashboard: Displays complete execution data and logging information for custom scripts.
+* Validation Errors: The system now flags missing or undeployed scripts.
+
+
+<font size="4">Observability</font>
+
+**Introducing Real-Time Usage Analytics Dashboard**
+
+The Usage Analytics Dashboard provides real-time visibility into platform activity and performance. The dashboard enables teams to understand adoption better, optimize resource utilization, and identify potential bottlenecks.
+
+Key highlights:
+
+* Real-time metrics on users, sessions, messages, tokens, and runs or executions. 
+* Interactive visualizations with trend analysis and drill-down views.
+* List views for detailed component-level insights.
+* Filters data by date range for a specific set of analysis.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/analytics-dashboard.md)
+
+**Export All Runs and Logs Data**
+
+Admins can now export and download All Runs and Logs from the Monitoring Custom Scripts dashboard as a <code><em>.csv</em></code> file, following the schema and file-naming conventions defined in the Agent Platform. [Learn more :octicons-arrow-right-24:](../settings/monitoring/monitoring-custom-scripts.md/#export-runs-and-logs-data){:target="_blank"}
+
+ 
+<hr>
+
+
 ## v1.0.8 July 7, 2025
 
 <u> Minor Release </u>
