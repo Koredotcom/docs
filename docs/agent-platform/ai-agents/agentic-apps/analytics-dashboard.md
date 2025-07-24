@@ -13,14 +13,14 @@ Structured into two key data layers—session-level and run-level insights—the
 
 ### Sessions
 
-The top section of the dashboard presents four interactive metric cards, each with real-time values, trend indicators, and drilldowns:
+The top section of the dashboard presents four interactive metric cards, each with real-time values, trend indicators, and drilldowns.
 
 **Users**
 
 * Displays the number of unique active users for the selected time range
 * Includes percentage change compared to the previous equivalent period
 * Shows visual trend indicator (up/down arrow with percentage)
-* Provides an interactive chart showing daily or hourly activity
+* Provides an interactive chart showing daily or hourly activity.
 
 **Sessions**
 
@@ -32,19 +32,19 @@ The top section of the dashboard presents four interactive metric cards, each wi
 
 * Displays total input and output messages exchanged during the selected period
 * Compares message trends with previous time frames
-* Includes volume chart with hourly and daily breakdown
+* Includes volume chart with hourly and daily breakdown.
 
 **Tokens**
 
 * Displays total tokens consumed by Agent and Supervisor components
 * Visual comparison with equivalent historical period
-* Includes token usage chart with time-based trends
+* Includes token usage chart with time-based trends.
 
 <img src="../images/sessions.png" alt="Sessions Dashboard" title="Sessions" style="border: 1px solid gray; zoom:65%;">
 
 ### Runs
 
-The **Runs** section visualizes execution performance across three component categories, with list and chart views:
+The **Runs** section visualizes execution performance across three component categories, with list and chart views.
 
 **Agent Runs**
 
