@@ -1,66 +1,129 @@
-# Dashboard
+# App Usage Analytics Dashboard
 
-The Analytics Dashboard is a real-time, comprehensive analytics interface designed for platform users, developers, and administrators. It offers clear visibility into usage patterns, engagement trends, and system performance across agents, tools, and models.
+The Analytics Dashboard provides real-time insights into app usage across your platform. It provides comprehensive visibility into user engagement, performance metrics, and resource utilization for agents, tools, and models.
 
-Structured into two key data layers—session-level and run-level insights—the dashboard consolidates core metrics to support data-driven decisions, optimize resource use, and track adoption. Filters are available at both the time frame and environment levels, allowing users to select a specific environment for which they want to view analytics. By default, the environment filter is set to the current draft.
+The dashboard organizes analytics into two primary categories:
 
-* Session-Level Data: Displays total users, session counts, message volume, and tokens consumed. Each metric includes percentage change indicators and trend visualizations to support usage pattern analysis.
-* Run-Level Data: Highlights executions across agents, tools, and models, detailing average response times, token usage, and performance trends. This data is accessible through both graphical and tabular views, allowing for deeper exploration by component type and execution behavior.
+* **Session-level insights**: User activity and engagement metrics.
+* **Run-level insights**: Execution performance and resource consumption.
 
 <img src="../images/analytics-dashboard.png" alt="Analytics Dashboard" title="Analytics Dashboard" style="border: 1px solid gray; zoom:65%;">
 
-## Metrics
+## Key Features
 
-### Sessions
+* Real-time data updates.
+* Customizable time frame and environment filters.
+* Trend analysis with historical comparisons.
+* Interactive visualizations with detailed drill-down capabilities.
+* The default view displays the current draft environment.
 
-The top section of the dashboard presents four interactive metric cards, each with real-time values, trend indicators, and drilldowns.
+## Navigation and Controls
 
-**Users**
+Customize the analytics view by using the dashboard's filtering options and interactive controls:
 
-* Displays the number of unique active users for the selected time range
-* Includes percentage change compared to the previous equivalent period
-* Shows visual trend indicator (up/down arrow with percentage)
-* Provides an interactive chart showing daily or hourly activity.
+* **Time Frame Selection**: Choose from predefined ranges or set custom dates to analyze specific periods.
+* **Environment Filter**: Select specific environments for targeted analysis (defaults to current draft).
+* **View Modes**: Toggle between interactive charts for trend analysis and detailed tables for granular inspection.
+* **Drill-down Navigation**: Click any metric card or data point to access expanded insights and detailed breakdowns.
+* **Export Options**: Download data for offline analysis and custom reporting.
 
-**Sessions**
+## Key Metrics and Components
 
-* Shows total session count for the selected time frame
-* Highlights percentage change and trend vs historical period
-* Displays session count over time using a time-series chart.
+### Session Metrics
 
-**Messages**
+The dashboard's top section, displays four key performance indicators, each featuring:
 
-* Displays total input and output messages exchanged during the selected period
-* Compares message trends with previous time frames
-* Includes volume chart with hourly and daily breakdown.
+* Current value with real-time updates
+* Percentage change from the previous period
+* Visual trend indicators
+* Interactive time-series charts
 
-**Tokens**
+#### Users
 
-* Displays total tokens consumed by Agent and Supervisor components
-* Visual comparison with equivalent historical period
-* Includes token usage chart with time-based trends.
+Tracks unique active users within the selected timeframe, displaying:
 
-<img src="../images/sessions.png" alt="Sessions Dashboard" title="Sessions" style="border: 1px solid gray; zoom:65%;">
+* Total user count
+* Period-over-period comparison
+* Daily or hourly activity breakdown
 
-### Runs
+<img src="../images/users-analytics.png" alt="Users Analytics" title="Users Analytics" style="border: 1px solid gray; zoom:65%;">
 
-The **Runs** section visualizes execution performance across three component categories, with list and chart views.
+#### Sessions
 
-**Agent Runs**
+Monitors total session volume, including:
 
-* Displays total agent executions with real-time trend indicators
-* Agent performance trend charts across the selected time range
-* Provides detailed agent-level metrics: **Agent Name, Number of Runs, Average Response Time, and Tokens Consumed**.
+* Session count and trends
+* Historical performance comparison
+* Time-based distribution chart
 
-**Tool Runs**
+<img src="../images/sessions-analytics.png" alt="Sessions Analytics" title="Sessions Analytics" style="border: 1px solid gray; zoom:65%;">
 
-* Displays total tool executions by all agents in the app, along with comparative trend data
-* Visualizes breakdown by tool type (Workflow, Code, MCP, Knowledge)
-* Offers detailed tool-level metrics: **Tool Name, Number of Runs, Average Response Time,  and Tool Type**.
+#### Messages
 
-**Model Runs**
+Measures communication volume between users and the system:
 
-* Displays total model calls made by Agents and Supervisor during the selected timeframe
-* Breaks down model-level performance: **Model Name, Number of Runs, Average Response Time, and Tokens Consumed**.
+* Total input and output message counts
+* Comparative trend analysis
+* Hourly and daily volume breakdowns
 
-<img src="../images/runs.png" alt="Runs Dashboard" title="Runs Dashboard" style="border: 1px solid gray; zoom:65%;">
+<img src="../images/messages-analytics.png" alt="Messages Analytics" title="Messages Analytics" style="border: 1px solid gray; zoom:65%;">
+
+#### Tokens
+
+Tracks token consumption across Agent and Supervisor components:
+
+* Total tokens consumed
+* Usage comparison with previous periods
+* Time-based consumption patterns
+
+<img src="../images/tokens-analytics.png" alt="Tokens Analytics" title="Tokens Analytics" style="border: 1px solid gray; zoom:65%;">
+
+### Run Analytics
+
+The Runs section provides detailed execution metrics across three component categories, available in both chart and tabular formats.
+
+#### Agent Runs
+
+Monitors agent execution performance with:
+
+* Total execution count and trends
+* Performance metrics over time
+* Detailed agent-level data:
+    * Agent name
+    * Number of runs
+    * Average response time
+    * Token consumption
+
+<img src="../images/agent-runs.png" alt="Agent Runs" title="Agent Runs" style="border: 1px solid gray; zoom:65%;">
+
+#### Tool Runs
+
+Analyzes tool utilization across all agents:
+
+* Execution counts with trend indicators
+* Breakdown by tool type:
+    * Workflow
+    * Code
+    * MCP (Model Context Protocol)
+    * Knowledge
+* Tool-specific metrics:
+    * Tool name
+    * Run frequency
+    * Average response time
+    * Tool category
+
+<img src="../images/tool-runs.png" alt="Tool Runs" title="Tool Runs" style="border: 1px solid gray; zoom:65%;">
+
+#### Model Runs
+
+Tracks model API calls from Agents and Supervisors:
+
+* Total model invocations
+* Performance trends over time
+* Model-level details:
+    * Model name
+    * Execution count
+    * Average response time
+    * Token usage
+
+<img src="../images/model-runs.png" alt="Model Runs" title="Model Runs" style="border: 1px solid gray; zoom:65%;">
