@@ -44,7 +44,7 @@ The Loop node runs a defined set of steps repeatedly—once for each item in an 
 
 You can configure how the loop handles errors during execution and define what should happen when the loop completes successfully or encounters a failure.
 
-<img src="../images/no-connection.png" alt="How loop node works" title="How loop node works" style="border: 1px solid gray; zoom:75%;">
+
 
 In this document, you’ll learn how to add a Loop node to your canvas, place and connect steps inside it, configure input and output variables, and customize error-handling behavior.
 
