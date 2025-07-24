@@ -7,7 +7,7 @@ Structured into two key data layers—session-level and run-level insights—the
 * Session-Level Data: Displays total users, session counts, message volume, and tokens consumed. Each metric includes percentage change indicators and trend visualizations to support usage pattern analysis.
 * Run-Level Data: Highlights executions across agents, tools, and models, detailing average response times, token usage, and performance trends. This data is accessible through both graphical and tabular views, allowing for deeper exploration by component type and execution behavior.
 
-<img src="../agentic-apps/images/analytics-dashboard.png" alt="Analytics Dashboard" title="Analytics Dashboard" style="border: 1px solid gray; zoom:65%;">
+<img src="../images/analytics-dashboard.png" alt="Analytics Dashboard" title="Analytics Dashboard" style="border: 1px solid gray; zoom:65%;">
 
 ## Metrics
 
