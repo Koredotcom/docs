@@ -101,6 +101,7 @@ Key highlights:
 * List views for detailed component-level insights.
 * Filters data by date range for a specific set of analysis.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/analytics-dashboard.md)
 
 **Export All Runs and Logs Data**
 
