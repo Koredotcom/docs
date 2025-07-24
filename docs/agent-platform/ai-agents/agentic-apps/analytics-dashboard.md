@@ -7,7 +7,7 @@ The dashboard organizes analytics into two primary categories:
 * **Session-level insights**: User activity and engagement metrics.
 * **Run-level insights**: Execution performance and resource consumption.
 
-<img src="../images/analytics-dashboard.png" alt="Analytics Dashboard" title="Analytics Dashboard" style="border: 1px solid gray; zoom:65%;">
+<img src="../images/analytics-dashboard.png" alt="Analytics Dashboard" title="Analytics Dashboard" style="border: 1px solid gray; zoom:50%;">
 
 ## Key Features
 
