@@ -80,6 +80,7 @@ Key highlights:
 1. The Loop node is currently available within the Tool Builder. Support for displaying related data in other parts of the product, including Monitoring, Analytics, and Import/Export, will be added in upcoming releases.
 2. A restriction was added in v1.0.7 on backward connections, preventing loops from being created. (Please see the section under parallel connections in the release notes) This restriction is no longer relevant as customers can now create loops natively.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/loop-node.md)
 
 **Enhanced Parameter Configuration for Code Tools**
 
