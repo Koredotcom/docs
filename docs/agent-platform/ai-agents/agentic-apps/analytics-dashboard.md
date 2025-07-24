@@ -50,13 +50,13 @@ The **Runs** section visualizes execution performance across three component cat
 
 * Displays total agent executions with real-time trend indicators
 * Agent performance trend charts across the selected time range
-* Provides detailed agent-level metrics: **Agent Name, Number of Runs, Average Response Time, and Tokens Consumed**
+* Provides detailed agent-level metrics: **Agent Name, Number of Runs, Average Response Time, and Tokens Consumed**.
 
 **Tool Runs**
 
 * Displays total tool executions by all agents in the app, along with comparative trend data
 * Visualizes breakdown by tool type (Workflow, Code, MCP, Knowledge)
-* Offers detailed tool-level metrics: **Tool Name, Number of Runs, Average Response Time,  and Tool Type**
+* Offers detailed tool-level metrics: **Tool Name, Number of Runs, Average Response Time,  and Tool Type**.
 
 **Model Runs**
 
