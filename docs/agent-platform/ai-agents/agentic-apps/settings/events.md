@@ -35,8 +35,8 @@ By default, this event is triggered when an agent handoff is requested in a conv
 These fields are useful for passing data, such as user IDs, user choices, etc, that is already available during the conversation. To configure system-defined parameters:
    * Provide the key (field name), which identifies the parameter in the external system.
    * Set the value, which can be:
-     * A static string, or
-     * A dynamic reference using memory or context variables, such as {{user.country}}. The application resolves these values at runtime and sends them to the external system. 
+        * A static string, or
+        * A dynamic reference using memory or context variables, such as {{user.country}}. The application resolves these values at runtime and sends them to the external system. 
 * **Send Message to User**: Use this field to set the message that the users see when a session ends. You can either use AI to generate the message or provide a custom message. 
     * **Session Management**: Specify how the session should be handled after the event occurs, during a human handoff.
         * **Keep Alive**: Maintain the current session even after this event.
