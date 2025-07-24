@@ -407,6 +407,184 @@ Lists sessions for the selected app and environment. Supports optional filters s
   }
 }
 ```
+Get Session
+Fetches the details of a given session. You must provide either a sessionId or a sessionReference to uniquely identify the session.
+
+Method
+GET
+Endpoint
+/apps/<AppID>/environments/<EnvName>/sessions?sessionId={sessionId}
+
+/apps/<AppID>/environments/<EnvName>/sessions?sessionReference={sessionReference}
+Content-type 
+application/json
+Authorization Header
+x-api-key: <API-KEY>
+
+Path Parameters
+Fields
+Description
+AppID
+Unique Identifier for the app. 
+EnvName
+The name of the environment in which the application will run.
+
+
+Query Parameters
+Fields
+Description
+Required
+sessionId
+Unique Identifier for the session. 
+Optional(One of two is required )
+sessionReference
+The reference associated with the session 
+Optional (one of the two is required)
+
+
+Note: Either sessionId or sessionReference must be provided to identify the session. 
+Sample Response
+{ "session": 
+  {
+    "sessionId": "string",
+    "sessionReference": "string",
+    "status": "string",
+    "userId": "string",
+    "appId": "string",
+    "createdAt": "string",
+    "events": "string[]",
+    "attachments": [
+      {
+        "fileId": "string",
+        "filename": "string",
+        "mimetype": "string",
+        "isActive": "string",
+      },
+    ]
+  }
+}
+
+## Get Session
+
+Fetches the details of a given session. You must provide either a *sessionId* or a *sessionReference* to uniquely identify the session.
+
+
+<table>
+  <tr>
+   <td>Method
+   </td>
+   <td>GET
+   </td>
+  </tr>
+  <tr>
+   <td>Endpoint
+   </td>
+   <td>/apps/<AppID>/environments/<EnvName>/sessions?sessionId={sessionId}
+<p>
+/apps/<AppID>/environments/<EnvName>/sessions?sessionReference={sessionReference}
+   </td>
+  </tr>
+  <tr>
+   <td>Content-type 
+   </td>
+   <td>application/json
+   </td>
+  </tr>
+  <tr>
+   <td>Authorization Header
+   </td>
+   <td>x-api-key: <API-KEY>
+   </td>
+  </tr>
+</table>
+
+
+
+### Path Parameters
+
+
+<table>
+  <tr>
+   <td>Fields
+   </td>
+   <td>Description
+   </td>
+  </tr>
+  <tr>
+   <td>AppID
+   </td>
+   <td>Unique Identifier for the app. 
+   </td>
+  </tr>
+  <tr>
+   <td>EnvName
+   </td>
+   <td>The name of the environment in which the application will run.
+   </td>
+  </tr>
+</table>
+
+
+
+### Query Parameters
+
+
+<table>
+  <tr>
+   <td>Fields
+   </td>
+   <td>Description
+   </td>
+   <td>Required
+   </td>
+  </tr>
+  <tr>
+   <td>sessionId
+   </td>
+   <td>Unique Identifier for the session. 
+   </td>
+   <td>Optional(One of two is required )
+   </td>
+  </tr>
+  <tr>
+   <td>sessionReference
+   </td>
+   <td>The reference associated with the session 
+   </td>
+   <td>Optional (one of the two is required)
+   </td>
+  </tr>
+</table>
+
+
+Note: Either *sessionId* or *sessionReference* must be provided to identify the session. 
+
+
+### Sample Response
+
+
+```json
+{ "session": 
+  {
+    "sessionId": "string",
+    "sessionReference": "string",
+    "status": "string",
+    "userId": "string",
+    "appId": "string",
+    "createdAt": "string",
+    "events": "string[]",
+    "attachments": [
+      {
+        "fileId": "string",
+        "filename": "string",
+        "mimetype": "string",
+        "isActive": "string",
+      },
+    ]
+  }
+}
+```
+
 
 
 

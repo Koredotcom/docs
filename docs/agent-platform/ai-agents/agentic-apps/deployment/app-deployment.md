@@ -71,15 +71,15 @@ Select the app version and environment from the dropdown, then click **Proceed**
 
 ### Restore to a Version
 
-Restoring a version reverts the current draft to a previously saved state. It replaces the existing draft with the selected version, overwriting all the configurations, including changes to tools and agents in the draft version.  
+Restoring a version reverts the current draft to a previously saved state. This action **overwrites the entire draft**, including all configurations, tools, and agent settings, with those from the selected version. If the restored version contains MCP server configurations, they are also automatically applied to the draft, ensuring consistency with the selected version.
 
-Restoring a version retains the complete version history for traceability.  
+Use this feature to revert to a known working state after experimentation, undo recent changes that introduced errors, or to compare previous configurations by restoring and reviewing.
 
 !!! note
+ 
+    Restoring a version replaces the current draft and **cannot be undone**. To preserve your current work, consider saving it as a new version before restoring another.
 
-    Consider saving the current draft as a new version if required. 
-
-   <img src="../images/restore-version.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/restore-version.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:70%;">
 
 ### Delete a Version
 

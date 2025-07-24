@@ -50,6 +50,8 @@
 
     * With the **custom <code>korelogger</code> library**, logs populate in real-time, with support for structured log levels (e.g., info, debug, error), making it ideal for live monitoring and debugging.
 
+* Export runs and logs as a dataset in .csv format, based on the applied filters and selected date range for further analysis, editing, and debugging.
+
 
 ## Best Practices
 
@@ -73,7 +75,6 @@ To access the feature, follow the steps below:
 3. For first-time access, select a script from the dropdown menu.
     
     <img src="../images/select-script.png" alt="select script" title="select script" style="border: 1px solid gray; zoom:75%;">
-
 
 **Key Considerations** 
 
@@ -458,3 +459,41 @@ Log messages and levels are available as `log.message` and <code>log.level</code
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The structure of the attributes field can be modified as required.</p></div>
+
+
+## Export Runs and Logs Data
+
+Exporting **All Runs** and **Logs** data for the selected custom script downloads a `.csv` file in the configured schema, reflecting the selected date range and applied column filters. To export the dataset, follow the steps below:
+
+1. Select the **All Runs** or **Logs** tab.
+2. Click the **Ellipses** button, and select **Export** in the top-right corner.
+3. A *CSV* file containing records of all runs or logs for the selected script is downloaded to the configured system location.
+
+Once the data is exported, the following message is displayed.
+<img src="../images/export-flow.png" alt="export flow" title="export flow" style="border: 1px solid gray; zoom:75%;"> 
+
+If any error occurs during the export process, the following message is displayed: 
+
+<img src="../images/export-err.png" alt="export error" title="export error" style="border: 1px solid gray; zoom:75%;">
+
+The file name is automatically saved in the following formats:
+
+* **Runs Data**: `<scriptname>_runs_data`. Example: Qbalance_runs_data.
+* **Logs data**: `<scriptname>_logs_data`. Example: Qbalance_logs_data.
+
+The export schema files include the dashboard data organized in the following format.
+
+**Runs**
+
+<img src="../images/runs-schema.png" alt="runs schema" title="runs schema" style="border: 1px solid gray; zoom:75%;">
+
+**Logs**
+
+<img src="../images/logs-schema.png" alt="logs schema" title="logs schema" style="border: 1px solid gray; zoom:75%;">
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each user’s export process is implemented separately, ensuring that one user's cancellations or adjustments do not interfere with another user’s export pipeline.</p></div>
+
+
+
