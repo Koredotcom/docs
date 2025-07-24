@@ -206,6 +206,7 @@ nav:
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
     - App Analytics:
       - Sessions and Traces: ai-agents/agentic-apps/app-analytics.md
+      - Dashboard: ai-agents/agentic-apps/analytics-dashboard.md
     - App Deployment: 
       - Deploy an App Version: ai-agents/agentic-apps/deployment/app-deployment.md
       - Access Deployed Version: ai-agents/agentic-apps/deployment/access-deployed-version.md
