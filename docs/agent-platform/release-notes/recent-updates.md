@@ -407,7 +407,7 @@ Agentic Apps now supports Google's Gemini LLM in addition to OpenAI, Anthropic, 
 
 This enhancement offers greater flexibility and model diversity for building powerful, context-aware agents.
 
-[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/supported-models.md)
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
 
 
 **Support for the Latest OpenAI and Anthropic Models as External Models**
