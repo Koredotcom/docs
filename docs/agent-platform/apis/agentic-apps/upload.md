@@ -1,4 +1,6 @@
-# Upload API
+# Managing Uploads
+
+## Upload API
 
 Uploads a file as an attachment to a session. 
 
@@ -29,7 +31,7 @@ Uploads a file as an attachment to a session.
   </tr>
 </table>
 
-## Path Parameters
+### Path Parameters
 
 
 <table>
@@ -55,7 +57,7 @@ Uploads a file as an attachment to a session.
 
 
 
-## Request Parameters (form-data)
+### Request Parameters (form-data)
 
 
 <table>
@@ -106,7 +108,7 @@ curl --location 'http://&lt;agentplatformdomain>/api/v2/apps/{appId}/environment
 --form 'uploadType="runtime"'
 ```
 
-## Response 
+### Response 
 
 Each uploaded file is assigned a unique file ID, which is returned in response along with other details of the file, such as name, path, size, extension, etc. 
 
@@ -124,8 +126,124 @@ Each uploaded file is assigned a unique file ID, which is returned in response a
 }
 ```
 
+Refer to [this to learn more about supported file types and file size limits](../../ai-agents/agentic-apps/settings/app-configurations.md). 
 
-!!!note 
-    * Currently, only files in PDF format are supported.
-    * Users can upload a maximum of two files, with each file size limited to 5 MB.
-    * Content within **images embedded in PDFs is not processed** for contextual understanding. 
+## Delete File
+
+Deletes an uploaded file. 
+
+
+<table>
+  <tr>
+   <td>Method
+   </td>
+   <td>DELETE
+   </td>
+  </tr>
+  <tr>
+   <td>Endpoint
+   </td>
+   <td>/apps/<AppID>/environments/<EnvName>/attachments/<fileId>
+   </td>
+  </tr>
+  <tr>
+   <td>Content-type 
+   </td>
+   <td>multipart/form-data
+   </td>
+  </tr>
+  <tr>
+   <td>Authorization Header
+   </td>
+   <td>x-api-key: <API-KEY>
+   </td>
+  </tr>
+</table>
+
+
+### Path Parameters
+
+
+<table>
+  <tr>
+   <td>Fields
+   </td>
+   <td>Description
+   </td>
+  </tr>
+  <tr>
+   <td>AppID
+   </td>
+   <td>Unique Identifier for the app. 
+   </td>
+  </tr>
+  <tr>
+   <td>EnvName
+   </td>
+   <td>Name of the environment to be used for the agent. 
+   </td>
+  </tr>
+  <tr>
+   <td>fileId
+   </td>
+   <td>Unique identifier of the file to be deleted. 
+   </td>
+  </tr>
+</table>
+
+
+### Request Parameters
+
+
+<table>
+  <tr>
+   <td>Fields
+   </td>
+   <td>Description
+   </td>
+   <td>Mandatory
+   </td>
+  </tr>
+  <tr>
+   <td>sessionId
+   </td>
+   <td>Unique Identifier of the session
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>sessionReference
+   </td>
+   <td>Reference associated with the session
+   </td>
+   <td>No
+   </td>
+  </tr>
+</table>
+
+
+
+#### Sample Request
+
+```
+{
+  // Provide session ID or reference to uniquely identify the session. 
+  "sessionId": "string", // Enum: "sessionId" | "sessionReference" 
+  "sessionReference": "string" 
+}
+
+```
+
+
+
+#### Sample Response
+
+```
+{
+  "message": "file deleted successfully",
+  "success": "true",
+  "fileId": "f-a84242a9-9d9f-4590-8622-59cd93c7f7c3"
+}
+```
+

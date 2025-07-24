@@ -11,7 +11,7 @@ Agent Platform works seamlessly with AI for Service to create a powerful, unifie
 * Ensure that the relevant channel flows (e.g., chat, voice) are set up in AI for Service.
 
 
-## Configure an Agentic App in AI for Service
+## Integrate an Agentic App with AI for Service App
 
 Users can create or select an existing app and configure it using the **Automation Node** within an Experience Flow of the desired communication channel in AI for Service.
 
@@ -34,12 +34,29 @@ Users can create or select an existing app and configure it using the **Automati
     Provide the following Agentic App Configurations:
 
     1. **Agentic App**: Select the app to be integrated that will handle all the interactions on the given communication channel. The dropdown lists all the existing Agentic Apps in the same workspace. You can also create an Agentic App from scratch. 
-
     2. **Environment**: Select the Environment of your Agentic App to be used for end-user interactions. Once the flow is published, the selected environment is used in the published mode. However, the tests are always run against the Draft Environment of the selected application. 
+    3. **Real-time Voice Interactions**: Enable this to support two-way real-time voice streaming via the **Kore Voice Gateway**. This feature uses multi-modal AI models for intelligent voice interactions. When real-time voice interaction is enabled, Kore Voice Gateway uses the underlying models configured in the Agentic App to add voice capabilities to the application. Refer to [this](https://docs.kore.ai/xo/flows/node-types/automation/){:target="_blank"} for other configurations of the node.
+    4. **Metadata**: Metadata fields allow you to pass additional information to the Agentic app in the form of key-value pairs. Within the agentic app, this information is stored in the system memory, sessionMeta, as metadata field which can be accessed within agent prompts and tools.  Click on **Add**to add a new metadata field. Provide the key and its static or dynamic value.  
+    
+    For instance, consider that the user name is passed to Agent Platform as shown below. 
+    ![alt_text](images/integration/xo/metadata.png "image_tooltip")
+    
+    The same can be accessed in the prompts and code tools as `{{[memory.sessionMeta.metadata.name](memory.sessionMeta.metadata.name)}}`. Refer to [this](agentic-apps/memory-stores.md) to learn more accessing memory stores. 
 
-    3. **Real-time Voice Interactions**: Enable this to support two-way real-time voice streaming via the **Kore Voice Gateway**. This feature uses multi-modal AI models for intelligent voice interactions. When real-time voice interaction is enabled, Kore Voice Gateway uses the underlying models configured in the Agentic App to add voice capabilities to the application.
 
-    Refer to [this](https://docs.kore.ai/xo/flows/node-types/automation/){:target="_blank"} for other configurations of the node.
+    Refer to [this ](https://docsinternal-kore.github.io/docs/xo/flows/node-types/automation/)for other node configurations. 
+
+
+### Handling Agent Transfer Event from Agent Platform
+
+When an agent transfer event is triggered from the Agent Platform, the system currently supports agent handoff only through XO, using the automation node that facilitates integration between the two platforms.
+
+![alt_text](images/integration/xo/agent-transfer-event.png "image_tooltip")
+
+
+To process these agent transfer requests, set up the **Agent Transfer connection configuration for the automation node**. When agent handoff event is triggered from the agent platform, the request, along with the LLM collected and system defined parameters, is delegated to the automation node. The automation node then routes the request to the appropriate node as defined by its connection rules.
+
+![alt_text](images/integration/xo/agent-trasfer-node.png "image_tooltip")
 
 
 **Important Notes:**

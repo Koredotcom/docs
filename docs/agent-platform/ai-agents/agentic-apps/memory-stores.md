@@ -34,18 +34,28 @@ To set up Memory store, provide the following details.
 
 ![alt_text](images/memory/basic-info.png "Basic Info")
 
-
 **Schema Definition**
 
-Define the structure of the data to be stored in the memory store. This schema ensures consistency and clarity in how data is stored and accessed. The schema is defined using the[ ](https://json-schema.org/)**JSON Schema** specification. It outlines the expected fields (keys) and their data types. For instance, to define a memory store, *employee_details,* that stores the employee details like name and location, use a schema as shown below. 
+Define the structure of the data to be stored in the memory store. The schema provides a clear and consistent way to describe the expected format of data, ensuring that only valid and properly structured information is written to memory. The schema is defined using the[ JSON Schema specification](https://json-schema.org/). Refer to the official documentation for more details. Some of the important top-level keywords include:
 
+* type: data type of the field - object, array, string, number, boolean, or null.
+* description: brief description of the field.
+* properties: used to declare the subfields of a field of object type. 
+* required: array of mandatory fields.
 
-```json
+Example: Defining an object
+
+The schema must have the following:
+
+* Type: object
+* Use properties to declare keys of the object. For each key, specify the type and description. For instance, to define a memory store, *employee_details*, that stores the employee details like first name, last name, and language, use a schema as shown below. 
+  
+```
 {
-  "type": "object",
-  "properties": {
-    "emp_ID": {
-      "type": "number"
+  "type": "object", //type of object
+  "properties": {  //keys of the object 
+    "emp_ID": {          
+    "type": "number"
     },
     "firstName": {
       "type": "string"
@@ -57,9 +67,9 @@ Define the structure of the data to be stored in the memory store. This schema e
       "type": "string"
     }
   }
+  "required": [ "emp_ID", "firstname"] //mandatory fields of an object
 }
 ```
-
 
 **Require strict adherence**: Check this option to enforce that the updates to memory exactly match the schema defined for the memory store. If there is any mismatch, the updates fail. 
 
