@@ -19,7 +19,7 @@ Users can create or select an existing app and configure it using the **Automati
 
 1. Navigate to the **Start Flows** in the AI for Service application.
 
-    For every interaction across a channel, a welcome flow is designed that defines the end-to-end customer experience for each communication channel.  Go to the welcome flow of the desired communication channel.  ![alt_text](./images/integration/xo/flows.png "image_tooltip")
+    For every interaction across a channel, a welcome flow is designed that defines the end-to-end customer experience for each communication channel.  Go to the welcome flow of the desired communication channel.  ![alt_text](./images/integration/xo/flows.png "XO Flows")
 
 
 2. Add an **Automation Node.**
@@ -28,7 +28,7 @@ Users can create or select an existing app and configure it using the **Automati
 
 3. **Configure the Automation Node.**
 
-    Open the settings for the Automation Node. Under Autonomy Level for Automation AI, select **Full Autonomy.** This setting enables integration with the Agentic Apps in the same workspace as that of AI for Service. The Agentic Apps offer fully autonomous AI Agents that adapt dynamically to the user's interactions.  ![alt_text](./images/integration/xo/autonomy.png "image_tooltip")
+    Open the settings for the Automation Node. Under Autonomy Level for Automation AI, select **Full Autonomy.** This setting enables integration with the Agentic Apps in the same workspace as that of AI for Service. The Agentic Apps offer fully autonomous AI Agents that adapt dynamically to the user's interactions.  ![alt_text](./images/integration/xo/autonomy.png "Autonomy")
 
 
     Provide the following Agentic App Configurations:
@@ -39,9 +39,11 @@ Users can create or select an existing app and configure it using the **Automati
     4. **Metadata**: Metadata fields allow you to pass additional information to the Agentic app in the form of key-value pairs. Within the agentic app, this information is stored in the system memory, sessionMeta, as metadata field which can be accessed within agent prompts and tools.  Click on **Add**to add a new metadata field. Provide the key and its static or dynamic value.  
     
     For instance, consider that the user name is passed to Agent Platform as shown below. 
-    ![alt_text](images/integration/xo/metadata.png "image_tooltip")
+    ![alt_text](images/integration/xo/metadata.png "Metadata")
     
-    The same can be accessed in the prompts and code tools as `{{[memory.sessionMeta.metadata.name](memory.sessionMeta.metadata.name)}}`. Refer to [this](agentic-apps/memory-stores.md) to learn more accessing memory stores. 
+    The same can be accessed in the prompts and code tools as `{{[memory.sessionMeta.metadata.name](memory.sessionMeta.metadata.name)}}`. 
+    
+    Refer to [this](agentic-apps/memory-stores.md) to learn more accessing memory stores. 
 
 
     Refer to [this ](https://docsinternal-kore.github.io/docs/xo/flows/node-types/automation/)for other node configurations. 
@@ -51,12 +53,12 @@ Users can create or select an existing app and configure it using the **Automati
 
 When an agent transfer event is triggered from the Agent Platform, the system currently supports agent handoff only through XO, using the automation node that facilitates integration between the two platforms.
 
-![alt_text](images/integration/xo/agent-transfer-event.png "image_tooltip")
+![alt_text](images/integration/xo/agent-transfer-event.png "Agent Transfer")
 
 
 To process these agent transfer requests, set up the **Agent Transfer connection configuration for the automation node**. When agent handoff event is triggered from the agent platform, the request, along with the LLM collected and system defined parameters, is delegated to the automation node. The automation node then routes the request to the appropriate node as defined by its connection rules.
 
-![alt_text](images/integration/xo/agent-trasfer-node.png "image_tooltip")
+![alt_text](images/integration/xo/agent-trasfer-node.png "Agent Transfer Node")
 
 
 **Important Notes:**

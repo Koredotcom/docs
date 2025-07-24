@@ -79,7 +79,7 @@ Use this feature to revert to a known working state after experimentation, undo 
  
     Restoring a version replaces the current draft and **cannot be undone**. To preserve your current work, consider saving it as a new version before restoring another.
 
-<img src="images/restore-version.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/restore-version.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:70%;">
 
 ### Delete a Version
 

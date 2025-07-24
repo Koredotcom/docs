@@ -49,10 +49,10 @@ Define the **input parameters** required by the tool to perform its task. For ea
     **Defining an object parameter** 
     
     When defining the object type of parameter, 
-    * use the *properties field* to list all the fields inside the object. This field is mandatory for an object type of parameter.
-    * For each field in properties, specify the ***type (string, number, boolean, enum, or object)***, ***description***(optional), and ***required*** fields(optional).
-    * Use the *required* array to list the mandatory fields of an object. 
-    * If there is an object within this object, its type must be set as object and must have its own *properties* and *required* fields to define the fields within this sub-object. 
+     * use the *properties field* to list all the fields inside the object. This field is mandatory for an object type of parameter.
+     * For each field in properties, specify the ***type (string, number, boolean, enum, or object)***, ***description***(optional), and ***required*** fields(optional).
+     * Use the *required* array to list the mandatory fields of an object. 
+     * If there is an object within this object, its type must be set as object and must have its own *properties* and *required* fields to define the fields within this sub-object. 
     
     **Example**: Assume an object field is expected to contain ID, email, and location of an employee, where ID and email are mandatory fields. The location field is an object containing the city, state, and country fields, where only city and country are mandatory. Here is a sample schema for this type of employee object. 
 
