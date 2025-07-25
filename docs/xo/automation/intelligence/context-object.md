@@ -9,9 +9,9 @@ The `Context` object can also be referenced in a script node as well as for dyna
 
 !!!note
     
-    The context object has a size limit of 1024 KB. The platform notifies the bot designers when the size of the context object exceeds the limit. 
+    The context object has a size limit of 1024 KB. The platform notifies the app designers when the size of the context object exceeds the limit. 
     
-    We recommend you review these notifications and modify the bot definition to keep the context object size under the limit. In the upcoming releases, the platform will discard conversations if the context size exceeds the limit.
+    We recommend you review these notifications and modify the app definition to keep the context object size under the limit. In the upcoming releases, the platform will discard conversations if the context size exceeds the limit.
 
 The platform also creates and maintains Session Variables which can be referred to from [here](../../automation/use-cases/using-session-and-context-variables.md).
 The following table describes the `Context` object keys. These can be classified into Global and Dialog contexts based on when they are created and populated. Click [here](../../app-settings/advanced-settings/bot-sessions.md#implementation) for details.

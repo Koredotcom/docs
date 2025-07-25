@@ -32,16 +32,16 @@ To add one or more filters at the Custom Dashboard level, perform the following 
 
     !!! note
 
-        By adding a new value, you can create filters for values that are not available for the VA.
+        By adding a new value, you can create filters for values that are not available for the AI Agents.
 
-    * **Alphanumeric Text field:** You can choose from the existing values of the selected field as suggestions in ascending order or add a new value. Adding a new value creates filters for the values which are not available in the VA.
+    * **Alphanumeric Text field:** You can choose from the existing values of the selected field as suggestions in ascending order or add a new value. Adding a new value creates filters for the values which are not available in the AI Agents.
     * **Numeric Text field:** You can choose a numeric range by providing values at the **‘From Value’** and **‘To Value’** fields. On applying this filter, results in each widget are filtered out based on the From and To values defined in the filter.
 2. Enter the **Filter Name.**
 3. Select a field from any of the following data sources in the **Filter Source** drop-down:
     * **Sessions (Dataset)** – It presents all the fields captured by the platform during conversation sessions.
-    * **User Tag (Custom Tag)** – It presents the Custom user tags generated in the VA to choose from. You can also add a user tag which is not yet available in the VA.
-    * **Message Tag (Custom Tag)** – It presents the Custom message tags generated in the VA to choose from. You can also add a message tag which is not yet available in the VA.
-    * **Session Tag (Custom Tag)**– It presents the Custom session tags generated in the VA to choose from. You can also add a session tag which is not yet available in the VA.
+    * **User Tag (Custom Tag)** – It presents the Custom user tags generated in the AI Agents to choose from. You can also add a user tag which is not yet available in the AI Agents.
+    * **Message Tag (Custom Tag)** – It presents the Custom message tags generated in the AI Agents to choose from. You can also add a message tag which is not yet available in the AI Agents.
+    * **Session Tag (Custom Tag)**– It presents the Custom session tags generated in the AI Agents to choose from. You can also add a session tag which is not yet available in the AI Agents.
 
     The fields in the Sessions dataset are supported for custom filters. Messages and Analytics dataset filters are not supported.
 
@@ -49,11 +49,11 @@ To add one or more filters at the Custom Dashboard level, perform the following 
 
     <img src="./../images/add-custom-filters3.png" alt="Add Custom Filters3" title="Add Custom Filters3" style="border: 1px solid gray; zoom:80%;">   
 
-    For custom filters, we can use fields either from the Sessions dataset or from Message, User, or Session tags. We can add filters for the existing tags and also the tags that are not available in the VA. See Custom Meta Tags to understand more.
+    For custom filters, we can use fields either from the Sessions dataset or from Message, User, or Session tags. We can add filters for the existing tags and also the tags that are not available in the AI Agents. See Custom Meta Tags to understand more.
 
     !!! note
 
-        Based on the Filter Source, select the fields in the Field Name drop-down. In case of Custom Tags, you can select any of the existing tags or add a tag that is not available in the VA.
+        Based on the Filter Source, select the fields in the Field Name drop-down. In case of Custom Tags, you can select any of the existing tags or add a tag that is not available in the AI Agents.
 
 4. Click the button **Save & Preview** to save and preview the filter details.
 5. You can also select a **Default** filter to be applied to all the widgets in the entire dashboard.

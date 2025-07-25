@@ -24,8 +24,8 @@ The application triggers an outbound call using an HTTP POST request to the endp
 
 | **PARAMETER** | **DESCRIPTION**                                                                                          | **TYPE**           |
 |-----------|------------------------------------------------------------------------------------------------------|----------------|
-| host      | Environment URL, for example, https://platform.kore.ai                                             | string, required |
-| botId     | botId or streamId. You can access it from the General Settings page of the bot.                      | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`                                             | string, required |
+| IId     |The application ID.                      | string, required |
 
 ## Query Parameters
 
@@ -66,7 +66,7 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialou
 --data-raw '{
   "bot": "st-e38782ff-0d89-52e9-5678769a49fdexxxx",
   "target": "tel:911234567890",
-  "caller": "+127061657882",
+  "caller": "+11234567890",
   "trunk": "TRUNK",
   "timers": {
     "noSpeechTimeoutMs": 12000,
@@ -135,8 +135,6 @@ Previously, the API supported notifications only for two call events: **Answered
    "status": "Call-In-Progress",
    "machineDetection": "amd_machine_detected"
 }
-
-
 {
     "conversationId": "433a9a58-44eb-4c56-bb3e-ab2415f0xxxx",
     "reason": "200 OK",
@@ -181,6 +179,7 @@ Previously, the API supported notifications only for two call events: **Answered
     "callDisconnectTime": "2025-06-26T13:00:13.374Z"
 }
 ```
+
 ### notifyHeaders
 
 * You can now include notifyHeaders in the API payload. These custom headers will be passed along with the AMD notifications to the specified notifyUrl.

@@ -12,7 +12,7 @@ To get the Queues/Skills associated with an `accountId`.
   <tr>
    <td>Endpoints
    </td>
-   <td><code>https://{{host}}/agentassist/api/public/analytics/account/{{Accountid}}<a href="http://localhost/agentassist/api/public/analytics/account/63fb9a0f90425b644d3eb069/queues">/queues</a></code>
+   <td><code>https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}<a href="http://localhost/agentassist/api/public/analytics/account/63fb9a0f90425b644d3eb069/queues">/queues</a></code>
    </td>
   </tr>
   <tr>
@@ -51,7 +51,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
   <tr>
    <td>host
    </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
+   <td>Environment URL, for example, https://platform.kore.ai
    </td>
    <td>string, required
    </td>
@@ -69,8 +69,8 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5b36bcf8a8c7101exxxx/queues' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWYyYjdmM2Y5LWE0Y2EtNWRhYS04ODRjLThlZDQxYjM2MWRjOSJ9.lYyONpEEmSYdQo7CIOpHWqz4pQE-PgAN2lLYz3-xxxx' \
+curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/queues' \
+--header 'auth: <token>' \
 --header 'Content-Type: application/json'
 ```
 
@@ -100,7 +100,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5
   <tr>
    <td>accountId
    </td>
-   <td>The unique Id associated with the account. For example, 63fb9a0f90425b644d3ec070.
+   <td>The unique Id associated with the account. For example, 63fb9a0f90425b644d3exxxx.
    </td>
    <td>String
    </td>
@@ -108,7 +108,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5
   <tr>
    <td>collectionPointId
    </td>
-   <td>Unique identifier for the collection point (queue). For example, qu-59bb17e-0cae-46b0-8d80-a8a8ac34e55c.
+   <td>Unique identifier for the collection point (queue). For example, qu-59bb17e-0cae-46b0-8d80-a8a8ac34xxxx.
    </td>
    <td>String
    </td>

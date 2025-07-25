@@ -1,13 +1,13 @@
 # Custom Meta Tags
 
-While analyzing your Virtual Assistant’s performance, you might want to give preference to or discard a particular scenario. For example, you might want to track how many people book tickets to _Chicago_. Or you might want to track how a specific user, a premium customer, requests are being fulfilled.
+While analyzing your AI Agent’s performance, you might want to give preference to or discard a particular scenario. For example, you might want to track how many people book tickets to _Chicago_. Or you might want to track how a specific user, a premium customer, requests are being fulfilled.
 
-By adding **Custom Meta Tags** to the conversation flows, you will be able to profile VA-user conversations and derive business-critical insights from usage and execution metrics. Tags can be defined as part of the VA definition at any point of interest. When users interact with your VA, the platform will dynamically resolve these tags and add them to chat transcripts so that you can later filter your conversations, and flows using these tags.
+By adding **Custom Meta Tags** to the conversation flows, you will be able to profile AI Agent-user conversations and derive business-critical insights from usage and execution metrics. Tags can be defined as part of the AI Agents definition at any point of interest. When users interact with your AI Agents, the platform will dynamically resolve these tags and add them to chat transcripts so that you can later filter your conversations, and flows using these tags.
 
 
 ## Defining Meta Tags
 
-The Kore.ai UXO Platform allows you to add tags to various nodes in a dialog task like dialog node, entity node, and so on.
+The Platform allows you to add tags to various nodes in a dialog task like dialog node, entity node, and so on.
 
 This option is available from the **Instance Properties** tab, under **Advanced Controls**.
 
@@ -30,7 +30,7 @@ The tag values will be emitted at run time:
 * For entity, message, confirmation, and other nodes, tags will be emitted on the successful execution of the nodes.
 
 You can also define Tags as key-value pairs from a **Script** written anywhere in the application like in the _Script _node, _Message_, _Entity_, Confirmation Prompts, Error Prompts, Knowledge Task Responses, BotKit SDK, etc. This would be useful if you want conditional tagging.
-
+ 
 Be aware that Script tagging would work only if the prompt where you added the tag script is triggered during the conversation.
 
 The following script can be used to add meta tags:

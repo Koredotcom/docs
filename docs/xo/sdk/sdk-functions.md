@@ -1,6 +1,7 @@
 # Functions for the BotKit SDK
 
-The Kore.ai BotKit SDK provides functions that you can use for greater control of your AI Agent and provide a better user experience. \
+The Platform BotKit SDK provides functions that you can use for greater control of your bot and provide a better user experience.
+
 The following functions are supported by the BotKit SDK.
 
 
@@ -26,7 +27,7 @@ The following functions are supported by the BotKit SDK.
 This function sends the message to the user.
 
 **Usage**
-Used inside the `on_bot_message` event callback. An `on_bot_message` event is called when the AI Agent sends the reply to the user. In the SDK, payload data such as `message` can be modified and sent to the Platform.
+Used inside the `on_bot_message` event callback. An `on_bot_message` event is called when the bot sends the reply to the user. In the SDK, payload data such as `message` can be modified and sent to the Platform.
 
 **Syntax**
 
@@ -39,8 +40,8 @@ sdk.sendUserMessage(payload, callback)
 
 ```json
  {
-   "message":"Spell-corrected message sent by the AI Agent to the user",
-   "originalMessage":"Original message sent by the AI Agent to the user",
+   "message":"Spell-corrected message sent by the bot to the user",
+   "originalMessage":"Original message sent by the bot to the user",
    "taskId":"Dialog task ID",
    "nodeId":"Current node ID in the dialog flow",
    "channel":"Channel name",
@@ -51,8 +52,8 @@ The above message payload is when the user language is detected and the spell co
 
 ```json
 {
-   "message":"Original message sent by the AI Agent to the user",
-   "originalMessage":"Original message sent by the AI Agent to the user",
+   "message":"Original message sent by the bot to the user",
+   "originalMessage":"Original message sent by the bot to the user",
    "languageInfo": {
         "currentLanguage": "current user language",
         "detectedLanguages": [
@@ -149,10 +150,10 @@ metaTags":{
 
 ## sdk.sendBotMessage
 
-This function sends the message to the AI Agent.
+This function sends the message to the bot.
 
 **Usage**
-Used inside the `on_user_message` event callback. An `on_user_message` event is called when the user sends a message to the AI Agent. In the SDK, payload data such as `message` can be modified and sent to the Platform. A validation check is performed on the user message – the message cannot have more than 3000 characters and each word cannot have more than 1200 letters.
+Used inside the `on_user_message` event callback. An `on_user_message` event is called when the user sends a message to the bot. In the SDK, payload data such as `message` can be modified and sent to the Platform. A validation check is performed on the user message – the message cannot have more than 3000 characters and each word cannot have more than 1200 letters.
 
 **Syntax:**
 
@@ -175,7 +176,7 @@ sdk.sendBotMessage(payload, callback)
 * callback – The function to call at event completion used to send the updated message and context back to the Platform.
 
 **Examples**
-The following code snippet send the user response to the AI Agent.
+The following code snippet send the user response to the bot.
 
 ```javascript
    on_user_message: function(requestId, payload, callback) {
@@ -183,7 +184,7 @@ The following code snippet send the user response to the AI Agent.
     }
 ```
 
-In this `on_user_message` function, the message is returned directly to the user, and if not a transfer to a Live Agent, then is sent to the AI Agent.
+In this `on_user_message` function, the message is returned directly to the user, and if not a transfer to a Live Agent, then is sent to the bot.
 
 ```javascript
    on_user_message: function(requestId, payload, callback) {
@@ -248,7 +249,7 @@ callback(null, new sdk.AsyncResponse())
 None.
 
 **Examples**
-This example of an `on_webhook` function, the AI Agent waits asynchronously for the booking of the cab selected by the user.
+This example of an `on_webhook` function, the bot waits asynchronously for the booking of the cab selected by the user.
 
 
 ```javascript
@@ -325,7 +326,7 @@ function bookTheCab(requestId, cabId, userLoc, destination) {
 This function registers the App and makes callback events available at runtime.
 
 **Usage**
-The BotKit SDK is designed to require you to create one Node.js file for each VA. All callbacks for that AI Agent are maintained in the Node.js file. To register a VA, you must export the following variables and functions as:
+The BotKit SDK is designed to require you to create one Node.js file for each VA. All callbacks for that bot are maintained in the Node.js file. To register a VA, you must export the following variables and functions as:
 
 ```javascript
 module.exports = {
@@ -345,17 +346,17 @@ module.exports = {
 
 
 **Syntax:**
-To register the AI Agent, call
+To register the bot, call
 
 ```javascript
 sdk.registerBot(require('./<Bot Name>.js'));
 ```
 
 **Parameters:**
-* Node.js file for the AI Agent to register
+* Node.js file for the bot to register
 
 **Examples**
-The following code example shows registration of the AI Agent by `botId` and `botName`.
+The following code example shows registration of the bot by `botId` and `botName`.
 
 ```javascript
 module.exports = {
@@ -479,10 +480,10 @@ function onBookingFailure(requestId) {
 
 ## sdk.getMessages
 
-This function is used to get the transcript of previous conversations between the AI Agent and the user. It works similar to the public API Conversation History ([see here for Conversation History API](../../apis/automation/conversation-history))
+This function is used to get the transcript of previous conversations between the bot and the user. It works similar to the public API Conversation History ([see here for Conversation History API](../../apis/automation/conversation-history))
 
 **Usage**
-Fetches the conversational messages between the AI Agent and user in reverse chronological order. This API supports pagination. You can provide offset/skip and limit to get a certain number of messages at a time.
+Fetches the conversational messages between the bot and user in reverse chronological order. This API supports pagination. You can provide offset/skip and limit to get a certain number of messages at a time.
 
 **Syntax:**
 
@@ -523,10 +524,10 @@ sdk.getMessages(requestData, callback)
 
 ## sdk.clearAgentSession
 
-This function is used to clear the Agent session and reestablish the conversation with the AI Agent.
+This function is used to clear the Agent session and reestablish the conversation with the bot.
 
 **Usage**
-In an Agent Transfer scenario, when the agent closes the conversation with the user, `chat_closed` event gets triggered from 3rd party provider. In such situations, this function is invoked to re-establish the conversation with the AI Agent
+In an Agent Transfer scenario, when the agent closes the conversation with the user, `chat_closed` event gets triggered from 3rd party provider. In such situations, this function is invoked to re-establish the conversation with the bot
 
 **Syntax:**
 
@@ -584,7 +585,7 @@ metaTags":{
 This function is used to notify the Platform that an Agent session has started.
 
 **Usage**
-This function is used when an Agent Transfer is initiated and you want to indicate to the AI Agent that the agent transfer is in progress. Followed by this, the data object received by BotKit at onMessages(), for instance, would have agent session as true. Further, if the _sdk.clearAgentSession_ is called from BotKit, the Platform is notified that agent session is completed and the data object received by the BotKit would have the agent session set to false.
+This function is used when an Agent Transfer is initiated and you want to indicate to the bot that the agent transfer is in progress. Followed by this, the data object received by BotKit at onMessages(), for instance, would have agent session as true. Further, if the _sdk.clearAgentSession_ is called from BotKit, the Platform is notified that agent session is completed and the data object received by the BotKit would have the agent session set to false.
 
 **Syntax:**
 
@@ -604,7 +605,7 @@ sdk.startAgentSession(requestData, callback)
 ```javascript
 //The following function call is used in the LiveChat.js for connectToAgent() function
 //Invoking the startAgentSession before invoking the initChat function will ensure that
-// the AI Agent detects the Agent transfer in progress
+// the bot detects the Agent transfer in progress
 function connectToAgent(requestId, data, cb) {
     var formdata = {};
     formdata.licence_id = config.liveagentlicense;
@@ -617,7 +618,7 @@ function connectToAgent(requestId, data, cb) {
     data.message = "An Agent will be assigned to you shortly!!!";
     sdk.sendUserMessage(data, cb);
     sdk.startAgentSession(data, cb);
-    formdata.welcome_message = "Link for user Chat history with the AI Agent: " + config.app.url + "/history/index.html?visitorId=" + visitorId;
+    formdata.welcome_message = "Link for user Chat history with the bot: " + config.app.url + "/history/index.html?visitorId=" + visitorId;
     return api.initChat(visitorId, formdata)
         .then(function(res) {
             _map[visitorId] = {
@@ -659,7 +660,7 @@ metaTags":{
 This function is used to clear the context and discard the current task silently.
 
 **Usage**
-At run time, during the execution of dialog, if the user input might want to clear the AI Agent using “reset bot” command. Then the context can be cleared and the task discarded.
+At run time, during the execution of dialog, if the user input might want to clear the bot using “reset bot” command. Then the context can be cleared and the task discarded.
 
 **Syntax:**
 

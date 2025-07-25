@@ -3,7 +3,7 @@
 Define the behavior of the Virtual Assistant during conversations with user to optimize user interactions.
 ## End of Task
 
-*End of Task* is triggered when the VA is not expected to send any message to the user or receive any message from the user.
+*End of Task* is triggered when the AI Agent is not expected to send any message to the user or receive any message from the user.
 
 A new flag indicating the reason for ending the task, added to the _end of task_ event, will help decide the end of the conversation behavior. Client-side implementations of BotKits, RTM, and Webhook channels can use this reason for the task completion flag to determine an appropriate course of action.
 
@@ -73,7 +73,7 @@ On triggering this event, the context will be updated with the following details
 ## Task Execution Failure Event
 
 * By default, this event is always enabled with the _Show Message_ option. This event cannot be disabled.
-* This VA-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](../../use-cases/dialogs/using-the-dialog-builder-tool.md#dialog-settings).
+* This App-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](../../use-cases/dialogs/using-the-dialog-builder-tool.md#dialog-settings).
 
     <img src="../images/task-execution-failure-event.png" alt="task execution failure event" title="task execution failure event" style="border: 1px solid gray; zoom:75%;">
     
@@ -136,7 +136,7 @@ The following are some of the scenarios and the repeat bot response event behavi
    </td>
   </tr>
   <tr>
-   <td>If the repeat event is enabled in a Standard VA and disabled in the Universal Bot (UB)
+   <td>If the repeat event is enabled in a Standard AI Agent and disabled in the Universal Bot (UB)
    </td>
    <td>UB settings take precedence, and the event defined in UB is triggered even if the current conversation context is in a Linked Bot.
    </td>
@@ -147,7 +147,7 @@ The following are some of the scenarios and the repeat bot response event behavi
 
 **Problem Statement**
 
-In the Flight Booking VA, the user couldn’t hear the last response on an IVR channel, and the user said, `"Sorry, I can't hear you. Can you please repeat it again?"`
+In the Flight Booking AI Agent, the user couldn’t hear the last response on an IVR channel, and the user said, `"Sorry, I can't hear you. Can you please repeat it again?"`
 
 In this conversation, the dialog has reached the end, and the last response says, `"Thank you. Your flight has been booked successfully. Your booking reference number is XYZ789 and you will receive a message shortly "`(Dialog reached to END).
 

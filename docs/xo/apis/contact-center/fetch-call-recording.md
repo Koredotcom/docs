@@ -4,8 +4,8 @@ To retrieve the recording of a specific call using either the `userId` or `sessi
 
 | **Method**    | GET                                                                           |
 |-----------|-------------------------------------------------------------------------------|
-| **Endpoints** | `https://{{host}}/api/public/bot/{{IID}}/recordings?{{userId}}`             |
-|           | `https://{{host}}/api/public/bot/{{IID}}/recordings?{{sessionId}}`          |
+| **Endpoints** | `https://{{host}}/api/public/bot/{{botId}}/recordings?{{userId}}`             |
+|           | `https://{{host}}/api/public/bot/{{botId}}/recordings?{{sessionId}}`          |
 | **Content Type** | `application/json`                                                           |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | SmartAssist Recordings                                                        |
@@ -14,8 +14,8 @@ To retrieve the recording of a specific call using either the `userId` or `sessi
 
 | **PARAMETER** | **DESCRIPTION**                                                           | **TYPE**            |
 |-----------|-----------------------------------------------------------------------|-----------------|
-| host      | Environment URL, for example, https://platform.kore.ai            | string, required|
-| IId     | The application ID.| string, required|
+| host      | Environment URL, for example, `https://platform.kore.ai`            | string, required|
+| botId     | botId or streamId. You can get it from the general settings page.| string, required|
 
 ## Query Parameters
 
@@ -27,9 +27,9 @@ To retrieve the recording of a specific call using either the `userId` or `sessi
 ## Sample Requests
 
 ```
-curl --location --request GET '{{host}}/api/1.1/public/bot/{{IID}}/recordings?userId={{userId}}' \
+curl --location --request GET '{{host}}/api/1.1/public/bot/{{botId}}/recordings?userId={{userId}}' \
 --header 'auth: {{JWT_TOKEN}}'
-curl --location --request GET '{{host}}/api/1.1/public/bot/{{IID}}/recordings?sessionId={{sessionId}}' \
+curl --location --request GET '{{host}}/api/1.1/public/bot/{{botId}}/recordings?sessionId={{sessionId}}' \
 --header 'auth: {{JWT_TOKEN}}'
 ```
 

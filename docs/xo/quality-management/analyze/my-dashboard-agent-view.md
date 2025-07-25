@@ -1,28 +1,44 @@
 # Agent Dashboard
 
-**My Dashboard** is the Agent Dashboard for agents’ view, which offers detailed insights into your activity and performance as an agent.
+## Overview
 
-Each agent has a personalized dashboard, which is accessible to both the agents. In this, the agents can view their performance through scorecards provided by their supervisors. This setup allows agents to take appropriate actions based on their performance metrics.
+**My Dashboard** is a personalized agent dashboard, that provides agents with performance insights via supervisor-assigned scorecards. It supports global language settings for general widgets, while Scorecard widgets allow independent language selection for multilingual performance tracking.
 
-You can access **My Dashboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **My Dashboard**.  
+Agents can view trends, coaching insights, and improvement areas, such as voice attributes. **Calendar** and **Channel** filters enable focused analysis by time period and communication channel.
+
+### Key Functionalites
+
+* **Real-time Performance Monitoring**: Access real-time feedback through supervisor scorecards and automated Quality Assurance (QA) scoring.
+
+* **Data-driven Decision Making**: Utilize concrete metrics including evaluation scores, audit results, and coaching assignments to guide professional development.
+
+* **Coaching Insights Analysis**: Track coaching assignments and identify improvement areas.
+
+* **Multi-channel Analysis**: Compare performance across voice, chat, and combined channels.
+
+* **Historical Tracking**: Monitor improvement trends through daily, weekly, and monthly views.
+
+### Access My Dashboard 
+
+Access **My Dashboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **My Dashboard**.  
 <img src="../agent-dashboard/images/my-dashboard-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
-
-In this, you can filter all your interaction channels (Voice and SMS or both) by selecting the following date ranges:
-
-* **Today**: All interaction data for this day, in the agent’s time zone.
-* **Yesterday**: All interaction data of the previous day, in the agent’s time zone.
-* **Last 7 days**: All interaction data for the previous 7 days (not including today), in the agent’s time zone.
-* **Last 28 days**: All interaction data for the previous 28 days, (not including today), in the agent’s time zone.
-* **Last 90 days**: All interaction data for the previous 90 days, (not including today), in the agent’s time zone.
-* **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.
 
 !!! Note
 
-    If the Supervisor or Admin has not enabled the **Auto QA** and **Agent Scorecard** toggle option in the Quality AI displayed under **Settings**, then you will not be able to view the automated scoring of interactions in the Dashboard.
+    A Supervisor or Admin must enable the following settings for the dashboard to load your personalized performance data, automated scoring, and interaction access.
 
-## Overview
+    * Auto QA
 
-The **Overview** of the Dashboard displays metrics for the chosen time and selected channel (**All**, **Voice,** **Chat**), which includes:
+    * Agent Score Card
+
+    * Agent Access to Scored Interactions
+
+You can find these configurations options under:
+**Configure** > **Settings** > **Quality AI General Settings**.
+
+### Filter Options
+
+My dashboard metrics allow you to filter and refine the data displayed across the entire dashboard by selected languages, date range or calendar, and channel.
 
 * **Total Interactions**: This shows the overall number of interactions completed for the time period.
 

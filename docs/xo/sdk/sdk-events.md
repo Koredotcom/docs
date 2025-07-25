@@ -1,6 +1,6 @@
 # Events for the BotKit SDK
 
-You can use the Platform BotKit SDK to capture and handle events in the Bots Platform for better control and customization of the user’s experience with the AI Agent that you are building. The following events are supported by the BotKit SDK:
+You can use the Platform BotKit SDK to capture and handle events in the Bots Platform for better control and customization of the user’s experience with the bots that you are building. The following events are supported by the BotKit SDK:
 
 * [onMessage](#onusermessage)
 * [onWebhook](#onwebhook)
@@ -14,7 +14,7 @@ You can use the Platform BotKit SDK to capture and handle events in the Bots Pla
 
 This event consists of the following two components:
 
-* <span style="text-decoration:underline;">onUserMessage:</span> This event is triggered when a user sends a message to the AI Agent and it is received by the channel adapter. The user message is wrapped in this event and sent to the SDK.
+* <span style="text-decoration:underline;">onUserMessage:</span> This event is triggered when a user sends a message to the bots and it is received by the channel adapter. The user message is wrapped in this event and sent to the SDK.
 * <span style="text-decoration:underline;">onBotMessage</span>: This event is triggered when any messages need to be sent to the user. These messages are sent to the SDK along with `context` object.
 
 ### onUserMessage
@@ -31,7 +31,7 @@ Parameters:
 
  ```json
     {
-   "message":"message sent by the AI Agent to the user",
+   "message":"message sent by the bots to the user",
    "taskId":"Dialog task Id",
    "nodeId":"current node id in the dialog flow",
    "channel":"channel name",
@@ -99,7 +99,7 @@ Parameters:
 
 * callback – The function to call at event completion used to send the updated message and context back to the user.
 
-Example: The following code snippet onBotMessage event evaluates the user message for content and then for message tone. If the message tone is greater than or equal to 2 for the angry tone, then the communication between the user and the AI Agent is switched to a live human agent.
+Example: The following code snippet onBotMessage event evaluates the user message for content and then for message tone. If the message tone is greater than or equal to 2 for the angry tone, then the communication between the user and the bots is switched to a live human agent.
 
 ```javascript
 /*
@@ -148,7 +148,7 @@ Parameters:
 
     ```json
     {
-    "message":"message sent by the AI Agent to the Platform",
+    "message":"message sent by the bots to the Platform",
     "taskId":"Dialog task Id",
     "nodeId":"current node id in the dialog flow",
     "channel":"channel name",
@@ -234,7 +234,7 @@ Parameters:
 
 * callback – The function to call at event completion used to send the updated message and context back to the Platform.
 
-Example: The following code snippet onAgentTransfer event connects the user to a Live Agent and passing the user message, AI Agent message, and historical chat messages of the session.
+Example: The following code snippet onAgentTransfer event connects the user to a Live Agent and passing the user message, bots message, and historical chat messages of the session.
 
 ```javascript
 function connectToAgent(requestId, data, cb) {
@@ -253,7 +253,7 @@ function connectToAgent(requestId, data, cb) {
     data.context.session.BotUserSession.startTime = new Date().toLocaleString();
     console.log("userlog", JSON.stringify(data.context.session));
     sdk.sendUserMessage(data, cb);
-    formdata.welcome_message = "Link for user Chat history with the AI Agent : " + config.app.url + "/history/index.html?visitorId=" + visitorId;
+    formdata.welcome_message = "Link for user Chat history with the bots : " + config.app.url + "/history/index.html?visitorId=" + visitorId;
     return api.initChat(visitorId, formdata)
         .then(function(res) {
             _map[visitorId] = {
@@ -267,7 +267,7 @@ function connectToAgent(requestId, data, cb) {
 
 ## OnEvent
 
-This event is triggered when Dialog Task or FAQ ends in the AI Agent and sends request ID and context to the SDK. 
+This event is triggered when Dialog Task or FAQ ends in the bots and sends request ID and context to the SDK. 
 
 Syntax: 
 `on_event : function (requestId, data, callback)`
@@ -317,7 +317,7 @@ The alert response data is found in the data object sent to the kit.
 
 ## OnVariableUpdate
 
-This event is triggered on **variable_update** when the AI Agent is published. 
+This event is triggered on **variable_update** when the bots is published. 
 
 Syntax: variable_update : function (requestId, data, callback) 
 
@@ -331,7 +331,7 @@ Parameters:
 var event = data.eventType;
 console.log("event----------->", event);
 if (first || event == "variable_update") {
-    // fetch BotVariables List for published AI Agent
+    // fetch BotVariables List for published bots
     sdk.fetchBotVariable(data, langArr, function(err, response) {
         dataStore.saveAllVariables(response, langArr);
         first = false;
@@ -346,7 +346,7 @@ console.log(dataStore);
 
 ## OnClientEvent
 
-This event is triggered on **client_event** when the AI Agent receives client events sent by the third party application. 
+This event is triggered on **client_event** when the bots receives client events sent by the third party application. 
 
 Syntax: on_client_event : function (requestId, data, callback) 
 

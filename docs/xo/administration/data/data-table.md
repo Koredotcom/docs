@@ -1,6 +1,6 @@
 # Data Table
 
-You can create a data table and share it with virtual assistants, apps and process assistants.
+You can create a data table and share it with AI Agents, apps and process assistants.
 
 Step to create a new table:
 
@@ -15,7 +15,7 @@ Step to create a new table:
     2. **Description** of the Data Table.
     3. **Columns** to be included in the Table.
     4. **Indexes** for the Table.
-    5. **Bot Assignments** to let virtual assistants access data in this table.
+    5. **Bot Assignments** to let AI Agent access data in this table.
     6. **App Assignments** to let apps access data in this table.
     7. **Process Assignments** to let a process app access data in this table.  
 
@@ -68,9 +68,9 @@ This includes:
 
 You can define the assignments for each of the data tables as follows:
 
-* **Assign bots:**
-    * Assign bots with Read, Write, and Delete permissions. You can select the bots from the list presented, these will be the list of bots owned by you and shared with you.
-    * Only the assigned bots will be allowed to access the data from the data table using the Service Nodes in the Dialog Tasks of that bot.
+* **Assign apps:**
+    * Assign apps with Read, Write, and Delete permissions. You can select the apps from the list presented, these will be the list of apps owned by you and shared with you.
+    * Only the assigned apps will be allowed to access the data from the data table using the Service Nodes in the Dialog Tasks of that app.
 
 * **Assign apps:**
     * Assign apps with Read, Write, and Delete permissions.

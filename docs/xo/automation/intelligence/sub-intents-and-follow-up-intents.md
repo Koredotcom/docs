@@ -88,9 +88,9 @@ If you want to reset the values, you need to use the keyword “null”, spaces 
 
 ## Follow-up Intents
 
-Follow-up intents refer to intents that came up in user conversations during the execution of another task, but the assistant has not attended to. As a part of dialog task execution, the VA captures all unattended interruptions and makes them accessible to the VA in the _FollowupIntents_ array.
+Follow-up intents refer to intents that came up in user conversations during the execution of another task, but the assistant has not attended to. As a part of dialog task execution, the AI Agent captures all unattended interruptions and makes them accessible to the AI Agent in the _FollowupIntents_ array.
 
-However, the VA does not capture Follow-up Intent if you select the **Do not Hold and Resume** option at the node, task, or bot level, whichever is applicable to the task flow.
+However, the AI Agent does not capture Follow-up Intent if you select the **Do not Hold and Resume** option at the node, task, or app level, whichever is applicable to the task flow.
 
 You can enable the dialog task to present all the Follow-up tasks to the user at the end of the dialog so they can choose to execute any of them. To do so, follow these steps:
 
@@ -100,4 +100,4 @@ You can enable the dialog task to present all the Follow-up tasks to the user at
 <img src="../images/follow-up-task.png" alt="follow up task" title="follow up task" style="border: 1px solid gray; zoom:75%;">
 
 <ul><li><b>Yes</b>, at the end of this dialog ask the user to select and perform a task from the <i>Follow-up task</i> list: Select this option to show all the unattended intents to the user at the end of the dialog. To customize the message sent to the user, click <b>Manager Response</b> next to the option.</li>
-<li><b>No</b>, the <i>Follow-up task</i> list is handled as part of the node connections: This is the default option. If this option is active, the VA does not present the Follow-up intents to the users at the end of the dialog. However, a developer can access this using the <i>FollowupIntents</i> array.</li></ul>
+<li><b>No</b>, the <i>Follow-up task</i> list is handled as part of the node connections: This is the default option. If this option is active, the AI Agent does not present the Follow-up intents to the users at the end of the dialog. However, a developer can access this using the <i>FollowupIntents</i> array.</li></ul>

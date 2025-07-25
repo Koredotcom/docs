@@ -4,7 +4,7 @@ This API facilitates the downloading of voicemail recordings. The API provides a
 
 | Method       | GET |
 |-------------|-----|
-| Endpoint    | `https://{{host}}/api/public/bot/{{IID}}/voicemail?sessionId={{sessionId}}&transcription=true` |
+| Endpoint    | `https://{{host}}/api/public/bot/{{botId}}/voicemail?sessionId={{sessionId}}&transcription=true` |
 | Content Type | `application/json` |
 | Authorization | `auth: {{JWT}}`  <br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | API Scope   | SmartAssist Voicemail |
@@ -14,7 +14,7 @@ This API facilitates the downloading of voicemail recordings. The API provides a
 | PARAMETER | DESCRIPTION | TYPE |
 |-----------|-------------|------|
 | host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| IId     | the application ID. | string, required |
+| botId     | botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Query Parameters
 
@@ -26,7 +26,7 @@ This API facilitates the downloading of voicemail recordings. The API provides a
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/api/public/bot/{{IID}}/voicemail?sessionId=67aa38026e199c8f470exxxx&transcription=true' \
+curl --location 'https://{{host}}/api/public/bot/{{botId}}/voicemail?sessionId=67aa38026e199c8f470exxxx&transcription=true' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTQ0YTIzOTNmLTk4MTEtNWY3Mi04NGUyLTM0YTY4MzI4N2I1ZCJ9.kW9tN1gTUW7QjFrHvwBp-EcRu8QhBK223Xi2NgZxxxx' \
 --data ''
 ```

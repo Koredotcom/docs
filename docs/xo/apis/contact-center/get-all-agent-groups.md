@@ -1,10 +1,10 @@
 # Get All Agent Groups
 
-To retrieve the list of agent groups with the given IId.
+To retrieve the list of agent groups with the given `streamId`.
 
 | **Method**   | GET                                          |
 |----------|----------------------------------------------|
-| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{IId}}/agent-groups` |
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups` |
 | **Content Type** | `application/json`                          |
 | **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | SmartAssist Analytics                        |
@@ -13,14 +13,14 @@ To retrieve the list of agent groups with the given IId.
 
 | **Parameter** | **Description**                                    | **Type**            |
 |-----------|------------------------------------------------|-----------------|
-| host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| IId     |The application ID. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| streamId     |botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Sample Request
 
 ```
 curl --location --request GET \
-     'https://{{host}}/agentassist/api/v1/public/{{IId}}/agent-groups' \
+     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

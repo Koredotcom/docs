@@ -4,7 +4,7 @@ To retrieve the details of a particular skill with the given Stream Id, Skill Gr
 
 | **Method**       | GET                                                                             |
 |--------------|---------------------------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{IId}}/skill-groups/{{skillGroupId}}/skills/{{skillId}}` |
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills/{{skillId}}` |
 | **Content Type** | `application/json`                                                             |
 | **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                                          |
@@ -13,8 +13,8 @@ To retrieve the details of a particular skill with the given Stream Id, Skill Gr
 
 | **PARAMETER**     | **DESCRIPTION**                                                                      | **TYPE**           |
 |---------------|----------------------------------------------------------------------------------|----------------|
-| host          | Environment URL, for example, https://platform.kore.ai                        | string, required |
-| IId         | The application ID. | String, Required |
+| host          | Environment URL, for example, `https://platform.kore.ai`                        | string, required |
+| streamId         | botId or streamId. You can get it from the general settings page. | String, Required |
 | skillGroupId  | Id of the Skill Group.                                                           | string, required |
 | skillId       | Id of the Skill.                                                                 | string, required |
 
@@ -22,7 +22,7 @@ To retrieve the details of a particular skill with the given Stream Id, Skill Gr
 
 ```
 curl --location --request GET \
-     'https://{{host}}/agentassist/api/v1/public/{{IId}}/skill-groups/{{skillGroupId}}/skills/{{skillId}}' \
+     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills/{{skillId}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

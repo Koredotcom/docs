@@ -9,15 +9,15 @@ To access **Events**, navigate to **Automation AI > Virtual Assistant > Conversa
 
 ## Event Actions
 
-Developers can define what action the VA should take when an event is triggered using one of the following options:
+Developers can define what action the AI Agent should take when an event is triggered using one of the following options:
 
 ### Initiate a Task
 
-Select a Dialog task (Standard or Hidden) to be invoked when the event triggers. Once the event is triggered, the dialog starts executing. If it is interrupted by other intent detections, the Hold and Resume settings come into play. During execution, the event is discarded if the selected Dialog is not published in the VA.
+Select a Dialog task (Standard or Hidden) to be invoked when the event triggers. Once the event is triggered, the dialog starts executing. If it is interrupted by other intent detections, the Hold and Resume settings come into play. During execution, the event is discarded if the selected Dialog is not published in the AI Agent.
 
-In some cases, the Dialog may not be available to the user during a conversation for various reasons, such as the task not being published, suspended, or simply not having been assigned to the user. In such cases, the VA shows an error message that the task is not currently available for execution.
+In some cases, the Dialog may not be available to the user during a conversation for various reasons, such as the task not being published, suspended, or simply not having been assigned to the user. In such cases, the AI Agent shows an error message that the task is not currently available for execution.
 
-Developers can preempt such situations by testing the VA in Debug mode. The Debug Console shows full details about the error, including why the task is not available.
+Developers can preempt such situations by testing the AI Agent in Debug mode. The Debug Console shows full details about the error, including why the task is not available.
 
 ### Run a Script
 
@@ -28,10 +28,10 @@ Define a JavaScript to run when the event triggers. The script can use all appli
 When the event triggers, define a simple or advanced message for the user. It supports all messaging formatting features available in the XO Platform, including multiple messages with channel override options.  
 <img src="../images/show-a-message.gif" alt="show a message" title="show a message" style="border: 1px solid gray; zoom:75%;">
 
-#### Multilingual VA Behavior for Messages
+#### Multilingual AI Agent Behavior for Messages
 
 * You can define language-specific messages;
-* If a message is deleted from an Event for a specific language, then it will be removed from all other languages of the VA;
+* If a message is deleted from an Event for a specific language, then it will be removed from all other languages of the AI Agent;
 * If a message is added for a language, then the message would be added in all other languages using the same content;
 * If a message is modified in a language, the modifications will be applied only to that language. [Learn more](../../sdk/web-mobile-sdk-message-formatting-and-templates.md).
 
@@ -55,7 +55,7 @@ You can configure the following events to trigger responses:
   <tr>
    <td>Intent not Identified
    </td>
-   <td>Runs every time the VA cannot understand the user’s intent.
+   <td>Runs every time the AI Agent cannot understand the user’s intent.
    </td>
   </tr>
   <tr>
@@ -80,7 +80,7 @@ You can configure the following events to trigger responses:
    <td>On encountering an error in dialog task execution like:
 <ul>
 
-<li>An error in the execution of the VA,
+<li>An error in the execution of the AI Agent,
 
 <li>Service call failure,
 
@@ -94,7 +94,7 @@ You can configure the following events to trigger responses:
 
 <li>Dialog related to a sub-dialog node is not available,
 
-<li>Exceptions in parsing the VA message.
+<li>Exceptions in parsing the AI Agent message.
 </li>
 </ul>
    </td>

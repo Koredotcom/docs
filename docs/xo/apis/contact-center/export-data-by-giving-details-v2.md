@@ -5,7 +5,7 @@ To get exported data which is one of (skillsGroups, Queues, StandardResponses, W
 | **Field**         | **Value**                                                                                                                                                                                                                                       |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Method**        | GET                                                                                                                                                                                                                                              |
-| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/analytics/{{IId}}/retrieveSmartAssistFunctionalities?accountId={{accountId}}&orgId={{orgId}}&type=skillGroups`                                                                                    |
+| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/analytics/{{botId}}/retrieveSmartAssistFunctionalities?accountId={{accountId}}&orgId={{orgId}}&type=skillGroups`                                                                                    |
 | **Content Type**  | `application/json`                                                                                                                                                                                                                               |
 | **Authorization** | `auth: {{JWT}}`  
 See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                                                                                                                                         |
@@ -16,7 +16,7 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
 | **Parameter** | **Description**                                                                                     | **Type**          |
 |---------------|-----------------------------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                                         | String, Required  |
-| `IId`       | The application ID.                    | String, Required  |
+| `botId`       | botId or streamId. You can get it from the general settings page.                 | String, Required  |
 
 ## Query Parameters
 
@@ -29,7 +29,7 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/analytics/{{IId}}/retrieveSmartAssistFunctionalities?accountId={{accountId}}&orgId={{orgId}}&type=skillGroups' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/analytics/{{botId}}/retrieveSmartAssistFunctionalities?accountId={{accountId}}&orgId={{orgId}}&type=skillGroups' \
 --header 'auth: <YOUR_AUTH_TOKEN>' \
 --header 'accountId: {{accountId}}'
 ```

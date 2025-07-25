@@ -67,7 +67,7 @@ DialogGPT is an advanced Intent Detection and Conversation Management module tha
 * LLM-Powered Intent Resolution: An LLM resolves the shortlisted chunks and determines the winning intent. It could be an Intent, Multiple Intents, Answers, FAQs, Conversation Intents, Ambiguous Intents, or Small Talk.
 * Automated Event Handling: Default platform-provided event handlers are triggered based on the fulfillment type, ensuring smooth user interactions and dialog execution.
 * Clarifying Questions for Ambiguous Intents: When ambiguous intents are detected, clarifying questions are triggered for disambiguation
-* Simplified Training: There is no need for training utterances or invocation phrases for bot qualification. However, providing complete dialog descriptions is required for more accurate intent identification. 
+* Simplified Training: There is no need for training utterances or invocation phrases for AI Agent qualification. However, providing complete dialog descriptions is required for more accurate intent identification. 
 
 
 ## How the Dynamic Routing Works

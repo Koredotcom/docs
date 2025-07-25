@@ -339,7 +339,7 @@ nav:
                 - ClickUp: searchai/content-sources/connectors/clickup.md
                 - Coda: searchai/content-sources/connectors/coda.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
-                - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Confluence Data Center: searchai/content-sources/connectors/confluence-server.md
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
                 - Datadog: searchai/content-sources/connectors/datadog.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md
@@ -438,13 +438,17 @@ nav:
       - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
       - Widget Settings: contactcenter/configurations/widgets/configure-widgets.md
       - Wallboards: contactcenter/configurations/wallboards/configure-wallboards.md
+      - System Settings: 
+        - Co-Browse: contactcenter/configurations/settings/co-browse.md
+        - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
+        - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
       - Advanced Settings:
-        - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
-        - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
-        - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
-        - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
-        - Translation Configurations: contactcenter/configurations/advanced-settings/translation-configurations.md
-        - Replace Customer Column Data With User ID: contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md
+        - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
+        - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
+        - Reject Calls With a Delayed First Response: contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md
+        - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
+        - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
+        - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
     - Performance Management:
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
@@ -485,7 +489,8 @@ nav:
         - Dashboard:
           - Supervisor Dashboard: quality-management/analyze/dashboard.md
           - Supervisor View (Agent-Specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
-          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                
+          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md
+          - Agent Dashboard Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md                
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
@@ -770,7 +775,7 @@ nav:
         - Supported Components & Features: app-settings/language-management/multilingual-vas-components-feature-support.md
         - Manage Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
         - Manage Translation Services: app-settings/language-management/managing-translation-services.md
-        - Multilingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md              
+        - Multilingual AI Agent Behavior: app-settings/language-management/multi-lingual-bot-behavior.md              
       - Dev Tools:
         - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md

@@ -4,14 +4,14 @@ You can use the **Prebuilt Action Templates** from your Freshdesk integration to
 
 Steps to create a dialog task using the Freshdesk action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create Dialog**.  
 
 
 3. On the Dialog Task pop-up, under the Integration, select the Freshdesk option to view the action templates.  
 <img src="../images/freshdesk-action-img10-tem-img2.png" alt="select Freshdesk" title="Select Freshdesk" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
 <img src="../images/freshdesk-tem-img3.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -153,7 +153,7 @@ Steps to create a ticket in the Freshdesk integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create a ticket as shown below:  
+5. Follow the prompts in the App console to create a ticket as shown below:  
 <img src="../images/freshdesk-tem-img6.png" alt="VA console prompts to create ticket" title="VA console prompts to create ticket" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -214,7 +214,7 @@ Steps to find a ticket using the ID in the Freshdesk integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to find a ticket by ID as shown below:  
+5. Follow the prompts in the App console to find a ticket by ID as shown below:  
 <img src="../images/freshdesk-tem-img9.png" alt="VA console prompt to find ticket by ID" title="VA console prompt to find ticket by ID" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -920,7 +920,7 @@ Steps to view all tickets in the Freshdesk integration:
     4. **listAllTicketsMessage** – A message node with the script to display responses for various scenarios.
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all tickets as shown below:  
+5. Follow the prompts in the App console to view all tickets as shown below:  
 <img src="../images/freshdesk-tem-img12.png" alt="VA console prompt to view all tickets" title="VA console prompt to view all tickets" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -998,7 +998,7 @@ Steps to update a ticket in the Freshdesk integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to update a ticket as shown below:  
+5. Follow the prompts in the App console to update a ticket as shown below:  
 <img src="../images/freshdesk-tem-img16.png" alt="VA console prompt to update ticket" title="VA console prompt to update ticket" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -1097,7 +1097,7 @@ Steps to search ticket by field from the Freshdesk integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to find a ticket by field as shown below:  
+5. Follow the prompts in the App console to find a ticket by field as shown below:  
 <img src="../images/freshdesk-tem-img19.png" alt="VA console prompt to find ticket by field" title="VA console prompt to find ticket by field" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -1119,4 +1119,4 @@ Steps to delete a ticket in the Freshdesk integration:
     
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to delete a ticket.
+5. Follow the prompts in the App console to delete a ticket.

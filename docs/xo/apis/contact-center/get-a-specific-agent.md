@@ -1,10 +1,10 @@
 # Get a Specific Agent
 
-To retrieve the details of a particular agent with the given `IId` and `agent Id`.
+To retrieve the details of a particular agent with the given `botId` and `agent Id`.
 
 | **Method**   | GET                                                               |
 |----------|-------------------------------------------------------------------|
-| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{IId}}/agents/{{agentId}}` |
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{botId}}/agents/{{agentId}}` |
 | **Content Type** | `application/json`                                             |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | SmartAssist Analytics                                           |
@@ -19,7 +19,7 @@ To retrieve the details of a particular agent with the given `IId` and `agent Id
 ## Sample Request
 
 ```
-curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{IId}}/agents/{{agentId}}' \
+curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

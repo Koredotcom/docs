@@ -1,17 +1,17 @@
 # **Using the BotKit SDK**
 
-The Platform BotKit SDK is a set of libraries that enable interaction control between users and the AI Agents you build on the Platform.
+The Platform BotKit SDK is a set of libraries that enable interaction control between users and the bots you build on the Platform.
 
 When you build a dialog task using Dialog Editor in the XO Platform, you can subscribe to message and webhook events by adding event handlers and controlling the messages and webhook events using the SDK.
 
 This topic describes how the BotKit SDK is integrated with the XO Platform, the SDK events you can use, and download and installation instructions for the BotKit SDK.
 
-While an AI Agent can be built to help answer user queries and perform a transaction for a user, in some cases, we may still need to switch from an interaction with the AI Agent to a human agent to help the user complete the intent.
+While an bot can be built to help answer user queries and perform a transaction for a user, in some cases, we may still need to switch from an interaction with the bot to a human agent to help the user complete the intent.
 
 For example:
 
-* A user asks a question or provides a response that the AI Agent is not designed to answer.
-* A user directly requests to chat with a Live Agent rather than that AI Agent itself.
+* A user asks a question or provides a response that the bot is not designed to answer.
+* A user directly requests to chat with a Live Agent rather than that bot itself.
 * As a developer, you design a Live Agent transfer based on the dialog flow based on a specific condition. For example, a specific user type, or based on tone analysis of the user, you want the dialog flow to transfer to a Live Agent.
 
 ## How it Works
@@ -20,17 +20,17 @@ You can integrate event handling using the BotKit SDK in your Dialog task by cap
 
 ### Messaging
 
-On the Platform, a user interacts with your AI Agent on one of the defined channels. In the following diagram, you can see the user message flow through the Platform, the BotKit SDK, and our natural language processing engine.
+On the Platform, a user interacts with your bot on one of the defined channels. In the following diagram, you can see the user message flow through the Platform, the BotKit SDK, and our natural language processing engine.
 
 ![alt_text](../images/bot-platform-messaging-arch.png "bot platform messaging architecture")
 
-All messages, both user and AI Agent responses are sent to the BotKit SDK as message events.
+All messages, both user and bot responses are sent to the BotKit SDK as message events.
 
 ### Feedback Survey
 
-When a feedback survey is created for a conversation over a specific channel, a user responds to the AI Agent for a survey question based on the configured survey type (NPS, CSAT, or Thumbs-up/down). The feedback survey score sent by the user is captured in the system.
+When a feedback survey is created for a conversation over a specific channel, a user responds to the bot for a survey question based on the configured survey type (NPS, CSAT, or Thumbs-up/down). The feedback survey score sent by the user is captured in the system.
 
-All the feedback survey messages exchanged between the user and the AI Agent are sent to the BotKit SDK as message events.
+All the feedback survey messages exchanged between the user and the bot are sent to the BotKit SDK as message events.
 
 ### Webhooks
 

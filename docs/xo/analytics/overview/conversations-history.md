@@ -2,7 +2,7 @@
 
 The **Conversation History** dashboard allows you to review the transcripts of past conversations and label certain conversations for follow-up or further action.
 
-The **Advanced Conversation Analytics** feature provides a more detailed view of the conversation, including events and custom tags, which can help you better understand the interaction between the customer and the virtual assistant. Custom Tags can be reused across conversations for training purposes and for identifying areas where the virtual assistant could improve.
+The **Advanced Conversation Analytics** feature provides a more detailed view of the conversation, including events and custom tags, which can help you better understand the interaction between the customer and the AI Agents. Custom Tags can be reused across conversations for training purposes and for identifying areas where the AI Agents could improve.
 
 **To view the Conversations History dashboard, follow the steps**: 
 
@@ -625,7 +625,7 @@ The **Conversations History** Dashboard displays the following information for e
 The following containment types affect the conversation flow and are displayed on top of the individual Conversations History details panel:
 
 
-* **Self-service**: Indicates that the conversation (initiated by the user) with a VA was successfully completed.
+* **Self-service**: Indicates that the conversation (initiated by the user) with an AI Agent was successfully completed.
 * **Agent Transfer**: Indicates that the conversation was transferred to a live agent using the Agent Transfer node in the Dialog Flow.
 * **User Drop-off**: Indicates that the user stopped participating in the conversation before it was completed, either due to an error in the flow or some other reason.
 
@@ -686,11 +686,11 @@ The **Channel, Language, Date**, and **conversation duration** are displayed at 
 
 ### Conversation Summary
 
-* **User Messages**: The number of messages sent by the user to the virtual assistant.
-* **Bot Messages**: The number of messages sent by the bot/virtual assistant to the user.
-* **Intents Identified**: The number of user intents identified by the virtual assistant during the conversation.
+* **User Messages**: The number of messages sent by the user to the AI Agents.
+* ** Messages**: The number of messages sent by the AI Agents to the user.
+* **Intents Identified**: The number of user intents identified by the AI Agents during the conversation.
 * **Intent Unidentified**: The number of utterances that did not result in any intent identification during the conversation.
-* **Tasks Completed**: The number of tasks successfully completed by the virtual assistant.
+* **Tasks Completed**: The number of tasks successfully completed by the AI Agents.
 * **Failed Tasks**: The number of tasks that failed during the conversation.
 
 <img src="../images/conversation-summary.png" alt="Conversation Summary" title="Conversation Summary" style="border: 1px solid gray; zoom:80%;">
@@ -698,13 +698,13 @@ The **Channel, Language, Date**, and **conversation duration** are displayed at 
 
 ### Conversation Events
 
-**Conversation Events** indicate the sequence of occurrences during a conversation triggered by customer inputs and responses while interacting with a bot. Each event can be categorized into regular and error-based occurrences. When analyzing a conversation flow, the user can identify the event type based on the following icons that are displayed for the relevant event.
+**Conversation Events** indicate the sequence of occurrences during a conversation triggered by customer inputs and responses while interacting with a AI Agent. Each event can be categorized into regular and error-based occurrences. When analyzing a conversation flow, the user can identify the event type based on the following icons that are displayed for the relevant event.
 
 <img src="../images/conversation-events.png" alt="Conversation Events" title="Conversation Events" style="border: 1px solid gray; zoom:80%;">
 
 The list of events triggered during a conversation is displayed below.
 
-**Intent Found**: Triggered when the virtual assistant understands the user’s intent. The intent name identified is displayed.
+**Intent Found**: Triggered when the AI Agents understands the user’s intent. The intent name identified is displayed.
 
 
 <table>
@@ -717,7 +717,7 @@ The list of events triggered during a conversation is displayed below.
   <tr>
    <td><strong>Intent Not Found</strong>
    </td>
-   <td>Triggered when the virtual assistant is unable to understand the user’s intent.
+   <td>Triggered when the AI Agents is unable to understand the user’s intent.
    </td>
   </tr>
   <tr>
@@ -729,13 +729,13 @@ The list of events triggered during a conversation is displayed below.
   <tr>
    <td><strong>Entity Retry</strong>
    </td>
-   <td>Triggered when the input provided by the user is not identified by the virtual assistant and an input retry request to the customer.
+   <td>Triggered when the input provided by the user is not identified by the AI Agents and an input retry request to the customer.
    </td>
   </tr>
   <tr>
    <td><strong>Confirmation Retry</strong>
    </td>
-   <td>Triggered when a confirmation request for a query or selection is generated from the virtual assistant to the customer.
+   <td>Triggered when a confirmation request for a query or selection is generated from the AI Agents to the customer.
    </td>
   </tr>
   <tr>
@@ -813,14 +813,14 @@ The list of events triggered during a conversation is displayed below.
   <tr>
    <td><strong>User Message</strong>
    </td>
-   <td>Triggered when a customer sends a message to the virtual assistant on the channel.
+   <td>Triggered when a customer sends a message to the AI Agents on the channel.
    </td>
   </tr>
 </table>
 
 ### Enriched Chat Transcript
 
-The **Enriched Chat Transcript** feature provides a more detailed view of the conversation, with all the events associated with each message displayed in the chat transcript slider. This can be useful for understanding the conversation at a granular level and identifying any issues that may have arisen. It can also help train the virtual assistant and improve its performance.
+The **Enriched Chat Transcript** feature provides a more detailed view of the conversation, with all the events associated with each message displayed in the chat transcript slider. This can be useful for understanding the conversation at a granular level and identifying any issues that may have arisen. It can also help train the AI Agents and improve its performance.
 
 To view the Enriched Chat Transcript, enable the **Show Events** option (default setting) in the **Chat History** panel.
 
@@ -871,7 +871,7 @@ To view the details of the agent that handled a conversation session, follow the
 
 ### Chat History
 
-The chat conversation flow between the virtual assistant and the customer is displayed in the **Chat History** panel, including events, actions, input requests, queries, and intent-based responses. Any failed tasks or exceptions that occurred during the conversation will also be displayed here.
+The chat conversation flow between the AI Agents and the customer is displayed in the **Chat History** panel, including events, actions, input requests, queries, and intent-based responses. Any failed tasks or exceptions that occurred during the conversation will also be displayed here.
 
 The Enriched Chat Transcript is visible on the Chat History panel.
 
@@ -890,7 +890,7 @@ The Enriched Chat Transcript is visible on the Chat History panel.
         * Chat Start time and End time.
         * Conversation summary of the following metrics:
             * User messages
-            * Bot messages
+            * AI Agents messages
             * Intents identified
             * Intents Unidentified
             * Tasks completed
@@ -918,7 +918,7 @@ The Enriched Chat Transcript is visible on the Chat History panel.
 
 ### Define Alternate Text for JavaScript Messages
 
-The Platform uses the`{} JavaScript` tag in the Chat History for bot messages and templates written using JavaScript. However, bot designers can now add a context-specific **Alternate Text** to JavaScript messages/templates they define and explain the purpose more clearly. The added Alternate Text is displayed alongside the JavaScript message tag in the **Chat History** window for developers to get a better understanding of the message’s intent. 
+The Platform uses the`{} JavaScript` tag in the Chat History for AI Agent messages and templates written using JavaScript. However, AI Agents designers can now add a context-specific **Alternate Text** to JavaScript messages/templates they define and explain the purpose more clearly. The added Alternate Text is displayed alongside the JavaScript message tag in the **Chat History** window for developers to get a better understanding of the message’s intent. 
 
 The <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/conversation-history/" target="_blank">Conversation History API</a> response includes a parameter `messages.tags.altText` which captures the **Alternate Text** value(s) configured in the JavaScript message or Web SDK template payload through the predefined function discussed below.
 
@@ -978,13 +978,13 @@ After the end user selects an account type, the Alternate message appears in the
     The custom message tag you create is available in the **Custom Tags Filters** section as one of the filtering criteria.
 
 
-The **Feedback Survey** feature allows customers to provide feedback on their conversations with the virtual assistant.
+The **Feedback Survey** feature allows customers to provide feedback on their conversations with the AI Agents.
 
 If enabled, the customer’s response to the survey will be displayed in the chat transcript under **Chat History**.
 
 The system captures and displays a **feedback event label** `"End of Conversation: Survey Type"` on the chat transcript, indicating the end of the conversation and the survey type.
 
-The response will be mapped to a **key-value** pair for the conversation timeline, which can be useful for analyzing the conversation and customer experience at a granular level. This information is useful to improve the virtual assistant’s performance and enhance the customer experience.
+The response will be mapped to a **key-value** pair for the conversation timeline, which can be useful for analyzing the conversation and customer experience at a granular level. This information is useful to improve the AI Agent’s performance and enhance the customer experience.
 
 
 <img src="../images/feedback-survey.png" alt="Feedback Survey" title="Feedback Survey" style="border: 1px solid gray; zoom:80%;">
@@ -994,7 +994,7 @@ The **Conversation Summary** displays the following information on the Feedback 
 
 1. The **Start Time** and **End Time**, along with the real-time counts for the following:
     1. User Messages
-    2. Bot Messages
+    2. AI Agents Messages
     3. Intents Identified
     4. Intents Unidentified
     5. Tasks Completed
