@@ -1,6 +1,6 @@
 # Get a Skill Group
 
-To retrieve the details of a particular skill group with the given Stream Id and Skill Group Id.
+To retrieve the details of a particular skill group with the given `streamId` and `Skill Group Id`.
 
 | **Method**       | GET                                                                         |
 |--------------|-----------------------------------------------------------------------------|
@@ -13,8 +13,8 @@ To retrieve the details of a particular skill group with the given Stream Id and
 
 | **PARAMETER** | **DESCRIPTION**                                                   | **TYPE**          |
 |-----------|---------------------------------------------------------------|---------------|
-| host      | Environment URL, for example, https://platform.kore.ai   | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`   | string, required |
+| streamId     | botId or streamId. You can get it from the general settings page.| string, required |
 | id        | The skill group id.                                           | string, required |
 
 ## Sample Request

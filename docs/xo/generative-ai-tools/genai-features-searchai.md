@@ -1,6 +1,6 @@
 # Generative AI Features - Search AI
 
-Utilize generative AI features to supercharge your virtual assistant with powerful tools that enhance productivity, enable natural conversations, improve intent detection, analyze customer sentiment, and support agent performance, all working together to create seamless end-user experiences through intuitive design.
+Utilize generative AI features to supercharge your AI Agent with powerful tools that enhance productivity, enable natural conversations, improve intent detection, analyze customer sentiment, and support agent performance, all working together to create seamless end-user experiences through intuitive design.
 
 ## Model Feature Matrix
 
@@ -18,7 +18,7 @@ The following table displays the features and the supported models.
 | Kore.ai XO GPT     | ✅     | ✅     | ❌     | ❌     | ❌     | ❌     | ✅     |
 | Amazon Bedrock     | ❌     | ❌     | ❌     | ❌     | ❌     | ❌     |❌     |
 
-\* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts.* 
+\* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini don't include system prompts, but they can be used with custom prompts.* 
 
 \** *To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.*
 
@@ -165,7 +165,7 @@ If you are using a custom prompt for this feature, ensure that the output from t
 
 ## Rephrase User Query
 
-The Rephrase User Query feature enhances the virtual assistant’s understanding by reconstructing incomplete or ambiguous user inputs using the ongoing conversation history. This helps improve intent detection and entity extraction accuracy, especially when user input is fragmented across multiple messages.
+The Rephrase User Query feature enhances the AI Agent’s understanding by reconstructing incomplete or ambiguous user inputs using the ongoing conversation history. This helps improve intent detection and entity extraction accuracy, especially when user input is fragmented across multiple messages.
 
 When users submit queries that are incomplete or rely on previous context (coreference), the system uses an LLM to rephrase the input at runtime. This rephrased version consolidates relevant details from earlier messages, helping the NLP engine better understand the user’s intent and extract entities more accurately.
 
@@ -176,25 +176,25 @@ The LLM rephrases the query using one of the following methods depending on the 
 
 For example:
 
-* User: What is the weather forecast for New York tomorrow? 
-* Bot: It will be Sunny, with temperatures ranging between 30 and 35 degrees Celsius. 
+* User: What's the weather forecast for New York tomorrow? 
+* App : It will be Sunny, with temperatures ranging between 30 and 35 degrees Celsius. 
 * User: How about Orlando? 
 
 Without rephrasing, the last query is ambiguous.
 
-Rephrased Query: What is the weather forecast for Orlando tomorrow?
+Rephrased Query: What's the weather forecast for Orlando tomorrow?
 
 **Co-referencing**: Handles situations where the user refers to something previously mentioned using pronouns or vague references.
 
 For example:
 
 * User: I’ve had a headache for the past week.
-* Bot: I’m sorry to hear that. Have you taken any medication?
+* App : I’m sorry to hear that. Have you taken any medication?
 * User: Yes, ibuprofen, but it’s not helping.
-* Bot: I see. How often do you take it?
+* App : I see. How often do you take it?
 * User: Every six hours.
 
-Without rephrasing, the last user message is not meaningful and does not suggest the user intent.
+Without rephrasing, the last user message isn't meaningful and doesn't suggest the user intent.
 
 Rephrased Query: I take ibuprofen every six hours.
 
@@ -203,16 +203,16 @@ Rephrased Query: I take ibuprofen every six hours.
 For example:
 
 * User: I want to apply for a personal loan.
-* Bot: You're eligible for up to $20,000.
+* App : You're eligible for up to $20,000.
 * User: How about a home loan?
-* Bot: You’re eligible for up to $100,000.
+* App : You’re eligible for up to $100,000.
 * User: What about interest rates?
 
 Rephrased Query: What are the interest rates for personal and home loans?
 
 ### Conversation History Length
 
-This setting controls how many previous messages (from both the user and the bot) are used to provide context for rephrasing. The default value is 5, and the maximum is 25. If the session history contains fewer messages than the configured number, only the available messages will be sent, even if the set value is higher. 
+This setting controls how many previous messages (from both the user and the App ) are used to provide context for rephrasing. The default value is 5, and the maximum is 25. If the session history contains fewer messages than the configured number, only the available messages will be sent, even if the set value is higher. 
 
 You can access the Conversation History Length from **Repharse User Query > Advanced Settings**.
 

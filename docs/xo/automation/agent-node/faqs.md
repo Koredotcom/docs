@@ -245,7 +245,7 @@ Yes, the XO Platform provides templates that you can use as a starting point. Ve
 
 ### How does the conversation history function with Agent Nodes?
 
-You can configure the duration of the conversation history, which determines how many of the most recent messages exchanged between the user and the bot are sent to the language model. This allows the model to maintain context throughout the interaction.
+You can configure the duration of the conversation history, which determines how many of the most recent messages exchanged between the user and the AI agent are sent to the language model. This allows the model to maintain context throughout the interaction.
 
 
 ### How can I test my custom prompt?

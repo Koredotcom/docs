@@ -169,7 +169,7 @@ You can also **Delete a User** from the Users page by hovering over the **user r
 
 !!! Note
 
-    You cannot delete the Users if they are owners of the virtual assistant. You must change the respective bot ownership to someone else to delete the user.
+    You cannot delete the Users if they are owners of the App. You must change the respective bot ownership to someone else to delete the user.
 
 #### Transfer Ownership
 

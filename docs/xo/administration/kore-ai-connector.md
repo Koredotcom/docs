@@ -1,26 +1,26 @@
 # Kore.ai Connector
 
-On the **Kore.ai Connector** page, in the **Security & Control** module of the Bots Admin Console, you can download and configure the Kore.ai Connector Agent for Bots within your secure company intranet to provide secure communications between the XO Platform in the cloud and your network.
+On the **Kore.ai Connector** page, in the **Security & Control** module of the Admin Console, you can download and configure the Kore.ai Connector Agent for Apps within your secure company intranet to provide secure communications between the XO Platform in the cloud and your network.
 
 
 ## Why Kore.ai Connector?
 
-Kore.ai Bots are designed to make updates, provide notifications to users, and perform tasks. The tasks to perform are received from or performed on third-party applications available over the Internet as web-based applications or on-premises bots applications.
+Kore.ai Agents are designed to make updates, provide notifications to users, and perform tasks. The tasks to perform are received from or performed on third-party applications available over the Internet as web-based applications or on-premises AI Agents applications.
 
-In a Kore.ai bots on-premises system, communications security is maintained by restricting users and systems within the company intranet or by configuring specific channels for specific data exchange. On the contrary, Kore.ai Bots reside and process data in the cloud environment and cannot directly connect to your bots' premises applications.
+In a Kore.ai Agents on-premises system, communications security is maintained by restricting users and systems within the company intranet or by configuring specific channels for specific data exchange. On the contrary, Kore.ai Agents reside and process data in the cloud environment and cannot directly connect to your AI Agents' premises applications.
 
 You can use the Kore.ai Connector Agent to establish and maintain secure data connectivity between Kore.ai and your on-premises applications within your intranet.
 
-The Kore.ai Connector is a stand-alone application that is installed and configured within your company intranet configured with restricted and secure connectivity to specified bots applications. The Kore.ai Connector Agent is designed to pass requests for data access between your on-premises applications and Kore.ai to process the specific Bot tasks configured by an end-user with rights and privileges for those applications.
+The Kore.ai Connector is a stand-alone application that is installed and configured within your company intranet configured with restricted and secure connectivity to specified AI Agent applications. The Kore.ai Connector Agent is designed to pass requests for data access between your on-premises applications and Kore.ai to process the specific AI Agent tasks configured by an end-user with rights and privileges for those applications.
 
-The following illustration shows the **Kore.ai Connector** page in the Bots Admin Console **Security & Control** module.
+The following illustration shows the **Kore.ai Connector** page in the Admin Console **Security & Control** module.
 
 <img src="../images/kore-ai-connector-img1.png" alt="Kore.ai connector page" title="Kore.ai connector page" style="border: 1px solid gray;zoom:70%;"/>
 
 
 **Kore.ai Connector Page Controls**
 
-The following controls are available on the **Kore.ai Connector** page in the Bots Admin Console.
+The following controls are available on the **Kore.ai Connector** page in the Admin Console.
 
 **Download Connector** – Click the **Download Connector** drop-down arrow in and then select one of the following operating systems:
 
@@ -42,23 +42,23 @@ Download the Kore.ai Connector Agent to your default browser downloads directory
 
 ## About
 
-The Kore.ai Connector is an agent that runs behind your bots firewall within your company Intranet or perimeter network (DMZ) to provide secure data exchange between Kore.ai which operates in the cloud and your on-premises applications.
+The Kore.ai Connector is an agent that runs behind your AI Agent firewall within your company Intranet or perimeter network (DMZ) to provide secure data exchange between Kore.ai which operates in the cloud and your on-premises applications.
 
-In the following diagram, end-users configure a Kore.ai Bot that connects to Kore.ai in the cloud. The Kore.ai Bot servers (5) contact the Kore.ai Connector Gateway (2) with the Bot request. The Kore.ai Connector Gateway relays the request to the Kore.ai Connector (3) installed and securely configured in your on-premises Intranet or DMZ to interact with your bots applications. The response from your applications is sent through the Kore.ai Connector back out to the Kore.ai cloud and processed. Optionally, you can enable your on-premises applications to push data, for example, alert messages, to the Kore.ai cloud using webhooks.
+In the following diagram, end-users configure a Kore.ai Agent that connects to Kore.ai in the cloud. The Kore.ai Agent servers (5) contact the Kore.ai Connector Gateway (2) with the AI Agent request. The Kore.ai Connector Gateway relays the request to the Kore.ai Connector (3) installed and securely configured in your on-premises Intranet or DMZ to interact with your AI Agents applications. The response from your applications is sent through the Kore.ai Connector back out to the Kore.ai cloud and processed. Optionally, you can enable your on-premises applications to push data, for example, alert messages, to the Kore.ai cloud using webhooks.
 
 <img src="../images/kore-ai-connector-img2.png" alt="About Kore.ai connector" title="About Kore.ai connector" style="border: 1px solid gray;zoom:70%;"/>
  
 
 **How it Works**
 
-After you install the Kore.ai Connector in your network, you configure the agent with details to specifically access, communicate, and request or post data to the bots application you define.
+After you install the Kore.ai Connector in your network, you configure the agent with details to specifically access, communicate, and request or post data to the AI Agents application you define.
 
-When started, the Kore.ai Connector Agent initiates a persistent SSL connection with Kore.ai and monitors requests for data transfer to or from your bots applications and Kore.ai. If the persistent connection is broken, the Kore.ai Connector automatically attempts to reestablish communication. You can monitor connectivity directly in the Bots Admin console.
+When started, the Kore.ai Connector Agent initiates a persistent SSL connection with Kore.ai and monitors requests for data transfer to or from your AI Agents applications and Kore.ai. If the persistent connection is broken, the Kore.ai Connector automatically attempts to reestablish communication. You can monitor connectivity directly in the Admin console.
 
 
 ## Installing
 
-This topic describes how to install and configure the Kore.ai Connector Agent for Kore.ai Bots that you can use to securely connect the cloud-based XO Platform to your on-premises applications in your company Intranet.
+This topic describes how to install and configure the Kore.ai Connector Agent for Kore.ai Agents that you can use to securely connect the cloud-based XO Platform to your on-premises applications in your company Intranet.
 
 **Prerequisites**
 
@@ -119,14 +119,14 @@ The following Microsoft Windows 64-bit operating systems are supported:
 
 **Installation Process**
 
-This section describes the installation and configuration of your application server where the Kore.ai Connector Agent is installed, the configuration required in the Bots Admin Console, and finally, enabling enterprise Bots for the Kore.ai Connector Agent and deploying the upgraded Bots for enterprise users.
+This section describes the installation and configuration of your application server where the Kore.ai Connector Agent is installed, the configuration required in the Admin Console, and finally, enabling enterprise Apps for the Kore.ai Connector Agent and deploying the upgraded Apps for enterprise users.
 
 
 ## Adding
 
-In the Bots Admin Console, you begin by adding a connector. When you add a connection, a unique ID is created for your company and your unique Kore.ai Connector.
+In the Admin Console, you begin by adding a connector. When you add a connection, a unique ID is created for your company and your unique Kore.ai Connector.
 
-1. In the Bots Admin Console, in the **Security & Control** module, on the **Kore.ai Connector** page, click **Add Connector**. The **Add Connector** dialog is displayed.
+1. In the Admin Console, in the **Security & Control** module, on the **Kore.ai Connector** page, click **Add Connector**. The **Add Connector** dialog is displayed.
 2. Optionally, in the first field, edit the name of the connector, and then enter a **Description** for the connector in the second field.
 3. Click **Add**. The **Connector Instructions** dialog is displayed as shown in the following illustration.  
 <img src="../images/kore-ai-connector-img3.png" alt="Adding Kore.ai connector - Connector instructions" title="Adding Kore.ai connector - Connector instructions" style="border: 1px solid gray;zoom:70%;"/>
@@ -149,10 +149,10 @@ The Kore.ai Connector Agent file is uncompressed into the following directory st
 
 **Generating a Signed Security Certificate**
 
-For secure data exchange between the Kore.ai servers in the cloud and your intranet, you need to generate a signed security certificate. First, create a .csr file on your application server using the command displayed in the Bots Admin Console, and then paste the content of the .csr file into the **Generate Signed Certificate** dialog. The .csr content is used to generate and download the .pem file. You will then copy the .pem file back to the Kore.ai Connector Agent installed on your application server.
+For secure data exchange between the Kore.ai servers in the cloud and your intranet, you need to generate a signed security certificate. First, create a .csr file on your application server using the command displayed in the Admin Console, and then paste the content of the .csr file into the **Generate Signed Certificate** dialog. The .csr content is used to generate and download the .pem file. You will then copy the .pem file back to the Kore.ai Connector Agent installed on your application server.
 
 
-1. In the Bots Admin Console, in the **Security & Control** module, on the **Kore.ai Connector** page, click the **Ellipsis**  icon.
+1. In the Admin Console, in the **Security & Control** module, on the **Kore.ai Connector** page, click the **Ellipsis**  icon.
 2. On the **Actions** menu, click **Generate Certificate**. The **Generate Signed Certificate** dialog is displayed as shown in the following illustration.  
 <img src="../images/kore-ai-connector-img5.png" alt="Generate Signed Certificate dialog" title="Generate Signed Certificate dialog" style="border: 1px solid gray;zoom:70%;"/>
 
@@ -215,7 +215,7 @@ You may want to store the security keys for the Kore.ai Connector Agent in anoth
 
 * `key` – The client certificate. Default setting is:
 `./credentials/Kore.aiConnector.key`
-* `cert` – The .pem file generated in the Bots Admin Console. Default setting is:
+* `cert` – The .pem file generated in the Admin Console. Default setting is:
 `./credentials/Kore.aiConnectorCert.pem`
 * `ca` –  Installed as part of the Kore.ai Connector Agent. Default setting is:
 `./credentials/ca.crt`
@@ -293,16 +293,16 @@ To configure outbound proxy settings, add the following configuration shown as t
 **Access Control for Applications**
 
 The Kore.ai Connector Agent requires an explicit set of white-listed URLs to access specific applications on your company intranet. Any other HTTP requests are denied by the Kore.ai Connector.
-You must configure access control for each bot application that will use the Kore.ai Connector Agent in the accesscontrol.json file in the Kore.ai Connector installation directory in the …/config/configs directory with the following parameters:
+You must configure access control for each app application that will use the Kore.ai Connector Agent in the accesscontrol.json file in the Kore.ai Connector installation directory in the …/config/configs directory with the following parameters:
 
-* **virtualhost** – Specify the virtual host name exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises bots in the Bot Builder tool. For more information, see [Defining a Request Chain Object](../../automation/use-cases/alert-tasks/){:target="_blank"} in the Bot Builder documentation.
-* **virtualport** – Specify the virtual port exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises bots in the Bot Builder tool. For more information, see [Defining a Request Chain Object](../../automation/use-cases/alert-tasks/){:target="_blank"} in the Bot Builder documentation.
-* **internalhost** – Specify the actual host name of the on-premises enterprise application used for data exchange with your Bots.
-* **internalport** – Specify the actual port of the on-premises enterprise application used for data exchange with your Bots.
+* **virtualhost** – Specify the virtual host name exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises apps in the App Builder tool. For more information, see [Defining a Request Chain Object](../../automation/use-cases/alert-tasks/){:target="_blank"} in the App Builder documentation.
+* **virtualport** – Specify the virtual port exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises Apps in the App Builder tool. For more information, see [Defining a Request Chain Object](../../automation/use-cases/alert-tasks/){:target="_blank"} in the App Builder documentation.
+* **internalhost** – Specify the actual host name of the on-premises enterprise application used for data exchange with your Apps.
+* **internalport** – Specify the actual port of the on-premises enterprise application used for data exchange with your Apps.
 * **protocol** – Specify HTTP or HTTPS for the connection to on-premises enterprise applications.
 * **allowedPaths** – Specify all paths as “/*” or a specific array of paths for the host, not to include any parameters. The Kore.ai Connector checks the path up to, but not including parameters beginning with " ? "
 
-The following image is an example of a configured accesscontrol.json file with four Bot configurations.
+The following image is an example of a configured accesscontrol.json file with four AI Agent configurations.
 
 <img src="../images/kore-ai-connector-img8.png" alt="configured accessconteol.json" title="configured accesscontrol.json" style="border: 1px solid gray;zoom:70%;"/>
 
@@ -362,27 +362,27 @@ Manually start or stop the Kore.ai Connector Agent on the Windows application se
 ```
 
 
-## Enabling Bots 
+## Enabling Apps 
 
-In this section, you can verify the connection to the Kore.ai Connector Agent in the Bots Admin Console, and then enable the connection. When the connection is enabled, you can modify your custom Bots in the Bot Builder tool to use the Kore.ai Connector, publish those Bots, and then in the Bots Admin Console, deploy the published Bots and assign the Bots to users in your company.
+In this section, you can verify the connection to the Kore.ai Connector Agent in the Admin Console, and then enable the connection. When the connection is enabled, you can modify your custom Apps in the App Builder tool to use the Kore.ai Connector, publish those Apps, and then in the Admin Console, deploy the published Apps and assign the Apps to users in your company.
 
-1. In the Bots Admin Console, in the **Security & Control** module, on the **Kore.ai Connector** page, verify the Kore.ai Connector status as CONNECTED, click the **Ellipsis** icon, and then on the **Actions** menu, click **Enable** as shown in the following illustration.  
+1. In the Admin Console, in the **Security & Control** module, on the **Kore.ai Connector** page, verify the Kore.ai Connector status as CONNECTED, click the **Ellipsis** icon, and then on the **Actions** menu, click **Enable** as shown in the following illustration.  
 <img src="../images/kore-ai-connector-img10.png" alt="Enable bots" title="Enable bots" style="border: 1px solid gray;zoom:70%;"/>
 
-2. In Bot Builder, for each Bot task that you want to run using the Kore.ai Connector, clone or upgrade each Bot.  
-      1. In the **Set up Request Chain Object** dialog, select **Access using connector**, save the changes, and then publish the Bot. For more information about configuring the request object, see [Configuring an Alert Task Request Object](../../automation/use-cases/alert-tasks/#configuration){:target="_blank"} in the Bot Builder tool documentation.  
+2. In App Builder, for each AI Agent task that you want to run using the Kore.ai Connector, clone or upgrade each AI Agent.  
+      1. In the **Set up Request Chain Object** dialog, select **Access using connector**, save the changes, and then publish the App. For more information about configuring the request object, see [Configuring an Alert Task Request Object](../../automation/use-cases/alert-tasks/#configuration){:target="_blank"} in the App Builder tool documentation.  
 
-         **Note:** The option in the **Set up Request Chain Object** dialog for **Access using connector** is only available after the Kore.ai connector is enabled in the Bots Admin Console.
+         **Note:** The option in the **Set up Request Chain Object** dialog for **Access using connector** is only available after the Kore.ai connector is enabled in the Admin Console.
 
-3. In the Bots Admin Console, deploy the published Bot and assign the users that can use the Bot tasks in your enterprise. For more information, see [Bot Management](../bot-management){:target="_blank"}.
+3. In the Admin Console, deploy the published App and assign the users that can use the AI Agent tasks in your enterprise. For more information, see [App Management](../bot-management){:target="_blank"}.
 
-After the Kore.ai Connector is installed on your application server, enabled in Bots Admin Console, and your Bots customized to use the connector, you only need to monitor the status of your connector in the Bots Admin Console.
+After the Kore.ai Connector is installed on your application server, enabled in Admin Console, and your Apps customized to use the connector, you only need to monitor the status of your connector in the Admin Console.
 If you cannot start the Kore.ai Connector, or customers are reporting errors, you may need to reconfigure Kore.ai Connector settings.
 
 
 ## Troubleshooting
 
-Installing and configuring the Kore.ai Connector Agent involves many steps. And even after installation, you may need additional configuration to maintain connectivity between Kore.ai Bots and your on-premises applications. This topic describes some of the typical issues that may arise, and how to handle those issues.
+Installing and configuring the Kore.ai Connector Agent involves many steps. And even after installation, you may need additional configuration to maintain connectivity between Kore.ai Agent and your on-premises applications. This topic describes some of the typical issues that may arise, and how to handle those issues.
 
 **Kore.ai Connect Agent Server Issues**
 

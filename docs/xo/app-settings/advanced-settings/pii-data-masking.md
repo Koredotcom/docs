@@ -2,7 +2,7 @@
 
 Personally identifiable information (PII) or sensitive personal information (SPI) refers to information that can be used alone or in conjunction with other information to identify, contact, or locate a single person or to identify an individual in context. Some examples of PII include Social Security Numbers, email addresses, credit card numbers, passport numbers, home addresses, and so forth.
 
-Kore.ai allows you to redact any sensitive information that users share with your bots. When you enable redaction for an information type, you can transform its value into a pattern that doesn’t contain comprehensible data. The platform redacts any end-user input that matches the PII pattern in the context object, chat logs, chat history, and other places to protect sensitive data.
+Kore.ai allows you to redact any sensitive information that users share with your AI Agent. When you enable redaction for an information type, you can transform its value into a pattern that doesn’t contain comprehensible data. The platform redacts any end-user input that matches the PII pattern in the context object, chat logs, chat history, and other places to protect sensitive data.
 
 The original values are stored in a secure vault and can be used in a few scenarios to achieve business needs.  
 
@@ -55,10 +55,10 @@ The platform provides the following three modes to redact specified information 
 
 ### How to Redact
 
-* Open the bot for which you want to configure the PII settings.
+* Open the App for which you want to configure the PII settings.
 * Navigate to **App Settings > Advanced Settings > PII Settings**.
 * The PII Redaction page opens.
-* If PII Redaction isn’t enabled for the bot, toggle the switch to **Yes**. The page now shows a list of information types whose redaction settings are configured by default.
+* If PII Redaction isn’t enabled for the app, toggle the switch to **Yes**. The page now shows a list of information types whose redaction settings are configured by default.
 * To activate the redaction of any of these out-of-the-box information types, toggle the switch next to them to Enable. To edit their redaction settings, click their name.
 * To configure redaction settings for any other information types, click **Add New** on the top-right side of the PII Redaction page.
 
@@ -90,10 +90,10 @@ The platform provides the following three modes to redact specified information 
   <tr>
    <td><strong>Map Entities</strong>
    </td>
-   <td>Map all the entities in the bot’s Dialog tasks that correspond to the information type.
+   <td>Map all the entities in the app’s Dialog tasks that correspond to the information type.
 <br>
 
-  <strong>Note</strong> : If you do not map entities corresponding to redacted information types, even valid user entries for those entities cause errors in the dialog tasks. For example, let’s say you have enabled redaction for email information type. When a user enters an email address for a bot entity, the platform immediately redacts the information even before the entity node captures it, as emails are set up for redaction. The entity node then receives redacted data, and since the entity is not mapped in the redaction settings, it assumes the redacted value as an invalid email entry. Whereas, if you map the entity in the redaction settings, the entity recognizes the data redacted and accepts it.
+  <strong>Note</strong> : If you do not map entities corresponding to redacted information types, even valid user entries for those entities cause errors in the dialog tasks. For example, let’s say you have enabled redaction for email information type. When a user enters an email address for a app entity, the platform immediately redacts the information even before the entity node captures it, as emails are set up for redaction. The entity node then receives redacted data, and since the entity is not mapped in the redaction settings, it assumes the redacted value as an invalid email entry. Whereas, if you map the entity in the redaction settings, the entity recognizes the data redacted and accepts it.
    </td>
   </tr>
   <tr>
@@ -115,13 +115,13 @@ The Kore.ai XO platform allows you to secure sensitive data input during the con
 
 You can enable the **Sensitive Entity** settings at the **Entity Node** to secure any sensitive user input. For example, PIN or OTP, usually, these are 4 to 6-digit numbers. Due to their sensitivity, these values must not be stored in plain text as part of the conversation logs and chat history because PINs or OTPs must be secured with the necessary privacy measures. Redacting or masking these values at the entity node level helps prevent them from being stored in plain text in conversation logs or chat history, reducing the risk of unauthorized access or misuse.
 
-Use of custom regex patterns to define sensitive data allows the Virtual Assistant to identify and handle sensitive information appropriately based on the conversation context. This approach helps strike a balance between maintaining conversational functionality and safeguarding sensitive data.
+Use of custom regex patterns to define sensitive data allows the AI Agent to identify and handle sensitive information appropriately based on the conversation context. This approach helps strike a balance between maintaining conversational functionality and safeguarding sensitive data.
 
 **Sensitive Data Use Case Scenarios**
 
 **Scenario 1**: The string patterns for sensitive data conflict or overlap in different contexts. For example, a password is 6~8 digits, and the phone number (TPN) is 9 to 12 digits long. In TPN cases, it’s very likely that the user misses typing a digit or two. However, due to the password PII pattern of 6~8 digits, the TPN gets masked as if it’s a password, and TPN entity recognition fails. In this scenario, you can enable the Sensitive Entity setting to redact and replace contextually sensitive data.
 
-**Scenario 2**: A customer tries to change the password by interacting with the virtual assistant. Passwords being sensitive, you must secure them at all places. However, defining a PII pattern for passwords will potentially mask/redact any other input that matches the pattern.
+**Scenario 2**: A customer tries to change the password by interacting with the AI Agent. Passwords being sensitive, you must secure them at all places. However, defining a PII pattern for passwords will potentially mask/redact any other input that matches the pattern.
 
 The use of the Sensitive Entity (contextual) and the Personally Identifiable Information (PII) feature serve different purposes in handling sensitive data within the Kore.ai XO platform.
 

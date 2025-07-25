@@ -104,12 +104,12 @@ Be it Publishing Dialogs or Flows, everything is now done in one place. The Plat
 
 ## Reorganized Analytics
 
-The Analytics module is logically regrouped to address various audience needs. A session starts from Channel through Flows, can go to Automation AI (Virtual Assistant), and then transfer to Agent. The module offers unified analytics across all conversations.  
+The Analytics module is logically regrouped to address various audience needs. A session starts from Channel through Flows, can go to Automation AI, and then transfer to Agent. The module offers unified analytics across all conversations.  
 <img src="../images/xo-platform-analytics.png" alt="Analytics" title="Analytics" style="border: 1px solid gray; zoom:70%;">
 
 ## Automation vs. Search (Answers) Fallback Behavior
 
-We have a new setting where users can configure where every user utterance should go first: Automation AI (Virtual Assistant) or Search AI (Answers) to get the response.  
+We have a new setting where users can configure where every user utterance should go first: Automation AI or Search AI (Answers) to get the response.  
 <img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback BehaviourI" style="border: 1px solid gray; zoom:70%;">
 
 ## New Marketplace
@@ -117,7 +117,7 @@ We have a new setting where users can configure where every user utterance shoul
 The New Marketplace is available inside the App (previously, it was on the bot's homepage). The Marketplace empowers you to enhance your virtual assistant's capabilities by seamlessly integrating third-party systems. With pre-built integrations across various domains, you can extend your assistant's functionality effortlessly. The Marketplace streamlines the integration process by providing pre-configured actions and dialogue tasks, saving you valuable development time and effort. Additionally, you can leverage the expertly designed, pre-built dialogue templates tailored for each integration, allowing you to incorporate rich conversational flows with minimal setup. 
 <img src="../images/xo-platform-marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
 
-Also, the Marketplace offers pre-built dialogue templates for each integration. These templates are expertly designed by Kore, leveraging the available APIs from the integrated system. When a user installs a template, it is added as a dialogue task to the virtual assistant's use case section, enabling users to create rich and engaging conversational experiences with minimal effort.  
+Also, the Marketplace offers pre-built dialogue templates for each integration. These templates are expertly designed by Kore, leveraging the available APIs from the integrated system. When a user installs a template, it is added as a dialogue task to the agents use case section, enabling users to create rich and engaging conversational experiences with minimal effort.  
 <img src="../images/xo-platform-marketplace 2.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
 
 ## New Billing Page

@@ -1,26 +1,27 @@
 
 # SDK Security
 
-The Kore.ai XO Platform only accepts clients that are authorized to connect and exchange messages. You must register your SDK app with the Kore.ai XO Platform in the XO Platform tool and acquire client credentials. You can then use your client credentials to authorize the app and communication exchange between your user, bot, and the XO Platform.
+The Platform only accepts clients that are authorized to connect and exchange messages. You must register your SDK app with the Platform in the Platform tool and acquire client credentials. You can then use your client credentials to authorize the app and communication exchange between your user and bot.
 
 ## Securing Your SDKs
 
-Using Kore.ai SDKs, you can create secure interactions with the Kore.ai XO Platform. \
-Kore.ai SDK libraries can be embedded with web or mobile applications to make HTTPS calls and establish web socket connections with the Kore.ai XO Platform on behalf of a user of your application chatting with a Kore.ai bot. \
+Using SDKs, you can create secure interactions with the Platform. 
+SDK libraries can be embedded with web or mobile applications to make HTTPS calls and establish web socket connections with the Platform on behalf of a user of your application chatting with the Platform. 
+
 To establish identity and initiate a secure web session:
 
-* Your application SDK should sign and send the identity of the user to the Kore.ai XO Platform
-* The Kore.ai XO Platform verifies the signature to establish trust with your application using:
-    * **JSON Web Token (JWT)** – Used to send the user identity to Kore.ai XO Platform
+* Your application SDK should sign and send the identity of the user to the Platform
+* The Platform verifies the signature to establish trust with your application using:
+    * **JSON Web Token (JWT)** – Used to send the user identity to Platform
     * **Bearer Token** – Your application SDK exchanges the JWT for a bearer token used for subsequent calls
 
 ### About JWT
 
-Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication.
+uses the JWT (JSON Web Token) mechanism to handle the authentication.
 
 #### JWT Flow
 
-The following diagram depicts a typical JWT flow in Kore.ai XO Platform. 
+The following diagram depicts a typical JWT flow in Platform. 
 
 ![JWT Flow](../images/JWT-flow.png "JWT Flow")
 
@@ -41,16 +42,17 @@ The JWT Header defines the token type, which is JWT, and the security algorithm.
 
 The JWT type can be one of:
 
-* **HS256 / HS512 (HMAC with SHA-256 / SHA-512)**– These algorithms use a **Secret Key** to sign the token. The **Secret Key** is generated when the app is registered on the XO Platform when defining your bot’s Web/Mobile Client channel.
-* **RS256 / RS512 (RSA signature with SHA-256 / SHA-512)** – These are RSA public/private key-based algorithms to sign and verify the token. The client **Public Key** is defined when the app is registered on the XO Platform. The client app signs the token using a **Private Key**, and the XO Platform verifies this token using the **Public Key**.
+* **HS256 / HS512 (HMAC with SHA-256 / SHA-512)**– These algorithms use a **Secret Key** to sign the token. The **Secret Key** is generated when the app is registered on the Platform when defining your bot’s Web/Mobile Client channel.
+* **RS256 / RS512 (RSA signature with SHA-256 / SHA-512)** – These are RSA public/private key-based algorithms to sign and verify the token. The client **Public Key** is defined when the app is registered on the Platform. The client app signs the token using a **Private Key**, and the Platform verifies this token using the **Public Key**.
 
-To use these JWT types for your bot, you need to register your application and select the algorithm type. For more information about using JWT, see  [https://tools.ietf.org/html/rfc7519](https://tools.ietf.org/html/rfc7519) and [https://jwt.io/introduction/](https://jwt.io/introduction/).
+To use these JWT types for your bot, you need to register your application and select the algorithm type. For more information about using JWT, see  [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519) and [Introduction to JSON Web Tokens](https://jwt.io/introduction/).
 
 #### JWT Payload
 
-The SDK client needs to assert the user by generating a unique JSON Web Token using your app registration credentials created in XO Platform when you defined the Web/Mobile Client channel for your bot and the identity of your app user.
+The SDK client needs to assert the user by generating a unique JSON Web Token using your app registration credentials created in Platform when you defined the Web/Mobile Client channel for your app and the identity of your app user.
 
-The following example shows a sample payload used to generate the JWT. \
+The following example shows a sample payload used to generate the JWT.
+
 **Sample Header**
 
 
@@ -93,9 +95,9 @@ The following table describes the parameters for the JWT Header and Payload.
    <td>A drop-down list of security algorithms. One of:
 <ul>
 
-<li><strong>RS256/RS512: </strong>Select to enable the <strong>Public Key.</strong> <em>The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform</em>. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
+<li><strong>RS256/RS512: </strong>Select to enable the <strong>Public Key.</strong> <em>The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform</em>. Both the keys have to be used for generating the token. The Public Key is used by the Platform to authenticate the client application.
 
-<li><strong>HS256/HS512:</strong> Select to generate a <strong>Secret Key </strong>and a <strong>Client ID</strong>. The <strong>Client ID</strong> is required for app initialization, and the <strong>Secret Key</strong> is used by the XO Platform to authenticate the client application.
+<li><strong>HS256/HS512:</strong> Select to generate a <strong>Secret Key </strong>and a <strong>Client ID</strong>. The <strong>Client ID</strong> is required for app initialization, and the <strong>Secret Key</strong> is used by the Platform to authenticate the client application.
 </li>
 </ul>
    </td>
@@ -154,7 +156,7 @@ NOTE: Use <em>kore_jti</em> to bypass the pre-populated value for <em>jti</em> w
 <p/>
 or kore_iss
    </td>
-   <td>The ClientID of the client application. The ClientID is generated when the app is registered in the Kore.ai XO Platform.
+   <td>The ClientID of the client application. The ClientID is generated when the app is registered in the Platform.
 <p/>
 NOTE: Use <em>kore_iss</em> to bypass the pre-populated value for <em>iss</em> with Kore specific values
    </td>
@@ -176,7 +178,7 @@ NOTE: Use <em>kore_sub</em> to bypass the pre-populated value for <em>sub</em> w
   <tr>
    <td>isAnonymous
    </td>
-   <td>When set to <code>true</code>, the user is an anonymous user for the client application system. Anonymous users are not persisted on the Kore.ai Platform. Default setting is <code>false</code>.
+   <td>When set to <code>true</code>, the user is an anonymous user for the client application system. Anonymous users are not persisted on the Platform. Default setting is <code>false</code>.
    </td>
    <td>boolean
    </td>
@@ -199,21 +201,22 @@ In case jti claim is passed as part of the JWT payload, the Platform performs th
 
 1. Expiry to be less than or equal to 1 hour: In case of failing to meet this requirement the following response is sent:
 
-```json
-{
-    "errors":[{"msg":"error verifying the jwt: if \"jti\" claim \"exp\" must be &lt;= 1 hour(s)","code":401}]
-}
-```
+    ```json
+    {
+        "errors":[{"msg":"error verifying the jwt: if \"jti\" claim \"exp\" must be &lt;= 1 hour(s)","code":401}]
+    }
+    ```
 2. Restricts replay of XHR: The following response is sent in case of non-compliance:
-```json
-{
-    "errors":[{"msg":"error verifying the jwt: possibly a replay","code":401}]
-}
-```
+    
+    ```json
+    {
+        "errors":[{"msg":"error verifying the jwt: possibly a replay","code":401}]
+    }
+    ```
 
 #### Hosting the JWT Generation Web Service
 
-The Kore.ai SDK libraries and UI widgets are integrated directly into your client applications, and you will need to generate the JWT from your server.
+The SDK libraries and UI widgets are integrated directly into your client applications, and you will need to generate the JWT from your server.
 
 * For the Web SDK, the SDK libraries are run from the user’s browser.
 * For mobile SDKs, the SDK libraries are run from a user’s mobile phone.
@@ -227,9 +230,9 @@ There are several open-source libraries available to generate JWT, for example,
 * Java – [https://github.com/auth0/java-jwt](https://github.com/auth0/java-jwt)
 * .Net – [https://github.com/jwt-dotnet/jwt](https://github.com/jwt-dotnet/jwt)
 
-To generate credentials for your clients, you must register your client app in the XO Platform tool. For more information, see [SDK App Registration](../app-registration).
+To generate credentials for your clients, you must register your client app in the Platform tool. For more information, see [SDK App Registration](../app-registration).
 
-You can also try out our tutorial using a Kore.ai sample bot, a test application, and configuring your localhost server for JWT generation. For more information, see the [Kore.ai Web SDK Tutorial](../tutorials/web-sdk).
+You can also try out our tutorial using a sample bot, a test application, and configuring your localhost server for JWT generation. For more information, see the [Web SDK Tutorial](../tutorials/web-sdk).
 
 ## JSON Web Encryption (JWE)
 
@@ -262,7 +265,7 @@ Following algorithms are supported for content encryption:
     * _A128CBC-HS256_
     * _A128GCM_
     * _A256GCM_
-* **“kid”**(Key ID): Key Id of Kore Platform’s public key. This will be displayed when you enable the JWE on the XO Platform.
+* **“kid”**(Key ID): Key Id of the Platform’s public key. This will be displayed when you enable the JWE on the Platform.
 * **“typ”** (Token Type): This will have JWT as a value since the wrapped content is JWT.
 
 Below is the decoded sample JWE header: \
@@ -278,7 +281,7 @@ Below is the decoded sample JWE header: \
 
 #### JWE Encrypted Key (CEK)
 
-A symmetric key is generated to encrypt the payload using the algorithm specified in “_enc_” field of the header. This key is encrypted using _Kore.ai Public Key_ using the algorithm specified in “_alg_” field of the header.
+A symmetric key is generated to encrypt the payload using the algorithm specified in “_enc_” field of the header. This key is encrypted using _Public Key_ using the algorithm specified in “_alg_” field of the header.
 
 
 #### Initialization Vector
@@ -337,9 +340,9 @@ print("JWE Token:", jwe_token)
 
 You can now use the generated JWE token in your application.
 
-### Find the Kore.ai JWE Public Key
+### Find the JWE Public Key
 
-The _Kore.ai Public Key_ is displayed in JWK format when you enable the JWE option while creating an SDK app. You can use this in your client library to generate JWE.
+The _Public Key_ is displayed in JWK format when you enable the JWE option while creating an SDK app. You can use this in your client library to generate JWE.
 
 ![Public Key](../images/publickey.png "Public key")
 
@@ -348,7 +351,7 @@ The _Kore.ai Public Key_ is displayed in JWK format when you enable the JWE opti
 Let’s see an example of how you can verify and decrypt the JWE, assuming you have a JWE token (containing the payload that was encrypted using a private key), and have access to the corresponding JWE public key. The example below is in Python using the ‘PyJWT’ library; your implementation may vary depending on the language and the library you’re using.
 
 1. **Import Libraries**: Ensure you have the necessary libraries installed. In this example, you need `PyJWT` for handling JWTs and JWEs.
-2. **Load the Public Key**: Load the JWE public key in the form of a JSON Web Key (JWK); for example, the _Kore.ai JWE Public Key_ as shown in the previous section.
+2. **Load the Public Key**: Load the JWE public key in the form of a JSON Web Key (JWK); for example, the _JWE Public Key_ as shown in the previous section.
 3. **Decode and Verify**: Use the public key to verify and decrypt the JWE.
 
 **Putting it all together**: Here’s a Python example using the `PyJWT` library:
@@ -392,4 +395,4 @@ In this example code:
 
 If the JWE token is valid and the signature can be verified, the payload will be successfully decoded and printed.
 
-For more information about JWE, refer to [https://tools.ietf.org/html/rfc7516.](https://tools.ietf.org/html/rfc7516)
+For more information about JWE, refer to [JSON Web Encryption (JWE)](https://tools.ietf.org/html/rfc7516).

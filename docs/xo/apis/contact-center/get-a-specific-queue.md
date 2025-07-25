@@ -4,7 +4,7 @@ To get a specific queue with the given `streamId` and `queueId`.
 
 | **Method**       | GET                                              |
 |--------------|--------------------------------------------------|
-| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/{id}` |
+| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/{queueId}` |
 | **Content Type** | `application/json`                               |
 | **Authorization**| `auth: {{JWT}}`    <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                             |
 | **API Scope**    | Configuration                                    |
@@ -13,17 +13,17 @@ To get a specific queue with the given `streamId` and `queueId`.
 
 | **Parameter** | **Description**                                                | **Type**         |
 |-----------|------------------------------------------------------------|--------------|
-| host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| botId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| streamId     |botId or streamId. You can get it from the general settings page. | string, required |
 | id        | queueId. Can be taken from the /queues GET API.           | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'http://{{host}}/agentassist/api/v1/public/st-0aae83f7-49c7-58c8-921a-29d84d03xxxx/queues/qu-3b205c0-16cc-4688-990c-591e23c7xxxx' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/{{queueId}}' \
 --header 'accept: application/json' \
---header 'accountId: 64dc99337ac0b4d3d684xxxx' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTdlZjBkY2IwLTQ1ZTItNTY3YS1hYzMyLTkwNTA1NzdmMWIyYiJ9.7t145BjU0eZDdlnXYazmqkVT-8WpDIUgCquQM0Uxxxx' \
+--header 'accountId: {{accountId}}' \
+--header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --data ''
 ```

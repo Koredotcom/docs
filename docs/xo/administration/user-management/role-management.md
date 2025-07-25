@@ -333,7 +333,7 @@ The Master Admin can create custom Admin roles and assign the same to users. The
 6. You can retain the default permission settings or modify them as per your requirements.
 7. Click **Save**.
 
-Once created, you can assign roles to individual users or to user groups. You can edit the roles from the Bot Admin Console.
+Once created, you can assign roles to individual users or to user groups. You can edit the roles from the Admin Console.
 
 
 #### Assigning Admin role
@@ -370,7 +370,7 @@ This section illustrates various Bot Roles, their permissions, steps to create c
 
 **Bot Owner**, **Bot Developer**, and **Bot Tester** are the three in-built bot roles that are available for all accounts. Creators of bots are automatically assigned to the _Bot Owner_ role.
 
-You may create additional custom bot roles to meet your specific requirements. You can assign bot roles to bot developers either from Bot Builder or from the Bot Admin Console.
+You may create additional custom bot roles to meet your specific requirements. You can assign bot roles to bot developers either from Bot Builder or from the Admin Console.
 
 Following is the list of permissions that can be assigned to a Bot role:
 
@@ -666,7 +666,7 @@ After creating a custom role, you can access more information about that role, c
 
 #### Assigning Bot Role
 
-You can assign roles to individual users or to user groups. You can add and edit the roles from the Bot Admin Console. Also, you can assign a bot role to a user while sharing the bot with them from the Bots Platform.
+You can assign roles to individual users or to user groups. You can add and edit the roles from the Admin Console. Also, you can assign a bot role to a user while sharing the bot with them from the Bots Platform.
 
 
 **Assign Bot Role to a User from the Bots Admin Console**

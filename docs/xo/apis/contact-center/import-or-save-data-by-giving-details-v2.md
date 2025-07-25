@@ -1,11 +1,10 @@
 # Import data by accountId and orgId (v2)
 
-To save/import data, which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience), by giving details with the account Id and org Id.
+To save/import data, which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience), by giving details with the `accountId` and `orgId`.
 
 !!! Note
 
     This version will be deprecated soon. Please use [Version 2](./import-or-save-data-by-giving-details-v2.md) of this API.
-
 
 | **Property**     | **Value**                                                                                                                                                                                                 |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -21,7 +20,7 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
 | **Parameter** | **Description**                                                                 | **Type**          |
 |---------------|----------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                      | String, Required  |
-| `botId`       | BotId or StreamId. You can access it from the General Settings page of the bot. | String, Required  |
+| `botId`       | botId or streamId. You can get it from the general settings page. | String, Required  |
 
 ## Query Parameters
 
@@ -34,7 +33,7 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/analytics/{{botId}}/storeSmartAssistFunctionalities?accountId={{accountId}}&orgId={{orgId}}&type=skillGroups' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/analytics/{{IId}}/storeSmartAssistFunctionalities?accountId={{accountId}}&orgId={{orgId}}&type=skillGroups' \
 --header 'auth: <your-auth-token>' \
 --header 'accountId: {{accountId}}' \
 --header 'Content-Type: application/json' \

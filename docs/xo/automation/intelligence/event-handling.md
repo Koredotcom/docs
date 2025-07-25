@@ -5,7 +5,7 @@ Define the behavior of the Virtual Assistant during intent identification from u
 
 ## Intent not Identified 
 
-When the VA cannot understand the user’s intent, this event determines the subsequent behavior. You can choose one of the following options:
+When an AI Agent cannot understand the user’s intent, this event determines the subsequent behavior. You can choose one of the following options:
 
 * **Show a standard message from the standard responses**. [Learn more](../intelligence/conversation-management/standard-responses.md){target="_blank"}.
 * **Automatically run a dialog task**. You can use the dropdown to select the task you want to run.
@@ -31,7 +31,7 @@ By customizing the flow, you can avoid displaying ambiguous intents to the end u
 
 To configure the Ambiguous Intents Identified event follow these steps:
 
-1. Go to **Conversation Intelligence > Events > Intent Events**. By default, this event is disabled for all existing and new VA..
+1. Go to **Conversation Intelligence > Events > Intent Events**. By default, this event is disabled for all existing and new AI Agents.
 2. Click **Configure** to enable the event.
     <img src="../images/configure-intent-events.png" alt="configure intent events" title="configure intent events" style="border: 1px solid gray; zoom:75%;">
 
@@ -54,7 +54,7 @@ To configure the Ambiguous Intents Identified event follow these steps:
 
 ### Interruption Management
 
-When the event is enabled, interruption behavior is handled as defined at the node, dialog, or VA level for ambiguous intents.
+When the event is enabled, interruption behavior is handled as defined at the node, dialog, or app level for ambiguous intents.
 
 The only exception is when you select the Continue the current task and add a new task to the follow-up task list option. The conversation continues as is with the current task, and any interrupting task will not be added to the follow-up list. [Learn more](../intelligence/conversation-management/manage-interruptions.md){target="_blank"}.
 
@@ -62,6 +62,6 @@ The only exception is when you select the Continue the current task and add a ne
 
 You can configure Variable Namespaces for Events by going to **More Options** > **Manage Variable Namespaces** at the top of the **Events** screen.
 
-You can use the _Manage Variable Namespaces_ to associate the Variable Namespaces to be used with the Events. This option will be visible only when the Variable Namespace is enabled for the VA. For more information. [Learn more](../../app-settings/managing-namespace.md){target="_blank"}.
+You can use the _Manage Variable Namespaces_ to associate the Variable Namespaces to be used with the Events. This option will be visible only when the Variable Namespace is enabled for the AI Agent. For more information. [Learn more](../../app-settings/managing-namespace.md){target="_blank"}.
 
 <img src="../images/manage-namespaces-event-handling-window.png" alt="manage namespaces" title="manage namespaces" style="border: 1px solid gray; zoom:75%;">

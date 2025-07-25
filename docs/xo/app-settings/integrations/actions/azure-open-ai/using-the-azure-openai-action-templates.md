@@ -7,7 +7,7 @@ Steps to create a dialog task using the Azure OpenAI action templates:
 1. Ensure that you have configured [Azure OpenAI](configuring-the-azure-openai-action.md){:target="_blank"} and [installed templates](configuring-the-azure-openai-action.md#step-3-install-the-azure-openai-action-templates){:target="_blank"} successfully.
 If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
+2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
 
 3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
@@ -99,8 +99,8 @@ Steps to resolve the query in the Azure OpenAI integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to resolve a general query.
-6. Enter a question based on a query when prompted by the VA, as shown below:  
+5. Follow the prompts in the App console to resolve a general query.
+6. Enter a question based on a query when prompted by the AI Agent, as shown below:  
 <img src="../images/azure-temp-img6-azure-action12.png" alt="Enter a question" title="Enter a question" style="border: 1px solid gray;zoom:50%;"/>
 
 7. You will notice an answer is generated for your query.  

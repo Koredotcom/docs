@@ -1,10 +1,10 @@
 # Transfer Conversation To a Specific Agent or Queue
 
-To retrieve the recording of a specific call using either the `userId` or `sessionId`.To transfer a conversation to a specific agent with the given `botSessionId` and `aId` (agent Id) or queue using the `queueId`. Specific messages based on success or failure to transfer conversation are posted to the given `callbackUrl`. The `callbackUrl` helps track whether the transfer request succeeds or fails. This enables efficient handling of conversation transfers.
+To retrieve the recording of a specific call using either the `userId` or `sessionId`.To transfer a conversation to a specific agent with the given `botSessionId` and `aId` (agentId) or queue using the `queueId`. Specific messages based on success or failure to transfer conversation are posted to the given `callbackUrl`. The `callbackUrl` helps track whether the transfer request succeeds or fails. This enables efficient handling of conversation transfers.
 
 | **Method**   | POST                                                                                      |
 |----------|-------------------------------------------------------------------------------------------|
-| **Endpoint**| [https://{{host}}/agentassist/api/v1/public/{{streamID}}/assign-conversation](https://{{host}}/agentassist/api/v1/public/{streamID}/assign-conversation) |
+| **Endpoint**| `https://{{host}}/agentassist/api/v1/public/{{streamId}}/assign-conversation` |
 | **Content Type** | `application/json`                                                                          |
 | **Authorization** | `auth: {{JWT}}`<br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Routing                                                                                   |
@@ -14,7 +14,7 @@ To retrieve the recording of a specific call using either the `userId` or `sessi
 | **PARAMETER** | **DESCRIPTION**                                                                            | **TYPE**            |
 |-----------|----------------------------------------------------------------------------------------|-----------------|
 | host      | Environment URL, for example, `https://platform.kore.ai`                              | string, required|
-| streamId  | BotId or StreamId. You can access it from the General Settings page of the bot.        | string, required|
+| streamId  | botId or streamId. You can get it from the general settings page.       | string, required|
 
 ## Query Parameters
 
@@ -33,30 +33,28 @@ Here is the HTML table converted to Markdown format:
 **Transfer to Agent**:
 
 ```
-curl --location 'http://host/agentassist/api/v1/public/st-a0ec5267-a58a-5fbb-ab0e-e27ebc35xxxx/assign-conversation' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUwZmViYWEzLTc0M2YtNTViMy04OTU2LTcxOGU5NmY2YmI5MCJ9.
-W42GSwz5ibjk_vAx5Ukr_Q5Q4-O_zGn_jPmZuN8xxxx' \
---header 'accountid: 650d9eb6da96d0bc0d23xxxx' \
+curl --location 'http://host/agentassist/api/v1/public/{{streamId}}/assign-conversation' \
+--header 'auth: <token>' \
+--header 'accountid: {{accountId}}' \
 --header 'Content-Type: application/json' \
 --data '{
 "callbackUrl": "http://localhost:8009",
-"orgId": "o-02c0d56d-fd90-5e24-8458-01be1d2exxxx",
-"aId": "a-8cd2673-0cb7-462d-9453-0ee60e52xxxx",
+"orgId": "{{orgId}}",
+"aId": "{{aId}}",
 "botSessionId": "6538f8a3c9cf425ee5cfxxxx"
 }'
 ```
 **Transfer to Queue**:
 ```
-curl --location 'http://localhost/agentassist/api/v1/public/st-a0ec5267-a58a-5fbb-ab0e-e27ebc35xxxx/assign-conversation' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUwZmViYWEzLTc0M2YtNTViMy04OTU2LTcxOGU5NmY2YmI5MCJ9.
-W42GSwz5ibjk_vAx5Ukr_Q5Q4-O_zGn_jPmZuN8xxxx' \
---header 'accountid: 650d9eb6da96d0bc0d23xxxx' \
+curl --location 'http://localhost/agentassist/api/v1/public/{{streamId}}/assign-conversation' \
+--header 'auth: <token>' \
+--header 'accountid: {{accountId}}' \
 --header 'Content-Type: application/json' \
 --data '{
 "callbackUrl": "http://localhost:8009",
-"orgId": "o-ee9eb154-b7e9-5387-a4a9-bc027a60xxxx",
+"orgId": "{{orgId}}",
 "transferredType": "QUEUE",
-"queueId": "qu-b5d3bb4-a1ac-4caa-9be6-55a5abc3xxxx",
+"queueId": "{{queueId}}",
 "botSessionId": "66c2f6939489bfffc791xxxx"
 }'
 ```

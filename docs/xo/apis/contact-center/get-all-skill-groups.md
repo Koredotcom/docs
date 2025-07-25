@@ -1,6 +1,6 @@
 # Get All Skill Groups
 
-To retrieve the list of skills groups with the given Stream Id.
+To retrieve the list of skills groups with the given `streamId`.
 
 | **Method**          | GET                                                                  |
 |-----------------|----------------------------------------------------------------------|
@@ -14,7 +14,7 @@ To retrieve the list of skills groups with the given Stream Id.
 | **PARAMETER** | **DESCRIPTION**                                            | **TYPE**          |
 |-----------|--------------------------------------------------------|---------------|
 | host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| streamId     | botId or streamId. You can get it from the general settings page. | string, required |
 
 ## Sample Request
 

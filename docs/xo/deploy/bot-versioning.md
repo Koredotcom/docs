@@ -2,7 +2,7 @@
 
 Very often, as part of the development process, you may want to mark specific stages as versions. The reasons could be as varied as:
 
-* Creating a version of the assistant before proceeding to subsequent changes;
+* Creating a version of the agent before proceeding to subsequent changes;
 * Preserving a fully tested version till the production release while continuing to work on enhancements;
 * Keeping track of all the changes made.
 
@@ -16,8 +16,8 @@ Kore.ai’s **App Versions** option is specifically designed to meet the above r
 Using this option, you as a developer can:
 
 * create multiple versions of the definition;
-* view and manage all versions available for the assistant; and
-* restore the assistant to a previous version.
+* view and manage all versions available for the agent; and
+* restore the agent to a previous version.
 
 Versioning is supported in Standard and Universal Bots.
 
@@ -32,8 +32,8 @@ The version type is based on the ways in which a Bot version is created:
     * There is a limit of 20 user-created versions. Once the limit is reached, the oldest versions are deleted to make room for any new ones.
 
 * **Auto Created**: These versions are created as part of the publishing cycle. [Learn more](../publishing-app/){:target="_blank"}.
-    * Whenever you publish a VA, the Platform creates a version automatically.
-    * This auto created version includes the definition of the published copy of the assistant after the current publish request is accepted.
+    * Whenever you publish an agent, the Platform creates a version automatically.
+    * This auto created version includes the definition of the published copy of the agent after the current publish request is accepted.
     * In case the publish request is rejected, the version will not be created.
     * You cannot delete these versions.
     * While an auto-version creation is in-progress, you cannot raise any subsequent publish requests.
@@ -42,7 +42,7 @@ The version type is based on the ways in which a Bot version is created:
 <img src="../images/bot-versioning-img1.png" alt="Deploy - App Versions" title="Deploy - App Versions" style="border: 1px solid gray; zoom:70%;">
 
 
-## Creating a Bot Version
+## Creating an AI Agent Version
 
 In this section, we discuss user created versions. Following are the steps to create such a version:
 
@@ -58,9 +58,9 @@ In this section, we discuss user created versions. Following are the steps to cr
 
 ## Version Actions
 
-Following are the actions you can perform from the Bot Versions listing page:
+Following are the actions you can perform from the AI Agent Versions listing page:
 
-1. On the **App Versions** page, you will see a list of all versions of the assistant.
+1. On the **App Versions** page, you will see a list of all versions of the agent.
 2. For each version you can view:
     1. **Name** of the versions
     2. **Description** of the version
@@ -80,20 +80,20 @@ Following are the actions you can perform from the Bot Versions listing page:
 
 ## Comparing Versions
 
-The Version Comparison feature facilitates understanding the differences between versions of the same assistant. It helps to:
+The Version Comparison feature facilitates understanding the differences between versions of the same agent. It helps to:
 
 * Debug issues in the recently published version by letting developers compare the published version with any of the previous versions.
-* Analyze changes before Publish. Developers can take a snapshot of changes by comparing a copy of the in-development version and the published version of the assistant.
+* Analyze changes before Publish. Developers can take a snapshot of changes by comparing a copy of the in-development version and the published version of the agent.
 * Perform Impact Analysis before (or after) Version Restore. Developers can get a better understanding of the impact of version restoration by comparing the two versions.
-* Analyze changes in NLP/NLU. NLP trainers can analyze the change in the assistant’s NLP performance by comparing the training present in two versions.
+* Analyze changes in NLP/NLU. NLP trainers can analyze the change in the agent's NLP performance by comparing the training present in two versions.
 
-Using the **Compare** option against any version, you can compare any two versions of your assistant to review the list of changes made to its definition between the two versions.
+Using the **Compare** option against any version, you can compare any two versions of your agent to review the list of changes made to its definition between the two versions.
 
 To compare versions, follow the below steps:
 
 1. On the _Bot Versions_ page, you can find a list of existing versions.
 2. Hover over the version you want to compare and click **Compare**.
-3. On the **New Version** window, you can find the selected version (source) of your assistant and a list that contains different versions (target). Select a version from the list to compare to.
+3. On the **New Version** window, you can find the selected version (source) of your agent and a list that contains different versions (target). Select a version from the list to compare to.
 4. Click **Proceed**.
 
     <img src="../images/bot-versioning-img4.png" alt="Compare versions" title="Compare versions" style="border: 1px solid gray; zoom:70%;">
@@ -119,7 +119,7 @@ To compare versions, follow the below steps:
 
 ## Restoring Versions
 
-Using the **Restore** option against any version, you can replace the current ‘in-development’ version of the assistant with the definition present in that version. The restoration honors the compatible versions and will reject any non-compatible version restorations.
+Using the **Restore** option against any version, you can replace the current ‘in-development’ version of the agent with the definition present in that version. The restoration honors the compatible versions and will reject any non-compatible version restorations.
 
 
 ### How restoration works
@@ -130,17 +130,17 @@ The following is how version restore is handled for each of the components:
 
 The following rules apply to Dialog Tasks, Alert Tasks, Small Talk (per language), UI Forms, Panels and Widgets
 
-* If there are one or more additional tasks in the assistant, and if these are not present in the restoration version definition, then these tasks will be implicitly marked as ‘Deleted’ in the Platform.
-* These ‘Deleted’ tasks will not be available for development and they will automatically be removed from the Published copy of the assistant during the first publish request post-restoration. You will not be allowed to exclude these delete requests from the publish requests.
+* If there are one or more additional tasks in the agent, and if these are not present in the restoration version definition, then these tasks will be implicitly marked as ‘Deleted’ in the Platform.
+* These ‘Deleted’ tasks will not be available for development and they will automatically be removed from the Published copy of the agent during the first publish request post-restoration. You will not be allowed to exclude these delete requests from the publish requests.
 * Once deleted if you restore a version that contains these deleted tasks they will be included as new tasks with the same name and the original (deleted) tasks will still be marked as deleted in the Publish logs.
-* If you have restored a published assistant to an unpublished state then imports might be restricted.
+* If you have restored a published agent to an unpublished state then imports might be restricted.
 
 
 #### Knowledge Graph
 
 The following rules apply to Knowledge Tasks (per Language)
 
-* If there are one or more additional FAQs in the assistant, and if these are not present in the restoration version definition, then these tasks will be implicitly marked as ‘Deleted’ in the Platform.
+* If there are one or more additional FAQs in the agent, and if these are not present in the restoration version definition, then these tasks will be implicitly marked as ‘Deleted’ in the Platform.
 * These ‘Deleted’ tasks will not be available for development.
 * These FAQs will be removed from published copy only if the corresponding parent nodes are selected for publishing during the publish request.
 * If the corresponding parent nodes are not selected for publishing, then those FAQs will be present in the Published copy but considered as deleted in the in-development copy
@@ -151,16 +151,16 @@ The following rules apply to Knowledge Tasks (per Language)
 
 The following rules apply to Small Talk (per Language)
 
-* If there are one or more additional FAQs in the assistant , and if these are not present in the restoration version definition, then these tasks will be implicitly marked as ‘Deleted’ in the Platform.
+* If there are one or more additional FAQs in the agent, and if these are not present in the restoration version definition, then these tasks will be implicitly marked as ‘Deleted’ in the Platform.
 * These ‘Deleted’ tasks will not be available for development.
 * These QnAs will be removed from published copy only if Small Talk is selected for publishing during the publish request.
 
  
 #### Languages
 
-* If there are one or more additional languages in the definition which are not present in the restored version definition, then such languages will be considered as ‘deleted’ from the configured version of the assistant.
+* If there are one or more additional languages in the definition which are not present in the restored version definition, then such languages will be considered as ‘deleted’ from the configured version of the agent.
 * These ‘deleted’ languages will not be available for development.
-* The language deletion will get reflected in the published copy after the subsequent publishing of the assistant, post-restoration.
+* The language deletion will get reflected in the published copy after the subsequent publishing of the agent, post-restoration.
 
  
 #### Channels
@@ -169,14 +169,14 @@ The following rules apply to Small Talk (per Language)
 * One exception is the **Webhook channel**. The web channel configuration of the current version will be replaced by that of the restored version.
 
 
-#### Bot Management
+#### AI Agent Management
 
-* Bot Import will not be allowed until the restored version is published.
+* AI agent Import will not be allowed until the restored version is published.
 
 
 ## Exporting Versions
 
-Using the Export option, you can download a .zip archive of your assistant. These exports can be useful for backup purposes or to use as imports during your development process.
+Using the Export option, you can download a .zip archive of your agent. These exports can be useful for backup purposes or to use as imports during your development process.
 
 
 ## Deleting User-Created Versions

@@ -7,12 +7,12 @@ When basic authorization is used for a task, the XO Platform automatically promp
 After the end-user is authorized, the settings are saved using the following naming syntax:
 
 ```
-{{ First Name }} {{ Last Name }} {{ Bot Name }} {{ Account # }} {{ Sequence # }}
+{{ First Name }} {{ Last Name }} {{ App Name }} {{ Account # }} {{ Sequence # }}
 ```
 
 For example, John Smith’s Twitter Account #1.
 
-The XO Platform can access the web application or web service for all future task requests using this account. In addition, the end-user can reuse the account for other tasks for the same Virtual Assistant.
+The XO Platform can access the web application or web service for all future task requests using this account. In addition, the end-user can reuse the account for other tasks for the same AI Agent.
 
 You need to have an account with the external application which you want to authorize the XO Platform for.
 
@@ -21,7 +21,7 @@ You need to have an account with the external application which you want to auth
 
 To define Basic Authorization for your assistant, follow these steps:
 
-1. Open the VA for which you want to configure the Basic Authorization profile.
+1. Open the AI Agent for which you want to configure the Basic Authorization profile.
 2. From the left menus, click **App Settings**, then select **Dev Tools > Authorization Profiles**.
 3. Click **New** to open the **New Authorization Mechanism** dialog.  
 <img src="../images/basic-auth-img2.png" alt="New Auth mechanism - Add" title="New Auth mechanism - Add" style="border: 1px solid gray;zoom:50%;"/>
@@ -35,7 +35,7 @@ To define Basic Authorization for your assistant, follow these steps:
 
     !!! Note
         
-            By default, the GET method is selected for the existing bots.
+            By default, the GET method is selected for the existing apps.
 
 7. Click **Save**.
 
@@ -127,10 +127,10 @@ By default, authorization fields are configured as part of the header of the req
 <img src="../images/basic-auth-img7.png" alt="Adding Authorization Fields" title="Adding Authorization Fields" style="border: 1px solid gray;zoom:50%;"/>
 
 1. In the **Field Type** field, you can select one of the following depending on where in the request message and the type of authorization fields that are required.
-    1. **Header** – The VA looks for the authorization fields in the request header.
-    2. **Payload** – The VA looks for the authorization fields in the request body content.
-    3. **Query String** – The VA looks for the authorization fields as a query in the request body.
-    4. **Path Param** – The VA looks for the authorization fields in the request URL path.
+    1. **Header** – The AI Agent looks for the authorization fields in the request header.
+    2. **Payload** – The AI Agent looks for the authorization fields in the request body content.
+    3. **Query String** – The AI Agent looks for the authorization fields as a query in the request body.
+    4. **Path Param** – The AI Agent looks for the authorization fields in the request URL path.
 
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.

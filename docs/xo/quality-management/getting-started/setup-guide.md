@@ -1,82 +1,59 @@
-
 # Quality AI Setup Guide
 
-Get started on the Quality AI module: Learn how to set up, configure, and use the Quality AI module.
+Get started on the Quality Management (QM) module: Learn how to set up, configure, and use the QM module.
 
-Steps to follow the Quality AI setup for third-party integration:
+Follow these steps:
 
-1. Access the  **Quality AI** (QM) by navigating to the **Contact Center AI** > **User Management** > **Role Management** > **New Role** > **Other Modules**. 
-(Only the app owner has access to [Role Management](https://docs.kore.ai/xo/user-management/role-management/){:target=”_blank”}).
+1. **Configure QM Permissions**
 
-2. Assign the relevant roles (Supervisor role) through User Management or configure the custom roles using the QM permission provided under the Other Modules section for new role creation under Role Management. See [Custom Role](https://docs.kore.ai/xo/user-management/role-management/#custom-role){:target=”_blank”}.
+    a. Go to **User Management** > **Role Management** > **New Role** > **Other Modules**. [Learn more](../../user-management/role-management.md){:target=”_blank”}.
 
-3. Set up the Contact Center and assign the relevant roles (Supervisors/Auditors) to the respective queues to handle access to relevant interactions. <br>See [Queues](https://docs.kore.ai/xo/console/monitor-queues-agents-and-interactions/#queues){:target=”_blank”}.</br>
-
-4. Enable **Conversation Intelligence**, **Auto QA**, and **Bookmarks** in Quality AI **Settings** to start analyzing interactions (**Conversation Intelligence** and **Auto QA Scoring**). See [Conversation Intelligence](https://docs.kore.ai/xo/quality-management/analyze/conversation-intelligence/){:target=”_blank”}.
-
-5. Enable **Answer** and **Utterance** suggestions in GenAI Settings. See [Enabling GenAI Features](https://docs.kore.ai/xo/generative-ai-tools/genai-features/){:target=”_blank”}.
-
-    * Enable the required options from the Co-Pilot section of GenAI features of the Generative AI section of XO11. 
+    b. Assign relevant roles (Supervisor role) or create custom roles with QM permissions. [Learn more](../../user-management/role-management.md/#custom-role){:target=”_blank”}.
     
-    * Select the desired Model for similar suggestions of Agent Answers and Utterances using AI Assistance. For more information, See [Evaluation Forms](https://docs.kore.ai/xo/quality-management/configure/evaluation-forms/){:target=”_blank”}.
+2. **Set up Contact Center**
 
-6. Enable **Answer** and **Utterance** suggestions in GenAI Settings. See [Enabling GenAI Features](https://docs.kore.ai/xo/generative-ai-tools/genai-features/){:target=”_blank”}. 
+    a. Assign Supervisors/Auditors to relevant queues in your Contact Center application so that they have access to the relevant interactions. [Learn more](../../console/monitor-queues-agents-and-interactions.md/#queues){:target=”_blank”}.
 
-7. Create **[Evaluation Metrics](https://docs.kore.ai/xo/quality-management/configure/evaluation-metrics/)**{:target=”_blank”} from the **[Evaluation Forms](https://docs.kore.ai/xo/quality-management/configure/evaluation-forms/){:target=”_blank”}** section of Quality AI based on the required evaluation criteria using the following user **Evaluation Metrics Measurement Types**. 
+3. **Enable Settings Features**
 
-    * **By Question**: 
+    a. Enable **Conversation Intelligence**, **Auto QA**, and **Bookmarks** in Quality AI **Settings**. [Learn more](../analyze/conversation-intelligence.md/){:target=”_blank”}.
+
+    b. Enable **Answer** and **Utterance** suggestions in GenAI Settings. [Learn more](../../generative-ai-tools/genai-features.md/){:target=”_blank”}.
     
-        * **Question Answer Pair**: The question is a reference for auditors to understand the evaluation criteria. For example, did the agent greet the customer?
+4. **Create Evaluation Metrics**
 
-            * **Adherence Types**:
-
-                * **Static**: Non-conditional evaluation, answers configured are checked for adherence in all scenarios.
-
-                * **Dynamic**: Conditional evaluation, answers configured are checked for adherence only when the configured trigger utterance, either from the Customer or Agent, is detected.  
-
-            * **Answer**: Expected answer utterance from the agent in interactions. 
-
-            * **Count Type**: 
-
-                * **Entire Conversation**: Adherence is checked across the entire interaction. 
-
-                * **Time Bound**: Adherence checks for the configured number of seconds for voice and the number of messages for chats, either at the start or at the end of the conversation, based on selection. See [Add New Evaluation Metrics](../configure/evaluation-metrics.md#add-new-evaluation-metrics){:target=”_blank”}. 
-
-8. Create the **[Evaluation Forms](https://docs.kore.ai/xo/quality-management/configure/evaluation-forms/){:target=”_blank”}**.
-
-    * Create evaluation forms by assigning **Name**, **Description**, **Channel**, and **Pass Score**. 
-    * Select the desired metrics from the list of created metrics, add them, assign weights to each metric so that the total weight across metrics sums up to 100%, and assign the forms to queues. 
+    a. Use By Question, Question Answer Pair, and Adherence Types (Static/Dynamic). [Learn more](../configure/evaluation-metrics.md/){:target=”_blank”}.
     
-    * After creating the Settings, enable the evaluation form to start evaluating interactions that are terminated in the queues assigned to that form. 
+    b. Set Count Type (Entire Conversation/Time Bound). [Learn more](../configure/evaluation-metrics.md#add-new-evaluation-metrics/){:target=”_blank”}.
     
-    * Each queue can have only one evaluation form per channel: **Chat** and **Voice**. 
+5. **Create Evaluation Forms**
 
-9. View the scored interaction from **[Conversation Mining](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining-overview/)**{:target=”_blank”}. 
+    a. Assign Name, Description, Channel, and Pass Score.
 
-    * View the scored interactions from conversation mining, use filters to drill down to a set of interactions of interest or interactions with the most potential to improve, and save filters to assign them for audit. 
+    b. Select metrics, assign weights, and link to queues. 
     
-    * Interactions seen in the **Conversation Mining** screen are restricted to the queues that the user is part of. 
+    [Learn more](../configure/evaluation-forms.md/){:target=”_blank”}. 
 
-10. Create **Audit Allocations** to assign interactions for audit. 
+6. **View Scored Interactions in Conversation Mining**
 
-    * Assign interactions for audit to different auditors to manually evaluate them. 
+    a. Use filters to analyze interactions. [Learn more](../analyze/conversation-mining-interactions.md){:target=”_blank”}.
+
+    b. Save filters for audit assignments. [Learn more](../analyze/conversation-mining-audit-allocations.md){:target=”_blank”}.
     
-    * Interactions seen in the audit allocation are those assigned to that user for the audit. Upon audit completion, the interactions are removed from the **[Add New Audit Allocation](../quality-management/analyze/conversation-mining.md#add-new-audit-allocation){:target=”_blank”}**.
+7. **Create Audit Allocations**
 
-11. Expedite Manual audits. 
+    a.  Assign interactions to auditors for manual evaluation. [Learn more](../analyze/conversation-mining-audit-allocations.md){:target=”_blank”}.
 
-    * Use AI-assisted manual audits to score interactions easily. The entire interaction is broken down by moments of adherence, moments of violation, and omissions. 
+8. **Expedite Manual audits** 
+
+    a. Use AI-assisted audits for easier scoring. 
     
-    * By questioning metrics associated with the form on the right side, click on the metric to navigate to that point of the interaction and record playback. 
+    b. Navigate interactions using adherence moments and violations.
+
+    [Learn more](../ai-assisted-manual-audit.md){:target=”_blank”}.
     
-    * Violations for speech-based metrics with timestamps on the top-left section. 
-    
-    * Omissions for playbooks and dialog tasks are on the bottom left. See [Conversation Mining](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining-overview/){:target=”_blank”}. 
+9. **Monitor Task List, Quality Standards, and Performance**
 
-12. Monitor task list and quality standards using the **[Dashboard](https://docs.kore.ai/xo/quality-management/analyze/dashboard/){:target=”_blank”}**.
+    a. Use the Dashboard for individual QA progress and queue statistics. [Learn more](../analyze/dashboard.md){:target=”_blank”}.
 
-    * The dashboard is meant for individual QAs to review their audit completion progress and monitor scores and failure statistics for their respective queues. 
-
-13. Monitor contact center performance from the **[Conversation Intelligence](https://docs.kore.ai/xo/quality-management/analyze/conversation-intelligence/){:target=”_blank”}** dashboard. 
-
-     * Monitor efficiency KPIs, Agent performance metrics, and call drivers using topic modeling, sentiment analysis, and churn analysis from a single dashboard with conversation intelligence. 
+    b. Utilize the Conversation Intelligence Dashboard for overall contact center performance. [Learn more](../analyze/conversation-intelligence.md){:target=”_blank”}.

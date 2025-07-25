@@ -1,6 +1,6 @@
 # Test and Debug
 
-The following sections describe how you can test and debug your Virtual Assistant to validate the working of External NLU.
+The following sections describe how you can test and debug your AI Agent to validate the working of External NLU.
 
 
 ## Test
@@ -9,7 +9,7 @@ After completing the steps in [Adapter Configuration](../external-nlu-adapters/#
 
 
 
-1. Go to your VA and click **Test**.
+1. Go to your App and click **Test**.
 2. Enter a user utterance which matches the intent entered in the Dialogflow Essentials page.
 3. In the **Debug Log** panel of the user conversation, you can see a message that, **intent identified using External NLU is initiated**.  
 <img src="../images/external-nlu-test-and-debug-img1.png" alt="Debug Log - intent identified using External NLU is initiated" title="Debug Log - intent identified using External NLU is initiated" style="border: 1px solid gray;zoom:50%;"/>

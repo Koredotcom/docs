@@ -46,6 +46,9 @@ plugins:
         'channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md': 'channels/voice-gateway/configure-voice-gateway.md' 
         'channels/kore.ai-voice-gateway/call-control-parameters.md': 'channels/voice-gateway/speech-customization.md'
         'channels/voice-gateway/call-control-parameters.md': 'channels/voice-gateway/speech-customization.md'
+        'getting-started/virtual-assistants-overview.md': 'getting-started/building-a-virtual-assistant.md'
+        'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
+        'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
 extra:
   version:
     provider: mike
@@ -190,8 +193,7 @@ nav:
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
-        - About Virtual Assistant: getting-started/virtual-assistants-overview.md
-        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
+        - Build an AI Agent: getting-started/building-a-virtual-assistant.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
     - Agent Node:
         - Agent Node Overview and Configuration: automation/agent-node/working-with-agent-node.md
@@ -337,7 +339,7 @@ nav:
                 - ClickUp: searchai/content-sources/connectors/clickup.md
                 - Coda: searchai/content-sources/connectors/coda.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
-                - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Confluence Data Center: searchai/content-sources/connectors/confluence-server.md
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
                 - Datadog: searchai/content-sources/connectors/datadog.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md
@@ -483,7 +485,8 @@ nav:
         - Dashboard:
           - Supervisor Dashboard: quality-management/analyze/dashboard.md
           - Supervisor View (Agent-Specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
-          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                
+          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md
+          - Agent Dashboard Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md                
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
@@ -681,6 +684,8 @@ nav:
             - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
             - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
             - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
+          - Multibot:
+            - Multibot Integration with Genesys: contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md

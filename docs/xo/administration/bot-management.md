@@ -1,6 +1,6 @@
 # Bots Management Module
 
-In the **Bots Management** module of the Bots Admin Console, you can deploy the bots developed by your company developers from the Kore.ai Bot Builder tool. When the developer develops a bot, it can be published for approval and deployment by the Bots Admin from the Bots Management section. From this section, you can
+In the **Bots Management** module of the Admin Console, you can deploy the bots developed by your company developers from the Kore.ai Bot Builder tool. When the developer develops a bot, it can be published for approval and deployment by the Bots Admin from the Bots Management section. From this section, you can
 
 * Approve or reject custom bots sent for deployment approval,
 * Deploy some or all of the tasks defined for a bot,

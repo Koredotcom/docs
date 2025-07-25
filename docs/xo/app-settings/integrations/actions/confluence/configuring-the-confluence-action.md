@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Confluence** action and 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports OAuth v2.0 authentication to allow a Confluence integration to exchange data. For more information, see [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}. 
+The Kore.ai XO Platform supports OAuth v2.0 authentication to allow a Confluence integration to exchange data. For more information, see [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}. 
 
 The Kore.ai XO Platform supports the following authorization types for the Confluence integration:
 
@@ -169,6 +169,6 @@ Steps to install action templates:
 2. In the Integration Templates dialog, click the **Install** button for a template to begin the installation.  
 <img src="../images/confluence-action-img11.png" alt="Begin template installation" title="Begin template installation" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page. Click **Go to Dialog** or go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page. Click **Go to Dialog** or go to **Automation AI** > **Use Cases** > **Dialogs**.
 
 4. To start using the templates, see [Using Confluence Templates.](using-the-confluence-action-templates.md){:target="_blank"}

@@ -1,4 +1,4 @@
-# Analytics for Bots Admin
+# Analytics for Admin
 
 The Analytics module provides the history of all administrative tasks with attributes such as **User Name**, **User Email** **Date/Time**, and **Description** for an event. You can review the **Audit Report** page to analyze admin users, custom admins, and user events such as log on, log off, and changes to system settings.
 
@@ -8,7 +8,7 @@ The following illustration shows an example of the **Analytics** module with the
 
 ## Viewing System and User Events
 
-On the **Audit Report** page in the Kore.ai Bots Admin Console in the **Analytics** module, you can view the Kore.ai system and user-generated events. For example, a system-generated event could be a periodic Microsoft® Active Directory® Sync. An example of a user-generated event could be the addition of a new user.
+On the **Audit Report** page in the Kore.ai Admin Console in the **Analytics** module, you can view the Kore.ai system and user-generated events. For example, a system-generated event could be a periodic Microsoft® Active Directory® Sync. An example of a user-generated event could be the addition of a new user.
 
 Using the filters on the **Audit Report** page you can select event categories, events, and time periods to drill down and filter events as needed. Kore.ai audit reports also list error messages that can help you troubleshoot system issues or when you create a Kore.ai service request.
 

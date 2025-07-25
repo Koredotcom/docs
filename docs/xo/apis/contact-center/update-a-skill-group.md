@@ -1,6 +1,6 @@
 # Update a Skill Group
 
-To update the particular skill group with the given Stream Id and Skill Group Id.
+To update the particular skill group with the given `streamId` and `skillGroupId`.
 
 | **Method**         | PUT                                                                                         |
 |----------------|---------------------------------------------------------------------------------------------|
@@ -13,8 +13,8 @@ To update the particular skill group with the given Stream Id and Skill Group Id
 
 | **PARAMETER** | **DESCRIPTION**                                               | **TYPE**         |
 |-----------|-----------------------------------------------------------|--------------|
-| host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| streamId     | botId or streamId. You can get it from the general settings page.| string, required |
 
 ## Sample Request
 

@@ -1,6 +1,6 @@
-# Intro to Bots Admin Console
+# Intro to App Admin Console
 
-The Kore.ai Admin Console is where virtual assistant project administrators can manage Kore.ai assistants and related tasks, users, security, billing, and more, at an organization level. This article provides an overview of the Admin Console, taking you through prerequisites, access options and a  recommended workflow.
+The Kore.ai Admin Console is where AI agents project administrators can manage Kore.ai assistants and related tasks, users, security, billing, and more, at an organization level. This article provides an overview of the Admin Console, taking you through prerequisites, access options and a  recommended workflow.
 
 
 ## Admin Prerequisites
@@ -30,7 +30,7 @@ The Kore.ai XO Platform offers an additional layer of security beyond username a
 
 Kore.ai triggers a session timeout after 15 mins of idle time to prevent unauthorized access. In such scenarios, you will be taken to your account admin console and asked to sign-in again.
 
-As an Admin, you can enroll users, manage admin and custom roles, define security settings, and manage Virtual Assistants in your company. The following illustration is an example of the Admin Console with the **Dashboard** page displayed. [Refer here for more on the Admin Dashboard](../dashboard-bac/){:target="_blank"}.
+As an Admin, you can enroll users, manage admin and custom roles, define security settings, and manage AI agents in your company. The following illustration is an example of the Admin Console with the **Dashboard** page displayed. [Refer here for more on the Admin Dashboard](../dashboard-bac/){:target="_blank"}.
 
 <img src="../images/adminconsole-img2-bac-dashboard.png" alt="Admin Console Dashboard" title="Admin Console Dashboard" style="border: 1px solid gray;zoom:50%;"/>
 

@@ -1,10 +1,10 @@
-# Multilingual VAs: Components & Feature Support
+# Multilingual AI Agents: Components & Feature Support
 
-In the case of multilingual VAs, while much of the assistant’s behavior does not change with the language, the semantics does impose some restrictions. In this document we will list out the different behaviors that would be language-dependent, so you can cater for such scenarios.
+In the case of multilingual AI Agents, while much of the assistant’s behavior does not change with the language, the semantics does impose some restrictions. In this document we will list out the different behaviors that would be language-dependent, so you can cater for such scenarios.
 
-This article discusses language-specific components for multilingual VAs, as well as feature support and behavior, as compared to single language assistants. 
+This article discusses language-specific components for multilingual AI Agents, as well as feature support and behavior, as compared to single language assistants. 
 
-This article lists the VA elements for which you can provide language-specific values. You need not translate Standard Responses as the Platform automatically translates them when you enable a language.
+This article lists the AI Agent elements for which you can provide language-specific values. You need not translate Standard Responses as the Platform automatically translates them when you enable a language.
 
 
 
@@ -38,11 +38,11 @@ JSON object consisting of the following translatable elements
 </td>
 </tr>
 <tr>
-<td>VA Synonyms
+<td>AI Agent Synonyms
 </td>
 <td>Object
 </td>
-<td>Arrays of important words in the task names and their corresponding synonyms. Enter translation of the words as well as their synonyms. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more about VA synonyms.
+<td>Arrays of important words in the task names and their corresponding synonyms. Enter translation of the words as well as their synonyms. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more about AI Agent synonyms.
 </td>
 </tr>
 <tr>
@@ -57,7 +57,7 @@ JSON object consisting of the following translatable elements
 
 ## Dialog Tasks
 
-JSON object consisting of the following translatable components of your VA’s [Dialog Tasks](../../../automation/use-cases/dialogs/dialog-tasks-overview){:target="_blank"}.
+JSON object consisting of the following translatable components of your AI Agent's [Dialog Tasks](../../../automation/use-cases/dialogs/dialog-tasks-overview){:target="_blank"}.
 
 <table border="1">
 <tr>
@@ -145,7 +145,7 @@ JSON object consisting of the following translatable components related to the N
 
 ## Message Templates
 
-JSON object with arrays of Message Template IDs and Message Template Text values. They correspond to the **User Responses** field in the Message node and the **Bot Prompts** and **Error Prompts** fields in the [Entity node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node/){:target="_blank"} of the dialog tasks.
+JSON object with arrays of Message Template IDs and Message Template Text values. They correspond to the **User Responses** field in the Message node and the **App Prompts** and **Error Prompts** fields in the [Entity node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node/){:target="_blank"} of the dialog tasks.
 
 
 <table border="1">
@@ -162,7 +162,7 @@ JSON object with arrays of Message Template IDs and Message Template Text values
 </td>
 <td>String
 </td>
-<td>The text entered in User Responses, Bot Prompts, or Error Prompts fields in any Message or Entity node of a dialog task.
+<td>The text entered in User Responses, App Prompts, or Error Prompts fields in any Message or Entity node of a dialog task.
 </td>
 </tr>
 </table>
@@ -366,7 +366,7 @@ JSON object consisting of the following translatable components related to IDP c
 
 ## Pattern Support
 
-We have seen in [this document](../../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. These rules are for VAs in the English language. In other languages, there may be differences. 
+We have seen in [this document](../../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. These rules are for AI Agent in the English language. In other languages, there may be differences. 
 
 Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../../automation/knowledge-ai/build-a-knowledge-graph){:target="_blank"} (using alternate question fields), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
 
@@ -839,7 +839,7 @@ Tagalog
 
 ## NLP Support
 
-Here are the NLP features supported by Multilingual VAs:
+Here are the NLP features supported by Multilingual AI Agents:
 
 
 <table border="1">
@@ -1088,7 +1088,7 @@ Catalan
 </td>
 </tr>
 <tr>
-<td><strong>Bot Synonyms (default)</strong>
+<td><strong>App Synonyms (default)</strong>
 </td>
 <td>
 

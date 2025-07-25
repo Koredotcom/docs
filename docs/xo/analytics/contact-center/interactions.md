@@ -1,6 +1,6 @@
 # Interactions Dashboard
 
-Interactions store the bot interactions. You can use the logs to review your bot’s performance and troubleshoot issues with conversations.
+Interactions store the AI Agents interactions. You can use the logs to review your AI Agent’s performance and troubleshoot issues with conversations.
 
 To view the Interactions dashboard, follow the steps:
 
@@ -35,7 +35,7 @@ To view the Interactions dashboard, follow the steps:
     * Error: Error is a disruption to an ongoing conversation, resulting in an error message. Failure of integrated systems results in errors.
     * Completed (Drop Off): Completed (Drop Off) refers to a voice call where there was no response from the user, and the conversation ends.
     * Completed (User Hangup): Completed (User Hangup) refers to a voice call where the user ends the conversation.
-    * Completed (Bot Hangup): Completed (Bot Hangup) refers to a voice call where the task is completed, and the bot ends the conversation.
+    * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the task is completed, and the AI Agents ends the conversation.
     * Completed: Completed refers to a chat conversation where the task is completed, and the conversation ends.
 
 ### Supervisor Actions

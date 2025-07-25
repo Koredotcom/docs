@@ -1293,13 +1293,13 @@ Before installing office equipment, it is essential to verify that your office e
 
 Refer to the [Kore Cloud requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for the minimum technical requirements to run the application.
 
-  !!! Note
+!!! Note
 
     To ensure successful usage of Kore Cloud, please make sure to configure the necessary ports and services on your company firewall. Complete details can be found in the "Firewall Requirements" section within the above-provided link.
 
 #### End-User Safety Guidelines
 
-To maintain uninterrupted access to Kore Cloud, it is recommended to directly allow Kore Cloud connectivity on your device. This is due to security services, such as antivirus, firewalls, or intrusion protection, installed by some companies on users' computers that might block access to Kore Cloud. Your IT administrator can also allow the connectivity. For a list of the common Kore Cloud ports, protocols, and destinations, please refer to the "Firewall Requirements" section [here](https://docs.kore.ai/smartassist/minimum-system-requirements/minimum-system-requirements-and-supported-browsers/). 
+To maintain uninterrupted access to Kore Cloud, it is recommended to directly allow Kore Cloud connectivity on your device. This is due to security services, such as antivirus, firewalls, or intrusion protection, installed by some companies on users' computers that might block access to Kore Cloud. Your IT administrator can also allow the connectivity. For a list of the common Kore Cloud ports, protocols, and destinations, please refer to the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md). 
 
 #### SIP Trunking Requirements
 
@@ -1324,7 +1324,7 @@ In addition to selecting a compatible SIP provider, customers are strongly advis
 * The carrier must allow SIP and RTP traffic from your Edge Appliance IP Addresses
 * Sequential trunk failover is recommended for multi-edge deployments
 * SIP port 5060 (TCP, UDP) and 5061 (TLS) for all inbound/outbound SIP traffic
-* Recommended to use the PCMU, PCMA, OPUS Codec for voice traffic inbound and outbound between you and the carrier** **
+* Recommended to use the PCMU, PCMA, OPUS Codec for voice traffic inbound and outbound between you and the carrier
 * SIP OPTION requests to the primary Edge ONLY
 
 ### SIP Provider Assessment Checklist
@@ -1347,19 +1347,19 @@ In addition to selecting a compatible SIP provider, customers are strongly advis
 
 ## Connecting Your Network, Clients, and Appliances to Kore Cloud
 
-### [Internet connectivity](https://help.mypurecloud.com/articles/customer-network-readiness/#citem_7c36-9c7f)
+### Internet connectivity
 
 A dependable internet connection is necessary for Kore Cloud. Most internet connectivity issues are related to the "last mile," which is the physical link between your location and your carrier's network. If available, we suggest a "fully diverse" internet connection from your provider. Diversity means that your internet connection has multiple "last mile" paths to connect to various points on your internet service provider's network. Please note that Diversity and Redundancy are different concepts in the carrier world.
 
-#### [Network firewalls and security devices](https://help.mypurecloud.com/articles/customer-network-readiness/#citem_7c36-9c71)
+#### Network firewalls and security devices
 
 To maintain uninterrupted access to Kore Cloud, please ensure that your network firewalls and security devices permit Kore Cloud connectivity. Company firewalls may occasionally block network traffic between Kore Cloud and your users.
 
-For a list of the common Kore Cloud ports, protocols, and destinations, see the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md)
+For a list of the common Kore Cloud ports, protocols, and destinations, see the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md).
 
-#### [Wide Area Network (WAN)](https://help.mypurecloud.com/articles/customer-network-readiness/#citem_7c36-9c73)
+#### Wide Area Network (WAN)
 
-#### Private Circuit Connectivity
+##### Private Circuit Connectivity
 
 Many companies take advantage of private connectivity between their company offices. Private connectivity includes MPLS (Multi-Protocol Label Switching) and point-to-point connections. When using private circuit connectivity for voice and video services, the physical connection between your company office and your carrier’s network is a critical component. The industry refers to this connection as the “last mile.”
 
@@ -1374,26 +1374,25 @@ If your organization utilizes VPNs to connect remote workers, ensure that all ne
 For a list of the common Kore Cloud ports, protocols, and destinations, see the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md/).
 
 
-#### [Local Area Network (LAN)](https://help.mypurecloud.com/articles/customer-network-readiness/#citem_7c36-9c74)
+#### Local Area Network (LAN)
 
 Connectivity issues often arise when the speed and duplex of devices connected to your LAN are mismatched. Ensure that your network ports and trunks register the correct speed and duplex settings for each connected device. Most devices on a typical LAN have a speed/duplex of "100/full" or "1000/full".
 
 
-#### [Wireless Local Area Network (WLAN)](https://help.mypurecloud.com/articles/customer-network-readiness/#citem_7c36-9c75)
+#### Wireless Local Area Network (WLAN)
 
 For optimal performance of Kore Cloud real-time communications services over WLAN, use 802.11n or superior wireless hardware, and operate your wireless network on the 5 GHz band to minimize signal interference.
 
 To identify areas with weak wireless signals ("dead spots") in your facility, consider using available Wi-Fi surveying tools or hiring a network services company to conduct a professional site survey of your wireless network.
 
-#### [Network bandwidth](https://help.mypurecloud.com/articles/customer-network-readiness/#citem_8c36-9c70)
-
+#### Network bandwidth
 Ensure consistent bandwidth across your LAN and WAN to support voice calls. The required bandwidth is specified on this [page](../voice-gateway/minimum-system-requirements-and-supported-browsers.md ). 
 
 Kore Cloud utilizes OPUS, an adaptive voice codec, for voice traffic to agent WebRTC phones. OPUS automatically adjusts sampling rates in response to varying network conditions. To ensure optimal call quality, we recommend allocating 32–128 Kbps of bi-directional network voice bandwidth per expected/supported concurrent call. Higher bandwidth allocation results in higher sampling rates and improved voice quality. Bandwidth must also be allocated for SIP control traffic. It is recommended that 5% of the high voice bandwidth value be allocated to SIP.
 
-#### [Network Quality of Service (QoS)](https://help.mypurecloud.com/articles/customer-network-readiness/#citem_8c36-9c7f)
+#### Network Quality of Service (QoS)
 
-#### Prioritizing Voice Traffic
+##### Prioritizing Voice Traffic
 
 Prioritize voice and video traffic on all your network devices to maintain voice quality. This prioritization, also referred to as network Quality of Service (QoS), is crucial for managing network traffic and ensuring optimal performance for real-time communications.
 
@@ -1427,7 +1426,7 @@ The manufacturer's documentation for your specific network hardware setup will d
   </tr>
 </table>
 
-[Performance target metrics](https://help.mypurecloud.com/articles/customer-network-readiness/#citem_8c36-9c8c)
+**Performance target metrics**
 
 <table>
   <tr>

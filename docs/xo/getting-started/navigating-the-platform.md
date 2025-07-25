@@ -14,7 +14,7 @@ After you sign in, you are directed to the landing page, which is, essentially, 
 
 The top menu available on the landing page provides access to the following options:
 
-1. **Data** – Define Data Tables, Table Views, and manipulate them from your Virtual Assistants and Process Apps. Thus taking care of your data needs, without having to depend on external services.
+1. **Data** – Define Data Tables, Table Views, and manipulate them from your agents and Process Apps. Thus taking care of your data needs, without having to depend on external services.
 2. **Help** – Find useful resources and support methods to help you develop your App.
 3. **Invite Users** – You can invite members to collaborate on the App creation journey.
 4. **Account Switcher** – If you are part of more than one organization, you can switch between accounts.
@@ -57,7 +57,7 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 
     <img src="../images/ntp(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
-2. **App dropdown list** Lets you switch between the various versions of the current virtual assistant. You can also search and switch to any virtual assistant within your account.
+2. **App dropdown list** Lets you switch between the various versions of the current agent. You can also search and switch to any agent within your account.
 3. **Status Docker** icon.
 4. **Language** icon to switch the App's language.
 5. **Search** for a feature or menu item.
