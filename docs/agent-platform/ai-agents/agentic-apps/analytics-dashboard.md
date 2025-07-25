@@ -1,6 +1,6 @@
 # App Usage Analytics Dashboard
 
-The Analytics Dashboard provides real-time insights into app usage across your platform. It provides comprehensive visibility into user engagement, performance metrics, and resource utilization for agents, tools, and models.
+The Analytics Dashboard provides real-time insights into app usage with comprehensive visibility into user engagement, performance metrics, and resource utilization for agents, tools, and models.
 
 The dashboard organizes analytics into two primary categories:
 
