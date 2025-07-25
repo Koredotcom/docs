@@ -85,7 +85,8 @@ Steps to configure general settings:
       * An **AND** condition applies across the selected languages. 
     
       * The dropdown list displays only metrics that support all configured languages, not metrics supporting just one. For example: If **English** and **Dutch** languages are selected, only metrics available in both languages appear.
-      <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms1.png" alt="General Settings Page1" title="General Settings Page1" style="border: 1px solid gray; zoom:80%;">
+
+         <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms1.png" alt="General Settings Page1" title="General Settings Page1" style="border: 1px solid gray; zoom:80%;">
 
 4. Select a **Channel** mode (**Voice** or **Chat**) for this form. 
 
@@ -96,12 +97,11 @@ Steps to configure general settings:
         * **Voice Channel**: Includes all applicable Voice metrics.
 
 5. Set the minimum **Pass Score** percentage for the agent. 
-   <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Page2" title="General Settings Page2" style="border: 1px solid gray; zoom:80%;">
+   <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Page2" title="General Settings Page2" style="border: 1px solid gray; zoom:50%;">
 
  6. Click **Next** to move to the **Evaluation Metrics** section.
     
-### Scoring Logic 
-    
+### Scoring Logic     
     Forms are evaluated using weighted metrics assigned to agents. If the total score meets or exceeds the configured pass percentage, the form receives a **Pass** status. Scores below the threshold result in a **Fail** status. The pass score is calculated based on these weighted metrics and the priority level assigned to each form, as determined by the supervisor.
 
 ### Evaluation Metrics Configuration
@@ -114,14 +114,14 @@ This section lets you add and create evaluation metrics for each attribute confi
 1. Using the **Search option**, select the required evaluation metrics from the available options.
    <img src="../evaluation-criteria/evaluation-forms/images/forms-search-metrics.png" alt="Search Metrics" title="Search Metrics" style="border: 1px solid gray; zoom:80%;">
 
-   !!! note     
-        
-       The metrics list displays only metrics configured for all selected form languages or chosen channels.
-
 2. Click **Add Evaluation Metrics** to add the selected metrics. 
 
 3. Click **Edit** to assign weightage to each agent attribute based on importance.
 <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-edit.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:80%;">
+
+!!! note     
+        
+       The metrics list displays only metrics configured for all selected form languages or chosen channels.
 
 4. Choose the **Correct Response** to identify the correct answer for validation. 
 
@@ -146,10 +146,11 @@ This section lets you add and create evaluation metrics for each attribute confi
 
         * **No**: When the agent’s response (such as, rude response) does not match the correct response, the system assigns zero or negative weightage accordingly.	
 
-7. Toggle the **Fatal Error** toggle if the metric is fatal and is considered as a critical failure in the response. 
+7. Toggle the **Fatal Error** if the metric is fatal and is considered as a critical failure in the response. 
+
    <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-fatal-error.png" alt="Fatal Error" title="Fatal Error" style="border: 1px solid gray; zoom:80%;">
     
-   A Fatal Error is triggered under any of the following conditions:
+   Under the following circumstances, a fatal error is triggered:
 
     * The agent fails to follow the configured process throughout the conversation.
 
@@ -193,7 +194,9 @@ The Correct Response configuration enables flexible scoring logic for metrics wi
 
 * **Scoring**: When agent is not rude = positive contribution to score
 
-##### Weightage Validation Rules
+### Weightage Rules
+
+#### Weightage Validation
 
 * If **Correct Response** = **Yes**: You can only assign positive weights to **Yes** outcomes, zero or negative weights to **No** outcomes.
    
@@ -202,8 +205,6 @@ The Correct Response configuration enables flexible scoring logic for metrics wi
 #### Weightage Configuration
 
 When editing evaluation metrics, you can assign weights based on how important each one is to overall quality. These weights work with the Correct Response settings to ensure accurate scoring.
-
-##### **Weightage Rules**
 
 **Positive Weightage Requirements**
 
@@ -231,7 +232,7 @@ The system calculates conversation scores using weighted metrics. If a score goe
 
 Fatal Error configuration identifies metrics that are crucial to compliance or functional requirements. When enabled, these metrics can override the entire conversation score regardless of other metric performance.
 
-#### When Fatal Error Triggers
+#### Fatal Error Triggers
 
 * Agent fails to meet a metric marked as fatal error.
 
@@ -246,15 +247,11 @@ Fatal Error configuration identifies metrics that are crucial to compliance or f
 ### Assignments Configuration
 
 This section enables you to create and evaluate the assignments made.
-<img src="../evaluation-criteria/evaluation-forms/images/assignments-create.png" alt="Assignments Configuration" title="Assignments Configuration" style="border: 1px solid gray; zoom:80%;">
+<img src="../evaluation-criteria/evaluation-forms/images/assignments-create.png" alt="Assignments Configuration" title="Assignments Configuration" style="border: 1px solid gray; zoom:50%;">
 
 Steps to configure assignments:
 
 1. Search for available queue options.
-
-   !!! Note
-
-       The search list displays accessible queues for assignment.
 
 2. Click **Add Queues** to assign the assignment to queues.
 
@@ -262,7 +259,9 @@ Steps to configure assignments:
 
    !!! Note
 
-       Each queue can have only one form associated with a single channel.
+      * Each queue can have only one form associated with a single channel.
+      
+      * The search list displays accessible queues for assignment.
        
       <img src="../evaluation-criteria/evaluation-forms/images/queues-create.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:80%;">
 
@@ -293,7 +292,7 @@ Steps to edit the existing evaluation forms:
       <img src="../evaluation-criteria/evaluation-forms/images/edit-evaluation-form.png" alt="Edit Evaluation Fomrs" title="Edit Evaluation Fomrs" style="border: 1px solid gray; zoom:80%;">
 
 3. Modify the required fields.
-   <img src="../evaluation-criteria/evaluation-forms/images/edit-eva-form-field-details.png" alt="Modify Evaluation Fomrs" title="Modify Evaluation Fomrs" style="border: 1px solid gray; zoom:80%;">
+   <img src="../evaluation-criteria/evaluation-forms/images/edit-eva-form-field-details.png" alt="Modify Evaluation Fomrs" title="Modify Evaluation Fomrs" style="border: 1px solid gray; zoom:60%;">
 
 4. Click **Next** to update the required evaluation metrics fields.
 
@@ -301,11 +300,11 @@ Steps to edit the existing evaluation forms:
 
 6. Click **Update** to save the modified fields.
 
-##### Language Configuration Warnings
+#### Language Configuration Warnings
 
 This section describes the rules, warnings, and error messages related to adding or removing any languages in the evaluation form based on their metric and form level configurations.
 
-###### Unsupported Language Error (Form-Level Language Configuration Error)
+#### Unsupported Language Error (Form-Level)
 
 * If a form is currently configured to support **English** and **Dutch**, and all associated metrics are configured only for these two languages, adding **Hindi** to the form triggers a warning. This is because the child (By-Question) metrics do not yet support Hindi. Ensure that the metrics in the form support the new language before adding it to the form settings.
 
@@ -322,17 +321,17 @@ To resolve this, perform the following actions:
 * Once all metrics support the language, add the language to the form.
    <img src="../evaluation-criteria/evaluation-forms/images/edit-lang-config.png" alt="Language Configuration Error" title="Language Configuration Error" style="border: 1px solid gray; zoom:80%;">
 
-###### Adding a New Language Error (Metric-Level Language Limitation)
+#### Adding a New Language Error (Metric-Level Language Limitation)
 
 * This warning appears when you try to use metrics within a form that do not support a language already configured at the form level. For example, the form already includes a language, such as **Hindi**, but some metrics being added or updated are not configured to support Hindi.
 
-To resolve this, perform the following actions:
+To resolve this, do the following:
 
 * **Option 1**: Configure the required language (for example, Hindi) for the selected metrics at the metric level.
 
 * **Option 2**: Choose different metrics that are already configured to support the required language.
 
-##### Channel Mode Change Warning
+#### Channel Mode Change Warning
 
 * When you switch to any existing or preconfigured channel modes between **Voice** and **Chat**, a warning message appears related to the specific channel's associated metrics.
 
@@ -343,16 +342,18 @@ To resolve this, perform the following actions:
     * You should update the remaining metrics and adjust their corresponding weights to correct proper evaluation.
     
     * Click **Update** to save the evaluation form changes once all the updates are done. 
-   <img src="../evaluation-criteria/evaluation-forms/images/channel-update-error.png" alt="Channel Update Error" title="Channel Update Error" style="border: 1px solid gray; zoom:80%;">   
+
+      <img src="../evaluation-criteria/evaluation-forms/images/channel-update-error.png" alt="Channel Update Error" title="Channel Update Error" style="border: 1px solid gray; zoom:50%;">   
 
 ##### Speech Metric Addition Limitation
 
 During evaluation form configuration, only one speech metric per subtype—**Crosstalk**, **Dead Air**, or **Speaking Rate**—is allowed per form. Attempting to add a second metric of the same subtype triggers an error popup when selecting the same subtype under the** Evaluation Metrics** checkbox. 
 
-**Note**:
+!!! Note
 
-* Only one metric of each type you can add at a time.
-* You must remove or delete the existing metric of that type to proceed.
+    * Only one metric of each type you can add at a time. 
+    
+    * You must remove or delete the existing metric of that type to proceed.
 
 ##### Speech Metric Errors
 
@@ -374,7 +375,7 @@ Steps to delete an evaluation metric:
 
 1. Search and select evaluation metrics.
 
-   <img src="../evaluation-criteria/evaluation-forms/images/eva-metrics-delete.png" alt="Dead Air Warning" title="Dead Air Warning" style="border: 1px solid gray; zoom:80%;">   
+   <img src="../evaluation-criteria/evaluation-forms/images/eva-metrics-delete.png" alt="Dead Air Warning" title="Dead Air Warning" style="border: 1px solid gray; zoom:50%;">   
 
 2. Click **Delete** to display a warning dialog box prompting you to update the weights for the remaining metrics. 
 
@@ -385,5 +386,5 @@ Steps to delete an evaluation metric:
 4. Click **Next** to proceed to the **Assignments** section.
 
    !!! Note
-
+   
        Deleting a form results in the irreversible loss of all associated data.
