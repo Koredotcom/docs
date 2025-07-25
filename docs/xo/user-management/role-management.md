@@ -455,6 +455,14 @@ Access to the monitor tab for live interactions
    </td>
 </tr>
 <tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Request Supervisor Support</strong>
    <br>
 Allow user to send request for supervisor support
@@ -1119,6 +1127,13 @@ Access to the monitor tab for live interactions
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Request Supervisor Support</strong>
    <br>
 Allow user to send request for supervisor support
@@ -1737,6 +1752,13 @@ Publish custom layouts for account-wide use
    <td><strong>Monitor Console</strong>
    <br>
 Access to the monitor tab for live interactions
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
    </td>
    <td>Yes</td>
 </tr>
@@ -2375,6 +2397,13 @@ Access to the monitor tab for live interactions
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Request Supervisor Support</strong>
    <br>
 Allow user to send request for supervisor support
@@ -3009,6 +3038,13 @@ Publish custom layouts for account-wide use
    <td><strong>Monitor Console</strong>
    <br>
 Access to the monitor tab for live interactions
+   </td>
+   <td>No</td>
+</tr>
+<tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
    </td>
    <td>No</td>
 </tr>
@@ -3801,6 +3837,15 @@ No</td>
    <td><strong>Monitor Console</strong>
    <br>
 Access to the monitor tab for live interactions
+   </td>
+   <td>Yes
+   <br>
+No</td>
+</tr>
+<tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
    </td>
    <td>Yes
    <br>
