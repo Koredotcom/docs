@@ -1,4 +1,4 @@
-# AgentAssist Widget
+# Agent AI Widget
 
 The Agent AI is an AI powered virtual assistant to optimize contact center agent performance. It offers seamless assistance, promoting enhanced productivity and improved customer satisfaction. Its user-friendly interface and real-time support capabilities let agents effortlessly solve complex customer interactions.
 
