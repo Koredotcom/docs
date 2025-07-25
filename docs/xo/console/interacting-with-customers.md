@@ -593,26 +593,28 @@ Steps to snooze a conversation:
 Agents can view and respond to emails on the console. The emails appear on the console as follows:
 
 **Threaded email structure**: A threaded email structure features a visible distinction between agent and user emails.  
-<img src="../images/threaded-email-structure.png" alt="Threaded Email Structure" title="Threaded Email Structure" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/threaded-email-structure.png" alt="Threaded Email Structure" title="Threaded Email Structure" style="border: 1px solid gray; zoom:70%;">
 
 **Collapsible email tiles**: This allows agents to minimize or expand email threads as needed, reducing clutter and improving the organization of the email inbox.  
-<img src="../images/collapsible-email-tiles.png" alt="Collpsible Email Tiles" title="Collpsible Email Tiles" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/collapsible-email-tiles.png" alt="Collpsible Email Tiles" title="Collpsible Email Tiles" style="border: 1px solid gray; zoom:70%;">
 
 These settings can be configured from [Agent settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings).
 
-**Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.  
-<img src="../images/cc-and-bcc-email.png" alt="CC and BCC" title="CC and BCC" style="border: 1px solid gray; zoom:80%;">
+**Reply and Reply All**: Agents can click Reply to open a response window addressed only to the most recent sender. Clicking Reply All opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.
 
-<img src="../images/email-distribution-list.png" alt="Email Distribution  List" title="Email Distribution List" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
+
+**Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.  
+<img src="../images/cc-and-bcc.png" alt="CC and BCC" title="CC and BCC" style="border: 1px solid gray; zoom:70%;">
 
 **Standard Responses**:
 You can choose from a library of configured standard responses.
 
 1. Click the **Standard Response** icon at the bottom of the email compose bar. The count of response templates in each category is displayed.  
-<img src="../images/standard-response.png" alt="Standard Response Icon" title="Standard Response Icon" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/standard-response.png" alt="Standard Response Icon" title="Standard Response Icon" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the category to view the standard response templates in that category.  
-<img src="../images/standard-response-library.png" alt="Standard Reposnse Tam[plates" title="Standard Response Templates" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/standard-response-library.png" alt="Standard Reposnse Tam[plates" title="Standard Response Templates" style="border: 1px solid gray; zoom:70%;">
 
 3. Click the Standard Response from the list to use that response in the email.  
 <img src="../images/standard-response-filled.png" alt="Send Standard Repsonse" title="Send Standard Reponse" style="border: 1px solid gray; zoom:80%;">
