@@ -26,3 +26,7 @@ To configure this node, set up the following:
 
     4. For **Go to Node**, select a node from the dropdown list. This node triggers once the call deflection occurs. For example, Automation.  
         <img src="../images/deflection-flow-go-to-node.png" alt="Go to Node" title="Go to Node" style="border: 1px solid gray; zoom:80%;">
+
+!!! Note
+
+    This feature is only available when using Kore's Twilio account. It's not supported for SIP trunk setups.
