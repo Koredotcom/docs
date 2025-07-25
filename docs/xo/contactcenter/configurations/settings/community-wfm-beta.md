@@ -30,25 +30,24 @@ Before configuring the integration, note that the following Community WFM detail
 
 ### Configure and Enable Community WFM
 
-1. Go to **CONFIGURATIONS** > **Advanced Settings** > **Community WFM [Beta]**.
-2. Click **Community WFM**.  
-<img src="../images/community-wfm.png" alt="Community WFM" title="Community WFM" style="border: 1px solid gray; zoom:80%;">
+1. Go to **CONFIGURATIONS** > **Settings** > **Advanced Settings** > **Community WFM [Beta]**.
+    <img src="../images/community-wfm-beta.png" alt="Community WFM" title="Community WFM" style="border: 1px solid gray; zoom:70%;">
 
-3. Provide the Community WFM details, including the **Base URL**, **Account ID**, and **API key**.  
-<img src="../images/input-details-community-wfm.png" alt="Base URL, Account ID, and API key" title="Base URL, Account ID, and API key" style="border: 1px solid gray; zoom:80%;">
+2. Provide the Community WFM details, including the **Base URL**, **Account ID**, and **API key**.  
+    <img src="../images/input-details-community-wfm.png" alt="Base URL, Account ID, and API key" title="Base URL, Account ID, and API key" style="border: 1px solid gray; zoom:70%;">
 
-4. Community WFM includes Machine Learning models that analyze data and forecast future call volumes. To use this feature, you can enable data sharing from Contact Center AI to Community WFM by turning on the **Data sync** toggle. (Optional)  
-<img src="../images/data-sync-toggle.png" alt="Base URL, Account ID, and API key" title="Base URL, Account ID, and API key" style="border: 1px solid gray; zoom:80%;">  
+3. Community WFM includes Machine Learning models that analyze data and forecast future call volumes. To use this feature, you can enable data sharing from Contact Center AI to Community WFM by turning on the **Data sync** toggle. (Optional)  
+    <img src="../images/data-sync-toggle.png" alt="Base URL, Account ID, and API key" title="Base URL, Account ID, and API key" style="border: 1px solid gray; zoom:70%;">  
 
     !!! Note
 
         The system enables data sync from the current day onwards and does not sync the past data.
-5. Click **Save**.
+4. Click **Save**.
 
 ### Stop Data Sharing
 
 You can disable data sharing by turning off the **Data sync** toggle.  
-<img src="../images/data-sync-off-confirmation.png" alt="Data Sync Off Cofirmation" title="Data Sync Off Cofirmation" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/data-sync-off-confirmation.png" alt="Data Sync Off Cofirmation" title="Data Sync Off Cofirmation" style="border: 1px solid gray; zoom:70%;">
 
 Once you confirm, the data sync is disabled, and the data exchange between Contact Center AI and Community WFM stops.
 

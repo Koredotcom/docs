@@ -19,15 +19,15 @@ Before configuring external Gen AI models, ensure you have:
 
 ## Enabling Gen AI-Based Summarization
 
-1. Go to **Contact Center** > **CONFIGURATIONS** > **Advanced settings** > **LLM based Conversation Summary**.  
-    <img src="../images/advanced-settings-page-llm-based-conversation-summary.png" alt="LLM Based Conversation Summary" title="LLM Based Conversation Summary" style="border: 1px solid gray; zoom:80%;">
+1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Settings** > **Advanced settings** > **LLM based Conversation Summary**.  
+    <img src="../images/llm-based-conversation-summary.png" alt="LLM Based Conversation Summary" title="LLM Based Conversation Summary" style="border: 1px solid gray; zoom:70%;">
 
 2. Turn on the LLM based Conversation Summary toggle.
 3. Select your preferred summarization method:
-    * OOTB (Out-of-the-box) Kore Summarisation (Default)
+    * OOTB (Out-of-the-box) Kore Summarization (Default)
     * Using the model configured in the GenAI framework  
 
-        <img src="../images/options-conversation-summary.png" alt="Conversation Summary Options" title="Conversation Summary Options" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/options-conversation-summary.png" alt="Conversation Summary Options" title="Conversation Summary Options" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
