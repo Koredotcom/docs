@@ -110,9 +110,9 @@ This function transfers the call to an external contact number (telephone number
 
 Transfer the call to a third party using the utility in the message node with Run Automation from SmartAssist.
 
-message - Optional (Send Empty Message),  referTo - Required, headers - Optional
+message - Optional (Send Empty Message), referTo - Required, headers - Optional, referredBy - Optional
 
-**Syntax**: `print(voiceUtils.refer(message,ReferTo,headers,queueCommand))`
+**Syntax**: `print(voiceUtils.refer(message,ReferTo,headers,queueCommand,referredBy))`
 
 | **Options**    | **Description**                                                                                                     | **Type**  | **Required**           |
 |----------------|---------------------------------------------------------------------------------------------------------------------|-----------|-------------------------|
@@ -120,29 +120,62 @@ message - Optional (Send Empty Message),  referTo - Required, headers - Optional
 | ReferTo        | A SIP URI or a phone number/user identifier.                                                                       | String    | Yes                     |
 | headers        | Additional SIP headers to include in the response.                                                                 | Object    | NA                      |
 | queueCommand   | If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately. | Boolean   | NA (Default: True)      |
+| referredBy   | A SIP URI or a phone number/user identifier; if not provided, it will default to the identity of the party being transferred. | String   | NA      |
+
+!!! Note
+
+    * Parameters order must be maintained.
+    * Parameters after `referTo` are optional but must be passed in the correct sequence.
+    * If skipping `headers` but specifying `queueCommand` or `referredBy`, pass `null` or `{}` as placeholders accordingly.
 
 **Example**:
 
 ```
-1 Using all the options
+Base function 
+
+voiceUtils.refer(message: string,referTo: string,headers?:object,
+queueCommand?: boolean, referredBy?: string
+)
+
+
+
+
+
+1) Using all the options
 
 var message = "Transferring Call to xxxx number";
-var ReferTo = "+91xxxxxxxxxx";   // or sipUrl 
+var referTo = "+91xxxxxxxxxx";   // Can also be a SIP URL
+var headers = {
+    "X-Reason": "Call Received from Kore"
+};
+var queueCommand = true,
+var referredBy = "sip:xxxxxxxxx"
 
-var headers: {
-	"X-Reason" : "Call Received from ABC"
-}
+print(voiceUtils.refer(message, referTo, headers,queueCommand,referredBy));
 
-print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
-
-2 without Message and headers 
+2) without Message and headers 
 
 var message = "";
-print(voiceUtils.refer(message,ReferTo));
+var referTo = "+91xxxxxxxxxx";
+print(voiceUtils.refer(message, referTo));
 
-3 With QueueCommand
-  var message = "" , headers = {}, referTo = "sip:test@5060"
-print(voiceUtils.refer(message,ReferTo,headers,false));
+3) With QueueCommand (Passing false/true for the 4th parameter)
+
+var message = "";
+var headers = {};
+var referTo = "sip:test@5060";
+
+print(voiceUtils.refer(message, referTo, headers, false));
+
+) Passing ReferredBy Parameter (5th argument)
+var message = "";
+var headers = {};
+var referTo = "sip:test@5060";
+var referredBy = "+1411111";
+
+print(voiceUtils.refer(message, referTo, headers, false, referredBy));
+
+Note: Parameter order must be maintained.
 ```
 
 ### SIP Invite
