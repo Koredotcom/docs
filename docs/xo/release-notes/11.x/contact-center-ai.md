@@ -254,7 +254,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Real-time Sentiment Capture and Visualization**
 
-The Agent Console now displays real-time sentiment updates and a clickable graph visualizing emotional shifts over time, enabling agents to respond more quickly and empathetically during live conversations, enhancing the customer experience with actionable insights into sentiment trends as they occur. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/real-time-sentiment-analysis.md)
+The Agent Console now displays real-time sentiment updates and a clickable graph visualizing emotional shifts over time, enabling agents to respond more quickly and empathetically during live conversations, enhancing the customer experience with actionable insights into sentiment trends as they occur. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/real-time-sentiment-analysis.md)
 
 **Voice Issue Reporting Enhancement**
 
@@ -478,7 +478,7 @@ Key benefits
     * Leverage external AI models for more flexible and accurate conversation summaries.
     * Ensure consistent summarization across multiple languages and use cases.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md)
+[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-based-conversation-summary.md)
 
 **Enable/Disable Conversations to Wait Till Queue Timeout**
 
@@ -708,7 +708,7 @@ Contact Center supervisors can enable real-time streaming of LLM responses to si
 Key updates:
 
 * Real-time streaming of rephrased responses.
-* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md)
+* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md)
 * Role-based access controls (Full Access for Admins/Supervisors). [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 <font size="4">Campaigns</font>
@@ -1137,7 +1137,7 @@ Key benefits:
 
 **Improved Welcome Event Handling**
 
-The “Reject calls with a delayed first response” setting allows admins to configure call handling for smoother user experiences. When enabled, the welcome event triggers only after the Conversation Server successfully sends the first message, eliminating dead air during call connections. This ensures more reliable call handling and improves customer interactions with the platform. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/reject-calls-with-delayed-first-response.md)
+The “Reject calls with a delayed first response” setting allows admins to configure call handling for smoother user experiences. When enabled, the welcome event triggers only after the Conversation Server successfully sends the first message, eliminating dead air during call connections. This ensures more reliable call handling and improves customer interactions with the platform. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md)
 
 **Nuance ASR and TTS No Longer Supported**
 

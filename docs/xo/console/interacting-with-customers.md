@@ -908,7 +908,7 @@ Dispositions can be assigned in two ways:
 
 ### Translate Conversations in Real Time
 
-Agents can translate conversations in real time on the live interaction pane. Administrators can enable this functionality from [Translation Configurations](../contactcenter/configurations/advanced-settings/translation-configurations.md).
+Agents can translate conversations in real time on the live interaction pane. Administrators can enable this functionality from [Translation Configurations](../contactcenter/configurations/settings/translation-configurations.md).
 
 Steps to translate real-time conversations:
 
@@ -993,7 +993,7 @@ Steps to request supervisor assistance:
 
 ## Real Time Sentiment Capture
 
-Agents can view customers' real-time sentiments during digital conversations on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/advanced-settings/real-time-sentiment-analysis.md).  
+Agents can view customers' real-time sentiments during digital conversations on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).  
 <img src="../images/console-sentiment.png" alt="Sentiment" title="Sentiment" style="border: 1px solid gray; zoom:80%;">  
 
 When agents click the sentiment indicator, a graph appears, visually representing emotional fluctuations throughout the interaction. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses promptly, leading to improved empathy and more effective issue resolution. Agents can also customize the graph to focus on specific timeframes or sentiment ranges, allowing deeper analysis when needed.  

@@ -4,10 +4,10 @@ The “Customer” column in the Interactions Dashboard displays the User ID ins
 
 Steps to enable this functionality:
 
-1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Advanced Settings** > **Replace Customer Column Data With User ID**.  
-    <img src="../images/replace-customer-column-setting.png" alt="Replace Customer Column Data With User ID" title="Replace Customer Column Data With User ID" style="border: 1px solid gray; zoom:80%;">
+1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Settings** > **System Settings** > **Replace Customer Column Data With User ID**.  
+    <img src="../images/replace-column-data.png" alt="Replace Customer Column Data With User ID" title="Replace Customer Column Data With User ID" style="border: 1px solid gray; zoom:70%;">
 
 2. Turn on the toggle to enable this functionality.  
-    <img src="../images/replace-customer-enabled.png" alt="Replace Customer Column Data Enabled" title="Replace Customer Column Data Enabled" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/replace-customer-enabled.png" alt="Replace Customer Column Data Enabled" title="Replace Customer Column Data Enabled" style="border: 1px solid gray; zoom:70%;">  
 
     A confirmation is displayed, and the customer column is replaced with the User ID on the Interactions Dashboard. [Learn more](../../../analytics/contact-center/interactions.md).

@@ -4,8 +4,8 @@ Using configurable translation services, agents and supervisors can translate ca
 
 Steps to configure translation:
 
-1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Advanced Settings** > **Translation Configurations**.  
-    <img src="../images/translation-configuration.png" alt="Translation Configurations" title="Translation Configurations" style="border: 1px solid gray; zoom:70%;">
+1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Settings** > **Advanced Settings** > **Translation Configurations**.  
+    <img src="../images/transaltion-configurations.png" alt="Translation Configurations" title="Translation Configurations" style="border: 1px solid gray; zoom:70%;">
 
 2. Turn on the toggle to enable translations, enter the Microsoft Translator Access Key, and select the locations to activate the translator.  
     <img src="../images/configuration.png" alt="Configurations" title="Configurations" style="border: 1px solid gray; zoom:70%;">

@@ -14,7 +14,7 @@ To view the Interactions dashboard, follow the steps:
     * LANGUAGE (Icon): The language of the conversation.
     * CHANNEL (Icon): The Channel of the conversation – Voice, Chat, or Email.
 
-    If the Replace Customer column data with User ID functionality is enabled, the Customer column displays the User ID. [Learn more](../../contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md).  
+    If the Replace Customer column data with User ID functionality is enabled, the Customer column displays the User ID. [Learn more](../../contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md).  
     <img src="../images/user-id-column.png" alt="User ID Column" title="User ID Column" style="border: 1px solid gray; zoom:80%;">  
 
 * ACTIONS: You can download recordings and transcripts, and copy the following Identifiers:
