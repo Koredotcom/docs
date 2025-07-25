@@ -132,3 +132,9 @@ The Connection Path property offers three default variants:
 !!! Note
 
     Deflect to Chat works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
+
+<hr>
+
+**Related Links**
+* [Using Session and Context Variables in Tasks](../../../using-session-and-context-variables)
+* [Context Object](../../../intelligence/context-object.md)
