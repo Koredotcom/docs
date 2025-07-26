@@ -21,7 +21,7 @@ Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality
 
 * **Real-time Validation**: API integration ensures data accuracy and compliance. 
 
-* ** Flexible Configuration**: Static and dynamic evaluation options for various use cases.
+* **Flexible Configuration**: Static and dynamic evaluation options for various use cases.
 
 ## Evaluation Metrics Interface Elements
 
