@@ -22,9 +22,9 @@ The evaluation form includes chosen metrics with customizable weights totaling 1
 
 * **Channel-Specific Configuration**: Allows customization of evaluation settings for voice and chat channels.
 
-!!! note
-
-    You can assign only one evaluation form per queue in the **Chat** and **Voice** channels. 
+   !!! note 
+   
+      You can assign only one evaluation form per queue in the **Chat** and **Voice** channels. 
 
 ## Accessing Evaluation Forms
 
