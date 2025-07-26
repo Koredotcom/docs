@@ -75,7 +75,8 @@ Steps to configure general settings:
 
 2. Enter a short **Description** for the form (optional).
 
-3. Select a **Language** from the dropdown list.    
+3. Select a **Language** from the dropdown list.   
+<img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms1.png" alt="General Settings Page1" title="General Settings Page1" style="border: 1px solid gray; zoom:50%;">
 
 !!! note
 
@@ -88,8 +89,7 @@ Steps to configure general settings:
     * An **AND** condition applies across the selected languages. 
     
     * The dropdown list displays only metrics that support all configured languages, not metrics supporting just one. For example: If **English** and **Dutch** languages are selected, only metrics available in both languages appear.       
-   <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms1.png" alt="General Settings Page1" title="General Settings Page1" style="border: 1px solid gray; zoom:80%;">
-
+   
 4. Select a **Channel** mode (**Voice** or **Chat**) for this form. 
 
     * **Channel-Specific Display**:
@@ -106,7 +106,7 @@ Steps to configure general settings:
 ### Evaluation Metrics 
 
 This section lets you add and create evaluation metrics for each attribute configured and assigned to evaluation forms for the queue, interactions, and agents.    
-<img src="../evaluation-criteria/evaluation-forms/images/eva-settings-metrics.png" alt="Evaluation Metrics Configuration" title="Evaluation Metrics Configuration" style="border: 1px solid gray; zoom:80%;">
+<img src="../evaluation-criteria/evaluation-forms/images/eva-settings-metrics.png" alt="Evaluation Metrics Configuration" title="Evaluation Metrics Configuration" style="border: 1px solid gray; zoom:60%;">
 
  Steps to configure evaluation metrics:
 
@@ -168,7 +168,7 @@ Steps to configure assignments:
     * Each queue can have only one form associated with a single channel. 
     
     * The search list displays accessible queues for assignment. 
-   <img src="../evaluation-criteria/evaluation-forms/images/queues-create.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:80%;">
+   <img src="../evaluation-criteria/evaluation-forms/images/queues-create.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:60%;">
 
 4. Click **Create** to finalize form creation. 
 
@@ -185,7 +185,8 @@ Steps to configure assignments:
 ## Advanced Configuration
 
 ### Scoring Logic     
-    Forms are evaluated using weighted metrics assigned to agents. If the total score meets or exceeds the configured pass percentage, the form receives a **Pass** status. Scores below the threshold result in a **Fail** status. The pass score is calculated based on these weighted metrics and the priority level assigned to each form, as determined by the supervisor.#
+
+    Forms are evaluated using weighted metrics assigned to agents. If the total score meets or exceeds the configured pass percentage, the form receives a **Pass** status. Scores below the threshold result in a **Fail** status. The pass score is calculated based on these weighted metrics and the priority level assigned to each form, as determined by the supervisor.
 
 ### Configuration Logic 
 
@@ -263,11 +264,11 @@ Fatal Error configuration identifies metrics that are crucial to compliance or f
 
 Under the following circumstances, a fatal error is triggered:
 
-    * The agent fails to follow the configured process throughout the conversation.
+* The agent fails to follow the configured process throughout the conversation.
 
-    * The agent behaves rudely during the entire interaction.
+* The agent behaves rudely during the entire interaction.
 
-    * The agent skips any safety-critical or any mandatory steps. 
+* The agent skips any safety-critical or any mandatory steps. 
 
 #### Fatal Error Triggers
 
@@ -296,7 +297,7 @@ Steps to edit the existing evaluation forms:
       <img src="../evaluation-criteria/evaluation-forms/images/edit-evaluation-form.png" alt="Edit Evaluation Fomrs" title="Edit Evaluation Fomrs" style="border: 1px solid gray; zoom:80%;">
 
 3. Modify the required fields.   
-   <img src="../evaluation-criteria/evaluation-forms/images/edit-eva-form-field-details.png" alt="Modify Evaluation Fomrs" title="Modify Evaluation Fomrs" style="border: 1px solid gray; zoom:60%;">
+   <img src="../evaluation-criteria/evaluation-forms/images/edit-eva-form-field-details.png" alt="Modify Evaluation Fomrs" title="Modify Evaluation Fomrs" style="border: 1px solid gray; zoom:50%;">
 
 4. Click **Next** to update the required evaluation metrics fields.
 
@@ -318,9 +319,9 @@ Steps to delete an evaluation metric:
 
 4. Click **Next** to proceed to the **Assignments** section.
 
-   !!! Note
-   
-       Deleting a form results in the irreversible loss of all associated data.
+!!! note
+
+    Deleting a form results in the irreversible loss of all associated data.
 
 ## Warnings and Error Messages
 
@@ -345,7 +346,7 @@ To resolve this, perform the following actions:
 * Once all metrics support the language, add the language to the form.   
    <img src="../evaluation-criteria/evaluation-forms/images/edit-lang-config.png" alt="Language Configuration Error" title="Language Configuration Error" style="border: 1px solid gray; zoom:80%;">
 
-#### Language Limitation on Adding New Language (Metric-Level)
+#### Language Limitation on Adding New Language 
 
 * This warning appears when you try to use metrics within a form that do not support a language already configured at the form level. For example, the form already includes a language, such as **Hindi**, but some metrics being added or updated are not configured to support Hindi.
 
