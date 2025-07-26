@@ -24,7 +24,7 @@ The evaluation form includes chosen metrics with customizable weights totaling 1
 
    !!! note 
    
-      You can assign only one evaluation form per queue in the **Chat** and **Voice** channels. 
+       You can assign only one evaluation form per queue in the **Chat** and **Voice** channels. 
 
 ## Accessing Evaluation Forms
 
@@ -186,11 +186,11 @@ Steps to configure assignments:
 
 ### Scoring Logic     
 
-    Forms are evaluated using weighted metrics assigned to agents. If the total score meets or exceeds the configured pass percentage, the form receives a **Pass** status. Scores below the threshold result in a **Fail** status. The pass score is calculated based on these weighted metrics and the priority level assigned to each form, as determined by the supervisor.
+Forms are evaluated using weighted metrics assigned to agents. If the total score meets or exceeds the configured pass percentage, the form receives a **Pass** status. Scores below the threshold result in a **Fail** status. The pass score is calculated based on these weighted metrics and the priority level assigned to each form, as determined by the supervisor.
 
 ### Configuration Logic 
 
-    Configuration logic is defined at the form level and directly influences how weightage validation is applied. It supports both training-based and generation-based adherence detection methods. Validation is automatically enforced based on the designated Correct Response setting.
+Configuration logic is defined at the form level and directly influences how weightage validation is applied. It supports both training-based and generation-based adherence detection methods. Validation is automatically enforced based on the designated Correct Response setting.
 
 #### Logic Rules
 
