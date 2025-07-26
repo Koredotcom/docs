@@ -51,9 +51,9 @@ The evaluation forms has the following options:
 
 * **Search**: Provides a quick search option to view and update the Evaluation Forms by name. 
 
-!!! note
+    !!! note
 
-    Enable Auto QA in the Quality AI Settings before creating evaluation forms.
+        Enable Auto QA in the Quality AI Settings before creating evaluation forms.
 
 ### Create a New Evaluation Form
 
@@ -78,17 +78,17 @@ Steps to configure general settings:
 3. Select a **Language** from the dropdown list.   
 <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms1.png" alt="General Settings Page1" title="General Settings Page1" style="border: 1px solid gray; zoom:50%;">
 
-!!! note
+    !!! note
 
-    To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality AI. 
-    
-    * Supports multi-language selection. 
-    
-    * Only **By‑Question** metrics that are configured for all selected languages are shown. 
-    
-    * An **AND** condition applies across the selected languages. 
-    
-    * The dropdown list displays only metrics that support all configured languages, not metrics supporting just one. For example: If **English** and **Dutch** languages are selected, only metrics available in both languages appear.       
+        To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality AI. 
+        
+        * Supports multi-language selection. 
+        
+        * Only **By‑Question** metrics that are configured for all selected languages are shown. 
+        
+        * An **AND** condition applies across the selected languages. 
+        
+        * The dropdown list displays only metrics that support all configured languages, not metrics supporting just one. For example: If **English** and **Dutch** languages are selected, only metrics available in both languages appear.       
    
 4. Select a **Channel** mode (**Voice** or **Chat**) for this form. 
 
@@ -118,9 +118,9 @@ This section lets you add and create evaluation metrics for each attribute confi
 3. Click **Edit** to assign weightage to each agent attribute based on importance.    
 <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-edit.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+    !!! note
 
-    The metrics list displays only metrics configured for all selected form languages or chosen channels.
+        The metrics list displays only metrics configured for all selected form languages or chosen channels.
 
 4. Choose the **Correct Response** to identify the correct answer for validation. 
 
@@ -163,11 +163,11 @@ Steps to configure assignments:
 
 3. You can add or remove the listed queue assignments if required.
 
-!!! note
+    !!! note
 
-    * Each queue can have only one form associated with a single channel. 
-    
-    * The search list displays accessible queues for assignment. 
+        * Each queue can have only one form associated with a single channel. 
+        
+        * The search list displays accessible queues for assignment. 
    <img src="../evaluation-criteria/evaluation-forms/images/queues-create.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:60%;">
 
 4. Click **Create** to finalize form creation. 
@@ -319,9 +319,9 @@ Steps to delete an evaluation metric:
 
 4. Click **Next** to proceed to the **Assignments** section.
 
-!!! note
+    !!! note
 
-    Deleting a form results in the irreversible loss of all associated data.
+        Deleting a form results in the irreversible loss of all associated data.
 
 ## Warnings and Error Messages
 
@@ -373,11 +373,11 @@ To resolve this, do the following:
 
 Evaluation forms support only one speech metric per subtype; **Crosstalk**, **Dead Air**, or **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message.
 
-!!! Note
+    !!! note
 
-    * Only one metric of each type you can add at a time. 
-    
-    * You must remove or delete the existing metric of that type to proceed.
+        * Only one metric of each type you can add at a time.  
+        
+        * You must remove or delete the existing metric of that type to proceed.
 
 #### Speech Metric Errors
 

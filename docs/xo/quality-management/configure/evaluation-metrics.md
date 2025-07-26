@@ -1,28 +1,50 @@
 # Evaluation Metrics
 
-This phase is entirely based on individual questions .  It allows you to create custom evaluation criteria across different measurement types. You can create Evaluation Metrics in the Evaluation Forms section utilizing these different measurement types.
+This feature is a key component of the Quality AI module, enabling supervisors to define, customize, and monitor performance indicators that measure the quality of agent-customer interactions. This comprehensive system supports six distinct measurement types, each designed for specific evaluation needs through a combination of advanced AI-driven analysis and traditional rule-based methods. 
 
-You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
+Users can build and manage custom evaluation criteria using these measurement types within the **Evaluation Forms** section. Among the options is a GenAI-powered adherence metric, which streamlines setup by minimizing the need for large training datasets. This approach improves scalability across multiple languages and diverse agent interactions.
+
+## Access Evaluation Metrics
+
+Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
 <img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
-The Evaluation Metrics has the following options:
+## Key Benefits
+
+* **AI-Powered Intelligence**: GenAI-based adherence reduces dependency on extensive training datasets.
+
+* **Comprehensive Coverage**: Six measurement types address diverse evaluation scenarios.
+
+* **Multilingual Scalability**: Enhanced support across different languages and interactions.
+
+* **Automated Quality Assurance**: Reduces manual review workload through intelligent analysis.
+
+* **Real-time Validation**: API integration ensures data accuracy and compliance.
+
+*** Flexible Configuration**: Static and dynamic evaluation options for various use cases.
+
+## Evaluation Metrics Interface Elements
+
+The Interface displays the following elements:
 
 * **Name**: Shows the name of the Evaluation Metrics.
-* **Metric Type**: Shows the Evaluation Metrics Type (Measurement Type) selected.
-* **Evaluation Forms**: Shows the Evaluation Forms used for configuring and assigning the evaluation metrics to different channels and queues.
-* **Edit**: Allows you to edit or update the existing Evaluation Metrics.
-* **Delete**: Allows you to select and delete any Evaluation Metrics shown on the Evaluation Forms page.
-* **Search**: Provides a quick search option to view and update the Evaluation Metrics by name only.
 
-## Add New Evaluation Metrics
+* **Metric Type**: Indicates the type of measurement used.
 
-You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
-<img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">  
+* **Evaluation Forms**: Shows all associated evaluation forms, which are used for configuring and assigning the evaluation metrics to different channels and queues.
+
+* **Ellipsis Icon**: Provides an option to edit and delete the metrics. 
+
+* **Search**: Provides a quick search to view and modify the required metrics.	
+
+* **New Evaluation Metrics**: Enables configuration of new metrics. 
+
+## Create New Evaluation Metrics
 
 Steps to create New Evaluation Metrics:
 
-1. Click the **New Evaluation Metric** button in the upper-right corner to configure the most commonly used evaluation metrics. The following screen appears, allowing you to select a type of evaluation metrics measurement.  
-<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">
+1. Click the **New Evaluation Metric** tab to access the evaluation metrics.  
+<img src="./evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the type of Evaluation Metrics Measurement, such as **By Question**, **By Speech**, **By Playbook Adherence**, and **By Dialog Task**.
 
