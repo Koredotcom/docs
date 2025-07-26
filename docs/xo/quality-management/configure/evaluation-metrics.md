@@ -43,14 +43,14 @@ The Interface displays the following elements:
 
 Steps to create new evaluation metrics:
 
-1. Click the **Evaluation Metric** tab to access the evaluation metrics.    
-<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">
+1. Select the **Evaluation Metrics** tab.    
+<img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics-tab-selection.png" alt="Evaluation Metric" title="MEvaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **+ New Evaluation Metric** displayed in the upper-right corner.    
 <img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
 3. Configure the metrics based on your measurement type requirements.    
-<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:60%;
+<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
 ">
 
 ## Metrics Configuration Elements
