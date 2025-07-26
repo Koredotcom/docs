@@ -1,4 +1,4 @@
-# Evaluation
+# Evaluation Overview
 
 The evaluation phase of the Quality AI process improves customer experience by allowing QA managers to set tailored evaluation criteria for agents, aligning with each contact center's unique operational structure. It facilitates structured performance assessments across multiple channels, such as voice and chat.
 
@@ -14,7 +14,7 @@ The evaluation forms are designed to check adherence to individual questions. Th
 
 The evaluation form includes chosen metrics with customizable weights totaling 100%. The evaluation forms are configured and assigned to respective channels and queues for audit. Each queue in the Chat and Voice channels can host only one evaluation form.
 
-### **Key Features**
+### Key Features
 
 * **Multi-language Support**: Delivers evaluations to different languages with relevant, localized metrics for accurate global team assessments.
 
@@ -22,16 +22,16 @@ The evaluation form includes chosen metrics with customizable weights totaling 1
 
 * **Channel-Specific Configuration**: Allows customization of evaluation settings for voice and chat channels.
 
-   !!! note     
-        
-       You can assign only one evaluation form per queue in the **Chat** and **Voice** channels. 
+!!! note
 
-## Access Evaluation Forms
+    You can assign only one evaluation form per queue in the **Chat** and **Voice** channels. 
+
+## Accessing Evaluation Forms
 
 Access the Evaluation Forms by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms**.    
 <img src="../evaluation-criteria/evaluation-forms/images/evaluation-forms.png" alt="Evaluation Forms Tab" title="Evaluation Forms Tab" style="border: 1px solid gray; zoom:80%;">
 
-## Evaluation Forms Interface Elements
+## Creating and Configuring Evaluation Forms
 
 The evaluation forms has the following options:
 
@@ -49,11 +49,11 @@ The evaluation forms has the following options:
 
 * **Status**: Enables or disables scoring for the individual Evaluation Form. Note that you must enable this form to start scoring. 
 
-* **Search**: Provides a quick search option to view and update the Evaluation Forms by name.
+* **Search**: Provides a quick search option to view and update the Evaluation Forms by name. 
 
-   !!! note     
-        
-       Enable Auto QA in the Quality AI Settings before creating evaluation forms.
+!!! note
+
+    Enable Auto QA in the Quality AI Settings before creating evaluation forms.
 
 ### Create a New Evaluation Form
 
@@ -65,7 +65,7 @@ Steps to create a new evaluation form:
 2. Click the **+ New Evaluation Form** displayed in the upper-right corner.    
    <img src="../evaluation-criteria/evaluation-forms/images/new-eva-form-selection.png" alt="New Evaluation Forms" title="New Evaluation Forms" style="border: 1px solid gray; zoom:80%;">
 
-### General Settings Configuration
+### General Settings
 
 This section configures the general settings for the new evaluation form.
 
@@ -77,16 +77,18 @@ Steps to configure general settings:
 
 3. Select a **Language** from the dropdown list.    
 
-   !!! note     
-        
-       * Supports multi-language selection. 
+!!! note
+
+    To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality AI. 
     
-       * Only **By‑Question** metrics that are configured for all selected languages are shown. 
+    * Supports multi-language selection. 
     
-       * An **AND** condition applies across the selected languages. 
+    * Only **By‑Question** metrics that are configured for all selected languages are shown. 
     
-       * The dropdown list displays only metrics that support all configured languages, not metrics supporting just one. For example: If **English** and **Dutch** languages are selected, only metrics available in both languages appear.      
-      <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms1.png" alt="General Settings Page1" title="General Settings Page1" style="border: 1px solid gray; zoom:80%;">
+    * An **AND** condition applies across the selected languages. 
+    
+    * The dropdown list displays only metrics that support all configured languages, not metrics supporting just one. For example: If **English** and **Dutch** languages are selected, only metrics available in both languages appear.       
+   <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms1.png" alt="General Settings Page1" title="General Settings Page1" style="border: 1px solid gray; zoom:80%;">
 
 4. Select a **Channel** mode (**Voice** or **Chat**) for this form. 
 
@@ -101,7 +103,7 @@ Steps to configure general settings:
 
  6. Click **Next** to move to the **Evaluation Metrics** section.
     
-### Evaluation Metrics Configuration
+### Evaluation Metrics 
 
 This section lets you add and create evaluation metrics for each attribute configured and assigned to evaluation forms for the queue, interactions, and agents.    
 <img src="../evaluation-criteria/evaluation-forms/images/eva-settings-metrics.png" alt="Evaluation Metrics Configuration" title="Evaluation Metrics Configuration" style="border: 1px solid gray; zoom:80%;">
@@ -113,12 +115,12 @@ This section lets you add and create evaluation metrics for each attribute confi
 
 2. Click **Add Evaluation Metrics** to add the selected metrics. 
 
-3. Click **Edit** to assign weightage to each agent attribute based on importance.       
-   <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-edit.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:80%;">
+3. Click **Edit** to assign weightage to each agent attribute based on importance.    
+<img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-edit.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:80%;">
 
-   !!! note     
-        
-       The metrics list displays only metrics configured for all selected form languages or chosen channels.
+!!! note
+
+    The metrics list displays only metrics configured for all selected form languages or chosen channels.
 
 4. Choose the **Correct Response** to identify the correct answer for validation. 
 
@@ -148,7 +150,7 @@ This section lets you add and create evaluation metrics for each attribute confi
        
 8. Click **Next** to move to the **Assignments** section. 
 
-### Assignments Configuration
+### Assignments 
 
 This section enables you to create and evaluate the assignments made.   
 <img src="../evaluation-criteria/evaluation-forms/images/assignments-create.png" alt="Assignments Configuration" title="Assignments Configuration" style="border: 1px solid gray; zoom:50%;">
@@ -161,12 +163,12 @@ Steps to configure assignments:
 
 3. You can add or remove the listed queue assignments if required.
 
-   !!! Note
+!!! note
 
-      * Each queue can have only one form associated with a single channel.
-      
-      * The search list displays accessible queues for assignment.            
-      <img src="../evaluation-criteria/evaluation-forms/images/queues-create.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:80%;">
+    * Each queue can have only one form associated with a single channel. 
+    
+    * The search list displays accessible queues for assignment. 
+   <img src="../evaluation-criteria/evaluation-forms/images/queues-create.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Create** to finalize form creation. 
 
@@ -180,14 +182,16 @@ Steps to configure assignments:
 
    * You must enable the form to start scoring.
 
+## Advanced Configuration
+
 ### Scoring Logic     
     Forms are evaluated using weighted metrics assigned to agents. If the total score meets or exceeds the configured pass percentage, the form receives a **Pass** status. Scores below the threshold result in a **Fail** status. The pass score is calculated based on these weighted metrics and the priority level assigned to each form, as determined by the supervisor.#
 
-### Configuration Logic
+### Configuration Logic 
 
-Configuration logic is defined at the form level and directly influences how weightage validation is applied. It supports both training-based and generation-based adherence detection methods. Validation is automatically enforced based on the designated Correct Response setting.
+    Configuration logic is defined at the form level and directly influences how weightage validation is applied. It supports both training-based and generation-based adherence detection methods. Validation is automatically enforced based on the designated Correct Response setting.
 
-##### Configuration Logic Rules
+#### Logic Rules
 
 **Positive Metrics** (**Correct Response** = **Yes**)
 
@@ -249,7 +253,9 @@ When editing evaluation metrics, you can assign weights based on how important e
 
 The system calculates conversation scores using weighted metrics. If a score goes below -100, it is capped at -100 to keep scoring consistent.
 
-#### Fatal Error Configuration
+## Error Handling and Logic Enforcement
+
+### Fatal Error Configuration
 
 Fatal Error configuration identifies metrics that are crucial to compliance or functional requirements. When enabled, these metrics can override the entire conversation score regardless of other metric performance.
 
@@ -275,7 +281,7 @@ Under the following circumstances, a fatal error is triggered:
 
 **Use Cases**: Compliance requirements, disclaimer delivery, critical functional requirements.
 
-### Managing Evaluation Forms
+### Managing Existing Evaluation Forms
 
 This section guides you through the process of updating (editing or deleting) an existing evaluation form.
 
@@ -298,7 +304,27 @@ Steps to edit the existing evaluation forms:
 
 6. Click **Update** to save the modified fields.
 
-#### Language Configuration Warnings
+#### Deleting Existing Evaluation Metrics
+
+Steps to delete an evaluation metric:
+
+1. Search and select evaluation metrics.    
+   <img src="../evaluation-criteria/evaluation-forms/images/eva-metrics-delete.png" alt="Dead Air Warning" title="Dead Air Warning" style="border: 1px solid gray; zoom:50%;">   
+
+2. Click **Delete** to display a warning dialog box prompting you to update the weights for the remaining metrics.     
+   <img src="../evaluation-criteria/evaluation-forms/images/delete-eva-metric.png" alt="Delete Metrics" title="Delete Metrics" style="border: 1px solid gray; zoom:80%;">
+
+3. Update the required metric weights as prompted.
+
+4. Click **Next** to proceed to the **Assignments** section.
+
+   !!! Note
+   
+       Deleting a form results in the irreversible loss of all associated data.
+
+## Warnings and Error Messages
+
+### Language Configuration Warnings
 
 This section describes the rules, warnings, and error messages related to adding or removing any languages in the evaluation form based on their metric and form level configurations.
 
@@ -319,7 +345,7 @@ To resolve this, perform the following actions:
 * Once all metrics support the language, add the language to the form.   
    <img src="../evaluation-criteria/evaluation-forms/images/edit-lang-config.png" alt="Language Configuration Error" title="Language Configuration Error" style="border: 1px solid gray; zoom:80%;">
 
-#### Adding a New Language Error (Metric-Level Language Limitation)
+#### Language Limitation on Adding New Language (Metric-Level)
 
 * This warning appears when you try to use metrics within a form that do not support a language already configured at the form level. For example, the form already includes a language, such as **Hindi**, but some metrics being added or updated are not configured to support Hindi.
 
@@ -329,7 +355,7 @@ To resolve this, do the following:
 
 * **Option 2**: Choose different metrics that are already configured to support the required language.
 
-#### Channel Mode Change Warning
+### Channel Mode Change Warning
 
 * When you switch to any existing or preconfigured channel modes between **Voice** and **Chat**, a warning message appears related to the specific channel's associated metrics.
 
@@ -342,7 +368,7 @@ To resolve this, do the following:
     * Click **Update** to save the evaluation form changes once all the updates are done.    
       <img src="../evaluation-criteria/evaluation-forms/images/channel-update-error.png" alt="Channel Update Error" title="Channel Update Error" style="border: 1px solid gray; zoom:50%;">   
 
-##### Speech Metric Addition Limitation
+#### Speech Metric Addition Limitation
 
 Evaluation forms support only one speech metric per subtype; **Crosstalk**, **Dead Air**, or **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message.
 
@@ -352,7 +378,7 @@ Evaluation forms support only one speech metric per subtype; **Crosstalk**, **De
     
     * You must remove or delete the existing metric of that type to proceed.
 
-##### Speech Metric Errors
+#### Speech Metric Errors
 
 **Crosstalk Warning**     
 <img src="../evaluation-criteria/evaluation-forms/images/crosstalk-error.png" alt="Crosstalk Warning" title="Crosstalk Warning" style="border: 1px solid gray; zoom:80%;">   
@@ -362,21 +388,3 @@ Evaluation forms support only one speech metric per subtype; **Crosstalk**, **De
 
 **Speaking Rate** **Warning**   
 <img src="../evaluation-criteria/evaluation-forms/images/speech-rate-error.png" alt="Dead Air Warning" title="Dead Air Warning" style="border: 1px solid gray; zoom:80%;">   
-
-#### Delete Existing Evaluation Metrics
-
-Steps to delete an evaluation metric:
-
-1. Search and select evaluation metrics.    
-   <img src="../evaluation-criteria/evaluation-forms/images/eva-metrics-delete.png" alt="Dead Air Warning" title="Dead Air Warning" style="border: 1px solid gray; zoom:50%;">   
-
-2. Click **Delete** to display a warning dialog box prompting you to update the weights for the remaining metrics.     
-   <img src="../evaluation-criteria/evaluation-forms/images/delete-eva-metric.png" alt="Delete Metrics" title="Delete Metrics" style="border: 1px solid gray; zoom:80%;">
-
-3. Update the required metric weights as prompted.
-
-4. Click **Next** to proceed to the **Assignments** section.
-
-   !!! Note
-   
-       Deleting a form results in the irreversible loss of all associated data.
