@@ -245,7 +245,7 @@ Steps to edit or delete existing Evaluation Metrics:
 1. Right-click on any existing **Evaluation Metric Type** to choose a measurement type, such as **By Question**, **By Value**.    
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.    
+2. Click **Edit** to update any one of the selected **Edit Evaluation Metrics** measurement type fields.    
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Delete** to remove the selected evaluation metric.
