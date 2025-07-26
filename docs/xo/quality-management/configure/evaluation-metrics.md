@@ -41,12 +41,13 @@ The Interface displays the following elements:
 
 ## Create New Evaluation Metrics
 
-Steps to create New Evaluation Metrics:
+Steps to create new evaluation metrics:
 
-1. Click the **New Evaluation Metric** tab to access the evaluation metrics.  
-<img src="./evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">
+1. Click the **Evaluation Metric** tab to access the evaluation metrics.  
+<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">
 
-2. Select the type of Evaluation Metrics Measurement, such as **By Question**, **By Speech**, **By Playbook Adherence**, and **By Dialog Task**.
+2. Click the **+ New Evaluation Metric** displayed in the upper-right corner.
+<img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
 The following table describes the Evaluation Metrics Measurement Types:
 

@@ -90,7 +90,7 @@ Steps to configure general settings:
         
         * The dropdown list displays only metrics that support all configured languages, not metrics supporting just one. For example: If **English** and **Dutch** languages are selected, only metrics available in both languages appear.       
    
-4. Select a **Channel** mode (**Voice** or **Chat**) for this form. 
+4. Select a **Channel** mode for this form. 
 
     * **Channel-Specific Display**:
 
@@ -371,7 +371,7 @@ To resolve this, do the following:
 
 #### Speech Metric Addition Limitation
 
-Evaluation forms support only one speech metric per subtype; **Crosstalk**, **Dead Air**, or **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message.
+Evaluation forms support only one speech metric per subtype; **Crosstalk**, **Dead Air**, **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message.
 
     !!! note
 
