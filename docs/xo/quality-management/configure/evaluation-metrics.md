@@ -92,7 +92,7 @@ The following six measurement types are:
 
 For the detailed configuration, see [By Question](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-question.md).
 
-2. **By Speech - Audio Quality Analysis**
+1. **By Speech - Audio Quality Analysis**
 
 **Purpose**: Analyze speech characteristics and audio quality metrics during voice interactions.
 
@@ -114,7 +114,7 @@ For the detailed configuration, see [By Question](../configure/evaluation-criter
 
 For the detailed configuration, see see [By Speech](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-speech.md).
 
-3. **By Value - Data Accuracy Verification**
+1. **By Value - Data Accuracy Verification**
 
 **Purpose**: Verify agent-shared customer-specific information against trusted data sources.
 
@@ -144,7 +144,7 @@ For the detailed configuration, see see [By Speech](../configure/evaluation-crit
 
 For the detailed configuration, see .
 
-4. **By Dialog Execution - Task Completion Assessment**
+1. **By Dialog Execution - Task Completion Assessment**
 
 **Purpose**: Evaluate completion and quality of specific dialog tasks and workflows.
 
@@ -160,7 +160,7 @@ For the detailed configuration, see .
 
 For the detailed configuration, see see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-diaolog-execution.md).
 
-5. **By Playbook Adherence - Process Compliance Evaluation**
+1. **By Playbook Adherence - Process Compliance Evaluation**
 
 **Purpose**: Assess compliance with predefined agent playbooks and procedures.
 
@@ -184,9 +184,9 @@ For the detailed configuration, see see [By Dialog Task](../configure/evaluation
 
 **Used For**: Process compliance, procedure adherence, and standardization enforcement.
 
-For the detailed configuration, see see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-playbook-adherence.md).
+For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-playbook-adherence.md).
 
-6. **By AI Agent - Advanced Reasoning Evaluation**
+* **By AI Agent - Advanced Reasoning Evaluation**
 
 **Purpose**: Enables sophisticated evaluations using AI agents capable of multi-step reasoning and autonomous decision-making.
 
