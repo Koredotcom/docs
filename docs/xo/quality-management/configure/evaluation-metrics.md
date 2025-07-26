@@ -19,9 +19,9 @@ Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality
 
 * **Automated Quality Assurance**: Reduces manual review workload through intelligent analysis.
 
-* **Real-time Validation**: API integration ensures data accuracy and compliance.
+* **Real-time Validation**: API integration ensures data accuracy and compliance. 
 
-*** Flexible Configuration**: Static and dynamic evaluation options for various use cases.
+* ** Flexible Configuration**: Static and dynamic evaluation options for various use cases.
 
 ## Evaluation Metrics Interface Elements
 
@@ -142,7 +142,7 @@ For the detailed configuration, see see [By Speech](../configure/evaluation-crit
 
 **Used For**: Pricing accuracy, interest rate verification, account balance confirmation, and compliance validation.
 
-For the detailed configuration, see .
+For the detailed configuration, see [By Value](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-value.md).
 
 1. **By Dialog Execution - Task Completion Assessment**
 
@@ -158,7 +158,7 @@ For the detailed configuration, see .
 
 **Used For**: Workflow adherence, task completion verification, and dialog flow optimization.
 
-For the detailed configuration, see see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-diaolog-execution.md).
+For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-diaolog-execution.md).
 
 1. **By Playbook Adherence - Process Compliance Evaluation**
 
@@ -184,7 +184,7 @@ For the detailed configuration, see see [By Dialog Task](../configure/evaluation
 
 **Used For**: Process compliance, procedure adherence, and standardization enforcement.
 
-For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-playbook-adherence.md).
+For the detailed configuration, see [By Playbook Adherence](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-playbook-adherence.md).
 
 * **By AI Agent - Advanced Reasoning Evaluation**
 
