@@ -507,8 +507,8 @@ nav:
         - Evaluation Criteria:
             - Evaluation Forms: quality-management/configure/evaluation-forms.md
             - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
-        - Coaching Assignments: 
-            - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
+        - Metrics Measurement Types: 
+            - By Question: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-question.md
             - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
 
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
