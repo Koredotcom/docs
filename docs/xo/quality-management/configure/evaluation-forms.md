@@ -371,13 +371,13 @@ To resolve this, do the following:
 
 #### Speech Metric Addition Limitation
 
-Evaluation forms support only one speech metric per subtype; **Crosstalk**, **Dead Air**, **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message.
+Evaluation forms support only one speech metric per subtype; **Crosstalk**, **Dead Air**, **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message. 
 
-    !!! note
-
-        * Only one metric of each type you can add at a time.  
+!!! note
+   
+   * Only one metric of each type you can add at a time.  
         
-        * You must remove or delete the existing metric of that type to proceed.
+   * You must remove or delete the existing metric of that type to proceed.
 
 #### Speech Metric Errors
 
