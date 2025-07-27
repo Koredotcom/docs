@@ -112,14 +112,14 @@ Dynamic Adherence is a context-sensitive method to evaluate agent performance ba
 
     * **Lower Threshold**: Should close to 60% (Yellow) for casual interactions, greetings.
 
-    * **Higher Threshold**: Must close to 100% (Green**)** for critical topics, such as legal disclaimers or privacy policies. 
+    * **Higher Threshold**: Must close to 100% (Green) for critical topics, such as legal disclaimers or privacy policies. 
     
     * Once a trigger is detected, the system evaluates whether the agent responded with one of the pre-defined acceptable utterances.  
-    <img src="../images/by-question-adhere-type1.png" alt="Question and Adherence Type" title="Question and Adherence Type" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/by-question-adhere-type1.png" alt="Question and Adherence Type" title="Question and Adherence Type" style="border: 1px solid gray; zoom:70%;"> 
+    
+      !!! Note
 
-!!! Note
-
-    For **Dynamic**, configure at least one **Trigger** and one agent **Answer** utterance for the adherence type. 
+          For **Dynamic**, configure at least one **Trigger** and one agent **Answer** utterance for the adherence type. 
 
 8. Choose utterance source for **Trigger** (who initiates the trigger).
 
@@ -151,9 +151,9 @@ Provides the following two options to select based on the trigger created by **A
 
 The GenAI-based features are activated only when the following conditions are enabled:
 
-   1. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
+   a. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
 
-   2. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Publish](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components):
+   b. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Publish](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components):
 
        * **GenAI-based agent answer adherence**
 
@@ -164,11 +164,11 @@ The GenAI-based features are activated only when the following conditions are en
 
 #### Agent Answer Configuration
 
-     10.1. **GenAI-Based Adherence**: Use AI and natural language understanding (LLM) to detect meaning, context, and intent. This evaluates whether the agent's answer fulfills the **intents**, even if phrased differently.
+* **GenAI-Based Adherence**: Use AI and natural language understanding (LLM) to detect meaning, context, and intent. This evaluates whether the agent's answer fulfills the **intents**, even if phrased differently.
 
-     10.2. **Deterministic Adherence**: This relies on an **ML-based** method using the semantic similarity.
+* **Deterministic Adherence**: This relies on an **ML-based** method using the semantic similarity.
 
-     10.3. **Description**: Enter a prompt **Description** to check the agent's intent accuracy, phrasing response, and adherence. 
+* **Description**: Enter a prompt **Description** to check the agent's intent accuracy, phrasing response, and adherence. 
 
 ##### GenAI-Based Adherence
 
@@ -176,20 +176,20 @@ Uses Generative AI to automatically evaluate agent responses by understanding na
 
 **Agent Answer**:
 
-    10.4. Select an **Answer Detection Method** to evaluate whether agents respond according to the prompt’s intent. This uses a probabilistic LLM-based method and requires no model training.
+a. Select an **Answer Detection Method** to evaluate whether agents respond according to the prompt’s intent. This uses a probabilistic LLM-based method and requires no model training.
 
-    10.5. Enable the **GenAI-Based Adherence**. Use a **Large Language Model** (LLM) to detect trigger phrases and evaluate adherence using contextual understanding.
+b. Enable the **GenAI-Based Adherence**. Use a **Large Language Model** (LLM) to detect trigger phrases and evaluate adherence using contextual understanding.
 
-    10.6. Enter a prompt **Description** explaining the metric’s intent or details behind the adherence metric. This applies to all selected languages.
-   <img src="../images/by-question-agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:70%;">
+c. Enter a prompt **Description** explaining the metric’s intent or details behind the adherence metric. This applies to all selected languages.
+<img src="../images/by-question-agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:70%;">
 
-   !!! Note
+!!! Note
         
-       * Before assessing GenAI-based adherence responses, ensure that the [supported model](https://docs.kore.ai/xo/generative-ai-tools/models-library/#configure-pre-built-llm-integration) and [features](https://docs.kore.ai/xo/generative-ai-tools/genai-features/), including GenAI-based agent answer adherence and customer trigger detection, are enabled for the respective products in the GenAI features section. [Learn more](https://docs.kore.ai/xo/generative-ai-tools/genai-features/).
+    * Before assessing GenAI-based adherence responses, ensure that the [supported model](https://docs.kore.ai/xo/generative-ai-tools/models-library/#configure-pre-built-llm-integration) and [features](https://docs.kore.ai/xo/generative-ai-tools/genai-features/), including GenAI-based agent answer adherence and customer trigger detection, are enabled for the respective products in the GenAI features section. [Learn more](https://docs.kore.ai/xo/generative-ai-tools/genai-features/).
             
-       * No example utterances or similarity thresholds are required; LLMs evaluate adherence contextually using zero-shot prompts.
+    * No example utterances or similarity thresholds are required; LLMs evaluate adherence contextually using zero-shot prompts.
             
-       * For effective prompts and LLM-based adherence detection, [Learn more](https://docs.google.com/document/d/1_7l12CETtFmXbYuNb7WtTpJbR6i4LZcz37tZpE_GVeY/edit?usp=sharing). 
+    * For effective prompts and LLM-based adherence detection, [Learn more](https://docs.google.com/document/d/1_7l12CETtFmXbYuNb7WtTpJbR6i4LZcz37tZpE_GVeY/edit?usp=sharing). 
 
 ##### Deterministic Adherence
 
@@ -197,9 +197,9 @@ Evaluates agent responses based on semantic similarity to predefined sample utte
 
 #### Agent Answer Configuration
 
-     10.7 Select **Deterministic Adherence** to assess responses based on similarity to sample answers. Encoder-based mode lets you define expected replies.                
+a. Select **Deterministic Adherence** to assess responses based on similarity to sample answers. Encoder-based mode lets you define expected replies.                
 
-     10.8 Define an **Answer** as a set of acceptable utterances for each queue, using **Generative AI** to generate the following automated response variations.
+b. Define an **Answer** as a set of acceptable utterances for each queue, using **Generative AI** to generate the following automated response variations:
 
         * Set a similarity threshold to determine how closely user input must match expected utterances to get agent answers. 
 
@@ -215,11 +215,11 @@ Evaluates agent responses based on semantic similarity to predefined sample utte
 
 ##### Similarity Thresholds
 
-    Evaluates agent responses based on semantic similarity to predefined sample utterances or answers.
+Evaluates agent responses based on semantic similarity to predefined sample utterances or answers.
 
-    * You can set the Similarity percentage for the desired evaluation metrics. Whether it is **Static** or **Dynamic**, you can configure the expected Similarity threshold.
+* You can set the Similarity percentage for the desired evaluation metrics. Whether it is **Static** or **Dynamic**, you can configure the expected Similarity threshold.
 
-    * You should set a lower adherence similarity threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher adherence similarity threshold (for example, 100%) for compliance-critical (Policy Privacy or Disclaimer) statements, because it is critical for the user to follow the adherence depending on the use cases.   
+* You should set a lower adherence similarity threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher adherence similarity threshold (for example, 100%) for compliance-critical (Policy Privacy or Disclaimer) statements, because it is critical for the user to follow the adherence depending on the use cases.   
    <img src="../images/by-question-agent-answer-similarity.png" alt="Similarity Thresholds" title="Similarity Thresholds" style="border: 1px solid gray; zoom:70%;"> 
     
     !!! Note
