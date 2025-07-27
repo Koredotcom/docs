@@ -30,13 +30,13 @@ Playbook Evaluation Metrics are automated quality assurance tools designed to me
 
 * **Operational Reporting**: Generate reports for management on process compliance and operational efficiency.
 
-## Configure By Question Metrics
+## Configure By Playbook Adherence Metrics
 
 1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
 2. Click **+ New Evaluation Metric**.
 
-3.From the **Evaluation Metrics Measurement Type** dropdown, select By Question.
+3. From the **Evaluation Metrics Measurement Type** dropdown, select **By Playbook Adherence**.
 
 ## Configure the following settings
 
