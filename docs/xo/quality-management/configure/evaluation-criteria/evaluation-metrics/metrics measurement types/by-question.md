@@ -116,6 +116,7 @@ Dynamic Adherence is a context-sensitive method to evaluate agent performance ba
     
     * Once a trigger is detected, the system evaluates whether the agent responded with one of the pre-defined acceptable utterances.  
     <img src="../images/by-question-adhere-type1.png" alt="Question and Adherence Type" title="Question and Adherence Type" style="border: 1px solid gray; zoom:70%;"> 
+    
         !!! note
 
             For **Dynamic**, configure at least one **Trigger** and one agent **Answer** utterance for the adherence type. 
