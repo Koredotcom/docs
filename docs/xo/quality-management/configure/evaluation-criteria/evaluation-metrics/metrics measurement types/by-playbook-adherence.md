@@ -37,31 +37,27 @@ Playbook Evaluation Metrics are automated quality assurance tools designed to me
 2. Click **+ New Evaluation Metric**.
 
 3. From the **Evaluation Metrics Measurement Type** dropdown, select **By Playbook Adherence**.
-
-## Configure the following settings
-
-1. Select an **Evaluation Metrics Measurement Type** from the dropdown.  
 <img src="../images/by-playbook-dropdown.png" alt="default scorecard" title="default scorecard" style="border: 1px solid gray; zoom:100%;">  
 
-2. Enter a descriptive **Name** for the future audit reference.
+4. Enter a descriptive **Name** for the future audit reference.
 
-3. Select a **Playbook Name** from the dropdown list, from which the metric should evaluate adherence.
+5. Select a **Playbook Name** from the dropdown list, from which the metric should evaluate adherence.  
+<img src="../images/by-playbook-fields.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:80%;"> 
 
-4. Select an **Adherence Type** (**Entire Playbook** or **Steps**) from the dropdown. 
+6. Select an **Adherence Type** (**Entire Playbook** or **Steps**) from the dropdown. 
 
-5. Select **Entire Playbook** to evaluate adherence across the entire playbook. 
+7. Select **Entire Playbook** to evaluate adherence across the entire playbook. 
 
     * **Adherence Percentage**: Enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured rate, this metric fails.  
-    <img src="../images/by-playbook-fields.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:80%;"> 
             
-6. Select **Steps** to evaluate adherence to specific steps of the playbook. If you select Steps, then define the following two options.
+8. Select **Steps** to evaluate adherence to specific steps of the playbook. If you select Steps, then define the following two options.
 
     * **Stage**: Select the stage under which the desired step for evaluation is configured.
 
     * **Step**: Select the desired step for adherence evaluation.        
     <img src="../images/by-playbook-adherence-type.png" alt="Steps" title="Steps" style="border: 1px solid gray; zoom:80%;"> 
 
- 7. Click **Create** to save the new metric for the playbook adherence.
+ 9. Click **Create** to save the new metric for the playbook adherence.
 
 ## Managing Evaluation Metrics
 
