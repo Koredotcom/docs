@@ -6,8 +6,8 @@ Users can build and manage custom evaluation criteria using these measurement ty
 
 ## Access Evaluation Metrics
 
-Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
-<img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.   
+<img src="../evaluation-criteria/evaluation-metrics/metrics measurement types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 ## Key Benefits
 
