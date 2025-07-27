@@ -30,14 +30,17 @@ Playbook Evaluation Metrics are automated quality assurance tools designed to me
 
 * **Operational Reporting**: Generate reports for management on process compliance and operational efficiency.
 
-Configure By Question Metrics
-Navigate to Contact Center AI > Quality AI > Configure > Evaluation Forms > Evaluation Metrics.
-Click + New Evaluation Metric.
-From the Evaluation Metrics Measurement Type dropdown, select By Question.
+## Configure By Question Metrics
+
+1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
+
+2. Click **+ New Evaluation Metric**.
+
+3.From the **Evaluation Metrics Measurement Type** dropdown, select By Question.
 
 ## Configure the following settings
 
-1. Select an **Evaluation Metrics Measurement Type** from the dropdown.
+1. Select an **Evaluation Metrics Measurement Type** from the dropdown.  
 <img src="../images/by-playbook-dropdown.png" alt="default scorecard" title="default scorecard" style="border: 1px solid gray; zoom:100%;">  
 
 2. Enter a descriptive **Name** for the future audit reference.
@@ -45,16 +48,18 @@ From the Evaluation Metrics Measurement Type dropdown, select By Question.
 3. Select a **Playbook Name** from the dropdown list, from which the metric should evaluate adherence.
 
 4. Select an **Adherence Type** (**Entire Playbook** or **Steps**) from the dropdown. 
+
     a. Select **Entire Playbook** to evaluate adherence across the entire playbook.     
-    <img src="../images/by-playbook-fields.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:100%;">  
-        * Enter the minimum expected **Adherence Percentage** to the playbook. If adherence falls below the configured rate, this metric fails.
+    <img src="../images/by-playbook-fields.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:100%;"> 
+
+      * Enter the minimum expected **Adherence Percentage** to the playbook. If adherence falls below the configured rate, this metric fails.
             
     b. Select **Steps** to evaluate adherence to specific steps of the playbook. If you select Steps, then define the following two options.
 
-    i. **Stage**: Select the stage under which the desired step for evaluation is configured.
+    * **Stage**: Select the stage under which the desired step for evaluation is configured.
 
-    ii. **Step**: Select the desired step for adherence evaluation.        
-    <img src="../images/by-playbook-fields.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:100%;%;
+    * **Step**: Select the desired step for adherence evaluation.        
+    <img src="../images/by-playbook-adherence-type.png" alt="Steps" title="Steps" style="border: 1px solid gray; zoom:100%;"> 
 
  5. Click **Create** to save the new metric for the playbook adherence.
 
@@ -64,12 +69,11 @@ From the Evaluation Metrics Measurement Type dropdown, select By Question.
 
 Steps to edit or delete existing Evaluation Metrics:
 
-1. Right-click to select any of the existing **Evaluation Metrics**.
-<img src="../images/by-playbook-fields.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:100%;    
+1. Right-click to select any of the existing **Evaluation Metrics**.  
+<img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;"> 
 
-2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.
-
-<img src="../images/by-playbook-edit-metrics.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:100%;
+2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.  
+<img src="../images/by-playbook-edit-metrics.png" alt="Edit Playbook" title="Edit Playbook" style="border: 1px solid gray; zoom:100%;"> 
     
 3. Click **Delete** to remove the selected evaluation metric.
 
@@ -86,3 +90,4 @@ Before delete, do the following:
 * Check and take a backup of the data, which you may need to reference this later.
 
 * Verify the metric is deleted and related data are removed.
+<img src="../images/playbook-metrics-delete.png" alt="Delete Warnings" title="Delete Warnings" style="border: 1px solid gray; zoom:70%;">

@@ -260,7 +260,7 @@ Focuses on specific timeframes (first or last X seconds or messages). This evalu
 Steps to edit or delete existing Evaluation Metrics:
 
 1. Right-click to select any of the existing **Evaluation Metrics**.
-<img src="../images/by-question-edit-eva-metrics.png" alt="Time Bound" title="Time Bound" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit** to update the required **Edit By Question Metrics** dialog box fields.
 
@@ -279,7 +279,7 @@ This section outlines the limitations and dependencies associated with modifying
 * Remove the language from all associated evaluation forms and attributes before modifying their language settings.
 
 * You can safely remove languages that are not linked to any forms or metrics.  
-<img src="../images/by-question-lang-warning.png" alt="Time Bound" title="Time Bound" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/by-question-lang-warning.png" alt="language Warning" title="language Warning" style="border: 1px solid gray; zoom:70%;">
 
 #### Delete Warnings
 
@@ -292,4 +292,4 @@ This section describes the warnings and prerequisites you must address before de
 * If any attributes are linked to the metric, assign a different metric to those attributes before proceeding with deletion.
 
 * The system allows you to delete the metric only after resolving all dependencies.  
-<img src="../images/by-question-delete-warning.png" alt="Time Bound" title="Time Bound" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/by-question-delete-warning.png" alt="Delete Warnings" title="Delete Warnings" style="border: 1px solid gray; zoom:70%;">
