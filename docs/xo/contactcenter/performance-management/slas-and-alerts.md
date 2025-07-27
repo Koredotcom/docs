@@ -125,7 +125,7 @@ Steps to create a new General Alert:
     The general alerts page is displayed.  
     <img src="../images/general-alert-config.png" alt="Alert Config" title="Alert Config" style="border: 1px solid gray; zoom:70%;">
 
-3. Click and select the Area of the system.  
+3. Click and select the **Area of the system**. When a selection is made, the Trigger is auto-populated.  
     <img src="../images/area-of-the-system.png" alt="System Area" title="System Area" style="border: 1px solid gray; zoom:70%;">  
 
     **Analytics** > **Interactions**
@@ -149,7 +149,7 @@ Steps to create a new General Alert:
 
     **Voicemail in Agent Console**
 
-    1. Select the Queues, No. of Voice Mails, and the Time Interval. When a selection is made, the Trigger is auto-populated.  
+    1. Select the Queues, No. of Voice Mails, and the Time Interval.   
         <img src="../images/when.png" alt="Configure Alert" title="Configure Alert" style="border: 1px solid gray; zoom:70%;">
 
     2. Select the Alert type (Critical/Warning) and select the people to whom the alert will be sent.  

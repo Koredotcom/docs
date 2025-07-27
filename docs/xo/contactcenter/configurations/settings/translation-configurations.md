@@ -19,7 +19,7 @@ Steps to configure translation:
         <img src="../images/configure-translation-engine.png" alt="Configure Tranlsation Engine" title="Configure Translation Engine" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save**. Translation is enabled in the dashboard interactions.  
-    <img src="../images/translation-configuration.png" alt="Translation Configurations" title="Translation Configurations" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/translation.png" alt="Translation Configurations" title="Translation Configurations" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 

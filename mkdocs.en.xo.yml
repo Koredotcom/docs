@@ -438,17 +438,18 @@ nav:
       - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
       - Widget Settings: contactcenter/configurations/widgets/configure-widgets.md
       - Wallboards: contactcenter/configurations/wallboards/configure-wallboards.md
-      - System Settings: 
-        - Co-Browse: contactcenter/configurations/settings/co-browse.md
-        - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
-        - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
-      - Advanced Settings:
-        - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
-        - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
-        - Reject Calls With a Delayed First Response: contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md
-        - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
-        - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
-        - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
+      - Settings:
+        - System Settings: 
+          - Co-Browse: contactcenter/configurations/settings/co-browse.md
+          - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
+          - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
+        - Advanced Settings:
+          - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
+          - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
+          - Reject Calls With a Delayed First Response: contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md
+          - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
+          - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
+          - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
     - Performance Management:
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md

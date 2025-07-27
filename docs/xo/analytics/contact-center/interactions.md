@@ -147,7 +147,7 @@ Steps to Preview and Download Events:
 
 ## Edit Dispositions from the Interactions Tab
 
-Supervisors can edit or override disposition codes after a conversation ends. Agents assign dispositions during live sessions, but once the session completes, supervisors can review and revise the assigned codes directly from the Interactions Tab. This capability ensures accurate interaction categorization and supports streamlined post-conversation workflows.
+Supervisors can edit or override disposition codes after a conversation ends. Agents assign dispositions during live sessions, but once the session completes, supervisors can review and revise the assigned codes directly from the Interactions Tab. This capability ensures accurate categorization of interactions and supports streamlined post-conversation workflows. Administrators can enable this functionality for specific roles. [Learn more](../../user-management/role-management.md#permissions).
 
 Key Highlights:
 
