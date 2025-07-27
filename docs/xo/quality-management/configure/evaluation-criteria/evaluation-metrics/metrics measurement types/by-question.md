@@ -1,4 +1,4 @@
-# By Question Evaluation Metric
+# By Question Evaluation Metrics
 
 The Evaluation Metrics feature is a core component of the Quality AI module, allowing supervisors to define, tailor, and monitor performance indicators that assess the quality of interactions between agents and customers. This process is driven entirely by individual questions. Users can create and customize evaluation criteria using various measurement types, which are managed within the **Evaluation Forms** section.
 
@@ -64,11 +64,11 @@ The metric operates through a **question-driven evaluation process** with two ma
 
 7. Select the agent **Adherence Type** (**Static** or **Dynamic**).
 
-!!! Note
+    !!! note
 
-    * For **Static**, you must configure at least one agent answer utterance for the Adherence Type.
-
-    * For **Dynamic**, you must configure at least one trigger and one agent answer utterance for the adherence type.
+        * For **Static**, you must configure at least one agent answer utterance for the Adherence Type.
+        
+        * For **Dynamic**, you must configure at least one trigger and one agent answer utterance for the adherence type.
 
 ## Adherence Type Configuration
 
@@ -117,9 +117,9 @@ Dynamic Adherence is a context-sensitive method to evaluate agent performance ba
     * Once a trigger is detected, the system evaluates whether the agent responded with one of the pre-defined acceptable utterances.  
     <img src="../images/by-question-adhere-type1.png" alt="Question and Adherence Type" title="Question and Adherence Type" style="border: 1px solid gray; zoom:70%;"> 
     
-      !!! Note
+    !!! note
 
-          For **Dynamic**, configure at least one **Trigger** and one agent **Answer** utterance for the adherence type. 
+        For **Dynamic**, configure at least one **Trigger** and one agent **Answer** utterance for the adherence type. 
 
 8. Choose utterance source for **Trigger** (who initiates the trigger).
 
@@ -147,18 +147,18 @@ Provides the following two options to select based on the trigger created by **A
    * **Utterance**: Enter sample training utterances to detect adherence and define similarity thresholds accordingly.    
    <img src="../images/by-question-trigger-detection-method.png" alt="By Question Utterance" title="By Question Trigger Detection Utterance" style="border: 1px solid gray; zoom:70%;">
 
-##### Enablement of GenAI-Based Features (Pre-requisite)
+#### Enablement of GenAI-Based Features (Pre-requisite)
 
 The GenAI-based features are activated only when the following conditions are enabled:
 
-   a. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
+        a. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
 
-   b. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Publish](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components):
+        b. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Publish](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components):
 
-       * **GenAI-based agent answer adherence**
+* **GenAI-based agent answer adherence**
 
-       * **GenAI-based customer trigger detection**  
-        <img src="../images/gen-ai-based-agent-answer-adherence-with-trigger.png" alt="GenAI-based Features" title="GenAI-based features" style="border: 1px solid gray; zoom:70%;">
+* **GenAI-based customer trigger detection**  
+<img src="../images/gen-ai-based-agent-answer-adherence-with-trigger.png" alt="GenAI-based Features" title="GenAI-based features" style="border: 1px solid gray; zoom:70%;">
 
 10. Choose an **Agent Answer** adherence type.
 
@@ -174,13 +174,13 @@ The GenAI-based features are activated only when the following conditions are en
 
 Uses Generative AI to automatically evaluate agent responses by understanding natural language, including intent and context, even when phrased differently.
 
-**Agent Answer**:
+**Agent Answer**
 
 a. Select an **Answer Detection Method** to evaluate whether agents respond according to the prompt’s intent. This uses a probabilistic LLM-based method and requires no model training.
 
 b. Enable the **GenAI-Based Adherence**. Use a **Large Language Model** (LLM) to detect trigger phrases and evaluate adherence using contextual understanding.
 
-c. Enter a prompt **Description** explaining the metric’s intent or details behind the adherence metric. This applies to all selected languages.
+c. Enter a prompt **Description** explaining the metric’s intent or details behind the adherence metric. This applies to all selected languages.   
 <img src="../images/by-question-agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note

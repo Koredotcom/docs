@@ -7,7 +7,6 @@ This includes the following metrics:
 * Configure relevant time bounds for evaluation
 * Implement for process compliance
 
-
 ## Access Playbook Metrics
 
 Access **Playbook Metrics **by navigating to **Contact Center AI > Quality AI > Configure > Evaluation Metrics > Playbook Metrics**.
