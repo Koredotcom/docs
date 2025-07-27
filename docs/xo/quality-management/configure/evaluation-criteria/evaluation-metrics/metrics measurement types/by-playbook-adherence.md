@@ -1,67 +1,6 @@
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see useful information and inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 12
-
-Conversion time: 3.094 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β44
-* Sat Jul 26 2025 09:52:19 GMT-0700 (PDT)
-* Source doc: By Playbook 
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 12.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-<a href="#gdcalert12">alert12</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-[https://koreteam.atlassian.net/browse/STAT-16401](https://koreteam.atlassian.net/browse/STAT-16401)
-
-[https://koreteam.atlassian.net/browse/STAT-20720](https://koreteam.atlassian.net/browse/STAT-20720)
-
-[https://koreteam.atlassian.net/browse/STAT-21035](https://koreteam.atlassian.net/browse/STAT-21035)
-
-[https://koreteam.atlassian.net/browse/STAT-13432](https://koreteam.atlassian.net/browse/STAT-13432)
-
-[https://koreteam.atlassian.net/browse/STAT-21620](https://koreteam.atlassian.net/browse/STAT-21620)
-
-[https://koreteam.atlassian.net/browse/STAT-21524](https://koreteam.atlassian.net/browse/STAT-21524)
-
-
-# **By Playbook **
+# By Playbook
 
 This includes the following metrics:
-
-
 
 * Define clear completion criteria
 * Set appropriate adherence percentage thresholds
@@ -69,7 +8,7 @@ This includes the following metrics:
 * Implement for process compliance
 
 
-## **Access Playbook Metrics** 
+## Access Playbook Metrics
 
 Access **Playbook Metrics **by navigating to **Contact Center AI > Quality AI > Configure > Evaluation Metrics > Playbook Metrics**.
 

@@ -1,125 +1,29 @@
-<!-----
+# By Question
 
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see useful information and inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 19
+The Evaluation Metrics feature is a core component of the Quality AI module, allowing supervisors to define, tailor, and monitor performance indicators that assess the quality of interactions between agents and customers. This process is driven entirely by individual questions. Users can create and customize evaluation criteria using various measurement types, which are managed within the **Evaluation Forms** section.
 
-Conversion time: 4.308 seconds.
+## Access Evaluation Metrics
 
+Access Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics**.
 
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β44
-* Sat Jul 26 2025 09:51:28 GMT-0700 (PDT)
-* Source doc: By Question
-* This is a partial selection. Check to make sure intra-doc links work.
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 19.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-<a href="#gdcalert12">alert12</a>
-<a href="#gdcalert13">alert13</a>
-<a href="#gdcalert14">alert14</a>
-<a href="#gdcalert15">alert15</a>
-<a href="#gdcalert16">alert16</a>
-<a href="#gdcalert17">alert17</a>
-<a href="#gdcalert18">alert18</a>
-<a href="#gdcalert19">alert19</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-[https://koreteam.atlassian.net/browse/STAT-16401](https://koreteam.atlassian.net/browse/STAT-16401)
-
-[https://koreteam.atlassian.net/browse/STAT-20720](https://koreteam.atlassian.net/browse/STAT-20720)
-
-[https://koreteam.atlassian.net/browse/STAT-21035](https://koreteam.atlassian.net/browse/STAT-21035)
-
-[https://koreteam.atlassian.net/browse/STAT-13432](https://koreteam.atlassian.net/browse/STAT-13432)
-
-[https://koreteam.atlassian.net/browse/STAT-21620](https://koreteam.atlassian.net/browse/STAT-21620)
-
-[https://koreteam.atlassian.net/browse/STAT-21524](https://koreteam.atlassian.net/browse/STAT-21524)
-
-
-# **By Question**
-
-The Evaluation Metrics feature is a core component of the Quality AI module, allowing supervisors to define, tailor, and monitor performance indicators that assess the quality of interactions between agents and customers. This process is driven entirely by individual questions. Users can create and customize evaluation criteria using various measurement types, which are managed within the **Evaluation Forms **section.
-
-
-## **Access Evaluation Metrics** 
-
-Access **Evaluation Metrics **by navigating to **Contact Center AI > Quality AI > Configure > Evaluation Metrics**.
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
-
-### **By Question**
+### By Question
 
 This configuration evaluates adherence to specific questions asked or answered during customer-agent interactions.
 
 **Configuration steps**:
 
-
-
-1. Select an **Evaluation Metrics Measurement Type **from the dropdown.
-
+1. Select an **Evaluation Metrics Measurement Type** from the dropdown.
         
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
 2. Enter a referenceable **Name** of the metric for future reference (for example, agent’s warm greeting).
 3. Select a preferred **language **from the dropdown menu to evaluate the form and configure the required metric. 
 
-        
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
-
-
-        **Note**: 
-
+!!! Note
+    
     * Only the added languages are available for selection in the **Settings**. [Learn more](https://docs.google.com/document/d/10hRrRjnBXyqPBs2ueJBZQhe_N6nMlDE9MGNTMj0YZ1U/edit?usp=sharing). 
-    * Once a primary language is selected, you can configure additional languages as needed.
-4. Enter an evaluation **Question **to help supervisors assess agent adherence as a reference for the audits and interaction reviews. 
 
-        
+    * Once a primary language is selected, you can configure additional languages as needed.
+
+4. Enter an evaluation **Question** to help supervisors assess agent adherence as a reference for the audits and interaction reviews. 
 
 <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -162,59 +66,31 @@ This configuration evaluates adherence to specific questions asked or answered d
         Evaluates agent adherence only if the configured trigger is detected. Based on the evaluation trigger, the agent and customer option is selected. This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
 
 
-        For example, Greetings and Etiquette use cases have a lower adherence similarity, which is close to 60% (Yellow). For Policy Privacy or Disclaimer, the adherence similarity must be close to 100% (Green), because this is critical for the user to follow, depending on the use cases.
+        For example, Greetings and Etiquette use cases have a lower adherence similarity, which is close to 60% (Yellow). For Policy Privacy or Disclaimer, the adherence similarity must be close to 100% (Green), because this is critical for the user to follow, depending on the use cases. 
 
+        !!! Note
 
-        
+            For **Dynamic**, configure at least one **Trigger **and one Agent **Answer **utterance for the Adherence Type. 
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+#### Trigger Configuration
 
-
-![alt_text](images/image6.png "image_tooltip")
-
-
-
-        **Note**: For **Dynamic**, configure at least one **Trigger **and one Agent **Answer **utterance for the Adherence Type. 
-
-
-#### 
-    **Trigger Configuration**
-
-
-        Provides the following two options to select based on the trigger created by **Agent Utterance **or **Customer Utterance **for evaluation. 
+     Provides the following two options to select based on the trigger created by **Agent Utterance **or **Customer Utterance **for evaluation. 
 
     * **Trigger: **Provides the following options to select and evaluate responses based on triggers created from agent or customer utterances. 
         * You can add multiple trigger utterances for conditional checks. 
         * You can define a trigger for either a customer or agent utterance and configure the corresponding responses for that scenario.
-
             
+       * **Customer Utterance**: Configure the Customer Utterance that triggers the adherence check. You can enter more than one utterance using Generative AI Assistants that are similar to utterances with the same meaning.
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
-
-
-        * **Customer Utterance**: Configure the Customer Utterance that triggers the adherence check. You can enter more than one utterance using Generative AI Assistants that are similar to utterances with the same meaning. 
         * **Agent Utterance**: Configure the Agent Utterance for triggers initiated by the agent. Enter the utterances using generative AI Assistants’ suggestions that have similar utterances with the same meaning. You can add or delete multiple utterances for the Customer and the Agent.
-
 ##### 
         **Trigger Detection Method**
 
         * **Gen AI-based Adherence: **Enter a descriptive prompt to detect contextually if the agent’s reply matches the intended goal, without relying on predefined samples.
-
                 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
-
-
         * **Deterministic Adherence:** This relies on predefined sample utterances and detects adherence based on semantic similarity. 
 
-                
-
+        
 <p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
@@ -225,56 +101,29 @@ This configuration evaluates adherence to specific questions asked or answered d
 
         **Note**: This **Gen AI-based Answer Adherence** **and Trigger Detection **is activated only when the **GenAI-based agent answer adherence and customer trigger detection **option is [Enabled](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Published](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components) from the **Manage **> **Generative AI **> **GenAI Features**.** **
 
-
         **Enablement**
 
-
-        
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
-
-
-
-##### 
-        **Static Adherence **
-
+##### Static Adherence
 
         Evaluates agent adherence across all conversations where no conditional check-in is required. To get the agent's answers, you set up different acceptable utterances for a particular queue, and then configure the extent of similarities expected against the set-up utterances.
 
+#### Agent Answer Configuration
 
-#### 
-    **Agent Answer Configuration**
+1. **Gen AI-Based Adherence: **Use AI and natural language understanding (LLM) to detect meaning, context, and intent. This evaluates whether the agent's answer fulfills the **intents**, even if phrased differently.
 
-1. **Gen AI-Based Adherence: **Use AI and natural language understanding (LLM) to detect meaning, context, and intent. This evaluates whether the agent's answer fulfills the **intents**, even if phrased differently..
 2. **Deterministic Adherence:** This relies on an **ML-based** method using the semantic similarity.
 3. **Description**: Enter a prompt **Description** to check the agent's intent accuracy, phrasing response, and adherence. 
 
+##### Gen AI-Based Adherence
 
-##### **		Gen AI-Based Adherence**
-
-
-        Uses Generative AI to automatically evaluate agent responses based on natural language understanding and set criteria.
-
-
+ Uses Generative AI to automatically evaluate agent responses based on natural language understanding and set criteria.
 
 4. **Agent Answer:**
     1. Select an **Answer Detection Method **to evaluate whether agents respond according to the prompt’s intent. This uses a probabilistic LLM-based method and requires no model training.
+
     2. Enable the **Gen AI-Based Adherence**. Use a **Large Language Model **(LLM) to detect trigger phrases and evaluate adherence using contextual understanding.
-    3. Enter a prompt **Description **explaining the metric’s intent or details behind the adherence metric. This applies to all selected languages.
 
-                
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
-
-
-
-        **Note**: 
+    3. Enter a prompt **Description **explaining the metric’s intent or details behind the adherence metric. This applies to all selected languages        **Note**: 
 
 * Before assessing Gen AI-based adherence responses, ensure that the [supported model ](https://docs.kore.ai/xo/generative-ai-tools/models-library/#configure-pre-built-llm-integration)and [features](https://docs.kore.ai/xo/generative-ai-tools/genai-features/), including Gen AI-based agent answer adherence and customer trigger detection, are enabled for the respective products in the Gen AI features section. [Learn more](https://docs.kore.ai/xo/generative-ai-tools/genai-features/).
 * No example utterances or similarity thresholds are required; LLMs evaluate adherence contextually using zero-shot prompts.

@@ -513,7 +513,7 @@ nav:
             - By Value: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-value.md 
             - By Dialog Execution: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-dialog-execution.md 
             - By Playbook Adherence: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-playbook-adherence.md 
-            - By AI Agent: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-agent.md 
+            - By AI Agent: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-ai-agent.md 
 
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Connectors: 
