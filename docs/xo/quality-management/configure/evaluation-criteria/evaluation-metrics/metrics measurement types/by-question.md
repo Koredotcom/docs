@@ -228,7 +228,7 @@ Evaluates agent responses based on semantic similarity to predefined sample utte
 
 12. Choose a **Count Type** based on the selected **Adherence Type**.
 
- #### Count Type Configuration
+#### Count Type Configuration
 
 The following are the key count types that you can configure:
 
@@ -244,12 +244,12 @@ Evaluates adherence throughout the complete interaction. This allows you to chec
 
 Focuses on specific timeframes (first or last X seconds or messages). This evaluates adherence within a specific time range or number of messages in the interaction. It can occur at the start or end of the conversation, either for a defined number of seconds or a set number of chat messages.
 
-* **Parameter**: Choose between the **First Part of Conversation** or the **Last Part of Conversation**, and configure the relevant criteria to evaluate the metric. 
+   * **Parameter**: Choose between the **First Part of Conversation** or the **Last Part of Conversation**, and configure the relevant criteria to evaluate the metric. 
 
-* **Voice**: Enter the number of seconds from the start or end of the interaction to evaluate this metric. 
+   * **Voice**: Enter the number of seconds from the start or end of the interaction to evaluate this metric. 
 
-* **Chat**: Enter the number of messages from the start or end of the interaction to evaluate this metric.  
-<img src="../images/by-question-time-bound.png" alt="Time Bound" title="Time Bound" style="border: 1px solid gray; zoom:70%;">
+   * **Chat**: Enter the number of messages from the start or end of the interaction to evaluate this metric.  
+   <img src="../images/by-question-time-bound.png" alt="Time Bound" title="Time Bound" style="border: 1px solid gray; zoom:70%;">
 
 13. Click **Create** to save and activate the By Question configured adherence metric.
 
