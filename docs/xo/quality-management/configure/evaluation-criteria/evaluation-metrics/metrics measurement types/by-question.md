@@ -116,10 +116,9 @@ Dynamic Adherence is a context-sensitive method to evaluate agent performance ba
     
     * Once a trigger is detected, the system evaluates whether the agent responded with one of the pre-defined acceptable utterances.  
     <img src="../images/by-question-adhere-type1.png" alt="Question and Adherence Type" title="Question and Adherence Type" style="border: 1px solid gray; zoom:70%;"> 
-    
-    !!! note
+        !!! note
 
-        For **Dynamic**, configure at least one **Trigger** and one agent **Answer** utterance for the adherence type. 
+            For **Dynamic**, configure at least one **Trigger** and one agent **Answer** utterance for the adherence type. 
 
 8. Choose utterance source for **Trigger** (who initiates the trigger).
 
@@ -151,9 +150,9 @@ Provides the following two options to select based on the trigger created by **A
 
 The GenAI-based features are activated only when the following conditions are enabled:
 
-        a. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
+a. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
 
-        b. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Publish](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components):
+b. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Publish](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components):
 
 * **GenAI-based agent answer adherence**
 
@@ -201,15 +200,15 @@ a. Select **Deterministic Adherence** to assess responses based on similarity to
 
 b. Define an **Answer** as a set of acceptable utterances for each queue, using **Generative AI** to generate the following automated response variations:
 
-        * Set a similarity threshold to determine how closely user input must match expected utterances to get agent answers. 
+* Set a similarity threshold to determine how closely user input must match expected utterances to get agent answers. 
 
-        * Add language-specific, prompt-based evaluation parameters.
+* Add language-specific, prompt-based evaluation parameters.
 
-        * Helps you find relevant answers by suggesting different ways to ask the same question. 
+* Helps you find relevant answers by suggesting different ways to ask the same question. 
 
-        * Provides expected answers that match the meaning of your question, even if it is asked in different ways.
+* Provides expected answers that match the meaning of your question, even if it is asked in different ways.
 
-        * Delete AI-suggested answers that are not required.
+* Delete AI-suggested answers that are not required.
 
 11. Set the **Similarity** percentage for the metric based on the defined use case and attribute. 
 
