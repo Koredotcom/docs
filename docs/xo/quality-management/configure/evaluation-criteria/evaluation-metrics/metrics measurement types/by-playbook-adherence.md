@@ -49,19 +49,19 @@ Playbook Evaluation Metrics are automated quality assurance tools designed to me
 
 4. Select an **Adherence Type** (**Entire Playbook** or **Steps**) from the dropdown. 
 
-5. Select **Entire Playbook** to evaluate adherence across the entire playbook.     
-    <img src="../images/by-playbook-fields.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;"> 
+5. Select **Entire Playbook** to evaluate adherence across the entire playbook. 
 
-    a. * **Adherence Percentage**: Enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured rate, this metric fails.
+    * **Adherence Percentage**: Enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured rate, this metric fails.  
+    <img src="../images/by-playbook-fields.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:80%;"> 
             
 6. Select **Steps** to evaluate adherence to specific steps of the playbook. If you select Steps, then define the following two options.
 
     * **Stage**: Select the stage under which the desired step for evaluation is configured.
 
     * **Step**: Select the desired step for adherence evaluation.        
-    <img src="../images/by-playbook-adherence-type.png" alt="Steps" title="Steps" style="border: 1px solid gray; zoom:60%;"> 
+    <img src="../images/by-playbook-adherence-type.png" alt="Steps" title="Steps" style="border: 1px solid gray; zoom:80%;"> 
 
- 5. Click **Create** to save the new metric for the playbook adherence.
+ 7. Click **Create** to save the new metric for the playbook adherence.
 
 ## Managing Evaluation Metrics
 
@@ -70,10 +70,10 @@ Playbook Evaluation Metrics are automated quality assurance tools designed to me
 Steps to edit or delete existing Evaluation Metrics:
 
 1. Right-click to select any of the existing **Evaluation Metrics**.  
-<img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:80%;"> 
 
 2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.  
-<img src="../images/by-playbook-edit-metrics.png" alt="Edit Playbook" title="Edit Playbook" style="border: 1px solid gray; zoom:60%;"> 
+<img src="../images/by-playbook-edit-metrics.png" alt="Edit Playbook" title="Edit Playbook" style="border: 1px solid gray; zoom:80%;"> 
     
 3. Click **Delete** to remove the selected evaluation metric.
 
