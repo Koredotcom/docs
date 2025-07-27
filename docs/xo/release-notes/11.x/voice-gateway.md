@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.16.0 July 26, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Utils</font>
+
+**Support for 'ReferredBy' in VoiceUtils and AgentUtils**
+
+Introduced support for the setReferredBy method in both VoiceUtils and AgentUtils functions. This enhancement enables developers to assign a referring number (for example, +91 9876543210) during call transfers, allowing the receiving party to identify the source of the referral. The addition improves call traceability and supports more transparent handoffs between agents or systems. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#sip-refer)
+
+<font size="4">Flows</font>
+
+**Dynamic Feature and Default Settings Handling Based on Voice License and Configuration**
+
+The platform now dynamically displays voice-related features and loads default settings based on the Voice selection, Voice Gateway presence, and Twilio configuration. During app creation and onboarding, only relevant components—such as SIP trunk setup, phone number purchase, test call, and voice flow elements—are shown based on license entitlements and environment setup. This enhancement streamlines the UI, improves performance by reducing unnecessary API calls, and prevents configuration errors by enforcing voice prerequisites. Logic also applies during bot import, ensuring real-time validation for consistent platform behavior. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number)
+
+<font size="4">ASR & TTS</font>
+
+**Deprecation of 'PlayHT' TTS from Voice Gateway Configuration**
+
+Support for the 'PlayHT' TTS engine has been removed from all Voice Gateway configurations. All associated options, references, and API mappings have been eliminated to prevent configuration issues and ensure compatibility with currently supported TTS providers. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md)
+
+<hr>
+
 ## v11.15.1 July 12, 2025
 
 <u>Patch Release</u>
