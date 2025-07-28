@@ -1,11 +1,13 @@
 # Settings
 
-The Settings allow you to make app-level changes to Conversation Intelligence.
+The **Settings** allow you to make app-level changes to **Conversation Intelligence**.
 
 The Settings has the following three sections:
 
 * Conversation Intelligence
+
 * Quality AI General Settings
+
 * Language Settings
 
 ## Conversation Intelligence
@@ -35,7 +37,7 @@ Steps to enable the Conversation Intelligence:
 
 By enabling this option, you can view the **Conversation Intelligence** feature displaying under the **Analyze** section.
 
-Steps to disable the **Conversation Intelligence** Dashboard:
+Steps to disable the Conversation Intelligence dashboard:
 
 1. Disable the **Conversation Intelligence Dashboard** toggle button. The following dialog box appears.  
 <img src="../settings/images/disable-conversation-intelligence.png" alt="Disable Converstion Intelligence" title="Disable Conversation Intelligence" style="border: 1px solid gray; zoom:60%;">
@@ -53,7 +55,7 @@ Steps to disable the **Conversation Intelligence** Dashboard:
 
 This allows you to add and define a set of dynamic messages or scripts for the user or agent. By default, the script adherence widget uses a default generic script to check for adherence, using this app level configuration, the user can set custom messages for each step of the script to visualize adherence to the custom message instead of the default script message.
 
-Steps to enable the Script Adherence Configuration:
+Steps to enable the Script Adherence configuration:
 
 1. Expand the **Conversation Intelligence** collapse icon, and enable the toggle button of **Conversation Intelligence Dashboard** and **Script adherence configuration**.  
     <img src="../settings/images/script-adherence.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
@@ -69,19 +71,17 @@ Steps to enable the Script Adherence Configuration:
         Upon enabling, the system checks for adherence to the configured messages of the script adherence section of conversation intelligence instead of the default messages.
 
     * **Message**: Allows you to define specified attribute messages for the agent or user. You can add more than one message for the user for the same attribute and delete the defined messages.
-
     <img src="../settings/conversation-intelligence/images/conv-warning-message.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
 
-        !!! Note
-    
-            If you are enabling this message box, you must enter a message in the corresponding attribute warning message box. You need to save and proceed before moving on to the next attribute message. A warning message will appear if you fail to enter a message for the corresponding attribute. 
+    !!! Note
 
+    If you are enabling this message box, you must enter a message in the corresponding attribute warning message box. You need to save and proceed before moving on to the next attribute message. A warning message appears if you fail to enter a message for the corresponding attribute. 
 
     * **Save**: Allows you to save the defined messages.
 
-        At the agent account level, the agent can only check the following options defined by the supervisor or app owner or administrator in the Settings.
+        At the agent account level, the agent can only check the following options defined by the supervisor or app owner or administrator in the **Settings**:
 
-        * In the Conversation Intelligence Dashboard, the agent can check the post-interaction analytics, such as brand tags, greetings, questions, emotions, interactions, and so on. 
+        * In the **Conversation Intelligence** Dashboard, the agent can check the post-interaction analytics, such as brand tags, greetings, questions, emotions, interactions, and so on. 
 
-        * In the Script adherence configuration, the agent can visualize the specific messages or scripts that are defined by the supervisor or app owner or administrator.  
+        * In the **Script Adherence** configuration, the agent can visualize the specific messages or scripts that are defined by the supervisor or app owner or administrator.  
 
