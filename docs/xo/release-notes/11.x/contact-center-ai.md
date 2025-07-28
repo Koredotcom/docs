@@ -28,11 +28,11 @@ The email interaction panel now includes the "Reply All" option alongside the ex
 
 Added a new system setting that allows administrators to disable supervisor join and exit notifications shown to end users during live conversations. This functionality is enabled by default, displaying messages when a supervisor joins or exits a chat. To disable the notifications, administrators can turn off the toggle. The setting takes effect in real time, persists across sessions, and is recorded in the audit logs for traceability. This update supports silent supervision and helps meet compliance or customer-specific requirements. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md)
 
+<img src="../images/supervisor-join-exit.png" alt="Supervisor Join/Exit Notification" title="Supervisor Join/Exit Notification" style="border: 1px solid gray; zoom:70%;">
+
 **Queue-Based Filtering for Response Templates**
 
 Added a new "Queue Match" toggle to the response group configuration settings, allowing administrators to control the visibility of standard responses based on the interaction queue. When enabled, responses in the group are shown only to agents handling conversations from selected queues. This setting works in combination with existing Skill Match and Agent Group Match filters, ensuring response templates appear only when all configured conditions are met. The feature enhances contextual relevance, improves agent efficiency, and helps enforce queue-specific communication standards. All updates take effect immediately and are recorded in audit logs. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/response-templates/manage-response-templates.md#create-a-response-group)
-
-<img src="../images/supervisor-join-exit.png" alt="Supervisor Join/Exit Notification" title="Supervisor Join/Exit Notification" style="border: 1px solid gray; zoom:70%;">
 
 **Voicemail Notification in General Alerts**
 
