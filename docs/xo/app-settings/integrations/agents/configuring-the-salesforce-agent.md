@@ -284,119 +284,36 @@ Under Company Information, locate the field Salesforce.com Organization ID.
 
 ## Additional Capabilities
 
-The Salesforce Agent integration supports metadata transfer for agent context, user-controlled session termination, and customizable system messages, ensuring faster resolutions and a consistent brand experience.
+
+The Salesforce MIAW Agent Integration supports agent name display, real-time read receipts, automatic inactivity timeouts, UI-based configuration of standard responses and stop words, and metadata transfer for context. These enhancements improve the agent experience, streamline session handling, and simplify configuration through the Salesforce interface.
 
 
-### User-Controlled Session End
+### Display of Agent Name
 
-Allow end-users to end live agent sessions using a configurable keyword set in the Script node. The platform displays this keyword during agent handoff, giving users more control over their interactions and helping reduce agent occupancy when the session is no longer needed.
+Salesforce automatically displays the human agent’s name in the chat once they join the conversation.
 
-For example, in the following script, “endagentchat” is the keyword displayed to the end user to end the agent session.
 
-``` json
-let miawMetaInfo = {};
-miawMetaInfo.endChatShortHandCommand = "“endagentchat";
-context.session.BotUserSession.miawMetaInfo = miawMetaInfo;
-```
+### Read Receipts
 
-### Customizable Standard Responses
+The Salesforce and the Platform show real-time read receipts for both agent and user messages. Salesforce triggers the agent-to-user read receipts through events.
 
-Customize system messages shown to end-users during agent handoff and live chat sessions, including wait time alerts, agent join messages, and session closure prompts. This ensures brand consistency and enhances clarity in user interactions.
 
-``` json
-{
-"en":{
-"lookingForAgentMessage": "Please hold while I find an available agent.",
-"agentJoinedMessage": "Agent joined the conversation.",
-"conversationClosedMessage": "Your session has ended, thanks for chatting with us.",
-"endChatFromUserInstruction": "To end agent conversation send endagentchat"
-},
-"ko":{
-"lookingForAgentMessage": "잠시만 기다려주세요. 대기열에 추가해드리겠습니다.",
-"agentJoinedMessage": "상담원이 대화에 참여했습니다.",
-"conversationClosedMessage": "대화가 종료되었습니다. 감사합니다.",
-"endChatFromUserInstruction": "상담원 대화를 종료하려면 endagentchat를 보내세요."
-},
-"es":{
-"lookingForAgentMessage": "Por favor, espere mientras busco un agente disponible.",
-"agentJoinedMessage": "El agente se ha unido a la conversación.",
-"conversationClosedMessage": "La conversación ha terminado. Gracias por chatear con nosotros.",
-"endChatFromUserInstruction": "Para terminar la conversación con el agente, envíe endagentchat"
-},
-"fr":{
-"lookingForAgentMessage": "Veuillez patienter pendant que je cherche un agente disponible.",
-"agentJoinedMessage": "L'agent a rejoint la conversation.",
-"conversationClosedMessage": "La conversation est terminée. Merci pour votre chat.",
-"endChatFromUserInstruction": "Pour terminer la conversation avec l'agent, envoyez endagentchat"
-},
-"de":{
-"lookingForAgentMessage": "Bitte warten, während ich einen verfügbaren Agenten finde.",
-"agentJoinedMessage": "Der Agent hat die Konversation beigetreten.",
-"conversationClosedMessage": "Die Konversation ist beendet. Vielen Dank für Ihren Chat.",
-"endChatFromUserInstruction": "Um die Konversation mit dem Agenten zu beenden, senden Sie endagentchat"
-},
-"ja":{
-"lookingForAgentMessage": "しばらくお待ちください。利用可能なエージェントを見つけています。",
-"agentJoinedMessage": "エージェントが会話に参加しました。",
-"conversationClosedMessage": "会話が終了しました。ありがとうございました。",
-"endChatFromUserInstruction": "エージェントとの会話を終了するには endagentchat を送信してください。"
-},
-"pl":{
-"lookingForAgentMessage": "Proszę poczekać, gdybym szukał dostępnego agenta.",
-"agentJoinedMessage": "Agent dołączył do rozmowy.",
-"conversationClosedMessage": "Rozmowa zakończona. Dziękujemy za czat.",
-"endChatFromUserInstruction": "Aby zakończyć rozmowę z agentem, wysyłaj endagentchat"
-},
-"ar":{
-"lookingForAgentMessage": "يرجى الإنتظار حتى أجد أحد المستخدمين المتاحين.",
-"agentJoinedMessage": "تم الانضمام إلى المحادثة.",
-"conversationClosedMessage": "تم إنهاء المحادثة. شكراً لك على الدردشة.",
-"endChatFromUserInstruction": "لإنهاء المحادثة مع الوكيل، قم بإرسال endagentchat"
-},
-"tr":{
-"lookingForAgentMessage": "Lütfen bekleyin, bir kullanılabilir aracı buluyorum.",
-"agentJoinedMessage": "Aracın konuşmaya katıldı.",
-"conversationClosedMessage": "Konuşma sona erdi. Teşşekkürler.",
-"endChatFromUserInstruction": "Aracın konuşmasını bitirmek için endagentchat gönderin."
-},
-"it":{
-"lookingForAgentMessage": "Per favore, attendi mentre cerco un agente disponibile.",
-"agentJoinedMessage": "L'agente si è unito alla conversazione.",
-"conversationClosedMessage": "La conversazione è terminata. Grazie per il chat.",
-"endChatFromUserInstruction": "Per terminare la conversazione con l'agente, invia endagentchat"
-},
-"pt":{
-"lookingForAgentMessage": "Por favor, espere enquanto procuro um agente disponível.",
-"agentJoinedMessage": "O agente entrou na conversa.",
-"conversationClosedMessage": "A conversa terminou. Obrigado pelo chat.",
-"endChatFromUserInstruction": "Para terminar a conversa com o agente, envie endagentchat"
-},
-"zh_cn":{
-"lookingForAgentMessage": "请稍等，我正在寻找可用的代理。",
-"agentJoinedMessage": "代理已加入对话。",
-"conversationClosedMessage": "对话结束。谢谢您的聊天。",
-"endChatFromUserInstruction": "为了结束与代理的对话，请发送 endagentchat"
-},
-"zh_tw":{
-"lookingForAgentMessage": "請稍等，我正在尋找可用的代理。",
-"agentJoinedMessage": "代理已加入對話。",
-"conversationClosedMessage": "對話結束。謝謝您的聊天。",
-"endChatFromUserInstruction": "為了結束與代理的對話，請發送 endagentchat"
-},
-"ca":{
-"lookingForAgentMessage": "Si us plau, espera mentre busco un agente disponible.",
-"agentJoinedMessage": "L'agent ha entrat en la conversació.",
-"conversationClosedMessage": "La conversació ha acabat. Gràcies pel chat.",
-"endChatFromUserInstruction": "Per acabar la conversació amb l'agent, envieu endagentchat"
-},
-"nl":{
-"lookingForAgentMessage": "Wacht even, ik zoek naar een beschikbare agent.",
-"agentJoinedMessage": "De agent is de conversatie binnengekomen.",
-"conversationClosedMessage": "De conversatie is afgerond. Bedankt voor het chatten.",
-"endChatFromUserInstruction": "Om de conversatie met de agent te beëindigen, stuur endagentchat"
-}
-}
-```
+### Inactivity Session Closure
+
+The Salesforce Integration allows you to configure automatic session end after a specified duration of user inactivity. For more information on configuration, refer to [Automatically Mark Messaging Sessions Inactive](https://help.salesforce.com/s/articleView?id=release-notes.rn_miaw_automatic_inactive.htm&release=244&type=5).
+
+
+### Configurable Standard Responses
+
+Salesforce enables the full configuration of system messages displayed to end-users during agent handoffs and live chat sessions, including wait time alerts, agent join messages, and session closure prompts. For more information on configuration, refer to [Auto-Response Components](https://help.salesforce.com/s/articleView?id=service.messaging_components_auto_response.htm&type=5).
+
+
+### Conversation Stop Word Configuration
+
+The Salesforce Integration enables end-users to end live agent sessions using a keyword configured in the Salesforce console. This helps reduce agent occupancy when the session is no longer actively needed. For more information on configuration, refer to [Customize the Messaging](https://help.salesforce.com/s/articleView?id=service.messaging_consent_status.htm&type=5).
+
+
+
 
 ### Pass Metadata or User Information to the Salesforce Agent System
 
