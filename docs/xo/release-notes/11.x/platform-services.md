@@ -13,7 +13,8 @@ This update includes enhancements and bug fixes. The key enhancements included i
 <font size="4">LLM & Generative AI</font>
 
 **Contact Centre AI Filter Added in the GenAI Features Framework**
-Contact Center AI (CCAI) has been integrated into the product filtering framework for Generative AI Tools along with Automation AI, Search AI, and Agent AI, providing uniform visibility, searchability, and contextual filtering across all products. 
+Contact Center AI (CCAI) has been integrated into the product filtering framework for Generative AI Tools along with Automation AI, Search AI, and Agent AI, providing uniform visibility, searchability, and contextual filtering across all products. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md)
+<hr>
 
 <font size="4">App Setting</font>
 
