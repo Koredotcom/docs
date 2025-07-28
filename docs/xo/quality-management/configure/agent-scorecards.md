@@ -35,7 +35,7 @@ Steps to create **New Agent Score Card**:
 
     !!! note
 
-        There must be an active default scorecard. The first scorecard created must be a mandatory default scorecard, which is assigned to all agents. If you try to enable the default scorecard toggle view, then the following warning pop-up window appears stating that you cannot disable the default scorecard unless another scorecard is replaced with the default.   
+        There must be an active default scorecard. The first scorecard created must be a mandatory default scorecard, which is assigned to all agents. Suppose you try to enable the default scorecard toggle view. In that case, the following warning pop-up window appears, stating that you cannot disable the default scorecard unless another scorecard is replaced with the default.   
 
     <img src="../agent-scorecards/images/default-scorecard-alert.png" alt="default scorecard" title="default scorecard" style="border: 1px solid gray; zoom:100%;">  
 

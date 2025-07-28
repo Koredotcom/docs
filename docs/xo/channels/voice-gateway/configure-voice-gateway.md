@@ -33,6 +33,10 @@ Steps to buy a new phone number:
     5. You can now call this number to test your Use Cases.
     6. When ready to go live, forward the calls you receive to this phone number or use this number as your customer support number.
 
+!!! Note
+
+    This feature is only available when using Kore's Twilio account. It's not supported for SIP trunk setups.
+
 ### Attach Flow
 
 Steps to attach a flow to the phone number:

@@ -600,8 +600,7 @@ Agents can view and respond to emails on the console. The emails appear on the c
 
 These settings can be configured from [Agent settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings).
 
-**Reply and Reply All**: Agents can click Reply to open a response window addressed only to the most recent sender. Clicking Reply All opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.
-
+**Reply and Reply All**: Agents can click **Reply** to open a response window addressed only to the most recent sender. Clicking **Reply All** opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.  
 <img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
 
 **Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.  

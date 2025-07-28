@@ -65,6 +65,10 @@ Steps to create a Start Flow:
 
     * You can now use this number for your Start Flow.
 
+!!! Note
+
+    This feature is only available when using Kore's Twilio account. It's not supported for SIP trunk setups.
+
 4. Select an **ASR Speech Recognition Engine**. You can choose from the following:
     * Microsoft Azure Speech Services,
     * Google Cloud Speech-to-Text,

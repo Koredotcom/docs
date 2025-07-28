@@ -1,288 +1,253 @@
 # Evaluation Metrics
 
-This phase is entirely based on individual questions .  It allows you to create custom evaluation criteria across different measurement types. You can create Evaluation Metrics in the Evaluation Forms section utilizing these different measurement types.
+This feature is a key component of the Quality AI module, enabling supervisors to define, customize, and monitor performance indicators that measure the quality of agent-customer interactions. This comprehensive system supports six distinct measurement types, each designed for specific evaluation needs through a combination of advanced AI-driven analysis and traditional rule-based methods. 
 
-You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
-<img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+Users can build and manage custom evaluation criteria using these measurement types within the **Evaluation Forms** section. Among the options is a GenAI-powered adherence metric, which streamlines setup by minimizing the need for large training datasets. This approach improves scalability across multiple languages and diverse agent interactions.
 
-The Evaluation Metrics has the following options:
+## Access Evaluation Metrics
+
+Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.   
+<img src="../evaluation-criteria/evaluation-metrics/metrics measurement types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+
+## Key Benefits
+
+* **AI-Powered Intelligence**: GenAI-based adherence reduces dependency on extensive training datasets.
+
+* **Comprehensive Coverage**: Six measurement types address diverse evaluation scenarios.
+
+* **Multilingual Scalability**: Enhanced support across different languages and interactions.
+
+* **Automated Quality Assurance**: Reduces manual review workload through intelligent analysis.
+
+* **Real-time Validation**: API integration ensures data accuracy and compliance. 
+
+* **Flexible Configuration**: Static and dynamic evaluation options for various use cases.
+
+## Evaluation Metrics Interface Elements
+
+The Interface displays the following elements:
 
 * **Name**: Shows the name of the Evaluation Metrics.
-* **Metric Type**: Shows the Evaluation Metrics Type (Measurement Type) selected.
-* **Evaluation Forms**: Shows the Evaluation Forms used for configuring and assigning the evaluation metrics to different channels and queues.
-* **Edit**: Allows you to edit or update the existing Evaluation Metrics.
-* **Delete**: Allows you to select and delete any Evaluation Metrics shown on the Evaluation Forms page.
-* **Search**: Provides a quick search option to view and update the Evaluation Metrics by name only.
 
-## Add New Evaluation Metrics
+* **Metric Type**: Indicates the type of measurement used.
 
-You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
-<img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">  
+* **Evaluation Forms**: Shows all associated evaluation forms, which are used for configuring and assigning the evaluation metrics to different channels and queues.
 
-Steps to create New Evaluation Metrics:
+* **Ellipsis Icon**: Provides an option to edit and delete the metrics. 
 
-1. Click the **New Evaluation Metric** button in the upper-right corner to configure the most commonly used evaluation metrics. The following screen appears, allowing you to select a type of evaluation metrics measurement.  
-<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">
+* **Search**: Provides a quick search to view and modify the required metrics.	
 
-2. Select the type of Evaluation Metrics Measurement, such as **By Question**, **By Speech**, **By Playbook Adherence**, and **By Dialog Task**.
+* **New Evaluation Metrics**: Enables configuration of new metrics. 
 
-The following table describes the Evaluation Metrics Measurement Types:
+## Create New Evaluation Metrics
 
-<table>
-  <tr>
-   <td><strong>Evaluation Metrics Measurement Types</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>By Question: </strong>Configures the metric and expected responses based on a specific question.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Name</strong>
-   </td>
-   <td>Enter a name for the future reference of the metrics.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Language</strong>
-   </td>
-   <td>Select a preferred language from the drop-down list.
-   </p>
-  <strong>Note</strong>: For <strong>Dynamic</strong>, you must configure at least one trigger and one agent <strong>Answer</strong> utterance for the <strong>Adherence Type</strong>.
-   </br>
-  For <strong>Static</strong>, you must configure at least one agent <strong>Answer</strong> utterance for the <strong>Adherence Type</strong>.
-</td>
-  </tr>
-  <tr>
-   <td><strong>Question</strong>
+Steps to create new evaluation metrics:
 
-   </td>
-   <td>Provides reference to the supervisor about audit and interaction evaluation. You enter a question for which adherence check is done.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Adherence Type</strong>
-   </td>
-   <td>Provides the following two types of adherences:
+1. Select the **Evaluation Metrics** tab.    
+<img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics-tab-selection.png" alt="Evaluation Metric" title="MEvaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
-<ul>
-<li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required.
+2. Click the **+ New Evaluation Metric** displayed in the upper-right corner.    
+<img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
-To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances.</li>
+3. Configure the metrics based on your measurement type requirements.    
+<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
+">
 
-<li><strong>Dynamic</strong>: Evaluates agent adherence only if the configured trigger is detected. Based on the evaluation trigger, the agent and customer option is selected.
+## Metrics Configuration Elements
 
-This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
+* **Metric Naming**: Descriptive identifiers for future reference.
 
-For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
+* **Language Selection**: Multilingual support configuration.
 
-<li><strong>Trigger:</strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.</li>
+* **Evaluation Questions**: Supervisory reference prompts.
 
-<ul><li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.</ul></li>
+* **Adherence Types**: Static (universal) vs. Dynamic (trigger-based)
+Detection Methods Comparison.
 
-<ul><li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning. You can add multiple utterances for the Customer and Agent and delete them.</ul></li>
-</td>
-  </tr>
-  <tr>
-   <td><strong>Answer</strong>
-   <td><p>Provides the expected answers relevant to your question (a few different utterances) entered with the help of generative AI suggestions, which have similar utterances with the same meaning and reduce the setup time. </p>
-   
-   In this, you can enter or select more than one expected answer using generative AI having different utterances matching your question. In addition, you have the option to delete the added answers. 
-   
-   If it is Static, then you need to define a similar percentage for the metric based on the defined use case and attribute.
-<ul>
+### Detection Methods Comparison
 
-<li><strong>Similarity</strong>: You can set the Similarity percentage for the desired Evaluation metrics. Whether it is Static or Dynamic, you can configure the expected Similarity threshold.
+## Metrics Measurement Types
 
-For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
+The following six measurement types are:
 
-  <tr>
-   <td><strong>Count Type</strong>
-   <td><p>Provides the following two options based on the Adherence Type is selected: </p><ul>
+1. **By Question - Conversation Content Evaluation**
 
-<li><strong>Entire Conversation</strong>: This allows you to check for adherence at different points of conversation. It does not matter where the agent wants to check adherence throughout the conversation. 
+**Purpose**: Evaluate adherence to specific questions asked or answered during interactions.
 
-<li><strong>Time Bound</strong>: This allows you to check adherence within a certain time range of the interaction, either for a specific number of seconds or a number of messages for chat at the start or end of the conversation.</li>
-<ul><li><strong>Parameter</strong>: In this field, select the section of the interaction that has to be evaluated for this metric.
+**Key Capabilities**:
 
-If you select the <strong>First Part of Conversation </strong> or the <strong> Last  Part of Conversation</strong>, then enter the following subsection details provided:</ul></li>
+* **Static Adherence**: Universal application across all conversations.
 
-<ul><ul><li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.
-<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.
-</ul>
-   </td>
-  </tr>
-  <tr>
-  <td><strong>Agent Attribute (Optional)</strong>
-   </td>
-   <td>Provides an evaluation metric, which you can assign to only one agent attribute.
-   </td>
-  </tr>
-</table>
+* **Dynamic Adherence**: Trigger-based conditional evaluation.
 
-<table>
-  <tr>
-   <td><strong>Evaluation Metrics Measurement Types</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>By Speech</strong>: Configures a metric based on speech attributes like dead air and speaking rate. 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Name</strong>
-   </td>
-   <td>Enter a name for the future reference of the metrics.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Speech Type</strong>
-   </td>
-   <td>Provides the following Speech Type options to select:
-<ul>
+* **GenAI Detection**: Contextual understanding without training samples.
 
-<li><strong>Cross Talk</strong>: If the Speech Type is Cross Talk, enter the maximum acceptable Number of instances. If the number of instances exceeds the configured count, this configured metric will fail. By default, the Cross Talk duration is two seconds. But you can customize the configuration instances limit and the Cross Talk duration combination. 
+* **Deterministic Detection**: Semantic similarity matching with predefined utterances.
 
-<li><p>In the <strong>No of Instances</strong> field, enter the minimum allowed Cross Talk instances per second.</p></li>
+* **Flexible Thresholds**: 60% for greetings, 100% for compliance-critical statements.
 
-<p><strong>Cross Talk Metric Qualification</strong>: If the no. of Cross Talk instances, based on the configured Cross Talk duration is less than the configured no. of instances for that Evaluation Form, the metric is qualified (an occurrence is evaluated as Cross Talk, which must be equal to or exceed the configured Cross Talk duration).</p>
+* **GenAI Adherence**: Leverage GenAI for flexible language interpretation.
 
-<p>Similarly, if the number of Cross Talk instances exceeds the no. of instances limit, it is considered a failure for that metric, and the agent will be penalized.</p>
+**Used For**: Script adherence, greeting compliance, policy verification, and response quality assessment.
 
-<li><strong>Dead Air</strong>: This defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. By default, the minimum Dead Air time is one second, with a maximum limit of 300 seconds. However, you can customize the configuration instances limit and the Dead Air duration combination. 
+For the detailed configuration, see [By Question](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-question.md).
 
-<li><strong>Dead Air Metric Qualification</strong>: The interaction will qualify for the metric if the number of dead air instances is less than the acceptable limit set in the metric configuration. Conversely, if the number of instances exceeds the configured limit, the interaction will fail the dead air metric. An instance will only be counted as dead air if it exceeds the specified dead air duration.</li>
+1. **By Speech - Audio Quality Analysis**
 
-<li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.</li>
- 
-<ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</ul></li>
+**Purpose**: Analyze speech characteristics and audio quality metrics during voice interactions.
 
-  </td>
-  </tr>
-</table>
+**Available Metrics**:
 
-<table>
-  <tr>
-   <td><strong>Evaluation Metrics Measurement Types</strong>
-   </td>
-   <td><strong>Description</strong>
-  </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>By Dialog Task: </strong>Configures a metric based on adherence to execution of dialog tasks.
-  </td>
-  </tr>
-  <tr>
-   <td><strong>Name</strong>
-   </td>
-   <td>Enter a name for the future reference of the metrics.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Select Dialog Task</strong>
-   </td>
-   <td>Select a Dialog Task from the drop-down list given.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Count Type</strong>
-   </td>
-   <td>Provides the following two options based on the Count Type selected.
-<ul>
+* **Cross Talk**: Monitors simultaneous speaking instances.
 
-<li><strong>Entire Conversation</strong>: Allows you to check the adherence throughout the entire conversation.
+    * Fully customizable thresholds and duration limits.
 
-<li><strong>Time Bound</strong>: Allows you to check adherence within a certain time range of the interaction.
-<ul>
+* **Dead Air**: Track and reduce unproductive silence periods during calls.
 
-<li><strong>Parameter: </strong>In this field, select the section of the interaction that has to be evaluated for this metric. 
+    * Configurable thresholds (30-300 seconds).
 
-If you select the <strong>First Part of Conversation</strong> or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:
-  
-<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should get evaluated.
-  
-<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should get evaluated.
-</li>  
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Agent Attribute (Optional)</strong>
-   </td>
-   <td>Provides an evaluation metric, which you can assign to only one agent attribute.
-   </td>
-  </tr>
-</table>
+* **Speaking Rate**: Monitor trends in speech pace to flag potential coaching opportunities.
 
-<table>
-  <tr>
-   <td><strong>Evaluation Metrics Measurement Types</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>By Playbook Adherence: </strong>Configures a metric based on adherence to a playbook or a specific playbook step.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Name</strong>
-   </td>
-   <td>Enter a name for the future reference of the metrics.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Playbook Name</strong>
-   </td>
-   <td>Select a Playbook Name from the drop-down list, from which the metric should evaluate adherence.
-   </td>
-  <tr>
-   <td><strong>Adherence Type</strong>
-   </td><td>
-   
-<p>From the <strong> Adherence Type</strong>, you can choose either <strong> Entire Playbook</strong> or <strong> Steps</strong> to do the following:</p>
+    * Measures words per minute (WPM) against expected benchmarks.
 
-<ul><li><strong> Entire Playbook</strong>: To evaluate adherence across the entire playbook.</li>
+    **Used For**: Voice interaction quality, conversation flow analysis, and speaking pace optimization.
 
-<li><strong>Adherence Percentage</strong>: To enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.</li>
+For the detailed configuration, see see [By Speech](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-speech.md).
 
-<p>From the <strong> Adherence Type</strong>, if you select <strong>Steps</strong>, then you will get the following options:</p>
+1. **By Value - Data Accuracy Verification**
 
-<li><strong> Steps</strong>: To evaluate adherence to specific steps of the playbook.
+**Purpose**: Verify agent-shared customer-specific information against trusted data sources.
 
-<li><strong>Stage</strong>: To select the stage under which the desired step for evaluation is configured.
+**Core Features**:
 
-<li><strong>Step </strong>: To select the desired step for adherence evaluation.
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Agent Attribute (Optional)</strong>
-   </td>
-   <td>Provides an evaluation metric, which you can assign to only one agent attribute.
-   </td>
-  </tr>
-</table>
+* **API Integration**: Real-time verification with CRM and external systems.
 
-## Edit Evaluation Metrics
+* **Business Rules Engine**: Five rule types, including first or last value, negotiated value, and strict matching.
 
-Steps to edit existing Evaluation Metrics:
+* **Compliance Tracking**: Automated deviation detection for regulatory requirements.
 
-1. Right-click to select any of the existing **Evaluation Metrics** (Name). The following screen appears, allowing you to select a type of evaluation metrics measurement.  
-<img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
+* **Audit Trails**: Detailed documentation for supervisory review.
 
-2. Click **Edit** to update the Evaluation Metrics dialog box fields. The following dialog box appears to update the required fields.  
-<img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:60%;">
+**Business Rule Options**:
 
-3. Edit the required fields that you want to update.
+* First Value Mentioned by Agent
 
-    !!! Note
+* Last Value Mentioned by Agent
 
-        All the fields are editable except the **Evaluation Metrics Measurement Type** and **Agent Attribute (Optional)**.
+* Negotiated Value Mentioned by Agent
+
+* Strict Source System Value
+
+* Custom Business Rule
+
+**Used For**: Pricing accuracy, interest rate verification, account balance confirmation, and compliance validation.
+
+For the detailed configuration, see [By Value](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-value.md).
+
+1. **By Dialog Execution - Task Completion Assessment**
+
+**Purpose**: Evaluate completion and quality of specific dialog tasks and workflows.
+
+**Configuration Options**:
+
+* **Dialog Agent Selection**: Choose from available dialog agents.
+
+* **Evaluation Scope**: Entire conversation or time-bound assessment.
+
+* **Time Parameters**: Configurable seconds (voice) or messages (chat).
+
+**Used For**: Workflow adherence, task completion verification, and dialog flow optimization.
+
+For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-diaolog-execution.md).
+
+1. **By Playbook Adherence - Process Compliance Evaluation**
+
+**Purpose**: Assess compliance with predefined agent playbooks and procedures.
+
+**Adherence Types**:
+
+* **Entire Playbook**: Comprehensive adherence across all playbook elements.
+
+* **Specific Steps**: Targeted evaluation of particular stages and steps.
+
+* **Percentage Thresholds**: Configurable minimum adherence requirements.
+
+**Configuration Elements**:
+
+* Playbook selection from the dropdown
+
+* Stage and step specification
+
+* Adherence percentage thresholds
+
+* Failure criteria definition
+
+**Used For**: Process compliance, procedure adherence, and standardization enforcement.
+
+For the detailed configuration, see [By Playbook Adherence](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-playbook-adherence.md).
+
+* **By AI Agent - Advanced Reasoning Evaluation**
+
+**Purpose**: Enables sophisticated evaluations using AI agents capable of multi-step reasoning and autonomous decision-making.
+
+**When to Use**:
+
+* **Complex Analysis**: Multi-step reasoning connecting conversation elements.
+
+* **Domain Expertise**: Specialized knowledge requirements (compliance, technical support).
+
+* **Contextual Understanding**: Nuanced evaluation requiring full conversation context.
+
+* **Advanced Decision-Making**: Sophisticated judgment calls beyond pattern matching.
+
+**Key Differentiators**:
+
+* High complexity handling vs. basic pattern matching
+
+* Autonomous decision-making with custom logic
+
+* Comprehensive contextual analysis
+
+* External AI agent integration is required
+
+**Used For**: Complex compliance assessments, technical troubleshooting evaluation, and sophisticated quality analysis.
+
+For the detailed configuration, see see [By AI Agent](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-ai-agent.md).
+
+## Managing Evaluation Metrics
+
+The process of managing evaluation metrics includes the following sections:
+
+**Metric Lifecycle Management**
+
+* **Creation**: Step-by-step configuration wizard
+
+* **Editing**: Real-time updates with validation
+
+* **Deletion**: Dependency resolution and cleanup
+
+* **Language Management**: Multilingual configuration and updates
+
+**Dependency Management**
+
+* **Form Associations**: Evaluation form linkage requirements
+
+* **Attribute Assignments**: Metric-to-attribute mapping
+
+* **Language Dependencies**: Active language protection
+
+* **Deletion Prerequisites**: Dependency resolution before removal
+
+### Edit or Delete Evaluation Metrics Type
+
+Steps to edit or delete existing Evaluation Metrics:
+
+1. Right-click on any existing **Evaluation Metric Type** to choose a measurement type, such as **By Question**, **By Value**.    
+<img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
+
+2. Click **Edit** to update any one of the selected **Edit Evaluation Metrics** measurement type fields.    
+<img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:70%;">
+
+3. Click **Delete** to remove the selected evaluation metric.
 
 4. Click **Update** to save the changes.

@@ -5,7 +5,7 @@ Contact Center supervisors can enable real-time streaming of LLM responses, redu
 Steps to enable LLM Streaming:
 
 1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Settings** > **Advanced Settings** > **LLM Streaming**.  
-    <img src="../images/advanced-settings-pages.png" alt="LLM Streaming" title="LLM Streaming" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/llm-streaming.png" alt="LLM Streaming" title="LLM Streaming" style="border: 1px solid gray; zoom:70%;">
 
 2. Turn on the toggle to enable LLM streaming.
 

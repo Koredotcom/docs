@@ -23,7 +23,7 @@ Steps to enable the feature:
 	
 ### Product Filter
 
-Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.  
+Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent, Contact Center). The users can easily add/remove this filter as needed.  
 <img src="../images/filter-and-search.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 	
 
@@ -139,9 +139,36 @@ Learn more about [Search AI - GenAI Features](genai-features-searchai.md).
 
 ## Agent AI - GenAI Features
 
-* Agent Response Rephrasing
+
+* Agent Coaching
+* Conversation Summary
 * Generating Opposite Utterance Suggestions
+* Generating Similar Answer Suggestions
 * Generating Similar Utterance Suggestions
+* Sentiment Analysis
 
 Learn more about [Agent AI - GenAI Features](genai-features-agentai.md).
+
+
+
+
+## Contact Center AI - GenAI Features
+
+
+
+* Agent Empathy Identification
+* Agent Response Rephrasing
+* By Value Adherence validation for Quality AI
+* By Value metric extraction for Quality AI
+* Churn & Escalation Identification
+* Conversation Summary
+* Crutch Word Usage Detection
+* Default Script Adherence
+* GenAI based agent answer adherence and customer trigger detection
+* Generating Similar QM Utterance Suggestions
+* Post-Interaction Sentiment Analytics and Key Emotion Moments
+* Sentiment Analysis
+* Topic Modelling
+
+Learn more about [Contact Center AI - GenAI Features](genai-features-contactcenterai.md).
 

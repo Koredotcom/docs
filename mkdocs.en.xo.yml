@@ -438,17 +438,18 @@ nav:
       - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
       - Widget Settings: contactcenter/configurations/widgets/configure-widgets.md
       - Wallboards: contactcenter/configurations/wallboards/configure-wallboards.md
-      - System Settings: 
-        - Co-Browse: contactcenter/configurations/settings/co-browse.md
-        - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
-        - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
-      - Advanced Settings:
-        - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
-        - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
-        - Reject Calls With a Delayed First Response: contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md
-        - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
-        - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
-        - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
+      - Settings:
+        - System Settings: 
+          - Co-Browse: contactcenter/configurations/settings/co-browse.md
+          - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
+          - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
+        - Advanced Settings:
+          - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
+          - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
+          - Reject Calls With a Delayed First Response: contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md
+          - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
+          - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
+          - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
     - Performance Management:
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
@@ -507,6 +508,14 @@ nav:
         - Evaluation Criteria:
             - Evaluation Forms: quality-management/configure/evaluation-forms.md
             - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
+        - Metrics Measurement Types: 
+            - By Question: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-question.md
+            - By Speech: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-speech.md 
+            - By Value: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-value.md 
+            - By Dialog Execution: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-dialog-execution.md 
+            - By Playbook Adherence: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-playbook-adherence.md 
+            - By AI Agent: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-ai-agent.md 
+
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Connectors: 
             - Introduction: quality-management/connectors/connector-intro.md
