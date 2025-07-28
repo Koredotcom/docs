@@ -44,17 +44,23 @@ Search AI supports two types of authentication for communication with GitHub.
 
 ## Prerequisites - GitHub Configuration 
 
-To use **a Personal Access Token** for authentication, go to the [Developer Settings](https://github.com/settings/tokens) in your GitHub account and generate a token. 
+To use **Personal Access Token** for authentication, go to the [Developer Settings](https://github.com/settings/tokens) in your GitHub account. Select Personal Access Tokens. Under Fine-grained tokens, click on Generate new token. Provide the details of the token. 
+
+
+* **Resource owner**: Select your **organization**.
+* **Repository access**: Choose **All repositories**.
+* Set the following required permissions and Save.
+
+![alt_text](images/github/permissions.png "Permissions")
+
 
 To use **OAuth authentication**, [register a new OAuth application](https://github.com/settings/developers). Provide the basic details of the app. Use one of the following as the callback URLs, depending on your region or deployment. 
-
-
 
 * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
 * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
 * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
 
-This will generate client credentials. [Use the device flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) and client credentials to manually create an access token using an API client tool, such as Postman. 
+This will generate a client ID. Click on Generate a new client secret to generate client secret for the client ID. [Use the device flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) and client credentials to manually create an access token using an API client tool, such as Postman. 
 
 
 ## GitHub Connector Configuration in Search AI

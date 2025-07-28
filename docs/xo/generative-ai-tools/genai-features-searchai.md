@@ -31,16 +31,137 @@ This feature helps generate an answer to the user question based on the data ing
 This feature helps create vector embeddings for all the ingested data in the Search AI application. When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
 
 ## Metadata Extractor Agent
-This feature is used to extracts relevant sources and fields from a query, map them to structured data, and apply filters or boosts for accurate retrieval. This is particularly useful for data from third party applications. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/).  
+This feature is used to extracts relevant sources and fields from a query, map them to structured data, and apply filters or boosts for accurate retrieval. This is particularly useful for data from third party applications. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/). 
+
+If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following structured format. 
+
+```
+{
+  "extractedMetaData": [
+    {
+      "sourceName": "string",
+      "chunkMeta": {
+        "metaKey1": ["value1", "value2"],
+        "metaKey2": ["value3"]
+      }
+    }
+  ],
+  "range": [
+    {
+      "createdOn": {
+        "gte": "YYYY-MM-DDTHH:MM:SSZ",
+        "lte": "YYYY-MM-DDTHH:MM:SSZ"
+      }
+    }
+  ],
+  "sourceIntent": true
+}
+```
+
+* extractedMetaData: Array of sources and their associated metadata.
+* range: date range filter. This is optional. 
+* sourceIntent: This is a boolean field that indicates if the source explicitly. 
+
 
 ## Query Rephrase for Advanced Search API
 This feature is used to add contextual information to the user queries and enhance them for relevance. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
 
+While using custom prompts for this feature, ensure that the LLM responds with a structure response as shown below. 
+
+```
+
+{
+  "rephrased_query": "string",
+  "confidence": "High",
+  "reasoning": "The rephrasing adds clarity and reflects the conversation context."
+}
+```
+
+* rephrased_query: The reworded version of the original user query.
+* confidence: Confidence level in the quality of rephrasing.
+* reasoning: Justification behind the transformation.
+
+
 ## Query Transformation
 This feature is used to identify key terms within a query, removing noise and prioritizing relevant documents. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
 
+If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following format. 
+```
+{
+  "query_processing": {
+    "original_query": "string",
+    "keyword_search_query": "string",
+    "vector_search_query": "string"
+  },
+  "core_terms": ["string"],
+  "semantic_expansions": ["string"],
+  "search_priority": {
+    "must_include": ["string"],
+    "should_include": ["string"],
+    "context_terms": ["string"]
+  }
+}
+
+```
+
+* query_processing: Describes how the original query is transformed to support different search strategies:
+    * original_query: The input query provided by the user.
+    * keyword_search_query: The version optimized for keyword-based search.
+    * vector_search_query: The version adapted for vector-based semantic search.
+* core_terms: The key terms extracted from the original query. This field is currently not used but reserved for future enhancements. 
+* semantic_expansions: Related or semantically similar terms. This field is currently not used but reserved for future use.
+* search_priority: Categorizes search terms based on their relevance and intended role in query resolution. This object must include three arrays of strings, each serving a distinct purpose in boosting logic during the search process:
+    *  must_include: Terms that are critical for high search relevance. These terms receive the strongest boost in content fields such as chunkText, chunkTitle, and recordTitle. 
+        * Can include single-word terms. 
+        * Ideal for pinpointing exact matches that are central to the query intent.
+    * should_include: Terms that provide a moderate relevance boost, enhancing result quality if present. 
+        * Must contain at least two words
+        * Useful for improving relevance without being overly restrictive.
+    * context_terms: Terms that offer light contextual boosting to enrich the semantic relevance of the query.
+        * Must contain at least two words
+        * Helps in disambiguating queries or adding background context.
+
+Example:
+```
+{
+    "query_processing": { 
+        "original_query": "what are the large language models which have large context window in them",
+        "keyword_search_query": "large language models large context window",
+        "vector_search_query": "large language models which have large context window"
+    },
+    "search_priority": {
+        "must_include": [
+            "large language models",
+            "large context window"
+        ],
+        "should_include": [
+            "models"
+        ],
+        "context_terms": [
+            "LLM"
+        ]
+    }
+}
+
+```
+
 ## Result Type Classification
+
 This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
+
+If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following format. 
+```
+{
+  "query_type": "TYPE_1/TYPE_2",
+  "confidence": "High",
+  "reasoning": "This query closely matches the definition of TYPE_1 based on its intent and phrasing."
+}
+```
+
+* query_type: Must be one of the defined enum values such as TYPE_1 or TYPE_2. Type_1 refers to Search Results and Type_2 refers to answers. 
+* confidence: String value indicating certainty (e.g., High, Medium, Low).
+* reasoning: A brief explanation for the chosen type.
+
 
 ## Rephrase User Query
 

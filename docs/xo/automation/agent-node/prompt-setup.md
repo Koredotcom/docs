@@ -26,7 +26,7 @@ Using the Conversations with Things framework, a conversation design methodology
 * Character traits: Identify core attributes of the virtual assistance personality, such as professionalism, friendliness, or humor, to ensure consistency in interactions.
 * Tone and key behavioral traits: Set the virtual assistance’s communication style, including formality, friendliness, and how it responds to user inquiries.
 
-The framework provides a structured approach to designing conversational experiences, ensuring that virtual assistants maintain consistency, align with user expectations, and create meaningful interactions.
+The framework provides a structured approach to designing conversational experiences, ensuring that AI Agents maintain consistency, align with user expectations, and create meaningful interactions.
 
 ## Types of Prompts
 
@@ -549,7 +549,7 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 <img src="../images/content-key.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
 
 11. In the Actual Response section, double-click the **Key** that should be used to generate the text response path. For example, double-click the **Content** key and click **Save**.
-12. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.  
+12. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the AI Agent’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.  
 <img src="../images/essentialkeysv1.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
 
 13. Enter the **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.

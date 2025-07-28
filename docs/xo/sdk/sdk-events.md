@@ -295,6 +295,176 @@ The event adds the following code in the Data object sent to kit:
 "event Type": "endDialog"/ "endFAQ"
 }
 ```
+### Contact Center Events (Real-Time BotKit Emission)
+
+ The platform emits a set of real-time **Contact Center Events** to the **BotKit channel** using the `onEventNode`. These events provide timely updates on key agent actions and conversation lifecycle changes (for example, agent acceptance, transfer, termination, etc.). 
+
+!!!Note
+
+     These events are only emitted for bots connected to the **BotKit channel.**
+
+
+#### agent_accepted
+
+Triggered when an agent accepts an incoming conversation.
+
+**Payload Includes:**
+
+`sessionId`, `agentId`, `agentName`, `assignedAt`, `acceptedAt`, `channelType`, `userId`, `conversationId`, `botId`, `queueId` 
+
+**Example Payload:**
+
+```
+"CCAIMetaInfo": {
+  "agentFullName": "nbksmartlocal ",
+  "agentEmail": "nbksmartlocal@mailinator.com",
+  "agentRole": "Administrator",
+  "agentId": "a-c0e6303-92db-453c-8ad2-5e545628xxxx",
+  "conversationId": "c-3043b67-4ccd-4e29-8579-52391e0xxxx",
+  "botId": "st-82e472f0-b757-5838-bec8-02eda050xxxx",
+  "orgId": "o-cf84dff6-199e-5dd5-ad55-95d70510xxxx",
+  "agentAssignedTime": "2025-07-04T07:35:03.336Z",
+  "agentAcceptedTime": "2025-07-04T07:35:36.017Z",
+  "queueId": "qu-1a32679-c7e2-40b4-9306-ac1e87b9xxxx",
+  "sessionId": "686784207f066ea8e0a1xxxx",
+  "source": "rtm"
+}
+```
+
+#### conversation_transfer
+
+Triggered when an agent transfers the chat to another agent or queue.
+
+**Payload Includes:**
+
+ `sessionId`, `fromAgentId`, `toAgentId` or `toQueueId`, `transferSummary`, `timestamp`
+
+**Example Payload:**
+
+```
+"CCAIMetaInfo": {
+  "conversationId": "c-3043b67-4ccd-4e29-8579-52391e08xxxx",
+  "botId": "st-82e472f0-b757-5838-bec8-02eda050xxxx",
+  "orgId": "o-cf84dff6-199e-5dd5-ad55-95d70510xxxx",
+  "sessionId": "686784207f066ea8e0a1xxxx",
+  "source": "rtm",
+  "transferSummary": {
+    "fromQueue": "qu-1a32679-c7e2-40b4-9306-ac1e87b9xxxx",
+    "fromAgent": "a-c0e6303-92db-453c-8ad2-5e545628xxxx",
+    "transferredByAgentName": "nbksmartlocal",
+    "transferredType": "OTHERS",
+    "transferredTo": [
+      {
+        "type": "AGENT",
+        "aId": "a-81b9991-1b19-4c38-b881-8513a4a2xxxx",
+        "id": "u-bd64378a-117c-52c4-a6ae-7fff5647xxxx",
+        "name": "nbk hero1",
+        "sipURI": "sip:support_production_a-81b9991-1b19-4c38-b881-8513a4a2490e@gautham.kore.ai:XXXX"
+      }
+    ],
+    "transferredBy": "u-a6808d57-9abd-5ce4-aa04-871d8a6axxxx",
+    "transferredByAId": "a-c0e6303-92db-453c-8ad2-5e545628xxxx",
+    "priority": "LOW",
+    "transferredAt": "2025-07-04T07:36:51.156Z",
+    "isManager": false,
+    "transferredByAgent": true,
+    "isWarmTransfer": false
+  }
+}
+```
+
+#### agent_joined_conversation
+
+Triggered when a user joins an ongoing conversation (conference style).
+
+**Payload Includes:**
+
+ `sessionId`, `agentId`, `timestampJoin`, `timestampLeave`
+
+**Example Payload:**
+
+```
+"CCAIMetaInfo": {
+  "conversationId": "c-3043b67-4ccd-4e29-8579-52391e08xxxx",
+  "botId": "st-82e472f0-b757-5838-bec8-02eda050xxxx",
+  "orgId": "o-cf84dff6-199e-5dd5-ad55-95d70510xxxx",
+  "sessionId": "686784207f066ea8e0axxxx",
+  "source": "rtm",
+  "agentId": "a-c0e6303-92db-453c-8ad2-5e545628xxxx",
+  "agentJoinedTime": "2025-07-04T07:37:57.460Z",
+  "agentName": "nbksmartlocal ",
+  "agentEmail": "nbksmartlocal@mailinator.com"
+}
+```
+
+#### agent_exited_conversation
+
+Triggered when an agent exits a conference conversation.
+
+**Payload Includes:**
+
+`sessionId`, `agentId`, `timestampJoin`, `timestampLeave`
+
+**Example Payload:**
+
+```
+"CCAIMetaInfo": {
+  "conversationId": "c-3043b67-4ccd-4e29-8579-52391e08xxxx",
+  "botId": "st-82e472f0-b757-5838-bec8-02eda050xxxx",
+  "orgId": "o-cf84dff6-199e-5dd5-ad55-95d70510xxxx",
+  "sessionId": "686784207f066ea8e0a1xxxx",
+  "source": "rtm",
+  "agentId": "a-c0e6303-92db-453c-8ad2-5e545628xxxx",
+  "agentJoinedTime": "2025-07-04T07:37:57.460Z",
+  "agentExitedTime": "2025-07-04T07:38:23.507Z",
+  "agentName": "nbksmartlocal ",
+  "agentEmail": "nbksmartlocal@mailinator.com"
+}
+```
+
+#### conversation_terminated
+
+Triggered when a conversation ends (by user, agent, or timeout).
+
+**Payload Includes:**
+
+`sessionId`, `agentId`, `userId`, `timestamp`, `dispositionSummary`, `dispositionSets`
+
+**Example Payload:**
+
+```
+"CCAIMetaInfo": {
+  "sessionId": "686784207f066ea8e0a1xxxx",
+  "conversationId": "c-3043b67-4ccd-4e29-8579-52391e08xxxx",
+  "botId": "st-82e472f0-b757-5838-bec8-02eda050xxxx",
+  "orgId": "o-cf84dff6-199e-5dd5-ad55-95d70510xxxx",
+  "source": "rtm",
+  "agentId": "a-81b9991-1b19-4c38-b881-8513a4a2xxxx",
+  "dispostionSummary":"The agent has closed the conversation as user didnot respond.",
+  "dispositionSets": [<set, code> pairs]
+}
+```
+
+#### disposition_submitted
+
+Triggered when a disposition code is submitted post-conversation.
+
+**Payload Includes:**
+
+`sessionId`, `agentId`, `dispositionCode`, `dispositionSummary`, `timestamp`
+
+**Example Payload:**
+
+```
+"CCAIMetaInfo": {
+  "conversationId": "c-3043b67-4ccd-4e29-8579-52391e08xxxx",
+  "agentId": "a-81b9991-1b19-4c38-b881-8513a4a2xxxx",
+  "sessionId": "686784207f066ea8e0a1xxxx",
+  "source": "rtm",
+  "orgId": "o-cf84dff6-199e-5dd5-ad55-95d70510xxxx",
+  "timestamp": "2025-07-04T07:39:58.648Z"
+}
+```
 
 ## OnAlert
 

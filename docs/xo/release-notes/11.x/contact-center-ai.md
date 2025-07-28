@@ -2,6 +2,86 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.16.0 July 26, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Improved Channel Identification with Distinct Interaction Icons**
+
+Introduced distinct icons for each interaction type—including inbound voice calls, callback requests, voicemails, emails, and chats—to enhance visual clarity and reduce agent confusion. Tooltips with localized labels appear on hover to support quick identification. These icons now appear consistently across the conversation tray, monitor tabs, and dashboard views. This update enables agents to prioritize real-time interactions, enhances supervisor visibility into queues, and aligns the visual design with enterprise workflows. [Learn more :octicons-arrow-right-24:](../../console/conversation-tray.md#incoming-conversation-types)
+
+**Auto-Prefill Country Code for External Consult Calls**
+
+The external consult call dialer now pre-fills the country code based on the agent’s last completed consult call, reducing manual input and speeding up outbound call setup. If no previous call exists, the field defaults to system settings or remains editable. Agents can override the pre-filled value before dialing, ensuring flexibility and minimizing call errors due to manual entry.
+
+**Reply All Functionality Added to Email Channel**
+
+The email interaction panel now includes the "Reply All" option alongside the existing "Reply" option. Agents can review and modify recipients before sending the message. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+<font size="4">Configuration</font>
+
+**Control Supervisor Join/Exit Notifications**
+
+Added a new system setting that allows administrators to disable supervisor join and exit notifications shown to end users during live conversations. This functionality is enabled by default, displaying messages when a supervisor joins or exits a chat. To disable the notifications, administrators can turn off the toggle. The setting takes effect in real time, persists across sessions, and is recorded in the audit logs for traceability. This update supports silent supervision and helps meet compliance or customer-specific requirements. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md)
+
+<img src="../images/supervisor-join-exit.png" alt="Supervisor Join/Exit Notification" title="Supervisor Join/Exit Notification" style="border: 1px solid gray; zoom:70%;">
+
+**Queue-Based Filtering for Response Templates**
+
+Added a new "Queue Match" toggle to the response group configuration settings, allowing administrators to control the visibility of standard responses based on the interaction queue. When enabled, responses in the group are shown only to agents handling conversations from selected queues. This setting works in combination with existing Skill Match and Agent Group Match filters, ensuring response templates appear only when all configured conditions are met. The feature enhances contextual relevance, improves agent efficiency, and helps enforce queue-specific communication standards. All updates take effect immediately and are recorded in audit logs. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/response-templates/manage-response-templates.md#create-a-response-group)
+
+**Voicemail Notification in General Alerts**
+
+The General Alerts system now includes voicemail-specific alerts to notify supervisors when unattended voicemail counts exceed defined thresholds or remain unresolved beyond a set duration. Admins can configure alerts per queue, define count and time thresholds, and select notification types such as toaster or email. Supervisors receive timely notifications to manage backlogs and uphold SLAs. All voicemail alerts are logged, auditable, and scalable for future expansion. [Learn more :octicons-arrow-right-24:](../../contactcenter/performance-management/slas-and-alerts.md#create-a-general-alert)
+
+<font size="4">Campaigns</font>
+
+**Support for Custom Object Fields in Proactive Web Campaign Rules**
+
+Proactive Web Campaigns now support rule evaluation using fields from a nested Visitor Object (custom object). This enhancement enables customers to:
+Push key-value pairs dynamically from the Visitor’s Object into the campaign rule engine.
+Evaluate these fields in real-time as part of campaign trigger conditions.
+Drive personalized campaigns based on visitor activity and custom attributes.
+This provides greater flexibility in targeting and responding to visitor behavior on web properties. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#chat)
+
+**New Built-in Fields for Proactive Web Campaign Rules**
+
+The Proactive Web Campaigns feature now supports four additional built-in fields for enhanced targeting:
+
+* **Device** (dropdown with a list of values): Supports operators – IS, CONTAINS, TEXT_BEFORE, TEXT_AFTER, STARTS_WITH, BEGINS_WITH.
+* **URL** (string): Supports the operators ‘IS’ and ‘CONTAINS’.
+* **PageName** (string): Supports the operators ‘IS’ and ‘CONTAINS’.
+These fields expand campaign rule flexibility based on user context and page metadata. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#chat)
+
+<font size="4">Analytics</font>
+
+**Supervisor Disposition Editing via Dashboard – Interaction Tab**
+
+Supervisors can now edit disposition codes for completed conversations directly from the Dashboard → Interaction Tab.
+
+* Editing is restricted to post-conversation only; agents retain control during live sessions.
+* Supervisor updates override previously submitted dispositions.
+* Alerts linked to updated disposition codes trigger as configured.
+* All edits are captured in logs and analytics. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#edit-dispositions-from-the-interactions-tab)
+
+Access is controlled via a new role-based permission: “Edit Disposition from Dashboard.”  [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+
+<font size="4">Integration</font>
+
+**Voice Automation and Agent AI Integration with Genesys Cloud CX via SIP Invite**
+
+The Voice Automation and Agent AI integration with Genesys Cloud CX via SIP Invite enables the following:
+
+* Transferring Voice calls that start in Contact Center AI to Genesys Cloud CX via SIP INVITE.
+* Passing session-specific metadata (such as Session ID) through SIP headers.
+* Automatically loading the Agent AI widget in the Genesys desktop with full bot context, using the existing voice stream from Kore to Agent AI—without needing Audiohook.
+
+<hr>
+
 ## v11.15.1 July 12, 2025
 
 <u>Patch Release</u>
@@ -254,7 +334,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Real-time Sentiment Capture and Visualization**
 
-The Agent Console now displays real-time sentiment updates and a clickable graph visualizing emotional shifts over time, enabling agents to respond more quickly and empathetically during live conversations, enhancing the customer experience with actionable insights into sentiment trends as they occur. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/real-time-sentiment-analysis.md)
+The Agent Console now displays real-time sentiment updates and a clickable graph visualizing emotional shifts over time, enabling agents to respond more quickly and empathetically during live conversations, enhancing the customer experience with actionable insights into sentiment trends as they occur. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/real-time-sentiment-analysis.md)
 
 **Voice Issue Reporting Enhancement**
 
@@ -478,7 +558,7 @@ Key benefits
     * Leverage external AI models for more flexible and accurate conversation summaries.
     * Ensure consistent summarization across multiple languages and use cases.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md)
+[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-based-conversation-summary.md)
 
 **Enable/Disable Conversations to Wait Till Queue Timeout**
 
@@ -708,7 +788,7 @@ Contact Center supervisors can enable real-time streaming of LLM responses to si
 Key updates:
 
 * Real-time streaming of rephrased responses.
-* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md)
+* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md)
 * Role-based access controls (Full Access for Admins/Supervisors). [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 <font size="4">Campaigns</font>
@@ -1137,7 +1217,7 @@ Key benefits:
 
 **Improved Welcome Event Handling**
 
-The “Reject calls with a delayed first response” setting allows admins to configure call handling for smoother user experiences. When enabled, the welcome event triggers only after the Conversation Server successfully sends the first message, eliminating dead air during call connections. This ensures more reliable call handling and improves customer interactions with the platform. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/reject-calls-with-delayed-first-response.md)
+The “Reject calls with a delayed first response” setting allows admins to configure call handling for smoother user experiences. When enabled, the welcome event triggers only after the Conversation Server successfully sends the first message, eliminating dead air during call connections. This ensures more reliable call handling and improves customer interactions with the platform. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md)
 
 **Nuance ASR and TTS No Longer Supported**
 

@@ -22,30 +22,30 @@ Clicking the sort icon allows you to sort the columns in ascending/descending or
 To monitor the agents:
 
 * On the **Monitor** tab, click the **Queue** tab.  
-<img src="../images/queues-tab.png" alt="Queues Tab" title="Queues Tab" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/queues-tab.png" alt="Queues Tab" title="Queues Tab" style="border: 1px solid gray; zoom:80%;">
 
 * On the left menu, click a queue that you want to view.  
-<img src="../images/queue-name.png" alt="Queue Name" title="Queue Name" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/queue-name.png" alt="Queue Name" title="Queue Name" style="border: 1px solid gray; zoom:80%;">
 
 * The queue screen appears as shown below:  
-<img src="../images/queue-details.png" alt="Queue Details" title="Queue Details" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/queues-details.png" alt="Queue Details" title="Queue Details" style="border: 1px solid gray; zoom:70%;">
 
 * Click the agent name. The detailed screen of the agent conversation opens up on the right.  
 
     **Chat**, **Messaging**, and **Voice**:  
 
     The assigned agent’s name is shown immediately upon assignment, even if the agent has not yet sent a response.  
-    <img src="../images/queue-detail.png" alt="Queue Information" title="Queue Information" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/agent-assigned.png" alt="Agent Assigned" title="Agent Assigned" style="border: 1px solid gray; zoom:70%;">
 
 ### Filter
 
 #### Create Filter
 
 1. Click the **Filter** button.  
-<img src="../images/filter-button.png" alt="Filter Button" title="Filter Button" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/filter-button.png" alt="Filter Button" title="Filter Button" style="border: 1px solid gray; zoom:80%;"> 
 
 2. Click **New Filter**.  
-<img src="../images/new-filter.png" alt="New Filter" title="New Filter" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/new-filter.png" alt="New Filter" title="New Filter" style="border: 1px solid gray; zoom:80%;"> 
 
 3. Select the **Queues**, **Channels**, **Type**, **State**, and **Languages**.
 
@@ -61,7 +61,7 @@ To monitor the agents:
 4. Click **Save & Apply**.
 
 5. On the pop-up window, enter a name (up to 20 characters) for the filter and click **Save & Apply**.  
-<img src="../images/save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">  
 
     A confirmation message is displayed and the filter is saved.
 
@@ -78,40 +78,40 @@ To monitor the agents:
 Steps to edit a filter:
 
 1. Click the **Filters** tab. The Saved Filter name appears.  
-<img src="../images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
 
 2. Click the **Edit** button.  
-<img src="../images/edit-button.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/edit-button.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;"> 
 
 3. Make the necessary changes and click **Save & Apply**.  
-<img src="../images/edit-queue-filters.png" alt="Save and Apply" title="Save and Apply" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/edit-queue-filters.png" alt="Save and Apply" title="Save and Apply" style="border: 1px solid gray; zoom:80%;">  
 
     A confirmation message is displayed and the filter is updated.
 
 #### Copy Filter
 
 1. Click the **Duplicate** button.  
-<img src="../images/duplicate-button.png" alt="Duplicate Button" title="Duplicate Button" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/duplicate-button.png" alt="Duplicate Button" title="Duplicate Button" style="border: 1px solid gray; zoom:80%;"> 
 
 2. On the Rename Filter window, enter a name for the filter and click **Save**.  
-<img src="../images/save-copy.png" alt="Save Button" title="Save Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/save-copy.png" alt="Save Button" title="Save Button" style="border: 1px solid gray; zoom:80%;">
 
     A confirmation is displayed and a copy of the filter is created.
 
 #### Mark as Default
 
 1. Click the **Mark as Default** button.  
-<img src="../images/mark-as-default.png" alt="Mark as Default Button" title="Mark as Default Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/mark-as-default.png" alt="Mark as Default Button" title="Mark as Default Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A confirmation message is displayed and the filter is marked as default.
 
 #### Delete Filter
 
 1. Click the **Delete** button.  
-<img src="../images/delete-saved-filter.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/delete-saved-filter.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A Delete Filter message appears. Click **Delete**.  
-<img src="../images/delete-filter-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/delete-filter-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">  
 
     A confirmation message is displayed and the filter is deleted.
 
@@ -123,13 +123,13 @@ Supervisors can monitor live conversations between agents and customers. The sup
 Steps to assign a conversation from the queue to an agent (including themselves):
 
 1. Select the conversation from the Queue on the right pane and click **Assign**.  
-<img src="../images/assign-queue.png" alt="Assign Button" title="Assign Button" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/assign.png" alt="Assign Button" title="Assign Button" style="border: 1px solid gray; zoom:80%;"> 
 
 2. A pop-up appears. Select the agent and assign the conversation to that agent.  
-<img src="../images/manual-assignment.png" alt="Manual Assignment" title="Manual Assignment" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/manual-assignment.png" alt="Manual Assignment" title="Manual Assignment" style="border: 1px solid gray; zoom:60%;">
 
 3. Select Mark as priority (optional) and click **Assign**.  
-<img src="../images/assign-to-agent.png" alt="Assign to Agent" title="Assign to Agent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/assign-to-agent.png" alt="Assign to Agent" title="Assign to Agent" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note
 
@@ -142,16 +142,16 @@ Supervisors can change the queue for a conversation. They can move a conversatio
 Steps to change the queue for a conversation:
 
 1. Go to **MONITOR** > **QUEUES**.  
-<img src="../images/queues-tab.png" alt="Queues Tab" title="Queues Tab" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/queues-tab.png" alt="Queues Tab" title="Queues Tab" style="border: 1px solid gray; zoom:70%;">
 
 2. Select a queue and then select the conversation.  
-<img src="../images/change-queue-conversation.png" alt="Select Conversation" title="Select Conversation" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/select-conversation.png" alt="Select Conversation" title="Select Conversation" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Change Queue**.  
-<img src="../images/change-queue.png" alt="Change Queue" title="Change Queue" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/change-queues.png" alt="Change Queue" title="Change Queue" style="border: 1px solid gray; zoom:70%;">
 
 4. On the Change Queue pop-up window, click the **Change Queue from** drop-down, select a queue, and then click Change Queue. Select Mark as priority to place the conversation at the top of the list in the destination queue.  
-<img src="../images/change-queue-from.png" alt="Change Queue Window" title="Change Queue Window" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/change-queue-from.png" alt="Change Queue Window" title="Change Queue Window" style="border: 1px solid gray; zoom:70%;">
 
     !!! Notes
 
@@ -194,10 +194,10 @@ If an agent selects a channel and logs out at the end of the day, the previously
         <img src="../images/agent-name-hover.png" alt="Agent Name Hover" title="Agents Name Hover" style="border: 1px solid gray; zoom:80%;">  
 
 * The load capacity indicator displays the agent’s overall load capacity. Hovering over the load shows the channel-wise load capacity—for example, Live Chat ⅔ (2 slots out of 3 defined slots are engaged) and the total digital conversation limit.
-<img src="../images/load-capacity-indication.png" alt="Load Capacity Indicator" title="Load Capacity Indicator" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/load-capacity-indication.png" alt="Load Capacity Indicator" title="Load Capacity Indicator" style="border: 1px solid gray; zoom:80%;">
 
 * On the monitor tab, select an agent on the left side. The supervisor can view the agent’s ongoing conversation on the right and check the engagement metrics.  
-<img src="../images/engagement-metrics.png" alt="Engagement Metrics" title="Engagement Metrics" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agents-details.png" alt="Engagement Metrics" title="Engagement Metrics" style="border: 1px solid gray; zoom:80%;">
 
 * On the right window, click the agent’s name.  Another window opens to the right as shown below. To check the agent engagement metrics, on the right window, click the down arrow as shown below:  
 
@@ -210,7 +210,7 @@ If an agent selects a channel and logs out at the end of the day, the previously
     <img src="../images/email-metrics.png" alt="Email Metrics" title="Email Metrics" style="border: 1px solid gray; zoom:70%;">
 
 * For a selected agent, the supervisor can check the agent profile, chat with the agent, change the queue, and assign the conversation to other agents as shown below:  
-<img src="../images/assign-change-queue.png" alt="Assign, Change Queue" title="Assign, Change Queue" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agents-assign-change-queues.png" alt="Assign, Change Queue" title="Assign, Change Queue" style="border: 1px solid gray; zoom:80%;">
 
 ### Filters
 
@@ -412,7 +412,7 @@ Supervisors can assign conversations to an agent, and change queues for conversa
 <img src="../images/manually-assign-change-queue.png" alt="Manually Assign/Change Queue" title="Manually Assign/Change Queue" style="border: 1px solid gray; zoom:80%;">
 
 Supervisors can also view an agent’s engagement metrics.  
-<img src="../images/interaction-engagement-metrics.png" alt="Agent Engagement Metrics Dropdown" title="Agent Engagement Metrics Dropdown" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/interaction-engagement-metrics.png" alt="Agent Engagement Metrics Dropdown" title="Agent Engagement Metrics Dropdown" style="border: 1px solid gray; zoom:70%;">
 
 ### Manually Assign a Bot-led Conversation to an Agent or Queue
 

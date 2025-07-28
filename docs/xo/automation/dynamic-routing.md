@@ -67,7 +67,7 @@ DialogGPT is an advanced Intent Detection and Conversation Management module tha
 * LLM-Powered Intent Resolution: An LLM resolves the shortlisted chunks and determines the winning intent. It could be an Intent, Multiple Intents, Answers, FAQs, Conversation Intents, Ambiguous Intents, or Small Talk.
 * Automated Event Handling: Default platform-provided event handlers are triggered based on the fulfillment type, ensuring smooth user interactions and dialog execution.
 * Clarifying Questions for Ambiguous Intents: When ambiguous intents are detected, clarifying questions are triggered for disambiguation
-* Simplified Training: There is no need for training utterances or invocation phrases for bot qualification. However, providing complete dialog descriptions is required for more accurate intent identification. 
+* Simplified Training: There is no need for training utterances or invocation phrases for AI Agent qualification. However, providing complete dialog descriptions is required for more accurate intent identification. 
 
 
 ## How the Dynamic Routing Works
@@ -109,11 +109,16 @@ Step to set up a Dynamic Routing:
 
 2. On the Component Properties tab, select Autonomy Level as **Orchestrated Autonomy**.
 3. In the Automation AI Options section, select **Use GenAI to dynamically route to linked apps**. If DialogGPT is disabled, follow the onscreen instructions to enable it.
+3. Use the [Message Prompt](../flows/node-types/message-prompt.md) if required.
 4. Click **+Link Apps**. The available apps to link are displayed.  
-<img src="../images/ua1.png" alt="Dynamic Routing" title="Dynamic Routing" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/link-apps.png" alt="Dynamic Routing" title="Dynamic Routing" style="border: 1px solid gray; zoom:80%;"> 
+
 5. Select the app(s) and click **Save**. The success message is displayed.
 6. To link more app, click **+Link App**. To unlink the apps, click unlink icon next to the app.  
 <img src="../images/ua3.png" alt="Dynamic Routing" title="Dynamic Routing" style="border: 1px solid gray; zoom:80%;"> 
+
+7. To unlink the app, click the unlink icon next to it.  
+<img src="../images/image3.png" alt="Dynamic Routing" title="Dynamic Routing" style="border: 1px solid gray; zoom:80%;"> 
 
 
 
