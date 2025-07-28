@@ -193,10 +193,10 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
     3. **Exclusions** Use Exclusion Rules to define conditions under which a campaign should not be triggered.
 
-    To add exclusions:  
+        To add exclusions:  
 
-    * Go to the Exclusions section.  
-    * Add rules using the same fields and options available in the main rule section.  
+        * Go to the Exclusions section.  
+        * Add rules using the same fields and options available in the main rule section.  
         <img src="../images/exclusions.png" alt="Exclusions" title="Exclusions" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
