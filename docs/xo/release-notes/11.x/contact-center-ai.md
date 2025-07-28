@@ -68,6 +68,16 @@ Supervisors can now edit disposition codes for completed conversations directly 
 
 Access is controlled via a new role-based permission: “Edit Disposition from Dashboard.”  [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
+<font size="4">Integration</font>
+
+**Voice Automation and Agent AI Integration with Genesys Cloud CX via SIP Invite**
+
+The Voice Automation and Agent AI integration with Genesys Cloud CX via SIP Invite enables the following:
+
+* Transferring Voice calls that start in Contact Center AI to Genesys Cloud CX via SIP INVITE.
+* Passing session-specific metadata (such as Session ID) through SIP headers.
+* Automatically loading the Agent AI widget in the Genesys desktop with full bot context, using the existing voice stream from Kore to Agent AI—without needing Audiohook.
+
 <hr>
 
 ## v11.15.1 July 12, 2025
