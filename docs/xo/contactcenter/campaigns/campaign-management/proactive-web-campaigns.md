@@ -167,29 +167,29 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
         You can use multiple rules together to build complex engagement strategies.
 
-    **Available Rule Options**
+        **Available Rule Options**
 
-    * Page Visit Count: Equals → Enter a number
-    * Time Spent: Equals → Enter time in seconds
-    * User: Is → known / anonymous
-    * Country: Is / Is Not → Enter country name
-    * State: Is / Is Not → Enter the state name
+        * Page Visit Count: Equals → Enter a number
+        * Time Spent: Equals → Enter time in seconds
+        * User: Is → known / anonymous
+        * Country: Is / Is Not → Enter country name
+        * State: Is / Is Not → Enter the state name
 
         <img src="../images/rule.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:70%;">
 
-    **Hover On**:
+        **Hover On**:
 
-    * Track when a visitor hovers over a specific element.
-    * Use an ID, class, or query selector from your website.
+        * Track when a visitor hovers over a specific element.
+        * Use an ID, class, or query selector from your website.
 
-    **To find a selector**:
+        **To find a selector**:
 
-    * Right-click the element on the page and select Inspect.
-    * Use the id, class, or right-click to Copy selector.
+        * Right-click the element on the page and select Inspect.
+        * Use the id, class, or right-click to Copy selector.
 
-    !!! Note
+        !!! Note
 
-        The above steps are specific to Chrome browser and might vary for other web browsers.  
+            The above steps are specific to Chrome browser and might vary for other web browsers.  
 
     3. **Exclusions** Use Exclusion Rules to define conditions under which a campaign should not be triggered.
 
