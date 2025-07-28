@@ -21,8 +21,9 @@ By setting up the Google Drive connector in Search AI, you can extend the search
   <tr>
    <td>File type Support
    </td>
-   <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html \
-Note: Password-protected files in any format are not supported
+   <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html 
+   
+   Note: Password-protected files in any format are not supported
    </td>
   </tr>
     <tr>
@@ -156,7 +157,7 @@ SearchAI application supports **file-level** permissions through Google Drive Co
 
 * **People with access**: SearchAI reads user information for the files and allows users to view them if they have permission to do so. Any user with view or read access to a file can access generated answers.
 
-For instance, if two users have read access to a file, corresponding indexed content will have the user information as shown below. \
+For instance, if two users have read access to a file, corresponding indexed content will have the user information as shown below.
 
 ![People With Access](images/googledrive/racl/example1.png "Example")
 
