@@ -32,6 +32,8 @@ Added a new system setting that allows administrators to disable supervisor join
 
 Added a new "Queue Match" toggle to the response group configuration settings, allowing administrators to control the visibility of standard responses based on the interaction queue. When enabled, responses in the group are shown only to agents handling conversations from selected queues. This setting works in combination with existing Skill Match and Agent Group Match filters, ensuring response templates appear only when all configured conditions are met. The feature enhances contextual relevance, improves agent efficiency, and helps enforce queue-specific communication standards. All updates take effect immediately and are recorded in audit logs. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/response-templates/manage-response-templates.md#create-a-response-group)
 
+<img src="../images/supervisor-join-exit.png" alt="Supervisor Join/Exit Notification" title="Supervisor Join/Exit Notification" style="border: 1px solid gray; zoom:70%;">
+
 **Voicemail Notification in General Alerts**
 
 The General Alerts system now includes voicemail-specific alerts to notify supervisors when unattended voicemail counts exceed defined thresholds or remain unresolved beyond a set duration. Admins can configure alerts per queue, define count and time thresholds, and select notification types such as toaster or email. Supervisors receive timely notifications to manage backlogs and uphold SLAs. All voicemail alerts are logged, auditable, and scalable for future expansion. [Learn more :octicons-arrow-right-24:](../../contactcenter/performance-management/slas-and-alerts.md#create-a-general-alert)
