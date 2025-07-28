@@ -161,20 +161,20 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
     To add rules:  
 
-    1. Click + Add Rule.  
-    2. Select a field, operator, and value to define the condition.  
+        1. Click **+ Add Rule**.  
+        2. Select a field, operator, and value to define the condition.  
 
-    You can use multiple rules together to build complex engagement strategies.
+        You can use multiple rules together to build complex engagement strategies.
 
     **Available Rule Options**
 
-    * Page Visit Count: Equals → Enter a number
-    * Time Spent: Equals → Enter time in seconds
-    * User: Is → known / anonymous
-    * Country: Is / Is Not → Enter country name
-    * State: Is / Is Not → Enter the state name
+        * Page Visit Count: Equals → Enter a number
+        * Time Spent: Equals → Enter time in seconds
+        * User: Is → known / anonymous
+        * Country: Is / Is Not → Enter country name
+        * State: Is / Is Not → Enter the state name
 
-        <img src="../images/rule.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/rule.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:70%;">
 
     **Hover On:**
 
@@ -189,9 +189,7 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
     !!! Note
 
         The above steps are specific to Chrome browser and might vary for other web browsers.  
-
-    <img src="../images/rules.png" alt="Rules" title="Rules" style="border: 1px solid gray; zoom:80%;">  
-
+ 
     3. **Exclusions** Use Exclusion Rules to define conditions under which a campaign should not be triggered.
 
     To add exclusions:  
