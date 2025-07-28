@@ -451,7 +451,7 @@ Triggered when a disposition code is submitted post-conversation.
 
 **Payload Includes:**
 
-* `sessionId`, `agentId`, `dispositionCode`, `dispositionSummary`, `timestamp`
+`sessionId`, `agentId`, `dispositionCode`, `dispositionSummary`, `timestamp`
 
 **Example Payload:**
 
