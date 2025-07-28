@@ -176,12 +176,12 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
     <img src="../images/rule.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:70%;">
 
-    **Hover On:**
+    **Hover On**:
 
     * Track when a visitor hovers over a specific element.
     * Use an ID, class, or query selector from your website.
 
-    **To find a selector:**
+    **To find a selector**:
 
     * Right-click the element on the page and select Inspect.
     * Use the id, class, or right-click to Copy selector.
@@ -189,7 +189,7 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
     !!! Note
 
         The above steps are specific to Chrome browser and might vary for other web browsers.  
- 
+
     3. **Exclusions** Use Exclusion Rules to define conditions under which a campaign should not be triggered.
 
     To add exclusions:  
