@@ -12,19 +12,22 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">LLM & Generative AI</font>
 
-**Contact Centre AI Filter Added in the GenAI Features Framework**
+**Contact Centre AI Filter Added in the GenAI Features Framework**  
+
 Contact Center AI (CCAI) has been integrated into the product filtering framework for Generative AI Tools along with Automation AI, Search AI, and Agent AI, providing uniform visibility, searchability, and contextual filtering across all products. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md)
-<hr>
 
 <font size="4">App Setting</font>
 
-**Tagalog Language Detection Support**
+**Tagalog Language Detection Support**  
+
 AI for Service now accurately identifies Tagalog, ensuring the accurate classification of Tagalog utterances and enabling seamless multilingual app experiences.
 
 <font size="4">BotKit</font>
 
-**BotKit Events for Key Contact Center Actions**
+**BotKit Events for Key Contact Center Actions**  
+
 BotKit now emits key contact center events (agent acceptance, transfers, session closure, disposition submission, and join/leave actions) with structured JSON payloads, enabling real-time CRM sync via customer-defined logic. Admins can configure event types from the BotKit settings panel, with support for retry mechanisms, custom headers, and full traceability logging. [Learn more :octicons-arrow-right-24:](../../sdk/sdk-events.md#onevent)
+
 <hr>
 
 ## v11.15.1 July 12, 2025
