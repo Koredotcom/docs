@@ -14,7 +14,7 @@ Click the three dots (more icons) for any welcome flow and select the required o
 
 The settings allow you to configure Automation Node settings, including selecting the autonomy level for Automation AI, Automation AI options, Agentic App Configurations, connection rules, and error prompts. [Learn more](./node-types/automation.md).  
 
-<img src="../images/routing-modes1.png" alt="Automation Routing" title="Automation Routing" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/automation-setting-with-message.png" alt="Automation Routing" title="Automation Routing" style="border: 1px solid gray; zoom:80%;">
 
 
 ## Manager Linked Apps

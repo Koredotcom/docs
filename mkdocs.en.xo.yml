@@ -490,8 +490,7 @@ nav:
         - Dashboard:
           - Supervisor Dashboard: quality-management/analyze/dashboard.md
           - Supervisor View (Agent-Specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
-          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md
-          - Agent Dashboard Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md                
+          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                          
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
@@ -510,9 +509,6 @@ nav:
             - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
         - Metrics Measurement Types: 
             - By Question: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-question.md
-            - By Speech: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-speech.md 
-            - By Value: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-value.md 
-            - By Dialog Execution: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-dialog-execution.md 
             - By Playbook Adherence: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-playbook-adherence.md 
             - By AI Agent: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-ai-agent.md 
 
@@ -522,7 +518,7 @@ nav:
             - Amazon S3: quality-management/connectors/amazon-s3.md
         - Settings: 
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
-          - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
+          - Quality AI General Settings: quality-management/configure/quality-ai-general-settings.md
           - Language Settings: quality-management/configure//langauge-settings.md
     - Case Management:
       - About Case Management: case-management/case-management.md
@@ -602,6 +598,7 @@ nav:
       - Automation AI - GenAI Features: generative-ai-tools/genai-features-automationai.md
       - Search AI - GenAI Features: generative-ai-tools/genai-features-searchai.md
       - Agent AI - GenAI Features: generative-ai-tools/genai-features-agentai.md
+      - Contact Center AI - GenAI Features: generative-ai-tools/genai-features-contactcenterai.md
     - DialogGPT:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md

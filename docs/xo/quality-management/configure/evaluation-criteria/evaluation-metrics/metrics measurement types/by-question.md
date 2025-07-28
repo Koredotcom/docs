@@ -162,7 +162,7 @@ b. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Pu
 
 10. Choose an **Agent Answer** adherence type.
 
-#### Agent Answer Configuration
+#### Agent Answer
 
 * **GenAI-Based Adherence**: Use AI and natural language understanding (LLM) to detect meaning, context, and intent. This evaluates whether the agent's answer fulfills the **intents**, even if phrased differently.
 
