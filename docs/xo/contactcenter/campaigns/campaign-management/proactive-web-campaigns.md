@@ -154,12 +154,13 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 <img src="../images/preview-section.png" alt="Preview Setion" title="Preview Section" style="border: 1px solid gray; zoom:80%;">
 
 8. Click the **Engagement Strategy** tab and configure the following:
+
     1. **Website**: Click the **+ Add Website** button and select the **URL**/**Page Name**. URLs are crucial for directing users to specific web pages, tracking campaign performance, and optimizing user experience, ultimately enhancing audience engagement and conversion rates. Select the URL and the condition about what the URL contains.  
-    <img src="../images/engagemet-strategy.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/engagemet-strategy.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:80%;">
 
     2. **Rules**: Rules define when a Proactive Web Campaign (PWC) should engage with a website visitor. Use rules to target visitors based on who they are, what they're doing, and where they are on the site.
 
-    To add rules:  
+        To add rules:  
 
         1. Click **+ Add Rule**.  
         2. Select a field, operator, and value to define the condition.  
@@ -168,13 +169,13 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
     **Available Rule Options**
 
-        * Page Visit Count: Equals → Enter a number
-        * Time Spent: Equals → Enter time in seconds
-        * User: Is → known / anonymous
-        * Country: Is / Is Not → Enter country name
-        * State: Is / Is Not → Enter the state name
+    * Page Visit Count: Equals → Enter a number
+    * Time Spent: Equals → Enter time in seconds
+    * User: Is → known / anonymous
+    * Country: Is / Is Not → Enter country name
+    * State: Is / Is Not → Enter the state name
 
-    <img src="../images/rule.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/rule.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:70%;">
 
     **Hover On**:
 
