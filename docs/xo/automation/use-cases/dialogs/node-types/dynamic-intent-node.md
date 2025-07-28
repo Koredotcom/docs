@@ -138,5 +138,6 @@ The Connection Path property offers three default variants:
 <hr>
 
 **Related Links**  
+
 * [Using Session and Context Variables in Tasks](../../../using-session-and-context-variables)  
 * [Context Object](../../../intelligence/context-object.md)
