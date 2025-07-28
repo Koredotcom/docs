@@ -295,7 +295,7 @@ The event adds the following code in the Data object sent to kit:
 "event Type": "endDialog"/ "endFAQ"
 }
 ```
-### **Contact Center Events (Real-Time BotKit Emission)**
+### Contact Center Events (Real-Time BotKit Emission)
 
  The platform emits a set of real-time **Contact Center Events** to the **BotKit channel** using the `onEventNode`. These events provide timely updates on key agent actions and conversation lifecycle changes (for example, agent acceptance, transfer, termination, etc.). 
 
@@ -304,7 +304,7 @@ The event adds the following code in the Data object sent to kit:
      These events are only emitted for bots connected to the **BotKit channel.**
 
 
-**1. <code>agent_accepted</code></strong>**
+#### agent_accepted
 
 Triggered when an agent accepts an incoming conversation.
 
@@ -331,9 +331,7 @@ Triggered when an agent accepts an incoming conversation.
 }
 ```
 
-
-
-**2. <code>conversation_transfer</code></strong>**
+#### conversation_transfer
 
 Triggered when an agent transfers the chat to another agent or queue.
 
@@ -361,7 +359,7 @@ Triggered when an agent transfers the chat to another agent or queue.
         "aId": "a-81b9991-1b19-4c38-b881-8513a4a2xxxx",
         "id": "u-bd64378a-117c-52c4-a6ae-7fff5647xxxx",
         "name": "nbk hero1",
-        "sipURI": "sip:support_production_a-81b9991-1b19-4c38-b881-8513a4a2490e@gautham.kore.ai:5060"
+        "sipURI": "sip:support_production_a-81b9991-1b19-4c38-b881-8513a4a2490e@gautham.kore.ai:XXXX"
       }
     ],
     "transferredBy": "u-a6808d57-9abd-5ce4-aa04-871d8a6axxxx",
@@ -375,7 +373,7 @@ Triggered when an agent transfers the chat to another agent or queue.
 }
 ```
 
-**3. <code>agent_joined_conversation</code></strong>**
+#### agent_joined_conversation
 
 Triggered when a user joins an ongoing conversation (conference style).
 
@@ -399,13 +397,11 @@ Triggered when a user joins an ongoing conversation (conference style).
 }
 ```
 
-**4. <code>agent_exited_conversation</code></strong>**
+#### agent_exited_conversation
 
 Triggered when an agent exits a conference conversation.
 
 **Payload Includes:**
-
-
 
 `sessionId`, `agentId`, `timestampJoin`, `timestampLeave`
 
@@ -415,7 +411,7 @@ Triggered when an agent exits a conference conversation.
 "CCAIMetaInfo": {
   "conversationId": "c-3043b67-4ccd-4e29-8579-52391e08xxxx",
   "botId": "st-82e472f0-b757-5838-bec8-02eda050xxxx",
-  "orgId": "o-cf84dff6-199e-5dd5-ad55-95d705107b44",
+  "orgId": "o-cf84dff6-199e-5dd5-ad55-95d70510xxxx",
   "sessionId": "686784207f066ea8e0a1xxxx",
   "source": "rtm",
   "agentId": "a-c0e6303-92db-453c-8ad2-5e545628xxxx",
@@ -426,7 +422,7 @@ Triggered when an agent exits a conference conversation.
 }
 ```
 
-**5. <code>conversation_terminated</code></strong>**
+#### conversation_terminated
 
 Triggered when a conversation ends (by user, agent, or timeout).
 
@@ -449,9 +445,7 @@ Triggered when a conversation ends (by user, agent, or timeout).
 }
 ```
 
-
-
-**6. <code>disposition_submitted</code></strong>**
+#### disposition_submitted
 
 Triggered when a disposition code is submitted post-conversation.
 
