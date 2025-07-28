@@ -3,6 +3,50 @@
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
 
+## v11.16.0 July 26, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">DialogGPT</font>
+
+
+
+**Enhanced DialogGPT Batch Testing Framework** 
+
+
+The DialogGPT batch testing framework now supports the validation of specific Conversational Intent Types (e.g., Hold, Restart, Refuse, End, Agent Transfer, Repeat) within test cases, enabling direct testing of how AI agents handle key conversational events. This enhancement improves test coverage, accuracy, and reliability of AI agent performance. [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md#validate-specific-conversational-intent-types)
+
+ 
+<font size="4">Agent Transfer</font>
+
+**Enhanced Salesforce MIAW Agent Integration** 
+
+
+Salesforce MIAW Agent Integration now includes agent name display, real-time read receipts for both parties, automatic inactivity timeout, and UI-based management of standard responses and stop words. These enhancements improve agent experience, streamline session handling, and simplify configuration directly through the interface. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#additional-capabilities)
+
+
+<font size="4">Dialog Builder</font>
+
+**Entity Reuse Across Dialog Flows** 
+
+
+A new configurable flag, ‘reuseEntityWords: true’, at the Dynamic Intent Node and Dialog Node levels allows entity values extracted in a parent dialog to be automatically available and reusable in downstream dialogs without re-prompting. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/dynamic-intent-node.md#entity-pre-assignments)
+
+
+<font size="4">NLP</font>
+
+**Removal of Precondition for Confusion Matrix Generation**
+
+The Confusion Matrix now generates based on available data without requiring every configured intent to have at least one utterance, removing previous restrictions. This enables more flexible and iterative model evaluation, especially when working with incomplete datasets during early-stage development. [Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/model-validation.md#confusion-matrix)
+
+
+
+
+<hr>
+
+
 ## v11.15.1 July 12, 2025
 
 <u> Patch Release </u>
