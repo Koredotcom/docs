@@ -163,6 +163,6 @@ Use the flag, `'reuseEntityWords: true',` as part of the pre-conditions to enabl
 
 <hr>
 
-**Related Links**
-* [Using Session and Context Variables in Tasks](../../../using-session-and-context-variables)
+**Related Links**  
+* [Using Session and Context Variables in Tasks](../../../using-session-and-context-variables)  
 * [Context Object](../../../intelligence/context-object.md)

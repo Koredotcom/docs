@@ -60,9 +60,7 @@ To update an already enabled language for an assistant, follow the below steps:
 !!! note
 
     - After you have configured a new language, to make the new language work, you must re-publish the AI Agent. Until then, the AI Agent continues to function with the previously published languages.  
-    - The default Synonym library is available only for English, French, Spanish, German, and Chinese languages. However, you can add custom synonyms for any language.  
-    - **Tagalog Language Support—** Tagalog is supported only when it is the sole language enabled in the App. Since it uses the English alphabet, the system cannot reliably detect it when other languages are enabled in the same App.
-
+    - The default Synonym library is available only for English, French, Spanish, German, and Chinese languages. However, you can add custom synonyms for any language.
 
 ## Switching Languages 
 

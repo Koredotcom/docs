@@ -122,9 +122,9 @@ Note:
 
 SearchAI supports access control for content ingested using the **Confluence Data Center Connector**. To enable access control on the content, go to the **Permissions and Security** tab and select **Permission Aware** access.
 
-* **Permission Aware** honors the permissions of a user in Confluence Server. Users can only view search results for content they are permitted to access within the Confluence instance. \
+* **Permission Aware** honors the permissions of a user in Confluence Server. Users can only view search results for content they are permitted to access within the Confluence instance.
 
-* **Public Access** overrides native Confluence permissions, making all ingested content visible to all users in SearchAI regardless of actual access in Confluence. \
+* **Public Access** overrides native Confluence permissions, making all ingested content visible to all users in SearchAI regardless of actual access in Confluence.
 
 #### Prerequisites
 
