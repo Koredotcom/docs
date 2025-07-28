@@ -119,15 +119,16 @@ userSessionUtils.setVoiceChatUserLang("de");
 
 Agent Utils is a library available for any programmatic modifications or updates you (the developer) may want to make.
 
-### Change SIP URI and Phone Number
+### Change SIP URI, Phone Number, and set Referred by
 
-Using the following Agent Utils method/script, you can change the SIP URI and the phone number.
+Using the following Agent Utils method/script, you can change the SIP URI,  phone number, and set the Referred by number of your choice.
 
 Syntax
 
 ```
 agentUtils.setTransferSipURI( {{sip URI}} )
 agentUtils.setTransferPhoneNumber( {{phoneNumber}} )
+agentUtils.setReferredBy("+1xxxxxxxxx")
 ```
 
 Example
@@ -135,6 +136,7 @@ Example
 ```
 agentUtils.setTransferSipURI("sip:+123344234000@2.3.4.5:5060")
 agentUtils.setTransferPhoneNumber("+12345434000")
+agentUtils.setReferredBy("+1902323242424")
 ```
 
 ### Set User Info

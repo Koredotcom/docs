@@ -75,6 +75,9 @@ The following table describes the `Context` object keys. These can be classified
 <code>         context.accdata[0].transfers.length);</code>
 <p>
 <code>  }</code>
+
+Use the flag, `'reuseEntityWords: true',` as part of the pre-conditions to enable entity values extracted in a parent dialog to be automatically available and reused in downstream dialogs without needing to prompt the user again.
+
    </td>
   </tr>
   <tr>

@@ -1,4 +1,4 @@
-# Agent Dashboard
+# Agent Dashboard (Agent View)
 
 ## Overview
 
@@ -25,7 +25,7 @@ Access **My Dashboard** by navigating to **Contact Center AI** > **Quality AI** 
 
 !!! Note
 
-    A Supervisor or Admin must enable the following settings for the dashboard to load your personalized performance data, automated scoring, and interaction access.
+    A Supervisor or Admin must enable the following settings for the dashboard to load your personalized performance data, automated scoring, and interaction access:
 
     * Auto QA
 
@@ -34,6 +34,7 @@ Access **My Dashboard** by navigating to **Contact Center AI** > **Quality AI** 
     * Agent Access to Scored Interactions
 
 You can find these configurations options under:
+
 **Configure** > **Settings** > **Quality AI General Settings**.
 
 ### Filter Options

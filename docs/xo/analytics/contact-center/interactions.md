@@ -14,7 +14,7 @@ To view the Interactions dashboard, follow the steps:
     * LANGUAGE (Icon): The language of the conversation.
     * CHANNEL (Icon): The Channel of the conversation – Voice, Chat, or Email.
 
-    If the Replace Customer column data with User ID functionality is enabled, the Customer column displays the User ID. [Learn more](../../contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md).  
+    If the Replace Customer column data with User ID functionality is enabled, the Customer column displays the User ID. [Learn more](../../contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md).  
     <img src="../images/user-id-column.png" alt="User ID Column" title="User ID Column" style="border: 1px solid gray; zoom:80%;">  
 
 * ACTIONS: You can download recordings and transcripts, and copy the following Identifiers:
@@ -145,6 +145,34 @@ Steps to Preview and Download Events:
         11. After-Call Work (ACW)  
         12. Conversation Closure  
 
+## Edit Dispositions from the Interactions Tab
+
+Supervisors can edit or override disposition codes after a conversation ends. Agents assign dispositions during live sessions, but once the session completes, supervisors can review and revise the assigned codes directly from the Interactions Tab. This capability ensures accurate categorization of interactions and supports streamlined post-conversation workflows. Administrators can enable this functionality for specific roles. [Learn more](../../user-management/role-management.md#permissions).
+
+Key Highlights:
+
+* Improved auditing and compliance
+* Accurate reporting and resolution tracking
+* Reduced dependency on agents for post-call updates
+* Agents receive a notification when a supervisor updates a disposition.
+
+Steps to edit dispositions:
+
+1. Select a completed interaction for which the disposition has to be revised.
+2. Select the **DETAILS** tab in the Insights to Logs window.
+3. Click **Edit Disposition**.  
+    <img src="../images/edit-disposition-button.png" alt="Edit Disposition" title="Edit Disposition" style="border: 1px solid gray; zoom:70%;">
+
+4. Make the necessary changes to the dispositions and click **Save**.  
+    <img src="../images/edit-disposition-pop-up.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:70%;">
+
+5. Click **View Logs**.  
+    <img src="../images/view-logs.png" alt="View Logs" title="View Logs" style="border: 1px solid gray; zoom:70%;">  
+
+    The disposition logs are displayed.
+
+    <img src="../images/disposition-log-details.png" alt="Disposition Log Details" title="Disposition Log Details" style="border: 1px solid gray; zoom:70%;">  
+
 ## Filters
 
 To avoid repeatedly filtering your choices, you can create and save multiple filters on the Interactions tab.
@@ -152,13 +180,13 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 ### Create Filter
 
 1. Click the **Filter** button.  
-<img src="../images/create-filters-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **New Filter**.  
-<img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:70%;">
 
 3. Select the IDs, Queues, Channels, Agents, Status, CSAT, and Custom Tags.  
-<img src="../images/create-filters-3.png" alt="Create Filters 3" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-3.png" alt="Create Filters 3" title="Create Filters 1" style="border: 1px solid gray; zoom:70%;">
 
     Select from the below available options:
     1. Clear – Clears the selection.
@@ -167,7 +195,7 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 
 4. Click **Save & Apply**.
 5. On the pop-up window, enter a name for the filter and click **Save & Apply**.  
-<img src="../images/create-filters-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:70%;">
 
 A confirmation message is displayed, and the filter is created.
 

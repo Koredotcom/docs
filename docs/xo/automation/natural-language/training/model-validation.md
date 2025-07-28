@@ -1,6 +1,6 @@
 # Model Validation
 
-Once you have built your virtual assistant and trained it, the XO Platform builds an ML model mapping user utterance with intents. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/){:target="_blank"}.
+Once you have built your AI Agent and trained it, the XO Platform builds an ML model mapping user utterance with intents. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/){:target="_blank"}.
 
 Once created, it is recommended to validate the model to understand and estimate an unbiased generalization performance of the ML model.
 
@@ -106,7 +106,7 @@ The utterances falling into the _False_ quadrants need immediate attention. Thes
 
 !!!note
 
-    At least one utterance must be added to the bot, and the confusion matrix becomes available only after successful model validation.
+    A minimum of one utterance must be added to the AI Agent, and the Confusion Matrix will be available only after the model is successfully validated. The matrix includes only those intents that have utterances present in the training dataset.
 
 <img src="../images/confusion-matrix.jpg" alt="confusion matrix" title="confusion matrix" style="border: 1px solid gray; zoom:75%;">
 

@@ -13,6 +13,20 @@ The conversation tray divides conversations into different statuses, which are d
 * **After Call Work (ACW)**: ACW refers to the post-call tasks or activities that agents perform immediately after ending a conversation with a customer.  
     <img src="../images/conversation-status.png" alt="Conversation Status" title="Conversation Status" style="border: 1px solid gray; zoom:60%;">
 
+## Incoming Conversation Types
+
+Distinct icons for each communication channel ensure clarity and better interaction handling. Unique visual identifiers and tooltips for each interaction type support faster recognition and decision-making.  
+
+<img src="../images/voice-call.png" alt="Voice Call" title="Voice Call" style="border: 1px solid gray; zoom:70%;">  
+
+<img src="../images/courtsey-callback.png" alt="Courtesy Callback" title="Courtesy Callback" style="border: 1px solid gray; zoom:70%;">  
+
+<img src="../images/voice-chat.png" alt="Voice Chat" title="Voice Chat" style="border: 1px solid gray; zoom:70%;">  
+
+<img src="../images/voice-mail.png" alt="Voice Mail" title="Voice Mail" style="border: 1px solid gray; zoom:70%;">  
+
+<img src="../images/email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;">  
+
 ## Color Codes
 
 Color codes help in easy identification and better readability of conversations on digital channels.
