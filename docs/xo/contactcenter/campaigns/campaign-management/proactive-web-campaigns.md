@@ -177,16 +177,13 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
         | User             | String    | Is (known / anonymous)                 |
         | Country          | String    | Is                                     |
         | State            | String    | Is                                     |
+        | City             | String    | Is                                     |
         | Device           | String    | Is (Mobile / Laptop / Tablet)          |
         | URL              | String    | Contains, Ends With                    |
         | Page Name        | String    | Is, Contains                           |
+        | Hover On         | String    | ID, Class, and Query Selector                           |
 
         The NOT operator can be applied at each condition level to invert any condition.
-
-        **Hover On**:
-
-        * Track when a visitor hovers over a specific element.
-        * Use an ID, class, or query selector from your website.
 
         **To find a selector**:
 
@@ -208,22 +205,6 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
     !!! Note
 
         When creating a campaign using an existing template, any predefined rules from the template will appear in the Rules section as a single group. You can view and edit them during campaign creation.
-
-    **Supported Operators**
-
-    Depending on the selected field, the following operators may appear:
-
-    * Equals
-    * Contains
-    * Greater Than
-    * Less Than
-    * Is At Least
-    * Is At Most
-    * Text Before
-    * Text After
-    * Date Before
-    * Date After
-    * Ends With
 
     **Custom Condition**
 
