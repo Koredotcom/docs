@@ -10,7 +10,7 @@ By leveraging these connectors, organizations can deliver a **unified and intell
 
 **Connectors** allow the application to integrate with third-party platforms by establishing a secure connection and enabling seamless data ingestion via the APIs exposed by the applications. Once the connection is configured and authentication is completed, data from the third-party application is ingested, indexed, and made available for search within Search AI.
 
-The **access privileges **of the content are maintained as per the privileges assigned to the user in the third-party repository. This ensures that only the files accessible to the user in the third-party application are visible to the user via Search AI as well. 
+The **access privileges** of the content are maintained as per the privileges assigned to the user in the third-party repository. This ensures that only the files accessible to the user in the third-party application are visible to the user via Search AI as well. 
 
 During each synchronization cycle, the connector performs **incremental updates**, retrieving only newly added or modified data based on change timestamps. Any content that has already been indexed and remains unchanged is skipped, ensuring efficient and optimized syncing.
 
@@ -116,7 +116,8 @@ Use the **Test Script** option to validate your transformation and verify the ou
 
 To enable or disable RACL in the supported connectors, go to the **Permissions** page and select one of the following.
 
-* **Same users as in the source system (Restricted Access):** Automatically syncs the permission information for the ingested content from the third-party application.
+* **Same users as in the source system (Restricted Access):** Automatically applies the same permissions from the source system, ensuring secure and seamless access to ingested content. If a scheduler is configured, permissions are updated at defined intervals to reflect changes in the source system.
+
 * **Everyone(Public Access)**: Irrespective of the permissions in the third-party application, the ingested content is accessible to all SearchAI users. 
 
 You can verify the permissions imported in the ingested content in the <code>sys_racl</code></strong>
@@ -124,7 +125,7 @@ You can verify the permissions imported in the ingested content in the <code>sys
 field in the JSON view of the corresponding content.
 
 
-For more information on RACL implementation in Search AI, refer to [this](racl-support.md). 
+For more information about RACL implementation in Search AI, see [RACL support](racl-support.md). 
 
 
 ## Sync and Ingest Content

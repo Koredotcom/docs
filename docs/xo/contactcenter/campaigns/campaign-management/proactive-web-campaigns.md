@@ -165,22 +165,25 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
         1. Click **+ Add Rule**.  
         2. Select a field, operator, and value to define the condition.  
 
-        You can use multiple rules together to build complex engagement strategies.
-
-        **Available Rule Options**
-
-        * Page Visit Count: Equals → Enter a number
-        * Time Spent: Equals → Enter time in seconds
-        * User: Is → known / anonymous
-        * Country: Is / Is Not → Enter country name
-        * State: Is / Is Not → Enter the state name
-
+        You can use multiple rules together to build complex engagement strategies.  
         <img src="../images/rule.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:70%;">
 
-        **Hover On**:
+        **Available Built-in Rule Fields and Supported Operators**
 
-        * Track when a visitor hovers over a specific element.
-        * Use an ID, class, or query selector from your website.
+        | **Field**            | **Data Type** | **Supported Operators**            |
+        |------------------|-----------|----------------------------------------|
+        | Page Visit Count | Number    | Equals                                 |
+        | Time Spent       | Number    | Equals                                 |
+        | User             | String    | Is (known / anonymous)                 |
+        | Country          | String    | Is                                     |
+        | State            | String    | Is                                     |
+        | City             | String    | Is                                     |
+        | Device           | String    | Is (Mobile / Laptop / Tablet)          |
+        | URL              | String    | Contains, Ends With                    |
+        | Page Name        | String    | Is, Contains                           |
+        | Hover On         | String    | ID, Class, and Query Selector                           |
+
+        The NOT operator can be applied at each condition level to invert any condition.
 
         **To find a selector**:
 
@@ -203,57 +206,56 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
         When creating a campaign using an existing template, any predefined rules from the template will appear in the Rules section as a single group. You can view and edit them during campaign creation.
 
-**Supported Operators**
+    **Custom Condition**
 
-Depending on the selected field, the following operators may appear:
+    If your site sends additional visitor information, you can use it in rules. These appear as selectable fields when adding a rule/exclusion.
 
-* Is
-* Is Not
-* Equals
-* Contains
-* Greater Than
-* Less Than
-* Is At Least
-* Is At Most
-* Text Before
-* Text After
-* Date Before
-* Date After
-* Ends With
+    Click **+ Add Custom Condition** to create your own rule. Campaign managers can configure the custom values (in JSON format) as:
 
-**Custom Condition**
+    `Custom Field Name(Key Name), operator from the defined operators list, and value`   
+    <img src="../images/custom-condition.png" alt="Custom Condition" title="Custom Condition" style="border: 1px solid gray; zoom:70%;">
 
-If your site sends additional visitor information, you can use it in rules. These appear as selectable fields when adding a rule/exclusion.
+    **Supported Custom Condition Operators**
 
-Click **+ Add Custom Condition** to create your own rule. Campaign managers can configure the custom values (in JSON format) as:
+    Depending on the selected field, the following operators may appear:
 
-`Custom Field Name(Key Name), operator from the defined operators list, and value`
+    * Equal
+    * Begins With
+    * Ends With
+    * Contains
+    * Greater Than
+    * Greater or Equal
+    * Less Than
+    * Less or Equal
+    * Between
+    * In
 
-For Example:
+    **Example Field Names**
 
-* name
-* Details.location
-* details.cart[0].productName  
-<img src="../images/custom-condition.png" alt="Custom Condition" title="Custom Condition" style="border: 1px solid gray; zoom:70%;">
+    ```
+    name
+    details.location
+    details.cart[0].productName
+    ```
 
-Sample JSON
+    **Sample JSON**
 
-```
-{
-  "name": "Kore",
-  "details": {
-    "location": "India",
-    "cart": [{
-      "productName": "AI as Service",
-      "isActive": true
-    },
+    ```
     {
-      "productName": "AI as Work",
-      "isActive": true
-    }]
-  }
-}
-```
+    "name": "Kore",
+    "details": {
+        "location": "India",
+        "cart": [{
+        "productName": "AI as Service",
+        "isActive": true
+        },
+        {
+        "productName": "AI as Work",
+        "isActive": true
+        }]
+    }
+    }
+    ```
 
 4. **Goals**: The purpose is to provide clear objectives and measurable targets to guide the campaign's strategy and assess its effectiveness in achieving desired outcomes. Click the **+ Add Goal** button and select the goals.  
     <img src="../images/goal.png" alt="Goals" title="Goals" style="border: 1px solid gray; zoom:70%;">

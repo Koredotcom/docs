@@ -32,6 +32,10 @@ To enhance the search capabilities for your content stored in Box, configure the
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td>Content Filtering
    </td>

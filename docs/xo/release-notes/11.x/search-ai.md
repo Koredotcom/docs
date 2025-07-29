@@ -16,6 +16,8 @@ The following key enhancements have been made to the RACL feature in Search AI c
 * Automatic mapping of individual users to the permission entities in Search AI. This automation streamlines the implementation process, allowing enterprises to enforce RACL without requiring additional setup or processing. This has been implemented for the following connectors: Google Drive, Jira, SharePoint, Trello, Miro, LumApps, Workday, OneDrive, YouTrack, Zulip, Box, Shortcut, Zeplin, HelpScout, Slack, HubSpot, Zendesk, Microsoft Teams, Salesforce, Hive, GitHub, Aha, JIRA On-Prem.
 * RACL support for the Confluence Server connector.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/racl-support.md)
+
 <font size="4">Simplified LLM Setup within Answer Configuration</font>
 
 Users can now configure the LLM directly within the Answer Configuration page, streamlining the setup process and eliminating the need to navigate to the Gen AI features section. This improvement enhances usability and reduces configuration time.
@@ -24,6 +26,7 @@ Users can now configure the LLM directly within the Answer Configuration page, s
 
 Search AI introduces a new API for incremental web crawling, enabling efficient and targeted updates to web data sources. Instead of recrawling the entire site, this API enables crawling only for new or updated pages, saving time and resources.
 
+[Learn more :octicons-arrow-right-24:](./../../apis/searchai/ingest-data.md)
 
 <hr>
 

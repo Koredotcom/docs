@@ -111,23 +111,65 @@ The user identity is matched against the racl fields in the chunks. In case, the
 
 
 
-#### Resolving user identity
+#### Step 3: Resolving user identity
 
-When a user group or user criteria is used to define a file’s access list, the indexed content contains a Permission Entity corresponding to the user group. In this case, SearchAI needs additional information to resolve user identities. For example, if a file is accessible only to employees in the HR department, the permission entity generated for the file will reflect departmental access and will not have information about the individual users associated with the group. 
+When access to content is defined using user groups or user criteria (rather than individual users), SearchAI creates a Permission Entity to represent that group in the indexed content. This entity is stored in the sys_racl field but does not contain individual user details.
 
-In such a case, SearchAI needs additional information to determine the association between the users and the groups. For some of the connectors, this is automatically done by Search AI. For some other connectors, this should be implemented with the help of Permission Entity APIs, which can be used to add or remove users from a group. Learn more about [Permission Entity APIs here.](../../apis/searchai/permission-entity-apis.md). Refer to individual connector documentation to learn about the support of automatic permission entity resolution. 
+To enforce access control at query time, SearchAI must resolve which individual users belong to each Permission Entity.
+
+For example, if a file is accessible only to employees in the HR department, SearchAI indexes the file with a Permission Entity representing that department and does not have information about the individual users associated with the department. However, at query time, it must know which specific users (e.g., jane.doe@example.com, john.smith@example.com) are in the HR department to determine access.
+
+In such a case, SearchAI needs additional information to determine the association between the users and the groups. 
+
+**Automatic Permission Entity Resolution**
+
+For some connectors, SearchAI can automatically resolve permission entities into individual user identities by:
+
+* Fetching user group/user criterion membership data from the source system.
+* Maintaining up-to-date mappings internally.
+
+Refer to the specific connector’s documentation to see if automatic permission entity resolution is supported.
+
+**Manual Resolution via APIs**
+
+For other connectors, this must be manually done with the help of Permission Entity APIs. Permission Entity APIs can be used to manage the user-to-permission entity associations. Learn more about [Permission Entity APIs here](../../apis/searchai/permission-entity-apis.md). Refer to individual connector documentation to learn about the support of automatic permission entity resolution. 
 
 ## Set up 
 
-RACL is currently supported for content ingested from connectors only. To enable RACL, go to the **Permissions and Security** tab under the corresponding connector configuration and select the **Permission Aware** option as shown below.
+RACL is currently supported for content ingested from connectors only. 
 
-![Set Up](images/connectors/racl/set-up.png "Set Up")
+### Enabling RACL
 
-This enables SearchAI to read the permissions associated with the content for different users in the third-party application. 
+To enable RACL for a connector:
 
-When RACL is enabled, i.e., the access is changed from Public Access to Permission Aware access, initiate the synchronization of content manually from the corresponding connector. This allows the connector to fetch access information for the ingested content. If a sync with the connector is scheduled in the future, updated permissions will apply after the next sync activity.
+1. Go to the **Permissions** page of the specific connector.
+2. Select the **Restricted Access** option.
 
-When the access is changed from Permission Aware Access to Public Access, the connector automatically disables the RACL feature and makes the content publicly available. Sync operation is not required in this case.
+This enables SearchAI to read and apply user-specific access permissions from the third-party application.
+
+![Permissions](connectors/images/permissions.png "Permissions")
+
+### Updating RACL permissions
+
+**From Public Access to Restricted Access**
+
+When RACL is enabled, i.e., the access is changed from Public Access to Restricted access, **manually initiate a sync** from the connector. This ensures the connector fetches and indexes the latest permission data. If an automatic sync with the connector is scheduled for the future, updated permissions take effect after the **next sync** activity.
+
+**From Restricted Access to Public Access**
+
+When the access is changed from Restricted  Access to Public Access, the connector automatically disables the RACL feature and makes the content publicly available. Sync operation is not required in this case. 
+
+
+### RACL Scheduler
+
+Access permissions to documents often change more frequently than the content itself. To ensure these changes are automatically reflected, use the RACL scheduler. RACL scheduler works independently from the content scheduler. To configure a scheduler for RACL updates:
+
+* Go to the Permissions section of the connector.
+* Enable the Permissions Sync Scheduled option.
+* Set the desired time and frequency for syncing access control information.
+
+If the RACL scheduler is disabled, permission updates will occur in sync with the content scheduler.
+
 
 ## Tailored Solutions for your RACL Requirements
 

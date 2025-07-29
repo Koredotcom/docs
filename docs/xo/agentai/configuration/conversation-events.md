@@ -94,51 +94,84 @@ In this section, you can select what to run first between the dialog tasks and g
     !!! note
         If **Agentic Copilot** is enabled in **Widget Settings** > **Agent AI Channel Specific Settings**, the message *"Whenever Agentic Copilot is enabled, it will run after the configured Welcome Events"* appears in the **Priority Settings** section:  
 
-## Exit Events
-Exit Events mark the end of a customer interaction. This section lets you configure a dialog task or a conversation summary to automatically run when the end-of-conversation event triggers.
+## Exit Events 
 
-### Configure End of conversation Dialog Task
-In this section, you can select a dialog task to run automatically once the exit event triggers.
+Exit Events mark the end of a customer interaction. This section lets you configure a dialog task, a conversation summary, or an Agentic app to run automatically when the end-of-conversation event triggers. While multiple options are available, you must select one of the following combinations: 
 
-#### Steps to configure End of Conversation Dialog Task
-1. Sign in to **AI for Service**.
-2. Go to **Agent AI** > **Configurations** > **Conversation Events**.
+* Configure End of Conversation Dialog Task + Conversation Summary > OOTB Kore Summarization
+* Conversation Summary + Configure End of Conversation Agentic App 
+
+### Configure End of Conversation Dialog Task 
+
+This section lets you select a dialog task to run automatically when an exit event triggers at the end of a conversation. To enable this, you must disable both the **Conversation Summary**> **Custom Dialog Task** and **Configure End of Conversation Agentic App** options. 
+
+#### Steps to Configure End-of-Conversation Dialog Task 
+
+1. Sign in to **AI for Service** > **Agent AI**.
+2. Go to **Configurations** > **Conversation Events**.  
 3. Click **Exit Events**.  
-   <img src="../welcome-events-images/exit-events.png" alt="exit-events" title="exit-events" style="border: 1px solid gray; zoom:80%;"> 
-4. Select a channel - **Chat**, **Voice**, or **Email**.
-5. Click the toggle to enable **Configure End of conversation Dialog Task**. The following confirmation message appears:  
-   <img src="../welcome-events-images/enable-end-of-conversation-dialog.png" alt="enable-end-of-conversation-dialog" title="enable-end-of-conversation-dialog" style="border: 1px solid gray; zoom:80%;">  
+   <img src="../welcome-events-images/exit-events-1.png" alt="exit-events" title="exit-events" style="border: 1px solid gray; zoom:80%;">  
 
-    !!! note
+4. Select a channel – **Chat**, **Voice**, or **Email**. 
+5. Click the toggle to enable **Configure End of conversation Dialog Task**.  
+    1. The following confirmation message appears, if the **Conversation Summary** > **Custom Dialog Task** was enabled:  
+    <img src="../welcome-events-images/disable-custom-summarization-2.png" alt="disable-custom-summarization" title="disable-custom-summarization" style="border: 1px solid gray; zoom:80%;">  
 
-        For new accounts, the **Conversation Summary** > **OOTB Kore Summarization** is enabled by default.  
+        !!! note
 
-6. Click **Yes, Proceed**.
-7. Click to expand the **Configure End of conversation Dialog Task** section.
+            For new accounts, the **Conversation Summary** > **OOTB Kore Summarization** is enabled by default.  
+
+    2. The following confirmation message appears, if the **Configure End of Conversation Agentic App** was enabled:  
+    <img src="../welcome-events-images/disable-agentic-exit-events-3.png" alt="disable-agentic-exit-events" title="disable-agentic-exit-events" style="border: 1px solid gray; zoom:80%;">  
+
+6. Click **Yes, Proceed**. 
+7. Click to expand the **Configure End of conversation Dialog Task** section. 
 8. Select a dialog task from the **Select Dialog** dropdown list.  
-   <img src="../welcome-events-images/end-of-conv-dialog.png" alt="end-of-conv-dialog" title="end-of-conv-dialog" style="border: 1px solid gray; zoom:80%;"> 
-
-9. Click **Save**.
+   <img src="../welcome-events-images/select-dialog-4.png" alt="select-dialog" title="select-dialog" style="border: 1px solid gray; zoom:80%;">  
+9. Click **Save**. 
 
 ### Conversation Summary
-In this section, you can select how to auto generate a conversation summary at the end of a conversation. You can select either the out-of-the-box (OOTB) Kore Summarization or the Custom Dialog Task model to generate the summary. Also, if you select OOTB you can either continue with the default Kore's model or create and select your own model.
 
-#### Steps to set Conversation Summary
-1. Sign in to **AI for Service**.
-2. Go to **Agent AI** > **Configurations** > **Conversation Events**.
+This section lets you configure how to autogenerate a conversation summary at the end of a conversation. You can select either the out-of-the-box (OOTB) Kore Summarization or the Custom Dialog Task model. To use the Custom Dialog Task option, you must disable the **Configure End of Conversation Dialog Task** setting. 
+
+#### Steps to set Conversation Summary 
+
+1. Sign in to **AI for Service** > **Agent AI**.
+2. Go to **Configurations**> **Conversation Events**.
 3. Click **Exit Events**.
-4. Select a channel - **Chat**, **Voice**, or **Email**.
-5. Click the toggle to enable **Conversation Summary**. The following confirmation message appears, if the **Configure End of conversation Dialog Task** option is enabled:  
-   <img src="../welcome-events-images/enable-conv-summary.png" alt="enable-conv-summary" title="enable-conv-summary" style="border: 1px solid gray; zoom:80%;">  
+4. Select a channel – **Chat**, **Voice**, or **Email**.
+5. Click the toggle to enable **Conversation Summary**.
+6. Select either **OOTB Kore Summarization** or **Custom Dialog Task**.
+    1. If you select **Custom Dialog Task**, the following confirmation message appears (if the **Configure End of Conversation Dialog Task was enabled**):  
+    <img src="../welcome-events-images/disable-end-of-conversation-5.png" alt="disable-end-of-conversation" title="disable-end-of-conversation" style="border: 1px solid gray; zoom:80%;">   
 
-6. Click **Yes, Proceed**.
-7. Select either **OOTB Kore Summarization** or **Custom Dialog Task**.
-    1. If you select **OOTB Kore Summarization**, you can either continue with the default Kore's model or create and select your own custom model. To create your Custom LLM model, refer to [Custom LLM Model](./../../agentai/configuration/custom-llm-model-in-genai.md){:target="_blank"} and to select your model refer to [Select Your Model](./../../agentai/configuration/custom-llm-model-in-genai.md#steps-to-select-custom-model){:target="_blank"}. 
-    2. If you select **Custom Dialog Task**, select a dialog task from the **Select Dialog** dropdown list:  
-    <img src="../welcome-events-images/conv-summ-dialog-selection.png" alt="conv-summ-dialog-selection" title="conv-summ-dialog-selection" style="border: 1px solid gray; zoom:80%;">  
+    2. Click **Yes, Proceed**.
+    3. Select a **dialog task** from the **Select Dialog** dropdown list:  
+    <img src="../welcome-events-images/custom-dialog-task-6.png" alt="custom-dialog-task" title="custom-dialog-task" style="border: 1px solid gray; zoom:80%;">   
 
-8. Select or clear the **Show Submit button** option.
-9. Click **Save**.
- 
-    !!! note
-        Only one option-**Configure End of conversation Dialog Task** or **Conversation Summary**-can be enabled at a time.
+7. Select or clear the **Show Submit button** option. 
+8. Click **Save**. 
+
+### Configure End of Conversation Agentic App 
+
+This section lets you select an Agentic App to trigger when a conversation ends. You can select either the same app used in Agentic Copilot or a different Agentic App. This toggle is disabled unless **Agentic Copilot** is enabled in **Widget Settings > Agent AI Channel Specific Settings**. Enabling it disables the **Configure End of Conversation Dialog Task** setting. The following options are available: 
+
+* **Use same app as Agentic Copilot**: Uses the same app configured for Agentic Copilot.
+* **Select a different Agentic App**: Displays a dropdown list of available Agentic Apps (excluding the app used by Agentic Copilot).  
+
+#### Steps to Configure End of Conversation Agentic App  
+
+1. Sign in to **AI for Service** > **Agent AI**.
+2. Go to **Configurations** > **Conversation Events**.
+3. Click **Exit Events**.
+4. Select a channel—**Chat**, **Voice**, or **Email**.
+5. Click the toggle to enable **Configure End of Conversation Agentic App**.
+6. The following confirmation message appears, if **Configure End of Conversation Dialog Task** was enabled.  
+<img src="../welcome-events-images/disable-end-of-conversation-dialog-task-7.png" alt="disable-end-of-conversation-dialog-task" title="disable-end-of-conversation-dialog-task" style="border: 1px solid gray; zoom:80%;">  
+
+7. Click **Yes, Proceed**.
+8. Select **Use same app as Agentic Copilot** or **Select a different Agentic App** option.  
+    1. If you select the **Select a different Agentic App** option, the following screenshot appears:  
+      <img src="../welcome-events-images/different-agentic-app-8.png" alt="different-agentic-app" title="different-agentic-app" style="border: 1px solid gray; zoom:80%;">  
+    2. Select an **Agentic App** from the dropdown list.  
+9. Click **Save**. 

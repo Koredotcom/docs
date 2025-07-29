@@ -32,7 +32,7 @@ The following table displays the features and the supported models.
 
 ### Agent Empathy Identification
 
-Identify instances of agent empathy where customers have expressed negative sentiment through Quality AI using LLMs. 
+Identify instances of agent empathy where customers have expressed negative sentiment through Quality AI using LLMs. [Learn more](../quality-management/analyze/conversation-intelligence.md#insights-mining).
 
 
 ### Agent Response Rephrasing
@@ -61,7 +61,7 @@ Extract by value metric from user/agent/bot messages through Quality AI using LL
 
 ### Churn & Escalation Identification
 
-Utilize LLMs to identify agent crutch word usage in customer conversations using Quality AI.
+Utilize LLMs to identify agent crutch word usage in customer conversations using Quality AI. [Learn more](../quality-management/analyze/conversation-intelligence.md#customer-churn-monitor).
 
 
 ### Conversation Summary
@@ -71,7 +71,7 @@ Generate LLM-based summaries of conversations that have transpired up to that mo
 
 ### Crutch Word Usage Detection
 
-Use LLMs to detect agent crutch word usage in customer conversations through Quality AI.
+Use LLMs to detect agent crutch word usage in customer conversations through Quality AI. [Learn more](../quality-management/analyze/conversation-intelligence.md#crutch-word-score).
 
 
 ### Default Script Adherence
@@ -81,7 +81,7 @@ Determine agent adherence to default script steps across greeting, branding, pri
 
 ### GenAI-based agent answer adherence and customer trigger detection
 
-Utilize LLMs to verify agent adherence and detect customer triggers without requiring configuration of utterances or training. [Learn more](../quality-management/configure/evaluation-metrics.md).
+Utilize LLMs to verify agent adherence and detect customer triggers without requiring configuration of utterances or training. [Learn more](../quality-management/configure/evaluation-criteria/metrics-measurement-types/by-question.md).
 
 
 ### Generating Similar QM Utterance Suggestions
@@ -101,4 +101,4 @@ Agents will be able to monitor customer sentiment dynamically during active chat
 
 ### Topic Modelling
 
-Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs
+Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs. [Learn more](../quality-management/analyze/conversation-mining-interactions.md#intent).
