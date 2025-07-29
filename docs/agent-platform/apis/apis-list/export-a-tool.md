@@ -37,7 +37,7 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
 
 **How to obtain toolId or callflowId for the API?**
 
-1. Follow the steps mentioned [here](../../tools/export-a-tool.md/#steps-to-export-a-tool){:target="_blank"} to export a tool.
+1. Follow the steps mentioned [here](../../ai-agents/tools/export-a-tool.md/#steps-to-export-a-tool){:target="_blank"} to export a tool.
 2. Open developer tools.
 3. Select the **Network** tab.
 <img src="../images/developer-tools.png" alt="developer tools" title="developer tools" style="border: 1px solid gray; zoom:60%;">

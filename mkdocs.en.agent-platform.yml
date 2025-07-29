@@ -316,4 +316,4 @@ nav:
       - API List: apis/agentic-apps/overview/#api-list
     - Tools:
       - About Tools APIs: apis/overview.md
-      - API List: apis/overview/#apis-list
+      - API List: apis/overview.md/#apis-list
