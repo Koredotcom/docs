@@ -2,9 +2,9 @@
 
 There are multiple places where the platform responds to user utterances without the developer having to code the details. Examples include:
 
-* **Intent not Identified** when the user intent is not found or understood by the bot. [Learn more](../../event-handling/#intent-not-available-event){:target="_blank"}.
+* **Intent not Identified** when the user intent is not found or understood by the AI Agent. [Learn more](../../event-handling/#intent-not-available-event){:target="_blank"}.
 * **Standard Responses** to certain questions, greetings, error and warning scenarios, etc.
-* **Event Handlers** for certain common bot events can be defined. [Learn more](/docs/xo/automation/intelligence/event-handling/){target="_blank"}.
+* **Event Handlers** for certain common AI Agent events can be defined. [Learn more](/docs/xo/automation/intelligence/event-handling/){target="_blank"}.
 
 Though these are set by default by the platform, you can customize them as per your business requirements. In this document, we look into such customizations.
 
@@ -12,14 +12,14 @@ Though these are set by default by the platform, you can customize them as per y
 
 On the UXO Platform tool, you can view the default Natural Language Processing, or NLP interpreter responses to user inputs or events.
 
-For example, a reply to a user input of _Hi!_ The bot replies with one of the following responses, chosen randomly at runtime:
+For example, a reply to a user input of _Hi!_ The AI Agent replies with one of the following responses, chosen randomly at runtime:
 
 * Hi!
 * Hello
 * Hi there!
 * Hey 🙂
 
-The NLP interpreter displays pre-defined text responses to users based on an event, condition, trigger, or user input. Depending on your custom bot and users of that bot, you may want to modify the default responses to users displayed for an event or request for input.
+The NLP interpreter displays pre-defined text responses to users based on an event, condition, trigger, or user input. Depending on your custom app and users of that app, you may want to modify the default responses to users displayed for an event or request for input.
 
 Example
 
@@ -27,13 +27,13 @@ Example
 * **Event** – Authorization Failure
 * **Trigger** – Task canceled
 
-You can define both standard bot responses, or if desired, add a channel override response that is displayed only in the specified channel the user is in, otherwise, one of the standard default responses is displayed. [Learn more](/docs/xo/automation/intelligence/conversation-management/standard-responses/){target="_blank"}.
+You can define both standard responses, or if desired, add a channel override response that is displayed only in the specified channel the user is in, otherwise, one of the standard default responses is displayed. [Learn more](/docs/xo/automation/intelligence/conversation-management/standard-responses/){target="_blank"}.
 
-For example, in the SMS channel, you may only want to use short bot responses to save data.
+For example, in the SMS channel, you may only want to use short app responses to save data.
 
 ### Default Responses
 
-To access and manage the default responses in bot builder, follow the below steps:
+To access and manage the default responses in app builder, follow the below steps:
 
 1. On the left menu, click **Conversation Intelligence** > **Conversation Management** > **Standard Responses**.
 
@@ -41,14 +41,14 @@ To access and manage the default responses in bot builder, follow the below step
 
 You can modify the default response, and if needed, add additional responses selected randomly by the NLP interpreter in response to user input or system event.
 
-In the **Standard Response** section, the standard bot responses are categorized in the following tabs:
+In the **Standard Response** section, the standard responses are categorized in the following tabs:
 
-* **Statements** – Responses displayed to the user as the result of an action by the bot or user. For example, a user cancels a task, or a user gives an invalid response to your bot request.
-* **Queries** – Statements from the bot to the user to ask for more information. For example, _Which field do you want to change?_
-* **Error & Warnings** – Statements from the bot to the user when an error occurs during the scenario, such as the _End date cannot be before or same as the start date!_
-* **Questions** – Questions the bot may pose to the user when not included in any other category.
-* **Choices** – The bot is asking for Yes/No input. For example, _Would you like to receive push notifications every time this task occurs?_
-* **Greeting** – Initial responses by the bot when the bot is installed, or other initial contacts. For example, when a user returns to the interaction after a period of inactivity.
+* **Statements** – Responses displayed to the user as the result of an action by the AI Agent or user. For example, a user cancels a task, or a user gives an invalid response to your AI Agent request.
+* **Queries** – Statements from the AI Agent to the user to ask for more information. For example, _Which field do you want to change?_
+* **Error & Warnings** – Statements from the AI Agent to the user when an error occurs during the scenario, such as the _End date cannot be before or same as the start date!_
+* **Questions** – Questions the AI Agent may pose to the user when not included in any other category.
+* **Choices** – The AI Agent is asking for Yes/No input. For example, _Would you like to receive push notifications every time this task occurs?_
+* **Greeting** – Initial responses by the AI Agent when the app is installed, or other initial contacts. For example, when a user returns to the interaction after a period of inactivity.
 
 ### Add and Edit Responses
 
@@ -56,7 +56,7 @@ In the **Standard Response** section, the standard bot responses are categorized
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the standard responses are updated at the conditions wherein an ambiguity is presented to the user, the bot response will not display the ambiguous choices to the user and you need to use the function <code>getChoices()</code> to present the ambiguity list (refer to point 6 below).</p>
+<p>If the standard responses are updated at the conditions wherein an ambiguity is presented to the user, the AI Agent response will not display the ambiguous choices to the user and you need to use the function <code>getChoices()</code> to present the ambiguity list (refer to point 6 below).</p>
 </div>
 
 To add a new standard response, follow the steps below:
@@ -70,7 +70,7 @@ To add a new standard response, follow the steps below:
     * When a specific task is selected, the **Choose a Field is** drop-down is displayed. Select **Any Field** or a specific field for this channel-specific response.
     <img src="../images/add-channel-override.png" alt="add channel override" title="add channel override" style="border: 1px solid gray; zoom:75%;">
 
-    * In the bot **Response** editor, you can override the default Bot Response for this channel using basic editor controls on the **Simple Mode** tab, or write custom JavaScript for the response on the **Advanced Mode** tab as follows:
+    * In the app **Response** editor, you can override the default response for this channel using basic editor controls on the **Simple Mode** tab, or write custom JavaScript for the response on the **Advanced Mode** tab as follows:
         * **Simple Mode** tab – Enter the text for the default standard response. For example, *There* you are, I was *hoping* you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor){target="_blank"}.
         * **Advanced Mode tab** – Enter JavaScript to override the channel message as described in the following code examples.
 

@@ -203,14 +203,14 @@ Steps to configure the request details:
 
 **POST Method**
 
-5. Define the POST **Body** using the context variable ID in the body. For example: `{"userId": "{{context.user_id}}"}`.
+5. Define the POST **Body** using the context variable ID in the body. For example: `{"userId": "{{context.user_id}}"}`.  
 <img src="../images/by-value-post-method.png" alt="Post Method" title="Post Method" style="border: 1px solid gray; zoom:70%;">
 
 6. Enter a **Post Script Definition Name** of the API response**.
 
 7. Use a **Post Process Script** to extract or transform the response if needed (optional).
 
-8. Configure and extract the source system value from the API response after a single API call.
+8. Configure and extract the source system value from the API response after a single API call.   
 <img src="../images/by-value-post-process-script.png" alt="Post Method" title="Post Method" style="border: 1px solid gray; zoom:70%;">   
 
 5. Click **Save**.

@@ -8,6 +8,12 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
+<font size="4">BotKit</font>
+
+**BotKit Events for Key Contact Center Actions**  
+
+BotKit now emits key contact center events (agent acceptance, transfers, session closure, disposition submission, and join/leave actions) with structured JSON payloads, enabling real-time CRM sync via customer-defined logic. Admins can configure event types from the BotKit settings panel, with support for retry mechanisms, custom headers, and full traceability logging. [Learn more :octicons-arrow-right-24:](../../sdk/sdk-events.md#onevent)
+
 <font size="4">Console</font>
 
 **Improved Channel Identification with Distinct Interaction Icons**
