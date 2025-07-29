@@ -141,7 +141,7 @@ The following six measurement types are:
 
     **Used For**: Pricing accuracy, interest rate verification, account balance confirmation, and compliance validation.
 
-    For the detailed configuration, see [By Value](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-value.md).
+    For the detailed configuration, see [By Value](../configure/evaluation-criteria/metrics-measurement-types/by-value.md).
 
 1. **By Dialog Execution - Task Completion Assessment**
 
@@ -183,7 +183,7 @@ The following six measurement types are:
 
     **Used For**: Process compliance, procedure adherence, and standardization enforcement.
 
-    For the detailed configuration, see [By Playbook Adherence](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-playbook-adherence.md).
+    For the detailed configuration, see [By Playbook Adherence](../configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md).
 
 1. **By AI Agent - Advanced Reasoning Evaluation**
 
@@ -211,7 +211,7 @@ The following six measurement types are:
 
     **Used For**: Complex compliance assessments, technical troubleshooting evaluation, and sophisticated quality analysis.
 
-    For the detailed configuration, see [By AI Agent](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-ai-agent.md).
+    For the detailed configuration, see [By AI Agent](../configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md).
 
 ## Managing Evaluation Metrics
 
