@@ -2,36 +2,72 @@
 
 This Language Settings feature enables multi-language evaluation and analysis. The administrators or supervisors can configure the required languages for evaluation metrics and conversation insights across different languages within the Quality AI.
 
-Supervisors or Administrators only can enable or disable the language settings at the app level.
+## Access Language Settings 
 
-You can access **Language Settings** by navigating to **Contact Center AI** > **Quality AI** > **Settings** > **Language Settings**. 
+Access **Language Settings** by navigating to **Contact Center AI** > **Quality AI** > **Settings** > **Language Settings**. 
 <img src="../settings/langauge-settings/images/lang-settings-page.png" alt="langauge settings" title="langauge settings" style="border: 1px solid gray; zoom:60%;">
 
-## Add a New Language
+!!! Note
+
+    Only Administrators and Supervisors can enable or disable the language settings at the app level.
+
+### Add a New Language
 
 Steps to add a new language:
 
-1. Expand the **Language Settings** collapse icon to view the languages list.  
-<img src="../settings/langauge-settings/images/add-language.png" alt="new language" title="new language" style="border: 1px solid gray; zoom:60%;">
+1. Expand the **Language Settings** collapse menu to view the languages list.  
+<img src="../settings/langauge-settings/images/lang-settings-collapse-menu.png" alt="Language Settings Collapse Menu" title="Language Settings Collapse Menu" style="border: 1px solid gray; zoom:60%;">
 
-2. Click the +**Add Language**. The following screen appears to select a language.  
+2. Click the +**Add Language**.    
+<img src="../settings/langauge-settings/images/settings-add-language.png" alt="Add Language" title="Add Language" style="border: 1px solid gray; zoom:60%;">
 
-<img src="../settings/langauge-settings/images/add-lnew-anguage.png" alt="Add Language" title="Add Language" style="border: 1px solid gray; zoom:60%;">
+3. From the **Language** dropdown list, search to select a new language and add to the language list.
+<img src="../settings/langauge-settings/images/add-new-language.png" alt=" Search To Add Language" title="Search To Add Language" style="border: 1px solid gray; zoom:60%;">
 
-3. From the **Language** drop-down list, search a language name to add to the language list.
-4. Click **Save** to save the new language.
+    !!! Note
+
+        Presently, only English, Dutch, Hindi, Japanese, German, and Spanish languages are supported.  
+
+4. Enable the new language **Status** toggle switch to populate it across the application (such as **Auto QA**, **Scorecard**, and **Conversation Intelligence** analytics for interactions). 
+
+5. Click **Save**.
+
+### Set a Default Language
+
+Steps to add a new language:
+
+1. From the language list, select a language to **Mark as Default**.    
+<img src="../settings/langauge-settings/images/mark-default.png" alt="Mark As Default" title="Mark As Default" style="border: 1px solid gray; zoom:60%;">
+
+2. Double-click on the selected language to set it as the **Default Language**.   
+<img src="../settings/langauge-settings/images/default-language-notification.png" alt="Change Default Language" title="Change Default Language" style="border: 1px solid gray; zoom:60%;">
+
+3. Click **Confirm**.
+
+    !!! Note
+
+        * In case of multiple languages, users with Auto QA permission can update the default language. 
+        
+        * The first language added becomes the default by default. 
+        
+        * When you change the default language, it triggers a pop-up message showing that the change only affects future interactions; existing data remains unchanged.
+
+4. Once the selected language is set as default, its **Status** remains in lighter mode.
+<img src="../settings/langauge-settings/images/default-language-status-change.png" alt="Lighter Mode Status Change" title="Lighter Mode Status Change" style="border: 1px solid gray; zoom:60%;">
+
+5. Click **Save**.
 
 ## Disable a Language
 
 Steps to disable a language:
 
-1. Select the **Status** toggle off to disable any of the languages, the following warning dialog box is displayed.  
-<img src="../settings/langauge-settings/images/disable-language.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:60%;">
+1. Turn off the **Status** toggle to disable any of the languages, the following warning is displayed.
+<img src="../settings/langauge-settings/images/disable-language.png" alt="Disbale Langauge Warning" title="Disbale Langauge Warning" style="border: 1px solid gray; zoom:60%;">
 
 2. Click **Confirm** to disable the selected language.
 
     !!! Note
 
-        When any of the languages is disabled, this stops the **Auto QA scoring**, **Scorecard scoring**, and **Conversation Intelligence** analytics for interactions for the selected language across the entire app.  
+        Disabling a language stops **Auto QA**, **Scorecard**, and **Conversation Intelligence** analytics from functioning for all conversations in that language. 
 
 3. Click **Save** to apply the changes.

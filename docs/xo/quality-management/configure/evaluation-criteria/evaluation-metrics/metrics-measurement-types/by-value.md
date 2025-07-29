@@ -49,96 +49,123 @@ This combines advanced extraction logic with configurable business rules to veri
 Ensure the following GenAI features are enabled:
 
 * The By Value metric type only appears in the evaluation metrics creation dropdown when the GenAI feature is enabled.
-* Ensure that the languages required by the **By Value **metric type are valid and properly configured.
-* The **By Value **evaluation metrics measurement type is available when both the GenAI options are [enabled ](https://docs.kore.ai/xo/generative-ai-tools/genai-features/)and [published ](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components)from the **Manage **> **Generative AI **> **GenAI Features**.** **
-* By Value Adherence Validation for Quality AI
-* By Value Metric Extraction for Quality AI
 
-## Configure By Question Metrics
+* Ensure that the languages required by the **By Value** metric type are valid and properly configured.
 
-1. Navigate to **Contact Center AI > Quality AI > Configure > Evaluation Forms > Evaluation Metrics**.
+* The **By Value** evaluation metrics measurement type is available when both the GenAI options are [enabled ](https://docs.kore.ai/xo/generative-ai-tools/genai-features/)and [published ](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components)from the **Manage**> **Generative AI**> **GenAI Features**.
+
+    * By Value Adherence Validation for Quality AI
+
+    * By Value Metric Extraction for Quality AI
+
+## Configure By Vlaue Metrics
+
+1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
+
 2. Click **+ New Evaluation Metric**.
+
 3. From the **Evaluation Metrics Measurement Type** dropdown, select **By Value**.
 
-
 4. Enter a descriptive **Name** for the future audit reference.
-5. Enter a descriptive identifier **Name **that you can easily reference, such as "Discount Rate Verification" or "Interest Rate Adherence Check".
-6. Enter a descriptive **Question **prompt for manual evaluation.
-7. Select the required **Languages **for this metric.
 
-**Note**: 
+5. Enter a descriptive identifier **Name** that you can easily reference, such as "Discount Rate Verification" or "Interest Rate Adherence Check".
 
-* Enables you to select more than one language.
-* The system uses **By-Question **metrics that are available in all of the selected languages. 
-* The system uses an **AND **condition that supports every selected language, not just one of them. 
-* If a metric does not support all the selected languages, it does not appear in the dropdown. 
+6. Enter a descriptive **Question** prompt for manual evaluation.
+
+7. Select the required **Languages** for this metric.
+
+    !!! note
+
+        * Enables you to select more than one language.
+            
+        * The system uses **By-Question** metrics that are available in all of the selected languages. 
+            
+        * The system uses an **AND** condition that supports every selected language, not just one of them. 
+            
+        * If a metric does not support all the selected languages, it does not appear in the dropdown. 
 
 ### Adherence Type Configuration
 
 This configuration determines when and how the metric is evaluated during a conversation.
 
-1. Select an **Adherence Type **(**Static or Dynamic**) from the dropdown. 
+1. Select an **Adherence Type** (**Static** or **Dynamic**) from the dropdown. 
 
- 1. **Static Adherence**: This metric is evaluated for every conversation regardless of specific triggers. 
-    * Applies to mandatory checks performed in every interaction. For example, “agent greeted customer" applies in every call.  
+    a. **Static Adherence**: This metric is evaluated for every conversation regardless of specific triggers.
+    
+    * Applies to mandatory checks performed in every interaction. For example, “agent greeted customer" applies in every call. 
+
 2. **Dynamic Adherence**: This metric is evaluated only when a trigger happens during a conversation (when a customer or agent expresses a certain intent). 
+
     * This metric is scored only if the trigger is detected. For example, an interest rate disclosure metric is only relevant when a customer asks about loan rates.
-    * Activated only when specific intents occur, and scoring relevant checks after the trigger. If no trigger appears, it is marked as Not Applicable (NA). 
+
+    * Activated only when specific intents occur, and scoring relevant checks after the trigger. If no trigger appears, it is marked as Not Applicable (NA).   
+       <img src="../images/by-value-adherence-type.png" alt="By Value Adherence Type" title="By Value Adherence Type" style="border: 1px solid gray; zoom:70%;">  
 
 #### Trigger Configuration (Dynamic Adherence Only)
 
-
 Provides two selectable options triggered by either an Agent or Customer Utterance for evaluation. Different triggers come from different speakers based on the use case scenario.
 
-2. Choose the **Trigger Utterance **for evaluation by selecting the correct speaker who initiates each trigger based on the use case. 
-    * **Customer Utterance**: Select when the customer action triggers the adherence check. For example, a customer asks about interest rates, triggering the rate disclosure metric (Specific customer queries).
+2. Choose the **Trigger Utterance** for evaluation by selecting the correct speaker who initiates each trigger based on the use case. 
+
+    * **Customer Utterance**: Select when the customer action triggers the adherence check. For example, a customer asks about interest rates, triggering the rate disclosure metric (specific customer queries).
+
     * **Agent Utterance**: Select when the agent action triggers the adherence check. For example, the agent proposes a credit card plan, triggering the benefits disclosure metric (product promotions or any compliance requirements).
 
 #### Trigger Detection Method
 
-
 Different use cases require different detection techniques depending on complexity and the accuracy needed. 
 
-3. Choose if the **Trigger Detection Method **is a customer or agent utterance.
+3. Choose if the **Trigger Detection Method** is a customer or agent utterance.
 
     * **Gen AI-Based Adherence**: This uses a Large Language Model (LLM) to detect trigger intent and evaluate adherence based on contextual understanding (for complex intents, varied expressions, and nuanced conversations).
+
         * Uses the Zero-shot detection (no training required). [Learn more](https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/?h=zero+shot#zero-shot-model).
-        * Enter a text **Description **explaining the trigger intent or details behind the adherence metric details.
+
+        * Enter a text **Description** explaining the trigger intent or details behind the adherence metric details.
+
         * LLM interprets meaning rather than exact phrase matching (contextual understanding, such as complex intents, nuanced conversations).
+
     * **Deterministic Adherence**: This uses exact pattern matching (non-AI) to detect trigger intent and check adherence.
-        * Use the **Utterance **option to provide specific utterance examples. 
+
+        * Use the **Utterance** option to provide specific utterance examples. 
+
         * The system matches input to trained phrases, requiring specific examples and multiple trigger utterances for broad coverage. For example, compliance keywords, exact terminology. 
 
 ### API Request Parameter Configuration Methods
 
 The API setup enables calls to your backend systems (for example, CRMs, databases) to retrieve ground truth data, which validates the agent-mentioned values from customer conversations, such as account balance or loan rate.
 
-3. Choose how the request parameter (**Context Variable **or **Conversation ID**) is sourced or retrieved.
+3. Choose how the request parameter (**Context Variable** or **Conversation ID**) is sourced or retrieved.
 
 #### Context Variable
 
 Context variables are customer identifiers mentioned in a conversation, like a phone number or customer ID. The system extracts these from the transcript and uses them in an API call to get specific customer information, such as account balance or interest rate.
 
+**When to Use Context Variables**
 
-    **When to Use Context Variables**
+* Customer provides identifier during conversation (phone number, customer ID, email).
 
-* Customer provides identifier during conversation (phone number, customer ID, email)
-* Single API call sufficient to retrieve required data
-* Direct mapping between conversation content and API parameter
+* Single API call sufficient to retrieve required data.
 
-##### Configuration Requirements
+* Direct mapping between conversation content and API parameter.
 
-1. **Context Variable**: Select this when a customer identifier (such as phone number, customer ID) is mentioned in the conversation transcript.
+##### Context Variables Setup for API Request
+1. **Context Variable**: Select this when a customer identifier (such as phone number, customer ID) is mentioned in the conversation transcript.  
 
-2. **Speaker: **Choose who (**Customer** or **Agent**) provides the identifier in the conversation.
+<img src="../images/by-value-api-request-param.png" alt="API Request Parameter" title="API Request Parameter" style="border: 1px solid gray; zoom:70%;">      
+
+2. **Speaker**: Choose who (**Customer** or **Agent**) provides the identifier in the conversation.
 
 ##### Entity Type Configuration
 
     * **Entity Name**: Enter a descriptive name matching the data type that you want to extract (for example, customer ID or phone number). 
 
         * **Entity Type**: Select the correct data type (**String** or **Number**).
-        * **String:** Enter text or alphanumeric identifiers (email address, customer ID). 
-        * **Number:** Choose this when the data represents a numeric value or identifier (phone numbers, account numbers).
+
+        * **String**: Enter text or alphanumeric identifiers (email address, customer ID). 
+
+        * **Number**: Choose this when the data represents a numeric value or identifier (phone numbers, account numbers).
+
         * **Description**: Provide detailed instructions for the AI on how to identify and extract this entity from the conversation. For example, extract the 10-digit phone number provided by the customer during verification, formatted as XXX-XXX-XXXX".
 
  ##### Service Request Authorization
@@ -149,69 +176,82 @@ Configure authentication profiles to secure API calls to your backend systems. A
 
 Steps to configure the request details:
 
-1. Click the **+ Define Request **button to configure the API call request.
+1. Click the **+ Define Request** to configure the API call request.
+
 2. In the **Request Name**, provide a unique descriptive identifier name. 
-3. Select the necessary custom **HTTP **headers as needed for the API call (**GET** or **POST**) configuration.
+
+3. Select the necessary custom **HTTP** headers as needed for the API call (**GET** or **POST**) configuration.
+
 4. Enter the full endpoint URL to which the API request you want to send.
 
 **GET/POST Method**
 
-1. From the **Auth **dropdown, select the authorization profile that you want to use or access this API request. 
+1. From the **Auth**dropdown, select the authorization profile that you want to use or access this API request. 
 
-2. Add custom HTTP **Headers **if needed, as required by your backend systems.
+2. Add custom HTTP **Headers** if needed as required by your backend systems.
 
-3. **Test Request **is used to validate the request and response setup before deployment.
+3. **Test Request** is used to validate the request and response setup before deployment.
 
-**Note**: 
+    !!! Note
 
-* The **Test Request **is enabled when the request parameter is a Context Variable. But this is disabled for the Conversation ID-based configurations.
-* It must come from SFTP if the request parameter includes a Conversation ID.
+        * The **Test Request** is enabled when the request parameter is a Context Variable. But this is disabled for the Conversation ID-based configurations.
+        
+        * It must come from SFTP if the request parameter includes a Conversation ID.
 
-4. Define the API **Response **parameter as a JSON object or path.
+4. Define the API **Response** parameter as a JSON object or path.  
+<img src="../images/by-value-get-method.png" alt="Get Method" title="Get Method" style="border: 1px solid gray; zoom:70%;">      
 
 **POST Method**
 
-5. Define the POST **Body** using the context variable ID in the body. For example: `{"userId": "{{context.user_id}}"}`
-6. Enter a **Post Script Definition Name **of the API response**.** 
+5. Define the POST **Body** using the context variable ID in the body. For example: `{"userId": "{{context.user_id}}"}`.  
+<img src="../images/by-value-post-method.png" alt="Post Method" title="Post Method" style="border: 1px solid gray; zoom:70%;">
+
+6. Enter a **Post Script Definition Name** of the API response**.
+
 7. Use a **Post Process Script** to extract or transform the response if needed (optional).
-8. Configure and extract the source system value from the API response after a single API call.
+
+8. Configure and extract the source system value from the API response after a single API call.   
+<img src="../images/by-value-post-process-script.png" alt="Post Method" title="Post Method" style="border: 1px solid gray; zoom:70%;">   
 
 5. Click **Save**.
 
-#### Conversation ID Configuration
+#### Conversation ID 
 
 Conversation ID-based API configuration is used within the Quality AI context, particularly when customer identifiers are missing and SFTP-based integration is used instead. The custom conversation ID from CSV metadata triggers the first API call to retrieve the customer ID, followed by a second call to fetch the business value (for example, interest rate). These two post-process scripts run after each call or at the end to finalize the value.
 
-
 ##### Configuration Requirements
 
-1. You must map the custom **Conversation ID **from the `CSV `upload metadata. 
-2. Use the **Conversation ID **identifier as the API request parameter to make the source system API call.
+1. You must map the custom **Conversation ID** from the `CSV `upload metadata. 
 
-    **Note:**
+2. Use the **Conversation ID** identifier as the API request parameter to make the source system API call.
 
-    * The **Conversation ID** option is only available when the connector is configured for **QualityAI Express**.
-    * System-generated Conversation IDs are not supported.
-    * Use of the Contact Center AI (CCAI) system-generated conversation ID is not supported.
-    * You must use the conversation ID sourced from metadata delivered via SFTP.
+    !!! Note
 
-##### Service Request Authorization
+        * The **Conversation ID** option is only available when the connector is configured for **QualityAI Express**.
+        
+        * System-generated Conversation IDs are not supported.
+        
+        * Use of the Contact Center AI (CCAI) system-generated conversation ID is not supported.
+        
+        * You must use the conversation ID sourced from metadata delivered via SFTP.
 
-##### Script Definition
+##### Script Definition 
 
-Provide the following details:
+Provide the following service request authorization details:
 
 **GET Method**
 
-1. From the **Auth **dropdown, select the authorization profile that you want to use or access this API request. 
+1. From the **Auth** dropdown, select the authorization profile that you want to use or access this API request. 
 
-**Note**:
+    !!! Note
 
-* This authorization must remain consistent across all APIs within the function.
-* The list of authorization profiles comes from the Dev Tools section of the Platform.
+        * This authorization must remain consistent across all APIs within the function.
+        
+        * The list of authorization profiles comes from the Dev Tools section of the Platform.
+
 2. Set request-specific HTTP **Headers**.
 
-**Note**: This **Test Request **option is disabled if the request parameter is a conversation ID.
+**Note**: This **Test Request**option is disabled if the request parameter is a conversation ID.
 
 3. Map and process the API **Response **by entering a JSON object or path.
 

@@ -25,6 +25,10 @@ Search AI allows the ingestion of content in the MS Teams channels for easy sear
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td>Content Filtering
    </td>

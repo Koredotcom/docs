@@ -11,8 +11,8 @@ This section displays key information about the agent and the interaction:
 
 * Conversation Details, such as Start Time and End Time, Agent name, Queue, and Customer Phone number.
 * Audit Details, such as Auditor Name, Audit Date, Audit Score, and Kore Evaluation Score.
-* Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.  
-<img src="../ai-assist-manual-edit/images/ai-assist-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
+* Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.   
+<img src="../ai-assist-manual-edit/images/ai-assist-conv-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
 
 ## Violations
 
@@ -58,7 +58,7 @@ Clicking a comment also navigates the user directly to the relevant part of the 
 
 ## Search
 
-This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.
+This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.  
 <img src="../ai-assist-manual-edit/images/ai-assist-search.png" alt="Search" title="Search" style="border: 1px solid gray; zoom:80%;">
 
 ## Audit

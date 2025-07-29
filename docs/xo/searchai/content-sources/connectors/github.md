@@ -24,6 +24,10 @@ GitHub is a widely used platform for version control and collaboration, enabling
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td><strong>Content Filtering</strong>
    </td>

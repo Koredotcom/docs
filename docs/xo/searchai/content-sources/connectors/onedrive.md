@@ -38,6 +38,10 @@ Type of Repository
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
 </table>
 
 

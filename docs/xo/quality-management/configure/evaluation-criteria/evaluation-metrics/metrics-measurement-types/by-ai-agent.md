@@ -4,7 +4,7 @@ The By AI Agent metric type enables you to configure evaluation metrics powered 
 
 ## When to Use By AI Agent Metric
 
-Use By AI Agent metrics for evaluation scenarios that require:
+Use By AI Agent metric for evaluation scenarios that require:
 
 * **Multi-step reasoning and complex analysis**: Evaluation scenarios require connecting multiple pieces of information across a conversation.
 
@@ -322,16 +322,30 @@ When setting up your AI Agent, include this specification in the Description fie
 
 **Response Format Requirements:**
 ```js
-The response must be a JSON object with the following structure:
-
-- isQualified: String representing overall compliance outcome ("Yes", "No", or "Partial")
-- compliance_evaluation_details: Array of JSON objects detailing specific compliance aspects
-
-Each compliance evaluation object should include:
-- aspect: Descriptive name of the compliance aspect (e.g., "Data Security Measures")
-- status: "Identified" or "Not Identified"
-- justification: Detailed explanation of findings
-- supporting_evidence: References to specific messages or timestamps
+{
+    "The response must be a JSON object with the following structure": [
+        {
+            "isQualified": "String representing overall compliance outcome (\"Yes\", \"No\", or \"Partial\")"
+        },
+        {
+            "compliance_evaluation_details": "Array of JSON objects detailing specific compliance aspects"
+        }
+    ],
+    "Each compliance evaluation object should include": [
+        {
+            "aspect": "Descriptive name of the compliance aspect (e.g., \"Data Security Measures\")"
+        },
+        {
+            "status": "Identified or Not Identified"
+        },
+        {
+            "justification": "Detailed explanation of findings"
+        },
+        {
+            "supporting_evidence": "References to specific messages or timestamps"
+        }
+    ]
+}
 ```
 
 ### Sample response

@@ -4,28 +4,6 @@
 
 LumApps organizes content into key types, such as pages, news, and custom objects. It also enables the creation of communities and the sharing of content as community posts.
 
-<!-----
-
-
-
-Conversion time: 0.35 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β44
-* Tue Jul 01 2025 05:52:38 GMT-0700 (PDT)
-* Source doc: LumApps Connector
-* This is a partial selection. Check to make sure intra-doc links work.
------>
-
 
 **<span style="text-decoration:underline;">LumApps Connector Specifications</span>**
 
@@ -60,6 +38,10 @@ RACL Support
    <td>Yes
 
    </td>
+  </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
   </tr>
   <tr>
    <td>Content Filtering
