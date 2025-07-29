@@ -67,6 +67,8 @@ Improvised AI-generated code responses with dedicated code block components that
 
 The conversation interface has been redesigned to improve user experience during agent interactions. A persistent ***Talking to [Agent Name]*** banner, smart navigation guards that trigger confirmation pop-ups, and the requirement for users to explicitly end current agent interactions before switching contexts.
 
+<hr>
+
 ## v1.9.2 June 21, 2025
 
 <u>Major Release</u>
@@ -169,6 +171,8 @@ Administrators can now edit user profile information directly from the user deta
 
 Resolved critical chart rendering issues and fixed application crashes that occurred during follow-up question interactions. These fixes significantly enhance system reliability and ensure a smoother user experience when working with data visualizations and conversational features.
 
+<hr>
+
 ## v1.9.1 May 19, 2025
 
 <u>Minor Release</u>
@@ -267,6 +271,8 @@ The Admin Console now features **Data Settings**, giving complete control over t
 * Improved search result filtering to properly reflect user queries.
 
 **Async Bot**: Resolved issue where the delayed response widget continued to display after answers were retrieved from the bots platform.
+
+<hr>
 
 ## v1.8.0 March 26, 2025
 
