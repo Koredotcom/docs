@@ -89,7 +89,7 @@ The following six measurement types are:
 
     **Used For**: Script adherence, greeting compliance, policy verification, and response quality assessment.
 
-    For the detailed configuration, see [By Question](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-question.md).
+    For the detailed configuration, see [By Question](../configure/evaluation-criteria/metrics-measurement-types/by-question.md).
 
 1. **By Speech - Audio Quality Analysis**
 

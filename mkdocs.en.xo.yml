@@ -506,12 +506,12 @@ nav:
       - Configure:
         - Evaluation Criteria:
             - Evaluation Forms: quality-management/configure/evaluation-forms.md
-            - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
-        - Metrics Measurement Types: 
-            - By Question: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-question.md
-            - By Playbook Adherence: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-playbook-adherence.md 
-            - By AI Agent: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-ai-agent.md 
-            - By Value: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-value.md
+            - Evaluation Metrics: quality-management/configure/evaluation-criteria/evaluation-metrics.md
+            - Metrics Measurement Types: 
+              - By Question: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-question.md
+              - By Playbook Adherence: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-playbook-adherence.md 
+              - By AI Agent: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-ai-agent.md 
+              - By Value: quality-management/configure/evaluation-criteria/evaluation-metrics/metrics measurement types/by-value.md
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Connectors: 
             - Introduction: quality-management/connectors/connector-intro.md
