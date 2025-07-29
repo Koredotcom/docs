@@ -111,7 +111,7 @@ The user identity is matched against the racl fields in the chunks. In case, the
 
 
 
-#### Resolving user identity
+#### Step 3: Resolving user identity
 
 When access to content is defined using user groups or user criteria (rather than individual users), SearchAI creates a Permission Entity to represent that group in the indexed content. This entity is stored in the sys_racl field but does not contain individual user details.
 
@@ -132,7 +132,7 @@ Refer to the specific connector’s documentation to see if automatic permission
 
 **Manual Resolution via APIs**
 
-For other connectors, this must be manually done with the help of Permission Entity APIs. Permission Entity APIs can be used to manage the user-to-permission entity associations. Learn more about [Permission Entity APIs here.](../../apis/searchai/permission-entity-apis.md). Refer to individual connector documentation to learn about the support of automatic permission entity resolution. 
+For other connectors, this must be manually done with the help of Permission Entity APIs. Permission Entity APIs can be used to manage the user-to-permission entity associations. Learn more about [Permission Entity APIs here](../../apis/searchai/permission-entity-apis.md). Refer to individual connector documentation to learn about the support of automatic permission entity resolution. 
 
 ## Set up 
 

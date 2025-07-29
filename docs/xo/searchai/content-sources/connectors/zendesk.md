@@ -31,7 +31,7 @@ You can easily configure SearchAI to connect to the Zendesk application to enabl
    </td>
   </tr>
     <tr>
-   <td>Automatic Permission Entities Resolution </td>
+   <td><strong>Automatic Permission Entities Resolution</strong></td>
    <td>Yes </td>
   </tr>
   <tr>

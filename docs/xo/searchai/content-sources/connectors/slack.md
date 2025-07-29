@@ -35,7 +35,7 @@ Slack can be easily integrated with Search AI to search through conversations in
    </td>
   </tr>
     <tr>
-   <td>Automatic Permission Entities Resolution </td>
+   <td><strong>Automatic Permission Entities Resolution</strong></td>
    <td>Yes </td>
   </tr>
   <tr>
