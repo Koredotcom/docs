@@ -7,7 +7,7 @@ Users can build and manage custom evaluation criteria using these measurement ty
 ## Access Evaluation Metrics
 
 Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.   
-<img src="../evaluation-criteria/evaluation-metrics/metrics measurement types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+<img src="../evaluation-criteria/evaluation-metrics/metrics-measurement-types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 ## Key Benefits
 
@@ -90,7 +90,7 @@ The following six measurement types are:
 
 **Used For**: Script adherence, greeting compliance, policy verification, and response quality assessment.
 
-For the detailed configuration, see [By Question](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-question.md).
+For the detailed configuration, see [By Question](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-question.md).
 
 1. **By Speech - Audio Quality Analysis**
 
@@ -112,7 +112,7 @@ For the detailed configuration, see [By Question](../configure/evaluation-criter
 
     **Used For**: Voice interaction quality, conversation flow analysis, and speaking pace optimization.
 
-For the detailed configuration, see see [By Speech](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-speech.md).
+For the detailed configuration, see [By Speech](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-speech.txt).
 
 1. **By Value - Data Accuracy Verification**
 
@@ -142,7 +142,7 @@ For the detailed configuration, see see [By Speech](../configure/evaluation-crit
 
 **Used For**: Pricing accuracy, interest rate verification, account balance confirmation, and compliance validation.
 
-For the detailed configuration, see [By Value](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-value.md).
+For the detailed configuration, see [By Value](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-value.md).
 
 1. **By Dialog Execution - Task Completion Assessment**
 
@@ -158,7 +158,7 @@ For the detailed configuration, see [By Value](../configure/evaluation-criteria/
 
 **Used For**: Workflow adherence, task completion verification, and dialog flow optimization.
 
-For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-diaolog-execution.md).
+For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-diaolog-execution.txt).
 
 1. **By Playbook Adherence - Process Compliance Evaluation**
 
@@ -184,7 +184,7 @@ For the detailed configuration, see [By Dialog Task](../configure/evaluation-cri
 
 **Used For**: Process compliance, procedure adherence, and standardization enforcement.
 
-For the detailed configuration, see [By Playbook Adherence](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-playbook-adherence.md).
+For the detailed configuration, see [By Playbook Adherence](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-playbook-adherence.md).
 
 * **By AI Agent - Advanced Reasoning Evaluation**
 
@@ -212,7 +212,7 @@ For the detailed configuration, see [By Playbook Adherence](../configure/evaluat
 
 **Used For**: Complex compliance assessments, technical troubleshooting evaluation, and sophisticated quality analysis.
 
-For the detailed configuration, see see [By AI Agent](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-ai-agent.md).
+For the detailed configuration, see [By AI Agent](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-ai-agent.md).
 
 ## Managing Evaluation Metrics
 
