@@ -33,7 +33,7 @@ By placing the Function and Text-to-Image nodes inside the Loop node, the workfl
 * **Batch Processing**: Process multiple records, invoices, or documents in one run—for example, extracting fields from a list of invoices.
 * **API Calls on Multiple Inputs**: Loop through a list of customer IDs to fetch data or enrich records using an external API.
 * **Bulk Notifications**: Send personalized messages or emails to a list of recipients, such as customers or employees.
-* **Conditional Execution**: Perform specific actions for each item based on dynamic conditions—e.g., route based on status or priority.
+* **Conditional Execution**: Perform specific actions for each item based on dynamic conditions— for example, route based on status or priority.
 * **Multi-step Approval or Review Flows**: Run data through sequential approval steps for each request or user submission.
 * **Report Generation**: Generate individual summaries or PDFs for each customer, product, or team in a dataset.
 * **Automated Testing**: Reuse a test flow across different input values or environments.
@@ -71,7 +71,7 @@ By default, the Loop node is added in *expanded mode*, allowing you to start bui
 You can define the repeated steps by placing nodes inside the loop structure. Supported methods:
 
 * Click the “+” on the loop start or existing node tiles.
-* Use the Connections Panel to add new steps.
+* Use the Connections panel to add new steps.
 * Drag and drop nodes into the loop block manually.
 
 You can add any supported child nodes inside the Loop node, including Function Nodes, Text-to-Text AI Nodes, API Nodes, Condition Nodes, and others. Each child node runs once per item in the loop's input list. Use `{{currentItem}}` (or a custom alias if defined) to reference the current iteration item inside these nodes.
@@ -109,7 +109,7 @@ Choose how the Loop node should behave when an error occurs during iteration:
 
 * **Continue on error** (default) – The loop executes all iterations. Failed iterations return error objects. The final output array contains both successful results and errors. Execution follows the success path.
 * **Terminate execution** – The loop breaks on first failure. Execution follows the failure path with the failed iteration details.
-* **Remove failed results** – Extends Continue on error behavior. Failed iterations are filtered out of the final array. Only successful results are returned. Execution follows the success path.
+* **Remove failed results** – Extends 'Continue on error' behavior. Failed iterations are filtered out of the final array. Only successful results are returned. Execution follows the success path.
 
 Think of these like array processing methods:
 
@@ -179,7 +179,7 @@ After running the workflow, use the Debug panel to inspect loop behavior, debug 
    </td>
    <td>The error handling option could be incorrect.
    </td>
-   <td>Change the error handling option to *Continue on error* to skip failed iterations.
+   <td>Change the error handling option to 'Continue on error' to skip failed iterations.
    </td>
   </tr>
   <tr>
@@ -187,7 +187,7 @@ After running the workflow, use the Debug panel to inspect loop behavior, debug 
    </td>
    <td>Output field name is reused elsewhere in the flow
    </td>
-   <td>Use a unique name for the Output Field to avoid overwriting data.
+   <td>Use a unique name for the Output field to avoid overwriting data.
    </td>
   </tr>
 </table>
