@@ -8,9 +8,7 @@ Use the Loop node to build smart, data-driven workflows that adapt to your data 
 
 **Example**
 
-A bank's PR team can use the Loop node to send personalized Christmas greetings to multiple customers automatically. 
-
-Here’s how the loop works:
+A bank's PR team can use the Loop node to send personalized Christmas greetings to multiple customers automatically. Here’s how the loop works in this case:
 
 * The Function node, inside the loop, extracts and combines each customer's first and last names to create a personalized message.
 * The Text-to-Image node, also placed inside the loop, generates a festive greeting image based on a text description prompt.
