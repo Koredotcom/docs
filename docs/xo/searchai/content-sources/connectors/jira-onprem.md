@@ -25,6 +25,10 @@ Search AI enables easy integration with Jira server to ingest, index, and search
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td>Content Filtering Support
    </td>
