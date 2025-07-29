@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Support for 'ReferredBy' in VoiceUtils and AgentUtils**
 
-Introduced support for the setReferredBy method in both VoiceUtils and AgentUtils functions. This enhancement enables developers to assign a referring number (for example, +91 9876543210) during call transfers, allowing the receiving party to identify the source of the referral. The addition improves call traceability and supports more transparent handoffs between agents or systems. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#sip-refer)
+Introduced support for the setReferredBy method in both VoiceUtils and AgentUtils functions. This enhancement enables developers to assign a referring number during call transfers, allowing the receiving party to identify the source of the referral. The addition improves call traceability and supports more transparent handoffs between agents or systems. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#sip-refer)
 
 <font size="4">Flows</font>
 
