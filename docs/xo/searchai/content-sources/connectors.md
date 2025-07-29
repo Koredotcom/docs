@@ -116,7 +116,7 @@ Use the **Test Script** option to validate your transformation and verify the ou
 
 To enable or disable RACL in the supported connectors, go to the **Permissions** page and select one of the following.
 
-* **Same users as in the source system (Restricted Access):** AAutomatically syncs permission data from the third-party application. If a scheduler is configured, permissions are updated at defined intervals to reflect changes in the source system.
+* **Same users as in the source system (Restricted Access):** Automatically applies the same permissions from the source system, ensuring secure and seamless access to ingested content. If a scheduler is configured, permissions are updated at defined intervals to reflect changes in the source system.
 
 * **Everyone(Public Access)**: Irrespective of the permissions in the third-party application, the ingested content is accessible to all SearchAI users. 
 

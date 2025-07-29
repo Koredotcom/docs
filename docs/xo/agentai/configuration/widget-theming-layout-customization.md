@@ -63,7 +63,7 @@ This section lets you enable or disable the Agent AI widget menus - **Assist Hom
 
     The **Dark Mode** and **Settings** menu symbols are not customizable, and the **Dark Mode** is the only functional button even in the preview mode of the widget.
 
-### Adding a Custom Tab
+### Add a Custom Tab
 
 The **+ Add Custom Tab** feature lets you create a custom tab within the Agent AI widget. You can configure the tab to either run a dialog task automatically based on selected events or highlight a task for agents to view and execute, as needed. Once named, you can rename, edit, and mark it as the landing tab. Follow these steps to add a new custom tab:
 
@@ -84,7 +84,7 @@ The **+ Add Custom Tab** feature lets you create a custom tab within the Agent A
 6. Click **Apply**. The custom tab is created, as highlighted in the following screenshot:  
 <img src="../widget-theming-layout-customization/new-custom-tab.png" alt="new-custom-tab" title="new-custom-tab" style="border: 1px solid gray; zoom:80%;">
 
-### Editing and Deleting a Custom Tab
+### Edit or Delete a Custom Tab
 
 To modify or delete an existing Custom Tab:
 
@@ -139,32 +139,37 @@ This feature allows you to organize dialog tasks into groups. During group creat
 
 !!! note
 
-    Dialog tasks not added to a group don’t show up during runtime.
+    Dialog tasks not added to a group don’t show up during runtime. 
 
-
-### Adding a Dialog Task Group
+### Add a Dialog Task Group
 
 1. Click **+ Add Group** at the top-right corner of the **Dialog Task Layout** section.  
 <img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-grouping-5.png" alt="dialog-task-grouping" title="dialog-task-grouping" style="border: 1px solid gray; zoom:80%;">
-2. Enter a unique name in the **Group Name** field.
+2. Enter a unique name in the **Group Name** field. You can add up to 100 characters. 
 3. Click the **Add Dialog Task** field to display all the existing dialog tasks.
 4. Click to select the dialog task names. You can also click the “search” button to find a dialog task.
 5. Click **Apply** to complete the dialog tasks selection process.
 6. Click **Create**.  
 <img src="../widget-theming-layout-customization/dialog-task-layout/adding-group-6.png" alt="adding-group" title="adding-group" style="border: 1px solid gray; zoom:80%;">
 
-### Editing or Deleting a Dialog Task Group
+### Edit, Expand, Collapse or Delete a Dialog Task Group
 
-In this section, you can modify the Dialog Task Group name and add or remove dialog tasks from the group.
+Use this section to rename a dialog task group, manage its dialog tasks, or expand, collapse, or delete the group. 
 
-1. To edit a Dialog Task Group, click the “edit” button against the Dialog Task Group name:  
+1. To edit, click the “edit” button against the Dialog Task Group name:  
 <img src="../widget-theming-layout-customization/dialog-task-layout/dialog-group-editing-7.png" alt="dialog-group-editing" title="dialog-group-editing" style="border: 1px solid gray; zoom:80%;">
 
 2. Make all the required changes, and click **Save**.  
 <img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-group-saving-8.png" alt="dialog-task-group-saving" title="dialog-task-group-saving" style="border: 1px solid gray; zoom:80%;">
-3. To delete a Dialog Task Group, click the “delete” button against it:  
-<img src="../widget-theming-layout-customization/dialog-task-layout/group-deleting-9.png" alt="group-deleting" title="group-deleting" style="border: 1px solid gray; zoom:80%;">
-4. Click **Delete** in the confirmation window.
+3. To delete, click the “delete” button against it:  
+<img src="../widget-theming-layout-customization/dialog-task-layout/group-deleting-9.png" alt="group-deleting" title="group-deleting" style="border: 1px solid gray; zoom:80%;"> 
+4. Click **Delete** in the confirmation window. 
+5. To expand or collapse, click the **expand/collapse** button:  
+<img src="../widget-theming-layout-customization/dialog-task-layout/expand-collapse-dialog-tasks.png" alt="expand-collapse-dialog-tasks" title="expand-collapse-dialog-tasks" style="border: 1px solid gray; zoom:80%;">  
+
+    !!! note
+
+        The widget retains the expanded or collapsed state of a group, as configured during the last save. 
 
 ### Add, Sort, and Delete dialog tasks from a Dialog Task Group
 

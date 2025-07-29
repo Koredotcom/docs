@@ -81,6 +81,7 @@ The Assist tab facilitates the following:
 
 * Guide agents through conversations by providing the best response suggestions.
 * Display Agentic Copilot messages. After the configured **Welcome Events** are executed, the message *"Agentic Copilot is actively listening to your conversation and ready to assist automatically."* is displayed. 
+    * Delays auto sending messages, allowing agents to cancel or manually send messages, and works across parallel chats.  
 * Automatic retrieval of information from knowledge base (KB) based on user intent.
 * Provide structured training and coaching to agents.
 * Run app for customers based on customer-provided information.
@@ -97,8 +98,10 @@ The Assist tab features the following:
 
 * **Running Playbook stages:** Shows the total and adhered stages of a running playbook. For example, 1/3 means 1 out of 3 stages of a playbook has been adhered to.
 * **Proceed to Close:** This button is available when a playbook is running. Clicking this button leads to a change in the playbook running status from Open to Close, and agents are prompted to ask if the customer needs any other help before ending the call.
-- **Agentic Copilot messages**: The messages appear with a “Sending” button that delays up to 10 seconds (based on the time set in the Set message delay before auto send field of the **Agent AI Widget Settings** section). During this time, Agents can click “x” beside the “sending” button to cancel auto send and then manually send or copy the messages. The following screenshot shows the auto send functionality button in progress along with the “Override” button:  
-<img src="../widget-images/agentic-app-in-widget.png" alt="agentic-app-in-widget" title="agentic-app-in-widget" style="border: 1px solid gray; zoom:80%;"> 
+* **Agentic Copilot messages**: The messages appear with a “Sending” button that delays auto-send for up to 10 seconds, based on the value set in the **Set message delay before auto send** field in the **Agent AI Widget Settings** section). During this time, Agents can click the **x** icon next to the **sending** button to cancel auto-send and choose to send or copy the message manually. 
+
+    The auto-send functionality works uninterrupted across multiple parallel chats. The following screenshot shows the auto-send functionality button in progress along with the **Override** button:  
+    <img src="../widget-images/agentic-app-in-widget.png" alt="agentic-app-in-widget" title="agentic-app-in-widget" style="border: 1px solid gray; zoom:80%;"> 
 
    * To cancel auto sending, click “x” beside the “sending” button:  
     <img src="../widget-images/agentic-app-messages.png" alt="agentic-app-messages" title="agentic-app-messages" style="border: 1px solid gray; zoom:80%;"> 
