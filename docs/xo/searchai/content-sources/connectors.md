@@ -10,7 +10,7 @@ By leveraging these connectors, organizations can deliver a **unified and intell
 
 **Connectors** allow the application to integrate with third-party platforms by establishing a secure connection and enabling seamless data ingestion via the APIs exposed by the applications. Once the connection is configured and authentication is completed, data from the third-party application is ingested, indexed, and made available for search within Search AI.
 
-The **access privileges **of the content are maintained as per the privileges assigned to the user in the third-party repository. This ensures that only the files accessible to the user in the third-party application are visible to the user via Search AI as well. 
+The **access privileges** of the content are maintained as per the privileges assigned to the user in the third-party repository. This ensures that only the files accessible to the user in the third-party application are visible to the user via Search AI as well. 
 
 During each synchronization cycle, the connector performs **incremental updates**, retrieving only newly added or modified data based on change timestamps. Any content that has already been indexed and remains unchanged is skipped, ensuring efficient and optimized syncing.
 
