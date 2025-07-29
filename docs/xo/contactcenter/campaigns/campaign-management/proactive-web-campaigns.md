@@ -230,7 +230,15 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
     * Between
     * In
 
-    Sample JSON
+    **Example Field Names**
+
+    ```
+    name
+    details.location
+    details.cart[0].productName
+    ```
+
+    **Sample JSON**
 
     ```
     {
