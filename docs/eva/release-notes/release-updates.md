@@ -2,6 +2,71 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
+## v1.9.3 July 29, 2025
+
+<u>Major Release</u>
+
+This update includes new features and feature enhancements summarized below.
+
+</font></p><font size="4">New Features</font>
+
+**Agent Testing**
+
+The new Agent Testing feature transforms to prepare agents before publishing by providing comprehensive validation tools and improvement capabilities. This advanced testing suite offers key features designed to facilitate thorough validation and continuous improvement:
+
+* Simulate diverse user interactions with varied sample queries to evaluate agent responses to phrasing, intents, and conversational flows, identifying gaps or areas for clarification.
+* The testing suite enables direct agent refinements through tools that optimize intent recognition, enhance entity extraction, and adjust conversational logic, supporting iterative improvements based on real feedback.
+
+[Learn more :octicons-arrow-right-24:](../custom-agents/agent-testing.md)
+
+**Domain Management**
+
+Domain Management now distinguishes between Company Domains for organization-owned domains and Partner Domains for external collaborators, providing flexible access control while maintaining security standards.
+
+Domain Types:
+
+* Company Domains: Enable automatic sign-in when domain-based enrollment is active.
+* Partner Domains: Require explicit invitations and support access to multiple tenant accounts.
+
+!!! note
+
+    All domains undergo verification before activation, with rejected domains maintained for comprehensive audit trials.
+
+[Learn more :octicons-arrow-right-24:](../security/domain-management.md)
+
+**Real-time Query Execution Status**
+
+Introducing a new feature that offers real-time visibility into query processing, monitoring execution status for transparent background operations. Query progress displays sequentially, with intelligent steps generated based on query type.
+
+The **Response Flow** button appears when the response is ready, revealing all execution steps. Expand for the full journey or collapse for a clean view. The final execution step always remains visible above the response.
+
+**Agent Creation Experience**
+
+Introducing a new **Create Agent** button in the Agent and Flow section that adapts to user permissions and streamlines the entire agent creation workflow. The system now routes users to the most appropriate workspace environment based on their access levels.
+
+* **My Workspace** appears alongside shared workspaces in the workspace switcher during agent creation.
+* Automatic routing to Personal Workspace for users without shared workspace access.
+* Enhanced workspace management with permission-based navigation.
+  
+[Learn more :octicons-arrow-right-24:](../custom-agents/agent-creation.md)
+
+**Advanced Agent Configuration**
+
+New enterprise-grade features for communication and data governance have been added to the **Appearance & Behavior** section. These features are available in the configuration steps for creating Bots, Workflows, and Autonomous Agents.
+
+* **Allow End User Notification**: Enables external notification integration with a developer-friendly setup. Provides pre-filled sample requests and UI guidance to documentation. Notifications auto-distribute to all users where the agent is published and enabled.
+* **Clear Chat History**: Users can implement automated chat history management through flexible scheduling options ranging from 1 to 90 days.
+
+<font size="4">Feature Enhancements</font>
+
+**Code Block UI Enhancement**
+
+Improvised AI-generated code responses with dedicated code block components that feature distinct styling to clearly separate code from regular text. Each code block now includes a built-in **Copy Response** button, eliminating the need to manually select and copy code content. This streamlined approach provides instant clipboard access and improves the overall developer experience.
+
+**Conversation Context Management**
+
+The conversation interface has been redesigned to improve user experience during agent interactions. A persistent ***Talking to [Agent Name]*** banner, smart navigation guards that trigger confirmation pop-ups, and the requirement for users to explicitly end current agent interactions before switching contexts.
+
 ## v1.9.2 June 21, 2025
 
 <u>Major Release</u>

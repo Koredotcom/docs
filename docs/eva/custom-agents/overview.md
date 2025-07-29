@@ -1,5 +1,7 @@
 # Custom Agents 
 
+## Learn the concepts
+
 Configurable AI agents designed for quick deployment and workflow integration with minimal setup:
 
 * **Prompt Agents**: Build custom **GPT** agents capable of executing specific tasks by responding to tailored prompts, user inputs, and knowledge. [Learn more](./prompt-agents.md).
