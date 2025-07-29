@@ -10,18 +10,19 @@ This document provides information on the feature updates and enhancements intro
 
 **Agentic Copilot Auto-Send functionality now Supports Multiple Parallel Chats**
 
-The Auto-Send functionality now supports multiple parallel chats. The updated communication mechanism enables Agentic Copilot to auto-send responses, regardless of the active UI frame. It resolves disruptions caused by widget reloads when agents switch between customers, ensuring uninterrupted support across multiple conversations.
+The Auto-Send functionality now supports multiple parallel chats. The updated communication mechanism enables Agentic Copilot to auto-send responses, regardless of the active UI frame. It resolves disruptions caused by widget reloads when agents switch between customers, ensuring uninterrupted support across multiple conversations. [Learn more :octicons-arrow-right-24:](../../agentai/agent-experience/agent-assist-widget-v3.md/#assist-tab)
 
 **Enhanced Dialog Task Grouping**
 
-When grouping Dialog Tasks, the Group Name field now supports up to 100 characters, and a character counter displays the number of characters entered as you type. The widget retains the expanded or collapsed state of a group, as configured during the last save.
+When grouping Dialog Tasks, the Group Name field now supports up to 100 characters, and a character counter displays the number of characters entered as you type. The widget retains the expanded or collapsed state of a group, as configured during the last save. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-theming-layout-customization.md/#edit-expand-collapse-or-delete-a-dialog-task-group) 
 
 **Exit Events Support Agentic App Configuration**
 
 The Exit Events tab now includes the **Configure End of Conversation Agentic App** section, which lets you select an Agentic App to trigger when a conversation ends. This option is available only when Agentic Copilot is enabled in the Widget Settings > Agent AI Channel Specific Settings section. When enabled, you can select one of the following options:
 
 * Use the same app as Agentic Copilot: Select this option if you want to use the same app configured for Agentic Copilot.
-* Select a different Agentic App: Select this option to get a dropdown list of available Agentic Apps, excluding the one used by Agentic Copilot.
+* Select a different Agentic App: Select this option to get a dropdown list of available Agentic Apps, excluding the one used by Agentic Copilot. 
+[Learn more :octicons-arrow-right-24:](../../agentai/configuration/conversation-events.md/#configure-end-of-conversation-agentic-app)  
 
 **Introduction of Widget Search Bar Configuration Toggle**
 
@@ -31,7 +32,7 @@ The Agent AI Channel Specific Settings section now includes the Widget Search Ba
 * Search AI: Get search results or answers from the Search AI app.
 * Agentic App (LLM): Powers search results through a customizable Agentic App.
 
-When the toggle is disabled, the widget uses the default search behavior.
+When the toggle is disabled, the widget uses the default search behavior. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings) 
 
 <font size="4">Widget Runtime Enhancement</font>
 

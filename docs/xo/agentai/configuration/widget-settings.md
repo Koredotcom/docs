@@ -36,6 +36,12 @@ This section lets you set your preferences based on the channels. It has three c
 
 * **Copy Button**: This widget lets you control the accessibility of the Copy button functionality for Agent AI responses. By default, this widget is enabled for all three channels.
 
+* **Widget Search Bar Configuration**: This widget enables you to have a configurable search experience through the widget search bar. Search results load faster because they display as soon as data is retrieved from the first available source (XO Platform, Search AI, or Agentic App), while results from other sources load gradually. When **disabled**, the [default search experience](../../agentai/agent-experience/agent-assist-widget-v3.md/#search-tab){:target="_blank"} displays results from all sources simultaneously. When **enabled**, you can select one or more of the following options based on your need: 
+
+    * **XO Platform**: To identify and surface intents such as dialogs and FAQs through the XO Platform.
+    * **Search AI**: To get search results or answers from the **Search AI** app.
+    * **Agentic App (LLM)**: To power search results through a customizable Agentic App. You must select an Agentic App from the dropdown list, from which results will display in runtime. 
+
 * **Conversation Transfer**: This widget lets you define and categorize the conversation transfer behavior based on the transfer type and channels. It applies only to the third-party configurations where appropriate transfer events are transmitted.
 
     * **Cold Transfer**: It is defined as a conversation handover that happens between two agents and is applicable to all three channels – Voice, Chat, and Email. The conversation summary is generated again for the receiving agent, and this summary, along with the feedback options, gets added to Agent-1’s Assist tab. Agent-2 can change the summary feedback for voice and email channels.
@@ -81,10 +87,17 @@ This section lets you set your preferences based on the channels. It has three c
     * Use agent’s entry and exit events 
     <img src="../widget-settings-images/control-transcript-visibility.png" alt="control-transcript-visibility" title="control-transcript-visibility" style="border: 1px solid gray; zoom:80%;"> 
 
-10. Select an option under the **Conversation Transfer** section.
-11. Enable or disable the **Auto Summarization** toggle.
-12. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
-13. Select or clear the **Submit** button under the **Auto Summarization** section.
+10. Select an option under the **Conversation Transfer** section.  
+11. Turn on the **Widget Search Bar Configuration** toggle. 
+    1. Select one or more options—**XO Platform**, **Search AI**, **Agentic App**.  
+    2. If you select **Agentic App**, select an app from the dropdown list. 
+
+        !!! note
+            The **Search AI** and **Agentic App** fields are disabled until they are configured. A warning message prompts you to configure them before use.  
+
+12. Enable or disable the **Auto Summarization** toggle.
+13. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
+14. Select or clear the **Submit** button under the **Auto Summarization** section.
 
     Under the **Auto Summarization Model** section, select:
 
