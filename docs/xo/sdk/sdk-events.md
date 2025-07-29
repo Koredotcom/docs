@@ -295,7 +295,7 @@ The event adds the following code in the Data object sent to kit:
 "event Type": "endDialog"/ "endFAQ"
 }
 ```
-### Contact Center Events (Real-Time BotKit Emission)
+### Contact Center Events
 
  The platform emits a set of real-time **Contact Center Events** to the **BotKit channel** using the `onEventNode`. These events provide timely updates on key agent actions and conversation lifecycle changes (for example, agent acceptance, transfer, termination, etc.). 
 

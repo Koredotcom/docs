@@ -23,7 +23,6 @@ The DialogGPT batch testing framework now supports the validation of specific Co
 
 **Enhanced Salesforce MIAW Agent Integration** 
 
-
 Salesforce MIAW Agent Integration now includes agent name display, real-time read receipts for both parties, automatic inactivity timeout, and UI-based management of standard responses and stop words. These enhancements improve agent experience, streamline session handling, and simplify configuration directly through the interface. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#additional-capabilities)
 
 
