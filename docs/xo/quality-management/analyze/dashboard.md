@@ -35,8 +35,7 @@ The Dashboard metrics allow you to filter and refine the data displayed across t
 
 In the Quality AI Dashboard, you can search and filter by language across the dashboard, and apply the language-specific metrics. You can select more than one language or all languages simultaneously.
 
-These metrics are available based on the languages configured at the evaluation metric level under the **Configuration** > **Settings** > **Language Settings**. 
- 
+These metrics are available based on the languages configured at the evaluation metric level under the **Configuration** > **Settings** > **Language Settings**.    
 <img src="../dashboard/images/language-filter.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:100%;">
 
 !!! note
@@ -57,8 +56,7 @@ When a language filter is applied, the following widget metrics are updated to r
 
 #### Date Range
 
-By using the Calendar dropdown at the top-right of the dashboard to filter data by date. Select your desired range, then click **Apply**. Data is shown based on the selected language and time period.
-
+By using the Calendar dropdown at the top-right of the dashboard to filter data by date. Select your desired range, then click **Apply**. Data is shown based on the selected language and time period.    
 <img src="../dashboard/images/date-range-filter.png" alt="Date Range calendar" title="Date Range calendar" style="border: 1px solid gray; zoom:100%;">
 
 You can filter all agent interaction data by selecting the following date ranges:
@@ -74,8 +72,7 @@ You can filter all agent interaction data by selecting the following date ranges
 
 The Quality AI Dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, and **All**. You can filter the performance metrics by channel, such as **Voice**, **Chat**, or **All** (Voice and Chat) conversations. The dashboard provides trends and graphs with daily, weekly, and monthly views, along with a distribution view.
 
-To filter by channel, click All channels in the top-right corner and choose your preferred channel option. Data is shown based on the selected language and channel.
-
+To filter by channel, click All channels in the top-right corner and choose your preferred channel option. Data is shown based on the selected language and channel.   
 <img src="../dashboard/images/channel-options.png" alt="Date Range" title="Date Range" style="border: 1px solid gray; zoom:100%;">
 
 ## Agent Performance Metrics
@@ -91,23 +88,22 @@ Displays the total manual audits count completed.
 
 ### Avg. Audits per Agent
 
-Displays the average number of manual audits or evaluations completed by each agent, based on their assigned queues.
+Displays the average number of manual audits or evaluations completed by each agent, based on their assigned queues.   
 <img src="../dashboard/images/avg-audits-per-agent.png" alt="Average Audits per Agent" title="Average Audits per Agent" style="border: 1px solid gray; zoom:100%;">
 
 ### Coaching Sessions Assigned
 
-Displays the total coaching sessions assigned to agents by supervisors.
-
+Displays the total coaching sessions assigned to agents by supervisors.  
 <img src="../dashboard/images/coaching-sesssions-assigned.png" alt="Coaching Sessions Assigned" title="Coaching Sessions Assigned" style="border: 1px solid gray; zoom:100%;">
 
 ### Agents in Coaching
   
-Displays the number of agents who have an active coaching assignment in the queues to which the viewer belongs.
+Displays the number of agents who have an active coaching assignment in the queues to which the viewer belongs.  
 <img src="../dashboard/images/agents-in-coaching.png" alt="Agents in Coaching" title="Agents in Coaching" style="border: 1px solid gray; zoom:100%;">
 
 ### Fatal Interactions
   
-Displays the frequency of fatal interaction errors. For example, a customer service call that fails to meet critical standards. If an interaction fails any fatal criteria configured in the evaluation form, the entire scorecard becomes zero regardless of its performance in other areas.
+Displays the frequency of fatal interaction errors. For example, a customer service call that fails to meet critical standards. If an interaction fails any fatal criteria configured in the evaluation form, the entire scorecard becomes zero regardless of its performance in other areas.  
 <img src="../dashboard/images/fatal-interactions.png" alt="Fatal Interactions" title="Fatal Interactions" style="border: 1px solid gray; zoom:100%;">
 
 ### Audit Progress
@@ -118,7 +114,7 @@ Displays and tracks the overall progress score of audits (both pending and compl
 
 * **Pending**: Number of interactions assigned for audit and not yet audited.
 
-* **Audit**: Click the **Audit** button, which navigates you to the **Conversation Mining** > **Audit Allocations** feature, where you can start evaluating interactions.  
+* **Audit**: Click the **Audit** button, which navigates you to the **Conversation Mining** > **Audit Allocations** feature, where you can start evaluating interactions.   
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
 For more information, see [Audit Allocations](../analyze/conversation-mining-audit-allocations.md).
@@ -130,15 +126,17 @@ This displays the trend of the average **Kore Evaluation Score** (Auto QA Score)
 This allows you to compare system-generated evaluations with manual audits across the following periods:
 
 * **Daily**: Displays score for the last 7 days.
+
 * **Weekly**: Displays score for the last 7 weeks.
-* **Monthly**: Displays score for the last 7 months.   
+
+* **Monthly**: Displays score for the last 7 months.     
 <img src="../dashboard/images/evaluation-score.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
 ## Adherence Heat Map
 
 This presents a simplified heatmap of adherence data for the past 7 days. It includes a default form selection without any click-through functionality. 
 
-You can filter and view flagged or fatal interactions for each form. Additionally, you can select a default evaluation form and designate it as the "Mark as Default" queue. This allows you to view adherence data on both the heatmap and the QA dashboard, filtered by the selected languages for future reference.  
+You can filter and view flagged or fatal interactions for each form. Additionally, you can select a default evaluation form and designate it as the "Mark as Default" queue. This allows you to view adherence data on both the heatmap and the QA dashboard, filtered by the selected languages for future reference.    
 <img src="../dashboard/images/dashboard-adhere-heatmap.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
 To view adherence with fatal errors or interactions, you should do the following:
@@ -167,13 +165,12 @@ The **Fail Statistics** chart displays the count of failed interactions based on
 
 This chart shows failure scores across the selected evaluation forms, helping teams monitor failure rates or negative scores tied to key evaluation metrics. When you hover over the chart, it reveals specific failure rates or negatively weighted scores, so you can take corrective actions without manually reviewing each failed interaction.
 
-By assigning negative weights to critical metrics in evaluation forms, attributes, or scorecards, you generate negative final scores for certain interactions. The system displays these scores across relevant modules.
+By assigning negative weights to critical metrics in evaluation forms, attributes, or scorecards, you generate negative final scores for certain interactions. The system displays these scores across relevant modules.  
 <img src="../dashboard/images/fail-stat-evaluation-form.png" alt="Fail Statistics Evaluation Form" title="Fail Statistics Evaluation Form" style="border: 1px solid gray; zoom:60%;">
 
 ### Agent Scorecard
 
-The chart displays the trend of failed agent interactions as a percentage, based on selected scorecard metrics. If any of the selected metrics are marked as fatal criteria, the entire interaction or scorecard shows a zero score when you hover over it. Fatal interactions are automatically flagged and filtered across system modules for visibility and further action.
-
+The chart displays the trend of failed agent interactions as a percentage, based on selected scorecard metrics. If any of the selected metrics are marked as fatal criteria, the entire interaction or scorecard shows a zero score when you hover over it. Fatal interactions are automatically flagged and filtered across system modules for visibility and further action.   
 <img src="../dashboard/images/fail-stat-agent-scorecard.png" alt="Fail Statistics Agent Scorecard" title="Fail Statistics Agent Scorecard" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
@@ -191,7 +188,7 @@ Supervisors can monitor agent performance based on the selected evaluation form 
 * **Trends**: The Performance Monitor provides a **Trends** view (agent performance) that visualizes the average Kore Evaluation scores (both positive and negative) from agent scorecards on a daily, weekly, and monthly basis.  
 <img src="../dashboard/images/performance-monitor-evaluation-form-trends.png" alt="Performance Monitor Evaluation Form Trends" title="Performance Monitor Evaluation Form Trends" style="border: 1px solid gray; zoom:60%;">
 
-* **Distribution**: This view displays the distribution of both Kore evaluation scores and agents scorecard scores over the last 7 days, 30 days and 90 days.  
+* **Distribution**: This view displays the distribution of both Kore evaluation scores and agents scorecard scores over the last 7 days, 30 days and 90 days.    
 <img src="../dashboard/images/performance-monitor-evaluation-form-distribution.png" alt="Performance Monitor Evaluation Form Distribution" title="Performance Monitor Evaluation Form Distribution" style="border: 1px solid gray; zoom:60%;">
 
 #### Agent Scorecard
@@ -204,7 +201,7 @@ Supervisors can monitor agent performance based on the selected evaluation form 
 
 ## Agent Leaderboard
 
-This widget provides a simplified view of the Agent Leaderboard and a snapshot version of agent performance. The Agent Leaderboard displays a centralized view that makes it easy to identify the best and worst performers. It enables you to make informed decisions about rewarding high performers and assigning coaching to those agents who need improvement. This feature functions independently of language choice and communication channel.
+This widget provides a simplified view of the Agent Leaderboard and a snapshot version of agent performance. The Agent Leaderboard displays a centralized view that makes it easy to identify the best and worst performers. It enables you to make informed decisions about rewarding high performers and assigning coaching to those agents who need improvement. This feature functions independently of language choice and communication channel.  
 <img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
