@@ -30,6 +30,10 @@ By setting up the Google Drive connector in Search AI, you can extend the search
    <td>RACL Support </td>
    <td>Yes </td>
   </tr>
+   <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
 </table>
 
 

@@ -27,6 +27,10 @@ Search AI supports searching through the **Screens **in the Zeplin account.  \
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td>Content Filtering
    </td>

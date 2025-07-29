@@ -23,6 +23,10 @@ HubSpot provides a CRM platform with different tools to enable businesses to man
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td>Content Filtering
    </td>
