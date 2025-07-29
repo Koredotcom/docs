@@ -81,7 +81,7 @@ Determine agent adherence to default script steps across greeting, branding, pri
 
 ### GenAI-based agent answer adherence and customer trigger detection
 
-Utilize LLMs to verify agent adherence and detect customer triggers without requiring configuration of utterances or training. [Learn more](../quality-management/configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-question.md).
+Utilize LLMs to verify agent adherence and detect customer triggers without requiring configuration of utterances or training. [Learn more](../quality-management/configure/evaluation-criteria/metrics-measurement-types/by-question.md).
 
 
 ### Generating Similar QM Utterance Suggestions
