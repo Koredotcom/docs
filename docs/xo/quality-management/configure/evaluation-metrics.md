@@ -1,6 +1,6 @@
 # Evaluation Metrics
 
-This feature is a key component of the Quality AI module.It enabling supervisors to define, customize, and monitor performance indicators that measure the quality of agent-customer interactions. This supports multiple measurement types, each designed for specific evaluation needs through a combination of advanced AI-driven analysis and traditional rule-based methods. 
+This feature is a key component of the Quality AI module. It enabling supervisors to define, customize, and monitor performance indicators that measure the quality of agent-customer interactions. This supports multiple measurement types, each designed for specific evaluation needs through a combination of advanced AI-driven analysis and traditional rule-based methods. 
 
 Within Evaluation Forms, you can create and manage custom evaluation criteria using these different measurement types. The GenAI-powered adherence metric simplifies setup by reducing the need for large training datasets. This improves scalability while ensuring consistent quality and compliance across multiple languages and diverse agent interactions.
 
