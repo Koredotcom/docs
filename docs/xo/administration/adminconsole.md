@@ -26,7 +26,7 @@ You can also access the Admin Console by going directly to: [https://platform.ko
 
 In case you have access to multiple accounts, the same will be listed for selection.  You can set one as the default account.
 
-The Kore.ai XO Platform offers an additional layer of security beyond username and password during account sign-in with **Two-Factor Authentication (2FA)**. 2FA when enabled, prompts for a security code verification after you’ve entered your username and password. [Learn more](../security-and-control/two-factor-authentication-for-platform-access/#enable-two-factor-authentication){:target="_blank"}.
+The Kore.ai XO Platform offers an additional layer of security beyond username and password during account sign-in with **Two-Factor Authentication (2FA)**. 2FA when enabled, prompts for a security code verification after you’ve entered your username and password. [Learn more](./security-and-control/two-factor-authentication-for-platform-access.md#enable-two-factor-authentication){:target="_blank"}.
 
 Kore.ai triggers a session timeout after 15 mins of idle time to prevent unauthorized access. In such scenarios, you will be taken to your account admin console and asked to sign-in again.
 

@@ -12,7 +12,7 @@ XO Platform offers this support by default in their cloud offering. In case, the
 
 ### For On-premises Users
 
-During the bots platform installation, configure the SSL certificate following the instructions given in the Installation Guide.
+During the  platform installation, configure the SSL certificate following the instructions given in the Installation Guide.
 
 
 ### Prerequisites
@@ -29,16 +29,16 @@ The client can acquire a certificate from any of the trusted Certificate Authori
 
 ## Working
 
-Whenever the bots platform makes a call to backend services for API invocation (from Service node) that requires mutual authentication (or two way SSL), the bots platform presents the configured certificate to the API endpoint for SSL handshake. If the certificate is not valid or not trusted by the API service, the bot cannot make that call.
+Whenever the  platform makes a call to backend services for API invocation (from Service node) that requires mutual authentication (or two way SSL), the platform presents the configured certificate to the API endpoint for SSL handshake. If the certificate is not valid or not trusted by the API service, the app cannot make that call.
 
-The authentication message exchange during SSL handshake between bots platform and API server includes the following steps:
+The authentication message exchange during SSL handshake between platform and API server includes the following steps:
 
-1. The bots platform makes a request to a configured API endpoint.
-2. The API server presents its certificate to the bots platform.
+1. The platform makes a request to a configured API endpoint.
+2. The API server presents its certificate to the platform.
 3. The bots platform verifies the server’s certificate.
-4. If successful, the bots platform sends its configured two-way SSL certificate to the API server.
+4. If successful, the platform sends its configured two-way SSL certificate to the API server.
 5. The API server verifies the presented certificate credentials.
 
-If successful, the server grants API access to the bots platform.
+If successful, the server grants API access to the platform.
 
-This process is applicable for service nodes ([know more about service node](../node-types/working-with-the-service-node/){:target="_blank"}) in a bot.
+This process is applicable for service nodes ([know more about service node](../node-types/working-with-the-service-node/){:target="_blank"}) in an app.
