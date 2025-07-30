@@ -105,7 +105,7 @@ activated, follow the integration steps to complete the process:
 
 2. Click **Connect account** to move to the next step.
 
-#### Step:3 Appearance and Behavior
+#### Step 3: Appearance and Behavior
 
 The **Appearance and Behavior** section displays sample queries to test the agent’s behavior.
 
