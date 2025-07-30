@@ -6,37 +6,21 @@ This combines advanced extraction logic with configurable business rules to veri
 
 ## Why to Use
 
-* **Automates Manual QA Workflow**
+* **Automates manual QA by verifying agent-mentioned customer data without reviewing transcripts.
 
-    Automates manual QA by automatically verifying agent-mentioned customer data, eliminating the need for manual transcript review.
+* **Ensures accuracy by validating agent statements against backend data in real-time or stored sources.
 
-* **Verify Accuracy Using Ground Truth**
+* **Compares agent values with CRM or trusted systems using API calls and LLM extraction.
 
-    Ensures accuracy by validating agent-stated values against backend data sources in real-time or from stored data.
+* **Detects compliance violations across all interactions and sends instant alerts.
 
-* **Compare Agent Mentioned Values with Backend Systems**
+* **Supports complex business rules, including tolerance ranges, negotiation clauses, and multi-language.
 
-    Trigger API calls to CRMs or other trusted sources and use LLMs to extract and match values from conversations.
+* **Provides full transparency with audit logs of API calls, extraction confidence, and rule evaluations.
 
-* **Detect Compliance Violations at Scale**
+* **Enables real-time agent feedback through GenAI and co-pilot integration.
 
-    Monitor 100 % of customer interactions (calls, chats, and emails) and sends immediate alerts with logged discrepancies.
-
-* **Support Nuanced Business Rule Configurations**
-
-    Supports complex scenarios with configurable business rules, such as tolerance ranges, negotiation clauses, and multi-language support.
-
-* **Gain Transparency through Audit Logs**
-
-    Log API success or failure, LLM extraction results with confidence scores, and rule‑evaluation outcomes for full traceability.
-
-* **Enable Real-Time Feedback via GenAI & Co-Pilot Integration**
-
-    Enhances agent coaching by identifying frequent mistakes and integrating GenAI-powered real-time feedback and insights.
-
-* **Improve Agent Training & Coaching**
-
-    Provides full auditability with detailed logs of API interactions, extraction confidence, and rule evaluation results.
+* **Improves agent training with detailed, auditable logs of all verification steps.
 
 ### Use Cases
 
