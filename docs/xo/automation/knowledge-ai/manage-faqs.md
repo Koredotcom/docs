@@ -20,7 +20,7 @@ The Few-Shot Knowledge Graph supports all features explained in this document, e
 ## Add FAQs
 Step to add an FAQ:
 
-1. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **Manage KG**. 
+1. Go to **Automation AI** > **Knowledge AI** > **FAQs** > **Manage KG**. 
 2. Click **Add Intent** on the top-right.
 <img src="../images/add-faq-intent.png" alt="add faq intent" title="add faq intent" style="border: 1px solid gray; zoom:75%;">
 
@@ -30,7 +30,7 @@ Step to add an FAQ:
 6. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. [Learn more](../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md){:target="_blank"}.
 7. (Optional) Add terms that enable the Knowledge Graph Engine to identify questions more effectively.
 8. (Optional) Enter a **Display Name** to represent the FAQ to the end-users.
-9. In the **Bot Response** field, add the bot's default responses when the user asks the FAQ.
+9. In the **Bot Response** field, add the default responses when the user asks the FAQ.
 10. (Optional) If there are alternate responses, add them in the **+ Alternate Response** field. Repeat the step for all the alternative responses you want to add.
 11. If you want to add condition-based responses for the FAQ, enable the **Conditional Response** toggle and provide the details. Learn more about [conditional responses](../knowledge-ai/manage-faqs.md#faq-conditional-responses). 
 12. (Optional) Add a **Reference Id**. This field is used to reference any external content used as a source for this FAQ.
@@ -182,7 +182,7 @@ When setting up conditional responses:
 
 * Create only a few conditions or nested rules; too many conditions can make the graph overly complex and difficult to manage.
 
-* When using variables from the context object to define the conditional responses, use only ‘BotUserSession’ variables (context.session.BotUserSession), as they will be available across the session between the user and the bot.
+* When using variables from the context object to define the conditional responses, use only ‘BotUserSession’ variables (context.session.BotUserSession), as they will be available across the session between the user and the AI Agent.
 
 * Create context, environment, or content variables before using them in conditional responses.
 
