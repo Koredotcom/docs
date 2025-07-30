@@ -158,12 +158,10 @@ You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/a
 - Facets
 
 
-### Step 3: Preview
+### Step 3: Appearance and Behavior
 
-Review the skills generated for the agent based on the purpose defined. The system uses
-Generative AI to create sample queries to which the agent can respond. You can
-**add, modify, or remove** sample queries to refine the agent's interaction
-capabilities.
+In the **Appearance and Behavior** section, a list of sample queries are displayed. If needed,
+you can add additional queries by clicking the **+ Add Query** button. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period. Once you're ready, click **Publish** to proceed to the next step.
 
 ![](images/preview.png)
 

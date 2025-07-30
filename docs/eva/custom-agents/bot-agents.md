@@ -105,15 +105,20 @@ activated, follow the integration steps to complete the process:
 
 2. Click **Connect account** to move to the next step.
 
-#### Step 3: Preview
+#### Step 3: Appearance and Behavior
 
-In the **Preview** section, a sample of queries is displayed. If necessary, you
-can click the **+ Add Query** button to add any other queries. Click
-**Continue** to move to the next step.
+The **Appearance and Behavior** section displays sample queries to test the agent’s behavior.
+
+1. Click **+Add Query** to input additional test queries.
+2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer <a href="https://docs.kore.ai/ai-for-work/custom-agents/notify-api/" target="_blank">Notifications</a>.
+3. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period.
+4. Once validated, click **Publish** to move to the final step.
 
 ![](images/preview_bot.png)
 
-#### Step 4: Publish your agent and define access permissions and enablement.
+#### Step 4: Publish
+
+Publish your agent and define access permissions and enablement.
 
 **Specify publishing details**:
 
