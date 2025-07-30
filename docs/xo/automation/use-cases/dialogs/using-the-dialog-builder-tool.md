@@ -14,7 +14,7 @@ To create a dialog task, you must have already created an assistant to add a dia
 Steps to add a dialog task:
 
 1. Open the app for which you want to create the dialog task.
-2. Navigate to **Automation AI on the left menu.
+2. Navigate to **Automation AI** on the left menu.
 3. The Automation menu opens, and the **Dialogs** page is open by default.
 4. On the Dialogs page, click the **Create Dialog** button.
 
