@@ -37,6 +37,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/get
   "filters": {
     "status": ["Ready", "Stopped"],
     "priority": [5]
+    "dialingMode": ["Progressive", "Preview"]
   }
 }
 '
@@ -52,18 +53,20 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/get
 
 ## Request Body Parameters
 
-| **Parameter**           | **Description**                                                                 | **Type**     |
-|---------------------|-----------------------------------------------------------------------------|------------------------|
-| `limit`             | Number of campaigns to return per page.                                    | integer, optional      |
-| `skip`              | Number of records to skip. Helps in pagination.                            | integer, optional      |
-| `page`              | Page number to retrieve.                                                   | integer, optional      |
-| `startDate`         | Start date-time to filter campaigns (ISO 8601 format).                     | string, optional       |
-| `endDate`           | End date-time to filter campaigns (ISO 8601 format).                       | string, optional       |
-| `type`              | Campaign type filter. Example value:  `voice`.                      | string, optional       |
-| `sortBy`            | Sorting configuration. Example: `{ "createdAt": "desc" }`.                 | object, optional       |
-| `filters`           | Object to apply filters based on status, priority, etc.                    | object, optional       |
-| `filters.status`    | List of campaign statuses to filter. Example: `["Ready", "Stopped"]`.      | array, optional |
-| `filters.priority`  | List of campaign priorities to filter. Example: `[5]`.                     | array, optional |
+| **Parameter**             | **Description**                                                                                                                       | **Type**                    |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| `skip`                  | Pagination offset. Number of records to skip. Can be a number or empty string.                                                    | number, optional        |
+| `page`                  | Page number for paginated results. Can be a number or empty string.                                                               | number, optional        |
+| `limit`                 | Number of records to return per page. Can be a number or empty string.                                                            | number, optional        |
+| `type`                  | Type of campaign. Allowed values: "voice" or "sms".                                                                           | string, required        |
+| `startDate`             | Filter start timestamp in ISO 8601 format (YYYY-MM-DDTHH:mm:ss.sssZ).                                                           | string (ISO format), optional |
+| `endDate`               | Filter end timestamp in ISO 8601 format (YYYY-MM-DDTHH:mm:ss.sssZ).                                                             | string (ISO format), optional |
+| `sortBy.name`           | Sort by campaign name. Allowed values: "asc", "desc". Must be present if any sort field is used.                             | string, optional        |
+| `sortBy.createdAt`      | Sort by campaign creation date. Allowed values: "asc", "desc".                                                                | string, optional        |
+| `sortBy.updatedAt`      | Sort by campaign update date. Allowed values: "asc", "desc".                                                                  | string, optional        |
+| `filters.status`        | Filter by status. Allowed values: ['Active', 'Completed', 'Ready', 'Paused', 'Preparing', 'Stopped', 'Scheduled', 'Rescheduled']. | array[string], optional |
+| `filters.priority`      | Filter by priority. Allowed values: [1, 2, 3, 4, 5].                                                                             | array[number], optional |
+| `filters.dialingMode`   | Filter by dialing mode. Allowed values: ['Agentless', 'Preview', 'Progressive'].                                                | array[string], optional |
 
 ## Sample Response
 
