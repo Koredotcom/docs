@@ -48,7 +48,7 @@ Instead of manually appending images later or integrating them into the tools fl
 * The node generates high-quality images based on the provided prompts and configurations.
 * The generated images are available forever and do not have an expiry period.
 * The model uses an input scanner in the node to detect and filter banned words or topics. If a banned topic is included in the input prompts, an error is generated and displayed in the debug window when the flow is executed.
-* Performance tracking is available under **Settings** > **Model Analytics Dashboard** > **Opensource Models** tab. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-analytics-dashboard/){target="_blank"}. 
+* Performance tracking is available under **Settings** -> **Model Analytics Dashboard** -> **Opensource Models** tab. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-analytics-dashboard/){target="_blank"}. 
 
 The metrics include:
 
@@ -106,8 +106,8 @@ To add and configure the node, follow the steps below:
 <ol start="7"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.</li>
 <img src="../images/connection-text-to-image.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;"></ol>
 
-<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
-<li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Text to Image</b> node.</li>
+<ul><li><b>On Success</b> -> <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
+<li><b>On Failure</b> -> <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Text to Image</b> node.</li>
 
 <p><b>Node Output</b></p>
 
@@ -123,7 +123,7 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 
 <div class="admonition note">
 <p class="admonition-title">Dynamic Prompt Inputs</p>
-<p>Before you <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">run the flow</a>, provide clear instructions for the model to follow using the <b>input variable(s)</b> you add in the following step with the help of <b>context variables</b>. Context variables add dynamic values to the prompt instructions that the model will follow. The recommended syntax is: <code>{{context.variable_name}}</code>. For example, you can store the generated image URL in a variable named “<i>Imaggenerated</i>” and pass it on in the prompt when you mention "<i>Generate an image based on the below description</i>: <code>{{context.steps.Start.Imaggenerated}}</code>", as shown in the image below.</p></div>
+<p>Before you <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">run the flow</a>, provide clear instructions for the model to follow using the <b>input variable(s)</b> you add in the following step with the help of <b>context variables</b>. Context variables add dynamic values to the prompt instructions that the model will follow. The recommended syntax is: <code>{{context.variable_name}}</code>. For example, you can store the generated image URL in a variable named “<i>Imaggenerated</i>” and pass it on in the prompt when you mention <q><i>Generate an image based on the below description</i>: <code>{{context.steps.Start.Imaggenerated}}</code></q>, as shown in the image below.</p></div>
 
 <img src="../images/dynamic-prompt-input.png" alt="dynamic prompt input" title="dynamic prompt input" style="border: 1px solid gray; zoom:75%;"> 
 
