@@ -52,11 +52,11 @@ Ensure the following GenAI features are enabled:
 
 * Ensure that the languages required by the **By Value** metric type are valid and properly configured.
 
-* The **By Value** evaluation metrics measurement type is available when both the GenAI options are [enabled ](https://docs.kore.ai/xo/generative-ai-tools/genai-features/)and [published ](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components)from the **Manage**> **Generative AI**> **GenAI Features**.
+* The **By Value** evaluation metrics measurement type is available when both the GenAI options are [enabled ](https://docs.kore.ai/xo/generative-ai-tools/genai-features/)and [published ](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components) via **Manage**> **Generative AI**> **GenAI Features**:
 
     * By Value Adherence Validation for Quality AI
-
-    * By Value Metric Extraction for Quality AI
+    * By Value Metric Extraction for Quality AI  
+    <img src="../images/by-value-genAI features.png" alt="By Value Adherence" title="By Value Adherence" style="border: 1px solid gray; zoom:70%;">  
 
 ## Configure By Vlaue Metrics
 

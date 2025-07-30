@@ -1,10 +1,10 @@
-# By Question Evaluation Metrics
+# By Question Evaluation Metric
 
-The Evaluation Metrics feature is a core component of the Quality AI module, allowing supervisors to define, tailor, and monitor performance indicators that assess the quality of interactions between agents and customers. This process is driven entirely by individual questions. Users can create and customize evaluation criteria using various measurement types, which are managed within the **Evaluation Forms** section.
+The By Question Evaluation Metric is a key feature of the Quality AI module, managed within the **Evaluation Forms** section. It enables supervisors to define, customize, and track performance indicators that measure the quality of agent–customer interactions, specifically at the level of individual questions. This metric helps you to evaluate how effectively agents answer specific questions during interactions. You can apply it universally across all conversations or use it selectively in trigger-based scenarios. 
 
-This By Question configuration evaluates adherence to specific questions asked or answered during customer-agent interactions.
+By verifying the accuracy of responses, it supports focused feedback, targeted coaching, and continuous improvement.
 
-## What It Offers For Supervisors
+## What It Offers for Supervisors
 
 * Standardized quality assessment framework.
 
@@ -18,13 +18,13 @@ This By Question configuration evaluates adherence to specific questions asked o
 
 **Primary Use Cases:**
 
-* **Quality Assurance**: When supervisors need to systematically evaluate agent adherence to specific protocols, scripts, or expected responses.
+* **Quality Assurance**: To systematically evaluate agent adherence to protocols, scripts, or expected responses.
 
 * **Training Assessment**: To measure how well agents follow prescribed interaction patterns during customer conversations.
 
-* **Compliance Monitoring**: For ensuring agents deliver critical information like disclaimers, privacy policies, or regulatory statements (privacy policies, disclaimers).
+* **Compliance Monitoring**: To verif, how agents deliver critical information, such as disclaimers, privacy policies, or regulatory statements (privacy policies, disclaimers).
 
-* **Performance Standardization**: When you need consistent evaluation criteria across different agents and interactions.
+* **Performance Standardization**: To apply consistent evaluation criteria across agents and interactions.
 
 ## How It Works
 
