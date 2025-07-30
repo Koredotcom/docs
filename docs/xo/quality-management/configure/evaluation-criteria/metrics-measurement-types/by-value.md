@@ -1,8 +1,8 @@
-# By Value Evaluation Metrics
+# By Value Metric
 
 The By Value metric validates agent adherence to customer-specific information, such as interest rates, account balances, and service values, by extracting spoken or written values using LLM-powered entity recognition and comparing them against trusted backend systems via API. 
 
-This combines advanced extraction logic with configurable business rules to verify the accuracy of financial and service-related information mentioned during interactions. Designed for scalable, AI-driven quality assurance, it captures real-world conversation nuances and logs results automatically, eliminating the need for manual review.
+This combines advanced extraction logic with configurable business rules to verify the accuracy of financial and service-related information mentioned during agent-customer interactions. This is designed for scalable, AI-driven quality assurance, which captures real-world conversation nuances and logs results automatically, eliminating the need for manual review.
 
 ## Why to Use
 
@@ -58,7 +58,7 @@ Ensure the following GenAI features are enabled:
     * By Value Metric Extraction for Quality AI  
     <img src="../images/by-value-genAI features.png" alt="By Value Adherence" title="By Value Adherence" style="border: 1px solid gray; zoom:70%;">  
 
-## Configure By Vlaue Metrics
+## Configure by Value Metrics
 
 1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
@@ -99,7 +99,7 @@ This configuration determines when and how the metric is evaluated during a conv
     * This metric is scored only if the trigger is detected. For example, an interest rate disclosure metric is only relevant when a customer asks about loan rates.
 
     * Activated only when specific intents occur, and scoring relevant checks after the trigger. If no trigger appears, it is marked as Not Applicable (NA).   
-       <img src="../images/by-value-adherence-type.png" alt="By Value Adherence Type" title="By Value Adherence Type" style="border: 1px solid gray; zoom:70%;">  
+       <img src="../images/by-value-adherence-type.png" alt="By Value Adherence Type" title="By Value Adherence Type" style="border: 1px solid gray; zoom:50%;">  
 
 #### Trigger Configuration (Dynamic Adherence Only)
 
@@ -125,7 +125,7 @@ Different use cases require different detection techniques depending on complexi
 
         * LLM interprets meaning rather than exact phrase matching (contextual understanding, such as complex intents, nuanced conversations).
 
-    * **Deterministic Adherence**: This uses exact pattern matching (non-AI) to detect trigger intent and check adherence.
+    * **Deterministic Adherence**: This uses exact pattern matching to detect trigger intent and check adherence.
 
         * Use the **Utterance** option to provide specific utterance examples. 
 
@@ -149,10 +149,10 @@ Context variables are customer identifiers mentioned in a conversation, like a p
 
 * Direct mapping between conversation content and API parameter.
 
-##### Context Variables Setup for API Request
+##### Context Variables Setup
 1. **Context Variable**: Select this when a customer identifier (such as phone number, customer ID) is mentioned in the conversation transcript.  
 
-<img src="../images/by-value-api-request-param.png" alt="API Request Parameter" title="API Request Parameter" style="border: 1px solid gray; zoom:70%;">      
+<img src="../images/by-value-api-request-param.png" alt="API Request Parameter" title="API Request Parameter" style="border: 1px solid gray; zoom:50%;">      
 
 2. **Speaker**: Choose who (**Customer** or **Agent**) provides the identifier in the conversation.
 
@@ -168,7 +168,7 @@ Context variables are customer identifiers mentioned in a conversation, like a p
 
         * **Description**: Provide detailed instructions for the AI on how to identify and extract this entity from the conversation. For example, extract the 10-digit phone number provided by the customer during verification, formatted as XXX-XXX-XXXX".
 
- ##### Service Request Authorization
+ **Service Request Authorization**
 
 Configure authentication profiles to secure API calls to your backend systems. Authentication ensures that only authorized requests can access customer data and business values. This helps you to define the service request to make a call and to fetch the required data.
 
@@ -268,10 +268,14 @@ Provide the following service request authorization details:
 
 This defines how the system identifies and extracts specific values mentioned by the agent during a conversation (for example, an interest rate). These extracted values are compared with backend references to assess adherence. The configuration provides instructions to the AI on how to locate and extract these values accurately.
 
-1. **Entity Name**: Enter a descriptive label for the value being extracted from the agent’s response (such as Interest Rate)
+1. **Entity Name**: Enter a descriptive label for the value being extracted from the agent’s response (such as Interest Rate).
+
 2. **Entity Type**: Select the appropriate data type (**String** or **Number**).  
-* **String: **For alphanumeric values, such as a customer ID.
-* **Number: **For numeric values, such as interest rate.
+
+* **String**: For alphanumeric values, such as a customer ID.
+
+* **Number**: For numeric values, such as interest rate.
+
 3. **Description**: Provide detailed instructions for the AI on how to identify the agent-mentioned value. For example, to extract the interest rate percentage mentioned by the agent when discussing loan terms, formatted as a decimal number (for example, 4.5 for 4.5%).
 
 ### Business Rules
@@ -282,93 +286,109 @@ Business Rules guide the Gen AI on selecting the correct agent-mentioned value w
 
 Choose one of the following options based on your evaluation logic:
 
-* **First Value Mentioned by Agent \
+* **First Value Mentioned by Agent**
+
 **Captures the first initial value spoken by the agent. For example, if the interest rate is mentioned as 4.1%, 4.5%, and 5% during the conversation, only the first value, 4.1% is considered.
 
 * **Last Value Mentioned by Agent**
+
     * Captures the final or last value mentioned by the agent. 
-    * **Use case**: When first mention represents the official quote.
+
+    * **Use case**: When first mention represents the official quote. 
     * **Example**: Agent quotes 4.5% initially, then mentions 4.7% and 5.0% - system uses 4.5%.
+
 * **Negotiated Value Mentioned by Agent**
+
     * Captures agreed-upon value after negotiation.
+
     * **Use case**: When negotiation results in mutual agreement.
+
     * **Example**: After the discussion, the agent and customer agree on 4.8% - the system uses 4.8%.
 
 * **Strict Source System Value**
+
     * Uses only the backend system value as ground truth.
+
     * **Use case**: Zero tolerance for any deviation from system data.
+
     * **Example**: System shows 7.9%, agent says 7.5% - marked as non-adherent.
+
 * **Custom Business Rule**
+
     * Define organization-specific selection logic.
+
     * **Use case**: Complex scenarios requiring custom handling.
+
     * **Example**: Use the value mentioned after the customer accepts terms, or use the value mentioned during the rate discussion phase. It uses the lowest number mentioned, that is 4.9%, as the best offer.
 
 ### Score Logic & Adherence Criteria
 
-
         Determines how the extracted agent’s answer is evaluated against the backend or expected value. Supports static or trigger-based evaluation to choose the evaluation method based on your complexity requirements (for example, only when a customer asks about interest rates).
-
 
 #### Gen AI-Based Adherence
 
 Defines the conditions or rules for measuring adherence. 
 
-* **Description \
-**Uses Generative AI (LLM) to evaluate if the agent has communicated the expected value correctly, based on natural language understanding and business rules. 
-    * **Failure Condition \
-**The Agent’s expected value (for example, interest rate) is not mentioned in the conversation.
-    * **Metric Outcomes:**
+* **Description**: Uses Generative AI (LLM) to evaluate if the agent has communicated the expected value correctly, based on natural language understanding and business rules. 
 
-        Configure how the system handles scenarios where the expected agent-mentioned values are not present in the conversation.
+    * **Failure Condition**: The Agent’s expected value (for example, interest rate) is not mentioned in the conversation.
 
-        * **Pass: **The expected value is mentioned as per the rule.
-        * **Metric Failure: **Value is missing or incorrect (for example, the agent should have quoted the interest rate but never mentioned it).
-        * **Not Applicable (NA): **Indicates the metric is not accounted for if the agent’s expected value is not present and excluded for score calculation (trigger condition not met; evaluation skipped or interest rate metric is skipped, and customer has only asked about account balance).**		**
+    * **Metric Outcomes**: Configure how the system handles scenarios where the expected agent-mentioned values are not present in the conversation.
 
-#### Custom Script-Based Adherence
+        * **Pass**: The expected value is mentioned as per the rule.
 
-* **Description: **Uses a rule-based script to enforce specific logic to check adherence. Suitable for more deterministic or compliance-critical scenarios.
-* **Failure Condition \
-** The required value is not present in the conversation or does not match the backend-provided value.
-* **Metric Outcome: **
-    * **Metric Failure: **Indicates interaction has failed when the required call context variable (expected information) is missing or mismatched, or found in the conversation. For example, the agent quoted 6.5% but the system says 7.5%. 
-    * **Not Applicable:** Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
+        * **Metric Failure**: Value is missing or incorrect (for example, the agent should have quoted the interest rate but never mentioned it).
 
-    **Note**: If **Custom Script **is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
+        * **Not Applicable (NA)**: Indicates the metric is not accounted for if the agent’s expected value is not present and excluded for score calculation (trigger condition not met; evaluation skipped or interest rate metric is skipped, and customer has only asked about account balance).
 
-4. Click **Create **to save and apply the agent answer metric configuration.
+#### Custom Script-based Adherence
 
+* **Description**: Uses a rule-based script to enforce specific logic to check adherence. Suitable for more deterministic or compliance-critical scenarios.
+
+* **Failure Condition**: The required value is not present in the conversation or does not match the backend-provided value.
+
+* **Metric Outcome**: 
+
+**Metric Failure**: Indicates interaction has failed when the required call context variable (expected information) is missing or mismatched, or found in the conversation. For example, the agent quoted 6.5% but the system says 7.5%. 
+
+    * **Not Applicable**: Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
+
+    **Note**: If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
+
+4. Click **Create** to save and apply the agent answer metric configuration.
 
 ## Managing Evaluation Metrics
-
 
 ### Edit Evaluation Metrics
 
 Steps to edit existing Evaluation Metrics:
 
-1. Right-click to select any of the existing** Evaluation Metrics**.
+1. Right-click to select any of the existing **Evaluation Metrics**.
 
-2. Click **Edit **to update the required **Edit Evaluation Metrics **dialog box fields.
+2. Click **Edit** to update the required **Edit Evaluation Metrics **dialog box fields.
 
-3. Click **Delete **to remove the selected playbook metrics.
-4. Click **Update **to save the changes.
+3. Click **Delete** to remove the selected playbook metrics.
+
+4. Click **Update** to save the changes.
 
 #### Language Dependency Warnings
 
 This section outlines the limitations and dependencies associated with modifying language settings in evaluation metrics. 
 
-##### Modification Warnings
+#### Modification Warnings
 
 * You cannot remove a language if any evaluation form currently uses it.
 * Remove the language from all associated evaluation forms before modifying their language settings.
-* You can safely remove languages that are not linked to any forms or metrics. \
+* You can safely remove languages that are not linked to any forms or metrics. 
 
-#### Delete Warnings
+### Delete Warnings
 
 This section describes the warnings and prerequisites you must address before deleting a metric.
 
-**Steps to proceed:**
+**Steps to proceed**:
 
 1. If the metric is used in any evaluation form, the system displays a warning message.
+
 2. Remove the metric from all associated evaluation forms before you delete it.
+
 3. The system allows you to delete the metric only after resolving all dependencies.

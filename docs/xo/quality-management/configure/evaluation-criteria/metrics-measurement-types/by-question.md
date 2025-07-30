@@ -1,6 +1,6 @@
 # By Question Evaluation Metric
 
-The By Question Evaluation Metric is a key feature of the Quality AI module, managed within the **Evaluation Forms** section. It enables supervisors to define, customize, and track performance indicators that measure the quality of agent–customer interactions, specifically at the level of individual questions. This metric helps you to evaluate how effectively agents answer specific questions during interactions. You can apply it universally across all conversations or use it selectively in trigger-based scenarios. 
+The By Question metric is a key feature of the Quality AI module, managed within the **Evaluation Forms** section. It enables supervisors to define, customize, and track performance indicators that measure the quality of agent–customer interactions, specifically at the level of individual questions. This metric helps you to evaluate how effectively agents answer specific questions during interactions. You can apply it universally across all conversations or use it selectively in trigger-based scenarios. 
 
 By verifying the accuracy of responses, it supports focused feedback, targeted coaching, and continuous improvement.
 
@@ -46,7 +46,7 @@ The metric operates through a **question-driven evaluation process** with two ma
 
 * Ideal for conditional scenarios where specific responses are required only in certain contexts.
 
-## Configure By Question Metrics
+## Configure by Question Metrics
 
 1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
