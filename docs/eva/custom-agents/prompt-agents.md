@@ -189,12 +189,10 @@ You have options to set either an Entity Rule or Answering Rule.
 
 ![](images/Business_Rule.png)
 
-### <a id="preview">Step 4: Preview</a>
+### <a id="preview">Step 4: Appearance and Behavior </a>
 
-In the **Preview** section, a list of sample queries are displayed. If needed,
-you can add additional queries by clicking the **+ Add Query** button. Once
-you're ready, click **Continue** to proceed to the next
-step.![](images/preview.png)
+In the **Appearance and Behavior** section, a list of sample queries are displayed. If needed,
+you can add additional queries by clicking the **+ Add Query** button. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period. Once you're ready, click **Publish** to proceed to the next step.![](images/preview.png)
 
 ### <a id="publish">Step 5: Publish Prompt Agent</a>
 

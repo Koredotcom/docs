@@ -28,10 +28,6 @@ Domain Types:
 * Company Domains: Enable automatic sign-in when domain-based enrollment is active.
 * Partner Domains: Require explicit invitations and support access to multiple tenant accounts.
 
-!!! note
-
-    All domains undergo verification before activation, with rejected domains maintained for comprehensive audit trials.
-
 [Learn more :octicons-arrow-right-24:](../security/domain-management.md)
 
 **Real-time Query Execution Status**

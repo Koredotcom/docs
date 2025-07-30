@@ -151,12 +151,14 @@ steps outlined below:
 
 11.  Click **Continue** to move to the next step.
 
-###  <a id="preview">Step 3: Preview</a>
+###  <a id="preview">Step 3: Appearance and Behavior
 
-In the **Preview** section, a list of sample queries is displayed. If needed,
-you can add additional queries by clicking the **+ Add Query** button. Once
-you're ready, click **Continue** to proceed to the next
-step.![](images/preview_gale.png)
+The **Appearance and Behavior** section displays sample queries to test the agent’s behavior.
+
+1. Click **+Add Query** to input additional test queries.
+2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer to , refer <a href="https://docs.kore.ai/ai-for-work/custom-agents/notify-api/" target="_blank">Notifications</a>.
+3. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period.
+4. Once validated, click **Publish** to move to the final step.
 
 ###    <a id="publish">Step 4: Publish
 

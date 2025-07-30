@@ -41,12 +41,10 @@ Customize the agent's workflow using a prompt-based interface.
 4. Click **Run** to execute all configured steps sequentially.
 5. Click **Continue** to proceed to the next step.  
 
-### Step 3: Preview
+### Step 3: Appearance and Behavior
 
-The **Preview** section displays sample queries to test the agent’s behavior.
-
-1. Click **+Add Query** to input additional test queries.
-2. Once validated, click **Continue** to move to the final step.  
+In the **Appearance and Behavior** section, a list of sample queries are displayed. If needed,
+you can add additional queries by clicking the **+ Add Query** button. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period. Once you're ready, click **Publish** to proceed to the next step. 
 
 ### Step 4: Publish
 
