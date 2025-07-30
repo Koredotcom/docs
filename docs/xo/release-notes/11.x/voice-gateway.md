@@ -24,7 +24,7 @@ The platform now dynamically displays voice-related features and loads default s
 
 **Deprecation of 'PlayHT' TTS from Voice Gateway Configuration**
 
-Support for the 'PlayHT' TTS engine has been removed from all Voice Gateway configurations. All associated options, references, and API mappings have been eliminated to prevent configuration issues and ensure compatibility with currently supported TTS providers. [Learn more :octicons-arrow-right-24:](https://community.kore.ai/t/important-update-playht-tts-support-discontinued-heres-what-to-do/5001)
+Support for the 'PlayHT' TTS engine has been removed from all Voice Gateway configurations. All associated options, references, and API mappings have been eliminated to prevent configuration issues and ensure compatibility with currently supported TTS providers. [Learn more :octicons-arrow-right-24:](https://community.kore.ai/t/important-update-playht-tts-support-discontinued-heres-what-to-do/5001){:target="_blank"}
 
 <hr>
 
@@ -38,7 +38,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Outbound Call App Selection for Agent AI**
 
-Supervisors and administrators can now assign an app for Agent AI during outbound calls. This selection is configured per phone number, ensuring the correct app assists agents. The enhancement supports outbound calls that operate outside standard experience flows. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number){:target="_blank"}
+Supervisors and administrators can now assign an app for Agent AI during outbound calls. This selection is configured per phone number, ensuring the correct app assists agents. The enhancement supports outbound calls that operate outside standard experience flows. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number)
 
 <font size="4">Text to Speech (TTS)</font>
 
