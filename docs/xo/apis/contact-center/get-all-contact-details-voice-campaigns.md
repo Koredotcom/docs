@@ -46,6 +46,13 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/{{c
 | `iid`     | The Application Id.     | required               |
 | `accountId`     | The Account Id.     | required               |
 
+## Body Parameters
+
+| **Parameter** | **Description**                                                                                      | **Type**             |
+|------------|--------------------------------------------------------------------------------------------------|------------------|
+| `page`     | Page number for pagination. Must be an integer ≥ 1. Used to fetch a specific page of results.   <br>🔹 Validations:<br>• Must be a number<br>• Must be an integer<br>• Minimum value: 1 | number, optional |
+| `limit`    | Maximum number of records per page. Must be an integer between 1 and 100.                        <br>🔹 Validations:<br>• Must be a number<br>• Must be an integer<br>• Min: 1<br>• Max: 100 | number, optional |
+
 ## Sample Response
 
 ```
