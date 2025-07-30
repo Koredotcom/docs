@@ -449,4 +449,4 @@ When the campaign runs, you can pause or stop it. You can also rerun a completed
 
 The Proactive Web Campaign plugin extends the Web SDK, enabling dynamic, rule-based interactions with website visitors. With this plugin, you can define campaigns that trigger actions like displaying messages or starting chats based on visitor behavior.
 
-For installation instructions, configuration options, and examples, refer to the README file in the [GitHub repository](https://github.com/Koredotcom/web-kore-sdk/tree/v3/dev/docs/plugins/proactive-web-campaign){:target="_blank"}.
+For installation instructions, configuration options, and examples, refer to the README file in the [GitHub repository](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.0/docs/plugins/proactive-web-campaign){:target="_blank"}.
