@@ -99,15 +99,15 @@ The following tables list the APIs available for Automation AI, grouped by the f
 
 ## Admin APIs
 
-| API | DESCRIPTION | ASSOCIATED BOT ADMIN APP SCOPE |a
-| --- | --- | --- |
+| API | DESCRIPTION | ASSOCIATED BOT ADMIN APP SCOPE |
+| --- | ----------- | ------------------------------- |
 | [Get Bots](./get-bots.md) | To retrieve the list of agents available in an account | Profile Management > Role Management |
 | [Import Roles](./import-roles.md) | To import bot or admin roles into an account | Profile Management > Role Management |
-| [Get Roles](./get-roles.md) | To retrieve the list of bot or admin roles available in an account. | Profile Management > Role Management |
+| [Get Roles](./get-roles.md) | To retrieve the list of bot or admin roles available in an account | Profile Management > Role Management |
 | [Get User Roles Details](./get-user-roles-details.md) | To get full information on all users and their associated roles in the account | Profile Management > Role Management |
 | [Get Groups](./get-groups.md) | To get the list of groups and group members available in the account | Profile Management > Role Management |
 | [Export Roles](./export-roles.md) | To export bot or admin roles from an account | Profile Management > Role Management |
-| [Assign BT Roles](./assign-bt-roles.md) | To assign a bot role to a set of users in a specific agent| Profile Management > Role Management |
+| [Assign BT Roles](./assign-bt-roles.md) | To assign a bot role to a set of users in a specific agent | Profile Management > Role Management |
 | [Assign Admin Roles](./assign-admin-roles.md) | To add or remove users or groups from admin roles | Profile Management > Role Management |
 | [Update User Access](./update-user-access.md) | To add or remove the ability to access AI for Service Platform, create new AI agents | Profile Management > Role Management |
 | [Create Users](./create-users.md) | To add users to an account | User Management |
@@ -116,7 +116,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Remove Users from Account](./delete-users.md) | To remove users from an account | User Management |
 | [Delete Customer Data](./delete-customer-data.md) | To delete customer data | Profile Management > Delete Users Data |
 | [Delete Customer Data Status API](./delete-customer-data-status.md) | To get the status of the Customer Data Delete request | Profile Management > Delete Users Data |
-| [Get Admin Console Audit Logs](./get-admin-console-audit-logs.md) | To get admin console audit logs. | Logs Admin > Admin Console Audit Logs |
+| [Get Admin Console Audit Logs](./get-admin-console-audit-logs.md) | To get admin console audit logs | Logs Admin > Admin Console Audit Logs |
 
 ## Data (Data Table) Access APIs
 
