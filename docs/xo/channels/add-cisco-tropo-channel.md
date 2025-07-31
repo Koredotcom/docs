@@ -46,6 +46,6 @@ Next, navigate to the Configurations tab to review and complete the channel setu
 7. Select **Yes** and click **Save** to enable the channel.  
 <img src="../images/tropo-img4.png" alt="Enable channel" title="Enable channel" style="border: 1px solid gray; zoom:60%;">
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot).
+After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your App](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../changelog/folder/adding-channels-to-your-bot)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
