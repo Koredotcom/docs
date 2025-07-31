@@ -49,7 +49,7 @@ Steps to create your own app:
     * **Show a standard message from standard responses** – Sends a generic message instead of the original message.  
     <img src="../images/Web_Mobile2_New.png" alt="Web Push Notifications   configuration" title="Web Push Notifications configuration" style="border: 1px solid gray; zoom:70%;">
 
-    * Click **Manage Responses** to add custom messages in the push notification. To learn more about adding responses, see [Default Standard Responses](https://developer.kore.ai/docs/bots/bot-intelligence/default-standard-responses/) and [Default Conversations](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/).  
+    * Click **Manage Responses** to add custom messages in the push notification. To learn more about adding responses, see [Default Standard Responses](../automation/intelligence/conversation-management/standard-responses.md) and [Default Conversations](../automation/intelligence/conversation-management/default-conversations.md).  
     <img src="../images/Web_Mobile3.png" alt="manage responses" title="manage responses" style="border: 1px solid gray; zoom:70%;">
 
 10. Click **Save** and then **Create**. The app registration details appear.  
@@ -119,7 +119,9 @@ Steps to change the theme and design:
 2. Click **Web/Mobile Client**.
 
 3. On the Configure tab, click **Edit** to change the current theme.  
-![alt_text](images/sdke6.png  )
+<img src="../images/sdke6.png" alt="Theme Editor" title="Theme Editor" style="border: 1px solid gray; zoom:70%;">
+    
+
 
 4. The theme editor page displays all the templates and created themes, if any. 
     <img src="../images/t1.png" alt="Theme Editor" title="Theme Editor" style="border: 1px solid gray; zoom:70%;">
