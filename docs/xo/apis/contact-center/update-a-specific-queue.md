@@ -14,7 +14,7 @@ To update a specific queue with the given`streamId` and `queuesId`.
 | **Parameter**  | **Description**                                                      | **Type**     |
 |------------|------------------------------------------------------------------|----------|
 | host       | Environment URL, for example, `https://platform.kore.ai`       | string   |
-| streamId      | botId or streamId. You can get it from the general settings page. | string   |
+| streamId      | botId or streamId. You can get it from the App Settings page. | string   |
 | id         | Can be taken from the /queues GET API.                           | string   |
 
 ## Sample Request

@@ -14,7 +14,7 @@ To retrieve the list of all agents with the given `streamId`.
 | **PARAMETER** | **DESCRIPTION**                                                             | **TYPE**          |
 |-----------|-------------------------------------------------------------------------|---------------|
 | host      | Environment URL, for example, `https://platform.kore.ai`               | string, required |
-| streamId     | botId or streamId. You can get it from the general settings page. | string, required |
+| streamId     | botId or streamId. You can get it from the App Settings page. | string, required |
 | orgId     | The organization Id.                                                    | string, required |
 
 ## Query Parameters

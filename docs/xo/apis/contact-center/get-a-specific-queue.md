@@ -14,7 +14,7 @@ To get a specific queue with the given `streamId` and `queueId`.
 | **Parameter** | **Description**                                                | **Type**         |
 |-----------|------------------------------------------------------------|--------------|
 | host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| streamId     |botId or streamId. You can get it from the general settings page. | string, required |
+| streamId     |botId or streamId. You can get it from the App Settings page. | string, required |
 | id        | queueId. Can be taken from the /queues GET API.           | string, required |
 
 ## Sample Request

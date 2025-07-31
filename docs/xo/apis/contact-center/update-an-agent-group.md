@@ -13,7 +13,7 @@ To update a particular agent group with the given `streamId` and `agentGroupId`.
 
 | **Parameter** | **Description**                                                                                  | **Type**           |
 |-----------|----------------------------------------------------------------------------------------------|----------------|
-| host      | Environment URL, for example, https://platform.kore.ai                                     | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`                                     | string, required |
 | streamId     | The application ID.               | string, required |
 | id        | The Agent Group id.                                                                          | string, required |
 
