@@ -46,17 +46,17 @@ Make sure that the following GenAI features are enabled:
 
 1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
-2. Click **+ New Evaluation Metric**.
+1. Click **+ New Evaluation Metric**.
 
-3. From the **Evaluation Metrics Measurement Type** dropdown, select **By Value**.
+1. From the **Evaluation Metrics Measurement Type** dropdown, select **By Value**.
 
-4. Enter a descriptive **Name** for the future audit reference.
+1. Enter a descriptive **Name** for the future audit reference.
 
-5. Enter a descriptive identifier **Name** that you can easily reference, such as "Discount Rate Verification" or "Interest Rate Adherence Check".
+1. Enter a descriptive identifier **Name** that you can easily reference, such as "Discount Rate Verification" or "Interest Rate Adherence Check".
 
-6. Enter a descriptive **Question** prompt for manual evaluation.
+1. Enter a descriptive **Question** prompt for manual evaluation.
 
-7. Select the required **Languages** for this metric.
+1. Select the required **Languages** for this metric.
 
     !!! note
 
@@ -72,7 +72,7 @@ Make sure that the following GenAI features are enabled:
 
     This configuration determines when and how the metric is evaluated during a conversation.
 
-8. Select an **Adherence Type** (**Static** or **Dynamic**) from the dropdown. 
+1. Select an **Adherence Type** (**Static** or **Dynamic**) from the dropdown. 
 
     a. **Static Adherence**: This metric is evaluated for every conversation regardless of specific triggers.
     
@@ -89,7 +89,7 @@ Make sure that the following GenAI features are enabled:
 
     Provides two selectable options triggered by either an Agent or Customer Utterance for evaluation. Different triggers come from different speakers based on the use case scenario.
 
-9. Choose the **Trigger Utterance** for evaluation by selecting the correct speaker who initiates each trigger based on the use case. 
+1. Choose the **Trigger Utterance** for evaluation by selecting the correct speaker who initiates each trigger based on the use case. 
 
     * **Customer Utterance**: Select when the customer action triggers the adherence check. For example, a customer asks about interest rates, triggering the rate disclosure metric (specific customer queries).
 
@@ -99,7 +99,7 @@ Make sure that the following GenAI features are enabled:
 
     Different use cases require different detection techniques depending on complexity and the accuracy needed. 
 
-10. Choose if the **Trigger Detection Method** is a customer or agent utterance.
+1. Choose if the **Trigger Detection Method** is a customer or agent utterance.
 
     * **Gen AI-Based Adherence**: This uses a Large Language Model (LLM) to detect trigger intent and evaluate adherence based on contextual understanding (for complex intents, varied expressions, and nuanced conversations).
 
@@ -119,13 +119,13 @@ Make sure that the following GenAI features are enabled:
 
     The API setup enables calls to your backend systems (for example, CRMs, databases) to retrieve ground truth data, which validates the agent-mentioned values from customer conversations, such as account balance or loan rate.
 
-11. Choose how the request parameter (**Context Variable** or **Conversation ID**) is sourced or retrieved.
+1. Choose how the request parameter (**Context Variable** or **Conversation ID**) is sourced or retrieved.
 
     #### Context Variable
 
     Context variables are customer identifiers mentioned in a conversation (for example, phone number or customer ID). The system extracts these from the transcript and uses them in an API call to get specific customer information, such as account balance or interest rate.
 
-    **When to Use Context Variables**
+1. Select a customer identifier (such as phone number, customer ID) mentioned in the conversation transcript.
 
     * Customer provides identifier during conversation (phone number, customer ID, email).
 
@@ -133,14 +133,18 @@ Make sure that the following GenAI features are enabled:
 
     * Direct mapping between conversation content and API parameter.
 
-    ##### Context Variables Setup
+    **Context Variables Setup**
     
     * **Context Variable**: Select this when a customer identifier (such as phone number, customer ID) is mentioned in the conversation transcript.  
     <img src="../images/context-variable-setup.png" alt="Context Variables Setup" title="Context Variables Setup" style="border: 1px solid gray; zoom:50%;">      
 
+1. Choose who (Customer or Agent) provides the identifier in the conversation.
+
     * **Speaker**: Choose who (**Customer** or **Agent**) provides the identifier in the conversation.    
 
-    ##### Entity Type Configuration
+1. Enter a descriptive name, data type, and description to match the data type for extracting data (for example, customer ID or phone number).
+
+    **Entity Type Configuration**
 
     * **Entity Name**: Enter a descriptive name matching the data type that you want to extract (for example, customer ID or phone number). 
 
@@ -152,11 +156,13 @@ Make sure that the following GenAI features are enabled:
 
         * **Description**: Provide detailed instructions for the AI on how to identify and extract this entity from the conversation. For example, extract the 10-digit phone number provided by the customer during verification, formatted as XXX-XXX-XXXX".
 
+1. Configure authentication profiles to secure API calls to your backend systems.
+
      **Service Request Authorization**
 
     Configure authentication profiles to secure API calls to your backend systems. Authentication ensures that only authorized requests can access customer data and business values. This helps you to define the service request to make a call and to fetch the required data.
 
-    ##### Script Definition
+    **Script Definition**
 
     Steps to configure the request details:
 
@@ -195,11 +201,13 @@ Make sure that the following GenAI features are enabled:
 
     5. Click **Save**.
 
+1. Use the custom conversation ID to trigger sequential API calls and apply post-processing as needed.
+
     #### Conversation ID 
 
     Conversation ID-based API configuration is used within the Quality AI context, particularly when customer identifiers are missing and SFTP-based integration is used instead. The custom conversation ID from CSV metadata triggers the first API call to retrieve the customer ID, followed by a second call to fetch the business value (for example, interest rate). These two post-process scripts run after each call or at the end to finalize the value.
 
-    ##### Configuration Requirements
+    **Configuration Requirements**
 
     1. Map the custom **Conversation ID** from the `CSV `upload metadata. 
 
@@ -215,7 +223,7 @@ Make sure that the following GenAI features are enabled:
             
             * You must use the conversation ID sourced from metadata delivered via SFTP.
 
-    ##### Script Definition 
+    **Script Definition** 
 
     Provide the following service request authorization details:
 
@@ -250,7 +258,7 @@ Make sure that the following GenAI features are enabled:
     8. Click **Save**.  
     <img src="../images/post-process-script.png" alt="Script Definition" title="Script Definition" style="border: 1px solid gray; zoom:50%;">   
 
-12. Configure how the system extracts and verifies agent-stated values or answer against backend data.
+1. Configure how the system extracts and verifies agent-stated values or answer against backend data.
 
     ### Agent Answer Configuration
 
@@ -267,7 +275,7 @@ Make sure that the following GenAI features are enabled:
     3. **Description**: Provide detailed instructions for the AI on how to identify the agent-mentioned value. For example, to extract the interest rate percentage mentioned by the agent when discussing loan terms, formatted as a decimal number (for example, 4.5 for 4.5%).  
     <img src="../images/agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:50%;">   
 
-13. Select and verify the correct agent-stated value based on the chosen Business Rule.
+1. Select and verify the correct agent-stated value based on the chosen Business Rule.
 
     ### Business Rules
 
@@ -279,45 +287,50 @@ Make sure that the following GenAI features are enabled:
 
     * **First Value Mentioned by Agent**
 
-    **Captures the first initial value spoken by the agent. For example, if the interest rate is mentioned as 4.1%, 4.5%, and 5% during the conversation, only the first value, 4.1% is considered.
+        * Captures the final or most recent value mentioned by the agent. 
+        
+        * **Use Case**: When the last mention is considered the official or final quoted value. 
+        
+        * **Example**: Agent first quotes 4.5%, then later mentions 4.7% and finally 5.0%; the system uses 5.0% as the last value mentioned.
 
     * **Last Value Mentioned by Agent**
 
         * Captures the final or last value mentioned by the agent. 
 
-        * **Use case**: When first mention represents the official quote. 
-        * **Example**: Agent quotes 4.5% initially, then mentions 4.7% and 5.0% - system uses 4.5%.
+        * **Use Case**: When the last mention represents the official quote. 
+
+        * **Example**: Agent quotes 4.5% initially, then mentions 4.7% and 5.0%; the system uses 5.0%.
 
     * **Negotiated Value Mentioned by Agent**
 
         * Captures agreed-upon value after negotiation.
 
-        * **Use case**: When negotiation results in mutual agreement.
+        * **Use Case**: When negotiation results in mutual agreement.
 
-        * **Example**: After the discussion, the agent and customer agree on 4.8% - the system uses 4.8%.
+        * **Example**: After the discussion, the agent and customer agree on 4.8%; the system uses 4.8%.
 
     * **Strict Source System Value**
 
         * Uses only the backend system value as ground truth.
 
-        * **Use case**: Zero tolerance for any deviation from system data.
+        * **Use Case**: Zero tolerance for any deviation from system data.
 
-        * **Example**: System shows 7.9%, agent says 7.5% - marked as non-adherent.
+        * **Example**: System shows 7.9% but agent says 7.5%, which is marked as non-adherent.
 
     * **Custom Business Rule**
 
         * Define organization-specific selection logic.
 
-        * **Use case**: Complex scenarios requiring custom handling.
+        * **Use Case**: Complex scenarios requiring custom handling.
 
         * **Example**: Use the value mentioned after the customer accepts terms, or use the value mentioned during the rate discussion phase. It uses the lowest number mentioned, that is 4.9%, as the best offer.  
-        <img src="../images/bussiness-rules.png" alt="Business Rules" title="Business Rules" style="border: 1px solid gray; zoom:50%;">           
+<img src="../images/bussiness-rules.png" alt="Business Rules" title="Business Rules" style="border: 1px solid gray; zoom:50%;">           
 
-14. Configure how the system evaluates agent answers against backend data using AI or custom rules with pass, fail, or skip outcomes.
+1. Configure how the system evaluates agent answers against backend data using AI or custom rules with pass, fail, or skip outcomes.
 
     ### Score Logic & Adherence Criteria
 
-        Determines how the extracted agent’s answer is evaluated against the backend or expected value. Supports static or trigger-based evaluation to choose the evaluation method based on your complexity requirements (for example, only when a customer asks about interest rates).
+    Determines how the extracted agent’s answer is evaluated against the backend or expected value. Supports static or trigger-based evaluation to choose the evaluation method based on your complexity requirements (for example, only when a customer asks about interest rates).
 
     #### Gen AI-Based Adherence
 
@@ -359,8 +372,8 @@ Make sure that the following GenAI features are enabled:
 
 Steps to edit existing Evaluation Metrics:
 
-1. Right-click to select any of the existing **Evaluation Metrics**.  
-    <img src="../metrics-measurement-types/images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:50%;">    
+1. Right-click to select any of the existing **Evaluation Metrics**.   
+<img src="../images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:50%;">    
 
 2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.
 
@@ -378,7 +391,8 @@ This section outlines the limitations and dependencies associated with modifying
 
 * Remove the language from all associated evaluation forms before modifying their language settings.
 
-* You can safely remove languages that are not linked to any forms or metrics. 
+* You can safely remove languages that are not linked to any forms or metrics.  
+  <img src="../images/by-value-modification-warning.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">     
 
 ### Delete Warnings
 
@@ -391,4 +405,4 @@ This section describes the warnings and prerequisites you must address before de
 2. Remove the metric from all associated evaluation forms before you delete it.
 
 3. The system allows you to delete the metric only after resolving all dependencies.  
-    <img src="../images/by-value-delete-error.png" alt="Delete Warning" title="Delete Warning" style="border: 1px solid gray; zoom:50%;">    
+    <img src="../images/by-value-delete-error.png" alt="Delete Warning" title="Delete Warning" style="border: 1px solid gray; zoom:70%;">     
