@@ -6,21 +6,21 @@ This combines advanced extraction logic with configurable business rules to veri
 
 ## Why to Use
 
-* **Automates manual QA by verifying agent-mentioned customer data without reviewing transcripts.
+* Automates manual QA by verifying agent-mentioned customer data without reviewing transcripts.
 
-* **Ensures accuracy by validating agent statements against backend data in real-time or stored sources.
+* Ensures accuracy by validating agent statements against backend data in real-time or stored sources.
 
-* **Compares agent values with CRM or trusted systems using API calls and LLM extraction.
+* Compares agent values with CRM or trusted systems using API calls and LLM extraction.
 
-* **Detects compliance violations across all interactions and sends instant alerts.
+* Detects compliance violations across all interactions and sends instant alerts.
 
-* **Supports complex business rules, including tolerance ranges, negotiation clauses, and multi-language.
+* Supports complex business rules, including tolerance ranges, negotiation clauses, and multi-language.
 
-* **Provides full transparency with audit logs of API calls, extraction confidence, and rule evaluations.
+* Provides full transparency with audit logs of API calls, extraction confidence, and rule evaluations.
 
-* **Enables real-time agent feedback through GenAI and co-pilot integration.
+* Enables real-time agent feedback through GenAI and co-pilot integration.
 
-* **Improves agent training with detailed, auditable logs of all verification steps.
+* Improves agent training with detailed, auditable logs of all verification steps.
 
 ### Use Cases
 
@@ -30,7 +30,7 @@ This combines advanced extraction logic with configurable business rules to veri
 
 ### Prerequisites
 
-Ensure the following GenAI features are enabled:
+Make sure that the following GenAI features are enabled:
 
 * The By Value metric type only appears in the evaluation metrics creation dropdown when the GenAI feature is enabled.
 
@@ -68,38 +68,38 @@ Ensure the following GenAI features are enabled:
             
         * If a metric does not support all the selected languages, it does not appear in the dropdown. 
 
-### Adherence Type Configuration
+    ### Adherence Type Configuration
 
-This configuration determines when and how the metric is evaluated during a conversation.
+    This configuration determines when and how the metric is evaluated during a conversation.
 
-1. Select an **Adherence Type** (**Static** or **Dynamic**) from the dropdown. 
+8. Select an **Adherence Type** (**Static** or **Dynamic**) from the dropdown. 
 
     a. **Static Adherence**: This metric is evaluated for every conversation regardless of specific triggers.
     
     * Applies to mandatory checks performed in every interaction. For example, “agent greeted customer" applies in every call. 
 
-2. **Dynamic Adherence**: This metric is evaluated only when a trigger happens during a conversation (when a customer or agent expresses a certain intent). 
+    b. **Dynamic Adherence**: This metric is evaluated only when a trigger happens during a conversation (when a customer or agent expresses a certain intent). 
 
     * This metric is scored only if the trigger is detected. For example, an interest rate disclosure metric is only relevant when a customer asks about loan rates.
 
     * Activated only when specific intents occur, and scoring relevant checks after the trigger. If no trigger appears, it is marked as Not Applicable (NA).   
-       <img src="../images/by-value-adherence-type.png" alt="By Value Adherence Type" title="By Value Adherence Type" style="border: 1px solid gray; zoom:50%;">  
+    <img src="../images/by-value-adherence-type.png" alt="Adherence Type" title="Adherence Type" style="border: 1px solid gray; zoom:50%;">  
 
-#### Trigger Configuration (Dynamic Adherence Only)
+    #### Trigger Configuration (Dynamic Adherence Only)
 
-Provides two selectable options triggered by either an Agent or Customer Utterance for evaluation. Different triggers come from different speakers based on the use case scenario.
+    Provides two selectable options triggered by either an Agent or Customer Utterance for evaluation. Different triggers come from different speakers based on the use case scenario.
 
-2. Choose the **Trigger Utterance** for evaluation by selecting the correct speaker who initiates each trigger based on the use case. 
+9. Choose the **Trigger Utterance** for evaluation by selecting the correct speaker who initiates each trigger based on the use case. 
 
     * **Customer Utterance**: Select when the customer action triggers the adherence check. For example, a customer asks about interest rates, triggering the rate disclosure metric (specific customer queries).
 
     * **Agent Utterance**: Select when the agent action triggers the adherence check. For example, the agent proposes a credit card plan, triggering the benefits disclosure metric (product promotions or any compliance requirements).
 
-#### Trigger Detection Method
+    #### Trigger Detection Method
 
-Different use cases require different detection techniques depending on complexity and the accuracy needed. 
+    Different use cases require different detection techniques depending on complexity and the accuracy needed. 
 
-3. Choose if the **Trigger Detection Method** is a customer or agent utterance.
+10. Choose if the **Trigger Detection Method** is a customer or agent utterance.
 
     * **Gen AI-Based Adherence**: This uses a Large Language Model (LLM) to detect trigger intent and evaluate adherence based on contextual understanding (for complex intents, varied expressions, and nuanced conversations).
 
@@ -109,38 +109,38 @@ Different use cases require different detection techniques depending on complexi
 
         * LLM interprets meaning rather than exact phrase matching (contextual understanding, such as complex intents, nuanced conversations).
 
-    * **Deterministic Adherence**: This uses exact pattern matching to detect trigger intent and check adherence.
+    * **Deterministic Adherence**: This uses exact pattern matching  (non-AI) to detect trigger intent and check adherence.
 
         * Use the **Utterance** option to provide specific utterance examples. 
 
-        * The system matches input to trained phrases, requiring specific examples and multiple trigger utterances for broad coverage. For example, compliance keywords, exact terminology. 
+        * It only matches predefined phrases or keywords, requiring specific examples and multiple trigger utterances for broad coverage. For example, compliance keywords, exact terminology. 
 
-### API Request Parameter Configuration Methods
+    ### API Request Parameter Configuration Methods
 
-The API setup enables calls to your backend systems (for example, CRMs, databases) to retrieve ground truth data, which validates the agent-mentioned values from customer conversations, such as account balance or loan rate.
+    The API setup enables calls to your backend systems (for example, CRMs, databases) to retrieve ground truth data, which validates the agent-mentioned values from customer conversations, such as account balance or loan rate.
 
-3. Choose how the request parameter (**Context Variable** or **Conversation ID**) is sourced or retrieved.
+11. Choose how the request parameter (**Context Variable** or **Conversation ID**) is sourced or retrieved.
 
-#### Context Variable
+    #### Context Variable
 
-Context variables are customer identifiers mentioned in a conversation, like a phone number or customer ID. The system extracts these from the transcript and uses them in an API call to get specific customer information, such as account balance or interest rate.
+    Context variables are customer identifiers mentioned in a conversation (for example, phone number or customer ID). The system extracts these from the transcript and uses them in an API call to get specific customer information, such as account balance or interest rate.
 
-**When to Use Context Variables**
+    **When to Use Context Variables**
 
-* Customer provides identifier during conversation (phone number, customer ID, email).
+    * Customer provides identifier during conversation (phone number, customer ID, email).
 
-* Single API call sufficient to retrieve required data.
+    * Single API call sufficient to retrieve required data.
 
-* Direct mapping between conversation content and API parameter.
+    * Direct mapping between conversation content and API parameter.
 
-##### Context Variables Setup
-1. **Context Variable**: Select this when a customer identifier (such as phone number, customer ID) is mentioned in the conversation transcript.  
+    ##### Context Variables Setup
+    
+    * **Context Variable**: Select this when a customer identifier (such as phone number, customer ID) is mentioned in the conversation transcript.  
+    <img src="../images/context-variable-setup.png" alt="Context Variables Setup" title="Context Variables Setup" style="border: 1px solid gray; zoom:50%;">      
 
-<img src="../images/by-value-api-request-param.png" alt="API Request Parameter" title="API Request Parameter" style="border: 1px solid gray; zoom:50%;">      
+    * **Speaker**: Choose who (**Customer** or **Agent**) provides the identifier in the conversation.    
 
-2. **Speaker**: Choose who (**Customer** or **Agent**) provides the identifier in the conversation.
-
-##### Entity Type Configuration
+    ##### Entity Type Configuration
 
     * **Entity Name**: Enter a descriptive name matching the data type that you want to extract (for example, customer ID or phone number). 
 
@@ -152,194 +152,206 @@ Context variables are customer identifiers mentioned in a conversation, like a p
 
         * **Description**: Provide detailed instructions for the AI on how to identify and extract this entity from the conversation. For example, extract the 10-digit phone number provided by the customer during verification, formatted as XXX-XXX-XXXX".
 
- **Service Request Authorization**
+     **Service Request Authorization**
 
-Configure authentication profiles to secure API calls to your backend systems. Authentication ensures that only authorized requests can access customer data and business values. This helps you to define the service request to make a call and to fetch the required data.
+    Configure authentication profiles to secure API calls to your backend systems. Authentication ensures that only authorized requests can access customer data and business values. This helps you to define the service request to make a call and to fetch the required data.
 
-##### Script Definition
+    ##### Script Definition
 
-Steps to configure the request details:
+    Steps to configure the request details:
 
-1. Click the **+ Define Request** to configure the API call request.
+    1. Click the **+ Define Request** to configure the API call request.
 
-2. In the **Request Name**, provide a unique descriptive identifier name. 
+    2. In the **Request Name**, provide a unique descriptive identifier name. 
 
-3. Select the necessary custom **HTTP** headers as needed for the API call (**GET** or **POST**) configuration.
+    3. Select the necessary custom **HTTP** headers as needed for the API call (**GET** or **POST**) configuration.
 
-4. Enter the full endpoint URL to which the API request you want to send.
+    **GET/POST Method**
 
-**GET/POST Method**
+    1. From the **Auth**dropdown, select the authorization profile that you want to use or access this API request. 
 
-1. From the **Auth**dropdown, select the authorization profile that you want to use or access this API request. 
+    2. Add custom HTTP **Headers** if needed as required by your backend systems.
 
-2. Add custom HTTP **Headers** if needed as required by your backend systems.
+    3. **Test Request** is used to validate the request and response setup before deployment.   
 
-3. **Test Request** is used to validate the request and response setup before deployment.
+        !!! Note
 
-    !!! Note
+            * The **Test Request** is enabled when the request parameter is a Context Variable. But this is disabled for the Conversation ID-based configurations.
+            
+            * It must come from SFTP if the request parameter includes a Conversation ID.
 
-        * The **Test Request** is enabled when the request parameter is a Context Variable. But this is disabled for the Conversation ID-based configurations.
-        
-        * It must come from SFTP if the request parameter includes a Conversation ID.
+    4. Define the API **Response** parameter as a JSON object or path.  
 
-4. Define the API **Response** parameter as a JSON object or path.  
-<img src="../images/by-value-get-method.png" alt="Get Method" title="Get Method" style="border: 1px solid gray; zoom:70%;">      
+    **POST Method**
 
-**POST Method**
+    1. Define the POST **Body** using the context variable ID in the body. For example: `{"userId": "{{context.user_id}}"}`.  
 
-5. Define the POST **Body** using the context variable ID in the body. For example: `{"userId": "{{context.user_id}}"}`.  
-<img src="../images/by-value-post-method.png" alt="Post Method" title="Post Method" style="border: 1px solid gray; zoom:70%;">
+    2. Enter a **Post Script Definition Name** of the API response**.
 
-6. Enter a **Post Script Definition Name** of the API response**.
+    3. Use a **Post Process Script** to extract or transform the response if needed (optional).
 
-7. Use a **Post Process Script** to extract or transform the response if needed (optional).
+    4. Configure and extract the source system value from the API response after a single API call.   
+    <img src="../images/script-definition-post-method.png" alt="Script Definition-Post" title="Script Definition-Post" style="border: 1px solid gray; zoom:50%;">    
 
-8. Configure and extract the source system value from the API response after a single API call.   
-<img src="../images/by-value-post-process-script.png" alt="Post Method" title="Post Method" style="border: 1px solid gray; zoom:70%;">   
+    5. Click **Save**.
 
-5. Click **Save**.
+    #### Conversation ID 
 
-#### Conversation ID 
+    Conversation ID-based API configuration is used within the Quality AI context, particularly when customer identifiers are missing and SFTP-based integration is used instead. The custom conversation ID from CSV metadata triggers the first API call to retrieve the customer ID, followed by a second call to fetch the business value (for example, interest rate). These two post-process scripts run after each call or at the end to finalize the value.
 
-Conversation ID-based API configuration is used within the Quality AI context, particularly when customer identifiers are missing and SFTP-based integration is used instead. The custom conversation ID from CSV metadata triggers the first API call to retrieve the customer ID, followed by a second call to fetch the business value (for example, interest rate). These two post-process scripts run after each call or at the end to finalize the value.
+    ##### Configuration Requirements
 
-##### Configuration Requirements
+    1. Map the custom **Conversation ID** from the `CSV `upload metadata. 
 
-1. You must map the custom **Conversation ID** from the `CSV `upload metadata. 
+    2. Use the **Conversation ID** identifier as the API request parameter to make the source system API call.
 
-2. Use the **Conversation ID** identifier as the API request parameter to make the source system API call.
+        !!! Note
 
-    !!! Note
+            * The **Conversation ID** option is only available when the connector is configured for **QualityAI Express**.
+            
+            * System-generated Conversation IDs are not supported.
+            
+            * Use of the Contact Center AI (CCAI) system-generated conversation ID is not supported.
+            
+            * You must use the conversation ID sourced from metadata delivered via SFTP.
 
-        * The **Conversation ID** option is only available when the connector is configured for **QualityAI Express**.
-        
-        * System-generated Conversation IDs are not supported.
-        
-        * Use of the Contact Center AI (CCAI) system-generated conversation ID is not supported.
-        
-        * You must use the conversation ID sourced from metadata delivered via SFTP.
+    ##### Script Definition 
 
-##### Script Definition 
+    Provide the following service request authorization details:
 
-Provide the following service request authorization details:
+    **GET Method**
 
-**GET Method**
+    1. From the **Auth** dropdown, select the authorization profile that you want to use or access this API request. 
 
-1. From the **Auth** dropdown, select the authorization profile that you want to use or access this API request. 
+        !!! Note
 
-    !!! Note
+            * This authorization must remain consistent across all APIs within the function.
+            
+            * The list of authorization profiles comes from the Dev Tools section of the Platform.
 
-        * This authorization must remain consistent across all APIs within the function.
-        
-        * The list of authorization profiles comes from the Dev Tools section of the Platform.
+    2. Set request-specific HTTP **Headers**.
 
-2. Set request-specific HTTP **Headers**.
+        !!! Note
 
-**Note**: This **Test Request**option is disabled if the request parameter is a conversation ID.
+            * This **Test Request**option is disabled if the request parameter is a conversation ID.
 
-3. Map and process the API **Response **by entering a JSON object or path.
+    3. Map and process the API **Response** by entering a JSON object or path.
 
-**POST Method**
+    **POST Method**
 
-9. Define the POST **Body** using the context conversation ID in the body. For example: `{"conversationId": "abc123-xyz"}`
-10. Enter a **Post Script Definition Name **of the API response**.** 
-11. Configure a **Post Process Script **to set additional actions by modifying and storing the API response as a JSON object for use as the source system value. 
-12. Configure scripts for additional processing to support nested or chained API calls.
+    4. Define the POST **Body** using the context conversation ID in the body. For example: `{"conversationId": "abc123-xyz"}`
+    
+    5. Enter a **Post Script Definition Name** of the API response.
 
- 13. Click **Save**.
+    6. Configure a **Post Process Script** to set additional actions by modifying and storing the API response as a JSON object for use as the source system value.
 
-### Agent Answer Configuration
+    7. Configure scripts for additional processing to support nested or chained API calls.
 
-This defines how the system identifies and extracts specific values mentioned by the agent during a conversation (for example, an interest rate). These extracted values are compared with backend references to assess adherence. The configuration provides instructions to the AI on how to locate and extract these values accurately.
+    8. Click **Save**.  
+    <img src="../images/post-process-script.png" alt="Script Definition" title="Script Definition" style="border: 1px solid gray; zoom:50%;">   
 
-1. **Entity Name**: Enter a descriptive label for the value being extracted from the agent’s response (such as Interest Rate).
+12. Configure how the system extracts and verifies agent-stated values or answer against backend data.
 
-2. **Entity Type**: Select the appropriate data type (**String** or **Number**).  
+    ### Agent Answer Configuration
 
-* **String**: For alphanumeric values, such as a customer ID.
+    This defines how the system identifies and extracts specific values mentioned by the agent during a conversation (for example, an interest rate). These extracted values are compared with backend references to assess adherence. The configuration provides instructions to the AI on how to locate and extract these values accurately.
 
-* **Number**: For numeric values, such as interest rate.
+    1. **Entity Name**: Enter a descriptive label for the value being extracted from the agent’s response (such as Interest Rate).
 
-3. **Description**: Provide detailed instructions for the AI on how to identify the agent-mentioned value. For example, to extract the interest rate percentage mentioned by the agent when discussing loan terms, formatted as a decimal number (for example, 4.5 for 4.5%).
+    2. **Entity Type**: Select the appropriate data type (**String** or **Number**).  
 
-### Business Rules
+    * **String**: For alphanumeric values, such as a customer ID.
 
-Business Rules guide the Gen AI on selecting the correct agent-mentioned value when multiple values are discussed during a conversation, particularly in negotiation scenarios. 
+    * **Number**: For numeric values, such as interest rate.
 
-#### Rule Types and Use Cases
+    3. **Description**: Provide detailed instructions for the AI on how to identify the agent-mentioned value. For example, to extract the interest rate percentage mentioned by the agent when discussing loan terms, formatted as a decimal number (for example, 4.5 for 4.5%).  
+    <img src="../images/agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:50%;">   
 
-Choose one of the following options based on your evaluation logic:
+13. Select and verify the correct agent-stated value based on the chosen Business Rule.
 
-* **First Value Mentioned by Agent**
+    ### Business Rules
 
-**Captures the first initial value spoken by the agent. For example, if the interest rate is mentioned as 4.1%, 4.5%, and 5% during the conversation, only the first value, 4.1% is considered.
+    Business Rules guide the Gen AI on selecting the correct agent-mentioned value when multiple values are discussed during a conversation, particularly in negotiation scenarios. 
 
-* **Last Value Mentioned by Agent**
+    #### Rule Types and Use Cases
 
-    * Captures the final or last value mentioned by the agent. 
+    Choose one of the following options based on your evaluation logic:
 
-    * **Use case**: When first mention represents the official quote. 
-    * **Example**: Agent quotes 4.5% initially, then mentions 4.7% and 5.0% - system uses 4.5%.
+    * **First Value Mentioned by Agent**
 
-* **Negotiated Value Mentioned by Agent**
+    **Captures the first initial value spoken by the agent. For example, if the interest rate is mentioned as 4.1%, 4.5%, and 5% during the conversation, only the first value, 4.1% is considered.
 
-    * Captures agreed-upon value after negotiation.
+    * **Last Value Mentioned by Agent**
 
-    * **Use case**: When negotiation results in mutual agreement.
+        * Captures the final or last value mentioned by the agent. 
 
-    * **Example**: After the discussion, the agent and customer agree on 4.8% - the system uses 4.8%.
+        * **Use case**: When first mention represents the official quote. 
+        * **Example**: Agent quotes 4.5% initially, then mentions 4.7% and 5.0% - system uses 4.5%.
 
-* **Strict Source System Value**
+    * **Negotiated Value Mentioned by Agent**
 
-    * Uses only the backend system value as ground truth.
+        * Captures agreed-upon value after negotiation.
 
-    * **Use case**: Zero tolerance for any deviation from system data.
+        * **Use case**: When negotiation results in mutual agreement.
 
-    * **Example**: System shows 7.9%, agent says 7.5% - marked as non-adherent.
+        * **Example**: After the discussion, the agent and customer agree on 4.8% - the system uses 4.8%.
 
-* **Custom Business Rule**
+    * **Strict Source System Value**
 
-    * Define organization-specific selection logic.
+        * Uses only the backend system value as ground truth.
 
-    * **Use case**: Complex scenarios requiring custom handling.
+        * **Use case**: Zero tolerance for any deviation from system data.
 
-    * **Example**: Use the value mentioned after the customer accepts terms, or use the value mentioned during the rate discussion phase. It uses the lowest number mentioned, that is 4.9%, as the best offer.
+        * **Example**: System shows 7.9%, agent says 7.5% - marked as non-adherent.
 
-### Score Logic & Adherence Criteria
+    * **Custom Business Rule**
+
+        * Define organization-specific selection logic.
+
+        * **Use case**: Complex scenarios requiring custom handling.
+
+        * **Example**: Use the value mentioned after the customer accepts terms, or use the value mentioned during the rate discussion phase. It uses the lowest number mentioned, that is 4.9%, as the best offer.  
+        <img src="../images/bussiness-rules.png" alt="Business Rules" title="Business Rules" style="border: 1px solid gray; zoom:50%;">           
+
+14. Configure how the system evaluates agent answers against backend data using AI or custom rules with pass, fail, or skip outcomes.
+
+    ### Score Logic & Adherence Criteria
 
         Determines how the extracted agent’s answer is evaluated against the backend or expected value. Supports static or trigger-based evaluation to choose the evaluation method based on your complexity requirements (for example, only when a customer asks about interest rates).
 
-#### Gen AI-Based Adherence
+    #### Gen AI-Based Adherence
 
-Defines the conditions or rules for measuring adherence. 
+    Defines the conditions or rules for measuring adherence. 
 
-* **Description**: Uses Generative AI (LLM) to evaluate if the agent has communicated the expected value correctly, based on natural language understanding and business rules. 
+    * **Description**: Uses Generative AI (LLM) to evaluate if the agent has communicated the expected value correctly, based on natural language understanding and business rules. 
 
-    * **Failure Condition**: The Agent’s expected value (for example, interest rate) is not mentioned in the conversation.
+        * **Failure Condition**: The Agent’s expected value (for example, interest rate) is not mentioned in the conversation.
 
-    * **Metric Outcomes**: Configure how the system handles scenarios where the expected agent-mentioned values are not present in the conversation.
+        * **Metric Outcomes**: Configure how the system handles scenarios where the expected agent-mentioned values are not present in the conversation.
 
-        * **Pass**: The expected value is mentioned as per the rule.
+            * **Pass**: The expected value is mentioned as per the rule.
 
-        * **Metric Failure**: Value is missing or incorrect (for example, the agent should have quoted the interest rate but never mentioned it).
+            * **Metric Failure**: Value is missing or incorrect (for example, the agent should have quoted the interest rate but never mentioned it).
 
-        * **Not Applicable (NA)**: Indicates the metric is not accounted for if the agent’s expected value is not present and excluded for score calculation (trigger condition not met; evaluation skipped or interest rate metric is skipped, and customer has only asked about account balance).
+            * **Not Applicable (NA)**: Indicates the metric is not accounted for if the agent’s expected value is not present and excluded for score calculation (trigger condition not met; evaluation skipped or interest rate metric is skipped, and customer has only asked about account balance).
 
-#### Custom Script-based Adherence
+    #### Custom Script-based Adherence
 
-* **Description**: Uses a rule-based script to enforce specific logic to check adherence. Suitable for more deterministic or compliance-critical scenarios.
+    * **Description**: Uses a rule-based script to enforce specific logic to check adherence. Suitable for more deterministic or compliance-critical scenarios.
 
-* **Failure Condition**: The required value is not present in the conversation or does not match the backend-provided value.
+    * **Failure Condition**: The required value is not present in the conversation or does not match the backend-provided value.
 
-* **Metric Outcome**: 
+    * **Metric Outcome**: 
 
-**Metric Failure**: Indicates interaction has failed when the required call context variable (expected information) is missing or mismatched, or found in the conversation. For example, the agent quoted 6.5% but the system says 7.5%. 
+    **Metric Failure**: Indicates interaction has failed when the required call context variable (expected information) is missing or mismatched, or found in the conversation. For example, the agent quoted 6.5% but the system says 7.5%. 
 
-    * **Not Applicable**: Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
+    **Not Applicable**: Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
+    
+        !!! Note
 
-    **Note**: If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
+            If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
 
-4. Click **Create** to save and apply the agent answer metric configuration.
+    4. Click **Create** to save and apply the agent answer metric configuration.
 
 ## Managing Evaluation Metrics
 
@@ -347,9 +359,10 @@ Defines the conditions or rules for measuring adherence.
 
 Steps to edit existing Evaluation Metrics:
 
-1. Right-click to select any of the existing **Evaluation Metrics**.
+1. Right-click to select any of the existing **Evaluation Metrics**.  
+    <img src="../metrics-measurement-types/images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:50%;">    
 
-2. Click **Edit** to update the required **Edit Evaluation Metrics **dialog box fields.
+2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.
 
 3. Click **Delete** to remove the selected playbook metrics.
 
@@ -362,7 +375,9 @@ This section outlines the limitations and dependencies associated with modifying
 #### Modification Warnings
 
 * You cannot remove a language if any evaluation form currently uses it.
+
 * Remove the language from all associated evaluation forms before modifying their language settings.
+
 * You can safely remove languages that are not linked to any forms or metrics. 
 
 ### Delete Warnings
@@ -375,4 +390,5 @@ This section describes the warnings and prerequisites you must address before de
 
 2. Remove the metric from all associated evaluation forms before you delete it.
 
-3. The system allows you to delete the metric only after resolving all dependencies.
+3. The system allows you to delete the metric only after resolving all dependencies.  
+    <img src="../images/by-value-delete-error.png" alt="Delete Warning" title="Delete Warning" style="border: 1px solid gray; zoom:50%;">    
