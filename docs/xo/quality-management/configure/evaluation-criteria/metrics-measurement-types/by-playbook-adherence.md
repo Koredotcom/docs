@@ -65,13 +65,13 @@ Playbook Evaluation Metrics are automated quality assurance tools designed to me
 
 Steps to edit or delete existing Evaluation Metrics:
 
-1. Right-click to select any of the existing **Evaluation Metrics**.  
-<img src="../metrics-measurement-types/images/playbook-modification.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:80%;"> 
+1. Right-click to select any of the existing **By Playbook Adherence Metrics**.  
+<img src="../images/playbook-modification.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:80%;"> 
 
-2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.  
-<img src="../images/by-playbook-edit-metrics.png" alt="Edit Playbook" title="Edit Playbook" style="border: 1px solid gray; zoom:70%;"> 
+2. Click **Edit** to update the required **Edit By Playbook Adherence Metrics** dialog box fields.  
+<img src="../images/edit-dialog-task.png" alt="Edit Playbook" title="Edit Playbook" style="border: 1px solid gray; zoom:70%;"> 
     
-3. Click **Delete** to remove the selected evaluation metric.
+3. Click **Delete** to remove the selected **By Playbook Adherence** evaluation metric.
 
 4. Click **Update** to save the changes.
 

@@ -22,13 +22,13 @@ This combines advanced extraction logic with configurable business rules to veri
 
 * Improves agent training with detailed, auditable logs of all verification steps.
 
-### Use Cases
+## Use Cases
 
 * Interest Rate Adherence
 * Balance Verification
 * Fee Disclosure
 
-### Prerequisites
+## Prerequisites
 
 Make sure that the following GenAI features are enabled:
 
@@ -48,7 +48,8 @@ Make sure that the following GenAI features are enabled:
 
 1. Click **+ New Evaluation Metric**.
 
-1. From the **Evaluation Metrics Measurement Type** dropdown, select **By Value**.
+1. From the **Evaluation Metrics Measurement Type** dropdown, select **By Value**.  
+  <img src="../images/by-value-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">     
 
 1. Enter a descriptive **Name** for the future audit reference.
 
@@ -356,28 +357,28 @@ Make sure that the following GenAI features are enabled:
 
         * **Metric Outcome**: 
 
-        **Metric Failure**: Indicates interaction has failed when the required call context variable (expected information) is missing or mismatched, or found in the conversation. For example, the agent quoted 6.5% but the system says 7.5%. 
+            **Metric Failure**: Indicates interaction has failed when the required call context variable (expected information) is missing or mismatched, or found in the conversation. For example, the agent quoted 6.5% but the system says 7.5%. 
 
-        **Not Applicable**: Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
-        
-            !!! Note
+            **Not Applicable**: Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
+            
+                !!! Note
 
-                If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
+                    If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
 
 1. Click **Create** to save and apply the agent answer metric configuration.
 
-## Managing Evaluation Metrics
+## Managing By Value Metrics
 
-### Edit Evaluation Metrics
+### Edit By Value Metrics
 
-Steps to edit existing Evaluation Metrics:
+Steps to edit existing **By Value** Metrics:
 
-1. Right-click to select any of the existing **Evaluation Metrics**.   
+1. Right-click to select any of the existing **By Value Metrics**.   
 <img src="../images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:0%;">    
 
-2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.
+2. Click **Edit** to update the required **Edit By Value Evaluation Metrics** dialog box fields.
 
-3. Click **Delete** to remove the selected playbook metrics.
+3. Click **Delete** to remove the selected By Value metrics.
 
 4. Click **Update** to save the changes.
 
@@ -392,7 +393,7 @@ This section outlines the limitations and dependencies associated with modifying
 * Remove the language from all associated evaluation forms before modifying their language settings.
 
 * You can safely remove languages that are not linked to any forms or metrics.  
-  <img src="../images/by-value-modification-warning.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:05%;">     
+  <img src="../images/by-value-modification-warning.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">     
 
 ### Delete Warnings
 
