@@ -24,7 +24,7 @@ The platform now dynamically displays voice-related features and loads default s
 
 **Deprecation of 'PlayHT' TTS from Voice Gateway Configuration**
 
-Support for the 'PlayHT' TTS engine has been removed from all Voice Gateway configurations. All associated options, references, and API mappings have been eliminated to prevent configuration issues and ensure compatibility with currently supported TTS providers. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md)
+Support for the 'PlayHT' TTS engine has been removed from all Voice Gateway configurations. All associated options, references, and API mappings have been eliminated to prevent configuration issues and ensure compatibility with currently supported TTS providers. [Learn more :octicons-arrow-right-24:](https://community.kore.ai/t/important-update-playht-tts-support-discontinued-heres-what-to-do/5001){:target="_blank"}
 
 <hr>
 

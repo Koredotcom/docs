@@ -13,7 +13,7 @@ To retrieve the self reported status (available, busy, away, etc.) and ACD statu
 
 | **Parameter**  | **Description**                                    | **Type**        |
 |------------|------------------------------------------------|-------------|
-| Host       | The Environment URL. For example, https://platform.kore.ai | string, required |
+| Host       | The Environment URL. For example, `https://platform.kore.ai` | string, required |
 | accountId  | The accountId                                 | string, required |
 | limit      | Number of agents to be displayed in the response. Default: 50. Example: 50 | integer, optional |
 | offset     | Number of response documents needed to be skipped. Default: 0 | integer, optional |

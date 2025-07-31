@@ -51,7 +51,7 @@ Large Language Models come with challenges, such as potentially unwanted behavio
 
 ## Enable
 
-By default, the feature/node is disabled. To enable the feature, see [Dynamic Conversations Features](../../../../generative-ai-tools/dynamic-conversations-features.md).
+By default, the feature/node is disabled. To enable the feature, see [GenAI Features](../../../../generative-ai-tools/genai-features.md).
 
 ## Add to a Task
 

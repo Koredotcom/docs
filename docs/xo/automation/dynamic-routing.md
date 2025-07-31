@@ -3,7 +3,7 @@
 # Dynamic Routing Capability Powered by DialogGPT
 
 
-A Dynamic Routing serves as a single entry point for users to access multiple specialized bots. It acts as a central hub that intelligently routes user queries to the most appropriate underlying app based on the user's intent.
+A Dynamic Routing serves as a single entry point for users to access multiple specialized apps. It acts as a central hub that intelligently routes user queries to the most appropriate underlying app based on the user's intent.
 
 You can expand the functionality of your AI for Service 11 app to encompass the Dynamic Routing capabilities by linking it to one or more other apps using the Automation Node within Flows. This feature is powered by DialogGPT, an intelligent agentic orchestrator leveraging Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs).
 

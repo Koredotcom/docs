@@ -70,7 +70,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 
 ```
 curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5b36bcf8a8c7101exxxx/agents?offset=0&limit=5' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWYyYjdmM2Y5LWE0Y2EtNWRhYS04ODRjLThlZDQxYjM2MWRjOSJ9.lYyONpEEmSYdQo7CIOpHWqz4pQE-PgAN2lLYz3-xxxx' \
+--header 'auth: <token>' \
 --header 'Content-Type: application/json'
 ```
 

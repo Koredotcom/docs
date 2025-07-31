@@ -14,8 +14,8 @@ To delete a particular agent with the given `streamId` and `agentId`.
 
 | **PARAMETER** | **DESCRIPTION**                                                                                               | **TYPE**          |
 |---------------|---------------------------------------------------------------------------------------------------------------|-------------------|
-| host          | Environment URL, for example, https://platform.kore.ai                                                     | string, required  |
-| botId         | botId or streamId. You can get it from the general settings page.                               | string, required  |
+| host          | Environment URL, for example, `https://platform.kore.ai`                                                     | string, required  |
+| botId         | botId or streamId. You can get it from the App Settings page.                               | string, required  |
 | agentId       | The Agent Id of the particular agent whose details are being retrieved.                                       | string, required  |
 
 ## Sample Request

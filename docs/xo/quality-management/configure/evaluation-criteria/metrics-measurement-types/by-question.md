@@ -1,10 +1,10 @@
-# By Question Evaluation Metrics
+# By Question Evaluation Metric
 
-The Evaluation Metrics feature is a core component of the Quality AI module, allowing supervisors to define, tailor, and monitor performance indicators that assess the quality of interactions between agents and customers. This process is driven entirely by individual questions. Users can create and customize evaluation criteria using various measurement types, which are managed within the **Evaluation Forms** section.
+The By Question metric is a key feature of the Quality AI module, managed within the **Evaluation Forms** section. It enables supervisors to define, customize, and track performance indicators that measure the quality of agent–customer interactions, specifically at the level of individual questions. This metric helps you to evaluate how effectively agents answer specific questions during interactions. You can apply it universally across all conversations or use it selectively in trigger-based scenarios. 
 
-This By Question configuration evaluates adherence to specific questions asked or answered during customer-agent interactions.
+By verifying the accuracy of responses, it supports focused feedback, targeted coaching, and continuous improvement.
 
-## What It Offers For Supervisors
+## What It Offers for Supervisors
 
 * Standardized quality assessment framework.
 
@@ -18,13 +18,13 @@ This By Question configuration evaluates adherence to specific questions asked o
 
 **Primary Use Cases:**
 
-* **Quality Assurance**: When supervisors need to systematically evaluate agent adherence to specific protocols, scripts, or expected responses.
+* **Quality Assurance**: To systematically evaluate agent adherence to protocols, scripts, or expected responses.
 
 * **Training Assessment**: To measure how well agents follow prescribed interaction patterns during customer conversations.
 
-* **Compliance Monitoring**: For ensuring agents deliver critical information like disclaimers, privacy policies, or regulatory statements (privacy policies, disclaimers).
+* **Compliance Monitoring**: To verif, how agents deliver critical information, such as disclaimers, privacy policies, or regulatory statements (privacy policies, disclaimers).
 
-* **Performance Standardization**: When you need consistent evaluation criteria across different agents and interactions.
+* **Performance Standardization**: To apply consistent evaluation criteria across agents and interactions.
 
 ## How It Works
 
@@ -46,7 +46,7 @@ The metric operates through a **question-driven evaluation process** with two ma
 
 * Ideal for conditional scenarios where specific responses are required only in certain contexts.
 
-## Configure By Question Metrics
+## Configure by Question Metrics
 
 1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
@@ -252,43 +252,43 @@ The metric operates through a **question-driven evaluation process** with two ma
 
 1. Click **Create** to save and activate the By Question configured adherence metric.
 
-## Managing Evaluation Metrics
+## Managing By Question Metrics
 
-### Edit or Delete Evaluation Metrics
+### Edit or Delete By Question Metrics
 
 Steps to edit or delete existing Evaluation Metrics:
 
-1. Right-click to select any of the existing **Evaluation Metrics**.
+1. Right-click to select any of the existing **By Question Metrics**.
 <img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit** to update the required **Edit By Question Metrics** dialog box fields.
 
-3. Click **Delete** to remove the selected By Question evaluation metric.
+3. Click **Delete** to remove the selected **By Question** evaluation metric.
 
 4. Click **Update** to save the changes.
 
-#### Language Dependency Warnings
+### Language Dependency Warnings
 
 This section outlines the limitations and dependencies associated with modifying language settings in evaluation metrics. 
 
-##### Modification Warnings
+#### Modification Warnings
 
-* You cannot remove a language if any evaluation form or attribute currently uses it.
+1. You cannot remove a language if any evaluation form or attribute currently uses it.
 
-* Remove the language from all associated evaluation forms and attributes before modifying their language settings.
+1. Remove the language from all associated evaluation forms and attributes before modifying their language settings.
 
-* You can safely remove languages that are not linked to any forms or metrics.  
+1. You can safely remove languages that are not linked to any forms or metrics.  
 <img src="../images/by-question-lang-warning.png" alt="language Warning" title="language Warning" style="border: 1px solid gray; zoom:70%;">
 
 #### Delete Warnings
 
 This section describes the warnings and prerequisites you must address before deleting a metric.
 
-* If the metric is used in any evaluation form, the system displays a warning message.
+1. If the metric is used in any evaluation form, the system displays a warning message.
 
-* Remove the metric from all associated evaluation forms before you delete it.
+1. Remove the metric from all associated evaluation forms before you delete it.
 
-* If any attributes are linked to the metric, assign a different metric to those attributes before proceeding with deletion.
+1. If any attributes are linked to the metric, assign a different metric to those attributes before proceeding with deletion.
 
-* The system allows you to delete the metric only after resolving all dependencies.  
+1. The system allows you to delete the metric only after resolving all dependencies.  
 <img src="../images/by-question-delete-warning.png" alt="Delete Warnings" title="Delete Warnings" style="border: 1px solid gray; zoom:70%;">

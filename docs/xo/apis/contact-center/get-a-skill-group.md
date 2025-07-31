@@ -14,7 +14,7 @@ To retrieve the details of a particular skill group with the given `streamId` an
 | **PARAMETER** | **DESCRIPTION**                                                   | **TYPE**          |
 |-----------|---------------------------------------------------------------|---------------|
 | host      | Environment URL, for example, `https://platform.kore.ai`   | string, required |
-| streamId     | botId or streamId. You can get it from the general settings page.| string, required |
+| streamId     | botId or streamId. You can get it from the App Settings page.| string, required |
 | id        | The skill group id.                                           | string, required |
 
 ## Sample Request

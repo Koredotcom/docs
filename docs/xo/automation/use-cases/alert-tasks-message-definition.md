@@ -12,7 +12,7 @@ To define the messages shown to a user when displaying an Alert Task, please fol
 
 ## Response Types
 
-You can define the following bot responses for a task:
+You can define the following app responses for a task:
 
 * **The default response for all channels:** Create the default title and message response for all channels based on the payload response from the API request and any processors defined. 
 
@@ -29,7 +29,7 @@ To open the editor for your Action task, go to **Bot Response >** **Message Defi
     <img src="../images/standard-text-editor.png" alt="standard text editor" title="standard text editor" style="border: 1px solid gray; zoom:75%;">
 
 * **JavaScript**: Add custom code to handle the end-user task response message, declare variables, use variable keys, and interact with third-party applications.
-* **Preview**: View a sample of the rendered output message, with markup, as the bot users see it.
+* **Preview**: View a sample of the rendered output message, with markup, as the app users see it.
 
 ## Adding Variable Keys
 
@@ -132,7 +132,7 @@ response.data.memberships[0].section`
 
 ### Report Keys
 
-Report Keys are Kore.ai variable placeholders that you can use in Report Template Definitions and Bot Responses to show links for additional information in a message that a user can click.
+Report Keys are Kore.ai variable placeholders that you can use in Report Template Definitions and App Responses to show links for additional information in a message that a user can click.
 <img src="../images/report-keys.png" alt="report keys" title="report keys" style="border: 1px solid gray; zoom:75%;">
 
 * `reportInfo.reportLink` – The link defined in the **Report Template Definition** section for this task.
@@ -142,7 +142,7 @@ Report Keys are Kore.ai variable placeholders that you can use in Report Templat
 
 On the message editor, click **Preview** to generate a preview of your response using one of the following options:
 
-* **Test & Preview** – Opens the task setup page for your VA to define the task settings, authenticate, and then shows a preview of your response generated through your third-party web service, for example, _Asana_.
+* **Test & Preview** – Opens the task setup page for your AI Agent to define the task settings, authenticate, and then shows a preview of your response generated through your third-party web service, for example, _Asana_.
 * **Preview with sample response** – Generates the preview using the sample data provided with the key-value pairs defined in the **Response Sample** section on the **API Request** tab for the task.
 <img src="../images/preview-response.png" alt="preview response" title="preview response" style="border: 1px solid gray; zoom:75%;">
 

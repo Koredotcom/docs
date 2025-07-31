@@ -19,7 +19,7 @@ This API enables sending outbound SMS messages through the platform's generic SM
 | Parameter | Description                                                                                      | Type            |
 |-----------|--------------------------------------------------------------------------------------------------|-----------------|
 | `host`      | Environment URL, for example, `https://platform.kore.ai`                                           | string, required|
-| `BotId`     | `BotId` or `StreamId`. You can access it from the bot's General Settings page.                       | string, required|
+| `BotId`     | `BotId` or `StreamId`. You can access it from the bot's App Settings page.                       | string, required|
 
 ## Sample Request
 

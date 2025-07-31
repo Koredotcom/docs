@@ -14,7 +14,7 @@ Get the list of conversations with the given `streamId`.
 | **PARAMETER**  | **DESCRIPTION**                                               | **TYPE**         |
 |------------|-----------------------------------------------------------|--------------|
 | host       | The Environment URL. For example, `https://platform.kore.ai` | string, required |
-| streamId   | botId or streamId. You can get it from the general settings page. | string, required |
+| streamId   | botId or streamId. You can get it from the App Settings page. | string, required |
 | accountId  | Your Account ID.                                          | string, required |
 
 ## Sample Request

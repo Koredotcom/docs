@@ -1,6 +1,6 @@
 # Entity Types
 
-The **Entity Type** provides the NLP Interpreter with the expected type of data from a user utterance to enhance recognition and system performance.  The Kore.ai NLP interpreter extracts the entity from the user utterance. If the user does not enter a required entity, you can define a virtual assistant Response node to prompt the user to provide the entity. For more information, refer to [Working with the Entity Node](../node-types/working-with-the-entity-node){:target="_blank"}.
+The **Entity Type** provides the NLP Interpreter with the expected type of data from a user utterance to enhance recognition and system performance.  The Kore.ai NLP interpreter extracts the entity from the user utterance. If the user does not enter a required entity, you can define an AI Agent Response node to prompt the user to provide the entity. For more information, refer to [Working with the Entity Node](../node-types/working-with-the-entity-node){:target="_blank"}.
 
 You can also define entity rules to validate user input, [refer here for details](../entity-rules/){:target="_blank"}.
 
@@ -164,7 +164,7 @@ Response: The airport you entered seems to be ambiguous. Tell me the option you 
    </td>
    <td>Utterance: Flying to Heathrow
 <br>
-Captured: London Heathrow Airport with the necessary details in the virtual assistant.
+Captured: London Heathrow Airport with the necessary details in the AI Agent.
    </td>
   </tr>
   <tr>
@@ -221,7 +221,7 @@ The user can attach a file, image, or email up to 25 MB.
 
 ### City
 
-The name of a city in an utterance such as _What is the temperature in New York_. The virtual assistant captures any city name with over 5000 population in the form of a string. We use [www.geonames.org](http://www.geonames.org/){:target="_blank"} for all the city details.
+The name of a city in an utterance such as _What is the temperature in New York_. The AI Agent captures any city name with over 5000 population in the form of a string. We use [www.geonames.org](http://www.geonames.org/){:target="_blank"} for all the city details.
 
 !!! Note
 
@@ -315,7 +315,7 @@ Captures the name of a company from user utterances such as the _Nearest branch 
 
 The company name corpus includes language-specific names. Variations of a company’s name like stock name, registered name, etc. are all mapped to a common name, thus ensuring that, for example, Amazon, Amazon.com, Amazon Inc are all recognized as a single company.
 
-Apart from the supported companies, the virtual assistant recognizes the words starting with a capital letter and followed by these suffixes as a company type: Inc, Incorporated, Corp, Corporation, Group, Ltd, Limited, Co, Company, LP, LLP, LLLP, LLC, PLLC.
+Apart from the supported companies, the AI Agent recognizes the words starting with a capital letter and followed by these suffixes as a company type: Inc, Incorporated, Corp, Corporation, Group, Ltd, Limited, Co, Company, LP, LLP, LLLP, LLC, PLLC.
 
 ```
 "entities":
@@ -838,7 +838,7 @@ This entity type recognizes:
 
 !!! Note
 
-    Currency names are not disambiguated based on your previous usage. So, if the user utterance consists of a dollar first time, USD might rank higher than SGD (Singapore Dollar) because of the popularity. But, if the user explicitly mentions SGD, the virtual assistant continues to consider SGD for the dollar from there.
+    Currency names are not disambiguated based on your previous usage. So, if the user utterance consists of a dollar first time, USD might rank higher than SGD (Singapore Dollar) because of the popularity. But, if the user explicitly mentions SGD, the AI Agent continues to consider SGD for the dollar from there.
 
 
 ```
@@ -912,7 +912,7 @@ TKT-1234
 
 !!! Note
 
-    The dialog will fail if the expression is null. If the null expression is desired, bot developers can always use the preConditions entity rule as an alternative to skip over a node in the flow.
+    The dialog will fail if the expression is null. If the null expression is desired, app developers can always use the preConditions entity rule as an alternative to skip over a node in the flow.
 
 For more information, refer to [Regex Expressions](https://en.wikipedia.org/wiki/Regular_expression){:target="_blank"}.
 
@@ -923,7 +923,7 @@ Composite entities are used to capture multiple entity values in one entity.
 
 For example, consider the sales inquiries for flight bookings. Typical queries can be of the form: _I am interested in flying first class from Los Angeles to New York City, tomorrow._ or _I want to fly to NYC tomorrow_.
 
-As you can see, the virtual assistant typically needs to process a combination of details like flight class, departure city, destination city and travel date to respond to those queries.
+As you can see, the AI Agent typically needs to process a combination of details like flight class, departure city, destination city and travel date to respond to those queries.
 
 These scenarios are taken care of by the Composite Entity Type. [Refer here](../../../../how-tos/build-a-banking-assistant/train-the-assistant/composite-entities/){:target="_blank"} to know more about Composite Entity Types.
 
@@ -932,7 +932,7 @@ These scenarios are taken care of by the Composite Entity Type. [Refer here](../
 
 Captures a date mention from a user utterance. For example, _Book a flight on the 10th of October_ returns the value for Date in ISO8601 date format is YYYY-MM-DD.
 
-The virtual assistant recognizes all possible ways and formats of dates, like:
+The AI Agent recognizes all possible ways and formats of dates, like:
 
 * Formatted dates like YYYY-MM-DD, DD-MM-YYYY, DD-MM-YY, YYYY/MM/DD, DD/MM/YYYY, DD/MM/YY, YYYY.MM.DD, DD.MM.YYYY, DD.MM.YY.
 * All number dates like YMD and DMY for 20180518 and 09102013.
@@ -957,7 +957,7 @@ Captures a date grouping along with time in a user utterance.
 
 For example, _Book a flight on the 10 th of October at 6 pm_, returns the value for Date Time in ISO8601 date format as YYYYY-MM-DDThh: mm: ss.sTZD.
 
-The virtual assistant recognizes all possible ways and formats to express date and time.
+The AI Agent recognizes all possible ways and formats to express date and time.
 
 ```
 "entities":
@@ -968,7 +968,7 @@ The virtual assistant recognizes all possible ways and formats to express date a
 
 ### Date Period
 
-Captures start date and end date from the user input. For example, Book the hotel for five days starting May 5. If the user input does not include one or both of the dates, the virtual assistant prompts the user to provide the necessary input.
+Captures start date and end date from the user input. For example, Book the hotel for five days starting May 5. If the user input does not include one or both of the dates, the AI Agent prompts the user to provide the necessary input.
 
 !!! Note
 
@@ -983,7 +983,7 @@ The following table lists how the entity works in different scenarios:
   <tr>
    <td><strong>INPUT TYPE</strong>
    </td>
-   <td><strong>VIRTUAL ASSISTANT BEHAVIOUR</strong>
+   <td><strong>AI Agent BEHAVIOUR</strong>
    </td>
   </tr>
   <tr>
@@ -1066,7 +1066,7 @@ This feature is not fully supported in all languages [Click here for details](..
     * **Synonyms Key** – Enter one or more synonyms for the key ([Click here for details](../../../natural-language/nlp-guidelines/#synonyms){:target="_blank"}).
 
 * **Auto-Correction**– Set up auto-correct thresholds for the LOV entity type so that it not only accepts exact matches but also closest utterances with small variations. For example, let us consider that a list value called Apple for which a typo such as _appel_ is accepted based on your threshold settings. The Auto-Correction setting works in the following way:
-    1. The virtual assistant identifies the number of letters to be changed (inserts, deletes, or replaces) in user input to match it to a value in the list.
+    1. The AI Agent identifies the number of letters to be changed (inserts, deletes, or replaces) in user input to match it to a value in the list.
     2. The number is converted to a percentage of the total number of letters in the input.
     3. The list value with the highest similarity is considered as input if the score is greater than or equal to the configured percentage.
 
@@ -1077,7 +1077,7 @@ This feature is not fully supported in all languages [Click here for details](..
 Post v7.1, the following keys are added to the context object for the below-mentioned usage:
 
 * **ambiguousEntityValues**: This key contains values when the user input for a multi-item entity is ambiguous. Using this, you can check if any ambiguous values were identified and construct the flow to resolve the ambiguity. This key is reset if the entity is re-prompted during the dialog. The values are an array of JSON objects, each object containing title, value, and synonym.
-* **synonymsUsed**: This key holds the synonym used to identify the item. You can use this value to personalize the virtual assistant response accordingly if needed. This key is reset if the entity is re-prompted during the dialog.  
+* **synonymsUsed**: This key holds the synonym used to identify the item. You can use this value to personalize the AI Agent response accordingly if needed. This key is reset if the entity is re-prompted during the dialog.  
 
 <img src="../images/entity-types-list-of-item-enum.png" alt=" List of items (enumerated) " title="List of items (enumerated) " style="border:1px solid gray;zoom:70%;">
 
@@ -1091,7 +1091,7 @@ Post v7.1, the following keys are added to the context object for the below-ment
 
     * The ‘**Display List of Values**’ option is available only for the [List of Items (enumerated)](#list-of-items-enumerated). It is **NOT** available for the [List of Items (lookup)](#list-of-items-lookup).
 
-    * When using a list of values entities in the context object, the VA only supports attribute types as “String” for **Title**, **Value**, and **Synonyms**. 
+    * When using a list of values entities in the context object, the AI Agent only supports attribute types as “String” for **Title**, **Value**, and **Synonyms**. 
 
 
 ### List of Items (lookup)
@@ -1133,7 +1133,7 @@ Use Static List to define the entity values as one of the following list types:
 Post v7.1, the following keys are added to the context object for the below-mentioned usage:
 
 * **ambiguousEntityValues**: This key contains values when the user input for a multi-item entity is ambiguous. Using this, you can check if any ambiguous values were identified and construct the flow to resolve the ambiguity. This key is reset if the entity is re-prompted during the dialog. The values are an array of JSON objects, each object containing title, value, and synonym.
-* **synonymsUsed**: This key holds the synonym used to identify the item. You can use this value to personalize the virtual assistant response accordingly if needed. This key is reset if the entity is re-prompted during the dialog.  
+* **synonymsUsed**: This key holds the synonym used to identify the item. You can use this value to personalize the AI Agent response accordingly if needed. This key is reset if the entity is re-prompted during the dialog.  
 <img src="../images/entity-types-list-of-item-lookup-static-list.png" alt=" List of items (enumerated) " title="List of items (enumerated) " style="border:1px solid gray;zoom:70%;">
 
 #### Remote List
@@ -1213,7 +1213,7 @@ For example, in Bellagio, Las Vegas the entity captures the location details of 
 
 Captures a number from a user utterance. For example, _Book a room for 16 people_. In this example, the value 16 is returned as the number.
 
-The virtual assistants platform recognizes the spelled-out numbers and also standard abbreviations such as 1M. A consecutive number of words are combined into one number. For example, one two three becomes 123.
+The platform recognizes the spelled-out numbers and also standard abbreviations such as 1M. A consecutive number of words are combined into one number. For example, one two three becomes 123.
 
 !!! Note
 
@@ -1234,7 +1234,7 @@ Captures the full name of a person from a user utterance.
 
 For example, _Send an email to John Smith,_ where _John Smith_ is identified as Person Name.
 
-The Kore.ai virtual assistant platform assumes that the first word in the user utterance with capital letters as the first name along and the next two words in camel case as a part of the name.
+The platform assumes that the first word in the user utterance with capital letters as the first name along and the next two words in camel case as a part of the name.
 
 For example, if the user utterance is _I want to talk to John Smith_, it recognizes _John Smith_ as the name. If the utterance is _I want to talk to John smith immediately_ it recognizes only _John_ as the name.
 
@@ -1264,7 +1264,7 @@ For example, _The chance of rain today is more than 60 percent_, where 60 is the
 
 Captures the standard 3-digit to 12-digit phone number(s) from a user utterance.
 
-For example, Please call 4075551212, the value for the Phone Number is 4075551212 and is returned as a number. The virtual assistant now extracts the correct phone number when provided in a non-standard format like (407)-407-4077 or 407.407.4077 without prompting the user to enter the phone number in the correct format. This is applicable to all the Phone Number based entities by default.
+For example, Please call 4075551212, the value for the Phone Number is 4075551212 and is returned as a number. The AI Agent now extracts the correct phone number when provided in a non-standard format like (407)-407-4077 or 407.407.4077 without prompting the user to enter the phone number in the correct format. This is applicable to all the Phone Number based entities by default.
 
 
 ```
@@ -1277,7 +1277,7 @@ For example, Please call 4075551212, the value for the Phone Number is 407555121
 
 **Support for Phone Numbers in Arabic**
 
-The Platform now supports phone numbers in the Arabic language, where the virtual assistant identifies the Arabic number given in words from the user utterance (text) and converts it to the relevant digit.
+The Platform now supports phone numbers in the Arabic language, where the AI Agent identifies the Arabic number given in words from the user utterance (text) and converts it to the relevant digit.
 
 For example:
 
@@ -1306,7 +1306,7 @@ For example, for capturing volumes, select **Volume** as the **Unity Type** and 
 }
 ```
 
-The virtual assistants platform identifies all these quantities and unites along with the standard abbreviations, codes, and symbols.
+The platform identifies all these quantities and unites along with the standard abbreviations, codes, and symbols.
 
 <table border="1">
   <tr>
@@ -1556,7 +1556,7 @@ It recognizes the following denotations:
 
 ### Time Zone
 
-A time zone. _Eastern Standard Time_ converts the timezone into GMT and stores the resulting value. For example, if you type EST, it is stored as -6:00. The virtual assistants platform recognizes the standard time zones.
+A time zone. _Eastern Standard Time_ converts the timezone into GMT and stores the resulting value. For example, if you type EST, it is stored as -6:00. The platform recognizes the standard time zones.
 
 ```
 "entities":
@@ -1568,7 +1568,7 @@ A time zone. _Eastern Standard Time_ converts the timezone into GMT and stores t
 
 ### URL
 
-Captures a web URL from the utterance. The virtual assistant recognizes all standard formats of URLs. For example, _Visit our website: www.kore.ai_. The value for the URL is returned as a string.
+Captures a web URL from the utterance. The AI Agent recognizes all standard formats of URLs. For example, _Visit our website: www.kore.ai_. The value for the URL is returned as a string.
 
 ```
 "entities":

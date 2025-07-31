@@ -95,29 +95,20 @@ curl --location 'https://host/agentassist/api/v1/public/{{IID}}/campaign?campaig
 
 ## Body Parameters
 
-| **Parameter**                                | **Description**                                                                 | **Type**           |
-|----------------------------------------------|---------------------------------------------------------------------------------|--------------------|
-| `name`                                       | Name of the campaign.                                                           | string, required   |
-| `description`                                | Description of the campaign.                                                    | string, optional   |
-| `contactLists`                               | List of contact list names to use in the campaign.                              | array, required    |
-| `campaignType`                               | Type of campaign. Always `sms`.                                                 | string, required   |
-| `priority`                                   | Campaign execution priority. For example, 5                                     | string, optional   |
-| `format`                                     | Message format. Use `simple`.                                                   | string, required   |
-| `message`                                    | Message content.                                                                | object, required   |
-| `message.templateId`                         | Template ID for pre-configured message. Leave empty for plain message.          | string, optional   |
-| `message.message`                            | Base64-encoded message content.                                                 | string, required   |
-| `dialingStrategy`                            | Calling strategy.                                                               | object, required   |
-| `dialingStrategy.callerId`                   | Caller ID details.                                                              | object, required   |
-| `dialingStrategy.callerId.phoneNumber`       | Caller’s phone number in E.164 format.                                          | string, required   |
-| `dialingStrategy.callingHours`               | Permitted days and times.                                                       | object, required   |
-| `dialingStrategy.callingHours.frequency`     | Frequency type. For example: `WEEKLY`.                                          | string, required   |
-| `dialingStrategy.callingHours.timezone`      | Time zone for the campaign. For example: `Asia/Kolkata`.                        | string, required   |
-| `dialingStrategy.callingHours.days`          | List of day/time windows.                                                       | array, required    |
-| `dialingStrategy.callingHours.days.day`      | Day of the week (`MO`, `TU`, `WE`, etc.).                                       | string, required   |
-| `dialingStrategy.callingHours.days.start`    | Start time (for example, `9:00 AM`).                                            | string, required   |
-| `dialingStrategy.callingHours.days.end`      | End time (for example, `6:00 PM`).                                              | string, required   |
-| `schedule`                                   | Scheduling settings.                                                            | object, optional   |
-| `schedule.isSchedulingEnabled`               | Set to `false` to trigger the campaign immediately.                             | boolean, optional  |
+| **Parameter**                           | **Description**                                                                                                                                             | **Type**                   |
+|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+| `name`                                | Name of the SMS campaign. Used for identification and reporting. Max 48 characters.                                                                    | string, required       |
+| `description`                         | Campaign description. Explains the purpose and behavior of the SMS blast. Max 256 characters.                                                           | string, required       |
+| `contactLists`                        | List of contact list names to target. Each must exist in the system. At least one required.                                                             | array[string], required|
+| `campaignType`                        | Type of campaign. Must be either `'voice'` or `'sms'`.                                                                                                   | string, required       |
+| `priority`                            | Campaign priority. Higher values indicate higher execution priority. Allowed values: 1, 2, 3, 4, 5.                                                     | string, required       |
+| `format`                              | Format of the SMS message. `'simple'` or `'advanced'` means plain text without personalization.                                                         | string, required       |
+| `message.templateId`                 | Template ID for message content. If empty, no template is used.                                                                                          | string, optional       |
+| `message.message`                    | Actual message text sent to contacts. Must comply with telecom rules.                                                                                   | string, required       |
+| `dialingStrategy.callerId.phoneNumber`| Sender ID or SMS phone number.                                                                                                                           | string, required       |
+| `dialingStrategy.callingHours.frequency`| Frequency of calling hours. Allowed values: `'WEEKLY'`, `'DAILY'`, `'CUSTOM'`.                                                                         | string, required       |
+| `dialingStrategy.callingHours.timezone`| Timezone used to enforce messaging hours.                                                                             | string, required       |
+| `dialingStrategy.callingHours.days`   | Time blocks when messages can be sent. Each object includes: `day`, `start` (for example, "9:00 AM"), `end` (for example, "6:00 PM"). Multiple entries allowed.       | array[object], required|
 
 ## Sample Response
 

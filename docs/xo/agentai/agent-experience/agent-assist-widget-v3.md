@@ -1,6 +1,6 @@
 # Agent AI Widget
 
-The Agent AI is an AI powered virtual assistant to optimize contact center agent performance. It offers seamless assistance, promoting enhanced productivity and improved customer satisfaction. Its user-friendly interface and real-time support capabilities let agents effortlessly solve complex customer interactions.
+The Agent AI is an AI powered solution to optimize contact center agent performance. It offers seamless assistance, promoting enhanced productivity and improved customer satisfaction. Its user-friendly interface and real-time support capabilities let agents effortlessly solve complex customer interactions.
 
 The following features are available in the Agent AI widget:
 
@@ -69,7 +69,7 @@ My AI Agent (Bot) tab displays the list of “next best action” suggestions fo
 My AI Agent (Bot) functionality can be used in multiple circumstances (but not limited to): 
 
 * If Automation fails, the agent can rerun it by providing inputs manually, which helps to reduce the average handle time (AHT) and makes it less frustrating for customers as they don’t have to repeat the same information.
-* Agents can run My AI Agent (Bot)t automation in parallel and seek information directly from the app.
+* Agents can run My AI Agent (Bot) automation in parallel and seek information directly from the app.
 
 ### Assist Tab
 

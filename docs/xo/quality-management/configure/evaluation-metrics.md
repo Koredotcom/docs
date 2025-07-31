@@ -1,13 +1,13 @@
 # Evaluation Metrics
 
-This feature is a key component of the Quality AI module, enabling supervisors to define, customize, and monitor performance indicators that measure the quality of agent-customer interactions. This comprehensive system supports six distinct measurement types, each designed for specific evaluation needs through a combination of advanced AI-driven analysis and traditional rule-based methods. 
+This feature is a key component of the Quality AI module. It enabling supervisors to define, customize, and monitor performance indicators that measure the quality of agent-customer interactions. This supports multiple measurement types, each designed for specific evaluation needs through a combination of advanced AI-driven analysis and traditional rule-based methods. 
 
-Users can build and manage custom evaluation criteria using these measurement types within the **Evaluation Forms** section. Among the options is a GenAI-powered adherence metric, which streamlines setup by minimizing the need for large training datasets. This approach improves scalability across multiple languages and diverse agent interactions.
+Within Evaluation Forms, you can create and manage custom evaluation criteria using these different measurement types. The GenAI-powered adherence metric simplifies setup by reducing the need for large training datasets. This improves scalability while ensuring consistent quality and compliance across multiple languages and diverse agent interactions.
 
 ## Access Evaluation Metrics
 
-Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.   
-<img src="../evaluation-criteria/evaluation-metrics/metrics-measurement-types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.    
+<img src="../evaluation-criteria/metrics-measurement-types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 ## Key Benefits
 
@@ -49,7 +49,7 @@ Steps to create new evaluation metrics:
 2. Click the **+ New Evaluation Metric** displayed in the upper-right corner.    
 <img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
-3. Configure the metrics based on your measurement type requirements.    
+3. Configure any one of the measurement type metrics.    
 <img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
 ">
 
@@ -111,7 +111,7 @@ The following six measurement types are:
 
         **Used For**: Voice interaction quality, conversation flow analysis, and speaking pace optimization.
 
-    For the detailed configuration, see [By Speech](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-speech.txt).
+    For the detailed configuration, see [By Speech](../configure/evaluation-criteria/metrics-measurement-types/by-speech.txt).
 
 1. **By Value - Data Accuracy Verification**
 
@@ -143,7 +143,7 @@ The following six measurement types are:
 
     For the detailed configuration, see [By Value](../configure/evaluation-criteria/metrics-measurement-types/by-value.md).
 
-1. **By Dialog Execution - Task Completion Assessment**
+1. **By Dialog Task - Task Completion Assessment**
 
     **Purpose**: Evaluate completion and quality of specific dialog tasks and workflows.
 
@@ -157,7 +157,7 @@ The following six measurement types are:
 
     **Used For**: Workflow adherence, task completion verification, and dialog flow optimization.
 
-    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics-measurement-types/by-diaolog-execution.txt).
+    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-execution.txt).
 
 1. **By Playbook Adherence - Process Compliance Evaluation**
 
@@ -219,23 +219,23 @@ The process of managing evaluation metrics includes the following sections:
 
 **Metric Lifecycle Management**
 
-    * **Creation**: Step-by-step configuration wizard
+* **Creation**: Step-by-step configuration wizard
 
-    * **Editing**: Real-time updates with validation
+* **Editing**: Real-time updates with validation
 
-    * **Deletion**: Dependency resolution and cleanup
+* **Deletion**: Dependency resolution and cleanup
 
-    * **Language Management**: Multilingual configuration and updates
+* **Language Management**: Multilingual configuration and updates
 
 **Dependency Management**
 
-    * **Form Associations**: Evaluation form linkage requirements
+* **Form Associations**: Evaluation form linkage requirements
 
-    * **Attribute Assignments**: Metric-to-attribute mapping
+* **Attribute Assignments**: Metric-to-attribute mapping
 
-    * **Language Dependencies**: Active language protection
+* **Language Dependencies**: Active language protection
 
-    * **Deletion Prerequisites**: Dependency resolution before removal
+* **Deletion Prerequisites**: Dependency resolution before removal
 
 ### Edit or Delete Evaluation Metrics Type
 
