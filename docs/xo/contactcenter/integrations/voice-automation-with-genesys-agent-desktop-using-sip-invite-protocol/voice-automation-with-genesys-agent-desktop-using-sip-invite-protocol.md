@@ -13,9 +13,9 @@ This document contains a step-by-step process of handing over a call (via SIP IN
 
 - Create/Import App into Automation AI with specific use cases. 
 - Purchase a Phone Number in the **Flows & Channels** > **Channels** > **Voice Gateway** > **Phone Numbers** section, under CCAI.
-- Create Start/Exit Flows in CCAI.
+- Create Start/Exit Flows in CCAI. 
 
-1. Sign in to [AI for Service](https://platform.kore.ai/){:target="_blank"}.  
+1. Sign in to **[AI for Service](https://platform.kore.ai/){:target="_blank"}**.  
 2. Go to **Contact Center AI** > **Flows & Channels**.  
 3. Click **Start Flows** > **+New Start Flow**. Follow [this doc](https://docs.kore.ai/xo/flows/create-flows/){:target="_blank"} to create a new flow.  
 <img src="../images/new-start-flow-1.png" alt="new-start-flow" title="new-start-flow" style="border: 1px solid gray; zoom:80%;">  
