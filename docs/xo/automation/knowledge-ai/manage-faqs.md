@@ -27,7 +27,7 @@ Step to add an FAQ:
 3. On the **Intent** window, select **FAQ**.
 4. In the **Add Question** field, enter the question that describes the user’s query.
 5. (Optional) If there are alternatives to the same question, add them in the **+ Alternate Question** field. Repeat the step for all the alternative questions you want to add.
-6. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. [Learn more](../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md){:target="_blank"}.
+6. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly.
 7. (Optional) Add terms that enable the Knowledge Graph Engine to identify questions more effectively.
 8. (Optional) Enter a **Display Name** to represent the FAQ to the end-users.
 9. In the **Bot Response** field, add the default responses when the user asks the FAQ.
