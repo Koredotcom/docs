@@ -18,10 +18,10 @@ To get exported data which is one of (skillsGroups, Queues, StandardResponses, W
 
 | **PARAMETER** | **DESCRIPTION**                                                                                     | **TYPE**         |
 |---------------|-----------------------------------------------------------------------------------------------------|------------------|
-| host          | Environment URL, for example, https://platform.kore.ai                                            | string, required |
+| host          | Environment URL, for example, `https://platform.kore.ai`                                            | string, required |
 | AccountId     | The Account Id.                                                                                     | string, required |
 | OrgId         | The Organization Id.                                                                                | String, Required |
-| botId         | botId or streamId. You can get it from the general settings page.                | string, required |
+| botId         | botId or streamId. You can get it from the App Settings page.                | string, required |
 
 ## Sample Request
 

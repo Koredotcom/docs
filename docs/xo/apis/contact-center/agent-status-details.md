@@ -4,7 +4,7 @@ To show the self-reported status (available, busy, away, etc.) in the given time
 
 | **METHOD**   | **POST**                                                                                   |
 |--------------|---------------------------------------------------------------------------------------------|
-| **Endpoint** | `https://{{host}}/agentassist/api/public/analytics/account/`<br>`{{accountId}}/agentstatusdetails` |
+| **Endpoint** | `https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/agentstatusdetails` |
 | **Content Type** | `application/json`                                                            |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).  |
 | **API Scope** | SmartAssist Analytics                                                                       |

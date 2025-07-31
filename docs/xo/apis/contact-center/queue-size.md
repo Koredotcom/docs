@@ -15,7 +15,7 @@ To get the queueDetails by giving queueId and filters with the given `streamId`.
 |-----------|-------------------------------------------------------------------|---------------|
 | Host      | The Environment URL. For example, `https://platform.kore.ai`     | string, required |
 | queueId   | You can get the queueId in the /queues GET API.                   | string, required |
-| streamId     | botId or streamId. You can get it from the general settings page. | string, required |
+| streamId     | botId or streamId. You can get it from the App Settings page. | string, required |
 
 ## Sample Request
 

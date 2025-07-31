@@ -13,8 +13,8 @@ This API is used to delete Voice Call Recordings. The response varies based on w
 
 | **PARAMETER** | **DESCRIPTION**                                    | **TYPE**           |
 |-----------|------------------------------------------------|----------------|
-| host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| botId | botId or streamId. You can get it from the general settings page.| string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| botId | botId or streamId. You can get it from the App Settings page.| string, required |
 
 ## Query Parameter
 

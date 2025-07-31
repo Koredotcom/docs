@@ -14,7 +14,7 @@ To update the particular skill with the given `streamId`, `skillGroupId`, and `s
 | **PARAMETER** | **DESCRIPTION**                                                         | **TYPE**          |
 |-----------|---------------------------------------------------------------------|---------------|
 | host      | Environment URL, for example, `https://platform.kore.ai`          | string, required |
-| streamId     | botId or streamId. You can get it from the general settings page. | string, required |
+| streamId     | botId or streamId. You can get it from the App Settings page. | string, required |
 | skillId   | ID of the Skill.                                                   | string, required |
 
 ## Sample Request
