@@ -373,7 +373,7 @@ Make sure that the following GenAI features are enabled:
 Steps to edit existing Evaluation Metrics:
 
 1. Right-click to select any of the existing **Evaluation Metrics**.   
-<img src="../images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:60%;">    
+<img src="../images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:0%;">    
 
 2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.
 
@@ -404,5 +404,7 @@ This section describes the warnings and prerequisites you must address before de
 
 2. Remove the metric from all associated evaluation forms before you delete it.
 
-3. The system allows you to delete the metric only after resolving all dependencies.  
+3. The system allows you to delete the metric only after resolving all dependencies.
+
+4. Verify the metric is deleted and related data are removed.  
     <img src="../images/by-value-delete-error.png" alt="Delete Warning" title="Delete Warning" style="border: 1px solid gray; zoom:80%;">     

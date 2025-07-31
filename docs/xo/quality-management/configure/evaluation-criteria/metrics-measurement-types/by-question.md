@@ -267,28 +267,28 @@ Steps to edit or delete existing Evaluation Metrics:
 
 4. Click **Update** to save the changes.
 
-#### Language Dependency Warnings
+### Language Dependency Warnings
 
 This section outlines the limitations and dependencies associated with modifying language settings in evaluation metrics. 
 
-##### Modification Warnings
+#### Modification Warnings
 
-* You cannot remove a language if any evaluation form or attribute currently uses it.
+1. You cannot remove a language if any evaluation form or attribute currently uses it.
 
-* Remove the language from all associated evaluation forms and attributes before modifying their language settings.
+1. Remove the language from all associated evaluation forms and attributes before modifying their language settings.
 
-* You can safely remove languages that are not linked to any forms or metrics.  
+1. You can safely remove languages that are not linked to any forms or metrics.  
 <img src="../images/by-question-lang-warning.png" alt="language Warning" title="language Warning" style="border: 1px solid gray; zoom:70%;">
 
 #### Delete Warnings
 
 This section describes the warnings and prerequisites you must address before deleting a metric.
 
-* If the metric is used in any evaluation form, the system displays a warning message.
+1. If the metric is used in any evaluation form, the system displays a warning message.
 
-* Remove the metric from all associated evaluation forms before you delete it.
+1. Remove the metric from all associated evaluation forms before you delete it.
 
-* If any attributes are linked to the metric, assign a different metric to those attributes before proceeding with deletion.
+1. If any attributes are linked to the metric, assign a different metric to those attributes before proceeding with deletion.
 
-* The system allows you to delete the metric only after resolving all dependencies.  
+1. The system allows you to delete the metric only after resolving all dependencies.  
 <img src="../images/by-question-delete-warning.png" alt="Delete Warnings" title="Delete Warnings" style="border: 1px solid gray; zoom:70%;">
