@@ -53,20 +53,19 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/get
 
 ## Request Body Parameters
 
-| **Parameter**             | **Description**                                                                                                                       | **Type**                    |
-|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| `skip`                  | Pagination offset. Number of records to skip. Can be a number or empty string.                                                    | number, optional        |
-| `page`                  | Page number for paginated results. Can be a number or empty string.                                                               | number, optional        |
-| `limit`                 | Number of records to return per page. Can be a number or empty string.                                                            | number, optional        |
-| `type`                  | Type of campaign. Allowed values: "voice" or "sms".                                                                           | string, required        |
-| `startDate`             | Filter start timestamp in ISO 8601 format (YYYY-MM-DDTHH:mm:ss.sssZ).                                                           | string (ISO format), optional |
-| `endDate`               | Filter end timestamp in ISO 8601 format (YYYY-MM-DDTHH:mm:ss.sssZ).                                                             | string (ISO format), optional |
-| `sortBy.name`           | Sort by campaign name. Allowed values: "asc", "desc". Must be present if any sort field is used.                             | string, optional        |
-| `sortBy.createdAt`      | Sort by campaign creation date. Allowed values: "asc", "desc".                                                                | string, optional        |
-| `sortBy.updatedAt`      | Sort by campaign update date. Allowed values: "asc", "desc".                                                                  | string, optional        |
-| `filters.status`        | Filter by status. Allowed values: ['Active', 'Completed', 'Ready', 'Paused', 'Preparing', 'Stopped', 'Scheduled', 'Rescheduled']. | array[string], optional |
-| `filters.priority`      | Filter by priority. Allowed values: [1, 2, 3, 4, 5].                                                                             | array[number], optional |
-| `filters.dialingMode`   | Filter by dialing mode. Allowed values: ['Agentless', 'Preview', 'Progressive'].                                                | array[string], optional |
+| **Parameter**           | **Description**                                                                                                                                         | **Type**                      |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| `skip`                | Pagination offset. Number of records to skip. Can be a number or an empty string.                                                                  | number, optional          |
+| `page`                | Page number for paginated results. Can be a number or an empty string.                                                                             | number, optional          |
+| `limit`               | Number of records to return per page. Can be a number or an empty string.                                                                          | number, optional          |
+| `type`                | Type of campaign. Allowed values: "voice" or "sms".                                                                                            | string, required          |
+| `startDate`           | Filter start timestamp in ISO 8601 format (YYYY-MM-DDTHH:mm:ss.sssZ).                                                                            | string (ISO format), optional |
+| `endDate`             | Filter end timestamp in ISO 8601 format (YYYY-MM-DDTHH:mm:ss.sssZ).                                                                              | string (ISO format), optional |
+| `sortBy.name`         | Sort by campaign name. Allowed values: "asc", "desc". Must be included if any sort field is used.                                              | string, optional          |
+| `sortBy.createdAt`    | Sort by campaign creation date. Allowed values: "asc", "desc".                                                                                 | string, optional          |
+| `sortBy.updatedAt`    | Sort by campaign update date. Allowed values: "asc", "desc".                                                                                   | string, optional          |
+| `filters.status`      | Filter by campaign status. Allowed values: ['Active', 'Completed', 'Ready', 'Paused', 'Preparing', 'Stopped', 'Scheduled', 'Rescheduled'].      | array[string], optional   |
+| `filters.priority`    | Filter by campaign priority. Allowed values: [1, 2, 3, 4, 5].                                                                                     | array[number], optional   |
 
 ## Sample Response
 
