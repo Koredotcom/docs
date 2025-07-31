@@ -40,7 +40,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 | timeoutInMs           | This provides improved control over how long the system should wait for the recipient to answer.                    | number, optional |
 | trunk               | The trunk is a carrier for the account. If not provided, It will pick the default carrier for that account.                                             | string, optional |
 | metadata            | Data to be sent to the bot (can be used to provide information to the bot about the call, such as the name of the target).                            | object, optional |
-| timers              | An object containing various timeout properties. [Learn more](../contact-center/outbound-calling-kore-ai-vg.md#timers-configuration) | object, optional |
+| timers              | An object containing various timeout properties. [Learn more](../contact-center/outbound-calling-vg.md#timers-configuration) | object, optional |
 | machinedetection    | Activates machine (answering machine and fax) detection. Possible values:                                                                               | string, optional |
 |                     | - “disconnect”: Machine detection is enabled, and the call is disconnected in amd.                                                                      |                  |
 |                     | - “detect”: Machine detection is enabled, and the call is not disconnected in amd.                                                                      |                  |

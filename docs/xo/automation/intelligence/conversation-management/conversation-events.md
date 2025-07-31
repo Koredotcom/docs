@@ -153,7 +153,7 @@ In this conversation, the dialog has reached the end, and the last response says
 
 **Solution**
 
-If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the [End of Task](../../automation/intelligence/event-handling.md#end-of-task) section.
+If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the [End of Task](../conversation-management/conversation-events.md#end-of-task) section.
 
 Now the ‘Repeat Bot Responses’ event considers the end of dialog after the ‘Last User Input’ configuration, the repeat response will say, `"Thank you. Your flight has been booked successfully. Your booking reference number is XYZ789 and you will receive a message shortly. Is there anything else I can help you with?".`
 
@@ -178,7 +178,7 @@ The developer uses the **Repeat Bot Response** to allow you to repeat the respon
 5. Once Utterances are trained, you can add the following preconditions:
 
     * **Channels** – Allows you to add voice channels such as IVR, IVR Audiocodes, Twilio Voice or SmartAssist Gateway.
-    * **Context Tags** – Allows you to add the context objects to trigger the Repeat Bot Response event. For more information, read the [Context Object](../intelligence/context-object.md){target="_blank"} article.
+    * **Context Tags** – Allows you to add the context objects to trigger the Repeat Bot Response event. For more information, read the [Context Object](../../intelligence/context-object.md){target="_blank"} article.
     
  
 !!! note
