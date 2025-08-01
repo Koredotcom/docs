@@ -9,7 +9,7 @@ This integration streamlines customer support, automates responses, and improves
 Here’s a general overview of how voice virtual assistant interactions work on the Zoom Contact Center:
 
 * **Setup and Configuration**: Kore.ai sets up and configures the integration between their virtual assistant and ZCC. This involves installing specific connectors provided by Zoom and configuring the settings to establish a connection.
-* **Channel Integration**: Once the integration is set up, the virtual assistants on Kore.ai can be configured to use ZCC as one of its communication channels (setting includes “Transfer form IVR” and “Agent Transfer”. This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and then routed to Kore’s IVR for running voice automation.
+* **Channel Integration**: Once the integration is set up, the virtual assistants on Kore.ai can be configured to use ZCC as one of its communication channels (setting includes “Transfer form IVR” and “Agent Transfer”). This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and then routed to Kore’s IVR for running voice automation.
 * **Routing and Distribution**: When a customer initiates contact through ZCC and the call is received by Kore. Admins can use the Agent Transfer Node within the Kore platform to transfer the call back to ZCC if a human agent is required. Admins can also define appropriate SIP headers to provide the necessary information that can be used within ZCC to direct the interaction to the appropriate agents.
 * **Agent Interaction**: The agent receives the customer interaction and responds to the customer using ZCC’s communication features, such as answering voice calls.
 
@@ -89,7 +89,7 @@ After the customer interacts with Kore’s AI Agent, you can perform agent trans
 
 ### 3.2 Agent Transfer Node in a Dialog Task
 
-Zoom users can also invoke agent transfer from the Dialog Task using a message node. Read more [here](../../../getting-started/virtual-assistants-overview.md){:target="_blank"} on Kore Automation / Dialog task.
+Zoom users can also invoke agent transfer from the Dialog Task using a message node.
 
 Add the following code on the message node for agent transfer:
 
