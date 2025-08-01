@@ -26,9 +26,9 @@ Developers can define and expose XO variables as metadata, which are then made a
 * Ensure the Agentic app is integrated with AI for Service using the Automation node. To configure, see [Full Autonomy](../flows/node-types/automation.md#full-autonomy).
 
 
-### Step 1: Create Variables in XO
+### Step 1: Create or Use Existing Variables
 
-Create variables within script nodes or other logic in XO to capture runtime data. (For example,
+Create or utilize existing variables in the context object within script nodes or other logic in AI for Service to capture runtime data. (For example,
 `context.userInfo.name`, or `context.channel.type`).
 
 
@@ -54,12 +54,13 @@ In the Automation Node’s metadata section, declare the variables that should b
 
 ### Step 3: Access Metadata in Agent Platform
 
-The metadata passed from AI for Service is automatically stored in the agent’s memory under the ‘sessionMeta’ store and the metadata object. You can access the metadata from agent prompts, supervisor prompts, and code tools.
+The metadata passed from AI for Service is automatically stored in the agent’s memory under the ‘sessionMeta’ store and the ‘metadata’ object. You can access the metadata from agent prompts, supervisor prompts, and code tools.
+
 
 Metadata can be accessed from agent and supervisor prompts as follows.
 
 ```
-{{memory.sessionMeta.metadata.key}}
+{{memory.sessionMeta.metadata.keyname}}
 ```
 
 
@@ -84,8 +85,8 @@ During execution, these variables are injected into the memory store and are vis
 
 
 
-1. Navigate to the agent’s **Traces tab** in Agent Platform.
-2. Run a test conversation.
-3. Verify that your metadata values are stored in the memory store.
+1. Initiate a test conversation from AI for Service, adding metadata.
+2. Navigate to the relevant Session/Trace in the Agent Platform.
+3. Validate if the memory variables are resolved.
 4. Validate that the correct values are being passed.  
 <img src="../images/metadata4.png" alt="Metadata" title="Metadata" style="border: 1px solid gray; zoom:80%;">

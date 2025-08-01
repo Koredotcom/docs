@@ -295,7 +295,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 **Azure OpenAI GPT-4o Mini and OpenAI GPT-4o Mini Support**
 
-The Platform now supports the GPT-4o mini model for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-supported-features) and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-supported-features) features. The model provides similar responses to GPT-4o at a lower cost and latency, balancing performance and efficiency for real-time applications. The integration does not include system prompts, but it can be used with custom prompts.
+The Platform now supports the GPT-4o mini model for various Co-Pilot and Dynamic Conversations features. The model provides similar responses to GPT-4o at a lower cost and latency, balancing performance and efficiency for real-time applications. The integration does not include system prompts, but it can be used with custom prompts.
 
 <font size="4">Getting Started</font>
 
@@ -622,12 +622,12 @@ Key Updates
 * Custom LLM Support: The Zero-Shot ML model can now be used with the Bring Your Own Model (BYOM), enabling platform users to define prompts and leverage the enhanced capabilities with their custom LLMs.
 
 These enhancements significantly improve the Zero-Shot model's ability to accurately identify intents, particularly in complex or nuanced conversational scenarios, while maintaining compatibility with existing configurations.  
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#zero-shot-ml-model)
+
 
 **Rephrase User Query feature is now extended to Search AI**
 
 The platform now supports contextual rephrasing of user input for Search AI. The feature is available using the XO GPT model.  
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-user-query)
+
 
 <font size="4">Bot Admin Console</font>
 
@@ -935,7 +935,7 @@ Key benefits:
 
 **Deprecation of Azure OpenAI and OpenAI from Marketplace Integrations**  
 
-The Prebuilt Dialog Templates using OpenAI and Azure OpenAI are discontinued. These templates were originally provided to explore the art of possibility when LLMs were relatively new. However, they used older models that the model providers no longer support. Our customers are already exploring the full power of GenAI-powered conversational experiences using the [GenAI Node](../../automation/use-cases/dialogs/node-types/genai-node-v2.md) and [GenAI Prompt](../../automation/use-cases/dialogs/node-types/genai-prompt.md) node.
+The Prebuilt Dialog Templates using OpenAI and Azure OpenAI are discontinued. These templates were originally provided to explore the art of possibility when LLMs were relatively new. However, they used older models that the model providers no longer support. Our customers are already exploring the full power of GenAI-powered conversational experiences using the [GenAI Node](../../automation/agent-node/working-with-agent-node.md) and [GenAI Prompt](../../automation/use-cases/dialogs/node-types/genai-prompt.md) node.
 
 <hr>
 
@@ -958,7 +958,7 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 **Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**  
 
-The Platform now supports two new Azure OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"} Features:
+The Platform now supports two new Azure OpenAI models for various Co-Pilot and Dynamic Conversations Features:
 
 * GPT-4 Turbo: It’s a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o: It’s the most advanced multimodal model, which can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
@@ -1116,7 +1116,7 @@ Key updates:
 * Variable support: Context, Environment, and Content variables are now supported in prompts and scripts.
 * JavaScript mode: Ability to create prompts using JavaScript and preview option for script validation.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md){:target="_blank"}
 
 
 <font size="4">App Settings</font>
@@ -1189,7 +1189,7 @@ Key features and enhancements included in this release are summarized below.
 
 **OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**  
 
-The Platform now supports two new OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"}.
+The Platform now supports two new OpenAI models for various Co-Pilot and Dynamic Conversations features.
 
 * GPT-4 Turbo is a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o is an advanced multimodal model that can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
@@ -1401,11 +1401,11 @@ Key features and enhancements included in this release are summarized below.
 **Custom LLM Integration Support for Rephrase Dialog Responses** 
 
 Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLMs. This allows platform users to use the rephrasing feature with their own custom-trained language models and create customized prompts tailored to their specific use cases, models, and linguistic contexts, providing greater flexibility and control over the rephrasing process and conversational experiences.  
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-dialog-responses){:target="_blank"}
+
 
 **Custom LLM Integration Support for Answer Generation**
 
-In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#answer-generation){:target="_blank"}
+In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users.
 
 **Kore.ai XO GPT Supports Vector Generation and Answer Generation**
 
