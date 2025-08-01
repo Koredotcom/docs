@@ -143,7 +143,7 @@ The following six measurement types are:
 
     For the detailed configuration, see [By Value](../configure/evaluation-criteria/metrics-measurement-types/by-value.md).
 
-1. **By Dialog Execution - Task Completion Assessment**
+1. **By Dialog Task - Task Completion Assessment**
 
     **Purpose**: Evaluate completion and quality of specific dialog tasks and workflows.
 
