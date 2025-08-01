@@ -22,12 +22,6 @@ The following key enhancements have been made to the RACL feature in Search AI c
 
 Users can now configure the LLM directly within the Answer Configuration page, streamlining the setup process and eliminating the need to navigate to the Gen AI features section. This improvement enhances usability and reduces configuration time.
 
-<font size="4">Incremental Web Crawl API</font>
-
-Search AI introduces a new API for incremental web crawling, enabling efficient and targeted updates to web data sources. Instead of recrawling the entire site, this API enables crawling only for new or updated pages, saving time and resources.
-
-[Learn more :octicons-arrow-right-24:](./../../apis/searchai/ingest-data.md)
-
 <hr>
 
 ## v11.15.1 July 12, 2025
