@@ -9,7 +9,7 @@ You can format bot responses as below:
     * For dynamically constructing messages using context and session variables.
     * for displaying templates or widgets as supported by various channels.  
     For example, you can compose a JavaScript message for Facebook Channel to present a Carousel template.
-    * Optionally, you can generate links to view the information in an HTML report format using templates and share the URL with the bot message.
+    * Optionally, you can generate links to view the information in an HTML report format using templates and share the URL with the app message.
 
 For example, the _Book Flights_ sample dialog uses the following message nodes:
 
@@ -50,14 +50,14 @@ Setting up a Message node in a dialog task involves the following steps:
 2. Under the **Bot Responses** section, compose and format the bot response either as plain text or as a JavaScript message. A default message is set by the platform, you can customize it.
 3.  Enter channel-specific messages for bot responses using the **Manage** link. For more information, read the [Using the Prompt Editor](../../prompt-editor/){:target="_blank"} article.
 4. To add more bot responses, click **Add Bot Response** and repeat the above steps.
-5. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite VA replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
+5. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
 <img src="../images/re-responses.png" alt="Rephrase Responses" title="Rephrase Responses" style="border:1px solid gray;zoom:70%;">
 
 
 
 ### Generate Message as Report Link (Optional)
 
-The Message node allows you to generate links to view the information in an HTML report format using templates. The URL link is added to the bot message. When you add a link to a bot response, the users can select the link and get more details, such as a table of values for _Closed Sales Opportunities_ in the _SalesForce_ Bot.  
+The Message node allows you to generate links to view the information in an HTML report format using templates. The URL link is added to the app message. When you add a link to a app response, the users can select the link and get more details, such as a table of values for _Closed Sales Opportunities_ in the _SalesForce_ Bot.  
 
 To generate a report link, follow these steps:
 
@@ -66,7 +66,7 @@ To generate a report link, follow these steps:
     <img src="../images/message-node-img2-generate-report.png" alt="Message node - Generate report" title="Message node - Generate report" style="border:1px solid gray;zoom=70%;">
  
 2. On the Generate Report dialog box, enter the following values:
-    1. **Link Title** – The link text displayed in the bot channel. For example, _View Shopping Cart_.
+    1. **Link Title** – The link text displayed in the app channel. For example, _View Shopping Cart_.
     2. **Header** – The title of the report. For example, _These are the items in your Shopping Cart_.
     3. **Details** – End-user help information displayed directly below the header, describing the content of the report. For example, _Review your Shopping Cart_, _and then click Continue when you are ready to place your order._
     4. **Data Path** – Path for the data, usually the response from the web service. For example, _context.ShoppingCartService.response.body_
@@ -82,7 +82,7 @@ To generate a report link, follow these steps:
 
 ### Variable Namespace
 
-In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the bot. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
 
 ### Instance Properties
@@ -94,14 +94,14 @@ In the **Variable Namespaces** section, associate the variable namespaces to exe
     
         The settings in the Instance Properties tab are specific to the current task and do not reflect in other dialog tasks that use this node.
     
-    1. **Use the task level ‘Interruptions Behavior’ setting**: The bot refers to the Interruptions Behavior settings set at the dialog task level.
+    1. **Use the task level ‘Interruptions Behavior’ setting**: The AI Agent refers to the Interruptions Behavior settings set at the dialog task level.
     2. **Customize for this node option:** You can customize the Interruptions Behavior settings for this node by selecting this option and configuring the same. For more information, refer to the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article.
 
 3. **Analytics-Containment Type:** Select one of the below options to determine how to treat user-abandoned conversations.
     1. **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
     2. **Customize for this node:** You can customize the Containment Type for this node by selecting this option. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
 
-3. Under the **Custom Tags** section, add tags to build custom profiles of your bot conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
+3. Under the **Custom Tags** section, add tags to build custom profiles of your app conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
 
 ### IVR Properties

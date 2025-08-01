@@ -52,7 +52,7 @@ To configure the Component Properties tab, please follow the steps below:
 
     <img src="../images/service-node-img3-define-request-dialog.png" alt="Service node - Define request dialog" title="Service node - Define request dialog" style="border:1px solid gray;zoom:70%;">
 
-7. Click the **Auth** tab to create a new Authorization Profile or select an existing profile. For more information, see the [Bot Authorization Overview](../../../../../app-settings/dev-tools/bot-authorization/bot-authentication/) article.
+7. Click the **Auth** tab to create a new Authorization Profile or select an existing profile. For more information, see the [Authorization Overview](../../../../../app-settings/dev-tools/bot-authorization/bot-authentication/) article.
 
 8. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
 
@@ -92,7 +92,7 @@ To configure the Component Properties tab, please follow the steps below:
         For more information, see [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}.  
        <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"> 
 
-11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
 !!! Note
 
@@ -142,22 +142,22 @@ The steps to configure a Post-processor Script are the same as the Pre-processor
 
     The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
 
-Use the Instance Properties to set user tags, timeout duration, and bot behavior for timeouts and service call failures.
+Use the Instance Properties to set user tags, timeout duration, and app behavior for timeouts and service call failures.
 
 1. On the Service node properties panel, click the **Instance Properties** tab.
     <img src="../images/service-node-img5-timeout-error-handling2.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;">
-2. In the **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls. Also, decide how the bot can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:
+2. In the **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls. Also, decide how the AI Agent can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:
     * **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **60 Seconds**. The default value is 20 Seconds.
-    * **Timeout Error Handling**: Choose how the bot should respond when the timeout occurs.
+    * **Timeout Error Handling**: Choose how the AI Agent should respond when the timeout occurs.
         * **Close the Task and trigger Task Execution Failure Event** (default), or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
-    *  **Service Call Failure Handling**: Choose how the bot should respond when the service call failure occurs. 
+    *  **Service Call Failure Handling**: Choose how the AI Agent should respond when the service call failure occurs. 
         * **Close the Task and trigger Task Execution Failure Event** (default), or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.   
 
       
 
-3. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+3. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
 
 
@@ -237,7 +237,7 @@ You can define the Service Type as:
     3. In the **Headers** tab, specify the headers as key/value pairs if required to access the specified request URL.  Authentication headers are auto-generated based on the authorization type specified on the **Auth** tab. You need to define any other standard headers. For example, Content-type, Accept, or any custom headers. Headers defined here are only applicable to this service node.
     4. In the **Body** tab, select the body content type. You can select:
         * **application/x-www-form-urlencoded** – Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
-        * **application/json** – Use JSON to transmit data between the Kore.ai servers and your VA’s web application. Any JSON is sent with the request without any processing.
+        * **application/json** – Use JSON to transmit data between the Kore.ai servers and your AI Agent’s web application. Any JSON is sent with the request without any processing.
         * **application/xml** – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     
     5. In the **Test Request** tab, click **Test** to optionally send your API request URL using the specified Auth type, HTTP headers, and body parameters, if defined. The response is displayed in the text area. Click **Save as Sample Response** to save the test response as the sample response for this node.
@@ -418,7 +418,7 @@ To set up an alert subscription service, follow the below steps:
     
         To create an alert subscription service, you must base it on an existing alert task. Users are auto-subscribed to the alert task on reaching the associated service node in the dialog.
 
-4. On the Smart/Automatic Alerts dialog box, select an alert task from the **Choose Alert** drop-down list. The list consists of only the published alert tasks related to your VA.
+4. On the Smart/Automatic Alerts dialog box, select an alert task from the **Choose Alert** drop-down list. The list consists of only the published alert tasks related to your AI Agent.
 5. Enter the necessary information as explained below.
 
 
@@ -469,7 +469,7 @@ Define the expected behavior of this alert if an upgraded version of the underly
 
         !!! Note
         
-            Your VA should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../../administration/data/data-table/#assignments){:target="_blank"}.
+            Your AI Agent should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../../administration/data/data-table/#assignments){:target="_blank"}.
 
 2. In the **Request Definition** section, click **Define Request** to specify the operation you want to perform. [Click here for details.](../../../../../administration/data/data-as-service){:target="_blank"}
 

@@ -2,7 +2,7 @@
 
 The **Confirmation Node** allows you to prompt the user for a _Yes_ or _No_ answer.  It helps when you want to verify information or allow the user to make a choice.
 
-For example, in the _Book Flight Bot,_ you can use a confirmation node to prompt the user to respond if they would like to know the weather forecast at the destination.
+For example, in the _Book Flight App,_ you can use a confirmation node to prompt the user to respond if they would like to know the weather forecast at the destination.
 
 The confirmation node’s conditional transitions go beyond the _If-Else_ expressions. The transition depends on user reply: assertion (yes) or negation (no). The _Else_ condition comes into play if their answer isn’t both.
 
@@ -47,7 +47,7 @@ To configure the component properties, follow the below steps:
 
         In both cases, “&lt;” means the start of the sentence and “>” means the end of the sentence.  Many of these words are only treated as a _yes_ or _no_ if they appear at the start or the end of an utterance, not in the middle.
 
-3. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite VA replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
+3. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
 <img src="../images/re-responses.png" alt="Rephrase Responses" title="Rephrase Responses" style="border:1px solid gray;zoom:70%;"> 
 
 
@@ -100,18 +100,18 @@ After detecting these additional synonyms, the **Confirmation** node extracts �
     
         The settings in the **Instance Properties** tab are specific to the current task and do not reflect in other dialog tasks that use this node
     
-    1. **Use the task level ‘Interruptions Behavior’ setting**: The VA refers to the Interruptions Behavior settings set at the dialog task level.
+    1. **Use the task level ‘Interruptions Behavior’ setting**: The AI Agent refers to the Interruptions Behavior settings set at the dialog task level.
     2. **Customize for this node option:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it. For more information refer to the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article.
     
 3. **Analytics-Containment Type:** Select one of the below options to determine how to treat user-abandoned conversations.
     1. **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
     2. **Customize for this node:** You can customize the Containment Type for this node by selecting this option. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
 
-3. Under the **Precedence** section, when the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between _Intent over Entity_ or _Entity over Intent_ options. For example, if a _Flight Booking_ assistant prompts for the destination and the user enters, _Bangalore, how’s the weather there?_ you can define how the bot responds in such cases; pick the entity and add the intent to the follow-up intents stack or go ahead with the intent first based upon the **Interruptions Behavior** settings.
+3. Under the **Precedence** section, when the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between _Intent over Entity_ or _Entity over Intent_ options. For example, if a _Flight Booking_ assistant prompts for the destination and the user enters, _Bangalore, how’s the weather there?_ you can define how the AI Agent responds in such cases; pick the entity and add the intent to the follow-up intents stack or go ahead with the intent first based upon the **Interruptions Behavior** settings.
     
     <img src="../images/confirmation-node-img6-precedence.png" alt="Confirmaiton node - Precedence" title="Confirmaiton node - Precedence" style="border:1px solid gray;zoom:70%;">
 
-4. Under the **Custom Tags** section, add tags to build custom profiles of your VA conversations. [Learn more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+4. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent conversations. [Learn more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
     
     <img src="../images/confirmation-node-img7-custom-tags.png" alt="Confirmation node - Custom tags" title="Confirmation node - Custom tags" style="border:1px solid gray;zoom:70%;">
 
