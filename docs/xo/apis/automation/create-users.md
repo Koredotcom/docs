@@ -102,22 +102,22 @@ curl -X POST \
                 "country":"country"
             },
             "groups": [
-                "e-06b41cdd-7678-5394-b958-40ca5662f502"
+                "e-06b41cdd-7678-5394-b958-40ca5662xxxx"
             ],
             "roles": [
                 {
-                    "roleId": "5d9d8db30d54920a8df1e68b",
-                    "botId": "st-b8525f88-6dd3-54a7-8a97-734ecb748733"
+                    "roleId": "5d9d8db30d54920a8df1xxxx",
+                    "botId": "st-b8525f88-6dd3-54a7-8a97-734ecb74xxxx"
                 },
                 {
-                    "roleId": "5d9d920dabdc1e6e8ec99342",
-                    "botId": "st-16511425-15c5-5cdf-b652-a796db7d134b"
+                    "roleId": "5d9d920dabdc1e6e8ec9xxxx",
+                    "botId": "st-16511425-15c5-5cdf-b652-a796db7dxxxx"
                 },
                 {
-                    "roleId": "5bbcb20c8bfd33db440ec1d1"
+                    "roleId": "5bbcb20c8bfd33db440exxxx"
                 },
                 {
-                    "roleId": "5d9d8d930d54920a8df1e689"
+                    "roleId": "5d9d8d930d54920a8df1xxxx"
                 }         
             ],
             "assignBotTasks": [
