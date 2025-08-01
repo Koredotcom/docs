@@ -73,7 +73,7 @@ During testing of the VA, the matched entities are displayed. The entities from 
 * first NER and pattern entities 
 * then the remaining entities.
 
-Post v. 8.0 of the XO Platform, the details of how the entity is matched, and with what confidence scores are also displayed. The details include:
+Post v. 8.0 of the Platform, the details of how the entity is matched, and with what confidence scores are also displayed. The details include:
 
 * **Identification Engine** – Machine Learning, Fundamental Meaning or Knowledge Graph;
 * **Training Type** – match can be from NER, pattern training, entity name, system concept, etc.. In case of pattern match, click the row to get the details for the same;
@@ -88,7 +88,7 @@ When you test a user utterance, in addition to the matching intents you will als
 
 Under the _Fundamental Meaning_ tab, you can see the scores of all the intents even if they aren’t shortlisted.
 
-As mentioned above, the Kore.ai NLP engine uses Machine Learning, Fundamental Meaning, and Knowledge Graph (if any) models to match intents. If the NLP engine finds a single _Definitive Match_ through one of the underlying models, you will see the task as the matching intent. If the test identifies more than one definitive match, you will receive them as options to pick the right intent.
+As mentioned above, the NLP engine uses Machine Learning, Fundamental Meaning, and Knowledge Graph (if any) models to match intents. If the NLP engine finds a single _Definitive Match_ through one of the underlying models, you will see the task as the matching intent. If the test identifies more than one definitive match, you will receive them as options to pick the right intent.
 
 If the models shortlist more than one possible match, all the shortlisted intents are re-scored by the _Ranking and Resolver_ using the _Fundamental Meaning_ model to determine the final winner.
 

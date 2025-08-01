@@ -302,7 +302,7 @@ nav:
           - Conversation Testing - NLP: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
-      - Manage Assistant:
+      - Manage App:
         - Team Collaboration: manage-assistant/collaborative-development.md
         - Feedback Survey: manage-assistant/feedbacksurvey.md
       - Dynamic Routing: automation/dynamic-routing.md     
@@ -548,7 +548,7 @@ nav:
         - Supported Languages: agentai/agent-experience/supported-languages.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
-      - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
+      - App Override and Automation: agentai/agent-experience/bot-override-and-automation.md
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
       - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
@@ -729,7 +729,7 @@ nav:
           - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
           - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md                
   - Analytics:
-    - Analyzing Your Bot: analytics/introduction.md
+    - Analyzing Your App: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md
     - Overview:
       - Summary Dashboard: analytics/overview/summary-dashboard.md
@@ -810,7 +810,7 @@ nav:
         - Manage Groups: administration/user-management/managing-your-groups.md
         - Manage Roles: administration/user-management/role-management.md
       - Data Tables And Views: administration/data/manage-data-tables-and-views-in-admin-console.md
-      - Assistant Management: administration/bot-management.md
+      - App Management: administration/bot-management.md
       - Enrollment:
         - Invite Users: administration/enrollment/enrolling-a-new-user.md
         - Send Bulk Invites: administration/enrollment/enrolling-many-users.md
