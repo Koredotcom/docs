@@ -62,5 +62,4 @@ If there is an error during the upgrade, the system stops the upgrade and lets y
  **Related Links**
 
 * [What's New in XO v11](./whats-new-in-xo-platform.md)
-* [Current Limitations](../release-notes/current-limitations.md)
 * [Key Differences Between XO v11 and v10](../getting-started/key-differences-between-xo11-and-xo10.md)
