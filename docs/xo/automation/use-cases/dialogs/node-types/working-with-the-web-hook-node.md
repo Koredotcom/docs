@@ -5,7 +5,7 @@ You can use the WebHook node to subscribe to a message and to WebHook events tha
 
 ## Create and Register an App
 
-To get access to WebHook events using WebHook nodes in your dialog task, you need to [subscribe and configure an app](https://docsinternal-kore.github.io/docs/xo/sdk/sdk-configuration/){:target="_blank"}.
+To get access to WebHook events using WebHook nodes in your dialog task, you need to [subscribe and configure an app](../../../../sdk/sdk-configuration.md){:target="_blank"}.
 
 
 ## Add the Node
