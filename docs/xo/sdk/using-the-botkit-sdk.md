@@ -1,4 +1,4 @@
-# **Using the BotKit SDK**
+# Using the BotKit SDK
 
 The Platform BotKit SDK is a set of libraries that enable interaction control between users and the bots you build on the Platform.
 
