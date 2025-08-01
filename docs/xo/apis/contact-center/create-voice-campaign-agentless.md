@@ -97,26 +97,24 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign?c
 
 ## Body Parameters
 
-| **Header**                                       | **Description**                                                  | **Type**              |
-|--------------------------------------------------|------------------------------------------------------------------|-----------------------|
-| `name`                                           | Name of the campaign.                                            | string, required      |
-| `description`                                    | Description of the campaign.                                     | string, optional      |
-| `contactLists`                                   | List of contact list names to use.                               | array of strings, required |
-| `priority`                                       | Campaign priority (for example, `"5"`).                          | string, required      |
-| `dialingMode`                                    | Must be set to `Agentless`.           | string, required      |
-| `dialingStrategy`                                | Strategy details for dialing (caller ID, hours, retry, ring time).| object, required      |
-| `dialingStrategy.callerId.phoneNumber`           | Outgoing caller ID number.                                       | object, required      |
-| `dialingStrategy.callingHours`                   | Weekly schedule with time zone and allowed calling windows.      | object, required      |
-| `dialingStrategy.dialingOrder`                   | Order of record processing (for example, `FIFO`).                | string, required      |
-| `dialingStrategy.maxAttemptsPerRecord`           | Max number of call attempts per contact.                         | number, required      |
-| `dialingStrategy.defaultRetryPeriod`             | Retry interval (in minutes).                                     | number, required      |
-| `dialingStrategy.maxRingTime`                    | Max ring duration per attempt (in seconds).                      | number, required      |
-| `schedule`                                       | Indicates if scheduled execution is enabled.                     | object, required      |
-| `schedule.isSchedulingEnabled`                   | Set to `false` to start immediately without scheduling.          | boolean, required     |
-| `queue_name`                                     | The queue to which answered calls are routed.                    | string, required      |
-| `enableMachineDetect`                            | Whether to enable machine detection.                             | boolean, optional     |
-| `maxSkips`                                       | Max number of record skips allowed per agent.                    | number, optional      |
-| `campaignType`                                   | Must be `"voice"`.                                               | string, required      |
+| **Parameter**                              | **Description**                                                                                                                                                                                                                              | **Type**                  |
+|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| `name`                                     | Name of the campaign. Used to identify it in the Kore.ai platform. The name must be a maximum of 48 characters.                                                                                                                         | string, required      |
+| `description`                              | Description of the campaign's purpose. Helpful for internal context. The description must be a maximum of 256 characters.                                                                                                               | string, required      |
+| `contactLists`                             | List of contact list names (must be created beforehand in Kore.ai).                                                                                                                                                                     | array[string], required |
+| `priority`                                 | Campaign priority. Higher values indicate higher execution priority. Priority must be one of the following: 1, 2, 3, 4, or 5.                                                                                                            | string, required      |
+| `dialingMode`                              | Dialing mode defines how calls are handled. Valid values are: Agentless, Progressive, or Preview.                                                                                                                                        | string, required      |
+| `dialingStrategy.callerId.phoneNumber`     | Phone number shown as the caller ID to the recipient.                                                                                                                                                                                    | string, required      |
+| `dialingStrategy.callingHours.frequency`   | Frequency of calling hours. Must be one of: WEEKLY, DAILY, or CUSTOM.                                                                                                                                                                   | string, required      |
+| `dialingStrategy.callingHours.timezone`    | Timezone used for enforcing calling windows.                                                                                                                                                           | string, required      |
+| `dialingStrategy.callingHours.days`        | List of allowed calling time blocks. Each object should include: day (MO, TU, WE, TH, FR, SA, SU), start (for example, 9:00 AM), and end (for example, 6:00 PM). You can define multiple entries for different days and time slots.                   | array[object], required |
+| `dialingStrategy.dialingOrder`             | Order of dialing, such as First In First Out (FIFO) or Last In First Out (LIFO).                                                                                                                                                                                                  | string, required      |
+| `dialingStrategy.maxAttemptsPerRecord`     | Maximum number of call attempts per contact. Must be between 1 and 100.                                                                                                                                                                 | number, required      |
+| `dialingStrategy.defaultRetryPeriod`       | Time in minutes to wait between retries. Must be between 1 and 1440.                                                                                                                                                                    | number, required      |
+| `dialingStrategy.maxRingTime`              | Maximum ring duration in seconds before disconnecting. Must be between 5 and 120.                                                                                                                                                       | number, required      |
+| `experienceFlowName`                       | Name of the voice flow (bot or IVR) used to interact with the user.                                                                                                                                                                     | string, required      |
+| `enableMachineDetect`                      | Enables detection of answering machines or voicemails. Valid values: true or false.                                                                                                                                                     | boolean, required     |
+| `campaignType`                             | Type of campaign. Must be either voice or sms.                                                                                                                                                                                           | string, required      |
 
 ## Sample Response
 

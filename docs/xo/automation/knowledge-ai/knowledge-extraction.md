@@ -19,17 +19,17 @@ To move data using the Knowledge Extraction service to the Knowledge Graph, foll
     </div>
 
 <ol start="2"><li><b>Editing</b>: Upon successful data extraction, you can edit the questions and answer text before moving it to the Knowledge Graph.</li>
-<li><b>Moving</b>: You can add data to a VA before or after creating a Knowledge Graph (KG). If you try to add the extracted content to a KG before it exists, the VA automatically creates a KG with the VA’s name.</li></ol>
+<li><b>Moving</b>: You can add data to an AI Agent before or after creating a Knowledge Graph (KG). If you try to add the extracted content to a KG before it exists, the AI Agent automatically creates a KG with the App’s name.</li></ol>
 
 The Knowledge Extractor allows you to add the extracted content to the Knowledge Graph as follows:
 
-* **Add to Knowledge Graph** moves the selected questions to the root node of the Knowledge Graph. You can use this option when the required term is not yet added to the KG or when the VA does not have a Knowledge Graph.
-* **Add to Specific Term**: If the VA already consists of a Knowledge Graph, you drag-drop the selected content to the required nodes.
+* **Add to Knowledge Graph** moves the selected questions to the root node of the Knowledge Graph. You can use this option when the required term is not yet added to the KG or when the AI Agent does not have a Knowledge Graph.
+* **Add to Specific Term**: If the AI Agent already consists of a Knowledge Graph, you drag-drop the selected content to the required nodes.
 
 ## Extract from a Website
 
-1. Open the VA to which you want to extract the content.
-2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+1. Open the App to which you want to extract the content.
+2. Go to **Automation AI** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
 4. Click **Extract from URL**.
 5. Enter a **Name** for the extraction.
 6. Enter the **URL** of the page, and then click **Proceed**.
@@ -46,8 +46,8 @@ The Knowledge Extractor allows you to add the extracted content to the Knowledge
 
 To extract content from a file, please follow the steps below. For file format details, refer to the [Supported Formats](#supported-formats-and-requirements).
 
-1. Open the VA to which you want to extract the content.
-2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+1. Open the App to which you want to extract the content.
+2. Go to **Automation** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
 4. Click **Extract from file**.
 5. Click **Browse** to locate the file (PDF or CSV).
 
@@ -103,8 +103,8 @@ You might have all the FAQs related to your business in a PDF file but not in th
 
 ### Edit the Extracted Content
 
-1. Open the VA.
-2. Got to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+1. Open the App.
+2. Got to **Automation AI** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
 4. The **Manage Extracts** section displays the list of all extractions.
 
 
@@ -124,8 +124,8 @@ There are two ways to add the extracted content to the Knowledge Graph.
 
 To add the content from the **Extracts** section, follow the steps below:
 
-1. Open the VA.
-2. Got to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+1. Open the App.
+2. Got to **Automation AI** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
 4. From the **Manage Extracts** section, select the name of a successful extract you want to add.
 5. Drag and drop the required Q&A to the node/term you want to add. As you drag and drop, the child nodes will be expanded.
 6. You can select multiple Q&As and perform a bulk move.
@@ -134,7 +134,7 @@ To add the content from the **Extracts** section, follow the steps below:
 
 To add the content from the KG, follow the steps below:
 
-1. Open the VA.
+1. Open the App.
 2. Select the **Build** top menu item.
 3. From the left pane, click **Conversational Skills** > **Knowledge Graph**.
 4. Select the node you want to add these Question-Answers.

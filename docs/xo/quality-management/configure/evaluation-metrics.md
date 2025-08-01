@@ -1,13 +1,13 @@
 # Evaluation Metrics
 
-This feature is a key component of the Quality AI module, enabling supervisors to define, customize, and monitor performance indicators that measure the quality of agent-customer interactions. This comprehensive system supports six distinct measurement types, each designed for specific evaluation needs through a combination of advanced AI-driven analysis and traditional rule-based methods. 
+This feature is a key component of the Quality AI module. It enabling supervisors to define, customize, and monitor performance indicators that measure the quality of agent-customer interactions. This supports multiple measurement types, each designed for specific evaluation needs through a combination of advanced AI-driven analysis and traditional rule-based methods. 
 
-Users can build and manage custom evaluation criteria using these measurement types within the **Evaluation Forms** section. Among the options is a GenAI-powered adherence metric, which streamlines setup by minimizing the need for large training datasets. This approach improves scalability across multiple languages and diverse agent interactions.
+Within Evaluation Forms, you can create and manage custom evaluation criteria using these different measurement types. The GenAI-powered adherence metric simplifies setup by reducing the need for large training datasets. This improves scalability while ensuring consistent quality and compliance across multiple languages and diverse agent interactions.
 
 ## Access Evaluation Metrics
 
-Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.   
-<img src="../evaluation-criteria/evaluation-metrics/metrics measurement types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.    
+<img src="../evaluation-criteria/metrics-measurement-types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 ## Key Benefits
 
@@ -49,7 +49,7 @@ Steps to create new evaluation metrics:
 2. Click the **+ New Evaluation Metric** displayed in the upper-right corner.    
 <img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
-3. Configure the metrics based on your measurement type requirements.    
+3. Configure any one of the measurement type metrics.    
 <img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
 ">
 
@@ -61,8 +61,7 @@ Steps to create new evaluation metrics:
 
 * **Evaluation Questions**: Supervisory reference prompts.
 
-* **Adherence Types**: Static (universal) vs. Dynamic (trigger-based)
-Detection Methods Comparison.
+* **Adherence Types**: Static (universal) vs. Dynamic (trigger-based) detection methods comparison.
 
 ### Detection Methods Comparison
 
@@ -72,147 +71,147 @@ The following six measurement types are:
 
 1. **By Question - Conversation Content Evaluation**
 
-**Purpose**: Evaluate adherence to specific questions asked or answered during interactions.
+    **Purpose**: Evaluate adherence to specific questions asked or answered during interactions.
 
-**Key Capabilities**:
+    **Key Capabilities**:
 
-* **Static Adherence**: Universal application across all conversations.
+    * **Static Adherence**: Universal application across all conversations.
 
-* **Dynamic Adherence**: Trigger-based conditional evaluation.
+    * **Dynamic Adherence**: Trigger-based conditional evaluation.
 
-* **GenAI Detection**: Contextual understanding without training samples.
+    * **GenAI Detection**: Contextual understanding without training samples.
 
-* **Deterministic Detection**: Semantic similarity matching with predefined utterances.
+    * **Deterministic Detection**: Semantic similarity matching with predefined utterances.
 
-* **Flexible Thresholds**: 60% for greetings, 100% for compliance-critical statements.
+    * **Flexible Thresholds**: 60% for greetings, 100% for compliance-critical statements.
 
-* **GenAI Adherence**: Leverage GenAI for flexible language interpretation.
+    * **GenAI Adherence**: Leverage GenAI for flexible language interpretation.
 
-**Used For**: Script adherence, greeting compliance, policy verification, and response quality assessment.
+    **Used For**: Script adherence, greeting compliance, policy verification, and response quality assessment.
 
-For the detailed configuration, see [By Question](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-question.md).
+    For the detailed configuration, see [By Question](../configure/evaluation-criteria/metrics-measurement-types/by-question.md).
 
 1. **By Speech - Audio Quality Analysis**
 
-**Purpose**: Analyze speech characteristics and audio quality metrics during voice interactions.
+    **Purpose**: Analyze speech characteristics and audio quality metrics during voice interactions.
 
-**Available Metrics**:
+    **Available Metrics**:
 
-* **Cross Talk**: Monitors simultaneous speaking instances.
+    * **Cross Talk**: Monitors simultaneous speaking instances.
 
-    * Fully customizable thresholds and duration limits.
+        * Fully customizable thresholds and duration limits.
 
-* **Dead Air**: Track and reduce unproductive silence periods during calls.
+    * **Dead Air**: Track and reduce unproductive silence periods during calls.
 
-    * Configurable thresholds (30-300 seconds).
+        * Configurable thresholds (30-300 seconds).
 
-* **Speaking Rate**: Monitor trends in speech pace to flag potential coaching opportunities.
+    * **Speaking Rate**: Monitor trends in speech pace to flag potential coaching opportunities.
 
-    * Measures words per minute (WPM) against expected benchmarks.
+        * Measures words per minute (WPM) against expected benchmarks.
 
-    **Used For**: Voice interaction quality, conversation flow analysis, and speaking pace optimization.
+        **Used For**: Voice interaction quality, conversation flow analysis, and speaking pace optimization.
 
-For the detailed configuration, see see [By Speech](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-speech.md).
+    For the detailed configuration, see [By Speech](../configure/evaluation-criteria/metrics-measurement-types/by-speech.txt).
 
 1. **By Value - Data Accuracy Verification**
 
-**Purpose**: Verify agent-shared customer-specific information against trusted data sources.
+    **Purpose**: Verify agent-shared customer-specific information against trusted data sources.
 
-**Core Features**:
+    **Core Features**:
 
-* **API Integration**: Real-time verification with CRM and external systems.
+    * **API Integration**: Real-time verification with CRM and external systems.
 
-* **Business Rules Engine**: Five rule types, including first or last value, negotiated value, and strict matching.
+    * **Business Rules Engine**: Five rule types, including first or last value, negotiated value, and strict matching.
 
-* **Compliance Tracking**: Automated deviation detection for regulatory requirements.
+    * **Compliance Tracking**: Automated deviation detection for regulatory requirements.
 
-* **Audit Trails**: Detailed documentation for supervisory review.
+    * **Audit Trails**: Detailed documentation for supervisory review.
 
-**Business Rule Options**:
+    **Business Rule Options**:
 
-* First Value Mentioned by Agent
+    * First Value Mentioned by Agent
 
-* Last Value Mentioned by Agent
+    * Last Value Mentioned by Agent
 
-* Negotiated Value Mentioned by Agent
+    * Negotiated Value Mentioned by Agent
 
-* Strict Source System Value
+    * Strict Source System Value
 
-* Custom Business Rule
+    * Custom Business Rule
 
-**Used For**: Pricing accuracy, interest rate verification, account balance confirmation, and compliance validation.
+    **Used For**: Pricing accuracy, interest rate verification, account balance confirmation, and compliance validation.
 
-For the detailed configuration, see [By Value](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-value.md).
+    For the detailed configuration, see [By Value](../configure/evaluation-criteria/metrics-measurement-types/by-value.md).
 
-1. **By Dialog Execution - Task Completion Assessment**
+1. **By Dialog Task - Task Completion Assessment**
 
-**Purpose**: Evaluate completion and quality of specific dialog tasks and workflows.
+    **Purpose**: Evaluate completion and quality of specific dialog tasks and workflows.
 
-**Configuration Options**:
+    **Configuration Options**:
 
-* **Dialog Agent Selection**: Choose from available dialog agents.
+    * **Dialog Agent Selection**: Choose from available dialog agents.
 
-* **Evaluation Scope**: Entire conversation or time-bound assessment.
+    * **Evaluation Scope**: Entire conversation or time-bound assessment.
 
-* **Time Parameters**: Configurable seconds (voice) or messages (chat).
+    * **Time Parameters**: Configurable seconds (voice) or messages (chat).
 
-**Used For**: Workflow adherence, task completion verification, and dialog flow optimization.
+    **Used For**: Workflow adherence, task completion verification, and dialog flow optimization.
 
-For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-diaolog-execution.md).
+    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-execution.txt).
 
 1. **By Playbook Adherence - Process Compliance Evaluation**
 
-**Purpose**: Assess compliance with predefined agent playbooks and procedures.
+    **Purpose**: Assess compliance with predefined agent playbooks and procedures.
 
-**Adherence Types**:
+    **Adherence Types**:
 
-* **Entire Playbook**: Comprehensive adherence across all playbook elements.
+    * **Entire Playbook**: Comprehensive adherence across all playbook elements.
 
-* **Specific Steps**: Targeted evaluation of particular stages and steps.
+    * **Specific Steps**: Targeted evaluation of particular stages and steps.
 
-* **Percentage Thresholds**: Configurable minimum adherence requirements.
+    * **Percentage Thresholds**: Configurable minimum adherence requirements.
 
-**Configuration Elements**:
+    **Configuration Elements**:
 
-* Playbook selection from the dropdown
+    * Playbook selection from the dropdown
 
-* Stage and step specification
+    * Stage and step specification
 
-* Adherence percentage thresholds
+    * Adherence percentage thresholds
 
-* Failure criteria definition
+    * Failure criteria definition
 
-**Used For**: Process compliance, procedure adherence, and standardization enforcement.
+    **Used For**: Process compliance, procedure adherence, and standardization enforcement.
 
-For the detailed configuration, see [By Playbook Adherence](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-playbook-adherence.md).
+    For the detailed configuration, see [By Playbook Adherence](../configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md).
 
-* **By AI Agent - Advanced Reasoning Evaluation**
+1. **By AI Agent - Advanced Reasoning Evaluation**
 
-**Purpose**: Enables sophisticated evaluations using AI agents capable of multi-step reasoning and autonomous decision-making.
+    **Purpose**: Enables sophisticated evaluations using AI agents capable of multi-step reasoning and autonomous decision-making.
 
-**When to Use**:
+    **When to Use**:
 
-* **Complex Analysis**: Multi-step reasoning connecting conversation elements.
+    * **Complex Analysis**: Multi-step reasoning connecting conversation elements.
 
-* **Domain Expertise**: Specialized knowledge requirements (compliance, technical support).
+    * **Domain Expertise**: Specialized knowledge requirements (compliance, technical support).
 
-* **Contextual Understanding**: Nuanced evaluation requiring full conversation context.
+    * **Contextual Understanding**: Nuanced evaluation requiring full conversation context.
 
-* **Advanced Decision-Making**: Sophisticated judgment calls beyond pattern matching.
+    * **Advanced Decision-Making**: Sophisticated judgment calls beyond pattern matching.
 
-**Key Differentiators**:
+    **Key Differentiators**:
 
-* High complexity handling vs. basic pattern matching
+    * High complexity handling vs. basic pattern matching
 
-* Autonomous decision-making with custom logic
+    * Autonomous decision-making with custom logic
 
-* Comprehensive contextual analysis
+    * Comprehensive contextual analysis
 
-* External AI agent integration is required
+    * External AI agent integration is required
 
-**Used For**: Complex compliance assessments, technical troubleshooting evaluation, and sophisticated quality analysis.
+    **Used For**: Complex compliance assessments, technical troubleshooting evaluation, and sophisticated quality analysis.
 
-For the detailed configuration, see see [By AI Agent](../configure/evaluation-criteria/evaluation-metrics/metrics%20measurement%20types/by-ai-agent.md).
+    For the detailed configuration, see [By AI Agent](../configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md).
 
 ## Managing Evaluation Metrics
 

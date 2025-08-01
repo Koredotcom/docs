@@ -8,7 +8,7 @@ For details on what Digital Views are and how it is implemented on the XO Platfo
 
 ## Illustration with an Example
 
-Consider a Banking Bot trying to address the following scenarios:
+Consider a Banking App trying to address the following scenarios:
 
 <video src="../../images/bank-bot.mp4" controls="controls" style="max-width: 730px;">
     </video>
@@ -17,8 +17,8 @@ This document gives a detailed step-by-step approach to achieving all the above-
 
 ## Prerequisites
 
-* Bot building knowledge
-* A [Banking Bot](../../../../how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant){:target="_blank"} with a **Get Balance** dialog as mentioned below.
+* App building knowledge
+* A [Banking App](../../../../how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant){:target="_blank"} with a **Get Balance** dialog as mentioned below.
 * [Get Balance](../../../../how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/){:target="_blank"} – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
     
     <img src="../../images/get-balance-dialog-task.png" alt="get balance" title="get balance" style="border: 1px solid gray; zoom:75%;">
@@ -65,7 +65,7 @@ We will be creating two Widgets to trigger a Dialog Task.
 
 First, let us see how to configure a Widget to display balance from the current account of the user with the steps below:
 
-1. Navigate to **Virtual Assistant > Automation AI > Digital Skills > Digital Views**.
+1. Navigate to **Automation AI > Digital Skills > Digital Views**.
 2. Click the **Create Widget** button.
 3. Give a Widget Name and a Display Name.
 4. Set the **Source**, we are triggering Dialog Task, hence select _Dialog Task_.
@@ -164,7 +164,7 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
 
 ## Publish
 
-To publish the Bot first enable channels:
+To publish the App first enable channels:
 
 1. From left navigation menu, select **Channel** for publishing. For our use case we will select both Web/Mobile Client and Widget SDK channels.
 2. Select the channels and from **Configurations** tab, make a note of the **Bot Name**, **Bot Id**, **Client Id** and **Client Secret**.

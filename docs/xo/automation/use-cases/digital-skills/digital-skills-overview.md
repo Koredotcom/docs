@@ -1,6 +1,6 @@
 # Digital Skills
 
- Improving the user experience is a crucial aspect of developing a virtual assistant or any digital application. Digital skills are essential for efficiently handling and presenting information to users in a user-friendly and visually appealing manner.
+ Improving the user experience is a crucial aspect of developing a AI Agent or any digital application. Digital skills are essential for efficiently handling and presenting information to users in a user-friendly and visually appealing manner.
 
 ## What are Digital Skills?
 Digital Skills are a set of features within the XO Platform which allow you to create interactive user interfaces that can either retrieve or present information to/from the user. These interfaces take the shape of either of the following:

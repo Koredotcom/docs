@@ -32,4 +32,4 @@ Chances are the end-user might want to change their account profile like revoke 
 
 !!! note
 
-    In case your virtual assistance has _account_ related tasks, a proper training would ensure that this link is not sent to the end-user instead of the account-related task.
+    In case your AI Agent has _account_ related tasks, a proper training would ensure that this link is not sent to the end-user instead of the account-related task.

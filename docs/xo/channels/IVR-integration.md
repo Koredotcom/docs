@@ -41,8 +41,8 @@ Steps to configure IVR settings for your Virtual Assistant:
 
 1. Open the VA for which you want to integrate the IVR.
 2. Go to the **Channels & Flows** > **Channels** > **Third Party Voice** > **All**.
-3. Locate and click the **IVR** under Voice Channels. The IVR Panel with **Instructions** is displayed.
-  ![IVR panel](../images/third-party-voice.png "IVR panel")
+3. Locate and click the **IVR** under Voice Channels. The IVR Panel with **Instructions** is displayed.  
+<img src="../images/third-party-voice.png" alt="IVR panel" title="IVR panel" style="border: 1px solid gray; zoom:70%;">
 4. On the **Configurations** tab, perform the following steps:
 
     1. Use **Kore.ai IVR Sandbox** for testing your VA. See [Sandbox Configuration ](#sandbox-configuration)for more details.
@@ -51,28 +51,28 @@ Steps to configure IVR settings for your Virtual Assistant:
 
             If you save the configuration after associating  an app without enabling IVR Settings, the  platform pre-populates the required settings for Sandbox.
 
-    2. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.
-    ![associate app](../images/IVR-4.png "associate app")
+    2. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.  
+    <img src="../images/IVR-4.png" alt="associate app" title="associate app" style="border: 1px solid gray; zoom:70%;">
 
         !!! note
 
             If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
 
-    3. Use the **WebHook URL** provided in your external application.  Enter the details to complete the setup, see [Voice Call Properties: Channel Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings) for more information.
-    ![Webhook URL](../images/IVR-5.png "Webhook URL")
+    3. Use the **WebHook URL** provided in your external application.  Enter the details to complete the setup, see [Voice Call Properties: Channel Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings) for more information.  
+    <img src="../images/IVR-5.png" alt="Webhook URL" title="Webhook URL" style="border: 1px solid gray; zoom:70%;">
 
-9.  From the **Voice Call Properties** tab, set the configurations.
- ![IVR Sandbox](../images/IVR-6.png "IVR")
- ![IVR data](../images/IVR-7.png "image_tooltip")
+9.  From the **Voice Call Properties** tab, set the configurations.  
+<img src="../images/IVR-6.png" alt="IVR Sandbox" title="IVR Sandbox" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/IVR-7.png" alt="IVR data" title="IVR data" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
         If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:  
-          * Enable Transcription set to Yes.  
-          * Transcription engine source set to builtin:speech/transcribe.  
-          * IVR Data Extraction Key set to user input.  
-          * ASR Confidence Threshold Key set to userinput confidence.  
-          * ASR Threshold Confidence set to 50.
+        * Enable Transcription set to Yes.  
+        * Transcription engine source set to builtin:speech/transcribe.  
+        * IVR Data Extraction Key set to user input.  
+        * ASR Confidence Threshold Key set to userinput confidence.  
+        * ASR Threshold Confidence set to 50.
   
 10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](#configure-dialog-node-ivr-properties)).
 See [Voice Call Properties: Configuring Grammar](../automation/use-cases/dialogs/node-types/voice-call-properties.md#configuring-grammar]) for a detailed configuration for Grammar syntax.  

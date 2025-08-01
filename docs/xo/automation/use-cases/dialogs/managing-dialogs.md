@@ -1,13 +1,13 @@
 # Managing Dialogs
 
-Your bot can have many dialog tasks with related components. You can use the Dialog Editor to create, review, and edit a single dialog task for a bot. However, to better visualize and understand relationships and settings for all dialog tasks in a bot, you must use the Manage Components feature.
+Your App can have many dialog tasks with related components. You can use the Dialog Editor to create, review, and edit a single dialog task for an app. However, to better visualize and understand relationships and settings for all dialog tasks in an app, you must use the Manage Components feature.
 
 
 ## Manage Task Components
 
 To manage your dialog tasks, follow the below steps:
 
-1. Open the bot for which you want to manage the dialog task components.
+1. Open the app for which you want to manage the dialog task components.
 2. Select the **Automation** from the left menu
 3. On the **Automation** menu, click **USE CASES > Dialogs**.
 4. Click **Manage Components** on the top-right.
@@ -17,7 +17,7 @@ To manage your dialog tasks, follow the below steps:
 
 ## Dialog Components
 
-The Dialog Components window shows all the components used in any dialog task of the bot. To view or modify the settings of a component, click its name. The Properties panel of the node opens.
+The Dialog Components window shows all the components used in any dialog task of the app. To view or modify the settings of a component, click its name. The Properties panel of the node opens.
 
 <img src="../images/manage-components-img2.png" alt="Dialog Components" title="Dialog Components" style="border: 1px solid gray; zoom:60%;">
 
@@ -251,7 +251,7 @@ The following table lists the details included in the window for each component 
 
 ## Upgrade Tasks
 
-After you publish a task, the Bots Admin approves and deploys the task to make changes in the published bot. You must upgrade the bot; then publish the upgrade for Bots Admin approval and deploy it to users.
+After you publish a task, the Admin approves and deploys the task to make changes in the published app. You must upgrade the app; then publish the upgrade for Admin approval and deploy it to users.
 
 ### Upgrade Tasks
 
@@ -267,7 +267,7 @@ There are two types of upgrades for a task:
 
 ### Task Upgrade Definitions
 
-A **Version Type** is either a major or minor update. Depending on the changes of the bot task, you can specify the version type as a minor or major update for the revision number. All published tasks begin with the **Version** set to **1.0**. A major update is set with the **Version** to **2.0**, while a minor update is set with the **Version** to **1.1**.
+A **Version Type** is either a major or minor update. Depending on the changes of the app task, you can specify the version type as a minor or major update for the revision number. All published tasks begin with the **Version** set to **1.0**. A major update is set with the **Version** to **2.0**, while a minor update is set with the **Version** to **1.1**.
 
 As part of the end-user upgrade experience, you must define the messages shown to the user to describe the upgrade and other messages that describe what the upgrade will change.
 

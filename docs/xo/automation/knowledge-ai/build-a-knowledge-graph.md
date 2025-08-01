@@ -4,10 +4,10 @@ The XO Platform’s Knowledge Graph (KG) helps you turn your static FAQ text int
 
 Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. [Learn more](knowledge-graph-terminology.md).
 
-To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. To open the Knowledge Graph builder, follow the below steps:
+To generate a Knowledge Graph, you need to add FAQs to an existing or new AI Agent. To open the Knowledge Graph builder, follow the below steps:
 
-1. Log in to the XO Platform and open the VA to which you want to add the Knowledge Graph.
-2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
+1. Log in to the XO Platform and open the AI Agent to which you want to add the Knowledge Graph.
+2. Go to **Automation AI** > **Knowledge AI** > **FAQs**.
 
 
     <div class="admonition note">
@@ -22,11 +22,11 @@ To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. To
 
 ## Create the Knowledge Graph Node Structure
 
-By default, the name of the VA becomes the root node of the hierarchy and you can edit this. Create the rest of the nodes below the root node.
+By default, the name of the AI Agent becomes the root node of the hierarchy and you can edit this. Create the rest of the nodes below the root node.
 
 To create nodes, follow the below steps:
 
-1. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **Manage KG**.
+1. Go to **Automation AI** > **Knowledge AI** > **FAQs** > **Manage KG**.
 2. On the top left of the Knowledge Graph window, hover over the root node.
 3. Click the **+** icon. A text box appears below to **Add Node**. For better performance, there is a restriction of 50k FAQs spread across 20k maximum allowed number of nodes.
 4. Type the name of the node in the text box and press **Enter**. A warning would be displayed in case you enter a duplicate node name, i.e. if a child node with the same name already exists under the parent node.
@@ -64,7 +64,7 @@ Using this option, you can add relevant question-answer sets to the nodes in the
 
 To leverage the capabilities of the Knowledge Graph and dialog tasks, and handle FAQs that involve complex conversations, you must link a dialog task to a Knowledge Graph Intent 
 
-1. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **Manage KG** > **Add Intent** select **Task**.
+1. Go to **Automation AI** > **Knowledge AI** > **FAQs** > **Manage KG** > **Add Intent** select **Task**.
 2. Optionally, enter a **Display Name.** This name will be used for presenting the FAQ to the end-users in case of ambiguity.
 3. Select a task from the drop-down list. You can **Add Utterance** that triggers this task.
 4. If multiple utterances mean the same, **Add Alternate Utterance**.
@@ -79,7 +79,7 @@ You can improve the performance of your Knowledge Graph by adding tags, synonyms
 
 ### Manage Variable Namespaces
 
-**Manage Variable Namespaces** section (introduced in v8.0) allows you to associate the Variable Namespaces to use with this Knowledge Graph. This option is visible only when the Variable Namespace is enabled for the VA. For more information, refer to [Managing Namespace](../../app-settings/managing-namespace.md).
+**Manage Variable Namespaces** section (introduced in v8.0) allows you to associate the Variable Namespaces to use with this Knowledge Graph. This option is visible only when the Variable Namespace is enabled for the AI Agent. For more information, refer to [Managing Namespace](../../app-settings/managing-namespace.md).
 
 <img src="../images/variable-namespaces-select.png" alt="variable namespaces select" title="variable namespaces select" style="border: 1px solid gray; zoom:75%;">
 
@@ -89,7 +89,7 @@ Once created, there will be times when you want to make changes to the Knowledge
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Once you make any changes to the Knowledge Graph, make sure to click Train on the top-right to send the updates to the Knowledge Graph engine. If you do not train the VA, the changes are not reflected in its responses.</p>
+<p>Once you make any changes to the Knowledge Graph, make sure to click Train on the top-right to send the updates to the Knowledge Graph engine. If you do not train the AI Agent, the changes are not reflected in its responses.</p>
 </div>
 
 By default, intents added to a child node are visible for all its parent nodes in the path, up to the root node. 
@@ -139,7 +139,7 @@ To delete a term, follow the steps below:
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p><ul><li>If your VA is already published, you must train it  for the deletions to be effective.</li>
+    <p><ul><li>If your AI Agent is already published, you must train it  for the deletions to be effective.</li>
     <li>If you have deleted the first level term you can selectively train to remove the related terms from the published copy.</li>
     <li>If you have deleted, say, the nth level child term, then you need to select the entire parent term for training.</li></ul></p>
     </div> 
@@ -169,7 +169,7 @@ The Knowledge Graph engine works well with the default settings, but you can fin
     * **Minimum and Definitive Level for Knowledge Tasks** – Define minimum and definitive threshold to identify and respond in case of a knowledge task.
     * **KG Suggestions Count** – Define the maximum number of KG/FAQ suggestions to present when a definite KG intent match is unavailable.
     * **The proximity of Suggested Matches** – Define the maximum difference to allow between top-scoring and immediate next suggested questions to consider as equally important. 
-    * **Qualify Contextual Paths** – This ensures that the bot context is populated and retained with the terms/nodes of the matched intent. This further enhances the user experience.
+    * **Qualify Contextual Paths** – This ensures that the app context is populated and retained with the terms/nodes of the matched intent. This further enhances the user experience.
 
   
 

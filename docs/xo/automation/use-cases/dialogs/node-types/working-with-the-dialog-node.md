@@ -8,7 +8,7 @@ For example, let us consider a travel assistant that has the following three dia
 * Book a Flight,
 * Book a Hotel.
 
-While handling a user’s intention to check for Flight Availability, your Virtual Assistant can detect a new user intention to Book a Flight. When this detection occurs, the VA can switch from checking flight availability to booking a flight, by invoking the dialog task that specifically handles the Book a Flight intent.
+While handling a user’s intention to check for Flight Availability, your AI Agent can detect a new user intention to Book a Flight. When this detection occurs, the AI Agent can switch from checking flight availability to booking a flight, by invoking the dialog task that specifically handles the Book a Flight intent.
 
 
 ## Key Features
@@ -103,7 +103,7 @@ In the **Entity Post-Assignments** section, there is a list of entities availabl
 
     * This option is available only if the Transition Options is set to return to the current node on task completion.  
     * Currently, there is a limitation when using URL entity types. URL values with http as opposed to https or without the www suffix will not work. If you want to reset the values, you need to use the keyword "null", spaces would be ignored by the platform.  
-    * Many dialog transitions without user interference can lead to infinite dialog looping. To prevent such a situation, the Virtual Assistant displays the error, 'Sorry something went wrong and I cannot complete your request now,' after 25 such transitions, as shown in the following screenshot. This error is displayed when the dialog nodes are connected either in a loop or in a linear manner.
+    * Many dialog transitions without user interference can lead to infinite dialog looping. To prevent such a situation, the AI Agent displays the error, 'Sorry something went wrong and I cannot complete your request now,' after 25 such transitions, as shown in the following screenshot. This error is displayed when the dialog nodes are connected either in a loop or in a linear manner.
 
 <img src="../images/dialog-task-node-img6.png" alt="Dialog node - Instance properties" title="Dialog node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
@@ -115,10 +115,10 @@ In the **Transition Options** section, you can define the flow to be followed on
 Click **Advanced Controls** to set up the below-listed options:
 
 1. **Interruptions Behavior**
-    1. **Use the task level _Interruptions Behavior_ Setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
+    1. **Use the task level _Interruptions Behavior_ Setting**: The AI Agent refers to the **Interruptions Behavior** settings set at the dialog task level.
     2. **Customize for this node**: By configuring this option you can customize the **Interruptions Behavior** settings for this node. Read the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article for more information.
 
-2. **Custom Tags** defines tags to build custom profiles of your bot conversations. [See here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}. You can add tags for the following:
+2. **Custom Tags** defines tags to build custom profiles of your app conversations. [See here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}. You can add tags for the following:
     1. **Message –** Define custom tags to be added to the current message in the conversation.
     2. **User –** Define custom tags to be added to the user’s profile information.
     3. **Session –** Define custom tags to be added to the current conversation session.

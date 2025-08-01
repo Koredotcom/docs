@@ -40,11 +40,13 @@ curl --location 'https://{{host}}/api/1.1/public/{{IID}}/campaign/contactList/ad
 | `iid`     | The Application Id.     | required               |
 | `accountId`     | The Account Id.     | required               |
 
-## Body Parameter
+## Body Parameters
 
-| **Parameter**        | **Description**                                           | **Type**         |
-|----------------------|-----------------------------------------------------------|------------------|
-| `contact_list_name`  | Name of the contact list to which contacts must be added. | string, required |
+| **Parameter**          | **Description**                                                                                                     | **Type**               |
+|----------------------|-----------------------------------------------------------------------------------------------------------------|--------------------|
+| `contact_list_name`  | Name of the contact list to which the data is being added. It must match an existing or target list.            | string, required   |
+| `data`               | Array of contact records to be imported into the list. Each object typically represents one contact entry.      | array[object], required |
+| `data[].phoneNumber` | Phone number of the contact. Must be a valid number in international or local format depending on platform rules. | string, required   |
 
 ## Sample Response
 

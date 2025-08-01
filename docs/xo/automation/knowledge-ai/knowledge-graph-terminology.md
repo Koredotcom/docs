@@ -19,7 +19,7 @@ For easier representation, we identify node/term hierarchy using the following n
 
 ### Root Term/Node
 
-The **Root Term/Node** forms the topmost term of your Ontology. A Knowledge Graph contains only one root node, and all other nodes in the ontology become its child nodes. The *Root* node takes the name of the VA by default, but you can change it as needed. In an Ontology-based KG, this node is not used for path qualification or processing. Path qualification starts from first-level nodes. 
+The **Root Term/Node** forms the topmost term of your Ontology. A Knowledge Graph contains only one root node, and all other nodes in the ontology become its child nodes. The *Root* node takes the name of the AI Agent by default, but you can change it as needed. In an Ontology-based KG, this node is not used for path qualification or processing. Path qualification starts from first-level nodes. 
 
 For Ontology-Based graphs, it is best to organize your FAQs into a clear structure, so we don’t recommend adding them at the *Root* node. However, you can add a maximum of 100 FAQs, if required. 
 
@@ -60,7 +60,7 @@ For each term/node, you can add custom [tags](#tags). Tags work exactly like ter
 
 ## Synonyms
 
-The Knowledge Graph allows you to add [Synonyms](#synonyms) for terms to include all possible alternative forms. Adding synonyms reduces the need for training the VA with alternative questions.
+The Knowledge Graph allows you to add [Synonyms](#synonyms) for terms to include all possible alternative forms. Adding synonyms reduces the need for training the AI Agent with alternative questions.
 
 For example, the reservation node in our previously-mentioned Travel Assistant may have the following synonyms added to it: booking, order, purchase, etc. 
 
@@ -68,7 +68,7 @@ For example, the reservation node in our previously-mentioned Travel Assistant m
 
 When you add a synonym for a term or a tag in the Knowledge Graph, you can add it as a local or global synonym. Local synonyms (or **_Path Level Synonyms_**) apply to the term only in that particular path, whereas global synonyms (or **_Knowledge Graph Synonyms_**) apply to the term even if it appears on any other path in the ontology.
 
-After v. 7.2 of the XO Platform, you can also use **_Bot Synonyms_** inside the Knowledge Graph engine for path qualification and question matching. With this setting, you need not recreate the same synonyms in Bot Synonyms and KG Synonyms.
+You can also use **_Bot Synonyms_** inside the Knowledge Graph engine for path qualification and question matching. With this setting, you need not recreate the same synonyms in Bot Synonyms and KG Synonyms.
 
 ## Traits
 
@@ -84,9 +84,9 @@ A trait is applied to multiple terms across your Bot Ontology.
 
 ## Intents
 
-A VA can respond to a given question with an FAQ or the execution of a Dialog Task.
+An AI Agent can respond to a given question with an FAQ or the execution of a Dialog Task.
 
-* **FAQ**: The question-answer pairs must be added to relevant nodes in your ontology. A maximum of 50k FAQs is permissible. A question is asked differently by different users, and to support this, you must associate multiple alternate forms for each question. Preceding an alternate question with || will allow you to enter patterns for FAQs (after the v.7.2 release).
+* **FAQ**: The question-answer pairs must be added to relevant nodes in your ontology. A maximum of 50k FAQs is permissible. A question is asked differently by different users, and to support this, you must associate multiple alternate forms for each question. Preceding an alternate question with || will allow you to enter patterns for FAQs.
 
     <img src="../images/faq-intent-bot-response.png" alt="faq intent and bot response" title="faq intent and bot response" style="border: 1px solid gray; zoom:75%;">
 

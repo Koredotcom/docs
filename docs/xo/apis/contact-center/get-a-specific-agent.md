@@ -13,7 +13,7 @@ To retrieve the details of a particular agent with the given `botId` and `agent 
 
 | **PARAMETER** | **DESCRIPTION**                                                      | **TYPE**           |
 |-----------|------------------------------------------------------------------|----------------|
-| host      | Environment URL, for example, https://platform.kore.ai       | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`       | string, required |
 | IId  | The application ID. | string, required |
 
 ## Sample Request

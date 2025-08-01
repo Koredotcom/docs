@@ -43,6 +43,6 @@ Try to answer the following questions (some if not all):
 
 1. Sign in to the [Platform Homepage](https://platform.kore.ai/){:target="_blank"}.
 2. On the Homepage, click the **New App** button and then choose **New App**. The Get Started options are displayed.
-3. Under Automation AI, click **Create New** and then select your onboarding experience - **Guided Onboarding**.
+3. Under Automation AI, click **Create New** and then **Name your AI chatbot**.
 4. Click **Next** at the bottom-right corner, and follow the onscreen instructions to complete the onboarding journey.
 5. At the end of the journey, your agent will be ready. You can go back to any step in the journey and change the provided information. 

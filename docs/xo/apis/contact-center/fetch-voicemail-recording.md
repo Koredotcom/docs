@@ -14,7 +14,7 @@ This API facilitates the downloading of voicemail recordings. The API provides a
 | PARAMETER | DESCRIPTION | TYPE |
 |-----------|-------------|------|
 | host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| botId     | botId or streamId. You can get it from the general settings page. | string, required |
+| botId     | botId or streamId. You can get it from the App Settings page. | string, required |
 
 ## Query Parameters
 

@@ -42,12 +42,12 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/con
 
 ## Body Parameters
 
-| **Parameter**     | **Description**                                                    | **Type**         |
-|-------------------|--------------------------------------------------------------------|------------------|
-| `name`            | Name of the contact list                                           | string, required |
-| `description`     | Description of the contact list                                    | string, optional |
-| `source`          | Source of the list. Use `passiveApiIntegration` for API-based ingestion       | string, required |
-| `allowDuplicates` | Set to `true` to allow duplicate records                           | boolean, required |
+| **Parameter**        | **Description**                                                                                                                  | **Type**               |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| `name`             | Name of the contact list. Max 48 characters. Used to identify and display the list across the platform.                      | string, required   |
+| `description`      | Description of the contact list. Max 256 characters. Should briefly explain the list’s purpose and audience.                 | string, required   |
+| `source`           | Data origin/source. Must be `"passiveApi"`, indicating the list is populated via API rather than file/manual upload.         | string, required   |
+| `allowDuplicates`  | Whether to allow duplicate contact entries in the list. Defaults to `false` if not provided. Must be a boolean value.        | boolean, optional  |
 
 ## Sample Response
 

@@ -14,7 +14,7 @@ To get all agents if you have `queuesIds` and all the queues if you have `agentI
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
 |-----------|-------------|------|
 | host | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| botId |botId or streamId. You can get it from the general settings page. | string, required |
+| botId |botId or streamId. You can get it from the App Settings page. | string, required |
 
 ## Sample Request
 

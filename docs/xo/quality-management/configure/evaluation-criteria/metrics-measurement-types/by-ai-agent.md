@@ -1,4 +1,4 @@
-# By AI Agent Evaluation Metric
+# By AI Agent Metric
 
 The By AI Agent metric type enables you to configure evaluation metrics powered by AI agents that can understand complex requests, perform multi-step reasoning, and make autonomous decisions through natural language processing. This metric type is designed for sophisticated evaluation scenarios that require domain expertise and advanced analytical capabilities beyond standard Generative AI metrics.
 
@@ -385,18 +385,18 @@ An example of a properly formatted response:
 }
 ```
 
-## Managing Evaluation Metrics
+## Managing By AI Agent Metrics
 
-### Edit or Delete Evaluation Metrics
+### Edit or Delete By AI Agent Metrics
 
-Steps to edit or delete existing Evaluation Metrics:
+Steps to edit or delete existing metrics:
 
-1. Right-click to select any of the existing **Evaluation Metrics**.   
+1. Right-click to select any of the existing **By AI Agent Metrics**.   
 <img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **Edit** to update the required **Edit By Question Metrics** dialog box fields.
+2. Click **Edit** to update the required **Edit By AI Agent Metrics** dialog box fields.
 <img src="../images/by-ai-agent-eva-metrics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Delete** to remove the selected By Question evaluation metric.
+3. Click **Delete** to remove the selected **By AI Agent** evaluation metric.
 
 4. Click **Update** to save the changes.
