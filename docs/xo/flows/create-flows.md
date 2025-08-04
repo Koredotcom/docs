@@ -32,6 +32,7 @@ The Welcome Voice Flow provides a similar capability for voice-based experiences
 <img src="../images/welcome-call-flow.gif" alt="Welcome Voice Flow" title="Welcome Voice Flow" style="border: 1px solid gray; zoom:70%;">
 
 **Use Cases**  
+
 * Validate fallback behavior for both chat and voice channels.  
 * Ensure the AI Agent responds effectively during first-time interactions or when there are no defined intents.  
 * Simulate and verify channel-specific configurations using test channels to ensure accurate results.
