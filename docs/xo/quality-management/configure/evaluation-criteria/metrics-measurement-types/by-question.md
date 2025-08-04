@@ -252,20 +252,21 @@ The metric operates through a **question-driven evaluation process** with two ma
 
 1. Click **Create** to save and activate the By Question configured adherence metric.
 
-## Managing By Question Metrics
+## Edit or Delete By Question Metrics
 
-### Edit or Delete By Question Metrics
+Steps to edit or delete any existing **By Question** evaluation metrics:
 
-Steps to edit or delete existing Evaluation Metrics:
+1. Right-click on a desired evaluation metric name under the **By Question** category.  
+    <img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-1. Right-click to select any of the existing **By Question Metrics**.
-<img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
+2. Choose an option:
 
-2. Click **Edit** to update the required **Edit By Question Metrics** dialog box fields.
+    * Click **Edit** to modify the selected metric details.  
+    <img src="../images/by-question-edit-eva-metrics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Delete** to remove the selected **By Question** evaluation metric.
+    * Click **Delete** to remove the selected metric.  
 
-4. Click **Update** to save the changes.
+3. Click **Update** to save the changes.
 
 ### Language Dependency Warnings
 

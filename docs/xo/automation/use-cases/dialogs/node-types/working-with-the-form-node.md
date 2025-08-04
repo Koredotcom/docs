@@ -19,7 +19,7 @@ To add a form node to the dialog task, follow the below steps:
 
         You can add a form node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new form node.
 
-3. **Choose the Form Experience**: If you are offering your Virtual Assistant on multiple channels, you can choose whether to enable the Digital Form Experience as the default experience on all these channels, or use a combination of Digital Form Experience and Conversation Experience.
+3. **Choose the Form Experience**: If you are offering your AI Agent on multiple channels, you can choose whether to enable the Digital Form Experience as the default experience on all these channels, or use a combination of Digital Form Experience and Conversation Experience.
     1. **Only UI Form**: Users will be presented the Digital Form Experience on all the channels that are enabled for the assistant that you are working with. This will create a Form Node and automatically open the Component Properties panel, where you can continue configuring the node.
     2. **Both Digital Form and Conversational Experience**: You can choose the channels on which the Digital Form Experience should be enabled and all other channels will use the Conversational Experience.
         
@@ -64,7 +64,7 @@ Steps to personalize form submission prompt for **Mobile/Web SDK**:
     1. Open full page popup form – This is the default setting where the form opens as a full page on the SDK chat interface.
     2. Open inline form – The form opens as an inline form within the chat window.
 
-6. Under **Submit Prompts for Web/Mobile SDK** section, you can choose the submit prompt to show for Web/Mobile SDK and select how the VA handles the conversation when the user cancels the form.
+6. Under **Submit Prompts for Web/Mobile SDK** section, you can choose the submit prompt to show for Web/Mobile SDK and select how the AI Agent handles the conversation when the user cancels the form.
 Select the prompt to show on successful form submission. The options are:  
         a. Use Submit Prompts –  The custom message added in the prompt is shown.  
         b. Use default system response –  The following confirmation is shown – {{FormName}} Form is successfully submitted.
@@ -86,7 +86,7 @@ Use the Instance Properties to define any user tags that you want to set.
 To configure this tab, please follow these steps:
 
 1. On the Form window, click the **Instance Properties** tab.
-2. In the **Form Cancellation Behavior** section, select how the VA handles the conversation when the user cancels the form:  
+2. In the **Form Cancellation Behavior** section, select how the AI Agent handles the conversation when the user cancels the form:  
 
     a. Discard the task and trigger End of Task Event – This is the default option.  
             

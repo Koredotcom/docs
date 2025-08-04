@@ -5,9 +5,9 @@ On the **Kore.ai Connector** page, in the **Security & Control** module of the A
 
 ## Why Kore.ai Connector?
 
-Kore.ai Agents are designed to make updates, provide notifications to users, and perform tasks. The tasks to perform are received from or performed on third-party applications available over the Internet as web-based applications or on-premises AI Agents applications.
+Kore.ai Apps are designed to make updates, provide notifications to users, and perform tasks. The tasks to perform are received from or performed on third-party applications available over the Internet as web-based applications or on-premises AI Agents applications.
 
-In a Kore.ai Agents on-premises system, communications security is maintained by restricting users and systems within the company intranet or by configuring specific channels for specific data exchange. On the contrary, Kore.ai Agents reside and process data in the cloud environment and cannot directly connect to your AI Agents' premises applications.
+In a Kore.ai Apps on-premises system, communications security is maintained by restricting users and systems within the company intranet or by configuring specific channels for specific data exchange. On the contrary, Kore.ai Apps reside and process data in the cloud environment and cannot directly connect to your AI Agents' premises applications.
 
 You can use the Kore.ai Connector Agent to establish and maintain secure data connectivity between Kore.ai and your on-premises applications within your intranet.
 
@@ -58,7 +58,7 @@ When started, the Kore.ai Connector Agent initiates a persistent SSL connection 
 
 ## Installing
 
-This topic describes how to install and configure the Kore.ai Connector Agent for Kore.ai Agents that you can use to securely connect the cloud-based XO Platform to your on-premises applications in your company Intranet.
+This topic describes how to install and configure the Kore.ai Connector Agent for Kore.ai Apps that you can use to securely connect the cloud-based XO Platform to your on-premises applications in your company Intranet.
 
 **Prerequisites**
 

@@ -13,7 +13,7 @@ To access webhooks and messages in Dialog tasks, you need to subscribe to an app
 
 1. Navigate to **Settings > Dev Tools > BotKit**.
 
-    <img src="./images/sdk-config-img1-app-kit-page.png" alt="BotKit page" title="BotKit page" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/sdk-config-img1-app-kit-page.png" alt="BotKit page" title="BotKit page" style="border:1px solid gray;zoom:70%;">
 
 2. On the BotKit page, click the **Add** button next to the **JWT App** drop-down list. The **Create JWT App** dialog opens.
     1. In the **JWT App** field, enter the name of the app registration, for example, TestApp.

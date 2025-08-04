@@ -65,7 +65,7 @@ Steps to create your own app:
 
 The _Channel Information updated successfully_ message is displayed on the top-right of the page.
 
-Once enabled [click here](../app-settings/dev-tools/kore-ai-web-sdk-tutorial.md) for steps to integrate your bot into your web application.
+Once enabled [click here](../app-settings/dev-tools/kore-ai-web-sdk.md) for steps to integrate your bot into your web application.
 
 
 ## Choose Deployment Options

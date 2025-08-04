@@ -71,12 +71,12 @@ This configures a metric based on adherence to the execution of dialog tasks.
 Configure the following settings:
 
 1. Select an **Evaluation Metrics Measurement Type** from the dropdown.
+<img src="../images/by-dialog-task-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;"> 
 
-2. Enter a descriptive **Name** for future reference of the metrics.    
-<img src="../images/by-dialog-task-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">  
-
+2. Enter a descriptive **Name** for future reference of the metrics.
+<img src="../images/add-new-metrics-by-dialogtask.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">    
+ 
 3. Select a **Dialog Agent** from the dropdown.  
-<img src="../images/add-new-metrics-by-dialogtask.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">  
 
 4. Select a **Count Type** from the dropdown. This has the following two options.
 
@@ -96,16 +96,19 @@ Configure the following settings:
 
 ### Edit or Delete By Dialog Task Metrics
 
-Steps to edit or delete existing metrics:
+Steps to edit any existing **By Dialog Task** metrics:
 
-1. Right-click to select any of the existing **By Dialog Task Metrics**.
-<img src="../metrics-measurement-types/images/edit-dialog-task.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">  
+1. Right-click on a desired evaluation metric name **By Dialog Task** metrics category.       
+<img src="../images/by-dialogtask-edit.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">   
 
-2. Click **Edit** to update the required **Edit By Dialog Task Metrics** fields.
+2. Choose an option:
 
-3. Click **Delete** to remove the selected **By Dialog Task** evaluation metric. 
+    * Click **Edit** to modify the selected metric details.      
+    <img src="../images/edit-dialog-task.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">  
 
-4. Click **Update** to save the changes.
+    * Click **Delete** to remove the selected metric.
+
+3. Click **Update** to save the changes.
 
 #### Deletion Warnings
 
@@ -117,5 +120,5 @@ This section describes the warnings and prerequisites you must address before de
 
 * If any attributes are linked to the metric, assign a different metric to those attributes before proceeding with deletion.
 
-* The system allows you to delete the metric only after resolving all dependencies.
+* The system allows you to delete the metric only after resolving all dependencies.  
 <img src="../images/by-dialog-task-delete-warning.png" alt="Delete Warnings" title="Delete Warnings" style="border: 1px solid gray; zoom:70%;">

@@ -1,6 +1,6 @@
 # Agent Transfer Node
 
-The Agent Transfer Node transfers the communications from the VA to a live agent. You can use the Agent Transfer node in a conditional dialog flow to move a user to a conversation with a live agent. For example,when  the VA cannot identify the user intent, or when tone analysis indicates the user is not satisfied with the communication, or on manual request by a user.
+The Agent Transfer Node transfers the communications from the AI Agent to a live agent. You can use the Agent Transfer node in a conditional dialog flow to move a user to a conversation with a live agent. For example,when  the AI Agent cannot identify the user intent, or when tone analysis indicates the user is not satisfied with the communication, or on manual request by a user.
 
 When a user is transferred using the Agent Transfer node, the dialog task ends and the agent controls the remaining portion of the conversation. 
 
@@ -35,7 +35,7 @@ Follow the below steps to register your Agent Transfer app:
 
     !!! Note
     
-        The registration app you create is based on the **Callback URL** applicable to all tasks for the VA. While each task can have unique SDK configurations, the Callback URL is the same. Create separate VAs for separate application Callback URLs for live agent transfers.
+        The registration app you create is based on the **Callback URL** applicable to all tasks for the AI Agent. While each task can have unique SDK configurations, the Callback URL is the same. Create separate AI Agents for separate application Callback URLs for live agent transfers.
 
 6. Under the **PII Data** section, define how _sensitive information_ should be handled. If there is a need to share unmasked data when an agent session is in progress, even when [PII redaction is enabled](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}, select the **Do not mask and send original data to Agent BotKit**. Else, go with the default setting of **Mask and send sensitive data to Agent BotKit**.
 7. Under the **Access Using a Connector** section, indicate if your URL is behind a firewall and a _Connector_ has to be used.
@@ -55,7 +55,7 @@ For details on managing  the API integration, please see the following articles:
 
 Setting up an Agent Transfer node in a dialog task involves the following steps:
 
-1. Select the VA you want to work with.
+1. Select the AI Agent you want to work with.
 2. Open the dialog task to add the Agent Transfer node to.
 3. Click the **+** icon next to the node under which you want to add the Agent Transfer node.Select **Agent Transfer > New Agent Transfer Node**. Alternatively, use drag and drop to add the node from the left side nodes panel.
 4. On the Agent Transfer window, by default, the **Component Properties** tab is displayed.
@@ -67,8 +67,8 @@ Setting up an Agent Transfer node in a dialog task involves the following steps:
 
 1. Enter a **Name** and **Display Name** for the node. For example, _LiveAgent_.
 2. In the **Containment Type** section, choose the following options:
-    1. **Mark as Agent Transfer** –  To hand-off conversations to an agent when the VA is configured to transfer the conversation session to an agent transfer integration or custom integration. Indicates that the conversation was transferred to a live agent using the Agent Transfer node in the Dialog Flow. [Learn more](../../../../../app-settings/integrations/agents/agent-transfer-integrations){:target="_blank"}.
-    2. **Mark as Self Service** – To mark conversations as self-service when the session reaches this node. Indicates that the conversation (initiated by the user) with a VA was successfully completed or informs that VA is not trained to handle a user’s request. [Learn more](../../../../../analytics/automation/conversations-history/#conversations-history-dashboard){:target="_blank"}.
+    1. **Mark as Agent Transfer** –  To hand-off conversations to an agent when the AI Agent is configured to transfer the conversation session to an agent transfer integration or custom integration. Indicates that the conversation was transferred to a live agent using the Agent Transfer node in the Dialog Flow. [Learn more](../../../../../app-settings/integrations/agents/agent-transfer-integrations){:target="_blank"}.
+    2. **Mark as Self Service** – To mark conversations as self-service when the session reaches this node. Indicates that the conversation (initiated by the user) with an AI Agent was successfully completed or informs that AI Agent is not trained to handle a user’s request. [Learn more](../../../../../analytics/automation/conversations-history/#conversations-history-dashboard){:target="_blank"}.
 
         <img src="../images/agent-transfer-node-component-properties-panel.png" alt="Agent Transfer node-Component properties" title="Agent Transfer node-Component properties" style="border:1px solid gray; zoom:60%;">
 
@@ -82,7 +82,7 @@ Setting up an Agent Transfer node in a dialog task involves the following steps:
 
     <img src="../images/agent-transfer-ivr-settings.png" alt="Agent Transfer node-Chat settings-IVR" title="Agent Transfer node-Chat settings-IVR" style="border:1px solid gray; zoom:60%;">
 
-7. In the **Variable Namespaces** section, associate the Variable Namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+7. In the **Variable Namespaces** section, associate the Variable Namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
 !!! Note
 
@@ -93,6 +93,6 @@ Setting up an Agent Transfer node in a dialog task involves the following steps:
 
 This is where you can configure the instance specific fields for this agent transfer node. These are applicable only for this instance and will not affect this agent transfer node being used in any other dialog.
 
-For Agent Transfer node instances, you can configure tags to build custom profiles of your VAs conversations. Read more about [Custom Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+For Agent Transfer node instances, you can configure tags to build custom profiles of your AI Agents conversations. Read more about [Custom Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
 <img src="../images/agent-transfer-node-instance-properties.png" alt="Agent Transfer node-Instance properties" title="Agent Transfer node-Instance properties" style="border:1px solid gray; zoom:60%;">

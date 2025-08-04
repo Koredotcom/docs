@@ -207,7 +207,7 @@ This parameter enables granular control over content accessibility by explicitly
   <tr>
    <td>customData</td>
    <td>No </td>
-   <td>Custom data to be sent in the request. This data can be used to further process or filter the search results in the application. This can also be used to pass previous conversations as context or to set user context like user identity, location, etc.
+   <td>Custom data to be sent in the request. This data can be used to further process or filter the search results in the application. This can also be used to pass previous conversations as context or to set user context like user identity, location, etc. Refer to [the following section](#example-of-using-custom-data-request-parameter) for examples on how to use custom data.
    </td>
   </tr>
   <tr>

@@ -107,7 +107,7 @@ This option provides you ready-made templates targeting major industry verticals
 
     <img src="../images/using-dialog-builder-img11-create-dialog-template-search.gif" alt="Marketplace" title="Marketplace" style="border:1px solid gray;zoom:70%;">
 
-2. Select the required categories or integrations. The corresponding integrations and available dialog templates appear. The integrations configured in your VA are labeled as **Installed**.
+2. Select the required categories or integrations. The corresponding integrations and available dialog templates appear. The integrations configured in your App are labeled as **Installed**.
 
     <img src="../images/using-dialog-builder-marketplace-actions-and-templates.png" alt="Integrations and Dialog Templates" title="Integrations and Dialog Templates" style="border:1px solid gray;zoom:70%;">
 
@@ -242,7 +242,7 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 
     <img src="../images/using-dialog-builder-right-more-settings.png" alt="More options" title="More options" style="border:1px solid gray;zoom:60%;">
 
-* **Bot Owners** - You can see bubbles containing the names of all the users of the current dialog, such as Bot Owner, Bot Developer, Conversation Designer, etc. The first letter of the bot owner’s name appears in a colored bubble.
+* **App Owners** - You can see bubbles containing the names of all the users of the current dialog, such as App Owner, App Developer, Conversation Designer, etc. The first letter of the app owner’s name appears in a colored bubble.
 
 
 ### The Index Panel
@@ -380,7 +380,7 @@ Using **Bookmarks**, you can create navigation points in a dialog with a complex
 
 <img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Notes and Bookmark" title="Notes and Bookmark" style="border:1px solid gray;zoom:70%;">
 
-**Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other bot users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need.
+**Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other app users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need.
 
 Below action can be performed:
 
@@ -585,13 +585,13 @@ Add or modify the following settings for your dialog:
         * Handle the follow-up tasks as part of node connections (default setting) or
         * Let the user select the follow-up task.
 * **Task Execution Failure** – Define the assistant’s behavior when there is an error in task execution. It can be set as either:
-        * Same as the Bot Level behavior.
+        * Same as the App Level behavior.
         * Specific to this task – initiate a task, run a script, or show a message.
 
 
 ### Manage Interruptions
 
-The **Manage Interruptions** options allow you to select if and how a user can switch to another task and exit strategies. It can be set up at the VA, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
+The **Manage Interruptions** options allow you to select if and how a user can switch to another task and exit strategies. It can be set up at the App, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
 
 <img src="../images/using-dialog-builder-img27-manage-interruptions.png" alt="Manage Interruptions" title="Manage Interruptions" style="border:1px solid gray;zoom:60%;">
 
@@ -626,7 +626,7 @@ Node groups are primarily used for defining a group of nodes.
 
 *  Inputs and outputs can be handled at the group level, allowing users to focus on group interfaces without needing to manage every node. 
 
-*  Groups help maintain a clean and structured flow, which is useful in large or multi-functional bots. 
+*  Groups help maintain a clean and structured flow, which is useful in large or multi-functional apps. 
 
 *  Node groups support better handling of follow-ups, digressions, and amending entity values.
 

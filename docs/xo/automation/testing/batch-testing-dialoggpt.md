@@ -3,7 +3,7 @@
 
 
 
-Batch Testing is a comprehensive testing framework designed to evaluate and validate the accuracy of intent detection of a virtual assistant.  It enables users to systematically test their virtual assistant’s ability to understand user requests across multiple conversation types including dialogs, FAQs, Knowledge (Search AI), and conversation intents. It also supports different model configurations and provides comprehensive performance metrics for both development and production environments.
+Batch Testing is a comprehensive testing framework designed to evaluate and validate the accuracy of intent detection of a AI Agent.  It enables users to systematically test their AI Agent’s ability to understand user requests across multiple conversation types including dialogs, FAQs, Knowledge (Search AI), and conversation intents. It also supports different model configurations and provides comprehensive performance metrics for both development and production environments.
 
 Unlike traditional testing approaches, Batch Testing replicates the complete DialogGPT runtime pipeline, providing authentic performance insights that mirror real user interactions.
 
