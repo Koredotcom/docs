@@ -2,7 +2,7 @@
 
 Conversation sessions are defined as uninterrupted interactions between the AI Agent and the user. These sessions are used in multiple analytics dashboards in the App Builder as well as Admin Console platforms.
 
-Kore.ai platform allows you to customize how these Conversation Sessions are to be created and closed.
+The Platform allows you to customize how these Conversation Sessions are to be created and closed.
 
 !!! note
 

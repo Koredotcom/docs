@@ -1,8 +1,8 @@
 # Intent Discovery
 
-The new Intent Discovery module helps you auto-extract popular intents from previous user conversations. It reduces the time and effort to build a virtual assistant and leads to the success of your Conversational AI Journey. This is available only for the English language and Enterprise users.
+The new Intent Discovery module helps you auto-extract popular intents from previous user conversations. It reduces the time and effort to build a AI Agent and leads to the success of your Conversational AI Agents Journey. This is available only for the English language and Enterprise users.
 
-You can upload your historical transcripts in CSV format. After the transcripts are uploaded into the bot, the bot uses LLMs to identify the different topics, intents, or conversations between the user and the bot. It intelligently identifies all the intents available. You can review each intent to understand which conversations have resulted in identifying these intents. After the review, you can also see the underline utterances that resulted in identifying an intent. You can either add these intents as new intents for your virtual assistant or pick specific utterances and train them as utterances for your existing dialogs and FAQs. So, it helps both ways – either create new intents or enhance the training you provide to your virtual assistant.
+You can upload your historical transcripts in CSV format. After the transcripts are uploaded into the AI Agent to identify the different topics, intents, or conversations between the user and the AI Agent. It intelligently identifies all the intents available. You can review each intent to understand which conversations have resulted in identifying these intents. After the review, you can also see the underline utterances that resulted in identifying an intent. You can either add these intents as new intents for your AI Agent or pick specific utterances and train them as utterances for your existing dialogs and FAQs. So, it helps both ways – either create new intents or enhance the training you provide to your AI Agent.
 
 <img src="../images/intent-discovery-demo-diagram.png" alt="Intent Discovery" title="Intent Discovery" style="border: 1px solid gray; zoom:50%;"> 
 
@@ -40,7 +40,7 @@ The status of a project can be any of the following, displayed in the Status col
 
 !!! note
 
-    You can create a maximum of 10 projects per VA. You can change an existing project’s name and description anytime.
+    You can create a maximum of 10 projects per AI Agent. You can change an existing project’s name and description anytime.
 
 
 ## Upload Transcripts
@@ -80,25 +80,25 @@ table, th, td {
   <tr>
    <td>Sender ID
    </td>
-   <td>The ID of the bot or agent.  
+   <td>The ID of the AI Agent or human agent.  
    </td>
   </tr>
   <tr>
    <td>Other Party ID
    </td>
-   <td>The ID of the user talking to the bot or agent.
+   <td>The ID of the user talking to the AI Agent or human agent.
    </td>
   </tr>
   <tr>
    <td>Direction
    </td>
-   <td>The message direction – in (user input) or out (bot/agent response).
+   <td>The message direction – in (user input) or out (AI Agent/ human agent response).
    </td>
   </tr>
   <tr>
    <td>Message
    </td>
-   <td>The message shown to the user or the bot/agent, depending on the message direction.
+   <td>The message shown to the user or the AI Agent/agent, depending on the message direction.
    </td>
   </tr>
   <tr>
@@ -152,9 +152,9 @@ The dialog box has the provision to download a sample file using the **Sample Fi
 
 ### View Conversations in the Transcript
 
-Upon successful upload of the transcript(s), the platform extracts the conversations from the uploaded files. You can view all the conversations, and the chat messages exchanged between the end user and the VA/agent.
+Upon successful upload of the transcript(s), the platform extracts the conversations from the uploaded files. You can view all the conversations, and the chat messages exchanged between the end user and the AI Agent/human agent.
 
-The platform displays the conversation session summary, which includes the count of the VA messages and user messages. You need to select a **Date Filter** under **Contents** to display the details.  
+The platform displays the conversation session summary, which includes the count of the AI Agent messages and user messages. You need to select a **Date Filter** under **Contents** to display the details.  
 <img src="../images/conversation-in-transcript.png" alt="Conversations in Transcript" title="Conversations in Transcript" style="border: 1px solid gray; zoom:50%;">
 
 
@@ -273,8 +273,8 @@ Additionally, this change will reflect under the **Results** column against the 
 4. Select all the required utterances and click **Next**.  
 <img src="../images/add-faq-st1.png" alt="Add FAQ Intent - Select required utterances" title="Add FAQ Intent - Select required utterances" style="border: 1px solid gray; zoom:50%;">  
 
-5. On the next dialog box, provide the FAQ question text to be created as an FAQ, along with the required Bot Response to be shown. All the selected utterances from the previous screen are added as alternative questions for this FAQ. 
-6. Provide or select other features of the FAQ, like Bot response channel, Display name, reference ID, etc. as per your need and preference, and click the **Add to Bot** button.  
+5. On the next dialog box, provide the FAQ question text to be created as an FAQ, along with the required AI Agent Response to be shown. All the selected utterances from the previous screen are added as alternative questions for this FAQ. 
+6. Provide or select other features of the FAQ, like AI Agent response channel, Display name, reference ID, etc. as per your need and preference, and click the **Add to Bot**.  
 <img src="../images/add-faq-st2.png" alt="Add FAQ Intent - Add to bot" title="Add FAQ Intent - Add to bot" style="border: 1px solid gray; zoom:50%;">  
 
 7. A confirmation message is shown on adding a new FAQ.  
@@ -346,7 +346,7 @@ Please note that the previously loaded transcript files will not be deleted whil
 
 ## Deleting a project
 
-You can also delete the project if it is no longer required. Since a maximum of 10 projects can be created within a bot, you may need to delete a past, unwanted project to make a place for a new one.
+You can also delete the project if it is no longer required. Since a maximum of 10 projects can be created within a AI Agent, you may need to delete a past, unwanted project to make a place for a new one.
 
 <img src="../images/delete-project.png" alt="Delete a project" title="Delete a project" style="border: 1px solid gray; zoom:50%;">  
   

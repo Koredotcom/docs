@@ -302,19 +302,20 @@ nav:
           - Conversation Testing - NLP: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
-      - Manage Assistant:
+      - Manage App:
         - Team Collaboration: manage-assistant/collaborative-development.md
         - Feedback Survey: manage-assistant/feedbacksurvey.md
       - Dynamic Routing: automation/dynamic-routing.md     
     - How To:
+      - New vs. Returning Users: kb/new-and-returning-users.md
+      - How to Access Original PII Data: kb/access-original-pii-data.md
+      - How to Share Metadata from AI for Service to Agent Platform: kb/share-metadata-ais-to-agent-platform.md
+      - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
+      - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
       - Marketplace Integration:
         - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
         - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
         - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
-    - Knowledgebase:
-      - New vs. Returning Users: kb/new-and-returning-users.md
-      - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
-      - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
@@ -548,7 +549,7 @@ nav:
         - Supported Languages: agentai/agent-experience/supported-languages.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
-      - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
+      - App Override and Automation: agentai/agent-experience/bot-override-and-automation.md
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
       - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
@@ -729,7 +730,7 @@ nav:
           - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
           - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md                
   - Analytics:
-    - Analyzing Your Bot: analytics/introduction.md
+    - Analyzing Your App: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md
     - Overview:
       - Summary Dashboard: analytics/overview/summary-dashboard.md
@@ -810,7 +811,7 @@ nav:
         - Manage Groups: administration/user-management/managing-your-groups.md
         - Manage Roles: administration/user-management/role-management.md
       - Data Tables And Views: administration/data/manage-data-tables-and-views-in-admin-console.md
-      - Assistant Management: administration/bot-management.md
+      - App Management: administration/bot-management.md
       - Enrollment:
         - Invite Users: administration/enrollment/enrolling-a-new-user.md
         - Send Bulk Invites: administration/enrollment/enrolling-many-users.md
