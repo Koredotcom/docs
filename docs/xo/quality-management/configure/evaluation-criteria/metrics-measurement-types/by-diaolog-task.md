@@ -71,12 +71,12 @@ This configures a metric based on adherence to the execution of dialog tasks.
 Configure the following settings:
 
 1. Select an **Evaluation Metrics Measurement Type** from the dropdown.
+<img src="../images/by-dialog-task-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;"> 
 
-2. Enter a descriptive **Name** for future reference of the metrics.    
-<img src="../images/by-dialog-task-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">  
-
+2. Enter a descriptive **Name** for future reference of the metrics.
+<img src="../images/add-new-metrics-by-dialogtask.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">    
+ 
 3. Select a **Dialog Agent** from the dropdown.  
-<img src="../images/add-new-metrics-by-dialogtask.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">  
 
 4. Select a **Count Type** from the dropdown. This has the following two options.
 
@@ -103,7 +103,7 @@ Steps to edit any existing **By Dialog Task** metrics:
 
 2. Choose an option:
 
-    * Click **Edit** to modify the selected metric.      
+    * Click **Edit** to modify the selected metric details.      
     <img src="../images/edit-dialog-task.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">  
 
     * Click **Delete** to remove the selected metric.

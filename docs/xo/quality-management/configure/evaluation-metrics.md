@@ -245,7 +245,7 @@ Steps to edit or delete existing evaluation metrics types:
 
 2. Choose an option:
 
-    * Click **Edit** to modify the selected evaluation metric.
+    * Click **Edit** to modify the selected evaluation metric details.
 
     * Click **Delete** to remove the selected evaluation metric.   
     <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">

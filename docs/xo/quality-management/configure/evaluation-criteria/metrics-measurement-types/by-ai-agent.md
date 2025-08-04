@@ -394,7 +394,7 @@ Steps to edit or delete any existing **By AI Agent** evaluation metrics:
 
 2. Choose an option:
 
-    * Click **Edit** to modify the selected metric.    
+    * Click **Edit** to modify the selected metric details.    
     <img src="../images/by-ai-agent-eva-metrics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
     * Click **Delete** to remove the selected metric.

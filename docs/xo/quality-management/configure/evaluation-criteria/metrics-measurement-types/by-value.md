@@ -376,7 +376,7 @@ Steps to edit or delete any existing **By Vlaue** evaluation metrics:
 
 2. Choose an option:
 
-    * Click **Edit** to modify the selected metric.    
+    * Click **Edit** to modify the selected metric details.    
     <img src="../images/by-playbook-edit-metrics.png" alt="Edit Playbook" title="Edit Playbook" style="border: 1px solid gray; zoom:70%;"> 
 
     * Click **Delete** to remove the selected metric.
