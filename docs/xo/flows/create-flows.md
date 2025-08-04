@@ -19,6 +19,24 @@ Start flows represent the most complex flow type, providing access to all [node 
 
     All fields of the default Start Flows can be edited except Channels. [Learn more](#edit-a-start-flow).
 
+#### Default Welcome Flows
+
+The default welcome flows are created automatically when you create a new account. Default Flows support both Chat and Voice functionalities. These flows act as fallback entry points to initiate and test the AI Agent experience when no specific intent or task is triggered. You can edit these flows to customize the experience for your users.
+
+**Chat – Welcome Flow**  
+The Welcome Chat Flow allows you to simulate user interactions on any configured chat channel. Use the RTM (Real-Time Messaging) channel to test chat scenarios. This flow ensures that the AI Agent responds appropriately when users initiate conversations without clearly stating their intent.  
+<img src="../images/welcome-chat-flow.gif" alt="Welcome Chat Flow" title="Welcome Chat Flow" style="border: 1px solid gray; zoom:70%;">
+
+**Voice – Welcome Flow**  
+The Welcome Voice Flow provides a similar capability for voice-based experiences. You can test voice interactions using the SBC (Session Border Controller) simulation channel. This flow handles default voice call routing when no predefined intent is matched.  
+<img src="../images/welcome-call-flow.gif" alt="Welcome Voice Flow" title="Welcome Voice Flow" style="border: 1px solid gray; zoom:70%;">
+
+**Use Cases**  
+* Validate fallback behavior for both chat and voice channels.  
+* Ensure the AI Agent responds effectively during first-time interactions or when there are no defined intents.  
+* Simulate and verify channel-specific configurations using test channels to ensure accurate results.
+Welcome Flows help developers confirm that AI Agent behavior remains consistent and user-friendly from the initial point of contact across all channels.
+
 ### The Exit Flows
 
 This flow type runs when a call gets disconnected and is useful in gathering customer data during post-call analytics, clean-up, or updates in other systems after a call ends. Conversational context can be passed from the main experience flow into the _Exit Flows_.
