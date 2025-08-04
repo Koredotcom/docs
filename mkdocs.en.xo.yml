@@ -308,8 +308,8 @@ nav:
       - Dynamic Routing: automation/dynamic-routing.md     
     - How To:
       - New vs. Returning Users: kb/new-and-returning-users.md
-      - How to Access Original PII Data: kb/access-original-pii-data.md
-      - How to Share Metadata from AI for Service to Agent Platform: kb/share-metadata-ais-to-agent-platform.md
+      - Access Original PII Data: kb/access-original-pii-data.md
+      - Share Metadata from AI for Service to Agent Platform: kb/share-metadata-ais-to-agent-platform.md
       - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
       - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
       - Marketplace Integration:
