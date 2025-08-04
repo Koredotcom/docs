@@ -213,17 +213,17 @@ The following six measurement types are:
 
     For the detailed configuration, see [By AI Agent](../configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md).
 
-## Managing Evaluation Metrics
+## Manage Evaluation Metrics
 
 The process of managing evaluation metrics includes the following sections:
 
 **Metric Lifecycle Management**
 
-* **Creation**: Step-by-step configuration wizard
+* **Create**: Step-by-step configuration wizard
 
-* **Editing**: Real-time updates with validation
+* **Edit**: Real-time updates with validation
 
-* **Deletion**: Dependency resolution and cleanup
+* **Delete**: Dependency resolution and cleanup
 
 * **Language Management**: Multilingual configuration and updates
 
@@ -239,14 +239,18 @@ The process of managing evaluation metrics includes the following sections:
 
 ### Edit or Delete Evaluation Metrics Type
 
-Steps to edit or delete existing Evaluation Metrics:
+Steps to edit or delete existing evaluation metrics types:
 
-1. Right-click on any existing **Evaluation Metric Type** to choose a measurement type, such as **By Question**, **By Value**.    
-<img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
+1. Right-click on any of the existing **Evaluation Metrics Type** cateogory, such as **By Question**, **By Value**.
+
+2. Choose an option:
+
+    * Click **Edit** to modify the selected evaluation metric.
+
+    * Click **Delete** to remove the selected evaluation metric.   
+    <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit** to update any one of the selected **Edit Evaluation Metrics** measurement type fields.    
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Delete** to remove the selected evaluation metric.
-
-4. Click **Update** to save the changes.
+3. Click **Update** to save the changes.

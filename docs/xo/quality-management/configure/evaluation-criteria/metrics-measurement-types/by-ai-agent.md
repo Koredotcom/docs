@@ -92,7 +92,7 @@ To configure By AI Agent metrics, ensure the following prerequisites are met:
 7. Configure the **AI Agent Connection**:
     1. **AI Agent Endpoint**: Enter the API endpoint URL for your external AI agent service.
 
-    2. **API Key**: Provide the authentication key for accessing the AI agent endpoint. 
+    2. **API Key**: Provide the authentication key for accessing the AI agent endpoint.   
     <img src="../images/api-key-ai-agent.png" alt="AI Agent Connection" title="AI Agent Connection" style="border: 1px solid gray; zoom:70%;">
 
         !!! note
@@ -385,18 +385,18 @@ An example of a properly formatted response:
 }
 ```
 
-## Managing By AI Agent Metrics
+## Edit or Delete By AI Agent Metrics
 
-### Edit or Delete By AI Agent Metrics
+Steps to edit or delete any existing **By AI Agent** evaluation metrics:
 
-Steps to edit or delete existing metrics:
+1. Right-click on a desired evaluation metric name under the **By AI Agent** category.   
+<img src="../images/by-ai-agent-edit.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-1. Right-click to select any of the existing **By AI Agent Metrics**.   
-<img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
+2. Choose an option:
 
-2. Click **Edit** to update the required **Edit By AI Agent Metrics** dialog box fields.
-<img src="../images/by-ai-agent-eva-metrics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
+    * Click **Edit** to modify the selected metric.    
+    <img src="../images/by-ai-agent-eva-metrics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Delete** to remove the selected **By AI Agent** evaluation metric.
+    * Click **Delete** to remove the selected metric.
 
-4. Click **Update** to save the changes.
+3. Click **Update** to save the changes.
