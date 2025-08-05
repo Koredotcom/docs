@@ -35,7 +35,7 @@ The authentication message exchange during SSL handshake between platform and AP
 
 1. The platform makes a request to a configured API endpoint.
 2. The API server presents its certificate to the platform.
-3. The bots platform verifies the server’s certificate.
+3. The platform verifies the server’s certificate.
 4. If successful, the platform sends its configured two-way SSL certificate to the API server.
 5. The API server verifies the presented certificate credentials.
 

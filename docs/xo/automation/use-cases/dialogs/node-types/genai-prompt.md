@@ -1,7 +1,7 @@
 # Prompt Node
 
 
-The Prompt Node lets bot developers leverage the full potential of LLM and Generative AI models to quickly build their own prompts. Developers can select a specific AI model, tweak its settings, and preview the response for the prompt. The node allows developers to creatively leverage LLMs by defining the prompt using conversation context and the response from the LLMs in defining the subsequent conversation flow.
+The Prompt Node lets app developers leverage the full potential of LLM and Generative AI models to quickly build their own prompts. Developers can select a specific AI model, tweak its settings, and preview the response for the prompt. The node allows developers to creatively leverage LLMs by defining the prompt using conversation context and the response from the LLMs in defining the subsequent conversation flow.
 
 
 ## Node Behavior
@@ -12,7 +12,7 @@ You can work with this node like with any other node within Dialog Tasks and can
 
 1. On reaching the Prompt Node, the platform parses any variable used in the prompt and constructs the request using the Prompt and the Advanced Settings.
 2. An API call is made to the model with the request.
-3. The [response is stored in the context object](#about-responses) as part of the dialog context and can be used to define the transitions or any other part of the bot configuration.
+3. The [response is stored in the context object](#about-responses) as part of the dialog context and can be used to define the transitions or any other part of the app configuration.
 4. The platform exits from the Prompt Node node when a successful response is received, or the defined timeout condition is met.
 
 
@@ -66,7 +66,7 @@ On the **Instance Properties** tab, you can configure the instance-specific fiel
 
 #### Custom Tags
 
-In this section, you can add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can add tags for the following:
+In this section, you can add Custom Meta Tags to the conversation flow to profile AI Agent-user conversations and derive business-critical insights from usage and execution metrics. You can add tags for the following:
 
 * **Message**: Define custom tags to be added to the current message in the conversation.
 * **User**: Define custom tags to be added to the user’s profile information.

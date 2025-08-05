@@ -2,7 +2,7 @@
 
 Kore.ai Widget SDK allows you to override the default message formatting using markdown and apply templates to display custom formatted bot messages to users on the Widget SDK channel.
 
-For details on Web/Mobile SDK, [refer here](widget-sdk-message-formatting-and-templates.md).
+For details on Web/Mobile SDK, [refer here](web-mobile-sdk-message-formatting-and-templates.md).
 
 ### Button Template
 
@@ -64,8 +64,8 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-![Button template](../images/widget-message-templates/button-template.png "Button template")
 
+<img src="../images/widget-message-templates/button-template.png" alt="Button template" title="Button template" style="border: 1px solid gray; zoom:70%;">
 
 ### Menu Template
 
@@ -134,7 +134,8 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-![Menu template](../images/widget-message-templates/menu-template.png "Menu template")
+
+<img src="../images/widget-message-templates/menu-template.png" alt="Menu template" title="Menu template" style="border: 1px solid gray; zoom:70%;">
 
 ### List Template
 
@@ -399,7 +400,9 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-![List template](../images/widget-message-templates/list-template.png "List template")
+
+
+<img src="../images/widget-message-templates/list-template.png" alt="List template" title="List template" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Pie Chart Template
@@ -454,8 +457,9 @@ var data = {
 print(JSON.stringify(data));
 ```
 
-![Piechart template](../images/widget-message-templates/piechart-template.png "Piechart template")
 
+
+<img src="../images/widget-message-templates/piechart-template.png" alt="Piechart template" title="Piechart template" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Line Chart Template
@@ -530,7 +534,9 @@ var data = {
 print(JSON.stringify(data));
 ```
 
-![Line Chart template](../images/widget-message-templates/line-chart-template.png "Line Chart template")
+
+
+<img src="../images/widget-message-templates/line-chart-template.png" alt="Line Chart template" title="Line Chart template" style="border: 1px solid gray; zoom:70%;">
 
 !!!note
     To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](../automation/use-cases/dialogs/prompt-editor.md).

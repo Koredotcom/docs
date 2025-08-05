@@ -22,13 +22,13 @@ This combines advanced extraction logic with configurable business rules to veri
 
 * Improves agent training with detailed, auditable logs of all verification steps.
 
-### Use Cases
+## Use Cases
 
 * Interest Rate Adherence
 * Balance Verification
 * Fee Disclosure
 
-### Prerequisites
+## Prerequisites
 
 Make sure that the following GenAI features are enabled:
 
@@ -48,7 +48,8 @@ Make sure that the following GenAI features are enabled:
 
 1. Click **+ New Evaluation Metric**.
 
-1. From the **Evaluation Metrics Measurement Type** dropdown, select **By Value**.
+1. From the **Evaluation Metrics Measurement Type** dropdown, select **By Value**.  
+  <img src="../images/by-value-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">     
 
 1. Enter a descriptive **Name** for the future audit reference.
 
@@ -142,7 +143,7 @@ Make sure that the following GenAI features are enabled:
 
     * **Speaker**: Choose who (**Customer** or **Agent**) provides the identifier in the conversation.    
 
-1. Enter a descriptive name, data type, and description to match the data type for extracting data (for example, customer ID or phone number).
+1. Configure the Entity Type details to match the data type for extracting required data (for example, customer ID, name, and data type).
 
     **Entity Type Configuration**
 
@@ -174,7 +175,7 @@ Make sure that the following GenAI features are enabled:
 
     **GET/POST Method**
 
-    1. From the **Auth**dropdown, select the authorization profile that you want to use or access this API request. 
+    1. From the **Auth** dropdown, select the authorization profile that you want to use for API request. 
 
     2. Add custom HTTP **Headers** if needed as required by your backend systems.
 
@@ -192,7 +193,7 @@ Make sure that the following GenAI features are enabled:
 
     1. Define the POST **Body** using the context variable ID in the body. For example: `{"userId": "{{context.user_id}}"}`.  
 
-    2. Enter a **Post Script Definition Name** of the API response**.
+    2. Enter a **Post Script Definition Name** of the API response.
 
     3. Use a **Post Process Script** to extract or transform the response if needed (optional).
 
@@ -201,11 +202,11 @@ Make sure that the following GenAI features are enabled:
 
     5. Click **Save**.
 
-1. Use the custom conversation ID to trigger sequential API calls and apply post-processing as needed.
+1. Selct the custom **Conversation ID** to trigger sequential API calls and apply post-processing as needed.
 
     #### Conversation ID 
 
-    Conversation ID-based API configuration is used within the Quality AI context, particularly when customer identifiers are missing and SFTP-based integration is used instead. The custom conversation ID from CSV metadata triggers the first API call to retrieve the customer ID, followed by a second call to fetch the business value (for example, interest rate). These two post-process scripts run after each call or at the end to finalize the value.
+    Conversation ID-based API configuration is used when customer identifiers are missing and SFTP integration is in place. The custom conversation ID from CSV metadata triggers two API calls: one to retrieve the customer ID, and another for the business value (for example, interest rate). Post-processing scripts run after each call or at the end to finalize values.
 
     **Configuration Requirements**
 
@@ -241,7 +242,7 @@ Make sure that the following GenAI features are enabled:
 
         !!! Note
 
-            * This **Test Request**option is disabled if the request parameter is a conversation ID.
+            * This **Test Request** option is disabled if the request parameter is a conversation ID.
 
     3. Map and process the API **Response** by entering a JSON object or path.
 
@@ -275,7 +276,7 @@ Make sure that the following GenAI features are enabled:
     3. **Description**: Provide detailed instructions for the AI on how to identify the agent-mentioned value. For example, to extract the interest rate percentage mentioned by the agent when discussing loan terms, formatted as a decimal number (for example, 4.5 for 4.5%).  
     <img src="../images/agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:50%;">   
 
-1. Select and verify the correct agent-stated value based on the chosen Business Rule.
+1. Choose one of the business rules to verify the correct agent-stated value.
 
     ### Business Rules
 
@@ -324,9 +325,9 @@ Make sure that the following GenAI features are enabled:
         * **Use Case**: Complex scenarios requiring custom handling.
 
         * **Example**: Use the value mentioned after the customer accepts terms, or use the value mentioned during the rate discussion phase. It uses the lowest number mentioned, that is 4.9%, as the best offer.  
-<img src="../images/bussiness-rules.png" alt="Business Rules" title="Business Rules" style="border: 1px solid gray; zoom:50%;">           
+    <img src="../images/bussiness-rules.png" alt="Business Rules" title="Business Rules" style="border: 1px solid gray; zoom:50%;">           
 
-1. Configure how the system evaluates agent answers against backend data using AI or custom rules with pass, fail, or skip outcomes.
+1. Configure how to evaluate agent responses against backend data using AI or custom rules (Possible outcomes of Pass, Fail, or NA).
 
     ### Score Logic & Adherence Criteria
 
@@ -348,38 +349,39 @@ Make sure that the following GenAI features are enabled:
 
             * **Not Applicable (NA)**: Indicates the metric is not accounted for if the agent’s expected value is not present and excluded for score calculation (trigger condition not met; evaluation skipped or interest rate metric is skipped, and customer has only asked about account balance).
 
-    #### Custom Script-based Adherence
+        #### Custom Script-based Adherence
 
-    * **Description**: Uses a rule-based script to enforce specific logic to check adherence. Suitable for more deterministic or compliance-critical scenarios.
+        * **Description**: Uses a rule-based script to enforce specific logic to check adherence. Suitable for more deterministic or compliance-critical scenarios.
 
-    * **Failure Condition**: The required value is not present in the conversation or does not match the backend-provided value.
+        * **Failure Condition**: The required value is not present in the conversation or does not match the backend-provided value.
 
-    * **Metric Outcome**: 
+        * **Metric Outcome**: 
 
-    **Metric Failure**: Indicates interaction has failed when the required call context variable (expected information) is missing or mismatched, or found in the conversation. For example, the agent quoted 6.5% but the system says 7.5%. 
+            **Metric Failure**: Indicates interaction has failed when the required call context variable (expected information) is missing or mismatched, or found in the conversation. For example, the agent quoted 6.5% but the system says 7.5%. 
 
-    **Not Applicable**: Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
-    
-        !!! Note
+            **Not Applicable**: Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
+            
+            !!! Note
 
-            If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
+                If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
 
-    4. Click **Create** to save and apply the agent answer metric configuration.
+1. Click **Create** to save and apply the agent answer metric configuration.
 
-## Managing Evaluation Metrics
+### Edit or Delete By Value Metrics
 
-### Edit Evaluation Metrics
+Steps to edit or delete any existing **By Vlaue** evaluation metrics:
 
-Steps to edit existing Evaluation Metrics:
+1. Right-click on a desired evaluation metric name **By Value** metrics category.     
+<img src="../images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:0%;">    
 
-1. Right-click to select any of the existing **Evaluation Metrics**.   
-<img src="../images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:50%;">    
+2. Choose an option:
 
-2. Click **Edit** to update the required **Edit Evaluation Metrics** dialog box fields.
+    * Click **Edit** to modify the selected metric details.    
+    <img src="../images/by-playbook-edit-metrics.png" alt="Edit Playbook" title="Edit Playbook" style="border: 1px solid gray; zoom:70%;"> 
 
-3. Click **Delete** to remove the selected playbook metrics.
+    * Click **Delete** to remove the selected metric.
 
-4. Click **Update** to save the changes.
+4. Click **Update** to save the changes.2. 
 
 #### Language Dependency Warnings
 
@@ -404,5 +406,7 @@ This section describes the warnings and prerequisites you must address before de
 
 2. Remove the metric from all associated evaluation forms before you delete it.
 
-3. The system allows you to delete the metric only after resolving all dependencies.  
-    <img src="../images/by-value-delete-error.png" alt="Delete Warning" title="Delete Warning" style="border: 1px solid gray; zoom:70%;">     
+3. The system allows you to delete the metric only after resolving all dependencies.
+
+4. Verify the metric is deleted and related data are removed.  
+    <img src="../images/by-value-delete-error.png" alt="Delete Warning" title="Delete Warning" style="border: 1px solid gray; zoom:80%;">     

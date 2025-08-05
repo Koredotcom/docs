@@ -527,7 +527,7 @@ Key benefits
 * Flexibility with custom/system integrations and prompts.
 * Seamless orchestration between user input, functions, and responses.  
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md#tools)
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#tools)
 
 
 **GenAI Node and Prompt Node Renaming**
