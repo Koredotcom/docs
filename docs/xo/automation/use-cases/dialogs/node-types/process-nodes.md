@@ -11,7 +11,7 @@ The setup of a Process node in a Dialog Task involves the following steps:
 
 To add a Process node, please follow the steps below:
 
-1. **Select the Virtual Assistant** that you want to work with.
+1. **Select the AI Agent** that you want to work with.
 2. **Open the Dialog Task** to which you want to add the node. 
 3. **Add the Process node**. The node configuration panel will open automatically, with the **Component Properties** tab selected.
 
@@ -34,7 +34,7 @@ The Component Properties tab lets you modify configurations of this process acro
     2. **Send Bot Response to Process App**: The node sends the Bot Response to the Process App, which can then use it to complete other configured tasks. 
     3. **Get Process Tasks**: The node retrieves process tasks from within the Process App, then includes these tasks within the current Dialog Task. 
 3. **Choose a Process App** to connect the node to. 
-4. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the bot. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespaces](../../../../../app-settings/managing-namespace){:target="_blank"}.
+4. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespaces](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
 <img src="../images/process-node-component-properties.png" alt="Process node - Component properties" title="Process node - Component Properties" style="border:1px solid gray;zoom:70%;">
     

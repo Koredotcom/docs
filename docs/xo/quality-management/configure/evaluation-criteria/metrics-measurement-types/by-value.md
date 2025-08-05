@@ -361,26 +361,27 @@ Make sure that the following GenAI features are enabled:
 
             **Not Applicable**: Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
             
-                !!! Note
+            !!! Note
 
-                    If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
+                If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
 
 1. Click **Create** to save and apply the agent answer metric configuration.
 
-## Managing By Value Metrics
+### Edit or Delete By Value Metrics
 
-### Edit By Value Metrics
+Steps to edit or delete any existing **By Vlaue** evaluation metrics:
 
-Steps to edit existing **By Value** Metrics:
-
-1. Right-click to select any of the existing **By Value Metrics**.   
+1. Right-click on a desired evaluation metric name **By Value** metrics category.     
 <img src="../images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:0%;">    
 
-2. Click **Edit** to update the required **Edit By Value Evaluation Metrics** dialog box fields.
+2. Choose an option:
 
-3. Click **Delete** to remove the selected By Value metrics.
+    * Click **Edit** to modify the selected metric details.    
+    <img src="../images/by-playbook-edit-metrics.png" alt="Edit Playbook" title="Edit Playbook" style="border: 1px solid gray; zoom:70%;"> 
 
-4. Click **Update** to save the changes.
+    * Click **Delete** to remove the selected metric.
+
+4. Click **Update** to save the changes.2. 
 
 #### Language Dependency Warnings
 
