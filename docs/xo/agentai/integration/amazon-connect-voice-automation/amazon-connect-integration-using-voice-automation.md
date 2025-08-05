@@ -5,7 +5,11 @@ This document outlines the steps for Kore users to integrate Kore Voice Automati
 ## Prerequisites
 
 * External voice transfer connectors per account with AWS Connect Instance enabled.
-* A Kore voice AI Agent trained with few use cases.
+* A Kore voice AI Agent trained with few use cases. 
+
+!!! note
+
+    Amazon Connect external voice pricing is subject to change. Refer to the [Amazon Connect External Voice Pricing Changes](https://aws.amazon.com/about-aws/whats-new/2025/05/amazon-connect-external-voice-pricing-changes/){:target="_blank"} document for the latest information. 
 
 ## Setup Instructions
 
