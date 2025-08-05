@@ -15,7 +15,7 @@ The following table displays the features and the supported models.
 | OpenAI - GPT 3.5 Turbo, GPT 4, GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     | ✅     |
 | OpenAI -   GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     | ✅     |
 | Custom LLM     | ✅     | ✅     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅     |
-| Kore.ai XO GPT     | ✅     | ✅     | ❌     | ❌     | ❌     | ❌     | ✅     |
+| XO GPT     | ✅     | ✅     | ❌     | ❌     | ❌     | ❌     | ✅     |
 | Amazon Bedrock     | ❌     | ❌     | ❌     | ❌     | ❌     | ❌     |❌     |
 
 \* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini don't include system prompts, but they can be used with custom prompts.* 
