@@ -480,7 +480,7 @@ function onBookingFailure(requestId) {
 
 ## sdk.getMessages
 
-This function is used to get the transcript of previous conversations between the bot and the user. It works similar to the public API Conversation History ([see here for Conversation History API](../../apis/automation/conversation-history))
+This function is used to get the transcript of previous conversations between the bot and the user. It works similar to the public API Conversation History. See here for [Conversation History API](../apis/automation/conversation-history.md).
 
 **Usage**
 Fetches the conversational messages between the bot and user in reverse chronological order. This API supports pagination. You can provide offset/skip and limit to get a certain number of messages at a time.
