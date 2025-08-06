@@ -218,6 +218,9 @@ nav:
     - Business Solutions:
       - AI for Service (XO): ai-agents/ai-for-service.md
       - AI for Work: ai-agents/ai-for-work.md
+    - How Tos:
+      - Share Contextual Metadata with AI for Service: ai-agents/agentic-apps/howto/share-context-with-AIforService.md
+      - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
