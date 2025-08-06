@@ -16,7 +16,7 @@ DialogGPT is an intelligent, agentic orchestration engine that powers natural co
 * **Multi-intent Identification**: The system recognizes and processes multiple intents within a single user query, dynamically managing and prioritizing tasks based on dependencies and execution order.
 * **Conversational Nuances Management**: DialogGPT handles conversational nuances such as pauses, repetitions, and restarts, adapting to the flow of conversation to provide a more natural, human-like interaction experience.
 * **Dynamic Response Generation**: It generates responses grounded in the current context, utilizing user data, conversation history, and business rules to ensure each response is relevant and contextually appropriate.
-* **Model Flexibility**: It supports a wide range of model options, allowing users to choose from commercial or custom models or Kore.ai’s XO GPT models, which are adaptable for various use cases. This flexibility ensures that DialogGPT can meet the unique needs of your project, no matter how complex or specialized.
+* **Model Flexibility**: It supports a wide range of model options, allowing users to choose from commercial or custom models or XO GPT models, which are adaptable for various use cases. This flexibility ensures that DialogGPT can meet the unique needs of your project, no matter how complex or specialized.
 * **Granular Intent Resolution**: It refines broad user queries into specific, actionable intents by leveraging domain knowledge graphs, ensuring more precise understanding and response generation.
 
 ## Key Benefits

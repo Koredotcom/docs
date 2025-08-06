@@ -31,7 +31,7 @@ To configure Generative AI and LLM, go to **Product Switcher** > **Generative AI
 The Integration of Generative AI and LLM enables the following features:
 
 
-* Model Library: Connect to Generative AI models of your choice using the out-of-box integrations (pre-built LLM integration) or custom integrations or Kore.ai XO GPT Module.
+* Model Library: Connect to Generative AI models of your choice using the out-of-box integrations (pre-built LLM integration) or custom integrations or XO GPT Module.
 
 * Prompts Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
 
@@ -73,7 +73,7 @@ The Integration of Generative AI and LLM enables the following features:
 
 All these features benefit an AI Agent developers, NLP developers, and testers as follows:
 
-* Being able to select among Kore.ai XO GPT or custom or pre-built LLM integrations.
+* Being able to select among XO GPT or custom or pre-built LLM integrations.
 * Developers can create dialog tasks on the fly through the prebuilt Dialog Tasks Flow.
 * Developers can unlock the power of Generative AI with their prompts, enabling them to build creative and custom use cases.
 * Mundane tasks like generating dialog tasks or training utterances are automated to help developers be more productive and focus on other important tasks like enhancing conversation design, creating complex test cases, and more.
@@ -94,7 +94,7 @@ LLM and Generative AI features involve data sharing with third-party LLM provide
 
 
 ## Next Steps
-1. Integrate a [pre-built or custom LLM or Kore.ai XO GPT](models-library.md) in models library. 
+1. Integrate a [pre-built or custom LLM or XO GPT](models-library.md) in models library. 
 2. Create [ New Prompts](prompts-library.md) in the prompts library.
 3. Enable[ GenAI Features](genai-features.md).
 4. (Optional) Enable [Data Anonymization](data-anonymization.md) and [Guardrails](guardrails.md).

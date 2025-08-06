@@ -13,10 +13,10 @@ When you register your app, you will need to select a security algorithm:
 1. Open the bots that you are working with.
 2. From the **App Settings** menu, go to **Dev Tools > Web/Mobile SDK**.
 3. In the **JWT App** drop-down list, select your existing app registration or click **Add** to create a new.
-![SDK Home](../images/sdkhome.png "SDK Home")
+![SDK Home](images/sdkhome.png "SDK Home")
 
 4. Enter the details of your application.
-![Create a new app](../images/jwtapp.png "Create a new app")
+![Create a new app](images/jwtapp.png "Create a new app")
 
     * In the **JWT App** field, enter the name for the app registration used in App Builder. For example, **weather app**.
     * In the **JWT Signing** Algorithms Used For Client App Authentication drop-down list, select one of the following security algorithms:
@@ -25,4 +25,4 @@ When you register your app, you will need to select a security algorithm:
     * Enable **Enforce JTI Claim**.
     * Enforce JWE Encryption.
     * Click **Next**. On successful creation of the application, you will see client Id and secret for the app. Click **Done**.
-![App creation successful](../images/newappsuccess.png "App creation successful.")
+![App creation successful](images/newappsuccess.png "App creation successful.")

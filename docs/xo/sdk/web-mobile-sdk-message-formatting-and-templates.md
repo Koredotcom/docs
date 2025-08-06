@@ -49,11 +49,11 @@ var message={
 print(JSON.stringify(message));
 ```
 
-![Button template](../images/web-mobile-message-templates/button-template.png "Button template")
+![Button template](images/web-mobile-message-templates/button-template.png "Button template")
 
 ### Quick Replies Template – Text
 
-Shows a formatted text message to the user with clickable text choices. \
+Shows a formatted text message to the user with clickable text choices. 
 **Required Parameters**
 
 * **text**: Enter text consisting of up to 640 characters
@@ -87,12 +87,12 @@ var message=
 print(JSON.stringify(message));
 ```
 
-![Quick Replies template](../images/web-mobile-message-templates/quick-replies-template.png "Quick replies template")
+![Quick Replies template](images/web-mobile-message-templates/quick-replies-template.png "Quick replies template")
 
 
 ### Quick Replies Template – Text and Image
 
-Shows formatted text to the user with clickable text and images as choices. \
+Shows formatted text to the user with clickable text and images as choices. 
 **Required Parameters**
 
 * **text**: Enter text consisting of up to 640 characters
@@ -173,7 +173,7 @@ var message =
     print(JSON.stringify(message));
 ```
 
-![Feedback Survey template](../images/web-mobile-message-templates/feedback-survey-template.png "Feedback Survey template")
+![Feedback Survey template](images/web-mobile-message-templates/feedback-survey-template.png "Feedback Survey template")
 
 
 **CSAT**
@@ -218,7 +218,7 @@ var message =
       print(JSON.stringify(message));
 ```
 
-![CSAT template](../images/web-mobile-message-templates/csat.png "CSAT template")
+![CSAT template](images/web-mobile-message-templates/csat.png "CSAT template")
 
 **Like/Dislike**
 
@@ -263,7 +263,6 @@ var message =
      print(JSON.stringify(message));
 ```
 
-![Like Dislike template](../images/web-mobile-message-templates/like-dislike-template.png "like dislike template")
 
 ### List Template
 
@@ -390,7 +389,7 @@ var message =
 print(JSON.stringify(message));
 ```
 
-![List template](../images/web-mobile-message-templates/list-template.png "List template")
+![List template](images/web-mobile-message-templates/list-template.png "List template")
 
 
 ### Error Template
@@ -409,7 +408,7 @@ var message={
 print(JSON.stringify(message));
 ```
 
-![Error template](../images/web-mobile-message-templates/error-template.png "Error template")
+![Error template](images/web-mobile-message-templates/error-template.png "Error template")
 
 
 ### Attachment Template
@@ -422,8 +421,9 @@ The following formats are supported for attachment template:
 * video = [‘mp4’, ‘mov’, ‘3gp’, ‘flv’]
 * image = [‘png’, ‘jpg’, ‘jpeg’, ‘.GIF’]
 
-!!!note
-  To display images in the attachment template use the “url” of the image.
+!!! note
+
+    To display images in the attachment template use the “url” of the image.
 
 **Examples**
 
@@ -441,7 +441,7 @@ var message ={
 print(JSON.stringify(message));
 ```
 
-![Attachment template](../images/web-mobile-message-templates/attachment-template.jpg "attachment template")
+![Attachment template](images/web-mobile-message-templates/attachment-template.jpg "attachment template")
 
 
 **Image Template**
@@ -458,7 +458,7 @@ var message = {
     print(JSON.stringify(message));
 ```
 
-![Attachment template](../images/web-mobile-message-templates/attachment-template-image.jpg "attachment template")
+![Attachment template](images/web-mobile-message-templates/attachment-template-image.jpg "attachment template")
 
 **Video Template**
 
@@ -476,7 +476,7 @@ var message =
   }
     print(JSON.stringify(message));
 ```
-![Attachment template](../images/web-mobile-message-templates/attachment-template-video.jpg "attachment template")
+![Attachment template](images/web-mobile-message-templates/attachment-template-video.jpg "attachment template")
 
 To play the video within the assistant window, use this JS script:
 
@@ -492,7 +492,7 @@ var message =
 }
 print(JSON.stringify(message));
 ```
-![Attachment template](../images/web-mobile-message-templates/attachment-template-playback.jpg "attachment template")
+![Attachment template](images/web-mobile-message-templates/attachment-template-playback.jpg "attachment template")
 
 
 ### Text Template
@@ -621,14 +621,16 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-![Carousel template](../images/web-mobile-message-templates/carousel-template.png "carousel template")
+![Carousel template](images/web-mobile-message-templates/carousel-template.png "carousel template")
 
 ### Piechart Template
 
-!!!note
+!!! note
+
     This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
-Shows the data in a Pie chart in one of these three variations – regular full pie, donut pie, and donut pie with legend table. If you do not specify a type, “regular’ will be considered by default \
+Shows the data in a Pie chart in one of these three variations – regular full pie, donut pie, and donut pie with legend table. If you do not specify a type, “regular’ will be considered by default.
+
 **Required Parameters**
 
 * template_type
@@ -663,15 +665,17 @@ var message = {
   }
 print(JSON.stringify(message));
 ```
-![Piechart template](../images/web-mobile-message-templates/piechart-template.png "Piechart template")
+![Piechart template](images/web-mobile-message-templates/piechart-template.png "Piechart template")
 
 
 ### Line Chart Template
 
-!!!note
+!!! note
+    
     This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
-Shows the data in a line chart. \
+Shows the data in a line chart.
+
 **Required Parameters**
 
 * template_type
@@ -708,15 +712,17 @@ var message =
   }
 print(JSON.stringify(message));
 ```
-![Line Chart template](../images/web-mobile-message-templates/line-chart-template.png "Line chart template")
+![Line Chart template](images/web-mobile-message-templates/line-chart-template.png "Line chart template")
 
 
 ### Bar Chart Template
 
-!!!note
+!!! note
+  
     This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
-Shows the data in a bar graph in one of these variants: a single data series simple bar graphs, multiple data series bar graphs, or stacked multiple data series bar graphs. \
+Shows the data in a bar graph in one of these variants: a single data series simple bar graphs, multiple data series bar graphs, or stacked multiple data series bar graphs.
+
 **Required Parameters**
 
 * template_type
@@ -755,14 +761,15 @@ var message =
     }}
 print(JSON.stringify(message));
 ```
-![Bar chart template](../images/web-mobile-message-templates/bar-chart-template.png "Bar chart template")
+![Bar chart template](images/web-mobile-message-templates/bar-chart-template.png "Bar chart template")
 
 ### Regular Table Template
 
-!!!note
+!!! note
+
     This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
-Shows the data in a regular or responsive table format. \
+Shows the data in a regular or responsive table format. 
 **Required Parameters**
 
 * template_type
@@ -797,15 +804,16 @@ var message =
     }}
 print(JSON.stringify(message));
 ```
-![Regular table template](../images/web-mobile-message-templates/regular-table-template.png "Regular table template")
+![Regular table template](images/web-mobile-message-templates/regular-table-template.png "Regular table template")
 
 
 ### Mini Table Template
 
-!!!note
+!!! note
+
     This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
-For each row header in a table, this template shows column data as separate cards. This is ideally suitable for data with 3-4 columns and 4-5 rows. \
+For each row header in a table, this template shows column data as separate cards. This is ideally suitable for data with 3-4 columns and 4-5 rows. 
 **Required Parameters**
 
 * template_type
@@ -835,7 +843,7 @@ var message = {
   };
 print(JSON.stringify(message));
 ```
-![Mini Table template](../images/web-mobile-message-templates/mini-table-template.png "Mini table template")
+![Mini Table template](images/web-mobile-message-templates/mini-table-template.png "Mini table template")
 
 
 ## BotKit SDK Message Formatting with Templates
@@ -935,7 +943,8 @@ When custom formatting is not defined, the following default message formatting 
 
 Apart from using the above templates, you can build your own custom template. A few custom templates are provided below for your reference.
 
-!!!note
+!!! note
+
     You can find more custom templates on Git: [https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.js](https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.js).
 
 Drop down template
@@ -978,7 +987,7 @@ var message =  {
 };
 print(JSON.stringify(message));
 ```
-![Custom Drop down template](../images/web-mobile-message-templates/custom-dropdown-template.png "Custom Drop-down list template")
+![Custom Drop down template](images/web-mobile-message-templates/custom-dropdown-template.png "Custom Drop-down list template")
 
 Like-dislike template: 
 
@@ -991,7 +1000,7 @@ var message = {
   };
 print(JSON.stringify(message)) ;
 ```
-![Custom Like Dislike template](../images/web-mobile-message-templates/custom-like-dislike-template.png "Custom Drop-down list template")
+![Custom Like Dislike template](images/web-mobile-message-templates/custom-like-dislike-template.png "Custom Drop-down list template")
 
 
 
@@ -1027,7 +1036,7 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-![Custom Multi select template](../images/web-mobile-message-templates/custom-multiselect-template.png "Custom Multiselect list template")
+![Custom Multi select template](images/web-mobile-message-templates/custom-multiselect-template.png "Custom Multiselect list template")
 
 DatePicker template:
 
@@ -1047,5 +1056,6 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-!!!note
-    To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](../automation/use-cases/dialogs/prompt-editor.md).
+!!! note
+
+    To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](automation/use-cases/dialogs/prompt-editor.md).

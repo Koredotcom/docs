@@ -6,7 +6,7 @@ Take a look at this sample utterance: _Book me a flight from LA to NYC on Sunday
 
 So, in a Dialog Task, for every critical data you want to get from a user utterance, you should create a corresponding entity node. You can add prompt messages to these nodes for users to input the required values.
 
-The Kore.ai XO Platform supports ~30 [entity types](../../entity-types/){:target="_blank"} such as Address, Airport, Quantity, and so on. You can also define the entities as a selection from a list, free-form entry, file or image attachment from a user, or as regex expressions. You can also create custom regex and use these regex expressions as patterns to enable the masking of sensitive data contextually.
+The Platform supports ~30 [entity types](../entity-types.md){:target="_blank"} such as Address, Airport, Quantity, and so on. You can also define the entities as a selection from a list, free-form entry, file or image attachment from a user, or as regex expressions. You can also create custom regex and use these regex expressions as patterns to enable the masking of sensitive data contextually.
 
 !!! Note
 
@@ -18,7 +18,7 @@ The Kore.ai XO Platform supports ~30 [entity types](../../entity-types/){:target
 Setting up an entity node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the **Entity** node.
-2. Add the entity node in the designated place. For information on adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+2. Add the entity node in the designated place. For information on adding nodes, [refer here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
 3. The Entity window is displayed with the **Component Properties** tab selected by default.
 
 <img src="../images/entity-node-img1.png" alt="Entity node" title="Entity node" style="border:1px solid gray;zoom:70%;">
@@ -37,16 +37,16 @@ Setting up an entity node in a dialog task involves the following steps:
 
 1. On the **Component Properties** tab, enter a **Name** and **Display Name** for the entity node. Entity names cannot include spaces.
 2. From the **Type** drop-down list, select an entity type depending on the expected user input. For example, if you want the user to type the departure date, select **Date** from the drop-down. The platform does the basic validation based upon the Type selected.  
-The **Entity Type** provides the NLP Interpreter with the expected type of data from a user utterance to enhance recognition and system performance. For more information, refer to [Entity Types](../../entity-types/){:target="_blank"}.
+The **Entity Type** provides the NLP Interpreter with the expected type of data from a user utterance to enhance recognition and system performance. For more information, refer to [Entity Types](../entity-types.md){:target="_blank"}.
 3. Based on the Type selected, you can set the Entity as **Multi-item**, allowing the user multiple selections. If enabled, the AI Agent should expect multiple items from the user for this entity separated by a comma (,), semicolon (;), or ‘and’.
 4. Under the **User Prompt** section, enter the prompt message that you want the user to see for this entity. For example, _Enter the Departure Date_.
-    1. You can enter channel-specific messages for user prompts using the **Manage** link. For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
+    1. You can enter channel-specific messages for user prompts using the **Manage** link. For more information, refer to [Using the Prompt Editor](../prompt-editor.md){:target="_blank"}.
     2. You can override the user prompt for this particular instance. To override,
         * Click the **Settings** icon on the right.
         * Enable the **Override for this instance** toggle. Once you enable this option, you can enter the user prompt for this particular instance. Disabling this option would delete the instance-specific prompt and revert it to the component property.
 
 5. Under the **Error Prompts** section, review the default error message, and if required, you can modify the error messages displayed for this entity.
-    1. To manage the error messages, click **Manage** link. For more information, refer to [User Prompts](../../prompt-editor/){:target="_blank"}.
+    1. To manage the error messages, click **Manage** link. For more information, refer to [User Prompts](../prompt-editor.md){:target="_blank"}.
     2. You can override the user prompt for this particular instance. To override,
         * Click the **Settings** icon on the right.
         * Enable the **Override for this instance** toggle. Once you enable this option, you can enter the user prompt for this particular instance. Disabling this option would delete the instance-specific prompt and revert it to the component property.
@@ -83,7 +83,7 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
     In the conversation history, **data_purge** is displayed instead of the non-persistent data.  
         <img src="../images/transient-entity.png" alt="transient-entity" title="transient-entity" style="border:1px solid gray;zoom:70%;">
 
-    2. Enter a regular expression(regex) to identify the sensitive data using the custom regex pattern. To add a regex pattern, click **+Add Pattern**. For example, add the regex `[a-zA-Z]{3}[-]\d{4}` pattern to validate user input and return a sample response as: `{"regex":"NLP-1234"}`. For more information, see [write regular expressions](https://www.geeksforgeeks.org/write-regular-expressions/){:target="_blank"} and [custom entity type](../../entity-types/#custom){:target="_blank"} articles.
+    2. Enter a regular expression(regex) to identify the sensitive data using the custom regex pattern. To add a regex pattern, click **+Add Pattern**. For example, add the regex `[a-zA-Z]{3}[-]\d{4}` pattern to validate user input and return a sample response as: `{"regex":"NLP-1234"}`. For more information, see [write regular expressions](https://www.geeksforgeeks.org/write-regular-expressions/){:target="_blank"} and [custom entity type](../entity-types.md#custom){:target="_blank"} articles.
         
         <img src="../images/entity-node-img4.png" alt="Entity node - Add Regex pattern" title="Entity node - Add Regex pattern" style="border:1px solid gray;zoom:70%;">
 
@@ -92,9 +92,9 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
         * **Replacement** – Replace the data with a static value that you enter in the Sensitive Entity settings.
         * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
 
-    For more information, see the [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"} article.
+    For more information, see the [Redacting Personally Identifiable Information ](../../../../app-settings/advanced-settings/pii-data-masking.md){:target="_blank"} article.
 
-9. In the **Variable Namespaces** section, associate the Variable Namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace/){:target="_blank"}.
+9. In the **Variable Namespaces** section, associate the Variable Namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
 
 
 ### Instance Properties
@@ -111,7 +111,7 @@ Use the Instance Properties to determine whether to make the entity value mandat
         * You can configure the number of times the user would be prompted for this entity value by setting the number of **Allowed Retries** to any value between 1 and 5, the default being 5.
         * Allowed Retries indicates that the Platform re-prompts the user for the correct input if the input provided does not match the configured entity type. For example, if the user inputs an email ID for the zip code entity type, the system prompts the user up to 5 times until the user provides the zip code. Once the 5 retries are exhausted, the **Behavior on Exceeding Retries** flow is initiated.
         * For voice channels, when a user input does not match the entity type, and a Node Grammar is defined, the Platform applies the retry count set for “**No Match**” under **Voice Call Properties**. Otherwise, the Platform follows the retry count set for “**Allowed Retries**” under Instance Properties.
-        * Further, you can define the AI Agent’s **Behavior on Exceeding Retries**, this can be set to trigger _End of Dialog_ or _Transition to a Node_. This would result in the creation of a **Connection Rule** called _Behavior on Exceeding Retries_. The message displayed to the user on exceeding retries can be customized from the Standard Responses. [Read more here](../../../../intelligence/conversation-management/standard-responses/){:target="_blank"}.
+        * Further, you can define the AI Agent’s **Behavior on Exceeding Retries**, this can be set to trigger _End of Dialog_ or _Transition to a Node_. This would result in the creation of a **Connection Rule** called _Behavior on Exceeding Retries_. The message displayed to the user on exceeding retries can be customized from the Standard Responses. [Read more here](../../../intelligence/conversation-management/standard-responses.md){:target="_blank"}.
 
     * **Optional**: The user is prompted only once for this entity and the system proceeds with any input provided by the user. In case ambiguous values for these optional entities are detected in the User Utterance, then a resolution prompt is displayed allowing the user to pick the correct value.  
     You can set a value under the **Default Value** field. This value would be assigned to this entity when the task execution reaches this entity and the user does not provide any value when prompted, and if no value is available from previous utterances.
@@ -119,7 +119,7 @@ Use the Instance Properties to determine whether to make the entity value mandat
     You can set a value under the **Default Value** field. This value would be assigned to this entity when the task execution reaches this entity and no value is available from previous utterances.
 
 3. **User Input Correction** (v7.3) can be used to define whether the user input needs to be auto-corrected. This option is available only for string type entities. The two options are listed below:
-    * **Auto-correct user input** is the default setting. The platform builds a custom dictionary for each AI Agent to include all synonyms, task names, pattern words, and small talk utterance words on top of a standard dictionary. This feature is not supported in all languages, [Click here for details](../../../../../app-settings/language-management/multi-lingual-bot-behavior){:target="_blank"}.
+    * **Auto-correct user input** is the default setting. The platform builds a custom dictionary for each AI Agent to include all synonyms, task names, pattern words, and small talk utterance words on top of a standard dictionary. This feature is not supported in all languages, [Click here for details](../../../../app-settings/language-management/multi-lingual-bot-behavior.md){:target="_blank"}.
     * **Do not auto-correct user input:** To ensure backward compatibility, the following settings are applied to existing AI Agents:
 
         <table border="1">
@@ -163,7 +163,7 @@ Use the Instance Properties to determine whether to make the entity value mandat
 
 5. Further, you can restrict the platform from reusing the input provided for this entity to extract any other entities by selecting the **Do not reuse** option.
 6. Under the **Entity Rules** section, you can configure rules to validate the user input.
-7. Use the **Add Rules** button to enter a JSON structure for the validation and entity extraction rules. [Refer here for the details on entity rules](../../entity-rules/){:target="_blank"}.
+7. Use the **Add Rules** button to enter a JSON structure for the validation and entity extraction rules. [Refer here for the details on entity rules](../entity-rules.md){:target="_blank"}.
 8. In **Advanced Controls** set up these options:
     * **Intent Detection** (Applies only to _String_ and _Description_ entities): Select one of these options to determine the course of action if the AI Agent encounters an entity as a part of the user entry for the _String_ or _Description_ entities:
         * **Accept input as entity value and discard intent detected**: The AI Agent captures the user entry as a string or description and ignores the intent.
@@ -172,7 +172,7 @@ Use the Instance Properties to determine whether to make the entity value mandat
     
     * **Interruptions Behavior**: To define the interruption handling at this node. You can select from the below options:
         * **Use the task level ‘Interruptions Behavior’ setting**: The AI Agent refers to the **Interruptions Behavior** settings set at the dialog task level.
-        * **Customize for this node:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it . You can choose whether to allow interruptions or not, or whether to allow the end user to select the behavior. You can further customize Hold and Resume behavior. Read the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article for more information.
+        * **Customize for this node:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it . You can choose whether to allow interruptions or not, or whether to allow the end user to select the behavior. You can further customize Hold and Resume behavior. Read the [Interruption Handling and Context Switching](../../../intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article for more information.
     * **Analytics-Containment Type:** Select one of the below options to determine how to treat user-abandoned conversations.
         * **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
         * **Customize for this node:** You can customize the Containment Type for this node by selecting this option. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
@@ -181,9 +181,9 @@ Use the Instance Properties to determine whether to make the entity value mandat
 
         !!! Note
 
-            When a user input results in an ambiguous entity value and an intent, you can customize how the AI Agent should respond by configuring the setting – **Precedence for Intents with Ambiguous Entities**. [Learn more](../../../../natural-language/nlu-configurations/engine-tuning){:target="_blank"}.
+            When a user input results in an ambiguous entity value and an intent, you can customize how the AI Agent should respond by configuring the setting – **Precedence for Intents with Ambiguous Entities**. [Learn more](../../../natural-language/nlu-configurations/engine-tuning.md){:target="_blank"}.
     
-    * **Custom Tags**: This is where you can define tags to build custom profiles of your AI Agent conversations. [Click here to learn more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+    * **Custom Tags**: This is where you can define tags to build custom profiles of your AI Agent conversations. [Click here to learn more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
 
 #### The User Input Flow
@@ -205,17 +205,17 @@ When a user is prompted for input, the following is the process performed by the
 
 ### NLP Properties
 
-1. On the **NLP Properties** tab, under the **Suggested Synonyms for {entity name}** section, enter synonyms for your entity. Click **Enter** after each entry to save it. For more information, refer to [Managing Synonyms](../../../../natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
-2. Under the **Suggested Patterns for {entity name}** section, click **+ Add Pattern** to add new patterns for your entity. The **Patterns** field is displayed. For more information, refer to [Managing Patterns](../../../../natural-language/training/fundamental-meaning/#navigate-to-the-patterns-tab){:target="_blank"}.
+1. On the **NLP Properties** tab, under the **Suggested Synonyms for {entity name}** section, enter synonyms for your entity. Click **Enter** after each entry to save it. For more information, refer to [Managing Synonyms](../../../natural-language/training/fundamental-meaning.md#manage-synonyms){:target="_blank"}.
+2. Under the **Suggested Patterns for {entity name}** section, click **+ Add Pattern** to add new patterns for your entity. The **Patterns** field is displayed. For more information, refer to [Managing Patterns](../../../natural-language/training/fundamental-meaning.md#navigate-to-the-patterns-tab){:target="_blank"}.
 3. Under the **Manage Context** section, in the **Context Output** field, define the context tags to be set in the context when this entity populates.
-4. You can select **Auto emits the entity values captured** option as part of the Context Object. ([Click here to learn more about Context Management](../../../../intelligence/context-management){:target="_blank"})
+4. You can select **Auto emits the entity values captured** option as part of the Context Object. ([Click here to learn more about Context Management](../../../intelligence/context-management.md){:target="_blank"})
 
     <img src="../images/entity-node-img6.png" alt="Entity node - NLP Properties" title="Entity node - NLP Properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### IVR Properties
 
-You can use this tab to define the input mode, grammar, prompts, and call behavior parameters for this node to use in IVR Channel. You can define this at the node level. [Click here for details](../../../../../channels/IVR-integration/#configure-dialog-node-ivr-properties){:target="_blank"}.
+You can use this tab to define the input mode, grammar, prompts, and call behavior parameters for this node to use in IVR Channel. You can define this at the node level. [Click here for details](../../../../channels/IVR-integration.md#configure-dialog-node-ivr-properties){:target="_blank"}.
 
 <img src="../images/entity-ivr-properties.gif" alt="Entity node - IVR Properties" title="Entity node - IVR Properties" style="border:1px solid gray;zoom:70%;">
 
@@ -232,7 +232,7 @@ From the node’s **Connections** tab, you can determine which node in the dialo
 
     These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
 
-To set up component connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"}.
+To set up component connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections](../node-connections/nodes-conditions.md){:target="_blank"}.
 
 If you want to delete a condition, hover over it and click the bin icon at its top right. Keep in mind that deleted conditions cannot be restored.
 
@@ -255,9 +255,8 @@ The Connection Path property offers three default variants:
 
 #### Related Links
 
-1. [Supported Entity Types](../../entity-types){:target="_blank"}
-2. [Supported Company Names](../../entity-types/#company-name-or-organization-name){:target="_blank"}
-3. [Supported Time Zones](../../entity-types/#time-zone){:target="_blank"}
-4. [Supported Colors](../../entity-types/#color){:target="_blank"}
-5. [Composite Entities](../../../../../how-tos/build-a-banking-assistant/train-the-assistant/composite-entities){:target="_blank"}
-6. [Entity Rules](../../entity-rules){:target="_blank"}
+1. [Supported Entity Types](../entity-types.md){:target="_blank"}
+2. [Supported Company Names](../entity-types.md#company-name-or-organization-name){:target="_blank"}
+3. [Supported Time Zones](../entity-types.md#time-zone){:target="_blank"}
+4. [Supported Colors](../entity-types.md#color){:target="_blank"}
+6. [Entity Rules](../entity-rules.md){:target="_blank"}
