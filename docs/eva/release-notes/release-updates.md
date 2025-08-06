@@ -59,10 +59,6 @@ New enterprise-grade features for communication and data governance have been ad
 
 Improvised AI-generated code responses with dedicated code block components that feature distinct styling to clearly separate code from regular text. Each code block now includes a built-in **Copy Response** button, eliminating the need to manually select and copy code content. This streamlined approach provides instant clipboard access and improves the overall developer experience.
 
-**Conversation Context Management**
-
-The conversation interface has been redesigned to improve user experience during agent interactions. A persistent ***Talking to [Agent Name]*** banner, smart navigation guards that trigger confirmation pop-ups, and the requirement for users to explicitly end current agent interactions before switching contexts.
-
 <hr>
 
 ## v1.9.2 June 21, 2025
