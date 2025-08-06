@@ -4,7 +4,7 @@ The Platform BotKit SDK runs as a Node.js application. You can add your own reve
 
 This section provides a high-level overview of BotKit SDK installation and configuration.
 
-For a detailed end-to-end tutorial on installation and setup using our Platform Sample bots, see this [BotKit SDK Tutorial](../tutorials/flight-search-sample-bot).
+For a detailed end-to-end tutorial on installation and setup using our Platform Sample bots, see this [BotKit SDK Tutorial](./tutorials/flight-search-sample-bot.md).
 
 To install the BotKit SDK, you will need to:
 
@@ -26,7 +26,7 @@ In the config.json file in the SDK, you will need to copy the following authenti
 * appId = ClientID
 * appKey – Client Secret
 
-For more information, see [SDK App Registration](../app-registration).
+For more information, see [SDK App Registration](app-registration.md).
 
 ## Installation and Setup
 

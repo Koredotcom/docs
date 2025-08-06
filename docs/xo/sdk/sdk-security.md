@@ -23,7 +23,7 @@ uses the JWT (JSON Web Token) mechanism to handle the authentication.
 
 The following diagram depicts a typical JWT flow in Platform. 
 
-![JWT Flow](../images/JWT-flow.png "JWT Flow")
+![JWT Flow](images/JWT-flow.png "JWT Flow")
 
 #### JWT Tokens
 
@@ -42,10 +42,10 @@ The JWT Header defines the token type, which is JWT, and the security algorithm.
 
 The JWT type can be one of:
 
-* **HS256 / HS512 (HMAC with SHA-256 / SHA-512)**– These algorithms use a **Secret Key** to sign the token. The **Secret Key** is generated when the app is registered on the Platform when defining your bot’s Web/Mobile Client channel.
+* **HS256 / HS512 (HMAC with SHA-256 / SHA-512)**– These algorithms use a **Secret Key** to sign the token. The **Secret Key** is generated when the app is registered on the Platform when defining your Web/Mobile Client channel.
 * **RS256 / RS512 (RSA signature with SHA-256 / SHA-512)** – These are RSA public/private key-based algorithms to sign and verify the token. The client **Public Key** is defined when the app is registered on the Platform. The client app signs the token using a **Private Key**, and the Platform verifies this token using the **Public Key**.
 
-To use these JWT types for your bot, you need to register your application and select the algorithm type. For more information about using JWT, see  [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519) and [Introduction to JSON Web Tokens](https://jwt.io/introduction/).
+To use these JWT types, you need to register your application and select the algorithm type. For more information about using JWT, see  [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519) and [Introduction to JSON Web Tokens](https://jwt.io/introduction/).
 
 #### JWT Payload
 
@@ -232,7 +232,7 @@ There are several open-source libraries available to generate JWT, for example,
 
 To generate credentials for your clients, you must register your client app in the Platform tool. For more information, see [SDK App Registration](../app-registration).
 
-You can also try out our tutorial using a sample bot, a test application, and configuring your localhost server for JWT generation. For more information, see the [Web SDK Tutorial](../tutorials/web-sdk).
+You can also try out our tutorial, a test application, and configuring your localhost server for JWT generation. For more information, see the [Web SDK Tutorial](./tutorials/web-sdk.md).
 
 ## JSON Web Encryption (JWE)
 
@@ -268,7 +268,7 @@ Following algorithms are supported for content encryption:
 * **“kid”**(Key ID): Key Id of the Platform’s public key. This will be displayed when you enable the JWE on the Platform.
 * **“typ”** (Token Type): This will have JWT as a value since the wrapped content is JWT.
 
-Below is the decoded sample JWE header: \
+Below is the decoded sample JWE header: 
 ```json
 { 
 "alg": "RSA-OAEP", 
@@ -344,7 +344,7 @@ You can now use the generated JWE token in your application.
 
 The _Public Key_ is displayed in JWK format when you enable the JWE option while creating an SDK app. You can use this in your client library to generate JWE.
 
-![Public Key](../images/publickey.png "Public key")
+![Public Key](images/publickey.png "Public key")
 
 ### Verify and Decrypt the JWE
 

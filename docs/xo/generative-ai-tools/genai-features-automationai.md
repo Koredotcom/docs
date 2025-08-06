@@ -319,7 +319,7 @@ If the feature is disabled, the Platform doesn’t display the Generative AI sug
 This feature generates concise, natural language summaries of interactions between the an AI Agent, users, and human agents. It distills the key intents, entities, decisions, and outcomes into an easy-to-read synopsis. Companies can leverage conversation summarization to boost agent productivity, ensure process compliance, and create better contextual recommendations without having to read lengthy transaction histories. It's pre-integrated with Kore.ai’s Contact Center platform. It's also extensible to third-party applications via API integration.
 !!! note
 
-    For existing apps, by default, the feature is enabled with the Kore.ai XO GPT Model. For new apps, the feature is disabled.
+    For existing apps, by default, the feature is enabled with the XO GPT Model. For new apps, the feature is disabled.
 
 This feature is broadly implemented in two scenarios discussed below:
 
@@ -386,7 +386,7 @@ This feature generates a list of suggested training utterances and NER annotatio
 
 **Usage**
 
-The Platform can generate utterances in the NLU language to train your VA.
+The Platform can generate utterances in the NLU language to train your App.
 
 Once you request to generate utterances for a given intent, the Platform provides utterance suggestions (in the selected NLU language) based on the following information: 
 
@@ -439,4 +439,4 @@ LLM and Generative AI help generate accurate suggestions automatically without c
 
 1. The user selects the relevant use cases from the suggestions to create and configure the an AI Agent accordingly.
 
-If you select Create without use cases when creating a App , the system won’t provide use case suggestions for an AI Agent creation. Only the default Dialogs for Welcome and Fallback tasks are created for the VA.[ Learn more](../getting-started/building-a-virtual-assistant.md).
+If you select Create without use cases when creating a App , the system won’t provide use case suggestions for an AI Agent creation. Only the default Dialogs for Welcome and Fallback tasks are created.[ Learn more](../getting-started/building-a-virtual-assistant.md).
