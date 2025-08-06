@@ -1,4 +1,4 @@
-# Kore.ai Connectorsess
+# Kore.ai Connectors
 
 On the **Kore.ai Connector** page, in the **Security & Control** module of the Admin Console, you can download and configure the Kore.ai Connector Agent for Apps within your secure company intranet to provide secure communications between the XO Platform in the cloud and your network.
 
