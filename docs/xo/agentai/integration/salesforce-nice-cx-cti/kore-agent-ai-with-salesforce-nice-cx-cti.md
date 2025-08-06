@@ -1,6 +1,4 @@
-# Kore Agent AI with Salesforce NICE CX-CTI
-
-## Introduction
+# Kore Agent AI with Salesforce NICE CX-CTI 
 
 This document provides an overview of the setup and configuration process of the Kore Agent AI widget with NICE CX Telephony using the Salesforce NICE CX CTI package.
 
@@ -15,7 +13,8 @@ When a customer calls a NICE CX phone number, the call is received on the Salesf
 * **NICE CX Studio** installed on your device.
 * **Agent Assist Hub** enabled for your NICE CX account.
 * [Kore AgentAssist](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HSGlnUAH){:target="_blank"} for Salesforce installed on your Salesforce account. (Salesforce AppExchange > Search for “Agent AI By Kore.ai, Inc.”)
-* Have the Kore AI Agent credentials saved separately. You need the Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI. Read [Configure Voice Channel](https://docs.kore.ai/agentassist/channels/voice/){:target="_blank"} and [Chat Channel](https://docs.kore.ai/agentassist/channels/chat/){:target="_blank"} for a walkthrough.
+* Have the Kore AI Agent credentials saved separately. You need the Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI. Read [Configure Voice Channel](https://docs.kore.ai/agentassist/channels/voice/){:target="_blank"} and [Chat Channel](https://docs.kore.ai/agentassist/channels/chat/){:target="_blank"} for a walkthrough. 
+* Ensure that Voice Interaction Streams are enabled via NICE. 
 
 ## Shared Responsibilities
 
