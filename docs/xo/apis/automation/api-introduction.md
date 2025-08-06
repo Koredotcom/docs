@@ -1,6 +1,6 @@
 # Using AI for Service Platform APIs
 
-The AI for Service platform allows you to develop AI Agents using secured APIs. All key developer activities like creation, import and export, training, and publishing are available using these APIs. Key account management activities like managing XO Platform access, managing admin, and roles can also be performed via secured public APIs. For a complete list of APIs and usage instructions, refer [here](../api-list).
+The AI for Service platform allows you to develop AI Agents using secured APIs. All key developer activities like creation, import and export, training, and publishing are available using these APIs. Key account management activities like managing XO Platform access, managing admin, and roles can also be performed via secured public APIs. For a complete list of APIs and usage instructions, refer [here](api-list.md).
 
 Authentication of the API requests involves the following two steps:
 
@@ -259,7 +259,7 @@ Steps to associate API Scopes to a Client App from the Admin Console:
 
 
 !!!note
-    Once enabled, the API Scopes must be Published. [Follow the Publish](/deploy/publishing-bot) process to ensure that the API Scopes are selected.
+    Once enabled, the API Scopes must be Published. [Follow the Publish](../../deploy/publishing-bot.md) process to ensure that the API Scopes are selected.
 
 ## Generating the JWT Token
 

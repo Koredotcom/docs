@@ -36,9 +36,9 @@ For Data Definition, you need to access the **Data tab** of the App Builder Land
 
 From here you can:
 
-* Create Data Tables, [refer here for more](../data-table/){:target="_blank"};
-* Define Table Views, [refer here for more](../table-views/){:target="_blank"}; and
-* Create Apps for access, [refer here for more](../app-definition/){:target="_blank"}.
+* Create Data Tables, [refer here for more](data-table.md){:target="_blank"};
+* Define Table Views, [refer here for more](table-views.md){:target="_blank"}; and
+* Create Apps for access, [refer here for more](app-definition.md){:target="_blank"}.
 
 <img src="../images/data-services-img2.png" alt="Data Definition" title="Data Definition" style="border: 1px solid gray;zoom:80%;"/>
 

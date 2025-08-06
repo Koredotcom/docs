@@ -56,7 +56,7 @@ Validates data adherence by comparing extracted metric values against reference 
 
 ### By Value metric extraction for Quality AI
 
-Extract by value metric from user/agent/bot messages through Quality AI using LLMs.
+Extract by value metric from user/AI Agent/human agen messages through Quality AI using LLMs.
 
 
 ### Churn & Escalation Identification

@@ -145,7 +145,7 @@ The token information on the client varies depending upon the SSO provider and t
 
 ### Configuring SSO using SAML
 
-Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Kore.ai Bots Admin Console. Kore.ai also supports WS-Federation and OpenID Connect protocols. For more information, see [Using Single Sign-On](../using-single-sign-on/){:target="_blank"}.
+Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Kore.ai Admin Console. Kore.ai also supports WS-Federation and OpenID Connect protocols.
 
 
 ### OKTA Configuration
