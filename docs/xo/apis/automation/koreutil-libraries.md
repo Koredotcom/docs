@@ -22,8 +22,8 @@ Below is the list of koreUtil libraries provided by the Platform:
 * [koreUtil.getCurrentOptions](#koreutilgetcurrentoptions)
 * [koreUtil.getAmbiguousIntents](#koreutilgetambiguousintents)
 * [koreUtil.getSessionId](#koreutilgetsessionid)
-* [koreUtil.closeConversationSession](#koreutilclose)
-* [koreUtil.autoTranslate](#koreautotranslate)
+* [koreUtil.closeConversationSession](#koreutilcloseconversationsession)
+* [koreUtil.autoTranslate](#koreutilautotranslate)
 * [koreUtil.getFormDefinition](#koreutilgetformdefinition)
 
 
@@ -590,4 +590,4 @@ let formDef = koreUtil.getFormDefinition();
 
 **Related Link**
 
-* **[Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node)** (Write JavaScript code in a dialog task)
+[Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) (Write JavaScript code in a dialog task)
