@@ -4,7 +4,7 @@ This document provides information on the feature updates and enhancements intro
 
 ## v1.9.3 July 29, 2025
 
-<u>Major Release</u>
+<u>Minor Release</u>
 
 This update includes new features and feature enhancements summarized below.
 
@@ -67,7 +67,7 @@ The conversation interface has been redesigned to improve user experience during
 
 ## v1.9.2 June 21, 2025
 
-<u>Major Release</u>
+<u>Minor Release</u>
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
