@@ -1,6 +1,3 @@
-
-
-
 # Guidelines for Using Data Tables in AI Agents
 
 Data tables provide a structured way to store and access low-volume, conversation-relevant information that can significantly improve the quality and efficiency of user interactions. While offering flexibility, Data Tables come with specific guidelines and best practices to ensure optimal performance and appropriate usage within the platform. This document outlines the Data Tables' purpose, recommended practices, and limitations, helping platform users leverage this feature effectively while maintaining system integrity and performance.

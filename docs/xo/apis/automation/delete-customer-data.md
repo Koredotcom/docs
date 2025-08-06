@@ -149,7 +149,7 @@ curl -X DELETE \
 
 !!! Note
 
-    The execution status of this API can be viewed by executing [Delete Customer Data Status API](../delete-customer-data-status){:target="_blank"}
+    The execution status of this API can be viewed by executing [Delete Customer Data Status API](delete-customer-data-status.md){:target="_blank"}
 
 
 ## Sample Response
