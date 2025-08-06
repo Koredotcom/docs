@@ -1,13 +1,13 @@
 # App Usage Analytics Dashboard
 
-The Analytics Dashboard provides real-time insights into app usage across your platform. It provides comprehensive visibility into user engagement, performance metrics, and resource utilization for agents, tools, and models.
+The Analytics Dashboard provides real-time insights into app usage with comprehensive visibility into user engagement, performance metrics, and resource utilization for agents, tools, and models.
 
 The dashboard organizes analytics into two primary categories:
 
 * **Session-level insights**: User activity and engagement metrics.
 * **Run-level insights**: Execution performance and resource consumption.
 
-<img src="../images/analytics-dashboard.png" alt="Analytics Dashboard" title="Analytics Dashboard" style="border: 1px solid gray; zoom:65%;">
+<img src="../images/analytics-dashboard.png" alt="Analytics Dashboard" title="Analytics Dashboard" style="border: 1px solid gray; zoom:50%;">
 
 ## Key Features
 
@@ -88,11 +88,7 @@ Monitors agent execution performance with:
 
 * Total execution count and trends
 * Performance metrics over time
-* Detailed agent-level data:
-    * Agent name
-    * Number of runs
-    * Average response time
-    * Token consumption
+* Detailed agent-level data: Agent name, Number of runs, Average response time, and Token consumption
 
 <img src="../images/agent-runs.png" alt="Agent Runs" title="Agent Runs" style="border: 1px solid gray; zoom:65%;">
 
@@ -101,16 +97,8 @@ Monitors agent execution performance with:
 Analyzes tool utilization across all agents:
 
 * Execution counts with trend indicators
-* Breakdown by tool type:
-    * Workflow
-    * Code
-    * MCP (Model Context Protocol)
-    * Knowledge
-* Tool-specific metrics:
-    * Tool name
-    * Run frequency
-    * Average response time
-    * Tool category
+* Breakdown by tool type: Workflow, Code, MCP (Model Context Protocol), and Knowledge
+* Tool-specific metrics: Tool name, Run frequency, Average response time, and Tool category
 
 <img src="../images/tool-runs.png" alt="Tool Runs" title="Tool Runs" style="border: 1px solid gray; zoom:65%;">
 
@@ -120,10 +108,6 @@ Tracks model API calls from Agents and Supervisors:
 
 * Total model invocations
 * Performance trends over time
-* Model-level details:
-    * Model name
-    * Execution count
-    * Average response time
-    * Token usage
+* Model-level details: Model name, Execution count, Average response time, and Token usage
 
 <img src="../images/model-runs.png" alt="Model Runs" title="Model Runs" style="border: 1px solid gray; zoom:65%;">
