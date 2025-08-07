@@ -199,8 +199,8 @@ Configure the instance-specific fields for this node. These apply only for this 
 
 Define how user input validation occurs for this node:
 
-* **Mandatory**: This entity is required and must be provided before proceeding.
-* **Allowed Retries**: Configure the maximum number of times a user is prompted for a valid input. You can choose between 5-25 retries in 5-retries increments. The default value is 10 retries. 
+
+* **Number of Iterations Allowed**:  Set the maximum number of times a user is prompted for valid input, with a range of 1 to 25 iterations. The default is 10 iterations.
 * **Behavior on Exceeding Retries**: Define what happens when the user exceeds the allowed retries. You can choose to either _End the Dialog_ or _Transition to a Node_ – in which case you can select the node to transition to.
 
 
@@ -239,7 +239,16 @@ Select one of the below options to determine how to treat user-abandoned convers
 
 Add Custom Meta Tags to the conversation flow to profile AI Agent-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"} for details.
 
-<img src="../images/instancev2.png" alt="Instance Properties" title="Instance Properties" style="border: 1px solid gray; zoom:70%;">
+
+
+##### IVR Properties
+
+
+Configure Voice Properties to streamline the user experience on voice channels. You can define prompts, grammar, and other call behavior parameters for the node. The Agent Node does not require initial prompts or error prompts. For more information, refer to the [Voice Call Settings Field Reference](../use-cases/dialogs/node-types/voice-call-properties.md).
+
+!!! note
+
+    Agent Nodes with streaming LLM prompts support IVR Properties for voice channel only.
 
 
 ##### Connections Properties

@@ -1,6 +1,6 @@
 # Nodes Overview
 
-In order to create Dialog Tasks, the [Dialog Builder](../../using-the-dialog-builder-tool/){:target="_blank"} uses nodes and transitions to make the necessary connections between the components of your conversation. In this article, we will overview the available node types, transitions, as well as context object information.
+In order to create Dialog Tasks, the [Dialog Builder](../using-the-dialog-builder-tool.md){:target="_blank"} uses nodes and transitions to make the necessary connections between the components of your conversation. In this article, we will overview the available node types, transitions, as well as context object information.
 
 
 ## How do Nodes and Transitions Work?
@@ -19,64 +19,64 @@ You can add the following nodes to dialog tasks, based on your requirements:
 
 ### User Intent Node
 
-The user intent to be identified by the Platform is based on the user utterance. Every dialog has one root intent with any number of sub-intents. For more information, refer to [Working with the User Intent Node](../working-with-the-user-intent-node/){:target="_blank"}.
+The user intent to be identified by the Platform is based on the user utterance. Every dialog has one root intent with any number of sub-intents. For more information, refer to [Working with the User Intent Node](working-with-the-user-intent-node.md){:target="_blank"}.
 
 
 ### Dialog Task Node
 
-The Dialog Task Node allows you to start a new dialog task within an existing one, if the user intent changes. Read more about the [Dialog Task Node](../working-with-the-dialog-node/){:target="_blank"}.
+The Dialog Task Node allows you to start a new dialog task within an existing one, if the user intent changes. Read more about the [Dialog Task Node](working-with-the-dialog-node.md){:target="_blank"}.
 
 
 ### Entity Node
 
-Entity nodes detect the entities within the user utterance, or ask the user for input when an entity is required. The user entity in the utterance. The platform supports 15+ entity types. Developers can define the prompt message to be shown, and this message can be channel-specific. For example, an amount, a flight account number, time, or zip code. Entity nodes prompt the user for an input. For more information, refer to [Working with the Entity Node](../working-with-the-entity-node/){:target="_blank"}.
+Entity nodes detect the entities within the user utterance, or ask the user for input when an entity is required. The user entity in the utterance. The platform supports 15+ entity types. Developers can define the prompt message to be shown, and this message can be channel-specific. For example, an amount, a flight account number, time, or zip code. Entity nodes prompt the user for an input. For more information, refer to [Working with the Entity Node](working-with-the-entity-node.md){:target="_blank"}.
 
 
 ### Form Node
 
-Form nodes allow you to integrate Digital Forms with Dialog Task by presenting a UI Form in the dialog task and making the form available for end-users on specific communication channels. This node is useful when you want to make entity collection more efficient by displaying a form rather than asking users for one entity at a time. [Learn more about the Form node.](../working-with-the-form-node/){:target="_blank"}.
+Form nodes allow you to integrate Digital Forms with Dialog Task by presenting a UI Form in the dialog task and making the form available for end-users on specific communication channels. This node is useful when you want to make entity collection more efficient by displaying a form rather than asking users for one entity at a time. [Learn more about the Form node.](working-with-the-form-node.md){:target="_blank"}.
 
 
 ### Confirmation Node
 
-Displays a query message from the bot to the user, and then waits for a user response. Conditions are defined to continue processing the dialog task flow based on the user input. For more information, refer to [Working with the Confirmation Node](../working-with-the-confirmation-nodes/){:target="_blank"}.
+Displays a query message from the bot to the user, and then waits for a user response. Conditions are defined to continue processing the dialog task flow based on the user input. For more information, refer to [Working with the Confirmation Node](working-with-the-confirmation-nodes.md){:target="_blank"}.
 
 
 ### Message (or Bot Response) Node
 
-Displays a message from the bot to a user, such as, _Is there anything else I can help you with?_ For more information, refer to [Working with the Message Node](../working-with-the-message-nodes/){:target="_blank"}.
+Displays a message from the bot to a user, such as, _Is there anything else I can help you with?_ For more information, refer to [Working with the Message Node](working-with-the-message-nodes.md){:target="_blank"}.
 
 While any dialog starts at the Intent Node, it is advisable to end it with a Message Node to give a sense of closure to the user as well as to the bot internally.
 
 
 ### Service Node
 
-Allows you to call an API. You can also use cURL to build the API request. For more information, refer to [Working with the Service Node](../working-with-the-service-node/){:target="_blank"}.
+Allows you to call an API. You can also use cURL to build the API request. For more information, refer to [Working with the Service Node](working-with-the-service-node.md){:target="_blank"}.
 
 
 ### Script Node
 
-The Script Node is used to write custom Javascript JS code in the dialog task. For more information, refer to [Working with the Script Node](../working-with-the-script-node/){:target="_blank"}.
+The Script Node is used to write custom Javascript JS code in the dialog task. For more information, refer to [Working with the Script Node](working-with-the-script-node.md){:target="_blank"}.
 
 
 ### Logic Node
 
-The Logic Node allows developers to use context variables and define complex transition conditions within Bot Action nodes and Dialog Tasks overall. For more details, please refer to  [Working with the Logic Node](../working-with-the-logic-node/){:target="_blank"}.
+The Logic Node allows developers to use context variables and define complex transition conditions within Bot Action nodes and Dialog Tasks overall. For more details, please refer to  [Working with the Logic Node](working-with-the-logic-node.md){:target="_blank"}.
 
 
 ### WebHook Node
 
-This node is used for server-side validation, executing business logic, or making backend server API calls. To use this node, you must have installed the SDK Tool Kit. For more information, refer to [Working with the WebHook Node](../working-with-the-web-hook-node/){:target="_blank"}.
+This node is used for server-side validation, executing business logic, or making backend server API calls. To use this node, you must have installed the SDK Tool Kit. For more information, refer to [Working with the WebHook Node](working-with-the-web-hook-node.md){:target="_blank"}.
 
 
 ### Process Node
 
-Process nodes allow you to connect a Dialog Task to a Process App that you have built within the Kore.ai XO Platform. [Learn more about Process Nodes](../process-nodes/){:target="_blank"}.
+Process nodes allow you to connect a Dialog Task to a Process App that you have built within the Kore.ai XO Platform. [Learn more about Process Nodes](process-nodes.md){:target="_blank"}.
 
 
 ### Agent Transfer Node
 
-This node type is used to transfer communication from the bot to a live agent. This is usually the last node for a dialog task. For more information, refer to [Working with the Agent Transfer Node](../working-with-the-agent-transfer-node/){:target="_blank"}.
+This node type is used to transfer communication from the bot to a live agent. This is usually the last node for a dialog task. For more information, refer to [Working with the Agent Transfer Node](working-with-the-agent-transfer-node.md){:target="_blank"}.
 
 
 ## Component Transitions
@@ -97,7 +97,7 @@ You can use the following operators to write conditions:
 * Less than
 * Contains
 
-Learn more about [setting up node connections](../../node-connections/nodes-conditions/){:target="_blank"}.
+Learn more about [setting up node connections](../node-connections/nodes-conditions.md){:target="_blank"}.
 
 
 ### Environment Variables
