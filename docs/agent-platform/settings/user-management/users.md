@@ -91,7 +91,7 @@ The steps mentioned below, allow you to import users' data from a designated fil
     <img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;">
 
 * The fields are pre-defined in the sample file, and the data requirements are shown below:
-<img src="../images/prefefined-fields.png" alt="pre-defined fields" title="pre-defined fields" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/pre-defined-fields.png" alt="pre-defined fields" title="pre-defined fields" style="border: 1px solid gray; zoom:75%;">
 
 * Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error, as shown in the screenshot below.
 <img src="../images/mismatch-error.png" alt="fields mismatch error" title="fields mismatch error" style="border: 1px solid gray; zoom:75%;">

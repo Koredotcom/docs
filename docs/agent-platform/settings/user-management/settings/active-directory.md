@@ -190,7 +190,7 @@ Select **Other** to schedule AD syncs at intervals different from Daily, Weekly,
 
 For example, the data sync repeats every 60 days or weeks, starting 10 June 2024 at 12:00 PM.
 
-<img src="../images/other-schedule.png" alt="other schedule" title="sother schedule" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/other-schedule.png" alt="other schedule" title="other schedule" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Click <b>Save</b>.</li>
 <img src="../images/save-schedule.png" alt="save schedule" title="save schedule" style="border: 1px solid gray; zoom:75%;">

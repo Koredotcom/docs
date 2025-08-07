@@ -133,7 +133,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Airtable
    </td>
-   <td>Airtable is a low‒code platform that helps build next generation apps. Move beyond rigid tools, operationalize your critical data, and reimagine workflows with AI.
+   <td>Airtable is a low‒code platform that helps build next generation apps. Move beyond rigid tools, and implement your critical data, and re-imagine workflows with AI.
    </td>
    <td> 17
    </td>
@@ -645,7 +645,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Freshdesk
    </td>
-   <td>A customer support platform that provides helpdesk support with all the smart automations to get things done faster.
+   <td>A customer support platform that provides help desk support with all the smart automation to get things done faster.
    </td>
    <td> 7
    </td>
@@ -1675,7 +1675,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Zoominfo
    </td>
-   <td>ZoomInfo is a multiplatform operating system that revenue teams use to deliver business growth.
+   <td>ZoomInfo is a multi-platform operating system that revenue teams use to deliver business growth.
    </td>
    <td> 14
    </td>

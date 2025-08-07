@@ -8,7 +8,7 @@ The **Integration node** allows you to connect to a third-party service provider
 <li>Make sure the selected connection is tested under <b>Settings</b> > <b>Integrations</b> before using it in the node. <a href="https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#test-connection" target="_blank">Learn more</a>.</li></ul></p>
 </div>
 
-When you select a connection, the node allows you to add specific actions provided by the third-party service, such as exporting data from a site or fetching broken backlinks into your tool automation flow.
+When you select a connection, the node allows you to add specific actions provided by the third-party service, such as exporting data from a site or fetching broken back links into your tool automation flow.
 
 You can configure the required action parameters directly in the UI, or view and copy the **JSON code** generated for the configured node.
 
