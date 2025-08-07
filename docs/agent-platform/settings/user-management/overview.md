@@ -17,7 +17,7 @@ This [Users](./users.md){:target="_blank"} page provides detailed instructions a
 
 It also supports various administrative features influenced by the roles and permissions assigned at the account or tool level. This includes actions you can perform on both external and existing users:
 
-- **System Roles**: Predefined roles with default permissions for basic system functionality. [Learn more](./role-management.md/#manage-system-roles){:target="_blank"}.
+- **System Roles**: Pre-defined roles with default permissions for basic system functionality. [Learn more](./role-management.md/#manage-system-roles){:target="_blank"}.
 - **Custom Roles**: User-defined roles tailored to specific needs with customized access definitions for module-wise permissions. [Learn more](./role-management.md/#manage-custom-roles){:target="_blank"}.
 
 For example, a *Master Admin* role is assigned by default to the account owner. Similarly, a *Tool Admin* role is assigned to a user who creates a tool and has complete control over it.

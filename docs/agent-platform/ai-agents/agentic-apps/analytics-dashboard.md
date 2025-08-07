@@ -21,7 +21,7 @@ The dashboard organizes analytics into two primary categories:
 
 Customize the analytics view by using the dashboard's filtering options and interactive controls:
 
-* **Time Frame Selection**: Choose from predefined ranges or set custom dates to analyze specific periods.
+* **Time Frame Selection**: Choose from pre-defined ranges or set custom dates to analyze specific periods.
 * **Environment Filter**: Select specific environments for targeted analysis (defaults to current draft).
 * **View Modes**: Toggle between interactive charts for trend analysis and detailed tables for granular inspection.
 * **Drill-down Navigation**: Click any metric card or data point to access expanded insights and detailed breakdowns.
