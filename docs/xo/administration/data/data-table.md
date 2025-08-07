@@ -197,7 +197,7 @@ The Kore.ai XO Platform allows you to share Data Tables by assigning them to bot
 
 **Note**: In the **Shared Tables** tab, you can view only the tables shared with a user who has permission to view. When you share the data tables with users, they cannot edit or update the table or view definitions.
 
-The bot or process developers can see the data table definitions using a [**Service node**](data-as-service.md){:target="_blank"}.
+The bot or process developers can see the data table definitions using a [Service node](data-as-service.md){:target="_blank"}.
 
 * From the Data Service Request Definition, users can select the Get Data action and click Test to view metadata. For more information, read the [Get Data](data-as-service.md#get-data){:target="_blank"} section in Data as a Service post.
 * Users can also see all column names while configuring Add Data or Update Data actions. For more information, read the [Add Data](data-as-service.md#add-data){:target="_blank"} section in the Data as a Service post.
