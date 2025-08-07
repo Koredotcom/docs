@@ -10,11 +10,11 @@ The following table displays the features and the supported models.
 
 === "Automation AI - Runtime Features"
 
-    |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Responses|Rephrase User Query#|Zero-shot ML Model|
+    |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Responses|Rephrase User Query|Zero-shot ML Model|
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI–<br>GPT-4 Turbo, GPT-4o, and GPT-4o mini*|✅|✅|❌|✅|✅|✅|
-    |OpenAI–<br>GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, GPT-4o, and GPT-4o mini*|✅|✅|✅|✅|✅|✅^|
-    |Provider's New LLM**|✅|✅|❌|✅|✅|✅|
+    |Azure OpenAI–<br>GPT-4 Turbo, GPT-4o, and GPT-4o mini|✅|✅|❌|✅|✅|✅|
+    |OpenAI–<br>GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, GPT-4o, and GPT-4o mini|✅|✅|✅|✅|✅|✅|
+    |Provider's New LLM|✅|✅|❌|✅|✅|✅|
     |Custom LLM|✅|✅|❌|✅|✅|✅|
     |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
     |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
@@ -24,21 +24,28 @@ The following table displays the features and the supported models.
 
     |Models|Automatic Dialog Generation|Conversation Test Case Suggestions|Conversation Summary|NLP Batch Test Case Suggestions|Training Utterance Suggestions|
     |:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI–<br>GPT-4 Turbo, GPT-4o, and GPT-4o mini*|✅|✅|❌|✅|✅|
-    |OpenAI–<br>GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, GPT-4o, and GPT-4o mini* |✅|✅|❌|✅|✅|
-    |Provider's New LLM**|✅|✅|❌|✅|✅|
+    |Azure OpenAI–<br>GPT-4 Turbo, GPT-4o, and GPT-4o mini|✅|✅|❌|✅|✅|
+    |OpenAI–<br>GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, GPT-4o, and GPT-4o mini |✅|✅|❌|✅|✅|
+    |Provider's New LLM|✅|✅|❌|✅|✅|
     |Custom LLM|✅|✅|✅|✅|✅|
     |Amazon Bedrock|✅|✅|❌|✅|✅|
     |Kore.ai XO GPT|❌|❌|✅|❌|❌|
+
+
 <hr>
 
-^ Currently, the Zero-shot ML Model doesn't support batch testing when using GPT-4.
 
-\* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini don't include system prompts, but they can be used with custom prompts.* 
+**System Prompt Limitation**
 
-\** *To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.*
+The Platform does not provide system prompts in the following cases, so you must create a custom prompt:
 
-\# *The Platform doesn't provide system prompts for the Rephrase User Query feature when you use OpenAI or Azure OpenAI models. To use this feature with these LLMs, you must create a custom prompt.*
+* When using OpenAI GPT-4o mini or Azure OpenAI GPT-4o mini
+* When using Provider's New LLM
+* For the Rephrase User Query feature with OpenAI or Azure OpenAI models
+
+
+
+
 
 ## Agent Node
 

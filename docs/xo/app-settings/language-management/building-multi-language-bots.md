@@ -452,6 +452,24 @@ The assistant continues to communicate with the user in the same language. If th
 
 If the assistant fails to detect a user’s language with high confidence, it requests the user to select a preferred language from the list of enabled options.
 
+**Tagalog language detection**
+
+Tagalog is widely spoken in the Philippines and uses the Latin alphabet, the same script as English. This shared alphabet makes it challenging for standard language detection methods to distinguish between Tagalog and English, particularly in multilingual environments. To improve accuracy, the platform employs a specialized Tagalog detection wrapper with a two-layer system specifically designed to identify Tagalog utterances.
+
+**Tagalog Detection Wrapper**
+When Tagalog is enabled as a supported bot language, all incoming utterances are first processed through the Tagalog detection wrapper.
+
+**Detection logic**
+
+The system uses a two-step approach:
+
+1. Primary Detection: The Langdetect module analyzes the input to determine if it's Tagalog. If Tagalog is detected, the utterance is processed accordingly.
+2. Secondary Verification: If the Langdetect module doesn't identify the utterance as Tagalog, the system performs dictionary-based verification:
+  * Short utterances (1–3 words): All words must exist in the Tagalog dictionary for the utterance to be classified as Tagalog.
+  * Longer utterances (4+ words): At least 60% of the words must match entries in the Tagalog dictionary.
+
+If fewer than 60% of words in longer texts match the Tagalog dictionary, the utterance is **not** classified as Tagalog, to avoid misclassification with English.
+
 
 ### Language Selection 
 
