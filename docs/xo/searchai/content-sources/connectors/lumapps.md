@@ -24,9 +24,9 @@ LumApps organizes content into key types, such as pages, news, and custom object
 
 
 * Content Objects
-    * Pages
-    * News
-    * Custom Objects
+  * Pages
+  * News
+  * Custom Objects
 * Community Posts
    </td>
   </tr>
