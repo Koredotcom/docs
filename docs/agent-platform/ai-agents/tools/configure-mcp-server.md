@@ -2,28 +2,21 @@
 
 To integrate tools from an MCP server into an agent, follow these steps:
 
-Navigate to the **Tools** section of the app and click on **Add Tool**. Click on **+New Tool** to configure a new MCP server and add tools. 
-
+1. Navigate to the **Tools** section of the app and click on **Add Tool**. Click on **+New Tool** to configure a new MCP server and add tools. 
 ![alt_text](images/mcp/home.png "Add tool")
 
-Provide the MCP server configuration on the following page. 
-
+2. Provide the MCP server configuration on the following page. 
 ![alt_text](images/mcp/mcp-config.png "MCP Config")
+   
+   * **Name**- Provide a unique name for the MCP server. 
+   * **Description**- Provide a description of the capabilities/tools offered by the server. 
+   * **Request Definition** - Define how the platform should send a request to the MCP server to fetch available tools. Click **Configure** and and provide the MCP server configuration details. ![alt_text](images/mcp/mcp-config-type.png "MCP Config")
+        * Select the MCP server configuration type - `HTTP` or `SSE`.
+        * URL: Endpoint that returns tool definitions.
+        * Headers:  Any required headers like Authorization tokens.
 
-**Name**- Provide a unique name for the MCP server. 
-
-**Description**- Provide a description of the capabilities/tools offered by the server. 
-
-**Request Definition** - Define how the platform should send a request to the MCP server to fetch available tools. Click **Configure** and and provide the MCP server configuration details.
-![alt_text](images/mcp/mcp-config-type.png "MCP Config")
-
-* Select the MCP server configuration type - `HTTP` or `SSE`.
-* URL: Endpoint that returns tool definitions.
-* Headers:  Any required headers like Authorization tokens.
-
-Click the **Test** button to fetch tool metadata from the MCP server. 
-
-Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click **Add Selected** to add the tools to the agent. 
+3. Click the **Test** button to fetch tool metadata from the MCP server. 
+4. Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click **Add Selected** to add the tools to the agent. 
 
 
 ## Tool Naming Convention
@@ -45,17 +38,13 @@ Testing the tools is essential as it helps validate their functionality, confirm
 
 To test a tool, 
 
-* open the tool in **Preview** mode.
-* Click on **Run Sample Execution**. 
-
+1. open the tool in **Preview** mode.
+2. Click on **Run Sample Execution**.
 ![Preview](images/mcp/tool-preview.png "Preview")
 
-* Enter sample values for the inputs and click **Confirm** to initiate a request to the MCP server. 
-
+3. Enter sample values for the inputs and click **Confirm** to initiate a request to the MCP server. 
 ![Test](images/mcp/test-mcp.png "Test MCP tool")
-
-
-* The request is sent to the MCP server, and the resulting output is displayed in the **Sample Response** section.
+4. The request is sent to the MCP server, and the resulting output is displayed in the **Sample Response** section.
 
 
 ## Updating/Reconfiguring the MCP server
@@ -74,3 +63,17 @@ To modify the configuration of the MCP server, click on the ellipsis in the righ
 ## Security Considerations
 
 If the MCP server includes pre-authorized tools that access Personally Identifiable Information (PII), avoid sharing the Agentic app that uses those tools. Sharing the app could grant others access to sensitive data stored on the connected servers.
+
+## FAQs
+
+**What are MCP tools in the context of the Agent Platform?**
+
+In Agent Platform, MCP Tools refer to the tools exposed by MCP servers.
+
+**Can I manage multiple MCP servers within an Agentic App?**
+
+Yes, an agentic app can be configured to connect to one or more MCP servers, each exposing its own set of tools.
+
+**Does Agent Platform automatically fetch the latest set of tools from the MCP server?**
+
+Currently, the agent platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.
