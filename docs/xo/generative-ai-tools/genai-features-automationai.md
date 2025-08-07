@@ -19,9 +19,9 @@ The following table displays the features and the supported models.
     |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
     |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
 
-=== "Automation AI - Runtime Features"
+=== "N-Automation AI - Runtime Features"
 
-    | Feature | Azure OpenAI<br>GPT-4 Turbo, GPT-4o, GPT-4o mini* | OpenAI<br>GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, GPT-4o, GPT-4o mini* | Provider's New LLM** | Custom LLM | Amazon Bedrock | Kore.ai XO GPT |
+    | Feature | Azure OpenAI-<br>GPT-4 Turbo,<br>GPT-4o,<br>GPT-4o mini* | OpenAI-<br>GPT-3.5 Turbo,<br>GPT-4,<br>GPT-4 Turbo,<br>GPT-4o,<br>GPT-4o mini* | Provider's New LLM** | Custom LLM | Amazon Bedrock | Kore.ai XO GPT |
     |:--|:--:|:--:|:--:|:--:|:--:|:--:|
     | Agent Node | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
     | Prompt Node | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -42,9 +42,9 @@ The following table displays the features and the supported models.
     |Amazon Bedrock|✅|✅|❌|✅|✅|
     |Kore.ai XO GPT|❌|❌|✅|❌|❌|
 
-=== "Automation AI - Designtime Features"
+=== "N-Automation AI - Designtime Features"
 
-    | Feature | Azure OpenAI<br>GPT-4 Turbo, GPT-4o, GPT-4o mini* | OpenAI<br>GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, GPT-4o, GPT-4o mini* | Provider's New LLM** | Custom LLM | Amazon Bedrock | Kore.ai XO GPT |
+    | Feature | Azure OpenAI-<br>GPT-4 Turbo,<br>GPT-4o,<br>GPT-4o mini* | OpenAI-<br>GPT-3.5 Turbo,<br>GPT-4,<br>GPT-4 Turbo,<br>GPT-4o,<br>GPT-4o mini* | Provider's New LLM** | Custom LLM | Amazon Bedrock | Kore.ai XO GPT |
     |:--|:--:|:--:|:--:|:--:|:--:|:--:|
     | Automatic Dialog Generation | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
     | Conversation Test Case Suggestions | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -53,11 +53,17 @@ The following table displays the features and the supported models.
     | Training Utterance Suggestions | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 
-
-
 <hr>
 
+**System Prompt Limitation**
 
+The platform does not provide system prompts in the following cases, so you must create a custom prompt:
+
+* When using OpenAI GPT-4o mini or Azure OpenAI GPT-4o mini
+* When using Provider's New LLM
+* For the Rephrase User Query feature with OpenAI or Azure OpenAI models
+
+To use these models or features, you must create a custom prompt.
 
 \* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini don't include system prompts, but they can be used with custom prompts.* 
 
