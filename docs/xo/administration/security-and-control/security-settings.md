@@ -1,6 +1,6 @@
 # Security Settings
 
-Apart from the sign-on, and other security settings ([see here for details](../security-module-overview/){:target="_blank"}), you can modify the following default security & control settings for your account:
+Apart from the sign-on, and other security settings, you can modify the following default security & control settings for your account:
 
 * Data retention period
 * Context persistence

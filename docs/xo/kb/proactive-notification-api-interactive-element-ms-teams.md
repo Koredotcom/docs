@@ -43,7 +43,6 @@ curl --location 'https://bots.kore.ai/api/public/bot/{{BotID}}/notify' \
 
 
 ### Sample Notification in Microsoft Teams
-`
 
 
 

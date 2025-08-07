@@ -1,7 +1,6 @@
-# Kore.ai Connector
+# Kore.ai Connectors
 
 On the **Kore.ai Connector** page, in the **Security & Control** module of the Admin Console, you can download and configure the Kore.ai Connector Agent for Apps within your secure company intranet to provide secure communications between the XO Platform in the cloud and your network.
-
 
 ## Why Kore.ai Connector?
 
@@ -295,8 +294,8 @@ To configure outbound proxy settings, add the following configuration shown as t
 The Kore.ai Connector Agent requires an explicit set of white-listed URLs to access specific applications on your company intranet. Any other HTTP requests are denied by the Kore.ai Connector.
 You must configure access control for each app application that will use the Kore.ai Connector Agent in the accesscontrol.json file in the Kore.ai Connector installation directory in the …/config/configs directory with the following parameters:
 
-* **virtualhost** – Specify the virtual host name exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises apps in the App Builder tool. For more information, see [Defining a Request Chain Object](../../automation/use-cases/alert-tasks/){:target="_blank"} in the App Builder documentation.
-* **virtualport** – Specify the virtual port exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises Apps in the App Builder tool. For more information, see [Defining a Request Chain Object](../../automation/use-cases/alert-tasks/){:target="_blank"} in the App Builder documentation.
+* **virtualhost** – Specify the virtual host name exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises apps in the App Builder tool. For more information, see [Defining a Request Chain Object](../automation/use-cases/alert-tasks.md){:target="_blank"} in the App Builder documentation.
+* **virtualport** – Specify the virtual port exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises Apps in the App Builder tool. For more information, see [Defining a Request Chain Object](../automation/use-cases/alert-tasks.md){:target="_blank"} in the App Builder documentation.
 * **internalhost** – Specify the actual host name of the on-premises enterprise application used for data exchange with your Apps.
 * **internalport** – Specify the actual port of the on-premises enterprise application used for data exchange with your Apps.
 * **protocol** – Specify HTTP or HTTPS for the connection to on-premises enterprise applications.
@@ -361,7 +360,6 @@ Manually start or stop the Kore.ai Connector Agent on the Windows application se
 .\koreconnector.cmd status
 ```
 
-
 ## Enabling Apps 
 
 In this section, you can verify the connection to the Kore.ai Connector Agent in the Admin Console, and then enable the connection. When the connection is enabled, you can modify your custom Apps in the App Builder tool to use the Kore.ai Connector, publish those Apps, and then in the Admin Console, deploy the published Apps and assign the Apps to users in your company.
@@ -370,11 +368,11 @@ In this section, you can verify the connection to the Kore.ai Connector Agent in
 <img src="../images/kore-ai-connector-img10.png" alt="Enable bots" title="Enable bots" style="border: 1px solid gray;zoom:70%;"/>
 
 2. In App Builder, for each AI Agent task that you want to run using the Kore.ai Connector, clone or upgrade each AI Agent.  
-      1. In the **Set up Request Chain Object** dialog, select **Access using connector**, save the changes, and then publish the App. For more information about configuring the request object, see [Configuring an Alert Task Request Object](../../automation/use-cases/alert-tasks/#configuration){:target="_blank"} in the App Builder tool documentation.  
+      1. In the **Set up Request Chain Object** dialog, select **Access using connector**, save the changes, and then publish the App. For more information about configuring the request object, see [Configuring an Alert Task Request Object](../automation/use-cases/alert-tasks.md#configuration){:target="_blank"} in the App Builder tool documentation.  
 
          **Note:** The option in the **Set up Request Chain Object** dialog for **Access using connector** is only available after the Kore.ai connector is enabled in the Admin Console.
 
-3. In the Admin Console, deploy the published App and assign the users that can use the AI Agent tasks in your enterprise. For more information, see [App Management](../bot-management){:target="_blank"}.
+3. In the Admin Console, deploy the published App and assign the users that can use the AI Agent tasks in your enterprise. For more information, see [App Management](bot-management.md){:target="_blank"}.
 
 After the Kore.ai Connector is installed on your application server, enabled in Admin Console, and your Apps customized to use the connector, you only need to monitor the status of your connector in the Admin Console.
 If you cannot start the Kore.ai Connector, or customers are reporting errors, you may need to reconfigure Kore.ai Connector settings.

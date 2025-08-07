@@ -101,7 +101,7 @@ Follow these steps:
 
 6. Click **Save**.
 7. (Only for Agent Node) Enter the **Exit Scenario Key-Value** and **AI Agent Response Key fields**. Click **Save**.
-The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. An AI Agent Response Key is available in the response payload to display the VA’s response to the user.
+The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. An AI Agent Response Key is available in the response payload to display the AI Agent's response to the user.
     ![alt_text](images/image1-8.png  )
 
 

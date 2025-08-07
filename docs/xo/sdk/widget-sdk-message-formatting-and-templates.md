@@ -538,5 +538,7 @@ print(JSON.stringify(data));
 
 <img src="../images/widget-message-templates/line-chart-template.png" alt="Line Chart template" title="Line Chart template" style="border: 1px solid gray; zoom:70%;">
 
-!!!note
-    To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](../automation/use-cases/dialogs/prompt-editor.md).
+!!! note
+
+	To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](../automation/use-cases/dialogs/prompt-editor.md).
+

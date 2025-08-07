@@ -2,7 +2,7 @@
 
 # LLM Integration
 
-To use LLM and Generative AI features, you must configure the integration with a pre-built or custom LLM or Kore.ai XO GPT Module.
+To use LLM and Generative AI features, you must configure the integration with a pre-built or custom LLM or XO GPT Module.
 
 Review the model and feature support matrix for the [GenAI Features](genai-features.md).
 
@@ -78,7 +78,7 @@ Steps to configure a Provider's New LLM Integration:
 
         You can save the configuration with an unsuccessful connection.
 
-8. The configured model is listed in the Models Library. The next step is to add[ Prompts](./prompts-library.md). 
+8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md). 
 
 
 
@@ -125,7 +125,7 @@ Steps to Integrate a Custom LLM:
 
         You can save the configuration with an unsuccessful connection.
 
-8. The configured model is listed in the Models Library. The next step is to add[ Prompts](./prompts-library.md).
+8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
 
 ## Amazon Bedrock LLM Integration Framework
