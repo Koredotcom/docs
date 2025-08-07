@@ -199,10 +199,10 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
     * **agentassistUrl**: Add your **Agent AI URL** created on Kore UXO Platform.  
     * **accountId**: Add your Agent AI **Account ID** created on Kore UXO Platform.   
     To get the **agentassistURL** and **accountID** values:  
-                1. Go to **Agent AI** > **Flows &** **Channels**.  
-                2. Click **Digital** > **Web/Mobile Client**.  
-                3. Click to expand the **JWT App Details** section.  
-                    <img src="../images/web-mobile-client.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">  
+         1. Go to **Agent AI** > **Flows &** **Channels**.  
+         2. Click **Digital** > **Web/Mobile Client**.  
+         3. Click to expand the **JWT App Details** section.  
+            <img src="../images/web-mobile-client.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">  
   
     * **wssUrl**: Add "wss://savg-webserver.kore.ai" 
  
