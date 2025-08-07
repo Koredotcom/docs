@@ -17,14 +17,26 @@ This document describes the integration process of Amazon Connect with Kore Agen
 * Transcription trigger, a microservice that extracts the required parameters from the request body and generates the KVS Processing executable as a separate process with the parameters (like Contact Details, Credentials, and Voice Gateway).  
 
 ## Integration Setup Guide 
+* [Set up Kore Agent AI](#kore-agent-ai)
+* [Create Lambda Functions](#aws-lambda)
+* [Create Third Party App](#aws-connect-third-party-application-configuration)
+* [Create Amazon Connect Instance](#configuring-amazon-connect-instance)
+* [Create Amazon Connect Contact Flow](#configuring-amazon-connect-contact-flow)
+* [Add Phone Number to the Flow](#attaching-contact-flow-to-phone-number)
+* [Test Your Integration](#test-your-integration)
 
 ### Kore Agent AI 
 
-To onboard the Kore Agent AI account and create dialog tasks, refer to the [Agent AI Setup Guide](https://docs.kore.ai/agentassist/onboarding/agentassist-setup-guide/){:target="_blank"}.
+To onboard the Kore Agent AI account and create dialog tasks, refer to the [Agent AI Setup Guide](https://docs.kore.ai/agentassist/onboarding/agentassist-setup-guide/){:target="_blank"}. 
+
+Two configurations are needed from Agent AI:  
+
+* Web/Mobile Client- JWT App Details  
+* SIP Trunk Configuration  
 
 ### AWS Lambda 
 
-#### KVS Trigger 
+#### First Function: KVS Trigger (Choose any other name) 
 
 This function retrieves call stream metadata and AWS credentials from the environment, generates a credential set (SessionToken, AccessKeyId, SecretAccessKey) for KVS access, and triggers the Transcriber to send transcripts to the Kore AI Agent with the current Conversation ID.  
 
@@ -69,7 +81,7 @@ This function retrieves call stream metadata and AWS credentials from the enviro
 * The final configuration should appear like the following image:  
 <img src="../images/environment-variables-7.png" alt="environment-variables" title="environment-variables" style="border: 1px solid gray; zoom:80%;">  
 
-#### IFrame Token Generator 
+#### Second Function: IFrame Token Generator (Choose any other name) 
 
 This function generates the Kore Agent AI IFrame widget token to display properly within the Amazon Connect agent workspace.  
 
@@ -108,7 +120,7 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
 
 ### Configuring Amazon Connect Instance 
 
-1. Select your **Amazon Connect** instance. (To create a new instance, follow [Create an Amazon Connect instance](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-instances.html){:target="_blank"}.  
+1. Select your **Amazon Connect** instance. (To create a new instance, follow [Create an Amazon Connect instance](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-instances.html){:target="_blank"}).  
 <img src="../images/amazon-connect-instance-15.png" alt="amazon-connect-instance" title="amazon-connect-instance" style="border: 1px solid gray; zoom:80%;">  
 
 2. Click **Data storage**.  
@@ -171,14 +183,30 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
 <img src="../images/click-import-32.png" alt="click-import" title="click-import" style="border: 1px solid gray; zoom:80%;">  
 
 8. Click **Set contact attributes**, and enter the required fields: 
-    * botId 
-    * clientId 
-    * clientSecret 
-    * sipUri 
-    * agentassistUrl 
-    * wssUrl 
-    * accountId  
-    <img src="../images/set-contact-attributes-33.png" alt="set-contact-attributes" title="set-contact-attributes" style="border: 1px solid gray; zoom:80%;">   
+    * **BotID**: Add your Agent AI Bot ID created on Kore UXO Platform.
+    * **ClientId**: Add your Agent AI  Client ID created on Kore UXO Platform.
+    * **ClientSecret**: Add your Agent AI Client Secret created on Kore UXO Platform.
+    * **sipUri**: Add “*sip:[XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com](mailto:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com)*" and replace **XXXX** with your SIPREC Configuration of Agent AI.  
+    To get the SIP URI from [Kore](https://platform.kore.ai/){:target="_blank"}: 
+        1. Go to **Agent AI** > **Flows & Channels** > **Voice Gateway**. 
+        2. Click **SIP Numbers** > **Configure SIP Trunk**. 
+        3. Select **Agent AI**, under the **Product Selection** section. 
+        4. Enter [172.23.12.0/24,172.23.13.0/24](http://172.23.12.0/24,172.23.13.0/24) in the **List of IP Address** field, for the US region. 
+        <img src="../images/configure-sip-trunk.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
+
+        5. Copy the **SIP URI** and paste inside the **contact attributes sipUri** field inside Amazon Connect flow. 
+
+    * **agentassistUrl**: Add your **Agent AI URL** created on Kore UXO Platform.  
+    * **accountId**: Add your Agent AI **Account ID** created on Kore UXO Platform.   
+    To get the **agentassistURL** and **accountID** values:  
+                1. Go to **Agent AI** > **Flows &** **Channels**.  
+                2. Click **Digital** > **Web/Mobile Client**.  
+                3. Click to expand the **JWT App Details** section.  
+                    <img src="../images/web-mobile-client.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">  
+  
+    * **wssUrl**: Add "wss://savg-webserver.kore.ai" 
+ 
+        <img src="../images/set-contact-attributes-33.png" alt="set-contact-attributes" title="set-contact-attributes" style="border: 1px solid gray; zoom:80%;">   
 
 9. Click **Save**.
 10. Click **Start Stream and Transcription in Kore** Lambda.  
@@ -191,7 +219,7 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
 <img src="../images/iframe-token-generation-lambda-35.png" alt="iframe-token-generation-lambda" title="iframe-token-generation-lambda" style="border: 1px solid gray; zoom:80%;">  
 
 15. Click **Save**.
-16. For **Transfer to Flow**, select a flow you want to move the user to.  
+16. For **Transfer to Flow**, select a flow you want to move the user to. For example, save the following JSON in a file, import this flow to **Flows**, and add **Queue** details for routing: [KVSQueueFlow.json](https://docs.kore.ai/agentassist/wp-content/uploads/sites/6/2024/02/KVSQueueFlow.json_.pdf){:target="_blank"} 
 17. To use agent dispositions, configure the **Set Event Flow** block with **Disconnect flow for Agent UI** hook by importing [this flow](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/AmazonConnect/flows/voice/DispositionFlow.json){:target="_blank"} and selecting it. If not, you can delete the block and connect the remaining blocks to the disconnect block.  
 
     !!! note
