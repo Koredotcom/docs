@@ -249,8 +249,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    <td colspan="3">
    <p><b>Metadata</b>:</p>
 <ul>
-<li><strong><i>Model ID</i></strong> and <strong><i>Model Name</i></strong> are displayed for all the <em>Model</em> category events.
-<li><strong><i>Model Type</i></strong> is displayed for <em>Model Deleted</em>, <em>API Key created</em>, <em>API Key deleted</em>, <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed </em>events.
+<li><b><i>IP Address</i></b>, <b><i>User ID</i></b>, <strong><i>Model ID</i></strong> and <strong><i>Model Name</i></strong> are displayed for all the <em>Model</em> category events.
+<li><strong><i>Model Type</i></strong> is displayed for <i>Model Added</i>, <em>Model Deleted</em>, <em>API Key created</em>, <em>API Key deleted</em>, <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed </em>events.
 <li><strong><i>Hardware Type</i></strong> is displayed for <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed</em> events.
 </li>
 </ul>
@@ -269,8 +269,9 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the addition of external models to the account.
    </td>
-   <td rowspan="4" align="center">
-   -
+   <td rowspan="2">
+   <ul><li>For opensource and fine-tuned models, <i>Deployment name</i> is dsplayed.</li>
+   <li>For commercial models, <i>Connection name</i> is displayed.</li></ul>
    </td>
   </tr>
   <tr>
@@ -283,6 +284,9 @@ Additionally, you can set **custom filters** based on a specific category, event
    <td>API Key created
    </td>
    <td>Tracks the creation of an API key for a model in the account.
+   </td>
+   <td rowspan="2" align="center">
+   -
    </td>
   </tr>
   <tr>
