@@ -357,7 +357,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Add opensource model
+   <td>Add open-source model
    </td>
    <td>Yes
    </td>
@@ -1971,7 +1971,7 @@ To add a custom role, follow the steps below:
 **Important Considerations**
 
 * First, select the access level for **Models** to enable its permissions.
-<img src="../images/select-acess-for-models.png" alt="set models access" title="set models access" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/select-access-for-models.png" alt="set models access" title="set models access" style="border: 1px solid gray; zoom:80%;">
 
     Missing this step automatically disables the permissions.
 

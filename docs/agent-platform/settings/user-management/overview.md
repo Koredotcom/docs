@@ -5,7 +5,7 @@ The **Users Management** module is crucial for handling user-related activities 
 - **Managing Users**: Add users to your account, assign a default user role, view user status, unlock a locked user, and delete one or more user from your account. [Learn more](../user-management/users.md){:target="_blank"}.
 - **Managing Roles, and Permissions**: Assign and configure roles, set module-wise account/tool permissions, and manage user access efficiently. [Learn more](./role-management.md){:target="_blank"}.
 - **Active Directory (AD) Synchronization (Sync)**: Integrate and synchronize your AD with organizational user data. [Learn more](./settings/active-directory.md){:target="_blank"}.
-- **Configuring User Profile Fields**: Set visibility and editability rules for user profile fields specific to your domain. [Learn more](./settings/active-directory.md/#step-3-specify-user-attributes-and-configure-rules-for-selective-import-from-ad){:target="_blank"}.
+- **Configuring User Profile Fields**: Set visibility and modification rules for user profile fields specific to your domain. [Learn more](./settings/active-directory.md/#step-3-specify-user-attributes-and-configure-rules-for-selective-import-from-ad){:target="_blank"}.
 - **Email Notifications**: Configure email notifications for users depending on whether they joined your account by invitation or through AD sync. [Learn more](./settings/active-directory.md/#sync-status-email-notifications){:target="_blank"}.
 
 This [Users](./users.md){:target="_blank"} page provides detailed instructions and guidelines on various capabilities available within the **Users Management** module for administering user-related operations, such as the following:

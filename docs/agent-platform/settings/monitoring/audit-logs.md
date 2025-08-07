@@ -194,7 +194,7 @@ Additionally, you can set **custom filters** based on a specific category, event
     <tr>
    <td>API App updated
    </td>
-   <td>Tracks the updation/changes of an API app.
+   <td>Tracks the updates/changes of an API app.
    </td>
   </tr>
   </table>
@@ -250,8 +250,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    <p><b>Metadata</b>:</p>
 <ul>
 <li><b><i>IP Address</i></b>, <b><i>User ID</i></b>, <strong><i>Model ID</i></strong> and <strong><i>Model Name</i></strong> are displayed for all the <em>Model</em> category events.
-<li><strong><i>Model Type</i></strong> is displayed for <i>Model Added</i>, <em>Model Deleted</em>, <em>API Key created</em>, <em>API Key deleted</em>, <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed </em>events.
-<li><strong><i>Hardware Type</i></strong> is displayed for <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed</em> events.
+<li><strong><i>Model Type</i></strong> is displayed for <i>Model Added</i>, <em>Model Deleted</em>, <em>API Key created</em>, <em>API Key deleted</em>, <em>Model Fine-tuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed </em>events.
+<li><strong><i>Hardware Type</i></strong> is displayed for <em>Model fine-tuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed</em> events.
 </li>
 </ul>
    </td>
@@ -296,9 +296,9 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Model Finetuning
+   <td>Model fine-tuning
    </td>
-   <td>Tracks the finetuning process for models done.
+   <td>Tracks the fine-tuning process for models done.
    </td>
    <td>
 <ul>
@@ -353,7 +353,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Model undeployed
    </td>
-   <td>Tracks the opensource model undeployments in the account.
+   <td>Tracks the open-source model undeployments in the account.
    </td>
    <td>
 <ul>
@@ -620,7 +620,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Generated Prompt
    </td>
-   <td>Tracks the prompt generation done by the accout user.
+   <td>Tracks the prompt generation done by the account user.
    </td>
   </tr>
   </table>
@@ -1108,7 +1108,7 @@ All the log entries relevant to the applied filter(s) are displayed, as shown be
 
 To clear the filter settings, click **Clear All**.
 
-<img src="../images/clear-all-filters.png" alt="clear all fllters" title="clear all fllters" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/clear-all-filters.png" alt="clear all filters" title="clear all filters" style="border: 1px solid gray; zoom:75%;">
 
 The number of filters you have applied is displayed on the **Filter** icon.
 <img src="../images/applied-filters.png" alt="applied filters" title="applied filters" style="border: 1px solid gray; zoom:75%;">

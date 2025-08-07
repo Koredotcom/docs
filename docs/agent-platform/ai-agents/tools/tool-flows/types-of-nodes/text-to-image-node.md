@@ -48,7 +48,7 @@ Instead of manually appending images later or integrating them into the tools fl
 * The node generates high-quality images based on the provided prompts and configurations.
 * The generated images are available forever and do not have an expiry period.
 * The model uses an input scanner in the node to detect and filter banned words or topics. If a banned topic is included in the input prompts, an error is generated and displayed in the debug window when the flow is executed.
-* Performance tracking is available under **Settings** -> **Model Analytics Dashboard** -> **Opensource Models** tab. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-analytics-dashboard/){target="_blank"}. 
+* Performance tracking is available under **Settings** -> **Model Analytics Dashboard** -> **Open-source Models** tab. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-analytics-dashboard/){target="_blank"}. 
 
 The metrics include:
 
