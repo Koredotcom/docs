@@ -396,4 +396,4 @@ When you share a tool with another user within the same account, all configurati
 
 ## Related Links
 
-* **Supported Libraries** - [Learn more](../types-of-nodes/script-libraries.md){:target="_blank"} about the list of supported libraries in the script editor of the Function Node.
+* **Supported Libraries** - [Learn more](../types-of-nodes/script-libraries.md) about the list of supported libraries in the script editor of the Function node.
