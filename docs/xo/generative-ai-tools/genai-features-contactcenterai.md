@@ -11,21 +11,22 @@ The following table displays the features and the supported models.
 
 (✅ Supported | ❌ Not supported)
 
-| Feature                                                                 | Azure OpenAI Model(s) | OpenAI Model(s)                        | Custom LLM | XO GPT |
-|-------------------------------------------------------------------------|------------------------|----------------------------------------|------------|--------|
-| Agent Empathy Identification                                           | GPT-4o                 | GPT-4o and GPT-4o mini                 | ✅         | ❌     |
-| Agent Response Rephrasing                                              | ❌                    | GPT-3.5 Turbo                          | ❌         | ❌     |
-| By Value Adherence validation for Quality AI                           | GPT-4o                 | GPT-4o and GPT-4o mini                 | ✅         | ❌     |
-| By Value metric extraction for Quality AI                              | GPT-4o                 | GPT-4o and GPT-4o mini                 | ✅         | ❌     |
-| Churn & Escalation Identification                                      | GPT-4o                 | GPT-4o and GPT-4o mini                 | ✅         | ❌     |
-| Conversation Summary                                                   | ❌                    | ❌                                     | ✅         | ✅     |
-| Crutch Word Usage Detection                                            | GPT-4o                 | GPT-4o                                 | ✅         | ❌     |
-| Default Script Adherence                                               | GPT-4o                 | GPT-4o and GPT-4o mini                 | ✅         | ❌     |
-| GenAI based agent answer adherence and customer trigger detection      | GPT-4o                 | GPT-4o and GPT-4o mini                 | ✅         | ❌     |
-| Generating Similar QM Utterance Suggestions                            | GPT-4                  | GPT-3.5, GPT-4o and GPT-4o mini        | ❌         | ❌     |
-| Post-Interaction Sentiment Analytics and Key Emotion Moments           | GPT-4o                 | GPT-4o and GPT-4o mini                 | ✅         | ❌     |
-| Sentiment Analysis                                                     | GPT-4o                 | GPT-4o and GPT-4o mini                 | ✅         | ❌     |
-| Topic Modelling                                                        | GPT-4o                 | GPT-4o and GPT-4o mini                 | ✅         | ❌     |
+
+| Feature | Azure OpenAI Model(s) | OpenAI Model(s) | Custom LLM | XO GPT |
+|:--|:--|:--|:--:|:--:|
+| Agent Empathy Identification | GPT-4o | GPT-4o | ✅ | ❌ |
+| Agent Response Rephrasing | ❌ | ❌ | ❌ | ✅ |
+| By Value Adherence validation for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ | ❌ |
+| By Value metric extraction for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ | ❌ |
+| Churn & Escalation Identification | GPT-4o | GPT-4o | ✅ | ❌ |
+| Conversation Summary | ❌ | GPT-3.5 | ✅ | ❌ |
+| Crutch Word Usage Detection | GPT-4o | GPT-4o | ✅ | ❌ |
+| Default Script Adherence | GPT-4o | GPT-4o | ✅ | ❌ |
+| GenAI-based agent answer adherence and customer trigger detection | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ | ❌ |
+| Generating Similar QM Utterance Suggestions | GPT-3.5 Turbo | GPT-3.5 | ❌ | ❌ |
+| Post-Interaction Sentiment Analytics and Key Emotion Moments | GPT-4o | GPT-4o | ✅ | ❌ |
+| Sentiment Analysis | GPT-4o | GPT-4o | ✅ | ❌ |
+| Topic Modelling | GPT-4o | GPT-4o | ✅ | ❌ |
 
 
 
