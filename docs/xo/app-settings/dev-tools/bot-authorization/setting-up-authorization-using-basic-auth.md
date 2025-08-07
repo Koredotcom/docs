@@ -35,7 +35,7 @@ To define Basic Authorization for your assistant, follow these steps:
 
     !!! Note
         
-            By default, the GET method is selected for the existing apps.
+        By default, the GET method is selected for the existing apps.
 
 7. Click **Save**.
 
@@ -149,7 +149,7 @@ or
 
 https://{tenant}.service-now.com/api/now/v1/table/incident
 
-For more information, see [Using Session and Context Variables in Tasks](../../../../automation/use-cases/using-session-and-context-variables){:target="_blank"}.
+For more information, see [Using Session and Context Variables in Tasks](../../../automation/use-cases/using-session-and-context-variables.md){:target="_blank"}.
 
 Click **Save** to save the authorization settings and close the **New Authorization Mechanism** dialog.
 
