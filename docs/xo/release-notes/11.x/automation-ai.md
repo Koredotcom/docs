@@ -3,6 +3,37 @@
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
 
+
+
+## v11.16.1 August 9, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">Agent Node</font>
+
+
+**Enhanced Agent Node Configuration for Streamlined Input Handling**
+
+Agent Node configuration is streamlined by replacing ‘retries’ with ‘number of iterations’ in Instance Properties and removing the Initial and Error Prompts sections from the IVR Properties, as the models will dynamically manage prompting across voice channels. [Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#instance-properties)
+
+
+**IVR Property Support for LLM Streaming in Agent Node**
+
+Agent nodes with LLM streaming now honor configured IVR properties (timeout, prompts, barge-in, grammar, retries, call control, and recording) instead of using a hardcoded 60-second timeout. Node-level settings take precedence over global configurations, providing precise control of voice interactions without affecting non-LLM nodes. [Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#ivr-properties)
+
+
+<font size="4">NLP</font>
+
+**Batch Testing now supports Zero-Shot Model Feature**
+
+The Platform now supports the Zero-Shot Model feature with the existing NLP-based Batch Testing. This enhancement allows you to validate utterance predictions even when the bot is not explicitly trained on those utterances, enabling more flexible evaluation of LLM-based bots. [Learn more :octicons-arrow-right-24:](../../automation/testing/regression-testing/batch-testing.md)
+
+
+
+<hr>
+
 ## v11.16.0 July 26, 2025
 
 <u>Minor Release</u>  
