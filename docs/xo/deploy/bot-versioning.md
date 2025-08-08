@@ -31,7 +31,7 @@ The version type is based on the ways in which a Bot version is created:
 * **User Created**: These versions are created by you as a developer, as discussed below.
     * There is a limit of 20 user-created versions. Once the limit is reached, the oldest versions are deleted to make room for any new ones.
 
-* **Auto Created**: These versions are created as part of the publishing cycle. [Learn more](../publishing-app/){:target="_blank"}.
+* **Auto Created**: These versions are created as part of the publishing cycle. [Learn more](publishing-bot.md){:target="_blank"}.
     * Whenever you publish an agent, the Platform creates a version automatically.
     * This auto created version includes the definition of the published copy of the agent after the current publish request is accepted.
     * In case the publish request is rejected, the version will not be created.

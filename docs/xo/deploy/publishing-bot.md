@@ -2,7 +2,7 @@
 
 End users can interact with an AI Agent only when it is published. The Kore.ai Experience Optimization Platform provides a publishing flow to allow administrators to review new agents and updates before they are made available to end users. The publishing workflow applies to any component that impacts the end user.
 
-Before you can publish your agent, you need to configure at least one channel. [Learn more about Channel Enablement](../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+Before you can publish your agent, you need to configure at least one channel. [Learn more about Channel Enablement](../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 
 Moving forward, we will discuss the publication statuses your agent and its components go through, the publication process, excluded components, as well as the approval process. 
 
@@ -20,7 +20,7 @@ You can switch between the two states using the drop-down on the top left side o
 
 <img src="../images/publish-bot-img1.png" alt="Switch between statuses" title="Switch between statuses" style="border: 1px solid gray; zoom:70%;">
 
-If your agent is trained in one or more languages that use NLP Version 2, you will see a banner notifying you about the upcoming [auto-upgrade to NLP Version 3](../../automation/natural-language/training/optimizing-bots/#nlp-version-3){:target="_blank"}.
+If your agent is trained in one or more languages that use NLP Version 2, you will see a banner notifying you about the upcoming [auto-upgrade to NLP Version 3](../automation/natural-language/training/optimizing-bots.md#nlp-version-3){:target="_blank"}.
 
 
 ## Component Statuses

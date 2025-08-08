@@ -39,9 +39,9 @@ The following table displays the features and the supported models.
 
 The Platform does not provide system prompts in the following cases, so you must create a custom prompt:
 
-* When using OpenAI GPT-4o mini or Azure OpenAI GPT-4o mini
-* When using Provider's New LLM
-* For the Rephrase User Query feature with OpenAI or Azure OpenAI models
+* When using OpenAI GPT-4o mini or Azure OpenAI GPT-4o mini.
+* When using Provider's New LLM.
+* For the Rephrase User Query feature with OpenAI or Azure OpenAI models.
 
 
 
