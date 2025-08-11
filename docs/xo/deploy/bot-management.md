@@ -129,7 +129,7 @@ To import an AI Agent while creating it, follow these steps:
 
 2. The **Get Started** screen appears. Select **Automation AI** by clicking the **Try now** button on the tile.
 
-    <img src="../images/bm-import-automation-ai.png" alt="Import - Atomation AI" title="Import - Automation AI" style="border:1px solid gray; zoom:60;">
+    <img src="../images/bm-import-automation-ai.png" alt="Import - Automation AI" title="Import - Automation AI" style="border:1px solid gray; zoom:60;">
 
 3. Enter an **App Name**. Optionally, set an app icon.
 4. You can choose one of the below import options:
@@ -207,7 +207,7 @@ To import an AI Agent while creating it, follow these steps:
    <br>
     – Keeps existing prompts, only adds new ones.
     <br>
-    – Replaces all feature mappings, custom instructions, Guardrail, and DailogGPT.
+    – Replaces all feature mappings, custom instructions, Guardrail, and DialogGPT.
     <br>
     – Preserve existing integrations.
     <br>
@@ -393,7 +393,7 @@ When you export an agent, the following components get exported, depending on yo
    </td>   
   </tr>
   <tr>
-   <td>Exis Flows
+   <td>Exit Flows
    </td>
    <td>
 <ul>
