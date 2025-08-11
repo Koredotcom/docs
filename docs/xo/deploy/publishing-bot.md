@@ -154,18 +154,18 @@ Every component that impacts end-user interactions or experience goes through th
 
         <img src="../images/publish-bot-img5.png" alt="NL Model - Customize" title="NL Model - Customize" style="border: 1px solid gray; zoom:70%;">
  
-        <li><strong>Rules</strong>: Replaces the intents in the <em>Published</em> version from the <em>In-Development</em> version with the new set of intent with rules defined for Dialog Execution and Knowledge Graph Intent detection. <a href="../../automation/natural-language/training/traits/#trait-association-rules" target="_blank">Learn more</a>. Click the <strong>Customize</strong> link to select updated rules after publishing them. You can search and select a particular rule.
+        <li><strong>Rules</strong>: Replaces the intents in the <em>Published</em> version from the <em>In-Development</em> version with the new set of intent with rules defined for Dialog Execution and Knowledge Graph Intent detection. <a href="../automation/natural-language/training/traits.md#trait-association-rules" target="_blank">Learn more</a>. Click the <strong>Customize</strong> link to select updated rules after publishing them. You can search and select a particular rule.
  
-        <li><strong>Trait Types</strong>: Replaces the traits in the <em>Published</em> version with a new set of trait types from the <em>In-Development</em> version for specific entities, attributes, or details that the users express in their conversations. <a href="../../automation/natural-language/training/traits/" target="_blank">Learn more</a>.
+        <li><strong>Trait Types</strong>: Replaces the traits in the <em>Published</em> version with a new set of trait types from the <em>In-Development</em> version for specific entities, attributes, or details that the users express in their conversations. <a href="../automation/natural-language/training/traits.md" target="_blank">Learn more</a>.
  
         <li><strong>Others</strong> – Replaces the following components:  
         <ul>
   
-        <li><strong>Bot Synonyms</strong>: Synonyms in the <em>Published</em> version with a new set of synonyms from the <em>In-Development</em> version to include all possible alternative forms with all the additions, updates, and deletions. <a href="../../answers/knowledge-ai/knowledge-graph-terminology/#synonyms" target="_blank">Learn more</a>.
+        <li><strong>Bot Synonyms</strong>: Synonyms in the <em>Published</em> version with a new set of synonyms from the <em>In-Development</em> version to include all possible alternative forms with all the additions, updates, and deletions. <a href="../automation/knowledge-ai/knowledge-graph-terminology.md#synonyms" target="_blank">Learn more</a>.
   
         <li><strong>Utterances and NER</strong> – User utterances in the <em>Published</em> version from the <em>In-Development</em> version with a new set of utterances associated with the task.
   
-        <li><strong>Ignore Words and Fields Memory</strong> – A full set of Ignore Words and Field Memory in the <em>Published</em> version with words the NLP engine must ignore when interpreting the user input for a task, including all the additions, updates, and deletions. <a href="../../automation/intelligence/conversation-management/ignore-words-and-field-memory/" target="_blank">Learn more</a>.
+        <li><strong>Ignore Words and Fields Memory</strong> – A full set of Ignore Words and Field Memory in the <em>Published</em> version with words the NLP engine must ignore when interpreting the user input for a task, including all the additions, updates, and deletions. <a href="../automation/intelligence/conversation-management/ignore-words-and-field-memory.md" target="_blank">Learn more</a>.
   
         <li><strong>Entity Patterns and Negative Patterns</strong> – Old entity patterns with a new set of Entity and Negative patterns to improve NLP interpreter accuracy in the <em>Published</em> version from the <em>In-Development</em> version with all the additions, updates, and deletions. <a href="../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">Learn more</a>.
   
