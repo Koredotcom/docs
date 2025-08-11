@@ -94,7 +94,7 @@ Steps to authorize a Confluence action using developer credentials:
       * Click the **Select Authorization** drop-down and select the **Create New** option.  
       <img src="../images/confluence-action-img4.png" alt="Create new Custom authorization" title="Create new Custom authorization" style="border: 1px solid gray;zoom:50%;"/>
 
-      * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2){:target="_blank"} article.
+      * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2.md){:target="_blank"} article.
       * Enter the following authentication credentials for the OAuth v2 mechanism:
 
           * Call back URL
@@ -121,7 +121,7 @@ Steps to authorize a Confluence action using developer credentials:
 
         The Confluence action is moved from _Available_ to _Configured_ region.
 
-9. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Confluence Action Templates](../using-the-confluence-action-templates/){:target="_blank"} article.
+9. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Confluence Action Templates](configuring-the-confluence-action.md){:target="_blank"} article.
 
 
 ### Allow End User to Authorize

@@ -12,7 +12,7 @@ The confirmation node’s conditional transitions go beyond the _If-Else_ expres
 Setting up a confirmation node in a dialog task involves the following steps:
 
 1. Open the dialog task to which you want to add the Confirmation node.
-2. Add a Confirmation node in the designated place. For steps related to adding nodes, [Learn more](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+2. Add a Confirmation node in the designated place. For steps related to adding nodes, [Learn more](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
 
     !!! note
 
@@ -33,7 +33,7 @@ Setting up a confirmation node in a dialog task involves the following steps:
 To configure the component properties, follow the below steps:
 
 1. On the **Component Properties** tab, enter a **Name** and a **Display Name**.
-2. Under the **User Prompts** section, you can compose the confirmation request either as plain text or as a JavaScript message.center channel-specific messages for User Prompts using the **Manage** link. For more information, refer to the [Using the Prompt Editor](../../prompt-editor/){:target="_blank"} article.
+2. Under the **User Prompts** section, you can compose the confirmation request either as plain text or as a JavaScript message.center channel-specific messages for User Prompts using the **Manage** link. For more information, refer to the [Using the Prompt Editor](../prompt-editor.md){:target="_blank"} article.
     1. To add more prompts , click **Add a Prompt** and repeat the above steps.
     2. Enable the channel-specific standard formatting to **Display Confirmation Options.**  
     If this is not enabled, the yes/no options will not be displayed to the end-user.
@@ -59,13 +59,13 @@ To configure the component properties, follow the below steps:
     
         The Platform now supports additional Synonyms for Traditional Chinese language for Yes/No confirmation. [Learn more](#additional-synonyms-for-traditional-chinese-language).
 
-5. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the **Variable Namespace** is enabled for the assistant you are working with. You can go with the task level settings or customize it for this node. For more information, refer to the [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"} article.
+5. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the **Variable Namespace** is enabled for the assistant you are working with. You can go with the task level settings or customize it for this node. For more information, refer to the [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"} article.
     
     <img src="../images/confirmation-node-img4-associate-variable-namespace.png" alt="Confirmation node - Associate variable namespace" title="Confirmation node - Associate variable namespace" style="border:1px solid gray;zoom:70%;">
 
     !!! note
 
-        This section will be visible only if you enable Variable Namespace in [App Profile](../../../../../app-settings/app-profile/).
+        This section will be visible only if you enable Variable Namespace in [App Profile](../../../../app-settings/app-profile.md).
 
 
 #### Additional Synonyms for Traditional Chinese Language
@@ -101,7 +101,7 @@ After detecting these additional synonyms, the **Confirmation** node extracts �
         The settings in the **Instance Properties** tab are specific to the current task and do not reflect in other dialog tasks that use this node
     
     1. **Use the task level ‘Interruptions Behavior’ setting**: The AI Agent refers to the Interruptions Behavior settings set at the dialog task level.
-    2. **Customize for this node option:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it. For more information refer to the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article.
+    2. **Customize for this node option:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it. For more information refer to the [Interruption Handling and Context Switching](../../../intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article.
     
 3. **Analytics-Containment Type:** Select one of the below options to determine how to treat user-abandoned conversations.
     1. **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
@@ -111,7 +111,7 @@ After detecting these additional synonyms, the **Confirmation** node extracts �
     
     <img src="../images/confirmation-node-img6-precedence.png" alt="Confirmaiton node - Precedence" title="Confirmaiton node - Precedence" style="border:1px solid gray;zoom:70%;">
 
-4. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent conversations. [Learn more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+4. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent conversations. [Learn more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
     
     <img src="../images/confirmation-node-img7-custom-tags.png" alt="Confirmation node - Custom tags" title="Confirmation node - Custom tags" style="border:1px solid gray;zoom:70%;">
 
@@ -139,7 +139,7 @@ The Confirmation node’s conditional transitions go beyond the If-Else expressi
 
     These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
 
-For details on how to work with connection conditions,  read the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} article.
+For details on how to work with connection conditions,  read the [Adding IF-Else Conditions to Node Connections](../node-connections/nodes-conditions.md){:target="_blank"} article.
 
 <img src="../images/confirmation-node-img9-connection-properties.png" alt="Confirmation node - Connection properties" title="Confirmaiton node - Connection properties" style="border:1px solid gray;zoom:70%;">
 

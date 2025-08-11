@@ -4,7 +4,7 @@ Chances are that you have defined tens or hundreds of (Environment or Content) v
 
 Using **Namespaces** you can categorize variables and map them to various components. The XO Platform would load the variables only from the mapped namespaces while executing specific components.
 
-[Learn more about Variables.](../variables/using-bot-variables/){:target="_blank"}
+[Learn more about Variables.](../app-settings/variables/using-bot-variables.md){:target="_blank"}
 
 ## Enabling Namespaces
 

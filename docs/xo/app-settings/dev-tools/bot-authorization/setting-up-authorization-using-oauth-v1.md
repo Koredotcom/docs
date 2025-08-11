@@ -96,13 +96,13 @@ or
 <br>
 https://{tenant}.service-now.com/api/now/v1/table/incident
 <br>
-For more information, see <a href="../../../../automation/use-cases/using-session-and-context-variables" target="_blank">Using Session and Context Variables in Tasks</a>.
+For more information, see <a href="../../../automation/use-cases/using-session-and-context-variables.md" target="_blank">Using Session and Context Variables in Tasks</a>.
    </td>
   </tr>
   <tr>
    <td>Access Using a Connector
    </td>
-   <td>Select <strong>Yes</strong> to enable access for AI Agent using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="../../../../administration/kore-ai-connector" target="_blank">Using the Kore.ai Connector</a>.
+   <td>Select <strong>Yes</strong> to enable access for AI Agent using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="../../../administration/kore-ai-connector.md" target="_blank">Using the Kore.ai Connector</a>.
    </td>
   </tr>
   <tr>

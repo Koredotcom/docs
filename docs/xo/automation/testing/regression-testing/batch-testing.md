@@ -4,6 +4,9 @@ Once you have built and trained your bot, the most important question that arise
 
 The **Batch Testing** feature helps you discern the ability of your bot to correctly recognize the expected intents and entities from a given set of utterances. This involves the execution of a series of tests to get a detailed statistical analysis and gauge the performance of your bot’s ML model.
 
+The Batch Testing feature also supports the Zero-shot Model feature for intent detection, enabling performance evaluation even without pre‑trained intent‑based training utterances.
+To use it, ensure that the [Zero-shot ML Model](../../../generative-ai-tools/genai-features-automationai.md#zero-shot-model) feature is enabled and the Machine Learning [Network Type](../../../automation/natural-language/training/machine-learning-engine.md#network-type) is Zero-shot model. To know about the support LLMs, see [Automation AI - Model Feature Matrix](../../../generative-ai-tools/genai-features-automationai.md#model-feature-matrix).
+
 !!! Note
 
     The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"}.

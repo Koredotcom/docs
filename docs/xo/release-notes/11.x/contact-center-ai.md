@@ -2,6 +2,25 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.16.1 August 11, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Campaigns</font>
+
+**Cooldown Time for Proactive Web Campaigns**
+
+Proactive Web Campaigns now support a configurable Cooldown Time, allowing users to control how often widgets display to a visitor within a single session. The setting defaults to 0 minutes and caps at 30000 minutes. During cooldown, no other widget appears, even if rules are met, though visitor activity continues to be tracked. The update also adds a "Greater Than or Equal To" operator for the Page Visit Count rule. Only one widget displays at a time, ensuring a clean user experience. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/settings/global-settings.md#proactive-cooldown-time)  
+<img src="../images/proactive-cooldown-time.png" alt="Proactive Cooldown Time" title="Proactive Cooldown Time" style="border: 1px solid gray; zoom:70%;">
+
+**SIP Number Support for Preview and Progressive Dialers**
+
+Voice Campaigns now support SIP numbers for both Preview and Progressive dialing modes, extending functionality beyond Agentless campaigns. This enables customers, such as those with SIP-only infrastructure, to use SIP numbers consistently across all campaign types.
+
+<hr>
+
 ## v11.16.0 July 26, 2025
 
 <u>Minor Release</u>

@@ -7,8 +7,8 @@ Kore.ai allows you to redact any sensitive information that users share with you
 The original values are stored in a secure vault and can be used in a few scenarios to achieve business needs.  
 
 * If a PII value is used in Dialog Task transitions, the platform automatically uses the original value for the transition condition evaluation, such as validating the entity value's format (for example,  checking if it is a valid number).
-* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. However, you can send the original data for scenarios like passing the value to the backend system for further processing. Select the appropriate option while configuring the [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}.
-* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users for confirmation. Select the appropriate option while configuring the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node){:target="_blank"}.
+* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. However, you can send the original data for scenarios like passing the value to the backend system for further processing. Select the appropriate option while configuring the [Service Node](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md){:target="_blank"}.
+* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users for confirmation. Select the appropriate option while configuring the [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md){:target="_blank"}.
 
 !!! note
   
@@ -138,7 +138,7 @@ The **Sensitive Entity** option provides flexibility in managing the handling of
 
 Both the PII and Sensitive Entity complement each other in providing comprehensive protection for sensitive data. While the PII feature offers broad coverage for common PII patterns, sensitive nodes enable you to handle sensitive data in a more granular and contextually aware manner, addressing specific challenges and custom use cases.
 
-It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node/#configure-the-node){:target="_blank"} article.
+It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#configure-the-node){:target="_blank"} article.
 
 
 ### Protecting Sensitive Data in LLM Interactions

@@ -172,7 +172,7 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
         | **Field**            | **Data Type** | **Supported Operators**            |
         |------------------|-----------|----------------------------------------|
-        | Page Visit Count | Number    | Equals                                 |
+        | Page Visit Count | Number    | Equals, Greater Than or Equal To                                 |
         | Time Spent       | Number    | Equals                                 |
         | User             | String    | Is (known / anonymous)                 |
         | Country          | String    | Is                                     |
@@ -449,4 +449,4 @@ When the campaign runs, you can pause or stop it. You can also rerun a completed
 
 The Proactive Web Campaign plugin extends the Web SDK, enabling dynamic, rule-based interactions with website visitors. With this plugin, you can define campaigns that trigger actions like displaying messages or starting chats based on visitor behavior.
 
-For installation instructions, configuration options, and examples, refer to the README file in the [GitHub repository](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.0/docs/plugins/proactive-web-campaign){:target="_blank"}.
+For installation instructions, configuration options, and examples, refer to the README file in the [GitHub repository](https://github.com/Koredotcom/web-kore-sdk/blob/v3/11.16.1/docs/plugins/proactive-web-campaign/README.md){:target="_blank"}.
