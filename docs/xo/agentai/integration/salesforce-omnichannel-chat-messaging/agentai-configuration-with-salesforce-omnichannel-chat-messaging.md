@@ -26,12 +26,13 @@ This document explains the integration process of **OmniChannel Chat (Messaging)
     <img src="../images/salesforce-omnichannel-solution-4.png" alt="salesforce-omnichannel-solution" title="salesforce-omnichannel-solution" style="border: 1px solid gray; zoom:80%;"> 
 
     7. Select **Active**.
-    8. Click **Save**.
+    8. Click **Save**.  
+
 3. Configuring Salesforce with Kore Agent AI credentials:
     1. Click **App Launcher**.
     2. Type **config** in the **search bar,** and select **Kore Agent AI Configuration** from the displayed list.
     3. Click **New** from the right-top corner of the page.
-    4. Enter the required values in the **Agent AI URL**, **Bot ID**, **Client ID**, and **Client Secret** fields. To get these values:
+    4. Enter the required values in the **Agent AI URL**, **Bot ID**, **Client ID**, and **Client Secret** fields. To get these values:  
         1. Sign in to [AI for Service](https://platform.kore.ai/){:target="_blank"}.
         2. Go to **Flows & Channels** > **Channels**.
         3. Click **Digital** > **Web/Mobile Client**.
