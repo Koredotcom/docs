@@ -43,7 +43,7 @@ The following Bitly action is supported:
 
 Steps to shorten the URL in the Bitly integration:
 
-1. Refer to the [Installing the Bitly templates](../configuring-the-bitly-action/#step-2-install-the-bitly-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Bitly templates](configuring-the-bitly-action.md#step-2-install-the-bitly-action-templates){:target="_blank"} section to install this template.
 2. The _Short URL_ dialog task is added with the following components:  
 <img src="../images/bitly-action-img12-tem-img4.png" alt="Dialog task added" title="Dialog task added" style="border: 1px solid gray;zoom:50%;"/> 
 
