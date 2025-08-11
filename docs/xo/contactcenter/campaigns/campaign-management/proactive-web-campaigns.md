@@ -172,7 +172,7 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
         | **Field**            | **Data Type** | **Supported Operators**            |
         |------------------|-----------|----------------------------------------|
-        | Page Visit Count | Number    | Equals                                 |
+        | Page Visit Count | Number    | Equals, Greater Than or Equal To                                 |
         | Time Spent       | Number    | Equals                                 |
         | User             | String    | Is (known / anonymous)                 |
         | Country          | String    | Is                                     |
