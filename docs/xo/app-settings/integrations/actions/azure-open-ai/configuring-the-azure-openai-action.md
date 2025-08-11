@@ -125,7 +125,7 @@ Steps to authorize an Azure OpenAI action at a user level:
     4. Select the type of authorization mechanism. For example, select the API Key option.  
     <img src="../images/configure-azure-img15-open-ai-api-key1-1.png" alt="Select authorization mechanism" title="Select authorization mechanism" style="border: 1px solid gray;zoom:50%;"/>  
       
-        To create Basic Auth profiles, see [App Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
+        To create Basic Auth profiles, see [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.
 
     5. Enter the following authentication credentials for the Basic Auth mechanism:
         * _Name_ – Enter the name for the Basic Auth profile.

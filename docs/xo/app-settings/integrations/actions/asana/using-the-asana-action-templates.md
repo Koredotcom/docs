@@ -74,7 +74,7 @@ The following Asana action is supported in the latest version of the XO Platform
 
 Steps to fetch a task with ID from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _Get Task by Id_ dialog task is added with the following components:  
 <img src="../images/asana-action-img13.png" alt="Dialog task is added" title="Dialog task is added" style="border: 1px solid gray;zoom:50%;"/>  
     1. **getTaskById**: A user intent to fetch a task with ID from the Asana space.
@@ -139,7 +139,7 @@ Steps to fetch a task with ID from the Asana integration:
 
 Steps to fetch tasks created by a user from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _Find Tasks Created by User_ dialog task is added with the following components:  
 <img src="../images/asana-template-img10-find_tasks.png" alt="Add dialog task to find tasks" title="Add dialog task to find tasks" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -230,7 +230,7 @@ Steps to fetch tasks created by a user from the Asana integration:
 
 Steps to fetch tasks created by a user from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _FindTasks Assigned to a User_ dialog task is added with the following components:  
 <img src="../images/asana-template-img15-find_task_assigned.png" alt="Dialog task to find task assigned to user is added" title="Dialog task to find task assigned to user is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -319,7 +319,7 @@ Steps to fetch tasks created by a user from the Asana integration:
 
 Steps to retrieve all projects from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _List All Projects_ dialog task is added with the following components:  
 <img src="../images/asana-template-img19-list_all_projects.png" alt="Dialog task for listing tasks" title="Dialog task for listing tasks" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -382,7 +382,7 @@ Steps to retrieve all projects from the Asana integration:
 
 Steps to retrieve all users from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _List All Users_ dialog task is added with the following components:  
 <img src="../images/asana-template-img22list_all_users.png" alt="Dialog task to list users" title="Dialog task to list users" style="border: 1px solid gray;zoom:50%;"/> 
 
