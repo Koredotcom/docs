@@ -52,7 +52,7 @@ Steps to authorize an Bitly action using developer credentials:
 
             The Bitly action is moved from _Available_ to _Configured_ region on the Actions page.
 
-5. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Bitly action templates](../using-the-bitly-action-template/){:target="_blank"} article.  
+5. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Bitly action templates](using-the-bitly-action-template.md){:target="_blank"} article.  
 <img src="../images/bitly-action-img5.png" alt="Skip for now" title="Skip for now" style="border: 1px solid gray;zoom:50%;"/>  
 
 
@@ -69,7 +69,7 @@ Steps to authorize an Bitly action at a user level:
     <img src="../images/bitly-action-img6.png" alt="Auth type" title="Auth type" style="border: 1px solid gray;zoom:50%;"/>
 
     2. Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Bitly app for authorization. To create a profile, click the **Select Authorization** drop-down and select the **Create New** option.
-    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [App Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.  
+    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.  
     <img src="../images/bitly-action-img7.png" alt="Auth mechanism-API key" title="Auth mechanism-API key" style="border: 1px solid gray;zoom:50%;"/>
 
     4. Enter the following authentication credentials for the Basic Auth mechanism:
