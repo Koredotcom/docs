@@ -89,7 +89,7 @@ The following BambooHR actions are supported:
 
 Steps to create an employee in the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The Create an Employee dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img4-create-employee.png" alt="Create Employee dialog task" title="Create Employee dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -121,7 +121,7 @@ Steps to create an employee in the BambooHR integration:
 
 Steps to find an employee by ID from the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 
 2. The _Get Employee by ID_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img8-get-employee.png" alt="Get Employee ID task" title="Get Employee ID task" style="border: 1px solid gray;zoom:50%;"/>
@@ -154,7 +154,7 @@ Steps to find an employee by ID from the BambooHR integration:
 
 Steps to view all employees in the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The _List All Employees_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img11-list-employees.png" alt="List all employees" title="List all employees" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -220,7 +220,7 @@ Steps to view all employees in the BambooHR integration:
 
 Steps to update an employee in the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The _Update an Employee_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img14-update-employee.png" alt="Update Employee dialog task" title="Update Employee dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -254,7 +254,7 @@ Steps to update an employee in the BambooHR integration:
 
 Steps to fetch all time off requests from the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank} section to install this template.
 2. The Get All Time Off Requests dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img18-get-time-off.png" alt="Get Time Off Request dialog" title="Get Time Off Request dialog" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -350,7 +350,7 @@ Steps to fetch all time off requests from the BambooHR integration:
 
 Steps to get a list of who is out from the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The _Get a List of Who Is Out_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img21-get-who-out.png" alt="Get a list of Who is Out dialog task" title="Get a list of Who is Out dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -369,7 +369,7 @@ Steps to get a list of who is out from the BambooHR integration:
 
 Steps to update a request status in the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The _Update a Request Status_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img23-update-request-status.png" alt="Update Request Status dialog task" title="Update Request Status dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
