@@ -1,4 +1,4 @@
-# Manage Single Sign On for Account Access
+# Manage Single Sign On for Account Sign In
 
 Agent Platform provides users with a default sign-in flow as the standard authentication method. However, for organizations seeking enhanced security and convenience, administrators can enable **Single Sign-On (SSO)** through the **Settings** console.
 
@@ -25,32 +25,32 @@ Agent Platform supports SSO for the following protocols and providers:
   </tr>
   <tr>
    <td>
-<a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#saml" target="_blank">SAML</a>
+<a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#saml" target="_blank">SAML</a>
    </td>
    <td>
 <ul>
-<li><a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#okta-configuration" target="_blank">Okta</a></li>
-<li><a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#onelogin-configuration" target="_blank">OneLogin</a></li>
-<li><a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a></li>
+<li><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#okta-configuration" target="_blank">Okta</a></li>
+<li><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#onelogin-configuration" target="_blank">OneLogin</a></li>
+<li><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a></li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#ws-federation" target="_blank">WS-Federation</a>
+   <td><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#ws-federation" target="_blank">WS-Federation</a>
    </td>
    <td>
 <ul>
-<li><a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#windows-azure-configuration" target="_blank">Windows Azure</a></li>
-<li><a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#other-configuration_1" target="_blank">Other</a></li>
+<li><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#windows-azure-configuration" target="_blank">Windows Azure</a></li>
+<li><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#other-configuration_1" target="_blank">Other</a></li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">OpenID Connect</a>
+   <td><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">OpenID Connect</a>
    </td>
    <td>
 <ul>
-<li><a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#google-configuration" target="_blank">Google account</a></li>
+<li><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#google-configuration" target="_blank">Google account</a></li>
 </ul>
    </td>
   </tr>
@@ -69,9 +69,11 @@ Agent Platform supports SSO for the following protocols and providers:
 
 To access the SSO feature, follow the steps below:
 
-1. [Sign in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your Agent Platform account.
-2. Click **Settings** on the top menu.
-3. Go to **Security & Control** > **Single Sign On** on the left navigation menu.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Settings** on the top navigation bar.
+3. Go to **Security & Control** > **Single Sign On** on the left menu.
 
 If you’re using this feature for the first time, the following screen appears.
 
@@ -206,9 +208,9 @@ To enable SSO on the **Settings** console, follow the steps below:
 4. Select the required protocol and SP. The default selections are **SAML** and **Okta**.
 5. Configure the [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for one of the following SSO protocols and providers:
 
-<ul><li><b>SAML</b>: <a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#okta-configuration" target="_blank">Okta</a>, <a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#saml" target="_blank">Learn more</a>.</li>
-<li><b>WS-Federation</b>: <a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#ws-federation" target="_blank">Learn more</a>.</li>
-<li><b>OpenId connect</b>: <a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#google-configuration" target="_blank">Google</a>. <a href="https://docs.kore.ai/gale/settings/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
+<ul><li><b>SAML</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#okta-configuration" target="_blank">Okta</a>, <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#saml" target="_blank">Learn more</a>.</li>
+<li><b>WS-Federation</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#ws-federation" target="_blank">Learn more</a>.</li>
+<li><b>OpenId connect</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#google-configuration" target="_blank">Google</a>. <a href="https://docs.kore.ai/agent-platform/administration/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
 
 <ol start="9"><li>Click <b>Save</b>.</li></ol>
 
@@ -538,5 +540,5 @@ As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-par
 
 ## Related Information
 
-* [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Accessing Agent Platform](../../getting-started/sign-up-sign-in.md){:target="_blank"}- Sign up on Agent Platform, create an account, and sign in.

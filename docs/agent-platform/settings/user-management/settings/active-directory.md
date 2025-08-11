@@ -1,6 +1,6 @@
 # Active Directory: Configuring Automatic User Data Synchronization
 
-By configuring Active Directory (AD) import, you can seamlessly bring your organizational user information into the [Settings](../../settings-overview.md){:target="_blank"} console and keep it in sync with a single source of truth. This bulk import eliminates the need for email invitations or manual user info file imports, making the process more efficient. 
+By configuring Active Directory (AD) import, you can seamlessly bring your organizational user information into the Settings console and keep it in sync with a single source of truth. This bulk import eliminates the need for email invitations or manual user info file imports, making the process more efficient. 
 
 Moreover, the automatic synchronization (auto sync) feature ensures that Settings always has the most up-to-date user information, even reflecting deleted and modified records in the AD.
 
@@ -18,11 +18,15 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 
 ## Steps to Configure AD Sync 
 
-1. Navigate to **Users Management** > **Settings** on the **Settings** console.
-2. Click the **Configure Directory** button in the **Configure sync with directory** section.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="nav user" title="nav user" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Settings** on the top navigation bar.
+3. Navigate to **Users Management** > **Settings** on the left menu.
+4. Click the **Configure Directory** button in the **Configure sync with directory** section.
 <img src="../images/configure-directory-button.png" alt="configure directory" title="configure directory" style="border: 1px solid gray; zoom:75%;">
 
-3. Complete the setup by following the steps below in the **Configure Directory** window:
+5. Complete the setup by following the steps below in the **Configure Directory** window:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -226,4 +230,4 @@ For a **failed** sync, you will receive the following email:
 
 An alternative way to add users to your account (without using AD sync) is to invite them via email. [Learn more](../../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"}.
 
-To learn more about other administrator features on the **Settings** Console, click [here](../../settings-overview.md){:target="_blank"}.
+To learn more about other administrator features on the **Settings** Console, click [here](../../../administration/overview.md){:target="_blank"}.

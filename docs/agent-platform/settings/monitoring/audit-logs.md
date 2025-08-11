@@ -1,6 +1,4 @@
-# Audit Logs
-
-## Overview
+# Audit Logs - Track Account-level User Actions and Events
 
 Agent Platform’s comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
 
@@ -129,11 +127,85 @@ Additionally, you can set **custom filters** based on a specific category, event
 
   <table>
   <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: App API Key
+   </td>
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <b>IP address</b> and <b>User Id</b> are displayed for all the events.
+   </td>
+  </tr>
+      <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+          <td>App API Key created
+   </td>
+   <td>Tracks the creation of an App API key.
+   </td>
+   <td rowspan="2" align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>App API key deleted
+   </td>
+   <td>Tracks the deletion of an App API key.
+   </td>
+  </tr>
+  </table>
+
+  <table>
+  <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: API App
+   </td>
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <b>App id</b>, <b>IP address</b> and <b>User Id</b> are displayed for all the events.
+   </td>
+  </tr>
+      <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>API App created
+   </td>
+   <td>Tracks the creation of an API app.
+   </td>
+   <td rowspan="3" align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>API App deleted
+   </td>
+   <td>Tracks the deletion of an API app.
+   </td>
+  </tr>
+    <tr>
+   <td>API App updated
+   </td>
+   <td>Tracks the updation/changes of an API app.
+   </td>
+  </tr>
+  </table>
+
+  <table>
+  <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Integrations
    </td>
    </tr>
   <tr>
-  <td colspan="3"><b>Metadata</b>: <b><i>Integration Name</i></b>, <b><i>Integration ID</i></b>, and <b><i>Integration Type</i></b> are displayed for all the category events below.</td></tr>
+  <td colspan="3"><b>Metadata</b>: <b><i>IP Address</i></b>, <b><i>Integration Name</i></b>, <b><i>Integration ID</i></b>, <b><i>Integration Type</i></b>, and <b><i>User ID</i></b> are displayed for all the category events below.</td></tr>
         <tr>
    <td><strong>Event</strong>
    </td>
@@ -147,13 +219,24 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks integrations added to the account.
    </td>
-   <td rowspan="2" align="center">-</td>
+   <td rowspan="4" align="center">-</td>
    </tr>
   <tr>
    <td>Integration deleted
    </td>
    <td>Tracks integration deletions in the account.
    </td>
+  </tr>
+    <tr>
+   <td>Integration disabled
+   </td>
+   <td>Tracks the disabling of an integration in the account.
+   </td>
+  </tr>
+      <tr>
+   <td>Integration edited
+   </td>
+   <td>Tracks the modification of an integration’s configuration data in the account.</td>
   </tr>
   </table>
 
@@ -343,7 +426,51 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   </table>
-
+<table>
+  <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Tools Flow Management: Integration Node</td>
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <b>User ID</b>, <b>IP Address</b>, <b>Agent ID</b>, <b>Node name</b>, <b>Node ID</b>, and <b>Node Type</b> are displayed for all the category events below.
+   </td>
+  </tr>
+     <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Connection added
+   </td>
+   <td>Tracks the creation of a connection for an integration node.</td>
+   <td align="center" rowspan="5">
+   -
+   </td>
+  </tr>
+  <tr>
+   <td>Connection Modified
+   </td>
+   <td>Tracks the change of the selected connection for an integration node.</td>
+  </tr>
+    <tr>
+   <td>Action Added
+   </td>
+   <td>Tracks the addition of an action for the selected connection and its configuration.</td>
+  </tr>
+      <tr>
+   <td>Action Changed
+   </td>
+   <td>Tracks the change of the selected action.</td>
+  </tr>
+   <tr>
+   <td>Action Edited
+   </td>
+   <td>Tracks the modification of action parameters for the defined action.</td>
+  </tr>
+  </table>
   <table>
     <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Users Management
@@ -521,6 +648,75 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
   </table>
 
+   <table>
+   <tr>
+   <td colspan="3" align="center"><strong>Category</strong>: Manage Custom Scripts
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: <b><i>user ID</i></b>, <b><i>user name</i></b>, <b><i>IP Address</i></b>, and <b><i>custom script name</i></b> are displayed for all the category events below.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Custom script saved as draft
+   </td>
+   <td>Tracks the custom script saved as a draft.
+   </td>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>Custom script deployed
+   </td>
+   <td>Tracks the custom script deployment.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+    <tr>
+   <td>Custom script undeployed
+   </td>
+   <td>Tracks the custom script undeployment.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+      <tr>
+   <td>Custom script re-deployed
+   </td>
+   <td>Tracks the custom script redeployment.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+   <tr>
+   <td>Custom script deleted
+   </td>
+   <td>Tracks the custom script deletion.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+     <tr>
+   <td>Custom script exported
+   </td>
+   <td>Tracks the custom script export.
+   </td>
+   <td align="center"> -
+   </td>
+  </tr>
+  </table>
+
   <table>
      <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Guardrails
@@ -562,6 +758,42 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
 </table>
+
+<table>
+     <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Script
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: <b><i>user ID</i></b>, <b><i>user name</i></b>, <b><i>IP address</i></b>,<b><i> Agent ID</b></i>, <b><i>node name</b></i>, <b><i>node ID</i></b>, and <b><i>node type</b></i> are displayed for all the category events below.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Write Code
+   </td>
+   <td>Tracks the user's selection to write a custom script.
+   </td>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>Custom Function</td>
+   <td>Tracks the user's selection to execute a custom function.</td>
+   <td align="center">-
+   </td>
+  </tr>
+</table>
+
 
 ## Tool-Level Audit Logs
 
@@ -819,9 +1051,8 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 To access and view audit logs, follow the steps below:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../security-and-control/single-sign-on.md){:target="_blank"}.
-2. Navigate to the [Settings](https://galeadmin-kore.github.io/docs/gale/settings/settings-overview/#access-settings-console){:target="_blank"} console.
-3. Click **Monitoring** > **Audit Logs** on the left navigation menu.
+1. [Navigate](../../administration/overview.md#access-settings-console){:target="_blank"} to the **Settings** console.
+2. Click **Monitoring** > **Audit Logs** on the left navigation menu.
 <img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
 
 ## Dashboard Information
@@ -845,12 +1076,13 @@ This customization helps you focus on relevant audit logs, making it easier to t
 
 ### Steps to Add a Custom Filter
 
-1. Navigate to the **Audit Logs** dashboard.
-2. Click the **Filter** icon.
-3. Click **+Add Filter**.
+1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console. 
+2. Navigate to **Monitoring** > **Audit Logs**  on the left menu.
+3. Click the **Filter** icon.
+4. Click **+Add Filter**.
 <img src="../images/add-filter-audit-logs.png" alt="add filter" title="audit logs" style="border: 1px solid gray; zoom:75%;">
 
-4. In the **Filter By** window, select the required option from the dropdown list for **Select Column**, **Select Operator**, and **Enter Value**.
+5. In the **Filter By** window, select the required option from the dropdown list for **Select Column**, **Select Operator**, and **Enter Value**.
 <img src="../images/select-filter-from-dropdown.png" alt="select filter" title="select filter" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
@@ -865,7 +1097,7 @@ To view the logs for all the events except role creation, you must set the filte
 
 <img src="../images/view-all-logs.png" alt="view all logs" title="view all logs" style="border: 1px solid gray; zoom:75%;">
 
-5. Click **Apply**.
+<ol start="6"><li>Click <b>Apply</b>.</li></ol>
 
 All the log entries relevant to the applied filter(s) are displayed, as shown below.
 <img src="../images/log-entries.png" alt="log entries" title="log entries" style="border: 1px solid gray; zoom:75%;">
@@ -994,10 +1226,10 @@ You can confidently scale AI initiatives with event-based user activity logs to 
 
 ## Related Information
 
-* [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
-* [Tool Flow Change Logs](../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+* [Tool Flow Change Logs](../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 
 
 
