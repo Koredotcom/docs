@@ -4,19 +4,18 @@ This setup guide helps administrators quickly configure the AI for Work for thei
 
 AI for Work setup consists of the following steps:
 
-- [AI for Work Setup Guide](#ai-for-work-setup-guide)
-    - [Step 1: Sign Up for a New AI for Work Account](#step-1-sign-up-for-a-new-ai-for-work-account)
-    - [Step 2: Configure User Enrollments, SSO, and Service Accounts](#step-2-configure-user-enrollments-sso-and-service-accounts)
-    - [Step 3: Configure LLM and Embedding Models](#step-3-configure-llm-and-embedding-models)
-    - [Step 4: Configure Rate Limit for User Queries](#step-4-configure-rate-limit-for-user-queries)
-    - [Step 5: Configure Enterprise Knowledge](#step-5-configure-enterprise-knowledge)
-    - [Step 6: Publish Pre-built Agents to be Available for your Users](#step-6-publish-pre-built-agents-to-be-available-for-your-users)
-    - [Step 7: Configure Agents and Applications As Per your Requirement](#step-7-configure-agents-and-applications-as-per-your-requirement)
-    - [Step 8: Invite your Users to AI for Work](#step-8-invite-your-users-to-ai-for-work)
+- Step 1: Sign Up for a New AI for Work Account
+- Step 2: Configure User Enrollments, SSO, and Service Accounts
+- Step 3: Configure LLM and Embedding Models
+- Step 4: Configure Rate Limit for User Queries
+- Step 5: Configure Enterprise Knowledge
+- Step 6: Publish Pre-built Agents to be Available for your Users
+- Step 7: Configure Agents and Applications As Per your Requirement
+- Step 8: Invite your Users to AI for Work
 
 ### Step 1: Sign Up for a New AI for Work Account
 
-To sign up for a new account, contact the [Kore.ai sales team](https://kore.ai/contact-us/).
+To sign up for a new account, contact the [Sales team](https://kore.ai/contact-us/).
 
 ### Step 2: Configure User Enrollments, SSO, and Service Accounts
 
@@ -31,7 +30,7 @@ To sign up for a new account, contact the [Kore.ai sales team](https://kore.ai/c
 
 ### Step 3: Configure LLM and Embedding Models
 
-To use Generative AI features in AI for Work, configure integration with either a pre-built or custom Large Language Model (LLM). Pre-built integrations with platforms like Azure OpenAI, OpenAI, and Anthropic offer seamless setup, while the bring-your-own (BYO) framework supports external or self-hosted models for custom configurations. [Learn more](../assistant-configuration/llm-configuration.md).
+To use Generative AI features in AI for Work, configure integration with either a pre-built or custom Large Language Model (LLM). Pre-built integrations with platforms like Azure OpenAI, OpenAI, and Anthropic offer seamless setup, while the bring-your-own (BYO) framework supports external or self-hosted models for custom configurations. [Learn more](../llm-configuration/general-purpose.md).
 
 ### Step 4: Configure Rate Limit for User Queries
 

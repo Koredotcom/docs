@@ -76,6 +76,37 @@ From the user details page, you can access the following fields:
 
 <img src="../images/user-details.png" alt="user-details" title="user-details" style="border: 1px solid gray; zoom:80%;"> 
 
+## **User Roles Management**
+
+The User Roles feature allows administrators to control user access through predefined and custom role assignments. The system includes two default roles (Admin and Member) and supports the creation of custom roles with specific permissions and visual identifiers.
+
+### **Modifying Existing Roles**
+
+1. Click on the existing role you want to modify.
+<img src="../images/user-role-1.png" alt="user-details" title="user-details" style="border: 1px solid gray; zoom:80%;"> 
+
+2. Select the desired role.
+3. Confirm changes.
+
+### **Creating Custom Roles**
+1. Click **Manage role** from the user management interface.
+2. Select **Add Role** or equivalent option to create a new role.
+3. **Role name: **Enter a descriptive name for the custom role. Use clear, meaningful names that reflect the role's purpose 
+<img src="../images/user-role-2.png" alt="user-details" title="user-details" style="border: 1px solid gray; zoom:80%;"> 
+
+    **Access Permissions**: Choose one or multiple permissions from the provided list. Users will only see the modules corresponding to the permissions they are granted.
+
+    * User Management
+    * Assist configuration
+    * LLM Configuration
+    * Security
+    * Analytics
+
+    **Color**:Choose a unique color identifier for the role, this color serves as a visual indicator throughout the system.
+!!! note
+
+    At least one Access Permission must be selected to enable role creation.
+
 ## Top Navigation Menu
 
 This section describes the commands available on the Top Navigation Menu.  

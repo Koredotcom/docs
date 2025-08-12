@@ -234,7 +234,7 @@ This article assumes that you understand the fundamentals of testing bots in the
 Follow these steps to test user utterances for universal bots:
 
 1. Open the universal bot for which you want to test the user utterances.
-2. Select the **Build** tab from the top menu.
+2. Select the **Build** tab from the top navigation bar.
 3. From the left menu click **Testing -> Utterance Testing**.
 4. In the **Type a user utterance** field, enter the utterance that you want to test. For example _weather_.
 5. The results show up below with single, multiple, or no matching intents. For example, below is a multiple-match result for the _weather_ utterance.
