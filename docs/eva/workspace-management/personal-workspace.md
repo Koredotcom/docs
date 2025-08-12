@@ -1,6 +1,6 @@
 # Personal Workspace
 
-Personal Workspace is a feature that empowers end users to create, manage, and publish custom agents within their dedicated workspace environment. This feature provides administrators with granular control over user permissions, agent types, and publishing capabilities while maintaining security and governance standards.
+Personal Workspace is an environment that empowers end users to create, manage, and publish custom agents within their dedicated workspace environment. This feature provides administrators with granular control over user permissions, agent types, and publishing capabilities while maintaining security and governance standards.
 
 ## Feature Summary
 
