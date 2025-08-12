@@ -5,8 +5,6 @@ Workspaces provide dedicated environments where teams can collaborate on AI init
 * Protect valuable information with granular access controls and secure boundaries between departments.
 * Assign resources strategically by designating workspaces for particular teams, projects, or functional areas.
 
-<img src="../images/workspace.png" alt="admin-console" title="admin-console" style="border: 1px solid gray; zoom:80%;">
-
 Key Features
 
 Intuitive Workspace Management
