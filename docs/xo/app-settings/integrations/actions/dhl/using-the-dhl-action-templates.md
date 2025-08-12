@@ -49,7 +49,7 @@ The following DHL actions are supported:
 
 Steps to track the shipment using the DHL tracking ID:
 
-1. Refer to the [Installing the DHL Action templates](../configuring-the-dhl-action/#step-2-install-the-dhl-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the DHL Action templates](configuring-the-dhl-action.md#step-2-install-the-dhl-action-templates){:target="_blank"} section to install this template.
 2. The **Track Shipment** dialog task is added with the following components:  
 <img src="../images/dhl-action-img12-tem-img4.png" alt="Dialog task added" title="Dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -136,7 +136,7 @@ Steps to track the shipment using the DHL tracking ID:
 
 Steps to find DHL locations using the country and postal codes:
 
-1. Refer to the [Installing the DHL Action templates](../configuring-the-dhl-action/#step-2-install-the-dhl-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the DHL Action templates](configuring-the-dhl-action.md#step-2-install-the-dhl-action-templates){:target="_blank"} section to install this template.
 2. The **Find Locations** dialog task is added with the following components:  
 <img src="../images/dhl-tem-img8.png" alt="Dialog task added" title="Dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
