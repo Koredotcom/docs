@@ -1,6 +1,6 @@
 # Adding the Microsoft Teams Channel
 
-You can add Microsoft Teams as a delivery channel to your Kore.ai Virtual Assistant to allow it to interact with end-users using Microsoft Teams.
+You can add Microsoft Teams as a delivery channel to your Kore.ai Assistant to allow it to interact with end-users using Microsoft Teams.
 
 
 ## Prerequisites
@@ -138,7 +138,7 @@ To do so, create an MS Teams app, associate the bot with it, and then publish th
 
 ## Step 5: Approve the MS Teams App Publish Request
 
-The request to publish the MS Teams App must be approved by an MS Teams Admin. Log in to the [MS Teams Admin Portal](https://admin.teams.microsoft.com/) and proceed to **Teams apps > Manage apps**. Search for the app that you published in the earlier step. Select the app and change the Publishing status to **Published**. This completes the process for publishing your bot for your Teams users.
+The request to publish the MS Teams App must be approved by an MS Teams Admin. Log in to the [MS Teams Admin Portal](https://admin.teams.microsoft.com/) and proceed to **Teams apps > Manage apps**. Search for the app that you published in the earlier step. Select the app and change the Publishing status to **Published**. This completes the process for publishing your app for your Teams users.
 
 
 ## Step 6: Configure Proactive Notifications [Optional]
@@ -331,6 +331,6 @@ if(channelActionMetadata){
 
 ### Related Links
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
