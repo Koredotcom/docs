@@ -23,6 +23,7 @@ Customize the analytics view by using the dashboard's filtering options and inte
 
 * **Time Frame Selection**: Choose from pre-defined ranges or set custom dates to analyze specific periods.
 * **Environment Filter**: Select specific environments for targeted analysis (defaults to current draft).
+* **Environment Filter Label**: Displays a visible label for the Environment filter to improve discoverability.
 * **View Modes**: Toggle between interactive charts for trend analysis and detailed tables for granular inspection.
 * **Drill-down Navigation**: Click any metric card or data point to access expanded insights and detailed breakdowns.
 * **Export Options**: Download data for offline analysis and custom reporting.
