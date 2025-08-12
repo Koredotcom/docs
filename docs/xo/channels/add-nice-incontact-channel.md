@@ -31,8 +31,6 @@ The following are prerequisites for adding Nice inContact as a Channel on the XO
 
 Perform the following steps to enable Nice inContact as a channel, download the Studio Script, and get the Webhook URL and client ID from the XO Platform.
 
-
-
 1. Login to the Platform and navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Nice inContact** > **Configurations**.  
 <img src="../images/nice-in-contact-img2.png" alt="Configurations" title="Configurations" style="border: 1px solid gray; zoom:60%;">
 
@@ -48,7 +46,6 @@ Perform the following steps to enable Nice inContact as a channel, download the 
 
 4. In the Enable channel, select **Yes** and then click **Save**. The configuration saved success message is displayed.  
 <img src="../images/nice-in-contact-img4.png" alt="Nice InContact Configuration saved" title="Nice InContact Configuration saved" style="border: 1px solid gray; zoom:60%;">
-
 
 ## Configure Nice inContact
 
