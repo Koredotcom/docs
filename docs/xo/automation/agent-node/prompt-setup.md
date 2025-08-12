@@ -2,29 +2,29 @@
 # Agent Node Prompt Setup
 
 
-This article provides a comprehensive overview of how to implement and optimize LLM-based virtual assistance in Kore.ai using the Agent Node, focusing on prompt engineering techniques to refine virtual assistance behavior and improve the user experience.
+This article provides a comprehensive overview of how to implement and optimize LLM-based AI Agent using the Agent Node, focusing on prompt engineering techniques to refine AI Agent behavior and improve the user experience.
 
-Prompt engineering is the art and science of crafting clear, effective instructions for LLM-powered virtual assistance to optimize their performance. By thoughtfully designing the System Context, developers can precisely control how the model communicates, ensure it follows specific guidelines, and refine its processing of user inputs. This strategic approach enables virtual assistance to deliver responses that are more accurate, contextually appropriate, and aligned with the intended user experience.Defining Context and Personality.
+Prompt engineering is the art and science of crafting clear, effective instructions for LLM-powered AI Agent to optimize their performance. By thoughtfully designing the System Context, developers can precisely control how the model communicates, ensure it follows specific guidelines, and refine its processing of user inputs. This strategic approach enables AI Agent to deliver responses that are more accurate, contextually appropriate, and aligned with the intended user experience.Defining Context and Personality.
 
 To ensure consistency and alignment across interactions, apply prompt engineering techniques to define:
 
 Context Definition:
 
-* Specify the virtual assistance’s role (e.g., virtual assistance or voice assistant) and the communication channel it operates within (text-based or voice-based).
+* Specify the AI Agent’s role (e.g., AI Agent or voice assistant) and the communication channel it operates within (text-based or voice-based).
 * Outline the expected response length, preferred level of verbosity, and formality of responses.
-* Provide a structured interaction goal, detailing the virtual assistance’s primary function, such as customer support, appointment scheduling, or troubleshooting guidance.
-* Indicate the company or service the virtual assistance represents, ensuring that brand voice, terminology, and industry-specific nuances are reflected in responses.
-* Define whether the virtual assistance should proactively offer assistance, clarify ambiguous inputs, or wait for explicit user queries before responding.
+* Provide a structured interaction goal, detailing the AI Agent’s primary function, such as customer support, appointment scheduling, or troubleshooting guidance.
+* Indicate the company or service the AI Agent represents, ensuring that brand voice, terminology, and industry-specific nuances are reflected in responses.
+* Define whether the AI Agent should proactively clarify ambiguous inputs, or wait for explicit user queries before responding.
 
 Personality Definition 
 
 Using the Conversations with Things framework, a conversation design methodology outlined in the book Conversations with Things, define:
 
-* Interaction goals: Define what the virtual assistance aims to achieve in conversations, such as assisting users, answering questions, or guiding them through processes.
-* Level of personification: Decide how human-like the virtual assistance should be, ranging from a fully automated assistant to a more personable, engaging entity.
-* Power dynamics in user interactions: Establish whether the virtual assistance takes a directive approach (authoritative) or a supportive role (collaborative) in assisting users.
-* Character traits: Identify core attributes of the virtual assistance personality, such as professionalism, friendliness, or humor, to ensure consistency in interactions.
-* Tone and key behavioral traits: Set the virtual assistance’s communication style, including formality, friendliness, and how it responds to user inquiries.
+* Interaction goals: Define what the AI Agent aims to achieve in conversations, such as assisting users, answering questions, or guiding them through processes.
+* Level of personification: Decide how human-like the AI Agent should be, ranging from a fully automated to a more personable, engaging entity.
+* Power dynamics in user interactions: Establish whether the AI Agent takes a directive approach (authoritative) or a supportive role (collaborative) in assisting users.
+* Character traits: Identify core attributes of the AI Agent personality, such as professionalism, friendliness, or humor, to ensure consistency in interactions.
+* Tone and key behavioral traits: Set the AI Agent’s communication style, including formality, friendliness, and how it responds to user inquiries.
 
 The framework provides a structured approach to designing conversational experiences, ensuring that AI Agents maintain consistency, align with user expectations, and create meaningful interactions.
 
@@ -116,21 +116,21 @@ This design simplifies configuration and improves entity extraction accuracy.
 For a more practical approach, the differences through scenarios can make the comparison more engaging.
 
 
-* Scenario 1: Maintaining a Legacy virtual assistance 
+* Scenario 1: Maintaining a Legacy assistance 
 
-  A banking virtual assistance that has predefined customer verification steps and strict entity collection. 
+  A banking assistance that has predefined customer verification steps and strict entity collection. 
   
   Uses **V1 prompts** because it requires explicit entity handling and manual exit scenarios. 
 
 * Scenario 2: Automating Customer Support 
   
-  An AI assistant that dynamically suggests troubleshooting steps based on customer queries. 
+  An AI Agent that dynamically suggests troubleshooting steps based on customer queries. 
 
   Uses **V2 prompts** because it needs tool integration and dynamic execution. 
 
 * Scenario 3: Handling a Mixed Workflow 
 
-  A virtual assistance for insurance claims processing that requires predefined data collection but also uses external tools for verification. 
+  A AI Agent for insurance claims processing that requires predefined data collection but also uses external tools for verification. 
   Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. 
 
 
@@ -243,7 +243,7 @@ For a more practical approach, the differences through scenarios can make the co
 #### Implementation Differences
 
 * Format Requirements:
-  * Both require responses to include conv_status , virtual assistance response, and collected entities
+  * Both require responses to include conv_status , AI Agent response, and collected entities
   * Streaming prompts must structure this content for incremental delivery
 * Error Handling:
   * Regular prompts can be fully validated before delivery
@@ -406,7 +406,7 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
       messages: [
           {
               role: "system",
-              content: `You are a professional virtual assistant representing an enterprise business. Maintain a professional demeanor at all times and focus exclusively on business-related conversations. Do not engage with abusive language or non-business topics.
+              content: `You are a professional AI Agent representing an enterprise business. Maintain a professional demeanor at all times and focus exclusively on business-related conversations. Do not engage with abusive language or non-business topics.
 
               ${System_Context}
 
@@ -418,7 +418,7 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
               - Communicate in clear, friendly, professional language in ${language}
               - Generate appropriate prompts to collect necessary information from users
               - Use available tools to complete requested tasks efficiently
-              - Before concluding interactions, verify if users require additional assistance
+              - Before concluding interactions, verify if users require additional help
 
               TOOL USAGE:
               - Follow each tool's specific description and requirements precisely
@@ -636,7 +636,7 @@ To add an Agent Node V2 prompt, follow the steps:
 
 ### Expected Output Structure
 
-Defines the standardized format required by the XO Platform to process LLM responses effectively.
+Defines the standardized format required by the Platform to process LLM responses effectively.
 
 #### Expected Output Structure - V1 Prompt
 
@@ -879,7 +879,7 @@ The context object is used to get the entities and the parameters of tools.
   <tr>
    <td>LLM_Text_Response_Path
    </td>
-   <td>The key within the LLM response payload which gives the virtual assistant’s response that should be displayed to the end-user during user-virtual assistance conversation.
+   <td>The key within the LLM response payload which gives the AI Agent’s response that should be displayed to the end-user during user-AI Agent conversation.
    </td>
   </tr>
   <tr>
@@ -946,7 +946,7 @@ Keys
   <tr>
    <td>{{Conversation_History_String}} Optional
    </td>
-   <td>This contains the messages exchanged between the end-user and the virtual assistant. It can used only in the JSON prompt.
+   <td>This contains the messages exchanged between the end-user and the AI Agent. It can used only in the JSON prompt.
    </td>
   </tr>
   <tr>
@@ -964,7 +964,7 @@ Keys
   <tr>
    <td>{{Conversation_History}} Optional
    </td>
-   <td>Past messages in the conversation are exchanged between the end-user and the virtual assistant. This is an array of objects with role and content as keys. It can used only in the JavaScript prompt
+   <td>Past messages in the conversation are exchanged between the end-user and the AI Agent. This is an array of objects with role and content as keys. It can used only in the JavaScript prompt
    </td>
   </tr>
   <tr>
