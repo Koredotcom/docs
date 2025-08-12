@@ -1,4 +1,5 @@
-# The All-new AI for Work Platform
+# Introduction to AI for Work
+
 AI for Work is a unified enterprise platform that significantly enhances enterprise productivity by automating routine tasks and enabling employees to focus on high-value work. The platform addresses three critical enterprise challenges:
 
 * Information Silos: Employees struggle to locate information spread across multiple systems.

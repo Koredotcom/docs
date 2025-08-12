@@ -69,7 +69,7 @@ Steps to authorize a Freshdesk action at a user level:
     2. Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Freshdesk app for authorization. To create a profile, click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/freshdesk-action-img4.png" alt="Create new auth profile" title="Create new auth profile" style="border: 1px solid gray;zoom:50%;"/>
 
-    3. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [App Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
+    3. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.
     4. Enter the following authentication credentials for the Basic Auth mechanism:
         * _Name_ – Enter the name for the Basic Auth profile.
         * Select _No_ for the tenancy URLs option.

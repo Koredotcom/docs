@@ -46,3 +46,7 @@ Try to answer the following questions (some if not all):
 3. Under Automation AI, click **Create New** and then **Name your AI chatbot**.
 4. Click **Next** at the bottom-right corner, and follow the onscreen instructions to complete the onboarding journey.
 5. At the end of the journey, your agent will be ready. You can go back to any step in the journey and change the provided information. 
+
+**Related Link**  
+
+[Guided Onboarding](guided-onboarding.md)

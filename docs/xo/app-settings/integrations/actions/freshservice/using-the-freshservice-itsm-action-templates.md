@@ -85,7 +85,7 @@ The following Freshservice actions are supported in this release:
 
 Steps to create a ticket in the Freshservice integration:
 
-1. Refer to the [Installing the Freshservice templates](../configuring-the-freshservice-action/#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Freshservice templates](configuring-the-freshservice-action.md#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
 2. The _Create Ticket_ dialog task is added with the following components:  
 <img src="../images/freshservice-tem-img4.png" alt="Create Ticket dialog added" title="Create Ticket dialog added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -160,7 +160,7 @@ Steps to create a ticket in the Freshservice integration:
 
 Steps to find a ticket using the ID in the Freshservice integration:
 
-1. Refer to the [Installing the Freshservice templates](../configuring-the-freshservice-action/#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Freshservice templates](configuring-the-freshservice-action.md#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
 2. The _Get Ticket by ID_ dialog task is added with the following components:  
 <img src="../images/freshservice-tem-img7.png" alt="Get Ticket By ID dialog task" title="Get Ticket By ID dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -223,7 +223,7 @@ Steps to find a ticket using the ID in the Freshservice integration:
 
 Steps to view all tickets in the Freshservice integration:
 
-1. Refer to the [Installing the Freshservice templates](../configuring-the-freshservice-action/#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Freshservice templates](configuring-the-freshservice-action.md#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
 2. The _List All Tickets_ dialog task is added with the following components:  
 <img src="../images/freshservice-tem-img10.png" alt="List All Tickets dialog task" title="List All Tickets dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -926,7 +926,7 @@ Steps to update a ticket in the Freshdesk integration:
 
 
 
-1. Refer to the [Installing the Freshservice templates](../configuring-the-freshservice-action/#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Freshservice templates](configuring-the-freshservice-action.md#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
 2. The _Update a Ticket_ dialog task is added with the following components:  
 <img src="../images/freshservice-tem-img13.png" alt="Update a Ticket dialog task" title="Update a Ticket dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -1003,7 +1003,7 @@ Steps to update a ticket in the Freshdesk integration:
 
 Steps to search ticket by field from the Freshservice integration:
 
-1. Refer to the [Installing the Freshservice templates](../configuring-the-freshservice-action/#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Freshservice templates](configuring-the-freshservice-action.md#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
 2. The _Search Ticket by Field_ dialog task is added with the following components:  
 <img src="../images/freshservice-tem-img17.png" alt="Search Ticket by Field dialog task" title="Search Ticket by Field dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -1100,7 +1100,7 @@ Steps to search ticket by field from the Freshservice integration:
 
 Steps to delete a ticket in the Freshservice integration:
 
-1. Refer to the [Installing the Freshservice templates](../configuring-the-freshservice-action/#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Freshservice templates](configuring-the-freshservice-action.md#step-2-install-the-freshservice-action-templates){:target="_blank"} section to install this template.
 2. The _Delete a Ticket_ dialog task is added with the following components:  
 <img src="../images/freshservice-tem-img20.png" alt="Delete Ticket dialog task" title="Delete Ticket dialog task" style="border: 1px solid gray;zoom:50%;"/>
 

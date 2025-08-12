@@ -1510,3 +1510,4 @@ The manufacturer's documentation for your specific network hardware setup will d
 * If you are using any internal firewall like ZScaler, will you be able to allow all mentioned UDP ports in a bi-directional way?
     - [ ] Yes
     - [ ] No
+
