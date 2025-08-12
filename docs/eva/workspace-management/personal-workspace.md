@@ -21,16 +21,17 @@ Agent Creation and Management
 * Users can share agents with other account members based on administrator settings.
 * Each user maintains their own dedicated workspace environment.
 
-
-## Personal Workspace Settings
+## Settings
 
 **Agent Creation Control**
 
- **Setting**: Allow end users to create agents.
- **Options**: Enabled/Disabled (toggle).
- **Description**: Controls whether users can create new agents in their personal workspace.
+**Setting**: Allow end users to create agents.
 
-Access Control Options**:**
+**Options**: Enabled/Disabled (toggle).
+
+**Description**: Controls whether users can create new agents in their personal workspace.
+
+Access Control Options:
 
 * Everyone in the account: All users receive personal workspace access.
 * Selected users: Only designated users can access personal workspaces.
@@ -41,7 +42,9 @@ Access Control Options**:**
 **Publishing Configuration**
 
 **Setting**: Allow end users to publish agents to others.
+
 **Options**: Enabled/Disabled (toggle).
+
 **Description**: Determines whether users can share their agents with other account members.
 
 Publishing Limit Settings:
@@ -57,9 +60,10 @@ Publishing Limit Settings:
 **Agent Type Restrictions**
 
 **Setting**: Allowed agent types.
+
 **Description**: Administrators can select which agent types users are permitted to create.
 
-**Available Agent Types**:
+Available Agent Types:
 
 * Search Agent
 * API Agent
