@@ -4,13 +4,13 @@ You can use the **Prebuilt Action Templates** from your Microsoft Graph integrat
 
 Steps to create a dialog task using Microsoft Graph action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 3. On the Dialog Task pop-up, under the Integration, select the **Microsoft Graph** option to view the action templates.  
 <img src="../images/ms-graph-tem-img2.png" alt="Integration - Microsoft Graph" title="Integration - Microsoft Graph" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
 <img src="../images/ms-graph-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
