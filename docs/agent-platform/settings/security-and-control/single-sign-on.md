@@ -87,7 +87,7 @@ If SSO is already configured, the **Single sign-on** setup page is displayed, as
 
 Depending on your company's security requirements, you can enable SSO for your Agent Platform account users. Enabling SSO includes selecting the protocol and IDP and providing the [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} to integrate with the IDP service.
 
-<div class="admonition nwarning">
+<div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>If you already have the required parameters for Okta, move directly to Step 18.</p></div>
 
@@ -239,7 +239,7 @@ When a user logs into a system that acts as an IDP and tries to access his Agent
 
 ### Okta Configuration
 
-Okta's Single Sign-On (SSO) offers a seamless user experience by enabling one login for multiple applications across different platforms. It enhances security through multi-factor authentication (MFA), zero-trust architecture, and passwordless options. 
+Okta's Single Sign-On (SSO) offers a seamless user experience by enabling one login for multiple applications across different platforms. It enhances security through multi-factor authentication (MFA), zero-trust architecture, and password-less options. 
 
 Okta's scalable and customizable platform reduces IT overhead, improves productivity, and supports compliance with governance standards like GDPR and HIPAA. 
 
@@ -316,7 +316,7 @@ Once SSO for Okta is complete, the system will redirect to the <b>Okta Sign in</
 
 ### Onelogin Configuration
 
-OneLogin's Single Sign-On (SSO) solution simplifies user access by enabling a single login for multiple applications across platforms, improving workflow efficiency. It enhances security with advanced multi-factor authentication (MFA), passwordless options, and machine learning-based risk assessments that are compliant with security standards like GDPR and HIPAA.
+OneLogin's Single Sign-On (SSO) solution simplifies user access by enabling a single login for multiple applications across platforms, improving workflow efficiency. It enhances security with advanced multi-factor authentication (MFA), password-less options, and machine learning-based risk assessments that are compliant with security standards like GDPR and HIPAA.
 
 To configure SSO using SAML and Onelogin, follow the steps below:
 

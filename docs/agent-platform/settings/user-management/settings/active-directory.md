@@ -68,7 +68,7 @@ In this configuration step, you can do the following:
 * Define the LDAP user attributes (profile fields) to be imported from the AD.
 * Establish inclusion and exclusion rules to filter data and import the necessary information. **Inclusion rules** define which user data to include in auto sync or import, focusing on relevant users who meet certain conditions. **Exclusion rules** determine which user data to exclude from the AD import.
 
-To define both default (predefined) and custom fields during setup, follow the steps below:
+To define both default (pre-defined) and custom fields during setup, follow the steps below:
 
 1. (Optional) Select **Import users from active directory** to fetch the user default fields from the AD.
 2. Click the **User Attributes** tab and select the value from the dropdown to map the field from the AD to the user attribute for all the fields under **Default Fields**.
@@ -190,7 +190,7 @@ Select **Other** to schedule AD syncs at intervals different from Daily, Weekly,
 
 For example, the data sync repeats every 60 days or weeks, starting 10 June 2024 at 12:00 PM.
 
-<img src="../images/other-schedule.png" alt="other schedule" title="sother schedule" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/other-schedule.png" alt="other schedule" title="other schedule" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Click <b>Save</b>.</li>
 <img src="../images/save-schedule.png" alt="save schedule" title="save schedule" style="border: 1px solid gray; zoom:75%;">

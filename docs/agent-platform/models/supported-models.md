@@ -394,6 +394,13 @@ The supported models and their variants are given below:
 </ul>
    </td>
   </tr>
+  <tr>
+   <td><strong>Xiaomi</strong>
+   </td>
+   <td>
+   <ul><li>Mimo-7B--VL-RL</li></ul>
+   </td>
+   </tr>
 </table>
 
 
@@ -453,21 +460,14 @@ Here is the list of all the external models supported in Agent Platform:
 <li>GPT-4</li>
 
 <li>GPT-3.5-Turbo</li>
-
 <li>GPT-4o-Mini</li>
-
 <li>GPT-4o</li>
-
 <li>GPT-4.1</li>
-
 <li>GPT-4.1-mini</li>
-
+<li>GPT-4.1-nano</li>
 <li>GPT-4.5-preview</li>
-
 <li>O1-Mini</li>
-
 <li>O1</li>
-
 <li>O3-Mini</li>
 </ul>
    </td>
@@ -514,7 +514,8 @@ Here is the list of all the external models supported in Agent Platform:
    </td>
    <td>
 <ul>
-
+<li>Dall-e 2</li>
+<li>Dall-e 3</li>
 <li>gpt-4o</li>
 
 <li>gpt-4o-mini</li>

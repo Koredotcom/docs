@@ -2,6 +2,90 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
+## v1.0.10 August 13, 2025
+
+<u> Minor Release </u>
+
+These updates focus on providing greater flexibility in model deployment, improved security controls, and enhanced monitoring capabilities across the platform.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Agent Protocol Enhancements**
+
+Significant enhancements have been made to the Agent Protocol, with a focus on improving security, optimizing memory management, and streamlining file upload workflows.
+
+Key enhancements:
+
+* Authentication Token Support for Async Operations: The platform now supports authentication tokens for callback URLs in asynchronous executions. When the callback URL is invoked, the configured token is included in the request headers, securing communication with external systems.
+* Document Upload Configuration in Create Session API: The Create Session API now returns upload configuration details, including the maximum file size, the allowed number of files, supported formats, and other relevant constraints. These details enable proactive validation, reducing failed uploads and improving user experience.
+
+
+<font size="4">AI Engineering Tools</font>
+
+**Single Model, Multiple Deployments**
+
+The Agent Platform now allows multiple deployments and connections to be configured for a single model. Previously, only one API key was supported per model-provider combination. Now, multiple API keys can be configured for the same model, offering improved flexibility, better usage tracking, and enhanced control.
+
+Across the platform, users can select their desired connection or deployment directly without being tied to a specific model. This means agents and supervisors can use different connections for various tasks, ensuring requests are routed to the appropriate endpoints based on their purpose.
+
+Configuration options:
+
+* Commercial models: Create multiple connections for the same model, each with its own API key/security token, and track usage separately per connection.
+* Fine-tuned and open-source models: Run multiple deployments of the same model to improve inference control, manage costs, and optimize performance.
+
+Key benefits:
+
+* Manage multiple connections or deployments for greater flexibility and control.
+* Select the right model connection or deployment at runtime for different tasks or environments.
+
+**Expanded Model Support**
+
+This update introduces support for a new set of AI models in the Agent Platform, providing greater flexibility in selecting the suitable model for a specific use case. The newer models include:
+
+* Agents and Supervisors
+    * OpenAI -  o3-mini
+    * Anthropic - claude-sonnet-4-20250514, claude-opus-4-20250514
+    * Google - gemini-2.5-flash
+    * Azure OpenAI - GPT-4.1, GPT-4.1-Nano, GPT-4.1-Mini, O1, O1-Mini, O3-Mini
+* Text to Image Node (External models)
+    * OpenAI - dall-e-2 and dall-e-3.
+* Open-source Model:
+    * Xiaomi Mimo-7B--VL-RL
+
+
+**Structured Output Support for Anthropic Models**
+
+Users can now use Anthropic models to generate structured output in the Tool builder.
+
+**Agent Memory Access in Function Node**
+
+Agent Memory stores can now be accessed via the function node in the workflow tools, removing the previous limitation that memory could only be accessed in the code tools. This enables the workflow tools to retrieve and update memory content. This enhancement allows for more dynamic and state-aware automation and processing. 
+
+
+<font size="4">Observability</font>
+
+**Enhanced Tracking & Billing for Multiple Model Deployments**
+
+The platform now provides advanced filtering and usage tracking in the Settings console for multiple deployments of the same model.
+
+Key improvements:
+
+* Model Analytics & Traces: Filter and view data by deployment name & version (open-source/fine-tuned) or connection name (external).
+* Audit Logs: Model Added/Deleted events now display the relevant deployment or connection name.
+* Billing & Usage: The drill-down view in the Usage page’s Models tab displays the *deployment name*, *type*, *credits used*, *last updated date,* and *status* for a model. Totals of all the deployments roll up to show model-level consumption, with deployment-level data reflected in *fine-tuning*, *hosting*, and *storage* metrics.
+
+
+<font size="4">Other Improvements</font>
+
+* **Enhanced Data Security with Customer-Managed Keys on Azure:** For Azure cloud private deployments, the platform now supports Customer-Managed Key (CMK) encryption, allowing you to control your own encryption keys for all transaction data. This enhancement strengthens compliance, enhances data privacy, and provides full ownership of encryption management. The feature can be activated via environment-level configuration and requires MongoDB Atlas (not available for self-managed MongoDB).
+* **Angular Upgrade**: Upgraded Angular from v17 to v20 across the platform to enhance performance, scalability, and long-term maintainability.
+* **UX Enhancements**: UI refinements across the platform to improve the overall user experience, along with bug fixes and performance improvements.
+
+ 
+<hr>
+
+
+
 ## v1.0.9 July 23, 2025
 
 <u> Minor Release </u>
