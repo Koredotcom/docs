@@ -1,6 +1,6 @@
 # Adding the Sinch Channel
 
-Virtual Assistants built on the XO Platform can be deployed on the **Sinch Conversation API** platform. 
+AI Agents built on the Platform can be deployed on the **Sinch Conversation API** platform. 
 
 The **Sinch Conversation API** allows developers to create robust omnichannel messaging experiences across multiple interaction channels.
 
@@ -12,11 +12,11 @@ The **Sinch Conversation API** allows developers to create robust omnichannel me
 
 **Prerequisites**
 
-* Access to the XO Platform Bot Builder. [Learn more](../getting-started/accessing-the-platform.md){:target="_blank"}.
-* A working virtual assistant on the XO Platform to test the channel enablement. [Learn more](../getting-started/building-a-virtual-assistant.md){:target="_blank"}.
+* Access to the XO Platform App Builder. [Learn more](../getting-started/accessing-the-platform.md){:target="_blank"}.
+* A working AI Agent on the XO Platform to test the channel enablement. [Learn more](../getting-started/building-a-virtual-assistant.md){:target="_blank"}.
 * Enabling the Sinch Conversation API requires [signing up](https://dashboard.sinch.com/signup){:target="_blank"} on the Sinch developer dashboard.
 
-To set up the channel, you must associate the VA with a Sinch app and set up the required delivery channel. The steps to complete the channel enablement are summarized below:
+To set up the channel, you must associate the AI Agent with a Sinch app and set up the required delivery channel. The steps to complete the channel enablement are summarized below:
 
 1. [Capture the Sinch Project Access keys for Authentication](../channels/add-sinch-channel.md/#step-1-capture-the-sinch-project-access-keys-for-authentication){:target="_blank"}.
 2. [Create an App](../channels/add-sinch-channel.md/#step-2-create-an-app){:target="_blank"}.
@@ -167,7 +167,7 @@ To enable the channel on the UXO Platform, follow the steps below:
 <li>Click <b>Save</b>.</li>
 <img src="../images/xo-platform-sinch.png" alt="xo platform sinch configurations" title="xo platform sinch configurations" style="border: 1px solid gray; zoom:75%;"></ol>
 
-After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your app. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
 
 ## Message Types
 
@@ -186,7 +186,7 @@ Conversation API uses generic message types to send the same message to multiple
 
 Sinch message templates are predefined, structured formats for sending recurring or standardized messages across channels like WhatsApp, SMS, and other supported platforms.
 
-These templates ensure compliance with the channel’s messaging policies, especially for platforms like WhatsApp that require pre-approved templates for certain messages, such as notifications or service updates. Message templates can be used during virtual assistant conversations to structure the messages. The default template types include:
+These templates ensure compliance with the channel’s messaging policies, especially for platforms like WhatsApp that require pre-approved templates for certain messages, such as notifications or service updates. Message templates can be used during AI Agent conversations to structure the messages. The default template types include:
 
 * [Text](https://developers.sinch.com/docs/conversation/channel-support/whatsapp/template-support/#text-template){:target="_blank"}
 * [Media (Document, Video, and Image)](https://developers.sinch.com/docs/conversation/channel-support/whatsapp/template-support/#media-template){:target="_blank"}
