@@ -265,19 +265,18 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Model added (external models only)
-   </td>
-   <td>Tracks the addition of external models to the account.
+   <td>Model added</td>
+   <td>Tracks the addition of models to the account.
    </td>
    <td rowspan="2">
-   <ul><li>For open-source and fine-tuned models, the <i>Deployment name</i> is displayed.</li>
-   <li>For commercial models, the <i>Connection name</i> is displayed.</li></ul>
+   <ul><li>For open-source and fine-tuned models, the <i>Deployment Name</i> is displayed.</li>
+   <li>For commercial models, the <i>Connection Name</i> is displayed.</li></ul>
    </td>
   </tr>
   <tr>
    <td>Model deleted
    </td>
-   <td>Tracks the deletion of external models from the account.
+   <td>Tracks the deletion of models from the account.
    </td>
   </tr>
   <tr>
