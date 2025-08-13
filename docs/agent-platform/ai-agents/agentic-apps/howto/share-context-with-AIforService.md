@@ -9,13 +9,11 @@ Contextual metadata is transferred from the Agent Platform to AI for Service usi
 
 ### Step 1: Configure the Handoff event in Agent Platform
 
-1. Enable Agent Transfer Event.
-    * Go to Settings -> Events.
-    * Enable the Agent Transfer Event.
-2. Set Event Conditions. Configure the specific conditions that trigger the event. Use the *Description* field to specify the condition or logic that triggers the event (e.g., fallback, confidence drop, intent match, explicit request). By default, this event is triggered whenever a conversation needs to be transferred to a human agent.
+1. Go to **Settings** > **Events** and enable the Agent Transfer Event.
+2. Set Event Conditions: Configure the specific conditions that trigger the event. Use the **Description** field to specify the condition or logic that triggers the event (e.g., fallback, confidence drop, intent match, explicit request). By default, this event is triggered whenever a conversation needs to be transferred to a human agent.
 3. Configure metadata to be passed to AI for Service during the handoff. The event supports two types of parameters:
-    * *LLM Collected parameters*: These parameters are automatically gathered by the LLM based on the description of the parameter. For example, if you wish to pass a summary of the conversation or user sentiment.
-    * *System-defined parameters*: These parameters are explicitly defined. These parameters can have static values or dynamic values from the context or memory. Some examples are listed below. 
+    * **LLM Collected parameters**: These parameters are automatically gathered by the LLM based on the description of the parameter. For example, if you wish to pass a summary of the conversation or user sentiment.
+    * **System-defined parameters**: These parameters are explicitly defined. These parameters can have static values or dynamic values from the context or memory. Some examples are listed below. 
         * Passing Static value : Add a parameter that indicates the source of information as ‘Agent Platform’.
 
         ```
@@ -29,7 +27,7 @@ Contextual metadata is transferred from the Agent Platform to AI for Service usi
         ordernumber: {{memory.orderDetails.orderNumber}}
         userPreferences: {{memory.sessionMeta.userPref}}
         ```
-[Learn More.](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/settings/events/#agent-handoff-event)
+[Learn more](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/settings/events/#agent-handoff-event).
 
 
 ### Step 2: Handle the metadata in AI for Service Experience Flow
@@ -50,7 +48,9 @@ Use the following format to access the metadata passed from the Agent Platform.
 * ```{{context.steps.queryResolver.orderNumber}}```
 * ```{{context.steps.queryResolver.userPreferences}}```
 
-## References
+<hr>
+
+#### Related Links
 
 * [Integrate with AI for Service](../../ai-for-service.md)
 * [Pass Metadata from AI for Service to Agent Platform](https://docs.kore.ai/xo/how-tos/share-metadata-ais-to-agent-platform/)
