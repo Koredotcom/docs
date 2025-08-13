@@ -64,7 +64,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>claude-3-7-sonnet-20250219</li>
     <li>claude-3-5-sonnet-20241022</li>
     <li>claude-3-5-haiku-20241022</li>
-    <li>claude-sonnet-4-20250514, claude-opus-4-20250514</li>
+    <li>claude-sonnet-4-20250514</li>
     <li>claude-opus-4-20250514</li>
   </ul>
    </td>

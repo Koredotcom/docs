@@ -16,8 +16,10 @@ Significant enhancements have been made to the Agent Protocol, with a focus on i
 
 Key enhancements:
 
-* Authentication Token Support for Async Operations: The platform now supports authentication tokens for callback URLs in asynchronous executions. When the callback URL is invoked, the configured token is included in the request headers, securing communication with external systems.
-* Document Upload Configuration in Create Session API: The Create Session API now returns upload configuration details, including the maximum file size, the allowed number of files, supported formats, and other relevant constraints. These details enable proactive validation, reducing failed uploads and improving user experience.
+* Authentication Token Support for Async Operations: The platform now supports authentication tokens for callback URLs in asynchronous executions. When the callback URL is invoked, the configured token is included in the request headers, securing communication with external systems. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
+
+* Document Upload Configuration in Create Session API: The Create Session API now returns upload configuration details, including the maximum file size, the allowed number of files, supported formats, and other relevant constraints. These details enable proactive validation, reducing failed uploads and improving user experience. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/sessions.md)
+
 
 
 <font size="4">AI Engineering Tools</font>
@@ -52,6 +54,7 @@ This update introduces support for a new set of AI models in the Agent Platform,
 * Open-source Model:
     * Xiaomi Mimo-7B--VL-RL
 
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
 
 **Structured Output Support for Anthropic Models**
 

@@ -18,9 +18,9 @@ When users upload documents to the agent, the platform stores them and makes the
         * type: Type of data.
         * filename: Original filename as uploaded by the user.
         * mimetype: MIME type of the uploaded file.
-        * isActive: Indicates if the document is applicable for the current conversation.[ Learn More](../attachment-support#file-state-management).
+        * isActive: Indicates if the document is applicable for the current conversation.[ Learn More](../attachment-support.md#file-state-management).
         * downloadUrl: Direct access URL for file content. This is a temporary link and is **valid and accessible for 30 days** from the date of upload.
-3. The metadata stored in the system memory can be accessed in agent and supervisor prompts or code tools. From thereon, it can be passed to third-party services for further processing as per the use cases.  [Learn More.](../attachment-support#file-metadata-extraction)
+3. The metadata stored in the system memory can be accessed in agent and supervisor prompts or code tools. From thereon, it can be passed to third-party services for further processing as per the use cases.  [Learn More.](../attachment-support.md#file-metadata-extraction)
 
 
 ## Accessing and Using Uploaded Files
