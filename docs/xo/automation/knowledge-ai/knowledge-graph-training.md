@@ -8,11 +8,11 @@ The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs wit
 
 The Knowledge Graph engine thus responds to users’ intents by identifying the appropriate questions within the Knowledge Graph, and then presenting the user with the appropriate response.
 
-You can find the Knowledge Graph by selecting your desired VA, then going to **Conversation Skills** > **Knowledge Graph**.
+You can find the Knowledge Graph by selecting your desired App, then going to **Conversation Skills** > **Knowledge Graph**.
 
 !!! note "Key Considerations for Training a Few-Shot Knowledge Graph"
     
-    Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.
+    Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the AI Agent on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.
 
     The main difference concerning training is that in the Few-Shot KG, Terms don't require some of the training configurations needed in an Ontology Graph. Here are some key pointers:
       
@@ -76,11 +76,11 @@ From the Knowledge Graph, follow these steps to build and train the correspondin
 
 This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read [this](../knowledge-ai/knowledge-graph-overview.md/#the-ontology-knowledge-graph){:target="_blank"} article.
 
-In order to configure the training of your Knowledge Graph for improved VA performance, we recommend that you go through as many of the following parameters as possible. These parameters involve:
+In order to configure the training of your Knowledge Graph for improved AI Agent performance, we recommend that you go through as many of the following parameters as possible. These parameters involve:
 
-* Adjusting the Term Type to your VA’s needs when adding terms to your graph,
+* Adjusting the Term Type to your AI Agent’s needs when adding terms to your graph,
 * Setting tags for FAQs to improve detection,
-* Configuring synonyms for Knowledge Graph terms to enhance path detection and help the VA find the appropriate questions to answer by widening the spectrum of words that can be used to find a specific question,
+* Configuring synonyms for Knowledge Graph terms to enhance path detection and help the AI Agent find the appropriate questions to answer by widening the spectrum of words that can be used to find a specific question,
 * Adding Traits to detect relevant information that improves intent or scenario detection.
 * Manage Context to help users complete tasks faster and create more natural, human-like back and forth conversations.
 * Add Stop Words which will be discarded from intent scoring, even when they are a node term. 
@@ -118,7 +118,7 @@ When you add a synonym for a term in the Knowledge Graph, you can add them as lo
 
 To add synonyms for a term, follow the below steps:
 
-1. On the top left of the VA’s Knowledge Graph, **hover over the node/term** for which you want to add synonyms.
+1. On the top left of the AI Agent’s Knowledge Graph, **hover over the node/term** for which you want to add synonyms.
 2. Click the **gear icon** to open the Settings window.
 3. To add **synonyms**, do the following:
     * To add local synonyms, type them in the box under **Path Level Synonyms**.
@@ -129,7 +129,7 @@ To add synonyms for a term, follow the below steps:
     <img src="../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></li>
    <li>These Knowledge Graph Synonyms can also be accessed from the <b>Manage Synonyms</b> option under the more options icon on the top-right of the Knowledge Graph page.
    <img src="../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></li></ul>
-4. You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the **Threshold and Configurations** or from <b>More Options</b> > <b>Manage Synonyms</b>. Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.
+4. You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the **Threshold and Configurations** or from <b>More Options</b> > <b>Manage Synonyms</b>. Once enabled, the app-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.
 5. To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
 <img src="../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
@@ -196,7 +196,7 @@ To train and improve the performance, Thresholds and Configurations can be speci
 
 !!! note
 
-    If your VA is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0 onwards.
+    If your AI Agent is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages.
 
 The settings for the Knowledge Graph engine are discussed in detail in the following sections.
 
@@ -204,7 +204,7 @@ The settings for the Knowledge Graph engine are discussed in detail in the follo
 
 To navigate to Thresholds and Configuration, please follow the steps below: 
 
-1. Open the VA for which you want to configure Knowledge Graph settings.
+1. Open the AI Agent for which you want to configure Knowledge Graph settings.
 2. On the left menu, click **Natural Language** > **NLU Config**.
 3. Click the **Engine Tuning** tab.
 4. Below is a detailed discussion about the **Knowledge Graph** section on this page.
@@ -212,7 +212,7 @@ To navigate to Thresholds and Configuration, please follow the steps below:
 
 Here are the features that you will find in this section of the Platform:
 
-* **Auto-Correction** will spell correct the words in the user input to the closest matching word from the VA’s Knowledge Graph domain dictionary. Knowledge Graph domain dictionary comprises the words extracted from Knowledge Graph’s questions, alternate questions, nodes, and synonyms.
+* **Auto-Correction** will spell correct the words in the user input to the closest matching word from the AI Agent’s Knowledge Graph domain dictionary. Knowledge Graph domain dictionary comprises the words extracted from Knowledge Graph’s questions, alternate questions, nodes, and synonyms.
 * **Bot Synonyms** will enable the XO Platform to use the Bot Synonyms in Knowledge Graph as well. Inclusion of Bot Synonyms for intent detection by the KG engine requires training. Click **Proceed** when prompted to enable this setting and initiate training.
 * **Lemmatization using Parts of Speech** will enable the use of parts of speech associated with the words in the utterance to lemmatize.
 * **Path Coverage** can be used to define the minimum percentage of terms in the user’s utterance to be present in a path to qualify it for further scoring. The default setting is 50% i.e. at least half of the terms in the user utterance should match the node names and terms.

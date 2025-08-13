@@ -3,7 +3,7 @@
 
 ## Overview
 
-The Generative AI features improve design-time and runtime capabilities, accelerating virtual assistant development and enhancing performance. LLM-powered functionalities streamline the development process, reducing time and effort while boosting overall efficiency.
+The Generative AI features improve design-time and runtime capabilities, accelerating an AI Agent development and enhancing performance. LLM-powered functionalities streamline the development process, reducing time and effort while boosting overall efficiency.
 
 By default, all the features are disabled. To enable the feature, select the model, prompt, and then toggle the status to enable it. You can also change the model, its prompts, and the respective settings.
 		
@@ -23,13 +23,13 @@ Steps to enable the feature:
 	
 ### Product Filter
 
-Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.  
+Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent, Contact Center). The users can easily add/remove this filter as needed.  
 <img src="../images/filter-and-search.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 	
 
 ### Feature Search Functionality
 
-A dedicated search feature functionality to enable quick and efficient discovery of GenAI features across the entire platform. This enhancement streamlines navigation, minimizes search time, and improves overall user efficiency by providing direct access to key tools and options.
+A dedicated search feature functionality to enable quick and efficient discovery of GenAI features across the entire the Platform. This enhancement streamlines navigation, minimizes search time, and improves overall user efficiency by providing direct access to key tools and options.
 			
 
 
@@ -61,7 +61,7 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.
 * **Number of Previous User Inputs**: Indicates how many previous user messages should be sent to the model as context for rephrasing the response sent through the respective node. For example, 5 means that the previous 5 responses are sent as context.
 * **Additional Instructions**: Add specific instructions on how prompts should be rephrased. You can create a persona, ask it to rephrase in a particular tone, etc.
-* **Similarity Threshold**: The Similarity Threshold is applicable for the Answer from Docs feature. This threshold refers to the similarity between the user utterance and the document chunks. The platform shortlists all chunks that are above the threshold and sends these chunks to the LLMs to auto-generate the responses. Define a suitable threshold that works best for your use case. Setting a higher threshold limits the number of chunks and may not generate any result. Setting a lower threshold might qualify too many chunks and might dilute the response.
+* **Similarity Threshold**: The Similarity Threshold is applicable for the Answer from Docs feature. This threshold refers to the similarity between the user utterance and the document chunks. The Platform shortlists all chunks that are above the threshold and sends these chunks to the LLMs to auto-generate the responses. Define a suitable threshold that works best for your use case. Setting a higher threshold limits the number of chunks and may not generate any result. Setting a lower threshold might qualify too many chunks and might dilute the response.
 
 		
 ### Change Settings for a Custom Model
@@ -100,8 +100,8 @@ Follow these steps:
     ![alt_text](images/cpf(6).png  )
 
 6. Click **Save**.
-7. (Only for Agent Node) Enter the **Exit Scenario Key-Value** and **Virtual Assistance Response Key fields**. Click **Save**.
-The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
+7. (Only for Agent Node) Enter the **Exit Scenario Key-Value** and **AI Agent Response Key fields**. Click **Save**.
+The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. An AI Agent Response Key is available in the response payload to display the AI Agent's response to the user.
     ![alt_text](images/image1-8.png  )
 
 
@@ -139,9 +139,36 @@ Learn more about [Search AI - GenAI Features](genai-features-searchai.md).
 
 ## Agent AI - GenAI Features
 
-* Agent Response Rephrasing
+
+* Agent Coaching
+* Conversation Summary
 * Generating Opposite Utterance Suggestions
+* Generating Similar Answer Suggestions
 * Generating Similar Utterance Suggestions
+* Sentiment Analysis
 
 Learn more about [Agent AI - GenAI Features](genai-features-agentai.md).
+
+
+
+
+## Contact Center AI - GenAI Features
+
+
+
+* Agent Empathy Identification
+* Agent Response Rephrasing
+* By Value Adherence validation for Quality AI
+* By Value metric extraction for Quality AI
+* Churn & Escalation Identification
+* Conversation Summary
+* Crutch Word Usage Detection
+* Default Script Adherence
+* GenAI based agent answer adherence and customer trigger detection
+* Generating Similar QM Utterance Suggestions
+* Post-Interaction Sentiment Analytics and Key Emotion Moments
+* Sentiment Analysis
+* Topic Modelling
+
+Learn more about [Contact Center AI - GenAI Features](genai-features-contactcenterai.md).
 

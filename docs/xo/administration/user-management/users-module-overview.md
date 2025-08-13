@@ -11,12 +11,12 @@ The following illustration is an example of the **Users** tab in the **User Mana
 
 The **User Management** module is comprised of the following pages:
 
-* [User Management](../managing-your-users/){:target="_blank"}  
+* [User Management](managing-your-users.md){:target="_blank"}  
 On the **Users** section, you can view and manage your Kore.ai user roles, status, and monitor user message activity.  
 On the **User Settings** tab, you can define the user profile fields displayed to the user in their profile, for example, address information, and if the user can edit those fields.
-* [Groups Management](../managing-your-groups){:target="_blank"}  
+* [Groups Management](managing-your-groups.md){:target="_blank"}  
 On the **Groups** page in the **User Management** module, you can create and manage logical related groups of managed users, as well as importing groups, such as your company Active Directory groups.
-* [Role Management](../role-management){:target="_blank"}  
+* [Role Management](role-management.md){:target="_blank"}  
 On the **Role Management** page in the **User Management** module, you can create and assign roles to users thus organizing the developer community based on the scope of their work.
 * Distribution Lists Page  
 On the **Distribution Lists** page in the **User Management** module, if Microsoft® Active Directory® is configured already for your domain, you can view the distribution lists for your domain, as well as the number of Kore.ai users, both managed users and unmanaged users.

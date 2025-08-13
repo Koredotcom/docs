@@ -35,7 +35,7 @@ To export the test cases of a given Batch Test Suite and get a link to download 
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Management
+<li>App Builder: Batch Tests Management
 
 <li>Admin Console: Batch Tests Management
 </li>
@@ -68,7 +68,7 @@ To export the test cases of a given Batch Test Suite and get a link to download 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td>The <em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -76,7 +76,7 @@ To export the test cases of a given Batch Test Suite and get a link to download 
   <tr>
    <td><strong>testSuiteName</strong>
    </td>
-   <td>The name of the test suite created on the Bot Builder for the export.
+   <td>The name of the test suite created on the App Builder for the export.
 <p><strong>Note:</strong> Only Custom Batch Test Suites can be exported.
    </td>
    <td>Required

@@ -24,6 +24,10 @@ YouTrack is a **project management and issue tracking tool**, primarily designed
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td>Content Filtering
    </td>

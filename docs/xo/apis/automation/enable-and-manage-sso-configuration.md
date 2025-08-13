@@ -49,7 +49,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable</li>
+<li>App Builder: Not Applicable</li>
 
 <li>Admin Console: User Management > SSO Configuration</li>
 </ul>
@@ -79,7 +79,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td>BotId
    </td>
-   <td>The <em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -385,7 +385,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable</li>
+<li>App Builder: Not Applicable</li>
 
 <li>Admin Console: User Management > SSO Configuration</li>
 </ul>
@@ -415,7 +415,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td>BotId
    </td>
-   <td>The <em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -655,7 +655,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable</li>
+<li>App Builder: Not Applicable</li>
 
 <li>Admin Console: User Management > SSO Configuration</li>
 </ul>
@@ -745,7 +745,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable</li>
+<li>App Builder: Not Applicable</li>
 
 <li>Admin Console: User Management > SSO Configuration</li>
 </ul>

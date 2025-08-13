@@ -7,7 +7,7 @@ Steps to create a dialog task using HubSpot action templates:
 1. Ensure that you have configured [HubSpot](configuring-the-hubspot-action.md){:target="_blank"} and [installed templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} successfully.
 If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
+2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
 2. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
@@ -193,7 +193,7 @@ Steps to create a new deal in HubSpot:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create a deal as shown below:  
+5. Follow the prompts in the App console to create a deal as shown below:  
 <img src="../images/hubspot-tem-img8.png" alt="VA prompts to create a deal" title="VA prompts to create a deal" style="border: 1px solid gray;zoom:50%;"/>
 
 6. The new deal is created in HubSpot.  
@@ -246,7 +246,7 @@ Steps to find a deal by Id in HubSpot:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to get a deal by ID as shown below:  
+5. Follow the prompts in the App console to get a deal by ID as shown below:  
 <img src="../images/hubspot-tem-img13.png" alt="VA promp to get deal by id" title="VA promp to get deal by id" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Click the **View Deal** button to view the deal details in HubSpot.
@@ -391,7 +391,7 @@ Steps to view all deals in HubSpot:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all deals.
+5. Follow the prompts in the App console to view all deals.
 
 
 ### Update a Deal
@@ -455,10 +455,10 @@ Steps to update an existing deal in HubSpot:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task
-5. Follow the prompts in the VA console to update a deal as shown below:  
+5. Follow the prompts in the App console to update a deal as shown below:  
 <img src="../images/hubspot-tem-img19.png" alt="VA prompts to update deal" title="VA prompts to update deal" style="border: 1px solid gray;zoom:50%;"/>
 
-6. Enter all deal details to update when prompted by the VA. The existing deal is updated in HubSpot as shown below:  
+6. Enter all deal details to update when prompted by the AI Agent. The existing deal is updated in HubSpot as shown below:  
 <img src="../images/hubspot-tem-img20.png" alt="Deal updated" title="Deal updated" style="border: 1px solid gray;zoom:50%;"/>
 
 7. Click the **View Deal** button to view the deal details in HubSpot.
@@ -553,7 +553,7 @@ Steps to search a deal using keywords in HubSpot:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot**  icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all deals as shown below:  
+5. Follow the prompts in the App console to view all deals as shown below:  
 <img src="../images/hubspot-tem-img23.png" alt="VA prompt to view all deals" title="VA prompt to view all deals" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Delete a Deal
@@ -574,7 +574,7 @@ Steps to delete a deal in HubSpot:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to delete a deal as shown below:  
+5. Follow the prompts in the App console to delete a deal as shown below:  
 <img src="../images/hubspot-tem-img26.png" alt="VA prompt to delete deal" title="VA prompt to delete deal" style="border: 1px solid gray;zoom:50%;"/>
 
 !!! note

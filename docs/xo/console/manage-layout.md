@@ -159,7 +159,11 @@ Steps to perform the connectivity, bandwidth, and server reachability tests:
     <img src="../images/test-progress.png" alt="Test Progress" title="Test Progress" style="border: 1px solid gray; zoom:70%;">
 
 2. Once the test is completed, the detailed test results are displayed. You can copy the result by clicking **Copy Results**.  
-<img src="../images/test-result.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/test-result.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:70%;">
+
+!!! Note
+
+    This feature is only available when using Kore's Twilio account. It's not supported for SIP trunk setups.
 
 ## Connection Handling
 

@@ -49,7 +49,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 <li>Dialog Builder: Billing Sessions</li>
 
-<li>Bot Admin Console:  Billing >Usage> Billing Sessions</li>
+<li>Admin Console:  Billing >Usage> Billing Sessions</li>
 </ul>
    </td>
   </tr>
@@ -88,7 +88,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 ## Sample Request
 
 
-### Sample POST Method Request for the Bot Builder API Scope
+### Sample POST Method Request for the App Builder API Scope
 
 
 ```
@@ -109,7 +109,7 @@ curl --location 'https://{{HOST}}/api/public/bot/{{botId}}/billingsessionsummary
     Use the POST method to set filters, then use the following GET method to retrieve the billing session summary.
 
 
-### Sample GET Method Request for the Bot Builder API Scope
+### Sample GET Method Request for the App Builder API Scope
 
 
 ```

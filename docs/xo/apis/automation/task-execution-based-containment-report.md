@@ -41,7 +41,7 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    <td>
 <ul>
 
-<li>Bot Builder: Metrics
+<li>App Builder: Metrics
 
 <li>Admin Console: Not Applicable
 </li>
@@ -75,7 +75,7 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    </td>
    <td>Required
    </td>
-   <td>Bot ID or Stream ID can be accessed from the <strong>General Settings</strong> page of the virtual assistant.
+   <td>Bot ID or Stream ID can be accessed from the <strong>General Settings</strong> page in the application.
    </td>
   </tr>
   <tr>
@@ -283,7 +283,7 @@ The response returns the API Response ID "**_id**" (as highlighted in the sample
   <tr>
    <td>streamId
    </td>
-   <td>Can be accessed from the General Settings page of the Virtual Assistant.
+   <td>Can be accessed from the General Settings page of the application.
    </td>
   </tr>
   <tr>
@@ -307,7 +307,7 @@ The response returns the API Response ID "**_id**" (as highlighted in the sample
   <tr>
    <td>createdBy
    </td>
-   <td>The user ID of the end user who created the task execution-based report for a virtual assistant.
+   <td>The user ID of the end user who created the task execution-based report.
    </td>
   </tr>
   <tr>
@@ -522,7 +522,7 @@ If a task is executed more than once within a single conversation session and yi
    </td>
    <td>Total number of conversation sessions that are marked as Self-service during which the specified task is executed (Success or Failure).
 <p>
-Self-service sessions refer to the conversations that the virtual assistant contains.
+Self-service sessions refer to the conversations that the AI Agent contains.
    </td>
   </tr>
   <tr>
@@ -539,7 +539,7 @@ A session is classified as <em>Drop-off</em> when the user abandons the conversa
 
 <li>The last utterance of the user does not detect any intent.
 
-<li>The virtual assistant stops responding due to any reason.
+<li>The AI Agent stops responding due to any reason.
 </li>
 </ul>
    </td>

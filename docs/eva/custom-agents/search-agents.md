@@ -126,14 +126,14 @@ For instance, if an agent is designed to answer all the user queries related to
 products, specifying it as the purpose helps the system use this agent whenever a
 user sends a query related to any products.
 
-![](images/detailandpurpose.png)
+<img src="../images/detail_and_purpose_search.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 2: Configure Search App
 
 The next step is to configure the Search AI app, which has the indexed content
 used for answer generation. Provide the following details for integration.   
 
-![](images/configure.png)  
+<img src="../images/configure_search.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 These details are available in the **Search AI app** on the **Credentials** page
 under the **Manage** tab, click **Dev Tools** and choose **Web/Mobile SDK** tab. Refer to
@@ -157,15 +157,12 @@ You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/a
 - Document Management
 - Facets
 
+### Step 3: Appearance and Behavior
 
-### Step 3: Preview
+In the **Appearance and Behavior** section, a list of sample queries are displayed. If needed,
+you can add additional queries by clicking the **+ Add Query** button. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period. Once you're ready, click **Publish** to proceed to the next step.
 
-Review the skills generated for the agent based on the purpose defined. The system uses
-Generative AI to create sample queries to which the agent can respond. You can
-**add, modify, or remove** sample queries to refine the agent's interaction
-capabilities.
-
-![](images/preview.png)
+<img src="../images/search_appearance.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 4: Publish
 
@@ -193,4 +190,3 @@ relevant, accurate answers. For broader insights, users can request more
 detailed data, like "Show me everything about the company" or "Fetch complete
 company profile."
 
-![](images/user-interaction.png)

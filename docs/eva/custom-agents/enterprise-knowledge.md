@@ -1,7 +1,6 @@
 # Enterprise Knowledge
 
-The **Enterprise Knowledge** refers to **Search AI** app and **Agentic App** that is provisioned for every AI for Work account. It serves as a fallback mechanism, ensuring a response can still be generated when no specific agents align with the user’s intent. Its role is to enhance the accuracy and relevance of responses by retrieving content from
-various sources and then generating a response based on that information. It is automatically available to users when no custom or specific agents are assigned to handle a user query.
+The **Enterprise Knowledge** refers to **Search AI** app and **Agentic App** that is provisioned for every AI for Work account. It serves as a fallback mechanism, ensuring a response can still be generated when no specific agents align with the user’s intent. Its role is to enhance the accuracy and relevance of responses by retrieving content from various sources and then generating a response based on that information. It is automatically available to users when no custom or specific agents are assigned to handle a user query.
 
 ## Key Features
 
@@ -35,6 +34,12 @@ Set up enterprise knowledge sources to be used when no agent is triggered. Confi
 
 - Configure Search AI
 - Configure Agentic App
+
+!!! note
+
+    - Maximum Sources: Up to 5 sources can be created.
+    - Active Source: Only 1 source can be active at any time.
+    - Configuration Types: Choose between Search AI app or Agentic App (not both simultaneously).
 
 ### Connect Search AI
 
@@ -121,3 +126,17 @@ To connect Agentic App complete the following instructions:
      <img src="../images/Advance_Agentic_App_2.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 5. Click **Save** and now you can find the agentic app listed. 
+
+### Managing Knowledge Sources
+
+Access your Enterprise Knowledge configuration through **Enterprise Knowledge** > **Configure** to view all configured sources and their current status.
+
+<img src="../images/Managing_Sources.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
+
+#### Source Operations
+
+**Activating Sources** Only one source can be active at any time. To switch your active knowledge source, click the three dots next to any inactive source and select **Set Active**. The system automatically deactivates your previous source when you activate a new one.
+
+**Editing Configurations** Update your knowledge source settings by clicking the three dots and selecting **Edit**. This allows you to modify parameters, update content references, or adjust response behaviors without creating a new source.
+
+**Removing Sources** Delete outdated or unused sources by selecting **Delete** from the three dots menu. This action is permanent and cannot be reversed.

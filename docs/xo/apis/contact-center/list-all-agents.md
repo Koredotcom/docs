@@ -1,21 +1,21 @@
 # List All Agents
 
-To retrieve the list of all agents with the given Stream Id.
+To retrieve the list of all agents with the given `streamId`.
 
 | **Method**       | GET                                                     |
 |--------------|---------------------------------------------------------|
-| **Endpoint**     | `https://smartassist.kore.ai/agentassist/api/v1/public/{StreamId}/organizations/{OrgID}/agents?page=1&includeQueues=True` |
+| **Endpoint**     | `https://smartassist.kore.ai/agentassist/api/v1/public/{streamId}/organizations/{orgId}/agents?page=1&includeQueues=True` |
 | **Content Type** | `application/json`                                      |
-| **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token) |
+| **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                   |
 
 ## Path Parameters
 
 | **PARAMETER** | **DESCRIPTION**                                                             | **TYPE**          |
 |-----------|-------------------------------------------------------------------------|---------------|
-| host      | Environment URL, for example, https://platform.kore.ai               | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
-| OrgId     | The Organization Id.                                                    | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`               | string, required |
+| streamId     | botId or streamId. You can get it from the App Settings page. | string, required |
+| orgId     | The organization Id.                                                    | string, required |
 
 ## Query Parameters
 
@@ -27,7 +27,7 @@ To retrieve the list of all agents with the given Stream Id.
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organizations/{{OrgID}}/agents?page=1&includeQueues=True' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/organizations/{{orgId}}/agents?page=1&includeQueues=True' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}'
 --header 'accountId: {{YOUR_accountId}}'
 ```

@@ -1,19 +1,19 @@
 # Context Management
 
-Effective context management is important because it allows Virtual Assistants to interact with users in a way that is easier, quicker, more helpful, and less robotic and scripted. Contextual data helps users complete tasks faster and allows you to create more natural, human-like back and forth conversations.
+Effective context management is important because it allows AI Agents to interact with users in a way that is easier, quicker, more helpful, and less robotic and scripted. Contextual data helps users complete tasks faster and allows you to create more natural, human-like back and forth conversations.
 
 For example, let us consider the following conversation:
 
 <div class="admonition note">
 <p class="admonition-title">Example</p>
 <p><b>User</b>: What is the cost of an Economy flight ticket from London to Paris on Aug 15, 2022?</p>
-<p><b>VA</b>: It's €242.</p>
+<p><b>AI Agents</b>: It's €242.</p>
 <p><b>User</b>: Great! I would like to book it.</p>
 </div>
 
-In the above conversation, the _booking_ is in the context of an economy flight on Aug. 15, 2022. The VA should not be asking the user whether they would like to book a flight or a hotel; what their departure and destination cities are or when they want to fly. 
+In the above conversation, the _booking_ is in the context of an economy flight on Aug. 15, 2022. The AI Agents should not be asking the user whether they would like to book a flight or a hotel; what their departure and destination cities are or when they want to fly. 
 
-The context from the previous intent should already be available to the VA, so it can handle the intent according to the existing contextual data. 
+The context from the previous intent should already be available to the AI Agents, so it can handle the intent according to the existing contextual data. 
 
 The XO Platform allows you to capture and reuse contextual data for a large variety of scenarios, so you can create more complex use cases and redefine the enterprise customer experience. The following are examples of a few such scenarios:
 
@@ -30,11 +30,11 @@ This document talks about the concepts behind the implementation of context mana
 <div class="admonition note">
 <p class="admonition-title">Example</p>
 <p><b>User</b>: When is my flight to Singapore?</p>
-<p><b>VA</b>: Your flight from New York to Singapore is confirmed for Jun 20th.</p>
+<p><b>AI Agents</b>: Your flight from New York to Singapore is confirmed for Jun 20th.</p>
 <p><b>User</b>: Do I need a Visa?</p>
-<p><b>VA</b>: Yes, you need a visa to visit Singapore for business or tourism?</p>
+<p><b>AI Agents</b>: Yes, you need a visa to visit Singapore for business or tourism?</p>
 <p><b>User</b>: I would like to apply for one.</p>
-<p><b>VA</b>: Sure I can help with a Visa to Singapore. Let me know the duration of the stay.</p></div>
+<p><b>AI Agents</b>: Sure I can help with a Visa to Singapore. Let me know the duration of the stay.</p></div>
 `
 To achieve the above conversation, the context object can be used as follows:
 

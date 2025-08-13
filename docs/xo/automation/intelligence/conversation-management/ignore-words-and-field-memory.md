@@ -14,7 +14,7 @@ To manage this setting, follow the steps below:
 <p>This feature is available only if you create and configure an Alert/Action/Information task for the Assistant. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#general-settings/" target="_blank">Learn more</a>.</p>
 </div>
 
-<ol start="2"><li>Edit each task in the <b>Field Memory</b> settings to persist its data and pre-populate the data in another related task for the same VA. For example, for a travel planning assistant, <i>Get Wait Times for Boarding</i> task, you can pre-populate task fields into the related task, <i>Book a FastPass</i> task.</li> 
+<ol start="2"><li>Edit each task in the <b>Field Memory</b> settings to persist its data and pre-populate the data in another related task for the same AI Agent. For example, for a travel planning assistant, <i>Get Wait Times for Boarding</i> task, you can pre-populate task fields into the related task, <i>Book a FastPass</i> task.</li> 
 
 <li>Additionally. configure words to ignore in the user input at the task level. For example, for a <i>7-day Weather Forecast</i> task, you might want days of the week, such as <i>Monday</i>, <i>Tuesday</i>, and so forth to be ignored since all weekdays are included.</li>
 
@@ -30,7 +30,7 @@ To modify or add a configuration for a task, follow the steps below:
 2. Hover over the name of the task, and then click **Edit.** The **Edit Task** window is displayed.
 3. **Turn Off Confirmation Messages** – Select **Yes** to disable confirmation of the execution of a task when using NLP. When **No** is selected, the user is asked to confirm the task before running it.
 4. **Ignore Words** – Enter one or more ignore words for the task name. The list of words to ignore is processed by the XO Platform before interpreting the user input.
-This means the VA can respond faster to user input and provide the correct task by filtering out words that apply to many tasks but do not help to identify which task. For example, a user may input, *I want to get the weather forecast for today.* To return the correct task to the user, the XO Platform interpreter only needs to recognize three words, *weather*, *forecast*, and *today*. The rest of the words can be ignored. The Kore.ai interpreter is already defined with a set of generic ignore words, so words like *I, you, want, get*, etc., do not need to be defined as ignore words. If your assistant uses the same words for many or all tasks, for example, your company name, you might add your company name as an ignore word.
+This means the AI Agent can respond faster to user input and provide the correct task by filtering out words that apply to many tasks but do not help to identify which task. For example, a user may input, *I want to get the weather forecast for today.* To return the correct task to the user, the XO Platform interpreter only needs to recognize three words, *weather*, *forecast*, and *today*. The rest of the words can be ignored. The Kore.ai interpreter is already defined with a set of generic ignore words, so words like *I, you, want, get*, etc., do not need to be defined as ignore words. If your assistant uses the same words for many or all tasks, for example, your company name, you might add your company name as an ignore word.
 5. Click **Save** to save the settings and close the **Edit Task** window.
 
 ## Manage Field Memory for a Task

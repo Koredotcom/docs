@@ -26,16 +26,15 @@ You can create a new agent or import an existing one.
 To import an existing Prompt Agent:
 
 1.  Click the **Import Agent** button located in the upper-right
-    corner.![](images/import.png)
+    corner.<img src="../images/import.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 2.  Select the .ZIP file of the existing
-    agent.![](images/import_agent.png)
+    agent.<img src="../images/import_agent.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 3.  Click **Import** to complete the process. The imported agent will appear on the
-    Agents page.    
+    Agents page.
 
 ## Create a new Prompt Agent
-
 
 You can create a new prompt agent to assist users in completing various tasks by
 utilizing the prompt capabilities.
@@ -44,7 +43,7 @@ To create a new Prompt Agent, follow these steps:
 
 1.  In the **Admin Console**, click **AI Agents** from the left pane, and then
     select **Prompt Agents**. A list of available prompt agents will be
-    displayed.![](images/AI_agent.png)
+    displayed.<img src="../images/AI_agent.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 2.  On the Prompt Agents page, click **+Create Agent**
 
@@ -59,16 +58,14 @@ To create a new Prompt Agent, follow these steps:
 
     4.  [Step 4: Publish the Agent](#publish)
 
-###  <a id="details">Step 1: Details and Purpose</a>
+### Step 1: Details and Purpose
 
 Provide a suitable and unique name for the agent and describe its purpose. Defining the agent’s purpose enables the system to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed, as all the fields, queries, and prompts are auto-generated based on the purpose provided. 
 
 To change the agent icon, click on the agent logo located above the agent's name. You can choose from a list of predefined logos or upload a custom logo.  Once you're ready, click **Continue** to proceed to the next step.
+<img src="../images/detail_and_purpose.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
-![](images/detail_and_purpose.png)
-
-
-### <a id="source">Step 2: Source</a>
+### Step 2: Source
 
 In the Sources section, you can configure the following fields 
 
@@ -81,42 +78,34 @@ In the Sources section, you can configure the following fields
  The parameters fields are provided based on the purpose of the agent you provided in
 the previous step. For example, if the purpose is "summarization", fields might
 include Word Count, Summary Format
-etc.![](images/source_gpt.png)
+etc.<img src="../images/source_gpt.png" alt="source_gpt" title="source_gpt" style="border: 1px solid gray; zoom:70%;">
 
-#### <a id="userinput">User Input </a>
+#### User Input
 
 To configure user input, follow the steps outlined below:
 
 1.  Click on the **+Add context**.
-    ![](images/add_context_gpt.png)
-
+   
 2.  Enter context name and any placeholder text in the **placeholder text**
     field if required. The placeholder text will appear in the form field before the end user provides input.
-    ![](images/context_field_gpt.png)
-
-3.  Select the **Field type** from the list for each field. You can select a
-    single-line, multiline, single-select, multi-select, number, file upload, or
-    URL based on the fields.![](images/content_field_type_gpt.png)
+3.  Select the **Field type** from the list for each field. You can select a single-line, multiline or file upload on the fields.<img src="../images/content_field_type_gpt.png" alt="content_field_type_gpt" title="content_field_type_gpt" style="border: 1px solid gray; zoom:70%;">
 
 4.  Click the mandatory toggle button ON if you want the field to be mandatory
     and click **Done**.
 
-5.  In the parameter section,  parameter fields are prepopulated based on the agent’s purpose. Enter parameter details and click on  **+ Add field** if
-    required.![](images/add_field_gpt.png)
+5.  In the parameter section,  parameter fields are prepopulated based on the agent’s purpose. Enter parameter details and click on  **+ Add field** if required.
 
 6.  Enter a name and any text in the **placeholder text** field and in **Description**, enter a detailed description of the field to ensure automated field population when the LLM processes natural language queries and matches entities to their corresponding fields.
 
     For example, if you need a field that captures organizational departments, rather just naming it as *Division*, include a description explaining that this field accepts internal department names, helping the LLM identify the department name from the user's query and pre-populate it in the *Division* field.  
-    ![](images/placeholder_text_gpt.png)
 
 7.  Select the **Field type** from the list for each field. You can select a
-    single-line, multiline, single-select, multi-select, number, file upload, or
-    URL based on the fields.![](images/parameter_field_gpt.png)
+    single-line, multiline, single-select, multi-select, number, file upload on the fields.
 
 8.  Toggle the **Allow Upload Files** or **Allow URL Content** option to ON to
     enable file uploads or retrieval from URLs. This option is available only
     for Single-line and Multiline text field types.
-    ![](images/URL_content_gpt.png)
+    <img src="../images/URL_content_gpt.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
 9.  Click the mandatory toggle button ON if you want the field to be mandatory
     and click **Done**.
@@ -129,7 +118,7 @@ To configure user input, follow the steps outlined below:
     be utilized in prompts. For example, if you uploaded a “Sample JD template”
     file, you can write a prompt that says, “Create a JD which is in the same
     format as in the Sample JD template file.”
-    ![](images/Knowledge_gpt.png)
+    <img src="../images/Knowledge_gpt.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
@@ -139,22 +128,19 @@ To configure user input, follow the steps outlined below:
     displays all the integrated
     models. To know more about model integration, click
     [here](../llm-configuration/general-purpose.md#custom-llm-integration).
-    ![](images/model.png)
+    <img src="../images/model.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
 3. Toggle the **Show to users** button to display this prompt to the user. After switching the toggle to ON, you can choose between **Read-only** or **Editable** modes.
-    ![](images/show_to_users.png)
+    <img src="../images/show_to_users.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
 #### <a id="prompts">Prompts</a>
 
 A default prompt is automatically generated based on the purpose defined earlier
 and can be customized using variables. For example, if the purpose is "Job
 Finder," the default prompt might include, “Company Name, Job Title,
-Responsibilities etc”![](images/prompt.png)
+Responsibilities etc”.
 
 Enable the Show to users toggle button to show this prompt to the user. Once you click the toggle button to ON, you can select whether you want it in **Read-only** or **Editable**.
-
-![](images/prompt_gpt.png)
-
 
 #### <a id="multiprompt">Multiprompt</a>
 
@@ -163,23 +149,14 @@ For a multi-prompt setup within the agent builder, users can generate multiple p
 To add another prompt, click on the **+ Add another prompt** button. You can rename prompts and use drag-and-drop to reorder them. Click on the **Generate prompt** button to
 generate a prompt based on your form’s purpose and field values.
 
-![](images/multiprompt.png)
-
 Once you add multiple prompts, the prompt option will appear under the prompt selector.
 
 1.  Click on the edit option or anywhere within the prompt area to expand it and view the available options
-    ![](images/prompt_selector.png)
-
 2.  For the prompt selector, you can edit field name and any placeholder text in
-    the **placeholder text** field if
-    required![](images/prompt_placeholder_text.png)
-
-    Note: The Mandatory toggle field is enabled by default and cannot be modified by the user
-
+    the **placeholder text** field if required. The Mandatory toggle field is enabled by default and cannot be modified by the user
 3.  The prompt options display a list of all the prompts created, allowing you
     to drag and drop them to change their order.
-
-4.  Click **Done**![](images/drag_prompt.png)
+4.  Click **Done**.
 
 #### <a id="multiresponse">Multi Response</a>
 
@@ -189,18 +166,26 @@ To allow users to generate multiple responses,
     the output settings.  
 
 2. Enable **Skip Form Display** to automatically bypass forms. This feature intelligently prevents conflicts with Multi-Response and shows messages for incompatible settings. Smart query analysis now identifies when all required entities are present initially, and forms will only appear if mandatory fields are missing.
- ![](images/output_setings.png)
+ <img src="../images/output_setings.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Continue** to move to the next step.
 
-### <a id="preview">Step 3: Preview</a>
+### <a id="preview">Step 3: Business Rules</a>
 
-In the **Preview** section, a list of sample queries are displayed. If needed,
-you can add additional queries by clicking the **+ Add Query** button. Once
-you're ready, click **Continue** to proceed to the next
-step.![](images/preview.png)
+Set rules for entity selection and responses based on keywords.
 
-### <a id="publish">Step 4: Publish Prompt Agent</a>
+The rule fills entities in a query when specific keywords are detected. Set rules to determine which entities to populate based on criteria.
+
+You have options to set either an Entity Rule or Answering Rule.
+
+<img src="../images/Business_Rule.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
+
+### <a id="preview">Step 4: Appearance and Behavior </a>
+
+In the **Appearance and Behavior** section, a list of sample queries are displayed. If needed,
+you can add additional queries by clicking the **+ Add Query** button. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period. Once you're ready, click **Publish** to proceed to the next step.<img src="../images/preview.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
+
+### <a id="publish">Step 5: Publish Prompt Agent</a>
 
 Publish your agent and define access permissions and enablement.
 
@@ -215,7 +200,6 @@ Publish your agent and define access permissions and enablement.
 
 Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
 
-
 ## User Interaction
 
 Users initiate their interaction by submitting simple queries, such as
@@ -226,7 +210,7 @@ Users can also leverage the file upload and URL features, which support multiple
 formats such as .pdf, .docx, .csv, and .xls. Once a file is uploaded, the system
 processes its contents and generates the desired output, such as summaries,
 reports, or insights, based on the data within the
-file.![](images/userinteaction_fileUpload.png)
+file.
 
 When multi-response is enabled, users can use this feature by selecting the
 **Additional Response** option. Each prompt is pre-configured, but can be
@@ -237,5 +221,3 @@ for subsequent responses. This configuration allows for a continuous flow of
 information, making it ideal for scenarios requiring multiple perspectives or
 formats.
 
-![](images/additional_response.png)  
-![](images/initialinputs.png)

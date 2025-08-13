@@ -3,9 +3,9 @@
 
 		
 
-Effective prompts play a crucial role in enhancing response accuracy when interacting with LLMs. The new Prompts Library module empowers bot designers by allowing them to create and test suitable prompts for their specific use cases. It also displays all the newly added/custom and default request/prompt templates for the integrated models with their status as active or inactive. The default prompts are related to the pre-built models. However, you can import any default prompt, customize it, and use it for a pre-built and custom LLM model.
+Effective prompts play a crucial role in enhancing response accuracy when interacting with LLMs. The new Prompts Library module empowers app designers by allowing them to create and test suitable prompts for their specific use cases. It also displays all the newly added/custom and default request/prompt templates for the integrated models with their status as active or inactive. The default prompts are related to the pre-built models. However, you can import any default prompt, customize it, and use it for a pre-built and custom LLM model.
 
-The post processor for prompts allows designers to align LLM responses perfectly with Platform expectations. Designers can modify the LLM response to guarantee the correct behavior and high-quality interactions during runtime.
+The post processor for prompts allows designers to align LLM responses perfectly with the Platform expectations. Designers can modify the LLM response to guarantee the correct behavior and high-quality interactions during runtime.
 
 For more information on adding prompt for Agent Node, see [Agent Node](../automation/use-cases/dialogs/node-types/genai-node-v2.md#add-custom-prompt-for-genai-node).
 
@@ -76,7 +76,7 @@ To add a new prompt, follow the steps:
     ![alt_text](images/prl(6).png  )
 
 8. **Selecting a Key for Generating Response Path**  
-The XO Platform receives the LLM response in the JSON format, which contains multiple data fields. To display the relevant information from the JSON to the end user, select the **key** that holds the specific information. The XO Platform then generates a **Response Path** that identifies the exact location of the information within the JSON response.  
+The Platform receives the LLM response in the JSON format, which contains multiple data fields. To display the relevant information from the JSON to the end user, select the **key** that holds the specific information. The Platform then generates a **Response Path** that identifies the exact location of the information within the JSON response.  
 For example, double-click the "content" key in the JSON structure and click **Save**.  
 <img src="../images/selectkey.jpg" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;"> 
 
@@ -100,7 +100,7 @@ For example, double-click the "content" key in the JSON structure and click **Sa
                 ![alt_text](images/prl(4).png  )
         3. Click **Save**. The actual response and expected response turn green.
 
-11. (Only for Agent Node) Enter the **Exit Scenario Key-Value fields** and **Virtual Assistance Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
+11. (Only for Agent Node) Enter the **Exit Scenario Key-Value fields** and **AI Agent Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. An AI Agent Response Key is available in the response payload to display the AI Agent’s response to the user.
     ![alt_text](images/image1-8.png  )
 12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
 <img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">

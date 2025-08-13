@@ -5,7 +5,7 @@
 
 Kore.ai’s Agent Transfer allows you to configure the most popular integrations to hand over conversations seamlessly without the need to use BotKit. These agent transfer integrations are hosted by the Platform, and there is no need to host any custom BotKit.
 
-Agent transfer refers to the process of handing over a customer’s conversation from one agent to another within a conversational virtual assistant (VA) platform. This is typically done when the current agent is unable to assist the customer with their issue or request, or if the customer requests to speak with a different agent.
+Agent transfer refers to the process of handing over a customer’s conversation from one agent to another within an AI Agent platform. This is typically done when the current agent is unable to assist the customer with their issue or request, or if the customer requests to speak with a different agent.
 
 **Agent Transfer** integrations are available under the **App Settings > Integration** menu. You can enable any integration by providing the required configurations. You can also enable multiple agent integrations as per your business requirement. For example, if you have a Custom integration, i.e., BotKit, and an integration with Genesys chat. You can make one of them as default and map channels to agent systems. 
 
@@ -141,7 +141,7 @@ Steps to delete a configured agent transfer integration:
 ## User-Bot Chat Transcript Link to Live Agents
 
 
-When the platform transfers a user conversation to a live agent, the agent receives a link to view the conversation the user had with the bot before the transfer. This provides context for what the user might expect from the live agent. This link can be accessed 10 times.
+When the platform transfers a user conversation to a live agent, the agent receives a link to view the conversation the user had with the app before the transfer. This provides context for what the user might expect from the live agent. This link can be accessed 10 times.
 
 !!! note
 
@@ -150,7 +150,7 @@ When the platform transfers a user conversation to a live agent, the agent recei
 
 ## User-Bot Chat Conversation Summary to Live Agents
 
-When the platform transfers a user to a live agent, it sends an AI-generated summary of the user-bot conversation directly to the agent window, along with the chat history link. This helps agents quickly understand the conversation context before interacting with the user.
+When the platform transfers a user to a live agent, it sends an AI-generated summary of the user-app conversation directly to the agent window, along with the chat history link. This helps agents quickly understand the conversation context before interacting with the user.
 
 By default, the feature is disabled. To enable, go to the dialog task and open the agent transfer node. In the Instance Properties panel, enable the Conversation Summary toggle for that node. Ensure that GenAI - [Conversation Summarization](../../../generative-ai-tools/genai-features.md) feature is enabled.
 
@@ -174,7 +174,7 @@ The user and agent can share multiple files, each up to 25 MB in size, in over 2
 
 ### Supported File Formats
 
-The VA supports sharing the following file formats.
+The AI Agent supports sharing the following file formats.
 
 
 

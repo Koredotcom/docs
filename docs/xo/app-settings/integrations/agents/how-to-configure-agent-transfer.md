@@ -4,7 +4,7 @@ The Kore.ai XO Platform offers a Custom Integration using the BotKit to configur
 
 
 
-Custom Agent Transfer Integration refers to the process of integrating a custom-built agent (such as a virtual assistant) into a larger system or workflow. This typically involves connecting the agent to external APIs or databases and configuring it to interact with other systems or users in a specific way. The custom integration allows the custom agent to seamlessly interact with other components of the system and to provide a more complete and efficient solution for the end user.
+Custom Agent Transfer Integration refers to the process of integrating a custom-built agent (such as a AI Agent) into a larger system or workflow. This typically involves connecting the agent to external APIs or databases and configuring it to interact with other systems or users in a specific way. The custom integration allows the custom agent to seamlessly interact with other components of the system and to provide a more complete and efficient solution for the end user.
 
 This post provides the configuration steps to enable the Custom Agent integration. Use the configurations provided below as general guidelines as there could be some differences based on the version of the Intercom that you are using.
 
@@ -18,7 +18,7 @@ Let’s understand how the custom agent can be integrated and how it can improve
 
 ## Prerequisites
 
-* A fully functional Bot (we will be using a Banking Bot).
+* A fully functional AI Agent (we will be using a Banking App).
 * Download BotKit SDK from [Kore’s GitHub](https://github.com/Koredotcom/BotKit){:target="_blank"}.
 * Download and Install the Node.js(version 10 or above). The BotKit SDK requires node.js to run on the same server where the SDK is installed.
     1. Go to `https://nodejs.org/en/download/` and select your OS as a .pkg file type for Mac and .msi file type for Windows.
@@ -45,20 +45,20 @@ Let’s understand how the custom agent can be integrated and how it can improve
 
 ## Design and Configuration
 
-1. As a Bot developer, open Kore.ai Bot Builder – [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
-2. Select the Bot for which Agent Transfer needs to be configured.
+1. As an App developer, open Kore.ai App Builder – [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
+2. Select the App for which Agent Transfer needs to be configured.
 3. Open or create a dialog task (_Support Call Back)_ and add an **Agent transfer** node.  
 
     <img src="../images/configure agent-transfer-img1-at-node.png" alt="Add Agent Transfer node" title="Add Agent Transfer node" style="border: 1px solid gray;zoom:50%;"/>
 
 4. Enter a _Name (LiveChat)_ and _Description_ and **Save**.
 5. You will see a message ‘_SDK is not currently configured/Subscribed. Please go to API Extensions to configure the SDK._’. For now ignore this message as we will see how to configure SDK later in this article.
-6. From the Bot Builder screen, go to **App Settings > Integration > Agent Transfer > Custom (BotKit)**.
+6. From the App Builder screen, go to **App Settings > Integration > Agent Transfer > Custom (BotKit)**.
 7. In the **App Name** section, select an existing app from the list or use the Create App option to create a new app.
     
     !!! Note
     
-        The **Bot ID**, **Client ID** and **Client Secret** keys.  
+        The **App ID**, **Client ID** and **Client Secret** keys.  
         **RS256 and RS512** JWT signing algorithms are **not supported** for Custom BotKit or Botkit.
 
 8. Enter the Callback URL of your application to be invoked by BotKIt SDK events. Since we are using NGROK we will show how to obtain the callback URL:
@@ -84,7 +84,7 @@ Let’s understand how the custom agent can be integrated and how it can improve
 
 11. Open the downloaded **BotKit SDK folder** and do the following:
     1. Edit `livechatapi.js:`
-        1. Give the respective botId and botName of your bot, which you have copied earlier.
+        1. Give the respective appId and appName of your App, which you have copied earlier.
         2. This JS file contains 3 APIs of Kore – Initialization, Send Message and Get Message. If required, any new APIs written for human agent transfer should be put in here.
 
             Example: If connection closing is required, then close connection API written needs to go into livechatapi.js.
@@ -100,7 +100,7 @@ Let’s understand how the custom agent can be integrated and how it can improve
             <img src="../images/configure agent-transfer-img5-at-configjson.png" alt="config.json" title="config.json" style="border: 1px solid gray;zoom:50%;"/>
 
     3. Edit `LiveChat.js`.
-        1. Give the respective botId and botName of your bot, which you have copied earlier, and save.
+        1. Give the respective appId and appName of your app, which you have copied earlier, and save.
 
             <img src="../images/configure agent-transfer-img6-at-livechat.png" alt="LiveChat.js" title="LiveChat.js" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -121,7 +121,7 @@ Let’s understand how the custom agent can be integrated and how it can improve
     `npm install &lt;module-name>` for windows and `sudo npm install &lt;module-name>` for mac.
 
 3. ngrok and node.js server will be running in different terminals.
-4. When a user initiates the chat from the bot, the bot transfers the call to an agent and sends a message to the user.
+4. When a user initiates the chat from the app, the app transfers the call to an agent and sends a message to the user.
 
     <img src="../images/configure agent-transfer-img8-at-chat1.png" alt="chat initiation" title="chat initiation" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -138,12 +138,12 @@ Let’s understand how the custom agent can be integrated and how it can improve
 
 !!! Note
 
-    The events and methods required for sending messages from User, bot, and transferring to Agent are outlined in LiveChat.JS.
+    The events and methods required for sending messages from User, app, and transferring to Agent are outlined in LiveChat.JS.
 
-1. _on_user_message_ event is triggered when a user sends a message. This message is sent to the bot using the sendBotMessage method.
-2. _on_bot_message_ is triggered when bot sends a message. This message is sent to the user using the SendUserMessage method.
-3. _on_agent_transfer_ event is triggered when the service agentTransfer node is triggered in bot. This event connects to the agent using the connectToAgent method, which internally calls the initChat API.
-4. _gethistory_ method gives the chat history of the user with the bot to the transferred agent.
+1. _on_user_message_ event is triggered when a user sends a message. This message is sent to the app using the sendBotMessage method.
+2. _on_bot_message_ is triggered when app sends a message. This message is sent to the user using the SendUserMessage method.
+3. _on_agent_transfer_ event is triggered when the service agentTransfer node is triggered in app. This event connects to the agent using the connectToAgent method, which internally calls the initChat API.
+4. _gethistory_ method gives the chat history of the user with the app to the transferred agent.
 5. _scheduleJob_ is run for every 5 secs, and it polls for the pending messages from the Agent, which internally calls the getPendingMessages.
 6. _getPendingMessages_ gets all the pending messages from Agent and delivers it to the User.
 7. _chat_closed_ gets triggered when the agent closes the chat with the user.

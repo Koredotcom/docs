@@ -1,48 +1,48 @@
-# VA Authorization Overview
+# AI Agent Authorization Overview
 
-Kore.ai XO Platform’s Enterprise Integration Framework provides support for multiple authentication models that can be configured at a task level for each assistant, to use both authenticated and unauthenticated tasks in the same configuration.
+The Platform’s Enterprise Integration Framework provides support for multiple authentication models that can be configured at a task level for each assistant, to use both authenticated and unauthenticated tasks in the same configuration.
 
-Developers can build custom authentication profiles for [virtual assistants](https://blog.kore.ai/a-complete-guide-to-chatbots){:target="_blank"} by defining subdomains through tenancy URLs, adding new fields through IDP form fields, and more. They can also test and validate the authorization definition before moving on to the next steps in the development process. The Platform passes user identity information and authentication tokens to the context as the web and mobile SDK initializes, so your VA can leverage existing authentication and authorization settings for end users.
+Developers can build custom authentication profiles for [AI Agents](https://blog.kore.ai/a-complete-guide-to-chatbots){:target="_blank"} by defining subdomains through tenancy URLs, adding new fields through IDP form fields, and more. They can also test and validate the authorization definition before moving on to the next steps in the development process. The Platform passes user identity information and authentication tokens to the context as the web and mobile SDK initializes, so your AI Agent can leverage existing authentication and authorization settings for end users.
 
 
 ## Supported Authentication Models
 
-The Platform lets you quickly enable one authentication profile across all VAs and tasks, or create custom profiles for each assistant and task: You can configure authentication for your assistant to access third-party web services, with support for the following authorization types. 
+The Platform lets you quickly enable one authentication profile across all AI Agents and tasks, or create custom profiles for each assistant and task: You can configure authentication for your assistant to access third-party web services, with support for the following authorization types. 
 
 
 ### Basic Auth
 
-A standard protocol to collect username and password information. Kore.ai uses SSL encryption in combination with basic authentication to help secure end-user information. For more information, see [Setting Up Authorization using Basic Auth](../setting-up-authorization-using-basic-auth/){:target="_blank"}.
+A standard protocol to collect username and password information. Kore.ai uses SSL encryption in combination with basic authentication to help secure end-user information. For more information, see [Setting Up Authorization using Basic Auth](setting-up-authorization-using-basic-auth.md){:target="_blank"}.
 
 
 ### OAuth v2 password grant type
 
-Define a custom authorization type for non-standard web service authorization types. For more information, see [Setting Up Authorization using OAuth v2 password grant](../setting-up-authorization-using-oauth-v2-password-grant/){:target="_blank"}.
+Define a custom authorization type for non-standard web service authorization types. For more information, see [Setting Up Authorization using OAuth v2 password grant](setting-up-authorization-using-oauth-v2-password-grant.md){:target="_blank"}.
 
 
 ### OAuth v2 client credentials
 
-This option allows you to configure authorization using client credentials. [Learn more.](../bot-oauthv2-clientcredentials/){:target="_blank"}
+This option allows you to configure authorization using client credentials. [Learn more.](bot-oauthv2-clientcredentials.md){:target="_blank"}
 
 
 ### OAuth v2
 
-The newest version of OAuth protocol focusing on specific authorization flows for web applications and web services. For more information, see [Setting Up Authorization using OAuth v2](../setting-up-authorization-using-oauth-v2/){:target="_blank"}.
+The newest version of OAuth protocol focusing on specific authorization flows for web applications and web services. For more information, see [Setting Up Authorization using OAuth v2](setting-up-authorization-using-oauth-v2.md){:target="_blank"}.
 
 
 ### OAuth v1
 
-Enables web applications or web services to access protected resources using an API without end-users having to disclose their login credentials to Kore.ai. For more information, see [Setting Up Authorization using OAuth v1](../setting-up-authorization-using-oauth-v1/){:target="_blank"}.
+Enables web applications or web services to access protected resources using an API without end-users having to disclose their login credentials to Kore.ai. For more information, see [Setting Up Authorization using OAuth v1](setting-up-authorization-using-oauth-v1.md){:target="_blank"}.
 
 
 ### API Key
 
-Identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provides authentication for secure access. For more information, see [Setting Up Authorization using an API Key](../setting-up-authorization-using-an-api-key/){:target="_blank"}.
+Identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provides authentication for secure access. For more information, see [Setting Up Authorization using an API Key](setting-up-authorization-using-an-api-key.md){:target="_blank"}.
 
 
 ### Kerberos SPNEGO
 
-Enables enterprises to use Kerberos SPNEGO authentication flow to connect securely with their internal applications using this security protocol. For more information, see the [Setting Up Kerberos SPNEGO authorization profile](../setting-up-the-kerberos-spnego-authorization-profile/){:target="_blank"} article.
+Enables enterprises to use Kerberos SPNEGO authentication flow to connect securely with their internal applications using this security protocol. For more information, see the [Setting Up Kerberos SPNEGO authorization profile](setting-up-the-kerberos-spnego-authorization-profile.md){:target="_blank"} article.
 
 
 

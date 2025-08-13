@@ -3,7 +3,7 @@ Learn about the new features and enhancements included in AI for Service (XO v11
 
 AI for Service helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
 
-Built for security and scalability, the platform uses a no-code interface that lets businesses build intelligent virtual assistants. These assistants use large language models to hold natural conversations in multiple languages across various channels.
+Built for security and scalability, the platform uses a no-code interface that lets businesses build agents. These assistants use large language models to hold natural conversations in multiple languages across various channels.
 
 ## Comprehensive Suite of Products and Services
 The unified platform offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
@@ -18,12 +18,12 @@ Key updates to products and features are summarized below.
 
 ### Automation AI
 
-Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+Automation AI offers sophisticated AI-powered tools for creating agents to handle customer interactions through intelligent automation. You can also empower agents to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
     
 Key Automation AI updates are summarized below.
 
     
-* **Advanced AI Capabilities**: The platform has introduced several Advanced AI Capabilities that simplify building agentic experiences. Users can create more natural and personalized virtual assistant conversations while streamlining their development workflow.
+* **Advanced AI Capabilities**: The platform has introduced several Advanced AI Capabilities that simplify building agentic experiences. Users can create more natural and personalized agents conversations while streamlining their development workflow.
 
     * **DialogGPT, an Agentic Orchestration for Intelligent Conversations**: DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. [Learn more :octicons-arrow-right-24:](../generative-ai-tools/dialog-gpt.md)
 
@@ -81,7 +81,7 @@ Key Search AI capabilities are summarized below.
     * Leverage VDR embeddings to create vectors from image-based or visually structured documents.
     * Configure which content fields are used for embedding, allowing flexible and targeted vectorization based on your data structure and retrieval needs.
 
-* **Advanced Content Retrieval**:Search AI provides powerful, intelligent retrieval capabilities, ensuring users receive the most relevant and context-aware responses. Key technologies include:
+* **Advanced Content Retrieval**: Search AI provides powerful, intelligent retrieval capabilities, ensuring users receive the most relevant and context-aware responses. Key technologies include:
     * Hybrid RAG: Utilizes a hybrid retrieval method based on RAG Fusion, combining multiple keyword and vector scores to significantly boost accuracy, relevance, and performance of search results.
     *  Semantic-Powered Search: Replaces traditional keyword-based retrieval with semantic search, enabling the system to understand the intent and context behind a query. This provides deeper, more relevant results tailored to user needs.
 

@@ -9,7 +9,7 @@ This integration streamlines customer support, automates responses, and improves
 Here’s a general overview of how voice virtual assistant interactions work on the Zoom Contact Center:
 
 * **Setup and Configuration**: Kore.ai sets up and configures the integration between their virtual assistant and ZCC. This involves installing specific connectors provided by Zoom and configuring the settings to establish a connection.
-* **Channel Integration**: Once the integration is set up, the virtual assistants on Kore.ai can be configured to use ZCC as one of its communication channels (setting includes “Transfer form IVR” and “Agent Transfer”. This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and then routed to Kore’s IVR for running voice automation.
+* **Channel Integration**: Once the integration is set up, the virtual assistants on Kore.ai can be configured to use ZCC as one of its communication channels (setting includes “Transfer form IVR” and “Agent Transfer”). This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and then routed to Kore’s IVR for running voice automation.
 * **Routing and Distribution**: When a customer initiates contact through ZCC and the call is received by Kore. Admins can use the Agent Transfer Node within the Kore platform to transfer the call back to ZCC if a human agent is required. Admins can also define appropriate SIP headers to provide the necessary information that can be used within ZCC to direct the interaction to the appropriate agents.
 * **Agent Interaction**: The agent receives the customer interaction and responds to the customer using ZCC’s communication features, such as answering voice calls.
 
@@ -35,7 +35,7 @@ The important steps to set up the ZCC channel are summarized below:
 
 ## Step 1: Associate an App within an experience flow. [Know more](../../../flows/create-flows.md){:target="_blank"}
 
-If you have your App ready with you then you can use “Automation” Node in the flow and attach that App with the flow that you want to trigger upon transfering the call from ZCC to Kore IVA. Read more [here](../../../flows/node-types/automation.md){:target="_blank"}.
+If you have your App ready with you then you can use “Automation” Node in the flow and attach that App with the flow that you want to trigger upon transfering the call from ZCC to Kore AI Agent. Read more [here](../../../flows/node-types/automation.md){:target="_blank"}.
 
 !!! note
     If you are using the older version “SmartAssist,” then use this [link](../../../flows/create-flows.md){:target="_blank"}.
@@ -67,7 +67,7 @@ Go to **Flows & Channels** > **Channels** > **Voice Gateway**, and select **SIP 
 
 ## Step 3: Agent Transfer Configuration
 
-After the customer interacts with Kore’s IVA, you can perform agent transfer from Kore IVA to ZCC through one of the following two approaches:
+After the customer interacts with Kore’s AI Agent, you can perform agent transfer from Kore AI Agent to ZCC through one of the following two approaches:
 
 * Agent Transfer Node in Flow. [Read here ](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}
 * Agent Transfer Node in a Dialog Task
@@ -80,7 +80,7 @@ After the customer interacts with Kore’s IVA, you can perform agent transfer f
 3.1.2. Add configuration for **Agent Transfer** node.  
 <img src="../images/adding-configuration-agent-transfer-node-6.png" alt="adding-configuration-agent-transfer-node" title="adding-configuration-agent-transfer-node" style="border: 1px solid gray; zoom:80%;">
 
-3.1.3. After configuring the Agent Transfer node in Experience Flow, head to **App Settings** > **Integration** > **Agent transfer** > **Voice** and create a new SIP transfer here. 
+3.1.3. After configuring the Agent Transfer node in Flow, head to **App Settings** > **Integration** > **Agent transfer** > **Voice** and create a new SIP transfer here. 
 
 3.1.4. For ZCC, we are using **SIP BYE** for Agent Transfer.  
 <img src="../images/sip-transfer-7.png" alt="sip-transfer" title="sip-transfer" style="border: 1px solid gray; zoom:80%;">
@@ -89,7 +89,7 @@ After the customer interacts with Kore’s IVA, you can perform agent transfer f
 
 ### 3.2 Agent Transfer Node in a Dialog Task
 
-Zoom users can also invoke agent transfer from the Dialog Task using a message node. Read more [here](../../../getting-started/virtual-assistants-overview.md){:target="_blank"} on Kore Automation / Dialog task.
+Zoom users can also invoke agent transfer from the Dialog Task using a message node.
 
 Add the following code on the message node for agent transfer:
 
@@ -120,7 +120,7 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 ### Scenario 2: Question Resolved, Voice Bot Ends the Call
 
 * **Given** that a customer’s query has been resolved by the voice bot,
-* **When** the voice bot ends the call,
+* **When** the voice AI Agent ends the call,
 * **Then** Kore should send the **kore-session_id** and **kore-bot_id** in the **INVITE’s 200 OK** response, **kore-reason(HangUp)** in the **SIP BYE** message, and any custom header configured in Voice Gateway.
 
 ### Scenario 3: Question Unresolved, Customer Needs Transfer to ZCC Agent
@@ -137,15 +137,15 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 <img src="../images/koreai-virtual-assistant-8.png" alt="koreai-virtual-assistant" title="koreai-virtual-assistant" style="border: 1px solid gray; zoom:80%;">  
 <img src="../images/koreai-virtual-assistant2-9.png" alt="koreai-virtual-assistant2" title="koreai-virtual-assistant2" style="border: 1px solid gray; zoom:80%;">
 
-3. Select **Kore.ai Virtual Assistant** connector, and navigate to the **Connector Details** screen.  
+3. Select the **Kore.ai** connector, and navigate to the **Connector Details** screen.  
 <img src="../images/connector-details-10.png" alt="connector-details" title="connector-details" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Create Connector**, and navigate to the **Create Kore.ai Virtual Assistant Connector** screen.  
+4. Click **Create Kore.ai Virtual Assistant Connector**, and navigate to the **Create Kore.ai Virtual Assistant Connector** screen.  
 <img src="../images/create-koreai-virtual-assistant-connector-11.png" alt="create-koreai-virtual-assistant-connector" title="create-koreai-virtual-assistant-connector" style="border: 1px solid gray; zoom:80%;">
 
 5. Enter a name in the **Connector Name** field, select “Voicebot” from the “Choose Bot Type” dropdown list, and then click **Next**.
 
-6. Select the desired region for the voice bot from the dropdown list to automatically populate the Base URL of the regional Kore.ai platform.
+6. Select the desired region for the voice AI Agent from the dropdown list to automatically populate the Base URL of the regional Kore platform.
 
 7. Copy the **Bot ID**, **Client ID**, and **Client Secret** of your respective app on kore.ai. (Go to **Flows & Channel** > **Digital**. Under **Configured**, click **Configured Channels** > **Web/Mobile Client** > **JWT App Details.**)  
 <img src="../images/web-mobile-client-screen-12.png" alt="web-mobile-client-screen" title="web-mobile-client-screen" style="border: 1px solid gray; zoom:80%;">
@@ -202,7 +202,7 @@ This section explains the process of fetching the details and summary of the con
 14. Enter a comment in the **Comments** box, and click **Confirm**.  
 <img src="../images/confirm-publishing-your-bot-21.png" alt="confirm-publishing-your-bot" title="confirm-publishing-your-bot" style="border: 1px solid gray; zoom:80%;">
 
-    14.1 Close the message that confirms publishing of your Virtual Assistant.  
+    14.1 Close the message that confirms publishing of your AI Agent.  
     <img src="../images/closing-va-publishing-confirmation-message-22.png" alt="closing-va-publishing-confirmation-message" title="closing-va-publishing-confirmation-message" style="border: 1px solid gray; zoom:80%;">
 
 15. Copy the **curl** from the [Conversation Details and Summary API](../../../apis/automation/conversation-details-and-summary.md){:target="_blank"}.

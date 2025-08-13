@@ -40,7 +40,15 @@ theme:
 plugins:
   - search:
       lang: tr
-  - glightbox   
+  - glightbox  
+  - redirects:
+      redirect_maps:
+        'channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md': 'channels/voice-gateway/configure-voice-gateway.md' 
+        'channels/kore.ai-voice-gateway/call-control-parameters.md': 'channels/voice-gateway/speech-customization.md'
+        'channels/voice-gateway/call-control-parameters.md': 'channels/voice-gateway/speech-customization.md'
+        'getting-started/virtual-assistants-overview.md': 'getting-started/building-a-virtual-assistant.md'
+        'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
+        'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
 extra:
   version:
     provider: mike
@@ -154,12 +162,13 @@ nav:
           - Voice:
             - Voice Gateway: 
               - Configure Voice Gateway: channels/voice-gateway/configure-voice-gateway.md
-              - Advanced Topics:
-                - Advanced Configuration and Customization: channels/voice-gateway/advanced-configuration-and-customization.md
-                - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
-                - SIP Trunk: channels/voice-gateway/sip-trunk.md
-                - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
-                - Troubleshooting: channels/voice-gateway/troubleshooting.md
+              - Advanced Configuration and Customization:
+                - Utility Functions in Voice Gateway: channels/voice-gateway/utility-functions-in-voice-gateway.md
+                - Speech Customization (Call Control Parameters): channels/voice-gateway/speech-customization.md
+              - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
+              - SIP Trunk: channels/voice-gateway/sip-trunk.md
+              - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
+              - Troubleshooting: channels/voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -184,8 +193,7 @@ nav:
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
-        - About Virtual Assistant: getting-started/virtual-assistants-overview.md
-        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
+        - Build an AI Agent: getting-started/building-a-virtual-assistant.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
     - Agent Node:
         - Agent Node Overview and Configuration: automation/agent-node/working-with-agent-node.md
@@ -294,19 +302,20 @@ nav:
           - Conversation Testing - NLP: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
-      - Manage Assistant:
+      - Manage App:
         - Team Collaboration: manage-assistant/collaborative-development.md
         - Feedback Survey: manage-assistant/feedbacksurvey.md
       - Dynamic Routing: automation/dynamic-routing.md     
     - How To:
+      - New vs. Returning Users: kb/new-and-returning-users.md
+      - Access Original PII Data: how-tos/access-original-pii-data.md
+      - Share Metadata from AI for Service to Agent Platform: how-tos/share-metadata-ais-to-agent-platform.md
+      - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
+      - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
       - Marketplace Integration:
         - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
         - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
         - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
-    - Knowledgebase:
-      - New vs. Returning Users: kb/new-and-returning-users.md
-      - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
-      - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
@@ -331,7 +340,7 @@ nav:
                 - ClickUp: searchai/content-sources/connectors/clickup.md
                 - Coda: searchai/content-sources/connectors/coda.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
-                - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Confluence Data Center: searchai/content-sources/connectors/confluence-server.md
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
                 - Datadog: searchai/content-sources/connectors/datadog.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md
@@ -407,10 +416,13 @@ nav:
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
+        - Toolkit: searchai/toolkit.md
     - FAQs:
         - Automatic vs Manual Training: searchai/application-training.md
         - Multilingual Support: searchai/language-support.md
         - User Feedback Handling: searchai/feedback.md
+    - How Tos:
+        - Integrate Custom Embedding Model: searchai/howto/integrate-custom-embedding-model.md
     - Best Practices: 
         - Data Ingestion: searchai/best-practices/data-ingestion.md
         - Chunking Strategy: searchai/best-practices/chunking-strategy.md
@@ -430,13 +442,18 @@ nav:
       - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
       - Widget Settings: contactcenter/configurations/widgets/configure-widgets.md
       - Wallboards: contactcenter/configurations/wallboards/configure-wallboards.md
-      - Advanced Settings:
-        - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
-        - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
-        - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
-        - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
-        - Translation Configurations: contactcenter/configurations/advanced-settings/translation-configurations.md
-        - Replace Customer Column Data With User ID: contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md
+      - Settings:
+        - System Settings: 
+          - Co-Browse: contactcenter/configurations/settings/co-browse.md
+          - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
+          - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
+        - Advanced Settings:
+          - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
+          - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
+          - Reject Calls With a Delayed First Response: contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md
+          - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
+          - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
+          - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
     - Performance Management:
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
@@ -477,7 +494,7 @@ nav:
         - Dashboard:
           - Supervisor Dashboard: quality-management/analyze/dashboard.md
           - Supervisor View (Agent-Specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
-          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                
+          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                          
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
@@ -494,13 +511,21 @@ nav:
         - Evaluation Criteria:
             - Evaluation Forms: quality-management/configure/evaluation-forms.md
             - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
+            - Metrics Measurement Types: 
+              - By Question: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-question.md
+              - By Speech: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-speech.md 
+              - By Value: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-value.md
+              - By AI Agent: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md
+              - By Dialog Task: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
+              - By Playbook Adherence: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md              
+              
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Connectors: 
             - Introduction: quality-management/connectors/connector-intro.md
             - Amazon S3: quality-management/connectors/amazon-s3.md
         - Settings: 
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
-          - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
+          - Quality AI General Settings: quality-management/configure/quality-ai-general-settings.md
           - Language Settings: quality-management/configure//langauge-settings.md
     - Case Management:
       - About Case Management: case-management/case-management.md
@@ -527,8 +552,9 @@ nav:
         - Supported Languages: agentai/agent-experience/supported-languages.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
-      - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
+      - App Override and Automation: agentai/agent-experience/bot-override-and-automation.md
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
+      - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - Genesys Cloud CX using Kore Data Table: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx-using-kore-data-table.md
@@ -539,11 +565,12 @@ nav:
       - Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
       - Salesforce NICE CX-CTI for Outbound Calls: agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md
       - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
+      - Salesforce OmniChannel Chat (Messaging): agentai/integration/salesforce-omnichannel-chat-messaging/agentai-configuration-with-salesforce-omnichannel-chat-messaging.md
       - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md
       - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md 
       - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
-
+      - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
@@ -580,6 +607,7 @@ nav:
       - Automation AI - GenAI Features: generative-ai-tools/genai-features-automationai.md
       - Search AI - GenAI Features: generative-ai-tools/genai-features-searchai.md
       - Agent AI - GenAI Features: generative-ai-tools/genai-features-agentai.md
+      - Contact Center AI - GenAI Features: generative-ai-tools/genai-features-contactcenterai.md
     - DialogGPT:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
@@ -675,6 +703,9 @@ nav:
             - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
             - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
             - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
+            - Voice Automation with Genesys Agent Desktop using SIP Invite Protocol: contactcenter/integrations/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol.md
+          - Multibot:
+            - Multibot Integration with Genesys: contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
@@ -704,7 +735,7 @@ nav:
           - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
           - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md                
   - Analytics:
-    - Analyzing Your Bot: analytics/introduction.md
+    - Analyzing Your App: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md
     - Overview:
       - Summary Dashboard: analytics/overview/summary-dashboard.md
@@ -760,7 +791,7 @@ nav:
         - Supported Components & Features: app-settings/language-management/multilingual-vas-components-feature-support.md
         - Manage Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
         - Manage Translation Services: app-settings/language-management/managing-translation-services.md
-        - Multilingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md              
+        - Multilingual AI Agent Behavior: app-settings/language-management/multi-lingual-bot-behavior.md              
       - Dev Tools:
         - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
@@ -785,7 +816,7 @@ nav:
         - Manage Groups: administration/user-management/managing-your-groups.md
         - Manage Roles: administration/user-management/role-management.md
       - Data Tables And Views: administration/data/manage-data-tables-and-views-in-admin-console.md
-      - Assistant Management: administration/bot-management.md
+      - App Management: administration/bot-management.md
       - Enrollment:
         - Invite Users: administration/enrollment/enrolling-a-new-user.md
         - Send Bulk Invites: administration/enrollment/enrolling-many-users.md
@@ -793,8 +824,10 @@ nav:
         - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
       - Security and Control:
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
+        - Kore.ai Connector: administration/kore-ai-connector.md
+        - Enterprise Key: administration/security-and-control/enterprise-key.md
+        - API Scopes: administration/security-and-control/api-scopes.md
         - Two-Factor Authentication (2FA): administration/security-and-control/two-factor-authentication-for-platform-access.md
         - Security Settings: administration/security-and-control/security-settings.md
-      - Cloud Connector: administration/kore-ai-connector.md
       - Analytics for Bots Admin: administration/analytics.md
       - Billing: administration/billing.md

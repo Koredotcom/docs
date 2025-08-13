@@ -1,6 +1,6 @@
 # Manage Data Tables and Views in Admin Console
 
-The Kore.ai XO Platform now allows an administrator to view all data tables and views in the workspace. An administrator can also change the ownership of the data tables and views.
+The Platform now allows an administrator to view all data tables and views in the workspace. An administrator can also change the ownership of the data tables and views.
 
 
 ## View Data Tables and Change Ownership
@@ -9,7 +9,7 @@ As an administrator you can view all data tables in the workspace.
 
 To view data tables, follow these steps:
 
-1. Log in to the [Kore.ai Admin Console](https://qa1-bots.kore.ai/admin/){:target="_blank"} with your admin user credentials.
+1. Log in to the [Kore.ai Admin Console](https://platform.kore.ai/admin/){:target="_blank"} with your admin user credentials.
 2. Navigate to **Data Tables & View > Data Tables**.  
 <img src="../images/data-table-admin.png" alt="Data Tables" title="Data Tables" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -20,14 +20,14 @@ To view data tables, follow these steps:
 5. In the Change Table Owner dialog, select the new owner for the table and click **Proceed**.  
 <img src="../images/data-table-admin2.png" alt="Select new owner for table" title="Select new owner for table" style="border: 1px solid gray;zoom:50%;"/>
 
-6. Once the Ownership is changed, all related tables and views ownership is also transferred to the new owner. The table is moved to the new owner and all app assignments for this table are lost. For more information, see [Change Table Ownership](../data-table/#change-table-owner){:target="_blank"}.
+6. Once the Ownership is changed, all related tables and views ownership is also transferred to the new owner. The table is moved to the new owner and all app assignments for this table are lost. For more information, see [Change Table Ownership](data-table.md#change-table-owner){:target="_blank"}.
 
  
 ## View Table Views and Change Ownership
 
 As an administrator you can view all table views in the workspace.
 
-1. Log in to the [Kore.ai Admin Console](https://qa1-bots.kore.ai/admin/){:target="_blank"} with your admin user credentials.
+1. Log in to the [Kore.ai Admin Console](https://platform.kore.ai/admin/){:target="_blank"} with your admin user credentials.
 2. Navigate to **Data Tables & View > Table Views**.  
 <img src="../images/data-view-admin.png" alt="Bot metrics" title="Bot metrics" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -38,4 +38,4 @@ As an administrator you can view all table views in the workspace.
 5. In the Change View Owner dialog, select the new owner for the table and click **Proceed**.  
 <img src="../images/data-view-admin2.png" alt="Bot metrics" title="Bot metrics" style="border: 1px solid gray;zoom:50%;"/>
 
-6. Once the Ownership is changed, all related views ownership is also transferred to the new owner. The view is moved to the new owner and all app assignments for this view are lost. Refer to the use case scenario for the related tables ownership change in the Data Table . For more information, see [Change View Ownership](../table-views/#change-view-ownership){:target="_blank"}.
+6. Once the Ownership is changed, all related views ownership is also transferred to the new owner. The view is moved to the new owner and all app assignments for this view are lost. Refer to the use case scenario for the related tables ownership change in the Data Table . For more information, see [Change View Ownership](table-views.md#change-view-ownership){:target="_blank"}.

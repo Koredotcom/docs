@@ -4,7 +4,7 @@ You can use the **Prebuilt Action Templates** from your Google Maps integration 
 
 Steps to create a dialog task using the Google Maps action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 
@@ -12,7 +12,7 @@ Steps to create a dialog task using the Google Maps action templates:
 4. Select any of the dialog task templates and click **Proceed**. For example, select the **Get locations by coordinates** item.  
 <img src="../images/google-maps-action-img11-tem-img2.png" alt="Select dialog and proceed" title="Select dialog and proceed" style="border: 1px solid gray;zoom:50%;"/>
 
-5. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+5. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
 <img src="../images/google-maps-tem-img3.png" alt="Explore intefrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -105,7 +105,7 @@ Steps to find places by name in Google Maps:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to find places by name, as shown below.  
+5. Follow the prompts in the App console to find places by name, as shown below.  
 <img src="../images/google-maps-tem-img7.png" alt="VA prompt to find places by name" title="VA prompt to find places by name" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -1135,7 +1135,7 @@ Steps to find locations using the Google Maps coordinates:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to get the location using the coordinates, as shown below.  
+5. Follow the prompts in the App console to get the location using the coordinates, as shown below.  
 <img src="../images/google-maps-action-img11-tem-img2.png" alt="VA prompts to get location using coordinates" title="VA prompts to get location using coordinates" style="border: 1px solid gray;zoom:50%;"/>
 
 6. To view the location details click and expand the desired item in the results.  

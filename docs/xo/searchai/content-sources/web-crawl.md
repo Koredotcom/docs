@@ -289,7 +289,7 @@ Below are some of the most common error scenarios. Refer to [this list](web-craw
 
 * Ensure you have permission to log in to the web pages you are trying to crawl and have provided the correct credentials in the web crawl configuration.
 * Verify that the URL is accurate and complete, directing to the intended pages for crawling.
-* Confirm that the domain is whitelisted for the XO platform. 
+* Confirm that the domain is whitelisted for the AI for Service platform. 
 
 2.**Successful Web Crawl but Unsuccessful Indexing:**
 

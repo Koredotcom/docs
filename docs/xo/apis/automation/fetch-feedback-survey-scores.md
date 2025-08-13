@@ -1,6 +1,6 @@
 # Feedback Survey API
 
-To fetch the feedback survey scores provided by the user in the conversation with a virtual assistant and push the data for visualization on the **Feedback Analytics** module using the **_Survey Type_** and **_Survey Name_**.
+To fetch the feedback survey scores provided by the user in the conversation with an AI Agent and push the data for visualization on the **Feedback Analytics** module using the **_Survey Type_** and **_Survey Name_**.
 
 <table>
   <tr>
@@ -37,7 +37,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Metrics
+<li>App Builder: Metrics
 
 <li>Admin Console: Bot Analytics > Feedback Analytics
 </li>
@@ -70,9 +70,9 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotId</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
 <p>
-<strong>Note</strong>: This is required only for Bot Builder API scope of Proactive Messages.
+<strong>Note</strong>: This is required only for App Builder API scope of Proactive Messages.
    </td>
    <td>string, required
    </td>
@@ -215,7 +215,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{botId}}/saveFeedback' \
   <tr>
    <td>botId
    </td>
-   <td>The ID of the virtual assistant for which feedback was given. You can access it from the virtual assistant’s <strong>General Settings</strong> page.
+   <td>The ID of the AI Agent for which feedback was given. You can access it from the <strong>General Settings</strong> page.
    </td>
    <td>string, required
    </td>

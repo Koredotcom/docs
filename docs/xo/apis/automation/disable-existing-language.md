@@ -1,6 +1,6 @@
 # Disable an Existing Language API
 
-To disable an existing language for a virtual assistant.
+To disable an existing language for an AI Agent.
 
 <table>
   <tr>
@@ -34,7 +34,7 @@ To disable an existing language for a virtual assistant.
    <td>
 <ul>
 
-<li>Bot Builder: Language Configuration
+<li>App Builder: Language Configuration
 
 <li>Admin Console: Language Settings > Language Management
 </li>

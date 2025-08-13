@@ -1,4 +1,4 @@
-# Access Custom Data in Agent AI Bot
+# Access Custom Data in Agent AI APP
 
 Custom data refers to additional information, such as agent name, ID, and other metadata, that can be passed from third-party applications to enhance the functionality of the Agent AI widget. Agent AI accesses and utilizes this data to customize interactions, streamline processes, and provide more context-specific responses. Using custom data, you can improve user experiences and enable more dynamic workflows within the system.
 
@@ -23,7 +23,7 @@ To access custom data in the Dialog Tasks section, follow these steps:
 
 1. Sign in to [XO11](https://platform.kore.ai/){:target="_blank"}.
 2. Click an app name on the App list.
-3. Click **Automation AI** > **Virtual Assistant**.
+3. Click **Automation AI** > **AI Agent**.
 4. Click an existing Dialog in the Dialogs page. (If you don’t have any Dialog, create a dialog by following [this](./../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md/#create-a-dialog-task){:target="_blank"} doc.)
 5. Click to open a **Message** node.
 6. On the **Component Properties** page, go to the **User Prompts** or **Error Prompts** field.

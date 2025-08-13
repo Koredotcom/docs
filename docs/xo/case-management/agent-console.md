@@ -6,9 +6,9 @@ The Agent console displays essential information for agents who use the Case Man
 
 Before managing cases and tasks, ensure the following prerequisites are completed:
 
-* Set up a Channel and Chat or Voice Bot with Customer Support dialogs. 
+* Set up a Channel and Chat or Voice AI Agent with Customer Support dialogs. 
 
-* Customers must have the option to select an agent during Bot or Voice interactions or conversations.
+* Customers must have the option to select an agent during AI Agent or Voice interactions or conversations.
 
 * The customer should select the agent transfer option to initiate agent interaction.
 

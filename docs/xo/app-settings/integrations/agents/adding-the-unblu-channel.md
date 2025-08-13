@@ -2,14 +2,14 @@
 
 Unblu is a Conversational Platform for Financial Services.
 
-To setup Unblu as a channel, you will need to create an External Integration bot in Unblu, create a ‘Named Area’ and map this Named Area to your Kore.ai assistant.
+To setup Unblu as a channel, you will need to create an External Integration AI Agent in Unblu, create a ‘Named Area’ and map this Named Area to your Kore.ai assistant.
 
 
 ## Channel Integration
 
 ### Step 1: Create a Named Area
 
-Named Areas in Unblu are used to identify the origins of the chat requests from your website. The Kore.ai assistant should be associated with a Named Area to ensure that it responds to users only when the chat has originated from the sections of your website associated with this Named Area. This mapping is optional if you are enabling the Unblu channel for a single kore.ai bot alone. 
+Named Areas in Unblu are used to identify the origins of the chat requests from your website. The Kore.ai assistant should be associated with a Named Area to ensure that it responds to users only when the chat has originated from the sections of your website associated with this Named Area. This mapping is optional if you are enabling the Unblu channel for a single kore.ai AI Agent alone. 
 
 1. [Login ](https://latest.demo.unblu.com/){:target="_blank"} to your Unblu Account Administration.
 2. Under the Named Areas module, select the ‘New named area’ option.
@@ -17,11 +17,11 @@ Named Areas in Unblu are used to identify the origins of the chat requests from 
 4. Make a note of the name of the Named Area you have created.
 
 
-### Step 2: Create Unblu Bot
+### Step 2: Create Unblu AI Agent
 
 A assistant should be created in your Unblu account for integrating it with your current Kore.ai assistant.
 
-The Unblu Bot can be directly created from the Kore.ai XO Platform.
+The Unblu AI Agent can be directly created from the Kore.ai XO Platform.
 
 1. Create or Open the assistant in the XO platform.
 2. Go to **App Settings** > **Integrations** > **Agent Transfer** and select **Unblu**..
@@ -43,7 +43,7 @@ The Unblu Bot can be directly created from the Kore.ai XO Platform.
 
 After the channel is enabled and all configurations are verified, you can optionally publish
 
-the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your Virtual Assistant](../../../../deploy/publishing-bot/){:target="_blank"}.
+the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your App](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}
 

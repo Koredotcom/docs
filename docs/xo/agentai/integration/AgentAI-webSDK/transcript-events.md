@@ -1,6 +1,6 @@
 # Events to customize Transcript Tab
 
-The Transcript tab shows the transcripts of the USER-BOT conversation if they exist. It displays a summary of the conversation to give pre-context to the Agent and to show the live transcripts of USER and AGENT during voice conversations.
+The Transcript tab shows the transcripts of the User-AI Agent conversation if they exist. It displays a summary of the conversation to give pre-context to the Agent and to show the live transcripts of USER and AGENT during voice conversations.
 
 ## Pause Transcript
 
@@ -20,7 +20,7 @@ aaWindowInstance.resumeTranscript();
 
 ## BOT_TRANSCRIPT
 
-This event delivers the Bot transcripts when the user interacts with the bot prior to agent transfer. It allows to customize the Bot response within the transcripts.
+This event delivers the AI Agent transcripts when the user interacts with the AI Agent prior to agent transfer. It allows to customize the AI Agent response within the transcripts.
 
 ```
 aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
@@ -48,7 +48,7 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 
 ## USER_TRANSCRIPT
 
-This event delivers the User transcripts when the user interacts with a bot or agent during voice conversations. It allows to customize the User response within the transcript.
+This event delivers the User transcripts when the user interacts with a AI Agent or agent during voice conversations. It allows to customize the User response within the transcript.
 
 ```
 aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
@@ -89,7 +89,7 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 
 ## SUMMARY_TEMPLATE
 
-This event summarizes the conversation between the User and the Bot before agent transfer. It also provides the Agent with context for the user's query.
+This event summarizes the conversation between the User and the AI Agent before agent transfer. It also provides the Agent with context for the user's query.
 
 ```
 aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {

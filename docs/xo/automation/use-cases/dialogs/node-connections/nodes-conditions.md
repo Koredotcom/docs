@@ -2,7 +2,7 @@
 
 The Kore.ai XO Platform allows you to use If-Else conditions to configure node connections. You may want to use such conditions when you want the conversation to follow specific paths depending on specific information.
 
-For example, if you are working with a travel Virtual Assistant and are setting up a _Book a Flight_ dialog task, you might want to provide a specific offer for group reservations. So, if during the conversation, the VA detects a certain number of passengers, you may want to direct the conversation to one path or another, depending on that number. Say for instance, if the passenger count is 5 or less, present the standard offer; otherwise present a promotional offer.
+For example, if you are working with a travel app and are setting up a _Book a Flight_ dialog task, you might want to provide a specific offer for group reservations. So, if during the conversation, the AI Agent detects a certain number of passengers, you may want to direct the conversation to one path or another, depending on that number. Say for instance, if the passenger count is 5 or less, present the standard offer; otherwise present a promotional offer.
 
 This is a simple example; you can use the conditions feature to design complex conversation paths based on the criteria that suit your business.
 
@@ -17,7 +17,7 @@ There are three types of available conditions:
 * **Else**– This condition allows you to set the node connection that will occur when the criteria configured within the _If_ condition are not met. The _Else_ condition only allows you to configure the next node to connect to.
 * **Else If** – This condition allows you to configure another set of criteria to be met by the conversation path when the criteria in the initial _If_ condition are not met. The _If_ condition lets you configure Entity, Context and Intent criteria.
 
-For example, in the travel VA, you might want to present a group promotion if more than 5 passengers are travelling together, but if not, you may want to show a destination-specific package, based on the arrival city. If neither of these criteria are met, then you may want to continue with the standard flight booking procedure. Here is what such a use case could look like as node connection conditions:
+For example, in the travel app, you might want to present a group promotion if more than 5 passengers are travelling together, but if not, you may want to show a destination-specific package, based on the arrival city. If neither of these criteria are met, then you may want to continue with the standard flight booking procedure. Here is what such a use case could look like as node connection conditions:
 
 * **IF** _PassengerCount_ is greater than _5_, connect to the Group _Promotion_ node, (So, if there are more than 5 passengers, show the Group Promotion.)
 * **ELSE IF** ArrivalCity equals to _London_, connect to _London Destination Package_ node. (If there are not more than 5 passengers, but the arrival city is London, then show the London Destination Package.)
@@ -111,7 +111,7 @@ The _context.FollowupIntents_ parameter is preselected and you can choose to con
 <img src="../images/node-conditions-follow-up-intent.png" alt="Select Follow-up intent" title="Select Follow-up intent" style="border:1px solid gray;zoom:70%;">
   
 
-For message nodes, you can either choose context.followupintent as described above, or select to wait for user input. Under the Equals dropdown, you can select which user input the VA should wait for before connecting to the node you set under _Then go to_.
+For message nodes, you can either choose context.followupintent as described above, or select to wait for user input. Under the Equals dropdown, you can select which user input the AI Agent should wait for before connecting to the node you set under _Then go to_.
 
 <img src="../images/node-conditions-follow-up-intent-wait-for-user-input.png" alt="Follow-up intent - Wait for User Input" title="Follow-up intent - Wait for User Input" style="border:1px solid gray;zoom:70%;">
 
@@ -130,4 +130,4 @@ Depending on the node type you are working with, you may see some differences in
 * For all node types except for the Message, and Agent Transfer node types, the only available Intent condition criterion is _context.FollowupIntents_ which lets you configure the connection based on the user utterance. The same applies to Primary Intent nodes.
 * For Message Nodes, the Intent condition criterion provides two options: _context.followupintent_ and _User Input_, as explained above
 * Primary Intent nodes do not allow connection conditions at all. You can only choose the next node to connect to. Intent nodes that follow other nodes within the Dialog Task do allow connection conditions, keeping in mind that the Intent criterion only allows you to set a follow up intent using the context object.
-* Agent Transfer nodes provide no options to connect to a subsequent node, so no conditions can apply. This node means the end of the VAs process and the intervention of a human agent, which sets the _End of Dialog_ after the Agent Transfer node.
+* Agent Transfer nodes provide no options to connect to a subsequent node, so no conditions can apply. This node means the end of the AI Agents process and the intervention of a human agent, which sets the _End of Dialog_ after the Agent Transfer node.

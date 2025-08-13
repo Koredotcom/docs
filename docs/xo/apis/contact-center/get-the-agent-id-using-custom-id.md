@@ -17,8 +17,8 @@ To get the agent ID associated with a Custom ID (extension number).
 
 | **Parameter** | **Description**                                                                 | **Type**          |
 |---------------|----------------------------------------------------------------------------------|-------------------|
-| host          | Environment URL, for example, https://platform.kore.ai                          | string, required  |
-| streamId      | BotId or StreamId. You can access it from the bot's General Settings page.      | string, required  |
+| host          | Environment URL, for example, `https://platform.kore.ai`                          | string, required  |
+| streamId      | botId or streamId. You can get it from the App Settings page. application ID.      | string, required  |
 | customId      | The Agent’s ID from the customer’s system                                       | string, required  |
 
 ## Sample Request

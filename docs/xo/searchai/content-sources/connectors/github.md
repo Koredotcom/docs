@@ -24,6 +24,10 @@ GitHub is a widely used platform for version control and collaboration, enabling
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td><strong>Content Filtering</strong>
    </td>
@@ -44,17 +48,29 @@ Search AI supports two types of authentication for communication with GitHub.
 
 ## Prerequisites - GitHub Configuration 
 
-To use **a Personal Access Token** for authentication, go to the [Developer Settings](https://github.com/settings/tokens) in your GitHub account and generate a token. 
+**Personal Access Token**
 
-To use **OAuth authentication**, [register a new OAuth application](https://github.com/settings/developers). Provide the basic details of the app. Use one of the following as the callback URLs, depending on your region or deployment. 
+1. In your GitHub account, go to [Developer Settings](https://github.com/settings/tokens){:target="_blank"} > Personal Access Tokens.
+1. Under Fine-grained tokens, click **Generate new token**.
+1. Provide the following details: 
+* **Resource owner**: Select your **organization**.
+* **Repository access**: Choose **All repositories**.
+1. Assign the required permissions and save.
+
+![alt_text](images/github/permissions.png "Permissions")
 
 
+**OAuth authentication**
 
+1. Register a new [OAuth application](https://github.com/settings/developers) in GitHub.
+1. Provide the basic details of the app.
+1. Use one of the following as the callback URLs, depending on your region or deployment:
 * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
 * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
 * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
 
-This will generate client credentials. [Use the device flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) and client credentials to manually create an access token using an API client tool, such as Postman. 
+1. Generates a client ID and Client Secret.
+1. Use the [device flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) and client credentials to manually create an access token using an API client tool, such as Postman. 
 
 
 ## GitHub Connector Configuration in Search AI
@@ -66,16 +82,16 @@ Configure the GitHub connector in Search AI.  Provide the following fields for a
     1. Personal Access Token (APIKey): If this authentication type is selected, provide the generated token. 
     2. OAuth 2.0: If this auth type is selected, provide the client credentials generated above. 
 
-Click **Connect** to authenticate the credentials. 
+1. Click **Connect** to authenticate. 
 
 
 ## Content Ingestion
 
-Go to the Manage Content page and select the **Object **type that you want to ingest. Search AI supports ingesting** Issues, Pull Requests, and Readme files** from GitHub repositories. 
+1. In Manage Content, select the **Object** type that you want to ingest: Issues, Pull Requests, and Readme files from GitHub repositories. 
 
-To select all the content from the selected object types, select **Ingest All Content** under **Ingestion Filter** and click **Sync**. 
+1. To ingest all content of the selected object types, choose **Ingest All Content** and click **Sync**.
 
-You can also ingest selective content by using the **Ingest Filtered Content** option. Click the Configure link to set Standard Filters on GitHub content. 
+1. To ingest selectively, choose **Ingest Filtered Content** and configure **Standard Filters**.
 
 **Standard Filter**
 

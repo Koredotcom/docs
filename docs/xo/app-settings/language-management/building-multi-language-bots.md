@@ -1,30 +1,30 @@
-# Getting Started with Multilingual Virtual Assistants
+# Getting Started with Multilingual AI Agent
 
-Consumers are more likely to engage with virtual assistants that communicate in their preferred language. The Kore.ai XO Platform supports enabling multiple languages within an assistant without having to rebuild the definitions. The platform supports over 100 languages and you can choose to enable any of these languages for your assistant. You can start building with one language and enable additional languages as and when you need them.  
+Consumers are more likely to engage with AI Agents that communicate in their preferred language. The Kore.ai XO Platform supports enabling multiple languages within an assistant without having to rebuild the definitions. The platform supports over 100 languages and you can choose to enable any of these languages for your assistant. You can start building with one language and enable additional languages as and when you need them.  
 
-This article takes you through the general context within which multilingual VAs work. It discusses language use in VA-user conversations and in NLU processes, language enablement options, as well as language detection and selection. 
+This article takes you through the general context within which multilingual AI Agents work. It discusses language use in AI Agent-user conversations and in NLU processes, language enablement options, as well as language detection and selection. 
 
 
-## Building a Multilingual VA
+## Building a Multilingual AI Agent
 
-If you want to build a Multilingual VA, there are a few points to keep in mind:
+If you want to build a Multilingual AI Agent, there are a few points to keep in mind:
 
-  1. There is a set of basic building blocks to a multilingual VA: the language in which it talks to users, the language in which you train it, and the process through which it detects and selects which languages to use. Please continue reading this article to learn more.
-  2. You can create a new Virtual Assistant or add new languages to an existing one. Read more about managing languages [here](../managing-languages-for-multilingual-vas/){:target="_blank"}.
-  3. Multilingual VAs have language-specific components and some features exhibit different behaviors compared to single language assistants. Read more about this [here](../multilingual-vas-components-feature-support/){:target="_blank"}.
+  1. There is a set of basic building blocks to a multilingual AI Agent: the language in which it talks to users, the language in which you train it, and the process through which it detects and selects which languages to use. Please continue reading this article to learn more.
+  2. You can create a new AI Agent or add new languages to an existing one. Read more about managing languages [here](../managing-languages-for-multilingual-vas/){:target="_blank"}.
+  3. Multilingual AI Agents have language-specific components and some features exhibit different behaviors compared to single language assistants. Read more about this [here](../multilingual-vas-components-feature-support/){:target="_blank"}.
   4. Translation can be automated using pre-built translation services from providers such as Microsoft or Google; or custom services, including any that you may build in-house. Read [here](../managing-translation-services/){:target="_blank"} to learn more.
 
 
-## The Conversation (VA) Language
+## The Conversation (AI Agent) Language
 
-Enabling a language requires you to train the model to understand the user’s input and present the responses in the user’s language. To achieve this, the platform allows you to choose a **Conversation (VA) Language** and **NLU Language** for every language that you would like to enable. In most cases, the Conversation Language can be the same as the NLU Language.
+Enabling a language requires you to train the model to understand the user’s input and present the responses in the user’s language. To achieve this, the platform allows you to choose a **Conversation (AI Agent) Language** and **NLU Language** for every language that you would like to enable. In most cases, the Conversation Language can be the same as the NLU Language.
 
 Conversation Language is the one that users use to interact with the assistant. You can choose any of the over 100 languages as the Conversation Language. You can define the responses (prompts, messages. etc.,) in the Conversation Language. 
 
 You can also use the automatic response translation feature when you or your team does not have expertise in the user’s language. You can write the responses in your preferred language and the platform will automatically translate them to the user’s language during the conversation. 
 
 
-### Supported VA Languages
+### Supported AI Agent Languages
 
 The following are the Conversation Languages supported by the Platform:
 
@@ -61,7 +61,7 @@ The following are the Conversation Languages supported by the Platform:
 </tr>
 <tr>
 <td>Albanian  – sq</td>
-<td>Italian – if</td>
+<td>Italian – it</td>
 <td>Samoan – sm</td>
 </tr>
 <tr>
@@ -436,7 +436,7 @@ Example
 
 ## Language Detection and Selection
 
-Multilingual virtual assistants auto-detect and switch language based on the user’s utterance. An exception to this rule is when the user is expected to enter a value against an entity and the user input satisfies that entity’s criteria.
+Multilingual AI Agent auto-detect and switch language based on the user’s utterance. An exception to this rule is when the user is expected to enter a value against an entity and the user input satisfies that entity’s criteria.
 
 
 ### Language Detection
@@ -452,21 +452,39 @@ The assistant continues to communicate with the user in the same language. If th
 
 If the assistant fails to detect a user’s language with high confidence, it requests the user to select a preferred language from the list of enabled options.
 
+**Tagalog language detection**
+
+Tagalog is widely spoken in the Philippines and uses the Latin alphabet, the same script as English. This shared alphabet makes it challenging for standard language detection methods to distinguish between Tagalog and English, particularly in multilingual environments. To improve accuracy, the platform employs a specialized Tagalog detection wrapper with a two-layer system specifically designed to identify Tagalog utterances.
+
+**Tagalog Detection Wrapper**
+When Tagalog is enabled as a supported bot language, all incoming utterances are first processed through the Tagalog detection wrapper.
+
+**Detection logic**
+
+The system uses a two-step approach:
+
+1. Primary Detection: The Langdetect module analyzes the input to determine if it's Tagalog. If Tagalog is detected, the utterance is processed accordingly.
+2. Secondary Verification: If the Langdetect module doesn't identify the utterance as Tagalog, the system performs dictionary-based verification:
+  * Short utterances (1–3 words): All words must exist in the Tagalog dictionary for the utterance to be classified as Tagalog.
+  * Longer utterances (4+ words): At least 60% of the words must match entries in the Tagalog dictionary.
+
+If fewer than 60% of words in longer texts match the Tagalog dictionary, the utterance is **not** classified as Tagalog, to avoid misclassification with English.
+
 
 ### Language Selection 
 
-1. The virtual assistant identifies user language from every utterance. In case a change is detected, it will get a confirmation from the user regarding the switch and will proceed as per the user response. These standard responses can be customized using the [getCurrentOptions utility](../../apis/automation/koreutil-libraries.md#koreutilgetcurrentoptions).
+1. The AI Agent identifies user language from every utterance. In case a change is detected, it will get a confirmation from the user regarding the switch and will proceed as per the user response. These standard responses can be customized using the [getCurrentOptions utility](../../apis/automation/koreutil-libraries.md#koreutilgetcurrentoptions).
   
     !!! Note
     
         The current conversation will be discarded in case the user wants to switch languages.
 
 2. Language selection settings – In addition, you may want to configure the language selection options. From the **Settings** , click **Configurations -> Language Management**. Under **Language Selection Logic** (scroll down for the option), for **language selection time frame**, set to one of the following:
-    1. **Lifetime**: The auto-detected language will be set as the user’s preferred language and used for all subsequent communications until the user interacts in another enabled language anytime later. If the user starts to talk in another enabled language, the virtual assistant changes to that language.
+    1. **Lifetime**: The auto-detected language will be set as the user’s preferred language and used for all subsequent communications until the user interacts in another enabled language anytime later. If the user starts to talk in another enabled language, the AI Agent changes to that language.
     2. **Per Session**: Detects the user’s language at the beginning of every session and responds accordingly.
-    3. **Every User Message**: Identifies the user’s language from every utterance. In case a change is detected, the VA will get a confirmation from the user regarding the switch and proceed as per the user response.  
+    3. **Every User Message**: Identifies the user’s language from every utterance. In case a change is detected, the AI Agent will get a confirmation from the user regarding the switch and proceed as per the user response.  
       
-      **Note:** The current conversation will be discarded in case the user wants to switch languages. This feature was introduced in release 7.2 and is the default setting for multilingual virtual assistants.  
+      **Note:** The current conversation will be discarded in case the user wants to switch languages. This feature was introduced in release 7.2 and is the default setting for multilingual AI Agent.  
 
     <img src="../images/get-started-img1-language-selection-logic.png" alt="Language selection logic" title="Language selection logic" style="border: 1px solid gray;zoom:50%;"/>  
      
