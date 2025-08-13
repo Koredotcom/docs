@@ -91,7 +91,7 @@ The XO11 Contact Center UI only supports English, Japanese, and Korean. Followin
 
 ### Role-Based Access Control
 
-* Upgrade privileges are restricted to bot owners only (for both SmartAssist Instance and child bots).
+* Upgrade privileges are restricted to App owners only (for both SmartAssist Instance and child bots).
 * After the upgrade, agents and supervisors receive notifications about upgrades.
 * Users can use existing credentials to access the XO v11.
 * Agents and supervisors will be redirected to XO v11 for content center operations.
