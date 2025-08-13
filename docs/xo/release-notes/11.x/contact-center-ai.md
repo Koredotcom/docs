@@ -8,6 +8,12 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
+<font size="4">Configuration</font>
+
+**Support for Google and Custom Translation Engines**
+
+The system now supports Google Translate and Custom Translation Engines, alongside the existing Microsoft Translator. Administrators can configure their preferred translation providers under ‘Language Management’ → ‘Translation Engine Configuration’, utilizing secure access keys. The selected translation engine is uniformly applied across all translated views, including the Agent Console, Dashboard, Monitor, and ACW Summary. Access to manage these engine settings is restricted to authorized users. This support offers increased flexibility, improved compatibility, and enterprise-level control over multilingual interactions. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/translation-configurations.md) 
+
 <font size="4">Campaigns</font>
 
 **Cooldown Time for Proactive Web Campaigns**
