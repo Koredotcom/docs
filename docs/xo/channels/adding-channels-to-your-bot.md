@@ -18,7 +18,7 @@ To enable one or more channels for your VA, follow the below steps:
 
     !!! Note
 
-        After adding the channel, the bot needs to be published for approval and the Bot Admin needs to approve the bot (with new channels). The new channel is not available to users until the Bot Admin explicitly approves that channel for your assistant.
+        After adding the channel, the app needs to be published for approval and the Admin needs to approve the app (with new channels). The new channel is not available to users until the Admin explicitly approves that channel for your assistant.
 
 ## Editing, Testing,  Disabling or Deleting Channels
 
@@ -41,7 +41,7 @@ To **test**, **disable or delete the channel**, go to **Flows & Channels** > **C
 
 Below is a list of all channels you can connect to via the Kore.ai XO Platform:
 
-Click the icon of the channel you want to add, and then configure the channel to work with your Kore.ai bot. The page with Instructions and Configuration settings will slide out.
+Click the icon of the channel you want to add, and then configure the channel to work with your Kore.ai assistant. The page with Instructions and Configuration settings will slide out.
 
 ### Enterprise Channels
 
