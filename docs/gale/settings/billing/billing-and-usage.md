@@ -32,7 +32,7 @@ The Usage page displays the following tabs for billing and usage:
 
 !!! note
 
-    Use the Calendar bar on all the tabs to search by the number of days using predefined date filters—24 hours, 7 days, 30 days, or 90 days. You can also use the Custom option to specify your preferred date range.
+    Use the Calendar bar on all the tabs to search by the number of days using pre-defined date filters—24 hours, 7 days, 30 days, or 90 days. You can also use the Custom option to specify your preferred date range.
 
 
 # Usage Overview

@@ -113,8 +113,64 @@ Refer to [this](overview.md) for a detailed description.
 
 ### Response
 
-Returns the details of the newly created session, which are essential for managing and continuing the conversation.
+Returns details of the newly created session, which are required for managing and continuing conversations. The response also includes **document upload configuration** and **allowed file types**, enabling clients to validate uploads in advance and prevent unnecessary failures. The fields in the response include:
 
+
+
+* **session** – Metadata about the created session.
+    * **sessionId** - A unique identifier for the session.
+    * **Status** - Indicates the current state of the session. Possible values: `idle`, `busy`, `error`.
+    * **sessionReference** - A unique reference string associated with the session for easier cross-request tracking.
+    * **userReference** - Unique reference string for the user associated with the session.
+    * **userId** - Internal system-generated identifier for the user.
+    * **createdAt** - Timestamp indicating when the session was created.
+* **allowedMimeTypes** – List of supported file formats for uploads.
+* **fileUploadConfig** – File Upload rules configured for the app. These rules apply to both types of documents - uploaded for context extraction and for Metadata generation. The following fields are available in this field. 
+    * **maxFileCount** - Max number of files that can be uploaded. 
+    * **maxFileSize** - Max size of each file that can be uploaded. The value is in MBs.
+    * **maxTokens** - Specifies the maximum allowed combined size of all uploaded files, measured in tokens. If the total token size exceeds this limit, only files that comply with the threshold are uploaded; files exceeding it will be rejected.
+
+
+#### Sample Response 
+```json
+{
+  "session": {
+    "sessionId": "s-307d13e4-669c-42c0-8fec-a7653cb97627",
+    "sessionReference": "s-123",
+    "userReference": "s-123",
+    "status": "idle",
+    "userId": "u-0cc7b4f5-1b49-5c4c-958f-7d3a3263af2c",
+    "createdAt": "2025-06-27T11:48:58.892Z"
+  },
+   "allowedMimeTypes": [
+    "pdf",
+    "docx",
+    "doc",
+    "txt",
+    "json",
+    "csv",
+    "htm",
+    "mle",
+    "ppt",
+    "xls",
+    "gif",
+    "png",
+    "jpg",
+    "jpeg",
+    "html",
+    "rtf",
+    "bmp",
+    "xlsx",
+    "pptx"
+  ],
+  "fileUploadConfig": {
+    "enabled": true,
+    "maxFileCount": 2,
+    "maxFileSize": 25,
+    "maxTokens": 790000
+  }
+}
+```
 
 #### Sample Response 
 
@@ -131,56 +187,6 @@ Returns the details of the newly created session, which are essential for managi
   }
 }
 ```
-
-
-
-#### Response Parameters
-
-
-<table>
-  <tr>
-   <td><strong>Field</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>sessionId</strong>
-   </td>
-   <td>A unique identifier for the session. 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>status</strong>
-   </td>
-   <td>Indicates the current state of the session. Possible values: <code>idle</code>, <code>busy</code>, <code>error</code>.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>sessionReference</strong>
-   </td>
-   <td>A unique reference string associated with the session for easier cross-request tracking.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>userReference</strong>
-   </td>
-   <td>Unique reference string for the user associated with the session.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>userId</strong>
-   </td>
-   <td>Internal system-generated identifier for the user.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>createdAt</strong>
-   </td>
-   <td>Timestamp indicating when the session was created.
-   </td>
-  </tr>
-</table>
 
 **Note:** When a new session is initiated, and the application requires permissions for OAuth authorization from the user, the API response includes a special event of type `IDP_Redirect`.
 
@@ -214,6 +220,13 @@ This event provides a URL that the user must visit to complete the authorization
     "runId": "r-41ad20e0-6295-4f0e-9b04-e51875356107",
     "appId": "aa-c31cccce-d0bf-4db5-a177-7ff45941c2d8",
     "attachments": []
+  },
+  "allowedMimeTypes": [ "pdf","docx","doc","txt","json","csv","htm","mle","ppt","xls","gif","png","jpg","jpeg","html","rtf","bmp","xlsx","pptx"],
+  "fileUploadConfig": {
+    "enabled": true,
+    "maxFileCount": 2,
+    "maxFileSize": 10,
+    "maxTokens": 100000
   }
 }
 ```
@@ -590,7 +603,7 @@ Note: Either *sessionId* or *sessionReference* must be provided to identify the 
 
 ## Terminate Session
 
-Terminates a given session.
+Terminates a given session. It also deletes the associated session-specific memory data. 
 
 
 <table>

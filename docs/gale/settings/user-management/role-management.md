@@ -997,7 +997,7 @@ The **Role Management** dashboard displays the following:
 1. The summary of counts for the following:
 
     * **Total Roles**: The total count of system and custom roles in the system.
-    * **System Roles**: The count of the predefined, system-generated user roles.
+    * **System Roles**: The count of the pre-defined, system-generated user roles.
     * **Custom Roles**: The count of the user roles created and configured by the system admin.
     <img src="../images/summary-of-counts.png" alt="summary of counts" title="summary of counts" style="border: 1px solid gray; zoom:80%;">
 
@@ -1005,7 +1005,7 @@ The **Role Management** dashboard displays the following:
 
     * **Role**: The name of the system-generated role or the custom role you have created.
     * **Role Type**: The role type defines its scope, including **Account** or **Agent**.
-    * **Description**: This is the description of the role. System roles are predefined, while you must provide custom role descriptions. Hover over the description text to view the entire description.
+    * **Description**: This is the description of the role. System roles are pre-defined, while you must provide custom role descriptions. Hover over the description text to view the entire description.
     * **Created by**: For system-generated roles, _System_ is displayed. For custom roles, the name of the user who created the role is displayed, as shown in the image below. This user can be the account owner or another user in the admin’s account.
     <img src="../images/custom-and-system-roles.png" alt="custom and system roles" title="custom and system roles" style="border: 1px solid gray; zoom:80%;">
 
@@ -1029,7 +1029,7 @@ You can perform the following actions on the [system-generated roles](./role-man
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>System roles cannot be created, modified, or deleted since the role and its permissions are predefined in the system. However, they can be duplicated as <b>Custom Roles</b> and modified.</p>
+<p>System roles cannot be created, modified, or deleted since the role and its permissions are pre-defined in the system. However, they can be duplicated as <b>Custom Roles</b> and modified.</p>
 </div>
 
 #### View Role Information
