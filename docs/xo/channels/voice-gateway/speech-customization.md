@@ -75,7 +75,7 @@ TTS services also use a selected voice (for example, female or male) to respond.
 !!! Note
 
     * Apply the following parameters only when STT is set as Recognizer.
-    * Otherwise, the system uses default bot-level or Voice Gateway settings.
+    * Otherwise, the system uses default app-level or Voice Gateway settings.
     * These properties are applied at the session level.
 
 **Examples**
@@ -211,7 +211,7 @@ Both `continuousASRTimeoutInMS` and `AzureSegmentationSilenceTimeout` apply at t
 
 ### Barge-In Related Parameters
 
-Barge-In allows the Voice Gateway to detect and respond when a user interrupts the bot by speaking or entering DTMF digits while the bot is still responding. This enables quicker interactions by preventing users from waiting for the bot to finish speaking.
+Barge-In allows the Voice Gateway to detect and respond when a user interrupts the app by speaking or entering DTMF digits while the app is still responding. This enables quicker interactions by preventing users from waiting for the app to finish speaking.
 
 !!! Note
 
@@ -219,9 +219,9 @@ Barge-In allows the Voice Gateway to detect and respond when a user interrupts t
 
 | Parameter             | Type                     | Scope | Description                                                                                                                     | Example |
 | --------------------- | ------------------------ | ----- | ------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| `listenDuringPrompt`  | Boolean (`true`/`false`) | ALL   | If set to `false`, the bot will **not** listen to user speech until it finishes playing the response. Defaults to `true`.       | `true`  |
-| `bargeInMinWordCount` | Number                   | ALL   | When barge-in is enabled, this defines the **minimum number of words** required to interrupt the bot's speech. Defaults to `1`. | `1`     |
-| `bargeInOnDTMF`       | Boolean (`true`/`false`) | ALL   | If `true`, DTMF input during bot speech interrupts playback, and the system starts collecting speech input.                     | `true`  |
+| `listenDuringPrompt`  | Boolean (`true`/`false`) | ALL   | If set to `false`, the app will **not** listen to user speech until it finishes playing the response. Defaults to `true`.       | `true`  |
+| `bargeInMinWordCount` | Number                   | ALL   | When barge-in is enabled, this defines the **minimum number of words** required to interrupt the app's speech. Defaults to `1`. | `1`     |
+| `bargeInOnDTMF`       | Boolean (`true`/`false`) | ALL   | If `true`, DTMF input during app speech interrupts playback, and the system starts collecting speech input.                     | `true`  |
 
 ### Timeout Related Parameters
 
@@ -234,11 +234,11 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | Parameter                        | Type                  | Scope | Description                                                                                                                                       | Example                        |
 | -------------------------------- | --------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | `userNoInputTimeoutMS`           | Number (milliseconds) | ALL   | Maximum wait time to receive user input. If set to `0`, Voice Gateway waits indefinitely.                                                         | `userNoInputTimeoutMS = 20000` |
-| `dtmfCollectInterDigitTimeoutMS` | Number (milliseconds) | ALL   | Timeout between DTMF digit inputs. If the user doesn't enter another digit within this time, the gateway submits the collected digits to the bot. |                                |
-| `dtmfCollectSubmitDigit`         | Number                | ALL   | Defines a special DTMF digit that submits all collected digits immediately to the bot, bypassing timeout and max digit wait.                      |                                |
+| `dtmfCollectInterDigitTimeoutMS` | Number (milliseconds) | ALL   | Timeout between DTMF digit inputs. If the user doesn't enter another digit within this time, the gateway submits the collected digits to the app. |                                |
+| `dtmfCollectSubmitDigit`         | Number                | ALL   | Defines a special DTMF digit that submits all collected digits immediately to the app, bypassing timeout and max digit wait.                      |                                |
 | `dtmfCollectMaxDigits`           | Number                | ALL   | Maximum number of DTMF digits to collect. If the user enters more than this number, only the first `maxDigits` are accepted.                      | `dtmfCollectMaxDigits = 5`     |
 | `dtmfCollectminDigits`           | Number                | ALL   | Minimum number of DTMF digits expected. Defaults to `1`.                                                                                          |                                |
-| `dtmfCollectnumDigits`           | Number                | ALL   | Exact number of DTMF digits to collect. The bot waits until this number is reached before processing.                                             |                                |
+| `dtmfCollectnumDigits`           | Number                | ALL   | Exact number of DTMF digits to collect. The app waits until this number is reached before processing.                                             |                                |
 
 ## Common ASR Parameters
 
@@ -356,7 +356,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 
 ### TTS Options in Voice Gateway
 
-Voice Gateway now supports a `ttsOptions` parameter that allows bot developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, these options can be used to fine-tune aspects like voice settings, speed, and other properties.
+Voice Gateway now supports a `ttsOptions` parameter that allows app developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, these options can be used to fine-tune aspects like voice settings, speed, and other properties.
 
 !!! Note
 
@@ -430,19 +430,19 @@ Continuous ASR (Automatic Speech Recognition) is a feature that allows Speech-to
 | `continuousASRTimeoutInMS` | Number (milliseconds)            | STT – Google, Microsoft<br>TTS – Not Required | Duration of silence (in milliseconds) to wait after receiving a transcript from the STT vendor before returning the result. If another transcript is received before this timeout, transcripts are combined and recognition continues. The combined result is returned after silence exceeds the timeout. <br><br>**Example:** `5000` for 5 seconds |
 | `continuousASRDigits`      | Digit (for example, `*`, `%`, `&`, `#`) | STT – Google, Microsoft<br>TTS – Not Required | A DTMF key that terminates the gather operation and returns the collected results immediately.
 
-### Handling Bot Delay
+### Handling App Delay
 
-If the bot takes time to respond to a message, you can configure Voice Gateway to take action.
+If the app takes time to respond to a message, you can configure Voice Gateway to take action.
 
-#### Handle Bot Delay After User Input
+#### Handle App Delay After User Input
 
-The delay is only applied when Voice Gateway sends a response to the bot and is waiting for the bot's reply. This includes delays at the Entity Node, Confirmation Node, or Message Node with an "On Intent" (User-Bot delay).  
-<img src="../images/handle-bot-delay.png" alt="Handle Bot Delay" title="Handle Bot Delay" style="border: 1px solid gray; zoom:80%;">
+The delay is only applied when Voice Gateway sends a response to the app and is waiting for the app's reply. This includes delays at the Entity Node, Confirmation Node, or Message Node with an "On Intent" (User-App delay).  
+<img src="../images/handle-bot-delay.png" alt="Handle App Delay" title="Handle App Delay" style="border: 1px solid gray; zoom:80%;">
 
-If a delay occurs between two Message nodes, the bot developer must handle it manually by playing audio and stopping it after the delay.
+If a delay occurs between two Message nodes, the app developer must handle it manually by playing audio and stopping it after the delay.
 
 By setting timeout properties, the following actions can be configured:
-../images/handle-bot-delay.png
+../images/handle-app-delay.png
 * Play a textual prompt to the user
 * Play an audio file to the user
 * Disconnect the call
@@ -457,15 +457,15 @@ By setting timeout properties, the following actions can be configured:
 
 **Parameters description**
 
-The following table lists the bot parameters that are used to configure this feature:
+The following table lists the app parameters that are used to configure this feature:
 
 | **Parameter**               | **Type**       | **Description**                                                                                                                                                                                                      | **Required**           |
 | --------------------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| `botNoInputGiveUpTimeoutMS` | Number         | Defines the timeout (in milliseconds) for the bot response before the call is disconnected. If no response is received when the timeout expires, Voice Gateway disconnects the call.<br><br>**Default:** 30 seconds. | Yes<br>Default: 30 sec |
-| `botNoInputTimeoutMS`       | Number         | Defines the timeout (in milliseconds) before a prompt is played to the user. If no input is received from the bot, Voice Gateway plays a textual prompt (`botNoInputSpeech`) or an audio file (`botNoInputUrl`).     | Yes                    |
-| `botNoInputRetries`         | Number         | Specifies the number of times the bot will retry after a no-input timeout. For example, if set to `2`, and timeout is 1000 ms, the prompt will play two more times if no bot response is received.                   | Yes                    |
-| `botNoInputSpeech`          | String / Array | Defines the prompt to play when no input is received from the bot. Can include:<br>- **Plain text**<br>- **SSML**<br>- **Audio URL**<br><br>**Example:** `["https://audiourl", "This is second message"]`            | Yes                    |
-| `botNoInputUrl`             | String         | Specifies a URL from which an audio file is played to the user when the bot does not respond within the defined timeout.                                                                                             | Yes                    |
+| `botNoInputGiveUpTimeoutMS` | Number         | Defines the timeout (in milliseconds) for the app response before the call is disconnected. If no response is received when the timeout expires, Voice Gateway disconnects the call.<br><br>**Default:** 30 seconds. | Yes<br>Default: 30 sec |
+| `botNoInputTimeoutMS`       | Number         | Defines the timeout (in milliseconds) before a prompt is played to the user. If no input is received from the app, Voice Gateway plays a textual prompt (`botNoInputSpeech`) or an audio file (`botNoInputUrl`).     | Yes                    |
+| `botNoInputRetries`         | Number         | Specifies the number of times the app will retry after a no-input timeout. For example, if set to `2`, and timeout is 1000 ms, the prompt will play two more times if no app response is received.                   | Yes                    |
+| `botNoInputSpeech`          | String / Array | Defines the prompt to play when no input is received from the app. Can include:<br>- **Plain text**<br>- **SSML**<br>- **Audio URL**<br><br>**Example:** `["https://audiourl", "This is second message"]`            | Yes                    |
+| `botNoInputUrl`             | String         | Specifies a URL from which an audio file is played to the user when the app does not respond within the defined timeout.                                                                                             | Yes                    |
 
 Example:  
 <img src="../images/message-node-paremeters.png" alt="Example Configuration" title="Example Configuration" style="border: 1px solid gray; zoom:80%;">
@@ -478,10 +478,10 @@ Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](http
 
 #### Handle Delay Between Two Message Nodes
 
-Voice Gateway can only handle delays when it sends a response to the bot and waits for the bot's reply. If a delay occurs, Voice Gateway can handle it. If a delay occurs between a Message node or Script node where the user hasn’t spoken, Voice Gateway won’t be aware of the delay, and the bot developer must handle it manually.
+Voice Gateway can only handle delays when it sends a response to the app and waits for the app's reply. If a delay occurs, Voice Gateway can handle it. If a delay occurs between a Message node or Script node where the user hasn’t spoken, Voice Gateway won’t be aware of the delay, and the app developer must handle it manually.
 
 If a Service Node is placed between two Message nodes (delay observed between two Message nodes):
-This must be managed manually, as the gateway has already received a command to play a message and is not waiting for user input. The gateway will not initiate a delay timer and will wait for the next bot message.
+This must be managed manually, as the gateway has already received a command to play a message and is not waiting for user input. The gateway will not initiate a delay timer and will wait for the next app message.
 
 To handle this scenario:
 
@@ -498,14 +498,14 @@ To handle this scenario:
 
 ### Barge-In Scenarios
 
-The Barge-In feature controls KoreVG behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.
+The Barge-In feature controls KoreVG behavior in scenarios where the user starts speaking or dials DTMF digits while the app is playing its response to the user. In other words, the user interrupts ("barges-in") the app.
 ../images/optional-message-parameter.png
 | **Parameter**                    | **Type**                                                                             | **Supporting STT/TTS**                           | **Description**                                                                                                               |
 | -------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | `listenDuringPrompt`             | Boolean (true or false)<br>Similar to Barge-In                                       | STT – Google and Microsoft<br>TTS – Not Required | If `false`, the bot does not listen for user speech until the response finishes playing.<br>**Default:** `true`.              |
 | `bargeInMinWordCount`            | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | If Barge-In is enabled, the bot only interrupts playback after the specified number of words are spoken.<br>**Default:** `1`. |
 | `bargeInOnDTMF`                  | Boolean                                                                              | STT – Google and Microsoft<br>TTS – Not Required | Allows users to press a key to interrupt the audio playback. After pressing a key, the user can speak their input.            |
-| `dtmfCollectInterDigitTimeoutMS` | Number (milliseconds)                                                                | STT – Google and Microsoft<br>TTS – Not Required | Time allowed between DTMF key presses before sending all digits to the bot.                                                   |
+| `dtmfCollectInterDigitTimeoutMS` | Number (milliseconds)                                                                | STT – Google and Microsoft<br>TTS – Not Required | Time allowed between DTMF key presses before sending all digits to the app.                                                   |
 | `dtmfCollectSubmitDigit`         | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | Special digit that submits all collected DTMF input immediately, bypassing the timeout or max digit limit.                    |
 | `dtmfCollectMaxDigits`           | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | Maximum number of DTMF digits to collect.<br>Example: If set to `5` and input is `1234567`, only `12345` is processed.        |
 | `dtmfCollectminDigits`           | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | Minimum number of DTMF digits to collect. <br>**Default:** `1`.                                                               |
@@ -514,28 +514,28 @@ The Barge-In feature controls KoreVG behavior in scenarios where the user starts
 
 ### Language Detection
 
-In this setup, developers do not need to use DTMF or other methods to switch the bot's language. Instead, the bot will automatically detect the language based on the user's utterance.
+In this setup, developers do not need to use DTMF or other methods to switch the app's language. Instead, the app will automatically detect the language based on the user's utterance.
 
 For example, if a user speaks in English, the conversation will continue in English. If the user switches to Spanish, the language will switch to Spanish. [Learn more](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-virtual-assistant).
 
 **Configuration Steps**:
 
-1. In Bot Builder (on the child bot), navigate to **Languages,** add a new language (for example, Spanish), and enable it.
+1. In App Builder (on the child app), navigate to **Languages,** add a new language (for example, Spanish), and enable it.
 2. Select English as the default language from the language dropdown menu.../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-virtual-assistant
 3. Create a new dialog titled "Language Detection" (or choose a suitable name).
 4. Inside this dialog, add an **entity node** to capture user intent input.
 5. Set the entity precedence to **'Intent over Entity'** in the advanced controls.
 6. Add the **AlternativeLanguage** call control parameter.
-7. Switching languages mid-conversation isn't supported; doing so can cause the bot to lose context. Language detection should happen at the beginning of the conversation (for example, in the welcome task), with the switch based on the user's first utterance.
+7. Switching languages mid-conversation isn't supported; doing so can cause the app to lose context. Language detection should happen at the beginning of the conversation (for example, in the welcome task), with the switch based on the user's first utterance.
 8. Opt for **'Intent over Entity'** to prioritize intent detection in the user's language.
 9. Create another dialog with a specific intent (for example, "book flight") and add relevant entities (for example, selecting source and destination).
 10. In the entity configuration, include the following call parameters:
     * **Name**: alternativeLanguages
     * **Value**: [] (Leave it empty if no further language switching is needed).
-11. Add utterances in the desired language and train the bot.
-12. Change the language to Spanish in the bot language dropdown.
+11. Add utterances in the desired language and train the app.
+12. Change the language to Spanish in the app language dropdown.
 13. Open the intent and update utterances and intent details in Spanish.
 14. Update entity details in Spanish as well.
-15. Publish the bot.
+15. Publish the app.
 
-These steps will ensure the bot can detect the user's language at the start and adjust the conversation flow accordingly.
+These steps will ensure the app can detect the user's language at the start and adjust the conversation flow accordingly.
