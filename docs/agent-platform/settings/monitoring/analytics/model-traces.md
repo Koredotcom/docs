@@ -408,13 +408,11 @@ Clicking on a run/request record on the UI opens the detailed **Traces** window 
 **Key Considerations**
 
 * Plain text is the default display format.
-<img src="../images/plaintext-editor-display.png" alt="plaintext editor" title="plaintext editor" style="border: 1px solid gray; zoom:75%;">
-
 * Enabling JSON mode allows you to access the JSON view of the input in the editor. This view provides the complete response/request payload sent to the model, including additional keys and details not visible in plain text format.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The model name shown in the code editor includes the deployment version for open-source and fine-tuned models, and the connection name for externally hosted models.</p></div>
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>The model name shown in the code editor includes the deployment version for open-source and fine-tuned models, and the connection name for externally hosted models.</p></div>
 
 * The text and JSON code cannot be modified in the editor.
 <img src="../images/json-editor-model-traces.png" alt="json editor" title="json editor" style="border: 1px solid gray; zoom:75%;">
@@ -426,7 +424,7 @@ Clicking on a run/request record on the UI opens the detailed **Traces** window 
 
 ### Metadata Panel
 
-Displays the following model run metadata to analyze the model’s performance.
+The following model run metadata helps analyze the model’s performance.
 
 **For Fine-tuned and Open-source Models**
 
