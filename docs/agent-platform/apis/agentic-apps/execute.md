@@ -452,8 +452,6 @@ If debug is enabled, the response has additional information as shown below.
 
 #### Asynchronous Execution
 
-
-
 * **Key configuration fields:**
     * “isAsync”: true
     * callbackUrl(optional): The endpoint to which the response must be sent. 
@@ -463,7 +461,7 @@ If debug is enabled, the response has additional information as shown below.
 * If `callbackUrl` is not provided, the API responds immediately with a `runID`, which can be used later to query the execution status and response.
 * If `callbackToken` is provided, it is included in the HTTP request headers to the `callbackURL` using the standard Bearer token authentication format:
 
-    `Authorization: Bearer &lt;callbackToken>` 
+    `Authorization: Bearer <callbackToken>` 
 
 
 

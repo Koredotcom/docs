@@ -4,11 +4,11 @@ A Knowledge Tool connects your Agentic application to a **Search AI application*
 
 ## Knowledge Page
 
-The **Knowledge** page provides a structured view of all knowledge bases, offering clear visibility into their count, linked agents, and accessibility from a unified section.
+To manage these tools, go to the **Knowledge** page of your Agentic App. This page offers a structured view of all knowledge bases connected to the app, providing clear visibility into their total count, associated agents, and easy access from one central location.
 
 Key highlights
 
-* Displays the **total number of knowledge bases** in the section header.
+* Displays the total number of knowledge bases in the section header.
 * Shows clear empty-state actions to guide first-time users: **Create from Scratch** and **Create from Existing Sources**.
 * Ensures knowledge bases are easily discoverable and manageable.
 
@@ -37,11 +37,11 @@ This is used when linking the agentic application to a pre-existing Search AI ap
 
 **Steps**
 
-* Provide the configuration details of the Knowledge Tool.
+* Provide the configuration details of the Knowledge Tool.![Knowledge](images/create-existing.png "Knowledge")
 
-  * **Knowledge Base Name** - Unique name used to identify the knowledge tool in the agentic application.
+  * **Knowledge Base Name** - Unique name used to identify the knowledge tool in the agentic application. 
   * **Description** - A brief summary of the type of content included. This helps the agents understand when to use this knowledge base to retrieve information.
-  * **Knowledge Sources** - Click **Link Knowledge Source** to view all the Search AI applications in the same workspace as that of the Agentic App which are accessible.
+  * **Knowledge Sources** - Click **Link Knowledge Source** to view all the Search AI applications in the same workspace as that of the Agentic App which are accessible. [Knowledge](images/link-sources.png "Knowledge")
 
 * Select the appropriate application and click Select. After selecting the application, set the following retrieval configurations.
   * **Use Knowledge Base to respond with** - This field indicates the type of content to be fetched from the Search AI application.
@@ -66,13 +66,13 @@ This is used when linking the agentic application to a pre-existing Search AI ap
 
     ```
 
-* Click **Create to complete the integration**.
+* Click **Create to complete the integration**. [Knowledge](images/ingest-content.png "Knowledge")
 
 You can update content or modify configurations at any time by navigating to the associated Search AI application.
 
 ### Create from Scratch
 
-On the **Knowledge** page, select **Create from Scratch** from the dropdown menu. Enter the following details.
+On the **Knowledge** page, select **Create from Scratch** from the dropdown menu and enter the following details. [Knowledge](images/create-scratch.png "Knowledge")
 
 * **Knowledge Base Name** - Unique name used to identify the knowledge tool in the agentic application.
 * **Description** - A brief summary of the type of content included. This helps the agents understand when to use this knowledge base to retrieve information.
@@ -90,7 +90,7 @@ Click **Create**. This action creates a new Search AI application within the sam
 
 ## Unlinking the Knowledge Base
 
-To remove the knowledge tool from the Agentic app, go to the Knowledge page and unlink the knowledge tool.
+To remove the knowledge tool from the Agentic app, go to the Knowledge page and delete the knowledge tool. This removes the integration from the given agentic app. The integration can still be found on the Search AI page and can be associated with any agentic app.
 
 ![Unlink App](images/unlink-knowlegebase.png "Unlink App")
 

@@ -144,7 +144,8 @@ nav:
       - Connect External Agents: ai-agents/external-agents.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
     - Knowledge:
-      - About Knowledge: ai-agents/knowledge/overview.md
+      - About Search AI: ai-agents/knowledge/overview.md
+      - About Knowledge Tools: ai-agents/knowledge/about-knowledge.md
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
