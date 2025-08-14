@@ -83,6 +83,6 @@ Selecting a specific deployment on the Deployment page opens its detail view, wh
 
 - **[Model Endpoint](../open-source-models/view-the-generated-api-endpoint.md)** – View or manage the live endpoint; re-deploy if needed.
 - **[API Keys](../open-source-models/generate-an-api-key-open-source.md)** – Generate and manage keys scoped to this deployment. API keys are isolated per deployment for secure access control.
-- **[Configuration](../open-source-models/configure-your-open-source-model.md)** – Edit the description and tags, or undeploy/delete the model.
+- **[Configurations](../open-source-models/configure-your-open-source-model.md)** – Edit the description and tags, or undeploy/delete the model.
 
-<img src="../open-source-models/images/open_source_deployment_detailed.png" alt="Open-source models table" title="Open-source models table" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/open_source_deployment_detailed.png" alt="Open-source models table" title="Open-source models table" style="border: 1px solid gray; zoom:80%;">

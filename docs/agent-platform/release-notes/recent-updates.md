@@ -31,8 +31,8 @@ Across the platform, users can select their desired connection or deployment dir
 
 Configuration options:
 
-* Commercial models: Create multiple connections for the same model, each with its own API key/security token, and track usage separately per connection.
-* Fine-tuned and open-source models: Run multiple deployments of the same model to improve inference control, manage costs, and optimize performance.
+* Commercial models: Create multiple connections for the same model, each with its own API key/security token, and track usage separately per connection. [Learn more :octicons-arrow-right-24:](../models/external-models/managing-external-models.md)
+* Fine-tuned and open-source models: Run multiple deployments of the same model to improve inference control, manage costs, and optimize performance. [Learn more :octicons-arrow-right-24:](../models/fine-tune-models/managing-fine-tuned-models.md)
 
 Key benefits:
 

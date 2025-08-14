@@ -239,9 +239,9 @@ nav:
           - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
       - Model Hub:
         - Open-Source Models:
-          - Managing Open-Source models: models/open-source-models/open-source-summary.md
-          - Import a model: models/open-source-models/importing-models.md
-          - Deploy a model:
+          - Managing Open-Source Models: models/open-source-models/open-source-summary.md
+          - Import a Model: models/open-source-models/importing-models.md
+          - Deploy a Model:
             - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
             - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
           - Model Optimization Techniques: models/open-source-models/model-optimization.md 
