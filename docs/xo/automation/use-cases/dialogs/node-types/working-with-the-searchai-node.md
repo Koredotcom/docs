@@ -1,6 +1,6 @@
 # Search AI Node
 
-The **Search AI Node** is used to incorporate search functionality within a dialog task. It leverages **Search AI** to perform searches on the ingested content, enabling the bot to return relevant and contextual responses. By allowing the configuration of meta filters and search rules, this node enhances the precision, relevance, and effectiveness of the conversational AI experience.
+The **Search AI Node** is used to incorporate search functionality within a dialog task. It leverages **Search AI** to perform searches on the ingested content, enabling the AI Agent to return relevant and contextual responses. By allowing the configuration of meta filters and search rules, this node enhances the precision, relevance, and effectiveness of the conversational AI experience.
 
 **Key Features of the Search AI Node:**
 
@@ -102,7 +102,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
 * **Close the Task and trigger Task Execution Failure Event**, or
 * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
 
-**Custom Tags**: Add tags to build custom profiles of your VA’s conversations. [Click here for more](https://docsinternal-kore.github.io/docs/xo/analytics/automation/custom-dashboard/custom-meta-tags).
+**Custom Tags**: Add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](https://docsinternal-kore.github.io/docs/xo/analytics/automation/custom-dashboard/custom-meta-tags).
 
 ### Connections Properties
 

@@ -1,26 +1,26 @@
 # Feedback Survey
 
-The Kore.ai XO Platform allows you to design and create feedback surveys for products, services, and overall experiences using out-of-the-box templates on the web and mobile channels. You can configure a Virtual Assistant to launch these surveys at a certain point in a conversation or at the end of a conversation (when the _end-of-conversation_ event is triggered). The **NPS**, **CSAT**, and **Like/Dislike** survey types are currently supported.
+The Platform allows you to design and create feedback surveys for products, services, and overall experiences using out-of-the-box templates on the web and mobile channels. You can configure an AI Agent to launch these surveys at a certain point in a conversation or at the end of a conversation (when the _end-of-conversation_ event is triggered). The **NPS**, **CSAT**, and **Like/Dislike** survey types are currently supported.
 
-!!! Key Feature Highlights
+** Key Feature Highlights**
 
-    1. The Feedback Module is use-case and channel-agnostic. But by default, it only shows text messages. You can always add additional channel-specific prompts to collect feedback from voice channels.
-    2. When a feedback survey is created on the platform, all messages are in text format. The text from the platform gets converted into a voice using the ASR and TTS engines.
-    3. You can leverage channel-specific configuration to modify the feedback prompts.
-    4. Feedback flows are fully customizable.
-    5. The Kore.ai XO Platform lets you configure feedback in two ways:
-        * Using the built-in flows to collect the feedback and the new service type called **feedback service** to submit the feedback to the bots platform.
-        * Collecting feedback from other sources that can be pushed to the platform as part of the conversation execution.
-    6. Feedback Surveys are created as dialog tasks with a series of entities, service calls, and message notes. You have complete control of modifying the out-of-the-box messages, adding additional messages to specific channels, such as voice channels, and capturing the feedback on voice.
-    7. You can use the automatic feedback template that the platform generates or build their flows and submit the feedback to the platform feedback service. Alternatively, it could be a hybrid approach where the feedback flow can emerge from or integrate with another flow.
-    8. Once a customer responds to a Feedback Survey, the event displays on the chat transcript slider of the Conversations History Dashboard.[ Learn more](../../analytics/overview/conversations-history){:target="_blank"}.
-    9. Additionally, you can filter and analyze Conversations (with feedback survey enabled) based on the Feedback Type, Response, and Score using prebuilt and custom filters.[ Learn more](../../analytics/overview/conversations-history/#prebuilt-filters-for-conversations-history){:target="_blank"}.
-    10. The feedback response from a customer is captured and pushed to the platform for further analysis in three ways:
-        * By creating a **Dialog** to capture feedback responses/scores and generate the required analytics to derive actionable insights on the **Feedback Analysis Dashboard**.[ Learn more](../../analytics/overview/feedback-dashboard){:target="_blank"}.
-        * By pushing feedback data to the platform using the Public API.[ Learn more](../../apis/automation/fetch-feedback-survey-scores/){:target="_blank"}.
-        * By pushing feedback data via the Botkit.[ Learn more](../../sdk/using-the-botkit-sdk/#feedback-survey){:target="_blank"}.
-    11. In addition to the primary survey question, you can configure a **Follow-up Question** for negative feedback to gather specific details and better understand any primary survey issues.
-    12. Additionally, you can set an Acknowledgement Message to customers after they complete the survey to show appreciation and let them know that it has been received.
+1. The Feedback Module is use-case and channel-agnostic. But by default, it only shows text messages. You can always add additional channel-specific prompts to collect feedback from voice channels.
+2. When a feedback survey is created on the platform, all messages are in text format. The text from the platform gets converted into a voice using the ASR and TTS engines.
+3. You can leverage channel-specific configuration to modify the feedback prompts.
+4. Feedback flows are fully customizable.
+5. The Platform lets you configure feedback in two ways:
+    * Using the built-in flows to collect the feedback and the new service type called **feedback service** to submit the feedback to the bots platform.
+    * Collecting feedback from other sources that can be pushed to the platform as part of the conversation execution.
+6. Feedback Surveys are created as dialog tasks with a series of entities, service calls, and message notes. You have complete control of modifying the out-of-the-box messages, adding additional messages to specific channels, such as voice channels, and capturing the feedback on voice.
+7. You can use the automatic feedback template that the platform generates or build their flows and submit the feedback to the platform feedback service. Alternatively, it could be a hybrid approach where the feedback flow can emerge from or integrate with another flow.
+8. Once a customer responds to a Feedback Survey, the event displays on the chat transcript slider of the Conversations History Dashboard.[ Learn more](../analytics/overview/conversations-history.md){:target="_blank"}.
+9. Additionally, you can filter and analyze Conversations (with feedback survey enabled) based on the Feedback Type, Response, and Score using prebuilt and custom filters.[ Learn more](../analytics/overview/conversations-history/#prebuilt-filters-for-conversations-history.md){:target="_blank"}.
+10. The feedback response from a customer is captured and pushed to the platform for further analysis in three ways:
+    * By creating a **Dialog** to capture feedback responses/scores and generate the required analytics to derive actionable insights on the **Feedback Analysis Dashboard**.[ Learn more](../analytics/overview/feedback-dashboard.md){:target="_blank"}.
+    * By pushing feedback data to the platform using the Public API.[ Learn more](../apis/automation/fetch-feedback-survey-scores.md){:target="_blank"}.
+    * By pushing feedback data via the Botkit.[ Learn more](../sdk/using-the-botkit-sdk.md#feedback-survey){:target="_blank"}.
+11. In addition to the primary survey question, you can configure a **Follow-up Question** for negative feedback to gather specific details and better understand any primary survey issues.
+12. Additionally, you can set an Acknowledgement Message to customers after they complete the survey to show appreciation and let them know that it has been received.
 
 
 ## Navigating to Feedback Survey
@@ -78,7 +78,7 @@ Known as the **_New Promoter Score_**, this is a standard customer experience me
 
 ### CSAT Score Categorization
 
-**CSAT** or **Customer SATisfaction** is a customer experience metric that measures or quantifies how happy the customer is with a Virtual Assistant interaction. The customer is asked to rate on a **five-point scale**, **1** meaning very satisfied and **5** meaning very unsatisfied, for a survey question like “_How satisfied were you with the conversation?_” The response score is mapped to the relevant category as shown below:
+**CSAT** or **Customer SATisfaction** is a customer experience metric that measures or quantifies how happy the customer is with an agent interaction. The customer is asked to rate on a **five-point scale**, **1** meaning very satisfied and **5** meaning very unsatisfied, for a survey question like “_How satisfied were you with the conversation?_” The response score is mapped to the relevant category as shown below:
 
 
 <table>

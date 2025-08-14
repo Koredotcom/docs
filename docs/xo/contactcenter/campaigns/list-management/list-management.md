@@ -3,7 +3,7 @@
 List Management section consist of essential contact details for the campaigns. There are two subsections:
 
 1. **Contact Lists**: Contact lists contain vital information about individuals, enabling targeted and effective communication. It is a collection of names, and contact numbers necessary for running a campaign.
-2. **DNC (Do Not Contact) Lists**: These are contacts who have opted for "Do Not Contact" (DNC) or have registered on the national DNC facility, indicating their preference not to receive unsolicited calls. The DNC Lists Contacts count comprises contacts from both uploaded CSV files and contacts added directly through the bot or agent.
+2. **DNC (Do Not Contact) Lists**: These are contacts who have opted for "Do Not Contact" (DNC) or have registered on the national DNC facility, indicating their preference not to receive unsolicited calls. The DNC Lists Contacts count comprises contacts from both uploaded CSV files and contacts added directly through the AI Agent or Human Agent.
 
 You can view the lists by going to **Contact Center** > **Campaigns** > **List Management**.  
 <img src="../images/contact-lists-main-page.png" alt="List Management Page" title="List Management Page" style="border: 1px solid gray; zoom:80%;">
@@ -179,7 +179,7 @@ Steps to retrieve the label names of all available fields in a contact record:
     2. You can also use the same function in the [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) to access the data.  
         <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:80%;">
 
-3. Publish the bot to apply the changes. [Learn more](../../../deploy/publishing-bot.md).
+3. Publish the App to apply the changes. [Learn more](../../../deploy/publishing-bot.md).
 4. Run the campaign associated with the contact list for which you need the field label names.  
     <img src="../images/run-campaign.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:80%;">
 

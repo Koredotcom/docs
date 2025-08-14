@@ -7,8 +7,8 @@ hide:
 Search AI provides out-of-the-box support for ingesting data from a range of third-party repositories. If you want to use a repository not listed in the table below, please [contact us](https://kore.ai/contact-us/).
 
 
-|**No.**| **Name**     | **Type of Repository** | **Supported Content**                                                          | **Content Filtering Support** | **RACL Support** |
-|---|-------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------------------|------------------|
+|**No.**| **Name**     | **Type of Repository** | **Supported Content**| **Content Filtering Support** | **RACL Support** |
+|--|-------------------|-----------|---------------------------------------------------------|-----------------------|------------------|
 |1.|[Aha!](./aha.md) <br /> Aha is a product management platform used to define strategy, prioritize features, and manage roadmaps.  | Cloud                  |  Ideas, Features                                                                                                                     | No                    | Yes               |
 |2.| [Airtable](./airtable.md) <br /> Airtable is a platform that combines the functionality of spreadsheets and databases and uses them organizing, tracking, and collaborating on projects and data. | Cloud                  | Spreadsheets, Databases                                                                                                                    | No                    | Yes               |
 |3.| [Amazon S3](./amazons3.md) <br /> Amazon S3 is a cloud storage service, used to store, retrieve, and manage large amounts of data .      | Cloud                  |  Files in buckets in .pdf, .ppt, .txt, or .docx formats                                                                                                                     | No                    | No               |

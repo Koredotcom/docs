@@ -11,12 +11,11 @@ This section displays key information about the agent and the interaction:
 
 * Conversation Details, such as Start Time and End Time, Agent name, Queue, and Customer Phone number.
 * Audit Details, such as Auditor Name, Audit Date, Audit Score, and Kore Evaluation Score.
-* Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.  
-<img src="../ai-assist-manual-edit/images/ai-assist-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
+* Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.   
+<img src="../ai-assist-manual-edit/images/ai-assist-conv-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
 
 ## Violations
 
-This section highlights speech metric violations that occurred during the call. Examples include Cross Talk, Dead Air, and Speaking Rate Violation.
 This section highlights speech metric violations that occurred during the call. Examples include Cross Talk, Dead Air, and Speaking Rate Violation.
 
 Each violation is displayed with a timestamp, allowing you to navigate directly to the point in the recording where the violation occurred. It enables quick identification and review of problematic areas in the interaction.  
@@ -39,7 +38,6 @@ If no playbook or task-type metrics are configured for the interaction and evalu
 ## Playbook
 
 This section of the interaction audit screen enables evaluators to assess adherence to configured playbook metrics. It displays:
-This section of the interaction audit screen enables evaluators to assess adherence to configured playbook metrics. It displays:
 
 * Each playbook metric with entire Playbook configuration
 * Configured minimum adherence for each metric
@@ -52,7 +50,6 @@ This comprehensive view is presented in a drop-down format, providing evaluators
 ## Comments
 
 This section displays all comments created by an auditor during the evaluation process. It provides a comprehensive list of auditor feedback for the interaction.
-This section displays all comments created by an auditor during the evaluation process. It provides a comprehensive list of auditor feedback for the interaction.
 
 Each comment entry is clickable. When a comment is selected, the system automatically highlights the corresponding question metric, providing context for the feedback.
 
@@ -61,12 +58,11 @@ Clicking a comment also navigates the user directly to the relevant part of the 
 
 ## Search
 
-This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.
+This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.  
 <img src="../ai-assist-manual-edit/images/ai-assist-search.png" alt="Search" title="Search" style="border: 1px solid gray; zoom:80%;">
 
 ## Audit
 
-This section (right panel) displays the By Question metrics configured for the evaluation form.
 This section (right panel) displays the By Question metrics configured for the evaluation form.
 
 Key features include:
@@ -133,7 +129,6 @@ This section allows you to tag the agent interaction with different bookmarks. B
 
 ## Submit
 
-By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks **Submit**, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
 By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks **Submit**, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
 
 For more information, see [Audit Allocation](../analyze/conversation-mining.md#audit-allocations).    

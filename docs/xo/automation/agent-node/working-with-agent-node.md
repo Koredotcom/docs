@@ -2,13 +2,13 @@
 
 
 
-The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to build AI-powered, sophisticated, and versatile virtual assistants capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
+The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to build AI-powered, sophisticated, and versatile AI Agents capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
 
 ## Benefits
 
 * **Entity Collection**: The Agent Node simplifies the process of gathering entities within a conversation, reducing the need for multiple entity nodes. This streamlined approach enhances the user experience by making virtual assistance interactions more natural and user-friendly.
 * **System Context, Business Rules, and Exit Scenarios**: The Agent Node incorporates system context, business rules, and predefined exit scenarios to ensure accurate and relevant responses. This contextual intelligence helps guide the conversation, handle various user inputs effectively, and maintain alignment with enterprise business rules.
-* **Multilingual Support**: The Agent Node supports both English and non-English virtual assistance languages, enabling platform users to create virtual assistants that cater to a diverse user base and facilitate multilingual interactions.
+* **Multilingual Support**: The Agent Node supports both English and non-English virtual assistance languages, enabling platform users to create AI Agents that cater to a diverse user base and facilitate multilingual interactions.
 * **Configuration Flexibility**: The Agent Node can be configured like any other node in the XO Platform, providing flexibility in its integration within dialog tasks. This allows platform users to seamlessly incorporate the Agent Node into their existing conversational flows.
 * **Tool Calling**: Tool calling is the ability to identify when external functions are needed, select appropriate ones, invoke them with correct parameters, process their outputs, and incorporate the results into responses.
 
@@ -61,7 +61,7 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 
 * **Model**: The selected model for which the settings are displayed.
 * **Prompt/Instructions or Context**: Add feature/use case-specific instructions or context to guide the model.
-* **Conversation History Length**: This setting allows you to specify the number of recent messages sent to the LLM as context. These messages include both user messages and virtual assistant (VA) messages. The default value is 10. This conversation history can be seen from the debug logs. 
+* **Conversation History Length**: This setting allows you to specify the number of recent messages sent to the LLM as context. These messages include both user messages and AI Agent messages. The default value is 10. This conversation history can be seen from the debug logs. 
 **Note**: Applicable only if you are using a custom prompt. 
 * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
 * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.
@@ -199,8 +199,8 @@ Configure the instance-specific fields for this node. These apply only for this 
 
 Define how user input validation occurs for this node:
 
-* **Mandatory**: This entity is required and must be provided before proceeding.
-* **Allowed Retries**: Configure the maximum number of times a user is prompted for a valid input. You can choose between 5-25 retries in 5-retries increments. The default value is 10 retries. 
+
+* **Number of Iterations Allowed**:  Set the maximum number of times a user is prompted for valid input, with a range of 1 to 25 iterations. The default is 10 iterations.
 * **Behavior on Exceeding Retries**: Define what happens when the user exceeds the allowed retries. You can choose to either _End the Dialog_ or _Transition to a Node_ – in which case you can select the node to transition to.
 
 
@@ -215,17 +215,17 @@ Configure advanced controls for this node instance as follows:
 
 **Intent Detection**
 
-This applies only to String and Description entities: Select one of these options to determine the course of action if the VA encounters an entity as a part of the user utterance:
+This applies only to String and Description entities: Select one of these options to determine the course of action if AI Agent encounters an entity as a part of the user utterance:
 
-* **Accept input as entity value and discard the detected intent**: The VA captures the user entry as a string or description and ignores the intent.
-* **Prefer user input as intent and proceed with Hold & Resume settings**: The user input is considered for intent detection, and the VA proceeds according to the Hold & Resume settings.
+* **Accept input as entity value and discard the detected intent**: The AI Agent captures the user entry as a string or description and ignores the intent.
+* **Prefer user input as intent and proceed with Hold & Resume settings**: The user input is considered for intent detection, and the AI Agent proceeds according to the Hold & Resume settings.
 * **Ask the user how to proceed**: Allow the user to specify if they meant intent or entity.
 
 **Interruptions Behavior**
 
 To define the interruption handling at this node. You can select from the below options:
 
-* **Use the task level ‘Interruptions Behavior’ setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
+* **Use the task level ‘Interruptions Behavior’ setting**: The AI Agent refers to the **Interruptions Behavior** settings set at the dialog task level.
 * **Customize for this node**: You can customize the **Interruptions Behavior** settings by selecting this option and configuring it. You can choose whether to allow interruptions or not, or to allow the end user to select the behavior. You can further customize Hold and Resume behavior. Read the [Interruption Handling and Context Switching](../../automation/intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article for more information.
 
 **Analytics-Containment Type:**   
@@ -237,9 +237,18 @@ Select one of the below options to determine how to treat user-abandoned convers
 
 **Custom Tags**
 
-Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"} for details.
+Add Custom Meta Tags to the conversation flow to profile AI Agent-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"} for details.
 
-<img src="../images/instancev2.png" alt="Instance Properties" title="Instance Properties" style="border: 1px solid gray; zoom:70%;">
+
+
+##### IVR Properties
+
+
+Configure Voice Properties to streamline the user experience on voice channels. You can define prompts, grammar, and other call behavior parameters for the node. The Agent Node does not require initial prompts or error prompts. For more information, refer to the [Voice Call Settings Field Reference](../use-cases/dialogs/node-types/voice-call-properties.md).
+
+!!! note
+
+    Agent Nodes with streaming LLM prompts support IVR Properties for voice channel only.
 
 
 ##### Connections Properties

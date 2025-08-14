@@ -17,8 +17,9 @@ This document provides detailed instructions on the integration process of the K
 * NICE CX administrators with access to a NICE CX account, privileges to set up the following configurations, and the ability to receive calls on the agent desktop.
 * [NICE CX Studio](https://help.nice-incontact.com/content/studio/studio.htm){:target="_blank"} installed on your windows device.
 * Agent Assist Hub enabled for your account. Contact your NICE CX representative. Note that  this requires an extra license cost.
-* Access to Kore AgentAssist application and familiarity with creating and configuring an AgentAssist Bot.
-* Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI.
+* Access to Kore Agent AI application and familiarity with creating and configuring a Kore AI Agent.
+* Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI. 
+* Ensure that Voice Interaction Streams are enabled via NICE. 
 
 ## Definitions
 
@@ -68,7 +69,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
    <td>BotId
    </td>
-   <td>A unique identifier assigned to a bot.
+   <td>A unique identifier assigned to an AI Agent.
    </td>
    <td>Channels > Chat section of the <a href="https://platform.kore.ai/">Agent AI</a> configuration portal.
    </td>
@@ -224,8 +225,8 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         * Bot Client Secret
         * Bot ID
         * Agent AI Widget URL
-        * Bot Language Code – “en” is set as the default language. Refer to [this doc](./../../agent-experience/supported-languages.md){:target="_blank"} to provide the language code for your bot’s language.
-    2. **Custom Data**: The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata is accessible in the UserContext of the bot. Refer to *“[Access Custom Data in Agent AI Bot](./../../agent-experience/access-custom-data-in-agent-ai.md)”*{:target="_blank"} for instructions on how to access customdata in the bot. 
+        * Bot Language Code – “en” is set as the default language. Refer to [this doc](./../../agent-experience/supported-languages.md){:target="_blank"} to provide the language code for your AI Agent’s language.
+    2. **Custom Data**: The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this custom data is accessible in the UserContext of the AI Agent. Refer to *“[Access Custom Data in Agent AI Bot](./../../agent-experience/access-custom-data-in-agent-ai.md)”*{:target="_blank"} for instructions on how to access custom data in the AI Agent. 
     
     Include your data in the customdata object (one key-value pair per line). For example: `customdata.agentName="Agent" `and `customdata.agentID="1234"`
 

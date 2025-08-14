@@ -191,7 +191,7 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
 
 1. **Answer Mode**: These settings let you define how conversations get answered on each channel (Digital – Chats, and Emails, as well as Voice).
 2. **Conversation Status Control**: These options let you define how conversation status behaves and the messages triggered by status changes.
-3. **Call Recording Control**: These settings let you configure call recording behavior. If enabled, you can further enable options to allow Agents and Virtual Assistants to Pause/Resume call recording.
+3. **Call Recording Control**: These settings let you configure call recording behavior. If enabled, you can further enable options to allow Human Agents and AI Agents to Pause/Resume call recording.
 4. **Transfers**: This section lets you define settings related to External Transfers, Skill Match, and Transfer Destination Control.
 5. **Skill Modification**: You can decide if the agents can modify skills attached to a conversation.
 6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
@@ -325,12 +325,12 @@ By default, the Allow Agent to Pause/Resume feature is disabled. However, admins
 
 ### Allow Virtual Assistant Dialogs to Pause/Resume
 
-By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. However, admins can enable it for virtual assistants (automation) handling voice interactions, allowing them to pause the recording when collecting [Personally Identifiable Information (PII)](../../configurations/advanced-settings/handling-sensitive-data.md).  
+By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting [Personally Identifiable Information (PII)](../../configurations/settings/handling-sensitive-data.md).  
 <img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" title="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
 Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
 
-Changes to the Call Recording Control settings are logged on the [Bots Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
+Changes to the Call Recording Control settings are logged on the [Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
 
 ## Transfers
 

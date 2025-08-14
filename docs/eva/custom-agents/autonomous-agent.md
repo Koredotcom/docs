@@ -16,7 +16,7 @@ Follow these steps to create a new Autonomous Agent:
     * The **Agent Creation Wizard** guides you through the setup process.
     <img src="../images/Advance_Agentic_App_1.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 3. Details and Purpose: Define your agent's name and purpose for optimal performance.
-    * **Icon**:Choose from the predefined icon library or upload a custom icon.
+    * **Icon**: Choose from the predefined icon library or upload a custom icon.
     * **Agent Name**: Enter a unique and meaningful name for your agent.
     * **Purpose of agent**: Define the intended functionality of the agent for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate agent.
 4. Configure Autonomous Agent: The configuration step establishes the technical foundation of your agent through API integration.  
@@ -35,18 +35,19 @@ Follow these steps to create a new Autonomous Agent:
   
      * **Content Type**: Enter a specific label that tells the API what kind of data you are sending.
 
-     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration:
+     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/deployment/app-deployment/#create-an-environment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from Agent Platform.
 
      1. Click **Curl Import** to open the import interface.
      2. Paste your CURL command into the text box.
      3. Click **Import** to extract API details.
      <img src="../images/Advance_Agentic_App_2.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-5. Preview: The **Preview** section displays sample queries to test the agent’s behavior.
+5. Appearance and Behavior: The **Appearance and Behavior** section displays sample queries to test the agent’s behavior.
      1. Click **+Add Query** to input additional test queries.
-     2. Once validated, click **Continue** to move to the final step.
+     2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer <a href="https://docs.kore.ai/ai-for-work/custom-agents/notify-api/" target="_blank">Notifications</a>.
+     3. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period.
+     4. Once validated, click **Publish** to move to the final step.
      <img src="../images/Advance_Agentic_App_3.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
-
 
 6. Publish: Publish your agent and define access permissions and enablement.
 
@@ -68,6 +69,10 @@ To import an existing Autonomous Agent:
 1. Click the **Import** **Agent** button located in the upper-right corner.
 2. Select the .ZIP file of the existing agent.
 3. Click **Import** to complete the process. The imported agent will appear on the Autonomous Agent page.
+
+!!!note
+
+    You cannot directly import agents exported from the Agent Platform. Only Autonomous Agents that were originally created and exported from AI for Work can be imported using this feature.
 
 ## Usage
 

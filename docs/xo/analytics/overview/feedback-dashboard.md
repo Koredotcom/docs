@@ -52,7 +52,7 @@ The filter options include the following:
     <img src="../images/dashboard-filters-3.png" alt="Dashboard Filters 3" title="Dashboard Filters 3" style="border: 1px solid gray; zoom:80%;">
 
 
-2. **Survey Name**: This is the feedback survey name provided when creating a feedback survey under **Build** > **Configurations** > **Feedback Survey**. You can either select **All Surveys** to capture the Feedback Survey analytics data of all the surveys configured for the virtual assistant or a specific survey name from the dropdown list.
+2. **Survey Name**: This is the feedback survey name provided when creating a feedback survey under **Build** > **Configurations** > **Feedback Survey**. You can either select **All Surveys** to capture the Feedback Survey analytics data of all the surveys configured for the AI Agents or a specific survey name from the dropdown list.
 
 
     <img src="../images/dashboard-filters-4.png" alt="Dashboard Filters 4" title="Dashboard Filters 4" style="border: 1px solid gray; zoom:80%;">
@@ -178,7 +178,7 @@ For the **Like/Dislike** survey type, the line graph displays the **respondentsâ
 
 ### User-level Feedback
 
-This information grid represents the metadata for the _Total number of conversations_ for every unique conversation path between the virtual assistant and the user. This grid summarizes and lists the data of all the feedback surveys mapped to the selected **survey type** filter. The fields for which data is displayed are:
+This information grid represents the metadata for the _Total number of conversations_ for every unique conversation path between the AI Agents and the user. This grid summarizes and lists the data of all the feedback surveys mapped to the selected **survey type** filter. The fields for which data is displayed are:
 
 
 <table>
@@ -215,7 +215,7 @@ This information grid represents the metadata for the _Total number of conversat
   <tr>
    <td><strong>Channel</strong>
    </td>
-   <td>The conversation channel of the user and virtual assistant interaction. This can be a web/mobile client or a messaging platform.
+   <td>The conversation channel of the user and AI Agents interaction. This can be a web/mobile client or a messaging platform.
    </td>
   </tr>
   <tr>

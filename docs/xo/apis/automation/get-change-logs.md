@@ -36,7 +36,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Logs History
+<li>App Builder: Logs History
 
 <li>Admin Console: Logs > Bot Audit Logs
 </li>

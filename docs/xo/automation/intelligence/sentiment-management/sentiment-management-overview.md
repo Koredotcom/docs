@@ -1,6 +1,6 @@
 # Sentiment Management
 
-Emotion tones are critical indicators in understanding the attitudes and opinions of users interacting with Virtual Assistants. **Sentiment Events** allow the developer to define and trigger events based on the user’s emotion or sentiment.
+Emotion tones are critical indicators in understanding the attitudes and opinions of users interacting with AI Agent. **Sentiment Events** allow the developer to define and trigger events based on the user’s emotion or sentiment.
 
 !!!Note
 
@@ -38,7 +38,7 @@ The following parameters can be configured for a sentiment event:
 
 Emotion tones are continuously updated whenever a message is received from the users and as such the sentiment events are also continuously evaluated. When an event’s criteria are met, the Platform triggers the defined behavior.
 
-* If the configuration used is to **Initiate a task**, the current task is discarded and the VA switches to the new task according to the event configuration.
+* If the configuration used is to **Initiate a task**, the current task is discarded and the AI Agent switches to the new task according to the event configuration.
     * Any other implicitly paused tasks will also be discarded.
     * Tasks that are kept on hold using Hold and Resume settings are resumed as per Hold and Resume configuration.
     * If the dialog selected to trigger for the sentiment event is not available for any reason, a standard response is displayed. Refer to the standard response with the title _Dialog task required for conversation is not available_ for more information. [Learn more](../../../automation/intelligence/conversation-management/standard-responses.md).

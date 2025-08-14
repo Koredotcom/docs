@@ -36,7 +36,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Utterances Import
+<li>App Builder: Utterances Import
 
 <li>Admin Console: Test and Train > Utterances Import
 </li>

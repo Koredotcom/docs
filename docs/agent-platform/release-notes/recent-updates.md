@@ -21,7 +21,6 @@ Key enhancements:
 * Document Upload Configuration in Create Session API: The Create Session API now returns upload configuration details, including the maximum file size, the allowed number of files, supported formats, and other relevant constraints. These details enable proactive validation, reducing failed uploads and improving user experience. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/sessions.md)
 
 
-
 <font size="4">AI Engineering Tools</font>
 
 **Single Model, Multiple Deployments**
@@ -49,9 +48,11 @@ This update introduces support for a new set of AI models in the Agent Platform,
     * Anthropic - claude-sonnet-4-20250514, claude-opus-4-20250514
     * Google - gemini-2.5-flash
     * Azure OpenAI - GPT-4.1, GPT-4.1-Nano, GPT-4.1-Mini, O1, O1-Mini, O3-Mini
+
 * Text to Image Node (External models)
-    * OpenAI - dall-e-2 and dall-e-3.
-* Open-source Model:
+    * OpenAI - dall-e-2 and dall-e-3
+
+* Open-source Model
     * Xiaomi Mimo-7B--VL-RL
 
 [Learn more :octicons-arrow-right-24:](../models/supported-models.md)

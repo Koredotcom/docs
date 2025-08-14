@@ -1,19 +1,19 @@
 # Data as Service
 
-Kore.ai’s Data offering lets you define Data Tables, Table Views, and manipulate them from your Virtual Assistant. You can also view the definition of the data table or table view assigned to the VA and provide correct data mappings based on the data types for the table columns.
+Kore.ai’s Data offering lets you define Data Tables, Table Views, and manipulate them from your Virtual Assistant. You can also view the definition of the data table or table view assigned to the AI Agent and provide correct data mappings based on the data types for the table columns.
 
-This section deals with the manipulation aspect using the [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node/){:target="_blank"} within a Dialog Task of your Virtual Assistant. For details on the data definition, [refer here](../data-services/){:target="_blank"}.
+This section deals with the manipulation aspect using the [Service Node](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md){:target="_blank"} within a Dialog Task of your Virtual Assistant. For details on the data definition, [refer here](data-services.md){:target="_blank"}.
 
 
 ## Service Call – Table
 
-From the assigned bots for any given data table/table view, you can query and manipulate the data using the Service Node in the Dialog Tasks.
+From the assigned Apps for any given data table/table view, you can query and manipulate the data using the Service Node in the Dialog Tasks.
 
 **Steps to configure the Service node:**
 
-1. Open the Bot and the Dialog Task where you want to access the data.
+1. Open the App and the Dialog Task where you want to access the data.
 2. Add a Service Node at the appropriate location in the process flow.
-3. [Click here](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node/){:target="_blank"} for details on Service Node. Here we will be listing the configurations for Data Table integration.
+3. [Click here](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md){:target="_blank"} for details on Service Node. Here we will be listing the configurations for Data Table integration.
 4. Component Properties configuration
     1. **General Settings** section
         
@@ -25,7 +25,7 @@ From the assigned bots for any given data table/table view, you can query and ma
 
     2. **Request Definition** – define the service request by clicking the _Define Request_ link. In the slide-out page configure the following:
         
-        * **Choose a Data Table** – You can choose from the list, these are the data tables assigned to this bot.
+        * **Choose a Data Table** – You can choose from the list, these are the data tables assigned to this app.
         * **Actions** – Select the action you would like to perform:
             * _Add Data_ – to add data ([see below for details](#add-data));
             * _Get Data_ – to fetch data from the table ([see below for details](#get-data));
@@ -36,7 +36,7 @@ From the assigned bots for any given data table/table view, you can query and ma
 
         * You can **Test** the service request. Remember testing with context reference will fail as they will be evaluated at run time and the data will not be available till then.
         * **Save** the service request definition
-        * You can set the Instance and Connections properties as per your bot requirements.
+        * You can set the Instance and Connections properties as per your app requirements.
         * The data returned from the data table can be accessed from the context object and used in your task as per your need.
 
 
@@ -209,13 +209,13 @@ The response from this service request would be:
 
 ## Service Call – View
 
-From the assigned bots for any given data table/table view, you can query and manipulate the data using the Service Node in the Dialog Tasks.
+From the assigned apps for any given data table/table view, you can query and manipulate the data using the Service Node in the Dialog Tasks.
 
 **Steps to configure the Service node:**
 
-1. Open the Bot and the Dialog Task where you want to access the data.
+1. Open the App and the Dialog Task where you want to access the data.
 2. Add a Service Node at the appropriate location in the process flow.
-3. [Click here](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node/){:target="_blank"} for details on Service Node. Here we will be listing the configurations for Data Table integration.
+3. [Click here](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md){:target="_blank"} for details on Service Node. Here we will be listing the configurations for Data Table integration.
 4. Component Properties configuration
     1. **General Settings** section
         * **Name** – enter a name for the node;
@@ -225,7 +225,7 @@ From the assigned bots for any given data table/table view, you can query and ma
 
     2. **Request Definition** – define the service request by clicking the _Define Request_ link.
     3. In the slide-out page configure the following:
-        * **Choose a Table View** – You can choose from the list, these are the table views assigned to this bot.
+        * **Choose a Table View** – You can choose from the list, these are the table views assigned to this App.
         * Filter the results – you can further define _filter criteria_ using
             * the column names,
             * an operator and
@@ -238,7 +238,7 @@ From the assigned bots for any given data table/table view, you can query and ma
     6. You can **Test** the service request. Remember testing with context reference will fail as they will be evaluated at run time and the data will not be available till then.
     7. **Save** the service request definition
 
-5. You can set the Instance and Connections properties as per your bot requirements.
+5. You can set the Instance and Connections properties as per your app requirements.
 6. The data returned from the data table can be accessed from the context object and used in your task as per your need, using: `{{context.&lt;service_node_name>.response.body.queryResult[&lt;index>].&lt;column_name>}}`
 
 The response from this service call would be:  

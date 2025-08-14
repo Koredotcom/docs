@@ -19,6 +19,25 @@ Start flows represent the most complex flow type, providing access to all [node 
 
     All fields of the default Start Flows can be edited except Channels. [Learn more](#edit-a-start-flow).
 
+#### Default Welcome Flows
+
+The default welcome flows are created automatically when you create a new account. Default Flows support both Chat and Voice functionalities. These flows act as fallback entry points to initiate and test the AI Agent experience when no specific intent or task is triggered. You can edit these flows to customize the experience for your users.
+
+**Chat – Welcome Flow**  
+The Welcome Chat Flow allows you to simulate user interactions on any configured chat channel. Use the RTM (Real-Time Messaging) channel to test chat scenarios. This flow ensures that the AI Agent responds appropriately when users initiate conversations without clearly stating their intent.  
+<img src="../images/welcome-chat-flow.gif" alt="Welcome Chat Flow" title="Welcome Chat Flow" style="border: 1px solid gray; zoom:70%;">
+
+**Voice – Welcome Flow**  
+The Welcome Voice Flow provides a similar capability for voice-based experiences. You can test voice interactions using the SBC (Session Border Controller) simulation channel. This flow handles default voice call routing when no predefined intent is matched.  
+<img src="../images/welcome-call-flow.gif" alt="Welcome Voice Flow" title="Welcome Voice Flow" style="border: 1px solid gray; zoom:70%;">
+
+**Use Cases**  
+
+* Validate fallback behavior for both chat and voice channels.  
+* Ensure the AI Agent responds effectively during first-time interactions or when there are no defined intents.  
+* Simulate and verify channel-specific configurations using test channels to ensure accurate results.
+Welcome Flows help developers confirm that AI Agent behavior remains consistent and user-friendly from the initial point of contact across all channels.
+
 ### The Exit Flows
 
 This flow type runs when a call gets disconnected and is useful in gathering customer data during post-call analytics, clean-up, or updates in other systems after a call ends. Conversational context can be passed from the main experience flow into the _Exit Flows_.
@@ -65,6 +84,10 @@ Steps to create a Start Flow:
 
     * You can now use this number for your Start Flow.
 
+!!! Note
+
+    This feature is only available when using Kore's Twilio account. It's not supported for SIP trunk setups.
+
 4. Select an **ASR Speech Recognition Engine**. You can choose from the following:
     * Microsoft Azure Speech Services,
     * Google Cloud Speech-to-Text,
@@ -110,11 +133,16 @@ To handle situations where there are delays in backend operations or unexpected 
 
 ###### Interaction Type
 
+You can play audio or background music (BGM) to users on hold when an agent initiates a tool call or checks the knowledge base. The Realtime TTS model supports audio playback only through an input URL and does not support speech input.
+
 The following options are available:
 
-* **Bot No Input Speech**: Enter the text that the bot will say when triggered by the no input timeout.
+* **Bot No Input Speech**: Enter the text that the bot will say when triggered by the no input timeout.  
+<img src="../images/interaction-types.png" alt="Interaction Type" title="Interaction Type" style="border: 1px solid gray; zoom:80%;">
+
 * **Bot No Input URL**: Enter a valid audio URL. The bot will play the audio file from this URL when triggered by the no-input timeout.  
-    <img src="../images/interaction-types.png" alt="Interaction Type" title="Interaction Type" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/background-music.png" alt="Interaction Type" title="Interaction Type" style="border: 1px solid gray; zoom:80%;">
+    
 
 ###### Bot No Input Retries
 

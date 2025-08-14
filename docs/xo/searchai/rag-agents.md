@@ -9,11 +9,11 @@ The current search architecture, optimized for unstructured data, shows limitati
 
 Agentic RAG leverages LLMs to add an intelligent layer that can dynamically adapt retrieval strategies based on query intent, moving away from the current one-size-fits-all approach. The agents in this RAG architecture analyze query intent to determine optimal retrieval parameters and filters, enabling dynamic adaptation of search strategies based on query context. 
 
-## **Agents in Agentic RAG**
+## Agents in Agentic RAG
 
 Currently, the following four agents are introduced in Search AI. 
 
-### 1. Query Rephrase Agent
+### Query Rephrase Agent
 
 The **Query Rephrasing Agent** enhances and clarifies user queries by understanding the context and user intent. Using previous conversations, it provides improved versions of user input, resulting in more precise and actionable queries.	
 
@@ -26,21 +26,21 @@ The **Query Rephrasing Agent** enhances and clarifies user queries by understand
 !!!note
     This agent is currently available only for the advanced Search API. Please refer to the [API documentation](../apis/searchai/advance-search.md) to learn more about its usage.
 
-### 2. Result Type Classification
+### Result Type Classification
 
 The **Result Type Classification Agent** interprets queries to determine whether the user seeks a specific answer or a list of search results. This ensures that the application responds with the most appropriate result type.
 
 For instance, 
 
-* **Query:** *"Give me a list of tickets assigned to John." \
+* **Query:** "Give me a list of tickets assigned to John." 
 * **Output:** *search*
-* **Query:** *"Give me details on the custom embeddings story." \
+* **Query:** "Give me details on the custom embeddings story." 
 * **Output:** *answers*
 
 !!!note
     This agent is applicable solely when search results are enabled. Currently, search results are accessible only through the APIs. Please enable this agent only when utilizing search results via the API.
 
-### 3. Query Transformation Agent 
+### Query Transformation Agent 
 
 The **Query Transformation Agent** identifies key terms within a query, removing noise and prioritizing relevant documents. Extracting meaningful phrases and keywords ensures that results are aligned with the user's intent.
 
@@ -52,7 +52,7 @@ The **Query Transformation Agent** identifies key terms within a query, removing
 * **Refined Query:** *"Kore.ai work-from-home policy details."*
 * **Boosting Applied:** Documents containing these terms in the **title or content** are ranked higher.
 
-### 4. Metadata Extractor Agent
+### Metadata Extractor Agent
 
 The Metadata Extractor **Agent** extracts relevant sources and fields from a query, maps them to structured data, and applies filters or boosts for accurate retrieval. This agent ensures the system applies appropriate filters to refine the results.
 

@@ -2,6 +2,92 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.16.1 August 11, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">Agent Node</font>
+
+
+**Enhanced Agent Node Configuration for Streamlined Input Handling**
+
+Agent Node configuration is streamlined by replacing ‘retries’ with ‘number of iterations’ in Instance Properties and removing the Initial and Error Prompts sections from the IVR Properties, as the models will dynamically manage prompting across voice channels. [Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#instance-properties)
+
+
+**IVR Property Support for LLM Streaming in Agent Node**
+
+Agent nodes with LLM streaming now honor configured IVR properties (timeout, prompts, barge-in, grammar, retries, call control, and recording) instead of using a hardcoded 60-second timeout. Node-level settings take precedence over global configurations, providing precise control of voice interactions without affecting non-LLM nodes. [Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#ivr-properties)
+
+
+<font size="4">NLP</font>
+
+**Batch Testing now supports Zero-Shot Model Feature**
+
+The Platform now supports the Zero-Shot Model feature with the existing NLP-based Batch Testing. This enhancement allows you to validate utterance predictions even when the bot is not explicitly trained on those utterances, enabling more flexible evaluation of LLM-based bots. [Learn more :octicons-arrow-right-24:](../../automation/testing/regression-testing/batch-testing.md)
+
+
+
+<hr>
+
+## v11.16.0 July 26, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">DialogGPT</font>
+
+
+
+**Enhanced DialogGPT Batch Testing Framework** 
+
+
+The DialogGPT batch testing framework now supports the validation of specific Conversational Intent Types (e.g., Hold, Restart, Refuse, End, Agent Transfer, Repeat) within test cases, enabling direct testing of how AI agents handle key conversational events. This enhancement enhances the test coverage, accuracy, and reliability of AI agent performance across various conversation types [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md#validate-specific-conversational-intent-types)
+
+ 
+<font size="4">Agent Transfer</font>
+
+**User Experience Enhancements in Salesforce MIAW Agent Integration** 
+
+Salesforce MIAW Agent Integration now includes human agent name display, real-time read receipts for both parties, automatic inactivity timeouts, and UI-based management of standard responses and stop words. These enhancements improve the agent experience, streamline session handling, and simplify configuration directly through the interface. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#additional-capabilities)
+
+
+<font size="4">Dialog Builder</font>
+
+**Entity Reuse Across Dialog Flows** 
+
+
+A new configurable flag, ‘reuseEntityWords: true’, at the Dynamic Intent Node and Dialog Node levels allows entity values extracted in a parent dialog to be automatically available and reusable in downstream dialogs without re-prompting, improving end-user experience. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/dynamic-intent-node.md#entity-pre-assignments)
+
+
+<font size="4">NLP</font>
+
+**Removal of Precondition for Confusion Matrix Generation**
+
+The Confusion Matrix can now be generated without requiring every configured intent to have at least one utterance, removing previous restrictions. This enables more flexible and iterative model evaluation, especially when working with incomplete datasets during early-stage development. [Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/model-validation.md#confusion-matrix)
+
+
+
+
+<hr>
+
+
+## v11.15.1 July 12, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">DialogGPT</font>
+
+**Sub-Intent Scoping Enhancement**
+
+DialogGPT has been optimised to manage sub-intents using dialog context, moving away from indexing. This change provides a clear separation between top-level intents and sub-intents, thereby improving the accuracy of the intent qualification and also providing developers with greater control. [Learn more :octicons-arrow-right-24:](../../automation/intelligence/sub-intents-and-follow-up-intents.md)
+
+<hr>
+
 
 ## v11.15.0 June 30, 2025
 
@@ -469,7 +555,7 @@ Key benefits
 * Flexibility with custom/system integrations and prompts.
 * Seamless orchestration between user input, functions, and responses.  
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md#tools)
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#tools)
 
 
 **GenAI Node and Prompt Node Renaming**

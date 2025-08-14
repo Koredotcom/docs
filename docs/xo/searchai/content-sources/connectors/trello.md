@@ -25,6 +25,10 @@ Trello is a project management and collaboration tool that utilizes **boards** a
    </td>
   </tr>
   <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
+  <tr>
    <td>Content Filtering
    </td>
    <td>No

@@ -2,6 +2,44 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.16.1 August 11, 2025
+
+<u> Patch Release </u>
+
+This update includes bug fixes.
+
+<hr>
+
+## v11.16.0 July 26, 2025
+
+<u>Minor Release</U>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Advanced RACL Capabilities in Connectors</font>
+
+The following key enhancements have been made to the RACL feature in Search AI connectors, enabling more secure and efficient access control.
+
+* Introduction of an RACL scheduler that gives the ability to sync RACL-related data from the connectors independently of regular content sync tasks. This provides greater flexibility to keep access permissions in Search AI in sync with those in the third-party applications.
+* Automatic mapping of individual users to the permission entities in Search AI. This automation streamlines the implementation process, allowing enterprises to enforce RACL without requiring additional setup or processing. This has been implemented for the following connectors: Google Drive, Jira, SharePoint, Trello, Miro, LumApps, Workday, OneDrive, YouTrack, Zulip, Box, Shortcut, Zeplin, HelpScout, Slack, HubSpot, Zendesk, Microsoft Teams, Salesforce, Hive, GitHub, Aha, JIRA On-Prem.
+* RACL support for the Confluence Server connector.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/racl-support.md)
+
+<font size="4">Simplified LLM Setup within Answer Configuration</font>
+
+Users can now configure the LLM directly within the Answer Configuration page, streamlining the setup process and eliminating the need to navigate to the Gen AI features section. This improvement enhances usability and reduces configuration time.
+
+<hr>
+
+## v11.15.1 July 12, 2025
+
+<u>Patch Release</U>
+
+This update includes only bug fixes.
+
+<hr>
+
 ## v11.15.0 June 30, 2025
 
 <u>Minor Release</u>

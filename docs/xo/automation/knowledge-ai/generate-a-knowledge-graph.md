@@ -4,7 +4,7 @@ The performance of the  Knowledge Graph is based on its organization which is in
 
 Building the FAQ is easy when you start fresh with the Knowledge Graph, but in case you have a list of questions-answer pairs, converting them into a fully-functional Knowledge Graph is tedious task.
 
-The XO Platform provides a Knowledge Graph Generator that automatically extracts terms from FAQ, defines the hierarchy between these terms, and also associates the FAQ to the right terms. You can then import the output file from the generator to your VA’s Knowledge Graph without worrying about the hierarchy. 
+The XO Platform provides a Knowledge Graph Generator that automatically extracts terms from FAQ, defines the hierarchy between these terms, and also associates the FAQ to the right terms. You can then import the output file from the generator to your AI Agent’s Knowledge Graph without worrying about the hierarchy. 
 
 You can also edit the hierarchy after import to suit your needs. It is highly recommended to review and make changes as the Knowledge Graph generated is only a suggestion.
 
@@ -83,9 +83,9 @@ Let us look at each of the options:
    <td>The type of input file:
 <ul>
 
-<li><em>json_export</em> – for files exported from Kore.ai Bot Builder using JSON Export option
+<li><em>json_export</em> – for files exported from Kore.ai App Builder using JSON Export option
 
-<li><em>csv_export</em> – for files exported from Kore.ai Bot Builder using CSV Export option
+<li><em>csv_export</em> – for files exported from Kore.ai App Builder using CSV Export option
 
 <li><em>CSV</em> – for files with questions in the first column and answers in the respective second column
 </li>
@@ -122,7 +122,7 @@ Let us look at each of the options:
 
 The output JSON file is generated and placed under the project root directory with the name `ao_output.json`
 
-The output JSON file can directly be imported to Knowledge Graph in the bot. 
+The output JSON file can directly be imported to Knowledge Graph in the app. 
 
 See [steps to import Knowledge Graph](import-and-export-knowledge-graph.md).
 

@@ -321,7 +321,7 @@ Roles in Contact Center AI have additional access; for details, refer to [Role M
 | Widgets                                | Moved to Contact Center AI > Configurations > Widgets. [Learn more](../contactcenter/configurations/widgets/configure-widgets.md) |
 | AgentAssist settings                   | Moved to the AgentAI module. [Learn more](../agentai/configuration/widget-settings.md) |
 | SearchAssist                           | Moved to the AgentAI module. [Learn more](../agentai/configuration/linked-services.md) |
-| Advanced settings                      | Moved to Contact Center AI > Configurations > Advanced Settings. [Learn more](../contactcenter/configurations/advanced-settings/handling-sensitive-data.md) |
+| Advanced settings                      | Moved to Contact Center AI > Configurations > Advanced Settings. [Learn more](../contactcenter/configurations/settings/handling-sensitive-data.md) |
 
 !!! Note
 
@@ -332,5 +332,4 @@ Roles in Contact Center AI have additional access; for details, refer to [Role M
  **Related Links**
 
 * [What's New in XO v11](./whats-new-in-xo-platform.md)
-* [Current Limitations](../release-notes/current-limitations.md)
 * [Key Differences Between XO v11 and v10](../getting-started/key-differences-between-xo11-and-xo10.md)

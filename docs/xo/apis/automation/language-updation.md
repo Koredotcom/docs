@@ -1,7 +1,6 @@
 # Language Updation API
 
-To update for an existing language’s configuration for a virtual assistant.
-
+To update for an existing language’s configuration for an AI Agent.
  
 <table>
   <tr>
@@ -36,7 +35,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Language Configuration
+<li>App Builder: Language Configuration
 
 <li>Admin Console: Language Settings > Language Management
 </li>

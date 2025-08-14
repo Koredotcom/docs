@@ -1,6 +1,6 @@
 # Bot Export – Status API
 
-Gets the status of Bot Export request and also provides the download link of the bot export copy after the export is completed. Refer here for initiating [Bot Export API](../bot-export).
+Gets the status of Bot Export request and also provides the download link of the bot export copy after the export is completed. Refer here for initiating [Bot Export API](bot-export.md).
 
 <table>
   <tr>
@@ -35,7 +35,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Bot Export
+<li>App Builder: Bot Export
 
 <li>Admin Console: Bot Definition > Bot Export
 </li>
@@ -67,7 +67,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>

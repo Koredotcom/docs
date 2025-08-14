@@ -5,9 +5,13 @@ This document outlines the steps for Kore users to integrate Kore Voice Automati
 ## Prerequisites
 
 * External voice transfer connectors per account with AWS Connect Instance enabled.
-* A Kore voice bot trained with few use cases.
+* A Kore voice AI Agent trained with few use cases. 
 
-## Step By Step Guide
+!!! note
+
+    Amazon Connect external voice pricing is subject to change. Refer to the [Amazon Connect External Voice Pricing Changes](https://aws.amazon.com/about-aws/whats-new/2025/05/amazon-connect-external-voice-pricing-changes/){:target="_blank"} document for the latest information. 
+
+## Setup Instructions
 
 ### **1. Enabling External Voice Transfer in Amazon Connect**
 
@@ -27,10 +31,11 @@ After enabling the feature, create a connector under **Voice transfer integratio
 * **Connector Configuration**:
     * **Name**: Provide any desired name for the connector.
     * **Connector destination type**: Select **audio code** from the dropdown list.
-    * **Voice system type**: Select one or multiple options; it does not affect the functionality.
-    * **Enable Logs**: Ensure this option is enabled.
+    * **Voice system type**: Select one or multiple options; it does not affect the functionality. 
+    * **Encryption**: Select **Disabled**.  
+    * **Logging**: Select the option(s) to view the corresponding log in Connector Logs. It is recommended to select both the options.  
 * **Host and Port Details**: After creation, the connector configuration displays the IP address of the host, the protocol, and the port. This port should correspond to your Voice Gateway environment.
-* After the final configuration, it appears something like the following screenshot:  
+* The final configuration appears as shown in the following screenshot:  
 <img src="../images/test-kore-connector-3.png" alt="test-kore-connector" title="free text" style="border: 1px solid gray; zoom:80%;">  
 
 ### **3. Configuring the Amazon Connect Flow**  
@@ -47,11 +52,11 @@ The next step involves modifying your Amazon Connect flow to utilize the newly c
 
 ### **4. Configuring Contact Center AI (Kore Side Configuration)** 
 
-On the Kore side, specific configurations are required in Contact Center AI (CCAI) to receive and manage calls transferred from Amazon Connect.  
+On Kore side, specific configurations are required in Contact Center AI (CCAI) to receive and manage calls transferred from Amazon Connect.  
 
 * **Create New Configuration**: In CCAI, create a new configuration (or use an existing one).  
-* **Whitelist IP Address**: The most critical step here is to whitelist the IP address provided by Amazon Connect. This IP address is essential for allowing communication from Amazon Connect to [Kore](Kore.ai). Check with Amazon Connect documentation or support for the details on this IP address.  
-* **DID Number**: Provide the same Direct Inward Dialing (DID) number that will be used for the transfer ( which was entered in the **Transfer to phone number** node in the previous step).  
+* **Whitelist IP Address**: The most critical step here is to whitelist the IP address provided by Amazon Connect. This IP address is essential for allowing communication from Amazon Connect to Kore. Check with Amazon Connect documentation or Support for the details on this IP address.  
+* **DID Number**: Provide the same Direct Inward Dialing (DID) number that will be used for the transfer (which was entered in the **Transfer to phone number** node in the previous step).  
 <img src="../images/configure-sip-trunk-6.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;">  
 
 * **Attach to Start Flow**: Once the configuration is complete, attach this number to the relevant Experience Flow within Kore.  
@@ -59,7 +64,7 @@ On the Kore side, specific configurations are required in Contact Center AI (CCA
 
 ### **End-to-End Call Flow** 
 
-With this integration, the call flow will be:  
+The following steps describe the call flow after this integration:  
 
 1. A call originates in Amazon Connect by calling the Amazon Connect number.  
 <img src="../images/amazon-connect-number-8.png" alt="amazon-connect-number" title="amazon-connect-number" style="border: 1px solid gray; zoom:80%;">  

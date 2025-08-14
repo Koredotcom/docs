@@ -2,6 +2,60 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.16.1 August 11, 2025
+
+<u> Patch Release </u>
+
+This update includes bug fixes.
+
+<hr>
+
+## v11.16.0 July 26, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Utils</font>
+
+**Support for 'ReferredBy' in VoiceUtils and AgentUtils**
+
+Introduced support for the setReferredBy method in both VoiceUtils and AgentUtils functions. This enhancement enables developers to assign a referring number during call transfers, allowing the receiving party to identify the source of the referral. The addition improves call traceability and supports more transparent handoffs between agents or systems. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#sip-refer)
+
+<font size="4">Flows</font>
+
+**Dynamic Feature and Default Settings Handling Based on Voice License and Configuration**
+
+The platform now dynamically displays voice-related features and loads default settings based on the Voice selection, Voice Gateway presence, and Twilio configuration. During app creation and onboarding, only relevant components—such as SIP trunk setup, phone number purchase, test call, and voice flow elements—are shown based on license entitlements and environment setup. This enhancement streamlines the UI, improves performance by reducing unnecessary API calls, and prevents configuration errors by enforcing voice prerequisites. Logic also applies during bot import, ensuring real-time validation for consistent platform behavior. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number)
+
+<font size="4">ASR & TTS</font>
+
+**Deprecation of 'PlayHT' TTS from Voice Gateway Configuration**
+
+Support for the 'PlayHT' TTS engine has been removed from all Voice Gateway configurations. All associated options, references, and API mappings have been eliminated to prevent configuration issues and ensure compatibility with currently supported TTS providers. [Learn more :octicons-arrow-right-24:](https://community.kore.ai/t/important-update-playht-tts-support-discontinued-heres-what-to-do/5001){:target="_blank"}
+
+<hr>
+
+## v11.15.1 July 12, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Phone Numbers</font>
+
+**Outbound Call App Selection for Agent AI**
+
+Supervisors and administrators can now assign an app for Agent AI during outbound calls. This selection is configured per phone number, ensuring the correct app assists agents. The enhancement supports outbound calls that operate outside standard experience flows. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number)
+
+<font size="4">Text to Speech (TTS)</font>
+
+**Support for Additional ElevenLabs Voices**
+
+Eight new Arabic-language ElevenLabs voices are now available in the Voice Gateway TTS configuration. Platform users can select region-specific voices like Raed (AR-SA-Male) and Hasan (AR-EG-Male) for more localized experiences.
+
+<hr>
+
 ## v11.15.0 June 30, 2025
 
 <u> Minor Release </u>
@@ -111,7 +165,7 @@ This enhancement ensures greater flexibility and consistency in voice experience
 
 **LLM Streaming Support for Additional TTS Providers**
 
-LLM Streaming is now supported for ElevenLabs and Deepgram TTS. This enhancement enables faster and more natural audio generation across a broader range of text-to-speech (TTS) engines, improving real-time responsiveness and user experience in voice interactions. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md#llm-streaming-for-text-to-speech-tts-providers)
+LLM Streaming is now supported for ElevenLabs and Deepgram TTS. This enhancement enables faster and more natural audio generation across a broader range of text-to-speech (TTS) engines, improving real-time responsiveness and user experience in voice interactions. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md#llm-streaming-for-text-to-speech-tts-providers)
 
 <font size="4">Phone Numbers</font>
 

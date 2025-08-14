@@ -1,6 +1,6 @@
 # Summary Dashboard
 
-The Summary dashboard gives a snapshot of the Virtual Assistant’s conversations, user analytics, and performance over time. You can filter the information by date, conversation type (interactive and non-interactive), conversation status, and more.
+The Summary dashboard gives a snapshot of the AI Agent’s conversations, user analytics, and performance over time. You can filter the information by date, conversation type (interactive and non-interactive), conversation status, and more.
 
 **To view the Summary dashboard, follow the steps**: 
 
@@ -16,10 +16,10 @@ The Summary dashboard gives a snapshot of the Virtual Assistant’s conversation
 
 Once users start interacting with your assistant, you can view the following details in the Summary dashboard:
 
-* **Conversations Dashboard**: Displays the key virtual assistant metrics and insights into the usage and containment of the conversations. You can view the conversations’ trend with the breakup of self-service, drop-off, and agent transfers. [Learn more](../overview/conversations-dashboard.md).
+* **Conversations Dashboard**: Displays the key AI Agents metrics and insights into the usage and containment of the conversations. You can view the conversations’ trend with the breakup of self-service, drop-off, and agent transfers. [Learn more](../overview/conversations-dashboard.md).
 * **Users Dashboard**: Displays trend-based analytics data on new and returning users. [Learn more](../overview/users-dashboard.md).
-* **Performance Dashboard**: Provides insights on the NLP and execution performance of the virtual assistants including intent identification rate, goal completion rate, service, and script execution rates. [Learn more](../automation/performance-dashboard.md).
+* **Performance Dashboard**: Provides insights on the NLP and execution performance of the AI Agents including intent identification rate, goal completion rate, service, and script execution rates. [Learn more](../automation/performance-dashboard.md).
 
 ### Filter Criteria
 
-The Virtual Assistants Overview data can be viewed based on specific filter criteria that can be selected. [Learn more](../dashboard-filters.md#filter-criteria-descriptions).
+The AI Agents Overview data can be viewed based on specific filter criteria that can be selected. [Learn more](../dashboard-filters.md#filter-criteria-descriptions).

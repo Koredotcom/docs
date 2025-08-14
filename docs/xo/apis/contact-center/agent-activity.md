@@ -51,7 +51,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
   <tr>
    <td>host
    </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
+   <td>Environment URL, for example, https://platform.kore.ai
    </td>
    <td>string, required
    </td>
@@ -120,7 +120,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5
   <tr>
    <td>AgentUpdates.AgentId
    </td>
-   <td>The unique Id of the agent. For example,  a-59bb17e-0cae-46b0-8d80-a8a8ac34e55c.
+   <td>The unique Id of the agent. For example,  a-59bb17e-0cae-46b0-8d80-a8a8ac34xxxx.
    </td>
    <td>String
    </td>

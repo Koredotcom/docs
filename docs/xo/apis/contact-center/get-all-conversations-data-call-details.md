@@ -13,7 +13,7 @@ To retrieve the raw data for all conversations in a very detailed view. The days
 
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
 |-----------|-------------|------|
-| host | Environment URL, for example, https://platform.kore.ai | string, required |
+| host | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | accountId | The Account Id | string, required |
 
 ## Query Parameters
@@ -27,7 +27,7 @@ To retrieve the raw data for all conversations in a very detailed view. The days
 
 ```
 curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/v2/calldetails?offset=0&limit=200' \
---header 'authority: staging-smartassist.kore.ai' \
+--header 'authority: smartassist.kore.ai' \
 --header 'accept: application/json, text/plain, /' \
 --header 'accept-language: en-US,en;q=0.9' \
 --header 'accountid: {{accountId}}' \
@@ -36,7 +36,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 --header 'bot-language: en' \
 --header 'content-type: application/json;charset=UTF-8' \
 --header 'cookie: _gcl_au=1.11502438879.1669621549; hubspotutk=ef24820cc39323476019ea81d073xxxx; __hssrc=1; _hjSessionUser_1992177=eyJpZCI6ImYxYWQ2MWUyLTUxODItNWJjMy05ZGI1LWU1ZjE2ZmViYTE5YiIsImNyZWF0ZWQiOjE2Njk2MjE1NDk1NDgsImV4aXN0aW5nIjp0cnxxxx==; __hstc=59894770.ef24820cc39323476019ea81d073bc01.1669621552766.1670332174995.1670395535267.15; _ga=GA1.2.174434293.1669621538; _ga_JW3PWR1JKY=GS1.11670419410.15.01670419410.0.0.0; mp_7888bdd5fedfd65f44bb9a3100fa9e80_mixpanel=%7B%22distinct_id%22%3A%20%22184f0fdd19c11-0ccd03f799cfb8-26021151-e1000-184f0fdd19da01%22%2C%22%24device_id%22%3A%20%22184f0fdd19c11-0ccd03f799cfb8-26021151-e1000-184f0fdd19da01%2xxxx' \
---header 'referer: https://staging-smartassist.kore.ai/smartassist/config/queues' \
+--header 'referer: https://smartassist.kore.ai/smartassist/config/queues' \
 --header 'sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"' \
 --header 'sec-ch-ua-mobile: ?0' \
 --header 'sec-ch-ua-platform: "Windows"' \
@@ -49,8 +49,8 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 --header 'x-request-id: 5912cf37-667a-484e-b075-2c42114dxxxx' \
 --header 'x-timezone: Asia/Calcutta' \
 --header 'x-timezone-offset: -330' \
---header 'auth: xxxxbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy01ZDEwMjRlNi1iNzYyLTU3NWYtYTdmNi1hOGRmNjFmMjYxYTIifQ.rqdn1c1Fz7dN8sedyskKg7V2Vw-TOWo0-nC_sGqxxxx' \
---header 'accountId: 6656d31f165174bd532fxxxx' \
+--header 'auth: <token>' \
+--header 'accountId: {{accountId}}' \
 --data '{
 "startDate":"2025-04-28T04:13:17.098Z",
 "endDate":"2025-04-30T00:13:17.098Z",
@@ -69,7 +69,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | content-type      | Request body format (application/json;charset=UTF-8)         | Required              |
 | referer           | Source application name (for example, smartassist)           | Optional              |
 | auth              | JWT authentication token                                     | Required              |
-| iId               | Stream or application id                                     | Required              |
+| IId               | Stream or application id                                     | Required              |
 
 ## Request Body Parameters
 

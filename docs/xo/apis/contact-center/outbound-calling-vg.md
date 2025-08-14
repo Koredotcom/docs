@@ -24,8 +24,8 @@ The application triggers an outbound call using an HTTP POST request to the endp
 
 | **PARAMETER** | **DESCRIPTION**                                                                                          | **TYPE**           |
 |-----------|------------------------------------------------------------------------------------------------------|----------------|
-| host      | Environment URL, for example, https://platform.kore.ai                                             | string, required |
-| botId     | botId or streamId. You can access it from the General Settings page of the bot.                      | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`                                             | string, required |
+| IId     |The application ID.                      | string, required |
 
 ## Query Parameters
 
@@ -40,7 +40,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 | timeoutInMs           | This provides improved control over how long the system should wait for the recipient to answer.                    | number, optional |
 | trunk               | The trunk is a carrier for the account. If not provided, It will pick the default carrier for that account.                                             | string, optional |
 | metadata            | Data to be sent to the bot (can be used to provide information to the bot about the call, such as the name of the target).                            | object, optional |
-| timers              | An object containing various timeout properties. [Learn more](../contact-center/outbound-calling-kore-ai-vg.md#timers-configuration) | object, optional |
+| timers              | An object containing various timeout properties. [Learn more](../contact-center/outbound-calling-vg.md#timers-configuration) | object, optional |
 | machinedetection    | Activates machine (answering machine and fax) detection. Possible values:                                                                               | string, optional |
 |                     | - “disconnect”: Machine detection is enabled, and the call is disconnected in amd.                                                                      |                  |
 |                     | - “detect”: Machine detection is enabled, and the call is not disconnected in amd.                                                                      |                  |
@@ -66,7 +66,7 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialou
 --data-raw '{
   "bot": "st-e38782ff-0d89-52e9-5678769a49fdexxxx",
   "target": "tel:911234567890",
-  "caller": "+127061657882",
+  "caller": "+11234567890",
   "trunk": "TRUNK",
   "timers": {
     "noSpeechTimeoutMs": 12000,
@@ -135,8 +135,6 @@ Previously, the API supported notifications only for two call events: **Answered
    "status": "Call-In-Progress",
    "machineDetection": "amd_machine_detected"
 }
-
-
 {
     "conversationId": "433a9a58-44eb-4c56-bb3e-ab2415f0xxxx",
     "reason": "200 OK",
@@ -181,6 +179,7 @@ Previously, the API supported notifications only for two call events: **Answered
     "callDisconnectTime": "2025-06-26T13:00:13.374Z"
 }
 ```
+
 ### notifyHeaders
 
 * You can now include notifyHeaders in the API payload. These custom headers will be passed along with the AMD notifications to the specified notifyUrl.

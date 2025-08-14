@@ -1,6 +1,6 @@
 # Bots Management Module
 
-In the **Bots Management** module of the Bots Admin Console, you can deploy the bots developed by your company developers from the Kore.ai Bot Builder tool. When the developer develops a bot, it can be published for approval and deployment by the Bots Admin from the Bots Management section. From this section, you can
+In the **Bots Management** module of the Admin Console, you can deploy the bots developed by your company developers from the Kore.ai Bot Builder tool. When the developer develops a bot, it can be published for approval and deployment by the Bots Admin from the Bots Management section. From this section, you can
 
 * Approve or reject custom bots sent for deployment approval,
 * Deploy some or all of the tasks defined for a bot,
@@ -348,7 +348,7 @@ The _Bot status changed successfully_ message is displayed at the top of the pag
 
 ### Bot Plan
 
-You can view and if needed change the subscribed plan. [See here for details](../billing){:target="_blank"}.
+You can view and if needed change the subscribed plan. [See here for details](billing.md){:target="_blank"}.
 
 ### Restore
 A published bot with active dialog tasks can be restored within 30 days following the deletion date.
@@ -479,7 +479,7 @@ The _Bot status changed successfully_ message is displayed at the top of the pag
 
 ### Bot Plan
 
-You can view and if needed change the subscribed plan. [See here for details](../billing/){:target="_blank"}.
+You can view and if needed change the subscribed plan. [See here for details](billing.md){:target="_blank"}.
 
 
 ## Preferences

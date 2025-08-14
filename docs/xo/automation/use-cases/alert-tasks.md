@@ -26,8 +26,8 @@ To configure an alert task, you must configure the following settings:
 
 The first step is to define what the task looks like to the end-user. The General Settings include details such as task name, connection mode, descriptions, and a few advanced settings such as task demo, search keywords, etc.
 
-1. Open the VA in which you want to create the alert task.
-2. Navigate to **Virtual Assistant > USE CASES > Alert Tasks**.
+1. Open the AI Agent in which you want to create the alert task.
+2. Navigate to **Automation > USE CASES > Alert Tasks**.
 3. Click **Create Alert Task**.
     
     <img src="../images/create-new-alert-task.png" alt="new alert task" title="new alert task" style="border: 1px solid gray; zoom:75%;"> 
@@ -127,7 +127,7 @@ The following table describes the fields in the **Advanced Settings** section of
   <tr>
    <td>Search Keywords
    </td>
-   <td>Specify one or more search words an end-user can use to help locate this task in the Kore.ai Bot Store.
+   <td>Specify one or more search words an end-user can use to help locate this task in the Kore.ai marketplace.
    </td>
   </tr>
   <tr>
@@ -153,7 +153,7 @@ To get started with defining the **Authorization** for a task,
 1. On the **API Request** tab, click the **Expand** icon in the **Authorization** section.
 2. If you have previously defined authorization for this task, you can select from the **Authorization Provider** drop-down list. If your task does not require authentication, you can select **None** in the **Authorization Provider** drop-down list as shown in the following image.
 3. To define a new authorization provider, click **Create New**.
-4. On the **New Authorization Mechanism** window, select the type of authorization used by your bot from the **Authorization Type** drop-down list.
+4. On the **New Authorization Mechanism** window, select the type of authorization used by your AI Agent from the **Authorization Type** drop-down list.
 5. You can choose one of the following types of authorization:
     * **Basic Auth**: A standard protocol to collect username and password information. Kore.ai uses SSL encryption in combination with basic authentication to help secure end-user information. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-basic-auth/" target="_blank">here</a> for the configuration details.
     * **OAuth v2 Password Grant Type** – Define a custom authorization type for non-standard web service authorization types. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-oauth-password-grant-type/" target="_blank">here</a> for the configuration details.
@@ -203,7 +203,7 @@ After you define the **General** tab settings for your Alert task, configure the
 To configure the settings for an alert task, other than a webhook alert task, you will need to define:
 
 * **Filters** – You can define filters for end-users to limit the results of an alert task to the results an end-user needs. For example, you can define a filter for the name, or account, or business. When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-defining-filters/" target="_blank">Defining Filters for a Task</a>.
-* **Schedule** – Alert tasks only reach out to a web service for data when the VA makes a request. For each task, you need to define when, and how often the web service is queried for data for an alert message. You can define the scheduling options presented to the end-user when the task is set up, as well as the default schedule for the task. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-configuring-the-schedule/" target="_blank">Configuring the Schedule for a Task</a>.
+* **Schedule** – Alert tasks only reach out to a web service for data when the AI Agent makes a request. For each task, you need to define when, and how often the web service is queried for data for an alert message. You can define the scheduling options presented to the end-user when the task is set up, as well as the default schedule for the task. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-configuring-the-schedule/" target="_blank">Configuring the Schedule for a Task</a>.
 * **Advanced Settings** – In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-advanced-settings/" target="_blank">Define Advanced Settings</a>. 
 
 ## Version Namespaces
@@ -218,9 +218,9 @@ This option is only available if you have enabled Namespaces. [Learn more](../..
 
 ## View Logs
 
-You may need to troubleshoot alert tasks. In the Kore.ai Bot Builder tool, you can view logged events for configured and published alert tasks that interact with the XO Platform and third-party applications. The **View Logs** command displays archived log events for each alert task instance that you can use to view the alert task request and the application response.
+You may need to troubleshoot alert tasks. In the Kore.ai App Builder tool, you can view logged events for configured and published alert tasks that interact with the XO Platform and third-party applications. The **View Logs** command displays archived log events for each alert task instance that you can use to view the alert task request and the application response.
 
-In the **Alert Tasks** section, click the **Settings** (gear) icon for the task to view logs for, and then click **View Logs**. The **Logs** page for the bot alert task opens.
+In the **Alert Tasks** section, click the **Settings** (gear) icon for the task to view logs for, and then click **View Logs**. The **Logs** page for the app alert task opens.
 <img src="../images/alert-tasks-settings.png" alt="alert tasks settings" title="alert tasks settings" style="border: 1px solid gray; zoom:75%;"> 
 
 

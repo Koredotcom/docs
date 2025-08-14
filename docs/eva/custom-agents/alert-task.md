@@ -1,10 +1,6 @@
-# Handling Alert Tasks for Bot Agents
+# Handling Alert Tasks for Agents
 
-
-
-## Overview
-
-The Bot Agents module of the AI for Work app allows developers to integrate conversation hold and resume functionality within XO Bots. This document provides a procedural overview of how Dialogflow handles brief pauses (holds) and subsequent resumption.
+The Bot, Workflow, and Autonomous Agents module of the AI for Work app allows developers to integrate conversation hold and resume functionality within XO Bots. This document provides a procedural overview of how Dialogflow handles brief pauses (holds) and subsequent resumption.
 
 ## Core Concepts
 
@@ -176,7 +172,7 @@ print(response); \
 !!! note
 
     * The `conversation_reference_id` ensures that the response is correctly associated with the paused conversation.
-    * Any text or bot template that includes `conversation_reference_id` can be used as an alert response or message to help start a new conversation.
+    * Any text or template that includes `conversation_reference_id` can be used as an alert response or message to help start a new conversation.
 
 #### Removing the Hold Template
 

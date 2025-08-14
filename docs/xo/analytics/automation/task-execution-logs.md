@@ -1,6 +1,6 @@
 # Task Execution Logs
 
-The **Task Execution Logs** feature helps you gain in-depth insights into the task execution-related data and assess your virtual assistant’s performance in executing tasks. 
+The **Task Execution Logs** feature helps you gain in-depth insights into the task execution-related data and assess your AI Agent’s performance in executing tasks. 
 
 **To view the Task Execution Logs dashboard, follow the steps**: 
 
@@ -19,9 +19,9 @@ The **Task Execution Logs** page shows information specific to task execution in
 
 
 * **Failed Task**: Indicates the number of unsuccessful tasks.
-* **API Calls**: Displays all the Service node and Webhook node executions-related data, and the number of failed services during Bot interactions.
-* **Script Execution**: Displays analytics data for all the script node executions and the number of failed scripts during Bot interactions.
-* **Debug Log**: Custom Debug logs include user conversations from across all channels for analyzing your VA.
+* **API Calls**: Displays all the Service node and Webhook node executions-related data, and the number of failed services during AI Agents interactions.
+* **Script Execution**: Displays analytics data for all the script node executions and the number of failed scripts during AI Agents interactions.
+* **Debug Log**: Custom Debug logs include user conversations from across all channels for analyzing your AI Agents.
 * **Pinned**: Pinned Task Execution Logs records. Specific records are pinned to highlight them for easy access and viewing.
 
 
@@ -32,7 +32,7 @@ The **Task Execution Logs** page displays the following fields specific to task 
 
 ### Failed Task
 
-In a scenario where all the user utterances are successfully mapped to an intent, but the task cannot be completed for some reason, then such utterances are listed under this tab. You can group them based on task and failure types to analyze and solve issues with the VA.
+In a scenario where all the user utterances are successfully mapped to an intent, but the task cannot be completed for some reason, then such utterances are listed under this tab. You can group them based on task and failure types to analyze and solve issues with the AI Agents.
 
 See the following table and the Features section to know more:
 
@@ -96,7 +96,7 @@ The following table lists the fields on the **Failed Task** tab with description
    </td>
    <td>The UserID of the end user related to the conversation. You can view the metrics based on either <strong>Kore User ID</strong> or <strong>Channel User ID</strong>.
 <p>
-Channel-specific IDs are shown only for the users who have interacted with the VA during the selected period.
+Channel-specific IDs are shown only for the users who have interacted with the AI Agents during the selected period.
    </td>
   </tr>
   <tr>
@@ -104,7 +104,7 @@ Channel-specific IDs are shown only for the users who have interacted with the V
    </td>
    <td>The language in which the conversation occurred.
 <p>
-If it is a multi-lingual VA, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
+If it is a multi-lingual AI Agents, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
    </td>
   </tr>
   <tr>
@@ -119,7 +119,7 @@ If it is a multi-lingual VA, you can select specific languages to filter the con
 
 ### Performance
 
-Developers can monitor all the scripts and API services across the VA’s tasks from a single window. The performance tab displays information related to the backend performance of the VA in two sections, namely **API Calls** and **Script Execution**. The platform stores the following meta-information:
+Developers can monitor all the scripts and API services across the AI Agent’s tasks from a single window. The performance tab displays information related to the backend performance of the AI Agent in two sections, namely **API Calls** and **Script Execution**. The platform stores the following meta-information:
 
 
 ### API Calls
@@ -216,7 +216,7 @@ This can be sorted from <strong>High to Low</strong> or<strong> Low to High</str
 
 ### Script Execution
 
-The Script Execution section provides information on the VA’s script execution performance based on the following metrics:
+The Script Execution section provides information on the AI Agent’s script execution performance based on the following metrics:
 
 
 
@@ -269,13 +269,13 @@ This can be sorted from <strong>High to Low</strong> or<strong> Low to High</str
 
 Any custom debug statements that you entered in the Script node using the script `koreDebugger.log("&lt;debug statement>")`are displayed on this tab. Debug statements should be in a string format. See the following table to know more:
 
-The logs include the user conversation from across all channels. You can use them for bot analysis, especially in case of failures during user interaction.
+The logs include the user conversation from across all channels. You can use them for AI Agents analysis, especially in case of failures during user interaction.
 
 The details include the following:
 
 
 
-* The actual statement that you have defined at the time of Bot definition.
+* The actual statement that you have defined at the time of AI Agents definition.
 * Date and time of logging
 * Channel
 * User ID (along with channel-specific ID)
@@ -292,10 +292,10 @@ You can also view the details of the chat history associated with the session.
 2. On the corresponding window, you can find the **Details** and **Chat History** tabs.
 3. Under the **Details** tab, you can find the _task name_, _channel_, _language_, and _flow_.
 4. Click the **Chat History** tab. You can find the chat transcript where the log is recorded.
-    1. If the debug log is generated from a VA message, you are navigated to that specific message in the chat transcript.
-    2. If the debug log is not part of the VA message, you are navigated to the latest message added before the debug statement.
+    1. If the debug log is generated from an AI Agent message, you are navigated to that specific message in the chat transcript.
+    2. If the debug log is not part of the AI Agents message, you are navigated to the latest message added before the debug statement.
 
-For universal VAs, the debug statements from the universal and linked assistants are included in the logs. The debug logs also include the error messages related to BotKit, for example, when the platform could not reach the BotKit or when the BotKit did not acknowledge the message sent by the platform. The message includes details like the <code><em>&lt;endpoint></em>, <em>&lt;error code></em>,</code> and <code><em>&lt;response time>.</em></code>
+For universal AI Agents, the debug statements from the universal and linked AI Agents are included in the logs. The debug logs also include the error messages related to  BotKit, for example, when the platform could not reach the BotKit or when the BotKit did not acknowledge the message sent by the platform. The message includes details like the <code><em>&lt;endpoint></em>, <em>&lt;error code></em>,</code> and <code><em>&lt;response time>.</em></code>
 
 **Description of Debug Log Fields**
 
@@ -338,7 +338,7 @@ The following table lists the fields on the Debug Log tab with descriptions:
    </td>
    <td>The language in which the conversation occurred.
 <p>
-If it is a multi-lingual VA, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
+If it is a multi-lingual AI Agents, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
    </td>
   </tr>
   <tr>
@@ -346,7 +346,7 @@ If it is a multi-lingual VA, you can select specific languages to filter the con
    </td>
    <td>The UserID of the end user related to the conversation. You can view the metrics based on either <strong>Kore User ID</strong> or <strong>Channel User ID</strong>.
 <p>
-Channel-specific IDs are shown only for the users who have interacted with the VA during the selected period.
+Channel-specific IDs are shown only for the users who have interacted with the AI Agents during the selected period.
    </td>
   </tr>
   <tr>
@@ -366,11 +366,11 @@ Any records from the **Failed Tasks**, **API Calls**, and **Script Execution** s
 
 ### Storage Limitations
 
-The platform imposes restrictions on the number of log statements retained per VA. The limit is a combination of volume and period:
+The platform imposes restrictions on the number of log statements retained per AI Agents. The limit is a combination of volume and period:
 
 
 
-* Only the latest 700 statements per VA are stored.
+* Only the latest 700 statements per AI Agents are stored.
 * Statements older than 7 days are removed.
 
 

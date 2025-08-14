@@ -21,8 +21,8 @@ If you are using Dropbox to store and manage your content, you can easily search
   <tr>
    <td>Generative Model for Answers
    </td>
-   <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html \
-Note: Password-protected files in any format are not supported
+   <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html 
+   Note: Password-protected files in any format are not supported
    </td>
   </tr>
 </table>

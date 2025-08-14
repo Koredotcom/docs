@@ -1,10 +1,10 @@
 # Digital Forms
 
-Virtual Assistants engage end-users primarily using a conversational interface that typically includes an exchange of a series of messages. But oftentimes, there is a need to gather information from the end-user to proceed further. Examples include providing delivery address while interacting with an eCommerce agent, details of an issue while reporting to ITSM agent, opportunity details while creating a CRM opportunity, capturing customer details to book a flight, etc.
+AI Agents engage end-users primarily using a conversational interface that typically includes an exchange of a series of messages. But oftentimes, there is a need to gather information from the end-user to proceed further. Examples include providing delivery address while interacting with an eCommerce agent, details of an issue while reporting to ITSM agent, opportunity details while creating a CRM opportunity, capturing customer details to book a flight, etc.
 
 In a standard Dialog Task, this scenario is designed by placing a series of Entity Nodes connected back-to-back and the user is asked for values for each of these entities sequentially, which is quite tedious and frustrating. Digital Forms mitigate this issue by presenting users with an interactive interface that they can use to provide the information they are asked for in one go.
 
-**Digital Forms** provide a range of input fields that allow your assistant to capture the required details from end-users. After the users complete the form, the input is submitted to the VA to proceed with the task at hand.
+**Digital Forms** provide a range of input fields that allow your assistant to capture the required details from end-users. After the users complete the form, the input is submitted to the AI Agent to proceed with the task at hand.
 
 In this article, we discuss the features and implementation of Digital Forms in the XO Platform. For a use case example and a step-by-step implementation of a Digital Form click [here](../configure-digital-forms/){:target="_blank"}.
 
@@ -18,7 +18,7 @@ In this article, we discuss the features and implementation of Digital Forms in 
 
 ## General Setup
 
-You can access **Digital Forms** from **Automation AI > Virtual Assistant > Digital Skills**.
+You can access **Digital Forms** from **Automation AI > Digital Skills**.
 
 <img src="../../images/access-digital-forms.png" alt="Access Digital Forms" title="Access Digital Forms" style="border: 1px solid gray; zoom:75%;">
 
@@ -30,7 +30,7 @@ Here is the overall usage process for Digital Forms within the XO Platform
    * A Digital Form is added to a Digital View with a dialog task triggered when a form is submitted from there.
 
 * **Form Submission**: When it is submitted, the component values are validated and any errors are highlighted. Based on the mode of invocation, post successful validation:
-   * The VA execution proceeds as per dialog flow in case of dialog task invocation.
+   * The AI Agent execution proceeds as per dialog flow in case of dialog task invocation.
    * The selected task is triggered.
 
 ## Create a Form
@@ -39,7 +39,7 @@ A Digital Form includes a definition and various components to capture user inpu
 
 To create forms, follow the steps below:
 
-1. Under **Automation AI > Virtual Assistant > Digital Skills**, select **Digital Forms**.
+1. Under **Automation AI > Digital Skills**, select **Digital Forms**.
 2. On the **Digital Forms** screen, click **New Form**.
 3. On the **New Form** page, enter the following:
    
@@ -53,7 +53,7 @@ To create forms, follow the steps below:
     
     !!! Note
 
-        During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+        During the Export of the app, the logo is not exported along with Digital Forms. So, when importing this App, you need to separately copy the logo image file and then manually reupload the logo.
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header.
 
@@ -75,7 +75,7 @@ To create forms, follow the steps below:
 
 7. **Pre-Processor script**—The Pre-Processor script in the form settings can be used by the developer to manipulate all the data required for the form that cannot be customized from the UI design view.
 
-    For example, in the case of a multilingual bot, the user can customize the form UI  & standard responses of the components in the digital form so that they appear based on the selected bot language. 
+    For example, in the case of a multilingual AI Agent, the user can customize the form UI  & standard responses of the components in the digital form so that they appear based on the selected app language. 
 
     Moreover, you can provide dynamic variables to replace the static content in the pre-processor script for use in the form using environment, content, and context variables.
 
@@ -83,7 +83,7 @@ To create forms, follow the steps below:
 
     **Example:**
 
-    Suppose you want to change the standard response of a field of URL type in a digital form based on the bot language. You have added English, Spanish, German, and Japanese as your bot languages.
+    Suppose you want to change the standard response of a field of URL type in a digital form based on the app language. You have added English, Spanish, German, and Japanese as your app languages.
 
     ```
     let formDef = koreUtil.getFormDefinition();
@@ -118,11 +118,11 @@ To create forms, follow the steps below:
 
 ### Configuration setup using Pre-Processor script
 
-Earlier, our digital forms can be created only in one language and hence multiple forms need to be created to provide the flexibility to render the forms in different languages for multi lingual bot. Also the  messages and errors were  available only in English and cannot be customized. This posed a limitation as it didn't support all bot languages. Additionally, users lacked the ability to customize the forms using the dynamic data from context.
+Earlier, our digital forms can be created only in one language and hence multiple forms need to be created to provide the flexibility to render the forms in different languages for multi lingual app. Also the  messages and errors were  available only in English and cannot be customized. This posed a limitation as it didn't support all app languages. Additionally, users lacked the ability to customize the forms using the dynamic data from context.
 
-The pre-processor script has been introduced to counter the above limitations. You can provide values to the relevant keys based on the bot language or any other condition that requires customization of aspects like field labels or standard responses.
+The pre-processor script has been introduced to counter the above limitations. You can provide values to the relevant keys based on the app language or any other condition that requires customization of aspects like field labels or standard responses.
 
-To get the form definition that is provided as a response in the `koreUtil.getFormDefinition` and keys that need to be customized, refer to the digital form's **JSON view**. Navigate to **Automation AI > Virtual Assistant > Digital Skills > Digital forms** and open the form that you wish to configure. Click **Test** on the Form Design view, then select the **JSON** tab.
+To get the form definition that is provided as a response in the `koreUtil.getFormDefinition` and keys that need to be customized, refer to the digital form's **JSON view**. Navigate to **Automation AI > Digital Skills > Digital forms** and open the form that you wish to configure. Click **Test** on the Form Design view, then select the **JSON** tab.
 
 <img src="../../images/xop-8553-json-preview.png" alt="Digital Form Preview - JSON" title="Digital Form Preview - JSON" style="border:1px solid gray; zoom:60%;">
 
@@ -856,7 +856,7 @@ The below use cases explain the steps to make various customizations using the p
 
 **Components:**
 
-Suppose you want to customize the display names of the Name and Date of Birth fields based on the selected VA language.
+Suppose you want to customize the display names of the Name and Date of Birth fields based on the selected App language.
 
 Since these are the first two fields on the form, their index values are 0 and 1, respectively.
 
@@ -878,13 +878,13 @@ formDef.components[1].metaData.displayName = '生年月日';
 }
 ```
 
-Let’s assume that currently the VA language is Japanese. This is how the form would look in the run-time:
+Let’s assume that currently the App language is Japanese. This is how the form would look in the run-time:
 
 <img src="../../images/xop-8553-form-fields-in-japanese.png" alt="formMetaData - Customized field labels" title="formMetaData - Customized field labels" style="border:1px solid gray; zoom:70%;">
 
 **formMsgMeta:**
 
-Suppose you want to customize the standard response for mandatory fields based on the VA language. Below is the pre-processor script for that:
+Suppose you want to customize the standard response for mandatory fields based on the App language. Below is the pre-processor script for that:
 
 ```
 let formDef = koreUtil.getFormDefinition();
@@ -899,7 +899,7 @@ else{
 }
 ```
 
-This is how the standard message would look if the bot language is Japanese:
+This is how the standard message would look if the app language is Japanese:
 
 <img src="../../images/xop-8553-field-level-standard-response-japanese.png" alt="formMetaData - Customized field level response messages" title="formMetaData - Customized field level response messages" style="border:1px solid gray; zoom:70%;">
 
@@ -1089,7 +1089,7 @@ To invoke a form from a dialog task, follow the below steps:
 
             !!! Note
       
-                We urge you not to make changes to the connection settings as this affects the VA's performance.
+                We urge you not to make changes to the connection settings as this affects the AI Agent's performance.
 
     * **Sub-dialog Node** is configured as a normal [Dialog Node](../../dialogs/node-types/working-with-the-dialog-node/){:target="_blank"} as follows:
 
@@ -1111,7 +1111,7 @@ Digital Forms are rendered in Digital Views by configuring Widgets & Panels. [Le
 
 To invoke a form using Widgets and Panels, follow the below steps:
 
-1. **Create a widget** to invoke the Digital Form within **Digital Views** from **Automation AI > Virtual Assistant > Digital Skills**.
+1. **Create a widget** to invoke the Digital Form within **Digital Views** from **Automation AI > Digital Skills**.
 2. Enter the name.
 3. Select _Digital Forms_ as the **Source.**
 4. **Add a Form** by selecting it from the drop-down list.
@@ -1182,19 +1182,19 @@ When exceptions are encountered during the dialog execution with a Form Node, th
   <tr>
    <td>The user tries to continue the conversation without opening the form link.
    </td>
-   <td>The Virtual Assistant asks if the user wants to switch to a new task.
+   <td>The AI Agent asks if the user wants to switch to a new task.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>The user tries to continue the conversation (in the chat window) without submitting the form responses.
    </td>
-   <td>The Virtual Assistant asks if the user wants to switch to a new task.
+   <td>The AI Agent asks if the user wants to switch to a new task.
    </td>
   </tr>
   <tr>
    <td>The user closes the form or browser without submitting responses.
    </td>
-   <td>If the bot is configured to cancel the ongoing task, the form displays a warning message that the task will be canceled. If the user accepts, the form will be closed, and a message is displayed saying that the previous task is canceled.
+   <td>If the app is configured to cancel the ongoing task, the form displays a warning message that the task will be canceled. If the user accepts, the form will be closed, and a message is displayed saying that the previous task is canceled.
 <br>
 Otherwise, the ongoing task goes on, and based on the configuration, the user is taken to the next step of the task.
    </td>
@@ -1219,11 +1219,11 @@ Users can access the form using **Panels & Widgets**. The experience is the same
 
 Once the form is validated and submitted, the values are available in the context variable and accessed using the following code: context.forms.<form_name>.<component_name>
 
-## Manage VAs with Digital Forms
+## Manage AI Agents with Digital Forms
 
 ### Publish
 
-The publishing flow for a VA with Digital Forms has the following special cases:
+The publishing flow for an App with Digital Forms has the following special cases:
 
 As with any assistant, the Digital Forms exist in the following states:
 
@@ -1238,7 +1238,7 @@ As with any assistant, the Digital Forms exist in the following states:
 
     <img src="../../images/form-status.png" alt="form status" title="form status" style="border: 1px solid gray; zoom:75%;">
 
-    The _In Development_ and _Published_ versions of the VA can be viewed by toggling between the respective statuses in the top search-bar.
+    The _In Development_ and _Published_ versions of the AI Agent can be viewed by toggling between the respective statuses in the top search-bar.
 
     <img src="../../images/va-status-search.png" alt="va status search" title="va status search" style="border: 1px solid gray; zoom:75%;">
  
@@ -1278,19 +1278,19 @@ Digital Forms are included in the full and incremental import of the assistant.
 
 For Full Import:
 
-* As with all other VA components, the full import replaces the entire Digital Forms and form details.
+* As with all other AI Agent components, the full import replaces the entire Digital Forms and form details.
 
 For Incremental Import:
 
 * You can choose to include/exclude the Digital Forms in the import.
-* This import fully replaces the Digital Forms that are common to the import file and the VA.
-* Additional forms in the file are imported into the VA.
-* Additional forms in the VA are retained.
+* This import fully replaces the Digital Forms that are common to the import file and the AI Agent.
+* Additional forms in the file are imported into the AI Agent.
+* Additional forms in the AI Agent are retained.
 * Post import, any invalid Digital Form integration details are disassociated with the corresponding forms.
 
 ### Export
 
-The Bot Export option is available for Digital Forms with a status of *In Development* or *Published*.
+The App Export option is available for Digital Forms with a status of *In Development* or *Published*.
 
 * Digital Forms can be selected/deselected from the **Bot Export** page under the **Bot Tasks** category.
 * Choose the option to _Include dependent dialogs_ to export Dialog Tasks that are integrated with the selected Digital Forms to define widgets. 
@@ -1337,7 +1337,7 @@ Following is a list of the available components.
 
     <img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
 
-    **Note** : The Date picker displays the month and week names in Japanese characters if the VA language is Japanese. This support will be extended to more languages in the future.
+    **Note** : The Date picker displays the month and week names in Japanese characters if the app language is Japanese. This support will be extended to more languages in the future.
 
     <img src="../../images/digital-forms-date-picker-japanese.png" alt="date picker - Japanese" title="date picker - Japanese" style="border: 1px solid gray; zoom:75%;">
 

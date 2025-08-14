@@ -1,14 +1,13 @@
-# Pass Files Uploaded By Users to External Services/LLMs
+# Pass Files Uploaded By Users to External Services or LLMs
 
 This guide explains how to work with files uploaded by users in an Agentic App, either through the Playground or APIs, and how to pass them to an external model for further processing or as context. 
-
 
 ## Overview
 
 When users upload documents to the agent, the platform stores them and makes the metadata of the files available in the system memory, sessionMeta. This enables tools to access the uploaded files and pass on the file URL and metadata to upstream systems or the data stores. 
 
 
-## How it works
+## How It Works
 
 1. Users upload documents to the Agentic Platform. Files can be uploaded via the Agentic App Playground or programmatically using APIs.
 2. The platform handles uploaded files in two ways, depending on the file types: 
@@ -18,9 +17,9 @@ When users upload documents to the agent, the platform stores them and makes the
         * type: Type of data.
         * filename: Original filename as uploaded by the user.
         * mimetype: MIME type of the uploaded file.
-        * isActive: Indicates if the document is applicable for the current conversation.[ Learn More](../attachment-support.md#file-state-management).
+        * isActive: Indicates if the document is applicable for the current conversation. [Learn more](../attachment-support.md#file-state-management).
         * downloadUrl: Direct access URL for file content. This is a temporary link and is **valid and accessible for 30 days** from the date of upload.
-3. The metadata stored in the system memory can be accessed in agent and supervisor prompts or code tools. From thereon, it can be passed to third-party services for further processing as per the use cases.  [Learn More.](../attachment-support.md#file-metadata-extraction)
+3. The metadata stored in the system memory can be accessed in agent and supervisor prompts or code tools. From thereon, it can be passed to third-party services for further processing as per the use cases.  [Learn more](../attachment-support.md#file-metadata-extraction).
 
 
 ## Accessing and Using Uploaded Files
@@ -38,7 +37,7 @@ When users upload documents to the agent, the platform stores them and makes the
 2. Download the file using the *downloadUrl* field and retrieve the required information from it. Alternatively, you can also pass on the URL to a third-party service to take further actions using the file. 
 
 
-## Sample UseCase
+## Sample Use Case
 
 A user uploads a document for an insurance claim. The insurance provider requires the document for verification and future reference. In this case, the agent platform sends the URL of the file to the insurance provider, who can download the file and use it as required.  
 

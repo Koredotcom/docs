@@ -2,7 +2,7 @@
 
 ## MYBOT_EMPTY_TEMPLATE
 
-Displays an empty message when the Mybot tab holds no data, i.e. no dialog execution happens in Mybot.
+Displays an empty message when the My AI Agent (Bot) tab holds no data, i.e. no dialog execution happens in My AI Agent (Bot).
 
 ```
 aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {

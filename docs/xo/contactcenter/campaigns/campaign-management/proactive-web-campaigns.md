@@ -142,9 +142,9 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
     Click the **Edit** icon to edit the details of an existing button. You can enter the Text for the button, select the Action performed on clicking the button, Background Colour, Text Colour for the button, and click **Save**.  
     <img src="../images/buttons.png" alt="Buttons" title="Buttons" style="border: 1px solid gray; zoom:80%;">  
-    The following options are available for the Actions:
-        1. **Send to URL** - Selecting this option displays the URL field where the user will be redirected.
-        2. **Send to Bot** - The conversation will be redirected to the bot.
+    The following options are available for the Actions:  
+        1. **Send to URL** - Selecting this option displays the URL field where the user will be redirected.  
+        2. **Send to AI Agent (Bot)** - The conversation will be redirected to the Ai Agent (bot).
         3. **Dismiss** - Dismiss the proactive chat offer.
 
 6. Under the **Appearance** section, select the **Message Bubble Alignment**, **Bubble Alignment**, and **Dark Shadow**.  
@@ -154,40 +154,121 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 <img src="../images/preview-section.png" alt="Preview Setion" title="Preview Section" style="border: 1px solid gray; zoom:80%;">
 
 8. Click the **Engagement Strategy** tab and configure the following:
+
     1. **Website**: Click the **+ Add Website** button and select the **URL**/**Page Name**. URLs are crucial for directing users to specific web pages, tracking campaign performance, and optimizing user experience, ultimately enhancing audience engagement and conversion rates. Select the URL and the condition about what the URL contains.  
-    <img src="../images/engagemet-strategy.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/engagemet-strategy.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:80%;">
 
-    2. **Rules**: Rules establish guidelines and standards to govern the execution of online marketing initiatives, ensuring effectiveness and compliance. Click the **+ Add Rule** button and select the rules. You can select from the following rules:
+    2. **Rules**: Rules define when a Proactive Web Campaign (PWC) should engage with a website visitor. Use rules to target visitors based on who they are, what they're doing, and where they are on the site.
 
-        * User, Is, known/anonymous.
-        * Country, Is/Not, “name of the country”.
-        * City, Is/Not, “name of the city”.
-        * Page Visit Count, Equals To, “count”.
-        * Time Spent, Equals To, no.of Seconds.
-        * Hover On, ID/Class/Query Selector, “Add Rule”. The rule can be set as follows:
-            * On a web page, select the **object** or **element**.
-            * Right-click and select '**Inspect**'.
-            * In the 'Inspect' section, click the **Elements** tab. It will have the "**id**" and/or "**class**"
-            * To use a "**Query Selector**", right-click the specific HTML element and select '**Copy Selector**'.
+        To add rules:  
 
-                !!! Note
+        1. Click **+ Add Rule**.  
+        2. Select a field, operator, and value to define the condition.  
 
-                    The above steps are specific to Chrome browser and might vary for other web browsers.  
+        You can use multiple rules together to build complex engagement strategies.  
+        <img src="../images/rule.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:70%;">
 
-        <img src="../images/rules.png" alt="Rules" title="Rules" style="border: 1px solid gray; zoom:80%;">            
+        **Available Built-in Rule Fields and Supported Operators**
 
-    3. **Goals**: The purpose is to provide clear objectives and measurable targets to guide the campaign's strategy and assess its effectiveness in achieving desired outcomes. Click the **+ Add Goal** button and select the goals.  
-    <img src="../images/goal.png" alt="Goals" title="Goals" style="border: 1px solid gray; zoom:80%;">
+        | **Field**            | **Data Type** | **Supported Operators**            |
+        |------------------|-----------|----------------------------------------|
+        | Page Visit Count | Number    | Equals, Greater Than or Equal To                                 |
+        | Time Spent       | Number    | Equals                                 |
+        | User             | String    | Is (known / anonymous)                 |
+        | Country          | String    | Is                                     |
+        | State            | String    | Is                                     |
+        | City             | String    | Is                                     |
+        | Device           | String    | Is (Mobile / Laptop / Tablet)          |
+        | URL              | String    | Contains, Ends With                    |
+        | Page Name        | String    | Is, Contains                           |
+        | Hover On         | String    | ID, Class, and Query Selector                           |
 
-    4. **Channel**: The purpose of channels in a web campaign is to designate a medium through which the campaign's message is disseminated, facilitating targeted outreach and engagement with the intended audience. Select the channel for the campaign from the dropdown.  
-    <img src="../images/channel-selected.png" alt="Channel" title="Channel" style="border: 1px solid gray; zoom:80%;">
+        The NOT operator can be applied at each condition level to invert any condition.
 
-    5. **Engagement Hours**: Select the time duration for running the campaign. You can select from the following:
-        1. **Anytime**: The campaign will be visible 24 hours, 7 days a week.
-        2. **Custom**: The campaign will be visible in the chosen time zone only during the set days and times.  
+        **To find a selector**:
+
+        * Right-click the element on the page and select Inspect.
+        * Use the id, class, or right-click to Copy selector.
+
+        !!! Note
+
+            The above steps are specific to Chrome browser and might vary for other web browsers.  
+
+    3. **Exclusions** Use Exclusion Rules to define conditions under which a campaign should not be triggered.
+
+        To add exclusions:  
+
+        * Go to the Exclusions section.  
+        * Add rules using the same fields and options available in the main rule section.  
+        <img src="../images/exclusions.png" alt="Exclusions" title="Exclusions" style="border: 1px solid gray; zoom:70%;">
+
+    !!! Note
+
+        When creating a campaign using an existing template, any predefined rules from the template will appear in the Rules section as a single group. You can view and edit them during campaign creation.
+
+    **Custom Condition**
+
+    If your site sends additional visitor information, you can use it in rules. These appear as selectable fields when adding a rule/exclusion.
+
+    Click **+ Add Custom Condition** to create your own rule. Campaign managers can configure the custom values (in JSON format) as:
+
+    `Custom Field Name(Key Name), operator from the defined operators list, and value`   
+    <img src="../images/custom-condition.png" alt="Custom Condition" title="Custom Condition" style="border: 1px solid gray; zoom:70%;">
+
+    **Supported Custom Condition Operators**
+
+    Depending on the selected field, the following operators may appear:
+
+    * Equal
+    * Begins With
+    * Ends With
+    * Contains
+    * Greater Than
+    * Greater or Equal
+    * Less Than
+    * Less or Equal
+    * Between
+    * In
+
+    **Example Field Names**
+
+    ```
+    name
+    details.location
+    details.cart[0].productName
+    ```
+
+    **Sample JSON**
+
+    ```
+    {
+    "name": "Kore",
+    "details": {
+        "location": "India",
+        "cart": [{
+        "productName": "AI as Service",
+        "isActive": true
+        },
+        {
+        "productName": "AI as Work",
+        "isActive": true
+        }]
+    }
+    }
+    ```
+
+4. **Goals**: The purpose is to provide clear objectives and measurable targets to guide the campaign's strategy and assess its effectiveness in achieving desired outcomes. Click the **+ Add Goal** button and select the goals.  
+    <img src="../images/goal.png" alt="Goals" title="Goals" style="border: 1px solid gray; zoom:70%;">
+
+5. **Channel**: The purpose of channels in a web campaign is to designate a medium through which the campaign's message is disseminated, facilitating targeted outreach and engagement with the intended audience. Select the channel for the campaign from the dropdown.  
+    <img src="../images/channel-selected.png" alt="Channel" title="Channel" style="border: 1px solid gray; zoom:70%;">
+
+6. **Engagement Hours**: Select the time duration for running the campaign. You can select from the following:
+    1. **Anytime**: The campaign will be visible 24 hours, 7 days a week.
+    2. **Custom**: The campaign will be visible in the chosen time zone only during the set days and times.  
         <img src="../images/engagement-hours.png" alt="Engagement Hours" title="Engagement Hours" style="border: 1px solid gray; zoom:80%;"> 
 
-12. Click **Save**.
+7. Click **Save**.
 
 ### Post
 
@@ -198,7 +279,7 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 3. Click the **Layout Design** tab. Click the **Edit** icon under **Message,** enter a message to be displayed, and click **Save**. You can use the options available in the editor to design the layout. Under **Appearance**, select the **Size**.  
 <img src="../images/layout-design-post.png" alt="Layout Design Post" title="Layout Design Post" style="border: 1px solid gray; zoom:80%;"> 
 
-4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Steps to configure the engagement strategy are same for all proactive web campaign types. [Learn more](#chat).
+4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Exclusions**, **Goal**, **Channel**, and **Engagement Hours**. Steps to configure the engagement strategy are same for all proactive web campaign types. [Learn more](#chat).
 5. Click **Save**.
 
 ### Banner
@@ -210,7 +291,7 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 3. Click the **Layout Design** tab. Click the **Edit** icon under **Message,** enter a message to be displayed, and click **Save**. You can use the options available in the editor to design the layout. Under **Appearance**, select the **Pattern** (**Sticky**/**Floating**), **Placement** (**Top**/**Bottom**), **Background**, and **Text Color**.  
 <img src="../images/banner-layout design.png" alt="Layout Design Banner" title="Layout Design Banner" style="border: 1px solid gray; zoom:80%;"> 
 
-4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Steps to configure the engagement strategy are same for all proactive web campaign types. [Learn more](#chat).
+4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Exclusions**, **Goal**, **Channel**, and **Engagement Hours**. Steps to configure the engagement strategy are same for all proactive web campaign types. [Learn more](#chat).
 5. Click **Save**.
 
 ### Button
@@ -229,7 +310,7 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
     7. Select the **Placement** of the button (Left/Right).  
     <img src="../images/slide-out.gif" alt="Layout Design Button" title="Layout Design Button" style="border: 1px solid gray; zoom:80%;"> 
 
-4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Steps to configure the engagement strategy are same for all proactive web campaign types. [Learn more](#chat).
+4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Exclusions**, **Goal**, **Channel**, and **Engagement Hours**. Steps to configure the engagement strategy are same for all proactive web campaign types. [Learn more](#chat).
 5. Click **Save**.
 
 ## Templates
@@ -368,4 +449,4 @@ When the campaign runs, you can pause or stop it. You can also rerun a completed
 
 The Proactive Web Campaign plugin extends the Web SDK, enabling dynamic, rule-based interactions with website visitors. With this plugin, you can define campaigns that trigger actions like displaying messages or starting chats based on visitor behavior.
 
-For installation instructions, configuration options, and examples, refer to the README file in the [GitHub repository](https://github.com/Koredotcom/web-kore-sdk/tree/v3/dev/docs/plugins/proactive-web-campaign){:target="_blank"}.
+For installation instructions, configuration options, and examples, refer to the README file in the [GitHub repository](https://github.com/Koredotcom/web-kore-sdk/blob/v3/11.16.1/docs/plugins/proactive-web-campaign/README.md){:target="_blank"}.

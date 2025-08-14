@@ -75,14 +75,14 @@ Create an app on the Kore.ai XO platform. A JWT Token is created with the **clie
 1. Click the **Create App** link under the **Configurations** section of the **Genesys Cloud CX Messaging** Channel. 
 
 
-    ![alt_text](images/genesys_cloud_2.1.png "image_tooltip")
+    ![alt_text](images/genesys_cloud_2.1.png "")
 
 2. Use the **_Client ID_** and **_Client Secret_** value of the new app to create a JWT token using the steps mentioned[ here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/).
 
 
 
 
-    ![alt_text](images/genesys_cloud_2.2.png "image_tooltip")
+    ![alt_text](images/genesys_cloud_2.2.png "")
 
 3. Navigate back to the **Bot Connector** configuration screen in the Genesys Cloud Admin portal.
 4. Navigate to the **Configuration** > **Credentials** section and click **Change**.
@@ -92,7 +92,7 @@ Create an app on the Kore.ai XO platform. A JWT Token is created with the **clie
     2. A space
     3. The **JWT** created in before. 
 
-        ![alt_text](images/genesys_chat_beare_2.3.png "image_tooltip")
+        ![alt_text](images/genesys_chat_beare_2.3.png "")
 
 7. Click **Ok**.
 
@@ -113,15 +113,15 @@ Steps to create an app on the Genesys Developer Console:
 4. Enter the **App Name** and **Description**.
 
 5. Select the **Grant Types** as _Code Authorization_.
-    ![alt_text](images/genesys_chat_create_app.png "image_tooltip")
+    ![alt_text](images/genesys_chat_create_app.png "")
 
 6. Copy the **Callback URL** from the **Configurations** tab of the Kore.ai XO Platform for Genesys Cloud CX Messaging channel.
-    ![alt_text](images/genesys_chat_create_app2.png "image_tooltip")
+    ![alt_text](images/genesys_chat_create_app2.png "")
 
 7. In the Genesys Console, go back to the **Integrations > OAuth** page and paste the **Callback URL** that you have copied in the **Authorized redirect URI** field.
 
 8. Add the _architect_, _integrations_, and _textbot_ scopes in the **Scopes** field.
-    ![alt_text](images/genesys_chat_bearer1.png "image_tooltip")
+    ![alt_text](images/genesys_chat_bearer1.png "")
 
 9. Click **Save** to update the OAuth Client configuration.
 
@@ -130,7 +130,7 @@ Steps to create an app on the Genesys Developer Console:
 11. In the Kore.ai XO Platform, return to the **Channels & Flows** > **Channels** > **Digital** > **All** > **Genesys Cloud CX Messaging** > **Configurations** tab and paste the **Client ID** and **Client Secret** values.
 
 12. Once you paste all the required credentials, click **Authorize** to validate the authorization.
-    ![alt_text](images/genesys_cloud_cx6.png "image_tooltip")
+    ![alt_text](images/genesys_cloud_cx6.png "")
 
 13. If you are still logged into your Genesys Cloud instance, your current credentials are used. Otherwise, a login screen will open. Use valid credentials for the Genesys cloud instance you are configuring.
 
@@ -176,7 +176,7 @@ After creating the inbound messaging flow, you should configure and deploy the m
   <img src="../images/genesys-11.png" alt="genesys messenger" title="genesys messenger" style="border: 1px solid gray; zoom:70%;">
 
   8. Paste the script generated in the messenger deployment on the HTML page where you want to add the **Genesys Messenger**.
-  ![paste script](../images/genesys-12.png "paste script")
+  ![paste script](images/genesys-12.png "paste script")
 
 ## Step 6: Enable the Channel
 

@@ -30,10 +30,10 @@ Follow these steps to test your assistant:
 When you test an utterance, the NLP engine tries to identify an intent using the following  engines and intent identification features:
 
 
-* [Machine Learning](../../natural-language/training/machine-learning-engine){:target="_blank"} engine, 
-* [Fundamental Meaning](../../natural-language/training/fundamental-meaning){:target="_blank"} engine,
-* [Knowledge AI](../../../answers/knowledge-ai/knowledge-ai-introduction){:target="_blank"}, including the [Knowledge Graph](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"} engine,
-* [Ranking and Resolver](../../natural-language/training/ranking-and-resolver){:target="_blank"}.
+* [Machine Learning](../natural-language/training/machine-learning-engine.md){:target="_blank"} engine, 
+* [Fundamental Meaning](../natural-language/training/fundamental-meaning.md){:target="_blank"} engine,
+* [Knowledge AI](../../automation/knowledge-ai/knowledge-ai-introduction.md){:target="_blank"}, including the [Knowledge Graph](../../automation/knowledge-ai/knowledge-graph-training.md){:target="_blank"} engine,
+* [Ranking and Resolver](../natural-language/training/ranking-and-resolver.md){:target="_blank"}.
 
 
 !!! note
@@ -73,7 +73,7 @@ During testing of the VA, the matched entities are displayed. The entities from 
 * first NER and pattern entities 
 * then the remaining entities.
 
-Post v. 8.0 of the XO Platform, the details of how the entity is matched, and with what confidence scores are also displayed. The details include:
+Post v. 8.0 of the Platform, the details of how the entity is matched, and with what confidence scores are also displayed. The details include:
 
 * **Identification Engine** – Machine Learning, Fundamental Meaning or Knowledge Graph;
 * **Training Type** – match can be from NER, pattern training, entity name, system concept, etc.. In case of pattern match, click the row to get the details for the same;
@@ -88,7 +88,7 @@ When you test a user utterance, in addition to the matching intents you will als
 
 Under the _Fundamental Meaning_ tab, you can see the scores of all the intents even if they aren’t shortlisted.
 
-As mentioned above, the Kore.ai NLP engine uses Machine Learning, Fundamental Meaning, and Knowledge Graph (if any) models to match intents. If the NLP engine finds a single _Definitive Match_ through one of the underlying models, you will see the task as the matching intent. If the test identifies more than one definitive match, you will receive them as options to pick the right intent.
+As mentioned above, the NLP engine uses Machine Learning, Fundamental Meaning, and Knowledge Graph (if any) models to match intents. If the NLP engine finds a single _Definitive Match_ through one of the underlying models, you will see the task as the matching intent. If the test identifies more than one definitive match, you will receive them as options to pick the right intent.
 
 If the models shortlist more than one possible match, all the shortlisted intents are re-scored by the _Ranking and Resolver_ using the _Fundamental Meaning_ model to determine the final winner.
 
@@ -200,7 +200,7 @@ The basis for **intent elimination** by Ranking & Resolver when the three engine
 
 
 #### Ranking and Resolver v2
-[Version 2 of the Ranking and Resolver](../../natural-language/training/ranking-and-resolver){:target="_blank"} only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
+[Version 2 of the Ranking and Resolver](../natural-language/training/ranking-and-resolver.md){:target="_blank"} only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
 If you enable Ranking and Resolver Version 2, your test results adjust as follows: 
 
 The **Ranking & Resolver** window displays the following:
@@ -237,9 +237,9 @@ Below is the process we recommend you use for utterance training:
     1. **For an unmatched intent**: From the **Select an Intent** drop-down list, select the intent that you want to match with the user utterance.
     2. **For multiple matched intents**: Select the radio button for the intent you want to match.
     3. **For a single matched intent**: Click the name of the matched intent.
-2. The user utterance that you entered gets displayed in the field under the _ML Utterances_ section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](../../natural-language/training/machine-learning-engine){:target="_blank"}.
-3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](../../natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
-4. Under the _Intent Patterns_ section, enter task patterns for the intent. For more information, read [Managing Patterns](../../natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}.
+2. The user utterance that you entered gets displayed in the field under the _ML Utterances_ section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](../natural-language/training/machine-learning-engine.md){:target="_blank"}.
+3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](../natural-language/training/fundamental-meaning.md/#manage-synonyms){:target="_blank"}.
+4. Under the _Intent Patterns_ section, enter task patterns for the intent. For more information, read [Managing Patterns](../natural-language/training/fundamental-meaning.md/#manage-patterns-and-rules){:target="_blank"}.
 5. When you are done making the relevant training entries, click **Re-Run Utterance** to see if you have improved the intent to get a high confidence score. 
 
 <img src="../images/utterance-testing-16-utterance-training.png" alt="Utterance-based Training" title="Utterance-based Training" style="border: 1px solid gray; zoom:50%;"/>
@@ -300,7 +300,7 @@ If you want the assistant to respond to user utterance with FAQs there are two w
 
 * set the terms, term configuration, or classes from the FAQ page, train the KG and retest the utterance.
 * add the utterance as an alternate question to the selected FAQ from the Knowledge Graph page, train the KG and retest the utterance.
-[Know more about Knowledge Graph Training](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"}.
+[Know more about Knowledge Graph Training](../../automation/knowledge-ai/knowledge-graph-training.md){:target="_blank"}.
 
 
 
