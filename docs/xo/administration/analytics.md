@@ -55,7 +55,7 @@ By clicking on any entry you get to view further details pertaining to below:
 
 !!! Note
 
-    The Audit Report contains system and user events for several Kore.ai products. To drill down further than Event Categories, use the Search for Description field, which lets you add one more criterion to the filter. To get XO Platform data, search for "Bot Builder" exactly; the Search field is case-sensitive. For more complex filtering, we recommend exporting the report and using a spreadsheet editor.
+    The Audit Report contains system and user events for several Kore.ai products. To drill down further than Event Categories, use the Search for Description field, which lets you add one more criterion to the filter. To get XO Platform data, search for App Builder" exactly; the Search field is case-sensitive. For more complex filtering, we recommend exporting the report and using a spreadsheet editor.
 
 ### Audit Report Details
 
@@ -360,7 +360,7 @@ The audit report is categorized by event category and event name. The following 
 
 ## Viewing Chat History
 
-You can view Chat History for all deployed bots from the **Analytics > Bot Chat History** section of the Kore.ai Bots Admin Console.
+You can view Chat History for all deployed bots from the **Analytics > Bot Chat History** section of the Kore.ai Admin Console.
 
 <img src="../images/analytics-img5.png" alt="Analytics - Bot Chat History" title="Analytics - Bot Chat History" style="border: 1px solid gray;zoom:70%;"/>
 
