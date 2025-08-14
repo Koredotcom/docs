@@ -134,14 +134,14 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 1. Sign in to [Zoom App Marketplace](https://marketplace.zoom.us/apps){:target="_blank"} as an Admin.
 
 2. Select **App Types** > **Connectors** from the left navigation filter menu, and navigate to the **Connectors** page, or simply type “kore.ai” in the **Search** field.  
-<img src="../images/koreai-virtual-assistant-8.png" alt="koreai-virtual-assistant" title="koreai-virtual-assistant" style="border: 1px solid gray; zoom:80%;">  
-<img src="../images/koreai-virtual-assistant2-9.png" alt="koreai-virtual-assistant2" title="koreai-virtual-assistant2" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/koreai-virtual-assistant-8.png" alt="virtual-assistant" title="virtual-assistant" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/koreai-virtual-assistant2-9.png" alt="virtual-assistant2" title="virtual-assistant2" style="border: 1px solid gray; zoom:80%;">
 
 3. Select the **Kore.ai** connector, and navigate to the **Connector Details** screen.  
 <img src="../images/connector-details-10.png" alt="connector-details" title="connector-details" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Create Kore.ai Virtual Assistant Connector**, and navigate to the **Create Kore.ai Virtual Assistant Connector** screen.  
-<img src="../images/create-koreai-virtual-assistant-connector-11.png" alt="create-koreai-virtual-assistant-connector" title="create-koreai-virtual-assistant-connector" style="border: 1px solid gray; zoom:80%;">
+4. Click **Create Kore.ai Assistant Connector**, and navigate to the **Create Kore.ai Assistant Connector** screen.  
+<img src="../images/create-koreai-virtual-assistant-connector-11.png" alt="create-virtual-assistant-connector" title="create-virtual-assistant-connector" style="border: 1px solid gray; zoom:80%;">
 
 5. Enter a name in the **Connector Name** field, select “Voicebot” from the “Choose Bot Type” dropdown list, and then click **Next**.
 
@@ -150,13 +150,13 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 7. Copy the **Bot ID**, **Client ID**, and **Client Secret** of your respective app on kore.ai. (Go to **Flows & Channel** > **Digital**. Under **Configured**, click **Configured Channels** > **Web/Mobile Client** > **JWT App Details.**)  
 <img src="../images/web-mobile-client-screen-12.png" alt="web-mobile-client-screen" title="web-mobile-client-screen" style="border: 1px solid gray; zoom:80%;">
 
-8. Paste them into the **Bot ID**, **Client ID**, and **Client Secret** fields under the **Authorization Parameters** section on the **Zoom Kore.ai Virtual Assistant Connector** page, and then click **Next**.  
-<img src="../images/zoom-koreai-va-connector-13.png" alt="zoom-koreai-va-connector" title="zoom-koreai-va-connector" style="border: 1px solid gray; zoom:80%;">
+8. Paste them into the **Bot ID**, **Client ID**, and **Client Secret** fields under the **Authorization Parameters** section on the **Zoom Kore.ai Assistant Connector** page, and then click **Next**.  
+<img src="../images/zoom-koreai-va-connector-13.png" alt="zoom-connector" title="zoom-connector" style="border: 1px solid gray; zoom:80%;">
 
-9. Copy the **Domain Name** and **DID Number** from the **Zoom Kore.ai Virtual Assistant Connector** page.  
+9. Copy the **Domain Name** and **DID Number** from the **Zoom Kore.ai Assistant Connector** page.  
 <img src="../images/domain-name-did-number-14.png" alt="domain-name-did-number" title="domain-name-did-number" style="border: 1px solid gray; zoom:80%;">
 
-10. Paste them into the **Virtual Assistant Connector** on **ZCC**.
+10. Paste them into the **Assistant Connector** on **ZCC**.
 
 11. Click **Next** to authorize the **Kore.ai Chatbot Connector** with the Kore.ai platform.
 
@@ -168,7 +168,7 @@ This section explains the process of fetching the details and summary of the con
 
 **Steps**
 
-1. Sign in to **UXO**.
+1. Sign in to **AI for Service**.
 2. Go to **Contact Center AI** > **Analytics** > **Contact Center** > **Interactions** and ensure there are call records.  
 <img src="../images/contact-center-interactions-15.png" alt="contact-center-interactions" title="contact-center-interactions" style="border: 1px solid gray; zoom:80%;">
 
@@ -182,7 +182,7 @@ This section explains the process of fetching the details and summary of the con
 6. Enable the **Chat History** option under **Automation**.
 7. Click **Save**.
 8. Go to **Generative AI** > **Models Library**, locate **Kore.ai XO GPT**, and click **Enable Now.**  
-<img src="../images/enable-koreai-xo-gpt-18.png" alt="enable-koreai-xo-gpt" title="enable-koreai-xo-gpt" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/enable-koreai-xo-gpt-18.png" alt="enable-xo-gpt" title="enable-xo-gpt" style="border: 1px solid gray; zoom:80%;">
 
 9. On the **Kore.ai XO GPT** page, select:
     
@@ -208,13 +208,13 @@ This section explains the process of fetching the details and summary of the con
 15. Copy the **curl** from the [Conversation Details and Summary API](../../../apis/automation/conversation-details-and-summary.md){:target="_blank"}.
 16. Go to **Postman**, paste the **curl** copied from the API, and then:
 
-    16.1 Replace the **botID** with the **Bot ID** value copied from **UXO**. \
+    16.1 Replace the **botID** with the **Bot ID** value copied from **AI for Service**.  
 Follow these steps to get the **botID**:
         
-     16.1.1 Sign in to **UXO**.
+     16.1.1 Sign in to **AI for Service**.
     
      16.1.2 Go to **Contact Center AI** > **Flows & Channels** > **Digital**.  
-        <img src="../images/contact-center-flowsandchannels-digital-23.png" alt="contact-center-flowsandchannels-digital" title="contact-center-flowsandchannels-digital" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/contact-center-flowsandchannels-digital-23.png" alt="contact-center-digital" title="contact-center-digital" style="border: 1px solid gray; zoom:80%;">
 
      16.1.3 Click **Web/Mobile Client** under **Configured**.
     
@@ -223,10 +223,10 @@ Follow these steps to get the **botID**:
 
      16.1.5 Scroll down to the **Bot ID** section, and click the **Copy** button to copy the **botID** value.
   
-    16.2 Copy the **sessionID** from **UXO**.  
+    16.2 Copy the **sessionID** from **AI for Service**.  
    Follow these steps to get the **sessionID**:
     
-     16.2.1 Sign in to **UXO**.
+     16.2.1 Sign in to **AI for Service**.
     
      16.2.2 Go to **Contact Center AI** > **Analytics** > **Contact Center** > **Interactions**.
     
