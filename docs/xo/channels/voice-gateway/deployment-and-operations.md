@@ -12,1258 +12,337 @@ This document contains all the region wise IPs, ports, and protocols for Voice G
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>SIP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>3.224.189.218
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>savg-sbc1.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 1    |
+| ------------------ | ----------------- |
+| **IP Address**     | 3.224.189.218     |
+| **FQDN**           | savg-sbc1.kore.ai |
+| **TCP / UDP Port** | 5060              |
+| **TLS Port**       | 5061              |
 
 For example: sip:savg-sbc1.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>SIP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>35.174.41.205
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 2    |
+| ------------------ | ----------------- |
+| **IP Address**     | 35.174.41.205     |
+| **FQDN**           | savg-sbc2.kore.ai |
+| **TCP / UDP Port** | 5060              |
+| **TLS Port**       | 5061              |
 
 For example: sip:savg-sbc2.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>44.215.230.111
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 1 |
+| -------------- | -------------- |
+| **IP Address** | 44.215.230.111 |
+| **RTP Ports**  | 6000-65535     |
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.210.75.166
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 2 |
+| -------------- | -------------- |
+| **IP Address** | 54.210.75.166  |
+| **RTP Ports**  | 6000-65535     |
 
 For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:  
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC Session Border Controller (SBC)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>3.224.189.218
-<br>
-35.174.41.205
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>
-savg-sbc1.kore.ai,<br>savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>HTTPS</strong>
-   </td>
-   <td>443
-   </td>
-  </tr>
-  <tr>
-   <td><strong>WSS Port</strong>
-   </td>
-   <td>8443
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC Session Border Controller (SBC)  |
+| -------------- | --------------------------------------- |
+| **IP Address** | 3.224.189.218<br>35.174.41.205          |
+| **FQDN**       | savg-sbc1.kore.ai,<br>savg-sbc2.kore.ai |
+| **HTTPS**      | 443                                     |
+| **WSS Port**   | 8443                                    |
 
 For example: sip:savg-sbc1.kore.ai:443
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC RTP Servers
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>44.215.230.111
-<br>
-54.210.75.166
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC RTP Servers              |
+| -------------- | ------------------------------- |
+| **IP Address** | 44.215.230.111<br>54.210.75.166 |
+| **RTP Ports**  | 6000-65535                      |
 
 #### United States of America (US) - West
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>SIP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.67.69.12
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>usw-savg-sbc1.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 1        |
+| ------------------ | --------------------- |
+| **IP Address**     | 54.67.69.12           |
+| **FQDN**           | usw-savg-sbc1.kore.ai |
+| **TCP / UDP Port** | 5060                  |
+| **TLS Port**       | 5061                  |
 
 For example: sip:usw-savg-sbc1.kore.ai:5060
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>SIP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.177.21.117
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>usw-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+
+| **Component**      | SIP Server – 2        |
+| ------------------ | --------------------- |
+| **IP Address**     | 54.177.21.117         |
+| **FQDN**           | usw-savg-sbc2.kore.ai |
+| **TCP / UDP Port** | 5060                  |
+| **TLS Port**       | 5061                  |
 
 For example: sip:usw-savg-sbc2.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.67.69.12
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 1 |
+| -------------- | -------------- |
+| **IP Address** | 54.67.69.12    |
+| **RTP Ports**  | 6000-65535     |
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.177.21.117
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 2 |
+| -------------- | -------------- |
+| **IP Address** | 54.177.21.117  |
+| **RTP Ports**  | 6000-65535     |
 
 For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC Session Border Controller (SBC)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.67.69.12
-<br>
-54.177.21.117
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>usw-savg-sbc1.kore.ai
-<br>
-usw-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>HTTPS</strong>
-   </td>
-   <td>443
-   </td>
-  </tr>
-  <tr>
-   <td><strong>WSS Port</strong>
-   </td>
-   <td>8443
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC Session Border Controller (SBC)         |
+| -------------- | ---------------------------------------------- |
+| **IP Address** | 54.67.69.12<br>54.177.21.117                   |
+| **FQDN**       | usw-savg-sbc1.kore.ai<br>usw-savg-sbc2.kore.ai |
+| **HTTPS**      | 443                                            |
+| **WSS Port**   | 8443                                           |
 
 For example: sip:usw-savg-sbc1.kore.ai:443
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC RTP Servers
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.67.69.12
-<br>
-54.177.21.117
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC RTP Servers           |
+| -------------- | ---------------------------- |
+| **IP Address** | 54.67.69.12<br>54.177.21.117 |
+| **RTP Ports**  | 6000-65535                   |
 
 #### Australia (AU)
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td>
-<strong>Component</strong>
-   </td>
-   <td>SIP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.153.137.7
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>au-prod-savg-sbc1.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 1            |
+| ------------------ | ------------------------- |
+| **IP Address**     | 54.153.137.7              |
+| **FQDN**           | au-prod-savg-sbc1.kore.ai |
+| **TCP / UDP Port** | 5060                      |
+| **TLS Port**       | 5061                      |
 
 For example: sip:au-prod-savg-sbc1.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>SIP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>13.237.170.233
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>au-prod-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 2            |
+| ------------------ | ------------------------- |
+| **IP Address**     | 13.237.170.233            |
+| **FQDN**           | au-prod-savg-sbc2.kore.ai |
+| **TCP / UDP Port** | 5060                      |
+| **TLS Port**       | 5061                      |
 
 For example: sip:au-prod-savg-sbc2.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.153.137.7
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 1 |
+| -------------- | -------------- |
+| **IP Address** | 54.153.137.7   |
+| **RTP Ports**  | 6000-65535     |
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>13.237.170.233
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 2 |
+| -------------- | -------------- |
+| **IP Address** | 13.237.170.233 |
+| **RTP Ports**  | 6000-65535     |
 
 For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC Session Border Controller (SBC)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.153.137.7
-<br>
-13.237.170.233
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>au-prod-savg-sbc1.kore.ai,
-<br>
-au-prod-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>HTTPS</strong>
-   </td>
-   <td>443
-   </td>
-  </tr>
-  <tr>
-   <td><strong>WSS Port</strong>
-   </td>
-   <td>8443
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC Session Border Controller (SBC)                  |
+| -------------- | ------------------------------------------------------- |
+| **IP Address** | 54.153.137.7<br>13.237.170.233                          |
+| **FQDN**       | au-prod-savg-sbc1.kore.ai,<br>au-prod-savg-sbc2.kore.ai |
+| **HTTPS**      | 443                                                     |
+| **WSS Port**   | 8443                                                    |
 
 For example: sip:au-prod-savg-sbc1.kore.ai:443
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC RTP Servers
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.153.137.7
-<br>
-13.237.170.233
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC RTP Servers             |
+| -------------- | ------------------------------ |
+| **IP Address** | 54.153.137.7<br>13.237.170.233 |
+| **RTP Ports**  | 6000-65535                     |
 
 #### India (IN)
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td>
-<strong>Component</strong>
-   </td>
-   <td>SIP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>20.244.87.83
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>ind-savg-sbc1.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 1        |
+| ------------------ | --------------------- |
+| **IP Address**     | 20.244.87.83          |
+| **FQDN**           | ind-savg-sbc1.kore.ai |
+| **TCP / UDP Port** | 5060                  |
+| **TLS Port**       | 5061                  |
 
 For example: sip:ind-savg-sbc1.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>SIP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>20.197.5.84
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>ind-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 2        |
+| ------------------ | --------------------- |
+| **IP Address**     | 20.197.5.84           |
+| **FQDN**           | ind-savg-sbc2.kore.ai |
+| **TCP / UDP Port** | 5060                  |
+| **TLS Port**       | 5061                  |
 
 For example: sip:ind-savg-sbc2.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>20.244.87.83
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 1 |
+| -------------- | -------------- |
+| **IP Address** | 20.244.87.83   |
+| **RTP Ports**  | 6000-65535     |
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>20.197.5.84
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 2 |
+| -------------- | -------------- |
+| **IP Address** | 20.197.5.84    |
+| **RTP Ports**  | 6000-65535     |
 
 For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC Session Border Controller (SBC)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>20.244.87.83
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>ind-savg-sbc1.kore.ai,
-<br>
-ind-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>HTTPS</strong>
-   </td>
-   <td>443
-   </td>
-  </tr>
-  <tr>
-   <td><strong>WSS Port</strong>
-   </td>
-   <td>8443
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC Session Border Controller (SBC)          |
+| -------------- | ----------------------------------------------- |
+| **IP Address** | 20.244.87.83                                    |
+| **FQDN**       | ind-savg-sbc1.kore.ai,<br>ind-savg-sbc2.kore.ai |
+| **HTTPS**      | 443                                             |
+| **WSS Port**   | 8443                                            |
 
 For example: sip:ind-savg-sbc1.kore.ai:443
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC RTP Servers
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>20.244.87.83
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC RTP Servers |
+| -------------- | ------------------ |
+| **IP Address** | 20.244.87.83       |
+| **RTP Ports**  | 6000-65535         |
 
 #### London (EU)
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td>
-<strong>Component</strong>
-   </td>
-   <td>SIP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>18.133.179.73
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>eu-savg-sbc1.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 1       |
+| ------------------ | -------------------- |
+| **IP Address**     | 18.133.179.73        |
+| **FQDN**           | eu-savg-sbc1.kore.ai |
+| **TCP / UDP Port** | 5060                 |
+| **TLS Port**       | 5061                 |
 
 For example: sip:eu-savg-sbc1.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>SIP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>13.43.133.73
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>eu-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 2       |
+| ------------------ | -------------------- |
+| **IP Address**     | 13.43.133.73         |
+| **FQDN**           | eu-savg-sbc2.kore.ai |
+| **TCP / UDP Port** | 5060                 |
+| **TLS Port**       | 5061                 |
 
 For example: sip:eu-savg-sbc2.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>18.133.179.73
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 1 |
+| -------------- | -------------- |
+| **IP Address** | 18.133.179.73  |
+| **RTP Ports**  | 6000-65535     |
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>13.43.133.73
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 2 |
+| -------------- | -------------- |
+| **IP Address** | 13.43.133.73   |
+| **RTP Ports**  | 6000-65535     |
 
 For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC Session Border Controller (SBC)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>18.133.179.73
-<br>
-13.43.133.73
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>eu-savg-sbc1.kore.ai,
-<br>
-eu-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>HTTPS</strong>
-   </td>
-   <td>443
-   </td>
-  </tr>
-  <tr>
-   <td><strong>WSS Port</strong>
-   </td>
-   <td>8443
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC Session Border Controller (SBC)        |
+| -------------- | --------------------------------------------- |
+| **IP Address** | 18.133.179.73<br>13.43.133.73                 |
+| **FQDN**       | eu-savg-sbc1.kore.ai,<br>eu-savg-sbc2.kore.ai |
+| **HTTPS**      | 443                                           |
+| **WSS Port**   | 8443                                          |
 
 For example: sip:eu-savg-sbc1.kore.ai:443
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC RTP Servers
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>18.133.179.73
-<br>
-13.43.133.73
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC RTP Servers            |
+| -------------- | ----------------------------- |
+| **IP Address** | 18.133.179.73<br>13.43.133.73 |
+| **RTP Ports**  | 6000-65535                    |
 
 #### Germany (DE)
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td>
-<strong>Component</strong>
-   </td>
-   <td>SIP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>3.70.125.14
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>de-savg-sbc1.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 1       |
+| ------------------ | -------------------- |
+| **IP Address**     | 3.70.125.14          |
+| **FQDN**           | de-savg-sbc1.kore.ai |
+| **TCP / UDP Port** | 5060                 |
+| **TLS Port**       | 5061                 |
 
 For example: sip:de-savg-sbc1.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>SIP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>18.158.223.171
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>de-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 2       |
+| ------------------ | -------------------- |
+| **IP Address**     | 18.158.223.171       |
+| **FQDN**           | de-savg-sbc2.kore.ai |
+| **TCP / UDP Port** | 5060                 |
+| **TLS Port**       | 5061                 |
 
 For example: sip:de-savg-sbc2.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>3.70.125.14
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 1 |
+| -------------- | -------------- |
+| **IP Address** | 3.70.125.14    |
+| **RTP Ports**  | 6000-65535     |
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>18.158.223.171
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 2 |
+| -------------- | -------------- |
+| **IP Address** | 18.158.223.171 |
+| **RTP Ports**  | 6000-65535     |
 
 For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC Session Border Controller (SBC)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>3.70.125.14
-<br>
-18.158.223.171
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>de-savg-sbc1.kore.ai,
-<br>
-de-savg-sbc2.kore.ai</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>HTTPS</strong>
-   </td>
-   <td>443
-   </td>
-  </tr>
-  <tr>
-   <td><strong>WSS Port</strong>
-   </td>
-   <td>8443
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC Session Border Controller (SBC)        |
+| -------------- | --------------------------------------------- |
+| **IP Address** | 3.70.125.14<br>18.158.223.171                 |
+| **FQDN**       | de-savg-sbc1.kore.ai,<br>de-savg-sbc2.kore.ai |
+| **HTTPS**      | 443                                           |
+| **WSS Port**   | 8443                                          |
 
 For example: sip:de-savg-sbc1.kore.ai:443
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC RTP Servers
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>3.70.125.14
-<br>
-18.158.223.171
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC RTP Servers            |
+| -------------- | ----------------------------- |
+| **IP Address** | 3.70.125.14<br>18.158.223.171 |
+| **RTP Ports**  | 6000-65535                    |
 
 #### Japan (JP)
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td>
-<strong>Component</strong>
-   </td>
-   <td>SIP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>35.76.183.247
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>jp-savg-sbc1.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 1       |
+| ------------------ | -------------------- |
+| **IP Address**     | 35.76.183.247        |
+| **FQDN**           | jp-savg-sbc1.kore.ai |
+| **TCP / UDP Port** | 5060                 |
+| **TLS Port**       | 5061                 |
 
 For example: sip:jp-savg-sbc1.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>SIP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.248.11.38
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>jp-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TCP / UDP Port</strong>
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TLS Port</strong>
-   </td>
-   <td>5061
-   </td>
-  </tr>
-</table>
+| **Component**      | SIP Server – 2       |
+| ------------------ | -------------------- |
+| **IP Address**     | 54.248.11.38         |
+| **FQDN**           | jp-savg-sbc2.kore.ai |
+| **TCP / UDP Port** | 5060                 |
+| **TLS Port**       | 5061                 |
 
 For example: sip:jp-savg-sbc2.kore.ai:5060
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>35.76.183.247
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 1 |
+| -------------- | -------------- |
+| **IP Address** | 35.76.183.247  |
+| **RTP Ports**  | 6000-65535     |
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>RTP Server – 2
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>54.248.11.38
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | RTP Server – 2 |
+| -------------- | -------------- |
+| **IP Address** | 54.248.11.38   |
+| **RTP Ports**  | 6000-65535     |
 
 For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC Session Border Controller (SBC)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>35.76.183.247
-<br>
-54.248.11.38
-   </td>
-  </tr>
-  <tr>
-   <td><strong>FQDN</strong>
-   </td>
-   <td>jp-savg-sbc1.kore.ai,<br>
-jp-savg-sbc2.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td><strong>HTTPS</strong>
-   </td>
-   <td>443
-   </td>
-  </tr>
-  <tr>
-   <td><strong>WSS Port</strong>
-   </td>
-   <td>8443
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC Session Border Controller (SBC)       |
+| -------------- | -------------------------------------------- |
+| **IP Address** | 35.76.183.247<br>54.248.11.38                |
+| **FQDN**       | jp-savg-sbc1.kore.ai<br>jp-savg-sbc2.kore.ai |
+| **HTTPS**      | 443                                          |
+| **WSS Port**   | 8443                                         |
 
 For example: sip:jp-savg-sbc2.kore.ai:443
 
-<table>
-  <tr>
-   <td><strong>Component</strong>
-   </td>
-   <td>WebRTC RTP Servers
-   </td>
-  </tr>
-  <tr>
-   <td><strong>IP Address</strong>
-   </td>
-   <td>35.76.183.247<br>
-54.248.11.38
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RTP Ports</strong>
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| **Component**  | WebRTC RTP Servers            |
+| -------------- | ----------------------------- |
+| **IP Address** | 35.76.183.247<br>54.248.11.38 |
+| **RTP Ports**  | 6000-65535                    |
 
 ## Infrastructure Setup Guide
 
@@ -1373,11 +452,9 @@ If your organization utilizes VPNs to connect remote workers, ensure that all ne
 
 For a list of the common Kore Cloud ports, protocols, and destinations, see the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md/).
 
-
 #### Local Area Network (LAN)
 
 Connectivity issues often arise when the speed and duplex of devices connected to your LAN are mismatched. Ensure that your network ports and trunks register the correct speed and duplex settings for each connected device. Most devices on a typical LAN have a speed/duplex of "100/full" or "1000/full".
-
 
 #### Wireless Local Area Network (WLAN)
 
@@ -1398,68 +475,19 @@ Prioritize voice and video traffic on all your network devices to maintain voice
 
 The manufacturer's documentation for your specific network hardware setup will detail the network QoS process, as it varies depending on the vendor and model.
 
-
-<table>
-  <tr>
-   <td><strong>Traffic description</strong>
-   </td>
-   <td><strong>Protocol</strong>
-   </td>
-   <td><strong>DSCP (Diffserv Code Point) value</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Voice traffic
-   </td>
-   <td>RTP
-   </td>
-   <td>46 (EF)
-   </td>
-  </tr>
-  <tr>
-   <td>Signaling traffic
-   </td>
-   <td>SIP
-   </td>
-   <td>24 (CS3)
-   </td>
-  </tr>
-</table>
+| **Traffic Description** | **Protocol** | **DSCP (Diffserv Code Point) Value** |
+| ----------------------- | ------------ | ------------------------------------ |
+| Voice traffic           | RTP          | 46 (EF)                              |
+| Signaling traffic       | SIP          | 24 (CS3)                             |
 
 **Performance target metrics**
 
-<table>
-  <tr>
-   <td><strong>Connection</strong>
-   </td>
-   <td><strong>Target Metric</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Client connectivity
-   </td>
-   <td>Kore Cloud requires round-trip latency of less than 1 second and packet loss of less than 10%.
-   </td>
-  </tr>
-  <tr>
-   <td>Edge connectivity
-   </td>
-   <td>Kore Cloud requires round-trip latency of less than 300 ms and packet loss of less than 5%.
-   </td>
-  </tr>
-  <tr>
-   <td>External phone calls
-   </td>
-   <td>When the agent is on WAN/Internet, the one-way latency between the agent and Edge should be less than 150 ms, with packet loss less than 1% and end-to-end latency less than 150 ms.
-   </td>
-  </tr>
-  <tr>
-   <td>Internal phone calls
-   </td>
-   <td>When the agent and Edge are on the same LAN, the one-way latency must be less than 75 ms, packet loss less than 1%, and the end-to-end latency between the agent and Edge must be less than 75 ms.
-   </td>
-  </tr>
-</table>
+| **Connection**       | **Target Metric**                                                                                                                                                                                  |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Client connectivity  | Kore Cloud requires round-trip latency of less than 1 second and packet loss of less than 10%.                                                                                                     |
+| Edge connectivity    | Kore Cloud requires round-trip latency of less than 300 ms and packet loss of less than 5%.                                                                                                        |
+| External phone calls | When the agent is on WAN/Internet, the one-way latency between the agent and Edge should be less than 150 ms, with packet loss less than 1% and end-to-end latency less than 150 ms.               |
+| Internal phone calls | When the agent and Edge are on the same LAN, the one-way latency must be less than 75 ms, packet loss less than 1%, and the end-to-end latency between the agent and Edge must be less than 75 ms. |
 
 ## Check List 
 
@@ -1511,3 +539,62 @@ The manufacturer's documentation for your specific network hardware setup will d
     - [ ] Yes
     - [ ] No
 
+## Ports and services for WebRTC
+
+Kore.ai Cloud WebRTC (Agent Desktop) requires specific port and service configurations that must be considered before configuring a firewall in different network scenarios. The following diagrams show how to configure the ports and services for each scenario.
+
+When reviewing the diagrams to identify the one that best matches the WebRTC (Agent Desktop) setup, consider the following questions:
+
+* Is Kore.ai Cloud Voice Edges being used?
+* Are agents:
+
+  * Inside the same network or firewall as the Edges?
+  * Outside or in a separate network or firewall from the Edges?
+  * In both locations (some inside and some outside)?
+* Is the firewall configured as Endpoint Dependent (Symmetric) or Endpoint Independent (Asymmetric)?
+
+### Call Flow
+<img src="../images/call-flow-diagram.png" alt="Call Flow Diagram" title="Call Flow Diagram" style="border: 1px solid gray; zoom:70%;">
+
+### Agent Desktop Architecture (Client Inside Firewall-Asymmetric NAT)
+<img src="../images/agent-desktop-architecture.png" alt="Agent Desktop Architecture-Asymmetric" title="Agent Desktop Architecture-Asymmetric" style="border: 1px solid gray; zoom:70%;">
+
+### Agent Desktop Architecture (Client Inside Firewall-Symmetric NAT)
+<img src="../images/agent-desktop-architecture-symmetric.png" alt="Agent Desktop Architecture-Symmetric" title="Agent Desktop Architecture-Symmetric" style="border: 1px solid gray; zoom:70%;">
+
+### Firewall Requirements
+
+* [US Region](../voice-gateway/us-firewall-rules.md)
+* [Japan (JP) Region](../voice-gateway/japan-firewall-rules.md)
+* [Germany (DE) Region](../voice-gateway/germany-firewall-rules.md)
+
+### User Diagnostics
+
+If connectivity issues, screen freezing, or lag occur in Agent Desktop, perform the following troubleshooting steps:
+* First, verify the network connection. This applies whether working in the office or remotely.
+* Ensure the network strength meets Kore’s defined parameters. See [Minimum System Requirements and Supported Browsers](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for reference.
+* After completing the above steps, run [User Diagnostics](../../console/manage-layout.md#user-diagnostics).
+
+### Checklist
+
+| Sl. No. | Description | Impact | Yes/No |
+|---------|-------------|--------|--------|
+| 1 | Does your firewall support the Pinhole feature or not? | Firewalls performing a network address translation (NAT) function — the mapping between the external IP address, port socket, and the internal IP address, port socket — is called a pinhole. |  |  |
+| 2 | If your firewall has a Pinhole feature, does it have the support of below modules:
+||**NAT hole punching** | If No, unable to establish direct connection between two peers in which one or both are behind firewalls or behind routers that use NAT.<br>
+<br>|**NAT traversal** | If No, will not allow edges behind a NAT device to communicate with devices outside the NAT network. With NAT traversal, the edges located behind a router can communicate directly with each other without the need for port forwarding or any other manual configurations.<br><br>
+<br>|**TCP hole punching**| If No, unable to establish TCP connection between two peers using NAT traversal.<br><br>
+<br> |**UDP hole punching**| If No, unable to establish bidirectional UDP connection between two peers using NAT traversal. |  |  |
+| 3 | Will you be able to enable WSS support in your Firewall to establish a WebSocket over an encrypted TLS connection?<br><br>|If No, unable to establish a WebSocket over an encrypted TLS connection to transmit the packets (data) in a secure way. |  |  |
+| 4 | Are you connecting to the internet through the router?<br><br>|If yes, should open required ports as described in [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md). Otherwise, unable to establish the connection between the peers and traffic will be blocked. |  |  |
+| 5 | Are you using any proxy server to connect to the internet?<br><br>|If Yes, won’t be able to do NAT traversal directly with the end user. |  |  |
+| 6 | If you are using a proxy server, will you be able to remove or skip (bypass) your proxy server from our "Kore" configuration environment?<br><br>|If yes, NAT traversal will be done directly with the end user and packets (data) will be transmitted smoothly without having any hassles. |  |  |
+| 7 | Will you be able to allocate and configure one test number to us?<br><br>|If yes, we will test everything and will be able to deliver without any blockers or issues. This will help us to troubleshoot the issues in the future, if any occurs. |  |  |
+| 8 | Will you allow and bypass traffic for *.kore.ai and *.twilio.com domains (HTTPS) on 443, 8443, 3478, and 5349 ports?<br><br>|If not, won’t be able to establish any connection, unable to do the NAT traversal, unable to transmit IP packets (audio, data, etc.) between the peers. |  |  |
+| 9 | As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to white list and allow the traffic to all IP addresses and domains (SBCs, STUN/TURN, etc.)?<br><br>|If not, won’t be able to establish any connection, unable to do the NAT traversal, unable to transmit IP packets (audio, data, etc.) between the peers. |  |  |
+| 10 | As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to allow all mentioned UDP ports in bi-directional way?<br><br>|If not, unable to transmit data in both directions (one way audio issue occurs). |  |  |
+| 11 | Are you using any anti-virus software?<br><br>|If yes, it will block the traffic and should allow the data through the required ports. |  |  |
+| 12 | If you are using any anti-virus software, does it need to follow any federation rules?<br><br>|If yes, as per your country's regulations, is it possible to allow traffic as per Kore’s requirement? |  |  |
+| 13 | Can you run the latency test using [AWS latency test](https://aws-latency-test.com/) from your Agent's office premises and share the latency test results with “Kore”?<br><br>|Latency of 20 ms (milliseconds) is normal for and up to 150 ms the latency is barely noticeable and hence acceptable. A latency higher than 150 ms diminishes the call quality. Latency levels between 150 ms to 300 ms are within acceptable latency limits. |  |  |
+| 14 | Are you using any internal firewall to each and every agent in their systems like ZScaler?<br><br>|If yes, should open required UDP ports as described in [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md). Otherwise, unable to transmit the RTP packets (Audio) between the peers and audio traffic will be blocked. |  |  |
+| 15 | If you are using any internal firewall like ZScaler, will you be able to allow all mentioned UDP ports in bi-directional way?<br><br>|If not, unable to transmit the RTP packets (Audio) between the peers and audio traffic will be blocked. |  |  |
