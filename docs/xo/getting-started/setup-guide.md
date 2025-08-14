@@ -8,7 +8,7 @@ The **Setup Guide** facilitates faster app building for platform users. It offer
 The Left Navigation Menu available on the setup guide provides access to the following options:
 
 1. Train
-    1. GenAI Answers: GenAI Answers allows your AI chatbot to generate insightful and accurate responses by using external sources of information, such as web pages and documents. 
+    1. GenAI Answers: GenAI Answers allows your AI Agent to generate insightful and accurate responses by using external sources of information, such as web pages and documents. 
 
          **Ingest from Webpage**
          Integrate articles, FAQs, or documentation pages for comprehensive and reliable results.
@@ -22,12 +22,12 @@ The Left Navigation Menu available on the setup guide provides access to the fol
          * **PPTX**
          * **TXT** 
 
-    2. Custom Answers: The **Custom Answers (FAQs)** allow you to define precise responses to specific questions. This is particularly useful when you don’t want your AI chatbot to generate answers using GenAI. Click **+ Add FAQ** to add a new FAQ.
+    2. Custom Answers: The **Custom Answers (FAQs)** allow you to define precise responses to specific questions. This is particularly useful when you don’t want your AI Agent to generate answers using GenAI. Click **+ Add FAQ** to add a new FAQ.
  
-    3. Bot Actions: Bot Actions allow you to train your AI chatbot to perform specific tasks during conversations, providing a seamless and interactive user experience. You can select a template from the marketplace, or build your custom dialog using the DialogBuilder. 
+    3. Bot Actions: Bot Actions allow you to train your AI Agent to perform specific tasks during conversations, providing a seamless and interactive user experience. You can select a template from the marketplace, or build your custom dialog using the DialogBuilder. 
 
 2. Configure
-    1. Style: Customize the look and feel of your AI chatbot to create a seamless and engaging experience for customers on your website. Explore various options to customize its appearance for personalization within the product.
+    1. Style: Customize the look and feel of your AI Agent to create a seamless and engaging experience for customers on your website. Explore various options to customize its appearance for personalization within the product.
     
         **Customization Options:**
 
@@ -35,15 +35,15 @@ The Left Navigation Menu available on the setup guide provides access to the fol
          * Welcome Screen
          * Chat Screen 
 
-    2. Agent Handoff: Enable your AI chatbot to transition conversations to human agents when it cannot resolve customer questions or requests. Specify scenarios where the chatbot should escalate to a human agent.
+    2. Agent Handoff: Enable your AI Agent to transition conversations to human agents when it cannot resolve customer questions or requests. Specify scenarios where the AI Agent should escalate to a human agent.
 
 3. Deploy
-    1. Channels: Deploy your AI chatbot across multiple channels, including web, voice, and messengers. Configure the channels through which it will engage with the customers. 
+    1. Channels: Deploy your AI Agent across multiple channels, including web, voice, and messengers. Configure the channels through which it will engage with the customers. 
 
-    2. Publish: Publishing your AI chatbot makes it live, activating all changes and updates. It also enables version control, allowing you to manage and track releases. [Learn more](../deploy/publishing-bot.md).
+    2. Publish: Publishing your AI Agent makes it live, activating all changes and updates. It also enables version control, allowing you to manage and track releases. [Learn more](../deploy/publishing-bot.md).
 
 4. Explore 
-	Analytics: Gain valuable insights into your AI chatbot’s performance and interactions through comprehensive analytics. The Kore.ai XO Platform offers various dashboards to track real-time data and assess how your virtual assistant is performing over time. [Learn more](../administration/analytics.md).
+	Analytics: Gain valuable insights into your AI Agent’s performance and interactions through comprehensive analytics. The Kore.ai XO Platform offers various dashboards to track real-time data and assess how your AI Agent is performing over time. [Learn more](../administration/analytics.md).
 
 **Related Links**
 
