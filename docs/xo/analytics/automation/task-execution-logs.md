@@ -383,8 +383,6 @@ The following sections describe more about the options available on the Task Exe
 
 The following list details the features available for Task Execution Logs including Failed Tasks, API Calls, Script Execution, and Debug Log.
 
-
-
 * You can filter the information based on various criteria such as User Utterances, Intent, user ID (Kore user ID or channel-specific unique ID), date period, channel of use, language, and so on. You can also filter records based on multiple custom tags. See Filter Criteria to know more.
 * Complete meta-information is stored for later analysis, including the original user utterance, the channel of communication, entities extracted (if any), custom tags applied, and detailed Task Execution Logs.
 * Any important record you want to mark, track later, or both can be pinned which appears on the **Pinned** tab.
