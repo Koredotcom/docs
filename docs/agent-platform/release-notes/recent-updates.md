@@ -74,9 +74,9 @@ The platform now provides advanced filtering and usage tracking in the Settings 
 
 Key improvements:
 
-* Model Analytics & Traces: Filter and view data by deployment name & version (open-source/fine-tuned) or connection name (external).
-* Audit Logs: Model Added/Deleted events now display the relevant deployment or connection name.
-* Billing & Usage: The drill-down view in the Usage page’s Models tab displays the *deployment name*, *type*, *credits used*, *last updated date,* and *status* for a model. Totals of all the deployments roll up to show model-level consumption, with deployment-level data reflected in *fine-tuning*, *hosting*, and *storage* metrics.
+* Model Analytics & Traces: Filter and view data by deployment name & version (open-source/fine-tuned) or connection name (external). [Learn more :octicons-arrow-right-24:](../settings/monitoring/analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"}
+* Audit Logs: Model Added/Deleted events now display the relevant deployment or connection name. [Learn more :octicons-arrow-right-24:](../settings/monitoring/audit-logs.md/#account-level-audit-logs){:target="_blank"}
+* Billing & Usage: The drill-down view in the Usage page’s Models tab displays the *deployment name*, *type*, *credits used*, *last updated date,* and *status* for a model. Totals of all the deployments roll up to show model-level consumption, with deployment-level data reflected in *fine-tuning*, *hosting*, and *storage* metrics. [Learn more :octicons-arrow-right-24:](../settings/billing/billing-and-usage.md/#models-usage){:target="_blank"}
 
 
 <font size="4">Other Improvements</font>
