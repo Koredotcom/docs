@@ -30,7 +30,7 @@ Add New Form Button" title="Add New Form Button" style="border: 1px solid gray; 
 
 2. The **New Form** window opens, and you can configure the following:
     1. Enter the **Name** of the form, the **Display Name** of the form, and the **Description**.
-    2. Enable **Agent Form Data** to redact form information from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit. Once enabled, the XO Platform will replace the user input with a unique, random, system-generated alphanumeric value in all the modules.
+    2. Enable **Agent Form Data** to redact form information from the App Context, Debug Logs, Service Calls, Agent Transfer, and the BotKit. Once enabled, the XO Platform will replace the user input with a unique, random, system-generated alphanumeric value in all the modules.
     3. Select an **Assignment**:
         1. **Assign to Queues** lets you make forms available for conversations in all or selected queues.
         2. **Assign to Agent Groups** allows you to make forms available for agents in specific agent groups.

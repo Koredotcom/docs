@@ -75,9 +75,9 @@ Manage Batch Testing and Conversation Testing.
    </td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>APP Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage APP Owners and co-developers of an app.
    </td>
    <td>Full
    </td>
@@ -455,6 +455,14 @@ Access to the monitor tab for live interactions
    </td>
 </tr>
 <tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Request Supervisor Support</strong>
    <br>
 Allow user to send request for supervisor support
@@ -527,9 +535,9 @@ Users can make direct outward calls
    </td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>All
    </td>
@@ -785,9 +793,9 @@ Manage Batch Testing and Conversation Testing.
    <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an app.
    </td>
    <td>View</td>
 </tr>
@@ -1119,6 +1127,13 @@ Access to the monitor tab for live interactions
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Request Supervisor Support</strong>
    <br>
 Allow user to send request for supervisor support
@@ -1185,9 +1200,9 @@ Users can make direct outward calls
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>    
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>All</td>
 </tr>
@@ -1407,9 +1422,9 @@ Manage Batch Testing and Conversation Testing.
    <td>View</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an app.
    </td>
    <td>View</td>
 </tr>
@@ -1741,6 +1756,13 @@ Access to the monitor tab for live interactions
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Request Supervisor Support</strong>
    <br>
 Allow user to send request for supervisor support
@@ -1807,9 +1829,9 @@ Users can make direct outward calls
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>All</td>
 </tr>
@@ -2041,9 +2063,9 @@ Manage Batch Testing and Conversation Testing.
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an App.
    </td>
    <td>No</td>
 </tr>
@@ -2375,6 +2397,13 @@ Access to the monitor tab for live interactions
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Request Supervisor Support</strong>
    <br>
 Allow user to send request for supervisor support
@@ -2441,9 +2470,9 @@ Users can make direct outward calls
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>Self</td>
 </tr>
@@ -2679,9 +2708,9 @@ Manage Batch Testing and Conversation Testing.
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an App.
    </td>
    <td>No</td>
 </tr>
@@ -3013,6 +3042,13 @@ Access to the monitor tab for live interactions
    <td>No</td>
 </tr>
 <tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
+   </td>
+   <td>No</td>
+</tr>
+<tr>
    <td><strong>Request Supervisor Support</strong>
    <br>
 Allow user to send request for supervisor support
@@ -3079,9 +3115,9 @@ Users can make direct outward calls
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>Self</td>
 </tr>
@@ -3333,9 +3369,9 @@ View
 No</td>
 </tr>
 <tr>
-   <td><strong>Bot Developers</strong>
+   <td><strong>App Developers</strong>
    <br>
-Manage Bot Owners and co-developers of a bot.
+Manage App Owners and co-developers of an App.
    </td>
    <td>Full
    <br>
@@ -3807,6 +3843,15 @@ Access to the monitor tab for live interactions
 No</td>
 </tr>
 <tr>
+   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
+   <br>
+Access to edit disposition code after the conversation is completed
+   </td>
+   <td>Yes
+   <br>
+No</td>
+</tr>
+<tr>
    <td><strong>Request Supervisor Support</strong>
    <br>
 Allow user to send request for supervisor support
@@ -3896,15 +3941,13 @@ Users can make direct outward calls
 No</td>
 </tr>
 <tr>
-   <td><strong>Queue Visibility and Access</strong>
+   <td><strong>Monitor Queue Visibility</strong>
    <br>
-Decide which queues are available for access in the Monitor
+Determines which queues can be accessed by the user
    </td>
    <td>All
    <br>
 Self</td>
-<br>
-None</td>
 </tr>
 <tr>
    <td><strong>Dashboard Content</strong>

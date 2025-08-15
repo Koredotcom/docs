@@ -7,7 +7,7 @@ Steps to create a dialog task using Bitly action templates:
 1. Ensure that you have configured [Bitly](configuring-the-bitly-action.md){:target="_blank"} and [installed templates](configuring-the-bitly-action.md#step-2-install-the-bitly-action-templates){:target="_blank"} successfully.
 If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
+2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
 
 3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
@@ -43,7 +43,7 @@ The following Bitly action is supported:
 
 Steps to shorten the URL in the Bitly integration:
 
-1. Refer to the [Installing the Bitly templates](../configuring-the-bitly-action/#step-2-install-the-bitly-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Bitly templates](configuring-the-bitly-action.md#step-2-install-the-bitly-action-templates){:target="_blank"} section to install this template.
 2. The _Short URL_ dialog task is added with the following components:  
 <img src="../images/bitly-action-img12-tem-img4.png" alt="Dialog task added" title="Dialog task added" style="border: 1px solid gray;zoom:50%;"/> 
 
@@ -84,8 +84,8 @@ Steps to shorten the URL in the Bitly integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to resolve a general query.
-6. Enter a long URL when prompted by the VA, as shown below.  
+5. Follow the prompts in the App console to resolve a general query.
+6. Enter a long URL when prompted by the App, as shown below.  
 <img src="../images/bitly-tem-img7-short-url.png" alt="Enter long url" title="Enter long url" style="border: 1px solid gray;zoom:50%;"/>  
 
 7. You will notice that the long URL is shortened. Click **View Stats** to view URL statistics in the Bitly instance.  

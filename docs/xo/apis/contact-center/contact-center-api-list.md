@@ -18,12 +18,14 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 * [SMS Campaigns](#sms-campaigns)
 * [Voice Campaigns](#voice-campaigns)
 * [Campaign Status](#campaign-status)
+* [Campaign Details](#campaign-details)
 * [Contact List Management](#contact-list-management)
 * [Voice Gateway (VG) APIs](#voice-gateway-vg-apis)
 * [Call Recording APIs](#call-recording-apis)
 * [Voicemail Recording API](#voicemail-recording-api)
 * [Outbound Calling API](#outbound-calling-api)
 * [Quality AI APIs](#quality-ai-apis)
+* [Case Management APIs](#case-management-apis)
 
 ## Contact Center AI (CCAI) APIs
 
@@ -31,7 +33,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 | API                                                  | DESCRIPTION                                                                                                            | ASSOCIATED APP SCOPE |
 |------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Get Intent Real-Time Data](../contact-center/get-intent-real-time-data.md)            | To retrieve the most recent conversational data for the given Bot Id. Gets the latest 25 sessions data for the given Bot Id that completed the execution of the flow. | SmartAssist Analytics |
+| [Get Intent Real-Time Data](../contact-center/get-intent-real-time-data.md)            | To retrieve the most recent conversational data for the given  botId. Gets the latest 25 sessions data for the given botId that completed the execution of the flow. | SmartAssist Analytics |
 | [Historical Agent Status Summary](../contact-center/historical-agent-status-summary.md) | To retrieve the status of every agent for each bucket in the given time interval. The status shown can be available, busy, away, etc. | SmartAssist Analytics |
 | [Agent Status Details API](../contact-center/agent-status-details.md)                   | To retrieve the status of every agent for each bucket in the given time interval. The status shown can be available, busy, away, etc. | SmartAssist Analytics |
 | [Get All Conversations Data – Call Details](../contact-center/get-all-conversations-data-call-details.md) | To retrieve the raw data for all conversations with the given Account Id.                                              | SmartAssist Analytics |
@@ -135,12 +137,11 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 | API | Description | Associated App Scope |
 |--------|------------------|---------------------------|
-| [Create SMS Campaign](../contact-center/create-sms-campaign.md) | Creates an SMS campaign with a “None” message format. | Campaign Management |
+| [Create SMS Campaign (Without SMS Template)](../contact-center/create-sms-campaign-without-template.md) | Creates an SMS campaign with a “None” message format. | Campaign Management |
 | [Create SMS Campaign (Using Template)](../contact-center/create-sms-campaign-using-template.md) | Creates an SMS campaign using a predefined message template. | Campaign Management |
 | [Create SMS Campaign (Advanced Format)](../contact-center/create-sms-campaign-advanced-format.md) | Creates an SMS campaign with advanced formatting using a specified experience flow and contact list. | Campaign Management |
 | [Get SMS Campaign by ID](../contact-center/get-sms-campaign-by-id.md) | Retrieves full details of an SMS campaign using the campaign ID. | Campaign Management |
 | [Update SMS Campaign](../contact-center/update-sms-campaign.md) | Updates an existing SMS campaign with new format, contact lists, experience flow, or dialing strategy. | Campaign Management |
-| [Get All SMS Campaigns](../contact-center/get-all-sms-campaigns.md) | Retrieves all SMS campaigns associated with a specific account. | Campaign Management |
 | [Start SMS Campaign](../contact-center/start-sms-campaign.md) | Starts an SMS campaign using stream ID and campaign ID. | Campaign Management |
 | [Stop SMS Campaign](../contact-center/stop-sms-campaign.md) | Stops an active SMS campaign using stream ID and campaign ID. | Campaign Management |
 | [Delete SMS Campaign](../contact-center/delete-sms-campaign.md) | Deletes an active SMS campaign using stream ID and campaign ID. | Campaign Management |
@@ -155,7 +156,6 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Create Voice Campaign - Preview Mode](../contact-center/create-voice-campaign-preview.md) | Creates a voice campaign that lets agents preview contact info before calling. Routes answered calls to a queue. | Campaign Management |
 | [Update Voice Campaign](../contact-center/update-voice-campaign.md) | Updates the configuration of an existing voice campaign, including metadata, strategies, and schedules. | Campaign Management |
 | [Get Voice Campaign by ID](../contact-center/get-voice-campaign-by-id.md) | Fetches complete details of a voice campaign using campaign ID. | Campaign Management |
-| [Get All Voice Campaigns](../contact-center/get-all-voice-campaigns.md) | Retrieves all voice campaigns linked to a specific account. | Campaign Management |
 | [Start Voice Campaign](../contact-center/start-voice-campaign.md) | Starts an active voice campaign using stream ID and campaign ID. | Campaign Management |
 | [Stop Voice Campaign](../contact-center/stop-voice-campaign.md) | Stops an active voice campaign using stream ID and campaign ID. | Campaign Management |
 | [Delete Voice Campaign](../contact-center/delete-voice-campaign.md) | Deletes an active voice campaign using stream ID and campaign ID. | Campaign Management |
@@ -166,14 +166,21 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 |--------|------------------|---------------------------|
 | [Get Campaign Status](../contact-center/get-campaign-status.md) | Retrieves the current status (active, stopped, etc.) of a campaign using its campaign ID. | Campaign Management |
 
+### Campaign Details
+
+| API | Description | Associated App Scope |
+|--------|------------------|---------------------------|
+| [Get All Campaigns](../contact-center/get-all-campaigns.md) | Retrieves all campaigns associated with a specific account. | Campaign Management |
+
 ### Contact List Management
 
 | API | Description | Associated App Scope |
 |--------|------------------|---------------------------|
-| [Get All Campaign List Details](../contact-center/get-all-campaign-list-details.md) | Retrieves metadata for all contact lists under a specific account, filtered by type (call or SMS). | Campaign Management |
+| [Get All Contact Details - Voice Campaigns](../contact-center/get-all-contact-details-voice-campaigns.md) | Retrieves metadata for all contact lists under a specific account, filtered by type. | Campaign Management |
 | [Create Contact List](../contact-center/create-contact-list.md) | Creates a new contact list for use in passive voice campaigns. | Campaign Management |
-| [Update Contact List Name](../contact-center/update-contact-list-name.md) | Updates the name of a contact list associated with a campaign. | Campaign Management |
+| [Update Contact List](../contact-center/update-contact-list.md) | Updates the name of a contact list associated with a campaign. | Campaign Management |
 | [Get Contact List Details](../contact-center/get-contact-list-details.md) | Retrieves full details of a specific contact list using its ID. | Campaign Management |
+| [Get All Contact List Details](../contact-center/get-all-contact-lists.md) | Retrieves full details of a specific contact list using its ID. | Campaign Management |
 | [Add Contacts to a Contact List](../contact-center/add-contacts-to-contact-list.md) | Adds one or more contacts to an existing contact list. | Campaign Management |
 | [Delete Contact List Details](../contact-center/delete-contact-list-details.md) | Deletes a contact list associated with a campaign. | Campaign Management |
 
@@ -205,3 +212,15 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
 | [Raw Data API](../contact-center/qm-apis/raw-data-api.md)                                                               | Provides detailed Quality AI and Conversation Intelligence data, including quality metrics and analytics for each interaction.                                                                   | Configuration        |
 | [Auto QA Reporting API](../contact-center/qm-apis/auto-qa-reporting-api.md)                                                   |Provides interaction-level Auto QA scoring and metric qualification based on the associated Quality AI form.                | Configuration        |
+
+
+## Case Management APIs
+
+| API                                                                                               | DESCRIPTION                                                                                                  | ASSOCIATED APP SCOPE |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
+| [Create Case](../contact-center/case-management-apis/create-a-case.md)                                                               | Allows you to create a new case in the case management system.                                                                    | Configuration        |
+| [Get Cases](../contact-center/case-management-apis/get-cases.md)                                                   | Retrieves case data from the case management system with filtering, sorting, and pagination options.                | Configuration        |
+| [Update Case](../contact-center/case-management-apis/update-a-case.md)                                                               | Allows you to update an existing case in the case management system.                                                                    | Configuration        |
+| [Create Task](../contact-center/case-management-apis/create-a-task.md)                                                   | Allows you to create a new task within the case management system.                | Configuration        |
+| [Get Tasks](../contact-center/case-management-apis/get-tasks.md)                                                               | Retrieves task data from the case management system with required filters for status, priority, assignment, channels, and date ranges.                                                                   | Configuration        |
+| [Update Task](../contact-center/case-management-apis/update-a-task.md)                                                   | Allows you to update an existing case in the case management system.                 | Configuration        |

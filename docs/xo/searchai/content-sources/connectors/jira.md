@@ -21,12 +21,16 @@ Search AI enables easy integration with Jira to ingest, index, and search throug
    </td>
   </tr>
   <tr>
-   <td>Access Control Support 
+   <td>RACL Support 
    </td>
    <td>Yes
    </td>
   </tr>
   <tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
    <td>Content Filtering Support
    </td>
    <td>Yes

@@ -315,7 +315,7 @@ Completed = AbandonedInQueue + SystemTerminated + All-Conversations-With-Resolut
 **Answer**: Yes, if the conversations (calls/chats) entered that queue.
 
 **Question**. Is the Incoming call count taken from the queue?<br>
-**Answer**: Yes. However, for “No-Filters”, the incoming call count includes conversations directly transferred from the Bot to the Agent, without entering a queue.
+**Answer**: Yes. However, for “No-Filters”, the incoming call count includes conversations directly transferred from the AI Agents to the Agent, without entering a queue.
    </td>
   </tr>
   <tr>

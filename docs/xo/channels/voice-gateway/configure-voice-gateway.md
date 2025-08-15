@@ -14,7 +14,7 @@ Go to **The Product (For example, Automation AI/ Contact Center AI)** > **Flows 
 Steps to buy a new phone number:
 
 1. Click the **Phone Numbers** tab and click **Buy New Phone Number**. You can configure a custom local or toll-free number by clicking **Get New Phone Number** on the **Phone Number** window.  
-<img src="../images/buy-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/buy-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:70%;">
 
     1. Select a country in the **Country Name** field.
     2. Select either the **Local** or **Toll-Free Number** option.
@@ -26,11 +26,16 @@ Steps to buy a new phone number:
 2. Configure an available number with the following steps:
 
     1. Click the **Get Number** button.
-    2. On the **Forward to Phone Number** page, select whether the number will be reserved for Inbound Calls, Outbound Calls, or both, and click **Done**.  
-        <img src="../images/forward-to-phone-number.png" alt="Forward To Phone Number" title="Forward To Phone Number" style="border: 1px solid gray; zoom:70%;">
-    3. A success confirmation message is displayed, and the phone number is added.
-    4. You can now call this number to test your Use Cases.
-    5. When ready to go live, forward the calls you receive to this phone number or use this number as your customer support number.
+    2. On the **Forward to Phone Number** page, select whether the number will be reserved for Inbound Calls, Outbound Calls, or both.  
+    3. Select an App for outbound calls from the dropdown. AgentAI will trigger this app when the agent makes an outbound call with this phone number.  
+        <img src="../images/phone-number.png" alt="Forward To Phone Number" title="Forward To Phone Number" style="border: 1px solid gray; zoom:60%;">
+    4. Click **Done**. A success confirmation message is displayed, and the phone number is added.
+    5. You can now call this number to test your Use Cases.
+    6. When ready to go live, forward the calls you receive to this phone number or use this number as your customer support number.
+
+!!! Note
+
+    This feature is only available when using Kore's Twilio account. It's not supported for SIP trunk setups.
 
 ### Attach Flow
 
@@ -108,7 +113,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
             <img src="../images/sip-uri.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;"> 
 
             * Under **Domain Name**, provide the following:
-                * **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/ips-ports-protocols.md).
+                * **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/deployment-and-operations.md#ips-ports-and-protocols).
                 * **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.  
                 <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;">
 
@@ -152,7 +157,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
             * **Network**: To configure the Network, you can select one of the following:
                 * Under **List of IP Address**, type the values for **Incoming IP Address** in the textbox.
                 * Under **Domain Name**, provide the following:
-                    * **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/ips-ports-protocols.md).
+                    * **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/deployment-and-operations.md#ips-ports-and-protocols).
                     * **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.
             * **Agent AI Initiated transcription**: Enable or disable auto transcription. When disabled, transcription starts automatically when an RTP stream is received at Kore’s SBC level.
             * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. These recorded calls can be accessed through a public API.
@@ -162,7 +167,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
             * Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are *TCP*, *UDF*, and *TLS*.
             * (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
             * Under **SIP Termination URI**, enter the **IP Address**/**Domain Name**.
-            * **Call control parameters**: Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](./../../channels/voice-gateway/call-control-parameters.md).
+            * **Call control parameters**: Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](./../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters).
             * Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
                 * X-AgentName: {{agentName}}
                 * X-AgentPhoneNumber: {{agentPhoneNumber}}
@@ -180,7 +185,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
             * **Connection URL (Generate URL)**: Copy the auto-generated URL and paste it into your third-party desktop configuration settings. 
             * **Agent AI Initiated transcription**: Enable or disable auto transcription. When disabled, transcription starts automatically when an RTP stream is received at Kore’s SBC level. 
             * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. These recorded calls can be accessed through a public API. 
-            * **Call control parameters**: Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](./../../channels/voice-gateway/call-control-parameters.md).
+            * **Call control parameters**: Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](./../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters).
 
 3. Click **Next**.  
     <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:70%;">
@@ -433,7 +438,7 @@ Define prompt to be played when user input is not received within the time-out p
 
 ### Barge-in
 
-Define whether user input will be allowed while a prompt is in progress. By default, this option is disabled. [Learn more](./common-configuration-scenarios.md#barge-in).  
+Define whether user input will be allowed while a prompt is in progress. By default, this option is disabled. 
     <img src="../images/barge-in.png" alt="Barge In" title="Barge In" style="border: 1px solid gray; zoom:80%;">
 
 ### Timeout

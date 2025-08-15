@@ -37,11 +37,11 @@ The next step is to train the application. Training allows Search AI to generate
 
 To Test Answers, go to the **Answer Configuration** page and use the **Test Answers** option. Enter a query and verify the application's answers. Use the debug option to understand the application's behavior and the generated answers.
 
-With these steps, your Search AI setup is complete and ready to provide answers to your users. For specific details and scenarios, refer to the detailed documentation on different topics. Note that the virtual assistant uses SearchAI to answer user queries based on a specific fallback setting discussed below. 
+With these steps, your Search AI setup is complete and ready to provide answers to your users. For specific details and scenarios, refer to the detailed documentation on different topics. Note that the AI Agents use SearchAI to answer user queries based on a specific fallback setting discussed below. 
 
 ## Enabling Answers in Automation AI
 
-The following configuration enables the integration of Search AI with Automation AI. You can also configure the Virtual Assistant's behavior to define Search AI as its primary and fallback response method.
+The following configuration is used to enable the integration of Search AI with Automation AI. You can also configure the AI Agent's behavior to define Search AI as its primary or fallback response method.
 
 **Answers Configuration**:
 Go to the **App Profile** under **App Settings** in the Automation AI module and enable the Answers feature.
@@ -49,15 +49,15 @@ Go to the **App Profile** under **App Settings** in the Automation AI module and
 
 Use the following options to configure the use of Search AI. 
 
-**Intent Identification Priority**: This priority is used when the bot needs to identify the intent from the initial user utterances. This can take the following values:
+**Intent Identification Priority**: This priority is used when the AI Agent needs to identify the intent from the initial user utterances. This can take the following values:
 
 * Automation first, Search AI as Fallback:
-    The assistant prioritizes the automation framework for identifying the intent and answering the user input. If intent identification or action fails, the assistant uses the Search AI to generate a response.
+    The AI Agent prioritizes the automation framework for identifying the intent and answering the user input. If intent identification or action fails, the agent uses the Search AI to generate a response.
 
 * Search AI first, Automation as Fallback:
-    The assistant uses the Search AI application to answer. If no satisfactory match is found within the Search AI sources, the assistant uses the automation framework to handle the user inputs.
+    The AI Agent first uses the Search AI application to answer. If no satisfactory match is found within the Search AI sources, the agent uses the automation framework to handle the user inputs.
 
-**Use Search AI for Unrecognized Inputs During Dialogs**: This option enhances the assistant's ability to handle diverse user inputs during Automation AI Dialog Tasks. If the NLP Engine fails to recognize an utterance, the system passes unidentified user inputs to Search AI, allowing access to the knowledge base mid-dialog. This improves conversation flow, reduces "I don't understand" responses, and allows for more diverse and comprehensive assistance throughout the dialog.
+**Use Search AI for Unrecognized Inputs During Dialogs**: This option enhances the AI agent's ability to handle diverse user inputs during Dialog Tasks. If the NLP Engine fails to recognize an utterance, the system passes unidentified user inputs to Search AI, allowing access to the knowledge base mid-dialog. This improves conversation flow, reduces "I don't understand" responses, and allows for more diverse and comprehensive assistance throughout the dialog.
 
 !!!note
     The fallback method should be chosen carefully, considering the nature of the queries and the desired user experience.

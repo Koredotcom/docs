@@ -1,7 +1,7 @@
 
 # Invoices
 
-The Invoice module provides access to all the invoices associated with the virtual assistants for the Standard Accounts. This includes subscriptions for both Usage Plans and Support Plans. However, it does not display invoices for Enterprise Accounts.
+The Invoice module provides access to all the invoices associated with the AI Agents for the Standard Accounts. This includes subscriptions for both Usage Plans and Support Plans. However, it does not display invoices for Enterprise Accounts.
 
 # Viewing Invoices
 

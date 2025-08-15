@@ -51,7 +51,7 @@ To configure the Component Properties tab, please follow the steps below:
 Use the Instance Properties to define any user tags that you want to set.
 
 1. On the Logic node properties panel, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
     <img src="../images/logic-node-img3-instance-properties.png" alt="Logic node - Instance Properties" title="Logic node - Instance Properties" style="border:1px solid gray;zoom:70%;">
 

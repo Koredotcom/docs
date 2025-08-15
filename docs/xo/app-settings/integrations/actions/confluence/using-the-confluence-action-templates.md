@@ -7,7 +7,7 @@ Steps to create a dialog task using Confluence action templates:
 1. Ensure that you have configured [Confluence](configuring-the-confluence-action.md){:target="_blank"} and [installed templates](configuring-the-confluence-action.md#step-2-install-the-confluence-action-templates){:target="_blank"} successfully.
 If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
+2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
 3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
@@ -40,7 +40,7 @@ The following Confluence action is supported in the latest version of the XO Pla
 
 Steps to create content using the Confluence integration:
 
-1. Refer to the [Installing the Confluence Templates](../configuring-the-confluence-action/#step-2-install-the-confluence-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Confluence Templates](configuring-the-confluence-action.md#step-2-install-the-confluence-action-templates){:target="_blank"} section to install this template.
 2. The _createContent_ dialog task is added with the following components:  
 <img src="../images/confluence-action-img14-tem-img4.png" alt="Dialog added" title="Dialog added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -316,10 +316,10 @@ Steps to create content using the Confluence integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create content on Confluence as shown below:  
+5. Follow the prompts in the AI Agent console to create content on Confluence as shown below:  
 <img src="../images/confluence-tem-img6.png" alt="VA console prompt to create content" title="VA console prompt to create content" style="border: 1px solid gray;zoom:50%;"/>
 
-6. Enter a title and body details when prompted by the VA as shown below:  
+6. Enter a title and body details when prompted by the AI Agent as shown below:  
 <img src="../images/confluence-tem-img7.png" alt="VA console prompt to enter title and body" title="VA console prompt to enter title and body" style="border: 1px solid gray;zoom:50%;"/>
 
 7. You will notice that content is created with the title and body on Confluence. Expand and click the **View Content** button.  

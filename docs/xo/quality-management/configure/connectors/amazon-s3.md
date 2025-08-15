@@ -56,15 +56,15 @@ Refer to [this](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user_ma
 
 Go to the **Authorization** page of the Connector, provide the following configuration fields, and click **Connect**.
 
-* Name*: Unique name for the connector.
+* **Name**: Unique name for the connector.
 
-* Access Key*: Key generated in the above step.
+* **Access Key**: Key generated in the above step.
 
-* Secret*: Secret generated in the above step.
+* **Secret**: Secret generated in the above step.
 
-* Host URL*: Amazon S3 domain name like [https://aws.amazon.com/s3/]
+* **Host URL**: Amazon S3 domain name like [https://aws.amazon.com/s3/]
 
-* Region*: The region of your account.
+* **Region**: The region of your account.
 
 ## Ingesting Content
 

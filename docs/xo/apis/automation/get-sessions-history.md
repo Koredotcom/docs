@@ -39,7 +39,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Bot Sessions
+<li>App Builder: Bot Sessions
 
 <li>ORAdmin Console: Bot Analytics > Bot Sessions
 </li>

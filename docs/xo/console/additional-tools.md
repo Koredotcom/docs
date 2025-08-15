@@ -69,7 +69,7 @@ As an agent, you can initiate an Internal Chat conversation if you face a challe
 
 ### Translate Internal Chats
 
-Contact Center administrators can enable translation for agents' internal chats. [Learn more](../contactcenter/configurations/advanced-settings/translation-configurations.md).
+Contact Center administrators can enable translation for agents' internal chats. [Learn more](../contactcenter/configurations/settings/translation-configurations.md).
 
 Steps to translate Internal chats:
 

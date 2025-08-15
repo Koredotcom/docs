@@ -7,7 +7,7 @@ hide:
 
 AI for Service (XO) helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
 
-Built for security and scalability, the platform uses a no-code interface that lets businesses build Intelligent Virtual Assistants. These assistants use large language models to hold natural conversations in multiple languages across various channels.
+Built for security and scalability, the platform uses a no-code interface that lets businesses build AI Agents. These agents use large language models to hold natural conversations in multiple languages across various channels.
 
 # Comprehensive Suite of Products and Services
 AI for Service offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
@@ -18,11 +18,11 @@ AI for Service offers a comprehensive suite of products, features, and services 
 
 === "Automation AI"
 
-    Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower Virtual Assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+    Automation AI offers sophisticated AI-powered tools for creating agents to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower agents to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
     
     Key Features
     
-    * Virtual Assistant Builder: Enables the creation of Intelligent Virtual Assistants.
+    * AI Agent Builder: Enables the creation of AI Agents.
     * Multi-Model NLU: Natural Language Understanding that uses multiple models to better understand user input.
     * GenAI Framework: A generative AI framework to enhance automation capabilities.  
     
@@ -54,7 +54,7 @@ AI for Service offers a comprehensive suite of products, features, and services 
 
 === "Agent AI"
 
-    Agent AI is your agent’s personal Intelligent Virtual Assistant. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
+    Agent AI is your agent’s personal agent. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
     
     Key Features
     
@@ -118,7 +118,7 @@ The image below provides a high-level understanding of AI for Service capabiliti
 
 3. Customer service flows:
     
-    * Automation flow: The flow uses an Intelligent Virtual Assistant to handle complex interactions with AI. In addition, Search AI retrieves information from vast datasets and feeds the most relevant information to users using the Virtual Assistant.
+    * Automation flow: The flow uses an agent to handle complex interactions with AI. In addition, Search AI retrieves information from vast datasets and feeds the most relevant information to users using the agent.
 
     * Agent transfer flow: The flow routes requests to live agents through the Contact Center or Agent Desktop. Agents receive AI-powered assistance during customer interactions. The flow can also connect with third-party Contact Centers.
 

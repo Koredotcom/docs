@@ -1,6 +1,43 @@
 # SharePoint Connector
 
-Configure the SharePoint connector if you're using SharePoint to manage your content and want to make your existing content searchable with SearchAI. Configuring SharePoint as a content source requires:
+Configure the SharePoint connector if you're using SharePoint to manage your content and want to make your existing content searchable with SearchAI. 
+
+
+**<span style="text-decoration:underline;">SharePoint Connector Specifications</span>**
+
+<table>
+  <tr>
+   <td>Type of Repository 
+   </td>
+   <td>Cloud
+   </td>
+  </tr>
+  <tr>
+   <td>Supported Content Type
+   </td>
+   <td>Articles and Files
+   </td>
+  </tr>
+  <tr>
+   <td>Access Control Support 
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
+  <tr>
+   <td>Content Filtering Support
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+</table>
+
+
+Configuring SharePoint as a content source requires:
 
 * **Registering a multi-tenant app in SharePoint**
 * **Configuration of the SharePoint connector in SearchAssist**

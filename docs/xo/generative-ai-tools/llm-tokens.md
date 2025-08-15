@@ -20,7 +20,7 @@ These tokens use OpenAI GPT-4o model from Azure by Kore.ai's enterprise account,
 
 ## Features You Can Explore with Free Tokens
 
-### Designtime Features
+### Automation AI Features
 
 * **Automatic Dialog Generation**: Create complete dialog flows automatically based on minimal input.
 
@@ -36,11 +36,6 @@ These tokens use OpenAI GPT-4o model from Azure by Kore.ai's enterprise account,
 
 * **Generating Opposite Utterance Suggestions**: Get suggestions for opposite utterances to cover a wide range of conversational scenarios.
 
-[Learn More](../co-pilot-features/)
-
-
-### Runtime Features
-
 * **Answer Generation**: Automatically generate accurate and contextually appropriate answers.
 
 * **GenAI Node**: Utilize specialized nodes to implement complex AI-driven functionalities.
@@ -51,7 +46,7 @@ These tokens use OpenAI GPT-4o model from Azure by Kore.ai's enterprise account,
 
 * **Rephrase Dialog Responses**: Automatically rephrase responses for variety and naturalness in conversations.
 
-[Learn More](../dynamic-conversations-features/)
+[Learn More](genai-features.md)
 
 
 ## Transitioning to Your Own LLM Account
@@ -75,7 +70,7 @@ Steps to get started with configuring your own LLM:
 
 While exploring the features with free tokens, follow the guidelines listed below to maintain the security and privacy of your data:
 
-* **Do not upload sensitive documents** until you have switched to your own LLM account. This precaution helps safeguard your confidential information.
+* **Don't upload sensitive documents** until you have switched to your own LLM account. This precaution helps safeguard your confidential information.
 
 * The free tokens are intended for exploration and testing purposes only. 
 

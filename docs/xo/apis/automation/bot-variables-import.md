@@ -37,7 +37,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Import Variables
+<li>App Builder: Import Variables
 
 <li>Admin Console: Not Applicable
 </li>
@@ -71,7 +71,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
    <td>Required
    </td>
-   <td>The identifier can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The identifier can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
   </tr>
 </table>

@@ -4,7 +4,7 @@ You can use the **Prebuilt Action Templates** from your Zendesk integration to a
 
 Steps to create a dialog task using the Zendesk action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 
@@ -12,7 +12,7 @@ Steps to create a dialog task using the Zendesk action templates:
 <img src="../images/zendesk-tem-img2.png" alt="Integration - Zendesk" title="Integration - Zendesk" style="border: 1px solid gray;zoom:50%;"/>
 
 4. Select any of the dialog task templates and click **Proceed**. For example, select the **Create a ticket** template.
-5. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank}.  
+5. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank}.  
 <img src="../images/zendesk-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
  
 
@@ -308,7 +308,7 @@ Steps to create a ticket in the Zendesk integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create a ticket as shown below:  
+5. Follow the prompts in the App console to create a ticket as shown below:  
 <img src="../images/zendesk-tem-img6.png" alt="VA prompt to Create a Ticket" title="VA prompt to Create a Ticket" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Expand and click View Ticket to view the details in the Zendesk instance.  
@@ -560,7 +560,7 @@ Steps to view all tickets in the Zendesk integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all tickets as shown below:  
+5. Follow the prompts in the App console to view all tickets as shown below:  
 <img src="../images/zendesk-tem-img10.png" alt="VA prompt to View All Tickets" title="VA prompt to View All Tickets" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -735,7 +735,7 @@ Steps to find a ticket using the ID in the Zendesk integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to find a ticket with IDs as shown below:  
+5. Follow the prompts in the App console to find a ticket with IDs as shown below:  
 <img src="../images/zendesk-tem-img13.png" alt="VA prompt to find Ticket(s) by ID(s)" title="VA prompt to find Ticket(s) by ID(s)" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -1623,7 +1623,7 @@ Steps to search ticket with keywords from the Zendesk integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to find a ticket with the keyword as shown below:  
+5. Follow the prompts in the App console to find a ticket with the keyword as shown below:  
 <img src="../images/zendesk-tem-img16.png" alt="VA prompt to Search Ticket with Keywords" title="Search Ticket with Keywords Add response" style="border: 1px solid gray;zoom:50%;"/>
 
 

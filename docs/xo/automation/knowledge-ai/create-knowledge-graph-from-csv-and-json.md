@@ -1,22 +1,22 @@
 # Creating a Knowledge Graph from CSV or JSON Files
 
-The XO Platform gives you the option to create a Knowledge Graph in a spreadsheet or JSON and then  import it into the VA instead of creating the Knowledge Graph from scratch. [Learn more](import-and-export-knowledge-graph.md).
+The XO Platform gives you the option to create a Knowledge Graph in a spreadsheet or JSON and then  import it into the AI Agent instead of creating the Knowledge Graph from scratch. [Learn more](import-and-export-knowledge-graph.md).
 
 The process to create a Knowledge Graph using an editor is summarized below:
 
 1. Download the **sample CSV or a JSON file**. You can download these sample files from a blank Knowledge Graph too.
 2. Edit the file by adding rows corresponding to the questions, responses, synonyms, etc.
-3. Import the file to your VA.
+3. Import the file to your AI Agent.
 
 ## CSV File
 
-You can create the Knowledge Graph using a sample spreadsheet that you can download from the VA. If you anticipate frequent changes to the Knowledge Graph, we recommend that you create it in a spreadsheet as it is easier to perform bulk updates compared to the application UI.
+You can create the Knowledge Graph using a sample spreadsheet that you can download from the AI Agent. If you anticipate frequent changes to the Knowledge Graph, we recommend that you create it in a spreadsheet as it is easier to perform bulk updates compared to the application UI.
 
 Follow the instructions below to build your Knowledge Graph in a spreadsheet.
 
 ### Download the Sample File
 
-1. Select the VA to work with and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
+1. Select the App to work with and go to **Automation AI** > **Knowledge AI** > **FAQs**.
 2. In the top right corner, click **more** icon (three dots).
 3. You can find the **Import** option on the respective Knowledge Graph.
 4. You are prompted to **back up** the Knowledge Graph before proceeding. Choose the CSV or JSON format for the backup.
@@ -104,7 +104,7 @@ Use of synonyms in KG term identification can be enabled using the following:
 ### **KG Params**
 
 * **KG Params**: mandatory entry in the header, must be blank in the following rows.
-* **lang**: VA language code. For example, “en” for English.
+* **lang**: App language code. For example, “en” for English.
 * **stopwords**: Comma-separated values.
 <img src="../images/kg-params.png" alt="kg params" title="kg params" style="border: 1px solid gray; zoom:75%;">
 
@@ -115,7 +115,7 @@ Trait related information can be specified as follows:
 <img src="../images/trait-related-information.png" alt="trait related information" title="trait related information" style="border: 1px solid gray; zoom:75%;">
 
 * **Traits**: Mandatory entry in the header, must be blank in the following rows.
-* **lang**: VA language code. For example, “en” for English.
+* **lang**: App language code. For example, “en” for English.
 * **GroupName**: Trait group name.
 * **matchStrategy**: Pattern or probability (for ML-based).
 * **scoreThreshold**: Threshold value (between 0 and 1) when the matchStrategy above is set to ML-based.
@@ -130,13 +130,13 @@ For Taxonomy Based KG, the following fields can be included if there are one or 
 
 ## JSON file
 
-The XO Platform allows you to create the Knowledge Graph in JSON and upload it. You can download a sample JSON from the VA to understand its structure.
+The XO Platform allows you to create the Knowledge Graph in JSON and upload it. You can download a sample JSON from the AI Agent to understand its structure.
 
 Follow the instructions below to build your Knowledge Graph using JSON:
 
 ### Download the Sample File
 
-1. Select the VA to work with and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
+1. Select the App to work with and go to **Automation AI** > **Knowledge AI** > **FAQs**.
 2. In the top right corner, click **more** icon (three dots).
 3. You are prompted to **back up** the Knowledge Graph before proceeding. Choose the CSV or JSON format for the backup.
 4. After backup, click **Proceed**.
@@ -187,7 +187,7 @@ Follow the instructions below to build your Knowledge Graph using JSON:
    </td>
    <td>String
    </td>
-   <td>VA response; included in the FAQ array.
+   <td>AI Agent response; included in the FAQ array.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">

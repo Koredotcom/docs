@@ -3,7 +3,7 @@
 
 
 
-Batch Testing is a comprehensive testing framework designed to evaluate and validate the accuracy of intent detection of a virtual assistant.  It enables users to systematically test their virtual assistant’s ability to understand user requests across multiple conversation types including dialogs, FAQs, Knowledge (Search AI), and conversation intents. It also supports different model configurations and provides comprehensive performance metrics for both development and production environments.
+Batch Testing is a comprehensive testing framework designed to evaluate and validate the accuracy of intent detection of a AI Agent.  It enables users to systematically test their AI Agent’s ability to understand user requests across multiple conversation types including dialogs, FAQs, Knowledge (Search AI), and conversation intents. It also supports different model configurations and provides comprehensive performance metrics for both development and production environments.
 
 Unlike traditional testing approaches, Batch Testing replicates the complete DialogGPT runtime pipeline, providing authentic performance insights that mirror real user interactions.
 
@@ -35,12 +35,42 @@ Batch Testing replicates the actual runtime behavior by chaining retrieval and L
 
 
 
-1. **Query Rephrasing** (if enabled)
-2. **Chunk Qualification** from Dialogs, FAQs, and Search Index
-3. **Semantic Similarity Matching** based on configured thresholds
-4. **LLM Processing** for intent identification and fulfillment type determination
+1. **Query Rephrasing** (if enabled).
+2. **Chunk Qualification** from Dialogs, FAQs, and Search Index.
+3. **Semantic Similarity Matching** based on configured thresholds.
+4. **LLM Processing** for intent identification and fulfillment type determination.
 
 This approach provides dynamic testing that mirrors real user interactions, enabling accurate performance evaluation across different model configurations.
+
+
+
+### Validate Specific Conversational Intent Types
+
+The Batch Testing framework enables you to explicitly validate specific Conversational Intent Types, including Hold, Restart, Refuse, End, Agent Transfer, and Repeat, within the Conversation Intent fulfillment category. This enhancement helps you test and verify how each conversational action is recognized and processed.
+
+During execution, the batch testing engine performs granular validation by comparing the expected and detected conversational intent types. The test results clearly display both values to help you identify mismatches and ensure accurate dialog handling.
+
+**Define Expected Intents**
+
+You must specify expected intents using the following format:
+
+
+* ConversationIntent-Hold
+* ConversationIntent-Restart
+* ConversationIntent-Refuse
+* ConversationIntent-End
+* ConversationIntent-AgentTransfer
+* ConversationIntent-Repeat 
+
+**JSON/CSV Upload**
+
+When importing test cases via JSON or CSV, define the expected intent using the format shown above. You can download the sample CSV or JSON templates when creating a test suite.
+
+**Quick Entry**
+
+If you use the **Quick Entry** mode, the **Expected Intent** dropdown lists the predefined conversational intent types. These options are available when the fulfillment type is set to **Conversation Intent**.
+
+
 
 To access Batch Testing, navigate to **Automation AI** > **Virtual Assistant** > **Testing** > **Regression Testing** > **Batch Testing**. This can be accomplished in the following three steps.
 

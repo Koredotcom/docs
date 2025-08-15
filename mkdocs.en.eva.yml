@@ -130,13 +130,14 @@ nav:
       - Agentic Flows: custom-agents/agentic-flows.md
       - Autonomous Agents: custom-agents/autonomous-agent.md      
     - Other Agents: 
-      - Bot Agents: 
-        - Import/Create: custom-agents/bot-agents.md
-        - Alert Task: custom-agents/alert-task.md
-        - Notify API: custom-agents/notify-bot-agent-api.md
+      - Bot Agents: custom-agents/bot-agents.md
       - Workflow Agents: custom-agents/workflow-agents.md 
     - Agent Management:
       - Agent Options: custom-agents/agent-options.md
+      - Agent Testing: custom-agents/agent-testing.md
+      - Agent Creation: custom-agents/agent-creation.md
+      - Alert Task: custom-agents/alert-task.md
+      - Notify API: custom-agents/notify-api.md
   - Pre-built Agents:
     - About Pre-built Agents: pre-built-agents/overview.md
   - Pre-built Solutions:
@@ -151,6 +152,9 @@ nav:
     - Admin Console Overview: Administration/overview.md
     - Workspace: Administration/workspace.md
     - Account Hub: Administration/account-hub.md
+    - Workspace Management:
+      - Account Workspace: workspace-management/account-workspace.md
+      - Personal Workspace: workspace-management/personal-workspace.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing your users.md

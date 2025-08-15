@@ -38,7 +38,7 @@ This updated version of the Raw Data API offers the following additional convers
 | `from`        | Start date and time of the interactions in `YYYY-MM-DD HH24:mm:SS` format.      | Required    |
 | `to`          | End date and time of the interactions in `YYYY-MM-DD HH24:mm:SS` format.        | Required    |
 |`conversationIds`|Array of conversation IDs to filter specific interactions.|Optional|
-|`sessionIds`|Array of session IDs to filter specific bot sessions.|Optional|
+|`sessionIds`|Array of session IDs to filter specific AI Agent sessions.|Optional|
 |`channels`| Array of communication channels (e.g., `chat`, `voice`).|Optional|
 |`agentIds`|Array of agent IDs to filter interactions handled by specific agents.|Optional|
 
@@ -727,9 +727,9 @@ Example: "jsmith01"
    </td>
    <td>Array of tag objects
    </td>
-   <td>Each tag is one created by bot developers at various points in the Dialog.
+   <td>Each tag is one created by AI Agent developers at various points in the Dialog.
 <p>
-All tags emitted by the bot at any point during this portion of the conversation will be returned here.
+All tags emitted by the AI Agent at any point during this portion of the conversation will be returned here.
    </td>
   </tr>
   <tr>
@@ -747,7 +747,7 @@ Example: one of "user","message", "session"
    </td>
    <td>String
    </td>
-   <td>key value of the tag – from the client's bot developer
+   <td>key value of the tag – from the client's AI Agent developer
    </td>
   </tr>
   <tr>
@@ -755,7 +755,7 @@ Example: one of "user","message", "session"
    </td>
    <td>String
    </td>
-   <td>value of the tag – from the client's bot developer
+   <td>value of the tag – from the client's AI Agent developer
    </td>
   </tr>
   <tr>
@@ -1139,7 +1139,7 @@ Example: one of "DialogTask", "FAQ", "Answer", "File", "WebPage", "GeneralDataSo
    </td>
    <td>String
    </td>
-   <td>name of the DialogTask – from the client's bot developer.
+   <td>name of the DialogTask – from the client's AI Agent developer.
 <p>
 Example: "Cancel account"
    </td>
@@ -1527,7 +1527,7 @@ Example: "This is not the correct Dialog. The customer said 'Cancel account', an
    </td>
    <td>String
    </td>
-   <td>name of the DialogTask – from the client's bot developer.
+   <td>name of the DialogTask – from the client's AI Agent developer.
 <p>
 Example: "Cancel Account"
    </td>

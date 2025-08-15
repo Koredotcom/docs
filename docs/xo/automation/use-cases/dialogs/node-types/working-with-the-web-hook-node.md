@@ -1,11 +1,11 @@
 # WebHook Node
 
-You can use the WebHook node to subscribe to a message and to WebHook events that capture real-time data from real-time events and show them to the user. You can use the WebHook node for server-side validation, execute business logic, or make backend server API calls. Also, you can use the Kore.ai SDK Tool BotKit to add event handlers and control the messages and WebHook events as required by connecting the WebHook node to a script node to process the response.
+You can use the WebHook node to subscribe to a message and to WebHook events that capture real-time data from real-time events and show them to the user. You can use the WebHook node for server-side validation, execute business logic, or make backend server API calls. Also, you can use the SDK Tool BotKit to add event handlers and control the messages and WebHook events as required by connecting the WebHook node to a script node to process the response.
 
 
 ## Create and Register an App
 
-To get access to WebHook events using WebHook nodes in your dialog task, you need to [subscribe and configure an app](https://docsinternal-kore.github.io/docs/xo/sdk/sdk-configuration/){:target="_blank"}.
+To get access to WebHook events using WebHook nodes in your dialog task, you need to [subscribe and configure an app](../../../../sdk/sdk-configuration.md){:target="_blank"}.
 
 
 ## Add the Node
@@ -13,7 +13,7 @@ To get access to WebHook events using WebHook nodes in your dialog task, you nee
 The setup of a Webhook node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the Webhook node.
-2. Add a Webhook node in the designated place. For steps related to adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+2. Add a Webhook node in the designated place. For steps related to adding nodes, [refer here](../using-the-dialog-builder-tool.md){:target="_blank"}.
 
 The Webhook window is displayed with the **Component Properties** tab selected by default.
 
@@ -33,7 +33,7 @@ The Webhook window is displayed with the **Component Properties** tab selected b
 To configure the Component Properties tab, please follow the steps below:
 
 1. On the **Component Properties** tab, enter the **Name** and **Display Name** of your Webhook node. 
-2. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can use the task-level settings or customize them for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+2. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the App. You can use the task-level settings or customize them for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
 
 
 <img src="../images/webhook-node-img3-component-properties-sdk-not-configured.png" alt="Webhook node - SDK not configured" title="Webhook node - SDK Not configured" style="border:1px solid gray;zoom:70%;">
@@ -56,7 +56,7 @@ Use the Instance Properties to define any user tags that you want to set for the
     The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
 
 1. On the Webhook node properties panel, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags/){:target="_blank"}.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your App’s conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
 <img src="../images/webhook-node-img4-instance-properties.png" alt="Webhook node - Instance properties" title="Webhook node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
@@ -74,7 +74,7 @@ From the node’s **Connections** tab, you can determine which node in the dialo
     The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
 
 
-To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"}.
+To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections](../node-connections/nodes-conditions.md){:target="_blank"}.
 
 <img src="../images/webhook-node-img5-connections-properties.png" alt="Webhook node - Connection properties" title="Webhook node - Connection properties" style="border:1px solid gray;zoom:70%;">  
 

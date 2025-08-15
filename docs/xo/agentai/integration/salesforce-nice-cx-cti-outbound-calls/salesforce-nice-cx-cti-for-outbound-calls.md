@@ -1,6 +1,8 @@
+# Salesforce NICE CX CTI for Outbound Calls
+
 This document provides an overview of the setup and configuration process of the Kore Agent AI widget with NICE CX Telephony using the Salesforce NICE CX CTI package.
 
-**Use Case**: Display voice transcripts and suggest next best actions from a configured bot on the Kore Agent AI widget when agents place customer calls.
+**Use Case**: Display voice transcripts and suggest next best actions from a configured AI Agent on the Kore Agent AI widget when agents place customer calls.
 
 When agents place customer calls, based on the customer’s phone number CTI rule matches the corresponding Salesforce object (such as Account/Contact/Case) and displays to the agents. The  voice stream is shared with Kore Voice Gateway, which in turn generates transcripts of the voice stream and displays on the Agent AI widget embedded into the matched Salesforce object.
 
@@ -11,7 +13,8 @@ When agents place customer calls, based on the customer’s phone number CTI rul
 * **NICE CX Studio** installed on your device.
 * **Agent Assist Hub** enabled for your NICE CX account.
 * **[Kore AgentAssist](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HSGlnUAH){:target="_blank"}** for Salesforce installed on your Salesforce account. (Salesforce AppExchange > Search for “Agent AI By Kore.ai, Inc.”)
-* Have the AgentAssist bot credentials saved separately. You need the Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI. Read [Configure Voice Channel](./../../../channels/voice-gateway/configure-voice-gateway.md){:target="_blank"} and [Chat Channel](./../../../channels/adding-channels-to-your-bot.md){:target="_blank"} for a walkthrough.
+* Have the Kore AI Agent credentials saved separately. You need the Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI. Read [Configure Voice Channel](./../../../channels/voice-gateway/configure-voice-gateway.md){:target="_blank"} and [Chat Channel](./../../../channels/adding-channels-to-your-bot.md){:target="_blank"} for a walkthrough. 
+* Ensure that Voice Interaction Streams are enabled via NICE.
 
 ## Shared Responsibilities
 
@@ -62,7 +65,7 @@ When agents place customer calls, based on the customer’s phone number CTI rul
 
 <li>Import the voice script and customize (only if needed).</li>
 
-<li>Edit the Nodes and provide the Customized Bot details in the script.</li>
+<li>Edit the Nodes and provide the Customized AI Agent details in the script.</li>
 </ul>
    </td>
    <td>
@@ -85,25 +88,25 @@ When agents place customer calls, based on the customer’s phone number CTI rul
    </td>
   </tr>
   <tr>
-   <td><strong>Kore Agent AI Bot Configuration</strong>
+   <td><strong>Kore AI Agent Configuration</strong>
    </td>
    <td>
 <ul>
 
-<li>Bot creation</li>
+<li>AI Agent creation</li>
 
-<li>Bot Credentials generation</li>
+<li>AI Agent Credentials generation</li>
 </ul>
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><strong>Kore Bot Configuration</strong>
+   <td><strong>Kore AI Agent Configuration</strong>
    </td>
-   <td>Bot creation
+   <td>AI Agent creation
 <p>
-Bot Credentials generation
+AI Agent Credentials generation
    </td>
    <td>
    </td>
@@ -152,7 +155,7 @@ Bot Credentials generation
 
 <li>Validate prerequisite licenses</li>
 
-<li>Configure Bot Details</li>
+<li>Configure AI Agent Details</li>
 </ul>
    </td>
    <td>
@@ -216,7 +219,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
    <td>BotId
    </td>
-   <td>A unique identifier assigned to a bot.
+   <td>A unique identifier assigned to an AI Agent.
    </td>
    <td><strong>Channels > Chat</strong> section of the <strong><a href="https://agentassist.kore.ai/">Agent AI</a></strong> configuration portal.
    </td>
@@ -383,7 +386,7 @@ This app will be used in studio script.
 3. Click **New** from the right-top corner of the page.
 4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** details from the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal.  
 <img src="../images/web-mobile-client_15.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">  
-    - [ ] Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the bot.  
+    - [ ] Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the AI Agent.  
     <img src="../images/kore-aa-config-page_16.png" alt="kore-aa-config-page" title="kore-aa-config-page" style="border: 1px solid gray; zoom:80%;">  
 5. Select **Active**, and click **Save**. 
 
@@ -556,12 +559,12 @@ Open the Studio, import the above script, and customize as per the following tab
 
 <li>Update the credentials to connect to Salesforce Org.</li>
 
-<li>Update Agent AI Bot details.</li>
+<li>Update Kore AI Agent details.</li>
 
-<li>The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this custom data will be accessible in the UserContext of the bot.</li> 
+<li>The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this custom data will be accessible in the UserContext of the AI Agent.</li> 
 <ul>
  
-<li>Refer to “<a href="https://https://docs.kore.ai/xo/agentai/agent-experience/access-custom-data-in-agent-ai/">Access Custom Data in Agent AI Bot</a>” for instructions on how to access customdata in the bot.</li> 
+<li>Refer to “<a href="https://https://docs.kore.ai/xo/agentai/agent-experience/access-custom-data-in-agent-ai/">Access Custom Data in Kore AI Agent</a>” for instructions on how to access customdata in the AI Agent.</li> 
 </ul></li> 
 </ul>
    </td>
@@ -577,7 +580,7 @@ Open the Studio, import the above script, and customize as per the following tab
 <li>Salesforce_password  \
 <strong>Note:</strong> The password is your Salesforce password appended with your Security Token. Refer to <a href="https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5">this guide</a> for help.</li>
 
-<li>Agent AI Bot credentials (botid, clientid, clientsecret, baseurl, language)
+<li>Kore AI Agent credentials (botid, clientid, clientsecret, baseurl, language)
 Include your data in the custom data object (one key-value pair per line). For example:</li>
 
 <li><code>customdata.agentName="Agent"</code></li>
@@ -657,8 +660,8 @@ For Custom Script, select the NICE Studio Script created in the previous step.
 
 ## Test an Outbound Call
 
-1. Sign in to the **Kore Agent AI** account and prepare a bot to handle agents’ queries.
-2. Validate the bot credentials are correctly mapped in the above settings.
+1. Sign in to the **Kore Agent AI** account and prepare a AI Agent to handle agents’ queries.
+2. Validate the AI Agent credentials are correctly mapped in the above settings.
 3. Validate the AgentAssist URL is correctly mapped in the above settings.
 4. Sign in to the **NICE-Incontact** account, and check if the outbound skill is created properly.
 5. Sign in to your **Salesforce** org.

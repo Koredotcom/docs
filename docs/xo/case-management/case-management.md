@@ -4,7 +4,7 @@
 
 Case management is a systematic approach for efficiently tracking, managing, and resolving customer issues from initial contact to closure. This comprehensive platform solution streamlines the process through role-specific dashboard insights and structured workflows.
 
-This document helps you to configure Case Management in the XO11 Platform to efficiently track, manage, and resolve customer issues. 
+This document helps you to configure Case Management in the AI for service (XO11) Platform to efficiently track, manage, and resolve customer issues. 
 
 ## Process Flow
 

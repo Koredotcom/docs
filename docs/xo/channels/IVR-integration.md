@@ -14,14 +14,14 @@ Interactive Voice Response (IVR) systems are preferred in many leading organizat
 
 Conventional IVR systems do not have diversified options for the users to articulate their requests beyond the rigid program flows.
 
-## Kore.ai IVR Support
+## IVR Support
 
-Kore.ai XO Platform allows you to give a conversational makeover to your IVR system. It lets you build Virtual Assistants with human-like conversation capabilities and integrate them with your existing IVR system, thus taking your organization’s customer service experience to a new level.
+The Platform allows you to give a conversational makeover to your IVR system. It lets you build Virtual Assistants with human-like conversation capabilities and integrate them with your existing IVR system, thus taking your organization’s customer service experience to a new level.
 
 The following features enable  the seamless integration of your Kore.ai VAs with your existing IVR:
 
 * **Native VXML Support**: Built-in support to parse and generate World Wide Web Consortium (W3C) compliant Voice Extensible Markup Language(VXML) files.
-* **Hybrid integration**: Flexibility to build use cases or dialogs on the  Kore.ai Experience Optimization (XO) Platform, which can work in sync with the IVR dialogs.
+* **Hybrid integration**: Flexibility to build use cases or dialogs on the  Kore.ai Experience Optimization the Platform, which can work in sync with the IVR dialogs.
 * **Discourse Analyzer**: Kore.ai’s discourse analyzer helps enterprises generate conversation flows using historical chat or call transcripts. Chat and call transcripts are analyzed using neural network-based machine learning models to identify intents and discourse patterns to fulfill a specific intent. This is an out-of-the-box feature that is in Beta state. Contact our [support team](http://support.kore.ai/){:target="_blank"} if you want to try this feature.
 * **Granular Call Flow Support**: Ability to define all the call flow elements such as grammar, prompts, retry and time-out periods. Kore.ai supports call termination handlers, and allows you to end calls or invoke dialogs in case of exceptions.
 
@@ -35,47 +35,47 @@ To setup IVR integration, perform the following steps:
 
 ### Configure IVR Settings
 
-This section explains the IVR settings you need to configure for your Virtual Assistant (VA). As a first step, you must enable the IVR settings for the VA and define the **Transcription** options and **VXML** properties. These settings act as the default for the VA. You can override VXML properties configured at the VA level by defining custom values at the node level of the Dialog tasks.
+This section explains the IVR settings you need to configure for your AI Agent. As a first step, you must enable the IVR settings and define the **Transcription** options and **VXML** properties. These settings act as the default for the AI Agent. You can override VXML properties configured at the AI Agent level by defining custom values at the node level of the Dialog tasks.
 
-Steps to configure IVR settings for your Virtual Assistant:
+Steps to configure IVR settings for your AI Agent:
 
-1. Open the VA for which you want to integrate the IVR.
+1. Open the AI Agent for which you want to integrate the IVR.
 2. Go to the **Channels & Flows** > **Channels** > **Third Party Voice** > **All**.
-3. Locate and click the **IVR** under Voice Channels. The IVR Panel with **Instructions** is displayed.
-  ![IVR panel](../images/third-party-voice.png "IVR panel")
+3. Locate and click the **IVR** under Voice Channels. The IVR Panel with **Instructions** is displayed.  
+<img src="../images/third-party-voice.png" alt="IVR panel" title="IVR panel" style="border: 1px solid gray; zoom:70%;">
 4. On the **Configurations** tab, perform the following steps:
 
-    1. Use **Kore.ai IVR Sandbox** for testing your VA. See [Sandbox Configuration ](#sandbox-configuration)for more details.
+    1. Use **Kore.ai IVR Sandbox** for testing your AI Agent. See [Sandbox Configuration ](#sandbox-configuration)for more details.
 
         !!! note
 
             If you save the configuration after associating  an app without enabling IVR Settings, the  platform pre-populates the required settings for Sandbox.
 
-    2. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.
-    ![associate app](../images/IVR-4.png "associate app")
+    2. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.  
+    <img src="../images/IVR-4.png" alt="associate app" title="associate app" style="border: 1px solid gray; zoom:70%;">
 
         !!! note
 
             If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
 
-    3. Use the **WebHook URL** provided in your external application.  Enter the details to complete the setup, see [Voice Call Properties: Channel Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings) for more information.
-    ![Webhook URL](../images/IVR-5.png "Webhook URL")
+    3. Use the **WebHook URL** provided in your external application.  Enter the details to complete the setup, see [Voice Call Properties: Channel Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings) for more information.  
+    <img src="../images/IVR-5.png" alt="Webhook URL" title="Webhook URL" style="border: 1px solid gray; zoom:70%;">
 
-9.  From the **Voice Call Properties** tab, set the configurations.
- ![IVR Sandbox](../images/IVR-6.png "IVR")
- ![IVR data](../images/IVR-7.png "image_tooltip")
+9.  From the **Voice Call Properties** tab, set the configurations.  
+<img src="../images/IVR-6.png" alt="IVR Sandbox" title="IVR Sandbox" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/IVR-7.png" alt="IVR data" title="IVR data" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
         If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:  
-          * Enable Transcription set to Yes.  
-          * Transcription engine source set to builtin:speech/transcribe.  
-          * IVR Data Extraction Key set to user input.  
-          * ASR Confidence Threshold Key set to userinput confidence.  
-          * ASR Threshold Confidence set to 50.
+        * Enable Transcription set to Yes.  
+        * Transcription engine source set to builtin:speech/transcribe.  
+        * IVR Data Extraction Key set to user input.  
+        * ASR Confidence Threshold Key set to userinput confidence.  
+        * ASR Threshold Confidence set to 50.
   
-10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](#configure-dialog-node-ivr-properties)).
-See [Voice Call Properties: Configuring Grammar](../automation/use-cases/dialogs/node-types/voice-call-properties.md#configuring-grammar]) for a detailed configuration for Grammar syntax.  
+10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the AI Agent, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](#configure-dialog-node-ivr-properties)).
+See [Voice Call Properties: Configuring Grammar](../automation/use-cases/dialogs/node-types/voice-call-properties.md#configuring-grammar) for a detailed configuration for Grammar syntax.  
 
     !!! note
 
@@ -87,28 +87,28 @@ See [Voice Call Properties: Configuring Grammar](../automation/use-cases/dialogs
 
     This option was introduced in ver 7.1 of the platform. It is not available for on-prem installation.
 
-Kore.ai XO Platform offers an **IVR Sandbox environment** to instantly launch your VA for interactions over voice calls. This is useful when a working IVR system is not available for testing your VA over a voice channel. IVR Sandbox is an optional integration and it can coexist with your custom IVR integration.
+The Platform offers an **IVR Sandbox environment** to instantly launch your AI Agent for interactions over voice calls. This is useful when a working IVR system is not available for testing your AI Agent over a voice channel. IVR Sandbox is an optional integration and it can coexist with your custom IVR integration.
 
-Enabling this option generates a **Phone Number, Pin**, and **Secret**. To develop and test it with your teams, you can call your VA by using the phone number and PIN allocated for your VA. On receiving the valid Pin and Secret you will be connected with the VA for interactions. See the following steps to understand the Sandbox configuration.
+Enabling this option generates a **Phone Number, Pin**, and **Secret**. To develop and test it with your teams, you can call your AI Agent by using the phone number and PIN allocated for your AI Agent. On receiving the valid Pin and Secret you will be connected with the AI Agent for interactions. See the following steps to understand the Sandbox configuration.
 
 1. To enable the Sandbox, got to **Channels & Flows** > **Channels** > **Third Party Voice** > **All** > **IVR**. On the **Configurations** tab, select **Enable** for **Kore.ai IVR Sandbox**.
- ![IVR configuration](../images/IVR-9.png "IVR configuration")
+ ![IVR configuration](images/IVR-9.png "IVR configuration")
 2. In the **Select App** drop-down, select an existing app or create a new app by clicking the **Add** button or choosing the **Create App** option.
 3. The details are populated for an existing app, as shown in the following screenshot.
-  ![select app](../images/IVR-10.png "select app")
+  ![select app](images/IVR-10.png "select app")
 4. Click **Save**.
 5. The following pop-up is displayed for the new app creation. Enter the details and click **Create** to create the app.
-  ![create app](../images/IVR-11.png "create app")
+  ![create app](images/IVR-11.png "create app")
 6. Upon saving the details, the following pop-up is displayed with **Phone Number, PIN** and **Secret** values. Click **OK**.
-  ![test app](../images/IVR-12.png "test app")
+  ![test app](images/IVR-12.png "test app")
 7. Once enabled, you can access the IVR Sandbox interaction details by clicking the **Test**
 button, which becomes visible upon hovering over the IVR icon under the **Configured** tab.
- ![configure channels](../images/IVR-13.png "configure channels")
+ ![configure channels](images/IVR-13.png "configure channels")
  
 8. On clicking **Test**, the following pop-up is displayed.  ![testing app](../images/IVR-14.png "testing app")
 
 The **Phone Number**, **PIN**, and **Secret** are populated in the IVR Configurations panel as shown in the following screenshot.
-![phone number](../images/IVR-15.png "phone number")
+![phone number](images/IVR-15.png "phone number")
 
 **IVR Sandbox Limitations:**
 
@@ -116,20 +116,21 @@ The **Phone Number**, **PIN**, and **Secret** are populated in the IVR Configura
 * We strongly recommend you use IVR Sandbox only for internal testing purposes and not for the end-users of your Virtual Assistants, as there might be some functional limitations.
 
 ### Configure Dialog Node IVR Properties
-You can configure IVR properties for a node in a dialog task. Click the **IVR Properties** icon and  enter initial prompts, define Grammar, enter timeout, number of retries and other available fields. To know more about dialog definition, see the [Voice Call Properties: Dialog Node Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings]) section.
+You can configure IVR properties for a node in a dialog task. Click the **IVR Properties** icon and  enter initial prompts, define Grammar, enter timeout, number of retries and other available fields. To know more about dialog definition, see the [Voice Call Properties: Dialog Node Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings) section.
 
- ![IVR properties](../images/IVR-16.png "IVR properties")
+ ![IVR properties](images/IVR-16.png "IVR properties")
 
 ### IVR Channel Setup
-This section explains the IVR channel setup for your virtual assistant. After configuring IVR Settings at both the VA and the Dialog levels, you must configure IVR Channel for the VA. IVR channel provides a generic integration to connect VAs with IVR systems. Kore.ai XO platform generates required VXML files to be exchanged as part of the VA interaction with the end user through the IVR systems.
+
+This section explains the IVR channel setup for your AI Agent. After configuring IVR Settings at both the AI Agent and the Dialog levels, you must configure IVR Channel for the AI Agent. IVR channel provides a generic integration to connect VAs with IVR systems. The platform generates required VXML files to be exchanged as part of the interaction with the end user through the IVR systems.
 
 **Enable IVR Channel and Associate with an APP**
 
-Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requests from IVR. For generating a JWT token, you should associate an app with the VA. You can select any existing Apps available in your Kore.ai account or create a new app.
+Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requests from IVR. For generating a JWT token, you should associate an app with the AI Agent. You can select any existing Apps available in your Kore.ai account or create a new app.
 
 1. Go to **Channels & Flows** > **Channels** > **Third Party Voice** > **All** and click **IVR**.
 2. The IVR Channel Instructions panel is displayed.
- ![deploy channels](../images/IVR-17.png "deploy channels")
+ ![deploy channels](images/IVR-17.png "deploy channels")
 
 3. The **IVR Voice Sample CURL** request is as follows:
     ```
@@ -146,19 +147,19 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 4. For more information, see [mandatory-and-optional-request-parameters](#mandatory-and-optional-request-parameters).
 
 5. Click the **Configurations** tab.
-  ![configurations](../images/IVR-18.png "configurations")
+  ![configurations](images/IVR-18.png "configurations")
 
 6. From the **Select App** drop-down list, select an existing App or create a new app. See [Configure IVR Settings](#configure-ivr-settings) to know more.
 
 7. Copy the following values:
-    *   **WebHook URL**: For calling the VA from IVR.
+    *   **WebHook URL**: For calling the AI Agent from IVR.
     *   **Client Secret**: To generate a JWT token that must be appended to the WebHook URL.
-    ![webhook url](../images/IVR-19.png "webhook url")
+    ![webhook url](images/IVR-19.png "webhook url")
 8. Select **Yes** for Enable Channel.
 
 !!! note
 
-    The Webhook Payload is used to test the IVR channel configuration for your VA. It can be tested using Postman.
+    The Webhook Payload is used to test the IVR channel configuration for your AI Agent. It can be tested using Postman.
 
 ### Mandatory and optional Request Parameters
 
@@ -231,13 +232,13 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 
     The host name, {{host}} refers to an environment URL, for example, https://bots.kore.ai. It changes based on the domain name.
 
-**Call The Virtual Assistant From IVR Call flow**
+**Call The AI Agent From IVR Call flow**
 
-You can pass data to the VA from the IVR call flow using VXML > subdialog > as shown in the following screenshot. The subdialog src should be Webhook URL with JWT Token, which receives the following parameters as Input.
-  ![IVR call flow](../images/IVR-20.png "IVR call flow")
+You can pass data to the AI Agent from the IVR call flow using VXML > subdialog > as shown in the following screenshot. The subdialog src should be Webhook URL with JWT Token, which receives the following parameters as Input.
+  ![IVR call flow](images/IVR-20.png "IVR call flow")
 
 * _message_: Message from User. If the value is empty, then Welcome message would be triggered.
-* _callId_:  A unique Call ID, based on which the VA identifies the IVR sessions
+* _callId_:  A unique Call ID, based on which the AI Agent identifies the IVR sessions
 * _from_: Unique User’s Identity, e.g., Phone Number
 * _to_: Bot Stream Id
 
@@ -245,7 +246,7 @@ The _endOfConversation_ variable should be processed through the data returned f
 
 ### ASR Metadata Extraction
 
-The **Automatic Speech Recognition (ASR)** engine configured by bot engineers compares the speech input with many pre-specified possibilities and converts the speech to text. In addition to the ‘text,’ the bot designers need additional information from the ASR engine that helps them customize the conversation flow and the user experience. The two major additional details extracted from the ASR Metadata are:
+The **Automatic Speech Recognition (ASR)** engine configured by the Platform users compares the speech input with many pre-specified possibilities and converts the speech to text. In addition to the ‘text,’ the Platform users need additional information from the ASR engine that helps them customize the conversation flow and the user experience. The two major additional details extracted from the ASR Metadata are:
 
 * **Input Mode (Speech or DTMF)** – The mode used by the user to provide the input. The two modes available include **Speech** and **DTMF**.
 * **ASR Confidence** – The confidence with which the ASR engine identifies the user input.
@@ -255,24 +256,24 @@ To extract the metadata from the ASR transcription, follow these steps:
 1. In **IVR Channel** settings under **Voice Call Properties** various details like **Input Mode**, **ASR Confidence Threshold** etc. are configured.
  ![input mode](../images/IVR-21.png "input mode")
 
-2. See [Voice Call Properties: Channel Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings])for more information. The additional information provided by the ASR engines can be extracted using the **context object**. This is configured at  **Bot User Session > lastMessage >  asrMetaData**.
+2. See [Voice Call Properties: Channel Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings)for more information. The additional information provided by the ASR engines can be extracted using the **context object**. This is configured at  **Bot User Session > lastMessage >  asrMetaData**.
 3. Go to the **Settings** panel of the last message node for your dialog task and configure the **JavaScript Message** under **Bot Responses**, as shown below:
-  ![JavaScript message](../images/IVR-22.png "JavaScript message")
+  ![JavaScript message](images/IVR-22.png "JavaScript message")
 4. The ASR metadata is extracted in the response using the following syntax:
 
     `print(JSON.stringify(context.session.BotUserSession.lastMessage.asrMetaData))
   `
-    ![messages ](../images/IVR-23.png "messages")
+    ![messages ](images/IVR-23.png "messages")
 
 5. In this example, based on the **ASR Confidence** value extracted from the user input, we define the connection rules for the dialog as shown below:
-   ![ASR confidence](../images/IVR-24.png "ASR confidence")
+   ![ASR confidence](images/IVR-24.png "ASR confidence")
 
-6. Go to **Automation** > **Analytics** > **Virtual Assistant** > **NLP Insights** of your Virtual Assistant on the Kore.ai XO Platform.
+6. Go to **Automation** > **Analytics** > **Virtual Assistant** > **NLP Insights** on the Platform.
 
 7. Click on the relevant utterance to see the **Chat History** details.
 
 8. Click the **ellipsis** icon on top of the **Javascript Message** to view the details of the **ASR metadata** extracted from the response.
-  ![chat history](../images/IVR-26.png "chat history")
+  ![chat history](images/IVR-26.png "chat history")
 
  In this example, the parameters like **ASR Confidence**, **score**,**input mode**, **utterance**, etc. are extracted in the syntax shown below:
 
@@ -295,8 +296,8 @@ data: {
 
 ### Managing Multiple Prompts in IVR Voice Channel
 
-In the IVR experience flow, multiple prompts can be consolidated into a single message before being handed over to the Virtual Assistant through the Automation Node. This ensures effective capture of user inputs, minimizes the risk of call disconnections and provides seamless functionality across IVR voice and IVR channels.
+In the IVR experience flow, multiple prompts can be consolidated into a single message before being handed over to the AI Agent through the Automation Node. This ensures effective capture of user inputs, minimizes the risk of call disconnections and provides seamless functionality across IVR voice and IVR channels.
 
-When the IVR is active, prompts defined within the flow are combined and delivered as a single message to the Virtual Assistant. Additionally, the system uses a "Prompt: True" flag to indicate it is awaiting user input, ensuring the interaction flow remains responsive and user inputs are accurately processed.
+When the IVR is active, prompts defined within the flow are combined and delivered as a single message to the AI Agent. Additionally, the system uses a "Prompt: True" flag to indicate it is awaiting user input, ensuring the interaction flow remains responsive and user inputs are accurately processed.
 
 The flow transitions smoothly from the Welcome Voice Flow to the Automation Node without losing user input, maintaining a seamless user experience. The platform captures and processes user input effectively during the initial interaction, ensuring uninterrupted communication.

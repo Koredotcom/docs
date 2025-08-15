@@ -4,14 +4,14 @@ You can use the **Prebuilt Action Templates** from your Salesforce integration t
 
 Steps to create a dialog task using Salesforce action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click the **Create a Dialog Task** to create a new task.  
 
 3. On the Dialog Task pop-up, under the **Integration**, select the **Salesforce** option to view the action templates.  
 <img src="../images/salesforce-tem-img2.png" alt="Integration - Salesforce" title="Integration - Salesforce" style="border: 1px solid gray;zoom:50%;"/>
 
 
-If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.
+If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.
 
 ## Salesforce CRM Actions 
 
@@ -167,7 +167,7 @@ Steps to create a new lead in the Salesforce CRM:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task
-5. Follow the prompts in the VA console to create a lead as shown below:  
+5. Follow the prompts in the App console to create a lead as shown below:  
 <img src="../images/salesforce-tem-img8.png" alt="VA prompts to create a lead" title="VA prompts to create a lead" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Enter all lead details when prompted by the VA as shown below:  
@@ -198,7 +198,7 @@ Steps to update an existing lead in Salesforce CRM:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to update a lead.
+5. Follow the prompts in the App console to update a lead.
 6. Enter all lead details when prompted by the VA
 7. The existing lead is updated in Salesforce CRM. 
 8. Click the **View Lead** button to view the lead details in Salesforce CRM.  
@@ -221,7 +221,7 @@ Steps to delete a lead in Salesforce CRM:
 
 3.  Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task
-5. Follow the prompts in the VA console to delete a lead as shown below:  
+5. Follow the prompts in the App console to delete a lead as shown below:  
 <img src="../images/salesforce-tem-img17.png" alt="VA prompt to delete a lead" title="VA prompt to delete a lead" style="border: 1px solid gray;zoom:50%;"/>
 
 ### List All Leads
@@ -312,7 +312,7 @@ Steps to view all leads in Salesforce CRM:
 
 4. Click the **Train** tab to complete the Dialog task training.
 5. Click the **Talk to Bot** icon to test and debug the dialog task
-6. Follow the prompts in the VA console to view all leads as shown below:  
+6. Follow the prompts in the App console to view all leads as shown below:  
 <img src="../images/salesforce-tem-img20.png" alt="VA prompts to view all leads" title="VA prompt to view all leads" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -404,7 +404,7 @@ Steps to view all leads in Salesforce CRM:
 
 4. Click the **Train** tab to complete the Dialog task training.
 5. Click the **Talk to Bot** icon to test and debug the dialog task
-6. Follow the prompts in the VA console to view a lead by ID as shown below:  
+6. Follow the prompts in the App console to view a lead by ID as shown below:  
 <img src="../images/salesforce-tem-img23.png" alt="VA prompts to view lead by id" title="VA prompts to view lead by id" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Search Leads
@@ -496,7 +496,7 @@ Steps to search all leads in Salesforce CRM:
 
 4. Click the **Train** tab to complete the Dialog task training.
 5. Click the **Talk to Bot** icon to test and debug the dialog task
-6. Follow the prompts in the VA console to view all leads as shown below:  
+6. Follow the prompts in the App console to view all leads as shown below:  
 <img src="../images/salesforce-tem-img26.png" alt="VA prompt to view all leads" title="VA prompt to view all leads" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -543,10 +543,10 @@ Steps to create a new opportunity in Salesforce CRM:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task
-5. Follow the prompts in the VA console to create an opportunity as shown below:  
+5. Follow the prompts in the App console to create an opportunity as shown below:  
 <img src="../images/salesforce-tem-img30.png" alt="VA prompts to create opportunity" title="VA prompts to Create Opportunity" style="border: 1px solid gray;zoom:50%;"/>
 
-8. Enter all opportunity details when prompted by the VA.
+8. Enter all opportunity details when prompted by the AI Agent.
 9. The new opportunity is created in Salesforce CRM. Click the **Chevron** icon to expand the new opportunity.  
 <img src="../images/salesforce-tem-img31.png" alt="Expand the new opportunity" title="Expand the new opportunity" style="border: 1px solid gray;zoom:50%;"/>
 

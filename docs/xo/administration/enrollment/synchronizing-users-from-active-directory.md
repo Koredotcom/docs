@@ -13,11 +13,6 @@ Kore.ai can synchronize with your LDAP Active Directory to match the member info
 
 If a Kore.ai user leaves your company and is deactivated in Active Directory, Kore.ai can automatically deactivate the Kore.ai account during the next scheduled Active Directory synchronization. Your company’s Active Directory is never modified during synchronization.
 
-!!! Note
-
-    Post v8.1, the support for Kore.ai Directory Agent for AD Sync has been discontinued. You can use the Cloud Connector option discussed in detail in this document or use the public APIs for synchronizing your users, [click here for details](../../../apis/api-list/#admin-apis){:target="_blank"}.
-
-
 **Prerequisites**
 
 To configure Active Directory synchronization, you must:

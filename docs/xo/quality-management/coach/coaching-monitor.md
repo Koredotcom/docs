@@ -24,7 +24,7 @@ The **Coaching Monitor** page shows the following list of items:
 
 * **Filter**: This provides you with the filter selection criteria.
 
-### Filter Criteria
+## Filter Criteria
 
 Upon clicking the **Filter** icon, you will get the following set of parameters to analyze coaching sessions.   
     <img src="../coaching-monitor/images/coaching-monitor-filter.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:70%;">
@@ -41,7 +41,7 @@ Upon clicking the **Filter** icon, you will get the following set of parameters 
 * **Save**: Allows you to apply the same filters in subsequent sessions, and streamline the monitoring process.
 * **Clear**: This resets or removes all previous filter selections. It allows you to start fresh, and create new filter combinations without using the previous selections stored.
 
-### Agent Progress
+## Agent Progress
 
 When you click on a specific agent's record in the Coaching Monitor screen, the corresponding agent-specific Coaching Progress status gets displayed, where you can visualize the comparison progress between the previous coaching score with the current coaching score based on the attributes. 
     <img src="../coaching-monitor/images/coaching-monitor-agent-progress.png" alt="Agent Progress" title="Agent Progress" style="border: 1px solid gray; zoom:70%;">

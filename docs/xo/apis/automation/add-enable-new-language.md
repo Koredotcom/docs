@@ -1,6 +1,6 @@
 # Add and Enable a New Language API
 
-To initiate the addition and enablement of a new language for a virtual assistant.
+To initiate the addition and enablement of a new language for an AI Agent.
 
 <table>
   <tr>
@@ -35,7 +35,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Language Configuration
+<li>App Builder: Language Configuration
 
 <li>Admin Console: Language Settings > Language Management
 </li>
@@ -131,7 +131,7 @@ curl -X POST 'https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language'
    </td>
    <td>langDefinitionMode.baseLanguage
    </td>
-   <td>Base language of the Virtual Assistant.
+   <td>Base language of the AI Agent.
    </td>
    <td>Optional
    </td>
@@ -181,7 +181,7 @@ curl -X POST 'https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language'
    </td>
    <td>multiLingualConfigurations.nluLanguage
    </td>
-   <td>Refers to the language code of the bot language.
+   <td>Refers to the language code of the A language.
    </td>
    <td>Required
    </td>

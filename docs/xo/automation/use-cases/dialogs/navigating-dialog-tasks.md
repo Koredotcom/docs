@@ -9,25 +9,25 @@
 
 This article takes you through the major features you can access via the Dialog Builder.
 
-The Dialog Builder is a key component of the Kore.ai XO Platform, and you can use it to develop full conversations between your VA and your users – from design to development, training, and testing.
+The Dialog Builder is a key component of the Kore.ai XO Platform, and you can use it to develop full conversations between your AI Agent and your users – from design to development, training, and testing.
 
-The Dialog Builder Provides Conversation, Logic, and NLP-based tools and multiple opportunities to develop your conversational VA. You can Design, Build, and Train from within a familiar interface, which improves development efficiency and enhances results.
+The Dialog Builder Provides Conversation, Logic, and NLP-based tools and multiple opportunities to develop your conversational AI Agent. You can Design, Build, and Train from within a familiar interface, which improves development efficiency and enhances results.
 
 
 ## Benefits
 
-The purpose of the Dialog Builder is to combine human interaction and business logic, enabling your organization to collaboratively implement standards, processes, and practices into valuable Virtual Assistants.
+The purpose of the Dialog Builder is to combine human interaction and business logic, enabling your organization to collaboratively implement standards, processes, and practices into valuable AI AgentS.
 
 Here are a few other ways in which the Dialog Builder can benefit your organization:
 
-* Simplifies and streamlines VA development by providing access to tools and connecting to a wide variety of services.
-* Facilitates the application of business processes to Conversational VA Development.
-* Encourages innovation through clear, collaborative processes to Design, Build and Train AI-powered Conversational Virtual Assistants.
+* Simplifies and streamlines AI Agent development by providing access to tools and connecting to a wide variety of services.
+* Facilitates the application of business processes to Conversational AI Agent Development.
+* Encourages innovation through clear, collaborative processes to Design, Build and Train AI-powered Conversational AI Agents.
 
 
 ## Explore Dialog Tasks
 
-You can access Dialog Tasks from **Automation AI > Virtual Assistant > USE CASES > Dialogs**.
+You can access Dialog Tasks from **Automation AI > USE CASES > Dialogs**.
 
 <img src="../images/navigate-dialog.png" alt="Navigate to Dialogs" title="Navigate to Dialogs" style="border:1px solid gray; zoom:60%;">
 
@@ -49,9 +49,9 @@ The first page is a list of existing Dialog Tasks. Now, let us review the featur
     <img src="../images/navigate-dialog-img2-dialog-task-options.png" alt="Dialog task options" title="Dialog task options" style="border:1px solid gray; zoom:60%;">
 
 * **Search Dialog Tasks** – If you are looking for a specific task, you can type its name here.
-* **Manage Components**—Use this button to reach the Dialog Components section, where you can manage entities, webhooks, messages, agent transfers, etc., that are in use within all Dialog Tasks within your VA.
+* **Manage Components**—Use this button to reach the Dialog Components section, where you can manage entities, webhooks, messages, agent transfers, etc., that are in use within all Dialog Tasks within your AI Agent.
 * **Create a new Dialog Task** – Use this button to create a new Dialog Task.
-* **Test**—This is where you can easily test your VA by simulating an interaction between a user and the VA.
+* **Test**—This is where you can easily test your AI Agent by simulating an interaction between a user and the AI Agent.
 
 
 ## Dialog Task Options
@@ -67,7 +67,7 @@ In some scenarios, you may need to create two similar dialog tasks with minor di
 To clone a dialog task, follow the below steps:
 
 * **Open the App** in which you want to clone the dialog task.
-* Select the **Automation AI > Virtual Assitant** option from the left menu.
+* Select the **Automation AI** option from the left menu.
 
     <img src="../images/automationai-va-navigation.gif" alt="Navigate to Virtual Assistant" title="Navigate to Virtual Assistant" style="border:1px solid gray; zoom:60%;">
     
@@ -132,7 +132,7 @@ Please see the articles linked below for information on:
 
 ## Dialog Builder - Conversation Design and Logic Building
 
-The Dialog Builder is where you can design, build, train, and test the conversations that your VA can have with your users.
+The Dialog Builder is where you can design, build, train, and test the conversations that your AI Agent can have with your users.
 
 You can access them by creating a new Dialog Task or opening an existing one
 

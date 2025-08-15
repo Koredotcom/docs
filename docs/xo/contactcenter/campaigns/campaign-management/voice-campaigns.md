@@ -33,6 +33,8 @@ The following details of the voice campaigns are shown in a table:
 * **Contact List** - The call list that will be dialed.
 * **Connection** - The following details are displayed based on the dialer type:
     * **Agentless dialer**- The Flow name selected while creating or editing a campaign is shown. For example, the default Conversational Input voice Flow.
+    * **Progressive dialer** - The Queue name selected while creating or editing a campaign is shown. For example, the default Sales Queue.
+    * **Preview dialer** - Displays the Queue name selected for the campaign. Agents receive call records based on idle time and can review customer details before starting the call.
 * **Last Run** - The date when the campaign was run last.
 * **Last updated** - Date when the campaign was last updated.
 
@@ -79,12 +81,11 @@ The dialer efficiently manages lead allocation based on agent availability. It t
 To create a campaign when Progressive Dialing Mode is selected:
 
 * Select the **Queue** to which the calls will be routed. [Learn more](../../routing/queues/queue-management.md)  
+    <img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
 
-<img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
+!!! Note
 
-    !!! Note
-
-        You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.
+    You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.
 
 #### Progressive Dialer Call Handling
 
@@ -102,11 +103,11 @@ Dispositions are displayed to the agent when the call ends.
 
     Below is the dialing logic when the same agents are assigned multiple campaigns.
 
-        * If the campaigns have different priorities, the dialer first dials contacts in campaigns with higher priority and then campaigns with lower priority.
+    * If the campaigns have different priorities, the dialer first dials contacts in campaigns with higher priority and then campaigns with lower priority.
 
-        * If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
+    * If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
 
-        * Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
+    * Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
 
 ### Preview Dialer
 

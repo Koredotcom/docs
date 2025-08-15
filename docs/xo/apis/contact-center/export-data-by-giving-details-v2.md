@@ -16,7 +16,7 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
 | **Parameter** | **Description**                                                                                     | **Type**          |
 |---------------|-----------------------------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                                         | String, Required  |
-| `botId`       | BotId or StreamId. You can access it from the General Settings page of the bot.                    | String, Required  |
+| `botId`       | botId or streamId. You can get it from the App Settings page.                 | String, Required  |
 
 ## Query Parameters
 

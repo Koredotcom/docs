@@ -17,7 +17,7 @@ This API retrieves the list of individual billing sessions created for an app so
 <p>
 <code>https://{{host}}/api/public/bot/{{BotID}}/getBillingSessionsDetails</code>
 <p>
-For Bot Admin Console: <code>https://{{host}}/api/public/getBillingSessionsDetails</code>
+For Admin Console: <code>https://{{host}}/api/public/getBillingSessionsDetails</code>
    </td>
   </tr>
   <tr>
@@ -42,7 +42,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 <li>Dialog Builder: Billing Sessions</li>
 
-<li>Bot Admin Console: Billing >Usage> Billing Sessions</li>
+<li>Admin Console: Billing >Usage> Billing Sessions</li>
 </ul>
    </td>
   </tr>

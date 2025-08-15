@@ -40,7 +40,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable
+<li>App Builder: Not Applicable
 
 <li>Admin Console: Bot Publish > Publish
 </li>
@@ -76,8 +76,8 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
    <td>Required
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings </strong>on the Bot Builder.
-   <strong>Note:</strong> This is required only for Bot Builder API scope of Proactive Messages.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings </strong>on the App Builder.
+   <strong>Note:</strong> This is required only for App Builder API scope of Proactive Messages.
    </td>
   </tr>
 </table>

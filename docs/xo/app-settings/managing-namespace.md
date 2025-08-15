@@ -1,10 +1,10 @@
 # Managing Namespace
 
-Chances are that you have defined tens or hundreds of (Environment or Content) variables and used them in the VA definitions. These variables could have been used in defining text prompts or messages, JavaScript, transitions, and service call definitions. Loading all these variables for every single task irrespective of their usage would lead to delays in response times impacting the user experience.
+Chances are that you have defined tens or hundreds of (Environment or Content) variables and used them in the App definitions. These variables could have been used in defining text prompts or messages, JavaScript, transitions, and service call definitions. Loading all these variables for every single task irrespective of their usage would lead to delays in response times impacting the user experience.
 
 Using **Namespaces** you can categorize variables and map them to various components. The XO Platform would load the variables only from the mapped namespaces while executing specific components.
 
-[Learn more about Variables.](../variables/using-bot-variables/){:target="_blank"}
+[Learn more about Variables.](../app-settings/variables/using-bot-variables.md){:target="_blank"}
 
 ## Enabling Namespaces
 
@@ -20,7 +20,7 @@ Once the Variable Namespaces feature is enabled:
 2. All tasks and variables, if any, are automatically associated with this default namespace;
 3. You can define and manage namespaces;
 4. You can add or remove the Environment and Content variables to these namespaces. A variable can belong to one or more namespaces. You cannot remove the Environment and Content variables from the default namespace.
-5. You can map namespaces to the various components of the bot definition like:
+5. You can map namespaces to the various components of the app definition like:
     1. Tasks which include Dialog, and Alert;
     2. Nodes in Dialog Task;
     3. Knowledge Task;
@@ -34,8 +34,7 @@ Once Variable Namespaces are mapped, the following steps are implemented by the 
 
 1. Only the variables that belong to the namespace mapped to a component will be loaded;
 2. If the variable that is not mapped is referenced by the component, it will flag a “_variable not found_” error;
-3. The same logic applies to Bot functions used within the tasks.
-
+3. The same logic applies to App functions used within the tasks.
 
 ## Creating Namespaces
 
@@ -77,7 +76,7 @@ You can find the option under the Component Properties section of the node. You 
 
 #### Knowledge Graph
 
-Navigate to **Automation AI > Virtual Assistant > FAQs**. Click **Manage KG**.
+Navigate to **Automation AI > KNOWLEDGE AI > FAQs**. Click **Manage KG**.
 
 On the **Knowledge Graph** screen, click the 3-dot menu icon and select **Manage Variable Namespaces**.
 
@@ -86,13 +85,13 @@ On the **Knowledge Graph** screen, click the 3-dot menu icon and select **Manage
 
 #### Small Talk
 
-Navigate to **Automation AI > Virtual Assistant > Small Talk**. Click the 3-dot menu icon on any of the groups.
+Navigate to **Automation AI > USE CASES > Small Talk**. Click the 3-dot menu icon on any of the groups.
 
 <img src="../images/managing-namespace-img9.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:70%;"/>
 
 
 #### Event Handlers
 
-Navigate to **Automation AI > Virtual Assistant > Events**. Click the 3-dot menu icon.
+Navigate to **Automation AI > CONVERSATION INTELLIGENCE> Events**. Click the 3-dot menu icon.
 
 <img src="../images/managing-namespace-img10.gif" alt="Event handlers" title="Event handlers" style="border: 1px solid gray;zoom:70%;"/>
