@@ -209,7 +209,7 @@ You can define the Service Type as:
 * **URL to Image** – Define a web page URL to load to render an image.
 * **Custom Authentication Service** – Define a URL to a third-party application that provides the authentication services necessary for the task flow.
 * **Alert Subscription Service** – Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
-* **Data Table Service** – Define CRUD operations to query and manipulate the data for any given data table/table view assigned to the Virtual Assistant.
+* **Data Table Service** – Define CRUD operations to query and manipulate the data for any given data table/table view assigned to the AI Agent.
 
 
 ### Define a Custom Service

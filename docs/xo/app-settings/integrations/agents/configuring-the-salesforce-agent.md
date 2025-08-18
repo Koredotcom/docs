@@ -144,7 +144,7 @@ To retrieve the Button ID, follow these steps:
 
 9. After mapping channels, click **Done**.
 10. Click **Save** to enable the Salesforce agent.
-11. Publish the VA. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
+11. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 #### Execution

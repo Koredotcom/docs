@@ -15,7 +15,7 @@ Kore.ai provides a way to programmatically pass information to the assistant usi
 
 ## nlMeta
 
-The *nlMeta* is an object that can be used to pass information on to the bot. The bot would use this information to execute the intent specified therein before attempting to decode any other information.
+The *nlMeta* is an object that can be used to pass information on to the AI Agent. The AI Agent would use this information to execute the intent specified therein before attempting to decode any other information.
 
 
 ## Sample
@@ -57,13 +57,13 @@ The following are the parameters that can be used in this object:
   <tr>
    <td>nlMeta
    </td>
-   <td>An object for natural language information for the bot
+   <td>An object for natural language information for the AI Agent
    </td>
   </tr>
   <tr>
    <td>intent
    </td>
-   <td>Intent identified via 3rd party, which needs to be triggered by the bot
+   <td>Intent identified via 3rd party, which needs to be triggered by the AI Agent
    </td>
   </tr>
   <tr>
@@ -93,7 +93,7 @@ The following are the parameters that can be used in this object:
   <tr>
    <td>interruptionOptions
    </td>
-   <td>This is to indicate the interruption behavior in case any task is in progress when the bot receives this nlMeta information. Values can be:
+   <td>This is to indicate the interruption behavior in case any task is in progress when the AI Agent receives this nlMeta information. Values can be:
 <ul>
 
 <li>discardAll – to discard current and previous tasks, if any
@@ -159,7 +159,7 @@ The following are the parameters that can be used in this object:
 </table>
 
 
-In case, the requested task is not found the bot would respond with a standard response “Dialog task required for conversation not available”.
+In case, the requested task is not found the AI Agent would respond with a standard response “Dialog task required for conversation not available”.
 
 
 ## Usage

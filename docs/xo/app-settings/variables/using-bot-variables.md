@@ -22,7 +22,7 @@ Post the release of v8.1 of the platform, for <span style="text-decoration:under
 
 ### Restricting Sensitive Data with Environment Variables
 
-During the virtual assistant definition, developers may create **environment variables** for sensitive data like credentials/keys. These variables are useful for connecting to other systems using service nodes or as a part of authorization profiles. However, environment variables are visible to all the developers with shared access to the virtual assistant, especially when its definition is exported.
+During the AI Agent definition, developers may create **environment variables** for sensitive data like credentials/keys. These variables are useful for connecting to other systems using service nodes or as a part of authorization profiles. However, environment variables are visible to all the developers with shared access to the AI Agent, especially when its definition is exported.
 
 The latest Kore.ai XO Platform release introduces the **Secure Variable** feature for environment variables, which encrypts the added variable when enabled. This makes only the encrypted variable value visible to others and not the original value.
 
@@ -30,7 +30,7 @@ The latest Kore.ai XO Platform release introduces the **Secure Variable** featur
 
 
 * The **secure variable** is encrypted in the database and does not require any encryption key.
-* The original value is used only internally for all service calls, language translation, etc. while executing the virtual assistant definition.
+* The original value is used only internally for all service calls, language translation, etc. while executing the AI Agent definition.
 * During the export of a secure variable through **App** or **environment variables** import, it has an empty value, so the original value is not available in plain text.
 
 **Leveraging Encrypted Environment Variable Values for Additional Modules**
