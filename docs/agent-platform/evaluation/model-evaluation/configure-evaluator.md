@@ -159,7 +159,7 @@ For example, when a user query is processed, the pipeline returns an answer alon
 
 Users can fine-tune the evaluation process by adjusting key parameters to meet specific needs. While the evaluation prompts themselves cannot be modified, as their results directly impact the final score calculation, users have the flexibility to adjust the following parameters:
 
-* **Model**: Users can choose which model to use for the evaluation.
+* **Model**: Users can choose which model and connection to use for the evaluation.
 * **Pass Threshold**: Users can modify the threshold required for a pass based on the evaluation criteria.
 * **Variables in the Prompt**: Users can attach variables depending on the specific metric being used, such as ground_truth, retrieved_contexts, user_input.
 
@@ -228,7 +228,7 @@ Steps to add an evaluator:
 
 2. From the list of Quality and Safety evaluators, select the desired evaluator.
 3. In the Evaluators dialog, fill in these details:
-    1. **Model**: Choose the model you want to use as an evaluator. This model will assess the input and/or output and generate a score. Only the models deployed in Agent Platform will appear in the search dropdown. Both open-source and the external models are considered here.
+    1. **Model**: Choose the model you want to use as an evaluator. This model will assess the input and/or output and generate a score. Only the models(open-source and external) deployed in Agent Platform will appear in the search dropdown.
     2. **Model Configuration**: Select the appropriate model hyperparameters such as Temperature, Output token limit, Top P etc.
     3. **Prompt**: Click to view the system prompt. The prompt associated with the system evaluator is view-only. While you can view the prompt, it cannot be edited.
     4. **Map variables**: Map the variables in the prompt to the corresponding columns in your imported dataset. This ensures the evaluator uses the right data for its analysis. 
