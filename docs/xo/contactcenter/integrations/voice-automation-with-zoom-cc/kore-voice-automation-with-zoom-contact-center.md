@@ -1,15 +1,15 @@
 # Kore Voice Automation Integration with Zoom Contact Center
 
-**Zoom Contact Center (ZCC)** is an automation solution for enterprises to manage customer interactions across voice and chat channels. This Integration will  enable Voice automation through SIP Integration. **Kore.ai** now supports the Zoom Contact Center voice channel to integrate voice virtual assistants.
+**Zoom Contact Center (ZCC)** is an automation solution for enterprises to manage customer interactions across voice and chat channels. This Integration will  enable Voice automation through SIP Integration. **Kore.ai** now supports the Zoom Contact Center voice channel to integrate voice assistants.
 
 This integration streamlines customer support, automates responses, and improves overall operational efficiency, leading to enhanced customer experiences and increased productivity.
 
 ## How it Works
 
-Here’s a general overview of how voice virtual assistant interactions work on the Zoom Contact Center:
+Here’s a general overview of how voice assistant interactions work on the Zoom Contact Center:
 
-* **Setup and Configuration**: Kore.ai sets up and configures the integration between their virtual assistant and ZCC. This involves installing specific connectors provided by Zoom and configuring the settings to establish a connection.
-* **Channel Integration**: Once the integration is set up, the virtual assistants on Kore.ai can be configured to use ZCC as one of its communication channels (setting includes “Transfer form IVR” and “Agent Transfer”). This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and then routed to Kore’s IVR for running voice automation.
+* **Setup and Configuration**: Kore.ai sets up and configures the integration between their AI Agent and ZCC. This involves installing specific connectors provided by Zoom and configuring the settings to establish a connection.
+* **Channel Integration**: Once the integration is set up, the AI Agent on Kore.ai can be configured to use ZCC as one of its communication channels (setting includes “Transfer form IVR” and “Agent Transfer”). This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and then routed to Kore’s IVR for running voice automation.
 * **Routing and Distribution**: When a customer initiates contact through ZCC and the call is received by Kore. Admins can use the Agent Transfer Node within the Kore platform to transfer the call back to ZCC if a human agent is required. Admins can also define appropriate SIP headers to provide the necessary information that can be used within ZCC to direct the interaction to the appropriate agents.
 * **Agent Interaction**: The agent receives the customer interaction and responds to the customer using ZCC’s communication features, such as answering voice calls.
 
@@ -27,7 +27,7 @@ The important steps to set up the ZCC channel are summarized below:
 1. Associate an App within an experience flow. [Know more](../../../flows/navigate-the-flow-designer.md){:target="_blank"}.
 2. Configure “Transfer from IVR.”
 3. Configure “Agent Transfer.”
-4. Create a Bot Connector instance on Zoom App Marketplace to associate a virtual assistant. 
+4. Create a Bot Connector instance on Zoom App Marketplace to associate an AI Agent. 
 5. Fetch Conversation Details and Summary.
 
 ## Architecture Diagram
