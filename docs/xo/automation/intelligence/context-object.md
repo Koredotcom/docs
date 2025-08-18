@@ -126,7 +126,7 @@ The following table describes the `Context` object keys. These can be classified
 <li><code>state</code> – The status of the object for the timestamp indicated. One of: 
 <ul>
  
-<li><code>processing</code> – The Bots Platform begins processing of the node
+<li><code>processing</code> – The Platform begins processing of the node
  
 <li><code>processed</code> – The node and node connections are processed, the following node is found but the dialog has not yet moved to that node.
  
