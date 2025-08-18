@@ -56,9 +56,9 @@ Search AI interacts with Hive via APIs. To authorize the Search AI API requests,
 
 On the **Auth** page of the connector, provide the following details and click **Connect**.
 
-* **Name**- Unique name of the connector
-* **API Key** - The API Key generated in Hive. 
-* **Workspace ID**- Workspace ID for which actions are to be ingested. 
+1. **Name**- Unique name of the connector
+1. **API Key** - The API Key generated in Hive. 
+1. **Workspace ID**- Workspace ID for which actions are to be ingested. 
 
 
 ## Content Ingestion
