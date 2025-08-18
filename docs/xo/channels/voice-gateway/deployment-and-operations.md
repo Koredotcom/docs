@@ -570,7 +570,8 @@ When reviewing the diagrams to identify the one that best matches the WebRTC (Ag
 
 ### User Diagnostics
 
-If connectivity issues, screen freezing, or lag occur in Agent Desktop, perform the following troubleshooting steps:  
+If connectivity issues, screen freezing, or lag occur in Agent Desktop, perform the following troubleshooting steps: 
+ 
 * First, verify the network connection. This applies whether working in the office or remotely.  
 * Ensure the network strength meets Kore’s defined parameters. See [Minimum System Requirements and Supported Browsers](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for reference.  
 * After completing the above steps, run [User Diagnostics](../../console/manage-layout.md#user-diagnostics).
