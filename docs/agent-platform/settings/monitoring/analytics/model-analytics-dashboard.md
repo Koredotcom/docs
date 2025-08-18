@@ -111,7 +111,7 @@ The following widget-level filters apply exclusively to model-specific metrics, 
 
 ## How it Works
 
-1. Select the required date/range in the [Global Timeline Filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+1. Select the required date/date range in the [Global Timeline Filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 2. Select the tab for the required model type, like *Fine-tuned*, *Open-source*, or *External*.
 3. For Fine-tuned or Open-source models, choose the *model name* and optionally the *deployment name* and *version*. Alternatively, for External Models, select the *model name* and *connection name* from the dropdown lists.
 4. The widgets display an hourly graph for 24 hours per day and a daily graph for the respective metrics for a date range.
@@ -275,3 +275,4 @@ With intuitive data visualization and dynamic filtering capabilities, the **Mode
 * **Settings Console** - [Learn more](../../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
 * **Monitoring: Audit Logs** - [Learn more](../audit-logs.md){:target="_blank"} about tracking activities and events in your account.
 * **Monitoring: Tools Analytics Dashboard** - [Learn more](../analytics/tools-analytics-dashboard.md){:target="_blank"} about getting actionable insights into tools’ performance.
+
