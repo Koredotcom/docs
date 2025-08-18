@@ -441,11 +441,11 @@ The delay is only applied when Voice Gateway sends a response to the bot and is 
 
 If a delay occurs between two Message nodes, the bot developer must handle it manually by playing audio and stopping it after the delay.
 
-By setting timeout properties, the following actions can be configured:
-../images/handle-bot-delay.png
-* Play a textual prompt to the user
-* Play an audio file to the user
-* Disconnect the call
+By setting timeout properties, the following actions can be configured:  
+
+* Play a textual prompt to the user  
+* Play an audio file to the user  
+* Disconnect the call  
 
 **Use Case**:
 
@@ -474,7 +474,7 @@ Example:
 
       `botNoInputSpeech` can contain multiple messages, including audio URLs.
 ../images/message-node-paremeters.png
-Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](https://this)dummy.wav”,” this is third textual Message”].
+Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](https://thisdummy.wav)”,” this is third textual Message”].
 
 #### Handle Delay Between Two Message Nodes
 

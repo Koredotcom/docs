@@ -63,8 +63,6 @@ Search AI interacts with LumApps through its APIs. To set up this communication,
 
 In the LumApps back office, go to Extensions > Installed extensions page and do the following configuration. 
 
-
-
 1. Select Oauth Application Manager > Details.
 2. Go to the Settings tab.
 3. Click Add an OAuth application.
@@ -158,8 +156,6 @@ You can also use **logical operators** to specify more than one condition to def
 
 ### **Content Objects**
 
-
-
 * In **LumApps**, various content objects such as **Pages, Custom Content, and News** can be shared with different user groups. This is controlled through the **Visible By** field in the UI, which determines accessibility. 
 
 ![alt_text](images/lumapps/visibility.png "image_tooltip")
@@ -168,7 +164,6 @@ You can also use **logical operators** to specify more than one condition to def
 
 
 ### **Community Posts**
-
 
 
 * **Community Posts** are accessible **only to the members** of the respective community. \

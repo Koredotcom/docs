@@ -323,10 +323,10 @@ By default, Contact Center AI records all voice interactions. Contact Center AI 
 By default, the Allow Agent to Pause/Resume feature is disabled. However, admins can enable it for agents handling voice interactions, allowing them to pause the recording during the call.
 <img src="../images/allow-agent-to-pause-resume.png" alt="Allow Agents to Pause/Resume Call Recording" title="Allow Agents to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-### Allow Virtual Assistant Dialogs to Pause/Resume
+### Allow Assistant Dialogs to Pause/Resume
 
-By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting [Personally Identifiable Information (PII)](../../configurations/settings/handling-sensitive-data.md).  
-<img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" title="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
+By default, the Allow Assistant to Pause/Resume feature is disabled. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting [Personally Identifiable Information (PII)](../../configurations/settings/handling-sensitive-data.md).  
+<img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Assistant Dialogs to Pause/Resume Call Recording" title="Allow Assistant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
 Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
 

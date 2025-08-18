@@ -76,7 +76,7 @@ A JSON file will be generated and you need to copy the _client_email_, and _priv
 
 ## Step 4: Configure the Hangouts Chat Channel
 
-In the XO Platform, select the VA you’re working with, then go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Hangouts Chat** > **Configurations**.
+In the XO Platform, select the AI Agent you’re working with, then go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Hangouts Chat** > **Configurations**.
 
 1. Enter the following configuration details:
     1. **Client Email** – Copy the value of the _client_email_ field present in the credentials JSON file of your Service Account and enter it here.
@@ -87,6 +87,6 @@ In the XO Platform, select the VA you’re working with, then go to **Channels &
 3. Select **Yes** and click **Save** to enable Hangouts Chat channel.
 <img src="../images/google_chat12.png" alt="save channel" title="save channel" style="border: 1px solid gray; zoom:70%;">
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

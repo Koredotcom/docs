@@ -17,7 +17,7 @@ You can train your AI Agent to provide exact answers to specific questions from 
 
 2. **Generative AI Answers from Documents**
     * Upload relevant documents (e.g., policies, terms & conditions)
-    * VA analyzes the question, finds relevant content from the documents, and generates answers using Generative AI
+    * AI Agent analyzes the question, finds relevant content from the documents, and generates answers using Generative AI
     * Useful for providing more detailed answers not found in FAQs
     * Best practices for document preparation:
         * During onboarding, limit files to 5MB. (After onboarding, the file size limit depends on your plan - 100MB max for Essential, 300MB max for Advanced.)

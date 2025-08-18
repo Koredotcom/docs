@@ -293,7 +293,7 @@ In SmartAssist: **Configurations** > **System Setup** > **Language & Speech** > 
 
 **Location 2 - Call Control Parameters**
 
-In SmartAssist: **Automation** > **Select bot** > **Conversational Skills** > **Dialog Tasks** > **Select Dialog Task** > **Select the Node you want to configure** > **IVR Properties** > **Advance Controls** > **Call Control Parameters**.  
+In SmartAssist: **Automation** > **Select app** > **Conversational Skills** > **Dialog Tasks** > **Select Dialog Task** > **Select the Node you want to configure** > **IVR Properties** > **Advance Controls** > **Call Control Parameters**.  
 <img src="../images/call-control-parameters.png" alt="Call Control Parameters" title="Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
 
 **Location 3 - Experience Flows**

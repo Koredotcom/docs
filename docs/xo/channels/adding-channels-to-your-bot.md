@@ -1,6 +1,6 @@
 # Enable Digital Channels
 
-By default, your Virtual Assistant is not available to users unless you define one or more channels through which it can communicate. So, after creating a Virtual Assistant, you can add delivery channels that end-users can use to access and interact with it when deployed. For example, you can enable your assistant for use in the Kore.ai Messaging application, or allow interaction with your VA through an email address or a _Twilio_ SMS account. You can also enable your VA in third-party applications such as _Facebook_ or _Slack_. This topic describes how to add one or more delivery channels to your VA.
+By default, your AI Agent is not available to users unless you define one or more channels through which it can communicate. So, after creating an AI Agent, you can add delivery channels that end-users can use to access and interact with it when deployed. For example, you can enable your assistant for use in the Kore.ai Messaging application, or allow interaction with your VA through an email address or a _Twilio_ SMS account. You can also enable your VA in third-party applications such as _Facebook_ or _Slack_. This topic describes how to add one or more delivery channels to your VA.
 
 You can add channels to your VA from the **Flows & Channels > Channels > Digital > All** section. Channels supported by the Kore.ai XO Platform are categorized based upon their functionality and usage.
 
@@ -18,7 +18,7 @@ To enable one or more channels for your VA, follow the below steps:
 
     !!! Note
 
-        After adding the channel, the bot needs to be published for approval and the Bot Admin needs to approve the bot (with new channels). The new channel is not available to users until the Bot Admin explicitly approves that channel for your assistant.
+        After adding the channel, the app needs to be published for approval and the Admin needs to approve the app (with new channels). The new channel is not available to users until the Admin explicitly approves that channel for your assistant.
 
 ## Editing, Testing,  Disabling or Deleting Channels
 
@@ -33,7 +33,7 @@ To **test**, **disable or delete the channel**, go to **Flows & Channels** > **C
 
 !!! note
 
-    Please also note that channel edits will only take effect within your live assistant after publishing the In Development version of the VA with the channel enabled. For more information, please see Publishing your Virtual Assistant.
+    Please also note that channel edits will only take effect within your live assistant after publishing the In Development version of the VA with the channel enabled. For more information, please see Publishing your AI Agent.
 
 <img src="../images/test-channel.png" alt="Delete/Disable channel" title="Delete/Disable channel" style="border: 1px solid gray; zoom:70%;">
 
@@ -41,7 +41,7 @@ To **test**, **disable or delete the channel**, go to **Flows & Channels** > **C
 
 Below is a list of all channels you can connect to via the Kore.ai XO Platform:
 
-Click the icon of the channel you want to add, and then configure the channel to work with your Kore.ai bot. The page with Instructions and Configuration settings will slide out.
+Click the icon of the channel you want to add, and then configure the channel to work with your Kore.ai assistant. The page with Instructions and Configuration settings will slide out.
 
 ### Enterprise Channels
 

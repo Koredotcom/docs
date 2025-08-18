@@ -104,7 +104,7 @@ Key updates are summarized below.
 * Revamped Flow Builder with intuitive interface similar to Dialog Builder for seamless transition.
 * Enhanced automation through merged Conversational Input and Run Automation Nodes into single "Automation" entity.
 * Deflect to Chat feature deprecated due to limited customer usage.
-* Improved workflow reduces confusion and simplifies bot invocation.
+* Improved workflow reduces confusion and simplifies app invocation.
 
 **Publishing**: Centralized Publish Module ensures consistency and simplifies workflow management across all flows
 
@@ -124,7 +124,7 @@ Key updates are summarized below.
 permissions.
 * Improved permission management for specific requirements.
 
-**Architecture**: Simplified bot architecture merges Instance and Automation bots into single entity (new accounts only; existing accounts maintain separate bots during migration)
+**Architecture**: Simplified AI Agent architecture merges Instance and Automation apps into single entity (new accounts only; existing accounts maintain separate bots during migration)
 
 **Campaigns Module**
 
@@ -141,7 +141,7 @@ permissions.
 
 ### Agent AI
 
-Agent AI (previously AgentAssist) is now a part of AI for Service. It is an AI-powered virtual assistant for contact centers that enhances agent efficiency and service quality. It automates repetitive tasks like information retrieval and transactions and provides real-time customer insights and suggestions. By using Kore.ai's NLP and AI/ML technologies, AgentAI understands customer intent and offers contextually appropriate responses and FAQs. AgentAI operates as a widget within popular contact center platforms, supporting both voice and chat interactions.
+Agent AI (previously AgentAssist) is now a part of AI for Service. It is an AI-powered assistant for contact centers that enhances agent efficiency and service quality. It automates repetitive tasks like information retrieval and transactions and provides real-time customer insights and suggestions. By using Kore.ai's NLP and AI/ML technologies, AgentAI understands customer intent and offers contextually appropriate responses and FAQs. AgentAI operates as a widget within popular contact center platforms, supporting both voice and chat interactions.
 
 The key features and experience changes are summarized below.
 
@@ -157,9 +157,9 @@ The key features and experience changes are summarized below.
 
     * **Voice Gateway**: Voice Gateway (VG) helps configure how Contact Center AI handles automation for inbound voice calls.
 
-        By going to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**, you can add phone numbers, set up SIP Transfer, and configure the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions. In this section, you can enable the virtual assistant on the Voice channel using the built-in voice gateway that allows you to purchase a new phone number or use your existing phone number (with SIP transfer). [Learn more :octicons-arrow-right-24:](https://docsinternal-kore.github.io/docs/xo/channels/kore.ai-voice-gateway/kore-voice-gateway/)
+        By going to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**, you can add phone numbers, set up SIP Transfer, and configure the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions. In this section, you can enable the AI Agent on the Voice channel using the built-in voice gateway that allows you to purchase a new phone number or use your existing phone number (with SIP transfer). [Learn more :octicons-arrow-right-24:](https://docsinternal-kore.github.io/docs/xo/channels/kore.ai-voice-gateway/kore-voice-gateway/)
 
-    * **Web/Mobile Client**: To use any Kore.ai Bot SDKs, you must first register your app to get the authentication credentials to communicate between the Kore.ai bot and your application hosting the bot. The Kore.ai bot SDKs can be used to add a chat widget to your company application that enables users to chat with the application using natural language input. The Kore.ai bots platform interprets the user input, processes the request, and responds to the user. In this section, you can enable the virtual assistant to be on digital channels, including live chat platforms, third-party messengers, and more. [Learn more :octicons-arrow-right-24:](https://docsinternal-kore.github.io/docs/xo/channels/add-web-mobile-client/)
+    * **Web/Mobile Client**: To use any Kore.ai Bot SDKs, you must first register your app to get the authentication credentials to communicate between the Kore.ai bot and your application hosting the bot. The Kore.ai bot SDKs can be used to add a chat widget to your company application that enables users to chat with the application using natural language input. The Kore.ai platform interprets the user input, processes the request, and responds to the user. In this section, you can enable the AI Agent to be on digital channels, including live chat platforms, third-party messengers, and more. [Learn more :octicons-arrow-right-24:](https://docsinternal-kore.github.io/docs/xo/channels/add-web-mobile-client/)
 
 * **Experience**:
 

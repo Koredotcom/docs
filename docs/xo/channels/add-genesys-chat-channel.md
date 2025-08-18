@@ -1,6 +1,6 @@
 # Adding Genesys Cloud CX Messaging as a Channel
 
-The Kore.ai XO Platform now allows you to add **Genesys Cloud CX Messaging** as a messaging channel for your Virtual Assistants (VAs). Genesys Cloud CX Messaging integration helps instantly share your ideas with people inside your organization with the persistent chat history feature to start a conversation with your colleagues and continue it anywhere, anytime.
+The Kore.ai XO Platform now allows you to add **Genesys Cloud CX Messaging** as a messaging channel for your AI Agent. Genesys Cloud CX Messaging integration helps instantly share your ideas with people inside your organization with the persistent chat history feature to start a conversation with your colleagues and continue it anywhere, anytime.
 
 !!! note
 
@@ -11,28 +11,28 @@ With the **Genesys Cloud CX Messaging** integration on the Kore.ai XO Platform, 
 
 * Set up the _REST API_ and authorization flow for events and conversations.
 * Link the app to the Kore.ai XO Platform using the app’s credentials.
-* Deploy the VAs and transfer conversations to the **Genesys Agent System**.
+* Deploy the app and transfer conversations to the **Genesys Agent System**.
 * Leverage various templates like _Button_, _Quick Replies_, and _Bullets List_ provided by Genesys for message formatting.
 * Accept any attachments in the chat messages that Genesys supports.
 
 After the integration, you can do the following:
 
-* Track Virtual Assistant conversations.
+* Track AI Agent conversations.
 * Listen to new messages from Genesys Cloud CX Messaging.
-* Have VAs post and respond to messages in Genesys Cloud CX Messaging conversations.
-* Have VAs handle incoming notifications from your apps into Genesys Cloud CX Messaging.
+* Have Apps post and respond to messages in Genesys Cloud CX Messaging conversations.
+* Have Apps handle incoming notifications from your apps into Genesys Cloud CX Messaging.
 
 To set up **Genesys Cloud CX Messaging** as a channel, use your account on the [Genesys Cloud](https://genesyspartner.force.com/customercare/RequestAccount) Platform and enable a _webhook_ for the platform to receive messages.
 
 The steps to add the channel are summarized below:
 
-1. [Create a Bot Connector](#step-1-create-a-bot-connector) and [Link the Virtual Assistant to the Bot Connector](#step-1-create-a-bot-connector).
+1. [Create a Bot Connector](#step-1-create-a-bot-connector) and [Link the App to the Connector](#step-1-create-a-bot-connector).
 2. [Create an App in the Kore.ai Web/Mobile Client](#step-2-create-an-app-on-the-koreai-xo-platform).
 3. [Create the OAuth Client App in the Genesys Developer Console](#step-3-create-the-oauth-client-app-on-genesys-developer-console).
 4. [Create an inbound message flow](#step-4-create-an-inbound-message-flow).
 5. [Configure the Messenger SDK](#step-5-configure-the-messenger-sdk).
 6. [Enable the Channel](#step-6-enable-the-channel).
-7. [Publish the Bot](#step-7-publish-the-bot).
+7. [Publish the App](#step-7-publish-the-bot).
 
 
 
@@ -141,7 +141,7 @@ Your Bot Connector is created successfully!
 
 ## Step 4: Create an Inbound Message Flow
 
-To create an inbound message flow after connecting your VA to the Bot Connector, follow the steps below:
+To create an inbound message flow after connecting your AI Agent to the Connector, follow the steps below:
 
 1. Navigate to **Admin** > **Architect** on the **Genesys Bot Connector** page.
 2. Click the **Flows: Inbound Message** tab.
@@ -154,7 +154,7 @@ To create an inbound message flow after connecting your VA to the Bot Connector,
     * Click the **Initial State** icon on the top menu.
     * Select the **Call Bot Connector** option by navigating to **Start** > **Toolbox** > **Bot**.
     <img src="../images/genesys-9.png" alt="call bot connector" title="call bot connector" style="border: 1px solid gray; zoom:70%;">
-    * Select the bot connector and the relevant Bot from the list.
+    * Select the bot connector and the relevant App from the list.
     * Enter values for the given fields.
     <img src="../images/genesys-10.png" alt="genesys details" title="genesys details" style="border: 1px solid gray; zoom:70%;">
 
@@ -180,16 +180,16 @@ After creating the inbound messaging flow, you should configure and deploy the m
 
 ## Step 6: Enable the Channel
 
-After you’ve configured the Genesys Messenger and deployed it for your Virtual Assistant, you must enable the **Genesys Cloud CX Messaging** Channel by following the steps below:
+After you’ve configured the Genesys Messenger and deployed it for your AI Agent, you must enable the **Genesys Cloud CX Messaging** Channel by following the steps below:
 
 1. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Genesys Cloud CX Messaging** on the Kore.ai XO Platform.
 2. Click the **Configurations** tab.
 3. Select _YES_ for **Enable Channel**.
 4. Click **Save**.
 
-## Step 7: Publish the Bot
+## Step 7: Publish the App
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 

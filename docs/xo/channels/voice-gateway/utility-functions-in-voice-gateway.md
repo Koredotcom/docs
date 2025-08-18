@@ -4,17 +4,17 @@ Voice Gateway offers two utility libraries to manage call handling and transfers
 
 ## Agent Utils (SmartAssist/Contact Center Library)
 
-The `agentUtils` library allows you to dynamically modify call transfer properties through the bot builder (XO) before transferring the call to a human agent. It provides a wide range of options, including:
+The `agentUtils` library allows you to dynamically modify call transfer properties through the app builder before transferring the call to a human agent. It provides a wide range of options, including:
 
 * **Dynamic SIP Configuration**: Modify the SIP properties before transferring the call.
 * **Transfer Types**: Change the type of transfer (for example, Skill-based, SIP-based).
 * **User Information**: Update user-specific information before routing the call to the agent.
 
-With `agentUtils`, you can adjust SmartAssist properties directly from the bot, which is ideal when you need to fine-tune call transfers by modifying parameters like SIP URIs or transfer methods before sending the call to the Outer Source or Agent Desktop.
+With `agentUtils`, you can adjust SmartAssist properties directly from the app, which is ideal when you need to fine-tune call transfers by modifying parameters like SIP URIs or transfer methods before sending the call to the Outer Source or Agent Desktop.
 
 **Agent Transfer Node in XO Platform (Used with agentUtils)**
 
-To apply changes made with `agentUtils`, you need to use the **Agent Transfer node** in the XO platform. The Agent Transfer node routes the call back to SmartAssist from the bot, and based on the type of transfer selected in SmartAssist (for example, External, SIP Transfer, SmartAssist Agent Desktop), the call will be appropriately routed.
+To apply changes made with `agentUtils`, you need to use the **Agent Transfer node** in the XO platform. The Agent Transfer node routes the call back to SmartAssist from the app, and based on the type of transfer selected in SmartAssist (for example, External, SIP Transfer, SmartAssist Agent Desktop), the call will be appropriately routed.
 
 You can make this process **dynamic** by using `agentUtils` to modify transfer properties (such as SIP URI or transport type) before executing the Agent Transfer node.
 
@@ -22,7 +22,7 @@ You can make this process **dynamic** by using `agentUtils` to modify transfer p
 Unlike `voiceUtils`, the `agentUtils + Agent Transfer Node` flow **supports** **header encoding/decoding and user-to-user (UUI) data transfer**, which is critical when data needs to be passed securely and efficiently during the transfer process. This is one of the **key reasons** to prefer this method for complex call transfers that require encoded headers or UUI support.
 
 **Example Use Case**:  
-If you need to dynamically change the SIP transport type or update the SIP URI based on the user's session, `agentUtils` allows you to modify these properties via a script node in the bot builder. The Agent Transfer node will handle the actual routing to the SmartAssist platform. [Learn more](../../flows/node-types/utils.md#script-nodes-call-flows-agent-utils-and-usersessionutils).
+If you need to dynamically change the SIP transport type or update the SIP URI based on the user's session, `agentUtils` allows you to modify these properties via a script node in the app builder. The Agent Transfer node will handle the actual routing to the SmartAssist platform. [Learn more](../../flows/node-types/utils.md#script-nodes-call-flows-agent-utils-and-usersessionutils).
 
 ## Voice Utils (SmartAssist Library)
 
@@ -57,7 +57,7 @@ These functions can be used in the Channel Override template inside Java script 
 
 **Use Cases**:
 
-1. If you need to forcibly hang up the call from the bot during the flow or call.
+1. If you need to forcibly hang up the call from the app during the flow or call.
 
 2. This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
 
@@ -104,7 +104,7 @@ The system will first play the message, then hang up the call and transmit the h
 
 ### SIP Refer
 
-This function transfers the call to an external contact number (telephone number or SIP URI). After the transfer (Refer), the bot's call leg will disconnect.
+This function transfers the call to an external contact number (telephone number or SIP URI). After the transfer (Refer), the app's call leg will disconnect.
 
 **Use Case:**
 
@@ -180,7 +180,7 @@ Note: Parameter order must be maintained.
 
 ### SIP Invite
 
-The SIP Invite initiates a conference call. The bot's leg remains active after the call connects to the third party, and once the call with the third party ends, the bot's call will resume. The callerId and target fields are mandatory and should contain either a SIP URI or a phone number. To pass these values, provide an empty string for the message, followed by the callerId and target.
+The SIP Invite initiates a conference call. The app's leg remains active after the call connects to the third party, and once the call with the third party ends, the app's call will resume. The callerId and target fields are mandatory and should contain either a SIP URI or a phone number. To pass these values, provide an empty string for the message, followed by the callerId and target.
 
 **Syntax**: `print(voiceUtils.invite(message, callerId, target,headers,queueCommand))`
 
@@ -206,7 +206,7 @@ print(voiceUtils.invite(message,callerId,target,headers))
 
 ### AbortPrompt
 
-The abortPrompts event cancels all pending prompts sent before it was triggered. For example, if the bot sends an abortPrompts event right after sending three prompt messages, the first prompt will stop playing immediately, and the remaining two prompts will not play.
+The abortPrompts event cancels all pending prompts sent before it was triggered. For example, if the app sends an abortPrompts event right after sending three prompt messages, the first prompt will stop playing immediately, and the remaining two prompts will not play.
 
 **Use Case**:
 
@@ -239,11 +239,11 @@ print(voiceUtils.abortPrompt())
 
 ### Send DTMF
 
-This function is used to send DTMF digits from the bot. The digits are sent as RTP payloads using RFC 2833.
+This function is used to send DTMF digits from the app. The digits are sent as RTP payloads using RFC 2833.
 
 **Use Case**:
 
-When one bot interacts with another bot and tries to give DTMF Input.  
+When one app interacts with another app and tries to give DTMF Input.  
 
 | **Options** | **Type** | **Description**                                                             | **Required**            |
 |-------------|----------|------------------------------------------------------------------------------|--------------------------|

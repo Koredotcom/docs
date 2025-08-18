@@ -1,6 +1,6 @@
 # Adding Nice inContact as a Channel
 
-The Platform supports Nice inContact as a channel for integrating a virtual assistant with the NiceCXone Chat Automation platform for creating a rich and synchronous messaging experience for the end users.
+The Platform supports Nice inContact as a channel for integrating an AI Agent with the NiceCXone Chat Automation platform for creating a rich and synchronous messaging experience for the end users.
 
 
 ## Types of Nice inContact Channel
@@ -31,8 +31,6 @@ The following are prerequisites for adding Nice inContact as a Channel on the XO
 
 Perform the following steps to enable Nice inContact as a channel, download the Studio Script, and get the Webhook URL and client ID from the XO Platform.
 
-
-
 1. Login to the Platform and navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Nice inContact** > **Configurations**.  
 <img src="../images/nice-in-contact-img2.png" alt="Configurations" title="Configurations" style="border: 1px solid gray; zoom:60%;">
 
@@ -48,7 +46,6 @@ Perform the following steps to enable Nice inContact as a channel, download the 
 
 4. In the Enable channel, select **Yes** and then click **Save**. The configuration saved success message is displayed.  
 <img src="../images/nice-in-contact-img4.png" alt="Nice InContact Configuration saved" title="Nice InContact Configuration saved" style="border: 1px solid gray; zoom:60%;">
-
 
 ## Configure Nice inContact
 
@@ -92,7 +89,7 @@ Steps to configure the Nice inContact as a channel – **Legacy Chat**:
 3. In the displayed script, double-click either of the **Text Box Exchange**; For example, in the Chat_Script, double-click Textbot Exchange.  
 <img src="../images/nice-in-contact-img9.png" alt="Double click Text Box exchange" title="Double click Text Box exchange" style="border: 1px solid gray; zoom:60%;">
 
-4. The Virtual Agent page is displayed. Click **Add Bot**.  
+4. The AI Agent page is displayed. Click **Add Bot**.  
 <img src="../images/nice-in-contact-img10.png" alt="Add bot" title="Add bot" style="border: 1px solid gray; zoom:60%;">  
 
 5. On the General Information page, type in the bot name, select **Custom Exchange Endpoint**, and click **Next**.  
@@ -118,8 +115,8 @@ Steps to configure the Nice inContact as a channel – **Legacy Chat**:
 <img src="../images/nice-in-contact-img16.png" alt="Bot is successfully saved" title="Bot is successfully saved" style="border: 1px solid gray; zoom:60%;">
 
 10. Click **Close**. The Nice inContact script is displayed.
-11. Double-click the other **Text Bot Exchange Configuration**. The Virtual Agent page is displayed.  
-<img src="../images/nice-in-contact-img17.png" alt="Virtual Agent page" title="Virtual Agent page" style="border: 1px solid gray; zoom:60%;">
+11. Double-click the other **Text Bot Exchange Configuration**. The AI Agent page is displayed.  
+<img src="../images/nice-in-contact-img17.png" alt="AI Agent page" title="AI Agent page" style="border: 1px solid gray; zoom:60%;">
 
 12. Click the right tick mark next to the created bot. The “Select this bot for this Studio action?” pop-up is displayed.  
 <img src="../images/nice-in-contact-img18.png" alt="Select bot for studio action" title="Select bot for studion action" style="border: 1px solid gray; zoom:60%;">
@@ -131,7 +128,7 @@ Steps to configure the Nice inContact as a channel – **Legacy Chat**:
 
 ### Step 3 (for DFO): Create the Chat Point of Contact
 
-To Interact with the Virtual Assistant in Nice Channel, create a chat POC.
+To Interact with the AI Agent in Nice Channel, create a chat POC.
 
 1. Log into the [Nice CXone](https://na1.nice-incontact.com/login/#/logout?autoLogout=true) Portal.
 2. Click the **Applications** icon in the top left corner. Under **Omnichannel Routing**, click **ACD**.  
@@ -174,7 +171,7 @@ To Interact with the Virtual Assistant in Nice Channel, create a chat POC.
 7. Click **Create condition for selected type**. All Channels page is displayed.  
 <img src="../images/nice-in-contact-img29.png" alt="All Channels" title="All Channels" style="border: 1px solid gray; zoom:60%;">
 
-8. Search the **created channel** and click the respective **Add**, For example, Bot Channel. The selected channel is displayed.  
+8. Search the **created channel** and click the respective **Add**, For example, Channel. The selected channel is displayed.  
 <img src="../images/nice-in-contact-img30.png" alt="Add the created channel" title="Add the created channel" style="border: 1px solid gray; zoom:60%;">
 
 9. In the left-side vertical menu, under **DFO**, click **Point of Contact Digital**.
@@ -186,12 +183,12 @@ To Interact with the Virtual Assistant in Nice Channel, create a chat POC.
 
 12. Click **Save**. The channel saved success message is displayed.
 
-You may go to **DFO > Point of Contact Digital > Chat > My Channels** and click **Initialization & Test** to test a bot.
+You may go to **DFO > Point of Contact Digital > Chat > My Channels** and click **Initialization & Test** to test an AI Agent.
 
 
 ### Step 3 (for Legacy Chat): Create the Chat Point of Contact 
 
-To interact with the Virtual Assistant in the Nice InChannel, the developer must create a Chat Skill and Chat Point of Contact. The Point of Contact triggers the Studio Script associated with the Virtual Assistant.
+To interact with the AI Agent in the Nice InChannel, the developer must create a Chat Skill and Chat Point of Contact. The Point of Contact triggers the Studio Script associated with the AI Agent.
 
 1. Create a Campaign.  
 
@@ -234,7 +231,7 @@ To interact with the Virtual Assistant in the Nice InChannel, the developer must
         <img src="../images/nice-in-contact-img39.png" alt="Point of contact is created" title="Point of contact is created" style="border: 1px solid gray; zoom:60%;">
 
 
-You can use the generated **Point of Contact** link to test the bot.
+You can use the generated **Point of Contact** link to test the AI Agent.
 
 
 ### Step 4 (for Legacy Chat): Enabling the Agent Transfer

@@ -4,20 +4,24 @@
 
 ### Compose Responses
 
-Agents can respond to customers by typing their messages in the compose bar.  
-<img src="../images/compose-bar-blank.png" alt="Blank Compose Bar" title="Blank Compose Bar" style="border: 1px solid gray; zoom:80%;">
+Agents can respond to customers by typing their messages in the text editor.  
+<img src="../images/compose-bar-blank.png" alt="Blank Text Editor" title="Blank Text Editor" style="border: 1px solid gray; zoom:80%;">
 
-Agents can type their responses in the compose bar and send the message by clicking the **Send** button on the bottom right corner. Pressing the **Tab** button on your keyboard shifts the focus to the Send button. You can also press **Tab + Enter** to send a message.  
+Agents can type their responses in the text editor and send the message by clicking the **Send** button on the bottom right corner. Pressing the **Tab** button on your keyboard shifts the focus to the Send button. You can also press **Tab + Enter** to send a message.  
 <img src="../images/send-response.png" alt="Send Response" title="Send Response" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
     You can still press **Enter** to send messages. Pressing (ctrl+enter / shift+enter) on Windows and (ctrl+return / shift+return) on Mac creates a new line.
 
-Agents can send a standard response to the customer from a pre-configured library. Press **/** in the compose bar to display the standard response templates window.  
+Agents can send a standard response to the customer from a pre-configured library. Press **/** in the text editor to display the standard response templates window.  
 <img src="../images/standard-response-prompt.png" alt="Standard Response Library" title="Standard Response Library" style="border: 1px solid gray; zoom:80%;">
 
 Pressing **Escape** after typing “**/**” closes the standard response window.
+
+**When translation is enabled**: Responses appear in the agent’s selected target language in both the text editor shortcut command and the response widget.
+
+**When translation is disabled**: Responses appear in the conversation language, as set through [Agent Utils at the time of agent transfer](../flows/node-types/utils.md#set-live-chat-agent-transfer), ensuring they are not limited to the application language.
 
 ### AI-enhanced Compose Text Box
 
@@ -33,9 +37,9 @@ For example, the formal draft response “Your mortgage appointment has been sch
 
     This feature can be enabled from [Generative AI Tools > GenAI Features > Agent Response Rephrasing](../generative-ai-tools/genai-features.md#agent-response-rephrasing).
 
-### Add/Delete Hyperlinks in the Compose Bar
+### Add/Delete Hyperlinks in the Text Editor
 
-Agents can add/delete hyperlinks in the compose bar while responding to the messages.
+Agents can add/delete hyperlinks in the text editor while responding to the messages.
 
 Steps to add/remove hyperlinks:
 
@@ -609,19 +613,19 @@ These settings can be configured from [Agent settings](../contactcenter/agent-an
 **Standard Responses**:
 You can choose from a library of configured standard responses.
 
-1. Click the **Standard Response** icon at the bottom of the email compose bar. The count of response templates in each category is displayed.  
+1. Click the **Standard Response** icon at the bottom of the email text editor. The count of response templates in each category is displayed.  
 <img src="../images/standard-response.png" alt="Standard Response Icon" title="Standard Response Icon" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the category to view the standard response templates in that category.  
-<img src="../images/standard-response-library.png" alt="Standard Reposnse Tam[plates" title="Standard Response Templates" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/standard-response-library.png" alt="Standard Response Templates" title="Standard Response Templates" style="border: 1px solid gray; zoom:70%;">
 
 3. Click the Standard Response from the list to use that response in the email.  
-<img src="../images/standard-response-filled.png" alt="Send Standard Repsonse" title="Send Standard Reponse" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/standard-response-filled.png" alt="Send Standard Response" title="Send Standard Response" style="border: 1px solid gray; zoom:70%;">
 
     **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a ‘**View More**’ button is displayed.
 
     Click the **Attachment** icon to select and upload files.  
-        <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:70%;">
 
     **Notes**: You can add notes on the interaction (customer feedback, key points, next action, suggestions). This section includes any previous notes added by agents while interacting with the same customer.
 
@@ -961,15 +965,15 @@ When the agent types a response during a chat conversation with a customer, the 
 
 Do the following to enable the typing indicator for chat conversations:
 
-1. To integrate bots chat capability into custom applications, install WebSDK 2.0 on your server. WebSDK 2.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11) for additional information on installing WebSDK 2.0.
-2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 2.0. The Agent Desktop plugin allows the user to interact with the human agent through the AI Agent and supports the following features:
+1. To integrate bots chat capability into custom applications, install WebSDK 3.0 on your server. WebSDK 3.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1) for additional information on installing WebSDK 3.0.
+2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 3.0. The Agent Desktop plugin allows the user to interact with the human agent through the AI Agent and supports the following features:
 
     * Audio Calling
     * Video Calling
     * Co-browse
     * Screen Sharing
 
-    Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11/docs/plugins/agent-desktop) for additional information on installing the plugin.
+    Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1/docs/plugins/agent-desktop) for additional information on installing the plugin.
 
 ## Request Supervisor Support
 
@@ -1071,7 +1075,7 @@ CSAT surveys can be triggered based on the scenarios configured by administrator
 * **Show to Everyone**: If the “Show to Everyone” scenario is configured while creating the survey, the survey is triggered automatically for every interaction that concludes between an agent and a customer on digital or voice channels.
 * **Show to Every nth User**: If the “Show to nth User” scenario is configured while creating the survey, the survey is triggered automatically for the nth interaction that concludes between an agent and a customer on digital or voice channels. For example: If the frequency is set to 2, then the survey is triggered for every second customer.
 * **Agents can trigger**: If the “Agents can trigger” scenario is configured while creating the survey, the survey can be triggered by agents at any point during the interaction as follows:
-    * Click the **Send Survey** button on the right corner above the compose bar. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.  
+    * Click the **Send Survey** button on the right corner above the text editor. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.  
     <img src="../images/csat-button.png" alt="CSAT Button" title="CSAT Button" style="border: 1px solid gray; zoom:70%;">
 
     * The survey is triggered to the customer when the agent clicks the End button with the survey selected.
@@ -1083,6 +1087,6 @@ CSAT surveys can also be triggered in scenarios when there are no active partici
 * Outside hours of operation
 * No Agents Available flow
 * Agent/Customer side terminations or system terminations due to user inactivity
-* Subflows (No agents flow/Out of hours flow)
+* Sub-flows (No agents flow/Out of hours flow)
 
 For these scenarios, the CSAT scores are assigned to the interaction.

@@ -1,18 +1,18 @@
 # Adding the Slack Channel
 
-To set up the Slack channel on the Platform and interact with a VA using a Slack account, you must associate the VA with a Slack app.
+To set up the Slack channel on the Platform and interact with an AI Agent using a Slack account, you must associate the AI Agent with a Slack app.
 
-The Slack channel integration supports Direct Messaging (DM) and Channel (group) conversations via the Platform. When a VA is added to a channel (group) within the Slack organization space, any member can start a group conversation using \@mentions to talk to a specific VA.
+The Slack channel integration supports Direct Messaging (DM) and Channel (group) conversations via the Platform. When an AI Agent is added to a channel (group) within the Slack organization space, any member can start a group conversation using \@mentions to talk to a specific AI Agent.
 
-The Platform offers native support for threaded conversations in the Slack channel. Users can initiate a new thread from any message within a Slack channel or direct message group and continue a conversation with the VA. The Platform leverages Slack’s **Threads** to enable one-on-one conversations without losing the conversation context.
+The Platform offers native support for threaded conversations in the Slack channel. Users can initiate a new thread from any message within a Slack channel or direct message group and continue a conversation with the AI Agent. The Platform leverages Slack’s **Threads** to enable one-on-one conversations without losing the conversation context.
 
-Additionally, the Platform allows developers to configure how the Slack channel integration should handle DM and group conversations. It can automatically create a new thread whenever a user \@mentions the  VA in a Slack channel. This configuration flexibility gives developers control over the Threads feature.
+Additionally, the Platform allows developers to configure how the Slack channel integration should handle DM and group conversations. It can automatically create a new thread whenever a user \@mentions the  AI Agent in a Slack channel. This configuration flexibility gives developers control over the Threads feature.
 
 
 
 !!! note
 
-    To use Slack <b>Threads</b> for your  VA deployed on the Slack Channel, add the Bot token Scope <code>chat:write.public</code> to the existing Slack app under <b>OAuth & Permissions</b> > <b>Scopes</b> > <b>Bot Token Scopes. [Learn more](#step-2-set-redirect-url-and-scopes)
+    To use Slack <b>Threads</b> for your AI Agent deployed on the Slack Channel, add the Bot token Scope <code>chat:write.public</code> to the existing Slack app under <b>OAuth & Permissions</b> > <b>Scopes</b> > <b>Bot Token Scopes. [Learn more](#step-2-set-redirect-url-and-scopes)
 
 **Prerequisites**
 
@@ -20,7 +20,7 @@ To enable this integration, you must already have a _Slack_ account and be a mem
 
 **Channel Setup Summary**
 
-To set up Slack as a channel, the developer should associate the VA with a Slack app, set up a bot user, and enable interactive components for this app. The important steps include:
+To set up Slack as a channel, the developer should associate the AI Agent with a Slack app, set up an app user, and enable interactive components for this app. The important steps include:
 
 1. [Create an App on Slack](#step-1-create-an-app-on-slack).
 2. [Set Redirect URL and Scopes](#step-2-set-redirect-url-and-scopes).
@@ -54,11 +54,11 @@ To set up Slack as a channel, the developer should associate the VA with a Slack
  
 4. Proceed to **Scopes** > **Bot Token Scopes** section.
 5. Add <code><em>incoming-webhook</em></code>, <code><em>chat:write</em></code>, and <code><em>chat:write.public</em></code> scopes.
-6. If you would like your users to send attachments to your bot, then select the <em><code>files:write</em></code> scope.
+6. If you would like your users to send attachments to your app, then select the <em><code>files:write</em></code> scope.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>To allow users to send attachments to the VA, select the <code>files:write</code> scope.</li>
+<p><ul><li>To allow users to send attachments to the AI Agent, select the <code>files:write</code> scope.</li>
 <li>To send Proactive Notifications to users on Slack, select the <code>users:read</code>, <code>users:read.email</code>, and <code>team:read</code> scopes.</li></ul></p>
 </div>
 
@@ -79,7 +79,7 @@ To set up Slack as a channel, the developer should associate the VA with a Slack
 
     <div class="admonition warning">
     <p class="admonition-title">Important</p>
-    <p>The Webhook URL now includes the <b><i>streamid</i></b> in the API request to identify the  VA being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.</p>
+    <p>The Webhook URL now includes the <b><i>streamid</i></b> in the API request to identify the  AI Agent being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual app activity.</p>
     </div>
 
 <ol start="3"><li>Click <b>Save Changes</b>.</li>
@@ -123,7 +123,7 @@ To enable Slack on the Platform, follow the steps below:
 1. Navigate to **Channels** > **Slack**, and click the **Configurations** tab.
 2. Copy the below information and use it to define the app properties on Slack:
 
-<ul><li>Bot Name</li>
+<ul><li>App Name</li>
 <li>Redirect URL</li>
 <li>Webhook URL</li>
 
@@ -139,9 +139,9 @@ To enable Slack on the Platform, follow the steps below:
 
 <img src="../images/authorize-client-id-client-secret.png" alt="authorize client credentials" title="authorize client credentials" style="border: 1px solid gray; zoom:65%;"></ol>
 
-<ol start="5"><li>In the <b>Customize Slack Channel’s Conversations</b> section, select one of the following options to define the conversation behavior of the  VA in a Slack channel when the user \@mentions the VA:</li>
-<ul><li><b>Continue the conversation with the  VA in the channel</b>: This is the default selection. It maintains the current behavior for DM and group messages. However, if a user intentionally starts a thread with the  VA, the conversation will continue within that thread.</li>
-<li><b>Create a new thread for every user message(\@mentioned to the  VA) in the channel</b>: For every user message that is \@mentioned to the  VA in the channel (both DM and Channel conversations), the Platform does the following:</li>
+<ol start="5"><li>In the <b>Customize Slack Channel’s Conversations</b> section, select one of the following options to define the conversation behavior of the AI Agent in a Slack channel when the user \@mentions the AI Agent:</li>
+<ul><li><b>Continue the conversation with the  AI Agent in the channel</b>: This is the default selection. It maintains the current behavior for DM and group messages. However, if a user intentionally starts a thread with the  AI Agent, the conversation will continue within that thread.</li>
+<li><b>Create a new thread for every user message(\@mentioned to the AI Agent) in the channel</b>: For every user message that is \@mentioned to the AI Agent in the channel (both DM and Channel conversations), the Platform does the following:</li>
     <ul><li>Creates a new thread and replies to the user message in the thread.</li>
     <li>Treats each conversation thread as a separate session whenever it is created in the channel, maintaining context isolation.</li>
     <li>Treats each conversation thread as a new user conversation whenever it is created for Slack DM.</li></ul>
@@ -150,15 +150,15 @@ To enable Slack on the Platform, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>All the consecutive interactions between the user and the VA happen in the same thread irrespective of the option you select.</li>
-<li>The existing bots default to the first option, ensuring zero disruptions to current deployments.</li></ul></p>
+<p><ul><li>All the consecutive interactions between the user and the AI Agent happen in the same thread irrespective of the option you select.</li>
+<li>The existing apps default to the first option, ensuring zero disruptions to current deployments.</li></ul></p>
 </div>
 
-<li>(Optional) Enable <b>Proactive Notifications</b> to send notifications from your Process Apps to your bot users via Slack. Please refer to Step 3.
+<li>(Optional) Enable <b>Proactive Notifications</b> to send notifications from your Process Apps to your AI Agent users via Slack. Please refer to Step 3.
 
 <img src="../images/proactive-notifications.png" alt="proactive notfications" title="proactive notfications" style="border: 1px solid gray; zoom:65%;"></li>
  
-Once enabled, select the required Process Apps from the list for your VA, and click <b>Authorize</b>.</ol>
+Once enabled, select the required Process Apps from the list for your AI Agent, and click <b>Authorize</b>.</ol>
 
 <ol start="7"><li>Under <b>Enable Channel</b>, select <b>Yes</b> and click <b>Save</b> to enable the Slack channel.
 <img src="../images/enable-slack-channel.png" alt="enable slack channel" title="enable slack channel" style="border: 1px solid gray; zoom:65%;"></li></ol>

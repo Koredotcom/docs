@@ -1,6 +1,6 @@
 # NLP Settings and Guidelines
 
-This article provides you with some essential guidelines to optimize your workflow with the XO Platform’s NLP, and thus improve your VA’s performance. Please refer to the guidance below before before intent naming, ML training, and handling entities, concepts, and synonyms.
+This article provides you with some essential guidelines to optimize your workflow with the Platform’s NLP, and thus improve your assistance’s performance. Please refer to the guidance below before before intent naming, ML training, and handling entities, concepts, and synonyms.
 
 ## Intent Naming Guidelines
 
@@ -68,9 +68,9 @@ The K-fold Model is ideal for large datasets, but can be used for less data too 
 
 While using synonyms is great for words used in the name, users may sometimes refer to a task using slang, metaphors, or other idiomatic expressions.
 
-For example, a task name might be _Get Current Weather_, but the user inputs, _What’s happening with today’s rain situation?_. In such cases, none of the words used in the task name are used, yet the input has the same meaning. To optimize the accuracy and recognition of the NLP interpreter for your VA, you can create patterns.
+For example, a task name might be _Get Current Weather_, but the user inputs, _What’s happening with today’s rain situation?_. In such cases, none of the words used in the task name are used, yet the input has the same meaning. To optimize the accuracy and recognition of the NLP interpreter, you can create patterns.
 
-When the [NLP](/docs/xo/automation/natural-language/nlp-introduction/){:target="_blank"} interpreter matches a synonym to one task or field, and a pattern to a different task or field, the pattern match is prioritized and used for recognition over the synonym match.
+When the [NLP](../../automation/natural-language/nlp-introduction.md){:target="_blank"} interpreter matches a synonym to one task or field, and a pattern to a different task or field, the pattern match is prioritized and used for recognition over the synonym match.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -90,12 +90,12 @@ The following are some general guideline for creating intent patterns:
 * Don’t use special characters such as () & / \ $ [ ] + *.
 * Don’t use punctuation such as – , . ! ? ‘ “.
 
-For a quick guide towards the usage of patterns, refer to [How to use Patterns](/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/){:target="_blank"}.
+For a quick guide towards the usage of patterns, refer to [How to use Patterns](../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities){:target="_blank"}.
 
 ### Pattern Operators
 
 * **AND: ( X Y )**: An ordered relationship of words in sequence. This is the default setting. i.e. when you specify a pattern as _cancel booking, it _is the same as _(cancel booking )_. 
-For example, _(Cancel booking )_ matches _Cancel my flight booking_ but doesn’t match _I have booked a flight, can I cancel?_. The XO Platform uses patterns with increasing numbers of wildcards between words (up to 3 for an intent). So a pattern of _Cancel Order_ can match:
+For example, _(Cancel booking )_ matches _Cancel my flight booking_ but doesn’t match _I have booked a flight, can I cancel?_. The Platform uses patterns with increasing numbers of wildcards between words (up to 3 for an intent). So a pattern of _Cancel Order_ can match:
     * cancel booking,
     * cancel my booking,
     * cancel that last booking,
@@ -113,7 +113,7 @@ For example, _(Cancel booking )_ matches _Cancel my flight booking_ but doesn’
 _Note that the word means _not after this point_. So (!forecast the weather) and (get the weather !forecast) are different. The utterance _get the forecast for the weather_ matches the second but not the first.
 * **Optional: {X}**: For example, {phone} If the user utterance is _Get me a phone number_ or _get me a number_ the Platform will treat it equally.
 * **Enforce Phrase:** X_Y: To enforce occurrence of the phrase as is in the user utterance, without any words in between. For example, book_tickets. The utterance _book tickets_ or _I want to book tickets _will match but not _Can I book some tickets?_.
-* **Concepts**: The XO Platform has a large set of inbuilt concepts that developers can use to define a pattern. For example, (I [like love] ~world_country) will match
+* **Concepts**: The Platform has a large set of inbuilt concepts that developers can use to define a pattern. For example, (I [like love] ~world_country) will match
     * I like India,
     * I love traveling to Australia,
     * I would like to visit an African country.
@@ -123,11 +123,11 @@ _Note that the word means _not after this point_. So (!forecast the weather) and
 
 ### Entity Patterns
 
-As above, to detect entities, developers can use a combination of entity patterns and NER training. Entity patterns guide the XO Platform to where to look for a valid value for the entity. It is possible for an entity pattern to be found in several places in a sentence and the Platform will extract the value from the first instance that has a valid value. Apart from the task pattern guidelines above, follow the below guideline for entity patterns:
+As above, to detect entities, developers can use a combination of entity patterns and NER training. Entity patterns guide the Platform to where to look for a valid value for the entity. It is possible for an entity pattern to be found in several places in a sentence and the Platform will extract the value from the first instance that has a valid value. Apart from the task pattern guidelines above, follow the below guideline for entity patterns:
 
 * Include the positional wildcard * that indicates the expected position of the entity ( i.e. (from * to), (in * >)); without it the pattern is invalid.
 * Use words that should be present in the pattern before and after the position of the entity. Words after the positional wildcard help to delimit the search range for a valid entity value.
-* Use start and end of sentence symbols (&lt; and >) to separate the positional wildcard, but these are not strictly necessary because the XO Platform tool does not cross a sentence boundary to extract an entity value (except for a Description).
+* Use start and end of sentence symbols (&lt; and >) to separate the positional wildcard, but these are not strictly necessary because the Platform tool does not cross a sentence boundary to extract an entity value (except for a Description).
 * Don’t use other positional wildcards in your field pattern. All field patterns are processed in the same way and all other positional wildcards except one are ignored.
 * Don’t use field names or their synonyms in patterns or entity patterns. Only consider up to two wildcard words between the specified words.
 

@@ -1,6 +1,6 @@
 # Conversation Events
 
-Define the behavior of the Virtual Assistant during conversations with user to optimize user interactions.
+Define the behavior of the AI Agent during conversations with user to optimize user interactions.
 ## End of Task
 
 *End of Task* is triggered when the AI Agent is not expected to send any message to the user or receive any message from the user.
@@ -169,7 +169,7 @@ The developer uses the **Repeat Bot Response** to allow you to repeat the respon
 2. Click **Repeat Bot Response Event** to configure it. .
 <img src="../images/savg11.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
 
-3. Click **Manage Utterance** to review the pre-trained utterances that are added to the VA by default.
+3. Click **Manage Utterance** to review the pre-trained utterances that are added to the AI Agent by default.
 <img src="../images/manage-utterances-event.png" alt="manage utterances" title="manage utterances" style="border: 1px solid gray; zoom:75%;">
 
 4. You can add more utterances and click the **Train** link.
@@ -210,7 +210,7 @@ You can edit or add the filler message for the repeat bot response event before 
 
 <ol start="9"><li>Expand the Advanced Settings and define the following options to repeat the response:</li>
 <ul><li><b>Repeat Attempts Limit</b> – Set the number of retry attempts to repeat a response. The accepted value is between <b>1</b> and <b>10</b>. The default is <b>5</b>.</li>
-<li><b>Behavior on Exceeding Repeat Attempts</b> – Define what VA must do after exceeding the number of retry attempts to repeat the response. You can choose either the <b>End of Dialog</b> or <b>Initiate Dialog</b> option.
+<li><b>Behavior on Exceeding Repeat Attempts</b> – Define what AI Agent must do after exceeding the number of retry attempts to repeat the response. You can choose either the <b>End of Dialog</b> or <b>Initiate Dialog</b> option.
 
 <img src="../images/behavior-on-exceeding-repeat-attempts.png" alt="behavior on exceeding repeat responses" title="behavior on exceeding repeat responses" style="border: 1px solid gray; zoom:75%;">
 

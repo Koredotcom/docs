@@ -19,7 +19,7 @@ To enable one or more channels for your AI Agent, follow the below steps:
 
     !!! Note
 
-        After adding the channel, the AI Agent needs to be published for approval and the App Admin needs to approve the AI Agent (with new channels). The new channel is not available to users until the Bot Admin explicitly approves that channel for your AI Agent.
+        After adding the channel, the AI Agent needs to be published for approval and the App Admin needs to approve the AI Agent (with new channels). The new channel is not available to users until the Admin explicitly approves that channel for your AI Agent.
 
 5. The configured channel is displayed on the Configured tab of the Third Party Voice page and same channel is removed from the All tab.
 

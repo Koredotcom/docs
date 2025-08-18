@@ -1,7 +1,7 @@
 
 # Intent Events
 
-Define the behavior of the Virtual Assistant during intent identification from user utterances to customize the user experience.
+Define the behavior of the AI Agent during intent identification from user utterances to customize the user experience.
 
 ## Intent not Identified 
 
@@ -13,7 +13,7 @@ When an AI Agent cannot understand the user’s intent, this event determines th
 
 ## Ambiguous Intents Identified 
 
-When the NLP engine identifies ambiguous intents from user utterances, by default, the virtual assistant displays a list of those intents during the conversation and requests the user to make a selection.
+When the NLP engine identifies ambiguous intents from user utterances, by default, the AI Agent displays a list of those intents during the conversation and requests the user to make a selection.
 
 This default behavior is ideal for most of the use cases. However, using the Ambiguous Intents Identified event, you can customize this behavior for specific use cases. The event is triggered in the following scenarios:
 
@@ -48,7 +48,7 @@ To configure the Ambiguous Intents Identified event follow these steps:
 4. Click the button **Save & Enable** to enable the event.
 
 !!!note 
-    During the conversation with your Virtual Assistant, if there are ambiguous intents, a message is displayed in the Debug Log that Multiple intents are identified, and the **Ambiguous Intents Identified event is initiated**.
+    During the conversation with your AI Agent, if there are ambiguous intents, a message is displayed in the Debug Log that Multiple intents are identified, and the **Ambiguous Intents Identified event is initiated**.
 
 <img src="../images/multiple-intents-identified.png" alt="multiple intents identified" title="multiple intents identified" style="border: 1px solid gray; zoom:75%;">
 
