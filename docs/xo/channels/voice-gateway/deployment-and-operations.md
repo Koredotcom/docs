@@ -489,7 +489,7 @@ The manufacturer's documentation for your specific network hardware setup will d
 | External phone calls | When the agent is on WAN/Internet, the one-way latency between the agent and Edge should be less than 150 ms, with packet loss less than 1% and end-to-end latency less than 150 ms.               |
 | Internal phone calls | When the agent and Edge are on the same LAN, the one-way latency must be less than 75 ms, packet loss less than 1%, and the end-to-end latency between the agent and Edge must be less than 75 ms. |
 
-## Check List 
+### Check List 
 
 * Does your firewall support the Pinhole feature or not? (Firewalls performing a network address translation (NAT) function, the mapping between the external IP address, port socket, and the internal IP address, port socket is called a pinhole).
     - [ ] Yes
@@ -570,9 +570,9 @@ When reviewing the diagrams to identify the one that best matches the WebRTC (Ag
 
 ### User Diagnostics
 
-If connectivity issues, screen freezing, or lag occur in Agent Desktop, perform the following troubleshooting steps:
-* First, verify the network connection. This applies whether working in the office or remotely.
-* Ensure the network strength meets Kore’s defined parameters. See [Minimum System Requirements and Supported Browsers](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for reference.
+If connectivity issues, screen freezing, or lag occur in Agent Desktop, perform the following troubleshooting steps:  
+* First, verify the network connection. This applies whether working in the office or remotely.  
+* Ensure the network strength meets Kore’s defined parameters. See [Minimum System Requirements and Supported Browsers](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for reference.  
 * After completing the above steps, run [User Diagnostics](../../console/manage-layout.md#user-diagnostics).
 
 ### Checklist
