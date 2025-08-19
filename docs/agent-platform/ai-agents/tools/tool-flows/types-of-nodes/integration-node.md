@@ -33,16 +33,15 @@ The **Integration Node** integrates seamlessly into your tool flows, using confi
 
 In this document, you will learn how to add Integration Nodes to your flows, configure them with connections and action parameters, handle inputs and outputs, and test your implementations.
 
+## Prerequisites
+
+* You must add at least one service provider connection before configuring the node by clicking <b>+ Add Connection</b>. The system redirects to <b>Settings</b> -> <b>Integrations</b> page. Follow the steps [here](https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#add-a-connection-to-set-up-integration){:target="_blank"} to complete the process.
+
+   <img src="../images/no-connection.png" alt="no connection" title="no connection" style="border: 1px solid gray; zoom:75%;">
+
+* Always test the selected connection in the <b>Settings</b> console to ensure successful integration. [Learn more](https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#test-connection){:target="_blank"}.
 
 ## Steps to Add and Configure the Node
-
-<div class="admonition note">
-<p class="admonition-title">Prerequisites</p>
-<p><ul><li>You must add a service provider connection before configuring the node by clicking <b>+ Add Connection</b>. The system redirects to <b>Settings</b> -> <b>Integrations</b> page. Follow the steps <a href="https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/" target="_blank">here</a> to complete the process.
-<img src="../images/no-connection.png" alt="no connection" title="no connection" style="border: 1px solid gray; zoom:75%;"></li>
-<li>At least one active connection must be configured under <b>Settings</b> > <b>Integrations</b> before using this node. <a href="https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#add-a-connection-to-set-up-integration" target="_blank">Learn more</a>.</li>
-<li>Always test the selected connection in the <b>Settings</b> console to ensure successful integration. <a href="https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#test-connection" target="_blank">Learn more</a></li></ul></p>
-</div>
 
 To add and configure the node, follow the steps below:
 

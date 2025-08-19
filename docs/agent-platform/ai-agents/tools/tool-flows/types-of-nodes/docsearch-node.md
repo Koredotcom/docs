@@ -1,47 +1,40 @@
-# DocSearch Node - Automate Info Search and Retrieval
+# DocSearch Node – Power Your Flows with Context-Driven Search
 
-The **DocSearch Node** improves how information is found and processed. It uses advanced searching called Retrieval Augmented Generation (RAG). 
+The **DocSearch Node** is a Retrieval-Augmented Generation (RAG)-powered component that enhances the real-time discovery and retrieval of information chunks from available resources through an established Search AI app connection. Indexed and high-quality content is fetched from your Sources repository, enabling fast, precise, and context-aware responses to user queries.
 
-By connecting to your **Search AI** App, the DocSearch Node provides high-quality search results that are relevant to the current context. These results are delivered right inside the tool workflow.
+## Key Capabilities
 
-## Key Features
+* **RAG-Powered Search**: Combines traditional retrieval (search, databases) with generative LLMs as follows:
+    * **Retrieval & Pre-processing**: Queries indexed content using advanced algorithms, then refines results through tokenization and filtering. 
+    * **Grounded Generation**: Integrates refined results with LLMs for accurate and context-rich responses. 
+* **Seamless SearchAI Integration**: Connects to your Search AI App to query indexed documents and return results via the Answer Generation engine.
+* **Dynamic Query Support**: Supports static and dynamic inputs for flexible, context-aware search automation.
+* **Meta Filter Configuration**: Use optional meta filters to refine results, or search across all linked documents by default.
+* **User Redirection Option**: Redirect users to the full Search AI App for a more comprehensive search experience when needed.
+* **Precision and Personalization**: Delivers context-aware, intent-driven responses aligned to the query, ensuring accurate, relevant, and user-specific outcomes.
+* **Flow Integration**: Seamlessly connect DocSearch with other nodes to pass queries and process responses.
 
-* **RAG Searching Framework**:
 
-    RAG blends traditional retrieval systems (e.g., search, databases) with generative LLM capabilities, ensuring more accurate, relevant, and up-to-date results tailored to your needs.
+## Common Use Cases
 
-    RAG enhances generative AI outputs through these key steps:
+* **Document Retrieval**: Retrieve relevant content from indexed sources, such as manuals, policies, or help articles, based on user queries.
+* **Contextual Answer Generation**: Deliver AI-generated responses grounded in retrieved documents using the RAG framework.
+* **Knowledge Base Search**: Search internal wikis, technical docs, or training material with support for dynamic inputs and filters.
+* **User Query Handling**: Accept real-time input queries from other nodes to personalize search results in the workflow context.
 
-    <ul><li><b>Retrieval & Pre-processing</b>: Powerful search algorithms query external data (e.g., web pages, databases). Retrieved data is pre-processed through tokenization, stemming, and stop-word removal.</li>
-    <li><b>Grounded Generation</b>: Pre-processed data integrates with the LLM, enriching its context for more accurate, informative, and engaging responses.</li></ul>
-<ul><li><b>Integration with SearchAI</b>     
-    <ul><li>The DocSearch Node connects to a configured <b>Search AI App</b> via Agent Platform’s integration page.</li>
-    <li>It accesses indexed resources from the <b>Sources</b> repository within Search AI to retrieve relevant information.</li></ul></li>
-    <li><b>Dynamic Input Queries</b></li>
-    <ul><li>Accepts search input either as a variable or static text.</li>
-    <li>Facilitates seamless query processing by <b>Search AI</b>, which identifies and extracts/retrieves contextually relevant chunks from the available resources using SearchAI’s <a href="https://docs.kore.ai/xo/searchai/answer-generation/" target="_blank">Answer Generation</a>, corresponding to the input query and the meta filters provided via the <b>Advanced Search API</b>. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/" target="_blank">Learn more</a>.</li></ul></ul>
 
-* **Configurable Meta filters**
+## Example Use Case
 
-    * You can configure optional meta filters to narrow the search field with the query.
-    * If meta filters are not provided, the query is applied to all the documents uploaded to that connection. [Learn more](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
+A retail bank uses the **DocSearch Node** to automate responses to frequently asked questions about loans, accounts, and card services. When a user asks, “*What documents are required to apply for a home loan based on my income?*”, the node dynamically passes the query to a connected Search AI App, which searches, indexes, and fetches relevant information chunks from internal resources such as loan policy documents, eligibility criteria, and process guidelines. It then returns a precise, context-aware response, reducing call center load and improving self-service efficiency.
 
-* **Redirection Capability**
 
-    * Includes an option to redirect users to the **Search AI App** directly from the node.
+## How It Works
 
-* **Enhanced Search Relevance**
+The **DocSearch Node** integrates seamlessly into your tool flows, accepting user queries as static text or dynamic variables referencing other node outputs. It connects to a pre-configured Search AI App on the platform to retrieve relevant content from your Sources repository using a Retrieval-Augmented Generation (RAG) framework. You can define meta filters manually or fetch them via the Answer Generation API to generate refined, context-aware responses. The node fully integrates within the canvas and optionally allows redirection to the full Search AI interface.
 
-    * By prioritizing results using RAG criteria, the node provides precise, complete, and context-aware answers.
-    * Improves search relevance by focusing on delivering responses tailored to user intent.
+<img src="../images/how-doc-search-works.png" alt="how doc search works" title="how doc search works" style="border: 1px solid gray; zoom:75%;">
 
-* **Contextual Personalization**
-
-    * Ensures results are personalized to the query context, enhancing user experience and satisfaction.
-
-* **Connectivity with Other Nodes**
-
-    * Connect the DocSearch Node inputs and outputs to other nodes for seamless integration and data flow within the Tool Flow Canvas.
+In this document, you will learn how to add and configure DocSearch Nodes with Search AI connections, set up query inputs and meta filters, handle response outputs, and test the search-driven interactions within your automation flows.
 
 ## Configuration Overview
 
