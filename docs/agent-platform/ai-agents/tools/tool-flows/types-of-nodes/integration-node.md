@@ -36,8 +36,7 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 ## Prerequisites
 
 * You must add at least one service provider connection before configuring the node by clicking <b>+ Add Connection</b>. The system redirects to <b>Settings</b> -> <b>Integrations</b> page. Follow the steps [here](https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#add-a-connection-to-set-up-integration){:target="_blank"} to complete the process.
-
-   <img src="../images/no-connection.png" alt="no connection" title="no connection" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/no-connection.png" alt="no connection" title="no connection" style="border: 1px solid gray; zoom:75%;">
 
 * Always test the selected connection in the <b>Settings</b> console to ensure successful integration. [Learn more](https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#test-connection){:target="_blank"}.
 
