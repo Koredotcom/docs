@@ -59,7 +59,7 @@ The **Text to Image** node fits seamlessly into your tool flows, accepting descr
 
 In this document, you will learn how to add the node to your flows, configure it with descriptive prompts and generation settings, manage inputs and outputs, and test the generated image results.
 
-## Configuration Information
+## Node Configuration Information
 
 ### Exported Image Formats
 
