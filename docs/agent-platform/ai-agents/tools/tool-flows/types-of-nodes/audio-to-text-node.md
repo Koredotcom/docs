@@ -18,7 +18,7 @@ The **Audio to Text** node is a powerful AI component that enables you to conver
 
 * **Meeting and Lecture Transcription**: Automatically convert meetings, interviews, or classroom sessions into searchable text. 
 
-* **Customer Support Automation**: Transcribe voice interactions to feed into chatbots or helpdesk workflows. 
+* **Customer Support Automation**: Transcribe voice interactions to feed into chatbots or help desk workflows. 
 
 * **Subtitle and Caption Generation**: Generate accurate subtitles for video content across platforms. 
 
@@ -93,10 +93,6 @@ This node is commonly used for:
 * Generating subtitles for videos.
 * Voice command processing for applications.
 * Audio translation.
-
-**Example**: The **Audio to Text** node processes the uploaded audio file of a customer service call. The transcribed text file is generated as the output. 
-
-In customer service, the node transcribes calls, which helps analyze conversational quality, response, and resolution and is also used for future reference.
 
 ### Translation
 
