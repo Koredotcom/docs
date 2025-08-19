@@ -78,7 +78,7 @@ To add and configure the node, follow the steps below:
   <li>Sending images and related settings are handled by the <a href="https://docs.kore.ai/agent-platform/apis/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
   <li>Image input preprocessing is supported in the following formats:</li>
     <ul><li>Binary, base64-encoded for Anthropic models.</li>
-    li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></ul></p>
+    <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></ul></p>
    </div>
 
 
