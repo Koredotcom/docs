@@ -24,18 +24,18 @@ Configuration options allow you to specify input prompts and control output form
 
 * Supports multiple model versions for the following:
 
-   **Stable Diffusion Model**
+  **Stable Diffusion Model**
 
-    * stabilityai/stable-diffusion-xl-base-1.0 
+  * stabilityai/stable-diffusion-xl-base-1.0 
 
-    * stabilityai/stable-diffusion-2-1 
+  * stabilityai/stable-diffusion-2-1 
 
-    * Stable-diffusion-v1-5
+  * Stable-diffusion-v1-5
 
-   **OpenAI Models**
+  **OpenAI Models**
 
-    * Dall-e-2 
-    * Dall-e-3
+  * Dall-e-2 
+  * Dall-e-3
 
 ## Common Use Cases
 

@@ -47,15 +47,14 @@ You can add audio input in one of the following ways:
 1. Manually select and upload an audio file in the allowed format.
 2. Configure the **Input variable** by selecting <b><i>Text</i></b> for **Type** in the following window when adding input variables for the node. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables){:target="_blank"}. 
 
-You must provide the audio file URL when running the flow, as mentioned [here](../../../tools/tool-flows/types-of-nodes/audio-to-text-node.md/#step-3-run-the-flow){:target="_blank"}.
+   You must provide the audio file URL when running the flow, as mentioned [here](../../../tools/tool-flows/types-of-nodes/audio-to-text-node.md/#step-3-run-the-flow){:target="_blank"}.
 
-<img src="../images/select-text-input-type.png" alt="select text type input" title="select text type input" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/select-text-input-type.png" alt="select text type input" title="select text type input" style="border: 1px solid gray; zoom:75%;">
 
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Uploading audio files as input variables is <b>not supported</b> only URLs are supported.</p>
-</div>
+   <div class="admonition note">
+   <p class="admonition-title">Note</p>
+   <p>Uploading audio files as input variables is <b>not supported</b> only URLs are supported.</p>
+   </div>
 
 ### Supported Audio Formats
 
