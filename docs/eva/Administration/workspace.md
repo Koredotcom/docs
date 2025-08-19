@@ -29,4 +29,5 @@ Ready-to-Use Default Workspace
 
 Workspaces in AI for Work deliver the perfect balance of innovation and governance, enabling your organization to deploy specialized AI capabilities while maintaining enterprise-grade security and control.
 
-For more information on Workspace Creation, refer [Create a Workspace](../workspace-management/account-workspace#create-a-workspace.md)
+For more information on Workspace Creation, refer
+[Create a Workspace](../workspace-management/account-workspace.md).
