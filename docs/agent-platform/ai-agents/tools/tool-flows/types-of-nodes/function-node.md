@@ -171,7 +171,7 @@ Data is stored in the memory stores in JSON format and follows the [JSON Schema 
 
     Syntax: set_content (memory_store_name, content)
 
-    * memory_store_name(string): The technical name of the memory store
+    * memory_store_name(string): The technical name of the memory store.
     * content: Content to be set to the memory store.
 
 	Example: To set a new note to the memory store, my-notes, use the following code:
