@@ -1,6 +1,65 @@
-# Text to Image Node - Automate Image Generation
+# Text to Image Node: Turn Text into Stunning Visuals
 
-The **Text to Image** node under the **AI node** in the **Tool Builder** converts the text description (including keywords) you provide into an image URL within a single workflow. You can define what the image should include and exclude, and generate multiple enhanced variants of the same image in a batch before selecting the final image. This multimodal capability enables developers to efficiently handle and integrate text and image data types.
+The **Text to Image** node is a powerful AI component that enables you to generate images dynamically within your automation flows using natural language input. By providing descriptive text and keywords, you can define what the image should include or exclude, and produce multiple high-quality variants in a single run. 
+
+Configuration options allow you to specify input prompts and control output formats, making it easy to integrate image generation into data-driven workflows. This multimodal capability enables developers to seamlessly integrate text and visual elements across various use cases.
+
+## Key Capabilities
+
+* **Text-to-Image Conversion**: Converts descriptive text prompts into images using advanced AI models. 
+
+* **Prompt Customization**
+
+    * **Positive Prompt**: Define what the image should include (style, elements, setting, etc.). 
+
+    * **Negative Prompt**: Specify what to exclude to avoid unwanted elements. 
+
+* **Aspect Ratio Control**: Customize the image dimensions up to a maximum of **2048 x 2048** pixels (GPU-dependent). 
+
+* **Step-based Image Refinement**: Fine-tune image quality with adjustable step counts—up to **30 steps** recommended for balancing detail and performance. 
+
+* **Batch Generation**: Generate up to **5 image variants** in a single run (e.g., color and black-and-white versions for different audiences). 
+
+* **High-Quality Output Format**: Images are generated in **PNG format** and returned as **URLs** for seamless integration into workflows. 
+
+* Supports multiple model versions for the following:
+
+   **Stable Diffusion Model**
+
+    * stabilityai/stable-diffusion-xl-base-1.0 
+
+    * stabilityai/stable-diffusion-2-1 
+
+    * Stable-diffusion-v1-5
+
+   **OpenAI Models**
+
+    * Dall-e-2 
+    * Dall-e-3
+
+## Common Use Cases
+
+* **Marketing Asset Generation**:  Automatically create banners, ads, and promotional visuals from campaign briefs or product descriptions. 
+
+* **Content Illustration**: Create contextual images for blogs, newsletters, or articles tailored to a specific topic or tone. 
+
+* **Visual Prototyping**: Rapidly generate visual concepts for UI mockups, storyboards, or creative pitches. 
+
+* **Variant Testing**: Produce multiple versions of the same image for A/B testing in marketing or design workflows.
+
+### Example Use Case
+
+A creative marketing team can use the system to instantly generate images for emails, campaigns, and other promotional content. With built-in content moderation, the images meet quality and relevance standards, minimizing the need for manual review and removing the dependency on licensed stock images or external generators. Instead of appending visuals later or integrating them via separate API calls, using this node directly within the workflow is faster and more efficient.
+
+## How It Works
+
+The **Text to Image** node fits seamlessly into your tool flows, accepting descriptive inputs from previous nodes and returning AI-generated image URLs as outputs. You can define prompts directly within the node, select the processing model, and specify what the image should include or exclude, along with aspect ratio, steps, and batch count. The node supports both static and dynamic inputs via context variables, enabling automated image generation across a wide range of use cases, from marketing creatives to content illustration.
+
+<img src="../images/how-text-to-image-works.png" alt="how text to image works" title="how text to image works" style="border: 1px solid gray; zoom:75%;">
+
+In this document, you will learn how to add the node to your flows, configure it with descriptive prompts and generation settings, manage inputs and outputs, and test the generated image results.
+
+## Configuration Information
 
 ### Exported Image Formats
 
@@ -22,26 +81,9 @@ The key node inputs include:
 
 <ol start="5"><li><b>Batch Count</b> to define the limit on the number of image versions/variants the node generates sequentially. A <b>maximum of 5 images</b> can be generated. For example, you can create the color and black-and-white versions of the same image sequentially in a batch and use each version for different purposes. For example, generate a Christmas greeting for employees and another for customers.</li></ol>
 
-
-### Processing Models
-
-The **Agent Platform** uses the following variants of the **Stable Diffusion** model for text-to-image conversion:
-
-* stabilityai/stable-diffusion-xl-base-1.0
-* stabilityai/stable-diffusion-2-1
-* stable-diffusion-v1-5/stable-diffusion-v1-5
-
 ### Output
 
 The generated image output is available only in PNG format. Once created, the image is converted into a URL.
-
-### Use Case
-
-A creative marketing team can use the system to generate images for emails, marketing content, and other promotional materials. 
-
-The integrated content moderation system ensures that the images meet quality and relevance standards, reducing the need for manual review. This eliminates the pain point of licensing images from official websites or relying on external image generators. 
-
-Instead of manually appending images later or integrating them into the tools flow through an API call, executing this node is more efficient.
 
 **Important Considerations**
 
