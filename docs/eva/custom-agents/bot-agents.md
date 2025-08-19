@@ -153,4 +153,4 @@ status update.
 !!! note
 
     * See [Alert](./alert-task.md) that allows developers to integrate conversation hold and resume functionality within XO Bots.
-    * See [Notify](./notify-bot-agent-api.md) that allows developers to send interactive notifications to the users.
+    * See [Notify](./notify-api.md) that allows developers to send interactive notifications to the users.
