@@ -7,6 +7,8 @@ The **Function** node is a powerful component that enables you to extend your au
 * **Custom Script Execution**: Write and execute JavaScript or Python code inline or leverage pre-deployed custom functions.
 * **Dynamic Data Processing**: Transform, validate, and manipulate data flowing through your automation.
 * **Reusable Functions**: Import and use pre-built functions from your organization's script library.
+* **Access Agent Memory**: Leverage Agent Memory to perform context-aware processing.
+
 
 ## Common Use Cases
 
@@ -127,6 +129,79 @@ The recommended syntax to fetch dynamic variables using Python in the context in
 For example, `context["steps"]["Start"]["Q3balance"]`
 
 The above syntaxes fetch the variable “*Q3balance*” that you define in the **Start** node. [Learn more](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"}.
+
+
+
+### Using Agent Memory in the script
+
+Memory Stores in Agentic Apps enable agents to retain, access, and manipulate information during a session or across sessions. The data stored in memory can be extremely useful for providing context and state persistence within the tools. The Function node supports accessing agent memory, allowing you to create dynamic, context-aware, and stateful logic directly within the node.
+
+**When to Use**
+
+Some of the common use cases include:
+
+* Retaining and reusing information across different steps in an agent execution.
+* Enabling conditional logic based on past user interactions or stored data.
+* Sharing data between tools without explicitly passing it as input parameters.
+
+[Learn More about Memory Stores.](../../../agentic-apps/memory-stores.md)
+
+#### Memory Store Data Format
+
+Data is stored in the memory stores in JSON format and follows the [JSON Schema specification](https://json-schema.org/). Always check the schema of the memory store you are accessing to ensure that your set/get operations match the defined field names and data types.
+
+#### Syntax to Manage Agent Memory in Function Node
+
+1. **Get Content from agent memory**
+
+    Syntax: get_content (memory_store_name, projections Optional)
+
+    * memory_store_name(string): The technical name of the memory store.
+    * projections (optional): JSON object specifying the fields to retrieve. If omitted, the entire record is returned.
+
+    Example: To fetch the content of the notes field from a memory store, my-notes, use the following code:
+
+    ```
+    STORE_NAME = "my-notes"
+
+    retrieved = memory.get_content( memory_store_name=STORE_NAME, projections= {  note: 1, timestamp: 0  }) 
+    ```
+
+2. **Set Contents to Agent Memory**
+
+    Syntax: set_content (memory_store_name, content)
+
+    * memory_store_name(string): The technical name of the memory store
+    * content: Content to be set to the memory store.
+
+	Example: To set a new note to the memory store, my-notes, use the following code:
+
+    ```
+	STORE_NAME = "my-notes"
+
+    memory.set_content( memory_store_name=STORE_NAME, content={"note": "Learned about memory services today.", "timestamp": "2025-05-15T10:00:00Z"} )
+    ```
+
+3. **Delete Contents of Agent Memory Store**
+
+    Syntax: delete_content (memory_store_name)
+
+    Example: To delete the contents of the memory store, my-notes, use the following code:
+
+    ```
+    STORE_NAME = "my-notes"
+
+    memory.delete_content( memory_store_name=STORE_NAME)    
+    ```
+
+**Points to Note:**
+
+* Memory stores can be accessed as per their defined scope.
+* Use projections to use the memory store efficiently.
+* Refer to the schema of the memory store for field names and data types.
+* Handle error conditions.
+
+
 
 ### Execute a Custom Function 
 
