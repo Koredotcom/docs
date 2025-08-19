@@ -24,18 +24,18 @@ Configuration options allow you to specify input prompts and control output form
 
 * Supports multiple model versions for the following:
 
-  **Stable Diffusion Model**
+    **Stable Diffusion Model**
 
-  * stabilityai/stable-diffusion-xl-base-1.0 
+    * stabilityai/stable-diffusion-xl-base-1.0 
 
-  * stabilityai/stable-diffusion-2-1 
+    * stabilityai/stable-diffusion-2-1 
 
-  * Stable-diffusion-v1-5
+    * Stable-diffusion-v1-5
 
-  **OpenAI Models**
+    **OpenAI Models**
 
-  * Dall-e-2 
-  * Dall-e-3
+    * Dall-e-2 
+    * Dall-e-3
 
 ## Common Use Cases
 
@@ -74,10 +74,10 @@ The key node inputs include:
 3. The **Aspect Ratio**, including the width and height of the image. The **maximum limit is  2048 x 2048**, depending on the GPU specifications.
 4. The number of **Steps** to improve the image generation. Each step includes enhancements or improvements that align the output as closely as possible with the positive prompt instructions. This ensures that the generated image meets expectations by refining details, adjusting parameters, and optimizing quality while maintaining relevance to the intended prompt.
 
-<div class="admonition note">
-<p class="admonition-title">Important</p>
-<p>Image generation depends on the number of steps in the process. While more steps add details, they also increase generation time and may cause the model to hallucinate, leading to deviations from the prompt instructions. To balance quality and efficiency, a maximum of 25-30 steps is recommended, minimizing unnecessary details (noise) and hallucinations in the final output.</p>
-</div>
+   <div class="admonition note">
+   <p class="admonition-title">Important</p>
+   <p>Image generation depends on the number of steps in the process. While more steps add details, they also increase generation time and may cause the model to hallucinate, leading to deviations from the prompt instructions. To balance quality and efficiency, a maximum of 25-30 steps is recommended, minimizing unnecessary details (noise) and hallucinations in the final output.</p>
+   </div>
 
 <ol start="5"><li><b>Batch Count</b> to define the limit on the number of image versions/variants the node generates sequentially. A <b>maximum of 5 images</b> can be generated. For example, you can create the color and black-and-white versions of the same image sequentially in a batch and use each version for different purposes. For example, generate a Christmas greeting for employees and another for customers.</li></ol>
 
