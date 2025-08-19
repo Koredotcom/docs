@@ -2,9 +2,9 @@
 
 NLP models play a significant role in providing natural conversational experiences for your customers and employees. 
 
-Improving the accuracy of the NLP models is a continuous journey and requires fine-tuning, as you add new use cases to your virtual assistant. 
+Improving the accuracy of the NLP models is a continuous journey and requires fine-tuning, as you add new use cases to your app. 
 
-The XO Platform proactively validates the NLP training provided to the virtual assistants and provides recommendations to improve the model. 
+The Platform proactively validates the NLP training provided to the virtual assistants and provides recommendations to improve the model. 
 
 This article explains the available validations, how to view these validations, and how to validate the NLU Model.
 
@@ -16,10 +16,10 @@ The ML engine enables you to identify issues proactively in the training phase i
 * **Inadequate training utterances** – Notifies the intents with insufficient training utterances so that you can add more utterances to them. 
 * **Utterance does not qualify any intent (false negative)** – Notifies about an utterance for which the NLP model cannot predict any intent. For example, an utterance added to Intent A is expected to predict Intent A. Whereas in some cases the model won’t be able to predict neither the trained Intent A nor any other Intents within the model. Proactively identifying such cases helps you rectify the utterance and enhance the model for prediction. 
 * **Utterance predicts wrong intent (false positive)** – Identifies utterances that predict intents other than the trained intent. For example, when you add an utterance similar to utterances from another intent, the model could predict a different intent rather than the intent it is trained to. Knowing this would help you to rectify the utterance and improve the model prediction.
-* **Utterance predicts intent with low confidence**– Notifies about the utterances that have low confidence scores. With this recommendation, you can identify and fix such utterances to improve the confidence score during the virtual assistant creation phase.
+* **Utterance predicts intent with low confidence**– Notifies about the utterances that have low confidence scores. With this recommendation, you can identify and fix such utterances to improve the confidence score during the app creation phase.
 * **Incorrect Patterns**– Notifies about the patterns that do not follow the right syntax along with the error. You can resolve such incorrect patterns to improve intent identification. In addition, the Platform now supports the following Non-CS languages for Virtual Assistant conversations:
     * **Polish**: Support for stop words and entity detection improvements for _Number_, _City_, _Country_, _Person_, _Date_, _Time_, _Zip Code_, _Address_, and _LoV Enumerated_.
-    * **Japanese**: Support for stop words and improvements in entity detection, intent patterns, sub-intents, and bot synonyms.
+    * **Japanese**: Support for stop words and improvements in entity detection, intent patterns, sub-intents, and synonyms.
     * **Arabic**: Support for stop words and improvements in phone number entity detection.
     * **Hinglish (Hindi + English)**: The support for this dual language combination is newly introduced.
 * **Wrong Entity Annotations**– Notifies wrongly annotated entities. For example, in the utterance _‘I want to travel to Hyderabad on Sunday 2pm’,_. the _Travel Date_ (Date type) entity is annotated with value _‘2PM’ (Time value)_. The platform checks for such wrong annotations and notifies the issue against the utterance, which helps to re-annotate the entity with the right values and improve entity recognition.
@@ -27,7 +27,7 @@ The ML engine enables you to identify issues proactively in the training phase i
 
 ## How to View NLU Training Validations
 
-1. On the virtual assistant, click **Natural Language ->** **Training.**
+1. On the app, click **Natural Language** > **Training.**
 2. In the **Intents** tab, you can see the set of recommendations for the Intents and ML utterances.
 <img src="../images/intent-recommendations-window.png" alt="intent recommendations" title="intent recommendations" style="border: 1px solid gray; zoom:75%;">
  
@@ -43,13 +43,13 @@ Hover on the <b>Error</b> icon to view the recommendations to resolve the error.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>An Error is displayed when the intent has a definite problem that impacts the virtual assistant’s accuracy or intent score. Errors are high severity problems.Hover on the <b>Warning</b> icon and follow the instructions in the warning to enhance the training for ML utterances.</p></div>
+<p>An Error is displayed when the intent has a definite problem that impacts the app’s accuracy or intent score. Errors are high severity problems.Hover on the <b>Warning</b> icon and follow the instructions in the warning to enhance the training for ML utterances.</p></div>
 
 <img src="../images/training-warning-window.png" alt="training warning" title="training warning" style="border: 1px solid gray; zoom:75%;"></ol>
  
 !!!note
 
-    A warning is displayed when the issue impact the VA’s accuracy and it can be resolved. Warnings are less severe problems when compared to errors.
+    A warning is displayed when the issue impact the app’s accuracy and it can be resolved. Warnings are less severe problems when compared to errors.
 
 <ol start="4"><li>Once you click on the Intent with error or warning, hover over the <b>Bulb</b> icon to view the summary of error or warning messages as illustrated below:</li>
 
@@ -63,7 +63,7 @@ The **Validate Model** helps you follow the best practices and quickly attain NL
 
 ### Recommendations Summary
 
-The Recommendations Summary is available when validating your model. This feature gives insights into the problem areas, errors, warnings for the intents that are building blocks for your virtual assistant’s training, and recommendations on corrective actions for better NLU accuracy.
+The Recommendations Summary is available when validating your model. This feature gives insights into the problem areas, errors, warnings for the intents that are building blocks for your app’s training, and recommendations on corrective actions for better NLU accuracy.
 
 To view the Recommendations Summary, follow the steps below:
 
@@ -195,20 +195,20 @@ You can also click the **Go** button to access Confusion Matrix and K-fold Cross
 
 #### Confusion Matrix
 
-Confusion Matrix is useful in describing the performance of a classification model (or classifier) on a set of test data for which the true values are known. The graph generated by the confusion matrix presents an at-a-glance view of the performance of your trained utterances against the virtual assistant’s tasks. To learn more, see the Confusion Matrix section in [Model Validation](/docs/xo/automation/natural-language/training/model-validation/){:target="_blank"}.
+Confusion Matrix is useful in describing the performance of a classification model (or classifier) on a set of test data for which the true values are known. The graph generated by the confusion matrix presents an at-a-glance view of the performance of your trained utterances against the app’s tasks. To learn more, see the Confusion Matrix section in [Model Validation](model-validation.md){:target="_blank"}.
 
 The following screenshot shows the confusion matrix report.
 <img src="../images/confusion-matrix-report.png" alt="confusion matrix report" title="confusion matrix report" style="border: 1px solid gray; zoom:75%;">
 
 If no data is available in the Confusion Matrix, you click the **Generate** button to create a report.
 
-Whenever the Validate model is updated, you can click the **Re-Run Model** to generate the latest matrix. Once you rerun the model, the platform prompts you to either [Train and Regenerate](/docs/xo/automation/natural-language/training/training-validations/#train-and-regenerate){:target="_blank"} the recommendations if the model has unsaved changes or [Regenerate](/docs/xo/automation/natural-language/training/training-validations/#regenerate){:target="_blank"} the recommendations if the model is up to date.
+Whenever the Validate model is updated, you can click the **Re-Run Model** to generate the latest matrix. Once you rerun the model, the platform prompts you to either [Train and Regenerate](#train-and-regenerate){:target="_blank"} the recommendations if the model has unsaved changes or [Regenerate](#regenerate){:target="_blank"} the recommendations if the model is up to date.
 
-Whenever you [Train and Regenerate](/docs/xo/automation/natural-language/training/training-validations/#train-and-regenerate){:target="_blank"} the recommendations, the matrix will also be regenerated. Similarly, whenever you regenerate the matrix, the recommendations are updated too.
+Whenever you [Train and Regenerate](#train-and-regenerate){:target="_blank"} the recommendations, the matrix will also be regenerated. Similarly, whenever you regenerate the matrix, the recommendations are updated too.
 
 #### K-Fold Cross Validation
 
-K-Fold Cross-Validation is a resampling procedure used to evaluate machine learning models on a limited data sample. The technique involves partitioning the data into subsets, training the data on a subset, and using the other subsets to evaluate the model’s performance. To learn more, see the K-Fold Cross Validation section in [Model Validation](/docs/xo/automation/natural-language/training/model-validation/){:target="_blank"}.
+K-Fold Cross-Validation is a resampling procedure used to evaluate machine learning models on a limited data sample. The technique involves partitioning the data into subsets, training the data on a subset, and using the other subsets to evaluate the model’s performance. To learn more, see the K-Fold Cross Validation section in [Model Validation](model-validation.md){:target="_blank"}.
 
 The following screenshot shows the K-Fold Cross-Validation report.
 

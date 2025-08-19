@@ -80,7 +80,7 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 
 10. After mapping channels, click **Done**.
 11. Click **Save** to enable the ServiceNow agent.
-12. Publish the VA. For more information, see [Publishing App](../../../../../deploy/publishing-bot/){:target="_blank"}.
+12. Publish the App. For more information, see [Publishing App](../../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ### Step 3: Install the required plugins

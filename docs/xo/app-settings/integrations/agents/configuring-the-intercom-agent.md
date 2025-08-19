@@ -70,7 +70,7 @@ To set up Intercom to receive messages, you will first need to create an app in 
 ### Step4: Enable the Intercom Agent
 
 1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}
-2. Select a Virtual Assistant for which you want to configure the Intercom agent. 
+2. Select an AI Agent for which you want to configure the Intercom agent. 
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **Intercom**.
 
 4. Click the **Configurations** tab and enter the following credentials for the Intercom Agent:
@@ -93,7 +93,7 @@ To set up Intercom to receive messages, you will first need to create an app in 
 
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Intercom agent.
-10. Publish the App. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
+10. Publish the App. For more information, see [Publishing an App](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution

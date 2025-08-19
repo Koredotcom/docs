@@ -1,20 +1,20 @@
-# Improving VA Performance – NLP Optimization
+# Improving Performance – NLP Optimization
 
 A chatbot’s ability to consistently understand and interact with a user is dictated by the robustness of the Natural Language Processing (NLP) that powers the conversation.
 
 The Platform uses a unique Natural Language Processing strategy, combining Fundamental Meaning and Machine Learning engines for maximum conversation accuracy with little upfront training. Bots built on Kore.ai’s platform can understand and process multi-sentence messages, multiple intents, contextual references made by the user, patterns and idiomatic sentences, and more. [Learn more](../nlp-introduction.md){:target="_blank"}.
 
-The NL engine includes recognition support for a wide range of entities and provides the tools needed to further customize your bot’s language understanding using additional patterns.
+The NL engine includes recognition support for a wide range of entities and provides the tools needed to further customize your app’s language understanding using additional patterns.
 
 
 ## Optimizing your Virtual Assistant
 
-To make sure your VA is NLP-optimized, you can define, and refine names and terms used for your assistant to enhance the NLP interpreter accuracy and performance to recognize the right bot task for the user.
-You begin by defining synonyms at the task level, and then manage and refine synonyms, and test at the bot level.
+To make sure your app is NLP-optimized, you can define, and refine names and terms used for your app to enhance the NLP interpreter accuracy and performance to recognize the right app task for the user.
+You begin by defining synonyms at the task level, and then manage and refine synonyms, and test at the app level.
 
 To get started optimizing your Virtual Assistant and tasks, you need to access the **Natural Language** options. These options are categorized under various headings for your convenience:
 
-* **Training** – In the Training section, you can define how the NLP interpreter recognizes and responds to the user input for a VA, and then train the interpreter to recognize the correct user intent.
+* **Training** – In the Training section, you can define how the NLP interpreter recognizes and responds to the user input for a app, and then train the interpreter to recognize the correct user intent.
     * **Machine Learning Utterances** – With Machine Learning, you can enhance recognition of user utterances for better recognition and system performance for the user intent which is the intended task that the user wants to access.
     * **Synonyms & Concepts** – You can use the Synonyms section to optimize the NLP interpreter accuracy in recognizing the correct intent and entity provided by the user.
     * **Patterns & Rules** – In the Patterns section, you can define slang, metaphors, or other idiomatic expressions for intent and entities.
