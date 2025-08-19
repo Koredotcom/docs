@@ -49,9 +49,7 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
             Importing a Prompt without Variables: If you import a prompt from Prompt Studio that does not have variables, you must customize the prompt and manually add the variables. In this case, the "Map Variables" field does not appear, as the imported prompt has no variables to map.
 
     * **Select Model**: Select a model from the list of configured models.
-    Note that when you choose a prompt from the prompt hub, it will also fetch the preferred model associated with that version if you specified one during the commit process.
-
-      <img src="../images/gen_ai_node_models.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:70%;">
+    Note that when you choose a prompt from the prompt hub, it will also fetch the preferred model and connection associated with that version if you specified one during the commit process.
 
     * **Timeout**: Select the timeout duration from the allowed range. The allowed range is 30 to 180 seconds (3 minutes). The default is 60 seconds (1 minute). The node triggers a timeout error if the request is not completed within the selected time frame.    
 
