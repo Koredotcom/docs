@@ -36,7 +36,7 @@ The **DocSearch Node** integrates seamlessly into your tool flows, accepting use
 
 In this document, you will learn how to add and configure DocSearch Nodes with Search AI connections, set up query inputs and meta filters, handle response outputs, and test the search-driven interactions within your automation flows.
 
-## Configuration Overview
+## Steps to Add and Configure the Node
 
 Configuring the DocSearch Node consists of the following steps:
 
