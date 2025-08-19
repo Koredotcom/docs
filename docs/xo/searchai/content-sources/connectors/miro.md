@@ -1,7 +1,7 @@
 
 # Miro Connector
 
-[Miro](https://miro.com/index/) is the online workspace that enables distributed teams to design and build together. It offers a range of collaboration capabilities to create concepts, map user stories or customer journeys, or conduct roadmap planning with the help of Miro Boards. 
+[Miro](https://miro.com/index/){:target="_blank"} is the online workspace that enables distributed teams to design and build together. It offers a range of collaboration capabilities to create concepts, map user stories or customer journeys, or conduct roadmap planning with the help of Miro Boards. 
 
 Search AI enables easy integration with Miro and ingests the metadata of **Boards**, facilitating easy and efficient search. 
 
@@ -64,11 +64,11 @@ Search AI Connector uses Miro APIs to access the resources on the application an
 ## Configure Miro Connector in Search AI
 
 * Go to the Miro Connector, provide the following details under the **Authorization** tab and click **Connect**. 
-    * Name: Provide a unique name for the connector. 
-    * Authorization Type: Set it to OAuth 2.0
-    * Grant Type: Set it to Authorization Code. 
-    * Client ID: Credentials generated for the OAuth app in Miro. 
-    * Client Secret: Credentials generated for the OAuth app in Miro.
+    * **Name**: Provide a unique name for the connector. 
+    * **Authorization Type**: Set it to OAuth 2.0
+    * **Grant Type**: Set it to Authorization Code. 
+    * **Client ID**: Credentials generated for the OAuth app in Miro. 
+    * **Client Secret**: Credentials generated for the OAuth app in Miro.
 
 
 ## Content Ingestion
@@ -77,16 +77,17 @@ The Miro Connector allows ingestion of information about Miro boards into the Se
 
 The content field in the ingested content contains the name and description of the board.
 
-
 ## RACL Support 
 
-By default, when a board is created, it is automatically shared with the other members of the space, hence the sys_racl field is populated with **spaceID**. 
+By default, when a board is created, it is automatically shared with the other members of the space, hence the `sys_racl` field is populated with spaceID.
 
-Further, Miro boards can be shared using different access options. For each of the options, the sys_racl is populated as described below. 
+Further, Miro boards can be shared using different access options. For each of the options, the `sys_racl` is populated as described below.
 
-* **Share with specific users via email**- When users are directly added to a board, their email addresses are stored in the sys_racl field. The members of a space also have default access to the boards within the space. So, along with **individual email addresses**, **the space ID** (also referred to as project ID in Miro) is stored in sys_racl as a permission entity. 
-* **Share with team members**- If a board is shared with a team, the **team ID** is added to the sys_racl field. Since the space members are a subset of the team, when a board is shared with the team, sys_racl only contains team ID and spaceID is not added. 
-* **Everyone in the company**- When a board is shared at the company level, the **Organization ID** is stored in the sys_racl field. Since the space members are a subset of the members of the organization, when a board is shared with the organization, sys_racl only contains organizationID and spaceID is not added. 
-* **Public Access**- The sys_racl field is set to *, allowing unrestricted access.
+* **Share with specific users via email**- When users are directly added to a board, their email addresses are stored in the `sys_racl` field. The members of a space also have default access to the boards within the space. So, along with individual email addresses, the space ID (also referred to as project ID in Miro) is stored in `sys_racl` as a permission entity.
+* **Share with team members**- If a board is shared with a team, the team ID is added to the `sys_racl` field. Since the space members are a subset of the team, when a board is shared with the team, `sys_racl` only contains team ID and spaceID is not added.
+* **Everyone in the company**- When a board is shared at the company level, the Organization ID is stored in the `sys_racl` field. Since the space members are a subset of the members of the organization, when a board is shared with the organization, `sys_racl` only contains organizationID and spaceID is not added. 
+* **Public Access**- The `sys_racl` field is set to *, allowing unrestricted access.
 
-ProjectID, TeamID and OrganizationID are added as permission entities. Use the Permission Entity APIs to associate users with the entities. 
+ProjectID, TeamID and OrganizationID are the permission entities that control access in SearchAI. For Miro boards, SearchAI supports automatic resolution of permission entities and maps them to the corresponding entity type.
+
+This automated process ensures that access control reflects the board’s actual sharing configuration, eliminating the need for manual user-to-entity mapping.
