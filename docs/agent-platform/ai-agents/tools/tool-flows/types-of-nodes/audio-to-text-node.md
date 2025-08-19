@@ -1,9 +1,46 @@
-# Audio To Text Node - Automate Transcriptions
+# Audio To Text Node - Make Voice Transcriptions Effortless
 
-The **Audio to Text** node under **AI node** in the **Tool Builder** converts speech audio into written text using **Automatic Speech Recognition (ASR)**. This **multimodal node** processes audio input and generates text output within a single workflow for multiple languages supported by the model. It enables developers to build adaptable systems that efficiently handle and integrate audio and text data types.
+The **Audio to Text** node is a powerful AI component that enables you to convert speech into written text within your automation flows. By leveraging Automatic Speech Recognition (ASR), this node processes audio inputs and generates accurate text outputs across multiple supported languages. Configuration options enable you to define input sources, specify output formats, and seamlessly integrate transcription into broader workflows, allowing for transcription as part of larger, multi-step processes such as call analysis, feedback collection, or content indexing.
+
+## Key Capabilities
+
+* **Automatic Speech Recognition (ASR)**: Converts spoken audio into accurate written text using OpenAI Whisper-1 for transcription. 
+
+* **Multilingual Transcription and Translation Support**: Supports transcription in multiple languages and translation into English. 
+
+* **Audio Input Handling**: Accepts audio files or audio URLs as input, making it suitable for both real-time and recorded speech processing.
+
+* **Large File Handling with Size Limits**: Supports audio files up to 25 MB. Larger files can be split at logical points to avoid mid-sentence breaks and ensure smooth, timely, and accurate transcriptions. 
+
+* **Text Output Generation**: Generates clean, structured text in multiple formats based on prompt instructions, ready for downstream use such as summarization, translation, or storage. 
+
+## Common Use Cases
+
+* **Meeting and Lecture Transcription**: Automatically convert meetings, interviews, or classroom sessions into searchable text. 
+
+* **Customer Support Automation**: Transcribe voice interactions to feed into chatbots or helpdesk workflows. 
+
+* **Subtitle and Caption Generation**: Generate accurate subtitles for video content across platforms. 
+
+* **Voice Command Processing**: Convert spoken commands into text for use in voice-enabled applications. 
+
+* **Audio-Based Translation**: Transcribe audio for translation into other languages as part of a multilingual workflow.
 
 
-### Selection of the Audio File
+## Example Use Case
+
+The **Audio to Text** node processes uploaded customer service call recordings and generates transcribed (and optionally translated) text based on configured parameters and output instructions. These transcriptions can be used to assess conversation quality, evaluate agent performance, and support audits or training efforts. By removing the need for manual transcription or external APIs, the node offers a faster, more efficient, and fully integrated solution for audio processing within your workflow.
+
+## How It Works
+
+The Audio to Text Node integrates seamlessly into your tool flows, accepting audio inputs, whether as files or URLs from previous nodes and passing the transcribed text to subsequent nodes. You can configure parameters such as the processing model, translation preferences, timestamp inclusion, and prompt instructions to tailor the transcription process to your specific needs. The node supports both static and dynamic inputs via context variables, making it highly adaptable for a wide range of voice-driven automation scenarios.
+
+<img src="../images/how-audio-to-text-works.png" alt="how audio to text works" title="how audio to text works" style="border: 1px solid gray; zoom:75%;">
+
+In this document, you will learn how to add the node to your flow, configure it with audio inputs and transcription settings, manage outputs such as text or translated content, and test the results within your workflow.
+
+
+## Selection of the Audio File
 
 You can add audio input in one of the following ways:
 
