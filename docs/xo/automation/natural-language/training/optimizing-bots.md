@@ -7,12 +7,12 @@ The Platform uses a unique Natural Language Processing strategy, combining Funda
 The NL engine includes recognition support for a wide range of entities and provides the tools needed to further customize your app’s language understanding using additional patterns.
 
 
-## Optimizing your Virtual Assistant
+## Optimizing your Assistant
 
 To make sure your app is NLP-optimized, you can define, and refine names and terms used for your app to enhance the NLP interpreter accuracy and performance to recognize the right app task for the user.
 You begin by defining synonyms at the task level, and then manage and refine synonyms, and test at the app level.
 
-To get started optimizing your Virtual Assistant and tasks, you need to access the **Natural Language** options. These options are categorized under various headings for your convenience:
+To get started optimizing your Assistant and tasks, you need to access the **Natural Language** options. These options are categorized under various headings for your convenience:
 
 * **Training** – In the Training section, you can define how the NLP interpreter recognizes and responds to the user input for a app, and then train the interpreter to recognize the correct user intent.
     * **Machine Learning Utterances** – With Machine Learning, you can enhance recognition of user utterances for better recognition and system performance for the user intent which is the intended task that the user wants to access.
@@ -37,7 +37,7 @@ The new VAs will automatically use the new version by default. As of January 21,
 
 On-Premise customers can run both versions in parallel or switch directly to Version 3.
 
-You can start optimizing your Virtual Assistant, by:
+You can start optimizing your app, by:
 
 * [Customizing the ML engine](machine-learning-engine.md){:target="_blank"}
 * [Customizing the KG engine](../../knowledge-ai/knowledge-graph-training.md){:target="_blank"}

@@ -4,7 +4,7 @@ NLP models play a significant role in providing natural conversational experienc
 
 Improving the accuracy of the NLP models is a continuous journey and requires fine-tuning, as you add new use cases to your app. 
 
-The Platform proactively validates the NLP training provided to the virtual assistants and provides recommendations to improve the model. 
+The Platform proactively validates the NLP training provided to the app and provides recommendations to improve the model. 
 
 This article explains the available validations, how to view these validations, and how to validate the NLU Model.
 

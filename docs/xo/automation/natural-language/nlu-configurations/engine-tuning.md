@@ -676,7 +676,7 @@ This configuration is employed to specify how compound words should be handled. 
 
 The Machine Learning (ML) engine is responsible for analyzing and assessing user inputs to construct and refine a model. The ML model's primary goal is to categorize user inputs into predefined intents for which it has been trained. Nonetheless, when confronted with out-of-context utterances, the ML system may erroneously attempt to associate them with the incorrect intent.
 
-To address this issue, you can prevent misclassifications by activating the **None Intent** option in the **Natural Language** > **NLU Config** > **Engine Tuning** > **Machine Learning** section for various languages. The **None intent** serves as a temporary category that safeguards against the ML model assigning untrained or ambiguous utterances to inappropriate intents. This safeguard is enabled by default for newly created virtual assistants.
+To address this issue, you can prevent misclassifications by activating the **None Intent** option in the **Natural Language** > **NLU Config** > **Engine Tuning** > **Machine Learning** section for various languages. The **None intent** serves as a temporary category that safeguards against the ML model assigning untrained or ambiguous utterances to inappropriate intents. This safeguard is enabled by default for newly created app.
 
 For example, for an Airlines app, an Intent “Book Flight Ticket” is mapped. If a customer requests to “Book a Movie Ticket” the ML tries to associate the closest intent “Book Flight Ticket” (wrong intent) as the successful intent and triggers it. This error can be eliminated by enabling the None intent.
 
