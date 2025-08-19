@@ -47,7 +47,7 @@ Configuration options allow you to specify input prompts and control output form
 
 * **Variant Testing**: Produce multiple versions of the same image for A/B testing in marketing or design workflows.
 
-### Example Use Case
+## Example Use Case
 
 A creative marketing team can use the system to instantly generate images for emails, campaigns, and other promotional content. With built-in content moderation, the images meet quality and relevance standards, minimizing the need for manual review and removing the dependency on licensed stock images or external generators. Instead of appending visuals later or integrating them via separate API calls, using this node directly within the workflow is faster and more efficient.
 
