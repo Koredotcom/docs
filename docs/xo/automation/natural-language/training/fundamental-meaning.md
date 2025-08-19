@@ -25,9 +25,9 @@ Also known as word segmentation, this process breaks up the given text into unit
 
 This process expands interjections, abbreviations, misspellings, texting shorthand, and contractions using system concepts. Like `~emohello` for all greeting-related expressions, `~yes` for confirmation, `~no` for rejection, and more. A **Bot Substitution** or replacement of words happens immediately after tokenization.
 
-This feature allows bot developers to add substitutions specific to their domain and vocabulary. For example, **_Chevy_** is replaced by **_Chevrolet_** by a car serving bot,
+This feature allows the Platform user's to add substitutions specific to their domain and vocabulary. For example, **_Chevy_** is replaced by **_Chevrolet_** by a car serving AI Agent.
 
-Another use of this feature is on voice channels where ideally, mis-transcriptions should be corrected by the ASR software, but that isn’t always possible. In these cases, the substitution functionality allows bot developers to correct transcription errors. For example, **_our d_** is corrected to **_Audi_** by a car serving bot. [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#bot-substitutions){:target="_blank"}.
+Another use of this feature is on voice channels where ideally, mis-transcriptions should be corrected by the ASR software, but that isn’t always possible. In these cases, the substitution functionality allows the Platform user's to correct transcription errors. For example, **_our d_** is corrected to **_Audi_** by a car serving AI Agent. [Learn more](../../../automation/natural-language/training/fundamental-meaning.md){:target="_blank"}.
 
 ### Merging
 
@@ -35,11 +35,11 @@ This process combines a sequence of single words, numbers, or dates. For example
 
 ### Spell Check
 
-This process replaces unknown words with known words (if any) which involves case conversion. The Platform refers to WordNet and VA Defined Terms for spell check. E.g. “I wantt  to pai for my booking”   becomes “I want to pay for my booking”
+This process replaces unknown words with known words (if any) which involves case conversion. The Platform refers to WordNet and AI Agent Defined Terms for spell check. E.g. “I wantt  to pai for my booking”   becomes “I want to pay for my booking”
 
 ### Lemmatization
 
-The XO Platform uses the WordNet database to look up word lemmas in a given text.
+The Platform uses the WordNet database to look up word lemmas in a given text.
 
 ### Gleaning
 
@@ -52,7 +52,7 @@ This process helps identify sections of utterances and mark them as special. Thi
 
 ### Parts of Speech (POS) tagging
 
-This process marks up a word in a corpus to the corresponding part-of-speech tag based on the context and definition. Part-of-speech tags are useful in building parse trees which are used to extract the relationship between words. **POS Tagging** is also essential for building lemmatizers to reduce a word to its root form.  Each word is assigned a part of the speech tag, and possibly a role (subject/verb/object) from VA definition data.
+This process marks up a word in a corpus to the corresponding part-of-speech tag based on the context and definition. Part-of-speech tags are useful in building parse trees which are used to extract the relationship between words. **POS Tagging** is also essential for building lemmatizers to reduce a word to its root form.  Each word is assigned a part of the speech tag, and possibly a role (subject/verb/object) from app definition data.
 
 ### Marking
 
@@ -62,7 +62,7 @@ This process of assigns a concept to each word. **POS tagging** and **Parsing** 
 
 Synonyms, Concepts & Patterns are the cornerstones of the FM engine. These are used in intent detection and also by Ranking & Resolver when trying to choose among the multiple possible intents.
 
-* **Synonyms** need to be used when the words used to identify an intent/entity can be used interchangeably like. The Platform comes with a built-in library, it can be augmented by adding domain words that will be used to build a dictionary for your assistant.
+* **Synonyms** need to be used when the words used to identify an intent/entity can be used interchangeably like. The Platform comes with a built-in library, it can be augmented by adding domain words that will be used to build a dictionary for your AI Agent.
 * **Concepts** are a predefined set of choices that are defined once and used in multiple places. The Platform has a large set of inbuilt concepts that developers can use to define a pattern like ~world_country, ~asian_country. You can create your own custom concepts which are applicable to your use case, you can also create hierarchical concepts.
 * **Patterns** used mainly for intent detection in the FM engine. Can be used to define metaphors or other idiomatic expressions for task names. Concepts can be used in defining patterns.
 
@@ -118,29 +118,29 @@ Also consider misspellings, such as:
 
 When you add synonyms for a word, those synonyms are also used for other tasks or task fields. In other terms, synonyms for a word defined for a task are also applicable to the same word in another task name. For example, synonyms defined for the word _make_ in the Make a Booking  task are also used for the Make a Payment task.
 
-For more information about best practices and tips for naming tasks and task fields, see the [Natural Language Processing Guide](/docs/xo/automation/natural-language/nlp-guidelines/){:target="_blank"}.
+For more information about best practices and tips for naming tasks and task fields, see the [Natural Language Processing Guide](../../..//automation/natural-language/nlp-guidelines.md){:target="_blank"}.
 
 #### Add Synonyms
 
 The Platform provides a set of default synonyms, pre-listed within the dedicated section (**Training > Bot Synonyms**). These are only available in English, German, Spanish, French; Traditional and Simplified Chinese.
 
-Adding Synonyms involves using the Natural Language Training section of the XO Platform, where you can add synonyms for VA, task and entity node names. 
+Adding Synonyms involves using the Natural Language Training section of the Platform, where you can add synonyms for AI Agent, task and entity node names. 
 
 The following sections show you how to add these synonyms.
 
 #### Navigate to Synonyms
 
-1. Open the VA for which you want to add synonyms.
+1. Open the AI Agent for which you want to add synonyms.
 2. From the left navigation menu and click **Natural Language > Training.**
 3. On the **Training** page, click one of the following tabs:
-    * **Bot Synonyms** – Add and edit synonyms for the words in the bot or task names.
+    * **Bot Synonyms** – Add and edit synonyms for the words in the app or task names.
     * **Entities** – Add and edit synonyms for any words in your dialog task Entity node names.
 
 #### Add Bot Synonyms
 
-On the **Training** page under the **Bot Synonyms** tab, you can view and add synonyms for words in task names. Synonyms defined on the **Bot Synonym** tab apply bot-wide to all task names, field names, and so forth.
+On the **Training** page under the **Bot Synonyms** tab, you can view and add synonyms for words in task names. Synonyms defined on the **Bot Synonym** tab apply app-wide to all task names, field names, and so forth.
 
-To add a bot synonym, follow the below steps:
+To add a synonym, follow the below steps:
 
 1. On the **Training** page, select the **Bot Synonyms** tab.
 
@@ -174,11 +174,11 @@ For example, for a Make a Booking task in a Travel Assistant , if the user input
 
 #### Parallel Editing for Synonyms
 
-In the previous versions of the XO Platform, whenever a user added and saved a new bot synonym, the server added it to the database and updated the entire synonym list. Concurrent usage caused data conflicts when multiple users worked parallelly on the same bot. This also prevented team members from collaborating during bot training. 
+In the previous versions of the Platform, whenever a user added and saved a new app synonym, the server added it to the database and updated the entire synonym list. Concurrent usage caused data conflicts when multiple users worked parallelly on the same app. This also prevented team members from collaborating during app training. 
 
 Let’s consider the following scenario as an example:
 
-1. Two users are trying to add synonyms to the same bot.
+1. Two users are trying to add synonyms to the same app.
 2. User 1 adds _Synonym 1_ and hits save.
 3. User 2 adds  _Synonym 2_ and hits save.
 4. User 1 refreshes the page and looks for  _Synonym 1_, which is overwritten by User 2’s changes in the database.
@@ -189,7 +189,7 @@ We’ve introduced a workaround for this issue discussed below. This design flow
 
 #### Workaround with Parallel Editing
 
-The XO Platform now supports **Parallel Editing**, where more than one user can add or delete a synonym for the same bot without losing or overwriting data during bot training. When a user updates an existing synonyms list, the system tracks whether it’s an add or delete operation and does the following:
+Th Plaetform now supports **Parallel Editing**, where more than one user can add or delete a synonym for the same app without losing or overwriting data during app training. When a user updates an existing synonyms list, the system tracks whether it’s an add or delete operation and does the following:
 
 **Add a Synonym**
 
@@ -209,14 +209,14 @@ In addition, Concepts can be very useful when you want to categorize terms. For 
 
 ### Concept Types
 
-There are two types of Concepts within the XO Platform:
+There are two types of Concepts within the Platform:
 
 * **System Concepts**: The Kore.ai platform provides a list of default concepts that cover the most common scenarios like yes, no, help etc.
 * **Custom Concepts**: You might want to define concepts catering to your business requirements. For example, you might want to use the term _fruit_ to imply either _apple_ or _orange_ or _banana_. If you want to add to the list of default words, you are advised to create a new concept and add words there before mapping the pattern, instead of adding more words to the default concepts like ~emogoodbye or ~emohello.
 
 ### Define Custom Concepts
 
-You can define a new concept the same way as you would define a Bot Synonym, but you need to start the word with a **~**. For more details on the naming convention, click [here](/docs/xo/automation/natural-language/nlp-guidelines/#concepts){:target="_blank"}.
+You can define a new concept the same way as you would define a Bot Synonym, but you need to start the word with a **~**. For more details on the naming convention, click [here](../../../automation/natural-language/nlp-guidelines.md#concepts){:target="_blank"}.
 
 You can also define custom concepts using emojis.
 
@@ -225,17 +225,17 @@ Concepts are used to define patterns. For example, the pattern _buy ~fruit_ is u
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-Add the <b>~disable_help</b> concept key and train the VA to disable the system help. You can train the virtual assistant (VA) to use the <b>custom_help</b> group in Smalltalk to trigger the customized help messages. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/small-talk/#add-groups" target="_blank">Learn more</a>.</p></div>
+Add the <b>~disable_help</b> concept key and train the app to disable the system help. You can train the app to use the <b>custom_help</b> group in Smalltalk to trigger the customized help messages. <a href="../../../automation/use-cases/small-talk.md#add-groups" target="_blank">Learn more</a>.</p></div>
 
 <img src="../images/custom_help-setup.png" alt="custom help" title="custom help" style="border: 1px solid gray; zoom:75%;">
 
 ### Parallel Editing for Concepts
 
-Parallel Editing works the same for Concepts and Synonyms. Please click [here](/docs/xo/automation/natural-language/training/fundamental-meaning/#parallel-editing-for-synonyms){:target="_blank"} to learn more.
+Parallel Editing works the same for Concepts and Synonyms. Please click [here](../../../automation/natural-language/training/fundamental-meaning.md#parallel-editing-for-synonyms){:target="_blank"} to learn more.
 
-## Bot Substitutions
+## App Substitutions
 
-The NLP engine can recognize Bot substitutions present in the user utterance using a custom concept definition called `~bot_substitutions` for bot substitution.
+The NLP engine can recognize app substitutions present in the user utterance using a custom concept definition called `~bot_substitutions` for app substitution.
 
 You can define this concept based on the following syntax:
 
@@ -271,11 +271,11 @@ Bot substitution is used to support the following patterns for user utterances:
 
 * `&lt; word` will match the first word in a sentence, e.g., `&lt; new Chevy|Chevrolet` will change _new Chevy car_ to _Chevrolet car_, but it will not change _I want to know about the new Chevy car_.
 
-## Bot word Aliases
+## App word Aliases
 
-The Bots on the XO Platform can now be trained during the NL process to identify aliases or alternative spellings in utterances (during Speech-to-Text (STT) transcriptions).
+The Bots on the Platform can now be trained during the NL process to identify aliases or alternative spellings in utterances (during Speech-to-Text (STT) transcriptions).
 
-Alias is based on [Marking](/docs/xo/automation/natural-language/training/fundamental-meaning/#marking){:target="_blank"}, the chat script-specific process of linking concepts to words to match patterns based on those concepts.
+Alias is based on [Marking](../../../automation/natural-language/training/fundamental-meaning.md#marking){:target="_blank"}, the chat script-specific process of linking concepts to words to match patterns based on those concepts.
 
 For example, a user might say Alfa Romeo on a voice channel, but the STT transcribes that as `Alpha Romeo` (a known and valid word). This is because the Bot uses the custom concept defined for Bot Word Aliases, matches the custom entity, and returns `Alfa Romeo`.
 
@@ -303,7 +303,7 @@ To treat a Bot Synonym word as an Alias in an utterance, you must define a custo
 However, they do the following:
 
 * Return the normalized value for the **Custom Concept** entity.
-* Link concepts to new words (Marking). [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#marking){:target="_blank"}.
+* Link concepts to new words (Marking). [Learn more](../../../automation/natural-language/training/fundamental-meaning.md#marking){:target="_blank"}.
 
 **Alias Patterns**
 
@@ -316,11 +316,11 @@ Similarly, in the example below, the system marks `Kelly` as the alias for `Tele
 
 <img src="../images/synonyms-example-2.png" alt="synonyms example 2" title="synonyms example 2" style="border: 1px solid gray; zoom:75%;">
 
-## Bot Homophones
+## App Homophones
 
-The XO Platform now supports **Bot Homophones** or Homonyms to identify the relevant word when two or more words are pronounced the same but have different spellings. Homonyms are a challenge on voice channels because while processing and adjusting an utterance on the Natural Language (NL) Pipeline, the Speech-to-Text (STT) engine can easily transcribe the wrong word. For example, `Write an email` can be wrongly transcribed to `Right an email`.
+The Platform now supports **Bot Homophones** or Homonyms to identify the relevant word when two or more words are pronounced the same but have different spellings. Homonyms are a challenge on voice channels because while processing and adjusting an utterance on the Natural Language (NL) Pipeline, the Speech-to-Text (STT) engine can easily transcribe the wrong word. For example, `Write an email` can be wrongly transcribed to `Right an email`.
 
-With Bot Homophones, the system considers all the alternative homophones to check for a better, or equally valid, word choice during the NL pipeline and [POS Tagging](/docs/xo/automation/natural-language/training/fundamental-meaning/#parts-of-speech-pos-tagging){:target="_blank"} processes.
+With Bot Homophones, the system considers all the alternative homophones to check for a better, or equally valid, word choice during the NL pipeline and [POS Tagging](../../../automation/natural-language/training/fundamental-meaning.md#parts-of-speech-pos-tagging){:target="_blank"} processes.
 
 **How it Works**
 
@@ -345,13 +345,13 @@ To treat a Bot Synonym word as a Homophone/Homonym in an utterance, you must def
 <p class="admonition-title">Important</p>
 Both homonyms do not change the original utterance like Substitutions or return the normalized value for the Custom Concept entity. However, they do the following:
  <ul><li>Influence POS Tagging.</li>
- <li>Link concepts to new words (marking). <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#marking" target="_blank">Learn more</a>.</li></p></div>
+ <li>Link concepts to new words (marking). <a href="../../../automation/natural-language/training/fundamental-meaning.md#marking" target="_blank">Learn more</a>.</li></p></div>
 
 ### Emoji Support
 
 The NLP engine can recognize emojis present in the user utterance. You can include these in the concept definition and give a better user experience. For example, a thumbs-up emoticon (:thumbs up:) from the user can be considered as an affirmative, and a frown emoticon (:frowning2:) can be considered as an anger sentiment and appropriate action can be taken.
 
-You can import emojis into your VA’s system concepts so that it can conduct the conversations when emojis are present in the user’s utterances. For this, follow the below steps:
+You can import emojis into your app’s system concepts so that it can conduct the conversations when emojis are present in the user’s utterances. For this, follow the below steps:
 
 1. From the left menu, click **Natural Language -> Training**
 2. On the **Intents** tab, click the more/ellipses icon and select **Import Emojis into Concepts**.
@@ -373,13 +373,13 @@ In these cases, using patterns can help to improve NLP interpreter accuracy.
 
 When the NLP interpreter matches a synonym to one task or field, and a pattern to a different task or field, the pattern match is prioritized and used for positive recognition over the synonym match.
 
-To learn more about best practices and tips for optimizing NLP, refer to [NLP Guidelines](/docs/xo/automation/natural-language/nlp-guidelines/){:target="_blank"}. 
+To learn more about best practices and tips for optimizing NLP, refer to [NLP Guidelines](../../../automation/natural-language/nlp-guidelines.md){:target="_blank"}. 
 
-For a quick guide towards the usage of patterns, refer to [How to use Patterns](/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/){:target="_blank"}.
+
 
 ### Navigate to the Patterns Tab
 
-1. Open the VA for which you want to add patterns.
+1. Open the app for which you want to add patterns.
 2. From the left menu click **Natural Language ->** **Training**.
 3. On the **Training** page, click one of the following tabs:
     * **Intents**– Add or edit patterns or rules for dialog task User Intent nodes.
@@ -418,7 +418,7 @@ To add an intent rule, follow the below steps:
 1. On the **Training** page, click the **Rules/+Rule** against the intent name you want to enter the patterns for.
 2. In the **Intent** pane, enter one or more traits/context tags as conditional rules using AND OR operators, and press **Enter** between traits/tags.
 
-Refer here to know more about [Traits](/docs/xo/automation/natural-language/training/traits/){:target="_blank"}, [Trait Association Rules](/docs/xo/automation/natural-language/training/traits/#trait-association-rules){:target="_blank"} and [Context Tags](/docs/xo/automation/intelligence/context-management/){:target="_blank"}.
+Refer here to know more about [Traits](../../../automation/natural-language/training/traits.md){:target="_blank"}, [Trait Association Rules](../../../automation/natural-language/training/traits.md#trait-association-rules){:target="_blank"} and [Context Tags](../../../automation/intelligence/context-management.md){:target="_blank"}.
 
 <img src="../images/fm-rules.png" alt="manage rules" title="manage rules" style="border: 1px solid gray; zoom:75%;">
 
@@ -438,7 +438,7 @@ To add an entity pattern, follow the below steps:
 
 ### Negative Patterns
 
-On the XO Platform, a natural language engine attempts to identify the user’s input and match it to a task.
+On the Platform, a natural language engine attempts to identify the user’s input and match it to a task.
 
 During this process, you may want the NLP engine to identify and filter the matched intents, but not trigger them.
 
@@ -453,7 +453,7 @@ To activate Negative Patterns, follow the steps below:
 
 <img src="../images/enable-negative-patterns-fm-window.png" alt="enable negative patterns" title="enable negative patterns" style="border: 1px solid gray; zoom:75%;">
 
-1. For each of the intents in your VA, you can define negative patterns similar to how you define intent patterns. 
+1. For each of the intents in your app, you can define negative patterns similar to how you define intent patterns. 
     * Go to **Natural Language** > **Training** > **Intents** and select the Intent to which you want to add the Negative Pattern.
     * In the Intent training window, select the **Negative Patterns** tab.
     * Add negative patterns in the **Add a Pattern** field, then press **Enter/Return**. Your new patterns are automatically saved.
@@ -469,11 +469,11 @@ The settings for the FM engine are discussed in detail in the following sections
 
 !!!note
 
-    If your assistant is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0.
+    If your app is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0.
 
 To set up Thresholds and Configurations for the FM Engine, please follow the steps below:
 
-1. Open the assistant for which you want to configure thresholds.
+1. Open the aapp for which you want to configure thresholds.
 2. From the left menu, click **Natural Language** > **NLU Config**.
 3. The **Fundamental Meaning** section allows you to set the threshold for the FM engine:
     * **Intent Detection using Task Name Words** can be disabled in case your use case requires it. This is particularly useful if you have too many tasks named – _place order_, _cancel order_, _request order_, _duplicate order_. All these tasks will be matched as intents if the user utterance has the word “_order_” in it. Instead of _trying_, _guessing_, and training for all possible utterances, disabling this option does the trick. Disabling it will not affect the intent detection using patterns. Also, an implicit pattern using the words in the Task Name will be automatically added. The implicit pattern identifies this intent only when the user input starts and ends with the exact task name. By default, it is enabled.

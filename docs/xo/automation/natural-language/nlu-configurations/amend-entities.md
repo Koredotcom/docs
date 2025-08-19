@@ -8,12 +8,12 @@ _For example_, while booking a flight, the user might change the date of travel 
 
 The entity amendment process is divided into three stages:
 
-1. **Amend Identification**: Identifying that the end-user wants to amend is driven by the VA’s built-in NLP capabilities.
+1. **Amend Identification**: Identifying that the end-user wants to amend is driven by the app’s built-in NLP capabilities.
 2. **Amending Entities**: On identifying the intention to amend, the current task is put on hold and the amend flow is triggered. Three kinds of amend flows are possible based upon the user utterance:
     * When the user refers to the entity name (or entity synonyms), then they are prompted for the entity value. For example, the user utterance _I want to change the destination_ triggers the prompt for the destination entity. If the same entity node is present multiple times in the dialog, then the latest entity node for which the user has already provided input will be amended.
     * When the user gives the entity value then the entity is updated accordingly. For example, the user utterance _I want to fly to JFK_ changes the destination entity value. If the value is compatible with two or more entities in the dialog, then the user is prompted to select an entity to amend.
     * When the user refers to both the entity and its value, then the entity is updated. For example, the user utterance _change my destination to JFK_ will change the destination entity value.
-3. **Post Amendment Behavior**: After an entity is successfully amended, there are three possible dialog execution flows that your VA can be configured for:
+3. **Post Amendment Behavior**: After an entity is successfully amended, there are three possible dialog execution flows that your app can be configured for:
     * The dialog can be re-executed from the node that is amended by evaluating that entity’s connections.
     * The dialog can resume from the node where amend was identified or made.
     * The dialog can be resumed from a specified node present in the dialog.
@@ -25,14 +25,14 @@ The entity amendment process is divided into three stages:
 
 ## Implementation Hierarchy
 
-On the XO Platform, Amend Entity behavior is defined at two levels:
+On the Platform, Amend Entity behavior is defined at two levels:
 
-* VA level
+* App level
 * Task level
 
 ## Bot Level
 
-To Set VA Level Amend Entity Behavior, follow the below steps:
+To Set app Level Amend Entity Behavior, follow the below steps:
 
 1. From the left menu, click **Natural Language** > **NLU Config** > **Amend Entity**.
 2. By default, this option s disabled.
@@ -47,7 +47,7 @@ To Set VA Level Amend Entity Behavior, follow the below steps:
 
 ### Task Level
 
-Amend entity behavior is set at the Task level also. The configurations defined at the task level will override the VA-level configurations.
+Amend entity behavior is set at the Task level also. The configurations defined at the task level will override the app-level configurations.
 
 To set Task Level Amend Entity Behavior, follow the below steps:
 
@@ -56,11 +56,11 @@ To set Task Level Amend Entity Behavior, follow the below steps:
 
     <img src="../images/manage-amend-behavior.png" alt="manage amend behavior" title="manage amend behavior" style="border: 1px solid gray; zoom:75%;">
 
-3. On the **Manage Amend Behavior** dialog box, by default, the **Use bot level settings** option is selected and the bot level setting is displayed.
-4. Select **Customize for this task** to override the bot level settings:
+3. On the **Manage Amend Behavior** dialog box, by default, the **Use app level settings** option is selected and the app level setting is displayed.
+4. Select **Customize for this task** to override the app level settings:
     * **Do not allow amend entities** – It will not allow the user to amend entity values for this task.
     * **Allow amend entities** – It will further give you three Dialog Resumption options:
-        * **Re-execute dialog from amended entity** – Amend entity behavior is set at the task level also. The configurations defined at the task level will override the bot-level configurations.
+        * **Re-execute dialog from amended entity** – Amend entity behavior is set at the task level also. The configurations defined at the task level will override the app-level configurations.
             * _Clear entity values captured downstream_ – to clear all entities captured between the identified entity and the amend
             * _Skip display of previously displayed messages_ – messages from Message nodes alone.
         * **Resume dialog from amend identification node** – use this option to resume the dialog from the node where the amend was identified.

@@ -12,7 +12,7 @@ Additionally, the Platform allows developers to configure how the Slack channel 
 
 !!! note
 
-    To use Slack <b>Threads</b> for your AI Agent deployed on the Slack Channel, add the Bot token Scope <code>chat:write.public</code> to the existing Slack app under <b>OAuth & Permissions</b> > <b>Scopes</b> > <b>Bot Token Scopes. [Learn more](#step-2-set-redirect-url-and-scopes)
+    To use Slack <b>Threads</b> for your AI Agent deployed on the Slack Channel, add the Bot token Scope <code>chat:write.public</code> to the existing Slack app under <b>OAuth & Permissions</b> > <b>Scopes</b> > <b>Bot Token Scopes</b>. [Learn more](#step-2-set-redirect-url-and-scopes)
 
 **Prerequisites**
 
