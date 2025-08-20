@@ -11,7 +11,7 @@ Steps to create a dialog task using OpenAI action templates:
 2. On the Dialog Task pop-up, under the **Integration**, select the **OpenAI** option to view the action templates.  
 <img src="../images/open-ai-tem-img2.png" alt="Integration -- OpenAI" title="Integration -- OpenAI" style="border: 1px solid gray;zoom:50%;"/>  
   
-If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions){:target="_blank"}.  
+If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
   <img src="../images/open-ai-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -52,7 +52,7 @@ The following OpenAI actions are supported in this release:
 
 Steps to generate answers from context task using the OpenAI integration:
 
-1. Refer to the[ Installing the OpenAI templates](../configuring-the-openai-action/#step-2-install-the-openai-action-templates){:target="_blank"} section to install this template.
+1. Refer to the[ Installing the OpenAI templates](configuring-the-openai-action.md#step-2-install-the-openai-action-templates){:target="_blank"} section to install this template.
 2. The _Generate answers from context_ dialog task is added with the following components:  
 <img src="../images/open-ai-tem-img4.png" alt="Generate answers from context dialog task is added" title="Generate answers from context dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -125,7 +125,7 @@ Steps to generate answers from context task using the OpenAI integration:
 
 Steps to extract skills from the resume using OpenAI integration:
 
-1. Refer to the[ Installing the OpenAI templates](../configuring-the-openai-action/#step-2-install-the-openai-action-templates){:target="_blank"} section to install this template.
+1. Refer to the[ Installing the OpenAI templates](configuring-the-openai-action.md#step-2-install-the-openai-action-templates){:target="_blank"} section to install this template.
 2. The _Extract Skills from resume_ dialog task is added with the following components:  
 <img src="../images/open-ai-tem-img9.png" alt="Extract Skills from resume dialog task is added" title="Extract Skills from resume dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
