@@ -298,7 +298,7 @@ The transcripts tab also shows the call transfer stages:
 
     * When customers are placed on hold (either themselves or by an agent), the system will not display transcripts of any customer speech during the hold period. 
 
-    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties)
+    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties).
 
 **DETAILS**: This tab shows the following details:
 
