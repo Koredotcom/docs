@@ -127,8 +127,6 @@ Enterprises can set up access to the Bot builder tool using the enterprise SSO. 
 5. Upon verifying the response from the identity provider, Kore idproxy server initiates a request to the Kore app server.
 6. On successful authentication of the token from Kore idproxy server, Kore app server grants access to the user.
 
-Post v7.2 release, Kore.ai supports the IDP initiated flow, wherein the platform gets the postback directly with SAML response and is able to validate the assertion and register/identify the user. The configuration for these modes – SP-based and IDP-based flow is different and is highlighted in the configuration steps below.
-
 Refer below [to configure SSO using SAML](#configuring-sso-using-saml)
 
 
@@ -145,7 +143,7 @@ The token information on the client varies depending upon the SSO provider and t
 
 ### Configuring SSO using SAML
 
-Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Kore.ai Bots Admin Console. Kore.ai also supports WS-Federation and OpenID Connect protocols. For more information, see [Using Single Sign-On](../using-single-sign-on/){:target="_blank"}.
+Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Kore.ai Admin Console. Kore.ai also supports WS-Federation and OpenID Connect protocols.
 
 
 ### OKTA Configuration

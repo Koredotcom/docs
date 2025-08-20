@@ -12,7 +12,7 @@ Steps to create a dialog task using the Stripe action templates:
 3. On the Dialog Task pop-up, under the Integration, select the Stripe option to view the action templates.  
 <img src="../images/stripe-tem-img2.png" alt="Integration - Stripe" title="Integration - Stripe" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/stripe-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -78,7 +78,7 @@ The following Stripe actions are supported in this release:
 
 Steps to create a customer in the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _Create a Customer_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img4.png" alt="Create a Customer dialog task is added" title="Create a Customer dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -149,7 +149,7 @@ Steps to create a customer in the Stripe integration:
 
 Steps to view all customers in the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _List All Customers_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img7.png" alt="List All Customers dialog task is added" title="List All Customers dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -416,7 +416,7 @@ Steps to view all customers in the Stripe integration:
 
 Steps to create an invoice in the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _Create an Invoice_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img10.png" alt="Create an Invoice dialog task is added" title="Create an Invoice dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -455,7 +455,7 @@ Steps to create an invoice in the Stripe integration:
 
 Steps to fetch all invoices from the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _List All Invoices_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img14.png" alt="List All Invoices dialog task is added" title="List All Invoices dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -1064,7 +1064,7 @@ Steps to fetch all invoices from the Stripe integration:
 
 Steps to create a payment intent in the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _Create a Payment Intent_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img16.png" alt="Create a Payment Intent dialog task is added" title="Create a Payment Intent dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 

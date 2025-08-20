@@ -40,7 +40,7 @@ The following Confluence action is supported in the latest version of the XO Pla
 
 Steps to create content using the Confluence integration:
 
-1. Refer to the [Installing the Confluence Templates](../configuring-the-confluence-action/#step-2-install-the-confluence-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Confluence Templates](configuring-the-confluence-action.md#step-2-install-the-confluence-action-templates){:target="_blank"} section to install this template.
 2. The _createContent_ dialog task is added with the following components:  
 <img src="../images/confluence-action-img14-tem-img4.png" alt="Dialog added" title="Dialog added" style="border: 1px solid gray;zoom:50%;"/>
 

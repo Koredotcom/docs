@@ -2,9 +2,9 @@
 
 To retrieve the most recent conversational data for the given `botId`. Gets the latest 25 sessions data for the given application ID that completed the execution of the flow.
 
-| **Method**       | GET                                                        |
+| **Method**       | POST                                                        |
 |--------------|------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/api/public/bot/{{botId}}//intentrealtimedata` |
+| **Endpoint**     | `https://{{host}}/api/public/bot/{{botId}}/intentrealtimedata` |
 | **Content Type** | `application/json`                                         |
 | **Authorization**| `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                      |

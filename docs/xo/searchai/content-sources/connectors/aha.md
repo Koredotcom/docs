@@ -46,8 +46,8 @@ Aha connector interacts with Aha! via the REST APIs. To enable this communicatio
 ## Generate API Key 
 
 * Log in to Aha!
-* Access the **Settings **icon on the top right and click **Personal**. 
-* Go to the **Developer **page. 
+* Access the **Settings** icon on the top right and click **Personal**. 
+* Go to the **Developer** page. 
 * On the **API Key** tab, click **Generate API Key**. Provide a name for the key. Save the generated key to configure the connector in Search AI. 
 
 ## Generate OAuth Credentials 
@@ -67,8 +67,8 @@ Aha connector interacts with Aha! via the REST APIs. To enable this communicatio
 
 Go to the **Authorization page** of the Aha! Connector, provide the following configuration fields and click **Connect**. 
 
-* **Name**- Unique name for the connector.
-* **Authorization Type**- Select your preferred Authorization Type. 
+* **Name** - Unique name for the connector.
+* **Authorization Type** - Select your preferred Authorization Type. 
     * If **API Key** is selected as the auth type, provide the API Key generated in the Aha application. 
     * If Authorization Type is set to **OAuth**, set Grant Type to Authorization Code and then provide your client credentials generated in the Aha application. 
 

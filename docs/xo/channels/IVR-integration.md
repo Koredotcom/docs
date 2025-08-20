@@ -16,9 +16,9 @@ Conventional IVR systems do not have diversified options for the users to articu
 
 ## IVR Support
 
-The Platform allows you to give a conversational makeover to your IVR system. It lets you build Virtual Assistants with human-like conversation capabilities and integrate them with your existing IVR system, thus taking your organization’s customer service experience to a new level.
+The Platform allows you to give a conversational makeover to your IVR system. It lets you build AI Agents with human-like conversation capabilities and integrate them with your existing IVR system, thus taking your organization’s customer service experience to a new level.
 
-The following features enable  the seamless integration of your Kore.ai VAs with your existing IVR:
+The following features enable  the seamless integration of your Kore.ai Assistants with your existing IVR:
 
 * **Native VXML Support**: Built-in support to parse and generate World Wide Web Consortium (W3C) compliant Voice Extensible Markup Language(VXML) files.
 * **Hybrid integration**: Flexibility to build use cases or dialogs on the  Kore.ai Experience Optimization the Platform, which can work in sync with the IVR dialogs.
@@ -112,8 +112,8 @@ The **Phone Number**, **PIN**, and **Secret** are populated in the IVR Configura
 
 **IVR Sandbox Limitations:**
 
-* The platform supports only a limited number of concurrent lines, hence calls to your VAs through IVR Sandbox may not be answered at times.
-* We strongly recommend you use IVR Sandbox only for internal testing purposes and not for the end-users of your Virtual Assistants, as there might be some functional limitations.
+* The platform supports only a limited number of concurrent lines, hence calls to your AI Agents through IVR Sandbox may not be answered at times.
+* We strongly recommend you use IVR Sandbox only for internal testing purposes and not for the end-users of your AI Agents, as there might be some functional limitations.
 
 ### Configure Dialog Node IVR Properties
 You can configure IVR properties for a node in a dialog task. Click the **IVR Properties** icon and  enter initial prompts, define Grammar, enter timeout, number of retries and other available fields. To know more about dialog definition, see the [Voice Call Properties: Dialog Node Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings) section.
@@ -122,11 +122,11 @@ You can configure IVR properties for a node in a dialog task. Click the **IVR Pr
 
 ### IVR Channel Setup
 
-This section explains the IVR channel setup for your AI Agent. After configuring IVR Settings at both the AI Agent and the Dialog levels, you must configure IVR Channel for the AI Agent. IVR channel provides a generic integration to connect VAs with IVR systems. The platform generates required VXML files to be exchanged as part of the interaction with the end user through the IVR systems.
+This section explains the IVR channel setup for your AI Agent. After configuring IVR Settings at both the AI Agent and the Dialog levels, you must configure IVR Channel for the AI Agent. IVR channel provides a generic integration to connect AI Agents with IVR systems. The platform generates required VXML files to be exchanged as part of the interaction with the end user through the IVR systems.
 
 **Enable IVR Channel and Associate with an APP**
 
-Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requests from IVR. For generating a JWT token, you should associate an app with the AI Agent. You can select any existing Apps available in your Kore.ai account or create a new app.
+Kore.ai Assistants require a JWT token to authenticate the incoming requests from IVR. For generating a JWT token, you should associate an app with the AI Agent. You can select any existing Apps available in your Kore.ai account or create a new app.
 
 1. Go to **Channels & Flows** > **Channels** > **Third Party Voice** > **All** and click **IVR**.
 2. The IVR Channel Instructions panel is displayed.
@@ -268,7 +268,7 @@ To extract the metadata from the ASR transcription, follow these steps:
 5. In this example, based on the **ASR Confidence** value extracted from the user input, we define the connection rules for the dialog as shown below:
    ![ASR confidence](images/IVR-24.png "ASR confidence")
 
-6. Go to **Automation** > **Analytics** > **Virtual Assistant** > **NLP Insights** on the Platform.
+6. Go to **Automation** > **Analytics** > **NLP Insights** on the Platform.
 
 7. Click on the relevant utterance to see the **Chat History** details.
 
@@ -292,7 +292,7 @@ data: {
 
 !!! note
 
-    The information is available for the existing and new virtual assistants whose IVR channel is enabled.
+    The information is available for the existing and new AI Agent whose IVR channel is enabled.
 
 ### Managing Multiple Prompts in IVR Voice Channel
 

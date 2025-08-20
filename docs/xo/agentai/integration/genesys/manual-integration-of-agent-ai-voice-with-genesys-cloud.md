@@ -122,7 +122,7 @@ By default, most agents don’t have access to read from a Data Table. You must 
 
 ### **Step 4: Data Table Configuration**
 
-This step includes creation of a Data Table with Kore AI Agent details.
+This step includes creation of a Data Table with Agent AI bot details.
 
 !!! note
 
@@ -145,7 +145,7 @@ This step includes creation of a Data Table with Kore AI Agent details.
 6. Click the **Add Field** button under **Custom Fields**.
 Set the data type for all custom fields as **String** while adding.  
 <img src="../images/custom-field-string-16.png" alt="custom-field-string" title="custom-field-string" style="border: 1px solid gray; zoom:80%;">
-7. Add the custom fields with AI Agent details.  
+7. Add the custom fields with Agent AI bot details.  
 <img src="../images/custom-field-bot-details-17.png" alt="custom-field-bot-details" title="custom-field-bot-details" style="border: 1px solid gray; zoom:80%;">
 8. Follow the below conventions for other custom fields. Use the exact names, including upper/lower case.
 

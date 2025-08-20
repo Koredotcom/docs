@@ -1,8 +1,8 @@
 # Events
 
-Events are triggered when specific actions occur during a conversation with the Virtual Assistant  or when specific events are triggered on any active channels.
+Events are triggered when specific actions occur during a conversation with the AI Agent or when specific events are triggered on any active channels.
 
-To access **Events**, navigate to **Automation AI > Virtual Assistant > Conversation Intelligence > Events**.
+To access **Events**, navigate to **Automation AI > Conversation Intelligence > Events**.
 
 
 <img src="../images/access-event-handlers-window.png" title="access event handlers" style="border: 1px solid gray; zoom:75%;">

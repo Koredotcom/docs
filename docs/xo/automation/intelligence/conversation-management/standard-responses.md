@@ -25,7 +25,7 @@ For example, in the SMS channel, you may only want to use short app responses to
 
 XO Platform provides a few default text responses. To access and manage the default responses on the Platform,
 
-Go to **Automation AI** > **Virtual Assistant** > **Conversation Intelligence** > **Conversation Management** > **Standard Responses**.
+Go to **Automation AI** >**Conversation Intelligence** > **Conversation Management** > **Standard Responses**.
 
 For each standard response category tab, the event or user input is listed, followed by one or more NLP interpreter standard responses.
 

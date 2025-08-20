@@ -5,15 +5,15 @@ To set up Skype for Business as a channel, you must register a Bot Channel servi
 
 
 1. **Register a Bot Channel** – Log in to the Azure portal and register a bot channel.
-2. **Create Microsoft ID and Password** – You must add all the bot details and create the Microsoft ID and Password.
-3. **Enable Skype for Business** – After registering the bot, enable the channel.
-4. **Publish Channel** – After the channel is enabled and all configurations are verified, publish the bot to make it available for developers.
+2. **Create Microsoft ID and Password** – You must add all the app details and create the Microsoft ID and Password.
+3. **Enable Skype for Business** – After registering the app, enable the channel.
+4. **Publish Channel** – After the channel is enabled and all configurations are verified, publish the app to make it available for developers.
 
 To add Skype for Business channel, follow the below steps:
 
 
 
-1. In the **Bots** section of the Bot Builder, click the bot you want to add the **Skype for Business** channel to.
+1. In the **Bots** section of the App Builder, click the app you want to add the **Skype for Business** channel to.
 2. On the **Channels** tab, click the **Skype for Business** icon. The **Skype for Business Channel** page is displayed.
 3. In a new browser tab, log in to the Azure portal to register a bot channel.
 4. On the left pane, click **+ Create a Resource**. On the search window, search and select **Bot Channels Registration**.
@@ -36,8 +36,8 @@ To add Skype for Business channel, follow the below steps:
 ![save configuration](../images/skype5.png "save configuration")
 
 13. To enable Skype for Business, go to your Azure portal and click **Channels** on the left pane of your app. Select **Skype for Business**.
-14. You are redirected to the channel information page and the channel is enabled. Proceed to the next step to add this bot to your Skype for Business Tenant account.
+14. You are redirected to the channel information page and the channel is enabled. Proceed to the next step to add this app to your Skype for Business Tenant account.
 ![skype business](../images/skype6.png "skype business")
 
-15. The Tenant Administrator of your Skype for Business Online environment has to add this bot to your enterprise Skype for Business account. Refer to [instructions](https://skypeappregistration.azurewebsites.net/bot/370430e7-4a7f-4765-8ace-4dd8139b1866) from Microsoft Bot Framework to add this bot to your enterprise Skype for Business account.
-16. After these instructions are executed, end-users of your enterprise can find this bot in their Skype for Business contacts list and start chatting with the bot.
+15. The Tenant Administrator of your Skype for Business Online environment has to add this app to your enterprise Skype for Business account. Refer to [instructions](https://skypeappregistration.azurewebsites.net/bot/370430e7-4a7f-4765-8ace-4dd8139b1866) from Microsoft Bot Framework to add this app to your enterprise Skype for Business account.
+16. After these instructions are executed, end-users of your enterprise can find this app in their Skype for Business contacts list and start chatting with the app.

@@ -31,7 +31,7 @@ The version type is based on the ways in which a Bot version is created:
 * **User Created**: These versions are created by you as a developer, as discussed below.
     * There is a limit of 20 user-created versions. Once the limit is reached, the oldest versions are deleted to make room for any new ones.
 
-* **Auto Created**: These versions are created as part of the publishing cycle. [Learn more](../publishing-app/){:target="_blank"}.
+* **Auto Created**: These versions are created as part of the publishing cycle. [Learn more](publishing-bot.md){:target="_blank"}.
     * Whenever you publish an agent, the Platform creates a version automatically.
     * This auto created version includes the definition of the published copy of the agent after the current publish request is accepted.
     * In case the publish request is rejected, the version will not be created.
@@ -109,7 +109,7 @@ To compare versions, follow the below steps:
 6. The following information is highlighted to the developer in a JSON format:
     1. **Data addition** – Newly added data in the secondary version is highlighted, but not in the primary version.
     2. **Data removal** – Data deleted from the primary version is highlighted, but not in the secondary version.
-    3. **Data update** – In the case of key-value pairs, the same _key_ present in apph versions with different values is highlighted. 
+    3. **Data update** – In the case of key-value pairs, the same _key_ present in app versions with different values is highlighted. 
     4. For data addition and removal, an empty line is shown in the version where the corresponding detail is missing to understand the position of the new line.
 
         <img src="../images/bot-versioning-img5.png" alt="Comparison findings" title="Comparison findings" style="border: 1px solid gray; zoom:70%;">

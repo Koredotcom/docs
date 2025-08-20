@@ -441,11 +441,11 @@ The delay is only applied when Voice Gateway sends a response to the bot and is 
 
 If a delay occurs between two Message nodes, the bot developer must handle it manually by playing audio and stopping it after the delay.
 
-By setting timeout properties, the following actions can be configured:
-../images/handle-bot-delay.png
-* Play a textual prompt to the user
-* Play an audio file to the user
-* Disconnect the call
+By setting timeout properties, the following actions can be configured:  
+
+* Play a textual prompt to the user  
+* Play an audio file to the user  
+* Disconnect the call  
 
 **Use Case**:
 
@@ -474,7 +474,7 @@ Example:
 
       `botNoInputSpeech` can contain multiple messages, including audio URLs.
 ../images/message-node-paremeters.png
-Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](https://this)dummy.wav”,” this is third textual Message”].
+Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](https://thisdummy.wav)”,” this is third textual Message”].
 
 #### Handle Delay Between Two Message Nodes
 
@@ -521,7 +521,7 @@ For example, if a user speaks in English, the conversation will continue in Engl
 **Configuration Steps**:
 
 1. In Bot Builder (on the child bot), navigate to **Languages,** add a new language (for example, Spanish), and enable it.
-2. Select English as the default language from the language dropdown menu.../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-virtual-assistant
+2. Select English as the default language from the language dropdown menu.[Learn more](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-virtual-assistant).
 3. Create a new dialog titled "Language Detection" (or choose a suitable name).
 4. Inside this dialog, add an **entity node** to capture user intent input.
 5. Set the entity precedence to **'Intent over Entity'** in the advanced controls.

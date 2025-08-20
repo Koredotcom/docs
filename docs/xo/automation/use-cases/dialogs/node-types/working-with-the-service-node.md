@@ -7,7 +7,7 @@ The Service Node is a component type in a dialog task that you can use to add an
 The setup of a Service node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the Service node.
-2. Add a Service node in the designated place. For steps related to adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+2. Add a Service node in the designated place. For steps related to adding nodes, [refer here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
 
     !!! note
 
@@ -33,7 +33,7 @@ To configure the Component Properties tab, please follow the steps below:
     1. **Custom Service** – Define an API request to a third-party web service. This is the default setting.
     2. **HTML to Image** – Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
     3. **URL to Image** – Define a web page URL to load to render an image.
-    4. **Custom Authentication Service** – Define a URL to a third-party application that provides the authentication services necessary for the task flow. [Learn more](../../implementing-custom-authentication){:target="_blank"}.
+    4. **Custom Authentication Service** – Define a URL to a third-party application that provides the authentication services necessary for the task flow. [Learn more](../implementing-custom-authentication.md){:target="_blank"}.
     5. **Alert Subscription Service** – Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
     6. **Data Service** – Define CRUD operations to query and manipulate the data for any given data table/table view.
 
@@ -52,7 +52,7 @@ To configure the Component Properties tab, please follow the steps below:
 
     <img src="../images/service-node-img3-define-request-dialog.png" alt="Service node - Define request dialog" title="Service node - Define request dialog" style="border:1px solid gray;zoom:70%;">
 
-7. Click the **Auth** tab to create a new Authorization Profile or select an existing profile. For more information, see the [Authorization Overview](../../../../../app-settings/dev-tools/bot-authorization/bot-authentication/) article.
+7. Click the **Auth** tab to create a new Authorization Profile or select an existing profile. For more information, see the [Authorization Overview](../../../../app-settings/dev-tools/bot-authorization/bot-authentication.md) article.
 
 8. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
 
@@ -89,10 +89,10 @@ To configure the Component Properties tab, please follow the steps below:
             
                 These options only affect the respective instance during runtime or live interaction. PII data is always redacted/masked in chat history and internal logs, irrespective of the option selected here.
 
-        For more information, see [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}.  
+        For more information, see [Redacting Personally Identifiable Information ](../../../../app-settings/advanced-settings/pii-data-masking.md){:target="_blank"}.  
        <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"> 
 
-11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
 
 !!! Note
 
@@ -157,7 +157,7 @@ Use the Instance Properties to set user tags, timeout duration, and app behavior
 
       
 
-3. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+3. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
 
 
@@ -169,7 +169,7 @@ Use the Instance Properties to set user tags, timeout duration, and app behavior
     * The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
     * The connection properties would be present only if this is the bottommost node of a sequence.
 
-To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions){:target="_blank"}
+To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../node-connections/nodes-conditions.md){:target="_blank"}
 
 The Connection Path property offers three default variants:
 
@@ -209,7 +209,7 @@ You can define the Service Type as:
 * **URL to Image** – Define a web page URL to load to render an image.
 * **Custom Authentication Service** – Define a URL to a third-party application that provides the authentication services necessary for the task flow.
 * **Alert Subscription Service** – Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
-* **Data Table Service** – Define CRUD operations to query and manipulate the data for any given data table/table view assigned to the Virtual Assistant.
+* **Data Table Service** – Define CRUD operations to query and manipulate the data for any given data table/table view assigned to the AI Agent.
 
 
 ### Define a Custom Service
@@ -230,10 +230,10 @@ You can define the Service Type as:
 5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, http://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     1. Optionally, click **Show Advanced**, and select  
 
-        1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. For more information, refer to [Using the Kore.ai Connector](../../../../../administration/kore-ai-connector){:target="_blank"}.  
-        2. **Yes** in the **De-Identification of PII Data** to redact any sensitive information types that users share with your assistants. For more information, refer to [Redacting Personally Identifiable Information](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}
+        1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. For more information, refer to [Using the Kore.ai Connector](../../../../administration/kore-ai-connector.md){:target="_blank"}.  
+        2. **Yes** in the **De-Identification of PII Data** to redact any sensitive information types that users share with your assistants. For more information, refer to [Redacting Personally Identifiable Information](../../../../app-settings/advanced-settings/pii-data-masking.md){:target="_blank"}
     
-    2. In the **Auth** tab, select the type of authorization needed for this service node call, or define a new authorization type if needed. For more information, refer to [Setting Up Authentication](../../../../../app-settings/dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
+    2. In the **Auth** tab, select the type of authorization needed for this service node call, or define a new authorization type if needed. For more information, refer to [Setting Up Authentication](../../../../app-settings/dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.
     3. In the **Headers** tab, specify the headers as key/value pairs if required to access the specified request URL.  Authentication headers are auto-generated based on the authorization type specified on the **Auth** tab. You need to define any other standard headers. For example, Content-type, Accept, or any custom headers. Headers defined here are only applicable to this service node.
     4. In the **Body** tab, select the body content type. You can select:
         * **application/x-www-form-urlencoded** – Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
@@ -471,7 +471,7 @@ Define the expected behavior of this alert if an upgraded version of the underly
         
             Your AI Agent should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../../administration/data/data-table/#assignments){:target="_blank"}.
 
-2. In the **Request Definition** section, click **Define Request** to specify the operation you want to perform. [Click here for details.](../../../../../administration/data/data-as-service){:target="_blank"}
+2. In the **Request Definition** section, click **Define Request** to specify the operation you want to perform. [Click here for details.](../../../../administration/data/data-as-service.md){:target="_blank"}
 
 
 ## Next Steps

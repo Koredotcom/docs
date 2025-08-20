@@ -348,7 +348,7 @@ The _Bot status changed successfully_ message is displayed at the top of the pag
 
 ### Bot Plan
 
-You can view and if needed change the subscribed plan. [See here for details](../billing){:target="_blank"}.
+You can view and if needed change the subscribed plan. [See here for details](billing.md){:target="_blank"}.
 
 ### Restore
 A published bot with active dialog tasks can be restored within 30 days following the deletion date.
@@ -479,7 +479,7 @@ The _Bot status changed successfully_ message is displayed at the top of the pag
 
 ### Bot Plan
 
-You can view and if needed change the subscribed plan. [See here for details](../billing/){:target="_blank"}.
+You can view and if needed change the subscribed plan. [See here for details](billing.md){:target="_blank"}.
 
 
 ## Preferences

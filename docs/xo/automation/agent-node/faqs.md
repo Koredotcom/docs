@@ -7,9 +7,9 @@
 ## Language Models
 
 
-### What types of language models are available on the XO Platform?
+### What types of language models are available on the Platform?
 
-The XO Platform offers three types of language models:
+The Platform offers three types of language models:
 
 
 
@@ -30,7 +30,7 @@ To configure OOB integrations:
 3. The platform verifies these by calling the provider's endpoints.
 4. OOB system models come with default prompts, while dynamically added models require custom prompts. 
 
-[Learn more](../../generative-ai-tools/models-library/#pre-built-llm-integration).
+[Learn more](../../generative-ai-tools/models-library.md#pre-built-llm-integration).
 
 
 ### How do I set up a custom model (Bring Your Own Model)?
@@ -44,7 +44,7 @@ To set up a custom model, follow these steps:
 3. The platform will validate the credentials and configure the model.
 4. Once configured, the custom model can be utilized with tailored prompts for various GenAI and LLM features.
 
- [Learn more](../../generative-ai-tools/models-library/#custom-llm-integration-framework).
+ [Learn more](../../generative-ai-tools/models-library.md#custom-llm-integration-framework).
 
 
 ### Are XO GPT models compatible with Agent Nodes?
@@ -89,7 +89,7 @@ There are five key components to creating and using tools:
 
 ### What transition options are available after a tool executes?
 
-The XO Platform provides three options:
+The Platform provides three options:
 
 
 
@@ -101,9 +101,9 @@ The XO Platform provides three options:
 ## Prompts
 
 
-### What types of prompts does the XO Platform offer?
+### What types of prompts does the Platform offer?
 
-The XO Platform offers two main categories of prompts:
+The Platform offers two main categories of prompts:
 
 
 
@@ -139,7 +139,7 @@ To create a custom prompt:
 5. Use the editor to craft your instructions.
 6. Define the necessary output keys and test your prompt. 
 
-[Learn more](../../generative-ai-tools/prompts-library/).
+[Learn more](../../generative-ai-tools/prompts-library.md).
 
 
 ## Agent Node Components
@@ -240,7 +240,7 @@ When configuring pre- and post-processor scripts at both the node and prompt lev
 
 ### Can I import templates for custom prompts?
 
-Yes, the XO Platform provides templates that you can use as a starting point. Version 2 includes a template specifically designed for GPT-4o, which comes pre-configured with a post-processor script and all the necessary output keys.
+Yes, the Platform provides templates that you can use as a starting point. Version 2 includes a template specifically designed for GPT-4o, which comes pre-configured with a post-processor script and all the necessary output keys.
 
 
 ### How does the conversation history function with Agent Nodes?

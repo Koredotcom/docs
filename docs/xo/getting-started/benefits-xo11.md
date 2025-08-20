@@ -6,7 +6,7 @@ XO v11 represents a significant evolution in the Kore.ai platform, offering tran
 
 <font size="4">Unified Conversation Session</font>
 
-Earlier, integration with individual Kore.ai products like Bots Platform, SmartAssist, Search Assist, and Agent Assist relied on APIs or Webhooks. This resulted in disjointed conversations without a central session to track complete interactions.
+Earlier, integration with individual Kore.ai products like Platform, SmartAssist, Search Assist, and Agent Assist relied on APIs or Webhooks. This resulted in disjointed conversations without a central session to track complete interactions.
 
 With XO11, conversations are now unified across modules, enabling seamless tracking of an end-to-end customer interaction within a single session. This streamlined approach enhances analytics, simplifies cross-module data retrieval, and improves workflow efficiency. 
 

@@ -41,7 +41,7 @@ HubSpot provides a CRM platform with different tools to enable businesses to man
 
 You can set up communication between Search AI and HubSpot using a **private app.** 
 
-**Private App**: If you are authenticating via a Private App, you must use your Access Token to set up the connector. Refer to the [official HubSpot documentation](https://developers.hubspot.com/docs/api/private-apps) to learn how to obtain the access token. This access token is used to configure the connector in Search AI. 
+**Private App**: If you are authenticating via a Private App, you must use your Access Token to set up the connector. Refer to the [official HubSpot documentation](https://developers.hubspot.com/docs/api/private-apps){:target="_blank"} to learn how to obtain the access token. This access token is used to configure the connector in Search AI. 
 
 The following **permissions** are required to ingest the required data from the HubSpot account. Select the following scopes while creating the app. 
 

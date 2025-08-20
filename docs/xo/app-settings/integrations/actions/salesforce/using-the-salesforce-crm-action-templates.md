@@ -11,7 +11,7 @@ Steps to create a dialog task using Salesforce action templates:
 <img src="../images/salesforce-tem-img2.png" alt="Integration - Salesforce" title="Integration - Salesforce" style="border: 1px solid gray;zoom:50%;"/>
 
 
-If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.
+If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.
 
 ## Salesforce CRM Actions 
 
@@ -90,7 +90,7 @@ The following Salesforce CRM actions are supported in this release:
 
 Steps to create a new lead in the Salesforce CRM:
 
-1. Refer to the [Installing the Salesforce CRM Action Templates](../configuring-the-salesforce-crm-action/#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Salesforce CRM Action Templates](configuring-the-salesforce-crm-action.md#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
 2. The _Create a Lead_ dialog task is added with the following components:
     1. **Createlead** - A user intent to create a lead.
     2. **firstName**, **lastName**, and **companyName** – Entity nodes for gathering the required lead details.
@@ -183,7 +183,7 @@ Steps to create a new lead in the Salesforce CRM:
 
 Steps to update an existing lead in Salesforce CRM:
 
-1. Refer to the [Installing the Salesforce CRM Action Templates](../configuring-the-salesforce-crm-action/#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Salesforce CRM Action Templates](configuring-the-salesforce-crm-action.md#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
 2. The _Update a Lead_ dialog task is added with the following components:  
 <img src="../images/salesforce-tem-img12.png" alt="Update a Lead dialog task is added" title="Update a Lead dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -208,7 +208,7 @@ Steps to update an existing lead in Salesforce CRM:
 
 Steps to delete a lead in Salesforce CRM:
 
-1. Refer to the [Installing the Salesforce CRM Action Templates](../configuring-the-salesforce-crm-action/#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Salesforce CRM Action Templates](configuring-the-salesforce-crm-action.md#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
 2. The _Delete Lead_ dialog task is added for the Salesforce CRM with the following components:  
 <img src="../images/salesforce-tem-img15.png" alt="Delete Lead dialog task is added" title="Delete Lead dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -228,7 +228,7 @@ Steps to delete a lead in Salesforce CRM:
 
 Steps to view all leads in Salesforce CRM:
 
-1. Refer to the [Installing the Salesforce CRM Action Templates](../configuring-the-salesforce-crm-action/#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Salesforce CRM Action Templates](configuring-the-salesforce-crm-action.md#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
 2. The _List All Leads_ dialog task is added for the Salesforce CRM with the following components:  
 <img src="../images/salesforce-tem-img18.png" alt="List All Leads dialog task is added" title="List All Leads dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -320,7 +320,7 @@ Steps to view all leads in Salesforce CRM:
 
 Steps to view all leads in Salesforce CRM:
 
-1. Refer to the [Installing the Salesforce CRM Action Templates](../configuring-the-salesforce-crm-action/#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Salesforce CRM Action Templates](configuring-the-salesforce-crm-action.md#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
 2. The _View Lead by Id_ dialog task is added for the Salesforce CRM with the following components:  
 <img src="../images/salesforce-tem-img21.png" alt="View Lead by Id dialog task is added" title="View Lead by Id dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -411,7 +411,7 @@ Steps to view all leads in Salesforce CRM:
 
 Steps to search all leads in Salesforce CRM:
 
-1. Refer to the [Installing the Salesforce CRM Action Templates](../configuring-the-salesforce-crm-action/#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Salesforce CRM Action Templates](configuring-the-salesforce-crm-action.md#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
 2. The _Search Leads_ dialog task is added for the Salesforce CRM with the following components:  
 <img src="../images/salesforce-tem-img24.png" alt="Search Leads dialog task is added" title="Search Leads dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -504,7 +504,7 @@ Steps to search all leads in Salesforce CRM:
 
 Steps to create a new opportunity in Salesforce CRM:
 
-1. Refer to the [Installing the Salesforce CRM Action Templates](../configuring-the-salesforce-crm-action/#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Salesforce CRM Action Templates](configuring-the-salesforce-crm-action.md#step-2-install-the-salesforce-action-templates){:target="_blank"} section to install this template.
 2. The _Create Opportunity_ dialog task is added for the Salesforce CRM with the following components:  
 <img src="../images/salesforce-tem-img27.png" alt="Create Opportunity dialog task is added" title="Create Opportunity dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 

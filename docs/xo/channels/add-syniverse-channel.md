@@ -1,6 +1,6 @@
 # Add the Syniverse Channel
 
-To set up Syniverse as a channel, the developer needs to associate the bot with a Syniverse app, set up a subscription, and enable the delivery events for this app. This document explains the steps to add the Syniverse as a channel to your bot.
+To set up Syniverse as a channel, the developer needs to associate the AI Agent with a Syniverse app, set up a subscription, and enable the delivery events for this app. This document explains the steps to add the Syniverse as a channel to your AI Agent.
 
 
 ## Create an App
@@ -20,7 +20,7 @@ To create the Syniverse app, follow the steps below:
 Once you create an app, to capture Auth keys, follow the steps below:
 
 1. Navigate to the created app in the **Applications** section and open the app.
-2. Use the **Auth Keys** (see the following screenshot) to complete the configuration in the Kore.ai platform and send the SMS via bot.
+2. Use the **Auth Keys** (see the following screenshot) to complete the configuration in the Kore.ai platform and send the SMS via AI Agent.
 <img src="../images/Syniverse3.png" alt="Syniverse Auth Keys" title="Syniverse Auth Keys" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -32,7 +32,7 @@ The next step is to configure how messages will be delivered via the Webhook URL
 <img src="../images/Syniverse4.png" alt="Syniverse Delivery Configuration" title="Syniverse Delivery Configuration" style="border: 1px solid gray; zoom:70%;">
 
 
-2.  If you want to use an existing delivery configuration to set up the bot’s webhook URL, select one of the configurations from the displayed table (see the following screenshot), else, click **New Delivery Configuration**.
+2.  If you want to use an existing delivery configuration to set up the app’s webhook URL, select one of the configurations from the displayed table (see the following screenshot), else, click **New Delivery Configuration**.
 <img src="../images/Syniverse5.png" alt="Syniverse webhook URL" title="Syniverse webhook URL" style="border: 1px solid gray; zoom:70%;">
 
 3. In the **Create Delivery Configuration** pop-up, enter the following values:

@@ -1,4 +1,4 @@
-# **Answer Generation API**
+# Answer Generation API
 
 This API allows you to fetch answers to a query from SearchAI corresponding to the input query and the meta filters sent in the request body. Additionally, this API also returns debug information about the qualified chunks used to generate answers.
 
@@ -26,7 +26,7 @@ This API allows you to fetch answers to a query from SearchAI corresponding to t
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="../api-introduction#generating-the-jwt-token">How to generate the JWT Token</a>.
+See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>

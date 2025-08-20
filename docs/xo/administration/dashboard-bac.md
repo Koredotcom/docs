@@ -4,7 +4,7 @@
 
     This page refers to the Dashboard page of the Admin Console, for information on the Analytics Dashboard of the XO Platform refer here.
 
-Upon accessing the [Admin Console](../adminconsole){:target="_blank"}, you will be directed to its Dashboard page.
+Upon accessing the [Admin Console](adminconsole.md){:target="_blank"}, you will be directed to its Dashboard page.
 
 The **Dashboard** page of the Admin Console provides information related to assistant activity and a user overview of your company account.
 
@@ -34,7 +34,7 @@ The **Time Periods** you can select are:
 * **24 Hours** – Data aggregated during the preceding 24 hours is displayed. This is the default setting.
 * **Custom** – Click to display the Custom Date Range dialog that you can use to define a specific date period – start date, and the end data for displaying activity data. Selection up to a maximum of 90 days preceding the current date is allowed.
     * **Filters** can be applied to display Metrics for the following:
-        * **conversation session type** (introduced in ver 8.0 – [see here for more details on the conversation sessions](../../app-settings/advanced-settings/bot-sessions){:target="_blank"}) can be either one or both (default setting) of the following:
+        * **conversation session type** (introduced in ver 8.0 – [see here for more details on the conversation sessions](../app-settings/advanced-settings/bot-sessions.md){:target="_blank"}) can be either one or both (default setting) of the following:
             * _interactive sessions_ – the conversation which include one or more messages from the user;
             * _non-interactive sessions_ – conversations where only assistant messages are presented without any message from the user;
         
@@ -46,7 +46,7 @@ Bot Metrics provide access to the following information:
 * An overview of the number of successfully **Completed Tasks**, **Total Users** (unique users) who have interacted with the assistant, and number of **Alerts Sent** is displayed.
 * A graphic illustration of the **Messages and Conversation Sessions** by the hour. This includes
     * **Number of Messages** per hour/day based upon the time period selected. A message is defined as an interaction between the user and the assistant.
-    * The number of **Conversation Sessions** per hour/day based upon the time period selected – Conversation Session is defined as the uninterrupted exchange of messages between the user and the assistant without change of intent even after a considerable idle time based on the assistant’s settings ([refer here for sessions configuration](../../app-settings/advanced-settings/bot-sessions){:target="_blank"}).
+    * The number of **Conversation Sessions** per hour/day based upon the time period selected – Conversation Session is defined as the uninterrupted exchange of messages between the user and the assistant without change of intent even after a considerable idle time based on the assistant’s settings ([refer here for sessions configuration](../app-settings/advanced-settings/bot-sessions.md){:target="_blank"}).
 
 * A chart depicting the **Billing Sessions** by the hour/day based upon the time period selected. These are the number of 15-minute uninterrupted volleys constituting a billing cycle.
 * Hourly (or Daily) details of the **Successful Tasks** and **Active User** is displayed.

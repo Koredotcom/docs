@@ -23,7 +23,7 @@ Setting up a user intent node in a dialog task involves the following steps:
 ## Add the Node
 
 1. Open the dialog task to which you want to add the user intent node.
-2. Add a user intent node in the designated place. For steps on adding nodes, [please read more here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+2. Add a user intent node in the designated place. For steps on adding nodes, [please read more here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
 3. The user intent window is displayed with the **Component Properties** tab selected by default.
 
 <img src="../images/add-intent-node-img1.png" alt="Add intent node" title="Add intent node" style="border:1px solid gray;zoom:70%;">
@@ -69,10 +69,10 @@ The NLP Properties are related to the underlying intent associated with a dialog
 
 To improve intent identification for the dialog task, add or define the following properties: 
 
-1. **Machine Learning** settings to provide user utterances to improve the detection of this intent. [Learn more](../../../../natural-language/training/machine-learning-engine){:target="_blank"}.
-2. **Patterns and Rules** to capture this intent if the user’s utterance contains these specific patterns or matches the rule. [Learn more](../../../../natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}.
-3. **Bot Synonyms** or related phrases for the user intent. [Learn more](../../../../natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
-4. **Manage Context** tags as preconditions to identify the intent and define the output context to be set when this task is initiated. [Learn more](../../../../intelligence/context-management){:target="_blank"}.
+1. **Machine Learning** settings to provide user utterances to improve the detection of this intent. [Learn more](../../../natural-language/training/machine-learning-engine.md){:target="_blank"}.
+2. **Patterns and Rules** to capture this intent if the user’s utterance contains these specific patterns or matches the rule. [Learn more](../../../natural-language/training/fundamental-meaning.md#manage-patterns-and-rules){:target="_blank"}.
+3. **Bot Synonyms** or related phrases for the user intent. [Learn more](../../../natural-language/training/fundamental-meaning.md#manage-synonyms){:target="_blank"}.
+4. **Manage Context** tags as preconditions to identify the intent and define the output context to be set when this task is initiated. [Learn more](../../../intelligence/context-management.md){:target="_blank"}.
 
 <img src="../images/add-intent-node-img4-nlp-properties1.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom:60%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/add-intent-node-img5-nlp-properties2.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom:60%;">
 
@@ -87,7 +87,7 @@ Click the **Connections** tab and set the transition properties to determine the
 
 Primary Intent nodes only allow you to select the next node to trigger.
 
-If the Intent node you are working with does not represent the primary intent within the dialog task (if it follows another node), you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. For details on how to work with connection conditions, please see [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions/)
+If the Intent node you are working with does not represent the primary intent within the dialog task (if it follows another node), you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. For details on how to work with connection conditions, please see [Adding IF-Else Conditions to Node Connections.](../node-connections/nodes-conditions.md)
 
 !!! Note
 

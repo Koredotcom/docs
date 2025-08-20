@@ -68,7 +68,7 @@ Steps to authorize a BambooHR action at a user level:
         * Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s BambooHR app for authorization.
     * Click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/bamboo-hr-img4.png" alt="Create New" title="Create New" style="border: 1px solid gray;zoom:50%;"/>
-    * Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [App Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.  
+    * Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.  
     <img src="../images/bamboo-hr-img5.png" alt="Auth mechanism type" title="Auth mechanism type" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Enter the following authentication credentials for the Basic Auth mechanism:

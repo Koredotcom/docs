@@ -4,20 +4,20 @@
 
     The Skype channel is now deprecated.
 
-To add the Skype channel to your bot, you need a developer _Microsoft Bot Framework_ account to configure the connection between Skype and Kore.ai. Adding the Skype channel to your Kore.ai bot is a three-step process to allow end-users to interact with your bot. To add the Skype channel to your bot, follow the below steps:
+To add the Skype channel to your AI Agent, you need a developer _Microsoft Bot Framework_ account to configure the connection between Skype and Kore.ai. Adding the Skype channel to your Kore.ai bot is a three-step process to allow end-users to interact with your AI Agent. To add the Skype channel to your AI Agent, follow the below steps:
 
 
 
-1. **Register the Bot** – In your _Microsoft Bot Framework_ developer account, you must register the bot by adding all the bot details and creating the **App ID** and **Password**. To register the bot, you must have created and registered for a free account in the [Microsoft Bot Framework](https://dev.botframework.com/) developer portal.
-2. **Enable Channel** – After registering the bot, you must enable the channel.
-3. **Publish Channel** – After the channel is enabled and all configurations are verified, you must publish the bot to make it available for developers.
+1. **Register the Bot** – In your _Microsoft Bot Framework_ developer account, you must register the  by adding all the app details and creating the **App ID** and **Password**. To register the bot, you must have created and registered for a free account in the [Microsoft Bot Framework](https://dev.botframework.com/) developer portal.
+2. **Enable Channel** – After registering the app, you must enable the channel.
+3. **Publish Channel** – After the channel is enabled and all configurations are verified, you must publish the app to make it available for developers.
 
 
 ## Add Skype Channel
 
 To complete this procedure, you must have or register for a new developer account in the [Microsoft Bot Framework](https://dev.botframework.com/) developer portal.
 
-1. In Bot Builder, under the **Bots** section, click the bot you want to add the Skype channel to.
+1. In App Builder, under the **Bots** section, click the app you want to add the Skype channel to.
 2. On the **Channels** tab, click the **Expand** icon for the **Skype** section. The **Skype Channel** page is displayed.
 ![Skype Channel](../images/Skype-Channel1.png "Skype Channel")
 
@@ -33,14 +33,14 @@ To complete this procedure, you must have or register for a new developer accoun
 
       !!! note
 
-        The only time the full password is displayed is when it is generated and displayed in the **Generate Password** dialog. Copy and save the password to a secure location until added to the **Skype Channel** page in Bot Builder.
+        The only time the full password is displayed is when it is generated and displayed in the **Generate Password** dialog. Copy and save the password to a secure location until added to the **Skype Channel** page in App Builder.
 
 9. Click **Finish and go back to Bot Framework**. The **Register a bot** tab is displayed.
 10. To save your settings, agree to **Privacy statement**, **Terms of Use,** and **Code of Conduct**.
 11. Click **Register**.
 12. On the **Bot created** dialog, click **OK**. The **My bots** tab is displayed.
 13. Optionally, click **Test** to check the connection to your bot. The _Endpoint authorization succeeded_ message is displayed.
-14. In Bot Builder, on the **Register the Bot** tab, paste the **App ID** and **Password** you saved from the _Microsoft Bot Framework_ developer portal into the **APP ID** and **APP PASSWORD** fields.
+14. In App Builder, on the **Register the Bot** tab, paste the **App ID** and **Password** you saved from the _Microsoft Bot Framework_ developer portal into the **APP ID** and **APP PASSWORD** fields.
 15. Click **Next** as shown in the following illustration.
 ![test connection](../images/Skype-Channel3.png "test connection")
 
@@ -61,9 +61,9 @@ To edit the Skype channel, follow the below steps:
 ![settings](../images/Skype-Channel4.png "settings")
 2. Select one of the following commands to modify the channel:
   * **Edit** – Click to open the **Skype Channel** page.
-  * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Skype channel for your bot.
+  * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Skype channel for your app.
   * **Enable** - When the channel is disabled, click **Enable** to enable use of the Skype channel.
-  * **Delete** – Click **Delete**. On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration.
+  * **Delete** – Click **Delete**. On the **Delete Confirmation** dialog box, click **OK** to permanently delete the app channel configuration.
 
 !!! warning
 

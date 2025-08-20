@@ -1,5 +1,5 @@
 # Advanced NLP Configurations
-You can fine-tune intent detection for each language enabled for your Virtual Assistant (VA). To perform this action, follow the steps below:
+You can fine-tune intent detection for each language enabled for your Assistant. To perform this action, follow the steps below:
 
 1. On the left pane, click **Natural Language** > **NLU Config**.
 2. In the **Engine Tuning** section, you can perform engine tuning by customizing
@@ -12,7 +12,7 @@ Apart from these, under the **Advanced NLP Configurations** section, there are a
 
 !!! Warning
 
-      The default settings for these configurations are ideal for most use cases. Do not change these settings unless you are fully acquainted with the functionality you are setting, as they might have a detrimental effect on the VA's performance if not done properly.
+      The default settings for these configurations are ideal for most use cases. Do not change these settings unless you are fully acquainted with the functionality you are setting, as they might have a detrimental effect on the app's performance if not done properly.
 
 <img src="../images/advanced-nlu-configurations.png" alt="thresholds advanced nlu" title="thresholds advanced nlu" style="border: 1px solid gray; zoom:75%;">
 
@@ -404,7 +404,7 @@ Disable.
    <tr bgcolor="#FAFAFA">
    <td><a href="#spell-correction-in-ml">Spell Correction in ML</a>
    </td>
-   <td>Enable to support spell correction on the ML bot dictionary while predicting.
+   <td>Enable to support spell correction on the ML dictionary while predicting.
    </td>
    <td>Custom (ML)
    </td>
@@ -417,7 +417,7 @@ Disable (default)
   </tr>
   <tr>
 <td><a href="#spell-correction-version">Spell Correction Version</a></td>
-<td>Use this configuration to select the version of Spell Correction for the VA.</td>
+<td>Use this configuration to select the version of Spell Correction for the app.</td>
 <td>NA</td>
 <td>Version 1,<br>
 Version 2</td>
@@ -425,7 +425,7 @@ Version 2</td>
 </tr>
 <tr>
 <td><a href="#spell-correction-status">Spell Correction Status</a></td>
-<td>Use this configuration to set the status of Spell Correction for the VA.</td>
+<td>Use this configuration to set the status of Spell Correction for the app.</td>
 <td>NA</td>
 <td>Enable,<br> Disable</td>
 <td>Applicable only for English language VAs. The spell-corrected input is used by all the engines for further processing</td>
@@ -676,11 +676,11 @@ This configuration is employed to specify how compound words should be handled. 
 
 The Machine Learning (ML) engine is responsible for analyzing and assessing user inputs to construct and refine a model. The ML model's primary goal is to categorize user inputs into predefined intents for which it has been trained. Nonetheless, when confronted with out-of-context utterances, the ML system may erroneously attempt to associate them with the incorrect intent.
 
-To address this issue, you can prevent misclassifications by activating the **None Intent** option in the **Natural Language** > **NLU Config** > **Engine Tuning** > **Machine Learning** section for various languages. The **None intent** serves as a temporary category that safeguards against the ML model assigning untrained or ambiguous utterances to inappropriate intents. This safeguard is enabled by default for newly created virtual assistants.
+To address this issue, you can prevent misclassifications by activating the **None Intent** option in the **Natural Language** > **NLU Config** > **Engine Tuning** > **Machine Learning** section for various languages. The **None intent** serves as a temporary category that safeguards against the ML model assigning untrained or ambiguous utterances to inappropriate intents. This safeguard is enabled by default for newly created app.
 
-For example, for an Airlines VA, an Intent “Book Flight Ticket” is mapped. If a customer requests to “Book a Movie Ticket” the ML tries to associate the closest intent “Book Flight Ticket” (wrong intent) as the successful intent and triggers it. This error can be eliminated by enabling the None intent.
+For example, for an Airlines app, an Intent “Book Flight Ticket” is mapped. If a customer requests to “Book a Movie Ticket” the ML tries to associate the closest intent “Book Flight Ticket” (wrong intent) as the successful intent and triggers it. This error can be eliminated by enabling the None intent.
 
-Adding an extra _None_ _Intent_ ensures classifying random input to these intents in the VA. Once enabled, the ML Model is tuned to identify these none intents when a user utterance contains the words that are not used in the VA’s training. i.e., bot vocabulary. You can define the None Intent for the Linked Bots in a Universal Bot. For more information, see [Creating a Universal Bot](/docs/xo/universal-bots/creating-a-universal-bot/){:target="_blank"} article.
+Adding an extra _None_ _Intent_ ensures classifying random input to these intents in the app. Once enabled, the ML Model is tuned to identify these none intents when a user utterance contains the words that are not used in the app’s training. i.e., vocabulary. You can define the None Intent for the Linked Apps.
 
 ### Externalization of the ML Engine
 
@@ -768,7 +768,7 @@ Disabling this configuration sends the original user input to ML for intent iden
 
 ### Multiple Intent Model
 
-Enabling this feature creates multiple ML intent models for your VA. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#the-multiple-intent-model){:target="_blank"}.
+Enabling this feature creates multiple ML intent models for your app. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#the-multiple-intent-model){:target="_blank"}.
 
 ### Lemmatization of KG Synonyms
 
@@ -786,11 +786,11 @@ In lemmatization, all the inflected forms of the word "*running*" are reduced to
 
 ### Use only Tagged Utterances for NER Training
 
-Enabling this flag allows only Tagged Utterances for NER Training and avoids training of utterances without NER tags. This is an accurate and time-saving approach. By default, this flag is enabled for all new VAs. If the flag is not set for a VA, then it is in the disabled state under the Advanced NLP Configurations.
+Enabling this flag allows only Tagged Utterances for NER Training and avoids training of utterances without NER tags. This is an accurate and time-saving approach. By default, this flag is enabled for all new VAs. If the flag is not set for a app, then it is in the disabled state under the Advanced NLP Configurations.
 
 ### Neurons in Hidden Layer
 
-Neurons in Hidden Layer determine the intensity/rigor to be adopted while performing intent identification by the ML Model. A higher number of neurons increases the accuracy but would require a longer duration for completing the training. A lower number of neurons decreases the accuracy but would speed up the training time. By default, it is fixed as 1000. Ideally, it should be 1x times the number of intents in a VA and can go up to 2x for better accuracy. This is a general recommendation and would vary depending on the quality of the training
+Neurons in Hidden Layer determine the intensity/rigor to be adopted while performing intent identification by the ML Model. A higher number of neurons increases the accuracy but would require a longer duration for completing the training. A lower number of neurons decreases the accuracy but would speed up the training time. By default, it is fixed as 1000. Ideally, it should be 1x times the number of intents in a app and can go up to 2x for better accuracy. This is a general recommendation and would vary depending on the quality of the training
 
 ### Softmax Temperature
 
@@ -798,7 +798,7 @@ Softmax temperature allows you to define how confidently the ML Engine should id
 
 ### Spell Correction in ML
 
-For VAs in the English language, spell correction does not happen on the ML bot dictionary. This might cause an issue for VAs that are heavily dependent on ML training. The issue can be rectified by enabling spell correction on the ML bot dictionary while predicting. This is achieved by adding custom config in NLP Advanced Settings.
+For app's in the English language, spell correction does not happen on the ML dictionary. This might cause an issue for VAs that are heavily dependent on ML training. The issue can be rectified by enabling spell correction on the ML dictionary while predicting. This is achieved by adding custom config in NLP Advanced Settings.
 
 This is a **Custom** configuration, to enable follow the steps below:
 
@@ -808,7 +808,7 @@ This is a **Custom** configuration, to enable follow the steps below:
 
 !!! Note
 
-      This configuration is not available in Spell Correction Version 2 is enabled for the VA.
+      This configuration is not available in Spell Correction Version 2 is enabled for the app.
 
 ## **Ranking and Resolver Engine Settings**
 
@@ -888,11 +888,11 @@ By default, all pattern matches are Definitive Matches. However, it might be hel
 
 ### Precedence for Intents with Ambiguous Entities
 
-The **Precedence for Intents with Ambiguous Entities** configuration setting allows bot designers to control an entity prompt at a general level whether the response processing at an entity should favor entities or intents when, and only when, the entity value is ambiguous.
+The **Precedence for Intents with Ambiguous Entities** configuration setting allows app designers to control an entity prompt at a general level whether the response processing at an entity should favor entities or intents when, and only when, the entity value is ambiguous.
 
-Bot designers can customize the flow on how the bot should respond when a user input results in an ambiguous entity with an intent by choosing the following options:
+Bot designers can customize the flow on how the app should respond when a user input results in an ambiguous entity with an intent by choosing the following options:
 
-* **Use Precedence** – Uses the **Instance Properties** setting specific to each entity, rather than global EoI/IoE settings. Applies to all Entity types except *String* and *Description* nodes. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#instance-properties){:target="_blank"}.
+* **Use Precedence** – Uses the **Instance Properties** setting specific to each entity, rather than global EoI/IoE settings. Applies to all Entity types except *String* and *Description* nodes. [Learn more](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#instance-properties){:target="_blank"}.
 * **Intent over Entity**–  Terminates the ongoing intent automatically by initiating a new dialog task. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system terminates the ongoing intent (_place order_) and initiates a new intent (_edit order_).
 
     <div class="admonition note">
@@ -902,7 +902,7 @@ Bot designers can customize the flow on how the bot should respond when a user i
 
 * **Entity over Intent**– Completes the ongoing dialog task normally once the user resolves the ambiguity in the intent. This option considers the customer input as an entity value, and allows the dialog task to progress to the next node. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system continues with the ongoing intent to place the order.
 
-    When the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between **Intent Over Entity** or **Entity Over Intent** options. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#the-user-input-flow){:target="_blank"}.
+    When the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between **Intent Over Entity** or **Entity Over Intent** options. [Learn more](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#the-user-input-flow){:target="_blank"}.
 
 ### Prefer Only the First Pattern Match in a Sentence
 
@@ -910,7 +910,7 @@ When multiple patterns are identified in a sentence, define whether the FM Engin
 
 ### Exact Task Name Match
 
-The [FM Engine configuration](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){:target="_blank"} Intent Detection using Task Name Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
+The [FM Engine configuration](../../../automation/natural-language/training/fundamental-meaning.md#thresholds-configurations){:target="_blank"} Intent Detection using Task Name Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
 
 When disabled, the platform generates a strict pattern that does ‘exact matching’ i.e. if the user input exactly matches with the task name then it will consider as a match. The Exact Task Name Match configuration allows you to choose whether the platform should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
 

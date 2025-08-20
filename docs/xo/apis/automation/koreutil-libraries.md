@@ -12,18 +12,18 @@ koreUtil libraries can be used anywhere in the AI agent where there is flexibili
 
 Below is the list of koreUtil libraries provided by the Platform:
 
-* [koreUtil.rrule](../koreutil-libraries#koreutilrrule)
-* [koreUtil.moment](../koreutil-libraries#koreutilmoment)
-* [koreUtil.intl](../koreutil-libraries#koreutilintl)
-* [koreUtil.momenttz](../koreutil-libraries#koreutilmomenttz)
-* [koreUtil.xml2js](../koreutil-libraries#koreutilxml2js)
-* [koreUtil.hash](../koreutil-libraries#koreutilhash)
-* [koreUtil._](../koreutil-libraries#koreutil_)
-* [koreUtil.getCurrentOptions](../koreutil-libraries#koreutilgetcurrentoptions)
-* [koreUtil.getAmbiguousIntents](../koreutil-libraries#koreutilgetambiguousintents)
-* [koreUtil.getSessionId](../koreutil-libraries#koreutilgetsessionid)
-* [koreUtil.closeConversationSession](../koreutil-libraries#koreutilclose)
-* [koreUtil.autoTranslate](../koreutil-libraries#koreautotranslate)
+* [koreUtil.rrule](#koreutilrrule)
+* [koreUtil.moment](#koreutilmoment)
+* [koreUtil.intl](#koreutilintl)
+* [koreUtil.momenttz](#koreutilmomenttz)
+* [koreUtil.xml2js](#koreutilxml2js)
+* [koreUtil.hash](#koreutilhash)
+* [koreUtil._](#koreutil_)
+* [koreUtil.getCurrentOptions](#koreutilgetcurrentoptions)
+* [koreUtil.getAmbiguousIntents](#koreutilgetambiguousintents)
+* [koreUtil.getSessionId](#koreutilgetsessionid)
+* [koreUtil.closeConversationSession](#koreutilcloseconversationsession)
+* [koreUtil.autoTranslate](#koreutilautotranslate)
 * [koreUtil.getFormDefinition](#koreutilgetformdefinition)
 
 
@@ -217,7 +217,7 @@ Following is the return format for each of the situations:
    }
    ```
 
-Following are the usage examples of how the above utility can be used to render the message in a button template, you can use any template as per your requirements.  [See here for more on message templates](../../../sdk/web-mobile-sdk-message-formatting-and-templates/).
+Following are the usage examples of how the above utility can be used to render the message in a button template, you can use any template as per your requirements.  [See here for more on message templates](../../sdk/web-mobile-sdk-message-formatting-and-templates.md).
 
 **Usage Example 1:** To get the standard response for “_Ask if the user would like to select any of the languages_”
 
@@ -315,7 +315,7 @@ print(JSON.stringify(message));`
 
 ### koreUtil.getAmbiguousIntents
 
-The `koreUtil.getAmbiguousIntents` util function is used to obtain the ambiguous intents list when the [Ambiguity Intents Identified](../../automation/intelligence/event-handling/#ambiguous-intents-identified-event) event gets triggered. Along with the list of ambiguous intents, the retrieved context object contains additional details such as ambiguity reasons – ‘multiple definite intents’, ‘multiple intents with similar scores’, etc., and the engine name that detects the intent (ML, FM, or KG), the score given by the respective engines, and so on. The [Ranking and Resolver](../../automation/natural-language/training/ranking-and-resolver) score is displayed wherever available.
+The `koreUtil.getAmbiguousIntents` util function is used to obtain the ambiguous intents list when the [Ambiguity Intents Identified](../../automation/intelligence/event-handling.md#ambiguous-intents-identified) event gets triggered. Along with the list of ambiguous intents, the retrieved context object contains additional details such as ambiguity reasons – ‘multiple definite intents’, ‘multiple intents with similar scores’, etc., and the engine name that detects the intent (ML, FM, or KG), the score given by the respective engines, and so on. The [Ranking and Resolver](../../automation/natural-language/training/ranking-and-resolver.md) score is displayed wherever available.
 
 **Usage Example**
 
@@ -378,7 +378,7 @@ You can use the `koreUtil.getAmbiguousIntents()` function in the entity prompt o
 
 In this response, we obtain the details of multiple ambiguous intents from different engines.
 
-The type of intent is captured in the `intentType`object. For example, `Status of Funds Transfer` is a Dialog-type intent, and `How to Send Money` is a FAQ-type intent. The identifying engine for that respective intent and the confidence scores assigned by the engines for the intents are captured. For example, for the intent `Transfer Money`, the `mlScore`is 100. The `rrScore`is the [Ranking and Resolver](../../automation/natural-language/training/ranking-and-resolver) score for the winning intent. The object `faqDemystification`provides the bot path for the FAQ. The user input and the cause for the ambiguous intents are also captured.
+The type of intent is captured in the `intentType`object. For example, `Status of Funds Transfer` is a Dialog-type intent, and `How to Send Money` is a FAQ-type intent. The identifying engine for that respective intent and the confidence scores assigned by the engines for the intents are captured. For example, for the intent `Transfer Money`, the `mlScore`is 100. The `rrScore`is the [Ranking and Resolver](../../automation/natural-language/training/ranking-and-resolver.md) score for the winning intent. The object `faqDemystification`provides the bot path for the FAQ. The user input and the cause for the ambiguous intents are also captured.
 
 
 ### koreUtil.getSessionId
@@ -397,7 +397,7 @@ For sessionId:
 
 ### koreUtil.getSunshineConversationsMetadata
 
-The XO Platform captures and stores the metadata sent as part of the Pass control action that routes the conversation to the bot via Switchboard integration API in Zendesk. Developers can use the `koreUtil.getSunshineConversationsMetadata()` function to access the stored metadata. For more information, read the [Switchboard Integration](../../channels/add-sunshine-conversations-channel/#switchboard-integration-for-agent-handoff) section.
+The XO Platform captures and stores the metadata sent as part of the Pass control action that routes the conversation to the bot via Switchboard integration API in Zendesk. Developers can use the `koreUtil.getSunshineConversationsMetadata()` function to access the stored metadata. For more information, read the [Switchboard Integration](../../channels/add-sunshine-conversations-channel.md#switchboard-integration-for-agent-handoff) section.
 
 The **koreUtil.getSunshineConversationsMetadata** function can be used by a bot developer to access the metadata captured in any node.
 
@@ -471,7 +471,7 @@ No response is returned and the session ends.
 
 ### koreUtil.autoTranslate
 
-koreUtil.autotranslate is a platform function that lets you automatically translate the AI Agent's response from a language in which it is configured to the language in which the user is interacting or a language of your choice. This function uses a translation engine to translate the bot responses into user input language. For more information on how to configure a translation engine, [refer here](../../app-settings/language-management/managing-translation-services).
+koreUtil.autotranslate is a platform function that lets you automatically translate the AI Agent's response from a language in which it is configured to the language in which the user is interacting or a language of your choice. This function uses a translation engine to translate the bot responses into user input language. For more information on how to configure a translation engine, [refer here](..//../app-settings/language-management/managing-translation-services.md).
 
 !!! note
     
@@ -590,4 +590,4 @@ let formDef = koreUtil.getFormDefinition();
 
 **Related Link**
 
-* **[Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node)** (Write JavaScript code in a dialog task)
+[Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) (Write JavaScript code in a dialog task)

@@ -2,12 +2,10 @@
 
 Steps to access Prompts:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your Agent Platform account.
-2. On the top navigation bar, click **Prompts**.
-
-    <img src="../images/new_prompt.png" alt="Prompts landing page" title="Prompts landing page" style="border: 1px solid gray; zoom:80%;">
+1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account and click **Prompt Studio** under **Agent Platform Modules**.
+   <img src="../images/prompt_studio.png" alt="access prompt studio" title="access prompt studio" style="border: 1px solid gray; zoom:75%;">
  
-3. On the **Prompts** dashboard, you can see the following tabs:
+2. On the **Prompts** dashboard, you can see the following tabs:
     * **All prompts**: Displays all available prompts.
     * **My prompts**: Displays only the prompts that you have created or saved.
     * **Shared prompts**: Displays prompts that others have shared with you for use or collaboration. 
@@ -16,12 +14,12 @@ Steps to access Prompts:
 
     Each tab displays the title or name of each prompt, the exact text of the prompt, and the name of the individual who created the prompt.
 
-4. To create a new prompt, click **New prompt**.
-5. On the **New prompt** dialog, enter a name for your prompt, and click **Proceed**. The Prompt landing page is displayed.
+3. To create a new prompt, click **New prompt**.
+4. On the **New prompt** dialog, enter a name for your prompt, and click **Proceed**. The Prompt landing page is displayed.
 
     <img src="../images/prompt_entertext.png" alt="New prompt dialog" title="New Prompt dialog" style="border: 1px solid gray; zoom:80%;">
 
-6. On the Prompts landing page, choose one of the three options to start your prompt creation journey:
+5. On the Prompts landing page, choose one of the three options to start your prompt creation journey:
     * **Generate a prompt**
     * **Start from scratch**
     * **Prompt library**  

@@ -11,7 +11,7 @@ Steps to create a dialog task using ServiceNow action templates:
 3. On the Dialog Task pop-up, under the **Integration**, select the **ServiceNow** option to view the action templates.  
 <img src="../images/servicenow-tem-img2.png" alt="Integration - Servicenow" title="Integration - Servicenow" style="border: 1px solid gray;zoom:50%;"/>
 
-If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/servicenow-tem-img3.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -117,7 +117,7 @@ The following ServiceNow actions are supported in this release:
 
 Steps to create a new incident in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Create a Incident_ dialog task is added with the following components:  
 <img src="../images/servicenow-tem-img4.png" alt="Create an Incident dialog task" title="Create an Incident dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -266,7 +266,7 @@ Steps to create a new incident in ServiceNow:
 
 Steps to update an existing incident in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Update an Incident_ dialog task is added with the following components:  
 <img src="../images/servicenow-tem-img10.png" alt="Update an Incident dialog task added" title="Update an Incident dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -294,7 +294,7 @@ Steps to update an existing incident in ServiceNow:
 
 Steps to view all Incidents in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _List All Incidents_ dialog task is added for the ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img15.png" alt="List All Incidents dialog task added" title="List All Incidents dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -426,7 +426,7 @@ Steps to view all Incidents in ServiceNow:
 
 Steps to search an incident in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Find an Incident_ dialog task is added for ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img18.png" alt="Find an Incident dialog task added" title="Find an Incident dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -564,7 +564,7 @@ Steps to search an incident in ServiceNow:
 
 Steps to delete an incident in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Delete an Incident_ dialog task is added for ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img21.png" alt="Delete an Incident dialog task added" title="Delete an Incident dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -587,7 +587,7 @@ Steps to delete an incident in ServiceNow:
 
 Steps to create a request in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Create Request_ dialog task is added for the ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img23.png" alt="Create Request dialog task added" title="Create Request dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -720,7 +720,7 @@ Steps to create a request in ServiceNow:
 
 Steps to update an existing request in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Update a Request_ dialog task is added with the following components:  
 <img src="../images/servicenow-tem-img27.png" alt="Update a Request dialog task added" title="Update a Request dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -739,7 +739,7 @@ Steps to update an existing request in ServiceNow:
 
 Steps to view all requests in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _List All Requests_ dialog task is added for the ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img29.png" alt="List All Requests dialog task added" title="List All Requests dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -851,7 +851,7 @@ Steps to view all requests in ServiceNow:
 
 Steps to search a request in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Find a Request_ dialog task is added for ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img31.png" alt="Find a Request dialog task added" title="Find a Request dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -967,7 +967,7 @@ Steps to search a request in ServiceNow:
 
 Steps to delete a request in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Delete a Request_ dialog task is added for ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img33.png" alt="Delete a Request dialog task added" title="Delete a Request dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 

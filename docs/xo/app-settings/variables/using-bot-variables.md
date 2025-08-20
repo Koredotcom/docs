@@ -14,7 +14,7 @@ Environment Variables are global, reusable components which can be used in multi
 * Authorization Token
 * Channel-related tokens and URLs
 
-Post the release of v8.1 of the platform, for <span style="text-decoration:underline;">on-prem installations</span>, multiple value sets can be stored for these environment variables using Collections, [refer here for more](../collections){:target="_blank"}.
+Post the release of v8.1 of the platform, for <span style="text-decoration:underline;">on-prem installations</span>, multiple value sets can be stored for these environment variables using Collections, [refer here for more](collections.md){:target="_blank"}.
 
 !!! Note
 
@@ -22,7 +22,7 @@ Post the release of v8.1 of the platform, for <span style="text-decoration:under
 
 ### Restricting Sensitive Data with Environment Variables
 
-During the virtual assistant definition, developers may create **environment variables** for sensitive data like credentials/keys. These variables are useful for connecting to other systems using service nodes or as a part of authorization profiles. However, environment variables are visible to all the developers with shared access to the virtual assistant, especially when its definition is exported.
+During the AI Agent definition, developers may create **environment variables** for sensitive data like credentials/keys. These variables are useful for connecting to other systems using service nodes or as a part of authorization profiles. However, environment variables are visible to all the developers with shared access to the AI Agent, especially when its definition is exported.
 
 The latest Kore.ai XO Platform release introduces the **Secure Variable** feature for environment variables, which encrypts the added variable when enabled. This makes only the encrypted variable value visible to others and not the original value.
 
@@ -30,7 +30,7 @@ The latest Kore.ai XO Platform release introduces the **Secure Variable** featur
 
 
 * The **secure variable** is encrypted in the database and does not require any encryption key.
-* The original value is used only internally for all service calls, language translation, etc. while executing the virtual assistant definition.
+* The original value is used only internally for all service calls, language translation, etc. while executing the AI Agent definition.
 * During the export of a secure variable through **App** or **environment variables** import, it has an empty value, so the original value is not available in plain text.
 
 **Leveraging Encrypted Environment Variable Values for Additional Modules**
@@ -49,12 +49,12 @@ You can use the encrypted environment variable values in the following modules i
 
     * **Authorization Profiles** – You can use encrypted/regular environment variables on the following fields while defining a new authorization mechanism for all types of authorizations:
 
-        * **Authorization Check URL**, **Field Key** for form field, and **Field Key** and **Field Value Authorization Fields** for Authorization Type _Basic Auth_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-basic-auth){:target="_blank"}.
-        * **Client Id**, **Client Secret Key**, and **Authorization URL** for Authorization Type _Oauth V2_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"}.
+        * **Authorization Check URL**, **Field Key** for form field, and **Field Key** and **Field Value Authorization Fields** for Authorization Type _Basic Auth_. [Learn more](../dev-tools/bot-authorization/setting-up-authorization-using-basic-auth.md){:target="_blank"}.
+        * **Client Id**, **Client Secret Key**, and **Authorization URL** for Authorization Type _Oauth V2_. [Learn more](../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2.md){:target="_blank"}.
         * **Client Id**, **Client Secret Key**, **Token Request URL**, **Scope**, and **Refresh Token URL** for Authorization Type _Oauth V2 Client Credentials_.
-        * **Consumer Key**, **Consumer Secret**, **Request Token Link**, **Access Token Link**, and **User Authorization Link** for Authorization Type _Oauth V1_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v1/){:target="_blank"}.
-        * **Authorization Check URL** and **Field Key** (for Form Field) for Authorization Type _API Key_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-an-api-key/){:target="_blank"}.
-        * **Field Key** for Form Field, **Token URL**, **Field Key**, and **Field Value** for Authorization Field, and **Refresh Token URL** for Authorization Type _Oauth V2 Password Grant Type_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2-password-grant/){:target="_blank"}.
+        * **Consumer Key**, **Consumer Secret**, **Request Token Link**, **Access Token Link**, and **User Authorization Link** for Authorization Type _Oauth V1_. [Learn more](../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v1.md){:target="_blank"}.
+        * **Authorization Check URL** and **Field Key** (for Form Field) for Authorization Type _API Key_. [Learn more](../dev-tools/bot-authorization/setting-up-authorization-using-an-api-key.md){:target="_blank"}.
+        * **Field Key** for Form Field, **Token URL**, **Field Key**, and **Field Value** for Authorization Field, and **Refresh Token URL** for Authorization Type _Oauth V2 Password Grant Type_. [Learn more](../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2-password-grant.md){:target="_blank"}.
 
 The availability of the environment variables has been extended to the **Field Key** and **Field Value** parameters.  
 <img src="../images/env-and-content-variables-img3.png" alt="Field Key and Field Value" title="Field Key and Field Value" style="border: 1px solid gray;zoom:50%;"/>

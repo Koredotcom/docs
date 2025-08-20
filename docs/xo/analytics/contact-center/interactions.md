@@ -327,7 +327,7 @@ The transcripts tab also shows the call transfer stages:
 **Channel User ID**: The user ID of the conversation channel.  
 **User ID**: Agent’s user ID.  
 **User-level tags**: User-level tags assigned to the conversation.  
-<img src="../images/user-insights-to-logs.png alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/user-insights-to-logs.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
 
 **IDENTIFIERS**: This tab shows the following details:
 

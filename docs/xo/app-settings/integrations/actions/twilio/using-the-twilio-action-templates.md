@@ -13,7 +13,7 @@ Steps to create a dialog task using the Twilio Verify action templates:
 3. On the Dialog Task pop-up, under the Integration, select the Twilio Verify option to view the action templates.  
 <img src="../images/twilio-tem-img2.png" alt="Integration - Twilio Verify" title="Integration - Twilio Verify" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/twilio-tem-img3.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -63,7 +63,7 @@ The following Twilio Verify actions are supported in this release:
 
 Steps to send an sms to a phone number using the Twilio Verify integration:
 
-1. Refer to the [Installing the Twilio Verify Templates](../configuring-the-twilio-action/#step-2-install-the-twilio-verify-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Twilio Verify Templates](configuring-the-twilio-action.md#step-2-install-the-twilio-verify-action-templates){:target="_blank"} section to install this template.
 2. The _Send SMS_ dialog task is added with the following components:  
 <img src="../images/twilio-tem-img4.png" alt="Send SMS dialog task is added" title="Send SMS dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -136,7 +136,7 @@ Steps to start verification of a phone service using Twilio Verify integration:
 
 
 
-1. Refer to the [Installing the Twilio Verify Templates](../configuring-the-twilio-action/#step-2-install-the-twilio-verify-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Twilio Verify Templates](configuring-the-twilio-action.md#step-2-install-the-twilio-verify-action-templates){:target="_blank"} section to install this template.
 2. The _Start Verification_ dialog task is added with the following components:  
 <img src="../images/twilio-tem-img8.png" alt="Start Verification dialog task is added" title="Start Verification dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -202,7 +202,7 @@ Steps to start verification of a phone service using Twilio Verify integration:
 
 Steps to check the verification of a phone service using Twilio Verify integration:
 
-1. Refer to the [Installing the Twilio Verify Templates](../configuring-the-twilio-action/#step-2-install-the-twilio-verify-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Twilio Verify Templates](configuring-the-twilio-action.md#step-2-install-the-twilio-verify-action-templates){:target="_blank"} section to install this template.
 2. The _Verification Check_ dialog task is added with the following components:  
 <img src="../images/twilio-tem-img12.png" alt="Verification Check dialog task is added" title="Verification Check dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
