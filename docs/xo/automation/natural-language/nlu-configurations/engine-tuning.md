@@ -1,5 +1,5 @@
 # Advanced NLP Configurations
-You can fine-tune intent detection for each language enabled for your Virtual Assistant. To perform this action, follow the steps below:
+You can fine-tune intent detection for each language enabled for your Assistant. To perform this action, follow the steps below:
 
 1. On the left pane, click **Natural Language** > **NLU Config**.
 2. In the **Engine Tuning** section, you can perform engine tuning by customizing
