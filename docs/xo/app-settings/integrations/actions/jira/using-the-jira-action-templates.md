@@ -11,7 +11,7 @@ Step to create a dialog task using the JIRA action templates:
 3. On the Dialog Task pop-up, under the Integration, select the Jira option to view the action templates.  
 <img src="../images/jira-action-img14-tem-img2.png" alt="Integration - JIRA" title="Integration - JIRA" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/jira-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -77,7 +77,7 @@ The following Freshdesk actions are supported in this release:
 
 Steps to create an issue in the JIRA integration:
 
-1. Refer to the [Installing the JIRA templates ](../configuring-the-jira-action/#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the JIRA templates ](configuring-the-jira-action.md#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
 2. The _Create an issue_ dialog task is added with the following components:  
 <img src="../images/jira-tem-img4.png" alt="Create an issue dialog task is added" title="Create an issue dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -135,7 +135,7 @@ Steps to create an issue in the JIRA integration:
 
 Steps to find an issue using the key in the JIRA integration:
 
-1. Refer to the [Installing the JIRA templates ](../configuring-the-jira-action/#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the JIRA templates ](configuring-the-jira-action.md#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
 2. The _Get Issues by Key_ dialog task is added with the following components:  
 <img src="../images/jira-tem-img7.png" alt="Get Issues by Key dialog task is added" title="Get Issues by Key dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -238,7 +238,7 @@ Steps to find an issue using the key in the JIRA integration:
 
 Steps to view all issues in the JIRA integration:
 
-1. Refer to the [Installing the JIRA templates ](../configuring-the-jira-action/#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the JIRA templates ](configuring-the-jira-action.md#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
 2. The **Get All Issues** dialog task is added with the following components:  
 <img src="../images/jira-tem-img10.png" alt="Get All Issuesdialog task is added" title="Get All Issuesdialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -511,7 +511,7 @@ Steps to view all issues in the JIRA integration:
 
 Steps to update an issue in the JIRA integration:
 
-1. Refer to the [Installing the JIRA templates ](../configuring-the-jira-action/#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the JIRA templates ](configuring-the-jira-action.md#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
 2. The **Update an Issue** dialog task is added with the following components:  
 <img src="../images/jira-tem-img13.png" alt="Update an Issue dialog task is added" title="Update an Issue dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -559,7 +559,7 @@ Steps to update an issue in the JIRA integration:
 
 Steps to delete an issue in the JIRA integration:
 
-1. Refer to the [Installing the JIRA templates ](../configuring-the-jira-action/#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the JIRA templates ](configuring-the-jira-action.md#step-2-install-the-jira-action-templates){:target="_blank"}section to install this template.
 2. The _Delete an Issue_ dialog task is added with the following components:  
 <img src="../images/jira-tem-img17.png" alt="Delete an Issue dialog task is added" title="Delete an Issue dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
