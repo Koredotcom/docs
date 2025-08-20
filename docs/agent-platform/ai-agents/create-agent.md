@@ -58,7 +58,7 @@ Agent profile consists of the following fields:
 
 ---
 
-**AI Model**: Select the AI model that the agent will use to perform its tasks. The model helps an Agent in the following:
+**AI Model**: Select the AI model and connection that the agent will use to perform its tasks. The model helps an Agent in the following:
 
 * Understanding and Processing User Input into structured data
 * Selecting the most appropriate action for the task
