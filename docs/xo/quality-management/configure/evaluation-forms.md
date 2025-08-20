@@ -94,9 +94,13 @@ Steps to configure general settings:
 
     * **Channel-Specific Display**:
 
-        * **Chat**: Displays only chat-relevant metrics, excluding speech and voice-specific Playbook metrics.
+        * **Chat**: Displays only **Chat-relevant** metrics. Excludes speech-based and Voice-specific Playbook metrics.
 
-        * **Voice**: Includes all applicable Voice metrics.
+        * **Voice**: Displays all applicable **Voice-related** metrics, including speech and Playbook metrics.
+
+        * **CCAI Integration**: Configures **Quality AI** to ingest conversation data from CCAI.
+
+        * **Agent AI Integration**: Enables **Quality AI** to process interactions received from Agent AI.
 
 5. Set the minimum **Pass Score** percentage for the agent.    
    <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Page2" title="General Settings Page2" style="border: 1px solid gray; zoom:50%;">
@@ -113,10 +117,20 @@ This section lets you add and create evaluation metrics for each attribute confi
 1. Using the **Search option**, select the required evaluation metrics from the available options.   
    <img src="../evaluation-criteria/evaluation-forms/images/forms-search-metrics.png" alt="Search Metrics" title="Search Metrics" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Add Evaluation Metrics** to add the selected metrics. 
+2. Choose the **Evaluation Metrics** to assign to the corresponding queues and sources:
+
+* For **CCAI** and **Agent AI** queues, all metrics are available. 
+
+* For **Quality AI Express** queues (alone or in combination with **CCAI** or **Agent AI**), only **By Question** and **By Speech** metrics are allowed. 
 
 3. Click **Edit** to assign weightage to each agent attribute based on importance.    
 <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-edit.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:80%;">
+
+**Metric Type Validations by Conversation Source**
+
+* Allows evaluation form configurations to include queue assignments and validate metric types based on the selected conversation source.
+
+* Enables reordering of metrics after addition to control their display sequence in the **AI-Assisted Manual Audit** screen.
 
     !!! note
 
@@ -260,25 +274,21 @@ The system calculates conversation scores using weighted metrics. If a score goe
 
 Fatal Error configuration identifies metrics that are crucial to compliance or functional requirements. When enabled, these metrics can override the entire conversation score regardless of other metric performance.
 
-#### Fatal Error Conditions 
+#### Fatal Error Criteria 
 
-Under the following circumstances, a fatal error is triggered:
+* A conversation is marked as a fatal error under any of the following conditions:
 
 * The agent fails to follow the configured process throughout the conversation.
 
-* The agent behaves rudely during the entire interaction.
+* The agent behaves rudely or unprofessionally during the entire interaction.
 
-* The agent skips any safety-critical or any mandatory steps. 
+* The agent skips any safety-critical or mandatory steps.
 
-#### Fatal Error Triggers
+* The agent fails to meet a metric designated as a fatal error.
 
-* Agent fails to meet a metric marked as fatal error.
+Example: Did the agent provide the mandatory disclaimer in the conversation?
 
-* Entire conversation score becomes zero (even if all other metrics pass successfully).
-
-* Other metric performance becomes irrelevant.
-
-**Example**: Did the agent provide the mandatory disclaimer in the conversation?, which is set as fatal, and the agent answers **No** (fails) on that metric, the fatal error is triggered.
+When a required disclaimer is not provided, the chosen metric is marked as a fatal error condition **No**, and the system automatically flags the entire conversation as a fatal error. Where the conversation score becomes zero, even if all other evaluation metrics are passed.
 
 **Use Cases**: Compliance requirements, disclaimer delivery, critical functional requirements.
 
@@ -371,7 +381,7 @@ To resolve this, do the following:
 
 #### Speech Metric Addition Limitation
 
-Evaluation forms support only one speech metric per subtype; **Crosstalk**, **Dead Air**, **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message. 
+Evaluation forms support only one speech metric per subtype: **Crosstalk**, **Dead Air**, and **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message. 
 
 !!! note
 
