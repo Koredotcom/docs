@@ -1,6 +1,6 @@
 # Test Case Execution Summary
 
-The Test Case Execution Summary allows you to view the test case results, identify the failed test cases, and resolve the flow of the virtual assistant. It gives complete details of the overall test results and the defects found.
+The Test Case Execution Summary allows you to view the test case results, identify the failed test cases, and resolve the flow of the app. It gives complete details of the overall test results and the defects found.
 
 The following sections explain the options available on the Conversation Testing to execute the test cases and interpret the results, which help analyze the performance of the test suite as a whole and the individual test cases.
 
@@ -18,29 +18,29 @@ Follow these steps for test execution:
     <img src="../images/tces-img2.png" alt="Run test" title="Run test" style="border: 1px solid gray;zoom:50%;"/>  
 
 
-2. Choose the Version of the VA you want to test.  
+2. Choose the Version of the app you want to test.  
   
-    **Note:** Ensure that you have valid authorization tokens for the VA to make the service calls that would be part of the test suite.  
+    **Note:** Ensure that you have valid authorization tokens for the app to make the service calls that would be part of the test suite.  
     
-    <img src="../images/tces-img3.png" alt="Choose VA Version" title="Choose VA Version" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/tces-img3.png" alt="Choose Version" title="Choose Version" style="border: 1px solid gray;zoom:50%;"/>
 
 3. You can monitor the progress of the test suite in the **Result** column and the status docker. The Result column displays the **Passed** or **Failed** status upon successful execution.  
 <img src="../images/tces-img4.png" alt="Result" title="Result" style="border: 1px solid gray;zoom:50%;"/>
 
-When a test case is executed, the test case result is determined with the features like assertions, dynamic texts, OneOf, and so on. To know more, see [Test Case Assertion](../test-case-assertion){:target="_blank"}.
+When a test case is executed, the test case result is determined with the features like assertions, dynamic texts, OneOf, and so on. To know more, see [Test Case Assertion](test-case-assertion.md){:target="_blank"}.
 
-The platform simulates all the user inputs against the current VA definition in sequence, as available in the test case. For every user input, the VA’s responses are captured along with the metadata. See Capture Test Suite Metadata under [Validate Test Suite](../create-a-test-suite/#validate-test-suite){:target="_blank"} to know more.
+The platform simulates all the user inputs against the current app definition in sequence, as available in the test case. For every user input, the app’s responses are captured along with the metadata. See Capture Test Suite Metadata under [Validate Test Suite](create-a-test-suite.md#validate-test-suite){:target="_blank"} to know more.
 
 
 ### Test Assertions Execution
 
-The platform performs the assertions tagged to each VA response of a test case. For example, a VA’s response can have Flow, Text, and Context Assertions tagged. The platform performs all three assertions to determine their assertion results.  
+The platform performs the assertions tagged to each app response of a test case. For example, a app’s response can have Flow, Text, and Context Assertions tagged. The platform performs all three assertions to determine their assertion results.  
 <img src="../images/tces-img5.png" alt="Test Assertion" title="Test Assertion" style="border: 1px solid gray;zoom:50%;"/>
 
 
 #### Flow Assertion
 
-* For any VA response in a test case, the assertion is determined as pass when the following conditions are true:
+* For any app response in a test case, the assertion is determined as pass when the following conditions are true:
 
     * The Intent ID of the Expected and Actual responses is the same.
     * The Node ID of the Expected and Actual responses is the same.
@@ -52,7 +52,7 @@ The platform performs the assertions tagged to each VA response of a test case. 
 
 #### Text Assertion
 
-* For any VA response in a test case, the assertion is determined as passed when the following condition is true:
+* For any app response in a test case, the assertion is determined as passed when the following condition is true:
 
     * The expected and actual responses are the same (string comparison).
 
@@ -62,16 +62,16 @@ The platform performs the assertions tagged to each VA response of a test case. 
 
 #### Context Assertion
 
-* For any VA response in a test case, the context assertion is determined as passed when the following conditions are true:
+* For any app response in a test case, the context assertion is determined as passed when the following conditions are true:
 
     * The expected and actual values are the same for the added context variable.
-    * A VA response has multiple context assertions and multiple context assertion results.
+    * A app response has multiple context assertions and multiple context assertion results.
 
 * A context assertion fails if the expected value and the actual value of the variable are not the same.
 
 !!! note
 
-    The test case result is determined as Pass only when all the assertions of all the VA responses of the test case are passed.
+    The test case result is determined as Pass only when all the assertions of all the app responses of the test case are passed.
 
 
 ## Past Test Executions

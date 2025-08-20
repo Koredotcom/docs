@@ -40,39 +40,33 @@ Search AI enables easy integration with Helpscout and ingests **Article**-relate
 </table>
 
 
-
 ## Prerequisites
 
 Search AI interacts with the HelpScout application using its APIs. To fetch the articles content and metadata, Search AI uses the [Docs APis](https://developer.helpscout.com/docs-api/) exposed by the HelpScout. And to fetch the access-related information and find user details, it uses the [Inbox APIs](https://developer.helpscout.com/mailbox-api/). 
 
-For accessing the Docs APIs, Search AI requires an API Key. and to access the Inbox APIs, it uses OAuth 2.0 authentication. Hence, to enable this communication, you require
-
-
+To access the Docs APIs, Search AI uses an API key. To access the Inbox APIs, it uses OAuth 2.0 authentication.
+To enable communication with both APIs, you need the following:
 
 * API Key
 * OAuth Client credentials. 
 
 
-## Generate API Key
+## Generate an API Key
 
-To generate, view, or regenerate your API key, follow these steps:
+To generate, view, or regenerate your API key:
 
-
-
-* Click the "person" icon next to the search bar at the top right of your account.
-* Select "Your Profile." 
-* In the menu on the left, click on the "Authentication" link and then choose the "API Keys" tab.
+1. Click the **person icon** next to the search bar in the top-right of your account.
+1. Select **Your Profile**. 
+1. In the menu on the left, click the **Authentication** link and then select the **API Keys** tab.
 
 Note: You need “Docs: Create new, edit settings & Collections" permission to generate an API Key. 
 
 
 ## Create OAuth Client Credentials
 
-To create a new client app, 
+To create a new client app:
 
-
-
-* Go to your Profile > My Apps and click Create My App. 
+* Go to your Profile > My Apps and click **Create My App**. 
 * Provide one of the following as the Redirection URL, depending on your region or deployment. 
     * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
     * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
@@ -83,8 +77,6 @@ To create a new client app,
 ## HelpScout Connector Configuration in Search AI
 
 Go to the Connectors home page in Search AI. Select HelpScout Connector. Provide the following details in the Authorization tab and click Connect to set up the connection. 
-
-
 
 * Name: Unique name for the connector. 
 * API Key: API Key generated above.
