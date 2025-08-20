@@ -98,14 +98,48 @@ Steps to configure general settings:
 
         * **Voice**: Displays all applicable **Voice-related** metrics, including speech and Playbook metrics.
 
+5. Set the minimum **Pass Score** percentage for the agent.    
+   <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Page2" title="General Settings Page2" style="border: 1px solid gray; zoom:50%;">
+
+ 6. Click **Next** to move to the **Assignments** section.
+
+ ### Assignments 
+
+This section enables you to create and evaluate the assignments made.   
+<img src="../evaluation-criteria/evaluation-forms/images/assignments-create.png" alt="Assignments Configuration" title="Assignments Configuration" style="border: 1px solid gray; zoom:50%;">
+
+Steps to configure assignments:
+
+1. Search for available queue options.
+
+2. Click **Add Queues** to assign the assignment to queues.
+
+3. You can add or remove the listed queue assignments if required.
+
+    * **Queue-Specific Metrics Display with Conversation Source**:
+
         * **CCAI Integration**: Configures **Quality AI** to ingest conversation data from CCAI.
 
         * **Agent AI Integration**: Enables **Quality AI** to process interactions received from Agent AI.
 
-5. Set the minimum **Pass Score** percentage for the agent.    
-   <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Page2" title="General Settings Page2" style="border: 1px solid gray; zoom:50%;">
+    !!! note
 
- 6. Click **Next** to move to the **Evaluation Metrics** section.
+        * Each queue can have only one form associated with a single channel. 
+        
+        * The search list displays accessible queues for assignment. 
+   <img src="../evaluation-criteria/evaluation-forms/images/config-queues.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:60%;">
+
+4. Click **Create** to finalize the form creation. 
+
+   **Form Assignments Rules**
+   
+   * Each queue can have only one Evaluation Form per channel (Voice or Chat).
+
+   * The system automatically scores interactions when agents handle customer conversations.
+
+   * Calculates scores based on metric outcomes and configured weights.
+
+   * You must enable the form to start scoring.
     
 ### Evaluation Metrics 
 
@@ -114,7 +148,7 @@ This section lets you add and create evaluation metrics for each attribute confi
 
  Steps to configure evaluation metrics:
 
-1. Using the **Search option**, select the required evaluation metrics from the available options.   
+1. Using the **Search** option, select the required evaluation metrics from the available options.   
    <img src="../evaluation-criteria/evaluation-forms/images/forms-search-metrics.png" alt="Search Metrics" title="Search Metrics" style="border: 1px solid gray; zoom:80%;">
 
 2. Choose the **Evaluation Metrics** to assign to the corresponding queues and sources:
@@ -138,11 +172,11 @@ This section lets you add and create evaluation metrics for each attribute confi
 
 4. Choose the **Correct Response** to identify the correct answer for validation. 
 
-   * Enables validation of assigned weightage based on the expected response:
+   * Enable validation of assigned weightage based on the expected response:
 
-      * If **Yes** is the correct response; only positive weight allowed.
+      * If **Yes** is the correct response; only positive weight is allowed.
       
-      * If **No** is correct; only zero or negative weight allowed.    
+      * If **No** is the correct response; only zero or negative weight is allowed.    
       <img src="../evaluation-criteria/evaluation-forms/images/outcome-weightage-response.png" alt="Correct Response" title="Correct Response" style="border: 1px solid gray; zoom:80%;">
 
 5. Assign the **Weightage** percentage based on the correct response validation.
@@ -157,44 +191,12 @@ This section lets you add and create evaluation metrics for each attribute confi
 
         * **Yes**: When the agent’s response (such as greeting a customer) matches the correct response, the system assigns positive weightage to that metric. 
 
-        * **No**: When the agent’s response (such as, rude response) does not match the correct response, the system assigns zero or negative weightage accordingly.	
+        * **No**: When the agent’s response (such as a rude response) does not match the correct response, the system assigns zero or negative weightage accordingly.	
 
-7. Toggle the **Fatal Error** if the metric is fatal and considered as a critical failure in the response.    
+7. Toggle the **Fatal Error** if the metric is fatal and considered a critical failure in the response.    
    <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-fatal-error.png" alt="Fatal Error" title="Fatal Error" style="border: 1px solid gray; zoom:80%;">
        
-8. Click **Next** to move to the **Assignments** section. 
-
-### Assignments 
-
-This section enables you to create and evaluate the assignments made.   
-<img src="../evaluation-criteria/evaluation-forms/images/assignments-create.png" alt="Assignments Configuration" title="Assignments Configuration" style="border: 1px solid gray; zoom:50%;">
-
-Steps to configure assignments:
-
-1. Search for available queue options.
-
-2. Click **Add Queues** to assign the assignment to queues.
-
-3. You can add or remove the listed queue assignments if required.
-
-    !!! note
-
-        * Each queue can have only one form associated with a single channel. 
-        
-        * The search list displays accessible queues for assignment. 
-   <img src="../evaluation-criteria/evaluation-forms/images/queues-create.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:60%;">
-
-4. Click **Create** to finalize form creation. 
-
-   **Form Assignments Rules**
-   
-   * Each queue can have only one Evaluation Form per channel (Voice or Chat).
-
-   * The system automatically scores interactions when agents handle customer conversations.
-
-   * Calculates scores based on metric outcomes and configured weights.
-
-   * You must enable the form to start scoring.
+8. Click **Create** to finalize the form creation. 
 
 ## Advanced Configuration
 
