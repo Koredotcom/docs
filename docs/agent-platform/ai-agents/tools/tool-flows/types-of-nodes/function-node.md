@@ -1,6 +1,6 @@
 # Function Node - Empower Workflows with Custom Code
 
-The **Function** node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
+The Function node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
 
 ## Key Capabilities
 
@@ -17,7 +17,15 @@ The **Function** node is a powerful component that enables you to extend your au
 * **Text Processing**: Perform string manipulation, regex operations, or natural language processing.
 * **Mathematical Operations**: Execute complex calculations or statistical analysis on your data.
 
+
+## How It Works
+
+The Function Node integrates seamlessly into your tool flows, accepting inputs from previous nodes and passing processed outputs to subsequent nodes. You can either write code directly in the built-in editor or reference custom functions from deployed scripts. The node supports both static and dynamic inputs through context variables, making it adaptable to various automation scenarios.
+
+<img src="./../images/function_node_new.png" alt="Function Node" title="Function Node" style="border: 1px solid gray; zoom:40%;">
+
 In this document, you will learn how to add Function nodes to your flows, configure them with custom code or functions, handle inputs and outputs, and test your implementations.
+
 
 ## Add and Configure a Function Node
 
@@ -442,7 +450,7 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 
 When you import a tool, a *.zip* package is imported from your local system with the flow definition, app definition, and environment variables JSON files from another environment. [Learn more](../../import-a-tool.md){:target="_blank"}.
 
-If the tool contains a **Function node**, its configuration is automatically fetched and populated in the new environment (tools automation flow) where the tool is being imported.
+If the tool contains a Function node, its configuration is automatically fetched and populated in the new environment (tools automation flow) where the tool is being imported.
 
 ### Script Linking Behavior
 
@@ -454,7 +462,7 @@ If the tool contains a **Function node**, its configuration is automatically fet
 
 **Export a Tool**
 
-When you export a tool that contains a **Function node**, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-tool.md){:target="_blank"}.
+When you export a tool that contains a Function node, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-tool.md){:target="_blank"}.
 
 The following confirmation window is displayed before the export begins.
 
@@ -467,7 +475,7 @@ Do one of the following:
 
 **Share a Tool**
 
-When you share a tool with another user within the same account, all configurations of the **Function node** are retained and available to the recipient as well.
+When you share a tool with another user within the same account, all configurations of the Function node are retained and available to the recipient as well.
 
 ## Related Links
 
