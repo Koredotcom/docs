@@ -87,13 +87,13 @@ To set up Intercom to receive messages, you will first need to create an app in 
 
     <img src="../images/configuring-the-intercom-agent-img5.png" alt="Customize the channel mapping" title="Customize the channel mapping" style="border: 1px solid gray;">
 
-7. Once you click **Manage**, you can map the channels which you want to use Intercom agent for handovering the conversations. To learn more about channel enablement, read the[ Adding channels to your app](../../../../channels/adding-channels-to-your-bot/){:target="_blank"} article.
+7. Once you click **Manage**, you can map the channels which you want to use Intercom agent for handovering the conversations. To learn more about channel enablement, read the[ Adding channels to your app](../../../channels/adding-channels-to-your-bot.md){:target="_blank"} article.
 
     <img src="../images/configuring-the-intercom-agent-img6.png" alt="Map channels to intercom agent" title="Map channels to intercom agent" style="border: 1px solid gray;">
 
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Intercom agent.
-10. Publish the App. For more information, see [Publishing an App](../../../../deploy/publishing-bot/){:target="_blank"}.
+10. Publish the App. For more information, see [Publishing an App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 ## Execution
@@ -103,7 +103,7 @@ This section helps you verify how the conversations from the Kore.ai XO Platform
 To verify the data exchange between the Kore.ai’s agent and Intercom agent, follow these steps:
 
 1. Open an app for which you have enabled the Intercom agent.
-2. Create a new Agent Transfer Node task. For example, create a PlatformAgent task with the UserChats node and configure it to use the Intercom agent. For more information, read the [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"} article.
+2. Create a new Agent Transfer Node task. For example, create a PlatformAgent task with the UserChats node and configure it to use the Intercom agent. For more information, read the [Agent Transfer Node](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"} article.
 
     <img src="../images/configuring-the-intercom-agent-img7.png" alt="New Agent Transfer node task" title="New Agent Transfer node task" style="border: 1px solid gray;">
 
