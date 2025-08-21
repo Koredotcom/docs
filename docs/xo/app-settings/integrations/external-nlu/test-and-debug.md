@@ -5,7 +5,7 @@ The following sections describe how you can test and debug your AI Agent to vali
 
 ## Test
 
-After completing the steps in [Adapter Configuration](../external-nlu-adapters/#adapter-configuration){:target="_blank"} and [enabling the API](../dialogflow-engine/#enable-the-dialogflow-api){:target="_blank"}, to check if the intent identification is done by External NLU adapter or not, you can follow these steps:
+After completing the steps in [Adapter Configuration](external-nlu-adapters.md#adapter-configuration){:target="_blank"} and [enabling the API](dialogflow-engine.md#enable-the-dialogflow-api){:target="_blank"}, to check if the intent identification is done by External NLU adapter or not, you can follow these steps:
 
 
 

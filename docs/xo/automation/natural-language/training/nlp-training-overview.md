@@ -1,6 +1,6 @@
 # NLP Training 
 
-NLP  Training ensures that virtual assistants meet the designated business case requirements. NLP Training to achieve the best results requires leveraging the features on the Platform. The NLP Engine is the core component that interprets what users say at any given time and converts that language to structured inputs the system can process.
+NLP  Training ensures that app meet the designated business case requirements. NLP Training to achieve the best results requires leveraging the features on the Platform. The NLP Engine is the core component that interprets what users say at any given time and converts that language to structured inputs the system can process.
 
 The Platform employs NLP engines for Machine Learning, Fundamental Meaning, Knowledge Graph, Traits, and intents ranking to handle complex use cases. 
 

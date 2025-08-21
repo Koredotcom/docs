@@ -1,8 +1,8 @@
 # Conversation Testing Overview
 
-Conversation Testing enables you to simulate end-to-end conversational flows to evaluate the dialog task execution or perform regression. You can create Test Suites to capture various business scenarios and run them at a later time to validate the assistant’s performance.
+Conversation Testing enables you to simulate end-to-end conversational flows to evaluate the dialog task execution or perform regression. You can create Test Suites to capture various business scenarios and run them at a later time to validate the app’s performance.
 
-The Conversation testing framework tracks the transition coverage and determines how well the Virtual Assistant (VA) understands the user queries and executes the dialogs and other intents of user conversations for a particular input(s). Like the NLP Health in the [Health and Monitoring dashboard](../../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"} a Flow health feature available in the Health and Monitoring dashboard presents a summary of the total coverage of dialog flows and analysis of conversation test results of your VA. This summary helps you understand the flow transitions and intent coverage in test suites. It enables you to add relevant test cases to cover missing transitions and intents. You can also use the test result analysis to identify and fix the issues in the dialog task definitions and improve the performance of your VA.
+The Conversation testing framework tracks the transition coverage and determines how well the app understands the user queries and executes the dialogs and other intents of user conversations for a particular input(s). Like the NLP Health in the [Health and Monitoring dashboard](../health-and-monitoring/virtual-assistants-health-and-monitoring.md){:target="_blank"} a Flow health feature available in the Health and Monitoring dashboard presents a summary of the total coverage of dialog flows and analysis of conversation test results of your app. This summary helps you understand the flow transitions and intent coverage in test suites. It enables you to add relevant test cases to cover missing transitions and intents. You can also use the test result analysis to identify and fix the issues in the dialog task definitions and improve the performance of your app.
 <br>
 
 ## Conversation Testing Landing Page
@@ -35,8 +35,8 @@ You can also filter the details at the grid level by applying filters for intent
 
 The Conversation Testing allows you to capture the flow, track the executed nodes, covered transitions, and metadata. Following are the major options available on the Conversation Testing page:
 
-* [Create a Test Suite](../create-a-test-suite/){:target="_blank"}
-* [Test Editor](../test-editor/){:target="_blank"}
-* [Test Case Assertion](../test-case-assertion/){:target="_blank"}
-* [Test Case Execution Summary](../test-case-execution-summary/){:target="_blank"}
+* [Create a Test Suite](create-a-test-suite.md){:target="_blank"}
+* [Test Editor](test-editor.md){:target="_blank"}
+* [Test Case Assertion](test-case-assertion.md){:target="_blank"}
+* [Test Case Execution Summary](test-case-execution-summary.md){:target="_blank"}
 

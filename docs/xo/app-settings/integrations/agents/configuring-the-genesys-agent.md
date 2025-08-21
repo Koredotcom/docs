@@ -39,19 +39,12 @@ To configure the agent, follow these steps:
 2. Copy the URL and keep it for future use.
 3. Alternatively, you can also get your region-specific “Genesys Cloud login URL” by referring to this [Genesys Cloud region URL's info](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/#tab2).
 
-
-
 ### Step 2. Retrieve the Organization ID
-
-
 
 1. To retrieve your organization ID, please follow the steps mentioned in [Find your Organization ID](https://help.mypurecloud.com/faqs/how-do-i-find-my-organization-id/).
 2. Copy the ID and keep it for future use.
 
-
 ### Step 3. Create a Queue
-
-
 
 1. Navigate to Admin > Contact Center > Queues. 
 2. Click Create Queue.
@@ -62,10 +55,7 @@ To configure the agent, follow these steps:
 7. Click Save.
 8. Copy the queue name and keep it for future use.
 
-
 ### Step 4. Create an Inbound Message Flow
-
-
 
 1. Navigate to Admin > Architect.
 2. Hover over the Flows menu and select Inbound Message Flow.
@@ -77,13 +67,9 @@ To configure the agent, follow these steps:
 8. Configure any additional logic or error handling as needed.
 9. Validate and Publish the flow to make it available for routing.
 
-
 ### Step 5. Create a Deployment Key
 
-
 #### For WebChat
-
-
 
 1. Navigate to Admin > Contact Center > Widgets.
 2. Click Create Widget, select the widget type as Third Party, and save it.
@@ -92,10 +78,7 @@ To configure the agent, follow these steps:
 5. Once saved, the system will display a Deployment Key.
 6. Copy this key and keep it for future use.
 
-
 #### For WebMessaging
-
-
 
 1. Navigate to Admin > Message > Messenger Configurations and click New Configuration.
 2. Enter a name and description, then under Labels & Languages Support, choose the supported languages and set the default language.
@@ -106,23 +89,18 @@ To configure the agent, follow these steps:
 7. For Select your Architect Flow, choose the inbound message flow you have created.
 8. Click Save to generate the Deployment Key, then copy the same and keep it for future use.
 
-
 ### Step 6. Add the WebSocket URL
 
 !!! note
 
     If you are configuring WebChat, skip to step no 7: Enable the Genesys Agent.
 
-
 1. Go to the following link to find your region's Genesys WebSocket URL: 
 [ Genesys WebSocket Region Info](https://developer.genesys.cloud/commdigital/digital/webmessaging/websocketapi#connecting).
 2. Locate the WebSocket address that matches your Genesys Cloud region.
 3. Copy the WebSocket URL (e.g., wss://streaming.mypurecloud.com/v2/websocket) and keep it for future use.
 
-
 ### Step 7: Enable the Genesys Agent
-
-
 
 1. Log in to the Kore.ai XO Platform:[ https://platform.kore.ai/builder/home](https://bots.kore.ai/botbuilder).
 2. Select an AI Agent for which you want to configure the Genesys agent.
@@ -138,7 +116,6 @@ To configure the agent, follow these steps:
         <img src="../images/genesys-at.png" alt="Enter Genesys agent credentials" title="Enter Genesys agent credentials" style="border: 1px solid gray;"> 
 
 
-
 5. If you want to make Genesys the default agent, enable the **Default Agent System for all bot channels** option. 
  Note:  This option is available only when you have multiple agents configured for your AI Agent. 
  
@@ -148,7 +125,7 @@ To configure the agent, follow these steps:
 7. Once you click **Manage**, you can map the channels you want the Genesys agent to hand over the conversations. To learn more about channel enablement, see[ Adding channels to your app](../../../channels/adding-channels-to-your-bot.md).
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Genesys agent.
-10. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
+10. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 ## Execution
@@ -158,7 +135,7 @@ This section helps you verify how the conversations from the Kore.ai XO Platform
 To verify the data exchange between Kore.ai’s AI Agent and Genesys agent, follow these steps:
 
 1. Open an AI Agent for which you have enabled the Genesys agent.
-2. Create a new Agent Transfer Node task. For example, create a _PlatformAgent_ task with the _AgentTransfer_ node and configure it to use the Genesys agent. For more information, read the [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"} article.
+2. Create a new Agent Transfer Node task. For example, create a _PlatformAgent_ task with the _AgentTransfer_ node and configure it to use the Genesys agent. For more information, read the [Agent Transfer Node](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"} article.
 
     <img src="../images/configuring-the-genesys-agent-img4.png" alt="new Agent Transfer Node task" title="new Agent Transfer Node task" style="border: 1px solid gray;">
 

@@ -2,7 +2,7 @@
 
 Conversational VAs enable machines to interact organically with users and deliver high-quality customer experiences. The key for an app to understand human interactions lies in its ability to identify the user’s intention (Intent Detection), extract useful information (Entity Extraction), and map them to relevant actions or tasks (Dialog Task execution). [Learn more](../../automation/about-automation-ai.md){:target="_blank"} about how Conversational VAs work and the key components that define their functioning.
 
-**Natural Language Processing (NLP)** is the science of deducing the intention and related information from natural conversations. The conversation flow in Kore.ai virtual assistants passes through various Natural Language Understanding (NLU) engines and conversation engines before the decides upon action and response.
+**Natural Language Processing (NLP)** is the science of deducing the intention and related information from natural conversations. The conversation flow in app passes through various Natural Language Understanding (NLU) engines and conversation engines before the decides upon action and response.
 
 This article gives an overview of the NLP flow within a app and demonstrates how a developer can leverage the Platform’s features to build efficient VAs that elevate customer experiences..
 

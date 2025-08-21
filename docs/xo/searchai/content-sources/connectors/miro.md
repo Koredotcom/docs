@@ -83,10 +83,10 @@ By default, when a board is created, it is automatically shared with the other m
 
 Further, Miro boards can be shared using different access options. For each of the options, the `sys_racl` is populated as described below.
 
-* **Share with specific users via email**- When users are directly added to a board, their email addresses are stored in the `sys_racl` field. The members of a space also have default access to the boards within the space. So, along with individual email addresses, the space ID (also referred to as project ID in Miro) is stored in `sys_racl` as a permission entity.
-* **Share with team members**- If a board is shared with a team, the team ID is added to the `sys_racl` field. Since the space members are a subset of the team, when a board is shared with the team, `sys_racl` only contains team ID and spaceID is not added.
-* **Everyone in the company**- When a board is shared at the company level, the Organization ID is stored in the `sys_racl` field. Since the space members are a subset of the members of the organization, when a board is shared with the organization, `sys_racl` only contains organizationID and spaceID is not added. 
-* **Public Access**- The `sys_racl` field is set to *, allowing unrestricted access.
+* **Share with specific users via email**: When users are directly added to a board, their email addresses are stored in the `sys_racl` field. The members of a space also have default access to the boards within the space. So, along with individual email addresses, the space ID (also referred to as project ID in Miro) is stored in `sys_racl` as a permission entity.
+* **Share with team members**: If a board is shared with a team, the team ID is added to the `sys_racl` field. Since the space members are a subset of the team, when a board is shared with the team, `sys_racl` only contains team ID and spaceID is not added.
+* **Everyone in the company**: When a board is shared at the company level, the Organization ID is stored in the `sys_racl` field. Since the space members are a subset of the members of the organization, when a board is shared with the organization, `sys_racl` only contains organizationID and spaceID is not added. 
+* **Public Access**: The `sys_racl` field is set to *, allowing unrestricted access.
 
 ProjectID, TeamID and OrganizationID are the permission entities that control access in SearchAI. For Miro boards, SearchAI supports automatic resolution of permission entities and maps them to the corresponding entity type.
 

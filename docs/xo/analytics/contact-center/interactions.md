@@ -298,7 +298,7 @@ The transcripts tab also shows the call transfer stages:
 
     * When customers are placed on hold (either themselves or by an agent), the system will not display transcripts of any customer speech during the hold period. 
 
-    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties)
+    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties).
 
 **DETAILS**: This tab shows the following details:
 
@@ -327,7 +327,7 @@ The transcripts tab also shows the call transfer stages:
 **Channel User ID**: The user ID of the conversation channel.  
 **User ID**: Agent’s user ID.  
 **User-level tags**: User-level tags assigned to the conversation.  
-<img src="../images/user-insights-to-logs.png alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/user-insights-to-logs.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
 
 **IDENTIFIERS**: This tab shows the following details:
 

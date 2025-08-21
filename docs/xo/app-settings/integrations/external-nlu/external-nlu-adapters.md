@@ -34,7 +34,7 @@ Steps to configure an external NLU adapter:
   
     !!! note
     
-        De Identification of PII data means removing or masking PII data in order to reduce the risk of disclosure of user’s sensitive information that is connected with the data. If the de-identification of PII is disabled for the External NLU Adapter, any API call being made to the external NLU will send the masked PII data in the payload. If you select the option – **do not de-identify PII data from the user input**, intent or entity detection may not work properly. To know more about PII data, see [Redacting Personally Identifiable Information](../../../advanced-settings/pii-data-masking){:target="_blank"}.
+        De Identification of PII data means removing or masking PII data in order to reduce the risk of disclosure of user’s sensitive information that is connected with the data. If the de-identification of PII is disabled for the External NLU Adapter, any API call being made to the external NLU will send the masked PII data in the payload. If you select the option – **do not de-identify PII data from the user input**, intent or entity detection may not work properly. To know more about PII data, see [Redacting Personally Identifiable Information](../../advanced-settings/pii-data-masking.md){:target="_blank"}.
 
 4. Click **Save**, to save the configurations.
 5. You can check the External NLU connectivity by clicking **TEST**. On successful completion of the test, the following message is displayed.  
@@ -46,10 +46,7 @@ Steps to configure an external NLU adapter:
 
 6. External NLU can be enabled either by updating the configuration setting to **Yes** under the **Enable External NLU Adapter** option in the configuration panel, or by using the **Enable/Disable** option that is displayed on clicking the ellipsis icon.  
   
-    !!! note
-    
-        Starting from **10.1 released on 16-April-2023**, the Universal Bots (UB) allows you to link bots that are using external NLU alongside other bots using built-in NLP. However, the UB dialog tasks and linked bot qualification always use Platform’s built-in NLP.
-
+   
     <img src="../images/external-nlu-img4-dialogflow-es-enable.png" alt="Enable External NLU Adapter" title="Enable External NLU Adapter" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -57,4 +54,4 @@ Steps to configure an external NLU adapter:
 
     External NLU is supported only for intent, Entity nodes and FAQs.
 
-See [Dialogflow Engine](../dialogflow-engine/){:target="_blank"} to understand the Dialogflow usage. See [Test and Debug](../test-and-debug/){:target="_blank"} to know how to test your AI Agent to validate the external NLU and to understand the conversation behavior.
+See [Dialogflow Engine](dialogflow-engine.md){:target="_blank"} to understand the Dialogflow usage. See [Test and Debug](test-and-debug.md){:target="_blank"} to know how to test your AI Agent to validate the external NLU and to understand the conversation behavior.
