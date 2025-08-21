@@ -1,10 +1,36 @@
 # Text to Text Node - Automate Text Transformation
 
-The **Text to Text** node under the **AI node** in the **Tool Builder** converts the text description (including keywords) you provide into the required text output within a single workflow. You can define what the output text should include and exclude, for example, the writing style, tonality, context, and more using the prompt. This multimodal capability enables developers to efficiently handle and integrate text content in the required format.
+The Text to Text node is part of the AI node family in the Tool Builder, enabling the dynamic transformation of input text into a desired text output within a single workflow step. It leverages large language models (LLMs) to produce content that adheres to specific tone, structure, and instructions defined via prompts. This node is ideal for tasks involving summarization, rewriting, generation, and formatting of text data.
+
+## Key Capabilities
+
+* **Custom Prompt Execution**: Define specific behavior through human and system prompts or select from reusable templates in the Prompt hub.
+* **LLM Model Selection**: Choose from pre-configured models with optional hyperparameter tuning (temperature, top-k, top-p, max tokens).
+* **Structured Output Support**: Define JSON schemas for predictable and parseable responses from the model.
+* **Prompt Templates & Versioning**: Load and customize prompt versions, with support for variable mapping and editing.
+* **Tool Calling Integration**: Enable the model to autonomously call external tools during execution (if supported).
+* **Timeout Configuration**: Control the duration for which the model can run before triggering a timeout error.
+
+## Common Use Cases
+
+* **Text Summarization**: Generate summaries from conversation transcripts, logs, or documents.
+* **Tone or Style Adjustment**: Refine a message to convey a more professional, friendly, technical, or other desired tone.
+* **Keyword-Based Generation**: Produce text using given inputs like names, topics, or key phrases.
+* **Error Explanation or Log Analysis**: Extract, explain, or simplify technical content.
+* **Content Rewriting**: Modify existing text to enhance clarity, structure, or purpose (e.g., simplifying instructions).
+
+## How It Works
+
+Once placed in the workflow, the Text to Text node takes input from previous nodes and sends a prompt to the selected AI model. Based on your configuration—prompt, schema, and model settings—it returns a response to the context variable for use in the next step. Execution can optionally involve tool calls, and success/failure paths allow routing based on the outcome.
+
+<img src="../images/text_to_text_node_new.png" alt="Text to Text Node" title="Text to Text Node" style="border: 1px solid gray; zoom:60%;">
+
+In this document, you will learn how to add the node to your flows, configure it with system and human prompts along with model settings, manage inputs and outputs, and test the generated text results.
+
 
 ## Add and Configure a Text to Text Node
 
-Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up a Text to Text node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 **Steps**
 
