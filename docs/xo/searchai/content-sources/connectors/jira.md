@@ -168,14 +168,15 @@ By selecting the Object Type first, then applying Standard Filters, and finally 
 
 ## Access Control
 
-SearchAI supports access control for content ingested from Jira accounts in different ways. 
+SearchAI supports access control for content ingested from Jira accounts in different ways depending on the type of content. 
 
-**Issues**
+**Access Control for Jira Issues**
 
 * In Jira, each issue is linked to a specific project through a unique **Project ID**.
-* This **Project ID** is stored in the **RACL field** of the chunks related to the content ingested from Jira.
-* For Search AI to determine which users can access a specific issue, use the **Permission Entity APIs** and associate users with the project ID.
-* Users added to the corresponding Permission Entities gain access to the issues associated with those projects.
+* When this content is ingested into Search AI, the **Project ID** is stored in the **RACL field** of the chunks related to the ingested content.
+* These Project IDs are the **permission entities** that control access.
+* SearchAI supports automatic resolution of permission entities for Jira issues. It automatically identifies users who have access to the given project. These users are automatically associated with the corresponding Project ID permission entity in SearchAI.
+* Manual Permission Entity mapping through APIs is not required.
 
 **Dashboards and Filters**
 
@@ -242,4 +243,5 @@ When Jira dashboards or filters are shared, Search AI populates the RACL field t
 </table>
 
 
-If multiple sharing options apply (e.g. both a Project and specific Users), all corresponding IDs and emails are included in the RACL field.
+* If multiple sharing options apply (e.g. both a Project and specific Users), all corresponding IDs and emails are included in the RACL field.
+* Permission Entities created in this case are automatically resolved by Search AI. Manual mapping through Permission Entity APIs is not required. 

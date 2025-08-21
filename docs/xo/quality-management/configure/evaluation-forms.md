@@ -103,7 +103,7 @@ Steps to configure general settings:
 
  6. Click **Next** to move to the **Assignments** section.
 
- ### Assignments 
+### Assignments 
 
 This section enables you to create and evaluate the assignments made.   
 <img src="../evaluation-criteria/evaluation-forms/images/assignments-create.png" alt="Assignments Configuration" title="Assignments Configuration" style="border: 1px solid gray; zoom:50%;">
