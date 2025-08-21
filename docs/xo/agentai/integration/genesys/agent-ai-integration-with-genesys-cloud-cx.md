@@ -284,7 +284,7 @@ This document provides detailed, step-by-step instructions for setting up the in
 * Genesys Administrator having access to Genesys Cloud account with Admin rights.
 * Kore Administrator having access to [Kore.ai](https://platform.kore.ai){:target="_blank"} Agent AI instance.
 
-## **Capture AI Agent Information in Kore Data Table**
+## **Capture AI Agent Information**
 
 Data Tables are used to store agent queue-specific AI Agent credentials. Each record of the Kore Data Table represents a unique Genesys agent queue and its corresponding AI Agent definitions. 
 
