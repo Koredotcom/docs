@@ -61,9 +61,9 @@ Search AI interacts with LumApps through its APIs. To set up this communication,
 
 ### Create an OAuth Application
 
-In the LumApps back office, go to Extensions > Installed extensions page and do the following configuration. 
+In the LumApps back office, go to Extensions > Installed extensions, and configure the following settings: 
 
-1. Select Oauth Application Manager > Details.
+1. Select **Oauth Application Manager** > **Details**.
 2. Go to the Settings tab.
 3. Click Add an OAuth application.
 4. Enter a name in the Application name field.
@@ -76,13 +76,13 @@ In the LumApps back office, go to Extensions > Installed extensions page and do 
 
 ### LumApps Connector Configuration in Search AI
 
-On the **Authorization** tab of the connector, provide the following details.
+On the **Authorization** tab of the connector, enter the following details.
 
 * Name - Unique name for the connector. 
-* Authorization Type: Select Token as the type.
+* Authorization Type: Select **Token** as the type.
 * Grant Type: Select Client Credentials. 
-* Client ID: Provide the Application ID generated above. 
-* Client Secret: Provide the Application Secret generated above. 
+* Client ID: Enter the Application ID generated above. 
+* Client Secret: Enter the Application Secret generated above. 
 * Organization ID: Unique identifier assigned to your organization’s platform. This ID is present in your platform URL after the word, ‘org-’. For example, in this instance, `https://org-3731839993107899.app.lumapps.com/`, the organization ID is `3731839993107899`. You can also find this information in the debug dialog in the customer platform. **To view the debug dialog, press CTRL + SHIFT + ?.**
 * User ID: User ID used to access the content from LumApps. This user will be impersonated to fetch the content. Find this info from the debug dialog. 
 * Host URL: This is the URL of the LumApps API host. This is also referred to as the **Haussmann cell.** This host varies depending on the LumApps environment your platform is hosted on. Use the debug dialog to find this information. 
@@ -142,8 +142,6 @@ Once the object type is selected, you can further refine the content ingestion b
 
 **Advanced Filters** allow more granular control by letting you define **field-based rules**. For example, you can configure filters to ingest news from the past week.
 
-
-
 ![alt_text](images/lumapps/filter-example.png "image_tooltip")
 
 
@@ -160,12 +158,9 @@ You can also use **logical operators** to specify more than one condition to def
 
 ![alt_text](images/lumapps/visibility.png "image_tooltip")
 
-* For **Pages, Custom Content objects, and News**, the sys_racl field stores the groupID associated with the user group that has access to the content. The groupID is managed as a **Permission Entity**. Administrators can use **Permission Entity APIs** to map users to their respective groupID, ensuring controlled access to content.
+* For **Pages, Custom Content objects, and News**, the `sys_racl `field stores the groupID associated with the user group that has access to the content. The groupID is managed as a **Permission Entity**. SearchAI automatically resolves the permission entity, ensuring that users are correctly associated with the corresponding group ID.
 
 
 ### **Community Posts**
 
-
-* **Community Posts** are accessible **only to the members** of the respective community. \
-
-* The sys_racl field for community posts contains the **Community ID**, ensuring that posts remain visible exclusively to authorized community members. Use the permission entity APIs and associate community members with the community ID. 
+The `sys_racl` field stores the Community ID, ensuring that posts are visible only to authorized community members. The Community ID is managed as a Permission Entity. SearchAI automatically resolves the permission entity by identifying eligible members and associating them with the correct Community ID. 
