@@ -57,7 +57,7 @@ JSON object consisting of the following translatable elements
 
 ## Dialog Tasks
 
-JSON object consisting of the following translatable components of your AI Agent's [Dialog Tasks](../../../automation/use-cases/dialogs/dialog-tasks-overview){:target="_blank"}.
+JSON object consisting of the following translatable components of your AI Agent's [Dialog Tasks](../../automation/use-cases/dialogs/dialog-tasks-overview.md){:target="_blank"}.
 
 <table border="1">
 <tr>
@@ -145,7 +145,7 @@ JSON object consisting of the following translatable components related to the N
 
 ## Message Templates
 
-JSON object with arrays of Message Template IDs and Message Template Text values. They correspond to the **User Responses** field in the Message node and the **App Prompts** and **Error Prompts** fields in the [Entity node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node/){:target="_blank"} of the dialog tasks.
+JSON object with arrays of Message Template IDs and Message Template Text values. They correspond to the **User Responses** field in the Message node and the **App Prompts** and **Error Prompts** fields in the [Entity node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md){:target="_blank"} of the dialog tasks.
 
 
 <table border="1">
@@ -277,7 +277,7 @@ JSON object consisting of the following translatable components of your assistan
 
 ## Alert Fields
 
-JSON object consisting of the following translatable components in the [API Request tab](../../../automation/use-cases/alert-tasks/){:target="_blank"} of the Alert task.
+JSON object consisting of the following translatable components in the [API Request tab](../../automation/use-cases/alert-tasks.md){:target="_blank"} of the Alert task.
 
 <table border="1">
 <tr>
@@ -366,9 +366,9 @@ JSON object consisting of the following translatable components related to IDP c
 
 ## Pattern Support
 
-We have seen in [this document](../../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. These rules are for AI Agent in the English language. In other languages, there may be differences. 
+Patterns can be used for Intent detection and Entity extraction. These rules are for AI Agent in the English language. In other languages, there may be differences. 
 
-Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../../automation/knowledge-ai/build-a-knowledge-graph){:target="_blank"} (using alternate question fields), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
+Patterns can be used in [Small Talk](../../automation/use-cases/small-talk.md#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../automation/knowledge-ai/build-a-knowledge-graph.md){:target="_blank"} (using alternate question fields), and [Trait](../../automation/natural-language/training/traits.md#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
 
 <table border="1">
 <tr>
