@@ -1,3 +1,5 @@
+# Agent AI Integration with Genesys Cloud CX
+
 Integration of Agent AI in Genesys is a significant enhancement to our solution. Previously limited to a single AI Agent and a department-specific approach, the solution has now been upgraded to support multiple bots and a queue-based functionality. This enhancement enables Genesys Cloud CX to offer a more flexible and scalable solution for businesses seeking to leverage AI to improve agent efficiency and customer satisfaction across multiple departments.
 
 !!! note
@@ -242,15 +244,15 @@ For on-prem, refer to corresponding host<strong> </strong>
 
 ## Architecture Diagrams
 
-**Chat**
+**Chat**../kore-data-table/architecture-diagram-chat-1.png
 
 <img src="../kore-data-table/architecture-diagram-chat-1.png" alt="architecture-diagram-chat" title="architecture-diagram-chat" style="border: 1px solid gray; zoom:80%;">
 
-**Voice**
+**Voice**../kore-data-table/architecture-diagram-voice-2.png
 
 <img src="../kore-data-table/architecture-diagram-voice-2.png" alt="architecture-diagram-voice" title="architecture-diagram-voice" style="border: 1px solid gray; zoom:80%;">
 
-## Interaction Sequence
+## Interac../kore-data-table/interaction-sequence-3.png
 
 <img src="../kore-data-table/interaction-sequence-3.png" alt="interaction-sequence" title="interaction-sequence" style="border: 1px solid gray; zoom:80%;">
 
@@ -302,13 +304,13 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
 ### How to create a New Data Table
 
 1. Sign in to Kore.ai [XO Platform](https://platform.kore.ai){:target="_blank"}.
-2. Click **Data** > **Data Tables**.
+2. Click *../kore-data-table/new-table-4.png
 3. Click **New Table**.  
 <img src="../kore-data-table/new-table-4.png" alt="new-table" title="new-table" style="border: 1px solid gray; zoom:80%;">
 
 4. Enter the following details in the **New Table** page:
     1. **Name** of the Data Table (any alphanumeric name).
-    2. **Description** of the Data Table.
+    2. **Descr../kore-data-table/multiple-columns-5.png
     3. **Columns** to be included in the Data Table. Click the “tick” mark to add multiple columns.  
     <img src="../kore-data-table/multiple-columns-5.png" alt="multiple-columns" title="multiple-columns" style="border: 1px solid gray; zoom:80%;">  
     
@@ -332,23 +334,23 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
 
     4. **Indexes** for the table. 
         * **Index Name** for reference.
-        * **Is Unique** flag to define if the index is expected to contain unique values. (Enable “‘is Unique.”)
+        * **Is Uni../kore-data-table/queue-finder-6.pngexpected to contain unique values. (Enable “‘is Unique.”)
         * **Column & Sort Order** – List of columns to be included in the index; you can select multiple columns and specify the sort order (ascending or descending) for each of the selected columns. (Select QueueIdentifier with ascending order.)  
         <img src="../kore-data-table/queue-finder-6.png" alt="queue-finder" title="queue-finder" style="border: 1px solid gray; zoom:80%;">
         
     5. **AI Agent Assignments** (not applicable).
-    6. **App Assignments** to let apps access data in this table.
+    6. **App Assig../kore-data-table/create-new-app-7.pngs table.
         1. Select any app from the displayed list, or click **Create New App** and enter your app name:  
         <img src="../kore-data-table/create-new-app-7.png" alt="create-new-app" title="create-new-app" style="border: 1px solid gray; zoom:80%;">
 
         2. Select the **Read**, **Write**, and **Delete** permissions, as required.  
         !!! note
         
-            You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page:  
+            You ca../kore-data-table/apps-new-app-8.pngData** > **Apps** > **New App** in the home page:  
 
         <img src="../kore-data-table/apps-new-app-8.png" alt="apps-new-app" title="apps-new-app" style="border: 1px solid gray; zoom:80%;">
 
-    7. **Process Assignments** (not applicable)
+    7. **P../kore-data-table/create-new-data-table-9.png
 5. Click **Create** to create the new data table.  
 <img src="../kore-data-table/create-new-data-table-9.png" alt="create-new-data-table" title="create-new-data-table" style="border: 1px solid gray; zoom:80%;">
 
@@ -357,11 +359,11 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
 Set up necessary permissions and app assignments and insert AI Agent-specific data into the Data Table.
 
 1. Sign in to Kore.ai [XO Platform](http://platform.kore.ai){:target="_blank"}.
-2. Click **Data** > **Apps**.
+2. Click *../kore-data-table/app-write-access-10.png
 3. Select the **App** with “write” access to the Data Table where you want to add information.  
 <img src="../kore-data-table/app-write-access-10.png" alt="app-write-access" title="app-write-access" style="border: 1px solid gray; zoom:80%;">
-
-4. Copy **Client ID** and **Client Secret** of the App.
+../../../apis/automation/api-introduction.md#generating-the-jwt-token
+4. Copy **Client ID** and **Client Secret** of the App.../../../apis/automation/data-insert.md
 5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
 6. Insert the following data into the Data Table by following this [doc](./../../../apis/automation/data-insert.md){:target="_blank"}. Use the JWT Token created in the previous step.
 
@@ -386,10 +388,10 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
 
     * For a single queue, the QueueIdentifier value contains one queue name (for example, “Kore”). For multiple queues, it includes all the queue names separated by commas (for example, “Kore, KoreSupport”).
     * JWEPublicKey and KvpConfig value should be a stringified JSON object.
-
+../kore-data-table/single-queue-example-11.png
 **Single Queue Example**  
 <img src="../kore-data-table/single-queue-example-11.png" alt="single-queue-example" title="single-queue-example" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/multiple-queues-example-12.png
 **Multiple Queues Example**  
 <img src="../kore-data-table/multiple-queues-example-12.png" alt="multiple-queues-example" title="multiple-queues-example" style="border: 1px solid gray; zoom:80%;">
 
@@ -397,11 +399,11 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
 
 **Steps to get Genesys OAuth ID**:  
 
-1. Sign in to **Genesys Cloud**. 
+1. Sign in to ../kore-data-table/single-queue-example-13.png
 2. Go to **Admin** > **Integrations** > **OAuth**.  
     <img src="../kore-data-table/single-queue-example-13.png" alt="single-queue-example" title="single-queue-example" style="border: 1px solid gray; zoom:80%;">  
 3. Click **Add Client**. 
-4. Enter the **app name**, **description**, and **token duration** in the **App Name**, **Description**, and **Token Duration** fields. 
+4. Enter the *../kore-data-table/token-implicit-grant-14.pngtion** in the **App Name**, **Description**, and **Token Duration** fields. 
 5. Select **Token Implicit Grant (Browser)** in the **Grant Types** section.  
     <img src="../kore-data-table/token-implicit-grant-14.png" alt="token-implicit-grant" title="token-implicit-grant" style="border: 1px solid gray; zoom:80%;"> 
 6. Add {[Agent AI URL](https://platform.kore.ai)}/koreaiaa-genesys/ in the **Authorized redirect URIs** field. 
@@ -417,7 +419,7 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
     * notifications
     * user-basic-info
     * web-chat
-    * web-chat:readonly
+    * web-../kore-data-table/authorized-redirect-uris-15.png
 
 <img src="../kore-data-table/authorized-redirect-uris-15.png" alt="authorized-redirect-uris" title="authorized-redirect-uris" style="border: 1px solid gray; zoom:80%;">
 
@@ -433,14 +435,14 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 1. Sign in to **Genesys Cloud**. 
 
 2. Click **Admin** > **Integrations**. 
-
+../kore-data-table/genesys-cloud-integrations-16.png
 3. If you have not created an Interaction Widget for Agent AI, install a new **Interaction Widget** by clicking the **Integrations** tab on the right side of the page.  
-    <img src="../kore-data-table/genesys-cloud-integrations-16.png" alt="genesys-cloud-integrations" title="genesys-cloud-integrations" style="border: 1px solid gray; zoom:80%;">
+    <img src="../kore-data-table/interaction-widget-17.pngs-16.png" alt="genesys-cloud-integrations" title="genesys-cloud-integrations" style="border: 1px solid gray; zoom:80%;">
 
     <img src="../kore-data-table/interaction-widget-17.png" alt="interaction-widget" title="interaction-widget" style="border: 1px solid gray; zoom:80%;">
 
 4. Name the **Interaction Widget** with a meaningful name, such as KoreaiAA Interaction Widget.
-5. Open the **Interaction Widget** by clicking the name.
+5. Open th../kore-data-table/interaction-widget-configuration-18.png
 6. Go to the **Configuration** tab of the Interaction Widget.  
 <img src="../kore-data-table/interaction-widget-configuration-18.png" alt="interaction-widget-configuration" title="interaction-widget-configuration" style="border: 1px solid gray; zoom:80%;">
 
@@ -458,15 +460,15 @@ The “`x_metadata`” value equals the `URL`-`encoded string` of the JSON objec
 2. Build **x_metadata**: 
 
     1. Sign in to [Kore XO Platform](https://platform.kore.ai){:target="_blank"}. 
-
+../kore-data-table/copy-data-table-name-19.png
     2. Click **Data** > **Data Tables,** and copy the **Data Table** name:  
         <img src="../kore-data-table/copy-data-table-name-19.png" alt="copy-data-table-name" title="copy-data-table-name" style="border: 1px solid gray; zoom:80%;"> 
-
+../kore-data-table/click-apps-read-access-20.png
     3. Click **Apps**, and click one of the app names that has “read” access:  
         <img src="../kore-data-table/click-apps-read-access-20.png" alt="click-apps-read-access" title="click-apps-read-access" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/client-id-client-secret-values-21.png
     4. Copy the **Client ID** and **Client Secret** values.  
-        <img src="../kore-data-table/client-id-client-secret-values-21.png" alt="client-id-client-secret-values" title="client-id-client-secret-values" style="border: 1px solid gray; zoom:80%;">
+        <img src="../kore-data-table/client-id-client-secret-values-21.png" alt="client-id-client-se../../../apis/automation/api-introduction.md#generating-the-jwt-tokenolid gray; zoom:80%;">
 
     5. Create a **JWT Token** using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token). 
 
@@ -504,11 +506,11 @@ To view the Interaction Widget, agents must have the following accesses:
 An Interaction Widget uses Group Membership to determine who can view it on the agent desktop.
 
 1. Use an existing Group, if your agents are already part of it. Otherwise, create a new Group for Agent AI permission.
-2. Name the Group as **KoreAA-Agents** or similar to distinguish it.
+2. Name the Group as **KoreAA-Agents** or similar to distinguish it../manual-integration-of-agent-ai-voice-with-genesys-cloud.md#step-2-interaction-widget
 3. Add any agent to allow them to use the Agent AI functionality. You can utilize more than one Group, if required.
 4. Go back to the **Integrations** section and open the **Interaction Widget** created in [Step 2](./../../integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md/#step-2-interaction-widget){:target="_blank"}. 
 5. On the **Configuration** tab, add access using the Group you identified or created for Agent AI in the Group Filtering option.  
-
+../kore-data-table/group-filtering-23.png
 You may also utilize Queue Filtering (optional).  
 <img src="../kore-data-table/group-filtering-23.png" alt="group-filtering" title="group-filtering" style="border: 1px solid gray; zoom:80%;">
 
@@ -533,14 +535,14 @@ You may also utilize Queue Filtering (optional).
 ## Create a Queue in Genesys
 
 1. Sign in to [Genesys Pure Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
-2. Go to **Admin > Contact Center >** **Queues**, or enter “queues” in the **search** bar under the **Admin** section and press the **Enter** key.
+2. Go to *../kore-data-table/create-queue-25.png, or enter “queues” in the **search** bar under the **Admin** section and press the **Enter** key.
 3. Click **Create Queue**. An empty page to create a new queue appears on the right side of the page.  
 <img src="../kore-data-table/create-queue-25.png" alt="create-queue" title="create-queue" style="border: 1px solid gray; zoom:80%;">
 
 4. Enter/select the following details in the **Create Queue** page:
     * **Name**: Enter a unique name for the new queue.
     * **Division**: Select a division in which you want to place this queue. 
-    * **Copy settings and members from** (Optional): Select an existing queue name, if you want to copy the settings and members from it.
+    * **Copy s../kore-data-table/peer-id-26.pngnal): Select an existing queue name, if you want to copy the settings and members from it.
     * **Peer Id** (optional) : Enter a unique ID that can be used to identify the queue from an external platform.  
     <img src="../kore-data-table/peer-id-26.png" alt="peer-id" title="peer-id" style="border: 1px solid gray; zoom:80%;">
 
@@ -553,7 +555,7 @@ To stream audio to third-party services, follow the below steps:
 1. Sign in to [Genesys Pure Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin > Contact Center >** **Queues**, or enter “queues” in the **search** bar under the **Admin** section and press the **Enter** key.
 3. Click the intended queue name.
-4. Click the **Voice** tab.
+4. Click t../kore-data-table/audio-monitoring-toggle-27.png
 5. Enable the **Audio Monitoring** toggle.  
 <img src="../kore-data-table/audio-monitoring-toggle-27.png" alt="audio-monitoring-toggle" title="audio-monitoring-toggle" style="border: 1px solid gray; zoom:80%;">
 
@@ -568,13 +570,13 @@ This step is essential for managing incoming messages to the Genesys platform. W
 #### Steps to create a chat architect flow
 
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/directory/#/login-oauth){:target="_blank"}.
-2. Go to **Admin** > **Architect** > **Architect**.
+2. Go to *../kore-data-table/inbound-message-28.png
 3. Click the **three dots** next to **Flows: Inbound Call**, and select **Inbound Message**.  
 <img src="../kore-data-table/inbound-message-28.png" alt="inbound-message" title="inbound-message" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/create-inbound-message-flow-29.png
 4. Click the **+Add** button to create an **Inbound Message Flow**.  
 <img src="../kore-data-table/create-inbound-message-flow-29.png" alt="create-inbound-message-flow" title="create-inbound-message-flow" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/create-flow-30.png
 5. Click **Create Flow**. The final architect flow looks like the following screenshot:  
 <img src="../kore-data-table/create-flow-30.png" alt="create-flow" title="create-flow" style="border: 1px solid gray; zoom:80%;">
 
@@ -585,10 +587,10 @@ This step is essential for managing incoming messages to the Genesys platform. W
 Before using web messaging, you must configure it in Genesys Cloud. To configure Web or Mobile Messaging in your organization, follow these steps:
 
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
-2. Go to **Admin** > **Message** > **Messenger Configurations**.
+2. Go to *../kore-data-table/messanger-new-configuration-31.png.
 3. Click **New Configuration**.  
 <img src="../kore-data-table/messanger-new-configuration-31.png" alt="messanger-new-configuration" title="messanger-new-configuration" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/messenger-configuration-name-description-32.png
 4. Enter a name and description.  
 <img src="../kore-data-table/messenger-configuration-name-description-32.png" alt="messenger-configuration-name-description" title="messenger-configuration-name-description" style="border: 1px solid gray; zoom:80%;">
 
@@ -600,12 +602,12 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
         The same language should be configured in the **Kore AI Agent**.  
 
     <img src="../kore-data-table/select-supported-languages-33.png" alt="select-supported-languages" title="select-supported-languages" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/default-language-34.png
 * Under **Select Default Language**, click the **Select language** list and choose the default language.  
 <img src="../kore-data-table/default-language-34.png" alt="default-language" title="default-language" style="border: 1px solid gray; zoom:80%;">
 
 * Adjust the other settings according to your preferences.
-6. Click the **Apps** tab and complete the following steps:
+6. Click t../kore-data-table/clear-conversation-toggle-35.png
 * Under **Clear Conversation**, turn on the toggle button. This is required for the **Agent AI Conversation Summary** feature to work.  
 <img src="../kore-data-table/clear-conversation-toggle-35.png" alt="clear-conversation-toggle" title="clear-conversation-toggle" style="border: 1px solid gray; zoom:80%;">
 
@@ -617,10 +619,10 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
 To deploy the Messenger snippet to your website, follow these steps:
 
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
-2. Go to **Admin** > **Message** > **Messenger Deployments**.
+2. Go to *../kore-data-table/new-messenger-deployment-36.png.
 3. Click **New Deployment**.  
 <img src="../kore-data-table/new-messenger-deployment-36.png" alt="new-messenger-deployment" title="new-messenger-deployment" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/messenger-deployment-details-37.png
 4. Enter a name and description.  
 <img src="../kore-data-table/messenger-deployment-details-37.png" alt="messenger-deployment-details" title="messenger-deployment-details" style="border: 1px solid gray; zoom:80%;">
 
@@ -647,14 +649,14 @@ To deploy the Messenger snippet to your website, follow these steps:
 The final step is to install Audiohook for voice streaming, if using Kore-managed Transcriptions.
 
 1. Sign in to **[Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}**.
-2. Go to **Admin**> **Integrations** > **Integrations**.
+2. Go to *../kore-data-table/audiohook-39.pnggrations**.
 3. Enter “audiohook” in the search bar.  
 <img src="../kore-data-table/audiohook-39.png" alt="audiohook" title="audiohook" style="border: 1px solid gray; zoom:80%;">
 
-    Audiohook integration requires specific configuration values to support Agent AI configuration. 
+    Audioh../kore-data-table/audiohook-monitor-40.pngtion values to support Agent AI configuration. 
 4. Install a new audiohook app by clicking the **Integrations** button on the top-right corner.  
 <img src="../kore-data-table/audiohook-monitor-40.png" alt="audiohook-monitor" title="audiohook-monitor" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/audiohook-configuration-41.png
 5. Open the **Audiohook**, and go to the **Configuration** tab.  
 <img src="../kore-data-table/audiohook-configuration-41.png" alt="audiohook-configuration" title="audiohook-configuration" style="border: 1px solid gray; zoom:80%;">
 
@@ -666,16 +668,16 @@ wss://{**Kore Voice Gateway(KVG)**}[/audiosocket/genesys/?sipuri=xxx&token=xxx&b
 
         * Configure SIP of any of the bots inserted in the Data Table.
         * Kore Voice Gateway(KVG) host name to be referred from corresponding environment being used at Saas or on-prem
-
+../kore-data-table/configure-sip-trunk-42.png
 6. Get **sipuri=sip:&lt;sip-string>** from **Agent AI** > **Flows & Channels** > **Voice** **Gateway** > **SIP Numbers** > **Configure SIP Trunk** > **Product Selection** > **Agent AI**.  
 <img src="../kore-data-table/configure-sip-trunk-42.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/web-mobile-client-43.png
 7. Use the following reference from **Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details** page to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
-<img src="../kore-data-table/web-mobile-client-43.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">
+<img src="../kore-data-table/web-mobile-client-43.png" alt="web-mobil../../../apis/automation/api-introduction.md#generating-the-jwt-token80%;">
 
 Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} to generate the token (token= &lt;token>.)
 
-8. Add credentials in the **Credentials** tab.
+8. Add cre../kore-data-table/audiohook-credentials-44.png
 9. Use the **ClientID** and **ClientSecret** of the AI Agent you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
 <img src="../kore-data-table/audiohook-credentials-44.png" alt="audiohook-credentials" title="audiohook-credentials" style="border: 1px solid gray; zoom:80%;">
 
@@ -687,13 +689,13 @@ When a call comes to a Genesys number, it passes through an architect flow. If y
 
 #### Steps to create a call architect flow
 
-1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
+1. Sign in../kore-data-table/genesys-architect-45.pngd.com/){:target="_blank"}.
 2. Go to **Admin** > **Architect** > **Architect**.  
 <img src="../kore-data-table/genesys-architect-45.png" alt="genesys-architect" title="genesys-architect" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/create-inbound-call-flow-46.png
 3. Click the **+Add** button to create an **Inbound Call** **Flow**.  
 <img src="../kore-data-table/create-inbound-call-flow-46.png" alt="create-inbound-call-flow" title="create-inbound-call-flow" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/final-architect-flow-47.png
 4. Click **Create Flow**. The final architect flow looks like the following screenshot:  
 <img src="../kore-data-table/final-architect-flow-47.png" alt="final-architect-flow" title="final-architect-flow" style="border: 1px solid gray; zoom:80%;">
 
@@ -707,11 +709,11 @@ When a call comes to a Genesys number, it passes through an architect flow. If y
 
 Custom Data and Secure Custom Data can be accessed in Welcome Events in Agent AI configuration page and in Dialog Tasks in Agent AI automation page.
 
-Custom Data can be accessed as {{context.session.UserContext.customData.internalMetaData.&lt;key>}}.
+Custom Data can be../../agent-experience/access-custom-data-in-agent-ai.mdrnalMetaData.&lt;key>}}.
 
 Follow [this doc](./../../agent-experience/access-custom-data-in-agent-ai.md) for the detailed steps on how to access Custom Data.
 
-Secure Custom Data can be accessed as {{context.session.UserContext.secureCustomData.&lt;key>}}.
+Secure Custom Data can be accessed a../../agent-experience/access-custom-data-in-agent-ai.md}.
 
 Follow the same steps of [this doc](./../../agent-experience/access-custom-data-in-agent-ai.md) for the detailed information on how to access Secure Custom Data, with the exception of the path being {{context.session.UserContext.secureCustomData.&lt;key>}}.
 
@@ -736,27 +738,27 @@ print(cd.&lt;key>);
         To start chat simulation, you must have access to the Genesys Developer portal (an account with Genesys).  
 
     <img src="../kore-data-table/chat-simulation-48.png" alt="chat-simulation" title="chat-simulation" style="border: 1px solid gray; zoom:80%;"> 
-
+../kore-data-table/chat-simulation-web-messenger-49.png
 2. Click **Web Messenger**, select the **Deployments**, and then click **Start Chat** to initiate the chat request.  
 <img src="../kore-data-table/chat-simulation-web-messenger-49.png" alt="chat-simulation-web-messenger" title="chat-simulation-web-messenger" style="border: 1px solid gray; zoom:80%;">
-
+../kore-data-table/chat-simulation-message-use-50.png
 3. Enter a message on the **Message Us** window, and then click the **Send** icon.  
 <img src="../kore-data-table/chat-simulation-message-use-50.png" alt="chat-simulation-message-use" title="chat-simulation-message-use" style="border: 1px solid gray; zoom:80%;"> 
 
 4. Turn on the **On Queue** toggle on the top-right corner of the page.
-5. A new chat notification appears on the **Genesys Agent Desktop**. Accept the conversation by clicking the **Answer** button on the left panel.
+5. A new c../kore-data-table/interaction-widget-icon-chat-51.pngp**. Accept the conversation by clicking the **Answer** button on the left panel.
 6. Select the **Interaction Widget** icon to view the Agent AI widget.  
 <img src="../kore-data-table/interaction-widget-icon-chat-51.png" alt="interaction-widget-icon-chat" title="interaction-widget-icon-chat" style="border: 1px solid gray; zoom:80%;">
 
 ### Steps to start a Voice Request Simulation
-
+../kore-data-table/call-routing-52.png
 1. In **Call Routing**, assign the **Architect flow** created in **[Step-4](#steps-to-create-a-call-architect-flow)** to a Genesys Phone Number.  
-<img src="../kore-data-table/call-routing-52.png" alt="call-routing" title="call-routing" style="border: 1px solid gray; zoom:80%;">  
+<img src="../k../kore-data-table/create-call-route-53.pngll-routing" title="call-routing" style="border: 1px solid gray; zoom:80%;">  
 
     <img src="../kore-data-table/create-call-route-53.png" alt="create-call-route" title="create-call-route" style="border: 1px solid gray; zoom:80%;">
 
 2. Initiate a call using this Genesys Phone Number.
-3. A new call notification appears on the Genesys Agent Desktop. Accept the conversation by clicking the **Answer** button on the left panel.
+3. A new c../kore-data-table/call-interaction-details-54.pngtop. Accept the conversation by clicking the **Answer** button on the left panel.
 4. Select the **Interaction Widget** icon to view the Agent AI widget.  
 <img src="../kore-data-table/call-interaction-details-54.png" alt="call-interaction-details" title="call-interaction-details" style="border: 1px solid gray; zoom:80%;"> 
 
@@ -769,7 +771,7 @@ To enable this:
 1. Sign in to **[Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}**.
 2. Click **Admin**.
 3. Click **Panel Manager** under the **Contact Center** section. This opens the **Default Contextual Panel**.
-4. Select the interaction widget name in both **Voice** and **Web Messaging** field dropdown lists (refer to step-4 of [Create an Interaction Widget in Genesys for Agent AI](#create-an-interaction-widget-in-genesys-for-agent-ai)).
+4. Select ../kore-data-table/default-contextual-panel-55.png**Web Messaging** field dropdown lists (refer to step-4 of [Create an Interaction Widget in Genesys for Agent AI](#create-an-interaction-widget-in-genesys-for-agent-ai)).
 5. Click **Save**.  
 <img src="../kore-data-table/default-contextual-panel-55.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
 
