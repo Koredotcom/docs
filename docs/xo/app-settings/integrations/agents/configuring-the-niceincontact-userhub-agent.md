@@ -87,13 +87,13 @@ To enable the NiceInContact, follow these steps:
         This option is available only when multiple agents are configured for your AI Agent.
 
 7. You can customize the channel mapping by clicking the Manage link.
-8. Click Manage to map the channels you want to use to the Nice InContact User Hub agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click Manage to map the channels you want to use to the Nice InContact User Hub agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 9. After mapping channels, click **Done**.
 
     <img src="../images/configuring-the-niceincontact-userhub-img4.png" alt="Mapping channels" title="Mapping channels" style="border: 1px solid gray;">
 
 10. Click **Save** to enable the NiceInContact agent.
-11. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
+11. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 ## Execution
@@ -116,7 +116,7 @@ Steps to verify the data exchange between Kore.ai’s agent and NiceInContact Us
     <img src="../images/configuring-the-niceincontact-userhub-img7.png" alt="Start conversaton" title="Start conversation" style="border: 1px solid gray;">
 
 5. Open an AI Agent for which you have enabled the NiceInContact User Hub agent.
-6. Create a new Agent Transfer Node task. For example, create a Talk to Live Agent task with the LiveChats node and configure it to use the Nice agent. For more information, see [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"}.
+6. Create a new Agent Transfer Node task. For example, create a Talk to Live Agent task with the LiveChats node and configure it to use the Nice agent. For more information, see [Agent Transfer Node](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}.
 
     <img src="../images/configuring-the-niceincontact-userhub-img8.png" alt="New Agent Transfer Node task" title="New Agent Transfer Node task" style="border: 1px solid gray;">
 
