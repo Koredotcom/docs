@@ -103,7 +103,7 @@ To configure By AI Agent metrics, ensure the following prerequisites are met:
 
 9. Click **Create** to save the new metric for AI Agent evaluation.
 
-## Response format
+## Response Format
 
 When configuring your AI Agent in the Agent Platform, you must define the response format in the **Description** field to ensure proper communication with Quality AI. This format specification tells the AI Agent how to structure its evaluation responses.
 

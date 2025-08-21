@@ -13,7 +13,7 @@ Steps to create a dialog task using the Shopify action templates:
 3. On the Dialog Task pop-up, under the Integration, select the Shopify option to view the action templates.  
 <img src="../images/shopify-tem-img2.png" alt="Integrations - Shopify" title="Integrations - Shopify" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/shopify-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 ## Shopify Actions
@@ -86,7 +86,7 @@ The following Shopify actions are supported in this release:
 
 Steps to find an order using an order ID:
 
-1. Refer to the [Installing the Shopify templates ](../configuring-the-shopify-action/#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Shopify templates ](configuring-the-shopify-action.md#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
 2. The **Get Order by ID** dialog task is added with the following components:  
 <img src="../images/shopify-tem-img4.png" alt="Get Order by ID dialog task is added" title="Get Order by ID dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -371,7 +371,7 @@ Steps to find an order using an order ID:
 
 Steps to find orders by customer Id in Shopify:
 
-1. Refer to the [Installing the Shopify templates ](../configuring-the-shopify-action/#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Shopify templates ](configuring-the-shopify-action.md#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
 2. The **Get Orders by Customer ID** dialog task is added with the following components:  
 <img src="../images/shopify-tem-img10.png" alt="Get Orders by Customer ID dialog task is added" title="Get Orders by Customer ID dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -671,7 +671,7 @@ Steps to find orders by customer Id in Shopify:
 
 Step to view products by name in Shopify:
 
-1. Refer to the [Installing the Shopify templates ](../configuring-the-shopify-action/#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Shopify templates ](configuring-the-shopify-action.md#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
 2. The **Get Products by Name** dialog task is added for Shopify with the following components:  
 <img src="../images/shopify-tem-img14.png" alt="Get Products by Name dialog task is added" title="Get Products by Name dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -759,7 +759,7 @@ Step to view products by name in Shopify:
 
 Steps to get a product by ID in Shopify:
 
-1. Refer to the [Installing the Shopify templates ](../configuring-the-shopify-action/#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Shopify templates ](configuring-the-shopify-action.md#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
 2. The **Get Product by ID** dialog task is added with the following components:  
 <img src="../images/shopify-tem-img17.png" alt="Get Product by ID dialog task is added" title="Get Product by ID dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -848,7 +848,7 @@ Steps to get a product by ID in Shopify:
 
 Steps to find products using the collection ID in Shopify:
 
-1. Refer to the [Installing the Shopify templates ](../configuring-the-shopify-action/#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Shopify templates ](configuring-the-shopify-action.md#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
 2. The **Get Products by Collection ID** dialog task is added for Shopify with the following components:  
 <img src="../images/shopify-tem-img21.png" alt="Get Products by Collection ID dialog task is added" title="Get Products by Collection ID dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -905,7 +905,7 @@ Steps to find products using the collection ID in Shopify:
 
 Steps to get variants by product ID in Shopify:
 
-1. Refer to the [Installing the Shopify templates ](../configuring-the-shopify-action/#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Shopify templates ](configuring-the-shopify-action.md#step-2-install-the-shopify-action-templates){:target="_blank"}section to install this template.
 2. The **Get Variants by Product ID** dialog task is added for Shopify with the following components:  
 <img src="../images/shopify-tem-img24.png" alt="Get Variants by Product ID dialog task is added" title="Get Variants by Product ID dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 

@@ -94,14 +94,52 @@ Steps to configure general settings:
 
     * **Channel-Specific Display**:
 
-        * **Chat**: Displays only chat-relevant metrics, excluding speech and voice-specific Playbook metrics.
+        * **Chat**: Displays only **Chat-relevant** metrics. Excludes speech-based and Voice-specific Playbook metrics.
 
-        * **Voice**: Includes all applicable Voice metrics.
+        * **Voice**: Displays all applicable **Voice-related** metrics, including speech and Playbook metrics.
 
 5. Set the minimum **Pass Score** percentage for the agent.    
    <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Page2" title="General Settings Page2" style="border: 1px solid gray; zoom:50%;">
 
- 6. Click **Next** to move to the **Evaluation Metrics** section.
+ 6. Click **Next** to move to the **Assignments** section.
+
+ ### Assignments 
+
+This section enables you to create and evaluate the assignments made.   
+<img src="../evaluation-criteria/evaluation-forms/images/assignments-create.png" alt="Assignments Configuration" title="Assignments Configuration" style="border: 1px solid gray; zoom:50%;">
+
+Steps to configure assignments:
+
+1. Search for available queue options.
+
+2. Click **Add Queues** to assign the assignment to queues.
+
+3. You can add or remove the listed queue assignments if required.
+
+    * **Queue-Specific Metrics Display with Conversation Source**:
+
+        * **CCAI Integration**: Configures **Quality AI** to ingest conversation data from CCAI.
+
+        * **Agent AI Integration**: Enables **Quality AI** to process interactions received from Agent AI.
+
+    !!! note
+
+        * Each queue can have only one form associated with a single channel. 
+        
+        * The search list displays accessible queues for assignment. 
+   <img src="../evaluation-criteria/evaluation-forms/images/config-queues.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:60%;">
+
+4. Click **Create** to finalize the form creation. 
+
+   **Form Assignments Rules**
+   
+   * Each queue can have only one Evaluation Form per channel (Voice or Chat).
+
+   * The system automatically scores interactions when agents handle customer conversations.
+
+   * Calculates scores based on metric outcomes and configured weights.
+
+   * You must enable the form to start scoring.
     
 ### Evaluation Metrics 
 
@@ -110,13 +148,23 @@ This section lets you add and create evaluation metrics for each attribute confi
 
  Steps to configure evaluation metrics:
 
-1. Using the **Search option**, select the required evaluation metrics from the available options.   
+1. Using the **Search** option, select the required evaluation metrics from the available options.   
    <img src="../evaluation-criteria/evaluation-forms/images/forms-search-metrics.png" alt="Search Metrics" title="Search Metrics" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Add Evaluation Metrics** to add the selected metrics. 
+2. Choose the **Evaluation Metrics** to assign to the corresponding queues and sources:
+
+* For **CCAI** and **Agent AI** queues, all metrics are available. 
+
+* For **Quality AI Express** queues (alone or in combination with **CCAI** or **Agent AI**), only **By Question** and **By Speech** metrics are allowed. 
 
 3. Click **Edit** to assign weightage to each agent attribute based on importance.    
 <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-edit.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:80%;">
+
+**Metric Type Validations by Conversation Source**
+
+* Allows evaluation form configurations to include queue assignments and validate metric types based on the selected conversation source.
+
+* Enables reordering of metrics after addition to control their display sequence in the **AI-Assisted Manual Audit** screen.
 
     !!! note
 
@@ -124,11 +172,11 @@ This section lets you add and create evaluation metrics for each attribute confi
 
 4. Choose the **Correct Response** to identify the correct answer for validation. 
 
-   * Enables validation of assigned weightage based on the expected response:
+   * Enable validation of assigned weightage based on the expected response:
 
-      * If **Yes** is the correct response; only positive weight allowed.
+      * If **Yes** is the correct response; only positive weight is allowed.
       
-      * If **No** is correct; only zero or negative weight allowed.    
+      * If **No** is the correct response; only zero or negative weight is allowed.    
       <img src="../evaluation-criteria/evaluation-forms/images/outcome-weightage-response.png" alt="Correct Response" title="Correct Response" style="border: 1px solid gray; zoom:80%;">
 
 5. Assign the **Weightage** percentage based on the correct response validation.
@@ -143,44 +191,12 @@ This section lets you add and create evaluation metrics for each attribute confi
 
         * **Yes**: When the agent’s response (such as greeting a customer) matches the correct response, the system assigns positive weightage to that metric. 
 
-        * **No**: When the agent’s response (such as, rude response) does not match the correct response, the system assigns zero or negative weightage accordingly.	
+        * **No**: When the agent’s response (such as a rude response) does not match the correct response, the system assigns zero or negative weightage accordingly.	
 
-7. Toggle the **Fatal Error** if the metric is fatal and considered as a critical failure in the response.    
+7. Toggle the **Fatal Error** if the metric is fatal and considered a critical failure in the response.    
    <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-fatal-error.png" alt="Fatal Error" title="Fatal Error" style="border: 1px solid gray; zoom:80%;">
        
-8. Click **Next** to move to the **Assignments** section. 
-
-### Assignments 
-
-This section enables you to create and evaluate the assignments made.   
-<img src="../evaluation-criteria/evaluation-forms/images/assignments-create.png" alt="Assignments Configuration" title="Assignments Configuration" style="border: 1px solid gray; zoom:50%;">
-
-Steps to configure assignments:
-
-1. Search for available queue options.
-
-2. Click **Add Queues** to assign the assignment to queues.
-
-3. You can add or remove the listed queue assignments if required.
-
-    !!! note
-
-        * Each queue can have only one form associated with a single channel. 
-        
-        * The search list displays accessible queues for assignment. 
-   <img src="../evaluation-criteria/evaluation-forms/images/queues-create.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:60%;">
-
-4. Click **Create** to finalize form creation. 
-
-   **Form Assignments Rules**
-   
-   * Each queue can have only one Evaluation Form per channel (Voice or Chat).
-
-   * The system automatically scores interactions when agents handle customer conversations.
-
-   * Calculates scores based on metric outcomes and configured weights.
-
-   * You must enable the form to start scoring.
+8. Click **Create** to finalize the form creation. 
 
 ## Advanced Configuration
 
@@ -260,25 +276,21 @@ The system calculates conversation scores using weighted metrics. If a score goe
 
 Fatal Error configuration identifies metrics that are crucial to compliance or functional requirements. When enabled, these metrics can override the entire conversation score regardless of other metric performance.
 
-#### Fatal Error Conditions 
+#### Fatal Error Criteria 
 
-Under the following circumstances, a fatal error is triggered:
+* A conversation is marked as a fatal error under any of the following conditions:
 
 * The agent fails to follow the configured process throughout the conversation.
 
-* The agent behaves rudely during the entire interaction.
+* The agent behaves rudely or unprofessionally during the entire interaction.
 
-* The agent skips any safety-critical or any mandatory steps. 
+* The agent skips any safety-critical or mandatory steps.
 
-#### Fatal Error Triggers
+* The agent fails to meet a metric designated as a fatal error.
 
-* Agent fails to meet a metric marked as fatal error.
+Example: Did the agent provide the mandatory disclaimer in the conversation?
 
-* Entire conversation score becomes zero (even if all other metrics pass successfully).
-
-* Other metric performance becomes irrelevant.
-
-**Example**: Did the agent provide the mandatory disclaimer in the conversation?, which is set as fatal, and the agent answers **No** (fails) on that metric, the fatal error is triggered.
+When a required disclaimer is not provided, the chosen metric is marked as a fatal error condition **No**, and the system automatically flags the entire conversation as a fatal error. Where the conversation score becomes zero, even if all other evaluation metrics are passed.
 
 **Use Cases**: Compliance requirements, disclaimer delivery, critical functional requirements.
 
@@ -371,7 +383,7 @@ To resolve this, do the following:
 
 #### Speech Metric Addition Limitation
 
-Evaluation forms support only one speech metric per subtype; **Crosstalk**, **Dead Air**, **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message. 
+Evaluation forms support only one speech metric per subtype: **Crosstalk**, **Dead Air**, and **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message. 
 
 !!! note
 
