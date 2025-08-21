@@ -1,3 +1,4 @@
+# Manual Integration of Agent AI Voice with Genesys Cloud
 
 This document provides detailed instructions on the manual integration process of the Kore.ai Agent AI widget into a Genesys Cloud CX environment when using an **XO 11 App**. It offers step-by-step guidance to ensure a smooth and efficient setup process, covering all necessary aspects of integration from start to finish.
 
