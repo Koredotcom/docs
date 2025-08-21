@@ -5,9 +5,9 @@ In the case of multi-lingual AI Agent, while much of the AI Agent behavior does 
 
 ## Pattern Support
 
-We have seen in [this document](../../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. Those rules are for AI Agents in the English language. Though the multilingual AI Agents honor those rules, the language semantics impose some restrictions.
+Patterns can be used for Intent detection and Entity extraction. Those rules are for AI Agents in the English language. Though the multilingual AI Agents honor those rules, the language semantics impose some restrictions.
 
-Also, patterns can also be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../../automation/knowledge-ai/build-a-knowledge-graph/){:target="blank"} (using alternate question field), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly.
+Also, patterns can also be used in [Small Talk](../../automation/use-cases/small-talk.md#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../automation/knowledge-ai/build-a-knowledge-graph.md){:target="blank"} (using alternate question field), and [Trait](../../automation/natural-language/training/traits.md#trait-definition){:target="_blank"} identification but their behavior might differ slightly.
 
 
 <table border="1">
@@ -1011,7 +1011,7 @@ Hindi
 
 ## Universal App Support
 
-Here we will list out, language-wise, the trigger phrases used in training the Universal app ([see here](../../../universal-bots/training-a-universal-bot){:target="_blank"}) in the supported languages.
+Here we will list out, language-wise, the trigger phrases used in training the Universal app ([see here](../../universal-bots/training-a-universal-bot.txt){:target="_blank"}) in the supported languages.
 
 
 <table border="1">
