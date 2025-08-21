@@ -115,8 +115,8 @@ Go to the **Content** tab to view the ingested content.
 ## RACL Support
 
 * **Public Channels**: 
-For content ingested from public channels, the `sys_racl` field contains the workspace ID. This ensures that the content is accessible to all users within the workspace, as public channels are open to everyone.
+For content ingested from public channels, the `sys_racl` field is automatically populated with the workspace ID. This ensures that the content remains accessible to all users within the workspace, consistent with Slack’s open access model for public channels.
 * **Private Channels**: 
-For content ingested from private channels, the `sys_racl` field contains the channel ID. This restricts access to the content, as private channels are only accessible to users who have been explicitly invited to join the channel.
+For content ingested from private channels, the `sys_racl` field is automatically resolved to the channel ID. This enforces restricted access, aligning with Slack’s policy that only invited members can view content in private channels.
 
-This approach ensures that content permissions are aligned with Slack's access control policies.
+SearchAI now supports automatic resolution of permission entities, streamlining ingestion and ensuring that content permissions accurately reflect Slack’s native access controls.
