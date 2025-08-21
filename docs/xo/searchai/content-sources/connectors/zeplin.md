@@ -2,7 +2,7 @@
 
 Zeplin is a collaboration tool for designers and developers that allows them to hand off UI designs with specs, assets, and code snippets.
 
-Search AI supports searching through the **Screens **in the Zeplin account.  \
+Search AI supports searching through the **Screens** in the Zeplin account.
 
 
 **<span style="text-decoration:underline;">Zeplin Connector Specifications</span>**
@@ -43,9 +43,7 @@ Search AI supports searching through the **Screens **in the Zeplin account.  \
 
 ## Connector Configuration
 
-Search AI interacts with Zeplin via APIs. To use the Zeplin API and authenticate requests sent by Search AI, you can use any one of the following auth mechanisms. 
-
-
+Search AI interacts with Zeplin via APIs. To use the Zeplin API and authenticate requests sent by Search AI, you can use any one of the following auth mechanisms.
 
 * Personal Access Token
 * OAuth 2.0 - For using OAuth 2.0, you need to create a new app in Zeplin. Search AI interacts with the application using the app. 
@@ -53,24 +51,21 @@ Search AI interacts with Zeplin via APIs. To use the Zeplin API and authenticate
 
 ### Generating Personal Access Token
 
-
-
-* Go to the Profile page in your account. 
-* Navigate to the [Developer page](https://app.zeplin.io/profile/developer). 
-* Click on Create new token under Personal access tokens. 
-* Enter a name for the token. 
-* Enable admin access. 
-* Click CREATE. This will generate an access token. Copy the token. It won't be visible once you navigate away from this page. 
+1. Go to the **Profile** page in your account. 
+1. Navigate to the [Developer page](https://app.zeplin.io/profile/developer){:target="_blank"}. 
+1. Under **Personal access tokens**, select **Create new token**. 
+1. Enter a name for the token. 
+1. Select **Enable admin access**. 
+1. Select **CREATE**. The access token is generated.
+1. Copy the token. It will not be visible after you leave the page.
 
 
 ### Creating an OAuth app in Zeplin
 
-
-
-* Go to the Profile page in your account. 
-* Navigate to the [Developer page](https://app.zeplin.io/profile/developer).
-* Click on Create new app under Owned Zeplin apps. 
-* Provide the following details of the app. 
+1. Go to the **Profile** page in your account. 
+1. Navigate to the [Developer page](https://app.zeplin.io/profile/developer){:target="_blank"}.
+1. Under **Owned Zeplin apps**, select **Create new app**. 
+1. Provide the following details of the app. 
     * Name - Enter a unique, identifiable name for the app. 
     * Summary - Provide a brief description of the purpose of the app. 
     * Website - Provide the website url. 
@@ -78,20 +73,17 @@ Search AI interacts with Zeplin via APIs. To use the Zeplin API and authenticate
         * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
         * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
         * Prod Callback URL: https://idp.kore.com/workflows/callback
-    * Click CREATE. This will generate a client ID and client secret. These credentials will be used while configuring the Zeplin connector in Search AI. 
+1. Select **CREATE**. A client ID and client secret are generated. Use these credentials when configuring the Zeplin connector in Search AI. 
 
 
 ### Zeplin Connector Configuration in Search AI
 
 On the **Authorization** tab of the connector, provide the following details.
 
-
-
 * Name - Unique name for the connector. 
 * Authorization Type - Select API Key or OAuth 2.0 as required. 
 
 When the API Key type of authorization is selected, enter the following fields. 
-
 
 
     * API Key - Enter the Personal access token generated in the Zeplin account. This is required when the authorization type is API Key. 
@@ -107,20 +99,22 @@ Click **Connect** to initiate the authentication.
 
 ## Content Ingestion
 
-Once the Zeplin account is successfully connected, navigate to the **Configuration** tab and click **Sync Now** to begin content ingestion. You can also schedule a one-time or recurring sync using the **Scheduler**.
+After connecting the Zeplin account, go to the **Configuration** tab and select **Sync Now** to start content ingestion. You can also schedule a one-time or recurring sync using the **Scheduler**.
 
-During ingestion, the connector retrieves details of all screens across various projects in the connected Zeplin account. Each screen is ingested as a **separate document** in Search AI with the following structure. The doc_source_type field in the ingested content suggests the type of ingested content (i.e., screen).
+During ingestion, the connector retrieves details of all screens across projects in the connected Zeplin account. Each screen is ingested as a **separate document** in Search AI with the following structure:
 
-
-
-* **Title**: Screen name
+* **Title**: Name of the screen
 * **URL**: Direct link to the screen in Zeplin
-* **Content**: List of users with access to the screen and annotations on a screen. Annotations allow adding instructions that remain pinned to a screen. For each annotation, this field contains the author of the annotation, the type of the annotation, and the creation and updation date. 
-* **Project**: Name of the project the screen belongs to
+* **Content**: List of users with access to the screen and annotations on the screen. Includes annotation author, type, and creation and update dates.
+* **Project**: Name of the project containing the screen
 * **Labels**: Tags or labels applied to the screen
-* **Comments**: All comments associated with the screen. For each comment, it lists the author of the comment, the comment text, and the created and updated dates for the comment. 
+* **Comments**: All comments associated with the screen. Includes comment author, text, and creation and update dates. 
 
 
 ## RACL Support
 
-In Zeplin, access to screens is controlled at the project level. Anyone with access to a project automatically has access to all screens within that project. Therefore, the sys_racl field contains the project ID of the project to which the screen belongs. Project ID is added as a permission entity. Hence, use the Permission Entity APIs to associate users with the project ID. 
+In Zeplin, access to screens is controlled at the project level. Anyone with access to a project automatically has access to all screens within that project.
+
+When this content is ingested into Search AI, the project ID is stored in the `sys_racl` field of the chunks related to the ingested content. These project IDs act as permission entities that control access.
+
+SearchAI supports automatic resolution of permission entities for Zeplin screens. It automatically identifies users who have access to a given project. These users are automatically associated with the corresponding project ID permission entity in SearchAI.
