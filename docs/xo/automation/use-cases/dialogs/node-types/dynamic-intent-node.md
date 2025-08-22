@@ -81,7 +81,7 @@ If multiple entities of the same type are captured in a dialog before the Dynami
 **Example:**
 
 Entities:
-    1. Departure City 
+    1. Departure City  
     2. Destination City
 
 After both entities are collected, if a Dynamic Intent Node triggers a child dialog, the **Departure City** (the first captured value) is reused in the child dialog, even though the Dynamic Intent was triggered after the **Destination City** was captured.
