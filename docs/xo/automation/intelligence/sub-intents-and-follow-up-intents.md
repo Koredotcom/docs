@@ -38,7 +38,7 @@ To add exceptions to transition to a specific task, follow the steps:
 5. Define the **Hold and Resume settings** from the list of options below and click **Save**.
 6. The Manage Interruption Behavior page opens with the selected tasks listed under **Exceptions**.
 
-Click [here](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/){target="_blank"} to learn how to manage interruptions.
+Click [here](./conversation-management/manage-interruptions.md){target="_blank"} to learn how to manage interruptions.
 
 <img src="../images/add-exceptions.png" alt="add exceptions" title="add exceptions" style="border: 1px solid gray; zoom:75%;">
 
