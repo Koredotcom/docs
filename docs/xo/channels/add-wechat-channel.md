@@ -1,6 +1,6 @@
 # Adding the WeChat Channel
 
-To set up WeChat as a channel, you need to register for a WeChat Official Account. You also need to enable webhook integrations for the XO Platform to send and receive messages.
+To set up WeChat as a channel, you need to register for a WeChat Official Account. You also need to enable webhook integrations for the Platform to send and receive messages.
 
 Please refer to the WeChat Official Accounts [Registration Process](https://admin.wechat.com/cgi-bin/readtemplate?t=ibg_en/en_faq_tmpl&type=info&lang=en_US) for more information.
 
@@ -17,13 +17,13 @@ For development purposes, you may also use the WeChat Sandbox environment to int
 5. Post successful sign-in, you would be redirected to the Sandbox portal.
 6. The Sandbox portal provides information about your WeChat Sandbox App ID and App Secret.
 7. Make note of **App ID** and **App Secret**.
-8. You need to enter the WebHook **URL** and **Token**, you can obtain these values from the Channel page of the XO Platform as explained below.
+8. You need to enter the WebHook **URL** and **Token**, you can obtain these values from the Channel page of the Platform as explained below.
 
 
 ## Step 2: Set up a Webhook
 
 
-1. In the XO Platform, select the assistant that you want to add the WeChat channel to.
+1. In the Platform, select the assistant that you want to add the WeChat channel to.
 2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **WeChat**.
 3. Navigate to the **Configurations** tab and enter the following details:
     * **App Id** – _App Id_ from the weChat Sandbox portal page.
@@ -32,11 +32,11 @@ For development purposes, you may also use the WeChat Sandbox environment to int
     * _Webhook URL_, and
     * _Access Token_
 5. Update the **WeChat Sandbox portal page** with the above URL and access token and **Save** the details.
-6. **Enable** the weChat channel from the XO Platform.
+6. **Enable** the weChat channel from the Platform.
 <img src="../images/wechat.png" alt="wechat channel configuration" title="wechat channel configuration" style="border: 1px solid gray; zoom:70%;">
 
 
 After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
+To learn more about working with Channels within the Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 

@@ -4,9 +4,9 @@ AI Agents engage end-users primarily using a conversational interface that typic
 
 In a standard Dialog Task, this scenario is designed by placing a series of Entity Nodes connected back-to-back and the user is asked for values for each of these entities sequentially, which is quite tedious and frustrating. Digital Forms mitigate this issue by presenting users with an interactive interface that they can use to provide the information they are asked for in one go.
 
-**Digital Forms** provide a range of input fields that allow your assistant to capture the required details from end-users. After the users complete the form, the input is submitted to the AI Agent to proceed with the task at hand.
+**Digital Forms** provide a range of input fields that allow your AI Agent to capture the required details from end-users. After the users complete the form, the input is submitted to the AI Agent to proceed with the task at hand.
 
-In this article, we discuss the features and implementation of Digital Forms in the XO Platform. For a use case example and a step-by-step implementation of a Digital Form click [here](../configure-digital-forms/){:target="_blank"}.
+In this article, we discuss the features and implementation of Digital Forms in the Platform. For a use case example and a step-by-step implementation of a Digital Form click [here](configure-digital-forms.md){:target="_blank"}.
 
 ## Features
 
@@ -22,11 +22,11 @@ You can access **Digital Forms** from **Automation AI > Digital Skills**.
 
 <img src="../../images/access-digital-forms.png" alt="Access Digital Forms" title="Access Digital Forms" style="border: 1px solid gray; zoom:75%;">
 
-Here is the overall usage process for Digital Forms within the XO Platform
+Here is the overall usage process for Digital Forms within the Platform
 
 * **Form Creation**: Define a Digital Form by adding components and configuring their properties.
 * **Form Invocation**: Forms are invoked from inside a task or process:
-   * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}.
+   * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](../dialogs/node-types/working-with-the-form-node.md){:target="_blank"}.
    * A Digital Form is added to a Digital View with a dialog task triggered when a form is submitted from there.
 
 * **Form Submission**: When it is submitted, the component values are validated and any errors are highlighted. Based on the mode of invocation, post successful validation:
@@ -59,7 +59,7 @@ To create forms, follow the steps below:
 
     <img src="../../images/description-toggle-turn-on.png" alt="Description Toggle" title="Description Toggle" style="border: 1px solid gray; zoom:75%;">
 
-6. **Form Security** – Enable **Secure Form Data** to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.
+6. **Form Security** – Enable **Secure Form Data** to redact form data from the App Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.
 
     <img src="../../images/secure-form-data.png" alt="secure form data" title="secure form data" style="border: 1px solid gray; zoom:75%;">
    
@@ -71,7 +71,7 @@ To create forms, follow the steps below:
 
     <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;">
 
-    Secure Form feature ensures data security at form level. You can achieve securing data at component level too. [Read here](../configure-digital-forms/#form-editor){:target="_blank"} to know more.
+    Secure Form feature ensures data security at form level. You can achieve securing data at component level too. [Read here](configure-digital-forms.md#form-editor){:target="_blank"} to know more.
 
 7. **Pre-Processor script**—The Pre-Processor script in the form settings can be used by the developer to manipulate all the data required for the form that cannot be customized from the UI design view.
 
@@ -578,7 +578,7 @@ Here’s a list of keys and their purpose:
 
 #### formMsgMeta
 
-The formMsgMeta section contains the keys that contain the Standard Responses and Error Messages. If you want to customize these messages and responses, or customize them based on the VA’s language, you can do so in the pre-processor script by manipulating the values of these keys.
+The formMsgMeta section contains the keys that contain the Standard Responses and Error Messages. If you want to customize these messages and responses, or customize them based on the AI Agent’s language, you can do so in the pre-processor script by manipulating the values of these keys.
 
 These messages and responses cannot be customized from the form design UI. The pre-processor script provides you the required mechanism to create status or dynamic responses based on your requirements.
 
@@ -848,7 +848,7 @@ Here’s a list of keys and their purpose:
   </tr>
 </table>
 
-The below use cases explain the steps to make various customizations using the pre-processor script. The digital form to gather data for opening a bank account is being used as an example. Japanese and German languages have been added to the VA.
+The below use cases explain the steps to make various customizations using the pre-processor script. The digital form to gather data for opening a bank account is being used as an example. Japanese and German languages have been added to the AI Agent.
 
 <img src="../../images/xop-8553-case-study-form.png" alt="formMetaData - Case study form" title="formMetaData - Case study form" style="border:1px solid gray; zoom:70%;">
 
@@ -971,7 +971,7 @@ Please note that in such scenarios you will need to add a service node prior to 
 
 Once you configure the basic details for your form, the Platform takes you to the form builder, where you can add the components you require.
 
-You can drag and drop the components available on the left pane to the canvas and configure their properties to build the form. For details of the available components & their properties [see here](../configure-digital-forms/#form-editor){:target="_blank"}.
+You can drag and drop the components available on the left pane to the canvas and configure their properties to build the form. For details of the available components & their properties [see here](configure-digital-forms.md#form-editor){:target="_blank"}.
 
 <img src="../../images/drag-component.gif" alt="Drag and drop component" title="Drag and drop component" style="border: 1px solid gray; zoom:75%;">
 
@@ -1014,7 +1014,7 @@ You can use the **Edit** option from the form listing to edit the form. The foll
 * Use the Move Component _Handle Bar_ against each of the components to change its location by a simple drag and drop action;
 * Use *Form Actions* to:
 
-     * **Test** the form to see the preview of the Digital Form in the XO Platform.
+     * **Test** the form to see the preview of the Digital Form in the Platform.
      * **Delete** the Form. Please keep in mind that deleted forms cannot be restored.
      * Change the Form **Settings** such as name, display name, and description.
 
@@ -1073,17 +1073,17 @@ To invoke a form from a dialog task, follow the below steps:
         * A **Bot Action Node** to determine the transitions to the Form Node and the Sub-dialog Node based on the channels selected.
         * A **Form Node** for the Digital Form, same as was generated for the Only Form UI above.
         * A **Sub-dialog Node** to capture the required entities (as defined in the Digital Form using components) for the conversational experience. 
-        * A **Group** encompassing the following nodes. This grouping can be renamed and/or deleted. [Learn more](../../dialogs/node-connections/grouping-nodes/#add-a-node-group){:target="_blank"}.
+        * A **Group** encompassing the following nodes. This grouping can be renamed and/or deleted. [Learn more](../dialogs/node-connections/grouping-nodes.md#add-a-node-group){:target="_blank"}.
 
         <img src="../../images/form-experience-nodes.png" alt="form experience node" title="form experience node" style="border: 1px solid gray; zoom:75%;">
 
 5. You can set the **Properties** for each of the nodes added.
 
-    * The [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}. Following Component Properties are of special interest:
+    * The [Form Node](../dialogs/node-types/working-with-the-form-node.md){:target="_blank"}. Following Component Properties are of special interest:
         * **Submit Message** – Message displayed to the end-user on successful submission of the form
-        * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. [Learn more](../../dialogs/node-types/working-with-the-form-node/#component-properties/){:target="_blank"}.
+        * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. [Learn more](../dialogs/node-types/working-with-the-form-node.md#component-properties/){:target="_blank"}.
     
-        * **Bot Action Node,** in case of the conversation experience flow, can also be configured in the [Logic Node](../../dialogs/node-types/working-with-the-logic-node/){:target="_blank"} as follows:
+        * **Bot Action Node,** in case of the conversation experience flow, can also be configured in the [Logic Node](../dialogs/node-types/working-with-the-logic-node.md){:target="_blank"} as follows:
 
         * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.<variable_name>```
 
@@ -1091,7 +1091,7 @@ To invoke a form from a dialog task, follow the below steps:
       
                 We urge you not to make changes to the connection settings as this affects the AI Agent's performance.
 
-    * **Sub-dialog Node** is configured as a normal [Dialog Node](../../dialogs/node-types/working-with-the-dialog-node/){:target="_blank"} as follows:
+    * **Sub-dialog Node** is configured as a normal [Dialog Node](../dialogs/node-types/working-with-the-dialog-node.md){:target="_blank"} as follows:
 
         * Use the **Entity Post-assignment** to capture the user input.
         * In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used.
@@ -1107,7 +1107,7 @@ To invoke a form from a dialog task, follow the below steps:
 
 ### Invocation from Panels
 
-Digital Forms are rendered in Digital Views by configuring Widgets & Panels. [Learn more](../digital-views/){:target="_blank"}.
+Digital Forms are rendered in Digital Views by configuring Widgets & Panels. [Learn more](digital-views.md){:target="_blank"}.
 
 To invoke a form using Widgets and Panels, follow the below steps:
 
@@ -1123,7 +1123,7 @@ To invoke a form using Widgets and Panels, follow the below steps:
 7. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
-9. Follow the steps provided [here](/docs/xo/app-settings/dev-tools/kore-ai-web-sdk/){:target="_blank"} to publish and host the panels.
+9. Follow the steps provided [here](../../../app-settings/dev-tools/kore-ai-web-sdk.md){:target="_blank"} to publish and host the panels.
 
     !!! Note
 
@@ -1135,7 +1135,7 @@ When the end-user initiates the dialog and reaches the node connecting to the Fo
 
 ### Form Experience
 
-A **link to the form** is presented to the user. Note that for a synchronous WebHook channel, instead of a link the complete form definition is sent [here](../../../../channels/add-webhook-channel/){:target="_blank"}.
+A **link to the form** is presented to the user. Note that for a synchronous WebHook channel, instead of a link the complete form definition is sent [here](../../../channels/add-webhook-channel.md){:target="_blank"}.
 
 <img src="../../images/UIForms-linkmessage.png" alt="link to form message" title="link to form message" style="border: 1px solid gray; zoom:75%;">
 
@@ -1225,12 +1225,12 @@ Once the form is validated and submitted, the values are available in the contex
 
 The publishing flow for an App with Digital Forms has the following special cases:
 
-As with any assistant, the Digital Forms exist in the following states:
+As with any AI Agent, the Digital Forms exist in the following states:
 
 * **_In-development_** when a form is created.
 * **_Awaiting approval_** when a form is submitted to Publish and the request is waiting for the admin to take action.
 * **_Rejected_** when the Publish request is rejected by the admin.
-* **_Published_** In the XO Platform, the status of a Digital Form remains In Development even after publishing.
+* **_Published_** In the Platform, the status of a Digital Form remains In Development even after publishing.
 
     <img src="../../images/publish-status.png" alt="publish status" title="publish status" style="border: 1px solid gray; zoom:75%;">
 
@@ -1274,7 +1274,7 @@ While the dependencies are published together, chances are that all the dependen
 
 ### Import
 
-Digital Forms are included in the full and incremental import of the assistant.
+Digital Forms are included in the full and incremental import of the AI Agent.
 
 For Full Import:
 
@@ -1292,7 +1292,7 @@ For Incremental Import:
 
 The App Export option is available for Digital Forms with a status of *In Development* or *Published*.
 
-* Digital Forms can be selected/deselected from the **Bot Export** page under the **Bot Tasks** category.
+* Digital Forms can be selected/deselected from the **App Export** page under the **Bot Tasks** category.
 * Choose the option to _Include dependent dialogs_ to export Dialog Tasks that are integrated with the selected Digital Forms to define widgets. 
 **_Note that this does not include the Sub-dialog Tasks generated using Digital Forms._**
 * Complete information for each of the selected forms are available in the export file and this includes:
@@ -1538,7 +1538,7 @@ Used in conjunction with the above Time property
 <br>
 Available only when Secure Field Data is enabled
    </td>
-   <td>Choose how to display the redacted data in the Bot Context, Debug Logs, Service Calls, Agent Transfer and the Bot Kit. Following actions are available:
+   <td>Choose how to display the redacted data in the App Context, Debug Logs, Service Calls, Agent Transfer and the Bot Kit. Following actions are available:
 <ul>
 
 <li>Redaction – The platform will replace the user input with a unique random system-generated alphanumeric value. This is the default setting when the Secure Field Data is enabled
@@ -1619,7 +1619,7 @@ Available only when Secure Field Data is enabled
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<ul><li>The XO Platform now supports <b>Regular Expression (Regex)</b> for more complex validations. It provides a powerful and flexible pattern-matching capability, allowing for precise validation of input formats.</li>
+<ul><li>The Platform now supports <b>Regular Expression (Regex)</b> for more complex validations. It provides a powerful and flexible pattern-matching capability, allowing for precise validation of input formats.</li>
 <li>Regex checks the input field against the specified pattern, which includes the format and conditions that the input must meet. For example, if the age limit should be 18 and above for vaccination, the regular expression is <code>/^(1[89]|[2-9]\d)$/gm</code>.</li><ul>
 </div></li>
 <li><b>Comparison Type</b> – Set to either value or field/component or value type.</li>
@@ -3453,5 +3453,5 @@ context.prefillForms = {
     * Twilio Voice
 
 * You are advised to choose the Conversation Experience for these channels.
-* Digital Forms created in the parent bot are not inherited into **Smart Bots**.
-* The Digital Forms functionality is not applicable for **Universal Bots**.
+* Digital Forms created in the parent app are not inherited into **Smart Apps**.
+* The Digital Forms functionality is not applicable for **Dynamic Routing**.
