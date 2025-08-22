@@ -42,7 +42,7 @@ Search AI enables easy integration with Helpscout and ingests **Article**-relate
 
 ## Prerequisites
 
-Search AI interacts with the HelpScout application using its APIs. To fetch the articles content and metadata, Search AI uses the [Docs APis](https://developer.helpscout.com/docs-api/) exposed by the HelpScout. And to fetch the access-related information and find user details, it uses the [Inbox APIs](https://developer.helpscout.com/mailbox-api/). 
+Search AI interacts with the HelpScout application using its APIs. To fetch the articles content and metadata, Search AI uses the [Docs APis](https://developer.helpscout.com/docs-api/){:target="_blank"} exposed by the HelpScout. And to fetch the access-related information and find user details, it uses the [Inbox APIs](https://developer.helpscout.com/mailbox-api/){:target="_blank"}. 
 
 To access the Docs APIs, Search AI uses an API key. To access the Inbox APIs, it uses OAuth 2.0 authentication.
 To enable communication with both APIs, you need the following:
@@ -94,10 +94,14 @@ Note that the connector only ingests published articles from the HelpScout appli
 
 ## RACL Support
 
-Every article in HelpScout is part of a collection. These collections can be categorized as either public or private. Public collections are visible to everyone, while private collections are only accessible to HelpScout members who have permission to view the collection. 
+SearchAI supports access control for content ingested from HelpScout based on the visibility of article collections.
 
-To manage visibility, the sys_racl field is configured as follows: 
+In HelpScout, each article belongs to a collection, which can be categorized as either public or private.
 
+When this content is ingested into SearchAI, the collection ID (*) is stored in the `sys_racl` field of the chunks related to the ingested content.
 
-* For articles in a public collection, sys_racl is set to *. 
-* For articles in a private collection, sys_racl is set to the collection ID. This ID functions as a permission entity. You can use the permission entity APIs to associate users with the permission entity corresponding to the collection ID.
+* For articles in a public collection, `sys_racl` is set to *, making the content visible to all users.
+
+* For articles in a private collection, `sys_racl` is set to the collection ID. This collection ID acts as a permission entity.
+
+SearchAI supports automatic resolution of permission entities for HelpScout articles. It automatically identifies users who have access to the given collection. These users are automatically associated with the corresponding collection ID permission entity in SearchAI.

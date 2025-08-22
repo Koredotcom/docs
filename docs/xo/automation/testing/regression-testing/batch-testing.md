@@ -9,9 +9,9 @@ To use it, ensure that the [Zero-shot ML Model](../../../generative-ai-tools/gen
 
 !!! Note
 
-    The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"}.
+    The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](./health-and-monitoring/virtual-assistants-health-and-monitoring.md){:target="_blank"}.
 
-To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Automation AI > Virtual Assistant > Testing > Regression Testing** from the left navigation menu, and then the **Batch Testing** tab..
+To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Automation AI > Virtual Assistant > Testing > Regression Testing** from the left navigation menu, and then the **Batch Testing** tab.
 
 
 ## Best Practices
@@ -89,7 +89,7 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 
 #### Generating Test Cases Automatically
 
-You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](../../../../app-settings/generative-ai-tools/introduction/){:target="_blank"} for your app Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
+You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](../../../generative-ai-tools/introduction.md){:target="_blank"} for your app Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
 <img src="../images/batch-testing-9-goto-generate-test-cases-1.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
@@ -117,7 +117,7 @@ Once you add the test cases, they are listed within your test suite, along with 
 
 If you **Upload a Test Cases File**, you can import an array of test utterances, also known as a Dataset at once in a batch file. The Dataset file must be in a CSV or JSON format and can have a maximum of 1000 utterances. You can download the sample CSV or JSON file formats while creating the test suite.
 
-**Important Tip:** For a Universal Bot, to create a test suite, you can add multiple intents in the CSV/JSON file using the upload method. The format includes the intents and the corresponding app names as follows:
+**Important Tip**:For a Universal Bot, to create a test suite, you can add multiple intents in the CSV/JSON file using the upload method. The format includes the intents and the corresponding app names as follows:
 
 ```
 {
@@ -920,7 +920,7 @@ To get a detailed analysis of the test run, click **the Download** icon to downl
 * **Bot Language** (post 7.3 release)
 * **Run Type** identifies the version of the app against which the test suite was run – development or published.
 * **Threshold Setting** (post 7.3 release) detailing the NLP thresholds applied when running this test suite, this would be followed by the settings for each of the three NL engines with the following details:
-    * **Mode** – ml, faq, or, cs
+    * **Mode**– ml, faq, or, cs
     * **minThreshold**
     * **maxThreshold**
     * **exactMatchThreshold**
@@ -930,37 +930,37 @@ To get a detailed analysis of the test run, click **the Download** icon to downl
     * **suggestionsCount**
     * **pathCoverage**
 
-* **Last Tested:** Date of the latest test run for developer-defined utterances.
-* **Utterance Count:** Total number of utterances included in the test run.
-* **Success/Failure Ratio:** Total number of successfully predicted utterances divided by the total count of utterances multiplied by 100.
-* **True Positive (TP):** Percentage of utterances that have correctly matched expected intent.In the case of Small Talk, TP is indicated when the list of expected and actual intents are the same.In the case of Traits, a TP state includes the traits matched over and above the expected matches.
+* **Last Tested**:Date of the latest test run for developer-defined utterances.
+* **Utterance Count**:Total number of utterances included in the test run.
+* **Success/Failure Ratio**:Total number of successfully predicted utterances divided by the total count of utterances multiplied by 100.
+* **True Positive (TP)**:Percentage of utterances that have correctly matched expected intent.In the case of Small Talk, TP is indicated when the list of expected and actual intents are the same.In the case of Traits, a TP state includes the traits matched over and above the expected matches.
 **Note** that when you tag multiple intents (dialog, FAQ, and small talk) to a test utterance, the test result appears as TP if the actual intents match the expected intents but also include ambiguous intents.
-* **True Negative (TN):** Percentage of utterances that were not expected to match any intent and they did not match. Not applicable to Small Talk.
-* **False Positive (FP):** Percentage of utterances that have matched an unexpected intent. In the case of Small Talk, it would be when the list of expected and actual intents are different.
-* **False Negative (FN):** Percentage of utterances that have not matched expected intent. In the case of Small Talk, it would be when the list of expected Small Talk intent is blank but the actual Small Talk is mapped to an intent.  
+* **True Negative (TN)**:Percentage of utterances that were not expected to match any intent and they did not match. Not applicable to Small Talk.
+* **False Positive (FP)**:Percentage of utterances that have matched an unexpected intent. In the case of Small Talk, it would be when the list of expected and actual intents are different.
+* **False Negative (FN)**:Percentage of utterances that have not matched expected intent. In the case of Small Talk, it would be when the list of expected Small Talk intent is blank but the actual Small Talk is mapped to an intent.  
 <img src="../images/batch-testing-18-sample-result-2.png" alt="Sample CSV Test report" title="Sample CSV Test report" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 The report also provides detailed information on each of the test utterances and the corresponding results.
 
-* **Utterances**- Utterances used in the corresponding test suite.
-* **Expected Intent**– The intent expected to match for a given utterance, will include trait where applicable with trait prefix
-* **Matched Intent** – The intent that is matched for an utterance during the batch test. This will include matched traits with trait prefix (post 7.3 release). This will include matched Small Talk intents (post 8.0 release).
-* **Parent Intent** – The parent intent considered for matching an utterance against an intent.
-* **Task State** – The status of the intent or task against which the intent is identified. Possible values include Configured or Published
-* **Result Type**– Result categorized as True Positive or True Negative or False Positive or False Negative
-* **Entity Name** – The name of the entity detected from the utterance.
-* **Expected EntityValue** – The entity value expected to be determined during the batch test.
-* **Matched EntityValue** – The entity value identified from an utterance.
-* **Entity Result** – Result categorized as True or False to indicate whether the expected entity value is the same as the actual entity value.
-* **Expected Entity Order** – entity values from the input file
-* **Actual Entity Order** –
+* **Utterances**: Utterances used in the corresponding test suite.
+* **Expected Intent**: The intent expected to match for a given utterance, will include trait where applicable with trait prefix
+* **Matched Intent**: The intent that is matched for an utterance during the batch test. This will include matched traits with trait prefix (post 7.3 release). This will include matched Small Talk intents (post 8.0 release).
+* **Parent Intent**: The parent intent considered for matching an utterance against an intent.
+* **Task State**: The status of the intent or task against which the intent is identified. Possible values include Configured or Published
+* **Result Type**: Result categorized as True Positive or True Negative or False Positive or False Negative
+* **Entity Name**: The name of the entity detected from the utterance.
+* **Expected EntityValue**: The entity value expected to be determined during the batch test.
+* **Matched EntityValue**: The entity value identified from an utterance.
+* **Entity Result**: Result categorized as True or False to indicate whether the expected entity value is the same as the actual entity value.
+* **Expected Entity Order**: entity values from the input file
+* **Actual Entity Order**:
     * if the order for all expected entities is provided, then the same is included in this column
     * if no order is provided, the system determined order will be included in the column
     * If an order is provided for some entities, then a combination of user-defined order and system-defined order will be included
 
-* **Matched Intent’s Score** – For False Positives and False Negatives, the confidence scores from FM, ML, and/or KG engines are displayed for the matched intent from the utterance. Note that the scores are given only if the engine detects the intent, which means that you may not see the scores from all three engines at all times.
-* **Expected Intent’s Score** – For False Positives, the confidence scores for the intent expected to match for the given utterance is given. Again the score will be given by the engines detecting the intent.
+* **Matched Intent’s Score**: For False Positives and False Negatives, the confidence scores from FM, ML, and/or KG engines are displayed for the matched intent from the utterance. Note that the scores are given only if the engine detects the intent, which means that you may not see the scores from all three engines at all times.
+* **Expected Intent’s Score**: For False Positives, the confidence scores for the intent expected to match for the given utterance is given. Again the score will be given by the engines detecting the intent.
 
 !!! tip
 
