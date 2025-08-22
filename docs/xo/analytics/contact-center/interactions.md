@@ -292,7 +292,9 @@ The transcripts tab also shows the call transfer stages:
 
 * **User transferred to Agent** - When the Automation transfers the voice call to Agent.
 * **User transferred to Automation** - When the Agent transfers the voice call back to Automation.  
-<img src="../images/transfer-stage.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-stage.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:70%;">
+* **Max no-input attempts reached** - when the automation triggers the respective AI Agent behavior for exceeding maximum retries.  
+    <img src="../images/transcript-insights-to-logs.png" alt="Max No-Input Attempts Reached" title="Max No-Input Attempts Reached" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
