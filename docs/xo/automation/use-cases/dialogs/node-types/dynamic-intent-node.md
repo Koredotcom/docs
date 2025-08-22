@@ -76,6 +76,16 @@ Value: `context.path of the value which needs to be assigned to the entity`
 
 Use the flag, `'reuseEntityWords: true',` as part of the pre-conditions to enable entity values extracted in a parent dialog to be automatically available and reused in downstream dialogs without needing to prompt the user again.
 
+If multiple entities of the same type are captured in a dialog before the Dynamic Entity Node is triggered, only the **first entity value** is carried forward to downstream dialogs.
+
+**Example:**
+
+Entities:
+    1. Departure City  
+    2. Destination City
+
+After both entities are collected, if a Dynamic Intent Node triggers a child dialog, the **Departure City** (the first captured value) is reused in the child dialog, even though the Dynamic Intent was triggered after the **Destination City** was captured.
+
 !!! Note
 
     This setting is ignored if the target intent is FAQ.
