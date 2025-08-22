@@ -143,7 +143,7 @@ Contextual intent detection helps in detecting relevant intents using the output
 
 #### Tasks
 
-You can define _Rules_ for identifying contextually relevant intents by using output context tags the same as traits [Learn more](/docs/xo/automation/natural-language/training/traits/){target="_blank"}.
+You can define _Rules_ for identifying contextually relevant intents by using output context tags the same as traits [Learn more](../natural-language/training/traits.md){target="_blank"}.
 
 #### Knowledge Graph
 
