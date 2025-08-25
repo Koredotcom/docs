@@ -93,7 +93,7 @@ The Confusion Matrix can now be generated without requiring every configured int
 
 <u> Patch Release </u>
 
-This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+This update includes enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
 <font size="4">DialogGPT</font>
 
