@@ -308,17 +308,18 @@ Let message = ["this is First message", "https://audiofiile.wav" , "this is seco
 
 3. When you need to collect and process customer voicemail content with metadata.
 
-**Syntax**: `print(voiceUtils.voicemail(message, beepRequired, transcriptionRequired, notifyUrl, metaInfo))`
+**Syntax**: `print(voiceUtils.voicemail(message,beepRequired,transcriptionRequired,notifyUrl,metaInfo,callControlParams))`
 
 **Header Syntax**:
 
-| **Options**             | **Description**                                                                 | **Type**   | **Required** |
+| **Options**             | **Description**                                                                 | **Type**   | **Required/Optional** |
 |--------------------------|----------------------------------------------------------------------------------|------------|--------------|
-| message                  | The message played to the customer before the voicemail recording starts.       | string     | Yes          |
-| beepRequired             | When true, plays a beep sound after the message to indicate the recording start. Default: false | boolean    | No           |
-| transcriptionRequired    | When true, generates text transcription of the voicemail. Default: false        | boolean    | No           |
-| notifyUrl                | Client endpoint URL where voicemail notifications will be sent.                 | string     | Yes          |
-| metaInfo                 | Additional metadata to include with the notification.                           | object     | No           |
+| message                  | The message played to the customer before the voicemail recording starts.       | string     | Required          |
+| beepRequired             | When true, plays a beep sound after the message to indicate the recording start. Default: false | boolean    | Optional           |
+| transcriptionRequired    | When true, generates text transcription of the voicemail. Default: false        | boolean    | Optional           |
+| notifyUrl                | Client endpoint URL where voicemail notifications will be sent.                 | string     | Required          |
+| metaInfo                 | Additional metadata to include with the notification.                           | object     | Optional           |
+| callControlParams                 | An object to define ASR & TTS vendor, language, and their properties.                           | object     | Optional           |
 
 ```
 "metaInfo": {
@@ -328,7 +329,7 @@ Let message = ["this is First message", "https://audiofiile.wav" , "this is seco
 }
 ```
 
-**Example**:
+**Example 1**:
 
 ```
 var message = "Please leave your voicemail after beep and hang up the call";
@@ -346,6 +347,27 @@ var metaInfo={
     "newVar":context.session.opts.streamId
 }
 print(voiceUtils.voicemail(message,beepRequired,transcriptionRequired,notifyUrl,metaInfo));
+```
+
+**Example 2**:
+
+```
+var message = "Por favor, deje su mensaje de voz después del pitido y cuelgue la llamada.";
+var beepRequired=true;
+var transcriptionRequired=true;
+var notifyUrl={
+    "url": "https://puma-singular-regularly.ngrok-free.app",
+    "headers": {
+        "auth":"YOUR_SECURE_TOKEN",
+        'Accept': "application/json",
+        'Content-Type': 'application/json'
+    }
+};
+var metaInfo={
+    "newVar":context.session.opts.streamId
+}
+var callControlParams = {language :"es-US", vendor : "google"}
+print(voiceUtils.voicemail(message,beepRequired,transcriptionRequired,notifyUrl,metaInfo,callControlParams));
 ```
 
 ## Raw Packet (JavaScript Code)

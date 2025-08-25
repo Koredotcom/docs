@@ -212,6 +212,10 @@ Steps to attach a flow to the SIP Number:
 3. The attached flows appear. A pie icon appears below the attached flows. Hovering over the pie icon displays "**Configured**".  
     <img src="../images/sip-flow-attached.png" alt="FLows Attached SIP" title="Flows Attached SIP" style="border: 1px solid gray; zoom:80%;">
 
+!!! Note
+
+    You cannot attach channels to the Default Welcome Voice flow or Default Welcome Chat flow. Channels already attached to these flows will continue to function as configured. However, if a channel is reattached to a different flow, it cannot be reattached to a Default Welcome Voice flow or Default Welcome Chat flow.
+
 ### Edit a SIP Number
 
 Steps to edit a previously added SIP number:

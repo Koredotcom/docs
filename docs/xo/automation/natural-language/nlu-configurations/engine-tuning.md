@@ -738,7 +738,7 @@ The embedding dimension defines the size of the embedding vector. If the word em
 
 ### K Fold Cross-Validation
 
-Cross-validation is a resampling technique employed to assess the performance of machine learning models when working with a restricted data sample. This process involves a key parameter known as "**k**," which signifies the number of partitions into which the data sample is divided. This configuration provides you with the capability to adjust and set the value of the parameter "**k**." <a href="#k-fold-cross-validation" target="_blank">Learn more</a>  for more on cross-validation.
+Cross-validation is a resampling technique employed to assess the performance of machine learning models when working with a restricted data sample. This process involves a key parameter known as "**k**," which signifies the number of partitions into which the data sample is divided. This configuration provides you with the capability to adjust and set the value of the parameter **k**. <a href="#k-fold-cross-validation" target="_blank">Learn more</a>  for more on cross-validation.
 
 ### Fuzzy Match
 
@@ -768,7 +768,7 @@ Disabling this configuration sends the original user input to ML for intent iden
 
 ### Multiple Intent Model
 
-Enabling this feature creates multiple ML intent models for your app. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#the-multiple-intent-model){:target="_blank"}.
+Enabling this feature creates multiple ML intent models for your app. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. [Learn more](../training/machine-learning-engine.md#the-multiple-intent-model){:target="_blank"}.
 
 ### Lemmatization of KG Synonyms
 
@@ -952,7 +952,7 @@ When these settings are selected and enabled, the spell correction will happen a
 
 ### Spell Correction Version
 
-This configuration flexibility allows users to select the spell correction version that best suits their needs for existing VAs, while new bots or those without spell correction enabled will default to Version 2.
+This configuration flexibility allows users to select the spell correction version that best suits their needs for existing apps, while new apps or those without spell correction enabled will default to Version 2.
 
 ### Spell Correction Status
 

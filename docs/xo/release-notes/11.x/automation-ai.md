@@ -2,6 +2,21 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.17.0 August 23, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">API</font>  
+
+**Call ID Support in the getMessage API for AudioCodes and SAVG**   
+
+To improve access to app-user conversation history for voice interactions, the getMessage API now accepts callId as an optional query parameter for AudioCodes and SAVG. It aims to reduce latency and infrastructure load for high-volume customers who retrieve conversational data for analysis and auditing. [Learn more :octicons-arrow-right-24:](../../apis/automation/conversation-history.md#sample-request)
+
+
+<hr>
+
 ## v11.16.1 August 11, 2025
 
 <u> Patch Release </u>

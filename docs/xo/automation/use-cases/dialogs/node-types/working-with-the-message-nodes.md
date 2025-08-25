@@ -19,7 +19,7 @@ For example, the _Book Flights_ sample dialog uses the following message nodes:
 * **_FinalFlightinfo_**: This shows the flight itineraries that the _Flights info_ service node returns.
 * **_Thanks_**: After showing the final flight details, prompts the user if they have any other requests.
 
-To understand customized JavaScript responses and channel-specific templates, refer to [_Customize JavaScript Responses_](../prompt-editor.md#javascript-prompts-or-responses){:target="_blank"} in [_User Prompts_](../../prompt-editor){:target="_blank"} article.
+To understand customized JavaScript responses and channel-specific templates, refer to [_Customize JavaScript Responses_](../prompt-editor.md#javascript-prompts-or-responses){:target="_blank"} in [User Prompts](../prompt-editor.md){:target="_blank"} article.
 
 
 ## Set-Up
@@ -29,7 +29,7 @@ Setting up a Message node in a dialog task involves the following steps:
 ### Add Node
 
 1. Open the dialog task to add the Message node.
-2. Add a message node in the designated place. For steps in adding nodes, read the [Using the Dialog Builder](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"} article.
+2. Add a message node in the designated place. For steps in adding nodes, read the [Using the Dialog Builder](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"} article.
 
     !!! note
 
@@ -48,7 +48,7 @@ Setting up a Message node in a dialog task involves the following steps:
 
 1. On the **Component Properties** tab, enter a **Name** and **Display Name** for the message node.
 2. Under the **Bot Responses** section, compose and format the bot response either as plain text or as a JavaScript message. A default message is set by the platform, you can customize it.
-3.  Enter channel-specific messages for bot responses using the **Manage** link. For more information, read the [Using the Prompt Editor](../../prompt-editor/){:target="_blank"} article.
+3.  Enter channel-specific messages for bot responses using the **Manage** link. For more information, read the [Using the Prompt Editor](../prompt-editor.md){:target="_blank"} article.
 4. To add more bot responses, click **Add Bot Response** and repeat the above steps.
 5. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
 <img src="../images/re-responses.png" alt="Rephrase Responses" title="Rephrase Responses" style="border:1px solid gray;zoom:70%;">
@@ -71,12 +71,11 @@ To generate a report link, follow these steps:
     3. **Details** – End-user help information displayed directly below the header, describing the content of the report. For example, _Review your Shopping Cart_, _and then click Continue when you are ready to place your order._
     4. **Data Path** – Path for the data, usually the response from the web service. For example, _context.ShoppingCartService.response.body_
     5. **Template** – Select one of the following format templates to display the data from the task response. For each type, define the **Column Name**, **Key Mapping**, **Data Type**, and template-specific options.
-        * **Table** – Uses a table format with defined columns. Each mapping for the **Table** template is set to **Is Sortable**, **Display as an image**, and **Display it as a link**. For more information, refer to the [Defining a Table Report](../../defining-reports/defining-a-table-report/){:target="_blank"} article and [Report Link ](https://community.kore.ai/t/report-link-is-not-getting-displayed-in-message-node/1676){:target="_blank"}community post.
-        * **Fixed Column Table** – Uses a table format with one or more columns fixed. Each mapping for the **Fixed Column Table** template is set to **Is Sortable**, **Column in fixed**, **Display as an image**, and **Display it as a link**. For more information, refer to the [Defining a Fixed-Column Table Report](../../defining-reports/defining-a-fixed-column-table-report/){:target="_blank"} article.
-        * **Card Layout** – Uses a contact card format. Each mapping for the **Card Layout** template is set to **Is Sortable**, **Display as an image**, and **Display it as a link**. For more information, refer to the [Defining a Card Layout Report](../../defining-reports/defining-a-card-layout-report/){:target="_blank"} article.
-        * **Weather Info** – Define a date for a weather service response payload. Each mapping for the **Weather Info** template is set to **Is Sortable**, **Display as an image**, and **Display it as a link**. For more information, refer to [Defining a Weather Info Report](../../defining-reports/defining-a-weather-info-report/){:target="_blank"} article.
-        * **Card Layout with Group By** – Shows a list of items grouped by a specific field. For more information, refer to the [Define a Card Layout with Group By Report](../../defining-reports/define-a-card-layout-with-group-by-report/){:target="_blank"} article.
-
+        * **Table** – Uses a table format with defined columns. Each mapping for the **Table** template is set to **Is Sortable**, **Display as an image**, and **Display it as a link**. For more information, refer to the [Report Link ](https://community.kore.ai/t/report-link-is-not-getting-displayed-in-message-node/1676){:target="_blank"}community post.
+        * **Fixed Column Table** – Uses a table format with one or more columns fixed. Each mapping for the **Fixed Column Table** template is set to **Is Sortable**, **Column in fixed**, **Display as an image**, and **Display it as a link**. 
+        * **Card Layout** – Uses a contact card format. Each mapping for the **Card Layout** template is set to **Is Sortable**, **Display as an image**, and **Display it as a link**. 
+        * **Weather Info** – Define a date for a weather service response payload. Each mapping for the **Weather Info** template is set to **Is Sortable**, **Display as an image**, and **Display it as a link**. 
+        * **Card Layout with Group By** – Shows a list of items grouped by a specific field. 
 3. Click **Save**.
 
 

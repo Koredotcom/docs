@@ -25,7 +25,9 @@ Distinct icons for each communication channel ensure clarity and better interact
 
 <img src="../images/voice-mail.png" alt="Voice Mail" title="Voice Mail" style="border: 1px solid gray; zoom:70%;">  
 
-<img src="../images/email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;"> 
+
+<img src="../images/click-to-call.png" alt="Click to Call" title="Click to Call" style="border: 1px solid gray; zoom:70%;"> 
 
 ## Color Codes
 

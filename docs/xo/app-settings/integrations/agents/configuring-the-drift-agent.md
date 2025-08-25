@@ -92,13 +92,13 @@ To set up the retrieve the verification token, follow these steps:
 
     <img src="../images/configuring-the-drift-agent-img8.png" alt="Customizing the channel" title="Customizing the channel" style="border: 1px solid gray;">
 
-7. Click Manage to map the channels you want to use Drift agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+7. Click Manage to map the channels you want to use Drift agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 
     <img src="../images/configuring-the-drift-agent-img9.png" alt="Mapping channels to Drift agent" title="MApping channels to Drift agent" style="border: 1px solid gray;">
 
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Drift agent.
-10. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
+10. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 ## Execution
@@ -108,7 +108,7 @@ This section helps you verify how the conversations from the Kore.ai XO Platform
 To verify the data exchange between Kore.ai’s AI Agent and Drift agent, follow these steps:
 
 1. Open a App for which you have enabled the Drift agent.
-2. Create a new **Agent Transfer Node** task. For example, create a **Talk to Live Agent** task with the **LiveChats** node and configure it to use the Drift agent. For more information, see [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"}.
+2. Create a new **Agent Transfer Node** task. For example, create a **Talk to Live Agent** task with the **LiveChats** node and configure it to use the Drift agent. For more information, see [Agent Transfer Node](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}.
 
     <img src="../images/configuring-the-drift-agent-img10.png" alt="New Agent Transfer Node task" title="New Agent Transfer Node task" style="border: 1px solid gray;">
 

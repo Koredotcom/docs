@@ -447,6 +447,7 @@ nav:
           - Co-Browse: contactcenter/configurations/settings/co-browse.md
           - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
           - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
+          - Automatic Away Status for Agent Inactivity: contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
           - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
@@ -454,7 +455,7 @@ nav:
           - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
           - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
           - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
-    - Performance Management:
+          - Wrap-up Code Prediction: contactcenter/configurations/settings/wrap-up-code-prediction.md
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
@@ -557,7 +558,7 @@ nav:
       - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
-      - Genesys Cloud CX using Kore Data Table: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx-using-kore-data-table.md
+      - Genesys Cloud CX: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md
       - NICE CX:
         - NICE MAX Desktop (Chat and Voice): agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
         - NICE MAX Desktop for Outbound Calls: agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md
@@ -608,6 +609,7 @@ nav:
       - Search AI - GenAI Features: generative-ai-tools/genai-features-searchai.md
       - Agent AI - GenAI Features: generative-ai-tools/genai-features-agentai.md
       - Contact Center AI - GenAI Features: generative-ai-tools/genai-features-contactcenterai.md
+      - Quality AI - GenAI Features: generative-ai-tools/genai-features-qualityai.md
     - DialogGPT:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
@@ -703,7 +705,7 @@ nav:
             - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
             - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
             - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
-            - Voice Automation with Genesys Agent Desktop using SIP Invite Protocol: contactcenter/integrations/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol.md
+            - Voice Automation with Genesys Agent Desktop using SIP Invite Protocol: contactcenter/integrations/voice-automation-using-sip-invite-protocol/genesys-agent-desktop.md
           - Multibot:
             - Multibot Integration with Genesys: contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md
     - APIs and SDKs:

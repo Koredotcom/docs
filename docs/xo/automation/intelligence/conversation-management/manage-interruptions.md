@@ -10,7 +10,7 @@ It includes an entity value for the assistant to proceed with the current intent
 
 AI Agents must account for this by allowing users to pause a task, start and complete another task, and seamlessly return to the original task without losing important contextual data and conversation continuity.
 
-Kore.ai provides granular control over the hold and resume functionality at the AI Agent, task, and node levels, and allows you to [control context switching](/docs/xo/automation/intelligence/context-management){target="_blank"} rules and behaviors with the **Manage Interruptions** feature. You can handle such interruptions in intent flows by providing a whole range of options to select if and how a user can switch to another task, the exit strategies, and the task-switching experience.
+Kore.ai provides granular control over the hold and resume functionality at the AI Agent, task, and node levels, and allows you to [control context switching](../context-management.md){target="_blank"} rules and behaviors with the **Manage Interruptions** feature. You can handle such interruptions in intent flows by providing a whole range of options to select if and how a user can switch to another task, the exit strategies, and the task-switching experience.
 
 Managing Interruptions ensures the configurations for interruptions are layered to suit your various business requirements. This includes allowing, disallowing, and letting the user manage interruptions. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
 
@@ -37,7 +37,7 @@ To customize the interruptions settings for a node:
 
 1. Open the dialog task and then the node to change settings.
 2. Click the **instance tab** and select **Advanced Controls**.
-3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the app level [interruptions](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/){target="_blank"}.
+3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the app level [interruptions](#manage-interruptions){target="_blank"}.
 
    <img src="../images/node-level-customization.gif" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:65%;">
 
@@ -51,7 +51,7 @@ To customize the Interruptions settings for a dialog:
 2. On the top-right of the dialog builder, click the **more options icon** and then click **Manage Interruptions**.
 <img src="../images/dialog-level-manage-interruptions.png" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:75%;">
 
-3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the App Level [interruptions](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#allow-interruptions){target="_blank"}.
+3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the App Level [interruptions](#allow-interruptions){target="_blank"}.
 
 <img src="../images/dialog-level-manage-interruptions.png" alt="dialog level manage interruptions" title="dialog level manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
@@ -117,13 +117,13 @@ Following are the options under **Allow interruptions**.
 
 ##### Do not allow interruptions
 
-When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the [Interruptions Hierarchy](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#interruptions-hierarchy){target="_blank"} section above for more information.
+When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the [Interruptions Hierarchy](#interruptions-hierarchy){target="_blank"} section above for more information.
 
 ##### Allow the end user to select the behavior
 
 When you select this option, the AI Agent presents the end-user with a confirmation message asking if the user wants to switch to a new task. The AI Agent switches to the new task only if the end-user chooses to do so. You can customize the confirmation message sent to the user by clicking the **Manage Response** link next to the option.
 
-You need to define a *Resume* option that the AI Agent should take if the user decides to switch the task. Refer to the [Resume Options](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#resume-options){target="_blank"} section below for details.
+You need to define a *Resume* option that the AI Agent should take if the user decides to switch the task. Refer to the [Resume Options](#resume-options){target="_blank"} section below for details.
 
 ##### Resume Options
 
