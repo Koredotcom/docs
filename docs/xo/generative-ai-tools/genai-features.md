@@ -155,20 +155,27 @@ Learn more about [Agent AI - GenAI Features](genai-features-agentai.md).
 ## Contact Center AI - GenAI Features
 
 
-
-* Agent Empathy Identification
 * Agent Response Rephrasing
-* By Value Adherence validation for Quality AI
-* By Value metric extraction for Quality AI
-* Churn & Escalation Identification
 * Conversation Summary
-* Crutch Word Usage Detection
-* Default Script Adherence
-* GenAI based agent answer adherence and customer trigger detection
-* Generating Similar QM Utterance Suggestions
-* Post-Interaction Sentiment Analytics and Key Emotion Moments
+* Disposition Prediction for Agent Wrap-Up
+* Post conversation Sentiment analysis
 * Sentiment Analysis
-* Topic Modelling
+
 
 Learn more about [Contact Center AI - GenAI Features](genai-features-contactcenterai.md).
 
+## Quality AI - GenAI Features
+
+* Agent Empathy Identification
+* By Value Adherence validation for Quality AI
+* By Value metric extraction for Quality AI
+* Churn & Escalation Identification
+* Conversation Phase Identification
+* Crutch Word Usage Detection
+* Default Script Adherence
+* GenAI-based agent answer adherence and customer trigger detection
+* Generating Similar QM Utterance Suggestions
+* Sentiment Analysis
+* Topic Modelling
+
+Learn more about [Quality AI - GenAI Features](genai-features-qualityai.md).
