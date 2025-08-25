@@ -229,4 +229,3 @@ Your dialog with form is ready! **Test** and trigger the above dialog. The form 
 
 You can use the context object as shown above it a **Script** or **Service** nodes for further processing.
 
-Click [here](../../../../how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables/){:target="_blank"} to learn how to add this data to a data table.

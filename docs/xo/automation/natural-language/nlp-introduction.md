@@ -106,7 +106,7 @@ Machine Learning (ML) is the recommended engine for training a app. The reason f
 
 If you have a large corpus for each intent that you are planning to implement, then use Machine Learning. If you don’t have a corpus it would be a good idea to develop one. In the long run, it is better to spend time building a large corpus and use ML rather than going for the other less time-consuming, easier options.
 
-The way you define a large corpus could differ depending on the intents. For example, if the intentions are very different from each other and can be understood using their sample data like “Find Flight” or “Change Sear“, then a corpus of 200-300 for each intent is sufficient. However, if intents are closer to each other (and usually start with a similar utterance, such as “Change Seat” and “Change Flight”, then the corpus should be in 1000s.
+The way you define a large corpus could differ depending on the intents. For example, if the intentions are very different from each other and can be understood using their sample data like “Find Flight” or “Change Sear“, then a corpus of 200-300 for each intent is sufficient. However, if intents are closer to each other and usually start with a similar utterance, such as “Change Seat” and “Change Flight”, then the corpus should be in 1000s.
 
 Similarly, if you are planning to use Deep Neural Networks, you need a higher number of samples for better predictions of both True Positives and True Negatives, as these networks are data-hungry. [Learn more](../tools/intent-discovery.md#train-the-utterances){:target="_blank"}.
 
