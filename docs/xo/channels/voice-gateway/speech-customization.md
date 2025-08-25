@@ -499,7 +499,7 @@ To handle this scenario:
 ### Barge-In Scenarios
 
 The Barge-In feature controls KoreVG behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.
-../images/optional-message-parameter.png
+
 | **Parameter**                    | **Type**                                                                             | **Supporting STT/TTS**                           | **Description**                                                                                                               |
 | -------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | `listenDuringPrompt`             | Boolean (true or false)<br>Similar to Barge-In                                       | STT – Google and Microsoft<br>TTS – Not Required | If `false`, the bot does not listen for user speech until the response finishes playing.<br>**Default:** `true`.              |
@@ -539,3 +539,31 @@ For example, if a user speaks in English, the conversation will continue in Engl
 15. Publish the bot.
 
 These steps will ensure the bot can detect the user's language at the start and adjust the conversation flow accordingly.
+
+### Click-to-Call
+
+To configure ASR (Automatic Speech Recognition) and TTS (Text-to-Speech) in a ClickToCall flow, add the call control parameters in the [Script Task](../../flows/node-types/script-task.md) node at the start of the flow. The parameters must be set in the following format:
+
+```
+const ccParamList = [
+    { key: 'ttsLanguage', val: 'ja-JP' },
+    { key: 'ttsProvider', val: 'google' },
+    { key: 'voiceName', val: 'ja-JP-Wavenet-B' },
+   
+    { key: 'sttLanguage', val: 'ja-JP'},
+    { key: 'sttProvider', val: 'microsoft'}
+
+];
+
+ccParamList.forEach((ccParam) => {
+    userSessionUtils.setCallControlParam(ccParam.key, ccParam.val);
+})
+```
+
+| Parameter   | Type   | Description                                         | Example            |
+|-------------|--------|-----------------------------------------------------|--------------------|
+| ttsLanguage | String | Specifies the language code for text-to-speech output. | ja-JP              |
+| ttsProvider | String | Defines the provider for text-to-speech services.     | google             |
+| voiceName   | String | Identifies the voice to be used for text-to-speech output. | ja-JP-Wavenet-B |
+| sttLanguage | String | Specifies the language code for speech-to-text recognition. | ja-JP          |
+| sttProvider | String | Defines the provider for speech-to-text services.     | Microsoft          |

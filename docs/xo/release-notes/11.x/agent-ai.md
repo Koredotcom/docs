@@ -2,6 +2,37 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.17.0 August 23, 2025
+
+<u>Minor Release</u>
+
+<font size="4">Widget Enhancement</font>
+
+**Enhanced Feedback Settings Section**
+
+The Overall Widget Feedback feature allows admins to configure feedback options that agents can select for the Agent AI widget during conversations. It is available in ‘Feedback Settings’ and is disabled by default. Once enabled, admins can: 
+
+* Select a display language.
+* Configure up to six positive and six negative feedback options.
+* Enable up to five options from each category simultaneously.
+* Display or hide an additional comment box.
+
+**Enhanced Dashboard**
+
+The **Dashboard** > **Overall Widget Feedback** section displays feedback metrics submitted by agents. 
+
+<font size="4">Integration Enhancements</font>
+
+**Kore Voice Bot with Amazon Connect and Agent Assist**
+
+Amazon Connect’s External Voice Connector now routes inbound voice calls through the Kore Voice Bot. Upon escalation, the system passes metadata, including Customer ID, Session ID, detected intent, and transcripts, as contact attributes or SIP headers, processes it in the Amazon Connect desktop, and displays it in the Agent AI widget. This flow ensures seamless metadata continuity from the Kore Voice Bot to the agent desktop and Agent AI widget.
+
+**Hooks API for Internal Transfers**
+
+Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. 
+
+<hr>
+
 ## v11.16.1 August 11, 2025
 
 <u>Patch Release</u>

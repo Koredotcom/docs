@@ -3,13 +3,13 @@
 
 ## Prerequisites
 
-[How to Access the Kore.ai XO Platform?](../../../../getting-started/accessing-the-platform/){:target="_blank"}
+[How to Access the Platform?](../../../getting-started/accessing-the-platform.md){:target="_blank"}
 
 ## Introduction
 
 This article takes you through the major features you can access via the Dialog Builder.
 
-The Dialog Builder is a key component of the Kore.ai XO Platform, and you can use it to develop full conversations between your AI Agent and your users – from design to development, training, and testing.
+The Dialog Builder is a key component of the Platform, and you can use it to develop full conversations between your AI Agent and your users – from design to development, training, and testing.
 
 The Dialog Builder Provides Conversation, Logic, and NLP-based tools and multiple opportunities to develop your conversational AI Agent. You can Design, Build, and Train from within a familiar interface, which improves development efficiency and enhances results.
 
@@ -125,9 +125,9 @@ You can access more Dialog Task options like **Display, Dialog Settings, Manage 
 
 Please see the articles linked below for information on:
 
-* [Dialog Settings](../using-the-dialog-builder-tool/#dialog-settings){:target="_blank"},
-* [Manage Interruptions](../../../intelligence/conversation-management/manage-interruptions){:target="_blank"},
-* [Manage Ammend Behavior.](../../../natural-language/nlu-configurations/amend-entities){:target="_blank"}
+* [Dialog Settings](using-the-dialog-builder-tool.md#dialog-settings){:target="_blank"},
+* [Manage Interruptions](../../intelligence/conversation-management/manage-interruptions.md){:target="_blank"},
+* [Manage Ammend Behavior.](../../natural-language/nlu-configurations/amend-entities.md){:target="_blank"}
 
 
 ## Dialog Builder - Conversation Design and Logic Building
@@ -140,19 +140,18 @@ You can access them by creating a new Dialog Task or opening an existing one
 
     This guide applies to the new Dialog Builder. If your tasks are using the previous version, please consider upgrading.
 
-You can build Dialogs by adding and configuring [nodes](../node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
+You can build Dialogs by adding and configuring [nodes](node-types/nodes-transitions.md){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
 
 The Dialog Builder interface consists of:
 
-1. [Tool Set](../using-the-dialog-builder-tool/#the-tool-set)
-2. [Index Panel](../using-the-dialog-builder-tool/#the-index-panel)
-3. [Node Panel](../using-the-dialog-builder-tool/#the-node-panel)
-4. [Canvas](../using-the-dialog-builder-tool/#the-canvas)
+1. [Tool Set](using-the-dialog-builder-tool.md#the-tool-set)
+2. [Index Panel](using-the-dialog-builder-tool.md#the-index-panel)
+3. [Node Panel](using-the-dialog-builder-tool.md#the-node-panel)
+4. [Canvas](using-the-dialog-builder-tool.md#the-canvas)
 
  <img src="../images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray;zoom:70%;">
 
 
 **Related Links**
 
-* [Using the Dialog Builder](../using-the-dialog-builder-tool){:target="_blank"}
-* [Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/){:target="_blank"}
+* [Using the Dialog Builder](using-the-dialog-builder-tool.md){:target="_blank"}

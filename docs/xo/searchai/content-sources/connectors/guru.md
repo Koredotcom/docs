@@ -44,7 +44,7 @@ Search AI Connector uses Guru APIs to access the resources on the application an
 
 To generate a user token, follow the below steps.
 
-* Navigate to the [Apps & Integrations](https://app.getguru.com/manage/integrations/apps) page under the **Manage** menu.
+* Go to the [Apps & Integrations](https://app.getguru.com/manage/integrations/apps) page under the **Manage** menu.
 * Click on the [API Access](https://app.getguru.com/settings/integrations/api-access) tab to manage your tokens.
 * Generate an API token by selecting Generate User Token and entering your name.
 
@@ -53,11 +53,9 @@ To generate a user token, follow the below steps.
 
 Go to the Connectors home page in Search AI. Select Guru Connector. Provide the following details in the **Authorization** tab and click **Connect** to set up the connection. 
 
-
-
 * **Name**: Unique name for the connector. 
-* **User Email**: Provide the email address of the user account from which ingestion is to be done. 
-* **User Password**: Provide the User Token generated above. 
+* **User Email**: Enter the email address of the user account from which ingestion is to be done. 
+* **User Password**: Enter the User Token generated above. 
 
 
 ## Content Ingestion
@@ -69,7 +67,7 @@ For each card, it ingests the card's content along with its metadata like creati
 
 ## RACL Support
 
-A Guru card can have the following privacy levels. The sys_racl field is populated according to the privacy level of a card. 
+A Guru card can have the following privacy levels. The `sys_racl` field is populated according to the privacy level of a card. 
 
 
 <table>

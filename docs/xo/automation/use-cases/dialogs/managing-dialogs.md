@@ -298,4 +298,4 @@ After the modifications to the upgraded task, the task status is set to **Config
 
 **Next Steps**
 
-You might want to look into how to work with the Prompt Editor, [refer here for more](../prompt-editor/){:target="_blank"}.
+You might want to look into how to work with the Prompt Editor, [refer here for more](prompt-editor.md){:target="_blank"}.

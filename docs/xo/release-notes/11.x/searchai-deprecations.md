@@ -81,7 +81,7 @@ This deprecation is essential to:
 * **VDR** - For Image embeddings
 
 
-#### Impact on Existing Applications
+**Impact on Existing Applications**
 
 After September 30, your existing applications will automatically switch to BGE V2 and VDR.
 
@@ -208,14 +208,14 @@ If you are using a re-ranker, to update the re-ranker model, follow the instruct
 ## Impact on Your Applications
 
 
-### Existing Applications
+**Existing Applications**
 
-* **No action is required** after the automatic migration timelines have been met. All migrations will happen automatically.
+* No action is required after the automatic migration timelines have been met. All migrations will happen automatically.
 * Applications will continue functioning without interruption.
 * You may notice improved search accuracy and faster crawling after migration.
 
 
-### New Applications
+**New Applications**
 
 * Automatically use BGE V2, VDR, and the new crawler.
 * No configuration needed - best practices are applied by default.

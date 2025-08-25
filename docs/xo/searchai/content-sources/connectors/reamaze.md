@@ -49,9 +49,7 @@ This token is used to access content from the Re:amaze application via its APIs.
 
 ## Configure Re:amaze Connector in Search AI
 
-Go to the **Authorization page** of the Re:amaze Connector, provide the following configuration fields, and click **Connect**. 
-
-
+Go to the **Authorization page** of the Re:amaze Connector, enter the following configuration fields, and click **Connect**. 
 
 * **Name**: Unique name for the connector.
 * **Brand Name**: Domain name of the brand corresponding to which data is to be ingested. Each Re:amaze account may contain one or more brands, and each brand's host domain can be found on the Brand Settings Page. 

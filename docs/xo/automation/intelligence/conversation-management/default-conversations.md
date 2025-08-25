@@ -2,9 +2,9 @@
 
 There are multiple places where the platform responds to user utterances without the developer having to code the details. Examples include:
 
-* **Intent not Identified** when the user intent is not found or understood by the AI Agent. [Learn more](../../event-handling/#intent-not-available-event){:target="_blank"}.
+* **Intent not Identified** when the user intent is not found or understood by the AI Agent. [Learn more](../event-handling.md#intent-not-identified){:target="_blank"}.
 * **Standard Responses** to certain questions, greetings, error and warning scenarios, etc.
-* **Event Handlers** for certain common AI Agent events can be defined. [Learn more](/docs/xo/automation/intelligence/event-handling/){target="_blank"}.
+* **Event Handlers** for certain common AI Agent events can be defined. [Learn more](../event-handling.md){target="_blank"}.
 
 Though these are set by default by the platform, you can customize them as per your business requirements. In this document, we look into such customizations.
 
@@ -27,7 +27,7 @@ Example
 * **Event** – Authorization Failure
 * **Trigger** – Task canceled
 
-You can define both standard responses, or if desired, add a channel override response that is displayed only in the specified channel the user is in, otherwise, one of the standard default responses is displayed. [Learn more](/docs/xo/automation/intelligence/conversation-management/standard-responses/){target="_blank"}.
+You can define both standard responses, or if desired, add a channel override response that is displayed only in the specified channel the user is in, otherwise, one of the standard default responses is displayed. [Learn more](../conversation-management/standard-responses.md){target="_blank"}.
 
 For example, in the SMS channel, you may only want to use short app responses to save data.
 
@@ -71,7 +71,7 @@ To add a new standard response, follow the steps below:
     <img src="../images/add-channel-override.png" alt="add channel override" title="add channel override" style="border: 1px solid gray; zoom:75%;">
 
     * In the app **Response** editor, you can override the default response for this channel using basic editor controls on the **Simple Mode** tab, or write custom JavaScript for the response on the **Advanced Mode** tab as follows:
-        * **Simple Mode** tab – Enter the text for the default standard response. For example, *There* you are, I was *hoping* you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor){target="_blank"}.
+        * **Simple Mode** tab – Enter the text for the default standard response. For example, *There* you are, I was *hoping* you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](../../use-cases/dialogs/prompt-editor.md#prompt-editor){target="_blank"}.
         * **Advanced Mode tab** – Enter JavaScript to override the channel message as described in the following code examples.
 
 <div class="admonition note">
@@ -157,7 +157,7 @@ var indexArray = ['a', 'b', 'c',
 print(JSON.stringify(message));
 ```
 
-Using the <code>getChoices()</code> function, you can also customize the **response display format** using the [message formatting templates](/docs/xo/web-mobile-SDK-message-formatting-and-templates/){target="_blank"}. When the <code>getChoices()</code> function is called and there is an ambiguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
+Using the <code>getChoices()</code> function, you can also customize the **response display format** using the [message formatting templates](../../../sdk/web-mobile-sdk-message-formatting-and-templates.md){target="_blank"}. When the <code>getChoices()</code> function is called and there is an ambiguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
 
 For example, to display the standard response for _Did you mean in_ a button format, you can use the following code:
 

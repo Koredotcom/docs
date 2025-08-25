@@ -49,9 +49,9 @@ Search AI interacts with Zoho CRM via its APIs. The Zoho CRM API uses the OAuth2
     * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
     * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
     * Prod Callback URLs: https://idp.kore.com/workflows/callback
-4. Click Create. This will generate the client credentials, which can be found in the Client Secret tab. 
+4. Click **Create**. This generates the client credentials, which can be found in the Client Secret tab. 
 
-Note that we will use the following scopes to access information from the Zoho CRM account. 
+Note that we uses the following scopes to access information from the Zoho CRM account. 
 * ZohoCRM.org.READ
 * ZohoCRM.apis.READ
 * ZohoCRM.users.READ
@@ -104,10 +104,10 @@ There are two main factors that affect the access of a record by a user
 
 **Default Record Access**
 
-For each record from Zoho CRM, the sys_racl field contains the following values.
+For each record from Zoho CRM, the `sys_racl` field contains the following values.
 
-* The creator of the record, by default, has access to the record. Hence the creator email id is added to the sys_racl field. 
-* Zoho CRM follows a role hierarchy. All the users belonging to roles superior to the creator's role can access the record if their profile permits. For instance, if the creator’s role is Employee, his manager and senior manager and director can all access the document. Hence the sys_racl field also contains role IDs corresponding to all the roles superior to that of the creator.
+* The creator of the record, by default, has access to the record. Hence the creator email id is added to the `sys_racl` field. 
+* Zoho CRM follows a role hierarchy. All the users belonging to roles superior to the creator's role can access the record if their profile permits. For instance, if the creator’s role is Employee, his manager and senior manager and director can all access the document. Hence the `sys_racl` field also contains role IDs corresponding to all the roles superior to that of the creator.
 
 ```
 { 
@@ -122,7 +122,7 @@ A record can be further shared with users other than the default access. A recor
 
 * **Public Records**
 
-    A public record is accessible to all the users who have access to it on the basis of their profile or role.  **If a record is publicly shared**, all users whose profile grants access to that module should see the record. For instance, if a Lead record is shared publicly, and it is accessible to the following profiles, then the sys_racl field would be as shown below. 
+    A public record is accessible to all the users who have access to it on the basis of their profile or role.  **If a record is publicly shared**, all users whose profile grants access to that module should see the record. For instance, if a Lead record is shared publicly, and it is accessible to the following profiles, then the `sys_racl` field would be as shown below. 
     
     **Example**: A Lead record is shared publicly, and the following profiles have access to the Leads module:  
     <table>
@@ -180,7 +180,7 @@ A record can be further shared with users other than the default access. A recor
     { "sys_racl": ["Leads_role ID"] }
     ```
 
-    3. Groups – Access based on predefined groups. If a record is shared with a group, the module name and group ID are added to the sys_racl field as shown below. 
+    3. Groups – Access based on predefined groups. If a record is shared with a group, the module name and group ID are added to the `sys_racl` field as shown below. 
     ```
     { "sys_racl": ["Deals_GroupId"] }
     ```

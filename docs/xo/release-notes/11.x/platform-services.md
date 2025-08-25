@@ -2,6 +2,15 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+
+## v11.17.0 August 23, 2025
+
+<u> Minor Release </u>
+
+This update includes bug fixes.
+
+<hr>
+
 ## v11.16.1 August 11, 2025
 
 <u> Patch Release </u>
@@ -9,8 +18,6 @@ This document provides information on the feature updates and enhancements intro
 This update includes bug fixes.
 
 <hr>
-
-
 
 ## v11.16.0 July 26, 2025
 
@@ -504,7 +511,7 @@ The user input's Personal Identifiable Information (PII) data will be masked in 
 
 <font size="4">General Availability of a Key Feature</font>
 
-We are announcing the general availability (GA) of the [DialogGPT Module](./../../generative-ai-tools/dialog-gpt.md) to all our users. 
+We are announcing the general availability (GA) of the [DialogGPT Module](../../generative-ai-tools/dialog-gpt.md) to all our users. 
 
 <hr>
 

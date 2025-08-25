@@ -12,20 +12,20 @@ The following table displays the features and the supported models.
 (✅ Supported | ❌ Not supported)
 
 
-| Feature | Azure OpenAI Model(s) | OpenAI Model(s) | Custom LLM | XO GPT |
-|:--|:--|:--|:--:|:--:|
-| Agent Empathy Identification | GPT-4o | GPT-4o | ✅ | ❌ |
-| By Value Adherence validation for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ | ❌ |
-| By Value metric extraction for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ | ❌ |
-| Churn & Escalation Identification | GPT-4o | GPT-4o | ✅ | ❌ |
-|Conversation Phase Identification|GPT-4o| GPT-4o and GPT-4o mini |✅ | ❌ |
-| Crutch Word Usage Detection | GPT-4o | GPT-4o | ✅ | ❌ |
-| Default Script Adherence | GPT-4o | GPT-4o | ✅ | ❌ |
-| GenAI-based agent answer adherence and customer trigger detection | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ | ❌ |
-| Generating Similar QM Utterance Suggestions | GPT-3.5 Turbo | GPT-3.5 | ❌ | ❌ |
-| Post-Interaction Sentiment Analytics and Key Emotion Moments | GPT-4o | GPT-4o | ✅ | ❌ |
-| Sentiment Analysis | GPT-4o | GPT-4o | ✅ | ❌ |
-| Topic Modelling | GPT-4o | GPT-4o | ✅ | ❌ |
+
+| Feature | Azure OpenAI Model(s) | OpenAI Model(s) | Custom LLM |
+|:--|:--|:--|:--:|
+| Agent Empathy Identification | GPT-4o | GPT-4o | ✅ |
+| By Value Adherence validation for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
+| By Value metric extraction for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
+| Churn & Escalation Identification | GPT-4o | GPT-4o | ✅ |
+| Conversation Phase Identification | GPT-4o | GPT-4o | ✅ |
+| Crutch Word Usage Detection | GPT-4o | GPT-4o | ✅ |
+| Default Script Adherence | GPT-4o | GPT-4o | ✅ |
+| GenAI-based agent answer adherence and customer trigger detection | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
+| Generating Similar QM Utterance Suggestions | GPT-3.5 Turbo | GPT-3.5 | ❌ |
+| Sentiment Analysis | GPT-4o | GPT-4o | ✅ |
+| Topic Modelling | GPT-4o | GPT-4o | ✅ |
 
 
 
@@ -53,7 +53,8 @@ Utilize LLMs to identify agent crutch word usage in customer conversations using
 
 ### Conversation Phase Identification
 
-Post conversation phase identification for phase level sentiment insights.
+
+Post conversation phase identification for phase level sentiment trajectory and resolution aware sentiment analysis.
 
 
 
@@ -67,6 +68,9 @@ Use LLMs to detect agent crutch word usage in customer conversations through Qua
 Determine agent adherence to default script steps across greeting, branding, privacy policy, customer verification, hold etiquette, and call closing through Quality AI's conversation Intelligence dashboard using LLMs. [Learn more](../quality-management/analyze/conversation-intelligence.md#script-and-playbook-adherence).
 
 
+
+
+
 ### GenAI-based agent answer adherence and customer trigger detection
 
 Utilize LLMs to verify agent adherence and detect customer triggers without requiring configuration of utterances or training. [Learn more](../quality-management/configure/evaluation-criteria/metrics-measurement-types/by-question.md).
@@ -74,12 +78,10 @@ Utilize LLMs to verify agent adherence and detect customer triggers without requ
 
 ### Generating Similar QM Utterance Suggestions
 
-Utilize LLM models to generate similar phrases during the design phase, focusing on semantic similarity. [Learn more](../quality-management/configure/evaluation-metrics.md).
+Utilize LLM to generate similar phrases during the design phase, focusing on semantic similarity. [Learn more](../quality-management/configure/evaluation-metrics.md).
 
 
-### Post-Interaction Sentiment Analytics and Key Emotion Moments
 
-Generate post-interaction sentiment and emotion moment insights for agent conversations from Quality AI using LLMs.
 
 
 ### Sentiment Analysis

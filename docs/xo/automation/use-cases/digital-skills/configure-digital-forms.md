@@ -2,7 +2,7 @@
 
 In this How-To, we will explore a scenario in a Banking App, where the user can create an additional account. We will see how Digital Forms can be used to gather all the required information from the user and create the account.
 
-For details on what Digital Forms are and how it is implemented in the XO Platform, click [here](../../digital-skills/digital-forms/){:target="_blank"}.
+For details on what Digital Forms are and how it is implemented in the XO Platform, click [here](../digital-skills/digital-forms.md){:target="_blank"}.
 
 ## Illustration with an Example
 
@@ -48,7 +48,7 @@ Create a form to gather the following information:
 
 ### Form Creation
 
-1. From the Kore.ai App Builder platform, open the Banking App.
+1. From the Builder platform, open the Banking App.
 2. Navigate to **Automation AI > Digital Skills > Digital Forms** to access the Digital Forms page.
 3. Click **New Form** and enter the following:
     * **Name** – name of the form that will be used by the engine, let's set as _OpenNewAccount_
@@ -229,4 +229,3 @@ Your dialog with form is ready! **Test** and trigger the above dialog. The form 
 
 You can use the context object as shown above it a **Script** or **Service** nodes for further processing.
 
-Click [here](../../../../how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables/){:target="_blank"} to learn how to add this data to a data table.

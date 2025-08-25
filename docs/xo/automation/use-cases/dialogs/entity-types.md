@@ -1,8 +1,8 @@
 # Entity Types
 
-The **Entity Type** provides the NLP Interpreter with the expected type of data from a user utterance to enhance recognition and system performance.  The Kore.ai NLP interpreter extracts the entity from the user utterance. If the user does not enter a required entity, you can define an AI Agent Response node to prompt the user to provide the entity. For more information, refer to [Working with the Entity Node](../node-types/working-with-the-entity-node){:target="_blank"}.
+The **Entity Type** provides the NLP Interpreter with the expected type of data from a user utterance to enhance recognition and system performance.  The NLP interpreter extracts the entity from the user utterance. If the user does not enter a required entity, you can define an AI Agent Response node to prompt the user to provide the entity. For more information, refer to [Working with the Entity Node](./node-types/working-with-the-entity-node.md){:target="_blank"}.
 
-You can also define entity rules to validate user input, [refer here for details](../entity-rules/){:target="_blank"}.
+You can also define entity rules to validate user input, [refer here for details](entity-rules.md){:target="_blank"}.
 
 The following **Entity Types** are specified for an entity node.
 
@@ -925,7 +925,7 @@ For example, consider the sales inquiries for flight bookings. Typical queries c
 
 As you can see, the AI Agent typically needs to process a combination of details like flight class, departure city, destination city and travel date to respond to those queries.
 
-These scenarios are taken care of by the Composite Entity Type. [Refer here](../../../../how-tos/build-a-banking-assistant/train-the-assistant/composite-entities/){:target="_blank"} to know more about Composite Entity Types.
+These scenarios are taken care of by the Composite Entity Type.
 
 
 ### Date
@@ -1056,14 +1056,14 @@ Display a list of values to the end user. To define the list type,
     1. Static List
     2. List from Context
 
-This feature is not fully supported in all languages [Click here for details](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}.
+This feature is not fully supported in all languages [Click here for details](../../../app-settings/language-management/multilingual-vas-components-feature-support.md){:target="_blank"}.
 
 * **Static List** – Enter the **Display Name**, **Value**, and **Synonyms** for the key. Set up _Auto-Correction_ value for the user inputs.
 * **List from Context** – Define a context variable to use for this item in the following fields:
     * **Specify Context Variable to Use** – Defines the context object type. For example, EnterpriseContext, BotContext, UserContexts, or session variables such as context.entities. Enter`context.`; select a context object type.
     * **Display Name Key** – The name displayed to the end-user.
     * **Value Key** – The key that represents the item's value in the list.
-    * **Synonyms Key** – Enter one or more synonyms for the key ([Click here for details](../../../natural-language/nlp-guidelines/#synonyms){:target="_blank"}).
+    * **Synonyms Key** – Enter one or more synonyms for the key ([Click here for details](../../natural-language/nlp-guidelines.md#synonyms){:target="_blank"}).
 
 * **Auto-Correction**– Set up auto-correct thresholds for the LOV entity type so that it not only accepts exact matches but also closest utterances with small variations. For example, let us consider that a list value called Apple for which a typo such as _appel_ is accepted based on your threshold settings. The Auto-Correction setting works in the following way:
     1. The AI Agent identifies the number of letters to be changed (inserts, deletes, or replaces) in user input to match it to a value in the list.
@@ -1103,14 +1103,14 @@ Display a list of values to the end user. To define the lookup list,
     1. Static List
     2. Remote List
 
-This feature is not fully supported in all languages. [Click here for details](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}.
+This feature is not fully supported in all languages. [Click here for details](../../../app-settings/language-management/multilingual-vas-components-feature-support.md){:target="_blank"}.
 
 #### Static List
 
 Use Static List to define the entity values as one of the following list types:
 
 * **List of Values** tab: Enter the **Display Name**, **Value**, and **Synonyms** for the key.
-* **JSON Preview** tab: Enter a list of key/value pairs and synonyms ([Click here for more](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}). For example:  
+* **JSON Preview** tab: Enter a list of key/value pairs and synonyms ([Click here for more](../../../app-settings/language-management/multilingual-vas-components-feature-support.md){:target="_blank"}). For example:  
                  
     ```
     [{
@@ -1142,7 +1142,7 @@ Remote List is used when the entity extraction needs to be done by an external s
 
 The steps involved are as follows:
 
-1. **Define the Service Call**: You can set up a service call similar to how a service node is currently set up. You can set headers, body (for POST), etc,. ([Click here for more](../node-types/working-with-the-service-node){:target="_blank"}).  
+1. **Define the Service Call**: You can set up a service call similar to how a service node is currently set up. You can set headers, body (for POST), etc,. ([Click here for more](./node-types/working-with-the-service-node.md){:target="_blank"}).  
 The external service invoked must have a provision to accept and handle the user utterance data that the platform populates. The `context.inputData` object with the following fields is used for that purpose:
     1. **input** – An array containing the list of inputs received from the user for the current dialog.
     2. **usedUp** – Index form of words that are already used for other entities or intents. The format is _x-y-z_ where
