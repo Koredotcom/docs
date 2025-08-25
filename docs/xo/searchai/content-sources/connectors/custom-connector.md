@@ -1,6 +1,6 @@
 # Custom Content Connector
 
-Search AI enables content ingestion from diverse sources, including web pages, files, and third-party applications, using built-in crawlers and connectors. For applications that do not have a pre-built connector in Search AI, the **Custom Content Connector **provides a flexible solution. The Custom Content Connector enables seamless integration with unique data sources, allowing organizations to bring in specialized content for a comprehensive, centralized search experience. This flexibility empowers users to access and utilize information from virtually any application.
+Search AI enables content ingestion from diverse sources, including web pages, files, and third-party applications, using built-in crawlers and connectors. For applications that do not have a pre-built connector in Search AI, the **Custom Content Connector** provides a flexible solution. The Custom Content Connector enables seamless integration with unique data sources, allowing organizations to bring in specialized content for a comprehensive, centralized search experience. This flexibility empowers users to access and utilize information from virtually any application.
 
 This Custom Content Connector leverages the application’s REST APIs to index content, facilitated by the **Custom Connector Service** provided by Search AI.
 
@@ -30,22 +30,21 @@ Follow the steps listed below to get started.
 ## Configure Custom Content Connector on Search AI
 
 
-* Navigate to the **Connectors** page.
-* Select **Custom Connector** and configure it with the following details:
+1. Go to the **Connectors** page.
+1. Select **Custom Connector** and configure it with the following details:
     * **Name**: A unique name for the connector.
-    * **Endpoint**: The URL of the hosted service. This is the endpoint of the API that provides the content. Also, specify the HTTP method for the API. For the default implementation of the Connector Service, the endpoint is \
-GET http://&lt;serverip>/getContent
+    * **Endpoint**: The URL of the hosted service. This is the endpoint of the API that provides the content. Also, specify the HTTP method for the API. For the default implementation of the Connector Service, the endpoint is GET http://&lt;serverip>/getContent
     * Under the **Headers**, add the following key and value. The value is the auth value set in the .env file in the service. This is required to establish secure communication with the service. For the default implementation of the service, use it as it is. If there is a change in the auth mechanism in the service, change it accordingly.
         Key: Authorization.
         Value: &lt;Your-Auth-Key>
-    * Click on **Connect** to complete the setup. 
+    * Click **Connect** to complete the setup. 
 
 
 ## Content Synchronization
 
 To synchronize content, follow these steps:
 
-1. Navigate to the **Configurations** tab of the custom connector configuration page.
+1. Go to the **Configurations** tab of the custom connector configuration page.
 2. Click **Sync Now**.
     * The service retrieves batches of 30 documents from the third-party application and sends them to Search AI.
     * Search AI processes each batch and indexes the content. Synchronization is complete when all batches are processed. 
@@ -53,9 +52,9 @@ To synchronize content, follow these steps:
 
 ##  Access Control
 
-Search AI also enables RACL on the content ingested via the custom connector. Search AI learns about the permissions-related field in the custom connector using the ***sys_racl*** field in the config file in the Connector Service. The data fetched from the field specified as sys_racl field in the config file is saved as the permission entity. To add any user to the permission entity, use the Permission Entity APIs. 
+Search AI also enables RACL on the content ingested via the custom connector. Search AI learns about the permissions-related field in the custom connector using the `sys_racl` field in the config file in the Connector Service. The data fetched from the field specified as `sys_racl` field in the config file is saved as the permission entity. To add any user to the permission entity, use the Permission Entity APIs. 
 
-For instance, if the access information is in the permissions field for your content, set the sys_racl field as shown below in the Connector Service Config. 
+For instance, if the access information is in the permissions field for your content, set the `sys_racl` field as shown below in the Connector Service Config. 
 
 ![Permission Field](images/custom/sys_racl.png "Permission Field")
 

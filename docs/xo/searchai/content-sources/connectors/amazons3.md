@@ -40,12 +40,12 @@ To integrate Search AI with the Amazon S3 account and ingest data from it, follo
 
 ## Generate Access Key 
 
-* Sign in as a root user in the [AWS Management Console](https://console.aws.amazon.com/). 
-* Navigate to the user’s details page. 
-* Click the **Security credentials** tab.
-* Under the **Access keys** section, click **Create access key**.
-* Follow the prompts to generate a new key.
-* Save the Access Key. Download the .csv file with the Access Key ID and Secret Access Key. Note that the secret key is shown only at the time of creation.
+1. Sign in as a root user in the [AWS Management Console](https://console.aws.amazon.com/). 
+1. Navigate to the user’s details page. 
+1. Click the **Security credentials** tab.
+1. Under the **Access keys** section, click **Create access key**.
+1. Follow the prompts to generate a new key.
+1. Save the Access Key. Download the .csv file with the Access Key ID and Secret Access Key. Note that the secret key is shown only at the time of creation.
 
 Refer to [this](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user_manage_add-key.html) for detailed instructions.
 
@@ -54,10 +54,10 @@ Refer to [this](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user_ma
 
 Go to the **Authorization page** of the Connector, provide the following configuration fields, and click **Connect**. 
 
-* **Name**- Unique name for the connector.
-* **Access Key**- Key generated in the above step.
-* **Secret** - Secret generated in the above step. 
-* **Region** -  The region of your account. 
+1. **Name**- Unique name for the connector.
+1. **Access Key**- Key generated in the above step.
+1. **Secret** - Secret generated in the above step. 
+1. **Region** -  The region of your account. 
 
 
 ## Ingesting Content
