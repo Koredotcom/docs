@@ -1,6 +1,6 @@
 # Search AI Node
 
-The **Search AI Node** is used to incorporate search functionality within a dialog task. It leverages **Search AI** to perform searches on the ingested content, enabling the AI Agent to return relevant and contextual responses. By allowing the configuration of meta filters and search rules, this node enhances the precision, relevance, and effectiveness of the conversational AI experience.
+The **Search AI Node** is used to incorporate search functionality within a dialog task. It leverages **Search AI** to perform searches on the ingested content, enabling the AI Agent to return relevant and contextual responses. By allowing the configuration of meta filters and search rules, this node enhances the precision, relevance, and effectiveness of the conversational AI Agents experience.
 
 **Key Features of the Search AI Node:**
 
@@ -20,7 +20,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
 ## Adding the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the **Search AI Node**.
-2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes).
+2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../using-the-dialog-builder-tool.md#add-nodes).
 
 
 ## Configuring the Node
@@ -50,7 +50,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
 
 * Click **+ Add Filter**.
 * Provide the following:
-    * **Field**: Specify the name of the field you want to filter by. The content indexed in Search AI is stored in a JSON structure, where the content and its metadata are organized under different fields. To apply a filter using one of these fields, ensure that the Field Name exactly matches the corresponding field name in the ingested content. For example, to filter results from uploaded documents, use "sourceType": "file". Similarly, to filter based on the document title, use "recordTitle" as the field. To view available field names and their structure, navigate to the [Chunk Viewer](../../../../searchai/chunk-browser.md) in the Search AI app and inspect the content in JSON format. ![alt_text](../images/chunk-viewer.png "image_tooltip")
+    * **Field**: Specify the name of the field you want to filter by. The content indexed in Search AI is stored in a JSON structure, where the content and its metadata are organized under different fields. To apply a filter using one of these fields, ensure that the Field Name exactly matches the corresponding field name in the ingested content. For example, to filter results from uploaded documents, use "sourceType": "file". Similarly, to filter based on the document title, use "recordTitle" as the field. To view available field names and their structure, navigate to the [Chunk Viewer](../../../../searchai/chunk-browser.md) in the Search AI app and inspect the content in JSON format. ![alt_text](images/chunk-viewer.png "image_tooltip")
 
     * **Condition:** Choose from supported operators like contains, equals to, and exists.
     * **Field Value:** Enter a static value or dynamic variable as the value of the field. 
@@ -86,7 +86,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
     print(JSON.stringify(reshaped));
     ```
 * **Return Qualified Chunks**: This option allows the user to receive only the chunks of data that meet the specified criteria. 
-* In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the app has the variable namespace enabled. You can go with the task-level settings or customize them for this node. For more information, refer to [Managing Namespaces](https://docsinternal-kore.github.io/docs/xo/app-settings/managing-namespace/)
+* In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the app has the variable namespace enabled. You can go with the task-level settings or customize them for this node. For more information, refer to [Managing Namespaces](../../../../app-settings/managing-namespace.md)
  
 
 ### Instance Properties
@@ -102,7 +102,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
 * **Close the Task and trigger Task Execution Failure Event**, or
 * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
 
-**Custom Tags**: Add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](https://docsinternal-kore.github.io/docs/xo/analytics/automation/custom-dashboard/custom-meta-tags).
+**Custom Tags**: Add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md).
 
 ### Connections Properties
 
@@ -111,7 +111,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
     * These settings apply only to this instance and will not affect other uses of the node.
     * Available only if this is the last node in a sequence.
 
-To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions)
+To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections.](../node-connections/nodes-conditions.md)
 
  **Connection Path Options**
 
@@ -125,4 +125,5 @@ To set up node connection conditions, please follow the steps outlined in [Addin
 
 
 !!! Note
-    Deflect to Chat works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
+    
+    Deflect to Chat works only with Voice Gateway Channels (Phone number or SIP Transfer).

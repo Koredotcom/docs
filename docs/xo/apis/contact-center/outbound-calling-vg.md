@@ -15,7 +15,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 
 | **Method**      | POST                                                                                                     |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| **Endpoint**    | `[https://{{host}}/api/1.1/public/bot/:/smartassist/dialout](https://{{host}}/api/1.1/public/bot/:/smartassist/dialout)` |
+| **Endpoint**    | `https:/{{host}}/api/1.1/public/bot/:/smartassist/dialout` |
 | **Content Type** | `application/json`                                                                                       |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**   | SmartAssist Dialout                                                                                      |
@@ -27,7 +27,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 | host      | Environment URL, for example, `https://platform.kore.ai`                                             | string, required |
 | IId     |The application ID.                      | string, required |
 
-## Query Parameters
+## Body Parameters
 
 | **PARAMETER**           | **DESCRIPTION**                                                                                                                                              | **TYPE**             |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
@@ -46,6 +46,14 @@ The application triggers an outbound call using an HTTP POST request to the endp
 |                     | - “detect”: Machine detection is enabled, and the call is not disconnected in amd.                                                                      |                  |
 |                     | - “disabled”: Machine detection is not enabled.                                                                                                          |                  |
 | thresholdWordCount | Number of spoken words in a greeting that result in an amd_machine_detected result.                                                                      | number, optional |
+| metadata | Key-value pairs to pass contextual information to the bot.                                                                      | object, optional |
+| callControlParameter | This object enables you to specify dynamic values for the STT provider, language, and related properties, overriding the default settings configured at the application level.                                                                      | object, optional |
+| callControlParameter.sttProvider | Name of the STT provider (for example, deepgram).                                                                      | string, required |
+| callControlParameter.sttLanguage | Whether to return interim transcription results.                                                                      | string, required |
+| callControlParameter.sttLabel | Custom label to identify the STT configuration/session.                                                                      | string, optional |
+| callControlParameter.continuousASRTimeoutInMS| Time (in ms) to wait before stopping ASR after silence.                                                                      | number, optional |
+| callControlParameter.deepgramUtteranceEndMs | Silence threshold (in ms) to determine utterance end (specific to Deepgram).                                                                      | number, optional |
+| callControlParameter.deepgramEndpointing | Duration of silence (in ms) used for endpointing.                                                                      | number, optional |
 
 ### Timers Configuration
 
@@ -83,6 +91,15 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialou
     "Content-Type": "application/json",
     "x-channel-type": "X42_IVR",
     "event-type": "x42-ivr-voice-voice-interactions"
+  },
+  "callControlParameter": {
+    "sttProvider": "deepgram",
+    "sttLanguage": "en-AU",
+    "interim": true,
+    "sttLabel": "deepgram-abcd",
+    "continuousASRTimeoutInMS": 2000,
+    "deepgramUtteranceEndMs": 1000,
+    "deepgramEndpointing": 300
   },
   "metadata": {
     "jobPosition": "Software Engineer",
