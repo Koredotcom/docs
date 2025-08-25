@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Support Call Control Parameters in Voiceutils**
 
-The voicemail feature in `voiceutils.voicemail` now supports call control parameters, enabling dynamic language execution. This enhancement extends voicemail functionality beyond English to include additional languages, such as Spanish, to provide multilingual support. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#voicemail)
+The voicemail feature in `voiceutils.voicemail` now supports call control parameters, enabling dynamic language execution. This enhancement extends voicemail functionality beyond English to include additional languages, such as Spanish, to provide multilingual support. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#voicemails)
 
 <font size="4">Call Recording</font>
 

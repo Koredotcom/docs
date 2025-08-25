@@ -87,9 +87,9 @@ To connect the Web SDK with a Click-to-Call flow:
 2. When a user clicks the button, a pop-up for closing the conversation is displayed. Click **Confirm**.  
     <img src="../images/continue-to-voice-conversation.png" alt="Continue to Voice" title="Continue to Voice" style="border: 1px solid gray; zoom:70%;">
 
-!!! Note
+    !!! Note
 
-    If the user switches to Click-to-Call, the chat agent is redirected to the After Call Work (ACW) stage.
+        If the user switches to Click-to-Call, the chat agent is redirected to the After Call Work (ACW) stage.
 
 3. The system initiates a voice call to the contact center.  
     <img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:70%;">  
