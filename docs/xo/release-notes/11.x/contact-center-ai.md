@@ -56,8 +56,10 @@ The Agent AI Mapping section is now available for Kore’s CCAI users. This feat
 
 * Enable or disable this feature with a global toggle.  
 * Add queues from the displayed list or search and add them individually.  
-* Assign queues to bots, channels, languages, and dialog tasks.  
-* Edit or delete entries, and manage dialog assignments for Proactive and Library during runtime.
+* Assign bots, channels, languages, and dialog tasks to specific queues.  
+* Edit, update, or delete queue assignments. 
+
+At runtime, agents view only the assigned dialog tasks in Proactive and Library.  
 
 <font size="4">Web SDK</font>
 
