@@ -128,13 +128,16 @@ To create a new response within a response group, follow these steps:
     1. Select the Email Response tab and click the text editor to add the response.
     2. You can create the template in plain text, using variables, or HTML/CSS code.
     3. Click **Done**.  
+        **Text Editor**  
         <img src="../images/email-response.png" alt="Email Response" title="Email Response" style="border: 1px solid gray; zoom:70%;">
+
+        **Code Editor**   
+
+        <img src="../images/email-response-html.png" alt="Code Editor" title="Code Editor" style="border: 1px solid gray; zoom:70%;">  
+        
     4. Click **+ Add Subject** and enter a subject for the email in the text editor.
     5. Click **Done**.  
-        **Text Editor**    
         <img src="../images/subject.png" alt="Subject" title="Subject" style="border: 1px solid gray; zoom:70%;">  
-        **Code Editor**   
-        <img src="../images/email-response-html.png" alt="Code Editor" title="Code Editor" style="border: 1px solid gray; zoom:70%;"> 
 
     !!! Note
 
