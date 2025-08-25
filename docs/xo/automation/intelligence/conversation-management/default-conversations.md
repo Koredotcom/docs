@@ -157,7 +157,7 @@ var indexArray = ['a', 'b', 'c',
 print(JSON.stringify(message));
 ```
 
-Using the <code>getChoices()</code> function, you can also customize the **response display format** using the [message formatting templates](/docs/xo/web-mobile-SDK-message-formatting-and-templates/){target="_blank"}. When the <code>getChoices()</code> function is called and there is an ambiguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
+Using the <code>getChoices()</code> function, you can also customize the **response display format** using the [message formatting templates](../../../sdk/web-mobile-sdk-message-formatting-and-templates.md){target="_blank"}. When the <code>getChoices()</code> function is called and there is an ambiguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
 
 For example, to display the standard response for _Did you mean in_ a button format, you can use the following code:
 
