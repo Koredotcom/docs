@@ -25,7 +25,7 @@ The Platform Web SDK is a powerful tool for integrating the Platform bots into w
 
 
 
-![JWT Flow](./images/JWT-flow.png "JWT Flow")
+![JWT Flow](images/JWT-flow.png "JWT Flow")
 
 
 ## Stateless Web SDK and Session Persistence
