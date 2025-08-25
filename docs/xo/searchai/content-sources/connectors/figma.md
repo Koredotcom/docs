@@ -50,24 +50,22 @@ Search AI interacts with Figma through its APIs. To set up this communication an
 
 ### Generating Personal Access Token in Figma Account
 
-
-
-* Log in to your Figma account.
-* Click on your account name in the top-left corner and select Settings.
-* Navigate to the Security tab.
-* Scroll down to the Personal Access Tokens section and click Generate new token.
-* Enter a name for the token.
-* Enable the following scope:
+1. Sign in to your Figma account.
+1. Click on your account name in the top-left corner and select Settings.
+1. Navigate to the Security tab.
+1. Scroll down to the Personal Access Tokens section and click Generate new token.
+1. Enter a name for the token.
+1. Enable the following scope:
     * File content: Read-only
-* Click Generate Token. 
-* Copy the generated token immediately. Note that the token will not be visible after navigating away from the page. 
+1. Click Generate Token. 
+1. Copy the generated token immediately. 
+
+Note that the token will not be visible after navigating away from the page. 
 
 
 ### Figma Connector Configuration in Search AI
 
 Go to the Figma Connector in the Search AI application. On the **Authorization** tab, provide the following details:
-
-
 
 * Name - Unique name for the connector
 * API Key - Personal Access Token generated in the Figma application. 
@@ -76,4 +74,4 @@ Go to the Figma Connector in the Search AI application. On the **Authorization**
 
 ## Content Ingestion
 
-Each ingested record corresponds to a file in the Figma application. The title of each page that is part of the file is added to the content field of the record. The team name and the project name to which a file belongs are added as team_name and project_name, respectively. 
+Each ingested record corresponds to a file in the Figma application. The title of each page that is part of the file is added to the content field of the record. The team name and the project name to which a file belongs are added as `team_name` and `project_name`, respectively. 
