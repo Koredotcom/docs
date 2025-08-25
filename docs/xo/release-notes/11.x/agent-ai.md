@@ -17,7 +17,8 @@ The Overall Widget Feedback feature allows admins to configure feedback options 
 * Enable up to five options from each category simultaneously.
 * Display or hide an additional comment box.
 
-**Enhanced Dashboard** 
+**Enhanced Dashboard**
+
 The **Dashboard** > **Overall Widget Feedback** section displays feedback metrics submitted by agents. 
 
 <font size="4">Integration Enhancements</font>
