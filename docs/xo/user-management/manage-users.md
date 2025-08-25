@@ -89,10 +89,14 @@ In the General Settings section, You can enable the **Allow agent permissions** 
 
 * Set the Agent Console as the default in Contact Center AI - Enable this option to set **Agent Console** as the default landing page. This Dynamic Navigation Control feature determines the appropriate landing page based on user permissions rather than hardcoded role names. 
 * Group
-* Custom ID
+* Custom ID 
 * Agent Nick Name
 * Desktop layout  
 <img src="../images/general-settings.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:70%;">
+
+!!! Note
+
+    The customId field now supports all special characters except spaces, resolving previous errors during creation or updates. The character limit is 64, with validation applied consistently across the Admin Console, APIs, and backend services.
 
 ### Chat & Voice
 
