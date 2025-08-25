@@ -187,6 +187,21 @@ Agents can make outbound calls to the customers as follows:
 
         The country code defaults to the last dialed country. If no calls are dialed, the default country code is the US.
 
+#### Inbound Click-to-Call Interaction
+
+Agents receive the Click-to-Call interaction in the Live Interaction pane, similar to an inbound voice call. The system displays the metadata and prior chat transcript to the agent. During the call, agents can pause and resume recording when handling sensitive information. After the call ends, the system stores the transcription and disposition summary. [Learn more](../contactcenter/flows-and-routing/conditional-flows.md#click-to-call-flow).  
+<img src="../images/click-to-call-interaction.png" alt="Click to Call Interaction" title="Click to Call Interaction" style="border: 1px solid gray; zoom:70%;">  
+
+In addition to After Call Work (ACW), Agents also have access to the following call controls:  
+
+* Mute  
+* Unmute  
+* Hold  
+* Resume  
+* Recording – Pause and Resume  
+* Transcription – Pause and Resume  
+* Transfer – Internal
+
 ## Voicemail
 
 If auto answer mode is enabled in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings), the transcript and recording appear automatically in the conversation tray of the agent.

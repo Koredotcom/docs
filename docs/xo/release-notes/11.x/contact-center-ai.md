@@ -63,7 +63,7 @@ The Agent AI Mapping section is now available for Kore’s CCAI users. This feat
 
 **Click-to-Call Capability for Web SDK Using Experience Flow Configuration**
 
-The Web SDK now supports a Click-to-Call button, enabling website visitors to start voice calls directly from the UI. Calls route through configured flows, share assistant transcripts with human agents, and support recording, transcription, and ACW. The button is disabled by default and can be configured using the theme editor. Sessions log separately in the dashboard and can be initiated before, during, or after bot/chat interactions. In live chat, the agent receives a closure notice and is redirected to ACW. Multiple SDK configurations and flexible deployment methods (npm, script tag, source modification) are supported.
+The Web SDK now supports a Click-to-Call button, enabling website visitors to start voice calls directly from the UI. Calls route through configured flows, share assistant transcripts with human agents, and support recording, transcription, and ACW. The button is disabled by default and can be configured using the theme editor. Sessions log separately in the dashboard and can be initiated before, during, or after bot/chat interactions. In live chat, the agent receives a closure notice and is redirected to ACW. Multiple SDK configurations and flexible deployment methods (npm, script tag, source modification) are supported. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#inbound-click-to-call-interaction) 
 
 <font size="4">Analytics</font>
 
