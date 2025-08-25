@@ -122,7 +122,7 @@ The Automation Node’s routing settings are now also available at Flow & Channe
 
 **Batch Testing Now Supports Multi-app Routing**
 
-The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Virtual Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed to multiple linked apps. [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md)
+The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed to multiple linked apps. [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md)
 
 
 **Enhancement of Batch Testing Public APIs to support creation and management of test suites**
@@ -205,7 +205,7 @@ Automation app linking is now centralized for easier access under **Flow & Chann
 
 **Enhanced Response Rephrasing for All Message Types**
 
-The Response Rephrasing feature has been significantly expanded and enhanced to deliver more natural, consistent virtual assistant interactions across all response formats. This expansion now supports both structured content and traditional message types, while introducing new configuration options for granular tone control.
+The Response Rephrasing feature has been significantly expanded and enhanced to deliver more natural, consistent assistant interactions across all response formats. This expansion now supports both structured content and traditional message types, while introducing new configuration options for granular tone control.
 
 Key improvements
 
@@ -292,7 +292,7 @@ Key benefits
 * Deliver more relevant and contextually appropriate responses to end users.
 * Configurable confidence thresholds aligned with their specific use case needs.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#zero-shot-model)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#automation-ai---genai-feature)
 
 
 **Pre-built and Custom Models Support for Rephrase User Query** 
@@ -300,7 +300,7 @@ Key benefits
 The Rephrase User Query feature now supports both Pre-built and Custom Models, in addition to Kore.ai XO GPT. To use these models, users must create a custom prompt.
 
 Users can optionally provide the `Conversation_history` key to specify the number of previous conversation messages to send to the LLM for improved contextual understanding.
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#automation-ai-model-feature-matrix)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#automation-ai---genai-features)
 
 **Expanded PII Settings at the Agent Node Level**
 
@@ -513,8 +513,8 @@ The Import / Export interface has been redesigned to mirror the Publish layout. 
 
 We are announcing the general availability (GA) of the following important features to all our users: 
 
-* [XO GPT Module](./../../generative-ai-tools/xo-gpt-module.md)
-* [Intent Discovery](./../../automation/tools/intent-discovery.md)
+* [XO GPT Module](../../generative-ai-tools/xo-gpt-module.md)
+* [Intent Discovery](../../automation/tools/intent-discovery.md)
 
 
 <hr>
@@ -1028,7 +1028,7 @@ Key benefits:
 * Provides greater control over input formats.
 * Enables precise data validation for complex scenarios.
 
-[Learn more :octicons-arrow-right-24:](../../../automation/use-cases/digital-skills/digital-forms/#component-properties){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/digital-skills/digital-forms.md#component-properties){:target="_blank"}
 
 
 <font size="4">Agent Transfer</font>
@@ -1194,17 +1194,17 @@ The following are some of the key use cases:
   
 The koreUtil library has been extended with the "getFormDefinition" function to retrieve and modify the form definition.
 
-This feature also helps address the current limitation of system messages available only in English. The "formMsgMeta" section of the form data contains the full list of system messages and errors, which can be modified using the Preprocessor. [Learn more :octicons-arrow-right-24:](../../../automation/use-cases/digital-skills/digital-forms/#configuration-setup-using-pre-processor-script){:target="_blank"}
+This feature also helps address the current limitation of system messages available only in English. The "formMsgMeta" section of the form data contains the full list of system messages and errors, which can be modified using the Preprocessor. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/digital-skills/digital-forms.md#configuration-setup-using-pre-processor-script){:target="_blank"}
 
 <font size="4">SDK Configuration</font>
 
 **Customize Virtual Assistant’s Theme & Design**
 
-The platform now supports customizing the Virtual Assistant's look and feel with the new Theme and Design feature. This includes changes to welcome text, buttons, colors, chat windows, and sound themes to match their needs. A real-time preview pane shows changes instantly and makes it easy to make any adjustments before deploying the updated design. [Learn more :octicons-arrow-right-24:](./../../channels/add-web-mobile-client.md#virtual-assistant-theme--design){:target="_blank"}
+The platform now supports customizing the Virtual Assistant's look and feel with the new Theme and Design feature. This includes changes to welcome text, buttons, colors, chat windows, and sound themes to match their needs. A real-time preview pane shows changes instantly and makes it easy to make any adjustments before deploying the updated design. [Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#virtual-assistant-theme--design){:target="_blank"}
 
 **Enhanced Panels & Widgets**
 
-The platform now supports the Panels and Widgets feature according to the selected Theme and Design of the Web SDK. [Learn more :octicons-arrow-right-24:](./../../automation/use-cases/digital-skills/digital-views.md){:target="_blank"}
+The platform now supports the Panels and Widgets feature according to the selected Theme and Design of the Web SDK. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/digital-skills/digital-views.md){:target="_blank"}
 
 <hr>
 
@@ -1226,18 +1226,18 @@ Key features and enhancements included in this release are summarized below.
 
 **Enhancement to the Comments Functionality**
 
-The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration. [Learn more :octicons-arrow-right-24:](../../../automation/use-cases/dialogs/using-the-dialog-builder-tool/#notes-comments-and-bookmarks){:target="_blank"}
+The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#notes-comments-and-bookmarks){:target="_blank"}
 
 <font size="4">Digital Forms</font>
 
-* Enable the "Off-the-Record Information" Flag for Digital Forms: On a digital form, when the field’s “Off the record” flag is enabled, the field data is cleared at the end of the user session and not stored in databases or logs. [Learn more :octicons-arrow-right-24:](/docs/xo/automation/use-cases/digital-skills/digital-forms/#component-properties){:target="_blank"}
+* Enable the "Off-the-Record Information" Flag for Digital Forms: On a digital form, when the field’s “Off the record” flag is enabled, the field data is cleared at the end of the user session and not stored in databases or logs. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/digital-skills/digital-forms.md#component-properties){:target="_blank"}
 * Digital Forms Date Picker Supports Japanese: The digital form’s Date Picker now supports the Japanese language if the bot language is Japanese.
 
 <font size="4">Export/Import</font>
 
 **Enable App Import Functionality using Zip File Upload**
 
-Platform users can now import apps by uploading a ZIP file containing the app's data. This eliminates the need to extract and manually import JSON files. The ZIP file import works for both new and existing apps. [Learn more :octicons-arrow-right-24:](../../manage-assistant/bot-management.md#steps-in-importing-to-an-existing-assistant){:target="_blank"}
+Platform users can now import apps by uploading a ZIP file containing the app's data. This eliminates the need to extract and manually import JSON files. The ZIP file import works for both new and existing apps. [Learn more :octicons-arrow-right-24:](../../administration/bot-management.md#steps-in-importing-to-an-existing-assistant){:target="_blank"}
 
 The corresponding APIs have also been updated to support this change: Import New VA and Import Existing VA.
 
@@ -1274,7 +1274,7 @@ Key Benefits
 
 * Greater Accuracy: The system better understands what customers request, even when requests are complex or industry-specific. Combining a broad understanding with detailed knowledge of your business can help extract the correct information and make smarter decisions about how to help.
 * Lower Costs: It removes the need to manually train the agent with diverse utterances,  reducing the overall effort in building and maintaining virtual agents; it automatically resolves more requests, minimizing transfers to human representatives and lowering operational expenses.
-* Improved Customer Experience: Virtual assistants provide more natural conversations by understanding context and handling multiple requests simultaneously.
+* Improved Customer Experience: assistants provide more natural conversations by understanding context and handling multiple requests simultaneously.
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
 
@@ -1296,7 +1296,7 @@ Key enhancements
     * Flexible Version Selection: Choose V1 (Legacy) or V2 (Enhanced) prompts based on your requirements.
     * Customizable Templates: For faster implementation, use pre-built JavaScript-based V2 prompt templates as custom prompts with both system and custom models.
 
-[Learn more :octicons-arrow-right-24:](../automation/agent-node/prompt-setup.md#types-of-prompts)
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/prompt-setup.md#types-of-prompts)
 
 
 **Build Agentic Experience with DialogGPT and Agent Node**
@@ -1309,18 +1309,18 @@ Key features
 * Direct connection between tools and actions (scripts, service, or Search AI).
 * Prompts include tool definitions and context for decision-making.
 
-[Learn more :octicons-arrow-right-24:](../automation/agent-node/working-with-agent-node.md#tools)
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#tools)
  
 **Seamless Integration with Agentic Apps for Multi-agent Orchestration**
 
-The fully autonomous Agentic Apps, powered by the Kore.ai Agent Platform, can now easily integrate with the XO Platform. The Agent Platform-powered automation independently handles entire conversation flows, adapting to situations without predefined paths. This flow leverages Agentic Apps to dynamically understand, plan, and execute actions based on user queries without relying on defined workflows. It intelligently manages context, retrieves relevant information, and orchestrates multi-step tasks to deliver accurate and personalized responses.
+The fully autonomous Agentic Apps, powered by the Kore.ai Agent Platform, can now easily integrate with the Platform. The Agent Platform-powered automation independently handles entire conversation flows, adapting to situations without predefined paths. This flow leverages Agentic Apps to dynamically understand, plan, and execute actions based on user queries without relying on defined workflows. It intelligently manages context, retrieves relevant information, and orchestrates multi-step tasks to deliver accurate and personalized responses.
 
 Key features
 
 * Choice between "Orchestrated Autonomy" (powered by DialogGPT) or "Full Autonomy" (Powered by the Agent Platform) based on automation capabilities.
-* Agentic Apps fully supports any digital and voice channels enabled via the XO Platform.
+* Agentic Apps fully supports any digital and voice channels enabled via the Platform.
 
-[Learn more :octicons-arrow-right-24:](../flows/node-types/automation.md)
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md)
 
 
 **Support for Dynamic Routing Capability Powered by DialogGPT**
@@ -1347,15 +1347,15 @@ Key features
 
 **Guardrails**
 
-Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
+Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
 
 Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.  
-[Learn more :octicons-arrow-right-24:](../generative-ai-tools/guardrails.md)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md)
 
 **Monitoring**
 
 It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.  
-[Learn more :octicons-arrow-right-24:](../analytics/genai-analytics/llm-usage-logs.md)
+[Learn more :octicons-arrow-right-24:](../../analytics/genai-analytics/llm-usage-logs.md)
     
 <font size="4">All-new Dialog Builder</font>
     
