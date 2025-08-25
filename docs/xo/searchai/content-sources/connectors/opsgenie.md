@@ -45,9 +45,7 @@ Search AI connects with Opsgenie through its APIs. Opsgenie uses API key-based a
 
 To add an API key:
 
-
-
-1. Navigate to Settings page >> App Settings >> API Key Management.
+1. Go to Settings page >> App Settings >> API Key Management.
 2. Click Add New API Key.
 3. Enter a name for the API key and select the **Read Access and Configuration Access**. It automatically generates an API key. You can regenerate the shown API key before saving, if required.
 4. Click Add API Key to save the new API key.
@@ -55,15 +53,12 @@ To add an API key:
 
 ### Opsgenie Connector Configuration in Search AI
 
-On the Authentication page of the connector, provide the following information. 
-
-
+On the Authentication page of the connector, enter the following information. 
 
 * Name - Unique name for the connector. 
 * Customer Name - This is the customer name as on the **Profile Settings page** in Opsgenie application. 
 * API Key - API Key generated in the Opsgenie application. 
-
-Click **Connect**. This initiates the authentication process. 
+* Click **Connect**. This initiates the authentication process. 
 
 
 ## Content Ingestion
@@ -91,8 +86,6 @@ The **Opsgenie Connector** supports Restricted Access Control Lists (RACL) to ma
 Each alert or incident is visible only to users listed in the **responders** section of that alert or incident. The responders list may include both **individual users** and **teams**.
 
 For both alerts and incidents, the **sys_racl** field includes:
-
-
 
 * The **email IDs** of individual users who are direct responders.
 * The **team IDs** of teams assigned as responders.

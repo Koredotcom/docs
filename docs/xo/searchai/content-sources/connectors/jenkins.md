@@ -53,24 +53,22 @@ Search AI interacts with Jenkins through its APIs. API communication requires an
 
 Follow the steps listed below to generate the API Token. 
 
-* Log in to Jenkins.
-* Click on your Username.
+* Sign in to Jenkins.
+* Click on your **Username**.
 * Go to Configure.
-* Scroll down to API Token and click Add New Token.
+* Scroll down to API Token and click **Add New Token**.
 * Generate and copy the token (store it securely).
 
 ## Jenkins Connector Configuration in Search AI
 
-On the **Authorization** tab of the connector, provide the following details.
-
-
+On the **Authorization** tab of the connector, enter the following details.
 
 * Name - Unique name for the connector. 
 * Jenkins Server URL  - URL of the hosted application. 
 * Username - Username of the user whose account is used for ingestion. 
 * API Token - API token generated above. 
 
-Click on **Connect** to authenticate and set up a connection with the Jenkins account. 
+Click **Connect** to authenticate and set up a connection with the Jenkins account. 
 
 
 ## Content Ingestion

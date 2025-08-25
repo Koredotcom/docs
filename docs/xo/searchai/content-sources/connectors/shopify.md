@@ -38,17 +38,17 @@ Shopify Connector facilitates the seamless ingestion of **blogs** from the Shopi
 
 ## Prerequisites 
 
-* Admin account on Shopify
+Admin account on Shopify
 
 
 ## Shopify Configuration
 
 Search AI interacts with the Shopify application through Shopify Admin APIs. To enable this communication, set up an app on Shopify. Follow the steps listed below. 
 
-* Login to the Shopify admin portal. 
+* Sign to the Shopify admin portal. 
 * Go to **Apps and Sales Channels**.
-* Click on **Develop apps** and **create an app**. 
-* Provide the name and other details of the app.
+* Click **Develop apps** and **create an app**. 
+* Enter the name and other details of the app.
 * Enable the following **admin scopes** and click **Save**.
     * read_content
 * Go to the **API Credentials** tab and **Install app** to generate an access token. This token is used to configure the Search AI connector. 
@@ -56,13 +56,12 @@ Search AI interacts with the Shopify application through Shopify Admin APIs. To 
 
 ## Shopify Connector Config in Search AI
 
-Go to the **Auth** page for the connector and provide the following details. 
+Go to the **Auth** page for the connector and enter the following details. 
 
 * Name - Unique name for the connector
 * Store Host URL - URL of the Shopify account. 
 * Admin API access token - Provide the access token generated in the Shopify app. 
-
-Click **Connect** to initiate the authentication and connection process. 
+* Click **Connect** to initiate the authentication and connection process. 
 
 
 ## Content Ingestion
