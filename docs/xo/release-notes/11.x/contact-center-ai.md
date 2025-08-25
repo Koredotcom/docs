@@ -71,6 +71,12 @@ The Web SDK now supports a Click-to-Call button, enabling website visitors to st
 
 The transcripts log now displays timeline messages when maximum retries are exceeded and the configured fallback action is triggered. Instead of appearing as user transcription messages, the log indicates the scenario. For example, when a No Input timeout is exceeded and a fallback action is triggered, the message “Max no-input attempts reached” is shown. This update helps app users easily understand the reason behind the triggered action. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs) 
 
+<font size="4">API</font>
+
+**Fetch Conversation Details by Session ID**
+
+A new Public API is available to fetch conversation details using the Parent App Session ID. The API returns conversation details only when a successful agent handoff has occurred in the session. If no handoff exists, it returns the error: “Conversation not found for the given session id.”
+
 <hr>
 
 ## v11.16.1 August 11, 2025
