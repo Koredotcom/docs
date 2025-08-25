@@ -110,16 +110,35 @@ Delete a Response" title="Delete a Response" style="border: 1px solid gray; zoom
 To create a new response within a response group, follow these steps:
 
 1. Under **Response Templates**, click the desired response group entry in the list to view the mapped responses.
-2. Click **+ New Response**.
+2. Click **+ New Response**.  
 <img src="../images/add-new-response.png" alt="Add New Response" title="Add New Response" style="border: 1px solid gray; zoom:80%;">
 
 3. In the **Add New Response** panel, set the title (name) and the auto-expire values.
     1. **Title**: The name to identify the response.
     2. **Auto Expire**: Select **Never** if you don’t want the response to expire. Otherwise, select a **Custom Date** to set the end date and time from the calendar when the response automatically stops appearing.
-4. Set the following options under **Chat Response** and **Email Response**:
-    3. **Response shown to agents**: To set the response message for agents, enter the message text in the editor, select any required **Variables** from the list to auto-insert into the message (optional), and click **Done**.
-    4. **Skill Match and Agent Group Match**: The agent skill or group match configured for the response group applies here and is uneditable if you have matched skills or groups to the response group. If skills, groups, or both have been left disabled at the group level, then you can set them at the response level (for email and chat). The process is the same for the group-level skill and group match, explained above.
-    <img src="../images/response-template-variables.png" alt="Response Template Variables" title="Response Template Variables" style="border: 1px solid gray; zoom:80%;">
+
+    **Chat Response**
+
+    1. Select the Chat Response tab and click the text editor to add the response.
+    2. Click **Done**.  
+        <img src="../images/chat-response.png" alt="Chat Response" title="Chat Response" style="border: 1px solid gray; zoom:70%;">
+    
+    **Email Response**
+
+    1. Select the Email Response tab and click the text editor to add the response.
+    2. You can create the template in plain text, using variables, or HTML/CSS code.
+    3. Click **Done**.  
+        <img src="../images/email-response.png" alt="Email Response" title="Email Response" style="border: 1px solid gray; zoom:70%;">
+    4. Click **+ Add Subject** and enter a subject for the email in the text editor.
+    5. Click **Done**.  
+        **Text Editor**    
+        <img src="../images/subject.png" alt="Subject" title="Subject" style="border: 1px solid gray; zoom:70%;">  
+        **Code Editor**   
+        <img src="../images/email-response-html.png" alt="Code Editor" title="Code Editor" style="border: 1px solid gray; zoom:70%;"> 
+
+    !!! Note
+
+        Response group matching can be done at the group level only.
 
 5. Click **Create** when ready.
 

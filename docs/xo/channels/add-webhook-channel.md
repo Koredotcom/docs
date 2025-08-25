@@ -201,11 +201,11 @@ Webhook version 1.0 supports simple request and response interfaces for enabling
    </td>
   </tr>
   <tr>
-   <td>Multiple response nodes with service / script / webhook nodes in between
+   <td>Multiple response nodes with service / webhook nodes in between
    </td>
-   <td>The platform completes the service / script / webhook execution and sends the app responses as an array to the incoming request.
+   <td>The platform completes the service / webhook execution and sends the app responses as an array to the incoming request.
    </td>
-   <td>Each of the app response is sent to the Post_URL after processing the relevant service / script / webhook nodes.
+   <td>Each of the app response is sent to the Post_URL after processing the relevant service / webhook nodes.
    </td>
   </tr>
 </table>
@@ -612,14 +612,14 @@ The Webhook V2 API provides a more standardized and modular payload format and a
    </td>
   </tr>
   <tr>
-   <td>Multiple response nodes with service / script / webhook nodes in between
+   <td>Multiple response nodes with service / webhook nodes in between
    </td>
    <td>
 <ul>
 
 <li>The consecutive messages are delivered to the request along with a ‘pollid’.
 
-<li>The platform initiates the execution of service / script / webhook nodes.
+<li>The platform initiates the execution of service / webhook nodes.
 
 <li>The client should poll the platform using the ‘pollid’ at short intervals.
 
@@ -627,7 +627,7 @@ The Webhook V2 API provides a more standardized and modular payload format and a
 </li>
 </ul>
    </td>
-   <td>Each of the AI Agent response is sent to the Post_URL after processing the relevant service / script / webhook nodes.
+   <td>Each of the AI Agent response is sent to the Post_URL after processing the relevant service / webhook nodes.
    </td>
   </tr>
 </table>
@@ -1187,15 +1187,15 @@ Response:
 
 **Scenario 2**: Responses with need for polling
 
-If there are one or more Service / Script / Webhook nodes between messages, the platform delivers the messages along with a ‘pollid’ to the incoming request. The client should implement a polling framework to process the flow using the ‘pollid’ provided by the platform.
+If there is a Service node or a Webhook node between messages, either alone or in combination with Script nodes, the platform includes a ‘pollid’ in the response. The client should implement a polling framework to process the flow using the ‘pollid’ provided by the platform.
 
 
 
 * The platform delivers the first message or set of consecutive messages along with a ‘_pollid_’ to the incoming request.
 * The client should make a poll request to the platform using the ‘_pollid_’ provided by the platform in the response to the original request.
 * The response to the poll request can result in one of the following:
-    * The ‘_status_’ is returned as ‘_Inprogress_’ if the execution of service / script / webhook nodes is still in progress.
-    * The response will include the message payload if the execution of service / script / webhook is completed.
+    * The ‘_status_’ is returned as ‘_Inprogress_’ if the execution of service / webhook nodes is still in progress.
+    * The response will include the message payload if the execution of service / webhook is completed.
     * The response will give an error message if the message for a ‘_pollid_’ is already delivered to the client.
 
 **Sample request with messages and ‘pollid’**
@@ -1209,7 +1209,7 @@ curl -X GET 'https://bots.kore.ai/chatbot/v2/webhook/st-8e031d0a-xxxx-xxx-bf4c-b
 
 **Sample response with messages and ‘pollid’**
 
-The platform delivers the first message or set of consecutive messages along with a ‘pollid’ to the incoming request. The platform initiates the execution of Service / Script / Webhook nodes.
+The platform delivers the first message or set of consecutive messages along with a ‘pollid’ to the incoming request. The platform initiates the execution of Service / Webhook nodes.
 
 
 ```
@@ -1244,12 +1244,12 @@ Method: GET
 
 **Response to poll request when the execution is complete**
 
-If the processing of service / script / webhook is completed, then the platform responds to the poll request with the message payload.
+If the processing of service / webhook is completed, then the platform responds to the poll request with the message payload.
 
 
 
 * The response format will be the same the regular response.
-* If the flow execution includes execution of service / script / webhook nodes, then the response will include a new ‘pollid’ to be used for subsequent execution.
+* If the flow execution includes execution of service / webhook nodes, then the response will include a new ‘pollid’ to be used for subsequent execution.
 
 **Response to expired poll request**
 

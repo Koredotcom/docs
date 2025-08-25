@@ -45,66 +45,93 @@ Type of Repository
 </table>
 
 
-
 ## Authorization Support
 
 Search AI uses **OAuth 2.0 Authorization Code Grant Type** mechanism for integration with OneDrive.
 
+## Registering a multi-tenant app in Azure Portal
 
-## Registering a multi-tenant app in Azure Platform
+App registrations are required to access resources programmatically. Registering an app establishes trust between the SearchAI application and the Microsoft identity platform.
 
-App registrations are required to access resources programmatically. Registering an application establishes trust between the SearchAI application and the identity provider, the Microsoft identity platform. To register, 
+**Register an app in Azure**
 
-* Log in to the [Azure Platform Portal](https://portal.azure.com/#home) and go to Manage **Azure Active Directory**.
-* Register a new application. To do so, go to **App Registrations** under **Applications** and click on **New Registration.**
-* Enter the application's name. Create a multi-tenant account and set the account type to ‘Accounts in any organization directory’. Set the Redirect URL and click ***Register***. You can use one of the following URLs according to your region or deployment.
+1. Sign in to the [Azure Portal](https://portal.azure.com/#home) and go to **Azure Active Directory**.
+1. Select **App Registrations** > **New Registration**.
+1. Enter the app name.
+1. Under **Supported account types**, select **Accounts in any organizational directory (multi-tenant)**.
+1. Enter the Redirect URL. Use the appropriate URL for your region or deployment:
     * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
     * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
     * Prod Callback URL: https://idp.kore.com/workflows/callback
-* This will generate a client ID, which will be used to identify the application uniquely in the  Microsoft Identity Platform. Save the ***ClientId*** and ***TenantId*** from the ***Overview*** section.
-* Next, [Generate a client Secret for the registered app](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) under the **Certificates and Secrets** tab.
-* Enter a description and set the expiration time to 24 months. Click ***Add***. 
-* Save the client secret generated. The client secret cannot be seen again on switching the tabs. 
-* The next step is to set up the application's required permissions. Go to **API Permissions** and click ***Add a permission***. 
-* Add the following delegated permissions found under **Microsoft Graph**. 
-    * Files.Read
-    * Files.Read.All
-    * Offline_access
-* After adding all the permissions, click ***Grant Admin Consent*** to grant the permissions to the application.
-* To configure the OneDrive connector in SearchAI, use the client ID, client secret, and tenant ID generated above. 
+1. Select **Register**.
 
-For more details, refer to [this](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+The registration generates a **Client ID** and **Tenant ID**. Save both values from the Overview page.
+
+**Create a client secret**
+
+1. In the app, go to **Certificates & secrets**.
+1. Select **New client secret**.
+1. Enter a description, set the expiration to 24 months, and select **Add**.
+1. Copy and save the client secret value. You cannot view it again after leaving the page.
+
+**Configure API permissions**
+
+1. Go to **API permissions** > **Add a permission**.
+1. Select **Microsoft Graph** > **Delegated permissions**.
+1. Add the following permissions:
+    * `Files.Read`
+    * `Files.Read.All`
+    * `Offline_access`
+1. Select **Grant admin consent** to apply the permissions.
+
+Use the Client ID, Client secret, and Tenant ID generated above to configure the OneDrive connector in SearchAI.
+
+For more information, see [how to register an app in Entra](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
 
 
-## Configuration of the OneDrive Connector 
+## Configure the OneDrive connector
 
-Go to the **Connectors** page and add **OneDrive Connector**. On the Authorization page, select the auth mechanism as OAuth 2.0 and the grant type as Authorization Code. Then, enter the **Client ID**, **Tenant ID**, and **Client Secret** generated during the application registration in the Azure portal. Click **Connect**.
+1. Go to the **Connectors** page and add **OneDrive connector**.  
+2. On the **Authorization** page, set the authentication mechanism to **OAuth 2.0** and the grant type to **Authorization code**.  
+3. Enter the **Client ID**, **Tenant ID**, and **Client secret** that you generated during app registration in the Azure portal.  
+4. Select **Connect**.  
 
-This will authenticate and enable the Search AI connector to interact with OneDrive for content ingestion.
-
+The connector is now authenticated and enables SearchAI to interact with OneDrive for content ingestion.
 
 ## Content Ingestion
 
-Once the authorization process is complete and the connector is configured, the next step is to ingest the content and make it searchable. Go to the **Configuration** tab and click on **Sync Now** to perform an immediate sync operation with the application. You can also **schedule a sync** to be performed at a future time. 
+Once the authorization process is complete and the connector is configured, the next step is to ingest content and make it searchable.
 
-A sync operation ingests content from the application, which is then chunked and indexed according to the configuration of the Search AI application. When a sync operation is performed for the first time, all the supported content is ingested into the application. When a recurrent sync is performed, only the updated content is ingested from the application. In this case, the chunks corresponding to the updated content are deleted and recreated. 
+1. Go to the **Configuration** tab.  
+2. Select **Sync now** to perform an immediate sync operation with OneDrive.  
+3. (Optional) **Schedule a sync** to run at a future time.  
 
-Note that all the supported files under the **My Files and Shared Files** are ingested into the Search AI application. If there are any folders, content under the folders is also ingested into the application. 
+A sync operation ingests content from OneDrive. The content is chunked and indexed according to the configuration of the SearchAI application.
+
+- During the first sync, all supported content is ingested.  
+- During subsequent syncs, only updated content is ingested. The chunks corresponding to updated content are deleted and recreated.  
+
+All supported files under **My files** and **Shared files** are ingested into SearchAI. Content inside folders is also ingested.  
 
 ![Drive Home](images/onedrive/onedrive.png "Drive Home")
 
-Following is a screenshot of the corresponding content ingested after ingestion via the Search AI connector. ![Content](images/onedrive/content.png "Content")
+The following screenshot shows content ingested after a sync operation through the OneDrive connector:  
+
+![Content](images/onedrive/content.png "Content")
+
 
 ## Access Control
 
-OneDrive Connector offers RACL support for the ingested content, allowing only users with access to the content in OneDrive to see answers from the content in Search AI.
+SearchAI supports access control for content ingested from OneDrive accounts.
 
-Go to the **Permissions and Security** tab in the OneDrive Connector. Set the access as required. 
-* **Permission Aware:** When this is selected, the content ingested via the connector honors the permissions granted to the content in OneDrive. Only users having access to specific content in OneDrive can see answers from the content. 
+To configure access control, go to the **Permissions and Security** tab in the OneDrive Connector and set the access as required.
 
-On enabling this option, the connector fetches the access information for the content along with other details and stores as **sys_racl **field. This information is then used to identify users and grant access to the indexed content. Find more details about it below. 
+OneDrive content access is determined by the permissions defined in the source system. SearchAI provides two options for managing access:
+
+* **Permission Aware**: When this option is enabled, the connector retrieves the access information from OneDrive during ingestion. This information is stored in the `sys_racl` field of the ingested content. Each entry in the `sys_racl` field represents a permission entity.
+SearchAI supports automatic resolution of these permission entities. It identifies the users who have access to the corresponding file or folder in OneDrive and automatically associates them with the correct permission entities in SearchAI.
     
-* **Public Access**: When this is selected, all the content ingested via the connector is available to everyone on Search AI. When this is selected, the application does not fetch the access information for the content from OneDrive.
+* **Public Access**: When this option is selected, the `sys_racl` field is set to *. The ingested content becomes accessible to all SearchAI users, regardless of the permissions in OneDrive.
 
 ### Understanding Permissions in OneDrive
 
@@ -118,12 +145,12 @@ It can also be shared as a link as follows.
 
 ### Handling Permissions in Search AI Connector
 
-* The owner of the file is automatically added to the sys_racl field of the content. 
-* The users to which the file is shared are also added directly to the sys_racl field of the content. 
-* The user groups to which the file is shared are added as permission entities to the sys_racl field. Corresponding users( part of the user groups) must be added manually using the Permission Entity APIs. 
+* The owner of the file is automatically added to the `sys_racl` field of the content. 
+* The users to which the file is shared are also added directly to the `sys_racl` field of the content. 
+* The user groups to which the file is shared are added as permission entities to the `sys_racl` field. Corresponding users( part of the user groups) must be added manually using the Permission Entity APIs. 
 * If the link is shared to a domain, the users of the given domain are automatically identified using the domain name.
 
-For instance, if Charles is the owner of a file and he shared it with a user group ‘[searchassist@Kore.com](mailto:searchassist@Kore.com)’ and an external user ‘[xyz@example.com](mailto:xyz@example.com), the sys_racl field would be like:
+For instance, if Charles is the owner of a file and he shared it with a user group ‘[searchassist@Kore.com](mailto:searchassist@Kore.com)’ and an external user ‘[xyz@example.com](mailto:xyz@example.com), the `sys_racl` field would be like:
 
 
 ```
@@ -133,7 +160,7 @@ For instance, if Charles is the owner of a file and he shared it with a user gro
 ]
 ```
 
-If Charles also allowed all the employees of his organization to access the file, the sys_racl field would be as shown below. 
+If Charles also allowed all the employees of his organization to access the file, the `sys_racl` field would be as shown below. 
 
 ```
 "sys_racl": [
