@@ -131,8 +131,11 @@ To create a new response within a response group, follow these steps:
         <img src="../images/email-response.png" alt="Email Response" title="Email Response" style="border: 1px solid gray; zoom:70%;">
     4. Click **+ Add Subject** and enter a subject for the email in the text editor.
     5. Click **Done**.  
-        <img src="../images/subject.png" alt="Subject" title="Subject" style="border: 1px solid gray; zoom:70%;">
-    
+        **Text Editor**    
+        <img src="../images/subject.png" alt="Subject" title="Subject" style="border: 1px solid gray; zoom:70%;">  
+        **Code Editor**   
+        <img src="../images/email-response-html.png" alt="Code Editor" title="Code Editor" style="border: 1px solid gray; zoom:70%;"> 
+
     !!! Note
 
         Response group matching can be done at the group level only.

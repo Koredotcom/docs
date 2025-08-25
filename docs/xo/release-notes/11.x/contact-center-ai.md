@@ -24,13 +24,15 @@ The agent console no longer auto-scrolls when new user messages arrive, preventi
 
 **GenAI-Based Disposition Prediction for Agent Wrap-Up**
 
-Contact Center Agents now receive AI-generated disposition code suggestions at the end of conversations. Using LLM analysis of the full transcript and disposition set metadata, the system recommends the most relevant wrap-up code, which is displayed in the disposition bar with options to accept it with one click or override it manually. This improves accuracy and reduces wrap-up time. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#intelligent-disposition-code-suggestions)
+Contact Center Agents now receive AI-generated disposition code suggestions at the end of conversations. Using LLM analysis of the full transcript and disposition set metadata, the system recommends the most relevant wrap-up code, which is displayed in the disposition bar with options to accept it with one click or override it manually. This improves accuracy and reduces wrap-up time. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#intelligent-disposition-code-suggestions)  
+<img src="../images/wrap-up-code-release-notes.png" alt="Agent Wrap-up Code" title="Agent Wrap-up Code" style="border: 1px solid gray; zoom:70%;">
 
 <font size="4">Configuration</font>
 
 **Automatic Away Status for Agent Inactivity**
 
-Administrators can configure the system to automatically set an agent’s status to Away when the _Agent Inactivity Wait Time_ is breached after a conversation becomes overdue. When enabled, the system updates the agent’s status to 'Away', prevents the agent from receiving new interactions, displays the updated status in the Supervisor dashboard, and applies existing routing rules for the 'Away' status.
+Administrators can configure the system to automatically set an agent’s status to Away when the _Agent Inactivity Wait Time_ is breached after a conversation becomes overdue. When enabled, the system updates the agent’s status to 'Away', prevents the agent from receiving new interactions, displays the updated status in the Supervisor dashboard, and applies existing routing rules for the 'Away' status. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md)  
+<img src="../images/automatic-away-release-notes.png" alt="Automatic Away" title="Automatic Away" style="border: 1px solid gray; zoom:70%;">
 
 **Configurable CSAT Survey Trigger for Agent-Closed Conversations**
 

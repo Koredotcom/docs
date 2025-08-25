@@ -381,16 +381,20 @@ The following recording settings can be configured:
 
     You can choose either as a single file or separate files.
 
-    * **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
+!!! Note
 
-        <img src="../images/single-recording.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
+    The retention period is configurable in the backend based on customer requests. Voice call recordings are permanently deleted after the configured period. Customers who opt in receive an email 7 days before deletion and a confirmation email after deletion. Deleted recordings display the message: "Recording not available. It may have been deleted as per your data retention policy." Customers who do not opt in are not affected. All actions, including retention configuration and recording deletions, are logged and available in the admin console. This applies only to on-prem customers.
 
-    * **Download as separate files**: If you choose this option, you can select the files and download them.  
+* **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
 
-        <img src="../images/multiple-recording.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/single-recording.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
 
-    The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
-    <img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+* **Download as separate files**: If you choose this option, you can select the files and download them.  
+
+    <img src="../images/multiple-recording.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+
+The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
+<img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
 
 * Duration: The increment and the countdown counters appear when the audio plays. The total duration of the audio is displayed before the audio plays.  
     <img src="../images/duration.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
