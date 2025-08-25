@@ -67,6 +67,11 @@ Steps to add/remove hyperlinks:
 5. Press **Enter** to send the message.  
 <img src="../images/send-message.png" alt="Send Message" title="Send Message" style="border: 1px solid gray; zoom:80%;">
 
+## Viewing New Messages in the Console
+
+When agents are reviewing earlier parts of a conversation, and a new message arrives while you are scrolled up, a New Message button appears at the bottom of the conversation thread. The button also displays the number of unread messages. To view the latest message, click the New Message button. The most recent message is displayed.  
+<img src="../images/new-message.png" alt="Auto Scroll" title="Auto Scroll" style="border: 1px solid gray; zoom:70%;">
+
 ## Resend Message When Network Disconnects
 
 The following table lists scenarios with expected results in case of a network failure while an agent attempts to send a response.
@@ -181,6 +186,21 @@ Agents can make outbound calls to the customers as follows:
     !!! Note
 
         The country code defaults to the last dialed country. If no calls are dialed, the default country code is the US.
+
+#### Inbound Click-to-Call Interaction
+
+Agents receive the Click-to-Call interaction in the Live Interaction pane, similar to an inbound voice call. The system displays the metadata and prior chat transcript to the agent. During the call, agents can pause and resume recording when handling sensitive information. After the call ends, the system stores the transcription and disposition summary. [Learn more](../contactcenter/flows-and-routing/conditional-flows.md#click-to-call-flow).  
+<img src="../images/click-to-call-interaction.png" alt="Click to Call Interaction" title="Click to Call Interaction" style="border: 1px solid gray; zoom:70%;">  
+
+In addition to After Call Work (ACW), Agents also have access to the following call controls:  
+
+* Mute  
+* Unmute  
+* Hold  
+* Resume  
+* Recording – Pause and Resume  
+* Transcription – Pause and Resume  
+* Transfer – Internal
 
 ## Voicemail
 
@@ -607,6 +627,9 @@ These settings can be configured from [Agent settings](../contactcenter/agent-an
 **Reply and Reply All**: Agents can click **Reply** to open a response window addressed only to the most recent sender. Clicking **Reply All** opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.  
 <img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
 
+**Arrival Summary**: Every email conversation begins with an Arrival summary once an agent accepts it. For more information about the arrival summary, refer to Arrival Summary.  
+<img src="../images/email-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
+
 **Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.  
 <img src="../images/cc-and-bcc.png" alt="CC and BCC" title="CC and BCC" style="border: 1px solid gray; zoom:70%;">
 
@@ -681,8 +704,10 @@ Steps to send an outbound email:
     Click the down arrow button ”**V**” beside Send and click **Send & Close**.  
         <img src="../images/send-and-close.png" alt="Send & Close Button" title="Send & Close Button" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation is displayed, and the email is sent. A disposition window appears. Select a disposition and click **Close**.  
+    A confirmation is displayed, and the email is sent. A disposition window appears.   
         <img src="../images/disposition-sent-mail.png" alt="Disposition Sent Mail" title="Disposition Sent Mail" style="border: 1px solid gray; zoom:80%;">
+    If Wrap-up Code prediction is enabled, a disclaimer appears requesting users to verify the content before using it.  
+        <img src="../images/ai-generated-content.png" alt="AI Generated Content" title="AI Generated Content" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -910,6 +935,21 @@ Dispositions can be assigned in two ways:
         * **Custom**: Administrators can [create custom disposition codes](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
     * Optionally, type a **Description** of your reason for selecting the disposition.
     * Click **_Close_** to close the conversation.
+
+#### Intelligent Disposition Code Suggestions
+
+When enabled, agents receive intelligent disposition code suggestions automatically at the end of customer conversations. The feature uses LLM analysis of the full conversation transcript and disposition set metadata to recommend the most appropriate wrap-up code. Suggestions appear prominently in the disposition bar and can be accepted with one click or overridden manually, ensuring higher accuracy and reduced wrap-up time. [Learn more](../contactcenter/configurations/settings/wrap-up-code-prediction.md).
+
+Steps to receive intelligent disposition code suggestions:
+
+1. Click **End** to close the conversation.  
+    <img src="../images/end.png" alt="End Button" title="End Button" style="border: 1px solid gray; zoom:70%;">
+
+2. The **Disposition & Notes** window opens with suggested disposition codes.  
+    <img src="../images/disposition-window.png" alt="Disposition & Notes" title="Disposition & Notes" style="border: 1px solid gray; zoom:70%;">
+
+3. Agents can select a disposition code to accept it, or choose multiple disposition codes if needed, and then click **Close**.  
+    <img src="../images/select-and-close.png" alt="Close Button" title="Close Button" style="border: 1px solid gray; zoom:70%;">
 
 ### Translate Conversations in Real Time
 

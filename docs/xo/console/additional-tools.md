@@ -54,6 +54,21 @@ The Conversation History widget shows both inbound and outbound call records, us
 * Clicking the conversation displays the transcript.  
     <img src="../images/transcript.png" alt="Transcript" title="Transcript" style="border: 1px solid gray; zoom:70%;">
 
+### Translate Historical Digital Conversations
+
+This feature enables users to translate past digital interactions directly within the Chat History Tab, using the same controls as in the Live Agent Console. It allows viewing both the original and translated versions of messages, ensures consistent translations across the platform, and removes the need for external tools.
+
+Steps to translate historical conversations:
+
+1. Click the **History** tab to view past conversations.
+2. Select the conversation you want to translate, and then click **Translate** on the Live Interaction pane.
+3. Choose the desired language from the drop-down list.  
+    <img src="../images/language-dropdown.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:70%;">
+4. The conversation appears in the selected language.  
+    <img src="../images/translated-historical-conversation.png" alt="Translated Conversation" title="Translated Conversation" style="border: 1px solid gray; zoom:70%;">
+5. Click **Original** to display the conversation in its original language.  
+    <img src="../images/original-conversation.png" alt="Original Conversation" title="Original Conversation" style="border: 1px solid gray; zoom:70%;">
+
 ## Internal Chat with Other Agents or Supervisors
 
 As an agent, you can initiate an Internal Chat conversation if you face a challenge in resolving a customer issue. The agent console allows you to chat with other agents or supervisors and get assistance. This feature facilitates faster query resolution and increases customer satisfaction. Follow the below steps to initiate an Internal Chat conversation:

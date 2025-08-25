@@ -58,13 +58,22 @@ The Chat, Call, and Email Experience tabs provide access to the following featur
 * Configure the **Request Message** and add a **Gratitude Message** that will appear to customers before and after they take the survey.
     * Choose the message language, type the message in, then click **Done**.  
     <img src="../images/edit-message.png" alt="Request Messages" title="Request Messages" style="border: 1px solid gray; zoom:80%;">
+
+!!! Note
+
+    Email message can be written in plain text or HTML/CSS code.
+
 * Set the Survey Frequency by configuring the following options:
     * **Show to Everyone** – Select this option to make the survey visible to all the customers.
     * **Show to Every nth User** – Select this option to make the survey visible to every _nth_ user. For example, if you enter 2 in the input textbox, the survey will appear to every second customer.
     * **Agents can Trigger** – This will let the agents trigger the survey.
-* Toggle on Enable at the top right to ensure the survey is active.
+* Advanced Survey Conditions
+    * Trigger the CSAT survey when no agents are available: Triggers a CSAT survey when agent transfer is not initiated.
+    * Trigger the CSAT survey outside business hours: Triggers a CSAT survey outside business hours when no agents are available.
+    * Trigger CSAT for agent-closed conversations: Triggers CSAT survey for conversations closed by agents.
+* Turn on the toggle on Enable at the top right to ensure the survey is active.
 * Click **Done** to begin sending it to customers. If you do not want to do so, leave the survey disabled.  
-<img src="../images/complete-survey.png" alt="Configure Chat Experience" title="Configure Chat Experience" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/csat-survey.png" alt="Configure Experience" title="Configure Experience" style="border: 1px solid gray; zoom:70%;">
 
 ## Edit a Survey
 
@@ -81,7 +90,7 @@ Steps to delete a survey:
 
 1. In the Surveys section, click the **Survey Name** or the **Edit** icon.
 2. In the survey configuration window, click the **Delete** (bin) button on the left side of the bottom toolbar.  
-<img src="../images/delete-surveys.png" alt="Delete a Survey" title="Delete a Survey" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/delete-survey.png" alt="Delete a Survey" title="Delete a Survey" style="border: 1px solid gray; zoom:70%;">
 3. Confirm your choice.
 
 !!! Note

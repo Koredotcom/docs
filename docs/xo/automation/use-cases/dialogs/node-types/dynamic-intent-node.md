@@ -80,7 +80,7 @@ If multiple entities of the same type are captured in a dialog before the Dynami
 
 **Example:**
 
-Entities:
+Entities:  
     1. Departure City  
     2. Destination City
 
