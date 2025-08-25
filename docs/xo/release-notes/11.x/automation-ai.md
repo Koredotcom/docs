@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Call ID Support in the getMessage API for AudioCodes and SAVG**   
 
-To improve access to app-user conversation history for voice interactions, the getMessage API now accepts callId as an optional query parameter for AudioCodes and SAVG. It aims to reduce latency and infrastructure load for high-volume customers who retrieve conversational data for analysis and auditing. [Learn more :octicons-arrow-right-24:](../../apis/automation/conversation-history.md)
+To improve access to app-user conversation history for voice interactions, the getMessage API now accepts callId as an optional query parameter for AudioCodes and SAVG. It aims to reduce latency and infrastructure load for high-volume customers who retrieve conversational data for analysis and auditing. [Learn more :octicons-arrow-right-24:](../../apis/automation/conversation-history.md#sample-request)
 
 
 <hr>
