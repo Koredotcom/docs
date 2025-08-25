@@ -1,6 +1,6 @@
 # Conversation-driven Dialog Builder
 
-Conversation Builder is a new dialog task editor which allows you to design and build a dialog task using conversational elements. It leverages the [Flow-based Dialog Task Builder](/docs/xo/automation/use-cases/dialogs/dialog-tasks-overview/){target="_blank"}.
+Conversation Builder is a new dialog task editor which allows you to design and build a dialog task using conversational elements. It leverages the [Flow-based Dialog Task Builder](../../use-cases/dialogs/dialog-tasks-overview.md){target="_blank"}.
 
 Developing the Dialog Task Builder involves manual effort in understanding and converting the conversation components into dialog components.
 
@@ -26,7 +26,7 @@ You can access this view by clicking **Automation AI** > **Use Cases** > **Dialo
 
 ## Create and Configure a Dialog
 
-You can initiate a Conversation-driven Dialog Builder with the steps mentioned [here](/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#create-a-dialog-task){target="_blank"}.
+You can initiate a Conversation-driven Dialog Builder with the steps mentioned [here](../../use-cases/dialogs/using-the-dialog-builder-tool.md#create-a-dialog-task){target="_blank"}.
 
 Configure the fields based on the option you select:
 
@@ -81,12 +81,12 @@ To find and install a third-party dialog template out of 150+ categories and 30+
 
 ## Navigating Dialog Tasks
 
-Please click [here](/docs/xo/automation/use-cases/dialogs/navigating-dialog-tasks/){target="_blank"} to learn more.
+Please click [here](../../use-cases/dialogs/navigating-dialog-tasks.md){target="_blank"} to learn more.
 
 ## Dialog Builder Components
 
-To learn more about the components available on the Dialog Builder Panel, click [here](/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#dialog-task-builder-overview){target="_blank"}.
+To learn more about the components available on the Dialog Builder Panel, click [here](../../use-cases/dialogs/using-the-dialog-builder-tool.md#dialog-task-builder-overview){target="_blank"}.
 
 ## Node Types
 
-Please click [here](/docs/xo/automation/use-cases/dialogs/node-types/nodes-transitions/#node-types){target="_blank"} to learn more about the node types supported on UXO Platform's Dialog Builder.
+Please click [here](../../use-cases/dialogs/node-types/nodes-transitions.md#node-types){target="_blank"} to learn more about the node types supported on UXO Platform's Dialog Builder.
