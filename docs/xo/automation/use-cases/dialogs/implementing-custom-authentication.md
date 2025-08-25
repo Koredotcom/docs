@@ -30,8 +30,7 @@ To configure the custom authentication service, please follow the steps below:
 3. On the **Component Properties** tab of the node, enter a **Name** for the node.
 4. In the **Service Type** drop-down list, select **Custom Authentication Service**.
 5. In the **Auth URL** field, enter the URL of the external authentication service.
-6. Under the **Response** section, it shows the default authentication requisition message that the AI Agent presents to the user. You can edit the message or click **Manage** to define advanced or channel-specific messages. Learn about [message formatting and templates.
-](../../../../web-mobile-SDK-message-formatting-and-templates/){:target="_blank"}.
+6. Under the **Response** section, it shows the default authentication requisition message that the AI Agent presents to the user. You can edit the message or click **Manage** to define advanced or channel-specific messages. Learn about [message formatting and templates.](../../../sdk/web-mobile-sdk-message-formatting-and-templates.md){:target="_blank"}.
     
     !!! Note
     
