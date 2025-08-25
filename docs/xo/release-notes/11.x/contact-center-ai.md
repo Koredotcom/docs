@@ -75,7 +75,7 @@ The transcripts log now displays timeline messages when maximum retries are exce
 
 **Fetch Conversation Details by Session ID**
 
-A new Public API is available to fetch conversation details using the Parent App Session ID. The API returns conversation details only when a successful agent handoff has occurred in the session. If no handoff exists, it returns the error: “Conversation not found for the given session id.”
+A new Public API is available to fetch conversation details using the Parent App Session ID. The API returns conversation details only when a successful agent handoff has occurred in the session. If no handoff exists, it returns the error: “Conversation not found for the given session id.” [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-conversation-details.md) 
 
 <hr>
 
