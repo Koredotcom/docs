@@ -1,12 +1,12 @@
 # Adding IF-Else Conditions to Sequence Connections
 
-The Kore.ai XO Platform allows you to use If-Else conditions to configure node connections. You may want to use such conditions when you want the conversation to follow specific paths depending on specific information.
+The Platform allows you to use If-Else conditions to configure node connections. You may want to use such conditions when you want the conversation to follow specific paths depending on specific information.
 
 For example, if you are working with a travel app and are setting up a _Book a Flight_ dialog task, you might want to provide a specific offer for group reservations. So, if during the conversation, the AI Agent detects a certain number of passengers, you may want to direct the conversation to one path or another, depending on that number. Say for instance, if the passenger count is 5 or less, present the standard offer; otherwise present a promotional offer.
 
 This is a simple example; you can use the conditions feature to design complex conversation paths based on the criteria that suit your business.
 
-This article, therefore, takes you to the options available within the XO Platform that allow you to configure sequence connection conditions.
+This article, therefore, takes you to the options available within the Platform that allow you to configure sequence connection conditions.
 
 
 ## Types of Conditions
@@ -49,7 +49,7 @@ Under the **Connection Properties** section, click **Add IF or Add Else If**. Yo
 
 This criterion allows you to compare an Entity node in the dialog with a specific value:
 
-* Select the **Entity**. This is based on [Entity node type](../../node-types/working-with-the-entity-node/){:target="_blank"}.
+* Select the **Entity**. This is based on [Entity node type](../node-types/working-with-the-entity-node.md){:target="_blank"}.
 * Select an **Operator** from the drop-down list: exists, does not exist, equal to, greater than or equal to, less than or equal to, not equal to, greater than, less than and contains.
 * Type in **Value**. This field is not displayed if it _exists_ or _does not exist_ and is used as operators.  
 
@@ -69,7 +69,7 @@ For example, _PassengerCount (entity) greater than (operator) 5 (specified value
 
 The Context criterion allows you to compare a context object in the dialog task with a specific value. You can configure the following parameters:
 
-* Select the **Context** object you want to use. Keep in mind to follow the required syntax – see the [Context Object](../../../context-object/){:target="_blank"} article for details.
+* Select the **Context** object you want to use. Keep in mind to follow the required syntax – see the [Context Object](../../../intelligence/context-object.md){:target="_blank"} article for details.
 * Select an **Operator** from the drop-down list: exists, does not exist, equal to, greater than or equal to, less than or equal to, not equal to, greater than, less than and contains.
 * Type the number in the **Value** field. This field is not displayed if it _exists_ or _does not exist_ and is used as operators. You can enter a static value or dynamic variable, such as context, environment, or content. To use a variable, enter the variable type (content, context, or env) followed by a dot (.) and then select the variable from the pop-up list.
 * In the **Then go to** dropdown, choose the node to connect to if the condition is met.

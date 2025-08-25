@@ -511,7 +511,7 @@ The user input's Personal Identifiable Information (PII) data will be masked in 
 
 <font size="4">General Availability of a Key Feature</font>
 
-We are announcing the general availability (GA) of the [DialogGPT Module](./../../generative-ai-tools/dialog-gpt.md) to all our users. 
+We are announcing the general availability (GA) of the [DialogGPT Module](../../generative-ai-tools/dialog-gpt.md) to all our users. 
 
 <hr>
 

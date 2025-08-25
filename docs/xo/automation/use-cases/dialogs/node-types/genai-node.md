@@ -1,7 +1,7 @@
 # Agent Node Version 1 (Deprecated)
 
 
-The **Agent Node** lets you leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. You can define the entities you would like to collect and also the business rules that govern the collection of these entities. The XO Platform orchestrates the conversation using contextual intelligence, ensuring that the conversation is always grounded to your enterprise business rules. You can also provide exit rules for handing off the conversation to the AI Agent or the human agents.
+The **Agent Node** lets you leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. You can define the entities you would like to collect and also the business rules that govern the collection of these entities. The Platform orchestrates the conversation using contextual intelligence, ensuring that the conversation is always grounded to your enterprise business rules. You can also provide exit rules for handing off the conversation to the AI Agent or the human agents.
 
 
 ## Why an Agent Node?
@@ -83,7 +83,7 @@ Under **Dialog Details**, configure the following:
 
 ### Pre-Processor Script
 
-This property helps execute a script as the first step when the Agent Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
+This property helps execute a script as the first step when the Agent Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. [Learn more](working-with-the-script-node.md#configure-the-node){:target="_blank"}.
 
 **Steps to Define and Configure Pre-processor Script**
 
@@ -109,7 +109,7 @@ Include a brief description of the use case context; for example: _Act like a fl
 
 Specify the entities to be collected by LLM during runtime. Click Add Entity, enter a Key for the Entity Type, then choose a Value from the drop-down list. Click the Bin icon next to an entity type to remove it.
 
-You can add a maximum of 5 entities. Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../../entity-types){:target="_blank"} for more information.
+You can add a maximum of 5 entities. Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../entity-types.md){:target="_blank"} for more information.
 
 <img src="../images/genai-node(12).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -140,7 +140,7 @@ To remove a scenario, click the Bin icon next to the scenario.
 
 ### Post-Processor Script
 
-This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Pre-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
+This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Pre-processor Script has the same properties as the Script Node. [Learn more](working-with-the-script-node.md#configure-the-node){:target="_blank"}.
 
 **Important Considerations**
 
@@ -208,7 +208,7 @@ To define the interruption handling at this node. You can select from the below 
 
 ### Custom Tags
 
-Add Custom Meta Tags to the conversation flow to profile AI Agent-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions. See [Custom Meta Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"} for details.
+Add Custom Meta Tags to the conversation flow to profile AI Agent-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions. See [Custom Meta Tags](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"} for details.
 
 <img src="../images/genai-node(7).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -227,7 +227,7 @@ See [Voice Call Properties](../../../use-cases/dialogs/node-types/voice-call-pro
 
     If the node is at the bottom in the sequence, then only the connection property is visible.
 
-Define the transition conditions from this node. These conditions are applicable only for this instance and will not affect this node being used in any other dialog. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} for a detailed setup guide.
+Define the transition conditions from this node. These conditions are applicable only for this instance and will not affect this node being used in any other dialog. See [Adding IF-Else Conditions to Node Connections](../node-connections/nodes-conditions.md){:target="_blank"} for a detailed setup guide.
 
 <img src="../images/genai-node(11).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 

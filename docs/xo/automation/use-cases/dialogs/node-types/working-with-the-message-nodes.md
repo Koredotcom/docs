@@ -1,8 +1,8 @@
-# Message (Bot Response) Nodes
+# Message Nodes
 
 The Message Node is used to deliver a message to the user. Message nodes commonly follow an API, web service call, or webhook event to define their results as a formatted response.  
 
-You can format bot responses as below:
+You can format node responses as below:
 
 * **Plain text**: Type a message in plain text. You can use stored context values with `{{variable brackets}}`. For example: `'Hello {{context.session.UserContext.firstName}}. How can I help you?'`
 * **Javascript**: Compose JavaScript responses either:

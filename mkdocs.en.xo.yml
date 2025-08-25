@@ -482,52 +482,6 @@ nav:
       - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
-    - Quality AI:
-      - About Quality AI: quality-management/about-quality-ai.md         
-      - Getting Started:     
-        - Setup Guide: quality-management/getting-started/setup-guide.md
-        - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
-      - Quality Express:     
-        - Quality AI Express: quality-management/getting-started/quality-ai-express.md
-        - AWS S3 Connector Setup Guide: quality-management/getting-started/aws-s3-connector-setup-guide.md      
-      - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
-      - Analyze:
-        - Dashboard:
-          - Supervisor Dashboard: quality-management/analyze/dashboard.md
-          - Supervisor View (Agent-Specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
-          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                          
-        - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
-        - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
-        - Conversation Mining: 
-          - Introduction: quality-management/analyze/conversation-mining-overview.md
-          - Interactions: quality-management/analyze/conversation-mining-interactions.md 
-          - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
-        - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
-      - Coach:
-          - Coaching Assignments: 
-            - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
-            - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
-          - Coaching Monitor: quality-management/coach/coaching-monitor.md        
-      - Configure:
-        - Evaluation Criteria:
-            - Evaluation Forms: quality-management/configure/evaluation-forms.md
-            - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
-            - Metrics Measurement Types: 
-              - By Question: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-question.md
-              - By Speech: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-speech.md 
-              - By Value: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-value.md
-              - By AI Agent: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md
-              - By Dialog Task: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
-              - By Playbook Adherence: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md              
-              
-        - Agent Scorecards: quality-management/configure/agent-scorecards.md
-        - Connectors: 
-            - Introduction: quality-management/connectors/connector-intro.md
-            - Amazon S3: quality-management/connectors/amazon-s3.md
-        - Settings: 
-          - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
-          - Quality AI General Settings: quality-management/configure/quality-ai-general-settings.md
-          - Language Settings: quality-management/configure//langauge-settings.md
     - Case Management:
       - About Case Management: case-management/case-management.md
       - Setup Process: case-management/setup-process.md   
@@ -535,8 +489,53 @@ nav:
       - Manage Cases and Tasks: case-management/manage-cases-and-tasks.md
       - Agent Console: case-management/agent-console.md
       - Case Analysis Dashboard: case-management/case-analysis-dashboard.md
+  - Quality AI:
+    - About Quality AI: quality-ai/about-quality-ai.md         
+    - Getting Started:     
+      - Setup Guide: quality-ai/getting-started/setup-guide.md
+      - Best Practices for Auto QA Configuration: quality-ai/getting-started/best-practices-for-auto-qa-config.md      
+      - AI Assisted Manual Audit: quality-ai/ai-assisted-manual-audit.md      
+    - Analyze:
+      - Dashboard:
+        - Supervisor Dashboard: quality-ai/analyze/dashboard.md
+        - Supervisor View (Agent-Specific Dashboard): quality-ai/analyze/Supervisor-view-agent-dashboard.md
+        - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md                          
+      - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
+      - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md
+      - Conversation Mining: 
+        - Introduction: quality-ai/analyze/conversation-mining-overview.md
+        - Interactions: quality-ai/analyze/conversation-mining-interactions.md 
+        - Audit Allocations: quality-ai/analyze/conversation-mining-audit-allocations.md
+      - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md            
+    - Coach:
+        - Coaching Assignments: 
+          - Supervisor View: quality-ai/coach/coaching-assignments-supervisor-view.md
+          - Agent View: quality-ai/coach/coaching-assignments-agent-view.md 
+        - Coaching Monitor: quality-ai/coach/coaching-monitor.md        
+    - Configure:
+      - Evaluation Criteria:
+          - Evaluation Forms: quality-ai/configure/evaluation-forms.md
+          - Evaluation Metrics: quality-ai/configure/evaluation-metrics.md
+          - Metrics Measurement Types: 
+            - By Question: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-question.md
+            - By Speech: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-speech.md 
+            - By Value: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-value.md
+            - By AI Agent: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md
+            - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
+            - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md              
+      - Agent Scorecards: quality-ai/configure/agent-scorecards.md
+      - Quality Express:     
+        - Quality AI Express: quality-ai/getting-started/quality-ai-express.md
+        - AWS S3 Connector Setup Guide: quality-ai/getting-started/aws-s3-connector-setup-guide.md   
+      - Connectors: 
+          - Introduction: quality-ai/connectors/connector-intro.md
+          - Amazon S3: quality-ai/connectors/amazon-s3.md
+      - Settings: 
+        - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
+        - Quality AI General Settings: quality-ai/configure/quality-ai-general-settings.md
+        - Language Settings: quality-ai/configure/language-settings.md
   - Agent AI:
-    - About Agent AI: agentai/about-agent-ai.md           
+    - About Agent AI: agentai/about-agent-ai.md
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md

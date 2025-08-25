@@ -21,6 +21,7 @@ The API Stage in Workbench has been enhanced to give users more flexibility when
 The training process in Search AI has been enhanced to provide greater transparency and flexibility. Users can now access detailed training logs that provide document-level visibility into the training lifecycle, including insights into errors and failures. This makes it easier to monitor the progress effectively and identify and address issues promptly.
 
 <font size="4">Answer Debug Improvements</font>
+
 The Answer debugging feature has been enhanced to provide comprehensive visibility into the retrieval process for effective troubleshooting, result validation, and a deeper understanding of system behavior. 
 Key improvements:
 
@@ -30,6 +31,7 @@ Key improvements:
 * UI Improvements: Remove visual clutter and enhance the information hierarchy.
 
 <font size="4">Unified Schema Management Enhancements</font>
+
 Search AI introduces a new Manage Schema interface that gives users enhanced control and visibility over document fields based on the unified schema. With this update, users can:
 
 * View key field properties, including field name, description, data type, custom field indicator, and mapped chunk field.
