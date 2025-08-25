@@ -609,6 +609,7 @@ nav:
       - Search AI - GenAI Features: generative-ai-tools/genai-features-searchai.md
       - Agent AI - GenAI Features: generative-ai-tools/genai-features-agentai.md
       - Contact Center AI - GenAI Features: generative-ai-tools/genai-features-contactcenterai.md
+      - Quality AI - GenAI Features: generative-ai-tools/genai-features-qualityai.md
     - DialogGPT:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md

@@ -155,5 +155,5 @@ context.canProceed = valid;
 
 **Related Link**
 
-* [**koreUtil libraries**](../../../../apis/automation/koreutil-libraries.md){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)
+* [**koreUtil libraries**](../../../../apis/automation/koreutil-libraries.mdd){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)
 * [**Script Nodes, Call Flows, Agent Utils, and userSessionUtils**](../../../../flows/node-types/utils.md)
