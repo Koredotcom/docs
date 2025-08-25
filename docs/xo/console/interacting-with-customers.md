@@ -627,7 +627,7 @@ These settings can be configured from [Agent settings](../contactcenter/agent-an
 **Reply and Reply All**: Agents can click **Reply** to open a response window addressed only to the most recent sender. Clicking **Reply All** opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.  
 <img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
 
-**Arrival Summary**: Every email conversation begins with an Arrival summary once an agent accepts it. For more information about the arrival summary, refer to Arrival Summary.  
+**Arrival Summary**: Every email conversation begins with an Arrival summary once an agent accepts it. For more information about the arrival summary, refer to [Arrival Summary](#arrival-summary).  
 <img src="../images/email-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
 
 **Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.  
