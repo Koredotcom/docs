@@ -355,6 +355,11 @@ When you export an AI Agent in the Latest mode, the latest versions of the  task
 6. By default, all the components are selected for export. Deselect the items that you do not want to export.
 
     <img src="../images/bm(10).png" alt="App export" title="App export" style="border:1px solid gray; zoom:60%;">
+     
+    !!! note
+
+        If your app has events linked to specific Dialog tasks and those tasks are not included in the export, the associated bot events will be disabled by default in the exported copy. To avoid this, include all tasks referenced in bot events during export.
+
 
 7. For Automation Tasks, you can further choose to export only selected tasks. By default All Tasks are selected. 
 
