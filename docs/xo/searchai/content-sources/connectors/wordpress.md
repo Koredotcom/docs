@@ -45,12 +45,12 @@ Search AI supports the ingestion of content from both public and private sites. 
 
 ## Generating OAuth Client Credentials in WordPress
 
-1. Navigate to the [WordPress developer page](https://developer.wordpress.com/apps).
-2. Click on **Create New Application** to create new client application. Provide the following details. 
+1. Go to the [WordPress developer page](https://developer.wordpress.com/apps).
+2. Click **Create New Application** to create new client application. Enter the following details. 
 
 ![OAuth Client](images/wordpress/OAuth-client.png "Client")
     1. **Name**: Enter a name for the client (e.g., *My App*).
-    2. **Redirect URLs**: Provide the callback URL where authorization responses will be sent. Use one of the following redirect URLs based on your region or deployment. 
+    2. **Redirect URLs**: Enter the callback URL where authorization responses will be sent. Use one of the following redirect URLs based on your region or deployment. 
     * JP Region Callback URLs: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
     * DE Region Callback URLs: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
     * Prod Callback URLs: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
