@@ -11,9 +11,6 @@ Kore.ai allows you to export and import agent tasks and associated configuration
 
 This feature is particularly helpful to test various versions of your agent at different stages of the development process before it is released for end users. The articles in this section help you understand how the _Export_ and _Import_ features work and how to perform them.
 
-!!! note
-
-    Post v8.0 release, the _enableNegativePatterns_ flag will be included in ‘NLP Settings’ under ‘NLP Data’ in the exported and imported agent definitions. This flag is used to check if the Negative Patterns are enabled/disabled in the agent.
 
 Prior to this patch, this flag was part of ‘NLP Settings’ under ‘NLP Data’ in the imported agent definitions and ‘Bot Setting’ under ‘Setting’ in the exported agent definitions. This change is aimed at streamlining the functionality and might result in the failure to the incremental import of an agent from an export file generated before v8.0.
 
