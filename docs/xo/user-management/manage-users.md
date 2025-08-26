@@ -1,6 +1,6 @@
 # Manage Users
 
-In the XO Platform, the term User refers to the App Owner, App Developer, App Tester (customer support representatives), to supervisors, and administrators with an account within Contact Center AI (CCAI). To serve customers, you must add users to Contact Center and provide them with the necessary access. You can create user profiles, assign them to voice, chat, or both channels, and specific skills or queues.
+In AI for Service, the term User refers to the App Owner, App Developer, App Tester (customer support representatives), to supervisors, and administrators with an account within Contact Center AI (CCAI). To serve customers, you must add users to Contact Center and provide them with the necessary access. You can create user profiles, assign them to voice, chat, or both channels, and specific skills or queues.
 
 You can find the _Users_ section on the left navigation menu of the products or via the product switcher by going to **Manage** > **Users** > **Manage Users**.  
 <img src="../images/product-switcher.png" alt="Users Menu" title="Users Menu" style="border: 1px solid gray; zoom:100%;">
@@ -19,7 +19,7 @@ The Users section includes the features in the table below.
 
 ## Add a User
 
-You can add a user to Contact Center AI by following the steps below:
+You can add a user to CCAI by following the steps below:
 
 1. Click **Invite Users**.  
   <img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:80%;">
@@ -59,7 +59,7 @@ In the General Settings section, You can enable the **Allow agent permissions** 
 
 !!! Note
 
-    The customId field now supports all special characters except spaces, with a maximum limit of 64 characters.
+    The customId field supports all special characters except spaces, with a maximum limit of 64 characters.
 
 ### Chat & Voice
 
