@@ -9,50 +9,13 @@ You can find the _Users_ section on the left navigation menu of the products or 
 
 The Users section includes the features in the table below.
 
-<table>
-  <tr>
-   <td><strong>FEATURE</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Search
-   </td>
-   <td>Type in a user’s name to retrieve their record.
-   </td>
-  </tr>
-  <tr>
-   <td>User
-   </td>
-   <td>This is the name of the user you are viewing, as entered within their profile. Under every user’s name, their configured email is displayed.
-   </td>
-  </tr>
-  <tr>
-   <td>Role
-
-   </td>
-   <td>Lists the role assigned to the user.
-
-   </td>
-  </tr>
-  <tr>
-   <td>Skills
-
-   </td>
-   <td>Lists the skills assigned to the user.
-
-   </td>
-  </tr>
-  <tr>
-   <td>Queues
-
-   </td>
-   <td>Lists the queues assigned to the user.
-
-   </td>
-  </tr>
-</table>
+| **Feature** | **Description** |
+|-------------|-----------------|
+| Search | Type in a user’s name to retrieve their record. |
+| User | This is the name of the user you are viewing, as entered within their profile. Under every user’s name, their configured email is displayed. |
+| Role | Lists the role assigned to the user. |
+| Skills | Lists the skills assigned to the user. |
+| Queues | Lists the queues assigned to the user. |
 
 ## Add a User
 
@@ -96,7 +59,7 @@ In the General Settings section, You can enable the **Allow agent permissions** 
 
 !!! Note
 
-    The customId field now supports all special characters except spaces, resolving previous errors during creation or updates. The character limit is 64, with validation applied consistently across the Admin Console, APIs, and backend services.
+    The customId field now supports all special characters except spaces, with a maximum limit of 64 characters.
 
 ### Chat & Voice
 
