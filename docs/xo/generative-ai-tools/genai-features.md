@@ -108,19 +108,20 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 ## Automation AI - GenAI Features
 
-- Agent Node  
-- Automatic Dialog Generation  
-- Conversation Summary  
-- Conversation Test Case Suggestions  
-- Few-shot ML Model  
-- NLP Batch Test Case Suggestions  
-- Prompt Node  
-- Repeat Responses  
-- Rephrase Responses  
-- Rephrase User Query  
-- Training Utterance Suggestions  
-- Use Case Suggestions  
-- Zero-shot ML Model
+
+* **Agent Node**: This feature lets you build an AI Agent using LLMs, Tool calling, and generative AI. It supports entity collection, context handling, multilingual conversations, and external integrations—enabling dynamic, human-like interactions for employees and customers.
+* **Prompt Node:** Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
+* **Repeat Responses**: Use LLM to reiterate the last app responses when the Repeat App Response event is triggered.
+* **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual app responses.
+* **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
+* **Zero-shot ML Model**: Uses the Open AI LLM model for intent identification during run time based on semantic similarity.
+* **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
+* **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
+* **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
+* **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the an AI Agent or human agent. This API leverages an open-source LLM to summarize conversations.
+* **NLP Batch Test Cases Suggestion**: The Platform generates NLP test cases for every intent, including entity checks. You only need to create test suites in the Builder using the generated testing utterances.
+* **Training Utterance Suggestions**: Generate high-quality training data quickly and easily with the Platform’s suggested utterances for each intent. Review and add the suggestions as needed to create a powerful training set for your app.    
+* **Use Case Suggestions**: Uses the Open AI LLM model to generate use cases during an AI Agent creation journey.
 
 
 
@@ -128,54 +129,57 @@ Learn more about [Automation AI - GenAI Features](genai-features-automationai.md
 
 ## Search AI - GenAI Features
 
-- Answer Generation  
-- Metadata Extractor Agent  
-- Query Rephrase for Advanced Search API  
-- Query Transformation  
-- Result Type Classification  
-- Vector Generation
+* **Answer Generation**: This feature helps generate an answer to the user question based on the data ingested into the Search AI application.
+* **Vector Generation**: Generate embeddings for the ingested data in the Answers module and user queries to answer end-user queries at run time.
+- **Metadata Extractor Agent**: This feature is used to extracts relevant sources and fields from a query, map them to structured data, and apply filters or boosts for accurate retrieval. This is particularly useful for data from third party applications.  
+- **Query Rephrase for Advanced Search API**: This feature is used to add contextual information to the user queries and enhance them for relevance. 
+- **Query Transformation**: This feature is used to identify key terms within a query, removing noise and prioritizing relevant documents.
+- **Result Type Classification**: This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query.
+* **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
+
 
 Learn more about [Search AI - GenAI Features](genai-features-searchai.md).
 
 ## Agent AI - GenAI Features
 
 
-* Agent Coaching
-* Conversation Summary
-* Generating Opposite Utterance Suggestions
-* Generating Similar Answer Suggestions
-* Generating Similar Utterance Suggestions
-* Sentiment Analysis
+* **Agent Coaching**: Generate agent best responses based on the conversation history and current message to support agent coaching.
+* **Conversation Summary**: Create conversation summaries during chat transfers or create closing notes of conversations between users and agents.
+* **Generating Opposite Utterance Suggestions**: Use LLM models for generating opposite utterances during design time.
+* **Generating Similar Answer Suggestions**: Use LLM models for generating similar answers during design time based on semantic similarity.
+* **Generating Similar Utterance Suggestions**: Use LLM models for generating similar utterances during design time based on semantic similarity.
+* **Sentiment Analysis**: Identify customer sentiment across agent conversations through Quality AI using LLMs.
+
 
 Learn more about [Agent AI - GenAI Features](genai-features-agentai.md).
 
 
 
-
 ## Contact Center AI - GenAI Features
 
-
-* Agent Response Rephrasing
-* Conversation Summary
-* Disposition Prediction for Agent Wrap-Up
-* Post conversation Sentiment analysis
-* Sentiment Analysis
+* **Agent Response Rephrasing**: Generate agent best responses based on the conversation history and current message to support agent coaching.
+* **Conversation Summary**: Create conversation summaries during chat transfers or create closing notes of conversations between users and agents.
+* **Disposition Prediction for Agent Wrap-Up**: Auto-suggest disposition codes based on conversation context and disposition metadata.
+* **Post conversation Sentiment analysis**: Post conversation sentiment and emotion detection.
+* **Sentiment Analysis**: Identify customer sentiment across agent conversations through Quality AI using LLMs.
 
 
 Learn more about [Contact Center AI - GenAI Features](genai-features-contactcenterai.md).
 
 ## Quality AI - GenAI Features
 
-* Agent Empathy Identification
-* By Value Adherence validation for Quality AI
-* By Value metric extraction for Quality AI
-* Churn & Escalation Identification
-* Conversation Phase Identification
-* Crutch Word Usage Detection
-* Default Script Adherence
-* GenAI-based agent answer adherence and customer trigger detection
-* Generating Similar QM Utterance Suggestions
-* Sentiment Analysis
-* Topic Modelling
+
+- **Agent Empathy Identification**: Identify Agent empathy instances where customers have expressed negative sentiment throught Quality AI using LLMs.
+- **By Value Adherence validation for Quality AI**: Validates data adherence by comparing extracted metric values against reference data using multilingual LLM analysis. Performs precise value matching and returns binary adherence scores for each metric.
+- **By Value metric extraction for Quality AI**: Extract by value metric from user/agent/bot messages through Quality AI using LLMs.  
+- **Churn & Escalation Identification**: Identify customer churn risk and escalation intents across agent conversations through Quality AI using LLMs.
+- **Conversation Phase Identification**: Post conversation phase identification for phase level sentiment insights. 
+- **Crutch Word Usage Detection**: Use LLMs to detect agent crutch word usage in customer conversations through Quality AI.  
+- **Default Script Adherence**: Determine agent adherence to default script steps across greeting, branding, privacy policy, customer verification, hold etiquette and call closing through Quality AI's conversation Intelligence dashboard using LLMs.
+- **GenAI-based agent answer adherence and customer trigger detection**:  Use LLMs to check for agent adherence and customer trigger detection without configuring utterances and training.
+- **Generating Similar QM Utterance Suggestions**: Use LLM models for generating similar utterances during design time based on semantic similarity. 
+- **Sentiment Analysis**: Identify customer sentiment across agent conversations through Quality AI using LLMs. 
+- **Topic Modelling**: Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs
+
 
 Learn more about [Quality AI - GenAI Features](genai-features-qualityai.md).

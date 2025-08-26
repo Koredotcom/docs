@@ -40,7 +40,7 @@ A new toggle, _Trigger CSAT only for agent-closed conversations_, is now availab
 
 **Support for Special Characters in Agent customId**
 
-The customId field now supports all special characters except spaces, resolving previous errors during creation or updates. The character limit is 64, with validation applied consistently across the Admin Console, APIs, and backend services. This enhancement improves routing flexibility and operational mapping without affecting existing records, metrics, permissions, APIs, or Dynamic Routing.
+The customId field now supports all special characters except spaces, resolving previous errors during creation or updates. The character limit is 64, with validation applied consistently across the Admin Console, APIs, and backend services. This enhancement improves routing flexibility and operational mapping without affecting existing records, metrics, permissions, APIs, or Dynamic Routing. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#general-settings)
 
 **Revised Channel Attachment Rules for Default Welcome Flows**
 

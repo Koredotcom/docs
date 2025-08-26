@@ -26,9 +26,9 @@ The following features are available in the Agent AI widget:
 
 ## Widget Tabs
 
-The widget consists of four tabs–Search, My AI Agent (Bot), Assist, Transcript (for Voice channel)–and two buttons (Settings and theme) to help agents perform different tasks and activities.
+The widget consists of five tabs—Search, My AI Agent (Bot), Assist, Transcript (for Voice channel), More–and two buttons (Settings and theme) to help agents perform different tasks and activities.
 
-**Agent AI tabs:**
+**Agent AI tabs**:
 
 <img src="../WidgetContentUpdate_3.3.0/agent-assist-widget-tabs.png" alt="agent-assist-widget-tabs.png" title="agent-assist-widget-tabs.png" style="border: 1px solid gray; zoom:80%;">
 
@@ -202,6 +202,31 @@ Scenario 2: Smart Assist Application Suite
 
 The Transcription feature is available only for the voice calls. When a call begins, the Transcript tab displays the real-time transcription of conversations between agents and customers in text format. The transcriptions are available for the agent throughout the session and provide a historical record for future reference. Agents can read through and copy/paste it. If the Auto-scroll Widget Content toggle is enabled in the Widget Settings page, the system automatically navigates to the last message content for new utterances. Agents can manually scroll up and down to read through the content.  
 <img src="../widget-images/transcript-tab.png" alt="transcript-tab.png" title="transcript-tab.png" style="border: 1px solid gray; zoom:80%;">
+
+### More Tab
+
+The **More** (ellipsis) button lets agents share overall feedback on the Agent AI widget. Agents can select up to five positive or negative options and add comments (if the comment box is enabled). 
+!!! note
+
+    If the conversation is transferred, feedback from both agents is saved in the logs. 
+
+#### Steps to Submit Overall Widget Feedback
+
+1. Click the **More** (ellipsis) button > **Feedback**.  
+    <img src="../widget-images/overall-widget-feedback-button.png" alt="overall-widget-feedback-button" title="overall-widget-feedback-button" style="border: 1px solid gray; zoom:80%;">  
+
+2. Click one of the tabs—**Satisfied** or **Unsatisfied**. 
+
+    !!! note
+
+        Select **Satisfied** for positive and **Unsatisfied** for negative feedback messages.  
+
+    <img src="../widget-images/positive-feedback.png" alt="positive-feedback" title="positive-feedback" style="border: 1px solid gray; zoom:80%;">  
+
+3. Select the feedback messages from the list, and enter any additional comments. In the following screenshot, agent has selected the **Unsatisfied** tab, the **Irrelevant Dialogs** message, and entered a comment:  
+    <img src="../widget-images/additional-comments.png" alt="widget-images/additional-comments" title="widget-images/additional-comments" style="border: 1px solid gray; zoom:80%;">  
+
+4. Click **Submit**.
 
 ### Settings
 
