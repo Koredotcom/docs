@@ -278,7 +278,7 @@ nav:
         - Create Projects: evaluation/agentic-evaluation/create-project.md
         - Create Evaluations: evaluation/agentic-evaluation/create-evaluation.md
         - Import Datasets: evaluation/agentic-evaluation/import-production-data.md
-        - Configure Evaluators: evaluation/agentic-evaluation/evaluate-production-data.md
+        - Configure Evaluators: evaluation/agentic-evaluation/configure-evaluators.md
         - Run Evaluations: evaluation/agentic-evaluation/run-evaluation.md
         - View Results: evaluation/agentic-evaluation/view-evaluation-result.md
         - Analyze Evaluations: evaluation/agentic-evaluation/analyze-evaluation.md

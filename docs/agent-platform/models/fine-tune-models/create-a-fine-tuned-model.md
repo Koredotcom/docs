@@ -32,7 +32,16 @@ Steps to fine-tune a model:
     <img src="../images/import-hugging-face.png" alt="Import from Hugging Face" title="Import from Hugging Face" style="border: 1px solid gray; zoom:80%;"> 
 
 5. In the **Fine-tuning configuration** section:
-    * Select a **Fine-tuning type**, which you want to apply to the model. 
+    * Select a **Fine-tuning type** to apply to the model: Full fine-tune, LoRA (Low-Rank Adaptation), or QLoRA (Quantized LoRA).
+
+        The supported fine-tuning types vary based on the size of the base model:
+
+        | Base model parameters            | Supported fine-tuning types                         |
+        |----------------------------------|-----------------------------------------------------|
+        | **< 1B**                         | Full fine-tune, LoRA, QLoRA                         |
+        | **≥ 1B and < 5B**                | LoRA, QLoRA                                         |
+        | **≥ 5B and ≤ 8B**                | QLoRA                                               |
+
     * Enter the **Number of Epochs**, which indicates how many times the model processes the entire dataset during training.
     * Enter a number for **Batch size**, which implies the number of training examples used in one training iteration.
     * Enter a value for the **Learning rate**, which implies the size of the steps taken during the optimization of a model.
