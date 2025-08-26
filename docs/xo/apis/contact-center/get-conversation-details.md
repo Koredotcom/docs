@@ -2,78 +2,21 @@
 
 This API retrieves detailed information about a specific conversation session. It provides participant details, transfer history, queue activity, conversation status, notes, and dispositions.
 
-
-<table>
-  <tr>
-   <td><strong>Method</strong>
-   </td>
-   <td>GET
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Endpoint</strong>
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{botId}}/conversations/sessions/{{sessionId}}</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Content-Type</strong>
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Authorization</strong>
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>API Scope</strong>
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
-</table>
+| **Field**       | **Value** |
+|------------------|-----------|
+| **Method**       | GET |
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{botId}}/conversations/sessions/{{sessionId}}` |
+| **Content-Type** | `application/json` |
+| **Authorization** | `auth: {{JWT}}` <br> See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope**    | SmartAssist Analytics |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://platform.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>botId
-   </td>
-   <td>Unique Bot ID (for example: <code>st-da6627e6-bb55-5e2f-80d3-92220e02xxxx</code>)..
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>sessionId
-   </td>
-   <td>Parent App Session ID (for example: <code>68a95e70fe5b8e806f8exxxx</code>).
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **Parameter** | **Description** | **Type** |
+|---------------|-----------------|-----------|
+| `host`      | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| `botId`     | Unique Bot ID (for example: `st-da6627e6-bb55-5e2f-80d3-92220e02xxxx`). | string, required |
+| `sessionId` | Parent App Session ID (for example: `68a95e70fe5b8e806f8exxxx`). | string, required |
 
 ## Sample Request
 
@@ -95,77 +38,19 @@ curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{botI
 
 ## Headers
 
-<table>
-  <tr>
-   <td><strong>Header</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><code>accept</code>
-   </td>
-   <td>Supported response type. Must be <code>application/json</code>.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td><code>accountid</code>
-   </td>
-   <td>Identifies the customer account.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td><code>content-type</code>
-   </td>
-   <td>Content type of the request. Must be <code>application/json;charset=UTF-8</code>.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-</table>
+| **Header**      | **Description** | **Type** |
+|------------------|-----------------|-----------|
+| `accept`        | Supported response type. Must be `application/json`. | string, required |
+| `accountid`     | Identifies the customer account. | string, required |
 
 ## Request Body Parameters
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><code>startDate</code>
-   </td>
-   <td>Start date filter in <code>YYYY-MM-DD</code> format.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td><code>endDate</code>
-   </td>
-   <td>End date filter in <code>YYYY-MM-DD</code> format.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td><code>timeZoneOffset</code>
-   </td>
-   <td>Time zone offset in minutes (for IST use <code>-330</code>).
-   </td>
-   <td>Number, Optional
-   </td>
-  </tr>
-</table>
+| **Parameter**     | **Description** | **Type** |
+|--------------------|-----------------|-----------|
+| `startDate`       | Start date filter in `YYYY-MM-DD` format. | string, optional |
+| `endDate`         | End date filter in `YYYY-MM-DD` format. | string, optional |
+| `timeZoneOffset`  | Time zone offset in minutes (for IST use `-330`). | number, optional |
+
 
 ## Sample Response
 
@@ -243,112 +128,14 @@ curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{botI
 
 ## Response Body Parameters
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-  </tr>
-  <tr>
-   <td>
-<code>_id</code>
-
-   </td>
-   <td>
-Unique conversation ID.
-   </td>
-   <td>
-String
-   </td>
-  </tr>
-  <tr>
-   <td>
-<code>participants</code>
-   </td>
-   <td>
-List of agents or participants in the conversation.
-   </td>
-   <td>
-Array
-   </td>
-  </tr>
-  <tr>
-   <td>
-<code>transferDetails</code>
-   </td>
-   <td>
-Details of conversation transfer between queues/agents.
-   </td>
-   <td>
-Array
-   </td>
-  </tr>
-  <tr>
-   <td>
-<code>conversationType</code>
-   </td>
-   <td>
-Type of conversation (for example: <code>livechat</code>).
-   </td>
-   <td>
-String
-   </td>
-  </tr>
-  <tr>
-   <td>
-<code>status</code>
-   </td>
-   <td>
-Current conversation status (for example: <code>CLOSED</code>).
-   </td>
-   <td>
-String
-   </td>
-  </tr>
-  <tr>
-   <td>
-<code>summary</code>
-   </td>
-   <td>
-Generated summary of the conversation.
-   </td>
-   <td>
-Array
-   </td>
-  </tr>
-  <tr>
-   <td>
-<code>dispositions</code>
-   </td>
-   <td>
-Contains final status, remarks, and disposition codes.
-   </td>
-   <td>
-Object
-   </td>
-  </tr>
-  <tr>
-   <td>
-<code>userInfo</code>
-   </td>
-   <td>
-End-user profile details including name, email, phone, and status.
-   </td>
-   <td>
-Object
-   </td>
-  </tr>
-  <tr>
-   <td>
-<code>notes</code>
-   </td>
-   <td>
-Internal agent notes captured during the conversation.
-   </td>
-   <td>
-Array
-   </td>
-  </tr>
-</table>
+| **Parameter**       | **Description** | **Type** |
+|----------------------|-----------------|-----------|
+| `_id`               | Unique conversation ID. | String |
+| `participants`      | List of agents or participants in the conversation. | Array |
+| `transferDetails`   | Details of conversation transfer between queues/agents. | Array |
+| `conversationType`  | Type of conversation (for example: `livechat`). | String |
+| `status`            | Current conversation status (for example: `CLOSED`). | String |
+| `summary`           | Generated summary of the conversation. | Array |
+| `dispositions`      | Contains final status, remarks, and disposition codes. | Object |
+| `userInfo`          | End-user profile details including name, email, phone, and status. | Object |
+| `notes`             | Internal agent notes captured during the conversation. | Array |
