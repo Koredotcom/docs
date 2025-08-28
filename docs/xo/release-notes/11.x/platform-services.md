@@ -310,7 +310,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 **Azure OpenAI GPT-4o Mini and OpenAI GPT-4o Mini Support**
 
-The Platform now supports the GPT-4o mini model for various Co-Pilot and Dynamic Conversations features. The model provides similar responses to GPT-4o at a lower cost and latency, balancing performance and efficiency for real-time applications. The integration does not include system prompts, but it can be used with custom prompts.
+The Platform now supports the GPT-4o mini model for various GenAI features. The model provides similar responses to GPT-4o at a lower cost and latency, balancing performance and efficiency for real-time applications. The integration does not include system prompts, but it can be used with custom prompts.
 
 <font size="4">Getting Started</font>
 
@@ -689,7 +689,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 **Amazon Bedrock Integration**
 
-XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the XO Platform. The users can create custom prompts for their specific use cases and use the connected models across all Co-Pilot and Dynamic Conversations features. Note that while Amazon Bedrock is available as an OOB integration, XO Platform does not provide any system prompts or templates. Users can only make use of the model with the help of custom prompts.
+XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the XO Platform. The users can create custom prompts for their specific use cases and use the connected models across all GenAI features. Note that while Amazon Bedrock is available as an OOB integration, XO Platform does not provide any system prompts or templates. Users can only make use of the model with the help of custom prompts.
 
 Key features:
 
@@ -697,7 +697,7 @@ Key features:
 
 * Integration Setup: Configure the integration by providing an integration name, model details, endpoint, and IAM role credentials.
 
-* Custom Prompts: Create model-specific prompts for all Co-Pilot and Dynamic Conversations features with complete control over prompt design and optimization.
+* Custom Prompts: Create model-specific prompts for all GenAI features with complete control over prompt design and optimization.
 
 * Security: End-to-end encryption with secure temporary credential management through Amazon STS.
 
@@ -973,7 +973,7 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 **Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**  
 
-The Platform now supports two new Azure OpenAI models for various Co-Pilot and Dynamic Conversations Features:
+The Platform now supports two new Azure OpenAI models for various GenAI Features:
 
 * GPT-4 Turbo: It’s a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o: It’s the most advanced multimodal model, which can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
@@ -1204,7 +1204,7 @@ Key features and enhancements included in this release are summarized below.
 
 **OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**  
 
-The Platform now supports two new OpenAI models for various Co-Pilot and Dynamic Conversations features.
+The Platform now supports two new OpenAI models for various GenAI features.
 
 * GPT-4 Turbo is a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o is an advanced multimodal model that can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
@@ -1338,7 +1338,7 @@ This update includes bug fixes.
 
 **Free LLM Tokens for Generative AI Features**
 
-Free LLM tokens are now allocated to each newly created app, enabling the exploration of our generative AI capabilities. These tokens allow immediate access to AI-driven tools like Co-pilot and dynamic conversations without initial setup. Once an app's free tokens are exhausted, users can seamlessly transition to their own LLM configuration. The platform provides clear token usage notifications and an intuitive activation interface. This feature aims to boost AI tool engagement and streamline onboarding for new users. This is available only for the apps created in the Standard workspaces/accounts.  
+Free LLM tokens are now allocated to each newly created app, enabling the exploration of our generative AI capabilities. These tokens allow immediate access to GenAI features without initial setup. Once an app's free tokens are exhausted, users can seamlessly transition to their own LLM configuration. The platform provides clear token usage notifications and an intuitive activation interface. This feature aims to boost AI tool engagement and streamline onboarding for new users. This is available only for the apps created in the Standard workspaces/accounts.  
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/llm-tokens.md){:target="_blank"}
 
 <font size="4">Channels</font>

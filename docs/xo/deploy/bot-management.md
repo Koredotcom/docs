@@ -11,9 +11,6 @@ Kore.ai allows you to export and import agent tasks and associated configuration
 
 This feature is particularly helpful to test various versions of your agent at different stages of the development process before it is released for end users. The articles in this section help you understand how the _Export_ and _Import_ features work and how to perform them.
 
-!!! note
-
-    Post v8.0 release, the _enableNegativePatterns_ flag will be included in ‘NLP Settings’ under ‘NLP Data’ in the exported and imported agent definitions. This flag is used to check if the Negative Patterns are enabled/disabled in the agent.
 
 Prior to this patch, this flag was part of ‘NLP Settings’ under ‘NLP Data’ in the imported agent definitions and ‘Bot Setting’ under ‘Setting’ in the exported agent definitions. This change is aimed at streamlining the functionality and might result in the failure to the incremental import of an agent from an export file generated before v8.0.
 
@@ -355,6 +352,11 @@ When you export an AI Agent in the Latest mode, the latest versions of the  task
 6. By default, all the components are selected for export. Deselect the items that you do not want to export.
 
     <img src="../images/bm(10).png" alt="App export" title="App export" style="border:1px solid gray; zoom:60%;">
+     
+    !!! note
+
+        If your app has events linked to specific Dialog tasks and those tasks are not included in the export, the associated bot events will be disabled by default in the exported copy. To avoid this, include all tasks referenced in bot events during export.
+
 
 7. For Automation Tasks, you can further choose to export only selected tasks. By default All Tasks are selected. 
 

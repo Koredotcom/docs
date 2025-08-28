@@ -108,7 +108,7 @@ Channel-specific ids are shown only for the users who have interacted with the A
   <tr>
    <td>Feature    
    </td>
-   <td>The Platform feature (Co-Pilot and Dynamic conversation features) is making calls to the LLM models.    
+   <td>The Platform feature is making calls to the LLM models.    
    </td>
   </tr>
   <tr>

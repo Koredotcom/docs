@@ -40,7 +40,7 @@ A new toggle, _Trigger CSAT only for agent-closed conversations_, is now availab
 
 **Support for Special Characters in Agent customId**
 
-The customId field now supports all special characters except spaces, resolving previous errors during creation or updates. The character limit is 64, with validation applied consistently across the Admin Console, APIs, and backend services. This enhancement improves routing flexibility and operational mapping without affecting existing records, metrics, permissions, APIs, or Dynamic Routing.
+The customId field now supports all special characters except spaces, resolving previous errors during creation or updates. The character limit is 64, with validation applied consistently across the Admin Console, APIs, and backend services. This enhancement improves routing flexibility and operational mapping without affecting existing records, metrics, permissions, APIs, or Dynamic Routing. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#general-settings)
 
 **Revised Channel Attachment Rules for Default Welcome Flows**
 
@@ -56,8 +56,10 @@ The Agent AI Mapping section is now available for Kore’s CCAI users. This feat
 
 * Enable or disable this feature with a global toggle.  
 * Add queues from the displayed list or search and add them individually.  
-* Assign queues to bots, channels, languages, and dialog tasks.  
-* Edit or delete entries, and manage dialog assignments for Proactive and Library during runtime.
+* Assign bots, channels, languages, and dialog tasks to specific queues.  
+* Edit, update, or delete queue assignments. 
+
+At runtime, agents view only the assigned dialog tasks in Proactive and Library.  
 
 <font size="4">Web SDK</font>
 
@@ -70,6 +72,12 @@ The Web SDK now supports a Click-to-Call button, enabling website visitors to st
 **Transcripts Log Updates for Maximum Retry Handling**
 
 The transcripts log now displays timeline messages when maximum retries are exceeded and the configured fallback action is triggered. Instead of appearing as user transcription messages, the log indicates the scenario. For example, when a No Input timeout is exceeded and a fallback action is triggered, the message “Max no-input attempts reached” is shown. This update helps app users easily understand the reason behind the triggered action. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs) 
+
+<font size="4">API</font>
+
+**Fetch Conversation Details by Session ID**
+
+A new Public API is available to fetch conversation details using the Parent App Session ID. The API returns conversation details only when a successful agent handoff has occurred in the session. If no handoff exists, it returns the error: “Conversation not found for the given session id.” [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-conversation-details.md) 
 
 <hr>
 

@@ -2,7 +2,7 @@
 
 **PagerDuty** is primarily used for **incident management** and **real-time operational monitoring**. It helps organizations detect, respond to, and resolve incidents quickly by notifying the right teams or individuals when issues occur.
 
-Search AI ingests **Schedules and Escalation Policies **from PagerDuty and enables easy search on these objects. 
+Search AI ingests **Schedules and Escalation Policies** from PagerDuty and enables easy search on these objects. 
 
 **<span style="text-decoration:underline;">PagerDuty Connector Specifications</span>**
 
@@ -46,15 +46,11 @@ Search AI ingests **Schedules and Escalation Policies **from PagerDuty and enabl
 
 Search AI interacts with PagerDuty through its APIs. API communication can be done by two methods:
 
-
-
 * Registering Search AI as an OAuth app in PagerDuty app and generating client credentials for authentication. 
 * Using API Token for authentication. 
 
 
 ## Prerequisites
-
-
 
 * A PagerDuty account with required access to all the policies and schedules that need to be ingested.
 
@@ -63,9 +59,7 @@ Search AI interacts with PagerDuty through its APIs. API communication can be do
 
 To enable OAuth authentication, register an app with PagerDuty. 
 
-
-
-* Log in to your PagerDuty account.
+* Sign in to your PagerDuty account.
 * From the top menu, select Integrations.
 * Select App Registration from the menu to navigate to the My Apps page.
 * Select New App and set the following fields:
@@ -82,16 +76,13 @@ To enable OAuth authentication, register an app with PagerDuty.
         * Users
         * Tags
         * Teams
-* Click on the Register App. This will generate the client credentials. These credentials are required during configuration of the connector in the Search AI app. 
-
+* Click **Register App**. This will generate the client credentials. These credentials are required during configuration of the connector in the Search AI app. 
 
 ## API Token 
 
-
-
-* Log in to your PagerDuty account.
+* Sign in to your PagerDuty account.
 * From the top menu, select **Integrations** and go to **API Access Keys**. 
-* Click on Create New API Key.
+* Click on **Create New API Key**.
 * Provide a description of the usage of the key. 
 * Click **Create Key.** 
 * This will generate an API Key. Save the key for the configuration of the PagerDuty connector in Search AI. 
@@ -99,16 +90,13 @@ To enable OAuth authentication, register an app with PagerDuty.
 
 ## PagerDuty Connector Configuration in Search AI
 
-On the **Authorization **tab of the connector, provide the following details.
-
-
+On the **Authorization** tab of the connector, enter the following details.
 
 * Name - Unique name for the connector. 
 * Authorization Type: Two auth mechanisms are supported for the connector. 
-    * API Key: Provide the API Key generated in the PagerDuty application. 
+    * API Key: Enter the API Key generated in the PagerDuty application. 
     * OAuth 2.0: For this type of authentication, set grant type as Authorization Code and provide the client credentials generated in the PagerDuty application. 
-
-Click on **Connect** to authenticate and set up a connection with PagerDuty account. 
+* Click on **Connect** to authenticate and set up a connection with PagerDuty account. 
 
 
 ## Content Ingestion

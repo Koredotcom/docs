@@ -15,10 +15,10 @@ The Overall Widget Feedback feature allows admins to configure feedback options 
 * Select a display language.
 * Configure up to six positive and six negative feedback options.
 * Enable up to five options from each category simultaneously.
-* Display or hide an additional comment box.
+* Display or hide an additional comment box.  
+[Learn more :octicons-arrow-right-24:](../../agentai/configuration/feedback-settings.md) 
 
-**Enhanced Dashboard** 
-The **Dashboard** > **Overall Widget Feedback** section displays feedback metrics submitted by agents. 
+Enhanced Dashboard: The **Dashboard** > **Overall Widget Feedback** section displays feedback metrics submitted by agents. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-dashboard.md/#overall-widget-feedback)
 
 <font size="4">Integration Enhancements</font>
 

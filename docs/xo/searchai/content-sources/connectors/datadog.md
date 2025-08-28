@@ -51,25 +51,24 @@ Search AI fetches the information from Datadog application using its APIs. To au
 
 ### Generate an API Key
 
-* Log in to your Datadog account and navigate to the [Organization Setting](https://us5.datadoghq.com/organization-settings/api-keys)s. 
-* Go to the API Keys page and click +New Key.
-* Provide a name to identify the key and click Create Key.
-* This generates a new key. Save it for configuration in the Search AI connector. 
+1. Sign in to your Datadog account and navigate to the [Organization Setting](https://us5.datadoghq.com/organization-settings/api-keys). 
+1. Go to the API Keys page and click **+New Key**.
+1. Enter a name to identify the key and click **Create Key**.
+1. This generates a new key. Save it for configuration in the Search AI connector. 
 
 
 ### Generate an Application Key
 
-* Log in to your Datadog account and navigate to the [Organization Setting](https://us5.datadoghq.com/organization-settings/api-keys)s. 
-* Go to the Application Keys page from the left navigation and click +New Key.
-* Provide a name to identify the key and click Create Key.
-* This generates an application key. 
+1. Sign in to your Datadog account and navigate to the [Organization Setting](https://us5.datadoghq.com/organization-settings/api-keys)s. 
+1. Go to the Application Keys page from the left navigation and click **+New Key**.
+1. Enter a name to identify the key and click **Create Key**.
+1. This generates an application key. 
 
 ### Datadog Connector Configuration in Search AI
 
-On the **Authorization** tab of the connector, provide the following details.
+On the **Authorization** tab of the connector, enter the following details:
 
-* Name - Unique name for the connector. 
-* API Key - Provide the API Key generated in the Datadog application. 
-* Application Key  - Provide the Application Key generated in the Datadog application. 
-
-Click **Connect** to initiate authentication. 
+1. **Name**: Unique name for the connector. 
+1. **API Key**: Provide the API Key generated in the Datadog application. 
+1. **Application Key**: Provide the Application Key generated in the Datadog application. 
+1. Click **Connect** to initiate authentication. 
