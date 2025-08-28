@@ -28,7 +28,7 @@ Amazon Connect’s External Voice Connector now routes inbound voice calls throu
 
 **Hooks API for Internal Transfers**
 
-Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. 
+Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/hooks-api-for-internal-transfers.md)
 
 <hr>
 
