@@ -4,13 +4,16 @@
 
 SearchAI's content transformation process transforms raw extracted text into high-quality data that ensures better searchability, understanding, and usability. This enrichment occurs after the extraction phase, allowing users to enhance the data while maintaining the structural and contextual integrity of the original content. The raw ingested content often requires further processing to make the data accurate, contextual, and useful. Issues such as incomplete metadata, formatting inconsistencies, or missing context can hinder the effectiveness of search and retrieval systems. This process addresses these issues by refining the extracted content.
 
-Content Transformations, immediately after extraction, ensure that the noise and irrelevant information from raw data is removed and input to vectorization is clean and optimized for retrieval and analysis. This vectorized data is then given to the AI models for processing, resulting in optimum and accurate results. 
+Content Transformations, immediately after extraction, ensure that the noise and irrelevant information from raw data are removed, and the input to vectorization is clean and optimized for retrieval and analysis. This vectorized data is then given to the AI models for processing, resulting in optimum and accurate results. 
 
-Search AI allows you to add multiple different types of stages to the transformation process to input content. The stages are processed in sequence such that the output of one is the input of the next. There are currently two types of stages offered. 
+Search AI allows you to add multiple different types of stages to the transformation process to input content. The stages are processed in sequence such that the output of one is the input of the next. The following types of transformation stages are currently offered via Document Workbench. 
+ 
 
 1. Field Mapping 
 2. Custom Script
 3. Exclude Documents
+4. LLM Stage
+5. API Stage
 
 
 ## Benefits
@@ -126,7 +129,15 @@ This can be particularly useful for enriching documents with metadata via custom
 
 **Configuration**
 
-* Endpoint: The URL to which the content should be sent (must be a POST endpoint).
+* Endpoint: The URL to which the content should be sent (must be a POST endpoint). It can include chunk-level fields as either path parameters or query parameters. These parameters are dynamically resolved at runtime.
+
+To reference a dynamic field in the URL, enclose the field name in double braces  {{<field-name>}}. 
+
+For instance, the following endpoint uses two chunk fields.  [https://api.external.com/metadata/{{chunkTitle}}?type={{](https://api.external.com/metadata/{{doc.id}}?lang={{doc.language)cfs1}}. 
+
+In this example,
+   * {{chunkTitle}} is used as a path parameter.
+   * {{cfs1}} is used as a query parameter.
 * Headers: Key-value pairs to be sent to the API as headers ( for authentication and other required headers)
 * Request Body: Content to be sent to the API.  To pass content fields in the request , use the following format **{{field_name}}**. During a request to the API, this is dynamically replaced with the value of the field. For instance, in the following example where a request is sent to Open AI for extracting metadata from the source, {{content}} is replaced with the actual value of the content field for the doc under processing. 
 
@@ -162,75 +173,59 @@ Refer to the [default field mappings documentation] for a list of fields extract
 * Only Sync APIs are currently supported. 
 * You can map one or more API response fields to the Search AI schema fields corresponding to the doc. 
 
+### LLM Stage 
+
+This stage allows you to leverage the capabilities of an external LLM to refine, update, or enrich the ingested content. This can include tasks such as improving readability, summarizing lengthy documents, adding missing context, or reformatting text to align with organizational standards. For example, when a product manual is ingested, an  LLM Stage can be configured to generate a simplified summary or FAQs using the manual content, making the content readily available for end users while still preserving the original technical details.
+
+
+#### Prerequisites
+
+* [Set up the required LLM](https://docs.kore.ai/xo/generative-ai-tools/models-library/).
+* [Create a custom prompt](https://docs.kore.ai/xo/generative-ai-tools/prompts-library/) for the feature ‘Transform Documents with LLM’
+* In the[ Gen AI features page](https://docs.kore.ai/xo/generative-ai-tools/genai-features-searchai/), enable the feature, ‘Transform Documents with LLM’. 
+
+#### Configuration
+
+* **LLM**: Select the LLM to be used for document processing. 
+* **Prompt**: Select the custom prompt that will instruct the LLM on how to process the content. 
+* **Target Field**: Select the field where the enriched content, received as a response from the LLM, will be stored. 
+
+
 ## Stages available for different Extraction Strategies
 
 <table>
   <tr>
    <td>
    </td>
-   <td>Field Mapping 
-
-   </td>
-   <td>Custom Script
-
-   </td>
-   <td>Exclude Documents
-
-   </td>
-   <td>API Stage
-
-   </td>
+   <td>Field Mapping </td>
+   <td>Custom Script</td>
+   <td>Exclude Documents</td>
+   <td>API Stage  </td>
+   <td>LLM Stage </td>
   </tr>
   <tr>
-   <td>Text Extraction
-
-   </td>
-   <td>Yes
-
-   </td>
-   <td>Yes
-
-   </td>
-   <td>Yes
-
-   </td>
-   <td>Yes
-
-   </td>
+   <td>Text Extraction  </td>
+   <td>Yes  </td>
+   <td>Yes  </td>
+   <td>Yes  </td>
+   <td>Yes  </td>
+   <td>Yes  </td>
   </tr>
   <tr>
-   <td>Advanced HTML Extraction
-
-   </td>
-   <td>Yes
-
-   </td>
-   <td>Yes
-
-   </td>
-   <td>Yes
-
-   </td>
-   <td>Yes
-
-   </td>
+   <td>Advanced HTML Extraction  </td>
+   <td>Yes   </td>
+   <td>Yes   </td>
+   <td>Yes   </td>
+   <td>Yes   </td>
+   <td>Yes   </td>
   </tr>
   <tr>
-   <td>Layout Aware Extraction
-
-   </td>
-   <td>NA
-
-   </td>
-   <td>NA
-
-   </td>
-   <td>NA
-
-   </td>
-   <td>NA
-
-   </td>
+   <td>Layout Aware Extraction  </td>
+   <td>NA   </td>
+   <td>NA   </td>
+   <td>NA   </td>
+   <td>NA   </td>
+   <td>NA   </td>
   </tr>
   <tr>
    <td>Markdown Extraction
@@ -247,6 +242,7 @@ Refer to the [default field mappings documentation] for a list of fields extract
    </td>
    <td>NA
    </td>
+    <td>NA   </td>
   </tr>
   <tr>
    <td>Image-based Document Extraction
@@ -262,6 +258,8 @@ Refer to the [default field mappings documentation] for a list of fields extract
 
    </td>
    <td>NA
+
+   </td><td>NA
 
    </td>
   </tr>
@@ -288,13 +286,13 @@ Once executed, the transformed content is displayed in the **Chunk Viewer**. The
 
 ## Enabling/Disabling a Stage
 
-To enable or disable a stage, click on the ellipsis icon on the right of the stage, and select enable or disable option. When a stage is disabled, the output of the previous stage in the sequence is directly sent as input to the next stage without deleting the current stage. This can be used for testing or troubleshooting the content transformation process. 
+To enable or disable a stage, click on the ellipsis icon on the right of the stage, and select the enable or disable option. When a stage is disabled, the output of the previous stage in the sequence is directly sent as input to the next stage without deleting the current stage. This can be used for testing or troubleshooting the content transformation process. 
 
 ![alt_text](./images/disable-stage.png "image_tooltip")
 
 ## Deleting a Stage
 
-Deleting a stage permanently deletes it from the application. To delete a stage, click the ellipsis icon and select Delete option. 
+Deleting a stage permanently deletes it from the application. To delete a stage, click the ellipsis icon and select the Delete option. 
 
 ![alt_text](./images/delete-stage.png "image_tooltip")
 

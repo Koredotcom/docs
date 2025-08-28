@@ -12,13 +12,22 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 Search AI introduces a new LLM Stage within the pipeline, enabling the seamless integration of large language models into transformation and enrichment workflows. Users can configure this stage using a model from the configured Models Library and a custom prompt. This feature empowers teams to automate content transformation, improve metadata quality, and add custom enhancements to content with minimal effort.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/workbench/llm-stage.md)
+
+
 <font size="4">API Stage Enhancements</font>
 
 The API Stage in Workbench has been enhanced to give users more flexibility when integrating with external services during the transform or enrich phase. Users can now include dynamic variables directly in the endpoint URL, in addition to the request body. These variables can be resolved from the document schema or chunk context available at simulation/training time. With this update, the API stage can be used with APIs that depend on document-level details as query parameters.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/workbench/api-stage.md)
+
+
 <font size="4">Improved Training Visibility and Control</font>
 
 The training process in Search AI has been enhanced to provide greater transparency and flexibility. Users can now access detailed training logs that provide document-level visibility into the training lifecycle, including insights into errors and failures. This makes it easier to monitor the progress effectively and identify and address issues promptly.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/application-training.md)
+
 
 <font size="4">Answer Debug Improvements</font>
 
@@ -30,6 +39,9 @@ Key improvements:
 * Enhanced Error Handling: Provide detailed error visibility in both UI and JSON views.
 * UI Improvements: Remove visual clutter and enhance the information hierarchy.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/testing-and-debugging-answers.md)
+
+
 <font size="4">Unified Schema Management Enhancements</font>
 
 Search AI introduces a new Manage Schema interface that gives users enhanced control and visibility over document fields based on the unified schema. With this update, users can:
@@ -37,6 +49,9 @@ Search AI introduces a new Manage Schema interface that gives users enhanced con
 * View key field properties, including field name, description, data type, custom field indicator, and mapped chunk field.
 * Create up to 50 custom fields for greater flexibility in data handling.
 * Edit descriptions of existing ones to add meaningful references to their system fields. 
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md)
+
 
 <hr>
 

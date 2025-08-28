@@ -1,16 +1,20 @@
 # Connectors
 
-**Connectors** enable seamless content ingestion from a wide range of external sources, including third-party repositories like ServiceNow, Microsoft SharePoint, Atlassian’s Confluence, IBM Domino, etc,  allowing users to search across diverse data repositories from a unified interface.
+Connectors enable seamless content ingestion from a wide range of external sources, including third-party repositories like ServiceNow, Microsoft SharePoint, Atlassian’s Confluence, IBM Domino, etc,  allowing users to search across diverse data repositories from a unified interface.
 
-Search AI provides in-built connectors to enable crawling specific third-party content management applications. Each connector is purpose-built to integrate with a specific platform, ensuring optimized data extraction and synchronization. The system supports configuring **multiple connectors simultaneously**, allowing the application to ingest and index data from several third-party sources in parallel.
+Search AI provides in-built connectors to enable crawling specific third-party content management applications. Each connector is purpose-built to integrate with a specific platform, ensuring optimized data extraction and synchronization. The system supports configuring multiple connectors 
+simultaneously, allowing the application to ingest and index data from several third-party sources in parallel.
 
-By leveraging these connectors, organizations can deliver a **unified and intelligent search experience.**
+By leveraging these connectors, organizations can deliver a unified and intelligent search experience.
 
 ## Understanding Connectors 
 
-**Connectors** allow the application to integrate with third-party platforms by establishing a secure connection and enabling seamless data ingestion via the APIs exposed by the applications. Once the connection is configured and authentication is completed, data from the third-party application is ingested, indexed, and made available for search within Search AI.
+**Connectors** enable the application to integrate with third-party platforms by establishing a secure connection and facilitating seamless data ingestion through the APIs exposed by these applications. 
 
-The **access privileges** of the content are maintained as per the privileges assigned to the user in the third-party repository. This ensures that only the files accessible to the user in the third-party application are visible to the user via Search AI as well. 
+Once a connector is configured and authentication is completed:
+
+* Data from the third-party application is ingested, indexed, and made available for search within Search AI.
+* The **access privileges **of the content are maintained as per the privileges assigned to the user in the third-party repository. This ensures that only the files accessible to the user in the third-party application are visible to the user via Search AI as well. 
 
 During each synchronization cycle, the connector performs **incremental updates**, retrieving only newly added or modified data based on change timestamps. Any content that has already been indexed and remains unchanged is skipped, ensuring efficient and optimized syncing.
 
@@ -63,15 +67,17 @@ To set up a new connector, select the application connector from All connectors 
 
 **Setup Steps**
 
-**Step 1: Authentication**: Provide the necessary authentication details (OAuth credentials, API keys, tokens, etc) to establish connection with the external application. 
+**Step 1: Authentication**: Provide the necessary authentication details (OAuth credentials, API keys, tokens, etc) to establish a connection with the external application. 
 
-**Step 2: Ingestion**: Choose the type of content to be ingested. Apply filters as needed and optionally customize field mappings to align source fields with the Seach AI schema.
+**Step 2: Manage Content**: Choose the type of content to be ingested. Apply filters as needed and optionally customize field mappings to align source fields with the Search AI schema.
 
 **Step 3: Permissions**: Select the permission level for the users to access content. 
 
-**Step 4: Configure Sync Settings**: Initiate the first sync with the application. You can also configure a scheduler to enable automatic periodic synchronization.
+**Step 4: Content**: Once synchronization is complete, view the ingested content in the application.
 
-**Step 5: View & Verify Content:** Once synchronization is complete, view the ingested content in the application to verify successful setup.
+Initiate the first sync with the application. You can also configure a scheduler to enable automatic periodic synchronization.
+
+**Step 5: Schedule Sync:** View the Sync log and optionally enable automatic periodic synchronization. 
 
 
 ### Authentication
@@ -79,38 +85,51 @@ To set up a new connector, select the application connector from All connectors 
 The authentication varies depending on the third-party application with which the connection will be established. Refer to the specific connector for detailed instructions on authentication. 
 
 
-### Managing Content
+## Managing Content
 
 When configuring a connector, you can define the type of content to be ingested from the source application. By default, Search AI ingests all supported content types from the source. Most connectors support multiple content types, such as pages, articles, tasks, tickets, or documents, depending on the capabilities of the source system.
 
 Refer to the specific connector documentation for a detailed list of supported content types (objects) for each integration.
 
-Under the **Ingestion** section, choose the content types you want to ingest. For some connectors, you can apply **filters** to enable **selective ingestion** e.g., ingesting only content created within a specific timeframe, belonging to a particular category, or assigned to certain users.
+### Selecting Content Type
+
+Under the **Ingestion** section,
+
+* Choose the content types you want to ingest. 
+* For some connectors, you can apply **filters** to enable **selective ingestion**, e.g., ingesting only content created within a specific timeframe, belonging to a particular category, or assigned to specific users.
 
 Note: Filters are available only if supported by the specific connector.
 
-Different applications may use varying field names and data formats. To ensure seamless integration and uniformity across multiple sources, all ingested content is normalized into **standard Search AI document fields**.
+### Field Mapping
 
-Use the **Field Mapping** section to map fields from the source (connector) to the corresponding **Search AI fields**. This ensures that content is accurately transferred, transformed, and indexed for optimal search and analysis.
+Field Mapping allows you to align fields from the source application with **Search AI’s standard schema**. This ensures that ingested data is accurately transferred, normalized, and indexed for optimal search and retrieval.
 
-You can further customize field mappings by writing **post-processor scripts**, which allow you to manipulate or transform fields during ingestion dynamically.
+Use the Field Mapping section to map fields from the source (connector) to the corresponding Search AI fields. This ensures that content is accurately transferred, transformed, and indexed for optimal search and analysis.
+
+**Source Payload:** Displays the raw response received from the source application and helps you identify available fields that can be mapped to Search AI fields.
+
+**Mandatory Fields:** Lists the required fields that must be mapped for successful ingestion.
+
+**Post-Processor Scripts**: You can further customize field mappings by writing post-processor scripts, which enable you to manipulate or transform fields dynamically during ingestion.
 
 **Example**
 
 If the source application stores the document creator as authorDetails.fullName, you can map it to Search AI's standard doc_created_by_name field using the following script:
 
 
-```json
+```
 context.doc_created_by_name = context?.raw_json?.authorDetails?.fullName;
 ```
 
+**Manage Schema**: Access the Manage Schema option to view the schema fields of the application and customize their descriptions. This helps users understand how and when to use this field.
+
+![Manage Schema](images/manage-schema.png "Manage Schema")
+
+**New Field**: Define new custom fields to be ingested from the connector. You can add upto 50 custom fields. 
 
 Use the **Test Script** option to validate your transformation and verify the output after execution. Only after a successful test, the field mappings are updated. 
 
-![alt_text](images/manage-content.png "Test Script")
-
-
-
+![Test Script](images/manage-content.png "Test Script")
 
 ### Enabling RACL 
 
