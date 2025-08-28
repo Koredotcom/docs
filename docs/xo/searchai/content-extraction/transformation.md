@@ -129,13 +129,12 @@ This can be particularly useful for enriching documents with metadata via custom
 
 **Configuration**
 
-* Endpoint: The URL to which the content should be sent (must be a POST endpoint). It can include chunk-level fields as either path parameters or query parameters. These parameters are dynamically resolved at runtime.
-
-To reference a dynamic field in the URL, enclose the field name in double braces  {{<field-name>}}. 
-
-For instance, the following endpoint uses two chunk fields.  [https://api.external.com/metadata/{{chunkTitle}}?type={{](https://api.external.com/metadata/{{doc.id}}?lang={{doc.language)cfs1}}. 
-
-In this example,
+* Endpoint: The URL to which the content should be sent (must be a POST endpoint). It can include chunk-level fields as either path parameters or query parameters. These parameters are dynamically resolved at runtime. 
+  To reference a dynamic field in the URL, enclose the field name in double braces  {{<field-name>}}. 
+  
+  For instance, the following endpoint uses two chunk fields.  [https://api.external.com/metadata/{{chunkTitle}}?type={{](https://api.external.com/metadata/{{doc.id}}?lang={{doc.language)cfs1}}. 
+  
+  In this example,
    * {{chunkTitle}} is used as a path parameter.
    * {{cfs1}} is used as a query parameter.
 * Headers: Key-value pairs to be sent to the API as headers ( for authentication and other required headers)
