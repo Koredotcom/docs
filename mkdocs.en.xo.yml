@@ -545,6 +545,7 @@ nav:
         - Custom LLM Model in GenAI: agentai/configuration/custom-llm-model-in-genai.md
         - Linked Services: agentai/configuration/linked-services.md
         - Third Party Configuration: agentai/configuration/third-party-configuration.md
+        - Agent AI Mapping: agentai/configuration/agent-ai-mapping.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
