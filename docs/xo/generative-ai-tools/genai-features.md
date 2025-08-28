@@ -110,7 +110,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 
 * **Agent Node**: This feature lets you build an AI Agent using LLMs, Tool calling, and generative AI. It supports entity collection, context handling, multilingual conversations, and external integrations—enabling dynamic, human-like interactions for employees and customers.
-* **Prompt Node:** Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
+* **Prompt Node**: Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
 * **Repeat Responses**: Use LLM to reiterate the last app responses when the Repeat App Response event is triggered.
 * **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual app responses.
 * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
@@ -179,7 +179,7 @@ Learn more about [Contact Center AI - GenAI Features](genai-features-contactcent
 - **GenAI-based agent answer adherence and customer trigger detection**:  Use LLMs to check for agent adherence and customer trigger detection without configuring utterances and training.
 - **Generating Similar QM Utterance Suggestions**: Use LLM models for generating similar utterances during design time based on semantic similarity. 
 - **Sentiment Analysis**: Identify customer sentiment across agent conversations through Quality AI using LLMs. 
-- **Topic Modelling**: Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs
+- **Topic Modelling**: Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs.
 
 
 Learn more about [Quality AI - GenAI Features](genai-features-qualityai.md).
