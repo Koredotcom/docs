@@ -51,22 +51,21 @@ For example: \b(yep|nah|ugh|meh|huh|dude|bro|yo|lol|rofl|lmao|lmfao)\b
 
 
 
-## Guardrails and Features Support Matrix
-
-The Guardrails are currently available for the following features will gradually become available for the remaining features.
+## Guardrails Applicability and Availability
 
 
-This table summarizes how each guardrail applies to the LLM input (the prompt) and the LLM output (the response).
+The following matrix outlines guardrail applicability to the LLM input (prompt) and output (response).
 
-(✅ Supported | ❌ Not supported)
+(✅ Applicable | ❌ Not applicable)
 
-| Guardrail                | LLM Input | LLM Output |
+| Guardrail                 | LLM Input | LLM Output |
 |---------------------------|-----------|------------|
 | Restrict Toxicity         | ✅        | ✅         |
 | Restrict Topics           | ✅        | ✅         |
-| Detect Prompt Injections  | ✅        | NA         |
-| Filter Responses          | NA        | ✅         |
+| Detect Prompt Injections  | ✅        | ❌         |
+| Filter Responses          | ❌        | ✅         |
 
+The Guardrails are currently available for the following features and will gradually become available for the remaining features.
 
 ### Automation AI Features
 
@@ -192,12 +191,11 @@ Fallback behavior lets the system determine the optimal course of action when th
 
 ### Automation AI Features
 
-The Guardrails are currently available for the following Automation AI features:
+Define the fallback behavior for the following Automation AI features:
 
-#### Agent Node
+**Agent Node**
 
 You can define the fallback behavior in the following two ways.
-
 
 
 * Trigger the Task Execution Failure Event
@@ -207,16 +205,16 @@ Steps to change the fallback behavior:
 
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Agent Node** > **Advance Settings**.  
-<img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
+<img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the fallback behavior as required.
 3. Click **Save**.
 
 
-#### Rephrase Dialog Response
+**Rephrase Dialog Response**
 
 By default, when the guardrail is violated, the system uses the "Send the original prompt" option.  
-<img src="../images/guardrails8.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
+<img src="../images/guardrails8.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Search AI Features
@@ -231,4 +229,4 @@ By default, when the guardrail is violated, the system uses the "Trigger the Tas
 * Query Transformation
 * Result Type Classification
 * Transform Documents with LLM  
-<img src="../images/ansgen-fallback.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
+<img src="../images/ansgen-fallback.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
