@@ -383,7 +383,15 @@ The following recording settings can be configured:
 
 !!! Note
 
-    The retention period is configurable in the backend based on customer requests. Voice call recordings are permanently deleted after the configured period. Customers who opt in receive an email 7 days before deletion and a confirmation email after deletion. Deleted recordings display the message: "Recording not available. It may have been deleted as per your data retention policy." Customers who do not opt in are not affected. All actions, including retention configuration and recording deletions, are logged and available in the admin console. This applies only to on-prem customers.
+    * The retention period for voice call recordings can be configured based on customer requests. You can raise a request with us, and we will set it up accordingly.  
+
+    * Once the configured retention period ends, the recordings are permanently deleted.  
+
+    * Customers who opt in will receive an email 7 days before deletion and a confirmation email after deletion.  
+
+    * After deletion, the following message will be displayed to users: “Recording not available. It may have been deleted as per your data retention policy.”  
+    
+    * All actions—including retention configuration and recording deletions—are logged and accessible in the Admin Console.
 
 * **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
 
