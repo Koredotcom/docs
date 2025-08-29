@@ -1151,7 +1151,7 @@ Developers can now apply Call Control Parameters at the **Session** or **Node** 
 * **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
 * **Node-Level Parameters**: Add the prefix “`node.`" to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
 * **Default Behavior**: Parameters without a prefix are considered session-level by default.
-* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md)
+* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/speech-customization.md)
 
 **SIP REFER Handling and Transcript Enhancements**
 
@@ -1940,7 +1940,7 @@ Key features and enhancements included in this release are summarized below.
 **Outbound Emails**
 
 Outbound email functionality is a key feature within Contact Center AI designed to streamline communication between agents and customers through email channels. Agents can now send outbound emails from the agent console. The outbound emails are independent of the ongoing conversations.  
-[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers/interacting-with-customers.md#outbound-email)
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-email)
 
 A new permission for Outbound Email is added in the Agent & Supervisor Experience section with the following details:
 
