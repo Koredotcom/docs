@@ -20,6 +20,17 @@ The Overall Widget Feedback feature allows admins to configure feedback options 
 
 Enhanced Dashboard: The **Dashboard** > **Overall Widget Feedback** section displays feedback metrics submitted by agents. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-dashboard.md/#overall-widget-feedback)
 
+**Dialog Queue Feature Mapping**
+
+The Agent AI Mapping section is now available for Kore’s CCAI users. This feature allows mapping of queues to dialog tasks. Administrators can:
+
+* Enable or disable this feature with a global toggle.  
+* Add queues from the displayed list or search and add them individually.  
+* Assign bots, channels, languages, and dialog tasks to specific queues.  
+* Edit, update, or delete queue assignments. 
+
+At runtime, agents view only the assigned dialog tasks in Proactive and Library. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/agent-ai-mapping.md)  
+
 <font size="4">Integration Enhancements</font>
 
 **Kore Voice Bot with Amazon Connect and Agent Assist**
@@ -28,7 +39,7 @@ Amazon Connect’s External Voice Connector now routes inbound voice calls throu
 
 **Hooks API for Internal Transfers**
 
-Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. 
+Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/hooks-api-for-internal-transfers.md)
 
 <hr>
 

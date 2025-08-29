@@ -194,7 +194,7 @@ This section explains the process of fetching the details and summary of the con
     <img src="../images/llm-genai-policy-guidelines-19.png" alt="llm-gen-policy-guidelines" title="llm-gen-policy-guidelines" style="border: 1px solid gray; zoom:80%;">
 
 10. Click **Save**.
-11. Go to **Generative AI** > **GenAI Features**, and click the **Co-Pilot** section.
+11. Go to **Generative AI** > **GenAI Features**.
 12. Enable **Conversation Summary**. To enable, select a model from the **Select Model** list, and then click the **enable** toggle.
 13. Go to **Deploy** > **Publish** and click **Proceed** to publish your bot.  
 <img src="../images/publish-your-bot-20.png" alt="publish-your-bot" title="publish-your-bot" style="border: 1px solid gray; zoom:80%;">

@@ -50,17 +50,6 @@ Administrators can no longer attach channels to the Default Welcome Voice flow o
 
 A Code View option is now available in the email message editor for Response Templates and Survey Forms. Users can paste or write HTML/CSS code, switch between rich text and source views without losing content, and preview the final design before sending. This enhancement enables the creation of structured, branded, and reusable email templates, ensuring consistent formatting across senders and recipients. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/response-templates/manage-response-templates.md#create-a-response) 
 
-**Dialog Queue Feature Mapping**
-
-The Agent AI Mapping section is now available for Kore’s CCAI users. This feature allows mapping of queues to dialog tasks. Administrators can:
-
-* Enable or disable this feature with a global toggle.  
-* Add queues from the displayed list or search and add them individually.  
-* Assign bots, channels, languages, and dialog tasks to specific queues.  
-* Edit, update, or delete queue assignments. 
-
-At runtime, agents view only the assigned dialog tasks in Proactive and Library.  
-
 <font size="4">Web SDK</font>
 
 **Click-to-Call Capability for Web SDK Using Experience Flow Configuration**

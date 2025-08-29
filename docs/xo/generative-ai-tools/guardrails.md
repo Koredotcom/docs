@@ -51,71 +51,38 @@ For example: \b(yep|nah|ugh|meh|huh|dude|bro|yo|lol|rofl|lmao|lmfao)\b
 
 
 
-## Guardrails and Features Support Matrix
-
-The Guardrails are currently available for the following features: **Answer Generation**, **Agent Node**, and **Rephrase Dialog Response**. They will gradually become available for the remaining features.
-
-(✅ Supported | ❌ Not supported)
+## Guardrails Applicability and Availability
 
 
+The following matrix outlines guardrail applicability to the LLM input (prompt) and output (response).
 
+(✅ Applicable | ❌ Not applicable)
 
-<table>
-  <tr>
-    <td>Guardrail</td>
-    <td colspan="2">Restrict Toxicity</td>
-    <td colspan="2">Restrict Topics</td>
-    <td colspan="2">Detect Prompt Injections</td>
-    <td colspan="2">Filter Responses</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>LLM Input</td>
-    <td>LLM Output</td>
-    <td>LLM Input</td>
-    <td>LLM Output</td>
-    <td>LLM Input</td>
-    <td>LLM Output</td>
-    <td>LLM Input</td>
-    <td>LLM Output</td>
-  </tr>
-  <tr>
-    <td colspan="9"><strong>Platform Features</strong></td>
-  </tr>
-    <tr>
-    <td>Answer Generation</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Agent Node</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Rephrase Dialog Responses</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>✅</td>
-  </tr>
-</table>
+| Guardrail                 | LLM Input | LLM Output |
+|---------------------------|-----------|------------|
+| Restrict Toxicity         | ✅        | ✅         |
+| Restrict Topics           | ✅        | ✅         |
+| Detect Prompt Injections  | ✅        | ❌         |
+| Filter Responses          | ❌        | ✅         |
+
+The Guardrails are currently available for the following features and will gradually become available for the remaining features.
+
+### Automation AI Features
+
+* Agent Node
+* Rephrase Responses
+
+### Search AI Features
+<ul>
+  <li>Answer Generation</li>
+  <li>Enriching Chunks with LLM</li>
+  <li>Metadata Extractor Agent</li>
+  <li>Query Rephrase for Advanced Search API</li>
+  <li>Query Transformation</li>
+  <li>Result Type Classification</li>
+  <li>Transform Documents with LLM</li>
+</ul>
+
 
 
 
@@ -216,19 +183,19 @@ For example, the debug logs display two entries: one for the LLM input and anoth
 
 
 
+
 ## Fallback Behavior
 
 Fallback behavior lets the system determine the optimal course of action when the Guardrails are violated. Each feature has a different fallback behavior, which can be selected in the feature's advanced settings.
 
-### Fallback Behavior for Answer Generation
 
-By default, when the guardrail is violated, the system uses the “Trigger the Task Execution Failure Event” option.  
-<img src="../images/ansgen-fallback.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
+### Automation AI Features
 
-### Fallback Behavior for Agent Node
+Define the fallback behavior for the following Automation AI features:
+
+**Agent Node**
 
 You can define the fallback behavior in the following two ways.
-
 
 
 * Trigger the Task Execution Failure Event
@@ -237,17 +204,29 @@ You can define the fallback behavior in the following two ways.
 Steps to change the fallback behavior:
 
 
-
-1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversation** > **Agent Node** > **Advance Settings**.  
-<img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
+1. Go to **Generative AI Tools** > **GenAI Features** > **Agent Node** > **Advance Settings**.  
+<img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the fallback behavior as required.
 3. Click **Save**.
 
 
-
-### Fallback Behavior for Rephrase Dialog Response
+**Rephrase Dialog Response**
 
 By default, when the guardrail is violated, the system uses the "Send the original prompt" option.  
-<img src="../images/guardrails8.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
+<img src="../images/guardrails8.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
+
+### Search AI Features
+
+By default, when the guardrail is violated, the system uses the "Trigger the Task Execution Failure Event" option for the following Search AI features.
+
+
+* Answer Generation
+* Enriching Chunks with LLM
+* Metadata Extractor Agent
+* Query Rephrase for Advanced Search API
+* Query Transformation
+* Result Type Classification
+* Transform Documents with LLM  
+<img src="../images/ansgen-fallback.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
