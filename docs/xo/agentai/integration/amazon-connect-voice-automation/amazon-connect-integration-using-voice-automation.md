@@ -276,6 +276,7 @@ Open the Amazon Connect instance and add the last lambda function (koreRetrieveS
 
 **Modify the Amazon Connect flow**: 
 
+* Name this flow as **TransfertoKore&MetadataPassing**. (You will reference this name later during the Agent AI integration step.)   
 * Add an **AWS Lambda function** node after the **Transfer to phone number** node. 
 * In the **AWS Lambda function**: 
     * Select the **Invoke Lambda** function (koreRetrieveSessionMetadata), which was added in the last step. 
@@ -297,10 +298,12 @@ Open the Amazon Connect instance and add the last lambda function (koreRetrieveS
     * **Save** the configuration. 
 * Connect all the nodes, and you can add a **Play prompt** node to understand if there is any error in the flow.
 * **Save** and **Publish** the flow.  
+* The modified Amazon Connect flow appears as shown in the following screenshot:
+    <img src="../images/modified-amazon-connect-flow.png" alt="modified-amazon-connect-flow" title="modified-amazon-connect-flow" style="border: 1px solid gray; zoom:80%;">   
 
-!!! note
+    !!! note
 
-    You can also import the contact flow (.JSON file) from this [link](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/refs/heads/master/AmazonConnect/Metadata%20passing%20via%20External%20voice%20connector/contact%20flows/transfertokore_sipconnector_metadata_passing.json){:target="_blank"} (right-click and save as **.JSON**).  
+        You can also import the contact flow (.JSON file) from this [link](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/refs/heads/master/AmazonConnect/Metadata%20passing%20via%20External%20voice%20connector/contact%20flows/transfertokore_sipconnector_metadata_passing.json){:target="_blank"} (right-click and save as **.JSON**).  
 
 ### **Kore Side Configuration**
 
@@ -397,3 +400,25 @@ To view the metadata, check the **Flow CloudWatch** logs or use **Contact Search
 
 4. When you open a contact’s details, the metadata appears as contact attributes.  
 <img src="../images/contact-details-31.png" alt="contact-details" title="contact-details" style="border: 1px solid gray; zoom:80%;">  
+
+## Passing Metadata as Custom Data to Agent AI
+
+To integrate Agent AI as a third-party application (TPA) into the Amazon Connect workspace, follow [this](../amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md){:target="_blank"} document.
+
+### Modify the Amazon Connect flow 
+
+After integrating Agent AI as a TPA in Amazon Connect, you must have created another contact flow (for example, *KVSAgentAssist*). Add this flow to the previously created or imported flow (*TransfertoKore&MetadataPassing*).” 
+
+The final screenshot of the contact flow appears as shown below: 
+<img src="../images/contact-flow-final-screenshot.png" alt="contact-flow-final-screenshot" title="contact-flow-final-screenshot" style="border: 1px solid gray; zoom:80%;">  
+
+Any metadata passed from Kore to Amazon Connect in the previous steps becomes available in the Agent AI widget after it loads.
+
+To pass metadata from the Amazon Connect contact attribute named ***customData***, the data is collected at runtime and passed to the Agent AI widget during its creation.
+
+You can access this custom data in the Agent AI widget under the following path:  
+ `context.session.UserContext.customData`
+
+After accepting the call and loading the Agent AI widget, you can print the custom data as shown below:
+<img src="../images/printing-custom-data.png" alt="printing-custom-data" title="printing-custom-data" style="border: 1px solid gray; zoom:80%;">  
+

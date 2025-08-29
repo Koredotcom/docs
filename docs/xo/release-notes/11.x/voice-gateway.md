@@ -126,7 +126,7 @@ Repeat user identification is extended to the Voice Channel. This enhancement en
 
 **Support for ‘Speed’ Parameter in Elevenlabs TTS**
 
-The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ parameter, allowing control over the speech playback rate. This enhancement enables adjusting the speaking speed for more natural and customized audio output. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#elevenlabs)
+The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ parameter, allowing control over the speech playback rate. This enhancement enables adjusting the speaking speed for more natural and customized audio output. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/speech-customization.md#elevenlabs)
 
 <font size="4">Text to Speech (TTS)</font>
 
@@ -231,7 +231,7 @@ New call control parameters have been added to improve transcription quality whe
 * `filler_words`: Controls the inclusion of filler words (um, uh, like) in transcriptions.
 * `keyterm`: Boosts the Keyword Recall Rate (KRR) for important keyterms or phrases by up to 90%.
 
-[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#common-asr-parameters)
+[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/speech-customization.md#common-asr-parameters)
 
 <font size="4">Flows</font>
 

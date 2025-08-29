@@ -366,7 +366,7 @@ A voicemail notification can be sent using the `voiceutils`, enabling automated 
 * **transcriptionRequired**: Enables/disables automatic voicemail transcription. When enabled, it generates text transcription upon recording completion.
 * **notifyUrl**: Endpoint for receiving voicemail notifications.  
   Format: `https://your-domain/endpoint`
-* **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions.md#voicemails)
+* **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#voicemails)
 
 **Voicemail Recording API**
 
@@ -374,7 +374,7 @@ A new public API endpoint has been introduced to retrieve voicemail recordings. 
 
 **Simplified Parameter Updates for ASR/TTS Configuration**
 
-When modifying language settings or ASR/TTS parameters in Call Control Parameters, users can now specify the fields to be updated using the minimal required parameters. The system retains all existing parameters. This simplified approach applies to Node-Level and Channel-Level Call Control Parameters, reducing redundancy and streamlining the configuration process. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#channel-level-call-control)
+When modifying language settings or ASR/TTS parameters in Call Control Parameters, users can now specify the fields to be updated using the minimal required parameters. The system retains all existing parameters. This simplified approach applies to Node-Level and Channel-Level Call Control Parameters, reducing redundancy and streamlining the configuration process. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/speech-customization.md#channel-level-call-control)
 
 **Improved Audio Handling During Hold State**
 
