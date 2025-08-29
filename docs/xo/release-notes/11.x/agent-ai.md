@@ -35,7 +35,7 @@ At runtime, agents view only the assigned dialog tasks in Proactive and Library.
 
 **Kore Voice Bot with Amazon Connect and Agent Assist**
 
-Amazon Connect’s External Voice Connector now routes inbound voice calls through the Kore Voice Bot. Upon escalation, the system passes metadata, including Customer ID, Session ID, detected intent, and transcripts, as contact attributes or SIP headers, processes it in the Amazon Connect desktop, and displays it in the Agent AI widget. This flow ensures seamless metadata continuity from the Kore Voice Bot to the agent desktop and Agent AI widget.
+Amazon Connect’s External Voice Connector now routes inbound voice calls through the Kore Voice Bot. Upon escalation, the system passes metadata, including Customer ID, Session ID, detected intent, and transcripts, as contact attributes or SIP headers, processes it in the Amazon Connect desktop, and displays it in the Agent AI widget. This flow ensures seamless metadata continuity from the Kore Voice Bot to the agent desktop and Agent AI widget. [Learn more :octicons-arrow-right-24:](../../agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md)  
 
 **Hooks API for Internal Transfers**
 

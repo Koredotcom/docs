@@ -416,7 +416,7 @@ Any metadata passed from Kore to Amazon Connect in the previous steps becomes av
 
 To pass metadata from the Amazon Connect contact attribute named ***customData***, the data is collected at runtime and passed to the Agent AI widget during its creation.
 
-You can access this custom data in the Agent AI widget under the following path: \
+You can access this custom data in the Agent AI widget under the following path:  
  `context.session.UserContext.customData`
 
 After accepting the call and loading the Agent AI widget, you can print the custom data as shown below:
