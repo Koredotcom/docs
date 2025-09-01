@@ -211,7 +211,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         * **Bot ID and Account ID**: **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal. 
             <img src="../images/web-mobile-client_7.png" alt="web-mobile-client" title="free text" style="border: 1px solid gray; zoom:80%;"> 
 
-        * Token: Create a **JSON Web Token** on [jwt.io](jwt.io){:target="_blank"} with the following details:
+        * Token: Create a **JSON Web Token** on [jwt.io](https://www.jwt.io/){:target="_blank"} with the following details:
             * Payload: {“appId”: &lt;Bot Client ID>}
             * Header: {“alg”: “HS256″,”typ”: “JWT”}
             * Secret: Bot Client Secret. 
@@ -235,8 +235,8 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         2. Bot Client Secret
         3. Bot ID
         4. Agent AI Widget URL
-        5. Bot Language Code - “en” is set as the default language. Refer to this [doc](./../../../agent-experience/supported-languages.md){:target="_blank"} to provide the language code for your AI Agent's language.
-    2. Custom Data: The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this customdata will be accessible in the UserContext of the AI Agent. Refer to *“[Access Custom Data in Agent AI Bot](./../../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"}”* for instructions on how to access customdata in the AI Agent. 
+        5. Bot Language Code - “en” is set as the default language. Refer to this [doc](./../../agent-experience/supported-languages.md){:target="_blank"} to provide the language code for your AI Agent's language.
+    2. Custom Data: The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this customdata will be accessible in the UserContext of the AI Agent. Refer to *“[Access Custom Data in Agent AI Bot](./../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"}”* for instructions on how to access customdata in the AI Agent. 
     Include your data in the customdata object (one key-value pair per line). For example:
         1. `customdata.agentName="Agent"`
         2. `customdata.agentID="1234"`

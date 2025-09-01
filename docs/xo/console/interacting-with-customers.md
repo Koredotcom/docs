@@ -365,6 +365,10 @@ Steps to initiate a Call Transfer:
 * Click **Transfer** to directly transfer the call to another agent.  
 <img src="../images/transfer-agent.png" alt="Agent Transfer" title="Agent Transfer" style="border: 1px solid gray; zoom:50%;">
 
+!!! Note
+
+    Agents are not listed in Agent Transfers when the Chat and Email channel slots are set to zero.
+
 ### Consult Call
 
 * Click **Consult** to initiate a call with another agent while the external call progresses.  
