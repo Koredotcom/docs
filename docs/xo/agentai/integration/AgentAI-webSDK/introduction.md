@@ -1,4 +1,4 @@
-# Agent AI Web SDK_v3.13.1
+# Agent AI Web SDK v3.13.1
 
 Agent AI Web SDK provides a versatile and customizable solution for integrating AI Agent functionalities into web applications. Built using JavaScript, Preact, and SCSS, this SDK enables seamless interaction, real-time event handling, and UI customization for an enhanced user experience.
 
