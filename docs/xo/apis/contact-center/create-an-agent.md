@@ -64,33 +64,33 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents'
 
 ## Body Parameters
 
-| **PARAMETER**                          | **DESCRIPTION**                                                                | **TYPE**                               |
-|------------------------------------|----------------------------------------------------------------------------|------------------------------------|
-| `emailId`                          | Email address of the agent. Must be unique.                                | String, Required                   |
-| `firstName`                        | First name of the agent.                                                   | string, required                   |
-| `lastName`                         | Last name of the agent.                                                    | string, required                   |
-| `nickName`                         | Nickname of the agent.                                                     | string, optional                   |
-| `phoneNumber`                      | Contact number of the agent.                                               | string, optional                   |
-| `agentGroupId`                     | Unique identifier of the agent group to which the agent belongs.           | string, optional                   |
-| `canSupportChat`                   | Indicates whether the agent can handle chat interactions.                  | boolean, optional                  |
-| `maxChatSupport`                   | Maximum number of simultaneous chats the agent can support.                | integer, optional                  |
-| `canSupportVoice`                  | Indicates whether the agent can handle voice interactions.                 | boolean, optional                  |
-| `customId`                         | Custom identifier for the agent. Supports special characters except space. | string, optional                   |
-| `roleId`                           | Identifier for the role assigned to the agent.                             | string, required                   |
-| `chatLanguageSupport`              | List of languages and proficiency levels supported for chat.               | array of Objects, optional         |
-| `chatLanguageSupport.language`     | Language code (for example, `"en"`).                                       | string, required |
-| `chatLanguageSupport.proficiency`  | Proficiency level in the language (for example, `"expert"`).               | string, required  |
-| `chatLanguageSupport.isActive`     | Indicates whether the language is active for the agent.                    | boolean, optional                  |
-| `voiceLanguageSupport`             | List of languages and proficiency levels supported for voice.              | array of Objects, optional         |
-| `voiceLanguageSupport.language`    | Language code (for example, `"en"`).                                       | string, required  |
-| `voiceLanguageSupport.proficiency` | Proficiency level in the language (for example, `"expert"`).               | string, required |
-| `voiceLanguageSupport.isActive`    | Indicates whether the language is active for the agent.                    | boolean, optional                  |
-| `skills`                           | List of skills assigned to the agent.                                      | array, optional                    |
-| `desktopLayouts`                   | List of desktop layouts assigned to the agent.                             | array, optional                    |
-| `queues`                           | List of queues assigned to the agent.                                      | array of Objects, optional         |
-| `queues.id`                        | Identifier of the queue.                                                   | string, required if parent present |
-| `queues.isPreferredAgent`          | Indicates whether the agent is the preferred agent for the queue.          | boolean, optional                  |
-| `createDefaultLayoutAndAssign`     | Indicates whether to create and assign a default desktop layout.           | boolean, optional                  |
+| **PARAMETER**                          | **DESCRIPTION**                                                                | **TYPE**                       |
+| ---------------------------------- | -------------------------------------------------------------------------- | -------------------------- |
+| `emailId`                          | Email address of the agent. Must be unique.                                | string, required           |
+| `firstName`                        | First name of the agent.                                                   | string, required           |
+| `lastName`                         | Last name of the agent.                                                    | string, required           |
+| `nickName`                         | Nickname of the agent.                                                     | string, optional           |
+| `phoneNumber`                      | Contact number of the agent.                                               | string, optional           |
+| `agentGroupId`                     | Unique identifier of the agent group to which the agent belongs.           | string, optional           |
+| `canSupportChat`                   | Defines if the agent can handle chat interactions.                         | boolean, optional          |
+| `maxChatSupport`                   | Maximum number of simultaneous chats the agent can support.                | integer, optional          |
+| `canSupportVoice`                  | Defines if the agent can handle voice interactions.                        | boolean, optional          |
+| `customId`                         | Custom identifier for the agent. Supports special characters except space. | string, optional           |
+| `roleId`                           | Identifier for the role assigned to the agent.                             | string, required           |
+| `chatLanguageSupport`              | List of languages and proficiency levels supported for chat.               | array of Objects, optional |
+| `chatLanguageSupport.language`     | Language code (for example, `"en"`).                                       | string, required           |
+| `chatLanguageSupport.proficiency`  | Proficiency level in the language (for example, `"expert"`).               | string, required           |
+| `chatLanguageSupport.isActive`     | Indicates if the language is active for the agent.                         | boolean, optional          |
+| `voiceLanguageSupport`             | List of languages and proficiency levels supported for voice.              | array of Objects, optional |
+| `voiceLanguageSupport.language`    | Language code (for example, `"en"`).                                       | string, required           |
+| `voiceLanguageSupport.proficiency` | Proficiency level in the language (for example, `"expert"`).               | string, required           |
+| `voiceLanguageSupport.isActive`    | Indicates if the language is active for the agent.                         | boolean, optional          |
+| `skills`                           | List of skills assigned to the agent.                                      | array, optional            |
+| `desktopLayouts`                   | List of desktop layouts assigned to the agent.                             | array, optional            |
+| `queues`                           | List of queues assigned to the agent.                                      | array of Objects, optional |
+| `queues.id`                        | Identifier of the queue.                                                   | string, required           |
+| `queues.isPreferredAgent`          | Defines if the agent is the preferred agent for the queue.                 | boolean, optional          |
+| `createDefaultLayoutAndAssign`     | Indicates whether to create and assign a default desktop layout.           | boolean, optional          |
 
 ## Sample Response
 
