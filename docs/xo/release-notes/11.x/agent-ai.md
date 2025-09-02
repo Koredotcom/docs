@@ -35,7 +35,7 @@ At runtime, agents view only the assigned dialog tasks in Proactive and Library.
 
 **Kore Voice Bot with Amazon Connect and Agent Assist**
 
-Amazon Connect’s External Voice Connector now routes inbound voice calls through the Kore Voice Bot. Upon escalation, the system passes metadata, including Customer ID, Session ID, detected intent, and transcripts, as contact attributes or SIP headers, processes it in the Amazon Connect desktop, and displays it in the Agent AI widget. This flow ensures seamless metadata continuity from the Kore Voice Bot to the agent desktop and Agent AI widget.
+Amazon Connect’s External Voice Connector now routes inbound voice calls through the Kore Voice Bot. Upon escalation, the system passes metadata, including Customer ID, Session ID, detected intent, and transcripts, as contact attributes or SIP headers, processes it in the Amazon Connect desktop, and displays it in the Agent AI widget. This flow ensures seamless metadata continuity from the Kore Voice Bot to the agent desktop and Agent AI widget. [Learn more :octicons-arrow-right-24:](../../agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md)  
 
 **Hooks API for Internal Transfers**
 
@@ -254,7 +254,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Kore Agent AI Integration with NICE MAX Desktop for Outbound Calls**
 
-The Agent AI integration with NICE MAX Desktop now supports outbound calls. The integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agent-experience/agent-assist-widget-v3.md), [Transcription](./../../agentai/agent-experience/agent-assist-widget-v3.md/#transcript-tab){:target="_blank"}, end-of-call summary, and Custom Data passing (for example, agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md)
+The Agent AI integration with NICE MAX Desktop now supports outbound calls. The integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agentai/agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agentai/agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agentai/agent-experience/agent-assist-widget-v3.md), [Transcription](./../../agentai/agent-experience/agent-assist-widget-v3.md/#transcript-tab){:target="_blank"}, end-of-call summary, and Custom Data passing (for example, agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md)
 
 **AgentAssist Widget Now Receives Real-Time Updates through Genesys Middleware**
 

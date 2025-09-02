@@ -59,7 +59,7 @@ In the General Settings section, You can enable the **Allow agent permissions** 
 
 !!! Note
 
-    The customId field supports all special characters except spaces, with a maximum limit of 64 characters.
+    The customId field supports all special characters except spaces and backslashes, with a maximum limit of 64 characters.
 
 ### Chat & Voice
 
@@ -69,6 +69,11 @@ In the Chat & Voice section, you can configure the following:
 
 * Turn on **Enable chat** toggle to set:
    1. Capacity by Channel Type - Maximum handling capacity for individual channels. (You can select maximum 15 conversations for each channel type). The total digital conversation limit should be configured within minimum and maximum limits. When an agent reaches the total digital conversation limit, they will be automatically marked as "system busy" and will not be assigned any new digital conversations until they complete ongoing conversations and free up session slots.  
+
+!!! Note
+
+    Agents are not listed in Agent Transfers when the Chat and Email channel slots are set to zero.
+
    2. Language Support - Supported languages and their proficiency level. (Novice, Average, Good, or Expert)
    3. Widget Features - Attachments and emojis in live chat.
 
