@@ -49,6 +49,7 @@ plugins:
         'getting-started/virtual-assistants-overview.md': 'getting-started/building-a-virtual-assistant.md'
         'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
         'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
+        'administration/kore-ai-connector.md': 'administration/adminconsole.md'
 extra:
   version:
     provider: mike

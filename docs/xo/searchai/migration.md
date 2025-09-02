@@ -285,7 +285,7 @@ The following table captures the details of updates made to the custom configura
   <tr>
    <td>Chunk Extraction Method
    </td>
-   <td>
+   <td>Search AI offers different extraction methods, including the text and layout aware supported by SearchAssist. The extraction strategy can be configured on the Extract page. Refer to <a href="https://docs.kore.ai/xo/searchai/content-extraction/extraction/#adding-a-new-strategy">this</a> for more details. 
    </td>
   </tr>
   <tr>
