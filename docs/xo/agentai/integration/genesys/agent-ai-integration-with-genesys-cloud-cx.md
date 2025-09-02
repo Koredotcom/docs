@@ -252,7 +252,7 @@ For on-prem, refer to corresponding host<strong> </strong>
 
 <img src="../kore-data-table/architecture-diagram-voice-2.png" alt="architecture-diagram-voice" title="architecture-diagram-voice" style="border: 1px solid gray; zoom:80%;">
 
-## Interac../kore-data-table/interaction-sequence-3.png
+## Interaction Sequence 
 
 <img src="../kore-data-table/interaction-sequence-3.png" alt="interaction-sequence" title="interaction-sequence" style="border: 1px solid gray; zoom:80%;">
 
@@ -643,7 +643,7 @@ To view the Interaction Widget, agents must have the following accesses:
 An Interaction Widget uses Group Membership to determine who can view it on the agent desktop.
 
 1. Use an existing Group, if your agents are already part of it. Otherwise, create a new Group for Agent AI permission.
-2. Name the Group as **KoreAA-Agents** or similar to distinguish it../manual-integration-of-agent-ai-voice-with-genesys-cloud.md#step-2-interaction-widget
+2. Name the Group as **KoreAA-Agents** or similar to distinguish it.  
 3. Add any agent to allow them to use the Agent AI functionality. You can utilize more than one Group, if required.
 4. Go back to the **Integrations** section and open the **Interaction Widget** created in [Step 2](./../../integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md/#step-2-interaction-widget){:target="_blank"}. 
 5. On the **Configuration** tab, add access using the Group you identified or created for Agent AI in the Group Filtering option.  
