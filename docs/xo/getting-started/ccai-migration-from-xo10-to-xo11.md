@@ -296,8 +296,8 @@ Roles in Contact Center AI have additional access; for details, refer to [Role M
 | Hours of Operation                     | Moved to Contact Center AI > Hours of Operation. [Learn more](../contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md) |
 | Default Flows                          | Deprecated. Use conditional flows for no agents available & out of hours. [Learn more](../contactcenter/flows-and-routing/conditional-flows.md#conditional-flows) |
 | Users                                  | Moved to Contact Center AI > Agent Management > Agent Groups. [Learn more](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-groups) |
-| Agent Groups                           | Moved to Contact Center AI > Agent Management > Agent Groups. [Learn more](https://docs.kore.ai/xo/contactcenter/agent-and-supervisors/agent-management/agent-management/?h=agent+mana#agent-groups) |
-| Agent Settings                         | Moved to Contact Center AI > Agent Management > Agent Settings. [Learn more](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-groups) |
+| Agent Groups                           | Moved to Contact Center AI > Agent Management > Agent Groups. [Learn more](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-groups) |
+| Agent Settings                         | Moved to Contact Center AI > Agent Management > Agent Settings. [Learn more](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) |
 | Role Management                        | Moved to Users > Access Controls > Role Management. [Learn more](../user-management/role-management.md#manage-role-and-permissions) |
 | Agent Status                           | Moved to Contact Center AI > Agent Management > Agent Status. [Learn more](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-status-management) |
 | Service Level                          | Moved to Contact Center AI > Performance Management > SLAs & Alerts. [Learn more](../contactcenter/performance-management/slas-and-alerts.md#service-level) |
@@ -321,7 +321,7 @@ Roles in Contact Center AI have additional access; for details, refer to [Role M
 | Widgets                                | Moved to Contact Center AI > Configurations > Widgets. [Learn more](../contactcenter/configurations/widgets/configure-widgets.md) |
 | AgentAssist settings                   | Moved to the AgentAI module. [Learn more](../agentai/configuration/widget-settings.md) |
 | SearchAssist                           | Moved to the AgentAI module. [Learn more](../agentai/configuration/linked-services.md) |
-| Advanced settings                      | Moved to Contact Center AI > Configurations > Advanced Settings. [Learn more](../contactcenter/configurations/settings/handling-sensitive-data.md) |
+| Advanced settings                      | Moved to Contact Center AI > Configurations > Advanced Settings.|
 
 !!! Note
 
