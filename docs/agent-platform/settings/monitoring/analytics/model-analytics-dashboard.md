@@ -239,8 +239,6 @@ The widget-level filters include the following:
 
 * [Model Performance Filters](../analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"} for Open-source and Fine-tuned models.
 
-* [Model Provider Filter](../analytics/model-analytics-dashboard.md/#model-provider-filter){:target="_blank"} for External models.
-
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p><ul><li>Changes made to the filters in the expanded view of a widget do not affect the main dashboard or the global filters.</li>
