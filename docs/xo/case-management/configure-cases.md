@@ -237,11 +237,13 @@ To create a new case template:
         Agents use a case template as a form to reference for different types of customer issues. Agents can use it to configure and manage cases effectively.
 
 
-    a. Enter a **Name** for the new case type for easy identification. 
-    
+    a. Enter a **Name** for the new case type for easy identification.
+
+    b. Define the Case ID for the case template.  
+
     !!! Note
-            
-        Case numbers auto-generate in '*C000XXX*’ format.
+
+        You can not delete the case ID once it is created.
 
     b. Enter a brief **Description** explaining the template's purpose.
 
@@ -257,7 +259,8 @@ To create a new case template:
 
     * **Individual Agent**: The cases automatically get assigned to a specific individual agent.
 
-    * **Case Creator**: The cases assigned to the user who has created and initiated the task.
+    * **Case Creator**: The cases assigned to the user who has created and initiated the task.  
+    <img src="../images/create-a-new-case-template.png" alt="Case Fields" title="Case Fields" style="border: 1px solid gray; zoom:70%;">  
 
 2. Click **Next** to proceed to the following **Case Fields** page. Case fields ensure that agents provide data for specific information, and mark all the newly added fields as required or not for validation. Ensure that the fields where agents enter data are marked as required. Adding more than one field is allowed.  
 <img src="../images/add-case-fields.png" alt="Case Fields" title="Case Fields" style="border: 1px solid gray; zoom:70%;">        

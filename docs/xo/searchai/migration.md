@@ -5,7 +5,7 @@ This guide helps you migrate your existing SearchAssist application to Search AI
 It outlines the changes in configuration, deprecated features, and the steps required to set up sources successfully, extraction strategies, answer generation, and business rules in Search AI.
 
 
-## 1. Overview 
+## Overview 
 
 Search AI is the next-generation evolution of SearchAssist, designed to move beyond traditional keyword-based search. It leverages advanced techniques and the latest LLMs for indexing, search, and answer generation, resulting in more accurate, relevant, and natural answers for end users.
 
@@ -14,7 +14,7 @@ A key difference is in platform integration. While SearchAssist is a standalone 
 With the use of these latest techniques, many configurations and manual settings that were required in SearchAssist are now automatically handled in Search AI, making the setup process simpler.
 
 
-## 2. Architecture at a Glance
+## Architecture at a Glance
 
 Search AI introduces a modernized architecture compared to SearchAssist, with several improvements that provide greater flexibility, transparency, and control over how search and answers are generated. The new design moves away from rigid, predefined workflows to a modular and configurable framework.
 
@@ -31,10 +31,10 @@ Key Changes
 
 
 
-## 3. Migration Steps
+## Migration Steps
 
 
-## 3.1 Creating an App
+## Creating an App
 
 Search AI is now a product offered in the AI for Service platform.
 
@@ -48,10 +48,10 @@ Search AI is now a product offered in the AI for Service platform.
 [Learn More](https://docs.kore.ai/xo/getting-started/guided-onboarding/).  
 
 
-## 3.2 Migrating Sources
+## Migrating Sources
 
 
-### 3.2.1 Websites
+### Websites
 
 
 
@@ -67,7 +67,7 @@ Search AI is now a product offered in the AI for Service platform.
 [Learn More](https://docs.kore.ai/xo/searchai/content-sources/web-crawl/).
 
 
-### 3.2.2 File Upload
+### File Upload
 
 
 
@@ -78,7 +78,7 @@ Search AI is now a product offered in the AI for Service platform.
 [Learn More](https://docs.kore.ai/xo/searchai/content-sources/directory/).
 
 
-### 3.2.3 FAQs
+### FAQs
 
 
 
@@ -88,7 +88,7 @@ Search AI is now a product offered in the AI for Service platform.
 4. Alternatively, use the [JSON connector](https://docs.kore.ai/xo/searchai/content-sources/connectors/json/) to add FAQs by saving the question as chunkTitle and the answer as chunkText.
 
 
-### 3.2.4 Connectors
+### Connectors
 
 
 
@@ -100,7 +100,7 @@ Search AI is now a product offered in the AI for Service platform.
 [Learn More](https://docs.kore.ai/xo/searchai/content-sources/connectors/connector-directory/).
 
 
-### 3.2.5 Structured Data
+### Structured Data
 
 
 
@@ -112,7 +112,7 @@ Search AI is now a product offered in the AI for Service platform.
 [Learn More](https://docs.kore.ai/xo/searchai/content-sources/connectors/json/).
 
 
-## 3.3 Migrating Extraction Configuration
+## Migrating Extraction Configuration
 
 In **Search Assist**, there is no dedicated Extraction module. Extraction happens automatically in the background:
 
@@ -136,12 +136,12 @@ In **Search AI**, extraction works differently. There is now a **dedicated Extra
 * To change the default extraction strategy from text extraction, go to the [Extract page](https://platform.kore.ai/builder/app/extract) and set up your extraction strategy
 
 
-## 3.4 Migrating Workbench Stages
+## Migrating Workbench Stages
 
 In SearchAssist, the *Document Workbench* is used to process and enrich documents ingested from different sources. In Search AI, this capability is extended with the addition of a *Chunk Workbench*, allowing enrichment at both the document level and the chunk level. This dual approach gives you greater flexibility—use the Document Workbench to apply transformations during extraction, and the Chunk Workbench to refine or enrich content after it has been split into chunks.
 
 
-### 3.4.1 Set up Document Workbench 
+### Set up Document Workbench 
 
 * Go to the [Extract ](https://platform.kore.ai/builder/app/extract)page.
 * Go to the Content Strategy configured for specific type of content. 
@@ -150,7 +150,7 @@ In SearchAssist, the *Document Workbench* is used to process and enrich document
 Refer to [this for configuration details](https://docs.kore.ai/xo/searchai/content-extraction/transformation/). 
 
 
-### 3.4.2 Set up Chunk Workbench
+### Set up Chunk Workbench
 
 This is a new workbench offered by Search AI that allows processing of the chunks.[ Learn More.](https://docs.kore.ai/xo/searchai/workbench/introduction/) 
 
@@ -161,7 +161,7 @@ To configure the Chunk Workbench,
 * Refer to [this ](https://staging-xo.korebots.com/builder/app/workbench)for the supported stage types and their configuration details. 
 
 
-### 3.4.3 Points to Note
+### Points to Note
 
 * The document and chunk workbench in Search AI offer the following stages:
     * [Field Mapping Stage](https://docs.kore.ai/xo/searchai/content-extraction/transformation/#field-mapping-stage)
@@ -177,7 +177,6 @@ To configure the Chunk Workbench,
     * Keyword Extraction
     * Semantic Meaning
 * In SearchAssist, the Snippet Extraction stage is automatically added to the Index pipeline, when extractive answers are enabled to extract answer snippets. This feature has been deprecated in Search AI. Instead, users should navigate to extraction strategies and select the strategy that is appropriate. 
-* - 
 * The Custom LLM Prompt stage is available as Transform Documents with LLM in Document Workbench and Enrich Chunks with LLM in Chunk Workbench. 
 * Additionally, you can use th[e API stage](https://docs.kore.ai/xo/searchai/workbench/api-stage/) for any other custom processing of the chunks. 
 * Use the simulator to test the application's behavior after processing.
@@ -186,14 +185,14 @@ To configure the Chunk Workbench,
 [Learn More](https://docs.kore.ai/xo/searchai/workbench/introduction/)
 
 
-## 3.5 Migrating Answer Snippets
+## Migrating Answer Snippets
 
 As in SearchAssist, answers can be generated using **Extractive Answers** or **Generative Answers**.
 
 By default, Search AI presents Generative Answers. To verify this, go to the [Answer Configuration page](https://platform.kore.ai/builder/app/answergeneration).
 
 
-### 3.5.1 Generative Answers
+### Generative Answers
 
 By default, Generative Answers are selected with default configurations. Change the configurations as required. 
 
@@ -207,7 +206,7 @@ Note that for Generative Answers to work, you need to configure and enable the L
 Some of the custom configurations from SearchAssist, like response token size and chunk order, are part of the Answer Configurations. 
 
 
-### 3.5.2 Extractive Answers
+### Extractive Answers
 
 * In SearchAssist, extractive answers use rule-based chunking to generate content for answer snippets. In Search AI, the same outcome can be achieved by configuring extraction strategies and enabling Extractive Answers. To replicate **SearchAssist’s Extractive Model**:
 * Go to the [Answer Configuration page](https://platform.kore.ai/builder/app/answergeneration) and select Extractive Answers and the corresponding configurations.  
@@ -222,7 +221,7 @@ These steps ensure that headers, paragraphs, tables, and images are captured cor
 [Learn More](https://docs.kore.ai/xo/searchai/answer-generation/). 
 
 
-## 3.6 Migrating Search Configuration
+## Migrating Search Configuration
 
 
 
@@ -236,7 +235,7 @@ These steps ensure that headers, paragraphs, tables, and images are captured cor
 * Spell correction is not required since we do not rely on keyword matching in Search AI. 
 
 
-## 3.7 Migrating Business Rules
+## Migrating Business Rules
 
 In Search AI, semantic search has replaced traditional keyword-based search, so NLP-based rules from SearchAssist are deprecated. Instead, you must configure Contextual Business Rules manually.
 
@@ -245,7 +244,7 @@ The process of setting contextual rules in Search AI is the same as that of Sear
 Note that the `context` object used in the condition block now refers to the context object and session variables provided by the AI for Service platform. [Learn More](https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-object/). 
 
 
-## 3.8 Migrating Facets
+## Migrating Facets
 
 Facets are supported in Search AI as filters. Currently, the search results can only be presented using the [Advance Search API](https://docs.kore.ai/xo/apis/searchai/advance-search/). Hence, the facets created are used while returning search results through the API only. 
 
@@ -260,15 +259,15 @@ To include facets in the search results, set the isFacetsEnable field in the API
 * Note that a default filter is already available, which organizes content into tabs based on sourceType.
 
 
-## 4. Other Updates
+## Other Updates
 
 
-### 4.1 Language Support
+### Language Support
 
 The language support in Search AI is now extended. It supports 100+ languages and can handle all the languages supported by the underlying LLM and embedding models. Refer to [this ](https://docs.kore.ai/xo/searchai/language-support/)for language-specific configuration and recommendations. 
 
 
-### 4.2 LLM Configuration
+### LLM Configuration
 
 Search AI uses the model library of the AI for Service platform to configure the LLM and prompts for all its Gen AI capabilities. The library serves as a common place to configure the models and prompts. The Gen AI features page allows developers to choose the models and prompts for different features in Search AI. 
 
@@ -277,7 +276,7 @@ All the configurations can be done under Generative AI Tools.
 [Learn More](https://docs.kore.ai/xo/generative-ai-tools/models-library/)
 
 
-### 4.3 Custom Configurations
+### Custom Configurations
 
 The following table captures the details of updates made to the custom configurations. Some of the configurations that are no longer relevant have been deprecated, and some have been moved to different sections of the application. 
 
@@ -286,7 +285,7 @@ The following table captures the details of updates made to the custom configura
   <tr>
    <td>Chunk Extraction Method
    </td>
-   <td>
+   <td>Search AI offers different extraction methods, including the text and layout aware supported by SearchAssist. The extraction strategy can be configured on the Extract page. Refer to <a href="https://docs.kore.ai/xo/searchai/content-extraction/extraction/#adding-a-new-strategy">this</a> for more details. 
    </td>
   </tr>
   <tr>
@@ -431,7 +430,7 @@ You can configure this by navigating to Generative AI Tools > GenAI Features. Op
 
 
 
-### 4.4 Unified Schema
+### Unified Schema
 
 Search AI introduces a Unified Schema that standardizes how content from diverse sources is ingested and managed. Search AI supports a much broader range of connectors and content types. To ensure consistency across ingestion and retrieval from these sources, the unified schema has been introduced. The schema also offers developers with the ability to define up to 50 custom fields, specific to their content source or use case, enabling them to capture domain-specific metadata. 
 
@@ -439,7 +438,7 @@ Search AI introduces a Unified Schema that standardizes how content from diverse
 Note: Wherever schema fields are referenced in the Search AI setup process (e.g., workbench, business rules, filters), ensure that the correct field names are used to avoid mapping or retrieval errors.
 
 
-### 4.5 Training
+### Training
 
 In Search AI, the training process has been enhanced to provide greater automation and efficiency. During training, design-time configurations are applied, and ingested content is broken down into chunks based on these configurations.
 
@@ -448,20 +447,20 @@ Unlike SearchAssist, Search AI introduces Automatic Training, which runs during 
  Refer to [this to learn more about app training. ](https://docs.kore.ai/xo/searchai/application-training/)
 
 
-### 4.6 New Crawler
+### New Crawler
 
 The new web crawler is faster, more reliable, and LLM-ready. It processes more pages in less time, reduces errors and interruptions, and automatically converts content into Markdown for seamless use with AI/LLM applications. It also handles JavaScript-heavy pages more efficiently, ensuring smoother and more consistent crawling.
 
 
-## 5. Application Administration
+## Application Administration
 
 
-### 5.1 Workspace Management 
+### Workspace Management 
 
 Search AI is now part of the AI for Service platform. The Platform organizes users and resources through Workspaces. Each workspace functions as a container that manages users, applications, and access controls. Workspaces can be collaborated between users to share all the apps within the workspace. Learn More to know[ how to create a workspace or manage it.](https://docs.kore.ai/xo/manage-assistant/plan-and-usage/accounts-or-workspace-overview/)
 
 
-### 5.2  App Sharing
+###  App Sharing
 
 Search AI supports App Sharing, allowing applications to be shared with other users for seamless collaboration. Shared users can access and work on the same application, depending on the permissions assigned.
 
@@ -476,7 +475,7 @@ To share your app with another user
 Learn more about [User Management and Roles here](https://docs.kore.ai/xo/user-management/manage-users/). 
 
 
-### 5.3 Change Logs
+### Change Logs
 
 Since the app is a part of the platform, the change logs are maintained at the platform level and are common to all the components of the application, including Search AI. To see the change logs, 
 
@@ -490,7 +489,7 @@ Since the app is a part of the platform, the change logs are maintained at the p
 [Learn More.](https://docs.kore.ai/xo/app-settings/change-logs/)
 
 
-### 5.4 App Analytics
+### App Analytics
 
 Search AI provides analytics at the **platform level**, consolidating insights across all integrated applications. This enables a broader and more unified view of user interactions and performance. To view the answer insights, 
 
@@ -502,7 +501,7 @@ Search AI provides analytics at the **platform level**, consolidating insights a
 [Learn More.](https://docs.kore.ai/xo/analytics/searchai/answer-insights/) 
 
 
-### 5.5 App Testing
+### App Testing
 
 Search AI supports testing at multiple levels to validate both performance and accuracy:
 
@@ -513,25 +512,23 @@ Search AI supports testing at multiple levels to validate both performance and a
 3. Complete Application Testing: The Test option (available at the top-right of each page) allows you to test the complete agent, including all integrated modules. Both voice and chat widgets are available to simulate the overall application flow.
 
 
-## 6. Deprecated Features
+## Deprecated Features
 
 
-### 6.1 Result Ranking
+### Result Ranking
 
 In SearchAssist, developers relied on manual result ranking rules. In Search AI, [Business rules](https://docs.kore.ai/xo/searchai/business-rules/) and [Agentic Rag](https://docs.kore.ai/xo/searchai/rag-agents/) capabilities provide more flexible and context-aware control over retrieval,  eliminating the need for configuring ranking rules for each unique user query.
 
 Hence, this functionality has been deprecated. 
 
 
-### 6.2 Search Interface Configurations
+### Search Interface Configurations
 
 Custom interfaces can be built using [Search AI’s public APIs](https://docs.kore.ai/xo/apis/searchai/api-list/). By default, the AI for Service Platform offers agent experiences across[ 40+ channels](https://docs.kore.ai/xo/channels/adding-channels-to-your-bot/), which can be easily integrated with minimal configurations. Refer to the respective documentation for more details.
 
 
-### 6.3 Traits
+### Traits
 
 This feature is no longer required.
-
- 
 
 Since Search AI uses semantic embeddings for search and does not rely on traditional search relevance tools, traits are not required in Search AI. Vector representations of the content along with keyword relevance via hybrid search, can capture the relationship between different terms based on their context.  
