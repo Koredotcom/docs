@@ -189,7 +189,8 @@ nav:
         - Benefits of XO v11: getting-started/benefits-xo11.md
         - Automation AI: getting-started/migration-path-xo10-to-xo11.md
         - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
-        - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md       
+        - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md    
+      - Deprecations: release-notes/11.x/searchai-deprecations.md 
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
