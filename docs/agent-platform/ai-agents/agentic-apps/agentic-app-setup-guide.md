@@ -41,5 +41,5 @@ If you've already set up XO, both your existing workspaces and shared workspaces
 
 **Related Links**
 
-* [Integrate AI for Service with Agent Platform](https://koredotcom.github.io/docs/agent-platform/ai-agents/ai-for-service/){:target="_blank"}
-* [Integrate AI for Work with Agent Platform](https://agentplatform-kore.github.io/docs/agent-platform/ai-agents/ai-for-work/){:target="_blank"}
+* [Integrate AI for Service with Agent Platform](../ai-for-service.md){:target="_blank"}
+* [Integrate AI for Work with Agent Platform](../ai-for-work.md){:target="_blank"}
