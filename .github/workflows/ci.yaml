@@ -9,6 +9,7 @@ concurrency:
   cancel-in-progress: true      
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,8 +18,22 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
+      # Install build dependencies FIRST
       - name: Install build dependencies
         run: sudo apt-get update && sudo apt-get install -y build-essential python3-dev
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      # Install required Python packages (combine for efficiency)
+      - name: Install Python packages
+        run: |
+          pip install --upgrade pip
+          pip install mkdocs-material mike mkdocs-glightbox mkdocs-redirects
+
+      # Build docs (you can loop over configs if you want, but keeping original for clarity)
       - name: Build EN XO docs
         uses: ./
         with:
@@ -49,18 +64,14 @@ jobs:
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.en.eva.yml     
-      - name: Build EN AGENT-PATFORM docs
+      - name: Build EN AGENT-PLATFORM docs
         uses: ./
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.en.agent-platform.yml            
-            
+
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site
-
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
 
       - name: Deploy docs to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
@@ -72,9 +83,3 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs-material 
-      - run: pip install mike --force-reinstall --verbose
-      - run: pip install mkdocs-glightbox
-      - run: pip install mkdocs-redirects
-      # - run: mike deploy --push --update-aliases 1.0 latest --ignore
-      # - run: mkdocs gh-deploy --force
