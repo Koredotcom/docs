@@ -6,7 +6,7 @@ In an Agentic app, when a user submits a query, the supervisor/orchestrator coor
 
 Using a suite of automated evaluators, Agentic Evaluation scores AI agent behavior, measures action effectiveness, and highlights areas for improvement. Users can import live session data and assess performance across the supervisor, agent, and tool layers through an interactive interface. 
 
-The Agentic Evaluation framework supports various evaluation types that collectively provide a comprehensive view of AI agent behavior. These evaluations span high-level outcomes to step-by-step decision-making, helping users diagnose issues, measure effectiveness, and optimize Agentic app performance. For more information on the different types of evaluators, see [Types of Evaluators](./evaluate-production-data.md#types-of-evaluators).
+The Agentic Evaluation framework supports various evaluation types that collectively provide a comprehensive view of AI agent behavior. These evaluations span high-level outcomes to step-by-step decision-making, helping users diagnose issues, measure effectiveness, and optimize Agentic app performance. For more information on the different types of evaluators, see [Types of Evaluators](./configure-evaluators.md#types-of-evaluators).
 
 
 ## Key Features
@@ -34,7 +34,7 @@ The following outlines the key actions at each stage of the Agentic Evaluation u
 1. [**Create a project**](./create-project.md): Log in to the Agent Platform, navigate to Evaluation Studio, and create a new project for your AI agent evaluation.
 2. [**Create an evaluation**](./create-evaluation.md): After setting up a project, create an evaluation to organize and analyze imported session data.
 3. [**Import production data**](./import-production-data.md): Import live session data from your deployed Agentic apps. You can filter by various parameters such as app version, environment, and time range to focus on specific datasets for evaluation.
-4. [**Configure evaluators**](./evaluate-production-data.md): Select from predefined evaluators to assess various aspects of AI agent performance.
+4. [**Configure evaluators**](./configure-evaluators.md): Select from predefined evaluators to assess various aspects of AI agent performance.
 5. [**Run the evaluation**](./run-evaluation.md): Trigger the evaluation to run across the imported production sessions or traces. The system automatically computes evaluation scores for each session and its underlying traces, with evaluators running in parallel to ensure efficiency.
 6. [**View evaluation results**](./view-evaluation-result.md): View the results in an interactive analysis interface. Evaluation results are displayed in a session grid with scores and visual indicators for each evaluator.
 7. [**Analyze evaluation results**](./analyze-evaluation.md): Use drill-down capabilities to examine scores at different levels - supervisor, agent, and tool interactions -  and identify areas for improvement.
