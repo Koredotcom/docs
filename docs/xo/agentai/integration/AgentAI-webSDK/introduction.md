@@ -4,7 +4,7 @@ Agent AI Web SDK provides a versatile and customizable solution for integrating 
 
 ## Prerequisites
 
-Before using the SDK, generate the following:
+Before using the SDK, generate the following identifiers:
 
 * **Client ID**
 * **Bot ID**

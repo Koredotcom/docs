@@ -122,7 +122,7 @@ The following measurement types are:
 
     * **Speaking pace optimization**
         
-    For the detailed configuration, see [By Speech](../configure/evaluation-criteria/metrics-measurement-types/by-speech.txt).
+    For the detailed configuration, see [By Speech](../configure/evaluation-criteria/metrics-measurement-types/by-speech.md).
 
 1. **By Value**
 
@@ -170,7 +170,7 @@ The following measurement types are:
 
     * **Dialog flow optimization**
 
-    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-execution.txt).
+    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md).
 
 1. **By Playbook Adherence**
 

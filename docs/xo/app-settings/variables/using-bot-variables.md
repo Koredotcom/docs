@@ -81,7 +81,7 @@ Enabling the **secure variable** setting after defining an Environment (App) Var
     * **Value**: Enter the environment variable value that is encrypted.
     * **Notes (optional)**: Any tip/note describing the environment variable.
     * **Group (optional)**: The name of the group to which the environment variable is mapped.
-    * Assign a **Namespace** if enabled ([refer here for more](../../managing-namespace){:target="_blank"}).
+    * Assign a **Namespace** if enabled ([refer here for more](../managing-namespace.md){:target="_blank"}).
 
 1. Enable the **secure variable** by switching to the **Enabled** state (**Disabled** is the default setting).  
 <img src="../images/env-and-content-variables-img4.png" alt="Enable Secure variable" title="Enable Secure variable" style="border: 1px solid gray;zoom:50%;"/>

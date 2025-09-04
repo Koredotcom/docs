@@ -80,6 +80,16 @@ To connect the Web SDK with a Click-to-Call flow:
 2. Add the Flow ID and any required headers to the Web SDK configuration—for example, user ID, session ID, page name, page URL, etc.  
 3. Deploy SDK updates using npm, script tag, or source modification.
 
+#### Web SDK Implementation Methods
+
+* NPM Package users can install the updated package using standard npm update procedures. [Learn more](https://github.com/Koredotcom/web-kore-sdk/tree/v3/dev?tab=readme-ov-file#-getting-started).  
+* Script Tag Users can change the version number in the script tag reference. [Learn more](https://github.com/Koredotcom/web-kore-sdk/tree/v3/dev?tab=readme-ov-file#other-options).  
+* Source Code modifiers can manually copy the changes to their modified version.  
+
+!!! Note
+
+    Any modifications made to the SDK source code are performed at your own risk. Custom modifications may not receive full support in future SDK updates.
+
 #### How It Works
 
 1. A Click-to-Call button appears in the chat widget.  

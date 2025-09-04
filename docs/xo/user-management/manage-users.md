@@ -59,7 +59,7 @@ In the General Settings section, You can enable the **Allow agent permissions** 
 
 !!! Note
 
-    The customId field supports all special characters except spaces, with a maximum limit of 64 characters.
+    The customId field supports all special characters except spaces and backslashes, with a maximum limit of 64 characters.
 
 ### Chat & Voice
 

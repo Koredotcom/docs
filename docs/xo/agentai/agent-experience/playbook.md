@@ -1,4 +1,4 @@
-# AgentAssist Playbook (Beta)
+# AgentAssist Playbook
 
 Contact center agents are expected to provide the best customer experience despite high call volumes and complex interactions. To empower agents in this endeavor, AgentAssist introduces the Playbook feature—a standard tool offering structured guidance for handling customer interactions.
 

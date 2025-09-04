@@ -191,7 +191,7 @@ Supervisors can monitor agent performance based on the selected evaluation form 
 * **Distribution**: This view displays the distribution of both Kore evaluation scores and agents scorecard scores over the last 7 days, 30 days and 90 days.    
 <img src="../dashboard/images/performance-monitor-evaluation-form-distribution.png" alt="Performance Monitor Evaluation Form Distribution" title="Performance Monitor Evaluation Form Distribution" style="border: 1px solid gray; zoom:60%;">
 
-#### Agent Scorecard
+### Agent Scorecard
 
 * **Trends**: This view displays the performance monitor for agent scorecards.  
 <img src="../dashboard/images/performance-monitor-agent-scorecard-trends.png" alt="Performance Monitor Agent Scorecard Trends" title="Performance Monitor Agent Scorecard Trends" style="border: 1px solid gray; zoom:60%;">
