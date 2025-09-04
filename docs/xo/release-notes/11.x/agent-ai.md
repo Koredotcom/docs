@@ -389,7 +389,7 @@ This update has introduced a service node and a new tag-based approach to genera
 
 **Search AI Timeout Configuration and Runtime Error**
 
-The Search tab in the Agent AI widget now displays a timeout error message for searches exceeding 10 seconds. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#timeout-and-server-errors)
+The Search tab in the Agent AI widget now displays a timeout error message for searches exceeding 10 seconds. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#timeout-server-errors-and-no-search-results)
 
 **API Call Notification for Dialog Tasks**
 
