@@ -1,6 +1,30 @@
 # API Node - Automate API Calls
 
-API nodes let you connect to external systems and retrieve data by making SOAP or REST API calls. You can configure the APIs and pass the necessary parameters to fetch the required information.
+The API Node enables you to seamlessly connect your tool to external systems and fetch real-time data by making REST or SOAP API calls. Whether you're enriching customer records, retrieving transaction status, or pushing updates, the API node helps you integrate third-party services directly into your workflow logic. With support for both synchronous and asynchronous operations, the node offers flexibility for a wide range of automation needs.
+
+## Key Capabilities
+
+* **Connect to External Systems**: Use REST or SOAP protocols to integrate with services like CRMs, ERPs, payment gateways, or third-party platforms.
+* **Synchronous & Asynchronous Modes**: Wait for a response before proceeding, or run the API call in the background and continue the workflow.
+* **Flexible Authorization Options**: Use pre-authorized tokens or request user-level authorization during execution.
+* **Support for Headers & Payloads**: Add custom headers and body formats (JSON, XML, Form URL Encoded, or raw custom data).
+* **Request & Response Testing**: Preview API responses before finalizing the setup.
+* **Dynamic Timeouts**: Configure how long the node should wait for a response.
+
+## Common Use Cases
+
+* **Data Enrichment**: Fetch user, order, or product details from an external system.
+* **Document Retrieval**: Pull attachments or metadata from a third-party storage service.
+* **Webhook Integration**: Trigger a downstream system based on workflow decisions.
+* **Approval Checks**: Perform identity verification, fraud checks, or compliance validation via external APIs.
+* **Notifications or Updates**: Send alerts or update external dashboards from within the workflow.
+
+## How It Works
+
+The API Node enables seamless integration with external services by sending and processing API requests. It allows you to configure the request method, endpoint, authentication, headers, and payload, then routes the workflow based on the response (success or failure). You can test and validate the API call directly within the flow to ensure proper functionality.
+
+ <img src="../images/api_node_how_it_works.jpg" alt="API node" title="API node" style="border: 1px solid gray; zoom:75%;">
+
 
 ## Add and Configure an API Node
 

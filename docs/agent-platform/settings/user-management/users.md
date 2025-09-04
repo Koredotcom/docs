@@ -42,11 +42,7 @@ The **Settings** Console provides two ways to add a new user to the system:
 
 ### Invite (Email Invitation)
 
-Click [here](../user-management/users.md#invite-and-manage-account-users){:target="_blank"} to see the step-by-step instructions on how to add a user via email invitation.
-
-### Resend Invite
-
-Invitations expire after 15 days. You can send a new email invitation to the user. [Learn more](../../getting-started/sign-up-sign-in.md# /#resend-email-invitation){:target="_blank"}.
+See the topic **Invite a User to your account** for step-by-step instructions on how to add a user via email invitation.
 
 ### Import (Bulk Import)
 
@@ -115,7 +111,7 @@ Click **OK** to see the imported users on the dashboard.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The imported users are assigned the <b>Viewer</b> system role by default, which you can change. <a href="https://docs.kore.ai/agent-platform/settings/user-management/role-management/#system-defined-roles" target="_blank">Learn more</a>.</p>
+<p>The imported users are assigned the <b>Viewer</b> system role by default, which you can change. <a href="../user-management/role-management.md/#system-defined-roles" target="_blank">Learn more</a>.</p> 
 </div>
 
 <img src="../images/imported-entries.png" alt="imported entries" title="imported entries" style="border: 1px solid gray; zoom:75%;">

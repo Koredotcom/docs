@@ -104,7 +104,7 @@ To add and configure the node, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Before proceeding, you must add an external LLM to your account using either <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API integration</a>.</p>
+<p>Before proceeding, you must add an external LLM to your account using either <a href="../../../../models/external-models/add-an-external-model-using-easy-integration.md" target="_blank">Easy Integration</a> or <a href="../../../../models/external-models/add-an-external-model-using-api-integration.md" target="_blank">Custom API integration</a>.</p>
 </div>
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
@@ -131,7 +131,7 @@ To add and configure the node, follow the steps below:
 
     <div class="admonition note">
     <p class="admonition-title">Important</p>
-    <p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/#step-1-optional-add-input-variables" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
+    <p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="../types-of-nodes/text-to-image-node.md/#step-1-optional-add-input-variables" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="../types-of-nodes/text-to-image-node.md/#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
 
     * **Aspect Ratio**: Define the dimensions of the image in pixels for width and height.
     * **Steps**: Add the number of times the model will go back to the image and add more details/enhancements to get it as close to the prompt as possible. 25-30 steps are recommended for any image generation. Increasing the steps might add unwanted elements or model hallucinations and increase the time of generation.
@@ -157,7 +157,7 @@ For the configured inputs, the following image is generated.
 <img src="../images/node-output-image.png" alt="output image" title="output image" style="border: 1px solid gray; zoom:75%;">
 </ul>
 
-<ol start="8"><li>Finally, <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol> 
+<ol start="8"><li>Finally, <a href="../types-of-nodes/text-to-image-node.md/#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol> 
 
 ## Configure and Test the Flow for the Node
 
@@ -165,7 +165,7 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 
 <div class="admonition note">
 <p class="admonition-title">Dynamic Prompt Inputs</p>
-<p>Before you <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">run the flow</a>, provide clear instructions for the model to follow using the <b>input variable(s)</b> you add in the following step with the help of <b>context variables</b>. Context variables add dynamic values to the prompt instructions that the model will follow. The recommended syntax is: <code>{{context.variable_name}}</code>. For example, you can store the generated image URL in a variable named “<i>Imaggenerated</i>” and pass it on in the prompt when you mention <q><i>Generate an image based on the below description</i>: <code>{{context.steps.Start.Imaggenerated}}</code></q>, as shown in the image below.</p></div>
+<p>Before you <a href="../types-of-nodes/text-to-image-node.md/#step-3-run-the-flow" target="_blank">run the flow</a>, provide clear instructions for the model to follow using the <b>input variable(s)</b> you add in the following step with the help of <b>context variables</b>. Context variables add dynamic values to the prompt instructions that the model will follow. The recommended syntax is: <code>{{context.variable_name}}</code>. For example, you can store the generated image URL in a variable named “<i>Imaggenerated</i>” and pass it on in the prompt when you mention <q><i>Generate an image based on the below description</i>: <code>{{context.steps.Start.Imaggenerated}}</code></q>, as shown in the image below.</p></div>
 
 <img src="../images/dynamic-prompt-input.png" alt="dynamic prompt input" title="dynamic prompt input" style="border: 1px solid gray; zoom:75%;"> 
 
@@ -176,7 +176,7 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 <img src="../images/add-input-variable-text-to-image.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="2"><li>Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable window</b> to define a text input variable.</li>
-<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
+<li>Click <b>Save</b>. <a href="../types-of-nodes/text-to-text-node.md/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
 <img src="../images/select-text-for-input.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node.
@@ -190,7 +190,7 @@ Add all the required input variables to run the flow in the **Input** section of
 <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the image URL.</li>
-<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
+<li>Click <b>Save</b>. <a href="../types-of-nodes/text-to-text-node.md/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
 <img src="../images/output-var.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ### Step 3: Run the Flow
