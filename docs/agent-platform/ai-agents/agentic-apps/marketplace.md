@@ -33,7 +33,7 @@ Extend your current apps:
 
 ### Installing a Complete App
 
-1. Access the Marketplace on the [Agentic Apps](https://agent-platform.kore.ai/apps) page or navigate directly to the [Marketplace](https://kore.ai/marketplace/).
+1. Access the Marketplace on the [Agentic Apps](https://agent-platform.kore.ai/apps) page or go to the [Marketplace](https://kore.ai/marketplace/).
 
     <img src="../images/marketplace.png" alt="Access the Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:80%;">
 
@@ -51,7 +51,7 @@ Extend your current apps:
 
 ### Enhancing an Existing App
 
-1. Navigate to [Agentic Apps](https://agent-platform.kore.ai/apps), choose an existing app and click **Explore Marketplace**.
+1. Go to [Agentic Apps](https://agent-platform.kore.ai/apps), choose an existing app and click **Explore Marketplace**.
 
     <img src="../images/add-agent.png" alt="Add agent" title="Add agent" style="border: 1px solid gray; zoom:80%;">
 
