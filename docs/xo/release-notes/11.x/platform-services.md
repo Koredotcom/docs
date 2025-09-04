@@ -920,7 +920,7 @@ Backward compatibility:
 
 * Existing SDK configurations remain intact until the override option is enabled in the UI.
 
-[Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#virtual-assistant-theme--design)
+[Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#ai-agent-theme--design)
 
 <font size="4">App Settings</font>
 
