@@ -47,7 +47,7 @@ Extend your current apps:
 
 4. **Setup is completed**:
     * The app, agents, and tools are created in your workspace.
-    * (Optional) Connect to Search AI for knowledge base integration. [Learn more about Knowledge Tool Integration](https://docs.kore.ai/agent-platform/ai-agents/knowledge/overview/).
+    * (Optional) Connect to Search AI for knowledge base integration. [Learn more about Knowledge Tool Integration](../knowledge/overview.md).
 
 ### Enhancing an Existing App
 
@@ -73,7 +73,7 @@ Before launching, ensure your configuration is validated:
 * Confirm tool integrations
 * Simulate real-world scenarios
 
-See [Simulate and Test the App](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/app-testing/).
+See [Simulate and Test the App](app-testing.md).
 
 ### Deploy to Production
 
