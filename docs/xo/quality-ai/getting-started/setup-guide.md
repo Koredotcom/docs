@@ -24,7 +24,7 @@ Follow these steps:
 
     a. Use By Question, Question Answer Pair, and Adherence Types (Static/Dynamic). [Learn more](../configure/evaluation-metrics.md/){:target=”_blank”}.
     
-    b. Set Count Type (Entire Conversation/Time Bound). [Learn more](../configure/evaluation-metrics.md#add-new-evaluation-metrics/){:target=”_blank”}.
+    b. Set Count Type (Entire Conversation/Time Bound). [Learn more](../configure/evaluation-metrics.md#create-new-evaluation-metrics/){:target=”_blank”}.
     
 5. **Create Evaluation Forms**
 
