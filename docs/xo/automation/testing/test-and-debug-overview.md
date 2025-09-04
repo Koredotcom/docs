@@ -1,6 +1,6 @@
 # Test and Debug Overview
 
-Once you have built and trained your assistant, it is recommended that you conduct testing, to make sure everything works as expected. Even though it takes additional effort and resources, testing ensures that you are finding and fixing problems before they reach your users. 
+Once you have built and trained your app, it is recommended that you conduct testing, to make sure everything works as expected. Even though it takes additional effort and resources, testing ensures that you are finding and fixing problems before they reach your users. 
 
 The Platform provides an extensive suite of features that you can use to conduct rigorous testing of your AI Agent, as follows:
 

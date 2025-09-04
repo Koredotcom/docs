@@ -1,13 +1,6 @@
 # Evaluation Metrics
 
-This feature is a key component of the Quality AI module. It enabling supervisors to define, customize, and monitor performance indicators that measure the quality of agent-customer interactions. This supports multiple measurement types, each designed for specific evaluation needs through a combination of advanced AI-driven analysis and traditional rule-based methods. 
-
-Within Evaluation Forms, you can create and manage custom evaluation criteria using these different measurement types. The GenAI-powered adherence metric simplifies setup by reducing the need for large training datasets. This improves scalability while ensuring consistent quality and compliance across multiple languages and diverse agent interactions.
-
-## Access Evaluation Metrics
-
-Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.    
-<img src="../evaluation-criteria/metrics-measurement-types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+Evaluation Metrics is a key component of the Quality AI module that enables supervisors to define, customize, and monitor performance indicators for measuring the quality of agent-customer interactions. The system supports six measurement types, each designed for specific evaluation needs through advanced AI-driven analysis and traditional rule-based methods.
 
 ## Key Benefits
 
@@ -23,21 +16,26 @@ Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality
 
 * **Flexible Configuration**: Static and dynamic evaluation options for various use cases.
 
-## Evaluation Metrics Interface Elements
+## Access Evaluation Metrics
+
+Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.    
+<img src="../evaluation-criteria/metrics-measurement-types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+
+## Interface Elements
 
 The Interface displays the following elements:
 
-* **Name**: Shows the name of the Evaluation Metrics.
+* **Name**: Shows the evaluation metrics name.
 
-* **Metric Type**: Indicates the type of measurement used.
+* **Metric Type**: Indicates the measurement type used.
 
-* **Evaluation Forms**: Shows all associated evaluation forms, which are used for configuring and assigning the evaluation metrics to different channels and queues.
+* **Evaluation Forms**: Shows all associated evaluation forms for configuration and assignment.
 
-* **Ellipsis Icon**: Provides an option to edit and delete the metrics. 
+* **Ellipsis Icon**: Provides edit and delete an options. 
 
-* **Search**: Provides a quick search to view and modify the required metrics.	
+* **Search**: Quick search to view and modify metrics.	
 
-* **New Evaluation Metrics**: Enables configuration of new metrics. 
+* **New Evaluation Metrics**: Button to configure new metrics. 
 
 ## Create New Evaluation Metrics
 
@@ -49,7 +47,7 @@ Steps to create new evaluation metrics:
 2. Click the **+ New Evaluation Metric** displayed in the upper-right corner.    
 <img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
-3. Configure any one of the measurement type metrics.    
+3. Configure your chosen measurement type metrics.    
 <img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
 ">
 
@@ -65,15 +63,22 @@ Steps to create new evaluation metrics:
 
 ### Detection Methods Comparison
 
+| Feature    | GenAI-Based     | Deterministic                       |
+|----------------------------------|---------------------------------------------------|--------------------------------------------------|
+| **Mechanism** | LLM contextual understanding | Description‑based Semantic similarity matching               |
+| **Training** | Zero-shot prompts | Sample utterance training              |
+| **Flexibility** | High contextual adaptation | Precise pattern recognition               |
+| **Setup** | Description-based configuration | Utterance-based training              |
+
 ## Metrics Measurement Types
 
-The following six measurement types are:
+The following measurement types are:
 
-1. **By Question - Conversation Content Evaluation**
+1. **By Question**
 
-    **Purpose**: Evaluate adherence to specific questions asked or answered during interactions.
+    Evaluates adherence to specific questions asked or answered during interactions.
 
-    **Key Capabilities**:
+    **Key Features**:
 
     * **Static Adherence**: Universal application across all conversations.
 
@@ -85,39 +90,45 @@ The following six measurement types are:
 
     * **Flexible Thresholds**: 60% for greetings, 100% for compliance-critical statements.
 
-    * **GenAI Adherence**: Leverage GenAI for flexible language interpretation.
-
-    **Used For**: Script adherence, greeting compliance, policy verification, and response quality assessment.
-
+    **Use Cases**: 
+    
+    * **Script adherence**
+    
+    * **Greeting compliance**
+    
+    * **Policy verification**
+    
+    * **Response quality assessment**
+    
     For the detailed configuration, see [By Question](../configure/evaluation-criteria/metrics-measurement-types/by-question.md).
 
-1. **By Speech - Audio Quality Analysis**
+1. **By Speech**
 
-    **Purpose**: Analyze speech characteristics and audio quality metrics during voice interactions.
+    Analyzes speech characteristics and audio quality metrics during voice interactions.
 
-    **Available Metrics**:
+    **Key Features**:
 
-    * **Cross Talk**: Monitors simultaneous speaking instances.
+    * **Cross Talk**: Monitors simultaneous speaking instances with customizable thresholds and duration limits.
 
-        * Fully customizable thresholds and duration limits.
+    * **Dead Air**: Tracks unproductive silence periods with configurable thresholds (30-300 seconds). 
 
-    * **Dead Air**: Track and reduce unproductive silence periods during calls.
+    * **Speaking Rate**: Monitors speech pace trends to flag coaching opportunities, measuring words per minute (WPM).
 
-        * Configurable thresholds (30-300 seconds).
+    **Use Cases**: 
+    
+    * **Voice interaction quality**
 
-    * **Speaking Rate**: Monitor trends in speech pace to flag potential coaching opportunities.
+    * **Conversation flow analysis**
 
-        * Measures words per minute (WPM) against expected benchmarks.
+    * **Speaking pace optimization**
+        
+    For the detailed configuration, see [By Speech](../configure/evaluation-criteria/metrics-measurement-types/by-speech.md).
 
-        **Used For**: Voice interaction quality, conversation flow analysis, and speaking pace optimization.
+1. **By Value**
 
-    For the detailed configuration, see [By Speech](../configure/evaluation-criteria/metrics-measurement-types/by-speech.txt).
+    Verifies agent-shared customer-specific information against trusted data sources.
 
-1. **By Value - Data Accuracy Verification**
-
-    **Purpose**: Verify agent-shared customer-specific information against trusted data sources.
-
-    **Core Features**:
+    **Key Features**:
 
     * **API Integration**: Real-time verification with CRM and external systems.
 
@@ -127,27 +138,23 @@ The following six measurement types are:
 
     * **Audit Trails**: Detailed documentation for supervisory review.
 
-    **Business Rule Options**:
+    **Use Cases**: 
+    
+    * **Pricing accuracy**
 
-    * First Value Mentioned by Agent
+    * **Interest rate verification**
 
-    * Last Value Mentioned by Agent
+    * **Account balance confirmation**
 
-    * Negotiated Value Mentioned by Agent
-
-    * Strict Source System Value
-
-    * Custom Business Rule
-
-    **Used For**: Pricing accuracy, interest rate verification, account balance confirmation, and compliance validation.
+    * **compliance validation**
 
     For the detailed configuration, see [By Value](../configure/evaluation-criteria/metrics-measurement-types/by-value.md).
 
-1. **By Dialog Task - Task Completion Assessment**
+1. **By Dialog Task**
 
-    **Purpose**: Evaluate completion and quality of specific dialog tasks and workflows.
+    Evaluates completion and quality of specific dialog tasks and workflows.
 
-    **Configuration Options**:
+    **Key Features**:
 
     * **Dialog Agent Selection**: Choose from available dialog agents.
 
@@ -155,15 +162,21 @@ The following six measurement types are:
 
     * **Time Parameters**: Configurable seconds (voice) or messages (chat).
 
-    **Used For**: Workflow adherence, task completion verification, and dialog flow optimization.
+    **Use Cases**: 
+    
+    * **Workflow adherence**
 
-    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-execution.txt).
+    * **Task completion verification**
 
-1. **By Playbook Adherence - Process Compliance Evaluation**
+    * **Dialog flow optimization**
 
-    **Purpose**: Assess compliance with predefined agent playbooks and procedures.
+    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md).
 
-    **Adherence Types**:
+1. **By Playbook Adherence**
+
+    Assesses compliance with predefined agent playbooks and procedures.
+
+    **Key Features**:
 
     * **Entire Playbook**: Comprehensive adherence across all playbook elements.
 
@@ -171,25 +184,21 @@ The following six measurement types are:
 
     * **Percentage Thresholds**: Configurable minimum adherence requirements.
 
-    **Configuration Elements**:
+    **Use Cases**:
 
-    * Playbook selection from the dropdown
+    * **Process compliance**
 
-    * Stage and step specification
+    * **Procedure adherence**
 
-    * Adherence percentage thresholds
-
-    * Failure criteria definition
-
-    **Used For**: Process compliance, procedure adherence, and standardization enforcement.
-
+    * **Standardization enforcement**
+    
     For the detailed configuration, see [By Playbook Adherence](../configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md).
 
-1. **By AI Agent - Advanced Reasoning Evaluation**
+1. **By AI Agent**
 
-    **Purpose**: Enables sophisticated evaluations using AI agents capable of multi-step reasoning and autonomous decision-making.
+    Enables sophisticated evaluations using AI agents capable of multi-step reasoning and autonomous decision-making.
 
-    **When to Use**:
+    **Key Features**:
 
     * **Complex Analysis**: Multi-step reasoning connecting conversation elements.
 
@@ -199,17 +208,13 @@ The following six measurement types are:
 
     * **Advanced Decision-Making**: Sophisticated judgment calls beyond pattern matching.
 
-    **Key Differentiators**:
-
-    * High complexity handling vs. basic pattern matching
-
-    * Autonomous decision-making with custom logic
-
-    * Comprehensive contextual analysis
-
-    * External AI agent integration is required
-
-    **Used For**: Complex compliance assessments, technical troubleshooting evaluation, and sophisticated quality analysis.
+    **Used Cases**: 
+    
+    * **Complex compliance assessments**
+    
+    * **Technical troubleshooting evaluation**
+    
+    * **Sophisticated quality analysis**
 
     For the detailed configuration, see [By AI Agent](../configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md).
 
@@ -241,16 +246,10 @@ The process of managing evaluation metrics includes the following sections:
 
 Steps to edit or delete existing evaluation metrics types:
 
-1. Right-click on any of the existing **Evaluation Metrics Type** cateogory, such as **By Question**, **By Value**.
+1. Right-click on any of the existing **Evaluation Metrics Type**.   
+<img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-2. Choose an option:
-
-    * Click **Edit** to modify the selected evaluation metric details.
-
-    * Click **Delete** to remove the selected evaluation metric.   
-    <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
-
-2. Click **Edit** to update any one of the selected **Edit Evaluation Metrics** measurement type fields.    
+2. Click **Edit** to to update measurement type fields or **Delete** to remove.   
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Update** to save the changes.
+3. Click **Update** to save changes.

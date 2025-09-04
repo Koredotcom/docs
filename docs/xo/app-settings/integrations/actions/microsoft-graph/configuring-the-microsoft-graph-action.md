@@ -90,7 +90,7 @@ Steps to authorize a Microsoft Graph action using developer credentials:
     * Click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/ms-graph-action-img4.png" alt="Create new authorization" title="Create new authorization" style="border: 1px solid gray;zoom:50%;"/>
 
-    * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2){:target="_blank"} article.  
+    * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2.md){:target="_blank"} article.  
     <img src="../images/ms-graph-action-img5.png" alt="Auth mechanism type" title="Auth mechanism type" style="border: 1px solid gray;zoom:50%;"/>
 
     * Enter the following authentication credentials for the OAuth v2 mechanism:
@@ -107,7 +107,7 @@ Steps to authorize a Microsoft Graph action using developer credentials:
         
         * **Refresh Token URL** – The refresh token URL of the Microsoft Azure Portal.  
 
-          To register an Azure App, read the [Adding the Microsoft Teams Channel](../../../../../channels/add-microsoft-teams-channel){:target="_blank"} article.
+          To register an Azure App, read the [Adding the Microsoft Teams Channel](../../../../channels/add-microsoft-teams-channel.md){:target="_blank"} article.
 
         <img src="../images/ms-graph-action-img6.png" alt="Auth credentials" title="Auth credentials" style="border: 1px solid gray;zoom:50%;"/>
 

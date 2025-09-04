@@ -41,4 +41,4 @@ The authentication message exchange during SSL handshake between platform and AP
 
 If successful, the server grants API access to the platform.
 
-This process is applicable for service nodes ([know more about service node](../node-types/working-with-the-service-node/){:target="_blank"}) in an app.
+This process is applicable for service nodes ([know more about service node](./node-types/working-with-the-service-node.md){:target="_blank"}) in an app.

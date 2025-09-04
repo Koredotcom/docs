@@ -138,13 +138,13 @@ To retrieve the Button ID, follow these steps:
         This option is available only when multiple agents are configured for your AI Agent.
 
 
-8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 
     <img src="../images/configuring-the-salesforce-agent-img13.png" alt="Map channels to use SF agent" title="Map channels to use SF agent" style="border: 1px solid gray;zoom:80%;"/>
 
 9. After mapping channels, click **Done**.
 10. Click **Save** to enable the Salesforce agent.
-11. Publish the VA. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
+11. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 #### Execution
@@ -168,7 +168,7 @@ To verify the data exchange between Kore.ai’s agent and Salesforce agent, foll
     <img src="../images/configuring-the-salesforce-agent-img15.png" alt="Open chat console" title="Open chat console" style="border: 1px solid gray;zoom:80%;"/>
 
 4. Open an AI Agent for which you have enabled the Salesforce agent.
-5. Create a new **Agent Transfer Node** task. For example, create a **Talk to Live Agent** task with the **LiveChats** node and configure it to use the Salesforce agent. For more information, see [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node/){:target="_blank"}.
+5. Create a new **Agent Transfer Node** task. For example, create a **Talk to Live Agent** task with the **LiveChats** node and configure it to use the Salesforce agent. For more information, see [Agent Transfer Node](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}.
 
     <img src="../images/configuring-the-salesforce-agent-img16.png" alt="New Agent Transfer Node task" title="New Agent Transfer Node task" style="border: 1px solid gray;zoom:80%;"/>
 
@@ -270,13 +270,13 @@ Under Company Information, locate the field Salesforce.com Organization ID.
         This option is available only when multiple agents are configured for your AI Agent.
 
 
-8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 
     <img src="../images/miaw-map.png" alt="Map channels to use SF agent" title="Map channels to use SF agent" style="border: 1px solid gray;zoom:80%;"/>
 
 9. After mapping channels, click **Done**.
 10. Click **Save** to enable the Salesforce agent.
-11. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot/){:target="_blank"}.
+11. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 

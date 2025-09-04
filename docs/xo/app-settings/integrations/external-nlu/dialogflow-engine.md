@@ -1,6 +1,6 @@
 # Dialogflow Engine
 
-The Dialogflow engine is responsible for understanding user inputs and providing relevant responses based on pre-defined intents and entities. It uses natural language processing (NLP) and machine learning algorithms to identify the user’s intent and extract relevant information from their inputs. It also enables developers to build complex conversational flows, manage context, and integrate with external APIs. To use the Dialogflow engine for Natural Language Understanding, you need to create the agent and train the model on Dialogflow if you don’t have one already. The following sections detail the agent creation and training steps and also explain how to obtain the information needed to configure the Dialogflow ES Adapter. Once all the configurations are done, you can start [testing the conversation behavior/flow](../test-and-debug/){:target="_blank"} of the AI Agent using your Dialogflow ES model.
+The Dialogflow engine is responsible for understanding user inputs and providing relevant responses based on pre-defined intents and entities. It uses natural language processing (NLP) and machine learning algorithms to identify the user’s intent and extract relevant information from their inputs. It also enables developers to build complex conversational flows, manage context, and integrate with external APIs. To use the Dialogflow engine for Natural Language Understanding, you need to create the agent and train the model on Dialogflow if you don’t have one already. The following sections detail the agent creation and training steps and also explain how to obtain the information needed to configure the Dialogflow ES Adapter. Once all the configurations are done, you can start [testing the conversation behavior/flow](test-and-debug.md){:target="_blank"} of the AI Agent using your Dialogflow ES model.
 
 
 ## Train the Dialogflow Engine
@@ -19,7 +19,7 @@ The following steps explain how to create an agent, intent and test the configur
 <img src="../images/external-nlu-dialogflow-engine-img1.png" alt="Create an agent" title="Create an agent" style="border: 1px solid gray;zoom:50%;"/>
 
 2. Click **Create Intent** to create an intent with the same name as in your AI Agent.  
-<img src="../images/external-nlu-dialogflow-engine-img2.png" alt="Create an intent with the same name as in your VA" title="Create an intent with the same name as in your VA" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/external-nlu-dialogflow-engine-img2.png" alt="Create an intent with the same name as in your App" title="Create an intent with the same name as in your App" style="border: 1px solid gray;zoom:50%;"/>
 
 3. In this example an intent with name Phone Number Verification is created as we have the same user intent in the AI Agent.
 4. Under **Action and Parameters**, add Action as per the name of the entity. Add the **Parameter** Name, **Entity, Value** and the **Prompt** details.  
@@ -149,4 +149,4 @@ The file has the layout as follows:
 
     Save this JSON payload securely. You will not be able to access it again. The entire content of this JSON file must be copied into the private key field inside the Kore.AI External NLU adapter settings. See Adapter Configuration to know more.
 
-To understand the testing and debugging of your AI Agent, to validate the working of the DialogFlow NLU, see [Test and Debug](../test-and-debug){:target="_blank"}.
+To understand the testing and debugging of your AI Agent, to validate the working of the DialogFlow NLU, see [Test and Debug](test-and-debug.md){:target="_blank"}.

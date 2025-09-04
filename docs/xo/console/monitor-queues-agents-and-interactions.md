@@ -13,6 +13,7 @@ The **Monitor** tab lets you monitor live conversations between agents and custo
         Your Monitor access is restricted to the Queues that you are assigned to.
 4. A pop-up message appears when the user clicks the **Monitor** tab if the Contact Center Permissions are disabled for them.  
     <img src="../images/monitor-tab-disabled-user.png" alt="Disabled User" title="Disabled User" style="border: 1px solid gray; zoom:80%;">
+
 ## Queues
 
 In this section, you can see all the queues to which you are assigned. The number of conversations waiting to be picked up, the number of already engaged conversations, and a summary of agents assigned to a particular queue along with their current status. In addition to the above details, the supervisor can see the average wait time, max wait time (an indicator of peak load handling capacity), and drop-off rate.
@@ -406,13 +407,16 @@ Steps to Listen and Whisper Voice Conversations:
 You can view all live interactions on the Contact Center AI console. This view includes only interactions that involve agent transfers.  Clicking the sort icon allows you to sort the columns in ascending/descending order. A summary of the interactions view is shown below:  
 <img src="../images/interaction-tab.png" alt="Interactions Tab" title="Interactions Tab" style="border: 1px solid gray; zoom:80%;">
 
+!!! Note
+
+    Agents are not listed in Agent Transfers when the Chat and Email channel slots are set to zero.
+
 ### Manually Assign Conversations to an Agent and Change Queue
 
 Supervisors can assign conversations to an agent, and change queues for conversations. Click an Ongoing conversation to view the Assign and Change Queue options.  
 <img src="../images/manually-assign-change-queue.png" alt="Manually Assign/Change Queue" title="Manually Assign/Change Queue" style="border: 1px solid gray; zoom:80%;">
 
-Supervisors can also view an agent’s engagement metrics.  
-<img src="../images/interaction-engagement-metrics.png" alt="Agent Engagement Metrics Dropdown" title="Agent Engagement Metrics Dropdown" style="border: 1px solid gray; zoom:70%;">
+Supervisors can also view an agent’s engagement metrics.
 
 ### Manually Assign a Bot-led Conversation to an Agent or Queue
 

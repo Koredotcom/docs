@@ -9,7 +9,7 @@ Nodes are a user-friendly approach to building conversations because they allow 
 
 Transitions add logic to the map created by the nodes and sequences. This way, the conversation can flow according to particular conditions, workflows, or processes.
 
-Sequences nodes and transitions work together, in context, to facilitate the creation of Virtual Assistants that can automate a wide variety of tasks without taking away from the user or customer experience.
+Sequences nodes and transitions work together, in context, to facilitate the creation of AI Agent that can automate a wide variety of tasks without taking away from the user or customer experience.
 
 
 ## Node Types
@@ -39,14 +39,14 @@ Form nodes allow you to integrate Digital Forms with Dialog Task by presenting a
 
 ### Confirmation Node
 
-Displays a query message from the bot to the user, and then waits for a user response. Conditions are defined to continue processing the dialog task flow based on the user input. For more information, refer to [Working with the Confirmation Node](working-with-the-confirmation-nodes.md){:target="_blank"}.
+Displays a query message from the app to the user, and then waits for a user response. Conditions are defined to continue processing the dialog task flow based on the user input. For more information, refer to [Working with the Confirmation Node](working-with-the-confirmation-nodes.md){:target="_blank"}.
 
 
 ### Message (or Bot Response) Node
 
-Displays a message from the bot to a user, such as, _Is there anything else I can help you with?_ For more information, refer to [Working with the Message Node](working-with-the-message-nodes.md){:target="_blank"}.
+Displays a message from the app to a user, such as, _Is there anything else I can help you with?_ For more information, refer to [Working with the Message Node](working-with-the-message-nodes.md){:target="_blank"}.
 
-While any dialog starts at the Intent Node, it is advisable to end it with a Message Node to give a sense of closure to the user as well as to the bot internally.
+While any dialog starts at the Intent Node, it is advisable to end it with a Message Node to give a sense of closure to the user as well as to the app internally.
 
 
 ### Service Node
@@ -76,7 +76,7 @@ Process nodes allow you to connect a Dialog Task to a Process App that you have 
 
 ### Agent Transfer Node
 
-This node type is used to transfer communication from the bot to a live agent. This is usually the last node for a dialog task. For more information, refer to [Working with the Agent Transfer Node](working-with-the-agent-transfer-node.md){:target="_blank"}.
+This node type is used to transfer communication from the app to a live agent. This is usually the last node for a dialog task. For more information, refer to [Working with the Agent Transfer Node](working-with-the-agent-transfer-node.md){:target="_blank"}.
 
 
 ## Component Transitions
@@ -102,15 +102,15 @@ Learn more about [setting up node connections](../node-connections/nodes-conditi
 
 ### Environment Variables
 
-Environment Variables are global, reusable components which can be used in multiple places to define the bot configuration. Every Environment Variable is a key-value pair. The Variable Keys can be used at various places in the bot configuration. The platform will resolve/replace the Variable Keys with Variables Values during the conversation. Some of the typical use cases where a developer can use environment variables are:
+Environment Variables are global, reusable components which can be used in multiple places to define the app configuration. Every Environment Variable is a key-value pair. The Variable Keys can be used at various places in the app configuration. The platform will resolve/replace the Variable Keys with Variables Values during the conversation. Some of the typical use cases where a developer can use environment variables are:
 
-* To manage the bot across environments having different endpoint URLs. The bot can be exported and imported based on the environment, and the infrastructure team will need to modify only the variable configuration file.
+* To manage the app across environments having different endpoint URLs. The app can be exported and imported based on the environment, and the infrastructure team will need to modify only the variable configuration file.
 * To manage **Conditions** in the **Dialog Node** Transitions. Both the left-hand side and the right-hand side of the transition condition use Environment Variables.  
   
     !!! Note
     
         You must enter dynamic variables without braces. For example, Environment variables as `env.value`, Content variables as `content.value`, and Context variable as `context.entities.entityname`. For more information, see the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions/#entity){:target="_blank"} article.
 
-* To define and manage the bot response that is repeated within the bot configuration as variables.
+* To define and manage the bot response that is repeated within the app configuration as variables.
 * Authorization Token
 * Channel-related tokens and URLs

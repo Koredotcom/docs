@@ -1,8 +1,8 @@
 # Data as Service
 
-Kore.ai’s Data offering lets you define Data Tables, Table Views, and manipulate them from your Virtual Assistant. You can also view the definition of the data table or table view assigned to the AI Agent and provide correct data mappings based on the data types for the table columns.
+Kore.ai’s Data offering lets you define Data Tables, Table Views, and manipulate them from your AI Agent. You can also view the definition of the data table or table view assigned to the AI Agent and provide correct data mappings based on the data types for the table columns.
 
-This section deals with the manipulation aspect using the [Service Node](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md){:target="_blank"} within a Dialog Task of your Virtual Assistant. For details on the data definition, [refer here](data-services.md){:target="_blank"}.
+This section deals with the manipulation aspect using the [Service Node](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md){:target="_blank"} within a Dialog Task of your AI Agent. For details on the data definition, [refer here](data-services.md){:target="_blank"}.
 
 
 ## Service Call – Table

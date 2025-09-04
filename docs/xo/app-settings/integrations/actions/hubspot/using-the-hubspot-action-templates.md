@@ -133,7 +133,7 @@ The following HubSpot actions are supported.
 
 Steps to create a new deal in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Create a Deal_ dialog task is added with the following components:  
 <img src="../images/hubspot-tem-img4.png" alt="Create a Deal dialog task added" title="Create a Deal dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -208,7 +208,7 @@ Steps to create a new deal in HubSpot:
 Steps to find a deal by Id in HubSpot:
 
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Get Deal by Id_ dialog task is added with the following components:  
 <img src="../images/hubspot-tem-img11.png" alt="Get Detal ID dialog task added" title="Get Deal ID dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -255,7 +255,7 @@ Steps to find a deal by Id in HubSpot:
 
 Steps to view all deals in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _List All Deals_ dialog task is added for HubSpot with the following components:  
 <img src="../images/hubspot-tem-img14.png" alt="List All Deals dialog task is added" title="List All Deals dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -398,7 +398,7 @@ Steps to view all deals in HubSpot:
 
 Steps to update an existing deal in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Update a Deal_ dialog task is added with the following components:  
 <img src="../images/hubspot-tem-img16.png" alt="Update a Deal dialog task is added" title="Update a Deal dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -468,7 +468,7 @@ Steps to update an existing deal in HubSpot:
 
 Steps to search a deal using keywords in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Search Deal by Keyword_ dialog task is added for the Hubspot with the following components:  
 <img src="../images/hubspot-tem-img21.png" alt="Search Deal by Keyword dialog task is added" title="Search Deal by Keyword dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -560,7 +560,7 @@ Steps to search a deal using keywords in HubSpot:
 
 Steps to delete a deal in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Delete Deal_ dialog task is added for HubSpot with the following components:  
 <img src="../images/hubspot-tem-img24.png" alt="Delete Deal dialog task is added" title="Delete Deal dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -586,7 +586,7 @@ Steps to delete a deal in HubSpot:
 
 Steps to create a contact in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Create a Deal_ dialog task is added with the following components:  
 <img src="../images/hubspot-tem-img27.png" alt="Create a Deal dialog task is added" title="Create a Deal dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -648,7 +648,7 @@ Steps to create a contact in HubSpot:
 
 Steps to find a contact by ID in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Get Contact by Id_ dialog task is added with the following components:
     1. **getContact by Id** - A user intent to get a contact by ID.
     2. **contactID** – Entity nodes for entering the contact ID.
@@ -688,7 +688,7 @@ Steps to find a contact by ID in HubSpot:
 
 Steps to view all contacts in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _List All Contacts_ dialog task is added for HubSpot with the following components:  
 <img src="../images/hubspot-tem-img32.png" alt="List All Contacts dialog task is added" title="List All Contacts dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -814,7 +814,7 @@ Steps to view all contacts in HubSpot:
 
 Steps to update an existing contact in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Update a Contact_ dialog task is added with the following components:  
 <img src="../images/hubspot-tem-img35.png" alt="Update a Contact dialog task is added" title="Update a Contact dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -864,7 +864,7 @@ Steps to update an existing contact in HubSpot:
 
 Steps to search a contact using keywords in HubSpot:
 
-1. Refer to the [Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Search Contact by Keyword_ dialog task is added for the Hubspot with the following components:
 <img src="../images/hubspot-tem-img38.png" alt="Search Contact by Keyword_ dialog task is added" title="Search Contact by Keywor dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -919,7 +919,7 @@ Steps to search a contact using keywords in HubSpot:
 
 Steps to delete a contact in HubSpot:
 
-1. Refer to the[ Install the HubSpot Action Templates](../configuring-the-hubspot-action/#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
+1. Refer to the[ Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Delete Contact_ dialog task is added for HubSpot with the following components:  
 <img src="../images/hubspot-tem-img40.png" alt="Delete Contact dialog task is added" title="Delete Contact dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 

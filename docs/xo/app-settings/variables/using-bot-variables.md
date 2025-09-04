@@ -22,7 +22,7 @@ Post the release of v8.1 of the platform, for <span style="text-decoration:under
 
 ### Restricting Sensitive Data with Environment Variables
 
-During the virtual assistant definition, developers may create **environment variables** for sensitive data like credentials/keys. These variables are useful for connecting to other systems using service nodes or as a part of authorization profiles. However, environment variables are visible to all the developers with shared access to the virtual assistant, especially when its definition is exported.
+During the AI Agent definition, developers may create **environment variables** for sensitive data like credentials/keys. These variables are useful for connecting to other systems using service nodes or as a part of authorization profiles. However, environment variables are visible to all the developers with shared access to the AI Agent, especially when its definition is exported.
 
 The latest Kore.ai XO Platform release introduces the **Secure Variable** feature for environment variables, which encrypts the added variable when enabled. This makes only the encrypted variable value visible to others and not the original value.
 
@@ -30,7 +30,7 @@ The latest Kore.ai XO Platform release introduces the **Secure Variable** featur
 
 
 * The **secure variable** is encrypted in the database and does not require any encryption key.
-* The original value is used only internally for all service calls, language translation, etc. while executing the virtual assistant definition.
+* The original value is used only internally for all service calls, language translation, etc. while executing the AI Agent definition.
 * During the export of a secure variable through **App** or **environment variables** import, it has an empty value, so the original value is not available in plain text.
 
 **Leveraging Encrypted Environment Variable Values for Additional Modules**
@@ -81,7 +81,7 @@ Enabling the **secure variable** setting after defining an Environment (App) Var
     * **Value**: Enter the environment variable value that is encrypted.
     * **Notes (optional)**: Any tip/note describing the environment variable.
     * **Group (optional)**: The name of the group to which the environment variable is mapped.
-    * Assign a **Namespace** if enabled ([refer here for more](../../managing-namespace){:target="_blank"}).
+    * Assign a **Namespace** if enabled ([refer here for more](../managing-namespace.md){:target="_blank"}).
 
 1. Enable the **secure variable** by switching to the **Enabled** state (**Disabled** is the default setting).  
 <img src="../images/env-and-content-variables-img4.png" alt="Enable Secure variable" title="Enable Secure variable" style="border: 1px solid gray;zoom:50%;"/>

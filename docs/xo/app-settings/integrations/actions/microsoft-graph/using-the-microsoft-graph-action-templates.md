@@ -4,13 +4,13 @@ You can use the **Prebuilt Action Templates** from your Microsoft Graph integrat
 
 Steps to create a dialog task using Microsoft Graph action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 3. On the Dialog Task pop-up, under the Integration, select the **Microsoft Graph** option to view the action templates.  
 <img src="../images/ms-graph-tem-img2.png" alt="Integration - Microsoft Graph" title="Integration - Microsoft Graph" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/ms-graph-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -76,7 +76,7 @@ The following Microsoft Graph actions are supported:
 
 Steps to view all events in the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"} section to install this template.
 2. The _List All Events_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img4.png" alt="List All Events dialog task is added" title="List All Events dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -295,7 +295,7 @@ Steps to view all events in the Microsoft Graph integration:
 
 Steps to view all to-do lists in the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates ](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
 2. The _List All Todo Lists_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img7.png" alt="List All Todo Lists dialog task is added" title="List All Todo Lists dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -383,7 +383,7 @@ Steps to view all to-do lists in the Microsoft Graph integration:
 
 Steps to create an event in the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates ](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templatess){:target="_blank"}section to install this template.
 2. The _Create an Event_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img10.png" alt="Create an Event dialog task is added" title="Create an Event dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -516,7 +516,7 @@ Steps to create an event in the Microsoft Graph integration:
 
 Steps to create a to-do list in the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates ](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
 2. The _create a todo list_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img13.png" alt="Create a Todo list dialog task is added" title="Create a Todo List dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -564,7 +564,7 @@ Steps to create a to-do list in the Microsoft Graph integration:
 
 Steps to send email from the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates ](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
 2. The _Send email_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img16.png" alt="Send EMail dialog task is added" title="Send EMail dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 

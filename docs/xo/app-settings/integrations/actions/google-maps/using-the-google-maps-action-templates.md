@@ -12,7 +12,7 @@ Steps to create a dialog task using the Google Maps action templates:
 4. Select any of the dialog task templates and click **Proceed**. For example, select the **Get locations by coordinates** item.  
 <img src="../images/google-maps-action-img11-tem-img2.png" alt="Select dialog and proceed" title="Select dialog and proceed" style="border: 1px solid gray;zoom:50%;"/>
 
-5. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+5. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/google-maps-tem-img3.png" alt="Explore intefrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -54,7 +54,7 @@ The following Google Maps actions are supported:
 
 Steps to find places by name in Google Maps:
 
-1. Refer to the [Installing the Google Maps Action Templates](../configuring-the-google-maps-action/#step-2-install-the-google-maps-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Google Maps Action Templates](configuring-the-google-maps-action.md#step-2-install-the-google-maps-action-templates){:target="_blank"} section to install this template.
 2. The **Get Places** dialog task is added with the following components:  
 <img src="../images/google-maps-action-img12-tem-img4.png" alt="Get Places task added" title="Get Places task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -113,7 +113,7 @@ Steps to find places by name in Google Maps:
 
 Steps to find locations using the Google Maps coordinates:
 
-1. Refer to the [Installing the Google Maps Action Templates](../configuring-the-google-maps-action/#step-2-install-the-google-maps-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Google Maps Action Templates](configuring-the-google-maps-action.md#step-2-install-the-google-maps-action-templates){:target="_blank"} section to install this template.
 2. The **Get Locations by Coordinates** dialog task is added with the following components:  
 <img src="../images/google-maps-tem-img8.png" alt="Get Locations by Coordinates dialog task is added" title="Get Locations by Coordinates dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 

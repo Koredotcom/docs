@@ -43,16 +43,16 @@ The Unblu AI Agent can be directly created from the Kore.ai XO Platform.
 
 After the channel is enabled and all configurations are verified, you can optionally publish
 
-the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your App](../../../../deploy/publishing-bot/){:target="_blank"}.
+the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../../../channels/adding-channels-to-your-bot.md){:target="_blank"}
 
 
 ## Additional Instructions
 
 For the seamless exchange of information from Unblu to Kore.ai, a few additional steps need to be performed.
 
-For a detailed document on the implementation, [refer here](../kore-unblu-integration){:target="_blank"}.
+For a detailed document on the implementation, [refer here](kore-unblu-integration.md){:target="_blank"}.
 
 * The _host URL_ where the Unblu SDK would be hosted needs to be added to the **Domain** section of your Unblu Account.
 * From your Unblu Account, **API Keys** section, make a note of the _API Key_.

@@ -1,4 +1,4 @@
-# MS Teams Connector
+# Microsoft Teams Connector
 
 Microsoft Teams (MS Teams) is a collaboration and communication platform typically used in remote and hybrid work environments to streamline communication. 
 
@@ -47,16 +47,16 @@ Search AI interacts with MS Teams through its APIs. Registering Search AI as an 
 
 ### Register an application
 
-* Sign in to the [Microsoft Entra Admin Center](https://entra.microsoft.com/).
-* Navigate to **App registrations** and click on **New Registration**.
-* Provide a **Name** and choose an appropriate **Supported account type**.
-* Enter the **Redirect URI** as one of the following, depending on your region and deployment. 
+1. Sign in to the [Microsoft Entra Admin Center](https://entra.microsoft.com/){:target="_blank"}.
+1. Navigate to **App registrations** and click **New Registration**.
+1. Enter a **Name** and choose an appropriate **Supported account type**.
+1. Enter the **Redirect URI** as one of the following, depending on your region and deployment. 
     * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
     * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
     * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
-* Click **Register** to create the app. This will generate a client ID. 
-* Go to **Certificates & secrets** and click on **New Client Secret**. 
-* Copy the client ID, client secret, and tenant ID. These parameters will be used to configure the connector in Search AI. 
+1. Click **Register** to create the app. A client ID is generated. 
+1. Go to **Certificates & secrets** and click **New Client Secret**. 
+1. Copy the client ID, client secret, and tenant ID. Use these parameters to configure the connector in Search AI. 
 
 
 ## Configuring MS Teams Connector in Search AI
@@ -86,7 +86,7 @@ Go to the **Connectors** home page in Search AI. Click on **Add Connector** and 
 
 ## Content Ingestion
 
-After successfully connecting the Search AI connector to the MS Teams app, go to the **Configuration **tab and set up content synchronization. For immediate sync, use the **Sync Now** option and the **Schedule Sync** option to set up a scheduler to sync the content in the future. 
+After successfully connecting the Search AI connector to the MS Teams app, go to the **Configuration** tab and set up content synchronization. For immediate sync, use the **Sync Now** option and the **Schedule Sync** option to set up a scheduler to sync the content in the future. 
 
 Upon sync, Search AI ingests **conversations from the MS Teams channels for the past 30 days**. 
 
@@ -115,6 +115,8 @@ To view the ingested content, go to the **Content** tab.
 
 ## RACL Support
 
-* **Public Channels**: All members of the team can see and access public channels. Hence, the sys_racl field contains the team ID for chat messages ingested from public channels. The team ID is here used as a permission entity. 
-* **Private Channels**: These are restricted spaces within a team that are only accessible to specific members. For content ingested from private channels, the `sys_racl` field contains the channel ID. This allows restricting access to the content to limited members.
-* **Shared Channels:** For content ingested from shared channels, the `sys_racl` field contains the team ID. 
+SearchAI automatically resolves permission entities for chat messages ingested from different channel types, using the appropriate identifier—team ID or channel ID—based on the channel’s access model. This ensures that access control aligns with each channel’s visibility settings, without requiring manual mapping.
+
+* **Public Channels**: All team members can access public channels. The `sys_racl` field stores the team ID to reflect open access. 
+* **Private Channels**: Restricted to specific members, private channels use the channel ID in `sys_racl` to enforce limited visibility.
+* **Shared Channels:** Designed for cross-team collaboration, shared channels also use the team ID to manage access.

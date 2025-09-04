@@ -45,8 +45,6 @@ Search AI establishes communication and fetches relevant content from Zulip thro
 
 ## Generate API Key in Zulip
 
-
-
 1. Click on your **profile picture** (top right corner).
 2. Go to Personal Settings.
 3. Go to the API Key section on the Account and Privacy page and generate your API Key. 
@@ -55,8 +53,6 @@ Search AI establishes communication and fetches relevant content from Zulip thro
 ## Configure the Zulip Connector in Search AI
 
 Go to the Connectors home page in Search AI. Select Zulip Connector. Provide the following details in the **Authorization** tab and click **Connect** to set up the connection. 
-
-
 
 * Name: Unique name for the connector. 
 * API Key: API Key generated above. 
@@ -73,8 +69,20 @@ Depending upon the size of a message, up to three messages can be concatenated i
 
 ## RACL Support
 
-The access control is implemented in Zulip at the Channel Level. Streams can be **Public**, **Private**, or **Web-public**, defining who can access them:
+SearchAI supports access control for content ingested from Zulip accounts at the channel level. Access is determined by the type of stream.
 
-* **Public Channels**: Anyone in the organization can join and view messages. The sys_racl field is set to the organization name. 
-* **Private Channels**: Only invited members can access and participate. The sys_racl field is set to channelId in this case. 
-* **Web-public Channels**: Accessible to anyone with the link, even without logging in. The sys_racl field is set to * in this case. 
+### Access Control for Zulip Streams
+
+In Zulip, each message is linked to a specific stream, which can be **public**, **private**, or **web-public**.
+
+When this content is ingested into SearchAI, the corresponding stream identifier is stored in the `sys_racl` field of the chunks related to the ingested content. These identifiers act as permission entities that control access:
+
+* **Public Channels**: The `sys_racl` field is set to the organization name.
+
+* **Private Channels**: The `sys_racl` field is set to the channel ID.
+
+* **Web-public Channels**: The `sys_racl` field is set to *.
+
+SearchAI supports automatic resolution of permission entities for Zulip streams. It automatically identifies users who have access to the given stream and associates them with the corresponding permission entity in SearchAI.
+
+Manual permission entity mapping through APIs is not required.

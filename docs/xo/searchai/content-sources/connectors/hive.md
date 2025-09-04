@@ -48,31 +48,30 @@
 
 Search AI interacts with Hive via APIs. To authorize the Search AI API requests, generate an API key in the Hive application. To create an API Key, follow the steps listed below.
 
-* Go to Edit profile on the Hive application. 
-* Go to API Info and copy the API Key and workspace ID. 
+1. Go to Edit profile on the Hive application. 
+1. Go to API Info and copy the API Key and workspace ID. 
 
 
 ## Configure Hive Connector in Search AI
 
-On the **Auth** page of the connector, provide the following details and click **Connect**.
+On the **Auth** page of the connector, enter the following details and click **Connect**.
 
-* **Name**- Unique name of the connector
-* **API Key** - The API Key generated in Hive. 
-* **Workspace ID**- Workspace ID for which actions are to be ingested. 
+1. **Name**- Unique name of the connector
+1. **API Key** - The API Key generated in Hive. 
+1. **Workspace ID**- Workspace ID for which actions are to be ingested. 
 
 
 ## Content Ingestion
 
-Currently, Search AI supports the ingestion of Actions from designated projects within your Workspace. It also includes any sub-actions that may exist under the main Actions. 
+Search AI supports the ingestion of Actions from designated projects within your Workspace. It also includes any sub-actions that may exist under the main Actions. 
 
 To start content ingestion,
 
-* Navigate to the **Configuration** tab of the connector and select the **Sync Specific Content**. 
-* Click the **configure** link and select the projects from which actions are to be ingested. Note that currently, only the actions under a certain project are ingested, and actions from sub-projects under a project are not ingested. 
-* To ingest content from both a project and its sub-projects, select all relevant projects within the hierarchy.
-* Click **Save**. 
-
-Click **Sync Now** to start the ingestion process immediately. Alternatively, you can also schedule sync at regular intervals using the scheduler. 
+1. Navigate to the **Configuration** tab of the connector and select the **Sync Specific Content**. 
+1. Click **configure**, and then select the projects to ingest actions from. Currently, only actions within a project are ingested. Actions from subprojects are not ingested.
+1. To ingest content from both a project and its sub-projects, select all relevant projects within the hierarchy.
+1. Click **Save**. 
+1. Click **Sync Now** to start the ingestion process immediately. Alternatively, schedule sync at regular intervals using the scheduler.
 
 You can view the ingested content under the **Content** tab. 
 
@@ -81,16 +80,11 @@ Each Action and Sub Action in Hive is ingested as a separate individual document
 
 ## RACL Support
 
-Each Action is accessible to the following set of users:
+* SearchAI supports access control for content ingested from Hive.
+* In Hive, each action is associated with a project and can have specific roles assigned, such as creator, follower, or assignee. SearchAI adds all users in these roles to the sys_racl field for the ingested content.
+* SearchAI also supports automatic resolution of permission entities for Hive content. It identifies users who have access to the associated project and automatically associates them with the corresponding permission entities in SearchAI. Manual mapping through APIs is not required.
 
-* Creator of the action
-* Followers of the action
-* Assignees of the action
-
-Search AI adds all the users associated with an action as creator, follower or assignee to the sys_racl field in the ingested content. 
-
-Additionally, access rules for an action also depend on the project to which it belongs. Each project in Hive can be public or private. For each project, the sharingType further explains who can access the project and who cannot. Depending on the project type and the sharing type, the following are also added to the sys_racl field as permission entities. Use the Permission Entity APIs to associate users with the entity. 
-
+Permission entities are determined based on the project type and sharing type, as shown below:
 
 <table>
   <tr>
@@ -145,4 +139,4 @@ Additionally, access rules for an action also depend on the project to which it 
 
 
 !!!note
-    Currently, client mode is not supported via Search AI. 
+    Client mode is not supported via Search AI. 

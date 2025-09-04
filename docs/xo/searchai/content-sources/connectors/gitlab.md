@@ -46,9 +46,9 @@ Search AI interacts with the GitLab using APIs. It supports the following types 
 
 ## Prerequisites - Set up GitLab
 
-Login to the GitLab account. Depending on the type of authorization required, please perform one of the following actions.
+Sign in to the GitLab account. Depending on the type of authorization required, please perform one of the following actions.
 
-* Generate[ Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
+* Generate [Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
     * Go to the Profile on the top left side of the page. Click on Edit Profile. 
     * Go to the Access Tokens page from the left navigation menu. 
     * Click on Add new token. 
@@ -71,7 +71,7 @@ Login to the GitLab account. Depending on the type of authorization required, pl
 Create a new connector for GitLab in Search AI and provide the following configuration fields. 
 
 * Name - Provide a unique name for the connector.  
-* Authorization Type - Provide the API token generated above. If the Auth type is set to Private Token, provide the Personal Access Token here. If the auth type is set to OAuth 2.0, provide the client credentials and access tokens. 
+* Authorization Type - Provide the API token generated above. If the Auth type is set to Private Token, provide the Personal Access Token here. If the auth type is set to OAuth 2.0, enter the client credentials and access tokens. 
 
 There are some other optional fields that are used to map the GitLab content to the ingested content. Currently, Search AI supports only the default fields. Hence, it is not mandatory to provide the other fields. 
 

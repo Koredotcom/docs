@@ -1,24 +1,24 @@
 # Utterance Testing
 
-To make sure your assistant responds to user utterances with related tasks, it is important that you test it with a variety of user inputs. Evaluating a VA with a large sample of expected user inputs not only provides insights into its responses but also gives you a great opportunity to train it in interpreting diverse human expressions. 
+To make sure your app responds to user utterances with related tasks, it is important that you test it with a variety of user inputs. Evaluating a app with a large sample of expected user inputs not only provides insights into its responses but also gives you a great opportunity to train it in interpreting diverse human expressions. 
 
-You can perform all the training-related activities for a VA from the _Utterance Testing_ module. We will use a sample _Travel Planning_ assistant to provide examples within this article.
+You can perform all the training-related activities for a app from the _Utterance Testing_ module. We will use a sample _Travel Planning_ app to provide examples within this article.
 
 ## Testing the Assistant
 
-Simply put, testing a VA refers to checking if it can respond to a user utterance with the most relevant task. Given the flexibility of language, users will use a wide range of phrases to express the same intent.
+Simply put, testing a app refers to checking if it can respond to a user utterance with the most relevant task. Given the flexibility of language, users will use a wide range of phrases to express the same intent.
 
-For example, you can rephrase _I want to change my ticket from San Francisco to Los Angeles on Jan 1_ as _Please change my travel date. Can’t make it on Jan 1._ The trick is to train the assistant to map both of these utterances with the same intent.
+For example, you can rephrase _I want to change my ticket from San Francisco to Los Angeles on Jan 1_ as _Please change my travel date. Can’t make it on Jan 1._ The trick is to train the app to map both of these utterances with the same intent.
 
-The first step to start testing a VA is to identify a representative sample of user utterances to test the responses. Look for sources of data that reflect real-world usage of the language, such as support chat logs, online communities, FAQ pages of relevant portals.
+The first step to start testing a app is to identify a representative sample of user utterances to test the responses. Look for sources of data that reflect real-world usage of the language, such as support chat logs, online communities, FAQ pages of relevant portals.
 
 
-### How to test the assistant
+### How to test the App
 
-Follow these steps to test your assistant:
+Follow these steps:
 
-1. Open the assistant that you want to test.
-2. From the left menu click **Testing** -> **Utterance Testing**.
+1. Open the app that you want to test.
+2. From the left menu click **Testing** > **Utterance Testing**.
 3. In the case of a multiple intent model, you can select the **Intent Model** against which you want to test the utterance. The ML Engine will detect the intents only from the selected model.
 4. In the **Type a user utterance** field, enter the utterance that you want to test. Example: _Book a flight_.
 5. The result appears with a single, multiple, or no matching intents.
@@ -48,9 +48,9 @@ Test results are classified as either _Probable Matches_ or _Definitive Matches_
 <img src="../images/utterence-testing-2-testing-matches.png" alt="Utterance Match Classification" title="Utterance Match Classification" style="border: 1px solid gray; zoom:50%;"/>
 
 
-_Definitive Matches_ get high confidence scores and are assumed to be perfect matches for the user utterance. In published assistants, if user input matches with a single _Definitive Match_, the VA directly executes the task. If the utterances match with multiple _Definitive Matches_, they are sent as options for the end-user to choose one.
+_Definitive Matches_ get high confidence scores and are assumed to be perfect matches for the user utterance. In published assistants, if user input matches with a single _Definitive Match_, the app directly executes the task. If the utterances match with multiple _Definitive Matches_, they are sent as options for the end-user to choose one.
 
-On the other hand, _Probable Matches_ are intents that score reasonably well against the user input but do not inspire enough confidence to be termed as exact matches. Internally the system further classifies possible matches into good and unsure matches based on their scores. If the end-user utterances were generating possible matches in a published VA, the assistant sends these matches as _“Did you mean?”_ suggestions for the end-user.
+On the other hand, _Probable Matches_ are intents that score reasonably well against the user input but do not inspire enough confidence to be termed as exact matches. Internally the system further classifies possible matches into good and unsure matches based on their scores. If the end-user utterances were generating possible matches in a published app, the app sends these matches as _“Did you mean?”_ suggestions for the end-user.
 
 Below are the possible outcomes of a user utterance test:
 
@@ -68,7 +68,7 @@ Below are the possible outcomes of a user utterance test:
 
 ### Entity Match
 
-During testing of the VA, the matched entities are displayed. The entities from the utterance are processed in the following order:
+During testing of the app, the matched entities are displayed. The entities from the utterance are processed in the following order:
 
 * first NER and pattern entities 
 * then the remaining entities.
@@ -109,21 +109,21 @@ From each model dialog, clicking the icon on the top right will display the conf
 
 The ML model tries to match the user input with the task label and the training utterances of each task. If the user input consists of multiple sentences, each sentence is run separately against the task name as well as the task utterances.
 
-Click on the Machine Learning Model button to open the Machine Learning Model section of NLP Analysis. This shows only the names of the tasks that secure a positive score. In general, the more the number of training utterances that you add to a task, the greater are its chances for discovery. For more information, read [Machine Learning](../../natural-language/training/machine-learning-engine/){:target="_blank"}.  
+Click on the Machine Learning Model button to open the Machine Learning Model section of NLP Analysis. This shows only the names of the tasks that secure a positive score. In general, the more the number of training utterances that you add to a task, the greater are its chances for discovery. For more information, read [Machine Learning](../natural-language/training/machine-learning-engine.md){:target="_blank"}.  
 <img src="../images/utterance-testing-8-testing-ml.png" alt="Machine Learning Model - Intent Score" title="Machine Learning Model - Intent Score" style="border: 1px solid gray; zoom:50%;"/>
 
 
 
 #### FM Model
 
-Apart from the ML model, each task in the VA is also scored against the user input using a comprehensive custom NLP algorithm that involves different combinations of task names, synonyms, and patterns. The Fundamental Meaning (FM) Model tab shows the analysis for all the intents in the VA. Click the tab to view the scores of each task.
+Apart from the ML model, each task in the app is also scored against the user input using a comprehensive custom NLP algorithm that involves different combinations of task names, synonyms, and patterns. The Fundamental Meaning (FM) Model tab shows the analysis for all the intents in the app. Click the tab to view the scores of each task.
 Clicking the **Processed Utterance** shows how the user utterance was analyzed and processed.
 
 
 
 #### FM Scoring Model
 
-From v. 7.2, the FM engine generates the model in two ways, depending upon the language of the VA.
+From v. 7.2, the FM engine generates the model in two ways, depending upon the language of the app.
 
 **Approach 1**: Supported for German and French languages.
 
@@ -160,9 +160,9 @@ The other scoring methods are:
 
 #### Knowledge Graph
 
-If the VA includes a Knowledge Graph, the user utterances are processed to extract the terms and are mapped with the Knowledge Graph to fetch the relevant paths. All the paths containing more than a preset threshold of the number of terms get shortlisted for further screening. Path with 100% terms covered and having a similar FAQ in the path is considered a perfect match.
+If the app includes a Knowledge Graph, the user utterances are processed to extract the terms and are mapped with the Knowledge Graph to fetch the relevant paths. All the paths containing more than a preset threshold of the number of terms get shortlisted for further screening. Path with 100% terms covered and having a similar FAQ in the path is considered a perfect match.
 
-In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as _matched intent_ and _matched utterance_. You can further train the VA as you would for an intent from ML or FM engine. [Know more about Knowledge Graph Training from here](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"}.  
+In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as _matched intent_ and _matched utterance_. You can further train the app as you would for an intent from ML or FM engine. [Know more about Knowledge Graph Training from here](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"}.  
 <img src="../images/utterance-testing-11-testing-kg.png" alt="Knowledge Graph" title="Knowledge Graph" style="border: 1px solid gray; zoom:50%;"/>
 
 
@@ -226,7 +226,7 @@ The **NLP Analysis** page within the **NLP Insights** dashboard displays the fol
 
 ### Training the Assistant
 
-Training is how you enhance the performance of the NLP engine to prioritize one task or user intent over another based on the user input. You should test and, if needed, train your assistant for all possible user utterances and inputs.
+Training is how you enhance the performance of the NLP engine to prioritize one task or user intent over another based on the user input. You should test and, if needed, train your app for all possible user utterances and inputs.
 
 
 #### Utterance-based Training
@@ -296,7 +296,7 @@ For the intents qualified and eliminated in R&R, the system displays the elimina
 
 **Train with FAQ**
 
-If you want the assistant to respond to user utterance with FAQs there are two ways to do it:
+If you want the app to respond to user utterance with FAQs there are two ways to do it:
 
 * set the terms, term configuration, or classes from the FAQ page, train the KG and retest the utterance.
 * add the utterance as an alternate question to the selected FAQ from the Knowledge Graph page, train the KG and retest the utterance.

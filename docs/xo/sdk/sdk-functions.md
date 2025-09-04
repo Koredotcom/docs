@@ -326,7 +326,7 @@ function bookTheCab(requestId, cabId, userLoc, destination) {
 This function registers the App and makes callback events available at runtime.
 
 **Usage**
-The BotKit SDK is designed to require you to create one Node.js file for each VA. All callbacks for that bot are maintained in the Node.js file. To register a VA, you must export the following variables and functions as:
+The BotKit SDK is designed to require you to create one Node.js file for each bot. All callbacks for that bot are maintained in the Node.js file. To register a bot, you must export the following variables and functions as:
 
 ```javascript
 module.exports = {

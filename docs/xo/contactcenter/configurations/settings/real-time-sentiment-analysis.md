@@ -9,7 +9,7 @@ The **Real-Time Sentiment Analysis** feature enables agents to monitor customer 
 
 Steps to enable Real Time Sentiment Analysis:
 
-1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Settings > **Advanced Settings** > **Real Time sentiment Analysis**.  
+1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Settings** > **Advanced Settings** > **Real Time sentiment Analysis**.  
     <img src="../images/real-time-sentiment.png" alt="Real-Time Sentiment Analysis" title="Real-Time Sentiment Analysis" style="border: 1px solid gray; zoom:70%;">
 
 2. Turn on the toggle to enable Real Time Sentiment Analysis. This feature is disabled by default.

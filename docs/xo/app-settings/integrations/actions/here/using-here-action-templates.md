@@ -13,7 +13,7 @@ Steps to create a dialog task using Here action templates:
 
 
 
-If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for yourAI Agent. For more information, see [Actions Overview](../../actions){:target="_blank"}.
+If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for yourAI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.
 
 
   <img src="../images/here-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
@@ -49,7 +49,7 @@ The following Here action is supported:
 
 Steps to get location by free text in the Here integration:
 
-1. Refer to the [Installing the Here templates](../configuring-the-here-action/#step-2-install-the-here-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Here templates](configuring-the-here-action.md#step-2-install-the-here-action-templates){:target="_blank"} section to install this template.
 2. The _Get Location_ dialog task is added with the following components:
 <img src="../images/here-action-img12-tem-img4.png" alt="Dialog task added" title="Dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 

@@ -2,11 +2,85 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.17.0 August 23, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Translation Support for Historical Digital Conversations**
+
+The Chat History Tab now supports translation for past digital interactions, using the same controls and settings as the Live Agent Console. This update enables agents, supervisors, and auditors to review multilingual conversations without the need for external tools, ensures consistent UI behavior, and prevents redundant translation calls. [Learn more :octicons-arrow-right-24:](../../console/additional-tools.md#translate-historical-digital-conversations)
+
+**Email Arrival Summarization, AI Content Disclaimer, and Fallback Message**
+
+Email interactions now include arrival summaries with intent, sentiment, queue details, and wait time, bringing feature parity with other channels. All LLM-generated summaries display the disclaimer “_AI-generated content – verify before using_” to ensure transparency. When summarization is disabled or fails, the system shows the fallback message “_Summarization is disabled_.” Existing summarization workflows in other channels remain unaffected. This enhancement improves agent context, supports compliance, and provides clear user feedback. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+**Improved New Message Handling in Agent Console**
+
+The agent console no longer auto-scrolls when new user messages arrive, preventing disruption during conversation review. Instead, a floating “New Messages” button appears if the agent has scrolled up. Clicking the button scrolls to the latest message, after which the button disappears. This update enhances usability, preserves reading context, and grants agents complete control over when to view new messages. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#viewing-new-messages-in-the-console)
+
+**GenAI-Based Disposition Prediction for Agent Wrap-Up**
+
+Contact Center Agents now receive AI-generated disposition code suggestions at the end of conversations. Using LLM analysis of the full transcript and disposition set metadata, the system recommends the most relevant wrap-up code, which is displayed in the disposition bar with options to accept it with one click or override it manually. This improves accuracy and reduces wrap-up time. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#intelligent-disposition-code-suggestions)  
+<img src="../images/wrap-up-code-release-notes.png" alt="Agent Wrap-up Code" title="Agent Wrap-up Code" style="border: 1px solid gray; zoom:70%;">
+
+<font size="4">Configuration</font>
+
+**Automatic Away Status for Agent Inactivity**
+
+Administrators can configure the system to automatically set an agent’s status to Away when the _Agent Inactivity Wait Time_ is breached after a conversation becomes overdue. When enabled, the system updates the agent’s status to 'Away', prevents the agent from receiving new interactions, displays the updated status in the Supervisor dashboard, and applies existing routing rules for the 'Away' status. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md)  
+<img src="../images/automatic-away-release-notes.png" alt="Automatic Away" title="Automatic Away" style="border: 1px solid gray; zoom:70%;">
+
+**Configurable CSAT Survey Trigger for Agent-Closed Conversations**
+
+A new toggle, _Trigger CSAT only for agent-closed conversations_, is now available in CSAT survey settings. When enabled, surveys are sent only when a conversation is manually closed by an agent, excluding closures due to inactivity, queue timeouts, or user disconnections. This update improves CSAT accuracy by reducing unnecessary survey triggers. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/surveys/configure-surveys.md#chat-call-and-email-experience) 
+
+**Support for Special Characters in Agent customId**
+
+The customId field now supports all special characters except spaces and backslashes, resolving previous errors during creation or updates. The character limit is 64, with validation applied consistently across the Admin Console, APIs, and backend services. This enhancement improves routing flexibility and operational mapping without affecting existing records, metrics, permissions, APIs, or Dynamic Routing. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#general-settings)
+
+**Revised Channel Attachment Rules for Default Welcome Flows**
+
+Administrators can no longer attach channels to the Default Welcome Voice flow or Default Welcome Chat flow. Channels already attached to these flows will continue to function as configured. However, if a channel is reattached to a different flow, it cannot be reattached to a Default Welcome Voice flow or Default Welcome Chat flow. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#attach-a-flow) 
+
+**HTML/CSS Email Templates for Response Templates and Surveys**
+
+A Code View option is now available in the email message editor for Response Templates and Survey Forms. Users can paste or write HTML/CSS code, switch between rich text and source views without losing content, and preview the final design before sending. This enhancement enables the creation of structured, branded, and reusable email templates, ensuring consistent formatting across senders and recipients. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/response-templates/manage-response-templates.md#create-a-response) 
+
+<font size="4">Web SDK</font>
+
+**Click-to-Call Capability for Web SDK Using Experience Flow Configuration**
+
+The Web SDK now supports a Click-to-Call button, enabling website visitors to start voice calls directly from the UI. Calls route through configured flows, share assistant transcripts with human agents, and support recording, transcription, and ACW. The button is disabled by default and can be configured using the theme editor. Sessions log separately in the dashboard and can be initiated before, during, or after bot/chat interactions. In live chat, the agent receives a closure notice and is redirected to ACW. Multiple SDK configurations and flexible deployment methods (npm, script tag, source modification) are supported. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#inbound-click-to-call-interaction) 
+
+<font size="4">Analytics</font>
+
+**Transcripts Log Updates for Maximum Retry Handling**
+
+The transcripts log now displays timeline messages when maximum retries are exceeded and the configured fallback action is triggered. Instead of appearing as user transcription messages, the log indicates the scenario. For example, when a No Input timeout is exceeded and a fallback action is triggered, the message “Max no-input attempts reached” is shown. This update helps app users easily understand the reason behind the triggered action. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs) 
+
+<font size="4">API</font>
+
+**Fetch Conversation Details by Session ID**
+
+A new Public API is available to fetch conversation details using the Parent App Session ID. The API returns conversation details only when a successful agent handoff has occurred in the session. If no handoff exists, it returns the error: “Conversation not found for the given session id.” [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-conversation-details.md) 
+
+<hr>
+
 ## v11.16.1 August 11, 2025
 
 <u>Patch Release</u>
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Configuration</font>
+
+**Support for Google and Custom Translation Engines**
+
+The system now supports Google Translate and Custom Translation Engines, alongside the existing Microsoft Translator. Administrators can configure their preferred translation providers under ‘Language Management’ → ‘Translation Engine Configuration’, utilizing secure access keys. The selected translation engine is uniformly applied across all translated views, including the Agent Console, Dashboard, Monitor, and ACW Summary. Access to manage these engine settings is restricted to authorized users. This support offers increased flexibility, improved compatibility, and enterprise-level control over multilingual interactions. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/translation-configurations.md) 
 
 <font size="4">Campaigns</font>
 
@@ -103,7 +177,7 @@ The Voice Automation and Agent AI integration with Genesys Cloud CX via SIP Invi
 
 * Transferring Voice calls that start in Contact Center AI to Genesys Cloud CX via SIP INVITE.
 * Passing session-specific metadata (such as Session ID) through SIP headers.
-* Automatically loading the Agent AI widget in the Genesys desktop with full bot context, using the existing voice stream from Kore to Agent AI—without needing Audiohook. [Learn more :octicons-arrow-right-24:](../../contactcenter/integrations/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol.md)
+* Automatically loading the Agent AI widget in the Genesys desktop with full bot context, using the existing voice stream from Kore to Agent AI—without needing Audiohook.
 
 <hr>
 
@@ -498,7 +572,7 @@ Using `agentUtils.setAgentTranscribe({transcribe:false})`, transcripts can be hi
 
 Using `agentUtils.setAgentRecordingControl({record: "stop"})` prevents voice call recording generation with corresponding notices. These functions can be used individually or together for complete control over agent interaction documentation.  
 
-[Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#enabledisable-transcripts-and-recordings-for-kore-contact-center-ai)
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md)
 
 <font size="4">Campaigns</font>
 
@@ -630,7 +704,7 @@ The Interaction Details by Segment Report is a comprehensive report that covers 
 
 Monitor > Service Levels
 
-The "Today" option is added to the time-period filter dropdown. Selecting "Today" displays all values based on conversations retrieved from the user's current day, starting from 12:00:00 AM midnight, according to the user's system time zone. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#time-intervals)
+The "Today" option is added to the time-period filter dropdown. Selecting "Today" displays all values based on conversations retrieved from the user's current day, starting from 12:00:00 AM midnight, according to the user's system time zone. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md)
 
 <hr>
 
@@ -976,7 +1050,7 @@ Key Updates:
 * Kore Domain Email Management:
     * Configure multiple Kore domain email addresses.
     * Easy addition of new addresses via the “Add Email Address” button.
-    * Attach experience flows to specific email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#attach-a-flow-to-a-kore-domain-email-address)
+    * Attach experience flows to specific email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 * Custom Domain Setup:
     * “Add Domain” button for custom email domain configuration.
     * Domain ownership verification through email login test.
@@ -1068,7 +1142,7 @@ Each tracked detail includes the following:
 
 **Wait Time for IP Whitelisting While Configuring SIP Transfer**
 
-Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-numbers)
+Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md)
 
 **Session and Node Level Call Control Parameters**
 
@@ -1077,7 +1151,7 @@ Developers can now apply Call Control Parameters at the **Session** or **Node** 
 * **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
 * **Node-Level Parameters**: Add the prefix “`node.`" to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
 * **Default Behavior**: Parameters without a prefix are considered session-level by default.
-* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md)
+* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/speech-customization.md)
 
 **SIP REFER Handling and Transcript Enhancements**
 
@@ -1135,7 +1209,7 @@ To improve agent experience and maintain consistent availability, the agent’s 
 * Complete outbound calls, or
 * Switch from system-assigned states.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status).
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md).
 
 **Real-Time Disposition Updates**
 
@@ -1489,7 +1563,7 @@ Key benefits:
 * Balanced workload across qualified agents.  
 * Maintained service quality through skill-based assignments.  
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#load-balanced-agent-routing)
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md)
 
 **Phone Number Label Display Enhancement**
 
@@ -1692,11 +1766,11 @@ When a campaign is cloned, the new campaign will not include the schedule config
 Administrators can enable voice support for inbound calls and outbound campaigns.
 
 * Inbound: In the case of an Agentless Dialer, the agent can handle transferred calls.
-* Outbound Campaigns: Agents can handle calls from Auto Dialers. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#chat--voice)
+* Outbound Campaigns: Agents can handle calls from Auto Dialers. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#)
 
 **Progressive Dialer**
 
-The Progressive Dialer is an outbound calling system that improves agent efficiency and productivity. It automatically dials the next number in a queue as agents complete their current calls, ensuring continuous activity. Calls are connected only when a human answers, filtering out voicemails and busy signals. Agents can review contextual information about the contact beforehand but have limited control over the timing or recipient of calls. The dialer optimizes lead allocation based on agent availability, tracks statuses to assign calls to the least busy agent, and provides comprehensive metrics and call statistics for monitoring and reporting purposes. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#auto-dialers)
+The Progressive Dialer is an outbound calling system that improves agent efficiency and productivity. It automatically dials the next number in a queue as agents complete their current calls, ensuring continuous activity. Calls are connected only when a human answers, filtering out voicemails and busy signals. Agents can review contextual information about the contact beforehand but have limited control over the timing or recipient of calls. The dialer optimizes lead allocation based on agent availability, tracks statuses to assign calls to the least busy agent, and provides comprehensive metrics and call statistics for monitoring and reporting purposes. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md)
 
 <hr>
 
@@ -1767,7 +1841,7 @@ Using this feature, agents can do the following:
 * Add hyperlinks for HTTP and HTTPS URLs.
 * Add hyperlink actions for email (mailto:a@b.com). Clicking the link opens the associated mail app.
 * Customize the display text of the hyperlink.
-* Display the full URL when an agent hovers over the hyperlink. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#adddelete-hyperlinks-in-the-compose-bar)
+* Display the full URL when an agent hovers over the hyperlink. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md)
 
 **Improved Sorting and Enhanced Auto Accept**
 
@@ -1824,7 +1898,7 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 
 * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
 * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
-* Up to 25 conversations can be selected for exporting transcripts. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-datatranscripts)
+* Up to 25 conversations can be selected for exporting transcripts. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
 
 **Display Agent and Disposition Notes in Search Results on the Interactions Tab**
 
@@ -1866,7 +1940,7 @@ Key features and enhancements included in this release are summarized below.
 **Outbound Emails**
 
 Outbound email functionality is a key feature within Contact Center AI designed to streamline communication between agents and customers through email channels. Agents can now send outbound emails from the agent console. The outbound emails are independent of the ongoing conversations.  
-[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers/interacting-with-customers.md#outbound-email)
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-email)
 
 A new permission for Outbound Email is added in the Agent & Supervisor Experience section with the following details:
 
@@ -1894,7 +1968,7 @@ Scheduling allows precise control over when your messages will be delivered. You
 
 **System Busy and System Away Status Enabled by Default**
 
-System Away and System Busy statuses are enabled by default for new accounts. For existing accounts, contact Support. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status)
+System Away and System Busy statuses are enabled by default for new accounts. For existing accounts, contact Support. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md)
 
 **Enable/Disable Resolution Disposition Sets**
 

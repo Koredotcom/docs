@@ -24,7 +24,7 @@ The key features of dialog nodes are listed below:
 Setting up an dialog node in a dialog task involves the following steps:
 
 1. Open the dialog task that you want to add the node to.
-2. Add a **Dialog** node in the designated place. [Read more about adding nodes](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+2. Add a **Dialog** node in the designated place. [Read more about adding nodes](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
 
 <img src="../images/dialog-task-node-img1.png" alt="Dialog node" title="Dialog node" style="border:1px solid gray;zoom:70%;">
 
@@ -52,10 +52,10 @@ The NLP Properties are related to the underlying intent associated with a dialog
 
 To improve intent identification for the dialog task, add or define the following properties: 
 
-1. **Machine Learning** settings to provide user utterances to improve the detection of this intent. [Learn more](../../../../natural-language/training/machine-learning-engine){:target="_blank"}.
-2. **Patterns and Rules** to capture this intent if the user’s utterance contains these specific patterns or matches the rule. [Learn more](../../../../natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}.
-3. **Bot Synonyms** or related phrases for the user intent. [Learn more](../../../../natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
-4. **Manage Context** tags as preconditions to identify the intent and define the output context to be set when this task is initiated. [Learn more](../../../../intelligence/context-management){:target="_blank"}.
+1. **Machine Learning** settings to provide user utterances to improve the detection of this intent. [Learn more](../../../natural-language/training/machine-learning-engine.md){:target="_blank"}.
+2. **Patterns and Rules** to capture this intent if the user’s utterance contains these specific patterns or matches the rule. [Learn more](../../../natural-language/training/fundamental-meaning.md#manage-patterns-and-rules){:target="_blank"}.
+3. **Bot Synonyms** or related phrases for the user intent. [Learn more](../../../natural-language/training/fundamental-meaning.md#manage-synonyms){:target="_blank"}.
+4. **Manage Context** tags as preconditions to identify the intent and define the output context to be set when this task is initiated. [Learn more](../../../intelligence/context-management.md){:target="_blank"}.
 
 <img src="../images/dialog-task-node-img3-nlp-properties1.png" alt="Dialog node - NLP properties" title="Dialog node - NLP properties" style="border:1px solid gray;zoom:50%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/dialog-task-node-img4-nlp-properties2.png" alt="Dialog node - NLP properties" title="Dialog node - NLP properties" style="border:1px solid gray;zoom:50%;">
 
@@ -72,7 +72,7 @@ Click the **Connections** tab and set the transition properties to determine the
 
     The conditions configured here are applicable only for this instance and will not affect the node when being used in any other dialog.
 
-To set up component connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions/){:target="_blank"}
+To set up component connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections.](../node-connections/nodes-conditions.md){:target="_blank"}
 
 <img src="../images/dialog-task-node-img5.png" alt="Dialog node - Connection properties" title="Dialog node - Connection properties" style="border:1px solid gray;zoom:70%;">
 
@@ -116,9 +116,9 @@ Click **Advanced Controls** to set up the below-listed options:
 
 1. **Interruptions Behavior**
     1. **Use the task level _Interruptions Behavior_ Setting**: The AI Agent refers to the **Interruptions Behavior** settings set at the dialog task level.
-    2. **Customize for this node**: By configuring this option you can customize the **Interruptions Behavior** settings for this node. Read the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article for more information.
+    2. **Customize for this node**: By configuring this option you can customize the **Interruptions Behavior** settings for this node. Read the [Interruption Handling and Context Switching](../../../intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article for more information.
 
-2. **Custom Tags** defines tags to build custom profiles of your app conversations. [See here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}. You can add tags for the following:
+2. **Custom Tags** defines tags to build custom profiles of your app conversations. [See here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}. You can add tags for the following:
     1. **Message –** Define custom tags to be added to the current message in the conversation.
     2. **User –** Define custom tags to be added to the user’s profile information.
     3. **Session –** Define custom tags to be added to the current conversation session.
@@ -159,11 +159,11 @@ You can access and present these variables in a prompt message to a user to disp
 
 The value for the `postbackpayload` key is generated by the Platform and is used in some channels, such as _Facebook_ and _Slack, _which defines when a link or choice is made for a target dialog task.
 
-Use the flag, `'reuseEntityWords: true',` as part of the pre-conditions to enable entity values extracted in a parent dialog to be automatically available and reused in downstream dialogs without needing to prompt the user again.
+Use the flag, `'reuseEntityWords: true',` as part of the pre-conditions to enable entity values extracted in a parent dialog to be automatically available and reused in downstream dialogs without needing to prompt the user again. [Learn more](dynamic-intent-node.md#entity-pre-assignments).
 
 <hr>
 
 **Related Links**  
 
-* [Using Session and Context Variables in Tasks](../../../using-session-and-context-variables)  
+* [Using Session and Context Variables in Tasks](../../using-session-and-context-variables.md)  
 * [Context Object](../../../intelligence/context-object.md)

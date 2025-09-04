@@ -13,7 +13,7 @@ The setup a Script node in a dialog task involves the following steps:
 
 1. **Select the AI Agent** you want to work with.
 2. **Open the dialog task** to add the Script node to.
-3. **Add the script node** in the designated place. For steps in adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+3. **Add the script node** in the designated place. For steps in adding nodes, [refer here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
 4. The Script window is displayed with the **Component Properties** tab selected by default.
 5. You can configure the **Connection Properties,** [refer here for details](#connections-properties).
 
@@ -37,7 +37,7 @@ To configure the Component Properties section, please follow the steps below:
 1. On the **Component Properties** tab, enter a **Name** and **Display Name** for the script node. Node names cannot have spaces.
 2. Under the **Script Definition** section, click **Define Script** to add JavaScript.
 3. On the **Script Definition** window, enter your JavaScript and then click **Save**. Enable **Auto Save** to save your work automatically after one second of inactivity. It must be re-enabled each time you open the editor. [See below for JavaScript code examples](#javascript-examples).
-4. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+4. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
 
     <img src="../images/script-node-component-properties.png" alt="Script node - Component properties" title="Script node - Component properties" style="border:1px solid gray;zoom:70%;">
 
@@ -51,7 +51,7 @@ Use the Instance Properties to define any user tags that you want to set for the
     The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
 
 1. On the Script node properties panel, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
     <img src="../images/script-node-instance-properties.png" alt="Script node - Instance properties" title="Script node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
@@ -66,7 +66,7 @@ You can write conditional statements based on the values of any Entity or Contex
     * The connection properties would be present only if this is the bottommost node of a sequence.
 
 
-To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions){:target="_blank"}
+To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../node-connections/nodes-conditions.md){:target="_blank"}
 
 <img src="../images/script-node-connection-properties.png" alt="Script node - Connection properties" title="Script node - Connection properties" style="border:1px solid gray;zoom:70%;">  
 
@@ -114,7 +114,7 @@ for (var i = 0; i < x.length; i++) {
 }
 ```
 
-For more information, refer to [Using Session and Context Variables in Tasks](../../../using-session-and-context-variables){:target="_blank"}.
+For more information, refer to [Using Session and Context Variables in Tasks](../../using-session-and-context-variables.md){:target="_blank"}.
 
 
 ### Handling Conditions
@@ -155,5 +155,5 @@ context.canProceed = valid;
 
 **Related Link**
 
-* [**koreUtil libraries**](../../../../apis/automation/koreutil-libraries.md){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)
+* [**koreUtil libraries**](../../../../apis/automation/koreutil-libraries.mdd){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)
 * [**Script Nodes, Call Flows, Agent Utils, and userSessionUtils**](../../../../flows/node-types/utils.md)

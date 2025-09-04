@@ -4,20 +4,24 @@
 
 ### Compose Responses
 
-Agents can respond to customers by typing their messages in the compose bar.  
-<img src="../images/compose-bar-blank.png" alt="Blank Compose Bar" title="Blank Compose Bar" style="border: 1px solid gray; zoom:80%;">
+Agents can respond to customers by typing their messages in the text editor.  
+<img src="../images/compose-bar-blank.png" alt="Blank Text Editor" title="Blank Text Editor" style="border: 1px solid gray; zoom:80%;">
 
-Agents can type their responses in the compose bar and send the message by clicking the **Send** button on the bottom right corner. Pressing the **Tab** button on your keyboard shifts the focus to the Send button. You can also press **Tab + Enter** to send a message.  
+Agents can type their responses in the text editor and send the message by clicking the **Send** button on the bottom right corner. Pressing the **Tab** button on your keyboard shifts the focus to the Send button. You can also press **Tab + Enter** to send a message.  
 <img src="../images/send-response.png" alt="Send Response" title="Send Response" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
     You can still press **Enter** to send messages. Pressing (ctrl+enter / shift+enter) on Windows and (ctrl+return / shift+return) on Mac creates a new line.
 
-Agents can send a standard response to the customer from a pre-configured library. Press **/** in the compose bar to display the standard response templates window.  
+Agents can send a standard response to the customer from a pre-configured library. Press **/** in the text editor to display the standard response templates window.  
 <img src="../images/standard-response-prompt.png" alt="Standard Response Library" title="Standard Response Library" style="border: 1px solid gray; zoom:80%;">
 
 Pressing **Escape** after typing “**/**” closes the standard response window.
+
+**When translation is enabled**: Responses appear in the agent’s selected target language in both the text editor shortcut command and the response widget.
+
+**When translation is disabled**: Responses appear in the conversation language, as set through [Agent Utils at the time of agent transfer](../flows/node-types/utils.md#set-live-chat-agent-transfer), ensuring they are not limited to the application language.
 
 ### AI-enhanced Compose Text Box
 
@@ -33,9 +37,9 @@ For example, the formal draft response “Your mortgage appointment has been sch
 
     This feature can be enabled from [Generative AI Tools > GenAI Features > Agent Response Rephrasing](../generative-ai-tools/genai-features.md#agent-response-rephrasing).
 
-### Add/Delete Hyperlinks in the Compose Bar
+### Add/Delete Hyperlinks in the Text Editor
 
-Agents can add/delete hyperlinks in the compose bar while responding to the messages.
+Agents can add/delete hyperlinks in the text editor while responding to the messages.
 
 Steps to add/remove hyperlinks:
 
@@ -62,6 +66,11 @@ Steps to add/remove hyperlinks:
     * Edit
 5. Press **Enter** to send the message.  
 <img src="../images/send-message.png" alt="Send Message" title="Send Message" style="border: 1px solid gray; zoom:80%;">
+
+## Viewing New Messages in the Console
+
+When agents are reviewing earlier parts of a conversation, and a new message arrives while you are scrolled up, a New Message button appears at the bottom of the conversation thread. The button also displays the number of unread messages. To view the latest message, click the New Message button. The most recent message is displayed.  
+<img src="../images/new-message.png" alt="Auto Scroll" title="Auto Scroll" style="border: 1px solid gray; zoom:70%;">
 
 ## Resend Message When Network Disconnects
 
@@ -177,6 +186,21 @@ Agents can make outbound calls to the customers as follows:
     !!! Note
 
         The country code defaults to the last dialed country. If no calls are dialed, the default country code is the US.
+
+#### Inbound Click-to-Call Interaction
+
+Agents receive the Click-to-Call interaction in the Live Interaction pane, similar to an inbound voice call. The system displays the metadata and prior chat transcript to the agent. During the call, agents can pause and resume recording when handling sensitive information. After the call ends, the system stores the transcription and disposition summary. [Learn more](../contactcenter/flows-and-routing/conditional-flows.md#click-to-call-flow).  
+<img src="../images/click-to-call-interaction.png" alt="Click to Call Interaction" title="Click to Call Interaction" style="border: 1px solid gray; zoom:70%;">  
+
+In addition to After Call Work (ACW), Agents also have access to the following call controls:  
+
+* Mute  
+* Unmute  
+* Hold  
+* Resume  
+* Recording – Pause and Resume  
+* Transcription – Pause and Resume  
+* Transfer – Internal
 
 ## Voicemail
 
@@ -340,6 +364,10 @@ Steps to initiate a Call Transfer:
 
 * Click **Transfer** to directly transfer the call to another agent.  
 <img src="../images/transfer-agent.png" alt="Agent Transfer" title="Agent Transfer" style="border: 1px solid gray; zoom:50%;">
+
+!!! Note
+
+    Agents are not listed in Agent Transfers when the Chat and Email channel slots are set to zero.
 
 ### Consult Call
 
@@ -603,25 +631,28 @@ These settings can be configured from [Agent settings](../contactcenter/agent-an
 **Reply and Reply All**: Agents can click **Reply** to open a response window addressed only to the most recent sender. Clicking **Reply All** opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.  
 <img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
 
+**Arrival Summary**: Every email conversation begins with an Arrival summary once an agent accepts it. For more information about the arrival summary, refer to [Arrival Summary](#arrival-summary).  
+<img src="../images/email-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
+
 **Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.  
 <img src="../images/cc-and-bcc.png" alt="CC and BCC" title="CC and BCC" style="border: 1px solid gray; zoom:70%;">
 
 **Standard Responses**:
 You can choose from a library of configured standard responses.
 
-1. Click the **Standard Response** icon at the bottom of the email compose bar. The count of response templates in each category is displayed.  
+1. Click the **Standard Response** icon at the bottom of the email text editor. The count of response templates in each category is displayed.  
 <img src="../images/standard-response.png" alt="Standard Response Icon" title="Standard Response Icon" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the category to view the standard response templates in that category.  
-<img src="../images/standard-response-library.png" alt="Standard Reposnse Tam[plates" title="Standard Response Templates" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/standard-response-library.png" alt="Standard Response Templates" title="Standard Response Templates" style="border: 1px solid gray; zoom:70%;">
 
 3. Click the Standard Response from the list to use that response in the email.  
-<img src="../images/standard-response-filled.png" alt="Send Standard Repsonse" title="Send Standard Reponse" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/standard-response-filled.png" alt="Send Standard Response" title="Send Standard Response" style="border: 1px solid gray; zoom:70%;">
 
     **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a ‘**View More**’ button is displayed.
 
     Click the **Attachment** icon to select and upload files.  
-        <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:70%;">
 
     **Notes**: You can add notes on the interaction (customer feedback, key points, next action, suggestions). This section includes any previous notes added by agents while interacting with the same customer.
 
@@ -677,8 +708,10 @@ Steps to send an outbound email:
     Click the down arrow button ”**V**” beside Send and click **Send & Close**.  
         <img src="../images/send-and-close.png" alt="Send & Close Button" title="Send & Close Button" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation is displayed, and the email is sent. A disposition window appears. Select a disposition and click **Close**.  
+    A confirmation is displayed, and the email is sent. A disposition window appears.   
         <img src="../images/disposition-sent-mail.png" alt="Disposition Sent Mail" title="Disposition Sent Mail" style="border: 1px solid gray; zoom:80%;">
+    If Wrap-up Code prediction is enabled, a disclaimer appears requesting users to verify the content before using it.  
+        <img src="../images/ai-generated-content.png" alt="AI Generated Content" title="AI Generated Content" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -907,6 +940,21 @@ Dispositions can be assigned in two ways:
     * Optionally, type a **Description** of your reason for selecting the disposition.
     * Click **_Close_** to close the conversation.
 
+#### Intelligent Disposition Code Suggestions
+
+When enabled, agents receive intelligent disposition code suggestions automatically at the end of customer conversations. The feature uses LLM analysis of the full conversation transcript and disposition set metadata to recommend the most appropriate wrap-up code. Suggestions appear prominently in the disposition bar and can be accepted with one click or overridden manually, ensuring higher accuracy and reduced wrap-up time. [Learn more](../contactcenter/configurations/settings/wrap-up-code-prediction.md).
+
+Steps to receive intelligent disposition code suggestions:
+
+1. Click **End** to close the conversation.  
+    <img src="../images/end.png" alt="End Button" title="End Button" style="border: 1px solid gray; zoom:70%;">
+
+2. The **Disposition & Notes** window opens with suggested disposition codes.  
+    <img src="../images/disposition-window.png" alt="Disposition & Notes" title="Disposition & Notes" style="border: 1px solid gray; zoom:70%;">
+
+3. Agents can select a disposition code to accept it, or choose multiple disposition codes if needed, and then click **Close**.  
+    <img src="../images/select-and-close.png" alt="Close Button" title="Close Button" style="border: 1px solid gray; zoom:70%;">
+
 ### Translate Conversations in Real Time
 
 Agents can translate conversations in real time on the live interaction pane. Administrators can enable this functionality from [Translation Configurations](../contactcenter/configurations/settings/translation-configurations.md).
@@ -961,15 +1009,15 @@ When the agent types a response during a chat conversation with a customer, the 
 
 Do the following to enable the typing indicator for chat conversations:
 
-1. To integrate bots chat capability into custom applications, install WebSDK 2.0 on your server. WebSDK 2.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11) for additional information on installing WebSDK 2.0.
-2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 2.0. The Agent Desktop plugin allows the user to interact with the human agent through the AI Agent and supports the following features:
+1. To integrate bots chat capability into custom applications, install WebSDK 3.0 on your server. WebSDK 3.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1) for additional information on installing WebSDK 3.0.
+2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 3.0. The Agent Desktop plugin allows the user to interact with the human agent through the AI Agent and supports the following features:
 
     * Audio Calling
     * Video Calling
     * Co-browse
     * Screen Sharing
 
-    Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11/docs/plugins/agent-desktop) for additional information on installing the plugin.
+    Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1/docs/plugins/agent-desktop) for additional information on installing the plugin.
 
 ## Request Supervisor Support
 
@@ -1071,7 +1119,7 @@ CSAT surveys can be triggered based on the scenarios configured by administrator
 * **Show to Everyone**: If the “Show to Everyone” scenario is configured while creating the survey, the survey is triggered automatically for every interaction that concludes between an agent and a customer on digital or voice channels.
 * **Show to Every nth User**: If the “Show to nth User” scenario is configured while creating the survey, the survey is triggered automatically for the nth interaction that concludes between an agent and a customer on digital or voice channels. For example: If the frequency is set to 2, then the survey is triggered for every second customer.
 * **Agents can trigger**: If the “Agents can trigger” scenario is configured while creating the survey, the survey can be triggered by agents at any point during the interaction as follows:
-    * Click the **Send Survey** button on the right corner above the compose bar. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.  
+    * Click the **Send Survey** button on the right corner above the text editor. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.  
     <img src="../images/csat-button.png" alt="CSAT Button" title="CSAT Button" style="border: 1px solid gray; zoom:70%;">
 
     * The survey is triggered to the customer when the agent clicks the End button with the survey selected.
@@ -1083,6 +1131,6 @@ CSAT surveys can also be triggered in scenarios when there are no active partici
 * Outside hours of operation
 * No Agents Available flow
 * Agent/Customer side terminations or system terminations due to user inactivity
-* Subflows (No agents flow/Out of hours flow)
+* Sub-flows (No agents flow/Out of hours flow)
 
 For these scenarios, the CSAT scores are assigned to the interaction.

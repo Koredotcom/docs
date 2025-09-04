@@ -11,7 +11,7 @@ Steps to create a dialog task using the Freshdesk action templates:
 3. On the Dialog Task pop-up, under the Integration, select the Freshdesk option to view the action templates.  
 <img src="../images/freshdesk-action-img10-tem-img2.png" alt="select Freshdesk" title="Select Freshdesk" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/freshdesk-tem-img3.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -85,7 +85,7 @@ The following Freshdesk actions are supported in this release:
 
 Steps to create a ticket in the Freshdesk integration:
 
-1. Refer to the [Installing the Freshdesk templates ](../configuring-the-freshdesk-action/#step-2-install-the-freshdesk-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Freshdesk templates ](configuring-the-freshdesk-action.md#step-2-install-the-freshdesk-action-templates){:target="_blank"}section to install this template.
 2. The _Create Ticket_ dialog task is added with the following components:  
 <img src="../images/freshdesk-tem-img4.png" alt="Create Ticket dialog task added" title="Create Ticket dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -161,7 +161,7 @@ Steps to create a ticket in the Freshdesk integration:
 
 Steps to find a ticket using the ID in the Freshdesk integration:
 
-1. Refer to the [Installing the Freshdesk templates ](../configuring-the-freshdesk-action/#step-2-install-the-freshdesk-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Freshdesk templates ](configuring-the-freshdesk-action.md#step-2-install-the-freshdesk-action-templates){:target="_blank"}section to install this template.
 2. The _Get Ticket by ID_ dialog task is added with the following components:  
 <img src="../images/freshdesk-tem-img7.png" alt="Get Ticket By ID dialog" title="Get Ticket By ID dialog" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -222,7 +222,7 @@ Steps to find a ticket using the ID in the Freshdesk integration:
 
 Steps to view all tickets in the Freshdesk integration:
 
-1. Refer to the [Installing the Freshdesk templates ](../configuring-the-freshdesk-action/#step-2-install-the-freshdesk-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Freshdesk templates ](configuring-the-freshdesk-action.md#step-2-install-the-freshdesk-action-templates){:target="_blank"}section to install this template.
 2. The _List All Tickets_ dialog task is added with the following components:  
 <img src="../images/freshdesk-tem-img10.png" alt="List All Tickets dialog task" title="List All Tickets dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -928,7 +928,7 @@ Steps to view all tickets in the Freshdesk integration:
 
 Steps to update a ticket in the Freshdesk integration:
 
-1. Refer to the [Installing the Freshdesk templates ](../configuring-the-freshdesk-action/#step-2-install-the-freshdesk-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Freshdesk templates ](configuring-the-freshdesk-action.md#step-2-install-the-freshdesk-action-templates){:target="_blank"}section to install this template.
 2. The _Update a Ticket_ dialog task is added with the following components:  
 <img src="../images/freshdesk-tem-img13.png" alt="Update a Ticket dialog task" title="Update a Ticket dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -1006,7 +1006,7 @@ Steps to update a ticket in the Freshdesk integration:
 
 Steps to search ticket by field from the Freshdesk integration:
 
-1. Refer to the [Installing the Freshdesk templates](../configuring-the-freshdesk-action/#step-2-install-the-freshdesk-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Freshdesk templates](configuring-the-freshdesk-action.md#step-2-install-the-freshdesk-action-templates){:target="_blank"} section to install this template.
 2. The _Search Ticket by Field_ dialog task is added with the following components:  
 <img src="../images/freshdesk-tem-img17.png" alt="VA console prompt to view all tickets" title="VA console prompt to view all tickets" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -1105,7 +1105,7 @@ Steps to search ticket by field from the Freshdesk integration:
 
 Steps to delete a ticket in the Freshdesk integration:
 
-1. Refer to the [Installing the Freshdesk templates](../configuring-the-freshdesk-action/#step-2-install-the-freshdesk-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Freshdesk templates](configuring-the-freshdesk-action.md#step-2-install-the-freshdesk-action-templates){:target="_blank"} section to install this template.
 2. The _Delete a Ticket_ dialog task is added with the following components:  
 <img src="../images/freshdesk-tem-img20.png" alt="Delete a Ticket dialog" title="Delete a Ticket dialog" style="border: 1px solid gray;zoom:50%;"/>
 

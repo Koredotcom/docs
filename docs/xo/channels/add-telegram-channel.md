@@ -1,6 +1,6 @@
 # Adding the Telegram Channel
 
-To add Telegram as a channel to your Kore.ai assistant, you must create a bot on the Telegram platform. Adding the Telegram channel to your Kore.ai VA allows end-users to interact with it using their _Telegram_ account. You need a Telegram account to complete this procedure.
+To add Telegram as a channel to your Kore.ai assistant, you must create a bot on the Telegram platform. Adding the Telegram channel to your Kore.ai Assistant allows end-users to interact with it using their _Telegram_ account. You need a Telegram account to complete this procedure.
 
 To add the Telegram channel, follow the below steps:
 
@@ -37,6 +37,6 @@ To add the Telegram channel, follow the below steps:
 <img src="../images/telegram4.png" alt="enable telegram channel" title="enable telegram channel" style="border: 1px solid gray; zoom:70%;">
 
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

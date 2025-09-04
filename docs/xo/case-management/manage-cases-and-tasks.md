@@ -43,6 +43,11 @@ The users can access the additional menu items for the cases:
 
 * **Search Cases:** Enables searching for specific cases based on field values or content (for example, case ID, status, priority, keywords in case descriptions or notes).
 
+* **Download:** Downloads case management data in .CSV format.
+
+* **Advance Search:** Helps in search cases using advance filters such as Case ID, Case Title, Customer Email, Customer Phone Number, Description, and Requester.
+<img src="../images/advanced-search-cases.png" alt="advanced-search-cases" title="advanced-search-cases" style="border: 1px solid gray; zoom:70%;">
+
 ### Create Cases (Outside the Agent Console)
 
 Steps to create a new case:
@@ -50,34 +55,46 @@ Steps to create a new case:
 1. Access cases by navigating to **Contact Center AI > Case Management > Manage Cases > Cases**. The unresolved cases page displays.  
 <img src="../images/manage-cases-new-case.png" alt="Create Cases" title="Create Cases" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **+ New Case**. the New Case dialog box is displayed with a default Case Number assigned.  
-<img src="../images/new-case-managecase.png" alt="New Case" title="New Case" style="border: 1px solid gray; zoom:70%;">
+2. Click **+ New Case**. the New Case dialog box is displayed with a default Case Number assigned.
 
-3. In the **Requested by** field, enter the name of the customer.
+    * In the **Requested by** field, enter the name of the customer.
+    
+    * Choose a **channel** type from the dropdown list. For the **Voice**, select the customer's **phone number** and **Country** from the dropdown list. For the **Web/Mobile Client**, enter the customer’s **email address**.
 
-4. Choose a **channel** type from the dropdown list.
+    * Select the Queue from the list.
+    
+    * Select the case template from the **Case Type** dropdown list to capture the details about the customer's issue or query. Templates are specific to the queues.
+    
+    * Select a **Due Date** to complete the case.
+    
+    * In the description, enter a **conversation summary** of the issue or service request.
+    
+    * Enter a **Title** for the case based on the issue raised by the customer.
+    
+    * Select the **(Critical/High/Medium/Low)** from the **Priority** level dropdown list. By default, the Status is set as Open.
+    
+    * Click **Save**. A success message is displayed, and a new case is created and assigned to an agent based on the case type assignment rules.
+    <img src="../images/new-cases-queues.png" alt="New Case" title="New Case" style="border: 1px solid gray; zoom:70%;">
 
-    * For the **Voice**, select the customer's **phone number** and **Country** from the dropdown list.
+        !!! Note
 
-    * For the **Web/Mobile Client**, enter the customer’s **email address**.
-
-5. Select the case template from the **Case Type** dropdown list to capture the details about the customer's issue or query.
-
-6. Select a **Due Date** to complete the case.
-
-7. In the description, enter a **conversation summary** of the issue or service request.
-
-8. Enter a **Title** for the case based on the issue raised by the customer.
-
-9. Select the **(Critical/High/Medium/Low)** from the **Priority** level dropdown list. By default, the Status is set as Open.
-
-11. Click **Save**. A success message is displayed, and a new case is created and assigned to an agent based on the case type assignment rules.
-
-    !!! Note
-
-        You must fill all the fields marked with a red asterisk (*).
+            You must fill all the fields marked with a red asterisk (*).
 
 ### View Cases
+
+The View cases feature provides a case management interface that lets you access and manage individual support cases. The page also displays case activities, including comments, events, and conversations. 
+
+Case IDs and task IDs appear as links throughout the interface. Agents can view customer cases by selecting a case ID link. The case details open in a new tab. You can view cases and tasks in separate tabs for easy navigation. To return to the list view, select the Home icon.
+
+The Conversations section supports email communication. You can create an email by selecting a recipient, queue, and template. All replies in the conversation thread appear in this section.
+
+The conversation stays open until it times out or you manually close it.
+
+!!! Note
+
+    To send an email, you can use the respective customized email template.
+
+<img src="../images/view-cases-tile.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
 A supervisor can view various cases of the following statuses:
 

@@ -7,7 +7,7 @@ This post provides the configuration steps to enable the ServiceNow Agent integr
 
 ## Overview
 
-Kore.ai’s AI Agent serves as the central point of interaction for the users. In addition to its regular capabilities, the VA acts as a proxy or intermediary between the users and the ServiceNow agents to hand over conversations seamlessly. The VA also allows you to integrate with the ServiceNow platform. The VA facilitates communication and interaction between the user and the ServiceNow agent using the chat module.
+Kore.ai’s AI Agent serves as the central point of interaction for the users. In addition to its regular capabilities, the AI Agent acts as a proxy or intermediary between the users and the ServiceNow agents to hand over conversations seamlessly. The AI Agent also allows you to integrate with the ServiceNow platform. The AI Agent facilitates communication and interaction between the user and the ServiceNow agent using the chat module.
 
 
 ## Configuration
@@ -96,7 +96,7 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 
     !!! Note
     
-        This option is enabled only when you have multiple agents configured for your VA.
+        This option is enabled only when you have multiple agents configured for your AI Agent.
 
 7. You can customize the channel mapping by clicking the **Configure** link as shown below:
 
@@ -106,11 +106,11 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img9.png" alt="Map channels to use ServiceNow agent" title="Map channels to use ServiceNow agent" style="border: 1px solid gray;zoom:80%;">
 
-    For example, if you have configured a Genesys chat integration, Intercom and ServiceNow agents. You can make one of them as default and map channels to agent systems. In this case, the Web Client and WebHook are mapped to Genesys and Intercom. Slack is mapped to the default ServiceNow agent. To learn more about channel enablement, see [Adding channels to your app](../../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+    For example, if you have configured a Genesys chat integration, Intercom and ServiceNow agents. You can make one of them as default and map channels to agent systems. In this case, the Web Client and WebHook are mapped to Genesys and Intercom. Slack is mapped to the default ServiceNow agent. To learn more about channel enablement, see [Adding channels to your app](../../../../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 
 10. After mapping channels, click **Done**.
 11. Click **Save** to enable the ServiceNow agent.
-12. Publish the VA. For more information, see [Publishing App](../../../../../deploy/publishing-bot/){:target="_blank"}.
+12. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 ### Step 4: Switch to UI16 theme
@@ -262,7 +262,7 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
     1. **Name** and select the **live_message** table from the **Table** drop-down.
     2. Select the Active and Advanced check boxes.
     3. Click the **When to run** tab, and select **after** from the **When** drop-down, and select the **Insert** checkbox.
-    4. Add **Filter conditions** to execute this Business rule if created by is not a chatbot_interface.
+    4. Add **Filter conditions** to execute this Business rule if created by is not an AI Agent_interface.
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img33.png" alt="Add filter conditions" title="Add filter conditions" style="border: 1px solid gray;zoom:80%;">
 
@@ -288,7 +288,7 @@ This section helps you verify how the conversations from the Kore.ai XO Platform
 To verify the data exchange between Kore.ai’s AI Agent and ServiceNow agent, follow these steps:
 
 1. Open an AI Agent for which you have enabled the ServiceNow agent.
-2. Create a new Agent Transfer Node task. For example, create a _Platform Agent_ task with the _UserAgent_ node and configure it to use the ServiceNow agent. For more information, see [Agent Transfer Node](../../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"}.
+2. Create a new Agent Transfer Node task. For example, create a _Platform Agent_ task with the _UserAgent_ node and configure it to use the ServiceNow agent. For more information, see [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}.
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img34.png" alt="new Agent Transfer Node task" title="new Agent Transfer Node task" style="border: 1px solid gray;zoom:80%;">
 

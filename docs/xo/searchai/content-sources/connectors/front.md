@@ -43,9 +43,9 @@ To enable integration between Search AI and Front and ingest content from your F
 
 Search AI uses Front APIs to access the content. Hence, it requires an API token to establish communication. Follow these steps to generate the token:
 
-1. Log in to Front Account. Ensure that the account has admin access. 
+1. Sign in to Front Account. Ensure that the account has admin access. 
 2. Navigate to Settings and the Developer section. 
-3. Go to the API token tab. Click on Create Token and provide a name for the token. Select the scopes required to access knowledgebase articles. Click Create.
+3. Go to the API token tab. Click **Create Token** and enter a name for the token. Select the scopes required to access knowledgebase articles. Click **Create**.
 4. Copy the generated API token. This token will be required for connector configuration in Search AI.
 
 
