@@ -2,7 +2,7 @@
 
 The **Tools Analytics Dashboard** offers a unified and comprehensive tool for tracking and analyzing the performance of the deployed tools and their specific versions within your account.
 
-It provides valuable insights into metrics such as successful or failed tool runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../tools/tool-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a tool flow.
+It provides valuable insights into metrics such as successful or failed tool runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../ai-agents/tools/tool-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a tool flow.
 
 Key metrics are displayed intuitively using visually engaging graphs and dynamic widgets, which update based on the selected filters. 
 
@@ -232,12 +232,12 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 <ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li></ul>
 
    * Start Node
-   * [AI Node](../../../tools/tool-flows/types-of-nodes/ai-node.md){:target="_blank"}
-   * [Function Node](../../../tools/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
-   * [Condition Node](../../../tools/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
-   * [API Node](../../../tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
-   * [DocSearch Node](../../../tools/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
-   * [End Node](../../../tools/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
+   * [AI Node](../../../ai-agents/tools/tool-flows/types-of-nodes/ai-node.md){:target="_blank"}
+   * [Function Node](../../../ai-agents/tools/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
+   * [Condition Node](../../../ai-agents/tools/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
+   * [API Node](../../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
+   * [DocSearch Node](../../../ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
+   * [End Node](../../../ai-agents/tools/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
 
 <p><b>Best Practices</b></p>
 
@@ -283,8 +283,8 @@ The **Tools Analysis Dashboard** offers actionable and customized insights on th
 
 ## Related Information
 
-* [Settings Console](../../../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}- Learn more about other Tool Platform admin features.
-* [Tool Flow Change Logs](../../../tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
+* [Tool Flow Change Logs](../../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.

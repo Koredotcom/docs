@@ -32,7 +32,7 @@ The API response includes the **tool ID** and the **tool undeployment status**. 
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
+**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Path Parameters
 

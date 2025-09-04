@@ -393,3 +393,7 @@ Do one of the following:
 **Share a Tool**
 
 When you share a tool with another user within the same account, all configurations of the **Function node** are retained and available to the recipient as well.
+
+## Related Links
+
+* **Supported Libraries** - [Learn more](../types-of-nodes/script-libraries.md) about the list of supported libraries in the script editor of the Function node.

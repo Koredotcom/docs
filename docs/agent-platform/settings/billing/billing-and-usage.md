@@ -39,7 +39,7 @@ The Usage page displays the following tabs for billing and usage:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Use the Calendar bar on all the tabs to search by the number of days using predefined date filters—24 hours, 7 days, 30 days, or 90 days. You can also use the Custom option to specify your preferred date range. <a href="https://docs.kore.ai/agent-platform/settings/monitoring/analytics/tools-analytics-dashboard/#global-timeline-filters" target="_blank">Learn more</a>.</p>
+<p>Use the Calendar bar on all the tabs to search by the number of days using pre-defined date filters—24 hours, 7 days, 30 days, or 90 days. You can also use the Custom option to specify your preferred date range. <a href="https://docs.kore.ai/agent-platform/settings/monitoring/analytics/tools-analytics-dashboard/#global-timeline-filters" target="_blank">Learn more</a>.</p>
 </div>
 
 
@@ -72,37 +72,40 @@ The following usage information is displayed on the tab:
 
 ## Models Usage
 
-The Models tab displays a comprehensive list of open-source models in the account and the computational cost of storing, fine-tuning, and hosting each model.
+The **Models** tab displays a comprehensive list of open-source and fine-tuning models in the account and the computational cost of storing, fine-tuning, and hosting each model.
 
 <img src="../images/models-usage.png" alt="Billing Models tab" title="Billing Models tab" style="border: 1px solid gray; zoom:80%;">
 
-The following usage information is displayed on the tab:
+If there are multiple deployments of the same model, the usage data is displayed for each deployment in the drill-down view. [Learn more](./billing-and-usage.md/#viewing-deployment-level-information){:target="_blank"}.
+
+The following usage metrics summarize data for all the deployments:
 
 * **Total models**: The total number of models in the account.
-* **Total credits**: The total credits used by all the models.
+* **Total credits**: The total credits used by all the models (including all the deployments).
 * **Fine-tuning credits**: The number of credits used for fine-tuning the models. The number of credits are based on factors like the size of the training data, the model complexity, the number of training epochs, the type of hardware used, and other parameters.
 * **Hosting credits**: The total number of credits used to cover the cost of deploying and hosting models on GPUs.
 When you deploy a model on powerful GPUs, each GPU instance is considered a "replica", which requires the allocation of hosting credits. For example, if your model runs on one A100 GPU, that counts as one replica and consumes a specific amount of hosting credits. If demand increases and you need to deploy a second A100 GPU to handle additional user requests, you will now have two replicas and be charged for both, requiring twice the number of hosting credits.
 
+The following information is displayed for each model record:
+
 * **Model name**: The name of the model.
-* **Model type**: The type of model used: Fine-tuned or Base.
-* **Credits used**: The number of credits used by the model.
-* **Last active on**: The date when the model was last active.
-* **Status**: The current status of the model: Deployed, Undeployed, or Deleted.
+* **Type**: The type of model used: Fine-tuned or Base.
+* **Credits used**: The credits consumed by the deployment.
+* **Last deployed on**: The date when the model was last deployed.
 
-### Viewing Detailed Model Information
+### Viewing Deployment-level Information
 
-Clicking each row on the Models tab opens a panel on the right that displays detailed information about the costs associated with the selected model.
-
-<img src="../images/models-tab.png" alt="Models detailed information" title="Models detailed information" style="border: 1px solid gray; zoom:80%;">
+Click each Model record to view a detailed record of all its deployments with the following information:
 
 The following information is displayed:
 
-* Name of the model.
-* **Hosting**: The type of GPU used for hosting the model, the number of GPUs used, the duration for which the GPUs are being used, and the number of credits used to host the model.
-* **Fine-tuning**: The number of credits used to fine-tune the model.
-* **Total**: The total number of credits for hosting and fine-tuning the model.
+* **Name**: The name given to the deployment.
+* **Type**: The type of deployment.
+* **Credits used**: The credits consumed by the deployment.
+* **Last updated on**: The date when the deployment was last done.
+* **Status**: The current deployment status: *Deployed*, *Undeployed*, or *Deleted*.
 
+    <img src="../images/models-usage-drill-down.png" alt="drill down view" title="drill down view" style="border: 1px solid gray; zoom:80%;">
 
 ## Guardrails Usage
 
@@ -157,8 +160,9 @@ The **Custom Scripts** tab displays the list of custom scripts added to your acc
 * Credits for script consumption are deducted from the allocated credits (**Overview** tab) based on the table mentioned [here](https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#step-3-resource-allocation){:target="_blank"}.
 * In case the account credits are insufficient, new deployments are disabled via the script wizard.
 * If the low credit limit is reached during an active deployment, the deployment will continue and proceed into negative credit. 
-      * However, once the negative credit limit is crossed, the deployment will stop and display the following failure message: "*You've used all your available credits. Please add more credits to your account to continue.*"
-      * The credits are continually deducted from the account, while the negative credits are adjusted in the next billing cycle.
+      
+    * However, once the negative credit limit is crossed, the deployment will stop and display the following failure message: "*You've used all your available credits. Please add more credits to your account to continue.*"
+    * The credits are continually deducted from the account, while the negative credits are adjusted in the next billing cycle.
 * If no credits exist, the following happens:
       * Projects can only be imported as drafts. 
       *  Users will not be able to deploy imported projects. Deployment actions get disabled for the scripts.

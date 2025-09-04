@@ -152,6 +152,9 @@ nav:
     - Admin Console Overview: Administration/overview.md
     - Workspace: Administration/workspace.md
     - Account Hub: Administration/account-hub.md
+    - Workspace Management:
+      - Account Workspace: workspace-management/account-workspace.md
+      - Personal Workspace: workspace-management/personal-workspace.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing your users.md

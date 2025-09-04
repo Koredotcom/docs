@@ -21,7 +21,7 @@ The following file extensions are currently supported:
 * WEBP (.webp)
 * GIF (.gif)
 
-**Where can I find the API key?** [Learn more](../../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
+**Where can I find the API key?** [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Mode 1: Upload a Single File As Is
 

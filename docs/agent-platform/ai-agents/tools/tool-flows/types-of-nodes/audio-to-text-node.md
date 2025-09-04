@@ -17,7 +17,7 @@ You must provide the audio file URL when running the flow, as mentioned [here](.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Uploading audio files as input variables is <b>not supported</b>.</p>
+<p>Uploading audio files as input variables is <b>not supported</b> only URLs are supported.</p>
 </div>
 
 ### Supported Audio Formats

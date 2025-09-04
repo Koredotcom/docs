@@ -12,9 +12,9 @@ Workflow Tools can automate processes, streamline workflows, generate insights, 
 
 * **API Keys**: Create API keys for your deployed tools to access them from external systems securely. Share these keys only with trusted users. [Learn more](./create-a-new-api-key.md).
 
-* **Tool Monitor**: Track and analyze your tools' performance across multiple runs, gaining a comprehensive, time-based view of tool activities to optimize your AI operations. [Learn more](./agent-monitor/about-agent-monitor.md).
+* **Tool Monitor**: Track and analyze your tools' performance across multiple runs, gaining a comprehensive, time-based view of tool activities to optimize your AI operations. [Learn more](./tool-monitor/about-tool-monitor.md).
 
-* **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](./guardrails/add-a-scanner.md).
+* **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](../../guardrails/add-a-scanner.md).
 
 * **Audit Logs**: Track the audit logs of all activities within your tool flows and quickly troubleshoot issues with real-time event tracking. [Learn more](./tool-audit-log.md).
 

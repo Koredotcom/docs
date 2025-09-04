@@ -18,19 +18,20 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    <td>OpenAI</td>
    <td>
   <ul>
-    <li>open ai-gpt-4o</li>
-    <li>open ai-gpt-4o-mini</li>
-    <li>open ai-gpt-3.5-turbo</li>
-    <li>open ai-gpt-3.5-turbo-1106</li>
-    <li>open ai-gpt-4</li>
-    <li>open ai-gpt-4-0125-preview</li>
-    <li>open ai-gpt-4-1106-preview</li>
-    <li>open ai-gpt-4-turbo-preview</li>
-    <li>open ai-gpt-4-0613</li>
-    <li>open ai-gpt-4.1-2025-04-14</li>
-    <li>open ai-gpt-4.1-mini-2025-04-14</li>
-    <li>open ai-gpt-4.1-nano-2025-04-14</li>
-    <li>open ai-gpt-4.5-preview-2025-02-27</li>
+    <li>gpt-4o</li>
+    <li>gpt-4o-mini</li>
+    <li>gpt-3.5-turbo</li>
+    <li>gpt-3.5-turbo-1106</li>
+    <li>gpt-4</li>
+    <li>gpt-4-0125-preview</li>
+    <li>gpt-4-1106-preview</li>
+    <li>gpt-4-turbo-preview</li>
+    <li>gpt-4-0613</li>
+    <li>gpt-4.1-2025-04-14</li>
+    <li>gpt-4.1-mini-2025-04-14</li>
+    <li>gpt-4.1-nano-2025-04-14</li>
+    <li>gpt-4.5-preview-2025-02-27</li>
+    <li>o3-mini</li>
   </ul>
    </td>
   </tr>
@@ -39,10 +40,16 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    </td>
    <td>
    <ul>
-    <li>azure open ai-gpt-4</li>
-    <li>azure open ai-gpt-3.5-turbo</li>
-    <li>azure open ai-gpt-4o</li>
-    <li>azure open ai-gpt-4o-mini</li>
+    <li>GPT-3.5-Turbo</li>
+    <li>GPT-4</li>
+    <li>GPT-4o</li>
+    <li>GPT-4o-Mini</li>
+    <li>GPT-4.1</li>
+    <li>GPT-4.1-Nano</li>
+    <li>GPT-4.1-Mini</li>
+    <li>O1</li>
+    <li>O1-Mini</li>
+    <li>O3-Mini</li>
   </ul>
    </td>
   </tr>
@@ -50,13 +57,15 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    <td>Anthropic</td>
    <td>
     <ul>
-    <li>anthropic-claude-3-5-sonnet</li>
-    <li>anthropic-claude-3-haiku</li>
-    <li>anthropic-claude-3-sonnet</li>
-    <li>anthropic-claude-3-opus</li>
-    <li>anthropic-claude-3-7-sonnet-20250219</li>
-    <li>anthropic-claude-3-5-sonnet-20241022</li>
-    <li>anthropic-claude-3-5-haiku-20241022</li>
+    <li>claude-3-5-sonnet</li>
+    <li>claude-3-haiku</li>
+    <li>claude-3-sonnet</li>
+    <li>claude-3-opus</li>
+    <li>claude-3-7-sonnet-20250219</li>
+    <li>claude-3-5-sonnet-20241022</li>
+    <li>claude-3-5-haiku-20241022</li>
+    <li>claude-sonnet-4-20250514</li>
+    <li>claude-opus-4-20250514</li>
   </ul>
    </td>
   </tr>
@@ -69,7 +78,8 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gemini-1.5-flash-latest</li>
     <li>gemini-2.0-flash</li>
     <li>gemini-2.0-flash-lite</li>
-    <li>gemini-2.5-flash-preview-05-20</li>
+    <li>gemini-2.5-flash-preview-05-20</li>  
+    <li>gemini-2.5-flash</li>
   </ul>
    </td>
   </tr>
@@ -384,6 +394,13 @@ The supported models and their variants are given below:
 </ul>
    </td>
   </tr>
+  <tr>
+   <td><strong>Xiaomi</strong>
+   </td>
+   <td>
+   <ul><li>Mimo-7B--VL-RL</li></ul>
+   </td>
+   </tr>
 </table>
 
 
@@ -443,21 +460,14 @@ Here is the list of all the external models supported in Agent Platform:
 <li>GPT-4</li>
 
 <li>GPT-3.5-Turbo</li>
-
 <li>GPT-4o-Mini</li>
-
 <li>GPT-4o</li>
-
 <li>GPT-4.1</li>
-
 <li>GPT-4.1-mini</li>
-
+<li>GPT-4.1-nano</li>
 <li>GPT-4.5-preview</li>
-
 <li>O1-Mini</li>
-
 <li>O1</li>
-
 <li>O3-Mini</li>
 </ul>
    </td>
@@ -504,7 +514,8 @@ Here is the list of all the external models supported in Agent Platform:
    </td>
    <td>
 <ul>
-
+<li>Dall-e 2</li>
+<li>Dall-e 3</li>
 <li>gpt-4o</li>
 
 <li>gpt-4o-mini</li>

@@ -32,7 +32,7 @@ Once undeployed, the guardrails become inactive. The API response includes the *
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
+**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Path Parameters
 
