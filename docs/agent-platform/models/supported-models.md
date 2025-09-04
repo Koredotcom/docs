@@ -80,6 +80,8 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gemini-2.0-flash-lite</li>
     <li>gemini-2.5-flash-preview-05-20</li>  
     <li>gemini-2.5-flash</li>
+    <li>gemini-live-2.5-flash-preview</li>
+    <li>gemini-2.0-flash-live-001</li>
   </ul>
    </td>
   </tr>

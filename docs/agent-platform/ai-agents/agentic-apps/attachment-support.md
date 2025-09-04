@@ -183,7 +183,7 @@ Use the **attach** option in the chat widget to upload files while testing your 
 ![alt_text](images/attachments/attach-option.png "image_tooltip")
 
 
-This allows you to upload the files. Refer to [this for file limits](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/settings/app-configurations/#attachment-configuration). 
+This allows you to upload the files. Refer to [this for file limits](settings/app-configurations.md#attachment-configuration) .
 
 
 ## File State Management

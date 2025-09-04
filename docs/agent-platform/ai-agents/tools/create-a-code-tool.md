@@ -142,6 +142,16 @@ const query = $query;
 return executeSQL(query);
 ```
 
+Similarly, to print the booking confirmation message using Python, use the following code. 
+ 
+```python
+from datetime import datetime
+
+def booking_confirmation(source, destination):
+    return f"Ticket booked from {source} to {destination} on {datetime.now()}"
+
+return booking_confirmation(source, destination)
+```
 ---
 
 **Sample Response**
