@@ -968,3 +968,12 @@ For first time users, use the POST API and for existing users, use the PUT API t
         }
     }
 ```
+## XO 11 Configuration Notes
+
+For the configured App, ensure at least one Dialog Task has been configured for Agent AI use.
+<img src="../images/dialog-settings-page-25.png" alt="dialog-settings-page" title="dialog-settings-page" style="border: 1px solid gray; zoom:80%;">
+
+**Where to find configuration settings**
+
+You can find the necessary information in **Flows & Channels** > **Digital** > **Web/Mobile Client**.
+<img src="../images/jwt-app-details-26.png" alt="jwt-app-details" title="jwt-app-details" style="border: 1px solid gray; zoom:80%;">
