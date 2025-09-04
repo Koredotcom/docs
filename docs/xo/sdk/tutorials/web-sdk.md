@@ -26,7 +26,7 @@ This section provides detailed steps on how to run a Kore.ai sample bot using th
 1. Log on to Bot Builder, click the **down arrow** next to the  **+New Bot,** and select **Install Sample Bots.**
 2. Hover over **Travel Planning Sample**, and then click **Install**.
 3. The Travel Planning Sample installed successfully message is displayed and the sample bot is added to your **Bots** left-hand navigation menu.
-In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample bot by creating a new client app and defining channel settings. [See here](../../channels/add-web-mobile-client) for a detailed explanation of the steps.
+In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample bot by creating a new client app and defining channel settings. [See here](../../channels/add-web-mobile-client.md) for a detailed explanation of the steps.
 4. On the bot builder top menu, select the **Deploy** tab.
 5. From the left menu, click **Integrations > Web/Mobile SDK**.
 6. In the **Select App** drop-down list, click **Create App**. The **Create Client App** dialog is displayed.
@@ -55,7 +55,7 @@ Now that the bot is created and defined for the Web/Mobile Client channel, you a
 17. To download and install node.js on your computer, go to [https://nodejs.org/en/download/](https://nodejs.org/en/download/), and then select your OS as .pkg for Mac, and .msi for Windows.
 18. In a **Terminal** window, run the <code>node -v</code> command to verify installation and version, for example, <code>v6.10.2</code>.
 19. Locate the **SDKApp/sdk** folder of your <span style="text-decoration:underline;">web server hosting the app</span> where you want to integrate the Kore bot. For this tutorial, to download the test application and JWT web service, click [SDKApp](https://s3.amazonaws.com/static-kore/downloads/SDKApp.zip), and unzip it.
-20. To download the Kore.ai Web SDK, go to [https://github.com/Koredotcom/web-kore-sdk](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}. In the **master** dropdown, select the required **Branch/Tag** and then in the **Code** dropdown, click **Download ZIP**. Extract all files to the …/SDKApp/sdk folder mentioned in the step above. Check for the release compatibility from the [release notes](https://developer.kore.ai/docs/bots/whats-new/whats-new-in-this-release-bot-builder/#SDK_Versions).
+20. To download the Kore.ai Web SDK, go to [https://github.com/Koredotcom/web-kore-sdk](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}. In the **master** dropdown, select the required **Branch/Tag** and then in the **Code** dropdown, click **Download ZIP**. Extract all files to the …/SDKApp/sdk folder mentioned in the step above. 
 21. From the Bot Builder **Web/Mobile Client Channel** page on the **Deploy -> Channels** menu, copy the following (as mentioned in step 8 above):
     1. clientSecret
     2. clientId
@@ -131,9 +131,9 @@ Now that the bot is created and defined for the Web/Mobile Client channel, you a
 24. <em>Go to home directory <code>cd SDKApp</code></em>
 25. Install dependencies using the following command
     <code>npm install</code>
-    ![Node JS](../images/start-nodejs.png "start nodejs")
+    ![Node JS](images/start-nodejs.png "start nodejs")
 
-26. <em>Start SDKApp \
+26. <em>Start SDKApp 
     `node startServer.js`
 27. Access the application in any browser using localhost:3000.
 
@@ -173,17 +173,14 @@ botOptions.botInfo = {name:"<bot_name>",
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![Custom Data](../images/custom-data.png "custom data")
+![Custom Data](images/custom-data.png "custom data")
 
 
 
 ### Passing Mapped Identities
 
-The Web/Mobile SDKs support the passing of mapped identities of the users when they switch from one identity to another while interacting with the bot. This process allows the users to continue any ongoing conversation initiated using a previous identity. \
-For example, a user may have started a conversation with the bot using an anonymous or randomly generated identity. After exchanging a few messages, the user may become an authenticated or known user by logging into your website or any application. At this point, the user’s known identity can be passed to the bot from the SDK as part of the ‘[JWT Grant API](../sdk-security/#about-jwe-token)’ call using the parameter identityToMerge. The Platform uses this information to merge the user identities and allows the user to resume an ongoing conversation using the new known identity.
+The Web/Mobile SDKs support the passing of mapped identities of the users when they switch from one identity to another while interacting with the bot. This process allows the users to continue any ongoing conversation initiated using a previous identity. 
+For example, a user may have started a conversation with the bot using an anonymous or randomly generated identity. After exchanging a few messages, the user may become an authenticated or known user by logging into your website or any application. At this point, the user’s known identity can be passed to the bot from the SDK as part of the ‘[JWT Grant API](../sdk-security.md#about-jwe-token)’ call using the parameter identityToMerge. The Platform uses this information to merge the user identities and allows the user to resume an ongoing conversation using the new known identity.
 
 
 ```json
