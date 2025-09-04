@@ -4,14 +4,14 @@ You can use the **Prebuilt Action Templates** from your OpenAI integration to au
 
 Steps to create a dialog task using OpenAI action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 
 2. On the Dialog Task pop-up, under the **Integration**, select the **OpenAI** option to view the action templates.  
 <img src="../images/open-ai-tem-img2.png" alt="Integration -- OpenAI" title="Integration -- OpenAI" style="border: 1px solid gray;zoom:50%;"/>  
   
-If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.  
+If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
   <img src="../images/open-ai-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -52,7 +52,7 @@ The following OpenAI actions are supported in this release:
 
 Steps to generate answers from context task using the OpenAI integration:
 
-1. Refer to the[ Installing the OpenAI templates](../configuring-the-openai-action/#step-2-install-the-openai-action-templates){:target="_blank"} section to install this template.
+1. Refer to the[ Installing the OpenAI templates](configuring-the-openai-action.md#step-2-install-the-openai-action-templates){:target="_blank"} section to install this template.
 2. The _Generate answers from context_ dialog task is added with the following components:  
 <img src="../images/open-ai-tem-img4.png" alt="Generate answers from context dialog task is added" title="Generate answers from context dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -112,7 +112,7 @@ Steps to generate answers from context task using the OpenAI integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to generate answers from context as shown below:  
+5. Follow the prompts in the App console to generate answers from context as shown below:  
 <img src="../images/open-ai-tem-img7.png" alt="VA prompt to generate answer from context" title="VA prompt to generate answer from context" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Enter a question based on context when prompted by the VA as shown below:  
@@ -125,7 +125,7 @@ Steps to generate answers from context task using the OpenAI integration:
 
 Steps to extract skills from the resume using OpenAI integration:
 
-1. Refer to the[ Installing the OpenAI templates](../configuring-the-openai-action/#step-2-install-the-openai-action-templates){:target="_blank"} section to install this template.
+1. Refer to the[ Installing the OpenAI templates](configuring-the-openai-action.md#step-2-install-the-openai-action-templates){:target="_blank"} section to install this template.
 2. The _Extract Skills from resume_ dialog task is added with the following components:  
 <img src="../images/open-ai-tem-img9.png" alt="Extract Skills from resume dialog task is added" title="Extract Skills from resume dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -182,8 +182,8 @@ Steps to extract skills from the resume using OpenAI integration:
 
 1. Click the **Train** tab to complete the Dialog task training.
 2. Click the **Talk to Bot** icon to test and debug the dialog task.
-3. Follow the prompts in the VA console to extract skills.
-4. Enter the resume content when prompted by the VA.  
+3. Follow the prompts in the App console to extract skills.
+4. Enter the resume content when prompted by the AI Agent.  
 <img src="../images/open-ai-tem-img12.png" alt="Enter resume content" title="Enter resume content" style="border: 1px solid gray;zoom:50%;"/>
 
 5. The VA now extracts the skills based on the resume content entered.  

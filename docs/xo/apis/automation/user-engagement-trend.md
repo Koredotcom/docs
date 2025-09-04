@@ -36,7 +36,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: User Engagement Trend
+<li>App Builder: User Engagement Trend
 
 <li>Admin Console: Not Applicable
 </li>
@@ -106,6 +106,8 @@ curl -X POST \
    </td>
    <td><strong>REQUIRED/OPTIONAL</strong>
    </td>
+   <td><strong>TYPE</strong>
+   </td>   
    <td><strong>DESCRIPTION</strong>
    </td>
   </tr>
@@ -114,6 +116,8 @@ curl -X POST \
    </td>
    <td>Required
    </td>
+   <td>
+   </td>   
    <td>Object with the following details to filter the result set
    </td>
   </tr>
@@ -122,6 +126,8 @@ curl -X POST \
    </td>
    <td>Required
    </td>
+   <td>Date
+   </td>   
    <td>Refers to the start time of the period to be considered.
    </td>
   </tr>
@@ -130,6 +136,8 @@ curl -X POST \
    </td>
    <td>Required
    </td>
+   <td>Date
+   </td>    
    <td>Refers to the end time of the period to be considered.
    </td>
   </tr>
@@ -138,6 +146,8 @@ curl -X POST \
    </td>
    <td>Optional
    </td>
+   <td>String
+   </td>    
    <td>Refers to the channel from which the interactions have happened.
    </td>
   </tr>
@@ -146,6 +156,8 @@ curl -X POST \
    </td>
    <td>Optional
    </td>
+   <td>String
+   </td>    
    <td>Refers to the type of aggregation to be allowed, possible values are:
 <ul>
 

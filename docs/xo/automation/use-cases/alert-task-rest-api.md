@@ -13,7 +13,7 @@ For such an Alert Task you will need to define:
 * **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/bot-authorization/setting-up-authorization-using-an-api-key/" target="_blank">Learn more</a>.
 * **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#parameters" target="_blank">Learn more</a>.
 * **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#define-an-initializer" target="_blank">Learn more</a>.
-* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your Bot to initiate the delivery of the data payload from the web service to the Bots Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#define-the-request-chain" target="_blank">Learn more</a>.
+* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your AI Agent to initiate the delivery of the data payload from the web service to the Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#define-the-request-chain" target="_blank">Learn more</a>.
 * **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#add-the-response-sample" target="_blank">Learn more</a>.
 * **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#preview-website-link-content" target="_blank">Learn more</a>.
 
@@ -21,11 +21,11 @@ Click **Save** to save the API request settings.
 
 ## Content Type
 
-The **Content Type** describes the type of data exchanged between Kore.ai and your Bot website or application, and the key-value pairs expected in the task payload response. To define the Content Type for the API Request (REST), expand the **Content Type** tab and select one of these options:
+The **Content Type** describes the type of data exchanged between Kore.ai and your app website or application, and the key-value pairs expected in the task payload response. To define the Content Type for the API Request (REST), expand the **Content Type** tab and select one of these options:
 
 <img src="../images/select-content-type.png" alt="select content type" title="select content type" style="border: 1px solid gray; zoom:75%;">
 
-* **JSON** – JavaScript Object Notation is an open standard format using human-readable text to transmit data objects as attribute-value pairs. You can use JSON to transmit data between the Kore.ai servers and your Bot web application.
+* **JSON** – JavaScript Object Notation is an open standard format using human-readable text to transmit data objects as attribute-value pairs. You can use JSON to transmit data between the Kore.ai servers and your App web application.
 * **RSS** – Rich Site Summary, or Really Simple Syndication, is a family of standardized formats used to publish frequently updated information such as blog entries, news headlines, audio, and video.
 * **XML** – Extensible Markup Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. Oftentimes, web services use XML schemas to process the XML data.
 * **URL Encoded JSON** – URLs using JSON encoding for reserved characters.
@@ -122,10 +122,10 @@ Follow these steps to define the API Request (REST) parameters:
 
 <li>Click <strong>Save</strong>. To add additional items, click <strong>Add Option</strong> again. Edit or remove options in the <strong>Actions</strong> column for options.
 
-<li><strong>Dynamic Dropdown</strong> – Displays a drop-down list dynamically populated at runtime based on the response from a URL for your Bot, for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated dropdown. 
+<li><strong>Dynamic Dropdown</strong> – Displays a drop-down list dynamically populated at runtime based on the response from a URL for your App, for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated dropdown. 
 <ul>
  
-<li><strong>Endpoint URL</strong> – The Bot endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
+<li><strong>Endpoint URL</strong> – The App endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
  
 <li><strong>Endpoint Content Type</strong> – The content type expected from the specified endpoint URL. One of: JSON, RSS, XML, URL Encoded JSON, CCV, Text, or Twitter Encoded JSON.
  
@@ -153,7 +153,7 @@ Follow these steps to define the API Request (REST) parameters:
 <li><strong>Type Ahead</strong> – Displays a dynamically populated drop-down list of choices to the end-user at runtime when the user enters three or more characters that match the search results based on the response from the URL defined for the task. For example, a list of projects for a <em>JIRA</em> task notification message. Define the following properties for a dynamically populated drop-down. 
 <ul>
  
-<li><strong>Endpoint URL</strong> – The Bot endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
+<li><strong>Endpoint URL</strong> – The App endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
  
 <li><strong>Endpoint Content Type</strong> – The content type expected from the specified endpoint URL. One of: JSON, RSS, XML, URL Encoded JSON, CCV, Text, Twitter Encoded JSON, Multipart/Form-data, or Multipart/Related.
  
@@ -221,14 +221,14 @@ Follow these steps to define the API Request (REST) parameters:
 
 <li><strong>Email</strong> – User can input a valid email address.
 
-<li><strong>Object</strong> – Data from a Bot can be received as JSON objects, for example, as location details defined as: 
+<li><strong>Object</strong> – Data from an App can be received as JSON objects, for example, as location details defined as: 
  “location” : { 
                “lat” : 17.4374614, 
                “lng” : 78.4482878 
             } 
 where you can refer to the properties in a request chain or task request as location.lat, and location.lng.
 
-<li><strong>Array</strong> – Users can pass a comma-separated list of values to the Bot. For example, in <em>Google Calendar</em>, multiple attendees with data can be passed as: 
+<li><strong>Array</strong> – Users can pass a comma-separated list of values to the App. For example, in <em>Google Calendar</em>, multiple attendees with data can be passed as: 
 “attendees”: [“user1”, “user2”, “user3”] 
 When selected, specify the <strong>Type</strong> for the array of end-user input as one of the following: 
 <ul>
@@ -283,7 +283,7 @@ When selected, specify the <strong>Type</strong> for the array of end-user input
     Specify if the task input field should be visible or hidden from the end-user.
 <p>
 
-    The <strong>Visibility</strong> field can also be set to <strong>Custom</strong> where data is captured from the user but not used as a query parameter or payload field. For example, with a JIRA bot, posting a comment on a ticket using an @mention tag as shown below:
+    The <strong>Visibility</strong> field can also be set to <strong>Custom</strong> where data is captured from the user but not used as a query parameter or payload field. For example, with a Jira app, posting a comment on a ticket using an @mention tag as shown below:
 <p>
 
     “@Mike, please look into this issue” 
@@ -326,18 +326,18 @@ The JIRA API to ‘Post a comment’ requires one query field and one payload fi
 
 <li><strong>EnterpriseContext</strong> – Define a key/value pair available to all users in an enterprise.
 
-<li><strong>BotContext</strong> – Define a key/value pair available to all users of this bot.
+<li><strong>BotContext</strong> – Define a key/value pair available to all users of this app.
 
-<li><strong>UserSession</strong> – Define a key/value pair available for this user for any bots in an enterprise.
+<li><strong>UserSession</strong> – Define a key/value pair available for this user for any apps in an enterprise.
 
-<li><strong>BotUserSession</strong> – Define a key/value pair available a bot based on user inputs.
+<li><strong>BotUserSession</strong> – Define a key/value pair available an app based on user inputs.
 </li>
 </ul>
    </td>
   </tr>
 </table>
 
-<ol start="4"><li>Click <b>Add & Continue</b> to save the parameter for the task request and add another parameter, or click <b>Add & Exit</b> to save the parameter for the task request and close the dialog. You should organize multiple parameters in the order that the bot user should provide inputs. Use the up and down icons to move the parameters.</li>
+<ol start="4"><li>Click <b>Add & Continue</b> to save the parameter for the task request and add another parameter, or click <b>Add & Exit</b> to save the parameter for the task request and close the dialog. You should organize multiple parameters in the order that the app user should provide inputs. Use the up and down icons to move the parameters.</li>
 <img src="../images/add-and-continue.png" alt="add and continue" title="add and continue" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ## Define an Initializer
@@ -358,7 +358,7 @@ To configure the task initializer, click the **Initializer** tab. It opens a Jav
 
 In the JavaScript editor, define the **Key** and the **Scope** as follows:
 
-**EnterpriseContext** – A key-value pair available to all bots and all users in an enterprise. For example, for a GitHub assistant, a user needs to access one or more enterprise repositories. In the **Initializer**, you can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code:
+**EnterpriseContext** – A key-value pair available to all apps and all users in an enterprise. For example, for a GitHub assistant, a user needs to access one or more enterprise repositories. In the **Initializer**, you can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code:
 
 ```js
 var userRepository = {
@@ -368,14 +368,14 @@ var userRepository = {
 EnterpriseContext.put('Gitrepository', userRepository, 200000);
 ```
 
-**BotContext** – A key-value pair available to all users of this specific bot. For example, you may want to set up a default currency for financial transactions in a session based on the user location. In the **Initializer**, you can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
+**BotContext** – A key-value pair available to all users of this specific app. For example, you may want to set up a default currency for financial transactions in a session based on the user location. In the **Initializer**, you can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
 
 ```js
 var defaultCurrency = { TODO Custom JavaScript for location-based currency }
 BotContext.put('currency', defaultCurrency, 200000);
 ```
 
-**UserContext** – A key-value pair available to all bots for a user. These keys are read-only and provided by the system as user data for:
+**UserContext** – A key-value pair available to all apps for a user. These keys are read-only and provided by the system as user data for:
 
 * **id** – The Kore.ai userId.
 * **emailId** – The email address associated with the userId.
@@ -387,9 +387,9 @@ BotContext.put('currency', defaultCurrency, 200000);
 * **title** – The title of the user, if defined.
 * **orgId** – The organizational ID of the user account, if defined.
 
-**UserSession** – Define a key-value pair available for this specific user for all bots in an enterprise.
+**UserSession** – Define a key-value pair available for this specific user for all apps in an enterprise.
 
-For example, you may want to store a user location to make it available to all bots, such as a user home address for commerce, transportation, and home delivery services. 
+For example, you may want to store a user location to make it available to all apps, such as a user home address for commerce, transportation, and home delivery services. 
 
 In the **Initializer**, you can persist the default location data as **HomeLocation (UserSession)** with the following JavaScript code:
 
@@ -404,9 +404,9 @@ var location = {
 UserSession.put('HomeLocation', location, '20000');
 ```
 
-**BotUserSession** – Define a key-value pair available to a specific bot based on a specific user’s inputs. 
+**BotUserSession** – Define a key-value pair available to a specific app based on a specific user’s inputs. 
 
-For example, you may want to persist in a user location for more than one bot task. For a travel bot, the user may be able to book a flight and a hotel based on the same home and destination addresses. 
+For example, you may want to persist in a user location for more than one app task. For a travel app, the user may be able to book a flight and a hotel based on the same home and destination addresses. 
 
 In the **Initializer**, you can persist the default home and destination data as **HomeLocation (BotUserSession)** and **DestinationLocation (BotUserSession)** with the following JavaScript code:
 
@@ -544,13 +544,13 @@ For any task, you will need to define an API request to make a call to a web ser
     * **DELETE** – Deletes the content of an existing target resource.
     * **GET** – Returns the content of an existing target resource.
 
-5. In the **URL** field, specify the URL for the bot task response to the process. For example, <code>http://koremessenger.com/postURL</code>. You can also use session variables in the URL as shown in the following example:
+5. In the **URL** field, specify the URL for the app task response to the process. For example, <code>http://koremessenger.com/postURL</code>. You can also use session variables in the URL as shown in the following example:
 <code>https://mySite.crm.ondemand.com/sap/c4c/odata/v1/c4codata/ServiceRequestCollection?$filter=ID eq '{id}' and ReporterEmail eq '{userEmail}'&amp;$expand=ServiceRequestHistoricalVersion,ServiceRequestDescription</code>
 
-6. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Bots using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/administration/kore-ai-connector/" target="_blank">Using the Kore.ai Connector</a>.
+6. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Apps using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network.
 7. On the **Headers** tab, in the **Content Type** field, select one of the following supported data types for your sample response data.
         
-    * **JSON** – JavaScript Object Notation is an open standard format using human-readable text to transmit data objects as attribute-value pairs. You can use JSON to transmit data between the Kore.ai servers and your Bot web application.
+    * **JSON** – JavaScript Object Notation is an open standard format using human-readable text to transmit data objects as attribute-value pairs. You can use JSON to transmit data between the Kore.ai servers and your App web application.
     * **RSS** – Rich Site Summary, or Really Simple Syndication, is a family of standardized formats used to publish frequently updated information such as blog entries, news headlines, audio, and video.
     * **XML** – Extensible Markup Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. Oftentimes, web services use XML schemas to process the XML data.
     * **URL Encoded JSON** – URLs using JSON encoding for reserved characters.
@@ -912,7 +912,7 @@ For example. If you used the **UX Preview** feature, the response from Kore.ai w
 }
 ```
 
-With the **Output Variable** set to `offers`, you can use the variable as `response.offers`. In Bot Builder, for example, in a task response object as follows:
+With the **Output Variable** set to `offers`, you can use the variable as `response.offers`. In an App Builder, for example, in a task response object as follows:
 
 ```js
 print(JSON.stringify(response));

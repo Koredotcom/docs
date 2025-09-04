@@ -1,7 +1,7 @@
 
 # Collaborative Development
 
-Kore.ai allows cross-domain App sharing. You can share your app with one or more developers from the same or different enterprises enabling them to edit the shared app tasks, channels, and other settings.
+The Platform allows cross-domain App sharing. You can share your app with one or more developers from the same or different enterprises enabling them to edit the shared app tasks, channels, and other settings.
 
 		
 ## Sharing Bots
@@ -33,19 +33,19 @@ There are two ways of sharing an app with your co-developers – from Builder or
 
     <img src="../images/invite-user.png" alt="Invite user to account" title="Invite user to account" style="border:1px solid gray;zoom:60%;">
  
-To add users to workspace and invite them to access your virtual assistant from the Bot Builder, read the[ Invite Members](../../getting-started/accessing-the-platform/#invite-members-to-your-workspace){:target="_blank"} section in the Using Workspace article.
+To add users to workspace and invite them to access your agent from the Bot Builder, read the [Invite Members](../getting-started/accessing-the-platform.md#invite-members-to-your-workspace){:target="_blank"} section in the Using Workspace article.
 
 
 ### Change App Share Settings
 
 From the Platform you can manage the developers working on your app. From the settings (3 dot) icon against each Developer you can:
 
-* **Delete** – Click to delete the bot for the selected developer. The developer immediately loses access to the bot.
+* **Delete** – Click to delete the app for the selected developer. The developer immediately loses access to the app.
 * **Promote AsOwner** – Click to change the selected developer to be the App Owner. When selected, you are immediately removed as App Owner and can no longer add or manage developers for this app.
 
 !!! Note
 
-    Settings for sharing for a bot can only be modified by the App Owner.
+    Settings for sharing for a app can only be modified by the App Owner.
 
 		
 ### From Admin Console
@@ -54,7 +54,7 @@ To share an app with a developer or another user, if you do not have permission 
 
 Here are the steps for the account Admin to add users to your account.
 
-1. Log on to[ https://platform.kore.ai/](https://platform.kore.ai/) and select **Go To Admin Console**. You may be asked to login/re-login to the admin account. 
+1. Log on to [https://platform.kore.ai/](https://platform.kore.ai/) and select **Go To Admin Console**. You may be asked to login/re-login to the admin account. 
 
     <img src="../images/admin-console-navigation.png" alt="Navigate to Admin Console" title="Navigate to Admin Console" style="border:1px solid gray;zoom:60%;">
 
@@ -73,7 +73,7 @@ Here are the steps for the account Admin to add users to your account.
 
 You can make changes to the App user settings by modifying the **User Profile settings** from the **Admin Console**.
 
-Double click on the App User that you want to change the settings for and you can set the Admin as well as the Platform Access roles.[ See here for more](../../administration/user-management/role-management/){:target="_blank"}.
+Double click on the App User that you want to change the settings for and you can set the Admin as well as the Platform Access roles. [See here for more](../administration/user-management/role-management.md){:target="_blank"}.
 
 		
 ### Working with Shared Apps

@@ -1,13 +1,13 @@
 # Configuring the ServiceNow Agent – Tokyo and Lower versions
 
-ServiceNow helps you build digital workflows on a single, unified platform. Kore.ai XO Platform’s ServiceNow Agent integration allows you to seamlessly hand off the virtual assistant conversations to your live agents on ServiceNow. 
+ServiceNow helps you build digital workflows on a single, unified platform. Kore.ai XO Platform’s ServiceNow Agent integration allows you to seamlessly hand off the AI Agent  conversations to your live agents on ServiceNow. 
 
 This post provides the configuration steps to enable the ServiceNow Agent integration in the **Tokyo** version. Use the configurations provided below as general guidelines, as there could be some differences based on the release and the specific version of the ServiceNow that you are using.
 
 
 ## Overview
 
-Kore.ai’s Virtual Assistant (VA) serves as the central point of interaction for the users. In addition to its regular capabilities, the VA acts as a proxy or intermediary between the users and the ServiceNow agents to hand over conversations seamlessly. The VA also allows you to integrate with the ServiceNow platform. The VA facilitates communication and interaction between the user and the ServiceNow agent using the chat module.
+Kore.ai’s AI Agent serves as the central point of interaction for the users. In addition to its regular capabilities, the AI Agent acts as a proxy or intermediary between the users and the ServiceNow agents to hand over conversations seamlessly. The AI Agent also allows you to integrate with the ServiceNow platform. The AI Agent facilitates communication and interaction between the user and the ServiceNow agent using the chat module.
 
 
 ## Configuration
@@ -60,7 +60,7 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 ### Step 3: Enable the ServiceNow Agent
 
 1. Log in to the Kore.ai XO Platform: [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}
-2. Select a Virtual Assistant for which you want to configure the ServiceNow agent. 
+2. Select an AI Agent for which you want to configure the ServiceNow agent. 
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **ServiceNow**.
 
 
@@ -92,11 +92,11 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
     7. **Webhook URL**: The web URL for custom application function callbacks.
 
 5. Click **Authorize** to authenticate and allow the XO platform to handover conversations to ServiceNow agent.
-6. If you want to make ServiceNow as the default agent, enable the **Default Agent System for all bot channels** option.
+6. If you want to make ServiceNow as the default agent, enable the **Default Agent System for all app channels** option.
 
     !!! Note
     
-        This option is enabled only when you have multiple agents configured for your VA.
+        This option is enabled only when you have multiple agents configured for your AI Agent.
 
 7. You can customize the channel mapping by clicking the **Configure** link as shown below:
 
@@ -106,11 +106,11 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img9.png" alt="Map channels to use ServiceNow agent" title="Map channels to use ServiceNow agent" style="border: 1px solid gray;zoom:80%;">
 
-    For example, if you have configured a Genesys chat integration, Intercom and ServiceNow agents. You can make one of them as default and map channels to agent systems. In this case, the Web Client and WebHook are mapped to Genesys and Intercom. Slack is mapped to the default ServiceNow agent. To learn more about channel enablement, see [Adding channels to your bot](../../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+    For example, if you have configured a Genesys chat integration, Intercom and ServiceNow agents. You can make one of them as default and map channels to agent systems. In this case, the Web Client and WebHook are mapped to Genesys and Intercom. Slack is mapped to the default ServiceNow agent. To learn more about channel enablement, see [Adding channels to your app](../../../../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 
 10. After mapping channels, click **Done**.
 11. Click **Save** to enable the ServiceNow agent.
-12. Publish the VA. For more information, see [Publishing Bot](../../../../../deploy/publishing-bot/){:target="_blank"}.
+12. Publish the App. For more information, see [Publishing App](../../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 ### Step 4: Switch to UI16 theme
@@ -213,7 +213,7 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img27.png" alt="REST Messages - New" title="REST Messages - New" style="border: 1px solid gray;zoom:80%;">
 
-4. Copy the **WebHook URL** from Kore.ai’s virtual assistant configuration page and paste it into the **Endpoint URL** field.
+4. Copy the **WebHook URL** from Kore.ai’s AI Agent configuration page and paste it into the **Endpoint URL** field.
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img28.png" alt="Endpoint URL - Kore.ai's WebHook URL" title="Endpoint URL - Kore.ai's WebHook URL" style="border: 1px solid gray;zoom:80%;">
 
@@ -262,7 +262,7 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
     1. **Name** and select the **live_message** table from the **Table** drop-down.
     2. Select the Active and Advanced check boxes.
     3. Click the **When to run** tab, and select **after** from the **When** drop-down, and select the **Insert** checkbox.
-    4. Add **Filter conditions** to execute this Business rule if created by is not a chatbot_interface.
+    4. Add **Filter conditions** to execute this Business rule if created by is not an AI Agent_interface.
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img33.png" alt="Add filter conditions" title="Add filter conditions" style="border: 1px solid gray;zoom:80%;">
 
@@ -285,14 +285,14 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 
 This section helps you verify how the conversations from the Kore.ai XO Platform are handed over to the ServiceNow agent after enabling it. 
 
-To verify the data exchange between Kore.ai’s VA and ServiceNow agent, follow these steps:
+To verify the data exchange between Kore.ai’s AI Agent and ServiceNow agent, follow these steps:
 
-1. Open a virtual assistant for which you have enabled the ServiceNow agent.
-2. Create a new Agent Transfer Node task. For example, create a _Platform Agent_ task with the _UserAgent_ node and configure it to use the ServiceNow agent. For more information, see [Agent Transfer Node](../../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"}.
+1. Open an AI Agent for which you have enabled the ServiceNow agent.
+2. Create a new Agent Transfer Node task. For example, create a _Platform Agent_ task with the _UserAgent_ node and configure it to use the ServiceNow agent. For more information, see [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}.
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img34.png" alt="new Agent Transfer Node task" title="new Agent Transfer Node task" style="border: 1px solid gray;zoom:80%;">
 
-3. Click the **Talk to Bot** icon to launch the VA and enter **Help**.
+3. Click the **Talk to Bot** icon to launch the AI Agent and enter **Help**.
 4. Log in to the ServiceNow Instance, select the **Impersonate User** from the **Profile** option as shown:
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img35.png" alt="Profile - Impersonate user" title="Profile - Impersonate user" style="border: 1px solid gray;zoom:80%;">
@@ -309,7 +309,7 @@ To verify the data exchange between Kore.ai’s VA and ServiceNow agent, follow 
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img38.png" alt="Set inbox status to Available" title="Set inbox status to Available" style="border: 1px solid gray;zoom:80%;">
 
-8. When a user initiates the chat from the VA, it transfers the conversation to the ServiceNow agent and sends a message to the user.
+8. When a user initiates the chat from the AI Agent, it transfers the conversation to the ServiceNow agent and sends a message to the user.
 9. Agent receives a notification about this on ServiceNow.
 10. Now, the connection between the ServiceNow agent and the user has been established, and the conversation continues.
 
@@ -335,3 +335,9 @@ Follow these steps:
 ### Agent Transfer Status
 
 The XO platform now records the status of the agent transfer in both Debug Logs and Analytics. This information helps to analyze whether the agent transfer is successful or not. Thus, it facilitates improved tracking and troubleshooting of transfer-related issues.
+
+### Failed Agent Transfer Notification
+
+The XO platform now displays a default, non-editable message to users when a ServiceNow agent transfer fails due to agent unavailability, improving user clarity and reducing the need for repeated transfer attempts.
+
+Default message: *No agents are available to handle your request. Please try again later*.

@@ -1,4 +1,4 @@
-# Model Traces 
+# Model Traces - Analyze Run-level Performance
 
 The **Model Traces** feature offers a comprehensive view of model performance across runs, enabling tracking of request-level data and key metrics. With features for filtering, searching, and exporting data, it supports precise analysis and troubleshooting, ensuring optimal performance and efficient resource usage. These insights help proactively address issues, supporting informed decision-making and streamlined operations.
 
@@ -47,7 +47,7 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 To access the **Model Traces**, follow the steps below:
 
-1. [Navigate](../../settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Model Traces**.
 3. If this is your first time accessing the feature, select the desired model from the dropdown menu shown below.
 <img src="../images/get-started-model-traces.png" alt="get started with model traces" title="get started with model traces" style="border: 1px solid gray; zoom:75%;">
@@ -59,12 +59,16 @@ If you have used the feature before, the data from your previous model selection
 
 ## Model Traces Information
 
-**Model Traces** in the **Settings** console provides a centralized view for actionable insights into run-level details of the selected model deployed in your account.
+**Model Traces** offers a centralized view of run-level insights for the selected model deployed in your account. It displays information across multiple deployments. For open-source and fine-tuned models, you can filter data by deployment name, while for external models, data is shown based on the connection name.
 
 The key features for customizing the model traces data include:
 
 * **Model Name Filter**: Required for selecting and viewing information specific to the model you want to monitor.
-<img src="../images/model-name-filter.png" alt="model name filter" title="model name filter" style="border: 1px solid gray; zoom:75%;">
+    * For open-source and fine-tuned models, you can select from different deployment names, including the versions for the model. 
+      <img src="../images/traces-os.png" alt="model name filter" title="model name filter" style="border: 1px solid gray; zoom:75%;">
+
+    * For commercial models, you can select the default connection linked to the model.
+       <img src="../images/traces-external.png" alt="external filter" title="external filter" style="border: 1px solid gray; zoom:75%;">  
 
 * **Time Selection Filter**: Required to analyze model traces data for a specific time-frame in the past. [Learn more](./model-traces.md/#time-based-filters){:target="_blank"}.
 * **Filter By Option**: An optional multi-field, multi-level filter for targeted analysis. [Learn more](./model-traces.md/#filter-model-traces-by-columns){:target="_blank"}.
@@ -404,27 +408,29 @@ Clicking on a run/request record on the UI opens the detailed **Traces** window 
 **Key Considerations**
 
 * Plain text is the default display format.
-<img src="../images/plaintext-editor-display.png" alt="plaintext editor" title="plaintext editor" style="border: 1px solid gray; zoom:75%;">
-
 * Enabling JSON mode allows you to access the JSON view of the input in the editor. This view provides the complete response/request payload sent to the model, including additional keys and details not visible in plain text format.
+
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>The model name shown in the code editor includes the deployment version for open-source and fine-tuned models, and the connection name for externally hosted models.</p></div>
+
 * The text and JSON code cannot be modified in the editor.
 <img src="../images/json-editor-model-traces.png" alt="json editor" title="json editor" style="border: 1px solid gray; zoom:75%;">
 
 * Click the **Copy** icon to copy the text or code and paste it into your preferred editor for debugging or troubleshooting.
 <img src="../images/copy-input.png" alt="copy input" title="copy input" style="border: 1px solid gray; zoom:75%;">
 
-* The key metadata related to the processed request is shown in a separate window.
-<img src="../images/model-traces-windows.png" alt="model traces window" title="model traces window" style="border: 1px solid gray; zoom:75%;">
-
-* Click the **Up** and **Down** buttons to navigate through request records.
-<img src="../images/navigate-model-traces-records.png" alt="navigate model traces" title="navigate model traces" style="border: 1px solid gray; zoom:75%;">
+* The key metadata related to the processed request is shown in a separate panel, discussed in the next section.
 
 ### Metadata Panel
 
-Displays the following model run metadata to analyze the model’s performance.
+The following model run metadata helps analyze the model’s performance.
+
+**For Fine-tuned and Open-source Models**
 
 * **Request ID**: Unique identifier for the specific model request.
 * **Base model**: The Kore-hosted or imported model that executes the request.
+* **Deployment name**: The deployment name of the model.
 * **Deployment version**: Version of the model deployed for the run.
 * **Response time**: Time taken by the model to generate a response.
 * **Input tokens**: Number of tokens in the request input.
@@ -434,17 +440,21 @@ Displays the following model run metadata to analyze the model’s performance.
 * **Source**: Specific origin of the request.
 * **User ID**: Identifier for the user who initiated the request.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The Deployment Version is displayed only for Agent Platform's open-source and fine-tuned models, not for external models.</p></div>
+    <img src="../images/os-metadata.png" alt="metadata" title="metadata" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../images/meta-data-model-traces.png" alt="metadata" title="metadata" style="border: 1px solid gray; zoom:75%;">
+**For External models**
+
+In addition to the above metadata (excluding *Deployment name* and *Deployment version*), the following information is displayed:
+
+* **Connection name**: The deployed connection name for the model.
+
+    <img src="../images/external-metadata.png" alt="external model metadata" title="external model metadata" style="border: 1px solid gray; zoom:75%;">
 
 **Model Traces** empowers users to identify time-based trends, troubleshoot issues, and make informed decisions by offering detailed and targeted insights into run-based metrics. This capability ensures that organizations uphold high efficiency, reliability, and compliance standards in their model deployments.
 
 ## Related Information
 
-* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.

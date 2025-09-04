@@ -1,4 +1,4 @@
-# Reranking Chunks (Beta)
+# Reranking Chunks
 
 **Reranking of Chunks** is helpful in scenarios where the system can retrieve the relevant content successfully, but due to some reasons like the chunks being too similar to each other, the overall ranking of the chunks retrieved is not up to the mark. In such scenarios, use this feature to enhance the chunk retrieval process and improve the relevance and quality of answers. When a user query is made, an initial retrieval process selects chunks relevant to the query based on their similarity score. Reranking involves re-evaluating the retrieved chunks to prioritize or reorder them based on their relevance to the user's query. This process uses specialized models to refine the ranking, ensuring that the most appropriate chunks are used for answer generation.
 

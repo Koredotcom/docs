@@ -14,7 +14,7 @@ The answer-generation process mainly consists of the following steps.
 4. **Chunk Retrieval**: Involves selecting the most relevant chunks of text from the vector space based on their similarity to the user query.
 5. **Answer Generation**: Involves generating a response to the user query based on the retrieved chunks. 
 
-![Answer Generation Process](../images/answer-generation-process.png "Answer Generation Process")
+![Answer Generation Process](images/answer-generation-process.png "Answer Generation Process")
 
 ## Commonly Used Terms
 

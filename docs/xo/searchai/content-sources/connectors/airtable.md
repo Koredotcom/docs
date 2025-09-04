@@ -36,7 +36,7 @@ Airtable combines the functionality of a spreadsheet and a database, making it a
 
 ## Authorization Support
 
-SearchAI supports authentication using** personal access tokens an**d **OAuth access tokens** for integration with Airtable. 
+SearchAI supports authentication using **personal access tokens** and **OAuth access tokens** for integration with Airtable. 
 
 
 ## Airtable Configuration 
@@ -57,13 +57,13 @@ If you are using personal access tokens, log in to the [Builder Hub](https://air
 
 If you are using OAuth 2.0 for authentication, 
 
-* [Register a new integration](https://airtable.com/create/oauth) for SearchAI.   
-* Set OAuth Redirect URL to one of the following, depending on your region or deployment. 
+1. [Register a new integration](https://airtable.com/create/oauth) for SearchAI.   
+1. Set OAuth Redirect URL to one of the following, depending on your region or deployment. 
     * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
     * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
     * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
-* When client ID is generated, click on Generate Client Secret. 
-* Enable the following permissions. 
+1. When client ID is generated, click on Generate Client Secret. 
+1. Enable the following permissions. 
     * data.records:read
     * data.recordComments:read
     * schema.bases:read

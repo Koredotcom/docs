@@ -22,10 +22,10 @@ Steps to customize the widget’s layout
 
 ## Menu Labels
 
-In this section, you can customize all the widget menu names. The standard menu names are **Assist Home**, **Search**, **My Bot**, and **Transcript** (for Voice channels). As you modify the menu names on the left side of the page, you can preview your changes on the right side. In the following screenshot, **Assist Home** has been modified to **My Assist**:  
+In this section, you can customize all the widget menu names. The standard menu names are **Assist Home**, **Search**, **My AI Agent (Bot)**, and **Transcript** (for Voice channels). As you modify the menu names on the left side of the page, you can preview your changes on the right side. In the following screenshot, **Assist Home** has been modified to **My Assist**:  
 <img src="../widget-theming-layout-customization/menu-label-change-2.png" alt="menu-label-change" title="menu-label-change" style="border: 1px solid gray; zoom:80%;">
 
-Similarly, you can modify the other menu names, such as **Search**, **My Bot**, and **Transcript** (for Voice channels), as required. Note that the **Assist Home** menu has a limit of 12 characters, and the other menus have a limit of 10 characters only. Click **Reset** to return to the default menu name.
+Similarly, you can modify the other menu names, such as **Search**, **My My AI Agent (Bot)**, and **Transcript** (for Voice channels), as required. Note that the **Assist Home** menu has a limit of 12 characters, and the other menus have a limit of 10 characters only. Click **Reset** to return to the default menu name.
 
 ## Other Labels
 
@@ -55,14 +55,47 @@ This slider lets you control the opacity (visibility) of the **Sent** and **Copi
 
 ## Widget Menu Layout
 
-This section lets you enable or disable the Agent AI widget menus – **Assist Home**, **Search**, **My Bot**, and **Transcript** (for the Voice channel) – and select a landing tab. You can position the menus at the bottom or the side by clicking the **Bottom** or **Side** options at the top or shuffle the menus with the drag-and-drop action. To automatically position the menus based on the pixel level, select the **Responsive** option; If the pixel size is less than 600, the menus move to the bottom, and for more than 600, the menus move to the left. The following screenshot shows a disabled **Search** menu, **Side** positioning of the enabled menus, My Bot tab marked as the landing tab, and the shuffled **Assist Home** menu with the **My Bot** menu:
-  
-<img src="../widget-theming-layout-customization/widget-menu-layout-7.png" alt="widget-menu-layout" title="widget-menu-layout" style="border: 1px solid gray; zoom:80%;">
+This section lets you enable or disable the Agent AI widget menus - **Assist Home**, **Search**, **My My AI Agent (Bot)**, and **Transcript** (for the Voice channel). The disabled menus appear on the widget, only if you enable them back. It also lets you select a landing tab and create a custom tab (**+ Add Custom Tab**). You can position the menus at the bottom or the side by clicking the **Bottom** or **Side** options at the top or shuffle the menus with the drag-and-drop action. To automatically position the menus based on the pixel level, select the **Responsive** option; If the pixel size is less than 600, the menus move to the bottom, and for more than 600, the menus move to the left. The following screenshot shows a disabled **Search** menu, **Side** positioning of the enabled menus, **My My AI Agent (Bot)** tab marked as the landing tab, shuffled **Assist Home** menu with the **My My AI Agent (Bot)** menu, and the **+ Add Custom Tab** button:
 
-The disabled menus do not appear on the widget unless you enable them back.
+<img src="../widget-theming-layout-customization/widget-menu-layout.png" alt="widget-menu-layout" title="widget-menu-layout" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
-    The **Dark Mode** and **Settings** menu symbols, appearing at the side-bottom of the menu section in the above screenshot, are not customizable. The Dark Mode symbol is the only button that is functional even in the preview mode of the widget.
+
+    The **Dark Mode** and **Settings** menu symbols are not customizable, and the **Dark Mode** is the only functional button even in the preview mode of the widget.
+
+### Add a Custom Tab
+
+The **+ Add Custom Tab** feature lets you create a custom tab within the Agent AI widget. You can configure the tab to either run a dialog task automatically based on selected events or highlight a task for agents to view and execute, as needed. Once named, you can rename, edit, and mark it as the landing tab. Follow these steps to add a new custom tab:
+
+1. Sign in to **Agent AI**.
+2. Go to **Widget Theming** > **Layout Customization**.
+3. Click **+ Add Custom Tab** under the **Widget Menu Layout** section. 
+4. Enter a name in the **Tab Name** field.
+5. Select how you want to execute the dialog task:
+    * To execute dialog tasks automatically based on events:
+        1. Select the **Auto Execute Events** toggle.
+        2. Select a dialog task from the **Welcome Dialog Task** and **End of Conv. Dialog Task** dropdown lists.
+    * To view dialog tasks and execute them manually:
+        3. Select the **Show Dialog Workflow** toggle.
+        4. Select dialog tasks from the **Dialog Task** dropdown list. You can also search for dialog tasks by entering dialog task names in the search field.
+        5. Click **Apply**.  
+        <img src="../widget-theming-layout-customization/add-custom-tab.png" alt="add-custom-tab" title="add-custom-tab" style="border: 1px solid gray; zoom:80%;"> 
+
+6. Click **Apply**. The custom tab is created, as highlighted in the following screenshot:  
+<img src="../widget-theming-layout-customization/new-custom-tab.png" alt="new-custom-tab" title="new-custom-tab" style="border: 1px solid gray; zoom:80%;">
+
+### Edit or Delete a Custom Tab
+
+To modify or delete an existing Custom Tab:
+
+1. Sign in to **Agent AI**.
+2. Go to **Widget Theming** > **Layout Customization**.
+3. Click the “edit” button against the **custom tab**, under the **Widget Menu Layout** section.
+4. Make all updates, as required, and then click the **Update** button.
+5. Click **Delete** to delete the custom tab.  
+    <img src="../widget-theming-layout-customization/delete-custom-tab.png" alt="delete-custom-tab" title="delete-custom-tab" style="border: 1px solid gray; zoom:80%;"> 
+
+6. Click **Delete** on the confirmation window.
 
 ## Assist Action Menu Layout
 
@@ -106,32 +139,37 @@ This feature allows you to organize dialog tasks into groups. During group creat
 
 !!! note
 
-    Dialog tasks not added to a group don’t show up during runtime.
+    Dialog tasks not added to a group don’t show up during runtime. 
 
-
-### Adding a Dialog Task Group
+### Add a Dialog Task Group
 
 1. Click **+ Add Group** at the top-right corner of the **Dialog Task Layout** section.  
 <img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-grouping-5.png" alt="dialog-task-grouping" title="dialog-task-grouping" style="border: 1px solid gray; zoom:80%;">
-2. Enter a unique name in the **Group Name** field.
+2. Enter a unique name in the **Group Name** field. You can add up to 100 characters. 
 3. Click the **Add Dialog Task** field to display all the existing dialog tasks.
 4. Click to select the dialog task names. You can also click the “search” button to find a dialog task.
 5. Click **Apply** to complete the dialog tasks selection process.
 6. Click **Create**.  
 <img src="../widget-theming-layout-customization/dialog-task-layout/adding-group-6.png" alt="adding-group" title="adding-group" style="border: 1px solid gray; zoom:80%;">
 
-### Editing or Deleting a Dialog Task Group
+### Edit, Expand, Collapse or Delete a Dialog Task Group
 
-In this section, you can modify the Dialog Task Group name and add or remove dialog tasks from the group.
+Use this section to rename a dialog task group, manage its dialog tasks, or expand, collapse, or delete the group. 
 
-1. To edit a Dialog Task Group, click the “edit” button against the Dialog Task Group name:  
+1. To edit, click the “edit” button against the Dialog Task Group name:  
 <img src="../widget-theming-layout-customization/dialog-task-layout/dialog-group-editing-7.png" alt="dialog-group-editing" title="dialog-group-editing" style="border: 1px solid gray; zoom:80%;">
 
 2. Make all the required changes, and click **Save**.  
 <img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-group-saving-8.png" alt="dialog-task-group-saving" title="dialog-task-group-saving" style="border: 1px solid gray; zoom:80%;">
-3. To delete a Dialog Task Group, click the “delete” button against it:  
-<img src="../widget-theming-layout-customization/dialog-task-layout/group-deleting-9.png" alt="group-deleting" title="group-deleting" style="border: 1px solid gray; zoom:80%;">
-4. Click **Delete** in the confirmation window.
+3. To delete, click the “delete” button against it:  
+<img src="../widget-theming-layout-customization/dialog-task-layout/group-deleting-9.png" alt="group-deleting" title="group-deleting" style="border: 1px solid gray; zoom:80%;"> 
+4. Click **Delete** in the confirmation window. 
+5. To expand or collapse, click the **expand/collapse** button:  
+<img src="../widget-theming-layout-customization/dialog-task-layout/expand-collapse-dialog-tasks.png" alt="expand-collapse-dialog-tasks" title="expand-collapse-dialog-tasks" style="border: 1px solid gray; zoom:80%;">  
+
+    !!! note
+
+        The widget retains the expanded or collapsed state of a group, as configured during the last save. 
 
 ### Add, Sort, and Delete dialog tasks from a Dialog Task Group
 

@@ -1,9 +1,9 @@
 # Conversation Events
 
-Define the behavior of the Virtual Assistant during conversations with user to optimize user interactions.
+Define the behavior of the AI Agent during conversations with user to optimize user interactions.
 ## End of Task
 
-*End of Task* is triggered when the VA is not expected to send any message to the user or receive any message from the user.
+*End of Task* is triggered when the AI Agent is not expected to send any message to the user or receive any message from the user.
 
 A new flag indicating the reason for ending the task, added to the _end of task_ event, will help decide the end of the conversation behavior. Client-side implementations of BotKits, RTM, and Webhook channels can use this reason for the task completion flag to determine an appropriate course of action.
 
@@ -73,7 +73,7 @@ On triggering this event, the context will be updated with the following details
 ## Task Execution Failure Event
 
 * By default, this event is always enabled with the _Show Message_ option. This event cannot be disabled.
-* This VA-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](../../use-cases/dialogs/using-the-dialog-builder-tool.md#dialog-settings).
+* This App-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](../../use-cases/dialogs/using-the-dialog-builder-tool.md#dialog-settings).
 
     <img src="../images/task-execution-failure-event.png" alt="task execution failure event" title="task execution failure event" style="border: 1px solid gray; zoom:75%;">
     
@@ -84,7 +84,7 @@ These events trigger on receiving **_opt-in_** or **_opt-out_** requests from us
 
 ## Repeat Bot Response Event
 
-The **Repeat Bot Response** event is triggered to repeat the last bot response when certain predefined or custom-trained utterances are detected in voice channels such as IVR, Audiocodes, or Twilio Voice. 
+The **Repeat Bot Response** event is triggered to repeat the last bot response when certain predefined or custom-trained utterances are detected in voice channels such as IVR, Audiocodes, Twilio Voice and SmartAssist Gateway. 
 
 To enable this event, the developer must define the context object as a precondition for triggering the event. This context object contains the specific set of utterances that should be recognized to repeat the bot’s most recent or last response.
 
@@ -136,7 +136,7 @@ The following are some of the scenarios and the repeat bot response event behavi
    </td>
   </tr>
   <tr>
-   <td>If the repeat event is enabled in a Standard VA and disabled in the Universal Bot (UB)
+   <td>If the repeat event is enabled in a Standard AI Agent and disabled in the Universal Bot (UB)
    </td>
    <td>UB settings take precedence, and the event defined in UB is triggered even if the current conversation context is in a Linked Bot.
    </td>
@@ -147,13 +147,13 @@ The following are some of the scenarios and the repeat bot response event behavi
 
 **Problem Statement**
 
-In the Flight Booking VA, the user couldn’t hear the last response on an IVR channel, and the user said, `"Sorry, I can't hear you. Can you please repeat it again?"`
+In the Flight Booking AI Agent, the user couldn’t hear the last response on an IVR channel, and the user said, `"Sorry, I can't hear you. Can you please repeat it again?"`
 
 In this conversation, the dialog has reached the end, and the last response says, `"Thank you. Your flight has been booked successfully. Your booking reference number is XYZ789 and you will receive a message shortly "`(Dialog reached to END).
 
 **Solution**
 
-If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the [End of Task](../../automation/intelligence/event-handling.md#end-of-task) section.
+If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the [End of Task](../conversation-management/conversation-events.md#end-of-task) section.
 
 Now the ‘Repeat Bot Responses’ event considers the end of dialog after the ‘Last User Input’ configuration, the repeat response will say, `"Thank you. Your flight has been booked successfully. Your booking reference number is XYZ789 and you will receive a message shortly. Is there anything else I can help you with?".`
 
@@ -163,11 +163,13 @@ The developer uses the **Repeat Bot Response** to allow you to repeat the respon
 
 **Steps to Enable the Repeat Bot Response Event**
 
-1. Navigate to **Conversation Intelligence > Events**.
-2. Turn on the toggle to enable the to enable the **Repeat Bot Response Event**.
-<img src="../images/repeat-bot-responses-window.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
+1. Navigate to **Conversation Intelligence > Events**.  
+<img src="../images/repeat-bot-responses-toggle.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
 
-3. Click **Manage Utterance** to review the pre-trained utterances that are added to the VA by default.
+2. Click **Repeat Bot Response Event** to configure it. .
+<img src="../images/savg11.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
+
+3. Click **Manage Utterance** to review the pre-trained utterances that are added to the AI Agent by default.
 <img src="../images/manage-utterances-event.png" alt="manage utterances" title="manage utterances" style="border: 1px solid gray; zoom:75%;">
 
 4. You can add more utterances and click the **Train** link.
@@ -175,17 +177,17 @@ The developer uses the **Repeat Bot Response** to allow you to repeat the respon
 
 5. Once Utterances are trained, you can add the following preconditions:
 
-    * **Channels** – Allows you to add voice channels such as IVR, IVR Audiocodes, or Twilio Voice.
-    * **Context Tags** – Allows you to add the context objects to trigger the Repeat Bot Response event. For more information, read the [Context Object](../intelligence/context-object.md){target="_blank"} article.
-    <img src="../images/channels-and context-tags.png" alt="channels and context tags" title="channels and context tags" style="border: 1px solid gray; zoom:75%;">
+    * **Channels** – Allows you to add voice channels such as IVR, IVR Audiocodes, Twilio Voice or SmartAssist Gateway.
+    * **Context Tags** – Allows you to add the context objects to trigger the Repeat Bot Response event. For more information, read the [Context Object](../../intelligence/context-object.md){target="_blank"} article.
+    
  
-!!!note
+!!! note
 
     The context tags are added to trigger the repeat bot responses whenever the dialog task with that particular context is executed. For example, when a book a flight dialog task is executed, then the context tag will trigger the repeat bot response event for that particular dialog task.
 
 <ol start="6"><li>Select the <b>Event Configuration</b> options to define how to repeat the response:</li>
 <ul><li><b>Repeat Only Last Bot Response</b> – By default, this option is selected with a filler message: "<i>Sure, I will repeat it for you.</i>"
-<img src="../images/repeat-bot-response-event.png" alt="repeat bot response event" title="repeat bot response event" style="border: 1px solid gray; zoom:75%;">
+
 
 You can edit or add the filler message for the repeat bot response event before it is triggered.
 <img src="../images/add-filler-message.png" alt="add filler message" title="add filler message" style="border: 1px solid gray; zoom:75%;"></li></ul>
@@ -194,10 +196,11 @@ You can edit or add the filler message for the repeat bot response event before 
 <img src="../images/add-filler-to-ivr.png" alt="add filler to ivr" title="add filler to ivr" style="border: 1px solid gray; zoom:75%;">
 
 <ul><li>When the Repeat Bot Response event is triggered, these filler messages are used in the IVR channel conversation before repeating the response.
-<img src="../images/use-filler-message.png" alt="use filler message" title="use filler message" style="border: 1px solid gray; zoom:75%;"></li></ul>
+</li></ul>
 
-<ul><li><b>Auto-generate Response</b> – When you select this option, you are redirected to enable the Advanced NLU model, if not enabled, to generate the bot response using the LLM and Generative AI engine.</li></ul>   
-<img src="../images/auto-generate-response.png" alt="auto-generate responses" title="auto-generate responses" style="border: 1px solid gray; zoom:75%;">  
+<ul><li><b>Auto-generate Response</b> – When you select this option, you are redirected to enable the Advanced NLU model, if not enabled, to generate the bot response using the LLM and Generative AI engine.  
+<img src="../images/auto-generate-response.png" alt="auto-generate responses" title="auto-generate responses" style="border: 1px solid gray; zoom:75%;"></li></ul>   
+  
 
 <li>Click <b>Enable Now</b> to define the Advanced NLU Settings for the <b>LLM and Generative</b> model and enable the Repeat Responses feature.</li></ul></ol>
 
@@ -207,7 +210,7 @@ You can edit or add the filler message for the repeat bot response event before 
 
 <ol start="9"><li>Expand the Advanced Settings and define the following options to repeat the response:</li>
 <ul><li><b>Repeat Attempts Limit</b> – Set the number of retry attempts to repeat a response. The accepted value is between <b>1</b> and <b>10</b>. The default is <b>5</b>.</li>
-<li><b>Behavior on Exceeding Repeat Attempts</b> – Define what VA must do after exceeding the number of retry attempts to repeat the response. You can choose either the <b>End of Dialog</b> or <b>Initiate Dialog</b> option.
+<li><b>Behavior on Exceeding Repeat Attempts</b> – Define what AI Agent must do after exceeding the number of retry attempts to repeat the response. You can choose either the <b>End of Dialog</b> or <b>Initiate Dialog</b> option.
 
 <img src="../images/behavior-on-exceeding-repeat-attempts.png" alt="behavior on exceeding repeat responses" title="behavior on exceeding repeat responses" style="border: 1px solid gray; zoom:75%;">
 

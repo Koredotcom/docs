@@ -2,14 +2,14 @@
 
 On the Platform, you can view the default Natural Language Processing or NLP interpreter responses to user inputs or events.
 
-For example, a reply to a user input of *Hi!* The bot replies with one of the following responses, chosen randomly at runtime:
+For example, a reply to a user input of *Hi!* The AI Agent replies with one of the following responses, chosen randomly at runtime:
 
 * Hi!
 * Hello
 * Hi there!
 * Hey 🙂
 
-The NLP interpreter displays pre-defined text responses to users based on an event, condition, trigger, or user input. Depending on your custom bot and the users of that bot, you may want to modify the default responses to users displayed for an event or request for input.
+The NLP interpreter displays pre-defined text responses to users based on an event, condition, trigger, or user input. Depending on your custom AI Agent and the users of that AI Agent, you may want to modify the default responses to users displayed for an event or request for input.
 
 Example
 
@@ -17,25 +17,25 @@ Example
 * **Event** – Authorization Failure
 * **Trigger** – Task canceled
 
-You can define both standard bot responses, or if desired, add a channel override response displayed only in the specified channel the user is in, otherwise, one of the standard default responses is displayed.
+You can define both standard responses, or if desired, add a channel override response displayed only in the specified channel the user is in, otherwise, one of the standard default responses is displayed.
 
-For example, in the SMS channel, you may only want to use short bot responses to save data.
+For example, in the SMS channel, you may only want to use short app responses to save data.
 
 ## Standard Response
 
 XO Platform provides a few default text responses. To access and manage the default responses on the Platform,
 
-Go to **Automation AI** > **Virtual Assistant** > **Conversation Intelligence** > **Conversation Management** > **Standard Responses**.
+Go to **Automation AI** >**Conversation Intelligence** > **Conversation Management** > **Standard Responses**.
 
 For each standard response category tab, the event or user input is listed, followed by one or more NLP interpreter standard responses.
 
 You can modify the default response, and if needed, add additional responses selected randomly by the NLP interpreter in response to user input or system event.
 
-In the **Standard Response** section, the standard bot responses are categorized in the following tabs:
+In the **Standard Response** section, the standard responses are categorized in the following tabs:
 
 ### Statements
 
-Responses are displayed to the user as the result of an action by the bot or user. For example, a user cancels a task, or a user gives an invalid response to your bot request.
+Responses are displayed to the user as the result of an action by the AI Agent or user. For example, a user cancels a task, or a user gives an invalid response to your AI Agent request.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -53,7 +53,7 @@ Responses are displayed to the user as the result of an action by the bot or use
   <tr bgcolor="#FAFAFA">
    <td>When only field prompt is present in the oob
    </td>
-   <td>This is a field prompt message for action and alert tasks. This is only for the Kore platform to use. Enterprises should not be changing this. As part of the next deployment, this will be hidden from the bot developer.
+   <td>This is a field prompt message for action and alert tasks. This is only for the Kore platform to use. Enterprises should not be changing this. As part of the next deployment, this will be hidden from the app developer.
    </td>
   </tr>
   <tr>
@@ -65,7 +65,7 @@ Responses are displayed to the user as the result of an action by the bot or use
   <tr bgcolor="#FAFAFA">
    <td>When task is not accessible to user
    </td>
-   <td>Shown when the developer tries to access a bot task for which they do not have access
+   <td>Shown when the developer tries to access an app task for which they do not have access
    </td>
   </tr>
   <tr>
@@ -73,7 +73,7 @@ Responses are displayed to the user as the result of an action by the bot or use
    </td>
    <td>Applicable to Alert Task Only
 <p>
-This response is displayed when an alert is set up successfully and the bot will trigger the task at the given frequency or specified time.
+This response is displayed when an alert is set up successfully and the app will trigger the task at the given frequency or specified time.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -89,13 +89,13 @@ This response is displayed when an alert is set up successfully and the bot will
   <tr>
    <td>User implies to end the conversation (For example, good night, bye, ttyl)
    </td>
-   <td>This condition occurs only for Dialog tasks for which the following Follow-up Tasks Setting is configured: <em>Yes, at the end of this dialog ask the user to select and perform a task from the Follow-up task list in the Dialog settings</em>. The bot shows this message when it presents the Follow-Up Intents array to the user at the end of the Dialog.
+   <td>This condition occurs only for Dialog tasks for which the following Follow-up Tasks Setting is configured: <em>Yes, at the end of this dialog ask the user to select and perform a task from the Follow-up task list in the Dialog settings</em>. The AI Agent shows this message when it presents the Follow-Up Intents array to the user at the end of the Dialog.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Location provided by user is invalid for a field in an action
    </td>
-   <td>This message is displayed when the Bot is not able to validate the user input for a <em>Location</em> type of entity.
+   <td>This message is displayed when the AI Agent is not able to validate the user input for a <em>Location</em> type of entity.
    </td>
   </tr>
   <tr>
@@ -103,9 +103,9 @@ This response is displayed when an alert is set up successfully and the bot will
    </td>
    <td>Applicable to Alert Task Only
 <p>
-When setting up an alert, the end-user needs to provide values for the parameters that the alert needs along with the frequency at which the alert will be triggered. If the developer specifies that the alert should confirm all values from the user before setting up the alert, the bot will display an option to the user if he wants to amend the values.
+When setting up an alert, the end-user needs to provide values for the parameters that the alert needs along with the frequency at which the alert will be triggered. If the developer specifies that the alert should confirm all values from the user before setting up the alert, the AI Agent will display an option to the user if he wants to amend the values.
 <p>
-This bot response is displayed if the user says <em>Yes</em> to amend
+This response is displayed if the user says <em>Yes</em> to amend
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -123,7 +123,7 @@ The standard confirmation message in case of Action, Alert, and Information task
 <p>
 Under the Advanced settings when defining the action task, the developer can set an option to enforce the user to provide at least one of the optional fields (parameters/entity) of all the configured optional parameters. This is to handle the use case of Modify.
 <p>
-This Bot response is displayed if the user does not provide value to any of the optional parameters
+This response is displayed if the user does not provide value to any of the optional parameters
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -139,9 +139,9 @@ The platform has set up a check on loop limit and if the dialog conditions resul
    </td>
    <td>Shown in the following cases:
 <p>
-1. Universal catchall: For any reason, be it technical or others, when the bot is not able to generate further responses
+1. Universal catchall: For any reason, be it technical or others, when the AI Agent is not able to generate further responses
 <p>
-2. When the bot exceeds the maximum number of nodes that can be executed in a volley, and the user is not a bot developer. For a bot developer <em> the Topic retry limit exceeded</em> the message displayed in this case.
+2. When the app exceeds the maximum number of nodes that can be executed in a volley, and the user is not an app developer. For an app developer <em> the Topic retry limit exceeded</em> the message displayed in this case.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -153,13 +153,13 @@ The platform has set up a check on loop limit and if the dialog conditions resul
   <tr>
    <td>User selects a valid option from the list of options
    </td>
-   <td>The message is displayed when the bot displays a list of all the tasks and the user selects an action/alert/information task.
+   <td>The message is displayed when the AI Agent displays a list of all the tasks and the user selects an action/alert/information task.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>User selects an action
    </td>
-   <td>The message is displayed when the user selects an action task to be executed. The bot confirms that the task has been selected and asks the user to provide values for the parameter required to complete the task.
+   <td>The message is displayed when the user selects an action task to be executed. The AI Agent confirms that the task has been selected and asks the user to provide values for the parameter required to complete the task.
    </td>
   </tr>
   <tr>
@@ -167,9 +167,9 @@ The platform has set up a check on loop limit and if the dialog conditions resul
    </td>
    <td>Applicable to Alert Task Only
 <p>
-During the setup of the Alert, the bot will ask the user the frequency at which the alert will be triggered. The end-user will need to specify at what interval the alert task will be triggered.
+During the setup of the Alert, the AI Agent will ask the user the frequency at which the alert will be triggered. The end-user will need to specify at what interval the alert task will be triggered.
 <p>
-This bot message is displayed to request the user to specify the Alert time if the Trigger interval option is set to At a specific time in the day.
+This AI Agent message is displayed to request the user to specify the Alert time if the Trigger interval option is set to At a specific time in the day.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -177,27 +177,27 @@ This bot message is displayed to request the user to specify the Alert time if t
    </td>
    <td>Applicable to Alert Task Only
 <p>
-During the setup of the Alert, the bot will ask the user the frequency at which the alert will be triggered. The end-user will need to specify at what interval the alert task will be triggered.
+During the setup of the Alert, the AI Agentt will ask the user the frequency at which the alert will be triggered. The end-user will need to specify at what interval the alert task will be triggered.
 <p>
-This bot message is displayed to request the user to specify the Alert time interval if the Trigger interval option is set to Every X mins.
+This message is displayed to request the user to specify the Alert time interval if the Trigger interval option is set to Every X mins.
    </td>
   </tr>
   <tr>
    <td>User selects an alert
    </td>
-   <td>The message is displayed when the user selects an alert task to be executed. The bot confirms that the task has been selected and asks the user to provide values for the parameter required to complete the task.
+   <td>The message is displayed when the user selects an alert task to be executed. The AI Agent confirms that the task has been selected and asks the user to provide values for the parameter required to complete the task.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Task discarded
    </td>
-   <td>Shown when the user types <em>discard</em> in the middle of the task flow. The bot discards the task.
+   <td>Shown when the user types <em>discard</em> in the middle of the task flow. The AI Agent discards the task.
    </td>
   </tr>
   <tr>
-   <td>Bot choosing the default account
+   <td>App choosing the default account
    </td>
-   <td>Used in alerts. Shown when the user is asked if they want to amend anything before setting up the alert, and what the user replies with is not understood by the bot.
+   <td>Used in alerts. Shown when the user is asked if they want to amend anything before setting up the alert, and what the user replies with is not understood by the AI Agent.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -205,7 +205,7 @@ This bot message is displayed to request the user to specify the Alert time inte
    </td>
    <td>Used in Action and Information tasks.
 <p>
-Before executing the task, the bot confirms with the user with the parameters captured if it can go ahead and execute the task
+Before executing the task, the AI Agent confirms with the user with the parameters captured if it can go ahead and execute the task
    </td>
   </tr>
   <tr>
@@ -213,7 +213,7 @@ Before executing the task, the bot confirms with the user with the parameters ca
    </td>
    <td>Applicable to Alert task Only
 <p>
-During a task set up by the end user, the bot will confirm all the details entered with the user before setting up the alert. It also gives the user an option to amend the values, proceed, or discard.
+During a task set up by the end user, the AI Agent will confirm all the details entered with the user before setting up the alert. It also gives the user an option to amend the values, proceed, or discard.
 <p>
 This message is displayed only if the developer has enabled confirmation of all parameters before the execution of the task.
    </td>
@@ -223,7 +223,7 @@ This message is displayed only if the developer has enabled confirmation of all 
    </td>
    <td>Applicable to Alert Task Only
 <p>
-If the alert is not expecting any parameters from the end user, the bot will display this message before the final execution of the alert.
+If the alert is not expecting any parameters from the end user, the AI Agent will display this message before the final execution of the alert.
 <p>
 This message will be displayed only if the developer has enabled confirmation with the user before the execution of the task.
    </td>
@@ -247,7 +247,7 @@ This response is displayed when the developer has enabled <em>Mute alert notific
    </td>
    <td>Applicable to Alert Task Only
 <p>
-Alert tasks when configured using web service, make requests based on the frequency selected by the bot user.
+Alert tasks when configured using web service, make requests based on the frequency selected by the app user.
 <p>
 This message is displayed as an alert task setup confirmation about the frequency of the query.
    </td>
@@ -275,37 +275,37 @@ When a typeahead field does not return any results
   <tr>
    <td>I am not sure what you mean
    </td>
-   <td>Shown when the bot finds one or more not-so-confident intents against a user utterance. Usually shown for FAQ suggestions.
+   <td>Shown when the AI Agent finds one or more not-so-confident intents against a user utterance. Usually shown for FAQ suggestions.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Ambiguity in intent recognition
    </td>
-   <td>This response is displayed when the bot fails to identify the intent of the end user utterance. The bot then prompts the user to re-phrase the statement.
+   <td>This response is displayed when the AI Agent fails to identify the intent of the end user utterance. The AI Agent then prompts the user to re-phrase the statement.
    </td>
   </tr>
   <tr>
-   <td>User has selected to setup an alert per day and bot needs to know if the choice is based on frequency or specific time
+   <td>User has selected to setup an alert per day and AI Agent needs to know if the choice is based on frequency or specific time
    </td>
    <td>Applicable to Alert Task Only
 <p>
-This message is displayed when the bot asks the user to provide the frequency at which the alert task will be auto-triggered. This can be specified in terms of af a particular time as 10 am or frequency like every 10 minutes. This is a message when both options are set up.
+This message is displayed when the AI Agent asks the user to provide the frequency at which the alert task will be auto-triggered. This can be specified in terms of af a particular time as 10 am or frequency like every 10 minutes. This is a message when both options are set up.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td>Bot needs to present the filter options
+   <td>App needs to present the filter options
    </td>
    <td>Applicable to Alert Task Only
 <p>
-This message is displayed when more than one filter is available during the setup of an alert. In this situation, the bot will display this message followed by the list of available filters from where the user can select the filter to apply.
+This message is displayed when more than one filter is available during the setup of an alert. In this situation, the AI Agent will display this message followed by the list of available filters from where the user can select the filter to apply.
    </td>
   </tr>
   <tr>
-   <td>Bot needs to present the filter options with exit option
+   <td>App needs to present the filter options with exit option
    </td>
    <td>Applicable to Alert Task Only
 <p>
-This message is displayed when more than one filter is available during the setup of an alert. In that situation, the bot will display this message followed by the list of available filters from where the user can select the filter to apply and an option to skip.
+This message is displayed when more than one filter is available during the setup of an alert. In that situation, the app will display this message followed by the list of available filters from where the user can select the filter to apply and an option to skip.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -325,7 +325,7 @@ This message is displayed after a user completes configuring a filter while sett
   <tr bgcolor="#FAFAFA">
    <td>User asks for help
    </td>
-   <td>This message is displayed when the user types <em>Help</em>. The bot lists all the dialog tasks, alert/action/information tasks it can perform.
+   <td>This message is displayed when the user types <em>Help</em>. The AI Agent lists all the dialog tasks, alert/action/information tasks it can perform.
 <p>
 Part of the <em>Help</em> message.
    </td>
@@ -343,7 +343,7 @@ This is part of the confirmation message for an action/Information task, we ment
    </td>
    <td>Applicable to Action dropdowns
 <p>
-This message is displayed to the user when a drop-down field at actions is dependent on another field and the platform is not able to fetch the data from the dependent field
+This message is displayed to the user when a drop-down field at actions is dependent on another field and the platform is not able to fetch the data from the dependent field.
    </td>
   </tr>
   <tr>
@@ -351,19 +351,19 @@ This message is displayed to the user when a drop-down field at actions is depen
    </td>
    <td>Applicable to Action Tasks
 <p>
-This message is displayed when the user chooses to change the account and upon bot confirmation, the user provides <em>no</em> as input
+This message is displayed when the user chooses to change the account and upon AI Agent confirmation, the user provides <em>no</em> as input.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>When date given in Invalid format
    </td>
-   <td>Shown when the user enters an invalid entry for a date entity. The platform recognizes the following date formats: YYYY-MM-DD, DD-MM-YYYY
+   <td>Shown when the user enters an invalid entry for a date entity. The platform recognizes the following date formats: YYYY-MM-DD, DD-MM-YYYY.
 <p>
 DD-MM-YY, 1 Jan 1982 or 1st Jan, or the following type of date descriptions This day last year, Next Friday
    </td>
   </tr>
   <tr>
-   <td>This message is displayed by the bot when the end user discard the current task in execution. The user can use the <em>discard/discard all</em> command to discard the current task in execution. Other similar commands like exit, cancel etc also results in discard.
+   <td>This message is displayed by the AI Agent when the end user discard the current task in execution. The user can use the <em>discard/discard all</em> command to discard the current task in execution. Other similar commands like exit, cancel etc also results in discard.
    </td>
    <td>Follow up sentence post User discards/abandons the current activity
    </td>
@@ -379,13 +379,13 @@ This message is displayed to confirm the setup of Action/Information before the 
   <tr>
    <td>Listing all tasks
    </td>
-   <td>This message is displayed when the end user types <em>Help</em> and the bot lists all tasks. This is part of the message shown when the user utterance does not match any task/faq
+   <td>This message is displayed when the end user types <em>Help</em> and the AI Agent lists all tasks. This is part of the message shown when the user utterance does not match any task/faq.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Listing all alerts
    </td>
-   <td>This message is displayed when the end user types <em>Help</em> and the bot lists all alert tasks. This is part of the message shown when the user utterance does not match any task/faq
+   <td>This message is displayed when the end user types <em>Help</em> and the AI Agent lists all alert tasks. This is part of the message shown when the user utterance does not match any task/faq.
    </td>
   </tr>
   <tr>
@@ -397,31 +397,31 @@ This message is displayed to confirm the setup of Action/Information before the 
   <tr bgcolor="#FAFAFA">
    <td>Listing all alerts after tasks
    </td>
-   <td>If a bot just has alert tasks, the bot shows this message along with showing the list of all alert tasks when the bot fails to understand the user intent
+   <td>If an app just has alert tasks, the AI Agent shows this message along with showing the list of all alert tasks when the AI Agent fails to understand the user intent.
    </td>
   </tr>
   <tr>
    <td>Listing all alerts after tasks and FAQs
    </td>
-   <td>When a user provides the input <em>Help</em> and all types of tasks Actions, Dialogs, FAQs, and Alerts are configured at the bot
+   <td>When a user provides the input <em>Help</em> and all types of tasks Actions, Dialogs, FAQs, and Alerts are configured at the app.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td>Lists all actions and FAQs for a bot
+   <td>Lists all actions and FAQs for an app
    </td>
-   <td>This message is displayed when the bot is unable to find a matching task for the end-user utterance and lists all actions and FAQs.
+   <td>This message is displayed when the app is unable to find a matching task for the end-user utterance and lists all actions and FAQs.
    </td>
   </tr>
   <tr>
-   <td>Lists all alerts and FAQs for a bot
+   <td>Lists all alerts and FAQs for a app
    </td>
-   <td>This message is displayed when the bot is unable to find a matching task for the end-user utterance and lists all alerts and FAQs.
+   <td>This message is displayed when the app is unable to find a matching task for the end-user utterance and lists all alerts and FAQs.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td>When bot has no tasks
+   <td>When app has no tasks
    </td>
-   <td>Shown when the developer tries to run a bot that doesn’t have any tasks created.
+   <td>Shown when the developer tries to run an app that doesn’t have any tasks created.
    </td>
   </tr>
   <tr>
@@ -437,9 +437,9 @@ This message is displayed to confirm the setup of Action/Information before the 
    </td>
   </tr>
   <tr>
-   <td>Specific bot is not available for conversation
+   <td>Specific app is not available for conversation
    </td>
-   <td>This message is displayed when a bot is not published yet and the end user tries to communicate with it.
+   <td>This message is displayed when an app is not published yet and the end user tries to communicate with it.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -453,13 +453,13 @@ This is part of the confirmation step before executing the alert, action, or inf
   <tr>
    <td>Recursive dialog found
    </td>
-   <td>Shown when the bot calls a dialog recursively and exceeds the maximum limit (100).
+   <td>Shown when the AI Agent calls a dialog recursively and exceeds the maximum limit (100).
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Loop limit reached for a node
    </td>
-   <td>Shown when the bot repeatedly invokes the same node in a loop for more than an allowed number of times.
+   <td>Shown when the AI Agent repeatedly invokes the same node in a loop for more than an allowed number of times.
    </td>
   </tr>
   <tr>
@@ -471,7 +471,7 @@ This is part of the confirmation step before executing the alert, action, or inf
   <tr bgcolor="#FAFAFA">
    <td>User says thanks
    </td>
-   <td>Shown when the user thanks the bot.
+   <td>Shown when the user thanks the AI Agent.
    </td>
   </tr>
   <tr>
@@ -543,13 +543,13 @@ The message is displayed when the user specifies a filter name that does not mat
   <tr>
    <td>Notify the user that we have canceled the current task to switch to another
    </td>
-   <td>This message is displayed when the Hold and Resume – Hold option is set to <em>Discard the current task and switch to new</em>. Before discarding the current task, the bot will display the given message. This message can be customized from the <em>Manage response</em> option.
+   <td>This message is displayed when the Hold and Resume – Hold option is set to <em>Discard the current task and switch to new</em>. Before discarding the current task, the AI Agent will display the given message. This message can be customized from the <em>Manage response</em> option.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>When an interruption is identified but hold is not allowed
    </td>
-   <td>This message is displayed when the user input matches with another task when one task is in execution but the current task cannot be interrupted. In this situation, the bot will add the new task to the follow-up task list and continue the execution of the current task. For this behavior, the developer needs to select <em>Continue the current task and add a new task to the follow-up task list in the Hold and Resume settings.</em>
+   <td>This message is displayed when the user input matches with another task when one task is in execution but the current task cannot be interrupted. In this situation, the AI Agent will add the new task to the follow-up task list and continue the execution of the current task. For this behavior, the developer needs to select <em>Continue the current task and add a new task to the follow-up task list in the Hold and Resume settings.</em>
    </td>
   </tr>
   <tr>
@@ -563,19 +563,19 @@ The message is displayed when the user specifies a filter name that does not mat
    </td>
    <td>Applicable to Dialog Task Only
 <p>
-This response is displayed when the bot identifies a dialog task for which no conversation flow has been defined. The task is defined only with an Intent node.
+This response is displayed when the AI Agent identifies a dialog task for which no conversation flow has been defined. The task is defined only with an Intent node.
    </td>
   </tr>
   <tr>
    <td>manage account
    </td>
-   <td>The user says <em>manage bot accounts, add a new phone number, manage my profile, I want to delete my bot account, I want to reactivate my account,</em> etc.
+   <td>The user says <em>manage app accounts, add a new phone number, manage my profile, I want to delete my app account, I want to reactivate my account,</em> etc.
    </td>
   </tr>
 </table>
 
 ### Queries
-Statements from the bot to the user to ask for more information. For example, *Which field do you want to change?*
+Statements from the AI Agent to the user to ask for more information. For example, *Which field do you want to change?*
 <table border="1.5">
   <tr bgcolor="#ECECEC">
    <td><strong>MESSAGE</strong>
@@ -614,7 +614,7 @@ Statements from the bot to the user to ask for more information. For example, *W
 <p>
 While setting filters for an alert, the user says they changed their mind.
 <p>
-This message is displayed when the bot discards the current alert setup.
+This message is displayed when the AI Agent discards the current alert setup.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -642,7 +642,7 @@ This message is used to prompt the user while setting an alert frequency, and th
   <tr>
    <td>Ask the user to enter alert time
    </td>
-   <td>Displayed as per schedule options defined by the developer of the alert and would be prompted while setting up the alert. For example, when the user selects <em>daily</em>, the bot prompts the user to enter a time.
+   <td>Displayed as per schedule options defined by the developer of the alert and would be prompted while setting up the alert. For example, when the user selects <em>daily</em>, the AI Agent prompts the user to enter a time.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -690,13 +690,13 @@ This message is used to ask the user for a description while setting up an alert
   <tr>
    <td>Tell me the alphabet or a unique word for action you want
    </td>
-   <td>When the bot has to display a list of options, it displays this message before the list to prompt the user to select an option. If the bot doesn’t use any custom template, the list is displayed as an alphabetically ordered list and the user can either enter the choice or the letter associated with it.
+   <td>When the AI Agent has to display a list of options, it displays this message before the list to prompt the user to select an option. If the AI Agent doesn’t use any custom template, the list is displayed as an alphabetically ordered list and the user can either enter the choice or the letter associated with it.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>I am not sure what you mean after an invalid choice
    </td>
-   <td>When a user utterance leads to the detection of not-so-confident matches, the bot displays the options for the user to pick from. If the user’s follow-on message doesn’t match any of the initially identified ambiguous alerts, this message occurs.
+   <td>When a user utterance leads to the detection of not-so-confident matches, the AI Agent displays the options for the user to pick from. If the user’s follow-on message doesn’t match any of the initially identified ambiguous alerts, this message occurs.
    </td>
   </tr>
   <tr>
@@ -718,7 +718,7 @@ This message is displayed when a list of alerts is shown to the user to pick fro
   <tr>
    <td>When User responded with an invalid answer to confirmation dialog
    </td>
-   <td>At a confirmation for an action, when the user says they want to amend something but the bot does not understand what, we show this message and ask for confirmation again
+   <td>At a confirmation for an action, when the user says they want to amend something but the app does not understand what, we show this message and ask for confirmation again
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -770,7 +770,7 @@ At an alert confirmation, the user says no, and then we ask if they want to chan
   <tr bgcolor="#FAFAFA">
    <td>Ask user if they want to continue the last paused task after completing the interrupting task.
    </td>
-   <td>This condition applies only to bots for which the following resume option in the Hold and Resume settings is configured: <em>Get confirmation with the user before resuming an on-hold task Resume option.</em> The bot shows this message when it completes executing the new task and confirms if it can resume the on-hold task.
+   <td>This condition applies only to AI Agents for which the following resume option in the Hold and Resume settings is configured: <em>Get confirmation with the user before resuming an on-hold task Resume option.</em> The AI Agent shows this message when it completes executing the new task and confirms if it can resume the on-hold task.
    </td>
   </tr>
   <tr>
@@ -778,13 +778,13 @@ At an alert confirmation, the user says no, and then we ask if they want to chan
    </td>
    <td>Applicable to Manage Interruptions
 <p>
-This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the end user to select the behavior</em>. In this situation, when the user utterance matches with a task name, the bot will confirm with the end user before switching to the new task.
+This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the end user to select the behavior</em>. In this situation, when the user utterance matches with a task name, the AI Agent will confirm with the end user before switching to the new task.
    </td>
   </tr>
 </table>
 
 ### Errors & Warnings
-Statements from the bot to the user, when an error occurs during the scenario, such as the *End date, cannot be before or the same as the start date!*
+Statements from the AI Agent to the user, when an error occurs during the scenario, such as the *End date, cannot be before or the same as the start date!*
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -830,13 +830,13 @@ The Authorization URL required for obtaining the user’s authorization is dynam
   <tr bgcolor="#FAFAFA">
    <td>User authorization has failed or user is yet to authorize
    </td>
-   <td>If access to a bot/task needs authorization, the bot prompts the user with this message, requesting authorization. This message is followed by a link that will open on a web page depending on the type of auth profile.
+   <td>If access to a AI Agent/task needs authorization, the AI Agent prompts the user with this message, requesting authorization. This message is followed by a link that will open on a web page depending on the type of auth profile.
    </td>
   </tr>
   <tr>
    <td>User’s intent is recognized, but authorization fails
    </td>
-   <td>This response is displayed when the intent identified by the bot needs to make a service call that needs authorization and no accounts have been created by authorized yet.
+   <td>This response is displayed when the intent identified by the AI Agent needs to make a service call that needs authorization and no accounts have been created by authorized yet.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -852,7 +852,7 @@ The Authorization URL required for obtaining the user’s authorization is dynam
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td>Bot did not find any options based on user’s choice
+   <td>App did not find any options based on user’s choice
    </td>
    <td>When the set of options to show for a list is empty.
 <p>
@@ -922,7 +922,7 @@ Can also be shown if there are no account credentials to select from.
   <tr>
    <td>Ask user to enter time
    </td>
-   <td>Shown when the user enters just the date and not the time for a DateTime entity. For example, in a Schedule Appointment task, if the bot asks for the preferred date and time, and the user just enters the date.
+   <td>Shown when the user enters just the date and not the time for a DateTime entity. For example, in a Schedule Appointment task, if the AI Agent asks for the preferred date and time, and the user just enters the date.
    </td>
   </tr>
   <tr>
@@ -930,7 +930,7 @@ Can also be shown if there are no account credentials to select from.
    </td>
    <td>Applies to a DateTime Entity
 <p>
-This message is displayed when the bot asks the user to enter the time portion for a DateTime entity and the user’s response doesn't have time, the bot asks them to try again.
+This message is displayed when the AI Agent asks the user to enter the time portion for a DateTime entity and the user’s response doesn't have time, the AI Agent asks them to try again.
    </td>
   </tr>
   <tr>
@@ -938,7 +938,7 @@ This message is displayed when the bot asks the user to enter the time portion f
    </td>
    <td>Shown when the user enters an invalid time value for a DateTime entity.
 <p>
-For example, in a Schedule Appointment task, if the bot asks for the preferred date and time, and the user enters something like Aug 29 at 25.
+For example, in a Schedule Appointment task, if the AI Agent asks for the preferred date and time, and the user enters something like Aug 29 at 25.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -974,23 +974,23 @@ This message is displayed as an Error prompt for a DateTime entity in actions an
 <p>
 <em>Listing all alerts, tasks, and FAQs after a wrong choice</em>
 <p>
-<em>Lists all actions and FAQs for a bot after a wrong choice</em>
+<em>Lists all actions and FAQs for an app after a wrong choice</em>
 <p>
-<em>Lists all alerts and FAQs for a bot after a wrong choice</em>
+<em>Lists all alerts and FAQs for an app after a wrong choice</em>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Can not understand your request
    </td>
-   <td>Shown when the bot cannot recognize the user’s intent. It is usually displayed along with a list of tasks and FAQs available in the bot for the users to select.
+   <td>Shown when the AI Agent cannot recognize the user’s intent. It is usually displayed along with a list of tasks and FAQs available in the AI Agent for the users to select.
    </td>
   </tr>
   <tr>
-   <td>When bot is selected, user is asked for reauthorization
+   <td>When app is selected, user is asked for reauthorization
    </td>
    <td>Applicable to Service Calls
 <p>
-This message is displayed when an API call fails due to the expiry of user credentials and the bot asks the user to reauthorize.
+This message is displayed when an API call fails due to the expiry of user credentials and the AI Agent asks the user to reauthorize.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1002,55 +1002,55 @@ This message is displayed when an API call fails due to the expiry of user crede
   <tr>
    <td>Listing all alerts after a wrong choice
    </td>
-   <td>Help related – When the developer has only configured Alerts at the bot and the user input doesn't match with any task
+   <td>Help related – When the developer has only configured Alerts at the app and the user input doesn't match with any task
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Listing all FAQs after a wrong choice
    </td>
-   <td>Help related – When the developer has only configured FAQS at the bot and the user input doesn't match with any FAQ
+   <td>Help related – When the developer has only configured FAQS at the app and the user input doesn't match with any FAQ
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Listing all FAQs after not understanding your request
    </td>
-   <td>If a bot just has a Knowledge Graph, the bot shows this message when the bot fails to understand the user intent.
+   <td>If an app just has a Knowledge Graph, the app shows this message when the app fails to understand the user intent.
    </td>
   </tr>
   <tr>
    <td>Listing all actions after not understanding your request
    </td>
-   <td>If a bot just has action tasks, the bot shows this message when the bot fails to understand the user intent. It provides the names of the action tasks along with the message.
+   <td>If an app just has action tasks, the app shows this message when the app fails to understand the user intent. It provides the names of the action tasks along with the message.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Listing all actions and alerts after not understanding your request
    </td>
-   <td>If a bot just has action and alert tasks, the bot shows this message when the bot fails to understand the user intent. It provides the names of the alert tasks and action tasks along with the message.
+   <td>If an app just has action and alert tasks, the app shows this message when the app fails to understand the user intent. It provides the names of the alert tasks and action tasks along with the message.
    </td>
   </tr>
   <tr>
    <td>Listing all actions and FAQs after not understanding your request
    </td>
-   <td>If a bot just has action tasks and a KG Graph, the bot shows this message when the bot fails to understand the user intent. It provides the names of the action tasks and the Knowledge Graph along with the message.
+   <td>If an app just has action tasks and a KG Graph, the app shows this message when the app fails to understand the user intent. It provides the names of the action tasks and the Knowledge Graph along with the message.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Listing all alerts after not understanding your request
    </td>
-   <td>If a bot just has alert tasks, the bot shows this message when the bot fails to understand the user intent. It provides the names of the alert tasks along with the message.
+   <td>If an app just has alert tasks, the app shows this message when the app fails to understand the user intent. It provides the names of the alert tasks along with the message.
    </td>
   </tr>
   <tr>
    <td>Listing all alerts and FAQs after not understanding your request
    </td>
-   <td>If a bot just has alert tasks and a KG Graph, the bot shows this message when the bot fails to understand the user intent. It provides the names of the alert tasks and the Knowledge Graph along with the message.
+   <td>If an app just has alert tasks and a KG Graph, the app shows this message when the app fails to understand the user intent. It provides the names of the alert tasks and the Knowledge Graph along with the message.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Listing all tasks after not understanding your request
    </td>
-   <td>When the bot fails to understand user intent, it shows this message along with the names of tasks it can perform.
+   <td>When the app fails to understand user intent, it shows this message along with the names of tasks it can perform.
    </td>
   </tr>
   <tr>
@@ -1066,15 +1066,15 @@ This message is displayed when an API call fails due to the expiry of user crede
    </td>
   </tr>
   <tr>
-   <td>Lists all actions and FAQs for a bot after a wrong choice
+   <td>Lists all actions and FAQs for an app after a wrong choice
    </td>
-   <td>It occurs only when the bot just has action tasks and a Knowledge Graph. When a bot shows the names of the action tasks and the KG Graph to choose from, the bot shows this message when the user selects an invalid option. For example, if the tasks lists have options from a to c and the user types d.
+   <td>It occurs only when the app just has action tasks and a Knowledge Graph. When an app shows the names of the action tasks and the KG Graph to choose from, the app shows this message when the user selects an invalid option. For example, if the tasks lists have options from a to c and the user types d.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td>Lists all alerts and FAQs for a bot after a wrong choice
+   <td>Lists all alerts and FAQs for a app after a wrong choice
    </td>
-   <td>It occurs only when the bot just has alert tasks and a Knowledge Graph. When a bot shows the names of the action tasks and the KG Graph to choose from, this message is displayed when the user selects an invalid option. For example, if the tasks lists have options from a to c and the user types d.
+   <td>It occurs only when the app just has alert tasks and a Knowledge Graph. When an app shows the names of the action tasks and the KG Graph to choose from, this message is displayed when the user selects an invalid option. For example, if the tasks lists have options from a to c and the user types d.
    </td>
   </tr>
   <tr>
@@ -1104,7 +1104,7 @@ This message is displayed when an API call fails due to the expiry of user crede
 </table>
 
 ### Questions
-Questions the bot may pose to the user when not included in any other category.
+Questions the app may pose to the user when not included in any other category.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -1126,13 +1126,13 @@ This message is displayed when the user is prompted to set a frequency for an al
    </td>
    <td>Applicable to Alert Task
 <p>
-This message is displayed when the bot asks the user to input the frequency at which the alert will be triggered.
+This message is displayed when the app asks the user to input the frequency at which the alert will be triggered.
    </td>
   </tr>
 </table>
 
 ### Choices
-The bot is asking for Yes/No input. For example, *Would you like to receive push notifications every time this task occurs?*
+The app is asking for Yes/No input. For example, *Would you like to receive push notifications every time this task occurs?*
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -1156,7 +1156,7 @@ This message is displayed when the end user provides input for the <em>Field Typ
    </td>
    <td>Applicable to Alert Task.
 <p>
-This message is displayed when the bot confirms the current trigger frequency of an alert task with the end user.
+This message is displayed when the app confirms the current trigger frequency of an alert task with the end user.
    </td>
   </tr>
   <tr>
@@ -1184,7 +1184,7 @@ This message is displayed to confirm the trigger frequency for an alert task.
 <p>
 Developers can create filters for an alert task. These filters will limit the results of an alert task to the results an end-user needs.
 <p>
-This message is displayed when the bot asks whether the user wants to set up any filter.
+This message is displayed when the app asks whether the user wants to set up any filter.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1194,7 +1194,7 @@ This message is displayed when the bot asks whether the user wants to set up any
 <p>
 Developers can create filters for an alert task. These filters will limit the results of an alert task to the results an end-user needs.
 <p>
-This message is displayed when the bot asks whether the user wants to set up any filter.
+This message is displayed when the app asks whether the user wants to set up any filter.
    </td>
   </tr>
   <tr>
@@ -1202,7 +1202,7 @@ This message is displayed when the bot asks whether the user wants to set up any
    </td>
    <td>Applicable to Alert Task
 <p>
-The bot confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the bot will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
+The app confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the app will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
 <p>
 This message is displayed when the user wants to change/amend the alert notification setting. The user can enable/disable alert notification by responding yes/no.
    </td>
@@ -1212,7 +1212,7 @@ This message is displayed when the user wants to change/amend the alert notifica
    </td>
    <td>Applicable to Alert Task
 <p>
-The bot confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the bot will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
+The app confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the app will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
 <p>
 This message will be displayed when the user input to the amending notification setting does not match the pre-defined response (yes/no).
    </td>
@@ -1222,7 +1222,7 @@ This message will be displayed when the user input to the amending notification 
    </td>
    <td>Applicable to Alert Task
 <p>
-The bot confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the bot will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
+The app confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the app will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
 <p>
 This message is displayed when the user wants to change/amend the alert description.
    </td>
@@ -1232,7 +1232,7 @@ This message is displayed when the user wants to change/amend the alert descript
    </td>
    <td>Applicable to Alert Task
 <p>
-The bot confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the bot will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
+The app confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the app will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
 <p>
 This message is displayed when the user wants to change/amend the alert description.
    </td>
@@ -1242,7 +1242,7 @@ This message is displayed when the user wants to change/amend the alert descript
    </td>
    <td>Applicable to Alert Task
 <p>
-The bot confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the bot will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
+The app confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the ap will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
 <p>
 This message is displayed when the user wants to change/amend the alert trigger frequency.
    </td>
@@ -1252,7 +1252,7 @@ This message is displayed when the user wants to change/amend the alert trigger 
    </td>
    <td>Applicable to Alert Task
 <p>
-The bot confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the bot will allow the user to modify the name, description, notification, frequency or any other parameter in the alert before proceeding with alert setup.
+The app confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the app will allow the user to modify the name, description, notification, frequency or any other parameter in the alert before proceeding with alert setup.
 <p>
 This message is displayed when the user wants to change/amend the alert notification setting i.e. user can specify whether he wants to receive notifications whenever the alert is triggered.
    </td>
@@ -1272,7 +1272,7 @@ This message prompts the user to select Weekday/Weekend for the Trigger frequenc
 <p>
 During the alert setup, the end-user needs to specify an interval at which the alert will be executed.
 <p>
-This message is displayed by the bot prompting the end-user to set up the frequency interval for the alert task.
+This message is displayed by the app prompting the end-user to set up the frequency interval for the alert task.
    </td>
   </tr>
   <tr>
@@ -1280,7 +1280,7 @@ This message is displayed by the bot prompting the end-user to set up the freque
    </td>
    <td>Applicable for webhook alerts
 <p>
-The bot checks with the end-user if it needs to send an email to the developer with instructions to configure the webhook alert at the third-party app.
+The app checks with the end-user if it needs to send an email to the developer with instructions to configure the webhook alert at the third-party app.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1288,7 +1288,7 @@ The bot checks with the end-user if it needs to send an email to the developer w
    </td>
    <td>Applicable to Alert Task
 <p>
-The bot confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the bot will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
+The app confirms the parameters entered by the user before an alert setup. The user can select <em>no</em> or <em>amend</em> on which the app will allow the user to modify the name, description, notification, frequency, or any other parameter in the alert before proceeding with alert setup.
 <p>
 This message is displayed when the user wants to change/amend the alert name.
    </td>
@@ -1300,7 +1300,7 @@ This message is displayed when the user wants to change/amend the alert name.
 <p>
 Developers can configure filters for an alert task. The filter will have one or more operations that the end-user can select to apply to the filter. The operation depends on the Data Type selected for the filter.
 <p>
-This message is displayed when the user sets up the filter for the alert task. The bot prompts the user to select one of the available operators.
+This message is displayed when the user sets up the filter for the alert task. The app prompts the user to select one of the available operators.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1310,7 +1310,7 @@ This message is displayed when the user sets up the filter for the alert task. T
 <p>
 Developers can select all the options like <em>Daily</em>, <em>Weekday</em>, <em>and Weekend</em> when setting up the Trigger Interval Options for an alert task. Users will need to select/specify the interval from the available list as the frequency at which the alert will be triggered during setup.
 <p>
-This message is displayed when all the interval options are available and the bot prompts the user to select one of the Trigger Interval during alert task setup.
+This message is displayed when all the interval options are available and the app prompts the user to select one of the Trigger Interval during alert task setup.
    </td>
   </tr>
   <tr>
@@ -1334,7 +1334,7 @@ This message is displayed when the user is prompted to pick a choice for a drop-
 <p>
 Developers can set up the trigger frequency for an alert in terms of interval duration like every 10 minutes, 20 minutes, etc., or specific times like 9:00 am, 11:00 am, etc.
 <p>
-This message is displayed when the frequency is specified in terms of the interval like every 10 minutes, 20 minutes, etc. and the user inputs a specific time like 9:00 am at which he would like to trigger the bot. In this situation, the bot will prompt the user with the available valid frequencies that can be set up for the alert.
+This message is displayed when the frequency is specified in terms of the interval like every 10 minutes, 20 minutes, etc. and the user inputs a specific time like 9:00 am at which he would like to trigger the app. In this situation, the app will prompt the user with the available valid frequencies that can be set up for the alert.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1396,7 +1396,7 @@ This message is used to show options returned by the platform for a typeahead en
    </td>
    <td>Applicable to Alerts
 <p>
-This message is displayed when an alert is selected by the user from a list and the bot asks them how often they want to be notified
+This message is displayed when an alert is selected by the user from a list and the app asks them how often they want to be notified
    </td>
   </tr>
   <tr>
@@ -1404,7 +1404,7 @@ This message is displayed when an alert is selected by the user from a list and 
    </td>
    <td>Applicable to Alerts
 <p>
-This message is displayed when the user gives a wrong value for the frequency while setting an alert and the bot asks again.
+This message is displayed when the user gives a wrong value for the frequency while setting an alert and the app asks again.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1420,7 +1420,7 @@ This message is displayed when an action or alert is triggered, and the first fi
    </td>
    <td>Applicable to Alert Task
 <p>
-During alert task configuration, developers can enable confirmation of all parameters with the user before the execution of the alert. The bot will display all the values entered by the user for setting up the alert. The bot will allow the user to select how to proceed with the execution of the alert with the options <em>yes</em>, <em>no,</em> and <em>amend</em>.
+During alert task configuration, developers can enable confirmation of all parameters with the user before the execution of the alert. The app will display all the values entered by the user for setting up the alert. The app will allow the user to select how to proceed with the execution of the alert with the options <em>yes</em>, <em>no,</em> and <em>amend</em>.
 <p>
 This message will be displayed if the user selects option <em>no</em>.
    </td>
@@ -1464,13 +1464,13 @@ This message is displayed when the user input does not match any values given in
   <tr>
    <td>Ambiguous date
    </td>
-   <td>Shown when you enter an ambiguous date value. For example, if the user enters 6/9 for a date, the bot shows 9 June &lt;year> and 6 September &lt;year> as options for the user to select from.
+   <td>Shown when you enter an ambiguous date value. For example, if the user enters 6/9 for a date, the app shows 9 June &lt;year> and 6 September &lt;year> as options for the user to select from.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Ambiguous airport
    </td>
-   <td>Shown when you enter a value for an Airport entity that is unclear and requires further selection. For example, if you enter London, the bot shows London Heathrow Airport and Gatwick Airport as options to select from.
+   <td>Shown when you enter a value for an Airport entity that is unclear and requires further selection. For example, if you enter London, the app shows London Heathrow Airport and Gatwick Airport as options to select from.
    </td>
   </tr>
   <tr>
@@ -1502,7 +1502,7 @@ This message is displayed when the user input does not match any values given in
    </td>
    <td>Applicable to Alert and Action Task
 <p>
-This message is displayed when a dropdown (in an action or an alert) depends on another field, and the value of that other field does not create any options for this dropdown. In this situation, the bot will ask the user to set a different value for the dependent field.
+This message is displayed when a dropdown (in an action or an alert) depends on another field, and the value of that other field does not create any options for this dropdown. In this situation, the app will ask the user to set a different value for the dependent field.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1514,7 +1514,7 @@ This message is displayed when a dropdown (in an action or an alert) depends on 
   <tr>
    <td>At the end of a dialog, present user with list of followup tasks identified. Ask them to pick one task to execute
    </td>
-   <td>This condition occurs only for Dialog tasks for which the following Follow-up Tasks Setting is configured: <em>Yes, at the end of this dialog ask the user to select and perform a task from the <strong>Follow-up task</strong> list in the Dialog settings.</em> The bot shows this message when it presents the Follow-Up Intents array to the user at the end of the Dialog.
+   <td>This condition occurs only for Dialog tasks for which the following Follow-up Tasks Setting is configured: <em>Yes, at the end of this dialog ask the user to select and perform a task from the <strong>Follow-up task</strong> list in the Dialog settings.</em> The app shows this message when it presents the Follow-Up Intents array to the user at the end of the Dialog.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1522,13 +1522,13 @@ This message is displayed when a dropdown (in an action or an alert) depends on 
    </td>
    <td>Applicable to amending entity values during Dialog execution
 <p>
-This message is displayed during a dialog execution when the user wants to amend an entity value by mentioning the entity value and the bot is not able to determine the entity to be amended since multiple entities hold the same value. Eg: change Bangalore to Mumbai and Bangalore is set to more than one entity
+This message is displayed during a dialog execution when the user wants to amend an entity value by mentioning the entity value and the app is not able to determine the entity to be amended since multiple entities hold the same value. Eg: change Bangalore to Mumbai and Bangalore is set to more than one entity
    </td>
   </tr>
   <tr>
    <td>The user is trying to put more than the max on-hold quantity of tasks on hold. Ask them to pick a task to cancel one.
    </td>
-   <td>When the developers set up the Hold and Resume settings, they can configure the maximum number of tasks that the bot can allow to be put on hold. The bot shows this message when the user executes the bot if the number of tasks that are put on hold is more than that number.
+   <td>When the developers set up the Hold and Resume settings, they can configure the maximum number of tasks that the app can allow to be put on hold. The app shows this message when the user executes the app if the number of tasks that are put on hold is more than that number.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1538,7 +1538,7 @@ This message is displayed during a dialog execution when the user wants to amend
 <p>
 Developers can configure <em>Intent Detection</em> in the <em>Instance Property</em> of an entity node of String/Description type to <em>Ask the user how to proceed</em>
 <p>
-This message will be displayed if the user’s input matches with intent and the bot wants to confirm before proceeding to execute the new intent.
+This message will be displayed if the user’s input matches with intent and the app wants to confirm before proceeding to execute the new intent.
    </td>
   </tr>
 </table>
@@ -1556,7 +1556,7 @@ To add a new standard response, follow the steps below:
 
       <img src="../images/add-channel-override.png" alt="add-channel-override" title="add-channel-override" style="border:1px solid gray; zoom:70%;">
 
-    * In the bot **Response** editor, you can override the default Bot Response for this channel using basic editor controls on the **Simple Mode** tab, or write custom JavaScript for the response on the **Advanced Mode** tab as follows:
+    * In the **Response** editor, you can override the default app response for this channel using basic editor controls on the **Simple Mode** tab, or write custom JavaScript for the response on the **Advanced Mode** tab as follows:
          * **Simple Mode** tab – Enter the text for the default standard response. For example, *There* you are, I was *hoping* you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](../../use-cases/dialogs/prompt-editor.md).
          * **Advanced Mode tab** – Enter JavaScript to override the channel message as described in the following code examples.
     * Click **Save** to save and close the **Edit Response** dialog and apply the new standard response.

@@ -11,22 +11,36 @@ The Agent AI Settings page has the following sections:
 
 This section lets you set your preferences based on the channels. It has three channels – Chat, Voice, and Email – with a channel-specific default selection of options. The following option toggles are available to select under this section:
 
-* **Proactive Mode**: This widget automates intent identification, entity extraction, and transcripts generation. It lets you have automatic (proactive) transcripts logging and intent suggestions. When enabled, you can also use the “Automatic Dialog Task Entity Extraction” option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcripts logging. However, you can still use greetings, search bar, and MyBot automations. By default, this widget is enabled for all three channels.
+* **Proactive Mode**: This widget automates intent identification, entity extraction, and transcripts generation. It lets you have automatic (proactive) transcripts logging and intent suggestions. When enabled, you can also use the “Automatic Dialog Task Entity Extraction” option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcripts logging. However, you can still use greetings, search bar, and My AI Agent (Bot) automations. By default, this widget is enabled for all three channels.
     * The Assist tab/Run button remains in the disabled state. Only Run with agent’s input will be available.
     * The Playbook feature functions as follows:
         * For Dynamic playbooks, identification through the bulb icon and adherence are not functional, but tick-off and step progression continue to function.
         * For Primary playbooks, the automatic adherence or automatic tick-off does not happen.
-        * If the Playbook widget is also disabled, the default landing page is “My Bot”.
-* **Agent Coaching**: This widget enables real-time agent coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for Agent AI to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. If disabled, you will no longer be able to utilize this feature. To resume real-time coaching, you must enable this feature. By default, it is disabled for all channels and is available for Chat and Voice channels only.
+        * If the Playbook widget is also disabled, the default landing page is “My AI Agent (Bot)”. 
+
+* **Agent Coaching**: This widget enables real-time agent coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for Agent AI to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. If disabled, you will no longer be able to utilize this feature. To resume real-time coaching, you must enable this feature. By default, it is disabled for all channels and is available for Chat and Voice channels only. 
+
 * **Agent Playbook**: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction.
 
-    If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels.
+    If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels. 
 
-* **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My Bot, and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection.
+* **Agentic Copilot**: The Agentic Copilot feature enables you to have autonomous, end-to-end task execution. Agents monitor the conversations and can cancel, override, or edit the messages. In this section, you can select a language, enable/disable this feature, select an app, select to auto send messages, and set a timer (up to 10 seconds) for auto sending messages. 
+
+* **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My AI Agent (Bot), and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection. 
+
+* **Control Transcript Visibility between Agents** (for Voice channel): This feature, available only for the Voice channel, restricts transcript visibility to the current agent. Visibility can be managed using public APIs or agent entry/exit events, except in warm transfers/conference calls where all participants can view shared transcripts. The following options are available: 
+    * **Use public APIs to control transcription**: Control transcript visibility through the [Control Transcription API](./../../apis/agent-ai/control-transcription-api.md). 
+    * **Use agent’s entry and exit events**: Control transcript visibility based on agent’s entry and exit events–transcripts become visible when an agent joins, and prior conversations are hidden once the previous agent exits. 
 
 * **Send Button**: This widget lets you control the accessibility of the Send button functionality for Agent AI responses. By default, this widget is enabled for Voice and Chat channels only.
 
 * **Copy Button**: This widget lets you control the accessibility of the Copy button functionality for Agent AI responses. By default, this widget is enabled for all three channels.
+
+* **Widget Search Bar Configuration**: This widget enables you to have a configurable search experience through the widget search bar. Search results load faster because they display as soon as data is retrieved from the first available source (XO Platform, Search AI, or Agentic App), while results from other sources load gradually. When **disabled**, the [default search experience](../../agentai/agent-experience/agent-assist-widget-v3.md/#search-tab){:target="_blank"} displays results from all sources simultaneously. When **enabled**, you can select one or more of the following options based on your need: 
+
+    * **XO Platform**: To identify and surface intents such as dialogs and FAQs through the XO Platform.
+    * **Search AI**: To get search results or answers from the **Search AI** app.
+    * **Agentic App (LLM)**: To power search results through a customizable Agentic App. You must select an Agentic App from the dropdown list, from which results will display in runtime. 
 
 * **Conversation Transfer**: This widget lets you define and categorize the conversation transfer behavior based on the transfer type and channels. It applies only to the third-party configurations where appropriate transfer events are transmitted.
 
@@ -39,7 +53,7 @@ This section lets you set your preferences based on the channels. It has three c
 
         * Continue from the Last Message: The chat history page scrolls down to the bottom of the page (last message).
 
-        * Configure Dialog Task: The user has to select one of the dialog tasks associated with a bot from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.
+        * Configure Dialog Task: The user has to select one of the dialog tasks associated with an app from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.
 
 * **Transcript Tab**: This widget appears only for the **Voice** channel and lets you control the appearance of the Transcript tab in the Agent AI widget. By default, this widget is enabled.
 
@@ -60,25 +74,45 @@ This section lets you set your preferences based on the channels. It has three c
 6. Turn the toggle **on** or **off** against the **Proactive Mode** widget.
     * Select or clear the **Automatic Dialog Task Entity Extraction** option.
 7. Turn the toggle **on** or **off** against each widget, as required.
-8. Select an option under the **Conversation Transfer** section.
-9. Enable or disable the **Auto Summarization** toggle.
-10. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
-11. Select or clear the **Submit** button under the **Auto Summarization** section.
+8. For the **Agentic Copilot** feature: 
+    1. Select a language from the language list.
+    2. Click the toggle to Enable/Disable the Agentic Copilot feature.
+    3. Select an app from the **Select Agentic App** list.
+    4. Click to select the **Allow auto send Message** option. Clearing this option cancels all unsent or new Agentic messages.  
+    5. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 60 seconds. 
+    <img src="../widget-settings-images/agentic-copilot-setting.png" alt="agentic-copilot-setting" title="agentic-copilot-setting" style="border: 1px solid gray; zoom:80%;"> 
+
+9. Turn the **toggle** on or off for **Control Transcript Visibility between Agents** (for Voice channel only), and select one of the following options: 
+    * Use public APIs to control transcription 
+    * Use agent’s entry and exit events 
+    <img src="../widget-settings-images/control-transcript-visibility.png" alt="control-transcript-visibility" title="control-transcript-visibility" style="border: 1px solid gray; zoom:80%;"> 
+
+10. Select an option under the **Conversation Transfer** section.  
+11. Turn on the **Widget Search Bar Configuration** toggle. 
+    1. Select one or more options—**XO Platform**, **Search AI**, **Agentic App**.  
+    2. If you select **Agentic App**, select an app from the dropdown list. 
+
+        !!! note
+            The **Search AI** and **Agentic App** fields are disabled until they are configured. A warning message prompts you to configure them before use.  
+
+12. Enable or disable the **Auto Summarization** toggle.
+13. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
+14. Select or clear the **Submit** button under the **Auto Summarization** section.
 
     Under the **Auto Summarization Model** section, select:
 
     * **OOTB Kore Summarization**: For Kore’s default auto summarization.
 
-    * **Custom Dialog Task**: To select a language-specific dialog task that is displayed based on the selected language. The Custom Dialog Task field displays a list of dialog tasks or child bots based on bot selection at the app level. At the app level, if you have selected:
+    * **Custom Dialog Task**: To select a language-specific dialog task that is displayed based on the selected language. The Custom Dialog Task field displays a list of dialog tasks or child apps based on app selection at the app level. At the app level, if you have selected:
 
-        * **Universal Bot**: The backend logic detects it and populates its associated Child Bots. You can expand each Child Bot to view and select its dialog task.
+        * **Universal App**: The backend logic detects it and populates its associated Child Apps. You can expand each Child App to view and select its dialog task.
 
-        * **Child Bot/Normal/Singular Bot**: The Dialog Tasks list displays dialogs linked to the selected bot, and you can select any from the displayed list.
+        * **Child App/Normal/Singular App**: The Dialog Tasks list displays dialogs linked to the selected app, and you can select any from the displayed list.
 
         !!! note
             The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
 
-12. Click **Save** to save your settings.
+14. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent AI General Settings
@@ -98,7 +132,7 @@ This section lets you set up the general features of the Agent AI widget. Here, 
 
 * **Help & Support**: This section gives you access to the available documents, FAQs, and the Kore Academy courses. You can select whether or not to display Help & Support, which components to show under it, and the URLs of those components.
 
-* **Honor Bot Event** **– Intent not found**: Here, you can turn on or off the **Honor Bot Event – Intent not found** toggle. When turned on, the configured intent-not-found event triggers if Agent AI doesn’t understand the user’s intent.
+* **Honor Bot Event – Intent not found**: Here, you can turn on or off the **Honor Bot Event – Intent not found** toggle. When turned on, the configured intent-not-found event triggers if Agent AI doesn’t understand the user’s intent.
 
 * **Default Language for Agent AI Widget**: In this section, you can select a language for the **Agent AI widget**. In runtime, the widget appears in the selected language. Also, you can enable a checkbox that allows agents to change the language in runtime. If this checkbox is disabled, agents can’t change the language.
 
@@ -134,11 +168,11 @@ Steps:
 2. Go to **Widget Settings** > **Agent AI General Settings**.
 3. Turn the **Auto Correct** toggle on or off, as required.
 4. Select or clear the **Use Custom Dictionary** option.
-5. Upload your customized list of words.
-
+5. Upload your customized list of words. 
     !!! Note
 
-        You can download the present list of words, if already uploaded.
+        You can download the present list of words, if already uploaded. 
+
 6. Click **Save**.
 
 Agents can enable or disable the Auto Correct toggle by using the following steps:

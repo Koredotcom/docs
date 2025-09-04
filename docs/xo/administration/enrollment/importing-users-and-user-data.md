@@ -46,7 +46,7 @@ Kore.aiUser3@kore.com,User3FirstName,User1LastName,,,,,New
 
 ### Create and Upload an Import File
 
-You can create a file to invite users in your organization to become Kore.ai users that you can manage as a Bots Admin. This topic describes how to create a file that contains the email addresses and user information, such as first and last name, phone number, department, and so forth, for the users that you want to invite to become Kore.ai users in your account. If you only have email address information for your users, you should create and [import a bulk invite file](../enrolling-many-users/){:target="_blank"} instead. **To create an import file**
+You can create a file to invite users in your organization to become Kore.ai users that you can manage as an Admin. This topic describes how to create a file that contains the email addresses and user information, such as first and last name, phone number, department, and so forth, for the users that you want to invite to become Kore.ai users in your account. If you only have email address information for your users, you should create and [import a bulk invite file](enrolling-many-users.md){:target="_blank"} instead. **To create an import file**
 
 1. In a text editor or spreadsheet, enter the field IDs on the first line, and then enter a complete email address and data on each following line or in a comma-separated list as shown in the following example:  
   

@@ -4,12 +4,16 @@
 
 SearchAI's content transformation process transforms raw extracted text into high-quality data that ensures better searchability, understanding, and usability. This enrichment occurs after the extraction phase, allowing users to enhance the data while maintaining the structural and contextual integrity of the original content. The raw ingested content often requires further processing to make the data accurate, contextual, and useful. Issues such as incomplete metadata, formatting inconsistencies, or missing context can hinder the effectiveness of search and retrieval systems. This process addresses these issues by refining the extracted content.
 
-Content Transformations, immediately after extraction, ensure that the noise and irrelevant information from raw data is removed and input to vectorization is clean and optimized for retrieval and analysis. This vectorized data is then given to the AI models for processing, resulting in optimum and accurate results. 
+Content Transformations, immediately after extraction, ensure that the noise and irrelevant information from raw data are removed, and the input to vectorization is clean and optimized for retrieval and analysis. This vectorized data is then given to the AI models for processing, resulting in optimum and accurate results. 
 
-Search AI allows you to add multiple different types of stages to the transformation process to input content. The stages are processed in sequence such that the output of one is the input of the next. There are currently two types of stages offered. 
+Search AI allows you to add multiple different types of stages to the transformation process to input content. The stages are processed in sequence such that the output of one is the input of the next. The following types of transformation stages are currently offered via Document Workbench. 
+ 
 
 1. Field Mapping 
 2. Custom Script
+3. Exclude Documents
+4. LLM Stage
+5. API Stage
 
 
 ## Benefits
@@ -40,39 +44,39 @@ These issues can be resolved through transformations after extraction.
 
 ## Transformation Stages and Configuration
 
-Currently, Search AI offers two types of stages for transformation at this step. 
+Currently, Search AI offers following types of stages for transformation at this step. 
 
-1. Field Mapping Stage
+### Field Mapping Stage
 
-    This stage is used to add, update, or delete specific fields from the input content.  For instance, if some pages are missing a title, you can use this stage to add a relevant title to such pages based on predefined rules or extracted content. This ensures uniformity across all pages, making the content more structured and improving its discoverability during search operations.
+This stage is used to add, update, or delete specific fields from the input content.  For instance, if some pages are missing a title, you can use this stage to add a relevant title to such pages based on predefined rules or extracted content. This ensures uniformity across all pages, making the content more structured and improving its discoverability during search operations.
 
-	To add this stage, provide the following details.
+To add this stage, provide the following details.
 
-    * **Name**:  Provide a unique name for stage identification.
-    * **Type**: Set it to Field Mapping. 
-    * **Description**: Describe the purpose of adding this stage. 
-    * **Condition**: The rules or criteria for selecting the content on which the transformation is to be performed. You can add one or more rules to filter specific content. There are two ways of defining the condition for the mapping: **Basic** and **Script**. When using the Script, you can provide a custom script to add the condition for filtering content for transformation. When using the Basic method, you can define a condition using the following two properties.
-        * Field Name: Fields of ingested content on which the rule is applied.
-        * Operator: Condition to be applied on the selected field.
-        * Value: Depending on the operator, this field is used to specify the value of the field. 	
-    * **Outcome**: The transformation to be performed on the content selected using the above conditions.
-        * Action: Action to be taken if the above condition is true. This can take the following values:
-            * Set - Sets the given value as the value of the target field.
-            * Delete - Deletes the target field.
-            * Copy - Copies the value of one field into another.
-        * You can define one or more actions to be taken on the selected content.  \
+   * **Name**:  Provide a unique name for stage identification.
+   * **Type**: Set it to Field Mapping. 
+   * **Description**: Describe the purpose of adding this stage. 
+   * **Condition**: The rules or criteria for selecting the content on which the transformation is to be performed. You can add one or more rules to filter specific content. There are two ways of defining the condition for the mapping: **Basic** and **Script**. When using the Script, you can provide a custom script to add the condition for filtering content for transformation. When using the Basic method, you can define a condition using the following two properties.
+       * Field Name: Fields of ingested content on which the rule is applied.
+       * Operator: Condition to be applied on the selected field.
+       * Value: Depending on the operator, this field is used to specify the value of the field. 	
+   * **Outcome**: The transformation to be performed on the content selected using the above conditions.
+       * Action: Action to be taken if the above condition is true. This can take the following values:
+           * Set - Sets the given value as the value of the target field.
+           * Delete - Deletes the target field.
+           * Copy - Copies the value of one field into another.
+        * You can define one or more actions to be taken on the selected content.  
 
-2. Custom Script Stage
+### Custom Script Stage
 
-    Custom Script Stage offers the flexibility to implement custom changes to the content, allowing you to process the data according to your specific business needs. For example, if you wish to prepend the title of all the content extracted from a particular source, you can write a **Painless script** to do the same. 
+Custom Script Stage offers the flexibility to implement custom changes to the content, allowing you to process the data according to your specific business needs. For example, if you wish to prepend the title of all the content extracted from a particular source, you can write a **JavaScript** to do the same. 
     
-    Use the following properties to configure this stage.
+Use the following properties to configure this stage.
 
-    * **Stage Type:** Set this field to Custom Script
-    * **Stage Name**: Provide a unique name for the stage.
-    * **Condition**: Define a condition for selecting the content using Painless Scripts. For example, if you want to process only file content, use the following script as the condition.
+* **Stage Type:** Set this field to Custom Script
+* **Stage Name**: Provide a unique name for the stage.
+* **Condition**: Define a condition for selecting the content using Painless Scripts. For example, if you want to process only file content, use the following script as the condition.
 
-    ```javascript 
+  ```javascript 
     if(ctx.sys_content_type.equals("file"))
         { 
         return true;
@@ -82,10 +86,9 @@ Currently, Search AI offers two types of stages for transformation at this step.
         return false;
         }
     ```
+* **Outcome**: Define the outcome of the stage using the Painless script. For example, if you want the count of the total number of pages in a given file and add it as another field, you can write a script as shown below.
 
-    * **Outcome**: Define the outcome of the stage using the Painless script. For example, if you want the count of the total number of pages in a given file and add it as another field, you can write a script as shown below.
-
-    ```javascript
+```javascript
     int temp_total_pages = 0;
     if(ctx.file_content_obj != null){
         for (def item: ctx.file_content_obj) {
@@ -95,60 +98,203 @@ Currently, Search AI offers two types of stages for transformation at this step.
         }
     }
     ctx.total_pages = temp_total_pages;
-    ```
-## Stages available for different Extraction Strategies
+```
 
+### Exclude Documents Stage
+
+The **Exclude Stage** in the Document Workbench allows you to **filter out unnecessary or irrelevant content** before it is ingested into Search AI. If a document is not required for search, you can create custom filters at this stage to prevent its ingestion. By excluding irrelevant documents, you can:
+
+* Reduce unnecessary chunk generation
+* Improve search accuracy by minimizing the risk of generating incorrect or irrelevant results.
+* Enhance indexing efficiency by focusing on valuable and relevant content.
+
+Define filters for the documents to be excluded using the Primary Conditions. 
+
+* Field - Select the document field on which the condition should be applied (e.g., creation date, file type).
+* Operator - Choose the comparison operator (e.g., greater than, less than, equals).
+* Value - Specify the value that the selected field should be compared against.
+
+For instance, If you want to exclude documents created before a specific date (e.g., outdated files that may not be relevant for users), you can:
+
+* Select **Created On** as the field.
+* Choose **less than** as the operator.
+* Enter the **cutoff date** as the value.
+
+### API Stage
+
+This stage allows you to invoke an external API to modify, enrich, or analyze content during the transformation stage. When the API Stage is configured, the system sends the content to the specified external API. The transformed content received in the API response can be saved in any content field for further processing or indexing.
+
+This can be particularly useful for enriching documents with metadata via custom models or using external summarization or translation pipelines to add a summary of the content. 
+
+
+**Configuration**
+
+**Endpoint**: The URL to which the content should be sent (must be a POST endpoint). It can include chunk-level fields as either path parameters or query parameters. These parameters are dynamically resolved at runtime. 
+
+To reference a dynamic field in the URL, enclose the field name in double braces  {{<field-name>}}. 
+  
+For instance, the following endpoint uses two chunk fields.  [https://api.external.com/metadata/{{chunkTitle}}?type={{](https://api.external.com/metadata/{{doc.id}}?lang={{doc.language)cfs1}}. 
+  
+In this example,
+  * {{chunkTitle}} is used as a path parameter.
+  * {{cfs1}} is used as a query parameter.
+  
+**Headers**: Key-value pairs to be sent to the API as headers ( for authentication and other required headers)
+
+**Request Body**: Content to be sent to the API.  To pass content fields in the request , use the following format **{{field_name}}**. During a request to the API, this is dynamically replaced with the value of the field. For instance, in the following example where a request is sent to Open AI for extracting metadata from the source, {{content}} is replaced with the actual value of the content field for the doc under processing. 
+
+```
+{
+  "model": "gpt-4o-mini",
+  "temperature": 0.3,
+  "max_tokens": 650,
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an expert at extracting metadata from a document for augmenting existing data. Extract metadata from the document and return it in a structured format."
+    },
+    {
+      "role": "user",
+      "content": "{{content}}"
+    }
+  ]
+}
+```
+**Testing and Mapping API Response**
+
+Click the **Test** button to send a request to the configured API. The **Response** tab displays the data returned by the API. You can map fields from this response to **Search AI schema fields**.
+
+Refer to the [default field mappings documentation] for a list of fields extracted from the source (based on the standard Search AI schema) and available for mapping.
+
+![alt_text](images/map-fields.png "image_tooltip")
+
+
+**Points to Note**
+
+* Only POST APIs are currently supported.
+* Only Sync APIs are currently supported. 
+* You can map one or more API response fields to the Search AI schema fields corresponding to the doc. 
+
+### LLM Stage 
+
+This stage allows you to leverage the capabilities of an external LLM to refine, update, or enrich the ingested content. This can include tasks such as improving readability, summarizing lengthy documents, adding missing context, or reformatting text to align with organizational standards. For example, when a product manual is ingested, an  LLM Stage can be configured to generate a simplified summary or FAQs using the manual content, making the content readily available for end users while still preserving the original technical details.
+
+
+#### Prerequisites
+
+* [Set up the required LLM](https://docs.kore.ai/xo/generative-ai-tools/models-library/).
+* [Create a custom prompt](https://docs.kore.ai/xo/generative-ai-tools/prompts-library/) for the feature ‘Transform Documents with LLM’
+* In the[ Gen AI features page](https://docs.kore.ai/xo/generative-ai-tools/genai-features-searchai/), enable the feature, ‘Transform Documents with LLM’. 
+
+#### Configuration
+
+* **LLM**: Select the LLM to be used for document processing. 
+* **Prompt**: Select the custom prompt that will instruct the LLM on how to process the content. 
+* **Target Field**: Select the field where the enriched content, received as a response from the LLM, will be stored. 
+
+
+## Stages available for different Extraction Strategies
 
 <table>
   <tr>
    <td>
    </td>
-   <td>Text Extraction
-   </td>
-   <td>Advanced HTML Extraction
-   </td>
-   <td>Layout Aware Extraction
-   </td>
+   <td>Field Mapping </td>
+   <td>Custom Script</td>
+   <td>Exclude Documents</td>
+   <td>API Stage  </td>
+   <td>LLM Stage </td>
   </tr>
   <tr>
-   <td>Field Mapping
+   <td>Text Extraction  </td>
+   <td>Yes  </td>
+   <td>Yes  </td>
+   <td>Yes  </td>
+   <td>Yes  </td>
+   <td>Yes  </td>
+  </tr>
+  <tr>
+   <td>Advanced HTML Extraction  </td>
+   <td>Yes   </td>
+   <td>Yes   </td>
+   <td>Yes   </td>
+   <td>Yes   </td>
+   <td>Yes   </td>
+  </tr>
+  <tr>
+   <td>Layout Aware Extraction  </td>
+   <td>NA   </td>
+   <td>NA   </td>
+   <td>NA   </td>
+   <td>NA   </td>
+   <td>NA   </td>
+  </tr>
+  <tr>
+   <td>Markdown Extraction
+
    </td>
-   <td>Yes
+   <td>NA 
+
    </td>
-   <td>Yes
+   <td>NA 
+
+   </td>
+   <td>NA
+
    </td>
    <td>NA
    </td>
+    <td>NA   </td>
   </tr>
   <tr>
-   <td>Custom Script
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
+   <td>Image-based Document Extraction
+
    </td>
    <td>NA
+
+   </td>
+   <td>NA 
+
+   </td>
+   <td>NA
+
+   </td>
+   <td>NA
+
+   </td><td>NA
+
    </td>
   </tr>
 </table>
-
-
-
+  
 ## Adding a New Stage
 
-To add a new stage, click the **+New Stage** link in the left, configure the stage as required and click on **Save**.  By default, when a stage is added, it is enabled. Hence, the transformation process through the stage happens on the next application training. 
+To add a new stage, click the **+New Stage** link on the left, configure the stage as required and click on **Save**.  By default, when a stage is added, it is enabled. Hence, the transformation process through the stage happens on the next application training. 
 
 ![alt_text](./images/add-stage.png "image_tooltip")
 
+## Testing the Stage
+
+You can test content transformation logic within the **Document Workbench** using the **Simulate** option. This opens a simulator that allows you to validate any of the configured transformation stages. This simulation helps verify and debug stage transformations before applying them to production data.
+
+To begin testing:
+
+* Select the specific stage you want to test.
+* Choose the number of documents you wish to run the test on.
+
+
+Once executed, the transformed content is displayed in the **Chunk Viewer**. The output is a JSON object, named after the corresponding transformation stage. If any errors occur during the transformation process, they will be captured and listed under the simulate_errors object within the JSON output.
+
+
 ## Enabling/Disabling a Stage
 
-To enable or disable a stage, click on the ellipsis icon on the right of the stage, and select enable or disable option. When a stage is disabled, the output of the previous stage in the sequence is directly sent as input to the next stage without deleting the current stage. This can be used for testing or troubleshooting the content transformation process. 
+To enable or disable a stage, click on the ellipsis icon on the right of the stage, and select the enable or disable option. When a stage is disabled, the output of the previous stage in the sequence is directly sent as input to the next stage without deleting the current stage. This can be used for testing or troubleshooting the content transformation process. 
 
 ![alt_text](./images/disable-stage.png "image_tooltip")
 
 ## Deleting a Stage
 
-Deleting a stage permanently deletes it from the application. To delete a stage, click the ellipsis icon and select Delete option. 
+Deleting a stage permanently deletes it from the application. To delete a stage, click the ellipsis icon and select the Delete option. 
 
 ![alt_text](./images/delete-stage.png "image_tooltip")
 

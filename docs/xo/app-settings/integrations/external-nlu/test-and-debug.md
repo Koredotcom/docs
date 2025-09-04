@@ -1,15 +1,15 @@
 # Test and Debug
 
-The following sections describe how you can test and debug your Virtual Assistant to validate the working of External NLU.
+The following sections describe how you can test and debug your AI Agent to validate the working of External NLU.
 
 
 ## Test
 
-After completing the steps in [Adapter Configuration](../external-nlu-adapters/#adapter-configuration){:target="_blank"} and [enabling the API](../dialogflow-engine/#enable-the-dialogflow-api){:target="_blank"}, to check if the intent identification is done by External NLU adapter or not, you can follow these steps:
+After completing the steps in [Adapter Configuration](external-nlu-adapters.md#adapter-configuration){:target="_blank"} and [enabling the API](dialogflow-engine.md#enable-the-dialogflow-api){:target="_blank"}, to check if the intent identification is done by External NLU adapter or not, you can follow these steps:
 
 
 
-1. Go to your VA and click **Test**.
+1. Go to your App and click **Test**.
 2. Enter a user utterance which matches the intent entered in the Dialogflow Essentials page.
 3. In the **Debug Log** panel of the user conversation, you can see a message that, **intent identified using External NLU is initiated**.  
 <img src="../images/external-nlu-test-and-debug-img1.png" alt="Debug Log - intent identified using External NLU is initiated" title="Debug Log - intent identified using External NLU is initiated" style="border: 1px solid gray;zoom:50%;"/>
@@ -28,6 +28,14 @@ This is displayed only if an external NLU is enabled. If the API call fails, it 
 
     If intent is not detected by the External NLU engine, it is tracked in Debug Log.
 
+* Hover over the information icon to view the K-Traceid and X-Traceid for each user interaction. The K-Traceid helps track and debug activities. The X-Traceid is a unique identifier for each message, included in the platform logs.  
+<img src="../images/ktrace.png" alt="K-Traceid and X-Traceid" title="K-Traceid and X-Traceid" style="border: 1px solid gray;zoom:50%;"/>
+
+
+* Hover over the information icon to view the K-Traceid and X-Traceid for each user interaction. The K-Traceid helps track and debug activities. The X-Traceid is a unique identifier for each message, included in the platform logs.  
+<img src="../images/ktrace.png" alt="K-Traceid and X-Traceid" title="K-Traceid and X-Traceid" style="border: 1px solid gray;zoom:50%;"/>
+
+
 * Under **Session Context & Variables**, you can see the variables for intents and entities in detail as shown in the following screenshots.  
 <img src="../images/external-nlu-test-and-debug-img3.png" alt="Session Context & Variables" title="Session Context & Variables" style="border: 1px solid gray;zoom:50%;"/>  
   
@@ -43,7 +51,8 @@ See the following sections to understand more details.
 
 ## Utterance Testing
 
-[Utterance Testing](../../../../automation/testing/testing-your-bot-with-nlp){:target="_blank"} also provides NLP Analysis. The **Matched Intents** and **Fields/Entities** tables that provide an easy way to update training data like synonyms, patterns, etc are not displayed if the Intent is identified on the external NLU engine.
+[Utterance Testing](../../../automation/testing/testing-your-bot-with-nlp.md)
+ also provides NLP Analysis. The **Matched Intents** and **Fields/Entities** tables that provide an easy way to update training data like synonyms, patterns, etc are not displayed if the Intent is identified on the external NLU engine.
 
 * If the intent is detected by an external engine, the utterance is not sent to the Kore.ai NLP engine.  
 <img src="../images/external-nlu-test-and-debug-img5.png" alt="Intent is detected by an external engine" title="Intent is detected by an external engine" style="border: 1px solid gray;zoom:50%;"/>
@@ -51,10 +60,10 @@ See the following sections to understand more details.
 * Click the **View Response** link to view the API response in the JSON format, received from the external NLU engine in both cases of whether intent is detected or not detected by the external NLU.  
 <img src="../images/external-nlu-test-and-debug-img6.png" alt="View the API response in the JSON format" title="View the API response in the JSON format" style="border: 1px solid gray;zoom:50%;"/>
 
-* If the intent is not detected by the external engine, the Kore.ai NLU engine acts as a fallback. So, in this case, the NLP analysis shows the analysis of intent detection results from our three engines along with the ranking and resolver. For more information, see [Ranking and Resolver](../../../../automation/natural-language/training/ranking-and-resolver){:target="_blank"}.  
+* If the intent is not detected by the external engine, the Kore.ai NLU engine acts as a fallback. So, in this case, the NLP analysis shows the analysis of intent detection results from our three engines along with the ranking and resolver. For more information, see [Ranking and Resolver](../../../automation/natural-language/training/ranking-and-resolver.md){:target="_blank"}.  
 <img src="../images/external-nlu-test-and-debug-img7.png" alt="Intent is not detected by an external engine" title="Intent is not detected by an external engine" style="border: 1px solid gray;zoom:50%;"/>
 
-* If the intent is detected by the external engine but cannot be mapped to any intent on the XO platform, even then the Kore.ai NLU engine acts as a fallback. In this case, the NLP analysis displays a relevant message along with the API response containing the detected Intents and parameters.  
+* If the intent is detected by the external engine but cannot be mapped to any intent on the platform, even then the Kore.ai NLU engine acts as a fallback. In this case, the NLP analysis displays a relevant message along with the API response containing the detected Intents and parameters.  
 <img src="../images/external-nlu-test-and-debug-img8.png" alt="Intent detected by external engine but cannot be mapped to any intent on platform" title="Intent detected by external engine but cannot be mapped to any intent on platform" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -69,7 +78,7 @@ For example, irrespective of whether the expected intent is detected by the Exte
     There is no common base to compare the scores of all the engines, hence scores sent by the external NLU are not considered.
 
 
-For any intent detected by the external NLU, it should be considered that the thresholds have been met and in the ‘**Matched Intent Score**’ column, this is indicated as _ExtNLU (without any score against it)_ in place of ML, FM, or KG scores. This can be viewed in the downloaded CSV under NLU of Batch Testing. To know more, see [Batch Testing](../../../../automation/testing/regression-testing/batch-testing){:target="_blank"}.
+For any intent detected by the external NLU, it should be considered that the thresholds have been met and in the ‘**Matched Intent Score**’ column, this is indicated as _ExtNLU (without any score against it)_ in place of ML, FM, or KG scores. This can be viewed in the downloaded CSV under NLU of Batch Testing. To know more, see [Batch Testing](../../../automation/testing/regression-testing/batch-testing.md){:target="_blank"}.
 
 <img src="../images/external-nlu-test-and-debug-img9.png" alt="ExtNLU Matched intent score" title="ExtNLU Matched intent score" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -86,7 +95,7 @@ In Health and Monitoring go to **Test Cases > Detailed Analysis** to see the Int
 
 <img src="../images/external-nlu-test-and-debug-img10.png" alt="Intents and Entities identified by External NLU" title="Intents and Entities identified by External NLU" style="border: 1px solid gray;zoom:50%;"/>
 
-For more information, see [Virtual Assistant Health and Monitoring](../../../../automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring){:target="_blank"}.
+For more information, see [Health and Monitoring](../../../automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md){:target="_blank"}.
 
 
 ## NLP Insights
@@ -95,7 +104,7 @@ NLP Insights have Intent Identified, Intent Not Identified utterances and their 
 
 <img src="../images/external-nlu-test-and-debug-img11.png" alt="Failed External NLU API calls" title="Failed External NLU API calls" style="border: 1px solid gray;zoom:50%;"/>
 
-For more information, see [NLP Insights](../../../../analytics/automation/nlp-insights){:target="_blank"}.
+For more information, see [NLP Insights](../../../analytics/automation/nlp-insights.md){:target="_blank"}.
 
 
 ## Conversation Behavior
@@ -124,14 +133,14 @@ This list describes the conversation behavior while using external NLU adapter:
         Information like the response messages and fulfillment from the external engine is ignored.
 
 
-* When external NLU is enabled, in the interruption handling only one behavior, “**Switch to a new task without any notification to the user and discard the current task**”, is supported. To know more information, see [Interruption Management Settings](../../../../automation/intelligence/conversation-management/manage-interruptions){:target="_blank"}.
-* If the external NLU API returns an error or the API cannot be reached, a fallback intent gets activated with the standard response as, _Error in continuing the conversation due to incorrect bot definition._ To know more information, see [Standard Responses](../../../../automation/intelligence/conversation-management/default-conversations/#standard-responses){:target="_blank"}.
+* When external NLU is enabled, in the interruption handling only one behavior, “**Switch to a new task without any notification to the user and discard the current task**”, is supported. To know more information, see [Interruption Management Settings](../../../automation/intelligence/conversation-management/manage-interruptions.md){:target="_blank"}.
+* If the external NLU API returns an error or the API cannot be reached, a fallback intent gets activated with the standard response as, _Error in continuing the conversation due to incorrect bot definition._ To know more information, see [Standard Responses](../../../automation/intelligence/conversation-management/default-conversations.md/#standard-responses){:target="_blank"}.
 
     !!! note
 
         The Intent and entity mapping work based on a case insensitive comparison of the names defined on the two platforms.
 
-* For the entity identification to work properly, it is recommended to define the entity nodes in the same sequence on the XO Platform and the external engine.
+* For the entity identification to work properly, it is recommended to define the entity nodes in the same sequence on the Platform and the external engine.
 * If the external NLU fails to detect the entity, then as a fallback, an attempt is made to detect the same on the Kore.ai NLP engine.
 
 

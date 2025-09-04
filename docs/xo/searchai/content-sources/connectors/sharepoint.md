@@ -1,13 +1,59 @@
 # SharePoint Connector
 
-Configure the SharePoint connector if you're using SharePoint to manage your content and want to make your existing content searchable with SearchAI. Configuring SharePoint as a content source requires:
+Configure the SharePoint connector if you're using SharePoint to manage your content and want to make your existing content searchable with SearchAI. 
+
+
+**<span style="text-decoration:underline;">SharePoint Connector Specifications</span>**
+
+<table>
+  <tr>
+   <td>Type of Repository 
+   </td>
+   <td>Cloud
+   </td>
+  </tr>
+  <tr>
+   <td>Supported Content Type
+   </td>
+   <td>Articles and Files
+   </td>
+  </tr>
+  <tr>
+   <td>Access Control Support 
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
+  <tr>
+   <td>Content Filtering Support
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+</table>
+
+
+Configuring SharePoint as a content source requires:
 
 * **Registering a multi-tenant app in SharePoint**
 * **Configuration of the SharePoint connector in SearchAssist**
 
 ## Authorization Support
 
-Search AI supports **OAuth 2.0 Authorization Code Grant Type** mechanism for SharePoint.
+Search AI supports two types of OAuth 2.0 authentication mechanisms for SharePoint.
+
+* **OAuth 2.0 Authorization Code Grant Type** 
+
+    In this type of authentication, the app acts **on behalf of the user**. The app uses **Delegated Permissions**. This type of authorization requires explicit consent. 
+
+* **OAuth 2.0 Client Credentials Grant Type**
+
+    In this type of authentication, the app acts **as itself and not as any user**. The app uses the **Application Permissions**. 
+
 
 ## Registering multi-tenant app in SharePoint
 
@@ -24,7 +70,7 @@ App registrations are required to access resources programmatically. Registering
 * Enter the application's name. Create a multi-tenant account and set the account type to ‘Accounts in any organization directory’. Set the Redirect URL and click **_Register_**. You can use one of the following URLs according to your region.
     * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
     * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Region Callback URL: https://idp.kore.com/workflows/callback
+    * Prod Callback URL: https://idp.kore.com/workflows/callback
     
 ![Account Types](images/sharepoint/account-types.png "Account Types")
 
@@ -48,18 +94,28 @@ App registrations are required to access resources programmatically. Registering
 
 ![API Permissions](images/sharepoint/api-permissions.png "API Permissions")
 
-* Add the following delegated permissions found under **Microsoft Graph**.
-    * User.ReadBasic.All
-    * Group.Read.All
+* Add the following **delegated permissions** found under **Microsoft Graph**.
+
+  * User.ReadBasic.All
+  * Group.Read.All
     * Directory.AccessAsUser.All
     * Files.Read
     * Files.Read.All
     * Sites.Read.All
     * Offline_access
+    * GroupMember.Read.All: Only required if Permission Aware Ingestion (RACL) is enabled.  
+    * Organization.Read.All: Only required if Permission Aware ingestion is enabled. 
+
     
     ![Request Permissions](images/sharepoint/request-permissions.png "Request Permissions")
 
-* After adding all the permissions, click **_Grant Admin Consent_** to grant the permissions to the application.
+   For authentication using the Client Credentials Grant Type, select the following under Application Permissions. 
+
+ * Sites.Selected
+ * GroupMember.Read.All: Only required if Permission Aware ingestion (RACL) is enabled.  
+ * Organization.Read.All: Only required if Permission Aware ingestion is enabled.  
+
+* After adding all the permissions, click **Grant Admin Consent** to grant the permissions to the application.
 
 ![Grant Permissions](images/sharepoint/grant-permissions.png "Grant Permissions")
 
@@ -68,9 +124,66 @@ App registrations are required to access resources programmatically. Registering
 
 ## Configuration of the SharePoint connector 
 
-Go to the **Connectors** under **Sources** and select **SharePoint**. On the Authorization page, enter the **Client ID**, **Tenant ID**, and **Client Secret** generated during the application registration in the Azure portal. Choose the desired content type—**All, Articles,** or **Files**. Assign a name for the connector, then click **Connect**.
+Go to the **Connectors** tab under **Sources**. Select **SharePoint** from the list. On the **Authorization** page, provide the following details. 
 
-This will authenticate with the SharePoint application. Once the authorization process is complete and the connector is configured, the next step is to select the SharePoint sites from which you want to ingest the content and make it searchable. Go to the **Configure** section, click the **Select Content** link, select the sites from which you want to ingest content, and click **Save**. Click on **Sync Now** to start content ingestion. 
+* Name - Unique name for the connector. 
+* Authorization Type - Set this to OAuth 2.0.
+* Grant Type -  Select one of the following grant types. 
+    * Authorization Code
+    * Client Credentials 
+* Client ID - Provide the client ID generated during the application registration in the Azure portal.
+* Client secret - Provide the client secret generated during the application registration in the Azure portal.
+* Tenant ID - Enter the Directory (Tenant) ID associated with your Azure AD instance.
+* Content Type - Choose the desired content type—All, Articles, or Files. 
+
+Click **Connect** to authenticate with the SharePoint application.
+
+## Content Ingestion
+
+Once the authorization process is complete and the connector is configured, the next step is to select the SharePoint sites from which you want to ingest the content and make it searchable. 
+
+!!! note
+    The configuration steps vary slightly depending on the grant type you selected for authentication. 
+
+### Authorization Code Grant Type
+
+To select sites for content ingestion:
+
+* Go to the **Configuration** section.
+* Under **Sync Specific Content**, click the **Select Content** link.
+* Choose the SharePoint sites from which you want to ingest content.
+* Click **Save**. 
+
+![Select Sites](images/sharepoint/sitelist.png "Select Sites")
+
+### Client Credentials Grant Type
+
+To configure content ingestion:
+
+* Go to the **Configuration** section.
+* Under Sync Specific Content, click the **Configure** link.
+* Enter one or more Site IDs from which content should be ingested. Note that the app created in Azure Active Directory should have access to the site(s) that are added here.
+* Select the desired Content Type:
+    * Articles
+    * Files
+* (Optional) Apply filters to ingest only specific types of content.
+
+![Select Sites](images/sharepoint/site-filter.png "Select Sites")
+
+!!! note
+Currently, only **Articles** or **Files** can be selected directly as content types. To ingest **both**, create a filter rule with **two conditions** combined using the **OR** operator. 
+
+Example:
+    * Condition 1: Content Type = Articles
+    * Condition 2: Content Type = Files 
+
+![Select Sites](images/sharepoint/site-filter.png "Select Sites")
+
+This  will fetch both types of content from the same site(s).
+
+## Sync content
+
+Click **Sync Now** to start ingestion immediately. Alternatively, set up automatic ingestion using **Schedule Sync** under the **Configuration** page.
 
 ## Advanced Content Filtering
 
@@ -111,7 +224,7 @@ Permissions to files and pages in SharePoint include **site-level permissions** 
 
 ### Site-level Permissions
 
-There are **two membership groups** in SharePoint: **Office 365** ** groups and **SharePoint Security groups**. These groups grant different access to your site. Users using both groups receive access permissions.
+There are **two membership groups** in SharePoint: **Office 365** groups and **SharePoint Security groups**. These groups grant different access to your site. Users using both groups receive access permissions.
 
 You can view the **Office 365 Group Membership** for a site here. 
 
@@ -137,9 +250,9 @@ Every site has three default SharePoint permission levels, which differ in the a
 
 ### Handling of Site Permissions in SearchAI
 
-Corresponding to the **Office 365 Group Membership group, a permission entity** is created in the SearchAI application. **All the users added to this group are automatically added to this permission entity in SearchAI. However, if there are email groups added here, the members of the group should be added to the permission entity manually using the Permission Entity APIs.**
+Corresponding to the **Office 365 Group Membership group, a permission entity** is created in the SearchAI application. **All the users added to this group are automatically added to this permission entity in SearchAI. However, if there are email groups added here, the members of the group should be added to the permission entity manually using the [Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md).**
 
-Similarly, corresponding to the **SharePoint Security Groups, three permission entities** are created in the SearchAI application. The users in these groups should be manually added to the corresponding permission entities using the Permission Entity APIs.  
+Similarly, corresponding to the **SharePoint Security Groups, three permission entities** are created in the SearchAI application. The users in these groups should be manually added to the corresponding permission entities using the [Permission Entity API](../../../apis/searchai/permission-entity-apis.md).  
 
 Therefore, in the sourceACL field, you will see four permission entities corresponding to the site permissions. 
 
@@ -159,4 +272,8 @@ The owner can also share a file with all the domain or organization members.
 
 * When a file is shared with a specific user, the user is automatically added to the sourceACL field of the corresponding files during ingestion. 
 * When a file is shared with a user group, the groupId is used to create a permission entity that can be used to resolve individual users. 
-* When a file is shared with a specific domain, the domain name is stored as a permission entity in the sourceACL field. SearchAI automatically compares the user email IDs with the domain name during answer generation. If there is a match, access to the files is granted.  
+* When a file is shared with a specific domain, the domain name is stored as a permission entity in the sourceACL field. SearchAI automatically compares the user email IDs with the domain name during answer generation. If there is a match, access to the files is granted. 
+
+### Related Pages
+* [Learn About Access Control in Search AI](../racl-support.md)
+* [Associate users with permission Entities using Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md).

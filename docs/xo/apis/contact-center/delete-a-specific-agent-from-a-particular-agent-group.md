@@ -1,11 +1,11 @@
 # Delete a Specific Agent from a Particular Agent Group
 
-To delete a particular agent with the given Stream Id and Agent Id.
+To delete a particular agent with the given `streamId` and `agentId`.
 
 | **Parameter**   | **Description**                                                                                                                                       |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Method**          | DELETE                                                                                                                                                |
-| **Endpoint**        | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}`                                                                          |
+| **Endpoint**        | `https://{{host}}/agentassist/api/v1/public/{{botId}}/agents/{{agentId}}`                                                                          |
 | **Content Type**    | `application/json`                                                                                                                                    |
 | **Authorization**   | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                          |
 | **API Scope**       | SmartAssist Analytics                                                                                                                                 |
@@ -14,15 +14,15 @@ To delete a particular agent with the given Stream Id and Agent Id.
 
 | **PARAMETER** | **DESCRIPTION**                                                                                               | **TYPE**          |
 |---------------|---------------------------------------------------------------------------------------------------------------|-------------------|
-| host          | Environment URL, for example, https://platform.kore.ai                                                     | string, required  |
-| BotId         | BotId or StreamId. You can access it from the General Settings page of the bot.                               | string, required  |
+| host          | Environment URL, for example, `https://platform.kore.ai`                                                     | string, required  |
+| botId         | botId or streamId. You can get it from the App Settings page.                               | string, required  |
 | agentId       | The Agent Id of the particular agent whose details are being retrieved.                                       | string, required  |
 
 ## Sample Request
 
 ```
 curl --location --request DELETE \
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}' \
+     'https://{{host}}/agentassist/api/v1/public/{{botId}}/agents/{{agentId}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

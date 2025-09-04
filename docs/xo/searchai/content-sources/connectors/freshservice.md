@@ -43,7 +43,7 @@ To enable integration between Search AI and Freshservice and ingestion of conten
 
 Search AI uses Freshservice APIs to access the content. Hence it requires the API key to set up this communication. Follow the steps listed below to generate the API key.
 
-1. Log in to Your Freshservice Account.
+1. Sign in to Your Freshservice Account.
 2. Access Your Profile Settings. Click on your profile initials in the top-right corner of the Freshservice dashboard and select **Profile Settings**.
 3. In the **Profile Settings** page, find the **API Key** section under your user information.Copy the API Key and ensure it is secure, as it provides access to your Freshservice account.
 

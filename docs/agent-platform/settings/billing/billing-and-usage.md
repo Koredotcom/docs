@@ -1,54 +1,59 @@
-# About Billing
+# Manage Account Billing and Usage
 
-The Billing section helps you monitor and analyze your Agent platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, and guardrails to make data-driven decisions about your resource utilization.
+The **Billing** section helps you monitor and analyze your Agent platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, guardrails, and custom script deployments to make data-driven decisions about your resource utilization.
 
-# Accessing Usage Information
+## Accessing Usage Information
 
 Steps to access the Usage page:
 
-1. [Sign in](../../getting-started/sign-up-sign-in.md) to your Agent Platform account.
-2. On the top navigation bar, click **Settings**.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Settings** on the top navigation bar.
 3. On the left navigation pane, click **Billing** > **Usage**.
 
-The Usage dashboard is displayed.
+The **Usage** dashboard appears as shown below.
 
- <img src="../images/accessing_billing.png" alt="Accessing Billing" title="Accessing Billing" style="border: 1px solid gray; zoom:80%;">
+ <img src="../images/access-usage.png" alt="Accessing Billing" title="Accessing Billing" style="border: 1px solid gray; zoom:80%;">
 
 The Usage page displays the following tabs for billing and usage:
 
-* **Usage**: Provides a high-level summary of your resource consumption:
+* **Overview**: Provides a high-level summary of your resource consumption including:
     * **Runs**: Shows current tool run usage against your total allocation.
-    * **Model Credits**: Displays consumed credits versus total available credits.
+    * **Credits**: Displays the number of credits consumed out of the total available credits, along with the corresponding percentage. A dynamic pie chart visually represents this data, showing the distribution of total credits, including usage by models and custom script deployments. Each metric is color-coded and identified through a legend for easy reference. Hover over the chart to view the actual values for each usage type.
     * **Usage Trend**: Visual representation of tool runs and model credit consumption over time.
 * **Tools**: Shows all tool activities and their operational status.
 * **Models**: Shows the computational costs linked to specific models.
 * **Guardrails**: Shows overall guardrail statistics and credit consumption costs.
+* **Custom Scripts**: Gives a comprehensive view of all the deployed custom scripts’ statistics, including the credits usage trends.
 
-## Best Practices
+**Best Practices**
 
 * Regularly monitor your usage trends to optimize resource allocation.
-* Review tool and model performance to identify cost-saving opportunities.
+* Review tools, models, guardrails, and custom scripts to identify cost-saving opportunities.
+* Please refer to the hardware profile and the credits consumption chart [here](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"} before deploying custom scripts.
 * Track guardrail deployment duration to manage hardware costs effectively.
+* Hover over the top-right corner of the **Runs** and **Credits** widgets and click the **Refresh** icon to update the latest data.
+ 
+     <img src="../images/refresh-runs.png" alt="refresh" title="refresh" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
-
-    Use the Calendar bar on all the tabs to search by the number of days using predefined date filters—24 hours, 7 days, 30 days, or 90 days. You can also use the Custom option to specify your preferred date range.
-
-
-# Usage Overview
-
-The Overview tab summarizes expenses and usage patterns across your tools and models. The following usage information is displayed on the tab:
-
-* **Runs**: This field indicates the usage of tool runs, showing the proportion of capacity consumed compared to the total available runs. For example, in the below image, 301 out of 10,000 available tool runs have been utilized, indicating that 3.01% of the total capacity has been consumed.
-* **Model Credits**: This field displays the total model credit usage, showing the proportion of model credits used across all models compared to the total available credits. It also includes the credits used to host guardrails. For example, in the image below, 12,899 credits have been used out of a total allocation of 13,325 credits, indicating that 96.80% of your available model credits have been utilized.
-* **Usage trend**: It visually represents **Tool runs** and **Model credits** consumption over time. Use the Calendar feature to see the changes over time, for example, daily, weekly, monthly, or any custom dates.
-
- <img src="../images/overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:80%;">
-
- <img src="../images/usagetrend.png" alt="Billing Usage trend" title="Billing Usage trend" style="border: 1px solid gray; zoom:80%;">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use the Calendar bar on all the tabs to search by the number of days using pre-defined date filters—24 hours, 7 days, 30 days, or 90 days. You can also use the Custom option to specify your preferred date range. <a href="https://docs.kore.ai/agent-platform/settings/monitoring/analytics/tools-analytics-dashboard/#global-timeline-filters" target="_blank">Learn more</a>.</p>
+</div>
 
 
-# Tools Usage
+## Usage Overview
+
+The **Overview** tab summarizes expenses and usage patterns across your tools, models, guardrails, and custom scripts. The following usage information is displayed on the tab:
+
+* **Runs**: This field indicates the usage of tool runs, showing the proportion of capacity consumed compared to the total available runs. For example, if 45 out of 10,000 available tool runs have been utilized, indicating that 0.45% of the total capacity has been consumed.
+* **Credits**: This field displays the total credit usage, showing the proportion of credits used across models, guardrails, and custom scripts compared to the total available credits. It also includes the credits used to host guardrails. For example, if 212 credits have been used out of a total allocation of 300 credits, indicating that 70.72% of your available model credits have been utilized.
+* **Usage trend**: This visual representation shows tool runs, models, guardrails, and custom script credits consumed over time. Use the calendar feature to view changes over a defined timeline, such as daily, weekly, monthly, or any custom date range.
+
+    <img src="../images/overview-tab.png" alt="Billing Usage trend" title="Billing Usage trend" style="border: 1px solid gray; zoom:80%;">
+
+## Tools Usage
 
 The Tools tab displays a comprehensive list of tools associated with the account. It includes only those tools that have been deployed at least once; it does not include ‘In development’ tools.  
 
@@ -62,51 +67,53 @@ The following usage information is displayed on the tab:
 * **Last active on**: The date when the tool was last active.
 * **Status**: The tool's status - Deployed, Undeployed, or Deleted.
 
- <img src="../images/agents.png" alt="Billing Tools tab" title="Billing Tools tab" style="border: 1px solid gray; zoom:80%;">
+ <img src="../images/tools-tab.png" alt="Billing Tools tab" title="Billing Tools tab" style="border: 1px solid gray; zoom:80%;">
 
 
-# Models Usage
+## Models Usage
 
-The Models tab displays a comprehensive list of open-source models in the account and the computational cost of storing, fine-tuning, and hosting each model.
+The **Models** tab displays a comprehensive list of open-source and fine-tuning models in the account and the computational cost of storing, fine-tuning, and hosting each model.
 
-<img src="../images/models.png" alt="Billing Models tab" title="Billing Models tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/models-usage.png" alt="Billing Models tab" title="Billing Models tab" style="border: 1px solid gray; zoom:80%;">
 
-The following usage information is displayed on the tab:
+If there are multiple deployments of the same model, the usage data is displayed for each deployment in the drill-down view. [Learn more](./billing-and-usage.md/#viewing-deployment-level-information){:target="_blank"}.
+
+The following usage metrics summarize data for all the deployments:
 
 * **Total models**: The total number of models in the account.
-* **Total credits**: The total credits used by all the models.
+* **Total credits**: The total credits used by all the models (including all the deployments).
 * **Fine-tuning credits**: The number of credits used for fine-tuning the models. The number of credits are based on factors like the size of the training data, the model complexity, the number of training epochs, the type of hardware used, and other parameters.
 * **Hosting credits**: The total number of credits used to cover the cost of deploying and hosting models on GPUs.
 When you deploy a model on powerful GPUs, each GPU instance is considered a "replica", which requires the allocation of hosting credits. For example, if your model runs on one A100 GPU, that counts as one replica and consumes a specific amount of hosting credits. If demand increases and you need to deploy a second A100 GPU to handle additional user requests, you will now have two replicas and be charged for both, requiring twice the number of hosting credits.
 
+The following information is displayed for each model record:
+
 * **Model name**: The name of the model.
-* **Model type**: The type of model used: Fine-tuned or Base.
-* **Credits used**: The number of credits used by the model.
-* **Last active on**: The date when the model was last active.
-* **Status**: The current status of the model: Deployed, Undeployed, or Deleted.
+* **Type**: The type of model used: Fine-tuned or Base.
+* **Credits used**: The credits consumed by the deployment.
+* **Last deployed on**: The date when the model was last deployed.
 
-## Viewing Detailed Model Information
+### Viewing Deployment-level Information
 
-Clicking each row on the Models tab opens a panel on the right that displays detailed information about the costs associated with the selected model.
-
-<img src="../images/models_right_panel_detailed.png" alt="Models detailed information" title="Models detailed information" style="border: 1px solid gray; zoom:80%;">
+Click each Model record to view a detailed record of all its deployments with the following information:
 
 The following information is displayed:
 
-* Name of the model.
-* **Hosting**: The type of GPU used for hosting the model, the number of GPUs used, the duration for which the GPUs are being used, and the number of credits used to host the model.
-* **Fine-tuning**: The number of credits used to fine-tune the model.
-* **Total**: The total number of credits for hosting and fine-tuning the model.
+* **Name**: The name given to the deployment.
+* **Type**: The type of deployment.
+* **Credits used**: The credits consumed by the deployment.
+* **Last updated on**: The date when the deployment was last done.
+* **Status**: The current deployment status: *Deployed*, *Undeployed*, or *Deleted*.
 
+    <img src="../images/models-usage-drill-down.png" alt="drill down view" title="drill down view" style="border: 1px solid gray; zoom:80%;">
 
-
-# Guardrails Usage
+## Guardrails Usage
 
 The Guardrails tab displays the list of guardrails used and the charges related to their usage. Each guardrail includes details about the hardware it was deployed on and the associated costs. The guardrails are charged based on the hardware used.
 
 The guardrail usage is deducted from the Model credits shown in the Overview tab, indicating that the available credits for the model will decrease based on the cost of using the guardrails.
 
-<img src="../images/guardrails.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/guardrails-tab.png" alt="Guardrails tab" title="Guardrails tab" style="border: 1px solid gray; zoom:80%;">
 
 The following usage information is displayed on the Guardrails tab:
 
@@ -119,11 +126,20 @@ The following usage information is displayed on the Guardrails tab:
 * **Last deployed on**: The date the guardrail was last deployed.
 * **Status**: The status of the guardrail: Deployed or Undeployed.
 
-## Viewing Detailed Guardrail Information
+### Viewing Detailed Guardrail Information
 
-Clicking each row on the Guardrail tab opens a panel on the right that displays detailed information about the hardware it was deployed on and the charges associated with the guardrail.
+Clicking each row on the Guardrail tab opens a panel on the right that displays detailed information about the hardware on which it was deployed and the charges for each guardrail deployment.
 
-<img src="../images/guardrails_right_panel.png" alt="Guardrails detailed information" title="Guardrails detailed information" style="border: 1px solid gray; zoom:80%;">
+
+* Credits for the guardrails consumption will be deducted from the allocated credits.
+* If the account credits fall below the lowest threshold, new deployments for guardrail models are disabled.
+* If the low credit limit is reached during an active deployment, the deployment will continue and proceed into negative credits. 
+* However, once the negative credit limit is crossed, the deployment will stop and display the following failure message: "*You've used all your available credits. Please add more credits to your account to continue.*"
+* The credits are continually deducted from the account, while the negative credits are adjusted in the next billing cycle.
+* If no credits exist, the following happens:
+     * Further deployments are disabled. 
+     * All ongoing deployments are disrupted once the negative credit limit is reached, and the message “*You've used all your available credits. Please add more credits to your account to continue.*” appears.
+      <img src="../images/guardrails-info.png" alt="Guardrails detailed information" title="Guardrails detailed information" style="border: 1px solid gray; zoom:80%;">
 
 
 The following information is displayed:
@@ -132,9 +148,52 @@ The following information is displayed:
 * **Hardware**: The type of CPUs used, the number of CPUs used, the duration for which the CPUs are being used, and the number of credits used.
 * **Total**: The total number of credits used for the hardware.
 
-!!! note
+### Email Notifications
 
-    Guardrails are hosted on smaller models. These smaller models do not need a lot of processing power, so they can be effectively managed by less powerful CPUs. Using CPUs is more economical, and they have enough capability to run the smaller models efficiently.
+Billing and credit calculation data for Guardrails is sent via email, notifying users about credit usage, negative threshold breaches, and potential deployment interruptions.
+
+## Custom Scripts Usage
+
+The **Custom Scripts** tab displays the list of custom scripts added to your account, along with the credits consumed for their deployment. Each custom script entry displays the language and version of the script, the credits used, the latest date of script usage (when it was active), and its [status](https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#information-on-script-deployment-statuses){:target="_blank"}. The **Total Scripts** and the **Hosting Credits** available in the account are also displayed as key metrics on the page. The custom scripts are charged for each deployment and hardware profile used.
+
+
+* Credits for script consumption are deducted from the allocated credits (**Overview** tab) based on the table mentioned [here](https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#step-3-resource-allocation){:target="_blank"}.
+* In case the account credits are insufficient, new deployments are disabled via the script wizard.
+* If the low credit limit is reached during an active deployment, the deployment will continue and proceed into negative credit. 
+      
+    * However, once the negative credit limit is crossed, the deployment will stop and display the following failure message: "*You've used all your available credits. Please add more credits to your account to continue.*"
+    * The credits are continually deducted from the account, while the negative credits are adjusted in the next billing cycle.
+* If no credits exist, the following happens:
+      * Projects can only be imported as drafts. 
+      *  Users will not be able to deploy imported projects. Deployment actions get disabled for the scripts.
+      *  If the negative credit limit is crossed during deployment, the process will be stopped, and a failure message will be displayed.
+      <img src="../images/cs-usage-data.png" alt="cs usage data" title="cs usage data" style="border: 1px solid gray; zoom:80%;">
+
+The following usage information is displayed:
+
+* **Total Scripts**: The total number of scripts added and managed in the account.
+* **Hosting Credits**: The total number of credits used by the scripts.
+* **Script name**: The name of the script.
+* **Language(Version)**: The language and version of the script.
+* **Credits used**: The credits consumed by the script for hardware and other resources.
+* **Last active on**: The latest date when the script was actively used.
+* **Status**: The deployment status of the script. [Learn more](https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#information-on-script-deployment-statuses){:target="_blank"}.
+
+
+### Viewing Detailed Script Information
+
+Clicking each row on the **Custom scripts** tab opens a panel on the right that displays detailed information about the script’s hosting parameters, including:
+
+* **Hosting infrastructure**: The hardware configurations (VCPUs and memory) used by the script.
+* Hosting time in hours and minutes.
+* Credits consumed by the components. Refer to the table [here](https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#step-3-resource-allocation){:target="_blank"} for pricing.
+* **Total** which represents the aggregate of all the credit components (when multiple components are involved).
+<img src="../images/custom-script-usage.png" alt="cs usage" title="cs usage" style="border: 1px solid gray; zoom:80%;">
+
+### Email Notifications
+
+Billing and credit calculation emails for custom scripts notify users about credit usage, negative credits threshold breaches, and deployment or undeployment events. Deployment notifications also include the API endpoint access details.
+
 
 
 

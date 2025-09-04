@@ -24,6 +24,10 @@ Shortcut is a project management tool that brings planning and development into 
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td>Automatic Permission Entities Resolution </td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td>Content Filtering
    </td>
@@ -51,7 +55,7 @@ Search AI interacts and fetches the stories-related content from the application
 
 Go to the Shortcut COnnector in Search AI, provide the following information, and click **Connect**.
 
-* **Name**- Unique name for the connector. 
+* **Name** - Unique name for the connector. 
 * **API Key** - API Token generated in the Shortcut app. 
 
 
@@ -64,4 +68,8 @@ It fetches the description of a story and metadata of a story, such as epic name
 
 ## RACL Support
 
-A story is accessible to all the members of a team or group associated with the story. Hence the `sys_racl` field is set to the **groupID **of the group related to the story. Use the Permission Entity APIs to associate a user email ID with this groupID. 
+In Shortcut, access to a story is controlled at the group level. All members of a group automatically have access to the stories associated with that group.
+
+When this content is ingested into Search AI, the groupID is stored in the `sys_racl` field of the chunks related to the ingested content. These group IDs act as permission entities that control access.
+
+SearchAI supports automatic resolution of permission entities for Shortcut stories. It automatically identifies users who have access to a given group. These users are automatically associated with the corresponding groupID permission entity in SearchAI.

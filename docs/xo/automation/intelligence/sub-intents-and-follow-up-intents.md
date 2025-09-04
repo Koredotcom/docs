@@ -2,7 +2,7 @@
 
 Human conversations are dynamic since they tend to switch between intents and entities, often combining multiple things into one.
 
-The XO Platform offers **Sub Intents** that are defined at the task level, and are the easiest way to shape dialog without having to manage context manually. This enables conversations to seamlessly branch into related intents as part of the primary intent, and work only within this context. An output context is added to the parent intent and an input context of the same name is added to the newly created child intent. Thus, the child intent can only be matched when the parent intent was matched during a previous portion of the conversation.
+The Platform offers **Sub Intents** that are defined at the task level, and are the easiest way to shape dialog without having to manage context manually. This enables conversations to seamlessly branch into related intents as part of the primary intent, and work only within this context. An output context is added to the parent intent and an input context of the same name is added to the newly created child intent. Thus, the child intent can only be matched when the parent intent was matched during a previous portion of the conversation.
 
 **Follow-up Intents** are helpful during the course of a dialog, a user utterance or intent cannot be attended to immediately. You can access such intents that come up during the execution of a different task, but that was never acted upon. These are stored in the _FollowupIntents_ array. You can then opt to ask users at the end of the dialog flow to select and perform tasks from a list of identified follow-up intents. You can also access this list to further train and refine their dialog flows.
 
@@ -10,9 +10,9 @@ The XO Platform offers **Sub Intents** that are defined at the task level, and a
 
 There are three ways to define Sub Intents:
 
-* **Add an Intent Node within the Dialog Task** – This intent is not available for any other dialog and since it is within the dialog, it is within its context. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-user-intent-node/){target="_blank"}.
-* **Use an existing Dialog Task** – This intent can be used over multiple dialogs. You can define the dialog as Sub Intent-only dialog and it cannot be invoked by user utterance nor will it appear in the list of available tasks when the user says help. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-dialog-node/){target="_blank"}.
-* **As linked Tasks** – The above two options are used when the sub intent is part of the dialog flow. For cases where the sub intent can be invoked by the user anywhere within the dialog, use the **Manage Sub Intents** and Exceptions option.
+* **Add an Intent Node within the Dialog Task**: This intent is not available for any other dialog and since it is within the dialog, it is within its context. [Learn more](../use-cases/dialogs/node-types/working-with-the-user-intent-node.md){target="_blank"}.
+* **Use an existing Dialog Task**: This intent can be used over multiple dialogs. You can define the dialog as Sub Intent-only dialog and it cannot be invoked by user utterance nor will it appear in the list of available tasks when the user says help. [Learn more](../use-cases/dialogs/node-types/working-with-the-dialog-node.md){target="_blank"}.
+* **As linked Tasks**: The above two options are used when the sub intent is part of the dialog flow. For cases where the sub intent can be invoked by the user anywhere within the dialog, use the Manage Sub Intents and Exceptions option.
 
 ## Linked Task Exceptions 
 
@@ -38,7 +38,7 @@ To add exceptions to transition to a specific task, follow the steps:
 5. Define the **Hold and Resume settings** from the list of options below and click **Save**.
 6. The Manage Interruption Behavior page opens with the selected tasks listed under **Exceptions**.
 
-Click [here](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/){target="_blank"} to learn how to manage interruptions.
+Click [here](./conversation-management/manage-interruptions.md){target="_blank"} to learn how to manage interruptions.
 
 <img src="../images/add-exceptions.png" alt="add exceptions" title="add exceptions" style="border: 1px solid gray; zoom:75%;">
 
@@ -88,9 +88,9 @@ If you want to reset the values, you need to use the keyword “null”, spaces 
 
 ## Follow-up Intents
 
-Follow-up intents refer to intents that came up in user conversations during the execution of another task, but the assistant has not attended to. As a part of dialog task execution, the VA captures all unattended interruptions and makes them accessible to the VA in the _FollowupIntents_ array.
+Follow-up intents refer to intents that came up in user conversations during the execution of another task, but the assistant has not attended to. As a part of dialog task execution, the AI Agent captures all unattended interruptions and makes them accessible to the AI Agent in the _FollowupIntents_ array.
 
-However, the VA does not capture Follow-up Intent if you select the **Do not Hold and Resume** option at the node, task, or bot level, whichever is applicable to the task flow.
+However, the AI Agent does not capture Follow-up Intent if you select the **Do not Hold and Resume** option at the node, task, or app level, whichever is applicable to the task flow.
 
 You can enable the dialog task to present all the Follow-up tasks to the user at the end of the dialog so they can choose to execute any of them. To do so, follow these steps:
 
@@ -100,4 +100,4 @@ You can enable the dialog task to present all the Follow-up tasks to the user at
 <img src="../images/follow-up-task.png" alt="follow up task" title="follow up task" style="border: 1px solid gray; zoom:75%;">
 
 <ul><li><b>Yes</b>, at the end of this dialog ask the user to select and perform a task from the <i>Follow-up task</i> list: Select this option to show all the unattended intents to the user at the end of the dialog. To customize the message sent to the user, click <b>Manager Response</b> next to the option.</li>
-<li><b>No</b>, the <i>Follow-up task</i> list is handled as part of the node connections: This is the default option. If this option is active, the VA does not present the Follow-up intents to the users at the end of the dialog. However, a developer can access this using the <i>FollowupIntents</i> array.</li></ul>
+<li><b>No</b>, the <i>Follow-up task</i> list is handled as part of the node connections: This is the default option. If this option is active, the AI Agent does not present the Follow-up intents to the users at the end of the dialog. However, a developer can access this using the <i>FollowupIntents</i> array.</li></ul>

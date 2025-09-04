@@ -127,8 +127,6 @@ Enterprises can set up access to the Bot builder tool using the enterprise SSO. 
 5. Upon verifying the response from the identity provider, Kore idproxy server initiates a request to the Kore app server.
 6. On successful authentication of the token from Kore idproxy server, Kore app server grants access to the user.
 
-Post v7.2 release, Kore.ai supports the IDP initiated flow, wherein the platform gets the postback directly with SAML response and is able to validate the assertion and register/identify the user. The configuration for these modes – SP-based and IDP-based flow is different and is highlighted in the configuration steps below.
-
 Refer below [to configure SSO using SAML](#configuring-sso-using-saml)
 
 
@@ -145,7 +143,7 @@ The token information on the client varies depending upon the SSO provider and t
 
 ### Configuring SSO using SAML
 
-Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Kore.ai Bots Admin Console. Kore.ai also supports WS-Federation and OpenID Connect protocols. For more information, see [Using Single Sign-On](../using-single-sign-on/){:target="_blank"}.
+Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Kore.ai Admin Console. Kore.ai also supports WS-Federation and OpenID Connect protocols.
 
 
 ### OKTA Configuration
@@ -158,7 +156,8 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
     3. **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
     4. **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
     5. **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
-    6. **SAML Attribute Mapping** – Enable this option to map SAML Attributes with Kore.ai Group Names or Admin Roles Names. Once enabled, you can:
+    6. **SAML Attribute Mapping** – Enable this option to map SAML Attributes with Kore.ai Group Names or Admin Roles Names. 
+    Once enabled, you can:
         * define how the SAML attributes should be mapped with Kore.ai attributes:
             1. Full Sync – Every time the user signs in, the platform will update the user’s Group and Role assignments based on the SAML Attributes present in the response. All existing assignments will be removed. Only the new group or role assignments as available in the SAML response will be assigned
             2. Inclusion Only – Every time the user signs in, the platform will only assign the new group or roles available in the SAML response. All existing assignments will be retained. New assignments will be added as available in the SAML responses
@@ -179,6 +178,10 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
                 * Bot Builder Access
                 * New Bot Creation
                 * Manage Data Tables and Views
+                
+    7. **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests. 
+    
+        
 
 
 #### Okta for Kore.ai SSO
@@ -258,6 +261,7 @@ The _Identity Provider information successfully updated_ message is displayed at
             * New Bot Creation
             * Manage Data Tables and Views
 
+* **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests.
 
 #### OneLogin for Kore.ai SSO
 
@@ -318,6 +322,8 @@ The _Identity Provider information successfully updated_ message is displayed at
             * Bot Builder Access
             * New Bot Creation
             * Manage Data Tables and Views
+
+* **Exclude RequestedAuthnContext in request -** Enable this option to remove RequestedAuthnContext from SAML authentication requests.
 
 #### Kore.ai SSO for Bitium
 

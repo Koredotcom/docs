@@ -3,16 +3,7 @@
 With some tasks, you may want to add a link to a message sent to a user that contains data too large for a message, for example, an message with a picture, abstract, and a link to a full article or report. This topic describes how to define a table report with fixed-column widths.
 The table report type can be displayed to an end-user when the URL for this table is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the table report called Your Daily Tasks.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
-
 When the user clicks the link in the message, a fixed-column table report shows the data for the columns defined with a table header, optional table description, and a header row with fixed-column sizes as shown in the following illustration for the _Your Daily Tasks_ report.
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.png "image_tooltip")
-
 
 ## To define a fixed-column table report
 
@@ -33,11 +24,6 @@ To complete the following procedure, you must have already defined a task, such 
 7. In the **Template** drop-down list, select **Fixed Column Table**.
 8. Click **Edit Template**. The **Table Configuration** dialog is displayed.
 9. Click **Add Column**. The **Column Configuration** dialog is displayed as shown in the following illustration.
-
-    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image5.png "image_tooltip")
-
 10. In the **Column Name** field, enter the first column title, for example, _Task – Fixed Column Report_.
 11. In the  **Data Type** field, select one of the following data types for the information displayed in the column:  
     1. **String**
@@ -54,11 +40,6 @@ To complete the following procedure, you must have already defined a task, such 
 16. In the **Is this column Sortable** section, select **Yes** if the end-user should be able to sort the column.
 17. In the **Fixed Column** section, select **Yes** if the end-user is abled to set the column width
 18. Click **Done**. The **Table Configuration** dialog is displayed with the new column added as shown in the following illustration.
-
-    <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image6.png "image_tooltip")
-
 19. Repeat Steps 9 – 18 for each additional column in the report, click **Save** to save the column configurations, and then click **Close**.
 20. In the **Report Template Definition** section, click **Save** to save the table report
 

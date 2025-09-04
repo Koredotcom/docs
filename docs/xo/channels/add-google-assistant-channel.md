@@ -2,12 +2,12 @@
 
 !!! important
 
-    The Google Assistant Conversational Actions will be sunsetted on June 13, 2023. For details, see [Conversational Actions sunset](https://developers.google.com/assistant/ca-sunset/).
+    The Google Assistant Conversational Actions will be deprecated on June 13, 2023. For details, see [Conversational Actions sunset](https://developers.google.com/assistant/ca-sunset/).
 
 
 ## Requirements
 
-Google Assistant as a channel should ideally be enabled for VAs that are specifically built to work on voice-based channels. Ensure to review the following before you enable Google Assistant as a channel:
+Google Assistant as a channel should ideally be enabled for AI Agents that are specifically built to work on voice-based channels. Ensure to review the following before you enable Google Assistant as a channel:
 
 
 * You have an account that allows you to build a project in Actions on Google, link it to an agent in dialog flow, configure actions, and enable fulfillment using webhook integration.
@@ -65,7 +65,7 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 1. Your configurations to enable the channel are all set up now. **Actions on Google** provides a built-in simulator to test your assistant. For this, you must first enable few additional options of your Google account’s [Activity Controls](https://myaccount.google.com/activitycontrols) as per the details provided [here](https://developers.google.com/actions/dialogflow/first-app?hl=en#preview_the_app).
     * After you have configured these controls, in the Dialogflow console, click **Integrations** on the left pane and then click the **Google Assistant**. A popup window with Google Assistant’s integration settings is displayed. Review the required settings and then click **Test** at the bottom of the window.
     * This redirects you back to the Google Action Console and opens up the test tab. Now, you can start testing your assistant using Google’s in-built emulator.
-2. Once you have configured the integration and tested your assistant, you must deploy your bot for making it available to potential users. Proceed to the **Deploy** on the top and furnish all the required information and submit for release by clicking **Save** on the top-right of the page. Your action will be available on Google Assistant Explore only after your release submission is approved.
+2. Once you have configured the integration and tested your assistant, you must deploy your app for making it available to potential users. Proceed to the **Deploy** on the top and furnish all the required information and submit for release by clicking **Save** on the top-right of the page. Your action will be available on Google Assistant Explore only after your release submission is approved.
 3. Proceed to the **Configurations** tab on the Google Assistant channel page to continue with the channel setup process.
 
 
@@ -77,6 +77,6 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 <img src="../images/google_assistant4.png" alt="deploy google assistant" title="deploy google assistant" style="border: 1px solid gray; zoom:70%;">
 
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

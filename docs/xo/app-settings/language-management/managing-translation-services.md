@@ -1,8 +1,8 @@
 # Managing Translation Services
 
-The Kore.ai XO Platform offers multiple ways to train your virtual assistant for language understanding. One of the ways is to use translation services to translate the user input. In this approach, you can train the virtual assistant in a language (NLU Language) other than the interaction language. For example, you can enable Spanish as an interaction language but train the assistant using English language training data.
+The Kore.ai XO Platform offers multiple ways to train your AI Agent for language understanding. One of the ways is to use translation services to translate the user input. In this approach, you can train the AI Agent in a language (NLU Language) other than the interaction language. For example, you can enable Spanish as an interaction language but train the assistant using English language training data.
 
-Translation services can also be used for translating the bot responses if they are defined in a language other than the conversation language. The Platform allows you to define language-specific responses for each of the languages enabled for the assistant. However, you may choose to write responses in a language other than the enabled language.
+Translation services can also be used for translating the AI Agent responses if they are defined in a language other than the conversation language. The Platform allows you to define language-specific responses for each of the languages enabled for the assistant. However, you may choose to write responses in a language other than the enabled language.
 
 The Platform provides out-of-the-box support for Microsoft Translator and Google Translation APIs. You can also use the Custom Translation Engine feature to integrate with any other translation services or your in-house translation services.
 
@@ -32,7 +32,7 @@ To enable automatic translation using Google Translation Services, please follow
 
 <img src="../images/mts-img2-google-translation-config-1.png" alt="Translation configurations - Google" title="Translation Configurations - Google" style="border: 1px solid gray;zoom:50%;"/>
 
-To know how to use the service, please visit [KoreUtil Libraries – autoTranslate.](../../../apis/automation/koreutil-libraries/#koreutilautotranslate){:target="_blank"}
+To know how to use the service, please visit [KoreUtil Libraries – autoTranslate.](../../apis/automation/koreutil-libraries.md#koreutilautotranslate){:target="_blank"}
 
 
 ## Configuring Custom Translation Service
@@ -47,21 +47,21 @@ Here is how custom translation services work:
 1. Follow the instructions below to enable the **Custom Translation Engine** feature.
 2. You can set up the integration with your translation service APIs using the **Get** or **Post** method.
 3. Refer to your translation service documentation for the authentication mechanism, request payload, and response payload.
-4. This integration is used for translating both the user input as well as the bot responses. The platform will automatically make the following information available in the context during runtime.
+4. This integration is used for translating both the user input as well as the AI Agent responses. The platform will automatically make the following information available in the context during runtime.
 5. It will make use of the following functions while defining the request payload.
     1. koreUtil.conversation.sourceText()– This function will return the text to be translated.
         1. If the user’s input is being translated, then the function will return the user’s input.
-        2. If the bot response is being translated, then the function will return the bot response.
+        2. If the AI Agent response is being translated, then the function will return the AI Agent response.
 
-    2. For translating user input, this function will return the user input. For translating the bot response, the function will return the bot response text.
+    2. For translating user input, this function will return the user input. For translating the AI Agent response, the function will return the AI Agent response text.
 
     3. koreUtil.conversation.getSourceLanguage() – This function returns the current language of the text to be translated.
         1. If the user input is being translated, then the function will return the language in which the user is interacting.
-        2. If the bot response is being translated, then the function will return the language in which the response is written.
+        2. If the AI Agent response is being translated, then the function will return the language in which the response is written.
 
     4. koreUtil.conversation.getTargetLanguage() – This function returns the language to which the text should be translated to.
         1. If the user input is being translated, then the function will return the language to which the input should be translated.
-        2. If the bot response is being translated, then the function will return the language to which the response should be translated.The platform invokes the translation service using the defined configurations.
+        2. If the AI Agent response is being translated, then the function will return the language to which the response should be translated.The platform invokes the translation service using the defined configurations.
 
 6. The translation engine should share the translated text as part of the API response.
 7. Map the relevant field from the response payload to be used as the translated text.
@@ -75,7 +75,7 @@ Here is how custom translation services work:
 
 3. Provide a name for the **Custom Translation Engine**.
 4. Define the request payload for sending the text to be translated. Refer to the details provided above for defining the request payload.
-5. Refer to the [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node/#define-a-custom-service){:target="_blank"} documentation to learn more about how to configure service integrations.  
+5. Refer to the [Service Node](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#define-a-custom-service){:target="_blank"} documentation to learn more about how to configure service integrations.  
 <img src="../images/mts-img4-custom-translation-config-1.png" alt="Define Request payload" title="Define request payload" style="border: 1px solid gray;zoom:50%;"/>
 
 6. After defining the request payload, you can test the integration by providing the required details from the Test Request tab. Provide the sample values for the variables shown under the Sample Context Values sections, click **Test** to verify if the custom translation connection is established.  

@@ -1,8 +1,8 @@
 # Entity Rules
 
-Validating user input before processing goes a long way in improving the bot’s efficiency and user experience. While the entity type does impose some basic restrictions, these are not always sufficient and does not cater to the specific business requirements. **Entity rules** can be used for additional processing hints and validations.
+Validating user input before processing goes a long way in improving the AI Agent’s efficiency and user experience. While the entity type does impose some basic restrictions, these are not always sufficient and does not cater to the specific business requirements. **Entity rules** can be used for additional processing hints and validations.
 
-Entity rules can be added from the **Entity Rules** section under **Instance Properties** of the corresponding entity. Add the rule in the JSON editor provided, [see here for how](../node-types/working-with-the-entity-node/#instance-properties){:target="_blank"}.
+Entity rules can be added from the **Entity Rules** section under **Instance Properties** of the corresponding entity. Add the rule in the JSON editor provided, [see here for how](./node-types/working-with-the-entity-node.md#instance-properties){:target="_blank"}.
 
 These rules can also be set in the script for an entity, in such cases, the rule needs to be set before the entity prompt in the dialog flow. Add a script node at the beginning of the dialog or just before the concerned entity node with the following script:
 
@@ -150,7 +150,7 @@ concept2: wrong
 
 <li><strong>Example1</strong>: A composite entity matches with a set of identification numbers, such as membership ID, provider ID, and RX number. You can set the precondition rule as <code>"preConditions" : ["checkMemberID"]</code>.
 
-<li><strong>Example 2</strong>: A VA has two static list of values (LOV) in a composite entity, you can add precondition to customer specific LOV to enable it.
+<li><strong>Example 2</strong>: An AI Agent has two static list of values (LOV) in a composite entity, you can add precondition to customer specific LOV to enable it.
 
 <li><strong>Example 3</strong>: If you don’t want to extract entity values for simple utterances, then add preconditions to skip the extraction entirely.
 
@@ -732,7 +732,7 @@ If the value is false, the currency entity accepts the currency code or symbol e
 <strong>Extracted Value</strong> “<em>USD30</em>”
 <br>
 <strong>User Utterance </strong>“<em>Pay AUD</em>”
-<strong>VA Response</strong>: I apologize, I did not recognize the currency you entered. Please enter the currency you would like to use. An example of currency is $ 100.
+<strong>AI Agent Response</strong>: I apologize, I did not recognize the currency you entered. Please enter the currency you would like to use. An example of currency is $ 100.
    </td>
   </tr>
 </table>
@@ -810,7 +810,7 @@ Each part of the structured data is a subentity, and the composite entity patter
 <strong>Extracted Value</strong> “ “33134212AB””
 <strong>Composite Patterns</strong> – {row} @RowNumber {seat} @Seat</em>
 <br>
-@RowNumber is a Number entity with “digits”:2 and “range”: (“from”:1,”to”,35} entity rules.
+@RowNumber is a Number entity with “digits”:2 and “range”: {“from”:1,”to”,35} entity rules.
 <br>
 @Seat is a Custom concept entity using a concept ~seatletters ( A B C D E F )
 <br>
@@ -2340,7 +2340,7 @@ false
 <strong>User Utterance</strong> “I need a ticket,” “I need tickets.”
 <br>
 <strong>Extracted Value</strong> When <strong><code>ignoreLemmaWords</code></strong> is set to false, the LoV entity extracts “ticket” for both the inputs – “ticket” and “tickets”.
-When it is set to true, the entity extracts “ticket” only when the input contains “ticket”. For a different input like “tickets”, the bot responds that it is not a valid option.
+When it is set to true, the entity extracts “ticket” only when the input contains “ticket”. For a different input like “tickets”, the app responds that it is not a valid option.
    </td>
   </tr>
   <tr>

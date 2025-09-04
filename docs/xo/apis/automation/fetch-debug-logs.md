@@ -36,7 +36,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Debug Logs
+<li>App Builder: Debug Logs
 
 <li>Admin Console: Not Applicable
 </li>
@@ -112,6 +112,9 @@ Accepted channel types are:
 <li>ivrVoice
 <li>audiocodes
 <li>smartassist
+<li>genericsms
+<li>twiliosms
+<li>genesys
 </li>
 </ul>
    </td>
@@ -432,4 +435,367 @@ Accepted channel types are:
            ]
        }
    },
+```
+
+
+**TwilioSMS**:
+```json
+[
+    {
+        "timestamp": "2025-05-27T04:36:17.296Z",
+        "debugTitle": "welcomedialog",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:36:17.334Z",
+        "debugTitle": "menuCheck",
+        "debugMessage": "Script node execution successful",
+        "debugLevel": "info",
+        "debugDetail": "{\"title\":\" \",\"body\":\"\",\"updatedContext\":{\"bot\":\"Master Bot Flow\",\"botid\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"taskid\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\",\"intent\":\"welcomedialog\",\"intentType\":\"dialog\",\"intentDescription\":\"kgvsdialog\",\"invocationSource\":{\"type\":\"userInputMatch\"},\"entities\":{},\"entityErrorCount\":{},\"amendEntities\":{},\"history\":[],\"ccId\":\"u-5ca4428e-5e40-5a6f-9f60-ebf13dd6fb10:st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"currentLanguage\":\"en\",\"dialog_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":1}],\"session\":{\"EnterpriseContext\":{},\"BotContext\":{},\"UserContext\":{\"workinghours\":{\"workdays\":\"mon,tue,wed,thu,fri\",\"workstart\":\"8:00 AM\",\"workend\":\"5:00 PM\"},\"profImage\":\"no-avatar\",\"profColour\":\"#add8e6\",\"jTitle\":\"\",\"dept\":\"\",\"activationStatus\":\"active\",\"firstName\":\"\",\"lastName\":\"\",\"orgId\":\"o-33749baa-f662-5ae8-b506-4b3bf78779f4\",\"_id\":\"u-5ca4428e-5e40-5a6f-9f60-ebf13dd6fb10\",\"accountId\":\"5ff6ff6f2327934e5b70baf2\",\"identities\":[{\"val\":\"67e125c59ec655b7448eb65b/+12566020200\",\"type\":\"mapped\"}]},\"UserSession\":{},\"BotUserSession\":{\"_metaInfo\":{},\"lastMessage\":{\"channel\":\"sms\",\"messagePayload\":{\"ToCountry\":\"US\",\"ToState\":\"IL\",\"SmsMessageSid\":\"SMa7322a0105b8fd4caa2b1eb7f765cf9d\",\"NumMedia\":\"0\",\"ToCity\":\"PALATINE\",\"FromZip\":\"35646\",\"SmsSid\":\"SMa7322a0105b8fd4caa2b1eb7f765cf9d\",\"FromState\":\"AL\",\"SmsStatus\":\"received\",\"FromCity\":\"TOWN CREEK\",\"Body\":\"Hi\",\"FromCountry\":\"US\",\"To\":\"+12248360907\",\"MessagingServiceSid\":\"MG506fbf3422c37408bd65e5e7094a0521\",\"ToZip\":\"60074\",\"AddOns\":\"{\\\"status\\\":\\\"successful\\\",\\\"message\\\":null,\\\"code\\\":null,\\\"results\\\":{}}\",\"NumSegments\":\"1\",\"MessageSid\":\"SMa7322a0105b8fd4caa2b1eb7f765cf9d\",\"AccountSid\":\"ACc518be9a6f916431ecfd8d7d9f471b2e\",\"From\":\"+12566020200\",\"ApiVersion\":\"2010-04-01\"}},\"conversationSessionId\":\"6835797d857ac49da7e5eed0\",\"lastUserMessageTime\":\"2025-05-27T08:36:13.862Z\",\"channels\":[{\"type\":\"sms\",\"from\":\"67e125c59ec655b7448eb65b/+12566020200\",\"to\":\"MG506fbf3422c37408bd65e5e7094a0521\",\"body\":\"Hi\",\"gateway\":\"twilio\",\"enable\":true,\"message\":\"The bot is disabled via Twilio. You can still talk to the bot via Web/Mobile Client, IVR, Genesys Cloud CX Messaging, Twilio.\",\"activeChannels\":\"Web/Mobile Client,IVR,Genesys Cloud CX Messaging,Twilio.\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"tokens\":[],\"__userInputTime\":\"2025-05-27T08:36:13.852Z\",\"__loopCount\":0,\"userId\":\"u-5ca4428e-5e40-5a6f-9f60-ebf13dd6fb10\",\"requestId\":\"ms-501f497d-197a-59fa-aeff-a21f34c59a2e\",\"botLanguage\":\"en\"}],\"isReturningUser\":false},\"opts\":{\"userId\":\"u-5ca4428e-5e40-5a6f-9f60-ebf13dd6fb10\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\"},\"deleteKeys\":{}},\"updatedOn\":\"2025-05-27T08:36:17.275Z\",\"intentName\":\"welcomedialog\",\"currentNodeId\":\"script26\",\"currentNodeName\":\"menuCheck\",\"currentTraits\":[],\"userInputs\":{\"originalInput\":{\"sentence\":\"Hi\",\"sentenceType\":\"statement\",\"timestamp\":1748334977259}},\"currentTags\":{\"tags\":[\"welcomedialog\"]},\"NLAnalysis\":{\"userInput\":\"Hi\",\"intents\":{}},\"previousNodeId\":\"intent0\",\"previousNodeName\":\"welcomedialog\",\"currentNodeType\":\"script\",\"contextId\":\"dcx-4c67f67a-f478-5eef-8a68-02eab1460e8d\"},\"metaTags\":{\"UserLevelTags\":[],\"SessionLevelTags\":[],\"MessageLevelTags\":[],\"referenceLevelTags\":[]},\"contextTags\":[\"welcomedialog\"],\"removeContextTags\":[],\"debugLogs\":[],\"textTranslations\":[],\"tokenIdpsToExpire\":[],\"clearAllAuthTokens\":false,\"channelActions\":{},\"isDeveloper\":false,\"debugMessage\":\"menuCheck\",\"contextId\":\"dcx-4c67f67a-f478-5eef-8a68-02eab1460e8d\"}",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:36:17.366Z",
+        "debugTitle": "menuCheck",
+        "debugMessage": "script node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:36:17.648Z",
+        "debugTitle": "titlesConfig",
+        "debugMessage": "Script node execution successful",
+        "debugLevel": "info",
+        "debugDetail": "{\"title\":\" \",\"body\":\"\",\"updatedContext\":{\"bot\":\"Master Bot Flow\",\"botid\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"taskid\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\",\"intent\":\"welcomedialog\",\"intentType\":\"dialog\",\"intentDescription\":\"kgvsdialog\",\"invocationSource\":{\"type\":\"userInputMatch\"},\"entities\":{},\"entityErrorCount\":{},\"amendEntities\":{},\"history\":[],\"ccId\":\"u-5ca4428e-5e40-5a6f-9f60-ebf13dd6fb10:st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"currentLanguage\":\"en\",\"dialog_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":1}],\"updatedOn\":\"2025-05-27T08:36:17.457Z\",\"intentName\":\"welcomedialog\",\"currentNodeId\":\"script18\",\"currentNodeName\":\"titlesConfig\",\"currentTraits\":[],\"userInputs\":{\"originalInput\":{\"sentence\":\"Hi\",\"sentenceType\":\"statement\",\"timestamp\":1748334977259}},\"currentTags\":{\"tags\":[\"welcomedialog\"]},\"NLAnalysis\":{\"userInput\":\"Hi\",\"intents\":{}},\"previousNodeId\":\"message16\",\"previousNodeName\":\"welMsg1\",\"currentNodeType\":\"script\",\"contextId\":\"dcx-4c67f67a-f478-5eef-8a68-02eab1460e8d\",\"traversedIntents\":[{\"name\":\"welcomedialog\",\"dialogId\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\"}],\"message_tone\":[],\"isDeveloper\":false,\"session\":{\"EnterpriseContext\":{},\"BotContext\":{},\"UserContext\":{\"workinghours\":{\"workdays\":\"mon,tue,wed,thu,fri\",\"workstart\":\"8:00 AM\",\"workend\":\"5:00 PM\"},\"profImage\":\"no-avatar\",\"profColour\":\"#add8e6\",\"jTitle\":\"\",\"dept\":\"\",\"activationStatus\":\"active\",\"firstName\":\"\",\"lastName\":\"\",\"orgId\":\"o-33749baa-f662-5ae8-b506-4b3bf78779f4\",\"_id\":\"u-5ca4428e-5e40-5a6f-9f60-ebf13dd6fb10\",\"accountId\":\"5ff6ff6f2327934e5b70baf2\",\"identities\":[{\"val\":\"67e125c59ec655b7448eb65b/+12566020200\",\"type\":\"mapped\"}]},\"UserSession\":{},\"BotUserSession\":{\"_metaInfo\":{},\"lastMessage\":{\"channel\":\"sms\",\"messagePayload\":{\"ToCountry\":\"US\",\"ToState\":\"IL\",\"SmsMessageSid\":\"SMa7322a0105b8fd4caa2b1eb7f765cf9d\",\"NumMedia\":\"0\",\"ToCity\":\"PALATINE\",\"FromZip\":\"35646\",\"SmsSid\":\"SMa7322a0105b8fd4caa2b1eb7f765cf9d\",\"FromState\":\"AL\",\"SmsStatus\":\"received\",\"FromCity\":\"TOWN CREEK\",\"Body\":\"Hi\",\"FromCountry\":\"US\",\"To\":\"+12248360907\",\"MessagingServiceSid\":\"MG506fbf3422c37408bd65e5e7094a0521\",\"ToZip\":\"60074\",\"AddOns\":\"{\\\"status\\\":\\\"successful\\\",\\\"message\\\":null,\\\"code\\\":null,\\\"results\\\":{}}\",\"NumSegments\":\"1\",\"MessageSid\":\"SMa7322a0105b8fd4caa2b1eb7f765cf9d\",\"AccountSid\":\"ACc518be9a6f916431ecfd8d7d9f471b2e\",\"From\":\"+12566020200\",\"ApiVersion\":\"2010-04-01\"}},\"conversationSessionId\":\"6835797d857ac49da7e5eed0\",\"lastUserMessageTime\":\"2025-05-27T08:36:13.862Z\",\"channels\":[{\"type\":\"sms\",\"from\":\"67e125c59ec655b7448eb65b/+12566020200\",\"to\":\"MG506fbf3422c37408bd65e5e7094a0521\",\"body\":\"Hi\",\"gateway\":\"twilio\",\"enable\":true,\"message\":\"The bot is disabled via Twilio. You can still talk to the bot via Web/Mobile Client, IVR, Genesys Cloud CX Messaging, Twilio.\",\"activeChannels\":\"Web/Mobile Client,IVR,Genesys Cloud CX Messaging,Twilio.\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"tokens\":[],\"__userInputTime\":\"2025-05-27T08:36:13.852Z\",\"__loopCount\":0,\"userId\":\"u-5ca4428e-5e40-5a6f-9f60-ebf13dd6fb10\",\"requestId\":\"ms-501f497d-197a-59fa-aeff-a21f34c59a2e\",\"botLanguage\":\"en\"}],\"isReturningUser\":false},\"opts\":{\"userId\":\"u-5ca4428e-5e40-5a6f-9f60-ebf13dd6fb10\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\"},\"deleteKeys\":{}},\"counter\":0,\"taskList\":[{\"title\":\"Get weather updates\",\"value\":\"Get weather updates\",\"synonyms\":[\"\\\"Get weather updates\\\"\"]},{\"title\":\"Active Covid Cases\",\"value\":\"Active Covid Cases\",\"synonyms\":[\"\\\"Active Covid Cases\\\"\",\"\\\"Covid Cases\\\"\"]},{\"title\":\"Company Stock Value\",\"value\":\"Company Stock Value\",\"synonyms\":[\"\\\"Company Stock Value\\\"\",\"\\\"Stock values\\\"\"]},{\"title\":\"Create UserLogin\",\"value\":\"Create UserLogin\",\"synonyms\":[\"\\\"Create UserLogin\\\"\"]},{\"title\":\"Flight Status \",\"value\":\"Flight Status \",\"synonyms\":[\"\\\"Flight Status \\\"\"]},{\"title\":\"Show More\",\"value\":\"Show More\",\"synonyms\":[\"\\\"Show More\\\"\"]}]},\"metaTags\":{\"UserLevelTags\":[],\"SessionLevelTags\":[],\"MessageLevelTags\":[],\"referenceLevelTags\":[]},\"contextTags\":[\"welcomedialog\"],\"removeContextTags\":[],\"debugLogs\":[],\"textTranslations\":[],\"tokenIdpsToExpire\":[],\"clearAllAuthTokens\":false,\"channelActions\":{},\"isDeveloper\":false,\"debugMessage\":\"titlesConfig\",\"contextId\":\"dcx-4c67f67a-f478-5eef-8a68-02eab1460e8d\"}",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:36:17.725Z",
+        "debugTitle": "titlesConfig",
+        "debugMessage": "script node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:36:29.672Z",
+        "debugTitle": "Currency",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:36:37.730Z",
+        "debugTitle": "CurrencyCode",
+        "debugMessage": "entity node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:36:37.786Z",
+        "debugTitle": "HitAPICurrency",
+        "debugMessage": "Calling the integration system",
+        "debugLevel": "info",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:36:37.881Z",
+        "debugTitle": "HitAPICurrency",
+        "debugMessage": "Service execution is complete.",
+        "debugLevel": "info",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:36:50.765Z",
+        "debugTitle": "Schedule_Appointment",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T04:37:52.579Z",
+        "debugTitle": "CollectionAppointmentDetails",
+        "debugMessage": "aiassist node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "sms",
+            "identity": "67e125c59ec655b7448eb65b/+12566020200"
+        }
+    }
+]
+
+```
+
+**Genesys**:
+```json
+[
+    {
+        "timestamp": "2025-05-27T03:34:24.109Z",
+        "debugTitle": "welcomedialog",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:34:24.183Z",
+        "debugTitle": "menuCheck",
+        "debugMessage": "Script node execution successful",
+        "debugLevel": "info",
+        "debugDetail": "{\"title\":\" \",\"body\":\"\",\"updatedContext\":{\"bot\":\"Master Bot Flow\",\"botid\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"taskid\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\",\"intent\":\"welcomedialog\",\"intentType\":\"dialog\",\"intentDescription\":\"kgvsdialog\",\"invocationSource\":{\"type\":\"userInputMatch\"},\"entities\":{},\"entityErrorCount\":{},\"amendEntities\":{},\"history\":[],\"ccId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3:st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"currentLanguage\":\"en\",\"dialog_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":1}],\"session\":{\"EnterpriseContext\":{},\"BotContext\":{},\"UserContext\":{\"workinghours\":{\"workdays\":\"mon,tue,wed,thu,fri\",\"workstart\":\"8:00 AM\",\"workend\":\"5:00 PM\"},\"profImage\":\"no-avatar\",\"profColour\":\"#ff4500\",\"jTitle\":\"\",\"dept\":\"\",\"activationStatus\":\"active\",\"firstName\":\"\",\"lastName\":\"\",\"orgId\":\"o-33749baa-f662-5ae8-b506-4b3bf78779f4\",\"_id\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"accountId\":\"5ff6ff6f2327934e5b70baf2\",\"identities\":[{\"val\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"type\":\"mapped\"}]},\"UserSession\":{},\"BotUserSession\":{\"_metaInfo\":{},\"lastMessage\":{\"channel\":\"genesys\",\"messagePayload\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"72fea332-dde8-43cd-a10b-adfb742cfb17\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-2a667281-6e18-5dfb-afaa-415634343c58\"}},\"conversationSessionId\":\"68356afc118f9d4f41df07f5\",\"lastUserMessageTime\":\"2025-05-27T07:34:20.688Z\",\"channels\":[{\"type\":\"genesys\",\"from\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"to\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"body\":\"Hi\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"handle\":{\"channelId\":\"genesys\",\"user\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"channelData\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"72fea332-dde8-43cd-a10b-adfb742cfb17\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-2a667281-6e18-5dfb-afaa-415634343c58\"}},\"enable\":true,\"message\":\"The bot is disabled via Genesys Cloud CX Messaging. You can still talk to the bot via Web/Mobile Client, IVR, Genesys Cloud CX Messaging, Twilio.\",\"activeChannels\":\"Web/Mobile Client,IVR,Genesys Cloud CX Messaging,Twilio.\",\"tokens\":[],\"__userInputTime\":\"2025-05-27T07:34:20.679Z\",\"__loopCount\":0,\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"requestId\":\"ms-57f8f720-93b7-55ca-99b8-60a53234791b\",\"botLanguage\":\"en\",\"requestContext\":{\"isRuntime\":true}}],\"isReturningUser\":false},\"opts\":{\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\"},\"deleteKeys\":{}},\"updatedOn\":\"2025-05-27T07:34:24.087Z\",\"intentName\":\"welcomedialog\",\"currentNodeId\":\"script26\",\"currentNodeName\":\"menuCheck\",\"currentTraits\":[],\"userInputs\":{\"originalInput\":{\"sentence\":\"Hi\",\"sentenceType\":\"statement\",\"timestamp\":1748331264074}},\"currentTags\":{\"tags\":[\"welcomedialog\"]},\"NLAnalysis\":{\"userInput\":\"Hi\",\"intents\":{}},\"previousNodeId\":\"intent0\",\"previousNodeName\":\"welcomedialog\",\"currentNodeType\":\"script\",\"contextId\":\"dcx-961b7add-c0b1-5ae1-a7ad-b95497c6055b\"},\"metaTags\":{\"UserLevelTags\":[],\"SessionLevelTags\":[],\"MessageLevelTags\":[],\"referenceLevelTags\":[]},\"contextTags\":[\"welcomedialog\"],\"removeContextTags\":[],\"debugLogs\":[],\"textTranslations\":[],\"tokenIdpsToExpire\":[],\"clearAllAuthTokens\":false,\"channelActions\":{},\"isDeveloper\":false,\"debugMessage\":\"menuCheck\",\"contextId\":\"dcx-961b7add-c0b1-5ae1-a7ad-b95497c6055b\"}",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:34:24.216Z",
+        "debugTitle": "menuCheck",
+        "debugMessage": "script node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:34:24.531Z",
+        "debugTitle": "titlesConfig",
+        "debugMessage": "Script node execution successful",
+        "debugLevel": "info",
+        "debugDetail": "{\"title\":\" \",\"body\":\"\",\"updatedContext\":{\"bot\":\"Master Bot Flow\",\"botid\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"taskid\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\",\"intent\":\"welcomedialog\",\"intentType\":\"dialog\",\"intentDescription\":\"kgvsdialog\",\"invocationSource\":{\"type\":\"userInputMatch\"},\"entities\":{},\"entityErrorCount\":{},\"amendEntities\":{},\"history\":[],\"ccId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3:st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"currentLanguage\":\"en\",\"dialog_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":1}],\"updatedOn\":\"2025-05-27T07:34:24.322Z\",\"intentName\":\"welcomedialog\",\"currentNodeId\":\"script18\",\"currentNodeName\":\"titlesConfig\",\"currentTraits\":[],\"userInputs\":{\"originalInput\":{\"sentence\":\"Hi\",\"sentenceType\":\"statement\",\"timestamp\":1748331264074}},\"currentTags\":{\"tags\":[\"welcomedialog\"]},\"NLAnalysis\":{\"userInput\":\"Hi\",\"intents\":{}},\"previousNodeId\":\"message16\",\"previousNodeName\":\"welMsg1\",\"currentNodeType\":\"script\",\"contextId\":\"dcx-961b7add-c0b1-5ae1-a7ad-b95497c6055b\",\"traversedIntents\":[{\"name\":\"welcomedialog\",\"dialogId\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\"}],\"message_tone\":[],\"isDeveloper\":false,\"session\":{\"EnterpriseContext\":{},\"BotContext\":{},\"UserContext\":{\"workinghours\":{\"workdays\":\"mon,tue,wed,thu,fri\",\"workstart\":\"8:00 AM\",\"workend\":\"5:00 PM\"},\"profImage\":\"no-avatar\",\"profColour\":\"#ff4500\",\"jTitle\":\"\",\"dept\":\"\",\"activationStatus\":\"active\",\"firstName\":\"\",\"lastName\":\"\",\"orgId\":\"o-33749baa-f662-5ae8-b506-4b3bf78779f4\",\"_id\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"accountId\":\"5ff6ff6f2327934e5b70baf2\",\"identities\":[{\"val\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"type\":\"mapped\"}]},\"UserSession\":{},\"BotUserSession\":{\"_metaInfo\":{},\"lastMessage\":{\"channel\":\"genesys\",\"messagePayload\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"72fea332-dde8-43cd-a10b-adfb742cfb17\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-2a667281-6e18-5dfb-afaa-415634343c58\"}},\"conversationSessionId\":\"68356afc118f9d4f41df07f5\",\"lastUserMessageTime\":\"2025-05-27T07:34:20.688Z\",\"channels\":[{\"type\":\"genesys\",\"from\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"to\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"body\":\"Hi\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"handle\":{\"channelId\":\"genesys\",\"user\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"channelData\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"72fea332-dde8-43cd-a10b-adfb742cfb17\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-2a667281-6e18-5dfb-afaa-415634343c58\"}},\"enable\":true,\"message\":\"The bot is disabled via Genesys Cloud CX Messaging. You can still talk to the bot via Web/Mobile Client, IVR, Genesys Cloud CX Messaging, Twilio.\",\"activeChannels\":\"Web/Mobile Client,IVR,Genesys Cloud CX Messaging,Twilio.\",\"tokens\":[],\"__userInputTime\":\"2025-05-27T07:34:20.679Z\",\"__loopCount\":0,\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"requestId\":\"ms-57f8f720-93b7-55ca-99b8-60a53234791b\",\"botLanguage\":\"en\",\"requestContext\":{\"isRuntime\":true}}],\"isReturningUser\":false},\"opts\":{\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\"},\"deleteKeys\":{}},\"counter\":0,\"taskList\":[{\"title\":\"Get weather updates\",\"value\":\"Get weather updates\",\"synonyms\":[\"\\\"Get weather updates\\\"\"]},{\"title\":\"Active Covid Cases\",\"value\":\"Active Covid Cases\",\"synonyms\":[\"\\\"Active Covid Cases\\\"\",\"\\\"Covid Cases\\\"\"]},{\"title\":\"Company Stock Value\",\"value\":\"Company Stock Value\",\"synonyms\":[\"\\\"Company Stock Value\\\"\",\"\\\"Stock values\\\"\"]},{\"title\":\"Create UserLogin\",\"value\":\"Create UserLogin\",\"synonyms\":[\"\\\"Create UserLogin\\\"\"]},{\"title\":\"Flight Status \",\"value\":\"Flight Status \",\"synonyms\":[\"\\\"Flight Status \\\"\"]},{\"title\":\"Show More\",\"value\":\"Show More\",\"synonyms\":[\"\\\"Show More\\\"\"]}]},\"metaTags\":{\"UserLevelTags\":[],\"SessionLevelTags\":[],\"MessageLevelTags\":[],\"referenceLevelTags\":[]},\"contextTags\":[\"welcomedialog\"],\"removeContextTags\":[],\"debugLogs\":[],\"textTranslations\":[],\"tokenIdpsToExpire\":[],\"clearAllAuthTokens\":false,\"channelActions\":{},\"isDeveloper\":false,\"debugMessage\":\"titlesConfig\",\"contextId\":\"dcx-961b7add-c0b1-5ae1-a7ad-b95497c6055b\"}",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:34:24.605Z",
+        "debugTitle": "titlesConfig",
+        "debugMessage": "script node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:37:02.951Z",
+        "debugTitle": "Currency",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:37:07.933Z",
+        "debugTitle": "CurrencyCode",
+        "debugMessage": "entity node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:37:07.974Z",
+        "debugTitle": "HitAPICurrency",
+        "debugMessage": "Calling the integration system",
+        "debugLevel": "info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:37:08.069Z",
+        "debugTitle": "HitAPICurrency",
+        "debugMessage": "Service execution is complete.",
+        "debugLevel": "info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:38:58.351Z",
+        "debugTitle": "Schedule_Appointment",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:40:45.411Z",
+        "debugTitle": "welcomedialog",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:40:45.466Z",
+        "debugTitle": "menuCheck",
+        "debugMessage": "Script node execution successful",
+        "debugLevel": "info",
+        "debugDetail": "{\"title\":\" \",\"body\":\"\",\"updatedContext\":{\"bot\":\"Master Bot Flow\",\"botid\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"taskid\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\",\"intent\":\"welcomedialog\",\"intentType\":\"dialog\",\"intentDescription\":\"kgvsdialog\",\"invocationSource\":{\"type\":\"userInputMatch\"},\"entities\":{},\"entityErrorCount\":{},\"amendEntities\":{},\"history\":[],\"ccId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3:st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"currentLanguage\":\"en\",\"dialog_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":2}],\"currentTraits\":[],\"userInputs\":{\"originalInput\":{\"sentence\":\"Hi\",\"spellCorrectedSentence\":\"Hi\",\"sentenceType\":\"statement\",\"timestamp\":1748331645372}},\"currentTags\":{\"tags\":[\"welcomedialog\"]},\"NLAnalysis\":{\"userInput\":\"Hi\",\"intents\":{\"successIntents\":[{\"identifyingEngine\":\"FM\",\"intent\":\"welcomedialog\",\"type\":\"dialogTask\",\"fm\":8930,\"ml\":0,\"rr\":0,\"matchType\":\"definite\"}],\"eliminatedIntents\":[{\"intent\":\"Create Booking\",\"type\":\"dialogTask\",\"fm\":0,\"ml\":0,\"rr\":0}],\"nerInfo\":[]}},\"traversedIntents\":[{\"name\":\"Schedule Appointment\",\"dialogId\":\"dg-88cc05db-7a03-5b03-b686-f3cbea9cc5cd\"}],\"onHoldTasks\":[],\"endOfTask\":{\"endOfTaskReason\":\"Cancelled_Interruption_Initiated\",\"intentType\":\"dialog\",\"taskName\":\"Schedule Appointment\",\"lastNode\":\"nd-ais-f11fba7c-c8f2-44dd-b09f-3f40e681d03f\",\"lastNodeName\":\"CollectionAppointmentDetails\"},\"historicTags\":[{\"tags\":[\"Schedule Appointment\",\"Schedule_Appointment\"]}],\"message_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":1}],\"session\":{\"EnterpriseContext\":{},\"BotContext\":{},\"UserContext\":{\"workinghours\":{\"workdays\":\"mon,tue,wed,thu,fri\",\"workstart\":\"8:00 AM\",\"workend\":\"5:00 PM\"},\"profImage\":\"no-avatar\",\"profColour\":\"#ff4500\",\"jTitle\":\"\",\"dept\":\"\",\"activationStatus\":\"active\",\"firstName\":\"\",\"lastName\":\"\",\"orgId\":\"o-33749baa-f662-5ae8-b506-4b3bf78779f4\",\"_id\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"accountId\":\"5ff6ff6f2327934e5b70baf2\",\"identities\":[{\"val\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"type\":\"mapped\"}]},\"UserSession\":{},\"BotUserSession\":{\"_metaInfo\":{},\"lastMessage\":{\"channel\":\"genesys\",\"messagePayload\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"be06128a-6024-4d0e-b82a-c9947b225ff6\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-81a5b760-24eb-522c-b6ad-f4f6b4ddf012\"}},\"conversationSessionId\":\"68356afc118f9d4f41df07f5\",\"lastUserMessageTime\":\"2025-05-27T07:40:44.128Z\",\"channels\":[{\"type\":\"genesys\",\"from\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"to\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"body\":\"Hi\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"handle\":{\"channelId\":\"genesys\",\"user\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"channelData\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"be06128a-6024-4d0e-b82a-c9947b225ff6\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-81a5b760-24eb-522c-b6ad-f4f6b4ddf012\"}},\"enable\":true,\"message\":\"The bot is disabled via Genesys Cloud CX Messaging. You can still talk to the bot via Web/Mobile Client, IVR, Genesys Cloud CX Messaging, Twilio.\",\"activeChannels\":\"Web/Mobile Client,IVR,Genesys Cloud CX Messaging,Twilio.\",\"tokens\":[],\"__userInputTime\":\"2025-05-27T07:40:44.114Z\",\"__loopCount\":0,\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"requestId\":\"ms-c0decb85-a83b-5db6-92ad-eb6c69783f04\",\"botLanguage\":\"en\",\"requestContext\":{\"isRuntime\":true}}],\"isReturningUser\":false},\"opts\":{\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\"},\"deleteKeys\":{}},\"updatedOn\":\"2025-05-27T07:40:45.384Z\",\"intentName\":\"welcomedialog\",\"currentNodeId\":\"script26\",\"currentNodeName\":\"menuCheck\",\"previousNodeId\":\"intent0\",\"previousNodeName\":\"welcomedialog\",\"currentNodeType\":\"script\",\"contextId\":\"dcx-1633b061-0b83-5f4d-a1ce-a5307118a537\"},\"metaTags\":{\"UserLevelTags\":[],\"SessionLevelTags\":[],\"MessageLevelTags\":[],\"referenceLevelTags\":[]},\"contextTags\":[\"welcomedialog\"],\"removeContextTags\":[],\"debugLogs\":[],\"textTranslations\":[],\"tokenIdpsToExpire\":[],\"clearAllAuthTokens\":false,\"channelActions\":{},\"isDeveloper\":false,\"debugMessage\":\"menuCheck\",\"contextId\":\"dcx-1633b061-0b83-5f4d-a1ce-a5307118a537\"}",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:40:45.513Z",
+        "debugTitle": "menuCheck",
+        "debugMessage": "script node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:40:45.869Z",
+        "debugTitle": "titlesConfig",
+        "debugMessage": "Script node execution successful",
+        "debugLevel": "info",
+        "debugDetail": "{\"title\":\" \",\"body\":\"\",\"updatedContext\":{\"bot\":\"Master Bot Flow\",\"botid\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"taskid\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\",\"intent\":\"welcomedialog\",\"intentType\":\"dialog\",\"intentDescription\":\"kgvsdialog\",\"invocationSource\":{\"type\":\"userInputMatch\"},\"entities\":{},\"entityErrorCount\":{},\"amendEntities\":{},\"history\":[],\"ccId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3:st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"currentLanguage\":\"en\",\"dialog_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":2}],\"currentTraits\":[],\"userInputs\":{\"originalInput\":{\"sentence\":\"Hi\",\"spellCorrectedSentence\":\"Hi\",\"sentenceType\":\"statement\",\"timestamp\":1748331645372}},\"currentTags\":{\"tags\":[\"welcomedialog\"]},\"NLAnalysis\":{\"userInput\":\"Hi\",\"intents\":{\"successIntents\":[{\"identifyingEngine\":\"FM\",\"intent\":\"welcomedialog\",\"type\":\"dialogTask\",\"fm\":8930,\"ml\":0,\"rr\":0,\"matchType\":\"definite\"}],\"eliminatedIntents\":[{\"intent\":\"Create Booking\",\"type\":\"dialogTask\",\"fm\":0,\"ml\":0,\"rr\":0}],\"nerInfo\":[]}},\"traversedIntents\":[{\"name\":\"welcomedialog\",\"dialogId\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\"}],\"onHoldTasks\":[],\"endOfTask\":{\"endOfTaskReason\":\"Cancelled_Interruption_Initiated\",\"intentType\":\"dialog\",\"taskName\":\"Schedule Appointment\",\"lastNode\":\"nd-ais-f11fba7c-c8f2-44dd-b09f-3f40e681d03f\",\"lastNodeName\":\"CollectionAppointmentDetails\"},\"historicTags\":[{\"tags\":[\"Schedule Appointment\",\"Schedule_Appointment\"]}],\"message_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":1}],\"updatedOn\":\"2025-05-27T07:40:45.644Z\",\"intentName\":\"welcomedialog\",\"currentNodeId\":\"script18\",\"currentNodeName\":\"titlesConfig\",\"previousNodeId\":\"message16\",\"previousNodeName\":\"welMsg1\",\"currentNodeType\":\"script\",\"contextId\":\"dcx-1633b061-0b83-5f4d-a1ce-a5307118a537\",\"isDeveloper\":false,\"session\":{\"EnterpriseContext\":{},\"BotContext\":{},\"UserContext\":{\"workinghours\":{\"workdays\":\"mon,tue,wed,thu,fri\",\"workstart\":\"8:00 AM\",\"workend\":\"5:00 PM\"},\"profImage\":\"no-avatar\",\"profColour\":\"#ff4500\",\"jTitle\":\"\",\"dept\":\"\",\"activationStatus\":\"active\",\"firstName\":\"\",\"lastName\":\"\",\"orgId\":\"o-33749baa-f662-5ae8-b506-4b3bf78779f4\",\"_id\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"accountId\":\"5ff6ff6f2327934e5b70baf2\",\"identities\":[{\"val\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"type\":\"mapped\"}]},\"UserSession\":{},\"BotUserSession\":{\"_metaInfo\":{},\"lastMessage\":{\"channel\":\"genesys\",\"messagePayload\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"be06128a-6024-4d0e-b82a-c9947b225ff6\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-81a5b760-24eb-522c-b6ad-f4f6b4ddf012\"}},\"conversationSessionId\":\"68356afc118f9d4f41df07f5\",\"lastUserMessageTime\":\"2025-05-27T07:40:44.128Z\",\"channels\":[{\"type\":\"genesys\",\"from\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"to\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"body\":\"Hi\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"handle\":{\"channelId\":\"genesys\",\"user\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"channelData\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"be06128a-6024-4d0e-b82a-c9947b225ff6\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-81a5b760-24eb-522c-b6ad-f4f6b4ddf012\"}},\"enable\":true,\"message\":\"The bot is disabled via Genesys Cloud CX Messaging. You can still talk to the bot via Web/Mobile Client, IVR, Genesys Cloud CX Messaging, Twilio.\",\"activeChannels\":\"Web/Mobile Client,IVR,Genesys Cloud CX Messaging,Twilio.\",\"tokens\":[],\"__userInputTime\":\"2025-05-27T07:40:44.114Z\",\"__loopCount\":0,\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"requestId\":\"ms-c0decb85-a83b-5db6-92ad-eb6c69783f04\",\"botLanguage\":\"en\",\"requestContext\":{\"isRuntime\":true}}],\"isReturningUser\":false},\"opts\":{\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\"},\"deleteKeys\":{}},\"counter\":0,\"taskList\":[{\"title\":\"Get weather updates\",\"value\":\"Get weather updates\",\"synonyms\":[\"\\\"Get weather updates\\\"\"]},{\"title\":\"Active Covid Cases\",\"value\":\"Active Covid Cases\",\"synonyms\":[\"\\\"Active Covid Cases\\\"\",\"\\\"Covid Cases\\\"\"]},{\"title\":\"Company Stock Value\",\"value\":\"Company Stock Value\",\"synonyms\":[\"\\\"Company Stock Value\\\"\",\"\\\"Stock values\\\"\"]},{\"title\":\"Create UserLogin\",\"value\":\"Create UserLogin\",\"synonyms\":[\"\\\"Create UserLogin\\\"\"]},{\"title\":\"Flight Status \",\"value\":\"Flight Status \",\"synonyms\":[\"\\\"Flight Status \\\"\"]},{\"title\":\"Show More\",\"value\":\"Show More\",\"synonyms\":[\"\\\"Show More\\\"\"]}]},\"metaTags\":{\"UserLevelTags\":[],\"SessionLevelTags\":[],\"MessageLevelTags\":[],\"referenceLevelTags\":[]},\"contextTags\":[\"welcomedialog\"],\"removeContextTags\":[],\"debugLogs\":[],\"textTranslations\":[],\"tokenIdpsToExpire\":[],\"clearAllAuthTokens\":false,\"channelActions\":{},\"isDeveloper\":false,\"debugMessage\":\"titlesConfig\",\"contextId\":\"dcx-1633b061-0b83-5f4d-a1ce-a5307118a537\"}",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:40:45.978Z",
+        "debugTitle": "titlesConfig",
+        "debugMessage": "script node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:40:57.603Z",
+        "debugTitle": "Schedule_Appointment",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:42:31.009Z",
+        "debugTitle": "welcomedialog",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:42:31.165Z",
+        "debugTitle": "menuCheck",
+        "debugMessage": "Script node execution successful",
+        "debugLevel": "info",
+        "debugDetail": "{\"title\":\" \",\"body\":\"\",\"updatedContext\":{\"bot\":\"Master Bot Flow\",\"botid\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"taskid\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\",\"intent\":\"welcomedialog\",\"intentType\":\"dialog\",\"intentDescription\":\"kgvsdialog\",\"invocationSource\":{\"type\":\"userInputMatch\"},\"entities\":{},\"entityErrorCount\":{},\"amendEntities\":{},\"history\":[],\"ccId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3:st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"currentLanguage\":\"en\",\"dialog_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":4}],\"currentTraits\":[],\"userInputs\":{\"originalInput\":{\"sentence\":\"Hi\",\"spellCorrectedSentence\":\"Hi\",\"sentenceType\":\"statement\",\"timestamp\":1748331750940}},\"currentTags\":{\"tags\":[\"welcomedialog\"]},\"NLAnalysis\":{\"userInput\":\"Hi\",\"intents\":{\"successIntents\":[{\"identifyingEngine\":\"FM\",\"intent\":\"welcomedialog\",\"type\":\"dialogTask\",\"fm\":8930,\"ml\":0,\"rr\":0,\"matchType\":\"definite\"}],\"eliminatedIntents\":[{\"intent\":\"Create Booking\",\"type\":\"dialogTask\",\"fm\":0,\"ml\":0,\"rr\":0}],\"nerInfo\":[]}},\"traversedIntents\":[{\"name\":\"Schedule Appointment\",\"dialogId\":\"dg-88cc05db-7a03-5b03-b686-f3cbea9cc5cd\"}],\"onHoldTasks\":[],\"endOfTask\":{\"endOfTaskReason\":\"Cancelled_Interruption_Initiated\",\"intentType\":\"dialog\",\"taskName\":\"Schedule Appointment\",\"lastNode\":\"nd-ais-f11fba7c-c8f2-44dd-b09f-3f40e681d03f\",\"lastNodeName\":\"CollectionAppointmentDetails\"},\"historicTags\":[{\"tags\":[\"Schedule Appointment\",\"Schedule_Appointment\"]}],\"message_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":1}],\"session\":{\"EnterpriseContext\":{},\"BotContext\":{},\"UserContext\":{\"workinghours\":{\"workdays\":\"mon,tue,wed,thu,fri\",\"workstart\":\"8:00 AM\",\"workend\":\"5:00 PM\"},\"profImage\":\"no-avatar\",\"profColour\":\"#ff4500\",\"jTitle\":\"\",\"dept\":\"\",\"activationStatus\":\"active\",\"firstName\":\"\",\"lastName\":\"\",\"orgId\":\"o-33749baa-f662-5ae8-b506-4b3bf78779f4\",\"_id\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"accountId\":\"5ff6ff6f2327934e5b70baf2\",\"identities\":[{\"val\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"type\":\"mapped\"}]},\"UserSession\":{},\"BotUserSession\":{\"_metaInfo\":{},\"lastMessage\":{\"channel\":\"genesys\",\"messagePayload\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"e642f3a7-6c6d-45a6-b1db-8e75f716dbc6\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-a4ad4f16-6840-554a-9b06-bf117ba62781\"}},\"conversationSessionId\":\"68356afc118f9d4f41df07f5\",\"lastUserMessageTime\":\"2025-05-27T07:42:28.931Z\",\"channels\":[{\"type\":\"genesys\",\"from\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"to\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"body\":\"Hi\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"handle\":{\"channelId\":\"genesys\",\"user\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"channelData\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"e642f3a7-6c6d-45a6-b1db-8e75f716dbc6\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-a4ad4f16-6840-554a-9b06-bf117ba62781\"}},\"enable\":true,\"message\":\"The bot is disabled via Genesys Cloud CX Messaging. You can still talk to the bot via Web/Mobile Client, IVR, Genesys Cloud CX Messaging, Twilio.\",\"activeChannels\":\"Web/Mobile Client,IVR,Genesys Cloud CX Messaging,Twilio.\",\"tokens\":[],\"__userInputTime\":\"2025-05-27T07:42:28.923Z\",\"__loopCount\":0,\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"requestId\":\"ms-efe55fb2-f023-5bcd-b287-dc5aa666ef18\",\"botLanguage\":\"en\",\"requestContext\":{\"isRuntime\":true}}],\"isReturningUser\":false},\"opts\":{\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\"},\"deleteKeys\":{}},\"updatedOn\":\"2025-05-27T07:42:30.955Z\",\"intentName\":\"welcomedialog\",\"currentNodeId\":\"script26\",\"currentNodeName\":\"menuCheck\",\"previousNodeId\":\"intent0\",\"previousNodeName\":\"welcomedialog\",\"currentNodeType\":\"script\",\"contextId\":\"dcx-84d7b2aa-a32d-5277-a08c-786ebffe1c6f\"},\"metaTags\":{\"UserLevelTags\":[],\"SessionLevelTags\":[],\"MessageLevelTags\":[],\"referenceLevelTags\":[]},\"contextTags\":[\"welcomedialog\"],\"removeContextTags\":[],\"debugLogs\":[],\"textTranslations\":[],\"tokenIdpsToExpire\":[],\"clearAllAuthTokens\":false,\"channelActions\":{},\"isDeveloper\":false,\"debugMessage\":\"menuCheck\",\"contextId\":\"dcx-84d7b2aa-a32d-5277-a08c-786ebffe1c6f\"}",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:42:31.230Z",
+        "debugTitle": "menuCheck",
+        "debugMessage": "script node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:42:31.565Z",
+        "debugTitle": "titlesConfig",
+        "debugMessage": "Script node execution successful",
+        "debugLevel": "info",
+        "debugDetail": "{\"title\":\" \",\"body\":\"\",\"updatedContext\":{\"bot\":\"Master Bot Flow\",\"botid\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"taskid\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\",\"intent\":\"welcomedialog\",\"intentType\":\"dialog\",\"intentDescription\":\"kgvsdialog\",\"invocationSource\":{\"type\":\"userInputMatch\"},\"entities\":{},\"entityErrorCount\":{},\"amendEntities\":{},\"history\":[],\"ccId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3:st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"currentLanguage\":\"en\",\"dialog_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":4}],\"currentTraits\":[],\"userInputs\":{\"originalInput\":{\"sentence\":\"Hi\",\"spellCorrectedSentence\":\"Hi\",\"sentenceType\":\"statement\",\"timestamp\":1748331750940}},\"currentTags\":{\"tags\":[\"welcomedialog\"]},\"NLAnalysis\":{\"userInput\":\"Hi\",\"intents\":{\"successIntents\":[{\"identifyingEngine\":\"FM\",\"intent\":\"welcomedialog\",\"type\":\"dialogTask\",\"fm\":8930,\"ml\":0,\"rr\":0,\"matchType\":\"definite\"}],\"eliminatedIntents\":[{\"intent\":\"Create Booking\",\"type\":\"dialogTask\",\"fm\":0,\"ml\":0,\"rr\":0}],\"nerInfo\":[]}},\"traversedIntents\":[{\"name\":\"welcomedialog\",\"dialogId\":\"dg-9eaa1774-2caf-52bb-b112-f4d69898fb0b\"}],\"onHoldTasks\":[],\"endOfTask\":{\"endOfTaskReason\":\"Cancelled_Interruption_Initiated\",\"intentType\":\"dialog\",\"taskName\":\"Schedule Appointment\",\"lastNode\":\"nd-ais-f11fba7c-c8f2-44dd-b09f-3f40e681d03f\",\"lastNodeName\":\"CollectionAppointmentDetails\"},\"historicTags\":[{\"tags\":[\"Schedule Appointment\",\"Schedule_Appointment\"]}],\"message_tone\":[{\"tone_name\":\"positive\",\"level\":1,\"count\":1}],\"updatedOn\":\"2025-05-27T07:42:31.347Z\",\"intentName\":\"welcomedialog\",\"currentNodeId\":\"script18\",\"currentNodeName\":\"titlesConfig\",\"previousNodeId\":\"message16\",\"previousNodeName\":\"welMsg1\",\"currentNodeType\":\"script\",\"contextId\":\"dcx-84d7b2aa-a32d-5277-a08c-786ebffe1c6f\",\"isDeveloper\":false,\"session\":{\"EnterpriseContext\":{},\"BotContext\":{},\"UserContext\":{\"workinghours\":{\"workdays\":\"mon,tue,wed,thu,fri\",\"workstart\":\"8:00 AM\",\"workend\":\"5:00 PM\"},\"profImage\":\"no-avatar\",\"profColour\":\"#ff4500\",\"jTitle\":\"\",\"dept\":\"\",\"activationStatus\":\"active\",\"firstName\":\"\",\"lastName\":\"\",\"orgId\":\"o-33749baa-f662-5ae8-b506-4b3bf78779f4\",\"_id\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"accountId\":\"5ff6ff6f2327934e5b70baf2\",\"identities\":[{\"val\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"type\":\"mapped\"}]},\"UserSession\":{},\"BotUserSession\":{\"_metaInfo\":{},\"lastMessage\":{\"channel\":\"genesys\",\"messagePayload\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"e642f3a7-6c6d-45a6-b1db-8e75f716dbc6\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-a4ad4f16-6840-554a-9b06-bf117ba62781\"}},\"conversationSessionId\":\"68356afc118f9d4f41df07f5\",\"lastUserMessageTime\":\"2025-05-27T07:42:28.931Z\",\"channels\":[{\"type\":\"genesys\",\"from\":\"67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"to\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"body\":\"Hi\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"handle\":{\"channelId\":\"genesys\",\"user\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"channelData\":{\"botId\":\"Master Bot Flow\",\"botVersion\":\"1\",\"botSessionId\":\"e642f3a7-6c6d-45a6-b1db-8e75f716dbc6\",\"inputMessage\":{\"type\":\"Text\",\"text\":\"Hi\"},\"languageCode\":\"en-us\",\"botSessionTimeout\":4320,\"chatBot\":{\"id\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\",\"name\":\"Master Bot Flow\"},\"genesysConversationId\":\"d7e0b98d-b487-49f2-b2b0-fd25e16993bb\",\"reqId\":\"gcr-a4ad4f16-6840-554a-9b06-bf117ba62781\"}},\"enable\":true,\"message\":\"The bot is disabled via Genesys Cloud CX Messaging. You can still talk to the bot via Web/Mobile Client, IVR, Genesys Cloud CX Messaging, Twilio.\",\"activeChannels\":\"Web/Mobile Client,IVR,Genesys Cloud CX Messaging,Twilio.\",\"tokens\":[],\"__userInputTime\":\"2025-05-27T07:42:28.923Z\",\"__loopCount\":0,\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"requestId\":\"ms-efe55fb2-f023-5bcd-b287-dc5aa666ef18\",\"botLanguage\":\"en\",\"requestContext\":{\"isRuntime\":true}}],\"isReturningUser\":false},\"opts\":{\"userId\":\"u-700db2ea-12eb-590f-9a5b-e487f1a644f3\",\"streamId\":\"st-bebdb320-9f69-561d-aeb0-c45169ad33b5\"},\"deleteKeys\":{}},\"counter\":0,\"taskList\":[{\"title\":\"Get weather updates\",\"value\":\"Get weather updates\",\"synonyms\":[\"\\\"Get weather updates\\\"\"]},{\"title\":\"Active Covid Cases\",\"value\":\"Active Covid Cases\",\"synonyms\":[\"\\\"Active Covid Cases\\\"\",\"\\\"Covid Cases\\\"\"]},{\"title\":\"Company Stock Value\",\"value\":\"Company Stock Value\",\"synonyms\":[\"\\\"Company Stock Value\\\"\",\"\\\"Stock values\\\"\"]},{\"title\":\"Create UserLogin\",\"value\":\"Create UserLogin\",\"synonyms\":[\"\\\"Create UserLogin\\\"\"]},{\"title\":\"Flight Status \",\"value\":\"Flight Status \",\"synonyms\":[\"\\\"Flight Status \\\"\"]},{\"title\":\"Show More\",\"value\":\"Show More\",\"synonyms\":[\"\\\"Show More\\\"\"]}]},\"metaTags\":{\"UserLevelTags\":[],\"SessionLevelTags\":[],\"MessageLevelTags\":[],\"referenceLevelTags\":[]},\"contextTags\":[\"welcomedialog\"],\"removeContextTags\":[],\"debugLogs\":[],\"textTranslations\":[],\"tokenIdpsToExpire\":[],\"clearAllAuthTokens\":false,\"channelActions\":{},\"isDeveloper\":false,\"debugMessage\":\"titlesConfig\",\"contextId\":\"dcx-84d7b2aa-a32d-5277-a08c-786ebffe1c6f\"}",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:42:31.683Z",
+        "debugTitle": "titlesConfig",
+        "debugMessage": "script node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:42:44.793Z",
+        "debugTitle": "Schedule_Appointment",
+        "debugMessage": "intent node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    },
+    {
+        "timestamp": "2025-05-27T03:45:25.983Z",
+        "debugTitle": "CollectionAppointmentDetails",
+        "debugMessage": "aiassist node processing is completed",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "genesys",
+            "identity": "67e125c59ec655b7448eb65b/genesys/d7e0b98d-b487-49f2-b2b0-fd25e16993bb"
+        }
+    }
+]
+
 ```

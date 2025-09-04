@@ -1,10 +1,10 @@
 # Model Validation
 
-Once you have built your virtual assistant and trained it, the XO Platform builds an ML model mapping user utterance with intents. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/){:target="_blank"}.
+Once you have built your AI Agent and trained it, the Platform builds an ML model mapping user utterance with intents. [Learn more](../../testing/testing-your-bot-with-nlp.md){:target="_blank"}.
 
 Once created, it is recommended to validate the model to understand and estimate an unbiased generalization performance of the ML model.
 
-The XO Platform offers the following validation methods:
+The Platform offers the following validation methods:
 
 
 * **K-fold Cross-Validation** to estimate the skill of the machine learning model.
@@ -12,7 +12,7 @@ The XO Platform offers the following validation methods:
 
 To choose the validation model, follow the steps below:
 
-1. Open the assistant that you want to validate the ML model.
+1. Open the app that you want to validate the ML model.
 2. From the left menu, click **Natural Language** -> **Training**.
 3. Click the **Validate Model** drop-down list on the top-right and select the model.
 4. The results page of the corresponding validation method is displayed.
@@ -34,7 +34,7 @@ Performing Cross-Validation gives a more generalized metric on model performance
 
 ### Configuration
 
-The XO Platform supports **K-fold Cross-Validation**. For this, you must configure the **K-fold parameter** for cross-validation from the advanced NLP configurations. [Learn more](/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/?h=validati#k-fold-cross-validation){:target="_blank"}.
+The Platform supports **K-fold Cross-Validation**. For this, you must configure the **K-fold parameter** for cross-validation from the advanced NLP configurations. [Learn more](../nlu-configurations/engine-tuning.md#k-fold-cross-validation){:target="_blank"}.
 
 To initiate the training and generate the K-fold validation report, follow the below steps:
 
@@ -72,7 +72,7 @@ The following metrics are provided post the K fold cross-validation:
 The following information is also provided to help understand the associated metrics better:
 
 * **Total Utterances** – number of utterances in the training corpus.
-* **Number of Intents** – total number of intents in the assistant.
+* **Number of Intents** – total number of intents in the app.
 * **Number of Folds** – number of subsets the training corpus was divided into the K-fold parameter.
 * **Test Data per Fold** – number of utterances in each subset used for testing.
 * **Training Data per Fold** – number of utterances in each subset used for training.
@@ -106,7 +106,7 @@ The utterances falling into the _False_ quadrants need immediate attention. Thes
 
 !!!note
 
-    At least one utterance must be added to the bot, and the confusion matrix becomes available only after successful model validation.
+    A minimum of one utterance must be added to the AI Agent, and the Confusion Matrix will be available only after the model is successfully validated. The matrix includes only those intents that have utterances present in the training dataset.
 
 <img src="../images/confusion-matrix.jpg" alt="confusion matrix" title="confusion matrix" style="border: 1px solid gray; zoom:75%;">
 
@@ -140,7 +140,7 @@ The quadrant represents an unfavorable outcome as the utterance is supposed to m
 
 !!!note
 
-    Make sure to click the train button after making any changes to your assistant to reflect them in the ML Model Graph.
+    Make sure to click the train button after making any changes to your app to reflect them in the ML Model Graph.
 
 Consider the following key points when referring to the graph:
 
@@ -151,7 +151,7 @@ Consider the following key points when referring to the graph:
 
 ### Understand a Good/Bad ML model
 
-Let us consider a travel assistant as an example to understand good or bad ML Mode. The assistant has multiple tasks with more than 300 trained utterances. The below image depicts 4 tasks and the associated utterances.
+Let us consider a travel app as an example to understand good or bad ML Mode. The app has multiple tasks with more than 300 trained utterances. The below image depicts 4 tasks and the associated utterances.
 <img src="../images/good-bad-ml-models.png" alt="good bad ml models" title="good bad ml models" style="border: 1px solid gray; zoom:75%;">
 
 The model in this scenario is fairly well trained with most of the utterances pertaining to a task are concentrated in the True Positive quadrant and most of the utterances for other tasks are in the True Negative quadrant.
@@ -175,7 +175,7 @@ Let us now compare it with the ML Model for the Travel Assistant below:
 
 <img src="../images/ml-model-comparison.png" alt="ml model comparison" title="ml model comparison" style="border: 1px solid gray; zoom:75%;">
 
-The model is trained with a lot of conflicting utterances, resulting in a scattered view of utterances. This will be considered as a bad model and must be re-trained with a smaller set of utterances that do not relate to multiple tasks in a VA.
+The model is trained with a lot of conflicting utterances, resulting in a scattered view of utterances. This will be considered as a bad model and must be re-trained with a smaller set of utterances that do not relate to multiple tasks in a app.
 
 ### View the Graph for Specific Task Utterances
 
@@ -214,6 +214,6 @@ To edit an individual utterance,
 
     You can also open this window by clicking an individual dot on the ML graph instead of the entire quadrant.
 
-To understand NLU Training Validations and NLU Validate model, click [here](/docs/xo/automation/natural-language/training/machine-learning-engine/#training-validations){:target="_blank"}.
+To understand NLU Training Validations and NLU Validate model, click [here](machine-learning-engine.md#training-validations){:target="_blank"}.
 
 Whenever the Validate model is updated, you can click the **Re-Run Model** to generate the latest matrix. 

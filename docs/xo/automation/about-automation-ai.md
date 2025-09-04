@@ -4,7 +4,7 @@ hide:
   - feedback
 ---
 # About Automation AI
-Automation AI offers AI-powered sophisticated tools for creating Virtual Assistants that handle customer interactions through intelligent automation. Define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. Empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. The module also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+Automation AI offers AI-powered sophisticated tools for creating AI Agents that handle customer interactions through intelligent automation. Define specific use cases and utilize AI/LLM to handle complex interactions. Empower AI Agents to handle interruptions and provide clarifications for more natural dialogues. The module also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
 
 <kr-grid type="g2">
     <kr-grid-item>
@@ -16,7 +16,7 @@ Automation AI offers AI-powered sophisticated tools for creating Virtual Assista
     <kr-grid-item>
         <img src="../images/lm-knowledge-graph.svg" style="zoom:200%;"></img>
         <kr-grid-title>Knowledge AI</kr-grid-title>
-        <kr-grid-desc>Extract or add FAQs to build the Virtual Assistant's knowledge base. Build an ontology structure or leverage LLM and Generative AI to simplify knowledge organization, maintenance, and training.</kr-grid-desc>
+        <kr-grid-desc>Extract or add FAQs to build the knowledge base or use connectors to integrate the existing knowledge base. Leverage LLM and Generative AI to simplify knowledge organization, maintenance, and training.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./knowledge-ai/knowledge-ai-introduction.md)
     </kr-grid-item>
     <kr-grid-item>

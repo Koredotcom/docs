@@ -21,7 +21,7 @@ The following illustration is an example of the **Bulk Invite** page in the **En
 
 ## Create a Bulk Invite File
 
-You can create an invitation file with all the email addresses of the users you want to add to your Enterprise Bots Platform account. **To create a bulk invite file**
+You can create an invitation file with all the email addresses of the users you want to add to your Enterprise Apps Platform account. **To create a bulk invite file**
 
 1. In a text editor, enter a complete email address on each line or in a comma-separated list as shown in the following example: For a '.txt' file:  Kore.aiUser1@kore.com Kore.aiUser2@kore.com Kore.aiUser3@kore.com
 2. Save the bulk invite file as a '.txt' file, for example, Kore.aiImport.txt.

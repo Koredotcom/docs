@@ -56,7 +56,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
   <tr>
    <td>BotID
    </td>
-   <td>Bot ID or Stream ID. You can access it from the assistant’s General Settings page.
+   <td>Bot ID or Stream ID. You can access it from the General Settings page.
    </td>
   </tr>
 </table>

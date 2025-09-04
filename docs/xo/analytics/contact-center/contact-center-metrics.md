@@ -28,7 +28,7 @@
   <tr>
    <td>Intent ID rate
    </td>
-   <td>NLU performance metrics in bot analytics.
+   <td>NLU performance metrics in AI Agents analytics.
    </td>
    <td>Use the Intent Recognition API or export Intent Analytics.
    </td>
@@ -76,7 +76,7 @@
   <tr>
    <td>Agent Handoff Volume and Rate
    </td>
-   <td>Escalation data from the bot’s configuration.
+   <td>Escalation data from the AI Agent’s configuration.
    </td>
    <td>Extract handoff events via Agent Escalation API.
    </td>
@@ -124,7 +124,7 @@
   <tr>
    <td>Re-prompt Rate
    </td>
-   <td>Bot’s error handling logs
+   <td>AI Agent’s error handling logs
    </td>
    <td>Count re-prompt events in session logs.
    </td>
@@ -134,7 +134,7 @@
    </td>
   </tr>
   <tr>
-   <td>Bot AHT
+   <td> AI Agents AHT
    </td>
    <td>Analytics Dashboard (Handle Time section).
    </td>
@@ -314,7 +314,7 @@ Parameter: Contact Volume API(CallVolumeUpdate.acwDuration)
    </td>
    <td>System health logs or monitoring tools.
    </td>
-   <td>Use bot monitoring APIs or analytics for uptime tracking.
+   <td>Use AI Agents monitoring APIs or analytics for uptime tracking.
    </td>
    <td>NA
    </td>
@@ -1238,9 +1238,9 @@ The task ended as a failure (failure node is executed) – system dropoff
 <br>
 The last interaction/message resulted in an ‘intent not identified’ scenario – system dropoff
 <br>
-No response from the assistant – system dropoff
+No response from the AI Agents – system dropoff
 <br>
-Live conversation when you abandon the assistant
+Live conversation when you abandon the AI Agents
    </td>
    <td>All the conversations where the end-user dropped off before the resolution
    </td>

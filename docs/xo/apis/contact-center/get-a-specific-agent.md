@@ -1,10 +1,10 @@
 # Get a Specific Agent
 
-To retrieve the details of a particular agent with the given stream Id and agent Id.
+To retrieve the details of a particular agent with the given `botId` and `agent Id`.
 
 | **Method**   | GET                                                               |
 |----------|-------------------------------------------------------------------|
-| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}` |
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{botId}}/agents/{{agentId}}` |
 | **Content Type** | `application/json`                                             |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | SmartAssist Analytics                                           |
@@ -13,8 +13,8 @@ To retrieve the details of a particular agent with the given stream Id and agent
 
 | **PARAMETER** | **DESCRIPTION**                                                      | **TYPE**           |
 |-----------|------------------------------------------------------------------|----------------|
-| host      | Environment URL, for example, https://platform.kore.ai       | string, required |
-| StreamId  | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`       | string, required |
+| IId  | The application ID. | string, required |
 
 ## Sample Request
 
@@ -46,7 +46,7 @@ curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{stre
     "profImage": "no-avatar",
     "canSupportChat": true,
     "maxChatSupport": 5,
-    "roleId": "6457f21044e2ab580af1e011",
+    "roleId": "6457f21044e2ab580af1xxxx",
     "chatLanguageSupport": [
         {
             "isActive": true,
@@ -65,7 +65,7 @@ curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{stre
     "desktopLayouts": [
         {
             "isDefault": true,
-            "id": "ly-a3b06d5-9c8c-476a-917b-0ab45d817021"
+            "id": "ly-a3b06d5-9c8c-476a-917b-0ab45d81xxxx"
         }
     ],
     "fullName": "agent 1",

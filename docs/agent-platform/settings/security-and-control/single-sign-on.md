@@ -1,4 +1,4 @@
-# Manage Single Sign On for Account Access
+# Manage Single Sign On for Account Sign In
 
 Agent Platform provides users with a default sign-in flow as the standard authentication method. However, for organizations seeking enhanced security and convenience, administrators can enable **Single Sign-On (SSO)** through the **Settings** console.
 
@@ -69,9 +69,11 @@ Agent Platform supports SSO for the following protocols and providers:
 
 To access the SSO feature, follow the steps below:
 
-1. [Sign in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your Agent Platform account.
-2. Click **Settings** on the top menu.
-3. Go to **Security & Control** > **Single Sign On** on the left navigation menu.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Settings** on the top navigation bar.
+3. Go to **Security & Control** > **Single Sign On** on the left menu.
 
 If you’re using this feature for the first time, the following screen appears.
 
@@ -85,7 +87,7 @@ If SSO is already configured, the **Single sign-on** setup page is displayed, as
 
 Depending on your company's security requirements, you can enable SSO for your Agent Platform account users. Enabling SSO includes selecting the protocol and IDP and providing the [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} to integrate with the IDP service.
 
-<div class="admonition nwarning">
+<div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>If you already have the required parameters for Okta, move directly to Step 18.</p></div>
 
@@ -208,7 +210,7 @@ To enable SSO on the **Settings** console, follow the steps below:
 
 <ul><li><b>SAML</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#okta-configuration" target="_blank">Okta</a>, <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#saml" target="_blank">Learn more</a>.</li>
 <li><b>WS-Federation</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#ws-federation" target="_blank">Learn more</a>.</li>
-<li><b>OpenId connect</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#google-configuration" target="_blank">Google</a>. <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
+<li><b>OpenId connect</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#google-configuration" target="_blank">Google</a>. <a href="https://docs.kore.ai/agent-platform/administration/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
 
 <ol start="9"><li>Click <b>Save</b>.</li></ol>
 
@@ -237,7 +239,7 @@ When a user logs into a system that acts as an IDP and tries to access his Agent
 
 ### Okta Configuration
 
-Okta's Single Sign-On (SSO) offers a seamless user experience by enabling one login for multiple applications across different platforms. It enhances security through multi-factor authentication (MFA), zero-trust architecture, and passwordless options. 
+Okta's Single Sign-On (SSO) offers a seamless user experience by enabling one login for multiple applications across different platforms. It enhances security through multi-factor authentication (MFA), zero-trust architecture, and password-less options. 
 
 Okta's scalable and customizable platform reduces IT overhead, improves productivity, and supports compliance with governance standards like GDPR and HIPAA. 
 
@@ -314,7 +316,7 @@ Once SSO for Okta is complete, the system will redirect to the <b>Okta Sign in</
 
 ### Onelogin Configuration
 
-OneLogin's Single Sign-On (SSO) solution simplifies user access by enabling a single login for multiple applications across platforms, improving workflow efficiency. It enhances security with advanced multi-factor authentication (MFA), passwordless options, and machine learning-based risk assessments that are compliant with security standards like GDPR and HIPAA.
+OneLogin's Single Sign-On (SSO) solution simplifies user access by enabling a single login for multiple applications across platforms, improving workflow efficiency. It enhances security with advanced multi-factor authentication (MFA), password-less options, and machine learning-based risk assessments that are compliant with security standards like GDPR and HIPAA.
 
 To configure SSO using SAML and Onelogin, follow the steps below:
 
@@ -538,5 +540,5 @@ As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-par
 
 ## Related Information
 
-* [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Accessing Agent Platform](../../getting-started/sign-up-sign-in.md){:target="_blank"}- Sign up on Agent Platform, create an account, and sign in.

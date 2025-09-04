@@ -1,24 +1,27 @@
 # Batch Testing
 
-Once you have built and trained your bot, the most important question that arises is how good is your bot’s learning model? So, evaluating your bot’s performance is important to delineate how good your bot understands the user utterances.
+Once you have built and trained your app, the most important question that arises is how good is your app’s learning model? So, evaluating your app’s performance is important to delineate how good your app understands the user utterances.
 
-The **Batch Testing** feature helps you discern the ability of your bot to correctly recognize the expected intents and entities from a given set of utterances. This involves the execution of a series of tests to get a detailed statistical analysis and gauge the performance of your bot’s ML model.
+The **Batch Testing** feature helps you discern the ability of your app to correctly recognize the expected intents and entities from a given set of utterances. This involves the execution of a series of tests to get a detailed statistical analysis and gauge the performance of your app’s ML model.
+
+The Batch Testing feature also supports the Zero-shot Model feature for intent detection, enabling performance evaluation even without pre‑trained intent‑based training utterances.
+To use it, ensure that the [Zero-shot ML Model](../../../generative-ai-tools/genai-features-automationai.md#zero-shot-model) feature is enabled and the Machine Learning [Network Type](../../../automation/natural-language/training/machine-learning-engine.md#network-type) is Zero-shot model. To know about the support LLMs, see [Automation AI - Model Feature Matrix](../../../generative-ai-tools/genai-features-automationai.md#model-feature-matrix).
 
 !!! Note
 
-    The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"}.
+    The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](./health-and-monitoring/virtual-assistants-health-and-monitoring.md){:target="_blank"}.
 
-To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Automation AI > Virtual Assistant > Testing > Regression Testing** from the left navigation menu, and then the **Batch Testing** tab..
+To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Automation AI > Virtual Assistant > Testing > Regression Testing** from the left navigation menu, and then the **Batch Testing** tab.
 
 
 ## Best Practices
 
-* An optimal approach to bot NLP training is to first create a test suite of most of the use cases(user utterances) that the bot needs to identify, run it against the model and start training for the ones that failed.
+* An optimal approach to app NLP training is to first create a test suite of most of the use cases(user utterances) that the app needs to identify, run it against the model and start training for the ones that failed.
 * Create/update batch testing modules for high usage utterances.
 * Publish the trained model only after detailed testing.
 * When naming the intent, ensure that the name is relatively short (3-5 words) and does not have special characters or words from the Stop Wordlist. Try to ensure the intent name is close to what the users request in their utterance.
-* Batch Test executions do not consider the context of the user. Hence you might see some False Negatives in the test results which in fact are True Positives in the actual bot when the context is taken into consideration.
-* The **count** in Batch Test results refers to the **unique assertion** statements and not necessarily the number of the rows in the CSV file. Batch tests use a rule to validate the unique assertions based on the **utterance** in consecutive rows. If two consecutive rows have same utterances and different entity values, the XO platform considers it as one assertion statement which accepts both the entity values.
+* Batch Test executions do not consider the context of the user. Hence you might see some False Negatives in the test results which in fact are True Positives in the actual app when the context is taken into consideration.
+* The **count** in Batch Test results refers to the **unique assertion** statements and not necessarily the number of the rows in the CSV file. Batch tests use a rule to validate the unique assertions based on the **utterance** in consecutive rows. If two consecutive rows have same utterances and different entity values, the Platform considers it as one assertion statement which accepts both the entity values.
 
 
 
@@ -29,7 +32,7 @@ Kore.ai provides a few out-of-the-box **Test Suites** to perform batch testing. 
 
 ### Developer defined utterances
 
-This test suite validates the utterances that have been previously added and trained by the developer from Machine Learning Utterances screen. Using this test suite would mean testing collectively the entire set of utterances that a developer has added for all tasks of the bot.
+This test suite validates the utterances that have been previously added and trained by the developer from Machine Learning Utterances screen. Using this test suite would mean testing collectively the entire set of utterances that a developer has added for all tasks of the app.
 
 <img src="../images/batch-testing-1-developer-du.png" alt="BT - Developer Defined Utterances" title="BT - Developer Defined Utterances" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -79,14 +82,14 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
     <img src="../images/batch-testing-7-multiple-intents-for-a-test-utterance.png" alt="Multiple intents for a test utterance" title="Multiple intents for a test utterance" style="border: 1px solid gray; zoom:50%;"/>  
 
 5. Click **Save** when ready.
-6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA.  
+6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the app.  
 <img src="../images/batch-testing-8-add-new-case.png" alt="New test added" title="New test added" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 
 #### Generating Test Cases Automatically
 
-You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](../../../../app-settings/generative-ai-tools/introduction/){:target="_blank"} for your Virtual Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
+You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](../../../generative-ai-tools/introduction.md){:target="_blank"} for your app Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
 <img src="../images/batch-testing-9-goto-generate-test-cases-1.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
@@ -114,7 +117,7 @@ Once you add the test cases, they are listed within your test suite, along with 
 
 If you **Upload a Test Cases File**, you can import an array of test utterances, also known as a Dataset at once in a batch file. The Dataset file must be in a CSV or JSON format and can have a maximum of 1000 utterances. You can download the sample CSV or JSON file formats while creating the test suite.
 
-**Important Tip:** For a Universal Bot, to create a test suite, you can add multiple intents in the CSV/JSON file using the upload method. The format includes the intents and the corresponding bot names as follows:
+**Important Tip**:For a Universal Bot, to create a test suite, you can add multiple intents in the CSV/JSON file using the upload method. The format includes the intents and the corresponding app names as follows:
 
 ```
 {
@@ -791,11 +794,11 @@ table, th, td {
 
 ### Running Test Suites
 
-The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to **Automation AI > Virtual Assistant > Testing > Regression Testing**, select **Batch Testing** tab.
+The following steps guide you on how to run a batch test on your app and get a detailed analytical report on the utterances based on the test results. To get started, go to **Automation AI > Virtual Assistant > Testing > Regression Testing**, select **Batch Testing** tab.
 
 !!! note
 
-    Before testing, it is essential to add and train your bot with a considerable number of utterances using Machine Learning.
+    Before testing, it is essential to add and train your app with a considerable number of utterances using Machine Learning.
 
 <img src="../images/batch-testing-14-batch-testing-menu.png" alt="Batch Testing" title="Batch Testing" style="border: 1px solid gray; zoom:50%;"/>
 
@@ -803,14 +806,14 @@ To run a Test Suite, follow the steps below:
 
 1. Click the desired test suite name in the **Batch Testing** window.  
 Note that **Developer Defined Utterances** and **Successful User Utterances** are default test suites to validate user utterances through Batch Testing.
-2. Select **In Development** to run batch tests on test suites for only the **_in-development_** version of the Virtual Assistant(s). Alternatively, select **Published** to run batch tests on test suites for only the published version of the Virtual Assistant(s).
+2. Select **In Development** to run batch tests on test suites for only the **_in-development_** version of the app. Alternatively, select **Published** to run batch tests on test suites for only the published version of the app.
 3. Click **Run Test Suite** to initiate the batch test execution.  
 <img src="../images/batch-testing-15-run-test-suite-in-dev.png" alt="Run Test Suite" title="Run Test Suite" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 #### Execution of Newly Created Batch Test Suites
 
-Once you create a new test batch test suite, by default, the system automatically initiates test run execution for both **_In-development_** and **_Published_** VA versions. This makes it convenient to assess test results while the VA is in development and once a VA is published following a production release.
+Once you create a new test batch test suite, by default, the system automatically initiates test run execution for both **_In-development_** and **_Published_** app versions. This makes it convenient to assess test results while the app is in development and once a app is published following a production release.
 
 <img src="../images/batch-testing-16-batch-testing-run-publish.png" alt="Execution of Newly Created Batch Test Suites" title="Execution of Newly Created Batch Test Suites" style="border: 1px solid gray; zoom:75%;"/> 
 
@@ -877,10 +880,10 @@ You cannot cancel a batch test run in the following scenarios:
   
     **Solution**: Wait for one test suite execution or cancellation to complete before initiating the process for another.
 
-2. When you try to cancel a batch test run in the **_Published_** mode without publishing the VA.  
+2. When you try to cancel a batch test run in the **_Published_** mode without publishing the app.  
 <img src="../images/batch-testing-cancel-img5.png" alt="Batch test is in Published mode" title="Batch test is in Published mode" style="border: 1px solid gray; zoom:50%;"/>  
   
-    **Solution**: First, train and publish the VA before canceling the batch test run in Published mode.
+    **Solution**: First, train and publish the app before canceling the batch test run in Published mode.
 
 #### View Test Case Details
 
@@ -898,7 +901,7 @@ Each test run creates a test report record and displays a summary of the test re
 * **Recall** is the number of correctly classified utterances divided by the total number of utterances that got classified correctly to any existing task or classified incorrectly as an absence of an existing task ie the ratio of correctly classified utterances to actual matching intents/tasks (sum of true positives and false negatives) i.e. TP/(TP+FN).
 * **Intent Success %** that displays the percentage of correct intent recognition that has resulted from the test.
 * **Entity Success %** that displays the percentage of correct entities recognized that has resulted from the test.
-* **Version Type** identifies the version of the bot against which the test suite was run – development or published.
+* **Version Type** identifies the version of the app against which the test suite was run – development or published.
 * There are three possible outcomes from each test run:
     1. Success – when all records are present in the file are processed
     2. Success with a warning – when one or more records present in the suite are discarded from detection due to system error
@@ -915,9 +918,9 @@ To get a detailed analysis of the test run, click **the Download** icon to downl
 * **Bot Name**
 * **Report name** of the test suite
 * **Bot Language** (post 7.3 release)
-* **Run Type** identifies the version of the bot against which the test suite was run – development or published.
+* **Run Type** identifies the version of the app against which the test suite was run – development or published.
 * **Threshold Setting** (post 7.3 release) detailing the NLP thresholds applied when running this test suite, this would be followed by the settings for each of the three NL engines with the following details:
-    * **Mode** – ml, faq, or, cs
+    * **Mode**– ml, faq, or, cs
     * **minThreshold**
     * **maxThreshold**
     * **exactMatchThreshold**
@@ -927,47 +930,47 @@ To get a detailed analysis of the test run, click **the Download** icon to downl
     * **suggestionsCount**
     * **pathCoverage**
 
-* **Last Tested:** Date of the latest test run for developer-defined utterances.
-* **Utterance Count:** Total number of utterances included in the test run.
-* **Success/Failure Ratio:** Total number of successfully predicted utterances divided by the total count of utterances multiplied by 100.
-* **True Positive (TP):** Percentage of utterances that have correctly matched expected intent.In the case of Small Talk, TP is indicated when the list of expected and actual intents are the same.In the case of Traits, a TP state includes the traits matched over and above the expected matches.
+* **Last Tested**:Date of the latest test run for developer-defined utterances.
+* **Utterance Count**:Total number of utterances included in the test run.
+* **Success/Failure Ratio**:Total number of successfully predicted utterances divided by the total count of utterances multiplied by 100.
+* **True Positive (TP)**:Percentage of utterances that have correctly matched expected intent.In the case of Small Talk, TP is indicated when the list of expected and actual intents are the same.In the case of Traits, a TP state includes the traits matched over and above the expected matches.
 **Note** that when you tag multiple intents (dialog, FAQ, and small talk) to a test utterance, the test result appears as TP if the actual intents match the expected intents but also include ambiguous intents.
-* **True Negative (TN):** Percentage of utterances that were not expected to match any intent and they did not match. Not applicable to Small Talk.
-* **False Positive (FP):** Percentage of utterances that have matched an unexpected intent. In the case of Small Talk, it would be when the list of expected and actual intents are different.
-* **False Negative (FN):** Percentage of utterances that have not matched expected intent. In the case of Small Talk, it would be when the list of expected Small Talk intent is blank but the actual Small Talk is mapped to an intent.  
+* **True Negative (TN)**:Percentage of utterances that were not expected to match any intent and they did not match. Not applicable to Small Talk.
+* **False Positive (FP)**:Percentage of utterances that have matched an unexpected intent. In the case of Small Talk, it would be when the list of expected and actual intents are different.
+* **False Negative (FN)**:Percentage of utterances that have not matched expected intent. In the case of Small Talk, it would be when the list of expected Small Talk intent is blank but the actual Small Talk is mapped to an intent.  
 <img src="../images/batch-testing-18-sample-result-2.png" alt="Sample CSV Test report" title="Sample CSV Test report" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 The report also provides detailed information on each of the test utterances and the corresponding results.
 
-* **Utterances**- Utterances used in the corresponding test suite.
-* **Expected Intent**– The intent expected to match for a given utterance, will include trait where applicable with trait prefix
-* **Matched Intent** – The intent that is matched for an utterance during the batch test. This will include matched traits with trait prefix (post 7.3 release). This will include matched Small Talk intents (post 8.0 release).
-* **Parent Intent** – The parent intent considered for matching an utterance against an intent.
-* **Task State** – The status of the intent or task against which the intent is identified. Possible values include Configured or Published
-* **Result Type**– Result categorized as True Positive or True Negative or False Positive or False Negative
-* **Entity Name** – The name of the entity detected from the utterance.
-* **Expected EntityValue** – The entity value expected to be determined during the batch test.
-* **Matched EntityValue** – The entity value identified from an utterance.
-* **Entity Result** – Result categorized as True or False to indicate whether the expected entity value is the same as the actual entity value.
-* **Expected Entity Order** – entity values from the input file
-* **Actual Entity Order** –
+* **Utterances**: Utterances used in the corresponding test suite.
+* **Expected Intent**: The intent expected to match for a given utterance, will include trait where applicable with trait prefix
+* **Matched Intent**: The intent that is matched for an utterance during the batch test. This will include matched traits with trait prefix (post 7.3 release). This will include matched Small Talk intents (post 8.0 release).
+* **Parent Intent**: The parent intent considered for matching an utterance against an intent.
+* **Task State**: The status of the intent or task against which the intent is identified. Possible values include Configured or Published
+* **Result Type**: Result categorized as True Positive or True Negative or False Positive or False Negative
+* **Entity Name**: The name of the entity detected from the utterance.
+* **Expected EntityValue**: The entity value expected to be determined during the batch test.
+* **Matched EntityValue**: The entity value identified from an utterance.
+* **Entity Result**: Result categorized as True or False to indicate whether the expected entity value is the same as the actual entity value.
+* **Expected Entity Order**: entity values from the input file
+* **Actual Entity Order**:
     * if the order for all expected entities is provided, then the same is included in this column
     * if no order is provided, the system determined order will be included in the column
     * If an order is provided for some entities, then a combination of user-defined order and system-defined order will be included
 
-* **Matched Intent’s Score** – For False Positives and False Negatives, the confidence scores from FM, ML, and/or KG engines are displayed for the matched intent from the utterance. Note that the scores are given only if the engine detects the intent, which means that you may not see the scores from all three engines at all times.
-* **Expected Intent’s Score** – For False Positives, the confidence scores for the intent expected to match for the given utterance is given. Again the score will be given by the engines detecting the intent.
+* **Matched Intent’s Score**: For False Positives and False Negatives, the confidence scores from FM, ML, and/or KG engines are displayed for the matched intent from the utterance. Note that the scores are given only if the engine detects the intent, which means that you may not see the scores from all three engines at all times.
+* **Expected Intent’s Score**: For False Positives, the confidence scores for the intent expected to match for the given utterance is given. Again the score will be given by the engines detecting the intent.
 
 !!! tip
 
-    For any of the batch tests, if results indicate that your bot is unable to recognize the correct intents, you can work on improving its performance by adding or modifying utterances to the Machine Learning model.
+    For any of the batch tests, if results indicate that your app is unable to recognize the correct intents, you can work on improving its performance by adding or modifying utterances to the Machine Learning model.
 
 
 
 #### Batch Test Results for Universal Bots
 
-The XO Platform now displays Batch Test Results for Universal bots for each test run in the summary view for [FAQs](../health-and-monitoring/virtual-assistants-health-and-monitoring/#nlp-faqs-summary){:target="_blank"}, [Dialog Intents](../health-and-monitoring/virtual-assistants-health-and-monitoring/#dialog-intent-summary){:target="_blank"}, and [Small Talk](../health-and-monitoring/virtual-assistants-health-and-monitoring/#nlp-small-talk-summary){:target="_blank"} during Batch Testing. The actionable insights help understand the test coverage and NLP performance for each intent type in the Universal Bot. [Learn more](../health-and-monitoring/virtual-assistants-health-and-monitoring/#nlp-batch-test-results-summary-for-universal-bots){:target="_blank"}.
+The Platform now displays Batch Test Results for Universal bots for each test run in the summary view for [FAQs](./health-and-monitoring/virtual-assistants-health-and-monitoring.md#nlp-faqs-summary){:target="_blank"}, [Dialog Intents](./health-and-monitoring/virtual-assistants-health-and-monitoring.md#dialog-intent-summary){:target="_blank"}, and [Small Talk](./health-and-monitoring/virtual-assistants-health-and-monitoring.md#nlp-small-talk-summary){:target="_blank"} during Batch Testing. The actionable insights help understand the test coverage and NLP performance for each intent type in the Universal Bot. [Learn more](./health-and-monitoring/virtual-assistants-health-and-monitoring.md#nlp-batch-test-results-summary-for-universal-bots){:target="_blank"}.
 
 
 
@@ -978,4 +981,4 @@ You can view the individual Batch Test Run summary of a test suite by clicking t
 <img src="../images/batch-testing-run-summary.png" alt="View Summary" title="View Summary" style="border: 1px solid gray; zoom:50%;"/> 
 
 
-This displays the relevant NLP and Flow Health metrics on the **Health and Monitoring** Dashboard for intents mapped to Dialogs, FAQs, and Traits. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/#test-coverage){:target="_blank"}.
+This displays the relevant NLP and Flow Health metrics on the **Health and Monitoring** Dashboard for intents mapped to Dialogs, FAQs, and Traits. [Learn More](./health-and-monitoring/virtual-assistants-health-and-monitoring.md#test-coverage){:target="_blank"}.

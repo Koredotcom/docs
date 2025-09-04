@@ -9,16 +9,16 @@ The Kerberos-SPNEGO authentication process includes multiple steps to establish 
 
 The Kerberos SPNEGO auth profile can be configured from the following XO Platform settings:
 
-* [Service Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}
-* [Configurations > Authorization Profile](../bot-authentication/){:target="_blank"}
-* [Generative AI & LLM > Custom LLM Integrations](../../../generative-ai-tools/llm-integration/#configure-custom-llm-integration){:target="_blank"}
+* [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md){:target="_blank"}
+* [Configurations > Authorization Profile](bot-authentication.md){:target="_blank"}
+* [Generative AI & LLM > Custom LLM Integrations](../../../generative-ai-tools/models-library.md#custom-llm-integration-framework){:target="_blank"}
 
 
 ## Configuring Kerberos SPNEGO Authorization
 
 Steps to configure the Authorization for your assistant with Kerberos-SPNEGO auth profile:
 
-1. Open the virtual assistant (VA) for which you want to configure the Authorization profile.
+1. Open the AI Agent for which you want to configure the Authorization profile.
 2. Select the **Build** tab from the top menu.
 3. From the left-side vertical menus, click **Configurations > Authorization Profiles**.
 4. Click **New** to open the **New Authorization Mechanism** dialog.  
@@ -85,7 +85,7 @@ To configure the Kerberos SPNEGO authorization profile, define the fields descri
     <br>
     https://{tenant}.service-now.com/api/now/v1/table/incident
     <br>
-    For more information, see <a href="../../../../automation/use-cases/using-session-and-context-variables" target="_blank">Using Session and Context Variables in Tasks</a>.
+    For more information, see <a href="../../../automation/use-cases/using-session-and-context-variables.md" target="_blank">Using Session and Context Variables in Tasks</a>.
    </td>
    <td>Required
    </td>
@@ -117,7 +117,7 @@ To configure the Kerberos SPNEGO authorization profile, define the fields descri
   <tr>
    <td>Authentication Types
    </td>
-   <td>Bot designers can set this setting to modify the Kerberos authentication behavior.
+   <td>App designers can set this setting to modify the Kerberos authentication behavior.
     <br>
     Choose one of the following Authentication Types:
     <ul>

@@ -1,6 +1,4 @@
-# Model Analytics Dashboard
-
-## Overview
+# Models Performance Analytics
 
 The **Model Analytics Dashboard** is a comprehensive analysis and monitoring solution that provides unified performance tracking for [fine-tuned](../../../models/fine-tune-models/create-a-fine-tuned-model.md){:target="_blank"}, [open-source](../../../models/open-source-models/configure-your-open-source-model.md){:target="_blank"}, and [external models](../../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} in your account. The dashboard measures and visualizes key performance indicators for the selected period, including:
 
@@ -36,7 +34,7 @@ The **Model Analytics Dashboard** is a comprehensive analysis and monitoring sol
 
 To access the **Model Analytics** dashboard, follow the steps below:
 
-1. [Navigate](../../settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Analytics**.
 3. Click the **Model Analytics** tab on the right-hand side screen.
 <img src="../images/model-analysis-dashboard-access.png" alt="model analytics dashboard" title="model analytics dashboard" style="border: 1px solid gray; zoom:75%;">
@@ -85,45 +83,47 @@ Use the options on the top panel to generate account-level and model-level data 
 
 ## Model Performance Filters
 
-The following widget-level filters apply exclusively to model-specific metrics, providing real-time analytics when used with a [Global Timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
-
-* **Model Name**: Select the deployed model from the list to see the associated analytics data.
+The following widget-level filters apply exclusively to model-specific metrics, providing real-time analytics when used with a [Global Timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The available filters depend on the selected  model type.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If two models with the same name are deployed at different times, they appear in the list with their respective deployment timestamps.</p>
-</div>
+<p>If multiple deployments exist for the same model name, they are listed along with their respective deployment timestamps.</p></div>
 
-* **Version**: Choose the model’s deployment version from the list. If your account contains multiple versions of the same model, this feature provides targeted data for a specific version, such as deployment V4.
+**Fine-tuned and Open-source Models**
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If no versions exist for a model, the dropdown list is empty. By default, data for all model versions is displayed unless a specific version is selected.</p>
-</div>
+* **Select Model (Model Name)**: Select the deployed model from the list to see the associated analytics data.
+* **Select Deployment**: Choose the model’s deployment name from the list.
+* **Select Filter (version)**: Choose the model’s deployment version from the list to view the associated data.
 
-<img src="../images/fine-tuned model latency.png" alt="model name and version filter" title="model name and version filter" style="border: 1px solid gray; zoom:75%;">
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p><ul><li>If no versions exist for a model, the dropdown list is empty.</li>
+    <li> By default, data for all model versions is displayed unless a specific version is selected.</li></ul></p></div>
 
-## Model Provider Filter
+    <img src="../images/fine-tuned-model-filters.png" alt="model name and version filter" title="model name and version filter" style="border: 1px solid gray; zoom:75%;">
 
-The LLM Provider filter applies exclusively to external models, indicating the external service provider integration done for the deployed or fine-tuned model. Selecting this filter displays the relevant model analytics data in the *Tokens*, *Model Latency*, and *Requests* widgets.
+**External Models**
 
-<img src="../images/model-provider-filter.png" alt="model provider filter" title="model provider filter" style="border: 1px solid gray; zoom:75%;">
+* **Select Model (Model Name)**: Select the deployed model from the list to see the associated analytics data.
+* **Select Connection**: Select the third-party service connection name for the external model.
 
-## Model Performance Data Widgets
+    <img src="../images/external-model-filters.png" alt="model name and version filter" title="model name and version filter" style="border: 1px solid gray; zoom:75%;">
 
-The **Model Analytics** dashboard displays the widgets given below to represent the [model-specific performance](../analytics/model-analytics-dashboard.md/#model-specific-metrics){:target="_blank"} metrics. The graphs update automatically when a different model deployment version is selected.
+## How it Works
 
-### How it Works
-
-1. Select the required date/range in the [Global Timeline Filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+1. Select the required date/date range in the [Global Timeline Filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 2. Select the tab for the required model type, like *Fine-tuned*, *Open-source*, or *External*.
-3. If you have selected the **Fine-tuned** or **Open-source** tab, select the model name and (optional) version. Alternatively, select the provider from the dropdown under **External Models**.
+3. For Fine-tuned or Open-source models, choose the *model name* and optionally the *deployment name* and *version*. Alternatively, for External Models, select the *model name* and *connection name* from the dropdown lists.
 4. The widgets display an hourly graph for 24 hours per day and a daily graph for the respective metrics for a date range.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p><ul><li>The widget shows data only for the duration that the model was deployed in your account. For instance, if Model A was active for 4 days last week and undeployed for the next 3 days, selecting a 7-day view will display data solely for those 4 active days and the associated request times.</li>
 <li>The graph will show curves only when requests are processed by the model. If no requests are processed during an hour or day, no data points will appear.</li></ul></p></div>
+
+## Model Performance Data Widgets
+
+The **Model Analytics** dashboard displays the widgets given below to represent the [model-specific performance](../analytics/model-analytics-dashboard.md/#model-specific-metrics){:target="_blank"} metrics. The graphs update automatically when a different model deployment version is selected.
 
 ### Model Latency
 
@@ -272,6 +272,7 @@ With intuitive data visualization and dynamic filtering capabilities, the **Mode
 
 ## Related Links
 
-* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other Agent Platform admin features.
+* **Settings Console** - [Learn more](../../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
 * **Monitoring: Audit Logs** - [Learn more](../audit-logs.md){:target="_blank"} about tracking activities and events in your account.
 * **Monitoring: Tools Analytics Dashboard** - [Learn more](../analytics/tools-analytics-dashboard.md){:target="_blank"} about getting actionable insights into tools’ performance.
+

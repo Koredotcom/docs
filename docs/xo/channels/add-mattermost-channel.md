@@ -29,7 +29,7 @@ Before you begin, ensure that you have access to the administrative functions of
     * Choose _application/json_ as **Content Type**.
     * If you would like your bot to be available only for a specific channel, then choose the required channel from the **Channel** dropdown.
     * Provide your Kore.ai assistant Name in the **Trigger Words** field.
-    * Copy the **Callback URL** for the Kore VA (located in the **Channels & Flows** > **Channels** > **Digital** > **All** > **Mattermost**)  and provide it in the Callback URLs field.
+    * Copy the **Callback URL** for the AI Agent (located in the **Channels & Flows** > **Channels** > **Digital** > **All** > **Mattermost**)  and provide it in the Callback URLs field.
     * Click on **Save** to complete the Outgoing Webhook setup.
     <img src="../images/mattermost2.png" alt="save mattermost configuration " title="save mattermost configuration" style="border: 1px solid gray; zoom:70%;">
 
@@ -46,7 +46,7 @@ Before you begin, ensure that you have access to the administrative functions of
 1. Select the ‘**Incoming Webhooks**’ menu and click ‘**Add Incoming Webhook**’.
 2. Provide required information as per the below image.
     * Enter your preferred values for **Title**, **Description** and **Username** fields.
-    * Choose a default **Channel**. Kore.ai VAs always respond back in the channel from which the user input is received.
+    * Choose a default **Channel**. Kore.ai assistants always respond back in the channel from which the user input is received.
     * Do not select the **Lock to this channel** option.
     <img src="../images/mattermost4.png" alt="choose default channel" title="choose default channel" style="border: 1px solid gray; zoom:70%;">
 
@@ -110,6 +110,6 @@ To configure the XO Platform channel, after having completed the setup in Matter
 <img src="../images/mattermost9.png" alt="enable mattermost" title="enable mattermost" style="border: 1px solid gray; zoom:70%;">
 
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

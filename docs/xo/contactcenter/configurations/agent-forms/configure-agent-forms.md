@@ -1,8 +1,8 @@
 # Agent Forms
 
-In the Contact Center, Agent Forms provide a range of input fields that allow capturing required information from customers. Agent Forms work based on the Kore.ai XO Platform.
+In the Contact Center, Agent Forms provide a range of input fields that allow capturing required information from customers.
 
-To reach the _Agent Forms_ section, go to **Contact Center AI > CONFIGURATIONS > Agent Forms**. Here, you can view and search existing forms and create new ones.
+To reach the _Agent Forms_ section, go to **Contact Center AI > CONFIGURATIONS > Agent Forms**. Here, you can view and search existing forms and create new ones.  
 <img src="../images/agent-forms-page.png" alt="
 Agent Forms Page" title="Agent Forms Page" style="border: 1px solid gray; zoom:80%;">
 
@@ -16,7 +16,7 @@ You can access the following features and information within the Agent Forms sec
 4. **Status**: Lists the form status as follows:
     1. **In-development** displays when a form is created and is still being worked on. This status is also shown for previously published forms modified after publishing.
     2. **Published** displays when a form has been approved and published.
-5. **Last Updated**: Displays the date and time when the form was last updated.
+5. **Last Updated**: Displays the date and time when the form was last updated.  
 <img src="../images/agent-form-columns.png" alt="
 Agent Forms Columns" title="Agent Forms Columns" style="border: 1px solid gray; zoom:80%;">
 
@@ -30,7 +30,7 @@ Add New Form Button" title="Add New Form Button" style="border: 1px solid gray; 
 
 2. The **New Form** window opens, and you can configure the following:
     1. Enter the **Name** of the form, the **Display Name** of the form, and the **Description**.
-    2. Enable **Agent Form Data** to redact form information from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit. Once enabled, the XO Platform will replace the user input with a unique, random, system-generated alphanumeric value in all the modules.
+    2. Enable **Agent Form Data** to redact form information from the App Context, Debug Logs, Service Calls, Agent Transfer, and the BotKit. Once enabled, the XO Platform will replace the user input with a unique, random, system-generated alphanumeric value in all the modules.
     3. Select an **Assignment**:
         1. **Assign to Queues** lets you make forms available for conversations in all or selected queues.
         2. **Assign to Agent Groups** allows you to make forms available for agents in specific agent groups.
@@ -56,24 +56,23 @@ There are two ways to edit form settings (Name, Description, Form Data Security 
 
 1. **From the Agent Forms Live Board**:
     1. Find the form in the **Contact Center AI > CONFIGURATIONS > Agent Forms** section.
-    2. Click the **Edit** icon under _Actions_.
+    2. Click the **Edit** icon under _Actions_.  
     <img src="../images/edit-button.png" alt="Edit Form Button" title="Edit Form Button" style="border: 1px solid gray; zoom:80%;">
 2. **From the Form Builder**:
     3. From the top toolbar of the form builder, click the **More Options** button.
-    4. Select **Form Setting**.
+    4. Select **Form Setting**.  
     <img src="../images/form-setting-button.png" alt="Form Setting Button" title="Form Setting Button" style="border: 1px solid gray; zoom:80%;">
 
 ### Publish an Agent Form
 
-Publishing a form means making it available for agents to select within the Agent Console and send to customers, as shown below. See [Agent Forms for Handling Sensitive Information](../../../console/interacting-with-customers.md#agent-forms-for-handling-sensitive-information) for detail.
-
+Publishing a form means making it available for agents to select within the Agent Console and send to customers, as shown below. See [Agent Forms for Handling Sensitive Information](../../../console/interacting-with-customers.md#agent-forms-for-handling-sensitive-information) for detail.  
 <img src="../images/agent-form-console.png" alt="Send Agent Form" title="Send Agent Form" style="border: 1px solid gray; zoom:80%;">
 
 Steps to publish a form:
 
 1. Find the form in the **Contact Center AI > CONFIGURATIONS > Agent Forms** section.
 2. Click the **More Options** icon under _Actions_.
-3. Select **Publish**.
+3. Select **Publish**.  
 <img src="../images/publish-button.png" alt="Publish Button" title="Publish Button" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -87,7 +86,7 @@ There are two ways to delete an Agent Form:
 1. **From the Agent Forms Live Board**:
     1. Find the form in the **Contact Center AI > CONFIGURATIONS > Agent Forms** section.
     2. Click the **More Options** icon under _Actions_.
-    3. Select **Delete**.
+    3. Select **Delete**.  
     <img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
 2. **From the Form Builder**:  

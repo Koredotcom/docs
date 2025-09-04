@@ -321,7 +321,7 @@ As an account owner, you can invite new users in your organization and collabora
 
 To invite a user, follow the steps below:
 
-1. Click **Settings** on the top menu.
+1. Click **Settings** on the top navigation bar.
 2. Click **Users Management** > **Users** > **Add New User**.
 <img src="../images/add-new-user-click.png" alt="add new user" title="add new user" style="border: 1px solid gray; zoom:75%;">
 

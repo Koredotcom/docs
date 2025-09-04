@@ -30,7 +30,7 @@ This API allows users to track the status of ongoing or completed jobs related t
 </table>
 
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
+**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 
 ## QPath Parameters

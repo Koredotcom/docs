@@ -4,7 +4,7 @@ The Queues & Agents dashboard displays the Overview, Efficiency, Agent Performan
 
 **To view the Queues & Agents dashboard, follow the steps**:
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The **Analytics** panel is displayed with the list of reports.
 
     <img src="../images/navigating-to-queues-agents-report.png" alt="Navigating to Queues Agents Report" title="Navigating to Queues Agents Report" style="border: 1px solid gray; zoom:80%;">
 
@@ -315,7 +315,7 @@ Completed = AbandonedInQueue + SystemTerminated + All-Conversations-With-Resolut
 **Answer**: Yes, if the conversations (calls/chats) entered that queue.
 
 **Question**. Is the Incoming call count taken from the queue?<br>
-**Answer**: Yes. However, for “No-Filters”, the incoming call count includes conversations directly transferred from the Bot to the Agent, without entering a queue.
+**Answer**: Yes. However, for “No-Filters”, the incoming call count includes conversations directly transferred from the AI Agents to the Agent, without entering a queue.
    </td>
   </tr>
   <tr>

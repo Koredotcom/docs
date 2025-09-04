@@ -1,6 +1,6 @@
 # Update a Specific Agent
 
-To update the details of a particular agent with the given Stream Id and Agent Id.
+To update the details of a particular agent with the given `streamId` and `agentId`.
 
 | **Method**      | PUT                                                         |
 |-------------|-------------------------------------------------------------|
@@ -13,28 +13,40 @@ To update the details of a particular agent with the given Stream Id and Agent I
 
 | **Parameter** | **Description**                                                                                            | **Type**         |
 |-----------|--------------------------------------------------------------------------------------------------------|--------------|
-| host      | Environment URL, for example, https://platform.kore.ai                                               | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot.                        | string, required |
-| agentId   | The Agent Id of the particular agent whose details are being retrieved.                                 | string, required |
+| `host`      | Environment URL, for example, `https://platform.kore.ai`                                               | string, required |
+| `streamId`     | botId or streamId. You can get it from the App Settings page.                        | string, required |
+| `agentId`   | The Agent Id of the particular agent whose details are being retrieved.                                 | string, required |
 
 ## Sample Request
 
 ```
 curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}' \
-     --header 'auth: {jwt-code}' \
-      --header 'Content-Type: application/json' \
-      --data-raw '{
-    "emailId": "username@domain.com",
-    "firstName": "Amanda",
-    "lastName": "Jones",
-    "nickName": "Amanda",
-    "phoneNumber": 13456782xxx,
-    "profImage": "5ff2331231245454",
-    "agentGroupId": "ag-3234fsdf2131241xxxx",
+--header 'accept: application/json' \
+--header 'auth: <token>' \
+--header 'accountId: {{accountId}}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "firstName": "aug08",
+    "lastName": "agent1",
+    "fullName": "aug08 agent1",
+    "lFullName": "aug08 agent1",
+    "emailId": "aug08agent1@yopmail.com",
+    "nickName": "agent One",
+    "phoneNumber": "134567890982",
+    "userId": "u-4bd33510-057b-505b-820d-7de70816xxxx",
+    "accountId": "67654be356840f366e79xxxx",
+    "isAccountOwner": false,
+    "orgId": "o-7fc14025-8feb-5b1b-889d-4a689f9dxxxx",
+    "customId": "A..Zxyz09!'''()*+,-./:;<=>?@[]^_`{|}~2222212221212121219",
+    "agentGroups": [
+        {
+            "groupId": "ag-c57b602-151a-41c8-8630-a1eae433xxxx",
+            "role": "agent"
+        }
+    ],
     "canSupportChat": true,
-    "maxChatSupport": 5,
-    "canSupportVoice": true,
-    "roleId": "6ff233123124xxxx",
+    "canSupportCase": false,
+    "canSupportVoiceMail": false,
     "chatLanguageSupport": [
         {
             "language": "en",
@@ -42,73 +54,99 @@ curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{stre
             "isActive": true
         }
     ],
+    "canSupportVoice": true,
     "voiceLanguageSupport": [
         {
-            "language": "es",
+            "language": "en",
             "proficiency": "expert",
             "isActive": true
         }
     ],
-    "skills": [
-        {
-            "skillId": "s-21223123",
-            "proficiencyLevel": "expert",
-            "userId": "u-f9e37b9c-66d5-5525-9df1-da0edbeaxxxx",
-            "createdBy": "u-f9e37b9c-66d5-5525-9df1-da0edbeaxxxx",
-            "orgId": "o-cff7fba7-ebf6-5b01-81a3-42bd24faxxxx",
-            "accountId": "62cd37c6f35860734283xxxx",
-            "id": "62cd41c87e03db7067180d63",
-            "name": "Default Skill",
-            "skillGroupName": "Default SkillGroup",
-            "skillGroupColor": "#D2000D"
-        }
-    ],
+    "attachmentsEnabled": true,
+    "emojisEnabled": true,
+    "createdBy": "u-e454bed4-1f28-5a19-83bb-b29cc237xxxx",
+    "status": "ACTIVE",
+    "roleId": "67654be356840f366e79xxxx",
+    "iId": "st-ceb5fb14-37eb-54a8-a32d-1d751c10xxxx",
+    "createdByAId": "a-ca6a70e-32d3-43bb-b7ee-d29995a0xxxx",
     "desktopLayouts": [
         {
-            "id": "ly-de35d82-7323-4420-b893-c35b5175xxxx",
+            "id": "ly-c118776-315a-4b36-a0dc-00010296xxxx",
             "isDefault": true
         }
     ],
-    "queues": [
-        {
-            "id": "qu-80ac056-57db-420b-b937-9581dd20xxxx",
-            "isPreferredAgent": true
-        }
-    ],
-    "createDefaultLayoutAndAssign": true
-  }'
+    "maxDigitalChatSupport": 5,
+    "maxEmailChatSupport": 5,
+    "maxMessagingChatSupport": 5,
+    "markedAutoAway": false,
+    "dAgentGroups": [],
+    "caseLanguageSupport": [],
+    "lastOnlineAt": "2025-08-05T06:42:06.414Z",
+    "voiceSupport": [],
+    "createdAt": "2025-08-05T06:42:06.414Z",
+    "updatedAt": "2025-08-05T06:42:06.414Z",
+    "id": "a-5892576-bb12-461b-a58a-637d1d21xxxx",
+    "agentGroupId": "ag-c57b602-151a-41c8-8630-a1eae433xxxx",
+    "queues": [],
+    "skills": []
+}'
 ```
 
 ## Body Parameters
 
-| **Parameter**              | **Description**                                                                                                     | **Type**          |
-|------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|
-| emaiId                 | The Email Id of the agent. Example: adfa@adfa.com                                                               | email, required |
-| firstName              | The First Name of the agent up to 50 characters long.                                                           | string, required |
-| lastName               | The Last Name of the agent up to 50 characters long.                                                            | string, required |
-| nickName               | The Nick Name of the agent up to 50 characters long.                                                            | string, optional |
-| phoneNumber            | The Phone number of the agent.                                                                                  | string, required |
-| profImage              | The File id of the profile image to be set.                                                                     | string, optional |
-| agentGroupId           | The Id of the agent group, which you can find with [GET /agent-groups](../contact-center/get-all-agent-groups.md). Example: ag-3234fsdf21312412123 | string, optional |
-| canSupportChat         | It tells whether the agent supports chat.                                                                       | boolean, optional |
-| canSupportVoice        | It tells whether the agent can support the voice chat.                                                          | boolean, optional |
-| maxChatSupport         | It tells how many chats the agent can handle at a time.                                                          | number, optional |
-| voiceLanguageSupport   | An Array of Objects with the following details                                                                  | required      |
-| language               | The Language supported. Example: en/es                                                                           | string, required |
-| proficiency            | The Proficiency level can be: expert, novice, average, good. Example: ‘expert’                                  | string, required |
-| isActive               | It tells whether this support is active.                                                                         | boolean, optional |
-| chatLanguageSupport    | An Array of Objects with the following details                                                                  | required      |
-| language               | The Language supported. Example: en/es                                                                           | string, required |
-| proficiency            | The Proficiency level can be: expert, novice, average, good. Example: ‘expert’                                  | string, required |
-| isActive               | It tells whether this support is active.                                                                         | boolean, optional |
-| skills                 | Array of Objects, which you can find with [GET /skills](../contact-center/get-a-skill-group.md). It contains the following details | required      |
-| skillId                | The Skill Id. Example: s-21223123                                                                               | string, required |
-| proficiencyLevel       | The Proficiency level can be: expert, novice, average, good Example: ‘expert’                                   | string, required |
-| roleId                 | The Role id which you can find with GET /roles. Example:633edb2bfa0ecc1192c62190                                | string, optional |
-| desktopLayouts         | Array of Objects which you can find with GET /layouts. It contains the following details                         | optional      |
-| id                     | The desktop Layout Id. Example: ly-de35d82-7323-4420-b893-c35b5175c6c6                                           | string, optional |
-| isPreferredAgent       | It tells whether this is a preferred agent.                                                                     | boolean, optional |
-| createDefaultLayoutAndAssign | It tells whether to create and assign the default layout.                                                      | boolean, optional |
+| **Parameter**                          | **Description**                                                                | **Type**                        |
+|------------------------------------|----------------------------------------------------------------------------|-----------------------------|
+| `firstName`                        | First name of the agent.                                                   | string, required            |
+| `lastName`                         | Last name of the agent.                                                    | string, required            |
+| `fullName`                         | Full name of the agent (first name + last name).                           | string, optional            |
+| `lFullName`                        | Localized full name of the agent.                                          | string, optional            |
+| `emailId`                          | Email address of the agent. Must be unique.                                | string, required            |
+| `nickName`                         | Nickname of the agent.                                                     | string, optional            |
+| `phoneNumber`                      | Contact number of the agent.                                               | string, optional            |
+| `userId`                           | Unique user identifier assigned to the agent.                              | string, required            |
+| `accountId`                        | Unique identifier of the account.                                          | string, required            |
+| `isAccountOwner`                   | Indicates if the agent is the account owner.                               | boolean, optional           |
+| `orgId`                            | Identifier for the organization.                                           | string, required            |
+| `customId`                         | Custom identifier for the agent. Supports special characters except space. | string, optional            |
+| `agentGroups`                      | List of agent groups and roles assigned.                                   | array of Objects, optional  |
+| `agentGroups.groupId`              | Unique identifier of the agent group.                                      | string, required            |
+| `agentGroups.role`                 | Role of the agent within the group.                                        | string, required            |
+| `canSupportChat`                   | Defines if the agent can handle chat interactions.                         | boolean, optional           |
+| `canSupportCase`                   | Defines if the agent can handle case interactions.                         | boolean, optional           |
+| `canSupportVoiceMail`              | Defines if the agent can handle voice mails.                               | boolean, optional           |
+| `chatLanguageSupport`              | List of languages and proficiency levels supported for chat.               | array of Objects, optional  |
+| `chatLanguageSupport.language`     | Language code (for example, `"en"`).                                       | string, required            |
+| `chatLanguageSupport.proficiency`  | Proficiency level in the language.                                         | string, required            |
+| `chatLanguageSupport.isActive`     | Indicates if the language is active.                                       | boolean, optional           |
+| `canSupportVoice`                  | Defines if the agent can handle voice interactions.                        | boolean, optional           |
+| `voiceLanguageSupport`             | List of languages and proficiency levels supported for voice.              | array of Objects, optional  |
+| `voiceLanguageSupport.language`    | Language code (for example, `"en"`).                                       | string, required            |
+| `voiceLanguageSupport.proficiency` | Proficiency level in the language.                                         | string, required            |
+| `voiceLanguageSupport.isActive`    | Indicates if the language is active.                                       | boolean, optional           |
+| `attachmentsEnabled`               | Defines if the agent can send/receive attachments.                         | boolean, optional           |
+| `emojisEnabled`                    | Defines if the agent can use emojis.                                       | boolean, optional           |
+| `createdBy`                        | Identifier of the user who created the agent record.                       | string, optional            |
+| `status`                           | Current status of the agent (for example, `ACTIVE`).                       | string, Optional            |
+| `roleId`                           | Identifier for the role assigned to the agent.                             | string, required            |
+| `iId`                              | Instance identifier of the agent.                                          | string, required            |
+| `createdByAId`                     | Identifier of the admin who created the agent record.                      | string, optional            |
+| `desktopLayouts`                   | List of desktop layouts assigned to the agent.                             | array of Objects, optional  |
+| `desktopLayouts.id`                | Identifier of the desktop layout.                                          | string, required            |
+| `desktopLayouts.isDefault`         | Defines if the layout is the default.                                      | boolean, optional           |
+| `maxDigitalChatSupport`            | Maximum number of simultaneous digital chats supported.                    | integer, optional           |
+| `maxEmailChatSupport`              | Maximum number of simultaneous email chats supported.                      | integer, optional           |
+| `maxMessagingChatSupport`          | Maximum number of simultaneous messaging chats supported.                  | integer, optional           |
+| `markedAutoAway`                   | Indicates if the agent is auto-marked away.                                | boolean, optional           |
+| `dAgentGroups`                     | Deprecated/unused agent groups.                                            | array, optional             |
+| `caseLanguageSupport`              | List of supported languages for case handling.                             | array, optional             |
+| `lastOnlineAt`                     | Timestamp of when the agent was last online (ISO 8601).                               | string, optional |
+| `voiceSupport`                     | List of voice support configurations.                                      | array, optional             |
+| `createdAt`                        | Timestamp when the agent record was created (ISO 8601).                               | string, optional |
+| `updatedAt`                        | Timestamp when the agent record was last updated (ISO 8601).                          | string, optional |
+| `id`                               | Unique identifier of the agent.                                            | string, required            |
+| `agentGroupId`                     | Identifier of the default agent group.                                     | string, required            |
+| `queues`                           | List of queues assigned to the agent.                                      | array, optional             |
+| `skills`                           | List of skills assigned to the agent.                                      | array, optional             |
 
 ## Sample Response
 

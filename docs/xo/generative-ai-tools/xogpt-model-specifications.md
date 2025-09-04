@@ -1,10 +1,5 @@
 
-
-
-
 # Kore.ai XO GPT Model Specification
-
-<br>
 
 ## XO GPT Model - Live Versions
 
@@ -12,17 +7,21 @@ The following XO GPT Live Models are available for various supported features.
 
 | XO GPT Model                  | Supported Feature            | Model Version | Base Model            | Languages Supported                      | Deployed Region | Deployment Date |
 |-------------------------------|------------------------------|---------------|-----------------------|------------------------------------------|-----------------|-----------------|
-| Answer Generation Model       | Answer Generation            | [Version 2.0](../generative-ai-tools/xogpt-answer-generation-model.md#version-20)   | Llama 3.1 8B Instruct | English                                  | US <br><br>   DE   <br><br> EU         | 9th Dec 2024 <br>  9th Dec 2024 <br> 9th Dec 2024   |
-| Conversation Summarization Model | Conversation Summarization | [Version 2.0](../generative-ai-tools/xogpt-conversation-summarization-model.md#version-20)   | Mistral 7B Instruct v0.2 | English, French, Spanish, German, Japanese, Turkish |  US <br><br>   DE   <br><br> JP  | 19th Dec 2024 <br> 20th Dec 2024 <br> 20th Dec 2024 ||                             
+| Answer Generation Model       | Answer Generation            | [Version 3.0](../generative-ai-tools/xogpt-answer-generation-model.md#version-30)   | Llama 3.1 8B Instruct | English, French,  German, Japanese, Polish, Spanish,  | US <br><br>   DE   <br><br> EU         | 6th May 2025 <br>  6th May 2025 <br> 6th May 2025   |
+| Conversation Summarization Model | Conversation Summarization | [Version 2.0](../generative-ai-tools/xogpt-conversation-summarization-model.md#version-20)   | Mistral 7B Instruct v0.2 | English, French, German, Japanese, Polish, Simplified Chinese, Spanish, Traditional Chinese, Turkish |  US <br><br>   DE    | 23th Sep 2025<br>23th Sep 2025|
+| Conversation Summarization Model |Conversation Summarization | [Version 2.0](../generative-ai-tools/xogpt-conversation-summarization-model.md#version-20)   | Mistral 7B Instruct v0.2  | English, French, German, Japanese, Polish, Simplified Chinese, Spanish, Traditional Chinese, Turkish |  JP  | 20th Dec 2024 ||                             
 | Response Rephrasing Model     | Rephrase Dialog Responses    | [Version 1.0](../generative-ai-tools/xogpt-response-rephrasing-model.md#version-10)   | Mistral 7B Instruct v0.2 | English                                  |  US <br><br>   DE             | 1st Jun 2024 <br>   3rd Sep 2024    |
 | User Query Paraphrasing Model | Rephrase User Query          | [Version 1.0](../generative-ai-tools/xogpt-user-query-paraphrasing-model.md#version-10)   | Mistral 7B Instruct v0.2 | English                                  |  US <br><br>   DE              | 1st Jun 2024 <br>   3rd Sep 2024     |
+|DialogGPT Model |DialogGPT - Conversation Orchestration| [Version 1.1](xogpt-dialoggpt-model.md) |Llama-3.1-8B-Instruct|English, French, German, Japanese, Polish, Spanish| US <br><br> DE | 26th May, 2025 <br> 26th May, 2025|
+
+
 
 
 ## XO GPT - Model Building Process
 
 The model-building process consists of several key stages that form the backbone of AI system development.
 
-<img src="./images/answer04.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer04.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
 ### Data Collection
 
@@ -45,12 +44,12 @@ The training data for fine-tuning and evaluating the model is created using the 
 
 The training data consists of multiple samples for **each language** across various categories and use cases. Subsequent sections of this document provide more details about the model's accuracy for different use categories. 
 
-The complete training data is versioned and available in Kore.ai’s XO GPT Data Repository. This data is proprietary to Kore.ai. Access to it is restricted to Kore.ai and can be made available to specific customers/partners/prospects only if needed.   
+The complete training data is versioned and available in Kore.ai’s XO GPT Data Repository. This data is proprietary to Kore.ai. Access to It's restricted to Kore.ai and can be made available to specific customers/partners/prospects only if needed.   
 
 
 ### Data Processing
 
-Once the data is collected, it is cleaned to 
+Once the data is collected, It's cleaned to 
 
 * Remove any irrelevant or noisy content 
 * Standardizing formats 
@@ -86,10 +85,11 @@ While internal testing shows strong performance, real-world results may vary due
 
 ### Model Benchmarks
 
-This section highlights the features, updates, and changes that vary between different versions of the XO GPT Model. It provides version-specific information that can help identify what is unique to each version. 
+This section highlights the features, updates, and changes that vary between different versions of the XO GPT Model. It provides version-specific information that can help identify what's unique to each version. 
 
 * To view the Answer Generation Model benchmarking details, click [here](../generative-ai-tools/xogpt-answer-generation-model.md).
 * To view the Conversation Summary Model benchmarking details, click [here](../generative-ai-tools/xogpt-conversation-summarization-model.md).
+* To view the DialogGPT Model benchmarking details, click [here](xogpt-dialoggpt-model.md).
 * To view the Response Rephrasing Model benchmarking details, click [here](../generative-ai-tools/xogpt-response-rephrasing-model.md).
 * To view the User Query Paraphrasing Model benchmarking details, click [here](../generative-ai-tools/xogpt-user-query-paraphrasing-model.md).
 
@@ -101,7 +101,7 @@ The model is regularly reviewed, updated, and retrained to stay effective and re
 
 #### Model Expansion
 
-* **Multilingual Proficiency**: New languages beyond English, French, Spanish, Japanese, Turkish, and German will be introduced as Beta models and refined through expert feedback.
+* **Multilingual Proficiency**: New languages beyond English, French, Spanish, Japanese, Turkish, and German will be introduced and refined through expert feedback.
 * **New Summary Templates**: Custom templates like Stepwise and PRA (Problem-Resolution-Action) will be developed on demand.
 
 Executing the roadmap depends on adapting to technological advancements and market demands and overcoming potential challenges in priorities and implementation.

@@ -2,7 +2,7 @@
 
 # Multiple Phone Numbers Support in the WhatsApp Channel
 
-The platform now supports virtual assistant responses via WhatsApp to the incoming messages for **Infobip** from multiple phone numbers. The virtual assistant responds only to all the relevant source phone numbers rather than a universal number.
+The platform now supports AI Agent responses via WhatsApp to the incoming messages for **Infobip** from multiple phone numbers. The AI Agent responds only to all the relevant source phone numbers rather than a universal number.
 
 !!! important
 
@@ -25,7 +25,7 @@ The platform now supports virtual assistant responses via WhatsApp to the incomi
 
 ## Adding a Phone Number
 
-To add a new phone number on the Kore.ai XO Platform to message via WhatsApp for Infobip, follow the steps below:
+To add a new phone number on the Kore.ai Platform to message via WhatsApp for Infobip, follow the steps below:
 
 
 

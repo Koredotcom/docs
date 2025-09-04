@@ -3,7 +3,7 @@
 Response Templates are predefined (“canned”) messages that agents can use to speed up their delivery of information during customer interactions: welcome messages, salutations, notifications, and more. Response Templates are organized into groups and may be assigned to agents according to skills or agent groups.
 
 To access this feature, go to **Contact Center AI** > **CONFIGURATIONS** > **Response Templates**.
-<img src="../images/response-templates-page.png" alt="
+<img src="../images/response templates.png" alt="
 Response Templates Page" title="Response Templates Page" style="border: 1px solid gray; zoom:80%;">
 
 ## The Response Templates Live Board
@@ -43,12 +43,12 @@ To create a **Response Group**, follow these steps:
 Add Response Group" title="Add Response Group" style="border: 1px solid gray; zoom:80%;">
 
 3. In the **Add New Response Group** panel, provide the following details:
-<img src="../images/add-new-response-group-window.png" alt="
-Add New Response Group Window" title="Add New Response Group Window" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/create-new-response-group.png" alt="
+Add New Response Group Window" title="Add New Response Group Window" style="border: 1px solid gray; zoom:70%;">
     1. **Group Name** – The name of your **response group**. For example, _Greetings, Sales Responses_, etc.
     2. **Shortcut Command** – Agents can quickly find the group of responses by typing the shortcut command in their chat response box. This action pulls up a list of available responses within the group.
     <img src="../images/response-template-live-interaction.gif" alt="
-Shortcut Command Usage" title="Shortcut Command Usage" style="border: 1px solid gray; zoom:80%;">
+Live Interaction" title="Live Interaction" style="border: 1px solid gray; zoom:80%;">
     3. **Description** – A brief description of the response group.
     4. **Skill Match** – By default, this feature is disabled. While _Skill Match_ is off at the group level, you can map skills per response. If you enable this feature, all the responses in this group will be mapped to the selected skills and made available to matching agents. Therefore, the group and its responses within it will not be made available to agents who are not assigned the mapped skills. The skill match does not take routing into account, so if an agent matches the skills but, for example, is transferred a conversation from an agent with a different skill set, they will still see the responses.
         1. Configure the **OR/AND** conditional logic by toggling between the tabs.
@@ -63,15 +63,19 @@ Shortcut Command Usage" title="Shortcut Command Usage" style="border: 1px solid 
                 You cannot restore deleted conditions.
             6. Below is a short demo of this configuration:
             <img src="../images/add-skills-to-response-group.gif" alt="
-Shortcut Command Usage" title="Shortcut Command Usage" style="border: 1px solid gray; zoom:90%;">
+Add Skills" title="add Skills" style="border: 1px solid gray; zoom:80%;">
 
         2. **Agent Group Match** – This option is disabled by default. When enabled, all the responses in this group appear only to member agents. The **agent** group matching property at each skill level is not available.
-        <img src="../images/agent-group-match.png" alt="
-Shortcut Command Usage" title="Shortcut Command Usage" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/agent-group-matching.png" alt="
+Agent Group Match" title="Agent Group Match" style="border: 1px solid gray; zoom:80%;">
+
+        3. **Queue Match** - When Queue Match is enabled, administrators can select one or more queues from a dropdown, and the response group becomes visible only to agents handling interactions from those queues.  
+        <img src="../images/queue-match.png" alt="
+Queue Match" title="Queue Match" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
-    You can enable Skill Match and Agent Group Match, and the responses within the Response Group will display to agents within the selected Groups who match selected skills.
+    When Skill Match, Agent Group Match, and Queue Match are all enabled, a response appears only if the agent meets all three configured conditions.
 
 ### Edit a Response Group
 
@@ -106,16 +110,38 @@ Delete a Response" title="Delete a Response" style="border: 1px solid gray; zoom
 To create a new response within a response group, follow these steps:
 
 1. Under **Response Templates**, click the desired response group entry in the list to view the mapped responses.
-2. Click **+ New Response**.
+2. Click **+ New Response**.  
 <img src="../images/add-new-response.png" alt="Add New Response" title="Add New Response" style="border: 1px solid gray; zoom:80%;">
 
 3. In the **Add New Response** panel, set the title (name) and the auto-expire values.
     1. **Title**: The name to identify the response.
     2. **Auto Expire**: Select **Never** if you don’t want the response to expire. Otherwise, select a **Custom Date** to set the end date and time from the calendar when the response automatically stops appearing.
-4. Set the following options under **Chat Response** and **Email Response**:
-    3. **Response shown to agents**: To set the response message for agents, enter the message text in the editor, select any required **Variables** from the list to auto-insert into the message (optional), and click **Done**.
-    4. **Skill Match and Agent Group Match**: The agent skill or group match configured for the response group applies here and is uneditable if you have matched skills or groups to the response group. If skills, groups, or both have been left disabled at the group level, then you can set them at the response level (for email and chat). The process is the same for the group-level skill and group match, explained above.
-    <img src="../images/response-template-variables.png" alt="Response Template Variables" title="Response Template Variables" style="border: 1px solid gray; zoom:80%;">
+
+    **Chat Response**
+
+    1. Select the Chat Response tab and click the text editor to add the response.
+    2. Click **Done**.  
+        <img src="../images/chat-response.png" alt="Chat Response" title="Chat Response" style="border: 1px solid gray; zoom:70%;">
+    
+    **Email Response**
+
+    1. Select the Email Response tab and click the text editor to add the response.
+    2. You can create the template in plain text, using variables, or HTML/CSS code.
+    3. Click **Done**.  
+        **Text Editor**  
+        <img src="../images/email-response.png" alt="Email Response" title="Email Response" style="border: 1px solid gray; zoom:70%;">
+
+        **Code Editor**   
+
+        <img src="../images/email-response-html.png" alt="Code Editor" title="Code Editor" style="border: 1px solid gray; zoom:70%;">  
+        
+    4. Click **+ Add Subject** and enter a subject for the email in the text editor.
+    5. Click **Done**.  
+        <img src="../images/subject.png" alt="Subject" title="Subject" style="border: 1px solid gray; zoom:70%;">  
+
+    !!! Note
+
+        Response group matching can be done at the group level only.
 
 5. Click **Create** when ready.
 
@@ -161,3 +187,15 @@ To delete a response, follow these steps:
 !!! Note
 
     You cannot restore deleted Response Templates. Agents will no longer see deleted responses in the console. Please proceed with caution.
+
+## Export Standard Responses
+
+Export standard responses functionality is a secure and efficient method to export standard responses for compliance and validation. A bulk export mechanism enables Administrators and Supervisors to export responses in bulk, eliminating manual copy-pasting. It supports compliance teams in efficient review and validation while ensuring controlled access by restricting export capabilities to authorized users.
+
+Steps to export standard responses in bulk:
+
+1. Click Download Response Templates.  
+    <img src="../images/download-button.png" alt="Download Button" title="Download Button" style="border: 1px solid gray; zoom:80%;">
+
+2. A notification is displayed, and the response templates are downloaded as a CSV file.
+    <img src="../images/download-success.png" alt="Download Success" title="Download Success" style="border: 1px solid gray; zoom:80%;">

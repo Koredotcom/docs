@@ -2,7 +2,7 @@
 
 The **Confirmation Node** allows you to prompt the user for a _Yes_ or _No_ answer.  It helps when you want to verify information or allow the user to make a choice.
 
-For example, in the _Book Flight Bot,_ you can use a confirmation node to prompt the user to respond if they would like to know the weather forecast at the destination.
+For example, in the _Book Flight App,_ you can use a confirmation node to prompt the user to respond if they would like to know the weather forecast at the destination.
 
 The confirmation node’s conditional transitions go beyond the _If-Else_ expressions. The transition depends on user reply: assertion (yes) or negation (no). The _Else_ condition comes into play if their answer isn’t both.
 
@@ -12,7 +12,7 @@ The confirmation node’s conditional transitions go beyond the _If-Else_ expres
 Setting up a confirmation node in a dialog task involves the following steps:
 
 1. Open the dialog task to which you want to add the Confirmation node.
-2. Add a Confirmation node in the designated place. For steps related to adding nodes, [Learn more](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+2. Add a Confirmation node in the designated place. For steps related to adding nodes, [Learn more](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
 
     !!! note
 
@@ -33,7 +33,7 @@ Setting up a confirmation node in a dialog task involves the following steps:
 To configure the component properties, follow the below steps:
 
 1. On the **Component Properties** tab, enter a **Name** and a **Display Name**.
-2. Under the **User Prompts** section, you can compose the confirmation request either as plain text or as a JavaScript message.center channel-specific messages for User Prompts using the **Manage** link. For more information, refer to the [Using the Prompt Editor](../../prompt-editor/){:target="_blank"} article.
+2. Under the **User Prompts** section, you can compose the confirmation request either as plain text or as a JavaScript message.center channel-specific messages for User Prompts using the **Manage** link. For more information, refer to the [Using the Prompt Editor](../prompt-editor.md){:target="_blank"} article.
     1. To add more prompts , click **Add a Prompt** and repeat the above steps.
     2. Enable the channel-specific standard formatting to **Display Confirmation Options.**  
     If this is not enabled, the yes/no options will not be displayed to the end-user.
@@ -47,17 +47,8 @@ To configure the component properties, follow the below steps:
 
         In both cases, “&lt;” means the start of the sentence and “>” means the end of the sentence.  Many of these words are only treated as a _yes_ or _no_ if they appear at the start or the end of an utterance, not in the middle.
 
-3. You can use **Rephrase Responses** to rewrite VA replies using AI based on conversation context and user emotions. For Confirmation nodes, this feature helps rephrase the responses entered under _User Prompts_. To see this feature in your node’s Component Properties, enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#rephrase-dialog-responses){:target="_blank"}. By default, this feature is disabled for each node. Turn on the toggle to enable Rephrase Responses.
-Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. **The default settings work fine for most cases**. However, if required, you can tweak the settings and find the right balance for your use case.
-    
-    <img src="../images/confirmation-node-img2-rephrase-response.png" alt="Confirmation node - Rephrase Responses" title="Confirmation node - Rephrase Responses" style="border:1px solid gray;zoom:70%;">
-    
-    * **Model**: The default model for which the settings are displayed. You can choose another supported mode if it’s configured. If you select a non-default model, it’s used for this node only. If you want to change the default model, you can select the model in the drop-down list and use the **Mark Default** option shown next to its name.
-    * **No of previous user inputs**: Configure the **number of previous user inputs** to define  how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
-    * **Additional Instruction**: Add a brief description of the use case context to guide the model.
-    * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
-    * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.
-    * **Fallback Behaviour**: If the rephrase response fails, use the original user query. 
+3. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
+<img src="../images/re-responses.png" alt="Rephrase Responses" title="Rephrase Responses" style="border:1px solid gray;zoom:70%;"> 
 
 
 4. Add context-specific **Synonyms** for _Yes_ and _No_ within the Confirmation node to suit the dialog’s context. The Platform can identify the emojis in user utterance and consider them for confirmation/rejection, for example, a thumbs-up emoji will be taken to mean confirmation from the user.
@@ -68,13 +59,13 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
     
         The Platform now supports additional Synonyms for Traditional Chinese language for Yes/No confirmation. [Learn more](#additional-synonyms-for-traditional-chinese-language).
 
-5. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the **Variable Namespace** is enabled for the assistant you are working with. You can go with the task level settings or customize it for this node. For more information, refer to the [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"} article.
+5. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the **Variable Namespace** is enabled for the assistant you are working with. You can go with the task level settings or customize it for this node. For more information, refer to the [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"} article.
     
     <img src="../images/confirmation-node-img4-associate-variable-namespace.png" alt="Confirmation node - Associate variable namespace" title="Confirmation node - Associate variable namespace" style="border:1px solid gray;zoom:70%;">
 
     !!! note
 
-        This section will be visible only if you enable Variable Namespace in [App Profile](../../../../../app-settings/app-profile/).
+        This section will be visible only if you enable Variable Namespace in [App Profile](../../../../app-settings/app-profile.md).
 
 
 #### Additional Synonyms for Traditional Chinese Language
@@ -109,21 +100,25 @@ After detecting these additional synonyms, the **Confirmation** node extracts �
     
         The settings in the **Instance Properties** tab are specific to the current task and do not reflect in other dialog tasks that use this node
     
-    1. **Use the task level ‘Interruptions Behavior’ setting**: The VA refers to the Interruptions Behavior settings set at the dialog task level.
-    2. **Customize for this node option:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it. For more information refer to the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article.
+    1. **Use the task level ‘Interruptions Behavior’ setting**: The AI Agent refers to the Interruptions Behavior settings set at the dialog task level.
+    2. **Customize for this node option:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it. For more information refer to the [Interruption Handling and Context Switching](../../../intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article.
+    
+3. **Analytics-Containment Type:** Select one of the below options to determine how to treat user-abandoned conversations.
+    1. **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
+    2. **Customize for this node:** You can customize the Containment Type for this node by selecting this option. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
 
-3. Under the **Precedence** section, when the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between _Intent over Entity_ or _Entity over Intent_ options. For example, if a _Flight Booking_ assistant prompts for the destination and the user enters, _Bangalore, how’s the weather there?_ you can define how the bot responds in such cases; pick the entity and add the intent to the follow-up intents stack or go ahead with the intent first based upon the **Interruptions Behavior** settings.
+3. Under the **Precedence** section, when the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between _Intent over Entity_ or _Entity over Intent_ options. For example, if a _Flight Booking_ assistant prompts for the destination and the user enters, _Bangalore, how’s the weather there?_ you can define how the AI Agent responds in such cases; pick the entity and add the intent to the follow-up intents stack or go ahead with the intent first based upon the **Interruptions Behavior** settings.
     
     <img src="../images/confirmation-node-img6-precedence.png" alt="Confirmaiton node - Precedence" title="Confirmaiton node - Precedence" style="border:1px solid gray;zoom:70%;">
 
-4. Under the **Custom Tags** section, add tags to build custom profiles of your VA conversations. [Learn more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+4. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent conversations. [Learn more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
     
     <img src="../images/confirmation-node-img7-custom-tags.png" alt="Confirmation node - Custom tags" title="Confirmation node - Custom tags" style="border:1px solid gray;zoom:70%;">
 
 
 ### IVR Properties
 
-Use  the **IVR properties** tab on the Confirmation Node to define the initial prompts, timeout prompts, no match prompts, and error prompts with customization for the retries behavior, input mode, grammar settings for Global and Node level use cases, prompts, and call behavior parameters for this node to use in IVR Channel. These settings are defined at the Confirmation Node level. For more information, read the [Voice Call Properties](../../../../../channels/call-properties){:target="_blank"} article.
+Use  the **IVR properties** tab on the Confirmation Node to define the initial prompts, timeout prompts, no match prompts, and error prompts with customization for the retries behavior, input mode, grammar settings for Global and Node level use cases, prompts, and call behavior parameters for this node to use in IVR Channel. These settings are defined at the Confirmation Node level. For more information, read the [Voice Call Properties](../node-types/voice-call-properties.md){:target="_blank"} article.
 
 !!! Note
 
@@ -144,7 +139,7 @@ The Confirmation node’s conditional transitions go beyond the If-Else expressi
 
     These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
 
-For details on how to work with connection conditions,  read the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} article.
+For details on how to work with connection conditions,  read the [Adding IF-Else Conditions to Node Connections](../node-connections/nodes-conditions.md){:target="_blank"} article.
 
 <img src="../images/confirmation-node-img9-connection-properties.png" alt="Confirmation node - Connection properties" title="Confirmaiton node - Connection properties" style="border:1px solid gray;zoom:70%;">
 

@@ -14,13 +14,13 @@ After you sign in, you are directed to the landing page, which is, essentially, 
 
 The top menu available on the landing page provides access to the following options:
 
-1. **Data** – Define Data Tables, Table Views, and manipulate them from your Virtual Assistants and Process Apps. Thus taking care of your data needs, without having to depend on external services.
+1. **Data** – Define Data Tables, Table Views, and manipulate them from your agents and Process Apps. Thus taking care of your data needs, without having to depend on external services.
 2. **Help** – Find useful resources and support methods to help you develop your App.
 3. **Invite Users** – You can invite members to collaborate on the App creation journey.
 4. **Account Switcher** – If you are part of more than one organization, you can switch between accounts.
 5. **Profile** - Access the profile section, which allows you to reach the following features:
     * **Manage Profile** - View and edit your profile.
-    * **App Language** - Allows users to switch between supported languages like English, Japanese, and Korean for all user interface elements and content.
+    * **App Language** - Allows users to switch between supported languages like English, Japanese, German, and Korean for all user interface elements and content.
     * **Admin Console** – Access the Admin Console only if you are an Administrator. This is where you can manage your account and associated assets.
     * **Logout**.
 
@@ -38,9 +38,14 @@ Within this area, you can:
 * Toggle between _Tile View_ or _List View_.
 * Create a New App or import an existing App.
 
+!!!note
+
+    By default, only three apps are displayed in the app list. To find a specific app, click "View All" or enter the app name in the search bar.
+
+
 ## Explore The XO Platform
 
-The following sections describe the menu options that are available once you open any virtual assistant from your account.
+The following sections describe the menu options that are available once you open any AI Agent from your account.
 
 ### The Top Menu
 
@@ -52,7 +57,7 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 
     <img src="../images/ntp(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
-2. **App dropdown list** Lets you switch between the various versions of the current virtual assistant. You can also search and switch to any virtual assistant within your account.
+2. **App dropdown list** Lets you switch between the various versions of the current agent. You can also search and switch to any agent within your account.
 3. **Status Docker** icon.
 4. **Language** icon to switch the App's language.
 5. **Search** for a feature or menu item.
@@ -82,4 +87,4 @@ The left navigation of common features of the XO Platform are as follows.
 | User Management | Deploy | Billing | Settings | Marketplace |
 | --- | --- | --- | --- | --- |
 | ![image_tooltip](./images/ntp(14).png "image_tooltip") | ![image_tooltip](./images/ntp(15).png "image_tooltip") | ![image_tooltip](./images/ntp(16).png "image_tooltip") | ![image_tooltip](./images/ntp(17).png "image_tooltip") | ![image_tooltip](./images/ntp(18).png "image_tooltip") |
-| [Learn about User Management ](./../administration/user-management/managing-your-users.md) | [Learn about Deployment](./../deploy/bot-versioning.md) | [Learn about Billing](./../administration/billing.md) | [Learn about Settings](./../app-settings/app-profile.md) | [Learn about Marketplace](./../app-settings/integrations/actions/marketplace.md) |
+| [Learn about User Management ](./../user-management/manage-users.md) | [Learn about Deployment](./../deploy/bot-versioning.md) | [Learn about Billing](./../administration/billing.md) | [Learn about Settings](./../app-settings/app-profile.md) | [Learn about Marketplace](./../app-settings/integrations/actions/marketplace.md) |

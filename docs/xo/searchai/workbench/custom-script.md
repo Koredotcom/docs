@@ -12,7 +12,7 @@ Use the following properties to configure this stage.
 * **Condition**: Define a condition for selecting the documents. Use the basic or script mode to define the condition. You can define any number of conditions with the AND operator between the conditions to find the exact set of data to be excluded. For example, if you want to process only file content, use the following script as the condition.
 
 ```javascript
-if(ctx.sys_content_type.equals("file"))
+if(context.sys_content_type.equals("file"))
 { 
   return true;
 }
@@ -27,12 +27,12 @@ else
 
 ```javascript
 int temp_total_pages = 0;
-if(ctx.file_content_obj != null){
-  for (def item: ctx.file_content_obj) {
+if(context.file_content_obj != null){
+  for (def item: context.file_content_obj) {
     if (item!="") {
        temp_total_pages = temp_total_pages+1;
       }
   }
 }
-ctx.total_pages = temp_total_pages;
+context.total_pages = temp_total_pages;
 ```

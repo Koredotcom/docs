@@ -1,6 +1,6 @@
 # Inviting Users
 
-You can use the **Invite** page to send join invitations to members of your organization. This is helpful if you have a few members to invite, for example, between one and ten. If you have many users to invite, you can [send bulk invitations](../enrolling-many-users/){:target="_blank} to join Kore.ai using a predefined list of members.
+You can use the **Invite** page to send join invitations to members of your organization. This is helpful if you have a few members to invite, for example, between one and ten. If you have many users to invite, you can [send bulk invitations](enrolling-many-users.md){:target="_blank} to join Kore.ai using a predefined list of members.
 
 <img src="../images/inviting-users-img1.png" alt="Inviting Users" title="Inviting Users" style="border: 1px solid gray;zoom:70%;"/>
 

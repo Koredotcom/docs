@@ -1,6 +1,6 @@
 # Email
 
-Email is a communication channel through which customers can send inquiries, feedback, or requests to the customer service team for resolution or assistance. It allows for asynchronous communication, maintains a record of interactions, and efficiently handles customer inquiries. By adding the email channel to your Virtual Assistant (VA), end users can interact with it using any standard email client, such as *Microsoft Outlook* or *Yahoo*.
+Email is a communication channel through which customers can send inquiries, feedback, or requests to the customer service team for resolution or assistance. It allows for asynchronous communication, maintains a record of interactions, and efficiently handles customer inquiries. By adding the email channel to your AI Agent, end users can interact with it using any standard email client, such as *Microsoft Outlook* or *Yahoo*.
 
 The email channel offers the following functionalities:
 
@@ -22,7 +22,7 @@ Contact centers need to enable forwarding to the email address configured in the
 
 With the capabilities of the experience flow, we can efficiently route incoming emails to appropriate agents, analyze customer intents, execute automation, and more. This streamlined process ensures that each customer query is addressed promptly and accurately.
 
-Any reply email managed by either the agent or the bot is directly sent to the end customer. To maintain transparency and accountability, the customer contact center domain is included in the BCC (Blind Carbon Copy) field and the Reply-to field. This configuration ensures that communication remains open and accessible to all relevant parties.
+Any reply email managed by either the Human Agent or the AI Agent is directly sent to the end customer. To maintain transparency and accountability, the customer contact center domain is included in the BCC (Blind Carbon Copy) field and the Reply-to field. This configuration ensures that communication remains open and accessible to all relevant parties.
 
 Whenever the customer responds to the email thread, it is directed back to the customer contact center domain. From there, it is seamlessly forwarded to the Kore domain, ensuring a continuous and efficient communication loop.  
 <img src="../images/email-flow.png" alt="Email Flow" title="Email Flow" style="border: 1px solid gray; zoom:80%;">
@@ -53,23 +53,11 @@ Steps to create an email address in the Kore domain:
 
 3. Click **Save.**
 4. A success message is displayed and the email address is created.  
-    <img src="../images/kore-email-created.png" alt="Email Address Created" title="Email Address Created" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/kore-email-created.png" alt="Email Address Created" title="Email Address Created" style="border: 1px solid gray; zoom:80%;">  
 
-### Attach a Flow to a Kore Domain Email Address
+    !!! Note
 
-Steps to attach a flow to an email address in the Kore domain:
-
-1. Go to **Flows & Channels** > **FLOWS** > **Start Flows**.  
-    <img src="../images/start-flow.png" alt="Start Flows" title="Start Flows" style="border: 1px solid gray; zoom:80%;">
-
-2. Click the ellipsis icon (**⋮**) beside the flow you want to attach to the email and click **Update**.  
-    <img src="../images/update-flow.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
-
-3. Select the email address and click **Update**.  
-    <img src="../images/attach-email.png" alt="Add Email" title="Add Email" style="border: 1px solid gray; zoom:50%;">
-
-4. A success message is displayed and the flow is attached to the email.  
-    <img src="../images/flow-attached.png" alt="Flow Attached" title="Flow Attached" style="border: 1px solid gray; zoom:80%;">
+        The option to link a flow directly from the Email Channels list is excluded. Users would need to return to the Experience Flows section, locate the linked flow, and publish it again for any changes to take effect. This option is omitted to maintain a consistent user experience and avoid unnecessary steps.
 
 ### Publish Kore Domain Email Addresses
 
