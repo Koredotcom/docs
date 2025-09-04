@@ -6,7 +6,7 @@ The API imports a model in chunks into the Agent Platform environment. The impor
 * [Upload Model in Chunks](./import-a-model.md/#upload-model-in-chunks){:target="_blank"} - Import Model - Chunk Upload API.
 * [Complete the Import Process](./import-a-model.md/#complete-the-import-process){:target="_blank"} - Import Model- Completion API.
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
+**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Start Import Session
 

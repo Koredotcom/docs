@@ -1,4 +1,4 @@
-# Knowledge: Empower AI Agents with Enterprise Context 
+# Search AI: Empower AI Agents with Enterprise Context 
 
 The **Search and Data AI** is a critical enterprise context layer for AI agents, enabling them to deliver intelligent and context-aware responses. 
 
@@ -53,6 +53,25 @@ Set up retrieval and answer generation strategies to deliver the most accurate a
 
 ### An Example Scenario
 
-If an AI agent is configured to provide information about a company’s product offerings, the relevant content is available on the company’s public website. Search AI enables the agent to set up a knowledge tool that indexes the website’s content. When users ask questions such as “What are the AI Solutions offered by the company?”, the agent uses the knowledge tool to retrieve and present accurate information directly from the indexed content, ensuring responses are both relevant and up to date.
+Suppose an AI agent is designed to answer questions about a company’s product offerings. The relevant details are available on the company’s public website. The agent can configure a knowledge tool that uses Search AI to index the website’s content.
+
+When a user asks, “What AI solutions does the company offer?”, the agent retrieves information directly from the indexed content and delivers an accurate, up-to-date answer.
+
+![Flow](images/knowledgetoolflow.png "Knowledge Tool Flow")
+
+### Accessing and Managing Search AI Applications
+
+Click on **Search AI** to view and manage all Search AI applications available in your current workspace. These applications can be integrated directly into Agentic Apps as **Knowledge Tools** to power intelligent search experiences. The Linked Apps column lists the agentic apps that utilize a given Search AI integration. 
+
+![Integrate Search AI](images/integrate-searchai.png "Integrate Search AI")
 
 
+From this page, you can also create a new Search AI application:
+
+
+1. Click **+ New Integration**.
+2. Provide a name and description for your application.
+3. Once the application is created, click **Manage Content** to open it in **AI for Service**.
+4. Configure the application as needed to suit your use case.
+
+To include these integrations in your Agentic App, go to the Knowledge page of the corresponding app and add them.  

@@ -144,7 +144,8 @@ nav:
       - Connect External Agents: ai-agents/external-agents.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
     - Knowledge:
-      - About Knowledge: ai-agents/knowledge/overview.md
+      - About Search AI: ai-agents/knowledge/overview.md
+      - About Knowledge Tools: ai-agents/knowledge/about-knowledge.md
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
@@ -218,12 +219,16 @@ nav:
     - Business Solutions:
       - AI for Service (XO): ai-agents/ai-for-service.md
       - AI for Work: ai-agents/ai-for-work.md
+    - How Tos:
+      - Share Contextual Metadata with AI for Service: ai-agents/agentic-apps/howto/share-context-with-AIforService.md
+      - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
       - About Models: models/overview.md 
       - Model Factory: 
-        - Fine-Tuned Models: 
+        - Fine-Tuned Models:
+          - Managing Fine-Tuned Models: models/fine-tune-models/managing-fine-tuned-models.md 
           - Create a Model: models/fine-tune-models/create-a-fine-tuned-model.md
           - Deploy a Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
           - Model Settings:
@@ -234,17 +239,18 @@ nav:
           - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
       - Model Hub:
         - Open-Source Models:
-          - Import a model: models/open-source-models/importing-models.md
-          - Deploy a model:
+          - Managing Open-Source Models: models/open-source-models/open-source-summary.md
+          - Import a Model: models/open-source-models/importing-models.md
+          - Deploy a Model:
             - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
             - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
           - Model Optimization Techniques: models/open-source-models/model-optimization.md 
-          - Open-Source models overview: models/open-source-models/open-source-summary.md
           - Model Settings:
             - Model Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
             - API Keys: models/open-source-models/generate-an-api-key-open-source.md
             - Configurations: models/open-source-models/configure-your-open-source-model.md
         - External Models: 
+          - Managing External Models: models/external-models/managing-external-models.md
           - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
           - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
       - Supported Models: models/supported-models.md        
@@ -313,7 +319,7 @@ nav:
   - APIs: 
     - Agentic Apps:
       - About Agentic App APIs: apis/agentic-apps/overview.md
-      - API List: apis/agentic-apps/overview/#api-list
+      - APIs List: apis/agentic-apps/overview/#api-list
     - Tools:
       - About Tools APIs: apis/overview.md
-      - API List: apis/overview/#apis-list
+      - APIs List: apis/overview/#apis-list

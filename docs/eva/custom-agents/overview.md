@@ -1,6 +1,4 @@
-# Custom Agents 
-
-## Learn the concepts
+# Custom Agents
 
 Configurable AI agents designed for quick deployment and workflow integration with minimal setup:
 

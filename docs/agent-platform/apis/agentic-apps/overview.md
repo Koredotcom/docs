@@ -30,7 +30,7 @@ x-api-key: YOUR_API_KEY
 
 Note: API keys are **app-specific**. They are not shared across accounts or workspaces. Ensure that you use the API key associated with the correct app when making requests. 
 
-## API List
+## APIs List
 
 The following table lists the Agent Protocol APIs that allow users to interact with agents and manage sessions. 
 
