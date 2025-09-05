@@ -1,4 +1,4 @@
-# Agent-Specific Dashboard
+# Supervisor View with Agent-Specific Dashboard
 
 ## Overview
 
@@ -32,8 +32,8 @@ The Dashboard metrics allow you to filter and refine the data displayed across t
 
 #### All Languages
 
-You can search and filter by language across the dashboard and apply the language-specific metrics. You can select more than one language or all languages simultaneously. These metrics are based on the languages configured at the evaluation metric level under the **Language Settings**.     
-    
+You can search and filter by language across the dashboard and apply the language-specific metrics. You can select more than one language or all languages simultaneously. These metrics are based on the languages configured at the evaluation metric level under the **Language Settings**.  
+
     !!! note
             
         By default, all languages are selected when the **All Languages **filter is applied. Metrics are only displayed for languages configured at the evaluation metric level under **Configuration** > **Settings**.
