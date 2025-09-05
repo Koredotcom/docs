@@ -21,7 +21,7 @@ This document provides detailed instructions on the integration process of the K
 * [NICE CX Studio](https://help.nice-incontact.com/content/studio/studio.htm){:target="_blank"} installed on your windows device.
 * Agent Assist Hub enabled for your account. Contact your NICE CX representative. Note this requires an extra license cost.
 * Access to Kore AgentAssist application and familiarity with creating and configuring a Kore AI Agent.
-* Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID and SIP URI. Read [Configure Voice Channel](https://docs.kore.ai/agentassist/channels/voice/){:target="_blank"} and [Chat](https://docs.kore.ai/agentassist/channels/chat/){:target="_blank"} for a walkthrough. 
+* Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID and SIP URI. Read [Voice Gateway](../../../channels/voice-gateway/configure-voice-gateway.md/#steps-to-configure-sip-trunk){:target="_blank"} and [Chat](../../../channels/add-web-mobile-client.md){:target="_blank"} for a walkthrough. 
 * Ensure that Voice Interaction Streams are enabled via NICE. 
 
 ## Definitions

@@ -219,7 +219,7 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
 <img src="../images/iframe-token-generation-lambda-35.png" alt="iframe-token-generation-lambda" title="iframe-token-generation-lambda" style="border: 1px solid gray; zoom:80%;">  
 
 15. Click **Save**.
-16. For **Transfer to Flow**, select a flow you want to move the user to. For example, save the following JSON in a file, import this flow to **Flows**, and add **Queue** details for routing: [KVSQueueFlow.json](https://docs.kore.ai/agentassist/wp-content/uploads/sites/6/2024/02/KVSQueueFlow.json_.pdf){:target="_blank"} 
+16. For **Transfer to Flow**, select a flow you want to move the user to. For example, save the following JSON in a file, import this flow to **Flows**, and add **Queue** details for routing: [KVSQueueFlow.json](#kvsqueueflowjson). 
 17. To use agent dispositions, configure the **Set Event Flow** block with **Disconnect flow for Agent UI** hook by importing [this flow](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/AmazonConnect/flows/voice/DispositionFlow.json){:target="_blank"} and selecting it. If not, you can delete the block and connect the remaining blocks to the disconnect block.  
 
     !!! note
@@ -271,3 +271,129 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
 
     * Once the call is disconnected, a call summary appears. The agent can modify the summary or copy it to save it into the CRM.  
     <img src="../images/call-summary-48.png" alt="call-summary" title="call-summary" style="border: 1px solid gray; zoom:80%;">   
+
+## KVSQueueFlow.json
+
+```
+{
+ "Version": "2019-10-30",
+ "StartAction": "368dcb0e-e4c5-4301-bad0-6ec9cb422783",
+ "Metadata": {
+ "entryPointPosition": {
+ "x": 48,
+ "y": 99
+ },
+ "ActionMetadata": {
+ "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce": {
+ "position": {
+ "x": 1186,
+ "y": 287
+ }
+ },
+ "06ffce3e-77e0-42c7-b872-8fa73b820cf5": {
+ "position": {
+ "x": 910,
+ "y": 96
+ }
+ },
+ "368dcb0e-e4c5-4301-bad0-6ec9cb422783": {
+ "position": {
+ "x": 186,
+ "y": 93
+ },
+ "parameters": {
+ "QueueId": {
+ "displayName": "BasicQueue"
+ }
+ },
+ "queue": {
+ "text": "BasicQueue"
+ }
+ },
+ "6992aaaf-4140-4f3f-beb5-a638d7f7d0f6": {
+ "position": {
+ "x": 520,
+ "y": 79
+ },
+ "parameters": {
+ "EventHooks": {
+ "DisconnectAgentUI": {
+ "displayName": "Disposition Flow"
+ }
+ }
+ }
+ }
+ },
+ "Annotations": [],
+ "name": "KVSQueueFlow",
+ "description": "",
+ "type": "contactFlow",
+ "status": "published",
+ "hash": {}
+ },
+ "Actions": [
+ {
+ "Parameters": {},
+ "Identifier": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+ "Type": "DisconnectParticipant",
+ "Transitions": {}
+ },
+ {
+ "Parameters": {},
+ "Identifier": "06ffce3e-77e0-42c7-b872-8fa73b820cf5",
+ "Type": "TransferContactToQueue",
+ "Transitions": {
+ "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+ "Errors": [
+ {
+ "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+ "ErrorType": "QueueAtCapacity"
+ },
+ {
+ "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+ "ErrorType": "NoMatchingError"
+ }
+ ]
+ }
+ },
+ {
+ "Parameters": {
+ "QueueId":
+"arn:aws:connect:us-east-1:274863560648:instance/97c94b3a-7d46-4680-b2ee-a
+e23086d6251/queue/e7c6d05e-b7f2-43d6-abe9-aa861e2b1bf4"
+ },
+ "Identifier": "368dcb0e-e4c5-4301-bad0-6ec9cb422783",
+ "Type": "UpdateContactTargetQueue",
+ "Transitions": {
+ "NextAction": "6992aaaf-4140-4f3f-beb5-a638d7f7d0f6",
+ "Errors": [
+ {
+ "NextAction": "6992aaaf-4140-4f3f-beb5-a638d7f7d0f6",
+ "ErrorType": "NoMatchingError"
+ }
+ ]
+ }
+ },
+ {
+ "Parameters": {
+ "EventHooks": {
+ "DisconnectAgentUI":
+"arn:aws:connect:us-east-1:274863560648:instance/97c94b3a-7d46-4680-b2ee-a
+e23086d6251/contact-flow/2649a757-5612-4e81-8794-56c760b16ef9"
+ }
+ },
+ "Identifier": "6992aaaf-4140-4f3f-beb5-a638d7f7d0f6",
+ "Type": "UpdateContactEventHooks",
+ "Transitions": {
+ "NextAction": "06ffce3e-77e0-42c7-b872-8fa73b820cf5",
+ "Errors": [
+ {
+ "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+ "ErrorType": "NoMatchingError"
+ }
+ ]
+ }
+ }
+ ]
+ }
+ ```
