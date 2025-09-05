@@ -42,8 +42,8 @@ To enhance the search capabilities of Agent AI and allow restricted access for t
 ### How Does It Work?
 
 1. **Set up Search AI Apps**: Add all the segregated information sources (internal information, external information, and auto-suggestions) the targeted agents might need in their searches, like web pages, data, documents, and content from apps like ServiceNow and Confluence. [Learn more](https://docs.kore.ai/searchassist/getting-started/build-and-publish-your-first-searchassist-app/){:target="_blank"}.
-2. **Link Search AI with Agent AI**: Administrators can link up to three Search AI applications with Agent AI, as explained in this document. Once linked, Search AI content is automatically available for Agent AI as a service in runtime. [Learn more](https://docs.kore.ai/agentassist/settings/configure-knowledge-retrieval-via-searchassist/#How_to_Link_SearchAssist_with_AgentAssist){:target="_blank"}.
-3. **View Search AI data in Agent AI**: In the Agent AI widget, agents can view relevant snippets and articles from the Search AI application, and Dialog Tasks and FAQs from the XO Platform or the Use Cases of the Agent AI application. [Learn more](https://docs.kore.ai/agentassist/settings/configure-knowledge-retrieval-via-searchassist/#How_Does_It_Help_Agents){:target="_blank"}.
+2. **Link Search AI with Agent AI**: Administrators can link up to three Search AI applications with Agent AI, as explained in this document. Once linked, Search AI content is automatically available for Agent AI as a service in runtime.  
+3. **View Search AI data in Agent AI**: In the Agent AI widget, agents can view relevant snippets and articles from the Search AI application, and Dialog Tasks and FAQs from the XO Platform or the Use Cases of the Agent AI application.  
 
 ### How to Link Search AI with Agent AI?
 

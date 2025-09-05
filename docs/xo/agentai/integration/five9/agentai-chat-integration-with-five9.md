@@ -92,7 +92,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
    <td>The Language configured in the Kore AI Agent.
    </td>
-   <td>Refer to the <a href="https://docs.kore.ai/xo/agentai/agent-experience/supported-languages/">Supported Languages</a> doc to get the language code for all the supported languages.
+   <td>Refer to the [Supported Languages](../../agent-experience/supported-languages.md){:target="_blank"} doc to get the language code for all the supported languages.
    </td>
   </tr>
   <tr>

@@ -27,7 +27,7 @@ This document describes the integration process of Amazon Connect with Kore Agen
 
 ### Kore Agent AI 
 
-To onboard the Kore Agent AI account and create dialog tasks, refer to the [Agent AI Setup Guide](https://docs.kore.ai/agentassist/onboarding/agentassist-setup-guide/){:target="_blank"}. 
+To onboard the Kore Agent AI account and create dialog tasks, refer to [About Agent AI](../../about-agent-ai.md){:target="_blank"}. 
 
 Two configurations are needed from Agent AI:  
 
