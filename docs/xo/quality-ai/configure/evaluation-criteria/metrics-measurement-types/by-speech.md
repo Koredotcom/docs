@@ -1,6 +1,6 @@
 # By Speech Metric
 
-Speech evaluation metrics are used to assess agent performance during voice interactions in the contact center. This leverages the intelligent speech analytics to drive better conversations, coaching, and outcomes. These metrics enable supervisors and quality analysts to identify opportunities for coaching, improve customer experience, and ensure adherence to compliance standards.
+The By Speech metric is used to assess agent performance during voice interactions in the contact center. It leverages intelligent speech analytics to drive better conversations, coaching, and outcomes. These metrics enable supervisors and quality analysts to identify coaching opportunities, enhance the customer experience, and ensure compliance with regulatory standards.
 
 ## Why to Use
 
