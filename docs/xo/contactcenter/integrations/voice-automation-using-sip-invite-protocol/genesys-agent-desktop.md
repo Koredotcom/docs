@@ -37,8 +37,8 @@ This document contains a step-by-step process of handing over a call (via SIP IN
 
 2. Click **Voice** > **SIP Transfer**. 
 
-    **SIP Transfer Method** : SIP INVITE 
-    **SIP Transfer URI**: It should be in **“sip:+[12345678999@koreSmartassist.byoc.mypurecloud.com](mailto:12345678999@koreSmartassist.byoc.mypurecloud.com)”** format, where **+12345678999** is a DID number created in Genesys and **[koreSmartassist.byoc.mypurecloud.com](koreSmartassist.byoc.mypurecloud.com)** is theFQDN method of Genesys external trunk. 
+    **SIP Transfer Method** : SIP INVITE
+    **SIP Transfer URI**: It should be in `sip:+[12345678999@koreSmartassist.byoc.mypurecloud.com` format, where `+12345678999` is a DID number created in Genesys and `koreSmartassist.byoc.mypurecloud.com` is the FQDN method of Genesys external trunk.
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
@@ -159,7 +159,7 @@ Configure a trunk that connects the Kore session border controller (SBC) for you
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>You must add this FQDN Method URL (sip:+xxxxxxxxxxx@koreSmartassist.byoc.mypurecloud.com) to the Contact Center AI side **Agent Transfer** [step](#configure-agent-transfer).</p>
+    <p>You must add this FQDN Method URL (`sip:+xxxxxxxxxxx@koreSmartassist.byoc.mypurecloud.com`) to the Contact Center AI side **Agent Transfer** [step](#configure-agent-transfer).</p>
     </div>    
 
 12. In the **SIP Access Control** field, add the AI for Service prod voice gateway IPs. This IP address varies based on the regions:   
