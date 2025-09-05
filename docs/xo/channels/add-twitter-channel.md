@@ -39,7 +39,7 @@ To complete this procedure, you must create a _Twitter_ account if you do not ha
 
 
 
-### Keys & Tokens
+### Keys and Tokens
 
 After the application is created:
 
@@ -69,7 +69,7 @@ After the application is created:
 1. In the **Bots** section of the App Builder, click the app you want to add the Twitter channel to.
 2. On the **Channels** tab, click the **Twitter** icon. The **Twitter Channel** page is displayed.
 3. Go to the Configurations tab.
-4. Enter the **API key**, **API Secret Key**, **Access Token**, and **Access Token Secret** obtained from the [Keys and Tokens](#keys--tokens) tab of your Twitter app.
+4. Enter the **API key**, **API Secret Key**, **Access Token**, and **Access Token Secret** obtained from the [Keys and Tokens](#keys-and-tokens) tab of your Twitter app.
 5. Enter the **Environment Label** as set up in the [Permissions](#permissions) section of the Twitter app.
 6. Click **Authorize** to register a webhook with your Twitter app and to subscribe to realtime activities.
 7. **Enable Channel** and **Save**.

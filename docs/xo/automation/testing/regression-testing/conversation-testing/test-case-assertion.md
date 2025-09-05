@@ -99,7 +99,7 @@ On the Conversation Testing landing page, in the **Test Suite Details** grid, cl
 
   * [Dialog Intents](#dialog-intents)
   * [FAQs](#faqs)
-  * [Small Talks](#small-talks)
+  * [Small Talks](#small-talk)
 
 
 ### Dialog Intents

@@ -63,7 +63,7 @@ Steps to configure **Infobip**:
 
     !!! note
 
-          If you’re using the development sandbox on Infobip, once the channel is enabled and published, you will need to send messages in the format “[Keyword on infobip](User input)” For example, “Kore Hi”.
+          If you’re using the development sandbox on Infobip, once the channel is enabled and published, you will need to send messages in the format '[Keyword on infobip][User input]' For example, “Kore Hi”.
 
 
 

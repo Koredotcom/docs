@@ -77,7 +77,7 @@ This tab is used to enter possible messages from users either requesting informa
 This tab is used to design messages that the AI Agent sends to users as a greeting, information, answer to a user query, or request for input. These messages can be:
 
 * **Plain text messages** with options to mark text as bold, italic, indent, multi-line, and lists – ordered and unordered.
-* **Rich messages** using predefined templates such as buttons, list, quick reply, etc,. ([see below](#bot-messages-and-templates) for a list of supported templates).
+* **Rich messages** using predefined templates such as buttons, list, quick reply, etc,. ([see below](#ai-agent-bot-messages-and-templates) for a list of supported templates).
 
     <img src="../images/mock-scenes-img4-bot-message-templates.png" alt="Bot message templates" title="Bot message templates" style="border:1px solid gray; zoom:50%;">
 

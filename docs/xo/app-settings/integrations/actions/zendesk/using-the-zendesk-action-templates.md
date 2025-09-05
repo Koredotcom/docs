@@ -86,7 +86,7 @@ The following Zendesk actions are supported in this release:
 
 Steps to create a ticket in the Zendesk integration:
 
-1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md#step-2-install-the-zendesk-action-templatess){:target="_blank} section to install this template.
+1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md){:target="_blank} section to install this template.
 2. The _Create a Ticket_ dialog task is added with the following components:  
 <img src="../images/zendesk-tem-img4.png" alt="Create a Ticket dialog task is added" title="Create a Ticket dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 

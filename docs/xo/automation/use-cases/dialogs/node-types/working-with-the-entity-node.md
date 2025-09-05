@@ -18,7 +18,7 @@ The Platform supports ~30 [entity types](../entity-types.md){:target="_blank"} s
 Setting up an entity node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the **Entity** node.
-2. Add the entity node in the designated place. For information on adding nodes, [refer here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
+2. Add the entity node in the designated place. For information on adding nodes, [Add a Node](../using-the-dialog-builder-tool.md){:target="_blank"}.
 3. The Entity window is displayed with the **Component Properties** tab selected by default.
 
 <img src="../images/entity-node-img1.png" alt="Entity node" title="Entity node" style="border:1px solid gray;zoom:70%;">
@@ -57,7 +57,7 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
             
             <img src="../images/entity-node-img2.png" alt="Entity node - Reorder error messages" title="Entity node - Reorder Error messages" style="border:1px solid gray;zoom:70%;">
 
-6. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
+6. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
 <img src="../images/re-responses.png" alt="Rephrase Responses" title="Rephrase Responses" style="border:1px solid gray;zoom:70%;">
 
 7. Under **Redaction of PII Data**, you can configure how the value of this entity is presented if it is identified as PII data and used in defining any messages or responses:
