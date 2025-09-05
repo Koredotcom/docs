@@ -7,7 +7,7 @@ Proxy Agent acts as an intermediary, seamlessly relaying communication between t
 
 ## Prerequisites
 
-The External Agents connected in the Agent platform must adhere to the [Agent Protocol](../apis/agentic-apps/overview.md).
+The External Agents connected to the Agent platform must adhere to the Kore Agent Protocol.
 
 ## Set Up
 
