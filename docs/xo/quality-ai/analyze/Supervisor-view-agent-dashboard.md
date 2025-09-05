@@ -26,14 +26,13 @@ This tab provides the supervisor’s view of the agent dashboard for each agent 
 
 ### Filter Options
 
-Supervisors can filter dashboard data by Language, [**Date Range**](../analyze/dashboard.md/#date-range) and [**Channel**](../analyze/dashboard.md/#channel). 
+Supervisors can filter dashboard data by **Language**, [**Date Range**](../analyze/dashboard.md/#date-range) and [**Channel**](../analyze/dashboard.md/#channel). 
 
 The Dashboard metrics allow you to filter and refine the data displayed across the entire Agent Dashboard by selected languages, date range (calendar), and channel.
 
 #### All Languages
 
 You can search and filter by language across the dashboard and apply the language-specific metrics. You can select more than one language or all languages simultaneously. These metrics are based on the languages configured at the evaluation metric level under the **Language Settings**. 
-
     
 !!! note
             
@@ -74,7 +73,7 @@ The following metrics help evaluate agent performance and coaching progress, fil
     <img src="../agent-leaderboard/images/No-of-fails.png" alt="No. of Fails" title="No. of Fails" style="border: 1px solid gray; zoom:100%;">
 
 * **Fatal Interactions**: This displays visual indicators of an agent’s interactions that failed critical compliance or quality criteria. These help supervisors quickly identify and address high-risk interactions.     
-    <img src="../agent-leaderboard/images/fatal-interactions.png" alt="Fatal Interactions" title="Fatal Interactions" style="border: 1px solid gray; zoom:100%;">
+    <img src="..//agent-leaderboard/images/fatal-interactions.png" alt="Fatal Interactions" title="Fatal Interactions" style="border: 1px solid gray; zoom:100%;">
 
 **Coaching Insights**
 
@@ -117,7 +116,7 @@ The Coaching Assignments include the following items:
 
     * **Completed**: All interactions clicked through for that assignment.
 
-For more detailed information, see [Coaching Assignments - Supervisor View](../coach/coaching-assignments-supervisor-view.md).  
+For more information, see [Coaching Assignments - Supervisor View](../coach/coaching-assignments-supervisor-view.md).  
 
 ### Scorecard Trend
 
@@ -182,5 +181,3 @@ This Evaluation section has the following interactions listing items:
        <img src="../agent-leaderboard/images/filter-audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
     * **Filter Interactions**: This displays the total number of filtered interactions.
-
-For more detailed information, see [Coaching Assignments - Supervisor View](https://docs.kore.ai/xo/quality-management/coach/coaching-assignments-supervisor-view/).
