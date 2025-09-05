@@ -79,13 +79,17 @@ How it works:
 1. Enter a word or phrase in the search field and click the **Search** icon.
 
 2. The count of search results is displayed.  
-<img src="../images/search-interactions-1.png" alt="Search Interactions 1" title="Search Interactions 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/search-interactions-1.png" alt="Search Interactions 1" title="Search Interactions 1" style="border: 1px solid gray; zoom:80%;">
 
 3. When you click a conversation, the Insights to Logs window is displayed. Enter the word or phrase in the search field to prompt the system to search for it in the conversation.  
-<img src="../images/search-interactions-2.png" alt="Search Interactions 2" title="Search Interactions 2" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/search-interactions-2.png" alt="Search Interactions 2" title="Search Interactions 2" style="border: 1px solid gray; zoom:80%;">
 
 4. The system displays the count of the occurrences of the word or phrase along with the highlighted results.  
-<img src="../images/search-interactions-3.png" alt="Search Interactions 3" title="Search Interactions 3" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/search-interactions-3.png" alt="Search Interactions 3" title="Search Interactions 3" style="border: 1px solid gray; zoom:80%;">
+
+!!! Note
+
+    The search button works in two ways. By default, OpenSearch is enabled in all standard cloud deployments. However, if your deployment is on a Virtual Private Cloud (VPC) or a custom setup, OpenSearch must be deployed separately. When OpenSearch is available, you can use the full search functionality. If OpenSearch is not deployed, the search button still works, but it supports only ID-based searches.
 
 ## Export Conversation Data, Transcripts, and Events
 
