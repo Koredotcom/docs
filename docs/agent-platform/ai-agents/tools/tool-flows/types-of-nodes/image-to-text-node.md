@@ -39,7 +39,7 @@ To add and configure the node, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Before proceeding, you must add an external LLM to your account using either <a href="../../../../models/external-models/add-an-external-model-using-easy-integration.md" target="_blank">Easy Integration</a> or <a href="../../../../models/external-models/add-an-external-model-using-api-integration.md" target="_blank">Custom API integration</a></p>
+<p>Before proceeding, you must add an external LLM to your account using either <a href="../../../../../models/external-models/add-an-external-model-using-easy-integration" target="_blank">Easy Integration</a> or <a href="../../../../../models/external-models/add-an-external-model-using-api-integration" target="_blank">Custom API integration</a></p>
 </div>
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
@@ -75,7 +75,7 @@ To add and configure the node, follow the steps below:
   <li>The file source url must be valid for the node to function properly.</li>
   <li>Only PNG, JPEG, and JPG file formats are supported.</li>
   <li>Except for image input handling, the OCR node functions like the existing AI node.</li>
-  <li>Sending images and related settings are handled by the <a href="../../../../apis/apis-list/upload-file-api.md" target="_blank">File Upload API</a>.</li>
+  <li>Sending images and related settings are handled by the <a href="../../../../../apis/apis-list/upload-file-api.md" target="_blank">File Upload API</a>.</li>
   <li>Image input preprocessing is supported in the following formats:</li>
     <ul><li>Binary, base64-encoded for Anthropic models.</li>
     <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></ul></p>
