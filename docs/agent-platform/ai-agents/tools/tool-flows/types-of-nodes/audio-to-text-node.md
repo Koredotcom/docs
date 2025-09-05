@@ -125,7 +125,7 @@ To add and configure the node, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Before proceeding, you must add an external LLM to your account using either <a href="../../../../models/external-models/add-an-external-model-using-easy-integration.md" target="_blank">Easy Integration</a> or <a href="../../../../models/external-models/add-an-external-model-using-api-integration.md" target="_blank">Custom API integration</a>.</p></div>
+<p>Before proceeding, you must add an external LLM to your account using either <a href="../../../../../models/external-models/add-an-external-model-using-easy-integration" target="_blank">Easy Integration</a> or <a href="../../../../../models/external-models/add-an-external-model-using-api-integration" target="_blank">Custom API integration</a>.</p></div>
 
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
@@ -177,7 +177,7 @@ To add and configure the node, follow the steps below:
 <ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
 <li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Audio to Text</b> node.</li></ul>
 
-<ol start="8"><li>Finally, <a href="../types-of-nodes/audio-to-text-node.md/#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol>
+<ol start="8"><li>Finally, <a href="./audio-to-text-node/#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol>
 
 ## Configure and Test the Flow for the Node
 
@@ -203,7 +203,7 @@ Add all the required input variables to run the flow in the **Input** section of
 <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the transcribed text output.</li>
-<li>Click <b>Save</b>. <a href="../types-of-nodes/text-to-text-node.md/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
+<li>Click <b>Save</b>. <a href="./text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
 <img src="../images/save-output-variable.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
 
