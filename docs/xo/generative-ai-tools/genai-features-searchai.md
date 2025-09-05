@@ -147,7 +147,9 @@ Example:
 
 ## Result Type Classification
 
-This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
+This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query. [Learn More](../searchai/rag-agents.md)
+
+(https://docs.kore.ai/xo/searchai/rag-agents/)
 
 If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following format. 
 ```
