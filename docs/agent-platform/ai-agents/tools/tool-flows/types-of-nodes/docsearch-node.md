@@ -109,7 +109,7 @@ Alternatively, click the node and change the value for **Node Name** in the conf
 <img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="6"><li>Add the input for the <b>Query</b> field to capture the user's search query. 
-<p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
+<p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
 
 <p>You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."</p>
 <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
