@@ -1,10 +1,10 @@
 # Tool Templates
 
-Instead of building a tool flow from scratch, **Tool Templates** enable you to access preconfigured tool flows that arepreconfigured tool flows that are designed and tailored to your business use case from the Tools library/marketplace. These pre-built integrations across various domains provide a fast, no-code way to automate repetitive tasks and streamline operations, requiring minimal setup.
+Instead of building a tool flow from scratch, **Tool Templates** enable you to access pre-configured tool flows that are pre-configured tool flows that are designed and tailored to your business use case from the Tools library/marketplace. These pre-built integrations across various domains provide a fast, no-code way to automate repetitive tasks and streamline operations, requiring minimal setup.
 
 You can customize the tool’s actions (how the tool responds) and enhance the automation flow. Simply select a template and import it into the Tools dashboard with zero coding efforts. The template types you can leverage include:
 
-* **Pre-built templates**: These ready-to-deploy templates come with use-case scenarios and preconfigured integrations, like an email auto-replier or an automated grading system.
+* **Pre-built templates**: These ready-to-deploy templates come with use-case scenarios and pre-configured integrations, like an email auto-replier or an automated grading system.
 * **Customizable templates**: The various node types in the tool flow on the Agent Platform allow you to tailor the tool flow to your business needs.
 
 Tool templates are the foundation for building AI tools. They provide a structure for workflows, ensuring a smooth user experience. They are a reliable and efficient starting point for automating tasks like lead capture, order scheduling, and customer support.  
@@ -98,7 +98,7 @@ To access a tool template, follow the steps below:
    * Developer, last updated timestamp, the language used, and the number of installations.
    * Install button
 
-<ol start="7"><li>Click <b>Install</b> to connect to the Marketplace and import the tool template, including its preconfigured flow.</li>
+<ol start="7"><li>Click <b>Install</b> to connect to the Marketplace and import the tool template, including its pre-configured flow.</li>
 <img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></ol>
 
 The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../tools/tool-templates.md/#view-and-manage-tool-flow){:target="_blank"}.
@@ -155,7 +155,7 @@ Once you install a tool template, you can access its prebuilt flow and modify it
    Each node available on the prebuilt flow canvas is automatically mapped to the relevant node type. You can view the node configurations on the **General Settings** panel, as shown below.
    <img src="../images/node-mapping.png" alt="node mapping" title="node mapping" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="3"><li><a href="../tools/tool-flows/manage-flow-nodes.md" target="_blank">Manage nodes and their configurations</a> in the flow, <a href="../tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md" target="_blank">edit input and output</a>, and <a href="../tools/tool-flows//perform-other-actions-on-the-flow-builder/run-the-flow.md" target="_blank">run the flow</a> as required to customize the tool flow. To view the changes made to the tool flow, use the change log. <a href="../tools/tool-flows/tool-canvas-change-log.md" target="_blank">Learn more</a>.</li></ol>
+<ol start="3"><li><a href="../tool-flows/manage-flow-nodes" target="_blank">Manage nodes and their configurations</a> in the flow, <a href="../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output" target="_blank">edit input and output</a>, and <a href="../tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow" target="_blank">run the flow</a> as required to customize the tool flow. To view the changes made to the tool flow, use the change log. <a href="../tool-flows/tool-canvas-change-log" target="_blank">Learn more</a>.</li></ol>
 
 ### Delete a Tool Template
 

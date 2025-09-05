@@ -109,11 +109,11 @@ Alternatively, click the node and change the value for **Node Name** in the conf
 <img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="6"><li>Add the input for the <b>Query</b> field to capture the user's search query. 
-<p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="../perform-other-actions-on-the-flow-builder//manage-input-and-output.md/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
+<p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
 
 <p>You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."</p>
 <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Select the <b>Search AI connection</b> you set up in <a href="../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
+<li>Select the <b>Search AI connection</b> you set up in <a href="#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
 <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 <div class="admonition note">
@@ -122,7 +122,7 @@ Alternatively, click the node and change the value for **Node Name** in the conf
 
 To set up a new connection, click **+ New Connection**. This will redirect you to the Agent Platform Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"} to complete the integration.
 
-<ol start="8"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
+<ol start="8"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="../../../../../xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
 <img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 <div class="admonition note">

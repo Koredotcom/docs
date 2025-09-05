@@ -25,32 +25,32 @@ Agent Platform supports SSO for the following protocols and providers:
   </tr>
   <tr>
    <td>
-<a href="../security-and-control/single-sign-on.md/#saml" target="_blank">SAML</a>
+<a href="#saml" target="_blank">SAML</a>
    </td>
    <td>
 <ul>
-<li><a href="../security-and-control/single-sign-on.md/#okta-configuration" target="_blank">Okta</a></li>
-<li><a href="../security-and-control/single-sign-on.md/#onelogin-configuration" target="_blank">OneLogin</a></li>
-<li><a href="../security-and-control/single-sign-on.md/#other-configuration" target="_blank">Other</a></li>
+<li><a href="#okta-configuration" target="_blank">Okta</a></li>
+<li><a href="#onelogin-configuration" target="_blank">OneLogin</a></li>
+<li><a href="#other-configuration" target="_blank">Other</a></li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><a href="../security-and-control/single-sign-on.md/#ws-federation" target="_blank">WS-Federation</a>
+   <td><a href="#ws-federation" target="_blank">WS-Federation</a>
    </td>
    <td>
 <ul>
-<li><a href="../security-and-control/single-sign-on.md/#windows-azure-configuration" target="_blank">Windows Azure</a></li>
-<li><a href="../security-and-control/single-sign-on.md/#other-configuration_1" target="_blank">Other</a></li>
+<li><a href="#windows-azure-configuration" target="_blank">Windows Azure</a></li>
+<li><a href="#other-configuration_1" target="_blank">Other</a></li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><a href="../security-and-control/single-sign-on.md/#openid-connect-configuration" target="_blank">OpenID Connect</a>
+   <td><a href="#openid-connect-configuration" target="_blank">OpenID Connect</a>
    </td>
    <td>
 <ul>
-<li><a href="../security-and-control/single-sign-on.md/#google-configuration" target="_blank">Google account</a></li>
+<li><a href="#google-configuration" target="_blank">Google account</a></li>
 </ul>
    </td>
   </tr>
@@ -208,9 +208,9 @@ To enable SSO on the **Settings** console, follow the steps below:
 4. Select the required protocol and SP. The default selections are **SAML** and **Okta**.
 5. Configure the [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for one of the following SSO protocols and providers:
 
-<ul><li><b>SAML</b>: <a href="../security-and-control/single-sign-on.md/#okta-configuration" target="_blank">Okta</a>, <a href="../security-and-control/single-sign-on.md/#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="../security-and-control/single-sign-on.md/#other-configuration" target="_blank">Other</a>. <a href="../security-and-control/single-sign-on.md/#saml" target="_blank">Learn more</a>.</li>
-<li><b>WS-Federation</b>: <a href="../security-and-control/single-sign-on.md/#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="../security-and-control/single-sign-on.md/#other-configuration" target="_blank">Other</a>. <a href="../security-and-control/single-sign-on.md/#ws-federation" target="_blank">Learn more</a>.</li>
-<li><b>OpenId connect</b>: <a href="../security-and-control/single-sign-on.md/#google-configuration" target="_blank">Google</a>. <a href="../security-and-control/single-sign-on.md/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
+<ul><li><b>SAML</b>: <a href="#okta-configuration" target="_blank">Okta</a>, <a href="#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="#other-configuration" target="_blank">Other</a>. <a href="#saml" target="_blank">Learn more</a>.</li>
+<li><b>WS-Federation</b>: <a href="#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="#other-configuration" target="_blank">Other</a>. <a href="#ws-federation" target="_blank">Learn more</a>.</li>
+<li><b>OpenId connect</b>: <a href="#google-configuration" target="_blank">Google</a>. <a href="#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
 
 <ol start="9"><li>Click <b>Save</b>.</li></ol>
 
