@@ -1,6 +1,6 @@
 # Wrap-up Code Prediction
 
-This feature introduces GenAI-based disposition prediction to assist agents during conversation wrap-up. By leveraging LLM (Large Language Model) capabilities through the [GenAI tools](../../../generative-ai-tools/genai-features.md#contact-center-ai---genai-features), the system automatically suggests disposition codes based on conversation transcripts and predefined disposition metadata. This reduces manual effort, improves tagging consistency, and enhances reporting accuracy.
+This feature introduces GenAI-based disposition prediction to assist agents during conversation wrap-up. By leveraging LLM (Large Language Model) capabilities through the [GenAI tools](../../../generative-ai-tools/genai-features.md), the system automatically suggests disposition codes based on conversation transcripts and predefined disposition metadata. This reduces manual effort, improves tagging consistency, and enhances reporting accuracy.
 
 Administrators can access Wrap-up Code Prediction by navigating to Contact Center AI > Configurations > Settings > Advanced Settings > Wrap-up Code Prediction.  
 <img src="../images/wrap-up-code.png" alt="Wrap-up Code Prediction" title="Wrap-up Code Prediction" style="border: 1px solid gray; zoom:70%;">
