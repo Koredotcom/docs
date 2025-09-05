@@ -10,7 +10,7 @@ This section of the Contact Center AI module provides access to the following se
 
 * **[Language Supported for Bot & Agent](#list-of-supported-languages-for-ai-agents-bots-and-human-agents)**: Define the languages you want agents and automation to work with.
 * **Voice Preferences**: Choose the engines to use with Contact Center AI for Automated Speech Recognition (ASR) and Text-to-Speech (TTS).
-* **    List of Supported Dialects**: Choose the supported dialects.
+* **List of Supported Dialects**: Choose the supported dialects.
 * **[Hold Audio](#hold-audio)**: Define the default audio that plays to callers while on hold or waiting in the queue.
 
 ## Language Management
