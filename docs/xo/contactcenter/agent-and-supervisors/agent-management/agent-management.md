@@ -421,7 +421,7 @@ By default, the enable dial tone until agent connects functionality is disabled.
 
 ## Total Digital Conversation Limit
 
-This setting allows admins to configure a maximum total digital conversation limit for an agent while adhering to the per-channel limits that are configured. [Learn more](../../../user-management/manage-users.md#chat--voice).  
+This setting allows admins to configure a maximum total digital conversation limit for an agent while adhering to the per-channel limits that are configured. [Learn more](../../../user-management/manage-users.md).  
 
 !!! Note
 
