@@ -66,7 +66,7 @@ TFiARYEDF4LTA0ZDktNTM3MC04NTI3LWFlNjNmMjk1YmJjZiJ9.2ozN9wKNPi3A4R8HPdPUfdqBTv-Jg
 
 ### Step 3: Configure Audio Streaming Node in Talkdesk
 
-Audio streaming is the primary component for enabling voice automation. It involves streaming Talkdesk audio to the Voice Stream URL (created in [Step-3](#step-2-create-a-wss-url)) over WSS using Conversation Orchestrator. Here’s a basic flow within the Talkdesk Studio:  
+Audio streaming is the primary component for enabling voice automation. It involves streaming Talkdesk audio to the Voice Stream URL (created in [Step-2](#step-2-create-a-wss-url)) over WSS using Conversation Orchestrator. Here’s a basic flow within the Talkdesk Studio:  
 <img src="../images/talkdesk-studio-basic-flow-3.png" alt="talkdesk-studio-basic-flow" title="talkdesk-studio-basic-flow" style="border: 1px solid gray; zoom:80%;">
 
 1. Download the [Studio Flow](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/TalkDesk/SmartAssist/VoiceAutomation.json){:target="_blank"}, and then import it into the Talkdesk Studio. [Learn more](https://studio.talkdesk.com/docs/importing-and-exporting-flows#importing-a-flow){:target="_blank"}.
