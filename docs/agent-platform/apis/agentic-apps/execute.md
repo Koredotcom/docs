@@ -1012,8 +1012,8 @@ Returns the current status and details of the run. The important fields include:
         "asyncConfig": {
           "isAsync": true,
           "noTimeout": false,
-          "post_url": "chandrima.cherkuthota@kore.com",
-          "app_token": "chandrimaRao@2512",
+          "post_url": "example.org/callbackurl",
+          "app_token": "xxxxxxxx",
           "asyncTimeout": 180,
           "isInternalCall": false
         }
