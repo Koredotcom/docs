@@ -12,8 +12,6 @@ To set up Unblu as a channel, you will need to create an External Integration bo
 
 Named Areas in Unblu are used to identify the origins of the chat requests from your website. The Kore.ai assistant should be associated with a Named Area to ensure that it responds to users only when the chat has originated from the sections of your website associated with this Named Area. This mapping is optional if you are enabling the Unblu channel for a single kore.ai bot alone.
 
-
-
 1. [Login ](https://latest.demo.unblu.com/)to your Unblu Account Administration.
 2. Under the Named Areas module, select the ‘New named area’ option.
 3. Provide all the requested information.
@@ -34,17 +32,17 @@ The Unblu Bot can be directly created from the Kore.ai XO Platform.
     * **Unblu Host URL** -the URL of your Unblu application. For example, use [https://www.unblu.com/](https://www.unblu.com/) for the Unblu cloud.
     * **Unblu Account Username** –Provide your Unblu account username.
     * **Unblu Account Password** – Provide the password associated with your Unblu username.
-    * **Unblu Bot Name** – Provide a name you would like to use for your Unblu bot
-    * **Unblu Bot Description** – Provide a short description of your Unblu bot
-    * **Bot Person** – Provide a Name to represent the Unblu bot to your users
-    * **Secret Key** – Provide a confidential key to secure the communication between Unblu and Kore.ai bots
+    * **Unblu Bot Name** – Provide a name you would like to use for your Unblu bot.
+    * **Unblu Bot Description** – Provide a short description of your Unblu bot.
+    * **Bot Person** – Provide a Name to represent the Unblu bot to your users.
+    * **Secret Key** – Provide a confidential key to secure the communication between Unblu and Kore.ai Assistants.
     * **Named Area** – Provide the Named Area you would like to associate with your Kore.ai assistant. Kore.ai will respond only to the user chats that have originated in the Named Area that you have selected here. This field is optional if you are enabling Unblu channel for a single kore.ai assistant alone.
     * Select to **Enable** the channel and **Save** your settings.
 4. **Enable** the channel.  
 <img src="../images/unblu.png" alt="unblu integration" title="unblu integration" style="border: 1px solid gray; zoom:70%;">
 
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 

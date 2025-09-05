@@ -95,15 +95,20 @@ When a customer requests an agent, the system transfers the conversation by init
 
 * **Notification Alert**
 
-The agent receives a notification alert in the agent console while a conversation is transferred to an agent. [Learn more](https://docs.kore.ai/xo/console/managing-incoming-interactions/){:target="_blank"}.  
+    The agent receives a notification in the agent console while a conversation is transferred to an agent. [Learn more](https://docs.kore.ai/xo/console/managing-incoming-interactions/){:target="_blank"}.  
     <img src="../images/agent-transfer.png" alt="Notification Alert" title="Notification Alert" style="border: 1px solid gray; zoom:70%;">
 
 * **Identify the Issue or Inquiry**
 
-Once the system notifies the agent, the agent reviews the conversation and identifies the customer's issue or inquiry using the basic information the customer provides.
+    When the system sends a notification, the agent reviews the conversation history to identify customer issues or inquiries. Because customers may have multiple issues, agents can use the search function to locate specific issues.
+    
+    Case IDs and task IDs appear as links throughout the interface. In the agent console, agents can view customer cases by selecting a case ID link. The case details open in a new tab. You can view cases and tasks in separate tabs for easy navigation. To return to the list view, select the Home icon.
+    
+    The system supports up to 10 open tabs for cases and tasks combined. This lets you view multiple items at the same time and compare cases or monitor status during live customer conversations.
 
-**Tip:** Based on the conversations, the agent provides relevant information to customers or suggests actions to resolve the issue. For example, "Refrigerator Cooling Issue”, the agent suggests troubleshooting steps based on the customer details received.  
-<img src="../images/basic-customer-info.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    **Tip:** Based on the conversations, the agent provides relevant information to customers or suggests actions to resolve the issue. For example: Refrigerator Cooling Issue. The agent suggests troubleshooting steps based on the customer details received.
+
+<img src="../images/Issues-search-bar.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
     
 * **Follow-up Questions**
 

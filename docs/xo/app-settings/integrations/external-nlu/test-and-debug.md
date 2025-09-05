@@ -5,7 +5,7 @@ The following sections describe how you can test and debug your AI Agent to vali
 
 ## Test
 
-After completing the steps in [Adapter Configuration](../external-nlu-adapters/#adapter-configuration){:target="_blank"} and [enabling the API](../dialogflow-engine/#enable-the-dialogflow-api){:target="_blank"}, to check if the intent identification is done by External NLU adapter or not, you can follow these steps:
+After completing the steps in [Adapter Configuration](external-nlu-adapters.md#adapter-configuration){:target="_blank"} and [enabling the API](dialogflow-engine.md#enable-the-dialogflow-api){:target="_blank"}, to check if the intent identification is done by External NLU adapter or not, you can follow these steps:
 
 
 
@@ -95,7 +95,7 @@ In Health and Monitoring go to **Test Cases > Detailed Analysis** to see the Int
 
 <img src="../images/external-nlu-test-and-debug-img10.png" alt="Intents and Entities identified by External NLU" title="Intents and Entities identified by External NLU" style="border: 1px solid gray;zoom:50%;"/>
 
-For more information, see [Virtual Assistant Health and Monitoring](../../../automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md){:target="_blank"}.
+For more information, see [Health and Monitoring](../../../automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md){:target="_blank"}.
 
 
 ## NLP Insights

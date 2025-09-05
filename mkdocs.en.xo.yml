@@ -49,6 +49,8 @@ plugins:
         'getting-started/virtual-assistants-overview.md': 'getting-started/building-a-virtual-assistant.md'
         'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
         'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
+        'administration/kore-ai-connector.md': 'administration/adminconsole.md'
+        'integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
 extra:
   version:
     provider: mike
@@ -189,7 +191,8 @@ nav:
         - Benefits of XO v11: getting-started/benefits-xo11.md
         - Automation AI: getting-started/migration-path-xo10-to-xo11.md
         - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
-        - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md       
+        - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md    
+      - Deprecations: release-notes/11.x/searchai-deprecations.md 
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
@@ -405,6 +408,7 @@ nav:
             - Custom Script: searchai/workbench/custom-script.md
             - Exclude Document: searchai/workbench/exclude-document.md
             - API Stage: searchai/workbench/api-stage.md
+            - LLM Stage: searchai/workbench/llm-stage.md
             - Workbench Simulator: searchai/workbench/simulation.md
         - Vector Configuration: searchai/index-configuration.md
     - Configuration:
@@ -418,7 +422,7 @@ nav:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
         - Toolkit: searchai/toolkit.md
     - FAQs:
-        - Automatic vs Manual Training: searchai/application-training.md
+        - Application Training: searchai/application-training.md
         - Multilingual Support: searchai/language-support.md
         - User Feedback Handling: searchai/feedback.md
     - How Tos:
@@ -447,6 +451,7 @@ nav:
           - Co-Browse: contactcenter/configurations/settings/co-browse.md
           - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
           - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
+          - Automatic Away Status for Agent Inactivity: contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
           - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
@@ -454,7 +459,7 @@ nav:
           - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
           - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
           - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
-    - Performance Management:
+          - Wrap-up Code Prediction: contactcenter/configurations/settings/wrap-up-code-prediction.md
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
@@ -481,52 +486,6 @@ nav:
       - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
-    - Quality AI:
-      - About Quality AI: quality-management/about-quality-ai.md         
-      - Getting Started:     
-        - Setup Guide: quality-management/getting-started/setup-guide.md
-        - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
-      - Quality Express:     
-        - Quality AI Express: quality-management/getting-started/quality-ai-express.md
-        - AWS S3 Connector Setup Guide: quality-management/getting-started/aws-s3-connector-setup-guide.md      
-      - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
-      - Analyze:
-        - Dashboard:
-          - Supervisor Dashboard: quality-management/analyze/dashboard.md
-          - Supervisor View (Agent-Specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
-          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                          
-        - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
-        - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
-        - Conversation Mining: 
-          - Introduction: quality-management/analyze/conversation-mining-overview.md
-          - Interactions: quality-management/analyze/conversation-mining-interactions.md 
-          - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
-        - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
-      - Coach:
-          - Coaching Assignments: 
-            - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
-            - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
-          - Coaching Monitor: quality-management/coach/coaching-monitor.md        
-      - Configure:
-        - Evaluation Criteria:
-            - Evaluation Forms: quality-management/configure/evaluation-forms.md
-            - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
-            - Metrics Measurement Types: 
-              - By Question: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-question.md
-              - By Speech: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-speech.md 
-              - By Value: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-value.md
-              - By AI Agent: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md
-              - By Dialog Task: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
-              - By Playbook Adherence: quality-management/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md              
-              
-        - Agent Scorecards: quality-management/configure/agent-scorecards.md
-        - Connectors: 
-            - Introduction: quality-management/connectors/connector-intro.md
-            - Amazon S3: quality-management/connectors/amazon-s3.md
-        - Settings: 
-          - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
-          - Quality AI General Settings: quality-management/configure/quality-ai-general-settings.md
-          - Language Settings: quality-management/configure//langauge-settings.md
     - Case Management:
       - About Case Management: case-management/case-management.md
       - Setup Process: case-management/setup-process.md   
@@ -534,8 +493,53 @@ nav:
       - Manage Cases and Tasks: case-management/manage-cases-and-tasks.md
       - Agent Console: case-management/agent-console.md
       - Case Analysis Dashboard: case-management/case-analysis-dashboard.md
+  - Quality AI:
+    - About Quality AI: quality-ai/about-quality-ai.md         
+    - Getting Started:     
+      - Setup Guide: quality-ai/getting-started/setup-guide.md
+      - Best Practices for Auto QA Configuration: quality-ai/getting-started/best-practices-for-auto-qa-config.md      
+      - AI Assisted Manual Audit: quality-ai/ai-assisted-manual-audit.md      
+    - Analyze:
+      - Dashboard:
+        - Supervisor Dashboard: quality-ai/analyze/dashboard.md
+        - Supervisor View (Agent-Specific Dashboard): quality-ai/analyze/Supervisor-view-agent-dashboard.md
+        - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md                          
+      - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
+      - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md
+      - Conversation Mining: 
+        - Introduction: quality-ai/analyze/conversation-mining-overview.md
+        - Interactions: quality-ai/analyze/conversation-mining-interactions.md 
+        - Audit Allocations: quality-ai/analyze/conversation-mining-audit-allocations.md
+      - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md            
+    - Coach:
+        - Coaching Assignments: 
+          - Supervisor View: quality-ai/coach/coaching-assignments-supervisor-view.md
+          - Agent View: quality-ai/coach/coaching-assignments-agent-view.md 
+        - Coaching Monitor: quality-ai/coach/coaching-monitor.md        
+    - Configure:
+      - Evaluation Criteria:
+          - Evaluation Forms: quality-ai/configure/evaluation-forms.md
+          - Evaluation Metrics: quality-ai/configure/evaluation-metrics.md
+          - Metrics Measurement Types: 
+            - By Question: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-question.md
+            - By Speech: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-speech.md 
+            - By Value: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-value.md
+            - By AI Agent: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md
+            - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
+            - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md              
+      - Agent Scorecards: quality-ai/configure/agent-scorecards.md
+      - Quality Express:     
+        - Quality AI Express: quality-ai/getting-started/quality-ai-express.md
+        - AWS S3 Connector Setup Guide: quality-ai/getting-started/aws-s3-connector-setup-guide.md   
+      - Connectors: 
+          - Introduction: quality-ai/connectors/connector-intro.md
+          - Amazon S3: quality-ai/connectors/amazon-s3.md
+      - Settings: 
+        - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
+        - Quality AI General Settings: quality-ai/configure/quality-ai-general-settings.md
+        - Language Settings: quality-ai/configure/language-settings.md         
   - Agent AI:
-    - About Agent AI: agentai/about-agent-ai.md           
+    - About Agent AI: agentai/about-agent-ai.md
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md
@@ -545,6 +549,7 @@ nav:
         - Custom LLM Model in GenAI: agentai/configuration/custom-llm-model-in-genai.md
         - Linked Services: agentai/configuration/linked-services.md
         - Third Party Configuration: agentai/configuration/third-party-configuration.md
+        - Agent AI Mapping: agentai/configuration/agent-ai-mapping.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
@@ -556,8 +561,7 @@ nav:
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
       - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
-      - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
-      - Genesys Cloud CX using Kore Data Table: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx-using-kore-data-table.md
+      - Genesys Cloud CX: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md
       - NICE CX:
         - NICE MAX Desktop (Chat and Voice): agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
         - NICE MAX Desktop for Outbound Calls: agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md
@@ -608,6 +612,7 @@ nav:
       - Search AI - GenAI Features: generative-ai-tools/genai-features-searchai.md
       - Agent AI - GenAI Features: generative-ai-tools/genai-features-agentai.md
       - Contact Center AI - GenAI Features: generative-ai-tools/genai-features-contactcenterai.md
+      - Quality AI - GenAI Features: generative-ai-tools/genai-features-qualityai.md
     - DialogGPT:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
@@ -703,7 +708,7 @@ nav:
             - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
             - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
             - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
-            - Voice Automation with Genesys Agent Desktop using SIP Invite Protocol: contactcenter/integrations/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol.md
+            - Voice Automation with Genesys Agent Desktop using SIP Invite Protocol: contactcenter/integrations/voice-automation-using-sip-invite-protocol/genesys-agent-desktop.md
           - Multibot:
             - Multibot Integration with Genesys: contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md
     - APIs and SDKs:
@@ -824,7 +829,6 @@ nav:
         - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
       - Security and Control:
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
-        - Kore.ai Connector: administration/kore-ai-connector.md
         - Enterprise Key: administration/security-and-control/enterprise-key.md
         - API Scopes: administration/security-and-control/api-scopes.md
         - Two-Factor Authentication (2FA): administration/security-and-control/two-factor-authentication-for-platform-access.md

@@ -1,4 +1,4 @@
-# By Playbook Adherence Metrics
+# By Playbook Adherence Metric
 
 Playbook Evaluation Metrics are automated quality assurance tools designed to measure and monitor how well contact center agents adhere to established procedures and workflows. These metrics provide real-time insights into process compliance, helping organizations maintain consistent service quality, ensure regulatory compliance, and identify opportunities for performance improvement. Each metric is used for evaluation purposes and is assigned to only one agent attribute.
 

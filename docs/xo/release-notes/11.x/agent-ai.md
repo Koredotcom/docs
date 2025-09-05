@@ -2,6 +2,47 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.17.0 August 23, 2025
+
+<u>Minor Release</u>
+
+<font size="4">Widget Enhancement</font>
+
+**Enhanced Feedback Settings Section**
+
+The Overall Widget Feedback feature allows admins to configure feedback options that agents can select for the Agent AI widget during conversations. It is available in ‘Feedback Settings’ and is disabled by default. Once enabled, admins can: 
+
+* Select a display language.
+* Configure up to six positive and six negative feedback options.
+* Enable up to five options from each category simultaneously.
+* Display or hide an additional comment box.  
+[Learn more :octicons-arrow-right-24:](../../agentai/configuration/feedback-settings.md) 
+
+Enhanced Dashboard: The **Dashboard** > **Overall Widget Feedback** section displays feedback metrics submitted by agents. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-dashboard.md/#overall-widget-feedback)
+
+**Dialog Queue Feature Mapping**
+
+The Agent AI Mapping section is now available for Kore’s CCAI users. This feature allows mapping of queues to dialog tasks. Administrators can:
+
+* Enable or disable this feature with a global toggle.  
+* Add queues from the displayed list or search and add them individually.  
+* Assign bots, channels, languages, and dialog tasks to specific queues.  
+* Edit, update, or delete queue assignments. 
+
+At runtime, agents view only the assigned dialog tasks in Proactive and Library. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/agent-ai-mapping.md)  
+
+<font size="4">Integration Enhancements</font>
+
+**Kore Voice Bot with Amazon Connect and Agent Assist**
+
+Amazon Connect’s External Voice Connector now routes inbound voice calls through the Kore Voice Bot. Upon escalation, the system passes metadata, including Customer ID, Session ID, detected intent, and transcripts, as contact attributes or SIP headers, processes it in the Amazon Connect desktop, and displays it in the Agent AI widget. This flow ensures seamless metadata continuity from the Kore Voice Bot to the agent desktop and Agent AI widget. [Learn more :octicons-arrow-right-24:](../../agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md)  
+
+**Hooks API for Internal Transfers**
+
+Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/hooks-api-for-internal-transfers.md)
+
+<hr>
+
 ## v11.16.1 August 11, 2025
 
 <u>Patch Release</u>
@@ -213,7 +254,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Kore Agent AI Integration with NICE MAX Desktop for Outbound Calls**
 
-The Agent AI integration with NICE MAX Desktop now supports outbound calls. The integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agent-experience/agent-assist-widget-v3.md), [Transcription](./../../agentai/agent-experience/agent-assist-widget-v3.md/#transcript-tab){:target="_blank"}, end-of-call summary, and Custom Data passing (for example, agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md)
+The Agent AI integration with NICE MAX Desktop now supports outbound calls. The integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agentai/agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agentai/agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agentai/agent-experience/agent-assist-widget-v3.md), [Transcription](./../../agentai/agent-experience/agent-assist-widget-v3.md/#transcript-tab){:target="_blank"}, end-of-call summary, and Custom Data passing (for example, agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md)
 
 **AgentAssist Widget Now Receives Real-Time Updates through Genesys Middleware**
 

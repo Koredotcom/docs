@@ -45,7 +45,7 @@ Within this area, you can:
 
 ## Explore The XO Platform
 
-The following sections describe the menu options that are available once you open any virtual assistant from your account.
+The following sections describe the menu options that are available once you open any AI Agent from your account.
 
 ### The Top Menu
 

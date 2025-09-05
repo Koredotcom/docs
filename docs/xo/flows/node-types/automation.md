@@ -49,7 +49,7 @@ Select how you want to handle user conversations based on your business needs an
 **Automation AI Options**
 
 * **Default Routing**: Select an app whose Automation AI configurations you want to use.
-    1. **Run based on User Input**: Select this option to take a user input and let the virtual assistance decide what to do based on the intent recognized in the user utterance.
+    1. **Run based on User Input**: Select this option to take a user input and let the /node-types/automation decide what to do based on the intent recognized in the user utterance.
         * **Your Message to User**:  The message that will be displayed to the customer. Select the message type from the drop-down list and type your message. Click **+ Add Another** to add another message.
     2. **Run a Specific Dialog**: Select this option to run a specific dialog. The selected dialog will be executed when this node is triggered. Click the **Dialog** dropdown to select a dialog. 
 * **Use GenAI to dynamically route to linked apps**:  Use the [Message Prompt](message-prompt.md) and [Link Apps](../../automation/dynamic-routing.md#setting-up-a-dynamic-routing).

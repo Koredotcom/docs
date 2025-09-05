@@ -98,7 +98,7 @@ To access a tool template, follow the steps below:
    * Developer, last updated timestamp, the language used, and the number of installations.
    * Install button
 
-<ol start="7"><li>Click <b>Install</b> to connect to the Kore marketplace and import the tool template, including its preconfigured flow.</li>
+<ol start="7"><li>Click <b>Install</b> to connect to the Marketplace and import the tool template, including its preconfigured flow.</li>
 <img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></ol>
 
 The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../tools/tool-templates.md/#view-and-manage-tool-flow){:target="_blank"}.
@@ -136,7 +136,7 @@ To modify your tool's general details, such as its name and description, asynchr
 
 ### View and Manage Tool Flow
 
-Once you install a tool template, you can access its prebuilt flow and modify it based on your business requirements. To access the [tool flow](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/flows-overview/){:target="_blank"}, follow the steps below:
+Once you install a tool template, you can access its prebuilt flow and modify it based on your business requirements. To access the [tool flow](./tool-flows/flows-overview.md), follow the steps below:
 
 1. Click the required tool template on the <b>Tools</b> dashboard.
 2. Click **Go to Flow**.

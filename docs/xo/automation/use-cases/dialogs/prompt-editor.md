@@ -305,7 +305,7 @@ print("Visibility: " + context.humidity+"\n");
 print("Humidity: " + context.visibility+"\n");
 ```
 
-For more information, see [Using Session and Context Variables in Tasks](../../using-session-and-context-variables).
+For more information, see [Using Session and Context Variables in Tasks](../using-session-and-context-variables.md).
 
 ## Channel-Specific User Prompts
 

@@ -56,22 +56,23 @@ Search AI interacts with Slack through its APIs. To enable this communication, i
 
 ## Set up OAuth App in Slack
 
-* Go to the [Apps page on Slack](https://api.slack.com/apps) and create a new app. 
-* Enter the App Name and select the Workspace from which the content is to be ingested. 
-* Select Create App.  This creates the app. 
-* Go to the App details and select Basic Information. This page provides the App credentials, including the client ID and client Secret. These credentials are used to generate Bot-level Tokens through the APIs. Hence, these credentials are required to configure the Search AI connector for Slack. 
-* Next, go to the OAuth & Permissions page for the app and set one of the following as the Redirect URL, depending on your region or deployment. 
+1. Go to the [Apps page](https://api.slack.com/apps){:target="_blank"} and click **Create an App**.
+1. Choose either **From a manifest** or **From scratch**.
+1. Enter the **App Name** and select the workspace that contains the content to ingest. 
+1. Select **Create App**.
+1. Go to the **App details** section and select **Basic Information**. This page displays the app credentials, including the **Client ID** and **Client Secret**. These credentials are used to generate bot-level tokens through the Slack APIs and are required to configure the Search AI connector.
+1. Go to the **OAuth & Permissions** page for the app and set one of the following as the Redirect URL, depending on your region or deployment. 
     * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
     * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
     * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
-* The app is ready for use. 
+The app is ready for use. 
 
-*Note:*
+Note:
 
-* *The app requires the following read access to fetch the content from Slack Channels.*
-    * *Content and Info about Channels & Conversations*
-    * *Content and Info about your Workspace*
-* *Currently, Search AI can ingest content only from Slack channels(public or private) where the OAuth app is invited as a member. To do so, invite the app to interact with users in any public or private Slack channel using the **/invite @&lt;app-name>** command in any channel. Alternatively, click the channel name, go to the **Integrations** tab, select the **Add Apps** link, and select the **OAuth app.***
+* The app requires the following read access to fetch the content from Slack Channels.
+    * Content and Info about Channels & Conversations
+    * Content and Info about your Workspace
+* Search AI can ingest content only from Slack channels(public or private) where the OAuth app is invited as a member. To do so, invite the app to interact with users in any public or private Slack channel using the **/invite @&lt;app-name>** command in any channel. Alternatively, click the channel name, go to the **Integrations** tab, select the **Add Apps** link, and select the **OAuth app.**
 
 
 ## Configuring Slack Connector in Search AI
@@ -114,8 +115,8 @@ Go to the **Content** tab to view the ingested content.
 ## RACL Support
 
 * **Public Channels**: 
-For content ingested from public channels, the `sys_racl` field contains the workspace ID. This ensures that the content is accessible to all users within the workspace, as public channels are open to everyone.
+For content ingested from public channels, the `sys_racl` field is automatically populated with the workspace ID. This ensures that the content remains accessible to all users within the workspace, consistent with Slack’s open access model for public channels.
 * **Private Channels**: 
-For content ingested from private channels, the `sys_racl` field contains the channel ID. This restricts access to the content, as private channels are only accessible to users who have been explicitly invited to join the channel.
+For content ingested from private channels, the `sys_racl` field is automatically resolved to the channel ID. This enforces restricted access, aligning with Slack’s policy that only invited members can view content in private channels.
 
-This approach ensures that content permissions are aligned with Slack's access control policies.
+SearchAI now supports automatic resolution of permission entities, streamlining ingestion and ensuring that content permissions accurately reflect Slack’s native access controls.

@@ -35,35 +35,12 @@ The Integration of Generative AI and LLM enables the following features:
 
 * Prompts Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
 
-* Automation AI - Designtime features:
-    * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
-    * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
-    * **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the an AI Agent or human agent. This API leverages an open-source LLM to summarize conversations.
+* [Automation AI Features](genai-features.md#automation-ai-genai-features)
+* [Search AI Features](genai-features.md#search-ai-genai-features)
+* [Agent AI Features](genai-features.md#agent-ai-genai-features)
+* [Contact Center AI Features](genai-features.md#contact-center-ai-genai-features)
+* [Quality AI Features](genai-features.md#quality-ai-genai-features)
 
-    * **NLP Batch Test Cases Suggestion**: The Platform generates NLP test cases for every intent, including entity checks. You only need to create test suites in the Builder using the generated testing utterances.
-    * **Training Utterance Suggestions**: Generate high-quality training data quickly and easily with the Platform’s suggested utterances for each intent. Review and add the suggestions as needed to create a powerful training set for your app.    
-    * **Use Case Suggestions**: Uses the Open AI LLM model to generate use cases during an AI Agent creation journey.
-
-    
-
-* Automation AI - Runtime features:
-    * **Agent Node**: This feature lets you build an AI Agent using LLMs, Tool calling, and generative AI. It supports entity collection, context handling, multilingual conversations, and external integrations—enabling dynamic, human-like interactions for employees and customers.
-    * **Prompt Node:** Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
-    * **Repeat Responses**: Use LLM to reiterate the last app responses when the Repeat App Response event is triggered.
-    * **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual app responses.
-    * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
-    * **Zero-shot ML Model**: Uses the Open AI LLM model for intent identification during run time based on semantic similarity.
-    * **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
-
-* Search AI Features:
-    * **Answer Generation**: This feature helps generate an answer to the user question based on the data ingested into the Search AI application.
-    * **Vector Generation**: Generate embeddings for the ingested data in the Answers module and user queries to answer end-user queries at run time.
-
-* Agent AI Features:
-    * **Agent Response Rephrasing**: Agents will be able to use the below chosen LLM to rephrase their responses.
-    * **Generating Opposite Utterance Suggestions**: Use LLM models for generating opposite utterances during design time.
-    * **Generating Similar Answer Suggestions**: Use LLM models for generating similar answers during design time based on semantic similarity.
-    * **Generating Similar Utterance Suggestions**: Use LLM models for generating similar utterances during design time based on semantic similarity.
 
 * Safeguards:
     * **Data Anonymization**: Protect Personal Identifiable Information (PII) and Sensitive Data shared to LLMs in GenAI Features.

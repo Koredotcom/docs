@@ -40,12 +40,9 @@
 
 Search AI connects with Teamwork through its APIs. 
 
-
 ### Generate OAuth2 Credentials
 
-
-
-* Login to the[ developer portal](https://developer.teamwork.com/). For example: [https://{yourTeamworkURL}.com/developer](https://{yourTeamworkURL}.com/developer)
+* Sign to the[ developer portal](https://developer.teamwork.com/). For example: [https://{yourTeamworkURL}.com/developer](https://{yourTeamworkURL}.com/developer)
 * Create an app and provide its details. 
     * Name – The name of your app, which will show on your apps consent screen.
     * Icon – Icon shown to users during authentication and installation.
@@ -63,24 +60,18 @@ Search AI connects with Teamwork through its APIs.
 
 On the Authentication page of the connector, provide the following information. 
 
-
-
 * Name - Unique name for the connector. 
 * Authorization Type - Teamwork supports OAuth 2.0. 
 * Grant Type - Set this to Authorization Code
 * Client ID and Client Secret - Use the credentials generated in the Teamwork app. 
 * Domain - Provide the Teamwork domain from where the content is to be ingested. If the complete domain is like [https://&lt;your-specific-teamname>.teamwork.com](https://{yourTeamworkURL}.com/developer), enter “[&lt;your-specific-teamname>](https://{yourTeamworkURL}.com/developer)”.
-
-Click **Connect**. This initiates the authentication process. 
-
+* Click **Connect**. This initiates the authentication process. 
 
 ## Content Ingestion
 
 Search AI currently supports the ingestion of **Tasks** from the **Teamwork** application.
 
 Upon ingestion, the content is captured in **JSON format** and includes the following key fields:
-
-
 
 * **Title**: Name of the task
 * **Content**: Task description and assignee details
@@ -95,6 +86,6 @@ You can view the complete set of fields in the Content page.
 
 The **Teamwork Connector** supports Restricted Access Control Lists (RACL) to manage user-specific access to ingested content.
 
-* When restricted access is enabled, the connector stores the **Project ID** as the value of the sys_racl field for all ingested tasks. 
-* The sys_racl field is a permission entity and determines who can access the task data.
-* Use the **Permission Entity APIs** to associate users with the appropriate **Project IDs** stored in the sys_racl field. 
+* When restricted access is enabled, the connector stores the **Project ID** as the value of the `sys_racl` field for all ingested tasks. 
+* The `sys_racl` field is a permission entity and determines who can access the task data.
+* Use the **Permission Entity APIs** to associate users with the appropriate **Project IDs** stored in the `sys_racl` field. 

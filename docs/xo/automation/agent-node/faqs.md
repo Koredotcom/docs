@@ -7,9 +7,9 @@
 ## Language Models
 
 
-### What types of language models are available on the XO Platform?
+### What types of language models are available on the Platform?
 
-The XO Platform offers three types of language models:
+The Platform offers three types of language models:
 
 
 
@@ -89,7 +89,7 @@ There are five key components to creating and using tools:
 
 ### What transition options are available after a tool executes?
 
-The XO Platform provides three options:
+The Platform provides three options:
 
 
 
@@ -101,9 +101,9 @@ The XO Platform provides three options:
 ## Prompts
 
 
-### What types of prompts does the XO Platform offer?
+### What types of prompts does the Platform offer?
 
-The XO Platform offers two main categories of prompts:
+The Platform offers two main categories of prompts:
 
 
 
@@ -240,7 +240,7 @@ When configuring pre- and post-processor scripts at both the node and prompt lev
 
 ### Can I import templates for custom prompts?
 
-Yes, the XO Platform provides templates that you can use as a starting point. Version 2 includes a template specifically designed for GPT-4o, which comes pre-configured with a post-processor script and all the necessary output keys.
+Yes, the Platform provides templates that you can use as a starting point. Version 2 includes a template specifically designed for GPT-4o, which comes pre-configured with a post-processor script and all the necessary output keys.
 
 
 ### How does the conversation history function with Agent Nodes?

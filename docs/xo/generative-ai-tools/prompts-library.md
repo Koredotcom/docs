@@ -1,5 +1,5 @@
 
-# Prompts and Requests Library
+# Prompts Library
 
 		
 
@@ -7,7 +7,7 @@ Effective prompts play a crucial role in enhancing response accuracy when intera
 
 The post processor for prompts allows designers to align LLM responses perfectly with the Platform expectations. Designers can modify the LLM response to guarantee the correct behavior and high-quality interactions during runtime.
 
-For more information on adding prompt for Agent Node, see [Agent Node](../automation/use-cases/dialogs/node-types/genai-node-v2.md#add-custom-prompt-for-genai-node).
+For more information on adding prompt for Agent Node, see [Agent Node](../automation/agent-node/prompt-setup.md).
 
 !!! note
 
@@ -50,9 +50,9 @@ To add a new prompt, follow the steps:
         
         2. Select the **Feature** from the dropdown menu, select the **Model**, and select the **Prompt** from the dropdown menu. Hover over and click Preview Prompt to view the prompt before importing.
 
-        !!! note
+            !!! note
 
-            You have the flexibility to interchange a prompt designated for one feature with that of another, and vice versa.
+                You have the flexibility to interchange a prompt designated for one feature with that of another, and vice versa.
 
         3. Click **Confirm** to get it imported into the JSON body.
 
@@ -102,7 +102,7 @@ For example, double-click the "content" key in the JSON structure and click **Sa
 
 11. (Only for Agent Node) Enter the **Exit Scenario Key-Value fields** and **AI Agent Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. An AI Agent Response Key is available in the response payload to display the AI Agent’s response to the user.
     ![alt_text](images/image1-8.png  )
-12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
+12. Click **Save**. The request is added and displayed in the **Prompts Library** section.
 <img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
  
 13. Now proceed to enable [GenAI Features](genai-features.md).

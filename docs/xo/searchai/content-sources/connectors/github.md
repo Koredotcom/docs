@@ -51,10 +51,9 @@ Search AI supports two types of authentication for communication with GitHub.
 **Personal Access Token**
 
 1. In your GitHub account, go to [Developer Settings](https://github.com/settings/tokens){:target="_blank"} > Personal Access Tokens.
-1. Under Fine-grained tokens, click **Generate new token**.
-1. Provide the following details: 
-* **Resource owner**: Select your **organization**.
-* **Repository access**: Choose **All repositories**.
+1. Under Fine-grained tokens, click **Generate new token** and enter the following details:
+    * **Resource owner**: Select your **organization**.
+    * **Repository access**: Choose **All repositories**.
 1. Assign the required permissions and save.
 
 ![alt_text](images/github/permissions.png "Permissions")
@@ -63,7 +62,7 @@ Search AI supports two types of authentication for communication with GitHub.
 **OAuth authentication**
 
 1. Register a new [OAuth application](https://github.com/settings/developers) in GitHub.
-1. Provide the basic details of the app.
+1. Enter the basic details of the app.
 1. Use one of the following as the callback URLs, depending on your region or deployment:
 * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
 * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
@@ -75,7 +74,7 @@ Search AI supports two types of authentication for communication with GitHub.
 
 ## GitHub Connector Configuration in Search AI
 
-Configure the GitHub connector in Search AI.  Provide the following fields for authentication with the GitHub application. 
+Configure the GitHub connector in Search AI. Enter the following fields for authentication with the GitHub application. 
 
 1. **Name**: Unique identifier for the connector. 
 2. **Authorization Type**: Select the type of authorization. 
@@ -106,6 +105,8 @@ For Pull Requests (PRs), additional details regarding the commits linked to the 
 
 ## RACL Support
 
-Search AI supports access control for content ingested from GitHub accounts. 
+* In GitHub, each piece of content (such as an issue, pull request, or README file) is linked to a specific repository through a unique repository ID.
+* When this content is ingested into Search AI, the repository ID is stored in the RACL field of the chunks related to the ingested content.
+* These repository IDs are the permission entities that control access.
+* Search AI automatically identifies users who have access to the given repository in GitHub and associates them with the corresponding repository ID permission entity in Search AI.
 
-For all content ingested from GitHub repositories, Search AI currently uses the **repository ID** as the `sys_racl` field. This is stored as a permission entity; therefore, use the [Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md) to associate users with the permission entity corresponding to the repository ID, enabling access to the content. 

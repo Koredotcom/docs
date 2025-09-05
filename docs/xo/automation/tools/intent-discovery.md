@@ -16,7 +16,7 @@ The Intent Discovery journey consists of the following steps:
 
 ## Create a Project
 
-1. Go to **Automation AI > Virtual Assistant > Tools > Intent Discovery**.  
+1. Go to **Automation AI > Tools > Intent Discovery**.  
 <img src="../images/intent-discovery-home.png" alt="Click Intent Discovery" title="Click Intent Discovery" style="border: 1px solid gray; zoom:50%;">  
 
 2. Click the **Create Project** button.

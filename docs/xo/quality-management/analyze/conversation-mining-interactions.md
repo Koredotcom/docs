@@ -31,7 +31,7 @@ The **Interactions** dashboard includes the following elements:
 
     !!! Note
 
-        To view and tag the bookmarks for future reference, you must create the required bookmarks during the [Settings](../configure/settings.md) configuration. 
+        To view and tag the bookmarks for future reference, you must create the required bookmarks during the [**Settings**](../configure/settings/quality-ai-general-settings/) configuration. 
 
 * **Queues**: Shows the queue where the system terminated during the interaction.
 

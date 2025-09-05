@@ -76,6 +76,16 @@ Value: `context.path of the value which needs to be assigned to the entity`
 
 Use the flag, `'reuseEntityWords: true',` as part of the pre-conditions to enable entity values extracted in a parent dialog to be automatically available and reused in downstream dialogs without needing to prompt the user again.
 
+If multiple entities of the same type are captured in a dialog before the Dynamic Entity Node is triggered, only the **first entity value** is carried forward to downstream dialogs.
+
+**Example:**
+
+Entities:  
+    1. Departure City  
+    2. Destination City
+
+After both entities are collected, if a Dynamic Intent Node triggers a child dialog, the **Departure City** (the first captured value) is reused in the child dialog, even though the Dynamic Intent was triggered after the **Destination City** was captured.
+
 !!! Note
 
     This setting is ignored if the target intent is FAQ.
@@ -106,7 +116,7 @@ In this section, you can add Custom Meta Tags to the conversation flow to profil
 * User – Define custom tags to be added to the user’s profile information.
 * Session – Define custom tags to be added to the current conversation session.
 
-For more information on custom tags, see [Custom Meta Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+For more information on custom tags, see [Custom Meta Tags](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
 
 ### Connections Properties
@@ -115,7 +125,7 @@ For more information on custom tags, see [Custom Meta Tags](../../../../../analy
 
     Connection properties can be seen and accessed only if this is the bottommost node of a sequence.
 
-Click the Connections tab and set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions/){:target="_blank"} for a detailed setup guide.  
+Click the Connections tab and set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../node-connections/nodes-conditions.md){:target="_blank"} for a detailed setup guide.  
 
 !!! Note
 
@@ -139,5 +149,5 @@ The Connection Path property offers three default variants:
 
 **Related Links**  
 
-* [Using Session and Context Variables in Tasks](../../../using-session-and-context-variables)  
+* [Using Session and Context Variables in Tasks](../../using-session-and-context-variables.md)  
 * [Context Object](../../../intelligence/context-object.md)

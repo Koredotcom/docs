@@ -36,6 +36,77 @@ Click **No Agents Available Voice Flow** to configure the Out of Hours flow. You
 In the **General Settings** of the End Flow node, a text area displays the default message a customer hears when no agents are available. You can edit this message, change language, or add another message by clicking **+ Add Another**.
 <img src="../images/no-agents-available-voice-flow-message.png" alt="No Agents Available Voice Flow Message" title="No Agents Available Voice Flow Message" style="border: 1px solid gray; zoom:70%;">
 
+### Click-to-Call Flow
+
+The Click-to-Call flow lets website visitors initiate a voice call directly from the Web SDK using a button in the chat widget. This provides a seamless escalation path from self-service automation to live agents.  
+<img src="../images/click-to-call-button.png" alt="Click to Call" title="Click to Call" style="border: 1px solid gray; zoom:70%;">
+
+When enabled, users can start a voice call from:
+
+* The website before interacting with the bot.  
+* During an active conversation with the bot.  
+* During a live chat with an agent (in this case, the chat agent receives a closure notification and moves to After Call Work).
+
+!!! Note
+
+The click-to-call flow will appear in the conditional flows if it is turned on from [Theme & Design](../../channels/add-web-mobile-client.md#ai-agent-theme--design).
+
+#### Configuring Click-to-Call Flows
+
+* Click-to-Call launches a flow in the Flow Builder.  
+    * A default flow is published automatically.  
+    * It includes an Agent Transfer node and the message: _“Please wait while we connect you to an agent.”_  
+    * If you remove the Agent Transfer node, the system warns you before publishing.
+
+* Administrators can build advanced flows by adding:  
+    * Script nodes      
+    * Message prompts       
+    * Business hours checks     
+    * Queue assignments     
+    * Agent availability checks     
+    * Agent transfers       
+    * End flow
+
+* Administrators can create multiple Click-to-Call flows for different use cases.  
+* Each flow has a unique Flow ID.  
+* Developers pass the Flow ID in the Web SDK configuration or in SDK headers to control which flow is triggered.  
+* SDK headers can also pass user metadata (for example, page URL) to support conditional logic.
+
+#### Developer Setup
+
+To connect the Web SDK with a Click-to-Call flow:
+
+1. Get the Flow ID from the Flow Builder.  
+2. Add the Flow ID and any required headers to the Web SDK configuration—for example, user ID, session ID, page name, page URL, etc.  
+3. Deploy SDK updates using npm, script tag, or source modification.
+
+#### Web SDK Implementation Methods
+
+* NPM Package users can install the updated package using standard npm update procedures. [Learn more](https://github.com/Koredotcom/web-kore-sdk/tree/v3/dev?tab=readme-ov-file#-getting-started).  
+* Script Tag Users can change the version number in the script tag reference. [Learn more](https://github.com/Koredotcom/web-kore-sdk/tree/v3/dev?tab=readme-ov-file#other-options).  
+* Source Code modifiers can manually copy the changes to their modified version.  
+
+!!! Note
+
+    Any modifications made to the SDK source code are performed at your own risk. Custom modifications may not receive full support in future SDK updates.
+
+#### How It Works
+
+1. A Click-to-Call button appears in the chat widget.  
+    <img src="../images/connect-to-voice-agent.png" alt="Connect to Agent" title="Connect to Agent" style="border: 1px solid gray; zoom:70%;">
+2. When a user clicks the button, a pop-up for closing the conversation is displayed. Click **Confirm**.  
+    <img src="../images/continue-to-voice-conversation.png" alt="Continue to Voice" title="Continue to Voice" style="border: 1px solid gray; zoom:70%;">
+
+    !!! Note
+
+        If the user switches to Click-to-Call, the chat agent is redirected to the After Call Work (ACW) stage.
+
+3. The system initiates a voice call to the contact center.  
+    <img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:70%;">  
+
+    * Relevant context (such as chat transcript, user ID, session ID, and page URL) is passed to the agent.  
+    * The call routes through a configurable Click-to-Call flow in the Experience Flow Builder. 
+
 ## Chat Flows
 
 The following sections describe the configuration of conditional flows for a chat interaction.

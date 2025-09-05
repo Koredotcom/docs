@@ -4,7 +4,7 @@ To retrieve the self reported status (available, busy, away, etc.) and ACD statu
 
 | **Method**       | POST                                                          |
 |--------------|---------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/public/analytics/1.1/account/{{accountId}}//userstatus` |
+| **Endpoint**     | `https://{{host}}/agentassist/api/public/analytics/1.1/account/{{accountId}}/userstatus` |
 | **Content Type** | `application/json`                                            |
 | Authorization| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                         |
@@ -21,7 +21,7 @@ To retrieve the self reported status (available, busy, away, etc.) and ACD statu
 ## Sample Request
 
 ```
-curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}//userstatus' \
+curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/userstatus' \
 --header 'auth: {jwt-code}' \
 --header 'Content-Type: application/json' \
 --header 'IId: {{IId}}' \
@@ -55,7 +55,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
 | dateFilter   | Object with start date, end date, and time zone offset as the fields. It contains the following details to filter the result set. | required  |
 | startDate    | The start date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`. | date, required |
 | endDate      | The end date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`. | date, required |
-| timeZoneOffSet | The time zone offset. For example, `-330,630,-500`.                     | number, required |
+| timeZoneOffSet | The time zone offset. For example, `-330,630,-500`.                     | number, optional |
 | granularity  | The ISO-8601 format is the input. For example, `PT15M, PT30M, PT1H, PT2H, PT4H, PT8H, PT12H, PT24H`. | String, Required |
 
 ## Sample Response

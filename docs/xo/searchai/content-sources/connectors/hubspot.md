@@ -41,7 +41,7 @@ HubSpot provides a CRM platform with different tools to enable businesses to man
 
 You can set up communication between Search AI and HubSpot using a **private app.** 
 
-**Private App**: If you are authenticating via a Private App, you must use your Access Token to set up the connector. Refer to the [official HubSpot documentation](https://developers.hubspot.com/docs/api/private-apps) to learn how to obtain the access token. This access token is used to configure the connector in Search AI. 
+**Private App**: If you are authenticating via a Private App, you must use your Access Token to set up the connector. Refer to the [official HubSpot documentation](https://developers.hubspot.com/docs/api/private-apps){:target="_blank"} to learn how to obtain the access token. This access token is used to configure the connector in Search AI. 
 
 The following **permissions** are required to ingest the required data from the HubSpot account. Select the following scopes while creating the app. 
 
@@ -56,9 +56,7 @@ The following **permissions** are required to ingest the required data from the 
 
 ## HubSpot Connector Configuration
 
-Go to the ***Connectors*** page and select **HubSpot**.  On the **Authentication** page, provide the following information to enable SearchAI to establish a connection with HubSpot. 
-
-
+Go to the ***Connectors*** page and select **HubSpot**. On the **Authentication** page, enter the following details to enable SearchAI to establish a connection with HubSpot. 
 
 * **Name**: Unique name for the connector
 * **Authentication**: Currently authentication via **Private App is supported.**
@@ -67,11 +65,15 @@ Go to the ***Connectors*** page and select **HubSpot**.  On the **Authentication
 
 ## Content Ingestion
 
-After successfully connecting the Search AI connector to the HubSpot account, go to the **Manage Content** page and select the type of content to be ingested from HubSpot. You can select one or more of the supported content types under **Object Type**. 
+After you connect the Search AI connector to the HubSpot account, go to the **Manage Content** page, and then select the content types to ingest from HubSpot. You can select one or more supported content types under **Object Type**. 
 
-Upon sync, Search AI can ingest **Tickets, Contacts, Companies, and Deals** from the HubSpot account. 
+When synchronized, Search AI ingests **Tickets, Contacts, Companies, and Deals** from the HubSpot account.
 
-For each of the four types of ingested content, the following fields are captured as the `content `field in the Search AI index. The` type` field in the ingested content suggests the type of content. Other properties are stored in dedicated fields within the indexed content or as metadata fields. 
+For each content type, the following details are captured:
+
+* The `content` field in the Search AI index stores the main content.
+* The `type` field identifies the content type.
+* Other properties are stored in dedicated fields within the index or as metadata fields.
 
 Tickets: 
 
@@ -116,7 +118,7 @@ Companies
 * Owner Name
 * Associated Contacts
 
-Note that at each sync, the content from the **past 90 days** is ingested from the account. 
+Note: At each sync, content from the past 90 days is ingested from the account. 
 
 ## Content Filtering
 
@@ -149,8 +151,9 @@ Note:
 
 ## RACL Support
 
-For each of the content types ingested from HubSpot, the following fields are added to the sys_racl field. 
+Search AI manages access to HubSpot content using the sys_racl field. For each ingested content type—such as tickets or deals:
 
 
-* Owner of the content type, e.g. owner of the ticket, deal, etc. For the owner, the sys_racl field directly contains the email address of the owner. 
-* The teams having access to the content type, i.e., the teams that the owner of the content belongs to. A permission entity is created corresponding to each team that has access to the content. To enable access control for the team members in Search AI, associate users to the corresponding permission entity using the [Permission Entity APIs](https://docs.kore.ai/xo/apis/searchai/permission-entity-apis/). 
+* The `sys_racl` field includes the email address of the content owner, which allows direct access. 
+* Search AI automatically creates permission entities for the teams the owner belongs to and connects team members to those entities.
+* No manual setup is needed—Search AI handles access associations automatically.

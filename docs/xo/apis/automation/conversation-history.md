@@ -202,7 +202,7 @@ Version 2:
 
 **Sample Request for specific call Ids**
 
-The “call Id” is the unique identifier for a voice call. The user can retrieve IVR voice conversation messages between a user and an app for a specific call Id.
+The “call Id” is the unique identifier for a voice call. The user can retrieve voice conversation messages between a user and a bot for a specific call Id. This applies to the IVR, AudioCodes, and SAVG channels.
 
 ```json
 curl --location \
@@ -326,7 +326,7 @@ Accepted channel types are:
 <li>“rcs”.
 
 <p>
-<strong>Note</strong>: In case of multi-webhook channel configuration, “ivr” gives the conversations for the first WebHook instance. For other WebHoo instance, specify the<code>ivrInstID</code>, you can get it from the WebHook URL which is of the form: <code>{{host_url}}/chatbot/hooks/{{BotId}}/hookInstance/{{ivrInstID}}</code>)
+<strong>Note</strong>: In case of multi-webhook channel configuration, “ivr” gives the conversations for the first WebHook instance. For other WebHook instance, specify the<code>ivrInstID</code>, you can get it from the WebHook URL which is of the form: <code>{{host_url}}/chatbot/hooks/{{BotId}}/hookInstance/{{ivrInstID}}</code>
 </li>
 </ul>
    </td>

@@ -1,4 +1,4 @@
-# Agent-specific Dashboard
+# Agent-Specific Dashboard
 This feature provides a personalized dashboard for each agent. The **Overview** tab of this supervisor’s agent-specific dashboard displays key metrics relevant to the agent, with data filtered by selected periods and channels (Voice or Chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance at an individual level.
 
 You can access the Supervisor view of the Agent-specific dashboard in the following ways:

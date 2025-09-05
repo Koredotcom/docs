@@ -121,7 +121,8 @@ curl --location 'https://{host}/api/public/bot/{BotID}/export' \
     "subTasks": {
         "alerts": [],
         "actions": [],
-        "dialogs": []
+        "dialogs": [],
+        "experienceFlows": []
     },
     "allTasks": true,
     "customDashboards": true,

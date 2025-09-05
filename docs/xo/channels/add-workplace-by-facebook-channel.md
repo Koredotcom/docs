@@ -14,12 +14,12 @@ To complete the following procedure, you must have an admin account in the _Face
 3. The **Workplace by Facebook Channel** page is displayed.
 4. Go to the **Configurations** tab:
     * In the **Communication Mode** section, select one or both of the following:
-        * Allow communication with a VA in a Workplace Group
-        * Allow communication with a VA through a Work Chat
+        * Allow communication with an AI Agent in a Workplace Group
+        * Allow communication with an AI Agent through a Work Chat
     * In the **Manage Permissions** section, set the following as per your requirements ([click here for more on the permissions](https://developers.facebook.com/docs/workplace/reference/permissions)):
         * **Message any member** – To send messages to any group member. This permission is selected by default and is mandatory hence not editable.
-        * **Mention bot** – Needed when the VA is mentioned in a post, to see the post and to reply to comments. This permission is selected by default and is required for the assistant to respond to users in groups.
-        * **Manage group content** – Required to post and comment in groups. This permission is selected by default and is required for the VA to respond to users in groups.
+        * **Mention bot** – Needed when the AI Agent is mentioned in a post, to see the post and to reply to comments. This permission is selected by default and is required for the assistant to respond to users in groups.
+        * **Manage group content** – Required to post and comment in groups. This permission is selected by default and is required for the AI Agent to respond to users in groups.
         * **Create link previews** – Needed to see links added to posts in order to display a preview for certain domains.
         * **Read user email** – Required to see any group member’s email address.
         * **Read work profile** – Required to see any group member’s complete profile, including phone number, department, and location.
@@ -27,7 +27,7 @@ To complete the following procedure, you must have an admin account in the _Face
 
             !!! note
 
-                You are advised to set the permissions correctly after evaluating the above-mentioned link carefully. Managing the permissions for your VA after installing the Kore.ai application on your workplace account needs you to uninstall the application on the workplace account and re-authorize it in the XO platform.        
+                You are advised to set the permissions correctly after evaluating the above-mentioned link carefully. Managing the permissions for your AI Agent after installing the Kore.ai application on your workplace account needs you to uninstall the application on the workplace account and re-authorize it in the XO platform.        
 
 5. Click **Authorize**.
 ![workplace facebook](images/workplace_facebook.png "image_tooltip")
@@ -50,4 +50,4 @@ To complete the following procedure, you must have an admin account in the _Face
 
 12. In XO Platform, from the **Configuration** tab, click **Yes** in the **Enable Channel** section; and click **Save**.
 
-The assistant may require your Bots Admin approval and assignment before it is available to any users.
+The assistant may require your Admin approval and assignment before it is available to any users.

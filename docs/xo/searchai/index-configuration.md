@@ -9,7 +9,7 @@ Vectors or Embeddings are multidimensional numerical representations of the chun
 
 ## Features
 
-* You can select from a range of out-of-the-box embedding models, including MPNet, LaBSE, E5, VDR, and more, all supported by [Kore.ai](Kore.ai) XO GPT. These models are pre-integrated and can be readily used. Additionally, if you have specific requirements, you can choose to use a custom embedding model, which allows for full control over how vectors are generated to best suit your data and search needs.
+* You can select from a range of out-of-the-box embedding models, including MPNet, LaBSE, E5, VDR, and more, all supported by Kore XO GPT. These models are pre-integrated and can be readily used. Additionally, if you have specific requirements, you can choose to use a custom embedding model, which allows for full control over how vectors are generated to best suit your data and search needs.
 * You can choose the chunk fields on which embeddings will be generated. This selection enables you to focus on fields that are more relevant to your specific use case.
 * Multi-vector support, allowing multiple embedding vectors per chunk, where each vector can be tailored to capture different semantic aspects using different field combinations.
 

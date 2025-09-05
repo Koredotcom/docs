@@ -38,7 +38,7 @@ The various user queries in Small Talk are categorized into groups and assigned 
 Following are the various terms associated with Small Talk:
 
 1. **Groups** – Based upon the purpose and content, Small Talk is categorized into groups.
-2. **User Queries** – For each group, you can add User Queries, Alternate Queries, and Child Queries. Queries are formed using patterns. [Learn more](../../natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}.
+2. **User Queries** – For each group, you can add User Queries, Alternate Queries, and Child Queries. Queries are formed using patterns. [Learn more](../natural-language/training/fundamental-meaning.md#manage-patterns-and-rules){:target="_blank"}.
 3. **Bot Responses** – Each User Query must be associated with a bot response. These can be in plain text format or JavaScript. You can specify channel-specific responses. You can also enter multiple responses, one of which will be picked randomly by the Platform at runtime.
 
 ## Default Small Talk
@@ -179,7 +179,7 @@ From the Small Talk editor that opens you can enter User Utterance – App Respo
 On hovering over any Small Talk group, you have the options to:
 
 * **Delete** the group.
-* **Settings** that will allow you to **Manage Variable Namespaces** by associating a variable namespace to use with this Small Talk group. This option is visible only when the variable namespace is enabled for the AI Agent. For more information, refer to [this](../../../app-settings/managing-namespace/){:target="_blank"} link.
+* **Settings** that will allow you to **Manage Variable Namespaces** by associating a variable namespace to use with this Small Talk group. This option is visible only when the variable namespace is enabled for the AI Agent. For more information, refer to [this](../../app-settings/managing-namespace.md){:target="_blank"} link.
 
     <img src="../images/manage-variable-namespaces.png" alt="Manage Variable Namespaces" title="Manage Variable Namespaces" style="border: 1px solid gray; zoom:75%;">
 
@@ -214,7 +214,7 @@ Once you create/import a group, you can add/modify the query-response pairs.
 
     <img src="../images/add-query-response.gif" alt="Add Query Response" title="Add Query Response" style="border: 1px solid gray; zoom:75%;">
 
-3. Queries are designed using patterns. [Learn more](../../natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}.
+3. Queries are designed using patterns. [Learn more](../natural-language/training/fundamental-meaning.md#manage-patterns-and-rules){:target="_blank"}.
 
 4. For each User Query, you can enter **alternate questions** that depict a different way the user might ask the same query.
 

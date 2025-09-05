@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.17.0 August 23, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Utils</font>
+
+**Support Call Control Parameters in Voiceutils**
+
+The voicemail feature in `voiceutils.voicemail` now supports call control parameters, enabling dynamic language execution. This enhancement extends voicemail functionality beyond English to include additional languages, such as Spanish, to provide multilingual support. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#voicemails)
+
+<font size="4">Call Recording</font>
+
+**Voice Call Recordings Retention Configuration for On-Prem Customers**
+
+On-prem customers can now configure a retention period for voice call recordings to meet compliance and storage needs. Recordings are permanently deleted after expiration, with email notifications sent 7 days before and upon deletion. Deleted recordings display the message: “Recording not available. It may have been deleted as per your data retention policy.” Customers who do not opt in remain unaffected. All configuration and deletion actions are logged in the admin console for audit purposes. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+
+<font size="4">API</font>
+
+**Call Control Parameters in Outbound Calling API**
+
+The Outbound Calling API now supports optional call control parameters, enabling third-party Contact Center platforms and external systems to dynamically configure ASR and TTS settings on a per-call basis. These parameters, passed alongside existing request parameters, are forwarded to the Speech and Voice Gateway (SAVG), allowing fine-tuned voice optimization without relying solely on app-level configurations. This enhancement improves voice quality and flexibility while maintaining full backward compatibility. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/outbound-calling-vg.md)
+
+<hr>
+
 ## v11.16.1 August 11, 2025
 
 <u> Patch Release </u>
@@ -100,7 +126,7 @@ Repeat user identification is extended to the Voice Channel. This enhancement en
 
 **Support for ‘Speed’ Parameter in Elevenlabs TTS**
 
-The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ parameter, allowing control over the speech playback rate. This enhancement enables adjusting the speaking speed for more natural and customized audio output. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#elevenlabs)
+The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ parameter, allowing control over the speech playback rate. This enhancement enables adjusting the speaking speed for more natural and customized audio output. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/speech-customization.md#elevenlabs)
 
 <font size="4">Text to Speech (TTS)</font>
 
@@ -205,7 +231,7 @@ New call control parameters have been added to improve transcription quality whe
 * `filler_words`: Controls the inclusion of filler words (um, uh, like) in transcriptions.
 * `keyterm`: Boosts the Keyword Recall Rate (KRR) for important keyterms or phrases by up to 90%.
 
-[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#common-asr-parameters)
+[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/speech-customization.md#common-asr-parameters)
 
 <font size="4">Flows</font>
 

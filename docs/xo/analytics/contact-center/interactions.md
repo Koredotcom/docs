@@ -292,13 +292,15 @@ The transcripts tab also shows the call transfer stages:
 
 * **User transferred to Agent** - When the Automation transfers the voice call to Agent.
 * **User transferred to Automation** - When the Agent transfers the voice call back to Automation.  
-<img src="../images/transfer-stage.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-stage.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:70%;">
+* **Max no-input attempts reached** - when the automation triggers the respective AI Agent behavior for exceeding maximum retries.  
+    <img src="../images/transcript-insights-to-logs.png" alt="Max No-Input Attempts Reached" title="Max No-Input Attempts Reached" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
     * When customers are placed on hold (either themselves or by an agent), the system will not display transcripts of any customer speech during the hold period. 
 
-    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties)
+    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties).
 
 **DETAILS**: This tab shows the following details:
 
@@ -327,7 +329,7 @@ The transcripts tab also shows the call transfer stages:
 **Channel User ID**: The user ID of the conversation channel.  
 **User ID**: Agent’s user ID.  
 **User-level tags**: User-level tags assigned to the conversation.  
-<img src="../images/user-insights-to-logs.png alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/user-insights-to-logs.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
 
 **IDENTIFIERS**: This tab shows the following details:
 
@@ -379,16 +381,28 @@ The following recording settings can be configured:
 
     You can choose either as a single file or separate files.
 
-    * **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
+!!! Note
 
-        <img src="../images/single-recording.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
+    * The retention period for voice call recordings can be configured based on customer requests. You can raise a request with us, and we will set it up accordingly.  
 
-    * **Download as separate files**: If you choose this option, you can select the files and download them.  
+    * Once the configured retention period ends, the recordings are permanently deleted.  
 
-        <img src="../images/multiple-recording.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+    * Customers who opt in will receive an email 7 days before deletion and a confirmation email after deletion.  
 
-    The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
-    <img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+    * After deletion, the following message will be displayed to users: “Recording not available. It may have been deleted as per your data retention policy.”  
+    
+    * All actions—including retention configuration and recording deletions—are logged and accessible in the Admin Console.
+
+* **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
+
+    <img src="../images/single-recording.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
+
+* **Download as separate files**: If you choose this option, you can select the files and download them.  
+
+    <img src="../images/multiple-recording.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+
+The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
+<img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
 
 * Duration: The increment and the countdown counters appear when the audio plays. The total duration of the audio is displayed before the audio plays.  
     <img src="../images/duration.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">

@@ -6,7 +6,7 @@ The Ranking & Resolver engine receives the outputs from the above engines and fu
 
 <div class="admonition note">
 <p class="admonition-title">Important Information</p>
-<p><ul><li>With the introduction of the <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#few-shot-model-koreai-hosted-embeddings ">Few-shot Model</a> in ML and KG engines, rescoring by Ranking & Resolver is no longer required for intent identification. Therefore, we have introduced a new version of Ranking & Resolver (Version 2) for Few-shot models that only ranks intents based on scores from ML and KG engines.</li>
+<p><ul><li>With the introduction of the <a href="machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings ">Few-shot Model</a> in ML and KG engines, rescoring by Ranking & Resolver is no longer required for intent identification. Therefore, we have introduced a new version of Ranking & Resolver (Version 2) for Few-shot models that only ranks intents based on scores from ML and KG engines.</li>
 <li>The version significantly improves the accuracy of intent identification.</li></ul>
 <p>You can choose one of the following Ranker and Resolver versions to define how to rank matched intents from NLP engines and determine the winning intent:</p>
 <ul><li>Version 1 rescores the intents matched by the NLP engines and ranks them based on the rescored results to identify the winning intent in the user input.</li>
@@ -25,7 +25,7 @@ The Ranking & Resolver engine receives the outputs from the above engines and fu
 <ol><li>Navigate to <b>Natural Language</b> > <b>NLU Config</b> > <b>Ranking and Resolver Engine</b>.</li>
 <li>Select <b><i>Version 2</i></b> for <b>Rank and Resolver Version</b>.</li>
 <li>Click <b>Enable Now</b> in the confirmation window.</li>
-Once enabled, you can use Utterance Testing to see your bot's behavior with R&R V2. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/#ranking-and-resolver">Learn more</a>.</ol></p>
+Once enabled, you can use Utterance Testing to see your app's behavior with R&R V2. <a href="../../testing/testing-your-bot-with-nlp.md#ranking-and-resolver">Learn more</a>.</ol></p>
 
 ## How Ranking and Resolver Works for Different NLP Engines
 
@@ -48,16 +48,16 @@ Here is an overview of the various parameters that the R&R engine works with:
 
 ## Working Processes
 
-The NLP engine uses a hybrid approach using Machine Learning, Fundamental Meaning, and Knowledge Graph (if the assistant has one) models to score the matching intents on relevance. The model classifies user utterances as either being _Probable Matches_ or _Definitive Matches_.
+The NLP engine uses a hybrid approach using Machine Learning, Fundamental Meaning, and Knowledge Graph (if the app has one) models to score the matching intents on relevance. The model classifies user utterances as either being _Probable Matches_ or _Definitive Matches_.
 
-_Definitive Matches_ get high confidence scores and are assumed to be perfect matches for the user utterance. In published assistants , if user input matches with a single _Definitive Match_, the VA directly executes the task. If the utterances match with multiple _Definitive Matches_, they are sent as options for the end-user to choose one.
+_Definitive Matches_ get high confidence scores and are assumed to be perfect matches for the user utterance. In published assistants , if user input matches with a single _Definitive Match_, the app directly executes the task. If the utterances match with multiple _Definitive Matches_, they are sent as options for the end-user to choose one.
 
-On the other hand, _Probable Matches_ are intents that score reasonably well against the user input but do not inspire enough confidence to be termed as exact matches. Internally the system further classifies probable matches into good and unsure matches based on their scores. If the end-user utterances were generating probable matches in a published assistant, the VA sends these matches as _Did you mean?_ suggestions for the end-user.
+On the other hand, _Probable Matches_ are intents that score reasonably well against the user input but do not inspire enough confidence to be termed as exact matches. Internally the system further classifies probable matches into good and unsure matches based on their scores. If the end-user utterances were generating probable matches in a published app, the app sends these matches as _Did you mean?_ suggestions for the end-user.
 
 Based on the ranking and resolver, the winning intent between the engines is ascertained. If the Platform finds ambiguity, then an ambiguity dialog is initiated. The Platform initiates one of these two system dialogs when it cannot ascertain a single winning intent for a user utterance:
 
-* **Disambiguation Dialog**: Initiated when there are more than one _Definitive_ matches returned across engines. In this scenario, the VA asks the user to choose a _Definitive_ match to execute. You can customize the message shown to the user from the NLP Standard Responses.
-* **Did You Mean Dialog**: Initiated if the Ranking and Resolver returns more than one winner or the only winning intent is an FAQ whose KG engine score is between lower and upper thresholds. This dialog lets the user know that the VA found a match to an intent that it is not entirely sure about and would like the user to select to proceed further. In this scenario, the developer should identify these utterances and train the assistant further. You can customize the message shown to the user from the NLP Standard Responses.
+* **Disambiguation Dialog**: Initiated when there are more than one _Definitive_ matches returned across engines. In this scenario, the app asks the user to choose a _Definitive_ match to execute. You can customize the message shown to the user from the NLP Standard Responses.
+* **Did You Mean Dialog**: Initiated if the Ranking and Resolver returns more than one winner or the only winning intent is an FAQ whose KG engine score is between lower and upper thresholds. This dialog lets the user know that the app found a match to an intent that it is not entirely sure about and would like the user to select to proceed further. In this scenario, the developer should identify these utterances and train the app further. You can customize the message shown to the user from the NLP Standard Responses.
 
 ### Deciding the Winning Intent
 
@@ -75,7 +75,7 @@ The wining intent is decided by the Ranking & Resolver as follows:
     * If only FM or ML engines found an Intent but probable, that’s the winning intent.
     * If only the KG engine found a probable intent and its score is > higher threshold(80%) then that’s the winning intent.
     * If only the KG engine found a probable Intent and its score is >60% but &lt;80% then that’s the winning intent, but since the confidence is low, show it as a suggestion (user will see “Did you mean”)
-    * If more than one probable intents were found. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/#analyzing-the-test-results){:target="_blank"}.
+    * If more than one probable intents were found. [Learn more](../../testing/testing-your-bot-with-nlp.md#analyzing-the-test-results){:target="_blank"}.
 
 ## Thresholds & Configuration
 
@@ -118,9 +118,9 @@ The Natural Language Analysis will result in the following scenarios, which will
 * NLP Analysis with multiple engines returning a probable match and resolver returning multiple results.
 * NLP Analysis with no match.
 
-To understand NLP detection, let us use the example of a Travel Planning assistant with the following details:
+To understand NLP detection, let us use the example of a Travel Planning app with the following details:
 
-* The assistant consists of several dialog tasks and its intents are trained with Synonyms, Patterns, and ML utterances.
+* The app consists of several dialog tasks and its intents are trained with Synonyms, Patterns, and ML utterances.
 * The Knowledge Graph is defined with 86 FAQs distributed across 4 top-level terms.
 
 ### Scenario 1 – FM Identifying a Definitive Match

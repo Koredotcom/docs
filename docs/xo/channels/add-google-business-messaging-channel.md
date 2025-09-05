@@ -12,7 +12,7 @@
 
 Modern business applications require agent integrations on web/mobile devices to enable seamless customer communication via SMS/chats.
 
-The **Kore.ai XO Platform** now helps a _Google Business Messaging Partner_ to create rich and asynchronous messaging experiences within apps and during calls through the GBM channel enablement. This feature helps seamlessly integrate real-time business agents to Virtual Assistants.
+The **Kore.ai XO Platform** now helps a _Google Business Messaging Partner_ to create rich and asynchronous messaging experiences within apps and during calls through the GBM channel enablement. This feature helps seamlessly integrate real-time business agents to AI Agents.
 
 **Google Business Messaging (GBM)** is a mobile conversational channel that combines digital customer touchpoints or entry points on Google Maps, Search, and brand websites.
 
@@ -49,7 +49,7 @@ With Business Messages, you can place messaging buttons for brands managed by Ko
 
 **The Messaging Flow**
 
-1. When a customer clicks the button, a conversation is initiated with the brand’s virtual agent on the device.
+1. When a customer clicks the button, a conversation is initiated with the brand’s AI Agent on the device.
 2. Google delivers the message defined as a JSON payload to the Webhook that Kore.ai provides.
 3. The agent uses this Webhook and the Conversational Agent API to receive and respond to the customer’s messages.
 
@@ -70,7 +70,7 @@ The important steps to set up the GBM channel are summarized below:
 
 * An active **Google account**.
 * The **Partner Name** field appears in the [Google My Business (GMB) Console](https://www.google.com/business/) for locations associated with the agents you manage.
-* A **webhook endpoint URL** that can accept messages (Kore.ai generates the webhook URL, which will be associated with a virtual assistant built on the platform).
+* A **webhook endpoint URL** that can accept messages (Kore.ai generates the webhook URL, which will be associated with a AI Agent assistant built on the platform).
 
 **Create a Google Cloud Platform Project**
 
@@ -90,7 +90,7 @@ To set up the GBM channel on the Kore.ai XO Platform and launch the agent, follo
 2. [Create an agent for your account](#step-2-create-an-agent-for-your-account).
 3. [Set up the Webhook for the agent](#step-3-if-business-helper-bot-is-disabled-set-an-agent-level-webhook).
 4. [Create a Service Account Key](#step-4-create-a-service-account-key).
-5. [Configure the Virtual Assistant for the service account](#step-5-configure-the-virtual-assistant-for-the-service-account).
+5. [Configure the AI Agent for the service account](#step-5-configure-the-ai-agent-for-the-service-account).
 
 
 ## Step1: Register as a GBM Partner
@@ -230,9 +230,9 @@ To send messages and events as your agent, you need to authenticate API calls wi
 5. Store the key securely to recover it if required.
 
 
-## Step 5: Configure the Virtual Assistant for the Service Account
+## Step 5: Configure the AI Agent for the Service Account
 
-To configure the virtual assistant for the service account on the Kore.ai XO Platform, follow the steps below:
+To configure the AI Agent for the service account on the Kore.ai XO Platform, follow the steps below:
 
 !!! tip
 
@@ -248,6 +248,6 @@ To configure the virtual assistant for the service account on the Kore.ai XO Pla
 
 4. Click **Save**
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

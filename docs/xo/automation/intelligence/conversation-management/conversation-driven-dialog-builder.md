@@ -1,6 +1,6 @@
 # Conversation-driven Dialog Builder
 
-Conversation Builder is a new dialog task editor which allows you to design and build a dialog task using conversational elements. It leverages the [Flow-based Dialog Task Builder](/docs/xo/automation/use-cases/dialogs/dialog-tasks-overview/){target="_blank"}.
+Conversation Builder is a new dialog task editor which allows you to design and build a dialog task using conversational elements. It leverages the [Flow-based Dialog Task Builder](../../use-cases/dialogs/dialog-tasks-overview.md){target="_blank"}.
 
 Developing the Dialog Task Builder involves manual effort in understanding and converting the conversation components into dialog components.
 
@@ -20,13 +20,13 @@ This is the new dialog builder with the options to drag and drop or add the nece
 
 Developer can make configuration changes and add appropriate service calls etc. to make it a fully functional AI Agent.
 
-You can access this view by clicking **Virtual Assistant** > **Use Cases** > **Dialogs**.
+You can access this view by clicking **Automation AI** > **Use Cases** > **Dialogs**.
 
 <img src="../images/access-dialogs.png" alt="access dialogs" title="access dialogs" style="border: 1px solid gray; zoom:75%;">
 
 ## Create and Configure a Dialog
 
-You can initiate a Conversation-driven Dialog Builder with the steps mentioned [here](/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#create-a-dialog-task){target="_blank"}.
+You can initiate a Conversation-driven Dialog Builder with the steps mentioned [here](../../use-cases/dialogs/using-the-dialog-builder-tool.md#create-a-dialog-task){target="_blank"}.
 
 Configure the fields based on the option you select:
 
@@ -46,7 +46,7 @@ Configure the fields based on the option you select:
      <li><b>Intent Settings</b>: You can set how the dialog task will be presented to the app based on the intent by selecting one of these options:</li>
        <ul><li><b>Sub intent dialog</b>: Task can be invoked only as a sub-task when another task is in progress. Task will not be presented as an app task when user requests for help.</li>
       <li><b>Hide from help</b>: Task will not be presented as an app task when the user requests for help. Users can invoke this task anytime while talking to the app.</li></ul>
-      <li><b>Analytics - Containment Type</b>: When you leave a conversation without providing an input, then the platform considers that conversation as a <b>Drop Off</b>. Drop off also results in scenarios where the virtual assistant asks input for feedback or when it asks if there is  ‘anything else’ with which it can help you. At times even if the tasks are helper tasks, they still lead to higher drop-off rates. To prevent this, while creating a dialog task you are provided with an option to configure the containment type as either drop-off or a self-service, when the user abandons the conversation. Based on the user abandonment type, select one of the following:</li>
+      <li><b>Analytics - Containment Type</b>: When you leave a conversation without providing an input, then the platform considers that conversation as a <b>Drop Off</b>. Drop off also results in scenarios where the AI Agent asks input for feedback or when it asks if there is  ‘anything else’ with which it can help you. At times even if the tasks are helper tasks, they still lead to higher drop-off rates. To prevent this, while creating a dialog task you are provided with an option to configure the containment type as either drop-off or a self-service, when the user abandons the conversation. Based on the user abandonment type, select one of the following:</li>
     <ul><li><b>Abandonment as Self-Service</b>: Conversations abandoned by users while executing this Dialog are considered 'Self-service Conversations'. Other failures are considered 'Drop-off Conversations'.</li>
     <li><b>Abandonment as Drop Off</b>: Conversations abandoned by users or any failures during execution of this Dialog will be considered as Drop off.</li></ul>
 
@@ -81,12 +81,12 @@ To find and install a third-party dialog template out of 150+ categories and 30+
 
 ## Navigating Dialog Tasks
 
-Please click [here](/docs/xo/automation/use-cases/dialogs/navigating-dialog-tasks/){target="_blank"} to learn more.
+Please click [here](../../use-cases/dialogs/navigating-dialog-tasks.md){target="_blank"} to learn more.
 
 ## Dialog Builder Components
 
-To learn more about the components available on the Dialog Builder Panel, click [here](/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#dialog-task-builder-overview){target="_blank"}.
+To learn more about the components available on the Dialog Builder Panel, click [here](../../use-cases/dialogs/using-the-dialog-builder-tool.md#dialog-task-builder-overview){target="_blank"}.
 
 ## Node Types
 
-Please click [here](/docs/xo/automation/use-cases/dialogs/node-types/nodes-transitions/#node-types){target="_blank"} to learn more about the node types supported on UXO Platform's Dialog Builder.
+Please click [here](../../use-cases/dialogs/node-types/nodes-transitions.md#node-types){target="_blank"} to learn more about the node types supported on UXO Platform's Dialog Builder.

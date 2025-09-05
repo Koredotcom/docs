@@ -32,7 +32,7 @@ To enable automatic translation using Google Translation Services, please follow
 
 <img src="../images/mts-img2-google-translation-config-1.png" alt="Translation configurations - Google" title="Translation Configurations - Google" style="border: 1px solid gray;zoom:50%;"/>
 
-To know how to use the service, please visit [KoreUtil Libraries – autoTranslate.](../../../apis/automation/koreutil-libraries/#koreutilautotranslate){:target="_blank"}
+To know how to use the service, please visit [KoreUtil Libraries – autoTranslate.](../../apis/automation/koreutil-libraries.md#koreutilautotranslate){:target="_blank"}
 
 
 ## Configuring Custom Translation Service
@@ -75,7 +75,7 @@ Here is how custom translation services work:
 
 3. Provide a name for the **Custom Translation Engine**.
 4. Define the request payload for sending the text to be translated. Refer to the details provided above for defining the request payload.
-5. Refer to the [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node/#define-a-custom-service){:target="_blank"} documentation to learn more about how to configure service integrations.  
+5. Refer to the [Service Node](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#define-a-custom-service){:target="_blank"} documentation to learn more about how to configure service integrations.  
 <img src="../images/mts-img4-custom-translation-config-1.png" alt="Define Request payload" title="Define request payload" style="border: 1px solid gray;zoom:50%;"/>
 
 6. After defining the request payload, you can test the integration by providing the required details from the Test Request tab. Provide the sample values for the variables shown under the Sample Context Values sections, click **Test** to verify if the custom translation connection is established.  
