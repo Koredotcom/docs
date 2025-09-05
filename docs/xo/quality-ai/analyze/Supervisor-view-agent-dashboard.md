@@ -1,30 +1,59 @@
-# Agent-specific Dashboard
-This feature provides a personalized dashboard for each agent. The **Overview** tab of this supervisor’s agent-specific dashboard displays key metrics relevant to the agent, with data filtered by selected periods and channels (Voice or Chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance at an individual level.
-
-You can access the Supervisor view of the Agent-specific dashboard in the following ways:
-
-**Approach 1:**
-
-1. Navigate to **Contact Center AI** > **Quality AI** > **Dashboard** > **Agent Leaderboard**. 
-
-2. Click any of the agents from the **Agent Leaderboard** as shown in the following **Overview** screen of the agent-specific dashboard.  
-<img src="../agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
-
-**Approach 2:**
-
-1. Navigate to **Contact Center AI** > **Quality AI** > **Agent Leaderboard**. The following screen is displayed.  
-<img src="../agent-leaderboard/images/agent-leaderboard-default.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
-
-2. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent-specific dashboard is displayed.   
-<img src="../agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
-
-Each agent has a dedicated dashboard accessible to both the agents and their supervisor. This dashboard displays high-level metrics for supervisors to review.
-
-The supervisor can filter by the desired languages, date range using the calendar, and agent interactions across all channels (Voice and Chat). See the [**Date Range**](../analyze/dashboard.md/#date-range) and [**Channel**](../analyze/dashboard.md/#channel) dashboard filters for more information.
+# Agent-Specific Dashboard
 
 ## Overview
 
-The **Dashboard Overview** tab displays the selected agent’s dashboard metrics, calculated for that specific agent, time period, and channel (voice and chat). It provides the supervisor’s view of the Agent Dashboard specific to each agent, which includes the following: 
+The **Overview** tab provides supervisors with a personalized dashboard for each agent, showing key performance metrics filtered by language, date range (calendar), and channels (Voice or Chat). It highlights high-risk interactions, including those that fail critical standards, and displays assigned coaching tasks. This helps supervisors identify performance gaps and deliver targeted coaching to improve individual agent performance. 
+
+Each agent has a dedicated dashboard that is accessible to both the agent and their supervisor. It displays high-level metrics for supervisors to review. A supervisor can access the agent-specific dashboard in the following ways:
+
+**Approach 1:**
+
+1. Navigate to **Quality AI** > **Dashboard** > **Agent Leaderboard**. 
+<img src="../agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+
+2. Click any agent in the **Agent Leaderboard** dashboard. The following agent-specific **Overview** screen is displayed.  
+<img src="../agent-leaderboard/images/agent-leaderboard-dashboard1.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">
+
+**Approach 2:**
+
+1. Navigate to **Quality AI** > **Agent Leaderboard**.   
+<img src="../agent-leaderboard/images/agent-leaderboard-default.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+
+2. Click any agent in the **Agent Leaderboard** Dashboard. The following agent-specific **Overview** screen is displayed.  
+<img src="../agent-leaderboard/images/agent-leaderboard-overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">
+
+This tab provides the supervisor’s view of the agent dashboard for each agent and includes the following: 
+
+### Filter Options
+
+Supervisors can filter dashboard data by Language, [**Date Range**](../analyze/dashboard.md/#date-range) and [**Channel**](../analyze/dashboard.md/#channel). 
+
+The Dashboard metrics allow you to filter and refine the data displayed across the entire Agent Dashboard by selected languages, date range (calendar), and channel.
+
+#### All Languages
+
+You can search and filter by language across the dashboard and apply the language-specific metrics. You can select more than one language or all languages simultaneously. These metrics are based on the languages configured at the evaluation metric level under the **Language Settings**. 
+
+    
+!!! note
+            
+    By default, all languages are selected when the **All Languages **filter is applied. Metrics are only displayed for languages configured at the evaluation metric level under **Configuration** > **Settings**.
+
+When a language filter is applied, the following widget metrics are updated to reflect data specific to the selected languages:
+
+* **Total Audits**: Shows audit count only for selected languages.
+
+* **Avg. Audits per Agent:** Updates to show average for selected languages.
+
+* **Evaluation Score** (Manual Vs Auto QA Score): Updates both Manual and Auto QA scores for selected languages.
+
+* **Fail Statistics (Evaluation Form)**: Shows failure data for selected languages.
+
+* **Performance Monitor (Evaluation Form)**: Updates performance metrics for selected languages.
+
+### Agent Performance Metrics
+
+The following metrics help evaluate agent performance and coaching progress, filtered by selected languages and date range:
 
 * **Total Interactions**: This displays the total interactions completed by the agent during the selected time.     
     <img src="../agent-leaderboard/images/total-interactions.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
@@ -41,20 +70,23 @@ The **Dashboard Overview** tab displays the selected agent’s dashboard metrics
 * **Total Coaching Assignments**: This displays the total number of coaching sessions assigned to the agent over a selected time.   
     <img src="../agent-leaderboard/images/total-coaching-assignemnts.png" alt="Total Coaching Assignments" title="Total Coaching Assignments" style="border: 1px solid gray; zoom:100%;">
 
-* **No. of Fails**: This displays the total count of scorecard failures for the agent over a selected time.   
+* **No. of Fails**: This displays the total number of scorecard failures for the agent over a selected time period.   
     <img src="../agent-leaderboard/images/No-of-fails.png" alt="No. of Fails" title="No. of Fails" style="border: 1px solid gray; zoom:100%;">
+
+* **Fatal Interactions**: This displays visual indicators of an agent’s interactions that failed critical compliance or quality criteria. These help supervisors quickly identify and address high-risk interactions.     
+    <img src="../agent-leaderboard/images/fatal-interactions.png" alt="Fatal Interactions" title="Fatal Interactions" style="border: 1px solid gray; zoom:100%;">
 
 **Coaching Insights**
 
-* **Strongest Attributes**: This displays the top 5 attributes with the highest scores from the scorecards assigned to the agent during the selected time, with each attribute having a score greater than 80, listed in descending order.    
+* **Strongest Attributes**: Displays the top five attributes with the highest scores from the agent’s scorecards during the selected time period. Only attributes with scores above 80 are shown, listed in descending order.   
     <img src="../agent-leaderboard/images/strongest-attributes.png" alt="Strongest Attributes" title="Strongest Attributes" style="border: 1px solid gray; zoom:80%;">
 
-* **Opportunity Areas**: This displays the bottom 5 attributes with the lowest scores from the scorecards assigned to the agent during the selected time (the attribute score must be &lt; 80 to be highlighted as an opportunity area).    
+* **Opportunity Areas**: Displays the bottom five attributes with the lowest scores from the agent’s scorecards during the selected time period. Only attributes with scores below 80 are shown as areas for improvement.      
     <img src="../agent-leaderboard/images/opportunity-areas.png" alt="Opportunity Areas" title="Opportunity Areas" style="border: 1px solid gray; zoom:80%;">
 
 **Coaching Assignments**
 
-This feature displays all coaching assignments given to an agent as part of the agent dashboard. Supervisors can track performance trends related to scorecards over various periods to assess progress or declines and take necessary actions with coaching assignments.   
+This feature displays all coaching assignments given to an agent within the agent dashboard. Supervisors can track scorecard performance trends over time to assess progress or decline and take appropriate action through targeted coaching.   
 <img src="../agent-leaderboard/images/coaching-assignments.png" alt="Coaching Assignments" title="Coaching Assignments" style="border: 1px solid gray; zoom:80%;">
 
 The Coaching Assignments include the following items:
@@ -69,7 +101,7 @@ The Coaching Assignments include the following items:
 
 * **Status**: This displays three types of status for the coaching assignment, calculated based on the number of interactions opened out of those assigned (including both interactions marked for coaching and best responses) for that assignment as follows:
 
-    * **Start Now**: Number of interactions clicked through for that assignment. 
+    * **Start Now**: This indicates that the coaching is ready to start.
     
     !!! note
             
@@ -89,7 +121,9 @@ For more detailed information, see [Coaching Assignments - Supervisor View](../c
 
 ### Scorecard Trend
 
-This feature displays an agent's assigned scorecards and allows supervisors to track performance trends over different periods. The scorecard trend widget highlights attributes and scoring patterns for each scorecard on Daily, Weekly, and Monthly scales. Supervisors leverage this data to pinpoint progress or declines and to make informed coaching decisions. The agent dashboard incorporates a tabular scorecard trend widget to support this analysis, displaying scoring trends at the attribute level across Daily, Weekly, and Monthly intervals.   
+The Scorecard Trend feature displays an agent’s assigned scorecards and highlights performance trends over Daily, Weekly, and Monthly intervals. It allows supervisors to track attribute-level scoring patterns, identify progress or decline, and make informed coaching decisions. The trend widget appears in a tabular format within the agent dashboard.
+
+Scorecard trends and average scores are customized based on the globally selected language. However, Scorecard widgets support independent language selection at the widget level, overriding the global setting. This dual-language control enables supervisors to analyze agent performance across multiple languages with detailed insights into trends and coaching needs.   
 <img src="../agent-leaderboard/images/scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
