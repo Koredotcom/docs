@@ -142,7 +142,7 @@ After adding and configuring the node as mentioned [here](../types-of-nodes/inte
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-<ol><li>Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables" target="_blank">Learn more</a></li>
+<ol><li>Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a></li>
 <img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;"></ol>
 <ol start="2"><li>In the <b>Enter input variable</b> window, select the appropriate data type for the <b>Type</b> field to define the input variable.</li>
 <li>Click <b>Save</b>.</li></ol>
@@ -159,7 +159,7 @@ This step is required because the **Start node** must have at least one **output
 <li>Click <b>Add Output Variable</b>.</li>
 <img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <i>String</i> for <b>Type</b>.</li>
-<li>Click <b>Save</b>. <a href="../../tool-flows/types-of-nodes/integration-node.md/#access-the-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
+<li>Click <b>Save</b>. <a href="#access-the-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
 <img src="../images/output-variable.png" alt="op variable" title="op variable" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Step 3: Run the Flow
