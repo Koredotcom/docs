@@ -42,7 +42,7 @@ This document contains a step-by-step process of handing over a call (via SIP IN
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>The details of the above credentials are available in the [Genesys configuration](#step-5--trunk) section.</p>
+    <p>The details of the above credentials are available in the [Genesys configuration](#step-5-trunk) section.</p>
     </div>  
 
     <img src="../images/sip-transfer-5.png" alt="sip-transfer" title="sip-transfer" style="border: 1px solid gray; zoom:80%;">  
@@ -115,7 +115,7 @@ For **Service Provider**, use **Internal** and add a comment on what the range i
 
 **DID Assignments**    
 
-Assign the number you created to the Call Route from [Step-4](#step-4--call-route). 
+Assign the number you created to the Call Route from [Step-4](#step-4-call-route). 
 
 * Assignee Type: Call Flow
 * DID Number: Your number 
@@ -130,7 +130,7 @@ Assign the number you created to the Call Route from [Step-4](#step-4--call-rout
 
     <img src="../images/create-call-route-14.png" alt="create-call-route" title="create-call-route" style="border: 1px solid gray; zoom:80%;">   
 
-3. Set up a call route to map the DID Number created in [Step-3](#step-3--did-numbers) to the call flow created in [Step-2](#step-2--architect-flow).   
+3. Set up a call route to map the DID Number created in [Step-3](#step-3-did-numbers) to the call flow created in [Step-2](#step-2-architect-flow).   
 
 ### Step 5 – Trunk  
 
