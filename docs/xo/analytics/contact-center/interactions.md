@@ -72,6 +72,7 @@ The search feature on Interactions allows supervisors to do the following:
     * Complete matches receive the highest rank in the search results.
     * Results that match all single words of a phrase receive the next priority.
     * Results that receive the last priority are those where only a few words of a phrase match.
+* The search also provides an option to sort results by timestamp. By default, search results appear in order of relevance, with the most relevant results listed first. You can click the Start Time column to sort results by timestamp in either ascending or descending order.  
 * Ignore common words like Articles, Pronouns, and Prepositions while matching.
 
 How it works:
