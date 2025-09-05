@@ -4,8 +4,8 @@ The External Models tab in the Models section allows you to connect and manage m
 
 You can connect external models to the platform in two ways:
 
-* **[Easy Integration](https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-easy-integration/)** – Use a guided setup to connect with providers like OpenAI, Anthropic, Google, Cohere, or Amazon Bedrock.
-* **[API Integration](https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-api-integration/)** – Add a custom model by configuring API endpoint details, authentication, and request settings.
+* [Easy Integration](../external-models/add-an-external-model-using-easy-integration.md) – Use a guided setup to connect with providers like OpenAI, Anthropic, Google, Cohere, or Amazon Bedrock.
+* [API Integration](../external-models/add-an-external-model-using-api-integration.md) – Add a custom model by configuring API endpoint details, authentication, and request settings.
 
 ## Viewing Connected Models
 

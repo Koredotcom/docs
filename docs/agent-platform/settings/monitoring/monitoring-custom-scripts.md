@@ -68,7 +68,7 @@
 
 To access the feature, follow the steps below:
 
-1. [Navigate](https://docs.kore.ai/agent-platform/administration/overview/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. [Navigate](../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Custom scripts**.
    <img src="../images/access-custom-script-monitoring.png" alt="custom scripts monitoring" title="custom scripts monitoring" style="border: 1px solid gray; zoom:75%;">
 
@@ -258,7 +258,7 @@ Use the time selection dropdown (displayed as "Custom") at the top-right of the 
 
 ## Columns Filtering
 
-You can narrow down the information displayed for custom script runs and logs by applying **custom column filters**. This functionality is similar to the **Filter** in the Audit Logs feature. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/audit-logs/#filter-audit-logs){:target="_blank"}. 
+You can narrow down the information displayed for custom script runs and logs by applying **custom column filters**. This functionality is similar to the **Filter** in the Audit Logs feature. [Learn more](../monitoring/audit-logs.md/#filter-audit-logs){:target="_blank"}. 
 
 Additionally, the filter for custom scripts includes the **contains** operator, which matches results that include a specific keyword or value you enter. For example, the following image depicts checking if the **Log message** contains the string “*Adding*.”  
  

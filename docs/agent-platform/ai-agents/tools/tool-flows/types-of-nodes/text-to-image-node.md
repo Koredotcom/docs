@@ -90,12 +90,12 @@ The generated image output is available only in PNG format. Once created, the im
 * The node generates high-quality images based on the provided prompts and configurations.
 * The generated images are available forever and do not have an expiry period.
 * The model uses an input scanner in the node to detect and filter banned words or topics. If a banned topic is included in the input prompts, an error is generated and displayed in the debug window when the flow is executed.
-* Performance tracking is available under **Settings** -> **Model Analytics Dashboard** -> **Open-source Models** tab. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-analytics-dashboard/){target="_blank"}. 
+* Performance tracking is available under **Settings** -> **Model Analytics Dashboard** -> **Open-source Models** tab. [Learn more](../../../../settings/monitoring/analytics/model-analytics-dashboard.md){target="_blank"}. 
 
 The metrics include:
 
 * **Number of images generated** since the supported models are charged based on this count.
-* **Input tokens** since the Stable Diffusion models usually support a small number of tokens, and tracking the counts is necessary. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-analytics-dashboard/#tokens){:target="_blank"}.
+* **Input tokens** since the Stable Diffusion models usually support a small number of tokens, and tracking the counts is necessary. [Learn more](../../../../settings/monitoring/analytics/model-analytics-dashboard.md/#tokens){:target="_blank"}.
 
 
 ## Steps to Add and Configure the Node
@@ -171,7 +171,7 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/){:target="_blank"}.
+1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
 
 <img src="../images/add-input-variable-text-to-image.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
@@ -205,6 +205,6 @@ To run and test the flow, follow the steps below:
 
     <img src="../images/generate-output-text-to-image.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
-The **Debug** window generates the flow log and results, as shown below. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow){:target="_blank"} about running the tool flow.
+The **Debug** window generates the flow log and results, as shown below. [Learn more](../types-of-nodes/text-to-image-node.md/#step-3-run-the-flow){:target="_blank"} about running the tool flow.
 
 <img src="../images/debug-window-text-to-image.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">
