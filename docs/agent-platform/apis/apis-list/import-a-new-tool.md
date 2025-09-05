@@ -54,7 +54,7 @@ To import a tool, follow the steps below:
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>
    </td>
    <td>String
    </td>

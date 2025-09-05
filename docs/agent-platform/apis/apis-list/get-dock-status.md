@@ -49,7 +49,7 @@ This API allows users to track the status of ongoing or completed jobs related t
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>
    </td>
    <td>String
    </td>

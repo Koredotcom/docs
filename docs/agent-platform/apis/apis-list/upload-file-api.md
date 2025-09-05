@@ -71,7 +71,7 @@ This method directly hits the endpoint and returns the <code>fileId</code> and `
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>.
+   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>.
    </td>
    <td>String
    </td>
@@ -217,7 +217,7 @@ The API initializes the file upload process and returns a <code>session ID</code
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>
    </td>
    <td>String
    </td>
@@ -392,7 +392,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>
    </td>
    <td>String
    </td>
@@ -541,7 +541,7 @@ This API merges the uploaded chunks and finalizes the process using the `session
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>
    </td>
    <td>String
    </td>
