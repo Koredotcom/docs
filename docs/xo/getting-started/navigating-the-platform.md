@@ -75,11 +75,10 @@ Product specific features and Common features applicable to each products are sh
 #### Product Specific Options
 The left navigation of Products of the XO Platform are as follows.
 
-| AUTOMATION AI | SEARCH AI | CONTACT CENTER AI | AGENT AI |
-| --- | --- | --- | --- |
-| ![image_tooltip](./images/ntp(10).png "image_tooltip") | ![image_tooltip](./images/ntp(12).png "image_tooltip") | ![image_tooltip](./images/ntp(11).png "image_tooltip") | ![image_tooltip](./images/ntp(13).png "image_tooltip") |
-| [Learn about Automation AI](./../automation/about-automation-ai.md) | [Learn about Search AI](./../searchai/about-search-ai.md) | [Learn about Contact Center AI](./../contactcenter/about-contact-center-ai.md) | [Learn about Agent AI](./../agentai/about-agent-ai.md) |
-
+| AUTOMATION AI | SEARCH AI | CONTACT CENTER AI | AGENT AI | QUALITY AI
+| --- | --- | --- | --- | --- |
+| ![image_tooltip](./images/ntp(10).png "image_tooltip") | ![image_tooltip](./images/ntp(12).png "image_tooltip") | ![image_tooltip](./images/ntp(11).png "image_tooltip") | ![image_tooltip](./images/ntp(13).png "image_tooltip") | ![image_tooltip](./images/ntp(22).png "image_tooltip") |
+| [Learn about Automation AI](./../automation/about-automation-ai.md) | [Learn about Search AI](./../searchai/about-search-ai.md) | [Learn about Contact Center AI](./../contactcenter/about-contact-center-ai.md) | [Learn about Agent AI](./../agentai/about-agent-ai.md) | [Learn about Quality AI](./../quality-ai/about-quality-ai.md) |
 
 #### Common Features
 The left navigation of common features of the XO Platform are as follows.
