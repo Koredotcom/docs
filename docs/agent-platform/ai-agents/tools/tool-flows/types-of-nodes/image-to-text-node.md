@@ -69,7 +69,7 @@ To add and configure the node, follow the steps below:
 
    <div class="admonition note">
    <p class="admonition-title">Note</p>
-   <p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are currently supported.</p>
+   <p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are supported.</p>
    </div>
 
 * Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the tool endpoint.
