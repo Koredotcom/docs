@@ -321,7 +321,7 @@ To delete the case template, on the **Case Templates** page, click the three dot
 
 Status configuration helps you track the progress and current state of cases and tasks, ensuring effective and efficient management. The system provides five default statuses (Progress, On Hold, Resolved, and Closed), but you can create and manage both default and custom statuses to meet your business requirements. This configuration contains the following statues:
 
-* **System Statuses:** System statuses are predefined. You cannot edit the system-defined statuses.
+* **System Statuses:** System statuses are predefined and you cannot edit them.
 
 * **Custom Statuses:** Created by administrators to meet specific business needs, which you can edit, activate or deactivate, or delete as needed.
 
@@ -466,4 +466,6 @@ To delete the custom priority status of cases:
 ## Integrations
 
 This section helps in integrating messaging apps to configure for the notifications.
+
+To access case management integrations, navigate to **Contact Center AI > Case Management > Configuration > Priority**.
 
