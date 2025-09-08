@@ -398,7 +398,7 @@ If debug is enabled, the response has additional information as shown below.
       "content": {
         "auth_profiles": [
           {
-            "url": "https://agent-platform.kore.ai/r/396c63515671634648357955",
+            "url": "https://agent-platform.kore.ai/r/396c6351567xxxxx4648357955",
             "idpName": "Google",
             "isAuthorized": false,
             "sso_type": "oauth2"
@@ -1012,7 +1012,7 @@ Returns the current status and details of the run. The important fields include:
         "asyncConfig": {
           "isAsync": true,
           "noTimeout": false,
-          "post_url": "example.org/callbackurl",
+          "post_url": "https://example.org/posturl",
           "app_token": "xxxxxxxx",
           "asyncTimeout": 180,
           "isInternalCall": false
