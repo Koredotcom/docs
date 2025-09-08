@@ -57,6 +57,8 @@ Include the SDK directly in your HTML via a CDN:
    </script>
 ```
 
+
+
 ### Installation via NPM
 
 To install the SDK via NPM, use the following command
@@ -81,6 +83,7 @@ import { AAConfig, AAWindow } from '@kore/agentai-web-sdk';
        customData: {},
        userName: "<USER_NAME>",
        channel: "chat",
+       sessionId: "sessionId"
    }
 ```
 
