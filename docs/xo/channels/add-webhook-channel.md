@@ -820,7 +820,7 @@ The following are the parameters required/supported in the v2.0 of the Webhook c
    </td>
    <td>Any language that is configured for the AI Agent.
 <p>
-For the list of Supported App Languages, read [Getting Started with Multilingual AI Agent](../app-settings/language-management/building-multi-language-bots.md#supported-bot-languages)</a> article.
+For the list of Supported App Languages, read [Getting Started with Multilingual AI Agent](../app-settings/language-management/building-multi-language-bots.md)</a> article.
    </td>
   </tr>
   <tr>

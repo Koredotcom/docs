@@ -44,7 +44,9 @@ The agents can create a case using the following processes:
 
 * [Agent Console](#create-a-new-case)
 
-* [Manage Cases](#manage-cases)
+* [Manage Cases](../case-management/manage-cases-and-tasks.md)
+
+* [Manage Tasks](../case-management/manage-cases-and-tasks.md)
 
 ### Create a New Case
 

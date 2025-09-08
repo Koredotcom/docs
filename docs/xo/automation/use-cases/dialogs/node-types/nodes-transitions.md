@@ -109,8 +109,9 @@ Environment Variables are global, reusable components which can be used in multi
   
     !!! Note
     
-        You must enter dynamic variables without braces. For example, Environment variables as `env.value`, Content variables as `content.value`, and Context variable as `context.entities.entityname`. For more information, see the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions/#entity){:target="_blank"} article.
+        You must enter dynamic variables without braces. For example, Environment variables as `env.value`, Content variables as `content.value`, and Context variable as `context.entities.entityname`. For more information, see the [Adding IF-Else Conditions to Node Connections](../node-connections/nodes-conditions.md#entity) article.
 
 * To define and manage the bot response that is repeated within the app configuration as variables.
 * Authorization Token
 * Channel-related tokens and URLs
+

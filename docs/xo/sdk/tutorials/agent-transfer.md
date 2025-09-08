@@ -18,7 +18,7 @@ To get your _LiveChat_ license code for your BotKit SDK configuration:
 
 1. Log into your LiveChat account and click the **Settings** icon on the left navigation bar.
 2. You will be taken to the _Website Channel Settings_ page and you will find the **License ID** right underneath the area that lets you _Install LiveChat Code Manually_, as illustrated below.
-![alt_text](../images/livechat-settings.png "LiveChat Settings")
+![alt_text](images/livechat-settings.png "LiveChat Settings")
 
 !!!note
     Make sure url-template and node-schedule modules (and any other modules as referenced in js file related to LiveChat) are installed on your computer.
@@ -33,7 +33,7 @@ In a **Terminal** Window, start _ngrok_ to monitor port 8003 using the following
 ngrok http 8003
 ```
 
-![alt_text](../images/ngrok-status.png "ngrok status")
+![alt_text](images/ngrok-status.png "ngrok status")
 
 Copy the https **Forwarding URL** as shown in the previous illustration, for example, https://1b47f1d2.ngrok.io. Leave the terminal window open and _ngrok_ running.
 
@@ -43,7 +43,7 @@ The BotKit SDK requires _node.js_ (version 10 or above) to run on the same serve
 
 In a **Terminal** window, run the `node -v` command to verify installation and version, for example, `v6.10.2`as shown in the following illustration.
 
-![alt_text](../images/nodejs-status.png "nodejs status")
+![alt_text](images/nodejs-status.png "nodejs status")
 
 ## Installing and Configuring Your Assistant
 
@@ -64,7 +64,7 @@ To install the Airlines Travel Planning assistant
 1. Log on to XO Platform, and then click **New Bot > Start from the Store**.
 2. Point to **Airlines Airlines Travel Planning**, and then click **Install**. The Airlines _Airlines Travel Planning_KORE NAME_Instance# The installed successful_ message is displayed and the sample assistant is added to the left-hand navigation menu.
 
-Once the sample assistant is installed, create an **_Agent Transfer_** dialog task. Learn more about the [Dialog Builder](../../automation/use-cases/using-the-dialog-builder-tool) and with the [Agent Transfer node](../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md).
+Once the sample assistant is installed, create an **_Agent Transfer_** dialog task. Learn more about the [Dialog Builder](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md) and with the [Agent Transfer node](../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md).
 
 ### Registering Your App and Generating Client Credentials
 
@@ -96,7 +96,7 @@ To configure the BotKit SDK settings, you will need to:
 
 A developer can use any installed assistant immediately for testing as it is available to the owner on save. If you only want to run and test this assistant for this tutorial, you can skip to the next section, _Installing and Configuring the BotKit SDK_.
 
-To enable the assistant for other users, you must publish it so the Admin can approve and deploy the assistant for other users. For more information, see [Publishing an Assistant](../../deploy/publishing-bot).
+To enable the assistant for other users, you must publish it so the Admin can approve and deploy the assistant for other users. For more information, see [Publishing an Assistant](../../deploy/publishing-bot.md).
 
 After you publish an assistant in XO Platform, an Admin must complete one of the following deployments tasks in the Admin Console depending on whether your assistant’s **Target Audience** is set to **Enterprise Users** or the **General Public**.
 
@@ -115,7 +115,7 @@ After you publish an assistant in XO Platform, an Admin must complete one of the
 
 ### Installing and Configuring the BotKit SDK
 
-You need to download and then decompress the Kore.ai BotKit SDK from [https://github.com/Koredotcom/BotKit](https://github.com/Koredotcom/BotKit). Be sure to download the latest version that contains the [LiveChat.js ](https://github.com/Koredotcom/BotKit/blob/master/LiveChat.js)files.
+You need to download and then decompress the BotKit SDK from [https://github.com/Koredotcom/BotKit](https://github.com/Koredotcom/BotKit). Be sure to download the latest version that contains the [LiveChat.js ](https://github.com/Koredotcom/BotKit/blob/master/LiveChat.js)files.
 
 !!!note
     This tutorial may require a newer version of BotSDK files. If the downloaded BotKit SDK files do not contain LiveChat.js and LiveChatAPI.js files, contact Kore.ai Support.

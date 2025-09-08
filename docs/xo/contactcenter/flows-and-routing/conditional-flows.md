@@ -49,7 +49,7 @@ When enabled, users can start a voice call from:
 
 !!! Note
 
-The click-to-call flow will appear in the conditional flows if it is turned on from [Theme & Design](../../channels/add-web-mobile-client.md#ai-agent-theme--design).
+    The click-to-call flow will appear in the conditional flows if it is turned on from [Theme & Design](../../channels/add-web-mobile-client.md#ai-agent-theme-design).
 
 #### Configuring Click-to-Call Flows
 

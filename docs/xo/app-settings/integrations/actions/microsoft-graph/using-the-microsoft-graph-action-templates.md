@@ -383,7 +383,7 @@ Steps to view all to-do lists in the Microsoft Graph integration:
 
 Steps to create an event in the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templatess){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
 2. The _Create an Event_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img10.png" alt="Create an Event dialog task is added" title="Create an Event dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 

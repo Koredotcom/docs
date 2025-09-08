@@ -147,7 +147,7 @@ The **NLP Analysis** section displays the detailed view of the historic analysis
 
 * [Traits](../../../natural-language/training/traits.md){:target="_blank"} (if applicable)
 * [Machine Learning (ML) engine](../../testing-your-bot-with-nlp.md#ml-model){:target="_blank"}
-* [Fundamental Meaning (FM) engine](../../../testing-your-bot-with-nlp/#fm-model){:target="_blank"}
+* [Fundamental Meaning (FM) engine](../../testing-your-bot-with-nlp.md#fm-model){:target="_blank"}
 * [Knowledge Graph (KG) engine](../../testing-your-bot-with-nlp.md#knowledge-graph){:target="_blank"}
 * [Trait Rule](../../../natural-language/training/traits.md#trait-association-rules){:target="_blank"} (if applicable)
 * [Ranking and Resolver](../../testing-your-bot-with-nlp.md#ranking-and-resolver)
@@ -433,7 +433,7 @@ The **FAQ Summary** section displays the [recommendation scores](#health-and-mon
 
 <img src="../images/hm-19.png" alt="Report" title="Report" style="border: 1px solid  gray; zoom:50%;"/>  
 
-**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](../../../../../answers/knowledge-ai/knowledge-graph-analysis){:target="_blank"}.  
+**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](../../../knowledge-ai/knowledge-graph-analysis.md){:target="_blank"}.  
 <img src="../images/hm-20.png" alt="Knowledge Graph button" title="Knowledge Graph button" style="border: 1px solid  gray; zoom:50%;"/>
 
 
@@ -474,7 +474,7 @@ The **Trait Summary** and **Entity Summary** sections display the [recommendatio
 
 **Test Coverage and Test Results Analysis**
 
-Please refer to [Test Coverage](#test-coverage) and [Test Results Analysis](#nlp-test-results-analysis) for information on the sub-sections of these summary panels.
+Please refer to [Test Coverage](#test-coverage) and [Test Results Analysis](#viewing-specific-test-results) for information on the sub-sections of these summary panels.
 
 
 ## NLP Batch Test Results Summary for Universal Bots

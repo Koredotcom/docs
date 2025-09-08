@@ -1839,7 +1839,7 @@ Using this feature, agents can do the following:
 * Select a portion of their text and add a hyperlink to it.
 * Remove the hyperlink if they change their mind.
 * Add hyperlinks for HTTP and HTTPS URLs.
-* Add hyperlink actions for email (mailto:a@b.com). Clicking the link opens the associated mail app.
+* Add hyperlink actions for email (`mailto:a@b.com`). Clicking the link opens the associated mail app.
 * Customize the display text of the hyperlink.
 * Display the full URL when an agent hovers over the hyperlink. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md)
 
