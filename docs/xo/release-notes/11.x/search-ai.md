@@ -396,7 +396,7 @@ The Custom LLM feature now supports Vector Generation in Search AI, allowing use
 
 The new Custom Extraction feature in Search AI enables a tailored approach to extracting content from sources. It sends ingested content to a third-party service, which processes and returns the extracted data in a structured chunk format. This enhances flexibility in handling diverse content extraction needs and ensures improved data retrieval and indexing within Search AI.
 
-[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md#custom-extractionbeta)
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md#custom-extraction)
 
 <font size="4">Answer Insights</font>
 

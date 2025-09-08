@@ -7,7 +7,7 @@ The Service Node is a component type in a dialog task that you can use to add an
 The setup of a Service node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the Service node.
-2. Add a Service node in the designated place. For steps related to adding nodes, [refer here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
+2. Add a Service node in the designated place. For steps related to adding nodes, [add node to dialog](../using-the-dialog-builder-tool.md){:target="_blank"}.
 
     !!! note
 
@@ -62,7 +62,7 @@ To configure the Component Properties tab, please follow the steps below:
 
     Depending on the Service Type selected, refer to one of the following sections in this topic:
 
-    1. [Defining a Custom Service](#custom)
+    1. [Defining a Custom Service](#define-a-custom-service)
     2. [Defining a URL to Convert to Image](#define-a-url-to-convert-to-image)
     3. [Defining HTML to Convert to Image](#define-html-to-convert-to-image)
     4. [Defining Alert Subscription Service](#define-an-alert-subscription-service)
@@ -227,10 +227,10 @@ You can define the Service Type as:
     4. **DELETE** – Deletes the content of an existing target resource.
     5. **GET** – Returns the content of an existing target resource
 
-5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, http://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
+5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, https://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     1. Optionally, click **Show Advanced**, and select  
 
-        1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. For more information, refer to [Using the Kore.ai Connector](../../../../administration/kore-ai-connector.md){:target="_blank"}.  
+        1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. 
         2. **Yes** in the **De-Identification of PII Data** to redact any sensitive information types that users share with your assistants. For more information, refer to [Redacting Personally Identifiable Information](../../../../app-settings/advanced-settings/pii-data-masking.md){:target="_blank"}
     
     2. In the **Auth** tab, select the type of authorization needed for this service node call, or define a new authorization type if needed. For more information, refer to [Setting Up Authentication](../../../../app-settings/dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.
@@ -469,7 +469,7 @@ Define the expected behavior of this alert if an upgraded version of the underly
 
         !!! Note
         
-            Your AI Agent should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../../administration/data/data-table/#assignments){:target="_blank"}.
+            Your AI Agent should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../administration/data/data-table.md#assignments){:target="_blank"}.
 
 2. In the **Request Definition** section, click **Define Request** to specify the operation you want to perform. [Click here for details.](../../../../administration/data/data-as-service.md){:target="_blank"}
 

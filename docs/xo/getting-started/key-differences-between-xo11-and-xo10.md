@@ -94,7 +94,7 @@ All the LLM integrations can be managed in one place in an app and used across t
 
 ## Global User Management
 
-User Management is now applicable across the modules, app level. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still on the Admin Console page). [Learn more](../getting-started/whats-new-in-xo-platform.md#7-user-role-management-module)  
+User Management is now applicable across the modules, app level. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still on the Admin Console page). [Learn more](../getting-started/whats-new-in-xo-platform.md)  
 <img src="../images/xo-platform-manageuser.png" alt="User Management" title="User Management" style="border: 1px solid gray; zoom:70%;">
 
 ## App Level Publishing and Version Management

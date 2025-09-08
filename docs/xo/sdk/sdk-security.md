@@ -230,7 +230,7 @@ There are several open-source libraries available to generate JWT, for example,
 * Java – [https://github.com/auth0/java-jwt](https://github.com/auth0/java-jwt)
 * .Net – [https://github.com/jwt-dotnet/jwt](https://github.com/jwt-dotnet/jwt)
 
-To generate credentials for your clients, you must register your client app in the Platform tool. For more information, see [SDK App Registration](../app-registration).
+To generate credentials for your clients, you must register your client app in the Platform tool. For more information, see [SDK App Registration](app-registration.md).
 
 You can also try out our tutorial, a test application, and configuring your localhost server for JWT generation. For more information, see the [Web SDK Tutorial](./tutorials/web-sdk.md).
 

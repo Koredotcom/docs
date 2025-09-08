@@ -1,6 +1,6 @@
 # By Dialog Task Metric
 
-This metric helps to determine how consistently agents follow predefined scripts, workflows, or behavioral steps during customer interactions. These playbooks are designed to enforce best practices, ensure compliance, and drive high-quality outcomes in customer service and support environments. 
+The By Dialog Task metric helps to determine how consistently agents follow predefined scripts, workflows, or behavioral steps during customer interactions. These playbooks are designed to enforce best practices, ensure compliance, and drive high-quality outcomes in customer service and support environments. 
 
 ## Why Use Dialog Task Metrics
 

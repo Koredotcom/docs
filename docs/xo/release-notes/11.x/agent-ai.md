@@ -389,7 +389,7 @@ This update has introduced a service node and a new tag-based approach to genera
 
 **Search AI Timeout Configuration and Runtime Error**
 
-The Search tab in the Agent AI widget now displays a timeout error message for searches exceeding 10 seconds. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#timeout-and-server-errors)
+The Search tab in the Agent AI widget now displays a timeout error message for searches exceeding 10 seconds. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#timeout-server-errors-and-no-search-results)
 
 **API Call Notification for Dialog Tasks**
 
@@ -472,7 +472,7 @@ Genesys Middleware has been enhanced to support Base64-encoded values when passi
 
 **Enhanced Salesforce Package includes Language Parameter**
 
-The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more:octicons-arrow-right-24:](https://docs.kore.ai/xo/agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti/#set-up-agentassist-configuration)
+The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more:octicons-arrow-right-24:](../../agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md/#set-up-agentassist-configuration)
 
 **Multi-bot Support for Agent AI Integration with ServiceNow**
 
@@ -582,7 +582,7 @@ The Agent AI widget now supports conversation summarization in Japanese.
 <font size="4">Integration Enhancements</font>
 
 **Genesys Agent AI integration with Genesys Desktop Application**
-The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more :octicons-arrow-right-24:](https://docs.kore.ai/agentassist/integration/agent-ai-integration-with-genesys-cloud-cx/){:target="_blank"}.
+The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more :octicons-arrow-right-24:](../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md){:target="_blank"}.
 
 **Enhanced Language Support for NICE MAX Desktop**
 The Agent AI integration with NICE MAX Desktop now supports multiple languages, allowing agents to interact with the Agent AI widget in their preferred language.
@@ -735,7 +735,7 @@ When multiple (different) error messages are triggered, they are all displayed i
 
 <font size="4">Enhanced Raw Data API</font>
 
-The [Raw Data API](https://docs.kore.ai/agentassist/api/raw-data-api-v2/){:target="_blank"} is enhanced to retrieve and store summary feedback, reasons, and comments.
+The [Raw Data API](../../apis/agent-ai/raw-data-api.md){:target="_blank"} is enhanced to retrieve and store summary feedback, reasons, and comments.
 
 <hr>
 

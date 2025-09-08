@@ -1,18 +1,49 @@
 # About MCP Tools
 
-The Model Context Protocol is an open standard that provides a way for AI Agents to interact with external tools, data, and services. It simplifies integration by creating a universal interface for AI to communicate with different systems. It acts as a universal connector. 
+The Model Context Protocol is an open standard that enables AI Agents to interact with external tools, data, and services. MCP acts as a universal translator or connector for AI agents, making it easy for LLMs to communicate with any tool without custom integration, using a standard interface.
 
-MCP follows a client-server architecture, where:
+Consider this scenario: An AI agent needs to handle a user query like *“How is the weather in Mumbai? Can you help me plan a trip to Mumbai this weekend?”*
 
-* MCP server exposes specific capabilities through the standardized and unified format, Model Context Protocol.
-* The host or MCP client(in this case, Agent Platform) connects to the server, discovers available tools, and invokes them as part of agent interactions. The language model within the client application decides when to invoke the tools exposed by the server.
-* The MCP protocol is the communication layer between these two components, defining how requests and responses are structured and exchanged. 
+To answer this query, the agent must:
 
-![MCP Protocol](images/mcp/mcp-protocol.png "MCP Protocol")
+* Check weather forecasts
+* Verify ticket availability
+* Find hotel availability
 
+**Without MCP:** The agent would require three separate integrations with custom logic for each system.
+
+**With MCP:** The agent interacts with all three systems through a single, consistent interface, dramatically simplifying development and reducing complexity.
+
+
+![Comparison](images/mcp/comparison.png "Comparison")
+
+
+## MCP Key Features
+
+The following key features make MCP a powerful solution for connecting AI models to external systems while maintaining security, consistency, and ease of development.
+
+* Open Standard: Universal standardized protocol for AI and Tool integration.
+* Simplified Development: The MCP client can communicate with all the available tools in the MCP server through the same interface.
+* Scalable Architecture: Easy to add new tools to Agents without custom integration.
+* Universal Compatibility: Regardless of which MCP server is used, all compatible MCP clients communicate using a standardized protocol, ensuring seamless interoperability without additional adjustments.
+
+## How MCP Works
+
+MCP provides a standardized communication layer between AI agents and external tools. It follows a client-server architecture, where:
+
+* **The MCP server** exposes specific capabilities through tools.
+* **The host or MCP client** (in this case, Agent Platform) connects to the server, discovers available tools, and invokes them as part of agent interactions. The language model within the client or host application decides when to invoke the tools exposed by the server.
+* **The MCP protocol** is the communication layer between these two components, defining how requests and responses are structured and exchanged. 
+
+![MCP At Play](images/mcp/mcp-atplay.png "MCP")
+
+
+1. **LLM** sends requests through the MCP client.
+2. **MCP Client** communicates with one or more MCP servers.
+3. **MCP Servers** host tools that interact with external systems.
+4. **Tools** retrieve information from databases, APIs, and other services.
 
 This decoupling of the MCP server from the client allows for greater flexibility, scalability, modularity, and extensibility. 
-
 
 ## MCP Client–Server Interaction Workflow
 

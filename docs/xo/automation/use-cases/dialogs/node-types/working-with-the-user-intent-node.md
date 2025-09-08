@@ -23,7 +23,7 @@ Setting up a user intent node in a dialog task involves the following steps:
 ## Add the Node
 
 1. Open the dialog task to which you want to add the user intent node.
-2. Add a user intent node in the designated place. For steps on adding nodes, [please read more here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
+2. Add a user intent node in the designated place. For steps on adding nodes, [please read more here](../using-the-dialog-builder-tool.md){:target="_blank"}.
 3. The user intent window is displayed with the **Component Properties** tab selected by default.
 
 <img src="../images/add-intent-node-img1.png" alt="Add intent node" title="Add intent node" style="border:1px solid gray;zoom:70%;">

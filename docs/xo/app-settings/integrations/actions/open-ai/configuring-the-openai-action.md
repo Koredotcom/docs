@@ -76,7 +76,7 @@ Steps to authorize an OpenAI action at a user level:
     * Click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/open-ai-action-img5.png" alt="Create new Auth" title="Create new Auth" style="border: 1px solid gray;zoom:50%;"/>
 
-    * Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, read the [App Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.  
+    * Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, read the [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.  
     <img src="../images/open-ai-action-img6.png" alt="Auth mechanism - API Key" title="Auth mechanism - API Key" style="border: 1px solid gray;zoom:50%;"/>
 
     * Enter the following authentication credentials for the Basic Auth mechanism:

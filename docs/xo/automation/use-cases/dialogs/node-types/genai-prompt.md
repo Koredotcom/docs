@@ -23,7 +23,7 @@ By default, the feature/node is disabled. To enable the feature, see [GenAI Feat
 ## Add the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the Prompt Node.
-2. Click **Gen AI** and then click **Prompt Node**. Alternatively, you can drag and drop the **Prompt Node** node to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
+2. Click **Gen AI** and then click **Prompt Node**. Alternatively, you can drag and drop the **Prompt Node** node to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../using-the-dialog-builder-tool.md){:target="_blank"}.
 3. The Prompt Node window is displayed with the **Component Properties** tab selected by default.
 
     <img src="../images/canvas.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">

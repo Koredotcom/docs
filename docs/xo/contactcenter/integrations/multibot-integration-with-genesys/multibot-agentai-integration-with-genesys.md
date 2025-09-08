@@ -244,7 +244,7 @@ An Interaction Widget uses Group Membership to determine who can view it on the 
 1. Use an existing Group, if your agents are already part of it. Otherwise, create a new Group for Agent AI permission.
 2. Name the Group as **KoreAA-Agents** or similar to distinguish it.
 3. Add any agent to allow them to use the Agent AI functionality. You can utilize more than one Group, if required.
-4. Go back to the **Integrations** section and open the **Interaction Widget** created in [Step 2](https://docs.kore.ai/agentassist/integration/agentassist-integration-in-genesys-manual-steps/#Step_2_Interaction_Widget){:target="_blank"}. 
+4. Go back to the **Integrations** section and open the **Interaction Widget** created in [this doc](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md/#create-an-interaction-widget-in-genesys-for-agent-ai){:target="_blank"}. 
 5. On the **Configuration** tab, add access using the Group you identified or created for Agent AI in the Group Filtering option.  
 
 You may also utilize Queue Filtering (optional).  

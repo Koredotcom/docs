@@ -70,6 +70,10 @@ To import an existing Autonomous Agent:
 2. Select the .ZIP file of the existing agent.
 3. Click **Import** to complete the process. The imported agent will appear on the Autonomous Agent page.
 
+!!!note
+
+    You cannot directly import agents exported from the Agent Platform. Only Autonomous Agents that were originally created and exported from AI for Work can be imported using this feature.
+
 ## Usage
 
 Autonomous Agents integrate seamlessly with the Agent Platform to provide intelligent, automated assistance for business tasks. You can trigger an agent from the **Compose bar > Agents > agent tab**. Here's how they operate in practice:

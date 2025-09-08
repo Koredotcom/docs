@@ -22,7 +22,7 @@ The following features enable  the seamless integration of your Kore.ai Assistan
 
 * **Native VXML Support**: Built-in support to parse and generate World Wide Web Consortium (W3C) compliant Voice Extensible Markup Language(VXML) files.
 * **Hybrid integration**: Flexibility to build use cases or dialogs on the  Kore.ai Experience Optimization the Platform, which can work in sync with the IVR dialogs.
-* **Discourse Analyzer**: Kore.ai’s discourse analyzer helps enterprises generate conversation flows using historical chat or call transcripts. Chat and call transcripts are analyzed using neural network-based machine learning models to identify intents and discourse patterns to fulfill a specific intent. This is an out-of-the-box feature that is in Beta state. Contact our [support team](http://support.kore.ai/){:target="_blank"} if you want to try this feature.
+* **Discourse Analyzer**: Kore.ai’s discourse analyzer helps enterprises generate conversation flows using historical chat or call transcripts. Chat and call transcripts are analyzed using neural network-based machine learning models to identify intents and discourse patterns to fulfill a specific intent. This is an out-of-the-box feature that is in Beta state. Contact our [support team](https://support.kore.ai/){:target="_blank"} if you want to try this feature.
 * **Granular Call Flow Support**: Ability to define all the call flow elements such as grammar, prompts, retry and time-out periods. Kore.ai supports call termination handlers, and allows you to end calls or invoke dialogs in case of exceptions.
 
 ## IVR Set Up
@@ -105,7 +105,8 @@ Enabling this option generates a **Phone Number, Pin**, and **Secret**. To devel
 button, which becomes visible upon hovering over the IVR icon under the **Configured** tab.
  ![configure channels](images/IVR-13.png "configure channels")
  
-8. On clicking **Test**, the following pop-up is displayed.  ![testing app](../images/IVR-14.png "testing app")
+8. On clicking **Test**, the following pop-up is displayed.  
+![testing app](images/IVR-14.png "testing app")
 
 The **Phone Number**, **PIN**, and **Secret** are populated in the IVR Configurations panel as shown in the following screenshot.
 ![phone number](images/IVR-15.png "phone number")
@@ -155,6 +156,7 @@ Kore.ai Assistants require a JWT token to authenticate the incoming requests fro
     *   **WebHook URL**: For calling the AI Agent from IVR.
     *   **Client Secret**: To generate a JWT token that must be appended to the WebHook URL.
     ![webhook url](images/IVR-19.png "webhook url")
+
 8. Select **Yes** for Enable Channel.
 
 !!! note
@@ -254,7 +256,7 @@ The **Automatic Speech Recognition (ASR)** engine configured by the Platform use
 To extract the metadata from the ASR transcription, follow these steps:
 
 1. In **IVR Channel** settings under **Voice Call Properties** various details like **Input Mode**, **ASR Confidence Threshold** etc. are configured.
- ![input mode](../images/IVR-21.png "input mode")
+ ![input mode](images/IVR-21.png "input mode")
 
 2. See [Voice Call Properties: Channel Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings)for more information. The additional information provided by the ASR engines can be extracted using the **context object**. This is configured at  **Bot User Session > lastMessage >  asrMetaData**.
 3. Go to the **Settings** panel of the last message node for your dialog task and configure the **JavaScript Message** under **Bot Responses**, as shown below:

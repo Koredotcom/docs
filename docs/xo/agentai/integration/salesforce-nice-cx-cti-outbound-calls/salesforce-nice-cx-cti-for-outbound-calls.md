@@ -564,7 +564,7 @@ Open the Studio, import the above script, and customize as per the following tab
 <li>The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this custom data will be accessible in the UserContext of the AI Agent.</li> 
 <ul>
  
-<li>Refer to “<a href="https://https://docs.kore.ai/xo/agentai/agent-experience/access-custom-data-in-agent-ai/">Access Custom Data in Kore AI Agent</a>” for instructions on how to access customdata in the AI Agent.</li> 
+<li>Refer to [Access Custom Data in Kore AI Agent](../../agent-experience/access-custom-data-in-agent-ai.md)” for instructions on how to access customdata in the AI Agent.</li> 
 </ul></li> 
 </ul>
    </td>

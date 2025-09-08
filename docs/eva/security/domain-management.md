@@ -66,9 +66,11 @@ When inviting users from different domain types:
 
 ### Multi-Tenant Account Switching
 
-Partner domain users have access to an Account Switcher feature available in:
+Partner domain users have access to multiple accounts. They can switch between accounts by clicking the profile button in the top-right corner of the screen, which reveals a **Switch Account** option that lists the assigned accounts.
+
+Partner users can effortlessly navigate between multiple tenant accounts. Each accessible account is listed by its primary domain name. User can access this feature from:
 
 * The Admin Console
 * The Application UI
 
-Partner users can effortlessly navigate between multiple tenant accounts. Each accessible account is listed by its primary domain name.
+<img src="../images/account-switcher.png" alt="saccount-switcher" title="account-switcher" style="border: 1px solid gray; zoom:80%;">

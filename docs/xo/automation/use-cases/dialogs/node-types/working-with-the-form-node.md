@@ -11,7 +11,7 @@ Before you can begin setting up a Form node, you need to have previously created
 To add a form node to the dialog task, follow the below steps:
 
 1. **Open the dialog task** to which you want to add the Form node.
-2. **Add the Form node** in the designated place. To learn how to add nodes, please [click here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}. You will be shown a list of existing Digital Forms from which you can choose the one to add to this node.  
+2. **Add the Form node** in the designated place. To learn how to add nodes, please [click here](../using-the-dialog-builder-tool.md){:target="_blank"}. You will be shown a list of existing Digital Forms from which you can choose the one to add to this node.  
     
     <img src="../images/form-node-gif1.gif" alt="Add Form node" title="Add Form node" style="border:1px solid gray;zoom:70%;">
 

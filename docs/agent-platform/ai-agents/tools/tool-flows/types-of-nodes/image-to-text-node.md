@@ -2,7 +2,7 @@
 
 The **Image to Text** node in the tool builder processes an uploaded image and generates text responses based on the user’s prompt. It can provide descriptions, answer image-related questions, or extract text from the image. This node leverages external LLM models like OpenAI and Anthropic for image processing and text generation.
 
-A sample use case involves an insurance company assessing vehicle damage to estimate compensation and verify customer claims. The **Image to Text** node processes the uploaded image of the damaged vehicle, analyzes the extent of the damage, and helps determine repair costs. The [File Upload API](../../../../api-and-sdk/apis-list/upload-file-api.md){:target="_blank"} generates the file source (URL) at the tool endpoint, which is required as input for the node. Any publicly accessible URLs (public repositories) can also be used for the File Source.
+A sample use case involves an insurance company assessing vehicle damage to estimate compensation and verify customer claims. The **Image to Text** node processes the uploaded image of the damaged vehicle, analyzes the extent of the damage, and helps determine repair costs. The [File Upload API](../../../../apis/apis-list/upload-file-api.md){:target="_blank"} generates the file source (URL) at the tool endpoint, which is required as input for the node. Any publicly accessible URLs (public repositories) can also be used for the File Source.
 
 <div class="admonition note">
 <p class="admonition-title">Important Considerations</p>

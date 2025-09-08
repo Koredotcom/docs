@@ -40,7 +40,7 @@ A new toggle, _Trigger CSAT only for agent-closed conversations_, is now availab
 
 **Support for Special Characters in Agent customId**
 
-The customId field now supports all special characters except spaces, resolving previous errors during creation or updates. The character limit is 64, with validation applied consistently across the Admin Console, APIs, and backend services. This enhancement improves routing flexibility and operational mapping without affecting existing records, metrics, permissions, APIs, or Dynamic Routing. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#general-settings)
+The customId field now supports all special characters except spaces and backslashes, resolving previous errors during creation or updates. The character limit is 64, with validation applied consistently across the Admin Console, APIs, and backend services. This enhancement improves routing flexibility and operational mapping without affecting existing records, metrics, permissions, APIs, or Dynamic Routing. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#general-settings)
 
 **Revised Channel Attachment Rules for Default Welcome Flows**
 
@@ -177,7 +177,7 @@ The Voice Automation and Agent AI integration with Genesys Cloud CX via SIP Invi
 
 * Transferring Voice calls that start in Contact Center AI to Genesys Cloud CX via SIP INVITE.
 * Passing session-specific metadata (such as Session ID) through SIP headers.
-* Automatically loading the Agent AI widget in the Genesys desktop with full bot context, using the existing voice stream from Kore to Agent AI—without needing Audiohook. [Learn more :octicons-arrow-right-24:](../../contactcenter/integrations/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol/voice-automation-with-genesys-agent-desktop-using-sip-invite-protocol.md)
+* Automatically loading the Agent AI widget in the Genesys desktop with full bot context, using the existing voice stream from Kore to Agent AI—without needing Audiohook.
 
 <hr>
 
@@ -572,7 +572,7 @@ Using `agentUtils.setAgentTranscribe({transcribe:false})`, transcripts can be hi
 
 Using `agentUtils.setAgentRecordingControl({record: "stop"})` prevents voice call recording generation with corresponding notices. These functions can be used individually or together for complete control over agent interaction documentation.  
 
-[Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#enabledisable-transcripts-and-recordings-for-kore-contact-center-ai)
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md)
 
 <font size="4">Campaigns</font>
 
@@ -704,7 +704,7 @@ The Interaction Details by Segment Report is a comprehensive report that covers 
 
 Monitor > Service Levels
 
-The "Today" option is added to the time-period filter dropdown. Selecting "Today" displays all values based on conversations retrieved from the user's current day, starting from 12:00:00 AM midnight, according to the user's system time zone. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#time-intervals)
+The "Today" option is added to the time-period filter dropdown. Selecting "Today" displays all values based on conversations retrieved from the user's current day, starting from 12:00:00 AM midnight, according to the user's system time zone. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md)
 
 <hr>
 
@@ -1050,7 +1050,7 @@ Key Updates:
 * Kore Domain Email Management:
     * Configure multiple Kore domain email addresses.
     * Easy addition of new addresses via the “Add Email Address” button.
-    * Attach experience flows to specific email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#attach-a-flow-to-a-kore-domain-email-address)
+    * Attach experience flows to specific email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 * Custom Domain Setup:
     * “Add Domain” button for custom email domain configuration.
     * Domain ownership verification through email login test.
@@ -1142,7 +1142,7 @@ Each tracked detail includes the following:
 
 **Wait Time for IP Whitelisting While Configuring SIP Transfer**
 
-Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-numbers)
+Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md)
 
 **Session and Node Level Call Control Parameters**
 
@@ -1209,7 +1209,7 @@ To improve agent experience and maintain consistent availability, the agent’s 
 * Complete outbound calls, or
 * Switch from system-assigned states.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status).
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md).
 
 **Real-Time Disposition Updates**
 
@@ -1563,7 +1563,7 @@ Key benefits:
 * Balanced workload across qualified agents.  
 * Maintained service quality through skill-based assignments.  
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#load-balanced-agent-routing)
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md)
 
 **Phone Number Label Display Enhancement**
 
@@ -1766,11 +1766,11 @@ When a campaign is cloned, the new campaign will not include the schedule config
 Administrators can enable voice support for inbound calls and outbound campaigns.
 
 * Inbound: In the case of an Agentless Dialer, the agent can handle transferred calls.
-* Outbound Campaigns: Agents can handle calls from Auto Dialers. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#chat--voice)
+* Outbound Campaigns: Agents can handle calls from Auto Dialers. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#)
 
 **Progressive Dialer**
 
-The Progressive Dialer is an outbound calling system that improves agent efficiency and productivity. It automatically dials the next number in a queue as agents complete their current calls, ensuring continuous activity. Calls are connected only when a human answers, filtering out voicemails and busy signals. Agents can review contextual information about the contact beforehand but have limited control over the timing or recipient of calls. The dialer optimizes lead allocation based on agent availability, tracks statuses to assign calls to the least busy agent, and provides comprehensive metrics and call statistics for monitoring and reporting purposes. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#auto-dialers)
+The Progressive Dialer is an outbound calling system that improves agent efficiency and productivity. It automatically dials the next number in a queue as agents complete their current calls, ensuring continuous activity. Calls are connected only when a human answers, filtering out voicemails and busy signals. Agents can review contextual information about the contact beforehand but have limited control over the timing or recipient of calls. The dialer optimizes lead allocation based on agent availability, tracks statuses to assign calls to the least busy agent, and provides comprehensive metrics and call statistics for monitoring and reporting purposes. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md)
 
 <hr>
 
@@ -1839,9 +1839,9 @@ Using this feature, agents can do the following:
 * Select a portion of their text and add a hyperlink to it.
 * Remove the hyperlink if they change their mind.
 * Add hyperlinks for HTTP and HTTPS URLs.
-* Add hyperlink actions for email (mailto:a@b.com). Clicking the link opens the associated mail app.
+* Add hyperlink actions for email (`mailto:a@b.com`). Clicking the link opens the associated mail app.
 * Customize the display text of the hyperlink.
-* Display the full URL when an agent hovers over the hyperlink. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#adddelete-hyperlinks-in-the-compose-bar)
+* Display the full URL when an agent hovers over the hyperlink. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md)
 
 **Improved Sorting and Enhanced Auto Accept**
 
@@ -1898,7 +1898,7 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 
 * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
 * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
-* Up to 25 conversations can be selected for exporting transcripts. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-datatranscripts)
+* Up to 25 conversations can be selected for exporting transcripts. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
 
 **Display Agent and Disposition Notes in Search Results on the Interactions Tab**
 
@@ -1968,7 +1968,7 @@ Scheduling allows precise control over when your messages will be delivered. You
 
 **System Busy and System Away Status Enabled by Default**
 
-System Away and System Busy statuses are enabled by default for new accounts. For existing accounts, contact Support. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status)
+System Away and System Busy statuses are enabled by default for new accounts. For existing accounts, contact Support. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md)
 
 **Enable/Disable Resolution Disposition Sets**
 
