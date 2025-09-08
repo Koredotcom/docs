@@ -6,7 +6,7 @@ When you export a tool, Agent Platform automatically creates a *.zip* file named
 
 The exported package can be reimported to create a new tool or add it as a version to an existing one, ensuring seamless restoration.
 
-The [exported package](../tools/export-a-tool.md/#exported-information){:target="_blank"} preserves the following tool configurations within JSON files:
+The [exported package](#exported-information){:target="_blank"} preserves the following tool configurations within JSON files:
 
 * Name and description
 * API, Condition, AI, and Script node configurations
