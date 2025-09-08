@@ -108,9 +108,8 @@ To import a tool as a version, follow the steps below:
 
     <img src="../images/agent_platform/backup_tool.png" alt="import confirmation" title="import confirmation" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. <a href="export-a-tool.md" target="_blank">Learn more</a></p></div>
+**NOTE**
+Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. <a href="export-a-tool.md" target="_blank">Learn more.
 
 If you choose not to back up/export the tool configurations, unselect the back-up option and proceed to the next step.
 
