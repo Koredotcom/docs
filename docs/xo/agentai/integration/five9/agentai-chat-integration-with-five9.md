@@ -6,7 +6,7 @@ Administrators having access to a Five9 Admin Console and with privileges to set
 
 * Five9 Chat enabled for your instance. Contact your Five9 representative.
 * Kore Administrators having access to [Kore.ai](https://agentassist.kore.ai/){:target="_blank"} Agent AI instance and familiarity with creating and configuring a Kore AI Agent.
-* Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, and Client Secret. Read [this doc](./../../../channels/adding-channels-to-your-bot.md){:target="_blank"} for a walkthrough.
+* Kore.ai App credentials such as Account ID. Read [this doc](./../../../channels/adding-channels-to-your-bot.md){:target="_blank"} for a walkthrough.
 
 ## Definitions
 
@@ -36,16 +36,6 @@ Administrators having access to a Five9 Admin Console and with privileges to set
    </td>
   </tr>
   <tr>
-   <td>Client App
-   </td>
-   <td>To use any Kore AI Agent SDKs, a client app must be created to get the authentication credentials to communicate between the Kore AI Agent and Agent AI. 
-<p>
-<strong>Note:</strong> Only the default Client App is supported.
-   </td>
-   <td><a href="https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/">https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/</a>
-   </td>
-  </tr>
-  <tr>
    <td>Connector
    </td>
    <td>Five9 Connector is utilized for displaying the Agent AI iframe within the Five9 Agent Desktop.
@@ -54,35 +44,9 @@ Administrators having access to a Five9 Admin Console and with privileges to set
    </td>
   </tr>
   <tr>
-   <td>BotId
+   <td>Account ID
    </td>
-   <td>A unique identifier assigned to an AI Agent.
-   </td>
-   <td><strong>Channels > Chat</strong> section of the <strong><a href="https://agentassist.kore.ai">Agent AI</a></strong> configuration portal.
-   </td>
-  </tr>
-  <tr>
-   <td>ClientId
-   </td>
-   <td>An identifier provided to a client application.
-   </td>
-   <td><strong>Channels > Chat</strong> section of the <strong><a href="https://agentassist.kore.ai">Agent AI</a></strong> configuration portal.
-   </td>
-  </tr>
-  <tr>
-   <td>ClientSecret 
-   </td>
-   <td>A secret key or password associated with the ClientId.
-   </td>
-   <td><strong>Channels > Chat</strong> section of the <strong><a href="https://agentassist.kore.ai">Agent AI</a></strong> configuration portal.
-   </td>
-  </tr>
-  <tr>
-   <td>AgentAssistWidgetURL
-   </td>
-   <td>URL that points to the Agent AI widget.
-<p>
-For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
+   <td>A unique identifier for an account.
    </td>
    <td><strong>Channels > Chat</strong> section of the <strong><a href="https://agentassist.kore.ai">Agent AI</a></strong> configuration portal.
    </td>
@@ -96,123 +60,60 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Identifiers
+   <td>Queue Identifier
    </td>
-   <td>It’s a unique identifier in the Data Table to fetch AI Agent details at run time. It can be a skill name or campaign name.
+   <td>It’s a unique identifier in the Data Table to fetch AI Agent details at run time. It can be a skill name or a campaign name.
    </td>
    <td>
    </td>
   </tr>
-  <tr>
-   <td>JWEPublicKey
-   </td>
-   <td>Public key assigned to the Client App.
-   </td>
-   <td><strong>Channels</strong> <strong>> Web/Mobile Client > App Details</strong> section of the <strong><a href="https://agentassist.kore.ai">Agent AI</a></strong> automation portal.
-   </td>
-  </tr>
 </table>
 
-## Configurations on the Kore Platform
+## Configurations on Kore Agent AI
 
-* [Capture AI Agent Information in the Kore Data Table](#capture-ai-agent-information-in-the-kore-data-table)
+* [Capture Agent AI Bot Mapping for Skills or Campaigns](#capture-agent-ai-bot-mapping-for-skills-or-campaigns)
 
 ## Configurations on the Five9 Admin Console
 
 * [Create Connector](#create-connector)
 * [Five9 Account Setup to get Incoming Chat Requests](#five9-account-setup-to-get-incoming-chat-requests)
 
-## Capture AI Agent Information in the Kore Data Table
+### Capture Agent AI Bot Mapping for Skills or Campaigns
 
-Data Tables are used to store skill or campaign-specific AI Agent credentials. Each record of the Kore Data Table represents a unique Five9 skill or campaign and its corresponding AI Agent definitions. 
+[Third-Party Configuration](../../configuration/third-party-configuration.md){:target="_blank"} maps Agent AI bots to specific skills or campaigns. Within this configuration, you can define the bot's language, custom data, or secure custom data.
 
-If a single AI Agent is used for several skills or campaigns, create a separate record for each skill or campaign, separated by commas as the value for the Identifiers, along with the AI Agent details.
+For example, if you want Agent AI Bot1 to be associated with Skill1, and Agent AI Bot2 with Skill2, you need to: 
 
-Kore.ai matches the third-party skill or campaign name with the “Identifiers" credential name in its AI Agent credentials to render the appropriate AI Agent.
+* Create a record in Third-Party Configuration for Agent AI Bot1, setting the Queue Identifier to Skill1. 
+* Create a record in Third-Party Configuration for Agent AI Bot2, setting the Queue Identifier to Skill2. 
 
-!!! note
-    Do not enter multiple records with different AI Agent credentials into the Kore Data Table for a single QueueIdentifier.
+This setup ensures the correct Agent AI widget is rendered for the conversations routed based on the defined skill or campaign. 
 
-### How to create a New Data Table
+!!! notes
 
-1. Sign in to Kore.ai [botbuilder](http://bots.kore.ai/botbuilder){:target="_blank"}.
-2. Click **Data** > **Data Tables**.
-3. Click **New Table**. 
-    <img src="../images/data-table-new-table_1.png" alt="data-table-new-table" title="data-table-new-table" style="border: 1px solid gray; zoom:80%;"> 
+    * Custom Data and Secure Custom Data are currently not supported for the Five9 Chat integration.
+    * One Skill or Campaign can not be mapped to multiple Agent AI bots. 
 
-4. Enter the following details in the **New Table** page:
-    * **Name** of the Data Table (any alphanumeric name).
-    * **Description** of the Data Table.
-    * **Columns** to be included in the data table. Click the “tick” mark to add multiple columns. 
-        <img src="../images/new-table-page_2.png" alt="new-table-page" title="new-table-page" style="border: 1px solid gray; zoom:80%;">
-
-        Add the following **case-sensitive** columns with type “string”:
-
-    * **Mandatory Columns**:
-        * Identifiers (unique identifier for the table)
-        * BotId
-        * ClientId
-        * ClientSecret
-        * AgentAssistWidgetURL
-        * BotLanguageCode
-        * JWEPublicKey
-    * **Indexes** for the table.
-        * **Index Name** for reference.
-        * **Is Unique** flag to define if the index is expected to contain unique values. (Enable “is Unique.”)
-        * **Column & Sort Order** – List of columns to be included in the index; you can select multiple columns and specify the sort order (ascending or descending) for each of the selected columns. (Select Identifiers with ascending order.) 
-            <img src="../images/indexes-page_3.png" alt="indexes-page" title="indexes-page" style="border: 1px solid gray; zoom:80%;"> 
-
-    * **AI Agent Assignments** (not applicable)
-    * **App Assignments** to let apps access data in this table.
-        * Select any app from the displayed list, or click **Create New App** and enter your app name:  
-            <img src="../images/create-new-app_4.png" alt="create-new-app" title="create-new-app" style="border: 1px solid gray; zoom:80%;">
-
-        * Select the **Read**, **Write**, and **Delete** permissions, as required. 
-
-            !!! note
-                You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page.  
-
-            <img src="../images/data-apps-new-app_5.png" alt="data-apps-new-app" title="data-apps-new-app" style="border: 1px solid gray; zoom:80%;"> 
-
-    * **Process Assignments** (not applicable) 
-
-5. Click **Create** to create the new data table.  
-    <img src="../images/create-new-data-table_6.png" alt="create-new-data-table" title="create-new-data-table" style="border: 1px solid gray; zoom:80%;"> 
-
-### Insert data into Data Table
-
-Set up necessary permissions and app assignments and insert AI Agent-specific data into the Data Table.
-
-1. Sign in to Kore.ai [botbuilder](http://bots.kore.ai/botbuilder).
-2. Click **Data** > **Apps**.
-3. Select the **App** with write access to the Data Table where you want to add information.  
-    <img src="../images/client-id-client-secret_7.png" alt="client-id-client-secret" title="client-id-client-secret" style="border: 1px solid gray; zoom:80%;"> 
-
-4. Copy **Client ID** and **Client Secret** of the app.
-5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
-6. Insert the following data into the Data Table by following this [doc](./../../../apis/automation/data-insert.md/#data-insert-api){:target="_blank"}. Use the JWT Token created in the previous step. 
-
-   **API Body Payload Structure**:
-
-    ```
-    {
-        "data": {
-            "Identifiers": <Unique Skill/Campaign Name>,
-            "AgentAssistWidgetURL": <Kore Agent AI Widget URL>,
-            "BotId": <Kore BotId>,
-            "ClientId": <Kore ClientId>,
-            "ClientSecret": <Kore ClientSecret>,
-            "JWEPublicKey": <Public Key assigned to Client App>
-        }
-    }
-    ``` 
-
-!!! note
-    JWEPublicKey value should be a stringified JSON object.
+Refer to the [doc](../../configuration/third-party-configuration.md){:target="_blank"} for instructions on creating records in Third-Party Configuration for an Agent AI Bot. 
 
 **Example**: 
 
-<img src="../images/api-body-example_8.png" alt="api-body-example" title="api-body-example" style="border: 1px solid gray; zoom:80%;"> 
+You have a skill named **Chat_Skill**, that handles incoming chat requests, and you want the Agent AI widget to render for conversations routed to this skill. You must create the following details of the Third-Party Configuration record in your Agent AI account:  
+<img src="../images/create-record.png" alt="create-record" title="create-record" style="border: 1px solid gray; zoom:80%;">  
+
+<img src="../images/create-record-add-values.png" alt="create-record-add-values" title="create-record-add-values" style="border: 1px solid gray; zoom:80%;">  
+
+!!! note
+
+    The **Values** should be **base64 encoded**. 
+
+<img src="../images/third-party-configuration.png" alt="third-party-configuration" title="third-party-configuration" style="border: 1px solid gray; zoom:80%;">  
+
+!!! note
+
+    Ensure the **Third-Party Configuration** setting is enabled in **Agent AI** > **Configurations** > **Widget Settings** > **Agent AI Settings** > **Agent AI General Settings**.  
+
+<img src="../images/enable-third-party-configuration.png" alt="enable-third-party-configuration" title="enable-third-party-configuration" style="border: 1px solid gray; zoom:80%;">  
 
 ## Create Connector
 
@@ -236,7 +137,7 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
 8. In the **Parameters** section, click the **Add** dropdown and select **Field**. 
     <img src="../images/create-new-connector-param_14.png" alt="create-new-connector-param" title="create-new-connector-param" style="border: 1px solid gray; zoom:80%;"> 
 
-9. Select **session_id**, **domain_id**, **id**, **skill_name/campaign_name**, and click **Ok**. 
+9. Select **session_id**, **domain_id**, **id**, **skill_name/campaign_name** (choose either skill_name or campaign_name, depending on which is used to map the bot in Agent AI), and click **Ok**. 
     <img src="../images/add-field_15.png" alt="add-field" title="add-field" style="border: 1px solid gray; zoom:80%;"> 
     
     <img src="../images/add-field-ok_16.png" alt="add-field-ok" title="add-field-ok" style="border: 1px solid gray; zoom:80%;"> 
@@ -251,9 +152,9 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
 11. In the **Parameters** section, click the **Add** dropdown and select **Constant**. 
     <img src="../images/parameters-add-constant_18.png" alt="parameters-add-constant" title="parameters-add-constant" style="border: 1px solid gray; zoom:80%;"> 
 
-12. Enter **Name** as **x_metadata** and the **Value** should be {"datatable":{"name":&lt;Kore Datatable Name>,"token":&lt;JWT Token created using the **Client ID** and **Client Secret** of the app by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}>}}  
+12. Enter **Name** as **accountid** and the **Value** should be the **accountid** of your Agent AI account. You can find this ID by navigating to the **Agent AI** > **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. Refer to this [doc](../../../channels/add-web-mobile-client.md){:target="_blank"}.  
 
-    <img src="../images/add-constant_19.png" alt="add-constant" title="add-constant" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/add-constant.png" alt="add-constant" title="add-constant" style="border: 1px solid gray; zoom:80%;"> 
 
 13. Click **Ok** > **Next**. 
     <img src="../images/ok-next_20.png" alt="ok-next" title="ok-next" style="border: 1px solid gray; zoom:80%;"> 
