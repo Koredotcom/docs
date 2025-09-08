@@ -2,6 +2,100 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
+## v1.0.11 September 6, 2025
+
+<u> Minor Release </u>
+
+This release focuses on reliability and control, introducing Agent Diagnostics for pre-deployment issue resolution, new workflow tools like a Human Review node, data type validation for scripts, support for Gemini 2.5 and Llama models, improved debugging, and enhanced API integration.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Introducing Agent Diagnostics**
+
+Agent Diagnostics is a comprehensive validation framework that proactively validates your AI application before deployment, automatically checking for architectural flaws, configuration errors, and operational risks to prevent production failures. It provides detailed, actionable reports with direct navigation to problem areas.
+
+All diagnostic runs are recorded in Audit Logs for complete traceability.
+
+**Enhanced Debug Logs with Actionable Insights**
+
+Debugging is now more intuitive with enhanced execution logs. The refreshed interface provides detailed, actionable status messages across agents, tools, and supervisors. New features include Guardrails execution logging, auto-expanded current traces, and improved navigation via session and trace IDs for a clearer view of the execution flow.
+
+**Enhanced Document Management in Playground**
+
+The enhanced interface offers a smoother and more intuitive way to manage conversation attachments. The new ‘Manage’ panel features ‘In Context’ and ‘Removed’ tabs, clearly organizing documents by status, with visual indicators showing actively used files. This streamlined approach enhances user control and awareness of document usage, making it easier to track and manage attachments.
+
+
+<font size="4">No-code & Pro-Code Tools</font>
+
+
+**New Human Review Node for Workflow Approvals**
+
+The new Human Review node enables human-in-the-loop workflows by pausing execution to collect user input or approvals, with custom input fields and automatic branching based on responses, timeouts, or failures. This ensures that critical decisions are validated by humans while maintaining workflow continuity and automatically managing exceptions.
+
+Key benefits
+
+* Improve Accuracy: Ensure critical decisions are validated by a person.
+* Maintain Flow: Automatically manage interruptions and exceptions without breaking the workflow.
+* Gain Control: Design the exact review process your business rules require.
+
+
+**Data Type Validation for Custom Scripts in the Function Node**
+
+The Function node now supports data type selection and validation for Custom Function arguments. Users can define each argument as Text, Number, Boolean, or JSON, instead of the default String. During execution, the system validates that mapped values or variables match the defined type and throws a clear error if a mismatch occurs, preventing runtime failures.
+
+
+<font size="4">AI Engineering Tools</font>
+
+**Expanded Model Support**
+
+This update introduces support for the following new AI models, providing greater flexibility for multimodal use cases and tool calling:
+
+* Text-to-Text tasks handling and node support for open-source models:
+    * Meta-llama/Llama-Guard-4-12B
+    * Meta-llama/Llama-3.2-11B-Vision-Instruct 
+* Audio-to-Text, Image-to-Text, and Text-to-Text nodes support for external models and Tool calling:
+    * Gemini 2.5 Pro
+    * Gemini 2.5 Flash 
+* Real-time models for voice conversations in Agentic Apps
+    * gemini-2.5-flash-preview-native-audio-dialog
+    * gemini-2.5-flash-exp-native-audio-thinking-dialog
+    * gemini-live-2.5-flash-preview	
+
+**Enhanced Custom API Integration for External Models**
+
+Custom API integration for external models now offers automatic provider format mapping (Anthropic, OpenAI) with improved error messaging, simplifying request/response configuration. Admins can also explicitly select supported features from a predefined list, making integration more robust and error-resistant.
+
+**Tool Calling Support for Open-Source Models**
+
+All open-source and fine-tuned model API endpoints are now upgraded to the OpenAI Chat Completions format. Both the new Chat Completions endpoint and the existing endpoint are currently available to ensure backward compatibility. The existing endpoint will be deprecated soon, so users are encouraged to transition to the new format. Hugging Face–hosted models are excluded from this update.
+
+The following models are now enabled for tool calling, allowing them to integrate with tools and return richer, more efficient responses
+
+* meta-llama/Llama-3.1-8B-Instruct
+* meta-llama/Llama-3.2-1B-Instruct
+* meta-llama/Llama-3.2-3B-Instruct
+* mistralai/Mistral-7B-Instruct-v0.3
+* mistralai/Mistral-Nemo-Instruct-2407
+
+
+**Model Deployment Status in Model Hub**
+
+The Model Hub landing page now provides an updated overview of model deployment statuses, including counts for active, failed, and ready-to-deploy models.
+
+**Enhanced Configuration Options for Realtime Models**
+
+The platform now supports additional voice parameters for real-time models from Google Gemini and Ultravox, enabling more nuanced and personalized voice experiences. 
+
+
+<font size="4">Other improvements</font>
+
+
+**Enhanced User Invitation UI for Admins**
+
+The Settings console now features an improved multi-row form for user invitations. Admins can add or delete rows to invite multiple users simultaneously, assign system or custom roles to each user, and track total invites with an auto-updating counter.
+
+
+
 ## v1.0.10 August 13, 2025
 
 <u> Minor Release </u>
