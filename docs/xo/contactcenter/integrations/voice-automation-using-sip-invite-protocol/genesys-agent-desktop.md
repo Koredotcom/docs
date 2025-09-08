@@ -17,7 +17,7 @@ This document contains a step-by-step process of handing over a call (via SIP IN
 
 1. Sign in to **[AI for Service](https://platform.kore.ai/){:target="_blank"}**.  
 2. Go to **Contact Center AI** > **Flows & Channels**.  
-3. Click **Start Flows** > **+New Start Flow**. Follow [this doc](https://docs.kore.ai/xo/flows/create-flows/){:target="_blank"} to create a new flow.  
+3. Click **Start Flows** > **+New Start Flow**. Follow [this doc](../../../flows/create-flows.md){:target="_blank"} to create a new flow.  
 <img src="../images/new-start-flow-1.png" alt="new-start-flow" title="new-start-flow" style="border: 1px solid gray; zoom:80%;">  
 
 4. In **Experience Flow**, add a **script node** and add the “*agentUtils.setAgentTranscribe({transcribe: true});”* code.  
@@ -199,11 +199,11 @@ You must use the same automation bot that was used in the CCAI Automation Flow f
 
 ### Follow the documentation for Agent AI integration with Genesys  
 
-Follow steps 1-4 of [AgentAssist Integration with Genesys - Manual Setup Instructions](https://docs.kore.ai/agentassist/integration/agentassist-integration-in-genesys-manual-steps/){:target="_blank"} for the Agent AI integration.   
+Follow the steps of [Agent AI Integration with Genesys Cloud CX](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md){:target="_blank"} for the Agent AI integration.   
 
 **Configuration Notes**:  
 
-1. While adding the Agent AI bot credentials in step-4 of [AgentAssist Integration with Genesys - Manual Setup Instructions](https://docs.kore.ai/agentassist/integration/agentassist-integration-in-genesys-manual-steps/){:target="_blank"}, make sure to add the details of the bot added in the [previous step](#add-the-bot).  
+1. While adding the Agent AI bot credentials in [Agent AI Integration with Genesys Cloud CX](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md){:target="_blank"}, make sure to add the details of the bot added in the [previous step](#add-the-bot).  
 
 2. In this step-4, add a new field in the Genesys data table with the following details:   
 Name: **isSipInviteTransferFromKore**  
