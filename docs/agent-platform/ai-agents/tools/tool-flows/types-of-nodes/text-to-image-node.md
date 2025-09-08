@@ -103,8 +103,13 @@ The metrics include:
 To add and configure the node, follow the steps below:
 
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Before proceeding, you must add an external LLM to your account using either <a href="../../../../../models/external-models/add-an-external-model-using-easy-integration" target="_blank">Easy Integration</a> or <a href="../../../../../models/external-models/add-an-external-model-using-api-integration" target="_blank">Custom API integration</a>.</p>
+  <p class="admonition-title">Note</p>
+  <p>
+    Before proceeding, you must add an external LLM to your account using either
+    <a href="../../../../models/external-models/add-an-external-model-using-easy-integration.md" target="_blank">Easy Integration</a>
+    or
+    <a href="../../../../models/external-models/add-an-external-model-using-api-integration.md" target="_blank">Custom API integration</a>.
+  </p>
 </div>
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
@@ -171,7 +176,7 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
+1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}.
 
 <img src="../images/add-input-variable-text-to-image.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 

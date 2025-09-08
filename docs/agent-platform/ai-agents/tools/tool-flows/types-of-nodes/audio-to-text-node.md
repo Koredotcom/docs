@@ -123,11 +123,6 @@ Metrics include:
 
 To add and configure the node, follow the steps below:
 
-
-!!!note
-    
-    The context object has a size limit of 1024 KB. The platform notifies the app designers when the size of the context object exceeds the limit. 
-
 <div class="admonition note">
   <p class="admonition-title">Note</p>
   <p>

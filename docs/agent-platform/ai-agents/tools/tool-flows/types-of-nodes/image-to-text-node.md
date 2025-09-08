@@ -38,8 +38,13 @@ In this document, you will learn how to add the node to your flows, configure it
 To add and configure the node, follow the steps below:
 
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Before proceeding, you must add an external LLM to your account using either <a href="../../../../../models/external-models/add-an-external-model-using-easy-integration" target="_blank">Easy Integration</a> or <a href="../../../../../models/external-models/add-an-external-model-using-api-integration" target="_blank">Custom API integration</a></p>
+  <p class="admonition-title">Note</p>
+  <p>
+    Before proceeding, you must add an external LLM to your account using either
+    <a href="../../../../models/external-models/add-an-external-model-using-easy-integration.md" target="_blank">Easy Integration</a>
+    or
+    <a href="../../../../models/external-models/add-an-external-model-using-api-integration.md" target="_blank">Custom API integration</a>.
+  </p>
 </div>
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
