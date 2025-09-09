@@ -8,15 +8,15 @@ Currently, the following prebuilt agents are available:
 
 * **Zendesk** - It helps us to fetch Zendesk tickets based on entities.
 * **Slack** - It helps us to send the response to Slack channels and threads.
-* **O365 Calendar** - It helps us to create calendar events, fetch calendar events based on filters,  check colleagues' availability, and send quick messages in case of a delay in joining the meeting.
-* **O365 Email** - It can get emails based on user queries fetching entities, send responses as emails, set individual emails as context, and ask for follow-ups.
-* **OneDrive** - It can fetch files based on user queries and filters, set individual files as context, and ask followup questions.
-* **Teams** - It can fetch files based on user queries and filters, set individual files as context, and ask follow-up questions.
+* **M365 Calendar** - It helps us to create calendar events, fetch calendar events based on filters,  check colleagues' availability, and send quick messages in case of a delay in joining the meeting.
+* **M365 Email** - It can get emails based on user queries fetching entities, send responses as emails, set individual emails as context, and ask for follow-ups.
+* **Microsoft OneDrive** - It can fetch files based on user queries and filters, set individual files as context, and ask followup questions.
+* **Microsoft Teams** - It can fetch files based on user queries and filters, set individual files as context, and ask follow-up questions.
 * **Jira** - It can retrieve issues based on user queries using entity filters and effortlessly create Jira issues using AI intelligence derived from action items.
 * **HubSpot** - It helps in pulling deals based on user queries.
 * **Google Calendar** - It can create calendar events, fetch the events based on filters, check colleagues' availability, and send quick messages in case of a delay in joining meetings.
 * **Gmail** - It can get emails based on user queries fetching entities, send responses as emails, set individual emails as context, and ask for follow-ups.
-* **Drive** - It can fetch files based on user queries and filters, set individual files as context, and ask follow-up questions.
+* **Google Drive** - It can fetch files based on user queries and filters, set individual files as context, and ask follow-up questions.
 
 ## Publish a Pre-Built Agent
 
