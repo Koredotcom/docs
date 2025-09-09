@@ -210,7 +210,7 @@ To enable SSO on the **Settings** console, follow the steps below:
 
 <ul><li><b>SAML</b>: <a href="#okta-configuration" target="_blank">Okta</a>, <a href="#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="#other-configuration" target="_blank">Other</a>. <a href="#saml" target="_blank">Learn more</a>.</li>
 <li><b>WS-Federation</b>: <a href="#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="#other-configuration" target="_blank">Other</a>. <a href="#ws-federation" target="_blank">Learn more</a>.</li>
-<li><b>OpenId connect</b>: <a href="#google-configuration" target="_blank">Google</a>. <a href="#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
+<li><b>OpenId connect</b>: <a href="#google-configuration" target="_blank">Google</a>. <a [Learn more](#openid-connect-configuration) target="_blank"></a>.</li></ul>
 
 <ol start="9"><li>Click <b>Save</b>.</li></ol>
 
