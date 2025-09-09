@@ -24,6 +24,8 @@ Debugging is now more intuitive with enhanced execution logs. The refreshed inte
 
 The enhanced interface offers a smoother and more intuitive way to manage conversation attachments. The new ‘Manage’ panel features ‘In Context’ and ‘Removed’ tabs, clearly organizing documents by status, with visual indicators showing actively used files. This streamlined approach enhances user control and awareness of document usage, making it easier to track and manage attachments.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md)
+
 
 <font size="4">No-code & Pro-Code Tools</font>
 
@@ -57,9 +59,8 @@ This update introduces support for the following new AI models, providing greate
     * Gemini 2.5 Pro
     * Gemini 2.5 Flash 
 * Real-time models for voice conversations in Agentic Apps
-    * gemini-2.5-flash-preview-native-audio-dialog
-    * gemini-2.5-flash-exp-native-audio-thinking-dialog
-    * gemini-live-2.5-flash-preview	
+    * gemini-live-2.5-flash-preview
+    * gemini-2.0-flash-live-001
 
 **Enhanced Custom API Integration for External Models**
 

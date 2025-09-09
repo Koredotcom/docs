@@ -55,6 +55,20 @@ This detailed layout enables users to understand the sequence of operations and 
 
 [Learn More](settings/app-configurations.md)
 
+**Document Context Management**
+
+The document management interface presents an enhanced experience for managing uploaded documents, organized into two distinct sections:
+
+* ***In Context***: Lists documents currently being used as context for the ongoing conversation.
+* ***Removed*:** Lists documents that have been uploaded but are not part of the context currently. These documents can be re-added to the context at any time.
+
+
+![Context Management](images/attachments/document-mgmt.png "Context Management")
+
+
+When a document is deleted from the In Context section, it is automatically moved to the Removed section. 
+
+To restore a document from the Removed section, click the plus (+) icon. To permanently delete the attachment, click the delete icon on the file in the Removed section.
 
 ## Conversation History
 
