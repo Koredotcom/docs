@@ -8,7 +8,7 @@ The Account Hub includes the following key sections:
 
 ### Account Analytics
 
-Access organization-wide performance metrics with the ability to filter by workspace. Monitor token usage patterns and user engagement through comprehensive dashboards. [Account Analytics](../analytics/dashboard-view.md)
+Access organization-wide performance metrics with the ability to filter by workspace. Monitor token usage patterns and user engagement through comprehensive dashboards. 
 
 ### Workspace Management
 
@@ -19,8 +19,6 @@ Oversee all workspaces from a single interface with visibility into:
 * Agent inventories within each workspace
 * Activity timestamps showing recent usage
 * Tools for creating new workspaces
-
-[Workspace Management](./workspace.md)
 
 ### User Management
 
