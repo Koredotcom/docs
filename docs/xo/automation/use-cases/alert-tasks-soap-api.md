@@ -1,16 +1,16 @@
 # Alert Task – SOAP API Request
 
-In this article, we see how to configure an API Request for a SOAP service, as part of an Alert Task. Learn more about Alert tasks <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>.
+In this article, we see how to configure an API Request for a SOAP service, as part of an Alert Task. [Alert task](../use-cases/alert-tasks.md).
 
 ## SOAP API Request Overview
 
 For a task with the **Connection Type** specified as **Webservice** and the **Connection Mode** set to **SOAP** you need to define:
 
-* **Authentication** – If required for your alert task, you need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key as mentioned <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">here</a>.
-* **WSDL URL** – Define the URL that contains your WSDL data. When the URL is retrieved, you can choose from a list of Available Operations based on the WSDL, and then customize the user input fields, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/#define-the-wsdl-url" target="_blank">Learn more</a>.
-* **Access Using a connector** – Specify if your Platform is installed on-premises and you want to user the Kore.ai Connector agent. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/#access-using-a-connector" target="_blank">Learn more</a>.
-* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/#add-the-response-sample" target="_blank">Learn more</a>.
-* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/#website-preview-content" target="_blank">Learn more</a>.
+* **Authentication** – If required for your alert task, you need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key.
+* **WSDL URL** – Define the URL that contains your WSDL data. When the URL is retrieved, you can choose from a list of Available Operations based on the WSDL, and then customize the user input fields.
+* **Access Using a connector** – Specify if your Platform is installed on-premises and you want to user the Kore.ai Connector agent.
+* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user.
+* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. 
 
 Click **Save** to save the API request settings.
 
@@ -284,7 +284,7 @@ To get started with defining access using a connector for a task, follow these s
 1. On the **API Request** tab, expand the **Access using a connector** section.
 2. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Apps using the Kore.ai Connector agent. 
 
-    This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/administration/security-and-control/security-module-overview/" target="_blank">Using the Kore.ai Connector</a>.
+    This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. 
 
     <img src="../images/access-using-a-connector.png" alt="access using a connector" title="access using a connector" style="border: 1px solid gray; zoom:75%;">
 

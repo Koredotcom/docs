@@ -155,12 +155,12 @@ To get started with defining the **Authorization** for a task,
 3. To define a new authorization provider, click **Create New**.
 4. On the **New Authorization Mechanism** window, select the type of authorization used by your AI Agent from the **Authorization Type** drop-down list.
 5. You can choose one of the following types of authorization:
-    * **Basic Auth**: A standard protocol to collect username and password information. Kore.ai uses SSL encryption in combination with basic authentication to help secure end-user information. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-basic-auth/" target="_blank">here</a> for the configuration details.
-    * **OAuth v2 Password Grant Type** – Define a custom authorization type for non-standard web service authorization types. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-oauth-password-grant-type/" target="_blank">here</a> for the configuration details.
-    * **OAuth v2 Client Credential**
-    * **OAuth v1** – Enables web applications or web services to access protected resources using an API without end-users having to disclose their login credentials to Kore.ai. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alerts-oauth-v1/" target="_blank">here</a> for the configuration details.
-    * **OAuth v2** – The newest version of the OAuth protocol focusing on specific authorization flows for web applications and web services. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alerts-oauth-v2/" target="_blank">here</a> for the configuration details.
-    * **API Key** – An identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provide authentication for secure access. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-using-api-key/" target="_blank">here</a> for the configuration details.
+    * [Basic Auth](alert-task-basic-auth.md): A standard protocol to collect username and password information. Kore.ai uses SSL encryption in combination with basic authentication to help secure end-user information.
+    * [OAuth v2 Password Grant Type](alert-task-oauth-password-grant-type.md) – Define a custom authorization type for non-standard web service authorization types. 
+
+    * [OAuth v1](alerts-oauth-v1.md): Enables web applications or web services to access protected resources using an API without end-users having to disclose their login credentials to Kore.ai. 
+    * [OAuth v2](alerts-oauth-v2.md): The newest version of the OAuth protocol focusing on specific authorization flows for web applications and web services. 
+    * [API Key](alert-task-using-api-key.md): An identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provide authentication for secure access.  
     <img src="../images/alerts-authorization.png" alt="alerts authorization" title="alerts authorization" style="border: 1px solid gray; zoom:75%;"> 
 
 ### API Requests
@@ -169,10 +169,10 @@ Configure the API request that asks for data from your website, system, or web a
 
 After you define the authorization mechanism and then click **Save Auth**, you are ready to configure the alert task request. The configuration settings for an alert task request are based on the **Connection Type** that you define for the task:
 
-* Configuring API Request for WebHook service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-webhook-api/" target="_blank">here</a> for details.
-* Configuring API Request for REST service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/" target="_blank">here</a> for details.
-* Configuring API Request for SOAP service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/" target="_blank">here</a> for details.
-* Configuring API Request for RSS service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/" target="_blank">here</a> for details.
+* Configuring API Request for [WebHook service](alert-tasks-webhook-api.md).
+* Configuring API Request for [REST service](alert-task-rest-api.md). 
+* Configuring API Request for [SOAP service](alert-tasks-soap-api.md). 
+* Configuring API Request for [RSS service](alert-tasks-rss-api-request.md). 
 
 ## Bot Responses
 
@@ -180,15 +180,15 @@ After you describe your alert task **General** tab settings and then configure t
 
 To define the response object for an alert task, there are two sections:
 
-* **Report Template Definition** – For some tasks, you may want to display report data to the end-user as a link that can display the payload response using a template, such as a table, contact card, or formatted for a specific message type such as a weather report.
+* [Report Template Definition](alert-tasks-report-templates.md) – For some tasks, you may want to display report data to the end-user as a link that can display the payload response using a template, such as a table, contact card, or formatted for a specific message type such as a weather report.
 
 !!!note
     
     This section is not used for webhook alert tasks, action tasks, or RSS alert tasks. 
 
-Refer <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-report-templates/" target="_blank">here</a> for Configuring the Report Template Definition.
 
-* **Message Definition** – In this section, you define the look and feel of the data presented to the end-user when the alert is displayed based on the payload delivered by the webhook. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-message-definition/" target="_blank">Learn more</a>.
+
+* [Message Definition](alert-tasks-message-definition.md) In this section, you define the look and feel of the data presented to the end-user when the alert is displayed based on the payload delivered by the webhook. 
 
 ## Alert Settings
 
@@ -202,9 +202,9 @@ After you define the **General** tab settings for your Alert task, configure the
 
 To configure the settings for an alert task, other than a webhook alert task, you will need to define:
 
-* **Filters** – You can define filters for end-users to limit the results of an alert task to the results an end-user needs. For example, you can define a filter for the name, or account, or business. When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-defining-filters/" target="_blank">Defining Filters for a Task</a>.
-* **Schedule** – Alert tasks only reach out to a web service for data when the AI Agent makes a request. For each task, you need to define when, and how often the web service is queried for data for an alert message. You can define the scheduling options presented to the end-user when the task is set up, as well as the default schedule for the task. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-configuring-the-schedule/" target="_blank">Configuring the Schedule for a Task</a>.
-* **Advanced Settings** – In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-advanced-settings/" target="_blank">Define Advanced Settings</a>. 
+* [Filters](alert-tasks-defining-filters.md) You can define filters for end-users to limit the results of an alert task to the results an end-user needs. For example, you can define a filter for the name, or account, or business. When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. 
+* [Schedule](alert-tasks-configuring-the-schedule.md): Alert tasks only reach out to a web service for data when the AI Agent makes a request. For each task, you need to define when, and how often the web service is queried for data for an alert message. You can define the scheduling options presented to the end-user when the task is set up, as well as the default schedule for the task. 
+* [Advanced Settings](alert-tasks-advanced-settings.md) – In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user. 
 
 ## Version Namespaces
 

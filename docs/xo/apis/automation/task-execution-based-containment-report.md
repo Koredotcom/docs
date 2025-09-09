@@ -32,7 +32,7 @@ This task-wise Containment Report offers a comparative analysis of the impact of
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token" target="_blank">How to generate the JWT Token.</a>
+See <a href="../../apis/automation/api-introduction.md#generating-the-jwt-token" target="_blank">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>

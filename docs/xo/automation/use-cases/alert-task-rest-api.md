@@ -1,6 +1,6 @@
 # Alert Task – REST API Request
 
-We have seen how an Alert task can be set up in Kore.ai XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this section, we will see how to configure an API Request for a REST service.
+We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform. In this section, we will see how to configure an API Request for a REST service.
 
 ## General Setup
 
@@ -9,13 +9,13 @@ The following illustration is an example of the **API Request** tab available wh
 
 For such an Alert Task you will need to define: 
 
-* **Content Type** – The type of data exchanged between Kore.ai and your web application. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#content-type" target="_blank">Learn more</a>.
-* **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/bot-authorization/setting-up-authorization-using-an-api-key/" target="_blank">Learn more</a>.
-* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#parameters" target="_blank">Learn more</a>.
-* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#define-an-initializer" target="_blank">Learn more</a>.
-* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your AI Agent to initiate the delivery of the data payload from the web service to the Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#define-the-request-chain" target="_blank">Learn more</a>.
-* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#add-the-response-sample" target="_blank">Learn more</a>.
-* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#preview-website-link-content" target="_blank">Learn more</a>.
+* **Content Type** – The type of data exchanged between Kore.ai and your web application. 
+* **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. 
+* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. 
+* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. 
+* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your AI Agent to initiate the delivery of the data payload from the web service to the Platform. The request chain can consist of pre-processors, API requests, and post-processors. 
+* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. 
+* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message.
 
 Click **Save** to save the API request settings.
 
@@ -38,7 +38,7 @@ The **Content Type** describes the type of data exchanged between Kore.ai and yo
 
 ## Authorization 
 
-If you require an authorization provider for your Alert Task, you will need to configure it according to its authentication method. Please click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-using-api-key/" target="_blank">here</a> for further details.
+If you require an authorization provider for your Alert Task, you will need to configure it according to its authentication method. See [Alert Task using API Key](alert-task-using-api-key.md).
 
 ## Parameters
 
@@ -342,7 +342,7 @@ The JIRA API to ‘Post a comment’ requires one query field and one payload fi
 
 ## Define an Initializer
 
-To run a task, you may need to put or get values from a session before executing the task using Kore.ai session-specific variables.  For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">Using Session and Context Variables in Tasks</a>.
+To run a task, you may need to put or get values from a session before executing the task using Kore.ai session-specific variables.  For more information, see [Using Session and Context Variables in Tasks](../use-cases/using-session-and-context-variables.md).
 
  Some web services require executed code, session variables, or modification of user context details before executing an API request. 
  
@@ -715,7 +715,7 @@ This is then used as a variable input as shown in the following **Post URL**:
 https://app.asana.com/api/1.0/projects/**{id}**/tasks?opt_fields=completed,modified_at 
 
 You must also specify the HTML **Content Type** expected in the payload response as well as the HTML **Request** method. 
-For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">Using Session and Context Variables in Tasks</a>.
+
 
 **Spread**: For payloads that contain arrays of data that you need to separate. 
 

@@ -69,7 +69,7 @@ First, let us see how to configure a Widget to display balance from the current 
 2. Click the **Create Widget** button.
 3. Give a Widget Name and a Display Name.
 4. Set the **Source**, we are triggering Dialog Task, hence select _Dialog Task_.
-    * **Select Dialog Task** as _Get Balance_, as per our use case
+    * **Select Dialog Task** as _Get Balance_, as per our use case.
     * In the **Entity Assignment**, set the following entities (you can select from the drop box that appears as you type) as per the Dialog Task requirement:
 
         * **AccountType** to _current;_

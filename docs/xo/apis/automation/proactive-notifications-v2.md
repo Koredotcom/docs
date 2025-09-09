@@ -38,7 +38,7 @@ Proactive notification includes:
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
+See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
