@@ -80,6 +80,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gemini-2.0-flash-lite</li>
     <li>gemini-2.5-flash-preview-05-20</li>  
     <li>gemini-2.5-flash</li>
+    <li>gemini-2.5-pro</li>
   </ul>
    </td>
   </tr>
@@ -105,6 +106,16 @@ While Agent and Supervisor Orchestration is supported for most commonly used LLM
     <ul>
     <li>open ai-gpt-4o-realtime-preview</li>
     <li>open ai-gpt-4o-mini-realtime-preview</li>
+    </ul>
+   </td>
+  </tr>
+    <tr>
+   <td >Google Gemini
+   </td>
+   <td >
+    <ul>
+    <li>gemini-live-2.5-flash-preview</li>
+    <li>gemini-2.0-flash-live-001</li>
     </ul>
    </td>
   </tr>

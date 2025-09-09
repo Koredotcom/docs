@@ -1,12 +1,14 @@
 # Function Node - Empower Workflows with Custom Code
 
-The **Function** node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
+The Function node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
 
 ## Key Capabilities
 
 * **Custom Script Execution**: Write and execute JavaScript or Python code inline or leverage pre-deployed custom functions.
 * **Dynamic Data Processing**: Transform, validate, and manipulate data flowing through your automation.
 * **Reusable Functions**: Import and use pre-built functions from your organization's script library.
+* **Access Agent Memory**: Leverage Agent Memory to perform context-aware processing.
+
 
 ## Common Use Cases
 
@@ -15,7 +17,15 @@ The **Function** node is a powerful component that enables you to extend your au
 * **Text Processing**: Perform string manipulation, regex operations, or natural language processing.
 * **Mathematical Operations**: Execute complex calculations or statistical analysis on your data.
 
+
+## How It Works
+
+The Function Node integrates seamlessly into your tool flows, accepting inputs from previous nodes and passing processed outputs to subsequent nodes. You can either write code directly in the built-in editor or reference custom functions from deployed scripts. The node supports both static and dynamic inputs through context variables, making it adaptable to various automation scenarios.
+
+<img src="./../images/function_node_new.png" alt="Function Node" title="Function Node" style="border: 1px solid gray; zoom:40%;">
+
 In this document, you will learn how to add Function nodes to your flows, configure them with custom code or functions, handle inputs and outputs, and test your implementations.
+
 
 ## Add and Configure a Function Node
 
@@ -128,6 +138,79 @@ For example, `context["steps"]["Start"]["Q3balance"]`
 
 The above syntaxes fetch the variable “*Q3balance*” that you define in the **Start** node. [Learn more](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"}.
 
+
+
+### Using Agent Memory in the script
+
+Memory Stores in Agentic Apps enable agents to retain, access, and manipulate information during a session or across sessions. The data stored in memory can be extremely useful for providing context and state persistence within the tools. The Function node supports accessing agent memory, allowing you to create dynamic, context-aware, and stateful logic directly within the node.
+
+**When to Use**
+
+Some of the common use cases include:
+
+* Retaining and reusing information across different steps in an agent execution.
+* Enabling conditional logic based on past user interactions or stored data.
+* Sharing data between tools without explicitly passing it as input parameters.
+
+[Learn More about Memory Stores.](../../../agentic-apps/memory-stores.md)
+
+#### Memory Store Data Format
+
+Data is stored in the memory stores in JSON format and follows the [JSON Schema specification](https://json-schema.org/). Always check the schema of the memory store you are accessing to ensure that your set/get operations match the defined field names and data types.
+
+#### Syntax to Manage Agent Memory in Function Node
+
+1. **Get Content from agent memory**
+
+    Syntax: get_content (memory_store_name, projections Optional)
+
+    * memory_store_name(string): The technical name of the memory store.
+    * projections (optional): JSON object specifying the fields to retrieve. If omitted, the entire record is returned.
+
+    Example: To fetch the content of the notes field from a memory store, my-notes, use the following code:
+
+    ```
+    STORE_NAME = "my-notes"
+
+    retrieved = memory.get_content( memory_store_name=STORE_NAME, projections= {  note: 1, timestamp: 0  }) 
+    ```
+
+2. **Set Contents to Agent Memory**
+
+    Syntax: set_content (memory_store_name, content)
+
+    * memory_store_name(string): The technical name of the memory store.
+    * content: Content to be set to the memory store.
+
+	Example: To set a new note to the memory store, my-notes, use the following code:
+
+    ```
+	STORE_NAME = "my-notes"
+
+    memory.set_content( memory_store_name=STORE_NAME, content={"note": "Learned about memory services today.", "timestamp": "2025-05-15T10:00:00Z"} )
+    ```
+
+3. **Delete Contents of Agent Memory Store**
+
+    Syntax: delete_content (memory_store_name)
+
+    Example: To delete the contents of the memory store, my-notes, use the following code:
+
+    ```
+    STORE_NAME = "my-notes"
+
+    memory.delete_content( memory_store_name=STORE_NAME)    
+    ```
+
+**Points to Note:**
+
+* Memory stores can be accessed as per their defined scope.
+* Use projections to use the memory store efficiently.
+* Refer to the schema of the memory store for field names and data types.
+* Handle error conditions.
+
+
+
 ### Execute a Custom Function 
 
 Selecting **Custom Function** invokes a function from an imported and deployed script when running the node flow. The steps to set it up are summarized below:
@@ -143,7 +226,7 @@ To select a custom script deployed in your account, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The deployed scripts are listed under <b>Settings</b> > <b>Manage custom scripts</b>. <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/" target="_blank">Learn more</a>.</p>
+<p>The deployed scripts are listed under <b>Settings</b> > <b>Manage custom scripts</b>. <a href="../../../../../settings/monitoring/monitoring-custom-scripts" target="_blank">Learn more</a>.</p>
 </div>
 
 1. Select the **Custom function** option for the **Function** node.
@@ -305,7 +388,7 @@ To run the flow for static inputs, follow the steps below:
 
 To run the flow for dynamic inputs, follow the steps below:
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables){:target="_blank"}.
+1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
 
 <img src="../images/add-input-variable-button.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
@@ -317,7 +400,7 @@ Once you define the input variables, you must [add the output variable(s)](../ty
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
-<p><ul><li>You can use the <b>Start</b> node’s input variables as context variables in the script editor to accept dynamic values and generate the output. To refer to the input variable, follow the syntax mentioned <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/function-node/#syntaxes-for-the-context-input" target="_blank">here</a>.</li>
+<p><ul><li>You can use the <b>Start</b> node’s input variables as context variables in the script editor to accept dynamic values and generate the output. To refer to the input variable, follow the syntax mentioned <a href="#syntaxes-for-the-context-input" target="_blank">here</a>.</li>
 <li>Once you run the node’s flow, the result gets stored in the output variable of the <b>Start</b> node. Additionally, this key is mapped to the <b>End</b> node, where you can define its value.</li>
 <img src="../images/output-variable-start-node.png" alt="end node key" title="end node key" style="border: 1px solid gray; zoom:75%;"></ul></p></div>
 
@@ -345,7 +428,7 @@ To run and test the tool flow, follow the steps below:
     <img src="../images/generate-output-function-node.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">  
 
 
-The **Debug** window generates the flow log and results for the given input(s), as shown below. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/){:target="_blank"} about running the tool flow. 
+The **Debug** window generates the flow log and results for the given input(s), as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow. 
 
 <img src="../images/debug-log-function-node.png" alt="debug log" title="debug log" style="border: 1px solid gray; zoom:75%;">  
 
@@ -367,7 +450,7 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 
 When you import a tool, a *.zip* package is imported from your local system with the flow definition, app definition, and environment variables JSON files from another environment. [Learn more](../../import-a-tool.md){:target="_blank"}.
 
-If the tool contains a **Function node**, its configuration is automatically fetched and populated in the new environment (tools automation flow) where the tool is being imported.
+If the tool contains a Function node, its configuration is automatically fetched and populated in the new environment (tools automation flow) where the tool is being imported.
 
 ### Script Linking Behavior
 
@@ -379,7 +462,7 @@ If the tool contains a **Function node**, its configuration is automatically fet
 
 **Export a Tool**
 
-When you export a tool that contains a **Function node**, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-tool.md){:target="_blank"}.
+When you export a tool that contains a Function node, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-tool.md){:target="_blank"}.
 
 The following confirmation window is displayed before the export begins.
 
@@ -392,7 +475,7 @@ Do one of the following:
 
 **Share a Tool**
 
-When you share a tool with another user within the same account, all configurations of the **Function node** are retained and available to the recipient as well.
+When you share a tool with another user within the same account, all configurations of the Function node are retained and available to the recipient as well.
 
 ## Related Links
 

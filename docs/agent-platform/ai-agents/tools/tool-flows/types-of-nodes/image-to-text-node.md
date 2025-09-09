@@ -1,27 +1,45 @@
-# Image to Text Node - Automate OCR and Interpretation
+# Image to Text Node – Streamline Document Processing with OCR Automation
 
-The **Image to Text** node in the tool builder processes an uploaded image and generates text responses based on the user’s prompt. It can provide descriptions, answer image-related questions, or extract text from the image. This node leverages external LLM models like OpenAI and Anthropic for image processing and text generation.
+The **Image to Text** node is a versatile multimodal component that enables you to extract information from images and generate text-based outputs within your automation flows. By processing uploaded images alongside user-defined prompts, the node can describe visuals, answer image-related questions, or extract embedded text. It leverages external LLM models such as OpenAI and Anthropic for advanced image interpretation and text generation, making it ideal for automating workflows that involve visual content analysis.
 
-A sample use case involves an insurance company assessing vehicle damage to estimate compensation and verify customer claims. The **Image to Text** node processes the uploaded image of the damaged vehicle, analyzes the extent of the damage, and helps determine repair costs. The [File Upload API](../../../../apis/apis-list/upload-file-api.md){:target="_blank"} generates the file source (URL) at the tool endpoint, which is required as input for the node. Any publicly accessible URLs (public repositories) can also be used for the File Source.
+## Key Capabilities
 
-<div class="admonition note">
-<p class="admonition-title">Important Considerations</p>
-<p><ul><li>The user can upload only one file at a time for processing.</li>
-<li>Except for image input handling, the OCR node functions like the existing AI node.</li>
-<li>Sending images and related settings are handled by the <a href="https://docs.kore.ai/agent-platform/apis/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
-<li>Image input preprocessing is supported in the following formats:</li>
-<ul><li>Binary, base64-encoded for Anthropic models.</li>
-<li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></ul></p>
-</div>
+* **Image Understanding with Prompts**: Generate detailed descriptions, perform accurate OCR, or answer image-specific questions using natural language prompts.
+
+* **OCR and Text Extraction**: Automatically extract embedded text from images, including scanned documents, screenshots, and photos.
+
+* **Multi-Model Support**: Leverage external LLM models like OpenAI and Anthropic for flexible, high-quality image interpretation.
+
+
+## Common Use Cases
+
+* **Document Digitization**: Extract text from scanned documents, receipts, or invoices for archiving or processing. 
+
+* **Image-Based Content Moderation**: Detect and review text content embedded in images to ensure compliance with relevant regulations. 
+
+* **Multilingual OCR**: Convert printed or handwritten text from images into machine-readable text across multiple languages. 
+
+* **Knowledge Extraction**: Use natural language prompts to pull relevant information from diagrams, posters, or infographics and answer questions based on their content.
+
+## Example Use Case
+
+A sample use case involves an insurance company evaluating vehicle damage to streamline the claim assessment process. The **Image to Text** node analyzes the uploaded image of the damaged vehicle using a natural language prompt like "*Analyze the uploaded image of the vehicle and identify which parts show visible damage. Choose the affected components from the following list: {{context.parts_list}}*.." It identifies impacted parts and estimates repair costs, helping automate claim verification and compensation decisions. 
+
+## How it Works
+
+The **Image to Text** node integrates smoothly into your tool flows by accepting image file URLs and generating descriptive or structured text output for downstream nodes. You can configure the node by selecting a supported model and providing a valid image URL in PNG, JPEG, or JPG format. Use the System Prompt to define the model’s role (e.g., insurance evaluator), and the Prompt to specify the task, such as answering a question or extracting details. Prompts support dynamic context variables, enabling flexible, data-driven automation scenarios.
+
+<img src="../images/how-image-to-text-works.png" alt="how image to text works" title="how image to text works" style="border: 1px solid gray; zoom:75%;">
+
+In this document, you will learn how to add the node to your flows, configure it with supported models, define system and user prompts, handle image inputs via URL, and pass the generated responses to downstream nodes for further processing.
 
 ## Steps to Add and Configure the Node
 
 To add and configure the node, follow the steps below:
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Before proceeding, you must add an external LLM to your account using either <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API integration</a></p>
-</div>
+**NOTE**
+
+  Before proceeding, you must add an external LLM to your account using either [Easy Integration](../../../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} or [Custom API Integration](../../../../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}.
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
@@ -43,17 +61,25 @@ To add and configure the node, follow the steps below:
 <ul><li><b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>InsuranceEvaluation</i>.”</li>
 <li>Select a model from the list of configured models.</li></ul>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are currently supported.</p>
-</div>
+   <div class="admonition note">
+   <p class="admonition-title">Note</p>
+   <p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are supported.</p>
+   </div>
 
 * Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the tool endpoint.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><ul><li>Only PNG, JPEG, and JPG file formats are supported.</li>
-<li>The file source url must be valid for the node to function properly.</li></ul></p></div>
+  <div class="admonition note">
+  <p class="admonition-title">Key Considerations</p>
+  <p><ul><li>The user can provide only one file URL at a time for processing.</li>
+  <li>The file source url must be valid for the node to function properly.</li>
+  <li>Only PNG, JPEG, and JPG file formats are supported.</li>
+  <li>Except for image input handling, the OCR node functions like the existing AI node.</li>
+  <li>Sending images and related settings are handled by the <a href="../../../../../apis/apis-list/upload-file-api" target="_blank">File Upload API</a>.</li>
+  <li>Image input preprocessing is supported in the following formats:</li>
+    <ul><li>Binary, base64-encoded for Anthropic models.</li>
+    <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></ul></p>
+   </div>
+
 
 <ul><li><b>System Prompt</b>: System prompts guide the model’s behavior and response style. Enter a system prompt to define its role for your use case. For example: "<i>You are a vehicle insurance assistant that analyzes uploaded vehicle images to assess damage and estimate repair costs in USD</i>."</li>
 <li><b>Prompt</b>: User prompts define specific questions or requests for the model. Provide clear instructions for the model to follow, using context variables for dynamic inputs in the syntax: <code>{{context.variable_name}}</code>. <b>Example:</b> "<i>Check the image provided for the damaged parts in the car and select what parts are affected from the list below - <code>{{context.parts_list}}</code></i>."</li>

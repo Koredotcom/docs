@@ -24,7 +24,7 @@ By connecting to your **Search AI** App, the DocSearch Node provides high-qualit
 * **Configurable Meta filters**
 
     * You can configure optional meta filters to narrow the search field with the query.
-    * If meta filters are not provided, the query is applied to all the documents uploaded to that connection. [Learn more](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"}.
+    * If meta filters are not provided, the query is applied to all the documents uploaded to that connection. [Learn more](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"}.
 
 * **Redirection Capability**
 

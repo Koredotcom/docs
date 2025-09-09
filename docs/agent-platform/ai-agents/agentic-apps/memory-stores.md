@@ -284,14 +284,15 @@ This memory store follows the following schema:
 
 The **metadata** field is used to maintain any contextual metadata information. ***Developers can update this field only via the APIs or while accessing the platform via XO or AI for Work.***
 
-The **sessionInfo** is a system-populated object that includes the following session-related fields:
+The **sessionInfo** is a system-populated object that contains metadata about the current session. It includes the following fields:
 
-* sessionId
-* appId
-* sessionReference
-* userReference
-* userId
-* runId
+* sessionId - Unique identifier for the session.
+* appId - Identifier of the application where the session is running.
+* sessionReference - Reference string for tracking the session.
+* userReference - Reference string associated with the user in the session.
+* userId - Unique identifier for the user.
+* runId - Identifier for the specific execution run within the session.
+* timestamp – The date and time when the session information was recorded.
 
 **Scope and Identification**
 

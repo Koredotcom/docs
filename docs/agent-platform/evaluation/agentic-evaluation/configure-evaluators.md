@@ -1,4 +1,4 @@
-# Add Evaluators
+# Configure Evaluators
 
 After importing sessions into Evaluation Studio, you can apply pre-built evaluators to measure your AI agent’s behavior and performance. Evaluations can be run at both the session and trace levels, helping you analyze goal completion, decision quality, and adherence to ideal workflows.
 

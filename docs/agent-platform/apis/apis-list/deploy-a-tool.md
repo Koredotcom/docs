@@ -50,7 +50,7 @@ The API response includes the **tool ID** and the **tool deployment status**. Af
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code> https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-pxxxxxxm.kxxe.ai</code>
    </td>
    <td>String
    </td>

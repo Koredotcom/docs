@@ -1,40 +1,46 @@
-# Integration Node - Automate Third-party Integrations
+# Integration Node – Enhance Workflows with External Services
 
-The **Integration node** allows you to connect to a third-party service provider within the Tool Flow using the configured connection and auth method from the **Settings** console. [Learn more](../../../../settings/integrations/about-integrations.md){:target="_blank"}.
+The **Integration Node** is a powerful and flexible component that acts as a run-time engine for securely connecting to third-party services, enabling seamless data exchange and automation through configured actions and auto-generated JSON. It leverages pre-configured connections and authentication methods to serve as a bridge between your tool and external platforms, supporting actions such as exporting data from a site or fetching broken back links within your automation without any coding effort.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><ul><li>You must add at least one connection to configure the node. <a href="https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#add-a-connection-to-set-up-integration" target="_blank">Learn more</a>.</li>
-<li>Make sure the selected connection is tested under <b>Settings</b> > <b>Integrations</b> before using it in the node. <a href="https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#test-connection" target="_blank">Learn more</a>.</li></ul></p>
-</div>
+## Key Capabilities
 
-When you select a connection, the node allows you to add specific actions provided by the third-party service, such as exporting data from a site or fetching broken back links into your tool automation flow.
+* **No-Code Service Integration**: Embed prebuilt third-party services or actions into your automation flow without writing any code.
+* **Secure Connections**: Leverage tested and authenticated connections to ensure secure data exchange with external services.
+* **Flexible Configuration**: Customize the node directly on the Tool Flow canvas and seamlessly connect it with other nodes to fit your automation needs.
 
-You can configure the required action parameters directly in the UI, or view and copy the **JSON code** generated for the configured node.
 
-**Benefits**
+## Common Use Cases
 
-* **Prebuilt services or actions** can be embedded into your automation flow without any coding. 
+* **CRM & Marketing Automation**: Connect CRM systems with marketing platforms to trigger personalized campaigns based on customer data and behavior, such as automatically launching email sequences when a lead is captured.
+* **Workflow Automation**: Automate tasks across apps, such as creating a project task when a support ticket is raised.
+* **Payment Gateways**: Securely process online transactions through integrated third-party payment providers.
+* **SaaS Integrations**: Enable seamless connections between SaaS tools (e.g., CRM, email marketing, e-commerce) to streamline daily workflows.
 
-* These services are secured through the **authentication mechanism** of the configured and tested connection. 
 
-* You can easily **customize the node** in the Tool Flow canvas and integrate it with other nodes to suit your specific needs.
+## Example Use Case
 
+Let’s consider an example where the **Integration Node** can be used to automate the tracking of broken back links for a website. The workflow begins with a manual input of the target URL via the Start node. The Integration Node connects to a third-party SEO tool (e.g., Ahrefs) and calls an API to fetch back link data filtered for broken links.
+
+Using pre-configured authentication, the request returns a structured response with broken URLs, referring pages, and status codes. This data is then passed to the next node for formatting or further use.
+
+Results can be emailed, mapped to a dashboard, or used to trigger follow-up actions—streamlining SEO monitoring, reducing manual efforts, and enabling quick fixes.
+
+## How It Works
+
+The **Integration Node** integrates seamlessly into your tool flows, using configured connections and authentication mechanisms to securely interact with external services. It accepts inputs from previous nodes, executes third-party actions based on the selected service and parameters, and passes results to subsequent nodes. You can configure actions through the UI, use context variables for dynamic inputs, and customize prebuilt JSON code, making it ideal for automating a wide range of integration scenarios.
+
+<img src="../images/how-integration-node-works.png" alt="how integration node works" title="how integration node works" style="border: 1px solid gray; zoom:75%;">
+
+In this document, you will learn how to add Integration Nodes to your flows, configure them with connections and action parameters, handle inputs and outputs, and test your implementations.
+
+## Prerequisites
+
+* You must add at least one service provider connection before configuring the node by clicking <b>+ Add Connection</b>. The system redirects to <b>Settings</b> -> <b>Integrations</b> page. Follow the steps [here](../../../../settings/integrations/about-integrations.md/#add-a-connection-to-set-up-integration){:target="_blank"} to complete the process.
+* Always test the selected connection in the <b>Settings</b> console to ensure successful integration. [Learn more](../../../../settings/integrations/about-integrations.md/#test-connection){:target="_blank"}.
 
 ## Steps to Add and Configure the Node
 
-<div class="admonition note">
-<p class="admonition-title">Prerequisite</p>
-<p>A service provider account and connection to it must exist before you configure a node. If no connection is available, the system will prompt you to add one.</p>
-</div>
-
-<img src="../images/no-connection.png" alt="no connection" title="no connection" style="border: 1px solid gray; zoom:75%;">
-
-
-To add a connection, click **+ Add Connection**. The system redirects to **Settings** > **Integrations** page. Follow the steps [here](../../../../settings/integrations/about-integrations.md/#add-a-connection-to-set-up-integration){:target="_blank"} to complete the process.
-
-
-To add and configure the Integration node, follow the steps below:
+To add and configure the node, follow the steps below:
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
@@ -54,7 +60,7 @@ To add and configure the Integration node, follow the steps below:
     <div class="admonition note">
     <p class="admonition-title">Note</p>
     <p>The node uses the service provider’s name by default. You can rename the node if needed.</p>
-</div>
+    </div>
 
 <ol start="7"><li>Enter or select inputs for the following fields:</li>
 <ul><li><b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>Ahrefslinkbuilder</i>” (Only letters and numbers are allowed).</li>
@@ -136,7 +142,7 @@ After adding and configuring the node as mentioned [here](../types-of-nodes/inte
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-<ol><li>Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a></li>
+<ol><li>Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a></li>
 <img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;"></ol>
 <ol start="2"><li>In the <b>Enter input variable</b> window, select the appropriate data type for the <b>Type</b> field to define the input variable.</li>
 <li>Click <b>Save</b>.</li></ol>
@@ -153,7 +159,7 @@ This step is required because the **Start node** must have at least one **output
 <li>Click <b>Add Output Variable</b>.</li>
 <img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <i>String</i> for <b>Type</b>.</li>
-<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/integration-node/#access-the-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
+<li>Click <b>Save</b>. <a href="#access-the-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
 <img src="../images/output-variable.png" alt="op variable" title="op variable" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Step 3: Run the Flow

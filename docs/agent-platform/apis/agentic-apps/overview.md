@@ -20,10 +20,10 @@ Replace `<agent-platform-env>` with your specific environment name.
 
 ### Authentication
 
-All API requests must include an **API Key** in the **<code>Authorization</code>** header. You can generate the API key from the application. Refer to [this](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/deployment/access-deployed-version/#generate-the-api-key-for-app-authentication) to learn more about generating an API Key. 
+All API requests must include an **API Key** in the **<code>Authorization</code>** header. You can generate the API key from the application. Refer to [this](../../ai-agents/agentic-apps/deployment/access-deployed-version.md#generate-the-api-key-for-app-authentication) to learn more about generating an API Key. 
 
 
-```
+```json
 x-api-key: YOUR_API_KEY
 ```
 
