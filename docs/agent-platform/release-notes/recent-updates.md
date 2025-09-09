@@ -86,14 +86,14 @@ The Model Hub landing page now provides an updated overview of model deployment 
 The platform now supports additional voice parameters for real-time models from Google Gemini and Ultravox, enabling more nuanced and personalized voice experiences. 
 
 
-<font size="4">Other improvements</font>
+<font size="4">Other Improvement</font>
 
 
 **Enhanced User Invitation UI for Admins**
 
 The Settings console now features an improved multi-row form for user invitations. Admins can add or delete rows to invite multiple users simultaneously, assign system or custom roles to each user, and track total invites with an auto-updating counter.
 
-
+<hr>
 
 ## v1.0.10 August 13, 2025
 
