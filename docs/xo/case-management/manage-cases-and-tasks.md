@@ -133,7 +133,7 @@ To update or resolve cases:
 2. When the agent completes the review processes, the agent can view all case statuses (including Closed, Open, and Resolved) from **Dashboard > My Cases > Closed**.  
 <img src="../images/closed-my-cases.png" alt="Closed Cases" title="Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
-3. To view the status of all closed cases on the dashboard and Manage Cases, see [Analyze Case Management](#analyze-cases-and-tasks){:target="_blank"}.  
+3. To view the status of all closed cases on the dashboard and Manage Cases, see [Analyze Case Management](../case-management/case-analysis-dashboard.md){:target="_blank"}.  
 <img src="../images/manage-all-cases-closed.png" alt="Managed Closed Cases" title="Managed Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
 4. Ensure all required actions and activities associated with the task are completed and changed to resolve with a proper comment before closing the case.

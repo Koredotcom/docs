@@ -12,7 +12,7 @@ The confirmation node’s conditional transitions go beyond the _If-Else_ expres
 Setting up a confirmation node in a dialog task involves the following steps:
 
 1. Open the dialog task to which you want to add the Confirmation node.
-2. Add a Confirmation node in the designated place. For steps related to adding nodes, [Learn more](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
+2. Add a Confirmation node in the designated place. For steps related to adding nodes, [Learn more](../using-the-dialog-builder-tool.md){:target="_blank"}.
 
     !!! note
 
@@ -47,7 +47,7 @@ To configure the component properties, follow the below steps:
 
         In both cases, “&lt;” means the start of the sentence and “>” means the end of the sentence.  Many of these words are only treated as a _yes_ or _no_ if they appear at the start or the end of an utterance, not in the middle.
 
-3. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
+3. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
 <img src="../images/re-responses.png" alt="Rephrase Responses" title="Rephrase Responses" style="border:1px solid gray;zoom:70%;"> 
 
 

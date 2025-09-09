@@ -1000,7 +1000,7 @@ var message = {
   };
 print(JSON.stringify(message)) ;
 ```
-![Custom Like Dislike template](images/web-mobile-message-templates/custom-like-dislike-template.png "Custom Drop-down list template")
+
 
 
 
@@ -1058,4 +1058,4 @@ print(JSON.stringify(message));
 
 !!! note
 
-    To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](automation/use-cases/dialogs/prompt-editor.md).
+    To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](../automation/use-cases/dialogs/prompt-editor.md).

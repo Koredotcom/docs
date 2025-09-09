@@ -31,7 +31,7 @@ Version 10.0 of the Platform includes a new version of the NLP Engine (Version 3
 * Improved the security of NLP by addressing several security vulnerabilities.
 * Improved performance by enabling LLM & Generative AI.
 
-In addition, it allows you to explore the latest features like [Zero-shot Model](machine-learning-engine.md#zero-shot-learning-model-with-openai){:target="_blank"}, [Few-shot Model](machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings){:target="_blank"}, and [Intent Discovery](../../tools/intent-discovery.md){:target="_blank"}.
+In addition, it allows you to explore the latest features like [Zero-shot Model](machine-learning-engine.md){:target="_blank"}, [Few-shot Model](machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings){:target="_blank"}, and [Intent Discovery](../../tools/intent-discovery.md){:target="_blank"}.
 
 The new VAs will automatically use the new version by default. As of January 21, 2024, existing VAs are already migrated to Version 3, and the Platform no longer supports Version 2.
 

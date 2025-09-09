@@ -31,7 +31,8 @@ This feature helps generate an answer to the user question based on the data ing
 This feature helps create vector embeddings for all the ingested data in the Search AI application. When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
 
 ## Metadata Extractor Agent
-This feature is used to extracts relevant sources and fields from a query, map them to structured data, and apply filters or boosts for accurate retrieval. This is particularly useful for data from third party applications. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/). 
+
+This feature is used to extracts relevant sources and fields from a query, map them to structured data, and apply filters or boosts for accurate retrieval. This is particularly useful for data from third party applications. [Learn More](../searchai/rag-agents.md). 
 
 If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following structured format. 
 
@@ -64,7 +65,8 @@ If you are using a custom prompt for this feature, ensure that the output from t
 
 
 ## Query Rephrase for Advanced Search API
-This feature is used to add contextual information to the user queries and enhance them for relevance. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
+
+This feature is used to add contextual information to the user queries and enhance them for relevance. [Learn More](../searchai/rag-agents.md).
 
 While using custom prompts for this feature, ensure that the LLM responds with a structure response as shown below. 
 
@@ -83,7 +85,8 @@ While using custom prompts for this feature, ensure that the LLM responds with a
 
 
 ## Query Transformation
-This feature is used to identify key terms within a query, removing noise and prioritizing relevant documents. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
+
+This feature is used to identify key terms within a query, removing noise and prioritizing relevant documents. [Learn More](../searchai/rag-agents.md).
 
 If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following format. 
 ```
@@ -147,7 +150,8 @@ Example:
 
 ## Result Type Classification
 
-This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
+This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query. [Learn More](../searchai/rag-agents.md)
+
 
 If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following format. 
 ```

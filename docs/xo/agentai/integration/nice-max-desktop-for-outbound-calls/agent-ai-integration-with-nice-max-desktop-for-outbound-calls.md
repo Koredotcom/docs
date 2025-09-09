@@ -175,8 +175,8 @@ For on-prem, refer to corresponding host<strong> </strong>
 
 This section explains the configuration steps needed to integrate Kore Agent AI with NICE MAX Desktop.
 
-* [NICE CX Integration Hubs, Add Agent Assist Hub](#step-1-nice-cx-integration-hubs--add-agent-assist-hub)
-* [NICE CX Studio, Import  Outbound Voice Script and Configure Parameters](#step-2-nice-cx-studio--import-outbound-voice-script-and-configure-parameters)
+* [NICE CX Integration Hubs, Add Agent Assist Hub](#step-1-nice-cx-integration-hubs-add-agent-assist-hub)
+* [NICE CX Studio, Import  Outbound Voice Script and Configure Parameters](#step-2-nice-cx-studio-import-outbound-voice-script-and-configure-parameters)
 * [NICE CX Account Setup for Outbound Calls](#step-3-nice-cx-account-setup-for-outbound-call)
 * [Outbound Voice Simulation](#outbound-call-simulation)
 

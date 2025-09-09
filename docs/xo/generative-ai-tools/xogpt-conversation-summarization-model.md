@@ -253,7 +253,7 @@ The customer contacted support to check the status of their order. The AI Agent 
 
 ## XO GPT - Model Building Process
 
-The model-building process consists of several key stages that form the backbone of AI system development. To know more see [Model Building Process](./xogpt-model-specifications.md#xo-gpt---model-building-process).
+The model-building process consists of several key stages that form the backbone of AI system development. To know more see [Model Building Process](xogpt-model-specifications.md#xo-gpt-model-building-process).
 
 ## Model Benchmarks
 
@@ -263,8 +263,8 @@ The following table summarizes the versions covered in this document:
 
 | Model Version | Accuracy | Tokens/sec (TPS) | Latency (secs) | Benchmark Comparison | Test Data & Results |
 |--------------|----------|------------------|---------------|----------------------|----------------------|
-| Version 2.0  | 100%     | 71               | 2.00          | [Benchmark Summary v2](#benchmarks-summary-v2) | [Test data and results v2](../test-date-and-results/xogpt-conversation-summarization-v2.0.xlsx) |
-| Version 1.0  | 98%      | 40               | 3.04          | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](../test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx) |
+| Version 2.0  | 100%     | 71               | 2.00          | [Benchmark Summary v2](#benchmarks-summary-v2) | [Test data and results v2](./test-date-and-results/xogpt-conversation-summarization-v2.0.xlsx) |
+| Version 1.0  | 98%      | 40               | 3.04          | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](./test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx) |
 
 
 
@@ -668,7 +668,7 @@ To compare and contrast the performance of the fine-tuned model, the following m
 <img src="../images/con-sum-graphv2.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
 
-XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, Japanese, Turkish, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results v2](../test-date-and-results/xogpt-conversation-summarization-v2.0.xlsx).
+XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, Japanese, Turkish, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results v2](./test-date-and-results/xogpt-conversation-summarization-v2.0.xlsx).
 
 ### Version 1.0
 
@@ -954,4 +954,4 @@ To compare and contrast the performance of the fine-tuned model, we've considere
 <img src="../images/conversation03.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
 
-XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results v1](../test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx) report.
+XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results v1](./test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx) report.

@@ -27,12 +27,12 @@ To set up **Genesys Cloud CX Messaging** as a channel, use your account on the [
 The steps to add the channel are summarized below:
 
 1. [Create a Bot Connector](#step-1-create-a-bot-connector) and [Link the App to the Connector](#step-1-create-a-bot-connector).
-2. [Create an App in the Kore.ai Web/Mobile Client](#step-2-create-an-app-on-the-koreai-xo-platform).
+2. [Create an App in the Kore.ai Web/Mobile Client](#step-2-create-an-app-on-the-platform).
 3. [Create the OAuth Client App in the Genesys Developer Console](#step-3-create-the-oauth-client-app-on-genesys-developer-console).
 4. [Create an inbound message flow](#step-4-create-an-inbound-message-flow).
 5. [Configure the Messenger SDK](#step-5-configure-the-messenger-sdk).
 6. [Enable the Channel](#step-6-enable-the-channel).
-7. [Publish the App](#step-7-publish-the-bot).
+7. [Publish the App](#step-7-publish-the-app).
 
 
 
@@ -42,7 +42,7 @@ A **Bot Connector integration** enables your bot to exchange messages with the _
 
 
 
-1. Log in to the **[Genesys Developer Portal](https://login.mypurecloud.com/)**.
+1. Log in to the [Genesys Developer Portal](https://login.mypurecloud.com/).
 2. Create a Bot Connector with the steps below:
 3. **On the Genesys Cloud CX Admin portal**
     1. In the Genesys Cloud Admin portal, navigate to **Admin** > **Integrations**.
@@ -75,14 +75,14 @@ Create an app on the platform. A JWT Token is created with the **clientId** and 
 1. Click the **Create App** link under the **Configurations** section of the **Genesys Cloud CX Messaging** Channel. 
 
 
-    ![alt_text](images/genesys_cloud_2.1.png "")
+    ![alt_text](images/genesys_cloud_2.1.png  )
 
 2. Use the **_Client ID_** and **_Client Secret_** value of the new app to create a JWT token using the steps mentioned[ here](add-wechat-channel.md).
 
 
 
 
-    ![alt_text](images/genesys_cloud_2.2.png "")
+    ![alt_text](images/genesys_cloud_2.2.png  )
 
 3. Navigate back to the **Bot Connector** configuration screen in the Genesys Cloud Admin portal.
 4. Navigate to the **Configuration** > **Credentials** section and click **Change**.
@@ -92,7 +92,7 @@ Create an app on the platform. A JWT Token is created with the **clientId** and 
     2. A space
     3. The **JWT** created in before. 
 
-        ![alt_text](images/genesys_chat_beare_2.3.png "")
+        ![alt_text](images/genesys_chat_beare_2.3.png  )
 
 7. Click **Ok**.
 
@@ -113,15 +113,15 @@ Steps to create an app on the Genesys Developer Console:
 4. Enter the **App Name** and **Description**.
 
 5. Select the **Grant Types** as _Code Authorization_.
-    ![alt_text](images/genesys_chat_create_app.png "")
+    ![alt_text](images/genesys_chat_create_app.png  )
 
 6. Copy the **Callback URL** from the **Configurations** tab of the Platform for Genesys Cloud CX Messaging channel.
-    ![alt_text](images/genesys_chat_create_app2.png "")
+    ![alt_text](images/genesys_chat_create_app2.png  )
 
 7. In the Genesys Console, go back to the **Integrations > OAuth** page and paste the **Callback URL** that you have copied in the **Authorized redirect URI** field.
 
 8. Add the _architect_, _integrations_, and _textbot_ scopes in the **Scopes** field.
-    ![alt_text](images/genesys_chat_bearer1.png "")
+    ![alt_text](images/genesys_chat_bearer1.png  )
 
 9. Click **Save** to update the OAuth Client configuration.
 
@@ -130,7 +130,7 @@ Steps to create an app on the Genesys Developer Console:
 11. In the Platform, return to the **Channels & Flows** > **Channels** > **Digital** > **All** > **Genesys Cloud CX Messaging** > **Configurations** tab and paste the **Client ID** and **Client Secret** values.
 
 12. Once you paste all the required credentials, click **Authorize** to validate the authorization.
-    ![alt_text](images/genesys_cloud_cx6.png "")
+    ![alt_text](images/genesys_cloud_cx6.png  )
 
 13. If you are still logged into your Genesys Cloud instance, your current credentials are used. Otherwise, a login screen will open. Use valid credentials for the Genesys cloud instance you are configuring.
 

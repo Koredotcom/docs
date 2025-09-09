@@ -34,7 +34,7 @@ The following sections describe how to set up case management, enable features, 
 
     * **Assign Roles:** Assign appropriate roles queues, and skills. [Learn more](../user-management/manage-users.md/#queues--skills){:target="_blank"}.
 
-    * **Case Capacity Limits:** Enable capacity limits for each agent as needed. [Learn more](../user-management/manage-users.md/#chat--voice){:target="_blank"}.
+    * **Case Capacity Limits:** Enable capacity limits for each agent as needed. [Learn more](../user-management/manage-users.md#chat--voice){:target="_blank"}.
 
 6. **Set Up Case Management Components**
 
@@ -49,9 +49,9 @@ The following sections describe how to set up case management, enable features, 
 
     * **[Status](./configure-cases.md#status-configuration):** Create custom statuses under the status type to meet your business requirements. You can add custom statuses to the five default statuses  
 
-    * **[Priority](./case-management/configure-cases/#priority-configuration):** Create custom priorities with values to automatically sort case severity to supplement the four default priorities.  
+    * **[Priority](../case-management/configure-cases.md#priority-configuration):** Create custom priorities with values to automatically sort case severity to supplement the four default priorities.  
 
-    *  **[Task Templates](./case-management.md/configure-cases/#task-templates-configuration):** You can create task templates to manage and automate customer support tasks. When you create a template, you can specify who should handle the task by choosing one of these assignment options:
+    *  **[Task Templates](../case-management/configure-cases.md#task-templates-configuration):** You can create task templates to manage and automate customer support tasks. When you create a template, you can specify who should handle the task by choosing one of these assignment options:
 
         * Unassigned
         * Queue
@@ -109,7 +109,7 @@ The following sections describe how to set up case management, enable features, 
 
     * **Automation Failure**: When automation fails, the system routes the conversation to Agent 1 or Agent 2.
 
-        * **Case Creation**: When Agent 1 creates a case, the system assigns it to Agent 3 or Agent 4. For more information, see [Learn more](./manage-cases-and-tasks.md#create-a-case).
+        * **Case Creation**: When Agent 1 creates a case, the system assigns it to Agent 3 or Agent 4. For more information, see [Learn more](../case-management/agent-console.md/#create-a-new-case).
 
         * **Case Handling**: Agent 1 can close the conversation while the case remains open for the assigned agent to take further action.
 
@@ -117,9 +117,9 @@ The following sections describe how to set up case management, enable features, 
 
     Configure the following access controls (user management and role settings):
 
-    * **[Manage Users](https://docs.kore.ai/xo/user-management/manage-users/?h=manage+users){:target="_blank"}**
+    * **[Manage Users](../user-management//manage-users.md#queues--skills){:target="_blank"}**
 
-    * **[User Attributes](https://docs.kore.ai/xo/user-management/manage-users/#attributes){:target="_blank"}**
+    * **[User Attributes](../user-management//manage-users.md#queues--skills){:target="_blank"}**
 
 13. **Configure case handling capacity and language settings**
 

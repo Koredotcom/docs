@@ -44,7 +44,7 @@ The Platform offers the following primary NLU engines for app training and optim
 * Traits Engine
 * Ranking and Resolver
 
-When do you use each engine? Each of these engines has settings and configurations for [Optimizing NLP to Improve app Performance](#nlp-optimization-within-the-xo-platform){:target="_blank"}. Here we will list out guidelines and scenarios to leverage each type of NLP engine.
+When do you use each engine? Each of these engines has settings and configurations for [Optimizing NLP to Improve app Performance](#nlp-optimization-within-the-platform){:target="_blank"}. Here we will list out guidelines and scenarios to leverage each type of NLP engine.
 
 ### Machine Learning Engine
 

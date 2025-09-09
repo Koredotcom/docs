@@ -4,7 +4,7 @@ Dialog Tasks represent a core component of the XO Platform. Together with the [C
 
 Each task comprises interlinked [nodes ](./node-types/nodes-transitions.md){:target="_blank"}that help retrieve information, perform actions, connect with external apps, send messages to users, and more.
 
-To learn more and start creating your own Dialog Tasks, first learn how to [Navigate the Dialog Builder](navigating-dialog-tasks.md){:target="_blank"} and then how to [Work with Dialog Tasks](../using-the-dialog-builder-tool/){:target="_blank"}.
+To learn more and start creating your own Dialog Tasks, first learn how to [Navigate the Dialog Builder](navigating-dialog-tasks.md){:target="_blank"} and then how to [Work with Dialog Tasks](using-the-dialog-builder-tool.md){:target="_blank"}.
 
 While working with Dialog Tasks, you will be interacting with a variety of related features, including:
 
