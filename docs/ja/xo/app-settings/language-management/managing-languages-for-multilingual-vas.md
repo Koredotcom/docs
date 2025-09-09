@@ -61,6 +61,7 @@ To update an already enabled language for an assistant, follow the below steps:
 
     - After you have configured a new language, to make the new language work, you must re-publish the VA. Until then, the VA continues to function with the previously published languages.  
     - The default Synonym library is available only for English, French, Spanish, German, and Chinese languages. However, you can add custom synonyms for any language.
+    
 
 
 ## Switching Languages 

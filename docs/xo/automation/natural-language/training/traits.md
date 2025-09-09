@@ -2,11 +2,11 @@
 
 In natural conversations, it is very common that a user provides background/relevant information while describing a specific scenario.
 
-**Traits** are specific entities, attributes, or details that the users express in their conversations. The utterance may not directly convey any specific intent, but the traits present in the utterance are used in driving the intent detection and bot conversation flows.
+**Traits** are specific entities, attributes, or details that the users express in their conversations. The utterance may not directly convey any specific intent, but the traits present in the utterance are used in driving the intent detection and app conversation flows.
 
 For example, the utterance: _My flight is late and I will miss my connection_ because of it expresses two traits: _flight delay_ and _emergency_. In this scenario, the utterance does not convey any direct intent. However, the presence of the _emergency_ trait is used to directly assign the conversation to a human agent.
 
-The **Traits** feature of the XO Platform is aimed at identifying such characteristics present in user utterances and use them for intent detection and in customizing the VA definition using these characteristics.
+The **Traits** feature of the Platform is aimed at identifying such characteristics present in user utterances and use them for intent detection and in customizing the app definition using these characteristics.
 
 ## How Traits work
 
@@ -27,7 +27,7 @@ We will discuss these in detail throughout this article, but first, let us look 
 
 ## Use Case
 
-A Travel Planning VA might have an added requirement to book a flight based on the cost preference.
+A Travel Planning app might have an added requirement to book a flight based on the cost preference.
 
 You might have the following user utterance: _I am looking for a low-cost option to London, which_ must result in ordering the available flights and picking the lowest-priced ticket.
 
@@ -59,16 +59,17 @@ The following key features can be leveraged when defining Traits:
 
         !!! Note
 
-            The latest version of the Platform supports a **new patterns engine flag** for performance optimization. It offers better response times for pattern evaluation after the virtual assistant training is done. 
+            The latest version of the Platform supports a **new patterns engine flag** for performance optimization. It offers better response times for pattern evaluation after the app training is done. 
     
-3. Once added, **Train** the assistant for the Traits to be detected from user utterances.
+3. Once added, **Train** the app for the Traits to be detected from user utterances.
 
-!!! Key Considerations
+!!! note "Key Considerations"
 
     * You can add language-specific traits in the case of multi-lingual assistants.
     * When a trait name is modified, ensure that all the rules defined using that trait are corrected. This has to be done manually, the Platform will not handle it automatically.
     * The trait name must be unique in a group.
     * Traits with the same name can be present in multiple groups, but distinguishing them in trait rules or trait detection results is difficult.
+    * For trait names, only spaces and underscores ("_") are supported as special characters. No other special characters are allowed.
 
 ## The ML Model for Traits
 
@@ -84,7 +85,7 @@ From v8.0 of the platform, an option is included to skip or use the n-gram model
 
     !!! Note
 
-        While the settings are same for all languages (in case of multilingual bot), for some languages like Chinese and Korean sequence of characters from grams and for other (Latin-based) languages are word grams.
+        While the settings are same for all languages (in case of multilingual app), for some languages like Chinese and Korean sequence of characters from grams and for other (Latin-based) languages are word grams.
 
 ### Trait Association Rules
 
@@ -128,7 +129,7 @@ Traits detected are included in the context object. The context is populated wit
 * Intent identification
 * Dialog transition
 * Entity population
-* VA definitions
+* app definitions
 
 _Batch Testing_ reports also include information about traits detected as do the _Find Intent API_.
 

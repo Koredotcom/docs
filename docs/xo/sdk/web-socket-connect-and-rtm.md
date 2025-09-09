@@ -1,6 +1,6 @@
 # Web Socket Connect & RTM
 
-Kore.ai SDK libraries use the WebSocket channel to communicate with the Kore.ai XO Platform. When using the Kore.ai XO Platform SDKs, only the JWT token must be generated and passed to the client SDK.
+Kore.ai SDK libraries use the WebSocket channel to communicate with the Platform. When using the Kore Platform SDKs, only the JWT token must be generated and passed to the client SDK.
 
 ## Initializing
 
@@ -9,7 +9,7 @@ This section describes how the Kore.ai SDKs initialize a WebSocket session and i
 ### Prerequisites
 
 * Make sure to register the client app.
-* Generate the Client ID and Secret Key in the Kore.ai XO Platform.
+* Generate the Client ID and Secret Key in the Platform.
 
 ### **Step1**
 
@@ -17,7 +17,7 @@ The JWT is generated on the server side using client app credentials and user in
 
 ### **Step 2**
 
-The client app exchanges the JWT token for the `accessToken` on the XO Platform using the following XO Platform endpoint. \
+The client app exchanges the JWT token for the `accessToken` on the Platform using the following Platform endpoint. \
 `POST \
 https://{{APIHost}}/api/1.1/oAuth/token/jwtgrant`
 
@@ -111,15 +111,15 @@ The following sample JSON response shows the WebSocket URL.
 
 ## RTM Channel Events
 
-The following real-time events can be exchanged between the client app and the Kore.ai XO Platform
+The following real-time events can be exchanged between the client app and the Kore.ai Platform
 
 ### RTM Client Events
 
-This section describes the RTM Client Event JSON responses sent to the Kore.ai XO Platform from the client app over a WebSocket.
+This section describes the RTM Client Event JSON responses sent to the Platform from the client app over a WebSocket.
 
 **Event Type:** `/bot.message`
 
-**Description:** Triggered when a user posts a message. The following payload is used to send a user-typed message to the XO Platform.
+**Description:** Triggered when a user posts a message. The following payload is used to send a user-typed message to the Platform.
 
 ```json
 {
@@ -210,15 +210,15 @@ The following sample payload is sent to the client app.
 
 ## Bot Status Event
 
-The following bot user event is exchanged and triggered between the client app and the Kore.ai XO Platform when a bot is active.
+The following bot user event is exchanged and triggered between the client app and the  Platform when a bot is active.
 
-This section describes the Bot Status Event JSON responses sent to the Kore.ai XO Platform from the client app over a WebSocket.
+This section describes the Bot Status Event JSON responses sent to the Platform from the client app over a WebSocket.
 
 **Event Type:** `/bot_active`
 
 **Description:**Triggered when a WebSocket connection is established with the bot.
 
-The following payload is used to send a response message to the XO Platform.
+The following payload is used to send a response message to the Platform.
 
 
 ```json
@@ -242,7 +242,7 @@ The following payload is used to send a response message to the XO Platform.
 
 By default, the notification says, “‘Sorry, there was an error in continuing the conversation. Please retry.” Developers can customize the message to make it more contextual or language specific for the end users.
 
-The following payload is used to send a response message to the XO Platform.
+The following payload is used to send a response message to the Platform.
 
 
 ```json
@@ -267,15 +267,15 @@ The following payload is used to send a response message to the XO Platform.
 
 ## Form Events
 
-The following form events are exchanged and triggered between the client app and the Kore.ai XO Platform when a form based dialog task is invoked.
+The following form events are exchanged and triggered between the client app and the  Platform when a form based dialog task is invoked.
 
-This section describes the Form Event JSON responses sent to the Kore.ai XO Platform from the client app over a WebSocket.
+This section describes the Form Event JSON responses sent to the Platform from the client app over a WebSocket.
 
 **Event Type:** `/form_delivered`
 
 **Description:**Triggered when a form is delivered to a user.
 
-The following payload is used to send a response message to the XO Platform.
+The following payload is used to send a response message to the Platform.
 
 
 ```json
@@ -346,7 +346,7 @@ The following payload is used to send a response message to the XO Platform.
 
 ## Session Events
 
-The following session events are exchanged and triggered between the client app and the Kore.ai XO Platform when a session is invoked.
+The following session events are exchanged and triggered between the client app and the Platform when a session is invoked.
 
 This section describes the Session Event JSON responses sent to the Kore.ai XO Platform from the client app over a WebSocket.
 
@@ -360,7 +360,7 @@ The session starts in the following scenarios:
 * A message sent after 15 mins.
 * A message is sent after the idle timeout mentioned in Manage Sessions.
 
-The following payload is used to send a response message to the XO Platform.
+The following payload is used to send a response message to the Platform.
 
 ```json
 {
@@ -386,7 +386,7 @@ The session ends in the following scenarios:
 * When the On-Connect is enabled to close, refresh and disable a chat window.
 * A session timeout after 15 mins.
 
-The following payload is used to send a response message to the XO Platform.
+The following payload is used to send a response message to the Platform.
 
 ```json
 {
@@ -405,15 +405,15 @@ The following payload is used to send a response message to the XO Platform.
 ```
 ## Agent Transfer Events
 
-The following agent transfer events are exchanged and triggered between the client app and the Kore.ai XO Platform when an agent is invoked. For more information, see the [Agent Transfer Overview](https://developer.kore.ai/integrations/agent-transfer-integrations/) article.
+The following agent transfer events are exchanged and triggered between the client app and the Platform when an agent is invoked. For more information, see the [Agent Transfer Overview](../app-settings/integrations/agents/agent-transfer-integrations.md) article.
 
-This section describes the Agent Transfer Event JSON responses sent to the Kore.ai XO Platform from the client app over a WebSocket.
+This section describes the Agent Transfer Event JSON responses sent to the Platform from the client app over a WebSocket.
 
 **Event Type:** `/agent_session_start`
 
 **Description:** Triggered when the chat is handed off to an agent.
 
-The following payload is used to send a response message to the XO Platform.
+The following payload is used to send a response message to the Platform.
 
 ```json
 {
@@ -437,7 +437,7 @@ The following payload is used to send a response message to the XO Platform.
 
 **Description:** Triggered when the conversation with the agent is ended.
 
-The following payload is used to send a response message to the XO Platform.
+The following payload is used to send a response message to the Platform.
 
 ```json
 {
@@ -458,15 +458,15 @@ The following payload is used to send a response message to the XO Platform.
 ```
 ## User Input Event
 
-The following user input event is exchanged and triggered between the client app and the Kore.ai XO Platform when the user input is required.
+The following user input event is exchanged and triggered between the client app and the Platform when the user input is required.
 
-This section describes the User Input Event JSON responses sent to the Kore.ai XO Platform from the client app over a WebSocket.
+This section describes the User Input Event JSON responses sent to the Platform from the client app over a WebSocket.
 
 **Event Type:** `/waiting_for_user_input`
 
 **Description:** Triggered when the VA is waiting for user input. The input can come from an Entity, Confirmation, and Standard Responses.
 
-The following payload is used to send a response message to the XO Platform.
+The following payload is used to send a response message to the Platform.
 
 ```json
 {
@@ -487,7 +487,7 @@ The following payload is used to send a response message to the XO Platform.
 ```
 ## Get Conversation History
 
-The client app requests the XO Platform endpoint `/api/botmessages/rtm?botId={{botId}}` using the access token as generated in Step 2 above to get the previous messages exchanged between the user and the chatbot. The response from the mentioned endpoint can be used to display the conversation history in the chat window. This section describes how to format the request to get the web socket URL with the `/api/botmessages/rtm` endpoint based on the following JSON syntax.
+The client app requests the Platform endpoint `/api/botmessages/rtm?botId={{botId}}` using the access token as generated in Step 2 above to get the previous messages exchanged between the user and the chatbot. The response from the mentioned endpoint can be used to display the conversation history in the chat window. This section describes how to format the request to get the web socket URL with the `/api/botmessages/rtm` endpoint based on the following JSON syntax.
 
 
 ```json
@@ -608,7 +608,7 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
 
 ## WebSocket Error Scenarios
 
-This section describes the various error code responses sent to the Kore.ai XO Platform from the client app over a WebSocket.
+This section describes the various error code responses sent to the Platform from the client app over a WebSocket.
 
 <table>
   <tr>
@@ -638,7 +638,7 @@ This section describes the various error code responses sent to the Kore.ai XO P
   <tr>
    <td>1007
    </td>
-   <td>When VA finds non-utf-8 kind of messages instead of text messages.
+   <td>When bot finds non-utf-8 kind of messages instead of text messages.
    </td>
   </tr>
   <tr>
@@ -674,4 +674,4 @@ This section describes the various error code responses sent to the Kore.ai XO P
 
 ## Next Steps
 
-The XO Platform API endpoints and RTM events can be used with your client app or Kore.ai Bot SDKs. For more information, see the [Kore.ai Bots SDK](../tutorials/web-sdk/).
+The Platform API endpoints and RTM events can be used with your client app or Kore.ai Bot SDKs. For more information, see the [Kore.ai Bots SDK](./tutorials/web-sdk.md).

@@ -51,7 +51,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
   <tr>
    <td>host
    </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
+   <td>Environment URL, for example, https://platform.kore.ai
    </td>
    <td>string, required
    </td>

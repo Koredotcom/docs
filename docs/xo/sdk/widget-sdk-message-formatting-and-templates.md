@@ -2,7 +2,7 @@
 
 Kore.ai Widget SDK allows you to override the default message formatting using markdown and apply templates to display custom formatted bot messages to users on the Widget SDK channel.
 
-For details on Web/Mobile SDK, [refer here](../web-mobile-sdk-message-formatting-and-templates).
+For details on Web/Mobile SDK, [refer here](web-mobile-sdk-message-formatting-and-templates.md).
 
 ### Button Template
 
@@ -11,7 +11,7 @@ Shows a clickable button in the header option. The button can be placed anywhere
 There are two types of buttons:
 
 * URL type to open an external site. _url_ field should contain the external site address.
-* postback type to trigger an utterance in Virtual Assistant. The _payload_ defines the utterance to be passed to the Virtual Assistant and the _nlmeta_ defines the additional information that the Platform needs to trigger the respective task.
+* postback type to trigger an utterance in Assistant. The _payload_ defines the utterance to be passed to the Assistant and the _nlmeta_ defines the additional information that the Platform needs to trigger the respective task.
 
 **Example**
 
@@ -64,15 +64,15 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-![Button template](../images/widget-message-templates/button-template.png "Button template")
 
+<img src="../images/widget-message-templates/button-template.png" alt="Button template" title="Button template" style="border: 1px solid gray; zoom:70%;">
 
 ### Menu Template
 
 Shows a dropdown menu in the header option. The menu can be placed for any message template. There are two types of menu items:
 
 * URL type to open an external site. _url_ field should contain the external site address.
-* postback type to trigger an utterance in the Virtual Assistant. The _payload_ defines the utterance to be passed to the assistant and the _nlmeta_ defines the additional information that the Platform needs to trigger the respective task.
+* postback type to trigger an utterance in the Assistant. The _payload_ defines the utterance to be passed to the assistant and the _nlmeta_ defines the additional information that the Platform needs to trigger the respective task.
 
 **Example**
 
@@ -134,7 +134,8 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-![Menu template](../images/widget-message-templates/menu-template.png "Menu template")
+
+<img src="../images/widget-message-templates/menu-template.png" alt="Menu template" title="Menu template" style="border: 1px solid gray; zoom:70%;">
 
 ### List Template
 
@@ -399,7 +400,9 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-![List template](../images/widget-message-templates/list-template.png "List template")
+
+
+<img src="../images/widget-message-templates/list-template.png" alt="List template" title="List template" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Pie Chart Template
@@ -454,8 +457,9 @@ var data = {
 print(JSON.stringify(data));
 ```
 
-![Piechart template](../images/widget-message-templates/piechart-template.png "Piechart template")
 
+
+<img src="../images/widget-message-templates/piechart-template.png" alt="Piechart template" title="Piechart template" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Line Chart Template
@@ -530,7 +534,11 @@ var data = {
 print(JSON.stringify(data));
 ```
 
-![Line Chart template](../images/widget-message-templates/line-chart-template.png "Line Chart template")
 
-!!!note
-    To understand customized JavaScript responses and channel-specific templates, refer to _[Customize JavaScript Responses](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/#Customize_JavaScript_Responses)_ in _[User Prompts](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/)._
+
+<img src="../images/widget-message-templates/line-chart-template.png" alt="Line Chart template" title="Line Chart template" style="border: 1px solid gray; zoom:70%;">
+
+!!! note
+
+	To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](../automation/use-cases/dialogs/prompt-editor.md).
+

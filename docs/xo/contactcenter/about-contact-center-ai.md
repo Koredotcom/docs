@@ -23,7 +23,7 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         <img src="../images/sa-unified-configurations.svg" style="zoom:200%;"></img>
         <kr-grid-title>Configurations</kr-grid-title>
         <kr-grid-desc>Configure hours of operation, language & speech recognition settings, default flows, response templates, surveys, forms, and widgets to integrate external systems and pages into the Agent Console, and advanced settings for co-browsing, agent tools, and data masking.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./configurations/agentassist-settings/agentassist-settings.md)
+        [Learn more :octicons-arrow-right-24:](./configurations/hours-of-operation/manage-hours-of-operation.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/sa-agent-console.svg" style="zoom:200%;"></img>
@@ -39,14 +39,8 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/voice-gateway.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Kore Voice Gateway</kr-grid-title>
+        <kr-grid-title>Voice Gateway</kr-grid-title>
         <kr-grid-desc>It seamlessly integrates with telephony networks, contact center platforms and supports features like real-time call transcription, natural language understanding, and intent-based routing to enhance customer engagement and streamline call management.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md)
-    </kr-grid-item>
-    <kr-grid-item>
-        <img src="../images/quality-management.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Quality AI</kr-grid-title>
-        <kr-grid-desc>AI-powered automated QA scoring for all customer interactions, with customizable configurations and comprehensive analysis. Optimize manual reviews, enhance agent feedback, and measure metrics to improve service quality.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](../quality-management/about-quality-ai.md)
+        [Learn more :octicons-arrow-right-24:](../channels/voice-gateway/configure-voice-gateway.md)
     </kr-grid-item>
 </kr-grid>

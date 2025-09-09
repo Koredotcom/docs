@@ -104,7 +104,7 @@ The following types of session variables are available on the XO Platform:
 
 * **EnterpriseContext** – It is a namespace within the overall context object where platform users can store key-value pairs that are available to all assistants, sessions, and users within a workspace. It ensures consistent data availability for enterprise-wide use cases.  
 
-    For example, with a GitHub bot, a user may need to access one or more enterprise repositories. The repository data can be persisted in the EnterpriseContext using the **Gitrepository** key with the following JavaScript code:
+    For example, with a GitHub app, a user may need to access one or more enterprise repositories. The repository data can be persisted in the EnterpriseContext using the **Gitrepository** key with the following JavaScript code:
 
     ```js
     var userRepository = {
@@ -118,7 +118,7 @@ The following types of session variables are available on the XO Platform:
      
         Platform users must carefully assess what information should be stored in this namespace to avoid unnecessary data exposure.
 
-* **BotContext** – A key/value pair available to all users of this specific bot. For example, you may want to set up a default currency for financial transactions for a session based on a user’s location. You can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
+* **BotContext** – A key/value pair available to all users of this specific app. For example, you may want to set up a default currency for financial transactions for a session based on a user’s location. You can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
 
     ```js
     var defaultCurrency = { TODO Custom JavaScript for location-based currency }
@@ -143,6 +143,7 @@ The following types of session variables are available on the XO Platform:
     * **UserContext.get(“identities”)** – Alternate user IDs, if defined.
         * `val` – The alternate ID
         * `type` – The type of alternate ID.
+    * **context.session.UserContext.customData** - To access the custom data passed through the web SDK.
 
     For example, you can PUT a value into the session using the `UserSession` variable where the key is defined as `fullName` based on the GET from the two `UserContext` variables.
 
@@ -168,9 +169,9 @@ The following types of session variables are available on the XO Platform:
     UserSession.put('HomeLocation', location, '20000');
     ```
 
-* **BotUserSession** – A key/value pair that you can define to a specific bot based on the inputs by a specific user. For example, you may want to persist a user location for more than one task of a Bot. 
+* **BotUserSession** – A key/value pair that you can define to a specific app based on the inputs by a specific user. For example, you may want to persist a user location for more than one task of an app. 
 
-    For a travel bot, the user may be able to book a flight and a hotel based on the same home and destination addresses. 
+    For a travel app, the user may be able to book a flight and a hotel based on the same home and destination addresses. 
     
     For example, you can persist the default home and destination data as **HomeLocation (BotUserSession)** and **DestinationLocation (BotUserSession)** with the following JavaScript code:
 
@@ -192,6 +193,7 @@ The following types of session variables are available on the XO Platform:
     };
     BotUserSession.put('DestinationLocation', destlocation, '20000');
     ```
+You can fetch custom data from the BotUserSession with path - **session.BotUserSession.channels[0].botInfo.customData**
 
 ## Standard Keys
 

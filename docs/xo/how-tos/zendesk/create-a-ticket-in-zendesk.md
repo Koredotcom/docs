@@ -57,7 +57,7 @@ Before you start the linking process, keep the following information handy:
     <img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
 
 4. Click **Finish**.
-5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
+5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Use Cases** > **Dialogs**.  
 <img src="../images/dialogs-zendesk.png" alt="create_dialog" title="create_dialog" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 3: Train the Chatbot for the Dialog Task and Test it

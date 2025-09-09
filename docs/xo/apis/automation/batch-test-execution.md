@@ -1,6 +1,6 @@
 # Batch Test Execution API
 
-To execute Batch Test Suites and get results. This API only initiates the test process. Please look at the [Batch Test Execution Status API](../batch-test-execution-status) for the results of the batch test.
+To execute Batch Test Suites and get results. This API only initiates the test process. Please look at the [Batch Test Execution Status API](batch-test-execution-status.md) for the results of the batch test.
 
 
 <table>
@@ -35,7 +35,7 @@ To execute Batch Test Suites and get results. This API only initiates the test p
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Execution
+<li>App Builder: Batch Tests Execution
 
 <li>Admin Console: Not Applicable
 </li>
@@ -67,7 +67,7 @@ To execute Batch Test Suites and get results. This API only initiates the test p
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -75,7 +75,7 @@ To execute Batch Test Suites and get results. This API only initiates the test p
   <tr>
    <td><strong>testSuiteName</strong>
    </td>
-   <td>Name of the test suite on the Bot Builder.
+   <td>Name of the test suite on the App Builder.
    </td>
    <td>Required
    </td>
@@ -93,9 +93,15 @@ curl --location --request POST \
       --header 'bot-language: {language-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
-         "version":"inDevelopment" 
+         "version":"inDevelopment",
+         "engine":"dgpt"
          }'
 ```
+!!! note
+
+    * If [engine = "regression" (or) empty] or engine is not provided, it will execute for ML Batch Testing.
+
+    * If engine is set to "dgpt", it will execute for Dialog GPT Batch Testing.
 
 ## Body Parameters
 

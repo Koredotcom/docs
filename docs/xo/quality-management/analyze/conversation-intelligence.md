@@ -31,7 +31,7 @@ Steps to create a filter:
 2. Click **+ Add New Filter**.  
 <img src="../conversation-intelligence/images/add-new-filter.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:70%;">
 
-3. On the **New Filter** window, choose the relevant options pertaining to **Queues** or **Agents**, and click **Apply**. 
+3. On the **New Filter** window, choose the relevant options pertaining to **Queues** or **Agents**, and click **Apply**.  
 <img src="../conversation-intelligence/images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note
@@ -233,7 +233,7 @@ When no Agent AI playbooks are configured, adherence is displayed for the follow
 
     <img src="../conversation-intelligence/images/playbook-adherence.png" alt="Playbook Adherence" title="Playbook Adherence" style="border: 1px solid gray; zoom:90%;">
 
-    Administrators can configure the attributes for agent playbook adherence. [Learn more](../../console/monitor-queues-agents-interactions-service-levels.md#configure-conversation-intelligence-dashboard).
+    Administrators can configure the attributes for agent playbook adherence. [Learn more](../../console/monitor-queues-agents-and-interactions.md#configure-conversation-intelligence-dashboard).
 
     !!! Note
 

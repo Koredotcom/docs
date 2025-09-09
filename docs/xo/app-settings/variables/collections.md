@@ -6,7 +6,7 @@ Collections enable you to store multiple value sets for Environment Variables so
 
     This feature was enabled in v8.1 of the platform and is available only for the <span style="text-decoration:underline;">on-prem installation.</span>
 
-Environment variables are a primary type of bot variable where you define a key-value pair and use the variable across the bot. As the variables are declared globally, they can be used at any point in the bot configuration. These can be used to manage the bot variables with environment-specific values. For example, you might have _authCode_ for authenticating a service that your bot uses. This authCode may have different values in the _test, uat,_ and _prod_ environments. The bot can be exported and imported based on the environment, and the values need to be modified at one place in the variable configuration file. [Refer here for more on Bot Variables](../using-bot-variables/#environment-variables){:target="_blank"}.
+Environment variables are a primary type of bot variable where you define a key-value pair and use the variable across the bot. As the variables are declared globally, they can be used at any point in the bot configuration. These can be used to manage the bot variables with environment-specific values. For example, you might have _authCode_ for authenticating a service that your bot uses. This authCode may have different values in the _test, uat,_ and _prod_ environments. The bot can be exported and imported based on the environment, and the values need to be modified at one place in the variable configuration file. [Refer here for more on Bot Variables](using-bot-variables.md#environment-variables){:target="_blank"}.
 
 Using collections, you can define multiple value sets for these variables and designate an active collection for the values to be used while bot execution. Instead of changing the values manually while moving the bot from one environment to another, you can define the values during bot development and set the active collection in different environments to use the appropriate values.
 
@@ -46,7 +46,7 @@ Create Environment Variables and add collection-specific values using the follow
     2. Against the listed _Collection Name,_ enter the appropriate _Value,_
     3. Enter developer notes in the _Notes _field. While this is an optional field, entering useful notes can help the developer working on the target bot to understand and provide relevant values.
     4. _Group_ can be used to categorize the variable.
-    5. Assign a _Namespace_ if enabled ([refer here for more](../../managing-namespace/){:target="_blank"}).  
+    5. Assign a _Namespace_ if enabled ([refer here for more](../managing-namespace.md){:target="_blank"}).  
     <img src="../images/collections-img3.png" alt="Enter details for the new variable" title="Enter details for the new variable" style="border: 1px solid gray;"/>
 
 6. **Save** the Variable

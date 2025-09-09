@@ -37,7 +37,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Management
+<li>App Builder: Batch Tests Management
 
 <li>Admin Console: Batch Tests Management
 </li>
@@ -68,7 +68,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -76,7 +76,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>testSuiteName</strong>
    </td>
-   <td>Name of the test suite on the Bot Builder.
+   <td>Name of the test suite on the App Builder.
    </td>
    <td>Required
    </td>

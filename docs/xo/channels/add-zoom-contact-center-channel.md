@@ -1,16 +1,16 @@
 # Adding the Zoom Contact Center Channel
 
-**Zoom Contact Center (ZCC)** is an automation solution for enterprises to manage customer interactions across voice and chat channels. It enables chat automation through Asynchronous Webhook Integration. The **Kore.ai XO Platform** now supports the Zoom Contact Center channel to integrate virtual assistants for rich and asynchronous messaging experiences.
+**Zoom Contact Center (ZCC)** is an automation solution for enterprises to manage customer interactions across voice and chat channels. It enables chat automation through Asynchronous Webhook Integration. The **Kore.ai XO Platform** now supports the Zoom Contact Center channel to integrate AI Agents for rich and asynchronous messaging experiences.
 
 This integration streamlines customer support, automates responses, and improves overall operational efficiency, leading to enhanced customer experiences and increased productivity.
 
 
 ## How it Works
 
-Here’s a general overview of how virtual assistant interactions work on the Zoom Contact Center Channel:
+Here’s a general overview of how AI Agent interactions work on the Zoom Contact Center Channel:
 
-* **Setup and Configuration**: Kore.ai sets up and configures the integration between their virtual assistant and ZCC. This involves installing specific connectors provided by Zoom and configuring the settings to establish a connection.
-* **Channel Integration**: Once the integration is set up, the virtual assistants on the XO Platform can be configured to use ZCC as one of its communication channels. This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and chat messages.
+* **Setup and Configuration**: Kore.ai sets up and configures the integration between their AI Agent and ZCC. This involves installing specific connectors provided by Zoom and configuring the settings to establish a connection.
+* **Channel Integration**: Once the integration is set up, the AI Agents on the XO Platform can be configured to use ZCC as one of its communication channels. This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and chat messages.
 * **Routing and Distribution**: When a customer initiates contact through ZCC, the XO Platform’s routing system directs the interaction to an available agent based on predefined rules and criteria.
 * **Agent Interaction**: The agent receives the customer interaction and responds to the customer using ZCC’s communication features, such as answering voice calls or chat messages.
 
@@ -19,29 +19,23 @@ Here’s a general overview of how virtual assistant interactions work on the Zo
 
 Please ensure you have the following before enabling this channel:
 
-
-
 1. A Zoom App Marketplace Developer account. _Don’t have an account? Sign up [here](https://marketplace.zoom.us/)._
 2. Developer access to the XO Platform. _Need Developer Access? [Contact us](https://kore.ai/contact-us/)._
-
 
 ## Setting up Zoom Contact Center
 
 The important steps to set up the ZCC channel are summarized below:
 
-
 1. [Associate an App to the channel](#step-1-associate-an-app).
-2. [Create a Bot Connector instance](#step-2-add-koreai-chatbot-connector-instance) on [Zoom App Marketplace](https://marketplace.zoom.us/apps) to associate a virtual assistant.
+2. [Create a Bot Connector instance](#step-2-add-koreai-chatbot-connector-instance) on [Zoom App Marketplace](https://marketplace.zoom.us/apps) to associate an AI Agent.
 3. [Authorize the connector by configuring the required parameters](#step-3-authorize-the-connector).
 4. [Enable the channel on the XO Platform](#step-4-enable-the-channel).
-
 
 ### Step 1: Associate an App
 
 As a first step to enable the channel, associate an app on the XO Platform by selecting an app from the list or creating a new one.
 
 To create an app, follow the steps below:
-
 
 1. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All**.
 2. Select **Zoom Contact Center**.
@@ -50,9 +44,9 @@ To create an app, follow the steps below:
 <img src="../images/Zoom.png" alt="Zoom  channel" title="Zoom channel" style="border: 1px solid gray; zoom:100%;">
 
 5. In the **Create New Client App** window, follow the steps below:
-    * In the **Name** field, enter the name for the app registration used in Bot Builder,. For example, My App Registration.
+    * In the **Name** field, enter the name for the app registration used in App Builder,. For example, My App Registration.
     * Select one of these scopes for the app:
-        * **Allow anonymous users to chat with the bot**: Enables anonymous users to interact with the bot.
+        * **Allow anonymous users to chat with the AI Agent**: Enables anonymous users to interact with the AI Agent.
         * **Auto register new users on XO Platform**: Select to control the auto-user registration in Kore.ai if the user assertion is unknown.
     * In the **JWT Signing** **Algorithms Used For Client App Authentication** drop-down list, select one of the following security algorithms:
         * **RS256/RS512**: Select to enable the **Public Key**. _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
@@ -80,7 +74,7 @@ To create an app, follow the steps below:
 
 ### Step 2: Add Kore.ai Chatbot Connector Instance
 
-To set up **Zoom Contact Center** as a channel, the bot has to be associated with the instance of the Kore.ai Chat bot connector available in the Zoom app marketplace. To create a Chatbot Connector, follow the steps below:
+To set up **Zoom Contact Center** as a channel, the AI Agent has to be associated with the instance of the Kore.ai Chat bot connector available in the Zoom app marketplace. To create a Chatbot Connector, follow the steps below:
 
 
 
@@ -137,4 +131,4 @@ The final step in the setup is to enable the channel on the XO Platform. To enab
 <img src="../images/Zoom14.png" alt="enable Zoom  channel" title=" enable Zoom channel" style="border: 1px solid gray; zoom:100%;">
 
 
-You’re now ready to test the new channel integration by publishing your virtual assistant. [Learn more](../deploy/publishing-bot.md).
+You’re now ready to test the new channel integration by publishing your App. [Learn more](../deploy/publishing-bot.md).

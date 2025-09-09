@@ -9,7 +9,7 @@ In addition to the username, password, and Enterprise SSO for first-factor authe
 
 Only the admin user can enable 2FA for enterprise user accounts via the Admin Console. To enable 2FA, follow the steps below:
 
-1. Log in to the **Bot Admin Console**.
+1. Log in to the **Admin Console**.
 2. On the left menu, click **2FA** under **Security & Control**.  
 <img src="../images/two-factor-authentication-for-platform-access-img1.png" alt="Security & Control - 2FA" title="Security & Control - 2FA" style="border: 1px solid gray;zoom:70%;"/>
 
@@ -46,7 +46,7 @@ For a system admin to enable 2FA on the admin console, the master administrator 
 
 ## Two-Factor Authentication for Admin Users
 
-To log in using 2FA on the **Bot Admin Console** as an admin, follow the steps below:
+To log in using 2FA on the **Admin Console** as an admin, follow the steps below:
 
 1. Log in by entering your **email ID** and clicking **Continue**.  
 <img src="../images/two-factor-authentication-for-platform-access-img7.png" alt="BAC Login - enter email id" title="BAC Login - enter email id" style="border: 1px solid gray;zoom:70%;"/>
@@ -65,15 +65,15 @@ The system redirects to the user dashboard after an OTP successful verification.
 
 ## Two-Factor Authentication for End Users
 
-To log in using 2FA on the **Bot Builder Platform** as an end-user, follow the steps below:
+To log in using 2FA on the **App Builder Platform** as an end-user, follow the steps below:
 
-1. Log in to the Bot Builder by entering your email ID. Then, click **Continue**.  
+1. Log in to the App Builder by entering your email ID. Then, click **Continue**.  
 <img src="../images/two-factor-authentication-for-platform-access-img11.png" alt="Bot Builder Login - enter email id" title="Bot Builder Login - enter email id" style="border: 1px solid gray;zoom:70%;"/>
 
 2. Enter your account password, and click **Login** to authenticate.  
 <img src="../images/two-factor-authentication-for-platform-access-img12.png" alt="Bot Builder Login - enter password" title="Bot Builder Login - enter password" style="border: 1px solid gray;zoom:70%;"/>
 
-3. Select the required Virtual Assistant account.
+3. Select the required AI Agent account.
 
     !!! Note
     

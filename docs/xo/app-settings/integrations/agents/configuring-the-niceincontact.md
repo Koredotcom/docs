@@ -1,13 +1,13 @@
 # Configuring the NiceInContact
 
-NiceInContact is a customer experience (CX) platform. It helps companies and consumers create an end-to-end CX approach, combining digital entry points, prepared agents, and a complete performance suite. Kore.ai XO Platform’s NiceInContact Agent integration allows you to seamlessly hand off the virtual assistant conversations to your live agents on Nice Chat.
+NiceInContact is a customer experience (CX) platform. It helps companies and consumers create an end-to-end CX approach, combining digital entry points, prepared agents, and a complete performance suite. Kore.ai XO Platform’s NiceInContact Agent integration allows you to seamlessly hand off the AI Agent conversations to your live agents on Nice Chat.
 
 Use the configuration steps below as general guidelines to enable the NiceInContact Agent integration. You may notice minor differences based on the version of the NiceInContact you are using.
 
 
 ## Overview
 
-Kore.ai’s virtual assistant (VA) serves as the central point of interaction for the users. The VA facilitates communication and interaction between the user and the NiceInContact agent. In addition to its regular capabilities, the VA acts as a proxy or intermediary between the users and the NiceInContact agents to hand over conversations seamlessly. The VA also allows you to integrate with the NiceInContact platform.
+Kore.ai’s agent serves as the central point of interaction for the users. The AI Agent facilitates communication and interaction between the user and the NiceInContact agent. In addition to its regular capabilities, the AI Agent acts as a proxy or intermediary between the users and the NiceInContact agents to hand over conversations seamlessly. The AI Agent also allows you to integrate with the NiceInContact platform.
 
 
 ## Configuration
@@ -72,7 +72,7 @@ To create a point of contact, follow these steps:
 To enable the NiceInContact, follow these steps:
 
 1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
-2. Select a Virtual Assistant for which you want to configure the NiceInContact agent.
+2. Select an AI Agent for which you want to configure the NiceInContact agent.
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **NiceInContact**.
 
     
@@ -83,32 +83,32 @@ To enable the NiceInContact, follow these steps:
     3. **Access Token**: The secret ID for the NiceInContact, which was copied in step 2.
     4. **Point Of Contact**: The POC ID for the NiceInContact, which was copied in step 3.
 
-5. If you want to make NiceInContact the default agent, enable the **Default Agent System for all bot channels** option.
+5. If you want to make NiceInContact the default agent, enable the **Default Agent System for all app channels** option.
 
     <img src="../images/configuring-the-niceincontact-img7.png" alt="Make NiceInContact the default agent" title="Make NiceInContact the default agent" style="border: 1px solid gray;">
 
     !!! Note
     
-        This option is available only when multiple agents are configured for your VA.
+        This option is available only when multiple agents are configured for your AI Agent.
 
 6. You can customize the channel mapping by clicking the Manage link, as shown below:
 
     <img src="../images/configuring-the-niceincontact-img8.png" alt="Customizing channel mapping" title="Customizing Channle mapping" style="border: 1px solid gray;">
 
-7. Click Manage to map the channels you want to use to the NiceInConact agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+7. Click Manage to map the channels you want to use to the NiceInConact agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 8. After mapping channels, click **Done**.
 
     <img src="../images/configuring-the-niceincontact-img9.png" alt="Customizing channel mapping - Done" title="Customizing Channle mapping - Done" style="border: 1px solid gray;">
 
 9. Click **Save** to enable the NiceInContact agent.
-10. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
+10. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 ## Execution
 
 This section helps you verify how the conversations from the Kore.ai XO Platform are being handed over to the NiceInContact agent after enabling it.
 
-To verify the data exchange between Kore.ai’s VA and NiceInContact agent, follow these steps:
+To verify the data exchange between Kore.ai’s agent and NiceInContact agent, follow these steps:
 
 1. Log in to [https://login.incontact.com/](https://login.incontact.com/){:target="_blank"} with user credentials which you created in Step 1.
 2. Navigate to **Applications > Max** to launch the Chat console.
@@ -123,14 +123,14 @@ To verify the data exchange between Kore.ai’s VA and NiceInContact agent, foll
 
     <img src="../images/configuring-the-niceincontact-img12.png" alt="Start conversation" title="Start conversation" style="border: 1px solid gray;">
 
-5. Open a virtual assistant for which you have enabled the NiceInContact agent.
-6. Create a new Agent Transfer Node task. For example, create a Talk to Live Agent task with the LiveChats node and configure it to use the Nice agent. For more information, see [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"}.
+5. Open an AI Agent for which you have enabled the NiceInContact agent.
+6. Create a new Agent Transfer Node task. For example, create a Talk to Live Agent task with the LiveChats node and configure it to use the Nice agent. For more information, see [Agent Transfer Node](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}.
 
     <img src="../images/configuring-the-niceincontact-img13.png" alt="Create new Agent Transter Node task" title="Create new Agent Transter Node task" style="border: 1px solid gray;">
 
-7. Click the **Talk to Bot** icon to launch the VA and enter **Help**.
+7. Click the **Talk to Bot** icon to launch the app and enter **Help**.
 8. Once you invoke the agent transfer dialog, the NiceInContact Chat receives a notification alert.
-9. When a user initiates the chat from the VA, it transfers the conversation to the NiceInContact agent and sends a message to the user. Agent receives a notification about this on NiceInContact.
+9. When a user initiates the chat from the app, it transfers the conversation to the NiceInContact agent and sends a message to the user. Agent receives a notification about this on NiceInContact.
 10. Now, the connection between the NiceInContact agent and the user has been established, and the conversation continues.
 
     <img src="../images/configuring-the-niceincontact-img14.png" alt="Connection established between NiceInContact agent and user" title="Connection established between NiceInContact agent and user" style="border: 1px solid gray;">

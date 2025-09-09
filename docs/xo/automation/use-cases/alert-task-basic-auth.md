@@ -9,17 +9,17 @@ When basic authorization is used for a task, the XO Platform automatically promp
 
 After the end-user is authorized, the settings are saved using the following naming syntax:
 
-<p><code>{{ First Name }} {{ Last Name }} {{ VA Name }} {{ Account # }} {{ Sequence # }}</code></p>
+<p><code>{{ First Name }} {{ Last Name }} {{ App Name }} {{ Account # }} {{ Sequence # }}</code></p>
 
 For example, John Smith’s Twitter Account #1.
 
-The XO Platform can access the web application or web service for all future task requests using this account. In addition, the end-user can reuse the account for other tasks for the same Virtual Assistant.
+The XO Platform can access the web application or web service for all future task requests using this account. In addition, the end-user can reuse the account for other tasks for the same AI Agent.
 
 ## General Setup 
 
 You can use Basic Authorization when configuring API Requests within Alert Tasks. To configure authorization using Basic Authorization:
 
-1. Select the VA you want to work with.
+1. Select the AI Agent you want to work with.
 2. Go to **Build** > **Conversation Skills** > **Alert Tasks**. 
 3. Select the task you want to work with. 
 4. Click the **API Request** tab within the Alert Task.
@@ -106,7 +106,7 @@ The following table describes the fields used to define an authorization IDP for
 By default, authorization fields are configured as part of the header of the task request message. If your task request requires additional authorization fields or the expected authorization is not part of the header, for example, a verification code, click **+ Add Authorization Field** and then define the fields as shown in the following illustration.
 <img src="../images/authorization-fields.png" alt="auth fields" title="auth fields" style="border: 1px solid gray; zoom:75%;">
 
-1. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required. **Header** – The VA expects the authorization fields as part of the header of the request.**Payload** – The assistant expects the authorization fields as part of the content of the body of the request. **Query String** – The VA expects the authorization fields as a query in the body of the request. **Path Param** – The VA expects the authorization fields as part of the URL path for the request.
+1. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required. **Header** – The AI Agent expects the authorization fields as part of the header of the request.**Payload** – The assistant expects the authorization fields as part of the content of the body of the request. **Query String** – The AI Agent expects the authorization fields as a query in the body of the request. **Path Param** – The AI Agent expects the authorization fields as part of the URL path for the request.
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.
 4. Click **Done**. The new authorization field is added in the **Authorization Fields** section.

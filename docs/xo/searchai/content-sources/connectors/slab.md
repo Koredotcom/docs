@@ -38,8 +38,6 @@
 
 To enable integration between Search AI and Slab and ingestion of content from Slab, 
 
-
-
 * Generate an Access Token in Slab
 * Configure the Slab Connector in Search AI
 
@@ -49,7 +47,7 @@ To enable integration between Search AI and Slab and ingestion of content from S
 Search AI communicates with Slab using its APIs.  To enable this communication, an access token is required, which is tied to a special bot-type user associated with the organization. This token is private and should not be shared. To generate this token,
 
 * Go to the **Admin console** on the Slab application. 
-* Click the profile name on the top right and go to **Settings**. Go to the **Developer **page from the left menu. 
+* Click the profile name on the top right and go to **Settings**. Go to the **Developer** page from the left menu. 
 * **Reveal API Token** for the Slab bot. This token is used to configure the Slab connector in Search AI. 
 
 ![API Token](./images/slab/api-token.png "API Token")

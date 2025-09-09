@@ -1,6 +1,6 @@
 # Execute a Test Suite API
 
-To execute Conversation Test Suites and get results. This API only initiates the test process and returns the execution status and **_testRunId_** to track the execution status. Please look at the [Conversation Test Suite Execution Status API](../batch-test-execution-status/) for the results of the test.
+To execute Conversation Test Suites and get results. This API only initiates the test process and returns the execution status and **_testRunId_** to track the execution status. Please look at the [Conversation Test Suite Execution Status API](batch-test-execution-status.md) for the results of the test.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -40,7 +40,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Conversation Tests Execution
+<li>App Builder: Conversation Tests Execution
 
 <li>Admin Console: Conversation Tests Execution
 </li>
@@ -74,7 +74,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>StreamID</strong>
    </td>
-   <td>The  <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The  <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -82,7 +82,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>testSuiteName</strong>
    </td>
-   <td>Name of the test suite on the Bot Builder.
+   <td>Name of the test suite on the App Builder.
    </td>
    <td>Required
    </td>

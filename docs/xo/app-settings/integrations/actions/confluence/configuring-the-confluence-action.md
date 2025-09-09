@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Confluence** action and 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports OAuth v2.0 authentication to allow a Confluence integration to exchange data. For more information, see [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}. 
+The Kore.ai XO Platform supports OAuth v2.0 authentication to allow a Confluence integration to exchange data. For more information, see [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}. 
 
 The Kore.ai XO Platform supports the following authorization types for the Confluence integration:
 
@@ -94,7 +94,7 @@ Steps to authorize a Confluence action using developer credentials:
       * Click the **Select Authorization** drop-down and select the **Create New** option.  
       <img src="../images/confluence-action-img4.png" alt="Create new Custom authorization" title="Create new Custom authorization" style="border: 1px solid gray;zoom:50%;"/>
 
-      * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2){:target="_blank"} article.
+      * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2.md){:target="_blank"} article.
       * Enter the following authentication credentials for the OAuth v2 mechanism:
 
           * Call back URL
@@ -121,7 +121,7 @@ Steps to authorize a Confluence action using developer credentials:
 
         The Confluence action is moved from _Available_ to _Configured_ region.
 
-9. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Confluence Action Templates](../using-the-confluence-action-templates/){:target="_blank"} article.
+9. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Confluence Action Templates](configuring-the-confluence-action.md){:target="_blank"} article.
 
 
 ### Allow End User to Authorize
@@ -169,6 +169,6 @@ Steps to install action templates:
 2. In the Integration Templates dialog, click the **Install** button for a template to begin the installation.  
 <img src="../images/confluence-action-img11.png" alt="Begin template installation" title="Begin template installation" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page. Click **Go to Dialog** or go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page. Click **Go to Dialog** or go to **Automation AI** > **Use Cases** > **Dialogs**.
 
 4. To start using the templates, see [Using Confluence Templates.](using-the-confluence-action-templates.md){:target="_blank"}

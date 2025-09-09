@@ -4,7 +4,7 @@
 
 
 
-The LLM and Gen AI Usage Logs on the XO Platform provide detailed information about requests sent to LLMs and the corresponding responses. The logs include data on features accessing the LLMs, response generation time, payload details, tokens used, and more. It enables bot designers to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.
+The LLM and Gen AI Usage Logs on the Platform provide detailed information about requests sent to LLMs and the corresponding responses. The logs include data on features accessing the LLMs, response generation time, payload details, tokens used, and more. It enables AI Agents designers to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.
 
 The log analysis focuses on the following key areas:
 
@@ -60,7 +60,7 @@ You can sort the data by either Newest to Oldest or Oldest to Newest. Click the 
    </td>
    <td>The language in which the conversation occurred.
 <p>
-If it is a multi-lingual VA, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that happen in all enabled languages by default.
+If it is a multi-lingual AI Agents, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that happen in all enabled languages by default.
    </td>
   </tr>
   <tr>
@@ -88,7 +88,7 @@ If it is a multi-lingual VA, you can select specific languages to filter the con
   <tr>
    <td>User 
    </td>
-   <td>Bot designer or end user who made a call to the LLM.    
+   <td>AI Agents designer or end user who made a call to the LLM.    
    </td>
   </tr>
   <tr>
@@ -98,7 +98,7 @@ If it is a multi-lingual VA, you can select specific languages to filter the con
 <p>
 You can view the metrics based on the <strong>Kore User id</strong> or <strong>Channel User Id</strong>.
 <p>
-Channel-specific ids are shown only for the users who have interacted with the VA during the selected period.    
+Channel-specific ids are shown only for the users who have interacted with the AI Agents during the selected period.    
    </td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ Channel-specific ids are shown only for the users who have interacted with the V
   <tr>
    <td>Feature    
    </td>
-   <td>The XO Platform feature (Co-Pilot and Dynamic conversation features) is making calls to the LLM models.    
+   <td>The Platform feature is making calls to the LLM models.    
    </td>
   </tr>
   <tr>

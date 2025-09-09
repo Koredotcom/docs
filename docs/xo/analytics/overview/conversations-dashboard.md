@@ -1,35 +1,30 @@
 # Conversations Dashboard
-The Conversations Dashboard provides insights into how conversations are handled by your virtual assistant (VA). It shows how many conversations were successfully answered by the VA, how many were transferred to agents, and how many were incomplete. You can also view other metrics, such as the trend of conversation sessions, the conversation path analysis, the session distribution by channel, and the VA’s engagement grouped by self-service, drop-off, and agent transfer sessions.
 
-!!! note
-
-    The Conversations Dashboard is available only post 9.2 release, i.e. post April 09, 2022.
+The Conversations Dashboard provides insights into how conversations are handled by your AI Agents. It shows how many conversations were successfully answered by the AI Agents, how many were transferred to agents, and how many were incomplete. You can also view other metrics, such as the trend of conversation sessions, the conversation path analysis, the session distribution by channel, and the AI Agent’s engagement grouped by self-service, drop-off, and agent transfer sessions.
 
 **To view the Conversations dashboard, follow the steps**:
 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The Analytics panel is displayed with the list of reports.
-2. Click **Conversations Dashboard** under the **Automation** section of the **Analytics** panel. The Overview dashboard is displayed on the right side of the page.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
+2. Click **Conversations Dashboard** under the **Overview** section of the **Analytics** panel. The Conversation dashboard is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
 
   <img src="../images/conversation-sessions.png" alt="Conversations Dashboard"  title="Conversations Dashboard" style="border: 1px solid gray; zoom:100%;"> 
   
-
 The Conversations Dashboard is organized into four categories based on the conversation behavior, explained below.
 
 
 ## Conversation Sessions
 
-Conversation Sessions display the total number of conversations between the virtual assistant and a user in a specific period of time. The session starts when a user sends a message and ends when the user indicates that the problem is solved, abandons the chat, or reaches the agent transfer node. For details on the metrics used in each widget/category, see the [Metrics Table](#metrics-table) section in this document.
+Conversation Sessions display the total number of conversations between the AI Agents and a user in a specific period of time. The session starts when a user sends a message and ends when the user indicates that the problem is solved, abandons the chat, or reaches the agent transfer node. For details on the metrics used in each widget/category, see the [Metrics Table](#metrics-table) section in this document.
 
 <img src="../images/conversation-sessions.png" alt="Conversation Sessions"  title="Conversation Sessions" style="border: 1px solid gray; zoom:100%;">
 
-
 ## Self-service Rate
 
-Self-service sessions refer to the conversations that the virtual assistant contains. The **Self-service Rate** widget displays the percentage and total number of self-service conversations. It also shows the percentage increase or decrease in the self-service conversations from the last selected period. For example, if you select the past 24 hours’ data, the widget displays the percentage and total conversation sessions contained in the past 24 hours. Based on your selection, the widget can also display the rise or drop in the percentage of conversation sessions from the previous 24 hours. Any ongoing conversation is classified under Self-service conversation.
+Self-service sessions refer to the conversations that the AI Agents contains. The **Self-service Rate** widget displays the percentage and total number of self-service conversations. It also shows the percentage increase or decrease in the self-service conversations from the last selected period. For example, if you select the past 24 hours’ data, the widget displays the percentage and total conversation sessions contained in the past 24 hours. Based on your selection, the widget can also display the rise or drop in the percentage of conversation sessions from the previous 24 hours. Any ongoing conversation is classified under Self-service conversation.
 
-If a dialog task reaches the <em>End Of Dialog</em> node, the task is considered as completed and categorized as a self-service. There could be a scenario where a virtual assistant is configured with either a <em>Welcome event</em> or an <em>On-Connect event</em>, and there are multiple messages sent by the virtual assistant without any user interaction. In this case, the platform considers this task as contained and increases the self-service count. For details on the metrics used in each widget/category, see the [Metrics Table](#metrics-table) section in this document.
+If a dialog task reaches the <em>End Of Dialog</em> node, the task is considered as completed and categorized as a self-service. There could be a scenario where an AI Agent is configured with either a <em>Welcome event</em> or an <em>On-Connect event</em>, and there are multiple messages sent by the AI Agents without any user interaction. In this case, the platform considers this task as contained and increases the self-service count. For details on the metrics used in each widget/category, see the [Metrics Table](#metrics-table) section in this document.
 
 <img src="../images/self-service-rate.png" alt="Self-service Rate"  title="Self-service Rate" style="border: 1px solid gray; zoom:100%;">
 
@@ -41,8 +36,8 @@ A drop-off is a conversation session where the user abandons the conversation wi
 * A user left the conversation midway without completing any task.
 * The task ended as a failure.
 * The last interaction/message resulted in an ‘intent not identified’ scenario.
-* No response from the assistant.
-* The user abandons the assistant during a live conversation.
+* No response from the AI Agent.
+* The user abandons the AI Agent during a live conversation.
 
 The **Drop-off Rate** widget displays the percentage and the total number of drop-offs within a selected period. It also shows the percentage increase or decrease in the drop-off sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
 
@@ -51,7 +46,7 @@ The **Drop-off Rate** widget displays the percentage and the total number of dro
 
 ## Agent Transfer Rate
 
-Some conversations may require human assistance as the users can’t finish the tasks using the virtual assistant. In such cases, the session is handed over to a human agent for help. When the conversation reaches the point where it’s transferred to an agent – the dialog reaches the agent transfer node, the platform considers this as an Agent Transfer session.
+Some conversations may require human assistance as the users can’t finish the tasks using the AI Agents. In such cases, the session is handed over to a human agent for help. When the conversation reaches the point where it’s transferred to an agent – the dialog reaches the agent transfer node, the platform considers this as an Agent Transfer session.
 
 The **Agent Transfer Rate** widget displays the percentage and total number of agent transfers within the selected period. It also shows the percentage increase or decrease in the agent transfer sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](#metrics-table) section in this document.as
 
@@ -91,15 +86,15 @@ Refer to the table below for the list of widgets present across each category on
 <p><strong>Agent Transfer</strong>: Displays agent transfer versus total conversation line chart over a period of time.</p>
 Scenarios considered as  'agent hand-off' sessions:
 <ul>
-<li>Customers transferred to agents without completing any task with the bot - <strong>Total Agent Transfer</strong>.</li>
-<li>Customers transferred to agents after successfully completing one or more tasks with the bot - <strong>Sessions Transferred to Agents after Completion of 1 or More Tasks</strong>.</li>
+<li>Customers transferred to agents without completing any task with the AI Agent - <strong>Total Agent Transfer</strong>.</li>
+<li>Customers transferred to agents after successfully completing one or more tasks with the AI Agent - <strong>Sessions Transferred to Agents after Completion of 1 or More Tasks</strong>.</li>
 </ul>
    </td>
   </tr>
   <tr>
    <td>Message Trend
    </td>
-   <td><p>A line chart that displays the total number of messages sent by the virtual assistant versus the total number of messages received in the VA over a time period.</p>
+   <td><p>A line chart that displays the total number of messages sent by the AI Agents versus the total number of messages received in the AI Agents over a time period.</p>
 This metric is available only for the Conversation Session.
    </td>
   </tr>
@@ -124,7 +119,7 @@ This metric is available only for the Conversation Session.
   <tr>
    <td>Conversation Path Analysis
    </td>
-   <td><p>A table showing every unique conversation path between the VA and the users that has been executed over a period of time.</p>
+   <td><p>A table showing every unique conversation path between the AI Agents and the users that has been executed over a period of time.</p>
 <p><strong>Conversation Session</strong>: Displays the most popular conversation path.</p>
 <p><strong>Self-Service</strong>: Displays the conversation path that leads to self-service.</p>
 <p><strong>Drop-off</strong>: Displays the conversation path that leads to self-service.</p>
@@ -134,7 +129,7 @@ This metric is available only for the Conversation Session.
   <tr>
    <td>Engagement Analysis
    </td>
-   <td>An interactive bar chart that allows you to analyze the VA’s engagement based on the number of messages exchanged, conversation duration, and task completion.
+   <td>An interactive bar chart that allows you to analyze the AI Agent’s engagement based on the number of messages exchanged, conversation duration, and task completion.
    </td>
   </tr>
   <tr>
@@ -181,7 +176,7 @@ This metric is available only for the Conversation Session.
   <tr>
    <td>Total  Messages
    </td>
-   <td>A scorecard that displays the total number of messages received from the user and sent by the VA. 
+   <td>A scorecard that displays the total number of messages received from the user and sent by the AI Agents. 
 <br>
 This metric is available only for the Conversation Session.
    </td>

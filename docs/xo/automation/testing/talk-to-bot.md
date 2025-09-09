@@ -1,23 +1,23 @@
-# Test (Talk to Bot)
+# Test (Talk to App)
 
-After you have defined your assistant and configured one or more tasks, you should test your settings before you publish your NLP-enabled assistant. Bot owners and developers can chat with the assistant in real-time to test recognition, performance, and flow as if it were a live session.
+After you have defined your app and configured one or more tasks, you should test your settings before you publish your NLP-enabled app. Bot owners and developers can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
 
 
-## Testing a Virtual Assistant
+## Testing a App
 
 To test your tasks in a messaging window, click the **Test** icon located on the top right corner on the Platform. 
 
 <img src="../images/talk-to-bot-window.png" alt="Talk to Bot" title="Talk to Bot" style="border: 1px solid gray; zoom:80%;"/>
 
-A messaging window for the assistant is displayed and connected to the NLP interpreter as shown in the following illustration for a _Flight Details Assistant_.
+A messaging window for the app is displayed and connected to the NLP interpreter as shown in the following illustration for a _Flight Details Assistant_.
 
 !!! Note
 
-    The **Test** icon is not enabled until and unless at least one task is created.
+    The Test icon is not enabled until and unless at least one task is created.
 
 <img src="../images/talk-to-bot-img2.png" alt="Talk to Bot - Messaging window" title="Talk to Bot - Messaging window" style="border: 1px solid gray; zoom:80%;"/>
 
-When you first open the window, you need to select whether you wish to proceed with Voice or Chat. Chat experience is described in this content. In the **Message** section, enter text to begin interacting and testing your assistant , for example, _Book a flight._ The NLP interpreter begins processing the task, verifying authentication with the user and the web service, and then prompting for required task field information. When all the required task fields are collected, it executes the task. While testing your assistant , try different variations of user prompts and ensure the NLP interpreter is processing the synonyms (or lack of synonyms) properly. If the assistant returns unexpected results, consider adding or modifying synonyms for your tasks and task field names as required. For more information, see [Natural Language Processing](../../natural-language/training/optimizing-bots/){:target="_blank"}.
+When you first open the window, you need to select whether you wish to proceed with Voice or Chat. Chat experience is described in this content. In the **Message** section, enter text to begin interacting and testing your app, for example, _Book a flight._ The NLP interpreter begins processing the task, verifying authentication with the user and the web service, and then prompting for required task field information. When all the required task fields are collected, it executes the task. While testing your app , try different variations of user prompts and ensure the NLP interpreter is processing the synonyms (or lack of synonyms) properly. If the app returns unexpected results, consider adding or modifying synonyms for your tasks and task field names as required. For more information, see [Natural Language Processing](../natural-language/training/optimizing-bots.md){:target="_blank"}.
 
 
 ## Debugging and Troubleshooting
@@ -35,9 +35,9 @@ The Debug window lets you explore the following:
 
 ### Debug Log
 
-**Debug Log** provides the sequential progression of a dialog task and context and session variables captured at every node. It is a chat-like interface, grouped by user inputs and bot responses for easier conversation flow tracing. It offers improved navigation and contextual information at a glance. This significantly enhances log readability and streamlines the debugging process. The Debug log supports the following statuses:
+**Debug Log** provides the sequential progression of a dialog task and context and session variables captured at every node. It is a chat-like interface, grouped by user inputs and app responses for easier conversation flow tracing. It offers improved navigation and contextual information at a glance. This significantly enhances log readability and streamlines the debugging process. The Debug log supports the following statuses:
 
-* _initiated_: The XO Platform initiates the various nodes in a dialog task. For example, script, service, and webhook execution is initiated.
+* _initiated_: The Platform initiates the various nodes in a dialog task. For example, script, service, and webhook execution is initiated.
 * _execution_: indicates execution of nodes has started. For example, script, service, and webhook execution has started.
 * _execution successful_: indicates execution of nodes is successful.For example, script, service, and webhook execution is successful.
 * _process completed_: indicates execution process for the script, service and webhook node is completed.  
@@ -49,7 +49,7 @@ The Debug window lets you explore the following:
 * _node details_: shows the node details in the script format. You can copy, open the script in a full screen view or close the script view.  
 
 
-* _parsing_: The XO Platform begins to parse the user prompt.
+* _parsing_: The Platform begins to parse the user prompt.
 * _parsing successful_:  the user prompt is parsed successfully.
 * _waitingForUserInput_: The user was prompted for input
 * _pause_: The current dialog task is paused while another task is started.
@@ -62,21 +62,21 @@ The Debug window lets you explore the following:
 
 ### NL Analysis
 
-NL Analysis tab shows the task name analysis and recognition scores of each user utterance.  It presents a detailed tone analysis, intent detection, and entity detection performed by the Kore.ai NLP engine. As a part of intent detection, the NL Analysis tab shows the outcomes of Machine Learning, Fundamental Meaning, and Knowledge Graph engines. For a detailed discussion on the scores, see [Training Your Assistant ](../testing-your-bot-with-nlp/){:target="_blank"}topic.
+NL Analysis tab shows the task name analysis and recognition scores of each user utterance.  It presents a detailed tone analysis, intent detection, and entity detection performed by the NLP engine. As a part of intent detection, the NL Analysis tab shows the outcomes of Machine Learning, Fundamental Meaning, and Knowledge Graph engines. For a detailed discussion on the scores, see [Training Your Assistant ](testing-your-bot-with-nlp.md){:target="_blank"}topic.
 
 <img src="../images/talk-to-bot-img9.png" alt="End of the dialog flow" title="End of the dialog flow" style="border: 1px solid gray; zoom:80%;"/>
 
 
 ### Session Context and Variables
 
-The **Session Context & Variables** tab displays dynamically the populated `Context` object and session variables updated at each processed component in Dialog Builder. The following is an example of the **Session & Context Variables** panel in **Debug Log**. For more information about the parameters, see [Using Session and Context Variables in Tasks](../../use-cases/using-session-and-context-variables){:target="_blank"} and [Context Object](/docs/xo/automation/intelligence/context-object/){:target="_blank"}.
+The **Session Context & Variables** tab displays dynamically the populated `Context` object and session variables updated at each processed component in Dialog Builder. The following is an example of the **Session & Context Variables** panel in **Debug Log**. For more information about the parameters, see [Using Session and Context Variables in Tasks](../use-cases/using-session-and-context-variables.md){:target="_blank"} and [Context Object](../intelligence/context-object.md){:target="_blank"}.
 
 <img src="../images/talk-to-bot-img10.png" alt="Session and Context variables" title="Session and Context variables" style="border: 1px solid gray; zoom:80%;"/>
 
 
 ### System Commands
 
-System Commands allow you to take control of the user-bot conversation during evaluation. These can also be injected into the assistant using JavaScript code. [See here for more](../../system-commands/){:target="_blank"}.
+System Commands allow you to take control of the user-app conversation during evaluation. These can also be injected into the app using JavaScript code. [See here for more](../system-commands.md){:target="_blank"}.
 
 
 ## Record Session
@@ -90,7 +90,7 @@ While your recording is in progress, you can see a notification at the top of th
 <img src="../images/talk-to-bot-img12.png" alt="Stop" title="Stop" style="border: 1px solid gray; zoom:80%;"/>
 
 
-Once you stop the recording, you can use the recorded conversation to create a test case, for further conversation testing. [Learn more](../regression-testing/conversation-testing/conversation-testing-landing-page){:target="_blank"}.
+Once you stop the recording, you can use the recorded conversation to create a test case, for further conversation testing. [Learn more](./regression-testing/conversation-testing/conversation-testing-landing-page.md){:target="_blank"}.
 
 <img src="../images/talk-to-bot-img13.png" alt="Use recording for conversation testing" title="Use recording for conversation testing" style="border: 1px solid gray; zoom:80%;"/>
 
@@ -98,6 +98,6 @@ After clicking on _Create Test Case_, you can alternatively download the recorde
 
 <img src="../images/talk-to-bot-img14.png" alt="Download recorded content as JSON file" title="Download recorded content as JSON file" style="border: 1px solid gray; zoom:80%;"/>
 
-This is what a short conversation with a Kore.ai assistant might look like: 
+This is what a short conversation might look like: 
 
-<img src="../images/talk-to-bot-img15.png" alt="Sample conversation with Kore.ai assistant" title="Sample conversation with Kore.ai assistant" style="border: 1px solid gray; zoom:80%;"/>
+<img src="../images/talk-to-bot-img15.png" alt="Sample conversation" title="Sample conversation" style="border: 1px solid gray; zoom:80%;"/>

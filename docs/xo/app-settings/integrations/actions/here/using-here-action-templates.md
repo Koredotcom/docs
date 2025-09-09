@@ -4,7 +4,7 @@ You can use the **Prebuilt Action Templates** from your Here integration to auto
 
 Steps to create a dialog task using Here action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 
@@ -13,7 +13,7 @@ Steps to create a dialog task using Here action templates:
 
 
 
-If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.
+If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for yourAI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.
 
 
   <img src="../images/here-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
@@ -49,7 +49,7 @@ The following Here action is supported:
 
 Steps to get location by free text in the Here integration:
 
-1. Refer to the [Installing the Here templates](../configuring-the-here-action/#step-2-install-the-here-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Here templates](configuring-the-here-action.md#step-2-install-the-here-action-templates){:target="_blank"} section to install this template.
 2. The _Get Location_ dialog task is added with the following components:
 <img src="../images/here-action-img12-tem-img4.png" alt="Dialog task added" title="Dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -107,8 +107,8 @@ Steps to get location by free text in the Here integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to get location details.
-6. Enter a free text location when prompted by the VA, as shown below.  
+5. Follow the prompts in the App console to get location details.
+6. Enter a free text location when prompted by the AI Agent, as shown below.  
 <img src="../images/here-tem-img6.png" alt="Enter location when prompted" title="Enter location when prompted" style="border: 1px solid gray;zoom:50%;"/>
 
 7. You will notice a location is identified based on your text.  

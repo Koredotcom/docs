@@ -10,16 +10,16 @@ This guide outlines the steps for installing Kore.ai Experience Optimization Pla
 
 ## BotKit Overview
 
-BotKit is an SDK that extends the Kore.ai XO platform’s conversational AI capabilities. It allows developers to:
+BotKit is an SDK that extends the Platform’s conversational AI capabilities. It allows developers to:
 
 
 
-* Implement custom business logic in XO conversational flows using webhooks.
+* Implement custom business logic in conversational flows using webhooks.
 * Enhance entity and intent recognition with custom NLU models.
 * Integrate with unsupported messaging or voice-based channels.
 * Handle additional conversation events for complex workflows.
 
-BotKit complements XO’s no-code bot builder by enabling programmatic customization for enterprise requirements.
+BotKit complements the Platform's no-code bot builder by enabling programmatic customization for enterprise requirements.
 
 
 ### Example Use Cases

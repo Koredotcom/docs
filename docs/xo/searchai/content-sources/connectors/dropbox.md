@@ -21,8 +21,8 @@ If you are using Dropbox to store and manage your content, you can easily search
   <tr>
    <td>Generative Model for Answers
    </td>
-   <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html \
-Note: Password-protected files in any format are not supported
+   <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html 
+   Note: Password-protected files in any format are not supported
    </td>
   </tr>
 </table>
@@ -37,7 +37,7 @@ Search AI supports **OAuth 2.0 Authorization Code Grant Type** mechanism for Dro
 
 ## Step 1: Configure an application in the Dropbox Account
 
-To create an application in the Dropbox account, log in to the [Dropbox Developer Portal](https://www.dropbox.com/developers/apps). Create a new app. On the Create app widget, under Choose an API, select Scoped access and select the type of access you need. 
+To create an application in the Dropbox account, sign in to the [Dropbox Developer Portal](https://www.dropbox.com/developers/apps). Create a new app. On the Create app widget, under Choose an API, select Scoped access and select the type of access you need. 
 
 ![alt_text](images/dropbox/create-app.png "Create App")
 

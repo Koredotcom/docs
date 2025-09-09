@@ -1,6 +1,6 @@
 # How do I include an Image in an Outbound Twilio SMS (MMS)?
 
-For the Twilio SMS channel, you can use the **<code>MediaUrl</code></strong> parameter in the response to deliver an image. Let’s see an example of how to send an outbound message that includes an image and a text message.
+For the Twilio SMS channel, you can use the <code>MediaUrl</code> parameter in the response to deliver an image. Let’s see an example of how to send an outbound message that includes an image and a text message.
 
 **Sample API cURL Script:**
 

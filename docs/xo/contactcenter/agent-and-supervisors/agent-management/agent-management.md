@@ -191,7 +191,7 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
 
 1. **Answer Mode**: These settings let you define how conversations get answered on each channel (Digital – Chats, and Emails, as well as Voice).
 2. **Conversation Status Control**: These options let you define how conversation status behaves and the messages triggered by status changes.
-3. **Call Recording Control**: These settings let you configure call recording behavior. If enabled, you can further enable options to allow Agents and Virtual Assistants to Pause/Resume call recording.
+3. **Call Recording Control**: These settings let you configure call recording behavior. If enabled, you can further enable options to allow Human Agents and AI Agents to Pause/Resume call recording.
 4. **Transfers**: This section lets you define settings related to External Transfers, Skill Match, and Transfer Destination Control.
 5. **Skill Modification**: You can decide if the agents can modify skills attached to a conversation.
 6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
@@ -201,9 +201,11 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
     * Fairer Workload distribution.
     * Hold interaction in queue until the wait time expires.
 10. **Enable Dial Tone Until Agent Connects**: This setting plays a dial tone to the customer until the connection with the agent is established after the user hears connected tone.
-These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.  
+These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.
 
-    <img src="../images/agent-settings-page.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
+11. Total Digital Conversation Limit: This setting prevents digital overload by limiting the total number of active conversations across all channels.  
+
+    <img src="../images/agent-settings.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Answer Mode
 
@@ -321,20 +323,20 @@ By default, Contact Center AI records all voice interactions. Contact Center AI 
 By default, the Allow Agent to Pause/Resume feature is disabled. However, admins can enable it for agents handling voice interactions, allowing them to pause the recording during the call.
 <img src="../images/allow-agent-to-pause-resume.png" alt="Allow Agents to Pause/Resume Call Recording" title="Allow Agents to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-### Allow Virtual Assistant Dialogs to Pause/Resume
+### Allow Assistant Dialogs to Pause/Resume
 
-By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. However, admins can enable it for virtual assistants (automation) handling voice interactions, allowing them to pause the recording when collecting [Personally Identifiable Information (PII)](../../configurations/advanced-settings/handling-sensitive-data.md).  
-<img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" title="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
+By default, the Allow Assistant to Pause/Resume feature is disabled. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting Personally Identifiable Information (PII).  
+<img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Assistant Dialogs to Pause/Resume Call Recording" title="Allow Assistant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording) tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
+Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
 
-Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
+Changes to the Call Recording Control settings are logged on the [Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
 
 ## Transfers
 
 ### Transfer to External Contacts
 
-If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions) to learn more.  
+If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions){:target="_blank"} to learn more.  
 <img src="../images/transfer-to-external-contacts.png" alt="Enable Transfer to External Contacts" title="Enable Transfer to External Contacts" style="border: 1px solid gray; zoom:80%;">
 
 ### Enforce Skill Match for Transfers
@@ -405,10 +407,25 @@ Administrators can select from the following routing options that complement exi
 
 **Fairer Workload distribution**: When enabled, this feature distributes tasks evenly across agents, which reduces overload, improves focus, and can decrease completion times.
 
-**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability. 
-<img src="../images/additional-routing-configurations.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
+**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability.
+
+**Omit Language in Routing**: When enabled, the system ignores language during routing. Routing continues to consider skill, proficiency, availability, capacity, and other applicable parameters.
+
+When disabled (Default), the system includes language as a routing criterion along with skill, proficiency, availability, and other parameters.  
+<img src="../images/additional-routing-config.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
 
 ## Enable Dial Tone Until Agent Connects
 
 By default, the enable dial tone until agent connects functionality is disabled. Administrators can turn on the toggle and click Save to enable the functionality. When enabled, a dial tone is played to the customer until the connection with the agent is established after the user hears a connected tone.  
 <img src="../images/enable-dial-tone.png" alt="Enable Dial Tone Until Agents Connect" title="Enable Dial Tone Until Agents Connect" style="border: 1px solid gray; zoom:80%;">
+
+## Total Digital Conversation Limit
+
+This setting allows admins to configure a maximum total digital conversation limit for an agent while adhering to the per-channel limits that are configured. [Learn more](../../../user-management/manage-users.md#chat--voice).  
+
+!!! Note
+
+    You can set the total conversation limit for a user only from the User section. This setting is not available in the user profile under the Monitor tab.  
+
+When the Total digital conversation limit is reached,  an agent will move to System Busy status. This setting is disabled by default.  
+<img src="../images/total-digital-conversations-enable.png" alt="Enable Total Digital Conversations Limit" title="Enable Total Digital Conversations Limit" style="border: 1px solid gray; zoom:80%;">

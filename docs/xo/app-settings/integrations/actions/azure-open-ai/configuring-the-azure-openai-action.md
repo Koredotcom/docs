@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Azure OpenAI** action an
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication, allowing Azure OpenAI integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication, allowing Azure OpenAI integration to exchange data. For more information, read the [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Azure OpenAI integration:
 
@@ -125,7 +125,7 @@ Steps to authorize an Azure OpenAI action at a user level:
     4. Select the type of authorization mechanism. For example, select the API Key option.  
     <img src="../images/configure-azure-img15-open-ai-api-key1-1.png" alt="Select authorization mechanism" title="Select authorization mechanism" style="border: 1px solid gray;zoom:50%;"/>  
       
-        To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
+        To create Basic Auth profiles, see [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.
 
     5. Enter the following authentication credentials for the Basic Auth mechanism:
         * _Name_ – Enter the name for the Basic Auth profile.
@@ -157,6 +157,6 @@ Steps to install action templates:
 
 
 
-3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page. Click **Go to Dialog** or go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page. Click **Go to Dialog** or go to **Automation AI** > **Use Cases** > **Dialogs**.
 
 4. To start using the templates, see [Using Azure OpenAI Templates.](using-the-azure-openai-action-templates.md){:target="_blank"}

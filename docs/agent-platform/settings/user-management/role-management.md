@@ -1,4 +1,4 @@
-# Role Management 
+# Manage Roles, Permissions and Access Levels
 
 Agent Platform’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. 
 
@@ -94,20 +94,18 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Master Admin</strong>
    </td>
-   <td>Users have complete control over tool and model management, user administration, integrations, security settings, and access to all core features and functionalities.
-   </td>
+   <td>Users have complete control over tool and model management, and access to all the core features and functionalities of the Settings console.</td>
   </tr>
   <tr>
    <td><strong>Admin</strong>
    </td>
-   <td>Users have access to all the permissions except model deletion, billing, and Kore connector.
+   <td>Users have access to all the permissions except model deletion, billing, and connectors.
    </td>
   </tr>
   <tr>
    <td><strong>Member</strong>
    </td>
-   <td>Users can create tools, add external models, and modify only S3 integration.
-   </td>
+   <td>Users can create tools, add external models, and modify only specific integrations.</td>
   </tr>
   <tr>
    <td><strong>Viewer</strong>
@@ -153,7 +151,7 @@ The following table summarizes the scope for different system roles supported fo
    </td>
   </tr>
     <tr>
-   <td colspan="2" ><strong>Agentic App</strong>
+   <td colspan="2" ><strong>App</strong>
    </td>
   </tr>
   <tr>
@@ -165,30 +163,30 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>App Owner</strong>
    </td>
-   <td>Users have complete administrative access across all Platform features and configurations.
+   <td>Users have complete administrative access across all Platform features and configurations. This user cannot be removed from the system, and can manage all other roles.
    </td>
   </tr>
     <tr>
    <td><strong>App Admin</strong>
    </td>
-   <td>Users have full administrative access across most system features of Agentic Apps.</td>
+   <td>Users have full administrative access across most system features of Agentic Apps. This user has privileges similar to the owner. The app admins can modify all the other roles except the permissions of the app owner.</td>
   </tr>
   <tr>
    <td><strong>App Developer</strong>
    </td>
-   <td>Users have full access to core development features of Agentic Apps including configurations, tools, guardrails, and data.
+   <td>Users have full access to core development features of Agentic Apps including configurations, tools, guardrails, and data. There is limited access to the admin features.
    </td>
   </tr>
     <tr>
    <td><strong>App Viewer</strong>
    </td>
-   <td>Users have basic view-only access to essential features of Agentic Apps including configurations, tools, guardrails, and simulation capabilities.
+   <td>Users have basic view-only access to specific and essential features of Agentic Apps including configurations, tools, guardrails, and simulation capabilities.
    </td>
   </tr>
       <tr>
    <td><strong>App Tester</strong>
    </td>
-   <td>Users have view-only access to most system features of Agentic Apps allowinng them to observe and test the functionalities.
+   <td>Users have view-only access to most system features of Agentic Apps allowing them to observe and test agents and analytics. The user cannot write or modify the production features.
    </td>
   </tr>
 </table>
@@ -234,7 +232,7 @@ Roles are auto-assigned by the system based on the following Role Types. Please 
 
 * **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to users, integrations, and security permissions.
 * **Tool**:  When a user is invited to a tool, they receive a Tool role. The role type manages access to tool configurations and deployments.
-* **Agentic App**: When a user is invited to the Agent Platform at the agentic app level, they are assigned this role. This role type manages access to the core features and configurations of autonomous AI applications that handle specialized business tasks and processes.
+* **App**: When a user is invited to the Agent Platform at the agentic app level, they are assigned this role. This role type manages access to the core features,  configurations, and deployments of autonomous AI applications (agentic apps) that handle specialized business tasks and processes. The admin must assign this role type to any user with whom they intend to share an agentic app.
 
 **Account Role**
 
@@ -246,7 +244,7 @@ Roles are auto-assigned by the system based on the following Role Types. Please 
 * The user who creates a tool is assigned the *Tool Admin* role by default.
 * The *Tool Admin* can assign other tool roles to users they invite to their tool.
 
-**Agentic App Role**
+**App Role**
 
 * The user who creates an agentic app is assigned the *App Owner* role by default.
 * The *App Owner* can assign other Agentic App roles to users who have access to their agentic apps.
@@ -359,7 +357,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Add opensource model
+   <td>Add open-source model
    </td>
    <td>Yes
    </td>
@@ -495,9 +493,21 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="4" ><strong>Integrations</strong>
+   <td rowspan="6" ><strong>Integrations</strong>
    </td>
-   <td>Weights & Biases
+   <td>Access
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Custom
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Delete an Integration
    </td>
    <td>Yes
    </td>
@@ -509,7 +519,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Hugging Face
+   <td>Test an Integration
    </td>
    <td>Yes
    </td>
@@ -521,31 +531,43 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>AWS S3 Bucket
+   <td>Update an Integration
    </td>
    <td>Yes
    </td>
    <td>Yes
    </td>
-   <td>No
+   <td>Yes
    </td>
    <td>No
    </td>
   </tr>
   <tr>
-   <td>SearchAssist
+   <td>Create an Integration
+   </td>
+   <td>Yes
    </td>
    <td>Yes
    </td>
    <td>Yes
    </td>
    <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Disable an Integration
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
    </td>
    <td>No
    </td>
   </tr>
   <tr>
-   <td rowspan="12" ><strong>Users Management</strong>
+   <td rowspan="11" ><strong>Users Management</strong>
    </td>
    <td>Access
    </td>
@@ -679,9 +701,19 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td><strong>Security and Control Settings</strong>
+   <td rowspan="5"><strong>Security and Control</strong>
    </td>
-   <td>Create Management API Key.
+   <td>Access
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No</td>
+   <td>No</td>
+  </tr>
+  <tr>
+   <td>Create API App
    </td>
    <td>Yes
    </td>
@@ -690,8 +722,43 @@ The following table summarizes the module-wise permissions and access levels for
    <td>No
    </td>
    <td>No
-<p>
-    </td>
+   </td>
+  </tr>
+  <tr>
+   <td>Delete API App
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Update API App
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Create or Delete an API Key
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
   </tr>
   <tr>
    <td><b>Monitoring</b>
@@ -792,6 +859,96 @@ The following table summarizes the module-wise permissions and access levels for
    <td>No
    </td>
   </tr>
+   <tr>
+   <td rowspan="8"><strong>Manage Custom Scripts</strong>
+   </td>
+   <td>Access</td>
+   <td>Full
+   </td>
+   <td>Custom
+   </td>
+   <td>Custom
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Import New Custom Script
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Deploy/Re-deploy custom script</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Undeploy Custom Script
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Delete Custom Script</td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Export Project</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  <td>No</td>
+   </tr>
+     <tr>
+   <td>Overview and Other Details</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  <td>Yes</td>
+   </tr>
+       <tr>
+   <td>Create/Delete an API Key</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  <td>No
+   </td>
+   </tr>
   </table>
 
 <b>Tool Role</b>
@@ -894,7 +1051,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Monitoring Trace of an Tool
+   <td>Monitoring Trace of a Tool
    </td>
    <td>Yes
    </td>
@@ -973,6 +1130,503 @@ The following table summarizes the module-wise permissions and access levels for
    <td><strong>Monitoring</strong>
    </td>
    <td>Audit Log
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+</table>
+
+
+<b>App Role - Agentic Apps</b>
+
+<table>
+  <tr bgcolor="#ECECEC">
+   <td rowspan="3" ><strong>Permission</strong>
+   </td>
+   <td colspan="5" align="center"><strong>Default App Role</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>App Owner</strong>
+   </td>
+   <td><strong>App Admin</strong>
+   </td>
+   <td><strong>App Developer</strong>
+   </td>
+   <td><strong>App Tester</strong>
+   </td>
+   <td><strong>App Viewer</strong>
+   </td>
+  </tr>
+  <tr bgcolor="#ECECEC">
+   <td colspan="5" align="center"><strong>Access Level</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>App Configuration
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Agents
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Code Tools
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Simulate
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Analytics
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Environments
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>API Keys
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Audit Logs
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Guardrails
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Sharing & Permissions
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Versions
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Tools Library
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Export Tool
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>View
+   </td>
+   <td>No
+   </td>
+  </tr>
+</table>
+
+<br>
+
+<table>
+  <tr bgcolor="#ECECEC">
+   <td rowspan="3" ><strong>Module</strong>
+   </td>
+   <td rowspan="3" ><strong>Permission</strong>
+   </td>
+   <td colspan="5" align="center"><strong>Default Role</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>App Owner</strong>
+   </td>
+   <td><strong>App Admin</strong>
+   </td>
+   <td><strong>App Developer</strong>
+   </td>
+   <td><strong>App Tester</strong>
+   </td>
+   <td><strong>App Viewer</strong>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" bgcolor="#ECECEC" align="center"><strong>Access</strong>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >App Configurations
+   </td>
+   <td>View Profile, View Config, view app versions
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Edit Profile, Edit Config, Import App version, Delete App version
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >Agents
+   </td>
+   <td>View Agent
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Add Agent, Edit Agent, Link Tools, Unlink Tools, Restore Agent Version, Restore App Version, Create Agent Version
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >Tools
+   </td>
+   <td>View Tool
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Add Tool, Edit Tool, Create In-line tool, Edit Inline Tool, Delete Inline Tool
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Simulate
+   </td>
+   <td>Test
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Analytics
+   </td>
+   <td>View Sessions, Traces, Generations
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >Environments
+   </td>
+   <td>View Environment
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Create Environment, Delete Environment, Deploy Version
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >API Keys
+   </td>
+   <td>View List
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Add Key
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Audit Logs
+   </td>
+   <td>View Logs
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >Guardrails
+   </td>
+   <td>View Guardrails
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Add Guardrails, Edit Guardrails
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >Sharing & Permissions
+   </td>
+   <td>View Users
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Add Users, Update Role
+   </td>
+   <td>Yes
    </td>
    <td>Yes
    </td>
@@ -1168,8 +1822,11 @@ The **Role Management** Dashboard displays key information related to system and
 
 To access the dashboard, follow the steps below:
 
-1. [Log in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to Agent Platform and click **Settings** on the top menu.
-2. Click **Users Management** > **Role Management** on the left menu.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Settings** on the top navigation bar.
+3. Click **Users Management** > **Role Management** on the left menu.
 <img src="../images/access-role-management.png" alt="access role management" title="access role management" style="border: 1px solid gray; zoom:80%;">
 
 The **Role Management** dashboard displays the following:
@@ -1177,7 +1834,7 @@ The **Role Management** dashboard displays the following:
 1. The summary of counts for the following:
 
     * **Total Roles**: The total count of system and custom roles in the system.
-    * **System Roles**: The count of the predefined, system-generated user roles.
+    * **System Roles**: The count of the pre-defined, system-generated user roles.
     * **Custom Roles**: The count of the user roles created and configured by the system admin.
     <img src="../images/summary-of-counts.png" alt="summary of counts" title="summary of counts" style="border: 1px solid gray; zoom:80%;">
 
@@ -1185,7 +1842,7 @@ The **Role Management** dashboard displays the following:
 
     * **Role**: The name of the system-generated role or the custom role you have created.
     * **Role Type**: The role type defines its scope, including **Account**, **Tool**, and **Agentic App**.
-    * **Description**: This is the description of the role. System roles are predefined, while you must provide custom role descriptions. Hover over the description text to view the entire description.
+    * **Description**: This is the description of the role. System roles are pre-defined, while you must provide custom role descriptions. Hover over the description text to view the entire description.
     * **Created by**: For system-generated roles, _System_ is displayed. For custom roles, the name of the user who created the role is displayed, as shown in the image below. This user can be the account owner or another user in the admin’s account.
     <img src="../images/custom-and-system-roles.png" alt="custom and system roles" title="custom and system roles" style="border: 1px solid gray; zoom:80%;">
 
@@ -1209,7 +1866,7 @@ You can perform the following actions on the [system-generated roles](./role-man
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>System roles cannot be created, modified, or deleted since the role and its permissions are predefined in the system. However, they can be duplicated as <b>Custom Roles</b> and modified.</p>
+<p>System roles cannot be created, modified, or deleted since the role and its permissions are pre-defined in the system. However, they can be duplicated as <b>Custom Roles</b> and modified.</p>
 </div>
 
 #### View Role Information
@@ -1275,6 +1932,7 @@ To add a custom role, follow the steps below:
         * If you select *Custom*, Select the checkbox to enable the permissions (set to _Yes_) or unselect to disable (set to _No_) for the following:
 
             * Create and Import Tool
+            * Create agentic apps
             * Models
                 * Add External models
                 * Fine-tune a model
@@ -1313,7 +1971,7 @@ To add a custom role, follow the steps below:
 **Important Considerations**
 
 * First, select the access level for **Models** to enable its permissions.
-<img src="../images/select-acess-for-models.png" alt="set models access" title="set models access" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/select-access-for-models.png" alt="set models access" title="set models access" style="border: 1px solid gray; zoom:80%;">
 
     Missing this step automatically disables the permissions.
 
@@ -1478,6 +2136,6 @@ Like a system role, you can duplicate a custom role, which copies the name, role
 
 ## Related Information
 
-* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other Agent Platform admin features.
+* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
 * **Users Management** - [Learn more](../user-management/users.md){:target="_blank"} about managing users in your account.
 * **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.

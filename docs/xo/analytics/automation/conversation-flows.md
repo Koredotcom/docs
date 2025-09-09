@@ -1,24 +1,24 @@
 # Conversation Flows
 
-Conversation Flows is a visual representation of the user journey. The user interactions with the virtual assistants are analyzed by the platform to provide insights into the commonly used intents, paths traversed, and drop-off points. xyz
+Conversation Flows is a visual representation of the user journey. The user interactions with the AI Agents are analyzed by the platform to provide insights into the commonly used intents, paths traversed, and drop-off points.
 
 
 !!! note
 
-    The Conversation Flow feature is available only for the Published Bots.
+    The Conversation Flow feature is available only for the Published AI Agents.
 
 
 The Conversation Flows provides the following views:
 
 
-* **Intents Flow**: This view provides an aggregated view of how each of the virtual assistant’s intents is executed. The intents are rolled up to the top level, irrespective of what stage of a conversation they were initiated by the users. For example, intents invoked at the beginning of a conversation as well as any other stage during the conversation are all rolled up to the top level. This is the default view when you navigate to Conversation Flows. The **View tasks by sessions** toggle should be turned OFF to access this view.
+* **Intents Flow**: This view provides an aggregated view of how each of the AI Agents’s intents is executed. The intents are rolled up to the top level, irrespective of what stage of a conversation they were initiated by the users. For example, intents invoked at the beginning of a conversation as well as any other stage during the conversation are all rolled up to the top level. This is the default view when you navigate to Conversation Flows. The **View tasks by sessions** toggle should be turned OFF to access this view.
 * **Session Flow**: This view provides the user journey across the different intents in the order they were executed during a conversation session. Every flow starts with the intent used to initiate a conversation session and is followed by the other intents invoked in that session. You must turn ON the **View Tasks by sessions** toggle to access this view.
 
 **To view the Conversation Flows dashboard, follow the steps**: 
 
 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. **The Analytics** panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/conversation-flows-dashboard.png" alt="Conversation Flows Dashboard" title="Conversation Flows Dashboard" style="border: 1px solid gray; zoom:80%;">
 
@@ -42,7 +42,7 @@ You can select session-wise view by toggling the **View tasks by sessions** opti
 The Conversation Flows can be used to identify the following:
 
 
-* Popular utterances – Utterances that are used to invoke the virtual assistant’s intents. Utterances are automatically grouped by similarity to provide a simplified view. 
+* Popular utterances – Utterances that are used to invoke the AI Agents’s intents. Utterances are automatically grouped by similarity to provide a simplified view. 
 * False Positives – A quick review of the utterance groups will help you in identifying utterances going to an incorrect intent. You can analyze these utterances and make the necessary training updates. 
 * False Negatives – Utterances that did not result in any intent identification are presented as ‘Not Handled Utterances’. You can analyze these utterances and add them to the training corpus if required. 
 * Popular Intents and Flows – Helps in understanding the popular intents of your users and the flows used to execute these intents
@@ -89,9 +89,9 @@ The Conversation Flows can be filtered using one or more of the following criter
 
 
 * **Date Period** – Default is set to _Last 7 days_. You can change it to _24 Hrs_. You can also set the start and end dates using the _Custom_ option and by selecting the dates from the calendar.
-* **Languages**  – In the case of multi-lang bots, you can filter the conversation flows by selecting one or more languages from the presented drop-down list. The default is _All Languages._
-* **Channels** – Selecting one or more channels the bot was published on, you can filter the flow based upon the channel used by the user. The default is _All Channels_.
-* **Custom Tags** – In case you have added any meta/custom tags to your bot, you can filter based on the same. This requires the selecting of the Tag Name and the value for the tag you want to filter the conversations. By default, no tag is selected.
+* **Languages**  – In the case of multi-lang AI Agents, you can filter the conversation flows by selecting one or more languages from the presented drop-down list. The default is _All Languages._
+* **Channels** – Selecting one or more channels the AI Agents was published on, you can filter the flow based upon the channel used by the user. The default is _All Channels_.
+* **Custom Tags** – In case you have added any meta/custom tags to your AI Agents, you can filter based on the same. This requires the selecting of the Tag Name and the value for the tag you want to filter the conversations. By default, no tag is selected.
 
 
 <img src="../images/conversational-flows-filters.png" alt="Conversational Flows Filters" title="Conversational Flows Filters" style="border: 1px solid gray; zoom:80%;">

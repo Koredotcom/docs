@@ -4,14 +4,14 @@ You can use the **Prebuilt Action Templates** from your ServiceNow integration t
 
 Steps to create a dialog task using ServiceNow action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 
 3. On the Dialog Task pop-up, under the **Integration**, select the **ServiceNow** option to view the action templates.  
 <img src="../images/servicenow-tem-img2.png" alt="Integration - Servicenow" title="Integration - Servicenow" style="border: 1px solid gray;zoom:50%;"/>
 
-If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/servicenow-tem-img3.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -117,7 +117,7 @@ The following ServiceNow actions are supported in this release:
 
 Steps to create a new incident in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Create a Incident_ dialog task is added with the following components:  
 <img src="../images/servicenow-tem-img4.png" alt="Create an Incident dialog task" title="Create an Incident dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -266,7 +266,7 @@ Steps to create a new incident in ServiceNow:
 
 Steps to update an existing incident in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Update an Incident_ dialog task is added with the following components:  
 <img src="../images/servicenow-tem-img10.png" alt="Update an Incident dialog task added" title="Update an Incident dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -284,7 +284,7 @@ Steps to update an existing incident in ServiceNow:
 5. Follow the prompts in the VA console to update an incident as shown below:  
 <img src="../images/servicenow-tem-img13.png" alt="VA prompts to update incident" title="VA prompts to update incident" style="border: 1px solid gray;zoom:50%;"/>
 
-6. Enter all incident update details when prompted by the VA. The existing incident is updated in ServiceNow as shown below:  
+6. Enter all incident update details when prompted by the AI Agent. The existing incident is updated in ServiceNow as shown below:  
 <img src="../images/servicenow-tem-img14.png" alt="Incident updated" title="Incident updated" style="border: 1px solid gray;zoom:50%;"/>
 
 7. Click the **View Incident** button to view the incident details in ServiceNow.
@@ -294,7 +294,7 @@ Steps to update an existing incident in ServiceNow:
 
 Steps to view all Incidents in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _List All Incidents_ dialog task is added for the ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img15.png" alt="List All Incidents dialog task added" title="List All Incidents dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -418,7 +418,7 @@ Steps to view all Incidents in ServiceNow:
 
 5. Click the **Train** tab to complete the Dialog task training.
 6. Click the **Talk to Bot** icon to test and debug the dialog task
-7. Follow the prompts in the VA console to view all incidents as shown below:  
+7. Follow the prompts in the App console to view all incidents as shown below:  
 <img src="../images/servicenow-tem-img17.png" alt="VA prompt to view all incidents" title="VA prompt to view all incidents" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -426,7 +426,7 @@ Steps to view all Incidents in ServiceNow:
 
 Steps to search an incident in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Find an Incident_ dialog task is added for ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img18.png" alt="Find an Incident dialog task added" title="Find an Incident dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -556,7 +556,7 @@ Steps to search an incident in ServiceNow:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view an incident as shown below:  
+5. Follow the prompts in the App console to view an incident as shown below:  
 <img src="../images/servicenow-tem-img20.png" alt="VA prompt to view an incident" title="VA prompt to view an incident" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -564,7 +564,7 @@ Steps to search an incident in ServiceNow:
 
 Steps to delete an incident in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Delete an Incident_ dialog task is added for ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img21.png" alt="Delete an Incident dialog task added" title="Delete an Incident dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -575,7 +575,7 @@ Steps to delete an incident in ServiceNow:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to delete an incident as shown below:  
+5. Follow the prompts in the App console to delete an incident as shown below:  
 <img src="../images/servicenow-tem-img22.png" alt="VA prompt to delete an incident" title="VA prompt to delete an incident" style="border: 1px solid gray;zoom:50%;"/>
 
 !!! note
@@ -587,7 +587,7 @@ Steps to delete an incident in ServiceNow:
 
 Steps to create a request in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Create Request_ dialog task is added for the ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img23.png" alt="Create Request dialog task added" title="Create Request dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -709,7 +709,7 @@ Steps to create a request in ServiceNow:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create a new request.  
+5. Follow the prompts in the App console to create a new request.  
 <img src="../images/servicenow-tem-img25.png" alt="VA prompt to create new request" title="VA prompt to create new request" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Click the **View Request** button to view the request details in ServiceNow.  
@@ -720,7 +720,7 @@ Steps to create a request in ServiceNow:
 
 Steps to update an existing request in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Update a Request_ dialog task is added with the following components:  
 <img src="../images/servicenow-tem-img27.png" alt="Update a Request dialog task added" title="Update a Request dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -732,14 +732,14 @@ Steps to update an existing request in ServiceNow:
 
     5.  **updateRequestMessage** – A message node with script to display responses for various scenarios. 
 
-3. Click the **Talk to Bot** icon ad follow the prompts in the VA console to learn how to update a request. For more information, see step # 3 in the [Create an Incident](#create-an-incident).
+3. Click the **Talk to Bot** icon ad follow the prompts in the App console to learn how to update a request. For more information, see step # 3 in the [Create an Incident](#create-an-incident).
 
 
 ### List All Requests
 
 Steps to view all requests in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _List All Requests_ dialog task is added for the ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img29.png" alt="List All Requests dialog task added" title="List All Requests dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -844,14 +844,14 @@ Steps to view all requests in ServiceNow:
 
     4. **listAllRequestsMessage** – A message node with script to display responses for various scenarios. 
 
-3. Follow the prompts in the VA console to view all requests. For more information, see step # 3 in the [Create an Incident](#create-an-incident) section.
+3. Follow the prompts in the App console to view all requests. For more information, see step # 3 in the [Create an Incident](#create-an-incident) section.
 
 
 ### Find a Request
 
 Steps to search a request in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Find a Request_ dialog task is added for ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img31.png" alt="Find a Request dialog task added" title="Find a Request dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -960,14 +960,14 @@ Steps to search a request in ServiceNow:
 
     6. **findRequestMessage** – A message node with script to display responses for various scenarios. 
 
-3. Click the **Talk to Bot** icon ad follow the prompts in the VA console to learn how to find a request. For more information, see step # 3 in the [Create an Incident](#create-an-incident) section.
+3. Click the **Talk to Bot** icon ad follow the prompts in the App console to learn how to find a request. For more information, see step # 3 in the [Create an Incident](#create-an-incident) section.
 
 
 ### Delete a Request
 
 Steps to delete a request in ServiceNow:
 
-1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
+1. Refer to the [Install the ServiceNow Action Templates](configuring-the-servicenow-action.md#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Delete a Request_ dialog task is added for ServiceNow with the following components:  
 <img src="../images/servicenow-tem-img33.png" alt="Delete a Request dialog task added" title="Delete a Request dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -978,7 +978,7 @@ Steps to delete a request in ServiceNow:
 
     4.  **deleteRequestMessage** – A message node with script to display responses for various scenarios.
 
-3. Click the **Talk to Bot** icon ad follow the prompts in the VA console to learn how to delete a request. For more information, see step # 3 in the [Create an Incident](#create-an-incident) section.
+3. Click the **Talk to Bot** icon ad follow the prompts in the App console to learn how to delete a request. For more information, see step # 3 in the [Create an Incident](#create-an-incident) section.
 
 !!! note
 

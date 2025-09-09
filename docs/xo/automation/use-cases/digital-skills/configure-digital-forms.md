@@ -1,12 +1,12 @@
 # Configure Digital Forms
 
-In this How-To, we will explore a scenario in a Banking Bot, where the user can create an additional account. We will see how Digital Forms can be used to gather all the required information from the user and create the account.
+In this How-To, we will explore a scenario in a Banking App, where the user can create an additional account. We will see how Digital Forms can be used to gather all the required information from the user and create the account.
 
-For details on what Digital Forms are and how it is implemented in the XO Platform, click [here](../../digital-skills/digital-forms/){:target="_blank"}.
+For details on what Digital Forms are and how it is implemented in the XO Platform, click [here](../digital-skills/digital-forms.md){:target="_blank"}.
 
 ## Illustration with an Example
 
-Consider a Banking Bot trying to address the following scenarios:
+Consider a Banking App trying to address the following scenarios:
 
 1. An already registered user wants to open an additional account.
 2. There are three types of accounts that are available, each with further options:
@@ -18,8 +18,8 @@ Consider a Banking Bot trying to address the following scenarios:
 
 ### Prerequisites
 
-* Bot building knowledge.
-* A configured Banking Bot.
+* App building knowledge.
+* A configured Banking App.
 
 ## Configurations
 
@@ -48,8 +48,8 @@ Create a form to gather the following information:
 
 ### Form Creation
 
-1. From the Kore.ai Bot Builder platform, open the Banking Bot.
-2. Navigate to **Automation AI > Virtual Assistant > Digital Skills > Digital Forms** to access the Digital Forms page.
+1. From the Builder platform, open the Banking App.
+2. Navigate to **Automation AI > Digital Skills > Digital Forms** to access the Digital Forms page.
 3. Click **New Form** and enter the following:
     * **Name** – name of the form that will be used by the engine, let's set as _OpenNewAccount_
     * **Display Name** for the form, let's set as _Open an Account_
@@ -60,7 +60,7 @@ Create a form to gather the following information:
         
         !!! Note
 
-            During the Export of the Bot, the logo is not exported along with Digital Forms. So, while importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+            During the Export of the App, the logo is not exported along with Digital Forms. So, while importing this App, you need to separately copy the logo image file and then manually reupload the logo.
         
 4. **Description**: Turn on the toggle to show a description of the form in the header.
 5. **Save & Proceed** to the next step.
@@ -158,7 +158,7 @@ Create a form to gather the following information:
 
     <img src="../../images/toggle-views.png" alt="toggle views" title="toggle views" style="border: 1px solid gray; zoom:75%;">
 
-25. You can select how the VA handles the conversation when the user cancels the form. You can choose from two options:
+25. You can select how the AI Agent handles the conversation when the user cancels the form. You can choose from two options:
     
     * **Discard the task and trigger End of Task Event**: This is the default option.
 
@@ -182,7 +182,7 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 
 ### Create Dialog Task
 
-1. Navigate to **Automation AI > Virtual Assistant > Dialog Tasks.**
+1. Navigate to **Automation AI > Use Cases > Dialogs.**
 2. Click the **Create Dialog** button to create a new Task.
 3. Select the **Start from Scratch** option.
 4. Provide below details:
@@ -190,7 +190,7 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
     * Click **Proceed** to open the dialog builder page.
 
 5. Retain the Root Intent Node's default settings.
-6. Click the **+** next to the Root intent node and select the form (_OpenNewAccount_) that we created earlier from the list. Note that the form name will contain numeric suffix in the form of 001, 002 and so on depending on the number of its instances already added to the VA. 
+6. Click the **+** next to the Root intent node and select the form (_OpenNewAccount_) that we created earlier from the list. Note that the form name will contain numeric suffix in the form of 001, 002 and so on depending on the number of its instances already added to the AI Agent. 
 
     <img src="../../images/select-created-form.png" alt="select created form" title="select created form" style="border: 1px solid gray; zoom:75%;">
 
@@ -229,4 +229,3 @@ Your dialog with form is ready! **Test** and trigger the above dialog. The form 
 
 You can use the context object as shown above it a **Script** or **Service** nodes for further processing.
 
-Click [here](../../../../how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables/){:target="_blank"} to learn how to add this data to a data table.

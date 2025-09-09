@@ -1,17 +1,18 @@
 FROM squidfunk/mkdocs-material:9.5.10
 
-# required for mkdocs-git-committers-plugin-2
-RUN apk add --no-cache --virtual .build-deps gcc libc-dev libxslt-dev && \
-    apk add --no-cache libxslt && \
-    pip install --no-cache-dir lxml>=3.5.0 && \
-    apk del .build-deps
+# Install build dependencies and runtime dependencies
+RUN apk add --no-cache --virtual .build-deps gcc libc-dev libxslt-dev musl-dev python3-dev && \
+    apk add --no-cache libxslt
 
-RUN pip install --no-cache-dir \
-  mkdocs-git-revision-date-localized-plugin \
-  # mkdocs-git-committers-plugin-2 \
-  # hotfix for authors because file move resets contributors list
-  git+https://github.com/tibitoth/mkdocs-git-committers-plugin-2.git@master \
-  mkdocs-glightbox
+# Install all Python packages (some may require compilation)
+RUN pip install --no-cache-dir lxml>=3.5.0 && \
+    pip install --no-cache-dir \
+      mkdocs-git-revision-date-localized-plugin \
+      git+https://github.com/tibitoth/mkdocs-git-committers-plugin-2.git@master \
+      mkdocs-glightbox
+
+# Now remove build dependencies
+RUN apk del .build-deps
 
 RUN git config --global --add safe.directory /github/workspace
 

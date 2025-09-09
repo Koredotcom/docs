@@ -42,7 +42,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable
+<li>App Builder: Not Applicable
 
 <li>Admin Console: Bot Definition > Bot Create
 </li>
@@ -73,7 +73,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> which can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> which can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>

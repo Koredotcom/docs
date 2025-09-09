@@ -1,6 +1,6 @@
 # Adding WebHook as a channel
 
-Webhook channel provides a generic integration framework to connect your virtual assistant with any external communication systems. Kore.ai XO Platform provides standard request and response APIs to send and receive messages in text format. The end user’s input through a voice, keypad, or any other means must be converted to plain text before sending to the Kore.ai XO Platform using the Request API.
+Webhook channel provides a generic integration framework to connect your AI Agent with any external communication systems. Kore.ai Platform provides standard request and response APIs to send and receive messages in text format. The end user’s input through a voice, keypad, or any other means must be converted to plain text before sending to the Kore.ai XO Platform using the Request API.
 
 The Webhook Channel will continue to be available under the ‘Available Channels’ list, and you can choose to create additional instances. Each Webhook channel instances is presented as an independent channel to define messages, prompts, filters, etc., across the application.
 
@@ -59,13 +59,13 @@ The platform supports Synchronous and Asynchronous modes of integrations for the
 
 
 
-* **Synchronous Mode**: The bot responses are directly delivered as a response to the incoming requests. The bot will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](../sdk/sdk-events.md#onvariableupdate).
+* **Synchronous Mode**: Thapp responses are directly delivered as a response to the incoming requests. The app will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](../sdk/sdk-events.md#onvariableupdate).
 
     !!! note
 
         Synchronous Webhook channel requests timeout after 15 seconds. We recommend using the Asynchronous Webhook Channel if you expect the requests to take beyond 15 seconds.
 
-* **Asynchronous Mode**: Asynchronous mode is useful if you want to deliver the bot responses to a URL other than the incoming request’s URL. You have to configure the POST_URL of your external system to enable the Async mode. The bot responses are asynchronously delivered to this POST_URL. Do note the that Kore.ai XO Platform does not provide the service to host the POST URL. You need to host a custom service or use a third-party service for this.
+* **Asynchronous Mode**: Asynchronous mode is useful if you want to deliver the app responses to a URL other than the incoming request’s URL. You have to configure the POST_URL of your external system to enable the Async mode. The app responses are asynchronously delivered to this POST_URL. Do note the that Kore.ai XO Platform does not provide the service to host the POST URL. You need to host a custom service or use a third-party service for this.
 
 
 ## Step 1: Associate an App
@@ -90,17 +90,19 @@ To associate an App, follow the below steps:
 7. (Only for Webhook v2.0) In the **Synchronous** mode, by default, the **Enable the Polling for Webhook v2** option is selected.
 <img src="../images/webhook.jpg" alt="webhook channel" title="webhook channel" style="border: 1px solid gray; zoom:70%;">
 
-
 8. Deselect the **Enable the Polling in Webhook V2** option to retrieve the complete response, all at once, without the need for polling.
 
     !!! note
 
         This option is available only in Webhook v2.0. [Learn more](#webhook-v20).
 
-9. Select **Yes** to **Enable Channel**.
+9. In the **ASynchronous** mode, enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.  
+<img src="../images/webhook_proactive_notification.png" alt="webhook channel" title="webhook channel" style="border: 1px solid gray; zoom:70%;">
 
-10. **Save** the configuration. The Webhook URL in this channel instance is created dynamically.  
-<img src="../images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">
+10. Select **Yes** to **Enable Channel**.
+
+11. **Save** the configuration. The Webhook URL in this channel instance is created dynamically.  
+<img src="../images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">  
 
 
 
@@ -119,7 +121,7 @@ After completing these steps, a success message appears on the screen, and a cha
 
 
 * The channel will be enabled for the end users only after the channel configurations are published. The publish request must be auto-approved or approved by the account admin.
-* Webhook channel instances are included in the bot export copy, and are imported when the definition is imported into another bot. The channel instances are imported as placeholders, and you need to associate them with a valid app from the target VA.
+* Webhook channel instances are included in the app export copy, and are imported when the definition is imported into another app. The channel instances are imported as placeholders, and you need to associate them with a valid app from the target AI Agent.
 
 
 ## Step 4: Review Payload Formats
@@ -129,7 +131,7 @@ To select the API Version for your integration, go to the Instructions tab of th
 
 ### Webhook Endpoints
 
-The structure of the Webhook URL of the first instance varies from any additional instances enabled for the bot.
+The structure of the Webhook URL of the first instance varies from any additional instances enabled for the app.
 
 
 
@@ -156,9 +158,9 @@ The structure of the Webhook URL of the first instance varies from any additiona
    </td>
   </tr>
   <tr>
-   <td>bot id
+   <td>app id
    </td>
-   <td>The ID of the bot to which you want to post messages. You can access it from the General Settings page of the bot.
+   <td>The ID of the app to which you want to post messages. You can access it from the App Settings page of the app.
    </td>
   </tr>
 </table>
@@ -185,25 +187,25 @@ Webhook version 1.0 supports simple request and response interfaces for enabling
   <tr>
    <td>Single Response
    </td>
-   <td>VA responses are sent as a response to the incoming request.
+   <td>AI Agent responses are sent as a response to the incoming request.
    </td>
-   <td>VA response is sent to the Post_URL configured as part of the channel configurations.
+   <td>AI Agent response is sent to the Post_URL configured as part of the channel configurations.
    </td>
   </tr>
   <tr>
    <td>Multiple consecutive response nodes
    </td>
-   <td>VA responses are sent as an array to the incoming request.
+   <td>AI Agent responses are sent as an array to the incoming request.
    </td>
-   <td>Each of the bot response is sent to the Post_URL configured as part of the channel configurations
+   <td>Each of the app response is sent to the Post_URL configured as part of the channel configurations
    </td>
   </tr>
   <tr>
-   <td>Multiple response nodes with service / script / webhook nodes in between
+   <td>Multiple response nodes with service / webhook nodes in between
    </td>
-   <td>The platform completes the service / script / webhook execution and sends the bot responses as an array to the incoming request.
+   <td>The platform completes the service / webhook execution and sends the app responses as an array to the incoming request.
    </td>
-   <td>Each of the bot response is sent to the Post_URL after processing the relevant service / script / webhook nodes.
+   <td>Each of the app response is sent to the Post_URL after processing the relevant service / webhook nodes.
    </td>
   </tr>
 </table>
@@ -284,7 +286,7 @@ The following are the parameters required/supported in the v1.0 of the Webhook c
   <tr>
    <td><code>message</code>
    </td>
-   <td>Includes the contents of the incoming request to the bot.
+   <td>Includes the contents of the incoming request to the app.
    </td>
    <td>Object
    </td>
@@ -296,7 +298,7 @@ The following are the parameters required/supported in the v1.0 of the Webhook c
   <tr>
    <td><code>text</code>
    </td>
-   <td>The message text to be sent to the bot.
+   <td>The message text to be sent to the app.
    </td>
    <td>String
    </td>
@@ -308,7 +310,7 @@ The following are the parameters required/supported in the v1.0 of the Webhook c
   <tr>
    <td><code>attachments</code>
    </td>
-   <td>The list of attachments to be passed to the bot.
+   <td>The list of attachments to be passed to the app.
    </td>
    <td>Array of Objects
    </td>
@@ -332,7 +334,7 @@ The following are the parameters required/supported in the v1.0 of the Webhook c
   <tr>
    <td><code>id</code>
    </td>
-   <td>The unique identity of the user interacting with the bot.
+   <td>The unique identity of the user interacting with the app.
    </td>
    <td>String
    </td>
@@ -518,14 +520,14 @@ The response contains the following fields:
 
 
 * _to_– refers to the user to whom the message is delivered to.
-* _from _– identity (Stream Id) of the bot from which the response is generated.
-* _text _– contains the response(s) from the bot. Can be a string, object or an array of strings or objects.
+* _from _– identity (Stream Id) of the app from which the response is generated.
+* _text _– contains the response(s) from the app. Can be a string, object or an array of strings or objects.
 * _endOfTask _– indicating whether the task was completed or not, values _true_ or _false_.
 * _endReason_– the reason for the task completion – _fulfilled_, _interrupted_, or _canceled_
 * _completedTaskId_– the id of the dialog task triggered.
 * _completedTaskName _– the name of the dialog task triggered.
 
-If the bot response is a template, then the JSON object required for rendering the template is included in the ‘text’ field as an object or array of objects.
+If the app response is a template, then the JSON object required for rendering the template is included in the ‘text’ field as an object or array of objects.
 
 
 ```
@@ -567,12 +569,12 @@ If the bot response is a template, then the JSON object required for rendering t
 ```
 
 
-For Asynchronous integration mode, the platform sends an acknowledgement response to the incoming request with Status Code as 200. The bot response to be delivered to the user is sent to the _Post_URL_ configured for the channel.
+For Asynchronous integration mode, the platform sends an acknowledgement response to the incoming request with Status Code as 200. The app response to be delivered to the user is sent to the _Post_URL_ configured for the channel.
 
 
 
 * The _text_ field can contain a string, object or an array of strings or objects.
-* Separate messages are sent for every bot response to be delivered to the user.
+* Separate messages are sent for every app response to be delivered to the user.
 * The conversation flow related fields like “_endOfTask_“, “_endReason_“, “_completedTaskId_” and “_completedTaskName_“: “show balance” are delivered as a separate message.
 
 
@@ -596,28 +598,28 @@ The Webhook V2 API provides a more standardized and modular payload format and a
   <tr>
    <td>Single Response
    </td>
-   <td>VA response is sent as a response to the incoming request.
+   <td>AI Agent response is sent as a response to the incoming request.
    </td>
-   <td>VA response is sent to the <em>Post_URL</em> configured as part of the channel configurations.
+   <td>AI Agent response is sent to the <em>Post_URL</em> configured as part of the channel configurations.
    </td>
   </tr>
   <tr>
    <td>Multiple consecutive response nodes
    </td>
-   <td>VA responses are sent as an array to the incoming request.
+   <td>AI Agent responses are sent as an array to the incoming request.
    </td>
-   <td>Each of the bot response is sent to the <em>Post_URL</em> configured as part of the channel configurations
+   <td>Each of the app response is sent to the <em>Post_URL</em> configured as part of the channel configurations
    </td>
   </tr>
   <tr>
-   <td>Multiple response nodes with service / script / webhook nodes in between
+   <td>Multiple response nodes with service / webhook nodes in between
    </td>
    <td>
 <ul>
 
 <li>The consecutive messages are delivered to the request along with a ‘pollid’.
 
-<li>The platform initiates the execution of service / script / webhook nodes.
+<li>The platform initiates the execution of service / webhook nodes.
 
 <li>The client should poll the platform using the ‘pollid’ at short intervals.
 
@@ -625,7 +627,7 @@ The Webhook V2 API provides a more standardized and modular payload format and a
 </li>
 </ul>
    </td>
-   <td>Each of the VA response is sent to the Post_URL after processing the relevant service / script / webhook nodes.
+   <td>Each of the AI Agent response is sent to the Post_URL after processing the relevant service / webhook nodes.
    </td>
   </tr>
 </table>
@@ -712,7 +714,7 @@ The following are the parameters required/supported in the v2.0 of the Webhook c
   <tr>
    <td><code>message</code>
    </td>
-   <td>Includes the contents of the incoming request to the bot.
+   <td>Includes the contents of the incoming request to the app.
    </td>
    <td>Object
    </td>
@@ -770,7 +772,7 @@ The following are the parameters required/supported in the v2.0 of the Webhook c
   <tr>
    <td><code>attachments</code>
    </td>
-   <td>The list of attachments to be passed to the VA.
+   <td>The list of attachments to be passed to the AI Agent.
 <p>
 <strong>Note</strong>: If attachment is used, set <strong>type </strong>as <em>text </em>and the <strong>val </strong>parameter cannot be blank and it has to contain some user utterance.
    </td>
@@ -798,7 +800,7 @@ The following are the parameters required/supported in the v2.0 of the Webhook c
   <tr>
    <td><code>id</code>
    </td>
-   <td>The unique identity of the user interacting with the VA.
+   <td>The unique identity of the user interacting with the AI Agent.
    </td>
    <td>String
    </td>
@@ -810,15 +812,15 @@ The following are the parameters required/supported in the v2.0 of the Webhook c
   <tr>
    <td><code>InteractiveLanguage</code>
    </td>
-   <td>The interaction language of the virtual assistant.
+   <td>The interaction language of the AI Agent.
    </td>
    <td>String
    </td>
    <td>Optional
    </td>
-   <td>Any language that is configured for the VA.
+   <td>Any language that is configured for the AI Agent.
 <p>
-For the list of Supported Bot Languages, read [Getting Started with Multilingual Virtual Assistant](../app-settings/language-management/building-multi-language-bots.md#supported-bot-languages)</a> article.
+For the list of Supported App Languages, read [Getting Started with Multilingual AI Agent](../app-settings/language-management/building-multi-language-bots.md#supported-bot-languages)</a> article.
    </td>
   </tr>
   <tr>
@@ -1064,8 +1066,8 @@ The response contains the following fields:
 
 
 * _to_ – refers to the user to whom the message is delivered to.
-* _from_ – identity (Stream Id) of the bot from which the response is generated.
-* _text_ – contains the response(s) from the bot. Can be a string, object or an array of strings or objects.
+* _from_ – identity (Stream Id) of the app from which the response is generated.
+* _text_ – contains the response(s) from the app. Can be a string, object or an array of strings or objects.
 * _endReason_ – the reason for the task completion – _fulfilled_, _interrupted_, or _canceled_
 * _completedTaskId_ – the _id _of the dialog task triggered.
 * _completedTaskName_ – the name of the dialog task triggered.
@@ -1078,7 +1080,7 @@ The response contains the following fields:
 
 ### Change Conversation Language Request
 
-To change the language of an ongoing conversation, you can pass the `interactiveLanguage` as a parameter with a value (language code) of one of the configured VA languages.
+To change the language of an ongoing conversation, you can pass the `interactiveLanguage` as a parameter with a value (language code) of one of the configured app languages.
 
 To change the conversation language from English (en) to French (fr), pass the value as “fr” in the `interactiveLanguage` parameter:
 
@@ -1108,7 +1110,7 @@ curl -X POST 'https://bots.kore.ai/chatbot/v2/webhook/st-a77a38cd-xxxx-xxxx-81c6
 ```
 
 
-For the list of Supported Bot Languages codes, read [Getting Started with Multilingual Virtual Assistant](../app-settings/language-management/building-multi-language-bots.md#supported-bot-languages) article.
+For the list of Supported App Languages codes, read [Getting Started with Multilingual AI Agent](../app-settings/language-management/building-multi-language-bots.md#supported-bot-languages) article.
 
 
 ### Close Conversation Session Event Request
@@ -1185,15 +1187,15 @@ Response:
 
 **Scenario 2**: Responses with need for polling
 
-If there are one or more Service / Script / Webhook nodes between messages, the platform delivers the messages along with a ‘pollid’ to the incoming request. The client should implement a polling framework to process the flow using the ‘pollid’ provided by the platform.
+If there is a Service node or a Webhook node between messages, either alone or in combination with Script nodes, the platform includes a ‘pollid’ in the response. The client should implement a polling framework to process the flow using the ‘pollid’ provided by the platform.
 
 
 
 * The platform delivers the first message or set of consecutive messages along with a ‘_pollid_’ to the incoming request.
 * The client should make a poll request to the platform using the ‘_pollid_’ provided by the platform in the response to the original request.
 * The response to the poll request can result in one of the following:
-    * The ‘_status_’ is returned as ‘_Inprogress_’ if the execution of service / script / webhook nodes is still in progress.
-    * The response will include the message payload if the execution of service / script / webhook is completed.
+    * The ‘_status_’ is returned as ‘_Inprogress_’ if the execution of service / webhook nodes is still in progress.
+    * The response will include the message payload if the execution of service / webhook is completed.
     * The response will give an error message if the message for a ‘_pollid_’ is already delivered to the client.
 
 **Sample request with messages and ‘pollid’**
@@ -1207,7 +1209,7 @@ curl -X GET 'https://bots.kore.ai/chatbot/v2/webhook/st-8e031d0a-xxxx-xxx-bf4c-b
 
 **Sample response with messages and ‘pollid’**
 
-The platform delivers the first message or set of consecutive messages along with a ‘pollid’ to the incoming request. The platform initiates the execution of Service / Script / Webhook nodes.
+The platform delivers the first message or set of consecutive messages along with a ‘pollid’ to the incoming request. The platform initiates the execution of Service / Webhook nodes.
 
 
 ```
@@ -1242,12 +1244,12 @@ Method: GET
 
 **Response to poll request when the execution is complete**
 
-If the processing of service / script / webhook is completed, then the platform responds to the poll request with the message payload.
+If the processing of service / webhook is completed, then the platform responds to the poll request with the message payload.
 
 
 
 * The response format will be the same the regular response.
-* If the flow execution includes execution of service / script / webhook nodes, then the response will include a new ‘pollid’ to be used for subsequent execution.
+* If the flow execution includes execution of service / webhook nodes, then the response will include a new ‘pollid’ to be used for subsequent execution.
 
 **Response to expired poll request**
 
@@ -1440,18 +1442,18 @@ The following response is an example for a successful asynchronous call:
 ```
 
 
-For Asynchronous integration mode, the platform sends an acknowledgement response to the incoming request with Status Code as 200. The bot response to be delivered to the user is sent to the Post_URL configured for the channel.
+For Asynchronous integration mode, the platform sends an acknowledgement response to the incoming request with Status Code as 200. The app response to be delivered to the user is sent to the Post_URL configured for the channel.
 
 
 
 * The ‘text’ field can contain a string, object or an array of strings or objects.
-* Separate messages are sent for every bot response to be delivered to the user.
+* Separate messages are sent for every app response to be delivered to the user.
 * The conversation flow related fields like “_endOfTask_“, “_endReason_“, “_completedTaskId_” and “_completedTaskName_“: “show balance” are delivered as a separate message.
 
 
 ## Support for Attachments
 
-The Webhook API can be used to send attachments from the end users to the bot. Files can be sent in multiple ways.
+The Webhook API can be used to send attachments from the end users to the app. Files can be sent in multiple ways.
 
 
 ### Option 1: Upload Files from Web URLs
@@ -1535,9 +1537,9 @@ For parameter descriptions, refer to the [request parameters](#request-parameter
 
 ### Option 2: Upload Files to Kore.ai XO Platform
 
-You can upload files directly to the Kore.ai XO Platform, capture the ‘file id’ provided by the platform, and share it with the bot during the conversation. This option is supported only when the Webhook v2.0 is used.
+You can upload files directly to the Kore.ai XO Platform, capture the ‘file id’ provided by the platform, and share it with the app during the conversation. This option is supported only when the Webhook v2.0 is used.
 
-Use the following API to upload your file to the platform. These APIs do not require any scopes and are accessible using any of the valid apps present in the bot/account.
+Use the following API to upload your file to the platform. These APIs do not require any scopes and are accessible using any of the valid apps present in the app/account.
 
 
 ```
@@ -1615,7 +1617,7 @@ Headers: {
 
 ## Handle Digital Forms
 
-If your bot has a form that needs user input, the synchronous WebHook channel gets the complete form definition in the response, and you need to send the _formData_ in the request when interacting with the bot.
+If your app has a form that needs user input, the synchronous WebHook channel gets the complete form definition in the response, and you need to send the _formData_ in the request when interacting with the app.
 
 #### Sample Request
 You can get the Webhook API URL on the WebHook channel **Configurations** tab. Learn more.

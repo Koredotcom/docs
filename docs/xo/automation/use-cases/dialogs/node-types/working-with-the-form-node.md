@@ -1,6 +1,6 @@
 # Form Node
 
-The Form node lets you integrate [Digital Forms](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms){:target="_blank"} with Dialog Tasks. This facilitates the presentation of forms to capture user inputs for specific use cases.
+The Form node lets you integrate [Digital Forms](../../digital-skills/digital-forms.md){:target="_blank"} with Dialog Tasks. This facilitates the presentation of forms to capture user inputs for specific use cases.
 
 The primary purpose of the Form node is to represent a UI Form in the dialog task and make the form available for end-users on their channel. For example, let us consider a travel assistant that has a form to capture the customer details to make a new booking. During this process, you may want to use the form instead of prompting for each and every entity value.
 
@@ -11,7 +11,7 @@ Before you can begin setting up a Form node, you need to have previously created
 To add a form node to the dialog task, follow the below steps:
 
 1. **Open the dialog task** to which you want to add the Form node.
-2. **Add the Form node** in the designated place. To learn how to add nodes, please [click here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}. You will be shown a list of existing Digital Forms from which you can choose the one to add to this node.  
+2. **Add the Form node** in the designated place. To learn how to add nodes, please [click here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}. You will be shown a list of existing Digital Forms from which you can choose the one to add to this node.  
     
     <img src="../images/form-node-gif1.gif" alt="Add Form node" title="Add Form node" style="border:1px solid gray;zoom:70%;">
 
@@ -19,7 +19,7 @@ To add a form node to the dialog task, follow the below steps:
 
         You can add a form node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new form node.
 
-3. **Choose the Form Experience**: If you are offering your Virtual Assistant on multiple channels, you can choose whether to enable the Digital Form Experience as the default experience on all these channels, or use a combination of Digital Form Experience and Conversation Experience.
+3. **Choose the Form Experience**: If you are offering your AI Agent on multiple channels, you can choose whether to enable the Digital Form Experience as the default experience on all these channels, or use a combination of Digital Form Experience and Conversation Experience.
     1. **Only UI Form**: Users will be presented the Digital Form Experience on all the channels that are enabled for the assistant that you are working with. This will create a Form Node and automatically open the Component Properties panel, where you can continue configuring the node.
     2. **Both Digital Form and Conversational Experience**: You can choose the channels on which the Digital Form Experience should be enabled and all other channels will use the Conversational Experience.
         
@@ -46,8 +46,8 @@ This configuration applies to the Form Node Type – regardless of whether it is
 The Form Component Properties allow you to configure a variety of settings and prompts related to your Form Node, as follows:
 
 1. On the **Component Properties** tab, enter a **Name** and **Display Name** for the form node. Node names cannot contain spaces, but the Display Name can.
-2. In the **User Prompts** text box, enter the prompt message that you want the user to see for this form. It should instruct the user to click on the link to initiate the form. It is not recommended to change the context variable reference (of the form {{context.form_node.formLink}})coded therein. You can enter channel-specific messages for user prompts. For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
-3. In the **Error Prompts** text box, review the default error message, and if required modify it. For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
+2. In the **User Prompts** text box, enter the prompt message that you want the user to see for this form. It should instruct the user to click on the link to initiate the form. It is not recommended to change the context variable reference (of the form {{context.form_node.formLink}})coded therein. You can enter channel-specific messages for user prompts. For more information, refer to [Using the Prompt Editor](../prompt-editor.md){:target="_blank"}.
+3. In the **Error Prompts** text box, review the default error message, and if required modify it. For more information, refer to [Using the Prompt Editor](../prompt-editor.md){:target="_blank"}.
 4. In the **Submit Prompts** text box, review the default message that is displayed after successful submission of the form, and if required, modify it. This message is applicable only when the UI Form is opened in a browser tab.  
 Steps to personalize form submission prompt for **Mobile/Web SDK**:
     1. In the **Submit Prompts** section, click **+ Add**.  
@@ -58,13 +58,13 @@ Steps to personalize form submission prompt for **Mobile/Web SDK**:
 
          <img src="../images/form-node-img7-change-message.png" alt="Change message" title="Change message" style="border:1px solid gray;zoom:70%;">
 
-    For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
+    For more information, refer to [Using the Prompt Editor](../prompt-editor.md){:target="_blank"}.
 
 5. Under the **Web/Mobile SDK Form Behavior** section, you can set how the form is displayed. You can select:
     1. Open full page popup form – This is the default setting where the form opens as a full page on the SDK chat interface.
     2. Open inline form – The form opens as an inline form within the chat window.
 
-6. Under **Submit Prompts for Web/Mobile SDK** section, you can choose the submit prompt to show for Web/Mobile SDK and select how the VA handles the conversation when the user cancels the form.
+6. Under **Submit Prompts for Web/Mobile SDK** section, you can choose the submit prompt to show for Web/Mobile SDK and select how the AI Agent handles the conversation when the user cancels the form.
 Select the prompt to show on successful form submission. The options are:  
         a. Use Submit Prompts –  The custom message added in the prompt is shown.  
         b. Use default system response –  The following confirmation is shown – {{FormName}} Form is successfully submitted.
@@ -86,7 +86,7 @@ Use the Instance Properties to define any user tags that you want to set.
 To configure this tab, please follow these steps:
 
 1. On the Form window, click the **Instance Properties** tab.
-2. In the **Form Cancellation Behavior** section, select how the VA handles the conversation when the user cancels the form:  
+2. In the **Form Cancellation Behavior** section, select how the AI Agent handles the conversation when the user cancels the form:  
 
     a. Discard the task and trigger End of Task Event – This is the default option.  
             
@@ -112,7 +112,7 @@ From the node’s **Connections** tab, you can determine the node in the dialog 
 
     These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
 
-For details on how to work with connection conditions, please see [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}
+For details on how to work with connection conditions, please see [Adding IF-Else Conditions to Node Connections. ](../node-connections/nodes-conditions.md){:target="_blank"}
 
 The Connection Path property offers three default variants:
 

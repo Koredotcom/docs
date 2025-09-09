@@ -1,6 +1,6 @@
 # Manage Interruptions
 
-Human conversations are characterized by twists and turns, and no two directions are ever the same. Natural conversations often tend to go beyond linear intent resolution paths defined in virtual assistants. Ideally, a user allows the VA to take an intent to its logical conclusion before initiating another, but that is not always the case.
+Human conversations are characterized by twists and turns, and no two directions are ever the same. Natural conversations often tend to go beyond linear intent resolution paths defined in AI Agents. Ideally, a user allows the AI Agent to take an intent to its logical conclusion before initiating another, but that is not always the case.
 
 Consider the following conversation for example:
 
@@ -8,9 +8,9 @@ Consider the following conversation for example:
 
 It includes an entity value for the assistant to proceed with the current intent, while also presenting a new user requirement or intent.
 
-VAs must account for this by allowing users to pause a task, start and complete another task, and seamlessly return to the original task without losing important contextual data and conversation continuity.
+AI Agents must account for this by allowing users to pause a task, start and complete another task, and seamlessly return to the original task without losing important contextual data and conversation continuity.
 
-Kore.ai provides granular control over the hold and resume functionality at the VA, task, and node levels, and allows you to [control context switching](/docs/xo/automation/intelligence/context-management){target="_blank"} rules and behaviors with the **Manage Interruptions** feature. You can handle such interruptions in intent flows by providing a whole range of options to select if and how a user can switch to another task, the exit strategies, and the task-switching experience.
+Kore.ai provides granular control over the hold and resume functionality at the AI Agent, task, and node levels, and allows you to [control context switching](../context-management.md){target="_blank"} rules and behaviors with the **Manage Interruptions** feature. You can handle such interruptions in intent flows by providing a whole range of options to select if and how a user can switch to another task, the exit strategies, and the task-switching experience.
 
 Managing Interruptions ensures the configurations for interruptions are layered to suit your various business requirements. This includes allowing, disallowing, and letting the user manage interruptions. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
 
@@ -18,16 +18,16 @@ Interruptions can be managed for FAQs, Small Talk, and Ambiguous intents on the 
 
 The following sections describe:
 
-* The configuration hierarchy at the VA, task, and node levels.
+* The configuration hierarchy at the AI Agent, task, and node levels.
 * The various configurations you can use to Manage Interruptions.
 
 ### Interruptions Hierarchy
 
-Apart from defining the generic interruptions options at the VA level, you can customize these options at the dialog task or dialog node level. When you set up the Hold and Resume options in more than one levels, the order of precedence of the settings works as follows:
+Apart from defining the generic interruptions options at the app level, you can customize these options at the dialog task or dialog node level. When you set up the Hold and Resume options in more than one levels, the order of precedence of the settings works as follows:
 
 1. Node level settings
 2. Dialog task level settings
-3. VA level settings
+3. App level settings
 
 #### Node Level Settings
 
@@ -37,13 +37,13 @@ To customize the interruptions settings for a node:
 
 1. Open the dialog task and then the node to change settings.
 2. Click the **instance tab** and select **Advanced Controls**.
-3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the VA level [interruptions](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/){target="_blank"}.
+3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the app level [interruptions](#manage-interruptions){target="_blank"}.
 
    <img src="../images/node-level-customization.gif" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:65%;">
 
 #### Dialog Level Settings
 
-The dialog level Interruptions customizations have higher priority over VA level settings but rank lower than the node level customizations or any exceptions.
+The dialog level Interruptions customizations have higher priority over app level settings but rank lower than the node level customizations or any exceptions.
 
 To customize the Interruptions settings for a dialog:
 
@@ -51,20 +51,20 @@ To customize the Interruptions settings for a dialog:
 2. On the top-right of the dialog builder, click the **more options icon** and then click **Manage Interruptions**.
 <img src="../images/dialog-level-manage-interruptions.png" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:75%;">
 
-3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the Bot Level [interruptions](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#allow-interruptions){target="_blank"}.
+3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the App Level [interruptions](#allow-interruptions){target="_blank"}.
 
 <img src="../images/dialog-level-manage-interruptions.png" alt="dialog level manage interruptions" title="dialog level manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you do not customize Interruptions settings at the node or task level, the VA level settings apply.</p>
+<p>If you do not customize Interruptions settings at the node or task level, the app level settings apply.</p>
 </div>
 
-#### Bot Level Settings
+####  App Level Settings
 
-The VA Level interruptions settings can be overridden at the task level as discussed above.
+The AI Agent Level interruptions settings can be overridden at the task level as discussed above.
 
-You can access the interruption settings for your VA from under **Conversation Intelligence** > **Conversation Management** > **Manage Interruptions** page.
+You can access the interruption settings for your AI Agent from under **Conversation Intelligence** > **Conversation Management** > **Manage Interruptions** page.
 <img src="../images/bot-level-settings-manageinterruptions-window-1.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 The Platform provides options for _Interruptions Behavior_ under the following three categories:
@@ -80,7 +80,7 @@ The Platform provides options for _Interruptions Behavior_ under the following t
 
 ##### Allow Interruptions
 
-Once you allow for task interruption, you need to specify the VA’s  behavior in such scenarios as what should happen to the current task, where should the conversation go once the interruption task has been completed, etc.
+Once you allow for task interruption, you need to specify the AI Agent’s  behavior in such scenarios as what should happen to the current task, where should the conversation go once the interruption task has been completed, etc.
 
 Following are the options under **Allow interruptions**.
 
@@ -100,30 +100,30 @@ Following are the options under **Allow interruptions**.
  <tr bgcolor="#FAFAFA">
    <td><strong>Discard the current task and switch to new</strong>
    </td>
-   <td>When you select this option, the VA discards the current task and switches to a new task soon after it encounters another intent. The VA sends a message to notify the user before switching to the new task and the current task would be discarded. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the avalable responses, click <b>+ Add Response</b> to add a custom response text.</td>
+   <td>When you select this option, the AI Agent discards the current task and switches to a new task soon after it encounters another intent. The AI Agent sends a message to notify the user before switching to the new task and the current task would be discarded. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the avalable responses, click <b>+ Add Response</b> to add a custom response text.</td>
   </tr>
   <tr>
    <td><strong>Switch to a new task without any notification to the user and discard the current task</strong>
    </td>
-   <td>When you select this option, the VA discards the current task and switches to a new task soon after it encounters another intent. The VA does not notify the user about the switch and does not resume the current task later.
+   <td>When you select this option, the AI Agent discards the current task and switches to a new task soon after it encounters another intent. The AI Agent does not notify the user about the switch and does not resume the current task later.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td><strong>Continue the current task and add new task to the follow-up task list.</strong>
    </td>
-   <td>When you select this option, the VA continues on the current task even if it encounters a new intent. It, however, adds the new intent to the Follow-up intents array. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sub-intents-and-follow-up-intents/#follow-up-intents" target="_blank">Follow-up Intents</a> documentation for more information. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the avalable responses, click <b>+ Add Response</b> to add a custom response text.</td>
+   <td>When you select this option, the AI Agent continues on the current task even if it encounters a new intent. It, however, adds the new intent to the Follow-up intents array. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sub-intents-and-follow-up-intents/#follow-up-intents" target="_blank">Follow-up Intents</a> documentation for more information. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the avalable responses, click <b>+ Add Response</b> to add a custom response text.</td>
   </tr>
 </table>
 
 ##### Do not allow interruptions
 
-When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the [Interruptions Hierarchy](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#interruptions-hierarchy){target="_blank"} section above for more information.
+When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the [Interruptions Hierarchy](#interruptions-hierarchy){target="_blank"} section above for more information.
 
 ##### Allow the end user to select the behavior
 
-When you select this option, the VA presents the end-user with a confirmation message asking if the user wants to switch to a new task. The VA switches to the new task only if the end-user chooses to do so. You can customize the confirmation message sent to the user by clicking the **Manage Response** link next to the option.
+When you select this option, the AI Agent presents the end-user with a confirmation message asking if the user wants to switch to a new task. The AI Agent switches to the new task only if the end-user chooses to do so. You can customize the confirmation message sent to the user by clicking the **Manage Response** link next to the option.
 
-You need to define a *Resume* option that the VA should take if the user decides to switch the task. Refer to the [Resume Options](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#resume-options){target="_blank"} section below for details.
+You need to define a *Resume* option that the AI Agent should take if the user decides to switch the task. Refer to the [Resume Options](#resume-options){target="_blank"} section below for details.
 
 ##### Resume Options
 
@@ -139,26 +139,26 @@ Once you allow the task to be put on hold and proceed with the interruption task
   <tr>
    <td><strong>Get confirmation with the user before resuming an on-hold task</strong>
    </td>
-   <td>After executing the new task, the VA gives Yes or No options to the user to return to the last on-hold task. You can write a custom message for the user by clicking the <strong>Manage Response</strong> link next to the option.
+   <td>After executing the new task, the AI Agent gives Yes or No options to the user to return to the last on-hold task. You can write a custom message for the user by clicking the <strong>Manage Response</strong> link next to the option.
 <p>
 <strong>Example:</strong>
 <p>
 <code>User: Hi 
-VA: Hello! 
+AI Agent: Hello! 
 User: Can you book me a flight for tomorrow? 
-VA: From which city are you flying? 
+AI Agent: From which city are you flying? 
 User: Los Angeles 
-VA: Where to? 
+AI Agent: Where to? 
 User: By the way, what's the weather forecast for tomorrow? 
-VA: Please enter the name of the city for the forecast. 
+AI Agent: Please enter the name of the city for the forecast. 
 User: Los Angeles 
-VA: Weather Forecast for Los Angeles 
+AI Agent: Weather Forecast for Los Angeles 
 Date: March 15 
 Temperature: 25 C 
 Condition: Mostly Sunny 
-VA: Should I continue with the task 'Book Flight'? 
+AI Agent: Should I continue with the task 'Book Flight'? 
 User: Yes 
-VA: Enter the name of the destination airport</code>
+AI Agent: Enter the name of the destination airport</code>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -171,20 +171,20 @@ You can customize the notification message by clicking the <strong>Manage Respon
 <strong>Example:</strong>
 <p>
 <code>User: Hi 
-VA: Hello! 
+AI Agent: Hello! 
 User: Can you book me a flight for tomorrow? 
-VA: From which city are you flying? 
+AI Agent: From which city are you flying? 
 User: Los Angeles 
-VA: Where to? 
+AI Agent: Where to? 
 User: By the way, what's the weather forecast for tomorrow? 
-VA: Please enter the name of the city for the forecast. 
+AI Agent: Please enter the name of the city for the forecast. 
 User: Los Angeles 
-VA: Weather Forecast for Los Angeles 
+AI Agent: Weather Forecast for Los Angeles 
 Date: March 15 
 Temperature: 25 C 
 Condition: Mostly Sunny 
-VA: Resuming interrupted task Book Flight 
-VA: Enter the name the of the destination airport</code>
+AI Agent: Resuming interrupted task Book Flight 
+AI Agent: Enter the name the of the destination airport</code>
    </td>
   </tr>
   <tr>
@@ -195,25 +195,25 @@ VA: Enter the name the of the destination airport</code>
 <strong>Example:</strong>
 <p>
 <code>User: Hi 
-VA: Hello! 
+AI Agent: Hello! 
 User: Can you book me a flight for tomorrow? 
-VA: From which city are you flying? 
+AI Agent: From which city are you flying? 
 User: Los Angeles 
-VA: Where to? 
+AI Agent: Where to? 
 User: By the way, what's the weather forecast for tomorrow? 
-VA: Please enter the name of the city for the forecast. 
+AI Agent: Please enter the name of the city for the forecast. 
 User: Los Angeles 
-VA: Weather Forecast for Los Angeles 
+AI Agent: Weather Forecast for Los Angeles 
 Date: March 15 
 Temperature: 25 C 
 Condition: Mostly Sunny 
-VA: Enter the name of the destination airport</code>
+AI Agent: Enter the name of the destination airport</code>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td><strong>Always resume the on hold task without any specific message to the user if the task is ended in a single response</strong>
    </td>
-   <td>Sometimes, the switched-over tasks end with a single response. For example, in the weather forecast example above, if the user had directly entered <em>By the way, what’s the weather forecast for LA tomorrow?</em> the VA would have merely responded with the forecast, with no further steps.
+   <td>Sometimes, the switched-over tasks end with a single response. For example, in the weather forecast example above, if the user had directly entered <em>By the way, what’s the weather forecast for LA tomorrow?</em> the AI Agent would have merely responded with the forecast, with no further steps.
 <p>
 In such cases, if you select this option, the assistant switches back to the task on hold without any confirmation or notification, regardless of the option you’ve chosen.
 
@@ -228,7 +228,7 @@ In such cases, if you select this option, the assistant switches back to the tas
 
 You can select the number of tasks that you want to keep on hold from the **On Hold Quantity** field. The default value is <b>1</b>. The assistant keeps a maximum of this number of tasks on hold and ignores the tasks once this value is reached.
 
-For example, if you specify the On Hold Quantity as 1 and if a third intent comes into play, the VA will not allow the new task to be initiated regardless of interruptions options.
+For example, if you specify the On Hold Quantity as 1 and if a third intent comes into play, the AI Agent will not allow the new task to be initiated regardless of interruptions options.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -244,8 +244,8 @@ You can choose whether FAQs should honor the interruptions settings or if FAQs s
 
 The flag **Interruption Behavior for FAQs** will allow you to:
 
-* <b>Respond to FAQs and resume the on-hold task</b>: This is the default setting where first, the VA responds to the FAQs and then, resumes executing the task on hold.
-* <b>Execute the FAQs using Hold & Resume Settings</b>: The VA always identifies FAQs when interruptions are enabled and proceeds as per the Hold and Resume settings you've configured.
+* <b>Respond to FAQs and resume the on-hold task</b>: This is the default setting where first, the AI Agent responds to the FAQs and then, resumes executing the task on hold.
+* <b>Execute the FAQs using Hold & Resume Settings</b>: The AI Agent always identifies FAQs when interruptions are enabled and proceeds as per the Hold and Resume settings you've configured.
 
 ##### Manage Behavior for Ambiguous Intents
 
@@ -259,7 +259,7 @@ These settings allow you to do the following:
     * _Continue the current task and add a new task to the follow-up task list_, then the current task will be kept on hold and the new task will be initiated.
     * _Allow the end-user to select the behavior_, then the new task will be initiated without asking the user since the selection has been already made.
     * All other _hold_ options will be applied as usual.
-* <b>Do not present ambiguous intents to the end users and continue on the current task</b>: This is the default setting where the VA continues with the current task without presenting the ambiguous intents to the user.
+* <b>Do not present ambiguous intents to the end users and continue on the current task</b>: This is the default setting where the AI Agent continues with the current task without presenting the ambiguous intents to the user.
 
 ##### Manage Behavior for Small Talk
 
@@ -269,7 +269,7 @@ You can handle Small Talk during a conversation flow by setting the flag **Inter
 
 These settings allow you to:
 
-* <b>Respond to Small Talk and resume the on-hold task</b>: This is the default setting where the VA responds to the Small Talk message by putting the current task on hold. Then, the VA resumes the on-hold task.
+* <b>Respond to Small Talk and resume the on-hold task</b>: This is the default setting where the AI Agent responds to the Small Talk message by putting the current task on hold. Then, the AI Agent resumes the on-hold task.
 * <b>Execute the Small Talk using Hold & Resume settings</b>: Executes the Small Talk task based on your configurations for <b>Hold & Resume</b>.
 
 ##### Manage Behavior for User Authorization

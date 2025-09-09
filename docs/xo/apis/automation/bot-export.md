@@ -3,7 +3,7 @@
 To export the bot definition and all the associated components.
 
 !!!note
-    This API only initiates the export process. Please use the [Export Status API](../bot-export-status) to view the export progress status and obtain a link to download the file once the export completes.
+    This API only initiates the export process. Please use the [Export Status API](bot-export-status.md) to view the export progress status and obtain a link to download the file once the export completes.
 
 <table>
   <tr>
@@ -38,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Bot Export
+<li>App Builder: Bot Export
 
 <li>Admin Console: Bot Definition > Bot Export
 </li>
@@ -72,7 +72,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td>BotID
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -121,7 +121,8 @@ curl --location 'https://{host}/api/public/bot/{BotID}/export' \
     "subTasks": {
         "alerts": [],
         "actions": [],
-        "dialogs": []
+        "dialogs": [],
+        "experienceFlows": []
     },
     "allTasks": true,
     "customDashboards": true,
@@ -262,10 +263,6 @@ Usage:
    </td>
   </tr>
 </table>
-
-
-To learn more about the optional parameters for partial import and dependent tasks, please click [here](../../../manage-assistant/bot-management/#exporting-an-assistant).
-
 
 ## Sample Response
 

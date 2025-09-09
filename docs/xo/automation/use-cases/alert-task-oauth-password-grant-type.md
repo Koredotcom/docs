@@ -8,7 +8,7 @@ OAuth v2 is the new version of the open protocol to allow secure authorization i
 
 To begin your configuration, follow the steps below:
 
-1. Select the VA you want to work with.
+1. Select the App you want to work with.
 2. Go to **Build** > **Conversation Skills** > **Alert Tasks**. 
 3. Select the task you want to work with. 
 4. Click the **API Request** tab within the Alert Task.
@@ -102,10 +102,10 @@ By default, authorization fields are configured as part of the header of the tas
 <img src="../images/auth-fields-oauth.png" alt="auth fields oauth" title="auth fields oauth" style="border: 1px solid gray; zoom:75%;">
 
 1. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required.
-    * **Header** – The VA expects the authorization fields as part of the header of the request.
-    * **Payload** – The VA expects the authorization fields as part of the content of the body of the request.
-    * **Query String** – The VA expects the authorization fields as a query in the body of the request.
-    * **Path Param** – The VA expects the authorization fields as part of the URL path for the request.
+    * **Header** – The AI Agent expects the authorization fields as part of the header of the request.
+    * **Payload** – The AI Agent expects the authorization fields as part of the content of the body of the request.
+    * **Query String** – The AI Agent expects the authorization fields as a query in the body of the request.
+    * **Path Param** – The AI Agent expects the authorization fields as part of the URL path for the request.
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.
 4. Click **Done**. The new authorization field is added in the **Authorization Fields** section.

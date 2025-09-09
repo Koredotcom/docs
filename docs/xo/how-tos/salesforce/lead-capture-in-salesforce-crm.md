@@ -91,7 +91,7 @@ Create your own custom authorization profile to obtain an access token and use i
 
 
 4. Click **Finish**.
-5. Once the template is installed, a dialog task for it is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
+5. Once the template is installed, a dialog task for it is auto-created. You can find it in the list of dialogs in **Automation AI** > **Use Cases** > **Dialogs**.  
 <img src="../images/dialogs.png" alt="dialogs" title="dialogs" style="border: 1px solid gray; zoom:70%;"> 
 
 ### Step 3: Train the Chatbot for the Dialog Task and Test It

@@ -1,13 +1,22 @@
 # Connectors
 
-Using the connectors, you can ingest content into the application from diverse sources, including third-party repositories like ServiceNow, Microsoft SharePoint, Atlassian’s Confluence, IBM Domino, etc., and provide your users with a seamless search experience.
+Connectors enable seamless content ingestion from a wide range of external sources, including third-party repositories like ServiceNow, Microsoft SharePoint, Atlassian’s Confluence, IBM Domino, etc,  allowing users to search across diverse data repositories from a unified interface.
 
-Search AI provides in-built connectors to enable crawling specific third-party content management applications, CRM systems, web database applications,  or cloud-based applications. The application can be configured to connect to multiple systems simultaneously using a connector for each third-party application.
+Search AI provides in-built connectors to enable crawling specific third-party content management applications. Each connector is purpose-built to integrate with a specific platform, ensuring optimized data extraction and synchronization. The system supports configuring multiple connectors 
+simultaneously, allowing the application to ingest and index data from several third-party sources in parallel.
 
+By leveraging these connectors, organizations can deliver a unified and intelligent search experience.
 
 ## Understanding Connectors 
 
-Connectors enable the application to establish a connection with the third-party application. After the connection is established and authentication is complete, the data from the third-party application is ingested, indexed, and ready to answer in response to search queries. The access privileges of the content are maintained as per the privileges assigned to the user in the third-party repository. This implies that only the files accessible to the user can appear in the answers. During each synchronization cycle of the connector, Search AI only retrieves newly added or modified data from the application, determined by the timestamp of changes. If data has previously been indexed and remains unchanged, it is not retrieved again. 
+**Connectors** enable the application to integrate with third-party platforms by establishing a secure connection and facilitating seamless data ingestion through the APIs exposed by these applications. 
+
+Once a connector is configured and authentication is completed:
+
+* Data from the third-party application is ingested, indexed, and made available for search within Search AI.
+* The **access privileges **of the content are maintained as per the privileges assigned to the user in the third-party repository. This ensures that only the files accessible to the user in the third-party application are visible to the user via Search AI as well. 
+
+During each synchronization cycle, the connector performs **incremental updates**, retrieving only newly added or modified data based on change timestamps. Any content that has already been indexed and remains unchanged is skipped, ensuring efficient and optimized syncing.
 
 Refer to the [Connector Directory](connectors/connector-directory.md) for the complete list of applications supported via connectors. For any specific integration requirements, please [contact us](https://kore.ai/contact-us/). 
 
@@ -54,65 +63,143 @@ The Connectors are available under the Content Section. There are two tabs that 
 
 ### Adding a content source using Connector
 
-To set up a new connector, choose it from the list of supported connectors and enter the configuration details. For comprehensive instructions on setting up connectors, refer to the [specific connector documentation](connectors/connector-directory.md).
+To set up a new connector, select the application connector from All connectors and provide the configuration details. Choose it from the list of supported connectors and enter the configuration details.  For comprehensive instructions on setting up connectors, refer to the [specific connector documentation](connectors/connector-directory.md).
 
+**Setup Steps**
+
+**Step 1: Authentication**: Provide the necessary authentication details (OAuth credentials, API keys, tokens, etc) to establish a connection with the external application. 
+
+**Step 2: Manage Content**: Choose the type of content to be ingested. Apply filters as needed and optionally customize field mappings to align source fields with the Search AI schema.
+
+**Step 3: Permissions**: Select the permission level for the users to access content. 
+
+**Step 4: Content**: Once synchronization is complete, view the ingested content in the application.
+
+Initiate the first sync with the application. You can also configure a scheduler to enable automatic periodic synchronization.
+
+**Step 5: Schedule Sync:** View the Sync log and optionally enable automatic periodic synchronization. 
+
+
+### Authentication
+
+The authentication varies depending on the third-party application with which the connection will be established. Refer to the specific connector for detailed instructions on authentication. 
+
+
+## Managing Content
+
+When configuring a connector, you can define the type of content to be ingested from the source application. By default, Search AI ingests all supported content types from the source. Most connectors support multiple content types, such as pages, articles, tasks, tickets, or documents, depending on the capabilities of the source system.
+
+Refer to the specific connector documentation for a detailed list of supported content types (objects) for each integration.
+
+### Selecting Content Type
+
+Under the **Ingestion** section,
+
+* Choose the content types you want to ingest. 
+* For some connectors, you can apply **filters** to enable **selective ingestion**, e.g., ingesting only content created within a specific timeframe, belonging to a particular category, or assigned to specific users.
+
+Note: Filters are available only if supported by the specific connector.
+
+### Field Mapping
+
+Field Mapping allows you to align fields from the source application with **Search AI’s standard schema**. This ensures that ingested data is accurately transferred, normalized, and indexed for optimal search and retrieval.
+
+Use the Field Mapping section to map fields from the source (connector) to the corresponding Search AI fields. This ensures that content is accurately transferred, transformed, and indexed for optimal search and analysis.
+
+**Source Payload:** Displays the raw response received from the source application and helps you identify available fields that can be mapped to Search AI fields.
+
+**Mandatory Fields:** Lists the required fields that must be mapped for successful ingestion.
+
+**Post-Processor Scripts**: You can further customize field mappings by writing post-processor scripts, which enable you to manipulate or transform fields dynamically during ingestion.
+
+**Example**
+
+If the source application stores the document creator as authorDetails.fullName, you can map it to Search AI's standard doc_created_by_name field using the following script:
+
+
+```
+context.doc_created_by_name = context?.raw_json?.authorDetails?.fullName;
+```
+
+**Manage Schema**: Access the Manage Schema option to view the schema fields of the application and customize their descriptions. This helps users understand how and when to use this field.
+
+![Manage Schema](images/manage-schema.png "Manage Schema")
+
+**New Field**: Define new custom fields to be ingested from the connector. You can add upto 50 custom fields. 
+
+Use the **Test Script** option to validate your transformation and verify the output after execution. Only after a successful test, the field mappings are updated. 
+
+![Test Script](images/manage-content.png "Test Script")
 
 ### Enabling RACL 
 
-To enable RACL in supported connectors, go to the **Permissions and Security** tab and select Permission Aware.
+To enable or disable RACL in the supported connectors, go to the **Permissions** page and select one of the following.
 
-* **Permission Aware**: Automatically syncs the permission information for the ingested content from the third-party application.
-* **Public Access**: Irrespective of the permissions in the third-party application, the ingested content is accessible to all SearchAI users. 
+* **Same users as in the source system (Restricted Access):** Automatically applies the same permissions from the source system, ensuring secure and seamless access to ingested content. If a scheduler is configured, permissions are updated at defined intervals to reflect changes in the source system.
 
-You can verify the permissions imported in the ingested content in the <code>sys_racl</code></strong> field in the JSON view of the corresponding content.
+* **Everyone(Public Access)**: Irrespective of the permissions in the third-party application, the ingested content is accessible to all SearchAI users. 
 
-For more information on RACL implementation in Search AI, refer to [this](./racl-support.md). 
+You can verify the permissions imported in the ingested content in the <code>sys_racl</code></strong>
 
-
-### Ingesting Content
-
-By default when a connector is added, the content is not ingested from the third-party application until a Sync operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
-
-!!!note
-    Note that any files larger than 15MB in size will be skipped during the ingestion process.  Ensure that the files are within the size limit for proper ingestion. To increase this limit, [reach out to our support team](https://kore.ai/support/). 
+field in the JSON view of the corresponding content.
 
 
-To initiate a sync operation manually, go to the **Configurations** tab in the Connector details and click on **Sync Now**. This initiates the sync operation immediately and ingests new or updated content from the application. 
+For more information about RACL implementation in Search AI, see [RACL support](racl-support.md). 
 
-![Manual Sync](../images/connectors/manual-sync.PNG "Manual Sync")
 
-You can also schedule an automatic sync operation for a future time. Automatic Sync ensures that the data stays up-to-date and also reduces the administrative overhead of performing manual sync regularly. 
+## Sync and Ingest Content
 
-The automatic sync can be scheduled as a one-time activity or to be performed at regular intervals. To schedule a sync operation, enable the **Schedule Sync** option and provide the date and time of the beginning of the event. 
+By default, when a connector is added, the content is not ingested from the third-party application until a **Sync** operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
 
-![Auto Sync](../images/connectors/schedule-sync.PNG "Auto Sync")
+Note that the files larger than 15MB will be skipped during the ingestion process.  Ensure your files are within the size limit for proper ingestion. To increase this limit, reach out to[ our support team](https://kore.ai/support/). 
 
-To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation.  Once set, the scheduler automatically ingests content using the connector at regular intervals. 
+To initiate a sync operation manually, click the **Save and Sync** button at any time. 
 
-![Recurring Sync](../images/connectors/recurrent-sync.PNG "Recurring Sync")
+![Sync Content](images/sync-option.png "Sync content")
 
-To disable automatic synchronization at any time, use the **Schedule Sync** slider button. 
 
-![Disable Sync](../images/connectors/disable-sync.PNG "Disable Sync")
+**Status of Ingested Content**
+
+Upon initiating the synchronization operation, the ingestion of the content from the connector begins. You can monitor the progress of this operation by navigating to the **Schedule Sync** page. The ingested content is displayed under the **Content** page, which features three separate tabs based on the ingestion status of the content.
+
+* Successful: This section lists content that has been successfully ingested.
+* Failed: Here, you will find content that failed to ingest.
+* Skipped: This section includes content that was bypassed during the ingestion process.
+
+For both **failed** and **skipped** content, the application provides detailed logs that can be useful for troubleshooting. These logs include potential reasons for the failure and actionable steps to facilitate successful ingestion in the future. By reviewing these logs, users can gain insights into the issues encountered and take informed actions to resolve them, ensuring a smoother ingestion process moving forward.
+
+![Content Page](images/content-page.png "Content Page")
+
+
+Click on any of the content items to view the details of the ingested content. It provides an overview of the ingested content like file type, URL, preview of the content of the file, etc. Click on **View JSON** to see the details of the ingested content. 
+
+![View JSON](images/view-json.png "View JSON")
+
+
+The JSON view provides detailed information of the ingested content. The ingested content and its metadata are captured in standard fields in the Search AI application. For instance, the description or text of the ingested content is set in the **content** field, the access information is stored in the **sys_racl** field, **sourceType** suggests the source of the content, and the **meta_data** field captures the meta information of the ingested content. 
+
+![JSON View](images/json.png "JSON View")
+
 
 **Stopping the Synchronization**
 
 * If you manually stop synchronization using the **Stop Sync** option while the sync job is actively running, it will halt immediately. Any content that has already been ingested at the time of stopping will be available for search.
 * If the sync job is queued when you select Stop Sync, the synchronization will be canceled and will not proceed.
 
-**Status of Ingested Content**
+**Schedule Sync**
 
-Upon initiating the synchronization operation, the ingestion of the content from the connector begins. You can monitor the progress of this operation by navigating to the **Jobs** tab. The ingested content is displayed under the **Content** tab, which features three separate tabs based on the ingestion status of the content.
+You can also **schedule an automatic sync operation** for a future time. Automatic Sync ensures that the data stays up-to-date and also reduces the administrative overhead of performing manual sync regularly. 
 
-* Successful: This section lists content that has been successfully ingested.
-* Failed: Here, you will find content that failed to ingest.
-* Skipped: This section includes content that was bypassed during the ingestion process.
+The automatic sync can be scheduled as a one-time activity or to be performed at regular intervals. To schedule a sync operation, enable the **Schedule Sync** option and provide the date and time of the beginning of the event. 
 
-![Ingestion Logs](images/connectors/ingestion-logs/tabs.png "Ingestion Logs")
+![Enable scheduler](images/schedule-sync.png "Enable Scheduler")
 
-For both **failed** and **skipped** content, the application provides detailed logs that can be useful for troubleshooting. These logs include potential reasons for the failure and actionable steps to facilitate successful ingestion in the future. By reviewing these logs, users can gain insights into the issues encountered and take informed actions to resolve them, ensuring a smoother ingestion process moving forward.
-![Ingestion Logs](images/connectors/ingestion-logs/errors.png "Error Messages")
 
+To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation.  Once set, the scheduler automatically ingests content using the connector at regular intervals. 
+
+![Recurring Sync](images/connectors/recurrent-sync.PNG "Recurring Sync")
+
+To disable automatic synchronization at any time, use the **Schedule Sync** slider button. 
 
 ### Enabling/Disabling Connectors
 
@@ -122,30 +209,9 @@ After the connector is configured and the source is connected, you can enable or
     Disabling a connector does not delete the ingested content. It disables any future data synchronization operation with the third-party application. The sync is resumed based on the configuration after the connector is enabled again.
 
 To enable or disable a connector, use the corresponding Action buttons.
-![Disable Connector](../images/connectors/disable-connector.png "Disable Connector")
-
-### View and Edit Connector Details
-
-To view or edit the connector configuration, i.e., connection settings, sync schedule, etc.,  click the corresponding connector from the list. The configuration details and content from the connector are shown under different tabs.
-![Connector Details](../images/connectors/connector-details.png "Connector Details")
-
-Click on any of the content items to view the details of the ingested content. It provides an overview of the ingested content like file type, URL, preview of the content of the file, etc. Click on **View JSON** to see the details of the ingested content. 
-![Content Details](../images/connectors/content-details.png "Content Details")
-
-The JSON view provides detailed information of the ingested content. The ingested content and its metadata are captured in standard fields in the Search AI application. For instance, the description or text of the ingested content is set in the content field, the access information is stored in the sys_racl field, sourceType suggests the source of the content, and the meta_data field captures the meta information of the ingested content. 
-![Content Details](../images/connectors/content-details-json.png "Content Details")
-
-
-**Content**
-
-The **Content** tab lists all the pages crawled from the connector source along with their URL and timestamp of the last update. 
-
-**Jobs**
-
-This tab lists the synchronization-related tasks initiated by Search AI on the connector. 
-![Connector Details](../images/connectors/jobs-tab.png "Connector Details")
+![Disable Connector](images/disable-connector.png "Disable Connector")
 
 ### Removing the content source integrated using Connector 
 
 To permanently remove a content source and corresponding connector from Search AI, go to the **Authorization tab** and click the **Remove Source** button. This will also **delete any data in Search AI indexed from the content source**.
-![Delete Connector](../images/connectors/delete-connector.png "Delete Connector")
+![Delete Connector](images/delete-connector.png "Delete Connector")

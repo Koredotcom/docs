@@ -10,7 +10,7 @@ For a task with the **Connection Type** specified as **Webservice** and the **Co
 * **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
 * **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-parameters" target="_blank">Learn more</a>.
 * **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-an-initializer" target="_blank">Learn more</a>.
-* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your VA to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-the-request-chain" target="_blank">Learn more</a>.
+* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your AI Agent to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-the-request-chain" target="_blank">Learn more</a>.
 * **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#add-the-response-sample" target="_blank">Learn more</a>.
 * **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#website-preview-content" target="_blank">Learn more</a>.
 
@@ -168,10 +168,10 @@ The following table explains how to use each field within the _Set up Task Param
 </li> 
 </ul>
 
-<li><strong>Dynamic Dropdown</strong> – Displays a drop-down list dynamically populated at runtime based on the response from a URL for your VA, for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated dropdown. 
+<li><strong>Dynamic Dropdown</strong> – Displays a drop-down list dynamically populated at runtime based on the response from a URL for your AI Agent, for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated dropdown. 
 <ul>
  
-<li><strong>Endpoint URL</strong> – The VA’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
+<li><strong>Endpoint URL</strong> – The App’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
  
 <li><strong>Endpoint Content Type</strong> – The content type expected from the specified endpoint URL. This can be : JSON, RSS, XML, URL Encoded JSON, CSV, Text, or Twitter Encoded JSON, Multipart/Form Data, Multipart/Related or Oracle ADF.
  
@@ -199,7 +199,7 @@ The following table explains how to use each field within the _Set up Task Param
 <li><strong>Type Ahead</strong> – Displays a dynamically populated drop-down list of choices to the end-user at runtime when the user enters three or more characters that match the search results based on the response from the URL defined for the task. For example, a list of projects for a <em>JIRA</em> task notification message. Define the following properties for a dynamically populated drop-down. 
 <ul>
  
-<li><strong>Endpoint URL</strong> – The VA’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
+<li><strong>Endpoint URL</strong> – The App’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
  
 <li><strong>Endpoint Content Type</strong> – The content type expected from the specified endpoint URL. One of: JSON, RSS, XML, URL Encoded JSON, CCV, Text, Twitter Encoded JSON, Multipart/Form-data, or Multipart/Related, Oracle ADF.
  
@@ -266,14 +266,14 @@ The following table explains how to use each field within the _Set up Task Param
 
 <li><strong>Email</strong> – Users can input a valid email address.
 
-<li><strong>Object</strong> – Data from a VA can be received as JSON objects, for example, as location details defined as: 
+<li><strong>Object</strong> – Data from an AI Agent can be received as JSON objects, for example, as location details defined as: 
 <code>"location" : { 
 "lat" : 17.4374614, 
 "lng" : 78.4482878 
 } 
 </code>where you can refer to the properties in a request chain or task request as location.lat, and location.lng.
 
-<li><strong>Array</strong> – Users can pass a comma-separated list of values to the VA. For example, in <em>Google Calendar</em>, multiple attendees with data can be passed as: 
+<li><strong>Array</strong> – Users can pass a comma-separated list of values to the AI Agent. For example, in <em>Google Calendar</em>, multiple attendees with data can be passed as: 
 “attendees”: [“user1”, “user2”, “user3”]When selected, specify the <strong>Type</strong> for the array of end-user input as one of: 
 <ul>
  
@@ -369,11 +369,11 @@ With the <strong>Visibility</strong> field set to <strong>Custom</strong>, you c
 
 <li><strong>EnterpriseContext</strong> – Define a key/value pair available to all users in an enterprise.
 
-<li><strong>BotContext</strong> – Define a key/value pair available to all users of this VA.
+<li><strong>BotContext</strong> – Define a key/value pair available to all users of this AI Agent.
 
-<li><strong>UserSession</strong> – Define a key/value pair available for this user for any VAsin an enterprise.
+<li><strong>UserSession</strong> – Define a key/value pair available for this user for any AI Agents in an enterprise.
 
-<li><strong>BotUserSession</strong> – Define a key/value pair available to a VA based on user inputs.
+<li><strong>BotUserSession</strong> – Define a key/value pair available to a AI Agent based on user inputs.
 </li>
 </ul>
    </td>
@@ -382,7 +382,7 @@ With the <strong>Visibility</strong> field set to <strong>Custom</strong>, you c
 
 <li><p>Click <b>Add & Continue</b> to save the parameter for the task request and add another parameter, or click <b>Add & Exit</b> to save the parameter for the task request and close the dialog.</p> 
 
-<p>You should organize multiple parameters in the order that the VA user should provide inputs. Use the navigation arrows icons to move the parameters.</p>
+<p>You should organize multiple parameters in the order that the AI Agent user should provide inputs. Use the navigation arrows icons to move the parameters.</p>
 <img src="../images/add-and-exit.png" alt="add and exit" title="add and exit" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ## Define an Initializer
@@ -399,7 +399,7 @@ To configure the task initializer, click the **Initializer** tab. It opens a Jav
 
 In the JavaScript editor, define the **Key** and the **Scope** as follows:
 
-**EnterpriseContext** – A key-value pair available to all VAs and all users in an enterprise. For example, for a GitHub VA, a user needs to access one or more enterprise repositories. In the **Initializer**, you can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code:
+**EnterpriseContext** – A key-value pair available to all AI Agents and all users in an enterprise. For example, for a GitHub AI Agent, a user needs to access one or more enterprise repositories. In the **Initializer**, you can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code:
 
 ```js
 var userRepository = {
@@ -409,14 +409,14 @@ var userRepository = {
 EnterpriseContext.put('Gitrepository', userRepository, 200000);
 ```
 
-**BotContext** – A key-value pair available to all users of this specific VA. For example, you may want to set up a default currency for financial transactions in a session based on the user location. In the **Initializer**, you can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
+**BotContext** – A key-value pair available to all users of this specific AI Agent. For example, you may want to set up a default currency for financial transactions in a session based on the user location. In the **Initializer**, you can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
 
 ```js
 var defaultCurrency = { TODO Custom JavaScript for location-based currency }
 BotContext.put('currency', defaultCurrency, 200000);
 ```
 
-**UserContext** – A key-value pair available to all VAsfor a user. These keys are read-only and provided by the system as user data for:
+**UserContext** – A key-value pair available to all AI Agents for a user. These keys are read-only and provided by the system as user data for:
 
 * **id** – The Kore.ai userId.
 * **emailId** – The email address associated with the userId.
@@ -428,7 +428,7 @@ BotContext.put('currency', defaultCurrency, 200000);
 * **title** – The title of the user, if defined.
 * **orgId** – The organizational ID of the user account, if defined.
 
-**UserSession** – Define a key-value pair available for this specific user for all VAsin an enterprise. For example, you may want to store a user location to make it available to all VAs, such as a user home address for commerce, transportation, and home delivery services. In the **Initializer**, you can persist the default location data as **HomeLocation (UserSession)** with the following JavaScript code:
+**UserSession** – Define a key-value pair available for this specific user for all AI Agents in an enterprise. For example, you may want to store a user location to make it available to all AI Agents, such as a user home address for commerce, transportation, and home delivery services. In the **Initializer**, you can persist the default location data as **HomeLocation (UserSession)** with the following JavaScript code:
 
 ```js
 var location = {
@@ -441,7 +441,7 @@ var location = {
 UserSession.put('HomeLocation', location, '20000');
 ```
 
-**BotUserSession** – Define a key-value pair available to a specific VA based on a specific user’s inputs. For example, you may want to persist in a user location for more than one VA task. For a travel VA, the user may be able to book a flight and a hotel based on the same home and destination addresses. 
+**BotUserSession** – Define a key-value pair available to a specific AI Agent based on a specific user’s inputs. For example, you may want to persist in a user location for more than one AI Agent task. For a travel app, the user may be able to book a flight and a hotel based on the same home and destination addresses. 
 
 In the **Initializer**, you can persist the default home and destination data as **HomeLocation (BotUserSession)** and **DestinationLocation (BotUserSession)** with the following JavaScript code:
 
@@ -584,10 +584,10 @@ For any task, you will need to define an API request to make a call to a web ser
     * **PUT**– Replaces the content of the target resource with the content sent.
     * **PATCH** – Appends the content of an existing target resource with the content sent.
     * **DELETE** – Deletes the content of an existing target resource.
-5. In the **URL** field, specify the URL for the VA task response to the process. For example, `http://koremessenger.com/postURL`. You can also use session variables in the URL as shown in the following example: 
+5. In the **URL** field, specify the URL for the App task response to the process. For example, `http://koremessenger.com/postURL`. You can also use session variables in the URL as shown in the following example: 
 `https://mySite.crm.ondemand.com/sap/c4c/odata/v1/c4codata/ServiceRequestCollection?$filter=ID eq '{id}' and ReporterEmail eq '{userEmail}'&amp;$expand=ServiceRequestHistoricalVersion,ServiceRequestDescription`
 
-6. In the **Access Using A Connector** field, select **Yes** to enable access for the VA using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/administration/kore-ai-connector/" target="_blank">Using the Kore.ai Connector</a>.
+6. In the **Access Using A Connector** field, select **Yes** to enable access for the AI Agent using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network.
 7. On the **Headers** tab, in the **Content Type** field, select one of the following supported data types for your sample response data.
     * **JSON** – JavaScript Object Notation is an open standard format using human-readable text to transmit data objects as attribute-value pairs. You can use JSON to transmit data between the Kore.ai servers and your web application.
     * **RSS** – Rich Site Summary, or Really Simple Syndication, is a family of standardized formats used to publish frequently updated information such as blog entries, news headlines, audio, and video.
@@ -952,7 +952,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 ```
 </ol>
 
-<ol start="5"><li>With the <b>Output Variable</b> set to <code>offers</code>, you can use the variable as <code>response.offers</code> in Bot Builder, for example, in a task response object as follows:</li>
+<ol start="5"><li>With the <b>Output Variable</b> set to <code>offers</code>, you can use the variable as <code>response.offers</code> in App Builder, for example, in a task response object as follows:</li>
 
 ```js
 print(JSON.stringify(response));

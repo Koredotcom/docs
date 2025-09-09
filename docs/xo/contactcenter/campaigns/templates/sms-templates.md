@@ -6,7 +6,7 @@ You can access templates by going to **Contact Center AI** > **Campaigns** > **T
 <img src="../images/template-page.png" alt="Templates Page" title="Templates Page" style="border: 1px solid gray; zoom:80%;">
 
 The following details of the voice campaigns are shown in a table:  
-<img src="../images/template-page-header.png" alt="Templates Page Header" title="Templates Page Header" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/templates-page-sms.png" alt="Templates Page Header" title="Templates Page Header" style="border: 1px solid gray; zoom:80%;">
 
 * **Templates**: Name of the template.
 * **Status**: “In Use” if it is assigned to a campaign.
@@ -18,7 +18,7 @@ The following details of the voice campaigns are shown in a table:
     * **Custom Template**: Created by the user.
 * **Campaigns**: The campaigns in which the template is used.
 * **Created By**: Name of the user who created the template (System in case of system templates).
-* **Last Updated**: The time when the template was updated.
+* **Last Updated**: The date when the template was updated. Default sorting is based on the last updated date.
 
 ## Create New Template
 

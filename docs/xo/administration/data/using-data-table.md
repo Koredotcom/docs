@@ -1,7 +1,4 @@
-
-
-
-# Guidelines for Using Data Tables in Virtual Assistants
+# Guidelines for Using Data Tables in AI Agents
 
 Data tables provide a structured way to store and access low-volume, conversation-relevant information that can significantly improve the quality and efficiency of user interactions. While offering flexibility, Data Tables come with specific guidelines and best practices to ensure optimal performance and appropriate usage within the platform. This document outlines the Data Tables' purpose, recommended practices, and limitations, helping platform users leverage this feature effectively while maintaining system integrity and performance.
 
@@ -10,7 +7,7 @@ Data tables provide a structured way to store and access low-volume, conversatio
 
 
 
-* **Facilitate Conversational Context**: Data Tables are designed to store information that enhances the quality and efficiency of conversations within your Virtual Assistant.
+* **Facilitate Conversational Context**: Data Tables are designed to store information that enhances the quality and efficiency of conversations within your AI Agent.
 * **Low-Volume Data Storage**: The Data Tables are optimized for low-volume data that is directly relevant to improving user interactions and experiences.
 * **Low-Frequency Usage**: The Data Tables are designed for low-frequency usage (reads or writes) 
 
@@ -20,7 +17,7 @@ Data tables provide a structured way to store and access low-volume, conversatio
 
 
 1. **Use for Conversational Data**:
-    * Data tables should be used exclusively to store information that facilitates better conversations with the virtual assistant.
+    * Data tables should be used exclusively to store information that facilitates better conversations with the AI Agent.
     * Examples include user preferences, conversation context, and small lookup tables for quick reference.
 2. **Data Volume**:
     * Do not use Data Tables to store large datasets or persistent business data unrelated to conversations.
@@ -50,7 +47,7 @@ Data tables provide a structured way to store and access low-volume, conversatio
     *  Document the purpose and structure of each Data Table.
     *  Regularly backup important data stored in Data Tables.
     * Avoid storing JSON objects in the Data Tables. 
-    * Frequent large-scale operations on Data Tables may impact Virtual Assistant performance.
+    * Frequent large-scale operations on Data Tables may impact AI Agent performance.
     * Performing bulk operations is not recommended.
 
 

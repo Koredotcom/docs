@@ -3,9 +3,9 @@ hide:
   - feedback
   - toc  
 ---
-# Key Differences Between XO v11 and v10
+# Key Differences Between AI for Service (XO) v11 and v10
 
-Key differences Between XO v11 and v10 are summarized below.
+Key differences are summarized below.
 
 ## Key Navigation Changes
 
@@ -89,8 +89,8 @@ All the configurations applicable across the app have been moved to a separate m
 ## Shared LLM & Generative Settings for All Products
 
 All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.
-[Learn more](../app-settings/generative-ai-tools/introduction.md#key-features)  
-<img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
+[Learn more](../generative-ai-tools/introduction.md)  
+<img src="../images/ais-llm.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
 
 ## Global User Management
 
@@ -104,20 +104,20 @@ Be it Publishing Dialogs or Flows, everything is now done in one place. The Plat
 
 ## Reorganized Analytics
 
-The Analytics module is logically regrouped to address various audience needs. A session starts from Channel through Flows, can go to Automation AI (Virtual Assistant), and then transfer to Agent. The module offers unified analytics across all conversations.  
+The Analytics module is logically regrouped to address various audience needs. A session starts from Channel through Flows, can go to Automation AI, and then transfer to Agent. The module offers unified analytics across all conversations.  
 <img src="../images/xo-platform-analytics.png" alt="Analytics" title="Analytics" style="border: 1px solid gray; zoom:70%;">
 
 ## Automation vs. Search (Answers) Fallback Behavior
 
-We have a new setting where users can configure where every user utterance should go first: Automation AI (Virtual Assistant) or Search AI (Answers) to get the response.  
+We have a new setting where users can configure where every user utterance should go first: Automation AI or Search AI (Answers) to get the response.  
 <img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback BehaviourI" style="border: 1px solid gray; zoom:70%;">
 
 ## New Marketplace
 
-The New Marketplace is available inside the App (previously, it was on the bot's homepage). The Marketplace empowers you to enhance your virtual assistant's capabilities by seamlessly integrating third-party systems. With pre-built integrations across various domains, you can extend your assistant's functionality effortlessly. The Marketplace streamlines the integration process by providing pre-configured actions and dialogue tasks, saving you valuable development time and effort. Additionally, you can leverage the expertly designed, pre-built dialogue templates tailored for each integration, allowing you to incorporate rich conversational flows with minimal setup. 
+The New Marketplace is available inside the App (previously, it was on the bot's homepage). The Marketplace empowers you to enhance your AI Agent's capabilities by seamlessly integrating third-party systems. With pre-built integrations across various domains, you can extend your assistant's functionality effortlessly. The Marketplace streamlines the integration process by providing pre-configured actions and dialogue tasks, saving you valuable development time and effort. Additionally, you can leverage the expertly designed, pre-built dialogue templates tailored for each integration, allowing you to incorporate rich conversational flows with minimal setup. 
 <img src="../images/xo-platform-marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
 
-Also, the Marketplace offers pre-built dialogue templates for each integration. These templates are expertly designed by Kore, leveraging the available APIs from the integrated system. When a user installs a template, it is added as a dialogue task to the virtual assistant's use case section, enabling users to create rich and engaging conversational experiences with minimal effort.  
+Also, the Marketplace offers pre-built dialogue templates for each integration. These templates are expertly designed by Kore, leveraging the available APIs from the integrated system. When a user installs a template, it is added as a dialogue task to the agents use case section, enabling users to create rich and engaging conversational experiences with minimal effort.  
 <img src="../images/xo-platform-marketplace 2.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
 
 ## New Billing Page
@@ -140,6 +140,5 @@ The platform offers different plans, and you can choose the plan for each produc
 
 ##### Related Links
 
-* [What's New in XO v11](./whats-new-in-xo-platform.md)
-* [Current Limitations](../release-notes/current-limitations.md)
+* [What's New in AI for Service (XO v11)](./whats-new-in-xo-platform.md)
 * [Migration Path for Existing Customers - Upgrade Journey](../getting-started/migration-path-xo10-to-xo11.md)

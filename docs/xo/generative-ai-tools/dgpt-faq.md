@@ -1,9 +1,9 @@
 
 # DialogGPT FAQs
 
-#### **What is DialogGPT?**
+#### **What's DialogGPT?**
 
-DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from virtual assistants. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. The DialogGPT is in beta and is supported only for English conversations.  
+DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from an AI Aagents. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. The DialogGPT is supported only for English conversations.  
 
 
 #### **What challenges does DialogGPT solve compared to traditional systems?**
@@ -14,7 +14,7 @@ DialogGPT addresses several pain points:
 * Contextual comprehension of user queries.
 * Reducing reliance on extensive utterance training.
 * Handling ambiguous or unclear inputs naturally.
-* Simplifying complex bot development workflows.
+* Simplifying complex App development workflows.
 
 
 #### **How does DialogGPT handle FAQs?**
@@ -27,14 +27,14 @@ DialogGPT treats FAQs as primary resources, processing user inputs against FAQ c
 Yes, DialogGPT significantly reduces training requirements, relieving developers from the burden of training on thousands of utterances per intent. Instead, they must only provide concise dialog descriptions and FAQ alternate questions. Embedding models handle the rest.
 
 
-#### **What is zero-shot understanding in DialogGPT?**
+#### **What's zero-shot understanding in DialogGPT?**
 
 Zero-shot understanding allows the model to process queries and tasks without prior training data. By leveraging pre-trained embeddings and conversation history, it can make predictions and offer accurate responses for unseen scenarios.
 
 
 #### **How does DialogGPT orchestrate user queries?**
 
-DialogGPT uses an orchestration mechanism to process user queries in parallel across dialog intents, FAQs, and knowledge from Search AI. Based on the input, it determines the appropriate response category—intent, FAQ, or search—without requiring sequential steps.
+DialogGPT uses an orchestration mechanism to process user queries in parallel across dialog intents, FAQs, and knowledge from Search AI. Based on the input, it determines the appropriate response category—intent, FAQ, or search without requiring sequential steps.
 
 
 #### **How does DialogGPT handle interruptions in conversations?**
@@ -87,7 +87,7 @@ Rephrasing is crucial in DialogGPT's ability to understand and respond to ambigu
 
 #### **Does DialogGPT support small talk?**
 
-Yes, small talk is treated as conversational intent. DialogGPT seamlessly integrates small talk, making the bots feel less robotic and more human-like, enhancing the user experience.
+Yes, small talk is treated as conversational intent. DialogGPT seamlessly integrates small talk, making the Apps feel less robotic and more human-like, enhancing the user experience.
 
 
 #### **What are the limitations of DialogGPT?**
@@ -95,9 +95,9 @@ Yes, small talk is treated as conversational intent. DialogGPT seamlessly integr
 DialogGPT is still evolving, with some features like entity extraction and enhanced response generation planned for Phase 2. Additionally, contextual embeddings for complex scenarios may require domain-specific tuning.
 
 
-#### **Can existing bots be migrated to DialogGPT?**
+#### **Can existing Apps be migrated to DialogGPT?**
 
-Migration is supported but depends on the system architecture. For example, transitioning from XO10 to XO11 is necessary, and bots using Smart Assist may require additional configuration.
+Migration is supported but depends on the system architecture. For example, transitioning from XO10 to XO11 is necessary, and Apps using Smart Assist may require additional configuration.
 
 
 #### **How does DialogGPT compare to traditional NLP systems?**

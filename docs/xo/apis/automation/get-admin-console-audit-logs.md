@@ -1,6 +1,6 @@
 # Get Admin Console Audit Logs API
 
-To retrieve the audit logs from the Bot Admin Console.
+To retrieve the audit logs from the Admin Console.
 
 !!!note
     This feature was introduced in ver7.2 of the platform.
@@ -41,7 +41,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable
+<li>App Builder: Not Applicable
 
 <li>Admin Console: Logs > Admin Console Audit Logs
 </li>

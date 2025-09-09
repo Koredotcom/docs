@@ -30,6 +30,10 @@ You can easily configure SearchAI to connect to the Zendesk application to enabl
    <td>Yes
    </td>
   </tr>
+    <tr>
+   <td><strong>Automatic Permission Entities Resolution</strong></td>
+   <td>Yes </td>
+  </tr>
   <tr>
    <td><strong>Filtering Support</strong>
    </td>

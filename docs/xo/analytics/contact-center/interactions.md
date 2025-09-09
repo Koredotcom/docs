@@ -1,19 +1,22 @@
 # Interactions Dashboard
 
-Interactions store the bot interactions. You can use the logs to review your bot’s performance and troubleshoot issues with conversations.
+Interactions store the AI Agents interactions. You can use the logs to review your AI Agent’s performance and troubleshoot issues with conversations.
 
 To view the Interactions dashboard, follow the steps:
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
-2. Click **Interactions** under the **Contact Center** section of the **Analytics** panel. The **Interactions** dashboard is displayed on the right side of the page.  
-<img src="../images/navigation-interactions-report.png" alt="Navigation Interactions Report" title="Navigation Interactions Report" style="border: 1px solid gray; zoom:80%;">
+1. Go to **CONTACT CENTER AI** > **Analytics** > **Interactions**.  
+    <img src="../images/interactions-page.png" alt="Interactions Page" title="Interactions Page" style="border: 1px solid gray; zoom:80%;">
 
-3. On this page, the following details of the logs are displayed in a table:
+2. On this page, the following details of the logs are displayed in a table:
 
   * CUSTOMER: The contact who initiated the conversation.
      * Direction (Icon): The direction of the conversation –  Inbound or Outbound.
     * LANGUAGE (Icon): The language of the conversation.
     * CHANNEL (Icon): The Channel of the conversation – Voice, Chat, or Email.
+
+    If the Replace Customer column data with User ID functionality is enabled, the Customer column displays the User ID. [Learn more](../../contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md).  
+    <img src="../images/user-id-column.png" alt="User ID Column" title="User ID Column" style="border: 1px solid gray; zoom:80%;">  
+
 * ACTIONS: You can download recordings and transcripts, and copy the following Identifiers:
     * User ID
     * Session ID
@@ -32,7 +35,7 @@ To view the Interactions dashboard, follow the steps:
     * Error: Error is a disruption to an ongoing conversation, resulting in an error message. Failure of integrated systems results in errors.
     * Completed (Drop Off): Completed (Drop Off) refers to a voice call where there was no response from the user, and the conversation ends.
     * Completed (User Hangup): Completed (User Hangup) refers to a voice call where the user ends the conversation.
-    * Completed (Bot Hangup): Completed (Bot Hangup) refers to a voice call where the task is completed, and the bot ends the conversation.
+    * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the task is completed, and the AI Agents ends the conversation.
     * Completed: Completed refers to a chat conversation where the task is completed, and the conversation ends.
 
 ### Supervisor Actions
@@ -142,6 +145,34 @@ Steps to Preview and Download Events:
         11. After-Call Work (ACW)  
         12. Conversation Closure  
 
+## Edit Dispositions from the Interactions Tab
+
+Supervisors can edit or override disposition codes after a conversation ends. Agents assign dispositions during live sessions, but once the session completes, supervisors can review and revise the assigned codes directly from the Interactions Tab. This capability ensures accurate categorization of interactions and supports streamlined post-conversation workflows. Administrators can enable this functionality for specific roles. [Learn more](../../user-management/role-management.md#permissions).
+
+Key Highlights:
+
+* Improved auditing and compliance
+* Accurate reporting and resolution tracking
+* Reduced dependency on agents for post-call updates
+* Agents receive a notification when a supervisor updates a disposition.
+
+Steps to edit dispositions:
+
+1. Select a completed interaction for which the disposition has to be revised.
+2. Select the **DETAILS** tab in the Insights to Logs window.
+3. Click **Edit Disposition**.  
+    <img src="../images/edit-disposition-button.png" alt="Edit Disposition" title="Edit Disposition" style="border: 1px solid gray; zoom:70%;">
+
+4. Make the necessary changes to the dispositions and click **Save**.  
+    <img src="../images/edit-disposition-pop-up.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:70%;">
+
+5. Click **View Logs**.  
+    <img src="../images/view-logs.png" alt="View Logs" title="View Logs" style="border: 1px solid gray; zoom:70%;">  
+
+    The disposition logs are displayed.
+
+    <img src="../images/disposition-log-details.png" alt="Disposition Log Details" title="Disposition Log Details" style="border: 1px solid gray; zoom:70%;">  
+
 ## Filters
 
 To avoid repeatedly filtering your choices, you can create and save multiple filters on the Interactions tab.
@@ -149,13 +180,13 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 ### Create Filter
 
 1. Click the **Filter** button.  
-<img src="../images/create-filters-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **New Filter**.  
-<img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:70%;">
 
 3. Select the IDs, Queues, Channels, Agents, Status, CSAT, and Custom Tags.  
-<img src="../images/create-filters-3.png" alt="Create Filters 3" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-3.png" alt="Create Filters 3" title="Create Filters 1" style="border: 1px solid gray; zoom:70%;">
 
     Select from the below available options:
     1. Clear – Clears the selection.
@@ -164,7 +195,7 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 
 4. Click **Save & Apply**.
 5. On the pop-up window, enter a name for the filter and click **Save & Apply**.  
-<img src="../images/create-filters-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:70%;">
 
 A confirmation message is displayed, and the filter is created.
 
@@ -255,19 +286,21 @@ Icons beside the Insights to Logs header show the Direction (inbound or outbound
 <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
 
 **TRANSCRIPT**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
-<img src="../images/transcript-tab.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
+<img src="../images/transcripts.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
 
 The transcripts tab also shows the call transfer stages:
 
 * **User transferred to Agent** - When the Automation transfers the voice call to Agent.
 * **User transferred to Automation** - When the Agent transfers the voice call back to Automation.  
-<img src="../images/transfer-stages.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-stage.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:70%;">
+* **Max no-input attempts reached** - when the automation triggers the respective AI Agent behavior for exceeding maximum retries.  
+    <img src="../images/transcript-insights-to-logs.png" alt="Max No-Input Attempts Reached" title="Max No-Input Attempts Reached" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
     * When customers are placed on hold (either themselves or by an agent), the system will not display transcripts of any customer speech during the hold period. 
 
-    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties)
+    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties).
 
 **DETAILS**: This tab shows the following details:
 
@@ -285,8 +318,8 @@ The transcripts tab also shows the call transfer stages:
 **Notes**: Notes added to the conversation (view only)  
 **Snooze Count**: Number of times the conversation was snoozed  
 **Snooze Duration**: Duration for which the conversation was snoozed  
-**Session-level tags**: Session-level tags assigned to the conversation.    
-<img src="../images/details-tab-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
+**Session-level tags**: Session-level tags assigned to the conversation.  
+<img src="../images/details-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
 
 **USER**: This tab shows the following details:
 
@@ -296,7 +329,7 @@ The transcripts tab also shows the call transfer stages:
 **Channel User ID**: The user ID of the conversation channel.  
 **User ID**: Agent’s user ID.  
 **User-level tags**: User-level tags assigned to the conversation.  
-<img src="../images/user-tab.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/user-insights-to-logs.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
 
 **IDENTIFIERS**: This tab shows the following details:
 
@@ -348,13 +381,28 @@ The following recording settings can be configured:
 
     You can choose either as a single file or separate files.
 
-    * **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
+!!! Note
 
-        <img src="../images/download-as-single-file.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
+    * The retention period for voice call recordings can be configured based on customer requests. You can raise a request with us, and we will set it up accordingly.  
 
-    * **Download as separate files**: If you choose this option, you can select the files and download them.  
+    * Once the configured retention period ends, the recordings are permanently deleted.  
 
-        <img src="../images/download-as-separate-files.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+    * Customers who opt in will receive an email 7 days before deletion and a confirmation email after deletion.  
+
+    * After deletion, the following message will be displayed to users: “Recording not available. It may have been deleted as per your data retention policy.”  
+    
+    * All actions—including retention configuration and recording deletions—are logged and accessible in the Admin Console.
+
+* **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
+
+    <img src="../images/single-recording.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
+
+* **Download as separate files**: If you choose this option, you can select the files and download them.  
+
+    <img src="../images/multiple-recording.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+
+The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
+<img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
 
 * Duration: The increment and the countdown counters appear when the audio plays. The total duration of the audio is displayed before the audio plays.  
     <img src="../images/duration.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
@@ -712,7 +760,7 @@ The bottom bar chart visualizes call metrics over time. The x-axis shows timesta
 ### Agents
 
 The Agents tab provides comprehensive call information for agents and supervisors, displaying detailed metrics for all participants on a call. This enables a better understanding of interactions and assists with troubleshooting issues. The following data points are shown on this tab:  
-<img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/mos-jitter.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
 
 <table>
   <tr>
@@ -766,13 +814,13 @@ The Agents tab provides comprehensive call information for agents and supervisor
   <tr>
    <td>MOS (min, max, average)
    </td>
-   <td>Minimum, maximum, and average MOScore values measuring voice quality during the call.
+   <td>Minimum, maximum, and average MOScore values measuring voice quality during the call. Hovering over the tooltip displays the industry standard value.
    </td>
   </tr>
   <tr>
    <td>Jitter (min, max, average)
    </td>
-   <td>The minimum, maximum, and average jitter measurements indicate variations in packet delivery timing.
+   <td>The minimum, maximum, and average jitter measurements indicate variations in packet delivery timing. Hovering over the tooltip displays the industry standard value.
    </td>
   </tr>
   <tr>

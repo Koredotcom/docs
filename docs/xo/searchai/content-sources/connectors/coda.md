@@ -41,23 +41,19 @@ Search AI integrates with Coda via REST APIs. To authenticate with the Coda APIs
 
 ## Generate an API Token
 
-
-
-* Log in to your[ Coda account](https://coda.io).
-* Go to your **Account Settings**:
+1. SIgn in to your[ Coda account](https://coda.io).
+1. Go to your **Account Settings**:
     * Click on your profile picture in the top-right corner.
     * Select **API Tokens** from the menu.
-* Click **Generate API Token**.
+1. Click **Generate API Token**.
     * Provide a name for the token (e.g., "My App Access").
     * Click Generate. 
-* Copy the token. 
+1. Copy the token. 
 
 
 ## Steps to Configure Coda Connector in Search AI
 
-Go to the **Authorization page** of the Coda Connector, provide the following configuration fields, and click **Connect**. 
-
-
+Go to the **Authorization page** of the Coda Connector, enter the following configuration fields, and click **Connect**. 
 
 * **Name** - Unique name for the connector**.**
 * **SAS Token** - API token required by Search AI to access the resources programmatically. 
@@ -77,4 +73,4 @@ Note that currently, Search AI does not support ingesting content from any kind 
 
 ## RACL Support
 
-The **sys_racl** field in the ingested documents stores the email IDs of the document owner and the users with whom the document is directly shared. Note that content in public files or files shared via a link with the workspace users will not be accessible to the users through Search AI.
+The `sys_racl` field in the ingested documents stores the email IDs of the document owner and the users with whom the document is directly shared. Note that content in public files or files shared via a link with the workspace users will not be accessible to the users through Search AI.

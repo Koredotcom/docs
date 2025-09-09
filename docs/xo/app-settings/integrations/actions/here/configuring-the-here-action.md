@@ -7,7 +7,7 @@ This document explains how to authorize and enable the Here action and install t
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports API key authentication to allow Here integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
+The Kore.ai XO Platform supports API key authentication to allow Here integration to exchange data. For more information, read the [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Here integration:
 
@@ -53,7 +53,7 @@ Steps to authorize an Here action using developer credentials:
 
         The Here action is moved from _Available_ to _Configured_ region on the Actions page.
 
-6. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Here action templates](../using-here-action-templates/){:target="_blank"} article.  
+6. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Here action templates](using-here-action-templates.md){:target="_blank"} article.  
 <img src="../images/here-action-img5.png" alt="Skip for now" title="Skip for now" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -70,7 +70,7 @@ Steps to authorize an Here action at a user level:
     2. Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Here app for authorization. To create a profile, click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/here-action-img6.png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
 
-    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.  
+    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.  
     <img src="../images/here-action-img7.png" alt="Auth mechanism" title="Auth mechanism" style="border: 1px solid gray;zoom:50%;"/>
 
     4. Enter the following authentication credentials for the Basic Auth mechanism:

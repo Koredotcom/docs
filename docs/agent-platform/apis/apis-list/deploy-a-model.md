@@ -31,7 +31,7 @@ The API response includes the **model ID** and the **model deployment status**. 
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
+**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Query Parameters
 

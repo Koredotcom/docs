@@ -14,8 +14,8 @@ To create a dialog task, you must have already created an assistant to add a dia
 Steps to add a dialog task:
 
 1. Open the app for which you want to create the dialog task.
-2. Navigate to **Automation AI > Virtual Assistant** icon on the left menu.
-3. The Virtual Assistant menu opens, and the **Dialogs** page is open by default.
+2. Navigate to **Automation AI** on the left menu.
+3. The Automation menu opens, and the **Dialogs** page is open by default.
 4. On the Dialogs page, click the **Create Dialog** button.
 
     <img src="../images/using-dialog-builder-img1-create-dialog.png" alt="Dialogs" title="Dialogs" style="border:1px solid gray;zoom:60%;">
@@ -44,7 +44,7 @@ The Dialog Builder is displayed with the canvas containing the root intent, whic
 
 <img src="../images/using-dialog-builder-img4-scratch-dialog-created.png" alt="Dialog Builder canvas with Root Intent" title="Dialog Builder canvas with Root Intent" style="border:1px solid gray;zoom:60%;">
 
-[Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}.
+[Click here to know about Nodes & Connections](./node-types/nodes-transitions.md){:target="_blank"}.
 
 ## Auto-Generated Dialog Tasks 
 
@@ -101,13 +101,13 @@ This option provides you ready-made templates targeting major industry verticals
 
 !!! Note
 
-    You can avail this feature only if the integration is configured in your VA. You must go through the installation journey to access the integrations and templates.
+    You can avail this feature only if the integration is configured in your AI Agent. You must go through the installation journey to access the integrations and templates.
 
 1. Click the **Marketplace** option. The **Marketplace** page opens with lists of **Categories** and **Integrations**. You can see a list of the most popular integrations and recommended templates.
 
     <img src="../images/using-dialog-builder-img11-create-dialog-template-search.gif" alt="Marketplace" title="Marketplace" style="border:1px solid gray;zoom:70%;">
 
-2. Select the required categories or integrations. The corresponding integrations and available dialog templates appear. The integrations configured in your VA are labeled as **Installed**.
+2. Select the required categories or integrations. The corresponding integrations and available dialog templates appear. The integrations configured in your App are labeled as **Installed**.
 
     <img src="../images/using-dialog-builder-marketplace-actions-and-templates.png" alt="Integrations and Dialog Templates" title="Integrations and Dialog Templates" style="border:1px solid gray;zoom:70%;">
 
@@ -163,12 +163,12 @@ The dialog task is created and opens in the Dialog Builder. You can make require
 
 <img src="../images/using-dialog-builder-dialog-template-dialog-created.png" alt="Dialog creation completed" title="Dialog creation completed" style="border:1px solid gray;zoom:70%;">
 
-[Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}
+[Click here to know about Nodes & Connections](./node-types/nodes-transitions.md){:target="_blank"}
 
 
 ## Dialog Task Builder Overview
 
-Before moving on, here is an overview of the Dialog Task Builder. For details on navigating dialog tasks, please see [Navigating the Dialog Task Builder](../navigating-dialog-tasks/){:target="_blank"}.
+Before moving on, here is an overview of the Dialog Task Builder. For details on navigating dialog tasks, please see [Navigating the Dialog Task Builder](./navigating-dialog-tasks.md){:target="_blank"}.
 
 <img src="../images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray;zoom:70%;">
 
@@ -242,7 +242,7 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 
     <img src="../images/using-dialog-builder-right-more-settings.png" alt="More options" title="More options" style="border:1px solid gray;zoom:60%;">
 
-* **Bot Owners** - You can see bubbles containing the names of all the users of the current dialog, such as Bot Owner, Bot Developer, Conversation Designer, etc. The first letter of the bot owner’s name appears in a colored bubble.
+* **App Owners** - You can see bubbles containing the names of all the users of the current dialog, such as App Owner, App Developer, Conversation Designer, etc. The first letter of the app owner’s name appears in a colored bubble.
 
 
 ### The Index Panel
@@ -332,7 +332,7 @@ To add a node to an existing sequence, drag the node on the sequence. You will s
 
 The task being designed in a dialog can be broken down into several sub-tasks. For example, if you are developing a dialog to send money from one account to another, you may break the tasks into subtasks like gathering the account owner's details, gathering the recipient account's details, transferring the money, success scenario, failure scenario, etc. You can have a sequence for each sub-task.
 
-Each sequence contains one or more nodes placed in a logical sequence and a **Transition** section at the end, through which you can either continue the flow of dialog to the next sequence or split the flow into two or more paths based on [conditions](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#add-if-else-node-connections).
+Each sequence contains one or more nodes placed in a logical sequence and a **Transition** section at the end, through which you can either continue the flow of dialog to the next sequence or split the flow into two or more paths based on [conditions](#add-if-else-node-connections).
 
 You can set connections between two sequences; Drag the connector <img src="../images/using-dialog-builder-img17-nodes-connector.png"> from the source sequence to the required destination sequence. Please note that by default, the connection will be from the **last node of the source sequence** to the **topmost node on the destination sequence**.
 
@@ -359,7 +359,7 @@ To delete a sequence, right-click it and select **Delete** from the menu.
 
 Nodes are the different points at which components of your conversation intersect. Each kind of node has a set of distinct features and can be used to fulfill a specific purpose, like displaying a text message, providing the user a digital form to provide data, gathering a specific piece of data from the user, accessing data files, etc.
 
-For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
+For details, please see [Node Types](./node-types/nodes-transitions.md){:target="_blank"}.
 
 You can add nodes inside or outside sequences. You can also drag and drop nodes or add them using the connector next to a sequence. Adding a node using a connector will automatically create a new sequence containing the new node and Transition. [Read more.](#add-node-to-dialog)
 
@@ -380,7 +380,7 @@ Using **Bookmarks**, you can create navigation points in a dialog with a complex
 
 <img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Notes and Bookmark" title="Notes and Bookmark" style="border:1px solid gray;zoom:70%;">
 
-**Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other bot users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need.
+**Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other app users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need.
 
 Below action can be performed:
 
@@ -468,7 +468,7 @@ Click the <img src="../images/using-dialog-builder-img17-nodes-connector.png"> b
 
 You can add conditions to the sequence by adding an **If-Else connection** in the **Transition** section of the sequence. This is where you can set the execution path based on the condition.
 
-To do this, hover over the **Transitions** section and click **Add New.** [Learn more](../node-connections/nodes-conditions/){:target="_blank"}.
+To do this, hover over the **Transitions** section and click **Add New.** [Learn more](./node-connections/nodes-conditions.md){:target="_blank"}.
 
 <img src="../images/using-dialog-builder-img16-nodes-transition.png" alt="Transitions - Add New" title="Transitions - Add New" style="border:1px solid gray;zoom:60%;">
 
@@ -479,13 +479,13 @@ You can also set connections through the **Connection Properties**.
 
 ## Node Properties
 
-Clicking on a node will open its Properties panel, which includes specific features depending on the type of node you are working with. Please consult the documentation on [Node Types](../node-types/nodes-transitions/){:target="_blank"}  to learn more about what is included in each. So, noting that some nodes may not come with some features, here is a general overview of what is available within this panel:
+Clicking on a node will open its Properties panel, which includes specific features depending on the type of node you are working with. Please consult the documentation on [Node Types](./node-types/nodes-transitions.md){:target="_blank"}  to learn more about what is included in each. So, noting that some nodes may not come with some features, here is a general overview of what is available within this panel:
 
 * **Component Properties** such as name, type, and component-specific properties.
 * **Instance Properties** can be customized for the selected node for the current dialog.
 * **Connection Properties** can be used for configuring transition conditions. (Only available for the bottommost node in a sequence)
 * **NLP Properties** for intent and entity recognition.
-* **Voice Call Properties** for IVR channels (available for certain nodes only after [IVR integration](../node-types/voice-call-properties/){:target="_blank"}).
+* **Voice Call Properties** for IVR channels (available for certain nodes only after [IVR integration](./node-types/voice-call-properties.md){:target="_blank"}).
 
 <img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray;zoom:60%;">
 
@@ -526,7 +526,9 @@ You can see the following visual customization options for a sequence by right-c
 
     <img src="../images/using-dialog-builder-custom-colors.png" alt="Custom colors" title="Custom colors" style="border:1px solid gray; zoom:65%;">
 
-* **Delete**: This option allows you to delete the sequence. Note that deleted sequences cannot be restored; however, the nodes that were added to the sequence will still be available for use in the Assets tab of the Index panel.
+* **Delete**: This option allows you to delete the sequence. Note that deleted sequences cannot be restored; however, the nodes that were added to the sequence will still be available for use in the Assets tab of the Index panel.  
+
+  [Refer here](#node-groups) for details on grouping of nodes in a sequence
 
 ### Connector Arrows
 
@@ -558,7 +560,7 @@ The **Dialog Settings** panel allows you to modify the dialog task's basic setti
 Add or modify the following settings for your dialog:
 
 * **Name** – The name of your dialog task, usually the main user intent. For example, _Book Ticket._
-* **Description** – An optional description of your dialog task displayed in the XO Platform.
+* **Description** – An optional description of your dialog task displayed in the Platform.
 * **Intent Settings:**
             
      * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
@@ -583,17 +585,17 @@ Add or modify the following settings for your dialog:
         * Handle the follow-up tasks as part of node connections (default setting) or
         * Let the user select the follow-up task.
 * **Task Execution Failure** – Define the assistant’s behavior when there is an error in task execution. It can be set as either:
-        * Same as the Bot Level behavior.
+        * Same as the App Level behavior.
         * Specific to this task – initiate a task, run a script, or show a message.
 
 
 ### Manage Interruptions
 
-The **Manage Interruptions** options allow you to select if and how a user can switch to another task and exit strategies. It can be set up at the VA, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
+The **Manage Interruptions** options allow you to select if and how a user can switch to another task and exit strategies. It can be set up at the App, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
 
 <img src="../images/using-dialog-builder-img27-manage-interruptions.png" alt="Manage Interruptions" title="Manage Interruptions" style="border:1px solid gray;zoom:60%;">
 
-Click here to [learn more](../../../intelligence/conversation-management/manage-interruptions/#dialog-level-settings){:target="_blank"}.
+Click here to [learn more](../../intelligence/conversation-management/manage-interruptions.md#dialog-level-settings){:target="_blank"}.
 
 
 ### Manage Ammend Behavior
@@ -602,7 +604,7 @@ Using **Amend Entity,** you can allow the users to amend entity values and contr
 
 <img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray;zoom:60%;">
 
-Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level)
+Click here to [learn more.](../../natural-language/nlu-configurations/amend-entities.md#task-level)
 
 
 ### Manage Groups
@@ -614,7 +616,21 @@ Click here to [learn more.](#node-groups)
 
 ## Node Groups
 
-You can use group nodes to improve the user experience with follow-ups and digressions and amend entity values.
+Node groups are primarily used for defining a group of nodes. 
+
+**Advantages of grouping Nodes in a sequence**
+
+* Grouping nodes allows for automatic back-to-back transitions between consecutive nodes. 
+
+*  Complex conversation flows can be broken down into logical groups, each responsible for a specific function, making the design easier to manage and understand. 
+
+*  Inputs and outputs can be handled at the group level, allowing users to focus on group interfaces without needing to manage every node. 
+
+*  Groups help maintain a clean and structured flow, which is useful in large or multi-functional apps. 
+
+*  Node groups support better handling of follow-ups, digressions, and amending entity values.
+
+### Create the Node Group
 
 To create node groups, follow the below steps:
 
@@ -687,7 +703,7 @@ You can hover over a node to get the **Delete** option. Once deleted, the node w
 
 ### Subintent
 
-If you are using the group to set up a Subintent, you can do so by navigating to the required node group and clicking the **Intents** button. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
+If you are using the group to set up a Subintent, you can do so by navigating to the required node group and clicking the **Intents** button. For additional information, please see [Grouping Nodes as Subintents](./node-connections/grouping-nodes.md){:target="_blank"}.
 
 <img src="../images/using-dialog-builder-group-sub-intents.png" alt="Sub intent" title="Sub intent" style="border:1px solid gray; zoom:70%;">
 

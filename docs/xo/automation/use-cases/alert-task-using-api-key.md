@@ -104,10 +104,10 @@ By default, authorization fields are configured as part of the header of the tas
     <img src="../images/add-auth-field-api-key.png" alt="add authorization field" title="add authorization field" style="border: 1px solid gray; zoom:75%;"> 
 
 2. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required. 
-* **Header** – The VA expects the authorization fields as part of the header of the request.
-* **Payload** – The VA expects the authorization fields as part of the content of the body of the request.
-* **Query String** – The VA expects the authorization fields as a query in the body of the request.
-* **Path Param** – The VA expects the authorization fields as part of the URL path for the request.
+* **Header** – The AI Agent expects the authorization fields as part of the header of the request.
+* **Payload** – The AI Agent expects the authorization fields as part of the content of the body of the request.
+* **Query String** – The AI Agent expects the authorization fields as a query in the body of the request.
+* **Path Param** – The AI Agent expects the authorization fields as part of the URL path for the request.
 3. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 4. In the **Field Value** field, enter the value for the **Field Key** specified.
 5. Click **Add**. The new authorization field is added in the **Authorization Fields** section.
@@ -126,7 +126,7 @@ After you click **Test Authorization**, the **Test Authorization** window is dis
 To configure the **Test Authorization API Key**, follow the steps below:
 
 1. In the **Auth Check URL** field, verify or enter the URL to test the authentication configuration.
-2. If your VA uses subdomains, the **Tenancy** field is displayed and you must specify the tenant.
+2. If your AI Agent uses subdomains, the **Tenancy** field is displayed and you must specify the tenant.
 3. Enter the API key for the application in the **API Key** field.
 4. Select the content type expected for the URL in the **Content-Type** field.
 5. For testing the URL, the **Method** field is read-only and set to **GET**.

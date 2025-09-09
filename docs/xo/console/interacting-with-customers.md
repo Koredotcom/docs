@@ -4,20 +4,24 @@
 
 ### Compose Responses
 
-Agents can respond to customers by typing their messages in the compose bar.  
-<img src="../images/compose-bar-blank.png" alt="Blank Compose Bar" title="Blank Compose Bar" style="border: 1px solid gray; zoom:80%;">
+Agents can respond to customers by typing their messages in the text editor.  
+<img src="../images/compose-bar-blank.png" alt="Blank Text Editor" title="Blank Text Editor" style="border: 1px solid gray; zoom:80%;">
 
-Agents can type their responses in the compose bar and send the message by clicking the **Send** button on the bottom right corner. Pressing the **Tab** button on your keyboard shifts the focus to the Send button. You can also press **Tab + Enter** to send a message.  
+Agents can type their responses in the text editor and send the message by clicking the **Send** button on the bottom right corner. Pressing the **Tab** button on your keyboard shifts the focus to the Send button. You can also press **Tab + Enter** to send a message.  
 <img src="../images/send-response.png" alt="Send Response" title="Send Response" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
     You can still press **Enter** to send messages. Pressing (ctrl+enter / shift+enter) on Windows and (ctrl+return / shift+return) on Mac creates a new line.
 
-Agents can send a standard response to the customer from a pre-configured library. Press **/** in the compose bar to display the standard response templates window.  
+Agents can send a standard response to the customer from a pre-configured library. Press **/** in the text editor to display the standard response templates window.  
 <img src="../images/standard-response-prompt.png" alt="Standard Response Library" title="Standard Response Library" style="border: 1px solid gray; zoom:80%;">
 
 Pressing **Escape** after typing “**/**” closes the standard response window.
+
+**When translation is enabled**: Responses appear in the agent’s selected target language in both the text editor shortcut command and the response widget.
+
+**When translation is disabled**: Responses appear in the conversation language, as set through [Agent Utils at the time of agent transfer](../flows/node-types/utils.md#set-live-chat-agent-transfer), ensuring they are not limited to the application language.
 
 ### AI-enhanced Compose Text Box
 
@@ -29,12 +33,13 @@ There are three choices available:
 For example, the formal draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, 1 pm” is rephrased as “Great news! We’ve scheduled your mortgage appointment for Jun 24, 2023, at 1 pm.”
 2. **Make more formal**: This option rephrases the draft response to make it more formal. For example, the draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, at 1 pm” is transformed into a more formal response, “We would like to inform you that your mortgage appointment has been scheduled for Jun 24, 2023, at 1:00 pm.”
 3. **Expand**: This option expands the draft response. For example, the draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, at 1 pm” is elaborated as “We would like to notify you that your mortgage appointment has been successfully scheduled for June 24, 2023. Please arrive promptly at 1:00 pm for your appointment.”
+4. **Rephrase**: This option allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
 
-    This feature can be enabled from [CONFIGURATION > Advanced Settings > Intelligent Agent Tools](https://docs.kore.ai/smartassist/configuration/intelligent-agent-tools-beta/).
+    This feature can be enabled from [Generative AI Tools > GenAI Features > Agent Response Rephrasing](../generative-ai-tools/genai-features.md#agent-response-rephrasing).
 
-### Add/Delete Hyperlinks in the Compose Bar
+### Add/Delete Hyperlinks in the Text Editor
 
-Agents can add/delete hyperlinks in the compose bar while responding to the messages.
+Agents can add/delete hyperlinks in the text editor while responding to the messages.
 
 Steps to add/remove hyperlinks:
 
@@ -62,6 +67,11 @@ Steps to add/remove hyperlinks:
 5. Press **Enter** to send the message.  
 <img src="../images/send-message.png" alt="Send Message" title="Send Message" style="border: 1px solid gray; zoom:80%;">
 
+## Viewing New Messages in the Console
+
+When agents are reviewing earlier parts of a conversation, and a new message arrives while you are scrolled up, a New Message button appears at the bottom of the conversation thread. The button also displays the number of unread messages. To view the latest message, click the New Message button. The most recent message is displayed.  
+<img src="../images/new-message.png" alt="Auto Scroll" title="Auto Scroll" style="border: 1px solid gray; zoom:70%;">
+
 ## Resend Message When Network Disconnects
 
 The following table lists scenarios with expected results in case of a network failure while an agent attempts to send a response.
@@ -75,6 +85,7 @@ The following table lists scenarios with expected results in case of a network f
 | If the resend icon is clicked            | The message is sent again.                                                                                                      |
 | If the conversation is terminated        | The Resend icon does not appear.                                                                                                |
 | If the page is refreshed                 | The undelivered messages do not appear.                                                                                         |
+
 ## Audio and Video Calls with Customers
 
 Agents can request the customer for an audio or video call during the chat conversation if required. Clicking the **Audio** or **Video Call** icon initiates a call.  
@@ -82,7 +93,8 @@ Agents can request the customer for an audio or video call during the chat conve
 
 !!! Note
 
-    The initial interaction and the phone call interaction must be closed separately, with corresponding dispositions.
+    * Accounts using Voice Gateway and AudioCodes can access the video call option. 
+    * Agents must close the chat interaction and the audio/video call separately, each with its own disposition.
 
 ### Manual Outbound Call
 
@@ -130,7 +142,7 @@ The outbound dialer has the following functionalities:
 * Validation and Error Handling: An error message is displayed if an invalid number is entered (for example, incorrect length or characters). The call button is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers.  
     <img src="../images/invalid-phone-number.png" alt="Invalid Phone Number" title="Invalid Phone Number" style="border: 1px solid gray; zoom:70%;">  
 
-* Enable Call Controls during ringing: Turning on this toggle allows agents to use the call control features (mute, hold, keypad, transfer) when the call is in the dialing phase. To enable this functionality, refer to the [Permissions](../user-management/role-management.md#permissions) section.
+* Enable Call Controls during ringing: Turning on this toggle allows agents to use the call control features (mute, hold, keypad, transfer) when the call is in the dialing phase. To enable this functionality, refer to the [Permissions](../user-management/role-management.md#permissions) section.  
     <img src="../images/enable-call-controls-during-ringing.png" alt="Enable Call Controls During Ringing" title="Enable Call Controls During Ringing" style="border: 1px solid gray; zoom:70%;"> 
 
 Agents can make outbound calls to the customers as follows:
@@ -143,10 +155,13 @@ Agents can make outbound calls to the customers as follows:
 
 3. Agents can dial the outbound calls in two ways:
 
-    1. Enter the phone number with the country code, and the country’s flag will appear automatically on the left. Click the Call button to place the outbound call.  
-        <img src="../images/dialer-country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
+    1. Enter the phone number with the country code, and click the Call button to place the outbound call.  
+        <img src="../images/global-dialpad.png" alt="Global Dialpad" title="Global Dialpad" style="border: 1px solid gray; zoom:60%;">
 
-    2. Enter the phone number without the country code and click the Call button to place the outbound call. The following scenarios are possible:
+    2. Select the country code from the dropdown, enter the phone number without the country code, and click the Call button to place the outbound call.  
+        <img src="../images/country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">  
+
+        The following scenarios are possible:
 
         1. A user enters “123124”:
 
@@ -171,6 +186,21 @@ Agents can make outbound calls to the customers as follows:
     !!! Note
 
         The country code defaults to the last dialed country. If no calls are dialed, the default country code is the US.
+
+#### Inbound Click-to-Call Interaction
+
+Agents receive the Click-to-Call interaction in the Live Interaction pane, similar to an inbound voice call. The system displays the metadata and prior chat transcript to the agent. During the call, agents can pause and resume recording when handling sensitive information. After the call ends, the system stores the transcription and disposition summary. [Learn more](../contactcenter/flows-and-routing/conditional-flows.md#click-to-call-flow).  
+<img src="../images/click-to-call-interaction.png" alt="Click to Call Interaction" title="Click to Call Interaction" style="border: 1px solid gray; zoom:70%;">  
+
+In addition to After Call Work (ACW), Agents also have access to the following call controls:  
+
+* Mute  
+* Unmute  
+* Hold  
+* Resume  
+* Recording – Pause and Resume  
+* Transcription – Pause and Resume  
+* Transfer – Internal
 
 ## Voicemail
 
@@ -201,13 +231,19 @@ Agents can initiate Consult calls, Conference calls, and Warm Transfer voice cal
 
 #### Consult Call
 
-Selecting an agent from the transfer list activates the consult and subsequent merge to a conference call. Consult functionality will not be available if the conversation is being transferred to a queue.
+Selecting an agent from the transfer list activates the consult and subsequent merge to a conference call.
 
 The agent chosen for consultation must be available and have zero load occupation. If an agent is brought in for consultation, their slots remain occupied throughout the consultation and conference call.
 
 During the consult call, the system automatically places the customer on hold, allowing internal agents to communicate with each other. All calls are recorded if recording is enabled. Calls can be transferred to external agents by pre-saving their phone numbers through an API.
 
 The initiating agent can switch to the original customer call if needed, and vice versa, using the Swap functionality. The initiating agent can merge the two calls, converting them into a conference call.
+
+##### Consult Call to a Queue (Voice Channel Only)
+
+The “Consult a Call to a Queue” allows agents handling voice calls to initiate a consult with an available agent from a selected queue. When the agent chooses a queue during the consult action, the system displays a list of agents who belong to that queue, are in “Available” status, and are not currently handling any assignments or active calls for that queue. The list appears in alphabetical order. The agent can select one agent from the list, after which a "Consult" button becomes available. Clicking this button initiates a consult call, which proceeds only if the chosen agent remains available at the time of connection.
+
+During the consult, the agent can use existing call control features such as Swap, Merge, and Transfer. Once the consult call ends—either by the consulting agent or the internal agent—the system automatically routes the agent back to the original caller leg without requiring manual intervention.
 
 #### Conference Call
 
@@ -261,9 +297,9 @@ Following the consult or conference call, the initiating agent can proceed with 
    <td>A conference call cannot be initiated during an ongoing consult call.
    </td>
    <td>When the agent and user are on call and the agent initiates a consult with the Supervisor:
-    a) If the consult is merged, then a conference is not allowed.
+    (a) If the consult is merged, then a conference is not allowed.
 <br>
-    b) If the Supervisor has dropped from the consult call, then the conference will be allowed.
+    (b) If the Supervisor has dropped from the consult call, then the conference will be allowed.
    </td>
   </tr>
   <tr>
@@ -328,6 +364,10 @@ Steps to initiate a Call Transfer:
 
 * Click **Transfer** to directly transfer the call to another agent.  
 <img src="../images/transfer-agent.png" alt="Agent Transfer" title="Agent Transfer" style="border: 1px solid gray; zoom:50%;">
+
+!!! Note
+
+    Agents are not listed in Agent Transfers when the Chat and Email channel slots are set to zero.
 
 ### Consult Call
 
@@ -497,33 +537,57 @@ There are two ways to secure the agent form:
 
 1. The entire form is secured by turning on a toggle at [form creation](../contactcenter/configurations/agent-forms/configure-agent-forms.md#create-an-agent-form). In this case, the **view** icon appears to view masked data in the header with the agent form text.
 All headers are visible, and only submitted data is masked.  
-<img src="../images/agent-form-masked.png" alt="Agent Form Masked" title="Agent Form Masked" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/agent-form-masked.png" alt="Agent Form Masked" title="Agent Form Masked" style="border: 1px solid gray; zoom:60%;">
 
 2. Only specific fields are masked, retaining the redaction as per the configuration for that field. The data is unmasked when the agent clicks the unmask button.  
-<img src="../images/unmask-button.png" alt="Unmask Form" title="Unmask Form" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/unmask-button.png" alt="Unmask Form" title="Unmask Form" style="border: 1px solid gray; zoom:60%;">
 
 Steps to share an Agent Form:
 
 1. Click the **Agent Form** icon.  
-<img src="../images/agent-form-icon.png" alt="Agent Form Icon" title="Agent Form Icon" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/agent-form-icon.png" alt="Agent Form Icon" title="Agent Form Icon" style="border: 1px solid gray; zoom:60%;">
 
 2. Select the form and click **Send Form**.  
-<img src="../images/select-form.png" alt="Select Form" title="Select Form Icon" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/select-form.png" alt="Select Form" title="Select Form Icon" style="border: 1px solid gray; zoom:60%;">
 
 3. The form is sent to the customer and the status of the form on the live interaction pane shows **Sent**.  
-<img src="../images/form-sent.png" alt="Form Sent" title="Form Sent" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/form-sent.png" alt="Form Sent" title="Form Sent" style="border: 1px solid gray; zoom:70%;">
 
 4. A message is displayed on the console once the customer submits the form and the status of the form shows Filled. Clicking the form/View Form on the confirmation message displays the form.  
-<img src="../images/filled-form-confirmation.png" alt="Form Filled" title="Form Filled" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/filled-form-confirmation.png" alt="Form Filled" title="Form Filled" style="border: 1px solid gray; zoom:60%;">
 
 5. Click the **Unmask** icon to view the fields (applicable if mask is enabled during form creation).  
-<img src="../images/masked-form.png" alt="Masked Form" title="Masked Form" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/masked-form.png" alt="Masked Form" title="Masked Form" style="border: 1px solid gray; zoom:70%;">
 
     The agent form fields are displayed.  
     <img src="../images/unmasked-details.png" alt="Unmasked Form" title="Unmasked Form" style="border: 1px solid gray; zoom:70%;">
 
     The demonstration below shows how you can share an agent form with a customer and view the filled form.  
     <img src="../images/agent-forms-demo.gif" alt="Agent Forms Demo" title="Agent Forms Demo" style="border: 1px solid gray; zoom:70%;">
+
+## Manual PII Redaction
+
+During live chat sessions, the manual redaction feature enables agents to remove or mask sensitive information, including Personally Identifiable Information (PII). This capability allows agents to respond immediately to accidental disclosures and helps prevent the storage or exposure of sensitive data, supporting compliance with data privacy regulations. Administrators can configure this functionality from [Permissions](../user-management/role-management.md#permissions).
+
+Steps to manually redact PII data:
+
+1. Highlight the text you want to redact. The **Redact Data** option appears.  
+    <img src="../images/highlight-text.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:70%;">
+2. Click **Redact Data**.  
+    <img src="../images/redact-data-button.png" alt="Redact Data Button" title="Redact Data Button" style="border: 1px solid gray; zoom:70%;">
+3. In the confirmation prompt, click **Redact Data** again.  
+    <img src="../images/confirmation.png" alt="Redact Data Confirmation" title="Redact Data Confirmation" style="border: 1px solid gray; zoom:70%;">  
+    The selected text is redacted.  
+    <img src="../images/redacted.png" alt="Redacted" title="Redacted" style="border: 1px solid gray; zoom:70%;">  
+    The following demonstration illustrates this process.  
+    <img src="../images/redact-data.gif" alt="redaction Demo" title="Redaction Demo" style="border: 1px solid gray; zoom:70%;">  
+
+!!! Note
+
+    * Agents can select and redact only one user message at a time. They can select multiple lines within that message.
+    * Manual redaction applies to all digital channels except email.
+    * This feature does not support redacting messages in the user's console.
+    * Redaction applies to plain text, even if the text is already redacted.
 
 ## Snooze
 
@@ -557,34 +621,38 @@ Steps to snooze a conversation:
 Agents can view and respond to emails on the console. The emails appear on the console as follows:
 
 **Threaded email structure**: A threaded email structure features a visible distinction between agent and user emails.  
-<img src="../images/threaded-email-structure.png" alt="Threaded Email Structure" title="Threaded Email Structure" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/threaded-email-structure.png" alt="Threaded Email Structure" title="Threaded Email Structure" style="border: 1px solid gray; zoom:70%;">
 
 **Collapsible email tiles**: This allows agents to minimize or expand email threads as needed, reducing clutter and improving the organization of the email inbox.  
-<img src="../images/collapsible-email-tiles.png" alt="Collpsible Email Tiles" title="Collpsible Email Tiles" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/collapsible-email-tiles.png" alt="Collpsible Email Tiles" title="Collpsible Email Tiles" style="border: 1px solid gray; zoom:70%;">
 
 These settings can be configured from [Agent settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings).
 
-**Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.  
-<img src="../images/cc-and-bcc-email.png" alt="CC and BCC" title="CC and BCC" style="border: 1px solid gray; zoom:80%;">
+**Reply and Reply All**: Agents can click **Reply** to open a response window addressed only to the most recent sender. Clicking **Reply All** opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.  
+<img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
 
-<img src="../images/email-distribution-list.png" alt="Email Distribution  List" title="Email Distribution List" style="border: 1px solid gray; zoom:80%;">
+**Arrival Summary**: Every email conversation begins with an Arrival summary once an agent accepts it. For more information about the arrival summary, refer to [Arrival Summary](#arrival-summary).  
+<img src="../images/email-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
+
+**Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.  
+<img src="../images/cc-and-bcc.png" alt="CC and BCC" title="CC and BCC" style="border: 1px solid gray; zoom:70%;">
 
 **Standard Responses**:
 You can choose from a library of configured standard responses.
 
-1. Click the **Standard Response** icon at the bottom of the email compose bar. The count of response templates in each category is displayed.  
-<img src="../images/standard-response.png" alt="Standard Response Icon" title="Standard Response Icon" style="border: 1px solid gray; zoom:80%;">
+1. Click the **Standard Response** icon at the bottom of the email text editor. The count of response templates in each category is displayed.  
+<img src="../images/standard-response.png" alt="Standard Response Icon" title="Standard Response Icon" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the category to view the standard response templates in that category.  
-<img src="../images/standard-response-library.png" alt="Standard Reposnse Tam[plates" title="Standard Response Templates" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/standard-response-library.png" alt="Standard Response Templates" title="Standard Response Templates" style="border: 1px solid gray; zoom:70%;">
 
 3. Click the Standard Response from the list to use that response in the email.  
-<img src="../images/standard-response-filled.png" alt="Send Standard Repsonse" title="Send Standard Reponse" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/standard-response-filled.png" alt="Send Standard Response" title="Send Standard Response" style="border: 1px solid gray; zoom:70%;">
 
     **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a ‘**View More**’ button is displayed.
 
     Click the **Attachment** icon to select and upload files.  
-        <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:70%;">
 
     **Notes**: You can add notes on the interaction (customer feedback, key points, next action, suggestions). This section includes any previous notes added by agents while interacting with the same customer.
 
@@ -640,8 +708,10 @@ Steps to send an outbound email:
     Click the down arrow button ”**V**” beside Send and click **Send & Close**.  
         <img src="../images/send-and-close.png" alt="Send & Close Button" title="Send & Close Button" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation is displayed, and the email is sent. A disposition window appears. Select a disposition and click **Close**.  
+    A confirmation is displayed, and the email is sent. A disposition window appears.   
         <img src="../images/disposition-sent-mail.png" alt="Disposition Sent Mail" title="Disposition Sent Mail" style="border: 1px solid gray; zoom:80%;">
+    If Wrap-up Code prediction is enabled, a disclaimer appears requesting users to verify the content before using it.  
+        <img src="../images/ai-generated-content.png" alt="AI Generated Content" title="AI Generated Content" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -766,7 +836,7 @@ To transfer a conversation to another agent:
 
 !!! Note
 
-    If the customer ends the chat before the agent completes the transfer, Contact Center AI will drop the transfer, and the conversation will not be assigned to any queue or agent. Kore WebSdk v1.0 supports this feature only for chat conversations.
+    If the customer ends the chat before the agent completes the transfer, Contact Center AI will drop the transfer, and the conversation will not be assigned to any queue or agent. WebSdk v1.0 supports this feature only for chat conversations.
 
 **Transfer to External Contacts**
 
@@ -795,18 +865,6 @@ An agent can transfer the call to an external contact during a voice interaction
 <img src="../images/end-interaction-window.png" alt="End Interaction pop-up" title="End Interaction pop-up" style="border: 1px solid gray; zoom:60%;">
 
     Clicking **_Yes_** ends the session and moves the interaction to _After Call Work_.
-
-### Timer After Caller Disconnects a Voice Call
-
-When a caller disconnects, agents can either call back or end the call. If an agent does not take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is disabled for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#auto-logout--auto-close-conversation).
-
-**Timer when the caller disconnects the call**: A depleting timer is displayed on the live interaction pane, with options to end the call or call back.  
-<img src="../images/end-call.png" alt="End Call Button" title="End Call Button" style="border: 1px solid gray; zoom:80%;">  
-
-**Timer when the caller disconnects during a conference call**: A depleting timer is displayed on the live interaction pane, with options to close or rejoin the conference call.  
-<img src="../images/end-conference-call.png" alt="End Conference Call Button" title="End Conference Call Button" style="border: 1px solid gray; zoom:80%;">  
-
-The call transitions to After Call Work (ACW) at the end of the configured timeout duration.
 
 ### Timer After Caller Disconnects a Voice Call
 
@@ -882,6 +940,37 @@ Dispositions can be assigned in two ways:
     * Optionally, type a **Description** of your reason for selecting the disposition.
     * Click **_Close_** to close the conversation.
 
+#### Intelligent Disposition Code Suggestions
+
+When enabled, agents receive intelligent disposition code suggestions automatically at the end of customer conversations. The feature uses LLM analysis of the full conversation transcript and disposition set metadata to recommend the most appropriate wrap-up code. Suggestions appear prominently in the disposition bar and can be accepted with one click or overridden manually, ensuring higher accuracy and reduced wrap-up time. [Learn more](../contactcenter/configurations/settings/wrap-up-code-prediction.md).
+
+Steps to receive intelligent disposition code suggestions:
+
+1. Click **End** to close the conversation.  
+    <img src="../images/end.png" alt="End Button" title="End Button" style="border: 1px solid gray; zoom:70%;">
+
+2. The **Disposition & Notes** window opens with suggested disposition codes.  
+    <img src="../images/disposition-window.png" alt="Disposition & Notes" title="Disposition & Notes" style="border: 1px solid gray; zoom:70%;">
+
+3. Agents can select a disposition code to accept it, or choose multiple disposition codes if needed, and then click **Close**.  
+    <img src="../images/select-and-close.png" alt="Close Button" title="Close Button" style="border: 1px solid gray; zoom:70%;">
+
+### Translate Conversations in Real Time
+
+Agents can translate conversations in real time on the live interaction pane. Administrators can enable this functionality from [Translation Configurations](../contactcenter/configurations/settings/translation-configurations.md).
+
+Steps to translate real-time conversations:
+
+1. Click the **Translate** button at the top right corner of the live interaction pane.  
+    <img src="../images/translate-option.png" alt="Translate Button" title="Translate Button" style="border: 1px solid gray; zoom:70%;">
+
+2. Select the language from the dropdown. Click **Mark as Default** to make it the default language for translation.  
+    <img src="../images/select-language-dropdown.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:70%;">
+
+3. The conversation is translated into the selected language.  
+    <img src="../images/translated-conversation.png" alt="Translated Conversation" title="Translated Conversation" style="border: 1px solid gray; zoom:70%;">  
+    <img src="../images/summary.png" alt="Summary" title="Summary" style="border: 1px solid gray; zoom:70%;">
+
 ## Information Provided to Agents and Customers During Live Interactions
 
 You can interact with customers within the **Live Interaction** area of the Agent Console.  
@@ -905,6 +994,10 @@ This section displays the live interaction summary with the following details:
 
 After accepting the conversation, all interactions by the agent are displayed below the arrival summary. If generating the arrival summary takes time, a loading indicator appears until the summary is ready. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1.
 
+!!! Note
+
+    When sentiment analysis is configured but no utterances are available to analyze, the Sentiment field in the arrival summary displays "Unavailable" instead of remaining blank.
+
 ### Refreshing Bot-Customer Interactions
 
 A reload button appears at the top of the conversation transcript when the bot-customer conversation transcript is missing. Clicking Reload displays the missing information.  
@@ -916,15 +1009,44 @@ When the agent types a response during a chat conversation with a customer, the 
 
 Do the following to enable the typing indicator for chat conversations:
 
-1. To integrate Kore.ai bots chat capability into custom applications, install WebSDK 2.0 on your server. WebSDK 2.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11) for additional information on installing WebSDK 2.0.
-2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 2.0. The Agent Desktop plugin allows the user to interact with the agent through the bot and supports the following features:
+1. To integrate bots chat capability into custom applications, install WebSDK 3.0 on your server. WebSDK 3.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1) for additional information on installing WebSDK 3.0.
+2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 3.0. The Agent Desktop plugin allows the user to interact with the human agent through the AI Agent and supports the following features:
 
     * Audio Calling
     * Video Calling
     * Co-browse
     * Screen Sharing
 
-    Refer to the[ installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11/docs/plugins/agent-desktop) for additional information on installing the plugin.
+    Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1/docs/plugins/agent-desktop) for additional information on installing the plugin.
+
+## Request Supervisor Support
+
+Agents can send requests to the appropriate supervisors for assistance. The supervisor receives a notification and can take necessary actions to resolve the issue. Administrators can configure this functionality from [Permissions](../user-management/role-management.md#permissions)
+
+Steps to request supervisor assistance:
+
+1. Click the ellipsis (**⋮**) at the top right corner of the Live Interaction pane, and click **Request Supervisor Support**.  
+    <img src="../images/ellipsis-button.png" alt="Request Supervisor Support" title="Request Supervisor Support" style="border: 1px solid gray; zoom:70%;"> 
+
+2. The agent can request support from a specific supervisor or multiple supervisors. The supervisor list displays either all supervisors or only those assigned to the relevant skill.  
+    <img src="../images/supervisor-select.png" alt="Select Supervisor" title="Select Supervisor" style="border: 1px solid gray; zoom:70%;">
+
+3. A notification is displayed, and the request is sent to supervisors who are logged in to the platform and have their status set to Available.  
+    <img src="../images/success-message.png" alt="Success Message" title="Success Message" style="border: 1px solid gray; zoom:70%;">
+
+4. A notification is displayed to the supervisor. Supervisors can manage the notifications [Learn more](../console/manage-layout.md#notifications).  
+    <img src="../images/agents-page.png" alt="Supervisor Notification" title="Supervisor Notification" style="border: 1px solid gray; zoom:70%;">
+
+5. The Internal Chat window appears after accepting the agent’s request. The supervisor can support the agent on the internal chat.  
+    <img src="../images/supervisor-internal-chat.png" alt="Supervisor Internal Chat" title="Supervisor Internal Chat" style="border: 1px solid gray; zoom:70%;">
+
+## Real Time Sentiment Capture
+
+Agents can view customers' real-time sentiments during digital conversations on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).  
+<img src="../images/console-sentiment.png" alt="Sentiment" title="Sentiment" style="border: 1px solid gray; zoom:80%;">  
+
+When agents click the sentiment indicator, a graph appears, visually representing emotional fluctuations throughout the interaction. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses promptly, leading to improved empathy and more effective issue resolution. Agents can also customize the graph to focus on specific timeframes or sentiment ranges, allowing deeper analysis when needed.  
+<img src="../images/sentiment-analysis-graph.png" alt="Sentiment Graph" title="Sentiment Graph" style="border: 1px solid gray; zoom:80%;"> 
 
 ## Stacked Messages, Timestamp, and Read Status
 
@@ -986,7 +1108,7 @@ This status is not available for selection by an agent.
 
 If no agents are logged in, conversations will wait in the queue till the maximum wait time specified for the queue.
 After the queue max timeout occurs, the "[no agents available](../contactcenter/flows-and-routing/conditional-flows.md#no-agents-available-flow)" flow is triggered. This is enabled at the account level for new accounts and applies to all channels.
-For existing accounts, the existing routing logic is applicable. For accounts wanting to modify their routing logic, contact Kore Support.
+For existing accounts, the existing routing logic is applicable. For accounts wanting to modify their routing logic, contact Support.
 
 ## CSAT Survey
 
@@ -997,7 +1119,7 @@ CSAT surveys can be triggered based on the scenarios configured by administrator
 * **Show to Everyone**: If the “Show to Everyone” scenario is configured while creating the survey, the survey is triggered automatically for every interaction that concludes between an agent and a customer on digital or voice channels.
 * **Show to Every nth User**: If the “Show to nth User” scenario is configured while creating the survey, the survey is triggered automatically for the nth interaction that concludes between an agent and a customer on digital or voice channels. For example: If the frequency is set to 2, then the survey is triggered for every second customer.
 * **Agents can trigger**: If the “Agents can trigger” scenario is configured while creating the survey, the survey can be triggered by agents at any point during the interaction as follows:
-    * Click the **Send Survey** button on the right corner above the compose bar. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.  
+    * Click the **Send Survey** button on the right corner above the text editor. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.  
     <img src="../images/csat-button.png" alt="CSAT Button" title="CSAT Button" style="border: 1px solid gray; zoom:70%;">
 
     * The survey is triggered to the customer when the agent clicks the End button with the survey selected.
@@ -1009,6 +1131,6 @@ CSAT surveys can also be triggered in scenarios when there are no active partici
 * Outside hours of operation
 * No Agents Available flow
 * Agent/Customer side terminations or system terminations due to user inactivity
-* Subflows (No agents flow/Out of hours flow)
+* Sub-flows (No agents flow/Out of hours flow)
 
 For these scenarios, the CSAT scores are assigned to the interaction.
