@@ -216,7 +216,7 @@ Key enhancements
 * Implemented smart query analysis that identifies when all required entities are present in the initial request.
 * Enhanced form logic to display input forms only when mandatory fields are missing from the user query.
 
-[Learn more :octicons-arrow-right-24:](../custom-agents/prompt-agents)
+[Learn more :octicons-arrow-right-24:](../custom-agents/prompt-agents.md)
 
 **User Management Updates**
 
@@ -445,7 +445,7 @@ You can now leverage non-deterministic AI algorithms to autonomously manage comp
     - The View Response option takes users to their conversation thread, maintaining continuity between queries and responses.
   
     - Bot can send users notifications in the workflow so that another user can continue the flow, with customizable response options and action buttons. 
-    [Learn more :octicons-arrow-right-24:](./../custom-agents/notify-bot-agent-api.md)
+    [Learn more :octicons-arrow-right-24:](../custom-agents/notify-api.md)
 
 * Prompt Agent: Users can now download knowledge documents that were previously uploaded by other users, enhancing collaboration and knowledge sharing across teams. Additionally, we have added the ***OpenAI o1*** model, which provides access to a broader knowledge base for generating more comprehensive and accurate responses. [Learn more :octicons-arrow-right-24:](./../custom-agents/prompt-agents.md)
 
