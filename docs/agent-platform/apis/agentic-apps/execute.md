@@ -156,10 +156,33 @@ If debug mode is enabled and set to thoughts, irrespective of streamMode, though
   <tr>
    <td>isAsync
    </td>
-   <td>Set this to true for asynchronous execution. Defaults to false for synchronous execution. In case of async operations, a runId is returned, allowing you to check the status later.
+   <td>Indicates whether the API should execute asynchronously. 
+   <ul>
+    <li><b>false (default):</b> Executes synchronously and returns the result immediately.</li>
+    <li><b>true:</b> Executes asynchronously. If the callbackURL is provided, the response is shared on the URL else this API returns a runId that can be used to retrieve the status or result later.</li>
+   </ul>
    </td>
    <td>No
    </td>
+  </tr>
+<tr>
+   <td>callbackUrl</td>
+   <td>The endpoint to which the asynchronous response should be sent. Must be a valid, publicly accessible URL.
+   <ul>
+    <li>If provided, the platform makes an HTTP POST request to the callbackURL with the result payload after the processing is complete.</li>
+    <li>If omitted in an async request, you must use the runId to fetch the result manually.</li>
+   </ul>
+   </td>
+   <td>No</td>
+  </tr>
+  <tr>
+   <td>callbackToken</td>
+   <td>An authentication token included when sending the asynchronous response to the specified callbackUrl. This ensures secure delivery of results to the given endpoint. 
+   <p>If callbackToken is provided, it is included in the HTTP request headers to the callbackURL using the standard Bearer token authentication format:
+   <p>
+   <code>Authorization: Bearer &lt;callbackToken&gt;</code>
+   </td>
+   <td>No</td>
   </tr>
   <tr>
    <td>attachments
@@ -429,15 +452,23 @@ If debug is enabled, the response has additional information as shown below.
 
 #### Asynchronous Execution
 
+* **Key configuration fields:**
+    * “isAsync”: true
+    * callbackUrl(optional): The endpoint to which the response must be sent. 
+    * callbackToken(optional): Auth token to be passed for authentication on the callbackUrl. 
+* Initiates an agent run. 
+* If `callbackUrl` is provided, the response is sent to that endpoint upon completion. The platform makes an HTTP POST request to the `callbackURL` with the result payload.
+* If `callbackUrl` is not provided, the API responds immediately with a `runID`, which can be used later to query the execution status and response.
+* If `callbackToken` is provided, it is included in the HTTP request headers to the `callbackURL` using the standard Bearer token authentication format:
+
+    `Authorization: Bearer <callbackToken>` 
 
 
-* Initiates an agent run but returns immediately with a runID, allowing you to check the status later. 
-* **Key configuration field:**` "isAsync": true`
 
-**Example - Sample Request**
+**Example - Sample Request without Callback URL**
 
 
-```
+```json
 {
  "sessionIdentity": [
    {
@@ -465,7 +496,7 @@ If debug is enabled, the response has additional information as shown below.
 A runId is returned in response. Use this ID to check the status of the run. Refer to the Run Status API to learn more. 
 
 
-```
+```json
 {
 "status": "processing",
 "runId": "r-e4c42e99-39ce-44d6-8ab3-0a3de20c432f",
@@ -474,6 +505,33 @@ A runId is returned in response. Use this ID to check the status of the run. Ref
 ```
 
 
+**Example - Sample Request with Callback URL**
+
+```json
+{
+ "sessionIdentity": [
+   {
+     "type": "sessionReference",
+     "value": "xxxx"
+   }
+ ],
+ "input": [
+   {
+     "type": "text",
+     "content": "Place an order for a thin crust pizza with bell peppers."
+   } 
+ ],
+ "stream": {
+   "enable": false,
+   "streamMode": "tokens"
+ },
+ "isAsync": true,
+ "callbackUrl": "https://example.org/api/response",
+ "callbackToken": "my-token"
+
+
+}
+```
 
 #### Streaming Execution
 

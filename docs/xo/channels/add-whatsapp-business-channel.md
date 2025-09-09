@@ -2,7 +2,7 @@
 
 Users can select any of the following messaging partners to enable WhatsApp Business messaging:
 
-- [Infobip](#adding-the-whatsapp-channel-using-infobip-applicationadding-the-whatsapp-channel-using-infobip-application)
+- [Infobip](#adding-the-whatsapp-channel-using-infobip-application)
 - [Gupshup](#adding-the-whatsapp-channel-using-gupshup-application)
 - [Karix](#adding-the-whatsapp-channel-using-karix-application)
 - [Netcore](#adding-the-whatsapp-channel-using-netcore-application)
@@ -63,7 +63,7 @@ Steps to configure **Infobip**:
 
     !!! note
 
-          If you’re using the development sandbox on Infobip, once the channel is enabled and published, you will need to send messages in the format “[Keyword on infobip](User input)” For example, “Kore Hi”.
+          If you’re using the development sandbox on Infobip, once the channel is enabled and published, you will need to send messages in the format '[Keyword on infobip][User input]' For example, “Kore Hi”.
 
 
 
@@ -112,7 +112,7 @@ The important steps in completing this channel enablement are as follows:
 
     * [Create a WABA (WhatsApp Business Account)](#step-2a-create-a-new-whatsapp-business-account).
     * [Set up the WABA Parameters on the Platform](#step-2b-set-up-the-waba-parameters-on-the-platform).
-    * [Configure the Callback URL/Webhook URL](#step-2c-configure-the-callback-urlwebhook-url).
+    * [Configure the Callback URL/Webhook URL](#step-2-c-configure-the-callback-urlwebhook-url).
 
 3. [Secure the Integration](#step-3-secure-the-integration).
 

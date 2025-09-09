@@ -1,6 +1,6 @@
 # Integration with Third-party Services
 
-The **Integrations** feature allows you to connect the Agent Platform to third-party services and use their features seamlessly within your account. This extends the platform’s capabilities to leverage these services and build high-quality AI applications. Once you add a connection for an integration, you can link it to the **Integration node** in the Tool Flow canvas. This allows you to seamlessly use third-party services while building your tool automation. [Learn more](../../tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
+The **Integrations** feature allows you to connect the Agent Platform to third-party services and use their features seamlessly within your account. This extends the platform’s capabilities to leverage these services and build high-quality AI applications. Once you add a connection for an integration, you can link it to the **Integration node** in the Tool Flow canvas. This allows you to seamlessly use third-party services while building your tool automation. [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
 The Agent Platform supports over 120 integrations across various categories. Each integration is secured by an authorization mechanism supported by the third-party service, which validates the user’s identity before accessing account resources, such as apps or files. The primary auth methods supported for integrations include:
 
@@ -133,7 +133,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Airtable
    </td>
-   <td>Airtable is a low‒code platform that helps build next generation apps. Move beyond rigid tools, operationalize your critical data, and reimagine workflows with AI.
+   <td>Airtable is a low‒code platform that helps build next generation apps. Move beyond rigid tools, and implement your critical data, and re-imagine workflows with AI.
    </td>
    <td> 17
    </td>
@@ -645,7 +645,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Freshdesk
    </td>
-   <td>A customer support platform that provides helpdesk support with all the smart automations to get things done faster.
+   <td>A customer support platform that provides help desk support with all the smart automation to get things done faster.
    </td>
    <td> 7
    </td>
@@ -1675,7 +1675,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Zoominfo
    </td>
-   <td>ZoomInfo is a multiplatform operating system that revenue teams use to deliver business growth.
+   <td>ZoomInfo is a multi-platform operating system that revenue teams use to deliver business growth.
    </td>
    <td> 14
    </td>

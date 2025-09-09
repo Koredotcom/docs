@@ -1,212 +1,30 @@
 # Germany (DE) Firewall Rules
 
-<table>
-  <tr>
-   <td colspan="6" >
-<h2><strong>LAPTOP</strong></h2>
+## LAPTOP
 
-   </td>
-  </tr>
-  <tr>
-   <td>Secure Media (ICE/STUN/SRTP) Edge Locations
-   </td>
-   <td>Protocol
-   </td>
-   <td>Source IP
-   </td>
-   <td>Source Port †
-   </td>
-   <td>Destination IP Ranges
-   </td>
-   <td>Destination Port Range
-   </td>
-  </tr>
-  <tr>
-   <td>turn IP
-   </td>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>168.86.128.0/18
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| Secure Media (ICE/STUN/SRTP) Edge Locations | Protocol | Source IP | Source Port † | Destination IP Ranges | Destination Port Range |
+|---------------------------------------------|----------|-----------|---------------|------------------------|------------------------|
+| turn IP                                     | UDP      | ANY       | ANY           | 168.86.128.0/18        | 6000-65535             |
 
-<table>
-  <tr>
-   <td rowspan="4" >Voice Gateway SBC
-   </td>
-   <td>TCP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.70.125.14 (de-savg-sbc1.kore.ai)
-   </td>
-   <td>8443
-   </td>
-  </tr>
-  <tr>
-   <td>TCP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>18.158.223.171 (de-savg-sbc2.kore.ai)
-   </td>
-   <td>8443
-   </td>
-  </tr>
-  <tr>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.70.125.14
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-  <tr>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>18.158.223.171
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-  <tr>
-   <td>Voice Gateway Web URL
-   </td>
-   <td>TCP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>*.kore.ai
-   </td>
-   <td>443
-   </td>
-  </tr>
-  <tr>
-   <td>Twilio Stun
-   </td>
-   <td>TCP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>*.twilio.com
-   </td>
-   <td>443
-   </td>
-  </tr>
-</table>
+| Component             | Protocol | Source IP | Source Port | Destination IP / FQDN                | Destination Port Range |
+|-----------------------|----------|-----------|-------------|---------------------------------------|------------------------|
+| Voice Gateway SBC     |          |           |             |                                       |                        |
+| ↳                     | TCP      | ANY       | ANY         | 3.70.125.14 (de-savg-sbc1.kore.ai)    | 8443                   |
+| ↳                     | TCP      | ANY       | ANY         | 18.158.223.171 (de-savg-sbc2.kore.ai) | 8443                   |
+| ↳                     | UDP      | ANY       | ANY         | 3.70.125.14                           | 6000-65535             |
+| ↳                     | UDP      | ANY       | ANY         | 18.158.223.171                        | 6000-65535             |
+| Voice Gateway Web URL | TCP      | ANY       | ANY         | *.kore.ai                             | 443                    |
+| Twilio Stun           | TCP      | ANY       | ANY         | *.twilio.com                          | 443                    |
 
-<table>
-  <tr>
-   <td colspan="6" >
-<h2><strong>Voice Gateway SBC</strong></h2>
+## Voice Gateway SBC
 
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="8" >Session Border Controller (SBC)
-
-(Agent SBC)
-   </td>
-   <td>TCP/UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.70.125.14 (de-savg-sbc1.kore.ai)
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td>TLS
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.70.125.14 (de-savg-sbc2.kore.ai)
-   </td>
-   <td>5061
-   </td>
-  </tr>
-  <tr>
-   <td colspan="5" >
-   </td>
-  </tr>
-  <tr>
-   <td>TCP/UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>18.158.223.171
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td>TLS
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>18.158.223.171
-   </td>
-   <td>5061
-   </td>
-  </tr>
-  <tr>
-   <td colspan="5" >
-   </td>
-  </tr>
-  <tr>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.70.125.14
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-  <tr>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>18.158.223.171
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
+| Component                            | Protocol | Source IP | Source Port | Destination IP / FQDN                | Destination Port Range |
+|--------------------------------------|----------|-----------|-------------|---------------------------------------|------------------------|
+| Session Border Controller (SBC) <br>(Agent SBC) | TCP/UDP  | ANY       | ANY         | 3.70.125.14 (de-savg-sbc1.kore.ai)    | 5060                   |
+|                                      | TLS      | ANY       | ANY         | 3.70.125.14 (de-savg-sbc2.kore.ai)    | 5061                   |
+|                                      |          |           |             |                                       |                        |
+|                                      | TCP/UDP  | ANY       | ANY         | 18.158.223.171                        | 5060                   |
+|                                      | TLS      | ANY       | ANY         | 18.158.223.171                        | 5061                   |
+|                                      |          |           |             |                                       |                        |
+|                                      | UDP      | ANY       | ANY         | 3.70.125.14                           | 6000-65535             |
+|                                      | UDP      | ANY       | ANY         | 18.158.223.171                        | 6000-65535             |

@@ -212,7 +212,7 @@ Key improvements
 * Enhanced Content Support: Processes Standard Responses, Events, FAQs, and JSON/JavaScript templates. It retains the core rephrasing capability with the new Default-V2 prompt framework.
 * Granular Control: Configure globally or at the component level (User, Error, Bot Prompts). Select specific response elements (messages, confirmations, entity values) for rephrasing with emotionally intelligent language. 
 
-[Learn more:octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#rephrase-responses)
+[Learn more:octicons-arrow-right-24:](../../generative-ai-tools/genai-features-automationai.md#rephrase-responses)
 
 
 <font size="4">Agent Transfer</font>
@@ -292,7 +292,7 @@ Key benefits
 * Deliver more relevant and contextually appropriate responses to end users.
 * Configurable confidence thresholds aligned with their specific use case needs.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#automation-ai---genai-feature)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features-automationai.md)
 
 
 **Pre-built and Custom Models Support for Rephrase User Query** 
@@ -300,7 +300,7 @@ Key benefits
 The Rephrase User Query feature now supports both Pre-built and Custom Models, in addition to Kore.ai XO GPT. To use these models, users must create a custom prompt.
 
 Users can optionally provide the `Conversation_history` key to specify the number of previous conversation messages to send to the LLM for improved contextual understanding.
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#automation-ai---genai-features)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features-automationai.md)
 
 **Expanded PII Settings at the Agent Node Level**
 
@@ -367,7 +367,7 @@ Key features
 
 * Dedicated orchestrator to define the voice experiences and controls. 
 
-[Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md#conversation-management-approach)
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md)
 
 <font size="4">DialogGPT</font>
 
@@ -476,7 +476,7 @@ Key Updates:
 * Supports transitions to both orphan nodes and sub-dialogs.
 * Ensures full backward compatibility with existing tool configurations.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#tools){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md){:target="_blank"}
 
 <font size="4">Agent Transfer</font>
 
@@ -538,7 +538,7 @@ Key changes
 * Scripts execution order in a defined flow: Node Pre-processor → Prompt Pre-processor → Prompt Execution → Prompt Post-processor → Node Post-processor.
 * Support for app functions in addition to content, context, and environment variables in the node level pre and post-processor scripts.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#custom-prompt-for-agent-node)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md)
 
 
 <hr>
@@ -1200,7 +1200,7 @@ This feature also helps address the current limitation of system messages availa
 
 **Customize Virtual Assistant’s Theme & Design**
 
-The platform now supports customizing the Virtual Assistant's look and feel with the new Theme and Design feature. This includes changes to welcome text, buttons, colors, chat windows, and sound themes to match their needs. A real-time preview pane shows changes instantly and makes it easy to make any adjustments before deploying the updated design. [Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#virtual-assistant-theme--design){:target="_blank"}
+The platform now supports customizing the Virtual Assistant's look and feel with the new Theme and Design feature. This includes changes to welcome text, buttons, colors, chat windows, and sound themes to match their needs. A real-time preview pane shows changes instantly and makes it easy to make any adjustments before deploying the updated design. [Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#ai-agent-theme--design){:target="_blank"}
 
 **Enhanced Panels & Widgets**
 
@@ -1237,7 +1237,7 @@ The Comments feature now includes comment and thread actions, user mentions and 
 
 **Enable App Import Functionality using Zip File Upload**
 
-Platform users can now import apps by uploading a ZIP file containing the app's data. This eliminates the need to extract and manually import JSON files. The ZIP file import works for both new and existing apps. [Learn more :octicons-arrow-right-24:](../../administration/bot-management.md#steps-in-importing-to-an-existing-assistant){:target="_blank"}
+Platform users can now import apps by uploading a ZIP file containing the app's data. This eliminates the need to extract and manually import JSON files. The ZIP file import works for both new and existing apps. [Learn more :octicons-arrow-right-24:](../../administration/bot-management.md){:target="_blank"}
 
 The corresponding APIs have also been updated to support this change: Import New VA and Import Existing VA.
 
@@ -1340,7 +1340,7 @@ Key features
 * Simplified Training: There is no need for training utterances or invocation phrases for bot qualification. However, providing complete dialog descriptions is required for more accurate intent identification.
 
     
-[Learn more :octicons-arrow-right-24:](../automation/dynamic-routing.md)
+[Learn more :octicons-arrow-right-24:](../../automation/dynamic-routing.md)
 
 
 <font size="4">LLM and Generative AI Framework</font>

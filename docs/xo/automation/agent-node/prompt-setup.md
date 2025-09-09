@@ -275,7 +275,7 @@ Use Regular Prompts When:
 
 ## Custom Prompt for Agent Node
 
-Custom prompts are required to work with the Agent Node for tool-calling functionality. Platform users can create custom prompts using JavaScript to tailor the AI model's behavior and generate outputs aligned with their specific use case. By leveraging the Prompts and Requests Library, the users can access, modify, and reuse prompts across different Agent Nodes.
+Custom prompts are required to work with the Agent Node for tool-calling functionality. Platform users can create custom prompts using JavaScript to tailor the AI model's behavior and generate outputs aligned with their specific use case. By leveraging the Prompts Library, the users can access, modify, and reuse prompts across different Agent Nodes.
 The custom prompt feature enables users to process the prompt and variables to generate a JSON object, which is then sent to the configured language model. Users can preview and validate the generated JSON object to ensure the desired structure is achieved.
 
 Agent Node with custom prompt supports configuring pre and post-processor scripts at both node and prompt levels. This enables platform users to reuse the same custom prompt across multiple nodes while customizing the processing logic, input variables, and output keys for each specific use case. 
@@ -509,7 +509,7 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
 The process involves creating a new prompt in the Prompts Library and writing the JavaScript code to generate the desired JSON object. Users can preview and test the prompt to ensure it generates the expected JSON object. Once the custom prompt is created, users can select it in the Agent Node configuration to leverage its functionality.
 
 
-For more information on Custom Prompt, see [Prompts and Requests Library](../../generative-ai-tools/prompts-library.md).
+For more information on Custom Prompt, see [Prompts Library](../../generative-ai-tools/prompts-library.md).
 
 #### Add V1 Custom Prompt
 

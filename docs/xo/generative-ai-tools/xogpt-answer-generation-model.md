@@ -280,7 +280,7 @@ I found only the answer to one question 'what's a home loan?': A home loan is a 
 
 ## XO GPT - Model Building Process
 
-The model-building process consists of several key stages that form the backbone of AI system development. To know more see [Model Building Process](./xogpt-model-specifications.md#xo-gpt---model-building-process).
+The model-building process consists of several key stages that form the backbone of AI system development. To know more see [Model Building Process](xogpt-model-specifications.md#xo-gpt-model-building-process).
 
 ## Model Benchmarks
 
@@ -291,8 +291,8 @@ The following table summarizes the versions covered in this document:
 | Model Version | Accuracy | Tokens/sec (TPS) | Latency (secs) | Benchmark Comparison | Test Data & Results |
 |--------------|----------|------------------|---------------|----------------------|----------------------|
 | Version 3.0  | 97%      | 37               | 0.92          | [Benchmark Summary v3](#benchmarks-summary-v3) | [Test data and results v3](./test-date-and-results/xogpt-answer-generation-v3.0.xlsx) |
-| Version 2.0  | 96%      | 54               | 1.03          | [Benchmark Summary v2](#benchmarks-summary-v2) | [Test data and results v2](../test-date-and-results/xogpt-answer-generation-v2.0.xlsx) |
-| Version 1.0  | 94%      | 20               | 1.36          | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) |
+| Version 2.0  | 96%      | 54               | 1.03          | [Benchmark Summary v2](#benchmarks-summary-v2) | [Test data and results v2](./test-date-and-results/xogpt-answer-generation-v2.0.xlsx) |
+| Version 1.0  | 94%      | 20               | 1.36          | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](./test-date-and-results/xogpt-answer-generation-v1.0.xlsx) |
 
 
 ### Version 3.0
@@ -768,7 +768,7 @@ To compare and contrast the performance of the fine-tuned model, we've considere
 
 <img src="../images/ans-gen-graphv2.png" alt="Benchmarks Summary" title="Benchmarks Summary" style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results v2](../test-date-and-results/xogpt-answer-generation-v2.0.xlsx) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results v2](./test-date-and-results/xogpt-answer-generation-v2.0.xlsx) report provides a deeper dive into the evaluation process and results.
 
 ### Version 1.0
 
@@ -1002,5 +1002,5 @@ To compare and contrast the performance of the fine-tuned model, we've considere
 
 <img src="../images/answer05.png" alt="Benchmarks Summary" title="Benchmarks Summary" style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results v1](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results v1](./test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report provides a deeper dive into the evaluation process and results.
 

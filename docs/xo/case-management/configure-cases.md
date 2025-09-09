@@ -1,24 +1,28 @@
 # Configure Cases
 
-The Configure Cases feature empowers administrators to tailor the system to manage customer inquiries, issues, and complaints effectively. Administrators can create and customize cases to improve communication between customers and the service team, ensuring timely and organized resolution.
+The Configure cases feature empowers administrators to tailor the system to manage customer inquiries, issues, and complaints effectively. Administrators can create and customize cases to improve communication between customers and the service team, ensuring timely and organized resolution.
 
-This section guides you through the case configuration process, highlighting the key components that allow adaptation to your specific business needs.
+This section guides you through the case configuration process, highlighting the key components that helps in adaptation to your specific business needs.
 
 Administrators can configure the system to specific business needs through the following key components:
+
+* **[Case Templates](#case-templates-configuration):** Agents can design customizable forms with predefined tasks to guide themselves through common issues, improving consistency and efficiency.
 
 * **[Fields](#fields-configuration):** Create and manage custom data fields to help agents collect relevant information during case resolution.
 
 * **[Task Templates](#task-templates-configuration):** Develop standardized task sets to help teams streamline the management of various cases.
 
-* **[Case Templates](#case-templates-configuration):** Agents can design customizable forms with predefined tasks to guide themselves through common issues, improving consistency and efficiency.
-
 * **[Status](#status-configuration):** Agents define and manage case statuses to track the progress of cases throughout their lifecycle.
 
 * **[Priority](#priority-configuration):** Agents set up priority levels to determine the urgency and order for addressing corresponding cases and tasks.
 
-* **[User Management](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features)**{:target="_blank"}: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues. 
+* **[User Management](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features)**{:target="_blank"}: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues.
 
-## Fields Configuration
+* **[Integrations]()**
+
+* **[Automation]()**
+
+## Fields
 
 Fields represent pieces of data that agents need to collect for a case. The system includes default required fields and allows you to create custom fields with different formats, such as dropdowns, checkboxes, phone numbers, emails, and URLs, based on your business needs. 
 
@@ -313,15 +317,15 @@ To edit new case template:
 To delete the case template, on the **Case Templates** page, click the three dots (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) icon and then click **Delete** to confirm.  
 <img src="../images/delete-case-confirm.png" alt="Delete Case Template" title="Delete Case Template" style="border: 1px solid gray; zoom:70%;">
 
-## Status Configuration
+## Status
 
 Status configuration helps you track the progress and current state of cases and tasks, ensuring effective and efficient management. The system provides five default statuses (Progress, On Hold, Resolved, and Closed), but you can create and manage both default and custom statuses to meet your business requirements. This configuration contains the following statues:
 
-* **System Statuses:** You cannot edit the system-defined statuses, which are predefined.
+* **System Statuses:** System statuses are predefined and you cannot edit them.
 
 * **Custom Statuses:** Created by administrators to meet specific business needs, which you can edit, activate or deactivate, or delete as needed.
 
-### Access Status Configuration
+### Access Status
 
 To access case management, navigate to **Contact Center AI > Case Management > Configuration > Status**.  
 <img src="../images/new-status-access.png" alt="New Status" title="New Status" style="border: 1px solid gray; zoom:70%;">
@@ -458,3 +462,10 @@ To delete the custom priority status of cases:
 
 2. Click **Delete** to remove.  
 <img src="../images/delete-custom-priority.png" alt="Delete Priority" title="Delete Priority" style="border: 1px solid gray; zoom:70%;">
+
+## Integrations
+
+This section helps in integrating messaging apps to configure for the notifications.
+
+To access case management integrations, navigate to **Contact Center AI > Case Management > Configuration > Priority**.
+

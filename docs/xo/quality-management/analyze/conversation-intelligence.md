@@ -285,12 +285,12 @@ Insights Mining displays the top 30 topics by volume and allows you to identify 
 By default, this widget displays a blank screen without any data. Based on the date range and topic selected from the calendar, it pulls the required sentiment scores for interactions in bubbles.
 
 #### All Languages
-This enables multi-selection of languages from the **All Languages** drop-down menu, corresponding to the languages chosen in the evaluation form. By default, all languages are selected. Only the metrics configured for the chosen languages are shown under this filter. 
 
- You can filter data by channel (All, Voice, Chat, Email). This filter affects the entire dashboard, except for agent occupancy, since occupancy per channel is not tracked.
+This enables multi-selection of languages from the **All Languages** dropdown menu, corresponding to the languages chosen in the evaluation form. By default, all languages are selected. Only the metrics configured for the selected languages appear in the filter. 
 
- Upon selection of any language and channel filter, the corresponding interaction sentiment scores along with bubble plotting visual representations are populated in the **Topics** and **Keyword Cloud & Emotions** for all widgets. 
+ You can also filter data by channel: **All**, **Voice**, **Chat**, or **Email**). This filter applies to the entire dashboard, except for agent occupancy, since occupancy per channel is not tracked.
 
+ When you select a language or channel filter, the corresponding interaction sentiment scores are displayed. Visual representations, such as bubble plots, are also updated in the **Topics** and **Keyword Cloud & Emotions** for all widgets.
 
 ### Topics 
 

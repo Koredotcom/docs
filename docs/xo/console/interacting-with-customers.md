@@ -35,7 +35,7 @@ For example, the formal draft response “Your mortgage appointment has been sch
 3. **Expand**: This option expands the draft response. For example, the draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, at 1 pm” is elaborated as “We would like to notify you that your mortgage appointment has been successfully scheduled for June 24, 2023. Please arrive promptly at 1:00 pm for your appointment.”
 4. **Rephrase**: This option allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
 
-    This feature can be enabled from [Generative AI Tools > GenAI Features > Agent Response Rephrasing](../generative-ai-tools/genai-features.md#agent-response-rephrasing).
+    This feature can be enabled from [Generative AI Tools > GenAI Features > Agent Response Rephrasing](../generative-ai-tools/genai-features.md).
 
 ### Add/Delete Hyperlinks in the Text Editor
 
@@ -868,7 +868,7 @@ An agent can transfer the call to an external contact during a voice interaction
 
 ### Timer After Caller Disconnects a Voice Call
 
-When a caller disconnects, agents can either call back or end the call. If an agent does not take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is disabled for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#auto-logout--auto-close-conversation).
+When a caller disconnects, agents can either call back or end the call. If an agent does not take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is disabled for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md).
 
 **Timer when the caller disconnects the call**: A depleting timer is displayed on the live interaction pane, with options to end the call or call back.  
 <img src="../images/end-call.png" alt="End Call Button" title="End Call Button" style="border: 1px solid gray; zoom:80%;">  

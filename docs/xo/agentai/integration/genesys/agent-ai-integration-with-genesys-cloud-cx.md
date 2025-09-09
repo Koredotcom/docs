@@ -259,8 +259,8 @@ For on-prem, refer to corresponding host<strong> </strong>
 This document provides detailed, step-by-step instructions for setting up the integration of the Agent AI widget in the Genesys environment.
 
 ## Activities on Kore Platform
-* [Capture AI Agent information in Kore Data Table](#capture-bot-information-in-kore-data-table) 
-* [Access Custom Data and Secure Custom Data in AI Agent](#access-custom-data-and-secure-custom-data-in-agent-ai-bot)
+* [Capture AI Agent information in Kore Data Table](#capture-ai-agent-information) 
+* [Access Custom Data and Secure Custom Data in AI Agent](#access-custom-data-and-secure-custom-data-in-ai-agent)
 
 ## Activities on Genesys Cloud
 * [Generate Oauth ID to enable Kore Services to Connect with Genesys](#generate-oauth-id-to-enable-kore-services-to-connect-with-genesys)
@@ -310,8 +310,8 @@ This step involves creating a Genesys Data Table with Agent AI bot details.
 5. Click the “pencil” icon to edit a data table.  
     <img src="../images/pencil-icon.png" alt="pencil-icon" title="pencil-icon" style="border: 1px solid gray; zoom:80%;">   
 
-    !!! note 
-        Do not click on the data table name.  
+        !!! note 
+            Do not click on the data table name.  
 
 6. Click the **Add Field** button under **Custom Fields** to create five custom fields to provide the AgentAssist configuration. Set the data type for all custom fields as **String** while adding.  
     <img src="../images/custom-fields-add-field.png" alt="custom-fields-add-field" title="custom-fields-add-field" style="border: 1px solid gray; zoom:80%;">  
@@ -470,11 +470,11 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
         <img src="../kore-data-table/create-new-app-7.png" alt="create-new-app" title="create-new-app" style="border: 1px solid gray; zoom:80%;">
 
         2. Select the **Read**, **Write**, and **Delete** permissions, as required.  
-        !!! note
-        
-            You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page:   
+            !!! note
+            
+                You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page:   
 
-        <img src="../kore-data-table/apps-new-app-8.png" alt="apps-new-app" title="apps-new-app" style="border: 1px solid gray; zoom:80%;">
+            <img src="../kore-data-table/apps-new-app-8.png" alt="apps-new-app" title="apps-new-app" style="border: 1px solid gray; zoom:80%;">
 
     7. **Process Assignments** (not applicable).
 5. Click **Create** to create the new data table.  
@@ -510,10 +510,10 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
     }
     ```
 
-!!! notes
+    !!! notes
 
-    * For a single queue, the QueueIdentifier value contains one queue name (for example, “Kore”). For multiple queues, it includes all the queue names separated by commas (for example, “Kore, KoreSupport”).
-    * JWEPublicKey and KvpConfig value should be a stringified JSON object. 
+        * For a single queue, the QueueIdentifier value contains one queue name (for example, “Kore”). For multiple queues, it includes all the queue names separated by commas (for example, “Kore, KoreSupport”).
+        * JWEPublicKey and KvpConfig value should be a stringified JSON object. 
 
 **Single Queue Example**  
 <img src="../kore-data-table/single-queue-example-11.png" alt="single-queue-example" title="single-queue-example" style="border: 1px solid gray; zoom:80%;"> 
@@ -574,15 +574,15 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 7. In the **Application URL** field, enter the following structure:  
 ```{[Agent AI URL](https://platform.kore.ai)}[/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://agentassist.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=)&lt;genesys-oauth-Id>&x_passthru_metadata=&lt;Token>&showWidget=true/false&sendEventsToVG=true/false.``` 
 
-!!! notes
+    !!! notes
 
-    * x_passthru_metadata is an optional query parameter. This is required when you wish to pass custom data to Agent AI.
-    * showWidget: Determines whether the Agent AI widget should be displayed during agent transitions.
-        * Set to **true** to display the widget for Agent 1, if Agent 1 exits and Agent 2 takes over the conversation.
-        * Set to **false** if you do not want the widget to be displayed during these transitions.
-    * sendEventsToVG: Determines whether events should be sent to KVG to pause or resume transcriptions when a call is placed on hold or resumed. This helps reduce Automatic Speech Recognition (ASR) costs by avoiding transcription of hold music from Genesys.
-        * Set to **true** to enable the new Audiohook flow for transcriptions, which uses the configurations provided under the Advanced Settings.
-        * Set to **false** to continue using the old Audiohook flow for transcriptions. 
+        * x_passthru_metadata is an optional query parameter. This is required when you wish to pass custom data to Agent AI.
+        * showWidget: Determines whether the Agent AI widget should be displayed during agent transitions.
+            * Set to **true** to display the widget for Agent 1, if Agent 1 exits and Agent 2 takes over the conversation.
+            * Set to **false** if you do not want the widget to be displayed during these transitions.
+        * sendEventsToVG: Determines whether events should be sent to KVG to pause or resume transcriptions when a call is placed on hold or resumed. This helps reduce Automatic Speech Recognition (ASR) costs by avoiding transcription of hold music from Genesys.
+            * Set to **true** to enable the new Audiohook flow for transcriptions, which uses the configurations provided under the Advanced Settings.
+            * Set to **false** to continue using the old Audiohook flow for transcriptions. 
 
 Add the following parameters to the Application URL based on the approach used for storing bot details.
 
@@ -858,7 +858,7 @@ Custom Data and Secure Custom Data can be accessed in Welcome Events in Agent AI
 
 Custom Data can be accessed as {{context.session.UserContext.customData.internalMetaData.<key>}}.
 
-Follow [this doc](./../../agent-experience/access-custom-data-in-agent-ai.md) for the detailed steps on how to access Custom Data.
+Follow [this doc](./../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for the detailed steps on how to access Custom Data.
 
 Secure Custom Data can be accessed as {{context.session.UserContext.secureCustomData.<key>}}.
 
@@ -968,3 +968,12 @@ For first time users, use the POST API and for existing users, use the PUT API t
         }
     }
 ```
+## XO 11 Configuration Notes
+
+For the configured App, ensure at least one Dialog Task has been configured for Agent AI use.
+<img src="../images/dialog-settings-page-25.png" alt="dialog-settings-page" title="dialog-settings-page" style="border: 1px solid gray; zoom:80%;">
+
+**Where to find configuration settings**
+
+You can find the necessary information in **Flows & Channels** > **Digital** > **Web/Mobile Client**.
+<img src="../images/jwt-app-details-26.png" alt="jwt-app-details" title="jwt-app-details" style="border: 1px solid gray; zoom:80%;">

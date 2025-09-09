@@ -284,7 +284,7 @@ Absolutely, your worries are entirely understandable. However, please be assured
 
 ## XO GPT - Model Building Process
 
-The model-building process consists of several key stages that form the backbone of AI system development. To know more see [Model Building Process](./xogpt-model-specifications.md#xo-gpt---model-building-process).
+The model-building process consists of several key stages that form the backbone of AI system development. To know more see [Model Building Process](xogpt-model-specifications.md#xo-gpt-model-building-process).
 
 ## Model Benchmarks
 
@@ -294,7 +294,7 @@ The following table summarizes the versions covered in this document:
 
 | Model Version | Accuracy | Tokens/sec (TPS) | Latency (secs) | Benchmark Comparison | Test Data & Results |
 |--------------|----------|------------------|---------------|----------------------|----------------------|
-| Version 1.0  | 99%      | 45               | 0.9           | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](../test-date-and-results/xogpt-response-rephrasing-v1.0.xlsx) |
+| Version 1.0  | 99%      | 45               | 0.9           | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](./test-date-and-results/xogpt-response-rephrasing-v1.0.xlsx) |
 
 
 
@@ -530,4 +530,4 @@ To compare and contrast the performance of the fine-tuned model, we've considere
 <img src="../images/response01.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results v1](../test-date-and-results/xogpt-response-rephrasing-v1.0.xlsx) report.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results v1](./test-date-and-results/xogpt-response-rephrasing-v1.0.xlsx) report.

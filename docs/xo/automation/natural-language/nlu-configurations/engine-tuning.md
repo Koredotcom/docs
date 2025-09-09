@@ -910,7 +910,7 @@ When multiple patterns are identified in a sentence, define whether the FM Engin
 
 ### Exact Task Name Match
 
-The [FM Engine configuration](../../../automation/natural-language/training/fundamental-meaning.md#thresholds-configurations){:target="_blank"} Intent Detection using Task Name Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
+The [FM Engine configuration](../../../automation/natural-language/training/fundamental-meaning.md){:target="_blank"} Intent Detection using Task Name Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
 
 When disabled, the platform generates a strict pattern that does ‘exact matching’ i.e. if the user input exactly matches with the task name then it will consider as a match. The Exact Task Name Match configuration allows you to choose whether the platform should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
 

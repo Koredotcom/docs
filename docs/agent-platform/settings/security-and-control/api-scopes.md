@@ -91,7 +91,7 @@ The following API scopes are available for this feature.
   <tr>
    <td>Deploy Guardrails
    </td>
-   <td>Deploy predefined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/deploy-guardrails/" target="_blank">Learn more</a>.
+   <td>Deploy pre-defined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/deploy-guardrails/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>

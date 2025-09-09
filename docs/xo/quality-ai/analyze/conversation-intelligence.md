@@ -233,7 +233,7 @@ When no Agent AI playbooks are configured, adherence is displayed for the follow
 
     <img src="../conversation-intelligence/images/playbook-adherence.png" alt="Playbook Adherence" title="Playbook Adherence" style="border: 1px solid gray; zoom:90%;">
 
-    Administrators can configure the attributes for agent playbook adherence. [Learn more](../../console/monitor-queues-agents-and-interactions.md#configure-conversation-intelligence-dashboard).
+    Administrators can configure the attributes for agent playbook adherence. [Learn more](../../console/monitor-queues-agents-and-interactions.md).
 
     !!! Note
 

@@ -18,7 +18,7 @@ In a **Terminal** Window, start _ngrok_ to monitor port 8003 using the following
 ```
 ngrok http 8003
 ```
-![alt_text](../images/ngrok-status.png "ngrok status")
+![alt_text](images/ngrok-status.png "ngrok status")
 
 
 Copy the https **Forwarding URL** as shown in the previous illustration, for example, https://1b47f1d2.ngrok.io. Leave the terminal window open and _ngrok_ running.
@@ -30,7 +30,7 @@ The BotKit SDK requires _node.js_ (version 10 or above) to run on the same serve
 
 In a **Terminal** window, run the `node -v` command to verify installation and version, for example, `v6.10.2`as shown in the following illustration.
 
-![alt_text](../images/nodejs-status.png "nodejs status")
+![alt_text](images/nodejs-status.png "nodejs status")
 
 
 ## Installing and Configuring Your Assistant
@@ -66,7 +66,7 @@ To register your BotKit SDK with the Kore.ai XO Platform, you will need to creat
 5. In the **Callback URL** field, enter the URL for your application that you copied from the **Forwarding URL** from the _ngrok_ application that you installed and ran as part of the prerequisites, for example,  https://1b47f1d2.ngrok.io.
 !!!note
   Each running instance of ngrok will generate a session unique URL. You will need to update the Callback URL field if you stop and restart ngrok._**
-6. In the **Events** section, select **OnHookNode** – An event is triggered when a [Webhook node](../../automation/use-cases/dialogs/node-types/working-with-the-web-hook-node) is encountered in the dialog task flow.
+6. In the **Events** section, select **OnHookNode** – An event is triggered when a [Webhook node](../../automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md) is encountered in the dialog task flow.
 7. Click **Save**. The _Successfully subscribed_ message is displayed.
 
 To configure the BotKit SDK settings, you will need to:
@@ -78,7 +78,7 @@ To configure the BotKit SDK settings, you will need to:
 
 A developer can use any installed assistant immediately for testing as it is available to the owner on save. If you only want to run and test this assistant for this tutorial, you can skip to the next section, _Installing and Configuring the BotKit SDK_.
 
-To enable the assistant for other users, you must publish it so the Admin can approve and deploy the assistant for users. For more information, see [Publishing Your Assistant](../../deploy/publishing-bot).
+To enable the assistant for other users, you must publish it so the Admin can approve and deploy the assistant for users. For more information, see [Publishing Your Assistant](../../deploy/publishing-bot.md).
 
 After you publish an assistant in the XO Platform, an Admin must complete one of the following deployments in the Admin Console depending on whether your assistant’s **Target Audience** is set to **Enterprise Users** (managed users) or **General Public** (unmanaged users):
 

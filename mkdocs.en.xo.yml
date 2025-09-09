@@ -50,6 +50,7 @@ plugins:
         'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
         'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
+        'integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
 extra:
   version:
     provider: mike
@@ -560,7 +561,6 @@ nav:
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
       - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
-      - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - Genesys Cloud CX: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md
       - NICE CX:
         - NICE MAX Desktop (Chat and Voice): agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md

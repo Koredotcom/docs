@@ -92,7 +92,7 @@ By default, this enables all the RAG agents. All the agents use the model config
 ![alt_text](images/agentic-rag/enabled.png "image_tooltip")
 
 
-To change the model and prompt settings or to enable or disable a particular agent, go to the [**Gen AI features**](../generative-ai-tools/genai-features.md#search-ai-model-feature-matrix) under **Generative AI Tools** and make appropriate settings. 
+To change the model and prompt settings or to enable or disable a particular agent, go to the [**Gen AI features**](../generative-ai-tools/genai-features.md) under **Generative AI Tools** and make appropriate settings. 
 
 The following table displays the supported models for each of the agents. 
 

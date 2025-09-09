@@ -4,7 +4,7 @@ Voice Gateway is a comprehensive voice automation solution that manages inbound 
 
 This section covers the fundamental steps required to set up and configure your Voice Gateway for basic operation.
 
-Go to **The Product (For example, Automation AI/ Contact Center AI)** > **Flows & Channels** > **Channels** > **Voice Gateway**.  
+Go to The Product (For example, Automation AI/ Contact Center AI) > Flows & Channels > Channels > Voice Gateway.  
 <img src="../images/vg-page.png" alt="Voice Gateway Page" title="Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Initial Setup
@@ -89,7 +89,7 @@ This option is useful when transferring calls to Contact Center AI from a toll-f
 
 Under the SIP Trunk tab, you can configure the network IPs and domains, DID number, SIP transport protocol, SIP credentials (optional), and Inbound/Outbound direction for phone numbers while the SIP URI is pre-configured.
 
-Agent Assist supports real-time audio streaming through two primary methods: 
+Agent AI supports real-time audio streaming through two primary methods:  
 
 * **SIPREC (SIP Recording)**: Agent Assist acts as a SIPREC server, receiving duplicated audio streams from the contact center platform or a Session Border Controller (SBC). 
 
@@ -100,7 +100,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
 1. Click **Configure SIP Trunk**.  
     <img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;"> 
 
-2. On the **Configure SIP Trunk** page, configure the following: 
+2. On the **Configure SIP Trunk** page, configure the following:  
     1. **Product Selection**: Select the product for which the SIP Trunk is being configured. You can select from the following options:
         * <a href="#ccai">Contact Center AI</a>
         * <a href="#agentai">Agent AI</a>
@@ -145,7 +145,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
             * X-AgentLastName: {{agentLastName}}
 
             !!! note
-            
+
                 The caller number specified in the [Script Task](https://docs.kore.ai/xo/flows/node-types/script-task/) is passed through the SIP headers when a third-party desktop application transfers the call to an agent. 
 
         <span id="agentai">If you select **Agent AI**</span>: 
@@ -182,7 +182,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
 
         * <span id="websocket">If you select **WebSocket**:</span>
 
-            * **Connection URL (Generate URL)**: Copy the auto-generated URL and paste it into your third-party desktop configuration settings. 
+            * **Connection URL (Generate URL)**: Copy the auto-generated URL and paste it into your third-party desktop configuration settings.  
             * **Agent AI Initiated transcription**: Enable or disable auto transcription. When disabled, transcription starts automatically when an RTP stream is received at Kore’s SBC level. 
             * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. These recorded calls can be accessed through a public API. 
             * **Call control parameters**: Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](./../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters).
@@ -313,7 +313,7 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
 
 !!! Note
       
-      * This feature is available only in ‘SmartAssist’ and not implemented in ‘XO11’. We will implement it in the next releases. 
+      * This feature is available only in ‘SmartAssist’ and not implemented in ‘AI for Service’. We will implement it in the next releases. 
       * For now, you can add Primary & Fallback ASR/TTS from the same vendor only.
          * Example: If you have selected the ‘Microsoft Azure Speech Services’ vendor as the ASR, you can enter a label name from the Microsoft vendor itself, such as ‘my_azure-US’.
          * You can configure the label name in Primary ASR/TTS configuration and Fallback ASR/TTS configuration under Show Advanced Settings.
@@ -332,72 +332,15 @@ Voice Gateway supports integration with third party ASR, TTS, and Voice Biometri
 
 The following languages and dialects are supported:
 
-<table>
-  <tr>
-   <td>
-    English (Australia)
-   </td>
-   <td>
-    English (Nigeria)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Canada)
-   </td>
-   <td>
-    English (Pakistan)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Ghana)
-   </td>
-   <td>
-    English (Philippines)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Hong Kong)
-   </td>
-   <td>
-    English (Singapore)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (India)
-   </td>
-   <td>
-    English (South Africa)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Ireland)
-   </td>
-   <td>
-    English (Tanzania)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Kenya)
-   </td>
-   <td>
-    English (United Kingdom)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (New Zealand)
-   </td>
-   <td>
-    English (United States)
-   </td>
-  </tr>
-</table>
+| English (Australia)   | English (Nigeria)        |
+|-----------------------|--------------------------|
+| English (Canada)      | English (Pakistan)       |
+| English (Ghana)       | English (Philippines)    |
+| English (Hong Kong)   | English (Singapore)      |
+| English (India)       | English (South Africa)   |
+| English (Ireland)     | English (Tanzania)       |
+| English (Kenya)       | English (United Kingdom) |
+| English (New Zealand) | English (United States)  |
 
 ## Voice Call Properties (Account Level)
 

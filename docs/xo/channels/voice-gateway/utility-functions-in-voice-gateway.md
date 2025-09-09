@@ -49,7 +49,7 @@ Use this method when you need to **transfer the call directly to an external sou
 
 ## VoiceUtils Helper Methods
 
-These functions can be used in the Channel Override template inside Java script sections. All functions can be executed in the Message Node.
+These functions can be used in the Channel Override template inside JavaScript sections. All functions can be executed in the Message Node.
 
 **General Syntax** - `print(utility function)`
 
