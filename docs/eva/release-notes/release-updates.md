@@ -48,7 +48,7 @@ Key Highlights:
 
 * **Default Keys** – One-click copy and refresh for instant encryption.
 * **BYOK Integration** – Use customer-managed keys with full lifecycle management.
-* **Connection Validatio**n – Built-in tests confirm accessibility and permissions before activation in BYOK integration.
+* **Connection Validation** – Built-in tests confirm accessibility and permissions before activation in BYOK integration.
 * **Automatic Fallback** – If BYOK is removed, the system reverts to default keys.
 
 [Learn more :octicons-arrow-right-24:](../security/enterprise-encryption.md)
@@ -64,6 +64,8 @@ Enhanced SAML Single Sign-On (SSO) configuration by showing account-specific fie
 **Agent Icons Upgrade**
 
 We upgraded the **Agent Icons** across the platform to deliver a more modern, consistent, and visually clear interface. The updated design improves usability, enhances accessibility, and ensures a unified look and feel across the application.
+
+<hr>
 
 ## v1.9.3 July 29, 2025
 
