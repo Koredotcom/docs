@@ -155,6 +155,8 @@ nav:
     - Workspace Management:
       - Account Workspace: workspace-management/account-workspace.md
       - Personal Workspace: workspace-management/personal-workspace.md
+    - Integration:
+      - Amazon Q: integration/amazon-q.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing your users.md
@@ -167,6 +169,10 @@ nav:
       - Rate Limit: assistant-configuration/rate-limit.md
       - Guardrails: assistant-configuration/guardrails.md
       - Orchestration Settings: assistant-configuration/orchestration-settings.md
+      - Channels:
+        - MS Teams: 
+          - Overview: channels/ms-teams/microsoft-teams.md
+          - Configuration: channels/ms-teams/microsoft-teams-config.md
     - Security: 
       - SSO: security/sso.md
       - Domain Management: security/domain-management.md

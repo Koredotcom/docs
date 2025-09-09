@@ -2,6 +2,32 @@
 
 As an administrator, you can create Prompt Agents in the prompt agent builder that users can utilize. These agents collect specific user inputs as variables to customize prompts, enabling various use cases such as content generation, language translation, and text summarization.
 
+## When to Use Prompt Agents
+
+Prompt Agents are designed for scenarios where you need to standardize AI-powered content generation, text processing, or data transformation tasks across your organization. These agents are particularly valuable when you want to ensure consistency in outputs while allowing users to customize inputs based on their specific needs.
+
+### Ideal Use Cases
+
+**Content Generation and Standardization**
+
+* Creating standardized documents like job descriptions, project proposals, or marketing copy that follow organizational templates and guidelines.
+* Generating consistent reports, summaries, or communications that maintain brand voice and formatting standards.
+* Producing multiple variations of content for A/B testing or different audiences.
+
+**Text Processing and Transformation**
+
+* Translating content into multiple languages while maintaining context and tone.
+* Summarizing lengthy documents, reports, or meeting transcripts with a consistent structure and key point extraction.
+* Converting technical documentation into user-friendly formats or different complexity levels.
+
+**Data Analysis and Insights**
+
+* Processing uploaded files (.pdf, .docx, .csv, .xls) to extract insights, generate summaries, or create reports.
+* Analyzing data patterns and generating standardized analytical reports.
+* Creating executive summaries from complex datasets or research documents.
+
+## How Prompt Agents Work
+
 Prompt agents operate using two distinct components:
 
 -   **User-Collected Inputs**: In this scenario, the user's inputs are
@@ -21,7 +47,9 @@ You can create a new agent or import an existing one.
 
 -   [Create a new prompt agent](#create-a-new-prompt-agent)
 
-## Import existing Prompt Agent
+## Managing Prompt Agents
+
+### Import existing Prompt Agent
 
 To import an existing Prompt Agent:
 
@@ -34,7 +62,7 @@ To import an existing Prompt Agent:
 3.  Click **Import** to complete the process. The imported agent will appear on the
     Agents page.
 
-## Create a new Prompt Agent
+### Create a new Prompt Agent
 
 You can create a new prompt agent to assist users in completing various tasks by
 utilizing the prompt capabilities.
@@ -58,14 +86,14 @@ To create a new Prompt Agent, follow these steps:
 
     4.  [Step 4: Publish the Agent](#publish)
 
-### Step 1: Details and Purpose
+#### Step 1: Details and Purpose
 
 Provide a suitable and unique name for the agent and describe its purpose. Defining the agent’s purpose enables the system to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed, as all the fields, queries, and prompts are auto-generated based on the purpose provided. 
 
 To change the agent icon, click on the agent logo located above the agent's name. You can choose from a list of predefined logos or upload a custom logo.  Once you're ready, click **Continue** to proceed to the next step.
 <img src="../images/detail_and_purpose.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
-### Step 2: Source
+#### Step 2: Source
 
 In the Sources section, you can configure the following fields 
 
@@ -80,7 +108,7 @@ the previous step. For example, if the purpose is "summarization", fields might
 include Word Count, Summary Format
 etc.<img src="../images/source_gpt.png" alt="source_gpt" title="source_gpt" style="border: 1px solid gray; zoom:70%;">
 
-#### User Input
+##### User Input
 
 To configure user input, follow the steps outlined below:
 
@@ -111,7 +139,7 @@ To configure user input, follow the steps outlined below:
     and click **Done**.
 
 
-#### <a id="knowledge">Knowledge</a>
+##### <a id="knowledge">Knowledge</a>
 
 1. Click the **+ Upload** button to upload a file containing knowledge that the
     Prompt agent can use to generate responses. This uploaded information may also
@@ -133,7 +161,7 @@ To configure user input, follow the steps outlined below:
 3. Toggle the **Show to users** button to display this prompt to the user. After switching the toggle to ON, you can choose between **Read-only** or **Editable** modes.
     <img src="../images/show_to_users.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
-#### <a id="prompts">Prompts</a>
+##### <a id="prompts">Prompts</a>
 
 A default prompt is automatically generated based on the purpose defined earlier
 and can be customized using variables. For example, if the purpose is "Job
@@ -142,7 +170,7 @@ Responsibilities etc”.
 
 Enable the Show to users toggle button to show this prompt to the user. Once you click the toggle button to ON, you can select whether you want it in **Read-only** or **Editable**.
 
-#### <a id="multiprompt">Multiprompt</a>
+##### <a id="multiprompt">Multiprompt</a>
 
 For a multi-prompt setup within the agent builder, users can generate multiple prompts and select one from the prompt selector option field based on the specific context. 
 
@@ -158,7 +186,7 @@ Once you add multiple prompts, the prompt option will appear under the prompt se
     to drag and drop them to change their order.
 4.  Click **Done**.
 
-#### <a id="multiresponse">Multi Response</a>
+##### <a id="multiresponse">Multi Response</a>
 
 To allow users to generate multiple responses,
 
@@ -170,7 +198,7 @@ To allow users to generate multiple responses,
 
 3. Click **Continue** to move to the next step.
 
-### <a id="preview">Step 3: Business Rules</a>
+#### <a id="preview">Step 3: Business Rules</a>
 
 Set rules for entity selection and responses based on keywords.
 
@@ -180,12 +208,12 @@ You have options to set either an Entity Rule or Answering Rule.
 
 <img src="../images/Business_Rule.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
-### <a id="preview">Step 4: Appearance and Behavior </a>
+#### <a id="preview">Step 4: Appearance and Behavior </a>
 
 In the **Appearance and Behavior** section, a list of sample queries are displayed. If needed,
 you can add additional queries by clicking the **+ Add Query** button. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period. Once you're ready, click **Publish** to proceed to the next step.<img src="../images/preview.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
-### <a id="publish">Step 5: Publish Prompt Agent</a>
+#### <a id="publish">Step 5: Publish Prompt Agent</a>
 
 Publish your agent and define access permissions and enablement.
 

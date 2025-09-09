@@ -40,7 +40,7 @@ To create a Workflow Agent, follow the steps outlined below:
 
     2.   [Step 2: Configure Workflow Flow](#configure)
 
-    3.   [Step 3: Peview the Agent configuration](#preview)
+    3.   [Step 3: Preview the Agent configuration](#preview)
 
     4.   [Step 4: Publish the Agent](#publish)
 
