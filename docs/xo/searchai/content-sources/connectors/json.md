@@ -51,7 +51,7 @@ Field name
   <tr>
    <td>sourceUrl
    </td>
-   <td>This is the URL of the primary source. For example, for content from the Kore website, if recordUrl: <a href="www.kore.ai/products">www.kore.ai/products</a>, set sourceUrl: www.kore.ai. If this is empty, it is set to the same value as the recordUrl. 
+   <td>This is the URL of the primary source. For example, for content from the Kore website, if recordUrl: www.example.org/products, set sourceUrl: www.example.org. If this is empty, it is set to the same value as the recordUrl. 
    </td>
    <td>No 
    </td>
