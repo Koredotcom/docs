@@ -49,50 +49,11 @@ The Agent Login Logout Summary Report is generated and available for download.
 
 ### About Report Fields
 
-  <tr>
-   <td>**FIELD**
-
-   </td>
-   <td>**DESCRIPTION**
-
-   </td>
-   <td>**EXAMPLE**
-
-   </td>
-  </tr>
-  <tr>
-   <td>Login
-
-   </td>
-   <td>DateTime at which the Agent logged in, starting a new session.
-
-   </td>
-   <td>“01/06/23 15:57:17”
-
-   </td>
-  </tr>
-  <tr>
-   <td>Logout
-
-   </td>
-   <td>DateTime at which the Agent logged out, ending a session.
-
-   </td>
-   <td>“01/06/23 15:57:17”
-
-   </td>
-  </tr>
-  <tr>
-   <td>Duration
-
-   </td>
-   <td>Duration of the Session (Logout – Login).
-
-   </td>
-   <td>“64:39:22”
-
-   </td>
-  </tr>
+| **FIELD** | **DESCRIPTION**                                      | **EXAMPLE**        |
+|-----------|------------------------------------------------------|--------------------|
+| Login     | DateTime at which the Agent logged in, starting a new session. | “01/06/23 15:57:17” |
+| Logout    | DateTime at which the Agent logged out, ending a session.      | “01/06/23 15:57:17” |
+| Duration  | Duration of the Session (Logout – Login).            | “64:39:22”         |
 
 #### Related Link
 
