@@ -25,27 +25,27 @@ Steps to generate the Agent Login Logout Summary Report:
     * Send To (single email address or a mailing list)
 7. Click **Create**.
 8. The **Agent Login Logout Summary Report** is generated.  
-<img src="../images/agent-login-logout-report-created.png" alt="Agent Login Logout Summary Report Created" title="Agent Login Logout Summary Report Created" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/agent-login-logout-report-created.png" alt="Agent Login Logout Summary Report Created" title="Agent Login Logout Summary Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon as shown below to generate the report.  
-<img src="../images/run-login-logout-summary-report.png" alt="Run Agent Login Logout Summary Report" title="Create Agent Login Logout Summary Report" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/run-login-logout-summary-report.png" alt="Run Agent Login Logout Summary Report" title="Create Agent Login Logout Summary Report" style="border: 1px solid gray; zoom:100%;">
 
-While generating reports you have two options, Run On Demand and Schedule.
+    While generating reports you have two options, Run On Demand and Schedule.
 
-**Run On Demand**: While creating a new report or editing an existing report, the schedule of the report can be set to run on demand.
+    **Run On Demand**: While creating a new report or editing an existing report, the schedule of the report can be set to run on demand.
 
-**Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later then it will automatically be generated on the scheduled day and time without the need to click Run.
+    **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later then it will automatically be generated on the scheduled day and time without the need to click Run.
 
 10. First, the report object is configured (as PDF) and then the report output is generated as PDF.
 Click the **PDF/Page** icon to download the report.  
-<img src="../reports/images/pdf-agent-login-logout-summary.png" alt="PDF Agent Login Logout Report" title="PDF Agent Login Logout Report" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/pdf-agent-login-logout-summary.png" alt="PDF Agent Login Logout Report" title="PDF Agent Login Logout Report" style="border: 1px solid gray; zoom:100%;">
 
     !!! Note
 
         The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
 The Agent Login Logout Summary Report is generated and available for download.  
-<img src="../images/agent-login-logout-summary-report-output.png" alt="Agent Login Logout Summary Report Output" title="Agent Login Logout Summary Report Output" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/agent-login-logout-summary-report-output.png" alt="Agent Login Logout Summary Report Output" title="Agent Login Logout Summary Report Output" style="border: 1px solid gray; zoom:100%;">
 
 ### About Report Fields
 
