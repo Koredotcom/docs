@@ -4,10 +4,10 @@ This API is Used to delete customer data.
 
 !!!note
 
-        Delete User will not proceed if the requested user is:
+      Delete User will not proceed if the requested user is:
 
-          * An account owner or belongs to one or more accounts.  
-          * The bot owner or co-developer for one or more bots. 
+        * An account owner or belongs to one or more accounts.  
+        * The bot owner or co-developer for one or more bots. 
 
 
 <table>
@@ -35,7 +35,7 @@ This API is Used to delete customer data.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="../../../analytics/automations/conversation-flows">How to generate the JWT Token.</a>
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>
    </td>
   </tr>
   <tr>
