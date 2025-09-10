@@ -21,7 +21,7 @@ The models list displays all the open-source models along with the following det
 | **Ready to Deploy** | Number of deployments that are ready to be deployed. |
 | **Source** | Origin of the model: File (uploaded locally), Kore Hosted, or Hugging Face. |
 
-<img src="../open-source-models/images/open_source_models_new.png" alt="Open-source models table" title="Open-source models table" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/open_source_models_new.png" alt="Open-source models table" title="Open-source models table" style="border: 1px solid gray; zoom:80%;">
 
 Selecting a model opens its **Deployments** page, where you can view and manage all related deployments.
 
@@ -88,3 +88,55 @@ Selecting a specific deployment on the Deployment page opens its detail view, wh
 - **[Configurations](../open-source-models/configure-your-open-source-model.md)** – Edit the description and tags, or undeploy/delete the model.
 
 <img src="../images/open_source_deployment_detailed.png" alt="Open-source models table" title="Open-source models table" style="border: 1px solid gray; zoom:80%;">
+
+
+
+
+
+#### **Running in Async Mode**
+
+In Async mode, the workflow does not pause at the Human node. Instead, the workflow sends an immediate acknowledgement and continues execution. The Human node notifies the pre-configured callback URL when the request is sent to the human, when the human’s input is received, and when the final tool output is generated and delivered.the workflow continues immediately, while the reviewer’s input is processed in the background. 
+
+For example, this is useful when you don’t want the workflow to block waiting for a human, which is critical for efficiency in large or automated workflows.
+
+Async human node workflow:
+
+1. Request received: 
+    * As soon as the tool gets a request, it sends an acknowledgement back to the requestor system.
+2. Workflow execution:
+    * The workflow then starts execution and reaches the Human node and sends a request payload to the configured endpoint.
+3. Callback generation:
+    * The Human node generates and shares a callback URL and request ID, which the downstream service uses to return the reviewer’s response.
+    * The callback URL remains valid only for the configured wait time.
+4. Waiting status update:
+    * When the tool reaches the Human node and is waiting for input, a status update is sent to the pre-configured URL [URL set when configuring the tool’s async endpoint].
+5. Reviewer receives and responds:
+    * The downstream service delivers the request to the reviewer.
+    * Once the reviewer provides input, the response is sent back to the callback URL.
+    * Late or duplicate responses are ignored.
+6. Continuing execution status update:
+    * After receiving data from the human, the tool continues execution from the Human node.
+    * A status update for the tool output is sent to the pre-configured URL [URL set when configuring the tool’s async endpoint].
+7. Outcome handling:
+    * Reviewer responds in time **→** Workflow resumes at the configured **Success path**.
+    * No response before timeout **→** Workflow follows the configured** timeout optio**n (Terminate or Skip & Continue).
+    * Failure in delivery **→** Workflow follows the **Failure path**.
+8. Final output:
+    * The tool’s final output — including the reviewer’s response, or error/timeout details — is sent to the pre-configured callback URL and logged in the Debug Panel.
+
+
+
+
+Async human node workflow:
+
+1. **Request received**: As soon as the tool gets a request, it sends an acknowledgement back to the requestor system.
+2. **Workflow execution**: The workflow then starts execution and reaches the Human node and sends a request payload to the configured endpoint.
+3. **Callback generation**: The Human node generates and shares a callback URL and request ID, which the downstream service uses to return the reviewer’s response. The callback URL remains valid only for the configured wait time.
+4. **Waiting status update**: When the tool reaches the Human node and is waiting for input, a status update is sent to the pre-configured URL [URL set when configuring the tool’s async endpoint].
+5. **Reviewer receives and responds**: The downstream service delivers the request to the reviewer. Once the reviewer provides input, the response is sent back to the callback URL. Late or duplicate responses are ignored.
+6. **Continuing execution status update**: After receiving data from the human, the tool continues execution from the Human node. A status update for the tool output is sent to the pre-configured URL [URL set when configuring the tool’s async endpoint].
+7. **Outcome handling**:
+    * Reviewer responds in time **→** Workflow resumes at the configured **Success path**.
+    * No response before timeout **→** Workflow follows the configured** timeout optio**n (Terminate or Skip & Continue).
+    * Failure in delivery **→** Workflow follows the **Failure path**.
+8. **Final output**: The tool’s final output — including the reviewer’s response, or error/timeout details — is sent to the pre-configured callback URL and logged in the Debug Panel.
