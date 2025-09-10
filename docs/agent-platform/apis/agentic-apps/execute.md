@@ -232,6 +232,7 @@ Once a file is added to the includeFiles list, it remains associated with the se
     ]
   }
   </pre>
+  Note: Currently, the first agent in the tasks array is used for handling the query. 
   </td>
   <td>No</td>
   </tr>
