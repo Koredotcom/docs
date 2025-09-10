@@ -2,7 +2,9 @@
 
 When a user runs Diagnostics from the Agentic App Overview page, the platform initiates a comprehensive validation process covering the app’s architecture and configuration. It evaluates key components—including agents, tools, events, memory systems, and app-level orchestration—to detect potential issues before deployment.
 
-:::image type="content" source="images/createapp/diagnostics-button.png" alt-text="Illustration shows the diagnostic button on app overview page.":::
+ <img src="../agentic-apps/images/createapp/diagnostics-button.png" alt="Illustration shows the diagnostic button on app overview page." title="Diagnostics button" style="border: 1px solid gray; zoom:80%;">
+
+:::image type="content" source="../agentic-apps/images/createapp/diagnostics-button.png" alt-text="Illustration shows the diagnostic button on app overview page.":::
 
 Upon completion, the platform displays a detailed report categorizing findings as informational messages, warnings, or errors across all components. For each warning or error, users have the option to address and fix the issue immediately, enabling proactive resolution and reducing risks before deployment.
 
@@ -29,9 +31,9 @@ Key highlights
 
 :::image type="content" source="images/createapp/diagnostics-for-agent-platform.png" alt-text="Illustration shows the complete diagnostic report.":::
 
-Users are provided with actionable controls within the diagnostics report to address, ignore, or navigate to identified issues for timely resolution.
-* Triaged Issues: Displays previously ignored or resolved errors/warnings for audit visibility.
-* Navigation Links: Allows users to click into specific sections and jump directly to the affected component in the app.
+Users are provided with actionable controls within the diagnostics report to address, ignore, or navigate to identified issues for timely resolution.<br>
+* Triaged Issues: Displays previously ignored or resolved errors/warnings for audit visibility.<br>
+* Navigation Links: Allows users to click into specific sections and jump directly to the affected component in the app.<br>
 * Fix Options: Each error or warning includes a **Fix now** or **Ignore** action, enabling immediate remediation or deferral.
 
-:::image type="content" source="images/createapp/no-errors.png" alt-text="Illustration shows the all the issues fixed in the diagnostic report.":::
+    :::image type="content" source="images/createapp/no-errors.png" alt-text="Illustration shows the all the issues fixed in the diagnostic report.":::
