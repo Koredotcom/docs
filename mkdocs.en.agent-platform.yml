@@ -294,6 +294,7 @@ nav:
     - User Management:
       - Overview: settings/user-management/overview.md
       - User Management: settings/user-management/users.md
+      - Invite a User: settings/user-management/invite-a-user.md
       - Add Users from Active Directory: settings/user-management/settings/active-directory.md
       - Role Management: settings/user-management/role-management.md
     - Integrations:
