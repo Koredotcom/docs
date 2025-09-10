@@ -41,7 +41,9 @@ Key benefits
 
 **Data Type Validation for Custom Scripts in the Function Node**
 
-The Function node now supports data type selection and validation for Custom Function arguments. Users can define each argument as Text, Number, Boolean, or JSON, instead of the default String. During execution, the system validates that mapped values or variables match the defined type and throws a clear error if a mismatch occurs, preventing runtime failures.
+The Function node now supports data type selection and validation for Custom Function arguments. Users can define each argument as Text, Number, Boolean, or JSON, instead of the default String. During execution, the system validates that mapped values or variables match the defined type and throws a clear error if a mismatch occurs, preventing runtime failures. 
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/function-node.md/#add-and-configure-a-function-node){:target="_blank"}
 
 
 <font size="4">AI Engineering Tools</font>
@@ -60,9 +62,13 @@ This update introduces support for the following new AI models, providing greate
     * gemini-live-2.5-flash-preview
     * gemini-2.0-flash-live-001
 
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md){:target="_blank"}
+
 **Enhanced Custom API Integration for External Models**
 
 Custom API integration for external models now offers automatic provider format mapping (Anthropic, OpenAI) with improved error messaging, simplifying request/response configuration. Admins can also explicitly select supported features from a predefined list, making integration more robust and error-resistant.
+
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-api-integration.md/#add-an-external-model){:target="_blank"}
 
 **Tool Calling Support for Open-Source Models**
 
@@ -92,6 +98,8 @@ The platform now supports additional voice parameters for real-time models from 
 **Enhanced User Invitation UI for Admins**
 
 The Settings console now features an improved multi-row form for user invitations. Admins can add or delete rows to invite multiple users simultaneously, assign system or custom roles to each user, and track total invites with an auto-updating counter.
+
+[Learn more :octicons-arrow-right-24:](../settings/user-management/invite-a-user.md){:target="_blank"}
 
 <hr>
 

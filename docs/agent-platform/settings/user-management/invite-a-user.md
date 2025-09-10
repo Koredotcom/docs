@@ -10,8 +10,8 @@ To invite a user, follow the steps below:
 
 3. Click **Invite**.
 4. Enter a valid email address of the user you want to invite. 
-<ol start="5"><li>Select a role from the dropdown to define the user’s access to modules and features.</li>
-   <img src="../images/role-drop-down.png" alt="role selection" title="role selection" style="border: 1px solid gray; zoom:75%;">
+<ol start="5"><li>Select a role from the dropdown to define the user’s access to modules and features.
+   <img src="../images/role-drop-down.png" alt="role selection" title="role selection" style="border: 1px solid gray; zoom:75%;"></li>
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -19,9 +19,9 @@ To invite a user, follow the steps below:
 
 <ol start="6"><li>To invite multiple users, click <b>+ Add another member</b>. Then, follow steps 4 and 5.</li>
 
-To remove an invitation row, click the **Delete** icon. 
+   To remove an invitation row, click the <b>Delete</b> icon. 
 
-<img src="../images/delete-email-row.png" alt="delete email row" title="delete email row" style="border: 1px solid gray; zoom:75%;"></ol>
+   <img src="../images/delete-email-row.png" alt="delete email row" title="delete email row" style="border: 1px solid gray; zoom:75%;"></ol>
 
 **Key Information On Adding Email Addresses**
 
@@ -35,11 +35,10 @@ Please note the following when adding an email address:
 
 * Double-check the recipient’s email address before sending the invite.
 * Duplicate invitations are not allowed. The system displays: “*This email has already been added*."
+    <img src="../images/duplicate-invitation.png" alt="duplicate invitation" title="duplicate invitation" style="border: 1px solid gray; zoom:75%;">
 
-  <img src="../images/duplicate-invitation.png" alt="duplicate invitation" title="duplicate invitation" style="border: 1px solid gray; zoom:75%;">
-
-<ol start="7"><li>Click <b>Send invitation(s)</b>. As you add or remove invites, the displayed count of invited persons updates accordingly.</li>
-<img src="../images/send-invitation-to-member.png" alt="send invitation" title="send invitation" style="border: 1px solid gray; zoom:75%;"></ol>
+<ol start="7"><li>Click <b>Send invitation(s)</b>. As you add or remove invites, the displayed count of invited persons updates accordingly.
+<img src="../images/send-invitation-to-member.png" alt="send invitation" title="send invitation" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 You’ll see a success message when the invite is sent. If it fails, check the highlighted email addresses and try again.
 
