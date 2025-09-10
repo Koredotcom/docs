@@ -19,7 +19,7 @@ The Ranking & Resolver engine receives the outputs from the above engines and fu
     * Changing to Version 2 will change how the winning intent is determined for user input. If Version 1 works best for your NLP engine(s), please do not change it.
     * It works best when the ML and KG engines use the Few-shot ML model. For the other models, choosing the appropriate R&R version is recommended.
     * Since the FM engine does not identify intents based on task names, configurations for this feature are disabled in Version 2 by default.  
-    *This version works solely by eliminating the intents with lower proximity of probable matches. It does not eliminate intents with semantic similarity to user input, matched utterances, or questions.
+    * This version works solely by eliminating the intents with lower proximity of probable matches. It does not eliminate intents with semantic similarity to user input, matched utterances, or questions.
 
 ## Enable Ranking & Resolver Version 2
 
