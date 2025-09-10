@@ -218,3 +218,4 @@ The **Debug** window generates the flow log and results, as shown below. [Learn 
 <img src="../images/debug-window-audio-to-text.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">
 
 
+
