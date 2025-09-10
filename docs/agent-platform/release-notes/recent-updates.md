@@ -14,9 +14,13 @@ This release focuses on reliability and control, introducing Agent Diagnostics f
 
 Agent Diagnostics is a comprehensive validation framework that proactively validates your AI application before deployment, automatically checking for architectural flaws, configuration errors, and operational risks to prevent production failures. It provides detailed, actionable reports with direct navigation to problem areas. All diagnostic runs are recorded in Audit Logs for complete traceability.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/diagnostics-for-agent-platform.md)
+
 **Enhanced Debug Logs with Actionable Insights**
 
-Debugging is now more intuitive with enhanced execution logs. The refreshed interface provides detailed, actionable status messages across agents, tools, and supervisors. New features include Guardrails execution logging, auto-expanded current traces, and improved navigation via session and trace IDs for a clearer view of the execution flow.
+Debugging is now more intuitive with enhanced execution logs. The refreshed interface provides detailed, actionable status messages across agents, tools, and supervisors. New features include Guardrails execution logging, auto expanded current traces, and improved navigation via session and trace IDs for a clearer view of the execution flow.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md#playground-interface-components)
 
 **Enhanced Document Management in Playground**
 

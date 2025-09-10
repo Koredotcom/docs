@@ -35,7 +35,7 @@ Whenever a user clicks on the Playground option, by default, a new user session 
     * Response: Response received from the component. 
     * Debug Logs: Provides detailed, actionable status messages across agents, tools, and supervisors, with Guardrails execution logging, auto expanded current traces, and session and trace IDs for clearer visibility into execution flow.
 
-![alt_text](images/playground/session_debug.png "Session debug")
+![alt_text](images/playground/processing-timeline.png "Session debug")
 
 
 **Flow Diagram(Right Panel):** Offers a visual representation of the overall execution flow. The flow diagram makes it easier to understand the sequence of operations. 
