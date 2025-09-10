@@ -6,8 +6,8 @@ This API is Used to delete customer data.
 
       Delete User will not proceed if the requested user is:
 
-        * An account owner or belongs to one or more accounts.  
-        * The bot owner or co-developer for one or more bots. 
+      * An account owner or belongs to one or more accounts.  
+      * The bot owner or co-developer for one or more bots. 
 
 
 <table>
