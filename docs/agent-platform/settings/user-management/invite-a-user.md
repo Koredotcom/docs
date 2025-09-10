@@ -17,11 +17,11 @@ To invite a user, follow the steps below:
 <p class="admonition-title">Note</p>
 <p>System-defined and custom roles available in the inviter’s account can be assigned. <a href="../role-management" target="_blank">Learn more</a> about roles and permissions.</p></div></ol>
 
-<ol start="6"><li>To invite multiple users, click <b>+ Add another member</b>. Then, follow steps 4 and 5.</li>
+<ol start="6"><li>To invite multiple users, click <b>+ Add another member</b>. Then, follow steps 4 and 5.
 
-   To remove an invitation row, click the <b>Delete</b> icon. 
+   To remove an invitation row, click the <b>Delete</b> icon.
 
-   <img src="../images/delete-email-row.png" alt="delete email row" title="delete email row" style="border: 1px solid gray; zoom:75%;"></ol>
+   <img src="../images/delete-email-row.png" alt="delete email row" title="delete email row" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 **Key Information On Adding Email Addresses**
 
@@ -35,6 +35,7 @@ Please note the following when adding an email address:
 
 * Double-check the recipient’s email address before sending the invite.
 * Duplicate invitations are not allowed. The system displays: “*This email has already been added*."
+    
     <img src="../images/duplicate-invitation.png" alt="duplicate invitation" title="duplicate invitation" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="7"><li>Click <b>Send invitation(s)</b>. As you add or remove invites, the displayed count of invited persons updates accordingly.
