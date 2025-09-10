@@ -103,11 +103,6 @@ This node is commonly used for:
 
 * Audio uploads and settings are handled by the [File Upload API](../../../../apis/apis-list/upload-file-api.md){:target="_blank"}.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Be mindful of the environment where you upload the files - Host URLs that work fine in the Agent Platform may not work in GALE.</p>
-</div>
-
 * OpenAI Whisper automatically removes offensive and banned words during transcription. 
 * Performance tracking is available under **Settings** > **Model Analytics Dashboard** > **External Models** tab. [Learn more](../../../../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}. 
 
