@@ -278,6 +278,9 @@ The supported models and their variants are given below:
 
 <li>meta-llama/Llama-3.2-3B-Instruct</li>
 
+<li>meta-llama/Llama-3.2-11B-Vision-Instruct</li>
+<li>meta-llama/Llama-Guard-4-12B</li>
+
 <li>meta-llama/Meta-Llama-3-8B</li>
 
 <li>meta-llama/Meta-Llama-3-8B-Instruct</li>
@@ -506,17 +509,13 @@ Here is the list of all the external models supported in Agent Platform:
 <ul>
 
 <li>gemini-1.5-flash-latest</li>
-
 <li>gemini-1.5-pro</li>
-
 <li>gemini-1.0-pro</li>
-
+<li>gemini-2.5-Pro</li>
 <li>gemini-2.0-flash</li>
-
 <li>gemini-2.0-flashlite</li>
-
 <li>gemini-2.5-flash-preview-05-20</li>
-
+<li>gemini-2.5-flash</li>
 </ul>
    </td>
   </tr>
