@@ -4,6 +4,23 @@ The Kore.ai NLP engine uses Machine Learning, Fundamental Meaning, and Knowledge
 
 The Ranking & Resolver engine receives the outputs from the above engines and further processes them.
 
+!!! note "Important Points"
+
+    * With the introduction of the [Few-shot Model](machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings) in ML and KG engines, rescoring by Ranking & Resolver is no longer required for intent identification. Therefore, we have introduced a new version of Ranking & Resolver (Version 2) for Few-shot models that only ranks intents based on scores from ML and KG engines. 
+    * The version significantly improves the accuracy of intent identification.
+    
+    You can choose one of the following Ranker and Resolver versions to define how to rank matched intents from NLP engines and determine the winning intent:
+
+    * Version 1 rescores the intents matched by the NLP engines and ranks them based on the rescored results to identify the winning intent in the user input.
+    * The latest Version 2 for the Few-shot ML Model only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring, to ensure the best intent identification accuracy.
+
+    Before selecting this feature, please consider the following for Version 2:
+
+    * Changing to Version 2 will change how the winning intent is determined for user input. If Version 1 works best for your NLP engine(s), please do not change it.
+    * It works best when the ML and KG engines use the Few-shot ML model. For the other models, choosing the appropriate R&R version is recommended.
+    * Since the FM engine does not identify intents based on task names, configurations for this feature are disabled in Version 2 by default.
+    *This version works solely by eliminating the intents with lower proximity of probable matches. It does not eliminate intents with semantic similarity to user input, matched utterances, or questions.
+
 <div class="admonition note">
 <p class="admonition-title">Important Information</p>
 <p><ul><li>With the introduction of the <a href="machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings ">Few-shot Model</a> in ML and KG engines, rescoring by Ranking & Resolver is no longer required for intent identification. Therefore, we have introduced a new version of Ranking & Resolver (Version 2) for Few-shot models that only ranks intents based on scores from ML and KG engines.</li>
