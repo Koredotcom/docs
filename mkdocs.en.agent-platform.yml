@@ -178,7 +178,8 @@ nav:
             - Function Node: ai-agents/tools/tool-flows/types-of-nodes/function-node.md
             - Condition Node: ai-agents/tools/tool-flows/types-of-nodes/condition-node.md
             - DocSearch Node: ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md 
-            - Loop Node: ai-agents/tools/tool-flows/types-of-nodes/loop-node.md     
+            - Loop Node: ai-agents/tools/tool-flows/types-of-nodes/loop-node.md  
+            - Human Node: ai-agents/tools/tool-flows/types-of-nodes/human-node.md 
             - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md 
           - Tool Flow Change Log: ai-agents/tools/tool-flows/tool-canvas-change-log.md    
         - Sharing & Permissions: 
