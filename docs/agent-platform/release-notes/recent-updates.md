@@ -78,7 +78,7 @@ Custom API integration for external models now offers automatic provider format 
 
 **Tool Calling Support for Open-Source Models**
 
-All open-source and fine-tuned model API endpoints are now upgraded to the OpenAI Chat Completions format. Both the new chat completions endpoint and the existing endpoint are currently available to ensure backward compatibility. The existing endpoint will be deprecated soon, so users are encouraged to transition to the new format. Hugging Face–hosted models are excluded from this update.
+All open-source and fine-tuned model API endpoints are now upgraded to the OpenAI Chat Completions format. Both the new chat completions endpoint and the existing endpoint are currently available to ensure backward compatibility. The existing endpoint will be deprecated soon, so users are encouraged to transition to the new format. Hugging Face models are excluded from this update.
 
 The following models are now enabled for tool calling, allowing them to integrate with tools and return richer, more efficient responses:
 
