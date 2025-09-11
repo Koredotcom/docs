@@ -70,9 +70,7 @@ Implementing the Network Pattern in an agentic app requires:
 
 ### 1. Selecting the Orchestration Pattern for the Agentic App	
 
-1. Navigate to the App Profile page by clicking the edit icon in the App Overview.  
-
-![App Overview](images/network/overview-page.png "App Overview")
+1. Navigate to the App Profile page by clicking the edit icon in the App Overview.  ![App Overview](images/network/overview-page.png "App Overview")
 
 2. Then, select an *Initial Agent*. The Initial Agent is the entry point for all queries and tasks. Every request is first routed to this agent, which evaluates the input before handing it off to the appropriate specialized agent. 
 
