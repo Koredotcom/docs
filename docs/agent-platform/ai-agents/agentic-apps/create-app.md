@@ -43,6 +43,8 @@ For a completely configured app, the **Overview** section provides a structured 
 Configure agents with appropriate roles and responsibilities within the application.  
 See [How to set up an agent](./../create-agent.md).
 
+Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for agent platform](diagnostics-for-agent-platform.md).
+
 ---
 
 ### Step 3: Simulate or Test the Behavior of the App and the Agents
@@ -60,8 +62,6 @@ Finalize configurations and deploy the app for end users. See [App Deployment](.
 
 ## App Overview
 
-The Overview page provides a comprehensive summary of your app after it has been successfully set up. This page displays essential details, including the tools and agents that have been configured for the app. 
-
- 
+The Overview page provides a comprehensive summary of your app after it has been successfully set up. This page displays essential details, including the tools and agents that have been configured for the app.
 
 By default, certain configurations are pre-selected when creating a new app. If you need to review or modify these configurations, go to the [app profile](app-profile.md) and make necessary changes. [Learn More](app-profile.md).

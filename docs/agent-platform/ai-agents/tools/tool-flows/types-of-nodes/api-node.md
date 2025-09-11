@@ -149,12 +149,4 @@ Click the **Connections** icon in the left navigation and select **Go to Node** 
     {{context.steps.Start.APINodeName}}
     ~~~
 
-## API Status Codes
 
-* 200: Request successful
-* 400: Client error, cannot process request
-* 401: Authentication required
-* 403: Access denied
-* 404: Resource not found
-* 500: Unexpected server error
-* 504: Gateway timeout, no timely response from the upstream server

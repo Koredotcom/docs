@@ -14,9 +14,13 @@ This release focuses on reliability and control, introducing Agent Diagnostics f
 
 Agent Diagnostics is a comprehensive validation framework that proactively validates your AI application before deployment, automatically checking for architectural flaws, configuration errors, and operational risks to prevent production failures. It provides detailed, actionable reports with direct navigation to problem areas. All diagnostic runs are recorded in Audit Logs for complete traceability.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/diagnostics-for-agent-platform.md)
+
 **Enhanced Debug Logs with Actionable Insights**
 
-Debugging is now more intuitive with enhanced execution logs. The refreshed interface provides detailed, actionable status messages across agents, tools, and supervisors. New features include Guardrails execution logging, auto-expanded current traces, and improved navigation via session and trace IDs for a clearer view of the execution flow.
+Debugging is now more intuitive with enhanced execution logs. The refreshed interface provides detailed, actionable status messages across agents, tools, and supervisors. New features include Guardrails execution logging, auto expanded current traces, and improved navigation via session and trace IDs for a clearer view of the execution flow.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md#playground-interface-components)
 
 **Enhanced Document Management in Playground**
 
@@ -38,10 +42,14 @@ Key benefits
 * Maintain Flow: Automatically manage interruptions and exceptions without breaking the workflow.
 * Gain Control: Design the exact review process your business rules require.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/human-node.md){:target="_blank"}
+
 
 **Data Type Validation for Custom Scripts in the Function Node**
 
-The Function node now supports data type selection and validation for Custom Function arguments. Users can define each argument as Text, Number, Boolean, or JSON, instead of the default String. During execution, the system validates that mapped values or variables match the defined type and throws a clear error if a mismatch occurs, preventing runtime failures.
+The Function node now supports data type selection and validation for Custom Function arguments. Users can define each argument as Text, Number, Boolean, or JSON, instead of the default String. During execution, the system validates that mapped values or variables match the defined type and throws a clear error if a mismatch occurs, preventing runtime failures. 
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/function-node.md/#add-and-configure-a-function-node){:target="_blank"}
 
 
 <font size="4">AI Engineering Tools</font>
@@ -60,13 +68,17 @@ This update introduces support for the following new AI models, providing greate
     * gemini-live-2.5-flash-preview
     * gemini-2.0-flash-live-001
 
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md){:target="_blank"}
+
 **Enhanced Custom API Integration for External Models**
 
 Custom API integration for external models now offers automatic provider format mapping (Anthropic, OpenAI) with improved error messaging, simplifying request/response configuration. Admins can also explicitly select supported features from a predefined list, making integration more robust and error-resistant.
 
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-api-integration.md/#add-an-external-model){:target="_blank"}
+
 **Tool Calling Support for Open-Source Models**
 
-All open-source and fine-tuned model API endpoints are now upgraded to the OpenAI Chat Completions format. Both the new chat completions endpoint and the existing endpoint are currently available to ensure backward compatibility. The existing endpoint will be deprecated soon, so users are encouraged to transition to the new format. Hugging Face–hosted models are excluded from this update.
+All open-source and fine-tuned model API endpoints are now upgraded to the OpenAI Chat Completions format. Both the new chat completions endpoint and the existing endpoint are currently available to ensure backward compatibility. The existing endpoint will be deprecated soon, so users are encouraged to transition to the new format. Hugging Face models are excluded from this update.
 
 The following models are now enabled for tool calling, allowing them to integrate with tools and return richer, more efficient responses:
 
@@ -81,19 +93,24 @@ The following models are now enabled for tool calling, allowing them to integrat
 
 The Model Hub landing page now provides an updated overview of model deployment statuses, including counts for active, failed, and ready-to-deploy models.
 
+[Learn more :octicons-arrow-right-24:](../models/open-source-models/open-source-summary.md){:target="_blank"}
+
+
 **Enhanced Configuration Options for Realtime Models**
 
 The platform now supports additional voice parameters for real-time models from Google Gemini and Ultravox, enabling more nuanced and personalized voice experiences. 
 
 
-<font size="4">Other improvements</font>
+<font size="4">Other Improvement</font>
 
 
 **Enhanced User Invitation UI for Admins**
 
 The Settings console now features an improved multi-row form for user invitations. Admins can add or delete rows to invite multiple users simultaneously, assign system or custom roles to each user, and track total invites with an auto-updating counter.
 
+[Learn more :octicons-arrow-right-24:](../settings/user-management/invite-a-user.md){:target="_blank"}
 
+<hr>
 
 ## v1.0.10 August 13, 2025
 

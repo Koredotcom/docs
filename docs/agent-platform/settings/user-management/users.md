@@ -42,7 +42,7 @@ The **Settings** Console provides two ways to add a new user to the system:
 
 ### Invite (Email Invitation)
 
-See the topic **Invite a User to your account** for step-by-step instructions on how to add a user via email invitation.
+See [Invite a User](../user-management/invite-a-user.md){:target="_blank"} to learn how to add a user to your account via email invitation.
 
 ### Import (Bulk Import)
 

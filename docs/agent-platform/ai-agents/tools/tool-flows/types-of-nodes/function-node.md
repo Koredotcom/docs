@@ -471,7 +471,7 @@ The following confirmation window is displayed before the export begins.
 Do one of the following:
 
 * If you’re unsure, click **Let me check**.
-* If all necessary components—such as AI models, linked tools, and custom scripts or functions—are already in place, click **Yes, I will take care**.
+* If all necessary components such as AI models, linked tools, and custom scripts or functions are already in place, click **Yes, I will take care**.
 
 **Share a Tool**
 
