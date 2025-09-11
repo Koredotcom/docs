@@ -795,14 +795,12 @@ The final step is to install Audiohook for voice streaming, if using Kore-manage
     1. **Channel** value should be both.
     2. The **Connection URI** format should be similar to 
     wss://{**Kore Voice Gateway(KVG)**}[/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true). 
-    
-        !!! note
-            Add “multiBot=true” parameter to it, if you want to use multiple Agent AI bots with different queues. 
 
         !!! notes
 
+            * Add “multiBot=true” parameter to it, if you want to use multiple Agent AI bots with different queues.
             * Configure SIP of any of the bots inserted in the Data Table.
-            * Kore Voice Gateway(KVG) host name to be referred from the corresponding environment being used at Saas or on-prem  
+            * Kore Voice Gateway(KVG) host name to be referred from the corresponding environment being used at Saas or on-prem.  
 
 6. Follow these steps to get the **Connection URL**: 
     1. Go to **Agent AI** > **Flows & Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk**.
