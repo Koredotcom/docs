@@ -12,7 +12,7 @@ This release focuses on reliability and control, introducing Agent Diagnostics f
 
 **Introducing Agent Diagnostics**
 
-Agent Diagnostics is a comprehensive validation framework that proactively validates your AI application before deployment, automatically checking for architectural flaws, configuration errors, and operational risks to prevent production failures. It provides detailed, actionable reports with direct navigation to problem areas. All diagnostic runs are recorded in Audit Logs for complete traceability.
+Agent Diagnostics is a comprehensive validation framework that proactively validates your AI application before deployment, automatically checking for configuration errors and operational risks to prevent production failures. It provides detailed, actionable reports with direct navigation to problem areas. All diagnostic runs are recorded in Audit Logs for complete traceability.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/diagnostics-for-agent-platform.md)
 
