@@ -42,6 +42,8 @@ Key benefits
 * Maintain Flow: Automatically manage interruptions and exceptions without breaking the workflow.
 * Gain Control: Design the exact review process your business rules require.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/human-node.md){:target="_blank"}
+
 
 **Data Type Validation for Custom Scripts in the Function Node**
 
@@ -90,6 +92,9 @@ The following models are now enabled for tool calling, allowing them to integrat
 **Model Deployment Status in Model Hub**
 
 The Model Hub landing page now provides an updated overview of model deployment statuses, including counts for active, failed, and ready-to-deploy models.
+
+[Learn more :octicons-arrow-right-24:](../models/open-source-models/open-source-summary.md){:target="_blank"}
+
 
 **Enhanced Configuration Options for Realtime Models**
 
