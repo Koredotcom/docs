@@ -1,6 +1,6 @@
 # Network Orchestration Pattern
 
-The Network Orchestration Pattern is an architectural approach for designing agentic applications where specialized AI agents dynamically transfer control and context of a task to one another based on the task's requirements. This pattern operates in a decentralized manner, allowing agents to evaluate tasks and hand them off to the most suitable agent with relevant expertise. It creates a seamless, sequential workflow optimized for tasks requiring specialized knowledge across multiple domains.
+The Network (Delegation) Orchestration Pattern is an architectural approach for designing agentic applications where specialized AI agents dynamically transfer control and context of a task to one another based on the task's requirements. This pattern operates in a decentralized manner, allowing agents to evaluate tasks and hand them off to the most suitable agent with relevant expertise. It creates a seamless, sequential workflow optimized for tasks requiring specialized knowledge across multiple domains.
 
 This pattern is particularly effective for scenarios where tasks evolve dynamically and the optimal agent isn't known upfront, such as in customer support, IT service desks, or multi-step problem-solving. By enabling agents to pass control while preserving conversation context, the pattern ensures efficient task resolution and a cohesive user experience without requiring a central orchestrator.
 
@@ -70,10 +70,10 @@ Implementing the Network Pattern in an agentic app requires:
 
 ### 1. Selecting the Orchestration Pattern for the Agentic App	
 
-1. Navigate to the App Profile page by clicking the edit icon in the App Overview.  ![App Overview](images/network/overview-page.png "App Overview")
+1. Navigate to the App Profile page by clicking the edit icon in the App Overview.  
+![App Overview](images/network/overview-page.png "App Overview")
 
 2. Then, select an *Initial Agent*. The Initial Agent is the entry point for all queries and tasks. Every request is first routed to this agent, which evaluates the input before handing it off to the appropriate specialized agent. 
-
 ![App Profile](images/network/app-profile.png "App Profile")
 
 

@@ -13,24 +13,19 @@ This release focuses on reliability and control, introducing Agent Diagnostics f
 **Introducing Agent Diagnostics**
 
 Agent Diagnostics is a comprehensive validation framework that proactively validates your AI application before deployment, automatically checking for configuration errors and operational risks to prevent production failures. It provides detailed, actionable reports with direct navigation to problem areas. All diagnostic runs are recorded in Audit Logs for complete traceability.
-
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/diagnostics-for-agent-platform.md)
 
 **Enhanced Debug Logs with Actionable Insights**
 
 Debugging is now more intuitive with enhanced execution logs. The refreshed interface provides detailed, actionable status messages across agents, tools, and supervisors. New features include Guardrails execution logging, auto expanded current traces, and improved navigation via session and trace IDs for a clearer view of the execution flow.
-
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md#playground-interface-components)
 
 **Enhanced Document Management in Playground**
 
 The enhanced interface offers a smoother and more intuitive way to manage conversation attachments. The new ‘Manage’ panel features ‘In Context’ and ‘Removed’ tabs, clearly organizing documents by status, with visual indicators showing actively used files. This streamlined approach enhances user control and awareness of document usage, making it easier to track and manage attachments.
-
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md)
 
-
 <font size="4">No-code & Pro-Code Tools</font>
-
 
 **New Human Node for Workflow Approvals**
 
@@ -48,7 +43,6 @@ Key benefits
 **Data Type Validation for Custom Scripts in the Function Node**
 
 The Function node now supports data type selection and validation for Custom Function arguments. Users can define each argument as Text, Number, Boolean, or JSON, instead of the default String. During execution, the system validates that mapped values or variables match the defined type and throws a clear error if a mismatch occurs, preventing runtime failures. 
-
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/function-node.md/#add-and-configure-a-function-node){:target="_blank"}
 
 
@@ -73,7 +67,6 @@ This update introduces support for the following new AI models, providing greate
 **Enhanced Custom API Integration for External Models**
 
 Custom API integration for external models now offers automatic provider format mapping (Anthropic, OpenAI) with improved error messaging, simplifying request/response configuration. Admins can also explicitly select supported features from a predefined list, making integration more robust and error-resistant.
-
 [Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-api-integration.md/#add-an-external-model){:target="_blank"}
 
 **Tool Calling Support for Open-Source Models**
@@ -92,7 +85,6 @@ The following models are now enabled for tool calling, allowing them to integrat
 **Model Deployment Status in Model Hub**
 
 The Model Hub landing page now provides an updated overview of model deployment statuses, including counts for active, failed, and ready-to-deploy models.
-
 [Learn more :octicons-arrow-right-24:](../models/open-source-models/open-source-summary.md){:target="_blank"}
 
 
@@ -100,14 +92,11 @@ The Model Hub landing page now provides an updated overview of model deployment 
 
 The platform now supports additional voice parameters for real-time models from Google Gemini and Ultravox, enabling more nuanced and personalized voice experiences. 
 
-
 <font size="4">Other Improvement</font>
-
 
 **Enhanced User Invitation UI for Admins**
 
 The Settings console now features an improved multi-row form for user invitations. Admins can add or delete rows to invite multiple users simultaneously, assign system or custom roles to each user, and track total invites with an auto-updating counter.
-
 [Learn more :octicons-arrow-right-24:](../settings/user-management/invite-a-user.md){:target="_blank"}
 
 <hr>
