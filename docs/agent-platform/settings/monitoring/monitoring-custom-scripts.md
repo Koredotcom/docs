@@ -438,7 +438,7 @@ ERROR :: Error log using korelogger
         "attributes": {
             "service.name": "gvisor-py-normal",
             "service.instance.id": "4XXXXXX1-9XX9-4XXb-9XXc-aXXXXXXXXXX1",
-            "deployment.environment": "rnd-gale.kore.ai"
+            "deployment.environment": "rnd-gxxe.kxxe.ai"
         },
         "schema_url": ""
     }
