@@ -1,6 +1,6 @@
-# Diagnostics for Agent Platform
+# Agent Diagnostics
 
-When a user runs Diagnostics from the Agentic App Overview page, the platform initiates a comprehensive validation process covering the app’s architecture and configuration. It evaluates key components—including agents, tools, events, memory systems, and app-level orchestration—to detect potential issues before deployment.
+When a user runs Diagnostics from the Agentic App Overview page, the platform initiates a comprehensive validation process. It evaluates key components—including agents, tools, events, memory systems, and app-level orchestration—to detect potential issues before deployment.
 
 ![Create App](images/createapp/diagnostics-button.png "Diagnostics button")
 
@@ -16,7 +16,7 @@ Key highlights
 * Offers actionable guidance for every issue, facilitating prompt and effective resolution.
 * Employs a consistent, repeatable validation process applying uniform standards across all deployments to ensure scalable, reliable, and proactive detection of issues, helping apps meet defined quality and operational readiness benchmarks before production.
 
-## Sample diagnostics report for the Agent Platform
+## Components of the Diagnostics Report
 
 | Section       | Description                                                                                     |
 |---------------|-------------------------------------------------------------------------------------------------|
