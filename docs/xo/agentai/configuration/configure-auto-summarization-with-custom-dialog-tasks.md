@@ -2,7 +2,7 @@
 
 The end-of-conversation summary in Agent AI is generated using the [Kore.ai XO GPT](../../generative-ai-tools/xo-gpt-module.md){:target="_blank"} module.
 
-If clients prefer to use a different model (for reasons such as language or quality), they can host their model in GALE or another server and provide their API endpoint. The custom summarization workflow uses the "Custom Dialog Task" option - when the conversation ends, Agent AI will trigger the configured dialog, which will fetch the conversation, generate the summary, and display or save it as needed.
+If clients prefer to use a different model (for reasons such as language or quality), they can host their model in [Agent Platform](../../../agent-platform/) or another server and provide their API endpoint. The custom summarization workflow uses the "Custom Dialog Task" option - when the conversation ends, Agent AI will trigger the configured dialog, which will fetch the conversation, generate the summary, and display or save it as needed. 
 
 ## Steps to configure auto summarization with custom dialog tasks
 

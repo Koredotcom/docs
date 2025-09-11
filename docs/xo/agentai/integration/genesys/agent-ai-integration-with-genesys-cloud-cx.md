@@ -470,8 +470,8 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
         <img src="../kore-data-table/create-new-app-7.png" alt="create-new-app" title="create-new-app" style="border: 1px solid gray; zoom:80%;">
 
         2. Select the **Read**, **Write**, and **Delete** permissions, as required.  
+
             !!! note
-            
                 You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page:   
 
             <img src="../kore-data-table/apps-new-app-8.png" alt="apps-new-app" title="apps-new-app" style="border: 1px solid gray; zoom:80%;">
