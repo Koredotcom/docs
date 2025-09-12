@@ -344,9 +344,9 @@ To treat a Bot Synonym word as a Homophone/Homonym in an utterance, you must def
 !!! note "Important Points"
 
     Both homonyms do not change the original utterance like Substitutions or return the normalized value for the Custom Concept entity. However, they do the following:  
-    
-        * Influence POS Tagging.  
-        * Link concepts to new words (marking). [Learn more](../training/fundamental-meaning.md#marking). 
+
+    * Influence POS Tagging.  
+    * Link concepts to new words (marking). [Learn more](../training/fundamental-meaning.md#marking). 
     
 ### Emoji Support
 
