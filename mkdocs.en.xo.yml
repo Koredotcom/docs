@@ -468,7 +468,7 @@ nav:
       - Contact Center AI Routing: contactcenter/routing/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md
       - Skills: contactcenter/routing/skills/skill-management.md
-    - Agent Console:
+    - Console:
       - Introduction to the Console: console/agent-console-introduction.md
       - Conversation Tray: console/conversation-tray.md
       - Incoming Interactions: console/managing-incoming-interactions.md
