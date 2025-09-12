@@ -39,7 +39,7 @@ To use Generative AI features in AI for Work, configure integration with either
 a pre-built or custom Large Language Model (LLM). Pre-built integrations with
 platforms like Azure OpenAI, OpenAI, and Anthropic offer seamless setup, while
 the bring-your-own (BYO) framework supports external or self-hosted models for
-custom configurations. [Learn more](/docs/ai-for-work/assistant-configuration/llm-configuration/).
+custom configurations. [Learn more](../docs/ai-for-work/assistant-configuration/llm-configuration/).
 
 ## Step 4: Configure Rate Limit for User Queries
 
