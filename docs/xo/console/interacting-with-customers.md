@@ -542,21 +542,21 @@ Customers always remain in control of their session and can access the following
 
 ### Initiate Co-browse Session Between the Agent and the Customer Desktop Over the Phone
 
-* To initiate a Co-browse session when the connection between the agent and the customer desktop screen is over the phone:
+To initiate a Co-browse session when the connection between the agent and the customer desktop screen is over the phone:
 
-    1. In the Console, click the **CoBrowse** button.
+1. In the Console, click the **CoBrowse** button.
 
-    2. The agent generates a security code to establish a website-to-website connection.    
-        <img src="../images/generate-co-browser-code.png" alt="Generate Co-Browse Code" title="Generate Co-Browse Code" style="border: 1px solid gray; zoom:80%;">
+2. The agent generates a security code to establish a website-to-website connection.    
+    <img src="../images/generate-co-browser-code.png" alt="Generate Co-Browse Code" title="Generate Co-Browse Code" style="border: 1px solid gray; zoom:80%;">
 
-        <img src="../images/security-code.png" alt="Co-Browse Security Code" title="Co-Browse Security Code" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/security-code.png" alt="Co-Browse Security Code" title="Co-Browse Security Code" style="border: 1px solid gray; zoom:80%;">
 
-    3. Share the security code with the customer.
-    4. The customer clicks the Co-browse button. A prompt appears to enter the code shared by the agent during the voice call.  
-        <img src="../images/co-browse-page.png" alt="Co-Browse Page" title="Co-Browse Page" style="border: 1px solid gray; zoom:80%;">
+3. Share the security code with the customer.
+4. The customer clicks the Co-browse button. A prompt appears to enter the code shared by the agent during the voice call.  
+    <img src="../images/co-browse-page.png" alt="Co-Browse Page" title="Co-Browse Page" style="border: 1px solid gray; zoom:80%;">
 
-    5. After entering the code, the system establishes an end-to-end connection between the agent and the customer desktops to initiate co-browsing.  
-        <img src="../images/co-browse-page-chat-window.png" alt="Chat Window in Co-Browse" title="Chat Window in Co-Browse" style="border: 1px solid gray; zoom:80%;">
+5. After entering the code, the system establishes an end-to-end connection between the agent and the customer desktops to initiate co-browsing.  
+    <img src="../images/co-browse-page-chat-window.png" alt="Chat Window in Co-Browse" title="Chat Window in Co-Browse" style="border: 1px solid gray; zoom:80%;">
 
 ### Initiate Co-browse on the Console When Connected to an External System
 
