@@ -253,9 +253,7 @@ Filtering options vary based on the agent's access level:
 
     * **Queues**: Shows only queues that the agent is part of or has access to.  
     
-    * **Audit Status**: Visible only if Auto QA interactions are included.
-
-    * **Date Range**: Available when Auto QA access is enabled.		
+    * **Audit Status**: Visible only if Auto QA interactions are included.   
     <img src="../agent-dashboard/images/my-dashboard-filter-audit-status.png" alt="Manually Audited with Auto QA Interactions" title="Manually Audited with Auto QA Interactions" style="border: 1px solid gray; zoom:60%;">
 
 ### Comments and Transcripts
