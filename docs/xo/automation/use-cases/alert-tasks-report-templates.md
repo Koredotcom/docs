@@ -1,6 +1,6 @@
 # Alert Task – Report Templates
 
-For some Alert tasks, as seen <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>, you may want to display the app response to the end-user as a link that can display the payload response using a template, such as a table, contact card, or formatted for a specific message type such as a weather report.
+For some Alert tasks, as seen [Alert task](../use-cases/alert-tasks.md), you may want to display the app response to the end-user as a link that can display the payload response using a template, such as a table, contact card, or formatted for a specific message type such as a weather report.
 
 !!!note
 

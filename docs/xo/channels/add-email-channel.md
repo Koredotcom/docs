@@ -9,7 +9,7 @@ The email channel offers the following functionalities:
 * Distribution to multiple recipients
 * Standard Responses
 * Attachments
-* Drafts. [Learn more](https://docs.kore.ai/xo/console/interacting-with-customers/#emails).
+* Drafts. [Learn more](../console/interacting-with-customers.md#emails).
 
 You can use the Kore.ai Email domain or create your custom Email Domain to configure your email addresses.
 

@@ -11,7 +11,7 @@ To manage this setting, follow the steps below:
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>This feature is available only if you create and configure an Alert/Action/Information task for the Assistant. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#general-settings/" target="_blank">Learn more</a>.</p>
+<p>This feature is available only if you create and configure an Alert/Action/Information task for the Assistant. <a href="../../use-cases/alert-tasks.md#general-settings/" target="_blank">Learn more</a>.</p>
 </div>
 
 <ol start="2"><li>Edit each task in the <b>Field Memory</b> settings to persist its data and pre-populate the data in another related task for the same AI Agent. For example, for a travel planning assistant, <i>Get Wait Times for Boarding</i> task, you can pre-populate task fields into the related task, <i>Book a FastPass</i> task.</li> 

@@ -31,7 +31,7 @@ Used to get the status of the [Delete Customer Data API](delete-customer-data.md
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="Delete Customer Data Status API">How to generate the JWT Token.</a>
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>
    </td>
   </tr>
   <tr>

@@ -469,31 +469,93 @@ While interacting with a customer, if an agent needs to seek external consultati
     The Call History tab contains records of the outbound calls.  
         <img src="../images/call-history-tab.png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
 
-## Chat Co-Browse
+## Co-Browse
 
-During chat interactions, agents can use Co-Browse, a collaboration tool that allows them to browse the customer application and offer real-time assistance. To initiate a co-browse session, agents need to click the Co-Browse icon.  
-<img src="../images/chat-cobrowse.png" alt="Chat Co-Browse" title="Chat Co-Browse" style="border: 1px solid gray; zoom:80%;">
+The Co-browse functionality allows agents and customers to collaborate in real time by sharing the customer’s web session. Agents can guide customers, highlight areas of interest, and—if permitted—temporarily control the session to assist with navigation. Customers remain in control at all times. To configure Co-browse, refer to [Co-browse Settings](../contactcenter/configurations/settings/co-browse.md).
 
-## Voice Co-Browse
+!!! Note
 
-Agents can initiate a co-browsing session during voice calls.
+    Co-browse is supported only on websites that have the Web SDK embedded. It is not available in other channels such as Telegram, WhatsApp, etc.
 
-* Clicking the Co-browser icon initiates a session directly if the agent and customer desktops are connected.  
-<img src="../images/voice-cobrowse.png" alt="Voice Co-Browse" title="Voice Co-Browse" style="border: 1px solid gray; zoom:70%;">
+### Starting a Co-browse Session
 
-    <img src="../images/voice-cobrowse-window.png" alt="Voice Co-Browse Window" title="Voice Co-Browse Window" style="border: 1px solid gray; zoom:80%;">
+**Agent**
 
-* To initiate a Co-browse session when the connection between the agent and the customer desktop screen is over the phone:
-    1. The agent generates a security code to establish a website-to-website connection.  
+1. In the Console, click the **CoBrowse** button.
+
+    **Chat**  
+    <img src="../images/co-browse-button.png" alt="Chat Co-Browse" title="Chat Co-Browse" style="border: 1px solid gray; zoom:70%;">
+
+    **Voice**  
+    <img src="../images/voice-cobrowse.png" alt="Voice Co-Browse" title="Voice Co-Browse" style="border: 1px solid gray; zoom:70%;">
+
+2. Click **Start CoBrowse** on the pop-up window. A session request is sent to the customer.  
+    <img src="../images/start-co-browse.png" alt="Start Co-Browse" title="Start Co-Browse" style="border: 1px solid gray; zoom:70%;">
+
+**Customer**
+
+1. A pop-up request appears on the website.
+
+2. Click **Accept** to start the session or **Reject** to decline.  
+    <img src="../images/accept-reject.png" alt="Co-Browse Request" title="Co-Browse Request" style="border: 1px solid gray; zoom:70%;">
+
+3. If accepted, the agent can view the shared screen.
+
+#### Toolbar Options
+
+**Agent Tools**
+
+During a session, the agent can access the following toolbar options:
+
+* **Color Selection**: Choose different annotation styles for clarity.  
+    <img src="../images/color-selection.png" alt="Color Selection" title="Color Selection" style="border: 1px solid gray; zoom:70%;">
+
+* **Annotate**: Draw or highlight elements on the customer’s screen. Use the Eraser tool to remove annotations or undo the most recent action.  
+    <img src="../images/annotate.png" alt="Annotate" title="Annotate" style="border: 1px solid gray; zoom:70%;">
+
+* **Request Control**: Ask permission to control the customer’s screen. If granted, the agent can navigate or type on behalf of the customer.  
+    <img src="../images/request-control.png" alt="Request Control" title="Request Control" style="border: 1px solid gray; zoom:70%;">
+
+* **Release Control**: Release control after completing an action.  
+    <img src="../images/release-control.png" alt="Release Control" title="Release Control" style="border: 1px solid gray; zoom:70%;">
+
+**Customer Tools**
+
+Customers always remain in control of their session and can access the following toolbar options:
+
+* **Release Control**: Withdraw the agent’s control at any point.  
+    <img src="../images/customer-release-control.png" alt="Release Control" title="Release Control" style="border: 1px solid gray; zoom:70%;">
+
+* **Reconnect**: Re-establish the session if connectivity issues occur.  
+    <img src="../images/reconnect.png" alt="Reconnect" title="Reconnect" style="border: 1px solid gray; zoom:70%;">
+
+* **Annotate**: Mark areas on the screen to show the agent what needs attention.  
+    <img src="../images/customer-annotate.png" alt="Annotate" title="Annotate" style="border: 1px solid gray; zoom:70%;">
+
+* **Mask/Block Input**: Hide sensitive information while typing, such as passwords or payment details.
+
+    * Customers select which inputs or areas to mask.  
+        <img src="../images/block-input.png" alt="Block Input" title="Block Input" style="border: 1px solid gray; zoom:70%;">
+
+    * Masked fields are invisible to the agent and not stored in logs. Masking does not apply to all inputs automatically.  
+        <img src="../images/masked-input.png" alt="Input Masked" title="Input Masked" style="border: 1px solid gray; zoom:70%;">
+
+### Initiate Co-browse Session Between the Agent and the Customer Desktop Over the Phone
+
+To initiate a Co-browse session when the connection between the agent and the customer desktop screen is over the phone:
+
+1. In the Console, click the **CoBrowse** button.
+
+2. The agent generates a security code to establish a website-to-website connection.    
     <img src="../images/generate-co-browser-code.png" alt="Generate Co-Browse Code" title="Generate Co-Browse Code" style="border: 1px solid gray; zoom:80%;">
 
-        <img src="../images/security-code.png" alt="Co-Browse Security Code" title="Co-Browse Security Code" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/security-code.png" alt="Co-Browse Security Code" title="Co-Browse Security Code" style="border: 1px solid gray; zoom:80%;">
 
-    2. Share the security code with the customer.
-    3. The customer clicks the Co-browse button. A prompt appears to enter the code shared by the agent during the voice call.  
+3. Share the security code with the customer.
+4. The customer clicks the Co-browse button. A prompt appears to enter the code shared by the agent during the voice call.  
     <img src="../images/co-browse-page.png" alt="Co-Browse Page" title="Co-Browse Page" style="border: 1px solid gray; zoom:80%;">
 
-    4. After entering the code, the system establishes an end-to-end connection between the agent and the customer desktops to initiate co-browsing.  
+5. After entering the code, the system establishes an end-to-end connection between the agent and the customer desktops to initiate co-browsing.  
     <img src="../images/co-browse-page-chat-window.png" alt="Chat Window in Co-Browse" title="Chat Window in Co-Browse" style="border: 1px solid gray; zoom:80%;">
 
 ### Initiate Co-browse on the Console When Connected to an External System
@@ -503,10 +565,10 @@ When the agent and user connect through an external system (for example, Genesys
 Steps to initiate co-browse session:
 
 1. Click the **Co-browse** icon on the conversation tray.  
-<img src="../images/co-browse-external-system.png" alt="Co-Browse Conversation Tray" title="Co-Browse Conversation Tray" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/co-browse-external-system.png" alt="Co-Browse Conversation Tray" title="Co-Browse Conversation Tray" style="border: 1px solid gray; zoom:80%;">
 
 2. A security code is generated. Share the security code with the customer.  
-<img src="../images/co-browse-security-code.png" alt="Co-Browse Security Code" title="Co-Browse Security Code" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/co-browse-security-code.png" alt="Co-Browse Security Code" title="Co-Browse Security Code" style="border: 1px solid gray; zoom:80%;">
 
     A co-browse session is initiated.  
         <img src="../images/co-browse-session-initiated.png" alt="Co-Browse Session Initiated" title="Co-Browse Session Initiated" style="border: 1px solid gray; zoom:80%;">
