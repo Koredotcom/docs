@@ -299,7 +299,7 @@ This indicates the automated QA score associated with an interaction based on th
 
         The filtered interactions count allows you to verify the interaction count based on the filter selections you make, this count gets dynamically recalculated as and when you update filter selections. By default, the filtered interactions count will be zero until you make the first filter selection.
 
-Once you Save Filter, you will get the following filters options to:  
+Once the new filter is saved, you get the following filter options to:  
 
 * **Copy**
 
