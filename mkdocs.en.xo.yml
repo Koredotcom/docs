@@ -751,8 +751,10 @@ nav:
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
     - Search AI:
       - Answer Insights: analytics/searchai/answer-insights.md
-    - GenAI Analytics:
-      - LLM and GenAI Usage Logs: analytics/genai-analytics/llm-usage-logs.md
+    - GenAI Analytics: 
+      - GenAI Dashboard: analytics/genai-analytics/genai-dashboard.md
+      - Performance Analytics: analytics/genai-analytics/genai-performance-analytics.md
+      - GenAI Logs: analytics/genai-analytics/llm-usage-logs.md
     - Automation:
       - Performance Dashboard: analytics/automation/performance-dashboard.md
       - Conversation Insights: analytics/automation/conversation-insights.md

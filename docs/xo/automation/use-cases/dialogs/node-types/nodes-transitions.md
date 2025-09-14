@@ -16,6 +16,10 @@ Sequences nodes and transitions work together, in context, to facilitate the cre
 
 You can add the following nodes to dialog tasks, based on your requirements:
 
+### Agent Node
+
+The Agent Node lets you leverage LLMs and generative AI with Tool calling to build AI-powered, sophisticated, and versatile AI Agents capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers. For more information, refer to [Agent Node](../../../agent-node/working-with-agent-node.md){:target="_blank"}.
+
 
 ### User Intent Node
 
