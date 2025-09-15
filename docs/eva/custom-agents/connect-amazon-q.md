@@ -20,7 +20,7 @@ To connect Amazon Q, follow these steps:
 4. The next step is to configure the Amazon Q connection, which provides access to your indexed content for answer generation. Provide the following details for the connection:
     * **Source Name**: Create a unique and descriptive name for this knowledge source to easily identify it in your Enterprise Knowledge configuration.
     * **Description**: Provide a brief explanation of what this source contains and its purpose within your knowledge ecosystem.
-5. Copy the **Tenant ID** displayed—it is required during setup of the data accessor in [AWS](../integration/amazon-q.md#how-to-configure-koreai-as-a-data-access-for-your-amazon-q-index).
+5. Copy the **Tenant ID** displayed—it is required during setup of the data accessor in [AWS](../integration/amazon-q.md).
 6. Enter the required details from AWS:
     * **Application ID**: The unique identifier of your Amazon Q Business application.
     * **Retriever ID**: The unique identifier of your Amazon Q Business retriever.

@@ -7,9 +7,9 @@ The Agent leverages APIs and combines retrieval and generation techniques to pro
 
 You can create a new agent or import an existing one.
 
--   [Import existing Workflow agent](#import-existing-gale-agent)
+-   [Import existing Workflow agent](#import-existing-workflow-agent)
 
--   [Create Workflow agent](#create-gale-agent)
+-   [Create Workflow agent](#create-workflow-agent)
 
 ## Import existing Workflow agent
 
