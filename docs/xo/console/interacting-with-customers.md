@@ -558,7 +558,7 @@ To initiate a Co-browse session when the connection between the agent and the cu
 5. After entering the code, the system establishes an end-to-end connection between the agent and the customer desktops to initiate co-browsing.  
     <img src="../images/co-browse-page-chat-window.png" alt="Chat Window in Co-Browse" title="Chat Window in Co-Browse" style="border: 1px solid gray; zoom:80%;">
 
-### Initiate Co-browse on the Console When Connected to an External System
+### Initiate a Co-browse on the Console When Connected to an External System
 
 When the agent and user connect through an external system (for example, Genesys) and need to initiate a co-browse session using the Agent console, they can achieve this using this feature.
 
