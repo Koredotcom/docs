@@ -11,6 +11,7 @@ Access **Interactions** by navigating to **Quality AI** > **Analyze** > **Conver
 
     * Interactions may take a few seconds to appear after a call ends. 
     * If any section of the Agent Interactions dashboard elements displays an "NA" status, it indicates that the corresponding data is not yet available on the Audit Allocations page.
+
     * Intents, Topics, Keywords, and Emotions in Conversation Mining are always shown in the assigned default language, even if the conversation is in a different language. 
 
 ## Interactions Dashboard Elements
@@ -25,12 +26,19 @@ The **Interactions** dashboard includes the following elements:
     * **Intent Tags**: Shows the classified intents of each interaction as tags. Hover over the Intent tags to see all relevant intents mentioned in that conversation.  
   <img src="../conversation-mining/images/conversation-mining-interaction-intent-tags.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
+* **Processing Status**: 
+
+* **Pass**: Displays a green icon when all processes have succeeded. The API connection is active, and metric adherence is captured.
+
+* **Fail**: Displays a red icon when all processes have not succeeded. The API connection is down, and metric adherence is not captured.
+<img src="../conversation-mining/images/processing-status.png" alt="Processing Status" title="Processing Status" style="border: 1px solid gray; zoom:80%;">
+
 * **Actions**: Allows you to assign the interaction to a bookmark for later reference.  
 <img src="../conversation-mining/images/actions-tags.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
-        To view and tag the bookmarks for future reference, you must create the required bookmarks during the [Settings](../configure/settings.md) configuration. 
+        To view and tag the bookmarks for future reference, you must create the required bookmarks during the [Settings](../configure/quality-ai-general-settings.md) configuration. 
 
 * **Queues**: Shows the queue where the system terminated during the interaction.
 
@@ -39,15 +47,6 @@ The **Interactions** dashboard includes the following elements:
         The evaluation form used to score the interaction corresponds to the queue where the system terminated the interaction. 
 
 * **Kore Evaluation Score**: Displays the Auto QA score for an interaction based on the evaluation form completed by agents. Hover over the warning icon to see the agent’s API processing status (Pass, Fail, or Disabled). Click a conversation to open the Conversation Mining page for related Audit, Conversation Details, and Logs.
-
-* **Processing Status**: 
-
-* **Pass**: Displays a green icon when all processes have succeeded. The API connection is active, and metric adherence is captured.
-
-* **Fail**: Displays a red icon when all processes have not succeeded. The API connection is down, and metric adherence is not captured.
-
-* **Disabled**: If the feature is disabled in Settings and the metric is attached to the form, the status appears as disabled.   
-<img src="../conversation-mining/images/processing-status.png" alt="Processing Status" title="Processing Status" style="border: 1px solid gray; zoom:80%;">
 
 * **Sentiment Trend**: Displays the distribution of positive, negative, and neutral tones across a conversation. It tracks sentiment changes during the call, highlights resolution tone with a special scoring method, and summarizes overall sentiment. 
 
