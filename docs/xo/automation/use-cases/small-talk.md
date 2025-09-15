@@ -244,7 +244,7 @@ Once you create/import a group, you can add/modify the query-response pairs.
     * Click **+ Add Response**.
     * Click the **New Prompt Message**.
     * Select **Channel**.
-    * Enter the response in standard text or in JavaScript using the Advanced Mode. If applicable Select a Template. <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">Learn more</a>.
+    * Enter the response in standard text or in JavaScript using the Advanced Mode. If applicable Select a Template. 
     
       <img src="../images/message-response-channel.png" alt="message response channel" title="message response channel" style="border: 1px solid gray; zoom:75%;">
     

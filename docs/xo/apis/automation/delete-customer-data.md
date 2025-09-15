@@ -2,12 +2,9 @@
 
 This API is Used to delete customer data.
 
-!!!note
-
-        Delete User will not proceed if the requested user is:
-
-          * An account owner or belongs to one or more accounts.  
-          * The bot owner or co-developer for one or more bots. 
+Delete User doesn't proceed if the requested user is:
+* An account owner or belongs to one or more accounts.  
+* The bot owner or co-developer for one or more bots. 
 
 
 <table>
@@ -35,7 +32,7 @@ This API is Used to delete customer data.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="../../../analytics/automations/conversation-flows">How to generate the JWT Token.</a>
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>
    </td>
   </tr>
   <tr>
@@ -111,14 +108,14 @@ curl -X DELETE \
   <tr>
    <td>userIds
    </td>
-   <td>The array of user Ids whose details have to be deleted, for example, [“userId1”, “userId2”]. It can be user email id or enterprise assigned unique id. The following are acceptable values for this field:
+   <td>The array of user Ids whose details have to be deleted, for example, [`userId1`, `userId2`]. It can be user email id or enterprise assigned unique id. The following are acceptable values for this field:
 <ul>
 
-<li>Kore generated ‘user id’ ie. ’email address’ in case of enterprise users and ‘u-id’ for the rest.
+<li>Kore generated ‘user id’(email address) in case of enterprise users and ‘u-id’ for the rest.
 
-<li>Channel_user_id ie. the user identity that the channel has provided to the platform
+<li>`Channel_user_id` which is the user identity that the channel has provided to the platform
 
-<li>Both channel_id and channel_user_id  where Channel_id refers to the unique identified for each of the supported channels
+<li>Both channel_id and `channel_user_id`  where `Channel_id` refers to the unique identified for each of the supported channels
 
 </ul>
    </td>
@@ -138,10 +135,10 @@ curl -X DELETE \
 <br>
 (optional)
    </td>
-   <td>Determines if the specified users details have to be removed from all the Bots. Set to true or false.
+   <td>Determines if the specified users details have to be removed from all the Bots. Set to `true` or false.
    <ul>
    <li>This parameter is set to false by default.
-   <li>If it is set to true, the user details provided in userIds parameter will be deleted from all the AI agents in the organization and botIds parameter will be ignored.
+   <li>If it is set to `true`, the user details provided in userIds parameter will be deleted from all the AI agents in the organization and botIds parameter will be ignored.
    </ul>
    </td>
   </tr>
@@ -149,7 +146,7 @@ curl -X DELETE \
 
 !!! Note
 
-    The execution status of this API can be viewed by executing [Delete Customer Data Status API](delete-customer-data-status.md){:target="_blank"}
+    The execution status of this API can be viewed by executing [Delete Customer Data Status API](delete-customer-data-status.md){:target="_blank"}.
 
 
 ## Sample Response

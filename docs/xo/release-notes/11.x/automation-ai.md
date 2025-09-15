@@ -2,6 +2,33 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.17.1 September 15, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">Agent Transfer</font>  
+
+**Salesforce MIAW Agent Integration Enhancements**   
+
+AI for Service now offers enhanced Salesforce MIAW integration, providing uninterrupted customer chat sessions even during agent transfers and conferences. Sessions remain active as long as either an agent or the customer is engaged, with the platform respecting Salesforce SSE events for transfers and conferencing. This improvement includes real-time system messages for end-users, clearly indicating when a transfer starts, a new agent joins, or an agent leaves a conference, thereby increasing transparency and ensuring a consistent, seamless support experience. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#internal-agent-transfer-and-conference-handling)
+
+<font size="4">Service Node</font>  
+
+**New Option to Disable SSL Certificate Validation for API Calls** 
+
+The new Client Certificate Authentication option in the AI Agent allows platform users to define whether client certificate validation is required for individual Service Nodes. This option is enabled by default to ensure enhanced security against unauthorized access while maintaining compatibility with existing configurations. For users using custom API calls that require authentication methods beyond the platform's standard SSL client-certificate validation (such as OAuth-type authorization profiles), this feature allows them to disable certificate validation and implement their own custom authentication mechanisms. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#configure-the-node)
+
+
+<font size="4">NLP</font>  
+
+**Detailed Insights into Batch Testing Failure Reasons**   
+    
+Batch testing results now offer improved clarity regarding why an expected intent failed to qualify as the matched intent by showing the Elimination Reason for the failed intent. Results clearly indicate whether the failure was due to the model or eliminated by the Ranking & Resolver (R&R) engine, enabling users to troubleshoot more efficiently and improve model training and policy tuning. [Learn more :octicons-arrow-right-24:](../../automation/testing/regression-testing/batch-testing.md#view-test-case-details)
+
+<hr>
+
 ## v11.17.0 August 23, 2025
 
 <u>Minor Release</u>  
@@ -13,7 +40,6 @@ This update includes enhancements and bug fixes. The key enhancements included i
 **Call ID Support in the getMessage API for AudioCodes and SAVG**   
 
 To improve access to app-user conversation history for voice interactions, the getMessage API now accepts callId as an optional query parameter for AudioCodes and SAVG. It aims to reduce latency and infrastructure load for high-volume customers who retrieve conversational data for analysis and auditing. [Learn more :octicons-arrow-right-24:](../../apis/automation/conversation-history.md#sample-request)
-
 
 <hr>
 

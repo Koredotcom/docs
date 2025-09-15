@@ -109,7 +109,7 @@ The following sections describe how to set up case management, enable features, 
 
     * **Automation Failure**: When automation fails, the system routes the conversation to Agent 1 or Agent 2.
 
-        * **Case Creation**: When Agent 1 creates a case, the system assigns it to Agent 3 or Agent 4. For more information, see [Learn more](../case-management/manage-cases-and-tasks.md#create-cases-outside-the-agent-console).
+        * **Case Creation**: When Agent 1 creates a case, the system assigns it to Agent 3 or Agent 4. For more information, see [Learn more](../case-management/agent-console.md/#create-a-new-case).
 
         * **Case Handling**: Agent 1 can close the conversation while the case remains open for the assigned agent to take further action.
 

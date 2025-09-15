@@ -2,7 +2,7 @@
 
 You can define filters for end-users to limit the results of an alert task to the results an end-user needs. For example, you can define a filter for the name, or account, or business. 
 
-When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">Learn more</a>.
+When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. [Alert task](../use-cases/alert-tasks.md).
 
 ## Defining Filters
 

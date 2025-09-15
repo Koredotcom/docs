@@ -1,6 +1,6 @@
 # Alert Task – Message Definition
 
-For some Alert tasks, as seen <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">Learn more</a>, you can define the look and feel of the data presented to the end-user when the alert is displayed, based on the payload delivered by the webhook.
+For some Alert tasks, as seen [Alert task](../use-cases/alert-tasks.md), you can define the look and feel of the data presented to the end-user when the alert is displayed, based on the payload delivered by the webhook.
 
 ## Message Definition Overview
 
@@ -87,7 +87,8 @@ Follow the steps below to add variable keys:
 * **UserContext.get(“customData”)** – A developer-defined custom key.
 * **UserContext.get(“identities”)** – Alternate user IDs, if defined.
 
-Additional session keys may be available depending on how the task is defined and the context of keys available for that task. For more information about session and context keys, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">Using Session and Context Variables in Tasks</a>.
+Additional session keys may be available depending on how the task is defined and the context of keys available for that task. For more information, see [Using Session and Context Variables in Tasks](../use-cases/using-session-and-context-variables.md).
+
 
 ### Response Keys
 

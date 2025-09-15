@@ -82,7 +82,7 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
   <tr>
    <td>Variable Namespaces
    </td>
-   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components. <a href="../integrations/managing-namespace" target="_blank"></a>.
+   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components.
    </td>
   </tr>
   <tr>

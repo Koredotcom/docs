@@ -1,18 +1,18 @@
 # Alert Task – RSS API Request
 
-We have seen how an Alert task can be set up in the  XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this section, we will see how to configure an API Request for a RSS service.
+We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform. In this section, we will see how to configure an API Request for a RSS service.
 
 <img src="../images/rss-api-request.png" alt="rss api request" title="rss api request" style="border: 1px solid gray; zoom:75%;">
 
 For a task with the **Connection Type** specified as **Webservice** and the **Connection Mode** set to **RSS** you need to define:
 
 * **Content Type** – The type of data exchanged between the XO Platform and your web application,
-* **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
-* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-parameters" target="_blank">Learn more</a>.
-* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-an-initializer" target="_blank">Learn more</a>.
-* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your AI Agent to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-the-request-chain" target="_blank">Learn more</a>.
-* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#add-the-response-sample" target="_blank">Learn more</a>.
-* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#website-preview-content" target="_blank">Learn more</a>.
+* **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key.
+* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. 
+* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. 
+* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your AI Agent to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of pre-processors, API requests, and post-processors. 
+* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. 
+* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <
 
 ## Define the Content Type
 
@@ -387,7 +387,7 @@ With the <strong>Visibility</strong> field set to <strong>Custom</strong>, you c
 
 ## Define an Initializer
 
-To run a task, you may need to put or get values from a session before executing the task using session-specific variables. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">Using Session and Context Variables in Tasks</a>. 
+To run a task, you may need to put or get values from a session before executing the task using session-specific variables. For more information, see [Using Session and Context Variables in Tasks](../use-cases/using-session-and-context-variables.md).
 
 Some web services require executed code, session variables, or modification of user context details before executing an API request. For example, a web service may require two-factor user authorization where the first step is a user log in, and the second step is a partner authorization. After validating both these steps, an access token is granted and used in the header of subsequent API calls to that web service. 
 
@@ -753,7 +753,7 @@ Follow these steps to add a standard postprocessor:
 
 <ol start="3"><li><p>It is then used as a variable input as shown in the following <b>Post URL:</b></p> 
 <p><code>https://app.asana.com/api/1.0/projects/<b>{id}</b>/tasks?opt_fields=completed,modified_at</code>
-You must also specify the HTML <b>Content Type</b> expected in the payload response as well as the HTML <b>Request</b> method. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">Using Session and Context Variables in Tasks</a>.</p></li>
+You must also specify the HTML <b>Content Type</b> expected in the payload response as well as the HTML <b>Request</b> method.</p></li>
 
 <ul><li><b>Spread</b>: For payloads that contain arrays of data that you need to separate. For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor, set the <b>Key</b> field to, for example, <b>data</b>, and <b>Type of Process</b> to <b>spread</b> to capture the content in the data element in the following code example to extract each item of the array.
 

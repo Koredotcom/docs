@@ -3,7 +3,8 @@
 
 The new Kore.ai XO GPT module delivers fine-tuned large language models designed for enterprise conversational AI agents. These models are optimized for accuracy, safety, and efficiency in production environments.
 
-Current capabilities include Answer Generation, Conversation Summarization, User Query Rephrasing, AI Agent Response Rephrasing, Vector Generation, and Intent Resolution (DialogGPT). Future updates will expand capabilities further, including Entity Co-referencing.
+Current capabilities include Answer Generation, Conversation Summarization, User Query Rephrasing, AI Agent Response Rephrasing, Vector/Embedding Generation (Text and Image), and Intent Resolution (DialogGPT). Future updates will expand capabilities further, including Entity Co-referencing.
+
 
 
 !!! note
@@ -51,5 +52,5 @@ The Kore.ai XO GPT module currently supports the following features:
 
 * **Rephrase User Query**: This XO GPT model utilizes the app domain knowledge and conversation history to expand and rephrase user queries for improved understanding by downstream NLP components. This includes better recognition of contextual intents, entity co-referencing, and more. [Learn more](genai-features.md#automation-ai-genai-features).
 
-* **Vector Generation**: This feature helps create vector embeddings for all the ingested data in the Search AI application. When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature. [Learn more](genai-features.md#search-ai-genai-features).
+* **Vector Generation (Image & Text)**: This feature helps create vector embeddings for text and image data ingested data in the Search AI application.  When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature. [Learn more](genai-features.md#search-ai-genai-features).
 
