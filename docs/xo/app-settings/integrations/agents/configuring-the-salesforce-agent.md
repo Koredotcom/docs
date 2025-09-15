@@ -283,17 +283,10 @@ Under Company Information, locate the field Salesforce.com Organization ID.
 
 The Salesforce MIAW Agent Integration supports agent name display, real-time read receipts, automatic inactivity timeouts, UI-based configuration of standard responses and stop words, and metadata transfer for context. These enhancements improve the agent experience, streamline session handling, and simplify configuration through the Salesforce interface.
 
-### Salesforce MIAW – Internal Agent Transfer and Conference Handling
+### Internal Agent Transfer and Conference Handling in Salesforce MIAW
 
-The  Platform supports internal agent transfers and conferencing within Salesforce MIAW. These enhancements ensure uninterrupted customer sessions, transparent agent transitions, and real-time notifications for end-users.
-
-**Supported Capabilities**
-
-* Decouples chat session lifecycle from individual agent disconnections.  
-* Maintains active sessions as long as at least one agent or the client remains engaged.  
-* Honors Salesforce SSE events for agent transfers, agent joins, and agent exits during transfers and conferences.  
-* Sends explicit system messages to end-users during transfers and conferences.
-
+The platform provides support for internal agent transfers and conferencing within Salesforce MIAW. Users can use this capability to maintain uninterrupted customer sessions and ensure transparent agent transitions. 
+The platform decouples the chat session lifecycle from individual agent disconnections, ensuring that sessions remain active as long as at least one agent or the client is engaged. It emits real-time SSE events for internal agent transfers, agent joins, and agent exits during transfers and conferences. 
 
 ### Display of Agent Name
 
