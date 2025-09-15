@@ -19,10 +19,11 @@ Supervisors and QA users can now add comments directly on individual messages, w
 
 In Conversation Mining, the Processing Status now displays a status icon: green (pass) when all processes have succeeded and metrics are being captured; red (fail) when any process fails, and metric tracking is interrupted. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md#interactions-dashboard-elements)
 
+
 <font size="4">NLP</font>
 
 **Quality AI Integration with Agent AI**
 
-Quality AI can now be integrated with Agent AI on third-party desktops. This integration streamlines the recording process and utilizes metadata through Agent AI's Custom Object field. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md#interactions-dashboard-elements)
+Quality AI can now be integrated with Agent AI on third-party desktops. This integration streamlines the recording process and utilizes metadata through Agent AI's Custom Object field. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/conversation-sources.md)
 
 [Learn more about Quality AI features :octicons-arrow-right-24:](../../quality-ai/about-quality-ai.md){:target="_blank"}
