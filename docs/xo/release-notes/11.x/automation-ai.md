@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancement included in
 
 **Salesforce MIAW Agent Integration Enhancements**   
 
-AI for Service now offers enhanced Salesforce MIAW integration, providing uninterrupted customer chat sessions even during agent transfers and conferences. Sessions remain active as long as either an agent or the customer is engaged, with the platform respecting Salesforce SSE events for transfers and conferencing. This improvement includes real-time system messages for end-users, clearly indicating when a transfer starts, a new agent joins, or an agent leaves a conference, thereby increasing transparency and ensuring a consistent, seamless support experience. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#salesforce-miaw-internal-agent-transfer-and-conference-handling)
+AI for Service now offers enhanced Salesforce MIAW integration, providing uninterrupted customer chat sessions even during agent transfers and conferences. Sessions remain active as long as either an agent or the customer is engaged, with the platform respecting Salesforce SSE events for transfers and conferencing. This improvement includes real-time system messages for end-users, clearly indicating when a transfer starts, a new agent joins, or an agent leaves a conference, thereby increasing transparency and ensuring a consistent, seamless support experience. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#internal-agent-transfer-and-conference-handling-in-salesforce-miaw)
 
 <font size="4">Service Node</font>  
 
@@ -25,7 +25,7 @@ The new Client Certificate Authentication option in the AI Agent allows platform
 
 **Detailed Insights into Batch Testing Failure Reasons**   
     
-Batch testing results now offer improved clarity regarding why an expected intent failed to qualify as the matched intent by showing the Elimination Reason for the failed intent. Results clearly indicate whether the failure was due to the model or eliminated by the Ranking & Resolver (R&R) engine, enabling users to troubleshoot more efficiently and improve model training and policy tuning.
+Batch testing results now offer improved clarity regarding why an expected intent failed to qualify as the matched intent by showing the Elimination Reason for the failed intent. Results clearly indicate whether the failure was due to the model or eliminated by the Ranking & Resolver (R&R) engine, enabling users to troubleshoot more efficiently and improve model training and policy tuning. [Learn more :octicons-arrow-right-24:](../../automation/testing/regression-testing/batch-testing.md#view-test-case-details)
 
 <hr>
 

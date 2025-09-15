@@ -911,6 +911,29 @@ Each test run creates a test report record and displays a summary of the test re
 <img src="../images/batch-testing-17-batch-test-sample-result-warn.png" alt="Test report" title="Test report" style="border: 1px solid gray; zoom:50%;"/> 
 
 
+* **Elimination Reason** displayes why a test failed only when the expected intent does not match the wining intent. The Platform clearly indicates whether the model causes the failure or the Ranking & Resolver (R&R) engine eliminates the intent. The column displays the R&R policy reason when available. Otherwise, it shows the expected intent scores from each engine in this format: FM: [score], ML: [score], FAQ: [score].
+
+The Platform provides the following Elimination Reasons from R&R::
+
+
+* belowDependencyThreshold: Score below minimum dependency threshold.
+* verbMatchOnly: Only verb matched in a single word match.
+* entityMatchOnly: Only entity (number, date, etc.) matched.
+* foundDefinitive – Definitive match found with only possible matches.
+* outsideProximity – Score below minimum score threshold.
+* withinAnotherTask – Task name found within another task.
+* noWordMatch – No word match found.
+* negationIntent – Intent match has a negation.
+* taskNotAvailable – Task not available in the bot.
+* subIntent – Task is a sub-intent.
+
+To view the elimination column, click **View Summary** for a test case and then click **View Test Cases**. You can also download the CSV report to see the elimination reason.  
+<img src="../images/elimination-reason.png" alt="Elimination Reason" title="Elimination Reason" style="border: 1px solid gray; zoom:50%;"/> 
+
+
+
+
+
 #### Download a CSV Report
 
 To get a detailed analysis of the test run, click **the Download** icon to download the test report in CSV format. You have an option to delete the test results if needed. The top section of the report comprises the summary with the following fields:
@@ -966,7 +989,7 @@ The report also provides detailed information on each of the test utterances and
 
     For any of the batch tests, if results indicate that your app is unable to recognize the correct intents, you can work on improving its performance by adding or modifying utterances to the Machine Learning model.
 
-
+* **Elimination Info** displayes why a test failed only when the expected intent does not match the wining intent. The Platform clearly indicates whether the model causes the failure or the Ranking & Resolver (R&R) engine eliminates the intent. The column displays the R&R policy reason when available. Otherwise, it shows the expected intent scores from each engine in this format: FM: [score], ML: [score], FAQ: [score]. To know more, see [Elimination Reason](#view-test-case-details).
 
 #### Batch Test Results for Universal Bots
 
