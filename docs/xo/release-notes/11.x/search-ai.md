@@ -14,7 +14,7 @@ The Vector Configuration page now offers more flexibility when working with cust
 
 Key improvements:
 
-* Separate Models and Prompts for Text & Image: Users can now configure distinct embedding models and prompts for text and image vectors. Image embeddings are managed using the "Vector Generation – Image" feature, while text embeddings are handled by "Vector Generation – Text." The appropriate model is automatically determined based on the chunk extraction method. 
+* Separate Models and Prompts for Text & Image: Users can now configure distinct embedding models and prompts for text and image vectors. Image embeddings are managed using the *Vector Generation – Image* feature, while text embeddings are handled by *Vector Generation – Text.* The appropriate model is automatically determined based on the chunk extraction method. 
 * Simplified Prompt and Model management: Users can now configure and edit prompts directly in the Search AI UI, streamlining the setup process.
 * Conditional Custom Prompt UI: The updated interface allows for the creation of new custom prompts directly when a custom model is selected for vector generation.
 
