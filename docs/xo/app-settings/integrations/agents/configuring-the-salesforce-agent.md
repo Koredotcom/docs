@@ -278,14 +278,21 @@ Under Company Information, locate the field Salesforce.com Organization ID.
 10. Click **Save** to enable the Salesforce agent.
 11. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
-
-
-
-
 ## Additional Capabilities
 
 
 The Salesforce MIAW Agent Integration supports agent name display, real-time read receipts, automatic inactivity timeouts, UI-based configuration of standard responses and stop words, and metadata transfer for context. These enhancements improve the agent experience, streamline session handling, and simplify configuration through the Salesforce interface.
+
+### Salesforce MIAW – Internal Agent Transfer and Conference Handling
+
+The  Platform supports internal agent transfers and conferencing within Salesforce MIAW. These enhancements ensure uninterrupted customer sessions, transparent agent transitions, and real-time notifications for end-users.
+
+**Supported Capabilities**
+
+* Decouples chat session lifecycle from individual agent disconnections.  
+* Maintains active sessions as long as at least one agent or the client remains engaged.  
+* Honors Salesforce SSE events for agent transfers, agent joins, and agent exits during transfers and conferences.  
+* Sends explicit system messages to end-users during transfers and conferences.
 
 
 ### Display of Agent Name
