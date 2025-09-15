@@ -8,7 +8,7 @@ The following table displays the features and the supported models.
 
 (✅ Supported | ❌ Not supported)
 
-| Model     | Answer Generation     | Vector Generation     | Metadata Extractor Agent     | Query Rephrase for Advanced Search API     | Query Transformation     | Result Type Classification     |Rephrase User Query|
+| Model     | Answer Generation     | Vector Generation <br>(Image & Text)     | Metadata Extractor Agent     | Query Rephrase for Advanced Search API     | Query Transformation     | Result Type Classification     |Rephrase User Query|
 |---|---|---|---|---|---|---|---|
 | Azure OpenAI - GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     | ✅     |
 | Azure OpenAI - GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     | ✅     |
@@ -26,9 +26,34 @@ The following table displays the features and the supported models.
 
 This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../searchai/answer-configuration.md#answers-generation).
 
-## Vector Generation
+## Enrich Chunks with LLM
 
-This feature helps create vector embeddings for all the ingested data in the Search AI application. When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
+This feature helps leverage the capabilities of an external LLM to refine, update, or enrich the chunks extracted from the ingested content. [Learn More](../searchai/workbench/llm-stage.md). 
+
+## Transform Documents with LLM
+
+This feature allows Search AI to leverage external LLM capabilities to enhance or update documents during the extraction process.
+
+[Learn More](../searchai/content-extraction/transformation.md)
+
+## Enrich Chunks with LLM
+
+This feature helps leverage the capabilities of an external LLM to refine, update, or enrich the chunks extracted from the ingested content. [Learn More](../searchai/workbench/llm-stage.md). 
+
+## Transform Documents with LLM
+
+This feature allows Search AI to leverage external LLM capabilities to enhance or update documents during the extraction process.
+
+[Learn More](../searchai/content-extraction/transformation.md)
+
+
+## Vector Generation - Image
+
+This feature helps create vector embeddings for image data ingested into the Search AI application When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
+
+## Vector Generation - Text
+
+This feature helps create vector embeddings for text data ingested into the Search AI application When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
 
 ## Metadata Extractor Agent
 

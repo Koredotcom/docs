@@ -149,7 +149,7 @@ The plain text tab supports the following markups:
    </td>
   </tr>
   <tr>
-   <td>![Image](https://kbob.github.io/images/sample-4.jpg)
+   <td>![Image](https://kbob.github.io/images/sample-4.jpg) 
    </td>
    <td><img src="../images/prompt-editor-sample-4.jpg" width="" alt="alt_text" title="image_tooltip">
    </td>

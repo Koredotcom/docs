@@ -2,6 +2,38 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.17.1 September 15, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+
+<font size="4">LLM & Generative AI</font>
+
+**New GenAI Dashboard for LLM Usage and Performance Monitoring**
+
+The new GenAI Dashboard offers comprehensive insights into LLM token usage and performance across AI for Service. Users can track token consumption by modules, models, and features, with detailed analytics available in the Performance Analytics section. This capability enables organizations to effectively manage infrastructure costs, optimize AI performance, and make informed decisions when scaling AI capabilities. [Learn more :octicons-arrow-right-24:](../../analytics/genai-analytics/genai-dashboard.md)
+
+**Manage LLM Token Limits, Usage Cycles, and Notifications**
+
+AI for Service now allows users to define token usage limits and usage cycles for all LLM Integrations (except XO GPT). Users can also set up automated notifications when token thresholds are reached, enabling proactive cost management, preventing budget overruns, and supporting informed decisions about scaling AI features based on real usage patterns. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md)
+
+**Enhanced Model Library UI**
+
+The enhanced Model Library interface improves LLM visibility and organization by clearly separating configured integrations from available ones. Configured integrations now display token consumption if configured, providing clearer usage insights and easier control over the integration. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/introduction.md)
+
+**Anonymize Sensitive Data in LLM Calls**
+
+The Platform now supports anonymizing sensitive data (entities, tool parameters) before LLM interactions. Users can define regex patterns for redaction, masking, or replacement. When the LLM-layer PII option is enabled, anonymization applies only during language model interactions, with original values restored afterward. Conversations and debug logs always show unmasked data. LLM-layer PII works alongside global PII, with global settings taking precedence. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/data-anonymization.md)
+
+**Vector Generation Feature Split into Text and Image**
+
+The Vector Generation feature is now split into separate Text and Image components, providing independent control over models, prompts, and feature enablement for each content type. The new XO GPT-VDR model generates visual embeddings, while existing configurations are preserved under the Vector Generation – Text feature. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features-searchai.md#vector-generation-image)
+
+
+<hr>
+
 
 ## v11.17.0 August 23, 2025
 

@@ -1,6 +1,6 @@
 # Alert Task – Advanced Settings
 
-In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">Learn more</a>.
+In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user.  [Alert task](../use-cases/alert-tasks.md).
 
 ## Overview
 

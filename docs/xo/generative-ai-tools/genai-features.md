@@ -130,12 +130,15 @@ Learn more about [Automation AI - GenAI Features](genai-features-automationai.md
 ## Search AI - GenAI Features
 
 * **Answer Generation**: This feature helps generate an answer to the user question based on the data ingested into the Search AI application.
-* **Vector Generation**: Generate embeddings for the ingested data in the Answers module and user queries to answer end-user queries at run time.
 - **Metadata Extractor Agent**: This feature is used to extracts relevant sources and fields from a query, map them to structured data, and apply filters or boosts for accurate retrieval. This is particularly useful for data from third party applications.  
 - **Query Rephrase for Advanced Search API**: This feature is used to add contextual information to the user queries and enhance them for relevance. 
 - **Query Transformation**: This feature is used to identify key terms within a query, removing noise and prioritizing relevant documents.
 - **Result Type Classification**: This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query.
 * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
+* **Transform Documents with LLM**: Use LLM to transform documents ingested into Search AI.
+* **Vector Generation - Image**: Generate visual embeddings for ingested image content and user queries, enabling the system to retrieve relevant images and provide accurate responses to end-user queries.
+
+* **Vector Generation - Text**: Generate embeddings for the ingested textual content and user queries, enabling the system to retrieve relevant information and provide accurate responses.
 
 
 Learn more about [Search AI - GenAI Features](genai-features-searchai.md).

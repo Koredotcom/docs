@@ -1,6 +1,6 @@
 # Alert Task – WebHook API Request
 
-In this article, we will see how to configure an API Request for a WebHook service Alert Task. You can learn more about Alert Tasks <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>.
+In this article, we will see how to configure an API Request for a WebHook service Alert Task. [Alert task](../use-cases/alert-tasks.md).
 
 For an Alert task with the **Connection Type** specified as **Webhook**, you will need to define:
 

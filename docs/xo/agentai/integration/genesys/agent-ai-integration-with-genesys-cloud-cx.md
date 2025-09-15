@@ -470,8 +470,8 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
         <img src="../kore-data-table/create-new-app-7.png" alt="create-new-app" title="create-new-app" style="border: 1px solid gray; zoom:80%;">
 
         2. Select the **Read**, **Write**, and **Delete** permissions, as required.  
+
             !!! note
-            
                 You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page:   
 
             <img src="../kore-data-table/apps-new-app-8.png" alt="apps-new-app" title="apps-new-app" style="border: 1px solid gray; zoom:80%;">
@@ -550,7 +550,7 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
 <img src="../kore-data-table/authorized-redirect-uris-15.png" alt="authorized-redirect-uris" title="authorized-redirect-uris" style="border: 1px solid gray; zoom:80%;">
 
 After saving the configuration, you get the **Client Id** of the created OAuth client. Copy the ID and have it available for 
-[Step 3](#create-an-interaction-widget-in-genesys-for-agent-ai).
+[the next step](#create-an-interaction-widget-in-genesys-for-agent-ai).
 
 ## **Create an Interaction Widget in Genesys for Agent AI**
 
@@ -595,7 +595,7 @@ You can fetch the accountId from the **Agent AI > Flows & Channels > Digital > W
 
 The “`x_metadata`” value equals the `URL`-`encoded string` of the JSON object. 
 
-1. For the **oauthId** value, use the **OAuth ID** from [Step 2](#generate-oauth-id-to-enable-kore-services-to-connect-with-genesys). 
+1. For the **oauthId** value, use the **OAuth ID** from the [Generate Oauth ID](#generate-oauth-id-to-enable-kore-services-to-connect-with-genesys) section. 
 
 2. Build **x_metadata**: 
 
@@ -645,7 +645,7 @@ An Interaction Widget uses Group Membership to determine who can view it on the 
 1. Use an existing Group, if your agents are already part of it. Otherwise, create a new Group for Agent AI permission.
 2. Name the Group as **KoreAA-Agents** or similar to distinguish it.  
 3. Add any agent to allow them to use the Agent AI functionality. You can utilize more than one Group, if required.
-4. Go back to the **Integrations** section and open the **Interaction Widget** created in [Step 2](./../../integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md/#step-2-interaction-widget){:target="_blank"}. 
+4. Go back to the **Integrations** section and open the **Interaction Widget** created in the [Create an interaction widget](#create-an-interaction-widget-in-genesys-for-agent-ai) section. 
 5. On the **Configuration** tab, add access using the Group you identified or created for Agent AI in the Group Filtering option.  
 You may also utilize Queue Filtering (optional).  
 <img src="../kore-data-table/group-filtering-23.png" alt="group-filtering" title="group-filtering" style="border: 1px solid gray; zoom:80%;">
@@ -794,19 +794,21 @@ The final step is to install Audiohook for voice streaming, if using Kore-manage
 
     1. **Channel** value should be both.
     2. The **Connection URI** format should be similar to 
-    wss://{**Kore Voice Gateway(KVG)**}[/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true), but add “multiBot=true” parameter to it.
+    wss://{**Kore Voice Gateway(KVG)**}[/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true). 
 
         !!! notes
 
+            * Add “multiBot=true” parameter to it, if you want to use multiple Agent AI bots with different queues.
             * Configure SIP of any of the bots inserted in the Data Table.
-            * Kore Voice Gateway(KVG) host name to be referred from corresponding environment being used at Saas or on-prem  
+            * Kore Voice Gateway(KVG) host name to be referred from the corresponding environment being used at Saas or on-prem.  
 
-6. Get **sipuri=sip:&lt;sip-string>** from **Agent AI** > **Flows & Channels** > **Voice** **Gateway** > **SIP Numbers** > **Configure SIP Trunk** > **Product Selection** > **Agent AI**.  
-    <img src="../kore-data-table/configure-sip-trunk-42.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;">  
-7. Use the following reference from **Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details** page to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
-    <img src="../kore-data-table/web-mobile-client-43.png" alt="web-mobil../../../apis/automation/api-introduction.md#generating-the-jwt-token80%;">
-
-    Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} to generate the token (token= &lt;token>.)  
+6. Follow these steps to get the **Connection URL**: 
+    1. Go to **Agent AI** > **Flows & Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk**.
+    2. Select **Agent AI** in the **Product Selection** section.
+    3. Select **GENESYS Audiohook** in the **Select the SIP Trunk connection method** dropdown list.
+    4. Click the **Copy** button against the autogenerated **Connection URL** field. 
+        <img src="../kore-data-table/configure-sip-trunk-42.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;">  
+ 
 8. Add the following details in the **Advanced** tab: 
 
     ```

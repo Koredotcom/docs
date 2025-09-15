@@ -175,9 +175,9 @@ This Evaluation section has the following interactions listing items:
     The following filtered categories are:
 
     * **Queues**: Allows you to filter and apply interactions in the queue to assign coaching tasks.       
-       <img src="../agent-leaderboard/images/filter-queue.png" alt="Queues" title="Queues" style="border: 1px solid gray; zoom:60%;">
+       <img src="../agent-dashboard/images/evaluation-my-dashboard-without-filter.png" alt="Queues" title="Queues" style="border: 1px solid gray; zoom:60%;">
 
     * **Audit Status**: This allows you to filter and apply audited and unaudited interactions separately before applying them for coaching assignments.       
-       <img src="../agent-leaderboard/images/filter-audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
+       <img src="../agent-dashboard/images/my-dashboard-filter-audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
     * **Filter Interactions**: This displays the total number of filtered interactions.
