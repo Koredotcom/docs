@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
-## v11.17.1 September 13, 2025
+## v11.17.1 September 15, 2025
 
 <u> Patch Release </u>
 
@@ -18,7 +18,8 @@ AI for Service now offers enhanced Salesforce MIAW integration, providing uninte
 
 **New Option to Disable SSL Certificate Validation for API Calls** 
 
-The new Client Certificate Authentication option in the AI Agent allows platform users to define whether client certificate validation is required for individual Service Nodes. For enhanced security and backward compatibility, the option is enabled by default, ensuring stronger protection against unauthorized access while maintaining seamless operation with existing configurations. To support custom API calls that require authentication methods other than the platform-enforced SSL client-certificate validation for OAuth-type authorization profiles, developers can now configure and apply their own custom authentication mechanisms.
+The new Client Certificate Authentication option in the AI Agent allows platform users to define whether client certificate validation is required for individual Service Nodes. For enhanced security and backward compatibility, the option is enabled by default, ensuring stronger protection against unauthorized access while maintaining seamless operation with existing configurations. To support custom API calls that require authentication methods other than the platform-enforced SSL client-certificate validation for OAuth-type authorization profiles, developers can now configure and apply their own custom authentication mechanisms. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#configure-the-node)
+
 
 <font size="4">NLP</font>  
 
