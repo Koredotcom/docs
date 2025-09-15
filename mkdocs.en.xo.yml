@@ -185,8 +185,9 @@ nav:
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
+        - Quality AI: release-notes/11.x/quality-ai.md 
         - Voice Gateway: release-notes/11.x/voice-gateway.md
-        - Platform Services: release-notes/11.x/platform-services.md          
+        - Platform Services: release-notes/11.x/platform-services.md         
       - Upgrade Guides:
         - Benefits of XO v11: getting-started/benefits-xo11.md
         - Automation AI: getting-started/migration-path-xo10-to-xo11.md
@@ -450,7 +451,7 @@ nav:
         - System Settings: 
           - Co-Browse: contactcenter/configurations/settings/co-browse.md
           - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
-          - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
+          - Obscure Customer Info in Analytics - Interactions: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
           - Automatic Away Status for Agent Inactivity: contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
@@ -467,7 +468,7 @@ nav:
       - Contact Center AI Routing: contactcenter/routing/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md
       - Skills: contactcenter/routing/skills/skill-management.md
-    - Agent Console:
+    - Console:
       - Introduction to the Console: console/agent-console-introduction.md
       - Conversation Tray: console/conversation-tray.md
       - Incoming Interactions: console/managing-incoming-interactions.md
@@ -750,8 +751,10 @@ nav:
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
     - Search AI:
       - Answer Insights: analytics/searchai/answer-insights.md
-    - GenAI Analytics:
-      - LLM and GenAI Usage Logs: analytics/genai-analytics/llm-usage-logs.md
+    - GenAI Analytics: 
+      - GenAI Dashboard: analytics/genai-analytics/genai-dashboard.md
+      - Performance Analytics: analytics/genai-analytics/genai-performance-analytics.md
+      - GenAI Logs: analytics/genai-analytics/llm-usage-logs.md
     - Automation:
       - Performance Dashboard: analytics/automation/performance-dashboard.md
       - Conversation Insights: analytics/automation/conversation-insights.md

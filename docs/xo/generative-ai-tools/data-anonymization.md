@@ -1,30 +1,47 @@
 
-# Personally Identifiable Information and Sensitive Data Anonymization
-
-Personally identifiable information (PII), or sensitive personal information (SPI), refers to information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Some examples of PII include Social Security Number, email address, credit card numbers, passport number, home address, and so forth.
-
-The Platform allows you to redact any sensitive information that users share with your AI Agent. When you enable redaction for an information type, you can transform its value into a pattern that doesn’t contain comprehensible data. Any end-user input that matches the PII pattern gets redacted by the platform in the context object, chat logs, and all other places. [Learn More](../app-settings/advanced-settings/pii-data-masking.md).
 
 
-## Protecting Sensitive Data in LLM Interactions
-
-In LLM interactions, the Platform maintains the conversation context by anonymizing data instead of redacting it. Sensitive data is replaced with descriptive placeholders in LLM calls. For example, if the Phone Number is configured for redaction in the global PII Settings, it will be replaced with "[Phone Number]." This enhances privacy and security, reducing the risk of exposing personal information to external LLM services.
-
-!!! note
-
-    Data anonymization is automatically applied to all the runtime features.
+# PII and Sensitive Data Anonymization - LLM Interactions
 
 
 
+Personally identifiable information (PII), or sensitive personal information (SPI), refers to information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Examples of PII include Social Security Numbers, email addresses, credit card numbers, passport numbers, and home addresses.
+
+The Platform allows you to anonymize sensitive information, such as entities and tool parameters, before sending it to large language models (LLMs). This feature protects confidential or personally identifiable information (PII) while preserving end-to-end system functionality.
+
+You must define regular expression (regex) patterns that the Platform uses to detect sensitive data in user input and determine how to handle it.
 
 
 
+* **Redaction**: Replace the data with a placeholder that entirely hides the value.
+* **Replacement**: Substitute the data with a predefined value or string.
+* **Mask with Character**: Conceal part of the data while keeping a recognizable format (for example, masking all but the last four digits of a number).
 
-## De-identification of PII Data
+When the LLM-layer PII option is enabled, anonymization applies only during interactions with the language model. The Platform restores the original values after the LLM response, while conversation history and debug logs always display the original/unmasked data to support internal processing. LLM-layer PII works alongside [globally declared PII](../app-settings/advanced-settings/pii-data-masking.md), with global settings taking precedence. 
 
-The Platform now supports the detection and protection of Personally Identifiable Information (PII) at the Agent Node level. Users can choose whether to send redacted or original values to the language model, giving them more control over data exposure.
+Currently, data anonymization during LLM applies to the following GenAI features.
 
 
-* De-identify PII data when sending a request to the LLM: If selected, the Platform sends redacted or masked values to the LLM. The data is redacted based on the patterns defined in the global PII settings.
 
-* Use original values of PII data when sending a request to LLM (Coming Soon): If selected, the platform sends original values to the LLM.
+* Agent Node
+* Conversation Summary
+* DialogGPT
+* Disposition Prediction for Agent Wrap-Up
+* Prompt Node
+* Rephrase Response
+* Sentiment Analysis
+
+**How to Anonymize Data**
+
+Follow these steps:
+
+
+
+1. Go to **Generative AI Tools** > **Safeguards** > **Data Anonymization**.  
+<img src="../images/data-anonymization.png" alt="Data Anonymization" title="Data Anonymization" style="border: 1px solid gray; zoom:70%;">
+
+2. Click **Get Started / + New Field**.  
+<img src="../images/data-anonymization-add-new-type.png" alt="Data Anonymization" title="Data Anonymization" style="border: 1px solid gray; zoom:70%;">
+
+3. Enter the Information Type and Regex Pattern, then select the Display Type.
+4. Click **Save**.

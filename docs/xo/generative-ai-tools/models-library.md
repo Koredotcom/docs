@@ -18,7 +18,7 @@ Steps to configure a pre-built LLM:
 
 
 1. Go to **Generative AI Tools** > **Models Library**.  
-<img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/models-library-home.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Configure Now** for Azure Open AI, Open AI, or Anthropic. If you have already configured a model, click **+ New Model** and select the LLM.
 3. On the **Authorization** tab:
@@ -319,7 +319,7 @@ Steps to enable Kore.ai XO GPT Models.
    
  
 3. On the **Models** tab, toggle on the models as required.
-<img src="../images/xo-gpt-models.png" alt="Kore.ai XO GPT" title="Kore.ai XO GPT" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/new-xo-gpt-vdr-model.png" alt="Kore.ai XO GPT" title="Kore.ai XO GPT" style="border: 1px solid gray; zoom:70%;">
 
 
 

@@ -2,6 +2,26 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.17.1 September 13, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Analytics</font>
+
+**Obscuring Customer Information in Interactions Dashboard, Export, and Details Slider**
+
+New advanced settings enable customers to control how end-user information appears in the Interactions dashboard. Three configuration options are available:  
+
+* **Replace Customer Column with User ID on main page** – displays the User ID instead of email or phone in the dashboard.  
+* **Disable Userinfo tab in Details slider** – hides the Userinfo tab from the Details slider.  
+* **Replace Customer Column with User ID in export file** – shows User ID instead of email or phone in exported reports.  
+All options are disabled by default, and customers who do not enable them will see no change in behavior. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md)  
+<img src="../images/obscure-rn.png" alt="Obscuring Customer Information" title="Obscuring Customer Information" style="border: 1px solid gray; zoom:70%;">
+
+<hr>
+
 ## v11.17.0 August 23, 2025
 
 <u>Minor Release</u>
@@ -2062,5 +2082,7 @@ The key features and experience changes are summarized below.
 
     * **Settings**: The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.  
     <img src="../images/xo-platform-cc-setting.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:70%;"> 
-    
-[Learn more about Contact Center AI features :octicons-arrow-right-24:](../../contactcenter/about-contact-center-ai.md)
+
+<hr>
+
+[Learn more about Contact Center AI features :octicons-arrow-right-24:](../../contactcenter/about-contact-center-ai.md){:target="_blank"}
