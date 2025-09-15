@@ -919,13 +919,13 @@ The Platform provides the following Elimination Reasons from R&R:
 * belowDependencyThreshold: Score below minimum dependency threshold.
 * verbMatchOnly: Only verb matched in a single word match.
 * entityMatchOnly: Only entity (number, date, etc.) matched.
-* foundDefinitive – Definitive match found with only possible matches.
-* outsideProximity – Score below minimum score threshold.
-* withinAnotherTask – Task name found within another task.
-* noWordMatch – No word match found.
-* negationIntent – Intent match has a negation.
-* taskNotAvailable – Task not available in the bot.
-* subIntent – Task is a sub-intent.
+* foundDefinitive: Definitive match found with only possible matches.
+* outsideProximity: Score below minimum score threshold.
+* withinAnotherTask: Task name found within another task.
+* noWordMatch: No word match found.
+* negationIntent: Intent match has a negation.
+* taskNotAvailable: Task not available in the bot.
+* subIntent: Task is a sub-intent.
 
 To view the elimination column, click **View Summary** for a test case and then click **View Test Cases**. You can also download the CSV report to see the elimination reason.  
 <img src="../images/elimination-reason.png" alt="Elimination Reason" title="Elimination Reason" style="border: 1px solid gray; zoom:50%;"/> 

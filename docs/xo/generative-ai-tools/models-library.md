@@ -44,7 +44,7 @@ Steps to configure a pre-built LLM:
     * Usage Notification: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
         * Send Notification at: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
         * Send to Users: Enter the email addresses of users who should receive the usage notification email.  
-        <img src="../images/token-usage-limit.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
 7. Click **Save**.
 8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.
 9. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
@@ -131,7 +131,7 @@ Steps to Integrate a Custom LLM:
     * Usage Notification: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
         * Send Notification at: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
         * Send to Users: Enter the email addresses of users who should receive the usage notification email.  
-        <img src="../images/token-usage-limit.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
 7. Click **Save**.
 8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
@@ -180,7 +180,7 @@ Steps to integrate an Amazon Bedrock:
     * Usage Notification: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
         * Send Notification at: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
         * Send to Users: Enter the email addresses of users who should receive the usage notification email.  
-        <img src="../images/token-usage-limit.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
 7. Click **Save**.
 8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.    
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
@@ -226,7 +226,7 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
     5. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
     <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    6. The Connection Status pop-up appears.
+    6. The Connection Status pop-up is displayed.
         * If a connection is successful, click **Save**.  
         * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. .
 
@@ -254,12 +254,9 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     6. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
     7. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
     <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    8. The Connection Status pop-up appears.
+    8. The Connection Status pop-up is displayed.
         * If a connection is successful, click **Save**.  
-
         * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.  
-
-
     9. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
 
@@ -276,15 +273,11 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     3. On the **Configuration** tab, enter the details like **Integration Name** and **Model Name**. Enter the variable for the **Endpoint** and **Headers**.  
     <img src="../images/customdynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-
     5. Enter the sample values for the endpoints and header values. Enter the test payload and then click **Test** to check the connection. You can also save the sample values and test payload using the check box.  
     <img src="../images/customvariable.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    6. The Testing Connection pop-up appears.
+    6. The Testing Connection pop-up is displayed.
         * If a connection is successful, click **Save**.  
-
         * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. 
-
-
     7. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
 
@@ -303,8 +296,7 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
     4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
     5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. 
- 
-    6. The Testing Connection pop-up appears.
+    6. The Testing Connection pop-up is displayed.
         * If a connection is successful, click **Save**.  
         * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. 
     8. The next step is to add[ Prompts](prompts-library.md).
