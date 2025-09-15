@@ -4,7 +4,7 @@ Administrators can configure the system to hide customer Email IDs and Phone Num
 
 Steps to enable Obscure Customer Info in Analytics - Interactions:
 
-1. Navigate to Contact Center AI > Configurations > Settings > System Settings > Obscure Customer Info in Interactions Dashboard.  
+1. Navigate to Contact Center AI > Configurations > Settings > System Settings > Obscure Customer Info in Analytics - Interactions.  
     <img src="../images/obscure-customer-info.png" alt="Obscure Customer Info" title="Obscure Customer Info" style="border: 1px solid gray; zoom:70%;">
 
 2. You will see three settings. Configure the settings as needed.  
