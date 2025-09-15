@@ -550,7 +550,7 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
 <img src="../kore-data-table/authorized-redirect-uris-15.png" alt="authorized-redirect-uris" title="authorized-redirect-uris" style="border: 1px solid gray; zoom:80%;">
 
 After saving the configuration, you get the **Client Id** of the created OAuth client. Copy the ID and have it available for 
-[Step 3](#create-an-interaction-widget-in-genesys-for-agent-ai).
+[the next step](#create-an-interaction-widget-in-genesys-for-agent-ai).
 
 ## **Create an Interaction Widget in Genesys for Agent AI**
 
