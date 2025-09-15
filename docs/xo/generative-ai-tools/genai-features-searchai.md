@@ -8,7 +8,7 @@ The following table displays the features and the supported models.
 
 (✅ Supported | ❌ Not supported)
 
-| Model     | Answer Generation     | Vector Generation(Image & Text)     | Metadata Extractor Agent     | Query Rephrase for Advanced Search API     | Query Transformation     | Result Type Classification     |Rephrase User Query|
+| Model     | Answer Generation     | Vector Generation <br>(Image & Text)     | Metadata Extractor Agent     | Query Rephrase for Advanced Search API     | Query Transformation     | Result Type Classification     |Rephrase User Query|
 |---|---|---|---|---|---|---|---|
 | Azure OpenAI - GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     | ✅     |
 | Azure OpenAI - GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     | ✅     |
@@ -26,7 +26,7 @@ The following table displays the features and the supported models.
 
 This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../searchai/answer-configuration.md#answers-generation).
 
-## Vector Generation -Image
+## Vector Generation - Image
 
 This feature helps create vector embeddings for image data ingested into the Search AI application When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
 

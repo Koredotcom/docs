@@ -25,7 +25,7 @@ The new Client Certificate Authentication option in the AI Agent allows platform
 
 **Detailed Insights into Batch Testing Failure Reasons**   
     
-Batch testing results now offer improved clarity regarding why an expected intent failed to qualify as the matched intent by showing the Elimination Reason for the failed intent. Results clearly indicate whether the failure was due to the model or eliminated by the Ranking & Resolver (R&R) engine, enabling users to troubleshoot more efficiently and improve model training and policy tuning.
+Batch testing results now offer improved clarity regarding why an expected intent failed to qualify as the matched intent by showing the Elimination Reason for the failed intent. Results clearly indicate whether the failure was due to the model or eliminated by the Ranking & Resolver (R&R) engine, enabling users to troubleshoot more efficiently and improve model training and policy tuning. [Learn more :octicons-arrow-right-24:](../../automation/testing/regression-testing/batch-testing.md#view-test-case-details)
 
 <hr>
 
