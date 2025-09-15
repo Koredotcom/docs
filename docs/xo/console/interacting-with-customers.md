@@ -471,7 +471,7 @@ While interacting with a customer, if an agent needs to seek external consultati
 
 ## Co-Browse
 
-The Co-browse functionality allows agents and customers to collaborate in real time by sharing the customer’s web session. Agents can guide customers, highlight areas of interest, and—if permitted—temporarily control the session to assist with navigation. Customers remain in control at all times. To configure Co-browse, refer to [Co-browse Settings](../contactcenter/configurations/settings/co-browse.md).
+The Co-browse functionality allows agents and customers to collaborate in real time by sharing the customer’s web session. Agents can guide customers, highlight areas of interest, and if permitted, temporarily control the session to assist with navigation. Customers remain in control at all times. To configure Co-browse, refer to [Co-browse Settings](../contactcenter/configurations/settings/co-browse.md).
 
 !!! Note
 
@@ -540,13 +540,13 @@ Customers always remain in control of their session and can access the following
     * Masked fields are invisible to the agent and not stored in logs. Masking does not apply to all inputs automatically.  
         <img src="../images/masked-input.png" alt="Input Masked" title="Input Masked" style="border: 1px solid gray; zoom:70%;">
 
-### Initiate Co-browse Session Between the Agent and the Customer Desktop Over the Phone
+### Initiate a Co-browse Session Between the Agent and the Customer Desktop Over the Phone
 
 To initiate a Co-browse session when the connection between the agent and the customer desktop screen is over the phone:
 
 1. In the Console, click the **CoBrowse** button.
 
-2. The agent generates a security code to establish a website-to-website connection.    
+2. The agent generates a security code to establish a website-to-website connection.  
     <img src="../images/generate-co-browser-code.png" alt="Generate Co-Browse Code" title="Generate Co-Browse Code" style="border: 1px solid gray; zoom:80%;">
 
     <img src="../images/security-code.png" alt="Co-Browse Security Code" title="Co-Browse Security Code" style="border: 1px solid gray; zoom:80%;">
