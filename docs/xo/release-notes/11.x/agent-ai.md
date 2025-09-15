@@ -468,7 +468,7 @@ Agents can now generate on-demand conversation summaries at any point during a c
 
 **Enhanced Genesys Middleware to Support Base64 Encoded Value**
 
-Genesys Middleware has been enhanced to support Base64-encoded values when passing the *x_passthru_metadata* parameter to Agent AI. This enhancement resolves the issues with SSO token decryption. [Learn more:octicons-arrow-right-24:](./../../agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md)
+Genesys Middleware has been enhanced to support Base64-encoded values when passing the *x_passthru_metadata* parameter to Agent AI. This enhancement resolves the issues with SSO token decryption. [Learn more:octicons-arrow-right-24:](./../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md)
 
 **Enhanced Salesforce Package includes Language Parameter**
 
