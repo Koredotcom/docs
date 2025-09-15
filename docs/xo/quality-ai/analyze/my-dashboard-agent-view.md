@@ -218,8 +218,9 @@ Displays only supervisor-audited scores, including:
 
 * Date & Time
 * Queue
-* Supervisor Audit Score       
-<img src="../agent-dashboard/images/manual-audit-enabled.png" alt="Only Manually Audited Interactions" title="Only Manually Audited Interactions" style="border: 1px solid gray; zoom:60%;">
+* Supervisor Audit Score
+
+    <img src="../agent-dashboard/images/manual-audit-enabled.png" alt="Only Manually Audited Interactions" title="Only Manually Audited Interactions" style="border: 1px solid gray; zoom:60%;">
 
 ##### Manually Audited Interactions with Auto QA Scored Interactions
 

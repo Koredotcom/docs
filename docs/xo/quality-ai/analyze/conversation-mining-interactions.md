@@ -288,7 +288,7 @@ This indicates the automated QA score associated with an interaction based on th
 
         If interactions are not used for audit allocation, you can apply the filter without saving. To assign audit allocations, save and name filters for easy reference in future audits.
   
-2. Click **Save & Apply** to save the new filter with a new name.    
+2. Click **Save & Apply** to save the new filter with a new name.  
 <img src="../conversation-mining/images/conversation-mining-interaction-save-apply.png" alt="Save and Apply" title="Save and Apply" style="border: 1px solid gray; zoom:80%;">  
 
 3. Enable the **Save Filter** toggle to make the **Unsaved Filter** for default view in the Dashboard. All the newly created **Saved Filters** and **Unsaved Filters** will be tagged under the **Saved Filters** list.    
@@ -297,6 +297,8 @@ This indicates the automated QA score associated with an interaction based on th
     !!! Note
 
         The filtered interactions count allows you to verify the interaction count based on the filter selections you make, this count gets dynamically recalculated as and when you update filter selections. By default, the filtered interactions count will be zero until you make the first filter selection.
+
+#### Saved Filters Customization Options
 
 Once the new filter is saved, you get the following filter options to:  
 
@@ -314,19 +316,5 @@ Once the new filter is saved, you get the following filter options to:
 
 * **Delete Filter**
 
-    Allows you to delete the saved filter.
-
-8. Click Apply to save the filter settings, which are stored as an **Unsaved Filter** in the **Conversation Mining** dashboard.  
-    <img src="../conversation-mining/images/conversation-mining-unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:80%;">
-
-    If you do not intend to use this filter to assign an audit allocation, you can apply it without saving; however, you can assign audit allocation based on filters, and can save and name it accordingly for reference during audit allocation.  
-  
-9. Click **Save & Apply** to save the new filter with a new name.  
-    <img src="../conversation-mining/images/conversation-mining-interaction-save-apply.png" alt="Save and Apply" title="Save and Apply" style="border: 1px solid gray; zoom:80%;">  
-
-10. Enable the **Save Filter** toggle to make the **Unsaved Filter** for default view in the Dashboard. All the newly created **Saved Filters** and **Unsaved Filters** will be tagged under the **Saved Filters** list.  
-<img src="../conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
-
-    !!! Note
-
-        The filtered interactions count allows you to verify the interaction count based on the filter selections you make, this count gets dynamically recalculated as and when you update filter selections. By default, the filtered interactions count will be zero until you make the first filter selection.
+    Allows you to delete the saved filter.   
+    <img src="../conversation-mining/images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
