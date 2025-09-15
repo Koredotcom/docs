@@ -29,7 +29,7 @@ The Platform now supports anonymizing sensitive data (entities, tool parameters)
 
 **Vector Generation Feature Split into Text and Image**
 
-The Vector Generation feature is now split into separate Text and Image components, providing independent control over models, prompts, and feature enablement for each content type. The new XO GPT-VDR model generates visual embeddings, while existing configurations are preserved under the Vector Generation – Text feature. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features-searchai.md)
+The Vector Generation feature is now split into separate Text and Image components, providing independent control over models, prompts, and feature enablement for each content type. The new XO GPT-VDR model generates visual embeddings, while existing configurations are preserved under the Vector Generation – Text feature. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features-searchai.md#vector-generation-image)
 
 
 <hr>

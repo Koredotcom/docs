@@ -89,7 +89,7 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 
 #### Generating Test Cases Automatically
 
-You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](../../../generative-ai-tools/introduction.md){:target="_blank"} for your app Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
+You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](../../../generative-ai-tools/introduction.md){:target="_blank"} for your Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
 <img src="../images/batch-testing-9-goto-generate-test-cases-1.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
@@ -911,9 +911,9 @@ Each test run creates a test report record and displays a summary of the test re
 <img src="../images/batch-testing-17-batch-test-sample-result-warn.png" alt="Test report" title="Test report" style="border: 1px solid gray; zoom:50%;"/> 
 
 
-* **Elimination Reason** displayes why a test failed only when the expected intent does not match the wining intent. The Platform clearly indicates whether the model causes the failure or the Ranking & Resolver (R&R) engine eliminates the intent. The column displays the R&R policy reason when available. Otherwise, it shows the expected intent scores from each engine in this format: FM: [score], ML: [score], FAQ: [score].
+* **Elimination Reason** displays why a test failed only when the expected intent does not match the winning intent. The Platform clearly indicates whether the model causes the failure or the Ranking & Resolver (R&R) engine eliminates the intent. The column displays the R&R policy reason when available. Otherwise, it shows the expected intent scores from each engine in this format: FM: [score], ML: [score], FAQ: [score]..
 
-The Platform provides the following Elimination Reasons from R&R::
+The Platform provides the following Elimination Reasons from R&R:
 
 
 * belowDependencyThreshold: Score below minimum dependency threshold.
@@ -989,7 +989,7 @@ The report also provides detailed information on each of the test utterances and
 
     For any of the batch tests, if results indicate that your app is unable to recognize the correct intents, you can work on improving its performance by adding or modifying utterances to the Machine Learning model.
 
-* **Elimination Info** displayes why a test failed only when the expected intent does not match the wining intent. The Platform clearly indicates whether the model causes the failure or the Ranking & Resolver (R&R) engine eliminates the intent. The column displays the R&R policy reason when available. Otherwise, it shows the expected intent scores from each engine in this format: FM: [score], ML: [score], FAQ: [score]. To know more, see [Elimination Reason](#view-test-case-details).
+* **Elimination Info** displays why a test failed only when the expected intent does not match the winning intent. The Platform clearly indicates whether the model causes the failure or the Ranking & Resolver (R&R) engine eliminates the intent. The column displays the R&R policy reason when available. Otherwise, it shows the expected intent scores from each engine in this format: FM: [score], ML: [score], FAQ: [score]. To know more, see [Elimination Reason](#view-test-case-details).
 
 #### Batch Test Results for Universal Bots
 
