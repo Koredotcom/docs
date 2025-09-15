@@ -52,7 +52,9 @@ The API agent creation process consists of the following steps:
 
 [Step 4: Define the specific Actions the API agent can perform.](#step-4-actions)
 
-[Step 5: Publish the Agent.](#step-5-publish)
+[Step 5: Business Rules.](#step-5-business-rules)
+
+[Step 6: Publish the Agent.](#step-6-publish)
 
 
 Prerequisites:

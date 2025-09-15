@@ -71,13 +71,13 @@ To create a new Bot Agent, follow these steps:
 4. The **Prompt Agent creation** wizard will take you through the following
     steps:
 
-    1.  [Step 1: Define and Purpose](#details)
+    1.  [Step 1: Define and Purpose](#step-1-details-and-purpose)
 
-    2.  [Step 2: Add Bot](#bot)
+    2.  [Step 2: Add Bot](#step-2-add-bot)
 
-    3.  [Step 3: Preview](#preview)
+    3.  [Step 3: Appearance and Behavior](#step-3-appearance-and-behavior)
 
-    4.  [Step 4: Publish Bot Agent](#publish)
+    4.  [Step 4: Publish Bot Agent](#step-4-publish)
 
 #### Step 1: Details and Purpose
 
@@ -113,8 +113,6 @@ The **Appearance and Behavior** section displays sample queries to test the agen
 2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer <a href="https://docs.kore.ai/ai-for-work/custom-agents/notify-api/" target="_blank">Notifications</a>.
 3. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period.
 4. Once validated, click **Publish** to move to the final step.
-
-![](images/preview_bot.png)
 
 #### Step 4: Publish
 

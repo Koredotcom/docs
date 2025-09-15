@@ -208,7 +208,7 @@ This final step completes the integration by configuring Kore.ai as a data acces
     * **Specific Users**: Select individual users who should have access through Kore.ai.
 7. **Complete the integration**:
     * Copy the **Data Accessor Details** from the AWS console.
-    * Return to your **AI for Work** configuration screen.Paste the Data Accessor Details to complete the linkage.
+    * Return to your **AI for Work** configuration screen. Paste the Data Accessor Details to complete the linkage.
     <img src="../images/AmazonQ_14.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;">
 
 ## Technical Details
