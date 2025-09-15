@@ -54,9 +54,18 @@ To configure the Component Properties tab, please follow the steps below:
 
 7. Click the **Auth** tab to create a new Authorization Profile or select an existing profile. For more information, see the [Authorization Overview](../../../../app-settings/dev-tools/bot-authorization/bot-authentication.md) article.
 
-8. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
+8. Select **Advanced** to open the **Advanced Options** panel.
 
-9. Add the sample response(s) you want the Service Node to return.
+    * **Access Using a Connector** – Select *All URLs are in public domain* for public URLs, or *URLs are behind a firewall and a connector has been setup* for enterprise firewall access.
+
+    * **De-identification of PII Data** – Select *De-identify PII data and Redact Digital Forms data* to mask sensitive info (use `.original` suffix when original values are required), or *Use original values* to send unmasked data.
+
+    * **Client Certificate Exchange** – Enable to enforce mutual authentication with client and server certificates, adding a strong security layer against unauthorized access.
+
+    <img src="../images/service-node-img12-advanced-options.png" alt="Advaced Options" title="Advaced Options" style="border:1px solid gray;zoom:70%;">
+ 
+9. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
+10. Add the sample response(s) you want the Service Node to return.
 
     <img src="../images/service-node-img4-add-sample-response.png" alt="Service node - Sample response" title="Service node - Sample response" style="border:1px solid gray;zoom:70%;">
 
@@ -68,7 +77,7 @@ To configure the Component Properties tab, please follow the steps below:
     4. [Defining Alert Subscription Service](#define-an-alert-subscription-service)
     5. [Defining Data Service](#define-a-data-service)
 
- 10.  Enable the **PII Redaction for API responses**.  
+11.  Enable the **PII Redaction for API responses**.  
     
        * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add.** 
 
@@ -92,7 +101,7 @@ To configure the Component Properties tab, please follow the steps below:
         For more information, see [Redacting Personally Identifiable Information ](../../../../app-settings/advanced-settings/pii-data-masking.md){:target="_blank"}.  
        <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"> 
 
-11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
+12. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
 
 !!! Note
 
