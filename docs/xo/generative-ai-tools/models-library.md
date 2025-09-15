@@ -35,9 +35,6 @@ Steps to configure a pre-built LLM:
     * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.  
     <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
-        !!! note
-
-            You can save the configuration with an unsuccessful connection.
 
 
 6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options.
@@ -47,7 +44,7 @@ Steps to configure a pre-built LLM:
     * Usage Notification: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
         * Send Notification at: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
         * Send to Users: Enter the email addresses of users who should receive the usage notification email.  
-        <img src="../images/usagelimit-azure.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/token-usage-limit.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
 7. Click **Save**.
 8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.
 9. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
@@ -80,13 +77,8 @@ Steps to configure a Provider's New LLM Integration:
 6. Read the **Policy Guidelines**, select the checkbox, and click **Save**. 
 7. The Connection Status pop-up is displayed.
     * If a connection is successful, click **Save**.  
-    <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. 
 
-    !!! note
-
-        You can save the configuration with an unsuccessful connection.
 
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md). 
 
@@ -127,13 +119,10 @@ Steps to Integrate a Custom LLM:
 
 7. The Connection Status pop-up is displayed.
     * If a connection is successful, click **Save**.  
-    <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  Click **Next** to save the configuration with an unsuccessful connection.  
-    <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.  
 
-        You can save the configuration with an unsuccessful connection.
+
 
 6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options. Ensure to map the Request and Response Token Key in the custom prompt. 
     * Maximum Tokens: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
@@ -182,7 +171,7 @@ Steps to integrate an Amazon Bedrock:
     <img src="../images/abr-payload.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
 6. The Connection Status pop-up is displayed.    
     * If a connection is successful, click **Next**. If the LLM connection is successful during the test call, it displays a confirmation message.  
-    <img src="../images/abr-success.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
+
     * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.
 6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options. Ensure to map the Request and Response Token Key in the custom prompt. 
     * Maximum Tokens: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
@@ -239,13 +228,7 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     6. The Connection Status pop-up appears.
         * If a connection is successful, click **Save**.  
-        <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-        <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-
-            !!! note
-
-                You can save the configuration with an unsuccessful connection.
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. .
 
     7. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
@@ -273,13 +256,9 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     8. The Connection Status pop-up appears.
         * If a connection is successful, click **Save**.  
-        <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-        <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
-            !!! note
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.  
 
-                You can save the configuration with an unsuccessful connection.
 
     9. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
@@ -302,13 +281,9 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     <img src="../images/customvariable.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     6. The Testing Connection pop-up appears.
         * If a connection is successful, click **Save**.  
-        <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-        * If a connection fails, hover over the warning icon to view the error.Click **Cancel** to go back to the previous step and update the details.  
-        <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
-            !!! note
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. 
 
-                You can save the configuration with an unsuccessful connection.
 
     7. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
@@ -327,10 +302,11 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     3. On the **Authorization** tab, enter details like **Integration** **Name** and **Model Name**. Then, enter the variable for **AM Role ARN**, **Amazon STS API**, **Amazon Resource Name (ARN)**, **Endpoint**, and **Headers** (optional).  
     <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
     4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-    5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.  
-    <img src="../images/abr5.png" alt="Amazon Bedrock" title=" " style="border: 1px solid gray; zoom:70%;">
-    6. On a successful connection, the save option is enabled. 
-    7. Click **Save**. The configuration successful message is displayed.
+    5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. 
+ 
+    6. The Testing Connection pop-up appears.
+        * If a connection is successful, click **Save**.  
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. 
     8. The next step is to add[ Prompts](prompts-library.md).
 <hr>
 
@@ -387,8 +363,6 @@ When you reset/delete the integration, the system does the following:
     2. Click three dots (more icons) and then click the **Reset Configuration** for the model you want to reset. 
 
     3. Click **Reset** in the confirmation dialog.  
-    <img src="../images/llm-integration(6).png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;"> 
-
 
     4. The success message is displayed.
 
@@ -400,9 +374,6 @@ When you reset/delete the integration, the system does the following:
     2. Click three dots (more icons) and then click **Delete** for the integration you want to delete.
 
     3. Click **Delete** in the confirmation dialog.  
-    <img src="../images/llm-integration(16).png" alt="Delete Configuration" title="Delete Configuration" style="border: 1px solid gray; zoom:70%;">
-
-
 
     4. The success message is displayed.
 
@@ -414,7 +385,6 @@ When you reset/delete the integration, the system does the following:
     2. Click three dots (more icons) for Kore.ai XO GPT and then click the **Reset Configuration** for the integration you want to reset.
 
     3. Click Reset in the confirmation dialog.  
-    <img src="../images/image7-6.png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;">
 
     4. The success message is displayed.
 <hr>

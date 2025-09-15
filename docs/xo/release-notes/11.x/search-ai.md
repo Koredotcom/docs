@@ -2,6 +2,29 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.17.1 September 15, 2025
+
+<u>Patch Release</U>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Index Configuration Enhancements</font>
+
+The Vector Configuration page now offers more flexibility when working with custom embedding models and prompts for both text and visual content. 
+
+Key improvements:
+
+* Separate Models and Prompts for Text & Image: Users can now configure distinct embedding models and prompts for text and image vectors. Image embeddings are managed using the *Vector Generation – Image* feature, while text embeddings are handled by *Vector Generation – Text.* The appropriate model is automatically determined based on the chunk extraction method. 
+* Simplified Prompt and Model management: Users can now configure and edit prompts directly in the Search AI UI, streamlining the setup process.
+* Conditional Custom Prompt UI: The updated interface allows for the creation of new custom prompts directly when a custom model is selected for vector generation.
+
+
+<font size="4">Change Log Support for Public API Events</font>
+
+The enhanced Change Logs now capture events triggered via the public API. This ensures complete visibility into system activity, enabling users to track, audit, and troubleshoot changes with a unified record of events, whether performed through the UI or programmatically.
+
+<hr>
+
 ## v11.17.0 August 23, 2025
 
 <u>Minor Release</U>
