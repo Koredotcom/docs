@@ -146,7 +146,7 @@ The Dialog Builder interface consists of:
 
 1. [Tool Set](using-the-dialog-builder-tool.md#the-tool-set)
 2. [Index Panel](using-the-dialog-builder-tool.md#the-index-panel)
-3. [Node Panel](using-the-dialog-builder-tool.md#the-node-panel)
+3. Node Panel
 4. [Canvas](using-the-dialog-builder-tool.md#the-canvas)
 
  <img src="../images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray;zoom:70%;">

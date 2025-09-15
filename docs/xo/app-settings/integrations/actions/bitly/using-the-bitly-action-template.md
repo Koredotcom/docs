@@ -5,7 +5,6 @@ You can use the **Prebuilt Action Templates** from your Bitly integration to aut
 Steps to create a dialog task using Bitly action templates:
 
 1. Ensure that you have configured [Bitly](configuring-the-bitly-action.md){:target="_blank"} and [installed templates](configuring-the-bitly-action.md#step-2-install-the-bitly-action-templates){:target="_blank"} successfully.
-If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
 2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 

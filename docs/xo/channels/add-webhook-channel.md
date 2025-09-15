@@ -1110,7 +1110,7 @@ curl -X POST 'https://bots.kore.ai/chatbot/v2/webhook/st-a77a38cd-xxxx-xxxx-81c6
 ```
 
 
-For the list of Supported App Languages codes, read [Getting Started with Multilingual AI Agent](../app-settings/language-management/building-multi-language-bots.md#supported-bot-languages) article.
+For the list of Supported App Languages codes, read [Getting Started with Multilingual AI Agent](../app-settings/language-management/building-multi-language-bots.md#supported-ai-agent-languages) article.
 
 
 ### Close Conversation Session Event Request

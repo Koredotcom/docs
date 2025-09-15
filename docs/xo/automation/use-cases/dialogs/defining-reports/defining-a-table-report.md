@@ -1,8 +1,8 @@
 # Defining a Table Report
 
 With some tasks, you may want to add a link to a message sent to a user that contains data too large for a message, for example, a message with a picture, abstract, and a link to a full article or report. This topic describes how to define a table report with variable width columns.
-The table report type can be displayed to an end-user when the URL for this table is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the table report called **Your Daily Tasks**. To learn how to use report keys, read the [Alert Tasks](../../../alert-tasks-message-definition/#report-keys){:target="_blank"} article.
-
+The table report type can be displayed to an end-user when the URL for this table is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the table report called **Your Daily Tasks**. To learn how to use report keys, read the [Alert Tasks](../../alert-tasks-message-definition.md#report-keys){:target="_blank"} article.
+ 
 
 <img src="../images/google_task.png" alt="Google_task" title="Google_task" style="border: 1px solid gray; zoom:100%;">
 
