@@ -8,7 +8,7 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-<font size="4">Agent Node</font>
+<font size="4">Analyze</font>
 
 
 **Message-Level Comments in AI-Assisted Manual Audit**
@@ -20,7 +20,7 @@ Supervisors and QA users can now add comments directly on individual messages, w
 In Conversation Mining, the Processing Status now displays a status icon: green (pass) when all processes have succeeded and metrics are being captured; red (fail) when any process fails, and metric tracking is interrupted. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md#interactions-dashboard-elements)
 
 
-<font size="4">NLP</font>
+<font size="4">Conversation Sources</font>
 
 **Quality AI Integration with Agent AI**
 
