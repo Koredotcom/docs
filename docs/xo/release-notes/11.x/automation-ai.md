@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancement included in
 
 **Salesforce MIAW Agent Integration Enhancements**   
 
-AI for Service now offers enhanced Salesforce MIAW integration, providing uninterrupted customer chat sessions even during agent transfers and conferences. Sessions remain active as long as either an agent or the customer is engaged, with the platform respecting Salesforce SSE events for transfers and conferencing. This improvement includes real-time system messages for end-users, clearly indicating when a transfer starts, a new agent joins, or an agent leaves a conference, thereby increasing transparency and ensuring a consistent, seamless support experience.[Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#salesforce-miaw--internal-agent-transfer-and-conference-handling)
+AI for Service now offers enhanced Salesforce MIAW integration, providing uninterrupted customer chat sessions even during agent transfers and conferences. Sessions remain active as long as either an agent or the customer is engaged, with the platform respecting Salesforce SSE events for transfers and conferencing. This improvement includes real-time system messages for end-users, clearly indicating when a transfer starts, a new agent joins, or an agent leaves a conference, thereby increasing transparency and ensuring a consistent, seamless support experience.[Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#salesforce-miaw-internal-agent-transfer-and-conference-handling)
 
 <font size="4">Service Node</font>  
 
