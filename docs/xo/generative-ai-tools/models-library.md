@@ -181,8 +181,11 @@ Steps to integrate an Amazon Bedrock:
         * Send Notification at: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
         * Send to Users: Enter the email addresses of users who should receive the usage notification email.  
         <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
+
 7. Click **Save**.
-8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.    
+
+8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.  
+  
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
 
