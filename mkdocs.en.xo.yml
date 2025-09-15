@@ -451,7 +451,7 @@ nav:
         - System Settings: 
           - Co-Browse: contactcenter/configurations/settings/co-browse.md
           - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
-          - Obscure Customer Info in Interactions Dashboard: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
+          - Obscure Customer Info in Analytics - Interactions: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
           - Automatic Away Status for Agent Inactivity: contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md

@@ -1,4 +1,4 @@
-# Obscure Customer Info in Interactions Dashboard
+# Obscure Customer Info in Analytics - Interactions
 
 Administrators can configure the system to hide customer Email IDs and Phone Numbers in the Interactions dashboard, Details slider, and Export file. Instead, the system displays the internal User ID.
 
