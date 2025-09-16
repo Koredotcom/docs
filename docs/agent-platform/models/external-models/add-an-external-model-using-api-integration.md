@@ -37,21 +37,19 @@ The steps to add an external model using API integration are given below:
     <ul><li><b>Prompt variables</b>: The Prompt variable is set to mandatory by default. You can Turn ON the toggle for the System prompt and examples if required.       
     <img src="../images/prompt-variables-add.png" alt="prompt variables" title="prompt variables" style="border: 1px solid gray; zoom:75%;"></li>
     <li><b>Custom variables</b>: (Optional) To add, follow the steps below:</li>
-      <ul><li>Click the <b>Custom variables</b> tab under the <b>Variables</b> section and click the <b>+Custom variables</b>. 
-      <img src="../images/custom-variables-add.png" alt="add custom variables" title="add custom variables" style="border: 1px solid gray; zoom:75%;"></li>
-       <li>The <b>Add Custom Variable</b> dialog is displayed. Enter the <b>Variable name</b> and <b>Display name</b>, and select the <b>Data type</b>.</li>
-    <img src="../images/add-custom-variable.png" alt="custom variable form" title="custom variable form" style="border: 1px solid gray; zoom:75%;"></li></ul></ul>         
-     <li><b>Body</b>: The request body must include the model’s relevant parameters, which you must define manually. For dynamic variable mapping, use <code>{{variable}}</code>. Ensure the body is in the correct format, as shown in the screenshot below; otherwise, the API testing won't work.
-     <img src="../images/body-parameters.png" alt="request body" title="request body" style="border: 1px solid gray; zoom:75%;"></li>
-     <li><b>Test Response</b>: The response created for the configured LLM service appears here. To provide a test response from the model, follow the steps below:</li>
+      <ul><li>Click the <b>Custom variables</b> tab under the <b>Variables</b> section and click the <b>+Custom variables</b>.</li> 
+      <img src="../images/custom-variables-add.png" alt="add custom variables" title="add custom variables" style="border: 1px solid gray; zoom:75%;"></ul>
+       <ul><li>The <b>Add Custom Variable</b> dialog is displayed. Enter the <b>Variable name</b> and <b>Display name</b>, and select the <b>Data type</b>.</li>
+       <img src="../images/add-custom-variable.png" alt="custom variable form" title="custom variable form" style="border: 1px solid gray; zoom:75%;"></li></ul></ul>         
+     <li><b>Body</b>: The request body must include the model’s relevant parameters, which you must define manually. For dynamic variable mapping, use <code>{{variable}}</code>. Ensure the body is in the correct format, as shown in the screenshot below; otherwise, the API testing won't work.</li>
+     <img src="../images/body-parameters.png" alt="request body" title="request body" style="border: 1px solid gray; zoom:75%;"></ul>
+     <ul><li><b>Test Response</b>: The response created for the configured LLM service appears here. To provide a test response from the model, follow the steps below:</li>
       <ul><li> Click <b>Test</b>.
       <img src="../images/click-test-request.png" alt="test request" title="test request" style="border: 1px solid gray; zoom:75%;"></li>
        <li>In the <b>Sample Input</b> dialog, enter the <b>Prompt</b>, <b>System prompt</b>, and <b>Examples</b> in the respective fields, and click <b>Confirm</b>.</li>
       <img src="../images/sample-input-dialog.png" alt="sample input" title="sample input" style="border: 1px solid gray; zoom:75%;"></ul></ul> 
 
-These inputs are used to test the connection and receive a response from the model,
-
-* Once the response is generated, you must configure the **JSON path** to capture the Output path, Input tokens, and Output tokens, as follows:
+These inputs are used to test the connection and receive a response from the model. Once the response is generated, you must configure the **JSON path** to capture the Output path, Input tokens, and Output tokens, as follows:
    * **Output Path**: When you interact with the model, you send a request in a specific format and receive a response in a corresponding format, often as a large JSON object. As a user, you are mainly interested in extracting the model’s answer from this response. The *output path* refers to the location or key within the JSON where the model’s main output is stored. Knowing this path is essential, especially in the prompt playground, as it tells you exactly which key to map to populate the response in the playground box. For example, in the sample response below, the output path is `choices[0].message.content.` 
    <img src="../images/output-path-entry.png" alt="output path" title="output path" style="border: 1px solid gray; zoom:75%;">
 
@@ -94,7 +92,7 @@ These inputs are used to test the connection and receive a response from the mod
     * **Modalities Support**: Specifies the modalities supported by the model. Enabling this flag allows the model to run Text-to-Text, Text-to-Image, Image-to-Text, and Audio-to-Text tasks for seamless downstream integration within the [Tools Flow](../../ai-agents/tools/tool-flows/flows-overview.md){:target="_blank"}.
      <img src="../images/model-features-list.png" alt="model features" title="model features" style="border: 1px solid gray; zoom:75%;">
  
-* **Body**: In this section, choose a provider to set the API reference. The platform uses this mapping to resolve your model’s request-response structure. The available options include:
+ * **Body**: In this section, choose a provider to set the API reference. The platform uses this mapping to resolve your model’s request-response structure. The available options include:
 
      * **Anthropic (Messages)**:  Specifies that the selected model follows the request-response structure similar to [Anthropic’s Messages API](https://docs.anthropic.com/en/api/messages){:target="_blank"}.
      * **OpenAI (Chat Completions)**: Specifies that the selected model follows the request-response structure similar to [OpenAI’s Chat Completions API](https://platform.openai.com/docs/api-reference/chat){:target="_blank"}.
