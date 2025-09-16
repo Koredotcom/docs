@@ -31,7 +31,7 @@ In the **General Settings** of the End Flow node, a text area displays the defau
 * The system picks up the Out of Operational Hours message from the configured conditional flow.  
 * If no conditional flow is configured, the system plays a default backend message.  
 * Backend default messages are not editable.  
-* Customers can override the default message by creating a conditional flow and attaching it to their existing flow.
+* Administrators can override the default message by creating a conditional flow and attaching it to their existing flow.
 
 ### No Agents Available Flow
 
