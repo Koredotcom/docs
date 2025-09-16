@@ -4,9 +4,6 @@
 
 
 
-# Performance Analytics
-
-
 
 The Performance Analytics page provides comprehensive insights into LLM performance across models, features, and requests. By analyzing success rates, token consumption, and response times, organizations can track accuracy, manage costs, and ensure system reliability. These analytics enable data-driven decisions for optimization and enhanced user experience through granular evaluation.
 

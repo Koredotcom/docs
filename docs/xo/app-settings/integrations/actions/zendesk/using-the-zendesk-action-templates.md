@@ -12,7 +12,7 @@ Steps to create a dialog task using the Zendesk action templates:
 <img src="../images/zendesk-tem-img2.png" alt="Integration - Zendesk" title="Integration - Zendesk" style="border: 1px solid gray;zoom:50%;"/>
 
 4. Select any of the dialog task templates and click **Proceed**. For example, select the **Create a ticket** template.
-5. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](actions.md){:target="_blank}.  
+5. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank}.  
 <img src="../images/zendesk-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
  
 

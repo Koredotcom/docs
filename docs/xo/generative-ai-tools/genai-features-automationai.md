@@ -373,22 +373,13 @@ This feature lets you generate test cases based on the NLU Language selected, an
     * Different scenarios to simulate end-user utterances,
     * Random training utterances and test cases that are generated to avoid duplicate test cases from Generative AI.
 
-If this feature is disabled, you won't have the option to generate test cases during batch testing.[ Learn more.](../automation/testing/regression-testing/batch-testing.md#generating-test-cases-automaticallyy)
-
-
-
-
+If this feature is disabled, you won't have the option to generate test cases during batch testing.[ Learn more.](../automation/testing/regression-testing/batch-testing.md#generating-test-cases-automatically)
 
 ## Training Utterance Suggestions
 
 This feature generates a list of suggested training utterances and NER annotations based on the selected NLU language for each intent description and Dialog Flow, eliminating the need for manual creation.
 
-
-
 <img src="../images/cpf(3).gif" alt="Training Utterance Suggestions" title="Training Utterance Suggestions" style="border: 1px solid gray; zoom:70%;">
-
-
-
 
 
 **Usage**
