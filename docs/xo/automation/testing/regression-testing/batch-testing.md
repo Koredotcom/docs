@@ -911,7 +911,7 @@ Each test run creates a test report record and displays a summary of the test re
 <img src="../images/batch-testing-17-batch-test-sample-result-warn.png" alt="Test report" title="Test report" style="border: 1px solid gray; zoom:50%;"/> 
 
 
-* **Elimination Reason** displays why a test failed only when the expected intent does not match the winning intent. The Platform clearly indicates whether the model causes the failure or the Ranking & Resolver (R&R) engine eliminates the intent. The column displays the R&R policy reason when available. Otherwise, it shows the expected intent scores from each engine in this format: FM: [score], ML: [score], FAQ: [score]..
+* **Elimination Reason** displays why a test failed only when the expected intent does not match the winning intent. The Platform clearly indicates whether the model causes the failure or the Ranking & Resolver (R&R) engine eliminates the intent. The column displays the R&R policy reason when available. Otherwise, it shows the expected intent scores from each engine in this format: FM: [score], ML: [score], FAQ: [score].
 
 The Platform provides the following Elimination Reasons from R&R:
 
