@@ -30,15 +30,10 @@ This feature helps generate an answer to the user question based on the data ing
 
 This feature helps leverage the capabilities of an external LLM to refine, update, or enrich the chunks extracted from the ingested content. [Learn More](../searchai/workbench/llm-stage.md). 
 
-## Transform Documents with LLM
+Note:
 
-This feature allows Search AI to leverage external LLM capabilities to enhance or update documents during the extraction process.
-
-[Learn More](../searchai/content-extraction/transformation.md)
-
-## Enrich Chunks with LLM
-
-This feature helps leverage the capabilities of an external LLM to refine, update, or enrich the chunks extracted from the ingested content. [Learn More](../searchai/workbench/llm-stage.md). 
+* Create a custom prompt to use this feature. 
+* All the chunk fields are available for use in the custom prompt for this feature. Click on View Field Details while adding a Workbench Stage during chunk enrichment process to view the complete list of Chunk Fields.
 
 ## Transform Documents with LLM
 
@@ -46,6 +41,10 @@ This feature allows Search AI to leverage external LLM capabilities to enhance o
 
 [Learn More](../searchai/content-extraction/transformation.md)
 
+Note:
+
+* Create a custom prompt to use this feature. 
+* All the document fields are available for use in the custom prompt for this feature. Click on View Field Details while adding a Transformation Stage during content extraction to view the complete list of Document Fields. 
 
 ## Vector Generation - Image
 
