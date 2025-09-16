@@ -29,7 +29,7 @@ Before using AI-Assisted Manual Audit, ensure you have:
 ## AI-Assisted Manual Audit Access 
 
 You can access AI-Assisted Manual Audit by navigating to **Quality AI** > **Analyze** > **Conversation Mining** > **Audit Allocations**.  
-<img src="../ai-assist-manual-edit/images/audit-allocations.png/" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/audit-allocations.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Interface overview
 
@@ -46,7 +46,7 @@ This Audit screen comprises three primary tabs:
 * **Conversation Details**: Interaction metadata and audit information.
 
 * **Logs**: Comprehensive audit trail and activity records.   
-<img src="../ai-assist-manual-edit/images/audit-screen-general.png/" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/audit-screen-general.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
 
 ## Audit
 
@@ -77,7 +77,7 @@ The By Question metrics features include the following:
   * Shows completion percentage based on answered audit questions (completion status).
 
   * Reflects the total number of By Question metrics configured in the form.  
-  <img src="../ai-assist-manual-edit/images/audit-progress-bar.png/" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
+  <img src="../ai-assist-manual-edit/images/audit-progress-bar.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
 * **AI Justification**
 
@@ -92,7 +92,7 @@ The By Question metrics features include the following:
     * Show timestamps for all relevant conversation segments to support transparency.
 
     * Helps auditors understand automated scoring decisions.    
-      <img src="../ai-assist-manual-edit/images/ai-justification-by-questions.png/" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
+      <img src="../ai-assist-manual-edit/images/ai-justification-by-questions.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
 **Adherence Filter Status**
 
@@ -101,7 +101,7 @@ This feature allows supervisors or administrators to filter and sort compliance 
 * **Adhered**: The response fully meets the compliance requirement.
 * **Not Adhered**: The response does not meet the compliance requirement.
 * **Not Applicable**: The question is not relevant to the specific context.	
-<img src="../ai-assist-manual-edit/images/conv-filter.png/" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/conv-filter.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
 **Self-Assignment for Audit**
 
@@ -116,7 +116,7 @@ Steps to Self-Assign an Interaction for Audit:
 2. Select any agent interactions that is not audited or assigned.
 
 3. Click the **Assign to Me** button. A success message confirms the audit allocation.   
-<img src="../ai-assist-manual-edit/images/assign-to-me.png/" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/assign-to-me.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
@@ -131,7 +131,7 @@ Steps to Self-Assign an Interaction for Audit:
 #### Comments
 
 This section displays all feedback provided by auditors during the evaluation process. It provides a comprehensive list of auditor-submitted notes for each interaction. All the submitted comments appear both in the Conversation **Transcript** and in the **Comments** tab, with commenter details shown based on privacy settings (For example, Hide Auditor Details).  
-<img src="../ai-assist-manual-edit/images/annonymous.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/annonymous.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
 **Message-Level Comments**
 
@@ -142,13 +142,13 @@ At the message level, users with QA functionality access permissions can view a 
 1. Click the **Assign to Me** button to add your comment during the conversation.
 
 2. Upon clicking the comment icon, a **Comment** icon appears when hovering over any message in the **Transcript** section.  
-<img src="../ai-assist-manual-edit/images/comment-icon-selection.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/comment-icon-selection.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 3. Click the **Comment** icon to add a comment title **(Name)** and **Comment** text (both are mandatory).    
 
 4. Users can add or delete their submitted comments before submission.
 
 5. Click **Send** to publish the added comment.  
-<img src="../ai-assist-manual-edit/images/adding-comments-for-agents.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/adding-comments-for-agents.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
 6. After submitting a comment, a **success message** appears.
 
@@ -157,7 +157,7 @@ Once submitted, message-level comments are displayed:
 * Inline within the **Transcript**, linked to the corresponding message.
 
 * In the **Comments** tab, there are both the comment title and text, along with the commenter's details (visibility based on privacy settings).  
-<img src="../ai-assist-manual-edit/images/click-though-navigation.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/click-though-navigation.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
@@ -178,10 +178,10 @@ These are added to specific evaluation criteria, for the **By Question**, **By V
 3. Click the **Edit** or **Delete** your added Comment.  
 
 4. Click **save** to save submitted comments.     
-<img src="../ai-assist-manual-edit/images/add-new-metric-level-comment.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/add-new-metric-level-comment.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
 * **Message Comments**: These are contextual comments added at the message level within the **Transcript** section of the **Audit** page. These comments support click-through navigation for quick review.  
-<img src="../ai-assist-manual-edit/images/view-chat.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/view-chat.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
 **View Chat**
 
@@ -192,7 +192,7 @@ The **View Chat** functionality enhances the efficiency of the quality assurance
 * Instantly navigate to the relevant portion of the transcript and call recording.
 
 * Correlate auditor feedback with specific moments in the interaction, enabling faster and more effective QA/auditor reviews.   
-<img src="../ai-assist-manual-edit/images/added-comments-by-QA.png/" alt="View Chat" title="View Chat" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/added-comments-by-QA.png" alt="View Chat" title="View Chat" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 
@@ -227,7 +227,7 @@ Near‑miss evaluations use predefined similarity thresholds to flag responses o
     * The corresponding customer response is highlighted with the relevant context.
 
 The system selects **By Question** metrics by default and prevents you from deselecting them. This default metric evaluates agent behavior question-by-question.    
-<img src="../ai-assist-manual-edit/images/view-button.png/" alt="View Chat" title="View Chat" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/view-button.png" alt="View Chat" title="View Chat" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 
@@ -256,7 +256,7 @@ When the evaluation form includes all the required metrics in the **Audit** page
     * Ensure the adherence percentage totals 100%.
 
 2. Click **Submit** to assign the Interactions to others or themselves.  
-<img src="../ai-assist-manual-edit/images/audit-submission.png/" alt="View Chat" title="View Chat" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/audit-submission.png" alt="View Chat" title="View Chat" style="border: 1px solid gray; zoom:80%;">
 
 3. Once the Interaction is assigned, the corresponding Interaction is marked as **Self-Assigned** on the **Audit Allocations** page.
 

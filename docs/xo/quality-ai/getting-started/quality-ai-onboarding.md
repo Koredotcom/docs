@@ -50,15 +50,15 @@ Steps to create a Quality AI application via the XO platform:
 2. Log in through **Email** or **SSO** (Google or Office 365). 
 
 3. Sign up for a new account if you do not have the account. [Learn more](https://docs.kore.ai/xo/getting-started/accessing-the-platform/).  
-<img src="../Onboarding/images/xo-landing-page.png/" alt="XO Landing Page" title="XO Landing Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/xo-landing-page.png" alt="XO Landing Page" title="XO Landing Page" style="border: 1px solid gray; zoom:80%;">
 
 4. Select the **New App** dropdown located at the upper right corner of the XO landing page.
 
 5. Click **+ New App**.   
-<img src="../Onboarding/images/navigate-to new-app.png/" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/navigate-to new-app.png" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
 
 6. Select **Quality AI**.   
-<img src="../Onboarding/images/Quality-ai-new-user.png/" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/Quality-ai-new-user.png" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
@@ -81,20 +81,20 @@ This includes multilingual support, and the default language is English.
         Configure an LLM in the GenAI section to enable Quality AI features for non-English languages.
 
 2. Select your preferred language to set it as the default for reports.   
-<img src="../Onboarding/images/choose-langs.png/" alt="Preferred Language" title="Preferred Language" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/choose-langs.png" alt="Preferred Language" title="Preferred Language" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
         English is the default language, and you cannot edit or remove it.
 
 3. Click **+ Add** to move the selected language into the **Selected Languages** list.  
-<img src="../Onboarding/images/add-new-lang.png/" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/add-new-lang.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:80%;">
 
 4. Toggle on any language in the list to **Mark as the Default**.   
-<img src="../Onboarding/images/set-default-lang.png/" alt="Mark Default Language" title="Mark Default Language" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/set-default-lang.png" alt="Mark Default Language" title="Mark Default Language" style="border: 1px solid gray; zoom:80%;">
     
 5. Turn off the toggle for the selected language from the **Selected Languages** list if you want to remove it from the default language list.   
-<img src="../Onboarding/images/de-selection-lang.png/" alt="Deselect Language" title="Mark Deselect Language" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/de-selection-lang.png" alt="Deselect Language" title="Mark Deselect Language" style="border: 1px solid gray; zoom:80%;">
 
 !!! warning "Default Language Removal"
 
@@ -123,7 +123,7 @@ Configure conversation sources based on your deployment type
 * Displayed only when using **Agent AI** or **Quality AI Express** deployment mode is selected.
 
 * Add the required queue names and IDs.  
-<img src="../Onboarding/images/conversation-sources-basic-settings-configuration.png/" alt="Queue Configuration" title="Queue Configuration" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/conversation-sources-basic-settings-configuration.png" alt="Queue Configuration" title="Queue Configuration" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
@@ -156,7 +156,7 @@ This allows you to define agent access, audit preferences, and usage policies to
     * Audit speech-based metrics
 
     * Audit Agent AI Playbook metrics   
-    <img src="../Onboarding/images/app-usage-settings.png/" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../Onboarding/images/app-usage-settings.png" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! note
 
@@ -171,10 +171,10 @@ This allows you to define agent access, audit preferences, and usage policies to
 2. Once configured, **Quality AI** automatically starts processing conversations.
 
 3. Use the workspace **Product Switcher** to access **Quality AI**.    
-<img src="../Onboarding/images/product-switcher.png/" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../Onboarding/images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:80%;"> 
 
 4. Navigate to **Conversation Sources** under the **Configure** section and select the required conversations to enable and streamline your interaction tracking and routing. 
-<img src="../Onboarding/images/conversation-sources.png/" alt="Conversation Sources" title="Conversation Sources" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../Onboarding/images/conversation-sources.png" alt="Conversation Sources" title="Conversation Sources" style="border: 1px solid gray; zoom:80%;"> 
 
       !!! note
 
@@ -193,4 +193,4 @@ After launch, the following sections appear in the **Quality AI** left menu:
 * **Deploy** (deployment and publishing workflows).
 
 * **User Management** (assign roles and permissions).     
-<img src="../Onboarding/images/conversation-sources-left-navigation.png/" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../Onboarding/images/conversation-sources-left-navigation.png" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
