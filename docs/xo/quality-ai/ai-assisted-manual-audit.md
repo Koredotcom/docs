@@ -79,39 +79,11 @@ The By Question metrics features include the following:
   * Reflects the total number of By Question metrics configured in the form.  
   <img src="../ai-assist-manual-edit/images/audit-progress-bar.png/" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
-* **Metric Cards**
-
-  * Display configurations for each question metric.
-
-  * Show configured similarity percentage (top right).
-
-  * Indicate assigned weightage (bottom left).
-
-  * Present the Kore Evaluation result.
-
-* **Evaluation Outcome**
-
-  * **Yes**: Adhered.
-
-  * **No**: Indicates non-adherence.
-
-  * **N/A**: Placement varies based on trigger detection and agent adherence.
-
-  * **Auto QA (Quality Assurance)**: Detected outcome of the system.
-
-    * AI transcript analysis.
-
-    * Similarity matching between expected vs. actual behavior.
-
-    * Predefined rules and configured thresholds.
-
-    * Automatically scores agent performance against audit questions across interactions.
-
 * **AI Justification**
 
     When using GenAI for agent response detection in evaluations, display the following fields to justify AI-generated decisions:
 
-    * Provide clear reasoning explaining the AI’s Yes/No outcome for agent answer detection.
+    * Provide clear reasoning explaining the AI’s Yes/No outcome for agent answer detection (whether adhered/not adhered/not applicable with along with the observation time).
 
     * Include evidence of trigger presence or absence for dynamic adherence types.
 
@@ -119,27 +91,17 @@ The By Question metrics features include the following:
 
     * Show timestamps for all relevant conversation segments to support transparency.
 
-* **View Chat Navigation**
+    * Helps auditors understand automated scoring decisions.    
+      <img src="../ai-assist-manual-edit/images/ai-justification-by-questions.png/" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
-    * Navigates to the transcript and recording where adherence is detected.
-        
-* **Submission**
-    * The submit button is enabled only for interactions assigned to the user.
-    * The user must answer all By Question metrics before submission.	
+**Adherence Filter Status**
 
-**Conversation Filter**
-
-    This feature allows supervisors or administrators to filter and sort compliance or adherence questions and their responses based on predefined metrics, facilitating detailed analysis and reporting.
-
-**Adherence Status**
+This feature allows supervisors or administrators to filter and sort compliance or adherence questions and their responses based on predefined metrics, facilitating detailed analysis and reporting. Questions are filtered based on adherence status to focus on specific areas of compliance.          
 
 * **Adhered**: The response fully meets the compliance requirement.
 * **Not Adhered**: The response does not meet the compliance requirement.
 * **Not Applicable**: The question is not relevant to the specific context.	
-
-**Adherence Functionality**
-
-* **Filtering**: Questions are filtered based on adherence status to focus on specific areas of compliance.        
+<img src="../ai-assist-manual-edit/images/conv-filter.png/" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
 **Self-Assignment for Audit**
 
@@ -150,8 +112,11 @@ QA users (auditors or supervisors) can self-assign unclaimed interactions for au
 Steps to Self-Assign an Interaction for Audit:
 
 1. Navigate to the **Conversation Mining** page, where interactions are listed.
+
 2. Select any agent interactions that is not audited or assigned.
-3. Click the **Assign to Me** button. A success message confirms the audit allocation.
+
+3. Click the **Assign to Me** button. A success message confirms the audit allocation.   
+<img src="../ai-assist-manual-edit/images/assign-to-me.png/" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
@@ -163,56 +128,75 @@ Steps to Self-Assign an Interaction for Audit:
 
         Only unassigned and unaudited interactions are available for self-assignment.
 
+#### Comments
+
+This section displays all feedback provided by auditors during the evaluation process. It provides a comprehensive list of auditor-submitted notes for each interaction. All the submitted comments appear both in the Conversation **Transcript** and in the **Comments** tab, with commenter details shown based on privacy settings (For example, Hide Auditor Details).  
+<img src="../ai-assist-manual-edit/images/annonymous.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+
 **Message-Level Comments**
 
 At the message level, users with QA functionality access permissions can view a comment icon when hovering over individual messages.
 
 **Commenting on Interactions**
 
-1. Upon clicking the comment icon, a **Comment** icon appears when hovering over any message in the **Transcript** section. 
+1. Click the **Assign to Me** button to add your comment during the conversation.
 
-2. Click the Comment icon to add a comment title **(Name)** and **Comment** text (both are mandatory).
+2. Upon clicking the comment icon, a **Comment** icon appears when hovering over any message in the **Transcript** section.  
+<img src="../ai-assist-manual-edit/images/comment-icon-selection.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+3. Click the **Comment** icon to add a comment title **(Name)** and **Comment** text (both are mandatory).    
 
-3. Users can add or delete their submitted comments before submission.
+4. Users can add or delete their submitted comments before submission.
 
-4. Click **Send** to publish the added comment.
+5. Click **Send** to publish the added comment.  
+<img src="../ai-assist-manual-edit/images/adding-comments-for-agents.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
-5. After submitting a comment, a **success message** appears.
+6. After submitting a comment, a **success message** appears.
 
 Once submitted, message-level comments are displayed:
 
 * Inline within the **Transcript**, linked to the corresponding message.
 
-* In the **Comments** tab, there are both the comment title and text, along with the commenter's details (visibility based on privacy settings).
+* In the **Comments** tab, there are both the comment title and text, along with the commenter's details (visibility based on privacy settings).  
+<img src="../ai-assist-manual-edit/images/click-though-navigation.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
-**Agent Scored Interactions**
+    !!! note
 
-Based on the **Agent Access to Scored Interactions** settings, the agents can view the following interaction types:
+        Auditors or supervisors can add therir comments in the **By Question, By Value**, and in the **By AI Agents** question metrics, when they are self-assigning the audit to themselves. 
 
-* **Only manually audited interactions**: Shows only **Supervisor Audit Score** interactions with Date & Time and Queues.
+**Comment Types**:
 
-* **Manually audited and Auto QA scored interactions**: Shows **Kore Evaluation Score** (Auto QA), **Supervisor Audited Score** interactions, including Date & Time and Queues.
+Auditors or reviewers can provide two types of comments during the audit process:
 
-Each row lists a terminated interaction (by an agent), with columns:
+* **Metric Comments**
 
-* Date & Time
+These are added to specific evaluation criteria, for the **By Question**, **By Value**, or **By AI Agent** metrics, once the audit is self-assigned to them.
 
-* Queues
+1. Click the **Assign to Me** button to enable or add your review comment during the conversation.
 
-* Auto QA Score (if Auto QA and manually audited interactions are accessible)
+2. Click the **+ Add Comment**, a Comment box opens to enter your comment.  
 
-* Audit Score
+3. Click the **Edit** or **Delete** your added Comment.  
 
-* **Hide Auditor Details for Agent**
+4. Click **save** to save submitted comments. 
+<img src="../ai-assist-manual-edit/images/add-new-metric-level-comment.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
-    * When toggled on, auditor details are anonymized in the audit screen. 
+* **Message Comments**: These are contextual comments added at the message level within the **Transcript** section of the **Audit** page. These comments support click-through navigation for quick review.  
+<img src="../ai-assist-manual-edit/images/view-chat.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
-    * When toggled off, auditor details are visible in the audit screen.
+**View Chat**
 
-      
-        !!! note
+The **View Chat** functionality enhances the efficiency of the quality assurance process by allowing users to:
 
-            Only the supervisors can view the auditor details. The agents are restricted from viewing the auditor details.
+* Highlight the related question metric for added context.
+
+* Instantly navigate to the relevant portion of the transcript and call recording.
+
+* Correlate auditor feedback with specific moments in the interaction, enabling faster and more effective QA/auditor reviews.   
+<img src="../ai-assist-manual-edit/images/added-comments-by-QA.png/" alt="View Chat" title="View Chat" style="border: 1px solid gray; zoom:80%;">
+
+!!! note
+
+    Once an interaction is manually evaluated (all responses are selected and submitted) and finalized, you cannot re-audit the same interaction. 
 
 **Click-Through Navigation for Comments**
 
@@ -238,19 +222,30 @@ Near‑miss evaluations use predefined similarity thresholds to flag responses o
 
 * When the **View** button is clicked:
 
-    * The evaluation is marked **Yes **(highlighted in green).
+    * The evaluation is marked **Yes** (highlighted in green).
 
     * The corresponding customer response is highlighted with the relevant context.
 
-The system selects **By Question** metrics by default and prevents you from deselecting them. This default metric evaluates agent behavior question-by-question.
+The system selects **By Question** metrics by default and prevents you from deselecting them. This default metric evaluates agent behavior question-by-question.    
+<img src="../ai-assist-manual-edit/images/view-button.png/" alt="View Chat" title="View Chat" style="border: 1px solid gray; zoom:80%;">
 
-        !!! note
+!!! note
 
-            * Auditors can only audit the selected types. 
+    * Auditors can only audit the selected types. 
             
-            * Supervisor score calculation includes all enabled metric types.
+    * Supervisor score calculation includes all enabled metric types.
 
 **Audit Submission Process**
+
+By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks **Submit**, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
+
+This comprehensive audit panel facilitates efficient evaluation and ensures thorough review of each interaction.
+
+!!! note
+
+    * Submit button is enabled only for interactions assigned to the user.
+
+    * You must answer all the question metrics before submission.
 
 When the evaluation form includes all the required metrics in the **Audit** page, the **Submit** button is enabled to complete and submit the audit. 
 
@@ -260,7 +255,8 @@ When the evaluation form includes all the required metrics in the **Audit** page
 
     * Ensure the adherence percentage totals 100%.
 
-2. Click **Submit** to assign the Interactions to others or themselves.
+2. Click **Submit** to assign the Interactions to others or themselves.  
+<img src="../ai-assist-manual-edit/images/audit-submission.png/" alt="View Chat" title="View Chat" style="border: 1px solid gray; zoom:80%;">
 
 3. Once the Interaction is assigned, the corresponding Interaction is marked as **Self-Assigned** on the **Audit Allocations** page.
 
@@ -269,6 +265,34 @@ When the evaluation form includes all the required metrics in the **Audit** page
     2. Once an interaction is fully evaluated and submitted, you cannot re-audit.
 
     3. Only the Interactions that are not assigned to others or already audited are available.
+
+**Agent Scored Interactions**
+
+Based on the **Agent Access to Scored Interactions** settings, the agents can view the following interaction types:
+
+* **Only manually audited interactions**: Shows only **Supervisor Audit Score** interactions with Date & Time and Queues.
+
+* **Manually audited and Auto QA scored interactions**: Shows **Kore Evaluation Score** (Auto QA), **Supervisor Audited Score** interactions, including Date & Time and Queues.
+
+Each row lists a terminated interaction (by an agent), with columns:
+
+* Date & Time
+
+* Queues
+
+* Auto QA Score (if Auto QA and manually audited interactions are accessible)
+
+* Audit Score
+
+* **Hide Auditor Details for Agent**
+
+    * When toggled on, auditor details are anonymized in the audit screen. 
+
+    * When toggled off, auditor details are visible in the audit screen.
+      
+        !!! note
+
+            Only the supervisors can view the auditor details. The agents are restricted from viewing the auditor details.
 
 **Evaluation Marking (Yes/No/N/A):** 
 
@@ -391,6 +415,7 @@ This comprehensive view is presented in a dropdown format, providing evaluators 
     * Audit Playbook Metrics
 
 * If the audit **Speech** and **Playbook** metrics are not enabled from the **Settings**, the metrics remain only for view mode.
+<img src="../ai-assist-manual-edit/images/playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
 
 #### By Value
 
@@ -430,34 +455,6 @@ Delivers advanced sentiment analysis through GenAI features, enabling the **Post
 * Topic modeling and intent recognition.
 
 * Predictive analytics for improved foresight.
-
-#### Comments
-
-This section displays all feedback provided by auditors during the evaluation process. It provides a comprehensive list of auditor-submitted notes for each interaction. All the submitted comments appear both in the Conversation **Transcript** and in the **Comments** tab, with commenter details shown based on privacy settings (For example, Hide Auditor Details).
-
-**Comment Types**:
-
-Auditors or reviewers can provide two types of comments during the audit process:
-
-* **Metric Comments**: These are added to specific evaluation criteria, such as By Question, By Value, or AI Agent metrics.
-
-* **Message Comments**: These are contextual comments added at the message level within the **Transcript** section of the **Audit** page. These comments support click-through navigation for quick review.
-
-**View Chat**
-
-The **View Chat** functionality enhances the efficiency of the quality assurance process by allowing users to:
-
-* Highlight the related question metric for added context.
-
-* Instantly navigate to the relevant portion of the transcript and call recording.
-
-* Correlate auditor feedback with specific moments in the interaction, enabling faster and more effective QA/auditor reviews.
-
-By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks Submit, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses. The Submit button is enabled when an Interaction is assigned, and all mandatory metrics are evaluated.
-
-!!! note
-
-    Once an interaction is manually evaluated (all responses are selected and submitted) and finalized, you cannot re-audit the same interaction. 
 
 ## Emotions
 
@@ -665,7 +662,7 @@ This **Sentiment** is classified into the following three categories and is trac
         * Customer's mood improves from negative to neutral
         * Partial improvement, opportunity for enhancement
 
-    * **Pattern I**: *Neutral → Neutral *
+    * **Pattern I**: *Neutral → Neutral*
         * Conversation remains steady and neutral, without significant emotional changes throughout.
         * Steady interaction without significant emotional impact
             
@@ -683,13 +680,21 @@ Scoring Logic
 
 Uses a weighted scoring algorithm that prioritizes final customer sentiment to better predict satisfaction and retention.
 
-* Prioritizes final customer sentiment to better predict satisfaction and retention.
-* Applies exponential weighting to recent messages (higher impact).
-* Generates numerical scores (1-10 scale: 5=Neutral, 7=Positive).
-* Classifies final interaction outcome as Positive, Neutral, or Negative.
-* Provides actionable feedback for coaching and process improvement.
-* Reflects the overall emotional conclusion rather than the initial sentiment.
-* Focuses on the closing phase of conversations to capture the customer’s final emotional state.
+* Similarity ≥ threshold (Adhered)
+
+* Similarity < threshold (Not Adhered)
+
+* Trigger not detected ( N/A)
+
+Example: 
+
+* Each question is tied to a similarity threshold (for example, 60%).
+
+* If an agent's response is greater than 60%, it is marked as adhered with full weight based on the number of questions (100%).
+
+* Below the threshold = Not Adhered (0 weight).
+
+* Questions marked Not Applicable are ignored in scoring.
 
 ##### Sentiment Ratio Analysis
 
@@ -726,23 +731,9 @@ This feature uses AI to give supervisors quick overviews of customer interaction
 This provides the speech analysis data metrics. 
 
 * **Speaking Rate**: Shows the speaking rate value (Words Per Minute).
-* **Crutch Words: **Shows the value of filler words such as "um," "uh," or "like."
+
+* **Crutch Words**: Shows the value of filler words such as "um," "uh," or "like."
 * **Empathy Score**: Shows the agent’s utterance value (whether the agent is empathetic or not).
-
-#### **Bookmarks**
-
-This allows you to tag the agent interaction with different bookmarks for grouping and quick reference. Bookmarks help to tag or group similar interactions together. You can bookmark interactions from various places, including Interactions, Audit Allocations, and Settings, making it easy to add an interaction to a configured bookmark.
-
-**Note**: 
-
-* Make sure all the bookmarks are enabled and created in the **Settings**. You can only view the tagged bookmarks list. 
-* Bookmarks are user-specific (you cannot access a bookmark created by another user).
-* You can tag the Interactions for quick reference.
-
-#### **Search**
-
-This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords, such as compliance issues, customer concerns, resolution confirmations, and training opportunities within interaction records to support diverse investigation and review needs. 
-
 
 ## Conversation Details
 
@@ -750,20 +741,12 @@ This page shows how to view the conversation history to evaluate interactions:
 
 * Conversation Details, such as Start Time and End Time, Agent name, Queue, and Customer Phone number. 
 * Audit Details, such as Auditor Name, Audit Date, Audit Score, and Kore Evaluation Score.
-* Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.
+* Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.  
+<img src="../ai-assist-manual-edit/images/ai-assist-conv-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
 
 ## Logs
 
 This tab provides a comprehensive audit trail for tracking the interaction-evaluation process. It records request and response data for each GenAI-based adherence metric. This interface displays detailed activity logs of agent interactions, including system events, user actions, outcome status for each metric, and evaluation progress.
-
-## Details
-
-This section displays key information about the agent and the interaction:
-
-* Conversation Details, such as Start Time and End Time, Agent name, Queue, and Customer Phone number.
-* Audit Details, such as Auditor Name, Audit Date, Audit Score, and Kore Evaluation Score.
-* Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.   
-<img src="../ai-assist-manual-edit/images/ai-assist-conv-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
 
 ## Violations
 
@@ -786,70 +769,10 @@ This section highlights instances where the agent failed to follow configured pl
 If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section will not be displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.  
 <img src="../ai-assist-manual-edit/images/ai-assist-omission.png" alt="Omission" title="Omission" style="border: 1px solid gray; zoom:80%;">
 
-## Playbook
-
-This section of the interaction audit screen enables evaluators to assess adherence to configured playbook metrics. It displays:
-
-* Each playbook metric with entire Playbook configuration
-* Configured minimum adherence for each metric
-* Observed adherence within the interaction
-* Missing steps (Playbook steps not completed during the interaction)
-
-This comprehensive view is presented in a drop-down format, providing evaluators full visibility of playbook adherence. It helps identify gaps between expected and actual performance, facilitating targeted feedback and improvement.  
-<img src="../ai-assist-manual-edit/images/ai-assist-playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
-
-## Comments
-
-This section displays all comments created by an auditor during the evaluation process. It provides a comprehensive list of auditor feedback for the interaction.
-
-Each comment entry is clickable. When a comment is selected, the system automatically highlights the corresponding question metric, providing context for the feedback.
-
-Clicking a comment also navigates the user directly to the relevant part of the transcript and recording. It enables quick review and easy correlation between auditor comments and specific moments in the interaction, significantly enhancing the efficiency of the quality assurance process.  
-<img src="../ai-assist-manual-edit/images/ai-assist-comments.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:80%;">
-
 ## Search
 
-This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.  
-<img src="../ai-assist-manual-edit/images/ai-assist-search.png" alt="Search" title="Search" style="border: 1px solid gray; zoom:80%;">
-
-## Audit
-
-This section (right panel) displays the By Question metrics configured for the evaluation form.
-
-Key features include:
-
-**Audit Progress Bar**
-
-   * Located at the top right.
-   * Shows percentage completion based on answered questions.
-   * Reflects total number of By Question metrics in the form.
-
-**Metric Cards**
-
-  * Display configurations for each question metric.
-  * Show configured similarity percentage (top right).
-  * Indicate assigned weightage (bottom left).
-  * Present Kore Evaluation result.
-
-**Kore Evaluation**
-
-  * **Yes**: Badge appears next to 'Yes' response with observed similarity percentage.
-  * **No**: Badge appears next to 'No', indicating non-adherence.
-  * **NA**: Badge placement varies based on trigger detection and agent adherence.
-
-**Navigation**
-
-  * Clicking 'Yes' evaluation cards navigates to the transcript and recording where adherence was detected.
-
-**Submission**
-
-  * Submit button is enabled only for interactions assigned to the user.
-  * All By Question metrics must be answered before submission.
-
-This comprehensive audit panel facilitates efficient evaluation and ensures thorough review of each interaction.  
-<img src="../ai-assist-manual-edit/images/ai-assist-audit.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
-
-In the Chat History - Audit section, the evaluation form items determine performance levels through assigned scores, each with specific weights for the questions. The supervisor or auditor's role is to evaluate each question (using the options available in the evaluation form: **Yes/No/NA**). This process enables clear identification of strengths and areas for improvement, facilitating better coaching. Additionally, auditors can review the conversation for each question.
+This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.   
+<img src="../ai-assist-manual-edit/images/search.png" alt="Search" title="Search" style="border: 1px solid gray; zoom:80%;">
 
 ### Scoring Triggers
 
@@ -872,15 +795,3 @@ In the Chat History - Audit section, the evaluation form items determine perform
 
   **N/A**: If the threshold is 60% and the agent has not met the configured threshold, it will be marked as N/A, and the question badge indicates gray color.  
   <img src="../ai-assist-manual-edit/images/ai-assist-score-metrics.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
-
-## Bookmarks
-
-This section allows you to tag the agent interaction with different bookmarks. Bookmarks help to tag or group similar interactions together. Bookmarks are user-specific (a bookmark created by one user cannot be accessed by another) and must be enabled and created in the Settings section. Users can bookmark interactions from various places, including Interactions, Audit Allocations, and Settings, making it easy to add an interaction to a configured bookmark.  
-<img src="../ai-assist-manual-edit/images/ai-assist-bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:80%;">
-
-## Submit
-
-By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks **Submit**, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
-
-For more information, see [Audit Allocation](../quality-ai/analyze/conversation-mining-audit-allocations.md).    
-<img src="../ai-assist-manual-edit/images/ai-assist-submit.png" alt="Submit" title="Submit" style="border: 1px solid gray; zoom:80%;">
