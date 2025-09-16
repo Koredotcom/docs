@@ -177,7 +177,7 @@ These are added to specific evaluation criteria, for the **By Question**, **By V
 
 3. Click the **Edit** or **Delete** your added Comment.  
 
-4. Click **save** to save submitted comments. 
+4. Click **save** to save submitted comments.     
 <img src="../ai-assist-manual-edit/images/add-new-metric-level-comment.png/" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
 * **Message Comments**: These are contextual comments added at the message level within the **Transcript** section of the **Audit** page. These comments support click-through navigation for quick review.  
@@ -414,7 +414,7 @@ This comprehensive view is presented in a dropdown format, providing evaluators 
 
     * Audit Playbook Metrics
 
-* If the audit **Speech** and **Playbook** metrics are not enabled from the **Settings**, the metrics remain only for view mode.
+* If the audit **Speech** and **Playbook** metrics are not enabled from the **Settings**, the metrics remain only for view mode.  
 <img src="../ai-assist-manual-edit/images/playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
 
 #### By Value
