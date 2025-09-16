@@ -596,7 +596,6 @@ This feature analyzes customer and agent sentiment across the entire interaction
 
 It delivers phase-level trends, overall interaction scores (1–10 scale), and sentiment ratio analysis using weighted algorithms prioritizing final customer sentiment. The system identifies different sentiment patterns from negative-to-positive success to negative-to-negative risk, enabling proactive coaching and targeted intervention.
 
-
 This **Sentiment** is classified into the following three categories and is tracked at the message level across the call stages:
 
     * **Call Opening**: From agent transfer to issue identification: 
@@ -726,7 +725,7 @@ This feature uses AI to give supervisors quick overviews of customer interaction
 
         **Note**: This option appears only for voice interactions.
 
-#### **Agent Speech Insights**
+#### Agent Speech Insights
 
 This provides the speech analysis data metrics. 
 
