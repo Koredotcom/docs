@@ -501,7 +501,7 @@ nav:
       - Best Practices for Auto QA Configuration: quality-ai/getting-started/best-practices-for-auto-qa-config.md      
       - AI-Assisted Manual Audit: quality-ai/ai-assisted-manual-audit.md  
     - Onboarding:     
-      - Setup Guide: quality-ai/getting-started/quality-ai-onboarding.md    
+      - Quality AI Onboarding: quality-ai/getting-started/quality-ai-onboarding.md    
     - Analyze:
       - Dashboard:
         - Supervisor Dashboard: quality-ai/analyze/dashboard.md

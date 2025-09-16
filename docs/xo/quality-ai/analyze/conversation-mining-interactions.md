@@ -26,11 +26,11 @@ The **Interactions** dashboard includes the following elements:
     * **Intent Tags**: Shows the classified intents of each interaction as tags. Hover over the Intent tags to see all relevant intents mentioned in that conversation.  
   <img src="../conversation-mining/images/conversation-mining-interaction-intent-tags.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
-* **Processing Status**
+* **Processing Status**: Shows whether the process completion and metric adherence are achieved or not.
 
     * **Pass**: Displays a green icon when all processes have succeeded, and metric adherence is captured.
 
-    * **Fail**: Displays a red icon when all processes have not succeeded, and metric adherence is not captured.
+    * **Fail**: Displays a red icon when all processes have not succeeded, and metric adherence is not captured.   
 <img src="../conversation-mining/images/processing-status.png" alt="Processing Status" title="Processing Status" style="border: 1px solid gray; zoom:80%;">
 
 * **Actions**: Allows you to assign the interaction to a bookmark for later reference.  
