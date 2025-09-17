@@ -62,7 +62,7 @@ The API response includes the **model ID** and the **guardrail deployment status
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>.
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>.
    </td>
    <td>String
    </td>
@@ -91,7 +91,7 @@ The API response includes the **model ID** and the **guardrail deployment status
 ## Sample Request
 
 ```js
-curl --location 'https://axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/deploy' \ 
+curl --location 'https://{host}/api/public/guardrails/deploy' \ 
 --header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3' \ 
 --header 'Content-Type: application/json' \ 
 --data '{"name": "Ban topics"}'

@@ -49,7 +49,7 @@ This API allows users to track the status of ongoing or completed jobs related t
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -71,7 +71,7 @@ This API allows users to track the status of ongoing or completed jobs related t
 ## Sample Request
 
 ```js
-curl --location 'https://xx-gxxe.kore.ai/api/public/dock-status/ds-24xxxxx3-0xxc-5xx5-axx3-c19xxxxxxxx8' \
+curl --location 'https://{host}/api/public/dock-status/ds-24xxxxx3-0xxc-5xx5-axx3-c19xxxxxxxx8' \
 --header 'x-api-key: kg-abxxxxx7-5xx3-5xx8-bxxb-9xxxx'
 ```
 

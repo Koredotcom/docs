@@ -5,15 +5,13 @@ To integrate tools from an MCP server into an agent, follow these steps:
 1. Navigate to the **Tools** section of the app and click on **Add Tool**. Click on **+New Tool** to configure a new MCP server and add tools. 
 ![alt_text](images/mcp/home.png "Add tool")
 
-2. Provide the MCP server configuration on the following page. 
-![alt_text](images/mcp/mcp-config.png "MCP Config")
-   
-   * **Name**- Provide a unique name for the MCP server. 
-   * **Description**- Provide a description of the capabilities/tools offered by the server. 
-   * **Request Definition** - Define how the platform should send a request to the MCP server to fetch available tools. Click **Configure** and and provide the MCP server configuration details. ![alt_text](images/mcp/mcp-config-type.png "MCP Config")
-        * Select the MCP server configuration type - `HTTP` or `SSE`.
-        * URL: Endpoint that returns tool definitions.
-        * Headers:  Any required headers like Authorization tokens.
+2. Provide the MCP server configuration on the following page.![alt_text](images/mcp/mcp-config.png "MCP Config")
+    1. **Name**- Provide a unique name for the MCP server. 
+    2. **Description**- Provide a description of the capabilities/tools offered by the server. 
+    3. **Request Definition** - Define how the platform should send a request to the MCP server to fetch available tools. Click **Configure** and and provide the MCP server configuration details. ![alt_text](images/mcp/mcp-config-type.png "MCP Config")
+        1. Select the MCP server configuration type - HTTP or SSE. 
+        2. URL: Endpoint that returns tool definitions.
+        3. Headers:  Any required headers like Authorization tokens.
 
 3. Click the **Test** button to fetch tool metadata from the MCP server. 
 4. Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click **Add Selected** to add the tools to the agent. 
@@ -56,7 +54,7 @@ Use the **refresh** icon to fetch updated content from the MCP server.
 ![alt_text](images/mcp/refresh.png "Refresh MCP")
 
 
-To modify the configuration of the MCP server, click on the ellipsis in the right corner of the MCP server and click** Edit Server**. Make the necessary changes and save. 
+To modify the configuration of the MCP server, click on the ellipsis in the right corner of the MCP server and click **Edit Server**. Make the necessary changes and save. 
 
 ![alt_text](images/mcp/modify-mcp.png "Modify MCP Config")
 

@@ -71,7 +71,7 @@ This method directly hits the endpoint and returns the <code>fileId</code> and `
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>.
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>.
    </td>
    <td>String
    </td>
@@ -83,7 +83,7 @@ This method directly hits the endpoint and returns the <code>fileId</code> and `
 ### Sample Request
 
 ```js
-curl --location 'https://agent-platform.kore.ai/api/public/files' \
+curl --location 'https://{host}/api/public/files' \
 --header 'x-api-key: xxxxx' \
 --form 'file=@"postman-cloud:///1efxxxxe-bxx9-4xx0-bxx3-14xxxxxxxxx9"' \
 --form 'fileContext="bulkImport"'
@@ -128,7 +128,7 @@ curl --location 'https://agent-platform.kore.ai/api/public/files' \
 
 ```js
 {
-"url": "http://localhost/api/getMediaStream/orgFiles/f-e1xxxxx3-4xxc-5xx6-bxx2-cxxxxxxxxxx7.wav?e=173xxxxx36&n=13xxxx7188&del=false&s=IkJyODZMM3V6K1I3UkYraERHSHVuOWY1M08xYjJoN3NLMmVTR0FMbWtiK2M9Ig%24%24&fileName=sample4.wav",
+"url": "http://{host}/api/getMediaStream/orgFiles/f-e1xxxxx3-4xxc-5xx6-bxx2-cxxxxxxxxxx7.wav?e=173xxxxx36&n=13xxxx7188&del=false&s=IkJyODZMM3V6K1I3UkYraERHSHVuOWY1M08xYjJoN3NLMmVTR0FMbWtiK2M9Ig%24%24&fileName=sample4.wav",
 "fileId":"657xxxxxxxxxxxxxxxxxxxx6"
 }
 ```
@@ -217,7 +217,7 @@ The API initializes the file upload process and returns a <code>session ID</code
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai</code>
    </td>
    <td>String
    </td>
@@ -229,7 +229,7 @@ The API initializes the file upload process and returns a <code>session ID</code
 #### Sample Request
 
 ```js
-curl --location 'https://agent-platform.kore.ai/api/public/files/session/start' \
+curl --location 'https://{host}/api/public/files/session/start' \
 --header 'x-api-key: kg-b9xxxxxc-cxxf-5xxf-8xxe-6xxxxxxxxxx8-3xxxxx2a-exxa-4xx8-8xx5-exxxx1axxxxxd' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -359,7 +359,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code><a href="http://localhost/api/public/files/session/{{sessionId">https://{{host}}</a>/api/public/files/session/<a href="http://localhost/api/public/files/session/{{sessionId">{{sessionId</a>}} </code>
+   <td><code>https://{host}/api/public/files/session/{sessionId}</code>
    </td>
   </tr>
   <tr>
@@ -392,7 +392,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>
+   <td>The environment URL. For example, <code>https://agent-pplatform.domain.ai</code>
    </td>
    <td>String
    </td>
@@ -414,7 +414,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
 #### Sample Request
 
 ```js
-curl --location 'https://agent-platform.kore.ai/api/public/files/session/14xxxxxd-0xx4-4xxf-axx1-69xxxxxxxxx8' \
+curl --location 'https://{host}/api/public/files/session/14xxxxxd-0xx4-4xxf-axx1-69xxxxxxxxx8' \
 --header 'x-api-key: {{apikey}}' \
 --header 'Content-Type: application/json' \
 --form 'file=@"postman-cloud:///1exxxxxc-9xxd-4xx0-8xxa-3xxxxxxxxxxa"' \
@@ -508,7 +508,7 @@ This API merges the uploaded chunks and finalizes the process using the `session
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code><a href="http://{{host}}/api/public/files/session/session">http://{{host}}/api/public/files/session/{{session</a> id}}/complete</code>
+   <td><code>https://{host}/api/public/files/session/{sessionid}/complete</code>
    </td>
   </tr>
   <tr>
@@ -575,7 +575,7 @@ No parameters are passed.
 
 ```js
 {
-"url": "http://localhost/api/getMediaStream/orgFiles/f-e1xxxxx3-4xxc-5xx6-bxx2-c8xxxxxxxxx7.wav?e=1736922836&n=1357527188&del=false&s=IkJyODZMM3V6K1I3UkYraERHSHVuOWY1M08xYjJoN3NLMmVTR0FMbWtiK2M9Ig%24%24&fileName=sample4.wav",
+"url": "http://{host}/api/getMediaStream/orgFiles/f-e1xxxxx3-4xxc-5xx6-bxx2-c8xxxxxxxxx7.wav?e=1736922836&n=1357527188&del=false&s=IkJyODZMM3V6K1I3UkYraERHSHVuOWY1M08xYjJoN3NLMmVTR0FMbWtiK2M9Ig%24%24&fileName=sample4.wav",
     "fileId": "657xxxxxxxxxxxxxxxxxxxx6"
 }
 ```

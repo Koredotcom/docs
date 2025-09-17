@@ -9,7 +9,7 @@ To integrate your Bedrock models, you will need to:
 3. Test the configuration and map the output.
 
 
-### Step 1. Setting Up Credentials and Trust Policy (IAM Role & STS)
+### Step 1. Setting Up Credentials and Trust Policy (IAM Role and STS)
 
 **1. Create the IAM Role in Your AWS Account**
 
