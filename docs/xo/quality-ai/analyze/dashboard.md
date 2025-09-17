@@ -224,8 +224,6 @@ The **Agent Leaderboard** displays the following items:
 
 * **Fail Percentage**: Displays the percentage of failures across all interactions.
 
-Click any agent record in the Agent Leaderboard to navigate you to a detailed-view of an agent. See [Supervisor View with Agent-Specific Dashboard](../../quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md).
-
 ### View Leaderboard
 
 This **View Leaderboard** or **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](../analyze/agent-leaderboard.md).
@@ -236,9 +234,9 @@ There are two ways to access the **Agent Dashboard**:
 
 2. Navigate to **Quality AI** > **Agent Leaderboard**. 
 
-When you click the **View Leaderboard** button, it navigates you to the **Agent Leaderboard**. For more information, see [Agent Dashboard - Supervisor View](../../quality-ai/analyze/Agent%20Dashboard%20-%20Supervisor%20View.md).  
+Clicking the **View Leaderboard** button takes you to the **Agent Leaderboard** or **Agent Dashboard**. For more information, see [Supervisor View with Agent-Specific Dashboard](../../quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md).  
 <img src="../dashboard/images/view-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. Bookmarked interactions help assign relevant coaching tasks, with the latest interactions shown first. 
 
-For more information, see [Agent Leaderboard](../analyze/agent-leaderboard.md).
+For more information, see [Agent Dashboard - Supervisor Evaluation](../../quality-ai/analyze/Agent%20Dashboard%20-%20Supervisor%20View.md).

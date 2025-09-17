@@ -130,7 +130,7 @@ This functionality supports multilingual performance monitoring, enabling superv
 
 * When a scorecard is selected, all associated languages are automatically selected.
 
-* Agents can assign different languages to different scorecards, allowing for localized tracking and analysis.
+* Agents can assign different languages to different scorecards, allowing for localized tracking and analysis.  
 <img src="./images/scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
