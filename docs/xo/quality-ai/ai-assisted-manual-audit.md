@@ -1,6 +1,8 @@
 # AI-Assisted Manual Audit
 
-The AI-Assisted Manual Audit feature provides supervisors and quality assurance teams with an intelligent platform to evaluate agent-customer interactions across voice and chat channels. This combines artificial intelligence capabilities with manual oversight to streamline performance assessments, ensure compliance with quality standards, and enable data-driven coaching for continuous improvement. It combines AI-powered analysis with manual oversight to streamline quality assessments and enable targeted coaching.
+The AI-Assisted Manual Audit feature provides supervisors and quality assurance teams with an intelligent platform to evaluate agent-customer interactions across voice and chat channels. This combines artificial intelligence capabilities with manual oversight to streamline performance assessments, ensure compliance with quality standards, and enable data-driven coaching for continuous improvement. 
+
+It combines AI-powered analysis with manual oversight to streamline quality assessments and enable targeted coaching.
 
 Key features of the AI-Assisted Audit system include:
 
@@ -33,36 +35,272 @@ You can access AI-Assisted Manual Audit by navigating to **Quality AI** > **Anal
 
 ## Interface overview
 
+### Access Methods
+
 Supervisors can access the audit screen in the following ways:
 
 * **From Conversation Mining**: You can view all their queue conversations.
 
 * **From Audit Allocation**: You can view all the conversations specifically assigned for evaluation.
 
+### Primary Interface Tabs
+
 This Audit screen comprises three primary tabs:
 
-* **Audit**: Main evaluation workspace with transcript and metrics.
+* **Audit Tab**
+    * Main evaluation workspace with transcript and metrics.
 
-* **Conversation Details**: Interaction metadata and audit information.
+    * Displays selected metrics as tabs with input capabilities.
 
-* **Logs**: Comprehensive audit trail and activity records.   
-<img src="../ai-assist-manual-edit/images/audit-screen-general.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+    * Shows supervisor scores and agent view changes based on audit status.
+
+    * Features updated audio playback visualizer.
+
+* **Conversation Details Tab**: 
+
+    * Interaction metadata and audit information.
+
+    * Conversation details (Start Time, End Time, Agent name, Queue, Customer Phone number).
+
+    * Audit details (Auditor Name, Audit Date, Audit Score, Kore Evaluation Score).
+
+    * Agent identifiers (Call ID, Session ID, Channel User ID, Call Conversation ID, Agent Conversation ID).
+
+* **Logs Tab**
+
+    * Comprehensive audit trail and activity records.   
+
+    * Records request and response data for GenAI-based adherence metrics.
+
+    * Detailed activity logs including system events, user actions, outcome status, and evaluation progress.  
 
 ## Audit
 
-The audit screen displays the selected metrics as tabs and allows input where applicable. Supervisor scores reflect these audits, and the agent views changes based on the audit status. The system also updates the audio playback visualizer to match the new design. 
-
-The audit screen is divided into two main sections: 
+The audit screen is divided into three main sections: 
 
 * **Transcript**: Displays detailed agent conversation information, including the full dialogue from the interaction, enabling thorough review and verification. 
 
 * **Audit Evaluation**: Displays the configured metrics related to the audit, providing a high-level summary and insights derived from AI analysis.
 
-    * **AI Overview**: Enables users with AutoQA permissions to select which metric types (for example, By Speech or By Playbook) to audit, while "By Question" and "By Value" remain always enabled. 
+* **AI Overview**: Provides AI-powered insights through analysis widgets, helping supervisors quickly assess performance, compliance, and customer satisfaction without reading full transcripts. Users with Auto QA permissions can also choose which metric types to audit, such as By Speech or By Playbook, while By Question and By Value are always enabled. 
 
 ### Audit Evaluation
 
-Provides the main evaluation interface with AI-driven components for efficient assessment across all metric types. This supports six distinct metric evaluation types.
+Provides the main evaluation interface with AI-driven components for efficient assessment across all metric types. 
+
+### AI Overview
+
+Displays conversation insights via AI-powered widgets, allowing supervisors to evaluate key metrics like performance, compliance, and sentiment.
+
+#### Topics
+
+Displays a list of all topics conversation subjects and themes (for example, Customer Support Process). This helps to assess conversation complexity and track topic trends.
+
+* Supports multi-language topic identification.
+
+* Topics extracted using AI natural language processing.
+
+* Category-based performance analysis.
+
+* Training need identification based on topic patterns.  
+<img src="../ai-assist-manual-edit/images/topics.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+
+#### Intents
+
+Captures customer purpose and desired outcomes.
+
+* Analyzes conversation context, phrasing, and patterns.
+
+* Displays each intent as individual chip. 
+
+* Supports measuring intent resolution success rates.
+
+* Helps understanding customer needs and goals.  
+<img src="../ai-assist-manual-edit/images/intents.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+
+### Transcript
+
+The Transcript section presents a unified timeline spanning the duration of both chat and voice interactions, visualizing both agents’ and customers' behavior events and their emotions. It supports real-time navigation to relevant audio with transcript details. 
+
+#### Decision Process
+
+1. **Auto QA**: AI/automated system reviews chat transcripts for keywords, phrases, patterns.
+
+2. **Manual Review**: Auditors listen to calls or read chats for evaluation.
+
+3. **View Chat**: Allows reviewers to check the actual conversation.
+
+4. **AI Justification**: Provides reasoning for automated decisions.
+
+#### Sentiment Analysis 
+
+Displays overall conversation sentiment classification of customer or agent across the entire interaction. This provides a phase-level tracking (opening, development, and closing) with clear pattern recognition. Also, shows the agent's empathetic responses score.
+
+* **Call Opening**: From agent transfer to issue identification: 
+
+    * Customer describes support context or problem (support context).
+            
+    * **Development**: From issue identification to resolution discussion.
+
+    * **Call Closing**: From resolution discussion to call termination.   
+    <img src="../ai-assist-manual-edit/images/sentiment.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+
+#### Sentiment Ratio
+
+Displays overall conversation sentiment classification. It shows sentiment distribution throughout the conversation, helping to identify whether the interaction improved or deteriorated over time with percentage ratio (Positive, Negative, and Neutral).
+
+Sentiment Categories:
+
+* **Positive**: Customer satisfaction, successful resolution.
+
+* **Neutral**: Standard interaction without strong emotions.
+
+* **Negative**: Dissatisfaction, unresolved issues.  
+<img src="../ai-assist-manual-edit/images/sentiment-ratio.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+
+#### Sentiment Analysis Patterns
+
+**Success Patterns**
+
+* Pattern A (Negative → Positive): Customer satisfaction recovery.
+
+* Pattern B (Positive → Positive): Consistent positive experience.
+
+* Pattern C (Neutral → Positive): Effective positive experience creation.
+
+**Risk Patterns**
+
+* Pattern D (Positive → Negative): Service degradation requiring attention.
+
+* Pattern E (Neutral → Negative): Missed opportunities or failures.
+
+* Pattern F (Negative → Negative): Persistent dissatisfaction requiring escalation.
+
+**Stable Patterns**
+
+* Pattern G (Positive → Neutral): Adequate service delivery.
+
+* Pattern H (Negative → Neutral): Partial improvement opportunity.
+
+* Pattern I (Neutral → Neutral): Steady interaction without emotional impact.
+
+**Resolution-Aware Scoring**
+
+* Weighted algorithm prioritizing final customer sentiment.
+
+* Exponential weighting to recent messages
+Numerical scores (1-10 scale: 5=Neutral, 7=Positive).
+
+* Final interaction outcome classification (Positive, Neutral, Negative).
+
+#### Emotions or Emotion Analysis
+
+Measures agent's empathetic responses. 
+This ranks the agent and customer emotions analysis with timeline visualization with emotional states (anger, frustration, satisfaction) detected during a customer-agent interaction. 
+
+**Agent Top Emotions** 
+
+Tracks anger, fear, confusion, happiness, empathy, and patience levels with:
+
+* Separate emotion timelines for agent and customer. 
+
+* Percentage breakdown of emotional interactions.
+
+* Emotions rank from highest to lowest by duration percentage.
+
+* Top three emotions ranking for each party.
+
+* Timeline visualization with emoticon indicators.  
+
+**Tracked Emotions**
+
+* **Patience**: Handling difficult situations calmly.
+
+* **Happy**: Positive attitude and engagement.
+
+* **Empathy**: Understanding and compassionate responses.
+
+* **Confusion**: Uncertainty about processes or information.
+
+* **Fear**: Anxiety or hesitation in responses
+Anger: Frustration or irritation (coaching opportunity).
+
+**Customer Top Emotions**
+
+Monitors anger, fear, confusion, sadness, happiness, escalation, and churn risk with:
+
+* Voice-based emotion detection and ranking.
+
+* Interactive navigation to conversation segments.
+
+* Tooltip details for emotion identification.
+
+**Tracked Emotions**
+
+* **Happy**: Satisfaction and positive experience.
+
+* **Anger**: Frustration requiring attention.
+
+* **Confusion**: Need for clarification.
+
+* **Sadness**: Disappointment requiring empathy.
+
+* **Fear**: Anxiety about products/services.
+
+* **Escalation**: Rising frustration levels.
+
+* **Churn Risk**: Departure probability indicators.      
+<img src="../ai-assist-manual-edit/images/emotions.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+
+### Scoring Logic
+
+#### Resolution-Aware Scoring
+
+Uses a weighted scoring algorithm that prioritizes final customer sentiment to better predict satisfaction and retention.
+
+* Similarity ≥ threshold (Adhered)
+
+* Similarity < threshold (Not Adhered)
+
+* Trigger not detected ( N/A)
+
+Example: 
+
+* Each question is tied to a similarity threshold (for example, 60%).
+
+* If an agent's response is greater than 60%, it is marked as adhered with full weight based on the number of questions (100%).
+
+* Below the threshold = Not Adhered (0 weight).
+
+* Questions marked Not Applicable are ignored in scoring.
+
+#### Conversation Insights
+
+This uses AI to give supervisors quick overviews of customer interactions by summarizing key events, outcomes, and important details without reviewing full transcripts or recordings. 
+
+* **Customer Talk Ratio**: Percentage of total call duration customer is speaking.
+
+* **Agent Talk Ratio**: Percentage of total call duration agent is speaking.
+
+* **Silence Percentage**: Call time where neither party speaks (excludes hold time).
+
+* **Speaking Rate**: Agent's speech speed (Words Per Minute - WPM calculation).   
+<img src="../ai-assist-manual-edit/images/conversation-insights.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+
+!!! note
+
+    This option appears only available for voice interactions. 
+
+#### Agent Speech Insights
+
+Displays Agent-specific performance data metrics.
+
+* **Speaking Rate**: Words Per Minute value.
+
+* **Crutch Words**: Filler word count ("um," "uh," "like").
+
+* **Empathy Score**: Agent utterance empathy measurement.    
+<img src="../ai-assist-manual-edit/images/agent-speech-insights.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
 
 #### By Question
 
@@ -76,8 +314,82 @@ The By Question metrics features include the following:
 
   * Shows completion percentage based on answered audit questions (completion status).
 
-  * Reflects the total number of By Question metrics configured in the form.  
+  * Reflects the total number of By Question metrics configured in a form.  
   <img src="../ai-assist-manual-edit/images/audit-progress-bar.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
+
+  #### Omission
+
+This section highlights instances where the agent failed to follow configured or compliance elements, such as playbook steps or dialog tasks, during the interaction. It specifically identifies:
+
+* Omitted playbook steps (for playbook metrics)
+* Omitted dialog tasks (for dialog metrics)
+* Only shown if relevant metrics exist
+
+If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section is not displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.
+
+#### By Playbook
+
+The Playbook section of the interaction audit screen enables evaluators to assess adherence to configured playbook metrics. It displays:
+
+* Each playbook metric with the **Entire Playbook** configuration.
+
+* Configured minimum adherence for each metric.
+
+* Observed adherence within the interaction.
+
+* Missing steps (Playbook steps not completed during the interaction).
+
+* Displays expected vs. observed steps.
+
+This comprehensive view is presented in a dropdown format, providing evaluators full visibility of playbook adherence. It helps identify gaps between expected and actual performance, facilitating targeted feedback and improvement.
+
+* The user can audit **Speech** and **Playbook** metrics once the following **Settings** audit options are enabled.
+
+    * Audit Speech Metrics
+
+    * Audit Playbook Metrics
+
+* If the audit **Speech** and **Playbook** metrics are not enabled from the **Settings**, the metrics remain only for view mode.  
+<img src="../ai-assist-manual-edit/images/playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
+
+#### By Value
+
+This section tracks value-related metrics and activities during interaction evaluations. It enables advanced insights into agent behavior beyond predefined scripts. Follow the same requirements as specified for the **By Question** metrics.
+
+It also tracks AI sentiment and emotion using GenAI and leverages Agent AI models for:
+
+* Sentiment analysis
+
+* Identifying key emotional moments
+
+* Predictive analytics 
+
+**Agent Adherence**
+
+Display the following fields:
+
+* **Source System Value**: Value obtained from the source system.
+
+* **Agent Mentioned Value**: Value mentioned by the agent during the conversation
+* **AI Justification**.
+
+* **GenAI-based adherence**: Combine business rule validation with tolerance range analysis.
+
+* **Custom script adherence**: Include the agent-mentioned value and business rule justification.
+
+#### By AI Agent 
+
+Delivers advanced sentiment analysis through GenAI features, enabling the **Post-Interaction Sentiment Analytics and Key Emotion Moments** option. This feature enhances post-interaction insights by analyzing agent conversations for deeper emotional and sentiment context. With the integration of **GenAI Copilot, **it leverages Quality AI with LLMs to generate detailed post-interaction sentiment analysis and highlight key emotional moments within conversations.
+
+**Key Capabilities:**
+
+* Real-time AI-driven analysis.
+
+* Sentiment and emotion detection.
+
+* Topic modeling and intent recognition.
+
+* Predictive analytics for improved foresight.
 
 * **AI Justification**
 
@@ -330,409 +642,10 @@ The form is evaluated based on the agent's performance and actions taken during 
 
 * Example: When the customer never asked about interest rates → N/A for "Did agent inform interest rate values?"
 
-#### Omission
+## Search
 
-This section highlights instances where the agent failed to follow configured or compliance elements, such as playbook steps or dialog tasks, during the interaction. It specifically identifies:
-
-* Omitted playbook steps (for playbook metrics)
-* Omitted dialog tasks (for dialog metrics)
-* Only shown if relevant metrics exist
-
-If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section is not displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.
-
-#### Violations
-
-The Violations section highlights speech metric violations with timestamps that occurred during the call. Examples include Cross Talk, Dead Air, and Speaking Rate Violation.
-
-Each violation is displayed with a timestamp, allowing you to navigate directly to the point in the recording where the violation occurred. It enables quick identification and review of problematic areas in the interaction. Controls the visibility and availability of speech analytics within manual audit evaluations.
-
-!!! note
-
-    Only the supervisors can view the auditor details. The agents are restricted from viewing the auditor details. 
-    
-    * Users can audit **Speech** and **Violations** metrics once the following **Settings** audit options are enabled.
-
-    * Audit Speech Metrics
-
-    * Audit Playbook Metrics
-
-* If the audit **Speech** and **Violations** metrics are not enabled from the **Settings**, the metrics remain only for view mode.
-
-* Violations apply only to Voice channel interactions, not Chat.
-
-**Common Violation Types**:
-
-* **Cross Talk**: Instances where the agent and the customer speak simultaneously.
-
-* **Dead Air**: Periods of silence exceeding configured thresholds.
-
-* **Speaking Rate**: Speech too fast or too slow based on optimal communication standards.
-
-#### By Speech
-
-You can only view the following metric types:
-
-* Cross Talk
-* Dead Air
-* Speaking Rate
-
-!!! note
-
-    * **Users can audit **Speech** metrics once the following **Settings** audit option is enabled (Audit Speech Metrics).
-
-    * ** Speech quality metrics are view-only if not enabled in the **Audit Settings**. Applicable only for **Voice** interactions. 
-
-#### By Dialog
-
-The Dialog section provides a comprehensive breakdown of conversation flow and structure analysis. This feature examines the natural progression of the interaction and identifies patterns in communication dynamics.
-
-!!! note
-
-    * Users can audit **Dialogs** metrics once the following **Settings** audit option is enabled (Manual Audit > Audit Playbook Metrics). 
-    
-    * If the audit **Speech** and **Dialogs** metrics are not enabled from the **Settings**, the metrics remain only for view mode.
-
-#### By Playbook
-
-The Playbook section of the interaction audit screen enables evaluators to assess adherence to configured playbook metrics. It displays:
-
-* Each playbook metric with the **Entire Playbook** configuration.
-
-* Configured minimum adherence for each metric.
-
-* Observed adherence within the interaction.
-
-* Missing steps (Playbook steps not completed during the interaction).
-
-* Displays expected vs. observed steps.
-
-This comprehensive view is presented in a dropdown format, providing evaluators full visibility of playbook adherence. It helps identify gaps between expected and actual performance, facilitating targeted feedback and improvement.
-
-* The user can audit **Speech** and **Playbook** metrics once the following **Settings** audit options are enabled.
-
-    * Audit Speech Metrics
-
-    * Audit Playbook Metrics
-
-* If the audit **Speech** and **Playbook** metrics are not enabled from the **Settings**, the metrics remain only for view mode.  
-<img src="../ai-assist-manual-edit/images/playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
-
-#### By Value
-
-This section tracks value-related metrics and activities during interaction evaluations. It enables advanced insights into agent behavior beyond predefined scripts. Follow the same requirements as specified for the **By Question** metrics.
-
-It also tracks AI sentiment and emotion using GenAI and leverages Agent AI models for:
-
-* Sentiment analysis
-
-* Identifying key emotional moments
-
-* Predictive analytics 
-
-##### Agent Adherence
-
-Display the following fields:
-
-* **Source System Value**: Value obtained from the source system.
-
-* **Agent Mentioned Value**: Value mentioned by the agent during the conversation
-* **AI Justification**.
-
-* **GenAI-based adherence**: Combine business rule validation with tolerance range analysis.
-
-* **Custom script adherence**: Include the agent-mentioned value and business rule justification.
-
-#### By Agent AI
-
-Delivers advanced sentiment analysis through GenAI features, enabling the **Post-Interaction Sentiment Analytics and Key Emotion Moments** option. This feature enhances post-interaction insights by analyzing agent conversations for deeper emotional and sentiment context. With the integration of **GenAI Copilot, **it leverages Quality AI with LLMs to generate detailed post-interaction sentiment analysis and highlight key emotional moments within conversations.
-
-**Key Capabilities:**
-
-* Real-time AI-driven analysis.
-
-* Sentiment and emotion detection.
-
-* Topic modeling and intent recognition.
-
-* Predictive analytics for improved foresight.
-
-## Emotions
-
-Provides AI-powered conversation summaries with key insights, sentiment analysis, and performance indicators. It enables supervisors to quickly grasp interaction quality and outcomes through automated extraction of critical information, emotional patterns, and performance metrics.
-
-This Overview pane includes the following tabs:
-
-* **Overview**: A general summary of the call conversation with AI-generated insights.
-
-* **By Question**: Aggregated analysis grouped by the specific questions asked.
-
-* **Omissions**: Highlights important content or prompts that were missed or omitted.
-
-* **Playbook**: Matches agent responses to the appropriate playbook or scripting guide.
-
-* **By Value**: Segments call data by predefined value categories (for example, compliance, balance check).
-
-* **By AI Agent**: Compares performance and outcomes across AI agents & models.
-* **Comments**: Allows supervisors to add annotations, feedback, or corrective notes.
-    
-This ranks the agent and customer emotions analysis with timeline visualization. Provides emotional states (anger, frustration, satisfaction) detected during a customer-agent interaction. 
-
-Each emotion is presented with: 
-
-* Separate emotion timelines for agent and customer.
-
-* Each emotion’s percentage of total call duration.
-
-* Emotions rank from highest to lowest by duration percentage.
-
-* Emoticon indicators tooltips showing emotion details.
-
-### Transcript
-
-The Transcript section presents a unified timeline spanning the duration of both chat and voice interactions, visualizing both agents’ and customers' behavior events and their emotions. It supports real-time navigation to relevant audio with transcript details. 
-
-#### Decision Process
-
-1. **Auto QA**: AI/automated system reviews chat transcripts for keywords, phrases, patterns.
-
-2. **Manual Review**: Auditors listen to calls or read chats for evaluation.
-
-3. **View Chat**: Allows reviewers to check the actual conversation.
-
-4. **AI Justification**: Provides reasoning for automated decisions.
-
-**Audio Playback and Timeline Visualization**
-
-An integrated playback system with visual timeline markers that enables synchronized audio listening and transcript reading (for analyzing call recordings or voice interactions), improving evaluation accuracy and efficiency by highlighting key moments. 
-
-This has the following components:
-
-* Volume Control
-
-* Play (Backward, Forward, and Pause) Button
-
-* Playback Speed Control 
-
-* Timestamp (current position)
-
-* Download
-    
-#### Timeline Visualization
-
-Both chat and voice have the following three prime timelines of Adherence/Agent/Customer:
-
-* Visual representation of the entire conversation
-
-* Clickable timeline for navigation to specific moments
-
-* Waveform intensity indicates speaking volume and activity
-
-##### AdherenceTimeline
-
-Provides the following three distinct timeline tracking adherence for quick identification of policy compliance issues. 
-
-* **Green**: Indicates successful adherence to guidelines.
-* Yellow: Indicates 
-* **Red**: Indicates policy violations or missed opportunities
-* **Grey**: Indicates Trigger points for dynamic metrics.
-
-##### Emotion Timeline
-
-The Emotion Timeline displays agent and customer emotions using emoticons. Hovering over an emoticon reveals the emotion name, and clicking it navigates to the corresponding message within the audio and transcript views.
-
-* **Agent Emotions**: Tracks anger, fear, confusion, happiness, empathy, and patience levels. 
-
-* **Customer Emotions**: Monitors anger, fear, confusion, sadness, happiness, escalation, and churn risk.
-
-* **Interactive Navigation**: Click the corresponding emotions to jump to relevant conversation segments.
-
-!!! note
-
-    Administrators can configure (add or remove) moment types and adjust detection criteria to meet evolving quality and compliance needs. 
-
-###### Agent Top Emotions
-
-This provides a percentage breakdown of the emotional interactions of both the agent and the customer during the conversation. It lists only the top three emotions for each party. The report shows the percentage and ranking of emotions (for example, empathy, happiness, patience) detected in their voices, offering insights into their emotional states and communication styles.
-
-###### Customer Top Emotions
-
-Shows the percentage and ranking of emotions detected in the customer's voice throughout the interaction..
-
-!!! note
-
-    To access and view the customer and agent-based emotion key moments in the **Conversation Overview** tab, you must enable the following GenAI features at the app level: 
-    
-    * Post-Interaction Sentiment Analytics and Key Emotion Moments. 
-    
-    * Topic Modelling 
-    
-    * AI-generated emotions and sentiment insights (**Settings**> **Audit Settings**)
-
-  Once you enable the Copilot setting from the **GenAI Features**, the following emotion and sentiment components are available to view: 
-
-* Agent Emotion Timeline
-
-* Customer Emotion Timeline
-
-* Call phase level sentiment trend
-
-* Sentiment pattern analysis
-
-* Advanced Topic Identification
-
-#### Topics
-
-Displays a list of all topics identified in the conversation (for example, Customer Support Process). . This helps to assess conversation complexity and track topic trends. If no topic is detected, the widget shows blank (no message). 
-
-#### Intents
-
-Displays a list of all intents identified in the conversation (for example, Request Assistance). This helps to understand and optimize customer needs. Each intent appears as an individual chip. If no intents are detected, the widget remains blank. By analyzing interactions (context, phrasing, and patterns).
-
-#### Sentiment Analysis and Key Emotion Moments
-
-##### Post-Interaction Phase-level Sentiment Trend
-
-This feature analyzes customer and agent sentiment across the entire interaction, providing phase-level tracking (opening, development, and closing) with clear pattern recognition. This detects key emotional moments and trends, classifies sentiment patterns (for example, success, risk, stable), and delivers resolution-aware scoring that emphasizes end-of-call sentiment. It generates actionable insights to support agent coaching and process improvement through emotional flow analysis.
-
-It delivers phase-level trends, overall interaction scores (1–10 scale), and sentiment ratio analysis using weighted algorithms prioritizing final customer sentiment. The system identifies different sentiment patterns from negative-to-positive success to negative-to-negative risk, enabling proactive coaching and targeted intervention.
-
-This **Sentiment** is classified into the following three categories and is tracked at the message level across the call stages:
-
-    * **Call Opening**: From agent transfer to issue identification: 
-
-        * Customer describes support context or problem (support context).
-
-        * Agent initiates product presentation (sales context).
-            
-    * **Development**: From issue identification to resolution discussion.
-
-        * Problem-solving and information gathering.
-
-        * Solution presentation and explanation.
-
-        If the call is not identified, what would be the case?
-
-    * **Call Closing**: From resolution discussion to call termination.
-
-        * Solution confirmation and wrap-up.
-
-        * Final customer satisfaction verification.
- 
-
-    * **Pattern A**: *Negative* → *Positive*
-
-        * Customer starts frustrated but ends satisfied.
-
-        * Successful issue resolution, customer satisfaction recovery.
-    
-    * **Pattern B**: *Positive* → *Positive*
-
-        * Customer stays happy throughout the conversation.
-
-        * Consistent positive experience throughout interaction.     
-
-    * **Pattern C**: *Neutral* → *Positive *
-
-        * Customer conversation begins at the calm stage and ends in a positive mood.
-
-        * Effective positive experience creation.
-            
-###### Risk Patterns
-
-    * **Pattern D**: *Positive → Negative *
-        * The customer is happy at first, but becomes upset later
-        * Service degradation requiring immediate attention
-
-    * **Pattern E**: Neutral → Negative 
-        * The customer call starts neutral and turns to negative at the end
-        * Missed opportunities or service failures
-
-    * **Pattern F**: Negative → Negative 
-        * The customer remains dissatisfied throughout the conversation
-        * Persistent dissatisfaction requiring escalation
-
-###### Stable Patterns
-
-    * **Pattern G**: *Positive → Neutral *
-        * The customer starts the conversation feeling positive, but their mood turns neutral by the end.
-        * Adequate but not exceptional service delivery.   
-
-    * **Pattern H**: *Negative → Neutral *
-        * Customer's mood improves from negative to neutral
-        * Partial improvement, opportunity for enhancement
-
-    * **Pattern I**: *Neutral → Neutral*
-        * Conversation remains steady and neutral, without significant emotional changes throughout.
-        * Steady interaction without significant emotional impact
-            
-###### Overall Interaction-level Sentiment Score
-
-Shows an overall resolution-aware sentiment score, which is generated using a weighted aggregation of message-level sentiment across the call phases. 
-
-    * Greater weight is assigned to the **closing phase**, ensuring the score reflects final customer sentiment. 
-    
-    * Output is a numerical score (for example, on a 1–10 scale, where 5 = Neutral, 7 = Positive).
-
-Scoring Logic
-
-###### Resolution-Aware Scoring
-
-Uses a weighted scoring algorithm that prioritizes final customer sentiment to better predict satisfaction and retention.
-
-* Similarity ≥ threshold (Adhered)
-
-* Similarity < threshold (Not Adhered)
-
-* Trigger not detected ( N/A)
-
-Example: 
-
-* Each question is tied to a similarity threshold (for example, 60%).
-
-* If an agent's response is greater than 60%, it is marked as adhered with full weight based on the number of questions (100%).
-
-* Below the threshold = Not Adhered (0 weight).
-
-* Questions marked Not Applicable are ignored in scoring.
-
-##### Sentiment Ratio Analysis
-
-The **Conversation Insights** displays talk ratios, silence percentages, and speaking rates for voice interactions. It also shows sentiment distribution throughout the conversation, helping to identify whether the interaction improved or deteriorated over time. This allows for the quantification of emotional flow (in percentage) during a call.
-
-For example, Positive 100%, Neutral 100%, and Negative 100%. 
-
-* **Positive**: (Percentage of interaction with positive sentiment)
-
-* **Negative**: (Percentage of interaction with negative sentiment)
-   
-* **Neutral**: (Percentage of interaction with neutral sentiment)
-
-#### Conversation Insights (Interaction Metrics)
-
-This feature uses AI to give supervisors quick overviews of customer interactions by summarizing key events, outcomes, and important details without reviewing full transcripts or recordings. GenAI helps in identifying key issues, resolutions, and agent performance for quicker coaching and review. It also shows voice call metrics like talk ratios, silence time, and speaking rates to help assess engagement and call dynamics.
-
-* **Customer Talk Ratio**: The percentage of total call duration during which the customer is speaking. 
-
-* **Agent Talk Ratio**: The percentage of total call duration during which the agent is speaking. 
-    
-* **Silence**: Percentage of the call where neither party is speaking. 
-    * Only includes periods of silence when both the agent and the customer are connected. 
-    * Does not include the time when the customer is placed on hold.
-
-* **Speaking Rate**: Measures the agent’s speech rate (calculated in words per minute).
-    * Agent’s speech speed based on voice interaction only
-    * Calculated by the total number of spoken words divided by the time in minutes (Words Per Minute (WPM)
-
-        **Note**: This option appears only for voice interactions.
-
-#### Agent Speech Insights
-
-This provides the speech analysis data metrics. 
-
-* **Speaking Rate**: Shows the speaking rate value (Words Per Minute).
-
-* **Crutch Words**: Shows the value of filler words such as "um," "uh," or "like."
-* **Empathy Score**: Shows the agent’s utterance value (whether the agent is empathetic or not).
+This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.   
+<img src="../ai-assist-manual-edit/images/search.png" alt="Search" title="Search" style="border: 1px solid gray; zoom:80%;">
 
 ## Conversation Details
 
@@ -745,52 +658,5 @@ This page shows how to view the conversation history to evaluate interactions:
 
 ## Logs
 
-This tab provides a comprehensive audit trail for tracking the interaction-evaluation process. It records request and response data for each GenAI-based adherence metric. This interface displays detailed activity logs of agent interactions, including system events, user actions, outcome status for each metric, and evaluation progress.
-
-## Violations
-
-This section highlights speech metric violations that occurred during the call. Examples include Cross Talk, Dead Air, and Speaking Rate Violation.
-
-Each violation is displayed with a timestamp, allowing you to navigate directly to the point in the recording where the violation occurred. It enables quick identification and review of problematic areas in the interaction.  
-<img src="../ai-assist-manual-edit/images/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:30%;">
-
-!!! Note
-
-    Violations are applicable only for voice channel interactions, not chat.
-
-## Omission
-
-This section highlights instances where the agent failed to follow configured playbook steps or dialog tasks during the interaction. It specifically identifies:
-
-* Omitted playbook steps (for playbook metrics)
-* Omitted dialog tasks (for dialog metrics)
-
-If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section will not be displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.  
-<img src="../ai-assist-manual-edit/images/ai-assist-omission.png" alt="Omission" title="Omission" style="border: 1px solid gray; zoom:80%;">
-
-## Search
-
-This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.   
-<img src="../ai-assist-manual-edit/images/search.png" alt="Search" title="Search" style="border: 1px solid gray; zoom:80%;">
-
-### Scoring Triggers
-
-* **Adherence Detected (Yes)**: If the adherence percentage meets the threshold configured by the supervisor or admin, the evaluation form item is highlighted in green with a “Kore Evaluation” Badge with the configured percentage. This indicates that the agent meets the expected question and answer. If the scores marked as "Yes" are usually associated with positive indicators or compliance with standards to pass. Sometimes if the answer is not met, it leads to negative scoring based on the by question configuration (metric type).
-
-  For example, 
-
-  * **Yes**: if the threshold is 60% and the agent meets 60% or above, it will be marked as YES and the question badge indicates green color.
-* **Adherence Not Detected (No)**: If the adherence percentage falls below the configured threshold, the evaluation form item is highlighted in red “Kore Evaluation” Badge, showing the scored percentage. If the percentage is not met the configured threshold, then it is considered as NO (non-adherence).
-    * In some cases, the percentage may meet similar answers with a configured threshold which shows the percentage.
-    * If it is not adhered to the configured threshold percentage.
-
-  For example, 
-
-  **No**: If the threshold is 60% and the agent meets below 60% or similar, it will be marked as NO, and the question badge indicates red color.
-
-* **Trigger Not Detected (N/A)**: If the adherence percentage is not detected,  and dynamic by question, then it is considered as not applicable.
-
-  For example, 
-
-  **N/A**: If the threshold is 60% and the agent has not met the configured threshold, it will be marked as N/A, and the question badge indicates gray color.  
-  <img src="../ai-assist-manual-edit/images/ai-assist-score-metrics.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
+This tab provides a comprehensive audit trail for tracking the interaction-evaluation process. It records request and response data for each GenAI-based adherence metric. This interface displays detailed activity logs of agent interactions, including system events, user actions, outcome status for each metric, and evaluation progress.  
+    <img src="../ai-assist-manual-edit/images/logs.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
