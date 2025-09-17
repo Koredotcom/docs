@@ -42,12 +42,12 @@ The steps to add an external model using API integration are given below:
        <ul><li>The <b>Add Custom Variable</b> dialog is displayed. Enter the <b>Variable name</b> and <b>Display name</b>, and select the <b>Data type</b>.</li>
        <img src="../images/add-custom-variable.png" alt="custom variable form" title="custom variable form" style="border: 1px solid gray; zoom:75%;"></li></ul></ul>         
      <li><b>Body</b>: The request body must include the model’s relevant parameters, which you must define manually. For dynamic variable mapping, use <code>{{variable}}</code>. Ensure the body is in the correct format, as shown in the screenshot below; otherwise, the API testing won't work.</li>
-     <img src="../images/body-parameters.png" alt="request body" title="request body" style="border: 1px solid gray; zoom:75%;"></ul>
+       <img src="../images/body-parameters.png" alt="request body" title="request body" style="border: 1px solid gray; zoom:75%;"></ul>
      <ul><li><b>Test Response</b>: The response created for the configured LLM service appears here. To provide a test response from the model, follow the steps below:</li>
       <ul><li> Click <b>Test</b>.
       <img src="../images/click-test-request.png" alt="test request" title="test request" style="border: 1px solid gray; zoom:75%;"></li>
        <li>In the <b>Sample Input</b> dialog, enter the <b>Prompt</b>, <b>System prompt</b>, and <b>Examples</b> in the respective fields, and click <b>Confirm</b>.</li>
-      <img src="../images/sample-input-dialog.png" alt="sample input" title="sample input" style="border: 1px solid gray; zoom:75%;"></ul></ul> 
+       <img src="../images/sample-input-dialog.png" alt="sample input" title="sample input" style="border: 1px solid gray; zoom:75%;"></ul></ul> 
 
 These inputs are used to test the connection and receive a response from the model. Once the response is generated, you must configure the **JSON path** to capture the Output path, Input tokens, and Output tokens, as follows:
    * **Output Path**: When you interact with the model, you send a request in a specific format and receive a response in a corresponding format, often as a large JSON object. As a user, you are mainly interested in extracting the model’s answer from this response. The *output path* refers to the location or key within the JSON where the model’s main output is stored. Knowing this path is essential, especially in the prompt playground, as it tells you exactly which key to map to populate the response in the playground box. For example, in the sample response below, the output path is `choices[0].message.content.` 
