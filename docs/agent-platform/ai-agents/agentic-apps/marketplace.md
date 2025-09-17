@@ -15,7 +15,7 @@ The Marketplace is ideal for professionals seeking rapid prototyping, scalable d
 
 ## Usage approaches
 
-### Deploy complete app
+### Deploy the complete app
 
 Start with a fully functional agentic app:
 
