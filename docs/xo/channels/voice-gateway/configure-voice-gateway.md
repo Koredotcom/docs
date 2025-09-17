@@ -146,7 +146,7 @@ Agent AI supports real-time audio streaming through two primary methods:
 
             !!! note
 
-                The caller number specified in the [Script Task](https://docs.kore.ai/xo/flows/node-types/script-task/) is passed through the SIP headers when a third-party desktop application transfers the call to an agent. 
+                The caller number specified in the [Script Task](../../flows/node-types/script-task.md) is passed through the SIP headers when a third-party desktop application transfers the call to an agent. 
 
         <span id="agentai">If you select **Agent AI**</span>: 
 

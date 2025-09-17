@@ -1226,7 +1226,7 @@ This feature also helps address the current limitation of system messages availa
 
 **Customize Virtual Assistant’s Theme & Design**
 
-The platform now supports customizing the Virtual Assistant's look and feel with the new Theme and Design feature. This includes changes to welcome text, buttons, colors, chat windows, and sound themes to match their needs. A real-time preview pane shows changes instantly and makes it easy to make any adjustments before deploying the updated design. [Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#ai-agent-theme--design){:target="_blank"}
+The platform now supports customizing the Virtual Assistant's look and feel with the new Theme and Design feature. This includes changes to welcome text, buttons, colors, chat windows, and sound themes to match their needs. A real-time preview pane shows changes instantly and makes it easy to make any adjustments before deploying the updated design. [Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#ai-agent-theme-design){:target="_blank"}
 
 **Enhanced Panels & Widgets**
 
