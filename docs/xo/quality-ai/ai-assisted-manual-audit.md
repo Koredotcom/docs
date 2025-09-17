@@ -327,6 +327,13 @@ This section highlights instances where the agent failed to follow configured or
 
 If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section is not displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.
 
+**Violations**
+
+This section highlights speech metric violations that occurred during the call. Examples include Cross Talk, Dead Air, and Speaking Rate Violation.
+
+Each violation is displayed with a timestamp, allowing you to navigate directly to the point in the recording where the violation occurred. It enables quick identification and review of problematic areas in the interaction.  
+<img src="../ai-assist-manual-edit/images/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:30%;">
+
 #### By Playbook
 
 The Playbook section of the interaction audit screen enables evaluators to assess adherence to configured playbook metrics. It displays:
