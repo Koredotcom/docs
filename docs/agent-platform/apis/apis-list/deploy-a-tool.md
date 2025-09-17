@@ -50,7 +50,7 @@ The API response includes the **tool ID** and the **tool deployment status**. Af
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pxxxxxxm.kxxe.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -72,7 +72,7 @@ The API response includes the **tool ID** and the **tool deployment status**. Af
 ## Sample Request
 
 ```js
-curl --location 'https://agent-platform.kore.ai/api/public/tools/a-0xxxxxxxxxxxxxxxxxxe/deploy' \
+curl --location 'https://{host}/api/public/tools/a-0xxxxxxxxxxxxxxxxxxe/deploy' \
 --header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxxxb-9xx5-cxxxxxxxxx3' \
 --header 'Content-Type: application/json' \
 --data '{
