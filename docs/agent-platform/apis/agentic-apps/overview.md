@@ -11,11 +11,11 @@ The Agent Protocol API enables programmatic interaction with your agents, allowi
 All requests are made to the following base URL. 
 
 ```
-https://<agent-platform-env>.kore.com/api/v2/
+https://<agent-platform-env>.<domain>.com/api/v2/
 ```
 
 
-Replace `<agent-platform-env>` with your specific environment name.
+Replace `<agent-platform-env>` with your specific environment name and `<domain>` with your domain name.
 
 
 ### Authentication
@@ -146,7 +146,7 @@ Sample Response
             "content": {
                 "auth_profiles": [
                     {
-                        "url": "https://agent-platform.kore.ai/r/396c63515671634648357955",
+                        "url": "https://host/r/396c63515671634648357955",
                         "idpName": "Google",
                         "isAuthorized": false,
                         "sso_type": "oauth2"
