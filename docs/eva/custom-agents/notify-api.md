@@ -29,7 +29,7 @@ curl --location --request POST 'https://work.kore.ai/api/1.1/public/agents/ag-44
 --header 'authorization: EypCddcFH6sgaJJkWj6k-Wbz6meimT09RXbTYDnYB3FA8$' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "to": "john.doe@kore.com",
+    "to": "example@kore.com",
     "message": {
         "title": "Agent Update",
         "body": "Notification description"
