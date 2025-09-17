@@ -26,7 +26,7 @@ This tab provides the supervisor’s view of the agent dashboard for each agent 
 
 ### Filter Options
 
-Supervisors can filter dashboard data by **Language**, [**Date Range**](../analyze/dashboard.md/#date-range) and [**Channel**](../analyze/dashboard.md/#channel). 
+Supervisors can filter dashboard data by **Language**, **Date Range** and **Channel**. 
 
 The Dashboard metrics allow you to filter and refine the data displayed across the entire Agent Dashboard by selected languages, date range (calendar), and channel.
 
@@ -116,14 +116,22 @@ The Coaching Assignments include the following items:
 
     * **Completed**: All interactions clicked through for that assignment.
 
-For more information, see [Coaching Assignments - Supervisor View](../coach/coaching-assignments-supervisor-view.md).  
+For more information, see [Coaching Assignments - Supervisor Creation](../../quality-ai/coach/coaching-assignments-supervisor-creation.md).  
 
 ### Scorecard Trend
 
-The Scorecard Trend feature displays an agent’s assigned scorecards and highlights performance trends over Daily, Weekly, and Monthly intervals. It allows supervisors to track attribute-level scoring patterns, identify progress or decline, and make informed coaching decisions. The trend widget appears in a tabular format within the agent dashboard.
+The Scorecard Trend feature displays an agent’s assigned scorecards and highlights performance trends over Daily, Weekly, and Monthly intervals. It allows supervisors to track attribute-level scoring patterns based on the scorecard and language selected. This also enables you to identify progress or decline and make informed coaching decisions. 
 
-Scorecard trends and average scores are customized based on the globally selected language. However, Scorecard widgets support independent language selection at the widget level, overriding the global setting. This dual-language control enables supervisors to analyze agent performance across multiple languages with detailed insights into trends and coaching needs.   
-<img src="../agent-leaderboard/images/scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
+#### All Languages 
+
+This functionality supports multilingual performance monitoring, enabling supervisors to compare agent performance across languages and generate actionable insights for coaching. Each scorecard supports independent language settings, separate from the global dashboard language. This enables flexible multilingual configuration across the platform.
+
+* The language filter within a scorecard displays only the languages that are configured for that scorecard.
+
+* When a scorecard is selected, all associated languages are automatically selected.
+
+* Agents can assign different languages to different scorecards, allowing for localized tracking and analysis.
+<img src="./images/scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
 
