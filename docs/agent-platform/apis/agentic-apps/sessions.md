@@ -202,7 +202,7 @@ This event provides a URL that the user must visit to complete the authorization
       "content": {
         "auth_profiles": [
           {
-            "url": "https://agent-platform.kore.ai/r/396c63515671xxxxxxxxxx7955",
+            "url": "https://{host}/r/396c63515671xxxxxxxxxx7955",
             "idpName": "Google",
             "isAuthorized": false,
             "sso_type": "oauth2"
