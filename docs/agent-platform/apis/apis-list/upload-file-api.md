@@ -71,7 +71,7 @@ This method directly hits the endpoint and returns the <code>fileId</code> and `
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pxxxxxxxm.kxxe.ai</code>.
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>.
    </td>
    <td>String
    </td>
@@ -83,7 +83,7 @@ This method directly hits the endpoint and returns the <code>fileId</code> and `
 ### Sample Request
 
 ```js
-curl --location 'https://agent-platform.kore.ai/api/public/files' \
+curl --location 'https://{host}/api/public/files' \
 --header 'x-api-key: xxxxx' \
 --form 'file=@"postman-cloud:///1efxxxxe-bxx9-4xx0-bxx3-14xxxxxxxxx9"' \
 --form 'fileContext="bulkImport"'

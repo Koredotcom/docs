@@ -325,7 +325,7 @@ nav:
   - APIs: 
     - Agentic Apps:
       - About Agentic App APIs: apis/agentic-apps/overview.md
-      - APIs List: apis/agentic-apps/overview/#api-list
+      - APIs List: apis/agentic-apps/overview/#apis-list
     - Tools:
       - About Tools APIs: apis/overview.md
       - APIs List: apis/overview/#apis-list
