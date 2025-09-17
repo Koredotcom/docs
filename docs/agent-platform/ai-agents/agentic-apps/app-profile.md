@@ -4,7 +4,6 @@ Navigate to the app's Overview page. Click the Edit icon to view the App Profile
 
 ![App Profile](images/appprofile/overview-page.png "App Profile")
 
-
 The **App Profile** lists key configuration options for an application. You can review and update these settings as required.
 
 1. Name - Display Name given to the app.
