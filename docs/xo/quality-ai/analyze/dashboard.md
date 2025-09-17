@@ -224,7 +224,7 @@ The **Agent Leaderboard** displays the following items:
 
 * **Fail Percentage**: Displays the percentage of failures across all interactions.
 
-Click any agent record in the Agent Leaderboard to navigate you to a detailed-view of an agent. See [Supervisor View with Agent-Specific Dashboard](../../quality-ai/analyze/Supervisor-view-agent-dashboard.mdanalyze/Supervisor-view-agent-specific-dashboard.md).
+Click any agent record in the Agent Leaderboard to navigate you to a detailed-view of an agent. See [Supervisor View with Agent-Specific Dashboard](../../quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md).
 
 ### View Leaderboard
 
