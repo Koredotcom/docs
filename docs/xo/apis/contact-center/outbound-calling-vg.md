@@ -15,7 +15,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 
 | **Method**      | POST                                                                                                     |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| **Endpoint**    | `https:/{{host}}/api/1.1/public/bot/:/smartassist/dialout` |
+| **Endpoint**    | `https:/{{host}}/api/1.1/public/bot/{{botId}}/smartassist/dialout` |
 | **Content Type** | `application/json`                                                                                       |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**   | SmartAssist Dialout                                                                                      |
@@ -68,7 +68,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 ### Outbound Calling API Sample Request
 
 ```
-curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialout' \
+curl --location --request POST '{{host}}/api/1.1/public/bot/{{botId}}/smartassist/dialout' \
 --header 'Format: application/json' \
 --header 'auth: {{JWT_TOKEN}}' \
 --data-raw '{
