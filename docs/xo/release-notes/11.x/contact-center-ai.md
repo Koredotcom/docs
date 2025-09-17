@@ -1057,7 +1057,7 @@ Administrators can enable this functionality through Agent Settings. By default,
 
 **Enhanced Call Connection**
 
-Calls now connect within 3 seconds when agents click the **Accept** button on their console. The default message, **“Thank you for waiting…”**, will only play after an agent successfully connects to the call. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#call-acceptance-behaviour)
+Calls now connect within 3 seconds when agents click the **Accept** button on their console. The default message, **“Thank you for waiting…”**, will only play after an agent successfully connects to the call. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md)
 
 <font size="4">Configuration</font>
 

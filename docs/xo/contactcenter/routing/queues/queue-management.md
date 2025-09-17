@@ -2,18 +2,8 @@
 
 **Queues** are virtual, temporary waiting rooms that hold and process incoming requests for conversations between agents and customers. These are the holding areas for digital and audio conversations waiting for an agent to be assigned.
 
-All conversations get assigned to queues based on the agent selection logic and skill proficiency match. A conversation can only be in one queue at any given time. Once conversations get assigned to a queue, Contact Center AI assigns them to agents. The agent assignment works based on pre-established rules and criteria, as shown in the illustration below:
-<img src="../images/agent-assignment-criteria.png" alt="Agent_Assignment_Criteria" title="Agent_Assignment_Criteria" style="border: 1px solid gray; zoom:80%;">
-
-Once a conversation comes in, it gets assigned to a queue. Afterward, the next step is to check the routing mode.
-
-The **Simple Routing** mode checks for agent skills and agent availability. After the skill and availability match, an agent gets assigned to the conversation.
-
-The **Advanced Routing** mode checks for preferred agents. If a queue has preferred agents configured, admins can specify a time, after which the routing extends to skill match. If a preferred agent becomes available before the configured time expires, they will have priority over agents selected via skill match.
-
-For the agent to answer the conversation, they must have a required skill attached to their profile. The conversation cannot be assigned to the agent if the skill does not match.
-
-It is possible, however, to define a skill and its expiry period. Contact Center AI will search for an agent with this skill for the configured time. If no agent with this skill is available before the skill expiration period ends, the skill is no longer considered a requirement.
+All conversations get assigned to queues based on the agent selection logic and skill proficiency match. A conversation can only be in one queue at any given time. Once conversations get assigned to a queue, Contact Center AI assigns them to agents. The agent assignment works based on pre-established rules and criteria.
+Once a conversation comes in, it gets assigned to a queue, the next step is to check the routing mode.
 
 ## Queue Routing Modes
 

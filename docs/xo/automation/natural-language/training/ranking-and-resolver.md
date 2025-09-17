@@ -27,7 +27,8 @@ The Ranking & Resolver engine receives the outputs from the above engines and fu
 <ol><li>Navigate to <b>Natural Language</b> > <b>NLU Config</b> > <b>Ranking and Resolver Engine</b>.</li>
 <li>Select <b><i>Version 2</i></b> for <b>Rank and Resolver Version</b>.</li>
 <li>Click <b>Enable Now</b> in the confirmation window.</li>
-Once enabled, you can use Utterance Testing to see your app's behavior with R&R V2. <a href="../../testing/testing-your-bot-with-nlp.md#ranking-and-resolver">Learn more</a>.</ol></p>
+Once enabled, you can use Utterance Testing to see your app's behavior with R&R V2. [Learn more](../../testing/testing-your-bot-with-nlp.md#ranking-and-resolver).</ol></p>
+
 
 ## How Ranking and Resolver Works for Different NLP Engines
 

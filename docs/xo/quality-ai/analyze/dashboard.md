@@ -1,8 +1,8 @@
-# Supervisor Dashboard 
+# Dashboard 
 
 ## Overview
 
-The Supervisor Dashboard (QA Dashboard) provides real-time insights of audit results, agent performance, failure statistics across daily, weekly, and monthly timeframes. By default, the dashboard displays daily reports for all categories, allowing quick insights into quality standards and agent adherence. It supports you to filter daily reports by language, date, and communication channel.
+The Supervisor Dashboard (QA Dashboard) provides real-time insights of audit results, agent performance, and failure statistics across daily, weekly, and monthly timeframes. By default, the dashboard displays daily reports for all categories, allowing quick insights into quality standards and agent adherence. It supports you in filtering daily reports by language, date, and communication channel.
 
 Key features include:
 
@@ -20,12 +20,16 @@ The dashboard enables supervisors to maintain quality standards, identify improv
 
 ### Access Supervisor Dashboard 
 
-Access **Dashboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Dashboard**.  
+Access **Dashboard** by navigating to **Quality AI** > **Analyze** > **Dashboard**.  
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
 
-    To access the Dashboard feature, make sure that Auto QA is enabled, and an evaluation form is set up in the Settings to generate Auto QA scores. Only users with appropriate permissions can access the QA functionality.
+    To access the Dashboard feature, you must enable **Auto QA** and set up an evaluation form in the **Settings** to generate Auto QA scores. Only users with appropriate permissions can access the QA functionality.
+
+## Dashboard Filters
+
+This Dashboard allows you to filter the data by time period and specific channel.
 
 ### Filter Options
 
@@ -220,19 +224,19 @@ The **Agent Leaderboard** displays the following items:
 
 * **Fail Percentage**: Displays the percentage of failures across all interactions.
 
-Click any agent record in the Agent Leaderboard to navigate you to a detailed-view of an agent. See [Agent Leaderboard - Supervisor View](../analyze/Supervisor-view-agent-specific-dashboard.md).
-
 ### View Leaderboard
 
-This **View Leaderboard** or **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations.  
-
-Click the **View Leaderboard** button, which navigates you to the **Agent Leaderboard** page.   
-<img src="../dashboard/images/view-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
-
-For more information, see [Agent Leaderboard](../analyze/agent-leaderboard.md).
+This **View Leaderboard** or **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](../analyze/agent-leaderboard.md).
 
 There are two ways to access the **Agent Dashboard**:
 
-1. Navigate to **Contact Center AI** > **Quality AI** > **Dashboard** > **Agent Leaderboard**. Or,
+1. Navigate to **Quality AI** > **Dashboard** > **Agent Leaderboard**. Or,
 
-2. Navigate to **Contact Center AI** > **Quality AI** > **Agent Leaderboard**. 
+2. Navigate to **Quality AI** > **Agent Leaderboard**. 
+
+Clicking the **View Leaderboard** button takes you to the **Agent Leaderboard** or **Agent Dashboard**. For more information, see [Supervisor View with Agent-Specific Dashboard](../../quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md).  
+<img src="../dashboard/images/view-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
+
+Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. Bookmarked interactions help assign relevant coaching tasks, with the latest interactions shown first. 
+
+For more information, see [Agent Dashboard - Supervisor Evaluation](../../quality-ai/analyze/Agent%20Dashboard%20-%20Supervisor%20View.md).

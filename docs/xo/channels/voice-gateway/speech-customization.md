@@ -517,7 +517,7 @@ The Barge-In feature controls KoreVG behavior in scenarios where the user starts
 
 In this setup, developers do not need to use DTMF or other methods to switch the bot's language. Instead, the bot will automatically detect the language based on the user's utterance.
 
-For example, if a user speaks in English, the conversation will continue in English. If the user switches to Spanish, the language will switch to Spanish. [Learn more](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-virtual-assistant).
+For example, if a user speaks in English, the conversation will continue in English. If the user switches to Spanish, the language will switch to Spanish. [Learn more](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-an-ai-agent).
 
 **Configuration Steps**:
 

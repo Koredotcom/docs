@@ -121,23 +121,22 @@ curl --location 'https://platform.kore.ai/api/public/bot/botID/faqs/bulk?languag
 "faqs": [
 {
 "questionPayload": {
-    "question": "question", //question - GET EXTRACTION QUESTION(https://developer.kore.ai/docs/bots/api-guide/get-extraction-questions-kg/)
+    "question": "question", //question - GET EXTRACTION QUESTION
     "tagsPayload": []
 },
 "answerPayload": [{
-    "text": "", //answer - GET EXTRACTION QUESTION(https://developer.kore.ai/docs/bots/api-guide/get-extraction-questions-kg/)
+    "text": "", //answer - GET EXTRACTION QUESTION
     "type": "basic",
     "channel": "default"
 }],
-"knowledgeTaskId": "645e0aab1ee65252a433d457", // "_id" - GET KNOWLEDGE TASKS(https: //developer.kore.ai/docs/bots/api-guide/get-knowledgetasks-kg/)
+"knowledgeTaskId": "645e0aab1ee65252a433d457", // "_id" - GET KNOWLEDGE TASKS
 "subQuestions": [],
 "responseType": "message",
 "subAnswers": [],
 "streamId": "botId",
-"parent": "f1324935-341d-5b0e-8551-c705a2eb58b9", //"parent" - GET KNOWLEDGE TASKS(https: //developer.kore.ai/docs/bots/api-guide/get-knowledgetasks-kg/)
+"parent": "f1324935-341d-5b0e-8551-c705a2eb58b9", //"parent" - GET KNOWLEDGE TASKS
 "leafterm": "Botname", 
-"qsId": "qna-f6014fd0-f8e8-5cb1-b952-cf9e57091ffc" // "_id" -  GET EXTRACTION QUESTION(https://developer.kore.ai/docs/bots/api-guide/get-extraction-questions-kg/)
-}'
+"qsId": "qna-f6014fd0-f8e8-5cb1-b952-cf9e57091ffc" // "_id" -  GET EXTRACTION QUESTION
 ```
 
 ## Body Parameters

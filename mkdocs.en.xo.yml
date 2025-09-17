@@ -500,13 +500,13 @@ nav:
       - Setup Guide: quality-ai/getting-started/setup-guide.md
       - Best Practices for Auto QA Configuration: quality-ai/getting-started/best-practices-for-auto-qa-config.md      
       - AI-Assisted Manual Audit: quality-ai/ai-assisted-manual-audit.md  
-    - Onboarding:     
-      - Setup Guide: quality-ai/getting-started/quality-ai-onboarding.md    
+    - Onboarding: quality-ai/getting-started/quality-ai-onboarding.md    
     - Analyze:
       - Dashboard:
         - Supervisor Dashboard: quality-ai/analyze/dashboard.md
-        - Supervisor View (Agent-Specific Dashboard): quality-ai/analyze/Supervisor-view-agent-dashboard.md
-        - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md                          
+        - Supervisor View with Agent-Specific Dashboard: quality-ai/analyze/Supervisor-view-agent-specific-dashboard.md
+        - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md
+        - Agent Dashboard - Supervisor View: quality-ai/analyze/my-dashboard-agent-view.md                          
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
       - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md
       - Conversation Mining: 
@@ -516,7 +516,7 @@ nav:
       - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md            
     - Coach:
         - Coaching Assignments: 
-          - Supervisor View: quality-ai/coach/coaching-assignments-supervisor-view.md
+          - Supervisor View: quality-ai/coach/coaching-assignments-supervisor-creation.md
           - Agent View: quality-ai/coach/coaching-assignments-agent-view.md 
         - Coaching Monitor: quality-ai/coach/coaching-monitor.md        
     - Configure:

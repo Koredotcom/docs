@@ -31,7 +31,7 @@ This API is used to get the details of a job. The response of this API varies as
   <tr>
    <td>API Scope
    </td>
-   <td>Answer Insights
+   <td>Answer Generation
    </td>
   </tr>
 </table>

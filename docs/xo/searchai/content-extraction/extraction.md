@@ -122,6 +122,7 @@ Currently, it can only be used for extraction from **PDF files**, uploaded direc
 
    * To enable indexing using visual embeddings, make sure to select the  **image-based embedding model** in the **Vector Configuration** page.
    * **Answer generation is not supported by Kore XO GPT** when extraction is performed using Image-based extraction strategy.
+   * Currently, this strategy is supported for a limited set of languages. Refer to [this](../language-support.md#language-specific-extraction-capabilities) to learn more.
 
 ## Deleting a Strategy
 
