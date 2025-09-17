@@ -44,6 +44,8 @@ Enter a **name** for the rule.
 
 Use the **Condition** section to specify the criteria for triggering the rule. These conditions are formulated based on various types of contextual information and the values assigned to parameters. Specify the relevant context variable in the designated **Select Context** textbox. This feature provides dynamic suggestions, presenting the available variables that can be used to define conditions.
 
+Note that you can also use the **customData** field while using the Search APIs to set up business rules. For example, if the user's location is included in the userContext of the customData field in the API, you can reference it in the Select Context field as customData.userContext.location and set the necessary conditions as required. 
+
 Use the **Outcome** section to specify the actions to be performed when the conditions are met. 
 
 The **Action** field can take the following values:
