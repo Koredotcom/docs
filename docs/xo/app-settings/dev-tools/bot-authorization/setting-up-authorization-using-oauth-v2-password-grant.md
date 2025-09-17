@@ -11,10 +11,10 @@ The oAuth v2 Password grant type authorization method allows apps to exchange a 
 
 
 
-1. The XO Platform redirects the user to a login dialog at the web application.
+1. The Platform redirects the user to a login dialog at the web application.
 2. The user authenticates.
 3. The web application redirects the user back to the XO Platform with an access token.
-4. The XO Platform validates the access token.
+4. The Platform validates the access token.
 5. The access token allows the XO Platform to access a protected resource at the provider, on behalf of the user.
 
 

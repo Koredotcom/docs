@@ -2,7 +2,7 @@
 
 The Platform allows you to design and create feedback surveys for products, services, and overall experiences using out-of-the-box templates on the web and mobile channels. You can configure an AI Agent to launch these surveys at a certain point in a conversation or at the end of a conversation (when the _end-of-conversation_ event is triggered). The **NPS**, **CSAT**, and **Like/Dislike** survey types are currently supported.
 
-** Key Feature Highlights**
+**Key Feature Highlights**
 
 1. The Feedback Module is use-case and channel-agnostic. But by default, it only shows text messages. You can always add additional channel-specific prompts to collect feedback from voice channels.
 2. When a feedback survey is created on the platform, all messages are in text format. The text from the platform gets converted into a voice using the ASR and TTS engines.

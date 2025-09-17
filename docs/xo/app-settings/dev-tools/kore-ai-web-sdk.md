@@ -221,7 +221,7 @@ Both paths provide access to the same customData object that was passed via the 
 ### Passing Mapped Identities
 
 The Web/Mobile SDKs support the passing of mapped identities of the users when they switch from one identity to another while interacting with the app. This process allows the users to continue any ongoing conversation initiated using a previous identity.
-For example, a user may have started the conversation with the app using an anonymous or randomly generated identity. After exchanging a few messages, the user may become an authenticated or known user by logging into your website or any application. At this point, the user’s known identity can be passed to the app from the SDK as part of the ‘[JWT Grant API](https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#About_JWT){:target="_blank"}’ call using the parameter identityToMerge. The Platform uses this information to merge the user identities and allows the user to resume an ongoing conversation using the new known identity.
+For example, a user may have started the conversation with the app using an anonymous or randomly generated identity. After exchanging a few messages, the user may become an authenticated or known user by logging into your website or any application. At this point, the user’s known identity can be passed to the app from the SDK as part of the ‘[JWT Grant API](../../sdk/sdk-security.md#about-jwt){:target="_blank"}’ call using the parameter identityToMerge. The Platform uses this information to merge the user identities and allows the user to resume an ongoing conversation using the new known identity.
 
 ```
 {
