@@ -21,7 +21,7 @@ The dashboard enables supervisors to maintain quality standards, identify improv
 ### Access Supervisor Dashboard 
 
 Access **Dashboard** by navigating to **Quality AI** > **Analyze** > **Dashboard**.  
-<img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
+<img src="../dashboard/images/qm-dashboard.png" alt="Quality AI Dashboard" title="Quality AI Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
 

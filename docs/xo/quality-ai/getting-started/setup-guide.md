@@ -1,6 +1,6 @@
 # Quality AI Setup Guide
 
-Get started on the Quality Management (QM) module: Learn how to set up, configure, and use the QM module.
+Get started on the Quality AI (QM) module: Learn how to set up, configure, and use the QM module.
 
 Follow these steps:
 

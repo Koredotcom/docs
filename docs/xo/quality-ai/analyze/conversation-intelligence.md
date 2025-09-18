@@ -177,7 +177,7 @@ Customer Satisfaction (CSAT) is a widely used metric for measuring and evaluatin
 
 ### Crutch Word Score
 
-This measures how frequently an agent uses crutch words during their speech. These words or phrases are used as fillers by the agents that give them more time to think. Common crutch words are “um,” “uh,” “like,” “you know,” “so,” and “basically.” The crutch word score is calculated for agent utterances and supports multilingual conversations, enhancing detection by identifying subtle crutch words. [Learn more](../configure/langauge-settings.md).
+This measures how frequently an agent uses crutch words during their speech. These words or phrases are used as fillers by the agents that give them more time to think. Common crutch words are “um,” “uh,” “like,” “you know,” “so,” and “basically.” The crutch word score is calculated for agent utterances and supports multilingual conversations, enhancing detection by identifying subtle crutch words. [Learn more](../../quality-ai/configure/language-settings.md).
 
 ## Agent Performance Monitor
 
