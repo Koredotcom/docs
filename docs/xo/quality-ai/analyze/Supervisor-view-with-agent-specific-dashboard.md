@@ -130,7 +130,7 @@ The Coaching Assignments include the following items:
 
     * **Completed**: All interactions clicked through for that assignment.
 
-For more information, see [Coaching Assignments - Supervisor Creation](../../quality-ai/coach/coaching-assignments-supervisor-creation.md).  
+For more information, see [Coaching Assignments - Supervisor View and Creation](../coach/coaching-assignments-supervisor-view-and-creation.md).  
 
 #### Scorecard Trend
 

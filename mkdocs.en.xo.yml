@@ -516,7 +516,7 @@ nav:
       - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md            
     - Coach:
         - Coaching Assignments: 
-          - Supervisor View: quality-ai/coach/coaching-assignments-supervisor-creation.md
+          - Supervisor Evaluation: quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md
           - Agent View: quality-ai/coach/coaching-assignments-agent-view.md 
         - Coaching Monitor: quality-ai/coach/coaching-monitor.md        
     - Configure:
