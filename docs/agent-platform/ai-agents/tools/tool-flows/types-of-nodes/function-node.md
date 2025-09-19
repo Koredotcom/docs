@@ -297,7 +297,6 @@ The next step is to map input arguments of the selected function to static or dy
     <p><ul><li>When double curly braces “<code>{{</code>“ are typed in the value field, suggestions for context objects appear.</li>
     <li>These suggestions list all context objects available for the flow in a list.</li>
     <li>You can also search from the list to select.</li>
-    <li>Click <b>+ Add</b> to add more input arguments and values (key-value pair), and the <b>Delete</b> icon to remove.</li>
     <li>The <b>Add</b> button lets you dynamically pass arguments to your function. The coding language must support additional arguments, and these should be defined at the function parameter level. If the function does not support additional arguments, the operation may fail.</li></ul></p>
     </div>
 
@@ -312,8 +311,8 @@ To test the custom function configuration, follow the steps below:
    
      <img src="../images/click-test-button.png" alt="click test" title="click test" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="2"><li>In the <b>Input</b> panel, enter values to test the code. Configured values appear by default, but you can edit or reset them as needed.</li>  
-<img src="../images/input-panel.png" alt="input panel" title="input panel" style="border: 1px solid gray; zoom:75%;">
+<ol start="2"><li>In the <b>Input</b> panel, enter values to test the code. Configured values appear by default, but you can edit or reset them as needed.  
+    <img src="../images/input-panel.png" alt="input panel" title="input panel" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Click <b>Execute</b> to run the function with the configured input arguments.</li></ol>
 
 
