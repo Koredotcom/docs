@@ -266,17 +266,20 @@ When you select a function, the **Input Arguments** section appears. Arguments a
 
 #### Step 3: Map Input Arguments
 
-The next step is to map input arguments of the selected function to static or dynamic values, as discussed below.
+The next step is to map input arguments of the selected function to static or dynamic values based on the selected data type, as discussed below.
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
-<p>By default, all arguments passed to the function are currently sent as '<i>string</i>'. If your function requires other data types, please handle the necessary conversions within your custom script. Support for input type validation and native data types will be available soon.</p>
+<p>By default, all arguments passed to the function are currently sent as 'string'. If your function requires other data types, please select the required type from the data type dropdown list in the <b>Input Arguments</b> section. The supported types include <i>String</i>, <i>Number</i>, <i>JSON</i>, and <i>Boolean</i>.</p>
 </div>
+
+   <img src="../images/data-type-dropdown.png" alt="select data type" title="select data type" style="border: 1px solid gray; zoom:75%;">
 
 **Key Considerations**
 
 * Input parameters of the function in the script’s main file are automatically detected and displayed as fields in the UI.
-* You can assign either static or dynamic values to the input fields using context variables. Use the format mentioned here for dynamic values.
+* You must select the correct data type for the argument from the dropdown, based on its function definition. If the chosen data type does not match, a data mismatch error will occur.
+* You can assign either static or dynamic values to the input fields using context variables. These values are validated against the selected data type to detect any mismatches. Use the format mentioned here for dynamic values.
 
     **Static values**
 
@@ -286,7 +289,7 @@ The next step is to map input arguments of the selected function to static or dy
 
     **Dynamic Values**
 
-    To map dynamic values, type the context object format and select the appropriate variable(s) from the suggestions, as shown in the example below.
+    To map dynamic values, type the context object format and select the appropriate variable(s) from the suggestions, as shown in the example below. 
     <img src="../images/map-dynamic-values.png" alt="dynamic values" title="dynamic values" style="border: 1px solid gray; zoom:75%;">
 
     <div class="admonition note">
@@ -294,20 +297,13 @@ The next step is to map input arguments of the selected function to static or dy
     <p><ul><li>When double curly braces “<code>{{</code>“ are typed in the value field, suggestions for context objects appear.</li>
     <li>These suggestions list all context objects available for the flow in a list.</li>
     <li>You can also search from the list to select.</li>
-    <li>Click <b>+ Add</b> to add more input arguments and values (key-value pair), and the <b>Delete</b> icon to remove. </li>
-    <img src="../images/add-and-delete.png" alt="add and delete" title="add and delete" style="border: 1px solid gray; zoom:75%;"></ul></p>
+    <li>The <b>Add</b> button lets you dynamically pass arguments to your function. The coding language must support additional arguments, and these should be defined at the function parameter level. If the function does not support additional arguments, the operation may fail.</li></ul></p>
     </div>
 
-    <div class="admonition note">
-    <p class="admonition-title">Note</p>
-    <p>The <b>Add</b> button lets you dynamically pass arguments to your function. If the function doesn't support additional arguments, it will fail.</p>
-    </div>
-
-* Input argument mapping is required for deployment. You can test the function and tool, but can’t deploy until the mapping errors shown below are fixed. 
+* Input argument mapping is required for deployment. You can test the function and tool, but you cannot deploy until the mapping errors shown below are fixed. 
  <img src="../images/input-validation.png" alt="input validation error" title="input validation error" style="border: 1px solid gray; zoom:75%;">
  
 #### Step 4: Test the Script and Function Configuration
-
 
 To test the custom function configuration, follow the steps below:
 
@@ -315,8 +311,7 @@ To test the custom function configuration, follow the steps below:
    
      <img src="../images/click-test-button.png" alt="click test" title="click test" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="2"><li>In the <b>Input</b> panel, enter values to test the code. Configured values appear by default, but you can edit or reset them as needed.</li>  
-<img src="../images/input-panel.png" alt="input panel" title="input panel" style="border: 1px solid gray; zoom:75%;">
+<ol start="2"><li>In the <b>Input</b> panel, enter values to test the code. Configured values appear by default, but you can edit or reset them as needed.</li>
 <li>Click <b>Execute</b> to run the function with the configured input arguments.</li></ol>
 
 
