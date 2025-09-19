@@ -239,4 +239,4 @@ Clicking the **View Leaderboard** button takes you to the **Agent Leaderboard** 
 
 Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. Bookmarked interactions help assign relevant coaching tasks, with the latest interactions shown first. 
 
-For more information, see [Agent Dashboard - Supervisor Evaluation](../../quality-ai/analyze/agent-dashboard-supervisor-evaluation.md).
+For more information, see [Agent Dashboard - Supervisor Evaluation](../analyze/agent-dashboard-supervisor-evaluation.md).
