@@ -42,11 +42,11 @@ Before you configure speech metrics, ensure that:
 
 ## Access Evaluation Metrics
 
-Access **Evaluation Metrics** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics**.
+Access **Evaluation Metrics** by navigating to **Quality AI** > **Configure** > **Evaluation Metrics**.
 
 ## Configure By Speech Metrics
 
-1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
+1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
 2. Click **+ New Evaluation Metric**.
 

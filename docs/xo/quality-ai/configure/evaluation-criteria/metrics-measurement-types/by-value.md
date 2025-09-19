@@ -44,7 +44,7 @@ Make sure that the following GenAI features are enabled:
 
 ## Configure by Value Metrics
 
-1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
+1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
 1. Click **+ New Evaluation Metric**.
 

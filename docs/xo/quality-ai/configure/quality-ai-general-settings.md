@@ -6,7 +6,7 @@ Supervisors or Administrators can enable or disable auto QA scoring of interacti
 
 Additionally, you can activate Conversation Intelligence, which helps ensure adherence to scripts, including mandatory elements like greeting and promotional messages.
 
-Yoc can access the **Quality AI** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Settings** > **Quality AI General Settings**.  
+Yoc can access the **Quality AI** by navigating to **Quality AI** > **Configure** > **Settings** > **Quality AI General Settings**.  
 <img src="../settings/images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
 
 The QA has the following sections:

@@ -14,7 +14,7 @@ The Settings has the following three sections:
 
 This extracts valuable insights from customer interactions across various communication channels. It captures information from spoken and written conversations, matches the information with structured metadata about the interaction, and analyzes emotions and feelings to understand customers' desires, needs, opinions, and expectations.
 
-You can access the **Conversation Intelligence** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Settings** > **Conversation Intelligence**.  
+You can access the **Conversation Intelligence** by navigating to **Quality AI** > **Configure** > **Settings** > **Conversation Intelligence**.  
 <img src="../settings/images/default-settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
 ### Conversation Intelligence Dashboard
