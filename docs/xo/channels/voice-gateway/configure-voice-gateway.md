@@ -359,7 +359,7 @@ Before you can use a language in an APP, you need to enable it on the platform.
 1. Log to AI for Service and click the **Product Switcher**.
 2. Go to **Settings** > **Language Management**.
 3. Click **+ Add Language** and select the languages your AI Agent will support, such as English, Hindi, and Telugu.  
-    <img src="..images/language-management.png" alt="Language Management" title="Language Management" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/language-management.png" alt="Language Management" title="Language Management" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 2: Configure the Flow
 
