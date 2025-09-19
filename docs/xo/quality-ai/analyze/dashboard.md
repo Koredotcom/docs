@@ -234,7 +234,7 @@ There are two ways to access the **Agent Dashboard**:
 
 2. Navigate to **Quality AI** > **Agent Leaderboard**. 
 
-Clicking the **View Leaderboard** button takes you to the **Agent Leaderboard** or **Agent Dashboard**. For more information, see [Supervisor View with Agent-Specific Dashboard](../../quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md).  
+Clicking the **View Leaderboard** button takes you to the **Agent Leaderboard** or **Agent Dashboard**. For more information, see [Supervisor View with Agent-Specific Dashboard](../analyze/supervisor-view-with-agent-specific-dashboard.md).  
 <img src="../dashboard/images/view-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. Bookmarked interactions help assign relevant coaching tasks, with the latest interactions shown first. 
