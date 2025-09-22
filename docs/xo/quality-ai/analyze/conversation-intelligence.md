@@ -13,7 +13,7 @@ The key sections of this dashboard include:
 * **Insights Mining** –  Topic vs. Sentiment Bubble, Keyword Cloud & Emotions
 * **Interaction Details** – Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
 
-Users can access the **Conversation Intelligence** dashboard from **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Intelligence**.  
+Users can access the **Conversation Intelligence** dashboard from **Quality AI** > **Analyze** > **Conversation Intelligence**.  
 
 <img src="../conversation-intelligence/images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
 
@@ -177,7 +177,7 @@ Customer Satisfaction (CSAT) is a widely used metric for measuring and evaluatin
 
 ### Crutch Word Score
 
-This measures how frequently an agent uses crutch words during their speech. These words or phrases are used as fillers by the agents that give them more time to think. Common crutch words are “um,” “uh,” “like,” “you know,” “so,” and “basically.” The crutch word score is calculated for agent utterances and supports multilingual conversations, enhancing detection by identifying subtle crutch words. [Learn more](../configure/langauge-settings.md).
+This measures how frequently an agent uses crutch words during their speech. These words or phrases are used as fillers by the agents that give them more time to think. Common crutch words are “um,” “uh,” “like,” “you know,” “so,” and “basically.” The crutch word score is calculated for agent utterances and supports multilingual conversations, enhancing detection by identifying subtle crutch words. [Learn more](../../quality-ai/configure/language-settings.md).
 
 ## Agent Performance Monitor
 

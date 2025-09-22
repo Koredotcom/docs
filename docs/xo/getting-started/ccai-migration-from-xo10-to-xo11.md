@@ -301,7 +301,6 @@ Roles in Contact Center AI have additional access; for details, refer to [Role M
 | Role Management                        | Moved to Users > Access Controls > Role Management. [Learn more](../user-management/role-management.md#manage-role-and-permissions) |
 | Agent Status                           | Moved to Contact Center AI > Agent Management > Agent Status. [Learn more](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-status-management) |
 | Service Level                          | Moved to Contact Center AI > Performance Management > SLAs & Alerts. [Learn more](../contactcenter/performance-management/slas-and-alerts.md#service-level) |
-| Performance Management Settings        | Moved to Contact Center AI > Performance Management > Settings. [Learn more](../quality-management/configure/quality-ai-general-settings.md) |
 | Channels > Voice                       | Moved to Flows & Channels > Channels > Voice Gateway. [Learn more](../channels/voice-gateway/configure-voice-gateway.md) |
 | Channels > Chat                        | Moved to Flows & Channels > Channels > Digital. [Learn more](../channels/adding-channels-to-your-bot.md) |
 | Channels > Email                       | Moved to Flows & Channels > Channels > Digital. [Learn more](../channels/adding-channels-to-your-bot.md) |

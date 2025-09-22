@@ -134,7 +134,7 @@ The Platform supports three new templates for the web/mobile client as part of t
 
 While configuring the feedback survey, when the user selects a template, it’s available as an override for the web/mobile client in the dialog. The system presents the selected template configured for the survey when collecting feedback from the customer on the web/mobile client. These templates are available as generic templates during feedback survey configuration in the channel template override section.
 
-**NPS**Displays a dialog with a scoring scale from 0-10 for the customer to select. Each score icon appears in a different color, with **0** being the lowest and **10** being the highest rating. This template allows only one score selection by the customer.
+**NPS** Displays a dialog with a scoring scale from 0-10 for the customer to select. Each score icon appears in a different color, with **0** being the lowest and **10** being the highest rating. This template allows only one score selection by the customer.
 
 **Required Parameters**
 

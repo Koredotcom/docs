@@ -504,8 +504,9 @@ nav:
     - Analyze:
       - Dashboard:
         - Supervisor Dashboard: quality-ai/analyze/dashboard.md
-        - Supervisor View (Agent-Specific Dashboard): quality-ai/analyze/Supervisor-view-agent-dashboard.md
-        - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md                          
+        - Supervisor View with Agent-Specific Dashboard: quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md
+        - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md
+        - Agent Dashboard - Supervisor Evaluation: quality-ai/analyze/agent-dashboard-supervisor-evaluation.md                         
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
       - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md
       - Conversation Mining: 
@@ -515,7 +516,7 @@ nav:
       - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md            
     - Coach:
         - Coaching Assignments: 
-          - Supervisor View: quality-ai/coach/coaching-assignments-supervisor-view.md
+          - Supervisor Evaluation: quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md
           - Agent View: quality-ai/coach/coaching-assignments-agent-view.md 
         - Coaching Monitor: quality-ai/coach/coaching-monitor.md        
     - Configure:

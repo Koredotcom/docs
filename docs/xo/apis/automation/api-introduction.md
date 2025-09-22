@@ -101,7 +101,7 @@ Steps to associate API Scopes to a Client App from the Admin Console:
 
 6. Once you select an app, the **Client ID** and **Client Secret** appear. Copy these values.
 
-7. Under the Scopes section, select the appropriate Scopes to allow the client app to access the respective APIs.[Learn more](https://developer.kore.ai/docs/bots/bot-admin/security-control/security-module-overview/#API_Scopes).
+7. Under the Scopes section, select the appropriate Scopes to allow the client app to access the respective APIs.[Learn more](../../administration/security-and-control/api-scopes.md).
 
 8. Click **Save**. The app and associated scopes are listed on the API Scopes page. 
 

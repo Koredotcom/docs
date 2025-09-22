@@ -317,7 +317,7 @@ The By Question metrics features include the following:
   * Reflects the total number of By Question metrics configured in a form.  
   <img src="../ai-assist-manual-edit/images/audit-progress-bar.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
-  #### Omission
+#### Omission
 
 This section highlights instances where the agent failed to follow configured or compliance elements, such as playbook steps or dialog tasks, during the interaction. It specifically identifies:
 
