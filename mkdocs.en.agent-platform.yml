@@ -1,5 +1,5 @@
-site_name: Kore ai Docs
-site_author: Kore ai Content Experience Team
+site_name: Inceptionai Docs
+site_author: Inceptionai Content Experience Team
 docs_dir: 'docs/agent-platform/'
 site_dir: 'site/agent-platform/'
 site_url: https://docs.kore.ai/agent-platform/
@@ -118,21 +118,8 @@ nav:
     - Platform Overview: getting-started/introduction.md
     - Accessing Agent Platform: getting-started/sign-up-sign-in.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
-    - Quick Start Tutorials:
-      - Video Tutorials: 
-        - Product Overview: getting-started/tutorials/agent-platform.md
-        - Create an Agentic App: getting-started/tutorials/create-agentic-app.md
-        - Build a Workflow Tool: getting-started/tutorials/workflow-tool.md
-        - Model Studio: getting-started/tutorials/model-studio.md
-        - Prompt Studio: getting-started/tutorials/prompt-studio.md
-        - Evaluation: getting-started/tutorials/evaluation.md
-        - Build a Code Tool: getting-started/tutorials/build-code-tool.md
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
-    - Business Solutions:
-      - AI for Service: https://docs.kore.ai/xo/home/
-      - AI for Work: https://docs.kore.ai/ai-for-work/home/ 
-      - AI for Process: https://kore.ai/ai-for-process/  
   - AI Agents: 
     - Multi-Agent System: ai-agents/multi-agent-system.md
     - Agentic Apps: ai-agents/agentic-apps/overview.md
