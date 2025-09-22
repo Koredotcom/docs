@@ -39,12 +39,12 @@ Identify instances of agent empathy where customers have expressed negative sent
 
 ### By Value Adherence validation for Quality AI
 
-Validates data adherence by comparing extracted metric values against reference data using multilingual LLM analysis. Performs precise value matching and returns binary adherence scores for each metric.
+Validates data adherence by comparing extracted metric values against reference data using multilingual LLM analysis. Performs precise value matching and returns binary adherence scores for each metric. [Learn more](../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-value.md).
 
 
 ### By Value metric extraction for Quality AI
 
-Extract by value metric from user/AI Agent/human agen messages through Quality AI using LLMs.
+Extract by value metric from user/AI Agent/human agent messages through Quality AI using LLMs. [Learn more](../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-value.md).
 
 
 ### Churn & Escalation Identification
@@ -86,7 +86,8 @@ Utilize LLM to generate similar phrases during the design phase, focusing on sem
 
 ### Sentiment Analysis
 
-Agents will be able to monitor customer sentiment dynamically during active chat conversations. When enabled, this feature displays a sentiment indicator that updates in real-time based on ongoing analysis of the conversation.
+Agents will be able to monitor customer sentiment dynamically during active chat conversations. When enabled, this feature displays a sentiment indicator that updates in real-time based on ongoing analysis of the conversation. [Learn more](../quality-ai/ai-assisted-manual-audit.md).
+
 
 
 ### Topic Modelling
