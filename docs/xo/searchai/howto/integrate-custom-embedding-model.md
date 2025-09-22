@@ -4,6 +4,24 @@ Search AI allows you to connect and use your embedding model, hosted externally 
 
 Using a custom embedding model can help you leverage domain-specific embeddings for improved search relevance or semantic understanding and ensure compliance with data privacy and security requirements. 
 
+## Embedding Model Vector Dimensions for Custom Integrations
+
+When integrating an embedding model, it’s crucial to ensure that it aligns with the supported vector dimensions. Below is a list of the vector sizes that we currently support.
+
+**Supported Vector Sizes**
+
+* 128
+* 256
+* 384
+* 512
+* 768
+* 1024
+* 1028
+* 1536
+* 2048
+* 3072
+
+
 ## How it works
 
 Integrating a custom embedding model involves three main steps:

@@ -112,7 +112,7 @@ The important steps in completing this channel enablement are as follows:
 
     * [Create a WABA (WhatsApp Business Account)](#step-2a-create-a-new-whatsapp-business-account).
     * [Set up the WABA Parameters on the Platform](#step-2b-set-up-the-waba-parameters-on-the-platform).
-    * [Configure the Callback URL/Webhook URL](#step-2-c-configure-the-callback-urlwebhook-url).
+    * [Configure the Callback URL/Webhook URL](#step-2c-configure-the-callback-urlwebhook-url).
 
 3. [Secure the Integration](#step-3-secure-the-integration).
 
@@ -145,7 +145,7 @@ The first step in the WhatsApp Messaging Channel integration is to create a GupS
 To send messages to your GupShup users on the WhatsApp Business Messaging Channel, follow the steps below:
 
 
-### Step 2(a): Create a new WhatsApp Business Account
+### Step 2a: Create a new WhatsApp Business Account
 
 Once you have created a GupShup app, you need to create a **WABA** to set up the integration with a number. To create a WABA, follow the steps below:
 
@@ -164,7 +164,7 @@ Once you have created a GupShup app, you need to create a **WABA** to set up the
 7. Once the account is verified with your _Facebook Business ID_, the **WABA ID**, **Mobile number**, and **Password** are displayed.
 
 
-### Step 2(b): Set up the WABA Parameters on the Platform
+### Step 2b: Set up the WABA Parameters on the Platform
 
 To integrate your GupShup service using the WBM channel to the Platform, follow the steps below:
 
@@ -176,7 +176,7 @@ To integrate your GupShup service using the WBM channel to the Platform, follow 
 
 
 
-### Step 2 (c): Configure the Callback URL/Webhook URL
+### Step 2c: Configure the Callback URL/Webhook URL
 
 To link to your app on the Kore.ai Platform to receive inbound messages/events, you must configure the **Callback/Webhook URL** on your **GupShup WhatsApp Dashboard**.
 

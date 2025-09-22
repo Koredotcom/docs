@@ -266,7 +266,7 @@ table, th, td {
   <tr>
    <td><strong>Parent Intent</strong>
    </td>
-   <td><a href="../../../intelligence/sub-intents-and-follow-up-intents.md" target="_blank">Learn more</a>.
+   <td>An output context is added to the parent intent and an input context of the same name is added to the newly created child intent.
    </td>
    <td>Yes
    </td>
@@ -280,7 +280,7 @@ table, th, td {
    </td>
    <td>The status of the intent or task against which the intent is identified. Possible values include <strong>Configured</strong> or <strong>Published</strong>.
 <br>
-.
+
    </td>
    <td>Yes
    </td>
@@ -307,11 +307,11 @@ table, th, td {
    <td>Displays the individual scores for the following
 <ul>
 
-<li><a href="../../testing-your-bot-with-nlp.md#ml-model" target="_blank">Machine Learning (ML) score</a>
+<li>Machine Learning (ML) score
 
-<li><a href="../../testing-your-bot-with-nlp.md#fm-model" target="_blank">Fundamental Meaning (FM) score</a>
+<li>Fundamental Meaning (FM) score
 
-<li><a href="../../testing-your-bot-with-nlp.md#ranking-and-resolver" target="_blank">Ranking and Resolver (RR) score</a>
+<li>Ranking and Resolver (RR) score
 </li>
 </ul>
    </td>
@@ -325,7 +325,7 @@ table, th, td {
   <tr>
    <td><strong>Entity Name</strong>
    </td>
-   <td>Please refer to Entities in <a href="#navigating-to-the-test-case-details-section">this</a> section..
+   <td>Please refer to Entities in <a href="#navigating-to-the-test-case-details-section">this</a> section.
    </td>
    <td>No
    </td>

@@ -4,6 +4,10 @@
 
 Wallboards enhance the ability to oversee operations efficiently and effectively. Contact Center Administrators and Supervisors can create, edit, and delete the wallboards. Their fixed, high-resolution display ensures that users can access clear and consistent information, suitable for high-definition screens and full-screen viewing.
 
+!!! Note
+
+    Contact Kore Support to enable Wallboards.
+
 ## Launch Wallboard
 
 Steps to launch the wallboard:

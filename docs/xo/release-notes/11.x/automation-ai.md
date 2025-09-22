@@ -12,13 +12,13 @@ This update includes enhancements and bug fixes. The key enhancement included in
 
 **Salesforce MIAW Agent Integration Enhancements**   
 
-AI for Service now offers enhanced Salesforce MIAW integration, providing uninterrupted customer chat sessions even during agent transfers and conferences. Sessions remain active as long as either an agent or the customer is engaged, with the platform respecting Salesforce SSE events for transfers and conferencing. This improvement includes real-time system messages for end-users, clearly indicating when a transfer starts, a new agent joins, or an agent leaves a conference, thereby increasing transparency and ensuring a consistent, seamless support experience. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#internal-agent-transfer-and-conference-handling-in-salesforce-miaw)
+AI for Service now offers enhanced Salesforce MIAW integration, providing uninterrupted customer chat sessions even during agent transfers and conferences. Sessions remain active as long as either an agent or the customer is engaged, with the platform respecting Salesforce SSE events for transfers and conferencing. This improvement includes real-time system messages for end-users, clearly indicating when a transfer starts, a new agent joins, or an agent leaves a conference, thereby increasing transparency and ensuring a consistent, seamless support experience. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#internal-agent-transfer-and-conference-handling)
 
 <font size="4">Service Node</font>  
 
 **New Option to Disable SSL Certificate Validation for API Calls** 
 
-The new Client Certificate Authentication option in the AI Agent allows platform users to define whether client certificate validation is required for individual Service Nodes. For enhanced security and backward compatibility, the option is enabled by default, ensuring stronger protection against unauthorized access while maintaining seamless operation with existing configurations. To support custom API calls that require authentication methods other than the platform-enforced SSL client-certificate validation for OAuth-type authorization profiles, developers can now configure and apply their own custom authentication mechanisms. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#configure-the-node)
+The new Client Certificate Authentication option in the AI Agent allows platform users to define whether client certificate validation is required for individual Service Nodes. This option is enabled by default to ensure enhanced security against unauthorized access while maintaining compatibility with existing configurations. For users using custom API calls that require authentication methods beyond the platform's standard SSL client-certificate validation (such as OAuth-type authorization profiles), this feature allows them to disable certificate validation and implement their own custom authentication mechanisms. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#configure-the-node)
 
 
 <font size="4">NLP</font>  
@@ -1226,7 +1226,7 @@ This feature also helps address the current limitation of system messages availa
 
 **Customize Virtual Assistant’s Theme & Design**
 
-The platform now supports customizing the Virtual Assistant's look and feel with the new Theme and Design feature. This includes changes to welcome text, buttons, colors, chat windows, and sound themes to match their needs. A real-time preview pane shows changes instantly and makes it easy to make any adjustments before deploying the updated design. [Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#ai-agent-theme--design){:target="_blank"}
+The platform now supports customizing the Virtual Assistant's look and feel with the new Theme and Design feature. This includes changes to welcome text, buttons, colors, chat windows, and sound themes to match their needs. A real-time preview pane shows changes instantly and makes it easy to make any adjustments before deploying the updated design. [Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#ai-agent-theme-design){:target="_blank"}
 
 **Enhanced Panels & Widgets**
 

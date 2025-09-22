@@ -26,6 +26,26 @@ The following table displays the features and the supported models.
 
 This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../searchai/answer-configuration.md#answers-generation).
 
+## Enrich Chunks with LLM
+
+This feature helps leverage the capabilities of an external LLM to refine, update, or enrich the chunks extracted from the ingested content. [Learn More](../searchai/workbench/llm-stage.md). 
+
+Note:
+
+* Create a custom prompt to use this feature. 
+* All the chunk fields are available for use in the custom prompt for this feature. Click on View Field Details while adding a Workbench Stage during chunk enrichment process to view the complete list of Chunk Fields.
+
+## Transform Documents with LLM
+
+This feature allows Search AI to leverage external LLM capabilities to enhance or update documents during the extraction process.
+
+[Learn More](../searchai/content-extraction/transformation.md)
+
+Note:
+
+* Create a custom prompt to use this feature. 
+* All the document fields are available for use in the custom prompt for this feature. Click on View Field Details while adding a Transformation Stage during content extraction to view the complete list of Document Fields. 
+
 ## Vector Generation - Image
 
 This feature helps create vector embeddings for image data ingested into the Search AI application When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.

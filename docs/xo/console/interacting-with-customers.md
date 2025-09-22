@@ -1196,3 +1196,7 @@ CSAT surveys can also be triggered in scenarios when there are no active partici
 * Sub-flows (No agents flow/Out of hours flow)
 
 For these scenarios, the CSAT scores are assigned to the interaction.
+
+!!! Note
+
+    CSAT surveys for voice channels apply only to inbound calls where customers contact agents. Support for callbacks and other call types is planned for future releases.

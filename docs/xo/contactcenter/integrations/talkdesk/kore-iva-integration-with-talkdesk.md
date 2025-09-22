@@ -73,7 +73,7 @@ Audio streaming is the primary component for enabling voice automation. It invol
 
 1. Download the [Studio Flow](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/TalkDesk/SmartAssist/VoiceAutomation.json){:target="_blank"}, and then import it into the Talkdesk Studio. [Learn more](https://studio.talkdesk.com/docs/importing-and-exporting-flows#importing-a-flow){:target="_blank"}.
 2. Click the **“Connect to Autopilot Voice**” block within the flow.
-3. Enter the “Voice Stream URL” in the input field created in [Step-3](#step-3-create-a-wss-url).
+3. Enter the “Voice Stream URL” in the input field created in [Step-2](#step-2-create-a-wss-url).
 4. Save and Publish the flow.
 
 ### Step 4: Configure Agent Escalation Node on Talkdesk

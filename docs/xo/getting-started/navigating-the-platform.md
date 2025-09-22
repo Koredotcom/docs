@@ -83,7 +83,7 @@ The left navigation of Products of the XO Platform are as follows.
 #### Common Features
 The left navigation of common features of the XO Platform are as follows.
 
-| User Management | Deploy | Billing | Settings | Marketplace |
-| --- | --- | --- | --- | --- |
+| User Management | Deploy | Billing | Settings |
+| --- | --- | --- | --- |
 | ![image_tooltip](./images/ntp(14).png "image_tooltip") | ![image_tooltip](./images/ntp(15).png "image_tooltip") | ![image_tooltip](./images/ntp(16).png "image_tooltip") | ![image_tooltip](./images/ntp(17).png "image_tooltip") | ![image_tooltip](./images/ntp(18).png "image_tooltip") |
-| [Learn about User Management ](./../user-management/manage-users.md) | [Learn about Deployment](./../deploy/bot-versioning.md) | [Learn about Billing](./../administration/billing.md) | [Learn about Settings](./../app-settings/app-profile.md) | [Learn about Marketplace](./../app-settings/integrations/actions/marketplace.md) |
+| [Learn about User Management ](./../user-management/manage-users.md) | [Learn about Deployment](./../deploy/bot-versioning.md) | [Learn about Billing](./../administration/billing.md) | [Learn about Settings](./../app-settings/app-profile.md) |

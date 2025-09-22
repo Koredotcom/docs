@@ -46,7 +46,7 @@ Before configuring or using Dialog Task metrics, ensure the following:
 
 2. **Access Rights to Configure Evaluation Metrics**
     
-    You must have the appropriate permissions to access **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics**.
+    You must have the appropriate permissions to access **Quality AI** > **Configure** > **Evaluation Metrics**.
 
 3. **Evaluation Forms Should Be Defined Separately**
     
