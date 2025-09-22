@@ -2,8 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - main
-      - dev
+      - prod
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true      
@@ -17,37 +16,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Build EN XO docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.xo.yml
-      - name: Build JA XO docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.ja.xo.yml    
-      - name: Build KO XO docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.ko.xo.yml  
-      - name: Build EN xo docs v10
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.xo_v10.yml  
-      - name: Build EN GALE docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.gale.yml   
-      - name: Build EN EVA docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.eva.yml     
-      - name: Build EN AGENT-PATFORM docs
+      - name: Build EN AGENT-PLATFORM docs
         uses: ./
         with:
           entrypoint: mkdocs
