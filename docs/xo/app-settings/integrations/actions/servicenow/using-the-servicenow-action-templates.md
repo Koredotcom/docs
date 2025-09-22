@@ -440,7 +440,7 @@ Steps to search an incident in ServiceNow:
 
         **Sample Response:**
 
-        Response To large , here one one result item is displayed:
+        Response To large , here one result item is displayed:
 
         ```
         {

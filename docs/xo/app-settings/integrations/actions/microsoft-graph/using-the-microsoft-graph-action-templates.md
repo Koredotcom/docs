@@ -300,7 +300,7 @@ Steps to view all to-do lists in the Microsoft Graph integration:
 <img src="../images/ms-graph-tem-img7.png" alt="List All Todo Lists dialog task is added" title="List All Todo Lists dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
     1. **listAllToDolists** – A user intent to view all to-do lists.
-    2. **listAllToDoListService** – A bot action service to get all the to do lists and send an an email from an external integration. Click the **Plus** icon to expand to view the _listAllToDoListService_ bot action component properties.
+    2. **listAllToDoListService** – A bot action service to get all the to do lists and send an email from an external integration. Click the **Plus** icon to expand to view the _listAllToDoListService_ bot action component properties.
     3. In the Component Properties window, to add one or more responses, scroll down and click **+Add Response**:  
     <img src="../images/ms-graph-tem-img8.png" alt="Add response" title="Add response" style="border: 1px solid gray;zoom:50%;"/>
 
