@@ -98,7 +98,7 @@ When the **JavaScript Rendered** option is enabled, specify the **Crawl Delay fi
 To set a schedule, enter the following:
     * **Date**: The date you want to schedule the first crawl of the web source.
     * **Time**: When you want to schedule the first crawling of the web source. Specify the hours and minutes in a 12-hour format along with the timezone. 
-    * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the  the frequency of recrawling the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
+    * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the frequency of recrawling the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
 
 * **Is this an Authenticated website?** - Enable this field if an authentication mechanism protects the source website. If the website requires authentication, provide relevant information to access the website depending on the authentication method. 
 
