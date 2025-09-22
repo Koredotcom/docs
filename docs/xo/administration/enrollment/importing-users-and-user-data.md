@@ -89,5 +89,5 @@ After you create and import a list of users in your account, you may want to rev
 1. In the **Enrollment** module, on the **Import** page, click _File Based Bulk User Import History_ as shown in the following illustration.  
 <img src="../images/importing-users-and-user-data-img5.png" alt="Click 'File Based Bulk User Import History'" title="Click 'File Based Bulk User Import History'" style="border: 1px solid gray;zoom:70%;"/>
 
-2. In the **File Based Import History** dialog, to view the results of an import, in the **Report** column for the import that you want to view, click Results. The individual user results for the import are displayed in the the **File Based Import Results** dialog as shown in the following illustration.  
+2. In the **File Based Import History** dialog, to view the results of an import, in the **Report** column for the import that you want to view, click Results. The individual user results for the import are displayed in the **File Based Import Results** dialog as shown in the following illustration.  
 <img src="../images/importing-users-and-user-data-img6.png" alt="File Based Import Results" title="File Based Import Results" style="border: 1px solid gray;zoom:70%;"/>

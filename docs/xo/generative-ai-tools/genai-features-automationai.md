@@ -423,7 +423,7 @@ LLM and Generative AI help generate accurate suggestions automatically without c
 
 
 
-1. The user initiates a new standard an AI Agent creation on the the Platform.
+1. The user initiates a new standard an AI Agent creation on the Platform.
 2. The user provides the App Name and selects the following:
     * Purpose 
     * _Standard App_ for **App Type**.

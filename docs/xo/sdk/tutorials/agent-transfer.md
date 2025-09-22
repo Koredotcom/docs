@@ -1,7 +1,7 @@
 
 # BotKit SDK Tutorial – Agent Transfer
 
-This tutorial is an end-to-end walkthrough for setting up and running an instance of the Kore.ai BotKit SDK which is a collection of libraries that you can use for more control of the messages and webhook events for Kore.ai assistants for your web service. For this tutorial, you will use the sample assistant called _Airlines Airlines Travel Planning_ that you can install as a new assistant, import a dialog task for agent transfer, generate authentication tokens, test the assistant using _ngrok_ as a test callback server, and access the agent transfer to a live agent using _LiveChat_.
+This tutorial is an end-to-end walkthrough for setting up and running an instance of the Kore.ai BotKit SDK which is a collection of libraries that you can use for more control of the messages and webhook events for Kore.ai assistants for your web service. For this tutorial, you will use the sample assistant called _Airlines Travel Planning_ that you can install as a new assistant, import a dialog task for agent transfer, generate authentication tokens, test the assistant using _ngrok_ as a test callback server, and access the agent transfer to a live agent using _LiveChat_.
 
 !!!note
     This tutorial may require a newer version of BotSDK files. If the downloaded BotKit SDK files do not contain LiveChat.js and LiveChatAPI.js files, contact support.
@@ -62,7 +62,7 @@ Kore.ai provides ready to use sample assistants that you can install into your i
 To install the Airlines Travel Planning assistant
 
 1. Log on to XO Platform, and then click **New Bot > Start from the Store**.
-2. Point to **Airlines Airlines Travel Planning**, and then click **Install**. The Airlines _Airlines Travel Planning_KORE NAME_Instance# The installed successful_ message is displayed and the sample assistant is added to the left-hand navigation menu.
+2. Point to **Airlines Travel Planning**, and then click **Install**. The Airlines _Airlines Travel Planning_KORE NAME_Instance# The installed successful_ message is displayed and the sample assistant is added to the left-hand navigation menu.
 
 Once the sample assistant is installed, create an **_Agent Transfer_** dialog task. Learn more about the [Dialog Builder](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md) and with the [Agent Transfer node](../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md).
 

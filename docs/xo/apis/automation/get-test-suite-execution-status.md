@@ -113,7 +113,7 @@ No Body parameters are passed.
 
 
 
-* When the request in in progress.
+* When the request in progress.
 
 
 ```json

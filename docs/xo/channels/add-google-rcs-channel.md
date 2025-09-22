@@ -18,7 +18,7 @@ To request access to enable Google RCS Business messaging as a channel
 
 
 
-1. From the XO Platform platform, open the assistant that you want to enable Google RCS Business Messaging.
+1. From the XO Platform, open the assistant that you want to enable Google RCS Business Messaging.
 2. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **RCS Business Messaging**.
 3. Select the **Configurations** tab.
 4. See **Request Access** to _Yes_
