@@ -54,7 +54,7 @@ Before configuring or using Dialog Task metrics, ensure the following:
 
 4. **No Active Dependencies for Deletion**
 
-    * Cannot delete any metrics if if any of the metrics are actively linked to evaluation forms or attributes.
+    * Cannot delete any metrics f any of the metrics are actively linked to evaluation forms or attributes.
 
     * Reassign or remove dependencies before attempting to delete a metric.
 
