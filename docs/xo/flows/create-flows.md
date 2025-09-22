@@ -117,7 +117,7 @@ Enter the Primary and Fallback TTS Configuration.
 
 #### Bot No Input
 
-To handle situations where there are delays in backend operations or unexpected system failures, administrators can configure Bot No Input to to provide users with appropriate responses or cues. This prevents users from experiencing dead air during such occurrences. The following configurations allow pre-programmed instructions for such scenarios.  
+To handle situations where there are delays in backend operations or unexpected system failures, administrators can configure Bot No Input to provide users with appropriate responses or cues. This prevents users from experiencing dead air during such occurrences. The following configurations allow pre-programmed instructions for such scenarios.  
 <img src="../images/bot-no-input.png" alt="Bot No Input Toggle" title="Bot No Input Toggle" style="border: 1px solid gray; zoom:80%;">
 
 * When enabled, the below configurations are applied.
