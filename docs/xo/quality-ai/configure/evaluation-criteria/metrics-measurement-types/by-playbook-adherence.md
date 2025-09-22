@@ -32,7 +32,7 @@ The By Playbook Adherence metric uses automated quality assurance tools to measu
 
 ## Configure By Playbook Adherence Metrics
 
-1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
+1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
 2. Click **+ New Evaluation Metric**.
 

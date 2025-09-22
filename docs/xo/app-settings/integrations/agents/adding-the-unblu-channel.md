@@ -9,7 +9,7 @@ To setup Unblu as a channel, you will need to create an External Integration AI 
 
 ### Step 1: Create a Named Area
 
-Named Areas in Unblu are used to identify the origins of the chat requests from your website. The Kore.ai assistant should be associated with a Named Area to ensure that it responds to users only when the chat has originated from the sections of your website associated with this Named Area. This mapping is optional if you are enabling the Unblu channel for a single kore.ai AI Agent alone. 
+Named Areas in Unblu are used to identify the origins of the chat requests from your website. The Kore.ai assistant should be associated with a Named Area to ensure that it responds to users only when the chat has originated from the sections of your website associated with this Named Area. This mapping is optional if you are enabling the Unblu channel for a single kore.ai Assistant alone. 
 
 1. [Login ](https://latest.demo.unblu.com/){:target="_blank"} to your Unblu Account Administration.
 2. Under the Named Areas module, select the ‘New named area’ option.
@@ -369,7 +369,7 @@ Following is a code example for how to use the above mentioned templates, change
     var unbluMultiChoiceTemplate =  {
         "$_type": "MultichoiceQuestionPostMessageData",
         "type": "MULTICHOICE_QUESTION",
-        "text": "Choose one of the options",
+        "text": "Chooseone of the options",
         "textType": "MARKDOWN",
         "options": [
         {

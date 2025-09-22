@@ -1,6 +1,6 @@
 # Conversation Sources
 
-The Conversation Sources enables Quality AI to ingest voice and chat data from CCAI, Agent AI, and Express within a single app. It allows organizations to collect, process, and analyze conversational data from multiple platforms in a unified quality management framework. This streamlined approach supports key metadata for accurate analysis and simplifies management across diverse systems.
+The Conversation Sources enables Quality AI to ingest voice and chat data from CCAI, Agent AI, and Express within a single app. It allows organizations to collect, process, and analyze conversational data from multiple platforms in a unified quality ai framework. This streamlined approach supports key metadata for accurate analysis and simplifies management across diverse systems.
 
 ## Access Conversation Sources
 

@@ -52,7 +52,7 @@ This API allows you to ingest and index data into the SearchAI application. You 
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="../api-introduction/#generating-the-jwt-token"">How to generate the JWT Token</a>.
+See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -86,7 +86,7 @@ See <a href="../api-introduction/#generating-the-jwt-token"">How to generate the
    </td>
    <td>Required
    </td>
-   <td>The environment URL. For example, <code>https://platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://platform.example.org</code>
    </td>
   </tr>
   <tr>
