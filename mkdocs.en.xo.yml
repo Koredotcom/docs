@@ -50,7 +50,7 @@ plugins:
         'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
         'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
-        'integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
+        'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
 extra:
   version:
     provider: mike

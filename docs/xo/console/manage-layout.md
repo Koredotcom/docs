@@ -283,7 +283,7 @@ The Help icon is located in the top right corner.
 
 Click the help icon to view the following support options.
 
-* [Introduction to Kore.ai AI for Service](https://platform.kore.ai/builder/app/console)
+* [Introduction to AI for Service](https://platform.kore.ai/builder/app/console)
 * [Help & Documentation](https://docs.kore.ai/xo/home/)
 * [Community](https://community.kore.ai/)
 * [What's New in v11.x.x](./../getting-started/whats-new-in-xo-platform.md)
