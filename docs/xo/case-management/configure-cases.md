@@ -467,5 +467,18 @@ To delete the custom priority status of cases:
 
 This section helps in integrating messaging apps to configure for the notifications.
 
-To access case management integrations, navigate to **Contact Center AI > Case Management > Configuration > Priority**.
+To access case management integrations, 
 
+1. Navigate to **Contact Center AI > Case Management > Configuration > Priority** and select **All**. This displays all the apps available to integrate.
+
+<img src="../images/Integration-all.png" alt="Delete Priority" title="Delete Priority" style="border: 1px solid gray; zoom:70%;">
+
+!!! Note
+
+        At present, only Slack is available to integrate.
+
+2. Select the **app > Configurations** and follow the instructions.
+
+<img src="../images/slack-configuration.png" alt="Delete Priority" title="Delete Priority" style="border: 1px solid gray; zoom:70%;">
+
+3. Click **Save**.
