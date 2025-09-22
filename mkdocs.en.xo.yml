@@ -51,6 +51,8 @@ plugins:
         'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
         'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
+        'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
+        'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
 extra:
   version:
     provider: mike
