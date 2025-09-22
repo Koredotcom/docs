@@ -53,7 +53,7 @@ In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for 
 
         <img src="../images/prompt-editor-select-channel.png" alt="Select channel" title="Select channel" style="border:1px solid gray;zoom:70%;">
 
-    5. You can use one of of the several available templates to create/edit your message:
+    5. You can use one of the several available templates to create/edit your message:
         * [**Text**](#plain-text-prompts) - Plain textual message. This template is selected by default.
         * [**Buttons**](#button-prompts) (Not available for Message node) - You can use this template if you want to let the user choose from multiple options. For example, in a Banking app, your prompt can have buttons with captions **Deposit**, **Withdrawl**, **Apply for Credit Card**, **Money Transfer** etc that can be configured to trigger the corresponding task.
         * [**Quick Reply**](#quick-reply-template) (Not available for Message node) - You can use this prompt for quick reply, i.e. a limited option of replies. For example, in a prompt that asks user whether they need any more help, you can have quick reply with options **Yes** and **No**.
