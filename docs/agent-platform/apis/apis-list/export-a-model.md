@@ -14,7 +14,7 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{<em>host</em>}/api/public/models/:{<em>modelId</em>}/export</code>
+   <td><code>https://{host}/api/public/models/:{<em>modelId</em>}/export</code>
    </td>
   </tr>
   <tr>

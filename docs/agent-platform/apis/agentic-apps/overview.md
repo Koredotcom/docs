@@ -146,7 +146,7 @@ Sample Response
             "content": {
                 "auth_profiles": [
                     {
-                        "url": "https://host/r/396c63515671634648357955",
+                        "url": "https://{host}/r/396c63515671634648357955",
                         "idpName": "Google",
                         "isAuthorized": false,
                         "sso_type": "oauth2"
