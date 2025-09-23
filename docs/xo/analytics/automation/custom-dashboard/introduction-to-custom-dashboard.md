@@ -12,7 +12,7 @@ Custom Dashboards are available along with the other out-of-the-box dashboards i
 2. Define suitable Custom Meta Tags to emit these data points in the AI Agents definition. To know how to add custom meta tags to your AI Agents, see here.
 3. Design widgets, preview, and update the dashboard with these widgets.
 
-**To view the Custom Dashboard dashboard, follow the steps**: 
+**To view the Custom Dashboard, follow the steps**: 
 
 1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 <img src="./../images/navigate-to-custom-dashboard.png" alt="Navigate to Custom Dashboard" title="Navigate to Custom Dashboard" style="border: 1px solid gray; zoom:80%;">

@@ -73,7 +73,7 @@ Select the prompt to show on successful form submission. The options are:
 
     !!! Note
     
-        The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes. If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.
+        The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes. If the target node is not present during runtime, the platform presents the error in continuing the conversation, and the task should get discarded.
 
 ### Instance Properties
 

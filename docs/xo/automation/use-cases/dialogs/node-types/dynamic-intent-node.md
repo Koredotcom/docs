@@ -61,7 +61,7 @@ The settings made within this section affect this node across all instances in a
 
 ### Instance Properties
 
-Under the Instance Properties tab, you can configure the instance-specific fields for this Dynamic Intent intent node. These settings are applicable only for this instance and will not affect any other instances of this node.  
+Under the Instance Properties tab, you can configure the instance-specific fields for this Dynamic Intent node. These settings are applicable only for this instance and will not affect any other instances of this node.  
 
 <img src="../images/dynamic-intent-node-img3.png" alt="Dynamic intent node - Instance properties" title="Dynamic intent node - Instance properties" style="border:1px solid gray;zoom:70%;">
 

@@ -13,7 +13,7 @@ You can work with this node like with any other node within Dialog Tasks and can
 1. On reaching the Prompt Node, the platform parses any variable used in the prompt and constructs the request using the Prompt and the Advanced Settings.
 2. An API call is made to the model with the request.
 3. The [response is stored in the context object](#about-responses) as part of the dialog context and can be used to define the transitions or any other part of the app configuration.
-4. The platform exits from the Prompt Node node when a successful response is received, or the defined timeout condition is met.
+4. The platform exits from the Prompt Node when a successful response is received, or the defined timeout condition is met.
 
 
 ## Enable the Node

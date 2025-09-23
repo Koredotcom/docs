@@ -226,17 +226,19 @@ The **Agent Leaderboard** displays the following items:
 
 ### View Leaderboard
 
-This **View Leaderboard** or **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](../analyze/agent-leaderboard.md).
+This **View Leaderboard** or **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](agent-leaderboard.md).
 
 There are two ways to access the **Agent Dashboard**:
 
-1. Navigate to **Quality AI** > **Dashboard** > **Agent Leaderboard**. Or,
+* Navigate to **Quality AI** > **Dashboard** > **Agent Leaderboard**. Or,
 
-2. Navigate to **Quality AI** > **Agent Leaderboard**. 
+* Navigate to **Quality AI** > **Agent Leaderboard**. 
 
-Clicking the **View Leaderboard** button takes you to the **Agent Leaderboard** or **Agent Dashboard**. For more information, see [Supervisor View with Agent-Specific Dashboard](../analyze/supervisor-view-with-agent-specific-dashboard.md).  
+Clicking the **View Leaderboard** button takes you to the **Agent Leaderboard** or **Agent Dashboard**. 
+
 <img src="../dashboard/images/view-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
-Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. Bookmarked interactions help assign relevant coaching tasks, with the latest interactions shown first. 
+Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. Bookmarked interactions help assign relevant coaching tasks, with the latest interactions shown first. For more information, see [Supervisor View with Agent-Specific Dashboard](supervisor-view-agent-specific-dashboard.md)
 
-For more information, see [Agent Dashboard - Supervisor Evaluation](../analyze/agent-dashboard-supervisor-evaluation.md).
+
+For more information, see [Agent Dashboard - Supervisor Evaluation](agent-dashboard-supervisor-evaluation.md).
