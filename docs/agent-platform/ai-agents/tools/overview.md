@@ -42,7 +42,7 @@ Examples:
 
 Workflow Tools can be created either through the Agentic App or directly under the Tools section.
 
-When workflow tools are created under the [Tools](https://agent-platform.kore.ai/tools), they function as universal tools that, once deployed, are accessible across multiple apps. These tools act as templates, and when imported into an app, they generate a local copy that can be further customized without altering the original. Importing is restricted to tools that have been deployed from the Tools library.
+When workflow tools are created under the **Tools** menu, they function as universal tools that, once deployed, are accessible across multiple apps. These tools act as templates, and when imported into an app, they generate a local copy that can be further customized without altering the original. Importing is restricted to tools that have been deployed from the Tools library.
 
 In contrast, when workflow tools are created within the Agentic App, they are scoped exclusively to that app. You can also import a workflow tool from the library into the Agentic App. Any modifications or updates made to these imported tools apply only to the local copy and do not affect the version available in the Tools library. To ensure that changes take effect, the tool must be deployed within the app. 
 

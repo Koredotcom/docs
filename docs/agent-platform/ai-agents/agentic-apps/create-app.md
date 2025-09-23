@@ -28,7 +28,7 @@ Creating an Agentic App broadly consists of the following steps:
     * **AI Model**: Choose an appropriate model and connection for the application.
 
 3. Click **Create App**.  
-Once the app is created, the app **overview** is displayed. Move to the next steps of configuring agents and tools. 
+After the app is created, the app **overview** is displayed. Move to the next steps of configuring agents and tools. 
 
 For a completely configured app, the **Overview** section provides a structured summary of the app, including linked agents, tools, and knowledge bases, organized into four sections for easy navigation and usability.
 
