@@ -19,7 +19,7 @@ To complete the following procedure, you must have already defined a task, such 
 
 
 
-1. In Bot Builder, select the task for the Bot that you want to add a table report link to.  
+1. In App Builder, select the task for the App that you want to add a table report link to.  
 
     !!! Note
     
@@ -35,8 +35,6 @@ To complete the following procedure, you must have already defined a task, such 
 9. Click **Add Column**. The **Column Configuration** dialog is displayed as shown in the following illustration.
 
     <img src="../images/column_configuration.png" alt="column_configuration" title="column_configuration" style="border: 1px solid gray; zoom:100%;">
-
-    <img src="../images/column_configuration_2.png" alt="column_configuration_2" title="column_configuration_2" style="border: 1px solid gray; zoom:100%;">
 
 10. In the **Column Name** field, enter the first column title, for example, _Task_.
 11. In the  **Data Type** field, select one of the following data types for the information displayed in the column:  
