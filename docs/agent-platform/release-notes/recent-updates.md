@@ -1,4 +1,4 @@
-# AI Agent Platform Release Notes
+# Agent Platform Release Notes
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
