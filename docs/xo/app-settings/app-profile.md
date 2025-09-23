@@ -123,7 +123,7 @@ Any edits made to the **App Profile** are auto-saved.
 
 ## Customizing Error Messages
 
-In the Builder, each AI Agent and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai AI Agents and tasks. When you create an AI Agent or a task, you can add or customize error messages for HTTP Status codes in the **Error Messages** section of the AI Agent or task settings. 
+In the Builder, each AI Agent and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai Agents and tasks. When you create an AI Agent or a task, you can add or customize error messages for HTTP Status codes in the **Error Messages** section of the AI Agent or task settings. 
 
 <img src="../images/app-prof-img2-general-settings-error-messages.png" alt="Error Messages" title="Error Messages" style="border: 1px solid gray;zoom:50%;"/>
 

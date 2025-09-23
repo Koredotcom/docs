@@ -12,7 +12,7 @@ A Supervisor has the following types of permissions for the agent scorecards:
 * No access, to edit, and create agent scorecards and attributes
 * Only view access for the existing agent scorecards and attributes.
 
-You can view Agent Scorecards by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Agent Score Cards**.  
+You can view Agent Scorecards by navigating to **Quality AI** > **Configure** > **Agent Score Cards**.  
 <img src="../agent-scorecards/images/agent-scorecard-landing-page.png" alt="Agent Score Card" title="Agent Score Card" style="border: 1px solid gray; zoom:70%;">
 
 ## Create a New Agent Scorecard
@@ -127,7 +127,7 @@ Steps to delete the agent scorecard:
 
 This feature enables the creation of agent attributes by combining existing evaluation metrics. This calculates the Agent Attribute Score using data from evaluation metric results. Agent attributes are specific areas of performance relevant to an agent's role like Professionalism, Product Knowledge, Problem-solving skills, and Customer service skills. 
 
-Users can view **Agent Attributes** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Agent Attributes**. 
+Users can view **Agent Attributes** by navigating to **Quality AI** > **Configure** > **Agent Attributes**. 
 <img src="../agent-scorecards/images/agent-attributes-default-screen.png" alt="Agent Attributes" title="Agent Attributes" style="border: 1px solid gray; zoom:70%;"> 
 
 ## Create a New Agent Attribute

@@ -52,7 +52,7 @@ To import apps or agents into an agentic app, follow these steps.
 ### Key Considerations for Import
 
 * The target application must already exist. 
-* Any existing app configurations will be **overwritten during the import process process**. 
+* Any existing app configurations will be **overwritten during the import process**.
 * The system attempts to import components in the following order: **tools**, **agents**, and then **application configuration**.
 * The config file cannot exceed 5MB in size.
 * If valid, the platform creates the application with all components.

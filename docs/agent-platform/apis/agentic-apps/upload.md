@@ -101,7 +101,7 @@ Uploads a file as an attachment to a session.
 **Example Curl Command**
 
 ```json
-curl --location 'http://<host>/api/v2/apps/{appId}/environments/{envName}/attachments/upload' \
+curl --location 'http://{host}/api/v2/apps/{appId}/environments/{envName}/attachments/upload' \
 --header 'x-api-key: your-x-api-key \
 --form 'file=@"/path/to/file/file.pdf"' \
 --form 'userReference="your-session-reference”' \

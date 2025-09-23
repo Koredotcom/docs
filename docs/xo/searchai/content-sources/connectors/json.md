@@ -172,7 +172,7 @@ Click **Proceed**. This will ingest content from the files into the application.
 
 ![Files](./images/json/files.png "Files")
 
-To add more content to the connector, add JSON Connector again,** select the same source name** as before, and add more files. 
+To add more content to the connector, add JSON Connector again,**select the same source name** as before, and add more files. 
 
 ![Add Files](./images/json/add-files.png "Add Files")
 

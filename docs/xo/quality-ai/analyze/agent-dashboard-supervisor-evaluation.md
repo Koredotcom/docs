@@ -68,29 +68,29 @@ Steps to add coaching assignments:
 6. Under the **Best Responses** (optional), select the best response interactions from other agents to provide the best reference for this coaching assignment using saved bookmarks.   
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-best-responses.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
-!!! Note
+    !!! Note
 
-    You can select more than one bookmark based on the evaluation criteria.    
+        You can select more than one bookmark based on the evaluation criteria.    
  
-    For example, one set of interactions for the support queue and another set of interactions for the best responses to get populated in the selected interactions box.   
-<img src="../agent-leaderboard/images/agent-dashboard-sup-eva-selected-iteractions.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
+        For example, one set of interactions for the support queue and another set of interactions for the best responses to get populated in the selected interactions box.   
+        <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-selected-iteractions.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
-8. Click the **View Interactions** button, and the supervisors can get more insights from the AI-Audit screen related to coaching of the agents, implement training programs, and make informed decisions.  
+7. Click the **View Interactions** button, and the supervisors can get more insights from the AI-Audit screen related to coaching of the agents, implement training programs, and make informed decisions.  
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-added-interactions-audit-view.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
-9. Click the **Add Interactions** button, and the supervisors can choose the best interactions from other agents to provide as a reference for this coaching assignment using saved bookmarks.     
+8. Click the **Add Interactions** button, and the supervisors can choose the best interactions from other agents to provide as a reference for this coaching assignment using saved bookmarks.     
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-add-interactions.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
-10. Choose the required agent interactions, and click the **Add Interaction** button to move the agent coaching references to the **Selected Interactions** box.  
+9. Choose the required agent interactions, and click the **Add Interaction** button to move the agent coaching references to the **Selected Interactions** box.  
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-moving-interactions.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
-11. In the **Feedback**, enter your feedback for better improvement or suggestions.  
+10. In the **Feedback**, enter your feedback for better improvement or suggestions.  
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-feedback.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;"> 
 
-12. Enter **the Action Plan** for the coaching assignment.   
+11. Enter **the Action Plan** for the coaching assignment.   
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-action-plan.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;"> 
 
-13. Provide the input for the **Follow-up Date** chosen for the assignment.   
+12. Provide the input for the **Follow-up Date** chosen for the assignment.   
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-follow-up-date.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
-14. Click **Create** to assign coaching assignments to an agent, which gets populated in the **Agent Dashboard**.
+13. Click **Create** to assign coaching assignments to an agent, which gets populated in the **Agent Dashboard**.

@@ -84,7 +84,7 @@ For more information, see [Managing External Models](../models/external-models/m
         * Providing Leave Balances: Offer accurate and real-time updates on remaining leave entitlements.
         * Cancelling Leave requests: Help users cancel their leave requests
     * Credit Card Assistant: You are an AI-powered Credit card assistant that assists users with credit card-related inquiries and transactions efficiently and accurately. Your responsibilities include:
-        * Credit Card Approval Status: provide updates on the status of of credit card applications. 
+        * Credit Card Approval Status: provide updates on the status of credit card applications. 
         * Outstanding Balance Inquiry: Provide details on the outstanding bills and information on recent transactions. 
         * Bill Payments: Facilitate secure payment of outstanding credit card bills.
     *  Order Manager: You are an AI agent responsible for enabling users to access real-time order updates and manage their orders independently. Key responsibilities are:

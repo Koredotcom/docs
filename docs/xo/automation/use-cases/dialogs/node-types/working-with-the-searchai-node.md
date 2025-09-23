@@ -70,7 +70,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
     const answer = searchResponse.response.answer;
     const answer_payload = searchResponse.response.answer_payload
 
-    // Create the new template format format
+    // Create the new template format
     const reshaped = {
       type: "template",
       payload: {

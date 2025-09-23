@@ -1,4 +1,4 @@
-# AI Agent Platform Release Notes
+# Agent Platform Release Notes
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
@@ -882,11 +882,11 @@ Key benefits
 
 **Voice Integration in Agentic Apps**
 
-The XO Platform and the Agent Platform now support real-time voice interactions through the Kore Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
+The XO Platform and the Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
 
 Key features
 
-* Real-time Voice Streaming: Enables real-time voice interactions when the Kore Voice Gateway is selected as the channel.
+* Real-time Voice Streaming: Enables real-time voice interactions when the Voice Gateway is selected as the channel.
 * Voice Streaming to Users: Supports streaming voice responses to users in real-time based on agent responses.
 * Model and Prompt Selection: Provides options to select supported AI models and prompts specific to voice interactions.
 
@@ -942,7 +942,7 @@ Key capabilities
 
 **Simplified Web SDK Integration**
 
-The Kore-hosted SDK can now be easily integrated into enterprise websites using the new, lightweight Webclient Script. This JavaScript solution eliminates the need for users to leave the enterprise website to access the application, creating a seamless user experience with minimal development.
+The Platform-hosted SDK can now be easily integrated into enterprise websites using the new, lightweight Webclient Script. This JavaScript solution eliminates the need for users to leave the enterprise website to access the application, creating a seamless user experience with minimal development.
 
 Key features
 

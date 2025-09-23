@@ -13,7 +13,7 @@ This process enables users to seamlessly integrate local models into Agent Platf
 
 ### Best Practices
 
-1. **Ensure model compatibility**: When importing an adapter model, always verify that it is compatible with a supported base model. The system informs you that a base model is required, so ensure that you select a base model from the Kore-hosted list before proceeding with the adapter model upload.
+1. **Ensure model compatibility**: When importing an adapter model, always verify that it is compatible with a supported base model. The system informs you that a base model is required, so ensure that you select a base model from the Platform-hosted list before proceeding with the adapter model upload.
 2. **Validate model files before importing**: Always check your model's file extension and format before uploading. The system validates the model file during the import process, so uploading a valid file upfront will prevent unnecessary errors and delays.
 3. **One model at a time**: To avoid conflicts or issues with multiple simultaneous imports, import one model file at a time. Ensure that each model (whether base or adapter) is fully imported and validated before proceeding to the next.
 4. **Monitor import and validation status**: Track the model's status during the import and validation process. If an error occurs, the system provides details about the failure. Use this information to address issues quickly, either by correcting the file or re-uploading a new one.
