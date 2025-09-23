@@ -1,6 +1,6 @@
 # Importing a Model
 
-Agent Platform enables users to import base and adapter model files from their local machines into the platform. For **base** models, users can directly upload model files and import them into Agent Platform for further use. For **adapter** models, users must first select a compatible base model and then upload and import the adapter model file. Once imported, these models become available for deployment within Agent platform.
+Agent Platform enables users to import base and adapter model files from their local machines into the platform. For **base** models, users can directly upload model files and import them into Agent Platform for further use. For **adapter** models, users must first select a compatible base model and then upload and import the adapter model file. Once imported, these models become available for deployment within Agent Platform.
 
 This process enables users to seamlessly integrate local models into Agent Platform, ensuring compatibility and readiness for deployment. It facilitates efficient management and configuration,  just like other open-source models, and streamlines workflows within the platform.
 

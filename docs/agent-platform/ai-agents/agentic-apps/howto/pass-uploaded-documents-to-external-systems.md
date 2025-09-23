@@ -39,7 +39,7 @@ When users upload documents to the agent, the platform stores them and makes the
 
 ## Sample Use Case
 
-A user uploads a document for an insurance claim. The insurance provider requires the document for verification and future reference. In this case, the agent platform sends the URL of the file to the insurance provider, who can download the file and use it as required.  
+A user uploads a document for an insurance claim. The insurance provider requires the document for verification and future reference. In this case, the Agent Platform sends the URL of the file to the insurance provider, who can download the file and use it as required.  
 
 1. User uploads the supporting documents for the insurance claim. 
 2. The assistant uploads the file and stores its metadata along with the downloadable URL in the system memory. 
