@@ -14,7 +14,7 @@ Agentic Evaluation is designed to assess how effectively an agentic application 
 
 ## Accessing Evaluation Studio
 
-1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account and click **Evaluation Studio** under **Agent Platform Modules**.
+1. Log in to your Agent Platform account and click **Evaluation Studio** under **Agent Platform Modules**.
     <img src="../images/evaluation_studio.png" alt="access evaluation studio" title="access evaluation studio" style="border: 1px solid gray; zoom:75%;">
  
 2. On the Evaluation page, click either the Model Evaluation or Agent Evaluation tab to begin.

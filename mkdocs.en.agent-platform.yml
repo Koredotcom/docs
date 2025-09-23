@@ -3,12 +3,12 @@ site_author: Inceptionai Content Experience Team
 docs_dir: 'docs/agent-platform/'
 site_dir: 'site/agent-platform/'
 site_url: https://docs.kore.ai/agent-platform/
-repo_name: Koredotcom/docs
-repo_url: https://github.com/Koredotcom/docs
+repo_name: inceptionai-public/platform-docs
+repo_url: https://github.com/inceptionai-public/platform-docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
-  favicon: images/Kore_logo_new.svg
+  favicon: images/favicon.png
   name: material
   custom_dir: overrides.en.agent-platform
   features:
@@ -111,12 +111,11 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2025 Inceptionai.ai, Inc. - All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
-    - Accessing Agent Platform: getting-started/sign-up-sign-in.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
@@ -208,9 +207,6 @@ nav:
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
-    - Business Solutions:
-      - AI for Service (XO): ai-agents/ai-for-service.md
-      - AI for Work: ai-agents/ai-for-work.md
     - How Tos:
       - Share Contextual Metadata with AI for Service: ai-agents/agentic-apps/howto/share-context-with-AIforService.md
       - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md

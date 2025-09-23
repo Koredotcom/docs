@@ -22,7 +22,7 @@ API keys are typically included in request headers or parameters to validate acc
 
 ## How to Create the API Key?
 
-1. [Login](../getting-started/sign-up-sign-in.md){:target="_blank"} to Agent Platform and [access](../administration/overview.md/#access-settings-console){:target="_blank"} the **Settings** Console.
+1. Login to Agent Platform and [access](../administration/overview.md/#access-settings-console){:target="_blank"} the **Settings** Console.
 
 2. On the left menu, click **Security & Control** -> **API Scopes**.
 

@@ -240,8 +240,6 @@ The Playground now supports voice input, allowing users to interact with agentic
 
 Developers can now leverage enhanced integration with the AI for Service platform by passing metadata, such as channel information or user data, into the Agentic App. This metadata is made available within agent prompts and tools, enabling more contextual and dynamic interactions.
 
-[Learn more :octicons-arrow-right-24:](../ai-agents/ai-for-service.md)
-
 
 <font size="4">No-code & Pro-code Tools</font>
 
