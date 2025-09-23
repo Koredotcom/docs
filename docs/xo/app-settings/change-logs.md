@@ -31,3 +31,7 @@ The Change Logs page includes search and filter functionalities to locate specif
 To download the changes in a CSV format, use the download option. All the details of the changes in the selected timeframe are captured and downloaded to the local machine.
 
 ![Download Logs](./images/download-csv.png "Download logs")
+
+### Related Link
+
+* [Get Change Logs API](../apis/automation/get-change-logs.md)
