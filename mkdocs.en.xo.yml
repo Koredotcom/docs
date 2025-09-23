@@ -581,6 +581,7 @@ nav:
       - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
+      - SDK Fields and Details: agentai/integration/agentai-websdk/sdk-fields-and-details.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
       - View Customized Events: agentai/integration/AgentAI-webSDK/view-customized-events.md
       - My Bot Tab: agentai/integration/AgentAI-webSDK/mybot-tabs.md
