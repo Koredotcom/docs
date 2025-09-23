@@ -285,7 +285,7 @@ The Salesforce MIAW Agent Integration supports agent name display, real-time rea
 
 ### Internal Agent Transfer and Conference Handling
 
-The Platform offers seamless agent transfers and conferencing capabilities within Salesforce MIAM. These features ensure uninterrupted customer support sessions, smooth agent transitions, and real-time updates for end-users. 
+The Platform offers seamless agent transfers and conferencing capabilities within Salesforce MIAW. These features ensure uninterrupted customer support sessions, smooth agent transitions, and real-time updates for end-users. 
  
 * **Session Continuity**: The chat session lifecycle is decoupled from individual agent disconnections, ensuring the session remains active as long as at least one agent or the customer is engaged.  
 * **Seamless Transitions**: The Platform utilizes Salesforce Server-Sent Events (SSE) to handle agent transfers, joins, and exits during transfer and conference scenarios, enabling smooth handoffs between agents.  
