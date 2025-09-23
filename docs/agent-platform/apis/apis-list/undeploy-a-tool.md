@@ -15,7 +15,7 @@ The API response includes the **tool ID** and the **tool undeployment status**. 
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{<em>host</em>}/api/public/tools/:{<em>toolId</em>}/undeploy</code>
+   <td><code>https://{host}/api/public/tools/:{<em>toolId</em>}/undeploy</code>
    </td>
   </tr>
   <tr>

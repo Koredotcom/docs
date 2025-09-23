@@ -19,7 +19,7 @@ To import a tool, follow the steps below:
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{{host}}/api/public/tools/import</code>
+   <td><code>https://{host}/api/public/tools/import</code>
    </td>
   </tr>
   <tr>

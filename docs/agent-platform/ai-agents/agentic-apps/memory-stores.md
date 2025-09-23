@@ -148,9 +148,9 @@ Field-name: name of the field as defined in the schema of the memory store.
 
 ## Accessing Memory Stores from Code Tools
 
-Agentic Apps provide **Memory Stores** to persist data across interactions. These stores can be **read from within prompts and code tools**, but can be **updated or deleted via code tools only**.
+Agentic Apps provide **Memory Stores** to persist data across interactions. These stores can be **read from within prompts, workflow tools, and code tools**, but can be **updated or deleted via code tools or workflow tools**.
 
-* A Memory store can be **referenced in code tools using its technical name only.**
+* A Memory store can be **referenced in tools using its technical name only.**
 * *sessionMeta* cannot be manipulated via code tools. 
 
 ### Supported Languages
@@ -251,7 +251,13 @@ To delete the employee details from the store.
 await memory.delete_content("employee")
 ```
 
+## Accessing Memory Stores from Workflow Tools
 
+Agent Memory can be read, updated, or deleted using the **Function Node** within Workflow Tools. The Function Node supports custom scripts in JavaScript or Python to support dynamic workflows and advanced use cases programmatically.
+
+When working with memory stores, use the technical name of the memory store to ensure proper identification.
+
+For detailed instructions on how to access memory from workflow tools and examples, refer to [this](../tools/tool-flows/types-of-nodes/function-node.md). 
 
 ## Session Meta Memory
 

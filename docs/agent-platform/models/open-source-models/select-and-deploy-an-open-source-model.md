@@ -2,7 +2,7 @@
 # Select and Deploy an Open-Source Model
 
 
-Currently, Agent Platform supports thirty-plus open-source models and provides them as a service. If you select the Kore-hosted model, you can optimize it before deployment.  
+Currently, Agent Platform supports thirty-plus open-source models and provides them as a service. If you select the Platform-hosted model, you can optimize it before deployment.  
    For more information on the list of models supported, see [Supported models](../supported-models.md#supported-open-source-models).
 
 To select and deploy a model, follow these steps:
@@ -12,7 +12,7 @@ To select and deploy a model, follow these steps:
 
 
 2. The **Deploy** dialog is displayed. In the **General details** section:
-    * If you choose **Kore-hosted models**, select the **model** from the dropdown menu. Add a **Description** and provide **tags** to ease the search for the model and click **Next**.
+    * If you choose hosted models, select the **model** from the dropdown menu. Add a **Description** and provide **tags** to ease the search for the model and click **Next**.
     
       <img src="../images/image8.png" alt=" " title=" " style="border: 1px solid gray; zoom:80%;">
 
@@ -29,7 +29,7 @@ To select and deploy a model, follow these steps:
 
     <img src="../images/image7.png" alt=" " title=" " style="border: 1px solid gray; zoom:80%;">
 
-3.Based on the selected Kore-hosted model, the Optimization section is displayed. Choose the optimization option as required and then click **Next**. [Learn more](../open-source-models/model-optimization.md).
+3.Based on the selected Platform-hosted model, the Optimization section is displayed. Choose the optimization option as required and then click **Next**. [Learn more](../open-source-models/model-optimization.md).
 
 * **Skip optimization**: It skips the model optimization.
 * **CTranslate2**: Select Quantization from the dropdown menu if applicable. [Learn more](model-optimization.md#ctranslate2). 

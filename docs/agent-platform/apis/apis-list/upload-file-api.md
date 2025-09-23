@@ -184,7 +184,7 @@ The API initializes the file upload process and returns a <code>session ID</code
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>http://{{host}}/api/public/files/session/start</code>
+   <td><code>http://{host}/api/public/files/session/start</code>
    </td>
   </tr>
   <tr>

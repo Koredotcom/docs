@@ -399,7 +399,7 @@ If debug is enabled, the response has additional information as shown below.
       "content": {
         "auth_profiles": [
           {
-            "url": "https://host/r/396c6351567xxxxx4648357955",
+            "url": "https://{host}/r/396c6351567xxxxx4648357955",
             "idpName": "Google",
             "isAuthorized": false,
             "sso_type": "oauth2"

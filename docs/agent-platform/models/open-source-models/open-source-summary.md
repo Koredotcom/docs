@@ -19,7 +19,7 @@ The models list displays all the open-source models along with the following det
 | **Active Deployments** | Number of deployments that are currently active. |
 | **Deployment Failed** | Number of deployments that failed. |
 | **Ready to Deploy** | Number of deployments that are ready to be deployed. |
-| **Source** | Origin of the model: File (uploaded locally), Kore Hosted, or Hugging Face. |
+| **Source** | Origin of the model: File (uploaded locally), Platform Hosted, or Hugging Face. |
 
 <img src="../images/open_source_models_new.png" alt="Open-source models table" title="Open-source models table" style="border: 1px solid gray; zoom:80%;">
 
