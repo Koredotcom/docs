@@ -28,7 +28,7 @@ The evaluation form includes chosen metrics with customizable weights totaling 1
 
 ## Accessing Evaluation Forms
 
-Access the Evaluation Forms by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms**.    
+Access the Evaluation Forms by navigating to **Quality AI** > **Configure** > **Evaluation Forms**.    
 <img src="../evaluation-criteria/evaluation-forms/images/evaluation-forms.png" alt="Evaluation Forms Tab" title="Evaluation Forms Tab" style="border: 1px solid gray; zoom:80%;">
 
 ## Creating and Configuring Evaluation Forms

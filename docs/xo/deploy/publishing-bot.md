@@ -244,7 +244,7 @@ Every component that impacts end-user interactions or experience goes through th
   <tr>
    <td>Web / Mobile SDK
    </td>
-   <td>The Web / Mobile SDK Configuration configuration in the Published Version gets replaced with the configuration in the In Development version.
+   <td>The Web / Mobile SDK Configuration in the Published Version gets replaced with the configuration in the In Development version.
    </td>
   </tr>
 </table>

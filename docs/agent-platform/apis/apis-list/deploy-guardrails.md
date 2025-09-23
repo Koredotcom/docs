@@ -25,7 +25,7 @@ The API response includes the **model ID** and the **guardrail deployment status
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{<i>host</i>}/api/public/guardrails/deploy</code>
+   <td><code>https://{host}/api/public/guardrails/deploy</code>
    </td>
   </tr>
   <tr>

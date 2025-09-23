@@ -50,7 +50,9 @@ plugins:
         'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
         'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
-        'integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
+        'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
+        'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
+        'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
 extra:
   version:
     provider: mike
@@ -504,9 +506,9 @@ nav:
     - Analyze:
       - Dashboard:
         - Supervisor Dashboard: quality-ai/analyze/dashboard.md
-        - Supervisor View with Agent-Specific Dashboard: quality-ai/analyze/Supervisor-view-agent-specific-dashboard.md
+        - Supervisor View with Agent-Specific Dashboard: quality-ai/analyze/supervisor-view-agent-specific-dashboard.md
         - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md
-        - Agent Dashboard - Supervisor View: quality-ai/analyze/my-dashboard-agent-view.md                          
+        - Agent Dashboard - Supervisor Evaluation: quality-ai/analyze/agent-dashboard-supervisor-evaluation.md                         
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
       - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md
       - Conversation Mining: 
@@ -516,7 +518,7 @@ nav:
       - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md            
     - Coach:
         - Coaching Assignments: 
-          - Supervisor View: quality-ai/coach/coaching-assignments-supervisor-creation.md
+          - Supervisor Evaluation: quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md
           - Agent View: quality-ai/coach/coaching-assignments-agent-view.md 
         - Coaching Monitor: quality-ai/coach/coaching-monitor.md        
     - Configure:

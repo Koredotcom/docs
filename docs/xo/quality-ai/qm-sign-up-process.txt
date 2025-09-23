@@ -1,4 +1,4 @@
-# Quality Management (QM) Sign Up Process  
+# Quality AI Sign Up Process  
 
 ## XO Platform Sign Up
 
@@ -18,6 +18,6 @@ Steps to Sign Up XO Platform:
 
     <img src="../qm signup/images/contact-center-landing-page.png" alt="Contact Center AI" title="Contact Center AI" style="border: 1px solid gray; zoom:70%;">
 
-2. Navigate to Contact **Contact Center AI** > **Quality Management**. The following screen is displayed.
+2. Navigate to Contact **Quality Management**. The following screen is displayed.
 
     <img src="../qm signup/images/qm-landing-page.png" alt="QM Module" title="QM Module" style="border: 1px solid gray; zoom:70%;">

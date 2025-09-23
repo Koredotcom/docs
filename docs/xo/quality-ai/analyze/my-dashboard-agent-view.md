@@ -248,7 +248,7 @@ Filtering options vary based on the agent's access level:
 * **Only Manually Audited with Filtered Interactions**
 
     * **Queues**: Shows only queues that the agent is part of or has access to.  
-    <img src="../agent-dashboard/images/evaluation-my-dashboard-without-filter.png/" alt="Manually Audited Interactions Only" title="Manually Audited Interactions Only" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-dashboard/images/evaluation-my-dashboard-without-filter.png" alt="Manually Audited Interactions Only" title="Manually Audited Interactions Only" style="border: 1px solid gray; zoom:60%;">
 
 * **Manually Audited with Auto QA Scored and Filtered Interactions** 
 

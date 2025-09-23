@@ -2,9 +2,9 @@
 
 The following sections describe how to set up case management, enable features, customize system registration, and validate configuration. 
 
-1. **Sign Up the AI for service (XO11) Platform Platform**
+1. **Sign Up the AI for service (XO11) Platform**
 
-    Login to the AI for service (XO11) Platform Platform registration page and fill out the sign-up form with your email address. After you complete registration, the AI for service (XO11) Platform Platform automatically creates your workspace with default configurations. [Learn more](../getting-started/navigating-the-platform.md){:target="_blank"}.
+    Login to the AI for service (XO11) Platform registration page and fill out the sign-up form with your email address. After you complete registration, the AI for service (XO11) Platform automatically creates your workspace with default configurations. [Learn more](../getting-started/navigating-the-platform.md){:target="_blank"}.
 
 2. **Enable Case Management**
 
@@ -87,7 +87,7 @@ The following sections describe how to set up case management, enable features, 
 
     * Verify that all Case Management system components function correctly in the email channel, from case creation through resolution. 
 
-    * Verify that the Case Management system integrates properly with the email system.
+    * Verify that the Case Management system integrates with the email system.
 
     * Set up an email account for receiving and sending test cases.
 

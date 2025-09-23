@@ -2,7 +2,7 @@
 
 The Fine-Tuned Models tab in the Models section allows you to create, customize, and manage models fine-tuned to your specific use cases.
 
-* **[Create a Model](./create-a-fine-tuned-model.md)**: Fine-tune a Kore-hosted model or import one from Hugging Face. Configure training parameters, datasets, and hardware resources as needed.
+* **[Create a Model](./create-a-fine-tuned-model.md)**: Fine-tune a Platform-hosted model or import one from Hugging Face. Configure training parameters, datasets, and hardware resources as needed.
 * **[Deploy a Model](./deploy-a-fine-tuned-model.md)**: Once fine-tuning is complete, deploy the model within the Agent Platform or externally using the generated API endpoint. You can also fine-tune further on top of an already fine-tuned model.
 
 Once deployed, the model is listed on the Fine-tuned models page, showing its deployment count and other details.

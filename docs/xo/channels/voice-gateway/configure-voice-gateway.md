@@ -342,6 +342,111 @@ The following languages and dialects are supported:
 | English (Kenya)       | English (United Kingdom) |
 | English (New Zealand) | English (United States)  |
 
+## Multi-Language App Setup
+
+This guide details the process for setting up a multilingual App that can switch languages based on the caller's selection. We'll cover the steps for both the **Experience Flow** (how the call is routed) and the **Dialog Flow** (how the AI Agent responds).
+
+### Understanding the Use Case
+
+The primary goal is to let a caller choose their preferred language (for example, by pressing a number on their phone) and have the AI Agent immediately start communicating with them in that language. This ensures a smooth, user-friendly experience from the very first interaction.
+
+Steps to configure a Multilingual App:
+
+### Step 1: Add Languages to Your Platform
+
+Before you can use a language in an APP, you need to enable it on the platform.
+
+1. Log to AI for Service and click the **Product Switcher**.
+2. Go to **Settings** > **Language Management**.
+3. Click **+ Add Language** and select the languages your AI Agent will support, such as English, Hindi, and Telugu.  
+    <img src="../images/language-management.png" alt="Language Management" title="Language Management" style="border: 1px solid gray; zoom:70%;">
+
+### Step 2: Configure the Flow
+
+The Flow is the first part of your journey, where you'll present the caller with language options and then set the chosen language.
+
+#### The DTMF Approach (IVR Menu)
+
+The most common way to let a caller choose a language is through an **Interactive Voice Response (IVR)** menu.
+
+1. Create a new Flow.
+2. After the Start node, drag and drop an [IVR Menu](../../flows/node-types/ivr-menu.md) node.
+3. In the IVR Menu node, create prompts for each language option (for example, "Press 1 for English," "Press 2 for Hindi," "Press 3 for Telugu").  
+    <img src="../images/ivr-menu.png" alt="IVR Menu" title="IVR Menu" style="border: 1px solid gray; zoom:70%;">
+
+4. For each language option, connect the number key (for example, "1") to a new [Script node](../../flows/node-types/script-task.md). This is the key step where the language will be set.  
+    <img src="../images/ivr-digit.png" alt="IVR Digit Input" title="IVR Digit Input" style="border: 1px solid gray; zoom:70%;">
+
+5. For each Script node:
+    * Assign a name, such as 'Set Language to English'.
+    * In the **'Define a Script'** section, add the following code, replacing '&lt;language code>' with the correct lowercase code for that language:
+    * JavaScript
+
+        `agentUtils.setBotLanguage('&lt;language code>');`
+
+        * Example for English: `agentUtils.setBotLanguage("en");`
+        * Example for Hindi: `agentUtils.setBotLanguage("hi");`
+        * Example for Telugu: `agentUtils.setBotLanguage("te");`
+
+    <img src="../images/script-node.png" alt="Script Node" title="Script Node" style="border: 1px solid gray; zoom:70%;">  
+
+!!! Note
+
+    Use two-letter language codes in **lowercase**. For example, use "en", not "EN",  "hi", not "HI", 
+
+6. Connect all nodes to a **Run Automation** node. This will trigger the main part of your AI Agent's logic, the Dialog Flow.
+
+7. Inside the Run Automation node:
+
+    * Under Automation AI options, select Run a specific Dialog.  
+    * Choose the Dialog Flow you've built for your AI Agent.  
+        <img src="../images/run-specific-dialog.png" alt="Run Specific Dialog" title="Run Specific Dialog" style="border: 1px solid gray; zoom:70%;">
+
+    * Configure ‘Agent Transfer’ under ‘Connection Rules’.  
+    * Reference configuration of the entire flow.  
+        <img src="../images/reference-config.png" alt="Reference Config" title="Reference Config" style="border: 1px solid gray; zoom:70%;">
+
+### Step 3: Configure the Dialog Flow
+
+The Dialog Flow is the AI Agent's conversation logic. Ensure the AI Agent's responses are in the correct language.
+
+1. Open the Dialog Flow you connected in the previous step.
+2. The platform allows you to configure different languages within the same flow. Look for a **language selector** on the app header.  
+    <img src="../images/language-selector.png" alt="Language Selector" title="Language Selector" style="border: 1px solid gray; zoom:70%;">
+
+3. Select a language (for example, Hindi) from the dropdown. Now, any text you add to nodes will be associated with this language.
+4. For each node (like a **Message** node or **Entity** node), enter the text in the selected language.
+
+    **Example:** For a Message node, if you've selected Hindi, you'll enter the Hindi text in the "Bot Response" box.  
+    <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:70%;">
+
+5. Repeat this process for every language that the AI Agent supports. Switch the language selector and add the corresponding text for each node. This makes it easy to manage a single flow with all language variations.
+
+#### Advanced Configuration (ASR & TTS)
+
+For more precise control, you can customize the Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) settings for each language.
+
+1. In a specific Dialog Flow node (for example, a Message or Entity node), click the IVR Properties tab.
+2. You can set specific call control parameters that override the default settings. This is useful for:  
+
+* Using a different TTS provider or voice in a particular language.  
+    <img src="../images/tts-provider.png" alt="TTS Provider" title="TTS Provider" style="border: 1px solid gray; zoom:70%;">  
+
+* Choosing a different ASR provider that's better at understanding a particular accent or language.  
+    <img src="../images/asr-provider.png" alt="ASR Provider" title="ASR Provider" style="border: 1px solid gray; zoom:70%;">  
+
+For more details on these advanced settings, refer to the [Call Control Parameters](../voice-gateway/speech-customization.md#supported-call-control-parameters).
+
+### Step 4: Publish and Test
+
+Once the Flow and Dialogs are configured, publish the flows and perform thorough testing. Dial the number and ensure that the language selection works correctly and that the AI Agent responds in the chosen language.
+
+!!! Note
+
+    Double-check that the language codes are in lowercase in the script node and that you've configured both the IVR and the Run Automation nodes correctly.
+
+The multi-lingual behavior can also be achieved with **Automatic Language Detection** based on the caller's speech.
+
 ## Voice Call Properties (Account Level)
 
 This section describes global voice call properties that apply to your entire Voice Gateway setup. Voice call properties are fundamental aspects that define the quality and reliability of communication over Voice Gateway. These properties include End of Task Behavior, Event Configuration, Call Termination Handler, Call Control Parameters, Timeout Prompt, Barge-in, Timeout, and No. of Retries, which collectively determine the user experience during a voice call. Configuring these properties is crucial for ensuring seamless and effective voice communication over network infrastructures.

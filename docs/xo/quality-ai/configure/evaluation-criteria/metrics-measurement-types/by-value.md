@@ -44,7 +44,7 @@ Make sure that the following GenAI features are enabled:
 
 ## Configure by Value Metrics
 
-1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
+1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
 1. Click **+ New Evaluation Metric**.
 
@@ -104,7 +104,7 @@ Make sure that the following GenAI features are enabled:
 
     * **Gen AI-Based Adherence**: This uses a Large Language Model (LLM) to detect trigger intent and evaluate adherence based on contextual understanding (for complex intents, varied expressions, and nuanced conversations).
 
-        * Uses the Zero-shot detection (no training required). [Learn more](https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/?h=zero+shot#zero-shot-model).
+        * Uses the Zero-shot detection (no training required). [Learn more](../automation/natural-language/training/machine-learning-engine.md#zero-shot-model){:target="_blank"}.
 
         * Enter a text **Description** explaining the trigger intent or details behind the adherence metric details.
 

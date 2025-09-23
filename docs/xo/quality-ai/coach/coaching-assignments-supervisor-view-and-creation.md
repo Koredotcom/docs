@@ -1,4 +1,4 @@
-# Coaching Assignments - Supervisor View
+# Coaching Assignments - Supervisor View and Creation
 
 This feature assists supervisors in analyzing agent performance and identifying interactions that need targeted coaching. It provides a view of coaching assignments for a specific agent within the agent dashboard. This shows all the assigned coaching tasks of agents.
 
