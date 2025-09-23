@@ -153,7 +153,7 @@ The metric operates through a **question-driven evaluation process** with two ma
 
     a. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
 
-    b. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Publish](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components):
+    b. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Publish](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components) the following two features:
 
     * **GenAI-based agent answer adherence**
 
