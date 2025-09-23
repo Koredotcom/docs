@@ -206,7 +206,7 @@ This functionality helps users test how effectively their RAG system uses extern
 
     <img src="../../images/input.png" alt="Map input column" title="Map input column" style="border: 1px solid gray; zoom:80%;">
 
-4. **Apply meta filters (Optional)**: Set Meta filters to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. [Learn more](https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters). 
+4. **Apply meta filters (Optional)**: Set Meta filters to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code.
 
 
 5. **Test the connection**: Click **Test** to verify the SearchAI connection. The response from the connection will be displayed in the **Response** tab of the properties panel.

@@ -35,9 +35,7 @@ Extend your current app:
 
 ### Install an app
 
-1. Go to [Agentic Apps](https://agent-platform.kore.ai/apps){:target="_blank"} page or visit the [Marketplace](https://kore.ai/marketplace/){:target="_blank"}.
-
-    <img src="../images/marketplace.png" alt="Access the Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:80%;">
+1. Go to Agentic Apps page or visit the Marketplace.
 
 2. Browse by category and select an app to view its capabilities, associated tools, model compatibility, and language support.
 
@@ -53,7 +51,7 @@ Extend your current app:
 
 ### Enhancing an Existing App
 
-1. Go to [Agentic Apps](https://agent-platform.kore.ai/apps){:target="_blank"}, select an existing app, and choose **Explore Marketplace**.
+1. Go to Agentic Apps, select an existing app, and choose **Explore Marketplace**.
 
     <img src="../images/add-agent.png" alt="Add agent" title="Add agent" style="border: 1px solid gray; zoom:80%;">
 

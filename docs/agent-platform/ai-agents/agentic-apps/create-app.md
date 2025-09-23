@@ -13,7 +13,7 @@ Creating an Agentic App broadly consists of the following steps:
 
 ### Step 1: Create an Agentic App
 
-1. Sign in to the [Agent platform](https://agent-platform.kore.ai/auth/login){:target="_blank"} and go to **Autonomous Agents**.![Create App](images/createapp/home.png "Agentic App Creation")
+1. Sign in to the Agent platform and go to **Autonomous Agents**.![Create App](images/createapp/home.png "Agentic App Creation")
 
 2. Click on the **+New App** on the **Agentic Apps** page. This page also lists the existing apps in the workspace.  
 ![Create App](images/createapp/list-apps.png "Agentic App Creation")

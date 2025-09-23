@@ -85,7 +85,7 @@ If the connection fails with the following message, check and re-enter the corre
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>We support connections through Search AI. You must provide https://platform.kore.ai for the <b>Search AI URL</b> field.</p></div>
+<p>We support connections through Search AI. You must provide the Platform URL for the <b>Search AI URL</b> field.</p></div>
 
 ## Step 3: Add and Configure a DocSearch Node
 

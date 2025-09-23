@@ -49,4 +49,4 @@ As credits are consumed, the dynamic pie chart indicates how much of the availab
 * **Red (Low Credits)**: The icon turns red when less than 25% of credits remain, warning the user to add credits soon to avoid disruption.
 * **Triangle Icon (Credits Exhausted)**: When credits are fully depleted, the icon changes to a triangle (associated with a warning), indicating that no credits are left. Users must add credits to resume services like model deployments or tool runs.
 
-For help with adding credits or managing your account, [contact](https://kore.ai/support/){:target="_blank"} Agent Platform Support.
+For help with adding credits or managing your account, contact Support.

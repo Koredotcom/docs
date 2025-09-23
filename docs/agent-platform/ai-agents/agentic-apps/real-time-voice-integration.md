@@ -25,4 +25,4 @@ Click the settings icon to customize the configuration of the AI model.
     * Silence Duration: Duration of silence before the application considers the user’s message has ended
     * Type: Select the type of voice activity detection to use
 
-When an agentic app is integrated with an XO application through the Automation Node for voice integration, the Voice Gateway utilizes the voice capabilities of the model set up in the agentic app. For more information on integrating XO with the Agent Platform, please refer to [this documentation](https://docs.kore.ai/xo/flows/node-types/automation/#full-autonomy).
+When an agentic app is integrated with an XO application through the Automation Node for voice integration, the Voice Gateway utilizes the voice capabilities of the model set up in the agentic app.
