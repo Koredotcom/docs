@@ -911,7 +911,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Frequent Flier",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.moneychoice.org/wp-content/uploads/2016/01/credit-card-calculator-image.png.jpeg",
+"imageURL": "http://www.moneychoice.org/uploads/2016/01/credit-card-calculator-image.jpeg",
 "id": "c0b05bc3062658ee"
 }
 ]

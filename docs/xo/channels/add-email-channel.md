@@ -168,9 +168,8 @@ Steps to create an email address in the custom domain:
 
     !!! Note
 
-        You can create up to three custom email addresses in a custom domain.  
-
-    <img src="../images/custom-email-created.png" alt="Email Address Created" title="Email Address Created" style="border: 1px solid gray; zoom:80%;">
+        * You can create up to three custom email addresses in a custom domain.  
+        * The platform supports Microsoft domain deployments via Graph API through advanced configuration. This method can be used for Microsoft domain mailboxes.
 
 ### Edit a Custom Domain Email
 

@@ -91,7 +91,7 @@
    </td>
    <td>Specifies the type of token.
    </td>
-   <td>Use “true” for a JWE-generated token and “false” for a JWT-generated token.
+   <td>The flag determines which authentication API to call. Based on that response, the SDK selects the appropriate service endpoint, initializes the socket connection, and routes all subsequent API requests through that endpoint. 
    </td>
   </tr>
   <tr>
