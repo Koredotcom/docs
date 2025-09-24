@@ -392,5 +392,4 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
         }
     ]
 }
-
- ```
+```
