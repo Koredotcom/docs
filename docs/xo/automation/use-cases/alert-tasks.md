@@ -24,7 +24,7 @@ To configure an alert task, you must configure the following settings:
 
 ### General Settings
 
-The first step is to define what the task looks like to the end-user. The General Settings include details such as task name, connection mode, descriptions, and a few advanced settings such as task demo, search keywords, etc.
+The first step is to define what the task looks like to the end-user. The General Settings include details such as task name, connection mode, connection type, and a few advanced settings such as task demo, search keywords, etc.
 
 1. Open the AI Agent in which you want to create the alert task.
 2. Navigate to **Automation > USE CASES > Alert Tasks**.
