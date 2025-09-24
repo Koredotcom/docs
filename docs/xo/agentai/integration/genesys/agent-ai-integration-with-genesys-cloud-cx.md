@@ -26,7 +26,7 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
 <p>
 Create an Interaction Widget in Genesys for Agent AI
    </td>
-   <td><a href="https://platform.kore.ai" target="_blank">Agent AI URL</a>
+   <td><span id="aurl">Agent AI URL</span>
    </td>
    <td>The domain of the Agent AI.
    </td>
@@ -336,7 +336,7 @@ Field Label
   <tr>
    <td>AgentAssist URL
    </td>
-   <td><a href="https://docs.google.com/document/d/12C0gDuwcmZLfl3EQWYw5aMP8euGrmqy1_HtbUBSX3BM/edit#bookmark=id.8jmht6j7t3d">Agent AI URL</a>
+   <td><a href="#aurl">Agent AI URL</a>
    </td>
   </tr>
   <tr>
