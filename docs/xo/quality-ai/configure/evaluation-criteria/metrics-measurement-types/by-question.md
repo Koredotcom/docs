@@ -185,12 +185,12 @@ The metric operates through a **question-driven evaluation process** with two ma
 
     !!! Note
             
-        * Before assessing GenAI-based adherence responses, ensure that the [supported model](../../../../generative-ai-tools/models-library.md/#configure-pre-built-llm-integration){:target="_blank"} and [features](../../../../generative-ai-tools/genai-features.md){:target="_blank"}, including GenAI-based agent answer adherence and customer trigger detection, are enabled for the respective products in the GenAI features section. 
+        * Before assessing GenAI-based adherence responses, ensure that the [Supported models](../../../../generative-ai-tools/genai-features-qualityai.md){:target="_blank"} and [GenAI features](../../../../generative-ai-tools/genai-features.md){:target="_blank"}, including GenAI-based agent answer adherence and customer trigger detection, are enabled for the respective products in the GenAI features section. 
                 
         * No example utterances or similarity thresholds are required; LLMs evaluate adherence contextually using zero-shot prompts.
                 
         * For effective prompts and LLM-based adherence detection, refer to
-        [AutoQA - GenAI By Question Metric Prompting Guide](autoqa-prompting-guide.md){:target="_blank"}.
+        [AutoQA - Prompting Guide](autoqa-prompting-guide.md){:target="_blank"}.
 
     ##### Deterministic Adherence
 
