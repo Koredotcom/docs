@@ -11,9 +11,15 @@ To integrate your Bedrock models, you will need to:
 
 ### Step 1. Setting Up Credentials and Trust Policy (IAM Role and STS)
 
+#### A. Create IAM Role and Configure Trust Policy
+
+To begin, you must create an IAM role in your AWS account that allows Agent platform to securely access Amazon Bedrock models. This role defines permissions and establishes a trust relationship so that the platform can assume the role via AWS STS.
+
+Follow the steps below to configure the IAM role and trust policy:
+
 **1. Create the IAM Role in Your AWS Account**
 
-Create a new IAM role in your AWS account that grants access to invoke Amazon Bedrock models. This role will be assumed by the platform to make Bedrock API calls on your behalf. 
+Create a new IAM role in your AWS account that grants access to invoke Amazon Bedrock models. This role will be assumed by the platform to make Bedrock API calls on your behalf.
 
 You can follow the IAM role creation setup in the [AWS IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html).
 
@@ -71,7 +77,20 @@ For example:
 https://sts.us-east-1.amazonaws.com/
 ```
 
-Ensure the STS region matches the region of your IAM role — **not necessarily the region of the model**. 
+Ensure the STS region matches the region of your IAM role — **not necessarily the region of the model**.
+
+#### B. Raise a Support Ticket to Register your IAM Role
+
+After creating the IAM role in your AWS account, you need to raise a support ticket with Kore.ai to update the trust policy with your IAM Role ARN. This allows the platform to assume the role and invoke Bedrock.
+
+To complete the registration:
+
+1. Raise a support ticket with your IAM role ARN, requesting that it be added to the trust policy.
+2. Wait for confirmation from Support that the role has been registered.
+
+**Note**: Without this step, the platform cannot assume your IAM role. Both your AWS account and Kore.ai’s environment must explicitly trust each other for secure cross-account access.
+
+
 
 ### Step 2. Finding the Right Model ID and Region
 
