@@ -103,7 +103,7 @@ By default, all agents in the selected queues get displayed. In this, all agents
 ## Click-Through Functionality
 
 This describes the functionality of a heatmap interface for tracking agent adherence to specific metrics over a selected date range (selected agent, date range, and adherence status).  
-<img src="./adher-heatmap/images/click-through.png" alt="Click-Through" title="Click-Through" style="border: 1px solid gray; zoom:100%;"> 
+<img src="../adher-heatmap/images/click-through.png" alt="Click-Through" title="Click-Through" style="border: 1px solid gray; zoom:100%;"> 
 
 The clickable date range tiles (each box is a metric) display the interactions for the selected agents, showing the following metrics for each date:  
 
