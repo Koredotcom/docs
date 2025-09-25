@@ -1037,8 +1037,16 @@ Steps to request supervisor assistance:
 
 ## Real Time Sentiment Capture
 
-Agents can view customers' real-time sentiments during digital conversations on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).  
-<img src="../images/console-sentiment.png" alt="Sentiment" title="Sentiment" style="border: 1px solid gray; zoom:80%;">  
+Agents can view customers' real-time sentiments during conversations (Chat, Voice, and Email) on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).
+
+**Chat**:  
+<img src="../images/console-sentiment.png" alt="Chat Sentiment" title="Chat Sentiment" style="border: 1px solid gray; zoom:80%;">  
+
+**Voice**:  
+<img src="../images/sentiment-voice.png" alt="Voice Sentiment" title="Voice Sentiment" style="border: 1px solid gray; zoom:80%;"> 
+
+**Email**:  
+<img src="../images/sentiment-email.png" alt="Email Sentiment" title="Email Sentiment" style="border: 1px solid gray; zoom:80%;"> 
 
 When agents click the sentiment indicator, a graph appears, visually representing emotional fluctuations throughout the interaction. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses promptly, leading to improved empathy and more effective issue resolution. Agents can also customize the graph to focus on specific timeframes or sentiment ranges, allowing deeper analysis when needed.  
 <img src="../images/sentiment-analysis-graph.png" alt="Sentiment Graph" title="Sentiment Graph" style="border: 1px solid gray; zoom:80%;"> 

@@ -70,6 +70,8 @@ To create a campaign when Agentless Dialing Mode is selected:
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
 
+        * Agentless Campaigns can be associated with experience flows that do not have any phone numbers linked.
+
 ### Progressive Dialer
 
 A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.
@@ -264,7 +266,9 @@ Steps to create Voice campaigns:
 
         !!! Note
 
-            Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
+            * Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.  
+
+            * The Caller ID dropdown for all campaigns (Agentless, Preview, and Progressive) displays all phone numbers—SIP or non-SIP—that are registered with this bot and configured as outbound-only or inbound-outbound.
 
 4. Click **Save**. The campaign is created.
 
@@ -386,4 +390,6 @@ When the campaign runs, you can pause or stop it. You can also rerun a completed
 
 !!! Note
 
-    A phone number, queue, and flow must be attached to run a voice campaign.
+    * A phone number, queue, and flow must be attached to run a voice campaign.  
+
+    * For Active, Future-Scheduled, and Paused campaigns, linked phone numbers and experience flows cannot be deleted.
