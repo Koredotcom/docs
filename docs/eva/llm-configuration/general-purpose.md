@@ -1,12 +1,11 @@
 
 # General Purpose
 
+AI for work offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Gemini. You can effortlessly tap into these services' core capabilities using pre-configured prompts and APIs.
 
-AI for work offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. You can effortlessly tap into these services' core capabilities using pre-configured prompts and APIs.
+!!!note
 
-!!!Note
-
-    This document outlines the procedure for configuring OpenAI. Similar steps apply for Azure OpenAI and Anthropic integration.        
+    This document outlines the procedure for configuring OpenAI. Similar steps apply for Azure OpenAI and Gemini integration.        
 
 Steps to configure a pre-built LLM:
 
@@ -45,8 +44,6 @@ Steps to configure a Custom LLM:
 
 ## Embedding models
 
-This feature allows you to connect and configure models for generating embeddings. AI for work supports both pre-built models (OpenAI and Azure OpenAI) and custom LLMs for this purpose.
+This feature allows you to connect and configure models for generating embeddings. AI for work supports both pre-built models (OpenAI, Azure OpenAI, and Gemini) and custom LLMs for this purpose.
 
 The procedure for Integrating Embedding Models is similar to integrating General-purpose LLMs.
-
-<img src="../images/embedding-model.png" alt="embedding-model.png" title="embedding-model.png" style="border: 1px solid gray; zoom:80%;">
