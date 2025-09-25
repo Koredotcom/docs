@@ -10,7 +10,7 @@ This update includes new features and feature enhancement summarized below.
 
 </font></p><font size="4">New Features</font>
 
-**Omni Search (Beta version)**
+**Omni Search (Beta)**
 
 AI for Work now includes **Omni Search**, powered by smart agentic platform. Omni Search replaces basic direct search with a more sophisticated system that understands your account and user context. It delivers more relevant and accurate results by recognizing who you are, what you have access to, and what you typically need.
 
@@ -30,7 +30,7 @@ Agents now maintain two distinct versions, **Draft** and **Published**, ensuring
 
 [Learn more :octicons-arrow-right-24:](../custom-agents/agent-version.md)
 
-**Google Gemini Models**
+**Support for Google Gemini Models**
 
 AI for Work now supports the latest Google Gemini models:
 
