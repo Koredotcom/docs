@@ -142,6 +142,7 @@ nav:
       - Agent Options: custom-agents/agent-options.md
       - Agent Testing: custom-agents/agent-testing.md
       - Agent Creation: custom-agents/agent-creation.md
+      - Agent Version: custom-agents/agent-version.md
       - Alert Task: custom-agents/alert-task.md
       - Notify API: custom-agents/notify-api.md
   - Pre-built Agents:
