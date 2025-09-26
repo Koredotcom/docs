@@ -1,4 +1,4 @@
-# Monitor Queues, Agents, and Interactions
+# Monitor Queues, Agents, Interactions, and Service Levels
 
 To access the **Monitor** section, you must be an _App Owner, App developer, App Tester,_ or _Supervisor_; or have the _Monitor Console –_ permission set to _Yes_. See [Role Management](../user-management/role-management.md#permissions) for more.
 
@@ -557,4 +557,29 @@ Steps to edit a filter:
 2. A Delete Filter message appears. Click **Delete**.  
     <img src="../images/delete-filter-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation message is displayed and the filter is deleted.  
+    A confirmation message is displayed and the filter is deleted.
+
+## Service Levels
+
+This section enables supervisors to  monitor service-level targets based on specific needs.
+
+To monitor service levels, go to Console > Monitor > SERVICE LEVELS.  
+<img src="../images/service-levels-dashboard.png" alt="Service Levels Dashboard" title="Service Levels Dashboard" style="border: 1px solid gray; zoom:80%;">
+
+The dashboard displays the following information:
+
+**Queues**: Name of the Queue for which the service levels are shown..
+
+**Average Speed to Answer (ASA)**: The average time it takes for agents to answer inbound customer contacts (such as calls or chats) after they enter the queue. It measures the responsiveness of the contact center.
+
+**Response Service Level (SL)**: The percentage of inbound customer contacts answered by agents within a predefined threshold time. It reflects how consistently the contact center meets its response time targets.
+
+**Abandonment Rate**: The percentage of inbound customer contacts (calls, chats, or emails) that customers disconnect or leave before reaching an agent or completing self-service.
+
+**Transfer Rate**: The percentage of customer contacts that agents transfer to another agent, department, or queue after initially answering the interaction.
+
+### Filters
+
+Supervisors can create, edit, copy, mark as default, and delete filters to customize the view of service level metrics.
+
+For information on configuring Service Levels, refer to [SLAs & Alerts](../contactcenter/performance-management/slas-and-alerts.md).
