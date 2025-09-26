@@ -15,7 +15,7 @@ The following information is displayed:
 Steps to create a new service level:
 
 1. Click the **+ New Service Level** button in the upper-right corner.  
-    <img src="../images/add-rule.png" alt="Add New Service Level" title="Add NEw Service Level" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/add-rule.png" alt="Add New Service Level" title="Add New Service Level" style="border: 1px solid gray; zoom:70%;">
 
 2. On the New Service Level Rule panel, enter a **Name** and **Description** for the service rule.  
     <img src="../images/sla-name-description.png" alt="SLA Name & Description" title="SLA Name & Description" style="border: 1px solid gray; zoom:70%;">

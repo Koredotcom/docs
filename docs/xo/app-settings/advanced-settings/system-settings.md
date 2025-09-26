@@ -2,8 +2,15 @@
 
 ## Call Recording Control
 
-By default, Contact Center AI records all voice interactions. Contact Center AI admins can disable call recording for all voice interactions.  
-<img src="../images/call-recording-control.png" alt="Call Recording Control" title="Call Recording Control" style="border: 1px solid gray; zoom:70%;">
+By default, Contact Center AI records all voice interactions. Administrators can disable call recording for all voice interactions. 
+
+Steps to disable Call Recording Control:
+
+1. Go to Automation AI > App Settings > Advanced Settings > System Settings > Call Recording Control.  
+<img src="../images/call-recording-control-disabled.png" alt="Call Recording Control" title="Call Recording Control" style="border: 1px solid gray; zoom:70%;">
+
+Turn off the toggle to disable call recording for all voice interactions.
+<img src="../images/call-recording-control.png" alt="Call Recording Control Disabled" title="Call Recording Control Disabled" style="border: 1px solid gray; zoom:70%;">
 
 ## Answer Call on First Bot/AI Agent Response
 
@@ -11,7 +18,7 @@ The feature plays a dial tone to the caller if there is a delay before the AI Ag
 
 Steps to enable Answer Call on First Bot/AI Agent Response:
 
-1. Navigate to Automation AI → App Settings → Advanced Settings → System Settings → Answer Call on First Bot Response.  
+1. Navigate to Automation AI > App Settings > Advanced Settings > System Settings > Answer Call on First Bot Response.  
     <img src="../images/answer-call.png" alt="Answer Call on AI Agent Response" title="Answer Call on AI Agent Response" style="border: 1px solid gray; zoom:70%;">
 
 2. Turn on the toggle to enable the functionality.  
