@@ -96,7 +96,7 @@ Follow these steps to set up a standard custom domain and add an email ID to it.
 1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
 2. Click **+ New Domain** and select **Custom Domain**.
 3. Enter the **Domain Name**. Select the domain type as Standard, and click **Create**.  
-<img src="../images/email-newcustomdomain.png" alt="Standard Custom Domain" title="Standard Custom Domain" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/email-stddomain.png" alt="Standard Custom Domain" title="Standard Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
 4. The domain created a success message is displayed.
 
@@ -226,7 +226,7 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
 2. Click **+ New Domain** and select **Custom Domain**.
 3. Enter the **Domain Name**. Select the domain type Advanced, then click **Create**.  
-<img src="../images/email-newcustomdomain.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/email-advdomain.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
 4. On the verification tab, enter the **DKIM Private Key**, **Selector Name**, and click **Verify Domain**.
 
