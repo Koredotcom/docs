@@ -70,8 +70,6 @@ To create a campaign when Agentless Dialing Mode is selected:
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
 
-        * Agentless Campaigns can be associated with experience flows that do not have any phone numbers linked.
-
 ### Progressive Dialer
 
 A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.
@@ -137,6 +135,10 @@ Dispositions are displayed to the agent when the call ends.
 <img src="../images/disposition-and-notes.png" alt="Disposition & Notes" title="Disposition & Notes" style="border: 1px solid gray; zoom:70%;">
 
 A campaign automatically ends once all numbers are connected. If a call is not connected, the dialing rules, such as retry waiting periods are checked. The number is redialed after all other records have been attempted. The maximum number of attempts for each contact is set. For example, If a contact's max attempt is 1, it won't be retried. If it's 2, the contact is marked as Retry = yes and will be retried as per the configured logic.
+
+!!! Note
+
+    For all voice campaigns (agentless, progressive, and preview), experience flows and caller IDs (phone numbers) are decoupled. The phone number used as the caller ID for a campaign does not need to be linked to the attached experience flow. It can be an independent number or a number associated with a different experience flow. To use [phone numbers](../../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number) or [SIP numbers](../../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup) in a campaign, the Outbound option must be enabled for those numbers. All outbound-enabled numbers appear in the campaign configuration drop-down list.
 
 ### Filters
 

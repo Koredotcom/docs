@@ -468,6 +468,7 @@ nav:
     - Flows:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
+      - Debug Logs: contactcenter/flows-and-routing/debug-logs.md
     - Routing:
       - Contact Center AI Routing: contactcenter/routing/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md

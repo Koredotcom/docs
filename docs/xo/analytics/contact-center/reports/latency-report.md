@@ -76,3 +76,7 @@ To generate a Latency Report:
 | P90 Bot Latency (ms)        | 90th percentile latency for the bot’s response processing, in milliseconds. Shows system responsiveness.  | `120`                     |
 | P90 TTS Latency (ms)        | 90th percentile latency of Text-to-Speech processing, in milliseconds. Represents the time to convert text into audio. | `180`                     |
 | P90 End To End Latency (ms) | 90th percentile overall latency from customer speech to agent/bot reply, in milliseconds. Combines ASR, bot, and TTS processing times. | `600`                     |
+
+#### Related Link
+
+* [Download Latency Report](../interactions.md#exportdownload-recording-transcripts-latency-report-and-events)
