@@ -13,7 +13,7 @@ The email channel offers the following functionalities:
 
 You can use the Kore.ai Email domain or create your custom Email Domain to configure your email addresses.
 
-To configure the email domains, go to **Flows & Channels** > **CHANNELS** > **Digital** > **Email**.  
+To configure the email domains, go to **Flows & Channels** > **Channels** > **Digital** > **Email**.  
 <img src="../images/email-page.png" alt="Email Icon" title="Email Icon" style="border: 1px solid gray; zoom:80%;">
 
 ## Kore.ai Email Domain
@@ -141,14 +141,14 @@ Follow these steps to set up a standard custom domain and add an email ID to it.
 
 Email blocklisting allows admins to specify a list of blocklisted email addresses during email address creation preventing blocking interactions originating from blocklisted email addresses, automations, and subsequent agent transfers are prevented, reducing unnecessary processing, and ensuring that resources are allocated to valid interactions.
 
-##### **Blocklist Verification**
+**Blocklist Verification**
 
 Upon receiving a new interaction, the system checks the incoming email address against the blocklist associated with the receiving email address.
 
 * If a match is found between the incoming email address and the blocklist, any pre-configured automations linked to the receiving email address will be disabled for that specific interaction. Automated agent transfers triggered by the interaction will be prevented, ensuring that blocklisted emails do not initiate further actions within the system.
 * If no match is found, the system will continue with the usual automation processes and agent transfer rules, handling the  interaction normally.
 
-##### **Configure Email Blocklist**
+**Configure Email Blocklist**
 
 Steps to Configure Email Blocklist:
 
@@ -210,22 +210,34 @@ Key enhancements:
 Follow these steps to set up a standard custom domain and add an email ID to it.
 
 
-#### Step 1:  DKIM Generation
+#### Step 1: Generate DKIM
 
-(WIP)
+Generate and Configure DKIM for this domain by providing your own private key. The Private key must use 1024-bit to 2048-bit RSA encryption, and be PEM-encoded. Refer [Generating DKIM keys using OpenSSL](generate-dkim.md) for the steps to generate DKIM keys using OpenSSL. 
+
+1. Generate RSA key pair (2048-bit recommended)
+2. Extract the public key in the proper format
+3. Enter the private key in the DKIM Key field in the Verification screen
+4. Configure public key in DNS
+
 
 
 #### Step 2: DKIM Verification
-
-
 
 1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
 2. Click **+ New Domain** and select **Custom Domain**.
 3. Enter the **Domain Name**. Select the domain type Advanced, then click **Create**.  
 <img src="../images/email-newcustomdomain.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
-4. On the verification tab, enter the **DKIM Private Key**, **Selector Name**, and click Verify Domain.  
-<img src="../images/email-custom-dkim.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
+4. On the verification tab, enter the **DKIM Private Key**, **Selector Name**, and click **Verify Domain**.
+
+
+    A DKIM selector is a string that identifies which DKIM public key to use for signature verification. It's part of the DKIM DNS record structure.
+
+    **DNS Record Format**: <code>[selector]._domainkey.[[domain.com](https://domain.com)]</code>
+
+    **Example**: If your selector is "ses2024" and the domain is "example.com", the DNS record would be: <code>ses2024._domainkey[.example.com](https://.example.com)</code>
+    
+    <img src="../images/email-custom-dkim.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
 5. The Verification in Progress message is displayed.  
 <img src="../images/email-vip.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
@@ -246,6 +258,6 @@ After successful DKIM verification, follow these steps:
 1. On the Email Channel page, click **Complete Configuration** for a domain.  
 <img src="../images/email-custom-config.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **+ New Email ID** to add an email to the domain.
-3. Enter the **Display Name**, **Email ID**, and select the **Usage**.
+2. Click **+ New Email ID** to add an email to the domain. 
+3. Enter the **Display Name**, add the **Email ID**  from which emails have to be forwarded or sent, and select the **Usage**.
 4. Click **Save**. The configuration saved message is displayed.
