@@ -35,6 +35,7 @@ This outlines how adherence metrics are displayed and calculated for a selected 
     * **Dynamic Metrics (By question)**: These metrics apply only when the relevant trigger is detected; if the trigger is missing, the metric is marked as Not Applicable (N/A).
 
 * **Failed Interactions and Fatal Errors**
+
     When an interaction is marked as failed, you find the following two conditions: 
         
     * **Failed Interactions**: Includes all agent interactions that do not meet minimum quality or compliance thresholds. This category encompasses both fatal errors and process failures that cause the interaction to fail. Examples include missed greetings, providing incorrect information, or any compliance breaches.       
