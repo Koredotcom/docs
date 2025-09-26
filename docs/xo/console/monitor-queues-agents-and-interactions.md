@@ -164,6 +164,58 @@ Steps to change the queue for a conversation:
 
 When a call is converted to a voicemail, it can be viewed in the Monitor tab. Supervisors can view voicemails in waiting status and “Assign” to an agent or “Change Queue”.
 
+### Transfer all Calls/Chats/Emails in Agent Queue
+
+Supervisors can transfer or end multiple conversations at once across all supported digital channels, including chat, email, and voice. It improves workload management by allowing bulk actions directly from the Monitor tab. By default, the option is disabled for Agents and Custom roles. Supervisors, Admins, Owners, and App Developers can access the feature when permissions are explicitly granted—role-based permissions control access.
+
+Steps to transfer all Calls/Chats/Emails in Agent Queue:
+
+1. Open the **Monitor** tab.
+2. Select a queue. A panel appears with all active and waiting conversations.
+3. Click the **⋮** menu in the top-right corner of the panel.
+4. Choose one of the following options:
+    * Transfer Conversation
+    * Force Close  
+        <img src="../images/transfer-options (2).png" alt="Transfer Options" title="Transfer Options" style="border: 1px solid gray; zoom:70%;">
+
+#### Transfer Conversations
+
+1. Selecting Transfer Conversations activates multi-selection mode.
+2. Select one or more conversations. An option to select all or clear the selection is available.  
+    <img src="../images/select-conversations.png" alt="Select Conversations" title="Select Conversations" style="border: 1px solid gray; zoom:70%;">
+
+!!! Note
+
+    At least one conversation must be selected to proceed.
+
+3. A bottom action bar appears, displaying a **"Transfer"** button.
+4. From the queue dropdown, choose a destination queue.  
+    <img src="../images/select-queue (2).png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
+5. Click **Transfer**. The selected conversations are reassigned to the chosen queue. \
+    <img src="../images/transfer.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:70%;">
+
+#### Force Close
+
+1. Selecting Force Close activates multi-selection mode.
+2. Select one or more conversations.
+
+!!! Note
+
+    At least one conversation must be selected to proceed.
+
+3. A bottom action bar appears, displaying a Force Close button.
+4. Click **Force Close**.  
+    <img src="../images/force-close.png" alt="Forece Close" title="Force Close" style="border: 1px solid gray; zoom:70%;">
+5. A confirmation pop-up is displayed. Click **Confirm**. The selected conversations are closed across their respective channels.  
+    <img src="../images/confirm-close.png" alt="Confirm Close" title="Confirm Close" style="border: 1px solid gray; zoom:70%;">
+
+#### Post-Action Behavior
+
+After completing the transfer or end actions, the interface:
+
+* Exits selection mode.  
+* Updates the conversation list.  
+
 ## Agents
 
 You can check agent details and monitor and intervene in ongoing conversations. The agents in this section are restricted to those assigned to the same queues as you. A list of conversations currently being handled by the agents is displayed with parameters such as state, load, first response, average response, AHT, etc.

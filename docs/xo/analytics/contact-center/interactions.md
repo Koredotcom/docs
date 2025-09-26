@@ -417,7 +417,7 @@ The file format of the downloaded file is .flac across all operating systems, in
     
         * If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
 
-A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#call-recording-control).  
+A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../app-settings/advanced-settings/system-settings.md#call-recording-control).  
 <img src="../images/recording-disabled.png" alt="No Recording Available" title="No Recording Available" style="border: 1px solid gray; zoom:80%;">  
 
 List of recording status and messages:
