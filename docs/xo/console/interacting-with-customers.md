@@ -626,6 +626,26 @@ These settings can be configured from [Agent settings](../contactcenter/agent-an
 **Reply and Reply All**: Agents can click **Reply** to open a response window addressed only to the most recent sender. Clicking **Reply All** opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.  
 <img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
 
+**Resend Emails**: The Email Resend feature allows agents and supervisors to resend email interactions directly from the Agent Console. It supports two scenarios:
+
+* Resending the same email content to the same recipient, including formatting and attachments.
+* Editing the email before resending, which can include adding missed information, correcting errors, or attaching additional files.
+
+Re-sent emails are linked to the original interaction for audit and traceability, ensuring agents maintain consistent and accurate communication with customers.
+
+Steps to resend an email:
+
+1. Open the email interaction.
+2. Click the **Resend** button.  
+    <img src="../images/resend-email.png" alt="Resend Email" title="Resend Email" style="border: 1px solid gray; zoom:70%;">
+
+    The email composer opens with the recipient details and original email content prefilled. (Optional) Update the email content.
+3. Click **Send**.  
+    <img src="../images/resend-email.png" alt="Resend Button" title="Resend Button" style="border: 1px solid gray; zoom:70%;">
+
+    * The re-sent email is sent as a new interaction but linked to the original interaction.  
+    * The interaction log marks the message as **Resent** for clarity.
+
 **Arrival Summary**: Every email conversation begins with an Arrival summary once an agent accepts it. For more information about the arrival summary, refer to [Arrival Summary](#arrival-summary).  
 <img src="../images/email-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
 
