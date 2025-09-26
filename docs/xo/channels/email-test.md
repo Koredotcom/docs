@@ -212,12 +212,12 @@ Follow these steps to set up a standard custom domain and add an email ID to it.
 
 #### Step 1: Generate DKIM
 
-Generate and Configure DKIM for this domain by providing your own private key. The Private key must use 1024-bit to 2048-bit RSA encryption, and be PEM-encoded. Refer [Generating DKIM keys using OpenSSL](generate-dkim.md) for the steps to generate DKIM keys using OpenSSL. 
+Generate and Configure DKIM for this domain by providing your own private key. The Private key must use 1024-bit to 2048-bit RSA encryption, and be PEM-encoded. Refer [Generating DKIM keys using OpenSSL](generate-dkim.md). 
 
-1. Generate RSA key pair (2048-bit recommended)
-2. Extract the public key in the proper format
-3. Enter the private key in the DKIM Key field in the Verification screen
-4. Configure public key in DNS
+1. Generate RSA key pair (2048-bit recommended).
+2. Extract the public key in the proper format.
+3. Enter the private key in the DKIM Key field in the Verification screen.
+4. Configure public key in DNS.
 
 
 
@@ -233,9 +233,9 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 
     A DKIM selector is a string that identifies which DKIM public key to use for signature verification. It's part of the DKIM DNS record structure.
 
-    **DNS Record Format**: <code>[selector]._domainkey.[[domain.com](https://domain.com)]</code>
+    **DNS Record Format**: <code>[selector]._domainkey.[[domain.com](https://domain.com)]</code>.
 
-    **Example**: If your selector is "ses2024" and the domain is "example.com", the DNS record would be: <code>ses2024._domainkey[.example.com](https://.example.com)</code>
+    **Example**: If your selector is "ses2024" and the domain is "example.com", the DNS record would be: <code>ses2024._domainkey[.example.com](https://.example.com)</code>.
     
     <img src="../images/email-custom-dkim.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
@@ -261,3 +261,10 @@ After successful DKIM verification, follow these steps:
 2. Click **+ New Email ID** to add an email to the domain. 
 3. Enter the **Display Name**, add the **Email ID**  from which emails have to be forwarded or sent, and select the **Usage**.
 4. Click **Save**. The configuration saved message is displayed.
+
+
+#### Step 4: Link the Email ID to a Flow
+ 
+
+1. Go to **Flows & Channels** > **Start Flows** > **Edit**.
+2. Select a configured email address in a flow to route an incoming conversation.

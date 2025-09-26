@@ -6,7 +6,7 @@
 **Prerequisites**
 
 
-***OpenSSL**: You'll need OpenSSL installed on your system (Linux, macOS, or Windows, using Git Bash or a similar terminal emulator). Most Linux distributions and macOS come with OpenSSL pre-installed.
+**OpenSSL**: You'll need OpenSSL installed on your system (Linux, macOS, or Windows, using Git Bash or a similar terminal emulator). Most Linux distributions and macOS come with OpenSSL pre-installed.
 
 
 ### Steps to Generate DKIM Keys:
