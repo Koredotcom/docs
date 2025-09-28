@@ -568,7 +568,7 @@ To monitor service levels, go to Console > Monitor > SERVICE LEVELS.
 
 The dashboard displays the following information:
 
-**Queues**: Name of the Queue for which the service levels are shown..
+**Queues**: Name of the Queue for which the service levels are shown.
 
 **Average Speed to Answer (ASA)**: The average time it takes for agents to answer inbound customer contacts (such as calls or chats) after they enter the queue. It measures the responsiveness of the contact center.
 

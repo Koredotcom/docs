@@ -3,10 +3,10 @@
 SLAs and Alerts targets establish the acceptable threshold for key performance indicators, such as Average Speed to Answer, Response Service Level, Abandonment Rate, and Transfer Rate, for interactions, including voice calls and chats.
 
 Administrators can access service levels by going to **Contact Center AI** > **PERFORMANCE MANAGEMENT** > **SLAs & Alerts**.  
-<img src="../images/sla-page.png" alt="SLAs & Alerts Tab" title="SLAs & Alerts Tab" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/sla-alerts-page.png" alt="SLAs & Alerts Tab" title="SLAs & Alerts Tab" style="border: 1px solid gray; zoom:70%;">
 
 The following information is displayed:  
-<img src="../images/information.png" alt="Information" title="Information" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/dashboard-information.png" alt="Information" title="Information" style="border: 1px solid gray; zoom:70%;">
 
 ## Service Level
 
