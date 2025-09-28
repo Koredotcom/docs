@@ -117,6 +117,7 @@ Steps to export conversation data/transcripts:
             `notifySttLatency = true`  
             `vadEnable = true`  
             `vadVendor = silero`
+
 3. A status message is displayed at the start of the export. On completion, the file is downloaded.
 
 Steps to Preview and Download Events:
