@@ -8,6 +8,8 @@ Administrators can access service levels by going to **Contact Center AI** > **P
 The following information is displayed:  
 <img src="../images/dashboard-information.png" alt="Information" title="Information" style="border: 1px solid gray; zoom:70%;">
 
+For more information about Service Levels, refer to [Service Levels](../../console/monitor-queues-agents-and-interactions.md#service-levels).
+
 ## Service Level
 
 ### Create a New Service Level
@@ -199,5 +201,3 @@ Steps to delete a General Alert:
     <img src="../images/confirm-alert-delete.png" alt="Confirm Delete Alert" title="Confirm Delete Alert" style="border: 1px solid gray; zoom:70%;">
 
     A confirmation message is displayed, and the alert is deleted.
-
-For more information about Service Levels, refer to [Service Levels](../../console/monitor-queues-agents-and-interactions.md#service-levels).
