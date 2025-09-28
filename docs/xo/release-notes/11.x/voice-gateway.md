@@ -16,7 +16,7 @@ When Eleven Labs TTS is selected in the Voice Name widget, a note now appears: �
 
 <font size="4">Call Control Parameters</font>
 
-**Enhanced Alternate Language Support in Call Control**
+**Enhanced Alternate Language Support in Call Control Parameters**
 
 The node.alternate call control parameter supports additional parameters, including ttsLabel, in addition to the existing language and voiceName fields. This allows switching both ASR and TTS providers per language—for example, using ElevenLabs for English and Deepgram for Spanish—improving multilingual call control flexibility. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/speech-customization.md#common-asr-parameters)
 
