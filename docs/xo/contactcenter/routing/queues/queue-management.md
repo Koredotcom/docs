@@ -7,7 +7,7 @@ Once a conversation comes in, it gets assigned to a queue, the next step is to c
 
 ## Queue Routing Modes
 
-All conversations will get assigned to queues as they come in. This process is based on two Routing modes, as described below.
+All conversations will get assigned to queues as they come in. This process is based on three Routing modes, as described below.
 
 **Standard Routing**
 
@@ -18,6 +18,70 @@ All conversations will get assigned to queues as they come in. This process is b
 
 * In this case, the conversation first routes to a preferred agent.
 * For each new conversation, Contact Center AI checks preferred agents (if any) for availability. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check is expanded to the full agent list, and skills are matched to select the best available agent (according to the Simple Routing Mode).
+
+**Conditional Group Routing (CGR)**
+
+* Conditional Group Routing (CGR) is a dynamic routing method that expands the pool of available agents by sharing agents across different queues within the same division.  
+* Administrators can configure rules that determine when and how agents are shared between queues. Rules are based on Key Performance Indicators (KPIs), such as Estimated Wait Time (EWT) and Average Handle Time (AHT), as well as agent availability.
+
+    The goal of CGR is to optimize agent utilization and reduce customer wait times while maintaining service levels across all queues.
+
+**Configuration**
+
+CGR is configured at the queue level for queues containing a single channel type.
+
+Administrators can configure CGR rules in the routing settings of a queue by turning on the toggle.  
+<img src="../images/cgr-toggle.png" alt="Enable CGR" title="Enable CGR" style="border: 1px solid gray; zoom:80%;">
+
+Each rule can include:
+
+* **KPIs** – EWT and AHT (with flexibility to add more KPIs in the future).  
+    <img src="../images/options.png" alt="Options" title="Options" style="border: 1px solid gray; zoom:80%;">
+* **Agent Availability** – Evaluates whether agents in shared groups can take on additional interactions.
+* **Wait Periods** – Defines how long to wait before moving to the next rule if no agent is available.  
+    <img src="../images/cgr.png" alt="CGR" title="CGR" style="border: 1px solid gray; zoom:80%;">
+
+**Rule Sequence**
+
+* Rules are evaluated sequentially.  
+* If a rule condition is met, all agents in the associated group are marked as available.  
+* If a rule condition is not met, the group is deactivated, and the next rule is evaluated.  
+* After the last rule, if no assignment is made, the interaction waits until it is assigned.  
+
+**Example**: Share Group A from Queue X
+
+* **Condition**: Estimated Wait Time (EWT) for Queue Y > 120 seconds
+* **Wait Period**: 30 seconds
+* **Action**: Include all available agents from Group A in Queue X to handle interactions in Queue Y
+* **Effect**:
+
+    * If EWT exceeds 120 seconds, agents from Group A are temporarily added to the available pool for Queue Y.  
+    * If an interaction remains unassigned after 30 seconds, the system evaluates the next rule.  
+    * Once the rule conditions no longer apply, Group A is deactivated for new interactions and previous waiting interactions, unless they still meet the rule criteria.
+
+**Agent Pool Expansion**
+
+* The system dynamically expands the agent pool by including eligible agents from shared groups.  
+* Expansion occurs incrementally, based on rule evaluation.  
+* Agents are added when demand increases in the original queue.
+
+**Agent Selection**
+
+Agents added through CGR should share similar skills with the original queue agents to maintain service quality.
+
+**How it Works**
+
+1. A new interaction enters a queue with CGR enabled.
+2. The system evaluates the first configured rule in real time.
+    * If the rule is met, agents in the associated group are added to the available pool.  
+    * If not, the group is deactivated, and the next rule is evaluated.
+3. If no agent is assigned within the rule’s wait period, the system moves to the next rule.
+4. Once all rules are evaluated:
+    * If agents are available, the interaction is assigned.  
+    * If not, the interaction remains in the queue until an agent becomes available.
+5. When agent availability changes:
+    * If a group becomes unavailable for a new interaction, it also becomes unavailable for waiting interactions.
+    * If a group becomes available for a new interaction, it also becomes available for waiting interactions.
 
 ## The Queues Live Board
 

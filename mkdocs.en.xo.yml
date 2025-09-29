@@ -463,9 +463,12 @@ nav:
           - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
           - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
           - Wrap-up Code Prediction: contactcenter/configurations/settings/wrap-up-code-prediction.md
+    - Performace Management:
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
+    - Flows:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
+      - Debug Logs: contactcenter/flows-and-routing/debug-logs.md
     - Routing:
       - Contact Center AI Routing: contactcenter/routing/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md

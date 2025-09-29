@@ -91,28 +91,33 @@ How it works:
 
     The search button works in two ways. By default, OpenSearch is enabled in all standard cloud deployments. However, if your deployment is on a Virtual Private Cloud (VPC) or a custom setup, OpenSearch must be deployed separately. When OpenSearch is available, you can use the full search functionality. If OpenSearch is not deployed, the search button still works, but it supports only ID-based searches.
 
-## Export Conversation Data, Transcripts, and Events
+## Export/Download Recording, Transcripts, Latency Report, and Events
 
-The conversation data, transcripts, and events can be exported as a .csv file and downloaded to the local system from the dashboard.
+The recording, transcripts, latency reports, and events can be downloaded to the local system from the dashboard.
 
 Steps to export conversation data/transcripts:
 
 1. Select the conversations and click **Export**.  
     <img src="../images/export-button.png" alt="Export Button" title="Export Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Export Conversation Data**, **Export Transcripts**, or **Export Events** as required.  
-    <img src="../images/export-fields.png" alt="Export Options" title="Export Options" style="border: 1px solid gray; zoom:80%;">  
+2. Click **Export Conversation Data**, **Export Transcripts**, or **Export Events** as required.
 
     or
 
-    Click **Download Recording** or **Download Transcript**.  
-    <img src="../images/download-options.png" alt="Download Options" title="Download Options" style="border: 1px solid gray; zoom:80%;"> 
+    Click **Download Recording**, **Download Transcript**, or **Download Latency Report**. The transcript and latency report are downloaded in .csv format.  
+    <img src="../images/download-options-interactions.png" alt="Download Options" title="Download Options" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! Notes
 
         * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
         * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
         * Up to 25 conversations can be selected for exporting transcripts. If a selected conversation does not have a transcript or the system cannot retrieve one, a blank transcript is exported for that conversation.
+        * A status message is displayed at the start of the export. On completion, the file is downloaded.
+        * The following [Call Control Parameters](../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters) must be added to view the Download Latency Report option.
+            `notifySttLatency = true`  
+            `vadEnable = true`  
+            `vadVendor = silero`
+
 3. A status message is displayed at the start of the export. On completion, the file is downloaded.
 
 Steps to Preview and Download Events:
@@ -417,7 +422,7 @@ The file format of the downloaded file is .flac across all operating systems, in
     
         * If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
 
-A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#call-recording-control).  
+A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../app-settings/advanced-settings/system-settings.md#call-recording-control).  
 <img src="../images/recording-disabled.png" alt="No Recording Available" title="No Recording Available" style="border: 1px solid gray; zoom:80%;">  
 
 List of recording status and messages:

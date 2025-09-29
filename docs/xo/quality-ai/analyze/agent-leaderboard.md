@@ -2,7 +2,9 @@
 
 This **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations. This helps to make informed decisions regarding incentives and coaching assignments. Based on the agents' rankings, it becomes easier to identify and assign coaching assignments to lower-performing agents as needed. The agent leaderboard widget shows all the agents across queues and channels with a functionality to sort across all the columns.
 
-You can view **Agent Leaderboard** by navigating to **Quality AI** > **Analyze** > **Agent Leaderboard**.   
+## Access Agent Leaderboard 
+
+Access the **Agent Leaderboard** by navigating to **Quality AI** > **Analyze** > **Agent Leaderboard**.   
 <img src="../agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 !!! Note
@@ -12,11 +14,16 @@ You can view **Agent Leaderboard** by navigating to **Quality AI** > **Analyze**
 The Agent Leaderboard widget shows all the agents across queues and channels which includes the following list of items:
 
 * **Agents**: This shows the agent name and queue that it belongs to.
+
 * **Agent Score Card**: This shows the number of scorecards assigned to the agent and the agent score (across all queues).
 
 !!! Note
 
     If you designate a scorecard as the default, the system shows the score based on that default scorecard. If no default scorecard is set, then the system displays the average score from all applicable scorecards for that agent.
+
+## Detailed Metrics 
+
+The **Agent Leaderboard** shows all the agents across queues and channels, which includes the following list of items:
 
 * **Total Interactions**: This shows the total number of interactions or overall number of interactions terminated by the agent during the specified time period.
 

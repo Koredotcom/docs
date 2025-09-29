@@ -258,6 +258,39 @@ To configure the responses under a new layout for a particular conversation, fol
 The below example illustrates the process of adding the Agent AI widget to a layout.  
 <img src="../images/adding-agent-ai.gif" alt="Adding Agent AI" title="Adding Agent AI" style="border: 1px solid gray; zoom:80%;">
 
+## Maximize External Widgets
+
+The Maximize Widgets enables agents to expand external widgets in the Agent Console to a larger, resizable view. This allows agents to access complete information within widgets without changing the fixed layout configured by supervisors or admins. Only external widgets display the maximize option.
+
+Steps to maximize external widgets:
+
+1. In the Agent Console, a Maximize icon is displayed on the external widgets.
+2. Click the **Maximize** icon.  
+    <img src="../images/expand-icon.png" alt="Maximize Icon" title="Maximize Icon" style="border: 1px solid gray; zoom:80%;">
+
+    * The widget expands in a full page view within the application interface (not a separate browser window).
+    * The expanded widget occupies the screen and remains resizable and draggable within console boundaries.  
+        <img src="../images/expanded-window.png" alt="Expanded Window" title="Expanded Window" style="border: 1px solid gray; zoom:80%;"> 
+
+    * A disclaimer appears in the original widget tab: *“The information in this widget is now displayed in the expanded view.”*  
+        <img src="../images/widget-disclaimer.png" alt="Disclaimer" title="Disclaimer" style="border: 1px solid gray; zoom:80%;">
+
+3. Interact with the widget in the expanded view.
+
+!!! Note
+
+    Only one widget can be maximized at a time.
+
+4. Move between conversations if required.
+
+    * The maximized widget automatically refreshes and displays content relevant to the selected conversation.  
+    * For widgets not tied to conversations, the widget remains accessible in the expanded view regardless of conversation context.
+
+5. Close or minimize the expanded widget.
+
+    * The widget returns to its original position and size in the layout.  
+    * The overlay is dismissed when the agent closes or minimizes it manually.
+
 ### Refresh a Widget
 
 The widget level refresh button enables customers to refresh a widget individually, eliminating the need to refresh the entire application, and keeping widgets up-to-date with the latest information.
