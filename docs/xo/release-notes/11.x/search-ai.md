@@ -2,6 +2,18 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.18.0 September 27, 2025
+
+<u>Minor Release</U>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Dynamic Custom Data Support in Business Rules</font>
+
+Users can now define Business Rules using the customData fields sent via the Advanced Search API. During rule evaluation, context.customData is dynamically bound to the API payload, enabling rules to adapt in real-time based on the provided custom data.
+
+<hr>
+
 ## v11.17.1 September 15, 2025
 
 <u>Patch Release</U>
