@@ -81,7 +81,7 @@ Steps to publish email addresses in the Kore domain:
 
 Custom email domains add a professional look to your email communications, reinforcing your brand identity with every email you send or receive. Customers perceive custom emails as established, reliable, and legitimate compared to generic email addresses. For example, You can create [help@yourbusiness.com](mailto:help@yourbusiness.com), a branded email account that uses your organization's domain name instead of a domain provided by Kore.ai. You can add up to three email accounts (sales@, support@, info@, etc.) in each custom domain for better organization and delegation. By granting access to your email accounts within the domain, you can track the activity of the configured accounts, respond to incoming emails, and send outbound emails. Email filters are less likely to flag emails from custom domains as spam, ensuring better deliverability rates.
 
-Currently, we support two types of custom domains: Standard and Advanced. The Standard plan has a limitation of 5 domains and 5 emails per domain, whereas the Advanced plan supports 50 domains and 50 emails per domain.
+Currently, we support two types of custom domains: Standard and Advanced. The Standard has a limitation of 5 domains and 5 emails per domain, whereas the Advanced supports 50 domains and 50 emails per domain.
 
 
 ### Standard Custom Domain
