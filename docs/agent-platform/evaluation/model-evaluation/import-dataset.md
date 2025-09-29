@@ -93,7 +93,7 @@ After running the prompt, the following additional options are available:
 
 Evaluation Studio offers the ability to run an API, enabling users to fetch content from external APIs or deployed tools directly into their evaluation process. This feature enables the integration of live data or model outputs from deployed agents, providing greater flexibility in the evaluation process.
 
-As a user, you can add a column in Evaluation Studio that triggers an API call to fetch content. This allows you to integrate external data, retrieve agent outputs, and incorporate them into your evaluation. Once the content is fetched, you can evaluate it using human or AI evaluators for in-depth analysis. Using the Run an API feature, you can also fetch outputs from models hosted outside of Agent platform. The external model can use the input rows in Evaluation Studio as its input, process the data, and provide the output for each row.
+As a user, you can add a column in Evaluation Studio that triggers an API call to fetch content. This allows you to integrate external data, retrieve agent outputs, and incorporate them into your evaluation. Once the content is fetched, you can evaluate it using human or AI evaluators for in-depth analysis. Using the Run an API feature, you can also fetch outputs from models hosted outside of Agent Platform. The external model can use the input rows in Evaluation Studio as its input, process the data, and provide the output for each row.
 
 This functionality enhances the evaluation process by providing greater flexibility, allowing users to use external data and models in Evaluation Studio.
 

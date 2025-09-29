@@ -47,7 +47,7 @@ Below is a list of important terms used across the API documentation.
 
 
 
-* **App (AppId)**: Represents a specific App built on the Agent platform.
+* **App (AppId)**: Represents a specific App built on the Agent Platform.
 * **Environment (envName)**: Refers to a deployment environment for the app. The environment name must match the exact name as configured in the application. 
 * **Session (sessionId)**: A unique ID representing a single conversation between an end-user and the agent. Sessions allow multi-turn conversations by preserving context.
 * **Session Identity**: Used to reference a session or user. You can refer to the session in one or more of the following ways. 
@@ -146,7 +146,7 @@ Sample Response
             "content": {
                 "auth_profiles": [
                     {
-                        "url": "https://host/r/396c63515671634648357955",
+                        "url": "https://{host}/r/396c63515671634648357955",
                         "idpName": "Google",
                         "isAuthorized": false,
                         "sso_type": "oauth2"

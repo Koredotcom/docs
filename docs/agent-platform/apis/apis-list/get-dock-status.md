@@ -13,7 +13,7 @@ This API allows users to track the status of ongoing or completed jobs related t
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{<i>host</i>}/api/public/dock-status/{<i>dockStatusId</i>}</code>
+   <td><code>https://{host}/api/public/dock-status/{<i>dockStatusId</i>}</code>
    </td>
   </tr>
   <tr>

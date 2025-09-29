@@ -13,7 +13,7 @@ This API undeploys a model from the environment. The API response includes the *
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><strong> </strong><code>https://{<i>host</i>}/api/public/models/:{<i>modelId</i>}/undeploy</code>
+   <td><strong> </strong><code>https://{host}/api/public/models/:{<i>modelId</i>}/undeploy</code>
    </td>
   </tr>
   <tr>

@@ -1,4 +1,4 @@
-# Introduction to Kore.ai Agent Platform
+# Introduction to Agent Platform
 
 The all-new Agent Platform is an enterprise-grade multi-agent orchestration platform. The platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while upholding enterprise-grade security and governance.
 
@@ -55,7 +55,7 @@ It facilitates the easy deployment and management of AI models, including fine-t
 
 ### Prompt Management
 
-Prompt Studio and Library enable efficient prompt design, management, reuse, and collaboration across teams. It enables real-time co-editing, commenting, version tracking, and integration with the overall agent platform for seamless deployment.
+Prompt Studio and Library enable efficient prompt design, management, reuse, and collaboration across teams. It enables real-time co-editing, commenting, version tracking, and integration with the overall Agent Platform for seamless deployment.
 
 ### Evaluation and Testing Framework
 

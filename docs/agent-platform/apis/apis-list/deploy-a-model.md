@@ -14,7 +14,7 @@ The API response includes the **model ID** and the **model deployment status**. 
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{<i>host</i>}/api/public/models/:{<i>modelId</i>}/deploy?modelType={<i>modelType</i>}</code>
+   <td><code>https://{host}/api/public/models/:{<i>modelId</i>}/deploy?modelType={<i>modelType</i>}</code>
    </td>
   </tr>
   <tr>
