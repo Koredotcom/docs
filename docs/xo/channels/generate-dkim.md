@@ -18,7 +18,7 @@ This command will create a private key file (`dkim_private.pem`) with the specif
 
 Bash
 
-```json
+``` 
 
 openssl genrsa -out dkim_private.pem 2048 
 
@@ -38,7 +38,7 @@ Once you have the private key, you can easily derive the corresponding public ke
 
 Bash
 
-```json
+``` 
 
 openssl rsa -in dkim_private.pem -pubout -out dkim_public.pem
 
@@ -52,7 +52,7 @@ openssl rsa -in dkim_private.pem -pubout -out dkim_public.pem
 
 The `dkim_public.pem` file will also be in PEM format. The content will look something like this:
 
-```json
+``` 
 
 -----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu...
@@ -69,7 +69,7 @@ First, get the raw public key string:
 
 Bash
 
-``` json
+```  
 awk 'BEGIN{RS=" "}{printf "%s",/-----BEGIN PUBLIC KEY-----/?$0:($0~/-----END PUBLIC KEY-----/?"":$0)}' dkim_public.pem | tr -d '\n' | sed 's/-----BEGIN PUBLIC KEY-----//g' | sed 's/-----END PUBLIC KEY-----//g'
 
 ```
@@ -88,7 +88,7 @@ You'll create a DNS TXT record with a specific format. A common format looks lik
 
 **Example DNS TXT Record**
 
-``` json
+```  
 Host: default._domainkey.example.com
 Type: TXT
 Value: "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu..."
