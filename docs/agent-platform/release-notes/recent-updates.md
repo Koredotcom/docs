@@ -18,6 +18,8 @@ The new test feature at the app level allows users to enter queries directly and
 
 The Agent Platform now provides enhanced context handling for conversations with rolling context windows. Configure the number of recent messages to use as conversation context by setting a message count limit. When this limit is reached, the oldest messages are automatically removed to make room for new ones. This prevents context overflow and keeps conversations focused on relevant, up-to-date information.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-profile.md)
+
 
 <font size="4">No-code & Pro-Code Tools</font>
 
@@ -30,6 +32,9 @@ The Platform now provides a unified interface for testing workflow tools directl
 **Custom Model Support**
 
 The Platform now supports seamless integration of custom models in Agentic Apps and Agents through API endpoints. To ensure compatibility, custom models must support tool calling and adhere to the request and response structures as per the API reference of Anthropic or OpenAI.  Custom model integrations with Default model settings are currently not supported in Agentic Apps. The platform provides standardized API integration, performance monitoring, and security controls to ensure consistent and secure usage.
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md#custom-model-support-in-agentic-apps){:target="_blank"}
+
 
 **Structured Output Support for Open-Source Models**
 
@@ -48,6 +53,7 @@ The Agent Platform now supports additional AI models, providing greater flexibil
 * Azure OpenAI Models: gpt-5-main and gpt-5-main-mini
 * Anthropic Model (2025-08-05 release): claude-opus-4-1
 * Google Model: gemini-2.5-flash
+
 
 **Enhanced Support for AWS Bedrock Models**
 
