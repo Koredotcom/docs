@@ -54,9 +54,6 @@ The Agent Platform now supports additional AI models, providing greater flexibil
 * Anthropic Model (2025-08-05 release): claude-opus-4-1
 
 
-**Enhanced Support for AWS Bedrock Models**
-
-AWS Bedrock models are now listed in AI nodes organized by their capabilities, with full support for multimodal usage and tool calling. Within Prompt Studio, these models can generate outputs, create data, and build prompts. Users can also streamline configuration by mapping model requests and responses using predefined provider API references for Anthropic or OpenAI.
 
 
 ## v1.0.11 September 9, 2025
