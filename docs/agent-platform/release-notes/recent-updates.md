@@ -49,7 +49,7 @@ Kore-hosted open-source models now support structured JSON output through the re
 
 The Agent Platform now supports additional AI models, providing greater flexibility for various use cases. These models include comprehensive platform integration with System Prompts, Tool Calling, Prompt Studio, Evaluation Studio, Tools, Parallel Tool Calling, Model Analytics, Audit Logs, Model Traces, Agentic Apps, and Image-to-Text Support.
 
-* OpenAI Models GPT-5 Family (2025-08-07 release): gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-thinking, gpt-5-thinking-mini, and gpt-5-thinking-nano
+* OpenAI Models GPT-5 Family (2025-08-07 release): gpt-5, gpt-5-mini, and gpt-5-nano
 * Azure OpenAI Models: gpt-5-main and gpt-5-main-mini
 * Anthropic Model (2025-08-05 release): claude-opus-4-1
 
