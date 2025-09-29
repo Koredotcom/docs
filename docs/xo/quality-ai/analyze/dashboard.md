@@ -72,8 +72,7 @@ To filter by calendar,
 
 * Click the **Calendar** dropdown.
 * Select the desired date range.
-* Click **Apply** to refresh dashboard data.
-
+* Click **Apply** to refresh dashboard data.  
 <img src="../dashboard/images/date-range-filter.png" alt="Date Range calendar" title="Date Range calendar" style="border: 1px solid gray; zoom:100%;">
 
 #### Channel
@@ -205,12 +204,12 @@ Supervisors can monitor agent performance based on the selected evaluation form 
 
 ## Agent Leaderboard
 
-The Agent Leaderboard provides a centralized view to easily identify top and bottom performers, enabling informed decisions about recognizing high achievers and coaching those who need improvement. This widget offers a simplified snapshot of agent performance and functions independently of language selection and communication channels.  
-<img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
+The Agent Leaderboard provides a centralized view to easily identify top and bottom performers, enabling informed decisions about recognizing high achievers and coaching those who need improvement. This widget offers a simplified snapshot of agent performance and functions independently of language selection and communication channels.   
+<img src="../dashboard/images/dashboard-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
 
-    You must enable the Agent Scorecard  toggle switch under the **Quality AI General Settings** to start automated agent scoring. If not enabled, the agent leaderboard displays a blank screen with no interactions.
+    You must enable the **Agent Scorecard**  toggle switch under the **Quality AI General Settings** to start automated agent scoring. If not enabled, the agent leaderboard displays a blank screen with no interactions.
 
 The **Agent Leaderboard** displays the following items:
 
@@ -226,19 +225,18 @@ The **Agent Leaderboard** displays the following items:
 
 ### View Leaderboard
 
-This **View Leaderboard** or **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](agent-leaderboard.md).
+The **View Leaderboard** option allows supervisors, auditors, and managers to see both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](agent-leaderboard.md).
 
-There are two ways to access the **Agent Dashboard**:
+Ways to View the Agent Leaderboard or Agent-Specific Dashboard:
 
-* Navigate to **Quality AI** > **Dashboard** > **Agent Leaderboard**. Or,
+* Click View Leaderboard displayed at the top-right corner.    
+<img src="../dashboard/images/view-leaderboard.png" alt="View Leaderboard" title="View Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
-* Navigate to **Quality AI** > **Agent Leaderboard**. 
+* Click on any agent to view their individual Agent Leaderboard or Agent-Specific Dashboard.   
+<img src="../dashboard/images/agent-leaderboard-from-dashboard.png" alt="Agent-Specific Dashboard" title="Agent-Specific DashboardAgent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
-Click the **View Leaderboard** button to view the **Agent Leaderboard** or **Agent Dashboard**. 
+!!! note
 
-<img src="../dashboard/images/view-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
+    If no scorecards are assigned to an agent, the supervisor cannot view that agent's scorecard details. For more information, see [Supervisor View with Agent-Specific Dashboard](supervisor-view-agent-specific-dashboard.md).
 
-Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. Bookmarked interactions help assign relevant coaching tasks, with the latest interactions shown first. For more information, see [Supervisor View with Agent-Specific Dashboard](supervisor-view-agent-specific-dashboard.md)
-
-
-For more information, see [Agent Dashboard - Supervisor Evaluation](agent-dashboard-supervisor-evaluation.md).
+Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. Bookmarked interactions assist in assigning relevant coaching tasks, with the most recent interactions displayed first. For more information, see [Agent Dashboard - Supervisor Evaluation](agent-dashboard-supervisor-evaluation.md).
