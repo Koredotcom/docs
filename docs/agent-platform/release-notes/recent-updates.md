@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-​​This update includes a new knowledge base test tool for real-time validation, rolling context windows for better conversation management, and support for the latest GPT-5 family and other leading AI models. Additional improvements include streamlined workflow testing, custom model integration, structured output support for open-source models, and enhanced AWS Bedrock integration.
+​​This update includes a new knowledge base test tool for real-time validation, rolling context windows for better conversation management, and support for the latest GPT-5 family and other leading AI models. Additional improvements include streamlined workflow testing, custom model integration, and structured output support for open-source models.
 
 <font size="4">Multi-Agent Orchestration</font>
 
