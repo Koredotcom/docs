@@ -4,6 +4,8 @@ The Agent Platform offers flexible orchestration and runtime support for a wide 
 
 ## Supported AI Models for Agents and Supervisors
 
+### External Models
+
 Agentic Apps supports Agent and Supervisor orchestration with the most widely used models from providers such as OpenAI, Azure OpenAI, Anthropic, and Google.
 
 
@@ -121,6 +123,17 @@ While Agent and Supervisor Orchestration is supported for most commonly used LLM
   </tr>
 </table>
 
+### Custom Model Support in Agentic Apps
+
+Agentic Apps also support integrating with custom third party models via API Integration. 
+
+To use a custom model in Agentic Apps
+
+* The model must support **Tool Calling** functionality.
+* The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
+
+
+For detailed steps, see [Add an External Model Using API Integration](external-models/add-an-external-model-using-api-integration.md).
 
 ## Supported Open-Source Models
 
