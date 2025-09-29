@@ -87,7 +87,7 @@ The following metrics help evaluate agent performance and coaching progress, fil
 * **Fatal Interactions**: This displays an agent’s interactions that failed critical compliance or quality checks during a selected time period, helping supervisors quickly identify and address high-risk cases.        
     <img src="..//agent-leaderboard/images/fatal-interactions.png" alt="Fatal Interactions" title="Fatal Interactions" style="border: 1px solid gray; zoom:80%;">
 
-#### Coaching Insights
+### Coaching Insights
 
 * **Select Scorecard**: Based on the scorecard selected, it displays the top five attributes with the highest scores from the agent’s scorecards during the specified time period. Only attributes with scores above 80 are shown, listed in descending order.
 
@@ -97,7 +97,7 @@ The following metrics help evaluate agent performance and coaching progress, fil
 * **Opportunity Areas**: Displays the bottom five attributes with the lowest scores from the agent’s scorecards during the selected time period. Only attributes with scores below 80 are shown as areas for improvement.      
     <img src="../agent-dashboard/images/scorecard-selection-for-coaching-insights.png" alt="Opportunity Areas" title="Opportunity Areas" style="border: 1px solid gray; zoom:80%;">
 
-#### Coaching Assignments
+### Coaching Assignments
 
 This feature displays all coaching assignments given to an agent within the agent dashboard. Supervisors can track scorecard performance trends over time to assess progress or decline and take appropriate action through targeted coaching.   
 <img src="../agent-leaderboard/images/coaching-assignments.png" alt="Coaching Assignments" title="Coaching Assignments" style="border: 1px solid gray; zoom:80%;">
