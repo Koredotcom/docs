@@ -1,4 +1,4 @@
-# Creating a Code Tool
+# Create a Code Tool
 
 To create a code tool, click **+Create Tool** in the **Tools** page while creating the agent and select **Code Tool**. Provide the following details for the tool.
 
@@ -11,7 +11,7 @@ Enter a **unique and descriptive name** for the tool to help identify its purpos
 
 **Example**: SQL Query Processor
 
-Do not add special characters or spaces. Only alphabets, numbers, and underscores are allowed in the name. 
+Don't add special characters or spaces. Only alphabets, numbers, and underscores are allowed in the name. 
 
 ---
 
@@ -38,11 +38,11 @@ Define the **input parameters** required by the tool to perform its task. For ea
 
 * **Name:** A unique identifier for the parameter.
 * **Description:** Explains the parameter’s purpose to help the agent extract relevant data from user input.
-* **Type:** The expected data type. The following types are currently supported: 
+* **Type:** The expected data type. The following types are supported: 
     * **string**: sequence of characters
     * **number**: An integer value
     * **boolean**: true or false
-    * **list of values**: A restricted set of predefined values. This type is useful when the input must be one of a specific set of options. For this type of field, add all the values that the parameter can take. For example, a parameter priority of type enum might accept values like "low", "medium", or "high".  ![alt_text](images/codetools/enum-type.png "image_tooltip")
+    * **list of values**: A restricted set of predefined values. This type is useful when the input must be one of a specific set of options. For this type of field, add all the values that the parameter can take. For example, a parameter priority of type enum might accept values like "low," "medium," or "high."  ![alt_text](images/codetools/enum-type.png "image_tooltip")
 
     * **object**. A structured data type that includes one or more nested parameters. Use this when multiple related values must be grouped. For example, a location object might include fields like building,  city, and zip code. An object type can have a nested structure. Adhere to the **Sample Schema** for detailed structure and formatting guidelines.
     
@@ -99,7 +99,7 @@ Define the **input parameters** required by the tool to perform its task. For ea
 
 
 * **isMandatory**: Indicates whether this input parameter is mandatory or not. 
-* **Default value of the parameter**: Enable this option to assign a default value to the parameter. This default value is used whenever the parameter value is not found in the input. The data type for the default value must be same as that of the parameter itself.  For instance, if the priority is not specified in the user input, the default value of Medium is used when configured as shown below. 
+* **Default value of the parameter**: Enable this option to assign a default value to the parameter. This default value is used whenever the parameter value isn't found in the input. The data type for the default value must be same as that of the parameter itself. For instance, if the priority isn't specified in the user input, the default value of Medium is used when configured as shown below. 
 ![alt_text](images/codetools/default-value.png "image_tooltip")
 
 ---
