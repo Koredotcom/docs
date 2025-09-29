@@ -238,6 +238,19 @@ These settings are grouped and presented as closed groups when first opening the
 Turn on the toggle to add an explicit reject button for incoming conversations. This applies only in manual acceptance mode. This toggle is turned off by default.  
 <img src="../images/explicit-reject-button-toggle.png" alt="Explicit Reject Toggle" title="Explicit Reject Toggle" style="border: 1px solid gray; zoom:90%;">
 
+### Honor Agent Wait Before Queue Timeout  
+
+**When enabled:**  
+
+* If a conversation is assigned to an agent and enters the agent's wait state, the queue wait timeout does not trigger.  
+* The conversation remains in the agent wait state until the agent wait timeout expires.
+* After the agent wait timeout is exceeded, the system checks the queue wait timeout condition.  
+
+**When disabled (default):**  
+
+* The queue wait timeout runs in parallel and may close the conversation even while it is in the agent wait state.  
+<img src="../images/honor-agent-wait-before-queue-timeout.png" alt="Honor Agent Wait" title="Honor Agent wait" style="border: 1px solid gray; zoom:90%;">
+
 ## Conversation Status Control
 
 The Conversation Status Control settings are available for the following channels: Live Chat, Messaging, Voice, and Emails.
@@ -249,27 +262,26 @@ Different statuses apply to each channel. Watch the short demo below to see what
 
 Conversation statuses apply in certain conditions for specific channels. These are listed in the table below:
 
-| **Status**                  | **Applicability**                                                                        | **Channel**             | **Message** | **Variables**                                                                                                     |
-|-----------------------------|------------------------------------------------------------------------------------------|-------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
-| **On Connect**              | When the agent connects                                                                  | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-|                             |                                                                                          | Voice                   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name                                               |
-| **Due Reminder For Agent**  | If the agent’s response time is greater than the set percentile of overdue conversations | Live Chat, Messaging.   | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Overdue**                 | If the agent has not responded for the set amount of time                                | Live Chat, Messaging.   | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Agent Inactivity**        | If the agent has not responded to an overdue conversation for the set time               | Live Chat               | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Snooze**                 | If agent marked the customer on Snooze                               | Live Chat, Messaging.   | To User    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.                 |
-|                             |                                                                                          |                         | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.                                               |
-| **On Agent Interruption**         | If the agent disconnects unexpectedly                                                    | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **On Customer Interruption after Agent Transfer**         | If customer gets disconnected unexpectedly, conversations will wait with agent                                                    | Live Chat   | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.                  |
-|                             |                                                                                          |                         | To User    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name                                               |
-| **Idle Reminder For Customer** | If the customer’s response time is greater than the set percentile of total idle customer conversations | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Idle**                    | If the customer has not responded for the set amount of time                             | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Auto Expire**             | If the customer’s response time is greater than the set amount of time                   | Live Chat               | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-|                             |                                                                                          |                         | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name                                               |
-| **On Close**                | If the agent closes the conversation                                                     | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Status**                                   | **Applicability**                                                                 | **Channel**            | **Message**  | **Variables**                                                                 |
+|----------------------------------------------|-----------------------------------------------------------------------------------|------------------------|--------------|-------------------------------------------------------------------------------|
+| **On Connect**                               | When the agent connects                                                           | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+|                                              |                                                                                   | Voice                  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| **Due Reminder For Agent**                   | If the agent’s response time is greater than the set percentile of overdue conversations | Live Chat, Messaging.  | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Overdue**                                  | If the agent has not responded for the set amount of time                         | Live Chat, Messaging.  | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Agent Inactivity**                         | If the agent has not responded to an overdue conversation for the set time        | Live Chat              | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Snooze**                                   | If agent marked the customer on Snooze                                            | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
+|                                              |                                                                                   |                        | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
+| **On Agent Interruption**                    | If the agent disconnects unexpectedly                                             | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **On Customer Interruption after Agent Transfer** | If customer gets disconnected unexpectedly, conversations will wait with agent     | Live Chat              | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
+|                                              |                                                                                   |                        | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| **On Customer Interruption in Queue**        | If the customer gets disconnected unexpectedly, conversations will wait in the queue |                        | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| **Idle Reminder For Customer**               | If the customer’s response time is greater than the set percentile of total idle customer conversations | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Idle**                                     | If the customer has not responded for the set amount of time                      | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Auto Expire**                              | If the customer’s response time is greater than the set amount of time            | Live Chat              | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+|                                              |                                                                                   |                        | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| **On Close**                                 | If the agent closes the conversation                                              | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
 
 ### Conversation Statuses by Channel (Email)
-
-Here is the HTML table converted into Markdown format:
 
 | **Status**                       | **Applicability**                                                                                                                   | **Channel** | **Message** | **Variables**                                                              |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|----------------------------------------------------------------------------|
@@ -316,11 +328,6 @@ See the tables in [Conversation Statuses by Channel (Live Chat, Messaging, and V
 
 Once you configure your Conversation Statuses and Messaging, click **Save** at the bottom right of the Agent Settings screen.
 <img src="../images/save-button.png" alt="Save Conversation Status" title="Save Conversation Status" style="border: 1px solid gray; zoom:80%;">
-
-## Call Recording Control
-
-By default, Contact Center AI records all voice interactions. Contact Center AI admins can disable call recording for all voice interactions.  
-<img src="../images/call-recording-control.png" alt="Call Recording Control" title="Call Recording Control" style="border: 1px solid gray; zoom:80%;">
 
 ### Allow Agent to Pause/Resume
 

@@ -871,7 +871,7 @@ For example, when the payload does not contain a key for the payload response da
     "OfferName": "Frequent Flyer",
     "OfferType": "CreditCard",
     "Status": "1",
-    "imageURL": "http://www.moneychoice.org/wp-content/uploads/2016/01/credit-card-calculator-image.png.jpeg",
+    "imageURL": "http://www.moneychoice.org/uploads/2016/01/credit-card-calculator-image.jpeg",
     "id": "c0b05bc3062658ee"
   }
 ]

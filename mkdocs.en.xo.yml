@@ -297,7 +297,7 @@ nav:
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - Testing:
       - About Test and Debug: automation/testing/test-and-debug-overview.md
-      - Test (Talk to Bot): automation/testing/talk-to-bot.md
+      - Test: automation/testing/talk-to-bot.md
       - DialogGPT based Apps:
         - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
       - NLP based Apps:
@@ -463,9 +463,12 @@ nav:
           - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
           - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
           - Wrap-up Code Prediction: contactcenter/configurations/settings/wrap-up-code-prediction.md
+    - Performace Management:
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
+    - Flows:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
+      - Debug Logs: contactcenter/flows-and-routing/debug-logs.md
     - Routing:
       - Contact Center AI Routing: contactcenter/routing/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md
@@ -583,6 +586,7 @@ nav:
       - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
+      - SDK Fields and Details: agentai/integration/AgentAI-webSDK/sdk-fields-and-details.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
       - View Customized Events: agentai/integration/AgentAI-webSDK/view-customized-events.md
       - My Bot Tab: agentai/integration/AgentAI-webSDK/mybot-tabs.md
