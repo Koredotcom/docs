@@ -16,7 +16,7 @@ Conversation Logs now feature an Agents column, searchable filters (with default
 
 Agent AI now supports CCAI’s real-time translation feature. Agents can switch languages in the CCAI console, which updates widget content, Conversation Logs, and other supported areas. Once enabled in **CCAI** > **Configurations** > **Settings** > **Advanced Settings** > **Translation Configuration**, agents can access a language dropdown and view a dual display of original and translated text in Conversation Logs. [Learn more :octicons-arrow-right-24:](./../../contactcenter/configurations/settings/translation-configurations.md)
 
-### **Call Recording Playback Support in Agent AI**
+**Call Recording Playback Support in Agent AI**
 
 For quality monitoring, Agent AI now supports call recording playback when the **SIP Trunk** > **Record the Calls** setting is enabled. Recordings appear at the top of individual call transcripts and can be played, paused, stopped, downloaded, or replayed with adjustable speed, volume, and timestamps. You can also filter by agent or timeframe, download reports, and navigate recordings through an accordion view for easier access. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md/#voice-call-recording)
 
