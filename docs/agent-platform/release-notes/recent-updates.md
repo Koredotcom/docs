@@ -47,7 +47,6 @@ The Agent Platform now supports additional AI models, providing greater flexibil
 * OpenAI Models GPT-5 Family (2025-08-07 release): gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-thinking, gpt-5-thinking-mini, and gpt-5-thinking-nano
 * Azure OpenAI Models: gpt-5-main and gpt-5-main-mini
 * Anthropic Model (2025-08-05 release): claude-opus-4-1
-* Google Model: gemini-2.5-flash
 
 **Enhanced Support for AWS Bedrock Models**
 
