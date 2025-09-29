@@ -2,6 +2,58 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.2.0 September 27, 2025
+
+<u> Minor Release </u>
+
+​​This update includes a new knowledge base test tool for real-time validation, rolling context windows for better conversation management, and support for the latest GPT-5 family and other leading AI models. Additional improvements include streamlined workflow testing, custom model integration, structured output support for open-source models, and enhanced AWS Bedrock integration.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Introducing Knowledge Base Test Tool**
+
+The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected SearchAI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
+
+**Enhanced Context Management**
+
+The Agent Platform now provides enhanced context handling for conversations with rolling context windows. Configure the number of recent messages to use as conversation context by setting a message count limit. When this limit is reached, the oldest messages are automatically removed to make room for new ones. This prevents context overflow and keeps conversations focused on relevant, up-to-date information.
+
+
+<font size="4">No-code & Pro-Code Tools</font>
+
+**Improved Workflow Tool Testing Experience**
+
+The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardised output format.
+
+<font size="4">AI Engineering Tools</font>
+
+**Custom Model Support**
+
+The Platform now supports seamless integration of custom models in Agentic Apps and Agents through API endpoints. To ensure compatibility, custom models must support tool calling and adhere to the request and response structures as per the API reference of Anthropic or OpenAI.  Custom model integrations with Default model settings are currently not supported in Agentic Apps. The platform provides standardized API integration, performance monitoring, and security controls to ensure consistent and secure usage.
+
+**Structured Output Support for Open-Source Models**
+
+Kore-hosted open-source models now support structured JSON output through the response_format parameter, aligned with OpenAI’s schema style. This enables schema-based responses across Prompts and Tools.
+
+* Supported on the v2/chat/completions endpoint (default for new deployments).
+* Works with most open-source models (see the documentation for the full list of supported models).
+* Not supported for fine-tuned models, Hugging Face imports, CT2-optimized models, or locally imported models.
+* The schema editor automatically appears in AI nodes when a supported model is selected.
+
+**Expanded Model Support**
+
+The Agent Platform now supports additional AI models, providing greater flexibility for various use cases. These models include comprehensive platform integration with System Prompts, Tool Calling, Prompt Studio, Evaluation Studio, Tools, Parallel Tool Calling, Model Analytics, Audit Logs, Model Traces, Agentic Apps, and Image-to-Text Support.
+
+* OpenAI Models GPT-5 Family (2025-08-07 release): gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-thinking, gpt-5-thinking-mini, and gpt-5-thinking-nano
+* Azure OpenAI Models: gpt-5-main and gpt-5-main-mini
+* Anthropic Model (2025-08-05 release): claude-opus-4-1
+* Google Model: gemini-2.5-flash
+
+**Enhanced Support for AWS Bedrock Models**
+
+AWS Bedrock models are now listed in AI nodes organized by their capabilities, with full support for multimodal usage and tool calling. Within Prompt Studio, these models can generate outputs, create data, and build prompts. Users can also streamline configuration by mapping model requests and responses using predefined provider API references for Anthropic or OpenAI.
+
+
 ## v1.0.11 September 9, 2025
 
 <u> Minor Release </u>

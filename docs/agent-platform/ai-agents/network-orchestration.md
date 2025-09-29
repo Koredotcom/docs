@@ -1,4 +1,4 @@
-# Network Orchestration Pattern
+# Adaptive Network Orchestration Pattern
 
 The Network (Delegation) Orchestration Pattern is an architectural approach for designing agentic applications where specialized AI agents dynamically transfer control and context of a task to one another based on the task's requirements. This pattern operates in a decentralized manner, allowing agents to evaluate tasks and hand them off to the most suitable agent with relevant expertise. It creates a seamless, sequential workflow optimized for tasks requiring specialized knowledge across multiple domains.
 
