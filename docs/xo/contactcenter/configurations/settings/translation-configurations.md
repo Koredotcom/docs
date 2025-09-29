@@ -22,9 +22,9 @@ Steps to configure translation:
 3. Click **Save**. Translation is enabled in the dashboard interactions.  
     <img src="../images/translation.png" alt="Translation Configurations" title="Translation Configurations" style="border: 1px solid gray; zoom:70%;">
 
-!!! note
+    !!! note
 
-    Template messages are not translated in the conversation transcripts. 
+        Template messages are not translated in the conversation transcripts. 
 
 ## Runtime / Real-time Translation
 

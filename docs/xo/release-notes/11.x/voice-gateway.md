@@ -31,7 +31,7 @@ A new configuration option, Answer call on AI Agent first response, is available
 
 **API to Start, Pause, Resume, and End/Stop Transcriptions and Call Recordings**
 
-The enhanced version of the Control Transcription API (v2) now supports managing call recordings, in addition to transcriptions, for third-party agent desktops. This API provides enhanced flexibility and control during live interactions, allowing agent desktops outside of Kore's ecosystem to manage transcriptions and recordings in accordance with business and regulatory requirements.
+The enhanced version of the Control Transcription API (v2) now supports managing call recordings, in addition to transcriptions, for third-party agent desktops. This API provides enhanced flexibility and control during live interactions, allowing agent desktops outside of Kore's ecosystem to manage transcriptions and recordings in accordance with business and regulatory requirements. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/control-transcription-api-2.md)
 
 <hr>
 

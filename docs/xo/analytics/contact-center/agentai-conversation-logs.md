@@ -10,15 +10,18 @@ Steps to access the Conversation Logs:
 3. Click the arrow next to **Conversation ID** or **Time** to sort this table accordingly.  
 <img src="../conversation_logs/sorting-conversation-logs-through-id-or-time-2.png" alt="sorting-conversation-logs-through-id-or-time" title="sorting-conversation-logs-through-id-or-time" style="border: 1px solid gray; zoom:80%;">   
 
-   * **Clear Filters**: Click to remove all filters (Time and Custom) and return to the default view (Today). 
-   * **CONVERSATION ID**: A unique identification number assigned to each conversation. It helps identify and track specific interactions. 
-   * **TIME**: The date and time when a conversation took place. 
-   * **AGENT**: Agents involved in a conversation.  
-    !!! note
-        Only the agents who participate in at least one conversation appear in the filter.  
+    * **Clear Filters**: Click to remove all filters (Time and Custom) and return to the default view (Today). 
+    * **CONVERSATION ID**: A unique identification number assigned to each conversation. It helps identify and track specific interactions. 
+    * **TIME**: The date and time when a conversation took place. 
+    * **AGENT**: Agents involved in a conversation.  
+    
+        <div class="admonition note">
+        <p class="admonition-title">Note</p>
+        <p>Only the agents who participate in at least one conversation appear in the filter.</p>
+        </div>  
 
-   * **CHANNEL**: The communication mode of the conversation – Voice or Chat. This information helps differentiate between different types of interactions.
-   * **DURATION**: The length of time a conversation lasted. It indicates the time taken to resolve customer queries.
+    * **CHANNEL**: The communication mode of the conversation – Voice or Chat. This information helps differentiate between different types of interactions. 
+    * **DURATION**: The length of time a conversation lasted. It indicates the time taken to resolve customer queries.  
 
 4. Click a **CONVERSATION ID** to view the corresponding conversation summary, edited summary (if any), Voice Call Recording, and the conversation record.  
 
