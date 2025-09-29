@@ -233,9 +233,9 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 
     A DKIM selector is a string that identifies which DKIM public key to use for signature verification. It's part of the DKIM DNS record structure.
 
-    **DNS Record Format**: <code>[selector]._domainkey.[[domain.com](https://domain.com)]</code>.
+    **DNS Record Format**: <code>[selector]._domainkey.[domain.com]</code>.
 
-    **Example**: If your selector is "ses2024" and the domain is "example.com", the DNS record would be: <code>ses2024._domainkey[.example.com](https://.example.com)</code>.
+    **Example**: If your selector is "ses2024" and the domain is "example.com", the DNS record would be: <code>ses2024._domainkey[.example.com]</code>.
     
     <img src="../images/email-custom-dkim.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
@@ -243,10 +243,10 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 <img src="../images/email-vip.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
 6. Click **Confirm**. You can navigate to the Email Channels page to check the latest status. This might take up to 72 hours. The status can be one of the following: 
-    * **Pending**: DNS records not yet detected
-    * **Success**: DKIM successfully verified
-    * **Failed**: DNS records incorrect or missing
-    * **Temporary Failure**: DNS issues, will retry automatically  
+    * **Pending**: DNS records not yet detected.
+    * **Success**: DKIM successfully verified.
+    * **Failed**: DNS records incorrect or missing.
+    * **Temporary Failure**: DNS issues, will retry automatically.  
     <img src="../images/email-domain.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
 #### Step 3: Complete Configuration

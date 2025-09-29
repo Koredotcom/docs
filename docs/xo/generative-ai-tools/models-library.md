@@ -12,6 +12,9 @@ Review the model and feature support matrix for the [GenAI Features](genai-featu
 
 The Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompt templates and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the Platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
 
+!!! note
+
+    The Platform supports Azure OpenAI and OpenAI integrations for the Chat Completions API only. To use the Responses API, you must configure a Custom LLM.
 
 **Configure Pre-built LLM Integration**
 

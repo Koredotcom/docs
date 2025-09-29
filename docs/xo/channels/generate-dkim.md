@@ -6,13 +6,13 @@
 **Prerequisites**
 
 
-**OpenSSL**: You'll need OpenSSL installed on your system (Linux, macOS, or Windows, using Git Bash or a similar terminal emulator). Most Linux distributions and macOS come with OpenSSL pre-installed.
+**OpenSSL**: You need OpenSSL installed on your system (Linux, macOS, or Windows with Git Bash or a similar terminal). Most Linux distributions and macOS include OpenSSL by default.
 
 
-### Steps to Generate DKIM Keys:
+### Steps to Generate DKIM Keys
 
 
-#### 1. Generate the RSA Private Key:
+#### 1. Generate the RSA Private Key
 
 This command will create a private key file (`dkim_private.pem`) with the specified bit length (1024, 1536, or 2048 are common choices for DKIM, with 2048 being generally recommended for stronger security). The output will be in PEM format, which is Base64 encoded.
 
@@ -29,7 +29,9 @@ openssl genrsa -out dkim_private.pem 2048
 * `-out dkim_private.pem`: Specifies the output file name for your private key.
 * `2048`: Specifies the key length in bits. You can change this to `1024` or any value up to `2048` as needed.
 
-**Important:** Keep your `dkim_private.pem` file secure. This key should only be accessible by your mail server or the service responsible for signing your outgoing emails. Never share it publicly.
+!!! Important
+
+    Keep your `dkim_private.pem` file secure. This key should only be accessible by your mail server or the service responsible for signing your outgoing emails. Never share it publicly.
 
 
 #### 2. Extract the Public Key from the Private Key
