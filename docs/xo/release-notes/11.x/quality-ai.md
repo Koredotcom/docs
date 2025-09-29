@@ -2,6 +2,25 @@
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
+## v11.18.0 September 27, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Configure</font>
+
+**Advanced Topic Discovery**
+
+This enables QA, Supervisors, and Business Managers to visualize conversation topics across the contact center, linked to key metrics, such as Average Handling Time (AHT), Sentiment, and Resolution rate. Using custom taxonomies and intuitive bubble charts, users can identify trends, explore topics in-depth, and analyze related metrics and generated intents, making it easier to enhance coaching and drive process improvements. 
+
+**Taxonomy Builder**
+
+The builder enables Contact Center Managers, Analysts, and QA teams to create custom taxonomies with three-level hierarchical structures, enhancing conversation categorization. This improves analysis across channels, allowing deeper insights into topic-level metrics and business-specific trends. 
+
+<hr>
+
+
 ## v11.17.1 September 15, 2025
 
 <u>Patch Release</u>
