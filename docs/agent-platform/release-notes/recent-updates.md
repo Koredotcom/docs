@@ -53,8 +53,7 @@ The Agent Platform now supports additional AI models, providing greater flexibil
 * Azure OpenAI Models: gpt-5-main and gpt-5-main-mini
 * Anthropic Model (2025-08-05 release): claude-opus-4-1
 
-
-
+<hr>
 
 ## v1.0.11 September 9, 2025
 
