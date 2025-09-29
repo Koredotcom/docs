@@ -50,9 +50,9 @@ This detailed layout enables users to understand the sequence of operations and 
 **Note:**
 
 * Attachments are only allowed if the **Document Upload** option is enabled under **Playground Settings** on the **Configurations** page.
-* The **maximum number of files** and **file size limits** are controlled by the **Attachment Configurations** under **General Settings**. 
+* The **maximum number of files** and **file size limits** are controlled by the **Attachment Configurations** under **General Settings**. [Learn More](settings/app-configurations.md).
+* When a file is uploaded in the Playground, a **preview** icon is automatically displayed next to the file name. This allows users to quickly identify the uploaded file before continuing the conversation.  ![Document Preview](images/playground/preview.png "Document preview")
 
-[Learn More](settings/app-configurations.md)
 
 **Document Context Management**
 

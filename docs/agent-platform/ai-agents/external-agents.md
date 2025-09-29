@@ -7,7 +7,7 @@ Proxy Agent acts as an intermediary, seamlessly relaying communication between t
 
 ## Prerequisites
 
-The External Agents connected to the Agent platform must adhere to the Agent Protocol.
+The External Agents connected to the Agent Platform must adhere to the Agent Protocol.
 
 ## Set Up
 
@@ -157,7 +157,7 @@ If your external agent does not follow the expected format discussed above
 
 * Create an adapter to translate incoming and outgoing data.
 * Adapter should:
-    * Accept agent platform-defined request structure.
+    * Accept Agent Platform-defined request structure.
     * Convert it to the format required by your external agent.
     * Reformat the external agent's response to match the agent platform’s response structure.
 

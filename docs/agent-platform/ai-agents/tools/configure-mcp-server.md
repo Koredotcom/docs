@@ -74,4 +74,4 @@ Yes, an agentic app can be configured to connect to one or more MCP servers, eac
 
 **Does Agent Platform automatically fetch the latest set of tools from the MCP server?**
 
-Currently, the agent platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.
+Currently, the Agent Platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.

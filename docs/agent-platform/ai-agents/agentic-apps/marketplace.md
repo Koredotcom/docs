@@ -67,7 +67,7 @@ Extend your current app:
 
 ## Agent Diagnostics
 
-Before testing and deploying an Agentic app, use the Diagnostics to validate its readiness comprehensively. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the app meets production-quality and operational standards before deployment. See [Diagnostics for agent platform](diagnostics-for-agent-platform.md){:target="_blank"}.
+Before testing and deploying an Agentic app, use the Diagnostics to validate its readiness comprehensively. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the app meets production-quality and operational standards before deployment. See [Diagnostics for Agent Platform](diagnostics-for-agent-platform.md){:target="_blank"}.
 
 ## Testing and Deployment
 
