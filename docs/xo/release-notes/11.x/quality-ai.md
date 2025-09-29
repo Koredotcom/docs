@@ -45,4 +45,8 @@ In Conversation Mining, the Processing Status now displays a status icon: green 
 
 Quality AI can now be integrated with Agent AI on third-party desktops. This integration streamlines the recording process and utilizes metadata through Agent AI's Custom Object field. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/conversation-sources.md)
 
+
+
+<hr>
+
 [Learn more about Quality AI features :octicons-arrow-right-24:](../../quality-ai/about-quality-ai.md){:target="_blank"}

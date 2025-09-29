@@ -252,5 +252,5 @@ You can view the **Agent Leaderboard** or **Agent-Specific Dashboard** in the fo
     
         * Bookmarked interactions assist in assigning relevant coaching tasks, with the most recent interactions displayed first. 
         
-        For more information, see [Supervisor View with Agent-Specific Dashboard)](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard Agent View](../analyze/my-dashboard-agent-view.md).
+        For more information, see [Supervisor View with Agent-Specific Dashboard](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard - Agent View](../analyze/my-dashboard-agent-view.md).
         
