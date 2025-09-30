@@ -115,7 +115,7 @@ Click the **Connections** icon and select the **Go to Node** for success and fai
 
     <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
-### Step 4: Add Tools
+### Step 5: Add Tools
 
 To add tools, click the **Tool Calling** icon. When you select a model that supports tool calling, the ‘*Tool calling available*’ tab is displayed in the Properties panel. You can configure tool calling settings from this tab.
 
@@ -136,7 +136,7 @@ To add tools, click the **Tool Calling** icon. When you select a model that supp
         
     <img src="./../images/tool_calling_configuration.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
-### Step 5: Test the Flow
+### Step 6: Test the Flow
 
 Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
 
