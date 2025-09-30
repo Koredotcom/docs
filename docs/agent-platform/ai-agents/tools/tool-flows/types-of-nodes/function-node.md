@@ -33,34 +33,46 @@ Setting up a Function node includes adding it at the appropriate location in the
 
 Steps to add and configure the node:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+### Step 1: Open Flow Builder
 
-2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed. 
+* Log in → In **Agent Platform Modules** → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
+  <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-3. Click **Go to flow** to edit the in-development version of the flow.
-4. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Function** from the pop-up menu. (Alternatively, drag the **Function** node from the Assets panel onto the canvas.)
-5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.  
+### Step 2: Add the Function Node
+
+* In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Function** from the pop-up menu. 
+* Alternatively, drag the **Function** node from the Assets panel onto the canvas.
+
+### Step 3: Configure the Node
+
+Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.  
 <img src="./../images/configure-function-node.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
-6. Enter or select the following information:
+Enter or select the following information:
 
-    * **Node Name**: Enter an appropriate name for the node based on its functionality or purpose.
+* **Node Name**: Enter an appropriate name for the node based on its functionality or purpose.
 
-    * Select one of the following options to define and execute a function within the node:
+* Select one of the following options to define and execute a function within the node:
 
-        * **Write Code**: Write a custom code in the built-in editor for the function you want to execute. [Learn more](../types-of-nodes/function-node.md/#using-write-code){:target="_blank"}.
-        * **Custom Function**: Use a custom function from an imported and deployed script. [Learn more](../types-of-nodes/function-node.md/#execute-a-custom-function){:target="_blank"}.
+    * **Write Code**: Write a custom code in the built-in editor for the function you want to execute. [Learn more](../types-of-nodes/function-node.md/#using-write-code){:target="_blank"}.
+    * **Custom Function**: Use a custom function from an imported and deployed script. [Learn more](../types-of-nodes/function-node.md/#execute-a-custom-function){:target="_blank"}.
 
-        For the above options, you can define a script in JavaScript or Python with specific logic, static or dynamic input arguments, and output values.
+    For the above options, you can define a script in JavaScript or Python with specific logic, static or dynamic input arguments, and output values.
     
-<ol start="7"><li>Click the <b>Connections</b> icon in the left navigation and select <b>Go to Node</b> for success and failure conditions. </li>
+
+### Step 4: Add Connections
+
+Click the **Connections** icon in the left navigation and select **Go to Node** for success and failure conditions.
+
 <img src="./../images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;"></ol>
 
 * **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to an AI node to use the processed data from the Function node.
 * **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.
 
-<ol start="8"><li>Finally, test the flow and fix any issues found.</li></ol>
+### Step 5: Test the Flow
+
+Finally, test the flow and fix any issues found.
 
 !!! failure "Standard Errors"
 
