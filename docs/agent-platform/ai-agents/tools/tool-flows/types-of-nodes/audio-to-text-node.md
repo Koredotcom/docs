@@ -114,31 +114,32 @@ Metrics include:
     * **Input**, **Output**, and **Response Time**
     * **Translation,** and **Timestamp**.  [Learn more](../../../../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 
-## Steps to Add and Configure the Node
+## Add and Configure an Audio to Text Node
 
-To add and configure the node, follow the steps below:
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before proceeding, you must add an external LLM to your account.</p>
+</div>
 
-***Note**: Before proceeding, you must add an external LLM to your account using either [Easy Integration](../../../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} or [Custom API Integration](../../../../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}.*
 
+### Step 1: Open Flow Builder
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+* Log in → In Agent Platform Modules → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
+
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed.
-    <img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
+### Step 2: Add the Audio to Text Node
 
-3. Click **Go to flow** to edit the in-development version of the flow.     
-<img src="../images/access-af.png" alt="access tool flow" title="access tool flow" style="border: 1px solid gray; zoom:75%;">  
+* Click the "**+**" icon for **Audio to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Audio to text**.
+    <img src="../images/select-audio-to-text.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
 
+### Step 3: Configure the Node
 
-4. In the flow builder, click the **+** icon for **Audio to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Audio to text**.
-<img src="../images/select-audio-to-text.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
+* Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
+  <img src="../images/properties-dialog-audio-to-text.png" alt="properties dialog" title="properties dialog" style="border: 1px solid gray; zoom:75%;">
 
-
-5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
-<img src="../images/properties-dialog-audio-to-text.png" alt="properties dialog" title="properties dialog" style="border: 1px solid gray; zoom:75%;">
-
-6. Enter or select the following **General Settings**:
+* Enter or select the following **General Settings**:
     * **Node Name**: Enter an appropriate name for the node. For example, “*CustomerSupportConversation*.”
     * Provide the input variable that is set for the node for the **Audio File** field. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
     * Select a model from the list of configured models.
@@ -164,15 +165,15 @@ To add and configure the node, follow the steps below:
     For more information about how the model parses the response and separates keys from the content body, see: [Structured Response Parsing and Context Sharing in Workflows](../perform-other-actions-on-the-flow-builder/model_response_parsing.md){:target="_blank"}.
 
 
-7. Click the **Connections** icon and select the **Go to Node** for success and failure conditions. 
-<img src="../images/connections-audio-to-text.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;">
+* Click the **Connections** icon and select the **Go to Node** for success and failure conditions. 
+   <img src="../images/connections-audio-to-text.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;">
 
-<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
-<li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Audio to Text</b> node.</li></ul>
+     * **On Success** > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
+     * **On Failure** > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Audio to Text</b> node.</li></ul>
 
-<ol start="8"><li>Finally, <a href="#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol>
+<ul><li>Finally, <a href="#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ul>
 
-## Configure and Test the Flow for the Node
+## Test the Flow for the Node
 
 ### Step 1: (Optional) Add Input Variable(s)
 
