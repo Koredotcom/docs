@@ -10,13 +10,13 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Configure</font>
 
-**Advanced Topic Discovery**
+**Topic Discovery**
 
-This enables QA, Supervisors, and Business Managers to visualize conversation topics across the contact center, linked to key metrics, such as Average Handling Time (AHT), Sentiment, and Resolution rate. Using custom taxonomies and intuitive bubble charts, users can identify trends, explore topics in-depth, and analyze related metrics and generated intents, making it easier to enhance coaching and drive process improvements. 
+This enables QA, Supervisors, and Business Managers to visualize conversation topics across the contact center, linked to key metrics, such as Average Handling Time (AHT), Sentiment, and Resolution rate. Using custom taxonomies and intuitive bubble charts, users can identify trends, explore topics in-depth, and analyze related metrics and generated intents, making it easier to enhance coaching and drive process improvements. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/topic-discovery.md)
 
 **Taxonomy Builder**
 
-The builder enables Contact Center Managers, Analysts, and QA teams to create custom taxonomies with three-level hierarchical structures, enhancing conversation categorization. This improves analysis across channels, allowing deeper insights into topic-level metrics and business-specific trends. 
+The builder enables Contact Center Managers, Analysts, and QA teams to create custom taxonomies with three-level hierarchical structures, enhancing conversation categorization. This improves analysis across channels, allowing deeper insights into topic-level metrics and business-specific trends. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/taxonomy-builder/overview.md).
 
 <hr>
 
