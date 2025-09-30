@@ -171,7 +171,7 @@ Metrics include:
      * **On Success** > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
      * **On Failure** > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Audio to Text</b> node.</li></ul>
 
-<ul><li>Finally, <a href="#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ul>
+<ul><li>Finally, <a href="#step-3-run-the-flow" target="_blank">run the flow</a> and fix any issues found.</li></ul>
 
 ## Test the Flow for the Node
 
@@ -179,12 +179,11 @@ Metrics include:
 
 1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
 
-<img src="../images/add-input-variable-audio-to-text.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
+      <img src="../images/add-input-variable-audio-to-text.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="2"><li>Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable</b> window to define a text input variable.</li>
 <li>Click <b>Save</b>.</li>
-
-<img src="../images/select-text-type-input.png" alt="select text and save" title="select text and save" style="border: 1px solid gray; zoom:75%;"></ol>
+      <img src="../images/select-text-type-input.png" alt="select text and save" title="select text and save" style="border: 1px solid gray; zoom:75%;"></ol>
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node.
 
@@ -194,7 +193,7 @@ Add all the required input variables to run the flow in the **Input** section of
 1. Click the **Output** tab for the **Start** node.
 2. Click **Add Output Variable**.
 
-<img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
+     <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the transcribed text output.</li>
 <li>Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
@@ -209,8 +208,8 @@ To run and test the flow, follow the steps below:
 <img src="../images/click-run-button.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
 
 2. (Optional) Add the value for **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
-
-<img src="../images/gen-output-audio-to-text.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
+    
+      <img src="../images/gen-output-audio-to-text.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Click <b>Generate Output</b>.</li></ol>
 
