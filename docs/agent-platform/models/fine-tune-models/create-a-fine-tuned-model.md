@@ -1,6 +1,6 @@
 # Create a Fine-Tuned Model
 
-You can fine-tune a Platform-hosted model or import one from Hugging Face. The fine-tuning process involves the following steps:
+You can fine-tune a Inception-hosted model or import one from Hugging Face. The fine-tuning process involves the following steps:
 
 1. General details
 2. Selecting a base model

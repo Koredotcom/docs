@@ -1,6 +1,6 @@
 # Supported AI Models on Agent Platform
 
-The Agent Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Platform-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
+The Agent Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Inception-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
 
 ## Supported AI Models for Agents and Supervisors
 
@@ -124,7 +124,7 @@ While Agent and Supervisor Orchestration is supported for most commonly used LLM
 
 ## Supported Open-Source Models
 
-Agent Platform currently supports over thirty open-source models and provides them as a service. Platform-hosted models can be optimized prior to deployment, making them ideal for private environments or specialized applications.
+Agent Platform currently supports over thirty open-source models and provides them as a service. Inception-hosted models can be optimized prior to deployment, making them ideal for private environments or specialized applications.
 
 The supported models and their variants are given below:
 
