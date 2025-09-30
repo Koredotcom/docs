@@ -1313,7 +1313,7 @@ The following third-party integrations are available on the Agent Platform:
    </td>
   </tr>
   <tr>
-   <td>SearchAI
+   <td>Searc hAI
    </td>
    <td>Connect to your users' SearchAssist setup.
    </td>

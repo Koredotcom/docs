@@ -12,7 +12,7 @@ This document provides information on the feature updates and enhancements intro
 
 **Introducing Knowledge Base Test Tool**
 
-The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected SearchAI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
+The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected Search AI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
 
 **Enhanced Context Management**
 
@@ -673,7 +673,7 @@ You can now easily track conversations with the Agentic app using the new timeli
 
 **Improved Model Evaluation via Ground Truth Columns and Search AI Enhancements**
 
-Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, SearchAI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
+Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, Search AI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
 
 <font size="4">Other Improvements</font>
 
