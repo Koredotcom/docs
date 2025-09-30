@@ -69,6 +69,7 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
       <img src="../images/select-connection-name.png" alt="select connection" title="select connection" style="border: 1px solid gray; zoom:75%;">
     * Click <b>Add Action</b> to add and configure the required actions or tasks from the service provider.
+
     <div class="admonition note">
     <p class="admonition-title">Note</p>
     <p>Only one action can be added and configured at a time.</p>
@@ -147,7 +148,8 @@ After adding and configuring the node as mentioned [here](./integration-node.md/
 ### Step 1: (Optional) Add Input Variable(s)
 
 * Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a>
- <img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
+
+      <img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
 
 * In the <b>Enter input variable</b> window, select the appropriate data type for the <b>Type</b> field to define the input variable.
 * Click <b>Save</b>.
@@ -162,7 +164,9 @@ This step is required because the **Start node** must have at least one **output
 
 * Click the <b>Start</b> node and select the <b>Output</b> tab.
 * Click <b>Add Output Variable</b>.
+   
    <img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;">
+
 * Enter the value for <b>Name (key)</b> and select <i>String</i> for <b>Type</b>.
 * Click <b>Save</b>. <a href="#access-the-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
 <img src="../images/output-variable.png" alt="op variable" title="op variable" style="border: 1px solid gray; zoom:75%;">
@@ -183,7 +187,6 @@ To run and test the flow, follow the steps below:
 
 * (Optional) Add the value for the **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
 * Click **Generate Output**.
-   
    <img src="../images/click-generate-op.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
  
 

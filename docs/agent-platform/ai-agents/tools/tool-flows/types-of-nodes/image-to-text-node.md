@@ -59,32 +59,30 @@ In this document, you will learn how to add the node to your flows, configure it
 
 * Enter or select the following **General Settings**:
 
-  * <b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>InsuranceEvaluation</i>.”
-  * Select a model from the list of configured models.
+   * <b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>InsuranceEvaluation</i>.”
+   * Select a model from the list of configured models.
 
      <div class="admonition note">
      <p class="admonition-title">Note</p>
      <p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are supported.</p>
      </div>
 
-   * Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the tool endpoint.
+    * Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the tool endpoint.
 
-     <div class="admonition note">
-     <p class="admonition-title">Key Considerations</p>
-     <p><ul><li>The user can provide only one file URL at a time for processing.</li>
-     <li>The file source url must be valid for the node to function properly.</li>
-     <li>Only PNG, JPEG, and JPG file formats are supported.</li>
-     <li>Except for image input handling, the OCR node functions like the existing AI node.</li>
-     <li>Sending images and related settings are handled by the <a href="../../../../../apis/apis-list/upload-file-api" target="_blank">File Upload API</a>.</li>
-     <li>Image input preprocessing is supported in the following formats:</li>
-    <ul><li>Binary, base64-encoded for Anthropic models.</li>
-    <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></p></div>
+      <div class="admonition note">
+      <p class="admonition-title">Key Considerations</p>
+      <p><ul><li>The user can provide only one file URL at a time for processing.</li>
+      <li>The file source url must be valid for the node to function properly.</li>
+      <li>Only PNG, JPEG, and JPG file formats are supported.</li>
+      <li>Except for image input handling, the OCR node functions like the existing AI node.</li>
+      <li>Sending images and related settings are handled by the <a href="../../../../../apis/apis-list/upload-file-api" target="_blank">File Upload API</a>.</li>
+      <li>Image input preprocessing is supported in the following formats:</li>
+     <ul><li>Binary, base64-encoded for Anthropic models.</li>
+     <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></p></div>
 
-
-   * <b>System Prompt</b>: System prompts guide the model’s behavior and response style. Enter a system prompt to define its role for your use case. For example: "<i>You are a vehicle insurance assistant that analyzes uploaded vehicle images to assess damage and estimate repair costs in USD</i>."
-   * <b>Prompt</b>: User prompts define specific questions or requests for the model. Provide clear instructions for the model to follow, using context variables for dynamic inputs in the syntax: <code>{{context.variable_name}}</code>. <b>Example:</b> "<i>Check the image provided for the damaged parts in the car and select what parts are affected from the list below - <code>{{context.parts_list}}</code></i>."</li>
+    * <b>System Prompt</b>: System prompts guide the model’s behavior and response style. Enter a system prompt to define its role for your use case. For example: "<i>You are a vehicle insurance assistant that analyzes uploaded vehicle images to assess damage and estimate repair costs in USD</i>."
+    * <b>Prompt</b>: User prompts define specific questions or requests for the model. Provide clear instructions for the model to follow, using context variables for dynamic inputs in the syntax: <code>{{context.variable_name}}</code>. <b>Example:</b> "<i>Check the image provided for the damaged parts in the car and select what parts are affected from the list below - <code>{{context.parts_list}}</code></i>."</li>
    <img src="../images/configuration-set.png" alt="configurations tab" title="configurations tab" style="border: 1px solid gray; zoom:75%;">
-
 
    * **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
     You can define a JSON schema to structure the model's response if the chosen model supports the response format. By default, if no schema is provided, the model will respond with plain text.
