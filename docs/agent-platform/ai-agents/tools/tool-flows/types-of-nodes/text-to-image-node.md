@@ -150,9 +150,9 @@ The metrics include:
     * <b>On Success</b> -> <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
     * <b>On Failure</b> -> <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Text to Image</b> node.
 
-  For the configured inputs, the following image is generated.
+    For the configured inputs, the following image is generated.
     
-  <img src="../images/node-output-image.png" alt="output image" title="output image" style="border: 1px solid gray; zoom:75%;">
+     <img src="../images/node-output-image.png" alt="output image" title="output image" style="border: 1px solid gray; zoom:75%;">
 
 * Finally, <a href="#step-3-run-the-flow" target="_blank">run the flow</a> and fix any issues found.
 
