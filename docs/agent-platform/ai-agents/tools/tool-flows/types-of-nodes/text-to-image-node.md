@@ -115,9 +115,6 @@ The metrics include:
 
 ### Step 2: Add the Text to Image Node
 
-* Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
 * Click the "**+**" icon for **Text to Image** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Text to Image**.
   <img src="../images/text-to-image-add-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
 
@@ -153,18 +150,15 @@ The metrics include:
     * <b>On Success</b> -> <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
     * <b>On Failure</b> -> <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Text to Image</b> node.
 
-   <p><b>Node Output</b></p>
-
-    For the configured inputs, the following image is generated.
+  For the configured inputs, the following image is generated.
     
-    <img src="../images/node-output-image.png" alt="output image" title="output image" style="border: 1px solid gray; zoom:75%;">
-
+  <img src="../images/node-output-image.png" alt="output image" title="output image" style="border: 1px solid gray; zoom:75%;">
 
 * Finally, <a href="#step-3-run-the-flow" target="_blank">run the flow</a> and fix any issues found.
 
 ## Test the Flow for the Node
 
-After adding and configuring the node as mentioned [here](./text-to-image-node.md/#steps-to-add-and-configure-the-node){:target="_blank"}, follow the steps below to test the flow.
+After adding and configuring the node as mentioned [here](./text-to-image-node.md/#add-and-configure-a-text-to-image-node){:target="_blank"}, follow the steps below to test the flow.
 
 <div class="admonition note">
 <p class="admonition-title">Dynamic Prompt Inputs</p>
@@ -174,39 +168,40 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}.
+* Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}.
 
-      <img src="../images/add-input-variable-text-to-image.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/add-input-variable-text-to-image.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="2"><li>Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable window</b> to define a text input variable.</li>
-<li>Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
-   <img src="../images/select-text-for-input.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
+* Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable window</b> to define a text input variable.
+* Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
+   <img src="../images/select-text-for-input.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node.
 
 
 ### Step 2: Add Output Variable(s)
 
-1. Click the **Output** tab for the **Start** node.
-2. Click **Add Output Variable**.
+* Click the **Output** tab for the **Start** node.
+* Click **Add Output Variable**.
 
     <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the image URL.</li>
-<li>Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
-<img src="../images/output-var.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;"></ol>
+* Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the image URL.
+<li>Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
+
+   <img src="../images/output-var.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 3: Run the Flow
 
 To run and test the flow, follow the steps below:
 
-1. Click the **Run Flow** button at the top-right corner of the flow builder.
+* Click the **Run Flow** button at the top-right corner of the flow builder.
 <img src="../images/run-the-flow-text-to-image.png" alt="run the flow" title="run the flow" style="border: 1px solid gray; zoom:75%;">
     
-2. (Optional) Add the value for **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
-3. Click **Generate Output**.
+* (Optional) Add the value for **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
+* Click **Generate Output**.
 
-    <img src="../images/generate-output-text-to-image.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/generate-output-text-to-image.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
 The **Debug** window generates the flow log and results, as shown below. [Learn more](../types-of-nodes/text-to-image-node.md/#step-3-run-the-flow){:target="_blank"} about running the tool flow.
 

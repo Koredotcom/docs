@@ -89,7 +89,7 @@ In this document, you will learn how to add Integration Nodes to your flows, con
      
     * The added action is listed in the <b>General Properties</b> window of the node. This action is applied to all the connections available for the provider.
     <img src="../images/integration-gen-properties.png" alt="gen properties" title="gen properties" style="border: 1px solid gray; zoom:75%;">
-    
+
    * Click the <b>Connections</b> icon and select <b>Go to Node</b> for success and failure conditions.
      * <b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
      * <b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
@@ -97,7 +97,7 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
     The node connects to the service using the selected connection and performs the configured action when the flow is run.
 
-    The **next step** is to configure and test the flow for the node. [Learn more](../types-of-nodes/integration-node.md/#configure-and-test-the-flow-for-the-node){:target="_blank"}.
+    The **next step** is to configure and test the flow for the node. [Learn more](./integration-node.md/#add-and-configure-an-integration-node){:target="_blank"}.
 
 ## Manage Actions
 
@@ -139,17 +139,18 @@ This opens a **code viewer** where you can view the JSON that defines the curren
 
 <img src="../images/json-code-viewer.png" alt="json code viewer" title="json code viewer"  style="border: 1px solid gray; zoom:75%;">
 
-## Configure and Test the Flow for the Node
+## Test the Flow for the Node
 
-After adding and configuring the node as mentioned [here](../types-of-nodes/integration-node.md/#steps-to-add-and-configure-the-node){:target="_blank"}, follow the steps below to test the flow.
+After adding and configuring the node as mentioned [here](./integration-node.md/#add-and-configure-an-integration-node){:target="_blank"}, follow the steps below to test the flow.
 
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-<ol><li>Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a></li>
-<img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;"></ol>
-<ol start="2"><li>In the <b>Enter input variable</b> window, select the appropriate data type for the <b>Type</b> field to define the input variable.</li>
-<li>Click <b>Save</b>.</li></ol>
+* Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a>
+ <img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
+
+* In the <b>Enter input variable</b> window, select the appropriate data type for the <b>Type</b> field to define the input variable.
+* Click <b>Save</b>.
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node. 
 
@@ -159,12 +160,12 @@ Add all the required input variables to run the flow in the **Input** section of
 
 This step is required because the **Start node** must have at least one **output parameter** linked to the node.
 
-<ol><li>Click the <b>Start</b> node and select the <b>Output</b> tab.</li>
-<li>Click <b>Add Output Variable</b>.</li>
-<img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
-<ol start="3"><li>Enter the value for <b>Name (key)</b> and select <i>String</i> for <b>Type</b>.</li>
-<li>Click <b>Save</b>. <a href="#access-the-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
-<img src="../images/output-variable.png" alt="op variable" title="op variable" style="border: 1px solid gray; zoom:75%;"></li></ol>
+* Click the <b>Start</b> node and select the <b>Output</b> tab.
+* Click <b>Add Output Variable</b>.
+   <img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;">
+* Enter the value for <b>Name (key)</b> and select <i>String</i> for <b>Type</b>.
+* Click <b>Save</b>. <a href="#access-the-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
+<img src="../images/output-variable.png" alt="op variable" title="op variable" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 3: Run the Flow
 
@@ -173,15 +174,15 @@ This step is required because the **Start node** must have at least one **output
 <p>Before running the flow, resolve the tool flow errors that appear when you click the <b>Warning</b> icon.</p>
 </div>
 
-<img src="../images/check-errors.png" alt="errors" title="errors" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/check-errors.png" alt="errors" title="errors" style="border: 1px solid gray; zoom:75%;">
 
 To run and test the flow, follow the steps below:
 
-1. Click the **Run Flow** button at the top-right corner of the flow builder. 
-<img src="../images/click-run-flow.png" alt="click run flow" title="click run flow" style="border: 1px solid gray; zoom:75%;">
+* Click the **Run Flow** button at the top-right corner of the flow builder. 
+    <img src="../images/click-run-flow.png" alt="click run flow" title="click run flow" style="border: 1px solid gray; zoom:75%;">
 
-2. (Optional) Add the value for the **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
-3. Click **Generate Output**.
+* (Optional) Add the value for the **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
+* Click **Generate Output**.
    
    <img src="../images/click-generate-op.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
  
