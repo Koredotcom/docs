@@ -209,8 +209,8 @@ This functionality helps users test how effectively their RAG system uses extern
 4. **Apply meta filters (Optional)**: Set Meta filters to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. [Learn more](https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters). 
 
 
-5. **Test the connection**: Click **Test** to verify the SearchAI connection. The response from the connection will be displayed in the **Response** tab of the properties panel.
-The Response tab shows whether the first-row query is returning an answer, allowing the user to verify if the SearchAI connection is functioning correctly.
+5. **Test the connection**: Click **Test** to verify the Search AI connection. The response from the connection will be displayed in the **Response** tab of the properties panel.
+The Response tab shows whether the first-row query is returning an answer, allowing the user to verify if the Search AI connection is functioning correctly.
 
 6. **Run Search AI**: Click Run to execute the retrieval process. Evaluation Studio populates two new columns:
 

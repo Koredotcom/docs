@@ -7,7 +7,7 @@ The **DocSearch Node** is a Retrieval-Augmented Generation (RAG)-powered compone
 * **RAG-Powered Search**: Combines traditional retrieval (search, databases) with generative LLMs as follows:
     * **Retrieval & Pre-processing**: Queries indexed content using advanced algorithms, then refines results through tokenization and filtering. 
     * **Grounded Generation**: Integrates refined results with LLMs for accurate and context-rich responses. 
-* **Seamless SearchAI Integration**: Connects to your Search AI App to query indexed documents and return results via the Answer Generation engine.
+* **Seamless SearchAI Integration**: Connects to your Search AI app to query indexed documents and return results via the Answer Generation engine.
 * **Dynamic Query Support**: Supports static and dynamic inputs for flexible, context-aware search automation.
 * **Meta Filter Configuration**: Use optional meta filters to refine results, or search across all linked documents by default.
 * **User Redirection Option**: Redirect users to the full Search AI App for a more comprehensive search experience when needed.
@@ -70,13 +70,13 @@ After fetching the Search AI application credentials, configuring the source, an
 * Scroll down to **Search AI** and click **Link an App**.
   <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
 
-* In the **Search AI** window, provide the required information that you copied from the SearchAI application in 
+* In the **Search AI** window, provide the required information that you copied from the Search AI app in 
 [Step 1](./docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
 * Click **Test** to test the connection.
 * If the connection is successful, click **Confirm**.
   <img src="./../images/searchai-connection-form.png" alt="searchai connection form" title="searchai connection form" style="border: 1px solid gray; zoom:75%;">
 
-  A success message is displayed and the connection is listed for SearchAI.
+  A success message is displayed and the connection is listed for Search AI.
    <img src="./../images/listed-connection.png" alt="listed connection" title="listed connection" style="border: 1px solid gray; zoom:75%;">
 
   If the connection fails with the following message, check and re-enter the correct Search AI app credentials.
@@ -162,7 +162,7 @@ format is <code>{{context.steps.<<<b>nodename</b>>>.dynamic
 path}}</code>. For example, it
 could be <code>context.steps.DocSearch.response.response.answer</code> in one case or <code>context.steps.DocSearch.response.response.response.answer</code> in another.
 
-Check the sample response from SearchAI to find the correct key that holds the content.
+Check the sample response from Search AI to find the correct key that holds the content.
 Use that key in your tool flow. You may also need to extract multiple chunks from different keys.</p></div>
 
 ## Related Links
