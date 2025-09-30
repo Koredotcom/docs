@@ -4,7 +4,7 @@ The **Adherence Heatmap** feature helps supervisors to track and visualize trend
 
 Based on the date range, agents, and language filter selection, supervisors can analyze the color-coded adherence data in the heatmap to quickly identify areas of concern, monitor agent compliance across evaluation forms in evaluation metrics or queues, and also spot agents who need special attention. This provides valuable insights, enabling supervisors to make data-driven decisions and take focused actions to improve agent performance.
 
-You can access **Adherence Heatmap** by navigating to **Quality AI** > **Analyze** > **Adherence Heatmap**.   
+You can access **Adherence Heatmap** by navigating to **Quality AI** > **ANALYZE** > **Adherence Heatmap**.   
 <img src="../adher-heatmap/images/adherence-heatmap-landing-page.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 !!! Note

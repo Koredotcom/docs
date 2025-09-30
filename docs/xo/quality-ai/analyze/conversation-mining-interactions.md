@@ -4,7 +4,7 @@ The **Interactions** feature lets the Supervisor view and filter scored interact
 
 ## Accessing Interactions
 
-Access **Interactions** by navigating to **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**.  
+Access **Interactions** by navigating to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interactions**.  
 <img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
