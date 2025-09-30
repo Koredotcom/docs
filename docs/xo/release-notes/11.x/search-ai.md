@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Minor Release</U>
 
-This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
 
 <font size="4">Dynamic Custom Data Support in Business Rules</font>
 
