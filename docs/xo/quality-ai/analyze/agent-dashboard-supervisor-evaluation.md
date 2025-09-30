@@ -4,7 +4,7 @@ This allows supervisors to drill down into language-specific evaluation data and
 
 ## Access Agent Dashboard - Evaluation
 
-You can access the **Agent-Specific Dashboard** - **Evaluation** by navigating to **Quality AI** > **Analyze** > **Dashboard** > **Evaluation**.    
+You can access the **Agent-Specific Dashboard** - **Evaluation** by navigating to **Quality AI** > **ANALYZE** > **Dashboard** > **Evaluation**.    
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
 ### Filter Options

@@ -20,7 +20,7 @@ The dashboard enables supervisors to maintain quality standards, identify improv
 
 ### Access Supervisor Dashboard 
 
-Access the **Dashboard** by navigating to **Quality AI** > **Analyze** > **Dashboard**.  
+Access the **Dashboard** by navigating to **Quality AI** > **ANALYZE** > **Dashboard**.  
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality AI Dashboard" title="Quality AI Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
@@ -252,5 +252,5 @@ You can view the **Agent Leaderboard** or **Agent-Specific Dashboard** in the fo
     
         * Bookmarked interactions assist in assigning relevant coaching tasks, with the most recent interactions displayed first. 
         
-        For more information, see [Supervisor View with Agent-Specific Dashboard)](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard Agent View](../analyze/my-dashboard-agent-view.md).
+        For more information, see [Supervisor View with Agent-Specific Dashboard](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard - Agent View](../analyze/my-dashboard-agent-view.md).
         

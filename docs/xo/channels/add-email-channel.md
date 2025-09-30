@@ -256,7 +256,7 @@ After successful DKIM verification, follow these steps:
 
 
 1. On the Email Channel page, click **Complete Configuration** for a domain.  
-<img src="../images/email-custom-config.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/email-custom-config-new.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
 2. Click **+ New Email ID** to add an email to the domain. 
 3. Enter the **Display Name**, add the **Email ID**  from which emails have to be forwarded or sent, and select the **Usage**.

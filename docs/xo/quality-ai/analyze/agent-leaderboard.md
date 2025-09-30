@@ -4,7 +4,7 @@ This **Agent Leaderboard** helps auditors and managers track agent performance a
 
 ## Access Agent Leaderboard 
 
-Access the **Agent Leaderboard** by navigating to **Quality AI** > **Analyze** > **Agent Leaderboard**.   
+Access the **Agent Leaderboard** by navigating to **Quality AI** > **ANALYZE** > **Agent Leaderboard**.   
 <img src="../agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 ### Automated Scoring Details
@@ -47,7 +47,7 @@ The **Agent Leaderboard** shows all the agents across queues and channels, which
 
 * **Sort**: This allows to sort agents by metrics, such as **Agent Scorecard**, **Total Interactions**, **Kore Evaluation Score**, **Supervisor Audit Score**, **Coaching Assignments**, and **Fail Percentage** to identify top or bottom performers.
 
-* **Date and Time Range**: This allows a focused review of performance over specific periods. By default, the Agent Leaderboard calendar displays data of the last 7 days. Learn more.
+* **Date and Time Range**: This allows a focused review of performance over specific periods. By default, the Agent Leaderboard calendar displays data of the last seven days.
 
 * **Agent Search**: This allows search agents who are part of the same queues that an agent belongs to.
 
@@ -77,4 +77,4 @@ This provies a personalized dashboard for each agent, accessible to both agents 
 Click an agent’s name on the leaderboard to view the **Agent Dashboard - Supervisor Overview**. This provides detailed performance insights and options to assign coaching sessions as needed.   
 <img src="../agent-leaderboard/images/agent-leaderboard-supervisor-overview.png" alt="Agent Dashboard" title="Agent Dashboard" style="border: 1px solid gray; zoom:60%;">
 
-For more information, see [Supervisor View with Agent-Specific Dashboard)](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard Agent View](../analyze/my-dashboard-agent-view.md).
+For more information, see [Supervisor View with Agent-Specific Dashboard](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard - Agent View](../analyze/my-dashboard-agent-view.md).

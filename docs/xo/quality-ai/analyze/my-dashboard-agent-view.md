@@ -18,7 +18,7 @@
 
 ### Access My Dashboard 
 
-Access **My Dashboard** by navigating to **Quality AI** > **Analyze** > **My Dashboard**.  
+Access **My Dashboard** by navigating to **Quality AI** > **ANALYZE** > **My Dashboard**.  
 <img src="../agent-dashboard/images/my-dashboard-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
@@ -197,7 +197,7 @@ The tab displays conversations based on the selected language. By default, all l
 
 ### Access the Evaluation Tab
 
-Access **Evaluation** by navigating to **Quality AI** > **Analyze** > **My Dashboard** > **Evaluation**.  
+Access **Evaluation** by navigating to **Quality AI** > **ANALYZE** > **My Dashboard** > **Evaluation**.  
 <img src="../agent-dashboard/images/my-dashboard-evaluation.png" alt="Evaluation" title="Evaluation" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
