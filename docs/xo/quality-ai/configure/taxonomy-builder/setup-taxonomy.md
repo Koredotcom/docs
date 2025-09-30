@@ -72,7 +72,7 @@ The system supports three distinct hierarchical levels for topic organization:
 
 #### Add Third Level
 
-1. Click the + **Add Level 3 **button under the desired L2.    
+1. Click the + **Add Level 3** button under the desired L2.    
 <img src="../images/add-level-3-item.png" alt="Add Level 3" title="Add Level 3" style="border: 1px solid gray; zoom:100%;">  
 
 2. Complete the required fields:
@@ -83,7 +83,7 @@ The system supports three distinct hierarchical levels for topic organization:
 
 3. Check the resolution detection option if you want to track successful/unsuccessful outcomes (enabled by default). 
 
-4. Click **Create **to add the intent to your taxonomy.
+4. Click **Create** to add the intent to your taxonomy.
 
 #### Editing Existing Level
 
@@ -159,7 +159,7 @@ Saving and Managing Versions:
 
 * Preview the new structure before confirming changes.
 
-**Level Changes:** You can move intents between different levels (e.g., L2 to L1, L2 to L3) while maintaining their child relationships.
+**Level Changes**: You can move intents between different levels (e.g., L2 to L1, L2 to L3) while maintaining their child relationships.
 
 **Important Considerations**:
 
@@ -215,7 +215,7 @@ Implement a taxonomy structure for financial services using real-world banking s
 
 1. Click **Add Intent** and select L1 level.
 
-2. Enter a clear, business-aligned name (e.g., "Retail Banking").
+2. Enter a clear, business-aligned name (for example, "Retail Banking").
 
 3. Write a description: "All customer interactions related to individual banking services, including personal accounts, loans, and credit products. Covers day-to-day banking needs for retail customers rather than business or commercial services."
 
@@ -231,7 +231,7 @@ Implement a taxonomy structure for financial services using real-world banking s
 
 1. Select an appropriate L2 parent.
 
-2. Use action-oriented naming that reflects customer intent (e.g., "Payment Issues" vs. "Payments").
+2. Use action-oriented naming that reflects customer intent (for example, "Payment Issues" vs. "Payments").
 
 3. Create detailed, example-rich descriptions: "Customer experiencing problems making credit card payments, including failed online payments, payment processing delays, payment method changes, autopay setup issues. Look for phrases like 'payment won't go through,' 'card was declined for payment,' 'need to change payment method.'"
 

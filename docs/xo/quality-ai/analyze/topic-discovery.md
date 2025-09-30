@@ -124,17 +124,23 @@ The following table depicts the bot behavior for the end of the conversation eve
   </tr>
 </table>
 
-### Topics Filter 
+### Topics Filter
+
 
 Advanced filtering options provide granular control over your data view, allowing you to layer multiple criteria and progressively narrow your analysis. Click the **Filters** button to reveal these options, which work together to help you focus on specific channels, languages, queues, agents, or performance thresholds.
 
+
 * **Channel Filter**: Choose between Voice, Chat, or both.
+
 
 * **Language Filter**: Multi-select dropdown with search, *selectively remove*, or **Clear All**.
 
+
 * **Queue Filter**: Narrow by queues; automatically updates agent filter.
 
+
 * **Agent Filter**: Search and select agents (queue-dependent).
+
 
 * **Filter by AHT**: Set min–max values or acceptable variance.  
 <img src="../topic-discovery/images/topics-filter.png" alt="Topics Filter" title="Topics Filter" style="border: 1px solid gray; zoom:100%;">
@@ -143,95 +149,138 @@ Advanced filtering options provide granular control over your data view, allowin
 
 The central visualization displays topics as interactive bubbles with meaningful visual encoding, providing an at-a-glance view of conversation volumes, performance metrics, and relationships between topics. This intuitive interface allows you to explore your conversation data spatially, with visual cues guiding you to areas that need attention.
 
+
 * **Bubble Size**: Conversation volume (larger = more conversations).
 
+
 * **Positioning**: Related topics cluster together.
+
 
 * **Labels**: L1 topics labeled outside, L2/L3 inside bubbles.   
 <img src="../topic-discovery/images/bubble-visualization-canvas.png" alt="Bubble Visualization Canvas" title="Bubble Visualization Canvas" style="border: 1px solid gray; zoom:100%;">
 
+
 ### Hovering Tooltips
 
-Hovering over any bubble reveals a detailed tooltip that provides quick access to key metrics without leaving the main visualization. This instant feedback mechanism helps you assess topic performance and identify areas for deeper investigation.
+
+Hovering over any bubble reveals a detailed tooltip that provides quick access to key metrics without leaving the main visualization. This instant feedback mechanism helps you assess topic performance and identify areas for deeper investigation.  
+
 
 * **Topic Name**: Full name if truncated in visualization.
 
+
 * **Conversation Count**: Total number of conversations.
+
 
 * **Total Conversations**: Total conversations with trend indicators (spike/dip) percentage.
 
+
 * **Average Sentiment Score**: Average of the overall sentiment score with trend analysis.
+
 
 * **Sentiment Breakdown**: Distribution across Positive/Neutral/Negative.  
 <img src="../topic-discovery/images/hovering-tooltips.png" alt="Hovering Tooltips" title="Hovering Tooltips" style="border: 1px solid gray; zoom:100%;">
 
+
 ### Configured Intents vs. Generated Intents
+
 
 Topic Discovery offers two distinct views for analyzing conversation topics, each serving different analytical needs:
 
+
 **Configured Intents**
+
 
 Configured Intents display topics based on your organization's pre-defined taxonomy structure. These are the conversation categories you've explicitly set up and trained the system to recognize.
 
+
 When to use Configured Intents:
+
 
 * Monitoring known business categories and established conversation types.
 
+
 * Tracking performance against your documented taxonomy.
+
 
 * Comparing results to historical data using consistent categorization.
 
+
 * Analyzing conversations within your existing framework.
+
 
 To set up or modify your taxonomy structure, refer to the [Setup Taxonomy](../configure/taxonomy-builder/setup-taxonomy.md).
 
 **Generated Intents**
 
+
 Generated Intents leverage AI to automatically discover and surface conversation themes that may not be captured in your configured taxonomy. The system analyzes conversation patterns and creates topic groupings based on actual customer language and emerging trends.
+
 
 When to use Generated Intents:
 
+
 * Discovering blind spots in your current taxonomy.
+
 
 * Identifying emerging customer issues or topics.
 
+
 * Exploring unexpected conversation patterns.
+
 
 * Validating and expanding your taxonomy structure.
 
+
 * Uncovering new product issues or customer needs.
 
+
 ## Topic Detail Slideout
+
 
 The detail slideout provides comprehensive analytics for individual topics, combining historical trends, performance metrics, and qualitative insights. Access this detailed view through **View Details** from any bubble tooltip to understand the full context behind the numbers.   
 <img src="../topic-discovery/images/topic-detail-slideout.png" alt="Hovering Tooltips" title="Hovering Tooltips" style="border: 1px solid gray; zoom:100%;">
 
+
 ### Overview
+
 
 The Overview tab delivers comprehensive performance analytics for the selected topic:
 
+
 * **Total Conversations Percentage**: Topic's share of all conversations.
+
 
 * **Average Sentiment Score**: Overall sentiment with trend analysis.
 
+
 * **Sentiment Breakdown**: Distribution across emotional categories.
+
 
 * **Average Handle Time**: Performance metric with trends.
 
+
 * **Average Resolution Percentage**: Success rate analysis.
+
 
 * **Top Keywords**: Most frequent terms in topic conversations.
 
+
 * **Emotion Detection**: Top 6 emotions identified in conversations.
 
+
 ### Conversations
+
 
 The conversation analysis section allows you to move from aggregate metrics to individual interactions, helping you understand the real customer experiences behind your data. This section provides both list views for scanning multiple conversations and detailed views for in-depth analysis.  
 <img src="../topic-discovery/images/conversations.png" alt="Hovering Tooltips" title="Hovering Tooltips" style="border: 1px solid gray; zoom:100%;">
 
+
 **Conversation List Structure**
 
+
 Comprehensive table displaying conversations containing the selected topic:
+
 
 <table><table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -279,47 +328,68 @@ Comprehensive table displaying conversations containing the selected topic:
 
 **Navigation and Access**
 
+
 The conversation list view serves as your gateway to individual customer interactions, providing essential information at a glance while offering multiple ways to sort, search, and filter results. This organized approach helps you quickly locate conversations of interest and assess patterns across multiple interactions.
+
 
 * **Sorting**: Most recent conversations first.
 
+
 * **Pagination**: 10 conversations per page with standard navigation controls.
 
+
 * **Page jumping**: Direct access to specific pages.
+
 
 * **All Conversations** Button: Opens full [Conversation Mining - Interactions](../analyze/conversation-mining-interactions.md) view with pre-applied topic filters.     
 <img src="../topic-discovery/images/conversation-mining-interactions.png" alt="Conversation Mining" title="Conversation Mining" style="border: 1px solid gray; zoom:100%;">  
 
+
 **Full Conversation View Slideout**
+
 
 The full conversation view slideout provides a comprehensive, immersive experience for analyzing individual customer interactions. This detailed interface combines the complete conversation thread with contextual metadata, analytical insights, and visual indicators to help you understand what happened, why, and how it can inform future improvements.    
 <img src="../topic-discovery/images/full-conversation-view.png" alt="Hovering Tooltips" title="Hovering Tooltips" style="border: 1px solid gray; zoom:100%;"> 
 
+
 **Conversation Details**
+
 
 * **Complete Thread**: Full customer-agent interaction.
 
+
 * **Topic Highlighting**: Visual indicators where topics were identified.
+
 
 * **Metadata Display**: Channel, duration, resolution status, sentiment scores.
 
+
 * **Timeline View**: Chronological flow of conversation.
+
 
 * **Context Information**: Queue, agent, and channel details.
 
+
 **Analysis Tools**
+
 
 * **Sentiment Score**: Sentiment score throughout the conversation.
 
+
 * **Empathy Score**: Empathy score throughout the conversation.
+
 
 * **Crutch Word Score** → Crutch Word score throughout the conversation.
 
+
 ## Use Case Example: Identifying Agent Coaching Opportunities
+
 
 **Scenario**: A QA Manager notices increasing customer complaints but needs to identify specific areas for improvement.
 
+
 **Step-by-Step Process**:
+
 
 1. **Initial Analysis**
 
@@ -329,40 +399,59 @@ The full conversation view slideout provides a comprehensive, immersive experien
 
     * Identify "Technical Support" as a high-volume, low-sentiment topic.
 
+
 2. **Drilldown Investigation**
 
+
     * Click the "Technical Support" bubble to reveal L2 topics.
-   
+
+
     * Notice "Software Installation" shows poor resolution rates.
-   
+
+
     * Click into "Software Installation" to see L3 subtopics.
-   
+
+
     * Identify "Driver Installation" as the primary problem area.
+
 
 3. **Detailed Analysis**
 
+
     * Open "Driver Installation" detail slideout.
-    
+
+
     * Review metrics: 150 conversations, 45% resolution rate, average sentiment: 2.
-    
+
+
     * Check top keywords: "error", "crash", "incompatible", "frustrated".
-    
+
+
     * Note top emotions: Anger (40%), Frustration (35%), Confusion (25%).
+
 
 4. **Conversation Review**
 
+
     * Click "View Conversations" to see individual interactions.
-    
+
+
     * Review 3-4 representative conversations to understand common failure patterns.
-    
+
+
     * Identify knowledge gaps in driver troubleshooting procedures.
+
 
 5. **Action Planning**
 
+
     * Use insights to develop a targeted training module on driver installation.
-   
+
+
     * Create job aids for common driver compatibility issues.
-   
+
+
     * Schedule coaching sessions with agents handling technical support.
+
 
 **Outcome**: Focused coaching intervention based on data-driven insights, resulting in improved resolution rates and customer satisfaction.
