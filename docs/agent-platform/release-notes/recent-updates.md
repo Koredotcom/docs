@@ -12,7 +12,7 @@ This document provides information on the feature updates and enhancements intro
 
 **Introducing Knowledge Base Test Tool**
 
-The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected SearchAI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
+The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected Search AI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
 
 **Enhanced Context Management**
 
@@ -50,7 +50,9 @@ Kore-hosted open-source models now support structured JSON output through the re
 The Agent Platform now supports additional AI models, providing greater flexibility for various use cases. These models include comprehensive platform integration with System Prompts, Tool Calling, Prompt Studio, Evaluation Studio, Tools, Parallel Tool Calling, Model Analytics, Audit Logs, Model Traces, Agentic Apps, and Image-to-Text Support.
 
 * OpenAI Models GPT-5 Family: gpt-5-2025-08-07, gpt-5-mini-2025-08-07, gpt-5-nano-2025-08-07, and gpt-5-chat-latest
-* Anthropic Model (2025-08-05 release): claude-opus-4-1
+* Anthropic Model: claude-opus-4-1-20250805
+
+   [Learn more :octicons-arrow-right-24:](../models/supported-models.md){:target="_blank"} 
 
 <hr>
 
@@ -673,7 +675,7 @@ You can now easily track conversations with the Agentic app using the new timeli
 
 **Improved Model Evaluation via Ground Truth Columns and Search AI Enhancements**
 
-Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, SearchAI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
+Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, Search AI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
 
 <font size="4">Other Improvements</font>
 

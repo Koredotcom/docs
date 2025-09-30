@@ -32,22 +32,27 @@ In this document, you will learn how to add the node to your flows, configure it
 
 Setting up a Text to Text node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
-**Steps**
+### Step 1: Open Flow Builder
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+* Log in → In **Agent Platform Modules** → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed.
-3. Click **Go to flow** to edit the in-development version of the flow.
-4. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **AI** > **Text to Text** from the pop-up menu. Alternatively, drag the **Text to Text** node under **AI** from the Assets panel onto the canvas.
-5. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+### Step 2: Add the Text to Text Node
+
+* In the flow builder, click the “**+**” icon on any existing node on the canvas and select **AI** > **Text to Text** from the pop-up menu. 
+* Alternatively, drag the **Text to Text** node under **AI** from the Assets panel onto the canvas.
+
+### Step 3: Configure the Node
+
+* Click the added node to open its properties dialog box. 
 <img src="../images/configure-gen-ai-node.png" alt="Configure AI Node" title="Configure AI Node" style="border: 1px solid gray; zoom:75%;">
 
-6. Enter or select the following **General Settings**:
+* Enter the following General Settings:
 
-    * **Node Name**: Enter an appropriate name for the node.
+    1. **Node Name**: Enter an appropriate name for the node.
 
-    * **Prompt options**: Choose one of the following options:
+    2. **Prompt options**: Choose one of the following options:
         * **Write your own prompt**: If you select 'Write your own prompt’, follow these steps:
             * **System Prompt**: Enter the system prompt for your use case. System prompts help you assign a role to the model. For example, “Generate a summary of the transcription of a conversation in a maximum of 5 lines without returning any special characters".
             * **Prompt**: Provide the instructions that you want the model to follow. You can use context variables as mentioned below. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt.  
@@ -74,23 +79,23 @@ Setting up a Text to Text node in a tool flow involves adding the node at the ap
 
             Importing a Prompt without Variables: If you import a prompt from Prompt Studio that does not have variables, you must customize the prompt and manually add the variables. In this case, the "Map Variables" field does not appear, as the imported prompt has no variables to map.
 
-    * **Select Model**: Select a model from the list of configured models.
+    3. **Select Model**: Select a model from the list of configured models.
     Note that when you choose a prompt from the prompt hub, it will also fetch the preferred model and connection associated with that version if you specified one during the commit process.
 
-    * **Timeout**: Select the timeout duration from the allowed range. The allowed range is 30 to 180 seconds (3 minutes). The default is 60 seconds (1 minute). The node triggers a timeout error if the request is not completed within the selected time frame.    
+    4. **Timeout**: Select the timeout duration from the allowed range. The allowed range is 30 to 180 seconds (3 minutes). The default is 60 seconds (1 minute). The node triggers a timeout error if the request is not completed within the selected time frame.    
 
         !!! note 
 
             Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
 
-    * **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
+    5. **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
         You can define a JSON schema to structure the model's response if the chosen model supports the response format. By default, if no schema is provided, the model will respond with plain text.
         Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Ensure the schema follows the standard outlined here: [Defining JSON schema](../perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}. 
         If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.  
 
         For more information about how the model parses the response and separates keys from the content body, see: [Structured Response Parsing and Context Sharing in Workflows](../perform-other-actions-on-the-flow-builder/model_response_parsing.md){:target="_blank"}.
 
-    * **Model Configurations**: Use hyperparameters to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
+    6. **Model Configurations**: Use hyperparameters to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 
         * **Temperature**: Controls the randomness of the model's responses. Higher values lead to more random outputs, while lower values result in more focused outputs.
 
@@ -100,32 +105,40 @@ Setting up a Text to Text node in a tool flow involves adding the node at the ap
 
         * **Max Tokens**: Sets the maximum length of the model's output. Lower values generate shorter responses, while higher values produce longer responses.
 
-6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.
+### Step 4: Add Connections
 
-    * **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
+Click the **Connections** icon and select the **Go to Node** for success and failure conditions.
 
-    * **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
+* **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
 
-        <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
+* **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
 
-7. To add tools, click the **Tool Calling** icon. When you select a model that supports tool calling, the ‘*Tool calling available*’ tab is displayed in the Properties panel. You can configure tool calling settings from this tab.
+    <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
+### Step 5: Add Tools
 
-        When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
+To add tools, click the **Tool Calling** icon. When you select a model that supports tool calling, the ‘*Tool calling available*’ tab is displayed in the Properties panel. You can configure tool calling settings from this tab.
 
-    * **Add tools**: Click **Add Tools** to add a tool.
-    * **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.  
-    * **Configure tool settings**:
-        * In the Tool configuration section, configure the following:
-            * **Exit node execution after**: Specify the number of model calls to use as the exit criteria. For example, if you set this to 5 calls and the LLM continues making tool calls without providing a final answer, the system will exit to the failure path.
-        * In the Additional settings section, configure the following:
-            * **Tool choice**: Select *Auto* or *Required*. This option determines whether the model will automatically decide when to make a tool call (Auto), or if a tool call is required every time (Required). The default setting is Auto.
-            * **Parallel tool calls**: Select *True* to enable the model to execute multiple tool calls simultaneously. Select *False* if you want the model to execute tool calls sequentially, optimizing for the best possible outcome.  
+!!! note
+
+    When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
+
+* **Add Tools**: Click **Add Tools** to add a tool.
+
+* **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.
+
+* **Configure tool settings**:
+    * In the Tool configuration section, configure the following:
+        * **Exit node execution after**: Specify the number of model calls to use as the exit criteria. For example, if you set this to 5 calls and the LLM continues making tool calls without providing a final answer, the system will exit to the failure path.
+    * In the Additional settings section, configure the following:
+        * **Tool choice**: Select *Auto* or *Required*. This option determines whether the model will automatically decide when to make a tool call (Auto), or if a tool call is required every time (Required). The default setting is Auto.
+        * **Parallel tool calls**: Select *True* to enable the model to execute multiple tool calls simultaneously. Select *False* if you want the model to execute tool calls sequentially, optimizing for the best possible outcome.  
         
     <img src="./../images/tool_calling_configuration.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
-8. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
+### Step 6: Test the Flow
+
+Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
 
 !!! Failure "Standard Error"
 

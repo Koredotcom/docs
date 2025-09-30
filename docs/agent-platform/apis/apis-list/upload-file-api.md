@@ -392,7 +392,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pplatform.domain.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai</code>
    </td>
    <td>String
    </td>
