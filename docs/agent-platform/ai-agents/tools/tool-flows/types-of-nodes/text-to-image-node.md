@@ -188,7 +188,6 @@ Add all the required input variables to run the flow in the **Input** section of
 
 * Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the image URL.
 * Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
-
    <img src="../images/output-var.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 3: Run the Flow
