@@ -116,6 +116,7 @@ After fetching the Search AI application credentials, configuring the source, an
 
   You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."
    <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;">
+   
  * Select the <b>Search AI connection</b> you set up in <a href="#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
    <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;">
 

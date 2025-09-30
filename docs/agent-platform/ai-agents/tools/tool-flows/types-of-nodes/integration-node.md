@@ -64,11 +64,11 @@ In this document, you will learn how to add Integration Nodes to your flows, con
     </div>
 
 * Enter or select inputs for the following fields:
-   * <b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>Ahrefslinkbuilder</i>” (Only letters and numbers are allowed).
-   * <b>Connection Name</b>: Select a connection from the listed options. The list includes all the active connections you have added and configured under <b>Settings</b> > <b>Integrations</b>.
-
+     * <b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>Ahrefslinkbuilder</i>” (Only letters and numbers are allowed).
+     * <b>Connection Name</b>: Select a connection from the listed options. The list includes all the active connections you have added and configured under <b>Settings</b> > <b>Integrations</b>.
       <img src="../images/select-connection-name.png" alt="select connection" title="select connection" style="border: 1px solid gray; zoom:75%;">
-    * Click <b>Add Action</b> to add and configure the required actions or tasks from the service provider.
+
+* Click <b>Add Action</b> to add and configure the required actions or tasks from the service provider.
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
@@ -77,10 +77,10 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
     <img src="../images/add-action-click.png" alt="click add action" title="click add action" style="border: 1px solid gray; zoom:75%;">  
 
-    * In the <b>Add Action</b> window, select the required action to be linked to the node.
-    <img src="../images/add-action.png" alt="add action" title="add action" style="border: 1px solid gray; zoom:75%;">
+* In the <b>Add Action</b> window, select the required action to be linked to the node.
+   <img src="../images/add-action.png" alt="add action" title="add action" style="border: 1px solid gray; zoom:75%;">
 
-    * In the action settings window, add inputs for the action fields and click <b>Save</b>. These parameters define how the action is executed for the connection.
+* In the action settings window, add inputs for the action fields and click <b>Save</b>. These parameters define how the action is executed for the connection.
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
@@ -88,10 +88,10 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
     <img src="../images/action-parameters.png" alt="action parameters" title="action parameters" style="border: 1px solid gray; zoom:75%;">
      
-    * The added action is listed in the <b>General Properties</b> window of the node. This action is applied to all the connections available for the provider.
-    <img src="../images/integration-gen-properties.png" alt="gen properties" title="gen properties" style="border: 1px solid gray; zoom:75%;">
+* The added action is listed in the <b>General Properties</b> window of the node. This action is applied to all the connections available for the provider.
+   <img src="../images/integration-gen-properties.png" alt="gen properties" title="gen properties" style="border: 1px solid gray; zoom:75%;">
 
-   * Click the <b>Connections</b> icon and select <b>Go to Node</b> for success and failure conditions.
+* Click the <b>Connections</b> icon and select <b>Go to Node</b> for success and failure conditions.
      * <b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
      * <b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
      <img src="../images/success-failure-flow.png" alt="node flow" title="node flow" style="border: 1px solid gray; zoom:75%;">
@@ -149,7 +149,7 @@ After adding and configuring the node as mentioned [here](./integration-node.md/
 
 * Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a>
 
-      <img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
 
 * In the <b>Enter input variable</b> window, select the appropriate data type for the <b>Type</b> field to define the input variable.
 * Click <b>Save</b>.
@@ -191,7 +191,6 @@ To run and test the flow, follow the steps below:
  
 
 The **Debug** window generates the flow log and output from the inputs provided. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
-
 
 ## Access the Node’s Output
 
