@@ -62,68 +62,71 @@ After fetching the Search AI application credentials, configuring the source, an
 
 **Steps to integrate Search AI in Agent Platform**
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+* Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. Click **Integrations** on the left navigation menu.
-4. Scroll down to **Search AI** and click **Link an App**.
-<img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
+* Click **Settings** on the top navigation bar.
+* Click **Integrations** on the left navigation menu.
+* Scroll down to **Search AI** and click **Link an App**.
+  <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
 
-5. In the **Search AI** window, provide the required information that you copied from the SearchAI application in 
+* In the **Search AI** window, provide the required information that you copied from the SearchAI application in 
 [Step 1](./docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
-6. Click **Test** to test the connection.
-7. If the connection is successful, click **Confirm**.
-<img src="./../images/searchai-connection-form.png" alt="searchai connection form" title="searchai connection form" style="border: 1px solid gray; zoom:75%;">
+* Click **Test** to test the connection.
+* If the connection is successful, click **Confirm**.
+  <img src="./../images/searchai-connection-form.png" alt="searchai connection form" title="searchai connection form" style="border: 1px solid gray; zoom:75%;">
 
-A success message is displayed and the connection is listed for SearchAI.
-<img src="./../images/listed-connection.png" alt="listed connection" title="listed connection" style="border: 1px solid gray; zoom:75%;">
+  A success message is displayed and the connection is listed for SearchAI.
+   <img src="./../images/listed-connection.png" alt="listed connection" title="listed connection" style="border: 1px solid gray; zoom:75%;">
 
-If the connection fails with the following message, check and re-enter the correct Search AI app credentials.
+  If the connection fails with the following message, check and re-enter the correct Search AI app credentials.
 
-<img src="./../images/connection-failure.png" alt="connection failure" title="connection failure" style="border: 1px solid gray; zoom:75%;">
+  <img src="./../images/connection-failure.png" alt="connection failure" title="connection failure" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We support connections through Search AI. You must provide https://platform.kore.ai for the <b>Search AI URL</b> field.</p></div>
+  <div class="admonition note">
+  <p class="admonition-title">Note</p>
+  <p>We support connections through Search AI. You must provide https://platform.kore.ai for the <b>Search AI URL</b> field.</p></div>
 
 ## Step 3: Add and Configure a DocSearch Node
 
-Setting up a DocSearch node in an tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+### Step 3(a): Open Flow Builder
 
-**Steps to add and configure the node**
+* Log in → In Agent Platform Modules → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The **Tool Flow** page is displayed.
-3. Click **Go to flow** to edit the in-development version of the flow.
-4. In the flow builder, click **DocSearch** -> **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
-<img src="./../images/add-docsearch-node.png" alt="add doc search node" title="add doc search node" style="border: 1px solid gray; zoom:75%;">
+### Step 3(b): Add the DocSearch Node
 
-5. To provide a unique name, right-click the node and click **Rename** since the node is provided a default name.
+* Click **DocSearch** -> **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
+  <img src="./../images/add-docsearch-node.png" alt="add doc search node" title="add doc search node" style="border: 1px solid gray; zoom:75%;">
+
+### Step 3(c): Configure the Node
+
+* To provide a unique name, right-click the node and click **Rename** since the node is provided a default name.
 
     <img src="./../images/rename-docsearch-node.png" alt="rename node" title="rename node" style="border: 1px solid gray; zoom:75%;">
 
-Alternatively, click the node and change the value for **Node Name** in the configuration panel.
-<img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
+    Alternatively, click the node and change the value for **Node Name** in the configuration panel.
+    <img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="6"><li>Add the input for the <b>Query</b> field to capture the user's search query. 
-<p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
+* Add the input for the <b>Query</b> field to capture the user's search query. 
+  
+  To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
 
-<p>You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."</p>
-<img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Select the <b>Search AI connection</b> you set up in <a href="#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
-<img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
+  You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."
+   <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
+ * Select the <b>Search AI connection</b> you set up in <a href="#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
+   <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Use search to look up and select the required connection.</p></div>
+   <div class="admonition note">
+   <p class="admonition-title">Note</p>
+   <p>Use search to look up and select the required connection.</p></div>
 
-To set up a new connection, click **+ New Connection**. This will redirect you to the Agent Platform Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"} to complete the integration.
+    To set up a new connection, click **+ New Connection**. This will redirect you to the Agent Platform Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"} to complete the integration.
 
-<ol start="8"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="../../../../../../xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
-<img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;"></li></ol>
+ * (Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="../../../../../../xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
+<img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -140,15 +143,16 @@ Appropriate canvas-level errors are displayed (in the error log) when you add a 
 
 To run and test the flow, follow the steps below:
 
-1. Click the **Run Flow** button at the top-right corner of the flow builder.
-<img src="../images/docsearch-run-flow.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
+* Click the **Run Flow** button at the top-right corner of the flow builder.
+  <img src="../images/docsearch-run-flow.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
 
-2. (Optional) Add the value for **Input Variable** if you have configured it to test the flow in **Step 5** of [this](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"} section. Otherwise, go directly to the next step.
+* (Optional) Add the value for **Input Variable** if you have configured it to test the flow in **Step 5** of [this](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"} section. Otherwise, go directly to the next step.
 
-<ol start="3"><li>Click <b>Generate Output</b>.</li>
-<img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;"></ol>
+* Click <b>Generate Output</b>.
+   
+   <img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
-The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
+   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
 
 <div class="admonition note">
 <p class="admonition-title">Accessing the Output</p>
