@@ -60,8 +60,7 @@ Think of it as the lens through which you explore your data; every adjustment he
 
 The following table depicts the bot behavior for the end of the conversation event:
 
-<table><table border="1.5">
-  <tr bgcolor="#ECECEC">
+<table>
   <tr>
    <td><strong>Filter</strong>
    </td>
@@ -126,7 +125,6 @@ The following table depicts the bot behavior for the end of the conversation eve
 
 
 ### Topics Filter
-
 Advanced filtering options provide granular control over your data view, allowing you to layer multiple criteria and progressively narrow your analysis. Click the **Filters** button to reveal these options, which work together to help you focus on specific channels, languages, queues, agents, or performance thresholds.
 
 * **Channel Filter**: Choose between Voice, Chat, or both.
@@ -214,9 +212,7 @@ The conversation analysis section allows you to move from aggregate metrics to i
 **Conversation List Structure**
 Comprehensive table displaying conversations containing the selected topic:
 
-
-<table><table border="1.5">
-  <tr bgcolor="#ECECEC">
+<table>
   <tr>
    <td><strong>Column</strong>
    </td>
