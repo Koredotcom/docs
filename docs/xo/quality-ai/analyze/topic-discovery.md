@@ -21,7 +21,7 @@ Modern contact centers face significant challenges in managing and analyzing the
 
 Topic Discovery addresses these challenges by providing a unified, visual approach to conversation analytics that reveals both pre-configured conversation categories and AI-discovered conversation patterns that may not be captured in existing taxonomies.
 
-## How does Topic Discovery help?
+## How Does Topic Discovery Help?
 
 The Topic Discovery feature delivers value through several key capabilities:
 

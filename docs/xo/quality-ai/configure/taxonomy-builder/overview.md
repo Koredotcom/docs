@@ -1,4 +1,4 @@
-# Taxonomy Builder (Overview)
+# Taxonomy Builder Overview
 
 **Taxonomy Builder** enables organizations to design and manage their own topic hierarchy, ensuring that conversation analysis reflects their unique business priorities rather than relying only on machine-generated topic labels.
 

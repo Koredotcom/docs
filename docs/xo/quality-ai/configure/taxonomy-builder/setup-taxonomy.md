@@ -1,4 +1,4 @@
-# Taxonomy Builder (Setup Taxonomy)
+# Setup Taxonomy
 
 This document outlines a process for creating, organizing, and managing topic hierarchies to categorize and analyze customer conversations effectively, aligning with business structures and analytical needs.
 
