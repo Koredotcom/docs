@@ -98,68 +98,71 @@ The metrics include:
 * **Input tokens** since the Stable Diffusion models usually support a small number of tokens, and tracking the counts is necessary. [Learn more](../../../../settings/monitoring/analytics/model-analytics-dashboard.md/#tokens){:target="_blank"}.
 
 
-## Steps to Add and Configure the Node
+## Add and Configure a Text to Image Node
 
-To add and configure the node, follow the steps below:
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before proceeding, you must add an external LLM to your account.</p>
+</div>
 
-**NOTE**
 
-  Before proceeding, you must add an external LLM to your account using either [Easy Integration](../../../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} or [Custom API Integration](../../../../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}.
+### Step 1: Open Flow Builder
 
+* Log in → In Agent Platform Modules → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+     <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+### Step 2: Add the Text to Image Node
+
+* Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed.
-   <img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
+* Click the "**+**" icon for **Text to Image** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Text to Image**.
+  <img src="../images/text-to-image-add-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
 
-3. Click **Go to flow** to edit the in-development version of the flow.     
-<img src="../images/access-af.png" alt="access tool flow" title="access tool flow" style="border: 1px solid gray; zoom:75%;"> 
+### Step 3: Configure the Node
 
+* Click the added node to open its properties dialog box. The **General Settings** for the node are displayed. 
 
-4. In the flow builder, click the **+** icon for **Text to Image** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Text to Image**.
-<img src="../images/text-to-image-add-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;"> 
-
-5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed. 
-
-6. Enter or select the following **General Settings**:
+* Enter or select the following **General Settings**:
 
     * **Node Name**: Enter an appropriate name for the node. For example, “*Christmasgreeting*.”
     * **Select Model**: Select the required variant of the Stable Diffusion model.
     * **Positive Prompt**: Enter the keywords for what needs to be generated in the image or what it should include. The model will generate along the lines of the details mentioned here and not consider the negative hints.
     * **Negative Prompt**: Enter the keywords for the elements the image should exclude.
 
-    <div class="admonition note">
-    <p class="admonition-title">Important</p>
-    <p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="#step-1-optional-add-input-variables" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
+     <div class="admonition note">
+     <p class="admonition-title">Important</p>
+      <p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="#step-1-optional-add-input-variables" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
 
     * **Aspect Ratio**: Define the dimensions of the image in pixels for width and height.
     * **Steps**: Add the number of times the model will go back to the image and add more details/enhancements to get it as close to the prompt as possible. 25-30 steps are recommended for any image generation. Increasing the steps might add unwanted elements or model hallucinations and increase the time of generation.
     * **Batch Count**: The number of images to be generated sequentially.
 
-    <img src="../images/properties-panel-text-to-image.png" alt="properties panel" title="properties panel" style="border: 1px solid gray; zoom:75%;">
+        <img src="../images/properties-panel-text-to-image.png" alt="properties panel" title="properties panel" style="border: 1px solid gray; zoom:75%;">
 
-  <div class="admonition warning" bgcolor="blue">
-  <p class="admonition-title">Standard Error</p>
-  <p>When the Model isn't selected, the prompt details aren't provided, or both, the error message “<i>Proper data needs to be provided in the LLM node</i>” is displayed.</p>
-  </div>
+       <div class="admonition warning" bgcolor="blue">
+       <p class="admonition-title">Standard Error</p>
+       <p>When the Model isn't selected, the prompt details aren't provided, or both, the error message “<i>Proper data needs to be provided in the LLM node</i>” is displayed.</p></div>
 
 
-<ol start="7"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.</li>
-<img src="../images/connection-text-to-image.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;"></ol>
+* Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.
+  <img src="../images/connection-text-to-image.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;">
 
-<ul><li><b>On Success</b> -> <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
-<li><b>On Failure</b> -> <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Text to Image</b> node.</li>
+    * <b>On Success</b> -> <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
+    * <b>On Failure</b> -> <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Text to Image</b> node.
 
-<p><b>Node Output</b></p>
+   <p><b>Node Output</b></p>
 
-For the configured inputs, the following image is generated.
-<img src="../images/node-output-image.png" alt="output image" title="output image" style="border: 1px solid gray; zoom:75%;">
-</ul>
+    For the configured inputs, the following image is generated.
+    
+    <img src="../images/node-output-image.png" alt="output image" title="output image" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="8"><li>Finally, <a href="#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol> 
 
-## Configure and Test the Flow for the Node
+* Finally, <a href="#step-3-run-the-flow" target="_blank">run the flow</a> and fix any issues found.
+
+## Test the Flow for the Node
 
 After adding and configuring the node as mentioned [here](./text-to-image-node.md/#steps-to-add-and-configure-the-node){:target="_blank"}, follow the steps below to test the flow.
 
@@ -173,11 +176,11 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 
 1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}.
 
-<img src="../images/add-input-variable-text-to-image.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
+      <img src="../images/add-input-variable-text-to-image.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="2"><li>Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable window</b> to define a text input variable.</li>
 <li>Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
-<img src="../images/select-text-for-input.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
+   <img src="../images/select-text-for-input.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node.
 
@@ -187,7 +190,7 @@ Add all the required input variables to run the flow in the **Input** section of
 1. Click the **Output** tab for the **Start** node.
 2. Click **Add Output Variable**.
 
-<img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the image URL.</li>
 <li>Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
