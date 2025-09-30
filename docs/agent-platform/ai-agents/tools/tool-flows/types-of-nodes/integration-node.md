@@ -47,7 +47,7 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
 * Select your tool → Click **Go to Flow**.
 
-### Step 2: Add the Integration Node
+### Step 2: Add the Node
 
 * Click **Integration** > **+ New Integration** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **Integration** in the pop-up menu.
   <img src="../images/add-int-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">

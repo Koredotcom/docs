@@ -47,7 +47,7 @@ In this document, you will learn how to add the node to your flows, configure it
 
 * Select your tool → Click **Go to Flow**.
 
-### Step 2: Add the Image to Text Node
+### Step 2: Add the Node
 
 * Click the "**+**" icon for **Image to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Image to text**.
   <img src="../images/access-image-to-text-node.png" alt="access node" title="access node" style="border: 1px solid gray; zoom:75%;">
@@ -59,13 +59,13 @@ In this document, you will learn how to add the node to your flows, configure it
 
 * Enter or select the following **General Settings**:
 
-   * <b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>InsuranceEvaluation</i>.”
-   * Select a model from the list of configured models.
+     * <b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>InsuranceEvaluation</i>.”
+     * Select a model from the list of configured models.
 
-     <div class="admonition note">
-     <p class="admonition-title">Note</p>
-     <p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are supported.</p>
-     </div>
+       <div class="admonition note">
+       <p class="admonition-title">Note</p>
+       <p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are supported.</p>
+       </div>
 
     * Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the tool endpoint.
 
@@ -80,22 +80,27 @@ In this document, you will learn how to add the node to your flows, configure it
      <ul><li>Binary, base64-encoded for Anthropic models.</li>
      <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></p></div>
 
-    * <b>System Prompt</b>: System prompts guide the model’s behavior and response style. Enter a system prompt to define its role for your use case. For example: "<i>You are a vehicle insurance assistant that analyzes uploaded vehicle images to assess damage and estimate repair costs in USD</i>."
-    * <b>Prompt</b>: User prompts define specific questions or requests for the model. Provide clear instructions for the model to follow, using context variables for dynamic inputs in the syntax: <code>{{context.variable_name}}</code>. <b>Example:</b> "<i>Check the image provided for the damaged parts in the car and select what parts are affected from the list below - <code>{{context.parts_list}}</code></i>."</li>
-       <img src="../images/configuration-set.png" alt="configurations tab" title="configurations tab" style="border: 1px solid gray; zoom:75%;">
+* <b>System Prompt</b>: System prompts guide the model’s behavior and response style. Enter a system prompt to define its role for your use case. For example: "<i>You are a vehicle insurance assistant that analyzes uploaded vehicle images to assess damage and estimate repair costs in USD</i>."
+* <b>Prompt</b>: User prompts define specific questions or requests for the model. Provide clear instructions for the model to follow, using context variables for dynamic inputs in the syntax: <code>{{context.variable_name}}</code>. <b>Example:</b> "<i>Check the image provided for the damaged parts in the car and select what parts are affected from the list below - <code>{{context.parts_list}}</code></i>."</li>
+         <img src="../images/configuration-set.png" alt="configurations tab" title="configurations tab" style="border: 1px solid gray; zoom:75%;">
 
-   * **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
+* **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
+      
     You can define a JSON schema to structure the model's response if the chosen model supports the response format. By default, if no schema is provided, the model will respond with plain text.
+       
     Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Ensure the schema follows the standard outlined here: [Defining JSON schema](../perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}. 
+    
     If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.  
+    
     For more information about how the model parses the response and separates keys from the content body, see: [Structured Response Parsing and Context Sharing in Workflows](../perform-other-actions-on-the-flow-builder/model_response_parsing.md){:target="_blank"}.
 
 * Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.
    
-   <img src="../images/connections-configuration.png" alt="connections tab" title="connections tab" style="border: 1px solid gray; zoom:75%;">
+     <img src="../images/connections-configuration.png" alt="connections tab" title="connections tab" style="border: 1px solid gray; zoom:75%;">
 
-   * <b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
-  * <b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Image to Text</b> node.
+    * <b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
+    * <b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Image to Text</b> node.
+    
 * Finally, test the flow and fix any issues found. Click the <b>Run Flow</b> button at the top-right corner of the flow builder and follow the onscreen instructions.
 <img src="../images/click-run.png" alt="click run" title="click run" style="border: 1px solid gray; zoom:75%;">
 
