@@ -125,9 +125,9 @@ Metrics include:
 ### Step 1: Open Flow Builder
 
 * Log in → In Agent Platform Modules → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
-
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+* Select your tool → Click **Go to Flow**.
 
 ### Step 2: Add the Audio to Text Node
 

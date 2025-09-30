@@ -92,9 +92,9 @@ After fetching the Search AI application credentials, configuring the source, an
 ### Step 3(A): Open Flow Builder
 
 * Log in → In Agent Platform Modules → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
-
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+* Select your tool → Click **Go to Flow**.
 
 ### Step 3(B): Add the DocSearch Node
 
