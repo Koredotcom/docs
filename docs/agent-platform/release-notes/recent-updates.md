@@ -52,6 +52,8 @@ The Agent Platform now supports additional AI models, providing greater flexibil
 * OpenAI Models GPT-5 Family: gpt-5-2025-08-07, gpt-5-mini-2025-08-07, gpt-5-nano-2025-08-07, and gpt-5-chat-latest
 * Anthropic Model: claude-opus-4-1-20250805
 
+   [Learn more :octicons-arrow-right-24:](../models/supported-models.md){:target="_blank"} 
+
 <hr>
 
 ## v1.0.11 September 9, 2025
