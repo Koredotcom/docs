@@ -24,7 +24,7 @@ For quality monitoring, Agent AI now supports call recording playback when the *
 
 **SIP Header Support for Metadata Passing from Kore Voice IVA to Genesys Desktop**
 
-Kore Voice IVA now passes contextual metadata (such as Customer ID, Session ID, Intent, Transcript, and Escalation Reason) to Genesys via SIP headers during call transfers. The Genesys desktop processes these headers and passes the data to the Kore Agent AI widget, giving agents full visibility into the customer’s journey before escalation.
+Kore Voice IVA now passes contextual metadata (such as Customer ID, Session ID, Intent, Transcript, and Escalation Reason) to Genesys via SIP headers during call transfers. The Genesys desktop processes these headers and passes the data to the Kore Agent AI widget, giving agents full visibility into the customer’s journey before escalation. [Learn more :octicons-arrow-right-24:](./../../contactcenter/integrations/voice-automation-using-sip-invite-protocol/genesys-agent-desktop.md)
 
 <hr>
 
