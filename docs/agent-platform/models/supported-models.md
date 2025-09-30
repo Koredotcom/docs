@@ -34,6 +34,10 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-4.1-nano-2025-04-14</li>
     <li>gpt-4.5-preview-2025-02-27</li>
     <li>o3-mini</li>
+    <li>gpt-5-2025-08-07</li>
+    <li>gpt-5-mini-2025-08-07</li>
+    <li>gpt-5-nano-2025-08-07</li>
+    <li>gpt-5-chat-latest</li>
   </ul>
    </td>
   </tr>
@@ -67,7 +71,8 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>claude-3-5-sonnet-20241022</li>
     <li>claude-3-5-haiku-20241022</li>
     <li>claude-sonnet-4-20250514</li>
-    <li>claude-opus-4-20250514</li>    
+    <li>claude-opus-4-20250514</li>
+    <li>claude-opus-4-1-20250805</li>   
   </ul>
    </td>
   </tr>
