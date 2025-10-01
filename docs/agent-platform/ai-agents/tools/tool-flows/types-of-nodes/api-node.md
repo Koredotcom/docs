@@ -32,13 +32,20 @@ Setting up an API node in a tool flow involves adding the node at the appropriat
 
 Steps to add and configure the node:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+### Step 1: Open Flow Builder
 
-2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed. 
-3. Click **Go to flow** to edit the in-development version of the flow.
-4. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. (Alternatively, drag the **API** node from the Assets panel onto the canvas.)
-5. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+* Log in → In **Agent Platform Modules** → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
+  <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+### Step 2: Add the API Node
+
+* In the flow builder, click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. 
+* Alternatively, drag the **API** node from the Assets panel onto the canvas.
+
+### Step 3: Configure the Node
+
+Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="./../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:60%;">
 
 **General Settings**
@@ -132,14 +139,18 @@ Steps to add and configure the node:
   </tr>
 </table>
 
-**Connections**
-Click the **Connections** icon in the left navigation and select **Go to Node** for success and failure conditions.  
+### Step 4: Add Connections
+
+Click the **Connections** icon in the left navigation and select **Go to Node** for success and failure conditions.
+
 <img src="./../images/api-node-connections.png" alt="API node Connections Properties" title="API node Connections Properties" style="border: 1px solid gray; zoom:80%;">
 
-1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can process the data from this node into a Function node and then use it further. In this case, select the Function node. 
-2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured.
+* **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can process the data from this node into a Function node and then use it further. In this case, select the Function node. 
+* **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured.
 
-7. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
+### Step 5: Test the Flow
+
+Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
 
 
 !!! note

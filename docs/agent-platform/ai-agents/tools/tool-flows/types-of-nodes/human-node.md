@@ -43,19 +43,33 @@ The node lets you:
 
 Steps to add and configure a Human node:
 
-**1. Add the Human node to the canvas**
+### Step 1: Open Flow Builder
 
-* From the node library, add a Human node onto your workflow canvas.  
+* Log in → In **Agent Platform Modules** → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
+  <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+### Step 2: Add the Human Node
+
+You can insert a Human node on the canvas using any of the following methods:
+
+* Assets Panel: Drag the Human node from the tray to the canvas.
+* Bottom Tray: Click the Human node from the quick access section below the canvas.
+* Plus Icon: Click the plus (+) icon when hovering between nodes and select the Human node from the insert menu.
+
+### Step 3: Configure the Node
+
+Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+ 
 You can rename the node (e.g., ManagerApproval, QualityCheck) or add a description to provide context.
 
-**2. View Request Destination**
+**1. View Request Destination**
 
-* Open the node’s configuration panel.  
-In the Send & wait for response field, the currently supported option is *Custom Request*. This specifies where the request will be sent for human review.
+In the **Send & wait for response** field, the currently supported option is *Custom Request*. This specifies where the request will be sent for human review.
 
 <img src="../images/human_node_request.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
 
-**3. Define Request details**
+**2. Define Request details**
 
 Select Request Definition to configure how the Human node sends requests and fetches data.
 
@@ -73,7 +87,7 @@ You can add extra keys for testing purposes, but these additional keys are ignor
 7. Click **Save** to apply the configuration.
 
 
-**4. Add Input Fields**
+**3. Add Input Fields**
 
 In the **Input Fields** section, define the fields required from the reviewer. Supported field types include: Text, Number, Boolean, Date.
 
@@ -90,7 +104,7 @@ For example, you can create two fields for an approval flow:
 
 <img src="../images/human_node_inputfields.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
 
-**5. Configure the Review Note**
+**4. Configure the Review Note**
 
 * Define how the request will appear to the reviewer:
     * **Subject line** - Email subject or message title.
@@ -99,13 +113,13 @@ For example, you can create two fields for an approval flow:
 
 <img src="../images/human_node_review_note.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
 
-**6. Configure Timeout Behavior**
+**5. Configure Timeout Behavior**
 
 * Choose how long the node should wait for a response:
     * **No timeout** – Workflow waits indefinitely until the reviewer responds.
     * **Set timeout** – Default 120 seconds (You can customize value and unit: seconds, minutes, hours, days).
 
-**7. Define Node Outcomes**
+**6. Define Node Outcomes**
 
 In the Add Connection tab, specify how the workflow proceeds once the review step ends. Three outcome paths are available:
 

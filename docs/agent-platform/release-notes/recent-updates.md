@@ -6,13 +6,13 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-​​This update includes a new knowledge base test tool for real-time validation, rolling context windows for better conversation management, and support for the latest GPT-5 family and other leading AI models. Additional improvements include streamlined workflow testing, custom model integration, structured output support for open-source models, and enhanced AWS Bedrock integration.
+​​This update includes a new knowledge base test tool for real-time validation, rolling context windows for better conversation management, and support for the latest GPT-5 family and other leading AI models. Additional improvements include streamlined workflow testing, custom model integration, and structured output support for open-source models.
 
 <font size="4">Multi-Agent Orchestration</font>
 
 **Introducing Knowledge Base Test Tool**
 
-The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected SearchAI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
+The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected Search AI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
 
 **Enhanced Context Management**
 
@@ -49,16 +49,12 @@ Kore-hosted open-source models now support structured JSON output through the re
 
 The Agent Platform now supports additional AI models, providing greater flexibility for various use cases. These models include comprehensive platform integration with System Prompts, Tool Calling, Prompt Studio, Evaluation Studio, Tools, Parallel Tool Calling, Model Analytics, Audit Logs, Model Traces, Agentic Apps, and Image-to-Text Support.
 
-* OpenAI Models GPT-5 Family (2025-08-07 release): gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-thinking, gpt-5-thinking-mini, and gpt-5-thinking-nano
-* Azure OpenAI Models: gpt-5-main and gpt-5-main-mini
-* Anthropic Model (2025-08-05 release): claude-opus-4-1
-* Google Model: gemini-2.5-flash
+* OpenAI Models GPT-5 Family: gpt-5-2025-08-07, gpt-5-mini-2025-08-07, gpt-5-nano-2025-08-07, and gpt-5-chat-latest
+* Anthropic Model: claude-opus-4-1-20250805
 
+   [Learn more :octicons-arrow-right-24:](../models/supported-models.md){:target="_blank"} 
 
-**Enhanced Support for AWS Bedrock Models**
-
-AWS Bedrock models are now listed in AI nodes organized by their capabilities, with full support for multimodal usage and tool calling. Within Prompt Studio, these models can generate outputs, create data, and build prompts. Users can also streamline configuration by mapping model requests and responses using predefined provider API references for Anthropic or OpenAI.
-
+<hr>
 
 ## v1.0.11 September 9, 2025
 
@@ -679,7 +675,7 @@ You can now easily track conversations with the Agentic app using the new timeli
 
 **Improved Model Evaluation via Ground Truth Columns and Search AI Enhancements**
 
-Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, SearchAI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
+Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, Search AI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
 
 <font size="4">Other Improvements</font>
 
