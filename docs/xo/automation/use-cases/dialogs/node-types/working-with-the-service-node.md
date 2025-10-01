@@ -234,7 +234,7 @@ After redaction:
 
     Redacting a parent object like `body.profile.user` automatically redacts all child keys.
 
-4. Composite Objects
+**4. Composite Objects**
 
 API response:
 
@@ -250,7 +250,7 @@ API response:
 ```
 
 
-Path to redact: body.users.$.ssn and body.users.$.email
+Path to redact: (`body.users.$.ssn`) and (`body.users.$.email`)
 
 After redaction:
 
