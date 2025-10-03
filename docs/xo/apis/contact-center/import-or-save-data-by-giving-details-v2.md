@@ -4,7 +4,7 @@ To save/import data, which is one of (skillsGroups, Queues, StandardResponses, W
 
 !!! Note
 
-    This version will be deprecated soon. Please use [Version 2](./import-or-save-data-by-giving-details-v2.md) of this API.
+    This API is applicable post v11.13.0 release.
 
 | **Property**     | **Value**                                                                                                                                                                                                 |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
