@@ -14,6 +14,8 @@ This document provides information on the feature updates and enhancements intro
 
 The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected Search AI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/knowledge/manage-knowledge-tools.md#test-the-knowledge-base)
+
 **Enhanced Context Management**
 
 The Agent Platform now provides enhanced context handling for conversations with rolling context windows. Configure the number of recent messages to use as conversation context by setting a message count limit. When this limit is reached, the oldest messages are automatically removed to make room for new ones. This prevents context overflow and keeps conversations focused on relevant, up-to-date information.
@@ -26,6 +28,7 @@ The Agent Platform now provides enhanced context handling for conversations with
 **Improved Workflow Tool Testing Experience**
 
 The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardised output format.
+
 
 <font size="4">AI Engineering Tools</font>
 
