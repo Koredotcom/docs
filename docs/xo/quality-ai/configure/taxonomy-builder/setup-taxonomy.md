@@ -41,7 +41,7 @@ The system supports three distinct hierarchical levels for topic organization:
 <img src="../images/add-new-topics.png" alt="Add New Topic" title="Add New Topic" style="border: 1px solid gray; zoom:100%;">  
 
 2. Select the appropriate hierarchy level (L1 or L2).   
-<img src="../images/add-new-topic-level.png" alt="Add New Topic Level" title="Add New Topic Level" style="border: 1px solid gray; zoom:100%;">  
+<img src="../images/add-new-topic-level.png" alt="Add New Topic Level" title="Add New Topic Level" style="border: 1px solid gray; zoom:60%;">  
 
 3. Complete the required fields:
 
