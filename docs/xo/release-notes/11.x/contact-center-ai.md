@@ -46,7 +46,7 @@ The SLA configuration screen now opens as an inline overlay for consistency with
 
 **Removal of Inbound Option from User Attributes**
 
-The Inbound option in **User Attributes** → **Enable Voice** has been removed as inbound voice calls are always enabled for all users. Its removal simplifies the configuration experience, with no impact on existing functionality. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#chat--voice)
+The Inbound option in **User Attributes** → **Enable Voice** has been removed as inbound voice calls are always enabled for all users. Its removal simplifies the configuration experience, with no impact on existing functionality. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#chat-voice)
 
 <font size="4">Campaigns</font>
 
@@ -1156,7 +1156,7 @@ Key Updates:
 * Custom Domain Setup:
     * “Add Domain” button for custom email domain configuration.
     * Domain ownership verification through email login test.
-    * Tabular display of custom domains with associated email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#create-a-custom-domain)
+    * Tabular display of custom domains with associated email addresses.
 * Improved User Interface: Clear organization of Kore and custom domain settings.
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
@@ -1173,8 +1173,6 @@ Key Updates:
 * **Verification Process**: The system checks incoming email addresses against the blocklist.
 * **Automated Response**: Disables pre-configured automations for blocklisted addresses and prevents automated agent transfers for blocklisted interactions.
 * **Normal Processing**: Non-blocklisted emails proceed through the usual automation and transfer processes.
-
-[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#email-blocklist)
 
 <font size="4">Analytics</font>
 
@@ -1237,8 +1235,6 @@ Each tracked detail includes the following:
 * Event Type
 * Involved Agents/Supervisors
 * Detailed Event Description
-
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
 
 <font size="4">Voice Gateway (v0.9.3-rc4)</font>
 
