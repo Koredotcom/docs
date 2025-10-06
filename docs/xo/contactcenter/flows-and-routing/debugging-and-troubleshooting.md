@@ -1,4 +1,4 @@
-# Debugging and Troubleshooting
+# Debug and Troubleshoot
 
 The Debug window helps you review natural language processing details, logs, and the session context and variables for a chat. To access it, click the Debug icon in the upper-right corner of the chat window.  
 <img src="../images/debug-icon.png" alt="Debug Logs Icon" title="Debug Logs Icon" style="border: 1px solid gray; zoom:80%;">
