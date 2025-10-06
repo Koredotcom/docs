@@ -50,9 +50,7 @@ This API allows you to ingest and index data into the SearchAI application. You 
   <tr>
    <td><strong>Authorization</strong>
    </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
+   <td><code>auth: {{JWT Token}}</code>
    </td>
   </tr>
   <tr>
