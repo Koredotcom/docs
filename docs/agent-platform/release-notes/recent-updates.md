@@ -29,6 +29,8 @@ The Agent Platform now provides enhanced context handling for conversations with
 
 The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardised output format.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md#test-a-workflow-tool)
+
 
 <font size="4">AI Engineering Tools</font>
 
