@@ -38,7 +38,7 @@ Proactive notification includes:
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
+</a>
    </td>
   </tr>
   <tr>
@@ -55,7 +55,7 @@ See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to 
   </tr>
 </table>
 
-
+Refer [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).
 
 ## Path Parameters
 

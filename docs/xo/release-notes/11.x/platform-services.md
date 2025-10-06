@@ -2,6 +2,31 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.18.0 September 27, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+
+<font size="4"> Channels </font>
+
+
+**Enhanced Custom Email Domain Capabilities**
+
+AI for Service now enhances custom domains with advanced capabilities, including email forwarding, domain setup, DKIM, and Flow mapping to improve scalability and brand alignment in enterprise email automation.
+
+Key enhancements:
+
+
+
+* Email Forwarding: Centralize email processing by forwarding emails from enterprise domains to a single Kore.ai mailbox.
+* Advanced Custom Domain Setup: This new option, in addition to the existing Standard setup, supports up to 50 custom domains and 50 email addresses per domain.
+* DomainKeys Identified Mail (DKIM) Support: Secure email authentication is now provided for each advanced custom email domain.
+* Flow Mapping by Email ID: Route incoming emails accurately by linking custom domain email addresses to specific Flows.  [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#advanced-custom-domain)
+
+<hr>
+
 ## v11.17.1 September 15, 2025
 
 <u> Patch Release </u>

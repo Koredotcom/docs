@@ -4,7 +4,7 @@ The **Adherence Heatmap** feature helps supervisors to track and visualize trend
 
 Based on the date range, agents, and language filter selection, supervisors can analyze the color-coded adherence data in the heatmap to quickly identify areas of concern, monitor agent compliance across evaluation forms in evaluation metrics or queues, and also spot agents who need special attention. This provides valuable insights, enabling supervisors to make data-driven decisions and take focused actions to improve agent performance.
 
-You can access **Adherence Heatmap** by navigating to **Quality AI** > **Analyze** > **Adherence Heatmap**.   
+You can access **Adherence Heatmap** by navigating to **Quality AI** > **ANALYZE** > **Adherence Heatmap**.   
 <img src="../adher-heatmap/images/adherence-heatmap-landing-page.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 !!! Note
@@ -132,9 +132,9 @@ The following are the filter parameters of **View Interactions**:
         * Click the **View Interaction** button to view the **Conversation Mining** page, where you can view all failed interactions see the tags explaining the filtering criteria based on the metric you clicked. 
 
         * Notification tags are shown only when navigating to the **Conversation Mining** from **Adherence Heatmap**, and not when accessing the **Conversation Mining** page directly.      
-        <img src="./adher-heatmap/images/conv-mining-interaction-notification-tag.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
+        <img src="../adher-heatmap/images/conv-mining-interaction-notification-tag.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
-**Interaction Action**: 
+**Interaction Action**
 
 * **Filter Heatmap by Agent**: By clicking this icon, you can filter the heatmap metrics of any individual agent within a selected date range as displayed in the following **View Interactions** screen.  
 <img src="../adher-heatmap/images/heatmap-by-agent.png" alt="Filter Heatmap by Agent" title="Filter Heatmap by Agent" style="border: 1px solid gray; zoom:100%;"> 

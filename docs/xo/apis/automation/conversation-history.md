@@ -18,7 +18,7 @@ To fetch the conversational messages between the bot and user in reverse chronol
    </td>
    <td>This API has two versions for GET and POST methods. The v1 of the API includes messages associated with all tasks, and it has a maximum limit of 100 messages per request. The v2 of the API does not include the messages related to Alert and Action tasks, and it has a maximum limit of 10,000 messages per request.
 <p>
-<strong>GET Method</strong><p>Version 1: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessages?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code><p>Version 2: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code>
+<strong>GET Method</strong><p>Version 1: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessages?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code><p>Version 2: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?userId={{userId}}&includeSecureForm=true</code>
 <p>
 <strong>Note</strong>: The GET method shows the RTM interactions by default. To get the channel-specific interaction, use the channelType parameter in the GET method. For the channelType parameter values, see <a href="#Request_Body_Parameters">Request Body Parameters</a> section.
 <p>

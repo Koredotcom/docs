@@ -69,12 +69,12 @@ Access **Evaluation Metrics** by navigating to **Quality AI** > **Configure** > 
     The metric qualifies if the number of dead air instances is below the acceptable limit set in the configuration. If the number of instances exceeds the limit, the system marks the interaction as a failure for the dead air metric. An instance is counted as dead air if it exceeds the specified dead air duration.       
     <img src="../images/by-speech-deadair.png" alt="Dead air" title="Dead air" style="border: 1px solid gray; zoom:60%;"> 
 
-        * **No. of Instances**: Enter the minimum allowed Cross Talk instances per second. 
+    * **No. of Instances**: Enter the minimum allowed Cross Talk instances per second. 
 
     * **Speaking Rate Violation**: This displays the average daily conversation sessions and comparison analysis for the selected period. A violation is flagged when the agent's speaking pace is outside the configured acceptable range. 
 
         * **Words Per Minute (WPM)**: Select the expected speaking rate. If the agent does not adhere to the configured rate, the system marks the metric as failed.  
-        <img src="./.images/by-speech-speakingrate-violation.png" alt="Speaking Rate" title="Speaking Rate" style="border: 1px solid gray; zoom:60%;"> 
+        <img src="../images/by-speech-speakingrate-violation.png" alt="Speaking Rate" title="Speaking Rate" style="border: 1px solid gray; zoom:60%;"> 
 
 5. Click **Create** to save the new metric for the Speech.
 

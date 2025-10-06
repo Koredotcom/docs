@@ -17,7 +17,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Available( under the Automation AI Module)
    </td>
-   <td><a href="best-practices-faq-and-answer.md">FAQs</a> are now managed via the<a href="../automation/knowledge-ai/knowledge-ai-introduction.md"> Knowledge Module</a>, offering a more flexible and scalable approach for handling common queries without duplicating functionality. This ensures consistent, centralized knowledge management.
+   <td><a href="../best-practices-faq-and-answer">FAQs</a> are now managed via the<a href="../../automation/knowledge-ai/knowledge-ai-introduction/"> Knowledge Module</a>, offering a more flexible and scalable approach for handling common queries without duplicating functionality. This ensures consistent, centralized knowledge management.
    </td>
   </tr>
   <tr>
@@ -25,7 +25,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Available 
    </td>
-   <td>Search AI and Automation AI can now work seamlessly in AI for Service platform without any additional configuration. Use the <a href="../searchai/setup-search-ai.md#enabling-answers-in-automation-ai">intent identification setting</a> to configure the use of Search AI in dialog flows. A <a href="../automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md"> search node</a> is also available in dialog flows for users to fetch answers, giving users more control within the dialog. 
+   <td>Search AI and Automation AI can now work seamlessly in AI for Service platform without any additional configuration. Use the <a href="../../searchai/setup-search-ai/#enabling-answers-in-automation-ai">intent identification setting</a> to configure the use of Search AI in dialog flows. A <a href="../../automation/use-cases/dialogs/node-types/working-with-the-searchai-node/"> search node</a> is also available in dialog flows for users to fetch answers, giving users more control within the dialog. 
    </td>
   </tr>
   <tr>
@@ -33,7 +33,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Deprecated
    </td>
-   <td>More advanced extraction techniques are available in Search AI. <a href="../searchai/content-extraction/extraction.md">Find more details here</a>. 
+   <td>More advanced extraction techniques are available in Search AI. <a href="../../searchai/content-extraction/extraction/">Find more details here</a>. 
    </td>
   </tr>
   <tr>
@@ -54,7 +54,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Deprecated
    </td>
-   <td>Search AI utilizes advanced semantic embeddings, eliminating the need for additional processing to enhance search efficiency and accuracy. However, if users have specific needs, they can still leverage <a href="../searchai/workbench/api-stage.md">API </a>or LLM stages to achieve the same outcome and tailor the process to their use case.
+   <td>Search AI utilizes advanced semantic embeddings, eliminating the need for additional processing to enhance search efficiency and accuracy. However, if users have specific needs, they can still leverage <a href="../../searchai/workbench/api-stage/">API </a>or LLM stages to achieve the same outcome and tailor the process to their use case.
    </td>
   </tr>
   <tr>
@@ -83,7 +83,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Available ( via Automation AI)
    </td>
-   <td>Small talk can be managed through conversational flows in Automation AI. <a href="../automation/use-cases/small-talk.md">Learn More.</a> 
+   <td>Small talk can be managed through conversational flows in Automation AI. <a href="../../automation/use-cases/small-talk/">Learn More.</a> 
    </td>
   </tr>
   <tr>
@@ -91,7 +91,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Deprecated
    </td>
-   <td><a href="../searchai/business-rules.md">Business rules</a> and <a href="../searchai/rag-agents.md">Agentic Rag</a> capabilities in Search AI provide the search developer better control over retrieval. Allowing them to configure behavior for a wide range of scenarios. This eliminates the need for manually configuring rules for every unique user input
+   <td><a href="../../searchai/business-rules/">Business rules</a> and <a href="../../searchai/rag-agents/">Agentic Rag</a> capabilities in Search AI provide the search developer better control over retrieval. Allowing them to configure behavior for a wide range of scenarios. This eliminates the need for manually configuring rules for every unique user input
    </td>
   </tr>
   <tr>
@@ -99,7 +99,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Deprecated
    </td>
-   <td>Use the <a href="../apis/searchai/advance-search.md">Advanced Search API</a>, which offers more robust capabilities.
+   <td>Use the <a href="../../apis/searchai/advance-search/">Advanced Search API</a>, which offers more robust capabilities.
    </td>
   </tr>
   <tr>
@@ -107,7 +107,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Deprecated
    </td>
-   <td>Use the <a href="../apis/searchai/advance-search.md">Advanced Search API</a> instead for near real-time results.
+   <td>Use the <a href="../../apis/searchai/advance-search/">Advanced Search API</a> instead for near real-time results.
    </td>
   </tr>
   <tr>
@@ -141,7 +141,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Not required
    </td>
-   <td>Can be retrieved using <a href="../apis/automation/conversation-history.md">the Platform APIs. </a>
+   <td>Can be retrieved using <a href="../../apis/automation/conversation-history/">the Platform APIs. </a>
    </td>
   </tr>
   <tr>
@@ -181,7 +181,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Deprecated
    </td>
-   <td>Custom interfaces can be built using <a href="../apis/searchai/api-list.md">Search AI’s public APIs</a>. By default, the AI for Service Platform offers agent experiences available across<a href="../channels/adding-channels-to-your-bot.md"> 40+ channels.</a> 
+   <td>Custom interfaces can be built using <a href="../../apis/searchai/api-list/">Search AI’s public APIs</a>. By default, the AI for Service Platform offers agent experiences available across<a href="../../channels/adding-channels-to-your-bot/"> 40+ channels.</a> 
    </td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Available 
    </td>
-   <td><a href="../analytics/searchai/answer-insights.md">Unified analytics</a> for search and answers are available under the analytics page in  Search AI. User engagement metrics and the Dashboard can be found as part of<a href="../analytics/introduction.md"> AI for Service analytics</a>.
+   <td><a href="../../analytics/searchai/answer-insights/">Unified analytics</a> for search and answers are available under the analytics page in  Search AI. User engagement metrics and the Dashboard can be found as part of<a href="../../analytics/introduction/"> AI for Service analytics</a>.
    </td>
   </tr>
 </table>

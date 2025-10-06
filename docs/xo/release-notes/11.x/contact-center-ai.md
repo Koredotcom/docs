@@ -30,7 +30,7 @@ Conditional Group Routing (CGR) dynamically expands the pool of agents across qu
 
 **Honor Agent Wait Time Before Queue Timeout**
 
-A new toggle in Agent Settings → Answer Mode ensures conversations honor the full agent wait timeout before applying the queue wait timeout. When enabled, the queue timeout pauses while the conversation waits for agent acceptance, preventing premature closures. By default, the toggle is disabled for backward compatibility. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#honor-agent-wait-before-queue-timeout)
+A new toggle in **Agent Settings** → **Answer Mode** ensures conversations honor the full agent wait timeout before applying the queue wait timeout. When enabled, the queue timeout pauses while the conversation waits for agent acceptance, preventing premature closures. By default, the toggle is disabled for backward compatibility. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#honor-agent-wait-before-queue-timeout)
 
 **Remove Chats When Disconnected in Queue and Control Interruption Messages**
 
@@ -46,7 +46,7 @@ The SLA configuration screen now opens as an inline overlay for consistency with
 
 **Removal of Inbound Option from User Attributes**
 
-The Inbound option in User Attributes > Enable Voice has been removed as inbound voice calls are always enabled for all users. Its removal simplifies the configuration experience, with no impact on existing functionality. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#chat--voice)
+The Inbound option in **User Attributes** → **Enable Voice** has been removed as inbound voice calls are always enabled for all users. Its removal simplifies the configuration experience, with no impact on existing functionality. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#chat-voice)
 
 <font size="4">Campaigns</font>
 
@@ -58,7 +58,7 @@ Voice campaigns can now be associated with experience flows that do not include 
 
 **Change Logs for Contact Center AI**
 
-The Contact Center AI (CCAI) logs are now integrated into the Change Logs under App Settings → App Profile. All CCAI log entries generated after the cutover date are stored in this new repository and displayed in the proper format, including the app name. The Admin Console’s Audit Log will no longer capture CCAI activity after the cutover date; older entries remain accessible there for reference. This ensures a clear separation between Admin Console operations and Contact Center AI change tracking. [Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
+The Contact Center AI logs are now integrated into the Change Logs under **App Settings** → **App Profile**. All CCAI log entries generated after the cutover date are stored in this new repository and displayed in the proper format, including the app name. The Admin Console’s Audit Log will no longer capture CCAI activity after the cutover date; older entries remain accessible there for reference. This ensures a clear separation between Admin Console operations and Contact Center AI change tracking. [Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
 
 **Latency Report (Beta)**
 
@@ -66,7 +66,7 @@ The Latency Report provides visibility into ASR, Bot, TTS, and end-to-end delays
 
 **Debug Log for Flows**
 
-Contact Center AI (CCAI) nodes now support debug logging within the Flow Builder, extending the existing debug log functionality. Users can view detailed, real-time logs for each step in a flow, including timestamps, step names, input/output data, error messages, and context variables, similar to those found in automation nodes. Logs cover triggers, node execution, task assignments, notifications, digital forms, human tasks, actions taken, and flow completion. [Learn more :octicons-arrow-right-24:](../../contactcenter/flows-and-routing/debugging-and-troubleshooting.md)
+Contact Center AI nodes now support debug logging within the Flow Builder, extending the existing debug log functionality. Users can view detailed, real-time logs for each step in a flow, including timestamps, step names, input/output data, error messages, and context variables, similar to those found in automation nodes. Logs cover triggers, node execution, task assignments, notifications, digital forms, human tasks, actions taken, and flow completion. [Learn more :octicons-arrow-right-24:](../../contactcenter/flows-and-routing/debugging-and-troubleshooting.md)
 
 **Bulk Transfer and End of Calls, Chats, and Emails in Agent Queues**
 
@@ -1156,7 +1156,7 @@ Key Updates:
 * Custom Domain Setup:
     * “Add Domain” button for custom email domain configuration.
     * Domain ownership verification through email login test.
-    * Tabular display of custom domains with associated email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#create-a-custom-domain)
+    * Tabular display of custom domains with associated email addresses.
 * Improved User Interface: Clear organization of Kore and custom domain settings.
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
@@ -1173,8 +1173,6 @@ Key Updates:
 * **Verification Process**: The system checks incoming email addresses against the blocklist.
 * **Automated Response**: Disables pre-configured automations for blocklisted addresses and prevents automated agent transfers for blocklisted interactions.
 * **Normal Processing**: Non-blocklisted emails proceed through the usual automation and transfer processes.
-
-[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#email-blocklist)
 
 <font size="4">Analytics</font>
 
@@ -1237,8 +1235,6 @@ Each tracked detail includes the following:
 * Event Type
 * Involved Agents/Supervisors
 * Detailed Event Description
-
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
 
 <font size="4">Voice Gateway (v0.9.3-rc4)</font>
 

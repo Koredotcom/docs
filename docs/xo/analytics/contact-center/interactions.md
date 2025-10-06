@@ -114,9 +114,10 @@ Steps to export conversation data/transcripts:
         * Up to 25 conversations can be selected for exporting transcripts. If a selected conversation does not have a transcript or the system cannot retrieve one, a blank transcript is exported for that conversation.
         * A status message is displayed at the start of the export. On completion, the file is downloaded.
         * The following [Call Control Parameters](../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters) must be added to view the Download Latency Report option.
-            `notifySttLatency = true`
-            `vadEnable = true`
+            `notifySttLatency = true`  
+            `vadEnable = true`  
             `vadVendor = silero`
+
 3. A status message is displayed at the start of the export. On completion, the file is downloaded.
 
 Steps to Preview and Download Events:

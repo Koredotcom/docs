@@ -34,7 +34,7 @@ The following sections describe how to set up case management, enable features, 
 
     * **Assign Roles:** Assign appropriate roles queues, and skills. [Learn more](../user-management/manage-users.md/#queues--skills){:target="_blank"}.
 
-    * **Case Capacity Limits:** Enable capacity limits for each agent as needed. [Learn more](../user-management/manage-users.md#chat--voice){:target="_blank"}.
+    * **Case Capacity Limits:** Enable capacity limits for each agent as needed.
 
 6. **Set Up Case Management Components**
 
@@ -117,9 +117,9 @@ The following sections describe how to set up case management, enable features, 
 
     Configure the following access controls (user management and role settings):
 
-    * **[Manage Users](../user-management//manage-users.md#queues--skills){:target="_blank"}**
+    * **[Manage Users](../user-management//manage-users.md/#manage-users){:target="_blank"}**
 
-    * **[User Attributes](../user-management//manage-users.md#queues--skills){:target="_blank"}**
+    * **[User Attributes](../user-management//manage-users.md/#attributes){:target="_blank"}**
 
 13. **Configure case handling capacity and language settings**
 

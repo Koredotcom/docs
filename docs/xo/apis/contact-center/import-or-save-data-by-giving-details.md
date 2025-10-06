@@ -2,6 +2,10 @@
 
 To save/import data which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience) by giving details with `accountId` and `orgId`.
 
+!!! Note
+
+    This version will be deprecated soon. Please use [Version 2](./import-or-save-data-by-giving-details-v2.md) of this API.
+
 | **Parameter**    | **Description**                                                            | **Type**      |
 |--------------|------------------------------------------------------------------------|-----------|
 | **Method**       | POST                                                                   |           |
