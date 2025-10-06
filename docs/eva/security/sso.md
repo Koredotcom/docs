@@ -294,9 +294,9 @@ Bitium specializes in cloud-based identity and access management with a focus on
 
 **Setting up Bitium for AI for Work SSO**
 
-Integrating with Bitium's app management interface is a quick and efficient process. This involves adding the Kore.ai app and configuring its SAML authentication parameters..
+Integrating with Bitium's app management interface is a quick and efficient process. This involves adding the app and configuring its SAML authentication parameters.
 
-1. **Add Kore.ai App to Bitium**:
+1. **Add App to Bitium**:
     * Log in to Bitium.
     * Go to **Manage &lt;Company Name> > Manage Apps > Add an App.**
     * Search for "Kore.ai" and install the app.
