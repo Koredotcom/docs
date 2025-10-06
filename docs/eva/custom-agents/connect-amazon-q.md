@@ -1,12 +1,12 @@
 # Connect Amazon Q
 
-The Amazon Q configuration is a pivotal component for establishing seamless integration with Amazon Q Index, thereby unlocking robust enterprise search capabilities. This integration empowers organizations to harness their existing Amazon Q Business applications and associated retrievers, transforming them into a comprehensive knowledge source. 
+The Amazon Q configuration is a pivotal component for establishing seamless integration with Amazon Q Index, thereby unlocking robust enterprise search capabilities. This integration empowers organizations to harness their existing Amazon Q Business applications and associated retrievers, transforming them into a comprehensive knowledge source.
 
-Integrating Amazon Q with Kore.ai unlocks comprehensive enterprise search and actionable knowledge management—securely connecting your workforce to the information and tools they need, wherever they work.
+Integrating Amazon Q unlocks comprehensive enterprise search and actionable knowledge management—securely connecting your workforce to the information and tools they need, wherever they work.
 
 ## Prerequisites
 
-* You must have an Account Admin, Workspace Admin, or Workspace Collaborator role in Kore.ai.
+* You must have an Account Admin, Workspace Admin, or Workspace Collaborator role.
 * Your enterprise must have active Amazon Q Business applications and retrievers configured.
 
 

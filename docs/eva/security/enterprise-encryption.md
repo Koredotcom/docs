@@ -23,7 +23,7 @@ The default encryption key is displayed in the main interface, providing immedia
 
 ## Bring Your Own Key (BYOK) Configuration
 
-Bring Your Own Key (BYOK) encryption for Kore's public cloud SaaS deployments allows enterprises to encrypt their entire account data while retaining full control over their encryption keys. Enterprises can use their own Customer Master Keys (CMKs) for encrypting all organizational data.
+Bring Your Own Key (BYOK) encryption for public cloud SaaS deployments allows enterprises to encrypt their entire account data while retaining full control over their encryption keys. Enterprises can use their own Customer Master Keys (CMKs) for encrypting all organizational data.
 
 **Important Security Considerations**:
 

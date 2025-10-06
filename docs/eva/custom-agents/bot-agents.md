@@ -60,9 +60,7 @@ To create a new Bot Agent, follow these steps:
         Work** platform to complete the
         integration.![](images/webhook_botID.png)
 
-    4.  Under the **Configured Channels** section, click the <**Name of the Bot**> you have created and want to integrate with **AI for Work**. The channel you have created is now enabled. For more information, see
-        [Channel
-        Enablement](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/).
+    4.  Under the **Configured Channels** section, click the <**Name of the Bot**> you have created and want to integrate with **AI for Work**. The channel you have created is now enabled.
 
         **Note**: You can create a new client app for your app by providing the
         JWT tokens generated using the **Post URL** and **Access tokens**
@@ -110,7 +108,7 @@ activated, follow the integration steps to complete the process:
 The **Appearance and Behavior** section displays sample queries to test the agent’s behavior.
 
 1. Click **+Add Query** to input additional test queries.
-2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer <a href="https://docs.kore.ai/ai-for-work/custom-agents/notify-api/" target="_blank">Notifications</a>.
+2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer [Notifications](../custom-agents/notify-api.md).
 3. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period.
 4. Once validated, click **Publish** to move to the final step.
 
