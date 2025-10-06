@@ -87,9 +87,9 @@ When you hover over the listed **Moments**, the following metrics are displayed:
 
 * **Questions Adherences**: The By Question Metrics that are met during the conversation. 
 
-* **Violations**: Speech-based violations that occurred.
+* **Violation**: Speech-based violations that occurred.
 
-* **Omissions**: Metrics not adhered to, including Playbook steps, Dialog tasks, and By Question metrics.    
+* **Omission**: Metrics not adhered to, including Playbook steps, Dialog tasks, and By Question metrics.    
 <img src="../conversation-mining/images/conversation-mining-moments.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
 
 Double-clicking on any of the above interactions opens the corresponding AI-Assisted Manual Audit page, where you can view the conversation history and the recording. [Learn more](../ai-assisted-manual-audit.md){:target=”_blank”}.   

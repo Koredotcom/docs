@@ -25,7 +25,7 @@ To fetch the status of a proactive notification triggered via the async webhook 
   <tr>
    <td><strong>Authorization</strong>
    </td>
-   <td><code>auth: {{JWT}}</code> See <a href="../../apis/automation/api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
+   <td><code>auth: {{JWT}}</code> </a>
    </td>
   </tr>
   <tr>
@@ -42,6 +42,7 @@ To fetch the status of a proactive notification triggered via the async webhook 
   </tr>
 </table>
 
+Refer [How to generate the JWT Token](../../apis/automation/api-introduction.md#generating-the-jwt-token).
 
 ## Path Parameters
 

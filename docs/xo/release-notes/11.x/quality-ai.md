@@ -18,7 +18,7 @@ This enables QA, Supervisors, and Business Managers to visualize conversation to
 
 **Taxonomy Builder**
 
-The builder enables Contact Center Managers, Analysts, and QA teams to create custom taxonomies with three-level hierarchical structures, enhancing conversation categorization. This improves analysis across channels, allowing deeper insights into topic-level metrics and business-specific trends. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/taxonomy-builder/overview.md).
+The builder enables Contact Center Managers, Analysts, and QA teams to create custom taxonomies with three-level hierarchical structures, enhancing conversation categorization. This improves analysis across channels, allowing deeper insights into topic-level metrics and business-specific trends. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/taxonomy-builder/overview.md)
 
 <hr>
 

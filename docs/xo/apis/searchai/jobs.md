@@ -90,7 +90,7 @@ This is a sample response generated for a job initiated to export analytics data
         "ext": "json",
         "fileId": "67a09c9f3e6fdef7c0992935",
         "fileName": "analytics_data_1738579103410",
-        "fileUrl": "https://staging-xo.korebots.com:443/api/getMediaStream/findly/f-fd43fdc2-0118-58d8-9c3e-c47259c1d7aa.json?n=3985948310&s=Ii9iZEF2dXBYUEt0OGlIUStBSFJLMUV3WmlDeW5oZGJHamFFVWh2UnhpckU9Ig$$"
+        "fileUrl": "https://staging-xo.domain.com:443/api/getMediaStream/findly/f-fd43fdc2-0118-58d8-9c3e-c47259c1d7aa.json?n=3985948310&s=Ii9iZEF2dXBYUEt0OGlIUStBSFJLMUV3WmlDeW5oZGJHamFFVWh2UnhpckU9Ig$$"
     },
     "createdBy": "u-4d04030a-93f3-5cba-a07b-1a5b20a7e9a9",
     "directoryInfo": null,
