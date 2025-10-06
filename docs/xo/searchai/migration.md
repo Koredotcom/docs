@@ -58,11 +58,11 @@ Search AI is now a product offered in the AI for Service platform.
 1. Go to the [Websites page in the Search AI](https://platform.kore.ai/builder/app/websites) app.
 2. Set up a web crawl for each of your web sources. You can provide the URL of your source or the sitemap file. Alternatively, if you have a CSV file with the sitemaps of multiple web sources, use the Upload URL option to set up a web crawl. 
 3. Manually configure the crawl settings for each of the web sources. In Search AI, the following SearchAssist “Crawling” features are available under “Advanced Crawl Configurations”: 
-        * Crawl Options
-        * Use Cookies
-        * Javascript rendered
-        * Crawl beyond sitemap
-        * Respect robots.txt
+    * Crawl Options
+    * Use Cookies
+    * Javascript rendered
+    * Crawl beyond sitemap
+    * Respect robots.txt
 
 [Learn More](content-sources/web-crawl.md).
 
