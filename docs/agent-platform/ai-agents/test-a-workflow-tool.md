@@ -11,10 +11,10 @@ This interface provides a consistent way to test workflow tools without leaving 
 
 1. Select **Test Query**, enter sample values for required parameters, and then select **Run Query**.
 
-![Test a Workflow tool](images/test-workflow-tool.png "Test a Workflow tool")
+    ![Test a Workflow tool](images/test-workflow-tool.png "Test a Workflow tool")
 
 1. Select **Test Results** to view the output in JSON or Logs.
 
 1. Select **Go to Flow** to edit parameters or logic.
 
-![Test Result](images/workflow-test.png "Test Result")
+    ![Test Result](images/workflow-test.png "Test Result")
