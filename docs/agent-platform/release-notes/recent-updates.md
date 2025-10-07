@@ -46,9 +46,12 @@ The Platform now supports seamless integration of custom models in Agentic Apps 
 Kore-hosted open-source models now support structured JSON output through the response_format parameter, aligned with OpenAI’s schema style. This enables schema-based responses across Prompts and Tools.
 
 * Supported on the v2/chat/completions endpoint (default for new deployments).
-* Works with most open-source models (see the documentation for the full list of supported models).
+* Works with most open-source models (see the documentation for the full [list of supported models](../models/supported-models.md#supported-models-for-structured-output).
 * Not supported for fine-tuned models, Hugging Face imports, CT2-optimized models, or locally imported models.
 * The schema editor automatically appears in AI nodes when a supported model is selected.
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md#supported-models-for-structured-output){:target="_blank"}
+
 
 **Expanded Model Support**
 
