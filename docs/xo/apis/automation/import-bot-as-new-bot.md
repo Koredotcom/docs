@@ -33,7 +33,7 @@ Please refer to the [Upload File API](upload-file.md) for uploading and obtainin
    </td>
    <td><code>auth: {{JWT}}</code>
 <br>
-See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
+See <a href="./api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
