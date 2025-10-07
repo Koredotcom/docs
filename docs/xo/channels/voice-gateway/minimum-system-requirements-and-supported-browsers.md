@@ -133,17 +133,17 @@ In Google Chrome, you can disable sleep mode for specific sites.
 
 Allow traffic and whitelist the ports listed below in their respective firewalls based on the Session Border Controller (SBC) they connect to.
 
-=== "Region – USA"
+=== "Region – Australia (AU)"
 
     | SBC IP Address                        | Firewall Rules                                                                 |
     |---------------------------------------|--------------------------------------------------------------------------------|
-    | 13.224.189.218<br>(or)<br>35.174.41.205 | [Learn more](../voice-gateway/us-firewall-rules.md) |
+    | 13.237.170.233<br>(or)<br>54.153.137.7 | [Learn more](../voice-gateway/us-firewall-rules.md) |
 
-=== "Region – Japan (JP)"
+=== "Region - Europe (EU)"
 
-    | SBC IP Address                        | Firewall Rules                                                                 |  
+    | SBC IP Address                        | Firewall Rules                                                                 |
     |---------------------------------------|--------------------------------------------------------------------------------|
-    | 35.76.183.247<br>(or)<br>54.248.11.38 | [Learn more](../voice-gateway/japan-firewall-rules.md) |
+    | 13.43.133.73<br>(or)<br>18.133.179.73 | [Learn more](../voice-gateway/eu-firewall-rules.md) |
 
 === "Region - Germany (DE)"
 
@@ -151,20 +151,26 @@ Allow traffic and whitelist the ports listed below in their respective firewalls
     |---------------------------------------|--------------------------------------------------------------------------------|
     | 13.70.125.14<br>(or)<br>18.158.223.171 | [Learn more](../voice-gateway/germany-firewall-rules.md) |
 
-=== "Region - United Kingdom (UK)"
-
-    | SBC IP Address                        | Firewall Rules                                                                 |
-    |---------------------------------------|--------------------------------------------------------------------------------|
-    | 13.43.133.73<br>(or)<br>18.133.179.73 | [Learn more](../voice-gateway/uk-firewall-rules.md) |
-
 === "Region - India (IN)"
 
     | SBC IP Address                        | Firewall Rules                                                                 |
     |---------------------------------------|--------------------------------------------------------------------------------|
     | 20.197.5.84<br>(or)<br>20.244.87.83 | [Learn more](../voice-gateway/in-firewall-rules.md) |
 
-=== "Region - Europe (EU)"
+=== "Region – Japan (JP)"
+
+    | SBC IP Address                        | Firewall Rules                                                                 |  
+    |---------------------------------------|--------------------------------------------------------------------------------|
+    | 35.76.183.247<br>(or)<br>54.248.11.38 | [Learn more](../voice-gateway/japan-firewall-rules.md) |
+
+=== "Region - United Kingdom (UK)"
 
     | SBC IP Address                        | Firewall Rules                                                                 |
     |---------------------------------------|--------------------------------------------------------------------------------|
-    | 13.43.133.73<br>(or)<br>18.133.179.73 | [Learn more](../voice-gateway/eu-firewall-rules.md) |
+    | 13.43.133.73<br>(or)<br>18.133.179.73 | [Learn more](../voice-gateway/uk-firewall-rules.md) |
+
+=== "Region – USA"
+
+    | SBC IP Address                        | Firewall Rules                                                                 |
+    |---------------------------------------|--------------------------------------------------------------------------------|
+    | 13.224.189.218<br>(or)<br>35.174.41.205 | [Learn more](../voice-gateway/us-firewall-rules.md) |
