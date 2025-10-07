@@ -45,7 +45,7 @@ App credentials are fetched based on Genesys desktop queue names. If the Genesys
 
 Create a Data Table to store app credentials on the XO Platform.
 
-1. Sign in to Kore.ai [appbuilder](http://platform.kore.ai){:target="_blank"}. 
+1. Sign in to Kore.ai [appbuilder](https://platform.kore.ai){:target="_blank"}. 
 2. Click **Data** > **Data Tables**. 
 3. Click **New Table**.  
 <img src="../images/data-table-new-table-1.png" alt="new-table" title="new-table" style="border: 1px solid gray; zoom:80%;">
@@ -97,7 +97,7 @@ Create a Data Table to store app credentials on the XO Platform.
 
 Set up necessary permissions and app assignments and insert bot-specific data into the Data Table.
 
-1. Sign in to Kore.ai [botbuilder](http://bots.kore.ai/botbuilder){:target="_blank"}.
+1. Sign in to Kore.ai [botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Click **Data** > **Apps**.
 3. Select the **App** with write access to the Data Table where you want to add information.  
 <img src="../images/copying-client-id-and-secret-6.png" alt="copying-client-id-and-secret" title="copying-client-id-and-secret" style="border: 1px solid gray; zoom:80%;">
@@ -289,7 +289,7 @@ Audiohook integration requires specific configuration values to support Agent AI
     5.1. **Channel** value should be both.
 
     5.2. The **Connection URI** format should be similar to  
-    wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&Agent AI=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&Agent AI=true), but add “multiBot=true” parameter to it. 
+    wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&Agent AI=true](https://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&Agent AI=true), but add “multiBot=true” parameter to it. 
 
     !!! note
 
