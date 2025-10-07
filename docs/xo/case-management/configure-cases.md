@@ -16,12 +16,12 @@ Administrators can configure the system to specific business needs through the f
 
 * **[Priority](#priority-configuration):** Agents set up priority levels to determine the urgency and order for addressing corresponding cases and tasks.
 
-* **[User Management](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features)**{:target="_blank"}: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues.
+* **[User Management](../user-management/manage-users.md#manage-users)**{:target="_blank"}: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues.
 
 
 ## Fields
 
-Fields represent pieces of data that agents need to collect for a case. The system includes default required fields and allows you to create custom fields with different formats, such as dropdowns, checkboxes, phone numbers, emails, and URLs, based on your business needs. 
+Fields represent pieces of data that agents need to collect for a case. The system includes default required fields and lets you to create custom fields with different formats, such as dropdowns, checkboxes, phone numbers, emails, and URLs, based on your business needs. 
 
 Using the Fields configuration, you can create and manage the following fields and use them to customize case templates:
 
