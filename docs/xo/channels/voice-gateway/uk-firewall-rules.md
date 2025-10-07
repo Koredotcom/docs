@@ -1,15 +1,17 @@
+# UK Firewall Rules
+
 ## Voice Gateway
 
 | Component                              | Protocol | Source IP | Source Port † | Allowed Destinations                          | Destination Port |
 |----------------------------------------|----------|-----------|---------------|-----------------------------------------------|-----------------|
-| Session Border Controller (SBC) <br>(Agent SBC) | TCP/UDP  | ANY       | ANY           | 3.70.125.14                                   | 5060            |
-|                                        | TLS      | ANY       | ANY           | 3.70.125.14                                   | 5061            |
-|                                        | TCP      | ANY       | ANY           | 3.70.125.14                                   | 8443            |
-|                                        | TCP/UDP  | ANY       | ANY           | 18.158.223.171                                | 5060            |
-|                                        | TLS      | ANY       | ANY           | 18.158.223.171                                | 5061            |
-|                                        | TLS      | ANY       | ANY           | 18.158.223.171                                | 8443            |
-|                                        | UDP      | ANY       | ANY           | 3.70.125.14                                   | 6000-65535      |
-|                                        | UDP      | ANY       | ANY           | 18.158.223.171                                | 6000-65535      |
+| Session Border Controller (SBC) <br>(Agent SBC) | TCP/UDP  | ANY       | ANY           | 18.133.179.73                                 | 5060            |
+|                                        | TLS      | ANY       | ANY           | 18.133.179.73                                 | 5061            |
+|                                        | TCP      | ANY       | ANY           | 18.133.179.73                                 | 8443            |
+|                                        | TCP/UDP  | ANY       | ANY           | 13.43.133.73                                  | 5060            |
+|                                        | TLS      | ANY       | ANY           | 13.43.133.73                                  | 5061            |
+|                                        | TLS      | ANY       | ANY           | 13.43.133.73                                  | 8443            |
+|                                        | UDP      | ANY       | ANY           | 18.133.179.73                                 | 6000-65535      |
+|                                        | UDP      | ANY       | ANY           | 13.43.133.73                                  | 6000-65535      |
 
 ## Media Twilio Gateway
 

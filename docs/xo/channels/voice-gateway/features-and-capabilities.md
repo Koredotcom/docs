@@ -50,10 +50,10 @@ In the speak tag, follow below-mentioned steps:
 
 1. Empty speak tag without attributes **&lt;speak>**
     1. In this case, Voice Gateway will construct **voice** and **language** elements on its own based on values supplied in Call control params.
-2. Customised speak tag with attributes **&lt;speak version="1.0" xml:lang="en-US" xmlns="**[W3C Speech Synthesis namespace](http://www.w3.org/2001/10/synthesis) **">**
+2. Customised speak tag with attributes **&lt;speak version="1.0" xml:lang="en-US" xmlns="**[W3C Speech Synthesis namespace](https://www.w3.org/2001/10/synthesis) **">**
     1. In this case, Voice Gateway will send the SSML without any modifications to the TTS engine. Follow option 2 and the voice element will work.
 
 Example:
 ```
-<speak version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/10/synthesis"><voice name="en-US-AvaNeural">Hi, I'm eBay's automated phone assistant. Let me know in a few words how I can help.</voice></speak>
+<speak version="1.0" xml:lang="en-US" xmlns="https://www.w3.org/2001/10/synthesis"><voice name="en-US-AvaNeural">Hi, I'm eBay's automated phone assistant. Let me know in a few words how I can help.</voice></speak>
 ```
