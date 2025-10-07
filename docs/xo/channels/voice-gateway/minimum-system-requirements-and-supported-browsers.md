@@ -137,7 +137,7 @@ Allow traffic and whitelist the ports listed below in their respective firewalls
 
     | SBC IP Address                        | Firewall Rules                                                                 |
     |---------------------------------------|--------------------------------------------------------------------------------|
-    | 13.237.170.233<br>(or)<br>54.153.137.7 | [Learn more](../voice-gateway/us-firewall-rules.md) |
+    | 13.237.170.233<br>(or)<br>54.153.137.7 | [Learn more](../voice-gateway/au-firewall-rules.md) |
 
 === "Region - Europe (EU)"
 
