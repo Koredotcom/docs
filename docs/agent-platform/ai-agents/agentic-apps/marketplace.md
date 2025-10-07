@@ -37,9 +37,9 @@ Extend your current app:
 
 1. Go to [Agentic Apps](https://agent-platform.kore.ai/apps){:target="_blank"} page or visit the [Marketplace](https://kore.ai/marketplace/){:target="_blank"}.
 
-    <img src="../images/marketplace.png" alt="Access the Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/marketplace.png" alt="Access the Marketplace" title="Marketplace" style="border: 0px solid gray; zoom:80%;">
 
-2. Browse by category and select an app to view its capabilities, associated tools, model compatibility, and language support.
+2. Browse by category and select an app to view its capabilities, associated tools, model compatibility, and language support. Review the installation instructions to prepare for tool configuration.
 
        <img src="../images/app-information-window.png" alt="App Information Window" title="App Information Window" style="border: 1px solid gray; zoom:60%;">
 
@@ -51,12 +51,12 @@ Extend your current app:
     * The app, agents, and tools are created in your workspace.
     * (Optional) Connect to Search AI for knowledge base integration. [Learn more about Knowledge Tool Integration](../knowledge/overview.md){:target="_blank"}.
 
-       <img src="../images/app-overview-page-marketplace.png" alt="App overview page" title="App overview page" style="border: 1px solid gray; zoom:80%;">
+       <img src="../images/app-overview-page-marketplace.png" alt="App overview page" title="App overview page" style="border: 0px solid gray; zoom:80%;">
 
 5. **Configure installed tools**:
     After installation, return to the Marketplace and select the app you installed. On the app’s description page, locate the **Installation Instructions**. Click the **Link** next to each installed tool to view the detailed configuration procedure.
 
-       <img src="../images/installation-instructions.png" alt="Installation Instructions" title="Installation Instructions" style="border: 1px solid gray; zoom:80%;">
+       <img src="../images/installation-instructions.png" alt="Installation Instructions" title="Installation Instructions" style="border: 0px solid gray; zoom:80%;">
 
 ### Enhancing an Existing App
 
