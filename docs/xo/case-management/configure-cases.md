@@ -21,7 +21,7 @@ Administrators can configure the system to specific business needs through the f
 
 ## Fields
 
-Fields represent pieces of data that agents need to collect for a case. The system includes default required fields and allows you to create custom fields with different formats, such as dropdowns, checkboxes, phone numbers, emails, and URLs, based on your business needs. 
+Fields represent pieces of data that agents need to collect for a case. The system includes default required fields and lets you to create custom fields with different formats, such as dropdowns, checkboxes, phone numbers, emails, and URLs, based on your business needs. 
 
 Using the Fields configuration, you can create and manage the following fields and use them to customize case templates:
 
