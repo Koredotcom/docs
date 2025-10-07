@@ -640,7 +640,7 @@ The Raw Data API is updated to include the following:
 * Links Clicked / Redirects: The “linksClicked” parameter shows the URL and the timestamp when a link was clicked.
 
 **Chat History API Includes Agent Messages**
-The Chat or [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/){:target="_blank"} now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
+The Chat or [Conversation Details and Summary API](../../apis/automation/conversation-details-and-summary.md){:target="_blank"} now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
 
 <font size="4">UI Enhancement</font>
 

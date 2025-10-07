@@ -26,7 +26,7 @@ This API controls transcription and call recording sessions for Agent AI SIP-REC
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>
+See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)
    </td>
   </tr>
   <tr>
