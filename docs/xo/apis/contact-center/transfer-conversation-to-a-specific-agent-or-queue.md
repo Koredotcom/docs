@@ -22,7 +22,7 @@ Here is the HTML table converted to Markdown format:
 
 | Parameter      | Description                                                                                       | Type               |
 |----------------|---------------------------------------------------------------------------------------------------|--------------------|
-| callbackUrl    | The URL in which message is posted. For example: `http://localhost:8009`                          | string, required   |
+| callbackUrl    | The URL in which message is posted. For example: `https://localhost:8009`                          | string, required   |
 | orgId          | The orgId of the organization. For example: `o-fbfa482a-bf65-5386-963e-f00a8cc7xxxx`              | string, required   |
 | aId            | The agent ID of the target agent. For example: `a-220172c-856e-4db6-a2d1-d4c2dabexxxx`            | string, required   |
 | botSessionId   | The session ID of the bot. For example: `653a06c9aae89c5fbb4exxxx`                                | string, required   |
@@ -33,12 +33,12 @@ Here is the HTML table converted to Markdown format:
 **Transfer to Agent**:
 
 ```
-curl --location 'http://host/agentassist/api/v1/public/{{streamId}}/assign-conversation' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/assign-conversation' \
 --header 'auth: <token>' \
 --header 'accountid: {{accountId}}' \
 --header 'Content-Type: application/json' \
 --data '{
-"callbackUrl": "http://localhost:8009",
+"callbackUrl": "https://localhost:8009",
 "orgId": "{{orgId}}",
 "aId": "{{aId}}",
 "botSessionId": "6538f8a3c9cf425ee5cfxxxx"
@@ -46,12 +46,12 @@ curl --location 'http://host/agentassist/api/v1/public/{{streamId}}/assign-conve
 ```
 **Transfer to Queue**:
 ```
-curl --location 'http://localhost/agentassist/api/v1/public/{{streamId}}/assign-conversation' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/assign-conversation' \
 --header 'auth: <token>' \
 --header 'accountid: {{accountId}}' \
 --header 'Content-Type: application/json' \
 --data '{
-"callbackUrl": "http://localhost:8009",
+"callbackUrl": "https://localhost:8009",
 "orgId": "{{orgId}}",
 "transferredType": "QUEUE",
 "queueId": "{{queueId}}",
