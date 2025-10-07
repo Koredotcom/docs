@@ -7,7 +7,7 @@ This section covers the fundamental steps required to set up and configure your 
 Go to The Product (For example, Automation AI/ Contact Center AI) > Flows & Channels > Channels > Voice Gateway.  
 <img src="../images/vg-page.png" alt="Voice Gateway Page" title="Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
 
-## Initial Setup
+## Configuration
 
 ### Buy New Phone Number
 
@@ -245,7 +245,9 @@ Steps to delete a SIP number:
 
 3. The sip number is deleted.
 
-## Voice Preferences
+## ASR and TTS
+
+### Voice Preferences
 
 This section outlines the steps to configure Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) for your Voice Gateway. You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking **Manage**.  
     <img src="../images/voice-preference.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
@@ -342,7 +344,9 @@ The following languages and dialects are supported:
 | English (Kenya)       | English (United Kingdom) |
 | English (New Zealand) | English (United States)  |
 
-## Multi-Language App Setup
+## Best Practices
+
+### Multi-Language App Setup
 
 This guide details the process for setting up a multilingual App that can switch languages based on the caller's selection. We'll cover the steps for both the **Experience Flow** (how the call is routed) and the **Dialog Flow** (how the AI Agent responds).
 
