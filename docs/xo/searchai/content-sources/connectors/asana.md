@@ -105,4 +105,4 @@ For public **projects**, the `sys_racl` field is populated with the workspace or
 
 For **task** data ingested in the Search AI application, the `sys_racl` field is populated with one or more project IDs that the task is associated with. If any of those projects is a public project, the `sys_racl` field for the task is set to organization ID. 
 
-To associate users to the project ID or the workspace ID, use the [Permission Entity APIs. ](https://docs.kore.ai/xo/apis/searchai/permission-entity-apis/)
+To associate users to the project ID or the workspace ID, use the [Permission Entity APIs. ](../../../apis/searchai/permission-entity-apis.md)

@@ -50,9 +50,7 @@ This API allows you to ingest and index data into the SearchAI application. You 
   <tr>
    <td><strong>Authorization</strong>
    </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
+   <td><code>auth: {{JWT Token}}</code>
    </td>
   </tr>
   <tr>
@@ -142,10 +140,11 @@ See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to 
    <td>Yes
    </td>
    <td>Depending upon the  value of the sourceType, this field can be used for:
-1. Passing the chunks fields in JSON format. 
-2. Passing the reference of the file containing the chunk fields in JSON format.  
-3. Passing the web URLs to be crawled.
-   </td>
+   <ol>
+    <li> Passing the chunks fields in JSON format. </li>
+    <li> Passing the reference of the file containing the chunk fields in JSON format. </li> 
+    <li> Passing the web URLs to be crawled.</li>
+   </ol></td>
   </tr>
 </table>
 
@@ -162,11 +161,8 @@ See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to 
       "chunks": [
         {
           "chunkText": "Cybersecurity is the practice of protecting systems,    networks, and programs from digital attacks. With the rise of cyber threats like ransomware and data breaches, cybersecurity has become a critical concern for businesses and governments worldwide.",
-          "recordUrl": "https://www.cybersafe.com/",
-          "chunkTitle": "The Importance of Cybersecurity",
-          "chunkMeta": {
-            "Role": "Dev"
-          }
+          "recordUrl": "https://www.example.com/cybersecurity",
+          "chunkTitle": "The Importance of Cybersecurity"
         }
       ]
 ```
@@ -186,7 +182,7 @@ Note that the fields inside the chunks object should correspond to the chunk fie
 
     {
 
-      "urls": ["[https://www.shell.de/geschaeftskunden/energie/shell-energy-blog/energieloesungen-fuer-den-mittelstand.html](https://www.shell.de/geschaeftskunden/energie/shell-energy-blog/energieloesungen-fuer-den-mittelstand.html)",    "[https://www.shell.de/ueber-uns/standorte/rheinland/medieninfos-und-downloads/neue-silhouette-als-zeichen-des-wandels-ueber-50-meter-hohe-kolonne-fuer-die-neue-grundoel-anlage-bei-shell.html](https://www.shell.de/ueber-uns/standorte/rheinland/medieninfos-und-downloads/neue-silhouette-als-zeichen-des-wandels-ueber-50-meter-hohe-kolonne-fuer-die-neue-grundoel-anlage-bei-shell.html)"]
+      "urls": ["https://example.com/docs/", "https://example.com/product-guide/","https://example.com/user-guide/"]
 
     }
 
@@ -220,4 +216,4 @@ Note that the URLs field should point to the list of URLs that need to be crawle
 
 where, fileId is the unique identifier of the uploaded file.
 
-Use the [Upload File API](https://docsinternal-kore.github.io/docs/xo/apis/automation/upload-file/) to upload the file to the application. This API will return the fileId in response, which should be used in the Ingest API to ingest and index the content of the file. 
+Use the [Upload File API](../automation/upload-file.md) to upload the file to the application. This API will return the fileId in response, which should be used in the Ingest API to ingest and index the content of the file. 
