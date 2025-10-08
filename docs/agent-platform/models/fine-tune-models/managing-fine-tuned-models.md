@@ -2,7 +2,7 @@
 
 The Fine-Tuned Models tab in the Models section allows you to create, customize, and manage models fine-tuned to your specific use cases.
 
-* **[Create a Model](./create-a-fine-tuned-model.md)**: Fine-tune a Kore-hosted model or import one from Hugging Face. Configure training parameters, datasets, and hardware resources as needed.
+* **[Create a Model](./create-a-fine-tuned-model.md)**: Fine-tune a Platform-hosted model or import one from Hugging Face. Configure training parameters, datasets, and hardware resources as needed.
 * **[Deploy a Model](./deploy-a-fine-tuned-model.md)**: Once fine-tuning is complete, deploy the model within the Agent Platform or externally using the generated API endpoint. You can also fine-tune further on top of an already fine-tuned model.
 
 Once deployed, the model is listed on the Fine-tuned models page, showing its deployment count and other details.
@@ -15,12 +15,14 @@ The Fine-Tuned Models listing page displays all available models along with the 
 |---------------------|-------------|
 | **Model Name**      | Name of the fine-tuned model. |
 | **Base model**      | The model used as the base for fine-tuning. |
-| **No. of deployments** | Number of times the model has been deployed. |
+| **Active Deployments** | Number of deployments that are currently active. |
+| **Deployment Failed** | Number of deployments that failed. |
+| **Ready to Deploy** | Number of deployments that are ready to be deployed. |
 | **Tags**            | Labels associated with the deployment. |
 | **Added by**        | User who created or imported the model. |
 | **Updated on**      | Date of the deployment. |
 
-<img src="../images/fine_tune_models_overview.png" alt="Fine-tune models table" title="Fine-tune models table" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/fine_tune_models_new.png" alt="Fine-tune models table" title="Fine-tune models table" style="border: 1px solid gray; zoom:80%;">
 
 Select a model in the list to open the model’s detail view. By default, this opens the Overview page. The left navigation pane includes the following sections:
 

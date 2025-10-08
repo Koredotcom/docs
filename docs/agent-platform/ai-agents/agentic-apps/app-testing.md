@@ -20,7 +20,7 @@ Whenever a user clicks on the Playground option, by default, a new user session 
 
 **Note**
 
-* Voice output is not supported. The application only provides text-based responses. 
+* Voice output isn't supported. The application only provides text-based responses. 
 * For voice input, the application uses the built-in voice capabilities of the browser, which is supported by default on most of the commonly used browsers like Chrome, Firefox, Safari, and Edge.
 
 **Response Display**: The agent's response is displayed, providing immediate feedback on the input provided.
@@ -28,15 +28,14 @@ Whenever a user clicks on the Playground option, by default, a new user session 
 **Timeline(Right Panel)**: It displays a chronological timeline that shows a detailed, step-by-step timeline of how the agent processes a query. It helps trace the flow of execution and understand the contribution of each component involved in generating a response. The highlights of the timeline:
 
 * Displays the query execution in chronological order, starting from the user's input to the final output.
-* Each step in the timeline represents a distinct agent or tool(e.g., Supervisor, Insights_Agent) and includes the time taken to complete its task.
+* Each step in the timeline represents a distinct agent or tool(example: Supervisor, Insights_Agent) and includes the time taken to complete its task.
 * Clicking on a step reveals detailed information, including:
     * Messages: The specific question or command sent to the component or received from the component, along with the reasoning or explanation of the logic used to process the request. 
     * Request: The request prompt to the component.
     * Response: Response received from the component. 
-    * Logs: Debug information, if any, is available for the execution step. 
+    * Debug Logs: Provides detailed, actionable status messages across agents, tools, and supervisors, with Guardrails execution logging, auto expanded current traces, and session and trace IDs for clearer visibility into execution flow.
 
-
-![alt_text](images/playground/processing-timeline.png "image_tooltip")
+![alt_text](images/playground/processing-timeline.png "Session debug")
 
 
 **Flow Diagram(Right Panel):** Offers a visual representation of the overall execution flow. The flow diagram makes it easier to understand the sequence of operations. 
@@ -51,10 +50,24 @@ This detailed layout enables users to understand the sequence of operations and 
 **Note:**
 
 * Attachments are only allowed if the **Document Upload** option is enabled under **Playground Settings** on the **Configurations** page.
-* The **maximum number of files** and **file size limits** are controlled by the **Attachment Configurations** under **General Settings**. 
+* The **maximum number of files** and **file size limits** are controlled by the **Attachment Configurations** under **General Settings**. [Learn More](settings/app-configurations.md).
+* When a file is uploaded in the Playground, a **preview** icon is automatically displayed next to the file name. This allows users to quickly identify the uploaded file before continuing the conversation.  ![Document Preview](images/playground/preview.png "Document preview")
 
-[Learn More](settings/app-configurations.md)
 
+**Document Context Management**
+
+The document management interface presents an enhanced experience for managing uploaded documents, organized into two distinct sections:
+
+* ***In Context***: Lists documents currently being used as context for the ongoing conversation.
+* ***Removed*:** Lists documents that have been uploaded but aren't part of the context currently. These documents can be re-added to the context at any time.
+
+
+![Context Management](images/attachments/document-mgmt.png "Context Management")
+
+
+When a document is deleted from the In Context section, it's automatically moved to the Removed section. 
+
+To restore a document from the Removed section, click the plus (+) icon. To permanently delete the attachment, click the delete icon on the file in the Removed section.
 
 ## Conversation History
 
@@ -64,7 +77,7 @@ The Playground automatically stores the conversation history of all user interac
 
 
 * Click the **History** button at the top of the Playground interface. 
-* A list of past conversations is displayed, showing the first user message and response.  Users can use the time filters to view selected conversations in the list. 
+* A list of past conversations is displayed, showing the first user message and response. Users can use the time filters to view selected conversations in the list. 
 * Select the desired conversation that opens the corresponding session in the playground. 
 * The user can now **review** or **continue** the conversation from where it was left off.
 
@@ -74,7 +87,7 @@ Points to Note:
 * Only the **most recent 50 messages** (including user inputs and agent responses) from a conversation are stored and restored when resuming a session. If a chat had more than 50 messages, only the last 50 will be available in the history. 
 * When a past chat is resumed, the **current configuration settings** are applied to continue the interaction.
 * When a session is resumed, any **attachments** from the previous session **remain accessible**. However, to use these attachments as contextual information for the current conversation, the user must **manually select them from the attachment list**.
-* When resuming a session**, thoughts** are **not available** for messages from the earlier session. They are only shown for messages in the **current active conversation**.
+* When resuming a session, thoughts **aren't available** for messages from the earlier session. They're only shown for messages in the **current active conversation**.
 
 
 ## Authorization Process for Agent Tools
@@ -84,11 +97,10 @@ If the **Auth Profiles** configured for the agent’s tools require user authori
 The system evaluates whether the authorization has already been completed. 
 
 
-
 * **If already authorized:** The status is shown as **"Authorized"** (as displayed in the image), and the agent proceeds with responding to the user's query.
 * **If not authorized:** The user is prompted to **authorize access** before the agent can proceed further. A secure redirect URL will be presented for the user to complete the authorization process.
 
-**Note:** Until authorization is completed, the agent will not be able to execute the required actions successfully due to a lack of access to protected services. In this situation, the tool will fail and return errors. If more than one authorization is required, all of them are listed in the table at the beginning of the interaction. 
+**Note:** Until authorization is completed, the agent won't be able to execute the required actions successfully due to a lack of access to protected services. In this situation, the tool will fail and return errors. If more than one authorization is required, all of them are listed in the table at the beginning of the interaction. 
 
 **Example**
 

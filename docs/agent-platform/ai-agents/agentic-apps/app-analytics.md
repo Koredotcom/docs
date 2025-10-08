@@ -18,7 +18,7 @@ The timeline view provides a chronological view of all the steps within a trace.
 <img src="../images/trace-details.png" alt="Traces" title="Traces" style="border: 1px solid gray; zoom:65%;">
 
 
-**How is tracing useful?**
+**How is tracing useful?** 
 
 * Transparency and Insights: Tracing provides visibility into the flow of requests and processes within the application, enabling a deeper understanding of application behavior and data handling.
 * Debugging: By tracing the execution path, developers can identify the root causes of bugs or performance issues, making it easier to troubleshoot and resolve problems efficiently.

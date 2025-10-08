@@ -46,7 +46,7 @@ This metadata is stored in the system memory, sessionMeta, in the **artifacts** 
       "filename": "app-export.json",
       "mimetype": "application/json",
       "isActive": false,
-      "downloadUrl": "http://localhos/api/v1/getMediaStream/orgFiles/public?h=dHkwTlA3QmFpVmgxUDAzWmVScmd0eWNLV1Y1dUtrNFV6cU5IdWpycXZPbz0$"
+      "downloadUrl": "https://localhost/api/v1/getMediaStream/orgFiles/public?h=dHkwTlA3QmFpVmgxUDAzWmVScmd0eWNLV1Y1dUtrNFV6cU5IdWpycXZPbz0$"
     }
   ]
 ```
@@ -183,7 +183,7 @@ Use the **attach** option in the chat widget to upload files while testing your 
 ![alt_text](images/attachments/attach-option.png "image_tooltip")
 
 
-This allows you to upload the files. Refer to [this for file limits](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/settings/app-configurations/#attachment-configuration). 
+This allows you to upload the files. Refer to [this for file limits](settings/app-configurations.md#attachment-configuration) .
 
 
 ## File State Management

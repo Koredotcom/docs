@@ -11,19 +11,19 @@ The Agent Protocol API enables programmatic interaction with your agents, allowi
 All requests are made to the following base URL. 
 
 ```
-https://<agent-platform-env>.kore.com/api/v2/
+https://<agent-platform-env>.<domain>.com/api/v2/
 ```
 
 
-Replace `<agent-platform-env>` with your specific environment name.
+Replace `<agent-platform-env>` with your specific environment name and `<domain>` with your domain name.
 
 
 ### Authentication
 
-All API requests must include an **API Key** in the **<code>Authorization</code>** header. You can generate the API key from the application. Refer to [this](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/deployment/access-deployed-version/#generate-the-api-key-for-app-authentication) to learn more about generating an API Key. 
+All API requests must include an **API Key** in the **<code>Authorization</code>** header. You can generate the API key from the application. Refer to [this](../../ai-agents/agentic-apps/deployment/access-deployed-version.md#generate-the-api-key-for-app-authentication) to learn more about generating an API Key. 
 
 
-```
+```json
 x-api-key: YOUR_API_KEY
 ```
 
@@ -39,6 +39,7 @@ The following table lists the Agent Protocol APIs that allow users to interact w
 | [Sessions API](sessions.md)    | Creates, retrieves, or ends a session with an agent to maintain conversation context.             |
 | [Runs API](execute.md)        | Sends user input to an agent within a session and receives a response.                            |
 | [File Attachment APIs](upload.md) | Upload or delete attachments to a conversation. These attachments can be referenced during an agent run as context|
+| [Create App API](create-app.md) | Create a new Agentic App.|
 
 
 ## Key Concepts and Terminologies
@@ -47,7 +48,7 @@ Below is a list of important terms used across the API documentation.
 
 
 
-* **App (AppId)**: Represents a specific App built on the Agent platform.
+* **App (AppId)**: Represents a specific App built on the Agent Platform.
 * **Environment (envName)**: Refers to a deployment environment for the app. The environment name must match the exact name as configured in the application. 
 * **Session (sessionId)**: A unique ID representing a single conversation between an end-user and the agent. Sessions allow multi-turn conversations by preserving context.
 * **Session Identity**: Used to reference a session or user. You can refer to the session in one or more of the following ways. 
@@ -146,7 +147,7 @@ Sample Response
             "content": {
                 "auth_profiles": [
                     {
-                        "url": "https://agent-platform.kore.ai/r/396c63515671634648357955",
+                        "url": "https://{host}/r/396c63515671634648357955",
                         "idpName": "Google",
                         "isAuthorized": false,
                         "sso_type": "oauth2"

@@ -82,8 +82,11 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
       emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides.en.agent-platform/.icons      
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -114,6 +117,7 @@ nav:
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
     - Accessing Agent Platform: getting-started/sign-up-sign-in.md
+    - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
     - Quick Start Tutorials:
       - Video Tutorials: 
         - Product Overview: getting-started/tutorials/agent-platform.md
@@ -174,7 +178,8 @@ nav:
             - Function Node: ai-agents/tools/tool-flows/types-of-nodes/function-node.md
             - Condition Node: ai-agents/tools/tool-flows/types-of-nodes/condition-node.md
             - DocSearch Node: ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md 
-            - Loop Node: ai-agents/tools/tool-flows/types-of-nodes/loop-node.md     
+            - Loop Node: ai-agents/tools/tool-flows/types-of-nodes/loop-node.md  
+            - Human Node: ai-agents/tools/tool-flows/types-of-nodes/human-node.md 
             - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md 
           - Tool Flow Change Log: ai-agents/tools/tool-flows/tool-canvas-change-log.md    
         - Sharing & Permissions: 
@@ -275,7 +280,7 @@ nav:
         - Create Projects: evaluation/agentic-evaluation/create-project.md
         - Create Evaluations: evaluation/agentic-evaluation/create-evaluation.md
         - Import Datasets: evaluation/agentic-evaluation/import-production-data.md
-        - Configure Evaluators: evaluation/agentic-evaluation/evaluate-production-data.md
+        - Configure Evaluators: evaluation/agentic-evaluation/configure-evaluators.md
         - Run Evaluations: evaluation/agentic-evaluation/run-evaluation.md
         - View Results: evaluation/agentic-evaluation/view-evaluation-result.md
         - Analyze Evaluations: evaluation/agentic-evaluation/analyze-evaluation.md
@@ -290,6 +295,7 @@ nav:
     - User Management:
       - Overview: settings/user-management/overview.md
       - User Management: settings/user-management/users.md
+      - Invite a User: settings/user-management/invite-a-user.md
       - Add Users from Active Directory: settings/user-management/settings/active-directory.md
       - Role Management: settings/user-management/role-management.md
     - Integrations:
@@ -319,7 +325,8 @@ nav:
   - APIs: 
     - Agentic Apps:
       - About Agentic App APIs: apis/agentic-apps/overview.md
-      - APIs List: apis/agentic-apps/overview/#api-list
+      - APIs List: apis/agentic-apps/overview/#apis-list
     - Tools:
       - About Tools APIs: apis/overview.md
       - APIs List: apis/overview/#apis-list
+  - Marketplace: ai-agents/agentic-apps/marketplace.md

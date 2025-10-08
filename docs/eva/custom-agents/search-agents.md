@@ -1,168 +1,97 @@
-# RAG Agents
+# Search Agents
 
-RAG stands for **Retrieval Augmented Generation**. RAG Agents combine retrieval
-and generation techniques to provide accurate and contextually relevant answers
-to user queries. RAG agents leverage existing knowledge bases to find and
-retrieve relevant information and then use LLM models to generate an accurate
-and precise response.
+Search agents combine retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. Search agents leverage existing knowledge bases to find and retrieve relevant information and then use LLM models to generate an accurate and precise response.
 
-**RAG agents in AI for Work** can be implemented through **Search AI** applications.
-Search AI allows you to configure and index content from various knowledge
-bases, files, and websites in the application, which is then used to dynamically
-provide answers to user queries. RAG Agents interact with the Search AI
-application to answer the user queries. [Learn
-more](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"}.
+Users can connect SearchAI applications or Amazon Q Indices in Search Agents with a simple description. **Search** AI allows you to configure and index content from various knowledge bases, files, and websites in the application, which is then used to dynamically provide answers to user queries. Amazon Q indexes enterprise data in your AWS cloud, using 90+ connectors for AWS and non-AWS systems. This provides a comprehensive search across your organization's knowledge base while maintaining data sovereignty.
 
-For instance, you can build a RAG Agent that handles queries by creating a **Search AI application**. Configure the application to index all relevant information about from various sources, such as
-the company website, documentation sites, product guides, and FAQ pages. Once
-the content is indexed, create a **RAG Agent** that can interact with this
-Search AI application to retrieve and generate accurate, up-to-date information.
-This agent will respond to user queries with relevant product details, ensuring
-comprehensive and efficient support for all product-related inquiries.  
+With Search AI, configure the application to index all relevant information from various sources, such as the company website, documentation sites, product guides, and FAQ pages. With Amazon Q, you can index the data in your own AWS cloud. Once the content source is configured, create a **RAG Agent** that can interact with your chosen search solution to retrieve and generate accurate, up-to-date information. This agent will respond to user queries that match with description or purpose given during agent creation. For use cases when a search index should act as the default knowledge repository (without a given description for intent), please connect it within [Enterprise Knowledge](https://docs.google.com/document/u/0/d/1CQ5sn2honhl1BXIDkwSxMtGqa8HiwsEtaYIQv9OZIcA/edit).
 
-![](images/introduction.png)
-
-**RAG Agents offer the following advantages**:
-
--   **Accurate Responses**: RAG agents ensure the answers are accurate and
-    up-to-date by dynamically retrieving relevant content from the knowledge
-    bases and generating accurate and contextually appropriate responses.
-
--   **Natural Language Interaction:** The RAG Agents' LLM capabilities enable
-    the use of natural language without the need for complex search keywords,
-    making the conversation more human-like and easy for users to understand.
-
--   **Access to Comprehensive Knowledge**: RAG agents can combine knowledge
-    retrieval from multiple sources, offering access to comprehensive knowledge
-    and ensuring answers to all queries are in one place.
-
-## Difference between RAG Agents and Enterprise Knowledge
-
-The main distinction between **RAG Agents** and **Enterprise Knowledge** lies in their
-configuration and scope:
-
--   **Enterprise Knowledge** uses the Search AI application, provisioned with the AI for
-    Work account by default. It serves as a fallback mechanism when no specific
-    agent matches the user's query intent.
-
--   **RAG Agents** are specifically configured for different intents or
-    purposes. Each RAG agent can be designed to handle particular types of
-    queries based on the user’s intent. Therefore, the Search AI application it
-    is configured with should have relevant knowledge aligned with the intent.  
-    
-    When a query aligns with the purpose of a specific configured RAG agent,
-    that agent takes over to generate a response. If no matching RAG agent is
-    found for the given intent, the system defaults to the **Enterprise Knowledge** for
-    the response.
-
-You can create a new agent or import an existing one.
-
--   [Import existing RAG agent](#import-existing-rag-agent)
-
--   [Create RAG agent](#create-rag-agents)
-
-### Import existing RAG agent
-
-To import an existing RAG agent:
-
-1.  Click the **Import** **Agent** button located in the upper-right
-    corner.![](images/import-rag.png)
-
-2.  Select the .ZIP file of the existing
-    agent.![](images/import-rag-agent.png)
-
-3.  Click **Import** to complete the process. The imported agent will appear on
-    the RAG Agents page.
-
-## Create RAG Agents
 
 ### Prerequisites
 
-Before creating a RAG Agent, ensure that the **Search AI** application is
-configured accurately to enable the retrieval and generation of responses.
-Follow these steps to prepare:
+Before creating a RAG Agent, ensure that your chosen search solution is configured accurately to enable the retrieval and generation of responses.
 
-* [Create a search AI](https://docs.kore.ai/searchassist/getting-started/build-and-publish-your-first-searchassist-app/){:target="_blank"} application.
+**For Search AI applications**, follow these steps to prepare:
 
-* [Configure content sources](https://docs.kore.ai/searchassist/manage-content-sources/content-overview/){:target="_blank"} in the application.
-
-* Fine-tune the application [search settings](https://docs.kore.ai/xo/searchai/chunk-browser/){:target="_blank"} to generate appropriate responses.
-
-* [Enable Answers](https://docs.kore.ai/searchassist/concepts/personalizing-results/about-answers/){:target="_blank"}.
-
+* [Create a search AI](https://docs.kore.ai/searchassist/getting-started/build-and-publish-your-first-searchassist-app/) application.
+* [Configure content sources](https://docs.kore.ai/searchassist/manage-content-sources/content-overview/) in the application.
+* Fine-tune the application [search settings](https://docs.kore.ai/xo/searchai/chunk-browser/) to generate appropriate responses.
+* [Enable Answers](https://docs.kore.ai/searchassist/concepts/personalizing-results/about-answers/).
 * Train the application.
+* Enable the [Client Channel for communication](https://docs.kore.ai/searchassist/administration/web-sdk-integration/#Step_1_Configure_Channel_and_credentials). Ensure that the appropriate API scope is enabled for the application.
+* The Search AI application is ready for communication.
 
-* Enable the [Client Channel for communication](https://docs.kore.ai/searchassist/administration/web-sdk-integration/#Step_1_Configure_Channel_and_credentials){:target="_blank"}.
-    Ensure that the appropriate API scope is enabled for the application.
+**For [Amazon Q](../integration/amazon-q.md) integration**, ensure you have:
 
--   The Search AI application is ready for communication.
+* An existing Amazon Q Business application with indexed enterprise content.
+* Appropriate AWS credentials and permissions.
+* Access to AWS data accessor configuration details.
 
-To create a RAG Agent, go to the **AI Search** page on the **Admin Console.** Go
-to **RAG Agents** and click on **Create Agent.**
-
-![](images/rag_agent.png)
+To create a Search Agent, go to the **Search Agents** section in the Admin Console and click on **Create Agent.**
 
 The **RAG Agent creation** wizard will take you through the following steps:
 
-1.  Define the purpose of the agent and provide the details.
+1. Define the purpose of the agent and provide the details.
+2. Provide the configuration details of the Search AI application or Amazon Q index to set up the interaction between the RAG Agent and your chosen search solution.
+3. Review the Agent configuration and Sample Queries.
+4. Publish the Agent.
 
-2.  Provide the configuration details of the Search AI application to set up the
-    interaction between the RAG Agent and the Search AI application.
-
-3.  Review the Agent configuration.
-
-4.  Publish the Agent.
 
 ### Step 1: Details and Purpose
 
-Provide a suitable and unique **name** for the agent. Briefly describe the
-**purpose** of the agent. Defining the agent’s purpose enables the system to accurately
-recognize the agent’s capabilities and effectively utilize them to respond to
-user queries aligned with the specified intent. It is essential to clearly
-outline the specific use cases for which the agent is designed. This ensures
-that it is used to generate responses to the intended queries.
+Provide a suitable and unique **name** for the agent. Briefly describe the **purpose** of the agent. Defining the agent’s purpose enables the AI for Work Orchestrator to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed so it can be accurately evoked by simple queries by users.
 
-For instance, if an agent is designed to answer all the user queries related to
-products, specifying it as the purpose helps the system use this agent whenever a
-user sends a query related to any products.
+For instance, if an agent is designed to answer all the user queries related to HR policies, specifying it as the purpose helps the system use this agent whenever a user sends a query related to any HR policy.
 
-<img src="../images/detail_and_purpose_search.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/search_agents_1.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
-### Step 2: Configure Search App
+### Step 2: Configure Search Index
 
-The next step is to configure the Search AI app, which has the indexed content
-used for answer generation. Provide the following details for integration.   
+The next step is to configure your search index, which contains the indexed content used for answer generation. AI for Work allows flexible integration with different search solutions based on your enterprise search needs.
 
-<img src="../images/configure_search.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
+In the **Search Index Options**, you can choose between:
 
-These details are available in the **Search AI app** on the **Credentials** page
-under the **Manage** tab, click **Dev Tools** and choose **Web/Mobile SDK** tab. Refer to
-[this](https://docs.kore.ai/xo/app-settings/dev-tools/kore-ai-web-sdk/){:target="_blank"} for more details.
+#### Option 1: Search AI
 
--   **URL**: Select your Search AI instance where the application is hosted.
+If you select **Search AI**, provide the following details for integration. These details are available in the **Search AI app** on the **Credentials** page under the **Manage** tab, click **Dev Tools,** and choose the **Web/Mobile SDK** tab. Refer to[ this](https://docs.kore.ai/xo/app-settings/dev-tools/kore-ai-web-sdk/) for more details.
 
--   **App ID**: Application ID of the Search AI app.
+* **URL**: Select your Search AI instance where the application is hosted.
+* **App ID**: Application ID of the Search AI app.
+* **Client ID**: Client credentials generated in Search AI for interaction with the RAG Agent.
+* **Client Secret ID**: A secret key generated for secure interaction.
+* **Search ID**: Unique identifier of the client generated in Search AI.
 
--   **Client ID**: Client credentials generated in Search AI for interaction
-    with the RAG Agent.
+You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/api-introduction/) in your XO platform's App channel:
 
--   **Client Secret ID**: A secret key generated for secure interaction.
+* Answer Generation
+* Permission Entity Management
+* Document Management
+* Facets
 
--   **Search ID**: Unique identifier of the client generated in Search AI.
-  
-You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/api-introduction/) in your XO platforms App's channel:
 
-- Answer Generation
-- Permission Entity Management
-- Document Management
-- Facets
+#### Option 2: [Amazon Q](../integration/amazon-q.md)
+
+If you select **Amazon Q**, you can integrate with your existing Amazon Q Index.
+
+<img src="../images/search_agents_2.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
+
+To configure Amazon Q integration:
+
+1. Use the **Tenant ID** displayed in the configuration screen during AWS data accessor setup.
+2. Fill in the following details from the AWS *Information for data accessor* section.
+    * **Application ID**: The unique identifier of your Amazon Q Business application.
+    * **Retriever ID**: The unique identifier of your Amazon Q Business retriever.
+    * **Access Resource Name**: ARN for secure access to your Amazon Q resources.
+    * **Application Location**: The AWS region where your Amazon Q Business application is deployed.
+    * **IDC Location**: The AWS region where your AWS Identity Center instance is located.
+
+<img src="../images/search_agents_3.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 3: Appearance and Behavior
 
-In the **Appearance and Behavior** section, a list of sample queries are displayed. If needed,
-you can add additional queries by clicking the **+ Add Query** button. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period. Once you're ready, click **Publish** to proceed to the next step.
+In the **Appearance and Behavior** section, a list of sample queries is displayed. If needed, you can add additional queries by clicking the **+ Add Query** button. Enable the **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period. Once you're ready, click **Publish** to proceed to the next step.
 
-<img src="../images/search_appearance.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/search_agents_4.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 4: Publish
 
@@ -172,21 +101,10 @@ Publish your agent and define access permissions and enablement.
 
 * **Publish To**: Define access permissions:
     * **Everyone in the Account**: Make the agent available to all users.
-    * **Limited Users**: Grant access to specific workspace users or groups added in publish settings of workspace.
+    * **Limited Users**: Grant access to specific workspace users or groups added in the publish settings of the workspace.
 * **Enablement Type**: Configure how users interact with the agent:
     * **Always Enabled**: The agent remains active and cannot be disabled.
     * **Users Choice**: Users can enable or disable the agent as needed.
 
-Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
-
-## User Interaction
-
-Interacting with the RAG Agent ensures users get the information they need
-quickly and efficiently. Users can select the specific agent and start by typing
-a query, such as "Get company details," "Fetch company financials," or "Show
-company history." The agent processes the query using indexed content from
-available resources like knowledge bases, files, or websites, and provides
-relevant, accurate answers. For broader insights, users can request more
-detailed data, like "Show me everything about the company" or "Fetch complete
-company profile."
-
+!!! note
+    The publishing options are defined in the Workspace settings. For additional information, refer to [Workspace](../workspace-management/account-workspace.md).

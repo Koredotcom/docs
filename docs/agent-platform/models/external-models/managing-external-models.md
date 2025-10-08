@@ -4,8 +4,8 @@ The External Models tab in the Models section allows you to connect and manage m
 
 You can connect external models to the platform in two ways:
 
-* **[Easy Integration](https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-easy-integration/)** – Use a guided setup to connect with providers like OpenAI, Anthropic, Google, Cohere, or Amazon Bedrock.
-* **[API Integration](https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-api-integration/)** – Add a custom model by configuring API endpoint details, authentication, and request settings.
+* [Easy Integration](../external-models/add-an-external-model-using-easy-integration.md) – Use a guided setup to connect with providers like OpenAI, Anthropic, Google, Cohere, or Amazon Bedrock.
+* [API Integration](../external-models/add-an-external-model-using-api-integration.md) – Add a custom model by configuring API endpoint details, authentication, and request settings.
 
 ## Viewing Connected Models
 
@@ -55,4 +55,4 @@ When adding connections:
 
 When multiple API keys are configured, each connection appears separately in the Connections list for the model, making it easier to manage access and switch between keys as needed.
 
-Once added, the model name and its connection name appear across the Agent Platform — including in Agentic apps, Prompt Studio, Tools, Evaluation Studio, Model Traces & Analytics, Audit Logs, Billing, and other areas — so wherever you select a model, you can choose from its available connection names if multiple connections are configured.
+Once added, the model name and its connection name appear across the Agent Platform — including in Agentic apps, Prompt Studio, Tools, Evaluation Studio, Model Traces & Analytics, Audit Logs, Billing, and other areas — so wherever you select a model, you can choose from its available connection names if multiple connections are configured. In Agentic apps, you can assign the model connection name at the Agent or Supervisor level for granular control. 

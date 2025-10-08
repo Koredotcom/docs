@@ -1,19 +1,21 @@
 # Marketplace
 
-The Marketplace is your centralized repository for discovering and deploying pre-built AI agents, tools, and templates—accelerating agent development without requiring code. With over 250 industry-specific templates integrated with 150+ business applications, the Marketplace transforms how you build and deploy agentic solutions.
+The Marketplace is a centralized hub for discovering and deploying pre-built AI agents, tools, and templates—accelerating agent development without writing code. With more than 250 domain-specific templates integrated with over 150 business apps, the Marketplace streamlines how you build, extend, and launch agentic solutions.
 
-## Key Benefits
+The Marketplace is ideal for professionals seeking rapid prototyping, scalable deployment, and seamless integration—whether you’re a solution architect, product owner, developer, or another key stakeholder.
 
-* **No-Code Development**: Build agents declaratively using pre-configured templates
-* **Industry Accelerators**: Access domain-specific solutions across service, work, and process domains
-* **Extensive Library**: 250+ templates covering various industries and use cases
-* **Pre-built Integrations**: Connect seamlessly with 150+ business applications
-* **Preview Before Install**: Review template definitions, integrations, and use cases before deployment
-* **One-Click Installation**: Deploy immediately with customization options to match your requirements
+## Key benefits
 
-## Usage Approaches
+* **No-Code Development**: Build agents declaratively using pre-configured templates.
+* **Industry Accelerators**: Access domain-specific solutions across service, work, and process domains.
+* **Extensive Template Library**: Explore 250+ templates tailored to diverse industries and use cases.
+* **Pre-built Integrations**: Connect seamlessly with 150+ business apps.
+* **Template Preview**: Review template definitions, integrations, and use cases before deployment
+* **One-Click Installation**: Deploy immediately with customization options to match your requirements.
 
-### Deploy Complete Apps
+## Usage approaches
+
+### Deploy the complete app
 
 Start with a fully functional agentic app:
 
@@ -21,9 +23,9 @@ Start with a fully functional agentic app:
 * Deploy as-is for immediate value.
 * Customize agents and tools to fit specific requirements.
 
-### Enhance Existing Apps
+### Enhance existing app
 
-Extend your current apps:
+Extend your current app:
 
 * Import individual agents or tools.
 * Add new capabilities to existing workflows.
@@ -31,27 +33,34 @@ Extend your current apps:
 
 ## How to Use the Marketplace
 
-### Installing a Complete App
+### Install an app
 
-1. Access the Marketplace on the [Agentic Apps](https://agent-platform.kore.ai/apps) page or navigate directly to the [Marketplace](https://kore.ai/marketplace/).
+1. Go to [Agentic Apps](https://agent-platform.kore.ai/apps){:target="_blank"} page or visit the [Marketplace](https://kore.ai/marketplace/){:target="_blank"}.
 
-    <img src="../images/marketplace.png" alt="Access the Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/marketplace.png" alt="Access the Marketplace" title="Marketplace" style="border: 0px solid gray; zoom:80%;">
 
-2. Browse by category and select an app to view its capabilities, associated tools, model compatibility, and language support.
+2. Browse by category and select an app to view its capabilities, associated tools, model compatibility, and language support. Review the installation instructions to prepare for tool configuration.
 
        <img src="../images/app-information-window.png" alt="App Information Window" title="App Information Window" style="border: 1px solid gray; zoom:60%;">
 
-3. Select required tools from dropdown menus, click **Install App > Proceed to Import**.
+3. Choose the required tools from the dropdown menus, then select **Install App > Proceed to Import**.
 
        <img src="../images/proceed-to-import.png" alt="Install the app" title="Install the app" style="border: 1px solid gray; zoom:80%;">
 
-4. **Setup is completed**:
+4. **Setup is complete**:
     * The app, agents, and tools are created in your workspace.
-    * (Optional) Connect to Search AI for knowledge base integration. [Learn more about Knowledge Tool Integration](https://docs.kore.ai/agent-platform/ai-agents/knowledge/overview/).
+    * (Optional) Connect to Search AI for knowledge base integration. [Learn more about Knowledge Tool Integration](../knowledge/overview.md){:target="_blank"}.
+
+       <img src="../images/app-overview-page-marketplace.png" alt="App overview page" title="App overview page" style="border: 0px solid gray; zoom:80%;">
+
+5. **Configure installed tools**:
+    After installation, return to the Marketplace and select the app you installed. On the app’s description page, locate the **Installation Instructions**. Click the **Link** next to each installed tool to view the detailed configuration procedure.
+
+       <img src="../images/installation-instructions.png" alt="Installation Instructions" title="Installation Instructions" style="border: 0px solid gray; zoom:80%;">
 
 ### Enhancing an Existing App
 
-1. Navigate to [Agentic Apps](https://agent-platform.kore.ai/apps), choose an existing app and click **Explore Marketplace**.
+1. Go to [Agentic Apps](https://agent-platform.kore.ai/apps){:target="_blank"}, select an existing app, and choose **Explore Marketplace**.
 
     <img src="../images/add-agent.png" alt="Add agent" title="Add agent" style="border: 1px solid gray; zoom:80%;">
 
@@ -59,28 +68,32 @@ Extend your current apps:
 
     <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 1px solid gray; zoom:50%;">
 
-3. Click **Select Tools > Install**, choose the target app, and proceed with **Import**.
+3. Select **Select Tools > Install**, then proceed with **Import**.
 
     <img src="../images/import-an-agent.png" alt="Agent import" title="Agent import" style="border: 1px solid gray; zoom:30%;">
+
+## Agent Diagnostics
+
+Before testing and deploying an Agentic app, use the Diagnostics to validate its readiness comprehensively. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the app meets production-quality and operational standards before deployment. See [Diagnostics for Agent Platform](diagnostics-for-agent-platform.md){:target="_blank"}.
 
 ## Testing and Deployment
 
 ### Simulate and Test
 
-Before launching, ensure your configuration is validated:
+Before deploying, validate your configuration:
 
-* Assess agent responses and behaviors
-* Confirm tool integrations
-* Simulate real-world scenarios
+* Assess agent responses and behaviors.
+* Confirm tool integrations.
+* Simulate real-world scenarios.
 
-See [Simulate and Test the App](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/app-testing/).
+See [Simulate and Test the App](app-testing.md){:target="_blank"}.
 
-### Deploy to Production
+### Deploy to production
 
 After successful testing:
 
-* Finalize configurations
-* Deploy across target environments
-* Monitor performance and usage
+* Finalize configurations.
+* Deploy across target environments.
+* Monitor performance and usage.
 
-See [App Deployment Guide](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/app-deployment/).
+See [App Deployment Guide](../agentic-apps/deployment/app-deployment.md){:target="_blank"}.
