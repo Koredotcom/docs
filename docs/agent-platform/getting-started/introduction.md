@@ -1,12 +1,12 @@
-# Introduction to Kore.ai Agent Platform
+# Introduction to Agent Platform
 
-The all-new Kore.ai Agent Platform is an enterprise-grade multi-agent orchestration platform. The platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while upholding enterprise-grade security and governance.
+The all-new Agent Platform is an enterprise-grade multi-agent orchestration platform. The platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while upholding enterprise-grade security and governance.
 
 The Agent Platform supports two distinct paradigms for building intelligent AI applications:
 
-* **Dialog Agents** (Orchestrated Autonomy, Structured Flow Approach): This paradigm, powered by DialogGPT and Agent Node, offers a structured flow approach to enable a dynamic conversational experience. While responses are still somewhat deterministic, Dialog Agents can adapt to variations in input, handle multi-turn interactions with greater ease, recognize user intent, extract key information autonomously, and leverage context across conversations. This results in a more responsive and interactive AI that can assist users intelligently within defined boundaries. [Learn more :octicons-arrow-right-24:](https://docs.kore.ai/xo/generative-ai-tools/dialog-gpt/){:target="_blank"}
+* **Dialog Agents** (Orchestrated Autonomy, Structured Flow Approach): This paradigm, powered by DialogGPT and Agent Node, offers a structured flow approach to enable a dynamic conversational experience. While responses are still somewhat deterministic, Dialog Agents can adapt to variations in input, handle multi-turn interactions with greater ease, recognize user intent, extract key information autonomously, and leverage context across conversations. This results in a more responsive and interactive AI that can assist users intelligently within defined boundaries. [Learn more :octicons-arrow-right-24:](../dialog-agents/dialoggpt.md){:target="_blank"}
 
-* **AI Agents** (Full Autonomy, Reasoning-Driven Approach): This paradigm represents the highest level of AI sophistication, enabling the development of autonomous agents capable of human-like interaction. AI Agents, orchestrated by the AI Agent Orchestrator and leveraging Tools, function as multi-agent systems with reasoning and persistent memory. They possess a deep contextual understanding, grasp nuances, and tailor their responses based on the interaction history. The reasoning engine enables AI Agents to generate consistent responses through situational analysis, rather than relying on preset paths, resulting in fluid and natural conversations that adapt to ever-changing contexts. With AI Agents, AI can become a true collaborator capable of strategic thinking, problem-solving, and autonomous execution. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/overview.md)
+* **AI Agents** (Full Autonomy, Reasoning-Driven Approach): This paradigm represents the highest level of AI sophistication, enabling the development of autonomous agents capable of human-like interaction. AI Agents, orchestrated by the AI Agent Orchestrator and leveraging Tools, function as multi-agent systems with reasoning and persistent memory. They possess a deep contextual understanding, grasp nuances, and tailor their responses based on the interaction history. The reasoning engine enables AI Agents to generate consistent responses through situational analysis, rather than relying on preset paths, resulting in fluid and natural conversations that adapt to ever-changing contexts. With AI Agents, AI can become a true collaborator capable of strategic thinking, problem-solving, and autonomous execution. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/overview.md){:target="_blank"}
 
 Both paradigms leverage the platform's core AI capabilities, which include Search/RAG, AI Models and Prompt Management, an Evaluation and Testing Framework, and AI Safety controls.
 
@@ -55,7 +55,7 @@ It facilitates the easy deployment and management of AI models, including fine-t
 
 ### Prompt Management
 
-Prompt Studio and Library enable efficient prompt design, management, reuse, and collaboration across teams. It enables real-time co-editing, commenting, version tracking, and integration with the overall agent platform for seamless deployment.
+Prompt Studio and Library enable efficient prompt design, management, reuse, and collaboration across teams. It enables real-time co-editing, commenting, version tracking, and integration with the overall Agent Platform for seamless deployment.
 
 ### Evaluation and Testing Framework
 

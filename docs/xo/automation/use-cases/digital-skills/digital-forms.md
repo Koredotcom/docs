@@ -3410,7 +3410,7 @@ Yes/No values
       "Date": "07/08/2020",
       "Date&Time": "07/08/2020 19:00 PM",
       "PhoneNumber": "+919999999999",
-      "Email": "test@gmail.com",
+      "Email": "john.doe@example.com",
       "toggle": "Yes",
       "Adress": "Address",
       "Url": "test.com",

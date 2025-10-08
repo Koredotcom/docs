@@ -50,7 +50,7 @@ Create an Interaction Widget in Genesys for Agent AI
 <p>
 <strong>Note: </strong>Only the default Client App is supported.
    </td>
-   <td><a> [adding the web/mobile client channel](../../../channels/add-web-mobile-client.md)</a>
+   <td><a href="../../../channels/add-web-mobile-client.md"target="_blank">https://koredotcom.github.io/docs/xo/channels/add-web-mobile-client</a>
    </td>
   </tr>
   <tr>
@@ -70,7 +70,7 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
    <td>Use this to pass sensitive information to Kore AI Agent.
    </td>
-   <td><a>[JSON Web Encryption](../../../sdk/sdk-security.md/#json-web-encryption-jwe)</a>
+   <td><a><a href="../../../sdk/sdk-security.md/#json-web-encryption-jwe"target="_blank">https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE</a>
    </td>
   </tr>
   <tr>

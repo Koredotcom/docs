@@ -143,9 +143,9 @@ The plain text tab supports the following markups:
    </td>
   </tr>
   <tr>
-   <td>[Link](http://www.google.com)
+   <td>[Link](https://www.google.com)
    </td>
-   <td><a href="http://www.google.com/">Link</a>
+   <td><a href="https://www.google.com/">Link</a>
    </td>
   </tr>
   <tr>

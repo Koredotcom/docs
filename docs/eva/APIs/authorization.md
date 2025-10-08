@@ -10,15 +10,11 @@ must include their personal API key in the request headers.
 Steps to generate and manage your key:
 
 1.  Click on the profile icon located in the lower-left corner of the admin
-    dashboard and select **My profile**.  
-    ![](../apis/images/dashboard_profile.png)
-
-    Alternatively, you can also retrieve the key from the **My Profile** section
-    of the application, located in the upper-right corner of the
-    homepage.![](../apis/images/app_profile.png)
+    dashboard and select **My profile**.  Alternatively, you can also retrieve the key from the **My Profile** section of the application, located in the upper-right corner of the
+    homepage.
 
 2.  Navigate to the Personal API Key section and click on
-    it.![](../apis/images/my_profile.png)
+    it.
 
 3.  Once generated, you can:
 
@@ -27,7 +23,7 @@ Steps to generate and manage your key:
     -   Regenerate the key.
 
     -   Delete the key if it is no longer
-        needed.![](../apis/images/api_key.png)
+        needed.
 
 ### Using the Personal API Key
 

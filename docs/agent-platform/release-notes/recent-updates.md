@@ -1,6 +1,167 @@
-# Kore.ai Agent Platform Release Notes
+# Agent Platform Release Notes
 
-This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
+This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
+
+## v1.2.0 September 27, 2025
+
+<u> Minor Release </u>
+
+​​This update includes a new knowledge base test tool for real-time validation, rolling context windows for better conversation management, and support for the latest GPT-5 family and other leading AI models. Additional improvements include streamlined workflow testing, custom model integration, and structured output support for open-source models.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Introducing Knowledge Base Test Tool**
+
+The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected Search AI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/knowledge/manage-knowledge-tools.md#test-the-knowledge-base)
+
+**Enhanced Context Management**
+
+The Agent Platform now provides enhanced context handling for conversations with rolling context windows. Configure the number of recent messages to use as conversation context by setting a message count limit. When this limit is reached, the oldest messages are automatically removed to make room for new ones. This prevents context overflow and keeps conversations focused on relevant, up-to-date information.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-profile.md)
+
+
+<font size="4">No-code & Pro-Code Tools</font>
+
+**Improved Workflow Tool Testing Experience**
+
+The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardised output format.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md#test-a-workflow-tool)
+
+
+<font size="4">AI Engineering Tools</font>
+
+**Custom Model Support**
+
+The Platform now supports seamless integration of custom models in Agentic Apps and Agents through API endpoints. To ensure compatibility, custom models must support tool calling and adhere to the request and response structures as per the API reference of Anthropic or OpenAI.  Custom model integrations with Default model settings are currently not supported in Agentic Apps. The platform provides standardized API integration, performance monitoring, and security controls to ensure consistent and secure usage.
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md#custom-model-support-in-agentic-apps){:target="_blank"}
+
+
+**Structured Output Support for Open-Source Models**
+
+Kore-hosted open-source models now support structured JSON output through the response_format parameter, aligned with OpenAI’s schema style. This enables schema-based responses across Prompts and Tools.
+
+* Supported on the v2/chat/completions endpoint (default for new deployments).
+* Works with most open-source models (see the documentation for the full [list of supported models](../models/supported-models.md#supported-models-for-structured-output).
+* Not supported for fine-tuned models, Hugging Face imports, CT2-optimized models, or locally imported models.
+* The schema editor automatically appears in AI nodes when a supported model is selected.
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md#supported-models-for-structured-output){:target="_blank"}
+
+
+**Expanded Model Support**
+
+The Agent Platform now supports additional AI models, providing greater flexibility for various use cases. These models include comprehensive platform integration with System Prompts, Tool Calling, Prompt Studio, Evaluation Studio, Tools, Parallel Tool Calling, Model Analytics, Audit Logs, Model Traces, Agentic Apps, and Image-to-Text Support.
+
+* OpenAI Models GPT-5 Family: gpt-5-2025-08-07, gpt-5-mini-2025-08-07, gpt-5-nano-2025-08-07, and gpt-5-chat-latest
+* Anthropic Model: claude-opus-4-1-20250805
+
+   [Learn more :octicons-arrow-right-24:](../models/supported-models.md){:target="_blank"} 
+
+<hr>
+
+## v1.0.11 September 9, 2025
+
+<u> Minor Release </u>
+
+This release focuses on reliability and control, introducing Agent Diagnostics for pre-deployment issue resolution, new workflow tools like a Human Review node, data type validation for scripts, support for Gemini 2.5 and Llama models, improved debugging, and enhanced API integration.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Introducing Agent Diagnostics**
+
+Agent Diagnostics is a comprehensive validation framework that proactively validates your AI application before deployment, automatically checking for configuration errors and operational risks to prevent production failures. It provides detailed, actionable reports with direct navigation to problem areas. All diagnostic runs are recorded in Audit Logs for complete traceability. <br>
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/diagnostics-for-agent-platform.md)
+
+**Enhanced Debug Logs with Actionable Insights**
+
+Debugging is now more intuitive with enhanced execution logs. The refreshed interface provides detailed, actionable status messages across agents, tools, and supervisors. New features include Guardrails execution logging, auto expanded current traces, and improved navigation via session and trace IDs for a clearer view of the execution flow. <br>
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md#playground-interface-components)
+
+**Enhanced Document Management in Playground**
+
+The enhanced interface offers a smoother and more intuitive way to manage conversation attachments. The new ‘Manage’ panel features ‘In Context’ and ‘Removed’ tabs, clearly organizing documents by status, with visual indicators showing actively used files. This streamlined approach enhances user control and awareness of document usage, making it easier to track and manage attachments. <br>
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md)
+
+<font size="4">No-code & Pro-Code Tools</font>
+
+**New Human Node for Workflow Approvals**
+
+The new Human review node enables human-in-the-loop workflows by pausing execution to collect user input or approvals, with custom input fields and automatic branching based on responses, timeouts, or failures. This ensures that critical decisions are validated by humans while maintaining workflow continuity and automatically managing exceptions.
+
+Key benefits
+
+* Improve Accuracy: Ensure critical decisions are validated by a person.
+* Maintain Flow: Automatically manage interruptions and exceptions without breaking the workflow.
+* Gain Control: Design the exact review process your business rules require. <br>
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/human-node.md){:target="_blank"}
+
+
+**Data Type Validation for Custom Scripts in the Function Node**
+
+The Function node now supports data type selection and validation for Custom Function arguments. Users can define each argument as Text, Number, Boolean, or JSON, instead of the default String. During execution, the system validates that mapped values or variables match the defined type and throws a clear error if a mismatch occurs, preventing runtime failures. <br>
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/function-node.md/#add-and-configure-a-function-node){:target="_blank"}
+
+
+<font size="4">AI Engineering Tools</font>
+
+**Expanded Model Support**
+
+This update introduces support for the following new AI models, providing greater flexibility for multimodal use cases and tool calling:
+
+* Text-to-Text tasks handling and node support for open-source models:
+    * Meta-llama/Llama-Guard-4-12B
+    * Meta-llama/Llama-3.2-11B-Vision-Instruct 
+* Audio-to-Text, Image-to-Text, and Text-to-Text nodes support for external models and Tool calling:
+    * Gemini 2.5 Pro
+    * Gemini 2.5 Flash 
+* Real-time models for voice conversations in Agentic Apps
+    * gemini-live-2.5-flash-preview
+    * gemini-2.0-flash-live-001 <br>
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md){:target="_blank"}
+
+**Enhanced Custom API Integration for External Models**
+
+Custom API integration for external models now offers automatic provider format mapping (Anthropic, OpenAI) with improved error messaging, simplifying request/response configuration. Admins can also explicitly select supported features from a predefined list, making integration more robust and error-resistant. <br>
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-api-integration.md/#add-an-external-model){:target="_blank"}
+
+**Tool Calling Support for Open-Source Models**
+
+All open-source and fine-tuned model API endpoints are now upgraded to the OpenAI Chat Completions format. Both the new chat completions endpoint and the existing endpoint are currently available to ensure backward compatibility. The existing endpoint will be deprecated soon, so users are encouraged to transition to the new format. Hugging Face models are excluded from this update.
+
+The following models are now enabled for tool calling, allowing them to integrate with tools and return richer, more efficient responses:
+
+* meta-llama/Llama-3.1-8B-Instruct
+* meta-llama/Llama-3.2-1B-Instruct
+* meta-llama/Llama-3.2-3B-Instruct
+* mistralai/Mistral-7B-Instruct-v0.3
+* mistralai/Mistral-Nemo-Instruct-2407
+
+
+**Model Deployment Status in Model Hub**
+
+The Model Hub landing page now provides an updated overview of model deployment statuses, including counts for active, failed, and ready-to-deploy models. <br>
+[Learn more :octicons-arrow-right-24:](../models/open-source-models/open-source-summary.md){:target="_blank"}
+
+
+**Enhanced Configuration Options for Realtime Models**
+
+The platform now supports additional voice parameters for real-time models from Google Gemini and Ultravox, enabling more nuanced and personalized voice experiences. 
+
+<font size="4">Other Improvement</font>
+
+**Enhanced User Invitation UI for Admins**
+
+The Settings console now features an improved multi-row form for user invitations. Admins can add or delete rows to invite multiple users simultaneously, assign system or custom roles to each user, and track total invites with an auto-updating counter. <br>
+[Learn more :octicons-arrow-right-24:](../settings/user-management/invite-a-user.md){:target="_blank"}
+
+<hr>
 
 ## v1.0.10 August 13, 2025
 
@@ -522,7 +683,7 @@ You can now easily track conversations with the Agentic app using the new timeli
 
 **Improved Model Evaluation via Ground Truth Columns and Search AI Enhancements**
 
-Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, SearchAI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
+Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, Search AI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
 
 <font size="4">Other Improvements</font>
 
@@ -783,11 +944,11 @@ Key benefits
 
 **Voice Integration in Agentic Apps**
 
-The XO Platform and the Agent Platform now support real-time voice interactions through the Kore Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
+The XO Platform and the Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
 
 Key features
 
-* Real-time Voice Streaming: Enables real-time voice interactions when the Kore Voice Gateway is selected as the channel.
+* Real-time Voice Streaming: Enables real-time voice interactions when the Voice Gateway is selected as the channel.
 * Voice Streaming to Users: Supports streaming voice responses to users in real-time based on agent responses.
 * Model and Prompt Selection: Provides options to select supported AI models and prompts specific to voice interactions.
 
@@ -843,7 +1004,7 @@ Key capabilities
 
 **Simplified Web SDK Integration**
 
-The Kore-hosted SDK can now be easily integrated into enterprise websites using the new, lightweight Webclient Script. This JavaScript solution eliminates the need for users to leave the enterprise website to access the application, creating a seamless user experience with minimal development.
+The Platform-hosted SDK can now be easily integrated into enterprise websites using the new, lightweight Webclient Script. This JavaScript solution eliminates the need for users to leave the enterprise website to access the application, creating a seamless user experience with minimal development.
 
 Key features
 

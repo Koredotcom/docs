@@ -1,49 +1,42 @@
-# DocSearch Node - Automate Info Search and Retrieval
+# DocSearch Node – Power Your Flows with Context-Driven Search
 
-The **DocSearch Node** improves how information is found and processed. It uses advanced searching called Retrieval Augmented Generation (RAG). 
+The **DocSearch Node** is a Retrieval-Augmented Generation (RAG)-powered component that enhances the real-time discovery and retrieval of information chunks from available resources through an established Search AI app connection. Indexed and high-quality content is fetched from your Sources repository, enabling fast, precise, and context-aware responses to user queries.
 
-By connecting to your **Search AI** App, the DocSearch Node provides high-quality search results that are relevant to the current context. These results are delivered right inside the tool workflow.
+## Key Capabilities
 
-## Key Features
+* **RAG-Powered Search**: Combines traditional retrieval (search, databases) with generative LLMs as follows:
+    * **Retrieval & Pre-processing**: Queries indexed content using advanced algorithms, then refines results through tokenization and filtering. 
+    * **Grounded Generation**: Integrates refined results with LLMs for accurate and context-rich responses. 
+* **Seamless SearchAI Integration**: Connects to your Search AI app to query indexed documents and return results via the Answer Generation engine.
+* **Dynamic Query Support**: Supports static and dynamic inputs for flexible, context-aware search automation.
+* **Meta Filter Configuration**: Use optional meta filters to refine results, or search across all linked documents by default.
+* **User Redirection Option**: Redirect users to the full Search AI App for a more comprehensive search experience when needed.
+* **Precision and Personalization**: Delivers context-aware, intent-driven responses aligned to the query, ensuring accurate, relevant, and user-specific outcomes.
+* **Flow Integration**: Seamlessly connect DocSearch with other nodes to pass queries and process responses.
 
-* **RAG Searching Framework**:
 
-    RAG blends traditional retrieval systems (e.g., search, databases) with generative LLM capabilities, ensuring more accurate, relevant, and up-to-date results tailored to your needs.
+## Common Use Cases
 
-    RAG enhances generative AI outputs through these key steps:
+* **Document Retrieval**: Retrieve relevant content from indexed sources, such as manuals, policies, or help articles, based on user queries.
+* **Contextual Answer Generation**: Deliver AI-generated responses grounded in retrieved documents using the RAG framework.
+* **Knowledge Base Search**: Search internal wikis, technical docs, or training material with support for dynamic inputs and filters.
+* **User Query Handling**: Accept real-time input queries from other nodes to personalize search results in the workflow context.
 
-    <ul><li><b>Retrieval & Pre-processing</b>: Powerful search algorithms query external data (e.g., web pages, databases). Retrieved data is pre-processed through tokenization, stemming, and stop-word removal.</li>
-    <li><b>Grounded Generation</b>: Pre-processed data integrates with the LLM, enriching its context for more accurate, informative, and engaging responses.</li></ul>
-<ul><li><b>Integration with SearchAI</b>     
-    <ul><li>The DocSearch Node connects to a configured <b>Search AI App</b> via Agent Platform’s integration page.</li>
-    <li>It accesses indexed resources from the <b>Sources</b> repository within Search AI to retrieve relevant information.</li></ul></li>
-    <li><b>Dynamic Input Queries</b></li>
-    <ul><li>Accepts search input either as a variable or static text.</li>
-    <li>Facilitates seamless query processing by <b>Search AI</b>, which identifies and extracts/retrieves contextually relevant chunks from the available resources using SearchAI’s <a href="https://docs.kore.ai/xo/searchai/answer-generation/" target="_blank">Answer Generation</a>, corresponding to the input query and the meta filters provided via the <b>Advanced Search API</b>. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/" target="_blank">Learn more</a>.</li></ul></ul>
 
-* **Configurable Meta filters**
+## Example Use Case
 
-    * You can configure optional meta filters to narrow the search field with the query.
-    * If meta filters are not provided, the query is applied to all the documents uploaded to that connection. [Learn more](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
+A retail bank uses the **DocSearch Node** to automate responses to frequently asked questions about loans, accounts, and card services. When a user asks, “*What documents are required to apply for a home loan based on my income?*”, the node dynamically passes the query to a connected Search AI App, which searches, indexes, and fetches relevant information chunks from internal resources such as loan policy documents, eligibility criteria, and process guidelines. It then returns a precise, context-aware response, reducing call center load and improving self-service efficiency.
 
-* **Redirection Capability**
 
-    * Includes an option to redirect users to the **Search AI App** directly from the node.
+## How It Works
 
-* **Enhanced Search Relevance**
+The **DocSearch Node** integrates seamlessly into your tool flows, accepting user queries as static text or dynamic variables referencing other node outputs. It connects to a pre-configured Search AI App on the platform to retrieve relevant content from your Sources repository using a Retrieval-Augmented Generation (RAG) framework. You can define meta filters manually or fetch them via the Answer Generation API to generate refined, context-aware responses. The node fully integrates within the canvas and optionally allows redirection to the full Search AI interface.
 
-    * By prioritizing results using RAG criteria, the node provides precise, complete, and context-aware answers.
-    * Improves search relevance by focusing on delivering responses tailored to user intent.
+<img src="../images/how-doc-search-works.png" alt="how doc search works" title="how doc search works" style="border: 1px solid gray; zoom:75%;">
 
-* **Contextual Personalization**
+In this document, you will learn how to add and configure DocSearch Nodes with Search AI connections, set up query inputs and meta filters, handle response outputs, and test the search-driven interactions within your automation flows.
 
-    * Ensures results are personalized to the query context, enhancing user experience and satisfaction.
-
-* **Connectivity with Other Nodes**
-
-    * Connect the DocSearch Node inputs and outputs to other nodes for seamless integration and data flow within the Tool Flow Canvas.
-
-## Configuration Overview
+## Steps to Add and Configure the Node
 
 Configuring the DocSearch Node consists of the following steps:
 
@@ -69,68 +62,72 @@ After fetching the Search AI application credentials, configuring the source, an
 
 **Steps to integrate Search AI in Agent Platform**
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+* Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. Click **Integrations** on the left navigation menu.
-4. Scroll down to **Search AI** and click **Link an App**.
-<img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
+* Click **Settings** on the top navigation bar.
+* Click **Integrations** on the left navigation menu.
+* Scroll down to **Search AI** and click **Link an App**.
+  <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
 
-5. In the **Search AI** window, provide the required information that you copied from the SearchAI application in 
+* In the **Search AI** window, provide the required information that you copied from the Search AI app in 
 [Step 1](./docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
-6. Click **Test** to test the connection.
-7. If the connection is successful, click **Confirm**.
-<img src="./../images/searchai-connection-form.png" alt="searchai connection form" title="searchai connection form" style="border: 1px solid gray; zoom:75%;">
+* Click **Test** to test the connection.
+* If the connection is successful, click **Confirm**.
+  <img src="./../images/searchai-connection-form.png" alt="searchai connection form" title="searchai connection form" style="border: 1px solid gray; zoom:75%;">
 
-A success message is displayed and the connection is listed for SearchAI.
-<img src="./../images/listed-connection.png" alt="listed connection" title="listed connection" style="border: 1px solid gray; zoom:75%;">
+  A success message is displayed and the connection is listed for Search AI.
+   <img src="./../images/listed-connection.png" alt="listed connection" title="listed connection" style="border: 1px solid gray; zoom:75%;">
 
-If the connection fails with the following message, check and re-enter the correct Search AI app credentials.
+  If the connection fails with the following message, check and re-enter the correct Search AI app credentials.
 
-<img src="./../images/connection-failure.png" alt="connection failure" title="connection failure" style="border: 1px solid gray; zoom:75%;">
+  <img src="./../images/connection-failure.png" alt="connection failure" title="connection failure" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Currently, we support connections through Search AI. You must provide "<code>https://platform.kore.ai</code>" for the <b>Search AI URL</b> field.</p></div>
+  <div class="admonition note">
+  <p class="admonition-title">Note</p>
+  <p>We support connections through Search AI. You must provide https://platform.kore.ai for the <b>Search AI URL</b> field.</p></div>
 
 ## Step 3: Add and Configure a DocSearch Node
 
-Setting up a DocSearch node in an tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+### Step 3(A): Open Flow Builder
 
-**Steps to add and configure the node**
-
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+* Log in → In Agent Platform Modules → Click **Tools**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The **Tool Flow** page is displayed.
-3. Click **Go to flow** to edit the in-development version of the flow.
-4. In the flow builder, click **DocSearch** -> **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
-<img src="./../images/add-docsearch-node.png" alt="add doc search node" title="add doc search node" style="border: 1px solid gray; zoom:75%;">
+* Select your tool → Click **Go to Flow**.
 
-5. To provide a unique name, right-click the node and click **Rename** since the node is provided a default name.
+### Step 3(B): Add the Node
+
+* Click **DocSearch** -> **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
+  <img src="./../images/add-docsearch-node.png" alt="add doc search node" title="add doc search node" style="border: 1px solid gray; zoom:75%;">
+
+### Step 3(C): Configure the Node
+
+* To provide a unique name, right-click the node and click **Rename** since the node is provided a default name.
 
     <img src="./../images/rename-docsearch-node.png" alt="rename node" title="rename node" style="border: 1px solid gray; zoom:75%;">
 
-Alternatively, click the node and change the value for **Node Name** in the configuration panel.
-<img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
+    Alternatively, click the node and change the value for **Node Name** in the configuration panel.
+    <img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="6"><li>Add the input for the <b>Query</b> field to capture the user's search query. 
-<p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
+* Add the input for the <b>Query</b> field to capture the user's search query. 
+  
+  To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
 
-<p>You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."</p>
-<img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Select the <b>Search AI connection</b> you set up in <a href="https://docs.kore.ai/agent-platform/agents/agents-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
-<img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
+  You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."
+   <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;">
+   
+ * Select the <b>Search AI connection</b> you set up in <a href="#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
+   <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Use search to look up and select the required connection.</p></div>
+   <div class="admonition note">
+   <p class="admonition-title">Note</p>
+   <p>Use search to look up and select the required connection.</p></div>
 
-To set up a new connection, click **+ New Connection**. This will redirect you to the Agent Platform Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"} to complete the integration.
+  To set up a new connection, click **+ New Connection**. This will redirect you to the Agent Platform Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"} to complete the integration.
 
-<ol start="8"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
-<img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;"></li></ol>
+ * (Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="../../../../../../xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
+<img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -147,15 +144,16 @@ Appropriate canvas-level errors are displayed (in the error log) when you add a 
 
 To run and test the flow, follow the steps below:
 
-1. Click the **Run Flow** button at the top-right corner of the flow builder.
-<img src="../images/docsearch-run-flow.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
+* Click the **Run Flow** button at the top-right corner of the flow builder.
+  <img src="../images/docsearch-run-flow.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
 
-2. (Optional) Add the value for **Input Variable** if you have configured it to test the flow in **Step 5** of [this](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"} section. Otherwise, go directly to the next step.
+* (Optional) Add the value for **Input Variable** if you have configured it to test the flow in **Step 5** of [this](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"} section. Otherwise, go directly to the next step.
 
-<ol start="3"><li>Click <b>Generate Output</b>.</li>
-<img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;"></ol>
+* Click <b>Generate Output</b>.
 
-The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
+     <img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
+
+   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
 
 <div class="admonition note">
 <p class="admonition-title">Accessing the Output</p>
@@ -165,7 +163,7 @@ format is <code>{{context.steps.<<<b>nodename</b>>>.dynamic
 path}}</code>. For example, it
 could be <code>context.steps.DocSearch.response.response.answer</code> in one case or <code>context.steps.DocSearch.response.response.response.answer</code> in another.
 
-Check the sample response from SearchAI to find the correct key that holds the content.
+Check the sample response from Search AI to find the correct key that holds the content.
 Use that key in your tool flow. You may also need to extract multiple chunks from different keys.</p></div>
 
 ## Related Links

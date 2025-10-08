@@ -38,6 +38,7 @@ API keys are typically included in request headers or parameters to validate acc
 
 Currently, the following APIs are available:
 
+
 <table>
   <tr>
    <td><strong>SCOPE</strong>
@@ -49,13 +50,13 @@ Currently, the following APIs are available:
   </tr>
   <tr>
   <td><b>File Management</b></td>
-    <td><a href="../apis-list/upload-file-api/" target="_blank">File Upload API</a>
+    <td><a href="../apis-list/upload-file-api/">File Upload API</a>
    </td>
    <td>To upload a small or large public file in the allowed format.
    </td>
   </tr>
     <tr><td><b>View Process Status</b></td>
-     <td><a href="../apis-list/get-dock-status/" target="_blank">Get Dock Status API</a>
+     <td><a href="../apis-list/get-dock-status/">Get Dock Status API</a>
    </td>
    <td>To check the status of an ongoing or completed job related to tools or models.
    </td>

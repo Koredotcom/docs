@@ -18,7 +18,15 @@ Similarly, a ‘Credit Card Assistant’ might include tools like:
 
 ## Types of Tools
 
-The Agent platform supports three types of tools that agents can use to perform tasks and integrate with external systems: **Workflow Tools**, **Code Tools**, and **MCP Tools**. Each type serves a different purpose, ranging from orchestrating visual tasks to executing custom scripts or invoking remote services. Understanding the differences between these tool types will help you design agent behaviors that are both efficient and scalable.
+The Agent Platform supports three types of tools that agents can use to perform tasks and integrate with external systems: **Workflow Tools**, **Code Tools**, and **MCP Tools**. Each type serves a different purpose, ranging from orchestrating visual tasks to executing custom scripts or invoking remote services. Understanding the differences between these tool types will help you design agent behaviors that are both efficient and scalable.
+
+!!! info
+
+    * Workflow Tools - Visual tools that let you design, configure, and automate conversational flows involving multiple steps. 
+    * Code Tools - Developer-defined tools implemented in code for custom logic and integrations.
+    * MCP Tools - Tools exposed via the Model Context Protocol.
+    
+    Tools can be created and managed via the Tools Page in the Agentic App. 
 
 ### Workflow Tools
 
@@ -31,6 +39,12 @@ Examples:
 * Weather API tool: Retrieves live weather updates.
 * Stock Market tool: Fetches real-time stock prices.
 * Database Query tool: Accesses structured data from a company’s database.
+
+Workflow Tools can be created either through the Agentic App or directly under the Tools section.
+
+When workflow tools are created under the **Tools** menu, they function as universal tools that, once deployed, are accessible across multiple apps. These tools act as templates, and when imported into an app, they generate a local copy that can be further customized without altering the original. Importing is restricted to tools that have been deployed from the Tools library.
+
+In contrast, when workflow tools are created within the Agentic App, they are scoped exclusively to that app. You can also import a workflow tool from the library into the Agentic App. Any modifications or updates made to these imported tools apply only to the local copy and do not affect the version available in the Tools library. To ensure that changes take effect, the tool must be deployed within the app. 
 
 For more information on Workflow tools, see [Workflow Tools](../tools/workflow-tools.md).
 

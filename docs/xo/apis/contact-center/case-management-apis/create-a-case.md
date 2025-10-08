@@ -1,96 +1,28 @@
 # Create a case API
 
-This API allows you to create a new case in the case management system.
+This API lets you to create a new case in the case management system.
 
-<table>
-  <tr>
-   <td><strong>METHOD</strong>
-   </td>
-   <td><strong>POST</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code><a href="https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createCase">https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createCase</a></code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Case Management Configuration.
-   </td>
-  </tr>
-</table>
+| **METHOD**        | **POST**                                                                                                                                                       |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Endpoint**      | [`https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createCase`](https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createCase) |
+| **Content Type**  | `application/json`                                                                                                                                             |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../../automation/api-introduction.md#generating-the-jwt-token).                 |
+| **API Scope**     | Case Management Configuration.                                                                                
+## Path parameters
+                                                
+| **PARAMETER** | **DESCRIPTION**                                                                                                                                          | **TYPE**         |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **host**      | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/)                                                                     | string, required |
+| **streamId**  | Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, `st-084d3c5e-376a-559f-9987-a012bb2bxxxx` | string, required |
 
-## Path Parameters
+## Header parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL. For example, <a href="https://platform.kore.ai/">https://platform.kore.ai/</a>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>streamId
-   </td>
-   <td>Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, 
-st-084d3c5e-376a-559f-9987-a012bb2bxxxx
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                                                                 | **TYPE**             |
+| ------------- | ----------------------------------------------------------------------------------------------- | -------------------- |
+| **accountId** | The account identifier associated with the API request. For example, `6639f7bd58c97ffac03bxxxx` | string, not required |
 
-## Header Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>accountId
-   </td>
-   <td>The account identifier associated with the API request. For example, 
-6639f7bd58c97ffac03bxxxx
- </a>
-   </td>
-   <td>string, not required
-   </td>
-  </tr>
-</table>
-
-## Sample Request
+**Request sample**
 
 ```
 curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createCase' \
@@ -110,115 +42,28 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
     },
     "emailId": "dummy.898@gmail.com",
     "phoneNumber": "902398xxxx",
-    "dueDate": "2026-09-04T14:15:00.000Z"
+    "dueDate": "2026-09-04T14:15:00.000Z",
     "source": "rtm"
 }'
 ```
 
-## Request Body Parameters
+## Request body parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>caseTmp
-   </td>
-   <td>Unique case template identifier
- </a>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>name
-   </td>
-   <td>Name or title of the case
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>desc
-   </td>
-   <td>Case description
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>userInfo
-   </td>
-   <td>User information object containing user details
-   </td>
-   <td>object, required
-   </td>
-  </tr>
-  <tr>
-   <td>id
-   </td>
-   <td> Unique user identifier. If you do not include user identifier `id`, you must provide either emailId or phoneNumber
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>name
-   </td>
-   <td>User's name
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>emailId
-   </td>
-   <td>User's email address (Mandatory if `id` is not present)
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>phoneNumber
-   </td>
-   <td>User's phone number (Mandatory if `id` is not present)
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>source
-   </td>
-   <td>Source of the case (for example, rtm)
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>desc
-   </td>
-   <td>Task description
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>dueDate
-   </td>
-   <td>Due date of the case
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **PARAMETER**   | **DESCRIPTION**                                                                                     | **TYPE**         |
+| --------------- | --------------------------------------------------------------------------------------------------- | ---------------- |
+| **caseTmp**     | Unique case template identifier                                                                     | string, required |
+| **name**        | Name or title of the case                                                                           | string, required |
+| **desc**        | Case description                                                                                    | string, required |
+| **userInfo**    | User information object containing user details                                                     | object, required |
+| **id**          | Unique user identifier. If `id` isn’t provided, you must include either `emailId` or `phoneNumber`. | string, optional |
+| **name**        | User’s name                                                                                         | string, optional |
+| **emailId**     | User’s email address (mandatory if `id` isn’t present)                                              | string, required |
+| **phoneNumber** | User’s phone number (mandatory if `id` isn’t present)                                               | string, required |
+| **source**      | Source of the case (for example, `rtm`)                                                             | string, required |
+| **desc**        | Task description                                                                                    | string, required |
+| **dueDate**     | Due date of the case                                                                                | string, required |
 
-## Sample Response 	
-
+**Response sample**
 
 ```
 {
@@ -360,6 +205,4 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
     "updatedAt": "2025-06-03T10:51:59.794Z",
     "ETA": "2025-09-04T14:15:00.000Z"
 }
-
-
 ```

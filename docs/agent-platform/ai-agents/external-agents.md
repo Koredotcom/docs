@@ -7,7 +7,7 @@ Proxy Agent acts as an intermediary, seamlessly relaying communication between t
 
 ## Prerequisites
 
-The External Agents connected in the Agent platform must adhere to the Kore Agent Protocol.
+The External Agents connected to the Agent Platform must adhere to the Agent Protocol.
 
 ## Set Up
 
@@ -51,7 +51,7 @@ The proxy agent offers a secure and streamlined method for integrating external 
 
 * Enables secure communication with external platforms.
 * Supports seamless data exchange between the proxy agent and the external agent.
-* Translates data formats between our platform and the external system using the Kore Agent Protocol.
+* Translates data formats between our platform and the external system using the Agent Protocol format described below.
 * Automatically manages timeouts and communication failures for reliability.
 * External agents are listed alongside native agents, ensuring a consistent user interface.
 * Users get a clear visual indicator of the external agent’s status.
@@ -157,7 +157,7 @@ If your external agent does not follow the expected format discussed above
 
 * Create an adapter to translate incoming and outgoing data.
 * Adapter should:
-    * Accept agent platform-defined request structure.
+    * Accept Agent Platform-defined request structure.
     * Convert it to the format required by your external agent.
     * Reformat the external agent's response to match the agent platform’s response structure.
 

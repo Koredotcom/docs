@@ -63,7 +63,7 @@ For example, in the following **Response Sample**, you may only want to expose t
          "24x24":"https://koreteam.atlassian.net/secure/useravatar?size=small&ownerId=john.doe&avatarId=11801",
          "48x48":"https://koreteam.atlassian.net/secure/useravatar?ownerId=john.doe&avatarId=11801"
       },
-      "emailAddress":"john.doe@kore.com",
+      "emailAddress":"john.doe@example.com",
       "key":"john.doe",
       "name":"john.doe",
       "self":"https://koreteam.atlassian.net/rest/api/2/user?username=john.doe"

@@ -7,9 +7,9 @@ The Agent leverages APIs and combines retrieval and generation techniques to pro
 
 You can create a new agent or import an existing one.
 
--   [Import existing Workflow agent](#import-existing-gale-agent)
+-   [Import existing Workflow agent](#import-existing-workflow-agent)
 
--   [Create Workflow agent](#create-gale-agent)
+-   [Create Workflow agent](#create-workflow-agent)
 
 ## Import existing Workflow agent
 
@@ -40,7 +40,7 @@ To create a Workflow Agent, follow the steps outlined below:
 
     2.   [Step 2: Configure Workflow Flow](#configure)
 
-    3.   [Step 3: Peview the Agent configuration](#preview)
+    3.   [Step 3: Preview the Agent configuration](#preview)
 
     4.   [Step 4: Publish the Agent](#publish)
 
@@ -156,7 +156,7 @@ steps outlined below:
 The **Appearance and Behavior** section displays sample queries to test the agent’s behavior.
 
 1. Click **+Add Query** to input additional test queries.
-2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer to , refer <a href="https://docs.kore.ai/ai-for-work/custom-agents/notify-api/" target="_blank">Notifications</a>.
+2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer to , refer [Notifications](../custom-agents/notify-api.md)</a>.
 3. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period.
 4. Once validated, click **Publish** to move to the final step.
 

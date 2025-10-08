@@ -1,6 +1,6 @@
 # Create a Fine-Tuned Model
 
-You can fine-tune a Kore-hosted model or import one from Hugging Face. The fine-tuning process involves the following steps:
+You can fine-tune a Platform-hosted model or import one from Hugging Face. The fine-tuning process involves the following steps:
 
 1. General details
 2. Selecting a base model
@@ -24,15 +24,24 @@ Steps to fine-tune a model:
     * Provide tags to ease the search for the model and click **Next**.
 
 4. In the **Base** **model** section, choose the model to be fine-tuned.
-    * If you choose **Kore-hosted models**, select the **model** from the dropdown list and click **Next**.  
+    * If you choose hosted models, select the **model** from the dropdown list and click **Next**.  
     **Note**: Imported models are also included in the list of models.  
-    <img src="../images/base-model-kore hosted.png" alt="Kore hosted models" title="Kore hosted models" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/base-model-kore hosted.png" alt="Platform hosted models" title="Platform hosted models" style="border: 1px solid gray; zoom:80%;">
 
     * If you choose to **Import from Hugging Face**, select the **Hugging Face connection** type from the dropdown, and paste the **model name**. Click **Next**. For more information about how to connect to your Hugging Face account, see[ How to Connect to your Hugging Face Account](../../settings/integrations/enable-hugging-face.md){:target="_blank"}.
     <img src="../images/import-hugging-face.png" alt="Import from Hugging Face" title="Import from Hugging Face" style="border: 1px solid gray; zoom:80%;"> 
 
 5. In the **Fine-tuning configuration** section:
-    * Select a **Fine-tuning type**, which you want to apply to the model. 
+    * Select a **Fine-tuning type** to apply to the model: Full fine-tune, LoRA (Low-Rank Adaptation), or QLoRA (Quantized LoRA).
+
+        The supported fine-tuning types vary based on the size of the base model:
+
+        | Base model parameters            | Supported fine-tuning types                         |
+        |----------------------------------|-----------------------------------------------------|
+        | **< 1B**                         | Full fine-tune, LoRA, QLoRA                         |
+        | **≥ 1B and < 5B**                | LoRA, QLoRA                                         |
+        | **≥ 5B and ≤ 8B**                | QLoRA                                               |
+
     * Enter the **Number of Epochs**, which indicates how many times the model processes the entire dataset during training.
     * Enter a number for **Batch size**, which implies the number of training examples used in one training iteration.
     * Enter a value for the **Learning rate**, which implies the size of the steps taken during the optimization of a model.

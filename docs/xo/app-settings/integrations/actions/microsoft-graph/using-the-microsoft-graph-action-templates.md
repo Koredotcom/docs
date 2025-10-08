@@ -89,7 +89,7 @@ Steps to view all events in the Microsoft Graph integration:
 
         ```
         {
-        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('purushottamKumar1215%40outlook.com')/events",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40outlook.com')/events",
         "value": [
         {
         "@odata.etag": "W/\"72QERTxLykaU1e+TybdcNQAAG8nV2w==\"",
@@ -157,8 +157,8 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": "tanmay.agrawal@kore.com ",
-        "address": "tanmay.agrawal@kore.com "
+        "name": "john.doe@example.com ",
+        "address": "john.doe@example.com "
         }
         },
         {
@@ -168,19 +168,19 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": " purushottam.kumar@kore.com",
-        "address": " purushottam.kumar@kore.com"
+        "name": " john.doe@example.com",
+        "address": " john.doe@example.com"
         }
         }
         ],
         "organizer": {
         "emailAddress": {
-        "name": "Purushottam Kumar",
-        "address": "purushottamKumar1215@outlook.com"
+        "name": "John Doe",
+        "address": "john.doe@outlook.com"
         }
         },
         "onlineMeeting": null,
-        "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('purushottamKumar1215@outlook.com')/calendars('AQMkADAwATNiZmYAZC01N2E2LTYyZDYtMDACLTAERTxLykaU1e_')/$ref",
+        "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('john.doe@outlook.com')/calendars('AQMkADAwATNiZmYAZC01N2E2LTYyZDYtMDACLTAERTxLykaU1e_')/$ref",
         "calendar@odata.navigationLink": "https://graph.microsoft.com/v1.0/users"
         },
         {
@@ -249,8 +249,8 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": "aa@gmail.com ",
-        "address": "aa@gmail.com "
+        "name": "john.doe@example.com ",
+        "address": "john.doe@example.com "
         }
         },
         {
@@ -260,15 +260,15 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": " bb@yahoo.com",
-        "address": " bb@yahoo.com"
+        "name": "jane.doe@example.com",
+        "address": " jane.doe@example.com"
         }
         }
         ],
         "organizer": {
         "emailAddress": {
-        "name": "Purushottam Kumar",
-        "address": "purushottamKumar1215@outlook.com"
+        "name": "john doe",
+        "address": "john.doe@example.com"
         }
         },
         "onlineMeeting": null,
@@ -308,7 +308,7 @@ Steps to view all to-do lists in the Microsoft Graph integration:
 
         ```
         {
-        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('purushottamkumar1215%40outlook.com')/todo/lists",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john1215%40outlook.com')/todo/lists",
         "value": [
         {
         "@odata.etag": "W/\"72QERTxLykaU1e+TybdcNQAAHgSugA==\"",
@@ -411,7 +411,7 @@ Steps to create an event in the Microsoft Graph integration:
         "attendees": [
         {
         "emailAddress": {
-        "address": "purushottam.kumar@gmail.com"
+        "address": "john.doe@example.com"
         }
         }
         ] }
@@ -421,7 +421,7 @@ Steps to create an event in the Microsoft Graph integration:
 
         ```
         {
-        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('purushottamKumar1215%40outlook.com')/events/$entity",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40outlook.com')/events/$entity",
         "@odata.etag": "W/\"72QERTxLykaU1e+TybdcNQAAKxxx==\"",
         "id": "AQMkADAwATNiZmYAZC01N2E2LTYyZDYtMDACLTAwCgBGAAADiea_kiTHkkGyRB2nztFSRQcA72QERTxLykaU1e_=",
         "createdDateTime": "2022-12-28T14:53:39.8527171Z",
@@ -540,7 +540,7 @@ Steps to create a to-do list in the Microsoft Graph integration:
 
         ```
         {
-        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('purushottamkumar1215%40outlook.com')/todo/lists/$entity",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40outlook.com')/todo/lists/$entity",
         "@odata.etag": "W/\"72QERTxLykaU1e+Tybdcxsxxxxx==\"",
         "displayName": "Postman created list3 (1)",
         "isOwner": true,
