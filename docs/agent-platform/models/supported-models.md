@@ -446,27 +446,21 @@ Kore-hosted open-source models can produce structured JSON responses, making out
 
 The following table lists the models that support structured JSON output:
 
-
-| Model Name                             | vllm | No optimization |
+| Model Name                             | vLLM | No Optimization |
 |----------------------------------------|------|----------------|
-| EleutherAI/gpt-j-6b                    | ❌   | ✅             |
-| HuggingFaceH4/zephyr-7b-alpha          | ❌   | ✅             |
-| HuggingFaceH4/zephyr-7b-beta           | ❌   | ✅             |
 | amazon/MistralLite                     | ❌   | ✅             |
 | argilla/notus-7b-v1                    | ❌   | ✅             |
+| EleutherAI/gpt-j-6b                    | ❌   | ✅             |
 | facebook/opt-1.3b                      | ✅   | ✅             |
 | facebook/opt-2.7b                      | ✅   | ✅             |
 | facebook/opt-350m                      | ✅   | ✅             |
 | facebook/opt-6.7b                      | ✅   | ✅             |
-| google/flan-t5-base                    | ❌   | ❌             |
-| google/flan-t5-large                   | ❌   | ❌             |
-| google/flan-t5-small                   | ❌   | ❌             |
-| google/flan-t5-xl                      | ❌   | ❌             |
-| google/flan-t5-xxl                     | ❌   | ❌             |
 | google/gemma-2b                        | ❌   | ✅             |
 | google/gemma-2b-it                     | ❌   | ✅             |
 | google/gemma-7b                        | ❌   | ✅             |
 | google/gemma-7b-it                     | ❌   | ✅             |
+| HuggingFaceH4/zephyr-7b-alpha          | ❌   | ✅             |
+| HuggingFaceH4/zephyr-7b-beta           | ❌   | ✅             |
 | meta-llama/Llama-2-7b-chat-hf          | ❌   | ❌             |
 | meta-llama/Llama-2-7b-hf               | ❌   | ✅             |
 | meta-llama/Llama-3.2-1B                | ✅   | ❌             |
@@ -488,14 +482,12 @@ The following table lists the models that support structured JSON output:
 | mistralai/Mistral-7B-Instruct-v0.2     | ❌   | ✅             |
 | mistralai/Mistral-7B-Instruct-v0.3     | ✅   | ✅             |
 | mistralai/Mistral-7B-v0.1              | ❌   | ✅             |
-| openai-community/gpt2                  | ❌   | ❌             |
 | openai-community/gpt2-large            | ❌   | ✅             |
 | openai-community/gpt2-medium           | ❌   | ✅             |
 | openai-community/gpt2-xl               | ❌   | ✅             |
 | tiiuae/falcon-7b                       | ❌   | ✅             |
 | tiiuae/falcon-7b-instruct              | ❌   | ✅             |
 | tiiuae/falcon-rw-1b                    | ✅   | ✅             |
-
 
 
 ## Supported External Models for Easy Integration
