@@ -26,7 +26,7 @@ This API supports internal transfer events, reducing reliance on UI socket event
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>
+See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)
    </td>
   </tr>
 </table>

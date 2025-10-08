@@ -158,7 +158,7 @@ When the test execution is completed \
             "failedUtteranceCount": 1,
             "failedEntitiesCount": 0
         },
-        "fileUrl": "http://hostname/api/getMediaStream/media/f-c6071507-a603-59ed-8d2b-5ec344be3696.csv?e=1689769306&n=2501205681&s=IkxtTVdUdTd4c3J6WTFaSWp0MUZHWHlaNjR5bEdmaEJPczNrdU42RHB6TWc9Ig$$&clientfilename=test1-26-06-23.csv&batchtesting=true"
+        "fileUrl": "https://hostname/api/getMediaStream/media/f-c6071507-a603-59ed-8d2b-5ec344be3696.csv?e=1689769306&n=2501205681&s=IkxtTVdUdTd4c3J6WTFaSWp0MUZHWHlaNjR5bEdmaEJPczNrdU42RHB6TWc9Ig$$&clientfilename=test1-26-06-23.csv&batchtesting=true"
     }
 }
 

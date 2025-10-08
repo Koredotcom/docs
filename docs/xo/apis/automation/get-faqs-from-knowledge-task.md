@@ -428,7 +428,7 @@ No body parameters are passed.
                             "rules": [
                                 {
                                     "condition": "context.session.UserContext.emailId",
-                                    "value": "harini.nemani@kore.com",
+                                    "value": "john.doe@example.com",
                                     "op": "eq"
                                 }
                             ]

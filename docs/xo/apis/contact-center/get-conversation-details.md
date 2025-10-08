@@ -119,7 +119,7 @@ curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{botI
   "userInfo": {
     "firstName": "Test",
     "lastName": "User",
-    "email": "Test.user@test.com",
+    "email": "john.doe@example.com",
     "phoneNumber": "9999999999",
     "activationStatus": "active"
   }

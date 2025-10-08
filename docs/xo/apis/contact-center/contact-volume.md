@@ -2,69 +2,19 @@
 
 To retrieve call volume details associated with a specified collection point for a given interval, including fields mapped to specific field names relevant to the Workforce Management (WFM) client.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoints
-   </td>
-   <td><code>https://{{host}}/agentassist/api/public/analytics/account/{{Accountid}}/callvolume</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content-Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<br>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>WFM Integration
-   </td>
-  </tr>
-</table>
+| **Method**        | POST                                                                                                                      |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Endpoint**      | `https://{{host}}/agentassist/api/public/analytics/account/{{AccountId}}/callvolume`                           |
+| **Content-Type**  | `application/json`                                                                                             |
+| **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
+| **API Scope**     | WFM Integration                                                                                                           |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://platform.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>AccountId
-   </td>
-   <td>The unique Id associated with the account.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **Parameter** | **Description**                                          | **Type**           |
+| ------------- | -------------------------------------------------------- | ------------------ |
+| `host`        | Environment URL. For example: `https://platform.kore.ai` | string, required |
+| `AccountId`   | Unique identifier for the account.                       | string, required |
 
 ## Sample Request
 
@@ -83,57 +33,13 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5
 
 ## Request Body Parameters
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>orgId
-   </td>
-   <td>The organization ID associated with the account.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>fromTimeStamp
-   </td>
-   <td>Start date and time in ISO format (for example, 2023-01-07T09:45:00Z). \
-<strong>Note</strong>: This is only optional if you want to fetch call records starting from the first available record for initial syncs.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>toTimeStamp
-   </td>
-   <td>End date and time in ISO format (for example, 2023-01-08T10:00:00Z).
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>skip
-   </td>
-   <td>The number of results to skip for pagination. The default is 0.
-   </td>
-   <td>Number, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>limit
-   </td>
-   <td>Specifies the number of contact records to retrieve (for example, 2).
-   </td>
-   <td>Number, Optional
-   </td>
-  </tr>
-</table>
+| **Parameter**   | **Description**                                                                                                                                                                  | **Type**           |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| `orgId`         | Organization ID associated with the account.                                                                                                                                     | String, required |
+| `fromTimeStamp` | Start date and time in ISO 8601 format (for example, `2023-01-07T09:45:00Z`). <br>**Note:** Optional if fetching call records from the first available record for initial syncs. | `String`, optional |
+| `toTimeStamp`   | End date and time in ISO 8601 format (for example, `2023-01-08T10:00:00Z`).                                                                                                      | String, required |
+| `skip`          | Number of results to skip for pagination. Default is `0`.                                                                                                                        | Number, optional |
+| `limit`         | Number of contact records to retrieve (for example, `2`).                                                                                                                        | Number, optional |
 
 ## Sample Response
 
@@ -175,229 +81,32 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5
 
 ## Body Parameters
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>hasMore
-   </td>
-   <td>Indicates if there are more records to fetch.
-   </td>
-   <td>Boolean
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate
-   </td>
-   <td>List of objects representing individual call volume updates.
-   </td>
-   <td>Array
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate._id
-   </td>
-   <td>Unique identifier for the call volume record.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.intervalStartTimeStamp
-   </td>
-   <td>Start time of the interval in ISO 8601 format.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.intervalEndTimeStamp
-   </td>
-   <td>End time of the interval in ISO 8601 format.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.orgId
-   </td>
-   <td>Organization ID associated with the call volume data.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.queueId
-   </td>
-   <td>Queue ID where the calls were handled.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.source
-   </td>
-   <td>The source of the data, for example, "rtm" (real-time monitoring).
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.__v
-   </td>
-   <td>Version key for the database document. For example, 0.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.offeredContacts
-   </td>
-   <td>Number of contacts (calls) offered to the queue during the interval.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.answeredContacts
-   </td>
-   <td>Number of contacts that were answered during the interval.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.maxQueueHoldTimeAnswered
-   </td>
-   <td>Maximum hold time in seconds for answered contacts.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.queueHoldTimeAnswered
-   </td>
-   <td>Total queue hold time in seconds for answered contacts.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.acwDuration
-   </td>
-   <td>After-call work duration in seconds.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.completedContacts
-   </td>
-   <td>Number of contacts that were completed during the interval.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.conversationHandleTime
-   </td>
-   <td>Total handle time of the conversation in seconds.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.conversationTalkTime
-   </td>
-   <td>Total talk time during the conversation in seconds.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.holdDuration
-   </td>
-   <td>Total hold duration in seconds during the call.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.messageCount
-   </td>
-   <td>Number of messages exchanged during the conversation.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.savedMessageCount
-   </td>
-   <td>Number of messages that were saved during the conversation.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.csatResponses
-   </td>
-   <td>Number of Customer Satisfaction (CSAT) survey responses collected.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.csatScore
-   </td>
-   <td>CSAT score from customer feedback. (for example, 4).
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.abandonedContacts
-   </td>
-   <td>Number of contacts that were abandoned during the interval.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.maxqueueHoldTimeAbandoned
-   </td>
-   <td>Maximum hold time in seconds for abandoned contacts.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.queueHoldTimeAbandoned
-   </td>
-   <td>Total queue hold time in seconds for abandoned contacts.
-   </td>
-   <td>Integer
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.iId
-   </td>
-   <td>Unique instance ID for tracking the call or interaction.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>CallVolumeUpdate.queueName
-   </td>
-   <td>Name of the queue where the call or interaction took place.
-   </td>
-   <td>String
-   </td>
-  </tr>
-</table>
+| **Parameter**                                | **Description**                                                      | **Type** |
+| -------------------------------------------- | -------------------------------------------------------------------- | -------- |
+| `hasMore`                                    | Indicates if there are more records to fetch.                        | Boolean  |
+| `CallVolumeUpdate`                           | List of objects representing individual call volume updates.         | Array    |
+| `CallVolumeUpdate._id`                       | Unique identifier for the call volume record.                        | String   |
+| `CallVolumeUpdate.intervalStartTimeStamp`    | Start time of the interval in ISO 8601 format.                       | String   |
+| `CallVolumeUpdate.intervalEndTimeStamp`      | End time of the interval in ISO 8601 format.                         | String   |
+| `CallVolumeUpdate.orgId`                     | Organization ID associated with the call volume data.                | String   |
+| `CallVolumeUpdate.queueId`                   | Queue ID where the calls were handled.                               | String   |
+| `CallVolumeUpdate.source`                    | Source of the data (for example, "rtm" for real-time monitoring).    | String   |
+| `CallVolumeUpdate.__v`                       | Version key for the database document (for example, 0).              | Integer  |
+| `CallVolumeUpdate.offeredContacts`           | Number of contacts (calls) offered to the queue during the interval. | Integer  |
+| `CallVolumeUpdate.answeredContacts`          | Number of contacts answered during the interval.                     | Integer  |
+| `CallVolumeUpdate.maxQueueHoldTimeAnswered`  | Maximum hold time in seconds for answered contacts.                  | Integer  |
+| `CallVolumeUpdate.queueHoldTimeAnswered`     | Total queue hold time in seconds for answered contacts.              | Integer  |
+| `CallVolumeUpdate.acwDuration`               | After-call work duration in seconds.                                 | Integer  |
+| `CallVolumeUpdate.completedContacts`         | Number of contacts completed during the interval.                    | Integer  |
+| `CallVolumeUpdate.conversationHandleTime`    | Total handle time of the conversation in seconds.                    | Integer  |
+| `CallVolumeUpdate.conversationTalkTime`      | Total talk time during the conversation in seconds.                  | Integer  |
+| `CallVolumeUpdate.holdDuration`              | Total hold duration in seconds during the call.                      | Integer  |
+| `CallVolumeUpdate.messageCount`              | Number of messages exchanged during the conversation.                | Integer  |
+| `CallVolumeUpdate.savedMessageCount`         | Number of messages saved during the conversation.                    | Integer  |
+| `CallVolumeUpdate.csatResponses`             | Number of Customer Satisfaction (CSAT) survey responses collected.   | Integer  |
+| `CallVolumeUpdate.csatScore`                 | CSAT score from customer feedback (for example, 4).                  | Integer  |
+| `CallVolumeUpdate.abandonedContacts`         | Number of contacts abandoned during the interval.                    | Integer  |
+| `CallVolumeUpdate.maxqueueHoldTimeAbandoned` | Maximum hold time in seconds for abandoned contacts.                 | Integer  |
+| `CallVolumeUpdate.queueHoldTimeAbandoned`    | Total queue hold time in seconds for abandoned contacts.             | Integer  |
+| `CallVolumeUpdate.iId`                       | Unique instance ID for tracking the call or interaction.             | String   |
+| `CallVolumeUpdate.queueName`                 | Name of the queue where the call or interaction took place.          | String   |

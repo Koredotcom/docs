@@ -2,77 +2,23 @@
 
 This API provides reporting interaction level Auto QA scoring and qualification of metrics relevant to the interaction based on the form associated with the QA. 
 
-<table>
-  <tr>
-   <td><strong>METHOD</strong>
-   </td>
-   <td><strong>POST</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code><a href="https://{{host}}//api/public/QualityManagement/account/{{accountId}}/v1/ScoreReporting">https://{{host}}//api/public/QualityManagement/account/{{accountId}}/v1/ScoreReporting</a></code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Quality AI
-   </td>
-  </tr>
-</table>
+| **METHOD**       | **POST** |
+|------------------|----------|
+| Endpoint         | `<https://{{host}}//api/public/QualityManagement/account/{{accountId}}/v1/ScoreReporting>` |
+| Content Type     | `application/json` |
+| Authorization    | `auth: {{JWT}}`  
+See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
+| API Scope        | Quality AI |
 
 
+## Path Parameters
 
-## **Path Parameters** 
+| PARAMETER  | DESCRIPTION                                                                                  | TYPE            |
+|------------|----------------------------------------------------------------------------------------------|-----------------|
+| host       | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/)          | string, required|
+| accountId  | The Account Id. For example, `665ae2f3cc61d7d2cf75xxxx`                                       | string, required|
 
-
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL. For example, <a href="https://platform.kore.ai/">https://platform.kore.ai/</a>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>accountId
-   </td>
-   <td>The Account Id. For example, <code>665ae2f3cc61d7d2cf75xxxx</code>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
-
-
-
-## **Sample Request**
-
+## Sample Request
 
 ```
 curl --location 'https://platform.kore.ai/agentassist/api/v1/public/qualitymanagement/app/st-c35c438e-b95a-51d6-9b44-b8691a9eaeb6/scorereporting' \
@@ -87,86 +33,18 @@ curl --location 'https://platform.kore.ai/agentassist/api/v1/public/qualitymanag
 }'
 ```
 
+## Body Parameters
 
+| PARAMETER | DESCRIPTION                                                                                                             | TYPE            |
+|-----------|-------------------------------------------------------------------------------------------------------------------------|-----------------|
+| offset    | The number of responses the documents need to Skip. The default value is 0. For example, 10.                            | Integer, optional|
+| limit     | The number of conversation records to be displayed in the response. The default value is 100. For example, 70.          | Integer, optional|
+| startDate | The start date from which the records need to be considered. The date format with UTC based time:      `YYYY-MM-DDTHH24:MM:SS.NNNZ`.  For Example, `2024-07-18T11:33:12.724Z`.      | string, required |
+| endtDate  | The end date from which the records need to be considered. The date format with UTC based time:  `YYYY-MM-DDTHH24:MM:SS.NNNZ`. For Example, `2024-07-18T11:33:12.904Z`.      | string, required |
+| channel   | Option to filter interactions by channel.                                                                                | array, optional  |
+| queues    | Options to filter interactions by queue.                                                                                 | array, optional  |
 
-## **Body Parameters**
-
-
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>offset
-   </td>
-   <td>The number of responses the documents need to Skip. The default value is 0. For example, 10.
-   </td>
-   <td>Integer, optional
-   </td>
-  </tr>
-  <tr>
-   <td>limit
-   </td>
-   <td>The number of conversation records to be displayed in the response. The default value is 100. For example, 70.
-   </td>
-   <td>Integer, optional
-   </td>
-  </tr>
-  <tr>
-   <td>startDate
-   </td>
-   <td>The start date from which the records need to be considered.
-<p>
-The date format with UTC based time:
-<p>
-<code>YYYY-MM-DDTHH24:MM:SS.NNNZ</code>
-<p>
-For Example, <code>2024-07-18T11:33:12.724Z</code>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>endtDate
-   </td>
-   <td>The end date from which the records need to be considered.
-<p>
-The date format with UTC based time:
-<p>
-<code>YYYY-MM-DDTHH24:MM:SS.NNNZ</code>
-<p>
-For Example, <code>2024-07-18T11:33:12.904Z</code>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>channel
-   </td>
-   <td>Option to filter interactions by channel.
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-  <tr>
-   <td>queues
-   </td>
-   <td>Options to filter interactions by queue.
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-</table>
-
-
-
-## **Sample Response** 	
-
+## Sample Response
 
 ```
 {
@@ -326,115 +204,19 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
 }
 ```
 
+## Response Body Parameters
 
-
-## **Response Body Parameters** 
-
-
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>conversationId
-   </td>
-   <td>The conversation id of the record.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>koreEvalutionScore
-   </td>
-   <td>The score returned by NLP for that conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>queues
-   </td>
-   <td>Queue details for the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>Queue ID
-   </td>
-   <td>Queue id of the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>Queue Name
-   </td>
-   <td>Queue name of the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>agents
-   </td>
-   <td>Array of agents who have participated in the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>Agent ID
-   </td>
-   <td>Agent ID of the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>Agent Name
-   </td>
-   <td>List of agents names who have participated in the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>metric
-   </td>
-   <td>An array of evaluation metrics with which scores are calculated.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>Metric ID
-   </td>
-   <td>Unique identifier for the metric.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>Metric Weight
-   </td>
-   <td>A numerical value indicating how much influence or impact that metric has in an overall evaluation or scoring system.
-   </td>
-   <td>integer
-   </td>
-  </tr>
-  <tr>
-   <td>Qualification
-   </td>
-   <td>Qualification status (YES or NO)
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-</table>
-
+| PARAMETER           | DESCRIPTION                                                                                           | TYPE    |
+|---------------------|-----------------------------------------------------------------------------------------------------|---------|
+| conversationId      | The conversation id of the record.                                                                   | string  |
+| koreEvalutionScore  | The score returned by NLP for that conversation.                                                     | string  |
+| queues              | Queue details for the conversation.                                                                  | string  |
+| Queue ID            | Queue id of the conversation.                                                                         | string  |
+| Queue Name          | Queue name of the conversation.                                                                       | string  |
+| agents              | Array of agents who have participated in the conversation.                                           | string  |
+| Agent ID            | Agent ID of the conversation.                                                                         | string  |
+| Agent Name          | List of agents names who have participated in the conversation.                                      | string  |
+| metric              | An array of evaluation metrics with which scores are calculated.                                     | array   |
+| Metric ID           | Unique identifier for the metric.                                                                     | string  |
+| Metric Weight       | A numerical value indicating how much influence or impact that metric has in an overall evaluation or scoring system. | integer |
+| Qualification       | Qualification status (YES or NO)                                                                      | boolean |

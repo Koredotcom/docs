@@ -34,7 +34,7 @@ A new toggle in **Agent Settings** → **Answer Mode** ensures conversations hon
 
 **Remove Chats When Disconnected in Queue and Control Interruption Messages**
 
-Administrators can now set separate timers for Customer Interruption in Queue (default: 30 seconds) and After Agent Acceptance. Disconnected chats after an agent has handled them no longer remain in the agent tray. Interruption messages for customers and agents can be enabled, disabled, or customized as needed. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#conversation-statuses-by-channel-live-chat-messaging-and-voice)
+Administrators can now configure separate timers for customer interruptions: one for chats in queue (default: 30 seconds) and another for after the agent accepts the call. Disconnected chats while in the queue are removed from the agent tray based on the configured queue timer. Disconnected chats after an agent has handled them remain in the agent tray for the duration set under Customer Interruption after agent transfer. Interruption messages for customers and agents can be enabled, disabled, or customized as needed. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#conversation-statuses-by-channel-live-chat-messaging-and-voice)
 
 **Application-Level System Settings for Call Recording and Other Agent Controls**
 

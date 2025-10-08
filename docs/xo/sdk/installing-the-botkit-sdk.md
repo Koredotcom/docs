@@ -85,7 +85,7 @@ To configure your SDK, you must define the following keys in your config.json fi
     </td>
   </tr>
   <tr>
-    <td>"examples": {<br>"mockServicesHost": "http://localhost:8004"<br>}</td>
+    <td>"examples": {<br>"mockServicesHost": "https://localhost:8004"<br>}</td>
     <td>mockServicesHost: Host for mock services that can be used for testing.</td>
   </tr>
   <tr>
