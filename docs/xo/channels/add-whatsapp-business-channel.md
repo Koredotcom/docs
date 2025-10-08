@@ -275,7 +275,7 @@ A sample template script is given below:
 
     "filename": "Developer.pdf",
 
-    "document": {"url":"http://enterprise.smsgupshup.com/help/in/EnterpriseAPIDocument.pdf"}
+    "document": {"url":"https://enterprise.smsgupshup.com/help/in/EnterpriseAPIDocument.pdf"}
 
     };
 

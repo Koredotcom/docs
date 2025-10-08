@@ -135,7 +135,7 @@ In case you want to use grammar syntax rules from Nuance Speech Recognition Syst
 1. Set **Enable Transcription** to _no_
 2. In the **Grammar** section:
     1. Select the **Speech** or **DTMF** option as per your requirement.
-    2. In the text box to define vxml enter the vxml path to dlm.zip file. The url will be of the format: `http://nuance.kore.ai/downloads/kore_dlm.zip?nlptype=krypton&dlm_weight=0.2&lang=en-US`
+    2. In the text box to define vxml enter the vxml path to dlm.zip file. The url will be of the format: `https://nuance.kore.ai/downloads/kore_dlm.zip?nlptype=krypton&dlm_weight=0.2&lang=en-US`
     3. Replace the above path according to your setup
     4. The language code “_lang=en-US_” will be based on your setup
 3. **Add Grammar** to add another path to `nle.zip`. Follow the above-mentioned steps.

@@ -221,7 +221,7 @@ The user can attach a file, image, or email up to 25 MB.
 
 ### City
 
-The name of a city in an utterance such as _What is the temperature in New York_. The AI Agent captures any city name with over 5000 population in the form of a string. We use [www.geonames.org](http://www.geonames.org/){:target="_blank"} for all the city details.
+The name of a city in an utterance such as _What is the temperature in New York_. The AI Agent captures any city name with over 5000 population in the form of a string. We use [www.geonames.org](https://www.geonames.org/){:target="_blank"} for all the city details.
 
 !!! Note
 
