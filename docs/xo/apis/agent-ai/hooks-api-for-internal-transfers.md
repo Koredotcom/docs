@@ -3,10 +3,9 @@
 This API supports internal transfer events, reducing reliance on UI socket events. It captures transfer data initiated outside the UI, sends via API payloads, and displays in the Agent AI widget.
 
 | Method         | POST |
-|                |      |
 | Endpoint       | `https://{{host}}/api/v1/hooks/{{botId}}` |
 | Content Type   | `application/json` |
-| Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token) |
+| Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
 
 ### Path Parameters
 
