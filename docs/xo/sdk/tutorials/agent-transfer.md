@@ -152,7 +152,7 @@ Modify the default config.json file for the following parameters as follows:
     "available": false
   },
   "examples": {
-    "mockServicesHost": "http://localhost:8004"
+    "mockServicesHost": "https://localhost:8004"
   },
   "liveagentlicense": "< LiveChat License Key >"
 }
@@ -181,7 +181,7 @@ The following code is an example of a fully defined sample config.json file:
     "available": false
   },
   "examples": {
-    "mockServicesHost": "http://localhost:8004"
+    "mockServicesHost": "https://localhost:8004"
   },
   "liveagentlicense": "89XXX15"
 }
@@ -224,7 +224,7 @@ node app.js
 When node.js is running, you should get the following response:
 
 ```json
-app listening at http://:::8003
+app listening at https://:::8003
 ```
 
 ## Testing the BotKit SDK Bot

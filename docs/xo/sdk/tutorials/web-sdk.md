@@ -78,7 +78,7 @@ Now that the bot is created and defined for the Web/Mobile Client channel, you a
         ```javascript
             "clientSecret": "{client secret}"
             $.ajax({
-            url: "http://localhost:3000/api/users/getJWT",
+            url: "https://localhost:3000/api/users/getJWT",
                 //this is sample url of a localhost. 
                 //This should include the url where you are hosting the bot.
             botOptions.userIdentity = ' ';
@@ -110,7 +110,7 @@ Now that the bot is created and defined for the Web/Mobile Client channel, you a
             ```javascript
                "clientSecret": "{client secret}"
                 $.ajax({
-                    url: "http://localhost:3000/api/users/getJWT",
+                    url: "https://localhost:3000/api/users/getJWT",
                         //this is a sample URL of a local host. 
                         //This should include the URL where you are hosting the bot.
                     botOptions.userIdentity = ' ';
@@ -240,7 +240,7 @@ botOptions.botInfo = {
 
 ### Some commonly encountered errors
 
-* A wrong URL is given in index.html, users see a 404 error. Double-check the URL. URL changes depending on whether you are hosting the bot on your web SDK or Kore’s web SDK. If it is Kore web SDK, then the URL is `http://demo.kore.net:3000/users/sts 7`.
+* A wrong URL is given in index.html, users see a 404 error. Double-check the URL. URL changes depending on whether you are hosting the bot on your web SDK or Kore’s web SDK. If it is Kore web SDK, then the URL is `https://demo.kore.net:3000/users/sts 7`.
 If you are hosting on your in-house web SDK, then provide the respective URL.
 * `missing/Invalid jwt.sub()`: This error occurs for enterprise Bots, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html.
 `botOptions.userIdentity = 'john.doe@example.com';// Provide users email id here.`
