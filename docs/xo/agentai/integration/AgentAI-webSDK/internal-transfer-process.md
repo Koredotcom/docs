@@ -25,7 +25,8 @@ chatWindowInstance.on('ON_SOCKET_CONNECTION', (data) => {
 ```
 ## Background and Context
 
-In a typical contact center environment: 
+In a typical contact center environment:  
+
 * A customer conversation is first handled by one agent.  
 * Depending on the nature of the issue, the conversation may be **transferred internally** to another agent or may involve multiple agents at once.  
 * Sometimes, a conversation session can **drop abruptly** and later reconnect to the same conversation (redial scenario).  
