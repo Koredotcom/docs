@@ -43,7 +43,7 @@ Users can create or select an existing app and configure it using the **Automati
     
     The same can be accessed in the prompts and code tools as `{{[memory.sessionMeta.metadata.name](memory.sessionMeta.metadata.name)}}`. 
     
-    Refer to [this](agentic-apps/memory-stores.md) to learn more accessing memory stores. 
+    Refer to [this](agentic-apps/memory-stores.md) to learn more about accessing memory stores. 
 
 
     Refer to [this ](https://docs.kore.ai/xo/flows/node-types/automation/)for other node configurations. 
