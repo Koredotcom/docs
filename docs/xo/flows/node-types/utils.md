@@ -157,8 +157,8 @@ In the below example, static data is used to set the user info.
 ```
 const userInfo = {
 "firstName": "John",
-"lastName": "Smith",
-"email": "jsmith316@gmail.com",
+"lastName": "Doe",
+"email": "john.doe@example.com",
 "phoneNumber": "407-876-8654",
 "country": "USA",
 "city": "Philadelphia",
