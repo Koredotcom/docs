@@ -28,8 +28,8 @@ This updated version of the Raw Data API offers the following additional convers
 | Method           | GET, POST                    <br>**Note**: Use GET for complete data, POST for filtered data.                                                                                                                          |
 | Endpoint         | `https://{{host}}/agentassist/api/v1/public/{{streamid}}/v2/agentassistinteractions?from=YYYY-MM-DD-HH24:mm:SS&to=YYYY-MM-DD-HH24:mm:SS&offset=NNNNN&limit=0..100`                                                             |
 | Content Type     | application/json                                                                                                                                                                                                                |
-| Authorization    | auth: {{JWT}}<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)                                                                                                              |
-| API Scope        | AgentAssist Analytics                                                                                                                                                                                                           |
+| Authorization    | auth: {{JWT}}<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} {:target="_blank"}                                                                                                              |
+| API Scope        | AgentAssist Analytics<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"}                                                                                                                                                                                                           |
 
 ## **Query Parameters**
 
