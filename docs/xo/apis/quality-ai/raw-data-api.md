@@ -5,10 +5,9 @@ This API provides detailed Quality AI and Conversation Intelligence related data
 | **METHOD**     | **POST**                                                                                                                                       |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | Endpoint       | [`https://{{host}}//api/public/QualityManagement/account/{{accountId}}/v1/RawData`](https://{{host}}//api/public/QualityManagement/account/{{accountId}}/v1/RawData) |
-| Content Type   | `application/json`                                                                                                                             |
-| Authorization  | `auth: {{JWT}}`  
-See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).     |
-| API Scope      | Quality AI                                                                     |
+| Content Type     | `application/json` |
+| Authorization    | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
+| API Scope        | Quality AI<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"} |                                                                    |
 
 ## Path Parameters
 

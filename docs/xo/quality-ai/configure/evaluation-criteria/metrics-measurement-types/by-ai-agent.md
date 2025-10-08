@@ -97,7 +97,7 @@ To configure By AI Agent metrics, ensure the following prerequisites are met:
 
         !!! note
 
-            For detailed instructions on retrieving your AI Agent Endpoint and API Key, see [AI Agent Endpoint Documentation](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/deployment/access-deployed-version/){:target="_blank"}.
+            For detailed instructions on retrieving your AI Agent Endpoint and API Key, see [AI Agent Endpoint Documentation](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/deployment/access-deployed-version/?h=access+deployed+version){:target="_blank"}.
     
 8. **Test Connection**: Click the **Test Request** button to validate your configuration. The system verifies the API endpoint accessibility, authentication, and response format compatibility.
 
