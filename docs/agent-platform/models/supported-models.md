@@ -437,6 +437,59 @@ The supported models and their variants are given below:
 
 
 
+### Supported Models for Structured Output
+
+Kore-hosted open-source models can produce structured JSON responses, making outputs consistent and easy to parse.
+
+* Structured output support depends on the optimization technique used: No optimization or vLLM.
+* Models optimized with CT2, fine-tuned models, Hugging Face imports, and locally imported models are not supported.
+
+The following table lists the models that support structured JSON output:
+
+| Model Name                             | vLLM | No Optimization |
+|----------------------------------------|------|----------------|
+| amazon/MistralLite                     | ❌   | ✅             |
+| argilla/notus-7b-v1                    | ❌   | ✅             |
+| EleutherAI/gpt-j-6b                    | ❌   | ✅             |
+| facebook/opt-1.3b                      | ✅   | ✅             |
+| facebook/opt-2.7b                      | ✅   | ✅             |
+| facebook/opt-350m                      | ✅   | ✅             |
+| facebook/opt-6.7b                      | ✅   | ✅             |
+| google/gemma-2b                        | ❌   | ✅             |
+| google/gemma-2b-it                     | ❌   | ✅             |
+| google/gemma-7b                        | ❌   | ✅             |
+| google/gemma-7b-it                     | ❌   | ✅             |
+| HuggingFaceH4/zephyr-7b-alpha          | ❌   | ✅             |
+| HuggingFaceH4/zephyr-7b-beta           | ❌   | ✅             |
+| meta-llama/Llama-2-7b-chat-hf          | ❌   | ❌             |
+| meta-llama/Llama-2-7b-hf               | ❌   | ✅             |
+| meta-llama/Llama-3.2-1B                | ✅   | ❌             |
+| meta-llama/Llama-3.2-1B-Instruct       | ✅   | ❌             |
+| meta-llama/Llama-3.2-3B                | ✅   | ❌             |
+| meta-llama/Llama-3.2-3B-Instruct       | ✅   | ❌             |
+| meta-llama/Meta-Llama-3-8B             | ✅   | ✅             |
+| meta-llama/Meta-Llama-3-8B-Instruct    | ❌   | ✅             |
+| meta-llama/Meta-Llama-3.1-8B           | ✅   | ✅             |
+| meta-llama/Meta-Llama-3.1-8B-Instruct  | ❌   | ✅             |
+| microsoft/Phi-3-medium-128k-instruct   | ❌   | ✅             |
+| microsoft/Phi-3-medium-4k-instruct     | ❌   | ✅             |
+| microsoft/Phi-3-mini-128k-instruct     | ✅   | ✅             |
+| microsoft/Phi-3-mini-4k-instruct       | ❌   | ✅             |
+| microsoft/phi-1                        | ❌   | ✅             |
+| microsoft/phi-1_5                      | ❌   | ✅             |
+| microsoft/phi-2                        | ✅   | ✅             |
+| mistralai/Mistral-7B-Instruct-v0.1     | ❌   | ✅             |
+| mistralai/Mistral-7B-Instruct-v0.2     | ❌   | ✅             |
+| mistralai/Mistral-7B-Instruct-v0.3     | ✅   | ✅             |
+| mistralai/Mistral-7B-v0.1              | ❌   | ✅             |
+| openai-community/gpt2-large            | ❌   | ✅             |
+| openai-community/gpt2-medium           | ❌   | ✅             |
+| openai-community/gpt2-xl               | ❌   | ✅             |
+| tiiuae/falcon-7b                       | ❌   | ✅             |
+| tiiuae/falcon-7b-instruct              | ❌   | ✅             |
+| tiiuae/falcon-rw-1b                    | ✅   | ✅             |
+
+
 ## Supported External Models for Easy Integration
 
 With Easy Integration, you can quickly connect to external model providers, such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock. No infrastructure setup is needed—just authenticate and start deploying models within flows, tools, or agents.

@@ -96,7 +96,7 @@ After fetching the Search AI application credentials, configuring the source, an
 
 * Select your tool → Click **Go to Flow**.
 
-### Step 3(B): Add the DocSearch Node
+### Step 3(B): Add the Node
 
 * Click **DocSearch** -> **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
   <img src="./../images/add-docsearch-node.png" alt="add doc search node" title="add doc search node" style="border: 1px solid gray; zoom:75%;">

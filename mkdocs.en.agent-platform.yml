@@ -329,3 +329,4 @@ nav:
     - Tools:
       - About Tools APIs: apis/overview.md
       - APIs List: apis/overview/#apis-list
+  - Marketplace: ai-agents/agentic-apps/marketplace.md

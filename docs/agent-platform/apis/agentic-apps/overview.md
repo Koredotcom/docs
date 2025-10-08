@@ -39,6 +39,7 @@ The following table lists the Agent Protocol APIs that allow users to interact w
 | [Sessions API](sessions.md)    | Creates, retrieves, or ends a session with an agent to maintain conversation context.             |
 | [Runs API](execute.md)        | Sends user input to an agent within a session and receives a response.                            |
 | [File Attachment APIs](upload.md) | Upload or delete attachments to a conversation. These attachments can be referenced during an agent run as context|
+| [Create App API](create-app.md) | Create a new Agentic App.|
 
 
 ## Key Concepts and Terminologies

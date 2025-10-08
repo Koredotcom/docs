@@ -129,7 +129,7 @@ Metrics include:
 
 * Select your tool → Click **Go to Flow**.
 
-### Step 2: Add the Audio to Text Node
+### Step 2: Add the Node
 
 * Click the "**+**" icon for **Audio to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Audio to text**.
     <img src="../images/select-audio-to-text.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
