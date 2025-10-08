@@ -249,8 +249,8 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": "aa@gmail.com ",
-        "address": "aa@gmail.com "
+        "name": "john.doe@example.com ",
+        "address": "john.doe@example.com "
         }
         },
         {
@@ -260,15 +260,15 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": " bb@yahoo.com",
-        "address": " bb@yahoo.com"
+        "name": "jane.doe@example.com",
+        "address": " jane.doe@example.com"
         }
         }
         ],
         "organizer": {
         "emailAddress": {
-        "name": "Purushottam Kumar",
-        "address": "purushottamKumar1215@outlook.com"
+        "name": "john doe",
+        "address": "john.doe@example.com"
         }
         },
         "onlineMeeting": null,
@@ -411,7 +411,7 @@ Steps to create an event in the Microsoft Graph integration:
         "attendees": [
         {
         "emailAddress": {
-        "address": "purushottam.kumar@gmail.com"
+        "address": "john.doe@example.com"
         }
         }
         ] }

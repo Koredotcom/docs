@@ -82,9 +82,9 @@ curl -X PUT 'https://{{host}}/api/public/users' \
     "users": [
         {
             "userInfo": {
-                "emailId": "publicuser2@gmail.com" // or "orgUserId": <orgUserId>,
-                "firstName": "user1",
-                "lastName":"user1",
+                "emailId": "john.doe@example.com" // or "orgUserId": <orgUserId>,
+                "firstName":"john",
+                "lastName":"doe",
                 "companyName":"company_name",
                 "dept":"dept",
                 "companyContactPhone":"12334444",
