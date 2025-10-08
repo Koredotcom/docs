@@ -10,6 +10,7 @@ This API provides reporting interaction level Auto QA scoring and qualification 
 See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | API Scope        | Quality AI |
 
+
 ## Path Parameters
 
 | PARAMETER  | DESCRIPTION                                                                                  | TYPE            |
@@ -31,6 +32,7 @@ curl --location 'https://platform.kore.ai/agentassist/api/v1/public/qualitymanag
 "limit": 70
 }'
 ```
+
 ## Body Parameters
 
 | PARAMETER | DESCRIPTION                                                                                                             | TYPE            |

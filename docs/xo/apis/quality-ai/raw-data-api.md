@@ -8,7 +8,8 @@ This API provides detailed Quality AI and Conversation Intelligence related data
 | Content Type   | `application/json`                                                                                                                             |
 | Authorization  | `auth: {{JWT}}`  
 See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).     |
-| API Scope      | Quality AI                                                                                                                                    |
+| API Scope      | Quality AI                                                                     |
+
 ## Path Parameters
 
 
@@ -62,6 +63,7 @@ curl --location 'https://sit-xo.kore.ai/agentassist/api/v1/public/qualitymanagem
 | `page` | Indicates the number of pages in the response; it is used for pagination. The default value is 1. | `integer`, optional |
 | `channel` | Option to filter interactions by channel. | `array`, optional |
 | `queues` | Options to filter interactions by queue. | `array`, optional |
+
 
 ## Sample Response	
 
@@ -225,6 +227,7 @@ curl --location 'https://sit-xo.kore.ai/agentassist/api/v1/public/qualitymanagem
 }
 
 ```
+
 
 ## Response Body Parameters
 
