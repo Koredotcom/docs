@@ -1,7 +1,6 @@
 # Workflow Agent
 
-The Workflow Agent allows users to integrate tools in Agent platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently. To learn more about Workflow agent flow, click
-[here](https://docs.kore.ai/gale/agents/agents-flows/flows-overview/).
+The Workflow Agent allows users to integrate tools in Agent platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently.
 
 The Agent leverages APIs and combines retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. These highly configurable agents allow users to select and fine-tune models from various options within the Workflow platform. Once configured, these agents dynamically adapt to user inputs, providing real-time, intelligent responses.
 
@@ -193,10 +192,6 @@ Work”. This makes it easy to view and manage the data exchange between the age
 and the connected platform.
 
 ![](images/input_output.png)
-
-For more information on input and output variables, refer to the [manage input
-and
-output.](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/)
 
 ##  User Interaction with Sync and Async Flows
 
