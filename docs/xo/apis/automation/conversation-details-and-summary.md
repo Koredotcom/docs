@@ -9,43 +9,6 @@ To fetch the conversation details and conversation summary between the bot and t
 | Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
 | API Scope      | App Builder: Chat History<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"} |
 
-<table>
-  <tr>
-   <td><strong>Method</strong>
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Endpoint</strong>
-   </td>
-   <td><code>https://{{host}}/api/public/bot/{{botId}}/conversationDetails</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Content Type</strong>
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Authorization</strong>
-   </td>
-   <td><code>auth: {{JWT}}</code>
-   <p>
-   See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>API Scope</strong>
-   </td>
-   <td>App Builder: Chat History
-   <p>
-   See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes)
-   </td>
-  </tr>
-</table>
-
 ## Path Parameters
 
 <table>
