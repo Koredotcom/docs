@@ -10,7 +10,7 @@ You can use the **Invite** page to send join invitations to members of your orga
 You can invite one or more users to become Kore.ai users by defining their email address. **To invite users to your account:**
 
 
-1. In the **Enrollment** module, on the **Invite** page, enter the email address of the member to invite, for example, example@kore.com.
+1. In the **Enrollment** module, on the **Invite** page, enter the email address of the member to invite, for example, john.doe@example.com.
 2. Click **Send Invitations**.
 3. An email invitation to join your Kore.ai account is sent to the user to become a Kore.ai user.
 4. After you send invitations to enroll users in Kore.ai, the invitee must validate their email address to register as a Kore.ai user. Only after validation, will the user be available in your account.

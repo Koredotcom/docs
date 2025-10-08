@@ -610,7 +610,7 @@ curl --location --request POST \
            }
        ]
    },
-   "name": "joxx.xx@kore.com_saml",
+   "name": "john.doe@example.com_saml",
    "ssoProvider": "okta",
    "ACS_IDP_URL": "https://xxxx.kore.ai/api/sso/login/callback?c=e-7dxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx4&redirect_url=httpsxxxxxxx2Fxxxx.kore.ai%xxxbotbuilder%xx%3xquery%3x1",
    "ACS_SP_CallBack_URL": "https://xxxxx-dev.kore.com/authorize/callback",
@@ -936,7 +936,7 @@ curl --location 'https://{{host}}/api/public/ssoconfig' \
 ```js
 {
    "method": "saml",
-   "name": "joxxx.xx@kore.com_saml",
+   "name": "john.doe@example.com_saml",
    "allusers": false,
    "ssoProvider": "okta",
    "modifiedDate": "2024-07-23T11:21:50.287Z",

@@ -229,9 +229,9 @@ For example, a user may have started the conversation with the app using an anon
  "exp": 1611813786.883,
  "aud": "https://idproxy.kore.com/authorize",
  "iss": "cs-d3042d3e-7da4-55da-a94d-783349270cc0",
- "sub": "knowuser1@test.com",
+ "sub": "john.doe@example.com ",
  "isAnonymous": "false",
- "identityToMerge": "anonymoususer1@test.com"
+ "identityToMerge": "john.doe@example.com"
 }
 ```
 
@@ -276,7 +276,7 @@ botOptions.botInfo = {
 
 * missing/Invalid jwt.sub(): This error occurs for enterprise Apps, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html
 
-    `botOptions.userIdentity = 'x@gmail.com';// Provide users email id here.`
+    `botOptions.userIdentity = 'john.doe@example.com';// Provide users email id here.`
 
 * Not found: User sees this error when either wrong clientID or no clientID is given. Check the correct ClientID from App – API Extensions option
 

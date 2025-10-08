@@ -189,9 +189,9 @@ For example, a user may have started a conversation with the bot using an anonym
  "exp": 1611813786.883,
  "aud": "https://idproxy.kore.com/authorize",
  "iss": "cs-d3042d3e-7da4-55da-a94d-783349270cc0",
- "sub": "knowuser1@test.com",
+ "sub": "john.doe@example.com",
  "isAnonymous": "false",
- "identityToMerge": "anonymoususer1@test.com"
+ "identityToMerge": "john.doe@example.com"
 }
 ```
 
@@ -243,7 +243,7 @@ botOptions.botInfo = {
 * A wrong URL is given in index.html, users see a 404 error. Double-check the URL. URL changes depending on whether you are hosting the bot on your web SDK or Kore’s web SDK. If it is Kore web SDK, then the URL is `http://demo.kore.net:3000/users/sts 7`.
 If you are hosting on your in-house web SDK, then provide the respective URL.
 * `missing/Invalid jwt.sub()`: This error occurs for enterprise Bots, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html.
-`botOptions.userIdentity = 'x@gmail.com';// Provide users email id here.`
+`botOptions.userIdentity = 'john.doe@example.com';// Provide users email id here.`
 *`Not found`: The user sees this error when either the wrong clientID or no clientID is given. Check the correct ClientID from the Bot – API Extensions option.
 `botOptions.clientId = "{clientID}"; // secure client-id`
 *`error verifying the jwt`: the Wrong clientSecret is given in index.html: Check the correct clientSecret you get from Bot – API Extensions option
