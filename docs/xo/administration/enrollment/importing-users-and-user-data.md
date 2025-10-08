@@ -50,8 +50,8 @@ You can create a file to invite users in your organization to become Kore.ai use
     **For a .txt file:**
     ```
     Email ID, First Name, Last Name, Alternate ID, Work Phone, Title, Department, User Status
-    john.doe@example.com., John, Doe,JohnAlternateID,800-555-1212,President,Executive,New
-    jane.doe@example.com., Jane, Doe,JaneAlternateID,800-555-5555,VicePresident,Executive,New
+    john.doe@example.com, John, Doe,JohnAlternateID,800-555-1212,President,Executive,New
+    jane.doe@example.com, Jane, Doe,JaneAlternateID,800-555-5555,VicePresident,Executive,New
     ```
  our account users.
 

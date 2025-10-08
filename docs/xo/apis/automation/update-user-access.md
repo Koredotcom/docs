@@ -104,7 +104,7 @@ curl -X POST 'https://{{host}}/api/public/useraccess' \
   <tr>
    <td>emailIds
    </td>
-   <td>The array of user email Ids whose access permissions have to be changed, for example, [“joe@kore.com”, “amy@xyz.com”]
+   <td>The array of user email Ids whose access permissions have to be changed, for example, [“john.doe@example.com”, “jane.doe@example.com”]
    </td>
   </tr>
   <tr>

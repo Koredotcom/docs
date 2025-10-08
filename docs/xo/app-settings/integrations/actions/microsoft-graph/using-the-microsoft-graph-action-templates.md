@@ -157,8 +157,8 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": "tanmay.agrawal@kore.com ",
-        "address": "tanmay.agrawal@kore.com "
+        "name": "john.doe@example.com ",
+        "address": "john.doe@example.com "
         }
         },
         {
@@ -168,8 +168,8 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": " purushottam.kumar@kore.com",
-        "address": " purushottam.kumar@kore.com"
+        "name": " jane.doe@example.com",
+        "address": " jane.doe@example.com"
         }
         }
         ],

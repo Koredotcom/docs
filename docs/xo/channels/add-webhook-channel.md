@@ -562,8 +562,8 @@ If the app response is a template, then the JSON object required for rendering t
 
 ```
 {
-"to": "john.doe@kore.com",
-"from": "st-b3a3dc49-bd57-5c5d-b12c-8e3776192a4c",
+"to": "john.doe@example.com",
+"from": "st-b3a3dc49-bd57-5c5d-b12c-8e377619xxxx",
 "text": "Your available account balance is $31,439.",
 }
 ```
@@ -1160,7 +1160,7 @@ The platform delivers the message or messages to the client and waits for the us
 ```
 Response:
 {
- "to": "john.doe@kore.com",
+ "to": "john.doe@example.com",
  "from": "st-b3a3dc49-bd57-5c5d-b12c-xxxxxxxxxx",
  "data": [
         {
