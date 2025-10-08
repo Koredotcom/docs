@@ -1,57 +1,82 @@
 # Condition Node - Automate Conditional Flows
 
-Condition nodes let you create branches in a workflow, directing actions based on whether certain conditions are met. This helps control the flow’s execution.
+The Condition Node helps you control the flow of your tool based on whether specific logical conditions are met. You can define rules using context variables, node outputs, or custom values to create dynamic branching.
+
+Based on whether conditions are met, the workflow follows different paths, giving you precise control over execution.
 
 The node can handle three types of conditions:
 
 * **If**: It directs the flow to a specific path if criteria (Node, Context, or Value) are met.
-* **Else**: It sets the node connection when no condition is met, allowing you to configure the next node to connect to.
+* **Else**: It defines the fallback path that the flow follows when the IF condition is not met .
 * **Else If**: It allows you to configure another set of criteria (Node, Context, or Value) to be met when the initial 'If' condition is not satisfied.
+
+Whether you need a simple true/false evaluation or a more complex branching using AND, OR, or multiple ELSE IF checks, the Condition node enables precise control over decision logic.
+
 
 !!! note
     
     Due to security reasons, a condition can be called a maximum of 10 times in a tool flow. Exceeding this limit will result in an error.
 
+## Key Capabilities
+
+* Flexible Condition Types: Define IF, ELSE IF, and ELSE paths using context variables, static values, or output from previous steps.
+* AND / OR Logic: Combine multiple criteria for complex decision-making.
+* Multi-Branch Execution: Direct the flow to different downstream nodes based on the condition evaluation.
+* Context Variable Support: Easily reference values from earlier steps in the flow using {{context.variable}} and {{context.steps.nodename.output}}.
+* Inline Expression Support: Use Node, Context, or Value types directly in conditional expressions.
+
+
+## Common Use Cases
+
+* Route Based on Classification: Direct flow based on category, type, or priority (e.g., route a ticket if priority = "High").
+* Fallback Logic: Use ELSE conditions to redirect the flow if no match is found.
+* Dynamic Node Triggering: Select which downstream actions to execute based on user inputs or computed data.
+* Validation Checks: Stop execution or branch if key data is missing or invalid.
+* Multi-Step Filtering: Combine multiple conditions for granular control (e.g., if country = US AND status = active).
+
+## How It Works
+
+The Condition Node dynamically controls workflow paths by evaluating data against user-defined rules. It checks inputs using comparison operators and routes execution based on whether conditions are met. The node can process context variables or previous node outputs, enabling adaptive flows and error handling.
+
+<img src="../images/condition_node_new.png" alt="Condition node" title="Condition node" style="border: 1px solid gray; zoom:75%;">
+
+In this document, you will learn how to set up a Condition Node in a tool flow, including adding it at the appropriate location and configuring its properties.
 
 ## Add and Configure a Condition Node
 
-Setting up a Condition node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+### Step 1: Open Flow Builder
 
-Steps to add and configure the node:
+* Log in → In Agent Platform Modules → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Tools** on the top navigation bar.
-3. Select the name of the tool to which you want to add the node. The Tool flow page is displayed. 
-4. Click **Go to flow** to edit the in-development version of the flow.
-5. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Condition** from the pop-up menu. (Alternatively, drag the **Condition** node from the Assets panel onto the canvas.)
-6. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
-<img src="./../images/condition-node-settings-to-be-filled.png" alt="Condition Node Settings" title="Condition Node Settings" style="border: 1px solid gray; zoom:60%;">
+### Step 2: Add the Condition Node
 
-7. Enter or select the following information:
-    
-    * **Custom Name**: Enter an appropriate name for the node.
-    * **If/Else Condition**: Define the IF ELSE/ELSE IF conditions using context variables and the AND/OR operator. You can use Node, Context, or Value.
-        1. In the **IF** section, select the context variable you want to use - enter "{{context." and select the node/variable from the list and then close the braces with "}}".  
-        <img src="./../images/if-condition-context-variable-selection.png" alt="Using Context Variable" title="Using Context Variable" style="border: 1px solid gray; zoom:80%;">
-        
-            Example: `{{context.ambiguous_sub_categories}}`
-        
-        2. Select an appropriate Operator from the drop-down list. For example, **Contains**.
+* Click the “**+**” icon on an existing node → Select Condition node.
+* Or drag the Condition node from the Assets panel onto the canvas.
 
-        3. Enter the value for the condition. If you want to use a context variable, start entering "{{context." and then select the node or variable, and then close the braces with "}}".
-            
-            Example: `{{context.steps.Sub_Category_Detection.output}}`   
-                  
-        4. Additionally, you can use an **AND**/**OR** logical operator to add more criteria to the condition.
+### Step 3: Configure the Node
 
-        5. In the **Then Go To** drop-down list, select the node to connect if the condition is met.
+1. Click the added node to open its properties panel.
+2. Node Name: Enter a descriptive name
+3. Set IF Condition:
+    * Select a context variable: Enter `{{context.` → Choose a variable → Close with `}}`. For example: `{{context.ambiguous_sub_categories}}`.
+    * Choose an operator (e.g., Contains).
+    * Enter a value or another context variable. For example: `{{context.steps.Sub_Category_Detection.output}}`.
+    * (Optional) Combine multiple criteria using AND/OR.
+4. Set Routing:
+    * **Go To:** Select the node if the IF condition is met.
+    * **ELSE:** Select the node if the IF condition is not met.
 
-        6. In the **ELSE** section, select the node you want to trigger if the IF condition fails.  
-        <img src="./../images/condition-node-settings-filled.png" alt="Condition Node's Settings" title="Condition Node's Settings" style="border: 1px solid gray; zoom:60%;">
+       <img src="./../images/condition-node-settings-filled.png" alt="Condition Node's Settings" title="Condition Node's Settings" style="border: 1px solid gray; zoom:60%;">
 
-<ol start="8"><li>Finally, test the flow and fix any issues found. Click the <b>Run Flow</b> button at the top-right corner of the flow builder and follow the onscreen instructions.</li></ol>
+
+### Step 4: Test the Flow
+
+* Click Run Flow at the top-right of the builder.
+* Verify the flow behaves as expected and fix any errors.
+
 
 !!! failure "Standard Error"
 

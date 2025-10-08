@@ -88,12 +88,12 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
   <tr>
    <td>Subdomain (aka Tenancy URL)
    </td>
-   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the AI Agent, for example, <em>kore</em>, for the <em>www.<strong>kore</strong>.someWebService.com</em> tenant-specific URL. When enabled define the following properties:
+   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the AI Agent, for example, <em>iana</em>, for the <em>www.<strong>iana</strong>.org</em> tenant-specific URL. When enabled define the following properties:
 <ul>
 
 <li><strong>Help Hint</strong> – The text displayed to the end-user to prompt the user to enter a tenant-specific URL for the AI Agent.
 
-<li><strong>Base URL</strong> – The base URL for the AI Agent that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://{tenant}.someWebService.com</em> where <em>{tenant}</em>, including the braces, represents the tenant name.
+<li><strong>Base URL</strong> – The base URL for the AI Agent that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://www.{iana}.org/</em> where <em>{iana}</em>, including the braces, represents the tenant name.
 </li>
 </ul>
    </td>

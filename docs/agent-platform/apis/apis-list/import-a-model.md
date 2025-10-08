@@ -55,7 +55,7 @@ The **Import Model - Start Session API** is executed in this step. The API initi
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -67,7 +67,7 @@ The **Import Model - Start Session API** is executed in this step. The API initi
 ### Sample Request
 
 ```js
-curl --location 'https://sxxxxx-agent-platform.kore.ai/api/public/files/session/start' \
+curl --location 'https://{host}/api/public/files/session/start' \
 --header 'x-api-key: kg-1xxxxxx8-3xxf-5xxa-9xx7-0xxxxxxxxxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aacd8xxxx' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -249,7 +249,7 @@ The **Import Model - Chunk Upload** API uploads a file chunk for model import. T
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -272,7 +272,7 @@ The **Import Model - Chunk Upload** API uploads a file chunk for model import. T
 ### Sample Request
 
 ```js
-curl --location 'https://staging-agent-platform.kore.ai/api/public/files/session/5cxxxxxb-5xx5-4xxa-bxx1-35xxxxxxxxxe' \
+curl --location 'https://{host}/api/public/files/session/5cxxxxxb-5xx5-4xxa-bxx1-35xxxxxxxxxe' \
 --header 'x-api-key: kg-11xxxxx8-3xxf-5xxa-9xx7-0xxxxxxxxxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aacdxxxx' \
 --header 'Content-Type: application/json' \
 --form 'file=@"postman-cloud:///1exxxxx8-7xx4-4xx0-axx0-1dxxxxxxxxxd"' \
@@ -401,7 +401,7 @@ The **Import Model- Complete** API completes the model import process after all 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -423,7 +423,7 @@ The **Import Model- Complete** API completes the model import process after all 
 ### Sample Request
 
 ```js
-curl --location --request POST 'https://staging-agent-platform.kore.ai/api/public/files/session/5cxxxxxb-xxx5-4xxa-bxx1-35xxxxxxxxxe/complete' \
+curl --location --request POST 'https://{host}/api/public/files/session/5cxxxxxb-xxx5-4xxa-bxx1-35xxxxxxxxxe/complete' \
 --header 'x-api-key: kg-11xxxxx8-xxxf-5xxa-9xx7-07dxxxx3xxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aaxxxxxx'
 ```
 

@@ -148,9 +148,9 @@ Field-name: name of the field as defined in the schema of the memory store.
 
 ## Accessing Memory Stores from Code Tools
 
-Agentic Apps provide **Memory Stores** to persist data across interactions. These stores can be **read from within prompts and code tools**, but can be **updated or deleted via code tools only**.
+Agentic Apps provide **Memory Stores** to persist data across interactions. These stores can be **read from within prompts, workflow tools, and code tools**, but can be **updated or deleted via code tools or workflow tools**.
 
-* A Memory store can be **referenced in code tools using its technical name only.**
+* A Memory store can be **referenced in tools using its technical name only.**
 * *sessionMeta* cannot be manipulated via code tools. 
 
 ### Supported Languages
@@ -251,7 +251,13 @@ To delete the employee details from the store.
 await memory.delete_content("employee")
 ```
 
+## Accessing Memory Stores from Workflow Tools
 
+Agent Memory can be read, updated, or deleted using the **Function Node** within Workflow Tools. The Function Node supports custom scripts in JavaScript or Python to support dynamic workflows and advanced use cases programmatically.
+
+When working with memory stores, use the technical name of the memory store to ensure proper identification.
+
+For detailed instructions on how to access memory from workflow tools and examples, refer to [this](../tools/tool-flows/types-of-nodes/function-node.md). 
 
 ## Session Meta Memory
 
@@ -284,14 +290,15 @@ This memory store follows the following schema:
 
 The **metadata** field is used to maintain any contextual metadata information. ***Developers can update this field only via the APIs or while accessing the platform via XO or AI for Work.***
 
-The **sessionInfo** is a system-populated object that includes the following session-related fields:
+The **sessionInfo** is a system-populated object that contains metadata about the current session. It includes the following fields:
 
-* sessionId
-* appId
-* sessionReference
-* userReference
-* userId
-* runId
+* sessionId - Unique identifier for the session.
+* appId - Identifier of the application where the session is running.
+* sessionReference - Reference string for tracking the session.
+* userReference - Reference string associated with the user in the session.
+* userId - Unique identifier for the user.
+* runId - Identifier for the specific execution run within the session.
+* timestamp – The date and time when the session information was recorded.
 
 **Scope and Identification**
 

@@ -16,7 +16,7 @@ Key Highlights
 
 The **Agent Listing Page** displays all agents associated with the Agentic app as individual cards, providing clear visibility into each agent's connected tools and configuration status. It shows the total number of agents in the app.
 
-[Learn more about how to create an agent](https://docs.kore.ai/agent-platform/ai-agents/create-agent/).
+[Learn more about how to create an agent](../create-agent.md).
 
 Key Highlights
 
@@ -31,7 +31,7 @@ Key Highlights
 
 The **Tools listing page** provides a structured view of available tools with clear visibility into their types, statuses, and linked agents. It shows the total number of tools in the app.
 
-[Learn more about Tools](https://docs.kore.ai/agent-platform/ai-agents/tools/overview/).
+[Learn more about Tools](../tools/overview.md).
 
 Key Highlights
 
@@ -47,7 +47,7 @@ Key Highlights
 
 The **Knowledge listing page** provides a structured view of all knowledge bases, offering clear visibility into their count, linked agents, and accessibility from a unified section.
 
-[Learn more about Knowledge](https://docs.kore.ai/agent-platform/ai-agents/knowledge/overview/).
+[Learn more about Knowledge](../knowledge/overview.md).
 
 Key Highlights
 

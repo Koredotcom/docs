@@ -63,7 +63,7 @@ The trace tree on the left displays the hierarchical structure of the agentic sy
 
 * Represents the entire trace
 * Aggregates all evaluators applied to the trace
-* Clicking the root node (For example, *Kore Trace*) displays all attached evaluators like *Agent Call Accuracy* and *Tool Call Accuracy* in the right panel
+* Clicking the root node (For example, *Trace*) displays all attached evaluators like *Agent Call Accuracy* and *Tool Call Accuracy* in the right panel
 
 <img src="../../agentic-evaluation/images/root_level.png" alt="Root level" title="Root level" style="border: 1px solid gray; zoom:80%;">
 

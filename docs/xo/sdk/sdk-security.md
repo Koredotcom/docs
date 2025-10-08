@@ -72,9 +72,9 @@ The following example shows a sample payload used to generate the JWT.
     "jti": "1234",               //or kore_jti
     "aud": "https://idproxy.kore.ai/authorize",
     "iss": "cs-xxxxxxxxxx-1234", //or kore_iss
-    "sub": "john.doe@achme.com", //or kore_sub
+    "sub": "john.doe@example.com", //or kore_sub
     "isAnonymous": false,
-    "identityToMerge": "anonymoususer1@test.com" //to map anonymous user
+    "identityToMerge": "john.doe@example.com" //to map anonymous user
 }
 ```
 

@@ -10,7 +10,7 @@ Agent Platform supports the following optimization types: CTranslate2 and vLLM.
 
 !!! note
 
-    The model optimization is supported only for the Kore-hosted models.
+    The model optimization is supported only for the Platform-hosted models.
 
 
 ## CTranslate2

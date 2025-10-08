@@ -52,7 +52,7 @@ Once undeployed, the guardrails become inactive. The API response includes the *
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -82,7 +82,7 @@ Once undeployed, the guardrails become inactive. The API response includes the *
 ## Sample Request
 
 ```js
-curl --location 'https://agent-platform.kore.ai/api/public/guardrails/undeploy' \
+curl --location 'https://{host}/api/public/guardrails/undeploy' \
 --header 'x-api-key: kg-axxxxxxx-xxxx-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3' \
 --header 'Content-Type: application/json' \
 --data '{"name": "Ban topics"}'

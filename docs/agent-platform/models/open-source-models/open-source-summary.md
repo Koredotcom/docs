@@ -16,10 +16,12 @@ The models list displays all the open-source models along with the following det
 | Field | Description |
 |-------|-------------|
 | **Model Name** | Name of the model. For imported models, the name is derived from the uploaded .zip file. |
-| **No. of Deployments** | Number of times the model has been deployed. |
-| **Source** | Origin of the model: File (uploaded locally), Kore Hosted, or Hugging Face. |
+| **Active Deployments** | Number of deployments that are currently active. |
+| **Deployment Failed** | Number of deployments that failed. |
+| **Ready to Deploy** | Number of deployments that are ready to be deployed. |
+| **Source** | Origin of the model: File (uploaded locally), Platform Hosted, or Hugging Face. |
 
-<img src="../images/open-source_models_list.png" alt="Open-source models table" title="Open-source models table" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/open_source_models_new.png" alt="Open-source models table" title="Open-source models table" style="border: 1px solid gray; zoom:80%;">
 
 Selecting a model opens its **Deployments** page, where you can view and manage all related deployments.
 
@@ -85,4 +87,8 @@ Selecting a specific deployment on the Deployment page opens its detail view, wh
 - **[API Keys](../open-source-models/generate-an-api-key-open-source.md)** – Generate and manage keys scoped to this deployment. API keys are isolated per deployment for secure access control.
 - **[Configurations](../open-source-models/configure-your-open-source-model.md)** – Edit the description and tags, or undeploy/delete the model.
 
-<img src="../images/open_source_deployment_detailed.png" alt="Open-source models table" title="Open-source models table" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/new_endpoint.png" alt="Deplyed Model API Endpoint" title="Deplyed Model API Endpoint" style="border: 1px solid gray; zoom:80%;">
+
+
+
+

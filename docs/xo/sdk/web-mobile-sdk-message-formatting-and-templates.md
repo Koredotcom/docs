@@ -891,10 +891,10 @@ You can apply your formatting directly in JavaScript using the Platform markdown
 
 * **Bold** – *text to be bolded* Do not add spaces after or before the ” * ” symbol. For example, `Here is *bold*.`
 * **Italic** – ~test to be italicized~ Do not add spaces after or before the ” ~ ” symbol. For example, `Here is ~italics~.` Preceeding and succeeding _ will also italicise the enclosed text, i.e. `Here is _italics_.`
-* **Link** – [Text for the link here](http://myCompany.com) For example, `Here is a link to [Kore.ai.com](https://kore.ai/).`
+* **Link** – [Text for the link here](https://iana.org) For example, `Here is a link to [Kore.ai.com](https://kore.ai/).`
 * **New Line** – \n One line indention.
 * **Multi Line** – \n\n\n Three line indentions.
-* **Image** – ![Text for the link here](http://myCompany.com) For example, `![My image](http://d1hqmx8kqvpnpa.cloudfront.net/f-eeca5df3-7580-5a09-9aa3-09f809b44ac4.png)`
+* **Image** – ![Text for the link here](https://iana.org) For example, `![My image](https://d1hqmx8kqvpnpa.cloudfront.net/f-eeca5df3-7580-5a09-9aa3-09f809b44ac4.png)`
 * **List** –
     * **Unordered Bulleted List** – * Text for the list time  Add a space after the ” * ” symbol.
         * `* This is an example of an unordered list Bullet 1.`

@@ -49,7 +49,7 @@ After triggering the import, the response returns a <code>dockStatusId</code>. U
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, https://agent-platform.kore.ai</td>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code></td>
    <td>String
    </td>
    <td>Required
@@ -71,7 +71,7 @@ After triggering the import, the response returns a <code>dockStatusId</code>. U
 ## Sample Request
 
 ```js
-curl --location 'https://agent-platform.kore.ai/api/public/tools/a-fbxxxxxf4-20x5-58xb-8b94-00xxxxxxxx5/import' \
+curl --location 'https://{host}/api/public/tools/a-fbxxxxxf4-20x5-58xb-8b94-00xxxxxxxx5/import' \
 --header 'x-api-key: kg-90xxxxx5-9xxe-5xxf-9xx7-9f4xxxxxxxx4-55xxxxx4-axx9-4xx2-axx2-fbcxxxxxxxxa' \
 --header 'Content-Type: application/json' \
 --data '{

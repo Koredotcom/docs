@@ -159,7 +159,7 @@ For example, when a user query is processed, the pipeline returns an answer alon
 
 Users can fine-tune the evaluation process by adjusting key parameters to meet specific needs. While the evaluation prompts themselves cannot be modified, as their results directly impact the final score calculation, users have the flexibility to adjust the following parameters:
 
-* **Model**: Users can choose which model to use for the evaluation.
+* **Model**: Users can choose which model and connection to use for the evaluation.
 * **Pass Threshold**: Users can modify the threshold required for a pass based on the evaluation criteria.
 * **Variables in the Prompt**: Users can attach variables depending on the specific metric being used, such as ground_truth, retrieved_contexts, user_input.
 
@@ -228,7 +228,7 @@ Steps to add an evaluator:
 
 2. From the list of Quality and Safety evaluators, select the desired evaluator.
 3. In the Evaluators dialog, fill in these details:
-    1. **Model**: Choose the model you want to use as an evaluator. This model will assess the input and/or output and generate a score. Only the models deployed in Agent Platform will appear in the search dropdown. Both open-source and the external models are considered here.
+    1. **Model**: Choose the model you want to use as an evaluator. This model will assess the input and/or output and generate a score. Only the models(open-source and external) deployed in Agent Platform will appear in the search dropdown.
     2. **Model Configuration**: Select the appropriate model hyperparameters such as Temperature, Output token limit, Top P etc.
     3. **Prompt**: Click to view the system prompt. The prompt associated with the system evaluator is view-only. While you can view the prompt, it cannot be edited.
     4. **Map variables**: Map the variables in the prompt to the corresponding columns in your imported dataset. This ensures the evaluator uses the right data for its analysis. 
@@ -273,7 +273,7 @@ Steps to add an evaluator:
             Do not specify the format of the score in the prompt. The format is automatically determined by the selected output type (Score or Boolean). If there is a mismatch between the output type and the score format, an error may occur.  
 
     7. **Save as a Global Evaluator**: Check this box to save the evaluator as a global evaluator. This will add the custom evaluator to the global evaluator page. The global evaluator will also appear on the project-level evaluator page for other users to access and use, without affecting the original evaluator.
-    8. **Map variables**: Map the variables in the prompt to the corresponding columns in your imported dataset. This ensures the evaluator uses the right data for its analysis. [Learn more](https://agentplatform-kore.github.io/docs/agent-platform/evaluation/configure-evaluator/#mapping-variables-link-evaluator-prompts-to-your-dataset).
+    8. **Map variables**: Map the variables in the prompt to the corresponding columns in your imported dataset. This ensures the evaluator uses the right data for its analysis. [Learn more](./configure-evaluator.md#mapping-variables-link-evaluator-prompts-to-your-dataset).
     9. **Output Type**: Select either **Score** or **Boolean** for the evaluator’s output.
     10. **Maximum Score**: If the output type is **Score**, specify the maximum score on the scale (For example, 1 to 10).
     11. **Pass threshold**: If the output type is **Score**, set the minimum score required for an output to pass the evaluation. Choose either the ‘Greater than’ or ‘Less than’ option and then enter a threshold value (For example, from 1 to 5). These options help distinguish between positive and negative evaluators, allowing you to adjust the evaluation based on the desired outcome.

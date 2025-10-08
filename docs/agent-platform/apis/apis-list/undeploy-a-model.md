@@ -13,7 +13,7 @@ This API undeploys a model from the environment. The API response includes the *
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><strong> </strong><code>https://{<i>host</i>}/api/public/models/:{<i>modelId</i>}/undeploy</code>
+   <td><strong> </strong><code>https://{host}/api/public/models/:{<i>modelId</i>}/undeploy</code>
    </td>
   </tr>
   <tr>
@@ -48,7 +48,7 @@ This API undeploys a model from the environment. The API response includes the *
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -70,7 +70,7 @@ This API undeploys a model from the environment. The API response includes the *
 ## Sample Request
 
 ```js
-curl --location --request POST 'https://agent-platform.kore.ai/api/public/models/cm-20xxxxxf-0xx9-5xx0-8xx1-81xxxxxxxx80/undeploy' \
+curl --location --request POST 'https://{host}/api/public/models/cm-20xxxxxf-0xx9-5xx0-8xx1-81xxxxxxxx80/undeploy' \
 --header 'x-api-key: kg-axxxxxxx-xxx-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3'
 ```
 

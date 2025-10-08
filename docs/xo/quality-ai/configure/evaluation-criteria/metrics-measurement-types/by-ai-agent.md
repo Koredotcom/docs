@@ -120,7 +120,7 @@ When configuring your AI Agent in the Agent Platform, you must define the respon
 
     !!! Note
 
-        For detailed instructions on setting up an AI Agent, see the [AI Agent creation guide](https://docs.kore.ai/agent-platform/ai-agents/create-agent/).
+        For detailed instructions on setting up an AI Agent, see the [AI Agent creation guide](../../../../../agent-platform/ai-agents/create-agent.md).
 
 ### Response Format Template
 

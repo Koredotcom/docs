@@ -543,7 +543,7 @@ The following is an example for converting HTML to an image:
 
 * HTML: Print Wide HTML Tables
 
-* http://salman-w.blogspot.com/2013/04/printing-wide-html-tables.html
+* https://salman-w.blogspot.com/2013/04/printing-wide-html-tables.html
 
 */
 

@@ -228,6 +228,6 @@ For a **failed** sync, you will receive the following email:
 
 <img src="../images/failed-sync.png" alt="failed sync" title="failed sync" style="border: 1px solid gray; zoom:75%;">
 
-An alternative way to add users to your account (without using AD sync) is to invite them via email. [Learn more](../../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"}.
+An alternative way to add users to your account (without using AD sync) is to invite them via email. 
 
 To learn more about other administrator features on the **Settings** Console, click [here](../../../administration/overview.md){:target="_blank"}.

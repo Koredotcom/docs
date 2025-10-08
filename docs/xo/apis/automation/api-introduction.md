@@ -59,12 +59,12 @@ Access control from the Data Tables module is different from the XO Platform and
 
 You can define apps to securely access the data from data tables and data views.
 
-* You can create one or more apps, [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/#App_Definition).
+* You can create one or more apps, [Learn more](../../administration/data/data-as-service.md).
 * These apps can be used for:
     * Accessing the data tables and views over public APIs.
     * Accessing the data tables and views using Service Node.
     * Accessing the export and import API for the definition of data table and views.
-* You can grant this app read, write, and delete permissions to each table and view separately, [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/#Assignments).
+* You can grant this app read, write, and delete permissions to each table and view separately, [Learn more](../../administration/data/data-as-service.md).
 
 ## Associating API Scopes
 

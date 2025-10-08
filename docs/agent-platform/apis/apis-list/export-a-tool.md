@@ -61,7 +61,7 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code> https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code> https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -93,7 +93,7 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
 ## Sample Request
 
 ```js
-curl --location --request POST 'https://dev-axxxt-plxxxxxm.kore.ai/api/public/tools/a-3xxxxxxxxxxxxxxxxxx3/export' \
+curl --location --request POST 'https://{host}/api/public/tools/a-3xxxxxxxxxxxxxxxxxx3/export' \
 --header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxxxxxx3' \
 --header 'Content-Type: application/json'
 ```
@@ -113,7 +113,7 @@ No parameters are passed.
    "status": "IN_PROGRESS",
    "exportJobId": "tool-ej-25xxxxx2-bxx3-5xxc-8xx4-edxxxxxxxxxf"
 "response": {
-       "downloadUrl": " https://agent-platform.kore.ai/api/v1/account/xxxxxx"
+       "downloadUrl": " https://{host}/api/v1/account/xxxxxx"
   }
 }
 ```

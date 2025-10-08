@@ -77,7 +77,7 @@ curl -X DELETE \
   -H 'Content-Type: application/json' \
   -H 'auth: YOUR_JWT_ACCESS_TOKEN' \
   -d '{
-     "deleteEmailIds"/"orgUserIds":["deskkore1@gmail.com"]
+     "deleteEmailIds"/"orgUserIds":["john.doe@example.com"]
    }'
 ```
 
@@ -123,7 +123,7 @@ or orgUserIds
 {
    "failedUserDetails": [
     {
-        "emailId": "deskkore1@gmail.com",
+        "emailId": "john.doe@example.com",
         "reason": {
             "statusCode": 400,
             "status": 400,

@@ -97,7 +97,7 @@ curl -X GET \
     "availableMore": true,
     "users": [
         {
-            "username": "<name>@kore.com",
+            "username": "john.doe@example.com",
             "orgUserId": "org assigned user id",
             "accountId": "<id>",
             "isDeveloper": true,
@@ -107,7 +107,7 @@ curl -X GET \
             "adminRoles": []
         },
         {
-            "username": "<name>@kore.com",
+            "username": "john.doe@example.com",
             "orgUserId": "org assigned user id",
             "accountId": "<id>",
             "isDeveloper": true,

@@ -15,7 +15,7 @@ The API response includes the **tool ID** and the **tool undeployment status**. 
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{<em>host</em>}/api/public/tools/:{<em>toolId</em>}/undeploy</code>
+   <td><code>https://{host}/api/public/tools/:{<em>toolId</em>}/undeploy</code>
    </td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ The API response includes the **tool ID** and the **tool undeployment status**. 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -72,7 +72,7 @@ The API response includes the **tool ID** and the **tool undeployment status**. 
 ## Sample Request
 
 ```js
-curl --location --request POST 'https://dev-axxxt-plxxxxxm.kore.ai/api/public/tools/a-0xxxxxxxxxxxxxxxxxxe/undeploy' \
+curl --location --request POST 'https://{host}/api/public/tools/a-0xxxxxxxxxxxxxxxxxxe/undeploy' \
 --header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxxxxxxx3'
 ```
 

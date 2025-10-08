@@ -1,6 +1,30 @@
 # API Node - Automate API Calls
 
-API nodes let you connect to external systems and retrieve data by making SOAP or REST API calls. You can configure the APIs and pass the necessary parameters to fetch the required information.
+The API Node enables you to seamlessly connect your tool to external systems and fetch real-time data by making REST or SOAP API calls. Whether you're enriching customer records, retrieving transaction status, or pushing updates, the API node helps you integrate third-party services directly into your workflow logic. With support for both synchronous and asynchronous operations, the node offers flexibility for a wide range of automation needs.
+
+## Key Capabilities
+
+* **Connect to External Systems**: Use REST or SOAP protocols to integrate with services like CRMs, ERPs, payment gateways, or third-party platforms.
+* **Synchronous & Asynchronous Modes**: Wait for a response before proceeding, or run the API call in the background and continue the workflow.
+* **Flexible Authorization Options**: Use pre-authorized tokens or request user-level authorization during execution.
+* **Support for Headers & Payloads**: Add custom headers and body formats (JSON, XML, Form URL Encoded, or raw custom data).
+* **Request & Response Testing**: Preview API responses before finalizing the setup.
+* **Dynamic Timeouts**: Configure how long the node should wait for a response.
+
+## Common Use Cases
+
+* **Data Enrichment**: Fetch user, order, or product details from an external system.
+* **Document Retrieval**: Pull attachments or metadata from a third-party storage service.
+* **Webhook Integration**: Trigger a downstream system based on workflow decisions.
+* **Approval Checks**: Perform identity verification, fraud checks, or compliance validation via external APIs.
+* **Notifications or Updates**: Send alerts or update external dashboards from within the workflow.
+
+## How It Works
+
+The API Node enables seamless integration with external services by sending and processing API requests. It allows you to configure the request method, endpoint, authentication, headers, and payload, then routes the workflow based on the response (success or failure). You can test and validate the API call directly within the flow to ensure proper functionality.
+
+ <img src="../images/api_node_how_it_works.jpg" alt="API node" title="API node" style="border: 1px solid gray; zoom:75%;">
+
 
 ## Add and Configure an API Node
 
@@ -8,13 +32,20 @@ Setting up an API node in a tool flow involves adding the node at the appropriat
 
 Steps to add and configure the node:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+### Step 1: Open Flow Builder
 
-2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed. 
-3. Click **Go to flow** to edit the in-development version of the flow.
-4. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. (Alternatively, drag the **API** node from the Assets panel onto the canvas.)
-5. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+* Log in → In **Agent Platform Modules** → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
+  <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+### Step 2: Add the API Node
+
+* In the flow builder, click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. 
+* Alternatively, drag the **API** node from the Assets panel onto the canvas.
+
+### Step 3: Configure the Node
+
+Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="./../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:60%;">
 
 **General Settings**
@@ -108,14 +139,18 @@ Steps to add and configure the node:
   </tr>
 </table>
 
-**Connections**
-Click the **Connections** icon in the left navigation and select **Go to Node** for success and failure conditions.  
+### Step 4: Add Connections
+
+Click the **Connections** icon in the left navigation and select **Go to Node** for success and failure conditions.
+
 <img src="./../images/api-node-connections.png" alt="API node Connections Properties" title="API node Connections Properties" style="border: 1px solid gray; zoom:80%;">
 
-1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can process the data from this node into a Function node and then use it further. In this case, select the Function node. 
-2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured.
+* **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can process the data from this node into a Function node and then use it further. In this case, select the Function node. 
+* **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured.
 
-7. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
+### Step 5: Test the Flow
+
+Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
 
 
 !!! note
@@ -125,12 +160,4 @@ Click the **Connections** icon in the left navigation and select **Go to Node** 
     {{context.steps.Start.APINodeName}}
     ~~~
 
-## API Status Codes
 
-* 200: Request successful
-* 400: Client error, cannot process request
-* 401: Authentication required
-* 403: Access denied
-* 404: Resource not found
-* 500: Unexpected server error
-* 504: Gateway timeout, no timely response from the upstream server
