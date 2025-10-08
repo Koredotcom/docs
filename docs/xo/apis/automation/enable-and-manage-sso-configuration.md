@@ -1,3 +1,4 @@
+
 # Enable and Manage SSO Configuration APIs
 
 To execute and get results for managing an account’s SSO configurations with the following APIs:
@@ -321,7 +322,7 @@ In this case, the API provides the following meta required to enable the app at 
                "{certificate ID}"
            ],
            "entryPoint": "https://trial-6xxxxx1.okta.com/app/trial-61xxxxx_kxxe_1/exxxxxxxxxxxxxxxx697/sso/saml",
-           "issuer": "http://www.okta.com/exxxxxxxxxxxxxxxxxx7"
+           "issuer": "https://www.okta.com/exxxxxxxxxxxxxxxxxx7"
        },
        "samlAttributeMapping": {
            "fullSynchronization": "enabled",
@@ -592,7 +593,7 @@ curl --location --request POST \
            "{certificate ID}"
        ],
        "entryPoint": "https://trial-6xxxxx1.okta.com/app/trial-6xxxxx1_kore_1/exxxxxxxxxxxxxxxxx97/sso/saml",
-       "issuer": "http://www.okta.com/exxxxxxxxxxxxxxxxx97"
+       "issuer": "https://www.okta.com/exxxxxxxxxxxxxxxxx97"
    },
    "method": "saml",
    "providername": "okta",
@@ -785,7 +786,7 @@ curl --location 'https://{{host}}/api/public/ssoconfig' \
    "SSOProtocol": "saml",
    "SAML_IdentityProvider": "okta",
    "SingleSignOnURL": "https://trial-6124441.okta.com/app/trial-6124441_kore_1/exkgn9lkzgRaNi5dS697/sso/saml",
-   "IssuerURL": "http://www.okta.com/exkgn9lkzgRaNi5dS697",
+   "IssuerURL": "https://www.okta.com/exkgn9lkzgRaNi5dS697",
    "Certificate": ["{{certificate ID}}"],
     "SAMLAttributeMapping": true,
    "SyncBehaviour": "Synchronize_UpdateExisting",
@@ -946,7 +947,7 @@ curl --location 'https://{{host}}/api/public/ssoconfig' \
            "{cert ID}"
        ],
        "entryPoint": "https://trial-6xxxxx1.okta.com/app/trial-6xxxxx1_kore_1/exxxxxxxxxxxxxxxx697/sso/saml",
-       "issuer": "http://www.okta.com/exxxxxxxxxxxxxxxxxx7"
+       "issuer": "https://www.okta.com/exxxxxxxxxxxxxxxxxx7"
    },
    "providername": "okta",
    "ACS_IDP_URL": "https://xxxxx.kore.ai/api/sso/login/callback?c=e-7dxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx74&redirect_url=https%xxxxxxxxxx%xxxxxx.kore.ai%2xbotbuilder%2x%3Fquery%3x1",

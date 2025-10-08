@@ -584,7 +584,7 @@ For any task, you will need to define an API request to make a call to a web ser
     * **PUT**– Replaces the content of the target resource with the content sent.
     * **PATCH** – Appends the content of an existing target resource with the content sent.
     * **DELETE** – Deletes the content of an existing target resource.
-5. In the **URL** field, specify the URL for the App task response to the process. For example, `http://koremessenger.com/postURL`. You can also use session variables in the URL as shown in the following example: 
+5. In the **URL** field, specify the URL for the App task response to the process. For example, `https://koremessenger.com/postURL`. You can also use session variables in the URL as shown in the following example: 
 `https://mySite.crm.ondemand.com/sap/c4c/odata/v1/c4codata/ServiceRequestCollection?$filter=ID eq '{id}' and ReporterEmail eq '{userEmail}'&amp;$expand=ServiceRequestHistoricalVersion,ServiceRequestDescription`
 
 6. In the **Access Using A Connector** field, select **Yes** to enable access for the AI Agent using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network.
@@ -889,7 +889,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Freedom Unlimited",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.psdgraphics.com/file/credit-card.jpg",
+"imageURL": "https://www.psdgraphics.com/file/credit-card.jpg",
 "id": "5b5195e264bbd800"
 },
 {
@@ -900,7 +900,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Premium Plus",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://i.imgur.com/rMOXYql.jpg",
+"imageURL": "https://i.imgur.com/rMOXYql.jpg",
 "id": "5caf2155873f89c8"
 },
 {
@@ -911,7 +911,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Frequent Flier",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.moneychoice.org/uploads/2016/01/credit-card-calculator-image.jpeg",
+"imageURL": "https://www.moneychoice.org/uploads/2016/01/credit-card-calculator-image.jpeg",
 "id": "c0b05bc3062658ee"
 }
 ]
@@ -932,7 +932,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Freedom Unlimited",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.psdgraphics.com/file/credit-card.jpg",
+"imageURL": "https://www.psdgraphics.com/file/credit-card.jpg",
 "id": "5b5195e264bbd800"
 },
 {
@@ -943,7 +943,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Premium Plus",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://vignette3.wikia.nocookie.net/objectmayhem/images/5/52/Credit_card.png/revision/latest?cb=20130629150408",
+"imageURL": "https://vignette3.wikia.nocookie.net/objectmayhem/images/5/52/Credit_card.png/revision/latest?cb=20130629150408",
 "id": "5caf2155873f89c8"
 }
 ]
@@ -1013,7 +1013,7 @@ When enabled, define the path to the preview links in the payload in the **Path 
             "-isPermaLink": "false",
             "#text": "SB12418904751422433479504581245034032986752"
         },
-        "link": "http://www.wsj.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian",
+        "link": "https://www.wsj.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian",
 ```
 
 When **Preview website link content in Post** is enabled, select preview objects such as:
