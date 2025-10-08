@@ -3,6 +3,7 @@
 To fetch the conversation details and conversation summary between the bot and the user or the user and the agent. This API supports pagination. You can specify skip and limit parameters to retrieve a certain number of messages at a time.
 
 | Method         | POST |
+|-------------------|-----------|
 | Endpoint       | `https://{{host}}/api/public/bot/{{botId}}/conversationDetails` |
 | Content Type   | `application/json` |
 | Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |

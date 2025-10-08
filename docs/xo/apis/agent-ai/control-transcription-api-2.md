@@ -3,6 +3,7 @@
 This API controls transcription and call recording sessions for Agent AI SIP-REC calls on third-party agent desktops during user-agent interactions. It lets you start, pause, resume, end/stop transcription and call recordings for a specific conversation by sending the appropriate action.
 
 | Method        | POST |
+|----------------|------|
 | Endpoint      | `https://{{host}}/api/1.1/public/bot/{botid}/control/transcriptionv2?conversationId={conversationId}` |
 | Content Type  | `application/json` |
 | Authorization | `auth: {{JWT}}`  
