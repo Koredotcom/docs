@@ -6,7 +6,7 @@ This API allows you to create a new task within the case management system.
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Endpoint**      | [`https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createTask`](https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createTask) |
 | **Content Type**  | `application/json`                                                                                                                                             |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../../automation/api-introduction.md#generating-the-jwt-token).                    |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                    |
 | **API Scope**     | Case Management Configuration.                                                                                                                                 |
 
 
