@@ -728,12 +728,14 @@ nav:
           - Automation AI: apis/automation/rate-limit.md
           - Contact Center AI: apis/automation/rate-limit-ccai.md
           - Quality AI: apis/automation/rate-limit-quality-ai.md
+          - Case Management: apis/automation/rate-limit-case-management.md
         - API List:          
           - Automation AI: apis/automation/api-list.md
           - Search AI: apis/searchai/api-list.md
           - Contact Center AI: apis/contact-center/contact-center-api-list.md
           - Agent AI: apis/agent-ai/apis-list.md
           - Quality AI: apis/quality-ai/api-list.md
+          - Case Management: apis/case-management/case-management-api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
