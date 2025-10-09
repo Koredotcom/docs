@@ -48,7 +48,7 @@ This capability is supported on v2/chat/completions endpoints for selected open-
 
     If a model supports both tool calls and JSON Schema, tool calls take precedence, and the schema will be ignored.
 
-When structured output is enabled, the model returns responses in a JSON object that follows the defined schema. See the example here.
+When structured output is enabled, the model returns responses in a JSON object that follows the defined schema. 
 
 For the list of models that support structured out, see [Supported Models for Structured Output](../supported-models.md#supported-models-for-structured-output).
 
