@@ -7,9 +7,10 @@ This API lets you to create a new case in the case management system.
 | **Endpoint**      | [`https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createCase`](https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createCase) |
 | **Content Type**  | `application/json`                                                                                                                                             |
 | **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../../automation/api-introduction.md#generating-the-jwt-token).                 |
-| **API Scope**     | Case Management Configuration.                                                                                
+| **API Scope**     | Case Management Configuration.                                                                               
+
 ## Path parameters
-                                                
+
 | **PARAMETER** | **DESCRIPTION**                                                                                                                                          | **TYPE**         |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | **host**      | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/)                                                                     | string, required |
