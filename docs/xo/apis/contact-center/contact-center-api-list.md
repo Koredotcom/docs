@@ -24,7 +24,6 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 * [Call Recording APIs](#call-recording-apis)
 * [Voicemail Recording API](#voicemail-recording-api)
 * [Outbound Calling API](#outbound-calling-api)
-* [Case Management APIs](#case-management-apis)
 
 ## Contact Center AI (CCAI) APIs
 
@@ -205,14 +204,3 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | API                                                                                               | DESCRIPTION                                                                                                 | ASSOCIATED APP SCOPE |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------|
 | [Outbound Calling (VG)](./outbound-calling-vg.md)                                               | To trigger an outbound call and receive call status notifications.                                           | SmartAssist Dialout  |
-
-## Case Management APIs
-
-| API                                                                                               | DESCRIPTION                                                                                                  | ASSOCIATED APP SCOPE |
-|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
-| [Create Case](../contact-center/case-management-apis/create-a-case.md)                                                               | Allows you to create a new case in the case management system.                                                                    | Configuration        |
-| [Get Cases](../contact-center/case-management-apis/get-cases.md)                                                   | Retrieves case data from the case management system with filtering, sorting, and pagination options.                | Configuration        |
-| [Update Case](../contact-center/case-management-apis/update-a-case.md)                                                               | Allows you to update an existing case in the case management system.                                                                    | Configuration        |
-| [Create Task](../contact-center/case-management-apis/create-a-task.md)                                                   | Allows you to create a new task within the case management system.                | Configuration        |
-| [Get Tasks](../contact-center/case-management-apis/get-tasks.md)                                                               | Retrieves task data from the case management system with required filters for status, priority, assignment, channels, and date ranges.                                                                   | Configuration        |
-| [Update Task](../contact-center/case-management-apis/update-a-task.md)                                                   | Allows you to update an existing case in the case management system.                 | Configuration        |
