@@ -6,8 +6,7 @@ This API controls transcription and call recording sessions for Agent AI SIP-REC
 |-------------------|-----------|
 | Endpoint      | `https://{{host}}/api/1.1/public/bot/{botid}/control/transcriptionv2?conversationId={conversationId}` |
 | Content Type  | `application/json` |
-| Authorization | `auth: {{JWT}}`  
-See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
+| Authorization | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
 | API Scope     | Agent AI Transcription and Call Recording<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes) |
 
 ## Path Parameters
