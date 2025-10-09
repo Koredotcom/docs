@@ -2,40 +2,12 @@
 
 This API controls transcription and call recording sessions for Agent AI SIP-REC calls on third-party agent desktops during user-agent interactions. It lets you start, pause, resume, end/stop transcription and call recordings for a specific conversation by sending the appropriate action.
 
-<table>
-  <tr>
-   <td><strong>Method</strong>
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Endpoint</strong>
-   </td>
-   <td><code>https://{{host}}/api/1.1/public/bot/{botid}/control/transcriptionv2?conversationId={conversationId}</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Content Type</strong>
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Authorization</strong>
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>API Scope</strong>
-   </td>
-   <td>Agent AI Transcription and Call Recording
-   </td>
-  </tr>
-</table>
+| Method        | POST |
+|-------------------|-----------|
+| Endpoint      | `https://{{host}}/api/1.1/public/bot/{botid}/control/transcriptionv2?conversationId={conversationId}` |
+| Content Type  | `application/json` |
+| Authorization | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
+| API Scope     | Agent AI Transcription and Call Recording<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes) |
 
 ## Path Parameters
 

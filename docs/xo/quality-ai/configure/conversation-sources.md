@@ -51,7 +51,7 @@ This source supports human-agent interactions augmented by AI augmentation capab
 
 ### Quality AI Express
 
-This source lets you import interactions or data (such as service records, chat logs, and emails) from external file storage through [Connectors](https://docs.kore.ai/xo/searchai/content-sources/connectors/amazons3/), bypassing CCAI as the ingestion path into the quality AI system.
+This source lets you import interactions or data (such as service records, chat logs, and emails) from external file storage through [Connectors](../../searchai/content-sources/connectors/amazons3.md), bypassing CCAI as the ingestion path into the quality AI system.
 
 File-based conversation ingestion system designed for third-party contact center platforms.
 

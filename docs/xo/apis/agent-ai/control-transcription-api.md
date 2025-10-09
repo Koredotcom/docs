@@ -7,8 +7,8 @@ This API is used to control the transcription session of an AI Agent conversatio
 | **Method**        | POST |
 | **Endpoint**      | `https://{{host}}/api/1.1/public/bot/{{botid}}/control/transcription?conversationId={{conversationId}}` |
 | **Content Type**  | `application/json` |
-| **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
-| **API Scope**     | AgentAssist Transcription |
+| **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token){:target="_blank"}. |
+| **API Scope**     | AgentAssist Transcription<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
 
 ## Path Parameters
 

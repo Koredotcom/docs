@@ -2,104 +2,38 @@
 
 The API enables you to retrieve case data from the case management system with filtering, sorting, and pagination options.
 
-<table>
-  <tr>
-   <td><strong>METHOD</strong>
-   </td>
-   <td><strong>POST</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code><a href="https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/getCases">https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/getCases</a></code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Case Management Configuration.
-   </td>
-  </tr>
-</table>
+| **METHOD**        | **POST**                                                                                                                                                   |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Endpoint**      | [`https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/getCases`](https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/getCases) |
+| **Content Type**  | `application/json`                                                                                                                                         |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).              |
+| **API Scope**     | Case Management Configuration.                                                                                                                             |
 
-## Path Parameters
+## Path parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL. For example, <a href="https://platform.kore.ai/">https://platform.kore.ai/</a>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>streamId
-   </td>
-   <td>Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, 
-st-084d3c5e-376a-559f-9987-a012bb2bxxxx
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                                                                                                                          | **TYPE**         |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| `host`        | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/)                                                                     | string, required |
+| `streamId`    | Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, `st-084d3c5e-376a-559f-9987-a012bb2bxxxx` | string, required |
 
-## Header Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>accountId
-   </td>
-   <td>The account identifier associated with the API request. For example, 
-6639f7bd58c97ffac03bxxxx
- </a>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+## Header parameters
 
-## Sample Request
+| **PARAMETER** | **DESCRIPTION**                                                                                 | **TYPE**         |
+| ------------- | ----------------------------------------------------------------------------------------------- | ---------------- |
+| `accountId`   | The account identifier associated with the API request. For example, `6639f7bd58c97ffac03bxxxx` | string, required |
+
+
+**Sample request**
 
 ```
 curl --location --request POST 'https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/getCases' \
 --header 'sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"' \
---header 'AccountId: {{accountId}}’ \
+--header 'AccountId: {{accountId}}' \
 --header 'client-app: unified' \
 --header 'X-Timezone-Offset: -330' \
 --header 'sec-ch-ua-mobile: ?0' \
---header 'auth: {{jwt-code}}’ \
+--header 'auth: {{jwt-code}}' \
 --header 'state: configured' \
 --header 'Iid: st-d140086f-4d0a-59fa-9d28-b5fc23e9xxxx' \
 --header 'Content-Type: application/json;charset=UTF-8' \
@@ -112,121 +46,27 @@ curl --location --request POST 'https://{{host}}/caseManagement/api/public/analy
 --data '{
     "name": "Testing"
 }'
-
 ```
 
-## Request Body Parameters
+## Request body parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>searchText
-   </td>
-   <td>Search text to filter cases by their name or title
- </a>
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>unresolved
-   </td>
-   <td>Retrieves the cases that are still unresolved 
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>unassigned
-   </td>
-   <td>Retrieves the cases that are still unassigned
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>mycase
-   </td>
-   <td>Indicates whether the current case is assigned to the current user
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>priority
-   </td>
-   <td> List of priorities to filter the cases; for example, high, medium
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-  <tr>
-   <td>status
-   </td>
-   <td>List of case statuses to filter by; for example, new, open
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-  <tr>
-   <td>channel
-   </td>
-   <td>List of communication channels to filter by; for example, email, chat
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-  <tr>
-   <td>queues
-   </td>
-   <td>List of queues to filter cases by; for instance, SupportQueue1
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-  <tr>
-   <td>startDate
-   </td>
-   <td>Start date of the case (ISO 8601 format)
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>endDate
-   </td>
-   <td>End date of the case (ISO 8601 format)
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>sortBy
-   </td>
-   <td>Field to sort by; for example, createdDate
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>dueDate
-   </td>
-   <td>Filter by exact dueDate (ISO 8601 format)
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                                        | **TYPE**          |
+| ------------- | ---------------------------------------------------------------------- | ----------------- |
+| `searchText`  | Search text to filter cases by their name or title.                    | string, optional  |
+| `unresolved`  | Retrieves the cases that are still unresolved.                         | boolean, optional |
+| `unassigned`  | Retrieves the cases that are still unassigned.                         | boolean, optional |
+| `mycase`      | Indicates whether the current case is assigned to the current user.    | boolean, optional |
+| `priority`    | List of priorities to filter the cases; for example, high, medium.     | array, optional   |
+| `status`      | List of case statuses to filter by; for example, new, open.            | array, optional   |
+| `channel`     | List of communication channels to filter by; for example, email, chat. | array, optional   |
+| `queues`      | List of queues to filter cases by; for instance, SupportQueue1.        | array, optional   |
+| `startDate`   | Start date of the case (ISO 8601 format).                              | string, optional  |
+| `endDate`     | End date of the case (ISO 8601 format).                                | string, optional  |
+| `sortBy`      | Field to sort by; for example, createdDate.                            | string, optional  |
+| `dueDate`     | Filter by exact dueDate (ISO 8601 format).                             | string, optional  |
 
-## Sample Response 	
 
+**Response sample**
 
 ```
 {

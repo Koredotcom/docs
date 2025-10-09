@@ -2,95 +2,31 @@
 
 This API allows you to create a new task within the case management system.
 
-<table>
-  <tr>
-   <td><strong>METHOD</strong>
-   </td>
-   <td><strong>POST</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code><a href="https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createTask">https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createTask</a></code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Case Management Configuration.
-   </td>
-  </tr>
-</table>
+| **METHOD**        | **POST**                                                                                                                                                       |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Endpoint**      | [`https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createTask`](https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createTask) |
+| **Content Type**  | `application/json`                                                                                                                                             |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                    |
+| **API Scope**     | Case Management Configuration.                                                                                                                                 |
 
-## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL. For example, <a href="https://platform.kore.ai/">https://platform.kore.ai/</a>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>streamId
-   </td>
-   <td>Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, 
-st-084d3c5e-376a-559f-9987-a012bb2bxxxx
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
 
-## Header Parameters
+## Path parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>accountId
-   </td>
-   <td>The account identifier associated with the API request. For example, 
-6639f7bd58c97ffac03bxxxx
- </a>
-   </td>
-   <td>string, not required
-   </td>
-  </tr>
-</table>
+| **Parameter** | **Description**                                                                                                                                          | **Type**         |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| `host`        | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/)                                                                     | string, required |
+| `streamId`    | Bot identifier or Stream identifier. You can access it from the General Settings page of the bot. For example, `st-084d3c5e-376a-559f-9987-a012bb2bxxxx` | string, required |
 
-## Sample Request
+
+## Header parameters
+
+| **Parameter** | **Description**                                                                                 | **Type**             |
+| ------------- | ----------------------------------------------------------------------------------------------- | -------------------- |
+| `accountId`   | The account identifier associated with the API request. For example, `6639f7bd58c97ffac03bxxxx` | string, not required |
+
+
+**Request sample**
 
 ```
 curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createTask' \
@@ -111,123 +47,36 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
 --header 'sec-ch-ua-platform: "Linux"' \
 --data-raw '{
     "caseId": "ci-31d9184-d64d-42d9-8c75-5edba531xxxx",
-    "caseRefId":"CS000131",
-    "taskTmp":"ttm-16623a9-c63c-4bda-b1e4-14754939xxxx",
+    "caseRefId": "CS000131",
+    "taskTmp": "ttm-16623a9-c63c-4bda-b1e4-14754939xxxx",
     "name": "This is demo task",
     "userInfo": {
         "_id": "u-fd371c0a-3168-5a02-83dd-f4ba5597xxxx",
         "name": "dummy",
-        "emailId":"dummy@mailinator.com"
+        "emailId": "dummy@mailinator.com"
     },
     "source": "rtm"
 }'
 ```
 
-## Request Body Parameters
+## Request body parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>caseId
-   </td>
-   <td>Unique case identifier
- </a>
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>caseRefId
-   </td>
-   <td>Case reference identifier
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>taskTmp
-   </td>
-   <td>Unique task template identifier
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>userInfo
-   </td>
-   <td>User information object
-   </td>
-   <td>object, required
-   </td>
-  </tr>
-  <tr>
-   <td>_id
-   </td>
-   <td> Unique user identifier. If you do not include user identifier `_id`, you must provide either `emailId` or `phoneNumber`
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>name
-   </td>
-   <td>User's name
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>emailId
-   </td>
-   <td>User's email address (Mandatory if `_id` is not entered)
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>phoneNumber
-   </td>
-   <td>User's phone number (Mandatory if `
-   _id` is not entered)
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>source
-   </td>
-   <td>Source of the case (for example, `rtm`)
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>desc
-   </td>
-   <td>Task description
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>name
-   </td>
-   <td>Task name
-   </td>
-   <td>string, conditional
-   </td>
-  </tr>
-</table>
+| **Parameter** | **Description**                                                                                          | **Type**            |
+| ------------- | -------------------------------------------------------------------------------------------------------- | ------------------- |
+| `caseId`      | Unique case identifier                                                                                   | string, required    |
+| `caseRefId`   | Case reference identifier                                                                                | string, required    |
+| `taskTmp`     | Unique task template identifier                                                                          | string, required    |
+| `userInfo`    | User information object                                                                                  | object, required    |
+| `_id`         | Unique user identifier. If you do not include `_id`, you must provide either `emailId` or `phoneNumber`. | string, optional    |
+| `name`        | User's name                                                                                              | string, required    |
+| `emailId`     | User's email address (mandatory if `_id` is not entered)                                                 | string, optional    |
+| `phoneNumber` | User's phone number (mandatory if `_id` is not entered)                                                  | string, optional    |
+| `source`      | Source of the case (for example, `rtm`)                                                                  | string, required    |
+| `desc`        | Task description                                                                                         | string, required    |
+| `name`        | Task name                                                                                                | string, conditional |
 
-## Sample Response 	
 
+**Response sample**
 
 ```
 {
