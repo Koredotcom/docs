@@ -36,21 +36,21 @@ You can use this capability in two ways:
 * Through API calls: Add the response_format parameter to the model endpoint when calling the deployed model externally.
 * Within the Tool builder canvas: Define the schema directly in the builder. The platform automatically attaches it as the response_format parameter for structured output.
 
-This capability is supported on v2/chat/completions endpoints for selected open-source models. Older endpoints (v1/completions) do not support structured output. Supported schema data types include: string, number, boolean, integer, object, array, enum, anyOf.
+This capability is supported on v2/chat/completions endpoints for selected open-source models. Older endpoints (v1/completions) do not support structured output. For the list of models that support structured output, see [Supported Models for Structured Output](../supported-models.md#supported-models-for-structured-output).
+
+Supported schema data types include: string, number, boolean, integer, object, array, enum, and anyOf.
 
 **How it works**:
 
 * Add a `response_format` field to your request body.
-* If provided, the model attempts to return a response matching the defined schema.
+* If provided, the model attempts to return a response in JSON object matching the defined schema.
 * If not provided, the model responds with standard text output.
 
-When structured output is enabled, the model returns responses in a JSON object that follows the defined schema. For more details, see the [Structured Output Example](../open-source-models/structured-output-example.md).
+For an example of how a model returns data in a structured schema, see [Structured Output Example](../open-source-models/structured-output-example.md).
 
 !!! note
 
     If a model supports both tool calls and JSON Schema, tool calls take precedence, and the schema will be ignored.
-
-For the list of models that support structured output, see [Supported Models for Structured Output](../supported-models.md#supported-models-for-structured-output).
 
 
 ## Deployment History

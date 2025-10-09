@@ -1,6 +1,8 @@
-### Structured Output Example
+# Structured Output Example
 
-**Enterprise Feedback Summarization**
+**Example Scenario: Enterprise Feedback Summarization**
+
+The example below demonstrates how a model can return structured JSON output when a schema is defined using the response_format parameter.
 
 **Example Request:**
 
@@ -33,3 +35,4 @@
   "summary": "Customer reported frequent login failures after the latest update.",
   "action_recommended": "Escalate to Engineering for investigation."
 }
+```
