@@ -8,8 +8,7 @@ Administrators can configure Single Sign-On (SSO) authentication for **AI for Wo
 * Security Assertion Markup Language (SAML)
 * WS-Federation sign-on protocol.
 
-Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing the **AI for Work**. Turn on the toggle **Enable SSO** to enable Single Sign-On.  
-<img src="../images/sso.png" alt="sso" title="sso" style="border: 1px solid gray; zoom:80%;">
+Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing the **AI for Work**. Turn on the toggle **Enable SSO** to enable Single Sign-On.
 
 ## Configure Sign-on Protocol
 
@@ -26,7 +25,7 @@ Refer to the below steps to configure SSO using the Open ID Connect protocol.
     3. Private key
 5. Click **Save**.
 6. The *Identity Provider information successfully updated* message is displayed at the top of the page.  
-<img src="../images/success-message.png" alt="success-message" title="success-message" style="border: 1px solid gray; zoom:80%;">
+
 
 ### WS-Federation
 
@@ -42,7 +41,7 @@ Refer to the below steps to configure SSO using the WS-Federation protocol.
         * **AD Sign-On endpoint URL** – The URL that **AI for Work** must use for sign-on and sign-off/out requests using your WS-Federation identity provider.
         * **AD Federation metadata Document URL** – The URL for the WS-Federation metadata document used for authentication with Active Directory.
 4. Click **Save**.  
-<img src="../images/ws-federation.png" alt="ws-federation" title="ws-federation" style="border: 1px solid gray; zoom:80%;">
+
 
 ### SAML
 
