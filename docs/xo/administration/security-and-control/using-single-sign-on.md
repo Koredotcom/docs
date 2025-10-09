@@ -2,7 +2,7 @@
 
 On the Kore.ai **Single Sign-On** page, in the **Security & Control** module of the Bots Admin Console, you can configure Single Sign-On (SSO) authentication for your Kore.ai managed users using the following:
 
-* OpenID Connect
+* OpenID Connect (OIDC)
 * Security Assertion Markup Language (SAML)
 * WS-Federation sign-on protocol.
 
@@ -35,7 +35,7 @@ When you disable SSO or when the SSO authentication validity period expires, use
 <img src="../images/using-single-sign-on-img3.png" alt="Single Sign-on - Disable SSO" title="Single Sign-on - Disable SSO" style="border: 1px solid gray;zoom:70%;"/>
 
 
-## OpenID Connect
+## OpenID Connect (OIDC)
 
 Complete the steps in the following procedure to configure SSO using Open ID Connect protocol in the **Security & Control** module of the Bots Admin Console. Kore.ai also supports WS-Federation and SAML Connect protocols.
 
@@ -143,7 +143,7 @@ The token information on the client varies depending upon the SSO provider and t
 
 ### Configuring SSO using SAML
 
-Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Kore.ai Admin Console. Kore.ai also supports WS-Federation and OpenID Connect protocols.
+Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Kore.ai Admin Console. Kore.ai also supports WS-Federation and OpenID Connect (OIDC) protocols.
 
 
 ### OKTA Configuration
