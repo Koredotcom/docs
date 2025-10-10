@@ -228,7 +228,7 @@ For example, a user may have started the conversation with the app using an anon
  "iat": 1611810186883,
  "exp": 1611813786.883,
  "aud": "https://idproxy.kore.com/authorize",
- "iss": "cs-d3042d3e-7da4-55da-a94d-783349270cc0",
+ "iss": "cs-d3042d3e-7da4-55da-a94d-78334927xxxx",
  "sub": "john.doe@example.com ",
  "isAnonymous": "false",
  "identityToMerge": "john.doe@example.com"
