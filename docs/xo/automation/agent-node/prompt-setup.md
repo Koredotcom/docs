@@ -750,7 +750,7 @@ Defines the standardized format required by the Platform to process LLM response
     <td>Custom Tools Format</td>
     <td>
       <pre>{
-  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2isho",
+  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2xxxx",
   "toolName": "get_delivery_date",
   "args": {
     "order_id": "123456"
@@ -762,7 +762,7 @@ Defines the standardized format required by the Platform to process LLM response
     <td>Default - End Orchestration Tool</td>
     <td>
       <pre>{
-  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2iswe",
+  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2xxxxe",
   "toolName": "end_orchestration",
   "args": {
     "conv_status": "Conversation status to be 'ended'."
@@ -812,8 +812,8 @@ return JSON.stringify(scriptResponse);</pre>
         "toolCallId": "call_nsadN6SYIyCpaPLE7QPo4WoI",
         "toolName": "collect_entities",
         "args": {
-          "name": "Deeksha",
-          "phone number": "9176858150"
+          "name": "John",
+          "phone number": "9xxxxxxxxx"
         }
       }
     ]
@@ -825,14 +825,14 @@ return JSON.stringify(scriptResponse);</pre>
         "type": "tool-result",
         "toolCallId": "call_nsadN6SYIyCpaPLE7QPo4WoI",
         "toolName": "collect_entities",
-        "result": "{\"PatientName\":\"Deeksha\", \"phonenumber\":\"9176858150\"}",
+        "result": "{\"PatientName\":\"John\", \"phonenumber\":\"9xxxxxxxxx\"}",
         "status": "Success"
       }
     ]
   },
   {
     "role": "assistant",
-    "content": "I have successfully collected the following information:\n\n- Patient Name: Deeksha\n- Patient Phone Number: 1234567\n- Doctor Name: Dr. Emily\n\nNow, could you please provide me with your preferred date and time for the appointment?"
+    "content": "I have successfully collected the following information:\n\n- Patient Name: John\n- Patient Phone Number: 9xxxxxxxxx\n- Doctor Name: Dr. Emily\n\nNow, could you please provide me with your preferred date and time for the appointment?"
   }
 ]</pre>
     </td>

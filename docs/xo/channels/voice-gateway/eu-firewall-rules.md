@@ -15,11 +15,9 @@
 
 ## Media Twilio Gateway
 
-### Secure Media (ICE/STUN/SRTP) Edge Locations
-
-| Component       | Protocol | Source IP | Source Port † | Destination IP Ranges | Destination Port Range |
+| Secure Media (ICE/STUN/SRTP) Edge Locations       | Protocol | Source IP | Source Port † | Destination IP Ranges | Destination Port Range |
 |-----------------|----------|-----------|----------------|------------------------|-------------------------|
-| Stun server     | UDP      | ANY       | ANY            | 168.86.128.0/18       | 10000-65535            |
+| ↳ Stun server     | UDP      | ANY       | ANY            | 168.86.128.0/18       | 10000-65535            |
 
 ## FQDN
 
@@ -30,17 +28,19 @@
 
 ## Twilio STUN
 
-| Protocol         | Source IP | Source Port † | Destination IP Ranges               | Destination Port Range |
-|-------------------|-----------|----------------|--------------------------------------|-------------------------|
-| TCP (TURN TLS)   | ANY       | ANY            | 18.156.18.128 - 18.156.18.255       | 443/5349               |
-| TCP (TURN TLS)   | ANY       | ANY            | 18.195.48.224 - 18.195.48.255       | 443/5349               |
-| TCP (TURN TLS)   | ANY       | ANY            | 52.59.186.0 - 52.59.186.31          | 443/5349               |
-| TCP (TURN TLS)   | ANY       | ANY            | 3.249.63.128 - 3.249.63.255         | 443/5349               |
-| TCP (TURN TLS)   | ANY       | ANY            | 54.171.127.192 - 54.171.127.255     | 443/5349               |
-| TCP (TURN TLS)   | ANY       | ANY            | 52.215.127.0 - 52.215.127.255       | 443/5349               |
-| TCP (TURN TLS)   | ANY       | ANY            | 52.215.253.0 - 52.215.253.63        | 443/5349               |
-| TCP (TURN TLS)   | ANY       | ANY            | 18.156.18.128 - 18.156.18.255       | 3478                   |
-| TCP (TURN TLS)   | ANY       | ANY            | 18.195.48.224 - 18.195.48.255       | 3478                   |
-| TCP (TURN TLS)   | ANY       | ANY            | 52.59.186.0 - 52.59.186.31          | 3478                   |
-| TCP (TURN TLS)   | ANY       | ANY            | 3.249.63.128 - 3.249.63.255         | 3478                   |
-| TCP (TURN TLS)   | ANY       | ANY            | 54.171.127.
+| Protocol        | Source IP | Source Port † | Destination IP Ranges           | Destination Port Range |
+|-----------------|------------|---------------|----------------------------------|------------------------|
+| TCP (TURN TLS)  | ANY        | ANY           | 18.156.18.128 – 18.156.18.255    | 443/5349              |
+| TCP (TURN TLS)  | ANY        | ANY           | 18.195.48.224 – 18.195.48.255    | 443/5349              |
+| TCP (TURN TLS)  | ANY        | ANY           | 52.59.186.0 – 52.59.186.31       | 443/5349              |
+| TCP (TURN TLS)  | ANY        | ANY           | 3.249.63.128 – 3.249.63.255      | 443/5349              |
+| TCP (TURN TLS)  | ANY        | ANY           | 54.171.127.192 – 54.171.127.255  | 443/5349              |
+| TCP (TURN TLS)  | ANY        | ANY           | 52.215.127.0 – 52.215.127.255    | 443/5349              |
+| TCP (TURN TLS)  | ANY        | ANY           | 52.215.253.0 – 52.215.253.63     | 443/5349              |
+| TCP (TURN TLS)  | ANY        | ANY           | 18.156.18.128 – 18.156.18.255    | 3478                  |
+| TCP (TURN TLS)  | ANY        | ANY           | 18.195.48.224 – 18.195.48.255    | 3478                  |
+| TCP (TURN TLS)  | ANY        | ANY           | 52.59.186.0 – 52.59.186.31       | 3478                  |
+| TCP (TURN TLS)  | ANY        | ANY           | 3.249.63.128 – 3.249.63.255      | 3478                  |
+| TCP (TURN TLS)  | ANY        | ANY           | 54.171.127.192 – 54.171.127.255  | 3478                  |
+| TCP (TURN TLS)  | ANY        | ANY           | 52.215.127.0 – 52.215.127.255    | 3478                  |
+| TCP (TURN TLS)  | ANY        | ANY           | 52.215.253.0 – 52.215.253.63     | 3478                  |

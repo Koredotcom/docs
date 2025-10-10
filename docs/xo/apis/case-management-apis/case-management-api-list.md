@@ -2,7 +2,7 @@
 
 The following tables list the APIs available for Case Management, grouped by the functionality they address:
 
-# Case Management APIs
+## Case Management APIs
 
 | API                                                                                               | DESCRIPTION                                                                                                  | ASSOCIATED APP SCOPE |
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
