@@ -2,6 +2,8 @@
 
 SSO enables easy access to **AI for Work** using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing AI for Work, the system can automatically use the same login credentials.
 
+<img src="../images/sso.png" alt="sso" title="sso" style="border: 1px solid gray; zoom:80%;">
+
 Administrators can configure Single Sign-On (SSO) authentication for **AI for Work** using one of the following sign-on protocols or methods:
 
 * OpenID Connect (OIDC)
@@ -26,6 +28,7 @@ Refer to the below steps to configure SSO using the OIDC protocol.
 5. Click **Save**.
 6. The *Identity Provider information successfully updated* message is displayed at the top of the page.  
 
+<img src="../images/open-id-connect.png" alt="open-id-connect" title="open-id-connect" style="border: 1px solid gray; zoom:80%;">
 
 ### WS-Federation
 
@@ -42,12 +45,16 @@ Refer to the below steps to configure SSO using the WS-Federation protocol.
         * **AD Federation metadata Document URL** – The URL for the WS-Federation metadata document used for authentication with Active Directory.
 4. Click **Save**.  
 
+<img src="../images/wf-ad.png" alt="wf-ad" title="wf-ad" style="border: 1px solid gray; zoom:80%;">
+
 
 ### SAML
 
 Security Assertion Markup Language (SAML) is a standard protocol for web browser Single Sign-On (SSO) using secure tokens. SAML eliminates passwords and uses standard cryptography and digital signatures to pass secure sign-in tokens from an identity provider to a SaaS application.
 
 SAML provides a solution to allow your identity provider and service provider to exist separately. When a user logs into a SAML-enabled application, the service provider requests authorization from the appropriate identity provider. The identity provider authenticates the user's credentials and then returns the authorization for the user to the service provider, allowing the user to access the application.
+
+<img src="../images/saml.png" alt="saml" title="saml" style="border: 1px solid gray; zoom:80%;">
 
 
 ### Getting Started
