@@ -10,7 +10,7 @@ To execute and get results for managing an account’s SSO configurations with t
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The APIs support SAML, WSFED, and OpenID Connect (OIDC) protocols.  </p>
+<p>The APIs support SAML, WSFED, and OIDC protocols.  </p>
 </div>
 
 ## Fetch the SSO Meta API
