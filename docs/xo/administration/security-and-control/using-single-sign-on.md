@@ -2,7 +2,7 @@
 
 On the Kore.ai **Single Sign-On** page, in the **Security & Control** module of the Bots Admin Console, you can configure Single Sign-On (SSO) authentication for your Kore.ai managed users using the following:
 
-* OpenID Connect (OIDC)
+* OpenID Connect (OIDC)   
 * Security Assertion Markup Language (SAML)
 * WS-Federation sign-on protocol.
 
