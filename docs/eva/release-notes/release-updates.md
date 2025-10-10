@@ -61,9 +61,9 @@ This update includes new features and feature enhancements summarized below.
 
 **Channels – Microsoft Teams and Copilot Integration**
 
-AI for Work integrates natively with Microsoft Teams through the Azure Bot Service architecture, enabling users to access AI assistance directly within MS Teams. The integration supports both Multi-Tenant and Single-Tenant authentication models with proactive notification capabilities through dedicated app registration.
+AI for Work integrates natively with Microsoft Teams through the Azure Bot Service architecture, enabling users to access AI assistance directly within Microsoft Teams. The integration supports both Multi-Tenant and Single-Tenant authentication models with proactive notification capabilities through dedicated app registration.
 
-The system generates custom MS Teams app manifests with organizational branding options (custom name, logo, description) and supports multiple deployment strategies, including organization-wide rollout, selective user groups, or self-service installation.
+The system generates custom Microsoft Teams app manifests with organizational branding options (custom name, logo, description) and supports multiple deployment strategies, including organization-wide rollout, selective user groups, or self-service installation.
 
 [Learn more :octicons-arrow-right-24:](../channels/ms-teams/microsoft-teams.md)
 
