@@ -4,7 +4,7 @@ SSO enables easy access to **AI for Work** using your existing identity provider
 
 Administrators can configure Single Sign-On (SSO) authentication for **AI for Work** using one of the following sign-on protocols or methods:
 
-* OpenID Connect
+* OpenID Connect (OIDC)
 * Security Assertion Markup Language (SAML)
 * WS-Federation sign-on protocol.
 
@@ -12,12 +12,12 @@ Depending on the security required for your company, you can enable or disable S
 
 ## Configure Sign-on Protocol
 
-### Open ID Connect
+### OpenID Connect (OIDC)
 
-Refer to the below steps to configure SSO using the Open ID Connect protocol.
+Refer to the below steps to configure SSO using the OIDC protocol.
 
 1. Go to **Admin Console > Security > Single Sign-On** and turn on the toggle **Enable SSO**.
-2. In the **Select a suitable Sign-On Protocol** section, select **Open ID connect**.
+2. In the **Select a suitable Sign-On Protocol** section, select **OpenID Connect**.
 3. In the **Configure** section, select an identity provider, for example, **Sign in with Google**.
 4. Optionally, turn on the toggle to **Configure service account for your G-Suite domain** and then define the settings:
     1. Client Email
