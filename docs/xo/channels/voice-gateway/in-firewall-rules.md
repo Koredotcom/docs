@@ -15,11 +15,9 @@
 
 ## Media Twilio Gateway
 
-### Secure Media (ICE/STUN/SRTP) Edge Locations
-
-| Component    | Protocol | Source IP | Source Port † | Destination IP Ranges | Destination Port Range |
+| Secure Media (ICE/STUN/SRTP) Edge Locations    | Protocol | Source IP | Source Port † | Destination IP Ranges | Destination Port Range |
 |--------------|----------|-----------|----------------|------------------------|-------------------------|
-| Stun server  | UDP      | ANY       | ANY            | 168.86.128.0/18       | 10000-65535            |
+| ↳ Stun server  | UDP      | ANY       | ANY            | 168.86.128.0/18       | 10000-65535            |
 
 ## FQDN
 
