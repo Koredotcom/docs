@@ -38,7 +38,7 @@ Administrators can now configure separate timers for customer interruptions: one
 
 **Application-Level System Settings for Call Recording and Other Agent Controls**
 
-Key settings, including Call Recording Control and Answer Call on First AI Agent Response, are now moved to System Settings, enabling cross-product access for customers. LLM Streaming flag removed from Agent Settings. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/system-settings.md)
+Key settings, including Call Recording Control and Answer Call on First AI Agent Response, are now moved to System Settings, enabling cross-product access for customers. LLM Streaming flag removed from Advanced Settings. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/system-settings.md)
 
 **SLA Configuration UI Revamp**
 

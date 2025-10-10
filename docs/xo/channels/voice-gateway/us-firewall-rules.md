@@ -33,7 +33,7 @@
 
 | Secure Media (ICE/STUN/SRTP) Edge Locations | Protocol | Source IP | Source Port † | Destination IP Ranges | Destination Port Range |
 |-----------------------------------------------|----------|-----------|----------------|------------------------|------------------------|
-| Media                                         | UDP      | ANY       | ANY            | 168.86.128.0/18       | 6000-65535            |
+| Media                                         | UDP      | ANY       | ANY            | 168.86.128.0/18       | 10000-65535            |
 
 ## Twilio STUN
 
