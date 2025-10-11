@@ -1704,7 +1704,9 @@ To add a connection and configure an integration, follow the steps below:
 </div>
 
 1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} **Integrations**.
-2. **Case 1**: For a first-time connection, follow these steps:
+2. The next steps depend on whether you are setting up a connection for the first time or want to use an existing connection.
+    **Case 1**: For a first-time connection, follow these steps:
+    
     * (Optional) In the **All Integrations** tab, select the **Category** and **Authorization** from the respective lists to filter the integration options.
     * Click the required integration from the [available options](./about-integrations.md#supported-integrations){:target="_blank"}.
 
@@ -1833,10 +1835,10 @@ To edit the configuration for a connection, follow the steps below:
 3. In the configuration window, modify the required fields in the **Authorization Details** section.
 4. (Optional) Click **Test** to validate the connection.
 5. Click **Save**.
+     
      <img src="../images/save-edited-integration.png" alt="save edited integration" title="save edited integration" style="border: 1px solid gray; zoom:75%;">
 
 A success message is displayed once the connection is updated.
-<img src="../images/edit-success-msg.png" alt="edit success message" title="edit success message" style="border: 1px solid gray; zoom:75%;">
 
 ### Delete Integration
 
