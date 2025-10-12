@@ -1,5 +1,7 @@
 # Control Transcription API
 
+--8<-- "includes/agentai-api-note.md"
+
 This API is used to control the transcription session of an AI Agent conversation. It lets you end an ongoing transcription session by sending the appropriate action.
 
 | **Field**         | **Value** |

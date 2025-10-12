@@ -1,8 +1,6 @@
-<!-----
-
------>
-
 # Raw Data API v2
+
+--8<-- "includes/agentai-api-note.md"
 
 This updated version of the Raw Data API offers the following additional conversation data for deeper insights into AgentAssist interactions and conversation flows:
 

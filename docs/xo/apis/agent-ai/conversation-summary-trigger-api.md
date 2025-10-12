@@ -1,5 +1,7 @@
 # Conversation Summary Trigger API
 
+--8<-- "includes/agentai-api-note.md"
+
 This API triggers a conversation summary event in the Agent AI system. It is used to send event data related to a conversation to the specified AI Agent.
 
 | **Method**       | POST                                                                 |
