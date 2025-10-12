@@ -1,5 +1,7 @@
 # Raw Data API
 
+--8<-- "includes/qualityai-api-note.md"
+
 This API provides detailed Quality AI and Conversation Intelligence related data at an interaction level, including interaction quality metrics and interaction analytics attributes.
 
 | **METHOD**     | **POST**                                                                                                                                       |

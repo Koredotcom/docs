@@ -1,5 +1,7 @@
 # Auto QA Reporting API
 
+--8<-- "includes/qualityai-api-note.md"
+
 This API provides reporting interaction level Auto QA scoring and qualification of metrics relevant to the interaction based on the form associated with the QA. 
 
 | **METHOD**       | **POST** |
