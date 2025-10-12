@@ -1,5 +1,7 @@
 # Channel Enablement API
 
+--8<-- "includes/automationai-api-note.md"
+
 To initiate enable a channel for an AI Agent.
 
 <table>

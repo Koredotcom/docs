@@ -1,5 +1,7 @@
 # Bot Import Status API
 
+--8<-- "includes/automationai-api-note.md"
+
 To get the status of the bot import request initiated using the **Import Bot** API for a new bot or an existing bot.
 
 !!!note

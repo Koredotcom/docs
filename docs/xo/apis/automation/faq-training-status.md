@@ -1,5 +1,7 @@
 # FAQ Training Status API
 
+--8<-- "includes/automationai-api-note.md"
+
 To get the status of the FAQ training.
 
 

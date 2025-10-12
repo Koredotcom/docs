@@ -1,6 +1,8 @@
 
 # Delete Batch Test Suite Execution API
 
+--8<-- "includes/automationai-api-note.md"
+
 To delete a specific execution of a Batch Test Suite.
 
 

@@ -1,6 +1,8 @@
 
 # Import Batch Test Suite API
 
+--8<-- "includes/automationai-api-note.md"
+
 To import the test cases from a given Test Suite file.
 
 

@@ -1,5 +1,7 @@
 # Manage SDK Push Notifications APIs
 
+--8<-- "includes/automationai-api-note.md"
+
 For managing the SDK push notifications, the platform provides the following APIs:
 
 * [Device Subscription](../automation/manage-sdk-push-notifications.md/#device-subscription-api) API

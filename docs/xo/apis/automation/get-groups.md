@@ -1,5 +1,7 @@
 # Get Groups API
 
+--8<-- "includes/automationai-api-note.md"
+
 To get the list of groups and group members available in the account.
 
 

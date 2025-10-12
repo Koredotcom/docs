@@ -1,5 +1,7 @@
 # Proactive Notification Status API
 
+--8<-- "includes/automationai-api-note.md"
+
 To fetch the status of Proactive Notifications API.
 
 <table>

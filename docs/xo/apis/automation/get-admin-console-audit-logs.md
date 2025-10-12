@@ -1,5 +1,7 @@
 # Get Admin Console Audit Logs API
 
+--8<-- "includes/automationai-api-note.md"
+
 To retrieve the audit logs from the Admin Console.
 
 !!!note

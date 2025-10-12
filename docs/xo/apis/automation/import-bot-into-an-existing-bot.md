@@ -1,5 +1,7 @@
 # Import Bot into an Existing Bot API
 
+--8<-- "includes/automationai-api-note.md"
+
 To import the bot definition file to an existing bot for a current version upgrade or previous version restoration.
 
 You can import into a bot using either individual Definition, Config, Functions and Icon files, or you can directly use the zip file that is creating while performing bot export. In this case you will need to upload the zip file and use the File ID thus generated.

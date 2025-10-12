@@ -1,5 +1,7 @@
 # Get User Roles Details API
 
+--8<-- "includes/automationai-api-note.md"
+
 To get complete information of all the users and their associated roles in the account.
 
 

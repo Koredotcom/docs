@@ -1,5 +1,6 @@
-
 # Get User Information
+
+--8<-- "includes/automationai-api-note.md"
 
 To retrieve the user details.
 

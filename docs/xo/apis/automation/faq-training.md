@@ -1,5 +1,7 @@
 # FAQ Training API
 
+--8<-- "includes/automationai-api-note.md"
+
 To initiate the training of the knowledge graph.
 
 <table>

@@ -1,5 +1,7 @@
 # Find Intent API
 
+--8<-- "includes/automationai-api-note.md"
+
 To fetch the intent recognition result and the scores from NLP and ML engines.
 
 

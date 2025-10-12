@@ -1,5 +1,7 @@
 # Proactive Notifications API
 
+--8<-- "includes/automationai-api-note.md"
+
 Proactive Notifications allow enterprises to engage with their end users (customers or employees) by providing relevant and timely updates.
 
 Proactive notification includes:

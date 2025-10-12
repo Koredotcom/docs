@@ -1,5 +1,7 @@
 # Assign Bot Roles API
 
+--8<-- "includes/automationai-api-note.md"
+
 To assign a bot role to a set of users in a specific bot.
 
 !!!note

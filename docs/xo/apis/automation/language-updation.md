@@ -1,5 +1,7 @@
 # Language Updation API
 
+--8<-- "includes/automationai-api-note.md"
+
 To update for an existing language’s configuration for an AI Agent.
  
 <table>

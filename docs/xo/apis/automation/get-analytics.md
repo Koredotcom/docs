@@ -1,6 +1,8 @@
 
 # Get Analytics API
 
+--8<-- "includes/automationai-api-note.md"
+
 The Get Analytics API allows you to retrieve metrics data related to intent detection and task performance. The API provides information about various metrics, including Intents Found, Intents not Found, Unhandled Utterances, Failed Tasks, Successful Tasks, and Performance Logs.
 
 

@@ -1,5 +1,7 @@
 # Billing Usage Summary API
 
+--8<-- "includes/automationai-api-note.md"
+
 This API provides a summary of the billing usage specific to an account or bot for a given period.
 
 

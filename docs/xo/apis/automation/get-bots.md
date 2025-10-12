@@ -1,6 +1,6 @@
-
-
 # Get Bots API
+
+--8<-- "includes/automationai-api-note.md"
 
 To retrieve the list of the AI Agents available in an account.
 

@@ -1,5 +1,7 @@
 # Enable an Existing Language API
 
+--8<-- "includes/automationai-api-note.md"
+
 To enable an existing language for an AI Agent.
 
 

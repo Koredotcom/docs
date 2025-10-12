@@ -1,5 +1,7 @@
 # Delete Customer Data API
 
+--8<-- "includes/automationai-api-note.md"
+
 This API is Used to delete customer data.
 
 Delete User doesn't proceed if the requested user is:

@@ -1,5 +1,6 @@
-
 # Delete Customer Data Status API
+
+--8<-- "includes/automationai-api-note.md"
 
 Used to get the status of the [Delete Customer Data API](delete-customer-data.md) request.
 

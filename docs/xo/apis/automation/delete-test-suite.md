@@ -1,6 +1,8 @@
 
 # Delete a Test Suite API
 
+--8<-- "includes/automationai-api-note.md"
+
 To delete an existing conversation test suite.
 
 <table>

@@ -1,5 +1,7 @@
 # Billing Sessions API
 
+--8<-- "includes/automationai-api-note.md"
+
 This API retrieves the list of individual billing sessions created for an app so that you can review them for correctness and reconciliation.
 
 

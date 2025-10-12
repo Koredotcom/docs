@@ -1,6 +1,8 @@
 
 # Batch Test Execution Status API
 
+--8<-- "includes/automationai-api-note.md"
+
 To get the status of the Batch Test Execution request against a unique ‘Request Id’ and provide the download link for the results file after the test execution is complete. Please refer to the [Batch Test Execution API](batch-test-execution.md) to learn more.
 
 

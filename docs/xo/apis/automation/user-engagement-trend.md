@@ -1,5 +1,7 @@
 # User Engagement Trend API
 
+--8<-- "includes/automationai-api-note.md"
+
 To provide the number of users who have interacted with the bot in a given period across different time intervals.
 
 

@@ -1,5 +1,7 @@
 # Install a Sample Bot API
 
+--8<-- "includes/automationai-api-note.md"
+
 To install a sample bot.
 
 

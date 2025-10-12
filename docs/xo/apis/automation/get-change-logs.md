@@ -1,5 +1,7 @@
 # Get ChangeLogs API
 
+--8<-- "includes/automationai-api-note.md"
+
 To get the list of changes made to the bot definition for a given date period.
 
 

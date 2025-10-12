@@ -1,5 +1,7 @@
 # Export Roles API
 
+--8<-- "includes/automationai-api-note.md"
+
 To export bot or admin roles from an account. This is typically used to export roles from one environment to another.
 
 !!!note

@@ -1,5 +1,7 @@
 # Query Data (Table) API
 
+--8<-- "includes/automationai-api-note.md"
+
 Used to get data from Data Table.
 
 

@@ -1,5 +1,7 @@
 # Conversation Summary API
 
+--8<-- "includes/automationai-api-note.md"
+
 The API summarizes the conversation between a user and an agent. The agent can be a AI agent or a human agent. The API accepts the conversation Id or the transcripts as input and provides an auto-generated conversation summary.
 
 The API uses open-source LLM fine-tuned and hosted by Kore.ai for summarizing conversations using a large number of sample conversation transcripts from various fields and industries.

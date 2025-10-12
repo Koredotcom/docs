@@ -1,5 +1,7 @@
 # Get Extraction Questions – KG
 
+--8<-- "includes/automationai-api-note.md"
+
 To get the list of KG Extraction Questions.
 
 

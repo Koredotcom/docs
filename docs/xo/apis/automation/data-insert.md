@@ -1,5 +1,7 @@
 # Data Insert API
 
+--8<-- "includes/automationai-api-note.md"
+
 Used to insert data into Data Table.
 
 

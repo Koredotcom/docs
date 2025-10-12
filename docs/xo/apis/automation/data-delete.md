@@ -1,5 +1,7 @@
 # Data Delete API
 
+--8<-- "includes/automationai-api-note.md"
+
 Used to delete data from Data Table.
 
 

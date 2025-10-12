@@ -1,6 +1,8 @@
 
 # ML Utterances Export Status API
 
+--8<-- "includes/automationai-api-note.md"
+
 To get the download link of the ML Utterances export copy.
 
 

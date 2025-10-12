@@ -1,5 +1,7 @@
 # ML Utterances Train API
 
+--8<-- "includes/automationai-api-note.md"
+
 To initiate the ML training for a bot.
 
 <table>

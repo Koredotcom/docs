@@ -1,6 +1,8 @@
 
 # Get KnowledgeTasks – KG
 
+--8<-- "includes/automationai-api-note.md"
+
 To get the list of knowledge Tasks along with the nodes.
 
 

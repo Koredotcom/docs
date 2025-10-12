@@ -1,5 +1,6 @@
-
 # ML Utterance Train Status API
+
+--8<-- "includes/automationai-api-note.md"
 
 To get the ML training status.
 

@@ -1,5 +1,7 @@
 # Data Insert (Bulk) API
 
+--8<-- "includes/automationai-api-note.md"
+
 Used to insert bulk data into Data Table.
 
 

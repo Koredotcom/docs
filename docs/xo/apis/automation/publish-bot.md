@@ -1,5 +1,7 @@
 # Publish Bot API
 
+--8<-- "includes/automationai-api-note.md"
+
 To initiate a publish request for a bot.
 
 !!!note

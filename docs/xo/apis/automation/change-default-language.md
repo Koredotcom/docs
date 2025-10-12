@@ -1,5 +1,7 @@
 # Change the Default language API
 
+--8<-- "includes/automationai-api-note.md"
+
 This API allows you to update the default language for an app using the botId.
 
 <table>

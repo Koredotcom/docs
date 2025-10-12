@@ -1,5 +1,7 @@
 # Update NLP Configurations
 
+--8<-- "includes/automationai-api-note.md"
+
 To update the NLP thresholds and configurations.
 
 

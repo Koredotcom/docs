@@ -1,5 +1,7 @@
 # Extraction from file or URL – KG
 
+--8<-- "includes/automationai-api-note.md"
+
 To extract the Knowledge Graph from the imported file or URL.
 
 

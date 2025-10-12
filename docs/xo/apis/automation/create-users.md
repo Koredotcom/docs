@@ -1,5 +1,7 @@
 # Create User API
 
+--8<-- "includes/automationai-api-note.md"
+
 To add users to an account.
 
 **Prerequisite**  

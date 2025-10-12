@@ -1,5 +1,7 @@
 # Get Batch Test Suites API
 
+--8<-- "includes/automationai-api-note.md"
+
 To get the list of Batch Test Suites available for a bot.
 
 

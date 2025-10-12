@@ -1,6 +1,8 @@
 
 # Get Dashboard Widget Data
 
+--8<-- "includes/automationai-api-note.md"
+
 To retrieve the data associated with custom widgets and the reports of a bot.
 
 

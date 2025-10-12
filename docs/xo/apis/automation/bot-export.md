@@ -1,5 +1,7 @@
 # Bot Export API
 
+--8<-- "includes/automationai-api-note.md"
+
 To export the bot definition and all the associated components.
 
 !!!note

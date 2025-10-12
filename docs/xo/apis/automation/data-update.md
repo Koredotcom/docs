@@ -1,5 +1,7 @@
 # Data Update API
 
+--8<-- "includes/automationai-api-note.md"
+
 Used to update data into Data Table.
 
 

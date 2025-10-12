@@ -1,5 +1,7 @@
 # Update User API
 
+--8<-- "includes/automationai-api-note.md"
+
 To update the user details.
 
 !!!note

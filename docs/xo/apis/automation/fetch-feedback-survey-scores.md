@@ -1,5 +1,7 @@
 # Feedback Survey API
 
+--8<-- "includes/automationai-api-note.md"
+
 To fetch the feedback survey scores provided by the user in the conversation with an AI Agent and push the data for visualization on the **Feedback Analytics** module using the **_Survey Type_** and **_Survey Name_**.
 
 <table>

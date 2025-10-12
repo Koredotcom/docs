@@ -1,5 +1,7 @@
 # Debug Logs API
 
+--8<-- "includes/automationai-api-note.md"
+
 To fetch debug logs of a specific conversation.
 
 

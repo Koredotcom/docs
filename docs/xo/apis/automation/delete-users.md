@@ -1,5 +1,7 @@
 # Remove Users from Account
 
+--8<-- "includes/automationai-api-note.md"
+
 To remove users from an account.
 
 !!!note
