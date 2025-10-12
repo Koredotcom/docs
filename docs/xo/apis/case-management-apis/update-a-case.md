@@ -1,5 +1,7 @@
 # Update a Case API
 
+--8<-- "includes/casemanagementai-api-note.md"
+
 This API allows you to update an existing case in the case management system.
 
 | **METHOD**        | **POST**                                                                                                                                                                             |

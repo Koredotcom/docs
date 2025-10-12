@@ -1,5 +1,7 @@
 # Create a task API
 
+--8<-- "includes/casemanagementai-api-note.md"
+
 This API allows you to create a new task within the case management system.
 
 | **METHOD**        | **POST**                                                                                                                                                       |

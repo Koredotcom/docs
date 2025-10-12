@@ -1,5 +1,7 @@
 # Create a case API
 
+--8<-- "includes/casemanagementai-api-note.md"
+
 This API lets you to create a new case in the case management system.
 
 | **METHOD**        | **POST**                                                                                                                                                       |

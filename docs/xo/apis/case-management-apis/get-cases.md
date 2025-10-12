@@ -1,5 +1,7 @@
 # Get Cases API
 
+--8<-- "includes/casemanagementai-api-note.md"
+
 The API enables you to retrieve case data from the case management system with filtering, sorting, and pagination options.
 
 | **METHOD**        | **POST**                                                                                                                                                   |

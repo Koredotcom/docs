@@ -1,5 +1,7 @@
 # Update a Task API
 
+--8<-- "includes/casemanagementai-api-note.md"
+
 This API allows you to update an existing task in the case management system.
 
 | **METHOD**        | **POST**                                                                                                                                                                             |
