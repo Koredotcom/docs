@@ -1,0 +1,56 @@
+name: Auto-sync dev branches from upstream
+
+on:
+  schedule:
+    - cron: "0 3 * * *"    # daily 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  UPSTREAM: owner/repo      # ← set to upstream "owner/repo"
+
+jobs:
+  sync-dev-branches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add upstream & fetch
+        run: |
+          git remote add upstream https://github.com/${{ env.UPSTREAM }}.git
+          git fetch upstream --prune
+          git fetch origin --prune
+
+      - name: Sync dev* branches (fast-forward only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t DEV_BRANCHES < <(git ls-remote --heads upstream \
+            | awk '{print $2}' | sed 's#refs/heads/##' | grep -E '^dev')
+
+          if [[ ${#DEV_BRANCHES[@]} -eq 0 ]]; then
+            echo "No upstream dev* branches found."; exit 0
+          fi
+
+          for BR in "${DEV_BRANCHES[@]}"; do
+            echo "==> Syncing $BR"
+            if git show-ref --verify --quiet "refs/remotes/origin/$BR"; then
+              git checkout -B "$BR" "origin/$BR"
+              if git merge --ff-only "upstream/$BR"; then
+                git push origin "$BR"
+                echo "Synced $BR."
+              else
+                echo "Skipped $BR (non fast-forward required)."
+              fi
+            else
+              # Create the branch in the fork from upstream (initial publish)
+              git checkout -B "$BR" "upstream/$BR"
+              git push -u origin "$BR"
+              echo "Published $BR to fork."
+            fi
+          done
