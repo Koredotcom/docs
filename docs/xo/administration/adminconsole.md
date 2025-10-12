@@ -9,7 +9,7 @@ To sign up for an Admin account, you must meet the following requirements:
 
 * A valid email address.
 * A validated Kore.ai user account. If you do not have a user account, Kore.ai will create a user account for you, and you must validate that account before proceeding.
-* Authorization to control the Admin account. Only one user in an account can be the primary Admin. The Primary Admin can add multiple other users as admins with custom defined permissions.
+* Authorization to control the Admin account. Only one user in an account can be the primary Admin. The Primary Admin can add multiple other users as admins with custom-defined permissions.
 
 
 ## Accessing the Admin Console
