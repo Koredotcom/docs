@@ -124,7 +124,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      base_path: .
 
 copyright: |
   © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
