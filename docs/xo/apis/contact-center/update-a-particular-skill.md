@@ -1,5 +1,7 @@
 # Update a Particular Skill
 
+--8<-- "includes/ccai-api-note.md"
+
 To update the particular skill with the given `streamId`, `skillGroupId`, and `skillId`.
 
 | **Method**     | PUT                                                                                        |

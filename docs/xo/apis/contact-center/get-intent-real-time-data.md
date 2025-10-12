@@ -1,5 +1,7 @@
 # Get Intent Real Time Data
 
+--8<-- "includes/ccai-api-note.md"
+
 To retrieve the most recent conversational data for the given `botId`. Gets the latest 25 sessions data for the given application ID that completed the execution of the flow.
 
 | **Method**       | POST                                                        |

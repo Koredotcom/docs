@@ -1,5 +1,7 @@
 # Delete SMS Campaign API
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to delete an active SMS campaign for a given stream ID and campaign ID.
 
 | **Method**       | DELETE                                                                                                                                                                                                    |

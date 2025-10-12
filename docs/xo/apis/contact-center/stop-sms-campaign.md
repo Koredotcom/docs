@@ -1,5 +1,7 @@
 # Stop SMS Campaign API
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to stop an active SMS campaign for a given stream ID and campaign ID.
 
 | **Method**       | POST                                                                                                                                                                                                                           |

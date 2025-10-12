@@ -1,5 +1,7 @@
 # Update a Specific Agent
 
+--8<-- "includes/ccai-api-note.md"
+
 To update the details of a particular agent with the given `streamId` and `agentId`.
 
 | **Method**      | PUT                                                         |

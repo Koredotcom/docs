@@ -1,5 +1,7 @@
 # Get SMS Campaign API
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to fetch complete details of an existing SMS campaign using the campaign ID.
 
 | **Method**     | GET                                                                |

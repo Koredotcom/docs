@@ -1,5 +1,7 @@
 # Create an Agent Group
 
+--8<-- "includes/ccai-api-note.md"
+
 To add an agent with the given Stream Id.
 
 | **METHOD**       | **POST**                                                             |

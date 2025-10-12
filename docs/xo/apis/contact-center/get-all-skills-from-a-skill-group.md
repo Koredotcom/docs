@@ -1,5 +1,7 @@
 # Get All Skills from a Skill Group
 
+--8<-- "includes/ccai-api-note.md"
+
 To retrieve the list of skills with the given `streamId` and `SkillGroupId`.
 
 | **Method**        | GET                                    |

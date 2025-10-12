@@ -1,5 +1,7 @@
 # Create a Skill
 
+--8<-- "includes/ccai-api-note.md"
+
 To add a skill with the given Stream Id and Skill Group ID.
 
 | **METHOD**      | **POST**                                                        |

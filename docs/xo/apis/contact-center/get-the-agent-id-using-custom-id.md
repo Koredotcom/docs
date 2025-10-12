@@ -1,5 +1,7 @@
 # Get the Agent ID Using the Custom ID
 
+--8<-- "includes/ccai-api-note.md"
+
 To get the agent ID associated with a Custom ID (extension number).
 
 !!! Note

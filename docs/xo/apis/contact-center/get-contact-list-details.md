@@ -1,5 +1,7 @@
 # Get Contact List Details API
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to retrieve the full details of a specific contact list using its ID.
 
 | **Method**   | GET |

@@ -1,5 +1,7 @@
 # Get All Contact Lists
 
+--8<-- "includes/ccai-api-note.md"
+
 Retrieves metadata for all contact lists associated with all voice campaigns.
 
 | **Method**         | POST|

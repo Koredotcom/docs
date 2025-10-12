@@ -1,5 +1,7 @@
 # Hours of Operation API
 
+--8<-- "includes/ccai-api-note.md"
+
 To get the hours of operation by providing the `orgId` and `queueId`.
 
 | **Method** | GET |

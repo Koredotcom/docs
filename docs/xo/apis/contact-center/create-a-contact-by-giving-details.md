@@ -1,5 +1,7 @@
 # Create a Contact by Giving Details
 
+--8<-- "includes/ccai-api-note.md"
+
 To create a contact with the given stream Id.
 
 | **METHOD**       | **POST**                                                                                                             |

@@ -1,5 +1,7 @@
 # Update a Specific Queue
 
+--8<-- "includes/ccai-api-note.md"
+
 To update a specific queue with the given`streamId` and `queuesId`.
 
 | **Method**       | PUT                                                                           |

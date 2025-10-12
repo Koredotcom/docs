@@ -1,5 +1,7 @@
 # Queue Size
 
+--8<-- "includes/ccai-api-note.md"
+
 To get the queueDetails by giving queueId and filters with the given `streamId`.
 
 | **Method**       | POST                                                           |

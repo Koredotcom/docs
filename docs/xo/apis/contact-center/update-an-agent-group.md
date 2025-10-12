@@ -1,5 +1,7 @@
 # Update an Agent Group
 
+--8<-- "includes/ccai-api-note.md"
+
 To update a particular agent group with the given `streamId` and `agentGroupId`.
 
 | **Method**      | PUT                                                               |

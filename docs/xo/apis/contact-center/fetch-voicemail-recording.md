@@ -1,5 +1,7 @@
 # Fetch Voicemail Recording
 
+--8<-- "includes/ccai-api-note.md"
+
 This API facilitates the downloading of voicemail recordings. The API provides an S3-hosted URL where the voicemail recording can be accessed.
 
 | Method       | GET |

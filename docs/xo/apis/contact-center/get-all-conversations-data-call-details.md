@@ -1,5 +1,7 @@
 # Get All Conversations Data – Call Details
 
+--8<-- "includes/ccai-api-note.md"
+
 To retrieve the raw data for all conversations in a very detailed view. The days’ range cannot be more than seven days.
 
 | **Method** | POST |

@@ -1,5 +1,7 @@
 # Transfer Conversation To a Specific Agent or Queue
 
+--8<-- "includes/ccai-api-note.md"
+
 To retrieve the recording of a specific call using either the `userId` or `sessionId`.To transfer a conversation to a specific agent with the given `botSessionId` and `aId` (agentId) or queue using the `queueId`. Specific messages based on success or failure to transfer conversation are posted to the given `callbackUrl`. The `callbackUrl` helps track whether the transfer request succeeds or fails. This enables efficient handling of conversation transfers.
 
 | **Method**   | POST                                                                                      |

@@ -1,5 +1,7 @@
 # Create Voice Campaign API - Progressive Mode
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to create a voice campaign with Progressive dialing mode that routes answered calls to live agents via a queue.
 
 | **Method**      | POST                                                                                          |

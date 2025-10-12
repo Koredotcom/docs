@@ -1,5 +1,7 @@
 # Get All Agent Groups
 
+--8<-- "includes/ccai-api-note.md"
+
 To retrieve the list of agent groups with the given `streamId`.
 
 | **Method**   | GET                                          |

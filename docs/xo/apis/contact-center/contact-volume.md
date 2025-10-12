@@ -1,5 +1,7 @@
 # Contact Volume API
 
+--8<-- "includes/ccai-api-note.md"
+
 To retrieve call volume details associated with a specified collection point for a given interval, including fields mapped to specific field names relevant to the Workforce Management (WFM) client.
 
 | **Method**        | POST                                                                                                                      |

@@ -1,5 +1,7 @@
 # Agent Status Details
 
+--8<-- "includes/ccai-api-note.md"
+
 To show the self-reported status (available, busy, away, etc.) in the given time interval.
 
 | **METHOD**   | **POST**                                                                                   |

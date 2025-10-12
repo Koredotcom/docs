@@ -1,5 +1,7 @@
 # Get a Particular Skill
 
+--8<-- "includes/ccai-api-note.md"
+
 To retrieve the details of a particular skill with the given Stream Id, Skill Group Id, and Skill Id.
 
 | **Method**       | GET                                                                             |

@@ -1,5 +1,7 @@
 # Get a List of Queues
 
+--8<-- "includes/ccai-api-note.md"
+
 To create a queue with the given `streamId`.
 
 | **Method** | GET |

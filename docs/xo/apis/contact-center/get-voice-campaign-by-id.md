@@ -1,5 +1,7 @@
 # Get Voice Campaign API
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to fetch complete details of an existing voice campaign using the campaign ID.
 
 | **Method**        | PUT                                                                                                                                                         |

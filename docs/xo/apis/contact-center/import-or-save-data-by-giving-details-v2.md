@@ -1,5 +1,7 @@
 # Import data by accountId and orgId (v2)
 
+--8<-- "includes/ccai-api-note.md"
+
 To save/import data, which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience), by giving details with the `accountId` and `orgId`.
 
 !!! Note

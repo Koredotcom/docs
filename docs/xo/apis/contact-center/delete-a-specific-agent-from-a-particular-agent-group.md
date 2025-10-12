@@ -1,5 +1,7 @@
 # Delete a Specific Agent from a Particular Agent Group
 
+--8<-- "includes/ccai-api-note.md"
+
 To delete a particular agent with the given `streamId` and `agentId`.
 
 | **Parameter**   | **Description**                                                                                                                                       |

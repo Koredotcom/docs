@@ -1,5 +1,7 @@
 # Outbound Calling API (Voice Gateway)
 
+--8<-- "includes/ccai-api-note.md"
+
 Outbound calls can be made to external customers using Voice Gateway. The answering machine detection feature can be enabled on outbound calls to indicate whether a person or a machine has answered a call.
 
 When the dialed call is answered, the answering machine detection feature starts listening to the outbound call, and after a short period, sends an indication of whether a person or a machine has answered the call.

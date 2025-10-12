@@ -1,5 +1,7 @@
 # Get a Specific Queue
 
+--8<-- "includes/ccai-api-note.md"
+
 To get a specific queue with the given `streamId` and `queueId`.
 
 | **Method**       | GET                                              |

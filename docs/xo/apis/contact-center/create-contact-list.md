@@ -1,5 +1,7 @@
 # Create Contact List API
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to create a new contact list for use in passive voice campaigns.
 
 | **Method**       | POST                                                                                                                             |

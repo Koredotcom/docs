@@ -1,5 +1,7 @@
 # List of Conversations
 
+--8<-- "includes/ccai-api-note.md"
+
 Get the list of conversations with the given `streamId`.
 
 | **Method**      | GET                                                       |

@@ -1,5 +1,7 @@
 # Queues API
 
+--8<-- "includes/ccai-api-note.md"
+
 To get the Queues/Skills associated with an `accountId`.
 
 | Method            | GET                                                                                                                                     |

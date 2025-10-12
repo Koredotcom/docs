@@ -1,5 +1,7 @@
 # Agents API
 
+--8<-- "includes/ccai-api-note.md"
+
 To get all agent details associated with an `accountId`.
 
 <table>

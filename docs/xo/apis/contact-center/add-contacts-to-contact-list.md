@@ -1,5 +1,7 @@
 # Add Contacts to Contact List API
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to add one or more contacts to an existing contact list.
 
 | **Method**    | POST |

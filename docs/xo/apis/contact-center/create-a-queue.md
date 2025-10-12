@@ -1,5 +1,7 @@
 # Create a Queue
 
+--8<-- "includes/ccai-api-note.md"
+
 To create a queue with the given `streamId`.
 
 | **METHOD**       | **POST**                                                                                           |

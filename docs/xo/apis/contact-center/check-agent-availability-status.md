@@ -1,5 +1,7 @@
 # Check Agent Availability Status
 
+--8<-- "includes/ccai-api-note.md"
+
 To check the availability of agents based on specified skill IDs, queue IDs, and agent IDs.
 
 | **METHOD**   | POST                                                                                   |

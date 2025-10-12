@@ -1,5 +1,7 @@
 # Update SMS Campaign API
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to update an existing SMS campaign using the format, contact lists, experience flow, and dialing strategy.
 
 | **Method**       | PUT                                                                                                                                                                                                  |

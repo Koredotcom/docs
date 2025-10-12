@@ -1,5 +1,7 @@
 # Get Campaign Status API
 
+--8<-- "includes/ccai-api-note.md"
+
 Retrieves the current status of a specific campaign using its campaign ID. Use this API to check whether a campaign is active, stopped, or in another state.
 
 | **Method**         | POST |

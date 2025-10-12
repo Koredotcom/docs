@@ -1,5 +1,7 @@
 # Update Contact List by ID
 
+--8<-- "includes/ccai-api-note.md"
+
 Use this API to update a specific contact list associated with a campaign.
 
 | **Method**     | PUT                                                                                   |

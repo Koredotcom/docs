@@ -1,5 +1,7 @@
 # Get a Specific Agent
 
+--8<-- "includes/ccai-api-note.md"
+
 To retrieve the details of a particular agent with the given `botId` and `agent Id`.
 
 | **Method**   | GET                                                               |
