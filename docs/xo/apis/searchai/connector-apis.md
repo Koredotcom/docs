@@ -1,5 +1,6 @@
 # Connector APIs
 
+--8<-- "includes/searchai-api-note.md"
 
 ## Get Connectors
 

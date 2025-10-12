@@ -1,5 +1,7 @@
 # Answer Insights API
 
+--8<-- "includes/searchai-api-note.md"
+
 This API initiates the export of answer insights data to a file in **JSON format**. You can apply filters to export specific results. 
 
 Currently, this API can **export Analytics data for up to one week at most**. If you need to download data for a longer period, you'll need to invoke the API multiple times. For example, to obtain data for an entire month, you would call the API four times, once for each week of that month.

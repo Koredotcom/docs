@@ -1,5 +1,7 @@
 # Jobs API
 
+--8<-- "includes/searchai-api-note.md"
+
 This API is used to get the details of a job. The response of this API varies as per the type of the job. 
 
 

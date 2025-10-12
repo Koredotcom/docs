@@ -1,5 +1,7 @@
 # Feedback API
 
+--8<-- "includes/searchai-api-note.md"
+
 This API is used to capture user feedback and store it within Search AI, where it is displayed as part of the Answer Analytics.
 
 
