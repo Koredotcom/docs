@@ -197,7 +197,7 @@ nav:
         - Configurations:
           - Configure a Tool: ai-agents/tools/configure-a-tool.md
           - Export a Tool: ai-agents/tools/export-a-tool.md
-          - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
+          - Import Tool as a Version: ai-agents/tools/import-a-tool.md#import-tool-as-a-version
       - Code Tools: 
         - About Code Tools: ai-agents/tools/code-tools.md
         - Create a Code Tool: ai-agents/tools/create-a-code-tool.md
@@ -325,8 +325,8 @@ nav:
   - APIs: 
     - Agentic Apps:
       - About Agentic App APIs: apis/agentic-apps/overview.md
-      - APIs List: apis/agentic-apps/overview/#apis-list
+      - APIs List: apis/agentic-apps/overview.md#apis-list
     - Tools:
       - About Tools APIs: apis/overview.md
-      - APIs List: apis/overview/#apis-list
+      - APIs List: apis/overview.md#apis-list
   - Marketplace: ai-agents/agentic-apps/marketplace.md
