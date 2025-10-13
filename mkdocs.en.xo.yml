@@ -54,6 +54,13 @@ plugins:
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'contactcenter/configurations/settings/llm-streaming.md': 'generative-ai-tools/streaming-responses.md'
+        'contact-center/case-management-apis/create-a-case.md': 'case-management-apis/create-a-case.md'
+        'contact-center/case-management-apis/create-a-task.md': 'case-management-apis/create-a-task.md'
+        'contact-center/case-management-apis/get-cases.md': 'case-management-apis/get-cases.md'
+        'contact-center/case-management-apis/get-tasks.md': 'case-management-apis/get-tasks.md'
+        'contact-center/case-management-apis/update-a-case.md': 'case-management-apis/update-a-case.md'
+        'contact-center/case-management-apis/update-a-task.md': 'case-management-apis/update-a-task.md'
+
 extra:
   version:
     provider: mike
@@ -469,7 +476,7 @@ nav:
     - Flows:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
-      - Debug Logs: contactcenter/flows-and-routing/debug-logs.md
+      - Debug Logs: contactcenter/flows-and-routing/debugging-and-troubleshooting.md
     - Routing:
       - Contact Center AI Routing: contactcenter/routing/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md
