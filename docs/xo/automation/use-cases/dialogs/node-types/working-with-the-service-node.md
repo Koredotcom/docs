@@ -79,7 +79,7 @@ To configure the Component Properties tab, please follow the steps below:
 
 11.  Enable the **PII Redaction for API responses**.  
     
-       * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add.** 
+       * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add**. Refer [Examples of Path Definitions](#examples-of-path-definitions).
 
        * Select one of the following options about how you want to **display** the sensitive data to non-authorized users:
          * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
@@ -108,6 +108,200 @@ To configure the Component Properties tab, please follow the steps below:
     Post v11.3 release:  
      1.  **Service Call Timeout** and **Timeout Error Handling Behavior** settings have been moved from Component Properties to Instance Properties within the Service Node.  
      2.  The modifications made are exclusive to the particular dialog task and will not impact any other dialog tasks utilizing the same Service Node.
+
+
+
+
+#### Examples of Path Definitions
+
+Use these examples to learn how to define redaction paths for different data structures. Each example includes the API response, path syntax, and redacted result.
+
+!!! note
+
+    PII redaction requires you to specify exact paths to the fields you want to redact. PII redaction applies only to Custom Service nodes.
+
+**1. Key-Value Pairs**
+
+API response:
+
+
+```
+{
+  "customerId": 78901,
+  "fullName": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+```
+
+
+Path to redact: body.email
+
+After redaction:
+
+
+```
+{
+  "customerId": 78901,
+  "fullName": "Jane Doe",
+  "email": "####"
+}
+```
+
+
+**2. Array of Objects**
+
+API response:
+
+
+```
+{
+  "orders": [
+    { 
+     "orderId": 501, 
+     "creditCard": "4111-1111-1111-1111" 
+    },
+    { 
+     "orderId": 502,
+     "creditCard": "5555-5555-5555-4444"
+    }
+  ]
+}
+```
+
+
+Path to redact: body.orders.$.creditCard
+
+After redaction:
+
+
+```
+{
+  "orders": [
+    { "orderId": 501, "creditCard": "####" },
+    { "orderId": 502, "creditCard": "####" }
+  ]
+}
+```
+
+!!! note
+
+    Index-based redaction, such as `orders[0].creditCard,` is not allowed. Access path for one key in all records (`orders.$.creditCard`).
+
+
+**3. Nested Objects**
+
+API response:
+
+
+```
+{
+  "profile": {
+    "user": {
+      "id": 321,
+      "name": "Robert Smith",
+      "contact": {
+        "phone": "+1-202-555-0188",
+        "address": "742 Evergreen Terrace"
+      }
+    }
+  }
+}
+```
+
+
+Path to redact: body.profile.user.contact.phone
+
+After redaction:
+
+
+```
+{
+  "profile": {
+    "user": {
+      "id": 321,
+      "name": "Robert Smith",
+      "contact": {
+        "phone": "####",
+        "address": "742 Evergreen Terrace"
+      }
+    }
+  }
+}
+```
+
+
+!!! note
+
+    Redacting a parent object like `body.profile.user` automatically redacts all child keys.
+
+**4. Composite Objects**
+
+API response:
+
+
+```
+{
+  "meta": { "page": 1, "size": 2 },
+  "users": [
+    { "id": 1, "ssn": "123-45-6789", "email": "alpha@example.com" },
+    { "id": 2, "ssn": "987-65-4321", "email": "beta@example.com" }
+  ]
+}
+```
+
+
+Path to redact: (`body.users.$.ssn`) and (`body.users.$.email`)
+
+After redaction:
+
+
+```
+{
+  "meta": { "page": 1, "size": 2 },
+  "users": [
+    { "id": 1, "ssn": "####", "email": "####" },
+    { "id": 2, "ssn": "####", "email": "####" }
+  ]
+}
+```
+
+!!! note
+
+    If you redact an entire object and then try to access its child keys in downstream nodes, the task fails.
+
+**5. Headers**
+
+API response headers:
+
+
+```
+{
+  "headers": {
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "requestId": "abcd-1234-xyz-9999"
+  }
+}
+```
+
+
+Path to redact: headers.authorization
+
+After redaction:
+
+
+```
+{
+  "headers": {
+    "authorization": "####",
+    "requestId": "abcd-1234-xyz-9999"
+  }
+}
+```
+
+!!! note
+
+    Redacted values apply consistently across debug logs, conversation history, task execution logs, and NLP insights. Test your redaction paths in debug logs to ensure sensitive data is properly masked before deploying.
+
 
 
 #### Pre-processor Script
@@ -349,7 +543,7 @@ The following is an example for converting HTML to an image:
 
 * HTML: Print Wide HTML Tables
 
-* http://salman-w.blogspot.com/2013/04/printing-wide-html-tables.html
+* https://salman-w.blogspot.com/2013/04/printing-wide-html-tables.html
 
 */
 

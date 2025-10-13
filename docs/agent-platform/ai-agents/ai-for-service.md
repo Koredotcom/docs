@@ -43,7 +43,7 @@ Users can create or select an existing app and configure it using the **Automati
     
     The same can be accessed in the prompts and code tools as `{{[memory.sessionMeta.metadata.name](memory.sessionMeta.metadata.name)}}`. 
     
-    Refer to [this](agentic-apps/memory-stores.md) to learn more accessing memory stores. 
+    Refer to [this](agentic-apps/memory-stores.md) to learn more about accessing memory stores. 
 
 
     Refer to [this ](https://docs.kore.ai/xo/flows/node-types/automation/)for other node configurations. 
@@ -58,7 +58,7 @@ When an agent transfer event is triggered, the system passes control, along with
 ![alt_text](images/integration/xo/agent-transfer-event.png "Agent Transfer")
 
 
-To process these agent transfer requests, set up the **Agent Transfer connection configuration for the automation node**. When agent handoff event is triggered from the agent platform, the request, along with the LLM collected and system defined parameters, is delegated to the automation node. The automation node then routes the request to the appropriate node as defined by its connection rules.
+To process these agent transfer requests, set up the **Agent Transfer connection configuration for the automation node**. When agent handoff event is triggered from the Agent Platform, the request, along with the LLM collected and system defined parameters, is delegated to the automation node. The automation node then routes the request to the appropriate node as defined by its connection rules.
 
 ![alt_text](images/integration/xo/agent-trasfer-node.png "Agent Transfer Node")
 

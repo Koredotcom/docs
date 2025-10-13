@@ -78,11 +78,11 @@ In the Chat & Voice section, you can configure the following:
    3. Widget Features - Attachments and emojis in live chat.
 
 * Turn on **Enable Voice** toggle to set the following:
-  1. **Voice Support**: Select Yes for either Inbound or Campaigns. The default selection is No.
+  1. **Voice Support**: When voice is enabled, agents can accept voice calls by default, including inbound, manual outbound etc. However, campaign settings are set to No by default, which means agents do not receive campaign calls. To allow agents to receive campaign calls, this setting must be changed to Yes, and the agents must be part of the queue attached to the campaign.
   2. Select the supported languages and their proficiency level.
 
-* Turn on **Enable Voice Mail** toggle to set the count of voice mails callers can leave in a queue.
-  <img src="../images/chat-and-voice-limits.png" alt="Chat & Voice" title="Chat & Voice" style="border: 1px solid gray; zoom:70%;">
+* Turn on **Enable Voice Mail** toggle to set the count of voice mails callers can leave in a queue.  
+  <img src="../images/user-attribute-chat-voice.png" alt="Chat & Voice" title="Chat & Voice" style="border: 1px solid gray; zoom:70%;">
 
 ### Queues & Skills
 

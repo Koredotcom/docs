@@ -182,9 +182,9 @@ This stage allows you to leverage the capabilities of an external LLM to refine,
 
 #### Prerequisites
 
-* [Set up the required LLM](https://docs.kore.ai/xo/generative-ai-tools/models-library/).
-* [Create a custom prompt](https://docs.kore.ai/xo/generative-ai-tools/prompts-library/) for the feature ‘Transform Documents with LLM’
-* In the[ Gen AI features page](https://docs.kore.ai/xo/generative-ai-tools/genai-features-searchai/), enable the feature, ‘Transform Documents with LLM’. 
+* [Set up the required LLM](../../generative-ai-tools/models-library.md).
+* [Create a custom prompt](../../generative-ai-tools/prompts-library.md) for the feature ‘Transform Documents with LLM’.
+* In the[ Gen AI features page](../../generative-ai-tools/genai-features-searchai.md), enable the feature, ‘Transform Documents with LLM’. 
 
 #### Configuration
 

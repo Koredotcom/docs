@@ -1,6 +1,6 @@
 # Japan (JP) Firewall Rules
 
-## Kore Network
+## AudioCodes
 
 | Component                              | Protocol | Source IP | Source Port † | Allowed Destinations                          | Destination Port |
 |----------------------------------------|----------|-----------|---------------|-----------------------------------------------|-----------------|
@@ -35,32 +35,22 @@
 
 | Secure Media (ICE/STUN/SRTP) Edge Locations | Protocol | Source IP | Source Port † | Destination IP Ranges | Destination Port Range |
 |---------------------------------------------|----------|-----------|---------------|------------------------|------------------------|
-| Stun server                                 | UDP      | ANY       | ANY           | 168.86.128.0/18        | 6000-65535             |
+| ↳ Stun server                               | UDP      | ANY       | ANY           | 168.86.128.0/18        | 10000-65535           |
 
-## Media Twilio Gateway
-
-| Secure Media (ICE/STUN/SRTP) Edge Locations | Protocol | Source IP | Source Port † | Destination IP Ranges | Destination Port Range |
-|---------------------------------------------|----------|-----------|---------------|------------------------|------------------------|
-| ↳ Stun server                               | UDP      | ANY       | ANY           | 168.86.128.0/18        | 6000-65535             |
-
-## **FQDN**
+## FQDN
 
 | Component       | Protocol          | Source IP | Source Port † | Destination IP Ranges              | Destination Port Range |
 |-----------------|-------------------|-----------|---------------|------------------------------------|------------------------|
-| Kore Domain     | TCP               | ANY       | ANY           | *.kore.ai                          | 443                    |
-| Twilio Domain   | TCP               | ANY       | ANY           | *.twilio.com                       | 443                    |
-| Twilio STUN     |                   |           |               |                                    |                        |
-| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 34.203.254.0 – 34.203.254.255      | 443/5349               |
-| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 54.172.60.0 – 54.172.61.255        | 443/5349               |
-| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 34.203.250.0 – 34.203.251.255      | 443/5349               |
-| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 3.235.111.128 – 3.235.111.255      | 443/5349               |
-| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 34.216.110.128 – 34.216.110.159    | 443/5349               |
-| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 54.244.51.0 – 54.244.51.255        | 443/5349               |
-| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 44.234.69.0 – 44.234.69.127        | 443/5349               |
-| ↳               | TCP, UDP (TURN)   | ANY       | ANY           | 34.203.254.0 – 34.203.254.255      | 3478                   |
-| ↳               | TCP, UDP (TURN)   | ANY       | ANY           | 54.172.60.0 – 54.172.61.255        | 3478                   |
-| ↳               | TCP, UDP (TURN)   | ANY       | ANY           | 34.203.250.0 – 34.203.251.255      | 3478                   |
-| ↳               | TCP, UDP (TURN)   | ANY       | ANY           | 3.235.111.128 – 3.235.111.255      | 3478                   |
-| ↳               | TCP, UDP (TURN)   | ANY       | ANY           | 34.216.110.128 – 34.216.110.159    | 3478                   |
-| ↳               | TCP, UDP (TURN)   | ANY       | ANY           | 54.244.51.0 – 54.244.51.255        | 3478                   |
-| ↳               | TCP, UDP (TURN)   | ANY       | ANY           | 44.234.69.0 – 44.234.69.127        | 3478                   |
+| Kore Domain     | TCP               | ANY       | ANY           | *.kore.ai                          | 443, 8443              |
+| Twilio Domain   | TCP               | ANY       | ANY           | *.twilio.com                       | 443, 8443              |
+
+## Twilio STUN
+
+| Component       | Protocol          | Source IP | Source Port † | Destination IP Ranges              | Destination Port Range |
+|-----------------|-------------------|-----------|---------------|------------------------------------|------------------------|
+| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 13.115.244.0 – 13.115.244.31       | 443/5349               |
+| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 18.180.220.128 – 18.180.220.255    | 443/5349               |
+| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 54.65.63.192 – 54.65.63.255        | 443/5349               |
+| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 13.115.244.0 – 13.115.244.31       | 3478                   |
+| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 18.180.220.128 – 18.180.220.255    | 3478                   |
+| ↳               | TCP (TURN TLS)    | ANY       | ANY           | 54.65.63.192 – 54.65.63.255        | 3478                   |

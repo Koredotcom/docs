@@ -36,7 +36,7 @@ Make sure that the following GenAI features are enabled:
 
 * Ensure that the languages required by the **By Value** metric type are valid and properly configured.
 
-* The **By Value** evaluation metrics measurement type is available when both the GenAI options are [enabled ](https://docs.kore.ai/xo/generative-ai-tools/genai-features/)and [published ](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components) via **Manage**> **Generative AI**> **GenAI Features**:
+* The **By Value** evaluation metrics measurement type is available when both the GenAI options are [enabled](../../../../generative-ai-tools/genai-features.md)and [published ](../../../../deploy/publishing-bot.md#publishing-components) via **Manage**> **Generative AI**> **GenAI Features**:
 
     * By Value Adherence Validation for Quality AI
     * By Value Metric Extraction for Quality AI  
@@ -104,7 +104,7 @@ Make sure that the following GenAI features are enabled:
 
     * **Gen AI-Based Adherence**: This uses a Large Language Model (LLM) to detect trigger intent and evaluate adherence based on contextual understanding (for complex intents, varied expressions, and nuanced conversations).
 
-        * Uses the Zero-shot detection (no training required). [Learn more](../automation/natural-language/training/machine-learning-engine.md#zero-shot-model){:target="_blank"}.
+        * Uses the Zero-shot detection (no training required). [Learn more](../../../../automation/natural-language/training/machine-learning-engine.md#zero-shot-model){:target="_blank"}.
 
         * Enter a text **Description** explaining the trigger intent or details behind the adherence metric details.
 
@@ -126,7 +126,7 @@ Make sure that the following GenAI features are enabled:
 
     Context variables are customer identifiers mentioned in a conversation (for example, phone number or customer ID). The system extracts these from the transcript and uses them in an API call to get specific customer information, such as account balance or interest rate.
 
-1. Select a customer identifier (such as phone number, customer ID) mentioned in the conversation transcript.
+2. Select a customer identifier (such as phone number, customer ID) mentioned in the conversation transcript.
 
     * Customer provides identifier during conversation (phone number, customer ID, email).
 
@@ -139,11 +139,11 @@ Make sure that the following GenAI features are enabled:
     * **Context Variable**: Select this when a customer identifier (such as phone number, customer ID) is mentioned in the conversation transcript.  
     <img src="../images/context-variable-setup.png" alt="Context Variables Setup" title="Context Variables Setup" style="border: 1px solid gray; zoom:50%;">      
 
-1. Choose who (Customer or Agent) provides the identifier in the conversation.
+3. Choose who (Customer or Agent) provides the identifier in the conversation.
 
     * **Speaker**: Choose who (**Customer** or **Agent**) provides the identifier in the conversation.    
 
-1. Configure the Entity Type details to match the data type for extracting required data (for example, customer ID, name, and data type).
+4. Configure the Entity Type details to match the data type for extracting required data (for example, customer ID, name, and data type).
 
     **Entity Type Configuration**
 
@@ -157,7 +157,7 @@ Make sure that the following GenAI features are enabled:
 
         * **Description**: Provide detailed instructions for the AI on how to identify and extract this entity from the conversation. For example, extract the 10-digit phone number provided by the customer during verification, formatted as XXX-XXX-XXXX".
 
-1. Configure authentication profiles to secure API calls to your backend systems.
+5. Configure authentication profiles to secure API calls to your backend systems.
 
      **Service Request Authorization**
 
@@ -175,11 +175,11 @@ Make sure that the following GenAI features are enabled:
 
     **GET/POST Method**
 
-    1. From the **Auth** dropdown, select the authorization profile that you want to use for API request. 
+    4. From the **Auth** dropdown, select the authorization profile that you want to use for API request. 
 
-    2. Add custom HTTP **Headers** if needed as required by your backend systems.
+    5. Add custom HTTP **Headers** if needed as required by your backend systems.
 
-    3. **Test Request** is used to validate the request and response setup before deployment.   
+    6. **Test Request** is used to validate the request and response setup before deployment.   
 
         !!! Note
 
@@ -187,22 +187,22 @@ Make sure that the following GenAI features are enabled:
             
             * It must come from SFTP if the request parameter includes a Conversation ID.
 
-    4. Define the API **Response** parameter as a JSON object or path.  
+    7. Define the API **Response** parameter as a JSON object or path.  
 
     **POST Method**
 
-    1. Define the POST **Body** using the context variable ID in the body. For example: `{"userId": "{{context.user_id}}"}`.  
+    8. Define the POST **Body** using the context variable ID in the body. For example: `{"userId": "{{context.user_id}}"}`.  
 
-    2. Enter a **Post Script Definition Name** of the API response.
+    9. Enter a **Post Script Definition Name** of the API response.
 
-    3. Use a **Post Process Script** to extract or transform the response if needed (optional).
+    10. Use a **Post Process Script** to extract or transform the response if needed (optional).
 
-    4. Configure and extract the source system value from the API response after a single API call.   
+    11. Configure and extract the source system value from the API response after a single API call.   
     <img src="../images/script-definition-post-method.png" alt="Script Definition-Post" title="Script Definition-Post" style="border: 1px solid gray; zoom:50%;">    
 
-    5. Click **Save**.
+    12. Click **Save**.
 
-1. Selct the custom **Conversation ID** to trigger sequential API calls and apply post-processing as needed.
+6. Selct the custom **Conversation ID** to trigger sequential API calls and apply post-processing as needed.
 
     #### Conversation ID 
 
@@ -230,7 +230,7 @@ Make sure that the following GenAI features are enabled:
 
     **GET Method**
 
-    1. From the **Auth** dropdown, select the authorization profile that you want to use or access this API request. 
+    3. From the **Auth** dropdown, select the authorization profile that you want to use or access this API request. 
 
         !!! Note
 
@@ -238,28 +238,28 @@ Make sure that the following GenAI features are enabled:
             
             * The list of authorization profiles comes from the Dev Tools section of the Platform.
 
-    2. Set request-specific HTTP **Headers**.
+    4. Set request-specific HTTP **Headers**.
 
         !!! Note
 
             * This **Test Request** option is disabled if the request parameter is a conversation ID.
 
-    3. Map and process the API **Response** by entering a JSON object or path.
+    5. Map and process the API **Response** by entering a JSON object or path.
 
     **POST Method**
 
-    4. Define the POST **Body** using the context conversation ID in the body. For example: `{"conversationId": "abc123-xyz"}`
+    6. Define the POST **Body** using the context conversation ID in the body. For example: `{"conversationId": "abc123-xyz"}`
     
-    5. Enter a **Post Script Definition Name** of the API response.
+    7. Enter a **Post Script Definition Name** of the API response.
 
-    6. Configure a **Post Process Script** to set additional actions by modifying and storing the API response as a JSON object for use as the source system value.
+    8. Configure a **Post Process Script** to set additional actions by modifying and storing the API response as a JSON object for use as the source system value.
 
-    7. Configure scripts for additional processing to support nested or chained API calls.
+    9. Configure scripts for additional processing to support nested or chained API calls.
 
     8. Click **Save**.  
     <img src="../images/post-process-script.png" alt="Script Definition" title="Script Definition" style="border: 1px solid gray; zoom:50%;">   
 
-1. Configure how the system extracts and verifies agent-stated values or answer against backend data.
+7. Configure how the system extracts and verifies agent-stated values or answer against backend data.
 
     ### Agent Answer Configuration
 
@@ -273,10 +273,10 @@ Make sure that the following GenAI features are enabled:
 
     * **Number**: For numeric values, such as interest rate.
 
-    3. **Description**: Provide detailed instructions for the AI on how to identify the agent-mentioned value. For example, to extract the interest rate percentage mentioned by the agent when discussing loan terms, formatted as a decimal number (for example, 4.5 for 4.5%).  
+    1. **Description**: Provide detailed instructions for the AI on how to identify the agent-mentioned value. For example, to extract the interest rate percentage mentioned by the agent when discussing loan terms, formatted as a decimal number (for example, 4.5 for 4.5%).  
     <img src="../images/agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:50%;">   
 
-1. Choose one of the business rules to verify the correct agent-stated value.
+8. Choose one of the business rules to verify the correct agent-stated value.
 
     ### Business Rules
 
@@ -327,7 +327,7 @@ Make sure that the following GenAI features are enabled:
         * **Example**: Use the value mentioned after the customer accepts terms, or use the value mentioned during the rate discussion phase. It uses the lowest number mentioned, that is 4.9%, as the best offer.  
     <img src="../images/bussiness-rules.png" alt="Business Rules" title="Business Rules" style="border: 1px solid gray; zoom:50%;">           
 
-1. Configure how to evaluate agent responses against backend data using AI or custom rules (Possible outcomes of Pass, Fail, or NA).
+9. Configure how to evaluate agent responses against backend data using AI or custom rules (Possible outcomes of Pass, Fail, or NA).
 
     ### Score Logic & Adherence Criteria
 
@@ -365,7 +365,7 @@ Make sure that the following GenAI features are enabled:
 
                 If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
 
-1. Click **Create** to save and apply the agent answer metric configuration.
+10. Click **Create** to save and apply the agent answer metric configuration.
 
 ### Edit or Delete By Value Metrics
 

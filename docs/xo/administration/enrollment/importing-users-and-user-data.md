@@ -38,12 +38,9 @@ When using an import file, the following validation rules are applied:
 For a .txt file:
 ```
 Email ID, First Name, Last Name, Alternate ID, Work Phone, Title, Department, User Status
-Kore.aiUser1@kore.com,User1FirstName,User1LastName,,800-555-1212,President,Executive,New
-Kore.aiUser2@kore.com,User2FirstName,User2LastName,,800-555-5555,VicePresident,Executive,New
-Kore.aiUser3@kore.com,User3FirstName,User1LastName,,,,,New
+john.doe@example.com., John,Doe, 800-555-1212,President,Executive,New
+jane.doe@example.com., Jane,Doe, 800-555-5555,VicePresident,Executive,New
 ```
-
-
 ### Create and Upload an Import File
 
 You can create a file to invite users in your organization to become Kore.ai users that you can manage as an Admin. This topic describes how to create a file that contains the email addresses and user information, such as first and last name, phone number, department, and so forth, for the users that you want to invite to become Kore.ai users in your account. If you only have email address information for your users, you should create and [import a bulk invite file](enrolling-many-users.md){:target="_blank"} instead. **To create an import file**
@@ -57,8 +54,7 @@ You can create a file to invite users in your organization to become Kore.ai use
     Kore.aiUser2@kore.com,User2FirstName,User2LastName,User2AlternateID,800-555-5555,VicePresident,Executive,New
     Kore.aiUser3@kore.com,User3FirstName,User1LastName,,,,New
     ```
-
-2. Save the import file as a .txt or .csv file, for example, Kore.aiImport.txt or Kore.aiImport.csv. After you create an import file, you can upload the file to invite your account users.
+ our account users.
 
 After you have created an import file, you need to upload the import file. This topic describes how you can upload your import file of users of your account. **To upload a user import file**
 

@@ -2,6 +2,27 @@
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
+## v11.18.0 September 27, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Analyze</font>
+
+**Topic Discovery**
+
+This enables QA, Supervisors, and Business Managers to visualize conversation topics across the contact center, linked to key metrics, such as Average Handling Time (AHT), Sentiment, and Resolution rate. Using custom taxonomies and intuitive bubble charts, users can identify trends, explore topics in-depth, and analyze related metrics and generated intents, making it easier to enhance coaching and drive process improvements. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/topic-discovery.md)
+
+<font size="4">Configure</font>
+
+**Taxonomy Builder**
+
+The builder enables Contact Center Managers, Analysts, and QA teams to create custom taxonomies with three-level hierarchical structures, enhancing conversation categorization. This improves analysis across channels, allowing deeper insights into topic-level metrics and business-specific trends. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/taxonomy-builder/overview.md)
+
+<hr>
+
+
 ## v11.17.1 September 15, 2025
 
 <u>Patch Release</u>
@@ -26,4 +47,4 @@ In Conversation Mining, the Processing Status now displays a status icon: green 
 
 Quality AI can now be integrated with Agent AI on third-party desktops. This integration streamlines the recording process and utilizes metadata through Agent AI's Custom Object field. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/conversation-sources.md)
 
-[Learn more about Quality AI features :octicons-arrow-right-24:](../../quality-ai/about-quality-ai.md){:target="_blank"}
+

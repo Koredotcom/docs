@@ -153,7 +153,7 @@ The metric operates through a **question-driven evaluation process** with two ma
 
     a. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
 
-    b. [Enable](https://docs.kore.ai/xo/generative-ai-tools/genai-features/) and [Publish](https://docs.kore.ai/xo/deploy/publishing-bot/?h=publis#publishing-components):
+    b. [Enable](../../../../generative-ai-tools/genai-features.md){:target="_blank"} and [Publish](../../../../deploy/publishing-bot.md/#publishing-components){:target="_blank"} the following two features:
 
     * **GenAI-based agent answer adherence**
 
@@ -185,11 +185,12 @@ The metric operates through a **question-driven evaluation process** with two ma
 
     !!! Note
             
-        * Before assessing GenAI-based adherence responses, ensure that the [supported model](https://docs.kore.ai/xo/generative-ai-tools/models-library/#configure-pre-built-llm-integration) and [features](https://docs.kore.ai/xo/generative-ai-tools/genai-features/), including GenAI-based agent answer adherence and customer trigger detection, are enabled for the respective products in the GenAI features section. [Learn more](https://docs.kore.ai/xo/generative-ai-tools/genai-features/).
+        * Before assessing GenAI-based adherence responses, ensure that the [Supported models](../../../../generative-ai-tools/genai-features-qualityai.md){:target="_blank"} and [GenAI features](../../../../generative-ai-tools/genai-features.md){:target="_blank"}, including GenAI-based agent answer adherence and customer trigger detection, are enabled for the respective products in the GenAI features section. 
                 
         * No example utterances or similarity thresholds are required; LLMs evaluate adherence contextually using zero-shot prompts.
                 
-        * For effective prompts and LLM-based adherence detection, [Learn more](https://docs.google.com/document/d/1_7l12CETtFmXbYuNb7WtTpJbR6i4LZcz37tZpE_GVeY/edit?usp=sharing). 
+        * For effective prompts and LLM-based adherence detection, refer to
+        [AutoQA - Prompting Guide](autoqa-prompting-guide.md){:target="_blank"}.
 
     ##### Deterministic Adherence
 

@@ -209,13 +209,13 @@ To trigger various message templates, you must use a specific JavaScript format 
             {
                 type: 'reply',
                 text: 'English',
-                iconUrl: 'http://imgur.com/taco.png',
+                iconUrl: 'https://imgur.com/taco.png',
                 payload: 'Hollywood'
             },
             {
                 type: 'reply',
                 text: 'Hindi',
-                iconUrl: 'http://imgur.com/burrito.png',
+                iconUrl: 'https://imgur.com/burrito.png',
                 payload: 'Bollywood'
             }
         ]

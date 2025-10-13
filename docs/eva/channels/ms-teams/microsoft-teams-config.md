@@ -56,12 +56,12 @@ This phase varies based on your chosen App Type (MultiTenant vs SingleTenant).
 
 Follow the steps for Multi-Tenant setup. Also, note the Tenant ID for AI for Work configuration.
 
-### Phase 4: Enable MS Teams Channel Integration
+### Phase 4: Enable Microsoft Teams Channel Integration
 
 Configure the bot to communicate with Microsoft Teams and enable Copilot integration.
 
 1. Navigate to **Channels** in the bot resource menu and locate the **Available Channels** section.
-2. Select the **MS Teams** channel and **M365 Extensions** channel (required for Copilot integration), review channel information, and click **Save**.
+2. Select the **Microsoft Teams** channel and **M365 Extensions** channel (required for Copilot integration), review channel information, and click **Save**.
 <img src="../images/teams_3.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
 !!!note
@@ -76,7 +76,7 @@ Enable the bot to send proactive notifications to users, which is essential for 
 
 1. In the Azure Portal, navigate to **App registrations** and click **+ New registration**.
 2. Register New Application:
-    * **Name**: Provide descriptive name (e.g., AIWork-MS Teams-Notifications).
+    * **Name**: Provide descriptive name (e.g., AIWork-Microsoft Teams-Notifications).
     * **Supported account types**: Choose based on organizational requirements.
     * **Redirect URI**: Leave blank for this use case.
 3. Click **Register.**
@@ -100,7 +100,7 @@ Enable the bot to send proactive notifications to users, which is essential for 
   
 3.  Grant **Admin Consent.**
 4.  Generate a **Client Secret** and note down **App ID**, **Directory (Tenant) ID**
-5.  Configure these values in AI for Work under **MS Teams & Copilot Channel Settings**.
+5.  Configure these values in AI for Work under **Microsoft Teams & Copilot Channel Settings**.
 6.  Generate a **JWT token** for secure communication.
 
 
@@ -119,7 +119,7 @@ Provide Azure Bot credentials to the AI for Work platform to establish secure co
     * **App Password**: The client secret from the bot's app registration.
     <img src="../images/teams_6.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
-    * **App ID of the MS Teams App**:  The additional app credentials for sending the Proactive Notifications.
+    * **App ID of the Microsoft Teams App**:  The additional app credentials for sending the Proactive Notifications.
     * **Application (Client) ID**: From the notifications app registration.
     * **Client Secret**: From the notifications app registration.
     * **Delivery (Tenant) ID**: From the notifications app registration.
@@ -127,15 +127,15 @@ Provide Azure Bot credentials to the AI for Work platform to establish secure co
 
 **Customization Options**
 
-By default, the MS Teams app appears with the name **AI for Work**, the standard AI for Work logo, and the default description. Administrators can customize the application before publishing to MS Teams:
+By default, the Microsoft Teams app appears with the name **AI for Work**, the standard AI for Work logo, and the default description. Administrators can customize the application before publishing to Microsoft Teams:
 
-* **App Name** – Choose a custom display name for MS Teams.
+* **App Name** – Choose a custom display name for Microsoft Teams.
 * **Logo** – Upload an organization-specific logo.
 * **Description** – Provide a tailored description that reflects organizational context.
 
 **Copilot Enablement**
 
-During configuration, you will be prompted to **Enable Copilot Integration**. It is recommended to enable this option to ensure that MS Teams users can access AI for Work features through Copilot.
+During configuration, you will be prompted to **Enable Copilot Integration**. It is recommended to enable this option to ensure that Microsoft Teams users can access AI for Work features through Copilot.
 
 
 ### Phase 7: Microsoft Teams Application Deployment
@@ -144,16 +144,16 @@ Deploy the AI for Work application to Microsoft Teams for user access.
 
 **Generate Application Manifest**
 
-**Download Manifest**: Upon configuring credentials in the AI for Work platform, generate and download the MS Teams application manifest file. This manifest file contains all the necessary configurations for integrating with Microsoft Teams.
+**Download Manifest**: Upon configuring credentials in the AI for Work platform, generate and download the Microsoft Teams application manifest file. This manifest file contains all the necessary configurations for integrating with Microsoft Teams.
 
 <img src="../images/teams_8.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
-**Upload to MS Teams Admin Cente**
+**Upload to Microsoft Teams Admin Cente**
 
-**Prerequisites Verification**: Ensure you have **Upload Custom App** permissions in the MS Teams Admin Center. Verify organizational policies allow custom app installations.
+**Prerequisites Verification**: Ensure you have **Upload Custom App** permissions in the Microsoft Teams Admin Center. Verify organizational policies allow custom app installations.
 
 1. Sign in to[ Microsoft Teams Admin Center](https://admin.teams.microsoft.com/)<span style="text-decoration:underline;">.</span>
-2. Navigate to **MS Teams apps** → **Manage apps.**
+2. Navigate to **Microsoft Teams apps** → **Manage apps.**
 3. Click **Upload new app**.
 <img src="../images/teams_9.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
@@ -168,12 +168,12 @@ After uploading, configure app permission and setup policies.
 
 ### Phase 8: User Access Configuration Options in AI for Work
 
-You can decide how to distribute the AI for Work app in MS Teams:
+You can decide how to distribute the AI for Work app in Microsoft Teams:
 
 * **Add App for All Users** (Recommended)
 
     * Automatically adds the AI for Work app for all employees in the organization.
-    * All users receive a notification in MS Teams and a **welcome message** when the app is added.
+    * All users receive a notification in Microsoft Teams and a **welcome message** when the app is added.
 
 !!!note
 
@@ -181,8 +181,8 @@ You can decide how to distribute the AI for Work app in MS Teams:
 
 * **Let Users Add App Themselves**
 
-    * The app will be available in the MS Teams App Marketplace.
-    * Users will need to **search for the app** in MS Teams and add it manually.
+    * The app will be available in the Microsoft Teams App Marketplace.
+    * Users will need to **search for the app** in Microsoft Teams and add it manually.
     * No automatic notifications or installations occur. 
 
 !!!note
@@ -192,7 +192,7 @@ You can decide how to distribute the AI for Work app in MS Teams:
 * **Add App for Selected Users or User Groups**
 
     * Assigns the app only to specific users or security groups.
-    * Selected users are automatically notified in MS Teams and receive the welcome message.
+    * Selected users are automatically notified in Microsoft Teams and receive the welcome message.
     * Other users must find and install the app manually from the Marketplace. 
 
 !!!note
@@ -203,10 +203,10 @@ You can decide how to distribute the AI for Work app in MS Teams:
 
 ## Troubleshooting Guide
 
-**Bot Not Responding in MS Teams**
+**Bot Not Responding in Microsoft Teams**
 
 * Verify the webhook URL is correctly configured in Azure Bot.
-* Check that the MS Teams channel is enabled and saved.
+* Check that the Microsoft Teams channel is enabled and saved.
 * Validate client secrets haven't expired.
 
 **Authentication Failures**
@@ -217,7 +217,7 @@ You can decide how to distribute the AI for Work app in MS Teams:
 
 **Manifest Upload Failures**
 
-* Ensure you have proper permissions in the MS Teams Admin Center.
+* Ensure you have proper permissions in the Microsoft Teams Admin Center.
 * Verify the manifest file is not corrupted during download.
 * Check organizational policies to allow custom app uploads.
 

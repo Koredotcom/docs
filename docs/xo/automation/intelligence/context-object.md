@@ -471,7 +471,7 @@ The following is a payload response that contains a context object:
          "5":"500",
          "TestData-Ent":"1000234",
          "ec1":"Enterprise Context session variable from processor",
-         "Enterprise_G_Smith_Email":"george.smith@kore.com",
+         "Enterprise_J_Doe_Email":"john.doe@example.com",
          "enterprisesessiondialog":"enterprisesessiondialogvalue",
          "enterprisecustomprocessor":"enterprisecustomprocessorvalue",
          "enterprisepreprocessor":"enterprisepreprocessorvalue",
@@ -496,7 +496,7 @@ The following is a payload response that contains a context object:
          "jTitle":"Documentation Manager",
          "profImage":"profile.png",
          "activationStatus":"active",
-         "emailId":"help.docs@kore.com",
+         "emailId":"john.doe@example.com",
          "firstName":"Help",
          "lastName":"Docs",
          "orgId":"o-b30656ae-XXXX-XXXX-9181-065f7de34be9",
@@ -504,7 +504,7 @@ The following is a payload response that contains a context object:
          "customData":null,
          "identities":[
             {
-               "val":"help.docs@kore.com",
+               "val":"john.doe@example.com",
                "type":"email"
             },
             {

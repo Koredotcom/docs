@@ -2,7 +2,7 @@
 
 Search agents combine retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. Search agents leverage existing knowledge bases to find and retrieve relevant information and then use LLM models to generate an accurate and precise response.
 
-Users can connect Kore’s SearchAI applications or Amazon Q Indices in Search Agents with a simple description. **Search** AI allows you to configure and index content from various knowledge bases, files, and websites in the application, which is then used to dynamically provide answers to user queries. Amazon Q indexes enterprise data in your AWS cloud, using 90+ connectors for AWS and non-AWS systems. This provides a comprehensive search across your organization's knowledge base while maintaining data sovereignty.
+Users can connect SearchAI applications or Amazon Q Indices in Search Agents with a simple description. **Search** AI allows you to configure and index content from various knowledge bases, files, and websites in the application, which is then used to dynamically provide answers to user queries. Amazon Q indexes enterprise data in your AWS cloud, using 90+ connectors for AWS and non-AWS systems. This provides a comprehensive search across your organization's knowledge base while maintaining data sovereignty.
 
 With Search AI, configure the application to index all relevant information from various sources, such as the company website, documentation sites, product guides, and FAQ pages. With Amazon Q, you can index the data in your own AWS cloud. Once the content source is configured, create a **RAG Agent** that can interact with your chosen search solution to retrieve and generate accurate, up-to-date information. This agent will respond to user queries that match with description or purpose given during agent creation. For use cases when a search index should act as the default knowledge repository (without a given description for intent), please connect it within [Enterprise Knowledge](https://docs.google.com/document/u/0/d/1CQ5sn2honhl1BXIDkwSxMtGqa8HiwsEtaYIQv9OZIcA/edit).
 
@@ -47,13 +47,13 @@ For instance, if an agent is designed to answer all the user queries related to 
 
 ### Step 2: Configure Search Index
 
-The next step is to configure your search index, which contains the indexed content used for answer generation. Kore.ai's AI for Work allows flexible integration with different search solutions based on your enterprise search needs.
+The next step is to configure your search index, which contains the indexed content used for answer generation. AI for Work allows flexible integration with different search solutions based on your enterprise search needs.
 
 In the **Search Index Options**, you can choose between:
 
-#### Option 1: Kore Search AI
+#### Option 1: Search AI
 
-If you select **Kore Search AI**, provide the following details for integration. These details are available in the **Search AI app** on the **Credentials** page under the **Manage** tab, click **Dev Tools,** and choose the **Web/Mobile SDK** tab. Refer to[ this](https://docs.kore.ai/xo/app-settings/dev-tools/kore-ai-web-sdk/) for more details.
+If you select **Search AI**, provide the following details for integration. These details are available in the **Search AI app** on the **Credentials** page under the **Manage** tab, click **Dev Tools,** and choose the **Web/Mobile SDK** tab. Refer to[ this](https://docs.kore.ai/xo/app-settings/dev-tools/kore-ai-web-sdk/) for more details.
 
 * **URL**: Select your Search AI instance where the application is hosted.
 * **App ID**: Application ID of the Search AI app.
@@ -107,4 +107,4 @@ Publish your agent and define access permissions and enablement.
     * **Users Choice**: Users can enable or disable the agent as needed.
 
 !!! note
-    The publishing options are defined in the Workspace settings. For additional information, refer to [Workspace](https://docs.kore.ai/ai-for-work/Administration/workspace/).
+    The publishing options are defined in the Workspace settings. For additional information, refer to [Workspace](../workspace-management/account-workspace.md).

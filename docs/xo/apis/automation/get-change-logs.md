@@ -642,3 +642,7 @@ curl -X GET \
     }
 ]
 ```
+
+### Related Link
+
+* [Change Log](../../app-settings/change-logs.md)

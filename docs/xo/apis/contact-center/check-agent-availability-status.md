@@ -4,7 +4,7 @@ To check the availability of agents based on specified skill IDs, queue IDs, and
 
 | **METHOD**   | POST                                                                                   |
 |--------------|---------------------------------------------------------------------------------------------|
-| **Endpoint** | `http://{{host}}/agentassist/api/v1/public/{{botId}}/agents/availability` |
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{botId}}/agents/availability` |
 | **Content-Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Configuration |
@@ -19,7 +19,7 @@ To check the availability of agents based on specified skill IDs, queue IDs, and
 ## Sample Request
 
 ```
-curl --location --request POST 'http://localhost/agentassist/api/v1/public/<botId>/agents/availability' \
+curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/<botId>/agents/availability' \
 --header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --header 'accountId: <accountId>' \

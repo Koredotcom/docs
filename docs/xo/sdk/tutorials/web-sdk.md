@@ -10,8 +10,8 @@ The following list describes the general steps you will take to install and conf
 1. **Build the Bot to be integrated** - For this tutorial, you will install the _Travel Planning Sample_ bot that uses open APIs to get flight and location information, along with weather reports.
 2. **Configure Web/Mobile Client channel** – To use the _Travel Planning Sample_ bot with the Web SDK, you must configure the bot for the Web/Mobile Client channel.
 3. **Create a new Client App** – When you configure the Web/Mobile Client channel for the _Travel Planning Sample_ bot, you must create a client app and select the JWT signing algorithm used to generate the authentication tokens.
-4. **Publish the bot** – After you have configured the _Travel Planning Sample_ bot, you must publish the bot which sends the bot to the Bots Admin for approval.
-5. **Approve and Deploy the bot** – In the Bots Admin Console, the published bot and tasks must be approved to deploy.
+4. **Publish the app** – After you have configured the _Travel Planning Sample_ bot, you must publish the bot which sends the bot to the Admin for approval.
+5. **Approve and Deploy the app** – In the Admin Console, the published bot and tasks must be approved to deploy.
 6. **Download and install Node.js** – You will need to install Node.js used to host the JWT token generation web service for the Web SDK to communicate between the bot in the test application and the Kore.ai Bots Platform.
 7. **Download and decompress the test application** –  The test application, [SDKApp](https://s3.amazonaws.com/static-kore/downloads/SDKApp.zip) is used to simulate your application that will host the Kore.ai bot as a channel on a web page using your computer local host server.
 8. **Download and decompress the Kore.ai Web SDK** – The Web SDK contains the libraries used to communicate and run the bot in the test application using the Web/Mobile Client channel. You will need to configure settings in the index.html file for your computer.
@@ -78,7 +78,7 @@ Now that the bot is created and defined for the Web/Mobile Client channel, you a
         ```javascript
             "clientSecret": "{client secret}"
             $.ajax({
-            url: "http://localhost:3000/api/users/getJWT",
+            url: "https://localhost:3000/api/users/getJWT",
                 //this is sample url of a localhost. 
                 //This should include the url where you are hosting the bot.
             botOptions.userIdentity = ' ';
@@ -110,7 +110,7 @@ Now that the bot is created and defined for the Web/Mobile Client channel, you a
             ```javascript
                "clientSecret": "{client secret}"
                 $.ajax({
-                    url: "http://localhost:3000/api/users/getJWT",
+                    url: "https://localhost:3000/api/users/getJWT",
                         //this is a sample URL of a local host. 
                         //This should include the URL where you are hosting the bot.
                     botOptions.userIdentity = ' ';
@@ -188,10 +188,10 @@ For example, a user may have started a conversation with the bot using an anonym
  "iat": 1611810186883,
  "exp": 1611813786.883,
  "aud": "https://idproxy.kore.com/authorize",
- "iss": "cs-d3042d3e-7da4-55da-a94d-783349270cc0",
- "sub": "knowuser1@test.com",
+ "iss": "cs-d3042d3e-7da4-55da-a94d-78334927xxxx",
+ "sub": "john.doe@example.com",
  "isAnonymous": "false",
- "identityToMerge": "anonymoususer1@test.com"
+ "identityToMerge": "john.doe@example.com"
 }
 ```
 
@@ -240,10 +240,10 @@ botOptions.botInfo = {
 
 ### Some commonly encountered errors
 
-* A wrong URL is given in index.html, users see a 404 error. Double-check the URL. URL changes depending on whether you are hosting the bot on your web SDK or Kore’s web SDK. If it is Kore web SDK, then the URL is `http://demo.kore.net:3000/users/sts 7`.
+* A wrong URL is given in index.html, users see a 404 error. Double-check the URL. URL changes depending on whether you are hosting the bot on your web SDK or Kore’s web SDK. If it is Kore web SDK, then the URL is `https://demo.kore.net:3000/users/sts 7`.
 If you are hosting on your in-house web SDK, then provide the respective URL.
 * `missing/Invalid jwt.sub()`: This error occurs for enterprise Bots, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html.
-`botOptions.userIdentity = 'x@gmail.com';// Provide users email id here.`
+`botOptions.userIdentity = 'john.doe@example.com';// Provide users email id here.`
 *`Not found`: The user sees this error when either the wrong clientID or no clientID is given. Check the correct ClientID from the Bot – API Extensions option.
 `botOptions.clientId = "{clientID}"; // secure client-id`
 *`error verifying the jwt`: the Wrong clientSecret is given in index.html: Check the correct clientSecret you get from Bot – API Extensions option

@@ -132,7 +132,7 @@ curl --location
    <tr>
    <td><strong>userEmailId</strong>
    </td>
-   <td>	The email ID of the bot owner or a developer with whom the bot is shared. For example, “userEmailId”: “<i>john.stevens@kore.com</i>“</td>
+   <td>	The email ID of the app owner or a developer with whom the app is shared. For example, “userEmailId”: “<i>john.doe@example.com</i>“</td>
    <td>Required   </td>
   </tr>
 </table>

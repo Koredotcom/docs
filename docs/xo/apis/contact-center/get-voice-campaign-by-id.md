@@ -6,7 +6,7 @@ Use this API to fetch complete details of an existing voice campaign using the c
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{IId}}/campaign/{{campaignId}}`                                                   |
 | **Content-Type**  | `application/json`                                                                                                                                           |
-| **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token)                 |
+| **Authorization** | `auth: {{JWT}}` <br> See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token)                 |
 | **API Scope**     | Campaign Management                                                                                                                                          |
 
 ## Path Parameters

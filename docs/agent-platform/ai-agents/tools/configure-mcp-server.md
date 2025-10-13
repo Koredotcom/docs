@@ -6,7 +6,7 @@ To integrate tools from an MCP server into an agent, follow these steps:
 ![Add Tool](images/mcp/home.png "Add tool")
 
 2. Provide the MCP server configuration on the following page.![MCP Config](images/mcp/mcp-config.png "MCP Config")
-    1. **Name**- Provide a unique name for the MCP server. 
+    1. **Name**- Provide a unique name for the MCP server.
     2. **Description**- Provide a description of the capabilities/tools offered by the server. 
     3. **Request Definition** - Define how the platform should send a request to the MCP server to fetch available tools. Click **Configure** and provide the MCP server configuration details. ![MCP Config](images/mcp/mcp-config-type.png "MCP Config")
         1. Select the MCP server configuration type - HTTP or SSE. 
@@ -14,7 +14,7 @@ To integrate tools from an MCP server into an agent, follow these steps:
         3. Headers:  Any required headers like Authorization tokens.
 
 3. Click the **Test** button to fetch tool metadata from the MCP server. 
-4. Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click **Add Selected** to add the tools to the agent. 
+4. Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click Add Selected to add the tools to the agent. 
 
 
 ## Tool Naming Convention
@@ -40,23 +40,23 @@ To test a tool,
 2. Click on **Run Sample Execution**.
 ![Preview](images/mcp/tool-preview.png "Preview")
 
-3. Enter sample values for the inputs and click **Confirm** to initiate a request to the MCP server. 
+3. Enter sample values for the inputs and click **Execute** to initiate a request to the MCP server. 
 ![Test](images/mcp/test-mcp.png "Test MCP tool")
 4. The request is sent to the MCP server, and the resulting output is displayed in the **Sample Response** section.
 
 
 ## Updating/Reconfiguring the MCP server
 
-Whenever there are any updates to the tools hosted via the MCP server or, reconfigure the MCP server in the Agentic App for the changes to reflect. 
+Whenever there are any updates to the tools hosted via the MCP server, reconfigure the MCP server in the Agentic App for the changes to reflect. 
 
 Use the **refresh** icon to fetch updated content from the MCP server. 
 
 ![Refresh MCP](images/mcp/refresh.png "Refresh MCP")
 
 
-To modify the configuration of the MCP server, click on the ellipsis in the right corner of the MCP server and click **Edit Server**. Make the necessary changes and save. 
+To edit the MCP server configuration, select the More options menu in the top-right corner of the MCP server card, and then select Edit Server. Make the required changes and Save.
 
-![MCP Config](images/mcp/modify-mcp.png "Modify MCP Config")
+![MCP Config](images/mcp/edit-mcp.png "Modify MCP Config")
 
 ## Security Considerations
 
@@ -74,4 +74,4 @@ Yes, an agentic app can be configured to connect to one or more MCP servers, eac
 
 **Does Agent Platform automatically fetch the latest set of tools from the MCP server?**
 
-Currently, the agent platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.
+Currently, the Agent Platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.

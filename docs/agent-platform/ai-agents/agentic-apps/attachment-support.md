@@ -46,7 +46,7 @@ This metadata is stored in the system memory, sessionMeta, in the **artifacts** 
       "filename": "app-export.json",
       "mimetype": "application/json",
       "isActive": false,
-      "downloadUrl": "http://localhos/api/v1/getMediaStream/orgFiles/public?h=dHkwTlA3QmFpVmgxUDAzWmVScmd0eWNLV1Y1dUtrNFV6cU5IdWpycXZPbz0$"
+      "downloadUrl": "https://localhost/api/v1/getMediaStream/orgFiles/public?h=dHkwTlA3QmFpVmgxUDAzWmVScmd0eWNLV1Y1dUtrNFV6cU5IdWpycXZPbz0$"
     }
   ]
 ```

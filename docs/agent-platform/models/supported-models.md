@@ -4,6 +4,8 @@ The Agent Platform offers flexible orchestration and runtime support for a wide 
 
 ## Supported AI Models for Agents and Supervisors
 
+### External Models
+
 Agentic Apps supports Agent and Supervisor orchestration with the most widely used models from providers such as OpenAI, Azure OpenAI, Anthropic, and Google.
 
 
@@ -32,6 +34,10 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-4.1-nano-2025-04-14</li>
     <li>gpt-4.5-preview-2025-02-27</li>
     <li>o3-mini</li>
+    <li>gpt-5-2025-08-07</li>
+    <li>gpt-5-mini-2025-08-07</li>
+    <li>gpt-5-nano-2025-08-07</li>
+    <li>gpt-5-chat-latest</li>
   </ul>
    </td>
   </tr>
@@ -66,6 +72,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>claude-3-5-haiku-20241022</li>
     <li>claude-sonnet-4-20250514</li>
     <li>claude-opus-4-20250514</li>
+    <li>claude-opus-4-1-20250805</li>   
   </ul>
    </td>
   </tr>
@@ -121,6 +128,17 @@ While Agent and Supervisor Orchestration is supported for most commonly used LLM
   </tr>
 </table>
 
+### Custom Model Support in Agentic Apps
+
+Agentic Apps also support integrating with custom third party models via API Integration. 
+
+To use a custom model in Agentic Apps
+
+* The model must support **Tool Calling** functionality.
+* The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
+
+
+For detailed steps, see [Add an External Model Using API Integration](external-models/add-an-external-model-using-api-integration.md).
 
 ## Supported Open-Source Models
 
@@ -419,6 +437,59 @@ The supported models and their variants are given below:
 
 
 
+### Supported Models for Structured Output
+
+Kore-hosted open-source models can produce structured JSON responses, making outputs consistent and easy to parse.
+
+* Structured output support depends on the optimization technique used: No optimization or vLLM.
+* Models optimized with CT2, fine-tuned models, Hugging Face imports, and locally imported models are not supported.
+
+The following table lists the models that support structured JSON output:
+
+| Model Name                             | vLLM | No Optimization |
+|----------------------------------------|------|----------------|
+| amazon/MistralLite                     | ❌   | ✅             |
+| argilla/notus-7b-v1                    | ❌   | ✅             |
+| EleutherAI/gpt-j-6b                    | ❌   | ✅             |
+| facebook/opt-1.3b                      | ✅   | ✅             |
+| facebook/opt-2.7b                      | ✅   | ✅             |
+| facebook/opt-350m                      | ✅   | ✅             |
+| facebook/opt-6.7b                      | ✅   | ✅             |
+| google/gemma-2b                        | ❌   | ✅             |
+| google/gemma-2b-it                     | ❌   | ✅             |
+| google/gemma-7b                        | ❌   | ✅             |
+| google/gemma-7b-it                     | ❌   | ✅             |
+| HuggingFaceH4/zephyr-7b-alpha          | ❌   | ✅             |
+| HuggingFaceH4/zephyr-7b-beta           | ❌   | ✅             |
+| meta-llama/Llama-2-7b-chat-hf          | ❌   | ❌             |
+| meta-llama/Llama-2-7b-hf               | ❌   | ✅             |
+| meta-llama/Llama-3.2-1B                | ✅   | ❌             |
+| meta-llama/Llama-3.2-1B-Instruct       | ✅   | ❌             |
+| meta-llama/Llama-3.2-3B                | ✅   | ❌             |
+| meta-llama/Llama-3.2-3B-Instruct       | ✅   | ❌             |
+| meta-llama/Meta-Llama-3-8B             | ✅   | ✅             |
+| meta-llama/Meta-Llama-3-8B-Instruct    | ❌   | ✅             |
+| meta-llama/Meta-Llama-3.1-8B           | ✅   | ✅             |
+| meta-llama/Meta-Llama-3.1-8B-Instruct  | ❌   | ✅             |
+| microsoft/Phi-3-medium-128k-instruct   | ❌   | ✅             |
+| microsoft/Phi-3-medium-4k-instruct     | ❌   | ✅             |
+| microsoft/Phi-3-mini-128k-instruct     | ✅   | ✅             |
+| microsoft/Phi-3-mini-4k-instruct       | ❌   | ✅             |
+| microsoft/phi-1                        | ❌   | ✅             |
+| microsoft/phi-1_5                      | ❌   | ✅             |
+| microsoft/phi-2                        | ✅   | ✅             |
+| mistralai/Mistral-7B-Instruct-v0.1     | ❌   | ✅             |
+| mistralai/Mistral-7B-Instruct-v0.2     | ❌   | ✅             |
+| mistralai/Mistral-7B-Instruct-v0.3     | ✅   | ✅             |
+| mistralai/Mistral-7B-v0.1              | ❌   | ✅             |
+| openai-community/gpt2-large            | ❌   | ✅             |
+| openai-community/gpt2-medium           | ❌   | ✅             |
+| openai-community/gpt2-xl               | ❌   | ✅             |
+| tiiuae/falcon-7b                       | ❌   | ✅             |
+| tiiuae/falcon-7b-instruct              | ❌   | ✅             |
+| tiiuae/falcon-rw-1b                    | ✅   | ✅             |
+
+
 ## Supported External Models for Easy Integration
 
 With Easy Integration, you can quickly connect to external model providers, such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock. No infrastructure setup is needed—just authenticate and start deploying models within flows, tools, or agents.
@@ -460,6 +531,7 @@ Here is the list of all the external models supported in Agent Platform:
 <li>claude-sonnet-4-20250514</li>
 
 <li>claude-opus-4-20250514</li>
+<li>claude-opus-4-1-20250805</li>
 
 <li>Claude Sonnet Vision (Available only for the Image-to-text node, No Prompt Studio support.)</li>
 </ul>
@@ -520,48 +592,39 @@ Here is the list of all the external models supported in Agent Platform:
    </td>
   </tr>
   <tr>
-   <td>Open AI
-   </td>
+   <td>Open AI</td>
    <td>
 <ul>
-<li>Dall-e 2</li>
-<li>Dall-e 3</li>
-<li>gpt-4o</li>
 
-<li>gpt-4o-mini</li>
-
-<li>gpt-3.5-turbo</li>
-
-<li>gpt-3.5-turbo-1106</li>
-
-<li>gpt-4-0613</li>
-
-<li>o1-preview</li>
-
-<li>o1-mini</li>
-
-<li>o3-mini</li>
-
-<li>gpt-4-0125-preview</li>
-
-<li>gpt-4-turbo-preview</li>
-
-<li>gpt-4-1106-preview</li>
-
-<li>gpt-4</li>
-
-<li>gpt-4.1-2025-04-14</li>
-
-<li>gpt-4.1-mini-2025-04-14</li>
-
-<li>gpt-4.1-nano-2025-04-14</li>
-
-<li>gpt-4.5-preview-2025-02-27</li>
-
-<li>Whisper-1</li>
-
-<li>Whisper (Available only for the Audio-to-text node, No Prompt Studio support.)</li>
-</ul>
+<li> gpt-4o</li>
+<li> gpt-4o-mini</li>
+<li> gpt-3.5-turbo</li>
+<li> gpt-3.5-turbo-1106</li>
+<li> gpt-4-0613</li>
+<li> o1-preview</li>
+<li> o1-mini</li>
+<li> o3-mini</li>
+<li> gpt-4-0125-preview</li>
+<li> gpt-4-turbo-preview</li>
+<li> gpt-4-1106-preview</li>
+<li> gpt-5-2025-08-07</li>
+<li> gpt-5-nano-2025-08-07</li>
+<li> gpt-5-mini-2025-08-07</li>
+<li> gpt-5-chat-latest</li>
+<li> gpt-4</li>
+<li>whisper (Available only for the Audio-to-text node, No Prompt Studio support.)</li>
+<li>whisper-1</li>
+<li> gpt-4o-realtime-preview</li>
+<li> gpt-4o-mini-realtime-preview</li>
+<li> gpt-4.1-2025-04-14</li>
+<li> gpt-4.1-mini-2025-04-14</li>
+<li> gpt-4.1-nano-2025-04-14</li>
+<li> gpt-4.5-preview-2025-02-27</li>
+<li> dall-e-3</li>
+<li> dall-e-2</li>
+<li> text-embedding-3-small</li>
+<li> text-embedding-3-large</li>
+<li> text-embedding-ada-002</li></ul>
    </td>
   </tr>
 </table>

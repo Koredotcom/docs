@@ -55,13 +55,6 @@ Ensure that the streamed response follows the Platform's required format:
     * The saved prompt will appear with a stream tag in the prompts library. 
     * Enabling streaming disables the “Exit Scenario”, “AI Agent Response”, “Collected Entities”, and “Tool Call Request” (for Agent Node) fields.
 
-## Configure Voice Gateway
-
-Streaming is currently supported only by the Kore Voice Gateway channel. To configure it, see Configure [Voice Gateway](../channels/voice-gateway/configure-voice-gateway.md).
-
-After configuring the settings, enable LLM streaming in the Contact Center. Navigate to **Contact Center AI** > **Contact Center** > **Configurations** > **Advanced Settings** > **LLM Streaming**, then turn on the toggle for **real-time LLM response streaming**.  
-<img src="../images/enable-streaming.png" alt="Enable Streaming" title="Enable Streaming" style="border: 1px solid gray; zoom:70%;">
-
 ## Benchmarking
 
 | Task             | Mode         | Input Tokens | Output Tokens | Time Taken (seconds) | Reduction (%)                      |

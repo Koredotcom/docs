@@ -13,8 +13,8 @@ The email channel offers the following functionalities:
 
 You can use the Kore.ai Email domain or create your custom Email Domain to configure your email addresses.
 
-To configure the email domains, go to **Contact Center AI** > **Flows & Channels** > **CHANNELS** > **Digital** > **Email**.  
-<img src="../images/email-page.png" alt="Email Icon" title="Email Icon" style="border: 1px solid gray; zoom:80%;">
+To configure the email domains, go to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.  
+<img src="../images/email-digital-page.png" alt="Email Icon" title="Email Icon" style="border: 1px solid gray; zoom:80%;">
 
 ## Kore.ai Email Domain
 
@@ -75,74 +75,46 @@ Steps to publish email addresses in the Kore domain:
 4. A success message is displayed and the email address is published.  
     <img src="../images/email-published.png" alt="Email Address Published" title="Email Address Published" style="border: 1px solid gray; zoom:80%;">
 
-### Edit a Kore Domain Email Address
 
-Steps to edit an email address in the Kore domain:
-
-1. Click the ellipsis icon (**⋮**) beside the email address and click **Edit**.  
-    <img src="../images/edit-kore-email.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
-
-2. The email configuration window is displayed. Click **Update** after making the changes.  
-    <img src="../images/update-email-configuration-kore.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
-
-### Delete a Kore Domain Email Address
-
-Steps to delete an email address in the Kore domain:
-
-1. Click the ellipsis icon (**⋮**) beside the email address and click **Delete**.  
-    <img src="../images/delete-kore-email.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
-
-2. Click **Delete** on the confirmation pop-up window.  
-    <img src="../images/delete-kore-email-confirmation.png" alt="Delete Confirmation" title="Delete Confimation" style="border: 1px solid gray; zoom:80%;">
 
 ## Custom Email Domain
 
 Custom email domains add a professional look to your email communications, reinforcing your brand identity with every email you send or receive. Customers perceive custom emails as established, reliable, and legitimate compared to generic email addresses. For example, You can create [help@yourbusiness.com](mailto:help@yourbusiness.com), a branded email account that uses your organization's domain name instead of a domain provided by Kore.ai. You can add up to three email accounts (sales@, support@, info@, etc.) in each custom domain for better organization and delegation. By granting access to your email accounts within the domain, you can track the activity of the configured accounts, respond to incoming emails, and send outbound emails. Email filters are less likely to flag emails from custom domains as spam, ensuring better deliverability rates.
 
-### Create a Custom Domain
+Currently, we support two types of custom domains: Standard and Advanced. The Standard has a limitation of 5 domains and 5 emails per domain, whereas the Advanced supports 50 domains and 50 emails per domain.
 
-Steps to create a custom domain:
 
-1. Click the **+ New Domain** button.  
-    <img src="../images/new-domain.png" alt="+ New Domain" title="+ New Domain" style="border: 1px solid gray; zoom:80%;">
+### Standard Custom Domain
 
-2. In the Add Domain dialog box, enter the **Domain Name** and click **Create**.  
-    <img src="../images/domain-name.png" alt="Domain Name" title="Domain Name" style="border: 1px solid gray; zoom:60%;">
+Follow these steps to set up a standard custom domain and add an email ID to it.
 
-3. A success message is displayed and the new domain is created.  
-    <img src="../images/domain-created.png" alt="Domain Created" title="Domain Created" style="border: 1px solid gray; zoom:80%;">
 
-### Delete a Custom Domain
+#### Step 1: Create a Standard Custom Domain
 
-Steps to delete a custom domain:
 
-1. Click the ellipsis icon (**⋮**) on the right corner and click **Delete**.  
-    <img src="../images/delete-domain.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Delete** on the confirmation pop-up window.
+1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
+2. Click **+ New Domain** and select **Custom Domain**.
+3. Enter the **Domain Name**. Select the domain type as Standard, and click **Create**.  
+<img src="../images/email-stddomain.png" alt="Standard Custom Domain" title="Standard Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
-    !!! Note
+4. The domain created a success message is displayed.
 
-        Custom domains can only be deleted when no email addresses are added to the domain.  
 
-    <img src="../images/delete-domain-confirmation.png" alt="Delete Domain Confirmation" title="Delete Domain Confirmation" style="border: 1px solid gray; zoom:80%;">
+#### Step 2: Create a Custom Email Address
 
-### Create a Custom Email Address
 
-Steps to create an email address in the custom domain:
 
-1. Click **+ New Email Address**.  
-    <img src="../images/new-custom-email.png" alt="+ Email Address" title="+ Email Address" style="border: 1px solid gray; zoom:80%;">
-
-2. Enter the following details in the **Configuration** tab.
+1. On the Email Channel page, click **+ New Email ID**.
+2. On the email configuration tab, enter the following details.
     1. Email Address
     2. Display Name
     3. Password
     4. Enter the following details to set up the mail SSL connection for Incoming and Outgoing emails.
-        1. Protocol
-        2. Incoming/Outgoing email server
-        3. Port
-        4. Select “Use SSL to connect” if you want to use a Secure Socket Layer.
+        * Protocol
+        * Incoming/Outgoing email server
+        * Port
+        * Select “Use SSL to connect” if you want to use a Secure Socket Layer.
     5. Choose whether to use the custom email for inbound, outbound, or both under **Additional Settings**.
     6. Choose whether you want to send a contact card to all users as a part of the introduction message under **Send contact card (.VCF)**.
     7. Under the Enable Channel section, select **Yes** to enable the channel.  
@@ -163,47 +135,20 @@ Steps to create an email address in the custom domain:
 3. Click the **Test Connection** button to verify the domain ownership. A success message is displayed below the button upon successful completion.  
     <img src="../images/test-connection.png" alt="Test Connection" title="Test Connection" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Save.**
-5. A success message is displayed and the email address is created.
+4. Click **Save**.
 
-    !!! Note
-
-        You can create up to three custom email addresses in a custom domain.  
-
-    <img src="../images/custom-email-created.png" alt="Email Address Created" title="Email Address Created" style="border: 1px solid gray; zoom:80%;">
-
-### Edit a Custom Domain Email
-
-Steps to edit an email address in the custom domain:
-
-1. Click the ellipsis icon (**⋮**) beside the email address and click **Edit**.  
-    <img src="../images/edit-custom-email.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
-
-2. The email configuration window is displayed. Click **Update** after making the changes.  
-    <img src="../images/update-email-configuration-custom.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
-
-### Delete a Custom Domain Email
-
-Steps to delete an email address in the custom domain:
-
-1. Click the ellipsis icon (**⋮**) beside the email address and click **Delete**.  
-    <img src="../images/delete-custom-email.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
-
-2. Click **Delete** on the confirmation pop-up window.  
-    <img src="../images/delete-custom-email-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
-
-## Email Blocklist
+#### Step 3: Email Blocklist
 
 Email blocklisting allows admins to specify a list of blocklisted email addresses during email address creation preventing blocking interactions originating from blocklisted email addresses, automations, and subsequent agent transfers are prevented, reducing unnecessary processing, and ensuring that resources are allocated to valid interactions.
 
-### Blocklist Verification
+**Blocklist Verification**
 
 Upon receiving a new interaction, the system checks the incoming email address against the blocklist associated with the receiving email address.
 
 * If a match is found between the incoming email address and the blocklist, any pre-configured automations linked to the receiving email address will be disabled for that specific interaction. Automated agent transfers triggered by the interaction will be prevented, ensuring that blocklisted emails do not initiate further actions within the system.
 * If no match is found, the system will continue with the usual automation processes and agent transfer rules, handling the  interaction normally.
 
-### Configure Email Blocklist
+**Configure Email Blocklist**
 
 Steps to Configure Email Blocklist:
 
@@ -248,27 +193,71 @@ Steps to Configure Email Blocklist:
         7. A success message is displayed and the email blocklist is updated.  
             <img src="../images/bulk-upload-button.png" alt="Bulk Blocklist Updated" title="Bulk Blocklist Updated" style="border: 1px solid gray; zoom:80%;">
 
-### Edit Blocklisted Email Addresses
 
-1. Go to **Flows & Channels** > **CHANNELS** > **Digital** > **Email** > Click the **Ellipsis** (**⋮**) icon.  
-    <img src="../images/edit-button.png" alt="Ellipsis Button" title="Ellipsis Button" style="border: 1px solid gray; zoom:80%;">
+### Advanced Custom Domain
 
-2. Click **Edit**.  
-    <img src="../images/edit.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:80%;">
+AI for Service now enhances custom domains with advanced capabilities, including email forwarding, domain setup, DKIM, and Flow mapping to improve scalability and brand alignment in enterprise email automation.
 
-3. Do the required changes and click **Update**.
+Key enhancements:
 
-### Delete Blocklisted Email Addresses
 
-Steps to delete blocklisted email addresses:
 
-1. Select the email addresses you want to delete and click the **Delete** (bin) icon.  
-    <img src="../images/select-delete-blocklist.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+* Email Forwarding: Centralize email processing by forwarding emails from enterprise domains to a single Kore.ai mailbox.
+* Advanced Custom Domain Setup: This new option, in addition to the existing Standard setup, supports up to 50 custom domains and 50 email addresses per domain.
+* DomainKeys Identified Mail (DKIM) Support: Secure email authentication is now provided for each advanced custom email domain.
+* Flow Mapping by Email ID: Route incoming emails accurately by linking custom domain email addresses to specific Flows.
 
-2. A confirmation message is displayed. Click **Delete**.  
-    <img src="../images/delete-blocklist.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
+Follow these steps to set up a standard custom domain and add an email ID to it.
 
-3. A success message is displayed and the selected email addresses are deleted.  
-    <img src="../images/deleteblocklist-success.png" alt="Delete Blocklist Success" title="Delete Blocklist Success" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Update**.
+#### Step 1: Generate DKIM
+
+Generate and Configure DKIM for this domain by providing your own private key. The Private key must use 1024-bit to 2048-bit RSA encryption, and be PEM-encoded. Refer [Generating DKIM keys using OpenSSL](generate-dkim.md). 
+
+1. Generate RSA key pair (2048-bit recommended).
+2. Extract the public key in the proper format.
+3. Enter the private key in the DKIM Key field in the Verification screen.
+4. Configure public key in DNS.
+
+
+
+#### Step 2: DKIM Verification
+
+1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
+2. Click **+ New Domain** and select **Custom Domain**.
+3. Enter the **Domain Name**. Select the domain type Advanced, then click **Create**.  
+<img src="../images/email-advdomain.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
+
+4. On the verification tab, enter the **DKIM Private Key**, **Selector Name**, and click **Verify Domain**.
+
+
+    A DKIM selector is a string that identifies which DKIM public key to use for signature verification. It's part of the DKIM DNS record structure.
+
+    **DNS Record Format**: <code>[selector]._domainkey.[domain.com]</code>.
+
+    **Example**: If your selector is "ses2024" and the domain is "example.com", the DNS record would be: <code>ses2024._domainkey[.example.com]</code>.
+    
+    <img src="../images/email-custom-dkim.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
+
+5. The Verification in Progress message is displayed.  
+<img src="../images/email-vip.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
+
+6. Click **Confirm**. You can navigate to the Email Channels page to check the latest status. This might take up to 72 hours. The status can be one of the following: 
+    * **Pending**: DNS records not yet detected.
+    * **Success**: DKIM successfully verified.
+    * **Failed**: DNS records incorrect or missing.
+    * **Temporary Failure**: DNS issues, will retry automatically.  
+    <img src="../images/email-domain.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
+
+#### Step 3: Complete Configuration
+
+After successful DKIM verification, follow these steps:
+
+
+
+1. On the Email Channel page, click **Complete Configuration** for a domain.  
+<img src="../images/email-custom-config-new.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
+
+2. Click **+ New Email ID** to add an email to the domain. 
+3. Enter the **Display Name**, add the **Email ID**  from which emails have to be forwarded or sent, and select the **Usage**.
+4. Click **Save**. The configuration saved message is displayed.

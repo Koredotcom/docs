@@ -369,7 +369,7 @@ The following payload is used to send a response message to the Platform.
   "botInfo": {
     "chatBot": "jarvis_new_import",
     "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356def8",
-    "hostDomain": "http://localhost",
+    "hostDomain": "https://localhost",
     "os": "Linux",
     "device": "Other"
   },
@@ -395,7 +395,7 @@ The following payload is used to send a response message to the Platform.
   "botInfo": {
     "chatBot": "jarvis_new_import",
     "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356def8",
-    "hostDomain": "http://localhost",
+    "hostDomain": "https://localhost",
     "os": "Linux",
     "device": "Other"
   },

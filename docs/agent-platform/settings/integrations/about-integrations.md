@@ -1,54 +1,53 @@
 # Integration with Third-party Services
 
-The **Integrations** feature allows you to connect the Agent Platform to third-party services and use their features seamlessly within your account. This extends the platform’s capabilities to leverage these services and build high-quality AI applications. Once you add a connection for an integration, you can link it to the **Integration node** in the Tool Flow canvas. This allows you to seamlessly use third-party services while building your tool automation. [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
+The **Integrations** feature connects the Agent Platform to third-party services, streamlining access to external tools and automating workflows. Once connected, you can use these integrations from the Tool Flow canvas to build high-quality AI applications. [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
-The Agent Platform supports over 120 integrations across various categories. Each integration is secured by an authorization mechanism supported by the third-party service, which validates the user’s identity before accessing account resources, such as apps or files. The primary auth methods supported for integrations include:
+The Agent Platform supports 120+ integrations with various authorization mechanisms. Each integration uses the third party's authentication to verify users before granting access to account resources. Main authentication methods are:
 
-* **API**: A simple token is passed in the request (usually in headers or query parameters) to authenticate the user or app trying to access an API.
+* **API**: Authenticate by passing a token (usually in headers or query parameters). Used for API Key or Access Token integrations.
 * **OAuth2**: Uses the OAuth2 industry-standard authorization framework to grant limited access to resources on a service without sharing passwords. The auth method uses the following concepts:
     * **Access Token**: A temporary token that the app uses to access the user’s resources.
-    * **Scopes**: Permissions tied to the token (e.g., "read email", "write files").
-    * **Expires**: Tokens often have a time limit for security.
-    * **Refresh Token**: A token used to get a new access token when the old one expires.
-* **Bearer**: **API authentication** where the client sends a **token** (called a *bearer token*) in the request header to access protected resources after a successful login or authorization (usually via OAuth 2.0). The server checks the token to verify if the request is allowed.
-* **Basic Auth**: The client sends a username and password in the request header. The server checks the credentials and either allows the request or returns a 401 Unauthorized error if they’re invalid. The user stays authenticated as long as the connection is active. This method doesn’t track user sessions, credentials are sent with every request. The Agent Platform supports **Basic Auth** for Service Now, Freshdesk, Snowflake,Amplitude, and Mixpanel integrations.
+    * **Scopes**: Specific permissions attached to the token. For example, a token may have a 'read email' scope, which allows an app to access your email data, or a 'write files' scope, which allows it to upload or edit files.
+    * **Expires**: Tokens often have a time limit to increase security, meaning they become invalid after a set time period.
+    * **Refresh Token**: Allows the app to obtain a new access token when the old one expires. No need to log in again.
+* **Bearer**: Use a bearer token in the request header, usually within an OAuth2 workflow, to access protected resources. The server validates the token before granting access.
+* **Basic Auth**: Authenticate using username and password in the request header. Credentials are sent with each request. Supported for ServiceNow, Freshdesk, Snowflake, Amplitude, and Mixpanel integrations.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>Other authentication methods supported for specific integrations include <b>Basic</b>, <b>Basic with JWT</b>, <b>OAuth1</b>, and <b>custom authentication</b> defined by the service provider.</li>
-<li>Some providers may support <b>multiple authentication methods</b>, allowing flexibility based on your integration needs</li></ul></p>
+<p><ul><li>Other authentication methods for certain integrations include: <b>Basic</b>, <b>Basic with JWT</b>, <b>OAuth1</b>, and <b>custom authentication</b> defined by the service provider.</li>
+<li>Some providers may support <b>multiple authentication methods</b>, allowing flexibility based on your integration needs.</li></ul></p>
 </div>
 
 ## Access Integrations
 
-To access the feature, follow the step belows:
+To access the feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in → In Agent Platform Modules → Click **Autonomous Agents**.
    <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. Click **Integrations** on the left navigation menu.
-<img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
+2. Click **Settings** → On the left navigation menu → Click **Integrations**.
+    <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
 
 ## Key Features
 
 The features supported on the **Integrations** page include:
 
 * **All Integrations and Connected Tabs**
+  
+    Click the **All Integrations** tab to see available integrations grouped by category. You can add a connection to these integrations using a supported authentication method, such as API, OAuth2, Bearer Token, or Basic Auth. AI-based integrations you can connect to include [AWS S3 Bucket](../integrations/integrate-with-s3-bucket.md){:target="_blank"}, [Weight & Biases](../integrations/integrate-with-wandb.md){:target="_blank"}, and [Hugging Face](../integrations/enable-hugging-face.md){:target="_blank"}. The category you select filters which integrations are shown in this list.
 
-    Click the **All Integrations** tab to view the list of available integrations based on the category you choose, and add a connection using the supported auth method. Some of the AI-based integrations include [AWS S3 Bucket](../integrations/integrate-with-s3-bucket.md){:target="_blank"}, [Weight & Biases](../integrations/integrate-with-wandb.md){:target="_blank"}, and [Hugging Face](../integrations/enable-hugging-face.md){:target="_blank"}.
+     Once you configure and connect to a third-party service, that integration appears in the **Connected** section and is no longer visible in the **All Integrations** list. If you delete the connection, the integration will return to the **All Integrations** list, allowing you to reconnect in the future.
+     <img src="../images/all-integrations-tab.png" alt="all integrations" title="all integrations" style="border: 1px solid gray; zoom:75%;">
 
-    Once a service connection is configured and established, the integration appears in the **Connected** section and is removed from the **All Integrations** list. If you delete the connection, the integration will be listed again under **All Integrations**.
-    <img src="../images/all-integrations-tab.png" alt="all integrations" title="all integrations" style="border: 1px solid gray; zoom:75%;">
-
-* **Search Integration**: Enter the integration name in the **Search** field to find it in the list. Results will appear for both full and partial matches.
+* **Search Integration**: Enter the name in the **Search** field for full or partial matches.
 <img src="../images/search-integration.png" alt="search integration" title="search integration" style="border: 1px solid gray; zoom:75%;">
 
 * **Category Dropdown List**: The Agent Platform supports multiple categories based on the purpose of the integration, such as AI and Machine Learning, Marketing and Social Media, E-commerce, and more. Select the relevant category or categories in the list and click **Apply** to view the corresponding integrations.
 <img src="../images/select-category-of-integration.png" alt="change category" title="change category" style="border: 1px solid gray; zoom:75%;">
 
 
-* **Authorization Dropdown List**: The available types for authentication methods are API, OAuth2, Bearer, and Basic Auth. Refer to the [overview](../integrations/about-integrations.md#add-a-connection-to-set-up-integration){:target="_blank"} section for more details. Select the required option(s) and click **Apply** to view the relevant integrations.
+* **Authorization Dropdown List**: The available types for authentication methods are API, OAuth2, Bearer, and Basic Auth. Refer to the introduction of this article for more details. Select the required option(s) and click **Apply** to view the relevant integrations.
 <img src="../images/select-category-integration.png" alt="select auth" title="select auth" style="border: 1px solid gray; zoom:75%;">
 
 * **List View**: Click this icon to view the available integration options as a list with the following information:
@@ -1313,7 +1312,7 @@ The following third-party integrations are available on the Agent Platform:
    </td>
   </tr>
   <tr>
-   <td>SearchAI
+   <td>Search AI
    </td>
    <td>Connect to your users' SearchAssist setup.
    </td>
@@ -1704,10 +1703,12 @@ To add a connection and configure an integration, follow the steps below:
 <p>You can also add a connection directly from the <b>Integration node</b> on the Tool Flow canvas. <a href="../../../ai-agents/tools/tool-flows/types-of-nodes/integration-node" target="_blank">Learn more</a>.</p>
 </div>
 
-1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} the **Integrations** page.
-2. **Case 1**: To select a service provider connection for the first time, follow these steps:
+1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} **Integrations**.
+2. The next steps depend on whether you are setting up a connection for the first time or want to use an existing connection.
+    **Case 1**: For a first-time connection, follow these steps:
+    
     * (Optional) In the **All Integrations** tab, select the **Category** and **Authorization** from the respective lists to filter the integration options.
-    * Click the required integration tile/listing from the [available options](./about-integrations.md#supported-integrations){:target="_blank"}.
+    * Click the required integration from the [available options](./about-integrations.md#supported-integrations){:target="_blank"}.
 
      **Case 2**: To select an existing/connected provider, click the **Connected** tab, and click the required provider.
 
@@ -1725,18 +1726,18 @@ To add a connection and configure an integration, follow the steps below:
         <p>You are allowed to select only one auth type for a connection.</p>
         </div>
 
-        * The **Pre-authorize the integration** option is auto-selected, indicating that you must provide authentication credentials to interact with the tool or service. You can select the preferred authentication method, such as *OAuth2*, *Bearer*, or *Basic Auth* from the available options to configure the credentials. 
+        * The **Pre-authorize the integration** option is auto-selected, indicating that you must provide authentication credentials to interact with the tool or service. You can select the preferred authentication method, such as *OAuth2*, *Bearer*, or *Basic Auth*, from the available options to configure the credentials. 
 
         * Based on the selected authorization method, the relevant configuration fields automatically appear under each corresponding authorization type.
 
         **OAuth2**
 
-        * Provide the connection name and select the configured **Auth Profile** from the list in the **Custom** window to associate it with the integration for authentication. [Learn more](../security-and-control/authorization-profile.md#add-authorization-profile){:target="_blank"} about setting up auth profiles in your account. If no auth profiles are configured, you can add one by selecting **+ Create new** and following the steps mentioned [here](../security-and-control/authorization-profile.md#add-authorization-profile){:target="_blank"}.
-        * **Custom auth** allows you to use your custom-configured authentication flow by selecting an **Auth Profile** on the Agent Platform, instead of using third-party authentication.
+        * Provide the connection name and select the configured **Auth Profile** in the **Custom** for authentication by the integration. [Learn more](../security-and-control/authorization-profile.md#add-authorization-profile){:target="_blank"} about adding an auth profile to your account.
+        * **Custom auth**: Allows you to use a tailored authentication process, set up in the Agent Platform, to connect to a service. This is an alternative to using any standard authentication flows like API or OAuth2 provided by the service.
         * Once an Auth Profile is selected, all its credentials are fetched and automatically populate the corresponding fields such as **Redirect URL**, **Scopes**, **Base URL**, and more.
-        * You don’t need to re-authenticate as long as the **authorization profile** remains in your account (i.e., it hasn’t been deleted).
-        * If you attempt to connect to a provider using a deleted auth profile, an error will occur.
-        * When configuring a connection after an auth profile has been deleted, it will no longer appear in the **Custom** window.
+        * No need to re-authenticate unless the authorization profile is deleted from your account.
+        * Connecting to a provider with a deleted auth profile results in an error.
+        * Deleted auth profiles no longer display in the **Custom** window during configuration
         * Click **Authorize** to test the integration for the selected Auth profile.
         <img src="../images/click-authorize.png" alt="click authorize" title="click authorize" style="border: 1px solid gray; zoom:75%;">
 
@@ -1744,7 +1745,7 @@ To add a connection and configure an integration, follow the steps below:
 
         * When you select this auth type, you must enter the bearer token along with related information such as the *Base URL*, *API Key*, *Bot Token*, or other relevant credentials.
         * The required fields depend on the bearer authentication framework supported by the selected service provider.
-        * You can retrieve (copy and paste) these values from the Admin console > Settings section of your account on the provider’s site. 
+        * Retrieve these values from the provider’s Admin console > **Settings** section.
         * Click **Test** to validate the connection. A success message is displayed once the connection is set up.
         <img src="../images/click-test-oauth.png" alt="test oauth" title="test oauth" style="border: 1px solid gray; zoom:75%;">
 
@@ -1752,7 +1753,7 @@ To add a connection and configure an integration, follow the steps below:
 
         * When you select this type, you must enter the **API Key** or **Access Token** for the service provider. 
         * Additional field inputs may be required based on the specific parameters needed to configure the provider.
-        * You can retrieve (copy and paste) these values from the admin console > Settings section of your account on the provider’s site.
+        * Retrieve these values from the Admin console > **Settings** of your provider’s site.
         * Click **Test** to validate the connection.  A success message is displayed once the connection is set up.
         <img src="../images/test-validation.png" alt="test validation" title="test validation" style="border: 1px solid gray; zoom:75%;">
 
@@ -1764,26 +1765,26 @@ To add a connection and configure an integration, follow the steps below:
       **Basic Auth**
 
       * When you select this auth type, you must provide the required configuration values. For example, an **Amplitude** project requires an *API key* and *API secret*.
-      * You can retrieve (copy and paste) these values from the *Admin console* of your account on the provider’s site.
+      * Retrieve these values from the Admin console > **Settings** of your provider’s site.
       * Click **Test** to validate the connection. A success message is displayed once the connection is set up.
 
          <img src="../images/basic-auth-set-up.png" alt="test validation for basic auth" title="test validation for basic auth" style="border: 1px solid gray; zoom:75%;">
 
 
-<ol start="5"><li>Click <b>Save</b>.</li>
+<ol start="5"><li>Click <b>Save</b> after successfully testing the connection.</li>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <b>Save</b> button will not appear until all required inputs have been provided.</p>
 </div></ol>
 
-Once the connection is set up, a success message is displayed.
+A success message appears after setup.
 
 You will be redirected to the following page, where all the connections for the provider are listed.
 <img src="../images/integration-summary.png" alt="integration summary" title="integration summary" style="border: 1px solid gray; zoom:75%;">
 
 ### Manage Connection Errors
 
-* During or after setting up a connection, errors may occur while testing. These errors are often caused by invalid credentials provided during the configuration ([add a connection](../../settings/integrations/about-integrations.md#add-a-connection-to-set-up-integration){:target="_blank"} step). 
+* During or after setting up a connection, errors may occur due to invalid credentials when [adding a connection](../../settings/integrations/about-integrations.md#add-a-connection-to-set-up-integration){:target="_blank"}. 
 
 * **View the error**
     * Navigate to the **Connected** section.
@@ -1827,32 +1828,27 @@ To edit the configuration for a connection, follow the steps below:
 <p>You cannot modify the connection name.</p>
 </div>
 
-1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} the **Integrations** page.
-2. Click the **Connected** tab and select a connection.
-3. Click the **Ellipses** icon for the required connection.
+1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} **Integrations** → Click **Connected** → Select a connection.
+2. For the connection, click the **Ellipses** icon → Select **Edit**.
 <img src="../images/select-edit-int.png" alt="select edit integration" title="select edit integration" style="border: 1px solid gray; zoom:75%;">
 
-4. Select **Edit**.
-5. In the configuration window, modify the required fields in the **Authorization Details** section.
-6. (Optional) Click **Test** to validate the connection.
-7. Click **Save**.
-
-   <img src="../images/save-edited-integration.png" alt="save edited integration" title="save edited integration" style="border: 1px solid gray; zoom:75%;">
+3. In the configuration window, modify the required fields in the **Authorization Details** section.
+4. (Optional) Click **Test** to validate the connection.
+5. Click **Save**.
+     
+     <img src="../images/save-edited-integration.png" alt="save edited integration" title="save edited integration" style="border: 1px solid gray; zoom:75%;">
 
 A success message is displayed once the connection is updated.
-<img src="../images/edit-success-msg.png" alt="edit success message" title="edit success message" style="border: 1px solid gray; zoom:75%;">
 
 ### Delete Integration
 
 To delete an integration, follow the steps below:
 
-1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} the **Integrations** page.
-2. Click the **Connected** tab and select a connection.
-3. Click the **Ellipses** icon for the required connection.
-4. Select **Delete**.
-<img src="../images/select-delete-integration.png" alt="select delete" title="select delete" style="border: 1px solid gray; zoom:75%;">
+1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} **Integrations** → Click **Connected** → Select a connection.
+2. Click the **Ellipses** icon → Select **Delete**.
+   <img src="../images/select-delete-integration.png" alt="select delete" title="select delete" style="border: 1px solid gray; zoom:75%;">
 
-5. Click **Delete** in the confirmation dialog.
+3. Click **Delete**.
 
   <div class="admonition warning">
   <p class="admonition-title">Caution</p>
@@ -1865,10 +1861,9 @@ To delete an integration, follow the steps below:
 
 To test a configured connection, follow the steps below:
 
-1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} the **Integrations** page.
-2. Click the **Connected** tab and select a connection.
-3. Click the **Play** icon for the required connection.
-<img src="../images/action-play-icon.png" alt="test action" title="test action" style="border: 1px solid gray; zoom:75%;">
+1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} **Integrations** → Click **Connected** → Select a connection.
+2. Click **Play** for the connection.
+   <img src="../images/action-play-icon.png" alt="test action" title="test action" style="border: 1px solid gray; zoom:75%;">
 
 The connection is validated in the background, and any errors are highlighted with a **warning** icon. [Learn more](../integrations/about-integrations.md#manage-connection-errors){:target="_blank"} about managing errors.
 
@@ -1880,5 +1875,5 @@ If there are no errors, a success message is displayed when the connection is es
 
 Enabling a connection makes it available for **user authentication** with the service provider. It also becomes accessible for use in the **Integration node** on the Tool Flow canvas. 
 
-Use the **toggle switch** to enable (default setting) or disable the connection as needed.
+Use the toggle switch to enable (default setting) or disable the connection as needed.
 <img src="../images/enable-integration.png" alt="enable integration" title="enable integration" style="border: 1px solid gray; zoom:75%;">

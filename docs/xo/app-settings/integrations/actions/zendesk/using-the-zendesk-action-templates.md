@@ -293,8 +293,8 @@ Steps to create a ticket in the Zendesk integration:
         "source": {
         "from": {},
         "to": {
-        "name": "Tanmay Agrawal",
-        "address": "tanmay.agrawal@kore.com"
+        "name": "Jane Doe",
+        "address": "jane.doe@example.com"
         },
         "rel": null
         }

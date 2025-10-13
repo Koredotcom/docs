@@ -2,34 +2,11 @@
 
 This API supports internal transfer events, reducing reliance on UI socket events. It captures transfer data initiated outside the UI, sends via API payloads, and displays in the Agent AI widget.
 
-<table>
-  <tr>
-   <td><strong>Method</strong>
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Endpoint</strong>
-   </td>
-   <td><code>https://{{host}}/api/v1/hooks/{{botId}}</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Content Type</strong>
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Authorization</strong>
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>
-   </td>
-  </tr>
-</table>
+| Method         | POST |
+|-------------------|-----------|
+| Endpoint       | `https://{{host}}/api/v1/hooks/{{botId}}` |
+| Content Type   | `application/json` |
+| Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
 
 ### Path Parameters
 

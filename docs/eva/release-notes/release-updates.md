@@ -2,6 +2,55 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
+## v1.11.0 Sept 24, 2025
+
+<u>Major Release</u>
+
+This update includes new features and feature enhancement summarized below.
+
+</font></p><font size="4">New Features</font>
+
+**Omni Search (Beta)**
+
+AI for Work now includes **Omni Search**, powered by smart agentic platform. Omni Search replaces basic direct search with a more sophisticated system that understands your account and user context. It delivers more relevant and accurate results by recognizing who you are, what you have access to, and what you typically need.
+
+Key Improvements
+
+* Context-Aware Search: The system has more context about you and your organization to understand and plan your query.
+* Account-Level Intelligence: Search results are tailored to your organization's specific data and system.
+* Connected Systems and Data Sources: Omni Search integrates with Google Calendar, Gmail, Jira, HubSpot, Zendesk, and Company Policies.
+
+!!!note
+     * This beta feature is available only for Kore accounts (Internal).
+     * To use Omni Search, users must add connections (for Gmail, Google Calendar). Without these, the system can't retrieve or link data across services.
+
+**Agent Version Control System**
+
+Agents now maintain two distinct versions, **Draft** and **Published**, ensuring that improvements and modifications don't directly impact the live published version. Users can test and refine agent configurations in draft mode, pushing changes to the published version only after thorough testing and validation. This dual-version approach provides stability for production environments while enabling continuous improvement and experimentation.
+
+[Learn more :octicons-arrow-right-24:](../custom-agents/agent-version.md)
+
+**Support for Google Gemini Models**
+
+AI for Work now supports the latest Google Gemini models:
+
+* Gemini 2.5 Flash
+* Gemini 2.5 Pro
+* Gemini 2.5 Flash Lite
+* Gemini 2.0 Flash
+
+Recommended Configuration: Use **Gemini 2.5 Pro** and **2.5 Flash** as defaults for best performance and reliability.
+
+<font size="4">Feature Enhancement</font>
+
+**Personal Workspace Collaboration and Management**
+
+Enhanced Personal Workspace support agent sharing across all published users. Shared users can now view and edit agent configurations together before running them, enabling collaborative development and better knowledge sharing across the organization.
+
+[Learn more :octicons-arrow-right-24:](../workspace-management/personal-workspace.md#collaboration-and-sharing)
+
+<hr>
+
 ## v1.10.0 Sept 8, 2025
 
 <u>Major Release</u>
@@ -12,9 +61,9 @@ This update includes new features and feature enhancements summarized below.
 
 **Channels – Microsoft Teams and Copilot Integration**
 
-AI for Work integrates natively with Microsoft Teams through the Azure Bot Service architecture, enabling users to access AI assistance directly within MS Teams. The integration supports both Multi-Tenant and Single-Tenant authentication models with proactive notification capabilities through dedicated app registration.
+AI for Work integrates natively with Microsoft Teams through the Azure Bot Service architecture, enabling users to access AI assistance directly within Microsoft Teams. The integration supports both Multi-Tenant and Single-Tenant authentication models with proactive notification capabilities through dedicated app registration.
 
-The system generates custom MS Teams app manifests with organizational branding options (custom name, logo, description) and supports multiple deployment strategies, including organization-wide rollout, selective user groups, or self-service installation.
+The system generates custom Microsoft Teams app manifests with organizational branding options (custom name, logo, description) and supports multiple deployment strategies, including organization-wide rollout, selective user groups, or self-service installation.
 
 [Learn more :octicons-arrow-right-24:](../channels/ms-teams/microsoft-teams.md)
 

@@ -12,7 +12,7 @@ Authentication of the API requests involves the following two steps:
 
 ## Creating and Managing JWT Apps in XO Platform
 
-Steps to create a JWT Client App from the XO Platform:
+Steps to create a JWT Client App from the Platform:
 
 
 1. Go to **App Settings** > **Dev Tools** > **Web/Mobile SDK**.  
@@ -28,7 +28,7 @@ Steps to create a JWT Client App from the XO Platform:
 
     * **Enforce JTI (JWT ID) Claim** – Once enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
 
-    * **Enforce JWE Encryption** (Generating JWT token) – To access the XO Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
+    * **Enforce JWE Encryption** (Generating JWT token) – To access the Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
     <img src="../images/create-a-jwt-app.png" alt="Create a new JWT App" title="Create a new JWT App" style="border: 1px solid gray; zoom:50%;">
 
 5. Click **Next** and **Done**.
@@ -55,16 +55,16 @@ Steps to create a Client App from the Admin Console:
 
 ## Data Tables
 
-Access control from the Data Tables module is different from the XO Platform and Admin Console access controls.
+Access control from the Data Tables module is different from the Platform and Admin Console access controls.
 
 You can define apps to securely access the data from data tables and data views.
 
-* You can create one or more apps, [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/#App_Definition).
+* You can create one or more apps. [Learn more](../../administration/data/data-as-service.md).
 * These apps can be used for:
     * Accessing the data tables and views over public APIs.
     * Accessing the data tables and views using Service Node.
     * Accessing the export and import API for the definition of data table and views.
-* You can grant this app read, write, and delete permissions to each table and view separately, [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/#Assignments).
+* You can grant this app read, write, and delete permissions to each table and view separately, [Learn more](../../administration/data/data-as-service.md).
 
 ## Associating API Scopes
 
@@ -73,7 +73,7 @@ Once you create a client JWT app, you can associate it with API scopes.
 
 ### Adding API Scopes in the XO Platform
 
-Steps to associate API Scopes to a Client JWT App from the XO Platform:
+Steps to associate API Scopes to a Client JWT App from the Platform:
 
 1. Go to **App Settings** > **Dev Tools** > **API Scope** and click **Create API Scope**.
 
@@ -101,7 +101,7 @@ Steps to associate API Scopes to a Client App from the Admin Console:
 
 6. Once you select an app, the **Client ID** and **Client Secret** appear. Copy these values.
 
-7. Under the Scopes section, select the appropriate Scopes to allow the client app to access the respective APIs.[Learn more](../../administration/security-and-control/api-scopes.md).
+7. Under the Scopes section, select the appropriate Scopes to allow the client app to access the respective APIs. [Learn more](../../administration/security-and-control/api-scopes.md).
 
 8. Click **Save**. The app and associated scopes are listed on the API Scopes page. 
 
@@ -278,7 +278,7 @@ Steps to generate the token:
         "appId": "add-Client-ID-here"
     }```
     
-    Note that the XO Platform validates the token only when it is entered exactly as “appId”. Don’t use “App ID”, “appid”, or “app ID”.
+    Note that the Platform validates the token only when it is entered exactly as “appId”. Don’t use “App ID”, “appid”, or “app ID”.
 
 5. In the **Verify Signature** field, replace **your-256-bit-secret** with the Client Secret copied in the previous section.
 6. Click **Copy JWT** to copy the generated token. You can pass this token as a part of the API request for authorization.

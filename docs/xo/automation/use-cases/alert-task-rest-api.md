@@ -544,7 +544,7 @@ For any task, you will need to define an API request to make a call to a web ser
     * **DELETE** – Deletes the content of an existing target resource.
     * **GET** – Returns the content of an existing target resource.
 
-5. In the **URL** field, specify the URL for the app task response to the process. For example, <code>http://koremessenger.com/postURL</code>. You can also use session variables in the URL as shown in the following example:
+5. In the **URL** field, specify the URL for the app task response to the process. For example, <code>https://koremessenger.com/postURL</code>. You can also use session variables in the URL as shown in the following example:
 <code>https://mySite.crm.ondemand.com/sap/c4c/odata/v1/c4codata/ServiceRequestCollection?$filter=ID eq '{id}' and ReporterEmail eq '{userEmail}'&amp;$expand=ServiceRequestHistoricalVersion,ServiceRequestDescription</code>
 
 6. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Apps using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network.
@@ -849,7 +849,7 @@ For example, when the payload does not contain a key for the payload response da
     "OfferName": "Freedom Unlimited",
     "OfferType": "CreditCard",
     "Status": "1",
-    "imageURL": "http://www.psdgraphics.com/file/credit-card.jpg",
+    "imageURL": "https://www.example.com/file/credit-card.jpg",
     "id": "5b5195e264bbd800"
   },
   {
@@ -860,7 +860,7 @@ For example, when the payload does not contain a key for the payload response da
     "OfferName": "Premium Plus",
     "OfferType": "CreditCard",
     "Status": "1",
-    "imageURL": "http://i.imgur.com/rMOXYql.jpg",
+    "imageURL": "https://www.example.com/rMOXYql.jpg",
     "id": "5caf2155873f89c8"
   },
   {
@@ -871,7 +871,7 @@ For example, when the payload does not contain a key for the payload response da
     "OfferName": "Frequent Flyer",
     "OfferType": "CreditCard",
     "Status": "1",
-    "imageURL": "http://www.moneychoice.org/wp-content/uploads/2016/01/credit-card-calculator-image.png.jpeg",
+    "imageURL": "https://www.example.com/uploads/2016/01/credit-card-calculator-image.jpeg",
     "id": "c0b05bc3062658ee"
   }
 ]
@@ -893,7 +893,7 @@ For example. If you used the **UX Preview** feature, the response from Kore.ai w
         "OfferName": "Freedom Unlimited",
         "OfferType": "CreditCard",
         "Status": "1",
-        "imageURL": "http://www.psdgraphics.com/file/credit-card.jpg",
+        "imageURL": "https://www.example.com/file/credit-card.jpg",
         "id": "5b5195e264bbd800"
       },
       {
@@ -904,7 +904,7 @@ For example. If you used the **UX Preview** feature, the response from Kore.ai w
         "OfferName": "Premium Plus",
         "OfferType": "CreditCard",
         "Status": "1",
-        "imageURL": "http://vignette3.wikia.nocookie.net/objectmayhem/images/5/52/Credit_card.png/revision/latest?cb=20130629150408",
+        "imageURL": "https://www.example.com/objectmayhem/images/5/52/Credit_card.png/revision/latest?cb=20130629150408",
         "id": "5caf2155873f89c8"
       }
     ]
@@ -970,7 +970,7 @@ When enabled, define the path to the preview links in the payload in the **Path 
             "-isPermaLink": "false",
             "#text": "SB12418904751422433479504581245034032986752"
         },
-        "link": "http://www.wsj.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian",
+        "link": "https://www.example.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian",
 ```
 
 When **Preview website link content in Post** is enabled, select preview objects such as:

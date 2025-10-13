@@ -444,7 +444,7 @@ Many companies take advantage of private connectivity between their company offi
 
 We suggest that you collaborate with your provider to obtain a “fully diverse” private circuit connection, if available in your area. Having diversity guarantees that your connectivity utilizes multiple “last mile” paths to reach different access points on your provider's network.
 
-To ensure a consistent user experience for voice and video communications over private circuit WAN connections, which typically have lower bandwidth than local office networks, it is recommended to enable Quality of Service (QoS). QoS prioritizes voice and video traffic over other network traffic. Contact your private circuit carrier to configure QoS on your circuits.      
+To ensure a consistent user experience for voice and video communications over private circuit WAN connections, which typically have lower bandwidth than local office networks, it is recommended to enable Quality of Service (QoS). QoS prioritizes voice and video traffic over other network traffic. Contact your private circuit carrier to configure QoS on your circuits.
 
 #### VPN Connectivity
 
@@ -463,7 +463,7 @@ For optimal performance of Kore Cloud real-time communications services over WLA
 To identify areas with weak wireless signals ("dead spots") in your facility, consider using available Wi-Fi surveying tools or hiring a network services company to conduct a professional site survey of your wireless network.
 
 #### Network bandwidth
-Ensure consistent bandwidth across your LAN and WAN to support voice calls. The required bandwidth is specified on this [page](../voice-gateway/minimum-system-requirements-and-supported-browsers.md ). 
+Ensure consistent bandwidth across your LAN and WAN to support voice calls. The required bandwidth is specified on this [page](../voice-gateway/minimum-system-requirements-and-supported-browsers.md ).
 
 Kore Cloud utilizes OPUS, an adaptive voice codec, for voice traffic to agent WebRTC phones. OPUS automatically adjusts sampling rates in response to varying network conditions. To ensure optimal call quality, we recommend allocating 32–128 Kbps of bi-directional network voice bandwidth per expected/supported concurrent call. Higher bandwidth allocation results in higher sampling rates and improved voice quality. Bandwidth must also be allocated for SIP control traffic. It is recommended that 5% of the high voice bandwidth value be allocated to SIP.
 
@@ -489,7 +489,7 @@ The manufacturer's documentation for your specific network hardware setup will d
 | External phone calls | When the agent is on WAN/Internet, the one-way latency between the agent and Edge should be less than 150 ms, with packet loss less than 1% and end-to-end latency less than 150 ms.               |
 | Internal phone calls | When the agent and Edge are on the same LAN, the one-way latency must be less than 75 ms, packet loss less than 1%, and the end-to-end latency between the agent and Edge must be less than 75 ms. |
 
-### Check List 
+### Check List
 
 * Does your firewall support the Pinhole feature or not? (Firewalls performing a network address translation (NAT) function, the mapping between the external IP address, port socket, and the internal IP address, port socket is called a pinhole).
     - [ ] Yes
@@ -514,7 +514,7 @@ The manufacturer's documentation for your specific network hardware setup will d
 * Will you be able to allocate and configure one test number to us?
     - [ ] Yes
     - [ ] No
-* Will you allow and bypass traffic for *. [Kore](http://kore.ai/) and *.[twilio.com](http://twilio.com/) domains (HTTPS) on 443, 8443, 3478, and 5349 ports?
+* Will you allow and bypass traffic for *. [Kore](https://kore.ai/) and *.[twilio.com](https://twilio.com/) domains (HTTPS) on 443, 8443, 3478, and 5349 ports?
     - [ ] Yes
     - [ ] No
 * As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to whitelist and allow the traffic to all IP addresses and domains (SBCs, STUN/TURN, etc.)?

@@ -34,7 +34,7 @@ Enter or select the appropriate details for each field as described below.
 
 Agent profile consists of the following fields:
 
-**Name**: Choose a unique name that reflects your agent's core function and persona. It is good to have a name that is intuitive and indicative of its role. 
+**Name**: Choose a unique name that reflects your agent's core function and persona. It's good to have a name that's intuitive and indicative of its role. 
 
 !!!abstract "Examples"
 
@@ -121,7 +121,7 @@ Agent Platform provides powerful search functionality across diverse content sou
 
 You can link to one or more Search AI applications in the same workspace and account and access them as Knowledge Tools for the agent to answer user queries. Each Search AI app can be integrated with multiple content sources. 
 
-[Learn more](./knowledge/overview.md) about Knowledge integration with agents. 
+[Learn more](./knowledge/overview.md){:target="_blank"} about Knowledge integration with agents. 
 
 ---
 ## Tools
@@ -145,7 +145,7 @@ Powered by the tool invocation capabilities of large language models (LLMs), age
 
 There are **three types of tools** that agents can use.
 
-* **Workflow Tools**: **Workflow Tools** provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. Supporting both synchronous and asynchronous execution modes, Workflow Tools enable rapid development and reliable execution of tasks without writing code. They are best suited for scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
+* **Workflow Tools**: **Workflow Tools** provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. Supporting both synchronous and asynchronous execution modes, Workflow Tools enable rapid development and reliable execution of tasks without writing code. They're best suited for scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
 
 !!!abstract "Examples"
 
@@ -153,21 +153,21 @@ There are **three types of tools** that agents can use.
     * Stock Market Tool: Fetches real-time stock prices.
     * Database Query Tool: Accesses structured data from a company’s database.
 
-For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.md).
+For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.md){:target="_blank"}.
 
-* **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that cannot be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They are the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python** code, allowing seamless integration and automation of complex workflows.
+* **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that can't be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They're the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python** code, allowing seamless integration and automation of complex workflows.
 
-    For more information, see [Code Tools](tools/code-tools.md).
+    For more information, see [Code Tools](tools/code-tools.md){:target="_blank"}.
 
-* **MCP Tools**: MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform.  Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code. Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because they are centrally managed, these tools support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents. They are best suited for seamless integration with external APIs, proprietary platforms, or shared toolsets across teams or organizations.
+* **MCP Tools**: MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform.  Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code. Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because they're centrally managed, these tools support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents. They're best suited for seamless integration with external APIs, proprietary platforms, or shared toolsets across teams or organizations.
 
-    For more information, see [MCP Tools](tools/mcp-tools.md).
+    For more information, see [MCP Tools](tools/mcp-tools.md){:target="_blank"}.
 
 ### Adding a Tool to Agent
 
 You can enhance an agent's capabilities by **creating a new tool** or **importing an existing one** from the tool library.
 
-* **New tools** are custom-built within the context of a specific app and are not shared across other apps.
+* **New tools** are custom-built within the context of a specific app and aren't shared across other apps.
 * **Imported tools** act as templates from the library. Once imported, they can be customized within the app to suit specific requirements without affecting the original version in the library.
 
 To add a new tool, click **New Tool** and choose the desired tool type—**Workflow Tool**, **Code Tool** or **MCP Tool**.
@@ -176,15 +176,19 @@ For a **Workflow Tool**, enter the tool's **name** and **description**, then cli
 
 ![Create App](images/addtool1.png "Agentic App Creation")
 
-To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page](tools/create-a-code-tool.md) for details on creating a new code tool, along with an example. 
+To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page](tools/create-a-code-tool.md){:target="_blank"} for details on creating a new code tool, along with an example. 
 
-### Importing a Tool
+### Test a Workflow Tool
+
+To test a Workflow Tool, open it from the Tools page and use the Test interface. Detailed instructions on running sample queries and reviewing test outputs are available on this [page](test-a-workflow-tool.md){:target="_blank"}.
+
+### Import a Tool
 
 You can easily **import an existing tool** into your Agentic app to accelerate development and reuse existing tools. When a tool is imported:
 
 * A **new instance** of the tool is created, specifically scoped to the app.
 * This instance of the tool is independent of the original, and can be customized without affecting the source tool or its use in other apps.
-* You can use it as it is if it already meets your needs, or modify it to align with your app’s specific use cases.
+* You can use it as it's if it already meets your needs, or modify it to align with your app’s specific use cases.
 
 Tools can be imported from a variety of sources:
 
@@ -194,4 +198,4 @@ Tools can be imported from a variety of sources:
 
 To make changes, simply select the tool and open it to **modify the flow** as needed.
 
-Use [this example as a reference or starting point](./../ai-agents/agent-creation-example.md) when building your own agent.
+Use [this example as a reference or starting point](./../ai-agents/agent-creation-example.md){:target="_blank"} when building your own agent.
