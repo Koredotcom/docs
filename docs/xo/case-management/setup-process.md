@@ -32,7 +32,7 @@ The following sections describe how to set up case management, enable features, 
 
     * **Send Invitations:** Send email invitations to agents and supervisors.
 
-    * **Assign Roles:** Assign appropriate roles queues, and skills. [Learn more](../user-management/manage-users.md#queues-and-skills).
+    * **Assign Roles:** Assign appropriate roles queues, and skills. [Learn more](../user-management/manage-users.md#queues-skills).
 
     * **Case Capacity Limits:** Enable capacity limits for each agent as needed.
 
