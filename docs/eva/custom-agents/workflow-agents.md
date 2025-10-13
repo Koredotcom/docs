@@ -206,13 +206,9 @@ displays the output directly within the current session. This mode is ideal for
 cases where the file processing can be completed within a short timeframe (up to
 60 seconds), allowing users to quickly retrieve answers.
 
-![](images/sync_mode.png)
-
 In **async mode**, the process accommodates more complex queries that may
 require additional processing time. Users still select an agent and enter their
 queries. However, instead of receiving immediate results, they are
 notified in a notification section once the query is processed. This approach
 makes async mode particularly suited to cases where the query might take more
 than 60 seconds to execute.
-
-![](images/async_mode.png)
