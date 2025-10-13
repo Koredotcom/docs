@@ -88,9 +88,7 @@ To complete the registration:
 1. Raise a support ticket with your IAM role ARN, requesting that it be added to the trust policy.
 2. Wait for confirmation from Support that the role has been registered.
 
-**Note**: Without this step, the platform cannot assume your IAM role. Both your AWS account and Kore.ai’s environment must explicitly trust each other for secure cross-account access.
-
-
+**Note**: Without this step, the platform cannot assume your IAM role. Both your AWS account and Inception's environment must explicitly trust each other for secure cross-account access.
 
 ### Step 2. Finding the Right Model ID and Region
 
