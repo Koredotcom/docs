@@ -1,14 +1,14 @@
-site_name: Kore ai Docs
-site_author: Kore ai Content Experience Team
+site_name: Inceptionai Docs
+site_author: Inceptionai Content Experience Team
 docs_dir: 'docs/agent-platform/'
 site_dir: 'site/agent-platform/'
 site_url: https://docs.kore.ai/agent-platform/
-repo_name: Koredotcom/docs
-repo_url: https://github.com/Koredotcom/docs
+repo_name: inceptionai-public/platform-docs
+repo_url: https://github.com/inceptionai-public/platform-docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
-  favicon: images/Kore_logo_new.svg
+  favicon: images/favicon.png
   name: material
   custom_dir: overrides.en.agent-platform
   features:
@@ -111,28 +111,14 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2025 Inceptionai.ai, Inc. - All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
-    - Accessing Agent Platform: getting-started/sign-up-sign-in.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
-    - Quick Start Tutorials:
-      - Video Tutorials: 
-        - Product Overview: getting-started/tutorials/agent-platform.md
-        - Create an Agentic App: getting-started/tutorials/create-agentic-app.md
-        - Build a Workflow Tool: getting-started/tutorials/workflow-tool.md
-        - Model Studio: getting-started/tutorials/model-studio.md
-        - Prompt Studio: getting-started/tutorials/prompt-studio.md
-        - Evaluation: getting-started/tutorials/evaluation.md
-        - Build a Code Tool: getting-started/tutorials/build-code-tool.md
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
-    - Business Solutions:
-      - AI for Service: https://docs.kore.ai/xo/home/
-      - AI for Work: https://docs.kore.ai/ai-for-work/home/ 
-      - AI for Process: https://kore.ai/ai-for-process/  
   - AI Agents: 
     - Multi-Agent System: ai-agents/multi-agent-system.md
     - Agentic Apps: ai-agents/agentic-apps/overview.md
@@ -222,9 +208,6 @@ nav:
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
-    - Business Solutions:
-      - AI for Service (XO): ai-agents/ai-for-service.md
-      - AI for Work: ai-agents/ai-for-work.md
     - How Tos:
       - Share Contextual Metadata with AI for Service: ai-agents/agentic-apps/howto/share-context-with-AIforService.md
       - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md

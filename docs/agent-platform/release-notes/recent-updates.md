@@ -302,8 +302,6 @@ The Playground now supports voice input, allowing users to interact with agentic
 
 Developers can now leverage enhanced integration with the AI for Service platform by passing metadata, such as channel information or user data, into the Agentic App. This metadata is made available within agent prompts and tools, enabling more contextual and dynamic interactions.
 
-[Learn more :octicons-arrow-right-24:](../ai-agents/ai-for-service.md)
-
 
 <font size="4">No-code & Pro-code Tools</font>
 
@@ -1004,7 +1002,7 @@ Key capabilities
 
 **Simplified Web SDK Integration**
 
-The Platform-hosted SDK can now be easily integrated into enterprise websites using the new, lightweight Webclient Script. This JavaScript solution eliminates the need for users to leave the enterprise website to access the application, creating a seamless user experience with minimal development.
+The SDK can now be easily integrated into enterprise websites using the new, lightweight Webclient Script. This JavaScript solution eliminates the need for users to leave the enterprise website to access the application, creating a seamless user experience with minimal development.
 
 Key features
 
