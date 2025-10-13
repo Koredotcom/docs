@@ -1,6 +1,6 @@
-# Answer Insights API
+--8<-- "includes/searchai-api-back-link.md"
 
---8<-- "includes/searchai-api-note.md"
+# Answer Insights API
 
 This API initiates the export of answer insights data to a file in **JSON format**. You can apply filters to export specific results. 
 

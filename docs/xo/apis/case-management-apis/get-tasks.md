@@ -1,6 +1,6 @@
-# Get Tasks API
+--8<-- "includes/cm-api-back-link.md"
 
---8<-- "includes/casemanagementai-api-note.md"
+# Get Tasks API
 
 The API enables you to retrieve task data from the case management system with required filters for status, priority, assignment, channels, and date ranges.
 

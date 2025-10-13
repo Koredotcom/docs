@@ -1,6 +1,6 @@
-# Agents API
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Agents API
 
 To get all agent details associated with an `accountId`.
 

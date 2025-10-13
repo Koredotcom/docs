@@ -1,6 +1,6 @@
-# Delete Call Recording API
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Delete Call Recording API
 
 This API is used to delete Voice Call Recordings. The response varies based on whether the execution is successful or not.
 

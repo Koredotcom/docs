@@ -1,6 +1,6 @@
-# List All Agents
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# List All Agents
 
 To retrieve the list of all agents with the given `streamId`.
 

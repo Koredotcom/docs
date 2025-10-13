@@ -1,6 +1,6 @@
-# Export data by accountId and orgId
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Export data by accountId and orgId
 
 To get exported data which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience) by giving details with account Id and orgId.
 

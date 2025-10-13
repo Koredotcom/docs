@@ -1,6 +1,6 @@
-# Get All Agent Groups
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Get All Agent Groups
 
 To retrieve the list of agent groups with the given `streamId`.
 

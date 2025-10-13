@@ -1,6 +1,6 @@
-# Create an Agent Group
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Create an Agent Group
 
 To add an agent with the given Stream Id.
 

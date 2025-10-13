@@ -1,6 +1,6 @@
-# Agent Status Details
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Agent Status Details
 
 To show the self-reported status (available, busy, away, etc.) in the given time interval.
 

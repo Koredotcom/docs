@@ -1,6 +1,6 @@
-# Get Voice Campaign API
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Get Voice Campaign API
 
 Use this API to fetch complete details of an existing voice campaign using the campaign ID.
 

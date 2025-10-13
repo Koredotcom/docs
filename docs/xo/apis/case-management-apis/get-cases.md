@@ -1,6 +1,6 @@
-# Get Cases API
+--8<-- "includes/cm-api-back-link.md"
 
---8<-- "includes/casemanagementai-api-note.md"
+# Get Cases API
 
 The API enables you to retrieve case data from the case management system with filtering, sorting, and pagination options.
 

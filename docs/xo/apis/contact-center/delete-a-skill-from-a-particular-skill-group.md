@@ -1,6 +1,6 @@
-# Delete a Skill from a Particular Skill Group
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Delete a Skill from a Particular Skill Group
 
 To delete the particular skill with the given `botId` and `agentId`.
 

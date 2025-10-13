@@ -1,6 +1,6 @@
-# Delete a Queue
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Delete a Queue
 
 To delete a specific queue with the given  `botId` and `queueId`.
 

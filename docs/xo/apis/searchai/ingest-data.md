@@ -1,6 +1,6 @@
-# **Ingest Data API**
+--8<-- "includes/searchai-api-back-link.md"
 
---8<-- "includes/searchai-api-note.md"
+# Ingest Data API
 
 This API allows you to ingest and index data into the SearchAI application. You can directly ingest structured data as chunk fields using the API,  ingest an uploaded document, or use this API to perform incremental web crawling to web sources that already exist in the application. 
 

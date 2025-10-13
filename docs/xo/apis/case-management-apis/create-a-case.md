@@ -1,6 +1,6 @@
-# Create a case API
+--8<-- "includes/cm-api-back-link.md"
 
---8<-- "includes/casemanagementai-api-note.md"
+# Create a case API
 
 This API lets you to create a new case in the case management system.
 

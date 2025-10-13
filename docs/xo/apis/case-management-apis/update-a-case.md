@@ -1,6 +1,6 @@
-# Update a Case API
+--8<-- "includes/cm-api-back-link.md"
 
---8<-- "includes/casemanagementai-api-note.md"
+# Update a Case API
 
 This API allows you to update an existing case in the case management system.
 
