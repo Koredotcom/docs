@@ -118,7 +118,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 ### WFM APIs
 
-| API                                                                                           | Description                                                                                                                      | Associated App Scope |
+| API                                                                                           | DESCRIPTION                                                                                                                     | ASSOCIATED APP SCOPE |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-----------------------|
 | [Agents API](../contact-center/agents.md)                                | To get all agent details associated with an accountId.                                                                          | WFM Integration       |
 | [Queues API](../contact-center/queues.md)                                | To get the Queues/Skills associated with an accountId.                                                                          | WFM Integration       |
@@ -127,7 +127,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 ### Hours of Operation API
 
-| API                | Description                                                                                                                                          | Associated App Scope |
+| API                | DESCRIPTION                                                                                                                                          | ASSOCIATED APP SCOPE |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
 | [Hours of Operation](../contact-center/hours-of-operation.md) | To get the hours of operation by providing the orgId and queueId. | Configuration         |
 
@@ -135,7 +135,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 ### SMS Campaigns
 
-| API | Description | Associated App Scope |
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |
 |--------|------------------|---------------------------|
 | [Create SMS Campaign (Without SMS Template)](../contact-center/create-sms-campaign-without-template.md) | Creates an SMS campaign with a “None” message format. | Campaign Management |
 | [Create SMS Campaign (Using Template)](../contact-center/create-sms-campaign-using-template.md) | Creates an SMS campaign using a predefined message template. | Campaign Management |
@@ -149,7 +149,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 ### Voice Campaigns
 
-| API | Description | Associated App Scope |
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |
 |--------|------------------|---------------------------|
 | [Create Voice Campaign - Agentless Mode](../contact-center/create-voice-campaign-agentless.md) | Creates a new outbound voice campaign with agentless dialing. | Campaign Management |
 | [Create Voice Campaign - Progressive Mode](../contact-center/create-voice-campaign-progressive.md) | Creates a voice campaign that routes answered calls to live agents using progressive dialing. | Campaign Management |
@@ -162,19 +162,19 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 ### Campaign Status
 
-| API | Description | Associated App Scope |
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |
 |--------|------------------|---------------------------|
 | [Get Campaign Status](../contact-center/get-campaign-status.md) | Retrieves the current status (active, stopped, etc.) of a campaign using its campaign ID. | Campaign Management |
 
 ### Campaign Details
 
-| API | Description | Associated App Scope |
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |
 |--------|------------------|---------------------------|
 | [Get All Campaigns](../contact-center/get-all-campaigns.md) | Retrieves all campaigns associated with a specific account. | Campaign Management |
 
 ### Contact List Management
 
-| API | Description | Associated App Scope |
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |
 |--------|------------------|---------------------------|
 | [Get All Contact Details - Voice Campaigns](../contact-center/get-all-contact-details-voice-campaigns.md) | Retrieves metadata for all contact lists under a specific account, filtered by type. | Campaign Management |
 | [Create Contact List](../contact-center/create-contact-list.md) | Creates a new contact list for use in passive voice campaigns. | Campaign Management |
