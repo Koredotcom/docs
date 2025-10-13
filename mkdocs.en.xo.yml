@@ -54,12 +54,12 @@ plugins:
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'contactcenter/configurations/settings/llm-streaming.md': 'generative-ai-tools/streaming-responses.md'
-        'contact-center/case-management-apis/create-a-case.md': 'case-management-apis/create-a-case.md'
-        'contact-center/case-management-apis/create-a-task.md': 'case-management-apis/create-a-task.md'
-        'contact-center/case-management-apis/get-cases.md': 'case-management-apis/get-cases.md'
-        'contact-center/case-management-apis/get-tasks.md': 'case-management-apis/get-tasks.md'
-        'contact-center/case-management-apis/update-a-case.md': 'case-management-apis/update-a-case.md'
-        'contact-center/case-management-apis/update-a-task.md': 'case-management-apis/update-a-task.md'
+        'contact-center/case-management-apis/create-a-case.md': 'apis/case-management-apis/create-a-case.md'
+        'contact-center/case-management-apis/create-a-task.md': 'apis/case-management-apis/create-a-task.md'
+        'contact-center/case-management-apis/get-cases.md': 'apis/case-management-apis/get-cases.md'
+        'contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
+        'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
+        'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
 
 extra:
   version:

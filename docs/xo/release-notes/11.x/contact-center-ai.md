@@ -1996,13 +1996,13 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 
 * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
 * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
-* Up to 25 conversations can be selected for exporting transcripts. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
+* Up to 25 conversations can be selected for exporting transcripts.
 
 **Display Agent and Disposition Notes in Search Results on the Interactions Tab**
 
 Dashboard > Interactions
 
-Agent notes and Disposition notes are now displayed in the search results on the Interactions tab. 
+Agent notes and Disposition notes are now displayed in the search results on the Interactions tab.
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-interactions)
 
 ## v11.1.1 May 11, 2024
