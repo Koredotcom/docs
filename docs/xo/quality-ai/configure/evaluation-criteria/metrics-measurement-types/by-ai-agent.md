@@ -75,7 +75,7 @@ To configure By AI Agent metrics, ensure the following prerequisites are met:
 
 ## Configuring By AI Agent Metric
 
-1. Navigate to **Contact Center AI > Quality AI > Configure > Evaluation Forms> Evaluation Metrics**.
+1. Navigate to **Quality AI > Configure > Evaluation Forms> Evaluation Metrics**.
 
 2. Click **+ New Evaluation Metric**.
 
