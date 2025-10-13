@@ -43,7 +43,7 @@ The Platform now supports seamless integration of custom models in Agentic Apps 
 
 **Structured Output Support for Open-Source Models**
 
-The hosted open-source models now support structured JSON output through the response_format parameter, aligned with OpenAI’s schema style. This enables schema-based responses across Prompts and Tools.
+Inception-hosted open-source models now support structured JSON output through the response_format parameter, aligned with OpenAI’s schema style. This enables schema-based responses across Prompts and Tools.
 
 * Supported on the v2/chat/completions endpoint (default for new deployments).
 * Works with most open-source models (see the documentation for the full [list of supported models](../models/supported-models.md#supported-models-for-structured-output).

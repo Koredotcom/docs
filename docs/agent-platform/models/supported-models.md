@@ -439,7 +439,7 @@ The supported models and their variants are given below:
 
 ### Supported Models for Structured Output
 
-The hosted open-source models can produce structured JSON responses, making outputs consistent and easy to parse.
+Inception-hosted open-source models can produce structured JSON responses, making outputs consistent and easy to parse.
 
 * Structured output support depends on the optimization technique used: No optimization or vLLM.
 * Models optimized with CT2, fine-tuned models, Hugging Face imports, and locally imported models are not supported.
