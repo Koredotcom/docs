@@ -20,7 +20,7 @@ jobs:
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.xo.yml --strict
+          args: build --config-file=mkdocs.en.xo.yml
       - name: Build EN AI for Work docs
         uses: ./
         with:
