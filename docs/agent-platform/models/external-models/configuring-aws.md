@@ -81,7 +81,7 @@ Ensure the STS region matches the region of your IAM role — **not necessarily 
 
 #### B. Raise a Support Ticket to Register your IAM Role
 
-After creating the IAM role in your AWS account, you need to raise a support ticket with Kore.ai to update the trust policy with your IAM Role ARN. This allows the platform to assume the role and invoke Bedrock.
+After creating the IAM role in your AWS account, create a support ticket to update the trust policy with your IAM Role ARN. This allows the platform to assume the role and invoke Bedrock.
 
 To complete the registration:
 
