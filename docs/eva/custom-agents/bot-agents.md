@@ -82,7 +82,7 @@ To create a new Bot Agent, follow these steps:
 Provide a suitable and unique name for the agent and describe its purpose. Defining the agent’s purpose enables it to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed.
 ![](images/detail-purpose.png)
 
-#### Step 2: Add Bot 
+#### Step 2: Add Bot
 
 The Add Bot feature enables seamless integration of a virtual assistant created
 on the platform with your system. To establish this connection, ensure

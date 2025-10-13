@@ -79,8 +79,6 @@ steps outlined below:
         endpoint. Once the agent completes its process, Workflow posts the response
         back to the specified endpoint.
 
-    ![](images/config_workflow_Flow.png)
-
 2.  For Async Mode, enter the **POST URL** and **Access
     token**.![](images/async.png)  
     To configure async mode with the Workflow Platform, copy the **POST URL** and
