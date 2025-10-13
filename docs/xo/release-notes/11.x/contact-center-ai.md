@@ -385,11 +385,11 @@ New status and reason values (for example, No Answer, Busy, Network Failure, Ans
 
 **Start and Stop Campaigns**
 
-This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
+This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#campaign-management-apis)
 
 **Campaign Status and Results**
 
-This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-status)
+This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#campaign-status)
 
 **Add and Retrieve Contacts in Contact Lists**
 
@@ -397,7 +397,7 @@ These APIs enable the management of contacts in Contact Lists programmatically.
 
 * The `POST` API allows adding up to 100 contacts per call using `ContactListID`, supporting mapped and unmapped fields.
 * The `GET` API retrieves all contacts with pagination support (`skip`, `offset`, `hasMore`). Duplicate handling follows the list’s append-and-duplicate configuration, which is fixed at creation.  
-[Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
+[Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#contact-list-management)
 
 **Create, Retrieve, and Delete Campaigns**
 
@@ -405,7 +405,7 @@ Introduced APIs for complete Campaign lifecycle management. These APIs can be us
 
 * Create campaigns by specifying configuration such as channel, flow name, contact list, DNC list, priority, caller ID, and retry logic.
 * Retrieve all stored properties of a campaign using its Campaign ID.
-* Remove a campaign using its Campaign ID. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
+* Remove a campaign using its Campaign ID. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#campaign-management-apis)
 
 These APIs support both Agentless Voice and SMS (Simple/Advanced) campaign types. Campaigns created via API remain fully accessible and manageable through the UI.
 
@@ -415,7 +415,7 @@ Added support for managing Contact Lists via public APIs, including a new type: 
 
 * Create a contact list by specifying `Contact List Name`, `Type`, and `DuplicateCheck`.
 * Retrieve all metadata for contact lists (excluding contact data).
-* Delete a contact list along with all its contacts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
+* Delete a contact list along with all its contacts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#contact-list-management)
 
 These APIs enable users to automate contact list creation and management without requiring the use of the UI.
 
@@ -600,7 +600,7 @@ Campaign Managers can now configure voice campaigns using API-based contacts for
 
 **Updated API Endpoint Naming for Export/Import**
 
-The public Export and Import APIs now use corrected endpoint names that follow proper naming conventions. This change ensures clarity, consistency, and easier integration for developers using these APIs. Existing functionality remains unchanged; only endpoint paths have been updated for accuracy and clarity. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#importexport-data-apis)
+The public Export and Import APIs now use corrected endpoint names that follow proper naming conventions. This change ensures clarity, consistency, and easier integration for developers using these APIs. Existing functionality remains unchanged; only endpoint paths have been updated for accuracy and clarity. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#importexport-data-apis)
 
 <hr>
 
