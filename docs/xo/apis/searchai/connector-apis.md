@@ -1,5 +1,6 @@
-# Connector APIs
+--8<-- "includes/searchai-api-back-link.md"
 
+# Connector APIs
 
 ## Get Connectors
 

@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Get All Contact Lists
 
 Retrieves metadata for all contact lists associated with all voice campaigns.

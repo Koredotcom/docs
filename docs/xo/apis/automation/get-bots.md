@@ -1,4 +1,4 @@
-
+--8<-- "includes/automationai-api-back-link.md"
 
 # Get Bots API
 

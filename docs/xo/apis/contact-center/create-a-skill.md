@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Create a Skill
 
 To add a skill with the given Stream Id and Skill Group ID.

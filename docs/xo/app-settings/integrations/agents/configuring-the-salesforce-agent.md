@@ -327,7 +327,7 @@ Sample Script:
 ``` json
 let miawMetaInfo = {};
 miawMetaInfo.preChatInfo = {
-"Pincode": "500081",
+"Pincode": "50xxxx",
 "City": "Hyderabad",
 "Country": "India"
 };

@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Conversation Summary API
 
 The API summarizes the conversation between a user and an agent. The agent can be a AI agent or a human agent. The API accepts the conversation Id or the transcripts as input and provides an auto-generated conversation summary.

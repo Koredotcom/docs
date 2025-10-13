@@ -254,7 +254,7 @@ agentUtils.setNamedAgents(['agentId1', 'agentId2'])
 Example
 
 ```
-agentUtils.setNamedAgents(['a-e1427c4-8e7d-4728-8e6c-64281b235ad7', 'a-e1427c4-8e7d-4728-8e6c-64281b235ad8'])
+agentUtils.setNamedAgents(['a-e1427c4-8e7d-4728-8e6c-64281b23xxxx', 'a-e1427c4-8e7d-4728-8e6c-64281b23xxxx'])
 ```
 
 ### Set Agent Matching Conditions

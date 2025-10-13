@@ -75,7 +75,7 @@ To configure By AI Agent metrics, ensure the following prerequisites are met:
 
 ## Configuring By AI Agent Metric
 
-1. Navigate to **Contact Center AI > Quality AI > Configure > Evaluation Forms> Evaluation Metrics**.
+1. Navigate to **Quality AI > Configure > Evaluation Forms> Evaluation Metrics**.
 
 2. Click **+ New Evaluation Metric**.
 
@@ -97,7 +97,7 @@ To configure By AI Agent metrics, ensure the following prerequisites are met:
 
         !!! note
 
-            For detailed instructions on retrieving your AI Agent Endpoint and API Key, see [AI Agent Endpoint Documentation](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/deployment/access-deployed-version/?h=access+deployed+version){:target="_blank"}.
+            For detailed instructions on retrieving your AI Agent Endpoint and API Key, see [AI Agent Endpoint Documentation](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/deployment/access-deployed-version/?h=access+deployed+version){:target="_blank"}. 
     
 8. **Test Connection**: Click the **Test Request** button to validate your configuration. The system verifies the API endpoint accessibility, authentication, and response format compatibility.
 
@@ -120,8 +120,8 @@ When configuring your AI Agent in the Agent Platform, you must define the respon
 
     !!! Note
 
-        For detailed instructions on setting up an AI Agent, see the [AI Agent creation guide](../../../../../agent-platform/ai-agents/create-agent.md).
-
+        For detailed instructions on setting up an AI Agent, see the [AI Agent creation guide](https://docs.kore.ai/agent-platform/ai-agents/create-agent/){:target="_blank"}.
+        
 ### Response Format Template
 
 The AI Agent must return responses in the following JSON structure:

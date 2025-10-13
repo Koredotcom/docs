@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Data Insert API
 
 Used to insert data into Data Table.

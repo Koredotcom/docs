@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Get All SMS Campaigns API
 
 Use this API to retrieve all SMS campaign configurations associated with a specific account.

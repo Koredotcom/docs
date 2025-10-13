@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Check Agent Availability Status
 
 To check the availability of agents based on specified skill IDs, queue IDs, and agent IDs.

@@ -1,5 +1,6 @@
-# **Permission Entity APIs**
+--8<-- "includes/searchai-api-back-link.md"
 
+# Permission Entity APIs
 
 ## Get Permission Entities
 
