@@ -46,7 +46,7 @@ var message = {
         {
             "title": "Account View",
             "sub_title": output,
-            "icon": "https://kore.ai/wp-content/uploads/banking-home.png",
+            "icon": "https://kore.ai/uploads/banking-home.png",
         }
     ]
 };

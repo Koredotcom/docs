@@ -126,6 +126,7 @@ nav:
     - Dialog Agents: dialog-agents/overview.md
     - Orchestration:
       - Supervisor: ai-agents/supervisor.md
+      - Adaptive Network: ai-agents/adaptive-network.md
       - DialogGPT: dialog-agents/dialoggpt.md
       - Realtime Multimodal: ai-agents/realtime-multimodal.md
     - Build AI Agents:   
@@ -312,3 +313,4 @@ nav:
     - Tools:
       - About Tools APIs: apis/overview.md
       - APIs List: apis/overview/#apis-list
+  - Marketplace: ai-agents/agentic-apps/marketplace.md

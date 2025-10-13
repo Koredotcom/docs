@@ -111,8 +111,6 @@ To associate an App, follow the below steps:
 Use the **Webhook URL** to establish integration with external communication systems. This URL is available only after enabling the channel.
 <img src="../images/webhook2.png" alt="add webhook URL" title="add webhook URL" style="border: 1px solid gray; zoom:70%;">
 
-
-
 ## Step 3: Deploy the Client SDK (Optional)
 
 You may skip this step if you already have a messaging application to integrate with the Webhook channel. Optionally, you can use the Kore.ai Platform’s Web/Mobile [SDK libraries](https://github.com/Koredotcom/web-kore-sdk) to integrate with the Webhook channel.  Use V2 of the Webhook APIs with synchronous mode for integrating with the client libraries. You can select the API version by going to the Instructions tab of the Webhook channel and scrolling down to Step 4.
@@ -257,7 +255,7 @@ The following are the parameters required/supported in the v1.0 of the Webhook c
    </td>
    <td>Details of how the conversation session should be handled.
    </td>
-   <td>Objects.
+   <td>Objects
    </td>
    <td>Optional
    </td>
@@ -400,7 +398,7 @@ The following are the parameters required/supported in the v1.0 of the Webhook c
    </td>
    <td>Optional
    </td>
-   <td>Every tag to be added using “name” and “value’ keys.
+   <td>Every tag to be added using “name” and “value” keys.
    </td>
   </tr>
   <tr>
@@ -412,7 +410,7 @@ The following are the parameters required/supported in the v1.0 of the Webhook c
    </td>
    <td>Optional
    </td>
-   <td>Every tag to be added using “name” and “value’ keys.
+   <td>Every tag to be added using “name” and “value” keys.
    </td>
   </tr>
   <tr>
@@ -548,7 +546,7 @@ If the app response is a template, then the JSON object required for rendering t
            ],
   "endOfTask": true,
   "endReason": "Fulfilled",
-  "completedTaskId": "dg-eb0cc36e-06ac-5bff-8234-e4adf501a2ef",
+  "completedTaskId": "dg-eb0cc36e-06ac-5bff-8234-e4adf50xxxx",
   "completedTaskName": "show balance"
 }
 ```
@@ -562,8 +560,8 @@ If the app response is a template, then the JSON object required for rendering t
 
 ```
 {
-"to": "john.doe@kore.com",
-"from": "st-b3a3dc49-bd57-5c5d-b12c-8e3776192a4c",
+"to": "john.doe@example.com",
+"from": "st-b3a3dc49-bd57-5c5d-b12c-8e377619xxxx",
 "text": "Your available account balance is $31,439.",
 }
 ```
@@ -969,7 +967,7 @@ For the list of Supported App Languages, read [Getting Started with Multilingual
 
 ### Sample Request
 
-Below is the Webhook v2.0 payload format to send messages to the Kore.ai XO Platform:
+Below is the Webhook v2.0 payload format to send messages to the Platform:
 
 
 ```
@@ -985,7 +983,7 @@ curl -X POST 'https://bots.kore.ai/chatbot/v2/webhook/st-e4xxxxa3-1dbc-xxxx-aa8f
         "val": "asdg",
         "attachments": [
             {
-                "fileId": "65116439cd838811d9819b79",
+                "fileId": "65116439cd838811d981xxxx",
                 "fileType": "txt",
                 "fileName": "IVR Doc"
             }
@@ -1160,7 +1158,7 @@ The platform delivers the message or messages to the client and waits for the us
 ```
 Response:
 {
- "to": "john.doe@kore.com",
+ "to": "john.doe@example.com",
  "from": "st-b3a3dc49-bd57-5c5d-b12c-xxxxxxxxxx",
  "data": [
         {
@@ -1537,7 +1535,7 @@ For parameter descriptions, refer to the [request parameters](#request-parameter
 
 ### Option 2: Upload Files to Kore.ai XO Platform
 
-You can upload files directly to the Kore.ai XO Platform, capture the ‘file id’ provided by the platform, and share it with the app during the conversation. This option is supported only when the Webhook v2.0 is used.
+You can upload files directly to the Platform, capture the ‘file id’ provided by the platform, and share it with the app during the conversation. This option is supported only when the Webhook v2.0 is used.
 
 Use the following API to upload your file to the platform. These APIs do not require any scopes and are accessible using any of the valid apps present in the app/account.
 

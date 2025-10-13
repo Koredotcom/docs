@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.18.0 September 27, 2025
+
+<u>Minor Release</u>
+
+<font size="4">UI Enhancements</font>
+
+**Conversation Logs Enhancements**
+
+Conversation Logs now feature an Agents column, searchable filters (with default options), and additional details, including Voice Call Recordings and Edited Summaries, for improved tracking and analysis. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md) 
+
+**Real-Time Translation Support in Agent AI**
+
+Agent AI now supports CCAI’s real-time translation feature. Agents can switch languages in the CCAI console, which updates widget content, Conversation Logs, and other supported areas. Once enabled in **CCAI** > **Configurations** > **Settings** > **Advanced Settings** > **Translation Configuration**, agents can access a language dropdown and view a dual display of original and translated text in Conversation Logs. [Learn more :octicons-arrow-right-24:](./../../contactcenter/configurations/settings/translation-configurations.md)
+
+**Call Recording Playback Support in Agent AI**
+
+For quality monitoring, Agent AI now supports call recording playback when the **SIP Trunk** > **Record the Calls** setting is enabled. Recordings appear at the top of individual call transcripts and can be played, paused, stopped, downloaded, or replayed with adjustable speed, volume, and timestamps. You can also filter by agent or timeframe, download reports, and navigate recordings through an accordion view for easier access. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md/#voice-call-recording)
+
+<font size="4">Integration Enhancement</font>
+
+**SIP Header Support for Metadata Passing from Kore Voice IVA to Genesys Desktop**
+
+Kore Voice IVA now passes contextual metadata (such as Customer ID, Session ID, Intent, Transcript, and Escalation Reason) to Genesys via SIP headers during call transfers. The Genesys desktop processes these headers and passes the data to the Kore Agent AI widget, giving agents full visibility into the customer’s journey before escalation. [Learn more :octicons-arrow-right-24:](./../../contactcenter/integrations/voice-automation-using-sip-invite-protocol/genesys-agent-desktop.md)
+
+<hr>
+
 ## v11.17.1 September 15, 2025
 
 <u>Patch Release</u>
@@ -614,7 +640,7 @@ The Raw Data API is updated to include the following:
 * Links Clicked / Redirects: The “linksClicked” parameter shows the URL and the timestamp when a link was clicked.
 
 **Chat History API Includes Agent Messages**
-The Chat or [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/){:target="_blank"} now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
+The Chat or [Conversation Details and Summary API](../../apis/automation/conversation-details-and-summary.md){:target="_blank"} now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
 
 <font size="4">UI Enhancement</font>
 

@@ -18,11 +18,11 @@ Conventional IVR systems do not have diversified options for the users to articu
 
 The Platform allows you to give a conversational makeover to your IVR system. It lets you build AI Agents with human-like conversation capabilities and integrate them with your existing IVR system, thus taking your organization’s customer service experience to a new level.
 
-The following features enable  the seamless integration of your Kore.ai Assistants with your existing IVR:
+The following features enable  the seamless integration of your  Assistants with your existing IVR:
 
 * **Native VXML Support**: Built-in support to parse and generate World Wide Web Consortium (W3C) compliant Voice Extensible Markup Language(VXML) files.
-* **Hybrid integration**: Flexibility to build use cases or dialogs on the  Kore.ai Experience Optimization the Platform, which can work in sync with the IVR dialogs.
-* **Discourse Analyzer**: Kore.ai’s discourse analyzer helps enterprises generate conversation flows using historical chat or call transcripts. Chat and call transcripts are analyzed using neural network-based machine learning models to identify intents and discourse patterns to fulfill a specific intent. This is an out-of-the-box feature that is in Beta state. Contact our [support team](https://support.kore.ai/){:target="_blank"} if you want to try this feature.
+* **Hybrid integration**: Flexibility to build use cases or dialogs on the Experience Optimization the Platform, which can work in sync with the IVR dialogs.
+* **Discourse Analyzer**: Discourse analyzer helps enterprises generate conversation flows using historical chat or call transcripts. Chat and call transcripts are analyzed using neural network-based machine learning models to identify intents and discourse patterns to fulfill a specific intent. This is an out-of-the-box feature that is in Beta state. Contact our [support team](https://support.kore.ai/){:target="_blank"} if you want to try this feature.
 * **Granular Call Flow Support**: Ability to define all the call flow elements such as grammar, prompts, retry and time-out periods. Kore.ai supports call termination handlers, and allows you to end calls or invoke dialogs in case of exceptions.
 
 ## IVR Set Up
@@ -49,7 +49,7 @@ Steps to configure IVR settings for your AI Agent:
 
         !!! note
 
-            If you save the configuration after associating  an app without enabling IVR Settings, the  platform pre-populates the required settings for Sandbox.
+            If you save the configuration after associating  an app without enabling IVR Settings, the platform pre-populates the required settings for Sandbox.
 
     2. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.  
     <img src="../images/IVR-4.png" alt="associate app" title="associate app" style="border: 1px solid gray; zoom:70%;">
@@ -85,7 +85,7 @@ See [Voice Call Properties: Configuring Grammar](../automation/use-cases/dialogs
 
 !!! note
 
-    This option was introduced in ver 7.1 of the platform. It is not available for on-prem installation.
+    It is not available for on-prem installation.
 
 The Platform offers an **IVR Sandbox environment** to instantly launch your AI Agent for interactions over voice calls. This is useful when a working IVR system is not available for testing your AI Agent over a voice channel. IVR Sandbox is an optional integration and it can coexist with your custom IVR integration.
 
@@ -127,7 +127,7 @@ This section explains the IVR channel setup for your AI Agent. After configuring
 
 **Enable IVR Channel and Associate with an APP**
 
-Kore.ai Assistants require a JWT token to authenticate the incoming requests from IVR. For generating a JWT token, you should associate an app with the AI Agent. You can select any existing Apps available in your Kore.ai account or create a new app.
+Assistants require a JWT token to authenticate the incoming requests from IVR. For generating a JWT token, you should associate an app with the AI Agent. You can select any existing Apps available in your account or create a new app.
 
 1. Go to **Channels & Flows** > **Channels** > **Third Party Voice** > **All** and click **IVR**.
 2. The IVR Channel Instructions panel is displayed.

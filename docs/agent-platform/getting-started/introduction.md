@@ -55,7 +55,7 @@ It facilitates the easy deployment and management of AI models, including fine-t
 
 ### Prompt Management
 
-Prompt Studio and Library enable efficient prompt design, management, reuse, and collaboration across teams. It enables real-time co-editing, commenting, version tracking, and integration with the overall agent platform for seamless deployment.
+Prompt Studio and Library enable efficient prompt design, management, reuse, and collaboration across teams. It enables real-time co-editing, commenting, version tracking, and integration with the overall Agent Platform for seamless deployment.
 
 ### Evaluation and Testing Framework
 

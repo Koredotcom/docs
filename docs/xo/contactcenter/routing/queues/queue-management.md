@@ -7,17 +7,61 @@ Once a conversation comes in, it gets assigned to a queue, the next step is to c
 
 ## Queue Routing Modes
 
-All conversations will get assigned to queues as they come in. This process is based on two Routing modes, as described below.
+All conversations will get assigned to queues as they come in. This process is based on three Routing modes, as described below.
 
 **Standard Routing**
 
 * Queue routing is primarily based on the highest average skill and proficiency match for a given conversation. This routing mode only considers proficiency after a skill match has occurred.
-* If multiple agents match a skill, the routing is done based on currently utilized slots. Agents with fewer utilized slots get priority, as per proficiency thresholds. Also, agents get prioritized if more time has passed since their last conversation compared to other agents.
+* If multiple agents match a skill and have the same proficiency level, routing is determined based on currently utilized slots, with agents having fewer utilized slots given priority. Additionally, agents who have been idle longer since their last conversation are further prioritized.
 
 **Advanced Routing**
 
-* In this case, the conversation first routes to a preferred agent.
+* In this case, the conversation first routes to a preferred agent, or a set of preferred agents.
 * For each new conversation, Contact Center AI checks preferred agents (if any) for availability. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check is expanded to the full agent list, and skills are matched to select the best available agent (according to the Simple Routing Mode).
+* When preferred agents are busy and the consideration pool expands to include all available agents with matching skills, configurable timers for skill expiry allow progressive relaxation of skill match criteria, thereby gradually expanding the agent pool.
+
+**Conditional Group Routing (CGR)**
+
+Conditional Group Routing is a dynamic routing feature in a Contact Center as a Service (CCaaS) environment designed to reduce customer wait times by intelligently expanding the pool of eligible agents beyond a single queue without affecting other queues. Unlike traditional routing, which assigns conversations based on skill match and proficiency, Conditional Group Routing uses rule-based eligibility expansion to include agents from similar queues when conversations wait too long, helping maintain service levels.
+
+CGR is configured at the queue level for queues containing a single channel type.
+
+Administrators can configure CGR rules in the routing settings of a queue by turning on the toggle.  
+<img src="../images/cgr-toggle.png" alt="Enable CGR" title="Enable CGR" style="border: 1px solid gray; zoom:80%;">
+
+**How it works**
+
+**Initial Routing Attempt**: The system first attempts to route the conversation within the originating queue (for example, Queue A) using standard skill and proficiency matching. This attempt occurs for a configurable duration, such as 30 seconds.
+
+**Conditional Expansion**: If no eligible agent is available in the originating queue within the configured wait period, the system expands the search to other similar queues (for example, Queue B, Queue C). This expansion is conditional and based on predefined KPIs, such as Average Handle Time (AHT) and Estimated Wait Time (EWT).  
+<img src="../images/options.png" alt="Options" title="Options" style="border: 1px solid gray; zoom:80%;">
+
+**Eligibility Rules**
+
+* Only queues meeting the configured conditions are considered.  
+* For example, if Queue B’s EWT is less than 1 minute, its agents are pulled into the consideration pool.  
+* Agents must still satisfy the skill and proficiency requirements for the conversation.  
+
+**Routing Decision**
+
+* The conversation is then routed to the most suitable agent within this expanded pool.  
+* If a queue does not meet the conditions (for example, EWT is too high), it is skipped to avoid service-level impact.
+
+**Example Scenario**
+
+* **Queue A (QA)**: A new conversation arrives. QA’s Estimated Wait Time (EWT) = 5 minutes.  
+* **Configurable Wait Period**: The system attempts to find an agent in QA for 30 seconds.  
+* **Expansion Check**: After 30 seconds, the system checks Queue B (QB).  
+    * If QB’s EWT < 1 minute → Agents from QB are added to the routing pool.  
+    * If QB’s EWT ≥ 1 minute → QB is skipped, and the system evaluates Queue C (QC).  
+* **Result**: By pulling in eligible agents from QB (or QC if QB fails), the system can route the conversation faster, reducing customer wait time while ensuring no negative impact on other queues’ service metrics.  
+
+**Key Benefits**
+
+* Reduces long wait times in queues with high load.  
+* Maintains queue-level service levels by applying KPI-based conditions.  
+* Provides flexibility through configurable wait periods and rules.  
+* Ensures only skilled and proficient agents are considered, preserving service quality.  
 
 ## The Queues Live Board
 

@@ -52,7 +52,12 @@ You can add a Loop node to your canvas to repeat a sequence of child nodes for e
 
 The Loop node contains a section or block where you can place supported child nodes to define what happens on each iteration.
 
-### Add a Loop Node
+### Step 1: Open Flow Builder
+
+* Log in → In **Agent Platform Modules** → Click **Tools**.
+* Select your tool → Click **Go to Flow**.
+
+### Step 2: Add a Loop Node
 
 You can insert a Loop node on the canvas using any of the following methods:
 
@@ -64,7 +69,7 @@ By default, the Loop node is added in *expanded mode*, allowing you to start bui
 
 <img src="../images/loop_node.png" alt="loop node" title="loop node" style="border: 1px solid gray; zoom:80%;">
 
-### Add Nodes Inside the Loop
+### Step 3: Add Nodes Inside the Loop
 
 You can define the repeated steps by placing nodes inside the loop structure. Supported methods:
 
@@ -80,7 +85,7 @@ You can add any supported child nodes inside the Loop node, including Function N
 
     Only nodes placed inside the loop block will execute per iteration. Nodes connected outside the Loop node will run after the loop completes.
 
-### Configure Loop Node Settings
+### Step 4: Configure Loop Node Settings
 
 Click on the Loop node to open its configuration panel. The following options are available:
 
@@ -117,7 +122,7 @@ Think of these like array processing methods:
 
 <img src="../images/loop_errors.png" alt="loop errors" title="loop errors" style="border: 1px solid gray; zoom:80%;">
 
-## Run Workflow with Loops
+### Step 5: Run Workflow with Loops
 
 Once you’ve added and configured your Loop node, you can run the workflow to see how it executes.
 

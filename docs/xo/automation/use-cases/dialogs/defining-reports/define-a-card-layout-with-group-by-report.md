@@ -9,7 +9,7 @@ When the user clicks the link in the message, a card layout with group by report
 
 To complete the following procedure, you must have already defined a task, such as an alert task, or information task, that you want to add a card layout with group by report link to. Complete the steps in the following procedure to define a card layout with group by report.
 
-1. In Bot Builder, select the task for the Bot that you want to add a card layout with group by report link to.
+1. In App Builder, select the task for the App that you want to add a card layout with group by report link to.
 
     !!! Note
     

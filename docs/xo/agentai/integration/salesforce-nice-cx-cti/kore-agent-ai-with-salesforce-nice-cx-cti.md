@@ -536,7 +536,7 @@ Create a Lightning tab by following the instructions in this [document](https://
 
 ### <span id="OAuth">Enabling OAuth</span>
 
-1. Go to **Setup** > **OAuth and OpenID Connect Settings** and enable **Allow OAuth Username-Password Flows**.  
+1. Go to **Setup** > **OAuth and OpenID Connect Settings** and enable **Allow OAuth Username-Password Flows**.     
 <img src="../images/enable-allow-oauth-password-20.png" alt="enable-allow-oauth-password" title="enable-allow-oauth-password" style="border: 1px solid gray; zoom:80%;">
 
 2. Create a connected Salesforce app and get the **Access Key** and **Access Token**. Follow [this guide](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&language=en_US&type=5){:target="_blank"} for help.

@@ -39,6 +39,7 @@ The following table lists the Agent Protocol APIs that allow users to interact w
 | [Sessions API](sessions.md)    | Creates, retrieves, or ends a session with an agent to maintain conversation context.             |
 | [Runs API](execute.md)        | Sends user input to an agent within a session and receives a response.                            |
 | [File Attachment APIs](upload.md) | Upload or delete attachments to a conversation. These attachments can be referenced during an agent run as context|
+| [Create App API](create-app.md) | Create a new Agentic App.|
 
 
 ## Key Concepts and Terminologies
@@ -47,7 +48,7 @@ Below is a list of important terms used across the API documentation.
 
 
 
-* **App (AppId)**: Represents a specific App built on the Agent platform.
+* **App (AppId)**: Represents a specific App built on the Agent Platform.
 * **Environment (envName)**: Refers to a deployment environment for the app. The environment name must match the exact name as configured in the application. 
 * **Session (sessionId)**: A unique ID representing a single conversation between an end-user and the agent. Sessions allow multi-turn conversations by preserving context.
 * **Session Identity**: Used to reference a session or user. You can refer to the session in one or more of the following ways. 

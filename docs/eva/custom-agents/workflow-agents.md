@@ -1,7 +1,6 @@
 # Workflow Agent
 
-The Workflow Agent allows users to integrate tools in Agent platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently. To learn more about Workflow agent flow, click
-[here](https://docs.kore.ai/gale/agents/agents-flows/flows-overview/).
+The Workflow Agent allows users to integrate tools in Agent platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently.
 
 The Agent leverages APIs and combines retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. These highly configurable agents allow users to select and fine-tune models from various options within the Workflow platform. Once configured, these agents dynamically adapt to user inputs, providing real-time, intelligent responses.
 
@@ -16,10 +15,10 @@ You can create a new agent or import an existing one.
 To import an existing Workflow agent:
 
 1.  Click the **Import Agent** button located in the upper-right
-    corner.![](images/import-gale.png)
+    corner.![](images/import-workflow.png)
 
 2.  Select the .ZIP file of the existing
-    agent.![](images/import-gale-agent.png)
+    agent.![](images/import-workflow-agent.png)
 
 3.  Click **Import** to complete the process. The imported agent will appear on the Workflow Agents page.
 
@@ -28,7 +27,7 @@ To import an existing Workflow agent:
 To create a Workflow Agent, follow the steps outlined below:
 
 1.  In the **Admin Console**, click **AI Agents** from the left pane, and then select **Workflow Agents**. A list of available workflow agents will be
-    displayed.![](images/AI_agent_gale.png)
+    displayed.![](images/AI_agent_workflow.png)
 
 2.  On the Workflow Agents page, click **+Create
     Agent**.![](images/create_agent.png)
@@ -56,7 +55,7 @@ For instance, if an agent called "Sales Buddy" is created to handle user
 queries, specifying its purpose helps this agent whenever a user sends a query
 related to any cross-sell or upsell product.
 
-![](images/detail_and_purpose_gale.png)
+![](images/detail_and_purpose_workflow.png)
 
 
 ###   <a id="configure">Step 2: Configure Workflow Flow</a>
@@ -80,7 +79,7 @@ steps outlined below:
         endpoint. Once the agent completes its process, Workflow posts the response
         back to the specified endpoint.
 
-    ![](images/config_galeFlow.png)
+    ![](images/config_workflow_Flow.png)
 
 2.  For Async Mode, enter the **POST URL** and **Access
     token**.![](images/async.png)  
@@ -128,7 +127,7 @@ steps outlined below:
 6.  Click **Import** to add the cURL
 
 7.  Click **Run** to fetch the API details.  
-    ![](images/fetch-gale.png)
+    ![](images/fetch-workflow.png)
 
 8.  After fetching the API details, enter the API key value. To get the API key:
 
@@ -156,7 +155,7 @@ steps outlined below:
 The **Appearance and Behavior** section displays sample queries to test the agent’s behavior.
 
 1. Click **+Add Query** to input additional test queries.
-2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer to , refer <a href="https://docs.kore.ai/ai-for-work/custom-agents/notify-api/" target="_blank">Notifications</a>.
+2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer to , refer [Notifications](../custom-agents/notify-api.md)</a>.
 3. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period.
 4. Once validated, click **Publish** to move to the final step.
 
@@ -193,10 +192,6 @@ Work”. This makes it easy to view and manage the data exchange between the age
 and the connected platform.
 
 ![](images/input_output.png)
-
-For more information on input and output variables, refer to the [manage input
-and
-output.](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/)
 
 ##  User Interaction with Sync and Async Flows
 

@@ -92,7 +92,7 @@ In this next section, you will define the Web/Mobile Client channel for the Trav
             ```
             "clientSecret": "{client secret}"
             $.ajax({
-            url: "[http://localhost:3000/api/users/getJWT](http://localhost:3000/api/users/getJWT)",
+            url: "[https://localhost:3000/api/users/getJWT](https://localhost:3000/api/users/getJWT)",
                 //this is sample url of a localhost. 
                 //This should include the url where you are hosting 
             the app.
@@ -134,7 +134,7 @@ In this next section, you will define the Web/Mobile Client channel for the Trav
             ```
             “clientSecret”: “{client secret}”
             $.ajax({
-            url: “http://localhost:3000/api/users/getJWT”,
+            url: “https://localhost:3000/api/users/getJWT”,
                 //this is sample url of a local host. 
                 //This should include the url where you are hosting the app.
             botOptions.userIdentity = ‘ ‘;
@@ -228,10 +228,10 @@ For example, a user may have started the conversation with the app using an anon
  "iat": 1611810186883,
  "exp": 1611813786.883,
  "aud": "https://idproxy.kore.com/authorize",
- "iss": "cs-d3042d3e-7da4-55da-a94d-783349270cc0",
- "sub": "knowuser1@test.com",
+ "iss": "cs-d3042d3e-7da4-55da-a94d-78334927xxxx",
+ "sub": "john.doe@example.com ",
  "isAnonymous": "false",
- "identityToMerge": "anonymoususer1@test.com"
+ "identityToMerge": "john.doe@example.com"
 }
 ```
 
@@ -270,13 +270,13 @@ botOptions.botInfo = {
 
 ### Some commonly encountered errors
 
-* A wrong URL is given in index.html, users see a 404 error. Double check the URL. URL changes depending on whether you are hosting the app on your own web SDK or on Kore’s web SDK. If its Kore web SDK, then the URL is `http://demo.kore.net:3000/users/sts 7`.
+* A wrong URL is given in index.html, users see a 404 error. Double check the URL. URL changes depending on whether you are hosting the app on your own web SDK or on Kore’s web SDK. If its Kore web SDK, then the URL is `https://demo.kore.net:3000/users/sts 7`.
 
     If you are hosting on your in-house web SDK, then provide the respective URL.
 
 * missing/Invalid jwt.sub(): This error occurs for enterprise Apps, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html
 
-    `botOptions.userIdentity = 'x@gmail.com';// Provide users email id here.`
+    `botOptions.userIdentity = 'john.doe@example.com';// Provide users email id here.`
 
 * Not found: User sees this error when either wrong clientID or no clientID is given. Check the correct ClientID from App – API Extensions option
 

@@ -9,10 +9,12 @@ To manage this setting, follow the steps below:
 1. Click **Conversation Intelligence** > **Conversation Management** > **Ignore Words & Field Memory**.
    <img src="../images/ignore-words-edit-alert-tasks-window.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>This feature is available only if you create and configure an Alert/Action/Information task for the Assistant. <a href="../../use-cases/alert-tasks.md#general-settings/" target="_blank">Learn more</a>.</p>
-</div>
+
+!!! note
+
+    This feature is available only if you create and configure an Alert/Action/Information task for the Assistant. [Learn more](../../use-cases/alert-tasks.md#general-settings).
+    
+    
 
 <ol start="2"><li>Edit each task in the <b>Field Memory</b> settings to persist its data and pre-populate the data in another related task for the same AI Agent. For example, for a travel planning assistant, <i>Get Wait Times for Boarding</i> task, you can pre-populate task fields into the related task, <i>Book a FastPass</i> task.</li> 
 

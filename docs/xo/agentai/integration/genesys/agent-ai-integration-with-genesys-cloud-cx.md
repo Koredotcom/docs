@@ -7,240 +7,25 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
     This integration process also works for Genesys Desktop App.
 
 ## Definitions
-
-<table>
-  <tr>
-   <td><strong>Section/Group</strong>
-   </td>
-   <td><strong>Key</strong>
-   </td>
-   <td><strong>Definition</strong>
-   </td>
-   <td><strong>Reference</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Generate Oauth ID to enable Kore Services to Connect with Genesys
-<p>
-+
-<p>
-Create an Interaction Widget in Genesys for Agent AI
-   </td>
-   <td><a href="https://platform.kore.ai" target="_blank">Agent AI URL</a>
-   </td>
-   <td>The domain of the Agent AI.
-   </td>
-   <td>
-<ul>
-
-<li>If it is legacy Agent AI, URL is <a href="https://agentassist.kore.ai" target="_blank">https://agentassist.kore.ai</a></li>
-
-<li>If it is UXO, URL is <a href="https://platform.kore.ai" target="_blank">https://platform.kore.ai</a></li>
-
-<li>If it is on-prem, the URL is the origin where your Agent AI is hosted.</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>Client App
-   </td>
-   <td>To use any Kore AI Agent SDKs, a client app must be created to get the authentication credentials to communicate between the Kore AI Agent and Agent AI. 
-<p>
-<strong>Note: </strong>Only the default Client App is supported.
-   </td>
-   <td><a href="https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel" target="_blank">https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel</a>
-   </td>
-  </tr>
-  <tr>
-   <td>Create an Interaction Widget in Genesys for Agent AI
-   </td>
-   <td>Custom Data / x_passthru_metadata
-   </td>
-   <td>Use this to pass information to Kore AI Agent.
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>Secure Custom Data / KvpConfig
-   </td>
-   <td>Use this to pass sensitive information to Kore AI Agent.
-   </td>
-   <td><a href="https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE" target="_blank">https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE</a>
-   </td>
-  </tr>
-  <tr>
-   <td>Create an Interaction Widget in Genesys for Agent AI
-   </td>
-   <td>Interaction Widget
-   </td>
-   <td>The Interaction Widget is utilized for displaying the Agent AI iframe within the Genesys Agent Desktop.
-   </td>
-   <td><a href="https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration" target="_blank">https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration</a>
-   </td>
-  </tr>
-  <tr>
-   <td>Create an Interaction Widget in Genesys for Agent AI
-   </td>
-   <td>Interaction Widget URL params
-   </td>
-   <td>
-<ul>
-
-<li><strong>“multibot=true”, represents usage of new version of Agent AI integration that supports agent specific AI Agent</strong></li>
-
-<li><strong>“x_metadata” - </strong>This param value equals the <code>URL</code>-<code>encoded string</code> of JSON object which consists of data required by Kore Middleware service to successfully generate Agent AI iframe URL.</li>
-
-<li><strong>“x_passthru_metadata”</strong> - This parameter value can be a JWE or JWT token, a base64 encoded string, or a URL-encoded JSON. It is stored as custom data in the app context. (Optional Parameter)</li>
-</ul>
-   </td>
-   <td><strong>x_metadata</strong>’s<strong> </strong>JSON object structure is 
-<p>
-<code>{</code>
-<p>
-<code>"datatable":{</code>
-<p>
-<code>"name":&lt;datatable name>,</code>
-<p>
-<code>"token":&lt;jwt token created using App's ClientId and ClientSecret>,</code>
-<p>
-<code>"qDelimiter":<a href="#qdl">Paste the special character used in the queue name to distinguish the QueueIdentifier from the remaining part of the queue name</a></code>
-<code>}</code>
-<p>
-<code>}</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>BotId
-   </td>
-   <td>A unique identifier assigned to an AI Agent.
-   </td>
-   <td>Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details 
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>ClientId
-   </td>
-   <td>An identifier provided to a client application.
-   </td>
-   <td>Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details 
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>ClientSecret 
-   </td>
-   <td>A secret key or password associated with the ClientId.
-   </td>
-   <td>Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details 
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>AgentAssistWidgetURL
-   </td>
-   <td>URL that points to the Agent AI widget.
-<p>
-For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
-   </td>
-   <td>Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details 
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>AudiohookEnabled
-   </td>
-   <td>A setting or flag indicating whether Kore audio processing is enabled for the AI Agent.
-   </td>
-   <td><strong>“true” </strong>if Kore audio processing should be enabled, otherwise <strong>“false”</strong>.
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>QueueIdentifier
-   </td>
-   <td>It’s a unique identifier in the Data Table to fetch AI Agent details at run time.
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>KvpConfig
-   </td>
-   <td>The KVPs (Key value pairs) to be included in SecureCustomData. JSON object containing the necessary keys and xpath (paths to locate the value in Genesys Conversation API result JSON object). <a href="https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId" target="_blank">https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId</a>
-<p>
-<strong>Note: </strong>Optional Column. Required when you wish to send secure custom data to Agent AI.
-   </td>
-   <td><strong>Sample:</strong>
-<p>
-<code>{</code>
-<p>
-<code>"queueName": "participants[0].queueName",</code>
-<p>
-<code>"callStatus": "participants[0].calls[0].state"</code>
-<p>
-<code>}</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>JWEPublicKey
-   </td>
-   <td>Public key assigned to the Client App.
-   </td>
-   <td>Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>RSPrivatePem
-   </td>
-   <td>The Private Key that corresponds to the Public Key supplied during the creation of a Client App using the RS256 or RS512 algorithm.
-   </td>
-   <td><strong>RSPrivatePemKey</strong> is an optional column and is required when the <strong>algorithm</strong> used is <strong>“RS256”</strong> or <strong>“RS512”</strong>.
-<p>
-(Not supported / Will be supported in future releases)
-   </td>
-  </tr>
-  <tr>
-   <td>Capture AI Agent Information in Kore Data Table
-   </td>
-   <td>Algorithm
-   </td>
-   <td>Algorithm assigned to the Client App.
-   </td>
-   <td>Currently, “HS256” algorithm is the only supported value. So, the <strong>algorithm</strong> value will always be <strong>“HS256”</strong>.
-   </td>
-  </tr>
-  <tr>
-   <td>Install Audiohook for Voice Streaming
-   </td>
-   <td>Kore Voice Gateway(KVG)
-   </td>
-   <td>For Saas in US region, value is savg-webserver.kore.ai
-<p>
-For on-prem, refer to corresponding host<strong> </strong>
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
+| **Section/Group** | **Key** | **Definition** | **Reference** |
+|--------------------|---------|---------------|---------------|
+| Generate Oauth ID to enable Kore Services to Connect with Genesys<br>+<br>Create an Interaction Widget in Genesys for Agent AI | Agent AI URL | The domain of the Agent AI. | - If it is legacy Agent AI, URL is [https://agentassist.kore.ai](https://agentassist.kore.ai){:target="_blank"}<br>- If it is UXO, URL is [https://platform.kore.ai](https://platform.kore.ai){:target="_blank"}<br>- If it is on-prem, the URL is the origin where your Agent AI is hosted. |
+|  | Client App | To use any Kore AI Agent SDKs, a client app must be created to get the authentication credentials to communicate between the Kore AI Agent and Agent AI.<br>**Note:** Only the default Client App is supported. | [https://docs.kore.ai/xo/channels/add-web-mobile-client/adding-the-webmobile-client-channel](../../../channels/add-web-mobile-client.md){:target="_blank"} |
+| Create an Interaction Widget in Genesys for Agent AI | Custom Data / x_passthru_metadata | Use this to pass information to Kore AI Agent. |  |
+| Capture AI Agent Information in Kore Data Table | Secure Custom Data / KvpConfig | Use this to pass sensitive information to Kore AI Agent. | [https://docs.kore.ai/xo/sdk/sdk-security/json-web-encryption-jwe](../../../sdk/sdk-security.md/#json-web-encryption-jwe){:target="_blank"} |
+| Create an Interaction Widget in Genesys for Agent AI | Interaction Widget | The Interaction Widget is utilized for displaying the Agent AI iframe within the Genesys Agent Desktop. | [https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration](https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration){:target="_blank"} |
+| Create an Interaction Widget in Genesys for Agent AI | Interaction Widget URL params | - **“multibot=true”** represents usage of new version of Agent AI integration that supports agent specific AI Agent<br>- **“x_metadata”** – URL-encoded JSON containing data required by Kore Middleware service<br>- **“x_passthru_metadata”** – Optional, can be JWE/JWT/base64/URL-encoded JSON stored as custom data | **x_metadata** JSON object structure:<br>`{`<br>`"datatable":{`<br>`"name":<datatable name>,`<br>`"token":<jwt token>,`<br>`"qDelimiter":<Paste the special character used in the queue name>`<br>`}}` |
+| Capture AI Agent Information in Kore Data Table | BotId | A unique identifier assigned to an AI Agent. | Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details |
+| Capture AI Agent Information in Kore Data Table | ClientId | An identifier provided to a client application. | Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details |
+| Capture AI Agent Information in Kore Data Table | ClientSecret | A secret key or password associated with the ClientId. | Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details |
+| Capture AI Agent Information in Kore Data Table | AgentAssistWidgetURL | URL that points to the Agent AI widget.<br>For example: `https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html` | Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details |
+| Capture AI Agent Information in Kore Data Table | AudiohookEnabled | A setting or flag indicating whether Kore audio processing is enabled for the AI Agent. | **true** if Kore audio processing should be enabled, otherwise **false**. |
+| Capture AI Agent Information in Kore Data Table | QueueIdentifier | A unique identifier in the Data Table to fetch AI Agent details at run time. |  |
+| Capture AI Agent Information in Kore Data Table | KvpConfig | The KVPs (Key value pairs) to be included in SecureCustomData. JSON object containing the necessary keys and xpath (paths to locate the value in Genesys Conversation API result JSON object). [Genesys API Explorer](https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId){:target="_blank"}<br>**Note:** Optional column. Required when you wish to send secure custom data to Agent AI. | **Sample:**<br>`{`<br>`"queueName": "participants[0].queueName",`<br>`"callStatus": "participants[0].calls[0].state"`<br>`}` |
+| Capture AI Agent Information in Kore Data Table | JWEPublicKey | Public key assigned to the Client App. | Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details |
+| Capture AI Agent Information in Kore Data Table | RSPrivatePem | The Private Key that corresponds to the Public Key supplied during the creation of a Client App using the RS256 or RS512 algorithm. | **RSPrivatePemKey** is an optional column and is required when the **algorithm** used is **RS256** or **RS512**.<br>(Not supported / Will be supported in future releases) |
+| Capture AI Agent Information in Kore Data Table | Algorithm | Algorithm assigned to the Client App. | Currently, “HS256” algorithm is the only supported value. So, the **algorithm** value will always be **HS256**. |
+| Install Audiohook for Voice Streaming | Kore Voice Gateway (KVG) | For SaaS in US region, value is `savg-webserver.kore.ai`.<br>For on-prem, refer to corresponding host. |  |
 
 ## Architecture Diagrams
 
@@ -336,7 +121,7 @@ Field Label
   <tr>
    <td>AgentAssist URL
    </td>
-   <td><a href="https://docs.google.com/document/d/12C0gDuwcmZLfl3EQWYw5aMP8euGrmqy1_HtbUBSX3BM/edit#bookmark=id.8jmht6j7t3d">Agent AI URL</a>
+   <td><a href="#aurl">Agent AI URL</a>
    </td>
   </tr>
   <tr>

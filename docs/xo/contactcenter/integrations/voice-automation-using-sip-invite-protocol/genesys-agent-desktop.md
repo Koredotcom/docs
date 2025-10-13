@@ -47,6 +47,10 @@ This document contains a step-by-step process of handing over a call (via SIP IN
 
     <img src="../images/sip-transfer-5.png" alt="sip-transfer" title="sip-transfer" style="border: 1px solid gray; zoom:80%;">  
 
+    !!! note
+        
+        Using the SIP Invite method, you can pass these SIP headers to Genesys. Header keys must not contain spaces. Genesys allows reading up to 10 SIP headers using the **Get SIP Header** node in Architect/Callflow.
+
 ## Genesys Side Configuration for Agent Transfer (Kore to Genesys) 
 
 ### Step 1 – Queue 
@@ -95,8 +99,14 @@ In this section, create a new Inbound Call Flow to transfer the inbound calls fr
 
 9. Add at least one **Transfer to ACD** node and point it to the queue you want to use for agents.  
 10. At the end of **Failure**, add a **Disconnect** node.  
-11. Once the flow is ready, save and publish the Architect Flow.  
+11. Once the flow is ready, save and publish the Architect Flow.
 
+    !!! note
+    
+        You can also extract and view all the available SIP headers here. Refer to the following screenshot for more details: 
+
+    <img src="../images/sip-headers.png" alt="sip-headers" title="sip-headers" style="border: 1px solid gray; zoom:80%;"> 
+    
 ### Step 3 – DID Numbers  
 
 You need a DID Number that is internally routable inside Genesys.   

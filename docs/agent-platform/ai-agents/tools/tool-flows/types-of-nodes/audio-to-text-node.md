@@ -114,31 +114,32 @@ Metrics include:
     * **Input**, **Output**, and **Response Time**
     * **Translation,** and **Timestamp**.  [Learn more](../../../../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 
-## Steps to Add and Configure the Node
+## Add and Configure an Audio to Text Node
 
-To add and configure the node, follow the steps below:
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before proceeding, you must add an external LLM to your account.</p>
+</div>
 
-***Note**: Before proceeding, you must add an external LLM to your account using either [Easy Integration](../../../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} or [Custom API Integration](../../../../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}.*
 
+### Step 1: Open Flow Builder
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+* Log in → In Agent Platform Modules → Click **Tools**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed.
-    <img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
+* Select your tool → Click **Go to Flow**.
 
-3. Click **Go to flow** to edit the in-development version of the flow.     
-<img src="../images/access-af.png" alt="access tool flow" title="access tool flow" style="border: 1px solid gray; zoom:75%;">  
+### Step 2: Add the Node
 
+* Click the "**+**" icon for **Audio to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Audio to text**.
+    <img src="../images/select-audio-to-text.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
 
-4. In the flow builder, click the **+** icon for **Audio to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Audio to text**.
-<img src="../images/select-audio-to-text.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
+### Step 3: Configure the Node
 
+* Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
+  <img src="../images/properties-dialog-audio-to-text.png" alt="properties dialog" title="properties dialog" style="border: 1px solid gray; zoom:75%;">
 
-5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
-<img src="../images/properties-dialog-audio-to-text.png" alt="properties dialog" title="properties dialog" style="border: 1px solid gray; zoom:75%;">
-
-6. Enter or select the following **General Settings**:
+* Enter or select the following **General Settings**:
     * **Node Name**: Enter an appropriate name for the node. For example, “*CustomerSupportConversation*.”
     * Provide the input variable that is set for the node for the **Audio File** field. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
     * Select a model from the list of configured models.
@@ -164,58 +165,57 @@ To add and configure the node, follow the steps below:
     For more information about how the model parses the response and separates keys from the content body, see: [Structured Response Parsing and Context Sharing in Workflows](../perform-other-actions-on-the-flow-builder/model_response_parsing.md){:target="_blank"}.
 
 
-7. Click the **Connections** icon and select the **Go to Node** for success and failure conditions. 
-<img src="../images/connections-audio-to-text.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;">
+* Click the **Connections** icon and select the **Go to Node** for success and failure conditions. 
+   <img src="../images/connections-audio-to-text.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;">
 
-<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
-<li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Audio to Text</b> node.</li></ul>
+     * **On Success** > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
+     * **On Failure** > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Audio to Text</b> node.
 
-<ol start="8"><li>Finally, <a href="#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol>
+* Finally, <a href="#step-3-run-the-flow" target="_blank">run the flow</a> and fix any issues found.
 
-## Configure and Test the Flow for the Node
+## Test the Flow for the Node
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
+* Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
 
-<img src="../images/add-input-variable-audio-to-text.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/add-input-variable-audio-to-text.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="2"><li>Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable</b> window to define a text input variable.</li>
-<li>Click <b>Save</b>.</li>
-
-<img src="../images/select-text-type-input.png" alt="select text and save" title="select text and save" style="border: 1px solid gray; zoom:75%;"></ol>
+* Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable</b> window to define a text input variable.
+* Click <b>Save</b>.
+    
+    <img src="../images/select-text-type-input.png" alt="select text and save" title="select text and save" style="border: 1px solid gray; zoom:75%;">
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node.
 
 
 ### Step 2: Add Output Variable(s)
 
-1. Click the **Output** tab for the **Start** node.
-2. Click **Add Output Variable**.
+* Click the **Output** tab for the **Start** node.
+* Click **Add Output Variable**.
+    
+    <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
-
-<ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the transcribed text output.</li>
-<li>Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
-<img src="../images/save-output-variable.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;"></ol>
-
+* Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the transcribed text output.
+* Click <b>Save</b>. <a href="../text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
+    <img src="../images/save-output-variable.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 3: Run the Flow
 
 To run and test the flow, follow the steps below:
 
-1. Click the **Run Flow** button at the top-right corner of the flow builder.
-<img src="../images/click-run-button.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
+* Click the **Run Flow** button at the top-right corner of the flow builder.
+   <img src="../images/click-run-button.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
 
-2. (Optional) Add the value for **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
+* (Optional) Add the value for **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
+    
+    <img src="../images/gen-output-audio-to-text.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../images/gen-output-audio-to-text.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
+* Click <b>Generate Output</b>.
 
-<ol start="3"><li>Click <b>Generate Output</b>.</li></ol>
+  The **Debug** window generates the flow log and results, as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
 
-The **Debug** window generates the flow log and results, as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
-
-<img src="../images/debug-window-audio-to-text.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/debug-window-audio-to-text.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">
 
 
 

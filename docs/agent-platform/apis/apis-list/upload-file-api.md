@@ -1,11 +1,6 @@
 # File Upload API
 
-The API can upload a file to the local server for seamless usage in multimodal nodes and across the Agent Platform. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> as the response, which can be used to take further action on the file. 
-
-The following file upload modes are supported:
-
-* [Mode 1 - Upload a single file as is](./upload-file-api.md/#mode-1-upload-a-single-file-as-is){:target="_blank"}: For files smaller than 25 MB.
-* [Mode 2 - Upload a file in chunks](./upload-file-api.md/#mode-2-upload-a-file-in-chunks){:target="_blank"}: For files larger than 25 MB.
+The API uploads a file to the local server for seamless usage in multimodal nodes and across the Agent Platform. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> for further action on the file.
 
 The following file extensions are currently supported:
 
@@ -21,11 +16,18 @@ The following file extensions are currently supported:
 * WEBP (.webp)
 * GIF (.gif)
 
-**Where can I find the API key?** [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
+
+The following file upload modes are supported:
+
+* [Mode 1 - Upload a single file as is](./upload-file-api.md/#mode-1-upload-a-single-file-as-is){:target="_blank"}: Use this mode if your file is smaller than 25 MB.
+* [Mode 2 - Upload a file in chunks](./upload-file-api.md/#mode-2-upload-a-file-in-chunks){:target="_blank"}: Use this mode if your file is larger than 25 MB. Ensure you start the session for chunk uploads before proceeding.
 
 ## Mode 1: Upload a Single File As Is
 
-This method directly hits the endpoint and returns the <code>fileId</code> and `fileURL` in the response.
+This method directly calls the endpoint and returns the <code>fileId</code> and `fileURL` in the response.
 
 
 <table>
@@ -164,7 +166,7 @@ curl --location 'https://{host}/api/public/files' \
 
 ## Mode 2: Upload a File in Chunks
 
-This method requires three APIs to upload a large file. The key steps include:
+This method requires the following three APIs to upload a large file:
 
 1. [Start the file upload session](./upload-file-api.md/#start-session-api){:target="_blank"}.
 2. [Upload in chunks](./upload-file-api.md/#chunk-upload-api){:target="_blank"}, and 
@@ -172,7 +174,7 @@ This method requires three APIs to upload a large file. The key steps include:
 
 ### Start Session API
 
-The API initializes the file upload process and returns a <code>session ID</code>, which will be used in the next steps. The file to be uploaded is divided into chunks associated with the <code>session ID</code>. These chunks will be merged and uploaded as a single file in the subsequent APIs.
+This API starts the upload process, returning a <code>session ID</code>. The file is split into chunks linked to this ID, which are then merged and uploaded through other APIs.
 
 <table>
   <tr>
@@ -392,7 +394,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pplatform.domain.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai</code>
    </td>
    <td>String
    </td>
@@ -496,7 +498,7 @@ curl --location 'https://{host}/api/public/files/session/14xxxxxd-0xx4-4xxf-axx1
 
 ### Complete The Process
 
-This API merges the uploaded chunks and finalizes the process using the `session Id` from the [Start Session](./upload-file-api.md/#start-session-api){:target="_blank"} API. It returns the **<code>file URL</code>** and **<code>file ID</code>** in the response. Any missing chunk numbers are identified after the merge.
+This API merges the uploaded chunks and finalizes the process using the `session Id` from the [Start Session](./upload-file-api.md/#start-session-api){:target="_blank"} API. It returns the <code>file URL</code> and <code>file ID</code>. Missing chunk numbers are identified after the merge.
 
 <table>
   <tr>

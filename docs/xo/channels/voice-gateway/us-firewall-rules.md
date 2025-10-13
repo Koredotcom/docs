@@ -1,487 +1,55 @@
 # US Firewall Rules
 
-<table>
-  <tr>
-   <td rowspan="2" >
-   </td>
-   <td colspan="2" >Your Intranet
-   </td>
-   <td colspan="2" >Allowed destinations
-   </td>
-   <td rowspan="2" >Destination Port
-   </td>
-  </tr>
-  <tr>
-   <td>Protocol
-   </td>
-   <td>Source IP
-   </td>
-   <td>Source Port †
-   </td>
-   <td>Destination*
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="4" >Session Border Controller (SBC)
+## AudioCodes
 
-(Automation, HA SBC)
-   </td>
-   <td>TCP/UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>54.161.251.110
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td>TLS
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>54.161.251.110
-   </td>
-   <td>5061
-   </td>
-  </tr>
-  <tr>
-   <td>TCP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>54.161.251.110
-   </td>
-   <td>10081
-   </td>
-  </tr>
-  <tr>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>54.161.251.110
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="4" >Session Border Controller (SBC)
+|                              | Your Intranet |               | Allowed destinations |              | Destination Port |
+|------------------------------|----------------|---------------|-----------------------|--------------|-------------------|
+|                              | Protocol       | Source IP     | Source Port †        | Destination* |                   |
+| **Session Border Controller (SBC) (Automation, HA SBC)** | TCP/UDP        | ANY           | ANY                   | 54.161.251.110 | 5060              |
+|                              | TLS            | ANY           | ANY                   | 54.161.251.110 | 5061              |
+|                              | TCP            | ANY           | ANY                   | 54.161.251.110 | 10081             |
+|                              | UDP            | ANY           | ANY                   | 54.161.251.110 | 6000-65535        |
+| **Session Border Controller (SBC) (Agent SBC)** | TCP/UDP        | ANY           | ANY                   | 52.4.142.107   | 5060              |
+|                              | TLS            | ANY           | ANY                   | 52.4.142.107   | 5061              |
+|                              | UDP            | ANY           | ANY                   | 52.4.142.107   | 6000-65535        |
+|                              | TCP            | ANY           | ANY                   | 52.4.142.107   | 10081             |
 
-(Agent SBC)
-   </td>
-   <td>TCP/UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>52.4.142.107
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td>TLS
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>52.4.142.107
-   </td>
-   <td>5061
-   </td>
-  </tr>
-  <tr>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>52.4.142.107
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-  <tr>
-   <td>TCP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>52.4.142.107
-   </td>
-   <td>10081
-   </td>
-  </tr>
-</table>
+## Voice Gateway
 
-<table>
-  <tr>
-   <td colspan="6" >
-<h2><strong>SAVG</strong></h2>
+|                              | Protocol       | Source IP     | Source Port †        | Destination*      | Destination Port |
+|------------------------------|----------------|---------------|-----------------------|--------------------|-------------------|
+| **Session Border Controller (SBC) (Agent SBC)** | TCP/UDP        | ANY           | ANY                   | 3.224.189.218     | 5060              |
+|                              | TLS            | ANY           | ANY                   | 3.224.189.218     | 5061              |
+|                              | WSS            | ANY           | ANY                   | 3.224.189.218     | 8443              |
+|                              | TCP/UDP        | ANY           | ANY                   | 35.174.41.205     | 5060              |
+|                              | TLS            | ANY           | ANY                   | 35.174.41.205     | 5061              |
+|                              | WSS            | ANY           | ANY                   | 35.174.41.205     | 8443              |
+|                              | UDP            | ANY           | ANY                   | 44.215.230.111    | 6000-65535        |
+|                              | UDP            | ANY           | ANY                   | 54.210.75.166     | 6000-65535        |
+| public FQDN                 |                |               |                       | *.kore.ai         | 443               |
+| public FQDN                 |                |               |                       | *.twilio.com      | 443               |
 
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="8" >Session Border Controller (SBC)
+## STUN SERVER & MEDIA RELAY
 
-(Agent SBC)
-   </td>
-   <td>TCP/UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.224.189.218
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td>TLS
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.224.189.218
-   </td>
-   <td>5061
-   </td>
-  </tr>
-  <tr>
-   <td>WSS
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.224.189.218
-   </td>
-   <td>8443
-   </td>
-  </tr>
-  <tr>
-   <td>TCP/UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>35.174.41.205
-   </td>
-   <td>5060
-   </td>
-  </tr>
-  <tr>
-   <td>TLS
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>35.174.41.205
-   </td>
-   <td>5061
-   </td>
-  </tr>
-  <tr>
-   <td>WSS
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>35.174.41.205
-   </td>
-   <td>8443
-   </td>
-  </tr>
-  <tr>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>44.215.230.111
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-  <tr>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>54.210.75.166
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-  <tr>
-   <td>public FQDN
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>*.kore.ai
-   </td>
-   <td>443
-   </td>
-  </tr>
-  <tr>
-   <td>public FQDN
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>*.twilio.com
-   </td>
-   <td>443
-   </td>
-  </tr>
-</table>
+| Secure Media (ICE/STUN/SRTP) Edge Locations | Protocol | Source IP | Source Port † | Destination IP Ranges | Destination Port Range |
+|-----------------------------------------------|----------|-----------|----------------|------------------------|------------------------|
+| Media                                         | UDP      | ANY       | ANY            | 168.86.128.0/18       | 10000-65535            |
 
-<table>
-  <tr>
-   <td colspan="6" >
-<h2><strong>STUN SERVER & MEDIA RELAY</strong></h2>
+## Twilio STUN
 
-   </td>
-  </tr>
-  <tr>
-   <td>Secure Media (ICE/STUN/SRTP) Edge Locations
-   </td>
-   <td>Protocol
-   </td>
-   <td>Source IP
-   </td>
-   <td>Source Port †
-   </td>
-   <td>Destination IP Ranges
-   </td>
-   <td>Destination Port Range
-   </td>
-  </tr>
-  <tr>
-   <td>Media
-   </td>
-   <td>UDP
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>168.86.128.0/18
-   </td>
-   <td>6000-65535
-   </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-   <td rowspan="15" >Twilio STUN
-   </td>
-   <td>Protocol
-   </td>
-   <td>Source IP
-   </td>
-   <td>Source Port †
-   </td>
-   <td>Destination IP Ranges
-   </td>
-   <td>Destination Port Range
-   </td>
-  </tr>
-  <tr>
-   <td>TCP (TURN TLS)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>34.203.254.0 – 34.203.254.255
-   </td>
-   <td>443/5349
-   </td>
-  </tr>
-  <tr>
-   <td>TCP (TURN TLS)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>54.172.60.0 – 54.172.61.255
-   </td>
-   <td>443/5349
-   </td>
-  </tr>
-  <tr>
-   <td>TCP (TURN TLS)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>34.203.250.0 – 34.203.251.255
-   </td>
-   <td>443/5349
-   </td>
-  </tr>
-  <tr>
-   <td>TCP (TURN TLS)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.235.111.128 – 3.235.111.255
-   </td>
-   <td>443/5349
-   </td>
-  </tr>
-  <tr>
-   <td>TCP (TURN TLS)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>34.216.110.128 – 34.216.110.159
-   </td>
-   <td>443/5349
-   </td>
-  </tr>
-  <tr>
-   <td>TCP (TURN TLS)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>54.244.51.0 – 54.244.51.255
-   </td>
-   <td>443/5349
-   </td>
-  </tr>
-  <tr>
-   <td>TCP (TURN TLS)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>44.234.69.0 – 44.234.69.127
-   </td>
-   <td>443/5349
-   </td>
-  </tr>
-  <tr>
-   <td>TCP, UDP (TURN)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>34.203.254.0 – 34.203.254.255
-   </td>
-   <td>3478
-   </td>
-  </tr>
-  <tr>
-   <td>TCP, UDP (TURN)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>54.172.60.0 – 54.172.61.255
-   </td>
-   <td>3478
-   </td>
-  </tr>
-  <tr>
-   <td>TCP, UDP (TURN)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>34.203.250.0 – 34.203.251.255
-   </td>
-   <td>3478
-   </td>
-  </tr>
-  <tr>
-   <td>TCP, UDP (TURN)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>3.235.111.128 – 3.235.111.255
-   </td>
-   <td>3478
-   </td>
-  </tr>
-  <tr>
-   <td>TCP, UDP (TURN)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>34.216.110.128 – 34.216.110.159
-   </td>
-   <td>3478
-   </td>
-  </tr>
-  <tr>
-   <td>TCP, UDP (TURN)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>54.244.51.0 – 54.244.51.255
-   </td>
-   <td>3478
-   </td>
-  </tr>
-  <tr>
-   <td>TCP, UDP (TURN)
-   </td>
-   <td>ANY
-   </td>
-   <td>ANY
-   </td>
-   <td>44.234.69.0 – 44.234.69.127
-   </td>
-   <td>3478
-   </td>
-  </tr>
-</table>
+|                              | Protocol         | Source IP | Source Port † | Destination IP Ranges                  | Destination Port Range |
+|------------------------------|------------------|-----------|----------------|------------------------------------------|------------------------|
+|                              | TCP (TURN TLS)  | ANY       | ANY            | 34.203.254.0 – 34.203.254.255          | 443/5349              |
+|                              | TCP (TURN TLS)  | ANY       | ANY            | 54.172.60.0 – 54.172.61.255            | 443/5349              |
+|                              | TCP (TURN TLS)  | ANY       | ANY            | 34.203.250.0 – 34.203.251.255          | 443/5349              |
+|                              | TCP (TURN TLS)  | ANY       | ANY            | 3.235.111.128 – 3.235.111.255          | 443/5349              |
+|                              | TCP (TURN TLS)  | ANY       | ANY            | 34.216.110.128 – 34.216.110.159        | 443/5349              |
+|                              | TCP (TURN TLS)  | ANY       | ANY            | 54.244.51.0 – 54.244.51.255            | 443/5349              |
+|                              | TCP (TURN TLS)  | ANY       | ANY            | 44.234.69.0 – 44.234.69.127            | 443/5349              |
+|                              | TCP, UDP (TURN) | ANY       | ANY            | 34.203.254.0 – 34.203.254.255          | 3478                  |
+|                              | TCP, UDP (TURN) | ANY       | ANY            | 54.172.60.0 – 54.172.61.255            | 3478                  |
+|                              | TCP, UDP (TURN) | ANY       | ANY            | 34.203.250.0 – 34.203.251.255          | 3478                  |
+|                              | TCP, UDP (TURN) | ANY       | ANY            | 3.235.111.128 – 3.235.111.255          | 3478                  |
+|                              | TCP, UDP (TURN) | ANY       | ANY            | 34.216.110.128 – 34.216.110.159        | 3478                  |
+|                              | TCP, UDP (TURN) | ANY       | ANY            | 54.244.51.0 – 54.244.51.255            | 3478                  |
+|                              | TCP, UDP (TURN) | ANY       | ANY            | 44.234.69.0 – 44.234.69.127            | 3478                  |

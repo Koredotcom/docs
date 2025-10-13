@@ -268,81 +268,14 @@ Following the consult or conference call, the initiating agent can proceed with 
 
 ##### Limitations
 
-<table>
-  <tr>
-   <td><strong>Category</strong>
-   </td>
-   <td><strong>Sub-category</strong>
-   </td>
-   <td><strong>Detail</strong>
-   </td>
-   <td><strong>Scenario</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Consult Calls
-   </td>
-   <td>Ongoing consult call
-   </td>
-   <td>A conference call cannot be initiated during an ongoing consult call.
-   </td>
-   <td>-
-   </td>
-  </tr>
-  <tr>
-   <td>Consult Calls
-   </td>
-   <td>Post Consult call is merged
-   </td>
-   <td>A conference call cannot be initiated during an ongoing consult call.
-   </td>
-   <td>When the agent and user are on call and the agent initiates a consult with the Supervisor:
-    (a) If the consult is merged, then a conference is not allowed.
-<br>
-    (b) If the Supervisor has dropped from the consult call, then the conference will be allowed.
-   </td>
-  </tr>
-  <tr>
-   <td>Consult Calls
-   </td>
-   <td>Ongoing conference call
-   </td>
-   <td>Consult calls are restricted during an ongoing conference call.
-   </td>
-   <td>-
-   </td>
-  </tr>
-  <tr>
-   <td>Consult Calls
-   </td>
-   <td>Post-conference call ends
-   </td>
-   <td>Consult calls are restricted even if the ongoing conference call ends and the call is only between the user and the agent.<strong> </strong>
-   </td>
-   <td>When the agent and user are on a call and the supervisor joins from the monitor tab, it gets converted to a conference call. Even if the Supervisor exits, the call will still be considered a Conference.
-   </td>
-  </tr>
-  <tr>
-   <td>Call Transfers/Consult
-   </td>
-   <td>Outbound calls
-   </td>
-   <td>Call transfers and Consult calls are restricted to Outbound calls.
-   </td>
-   <td>-
-   </td>
-  </tr>
-  <tr>
-   <td>AgentAssist Widget
-   </td>
-   <td>Ongoing conference/consult
-   </td>
-   <td>AgentAssist Widget should be hidden during ongoing conference/consult calls.
-   </td>
-   <td>-
-   </td>
-  </tr>
-</table>
+| **Category**           | **Sub-category**               | **Detail**                                                                                       | **Scenario**                                                                                                                                                                                                 |
+|-------------------------|--------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Consult Calls           | Ongoing consult call           | A conference call cannot be initiated during an ongoing consult call.                           | -                                                                                                                                                                                                           |
+| Consult Calls           | Post Consult call is merged    | A conference call cannot be initiated during an ongoing consult call.                           | When the agent and user are on call and the agent initiates a consult with the Supervisor: <br> (a) If the consult is merged, then a conference is not allowed. <br> (b) If the Supervisor has dropped from the consult call, then the conference will be allowed. |
+| Consult Calls           | Ongoing conference call        | Consult calls are restricted during an ongoing conference call.                                 | -                                                                                                                                                                                                           |
+| Consult Calls           | Post-conference call ends      | Consult calls are restricted even if the ongoing conference call ends and the call is only between the user and the agent. | When the agent and user are on a call and the supervisor joins from the monitor tab, it gets converted to a conference call. Even if the Supervisor exits, the call will still be considered a Conference. |
+| Call Transfers/Consult  | Outbound calls                 | Call transfers and Consult calls are restricted to Outbound calls.                              | -                                                                                                                                                                                                           |
+| Agent AI Widget         | Ongoing conference/consult     | Agent AI Widget should be hidden during ongoing conference/consult calls.                       | -                                                                                                                                                                                                           |
 
 ### Call Transfer
 
@@ -693,6 +626,26 @@ These settings can be configured from [Agent settings](../contactcenter/agent-an
 **Reply and Reply All**: Agents can click **Reply** to open a response window addressed only to the most recent sender. Clicking **Reply All** opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.  
 <img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
 
+**Resend Emails**: The Email Resend feature allows agents and supervisors to resend email interactions directly from the Agent Console. It supports two scenarios:
+
+* Resending the same email content to the same recipient, including formatting and attachments.
+* Editing the email before resending, which can include adding missed information, correcting errors, or attaching additional files.
+
+Re-sent emails are linked to the original interaction for audit and traceability, ensuring agents maintain consistent and accurate communication with customers.
+
+Steps to resend an email:
+
+1. Open the email interaction.
+2. Click the **Resend** button.  
+    <img src="../images/resend-email.png" alt="Resend Email" title="Resend Email" style="border: 1px solid gray; zoom:70%;">
+
+    The email composer opens with the recipient details and original email content prefilled. (Optional) Update the email content.
+3. Click **Send**.  
+    <img src="../images/resend-email.png" alt="Resend Button" title="Resend Button" style="border: 1px solid gray; zoom:70%;">
+
+    * The re-sent email is sent as a new interaction but linked to the original interaction.  
+    * The interaction log marks the message as **Resent** for clarity.
+
 **Arrival Summary**: Every email conversation begins with an Arrival summary once an agent accepts it. For more information about the arrival summary, refer to [Arrival Summary](#arrival-summary).  
 <img src="../images/email-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
 
@@ -853,15 +806,15 @@ Contact Center AI allows agents to transfer ongoing conversations to other queue
 
 To transfer a conversation to another queue when the [Enforce Skill Match for Transfers](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#enforce-skill-match-for-transfers) setting is enabled:
 
-1. Click **Transfer** at the top of the Conversation space.  
-<img src="../images/transfer-button.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
+1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+    <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for a queue in the search bar on the **Transfer to** window.
 3. Select a queue from the dropdown list. Agents with matching skills are displayed for the queue during the transfer.  
-<img src="../images/transfer-to.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-to.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Transfer**. The conversation gets transferred to the selected queue.  
-<img src="../images/conversation-transferred.png" alt="Conversation Transferred" title="Conversation Transferred" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/conversation-transferred.png" alt="Conversation Transferred" title="Conversation Transferred" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
@@ -871,30 +824,30 @@ To transfer a conversation to another queue when the [Enforce Skill Match for Tr
 
 To transfer a conversation to another queue when the [Skill Modification](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#skill-modification) setting is enabled:
 
-1. Click **Transfer** at the top of the Conversation space.  
-<img src="../images/transfer-interaction.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
+1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+    <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for a queue in the search bar on the **Transfer to** window. All matching queues are displayed.
 3. Select the queue and click **Next**.  
-<img src="../images/transfer-to-queue.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-to-queue.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
 4. You can add or delete skills to the interaction before transferring it to another queue.  
-<img src="../images/add-skills.png" alt="Add or Delete Skills" title="Add or Delete Skills" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-skills.png" alt="Add or Delete Skills" title="Add or Delete Skills" style="border: 1px solid gray; zoom:80%;">
 
 5. Click **Transfer**. The conversation is transferred to the selected queue.  
-<img src="../images/conversation-transferred-confirmation.png" alt="Conversation Transferred Confirmation" title="Conversation Transferred Confirmation" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/conversation-transferred-confirmation.png" alt="Conversation Transferred Confirmation" title="Conversation Transferred Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 **Transfer to Another Agent**
 
 To transfer a conversation to another agent:
 
-1. Click **Transfer** at the top of the Live Interaction pane.  
-<img src="../images/transfer-live-interaction.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
+1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+    <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an agent in the search bar on the **Transfer to** window.
 3. Select an available agent.
 4. Click **Transfer**. The conversation gets transferred to the selected agent.  
-<img src="../images/transfer-to-agent.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-to-agent.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
@@ -904,13 +857,13 @@ To transfer a conversation to another agent:
 
 An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) to allow external transfer of ongoing customer calls. To transfer a conversation to an external contact from the Agent Console, follow these steps:
 
-1. Click **Transfer** at the top of the Conversation space.  
-<img src="../images/transfer-live-interaction.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
+1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+    <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an external contact in the search bar on the **Transfer to** window.
 3. Select an available contact.
 4. Click **Transfer**. The conversation gets transferred to the selected contact.  
-<img src="../images/transfer-to-external-contact.png" alt="Transfer to External Contact" title="Transfer to Extrenal Contact" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-to-external-contact.png" alt="Transfer to External Contact" title="Transfer to Extrenal Contact" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -921,10 +874,10 @@ An agent can transfer the call to an external contact during a voice interaction
 ## End Interactions
 
 1. To end an interaction session, click the **End** button at the top right of the _Live Interaction_ pane.  
-<img src="../images/end-button.png" alt="End Interaction Button" title="End Interaction Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/end-button.png" alt="End Interaction Button" title="End Interaction Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Once clicking _End_, you must **confirm** that you want to end the interaction. Click **Yes** to do so, or otherwise, click **No**.  
-<img src="../images/end-interaction-window.png" alt="End Interaction pop-up" title="End Interaction pop-up" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/end-interaction-window.png" alt="End Interaction pop-up" title="End Interaction pop-up" style="border: 1px solid gray; zoom:60%;">
 
     Clicking **_Yes_** ends the session and moves the interaction to _After Call Work_.
 
@@ -1104,8 +1057,16 @@ Steps to request supervisor assistance:
 
 ## Real Time Sentiment Capture
 
-Agents can view customers' real-time sentiments during digital conversations on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).  
-<img src="../images/console-sentiment.png" alt="Sentiment" title="Sentiment" style="border: 1px solid gray; zoom:80%;">  
+Agents can view customers' real-time sentiments during conversations (Chat, Voice, and Email) on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).
+
+**Chat**:  
+<img src="../images/console-sentiment.png" alt="Chat Sentiment" title="Chat Sentiment" style="border: 1px solid gray; zoom:80%;">  
+
+**Voice**:  
+<img src="../images/sentiment-voice.png" alt="Voice Sentiment" title="Voice Sentiment" style="border: 1px solid gray; zoom:80%;"> 
+
+**Email**:  
+<img src="../images/sentiment-email.png" alt="Email Sentiment" title="Email Sentiment" style="border: 1px solid gray; zoom:80%;"> 
 
 When agents click the sentiment indicator, a graph appears, visually representing emotional fluctuations throughout the interaction. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses promptly, leading to improved empathy and more effective issue resolution. Agents can also customize the graph to focus on specific timeframes or sentiment ranges, allowing deeper analysis when needed.  
 <img src="../images/sentiment-analysis-graph.png" alt="Sentiment Graph" title="Sentiment Graph" style="border: 1px solid gray; zoom:80%;"> 

@@ -18,18 +18,18 @@ The Notify API enables developers to send interactive notifications to AI for Wo
 
 | Parameter<br>    | Required/Optional<br>    | Description<br>                                                                                                                                                                                                                                                                                                         |
 |------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| host<br>         | Required<br>             | Environment URL, for example, https://work.kore.ai<br>                                                                                                                                                                                                                                                                  |
+| host<br>         | Required<br>             | Environment URL, for example, https://work.example.ai<br>                                                                                                                                                                                                                                                                  |
 | agent ID<br>     | Required<br>             | This portion of the URL is a placeholder for the unique identifier of the specific agent. When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.<br><br> **Note**: Obtain the agent ID from the Post URL field while creating an agent. |
 
 ## Sample Request
 
 ```
 
-curl --location --request POST 'https://work.kore.ai/api/1.1/public/agents/ag-4405269f-4510-5ae2-bcea-6d356yvsu01/notify' \
+curl --location --request POST 'https://work.example.ai/api/1.1/public/agents/ag-4405269f-4510-5ae2-bcea-6d356yvsu01/notify' \
 --header 'authorization: EypCddcFH6sgaJJkWj6k-Wbz6meimT09RXbTYDnYB3FA8$' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "to": "john.doe@kore.com",
+    "to": "john.doe@example.com",
     "message": {
         "title": "Agent Update",
         "body": "Notification description"

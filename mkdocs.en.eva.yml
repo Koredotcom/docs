@@ -41,6 +41,9 @@ plugins:
   - search:
       lang: tr
   - glightbox   
+  - redirects:
+      redirect_maps:
+        'getting-started/quick-start-guide.md': 'getting-started/setup-guide.md'
 extra:
   version:
     provider: mike
@@ -139,6 +142,7 @@ nav:
       - Agent Options: custom-agents/agent-options.md
       - Agent Testing: custom-agents/agent-testing.md
       - Agent Creation: custom-agents/agent-creation.md
+      - Agent Version: custom-agents/agent-version.md
       - Alert Task: custom-agents/alert-task.md
       - Notify API: custom-agents/notify-api.md
   - Pre-built Agents:
@@ -173,7 +177,7 @@ nav:
       - Guardrails: assistant-configuration/guardrails.md
       - Orchestration Settings: assistant-configuration/orchestration-settings.md
       - Channels:
-        - MS Teams: 
+        - Microsoft Teams: 
           - Overview: channels/ms-teams/microsoft-teams.md
           - Configuration: channels/ms-teams/microsoft-teams-config.md
       - Announcements: assistant-configuration/announcements.md

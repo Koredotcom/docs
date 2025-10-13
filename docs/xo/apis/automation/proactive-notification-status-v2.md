@@ -25,7 +25,7 @@ To fetch the status of a proactive notification triggered via the async webhook 
   <tr>
    <td><strong>Authorization</strong>
    </td>
-   <td><code>auth: {{JWT}}</code> See <a href="../../apis/automation/api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
+   <td><code>auth: {{JWT}}</code> </a>
    </td>
   </tr>
   <tr>
@@ -42,6 +42,7 @@ To fetch the status of a proactive notification triggered via the async webhook 
   </tr>
 </table>
 
+Refer [How to generate the JWT Token](../../apis/automation/api-introduction.md#generating-the-jwt-token).
 
 ## Path Parameters
 
@@ -105,9 +106,9 @@ No body parameters are passed.
            "messagestoreId": "ms-71acc889-b3ad-59be-9c51-865a76f24972",
            "comments": "Notification has been sent successfully",
            "koreId": "u-a1414a00-5089-5009-9365-dd3a6a09f107",
-           "channelId": "gangasivakrishna@kore.com",
+           "channelId": "john.doe@example.com",
            "channel": "ivr",
-           "originalId": "gangasivakrishna@kore.com",
+           "originalId": "john.doe@example.com",
            "requestId": "ds-adddc869-d773-5785-9c6a-cfe1cbd9df1b",
            "status": "SUCCESS",
            "createdBy": "u-ecff03e8-ba90-532e-ab7b-209082d91936",
@@ -120,9 +121,9 @@ No body parameters are passed.
            "messagestoreId": "ms-7967b15a-e716-5d62-851c-f5d92781efb2",
            "comments": "Notification has been sent successfully",
            "koreId": "u-8490f9d4-193c-576b-a746-5974688f42a7",
-           "channelId": "gangasivakrishna.palla@kore.com",
+           "channelId": "john.doe@example.com",
            "channel": "ivr",
-           "originalId": "gangasivakrishna.palla@kore.com",
+           "originalId": "john.doe@example.com",
            "requestId": "ds-adddc869-d773-5785-9c6a-cfe1cbd9df1b",
            "status": "SUCCESS",
            "createdBy": "u-ecff03e8-ba90-532e-ab7b-209082d91936",

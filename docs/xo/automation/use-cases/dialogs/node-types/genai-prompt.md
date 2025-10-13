@@ -1,8 +1,6 @@
 # Prompt Node
 
-
 The Prompt Node lets app developers leverage the full potential of LLM and Generative AI models to quickly build their own prompts. Developers can select a specific AI model, tweak its settings, and preview the response for the prompt. The node allows developers to creatively leverage LLMs by defining the prompt using conversation context and the response from the LLMs in defining the subsequent conversation flow.
-
 
 ## Node Behavior
 
@@ -114,7 +112,7 @@ The responses are captured in a specific format, as shown below.
 "context":{
 "GenAIPrompt": {
     "NodeName": {
-      "id": "cmpl-7UbzLTumD9ALpfa1mcpf15dK3RnWM",
+      "id": "cmpl-7UbzLTumD9ALpfa1mcpf15dK3xxxx",
       "object": "text_completion",
       "created": 1687530223,
       "model": "text-davinci-003",

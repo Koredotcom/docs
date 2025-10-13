@@ -86,10 +86,10 @@ curl -X POST \
     "users": [
         {
             "userInfo": {
-                "emailId": "deskkore1@gmail.com",
+                "emailId": "john.doe@example.com",
                 "orgUserId": "org assigned user id",
-                "firstName": "user1",
-                "lastName":"user1",
+                "firstName": "john",
+                "lastName":"doe",
                 "companyName":"company_name",
                 "dept":"dept",
                 "companyContactPhone":"12334444",

@@ -18,7 +18,7 @@ To fetch the conversational messages between the bot and user in reverse chronol
    </td>
    <td>This API has two versions for GET and POST methods. The v1 of the API includes messages associated with all tasks, and it has a maximum limit of 100 messages per request. The v2 of the API does not include the messages related to Alert and Action tasks, and it has a maximum limit of 10,000 messages per request.
 <p>
-<strong>GET Method</strong><p>Version 1: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessages?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code><p>Version 2: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code>
+<strong>GET Method</strong><p>Version 1: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessages?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code><p>Version 2: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?userId={{userId}}&includeSecureForm=true</code>
 <p>
 <strong>Note</strong>: The GET method shows the RTM interactions by default. To get the channel-specific interaction, use the channelType parameter in the GET method. For the channelType parameter values, see <a href="#Request_Body_Parameters">Request Body Parameters</a> section.
 <p>
@@ -120,11 +120,9 @@ Version 2:
 
 
 ```json
-curl -X GET --compressed --location \
-'https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25' \
---header 'accept-encoding: gzip, deflate, br' \
---header 'Content-Type: application/json' \	
---header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}'
+curl --location 'https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?userId={{userId}}&includeSecureForm=true' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+--header 'Content-Type: application/json'
 ```
 
 
@@ -169,35 +167,14 @@ Version 2:
 
 
 ```json
- curl -X POST --compressed --location \
-  'https://{{host}}/api/public/bot/{{botId}}/getMessagesV2' \
-  --header 'accept-encoding: gzip, deflate, br' \
-  --header 'Content-Type: application/json' \
-  --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
-  --data '{
-    "userId"          : "u-xxxx-xxxxx-xxxx",
-    "skip"            : 0,                           
-    "limit"           : 100,                       
-    "dateFrom"        : "2019-04-01",
-    "dateTo"          : "2019-04-01",
-    "channelType"     : "rcs",
-    "sessionId"       : ["5eadxxxxxxxxxxxxx","5ebxxxxxxxxxxxxxxx"],
-    "includeTraceId"  : "true"
-    "tags"	      : {
-    "and"   : [
-			   {
-			       "name"    : "tagname",
-			       "values"  : ["tagvalue1","tagvalue2"],
-                               "type"    : "tagtype"
-                           },
-                           {
-                              "name"    : "tagname",
-    			      "values"  : ["tagvalue1","tagvalue2"],
-                              "type"    : "tagtype"  	
-                          }
-                          ]	
-                    }
-            }'
+ curl --location 'https://{{host}}/api/public/bot/{{botId}}/getMessagesV2' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "userId": "u-dd2d1106-0732-5f93-939c-8e423079xxxx"
+    
+    
+}'
 ```
 
 **Sample Request for specific call Ids**
@@ -374,6 +351,16 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    </td>
   </tr>
   <tr>
+   <td>includeSecureForm
+   </td>
+   <td>required
+   </td>
+   <td>Boolean
+   </td>   
+   <td>Accepts true or false. Displays the form input submitted by the user.
+   </td>
+  </tr>
+  <tr>
    <td>sessionId
    </td>
    <td>optional
@@ -532,107 +519,138 @@ Default direction is forward.
 
 ```json
 {
-"total": 1,
-"moreAvailable": false,
-"icon": "https://dlnwzkim0wron.cloudfront.net/f-87c47629-7exxxxxxxx-a807ccfb1cf0.png",
-"messages": [
-{
-"_id": "ms-fee996b9-0485-55a3-bf42-417c1272aff4",
-            "channels": [
-                {
-                    "type": "rtm",
-                    "channelUId": "alan.walker@abc.com"
-                }
-            ],
-            "type": "incoming",
-            "status": "received",
-            "createdBy": "u-1bc0993f-e0d6-5589-973d-6fe2663de2d4",
-            "lmodifiedBy": "u-1bc0993f-e0d6-5589-973d-6fe2663de2d4",
-            "createdOn": "2023-07-18T09:46:46.925Z",
-            "lmodifiedOn": "2023-07-18T09:46:46.925Z",
-            "botId": "st-369f9021-2a85-5b32-9005-63139d57c2e5",
-            "orgId": "o-f4b49c0a-f027-57bf-aef0-b68ad9b51ee2",
-            "accountId": "6461f97ed43763474b34e56e",
-            "isBB": 1,
-            "ms": 1,
-            "chnl": "rtm",
-            "isD": 1,
-            "components": [
-                {
-                    "_id": "cp-ae11791d-118f-53f1-8905-9bc9f03fdece",
-                    "cT": "text",
-                    "data": {
-                        "text": "hi"
-                    },
-                    "thumbnails": []
-                }
-            ],
-            "timestampValue": 1689673606939,
-            "__v": 0,
-            "lang": "en",
-            "sT": 1,
-            "sessionId": "64b65f87277b464507f778c0",
-            "cluster_id": "Others",
-            "resourceid": "messagestore",
-            "tags": {
-                "messageTags": [],
-                "userTags": [
-                    {
-                        "value": "Alan",
-                        "name": "Alan Walker"
-                    }
-                ],
-                "sessionTags": []
-            },
-            "traceId": "5371b61d-b1bb-4432-80de-7430772b0cfb"
-        },
+    "total": 6,
+    "moreAvailable": false,
+    "icon": "https://{{host}}/api/getMediaStream/market/f-7dc8cf3e-9876-5c30-b8f2-12b79e39xxxx.png?n=7388290499&s=IjVTTjhKV3ZIRDllOGZVMS9wdkVYOXV4R0xOWlpxxxxpYVlxVGlja0tGS0E9xxxx",
+    "messages": [
         {
-            "_id": "ms-5436a303-0d8c-58e8-8ad3-33bf5bcefcb7",
-            "channels": [
-                {
-                    "type": "rtm",
-                    "channelUId": "alan.walker@abc.com"
-                }
-            ],
+            "_id": "ms-171c2f3d-dcdc-50f7-bfce-aeaa026cxxxx",
+            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a0xxxx",
             "type": "outgoing",
             "status": "pending",
-            "createdOn": "2023-07-18T09:46:47.497Z",
-            "lmodifiedOn": "2023-07-18T09:46:47.497Z",
-            "createdBy": "u-1bc0993f-e0d6-5589-973d-6fe2663de2d4",
+            "channels": [
+                {
+                    "type": "rtm"
+                }
+            ],
             "components": [
                 {
-                    "_id": "cp-c035b2f4-10f2-5294-b655-c2d6273e0154",
+                    "_id": "cp-59051b09-cfc9-53e0-a5de-204ad4c7xxxx",
                     "cT": "text",
                     "data": {
-                        "text": "Hey :)"
+                        "text": "Please enter intent"
                     },
                     "thumbnails": []
                 }
             ],
-            "botId": "st-369f9021-2a85-5b32-9005-63139d57c2e5",
-            "orgId": "o-f4b49c0a-f027-57bf-aef0-b68ad9b51ee2",
-            "accountId": "6461f97ed43763474b34e56e",
-            "isBB": 1,
-            "ms": 1,
+            "createdBy": "u-2dd69bdd-2592-5f97-b3b3-7ad0bdebxxxx",
+            "createdOn": "2025-09-01T12:17:38.824Z",
+            "timestampValue": 1756729058824,
+            "lmodifiedBy": "u-2dd69bdd-2592-5f97-b3b3-7ad0bdebxxxx",
+            "lmodifiedOn": "2025-09-01T12:17:38.824Z",
+            "isBB": 0,
+            "isD": 0,
             "chnl": "rtm",
-            "isD": 1,
             "lang": "en",
-            "timestampValue": 1689673607507,
+            "__lModifiedOn__": "2025-09-01T12:17:41.000Z",
             "__v": 0,
             "sT": 1,
-            "sessionId": "64b65f87277b464507f778c0",
+            "sessionId": "68b58ee2a0c1153e10cexxxx",
             "resourceid": "messagestore",
             "tags": {
                 "messageTags": [],
-                "userTags": [
-                    {
-                        "value": "Alan",
-                        "name": "Alan Walker"
-                    }
-                ],
-                "sessionTags": []
+                "userTags": [],
+                "sessionTags": [],
+                "altText": []
             }
         },
+        {
+            "_id": "ms-a7280f90-1cda-5f19-8204-6cd26af7xxxx",
+            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a0xxxx",
+            "type": "incoming",
+            "status": "received",
+            "orgId": "o-5a0da1e4-2df3-5cec-9ee4-af0b2efdxxxx",
+            "accountId": "674daf4bc9d17f4dc070xxxx",
+            "channels": [
+                {
+                    "type": "rtm",
+                    "channelUId": "cs-259844d3-7827-5f33-ae7c-9d790e6d7548/83896956-09e8-4e72-ba10-01e4f996b92d3d6cf535-323b-4b1c-8443-4f80ef0fxxxx"
+                }
+            ],
+            "components": [
+                {
+                    "_id": "cp-001b6069-9112-5d0d-bc6b-c6868f70xxxx",
+                    "cT": "text",
+                    "data": {
+                        "text": "pay bill"
+                    },
+                    "thumbnails": []
+                }
+            ],
+            "createdBy": "u-2dd69bdd-2592-5f97-b3b3-7ad0bdebxxxx",
+            "createdOn": "2025-09-01T12:18:22.204Z",
+            "timestampValue": 1756729102204,
+            "lmodifiedBy": "u-2dd69bdd-2592-5f97-b3b3-7ad0bdebxxxx",
+            "lmodifiedOn": "2025-09-01T12:18:22.204Z",
+            "isBB": 0,
+            "isD": 0,
+            "chnl": "rtm",
+            "lang": "en",
+            "__lModifiedOn__": "2025-09-01T12:18:22.000Z",
+            "__v": 0,
+            "sT": 1,
+            "sessionId": "68b58ee2a0c1153e10cexxxx",
+            "resourceid": "messagestore",
+            "tags": {
+                "messageTags": [],
+                "userTags": [],
+                "sessionTags": [],
+                "altText": []
+            }
+        },
+        {
+            "_id": "ms-631e4522-de35-5472-8cc8-5e8eb726xxxx",
+            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a0xxxx",
+            "type": "outgoing",
+            "status": "pending",
+            "channels": [
+                {
+                    "type": "rtm"
+                }
+            ],
+            "components": [
+                {
+                    "_id": "cp-2fdf576c-434f-5686-b2e1-e2341a3fxxxx",
+                    "cT": "text",
+                    "data": {
+                        "text": "I am closing our current conversation as I have not received any input from you. We can start over when you need."
+                    },
+                    "thumbnails": []
+                }
+            ],
+            "createdBy": "u-2dd69bdd-2592-5f97-b3b3-7ad0bdebxxxx",
+            "createdOn": "2025-09-01T12:24:08.528Z",
+            "timestampValue": 1756729448528,
+            "lmodifiedBy": "u-2dd69bdd-2592-5f97-b3b3-7ad0bdebxxxx",
+            "lmodifiedOn": "2025-09-01T12:24:08.528Z",
+            "isBB": 0,
+            "isD": 0,
+            "chnl": "rtm",
+            "lang": "en",
+            "__lModifiedOn__": "2025-09-01T12:24:08.000Z",
+            "__v": 0,
+            "sT": 1,
+            "sessionId": "68b58ee2a0c1153e10cexxxx",
+            "resourceid": "messagestore",
+            "tags": {
+                "messageTags": [],
+                "userTags": [],
+                "sessionTags": [],
+                "altText": []
+            }
+        }
+    ]
+}
 ```
 
 
@@ -641,44 +659,159 @@ Default direction is forward.
 
 ```json
 {
-  "total": 1,
-  "moreAvailable": false,
-  "messages"  : [
+    "total": 10,
+    "moreAvailable": false,
+    "icon": "https://{{host}}/api/getMediaStream/market/f-129c0519-30a6-5c33-87d8-76491cf3xxxx.png?n=5493090268&s=Im9keng1NmVkcTN2bVN2OTJGNmxxxxJRdndHMVZCQVNxOTNaZnhiS3hhTTA9xxxx",
+    "messages": [
+        {
+            "_id": "ms-d13ed8a4-b88e-5577-a661-f9263e0dxxxx",
+            "botId": "st-54acfbf7-16a8-5ebd-b457-fc4fcd28xxxx",
+            "type": "outgoing",
+            "status": "pending",
+            "channels": [
                 {
-                  "_id": "ms-xxxxxxxxxxxxxxxxxxxx",
-                  "type": "incoming",
-                  "status": "sent to cs",
-                  "createdBy":"u-xxxxxxxxxxxxxxxxxxx",
-                  "lmodifiedBy": u-xxxxxxxxxxxxxxxxxxx",
-                  "lmodifiedOn": "2019-04-10T10:21:45.103Z",
-                  "channels": [
-                     {
-                      "type": "rcs"
-                        }
-                     ],
-                  "botId":"st-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-                  "orgId": "o-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-                  "accountId": "5xxxxxxxxxxxxxxxxxxxxxxxx",
-                  "isBB": 0,
-                  "ms": 1,
-                  "channel": "rcs",
-                  "components": [
-                    {
-                      "_id":"cp-xxxxxxxxxxx",
-                      "cT": "text",
-                      "data": {
-                          "text": "23"
-                           },
-                      "thumbnails": []
-                      }
-                    ],
-                    "createdOn": "2019-04-10T10:21:45.106Z",
-                    "timestampValue": 1554891705106,
-                    "__v": 0,
-                    "sessionId": "5cadbefc6a81a71559f6bece"
-               }
-             ]
- }
+                    "type": "rtm"
+                }
+            ],
+            "components": [
+                {
+                    "_id": "cp-92c79906-280d-5ce3-a748-fe1aa60fxxxx",
+                    "cT": "text",
+                    "data": {
+                        "text": ""
+                    },
+                    "thumbnails": []
+                }
+            ],
+            "createdBy": "u-dd2d1106-0732-5f93-939c-8e423079xxxx",
+            "createdOn": "2025-09-09T13:00:06.027Z",
+            "timestampValue": 1757422806027,
+            "lmodifiedBy": "u-dd2d1106-0732-5f93-939c-8e423079xxxx",
+            "lmodifiedOn": "2025-09-09T13:00:06.027Z",
+            "sessionId": "68c024b90f2c406b6e50xxxx",
+            "isBB": 0,
+            "isD": 0,
+            "ms": 1,
+            "chnl": "rtm",
+            "lang": "en",
+            "author": {
+                "type": "EVENT"
+            },
+            "conversationId": "c-63ee303-97eb-45be-ad3d-d4ec5218xxxx",
+            "isA": true,
+            "__lModifiedOn__": "2025-09-09T13:02:27.000Z",
+            "__v": 0,
+            "sT": 1,
+            "resourceid": "messagestore",
+            "tags": {
+                "messageTags": [],
+                "userTags": [],
+                "sessionTags": [],
+                "altText": []
+            }
+        },
+        {
+            "_id": "ms-71229eb8-319e-5c8a-aa64-2690c67cxxxx",
+            "botId": "st-54acfbf7-16a8-5ebd-b457-fc4fcd28xxxx",
+            "type": "outgoing",
+            "status": "opened",
+            "orgId": "o-1f80fb1b-c3a7-5869-9189-e1f34b09xxxx",
+            "accountId": "6769329ed730b47e3f47xxxx",
+            "channels": [
+                {
+                    "type": "rtm"
+                }
+            ],
+            "components": [
+                {
+                    "_id": "cp-c9f5f91d-ca20-592a-9cd5-92d50f89xxxx",
+                    "cT": "text",
+                    "data": {
+                        "text": "{\"type\":\"template\",\"payload\":{\"template_type\":\"button\",\"text\":\"Test form\",\"buttons\":[{\"type\":\"url\",\"title\":\"Submit Data\",\"url\":\"https://{{host}}/api/1.1/UIFlow/forms/token?hash=42d5f0ac86c0c79b502bf70774838f8c9e0501ffb7203affe0bb4bdc0096xxxx&botLang=es\"}]},\"formData\":{\"formLink\":\"https://{{host}}/api/1.1/UIFlow/forms/token?hash=42d5f0ac86c0c79b502bf70774838f8c9e0501ffb7203affe0bb4bdc0096xxxx&botLang=es\",\"renderType\":\"pop-up\",\"formLinkExpiry\":300,\"submitExpiry\":600,\"formId\":\"frm-a568f475-2269-566c-8a86-0aa5a0f5xxxx\",\"name\":\"secureForm\",\"displayName\":\"Test form\"}}"
+                    },
+                    "thumbnails": []
+                }
+            ],
+            "createdBy": "u-dd2d1106-0732-5f93-939c-8e423079xxxx",
+            "createdOn": "2025-09-09T13:00:10.528Z",
+            "timestampValue": 1757422810528,
+            "lmodifiedBy": "u-dd2d1106-0732-5f93-939c-8e423079xxxx",
+            "lmodifiedOn": "2025-09-09T13:00:10.528Z",
+            "sessionId": "68c024b90f2c406b6e50xxxx",
+            "isBB": 0,
+            "isD": 0,
+            "ms": 1,
+            "chnl": "rtm",
+            "lang": "en",
+            "author": {
+                "id": "u-ac66a8f2-5988-56d9-b54f-51a4ea6axxxx",
+                "type": "FORM",
+                "formId": "frm-a568f475-2269-566c-8a86-0aa5a0f5xxxx",
+                "formName": "secureForm",
+                "isSecuredForm": true,
+                "aId": "a-551a805-04ab-4c08-88ab-c23eb5aaxxxx",
+                "iId": "st-54acfbf7-16a8-5ebd-b457-fc4fcd28xxxx",
+                "fId": "form-ba4db70-edd7-403a-8442-71925a73xxxx"
+            },
+            "conversationId": "c-63ee303-97eb-45be-ad3d-d4ec5218xxxx",
+            "isA": true,
+            "__lModifiedOn__": "2025-09-09T13:02:27.000Z",
+            "__v": 0,
+            "sT": 1,
+            "resourceid": "messagestore",
+            "tags": {
+                "messageTags": [],
+                "userTags": [],
+                "sessionTags": [],
+                "altText": []
+            }
+        },
+        {
+            "_id": "ms-20908599-37fe-5f99-b44a-40525a6axxxx",
+            "botId": "st-54acfbf7-16a8-5ebd-b457-fc4fcd28xxxx",
+            "type": "outgoing",
+            "status": "pending",
+            "orgId": "o-1f80fb1b-c3a7-5869-9189-e1f34b09xxxx",
+            "accountId": "6769329ed730b47e3f47xxxx",
+            "channels": [
+                {
+                    "type": "rtm"
+                }
+            ],
+            "components": [
+                {
+                    "_id": "cp-8d894f4c-0d46-5bdb-81ee-47a9a086xxxx",
+                    "cT": "text",
+                    "data": {
+                        "text": "{\"type\":\"template\",\"payload\":{\"template_type\":\"live_agent\",\"text\":\"Hace tiempo que no recibimos ningún mensaje tuyo. Proporcione una respuesta para mantener esta conversación activa.\"}}"
+                    },
+                    "thumbnails": []
+                }
+            ],
+            "createdBy": "u-dd2d1106-0732-5f93-939c-8e423079xxxx",
+            "createdOn": "2025-09-09T13:07:27.320Z",
+            "timestampValue": 1757423247320,
+            "lmodifiedBy": "u-dd2d1106-0732-5f93-939c-8e423079xxxx",
+            "lmodifiedOn": "2025-09-09T13:07:27.320Z",
+            "sessionId": "68c024b90f2c406b6e50xxxx",
+            "isBB": 0,
+            "isD": 0,
+            "ms": 1,
+            "chnl": "rtm",
+            "lang": "en",
+            "__lModifiedOn__": "2025-09-09T13:07:27.000Z",
+            "__v": 0,
+            "sT": 1,
+            "resourceid": "messagestore",
+            "tags": {
+                "messageTags": [],
+                "userTags": [],
+                "sessionTags": [],
+                "altText": []
+            }
+        }
+    ]
+}
 ```
 **Sample Response for specific call Ids:**
 
@@ -1111,6 +1244,70 @@ It is recommended to programmatically iterate the request by dynamically updatin
    <td>String
    </td>    
    <td>Tag’s name.
+   </td>
+  </tr>
+  <tr>
+   <td>id
+   </td>
+   <td>String
+   </td>    
+   <td>Author identifier (present for form authors).
+   </td>
+  </tr>
+  <tr>
+   <td>type
+   </td>
+   <td>String
+   </td>    
+   <td>Author type. Examples: `EVENT`, `FORM`, `SYSTEM`.
+   </td>
+  </tr>
+  <tr>
+   <td>formId
+   </td>
+   <td>String
+   </td>    
+   <td>Form identifier.
+   </td>
+  </tr>
+  <tr>
+   <td>formName
+   </td>
+   <td>String
+   </td>    
+   <td>Name of the form (if the author is a form).
+   </td>
+  </tr>
+  <tr>
+   <td>isSecuredForm
+   </td>
+   <td>Boolean
+   </td>    
+   <td>Indicates if the form is secured.
+   </td>
+  </tr>
+  <tr>
+   <td>aId
+   </td>
+   <td>String
+   </td>    
+   <td>Agent identifier (if applicable).
+   </td>
+  </tr>
+  <tr>
+   <td>iId
+   </td>
+   <td>String
+   </td>    
+   <td>Interaction or instance identifier (if applicable).
+   </td>
+  </tr>
+  <tr>
+   <td>fId
+   </td>
+   <td>String
+   </td>    
+   <td>Form instance identifier (if applicable).
    </td>
   </tr>
 </table>

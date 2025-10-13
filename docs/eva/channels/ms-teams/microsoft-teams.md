@@ -1,6 +1,6 @@
 # Microsoft Teams and Copilot Integration - Overview
 
-AI for Work integrates seamlessly with Microsoft Teams, enabling employees to access AI-powered assistance directly within their collaboration environment. This integration streamlines productivity by allowing users to perform work-related tasks, receive proactive notifications, and utilize Copilot features all within Teams. The following guide provides step-by-step instructions for deploying AI for Work as a custom Teams application, covering Azure Bot Service setup, authentication, configuration, and organizational rollout.
+AI for Work integrates seamlessly with Microsoft Teams, enabling employees to access AI-powered assistance directly within their collaboration environment. This integration streamlines productivity by allowing users to perform work-related tasks, receive proactive notifications, and utilize Copilot features all within Microsoft Teams. The following guide provides step-by-step instructions for deploying AI for Work as a custom Microsoft Teams application, covering Azure Bot Service setup, authentication, configuration, and organizational rollout.
 
 ## When to Use Microsoft Teams Integration
 
@@ -8,10 +8,10 @@ The Microsoft Teams integration is designed for organizations seeking to embed A
 
 ### Ideal Implementation Scenarios
 
-**Organizations with Heavy Teams Usage**
+**Organizations with Heavy Microsoft Teams Usage**
 
 * Companies where Microsoft Teams serves as the central hub for daily communication and collaboration.
-* Remote or hybrid workforces that conduct most meetings, file sharing, and project coordination through Teams.
+* Remote or hybrid workforces that conduct most meetings, file sharing, and project coordination through Microsoft Teams.
 * Organizations already invested in the Microsoft 365 ecosystem seeking to enhance productivity without workflow disruption.
 
 **Workflow Integration Requirements**
@@ -50,7 +50,7 @@ Key Components:
 Before beginning the deployment process, ensure you have:
 
 * **Azure Subscription** – Active subscription with administrative privileges.
-* **Microsoft Teams Admin Access** – Permission to upload and manage custom apps in the MS Teams Admin Center.
+* **Microsoft Teams Admin Access** – Permission to upload and manage custom apps in the Microsoft Team Admin Center.
 * **AI for Work Account** – Active subscription with access to the Admin Console.
 
 ## Integration Flow
@@ -60,8 +60,8 @@ The integration process follows these sequential steps:
 1. **Webhook Configuration** – Copy the Webhook URL from AI for Work.
 2. **Azure Bot Creation** – Create and configure the Azure Bot Service.
 3. **Credential Exchange** – Securely transfer credentials between AI for Work and Azure.
-4. **Manifest Generation** – Generate the MS Teams application manifest file.
-5. **MS Teams Deployment** – Upload manifest to MS Teams Admin Center.
+4. **Manifest Generation** – Generate the Microsoft Team application manifest file.
+5. **Microsoft Team Deployment** – Upload manifest to Microsoft Team Admin Center.
 6. **User Approval** – Configure user access and permissions.
 
 For detailed implementation instructions, including step-by-step configuration procedures, authentication setup, and deployment guidance, refer to the [Microsoft Teams Integration Configuration Guide](../ms-teams/microsoft-teams-config.md)

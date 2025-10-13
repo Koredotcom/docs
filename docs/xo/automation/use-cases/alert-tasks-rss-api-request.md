@@ -584,7 +584,7 @@ For any task, you will need to define an API request to make a call to a web ser
     * **PUT**– Replaces the content of the target resource with the content sent.
     * **PATCH** – Appends the content of an existing target resource with the content sent.
     * **DELETE** – Deletes the content of an existing target resource.
-5. In the **URL** field, specify the URL for the App task response to the process. For example, `http://koremessenger.com/postURL`. You can also use session variables in the URL as shown in the following example: 
+5. In the **URL** field, specify the URL for the App task response to the process. For example, `https://koremessenger.com/postURL`. You can also use session variables in the URL as shown in the following example: 
 `https://mySite.crm.ondemand.com/sap/c4c/odata/v1/c4codata/ServiceRequestCollection?$filter=ID eq '{id}' and ReporterEmail eq '{userEmail}'&amp;$expand=ServiceRequestHistoricalVersion,ServiceRequestDescription`
 
 6. In the **Access Using A Connector** field, select **Yes** to enable access for the AI Agent using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network.
@@ -770,7 +770,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "43rd",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -780,7 +780,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "44th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -790,7 +790,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "45th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -800,7 +800,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "46th and 47th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -810,7 +810,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "48th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -820,7 +820,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "49th",
 "from": {
 "username": "venkataphani.ailavarapu",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2679234818",
 "full_name": "Phani"
 },
@@ -830,7 +830,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "50th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -840,7 +840,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "51st",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -859,7 +859,7 @@ For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor,
 "user": {
 "full_name": "Kore.ai Hyd",
 "id": "2056218675",
-"profile_picture": "https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg",
+"profile_picture": "https://www.example.com/profiles/anonymousUser.jpg",
 "username": "kore_hyd"
 },
 
@@ -867,7 +867,7 @@ For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor,
 "data": [{
 "full_name": "kstream002",
 "id": "2100724876",
-"profile_picture": "https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg",
+"profile_picture": "https://www.example.com/profiles/anonymousUser.jpg",
 "username": "kstream002"
 }
 },
@@ -889,7 +889,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Freedom Unlimited",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.psdgraphics.com/file/credit-card.jpg",
+"imageURL": "https://www.example.com/file/credit-card.jpg",
 "id": "5b5195e264bbd800"
 },
 {
@@ -900,7 +900,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Premium Plus",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://i.imgur.com/rMOXYql.jpg",
+"imageURL": "https://www.example.com/rMOXYql.jpg",
 "id": "5caf2155873f89c8"
 },
 {
@@ -911,7 +911,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Frequent Flier",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.moneychoice.org/wp-content/uploads/2016/01/credit-card-calculator-image.png.jpeg",
+"imageURL": "https://www.www.example.com/uploads/2016/01/credit-card-calculator-image.jpeg",
 "id": "c0b05bc3062658ee"
 }
 ]
@@ -932,7 +932,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Freedom Unlimited",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.psdgraphics.com/file/credit-card.jpg",
+"imageURL": "https://www.example.com/file/credit-card.jpg",
 "id": "5b5195e264bbd800"
 },
 {
@@ -943,7 +943,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Premium Plus",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://vignette3.wikia.nocookie.net/objectmayhem/images/5/52/Credit_card.png/revision/latest?cb=20130629150408",
+"imageURL": "https://www.example.com/objectmayhem/images/5/52/Credit_card.png/revision/latest?cb=20130629150408",
 "id": "5caf2155873f89c8"
 }
 ]
@@ -1013,7 +1013,7 @@ When enabled, define the path to the preview links in the payload in the **Path 
             "-isPermaLink": "false",
             "#text": "SB12418904751422433479504581245034032986752"
         },
-        "link": "http://www.wsj.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian",
+        "link": "https://www.example.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian",
 ```
 
 When **Preview website link content in Post** is enabled, select preview objects such as:

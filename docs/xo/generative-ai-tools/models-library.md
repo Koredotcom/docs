@@ -12,6 +12,9 @@ Review the model and feature support matrix for the [GenAI Features](genai-featu
 
 The Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompt templates and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the Platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
 
+!!! note
+
+    The Platform supports Azure OpenAI and OpenAI integrations for the Chat Completions API only. To use the Responses API, you must configure a Custom LLM.
 
 **Configure Pre-built LLM Integration**
 
@@ -142,9 +145,100 @@ Steps to Integrate a Custom LLM:
 
 The Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the Platform. The users can create custom prompts for their specific use cases and use the connected models across GenAI features. While Amazon Bedrock is available as an OOB integration, the Platform doesn't provide any system prompts or templates. Users can only use the model with the help of custom prompts.
 
+
+
+**Pre-requesites**
+
+Before starting the integration process, ensure you have the necessary permissions and access to the IAM role and Amazon Bedrock resources in your AWS account. For more information, see [Policies and Permissions in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
+
+**A. Create IAM Role and Configure Trust Policy**
+
+To begin, you must create an IAM role in your AWS account that allows Platform to securely access Amazon Bedrock models. This role defines permissions and establishes a trust relationship so that the platform can assume the role via AWS STS.
+
+Follow the steps below to configure the IAM role and trust policy:
+
+**1. Create the IAM Role in Your AWS Account**
+
+Create a new IAM role in your AWS account that grants access to invoke Amazon Bedrock models. This role will be assumed by the platform to make Bedrock API calls on your behalf.
+
+You can follow the IAM role creation setup in the [AWS IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html).
+
+For best practices on setting up IAM policies for Bedrock, see the [AWS policy examples guide](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html).
+
+Assign the necessary permissions to the role. An example IAM policy is shown below:
+
+
+```
+{
+ "Version": "2012-10-17",
+ "Statement": [
+   {
+     "Effect": "Allow",
+     "Action": [
+       "bedrock:InvokeModel",
+       "bedrock:ListFoundationModels"
+     ],
+     "Resource": "*"
+   }
+ ]
+}
+```
+
+
+**2. Set the Trust Policy in Your AWS Account**
+
+Set the trust policy to allow the platform to assume the IAM role. Replace with the AWS account ID provided by the platform.
+
+
+```
+{
+
+ "Version": "2012-10-17",
+ "Statement": [
+   {
+     "Effect": "Allow",
+     "Principal": {
+       "AWS": "<kore-arn>"
+     },
+     "Action": "sts:AssumeRole"
+   }
+ ]
+}
+```
+
+
+For private/on-prem deployments, the trust policy should point to your internal AWS IAM role.
+
+**3. Set the STS Endpoint**
+
+Use the STS endpoint for the region where your IAM role resides.
+
+You can find the full list of STS endpoints in the [AWS documentation](https://docs.aws.amazon.com/general/latest/gr/sts.html).
+
+For example:
+
+
+```
+https://sts.us-east-1.amazonaws.com/
+```
+
+
+Ensure the STS region matches the region of your IAM role - not necessarily the region of the model.
+
+
+**B. Raise a Support Ticket to Register your IAM Role**
+
+After creating the IAM role in your AWS account, you need to raise a support ticket with Kore.ai to update the trust policy with your IAM Role ARN. This allows the platform to assume the role and invoke Bedrock.
+
+To complete the registration:
+
+
+1. Raise a support ticket with your IAM role ARN, requesting that it be added to the trust policy.
+2. Wait for confirmation from Support that the role has been registered.
+
 !!! note
 
-    Before starting the integration process, ensure you have the necessary permissions and access to the IAM role and Amazon Bedrock resources in your AWS account. For more information, see [Policies and Permissions in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
+    Without this step, the platform cannot assume your IAM role. Both your AWS account and Kore.ai’s environment must explicitly trust each other for secure cross-account access.
 
 
 **Configure Amazon Bedrock LLM Integration**

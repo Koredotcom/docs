@@ -2,38 +2,12 @@
 
 To fetch the conversation details and conversation summary between the bot and the user or the user and the agent. This API supports pagination. You can specify skip and limit parameters to retrieve a certain number of messages at a time.
 
-<table>
-  <tr>
-   <td><strong>Method</strong>
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Endpoint</strong>
-   </td>
-   <td><code>https://{{host}}/api/public/bot/{{botId}}/conversationDetails</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Content Type</strong>
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Authorization</strong>
-   </td>
-   <td><code>auth: {{JWT}}</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>API Scope</strong>
-   </td>
-   <td>App Builder: Chat History
-   </td>
-  </tr>
-</table>
+| Method         | POST |
+|-------------------|-----------|
+| Endpoint       | `https://{{host}}/api/public/bot/{{botId}}/conversationDetails` |
+| Content Type   | `application/json` |
+| Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
+| API Scope      | App Builder: Chat History<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"} |
 
 ## Path Parameters
 

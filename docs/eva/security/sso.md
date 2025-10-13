@@ -2,23 +2,24 @@
 
 SSO enables easy access to **AI for Work** using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing AI for Work, the system can automatically use the same login credentials.
 
+<img src="../images/sso.png" alt="sso" title="sso" style="border: 1px solid gray; zoom:80%;">
+
 Administrators can configure Single Sign-On (SSO) authentication for **AI for Work** using one of the following sign-on protocols or methods:
 
-* OpenID Connect
+* OpenID Connect (OIDC)
 * Security Assertion Markup Language (SAML)
 * WS-Federation sign-on protocol.
 
-Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing the **AI for Work**. Turn on the toggle **Enable SSO** to enable Single Sign-On.  
-<img src="../images/sso.png" alt="sso" title="sso" style="border: 1px solid gray; zoom:80%;">
+Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing the **AI for Work**. Turn on the toggle **Enable SSO** to enable Single Sign-On.
 
 ## Configure Sign-on Protocol
 
-### Open ID Connect
+### OpenID Connect (OIDC)
 
-Refer to the below steps to configure SSO using the Open ID Connect protocol.
+Refer to the below steps to configure SSO using the OIDC protocol.
 
 1. Go to **Admin Console > Security > Single Sign-On** and turn on the toggle **Enable SSO**.
-2. In the **Select a suitable Sign-On Protocol** section, select **Open ID connect**.
+2. In the **Select a suitable Sign-On Protocol** section, select **OpenID Connect**.
 3. In the **Configure** section, select an identity provider, for example, **Sign in with Google**.
 4. Optionally, turn on the toggle to **Configure service account for your G-Suite domain** and then define the settings:
     1. Client Email
@@ -26,7 +27,8 @@ Refer to the below steps to configure SSO using the Open ID Connect protocol.
     3. Private key
 5. Click **Save**.
 6. The *Identity Provider information successfully updated* message is displayed at the top of the page.  
-<img src="../images/success-message.png" alt="success-message" title="success-message" style="border: 1px solid gray; zoom:80%;">
+
+<img src="../images/open-id-connect.png" alt="open-id-connect" title="open-id-connect" style="border: 1px solid gray; zoom:80%;">
 
 ### WS-Federation
 
@@ -42,13 +44,17 @@ Refer to the below steps to configure SSO using the WS-Federation protocol.
         * **AD Sign-On endpoint URL** – The URL that **AI for Work** must use for sign-on and sign-off/out requests using your WS-Federation identity provider.
         * **AD Federation metadata Document URL** – The URL for the WS-Federation metadata document used for authentication with Active Directory.
 4. Click **Save**.  
-<img src="../images/ws-federation.png" alt="ws-federation" title="ws-federation" style="border: 1px solid gray; zoom:80%;">
+
+<img src="../images/wf-ad.png" alt="wf-ad" title="wf-ad" style="border: 1px solid gray; zoom:80%;">
+
 
 ### SAML
 
 Security Assertion Markup Language (SAML) is a standard protocol for web browser Single Sign-On (SSO) using secure tokens. SAML eliminates passwords and uses standard cryptography and digital signatures to pass secure sign-in tokens from an identity provider to a SaaS application.
 
 SAML provides a solution to allow your identity provider and service provider to exist separately. When a user logs into a SAML-enabled application, the service provider requests authorization from the appropriate identity provider. The identity provider authenticates the user's credentials and then returns the authorization for the user to the service provider, allowing the user to access the application.
+
+<img src="../images/saml.png" alt="saml" title="saml" style="border: 1px solid gray; zoom:80%;">
 
 
 ### Getting Started
@@ -294,9 +300,9 @@ Bitium specializes in cloud-based identity and access management with a focus on
 
 **Setting up Bitium for AI for Work SSO**
 
-Integrating with Bitium's app management interface is a quick and efficient process. This involves adding the Kore.ai app and configuring its SAML authentication parameters..
+Integrating with Bitium's app management interface is a quick and efficient process. This involves adding the app and configuring its SAML authentication parameters.
 
-1. **Add Kore.ai App to Bitium**:
+1. **Add App to Bitium**:
     * Log in to Bitium.
     * Go to **Manage &lt;Company Name> > Manage Apps > Add an App.**
     * Search for "Kore.ai" and install the app.

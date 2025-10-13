@@ -37,13 +37,11 @@ Authorize our application to perform cryptographic operations with your key by a
     * **Key Vault Reader**: Allows reading metadata about the Key Vault and its resources
 3. **Save the changes** to grant access permissions.
 
-
 ## Complete the integration setup
 
 Finalize the integration by sharing the required information and approving network connections.
 
-
-### Share required information
+**Share required information**
 
 Provide our team with the following details to complete the integration:
 
@@ -52,7 +50,7 @@ Provide our team with the following details to complete the integration:
 * The **Key Name** for the specific key we'll use
 
 
-### Approve the private endpoint connection
+**Approve the private endpoint connection**
 
 After we configure the connection on our end:
 

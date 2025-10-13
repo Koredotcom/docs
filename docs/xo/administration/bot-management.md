@@ -1,4 +1,4 @@
-# Bots Management Module
+# Apps/Bots Management Module
 
 In the **Bots Management** module of the Admin Console, you can deploy the bots developed by your company developers from the Kore.ai Bot Builder tool. When the developer develops a bot, it can be published for approval and deployment by the Bots Admin from the Bots Management section. From this section, you can
 
@@ -7,7 +7,6 @@ In the **Bots Management** module of the Admin Console, you can deploy the bots 
 * Assign the deployed bot to users, or groups of users in your company for employees when the bot is defined for **Enterprise Use**, or for customers of your company when the bot is defined for **Consumer Use**.
 
 <img src="../images/bot-management-img1.png" alt="Deployment Requests" title="Deployment Requests" style="border: 1px solid gray;zoom:50%;"/>
-
 
 ## Deploying Bots
 
@@ -65,7 +64,6 @@ For each Bot displayed on the **Deployment Requests** page, the following inform
 
 After a task is approved and deployed, the Bot is available to customers for Bots with deployment model set to **Consumer use**. However, the task is still not available to enterprise users until the Bots Admin assigns the task to users or groups on the **Enterprise Bots** page in the **Bot Management** module in the Bots Admin Console. For more information, see [Managing Deployed Enterprise Bots](#managing-enterprise-bots) or [Managing Deployed Consumer Bots](#managing-consumer-bots).
 
-
 #### To reject a bot
 
 You may decide not to approve a Bot for use by employees or customers of the company. To return the Bot to the developer for an update, you can reject the Bot mentioning a reason. When you reject a bot, it is removed from the **Deployments Request** page, and in the Bot Builder tool, the status of the task is changed from Published to Configured. The developer can then make changes and re-publish the Bot for your approval.
@@ -77,7 +75,6 @@ You may decide not to approve a Bot for use by employees or customers of the com
 5. Click **Reject**.
 
 The Bot rejected successfully message is displayed at the top of the page, and the Bot is removed from the **Deployment Requests** page.
-
 
 ## Managing Enterprise Bots
 
@@ -128,7 +125,6 @@ The following list describes the columns displayed for each enterprise bot.
 
 This section describes the commands available on the **Action** bar.
 
-
 #### Using Sort By
 
 A company can have a large number of bots to automate the numerous tasks. You can easily sort the bot list by **Bot Name**. By default, the last created bot is viewed at the top. To sort the bots, in the **Sort by** drop-down list, select **Bot Name** to view the list of Bots in alphabetical order by name. To remove the sorting, in the **Sort by** drop-down list, select **None**.
@@ -143,7 +139,6 @@ The list of entries in an admin console table can be very large depending on the
     The number of search terms in a search query is unlimited, however, no more than the first 20 characters of each search term is used to return search results.
 
 To view all entries, clear the search field, and then press the **Enter** key.
-
 
 ### Assigning Users
 

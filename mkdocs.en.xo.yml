@@ -53,6 +53,7 @@ plugins:
         'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
+        'contactcenter/configurations/settings/llm-streaming.md': 'generative-ai-tools/streaming-responses.md'
 extra:
   version:
     provider: mike
@@ -297,7 +298,7 @@ nav:
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - Testing:
       - About Test and Debug: automation/testing/test-and-debug-overview.md
-      - Test (Talk to Bot): automation/testing/talk-to-bot.md
+      - Test: automation/testing/talk-to-bot.md
       - DialogGPT based Apps:
         - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
       - NLP based Apps:
@@ -459,13 +460,15 @@ nav:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
           - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
           - Reject Calls With a Delayed First Response: contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md
-          - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
           - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
           - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
           - Wrap-up Code Prediction: contactcenter/configurations/settings/wrap-up-code-prediction.md
+    - Performace Management:
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
+    - Flows:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
+      - Debug Logs: contactcenter/flows-and-routing/debug-logs.md
     - Routing:
       - Contact Center AI Routing: contactcenter/routing/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md
@@ -583,6 +586,7 @@ nav:
       - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
+      - SDK Fields and Details: agentai/integration/AgentAI-webSDK/sdk-fields-and-details.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
       - View Customized Events: agentai/integration/AgentAI-webSDK/view-customized-events.md
       - My Bot Tab: agentai/integration/AgentAI-webSDK/mybot-tabs.md
@@ -723,11 +727,15 @@ nav:
         - Rate Limits:
           - Automation AI: apis/automation/rate-limit.md
           - Contact Center AI: apis/automation/rate-limit-ccai.md
+          - Quality AI: apis/automation/rate-limit-quality-ai.md
+          - Case Management: apis/automation/rate-limit-case-management.md
         - API List:          
           - Automation AI: apis/automation/api-list.md
           - Search AI: apis/searchai/api-list.md
           - Contact Center AI: apis/contact-center/contact-center-api-list.md
           - Agent AI: apis/agent-ai/apis-list.md
+          - Quality AI: apis/quality-ai/api-list.md
+          - Case Management: apis/case-management-apis/case-management-api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md

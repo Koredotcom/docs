@@ -75,6 +75,31 @@ Available Agent Types:
 
 <img src="../images/personal_workspace_4.png" alt="admin-console" title="admin-console" style="border: 1px solid gray; zoom:80%;">
 
+## Collaboration and Sharing
+
+**Collaboration Features**
+
+* Publishers can assign Editor, Viewer, or No Access permissions to collaborators.
+* Automatic notification system for new collaborator access assignments.
+* Centralized shared agent discovery through workspace switcher.
+* Universal agent analytics and usage logging across all workspace types.
+
+**Publishing to Collaborators**
+
+When users publish agents to collaborators within their permitted limits, the system automatically assigns default Viewer access to newly added users. Publishers receive confirmation notifications to ensure transparency in collaboration workflows.
+
+Publishers can manage collaborator permissions through the Collaborators interface:
+
+**Access Levels**
+
+* **Editor** -- Full configuration editing capabilities.
+* **Viewer** -- Read-only agent interaction.
+* **No Access** -- Agent visibility without interaction permissions.
+
+**Shared Agent Discovery**
+
+Users can access shared agents through the enhanced workspace switcher, which displays a dedicated **Shared Agents** section containing all agents shared by other users within the organization.
+
 ## Administrative Views
 
 ### Workspace View
@@ -90,6 +115,16 @@ Available Agent Types:
     * Agent Type (category filter)
     * Sort By (customizable sorting)
 * **Purpose**: Enable efficient agent management across the organization.
+
+All agents now feature comprehensive management tools accessible through the 3-dot menu that provides consistent management experiences across all agent types, enabling administrators and users to access detailed insights and usage patterns for effective governance and optimization.
+
+**Available Options:**
+
+* **Agent Details** -- Access detailed agent metrics and performance data.
+* **Agent Usage Logs** -- View comprehensive usage analytics and activity history.
+
+**Scope:** These management features apply universally across both account workspace and personal workspace agents.
+
 
 ## Dashboard
 

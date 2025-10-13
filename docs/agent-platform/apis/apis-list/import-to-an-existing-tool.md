@@ -49,7 +49,7 @@ After triggering the import, the response returns a <code>dockStatusId</code>. U
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, https://agent-platform.domain.ai/</td>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code></td>
    <td>String
    </td>
    <td>Required
