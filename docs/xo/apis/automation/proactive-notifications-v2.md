@@ -1,6 +1,6 @@
-# Proactive Notifications API v2
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Proactive Notifications API v2
 
 The Proactive Notifications API V2 enables sending various types of messages to users via `IVR`, `Hangout`, `Webhook` and `Whatsapp` channels. 
 

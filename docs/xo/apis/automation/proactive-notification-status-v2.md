@@ -1,6 +1,6 @@
-# Proactive Notification Status API V2
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Proactive Notification Status API V2
 
 To fetch the status of a proactive notification triggered via the async webhook channel. 
 

@@ -1,6 +1,6 @@
-# ML Utterances Import Status API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# ML Utterances Import Status API
 
 To get the status of the ML utterances import request made through Import ML Utterances API.
 

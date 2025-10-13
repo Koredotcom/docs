@@ -1,6 +1,6 @@
-# Update User API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Update User API
 
 To update the user details.
 

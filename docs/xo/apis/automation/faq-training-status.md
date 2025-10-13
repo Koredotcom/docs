@@ -1,6 +1,6 @@
-# FAQ Training Status API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# FAQ Training Status API
 
 To get the status of the FAQ training.
 

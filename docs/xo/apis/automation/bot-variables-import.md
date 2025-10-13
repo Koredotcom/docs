@@ -1,7 +1,6 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Bot Variables Import API
-
---8<-- "includes/automationai-api-note.md"
 
 To import global and content variables into the bot.
 

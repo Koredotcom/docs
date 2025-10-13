@@ -1,7 +1,6 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Assign Admin Roles API
-
---8<-- "includes/automationai-api-note.md"
 
 To add or remove users or groups from admin roles.
 

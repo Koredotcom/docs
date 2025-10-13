@@ -1,6 +1,6 @@
-# Get Roles API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Get Roles API
 
 To retrieve the list of the bot or admin roles available in an account.
 

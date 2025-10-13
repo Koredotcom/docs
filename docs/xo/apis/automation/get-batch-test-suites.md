@@ -1,6 +1,6 @@
-# Get Batch Test Suites API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Get Batch Test Suites API
 
 To get the list of Batch Test Suites available for a bot.
 

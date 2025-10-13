@@ -1,6 +1,6 @@
-# Remove Users from Account
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Remove Users from Account
 
 To remove users from an account.
 

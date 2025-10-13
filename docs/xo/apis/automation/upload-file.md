@@ -1,6 +1,6 @@
-# Upload File API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Upload File API
 
 To upload the _botdefinition_, _botconfig_, and _botfunction_ files (if any) and the **bot** icon to the local server. You can also use this API to upload files for ingestion using Search AI. The API returns the file ID in response which is required in Import Bot API or Ingest Data API for further actions on the file.
 

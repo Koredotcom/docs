@@ -1,6 +1,6 @@
-# ML Utterances Train API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# ML Utterances Train API
 
 To initiate the ML training for a bot.
 

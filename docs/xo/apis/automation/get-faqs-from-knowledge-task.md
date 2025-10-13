@@ -1,6 +1,6 @@
-# Get FAQs – KG
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Get FAQs – KG
 
 To get a list of questions and nodes under the Knowledge task. This API supports parameters like  ktId and parentId (node ID).
 

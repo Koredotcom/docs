@@ -1,6 +1,6 @@
-# Create User API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Create User API
 
 To add users to an account.
 

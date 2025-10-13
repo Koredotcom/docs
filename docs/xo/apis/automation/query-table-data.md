@@ -1,6 +1,6 @@
-# Query Data (Table) API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Query Data (Table) API
 
 Used to get data from Data Table.
 

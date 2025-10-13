@@ -1,7 +1,6 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Add Questions from Extract – KG
-
---8<-- "includes/automationai-api-note.md"
 
 To add specific questions to the Knowledge graph.
 

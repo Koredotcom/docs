@@ -1,6 +1,6 @@
-# Install a Sample Bot API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Install a Sample Bot API
 
 To install a sample bot.
 

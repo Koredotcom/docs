@@ -1,6 +1,6 @@
-# Batch Test Execution API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Batch Test Execution API
 
 To execute Batch Test Suites and get results. This API only initiates the test process. Please look at the [Batch Test Execution Status API](batch-test-execution-status.md) for the results of the batch test.
 

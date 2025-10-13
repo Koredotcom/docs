@@ -1,6 +1,6 @@
-# Disable an Existing Language API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Disable an Existing Language API
 
 To disable an existing language for an AI Agent.
 

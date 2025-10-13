@@ -1,6 +1,6 @@
-# Data Update API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Data Update API
 
 Used to update data into Data Table.
 
