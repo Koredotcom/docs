@@ -640,6 +640,7 @@ Steps to resend an email:
     <img src="../images/resend-email.png" alt="Resend Email" title="Resend Email" style="border: 1px solid gray; zoom:70%;">
 
     The email composer opens with the recipient details and original email content prefilled. (Optional) Update the email content.
+
 3. Click **Send**.  
     <img src="../images/resend-email.png" alt="Resend Button" title="Resend Button" style="border: 1px solid gray; zoom:70%;">
 
