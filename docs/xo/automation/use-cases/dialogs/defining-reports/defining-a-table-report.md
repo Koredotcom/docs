@@ -1,8 +1,8 @@
 # Defining a Table Report
 
 With some tasks, you may want to add a link to a message sent to a user that contains data too large for a message, for example, a message with a picture, abstract, and a link to a full article or report. This topic describes how to define a table report with variable width columns.
-The table report type can be displayed to an end-user when the URL for this table is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the table report called **Your Daily Tasks**. To learn how to use report keys, read the [Alert Tasks](../../../alert-tasks-message-definition/#report-keys){:target="_blank"} article.
-
+The table report type can be displayed to an end-user when the URL for this table is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the table report called **Your Daily Tasks**. To learn how to use report keys, read the [Alert Tasks](../../alert-tasks-message-definition.md#report-keys){:target="_blank"} article.
+ 
 
 <img src="../images/google_task.png" alt="Google_task" title="Google_task" style="border: 1px solid gray; zoom:100%;">
 
@@ -19,7 +19,7 @@ To complete the following procedure, you must have already defined a task, such 
 
 
 
-1. In Bot Builder, select the task for the Bot that you want to add a table report link to.  
+1. In App Builder, select the task for the App that you want to add a table report link to.  
 
     !!! Note
     
@@ -35,8 +35,6 @@ To complete the following procedure, you must have already defined a task, such 
 9. Click **Add Column**. The **Column Configuration** dialog is displayed as shown in the following illustration.
 
     <img src="../images/column_configuration.png" alt="column_configuration" title="column_configuration" style="border: 1px solid gray; zoom:100%;">
-
-    <img src="../images/column_configuration_2.png" alt="column_configuration_2" title="column_configuration_2" style="border: 1px solid gray; zoom:100%;">
 
 10. In the **Column Name** field, enter the first column title, for example, _Task_.
 11. In the  **Data Type** field, select one of the following data types for the information displayed in the column:  

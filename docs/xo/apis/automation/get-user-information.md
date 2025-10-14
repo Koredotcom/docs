@@ -1,3 +1,4 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Get User Information
 
@@ -79,8 +80,8 @@ curl -X POST \
   -H 'auth: YOUR_JWT_ACCESS_TOKEN' \
   -d '{
     "emailIds": [
-        "publicuser3@gmail.com",
-        "test@test.com"
+        "jane.doe@example.com",
+        "john.doe@example.com"
     ],
     "status":"active"
 }'
@@ -133,7 +134,7 @@ curl -X POST \
        "canCreateBot": true,
         "isDeveloper": true,
         "userInfo": {
-            "emailId": "publicuser3@gmail.com",
+            "emailId": "john.doe@example.com",
             "userId": "u-575f16b0-c4c5-5f3c-a740-06288c67dec1",
             "firstName": "",
             "lastName": ""

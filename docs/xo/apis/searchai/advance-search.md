@@ -1,4 +1,6 @@
-# **Advance Search API - V2**
+--8<-- "includes/searchai-api-back-link.md"
+
+# Advance Search API - V2
 
 This API enables you to retrieve answers and search results related to a specific query. By default, the API returns answers. Along with the search results and answers, the API also provides details about the chunks used and metadata information associated with those chunks.  
 
@@ -237,7 +239,7 @@ Note that for metadata fields, use the field name along with the root name, such
 
 ## Response
 
-The response to the API is in JSON format. Some of the key fields in the response are:
+The response to the API is in JSON format. Some key fields in the response, which are part of the `template` field, are listed below.
 
 * **results**: This field contains the details of the search results. The results are grouped by source type as the key value. The chunks from a document are grouped together. For instance, if the relevant chunks include 3 from one document in Google Drive and one from a file, the results would be listed as shown below. 
 
@@ -362,7 +364,7 @@ The response to the API is in JSON format. Some of the key fields in the respons
       "doc_path": [
         "1WwUhdGPqWnQgPgKI_xpa9Ts_pjK1ijOs"
       ],
-      "recordUrl": "https://drive.google.com/file/d/1vEZTjr9VtQrFePRCJGimfX5cs5y7ITGP/view?usp=drivesdk",
+      "recordUrl": "https://drive.google.com/file/d/1vEZTxxxxxxxxxxxxxxxxxs5y7ITGP/view?usp=drivesdk",
       "updatedOn": "2025-02-05T08:35:29.652Z",
       "sourceAcl": [
         "*"
@@ -401,7 +403,7 @@ The response to the API is in JSON format. Some of the key fields in the respons
       "type": "pdf",
       "chunkId": "chk-2f50e2c3-f332-4416-b22b-7c260cfd1c4a",
       "createdOn": "2025-02-05T08:35:28.883Z",
-      "sourceUrl": "https://drive.google.com/file/d/1KSitTWrY9iBIJT3yD9P2k2fS3uSK9R5L/view?usp=drivesdk",
+      "sourceUrl": "https://drive.google.com/file/d/1KSixxxxxxxxxxxxxx2fS3uSK9R5L/view?usp=drivesdk",
       "chunkText": [
         "Page\t13    Source: Henry Fund Model1    <span class=\"highlightText\">Microsoft</span>  has  continued  to  grow  its  dividend  payout  steadily in the past. As it released its first quarter earnings  for fiscal 2022, we used the first quarter dividend times 4  to forecast the annual dividend for the current fiscal year.  Microsoft&#x27;s dividend increases fluctuate between 0.12 and  0.24, and we took the more frequently occurring value of  0.20 for future dividend increases. See the chart below for  a forecast of the dividend.1    Source: Henry Fund Model1    We learned from Microsoft&#x27;s 10K report that as of June 30,  2021, $8.7 billion of stock is available for repurchase under  the company&#x27;s stock repurchase program. The repurchase  program  is subject  to  liquidity needs, market, regulatory requirements,  and other  factors. As  shown  in  the  chart  below, we  followed the company&#x27;s guidance amount  for  the repurchase forecast.    Source: Henry Fund Model1    According to our model, <span class=\"highlightText\">Microsoft</span> Corp. has 2022 GAAP  earnings  per  share  of  $9.52, "
       ],
@@ -414,7 +416,7 @@ The response to the API is in JSON format. Some of the key fields in the respons
       "doc_path": [
         "0APDb_kca5iWJUk9PVA"
       ],
-      "recordUrl": "https://drive.google.com/file/d/1KSitTWrY9iBIJT3yD9P2k2fS3uSK9R5L/view?usp=drivesdk",
+      "recordUrl": "https://drive.google.com/file/d/1KSxxxxxxxxxxxxxxxxxxxxSK9R5L/view?usp=drivesdk",
       "updatedOn": "2025-02-05T08:35:28.883Z",
       "sourceAcl": [
         "*"
@@ -490,6 +492,10 @@ The response to the API is in JSON format. Some of the key fields in the respons
             ]
         },
 ```
+Additionally, the response also includes the following fields, not within the template field.
+
+* **llmResponseTime**: This field records the time taken(in milliseconds) by the language model to generate the response (in case of Generative Answers). 
+* **retrievalResponseTime**: This field records the time taken(in milliseconds) by Search AI to retrieve the relevant chunks and process them.
 
 ## Example of Using Custom Data Request parameter
 
@@ -498,8 +504,8 @@ The response to the API is in JSON format. Some of the key fields in the respons
   "customData": {
         "userContext": {
               "userName": "John",
-              "userId": "john.smith@kore.com",
-              "emailId": "john.smith@kore.com"
+              "userId": "john.smith@example.com",
+              "emailId": "john.smith@example.com"
             }
     }
 ```

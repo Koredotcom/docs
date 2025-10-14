@@ -13,7 +13,7 @@ When a customer calls a NICE CX phone number, the call is received on the Salesf
 * **NICE CX Studio** installed on your device.
 * **Agent Assist Hub** enabled for your NICE CX account.
 * [Kore AgentAssist](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HSGlnUAH){:target="_blank"} for Salesforce installed on your Salesforce account. (Salesforce AppExchange > Search for “Agent AI By Kore.ai, Inc.”)
-* Have the Kore AI Agent credentials saved separately. You need the Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI. Read [Configure Voice Channel](https://docs.kore.ai/agentassist/channels/voice/){:target="_blank"} and [Chat Channel](https://docs.kore.ai/agentassist/channels/chat/){:target="_blank"} for a walkthrough. 
+* Have the Kore AI Agent credentials saved separately. You need the Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI. Read [Voice Gateway](../../../channels/voice-gateway/configure-voice-gateway.md/#steps-to-configure-sip-trunk){:target="_blank"} and [Chat](../../../channels/add-web-mobile-client.md){:target="_blank"} for a walkthrough. 
 * Ensure that Voice Interaction Streams are enabled via NICE. 
 
 ## Shared Responsibilities
@@ -536,7 +536,7 @@ Create a Lightning tab by following the instructions in this [document](https://
 
 ### <span id="OAuth">Enabling OAuth</span>
 
-1. Go to **Setup** > **OAuth and OpenID Connect Settings** and enable **Allow OAuth Username-Password Flows**.  
+1. Go to **Setup** > **OAuth and OpenID Connect Settings** and enable **Allow OAuth Username-Password Flows**.     
 <img src="../images/enable-allow-oauth-password-20.png" alt="enable-allow-oauth-password" title="enable-allow-oauth-password" style="border: 1px solid gray; zoom:80%;">
 
 2. Create a connected Salesforce app and get the **Access Key** and **Access Token**. Follow [this guide](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&language=en_US&type=5){:target="_blank"} for help.

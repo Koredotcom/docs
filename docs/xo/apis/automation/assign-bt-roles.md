@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Assign Bot Roles API
 
 To assign a bot role to a set of users in a specific bot.

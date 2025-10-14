@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Billing Usage Summary API
 
 This API provides a summary of the billing usage specific to an account or bot for a given period.

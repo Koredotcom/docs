@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Outbound Calling API (Voice Gateway)
 
 Outbound calls can be made to external customers using Voice Gateway. The answering machine detection feature can be enabled on outbound calls to indicate whether a person or a machine has answered a call.
@@ -15,7 +17,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 
 | **Method**      | POST                                                                                                     |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| **Endpoint**    | `https:/{{host}}/api/1.1/public/bot/:/smartassist/dialout` |
+| **Endpoint**    | `https:/{{host}}/api/1.1/public/bot/{{botId}}/smartassist/dialout` |
 | **Content Type** | `application/json`                                                                                       |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**   | SmartAssist Dialout                                                                                      |
@@ -25,7 +27,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 | **PARAMETER** | **DESCRIPTION**                                                                                          | **TYPE**           |
 |-----------|------------------------------------------------------------------------------------------------------|----------------|
 | host      | Environment URL, for example, `https://platform.kore.ai`                                             | string, required |
-| IId     |The application ID.                      | string, required |
+| botId     | The botId or streamId. You can access it from the bot’s General Settings page.                       | string, required |
 
 ## Body Parameters
 
@@ -68,7 +70,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 ### Outbound Calling API Sample Request
 
 ```
-curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialout' \
+curl --location --request POST '{{host}}/api/1.1/public/bot/{{botId}}/smartassist/dialout' \
 --header 'Format: application/json' \
 --header 'auth: {{JWT_TOKEN}}' \
 --data-raw '{

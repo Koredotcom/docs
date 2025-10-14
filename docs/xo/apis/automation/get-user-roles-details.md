@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Get User Roles Details API
 
 To get complete information of all the users and their associated roles in the account.
@@ -97,7 +99,7 @@ curl -X GET \
     "availableMore": true,
     "users": [
         {
-            "username": "<name>@kore.com",
+            "username": "john.doe@example.com",
             "orgUserId": "org assigned user id",
             "accountId": "<id>",
             "isDeveloper": true,
@@ -107,7 +109,7 @@ curl -X GET \
             "adminRoles": []
         },
         {
-            "username": "<name>@kore.com",
+            "username": "john.doe@example.com",
             "orgUserId": "org assigned user id",
             "accountId": "<id>",
             "isDeveloper": true,

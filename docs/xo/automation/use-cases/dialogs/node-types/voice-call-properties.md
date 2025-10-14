@@ -29,7 +29,7 @@ This document details the voice call properties and how they vary across various
 | **Field** | **Description** | **Applicable**<br>**to**<br>**Channel** |
 | --- | --- | --- |
 | IVR Data Extraction Key | Specify the syntax to extract the filled data<br><br>For Entity and Confirmation nodes, you can define the extraction rule overriding the channel level setting. This is particularly helpful with ASR engines that provide transcription results in a different format based on the input type. For example, VXML can contain the word format of the credit card in one key and the number format in another key | IVR |
-| End of Conversation Behavior | This property can be used to define the AI Agent behavior at the end of the conversation. The options are:<br><br>- Trigger End of Conversation Behavior and configure the Task, Script or Message to be initiated. [See here for details](../../../intelligence/event-handling.md#end-of-conversation).<br>- Terminate the call.<br>    <br>    **Note**: Selecting the **Terminate call** option under **IVR Channel – Voice Call Properties – End of Task Behavior** no longer turns off the End of Task event at the app level. | IVR,<br>Twilio,<br>IVR-AudioCodes,<br>Kore.ai Voice Gateway |
+| End of Conversation Behavior | This property can be used to define the AI Agent behavior at the end of the conversation. The options are:<br><br>- Trigger End of Conversation Behavior and configure the Task, Script or Message to be initiated. [See here for details](../../../intelligence/event-handling.md).<br>- Terminate the call.<br>    <br>    **Note**: Selecting the **Terminate call** option under **IVR Channel – Voice Call Properties – End of Task Behavior** no longer turns off the End of Task event at the app level. | IVR,<br>Twilio,<br>IVR-AudioCodes,<br>Kore.ai Voice Gateway |
 | Call Termination Handler | Select the name of the Dialog task that you want to use as the call termination handler when the call ends in error. | IVR,<br>Twilio,<br>IVR-AudioCodes,<br>Kore.ai Voice Gateway |
 | Call Control Parameters | Click **Add Parameter**. Enter property names and values to use in defining the call behavior.<br><br>**Note**: You should use these properties and values in the VXML files for all call flows in the IVR system and Session Parameters in AudioCodes channel. | IVR,<br>IVR-AudioCodes |
 | ASR Confidence Threshold |     |     |
@@ -135,7 +135,7 @@ In case you want to use grammar syntax rules from Nuance Speech Recognition Syst
 1. Set **Enable Transcription** to _no_
 2. In the **Grammar** section:
     1. Select the **Speech** or **DTMF** option as per your requirement.
-    2. In the text box to define vxml enter the vxml path to dlm.zip file. The url will be of the format: `http://nuance.kore.ai/downloads/kore_dlm.zip?nlptype=krypton&dlm_weight=0.2&lang=en-US`
+    2. In the text box to define vxml enter the vxml path to dlm.zip file. The url will be of the format: `https://nuance.kore.ai/downloads/kore_dlm.zip?nlptype=krypton&dlm_weight=0.2&lang=en-US`
     3. Replace the above path according to your setup
     4. The language code “_lang=en-US_” will be based on your setup
 3. **Add Grammar** to add another path to `nle.zip`. Follow the above-mentioned steps.

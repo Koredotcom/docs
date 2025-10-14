@@ -34,7 +34,7 @@ To complete the following procedure, you must have already defined a task, such 
     1. In the **Link Label** field, enter the JavaScript to display the text for the link, for example, `print(Name);` .
     2. In the **URL Value** field, enter the JavaScript to display the data to output when the **Link Label** is clicked, for example, `print("https://login.salesforce.com/" + Id);`
 
-        If **Is a link** is not enabled, then enter the JavaScript to display the value for the column in the the **Item Value** field, for example,  
+        If **Is a link** is not enabled, then enter the JavaScript to display the value for the column in the **Item Value** field, for example,  
       
         ```
         if(typeof(start.dateTime) !== 'undefined'){

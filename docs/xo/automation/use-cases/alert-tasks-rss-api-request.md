@@ -1,18 +1,18 @@
 # Alert Task – RSS API Request
 
-We have seen how an Alert task can be set up in the  XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this section, we will see how to configure an API Request for a RSS service.
+We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform. In this section, we will see how to configure an API Request for a RSS service.
 
 <img src="../images/rss-api-request.png" alt="rss api request" title="rss api request" style="border: 1px solid gray; zoom:75%;">
 
 For a task with the **Connection Type** specified as **Webservice** and the **Connection Mode** set to **RSS** you need to define:
 
 * **Content Type** – The type of data exchanged between the XO Platform and your web application,
-* **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
-* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-parameters" target="_blank">Learn more</a>.
-* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-an-initializer" target="_blank">Learn more</a>.
-* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your AI Agent to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-the-request-chain" target="_blank">Learn more</a>.
-* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#add-the-response-sample" target="_blank">Learn more</a>.
-* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#website-preview-content" target="_blank">Learn more</a>.
+* **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key.
+* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. 
+* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. 
+* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your AI Agent to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of pre-processors, API requests, and post-processors. 
+* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. 
+* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <
 
 ## Define the Content Type
 
@@ -387,7 +387,7 @@ With the <strong>Visibility</strong> field set to <strong>Custom</strong>, you c
 
 ## Define an Initializer
 
-To run a task, you may need to put or get values from a session before executing the task using session-specific variables. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">Using Session and Context Variables in Tasks</a>. 
+To run a task, you may need to put or get values from a session before executing the task using session-specific variables. For more information, see [Using Session and Context Variables in Tasks](../use-cases/using-session-and-context-variables.md).
 
 Some web services require executed code, session variables, or modification of user context details before executing an API request. For example, a web service may require two-factor user authorization where the first step is a user log in, and the second step is a partner authorization. After validating both these steps, an access token is granted and used in the header of subsequent API calls to that web service. 
 
@@ -584,7 +584,7 @@ For any task, you will need to define an API request to make a call to a web ser
     * **PUT**– Replaces the content of the target resource with the content sent.
     * **PATCH** – Appends the content of an existing target resource with the content sent.
     * **DELETE** – Deletes the content of an existing target resource.
-5. In the **URL** field, specify the URL for the App task response to the process. For example, `http://koremessenger.com/postURL`. You can also use session variables in the URL as shown in the following example: 
+5. In the **URL** field, specify the URL for the App task response to the process. For example, `https://koremessenger.com/postURL`. You can also use session variables in the URL as shown in the following example: 
 `https://mySite.crm.ondemand.com/sap/c4c/odata/v1/c4codata/ServiceRequestCollection?$filter=ID eq '{id}' and ReporterEmail eq '{userEmail}'&amp;$expand=ServiceRequestHistoricalVersion,ServiceRequestDescription`
 
 6. In the **Access Using A Connector** field, select **Yes** to enable access for the AI Agent using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network.
@@ -753,7 +753,7 @@ Follow these steps to add a standard postprocessor:
 
 <ol start="3"><li><p>It is then used as a variable input as shown in the following <b>Post URL:</b></p> 
 <p><code>https://app.asana.com/api/1.0/projects/<b>{id}</b>/tasks?opt_fields=completed,modified_at</code>
-You must also specify the HTML <b>Content Type</b> expected in the payload response as well as the HTML <b>Request</b> method. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">Using Session and Context Variables in Tasks</a>.</p></li>
+You must also specify the HTML <b>Content Type</b> expected in the payload response as well as the HTML <b>Request</b> method.</p></li>
 
 <ul><li><b>Spread</b>: For payloads that contain arrays of data that you need to separate. For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor, set the <b>Key</b> field to, for example, <b>data</b>, and <b>Type of Process</b> to <b>spread</b> to capture the content in the data element in the following code example to extract each item of the array.
 
@@ -770,7 +770,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "43rd",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -780,7 +780,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "44th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -790,7 +790,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "45th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -800,7 +800,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "46th and 47th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -810,7 +810,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "48th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -820,7 +820,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "49th",
 "from": {
 "username": "venkataphani.ailavarapu",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2679234818",
 "full_name": "Phani"
 },
@@ -830,7 +830,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "50th",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -840,7 +840,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "text": "51st",
 "from": {
 "username": "kore_hyd",
-"profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+"profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2056218675",
 "full_name": "Kore.ai Hyd"
 },
@@ -859,7 +859,7 @@ For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor,
 "user": {
 "full_name": "Kore.ai Hyd",
 "id": "2056218675",
-"profile_picture": "https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg",
+"profile_picture": "https://www.example.com/profiles/anonymousUser.jpg",
 "username": "kore_hyd"
 },
 
@@ -867,7 +867,7 @@ For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor,
 "data": [{
 "full_name": "kstream002",
 "id": "2100724876",
-"profile_picture": "https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg",
+"profile_picture": "https://www.example.com/profiles/anonymousUser.jpg",
 "username": "kstream002"
 }
 },
@@ -889,7 +889,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Freedom Unlimited",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.psdgraphics.com/file/credit-card.jpg",
+"imageURL": "https://www.example.com/file/credit-card.jpg",
 "id": "5b5195e264bbd800"
 },
 {
@@ -900,7 +900,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Premium Plus",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://i.imgur.com/rMOXYql.jpg",
+"imageURL": "https://www.example.com/rMOXYql.jpg",
 "id": "5caf2155873f89c8"
 },
 {
@@ -911,7 +911,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Frequent Flier",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.moneychoice.org/wp-content/uploads/2016/01/credit-card-calculator-image.png.jpeg",
+"imageURL": "https://www.www.example.com/uploads/2016/01/credit-card-calculator-image.jpeg",
 "id": "c0b05bc3062658ee"
 }
 ]
@@ -932,7 +932,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Freedom Unlimited",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://www.psdgraphics.com/file/credit-card.jpg",
+"imageURL": "https://www.example.com/file/credit-card.jpg",
 "id": "5b5195e264bbd800"
 },
 {
@@ -943,7 +943,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 "OfferName": "Premium Plus",
 "OfferType": "CreditCard",
 "Status": "1",
-"imageURL": "http://vignette3.wikia.nocookie.net/objectmayhem/images/5/52/Credit_card.png/revision/latest?cb=20130629150408",
+"imageURL": "https://www.example.com/objectmayhem/images/5/52/Credit_card.png/revision/latest?cb=20130629150408",
 "id": "5caf2155873f89c8"
 }
 ]
@@ -1013,7 +1013,7 @@ When enabled, define the path to the preview links in the payload in the **Path 
             "-isPermaLink": "false",
             "#text": "SB12418904751422433479504581245034032986752"
         },
-        "link": "http://www.wsj.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian",
+        "link": "https://www.example.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian",
 ```
 
 When **Preview website link content in Post** is enabled, select preview objects such as:

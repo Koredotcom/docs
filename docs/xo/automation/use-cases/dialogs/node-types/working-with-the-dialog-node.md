@@ -24,7 +24,7 @@ The key features of dialog nodes are listed below:
 Setting up an dialog node in a dialog task involves the following steps:
 
 1. Open the dialog task that you want to add the node to.
-2. Add a **Dialog** node in the designated place. [Read more about adding nodes](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
+2. Add a **Dialog** node in the designated place. [Read more about adding nodes](../using-the-dialog-builder-tool.md){:target="_blank"}.
 
 <img src="../images/dialog-task-node-img1.png" alt="Dialog node" title="Dialog node" style="border:1px solid gray;zoom:70%;">
 

@@ -320,7 +320,7 @@ The table below outlines the supported content extraction methods for widely use
   <tr>
    <td><strong>Image Extraction</strong>
    </td>
-   <td>English, Ukrainian, Spanish, Russian, German
+   <td>English, Ukrainian, Spanish, Russian, Italian, German, French
    </td>
   </tr>
   <tr>

@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Create User API
 
 To add users to an account.
@@ -86,10 +88,10 @@ curl -X POST \
     "users": [
         {
             "userInfo": {
-                "emailId": "deskkore1@gmail.com",
+                "emailId": "john.doe@example.com",
                 "orgUserId": "org assigned user id",
-                "firstName": "user1",
-                "lastName":"user1",
+                "firstName": "john",
+                "lastName":"doe",
                 "companyName":"company_name",
                 "dept":"dept",
                 "companyContactPhone":"12334444",

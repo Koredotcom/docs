@@ -56,7 +56,7 @@ Configure the fields based on the option you select:
 If you select Abandonment as Self-Service, then any conversation abandoned by the user is considered a self-service conversation.  However, any script, service or any other failures are considered as drop-off conversations.</p></div>
 
 <li><b>Conversation Context</b>: Define the conversation context based on the intent detection by choosing one of the following options:
-<ul><li><b>Intent Preconditions</b>: The intent will be detected only if any of the context tags specified as pre-conditions are available in the context at the time of intent detection. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management/#intent-preconditions" target="_blank">Learn more</a>.</li>
+<ul><li><b>Intent Preconditions</b>: The intent will be detected only if any of the context tags specified as pre-conditions are available in the context at the time of intent detection.</li>
 <li><b>Context Output</b>: Define the context tags to be set in the context when this intent is initiated.</li></ul>
 <img src="../images/create-custom-dialog.png" alt="create custom dialog" title="create custom dialog" style="border: 1px solid gray; zoom:75%;">
 </ul></ul>

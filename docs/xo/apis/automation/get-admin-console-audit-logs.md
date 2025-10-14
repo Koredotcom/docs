@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Get Admin Console Audit Logs API
 
 To retrieve the audit logs from the Admin Console.

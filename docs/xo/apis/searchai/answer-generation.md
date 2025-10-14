@@ -1,46 +1,18 @@
+--8<-- "includes/searchai-api-back-link.md"
+
 # Answer Generation API
 
 This API allows you to fetch answers to a query from SearchAI corresponding to the input query and the meta filters sent in the request body. Additionally, this API also returns debug information about the qualified chunks used to generate answers.
 
-<table>
-  <tr>
-   <td><strong>Method</strong>
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Endpoint</strong>
-   </td>
-   <td><code>https://{{host}}/api/public/stream/{{AppID}}/advancedSearch</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Content Type</strong>
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Authorization</strong>
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="../automation/api-introduction.md#generating-the-jwt-token">How to generate the JWT Token</a>.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>API Scope</strong>
-   </td>
-   <td>
-<ul>
+| **Method**       | POST |
+|-------------------|------|
+| **Endpoint**      | `https://{{host}}/api/public/stream/{{AppID}}/advancedSearch` |
+| **Content Type**  | `application/json` |
+| **Authorization** | `auth: {{JWT}}` <br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope**     | Answer Generation |
 
-<li>Answer Generation
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
+
+
 
 
 

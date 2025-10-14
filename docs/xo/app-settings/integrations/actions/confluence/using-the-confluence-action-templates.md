@@ -5,7 +5,6 @@ You can use the **Prebuilt Action Templates** from your Confluence integration t
 Steps to create a dialog task using Confluence action templates:
 
 1. Ensure that you have configured [Confluence](configuring-the-confluence-action.md){:target="_blank"} and [installed templates](configuring-the-confluence-action.md#step-2-install-the-confluence-action-templates){:target="_blank"} successfully.
-If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
 2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 

@@ -4,7 +4,7 @@ This Language Settings feature enables multi-language evaluation and analysis. T
 
 ## Access Language Settings 
 
-Access **Language Settings** by navigating to **Contact Center AI** > **Quality AI** > **Settings** > **Language Settings**. 
+Access **Language Settings** by navigating to ***Quality AI** > **Settings** > **Language Settings**. 
 <img src="../settings/langauge-settings/images/lang-settings-page.png" alt="langauge settings" title="langauge settings" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note

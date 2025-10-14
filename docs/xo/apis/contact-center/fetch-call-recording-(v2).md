@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Fetch Call Recording (Version 2)
 
 This API facilitates the downloading of voice call recordings. The API provides an S3-hosted URL where the recording can be accessed.

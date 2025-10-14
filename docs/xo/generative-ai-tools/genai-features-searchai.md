@@ -8,7 +8,7 @@ The following table displays the features and the supported models.
 
 (✅ Supported | ❌ Not supported)
 
-| Model     | Answer Generation     | Vector Generation     | Metadata Extractor Agent     | Query Rephrase for Advanced Search API     | Query Transformation     | Result Type Classification     |Rephrase User Query|
+| Model     | Answer Generation     | Vector Generation <br>(Image & Text)     | Metadata Extractor Agent     | Query Rephrase for Advanced Search API     | Query Transformation     | Result Type Classification     |Rephrase User Query|
 |---|---|---|---|---|---|---|---|
 | Azure OpenAI - GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     | ✅     |
 | Azure OpenAI - GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     | ✅     |
@@ -26,12 +26,37 @@ The following table displays the features and the supported models.
 
 This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../searchai/answer-configuration.md#answers-generation).
 
-## Vector Generation
+## Enrich Chunks with LLM
 
-This feature helps create vector embeddings for all the ingested data in the Search AI application. When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
+This feature helps leverage the capabilities of an external LLM to refine, update, or enrich the chunks extracted from the ingested content. [Learn More](../searchai/workbench/llm-stage.md). 
+
+Note:
+
+* Create a custom prompt to use this feature. 
+* All the chunk fields are available for use in the custom prompt for this feature. Click on View Field Details while adding a Workbench Stage during chunk enrichment process to view the complete list of Chunk Fields.
+
+## Transform Documents with LLM
+
+This feature allows Search AI to leverage external LLM capabilities to enhance or update documents during the extraction process.
+
+[Learn More](../searchai/content-extraction/transformation.md)
+
+Note:
+
+* Create a custom prompt to use this feature. 
+* All the document fields are available for use in the custom prompt for this feature. Click on View Field Details while adding a Transformation Stage during content extraction to view the complete list of Document Fields. 
+
+## Vector Generation - Image
+
+This feature helps create vector embeddings for image data ingested into the Search AI application When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
+
+## Vector Generation - Text
+
+This feature helps create vector embeddings for text data ingested into the Search AI application When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
 
 ## Metadata Extractor Agent
-This feature is used to extracts relevant sources and fields from a query, map them to structured data, and apply filters or boosts for accurate retrieval. This is particularly useful for data from third party applications. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/). 
+
+This feature is used to extracts relevant sources and fields from a query, map them to structured data, and apply filters or boosts for accurate retrieval. This is particularly useful for data from third party applications. [Learn More](../searchai/rag-agents.md). 
 
 If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following structured format. 
 
@@ -64,7 +89,8 @@ If you are using a custom prompt for this feature, ensure that the output from t
 
 
 ## Query Rephrase for Advanced Search API
-This feature is used to add contextual information to the user queries and enhance them for relevance. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
+
+This feature is used to add contextual information to the user queries and enhance them for relevance. [Learn More](../searchai/rag-agents.md).
 
 While using custom prompts for this feature, ensure that the LLM responds with a structure response as shown below. 
 
@@ -83,7 +109,8 @@ While using custom prompts for this feature, ensure that the LLM responds with a
 
 
 ## Query Transformation
-This feature is used to identify key terms within a query, removing noise and prioritizing relevant documents. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
+
+This feature is used to identify key terms within a query, removing noise and prioritizing relevant documents. [Learn More](../searchai/rag-agents.md).
 
 If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following format. 
 ```
@@ -147,7 +174,8 @@ Example:
 
 ## Result Type Classification
 
-This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query. [Learn More](https://docs.kore.ai/xo/searchai/rag-agents/)
+This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query. [Learn More](../searchai/rag-agents.md)
+
 
 If you are using a custom prompt for this feature, ensure that the output from the LLM is in the following format. 
 ```

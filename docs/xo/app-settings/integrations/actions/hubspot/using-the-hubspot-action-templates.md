@@ -5,15 +5,10 @@ You can use the **Prebuilt Action Templates** from your HubSpot integration to a
 Steps to create a dialog task using HubSpot action templates:
 
 1. Ensure that you have configured [HubSpot](configuring-the-hubspot-action.md){:target="_blank"} and [installed templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} successfully.
-If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
 2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
-2. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
-
-
-
-
+3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
 ## HubSpot Actions 
 
@@ -749,11 +744,11 @@ Steps to view all contacts in HubSpot:
         "id": "1201",
         "properties": {
         "createdate": "2022-09-21T05:54:29.872Z",
-        "email": "harry.anthony@kore.com",
-        "firstname": "Harry",
+        "email": "john.doe@example.com",
+        "firstname": "John",
         "hs_object_id": "1201",
         "lastmodifieddate": "2022-09-21T14:10:34.717Z",
-        "lastname": "Anthony"
+        "lastname": "Doe"
         },
         "createdAt": "2022-09-21T05:54:29.872Z",
         "updatedAt": "2022-09-21T14:10:34.717Z",
@@ -896,7 +891,7 @@ Steps to search a contact using keywords in HubSpot:
         "id": "1201",
         "properties": {
         "createdate": "2022-09-21T05:54:29.872Z",
-        "email": "workassit123@kore.com",
+        "email": "john.doe@example.com",
         "firstname": "Work",
         "hs_object_id": "1201",
         "lastmodifieddate": "2022-09-21T14:10:34.717Z",

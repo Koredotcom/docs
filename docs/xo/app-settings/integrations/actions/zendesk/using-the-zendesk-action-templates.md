@@ -86,7 +86,7 @@ The following Zendesk actions are supported in this release:
 
 Steps to create a ticket in the Zendesk integration:
 
-1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md#step-2-install-the-zendesk-action-templates){:target="_blank} section to install this template.
+1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md){:target="_blank} section to install this template.
 2. The _Create a Ticket_ dialog task is added with the following components:  
 <img src="../images/zendesk-tem-img4.png" alt="Create a Ticket dialog task is added" title="Create a Ticket dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -293,8 +293,8 @@ Steps to create a ticket in the Zendesk integration:
         "source": {
         "from": {},
         "to": {
-        "name": "Tanmay Agrawal",
-        "address": "tanmay.agrawal@kore.com"
+        "name": "Jane Doe",
+        "address": "jane.doe@example.com"
         },
         "rel": null
         }
@@ -324,7 +324,7 @@ This action template is not yet supported by the Zendesk Integration.
 
 Steps to view all tickets in the Zendesk integration:
 
-1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md#step-2-install-the-zendesk-action-template){:target="_blank}section to install this template.
+1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md#step-2-install-the-zendesk-action-templates){:target="_blank}section to install this template.
 2. The _View All Tickets_ dialog task is added with the following components:   
 <img src="../images/zendesk-tem-img8.png" alt="View All Tickets dialog task is added" title="View All Tickets dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -568,7 +568,7 @@ Steps to view all tickets in the Zendesk integration:
 
 Steps to find a ticket using the ID in the Zendesk integration:
 
-1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md#step-2-install-the-zendesk-action-template){:target="_blank}section to install this template.
+1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md#step-2-install-the-zendesk-action-templates){:target="_blank}section to install this template.
 2. The _View Ticket(s) by ID(s)_ dialog task is added with the following components:  
 <img src="../images/zendesk-tem-img11.png" alt="View Ticket(s) by ID(s) dialog task is added" title="View Ticket(s) by ID(s) dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -743,7 +743,7 @@ Steps to find a ticket using the ID in the Zendesk integration:
 
 Steps to search ticket with keywords from the Zendesk integration:
 
-1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md#step-2-install-the-zendesk-action-template){:target="_blank}section to install this template.
+1. Refer to the [Installing the Zendesk templates ](configuring-the-zendesk-action.md#step-2-install-the-zendesk-action-templates){:target="_blank}section to install this template.
 2. The _Search Ticket with Keywords_ dialog task is added with the following components:  
 <img src="../images/zendesk-tem-img14.png" alt="Search Ticket with Keywords dialog task is added" title="Search Ticket with Keywords dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 

@@ -18,8 +18,8 @@ Evaluation Metrics is a key component of the Quality AI module that enables supe
 
 ## Access Evaluation Metrics
 
-Access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.    
-<img src="../evaluation-criteria/metrics-measurement-types/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+Access the Evaluation Metrics by navigating to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.    
+<img src="../evaluation-criteria/evaluation-metrics/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 ## Interface Elements
 
@@ -42,7 +42,7 @@ The Interface displays the following elements:
 Steps to create new evaluation metrics:
 
 1. Select the **Evaluation Metrics** tab.    
-<img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics-tab-selection.png" alt="Evaluation Metric" title="MEvaluation Metric" style="border: 1px solid gray; zoom:70%;">
+<img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics-tab-selection.png" alt="Evaluation Metric" title="Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **+ New Evaluation Metric** displayed in the upper-right corner.    
 <img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
@@ -122,7 +122,7 @@ The following measurement types are:
 
     * **Speaking pace optimization**
         
-    For the detailed configuration, see [By Speech](../configure/evaluation-criteria/metrics-measurement-types/by-speech.txt).
+    For the detailed configuration, see [By Speech](../configure/evaluation-criteria/metrics-measurement-types/by-speech.md).
 
 1. **By Value**
 
@@ -170,7 +170,7 @@ The following measurement types are:
 
     * **Dialog flow optimization**
 
-    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-execution.txt).
+    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md).
 
 1. **By Playbook Adherence**
 
@@ -249,7 +249,7 @@ Steps to edit or delete existing evaluation metrics types:
 1. Right-click on any of the existing **Evaluation Metrics Type**.   
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **Edit** to to update measurement type fields or **Delete** to remove.   
+2. Click **Edit** to update measurement type fields or **Delete** to remove.   
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Update** to save changes.

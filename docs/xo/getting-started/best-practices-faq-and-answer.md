@@ -50,7 +50,7 @@ For example, the screenshot below shows FAQs added to an agent for a bank:
 
 ## How FAQs and Generative AI Answers from Documents Work Together?
 
-First, your agent will generate AI Answers from Documents—it will look for answers in the uploaded/added documents using Generative AI. If the documents don’t have an answer, it will use Automation AI (Dialog Tasks/FAQs) to answer customer questions. So, the default order is - Generative AI Answers from Documents first and Automation (FAQs) second. You can change the default order from the App Settings. [Learn more](./../searchai/setup-search-ai.md#virtual-assistant-fallback-configuration).
+First, your agent will generate AI Answers from Documents—it will look for answers in the uploaded/added documents using Generative AI. If the documents don’t have an answer, it will use Automation AI (Dialog Tasks/FAQs) to answer customer questions. So, the default order is - Generative AI Answers from Documents first and Automation (FAQs) second. You can change the default order from the App Settings. [Learn more](./../searchai/setup-search-ai.md).
 
 ## How to Avoid Conflict Between FAQs and Generative AI Answers from Documents?
 

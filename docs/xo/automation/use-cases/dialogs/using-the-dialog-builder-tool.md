@@ -176,7 +176,7 @@ The Dialog Builder interface consists of:
 
 1. [Tool Set](#the-tool-set)
 2. [Index Panel](#the-index-panel)
-3. [Node Panel](#the-node-panel)
+3. [Node Panel](#the-nodes-panel)
 4. [Canvas](#the-canvas)
 
 
@@ -332,7 +332,7 @@ To add a node to an existing sequence, drag the node on the sequence. You will s
 
 The task being designed in a dialog can be broken down into several sub-tasks. For example, if you are developing a dialog to send money from one account to another, you may break the tasks into subtasks like gathering the account owner's details, gathering the recipient account's details, transferring the money, success scenario, failure scenario, etc. You can have a sequence for each sub-task.
 
-Each sequence contains one or more nodes placed in a logical sequence and a **Transition** section at the end, through which you can either continue the flow of dialog to the next sequence or split the flow into two or more paths based on [conditions](#add-if-else-node-connections).
+Each sequence contains one or more nodes placed in a logical sequence and a **Transition** section at the end, through which you can either continue the flow of dialog to the next sequence or split the flow into two or more paths based on [conditions](#add-if-else-connections).
 
 You can set connections between two sequences; Drag the connector <img src="../images/using-dialog-builder-img17-nodes-connector.png"> from the source sequence to the required destination sequence. Please note that by default, the connection will be from the **last node of the source sequence** to the **topmost node on the destination sequence**.
 

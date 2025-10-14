@@ -72,9 +72,9 @@ The following example shows a sample payload used to generate the JWT.
     "jti": "1234",               //or kore_jti
     "aud": "https://idproxy.kore.ai/authorize",
     "iss": "cs-xxxxxxxxxx-1234", //or kore_iss
-    "sub": "john.doe@achme.com", //or kore_sub
+    "sub": "john.doe@example.com", //or kore_sub
     "isAnonymous": false,
-    "identityToMerge": "anonymoususer1@test.com" //to map anonymous user
+    "identityToMerge": "john.doe@example.com" //to map anonymous user
 }
 ```
 
@@ -230,7 +230,7 @@ There are several open-source libraries available to generate JWT, for example,
 * Java – [https://github.com/auth0/java-jwt](https://github.com/auth0/java-jwt)
 * .Net – [https://github.com/jwt-dotnet/jwt](https://github.com/jwt-dotnet/jwt)
 
-To generate credentials for your clients, you must register your client app in the Platform tool. For more information, see [SDK App Registration](../app-registration).
+To generate credentials for your clients, you must register your client app in the Platform tool. For more information, see [SDK App Registration](app-registration.md).
 
 You can also try out our tutorial, a test application, and configuring your localhost server for JWT generation. For more information, see the [Web SDK Tutorial](./tutorials/web-sdk.md).
 
@@ -273,7 +273,7 @@ Below is the decoded sample JWE header:
 { 
 "alg": "RSA-OAEP", 
 "enc": "A128CBC-HS256",
-"kid": "k-ffb4hty69-750a-44af-91c1-de0bvcf6a", 
+"kid": "k-ffb4hty69-750a-44af-91c1-de0bvxxxx", 
 "typ": "JWT"
 }
 ```

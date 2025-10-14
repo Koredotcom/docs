@@ -1,4 +1,4 @@
-# Test (Talk to App)
+# Test
 
 After you have defined your app and configured one or more tasks, you should test your settings before you publish your NLP-enabled app. Bot owners and developers can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
 
@@ -20,7 +20,7 @@ A messaging window for the app is displayed and connected to the NLP interpreter
 When you first open the window, you need to select whether you wish to proceed with Voice or Chat. Chat experience is described in this content. In the **Message** section, enter text to begin interacting and testing your app, for example, _Book a flight._ The NLP interpreter begins processing the task, verifying authentication with the user and the web service, and then prompting for required task field information. When all the required task fields are collected, it executes the task. While testing your app , try different variations of user prompts and ensure the NLP interpreter is processing the synonyms (or lack of synonyms) properly. If the app returns unexpected results, consider adding or modifying synonyms for your tasks and task field names as required. For more information, see [Natural Language Processing](../natural-language/training/optimizing-bots.md){:target="_blank"}.
 
 
-## Debugging and Troubleshooting
+## Debug and Troubleshoot
 
 You can open a **debug** window to view the natural language processing, logs, and session context, and variables of the chat. To open the debug, click the Debug icon <img src="../images/talk-to-bot-img3.png"> located on the top right-hand side of the Talk to Bot chat window. The Debug window consists of the following tabs: **Debug Log**, **NL Analysis**, **Session Context & Variables**. 
 

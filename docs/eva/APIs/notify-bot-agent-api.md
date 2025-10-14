@@ -52,7 +52,7 @@ The Notify API enables developers to send interactive notifications to AI for Wo
    </td>
    <td>Required
    </td>
-   <td>Environment URL, for example, https://AI-for-Work.kore.ai
+   <td>Environment URL, for example, https://platform.example.ai
    </td>
   </tr>
   <tr>

@@ -1081,7 +1081,7 @@ To invoke a form from a dialog task, follow the below steps:
 
     * The [Form Node](../dialogs/node-types/working-with-the-form-node.md){:target="_blank"}. Following Component Properties are of special interest:
         * **Submit Message** – Message displayed to the end-user on successful submission of the form
-        * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. [Learn more](../dialogs/node-types/working-with-the-form-node.md#component-properties/){:target="_blank"}.
+        * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. [Learn more](../dialogs/node-types/working-with-the-form-node.md#component-properties){:target="_blank"}.
     
         * **Bot Action Node,** in case of the conversation experience flow, can also be configured in the [Logic Node](../dialogs/node-types/working-with-the-logic-node.md){:target="_blank"} as follows:
 
@@ -3410,7 +3410,7 @@ Yes/No values
       "Date": "07/08/2020",
       "Date&Time": "07/08/2020 19:00 PM",
       "PhoneNumber": "+919999999999",
-      "Email": "test@gmail.com",
+      "Email": "john.doe@example.com",
       "toggle": "Yes",
       "Adress": "Address",
       "Url": "test.com",

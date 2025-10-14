@@ -1,6 +1,6 @@
 # Alert Task – Authorization using API Key
 
-We have seen how an Alert task can be set up in the XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this section, we will see how to configure API authorization.
+We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform.. In this section, we will see how to configure API authorization.
 
 ## API Key Setup Overview
 

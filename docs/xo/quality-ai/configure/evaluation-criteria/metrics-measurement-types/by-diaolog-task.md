@@ -1,6 +1,6 @@
 # By Dialog Task Metric
 
-This metric helps to determine how consistently agents follow predefined scripts, workflows, or behavioral steps during customer interactions. These playbooks are designed to enforce best practices, ensure compliance, and drive high-quality outcomes in customer service and support environments. 
+The By Dialog Task metric helps to determine how consistently agents follow predefined scripts, workflows, or behavioral steps during customer interactions. These playbooks are designed to enforce best practices, ensure compliance, and drive high-quality outcomes in customer service and support environments. 
 
 ## Why Use Dialog Task Metrics
 
@@ -46,7 +46,7 @@ Before configuring or using Dialog Task metrics, ensure the following:
 
 2. **Access Rights to Configure Evaluation Metrics**
     
-    You must have the appropriate permissions to access **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics**.
+    You must have the appropriate permissions to access **Quality AI** > **Configure** > **Evaluation Metrics**.
 
 3. **Evaluation Forms Should Be Defined Separately**
     
@@ -54,7 +54,7 @@ Before configuring or using Dialog Task metrics, ensure the following:
 
 4. **No Active Dependencies for Deletion**
 
-    * Cannot delete any metrics if if any of the metrics are actively linked to evaluation forms or attributes.
+    * Cannot delete any metrics if any of the metrics are actively linked to evaluation forms or attributes.
 
     * Reassign or remove dependencies before attempting to delete a metric.
 

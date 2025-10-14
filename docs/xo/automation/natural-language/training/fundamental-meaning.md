@@ -223,9 +223,9 @@ You can also define custom concepts using emojis.
 Concepts are used to define patterns. For example, the pattern _buy ~fruit_ is used to capture _buy orange_ or _buy banana_.
 <img src="../images/define-custom-concepts-window.png" alt="define custom concepts" title="define custom concepts" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-Add the <b>~disable_help</b> concept key and train the app to disable the system help. You can train the app to use the <b>custom_help</b> group in Smalltalk to trigger the customized help messages. <a href="../../../automation/use-cases/small-talk.md#add-groups" target="_blank">Learn more</a>.</p></div>
+!!!note
+
+    Add the **~disable_help** concept key and train the app to disable the system help. You can train the app to use the **custom_help** group in Smalltalk to trigger the customized help messages. [Learn more](../../use-cases/small-talk.md#add-groups)
 
 <img src="../images/custom_help-setup.png" alt="custom help" title="custom help" style="border: 1px solid gray; zoom:75%;">
 
@@ -341,12 +341,13 @@ To treat a Bot Synonym word as a Homophone/Homonym in an utterance, you must def
 
 <img src="../images/enter-synonym-values.png" alt="enter synonyms" title="enter synonyms" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-Both homonyms do not change the original utterance like Substitutions or return the normalized value for the Custom Concept entity. However, they do the following:
- <ul><li>Influence POS Tagging.</li>
- <li>Link concepts to new words (marking). <a href="../../../automation/natural-language/training/fundamental-meaning.md#marking" target="_blank">Learn more</a>.</li></p></div>
+!!! note "Important Points"
 
+    Both homonyms do not change the original utterance like Substitutions or return the normalized value for the Custom Concept entity. However, they do the following:  
+
+    * Influence POS Tagging.  
+    * Link concepts to new words (marking). [Learn more](../training/fundamental-meaning.md#marking). 
+    
 ### Emoji Support
 
 The NLP engine can recognize emojis present in the user utterance. You can include these in the concept definition and give a better user experience. For example, a thumbs-up emoticon (:thumbs up:) from the user can be considered as an affirmative, and a frown emoticon (:frowning2:) can be considered as an anger sentiment and appropriate action can be taken.
@@ -466,10 +467,6 @@ To activate Negative Patterns, follow the steps below:
 To train and improve the performance, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings under **Natural Language** > **NLU Config**.
 
 The settings for the FM engine are discussed in detail in the following sections.
-
-!!!note
-
-    If your app is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0.
 
 To set up Thresholds and Configurations for the FM Engine, please follow the steps below:
 

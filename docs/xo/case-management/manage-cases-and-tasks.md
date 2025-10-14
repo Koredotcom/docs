@@ -133,7 +133,7 @@ To update or resolve cases:
 2. When the agent completes the review processes, the agent can view all case statuses (including Closed, Open, and Resolved) from **Dashboard > My Cases > Closed**.  
 <img src="../images/closed-my-cases.png" alt="Closed Cases" title="Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
-3. To view the status of all closed cases on the dashboard and Manage Cases, see [Analyze Case Management](#analyze-cases-and-tasks){:target="_blank"}.  
+3. To view the status of all closed cases on the dashboard and Manage Cases, see [Analyze Case Management](../case-management/case-analysis-dashboard.md){:target="_blank"}.  
 <img src="../images/manage-all-cases-closed.png" alt="Managed Closed Cases" title="Managed Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
 4. Ensure all required actions and activities associated with the task are completed and changed to resolve with a proper comment before closing the case.
@@ -224,25 +224,25 @@ Review task activity enables agents to understand the task or case history and t
 
 * To monitor a task:
 
-1. To view task statuses, outstanding items, and overall workload, check the dashboard.  
-<img src="../images/task-monitor.png" alt="Dashboard Monitor" title="Dashboard Monitor" style="border: 1px solid gray; zoom:70%;">
+    1. View task statuses, outstanding items, and overall workload, check the dashboard.  
+    <img src="../images/task-monitor.png" alt="Dashboard Monitor" title="Dashboard Monitor" style="border: 1px solid gray; zoom:70%;">
 
-2. After tasks are completed, collect the feedback through comments and event details to review the progress of each task.
+    2. After tasks are completed, collect the feedback through comments and event details to review the progress of each task.
 
 * To view task activity:
 
-1. In the **Activity** section, select the **Expand** icon.
+    1. In the **Activity** section, select the **Expand** icon.
 
-2. Click the **Comments** tab to view/add comments.  
-<img src="../images/view-activity.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    2. Click the **Comments** tab to view/add comments.  
+    <img src="../images/view-activity.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Save**. You can edit, delete, or add supported image files related to the task activity addressed.  
-<img src="../images/resolved-issue.png" alt="View Comments" title="View Comments" style="border: 1px solid gray; zoom:70%;">
+    3. Click **Save**. You can edit, delete, or add supported image files related to the task activity addressed.  
+    <img src="../images/resolved-issue.png" alt="View Comments" title="View Comments" style="border: 1px solid gray; zoom:70%;">
 
-4. Click the **Events** tab to view all the events of a case that includes changes in status, updates, or actions taken by agents.  
-<img src="../images/activity-events.png" alt="Events" title="Events" style="border: 1px solid gray; zoom:70%;">
+    4. Click the **Events** tab to view all the events of a case that includes changes in status, updates, or actions taken by agents.  
+    <img src="../images/activity-events.png" alt="Events" title="Events" style="border: 1px solid gray; zoom:70%;">
 
-After you complete tasks, verify that all customer issues are addressed. Ensure that all comments and events contain appropriate details for each task. This information helps track agent communication progress and captures all relevant information throughout the case lifecycle for future reference.
+After you complete tasks, verify that all customer issues are resolved. Ensure that all comments and events include the appropriate details for each task. This information helps you track communication progress and captures relevant information throughout the case lifecycle for future reference.
 
 ### Update Task Status 
 
@@ -252,5 +252,6 @@ Under the Task Details, select the **Resolve** from the status dropdown.
 ### Task Closure
 
 Change each task's status from **Resolved** to **Closed** after you complete all required actions. After you complete all review processes, you can view the task status (such as Closed, Open, or Resolved) from the Agent **Dashboard > My Tasks > Closed**.  
+
 <img src="../images/my-tasks-closed.png" alt="Task Closure" title="Task Closure" style="border: 1px solid gray; zoom:70%;">
 

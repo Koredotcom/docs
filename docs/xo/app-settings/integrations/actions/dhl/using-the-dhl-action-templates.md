@@ -5,7 +5,6 @@ You can use the **Prebuilt Action Templates** from your DHL integration to auto-
 Steps to create a dialog task using the DHL action templates:
 
 1. Ensure that you have configured [DHL](configuring-the-dhl-action.md){:target="_blank"} and [installed templates](configuring-the-dhl-action.md#step-2-install-the-dhl-action-templates){:target="_blank"} successfully.
-If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
 2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
@@ -75,7 +74,7 @@ Steps to track the shipment using the DHL tracking ID:
         "addressLocality": "-"
         },
         "servicePoint": {
-        "url": "http://www.dhl.com/en/country_profile.html",
+        "url": "https://www.dhl.com/en/country_profile.html",
         "label": "Origin Service Area"
         }
         },
@@ -84,7 +83,7 @@ Steps to track the shipment using the DHL tracking ID:
         "addressLocality": "-"
         },
         "servicePoint": {
-        "url": "http://www.dhl.com/en/country_profile.html",
+        "url": "https://www.dhl.com/en/country_profile.html",
         "label": "Destination Service Area"
         }
         },
@@ -185,32 +184,32 @@ Steps to find DHL locations using the country and postal codes:
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Monday"
+        "dayOfWeek": "https://schema.org/Monday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Tuesday"
+        "dayOfWeek": "https://schema.org/Tuesday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Wednesday"
+        "dayOfWeek": "https://schema.org/Wednesday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Thursday"
+        "dayOfWeek": "https://schema.org/Thursday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Friday"
+        "dayOfWeek": "https://schema.org/Friday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Saturday"
+        "dayOfWeek": "https://schema.org/Saturday"
         }
         ],
         "closurePeriods": [],
@@ -254,32 +253,32 @@ Steps to find DHL locations using the country and postal codes:
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Monday"
+        "dayOfWeek": "https://schema.org/Monday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Tuesday"
+        "dayOfWeek": "https://schema.org/Tuesday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Wednesday"
+        "dayOfWeek": "https://schema.org/Wednesday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Thursday"
+        "dayOfWeek": "https://schema.org/Thursday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Friday"
+        "dayOfWeek": "https://schema.org/Friday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Saturday"
+        "dayOfWeek": "https://schema.org/Saturday"
         }
         ],
         "closurePeriods": [],
@@ -323,32 +322,32 @@ Steps to find DHL locations using the country and postal codes:
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Monday"
+        "dayOfWeek": "https://schema.org/Monday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Tuesday"
+        "dayOfWeek": "https://schema.org/Tuesday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Wednesday"
+        "dayOfWeek": "https://schema.org/Wednesday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Thursday"
+        "dayOfWeek": "https://schema.org/Thursday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Friday"
+        "dayOfWeek": "https://schema.org/Friday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Saturday"
+        "dayOfWeek": "https://schema.org/Saturday"
         }
         ],
         "closurePeriods": [],
@@ -392,32 +391,32 @@ Steps to find DHL locations using the country and postal codes:
         {
         "opens": "09:00:00",
         "closes" : "21:00:00",
-        "dayOfWeek": "http://schema.org/Monday"
+        "dayOfWeek": "https://schema.org/Monday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Tuesday"
+        "dayOfWeek": "https://schema.org/Tuesday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Wednesday"
+        "dayOfWeek": "https://schema.org/Wednesday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Thursday"
+        "dayOfWeek": "https://schema.org/Thursday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Friday"
+        "dayOfWeek": "https://schema.org/Friday"
         },
         {
         "opens": "09:00:00",
         "closes": "21:00:00",
-        "dayOfWeek": "http://schema.org/Saturday"
+        "dayOfWeek": "https://schema.org/Saturday"
         }
         ],
         "closurePeriods": [],

@@ -1,3 +1,4 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Get Analytics API
 
@@ -1194,7 +1195,7 @@ The ‘NLAnalysis’ object includes multiple sub-objects such as ‘intentResco
    </td>
    <td>Object
    </td>   
-   <td>The toneAnalysis object; Contains the tone analysis of the task. <a href="../../automation/intelligence/sentiment-management/tone-analysis">Learn more</a>.
+   <td>The toneAnalysis object; Contains the tone analysis of the task. 
    </td>
   </tr>
   <tr>

@@ -20,7 +20,7 @@ To sort the list of column values, click the **Arrow Up** <img src="../images/up
   <tr>
    <td>Group Name
    </td>
-   <td>Displays the group name. Click a group name to edit the the selected group – name, description & members.
+   <td>Displays the group name. Click a group name to edit the selected group – name, description & members.
    </td>
   </tr>
   <tr>
@@ -77,7 +77,7 @@ You may want to create one or more groups of users in your account for users wit
     2. Optionally, in the **Description** field, enter a description for the group.  
     <img src="../images/create-new-group.png" alt="User Management - Groups" title="User Management - Groups" style="border: 1px solid gray;"/> 
 
-5. Navigate to the **Members** tab, and select the user(s) and/or group(s) to be added to this group. You can locate the needed users/groups from the the **Available Users/Groups** section by
+5. Navigate to the **Members** tab, and select the user(s) and/or group(s) to be added to this group. You can locate the needed users/groups from the **Available Users/Groups** section by
     1. using **Sort** and then selecting a **Filter** to display users and groups that can be added to the new group.
     2. entering a name in the **Search** field, or
     3. scrolling to select one or more Kore.ai users and Kore.ai groups,

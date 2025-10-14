@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Bot Import Status API
 
 To get the status of the bot import request initiated using the **Import Bot** API for a new bot or an existing bot.
@@ -69,7 +71,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotImportBIR</strong>
    </td>
-   <td>bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx. The BIR ID is found in the response of the <a href="../import-bot-as-a-new-bot-api">Import Bot as a New Bot API</a> endpoint.
+   <td>bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx. The BIR ID is found in the response of the Import Bot as a New Bot API endpoint.
    </td>
    <td>Required
    </td>
