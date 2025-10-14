@@ -43,8 +43,6 @@ Extend your current app:
 
 3. Choose the required tools from the dropdown menus, then select **Install App > Proceed to Import**.
 
-       <img src="../images/proceed-to-import.png" alt="Install the app" title="Install the app" style="border: 1px solid gray; zoom:80%;">
-
 4. **Setup is complete**:
     * The app, agents, and tools are created in your workspace.
     * (Optional) Connect to Search AI for knowledge base integration. [Learn more about Knowledge Tool Integration](../knowledge/overview.md){:target="_blank"}.
