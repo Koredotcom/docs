@@ -748,7 +748,7 @@ Steps to send an outbound email:
     Drafts are automatically saved and remain accessible in the following scenarios:
 
     1. After an agent logout and subsequent login.
-    2. Network interruptions and subsequent reconnections.
+    2. Network interruptions and subsequent re-connections.
     3. The current email content is saved as a draft if the editor is closed.
     4. Drafts are saved only after the mandatory fields (recipient, subject, queue, and email body) are updated.
 
