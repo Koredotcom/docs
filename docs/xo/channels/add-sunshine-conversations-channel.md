@@ -211,13 +211,13 @@ To trigger various message templates, you must use a specific JavaScript format 
             {
                 type: 'reply',
                 text: 'English',
-                iconUrl: 'https://imgur.com/taco.png',
+                iconUrl: 'https://example.com/english.png',
                 payload: 'Hollywood'
             },
             {
                 type: 'reply',
                 text: 'Hindi',
-                iconUrl: 'https://imgur.com/burrito.png',
+                iconUrl: 'https://example.com/hindi.png',
                 payload: 'Bollywood'
             }
         ]
