@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to APIs List ](../../apis/overview.md/#apis-list){:target="_blank"}
+
 # Undeploy a Model API
 
 This API undeploys a model from the environment. The API response includes the **model ID** and the **model undeployment status**. After receiving the response, use the <code>dockStatusId</code> to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify successful model undeployment.

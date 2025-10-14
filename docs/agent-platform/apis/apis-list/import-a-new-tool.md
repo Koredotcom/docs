@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to APIs List ](../../apis/overview.md/#apis-list){:target="_blank"}
+
 # Import a New Tool API
 
 This API imports a new tool by providing the necessary **file IDs**, ensuring all the necessary configurations, including the tool’s flow data, app definitions, and environment variables are correctly imported. After triggering the import, the response returns a <code>dockStatusId</code>. Use this ID to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify the successful import of the tool.

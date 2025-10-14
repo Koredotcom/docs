@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to APIs List ](../../apis/overview.md/#apis-list){:target="_blank"}
+
 # Get Dock Status API
 
 This API allows users to track the status of ongoing or completed jobs related to tools or models. After triggering operations like **import**, **export**, **deploy**, or **undeploy**, it provides real-time updates on progress, success, or failure, enabling efficient monitoring of execution.
@@ -141,7 +143,7 @@ No parameters are passed.
    </td>
    <td>String
    </td>
-   <td>I<em>MPORT</em>, <em>EXPORT</em>, <em>DEPLOY</em>, or <em>UNDEPLOY</em>
+   <td>I<em>IMPORT</em>, <em>EXPORT</em>, <em>DEPLOY</em>, or <em>UNDEPLOY</em>
    </td>
   </tr>
   <tr>
@@ -151,7 +153,7 @@ No parameters are passed.
    </td>
    <td>String
    </td>
-   <td><em>IN_PROGRES</em>S, <em>SUCCESS</em>, or <em>FAILED</em>
+   <td><em>IN_PROGRESS</em>, <em>SUCCESS</em>, or <em>FAILED</em>
    </td>
   </tr>
 </table>

@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to APIs List ](../../apis/overview.md/#apis-list){:target="_blank"}
+
 # Deploy a Model API
 
 This API deploys an open-source or fine-tuned model in the ***Ready to Deploy*** state. Users can configure deployment parameters, including hyperparameters, scaling, and optimization settings, allowing for flexible model scaling and performance tuning.
@@ -91,9 +93,9 @@ The API response includes the **model ID** and the **model deployment status**. 
 **For an Opensource Model Source**
 
 ```js
-curl --location 'https://{host}/api/public/models/cm-2xxxxxxxxxxxxxxxxxx0/deploy?modelType=openSource' \
---header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3' \
---header 'Content-Type: application/json' \
+curl --location 'https://{host}/api/public/models/cm-2xxxxxxxxxxxxxxxxxx0/deploy?modelType=openSource' 
+--header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3' 
+--header 'Content-Type: application/json' 
 --data '{
     "name": "Flant5_model",
     "hyperParameters": {
@@ -115,16 +117,16 @@ curl --location 'https://{host}/api/public/models/cm-2xxxxxxxxxxxxxxxxxx0/deploy
       "optimizationType": "",
       "quantizationType": ""
     },
-    "isDeployedPreviouly": true
+    "isDeployedPreviously": true
   }'
 ```
 
-**For a Finetune Model Source**
+**For a Fine-tune Model Source**
 
 ```js
-curl --location ' https://{host}/api/public/models/cm-6xxxxxxxxxxxxxxxxxx9/deploy?modelType=fineTune' \
---header 'x-api-key: kg-2xxxxxxxxxxxxxxxxxxf-7xxxxxxx-7xx8-4xxf-8xx7-dxxxxxxxxxx3' \
---header 'Content-Type: application/json' \
+curl --location ' https://{host}/api/public/models/cm-6xxxxxxxxxxxxxxxxxx9/deploy?modelType=fineTune' 
+--header 'x-api-key: kg-2xxxxxxxxxxxxxxxxxxf-7xxxxxxx-7xx8-4xxf-8xx7-dxxxxxxxxxx3' 
+--header 'Content-Type: application/json' 
 --data '{
     "name": "gpt2",
     "hyperParameters": {
