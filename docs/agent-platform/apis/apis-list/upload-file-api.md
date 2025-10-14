@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to APIs List ](../../apis/overview.md/#apis-list){:target="_blank"}
+
 # File Upload API
 
 The API uploads a file to the local server for seamless usage in multimodal nodes and across the Agent Platform. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> for further action on the file.
