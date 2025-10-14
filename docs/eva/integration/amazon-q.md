@@ -171,7 +171,7 @@ Step 5: Add Required Data Sources to Q Index
     * JIRA
     * Amazon S3
     * Other enterprise systems as needed
-3. **Configure data source connections** following the[ AWS documentation for creating indexes].(https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/isv-creating-index.html)
+3. **Configure data source connections** following the [AWS documentation](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/isv-creating-index.html)
 
   <img src="../images/AmazonQ_9.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;">
 
@@ -182,9 +182,8 @@ This final step completes the integration by configuring Kore.ai as a data acces
  **Data Accessor Configuration Process**
 
 1. **Access Data Accessors**:
-    * In the Q Business Application console, navigate to **Data Accessors.**
-    * Click **Add** a Data Accessor.
-    <img src="../images/AmazonQ_10.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;">
+    * In the Q Business Application console, navigate to **Data Accessors**.
+    * Click **Add Data Accessor**.
 
 2. **Select Kore.ai as the data accessor**:
     * Choose **Kore.ai** from the available data accessor options.

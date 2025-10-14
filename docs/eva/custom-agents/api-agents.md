@@ -610,8 +610,8 @@ Example Query: "Show all deals with an amount of 40,000"
 
 ####  Multiple Value Fields (Allow Multiple Values)
 
-Example Query: "Show all Jira issues assigned to Prashanth Loka and Tanmay
-Agarwal**"**
+Example Query: "Show all Jira issues assigned to John Doe and John Dawn
+Dawn**"**
 
 
  ```
@@ -626,7 +626,7 @@ Agarwal**"**
 
             EXAMPLE :
 
-            query:- show all jira issues assigned to prashanth loka and Tanmay agarwal.
+            query:- show all jira issues assigned to John Doe and John Dawn.
             entities : {
                 assignee : {
                     filterKey : assignee,
@@ -774,4 +774,4 @@ Note: The publishing options are defined in the Workspace settings. For addition
 
 ## User Interaction
 
-Interacting with the API Agent allows users to access important data quickly. With the no-code API Agent Builder, users can set up agents to connect to their existing systems and retrieve data through simple queries. For example, If a user asks "Get hotel data" or "Retrieve guest information", The API Agent processes these queries and returns the relevant data in a clear format.Users can also refine their queries for more specific information, such as "pull hotel database details" or "Display hotel info".
+Interacting with the API Agent allows users to access important data quickly. With the no-code API Agent Builder, users can set up agents to connect to their existing systems and retrieve data through simple queries. For example, If a user asks "Get hotel data" or "Retrieve guest information", The API Agent processes these queries and returns the relevant data in a clear format. Users can also refine their queries for more specific information, such as "pull hotel database details" or "Display hotel info".
