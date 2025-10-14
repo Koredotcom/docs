@@ -34,7 +34,7 @@ API keys are typically included in request headers or parameters to validate acc
 </div>
 
 
-## APIs List
+## API List
 
 Currently, the following APIs are available:
 
