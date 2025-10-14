@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Naver Works Channel
 
 **Naver Works** is the business messaging channel for Naver Corporation, a prominent internet services company in South Korea. The channel can be used by anyone with a screen similar to Naver/LINE service. It allows communication with users on the **_LINE_** service and the Naver Works users from other companies.

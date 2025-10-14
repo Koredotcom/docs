@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Sinch Channel
 
 AI Agents built on the Platform can be deployed on the **Sinch Conversation API** platform. 

@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Sunshine Conversations Channel
 
 AI Agents built on the Kore.ai Platform can be deployed on the **Sunshine Conversations** platform. This channel integration supports conversations with AI Agents and provides a seamless hand-off to agents on **Zendesk**.
