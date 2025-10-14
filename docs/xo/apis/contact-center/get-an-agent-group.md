@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Get an Agent Group
 
 To get the details of a particular agent group with the given `IId` and `agentGroupId`.

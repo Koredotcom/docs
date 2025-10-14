@@ -6,11 +6,15 @@ To use LLM and Generative AI features, you must configure the integration with a
 
 Review the model and feature support matrix for the [GenAI Features](genai-features.md).
 
+<img src="../images/models-library-home.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
 ## Pre-built LLM Integration
 
 The Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompt templates and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the Platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
 
+!!! note
+
+    The Platform supports Azure OpenAI and OpenAI integrations for the Chat Completions API only. To use the Responses API, you must configure a Custom LLM.
 
 **Configure Pre-built LLM Integration**
 
@@ -18,9 +22,9 @@ Steps to configure a pre-built LLM:
 
 
 1. Go to **Generative AI Tools** > **Models Library**.  
-<img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **Configure Now** for Azure Open AI, Open AI, or Anthropic. If you have already configured a model, click **+ New Model** and select the LLM.
+
+2. Click **Configure Now** for Azure Open AI, Open AI, or Anthropic.
 3. On the **Authorization** tab:
     * For **Azure OpenAI**, enter details like the **API Key** and **User Sub Domain**. In the models section, toggle on the required **model** and enter **Deployment ID**.  
     <img src="../images/configazure.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
@@ -29,18 +33,24 @@ Steps to configure a pre-built LLM:
 
 4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
 5. The Connection Status pop-up is displayed.
-    * If a connection is successful, click **Save**.  
+    * If a connection is successful, click **NEXT**.  
     <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.  
     <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
-
-        You can save the configuration with an unsuccessful connection.
 
 
-6. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
-
+6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options.
+    * Maximum Tokens: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
+    * Duration: Set duration in days after which the token limit resets automatically. You can set a maximum duration of 90 days.
+    * Schedule Start Date: Set the date today onwards for the usage cycle.
+    * Usage Notification: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
+        * Send Notification at: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
+        * Send to Users: Enter the email addresses of users who should receive the usage notification email.  
+        <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
+7. Click **Save**.
+8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.
+9. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
 ## Provider's New LLM Integration
 
@@ -70,13 +80,8 @@ Steps to configure a Provider's New LLM Integration:
 6. Read the **Policy Guidelines**, select the checkbox, and click **Save**. 
 7. The Connection Status pop-up is displayed.
     * If a connection is successful, click **Save**.  
-    <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. 
 
-    !!! note
-
-        You can save the configuration with an unsuccessful connection.
 
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md). 
 
@@ -100,7 +105,7 @@ Steps to Integrate a Custom LLM:
 
 
 1. Go to **Generative AI Tools** > **Models Library**.
-2. Click **Custom LLM**. If you have already configured a model, click **+ New Model** and select the Custom LLM.
+2. Click **Custom LLM**.
 3. On the **Configuration** tab, enter the details like **Integration Name**, **Model Name**, **Endpoint**, and **Headers**.  
 <img src="../images/customint.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
 
@@ -112,19 +117,26 @@ Steps to Integrate a Custom LLM:
         OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration.  
 
 5. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-6. On the request prompt pop-up, enter the test payload and click **Save** to check the connection. You can also save the test payload using the check box.  
+6. On the request prompt pop-up, enter the test payload and click **Next** to check the connection. You can also save the test payload using the check box.  
 <img src="../images/custompayload.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
 7. The Connection Status pop-up is displayed.
     * If a connection is successful, click **Save**.  
-    <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.  
 
-        You can save the configuration with an unsuccessful connection.
 
+
+6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options. Ensure to map the Request and Response Token Key in the custom prompt. 
+    * Maximum Tokens: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
+    * Duration: Set duration in days after which the token limit resets automatically. You can set a maximum duration of 90 days.
+    * Schedule Start Date: Set the date today onwards for the usage cycle.
+    * Usage Notification: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
+        * Send Notification at: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
+        * Send to Users: Enter the email addresses of users who should receive the usage notification email.  
+        <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
+7. Click **Save**.
+8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
 
@@ -133,9 +145,100 @@ Steps to Integrate a Custom LLM:
 
 The Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the Platform. The users can create custom prompts for their specific use cases and use the connected models across GenAI features. While Amazon Bedrock is available as an OOB integration, the Platform doesn't provide any system prompts or templates. Users can only use the model with the help of custom prompts.
 
+
+
+**Pre-requesites**
+
+Before starting the integration process, ensure you have the necessary permissions and access to the IAM role and Amazon Bedrock resources in your AWS account. For more information, see [Policies and Permissions in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
+
+**A. Create IAM Role and Configure Trust Policy**
+
+To begin, you must create an IAM role in your AWS account that allows Platform to securely access Amazon Bedrock models. This role defines permissions and establishes a trust relationship so that the platform can assume the role via AWS STS.
+
+Follow the steps below to configure the IAM role and trust policy:
+
+**1. Create the IAM Role in Your AWS Account**
+
+Create a new IAM role in your AWS account that grants access to invoke Amazon Bedrock models. This role will be assumed by the platform to make Bedrock API calls on your behalf.
+
+You can follow the IAM role creation setup in the [AWS IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html).
+
+For best practices on setting up IAM policies for Bedrock, see the [AWS policy examples guide](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html).
+
+Assign the necessary permissions to the role. An example IAM policy is shown below:
+
+
+```
+{
+ "Version": "2012-10-17",
+ "Statement": [
+   {
+     "Effect": "Allow",
+     "Action": [
+       "bedrock:InvokeModel",
+       "bedrock:ListFoundationModels"
+     ],
+     "Resource": "*"
+   }
+ ]
+}
+```
+
+
+**2. Set the Trust Policy in Your AWS Account**
+
+Set the trust policy to allow the platform to assume the IAM role. Replace with the AWS account ID provided by the platform.
+
+
+```
+{
+
+ "Version": "2012-10-17",
+ "Statement": [
+   {
+     "Effect": "Allow",
+     "Principal": {
+       "AWS": "<kore-arn>"
+     },
+     "Action": "sts:AssumeRole"
+   }
+ ]
+}
+```
+
+
+For private/on-prem deployments, the trust policy should point to your internal AWS IAM role.
+
+**3. Set the STS Endpoint**
+
+Use the STS endpoint for the region where your IAM role resides.
+
+You can find the full list of STS endpoints in the [AWS documentation](https://docs.aws.amazon.com/general/latest/gr/sts.html).
+
+For example:
+
+
+```
+https://sts.us-east-1.amazonaws.com/
+```
+
+
+Ensure the STS region matches the region of your IAM role - not necessarily the region of the model.
+
+
+**B. Raise a Support Ticket to Register your IAM Role**
+
+After creating the IAM role in your AWS account, you need to raise a support ticket with Kore.ai to update the trust policy with your IAM Role ARN. This allows the platform to assume the role and invoke Bedrock.
+
+To complete the registration:
+
+
+1. Raise a support ticket with your IAM role ARN, requesting that it be added to the trust policy.
+2. Wait for confirmation from Support that the role has been registered.
+
 !!! note
 
-    Before starting the integration process, ensure you have the necessary permissions and access to the IAM role and Amazon Bedrock resources in your AWS account. For more information, see [Policies and Permissions in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
+    Without this step, the platform cannot assume your IAM role. Both your AWS account and Kore.ai’s environment must explicitly trust each other for secure cross-account access.
 
 
 **Configure Amazon Bedrock LLM Integration**
@@ -144,7 +247,6 @@ Steps to integrate an Amazon Bedrock:
 
 
 1. Go to **Generative AI Tools** > **Models Library**.
-    <img src="../images/abr1.png" alt="Amazon Bedrock" title="Amazon Bedrock" style="border: 1px solid gray; zoom:70%;">
 2. Click **Amazon Bedrock**.
 3. On the **Authorization** tab, provide the following details.
     * **Provider Name**: Enter a name to identify the provider or group of language models you want to connect.
@@ -159,11 +261,26 @@ Steps to integrate an Amazon Bedrock:
     <img src="../images/abr2n.png" alt="Amazon Bedrock" title="Amazon Bedrock" style="border: 1px solid gray; zoom:70%;">
 
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-5. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.
-    <img src="../images/abr3.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
-6. On a successful connection, the save option is enabled.
-7. Click **Save**. The configuration successful message is displayed.
-8. The next step is to add[ Prompts](prompts-library.md).
+5. On the request prompt pop-up, enter the test payload and click **Test** to check the connection. You can also save the test payload using the check box. 
+    <img src="../images/abr-payload.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
+6. The Connection Status pop-up is displayed.    
+    * If a connection is successful, click **Next**. If the LLM connection is successful during the test call, it displays a confirmation message.  
+
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.
+6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options. Ensure to map the Request and Response Token Key in the custom prompt. 
+    * Maximum Tokens: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
+    * Duration: Set duration in days after which the token limit resets automatically. You can set a maximum duration of 90 days.
+    * Schedule Start Date: Set the date today onwards for the usage cycle.
+    * Usage Notification: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
+        * Send Notification at: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
+        * Send to Users: Enter the email addresses of users who should receive the usage notification email.  
+        <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
+
+7. Click **Save**.
+
+8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.  
+  
+8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
 
 
@@ -206,15 +323,9 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
     5. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
     <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    6. The Connection Status pop-up appears.
+    6. The Connection Status pop-up is displayed.
         * If a connection is successful, click **Save**.  
-        <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-        <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-
-            !!! note
-
-                You can save the configuration with an unsuccessful connection.
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. .
 
     7. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
@@ -240,16 +351,9 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     6. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
     7. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
     <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    8. The Connection Status pop-up appears.
+    8. The Connection Status pop-up is displayed.
         * If a connection is successful, click **Save**.  
-        <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-        <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-
-            !!! note
-
-                You can save the configuration with an unsuccessful connection.
-
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.  
     9. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
 
@@ -266,19 +370,11 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     3. On the **Configuration** tab, enter the details like **Integration Name** and **Model Name**. Enter the variable for the **Endpoint** and **Headers**.  
     <img src="../images/customdynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-
     5. Enter the sample values for the endpoints and header values. Enter the test payload and then click **Test** to check the connection. You can also save the sample values and test payload using the check box.  
     <img src="../images/customvariable.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    6. The Testing Connection pop-up appears.
+    6. The Testing Connection pop-up is displayed.
         * If a connection is successful, click **Save**.  
-        <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-        * If a connection fails, hover over the warning icon to view the error.Click **Cancel** to go back to the previous step and update the details.  
-        <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-
-            !!! note
-
-                You can save the configuration with an unsuccessful connection.
-
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. 
     7. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
 
@@ -296,10 +392,10 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     3. On the **Authorization** tab, enter details like **Integration** **Name** and **Model Name**. Then, enter the variable for **AM Role ARN**, **Amazon STS API**, **Amazon Resource Name (ARN)**, **Endpoint**, and **Headers** (optional).  
     <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
     4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-    5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.  
-    <img src="../images/abr5.png" alt="Amazon Bedrock" title=" " style="border: 1px solid gray; zoom:70%;">
-    6. On a successful connection, the save option is enabled. 
-    7. Click **Save**. The configuration successful message is displayed.
+    5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. 
+    6. The Testing Connection pop-up is displayed.
+        * If a connection is successful, click **Save**.  
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection. 
     8. The next step is to add[ Prompts](prompts-library.md).
 <hr>
 
@@ -315,11 +411,11 @@ Steps to enable Kore.ai XO GPT Models.
 
 1. Go to **Generative AI Tools** > **Models Library**.
 
-2. Click **Enable Now** for Kore.ai XO GPT. If you have already configured a model, click **+ New Model > Kore.ai XO GPT**.  <img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
+2. Click **Enable Now** for Kore.ai XO GPT.  
    
  
 3. On the **Models** tab, toggle on the models as required.
-<img src="../images/xo-gpt-models.png" alt="Kore.ai XO GPT" title="Kore.ai XO GPT" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/new-xo-gpt-vdr-model.png" alt="Kore.ai XO GPT" title="Kore.ai XO GPT" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -346,7 +442,7 @@ When you reset/delete the integration, the system does the following:
 
     This change impacts only the in-development copy of the app. The changes will apply to the published version when you later publish the app with NLP configurations.
 
-=== "Reset Pre-build LLM Integration"
+=== "Reset Pre-build/Amazon Bedrock LLM Integration"
 
 
 
@@ -354,11 +450,8 @@ When you reset/delete the integration, the system does the following:
 
     1. Go to **Generative AI Tools** > **Models Library**.
     2. Click three dots (more icons) and then click the **Reset Configuration** for the model you want to reset. 
-    <img src="../images/reset-config.png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;"> 
 
     3. Click **Reset** in the confirmation dialog.  
-    <img src="../images/llm-integration(6).png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;"> 
-
 
     4. The success message is displayed.
 
@@ -368,12 +461,8 @@ When you reset/delete the integration, the system does the following:
 
     1. Go to **Generative AI Tools** > **Models Library**.
     2. Click three dots (more icons) and then click **Delete** for the integration you want to delete.
-    <img src="../images/reset-custom.png" alt="reset-custom" title="Delete Custom Model" style="border: 1px solid gray; zoom:70%;">
 
     3. Click **Delete** in the confirmation dialog.  
-    <img src="../images/llm-integration(16).png" alt="Delete Configuration" title="Delete Configuration" style="border: 1px solid gray; zoom:70%;">
-
-
 
     4. The success message is displayed.
 
@@ -383,10 +472,8 @@ When you reset/delete the integration, the system does the following:
 
     1. Go to **Generative AI Tools** > **Models Library**.
     2. Click three dots (more icons) for Kore.ai XO GPT and then click the **Reset Configuration** for the integration you want to reset.
-    <img src="../images/reset-xo.png" alt="Reset XO GPT" title="Reset XO GPT" style="border: 1px solid gray; zoom:70%;">
 
     3. Click Reset in the confirmation dialog.  
-    <img src="../images/image7-6.png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;">
 
     4. The success message is displayed.
 <hr>

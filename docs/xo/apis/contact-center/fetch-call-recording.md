@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Fetch Call Recording
 
 To retrieve the recording of a specific call using either the `userId` or `sessionId`.

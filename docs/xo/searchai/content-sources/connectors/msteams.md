@@ -88,7 +88,7 @@ Go to the **Connectors** home page in Search AI. Click on **Add Connector** and 
 
 After successfully connecting the Search AI connector to the MS Teams app, go to the **Configuration** tab and set up content synchronization. For immediate sync, use the **Sync Now** option and the **Schedule Sync** option to set up a scheduler to sync the content in the future. 
 
-Upon sync, Search AI ingests **conversations from the MS Teams channels for the past 30 days**. 
+Upon sync, Search AI ingests **conversations from the MS Teams channels for the past 90 days**. 
 
 When ingesting chat messages in an MS Teams channel, it is important to differentiate between direct messages and thread messages.
 

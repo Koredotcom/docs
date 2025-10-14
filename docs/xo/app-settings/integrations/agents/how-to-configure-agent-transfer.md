@@ -63,7 +63,7 @@ Let’s understand how the custom agent can be integrated and how it can improve
 
 8. Enter the Callback URL of your application to be invoked by BotKIt SDK events. Since we are using NGROK we will show how to obtain the callback URL:
     1. In a **Terminal** Window, start _ngrok_ to monitor port 8003 using the following command: `ngrok http 8003`.
-    2. Copy ngrok forwarding URL. It will be in the format – `http://XXXXXXaa.ngrok.io`.
+    2. Copy ngrok forwarding URL. It will be in the format – `https://XXXXXXaa.ngrok.io`.
 
         <img src="../images/configure agent-transfer-img2-ngrok.png" alt="NGROK" title="NGROK" style="border: 1px solid gray;zoom:50%;"/>
 

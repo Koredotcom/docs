@@ -325,11 +325,11 @@ The table below summarizes the available columns along with their supported oper
    <td rowspan="3" >
 <ul>
 
-<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="https://docs.kore.ai/agent-platformagents/overview/" target="_blank">Learn more</a>.</li>
+<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="../../../../ai-agents/tools/overview" target="_blank">Learn more</a>.</li>
 
-<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="https://docs.kore.ai/agent-platformplayground/using-prompt-studio/" target="_blank">Learn more</a>.</li>
+<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="../../../../prompts/using-prompt-studio" target="_blank">Learn more</a>.</li>
 
-<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="https://docs.kore.ai/agent-platformmodels/open-source-models/generate-an-api-key-open-source/" target="_blank">Learn more</a>.</li>
+<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="../../../../models/open-source-models/generate-an-api-key-open-source" target="_blank">Learn more</a>.</li>
 </ul>
    </td>
   </tr>
@@ -429,7 +429,7 @@ The following model run metadata helps analyze the model’s performance.
 **For Fine-tuned and Open-source Models**
 
 * **Request ID**: Unique identifier for the specific model request.
-* **Base model**: The Kore-hosted or imported model that executes the request.
+* **Base model**: The Platform-hosted or imported model that executes the request.
 * **Deployment name**: The deployment name of the model.
 * **Deployment version**: Version of the model deployed for the run.
 * **Response time**: Time taken by the model to generate a response.

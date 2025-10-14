@@ -100,8 +100,11 @@ For example, double-click the "content" key in the JSON structure and click **Sa
                 ![alt_text](images/prl(4).png  )
         3. Click **Save**. The actual response and expected response turn green.
 
-11. (Only for Agent Node) Enter the **Exit Scenario Key-Value fields** and **AI Agent Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. An AI Agent Response Key is available in the response payload to display the AI Agent’s response to the user.
-    ![alt_text](images/image1-8.png  )
+11. (Optional) If you have enabled Token Usage Limits for your Custom Model, map the Request Tokens key and Response Tokens key for accurate token tracking and Analytics. Without proper mapping, the Platform cannot calculate token consumption, potentially leading to untracked usage and unexpected costs.
+    * Request Tokens key: `usage.input_tokens`
+    * Response Tokens key: `usage.output_tokens`  
+    <img src="../images/token-mapping.png" alt="token mappingt" title="token mapping" style="border: 1px solid gray; zoom:70%;">
+
 12. Click **Save**. The request is added and displayed in the **Prompts Library** section.
 <img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
  

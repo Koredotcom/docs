@@ -12,7 +12,7 @@ Once the import is complete, the tool flow canvas is updated with the latest con
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Users with only <b>Viewer</b> permissions cannot import a tool.</p></div>
+<p>Users with only <b>Viewer</b> permissions can't import a tool.</p></div>
 
 ## Best Practices
 
@@ -20,7 +20,7 @@ Once the import is complete, the tool flow canvas is updated with the latest con
 
 * **Check the environment and load dependencies**: Ensure the new environment is set up with all required dependencies such as models, linked tools, and other configurations before importing. This helps ensure compatibility and smooth functionality after the import.
     * Verify that the correct model is already available in the new environment.
-    * Ensure any linked tools are already present in the new environment, by the same name as it is preferred for auto-linking.
+    * Ensure any linked tools are already present in the new environment, by the same name as it's preferred for auto linking.
     * Check environment variables and configuration files to prevent any mismatches.
 
 * **Import the parent tool and version**: After verifying the dependencies in the new environment, import the parent tool and any associated versions. Ensure there are no conflicts with existing tools.
@@ -108,9 +108,9 @@ To import a tool as a version, follow the steps below:
 
     <img src="../images/agent_platform/backup_tool.png" alt="import confirmation" title="import confirmation" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. <a href="https://docs.kore.ai/agent-platform/tools/export-a-tool/" target="_blank">Learn more</a></p></div>
+**NOTE**
+
+Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. [Learn more](export-a-tool.md){:target="_blank"}.
 
 If you choose not to back up/export the tool configurations, unselect the back-up option and proceed to the next step.
 

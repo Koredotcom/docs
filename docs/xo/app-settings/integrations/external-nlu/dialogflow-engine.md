@@ -30,7 +30,7 @@ The following steps explain how to create an agent, intent and test the configur
 
 6. Click **Save** to save the configuration.
 7. Go to **Training** in the left side menu and enter the intent name at **User Says**.  
-<img src="../images/external-nlu-dialogflow-engine-img5.png" alt="Go go Training and enter Intent name" title="Go go Training and enter Intent name" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/external-nlu-dialogflow-engine-img5.png" alt="Go to Training and enter Intent name" title="Go to Training and enter Intent name" style="border: 1px solid gray;zoom:50%;"/>
 
 8. Enter the intent name same as it is in the AI Agent, in the top most right corner of the page in **Try Now**, to test the Dialogflow configuration.
 9. The configured text response would be displayed under the **Default Response**.  

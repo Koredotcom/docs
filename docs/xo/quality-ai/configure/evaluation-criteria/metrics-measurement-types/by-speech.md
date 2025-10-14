@@ -1,6 +1,6 @@
 # By Speech Metric
 
-Speech evaluation metrics are used to assess agent performance during voice interactions in the contact center. This leverages the intelligent speech analytics to drive better conversations, coaching, and outcomes. These metrics enable supervisors and quality analysts to identify opportunities for coaching, improve customer experience, and ensure adherence to compliance standards.
+The By Speech metric is used to assess agent performance during voice interactions in the contact center. It leverages intelligent speech analytics to drive better conversations, coaching, and outcomes. These metrics enable supervisors and quality analysts to identify coaching opportunities, enhance the customer experience, and ensure compliance with regulatory standards.
 
 ## Why to Use
 
@@ -42,11 +42,11 @@ Before you configure speech metrics, ensure that:
 
 ## Access Evaluation Metrics
 
-Access **Evaluation Metrics** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics**.
+Access **Evaluation Metrics** by navigating to **Quality AI** > **Configure** > **Evaluation Metrics**.
 
 ## Configure By Speech Metrics
 
-1. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
+1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
 2. Click **+ New Evaluation Metric**.
 
@@ -60,21 +60,21 @@ Access **Evaluation Metrics** by navigating to **Contact Center AI** > **Quality
 
     * **Cross Talk**: Set the maximum number of instances. If the count exceeds this limit (the configured count), the metric fails. By default, the crosstalk duration is two seconds, but you can customize both the instance limit and duration.
 
-        * **Cross Talk Duration (Metric Qualification)**: This metric is included in the evaluation if the number of cross talk instances stays below the set limit. The system counts an occurrence as crosstalk if it meets or exceeds the configured duration. If the number of instances goes over the limit, the metric fails, and the agent is penalized.
+    * **Cross Talk Duration (Metric Qualification)**: This metric is included in the evaluation if the number of cross talk instances stays below the set limit. The system counts an occurrence as crosstalk if it meets or exceeds the configured duration. If the number of instances goes over the limit, the metric fails, and the agent is penalized.
 
     * **Dead Air**: This defines the period of silence during a contact center interaction when neither the customer nor the agent is speaking. By default, the minimum dead air time is 30 seconds, and the maximum is 300 seconds. It allows you to customize the instance limit and dead air duration.
 
-        * **Dead Air Time (Metric Qualification)**
+    * **Dead Air Time (Metric Qualification)**
 
-        The metric qualifies if the number of dead air instances is below the acceptable limit set in the configuration. If the number of instances exceeds the limit, the system marks the interaction as a failure for the dead air metric. An instance is counted as dead air if it exceeds the specified dead air duration.
-        <img src="../images/by-speech-deadair.png" alt="Dead air" title="Dead air" style="border: 1px solid gray; zoom:60%;"> 
+    The metric qualifies if the number of dead air instances is below the acceptable limit set in the configuration. If the number of instances exceeds the limit, the system marks the interaction as a failure for the dead air metric. An instance is counted as dead air if it exceeds the specified dead air duration.       
+    <img src="../images/by-speech-deadair.png" alt="Dead air" title="Dead air" style="border: 1px solid gray; zoom:60%;"> 
 
-        * **No. of Instances**: Enter the minimum allowed Cross Talk instances per second. 
+    * **No. of Instances**: Enter the minimum allowed Cross Talk instances per second. 
 
     * **Speaking Rate Violation**: This displays the average daily conversation sessions and comparison analysis for the selected period. A violation is flagged when the agent's speaking pace is outside the configured acceptable range. 
 
         * **Words Per Minute (WPM)**: Select the expected speaking rate. If the agent does not adhere to the configured rate, the system marks the metric as failed.  
-<img src="../images/by-speech-speakingrate-violation.png" alt="Speaking Rate" title="Speaking Rate" style="border: 1px solid gray; zoom:60%;"> 
+        <img src="../images/by-speech-speakingrate-violation.png" alt="Speaking Rate" title="Speaking Rate" style="border: 1px solid gray; zoom:60%;"> 
 
 5. Click **Create** to save the new metric for the Speech.
 
@@ -83,7 +83,7 @@ Access **Evaluation Metrics** by navigating to **Contact Center AI** > **Quality
 Steps to edit or delete any existing **By Speech** evaluation metrics:
 
 1. Right-click on a desired evaluation metric name under the **By Speech** category.  
-<img src="../images/by-speech-edit-del.png" alt="Edit Metric" title="Edit Metric"   style="border: 1px solid gray; zoom:70%;">    
+<img src="../images/by-speech-edit.png" alt="Edit Metric" title="Edit Metric"   style="border: 1px solid gray; zoom:70%;">    
 
 2. Choose an option:
 

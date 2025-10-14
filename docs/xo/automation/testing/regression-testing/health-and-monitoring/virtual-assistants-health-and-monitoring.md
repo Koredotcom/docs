@@ -147,7 +147,7 @@ The **NLP Analysis** section displays the detailed view of the historic analysis
 
 * [Traits](../../../natural-language/training/traits.md){:target="_blank"} (if applicable)
 * [Machine Learning (ML) engine](../../testing-your-bot-with-nlp.md#ml-model){:target="_blank"}
-* [Fundamental Meaning (FM) engine](../../../testing-your-bot-with-nlp/#fm-model){:target="_blank"}
+* [Fundamental Meaning (FM) engine](../../testing-your-bot-with-nlp.md#fm-model){:target="_blank"}
 * [Knowledge Graph (KG) engine](../../testing-your-bot-with-nlp.md#knowledge-graph){:target="_blank"}
 * [Trait Rule](../../../natural-language/training/traits.md#trait-association-rules){:target="_blank"} (if applicable)
 * [Ranking and Resolver](../../testing-your-bot-with-nlp.md#ranking-and-resolver)
@@ -266,7 +266,7 @@ table, th, td {
   <tr>
    <td><strong>Parent Intent</strong>
    </td>
-   <td><a href="../../../intelligence/sub-intents-and-follow-up-intents.md" target="_blank">Learn more</a>.
+   <td>An output context is added to the parent intent and an input context of the same name is added to the newly created child intent.
    </td>
    <td>Yes
    </td>
@@ -280,7 +280,7 @@ table, th, td {
    </td>
    <td>The status of the intent or task against which the intent is identified. Possible values include <strong>Configured</strong> or <strong>Published</strong>.
 <br>
-.
+
    </td>
    <td>Yes
    </td>
@@ -307,11 +307,11 @@ table, th, td {
    <td>Displays the individual scores for the following
 <ul>
 
-<li><a href="../../testing-your-bot-with-nlp.md#ml-model" target="_blank">Machine Learning (ML) score</a>
+<li>Machine Learning (ML) score
 
-<li><a href="../../testing-your-bot-with-nlp.md#fm-model" target="_blank">Fundamental Meaning (FM) score</a>
+<li>Fundamental Meaning (FM) score
 
-<li><a href="../../testing-your-bot-with-nlp.md#ranking-and-resolver" target="_blank">Ranking and Resolver (RR) score</a>
+<li>Ranking and Resolver (RR) score
 </li>
 </ul>
    </td>
@@ -325,7 +325,7 @@ table, th, td {
   <tr>
    <td><strong>Entity Name</strong>
    </td>
-   <td>Please refer to Entities in <a href="#navigating-to-the-test-case-details-section">this</a> section..
+   <td>Please refer to Entities in <a href="#navigating-to-the-test-case-details-section">this</a> section.
    </td>
    <td>No
    </td>
@@ -433,7 +433,7 @@ The **FAQ Summary** section displays the [recommendation scores](#health-and-mon
 
 <img src="../images/hm-19.png" alt="Report" title="Report" style="border: 1px solid  gray; zoom:50%;"/>  
 
-**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](../../../../../answers/knowledge-ai/knowledge-graph-analysis){:target="_blank"}.  
+**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](../../../knowledge-ai/knowledge-graph-analysis.md){:target="_blank"}.  
 <img src="../images/hm-20.png" alt="Knowledge Graph button" title="Knowledge Graph button" style="border: 1px solid  gray; zoom:50%;"/>
 
 
@@ -448,7 +448,7 @@ Please refer to this [link](flow-health-dashboard.md#faqs-summary){:target="_bla
 ### NLP- Small Talk Summary
 
 The **Small Talk Summary** panel displays the [recommendation scores](#health-and-monitoring-metrics) generated for Small Talk interactions from the latest batch test executions.  
-<img src=../images/hm-22.png alt="Small Talk Summary" title="Small Talk Summary" style="border: 1px solid  gray; zoom:50%;"/>  
+<img src="../images/hm-22.png" alt="Small Talk Summary" title="Small Talk Summary" style="border: 1px solid  gray; zoom:50%;"/>  
 
 
 **Small Talk button**: Click this button to view the group name and the relevant user utterances, and Bot utterances.  
@@ -474,7 +474,7 @@ The **Trait Summary** and **Entity Summary** sections display the [recommendatio
 
 **Test Coverage and Test Results Analysis**
 
-Please refer to [Test Coverage](#test-coverage) and [Test Results Analysis](#nlp-test-results-analysis) for information on the sub-sections of these summary panels.
+Please refer to [Test Coverage](#test-coverage) and [Test Results Analysis](#viewing-specific-test-results) for information on the sub-sections of these summary panels.
 
 
 ## NLP Batch Test Results Summary for Universal Bots

@@ -1,3 +1,5 @@
+--8<-- "includes/agentai-api-back-link.md"
+
 # Conversation Summary Trigger API
 
 This API triggers a conversation summary event in the Agent AI system. It is used to send event data related to a conversation to the specified AI Agent.
@@ -6,7 +8,7 @@ This API triggers a conversation summary event in the Agent AI system. It is use
 |------------------|----------------------------------------------------------------------|
 | **Endpoint**     | `https://{{host}}/api/v1/public/bot/{{botId}}`                       |
 | **Content Type** | `application/json`                                                   |
-| **Authorization**| `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token) |
+| **Authorization**| `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
 
 ### Path Parameters
 

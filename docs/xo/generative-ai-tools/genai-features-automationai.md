@@ -59,7 +59,7 @@ When enabled, this feature lets you add an Agent Node to Dialog Tasks. This node
 
 When creating or editing a Dialog Task that’s created manually or[ auto generated](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called Agent Node within your nodes list. 
 
-When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../automation/use-cases/dialogs/node-types/genai-node-v2.md).
+When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../automation/agent-node/working-with-agent-node.md).
 
 
 ## Prompt Node
@@ -91,7 +91,7 @@ If this feature is disabled, you can't configure the ML model to build custom pr
 
 ## Repeat Responses
 
-This feature uses LLM to reiterate the recent app responses when the Repeat Response event is triggered. Platform user's can enable the event and customize the trigger conditions. This empowers end-users to ask the app to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](../automation/intelligence/event-handling.md#repeat-bot-response-event).
+This feature uses LLM to reiterate the recent app responses when the Repeat Response event is triggered. Platform user's can enable the event and customize the trigger conditions. This empowers end-users to ask the app to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.
 
 
 
@@ -101,7 +101,7 @@ This feature uses LLM to reiterate the recent app responses when the Repeat Resp
 The Response Rephrasing feature in AI for Service improves an AI Agents
 conversations by making them more natural, human-like, and emotionally intelligent. It supports rephrasing for both standard and structured content types, including JSON and JavaScript, and gives you flexible control over which parts of a conversation to rephrase.
 
-The system sends all User Prompts, Error Prompts, and app Responses—along with the conversation context, to the LLM. Responses are rephrased in English or the selected app language, using contextual and emotional cues to create a more empathetic and natural user experience.
+The system sends all User Prompts, Error Prompts, and app Responses along with the conversation context, to the LLM. Responses are rephrased in English or the selected app language, using contextual and emotional cues to create a more empathetic and natural user experience.
 
 The Default_V2 system prompt introduces support for advanced content formats and a wider range of response types, enabling more natural and consistent outputs. This prompt is available exclusively with the OpenAI GPT-4o model. Starting with the v10.14 release, all newly created custom prompts use the V2 format by default. Existing custom prompts remain fully functional and require no modifications.
 
@@ -128,7 +128,7 @@ Use the Advanced Settings panel to configure how the system rephrases responses 
 <img src="../images/rr-featurelevel.png" alt="Rephrase Responses" title="Rephrase Responses" style="border: 1px solid gray; zoom:70%;">
 
 
-For more settings, see [Change Settings for a Pre-built Model](#change-settings-for-a-pre-built-model).
+For more settings, see [Change Settings for a Pre-built Model](genai-features.md#change-settings-for-a-pre-built-model).
 
 
 
@@ -215,7 +215,7 @@ Before performing utterance testing, the user selects the **Zero-shot Model** Ne
 
 The identified intent is then displayed as the matched intent.
 
-If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai).
+If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../automation/natural-language/training/machine-learning-engine.md#zero-shot-model).
 
 ## Few-shot ML Model
 
@@ -375,20 +375,11 @@ This feature lets you generate test cases based on the NLU Language selected, an
 
 If this feature is disabled, you won't have the option to generate test cases during batch testing.[ Learn more.](../automation/testing/regression-testing/batch-testing.md#generating-test-cases-automatically)
 
-
-
-
-
 ## Training Utterance Suggestions
 
 This feature generates a list of suggested training utterances and NER annotations based on the selected NLU language for each intent description and Dialog Flow, eliminating the need for manual creation.
 
-
-
 <img src="../images/cpf(3).gif" alt="Training Utterance Suggestions" title="Training Utterance Suggestions" style="border: 1px solid gray; zoom:70%;">
-
-
-
 
 
 **Usage**
@@ -406,7 +397,7 @@ Once you request to generate utterances for a given intent, the Platform provide
 
 You can add/delete the suggested training utterances from the list or generate more suggestions.
 
-If this feature is disabled, you won’t see the Suggestions tab on the training page.[ Learn more.](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#Automatically_Generate_Utterance_Suggestions)
+If this feature is disabled, you won’t see the Suggestions tab on the training page.[ Learn more](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks).
 
 ## Use Case Suggestions
 
@@ -432,7 +423,7 @@ LLM and Generative AI help generate accurate suggestions automatically without c
 
 
 
-1. The user initiates a new standard an AI Agent creation on the the Platform.
+1. The user initiates a new standard an AI Agent creation on the Platform.
 2. The user provides the App Name and selects the following:
     * Purpose 
     * _Standard App_ for **App Type**.

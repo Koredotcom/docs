@@ -32,24 +32,24 @@ The following table displays the features and the supported models.
 
 ### Agent Empathy Identification
 
-Identify instances of agent empathy where customers have expressed negative sentiment through Quality AI using LLMs. [Learn more](../quality-management/analyze/conversation-intelligence.md#insights-mining).
+Identify instances of agent empathy where customers have expressed negative sentiment through Quality AI using LLMs. [Learn more](../quality-ai/analyze/conversation-intelligence.md#insights-mining).
 
 
 
 
 ### By Value Adherence validation for Quality AI
 
-Validates data adherence by comparing extracted metric values against reference data using multilingual LLM analysis. Performs precise value matching and returns binary adherence scores for each metric.
+Validates data adherence by comparing extracted metric values against reference data using multilingual LLM analysis. Performs precise value matching and returns binary adherence scores for each metric. [Learn more](../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-value.md).
 
 
 ### By Value metric extraction for Quality AI
 
-Extract by value metric from user/AI Agent/human agen messages through Quality AI using LLMs.
+Extract by value metric from user/AI Agent/human agent messages through Quality AI using LLMs. [Learn more](../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-value.md).
 
 
 ### Churn & Escalation Identification
 
-Utilize LLMs to identify agent crutch word usage in customer conversations using Quality AI. [Learn more](../quality-management/analyze/conversation-intelligence.md#customer-churn-monitor).
+Utilize LLMs to identify agent crutch word usage in customer conversations using Quality AI. [Learn more](../quality-ai/analyze/conversation-intelligence.md#customer-churn-monitor).
 
 ### Conversation Phase Identification
 
@@ -60,12 +60,12 @@ Post conversation phase identification for phase level sentiment trajectory and 
 
 ### Crutch Word Usage Detection
 
-Use LLMs to detect agent crutch word usage in customer conversations through Quality AI. [Learn more](../quality-management/analyze/conversation-intelligence.md#crutch-word-score).
+Use LLMs to detect agent crutch word usage in customer conversations through Quality AI. [Learn more](../quality-ai/analyze/conversation-intelligence.md#crutch-word-score).
 
 
 ### Default Script Adherence
 
-Determine agent adherence to default script steps across greeting, branding, privacy policy, customer verification, hold etiquette, and call closing through Quality AI's conversation Intelligence dashboard using LLMs. [Learn more](../quality-management/analyze/conversation-intelligence.md#script-and-playbook-adherence).
+Determine agent adherence to default script steps across greeting, branding, privacy policy, customer verification, hold etiquette, and call closing through Quality AI's conversation Intelligence dashboard using LLMs. [Learn more](../quality-ai/analyze/conversation-intelligence.md#script-and-playbook-adherence).
 
 
 
@@ -73,12 +73,12 @@ Determine agent adherence to default script steps across greeting, branding, pri
 
 ### GenAI-based agent answer adherence and customer trigger detection
 
-Utilize LLMs to verify agent adherence and detect customer triggers without requiring configuration of utterances or training. [Learn more](../quality-management/configure/evaluation-criteria/metrics-measurement-types/by-question.md).
+Utilize LLMs to verify agent adherence and detect customer triggers without requiring configuration of utterances or training. [Learn more](../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-question.md).
 
 
 ### Generating Similar QM Utterance Suggestions
 
-Utilize LLM to generate similar phrases during the design phase, focusing on semantic similarity. [Learn more](../quality-management/configure/evaluation-metrics.md).
+Utilize LLM to generate similar phrases during the design phase, focusing on semantic similarity. [Learn more](../quality-ai/configure/evaluation-metrics.md).
 
 
 
@@ -86,9 +86,10 @@ Utilize LLM to generate similar phrases during the design phase, focusing on sem
 
 ### Sentiment Analysis
 
-Agents will be able to monitor customer sentiment dynamically during active chat conversations. When enabled, this feature displays a sentiment indicator that updates in real-time based on ongoing analysis of the conversation.
+Agents will be able to monitor customer sentiment dynamically during active chat conversations. When enabled, this feature displays a sentiment indicator that updates in real-time based on ongoing analysis of the conversation. [Learn more](../quality-ai/ai-assisted-manual-audit.md).
+
 
 
 ### Topic Modelling
 
-Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs. [Learn more](../quality-management/analyze/conversation-mining-interactions.md#intent).
+Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs. [Learn more](../quality-ai/analyze/conversation-mining-interactions.md#intent).

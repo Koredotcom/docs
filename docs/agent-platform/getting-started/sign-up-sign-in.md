@@ -1,6 +1,6 @@
 # Platform Availability and Access
 
-The Kore.ai Agent Platform is currently available on our US Cloud at [https://agent-platform.kore.ai](https://agent-platform.kore.ai){:target="_blank"}. To request access for your customers, partners, or prospects, [contact Kore.ai sales team](https://kore.ai/contact-us/){:target="_blank"}.
+The Agent Platform is currently available on our US Cloud at [https://agent-platform.kore.ai](https://agent-platform.kore.ai){:target="_blank"}. To request access for your customers, partners, or prospects, [contact the Sales team](https://kore.ai/contact-us/){:target="_blank"}.
 
 
 

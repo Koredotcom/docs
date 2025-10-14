@@ -18,7 +18,7 @@ The Platform supports ~30 [entity types](../entity-types.md){:target="_blank"} s
 Setting up an entity node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the **Entity** node.
-2. Add the entity node in the designated place. For information on adding nodes, [refer here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
+2. Add the entity node in the designated place. For information on adding nodes, [Add a Node](../using-the-dialog-builder-tool.md){:target="_blank"}.
 3. The Entity window is displayed with the **Component Properties** tab selected by default.
 
 <img src="../images/entity-node-img1.png" alt="Entity node" title="Entity node" style="border:1px solid gray;zoom:70%;">
@@ -57,7 +57,7 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
             
             <img src="../images/entity-node-img2.png" alt="Entity node - Reorder error messages" title="Entity node - Reorder Error messages" style="border:1px solid gray;zoom:70%;">
 
-6. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
+6. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
 <img src="../images/re-responses.png" alt="Rephrase Responses" title="Rephrase Responses" style="border:1px solid gray;zoom:70%;">
 
 7. Under **Redaction of PII Data**, you can configure how the value of this entity is presented if it is identified as PII data and used in defining any messages or responses:
@@ -108,10 +108,10 @@ Use the Instance Properties to determine whether to make the entity value mandat
 1. On the Entity window, click the **Instance Properties** tab.
 2. Under the **User Input** section, select one of the following options:
     * **Mandatory**: This entity is required, and users must provide a valid entry before proceeding with the dialog flow. A prompt is displayed for the user to resolve in case ambiguous values for the entity are detected in the user utterance.
-        * You can configure the number of times the user would be prompted for this entity value by setting the number of **Allowed Retries** to any value between 1 and 5, the default being 5.
-        * Allowed Retries indicates that the Platform re-prompts the user for the correct input if the input provided does not match the configured entity type. For example, if the user inputs an email ID for the zip code entity type, the system prompts the user up to 5 times until the user provides the zip code. Once the 5 retries are exhausted, the **Behavior on Exceeding Retries** flow is initiated.
-        * For voice channels, when a user input does not match the entity type, and a Node Grammar is defined, the Platform applies the retry count set for “**No Match**” under **Voice Call Properties**. Otherwise, the Platform follows the retry count set for “**Allowed Retries**” under Instance Properties.
-        * Further, you can define the AI Agent’s **Behavior on Exceeding Retries**, this can be set to trigger _End of Dialog_ or _Transition to a Node_. This would result in the creation of a **Connection Rule** called _Behavior on Exceeding Retries_. The message displayed to the user on exceeding retries can be customized from the Standard Responses. [Read more here](../../../intelligence/conversation-management/standard-responses.md){:target="_blank"}.
+        * **Allowed Retries**: Set the maximum number of times (1-5, default is 5) a user is prompted for a valid input.  
+        **How it works**: When a user provides an invalid input (e.g., entering an email address instead of a zip code), the Platform re-prompts them for correct input. If the Allowed Retries is 5, the user receives up to 5 total prompts to provide a valid input. After all prompts are exhausted without a valid input, the "Behavior on Exceeding Retries" flow is initiated.
+        * **Voice channel exception**: For voice channels, when user input doesn't match the entity type AND a Node Grammar is defined, the Platform applies the retry count set for "No Match" under Voice Call Properties instead of the "Allowed Retries" setting under Instance Properties.
+        * **Behavior on Exceeding Retries**: Define what happens when all retry attempts are exhausted by selecting either End of Dialog or Transition to a Node. This creates a Connection Rule called "Behavior on Exceeding Retries." You can customize the message displayed when retries are exceeded from the Standard Responses. [Read more here](../../../intelligence/conversation-management/standard-responses.md){:target="_blank"}.
 
     * **Optional**: The user is prompted only once for this entity and the system proceeds with any input provided by the user. In case ambiguous values for these optional entities are detected in the User Utterance, then a resolution prompt is displayed allowing the user to pick the correct value.  
     You can set a value under the **Default Value** field. This value would be assigned to this entity when the task execution reaches this entity and the user does not provide any value when prompted, and if no value is available from previous utterances.

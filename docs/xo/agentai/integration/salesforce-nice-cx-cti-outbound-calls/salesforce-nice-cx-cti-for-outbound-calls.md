@@ -527,7 +527,7 @@ Create a Lightning tab by following the instructions in this [document](https://
 
 ### Enabling OAuth
 
-1. Go to **Setup** > **OAuth and OpenID Connect Settings** and enable **Allow OAuth Username-Password Flows**.  
+1. Go to **Setup** > **OAuth and OpenID Connect Settings** and enable **Allow OAuth Username-Password Flows**.      
 <img src="../images/enable-allow-oauth-password-20.png" alt="enable-allow-oauth-password" title="enable-allow-oauth-password" style="border: 1px solid gray; zoom:80%;"> 
 
 2. Create a connected Salesforce app and get the **Access Key** and **Access Token**. Follow [this guide](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&language=en_US&type=5){:target="_blank"} for help.
@@ -564,7 +564,7 @@ Open the Studio, import the above script, and customize as per the following tab
 <li>The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this custom data will be accessible in the UserContext of the AI Agent.</li> 
 <ul>
  
-<li>Refer to “<a href="https://https://docs.kore.ai/xo/agentai/agent-experience/access-custom-data-in-agent-ai/">Access Custom Data in Kore AI Agent</a>” for instructions on how to access customdata in the AI Agent.</li> 
+<li>Refer to [Access Custom Data in Kore AI Agent](../../agent-experience/access-custom-data-in-agent-ai.md)” for instructions on how to access customdata in the AI Agent.</li> 
 </ul></li> 
 </ul>
    </td>

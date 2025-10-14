@@ -27,8 +27,7 @@ Contextual metadata is transferred from the Agent Platform to AI for Service usi
         ordernumber: {{memory.orderDetails.orderNumber}}
         userPreferences: {{memory.sessionMeta.userPref}}
         ```
-[Learn more](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/settings/events/#agent-handoff-event).
-
+[Learn more](../settings/events.md#agent-handoff-event).
 
 ### Step 2: Handle the metadata in AI for Service Experience Flow
 

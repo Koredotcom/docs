@@ -20,7 +20,7 @@ The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to
 
 #### Model Configuration
 
-The Agent Node supports variants of LLM, including OpenAI, Azure OpenAI, Amazon Bedrock, and Custom LLM. To learn more, see [Model and Supported Features](../../generative-ai-tools/genai-features.md#model-and-supported-features---automation-ai).
+The Agent Node supports variants of LLM, including OpenAI, Azure OpenAI, Amazon Bedrock, and Custom LLM. To learn more, see [Model and Supported Features](../../generative-ai-tools/genai-features.md#automation-ai-genai-features).
 
 
 #### Prompt Setup

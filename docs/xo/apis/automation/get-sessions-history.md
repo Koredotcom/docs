@@ -1,3 +1,4 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Sessions History API
 
@@ -133,7 +134,7 @@ curl --location --request POST 'https://{{host}}/api/public/bot/{{BotId}}/getSes
      --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
      --header 'Content-Type: application/json' \
      --data-raw '{
-        "sessionId": ["6465cf6e4769ed4e822b82a1","6465cf6e47Q9ed4e822b82a1"]
+        "sessionId": ["6465cf6e4769ed4e822bxxxx","6465cf6e47Q9ed4e822bxxxx"]
      }
 ```
 
@@ -427,10 +428,10 @@ For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calcula
     "moreAvailable": false,
     "sessions": [
         {
-            "sessionId": "6465cf6e4769ed4e822b82a1",
-            "botId": "st-dc600cf5-b1c5-581e-a2c3-eb81fe39c927",
+            "sessionId": "6465cf6e4769ed4e822bxxxx",
+            "botId": "st-dc600cf5-b1c5-581e-a2c3-eb81fe39xxxx",
             "channel": "rtm",
-            "userId": "u-8c4ca335-3152-5622-9cbb-51c6daf6c12f",
+            "userId": "u-8c4ca335-3152-5622-9cbb-51c6daf6xxxx",
             "start_time": "2023-05-18T07:10:38.695Z",
             "end_time": "2023-05-18T07:10:39.201Z",
             "session_lang": [
@@ -449,7 +450,7 @@ For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calcula
         }
     ],
     "invalidSessions": [
-        "6465cf6e47Q9ed4e822b82a1"
+        "6465cf6e47Q9ed4e822bxxxx"
     ]
 }
 

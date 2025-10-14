@@ -2,15 +2,7 @@
 
 A Knowledge Tool connects your Agentic application to a **Search AI application** within the **same workspace.** This integration enables the agent to retrieve accurate, context-aware responses by leveraging indexed content.
 
-## Knowledge Page
-
 To manage these tools, go to the **Knowledge** page of your Agentic App. This page offers a structured view of all knowledge bases connected to the app, providing clear visibility into their total count, associated agents, and easy access from one central location.
-
-Key highlights
-
-* Displays the total number of knowledge bases in the section header.
-* Shows clear empty-state actions to guide first-time users: **Create from Scratch** and **Create from Existing Sources**.
-* Ensures knowledge bases are easily discoverable and manageable.
 
 <img src="../images/knowledge-listing-page.png" alt="Knowledge Listing Page" title="Knowledge Listing Page" style="zoom:70%; border: 1px solid gray;">
 
@@ -88,7 +80,15 @@ Click **Create**. This action creates a new Search AI application within the sam
 
 [Learn More.](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"}
 
-## Unlinking the Knowledge Base
+## Test the Knowledge Base
+
+Before finalising the tool, you can test its functionality directly within the Agentic App to ensure it works as expected. Click **Test your knowledge base**, and provide the required input parameters. View the generated sample response to verify the correct execution of the tool.
+
+The response includes both the script output and detailed logs. These logs provide visibility into the underlying SearchAI operations and can be used to troubleshoot errors, analyse performance, and refine query behaviour. Users can update the configurations on the left-hand side, selecting chunks, answers, or both, and the responses are generated accordingly based on these choices.
+
+![Test the Knowledge Base](images/test-knowledgebase-tool.png "Test the Knowledge Base")
+
+## Unlink the Knowledge Base
 
 To remove the knowledge tool from the Agentic app, go to the Knowledge page and delete the knowledge tool. This removes the integration from the given agentic app. The integration can still be found on the Search AI page and can be associated with any agentic app.
 

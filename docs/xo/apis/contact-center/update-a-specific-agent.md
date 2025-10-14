@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Update a Specific Agent
 
 To update the details of a particular agent with the given `streamId` and `agentId`.

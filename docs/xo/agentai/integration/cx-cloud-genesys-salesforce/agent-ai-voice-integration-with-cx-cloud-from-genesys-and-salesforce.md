@@ -238,7 +238,7 @@ If you are using Kore-managed transcriptions, the final step is to install Audio
         2. Use the following references from **Agent AI** > **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** page to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
         <img src="../images/agent-ai-botid-client-id-client-secret-36.png" alt="agent-ai-botid-client-id-client-secret" title="agent-ai-botid-client-id-client-secret" style="border: 1px solid gray; zoom:80%;">  
 
-        3. Follow the steps of [Using XO Platform APIs](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token), Kore.ai Documentation, to generate the token (token= &lt;token>.) 
+        3. Follow the steps of [Using XO Platform APIs](../../../apis/automation/api-introduction.md/#generating-the-jwt-token), Kore.ai Documentation, to generate the token (token= &lt;token>.) 
 
 7. Add credentials in the **Credentials** tab.  
 <img src="../images/credentials-tab-37.png" alt="credentials-tab" title="credentials-tab" style="border: 1px solid gray; zoom:80%;">  

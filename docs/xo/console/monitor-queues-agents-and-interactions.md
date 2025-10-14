@@ -1,4 +1,4 @@
-# Monitor Queues, Agents, and Interactions
+# Monitor Queues, Agents, Interactions, and Service Levels
 
 To access the **Monitor** section, you must be an _App Owner, App developer, App Tester,_ or _Supervisor_; or have the _Monitor Console –_ permission set to _Yes_. See [Role Management](../user-management/role-management.md#permissions) for more.
 
@@ -163,6 +163,60 @@ Steps to change the queue for a conversation:
 ### View Voicemails
 
 When a call is converted to a voicemail, it can be viewed in the Monitor tab. Supervisors can view voicemails in waiting status and “Assign” to an agent or “Change Queue”.
+
+### Transfer all Calls/Chats/Emails in Agent Queue
+
+Supervisors can transfer or end multiple conversations at once across all supported digital channels, including chat, email, and voice. It improves workload management by allowing bulk actions directly from the Monitor tab. By default, the option is disabled for Agents and Custom roles. Supervisors, Admins, Owners, and App Developers can access the feature when permissions are explicitly granted—role-based permissions control access.
+
+Steps to transfer all Calls/Chats/Emails in Agent Queue:
+
+1. Open the **Monitor** tab.
+2. Select a queue. A panel appears with all active and waiting conversations.
+3. Click the **⋮** menu in the top-right corner of the panel.
+4. Choose one of the following options:
+    * Transfer Conversation
+    * Force Close  
+        <img src="../images/transfer-options (2).png" alt="Transfer Options" title="Transfer Options" style="border: 1px solid gray; zoom:70%;">
+
+#### Transfer Conversations
+
+1. Selecting Transfer Conversations activates multi-selection mode.
+2. Select one or more conversations. An option to select all or clear the selection is available.  
+    <img src="../images/select-conversations.png" alt="Select Conversations" title="Select Conversations" style="border: 1px solid gray; zoom:70%;">
+
+!!! Note
+
+    At least one conversation must be selected to proceed.
+
+3. A bottom action bar appears, displaying a **"Transfer"** button.
+4. From the queue dropdown, choose a destination queue.  
+    <img src="../images/select-queue (2).png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
+5. Click **Transfer**. The selected conversations are reassigned to the chosen queue. \
+    <img src="../images/transfer.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:70%;">
+
+#### Force Close
+
+1. Selecting Force Close activates multi-selection mode.
+2. Select one or more conversations.
+
+!!! Note
+
+    * At least one conversation must be selected to proceed.  
+    * When a conversation is force-closed—either individually or through a bulk action—a system-generated disposition is automatically attached to the conversation. This behavior applies to both indefinite and timed slot release scenarios.  
+    * If an agent has already selected a disposition for a conversation before it is force-closed, the agent-selected disposition will not be saved. The system-generated disposition will be applied instead.
+
+3. A bottom action bar appears, displaying a Force Close button.
+4. Click **Force Close**.  
+    <img src="../images/force-close.png" alt="Forece Close" title="Force Close" style="border: 1px solid gray; zoom:70%;">
+5. A confirmation pop-up is displayed. Click **Confirm**. The selected conversations are closed across their respective channels.  
+    <img src="../images/confirm-close.png" alt="Confirm Close" title="Confirm Close" style="border: 1px solid gray; zoom:70%;">
+
+#### Post-Action Behavior
+
+After completing the transfer or end actions, the interface:
+
+* Exits selection mode.  
+* Updates the conversation list.  
 
 ## Agents
 
@@ -505,4 +559,29 @@ Steps to edit a filter:
 2. A Delete Filter message appears. Click **Delete**.  
     <img src="../images/delete-filter-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation message is displayed and the filter is deleted.  
+    A confirmation message is displayed and the filter is deleted.
+
+## Service Levels
+
+This section enables supervisors to  monitor service-level targets based on specific needs.
+
+To monitor service levels, go to Console > Monitor > SERVICE LEVELS.  
+<img src="../images/service-levels-dashboard.png" alt="Service Levels Dashboard" title="Service Levels Dashboard" style="border: 1px solid gray; zoom:80%;">
+
+The dashboard displays the following information:
+
+**Queues**: Name of the Queue for which the service levels are shown.
+
+**Average Speed to Answer (ASA)**: The average time it takes for agents to answer inbound customer contacts (such as calls or chats) after they enter the queue. It measures the responsiveness of the contact center.
+
+**Response Service Level (SL)**: The percentage of inbound customer contacts answered by agents within a predefined threshold time. It reflects how consistently the contact center meets its response time targets.
+
+**Abandonment Rate**: The percentage of inbound customer contacts (calls, chats, or emails) that customers disconnect or leave before reaching an agent or completing self-service.
+
+**Transfer Rate**: The percentage of customer contacts that agents transfer to another agent, department, or queue after initially answering the interaction.
+
+### Filters
+
+Supervisors can create, edit, copy, mark as default, and delete filters to customize the view of service level metrics.
+
+For information on configuring Service Levels, refer to [SLAs & Alerts](../contactcenter/performance-management/slas-and-alerts.md).

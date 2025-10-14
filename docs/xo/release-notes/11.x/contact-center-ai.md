@@ -2,6 +2,108 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.18.0 September 27, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Extend Sentiment Analysis to Voice and Email Channels**
+
+Sentiment analysis is extended to voice and email interactions for a unified experience. Voice sentiment is derived from transcribed text, and email sentiment comes from the message body. Results follow the same visualization as chat and are available in the Agent Desktop, Monitor tab, and Dashboards. The enhancement reuses the existing Sentiment Analysis setting in Advanced Settings, with no new configuration required. When disabled, no data is captured; when enabled, sentiment is consistently available for chat, voice, and email. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#real-time-sentiment-capture)
+
+**Maximize External Widgets**
+
+Contact Center agents can maximize external widgets in the Console to view and interact with their full content. A Maximize button opens the widget in a resizable, draggable overlay within the interface, while the original layout remains unchanged. Only one widget can be expanded at a time, and it stays on top while switching conversations, automatically updating content for the active conversation. Minimizing or closing the widget returns it to its original size and position, improving accessibility and efficiency without altering supervisor-configured layouts. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#maximize-external-widgets)
+
+**Email Resend Capability**
+
+Agents and supervisors can resend emails directly from the Console. The “Resend” button opens the email composer with the original content and recipient prefilled, allowing edits to the message body or attachments before sending. Resent emails retain formatting and references, are sent as new interactions, and are linked to the original email in the timeline for audit and traceability, improving efficiency and communication accuracy. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+<font size="4">Configuration</font>
+
+**Conditional Group Routing (CGR)**
+
+Conditional Group Routing (CGR) dynamically expands the pool of agents across queues to optimize utilization and reduce customer wait times. Administrators can configure rule-based sharing of agents between queues within the same division, using KPIs such as Estimated Wait Time (EWT) and Average Handle Time (AHT), combined with real-time agent availability. The system evaluates rules sequentially and in real-time, incrementally adjusting the agent pool, enforcing wait periods, and optimizing assignments to maintain service levels. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md#queue-routing-modes)
+
+**Honor Agent Wait Time Before Queue Timeout**
+
+A new toggle in **Agent Settings** → **Answer Mode** ensures conversations honor the full agent wait timeout before applying the queue wait timeout. When enabled, the queue timeout pauses while the conversation waits for agent acceptance, preventing premature closures. By default, the toggle is disabled for backward compatibility. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#honor-agent-wait-before-queue-timeout)
+
+**Remove Chats When Disconnected in Queue and Control Interruption Messages**
+
+Administrators can now configure separate timers for customer interruptions: one for chats in queue (default: 30 seconds) and another for after the agent accepts the call. Disconnected chats while in the queue are removed from the agent tray based on the configured queue timer. Disconnected chats after an agent has handled them remain in the agent tray for the duration set under Customer Interruption after agent transfer. Interruption messages for customers and agents can be enabled, disabled, or customized as needed. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#conversation-statuses-by-channel-live-chat-messaging-and-voice)
+
+**Application-Level System Settings for Call Recording and Other Agent Controls**
+
+Key settings, including Call Recording Control and Answer Call on First AI Agent Response, are now moved to System Settings, enabling cross-product access for customers. LLM Streaming flag removed from Advanced Settings. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/system-settings.md)
+
+**SLA Configuration UI Revamp**
+
+The SLA configuration screen now opens as an inline overlay for consistency with other configuration screens, allowing users to add, edit, and delete SLAs while retaining all existing functionality and validations. [Learn more :octicons-arrow-right-24:](../../contactcenter/performance-management/slas-and-alerts.md)
+
+**Removal of Inbound Option from User Attributes**
+
+The Inbound option in **User Attributes** → **Enable Voice** has been removed as inbound voice calls are always enabled for all users. Its removal simplifies the configuration experience, with no impact on existing functionality. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#chat-voice)
+
+<font size="4">Campaigns</font>
+
+**Voice Campaigns: Support for Experience Flows Without Phone Numbers**
+
+Voice campaigns can now be associated with experience flows that do not include phone numbers, extending support to agentless, progressive, and preview campaigns. The Caller ID dropdown lists all eligible outbound-only and inbound-outbound numbers, regardless of flow association. For active, scheduled, or paused campaigns, linked numbers and flows cannot be deleted. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md)
+
+<font size="4">Analytics</font>
+
+**Change Logs for Contact Center AI**
+
+The Contact Center AI logs are now integrated into the Change Logs under **App Settings** → **App Profile**. All CCAI log entries generated after the cutover date are stored in this new repository and displayed in the proper format, including the app name. The Admin Console’s Audit Log will no longer capture CCAI activity after the cutover date; older entries remain accessible there for reference. This ensures a clear separation between Admin Console operations and Contact Center AI change tracking. [Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
+
+**Latency Report (Beta)**
+
+The Latency Report provides visibility into ASR, Bot, TTS, and end-to-end delays at node and call levels. Users can generate latency data for specific calls by enabling the relevant call control parameters, and only these calls will offer the option to download the Latency Report. Administrators can apply threshold-based filters to identify calls that exceed defined latency values. The report is available in CSV format, with key fields including Session ID, Agent, Queue, CSAT, and latency metrics. A new option in the Interactions page allows downloading a component-wise latency report for detailed analysis of delays. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/latency-report.md)
+
+**Debug Log for Flows**
+
+Contact Center AI nodes now support debug logging within the Flow Builder, extending the existing debug log functionality. Users can view detailed, real-time logs for each step in a flow, including timestamps, step names, input/output data, error messages, and context variables, similar to those found in automation nodes. Logs cover triggers, node execution, task assignments, notifications, digital forms, human tasks, actions taken, and flow completion. [Learn more :octicons-arrow-right-24:](../../contactcenter/flows-and-routing/debugging-and-troubleshooting.md)
+
+**Bulk Transfer and End of Calls, Chats, and Emails in Agent Queues**
+
+App Owner, Administrators, Supervisors, and App Developers can bulk transfer or end multiple conversations across chat, email, and voice channels directly from the Monitor tab. Users can select a queue, view active conversations, and perform multi-selection to transfer conversations to another queue or end them with a confirmation. This update streamlines workload management, improves operational flexibility, and reduces manual effort in handling agent queues. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#transfer-all-callschatsemails-in-agent-queue)
+
+<font size="4">API</font>
+
+**Secure Forms and PII Data Access Using GetMessagesV2 API**
+
+The GetMessagesV2 API has been enhanced to support secure access to form data. In the GET method, a new query parameter `includeSecureForm` is included, and in the POST method, a new field `includeSecureForm` is included in the request body. When enabled, both options include the form inputs submitted by users in the response, extending access to secure form and PII data. [Learn more :octicons-arrow-right-24:](../../apis/automation/conversation-history.md)
+
+**Campaign Creation API: Support for SIP Numbers as Caller ID**
+
+The Campaign Creation API now supports using pre-registered SIP numbers as Caller ID across all dialing modes. This enhancement expands flexibility in configuring Caller ID for campaigns, allowing SIP phone numbers to be set in addition to existing options.
+
+<hr>
+
+## v11.17.1 September 15, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Analytics</font>
+
+**Obscuring Customer Information in Interactions Dashboard, Export, and Details Slider**
+
+New advanced settings enable customers to control how end-user information appears in the Interactions dashboard. Three configuration options are available:  
+
+* **Replace Customer Column with User ID on main page** – displays the User ID instead of email or phone in the dashboard.  
+* **Disable Userinfo tab in Details slider** – hides the Userinfo tab from the Details slider.  
+* **Replace Customer Column with User ID in export file** – shows User ID instead of email or phone in exported reports.  
+All options are disabled by default, and customers who do not enable them will see no change in behavior. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md)  
+<img src="../images/obscure-rn.png" alt="Obscuring Customer Information" title="Obscuring Customer Information" style="border: 1px solid gray; zoom:70%;">
+
+<hr>
+
 ## v11.17.0 August 23, 2025
 
 <u>Minor Release</u>
@@ -283,11 +385,11 @@ New status and reason values (for example, No Answer, Busy, Network Failure, Ans
 
 **Start and Stop Campaigns**
 
-This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
+This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#campaign-management-apis)
 
 **Campaign Status and Results**
 
-This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-status)
+This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#campaign-status)
 
 **Add and Retrieve Contacts in Contact Lists**
 
@@ -295,7 +397,7 @@ These APIs enable the management of contacts in Contact Lists programmatically.
 
 * The `POST` API allows adding up to 100 contacts per call using `ContactListID`, supporting mapped and unmapped fields.
 * The `GET` API retrieves all contacts with pagination support (`skip`, `offset`, `hasMore`). Duplicate handling follows the list’s append-and-duplicate configuration, which is fixed at creation.  
-[Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
+[Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#contact-list-management)
 
 **Create, Retrieve, and Delete Campaigns**
 
@@ -303,7 +405,7 @@ Introduced APIs for complete Campaign lifecycle management. These APIs can be us
 
 * Create campaigns by specifying configuration such as channel, flow name, contact list, DNC list, priority, caller ID, and retry logic.
 * Retrieve all stored properties of a campaign using its Campaign ID.
-* Remove a campaign using its Campaign ID. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
+* Remove a campaign using its Campaign ID. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#campaign-management-apis)
 
 These APIs support both Agentless Voice and SMS (Simple/Advanced) campaign types. Campaigns created via API remain fully accessible and manageable through the UI.
 
@@ -313,7 +415,7 @@ Added support for managing Contact Lists via public APIs, including a new type: 
 
 * Create a contact list by specifying `Contact List Name`, `Type`, and `DuplicateCheck`.
 * Retrieve all metadata for contact lists (excluding contact data).
-* Delete a contact list along with all its contacts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
+* Delete a contact list along with all its contacts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#contact-list-management)
 
 These APIs enable users to automate contact list creation and management without requiring the use of the UI.
 
@@ -498,7 +600,7 @@ Campaign Managers can now configure voice campaigns using API-based contacts for
 
 **Updated API Endpoint Naming for Export/Import**
 
-The public Export and Import APIs now use corrected endpoint names that follow proper naming conventions. This change ensures clarity, consistency, and easier integration for developers using these APIs. Existing functionality remains unchanged; only endpoint paths have been updated for accuracy and clarity. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#importexport-data-apis)
+The public Export and Import APIs now use corrected endpoint names that follow proper naming conventions. This change ensures clarity, consistency, and easier integration for developers using these APIs. Existing functionality remains unchanged; only endpoint paths have been updated for accuracy and clarity. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/api-list.md#importexport-data-apis)
 
 <hr>
 
@@ -1037,7 +1139,7 @@ Administrators can enable this functionality through Agent Settings. By default,
 
 **Enhanced Call Connection**
 
-Calls now connect within 3 seconds when agents click the **Accept** button on their console. The default message, **“Thank you for waiting…”**, will only play after an agent successfully connects to the call. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#call-acceptance-behaviour)
+Calls now connect within 3 seconds when agents click the **Accept** button on their console. The default message, **“Thank you for waiting…”**, will only play after an agent successfully connects to the call. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md)
 
 <font size="4">Configuration</font>
 
@@ -1054,7 +1156,7 @@ Key Updates:
 * Custom Domain Setup:
     * “Add Domain” button for custom email domain configuration.
     * Domain ownership verification through email login test.
-    * Tabular display of custom domains with associated email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#create-a-custom-domain)
+    * Tabular display of custom domains with associated email addresses.
 * Improved User Interface: Clear organization of Kore and custom domain settings.
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
@@ -1071,8 +1173,6 @@ Key Updates:
 * **Verification Process**: The system checks incoming email addresses against the blocklist.
 * **Automated Response**: Disables pre-configured automations for blocklisted addresses and prevents automated agent transfers for blocklisted interactions.
 * **Normal Processing**: Non-blocklisted emails proceed through the usual automation and transfer processes.
-
-[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#email-blocklist)
 
 <font size="4">Analytics</font>
 
@@ -1135,8 +1235,6 @@ Each tracked detail includes the following:
 * Event Type
 * Involved Agents/Supervisors
 * Detailed Event Description
-
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
 
 <font size="4">Voice Gateway (v0.9.3-rc4)</font>
 
@@ -1839,7 +1937,7 @@ Using this feature, agents can do the following:
 * Select a portion of their text and add a hyperlink to it.
 * Remove the hyperlink if they change their mind.
 * Add hyperlinks for HTTP and HTTPS URLs.
-* Add hyperlink actions for email (mailto:a@b.com). Clicking the link opens the associated mail app.
+* Add hyperlink actions for email (`mailto:a@b.com`). Clicking the link opens the associated mail app.
 * Customize the display text of the hyperlink.
 * Display the full URL when an agent hovers over the hyperlink. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md)
 
@@ -1898,13 +1996,13 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 
 * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
 * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
-* Up to 25 conversations can be selected for exporting transcripts. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
+* Up to 25 conversations can be selected for exporting transcripts.
 
 **Display Agent and Disposition Notes in Search Results on the Interactions Tab**
 
 Dashboard > Interactions
 
-Agent notes and Disposition notes are now displayed in the search results on the Interactions tab. 
+Agent notes and Disposition notes are now displayed in the search results on the Interactions tab.
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-interactions)
 
 ## v11.1.1 May 11, 2024
@@ -2062,5 +2160,7 @@ The key features and experience changes are summarized below.
 
     * **Settings**: The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.  
     <img src="../images/xo-platform-cc-setting.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:70%;"> 
-    
-[Learn more about Contact Center AI features :octicons-arrow-right-24:](../../contactcenter/about-contact-center-ai.md)
+
+<hr>
+
+[Learn more about Contact Center AI features :octicons-arrow-right-24:](../../contactcenter/about-contact-center-ai.md){:target="_blank"}

@@ -54,7 +54,7 @@ In the following procedure, the cloud-based connection settings dialogs are desc
 1. On the **Connection** tab, define the following fields:  
 <img src="../images/synchronizing-users-from-active-directory-img2.png" alt="Connection tab" title="Connection tab" style="border: 1px solid gray;zoom:70%;"/>
 
-2. **Host Name** – The name of the domain host, for example, MyCompany.com or 10.12.6.151.
+2. **Host Name** – The name of the domain host, for example, www.iana.org or 10.12.6.151.
 3. **Server Port** – The port number for the domain host, for example, 10042.
 4. **Base DN** – The server location for users and groups in a domain, for example, dc=kore,dc=com.
 5. **User ID** – The username for authentication to connect to the domain controller.

@@ -1,10 +1,12 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Import data by accountId and orgId (v2)
 
 To save/import data, which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience), by giving details with the `accountId` and `orgId`.
 
 !!! Note
 
-    This version will be deprecated soon. Please use [Version 2](./import-or-save-data-by-giving-details-v2.md) of this API.
+    This API is applicable post v11.13.0 release.
 
 | **Property**     | **Value**                                                                                                                                                                                                 |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

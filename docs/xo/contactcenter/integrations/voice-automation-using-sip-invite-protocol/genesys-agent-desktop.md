@@ -17,7 +17,7 @@ This document contains a step-by-step process of handing over a call (via SIP IN
 
 1. Sign in to **[AI for Service](https://platform.kore.ai/){:target="_blank"}**.  
 2. Go to **Contact Center AI** > **Flows & Channels**.  
-3. Click **Start Flows** > **+New Start Flow**. Follow [this doc](https://docs.kore.ai/xo/flows/create-flows/){:target="_blank"} to create a new flow.  
+3. Click **Start Flows** > **+New Start Flow**. Follow [this doc](../../../flows/create-flows.md){:target="_blank"} to create a new flow.  
 <img src="../images/new-start-flow-1.png" alt="new-start-flow" title="new-start-flow" style="border: 1px solid gray; zoom:80%;">  
 
 4. In **Experience Flow**, add a **script node** and add the “*agentUtils.setAgentTranscribe({transcribe: true});”* code.  
@@ -37,15 +37,19 @@ This document contains a step-by-step process of handing over a call (via SIP IN
 
 2. Click **Voice** > **SIP Transfer**. 
 
-    **SIP Transfer Method** : SIP INVITE 
-    **SIP Transfer URI**: It should be in **“sip:+[12345678999@koreSmartassist.byoc.mypurecloud.com](mailto:12345678999@koreSmartassist.byoc.mypurecloud.com)”** format, where **+12345678999** is a DID number created in Genesys and **[koreSmartassist.byoc.mypurecloud.com](koreSmartassist.byoc.mypurecloud.com)** is theFQDN method of Genesys external trunk. 
+    **SIP Transfer Method** : SIP INVITE
+    **SIP Transfer URI**: It should be in `sip:+[12345678999@koreSmartassist.byoc.mypurecloud.com` format, where `+12345678999` is a DID number created in Genesys and `koreSmartassist.byoc.mypurecloud.com` is the FQDN method of Genesys external trunk.
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>The details of the above credentials are available in the [Genesys configuration](#step-5--trunk) section.</p>
+    <p>The details of the above credentials are available in the [Genesys configuration](#step-5-trunk) section.</p>
     </div>  
 
     <img src="../images/sip-transfer-5.png" alt="sip-transfer" title="sip-transfer" style="border: 1px solid gray; zoom:80%;">  
+
+    !!! note
+        
+        Using the SIP Invite method, you can pass these SIP headers to Genesys. Header keys must not contain spaces. Genesys allows reading up to 10 SIP headers using the **Get SIP Header** node in Architect/Callflow.
 
 ## Genesys Side Configuration for Agent Transfer (Kore to Genesys) 
 
@@ -95,8 +99,14 @@ In this section, create a new Inbound Call Flow to transfer the inbound calls fr
 
 9. Add at least one **Transfer to ACD** node and point it to the queue you want to use for agents.  
 10. At the end of **Failure**, add a **Disconnect** node.  
-11. Once the flow is ready, save and publish the Architect Flow.  
+11. Once the flow is ready, save and publish the Architect Flow.
 
+    !!! note
+    
+        You can also extract and view all the available SIP headers here. Refer to the following screenshot for more details: 
+
+    <img src="../images/sip-headers.png" alt="sip-headers" title="sip-headers" style="border: 1px solid gray; zoom:80%;"> 
+    
 ### Step 3 – DID Numbers  
 
 You need a DID Number that is internally routable inside Genesys.   
@@ -115,7 +125,7 @@ For **Service Provider**, use **Internal** and add a comment on what the range i
 
 **DID Assignments**    
 
-Assign the number you created to the Call Route from [Step-4](#step-4--call-route). 
+Assign the number you created to the Call Route from [Step-4](#step-4-call-route). 
 
 * Assignee Type: Call Flow
 * DID Number: Your number 
@@ -130,7 +140,7 @@ Assign the number you created to the Call Route from [Step-4](#step-4--call-rout
 
     <img src="../images/create-call-route-14.png" alt="create-call-route" title="create-call-route" style="border: 1px solid gray; zoom:80%;">   
 
-3. Set up a call route to map the DID Number created in [Step-3](#step-3--did-numbers) to the call flow created in [Step-2](#step-2--architect-flow).   
+3. Set up a call route to map the DID Number created in [Step-3](#step-3-did-numbers) to the call flow created in [Step-2](#step-2-architect-flow).   
 
 ### Step 5 – Trunk  
 
@@ -159,7 +169,7 @@ Configure a trunk that connects the Kore session border controller (SBC) for you
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>You must add this FQDN Method URL (sip:+xxxxxxxxxxx@koreSmartassist.byoc.mypurecloud.com) to the Contact Center AI side **Agent Transfer** [step](#configure-agent-transfer).</p>
+    <p>You must add this FQDN Method URL (`sip:+xxxxxxxxxxx@koreSmartassist.byoc.mypurecloud.com`) to the Contact Center AI side **Agent Transfer** [step](#configure-agent-transfer).</p>
     </div>    
 
 12. In the **SIP Access Control** field, add the AI for Service prod voice gateway IPs. This IP address varies based on the regions:   
@@ -199,11 +209,11 @@ You must use the same automation bot that was used in the CCAI Automation Flow f
 
 ### Follow the documentation for Agent AI integration with Genesys  
 
-Follow steps 1-4 of [AgentAssist Integration with Genesys - Manual Setup Instructions](https://docs.kore.ai/agentassist/integration/agentassist-integration-in-genesys-manual-steps/){:target="_blank"} for the Agent AI integration.   
+Follow the steps of [Agent AI Integration with Genesys Cloud CX](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md){:target="_blank"} for the Agent AI integration.   
 
 **Configuration Notes**:  
 
-1. While adding the Agent AI bot credentials in step-4 of [AgentAssist Integration with Genesys - Manual Setup Instructions](https://docs.kore.ai/agentassist/integration/agentassist-integration-in-genesys-manual-steps/){:target="_blank"}, make sure to add the details of the bot added in the [previous step](#add-the-bot).  
+1. While adding the Agent AI bot credentials in [Agent AI Integration with Genesys Cloud CX](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md){:target="_blank"}, make sure to add the details of the bot added in the [previous step](#add-the-bot).  
 
 2. In this step-4, add a new field in the Genesys data table with the following details:   
 Name: **isSipInviteTransferFromKore**  

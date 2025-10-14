@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Channel Enablement API
 
 To initiate enable a channel for an AI Agent.

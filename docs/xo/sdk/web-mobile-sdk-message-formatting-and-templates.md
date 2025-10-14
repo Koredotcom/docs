@@ -134,7 +134,7 @@ The Platform supports three new templates for the web/mobile client as part of t
 
 While configuring the feedback survey, when the user selects a template, it’s available as an override for the web/mobile client in the dialog. The system presents the selected template configured for the survey when collecting feedback from the customer on the web/mobile client. These templates are available as generic templates during feedback survey configuration in the channel template override section.
 
-**NPS**Displays a dialog with a scoring scale from 0-10 for the customer to select. Each score icon appears in a different color, with **0** being the lowest and **10** being the highest rating. This template allows only one score selection by the customer.
+**NPS** Displays a dialog with a scoring scale from 0-10 for the customer to select. Each score icon appears in a different color, with **0** being the lowest and **10** being the highest rating. This template allows only one score selection by the customer.
 
 **Required Parameters**
 
@@ -891,10 +891,10 @@ You can apply your formatting directly in JavaScript using the Platform markdown
 
 * **Bold** – *text to be bolded* Do not add spaces after or before the ” * ” symbol. For example, `Here is *bold*.`
 * **Italic** – ~test to be italicized~ Do not add spaces after or before the ” ~ ” symbol. For example, `Here is ~italics~.` Preceeding and succeeding _ will also italicise the enclosed text, i.e. `Here is _italics_.`
-* **Link** – [Text for the link here](http://myCompany.com) For example, `Here is a link to [Kore.ai.com](https://kore.ai/).`
+* **Link** – [Text for the link here](https://iana.org) For example, `Here is a link to [Kore.ai.com](https://kore.ai/).`
 * **New Line** – \n One line indention.
 * **Multi Line** – \n\n\n Three line indentions.
-* **Image** – ![Text for the link here](http://myCompany.com) For example, `![My image](http://d1hqmx8kqvpnpa.cloudfront.net/f-eeca5df3-7580-5a09-9aa3-09f809b44ac4.png)`
+* **Image** – ![Text for the link here](https://iana.org) For example, `![My image](https://d1hqmx8kqvpnpa.cloudfront.net/f-eeca5df3-7580-5a09-9aa3-09f809b44ac4.png)`
 * **List** –
     * **Unordered Bulleted List** – * Text for the list time  Add a space after the ” * ” symbol.
         * `* This is an example of an unordered list Bullet 1.`
@@ -1000,7 +1000,7 @@ var message = {
   };
 print(JSON.stringify(message)) ;
 ```
-![Custom Like Dislike template](images/web-mobile-message-templates/custom-like-dislike-template.png "Custom Drop-down list template")
+
 
 
 
@@ -1058,4 +1058,4 @@ print(JSON.stringify(message));
 
 !!! note
 
-    To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](automation/use-cases/dialogs/prompt-editor.md).
+    To understand customized JavaScript responses and channel-specific templates, refer to [JavaScript Prompts or Responses](../automation/use-cases/dialogs/prompt-editor.md).

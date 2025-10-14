@@ -4,10 +4,10 @@ Voice Gateway is a comprehensive voice automation solution that manages inbound 
 
 This section covers the fundamental steps required to set up and configure your Voice Gateway for basic operation.
 
-Go to **The Product (For example, Automation AI/ Contact Center AI)** > **Flows & Channels** > **Channels** > **Voice Gateway**.  
+Go to The Product (For example, Automation AI/ Contact Center AI) > Flows & Channels > Channels > Voice Gateway.  
 <img src="../images/vg-page.png" alt="Voice Gateway Page" title="Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
 
-## Initial Setup
+## Configuration
 
 ### Buy New Phone Number
 
@@ -89,7 +89,7 @@ This option is useful when transferring calls to Contact Center AI from a toll-f
 
 Under the SIP Trunk tab, you can configure the network IPs and domains, DID number, SIP transport protocol, SIP credentials (optional), and Inbound/Outbound direction for phone numbers while the SIP URI is pre-configured.
 
-Agent Assist supports real-time audio streaming through two primary methods: 
+Agent AI supports real-time audio streaming through two primary methods:  
 
 * **SIPREC (SIP Recording)**: Agent Assist acts as a SIPREC server, receiving duplicated audio streams from the contact center platform or a Session Border Controller (SBC). 
 
@@ -100,7 +100,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
 1. Click **Configure SIP Trunk**.  
     <img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;"> 
 
-2. On the **Configure SIP Trunk** page, configure the following: 
+2. On the **Configure SIP Trunk** page, configure the following:  
     1. **Product Selection**: Select the product for which the SIP Trunk is being configured. You can select from the following options:
         * <a href="#ccai">Contact Center AI</a>
         * <a href="#agentai">Agent AI</a>
@@ -145,8 +145,8 @@ Agent Assist supports real-time audio streaming through two primary methods:
             * X-AgentLastName: {{agentLastName}}
 
             !!! note
-            
-                The caller number specified in the [Script Task](https://docs.kore.ai/xo/flows/node-types/script-task/) is passed through the SIP headers when a third-party desktop application transfers the call to an agent. 
+
+                The caller number specified in the [Script Task](../../flows/node-types/script-task.md) is passed through the SIP headers when a third-party desktop application transfers the call to an agent. 
 
         <span id="agentai">If you select **Agent AI**</span>: 
 
@@ -182,7 +182,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
 
         * <span id="websocket">If you select **WebSocket**:</span>
 
-            * **Connection URL (Generate URL)**: Copy the auto-generated URL and paste it into your third-party desktop configuration settings. 
+            * **Connection URL (Generate URL)**: Copy the auto-generated URL and paste it into your third-party desktop configuration settings.  
             * **Agent AI Initiated transcription**: Enable or disable auto transcription. When disabled, transcription starts automatically when an RTP stream is received at Kore’s SBC level. 
             * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. These recorded calls can be accessed through a public API. 
             * **Call control parameters**: Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](./../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters).
@@ -245,7 +245,9 @@ Steps to delete a SIP number:
 
 3. The sip number is deleted.
 
-## Voice Preferences
+## ASR and TTS
+
+### Voice Preferences
 
 This section outlines the steps to configure Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) for your Voice Gateway. You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking **Manage**.  
     <img src="../images/voice-preference.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
@@ -282,6 +284,10 @@ Steps to configure Voice Preferences:
 
     <img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:80%;">
 
+!!! Note
+
+    If a “TTS ERROR” appears when you dial a Voice Call and execute the Start Flow attached to an automation, the issue might occur because the voice name is not properly selected in the configuration. Even if you select a voice and save the changes, the system might not register the selection. Reselect the voice and make a small edit in the flow description (for example, add or remove a character). This action prompts the system to recognize the change and ensures that the TTS functions correctly and the audio plays as expected.
+
 ### Configure ASR (Automatic Speech Recognition)
 
 #### Configure Primary and Fallback ASR/TTS
@@ -313,7 +319,7 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
 
 !!! Note
       
-      * This feature is available only in ‘SmartAssist’ and not implemented in ‘XO11’. We will implement it in the next releases. 
+      * This feature is available only in ‘SmartAssist’ and not implemented in ‘AI for Service’. We will implement it in the next releases. 
       * For now, you can add Primary & Fallback ASR/TTS from the same vendor only.
          * Example: If you have selected the ‘Microsoft Azure Speech Services’ vendor as the ASR, you can enter a label name from the Microsoft vendor itself, such as ‘my_azure-US’.
          * You can configure the label name in Primary ASR/TTS configuration and Fallback ASR/TTS configuration under Show Advanced Settings.
@@ -332,72 +338,122 @@ Voice Gateway supports integration with third party ASR, TTS, and Voice Biometri
 
 The following languages and dialects are supported:
 
-<table>
-  <tr>
-   <td>
-    English (Australia)
-   </td>
-   <td>
-    English (Nigeria)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Canada)
-   </td>
-   <td>
-    English (Pakistan)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Ghana)
-   </td>
-   <td>
-    English (Philippines)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Hong Kong)
-   </td>
-   <td>
-    English (Singapore)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (India)
-   </td>
-   <td>
-    English (South Africa)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Ireland)
-   </td>
-   <td>
-    English (Tanzania)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (Kenya)
-   </td>
-   <td>
-    English (United Kingdom)
-   </td>
-  </tr>
-  <tr>
-   <td>
-    English (New Zealand)
-   </td>
-   <td>
-    English (United States)
-   </td>
-  </tr>
-</table>
+| English (Australia)   | English (Nigeria)        |
+|-----------------------|--------------------------|
+| English (Canada)      | English (Pakistan)       |
+| English (Ghana)       | English (Philippines)    |
+| English (Hong Kong)   | English (Singapore)      |
+| English (India)       | English (South Africa)   |
+| English (Ireland)     | English (Tanzania)       |
+| English (Kenya)       | English (United Kingdom) |
+| English (New Zealand) | English (United States)  |
+
+## Best Practices
+
+### Multi-Language App Setup
+
+This guide details the process for setting up a multilingual App that can switch languages based on the caller's selection. We'll cover the steps for both the **Experience Flow** (how the call is routed) and the **Dialog Flow** (how the AI Agent responds).
+
+### Understanding the Use Case
+
+The primary goal is to let a caller choose their preferred language (for example, by pressing a number on their phone) and have the AI Agent immediately start communicating with them in that language. This ensures a smooth, user-friendly experience from the very first interaction.
+
+Steps to configure a Multilingual App:
+
+### Step 1: Add Languages to Your Platform
+
+Before you can use a language in an APP, you need to enable it on the platform.
+
+1. Log to AI for Service and click the **Product Switcher**.
+2. Go to **Settings** > **Language Management**.
+3. Click **+ Add Language** and select the languages your AI Agent will support, such as English, Hindi, and Telugu.  
+    <img src="../images/language-management.png" alt="Language Management" title="Language Management" style="border: 1px solid gray; zoom:70%;">
+
+### Step 2: Configure the Flow
+
+The Flow is the first part of your journey, where you'll present the caller with language options and then set the chosen language.
+
+#### The DTMF Approach (IVR Menu)
+
+The most common way to let a caller choose a language is through an **Interactive Voice Response (IVR)** menu.
+
+1. Create a new Flow.
+2. After the Start node, drag and drop an [IVR Menu](../../flows/node-types/ivr-menu.md) node.
+3. In the IVR Menu node, create prompts for each language option (for example, "Press 1 for English," "Press 2 for Hindi," "Press 3 for Telugu").  
+    <img src="../images/ivr-menu.png" alt="IVR Menu" title="IVR Menu" style="border: 1px solid gray; zoom:70%;">
+
+4. For each language option, connect the number key (for example, "1") to a new [Script node](../../flows/node-types/script-task.md). This is the key step where the language will be set.  
+    <img src="../images/ivr-digit.png" alt="IVR Digit Input" title="IVR Digit Input" style="border: 1px solid gray; zoom:70%;">
+
+5. For each Script node:
+    * Assign a name, such as 'Set Language to English'.
+    * In the **'Define a Script'** section, add the following code, replacing '&lt;language code>' with the correct lowercase code for that language:
+    * JavaScript
+
+        `agentUtils.setBotLanguage('&lt;language code>');`
+
+        * Example for English: `agentUtils.setBotLanguage("en");`
+        * Example for Hindi: `agentUtils.setBotLanguage("hi");`
+        * Example for Telugu: `agentUtils.setBotLanguage("te");`
+
+    <img src="../images/script-node.png" alt="Script Node" title="Script Node" style="border: 1px solid gray; zoom:70%;">  
+
+!!! Note
+
+    Use two-letter language codes in **lowercase**. For example, use "en", not "EN",  "hi", not "HI", 
+
+6. Connect all nodes to a **Run Automation** node. This will trigger the main part of your AI Agent's logic, the Dialog Flow.
+
+7. Inside the Run Automation node:
+
+    * Under Automation AI options, select Run a specific Dialog.  
+    * Choose the Dialog Flow you've built for your AI Agent.  
+        <img src="../images/run-specific-dialog.png" alt="Run Specific Dialog" title="Run Specific Dialog" style="border: 1px solid gray; zoom:70%;">
+
+    * Configure ‘Agent Transfer’ under ‘Connection Rules’.  
+    * Reference configuration of the entire flow.  
+        <img src="../images/reference-config.png" alt="Reference Config" title="Reference Config" style="border: 1px solid gray; zoom:70%;">
+
+### Step 3: Configure the Dialog Flow
+
+The Dialog Flow is the AI Agent's conversation logic. Ensure the AI Agent's responses are in the correct language.
+
+1. Open the Dialog Flow you connected in the previous step.
+2. The platform allows you to configure different languages within the same flow. Look for a **language selector** on the app header.  
+    <img src="../images/language-selector.png" alt="Language Selector" title="Language Selector" style="border: 1px solid gray; zoom:70%;">
+
+3. Select a language (for example, Hindi) from the dropdown. Now, any text you add to nodes will be associated with this language.
+4. For each node (like a **Message** node or **Entity** node), enter the text in the selected language.
+
+    **Example:** For a Message node, if you've selected Hindi, you'll enter the Hindi text in the "Bot Response" box.  
+    <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:70%;">
+
+5. Repeat this process for every language that the AI Agent supports. Switch the language selector and add the corresponding text for each node. This makes it easy to manage a single flow with all language variations.
+
+#### Advanced Configuration (ASR & TTS)
+
+For more precise control, you can customize the Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) settings for each language.
+
+1. In a specific Dialog Flow node (for example, a Message or Entity node), click the IVR Properties tab.
+2. You can set specific call control parameters that override the default settings. This is useful for:  
+
+* Using a different TTS provider or voice in a particular language.  
+    <img src="../images/tts-provider.png" alt="TTS Provider" title="TTS Provider" style="border: 1px solid gray; zoom:70%;">  
+
+* Choosing a different ASR provider that's better at understanding a particular accent or language.  
+    <img src="../images/asr-provider.png" alt="ASR Provider" title="ASR Provider" style="border: 1px solid gray; zoom:70%;">  
+
+For more details on these advanced settings, refer to the [Call Control Parameters](../voice-gateway/speech-customization.md#supported-call-control-parameters).
+
+### Step 4: Publish and Test
+
+Once the Flow and Dialogs are configured, publish the flows and perform thorough testing. Dial the number and ensure that the language selection works correctly and that the AI Agent responds in the chosen language.
+
+!!! Note
+
+    Double-check that the language codes are in lowercase in the script node and that you've configured both the IVR and the Run Automation nodes correctly.
+
+The multi-lingual behavior can also be achieved with **Automatic Language Detection** based on the caller's speech.
 
 ## Voice Call Properties (Account Level)
 

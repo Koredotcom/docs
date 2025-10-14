@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Delete a Skill Group
 
 To delete the particular skill group with the given `streamId` and `skillGroupId`.

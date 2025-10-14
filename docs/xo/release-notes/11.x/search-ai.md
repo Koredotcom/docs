@@ -2,6 +2,45 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.18.0 September 27, 2025
+
+<u>Minor Release</U>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">Dynamic Custom Data Support in Business Rules</font>
+
+Users can now define Business Rules using the customData fields sent via the Advanced Search API. During rule evaluation, context.customData is dynamically bound to the API payload, enabling rules to adapt in real-time based on the provided custom data.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/business-rules.md)
+
+<hr>
+
+## v11.17.1 September 15, 2025
+
+<u>Patch Release</U>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">Index Configuration Enhancements</font>
+
+The Vector Configuration page now offers more flexibility when working with custom embedding models and prompts for both text and visual content. 
+
+Key improvements:
+
+* Separate Models and Prompts for Text & Image: Users can now configure distinct embedding models and prompts for text and image vectors. Image embeddings are managed using the *Vector Generation – Image* feature, while text embeddings are handled by *Vector Generation – Text.* The appropriate model is automatically determined based on the chunk extraction method. 
+* Simplified Prompt and Model management: Users can now configure and edit prompts directly in the Search AI UI, streamlining the setup process.
+* Conditional Custom Prompt UI: The updated interface allows for the creation of new custom prompts directly when a custom model is selected for vector generation.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/index-configuration.md)
+
+
+<font size="4">Change Log Support for Public API Events</font>
+
+The enhanced Change Logs now capture events triggered via the public API. This ensures complete visibility into system activity, enabling users to track, audit, and troubleshoot changes with a unified record of events, whether performed through the UI or programmatically.
+
+<hr>
+
 ## v11.17.0 August 23, 2025
 
 <u>Minor Release</U>
@@ -396,7 +435,7 @@ The Custom LLM feature now supports Vector Generation in Search AI, allowing use
 
 The new Custom Extraction feature in Search AI enables a tailored approach to extracting content from sources. It sends ingested content to a third-party service, which processes and returns the extracted data in a structured chunk format. This enhances flexibility in handling diverse content extraction needs and ensures improved data retrieval and indexing within Search AI.
 
-[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md#custom-extractionbeta)
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md#custom-extraction)
 
 <font size="4">Answer Insights</font>
 

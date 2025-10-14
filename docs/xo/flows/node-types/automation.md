@@ -28,8 +28,8 @@ The Dynamic Routing maintains two key indexes:
 ## Full Autonomy
 
 Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths. This flow leverages Agentic Apps to dynamically understand, plan, and execute actions based on user queries without relying on defined workflows. 
-It intelligently manages context, retrieves relevant information, and orchestrates multi-step tasks to deliver accurate and personalized responses.
- [Learn More](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/overview/).
+It intelligently manages context, retrieves relevant information, and orchestrates multi-step tasks to deliver accurate and personalized responses. [Learn More](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/overview/).
+
 
 ## Configure Automation Node
 

@@ -96,7 +96,7 @@ or
 <br>
 https://{tenant}.service-now.com/api/now/v1/table/incident
 <br>
-For more information, see <a href="../../../automation/use-cases/using-session-and-context-variables.md" target="_blank">Using Session and Context Variables in Tasks</a>.
+</a>
    </td>
   </tr>
   <tr>
@@ -119,6 +119,7 @@ For more information, see <a href="../../../automation/use-cases/using-session-a
   </tr>
 </table>
 
+For more information, see [Using Session and Context Variables](../../../automation/use-cases/using-session-and-context-variables.md).
 
 ## Defining Tenancy
 

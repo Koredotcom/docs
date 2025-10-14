@@ -136,6 +136,10 @@ Dispositions are displayed to the agent when the call ends.
 
 A campaign automatically ends once all numbers are connected. If a call is not connected, the dialing rules, such as retry waiting periods are checked. The number is redialed after all other records have been attempted. The maximum number of attempts for each contact is set. For example, If a contact's max attempt is 1, it won't be retried. If it's 2, the contact is marked as Retry = yes and will be retried as per the configured logic.
 
+!!! Note
+
+    For all voice campaigns (agentless, progressive, and preview), experience flows and caller IDs (phone numbers) are decoupled. The phone number used as the caller ID for a campaign does not need to be linked to the attached experience flow. It can be an independent number or a number associated with a different experience flow. To use [phone numbers](../../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number) or [SIP numbers](../../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup) in a campaign, the Outbound option must be enabled for those numbers. All outbound-enabled numbers appear in the campaign configuration drop-down list.
+
 ### Filters
 
 Campaign Managers can create, duplicate, mark as default, delete and edit filters for the campaigns.
@@ -264,7 +268,9 @@ Steps to create Voice campaigns:
 
         !!! Note
 
-            Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
+            * Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.  
+
+            * The Caller ID dropdown for all campaigns (Agentless, Preview, and Progressive) displays all phone numbers—SIP or non-SIP—that are registered with this bot and configured as outbound-only or inbound-outbound.
 
 4. Click **Save**. The campaign is created.
 
@@ -386,4 +392,6 @@ When the campaign runs, you can pause or stop it. You can also rerun a completed
 
 !!! Note
 
-    A phone number, queue, and flow must be attached to run a voice campaign.
+    * A phone number, queue, and flow must be attached to run a voice campaign.  
+
+    * For Active, Future-Scheduled, and Paused campaigns, linked phone numbers and experience flows cannot be deleted.

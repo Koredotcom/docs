@@ -198,7 +198,7 @@ This metric is available only for the Conversation Session.
 
 ## Filter Criteria
 
-The Conversations data can be viewed based on specific filter criteria that can be selected. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/dashboard-filter-criteria/).
+The Conversations data can be viewed based on specific filter criteria that can be selected. [Learn more](../dashboard-filters.md).
 
 
 <table>

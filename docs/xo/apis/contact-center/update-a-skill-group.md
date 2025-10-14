@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Update a Skill Group
 
 To update the particular skill group with the given `streamId` and `skillGroupId`.

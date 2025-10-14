@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Get FAQs – KG
 
 To get a list of questions and nodes under the Knowledge task. This API supports parameters like  ktId and parentId (node ID).
@@ -428,7 +430,7 @@ No body parameters are passed.
                             "rules": [
                                 {
                                     "condition": "context.session.UserContext.emailId",
-                                    "value": "harini.nemani@kore.com",
+                                    "value": "john.doe@example.com",
                                     "op": "eq"
                                 }
                             ]

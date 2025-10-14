@@ -51,7 +51,7 @@ Please define the fields as explained in the following table:
   <tr>
    <td>Client ID
    </td>
-   <td>The ID of the Kore.ai client. The XO Platform accepts a maximum length of 255 characters.
+   <td>The ID of the Kore.ai client. The Platform accepts a maximum length of 255 characters.
    </td>
   </tr>
   <tr>
