@@ -31,7 +31,7 @@ Contextual metadata is transferred from the Agent Platform to AI for Service usi
 
 ### Step 2: Handle the metadata in AI for Service Experience Flow
 
-The parameters passed from Agent Platform become available in the XO Experience Flow under the Automation node context.
+The parameters passed from Agent Platform become available in the AI for Service Experience Flow under the Automation node context.
 
 Use the following format to access the metadata passed from the Agent Platform. 
 

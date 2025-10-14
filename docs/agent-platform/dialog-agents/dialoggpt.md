@@ -12,7 +12,7 @@ DialogGPT intelligently recognizes and processes tasks based on their names and 
 * **Multi-Intent Processing**: Recognizes and manages multiple intents within a single query.
 * **Conversational Nuance Management**: Handles pauses, repetitions, and restarts naturally.
 * **Dynamic Response Generation**: Creates contextually appropriate responses based on user data and history.
-* **Model Flexibility**: Supports various model options, including commercial, custom, or XO GPT models.
+* **Model Flexibility**: Supports various model options, including commercial, custom, or AI for Service GPT models.
 * **Granular Intent Resolution**: Refines broad queries into specific, actionable intents using domain knowledge.
 
 ## Core Architecture and Functionality

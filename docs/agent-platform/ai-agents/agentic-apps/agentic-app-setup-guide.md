@@ -14,7 +14,7 @@ The Agentic App setup process consists of the following phases:
 ### 1. Foundation Phase
 
 1. **Sign Up for the Agent Platform**: The Agent Platform onboarding journey starts with creating an account. Upon successful signup, the platform will automatically provision a dedicated workspace for your projects.</br>
-If you've already set up XO, both your existing workspaces and shared workspaces will be visible, but you'll need separate access permission from workspace owners to use shared workspaces in the Agent Platform.
+If you've already set up AI for Service, both your existing workspaces and shared workspaces will be visible, but you'll need separate access permission from workspace owners to use shared workspaces in the Agent Platform.
 1. **Configuring Large Language Models (LLMs)**: The Agent Platform leverages the power of LLMs to enable the intelligence of your agents. The platform supports integration with various LLM providers, including OpenAI, Azure OpenAI, Anthropic, and Gemini. Select the preferred model based on your specific use case and configure it. [Learn more](../../models/overview.md){:target="_blank"}.
 2. **Create an Agentic App**: An Agentic App is the core application you will build on the Agent Platform. You can create an Agentic App from scratch on the platform, import a pre-built app, or install an existing one from the marketplace. [Learn more](create-app.md){:target="_blank"}.
 

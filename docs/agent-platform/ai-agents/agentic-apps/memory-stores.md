@@ -288,7 +288,7 @@ This memory store follows the following schema:
 ```
 
 
-The **metadata** field is used to maintain any contextual metadata information. ***Developers can update this field only via the APIs or while accessing the platform via XO or AI for Work.***
+The **metadata** field is used to maintain any contextual metadata information. Developers can update this field only via the APIs or while accessing the platform via AI for Service or AI for Work.
 
 The **sessionInfo** is a system-populated object that contains metadata about the current session. It includes the following fields:
 

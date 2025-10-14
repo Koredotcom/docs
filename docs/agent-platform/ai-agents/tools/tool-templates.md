@@ -33,7 +33,7 @@ The **Tools Library Marketplace** offers more than 50 prebuilt tool templates fo
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Agent Platform integrates with the XO Platform marketplace.</p>
+<p>The Agent Platform integrates with the AI for Service marketplace.</p>
 </div>
 
 **Categories**

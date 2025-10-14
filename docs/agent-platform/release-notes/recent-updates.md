@@ -764,7 +764,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Knowledge Integration with Agent Platform**
 
-The Agent Platform now integrates with AI for Service (XO) search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
+The Agent Platform now integrates with AI for Service search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
 
 Key features
 
@@ -929,20 +929,20 @@ Key benefits
 * Ability to combine and orchestrate cross-platform agent capabilities.
 
 
-**Integration with XO Platform**
+**Integration with AI for Service**
 
-Agent Platform now seamlessly integrates with the XO Platform. This integration simplifies the creation of highly contextual, self-service automation experiences from XO using multi-agent orchestration powered by Agentic Apps.
+Agent Platform now seamlessly integrates with AI for Service. This integration simplifies the creation of highly contextual, self-service automation experiences from AI for Service using multi-agent orchestration powered by Agentic Apps.
 
 Key benefits
 
-* Ability to integrate fully autonomous applications from the XO Platform.
-* Leverage XO Platform's channel integrations while using Agent Platform capabilities.
+* Ability to integrate fully autonomous applications from the AI for Service.
+* Leverage AI for Service channel integrations while using Agent Platform capabilities.
 * Streamlined user experience with shared authentication and session management.
 
 
 **Voice Integration in Agentic Apps**
 
-The XO Platform and the Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
+AI for Service and Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
 
 Key features
 
