@@ -9,7 +9,7 @@ This API allows you to update an existing task in the case management system.
 | **Endpoint**      | [`https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/updateTask/{{taskId}}`](https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/updateTask/{{taskId}}) |
 | **Content Type**  | `application/json`                                                                                                                                                                   |
 | **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                                          |
-| **API Scope**     | Case Management Configuration.                                                                                                                                                       |
+| **[API Scope](/xo/apis/automation/api-introduction.md#associating-api-scopes)**     | Case Management Configuration.                                                                                                                                                       |
 ## Path parameters
 
 | **Parameter** | **Description**                                                                                          | **Type**           |
