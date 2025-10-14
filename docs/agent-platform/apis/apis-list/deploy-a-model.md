@@ -1,4 +1,4 @@
-[:octicons-arrow-left-24: Back to APIs List ](../../apis/overview.md/#apis-list){:target="_blank"}
+[:octicons-arrow-left-24: Back to API List](../../apis/overview.md/#api-list)
 
 # Deploy a Model API
 
