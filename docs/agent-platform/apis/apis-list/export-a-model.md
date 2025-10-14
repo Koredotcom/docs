@@ -33,7 +33,9 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Path Parameters
 
@@ -75,7 +77,7 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
 ## Sample Request
 
 ```js
-curl --location --request POST 'https://{host}/api/public/models/cm-9xxxxxxxxxxxxxxxxxx2/export' \
+curl --location --request POST 'https://{host}/api/public/models/cm-9xxxxxxxxxxxxxxxxxx2/export' 
 --header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-xxx-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3'
 ```
 

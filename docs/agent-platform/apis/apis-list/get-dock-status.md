@@ -31,8 +31,9 @@ This API allows users to track the status of ongoing or completed jobs related t
   </tr>
 </table>
 
+**Where can I find the API key?**
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 
 ## QPath Parameters
@@ -73,7 +74,7 @@ This API allows users to track the status of ongoing or completed jobs related t
 ## Sample Request
 
 ```js
-curl --location 'https://{host}/api/public/dock-status/ds-24xxxxx3-0xxc-5xx5-axx3-c19xxxxxxxx8' \
+curl --location 'https://{host}/api/public/dock-status/ds-24xxxxx3-0xxc-5xx5-axx3-c19xxxxxxxx8' 
 --header 'x-api-key: kg-abxxxxx7-5xx3-5xx8-bxxb-9xxxx'
 ```
 

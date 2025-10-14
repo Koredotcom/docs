@@ -32,7 +32,9 @@ This API undeploys a model from the environment. The API response includes the *
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Path Parameters
 
@@ -72,7 +74,7 @@ This API undeploys a model from the environment. The API response includes the *
 ## Sample Request
 
 ```js
-curl --location --request POST 'https://{host}/api/public/models/cm-20xxxxxf-0xx9-5xx0-8xx1-81xxxxxxxx80/undeploy' \
+curl --location --request POST 'https://{host}/api/public/models/cm-20xxxxxf-0xx9-5xx0-8xx1-81xxxxxxxx80/undeploy' 
 --header 'x-api-key: kg-axxxxxxx-xxx-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3'
 ```
 

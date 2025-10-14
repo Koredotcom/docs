@@ -87,9 +87,9 @@ This method directly calls the endpoint and returns the <code>fileId</code> and 
 ### Sample Request
 
 ```js
-curl --location 'https://{host}/api/public/files' \
---header 'x-api-key: xxxxx' \
---form 'file=@"postman-cloud:///1efxxxxe-bxx9-4xx0-bxx3-14xxxxxxxxx9"' \
+curl --location 'https://{host}/api/public/files' 
+--header 'x-api-key: xxxxx' 
+--form 'file=@"postman-cloud:///1efxxxxe-bxx9-4xx0-bxx3-14xxxxxxxxx9"' 
 --form 'fileContext="bulkImport"'
 ```
 
@@ -233,9 +233,9 @@ This API starts the upload process, returning a <code>session ID</code>. The fil
 #### Sample Request
 
 ```js
-curl --location 'https://{host}/api/public/files/session/start' \
---header 'x-api-key: kg-b9xxxxxc-cxxf-5xxf-8xxe-6xxxxxxxxxx8-3xxxxx2a-exxa-4xx8-8xx5-exxxx1axxxxxd' \
---header 'Content-Type: application/json' \
+curl --location 'https://{host}/api/public/files/session/start' 
+--header 'x-api-key: kg-b9xxxxxc-cxxf-5xxf-8xxe-6xxxxxxxxxx8-3xxxxx2a-exxa-4xx8-8xx5-exxxx1axxxxxd' 
+--header 'Content-Type: application/json' 
 --data '{
     "fileContext": "bulkImport",
     "totalChunks": 1,
@@ -418,10 +418,10 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
 #### Sample Request
 
 ```js
-curl --location 'https://{host}/api/public/files/session/14xxxxxd-0xx4-4xxf-axx1-69xxxxxxxxx8' \
---header 'x-api-key: {{apikey}}' \
---header 'Content-Type: application/json' \
---form 'file=@"postman-cloud:///1exxxxxc-9xxd-4xx0-8xxa-3xxxxxxxxxxa"' \
+curl --location 'https://{host}/api/public/files/session/14xxxxxd-0xx4-4xxf-axx1-69xxxxxxxxx8' 
+--header 'x-api-key: {{apikey}}' 
+--header 'Content-Type: application/json' 
+--form 'file=@"postman-cloud:///1exxxxxc-9xxd-4xx0-8xxa-3xxxxxxxxxxa"' 
 --form 'chunkNumber="0"'
 ```
 
@@ -567,7 +567,7 @@ This API merges the uploaded chunks and finalizes the process using the `session
 #### Sample Request
 
 ```js
-curl --location --request POST 'https://localhost/api/public/files/session/6exxxxx9-4xx7-4xx1-bxx9-ef2xxxxxxx78/complete' \
+curl --location --request POST 'https://localhost/api/public/files/session/6exxxxx9-4xx7-4xx1-bxx9-ef2xxxxxxx78/complete' 
 --header 'x-api-key: kg-a3xxxxxe-0xx6-5xx1-axxc-d4xxxxxxxxx0-a8xxxxxc-bxx4-4xxe-axxd-dxxxxxxxxxxf'
 ```
 

@@ -33,7 +33,9 @@ After triggering the import, the response returns a <code>dockStatusId</code>. U
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Query Parameters
 
