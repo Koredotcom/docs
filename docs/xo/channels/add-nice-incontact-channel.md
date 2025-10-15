@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding Nice inContact as a Channel
 
 The Platform supports Nice inContact as a channel for integrating an AI Agent with the NiceCXone Chat Automation platform for creating a rich and synchronous messaging experience for the end users.

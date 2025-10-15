@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Add the Syniverse Channel
 
 To set up Syniverse as a channel, the developer needs to associate the AI Agent with a Syniverse app, set up a subscription, and enable the delivery events for this app. This document explains the steps to add the Syniverse as a channel to your AI Agent.

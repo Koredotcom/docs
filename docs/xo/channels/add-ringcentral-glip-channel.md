@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding Glip by RingCentral as a Channel
 
 The Kore.ai XO Platform now allows you to add **Glip by RingCentral** as a messaging channel to your AI Agents.

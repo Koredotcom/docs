@@ -42,7 +42,7 @@ AI for Work is designed to provide a unified and flexible framework for implemen
     
     * Pre-built Agents: AI for Work includes a set of pre-configured AI agents that can be easily customized and integrated into workflows.
     
-    * Custom Agents: Enterprises can develop their own custom AI agents tailored to their specific requirements.       
+    * Custom Agents: Enterprises can develop their own custom AI agents tailored to their specific requirements.
 
 4. **Enterprise RAG Engine**: This component powers intelligent information retrieval and processing capabilities within the platform.
         

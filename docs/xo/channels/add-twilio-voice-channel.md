@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Twilio Voice Channel
 
 To add Twilio Voice as a channel to your Kore.ai assistant, you must get a Twilio phone number and set up a webhook integration to communicate with the AI Agent.

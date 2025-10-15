@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Hangouts Chat Channel
 
 Adding Hangouts Chat as a channel to your Kore.ai assistant allows end-users to chat with it using Hangouts Chat. This article shows you how to set it up.

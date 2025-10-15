@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Workplace by Facebook Channel
 
 This channel enablement flow is modified as per the changes implemented by Facebook post v7.2 of the product.

@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Yammer Channel
 
 To add Yammer as a channel to your Kore.ai assistant, you must create an app in Yammer and enable the platform to receive messages. Adding the Yammer channel to your Kore.ai assistant allows end-users of your app to interact with your app using their _Yammer_ accounts. To add the Yammer channel to your app, you must:
