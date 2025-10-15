@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  UPSTREAM: owner/repo      # ← set to upstream "owner/repo"
+  UPSTREAM: Koredotcom/docs      # ← set to upstream "owner/repo"
 
 jobs:
   sync-dev-branches:
