@@ -1,6 +1,6 @@
 # Configuring Amazon Bedrock Models
 
-To ensure secure cross-account access, this setup follows the principle of **least privilege**. You must create an IAM Role that grants only the required permissions to invoke Bedrock models and explicitly trusts the platform to assume this role via AWS STS.
+To ensure secure cross-account access, this setup follows the principle of least privilege. You must create an IAM Role that grants only the required permissions to invoke Bedrock models and explicitly trusts the platform to assume this role via AWS STS.
 
 To integrate your Bedrock models, you will need to:
 
@@ -9,9 +9,9 @@ To integrate your Bedrock models, you will need to:
 3. Test the configuration and map the output.
 
 
-### Step 1. Setting Up Credentials and Trust Policy (IAM Role and STS)
+## Step 1. Setting Up Credentials and Trust Policy (IAM Role and STS)
 
-#### A. Create IAM Role and Configure Trust Policy
+### A. Create IAM Role and Configure Trust Policy
 
 To begin, you must create an IAM role in your AWS account that allows Agent Platform to securely access Amazon Bedrock models. This role defines permissions and establishes a trust relationship so that the platform can assume the role via AWS STS.
 
@@ -46,7 +46,7 @@ Assign the necessary permissions to the role. An example IAM policy is shown bel
 
 **2. Set the Trust Policy in Your AWS Account**
 
-Set the trust policy to allow the platform to assume the IAM role. Replace <kore-arn> with the AWS account ID provided by the platform.
+Set the trust policy to allow the platform to assume the IAM role. Replace `<kore-arn>` with the AWS account ID provided by the platform.
 
 ```
 {
@@ -77,9 +77,9 @@ For example:
 https://sts.us-east-1.amazonaws.com/
 ```
 
-Ensure the STS region matches the region of your IAM role — **not necessarily the region of the model**.
+Ensure the STS region matches the region of your IAM role — not necessarily the region of the model.
 
-#### B. Raise a Support Ticket to Register your IAM Role
+### B. Raise a Support Ticket to Register your IAM Role
 
 After creating the IAM role in your AWS account, create a support ticket to update the trust policy with your IAM Role ARN. This allows the platform to assume the role and invoke Bedrock.
 
@@ -92,7 +92,7 @@ To complete the registration:
 
 
 
-### Step 2. Finding the Right Model ID and Region
+## Step 2. Finding the Right Model ID and Region
 
 Amazon Bedrock supports different model ID formats depending on how the model is deployed. This section outlines how to find the correct values for each case.
 
@@ -110,13 +110,13 @@ If you’ve subscribed to a model through the AWS Marketplace:
    ```
    arn:aws:bedrock:us-east-1::foundation-model/your-model-id
    ```
-3. Enter only the model name part (after `foundation-model/`) into the **Model ID** field.
+3. In the **Model ID** field, enter only the model name (after `foundation-model/`).
 
 **3. Models with Inference Profiles (Provisioned Throughput)**
 
 For models that do not support on-demand throughput (like Claude 3), you must create a Provisioned Throughput inference configuration.
 
-1. Go to the **Bedrock Console > Provisioned Throughput**.
+1. Go to **Bedrock Console > Provisioned Throughput**.
 2. Select or create an **inference configuration**.
 3. Copy the **Inference ARN** or ID. For example:
    ```
@@ -125,7 +125,7 @@ For models that do not support on-demand throughput (like Claude 3), you must cr
 4. Use the `my-throughput-id` value in the **Model ID** field.
 
 
-### Step 3. Test and Map the Model
+## Step 3. Testing and Mapping the Model
 
 Once you’ve provided credentials and model details, you can test your configuration and map model responses.
 
@@ -159,11 +159,11 @@ Example payload:
 2. Click **Test** to invoke the model.
 3. Review the raw response.
 
-**Note**: If the call fails, ensure the IAM Role, STS endpoint, and model ID are valid .
+**Note**: If the call fails, ensure the IAM Role, STS endpoint, and model ID are valid.
 
 **4. Map Output Fields**
 
-Configure JSON Paths to extract:
+Configure JSON paths to extract:
 
 * Model output (e.g., response text)
 * Input and output token counts
