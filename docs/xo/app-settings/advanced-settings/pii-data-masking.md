@@ -141,10 +141,6 @@ Both the PII and Sensitive Entity complement each other in providing comprehensi
 It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#configure-the-node){:target="_blank"} article.
 
 
-### Protecting Sensitive Data in LLM Interactions
+### Anonymize Sensitive Data in LLM Interactions
 
-In LLM interactions, the platform maintains the conversation context by anonymizing data instead of redacting it. Sensitive data is replaced with descriptive placeholders in LLM calls. For example, if the Phone Number is configured for redaction in the global PII Settings, it will be replaced with "[Phone Number]". This enhances privacy and security, reducing the risk of exposing personal information to external LLM services.
-
-!!! note
-
-    Data anonymization is automatically applied to all the runtime features.
+The platform enables you to define sensitive information and its handling before sending it to large language models (LLMs). To learn more, see [Data Anonymization](../../generative-ai-tools/data-anonymization.md).

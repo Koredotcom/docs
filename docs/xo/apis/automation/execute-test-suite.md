@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Execute a Test Suite API
 
 To execute Conversation Test Suites and get results. This API only initiates the test process and returns the execution status and **_testRunId_** to track the execution status. Please look at the [Conversation Test Suite Execution Status API](batch-test-execution-status.md) for the results of the test.
@@ -132,7 +134,7 @@ curl --location
    <tr>
    <td><strong>userEmailId</strong>
    </td>
-   <td>	The email ID of the bot owner or a developer with whom the bot is shared. For example, “userEmailId”: “<i>john.stevens@kore.com</i>“</td>
+   <td>	The email ID of the app owner or a developer with whom the app is shared. For example, “userEmailId”: “<i>john.doe@example.com</i>“</td>
    <td>Required   </td>
   </tr>
 </table>

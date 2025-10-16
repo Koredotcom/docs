@@ -238,13 +238,13 @@ Once you create/import a group, you can add/modify the query-response pairs.
 
     <img src="../images/delete-qr-pair-child.png" alt="Delete query response pair child" title="Delete query response pair child" style="border: 1px solid gray; zoom:75%;">
 
-10. Responses are **Channel-specific** and **Java Script** formatted. By clicking the **Settings** (gear icon) that appears next to the response, when you hover over it you will reach the Manage Response window. Here is where you can configure the following:
+10. Responses are **Channel-specific** and **JavaScript** formatted. By clicking the **Settings** (gear icon) that appears next to the response, when you hover over it you will reach the Manage Response window. Here is where you can configure the following:
   * Add a default message to be displayed on all channels.
   * For channel-specific responses:
     * Click **+ Add Response**.
     * Click the **New Prompt Message**.
     * Select **Channel**.
-    * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">Learn more</a>.
+    * Enter the response in standard text or in JavaScript using the Advanced Mode. If applicable Select a Template. 
     
       <img src="../images/message-response-channel.png" alt="message response channel" title="message response channel" style="border: 1px solid gray; zoom:75%;">
     

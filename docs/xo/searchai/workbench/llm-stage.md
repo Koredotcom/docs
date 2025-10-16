@@ -4,9 +4,9 @@ The LLM stage allows you to leverage the capabilities of an external LLM to refi
 
 ## Prerequisites
 
-* [Set up the required LLM](https://docs.kore.ai/xo/generative-ai-tools/models-library/).
-* [Create a custom prompt](https://docs.kore.ai/xo/generative-ai-tools/prompts-library/) for the feature ‘Enrich Chunks with LLM’.
-* In the[ Gen AI features page](https://docs.kore.ai/xo/generative-ai-tools/genai-features-searchai/), enable the feature, ‘Enrich Chunks with LLM’.’. 
+* [Set up the required LLM](../../generative-ai-tools/models-library.md).
+* [Create a custom prompt](../../generative-ai-tools/prompts-library.md) for the feature ‘Enrich Chunks with LLM’.
+* In the[ Gen AI features page](../../generative-ai-tools/genai-features-searchai.md), enable the feature, ‘Enrich Chunks with LLM’. 
 
 
 ## **LLM Stage Configuration**
@@ -19,4 +19,4 @@ Use the following properties to configure this stage.
 * **Outcome**: Use this section to provide the details of the processing to be done on the selected chunks. 
     * **LLM**: Select the external LLM to be used for processing the chunks.
     * **Prompt**: Choose or define the custom prompt that instructs the LLM on how to process the chunk content.
-    * **Target Field**: Specify the chunk field where the enriched or updated output from the LLM should be stored. The [value of the field set in Response.Path](https://docs.kore.ai/xo/generative-ai-tools/prompts-library/#how-to-add-prompts-and-requests) is the response of the LLM Stage and is copied to the target field. 
+    * **Target Field**: Specify the chunk field where the enriched or updated output from the LLM should be stored. The [value of the field set in Response.Path](../../generative-ai-tools/prompts-library.md#how-to-add-prompts-and-requests) is the response of the LLM Stage and is copied to the target field. 

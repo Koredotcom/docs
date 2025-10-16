@@ -1,5 +1,6 @@
-# Chunks APIs
+--8<-- "includes/searchai-api-back-link.md"
 
+# Chunks APIs
 
 ## Get Chunks By Condition
 

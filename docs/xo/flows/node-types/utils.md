@@ -157,8 +157,8 @@ In the below example, static data is used to set the user info.
 ```
 const userInfo = {
 "firstName": "John",
-"lastName": "Smith",
-"email": "jsmith316@gmail.com",
+"lastName": "Doe",
+"email": "john.doe@example.com",
 "phoneNumber": "407-876-8654",
 "country": "USA",
 "city": "Philadelphia",
@@ -254,7 +254,7 @@ agentUtils.setNamedAgents(['agentId1', 'agentId2'])
 Example
 
 ```
-agentUtils.setNamedAgents(['a-e1427c4-8e7d-4728-8e6c-64281b235ad7', 'a-e1427c4-8e7d-4728-8e6c-64281b235ad8'])
+agentUtils.setNamedAgents(['a-e1427c4-8e7d-4728-8e6c-64281b23xxxx', 'a-e1427c4-8e7d-4728-8e6c-64281b23xxxx'])
 ```
 
 ### Set Agent Matching Conditions

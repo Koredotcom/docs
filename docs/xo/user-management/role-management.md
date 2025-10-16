@@ -583,6 +583,14 @@ Allows the agent to manually redact selected portions of text during live conver
    </td>
 </tr>
 <tr>
+   <td><strong>Transfer/Close Multiple Conversations</strong>
+   <br>
+Allow user to redistribute or terminate conversations more flexibly accross all channels
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td colspan="2" ><strong>System</strong>
    </td>
 </tr>
@@ -1243,6 +1251,15 @@ Allows the agent to manually redact selected portions of text during live conver
    </td>
    <td>Yes
    </td>
+</tr>
+<tr>
+   <td><strong>Transfer/Close Multiple Conversations</strong>
+   <br>
+Allow user to redistribute or terminate conversations more flexibly accross all channels
+   </td>
+   <td>Yes
+   </td>
+</tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -1872,6 +1889,15 @@ Allows the agent to manually redact selected portions of text during live conver
    </td>
    <td>No
    </td>
+</tr>
+<tr>
+   <td><strong>Transfer/Close Multiple Conversations</strong>
+   <br>
+Allow user to redistribute or terminate conversations more flexibly accross all channels
+   </td>
+   <td>Yes
+   </td>
+</tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -2513,6 +2539,15 @@ Allows the agent to manually redact selected portions of text during live conver
    </td>
    <td>Yes
    </td>
+</tr>
+<tr>
+   <td><strong>Transfer/Close Multiple Conversations</strong>
+   <br>
+Allow user to redistribute or terminate conversations more flexibly accross all channels
+   </td>
+   <td>Yes
+   </td>
+</tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -3158,6 +3193,15 @@ Allows the agent to manually redact selected portions of text during live conver
    </td>
    <td>No
    </td>
+</tr>
+<tr>
+   <td><strong>Transfer/Close Multiple Conversations</strong>
+   <br>
+Allow user to redistribute or terminate conversations more flexibly accross all channels
+   </td>
+   <td>No
+   </td>
+</tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -3993,7 +4037,17 @@ Allows the agent to manually redact selected portions of text during live conver
    <td>Yes
    <br>
    No</td>
+</tr>
 <tr>
+   <td><strong>Transfer/Close Multiple Conversations</strong>
+   <br>
+Allow user to redistribute or terminate conversations more flexibly accross all channels
+   </td>
+   </td>
+   <td>Yes
+   <br>
+   No</td>
+</tr>
    <td colspan="2" ><strong>System</strong>
    </td>
 </tr>

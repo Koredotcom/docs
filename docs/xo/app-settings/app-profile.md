@@ -82,18 +82,18 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
   <tr>
    <td>Variable Namespaces
    </td>
-   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components. <a href="../integrations/managing-namespace" target="_blank"></a>.
+   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components.
    </td>
   </tr>
   <tr>
    <td>Subdomain (aka Tenancy URL)
    </td>
-   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the AI Agent, for example, <em>kore</em>, for the <em>www.<strong>kore</strong>.someWebService.com</em> tenant-specific URL. When enabled define the following properties:
+   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the AI Agent, for example, <em>iana</em>, for the <em>www.<strong>iana</strong>.org</em> tenant-specific URL. When enabled define the following properties:
 <ul>
 
 <li><strong>Help Hint</strong> – The text displayed to the end-user to prompt the user to enter a tenant-specific URL for the AI Agent.
 
-<li><strong>Base URL</strong> – The base URL for the AI Agent that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://{tenant}.someWebService.com</em> where <em>{tenant}</em>, including the braces, represents the tenant name.
+<li><strong>Base URL</strong> – The base URL for the AI Agent that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://www.{iana}.org/</em> where <em>{iana}</em>, including the braces, represents the tenant name.
 </li>
 </ul>
    </td>
@@ -123,7 +123,7 @@ Any edits made to the **App Profile** are auto-saved.
 
 ## Customizing Error Messages
 
-In the Builder, each AI Agent and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai AI Agents and tasks. When you create an AI Agent or a task, you can add or customize error messages for HTTP Status codes in the **Error Messages** section of the AI Agent or task settings. 
+In the Builder, each AI Agent and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai Agents and tasks. When you create an AI Agent or a task, you can add or customize error messages for HTTP Status codes in the **Error Messages** section of the AI Agent or task settings. 
 
 <img src="../images/app-prof-img2-general-settings-error-messages.png" alt="Error Messages" title="Error Messages" style="border: 1px solid gray;zoom:50%;"/>
 

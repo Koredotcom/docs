@@ -1,6 +1,7 @@
 # About Agentic Apps
 
 Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They're intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), agentic apps can reason, adapt, and act without requiring constant human intervention.
+Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They're intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), agentic apps can reason, adapt, and act without requiring constant human intervention.
 
 ## Key Components
 
@@ -36,10 +37,10 @@ Agents are specialized, autonomous workers that possess the knowledge and resour
 
 Agents utilize various tools to enhance their capabilities. After receiving a user query from the orchestrator, the agent selects the most suitable tool, prepares the required input parameters, invokes the tool, processes the result, and returns the output to the orchestrator or user.
 
-**Example:** In a banking application, specialized agents handle various user queries:
+**Example:** In a banking app, specialized agents handle various user queries:
 
 * A savings account agent processes fund transfers, adds new payees, displays balances, and performs other related tasks.
-* A loan agent manages loan applications and payments.
+* A loan agent manages loan apps and payments.
 * A card management agent handles PIN resets or card blocking.
 
 Each agent is tailored to its specific domain, ensuring efficient and accurate handling of queries and actions.

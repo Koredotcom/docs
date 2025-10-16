@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Task Execution-Based Containment Report API
 
 This task-wise Containment Report offers a comparative analysis of the impact of task executions on overall containment. It breaks down task-wise successes and failures by containment type, including Drop-off, Self-service, and Agent Hand-off, providing a detailed overview for better understanding and decision-making.
@@ -32,7 +34,7 @@ This task-wise Containment Report offers a comparative analysis of the impact of
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token" target="_blank">How to generate the JWT Token.</a>
+</a>
    </td>
   </tr>
   <tr>
@@ -49,6 +51,8 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    </td>
   </tr>
 </table>
+
+Refer [How to generate the JWT Token](../../apis/automation/api-introduction.md#generating-the-jwt-token).
 
 ## Path Parameters
 

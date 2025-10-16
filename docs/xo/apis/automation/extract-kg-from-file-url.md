@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Extraction from file or URL – KG
 
 To extract the Knowledge Graph from the imported file or URL.

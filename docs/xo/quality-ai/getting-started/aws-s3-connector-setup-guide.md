@@ -968,7 +968,7 @@ json
 
 1. Navigate to **Connector Setup**.
 
-2. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Connectors**.
+2. Navigate to **Quality AI** > **Configure** > **Connectors**.
 
 3. Click **+ Add Connector** > **Amazon S3** > **Connect**.
 

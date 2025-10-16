@@ -2,7 +2,7 @@
 
 ## Overview
 
-Quality AI Express is a specialized version of the Quality AI platform designed for organizations using third-party Contact Center as a Service (CCaaS) platforms. While Quality AI provides deep native integration with Contact Center AI (CCAI), Quality AI Express enables customers to leverage advanced conversation analytics and automated quality management regardless of their existing contact center infrastructure.
+Quality AI Express is a specialized version of the Quality AI platform designed for organizations using third-party Contact Center as a Service (CCaaS) platforms. While Quality AI provides deep native integration with Contact Center AI (CCAI), Quality AI Express enables customers to leverage advanced conversation analytics and automated quality AI regardless of their existing contact center infrastructure.
 
 Quality AI Express delivers powerful AI-driven insights through file-based integration, allowing organizations to maintain their current CCaaS investment while accessing enterprise-grade conversation intelligence and agent performance management capabilities.
 
@@ -268,7 +268,7 @@ Learn more about [AWS S3 Connector Setup Guide](../getting-started/aws-s3-connec
 1. **Data Preparation**: Organize conversation files and metadata according to the required formats.
 2. **S3 Configuration**: Set up AWS S3 bucket and configure access permissions.
 3. **Connector Setup**: Configure and test the S3 connector integration.
-4. **Platform Onboarding**: Import agent profiles and configure quality management parameters.
+4. **Platform Onboarding**: Import agent profiles and configure quality AI parameters.
 5. **Testing & Validation**: Verify data flow and analytics accuracy.
 6. **Production Deployment**: Begin automated quality analysis and reporting.
 

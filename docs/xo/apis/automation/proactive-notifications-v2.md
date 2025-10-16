@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Proactive Notifications API v2
 
 The Proactive Notifications API V2 enables sending various types of messages to users via `IVR`, `Hangout`, `Webhook` and `Whatsapp` channels. 
@@ -38,7 +40,7 @@ Proactive notification includes:
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
+</a>
    </td>
   </tr>
   <tr>
@@ -55,7 +57,7 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
   </tr>
 </table>
 
-
+Refer [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).
 
 ## Path Parameters
 

@@ -29,7 +29,7 @@ Setting up a Message node in a dialog task involves the following steps:
 ### Add Node
 
 1. Open the dialog task to add the Message node.
-2. Add a message node in the designated place. For steps in adding nodes, read the [Using the Dialog Builder](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"} article.
+2. Add a message node in the designated place. For steps in adding nodes, read the [Using the Dialog Builder](../using-the-dialog-builder-tool.md){:target="_blank"} article.
 
     !!! note
 
@@ -50,7 +50,7 @@ Setting up a Message node in a dialog task involves the following steps:
 2. Under the **Bot Responses** section, compose and format the bot response either as plain text or as a JavaScript message. A default message is set by the platform, you can customize it.
 3.  Enter channel-specific messages for bot responses using the **Manage** link. For more information, read the [Using the Prompt Editor](../prompt-editor.md){:target="_blank"} article.
 4. To add more bot responses, click **Add Bot Response** and repeat the above steps.
-5. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
+5. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md) to rewrite AI Agent replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
 <img src="../images/re-responses.png" alt="Rephrase Responses" title="Rephrase Responses" style="border:1px solid gray;zoom:70%;">
 
 
@@ -81,7 +81,7 @@ To generate a report link, follow these steps:
 
 ### Variable Namespace
 
-In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
 
 
 ### Instance Properties
@@ -94,7 +94,7 @@ In the **Variable Namespaces** section, associate the variable namespaces to exe
         The settings in the Instance Properties tab are specific to the current task and do not reflect in other dialog tasks that use this node.
     
     1. **Use the task level ‘Interruptions Behavior’ setting**: The AI Agent refers to the Interruptions Behavior settings set at the dialog task level.
-    2. **Customize for this node option:** You can customize the Interruptions Behavior settings for this node by selecting this option and configuring the same. For more information, refer to the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article.
+    2. **Customize for this node option:** You can customize the Interruptions Behavior settings for this node by selecting this option and configuring the same. For more information, refer to the [Interruption Handling and Context Switching](../../../intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article.
 
 3. **Analytics-Containment Type:** Select one of the below options to determine how to treat user-abandoned conversations.
     1. **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.

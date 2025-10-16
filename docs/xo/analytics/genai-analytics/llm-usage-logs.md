@@ -1,6 +1,6 @@
 
 
-# LLM and Generative AI Usage Logs
+# Generative AI Logs
 
 
 

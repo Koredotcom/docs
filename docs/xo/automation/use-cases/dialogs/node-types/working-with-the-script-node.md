@@ -13,7 +13,7 @@ The setup a Script node in a dialog task involves the following steps:
 
 1. **Select the AI Agent** you want to work with.
 2. **Open the dialog task** to add the Script node to.
-3. **Add the script node** in the designated place. For steps in adding nodes, [refer here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
+3. **Add the script node** in the designated place. For steps in adding nodes, [refer here](../using-the-dialog-builder-tool.md){:target="_blank"}.
 4. The Script window is displayed with the **Component Properties** tab selected by default.
 5. You can configure the **Connection Properties,** [refer here for details](#connections-properties).
 
@@ -155,5 +155,5 @@ context.canProceed = valid;
 
 **Related Link**
 
-* [**koreUtil libraries**](../../../../apis/automation/koreutil-libraries.mdd){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)
+* [**koreUtil libraries**](../../../../apis/automation/koreutil-libraries.md){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)
 * [**Script Nodes, Call Flows, Agent Utils, and userSessionUtils**](../../../../flows/node-types/utils.md)

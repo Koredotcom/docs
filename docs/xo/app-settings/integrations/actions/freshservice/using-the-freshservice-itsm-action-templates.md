@@ -100,7 +100,7 @@ Steps to create a ticket in the Freshservice integration:
 
             ```
             {
-            "email": "rhsg@kore.com",
+            "email": "john.doe@example.com",
             "subject": "Support payment",
             "description": "Payment is pending issue",
             "status": 2,
@@ -942,7 +942,7 @@ Steps to update a ticket in the Freshdesk integration:
 
         ```
         {
-        "email": "work@kore.com",
+        "email": "john.doe@example.com",
         "subject": "LOGIN ISSUE...",
         "description": "Unable to login...",
         "status": 4,

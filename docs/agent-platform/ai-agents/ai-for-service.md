@@ -8,7 +8,7 @@ Agent Platform works seamlessly with AI for Service to create a powerful, unifie
 ## Prerequisites
 
 * AI for Service and Agent Platform applications must be in the same workspace for connection.
-* Ensure that the relevant channel flows (e.g., chat, voice) are set up in AI for Service.
+* Ensure that the relevant channel flows (for example: chat, voice) are set up in AI for Service.
 
 
 ## Integrate an Agentic App with AI for Service App
@@ -19,7 +19,7 @@ Users can create or select an existing app and configure it using the **Automati
 
 1. Navigate to the **Start Flows** in the AI for Service application.
 
-    For every interaction across a channel, a welcome flow is designed that defines the end-to-end customer experience for each communication channel.  Go to the welcome flow of the desired communication channel.  ![alt_text](./images/integration/xo/flows.png "XO Flows")
+    For every interaction across a channel, a welcome flow is designed that defines the end-to-end customer experience for each communication channel. Go to the welcome flow of the desired communication channel.  ![alt_text](./images/integration/xo/flows.png "XO Flows")
 
 
 2. Add an **Automation Node.**
@@ -36,7 +36,7 @@ Users can create or select an existing app and configure it using the **Automati
     1. **Agentic App**: Select the app to be integrated that will handle all the interactions on the given communication channel. The dropdown lists all the existing Agentic Apps in the same workspace. You can also create an Agentic App from scratch. 
     2. **Environment**: Select the Environment of your Agentic App to be used for end-user interactions. Once the flow is published, the selected environment is used in the published mode. However, the tests are always run against the Draft Environment of the selected application. 
     3. **Real-time Voice Interactions**: Enable this to support two-way real-time voice streaming via the [Voice Gateway](https://docs.kore.ai/xo/channels/voice-gateway/configure-voice-gateway/). This feature uses multi-modal AI models for intelligent voice interactions. When real-time voice interaction is enabled, Voice Gateway uses the underlying models configured in the Agentic App to add voice capabilities to the application. Refer to [this](https://docs.kore.ai/xo/flows/node-types/automation/){:target="_blank"} for other configurations of the node.
-    4. **Metadata**: Metadata fields allow you to pass additional information to the Agentic app in the form of key-value pairs. You can pass static or dynamic information using context variables through the Metadata key-value pairs. Within the agentic app, this information is stored in the system memory, sessionMeta, as a metadata field which can be accessed within agent prompts and tools.  Click on **Add** to add a new metadata field. Provide the key and its static or dynamic value.   
+    4. **Metadata**: Metadata fields allow you to pass additional information to the Agentic app in the form of key-value pairs. You can pass static or dynamic information using context variables through the Metadata key-value pairs. Within the agentic app, this information is stored in the system memory, sessionMeta, as a metadata field which can be accessed within agent prompts and tools. Click on **Add** to add a new metadata field. Provide the key and its static or dynamic value.   
     
     For instance, consider that the user name is passed to Agent Platform as shown below. 
     ![alt_text](images/integration/xo/metadata.png "Metadata")
@@ -65,7 +65,7 @@ To process these agent transfer requests, set up the **Agent Transfer connection
 
 **Important Notes:**
 
-* The Agentic App configuration is applied **globally across all Automation Nodes within the selected flow**. Changes to the configuration will affect all nodes in the same flow. Automation Nodes in any other flows are not affected. 
+* The Agentic App configuration is applied **globally across all Automation Nodes within the selected flow**. Changes to the configuration will affect all nodes in the same flow. Automation Nodes in any other flows aren't affected. 
 
 * When using the **Test** functionality in the flow designer, the execution will always refer to the **Draft** version of the selected Agentic App, irrespective of the environment selected. 
 

@@ -1,6 +1,6 @@
 # Quality AI Setup Guide
 
-Get started on the Quality Management (QM) module: Learn how to set up, configure, and use the QM module.
+Get started on the Quality AI (QM) module: Learn how to set up, configure, and use the QM module.
 
 Follow these steps:
 
@@ -20,11 +20,13 @@ Follow these steps:
 
     b. Enable **Answer** and **Utterance** suggestions in GenAI Settings. [Learn more](../../generative-ai-tools/genai-features.md/){:target=”_blank”}.
     
-4. **Create Evaluation Metrics**
+4. **Create New Evaluation Metrics**
 
-    a. Use By Question, Question Answer Pair, and Adherence Types (Static/Dynamic). [Learn more](../configure/evaluation-metrics.md/){:target=”_blank”}.
+    a. Use By Question, Question Answer Pair, and Adherence Types (Static/Dynamic). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md/){:target=”_blank”}.
     
-    b. Set Count Type (Entire Conversation/Time Bound). [Learn more](../configure/evaluation-metrics.md#create-new-evaluation-metrics/){:target=”_blank”}.
+    * [Create New Evaluation Metrics](../configure/evaluation-metrics.md/#create-new-evaluation-metrics){:target=”_blank”}.    
+    
+    b. Set Count Type (Entire Conversation/Time Bound). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md/){:target=”_blank”}.
     
 5. **Create Evaluation Forms**
 
@@ -32,7 +34,7 @@ Follow these steps:
 
     b. Select metrics, assign weights, and link to queues. 
     
-    [Learn more](../configure/evaluation-forms.md/){:target=”_blank”}. 
+    [Learn more](../configure/evaluation-forms.md/#create-a-new-evaluation-form){:target=”_blank”}. 
 
 6. **View Scored Interactions in Conversation Mining**
 

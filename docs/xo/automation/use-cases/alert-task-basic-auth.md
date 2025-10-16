@@ -1,6 +1,6 @@
 # Alert Task – Basic Auth
 
-We have seen how an Alert task can be set up in the XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this section, we will see how basic authorization for the alert tasks can be set up.
+We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform. In this section, we will see how basic authorization for the alert tasks can be set up.
 
 ## How it Works 
 
@@ -23,10 +23,10 @@ You can use Basic Authorization when configuring API Requests within Alert Tasks
 2. Go to **Build** > **Conversation Skills** > **Alert Tasks**. 
 3. Select the task you want to work with. 
 4. Click the **API Request** tab within the Alert Task.
-5. Expand the **Authorization** section and click **Create New** to configure a new authorization.
+5. Expand the **Authorization** section and click **Create New** to configure a new authorization.  
 <img src="../images/create-new-authorization.png" alt="create new authorization" title="create new authorization" style="border: 1px solid gray; zoom:75%;">
 
-6. Next, the **New Authorization Mechanism** window opens, as shown in the illustration below.
+6. Next, the **New Authorization Mechanism** window opens, as shown in the illustration below.  
 <img src="../images/new-auth-mechanism.png" alt="new auth mechanism" title="new auth mechanism" style="border: 1px solid gray; zoom:75%;">
 
 To define Basic Authorization, select **Basic Auth** in the **Authorization Type** field. Then specify a **Name** for the authorization to be displayed in the XO Platform  user interface. Next, please make your configuration according to the steps below.

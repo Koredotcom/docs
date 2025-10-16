@@ -26,6 +26,13 @@ Click **Default Out of Operational Hours Voice Flow** to configure the Out of Ho
 In the **General Settings** of the End Flow node, a text area displays the default message a customer hears when attempting to reach an agent outside of operational hours. You can edit this message, change language, or add another message by clicking **+ Add Another**.
  <img src="../images/default-voice-message.png" alt="Default Out of Operational Hours Message" title="Default Out of Operational Hours Message" style="border: 1px solid gray; zoom:70%;">
 
+#### Out of Operational Hours Message Behavior
+
+* The system picks up the Out of Operational Hours message from the configured conditional flow.  
+* If no conditional flow is configured, the system plays a default backend message.  
+* Backend default messages are not editable.  
+* Administrators can override the default message by creating a conditional flow and attaching it to their existing flow.
+
 ### No Agents Available Flow
 
 You can set the message played to the customer if the available online agents don’t have the required skills.
@@ -35,6 +42,12 @@ Click **No Agents Available Voice Flow** to configure the Out of Hours flow. You
 
 In the **General Settings** of the End Flow node, a text area displays the default message a customer hears when no agents are available. You can edit this message, change language, or add another message by clicking **+ Add Another**.
 <img src="../images/no-agents-available-voice-flow-message.png" alt="No Agents Available Voice Flow Message" title="No Agents Available Voice Flow Message" style="border: 1px solid gray; zoom:70%;">
+
+#### Configure a Custom Out of Operational Hours or No Agents Available Message
+
+* Create a conditional flow.  
+* Add an End Flow node within the conditional flow.  
+* Configure a custom message to play during off-hours or when no agents are available.
 
 ### Click-to-Call Flow
 
@@ -49,7 +62,7 @@ When enabled, users can start a voice call from:
 
 !!! Note
 
-The click-to-call flow will appear in the conditional flows if it is turned on from [Theme & Design](../../channels/add-web-mobile-client.md#ai-agent-theme--design).
+    The click-to-call flow will appear in the conditional flows if it is turned on from [Theme & Design](../../channels/add-web-mobile-client.md#ai-agent-theme-design).
 
 #### Configuring Click-to-Call Flows
 

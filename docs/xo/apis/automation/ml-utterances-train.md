@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # ML Utterances Train API
 
 To initiate the ML training for a bot.
@@ -85,7 +87,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotId}}/ml/train' \
 
 !!! note 
 
-    If the bot language is not included in the header, the default English language is considered for the training. Find the list of supported bot languages [here](../../app-settings/language-management/building-multi-language-bots.md#supported-va-languages).
+    If the bot language is not included in the header, the default English language is considered for the training. Find the list of supported bot languages [here](../../app-settings/language-management/building-multi-language-bots.md).
 
 
 ## Body Parameters

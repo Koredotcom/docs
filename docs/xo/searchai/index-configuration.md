@@ -83,8 +83,22 @@ By default, the **Kore.ai XO GPT model** is configured for vector generation. To
 
 All the configured embedding models appear in the drop-down menu on the **Vector Configuration** page in Search AI.
 
+## Vector Configuration For Textual Data
 
-## Multi-Vector Search 
+Configure the following fields used for vector generation. 
+
+**Vector Model**: Select the embedding model to be used for Vector Generation. Select the most suitable embedding model depending on the nature of the content and the user queries expected by the application. 
+
+**Prompt**: Select the prompt to be used for the model. 
+
+Note: 
+
+* For a custom embedding model, you can also create a custom prompt from this page using the **+New Prompt** option. 
+* By default, the model and the prompt selected on the Gen AI page are automatically selected here for use. Any changes to the model or prompt are also reflected for the feature, Vector Generation - Text, in the Gen AI page. ![Vector Configuration](images/vector-config.png "Vector Configuration")
+
+
+
+### Multi-Vector Search 
 
 Search AI supports **multi-vector search** for textual data, allowing the generation of multiple embedding vectors for a single chunk. Each vector can represent a different semantic aspect by using one or more different fields of that chunk.
 
@@ -123,7 +137,7 @@ At query time, Search AI uses all configured vectors as follows:
 This approach ensures that each chunk is evaluated from multiple perspectives, while vector weights allow fine-tuning of relevance based on the importance of each vector's semantic focus.
 
 
-## Configuration
+### Configuration
 
 Configure the following fields used for vector generation. 
 
@@ -181,7 +195,7 @@ You can define multiple field combinations by clicking the **Add** button. Addin
 * For all other content types, use Chunk Text and a custom summary field (cfs3).
 
 
-#### Field Combinations Precedence
+### Field Combinations Precedence
 
 When two or more field combinations are defined, the order is used to resolve the conflicts of assignment.
 
@@ -192,7 +206,7 @@ When two or more field combinations are defined, the order is used to resolve th
 For instance, if the first field combination(higher in order, placed first) is configured for Default Directory and another field combination is configured for all sources, the one on top takes precedence and is used for Default Directory. All other content, except that from the default directory, uses the second field combination for vector generation. 
 
 
-#### Vector Coverage
+### Vector Coverage
 
 If the field combinations defined for a vector column do not cover certain content types, embeddings will not be generated for those content types. As a result, those content types will not be semantically matched using that particular vector column during search.
 
@@ -269,7 +283,7 @@ Metadata-Driven Vector
 
 
 
-#### Automatic Weight Rebalancing
+### Automatic Weight Rebalancing
 
 In a multi-vector setup, Search AI allows you to assign weights to different vector columns based on their importance. However, not all vector columns may be configured for every content type. For instance, if a vector column is configured only for specific content types, such as web pages or PDFs, it won’t generate embeddings for content from other sources, including connectors or files.
 
@@ -367,3 +381,13 @@ This results in the following adjusted weights of embeddings in vectors 1 and 3 
 * You cannot disable the default vector.
 * Avoid conflicting conditions across vector definitions to ensure each vector applies clearly and uniquely.
 * Whenever you switch from one embedding model to another, add or update a vector configuration, and reassign weights, **Train** the application to generate the embeddings again per the new configurations. 
+
+## Vector Configuration for Image-based data 
+
+This configuration is required only when content is extracted using the Image-based Document Extraction method. 
+
+**Vector Model**: For image-based document extraction, currently, **VDR embedding model** is supported and is selected by default. 
+
+**Prompt**: Select the prompt to be used for vector generation of image based content. You can select the existing prompts or create a new prompt from this page. 
+
+Note that any changes made to the prompt for this feature will automatically reflect in the Vector Generation - Image feature under the Gen AI page. 

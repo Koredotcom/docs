@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Enabling Agent Transfer API
 
 This API is used to configure the Botkit Url, App, and events.
@@ -25,7 +27,7 @@ This API is used to configure the Botkit Url, App, and events.
    <td>Authorization
    </td>
    <td><code>auth: {{JWT}}</code><br>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>

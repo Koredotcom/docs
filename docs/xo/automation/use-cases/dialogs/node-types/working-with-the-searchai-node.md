@@ -20,7 +20,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
 ## Adding the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the **Search AI Node**.
-2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../using-the-dialog-builder-tool.md#add-nodes).
+2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [add a node](../using-the-dialog-builder-tool.md#add-node-to-dialog).
 
 
 ## Configuring the Node
@@ -50,7 +50,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
 
 * Click **+ Add Filter**.
 * Provide the following:
-    * **Field**: Specify the name of the field you want to filter by. The content indexed in Search AI is stored in a JSON structure, where the content and its metadata are organized under different fields. To apply a filter using one of these fields, ensure that the Field Name exactly matches the corresponding field name in the ingested content. For example, to filter results from uploaded documents, use "sourceType": "file". Similarly, to filter based on the document title, use "recordTitle" as the field. To view available field names and their structure, navigate to the [Chunk Viewer](../../../../searchai/chunk-browser.md) in the Search AI app and inspect the content in JSON format. ![alt_text](images/chunk-viewer.png "image_tooltip")
+    * **Field**: Specify the name of the field you want to filter by. The content indexed in Search AI is stored in a JSON structure, where the content and its metadata are organized under different fields. To apply a filter using one of these fields, ensure that the Field Name exactly matches the corresponding field name in the ingested content. For example, to filter results from uploaded documents, use "sourceType": "file". Similarly, to filter based on the document title, use "recordTitle" as the field. To view available field names and their structure, navigate to the [Chunk Viewer](../../../../searchai/chunk-browser.md) in the Search AI app and inspect the content in JSON format. 
 
     * **Condition:** Choose from supported operators like contains, equals to, and exists.
     * **Field Value:** Enter a static value or dynamic variable as the value of the field. 
@@ -70,7 +70,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
     const answer = searchResponse.response.answer;
     const answer_payload = searchResponse.response.answer_payload
 
-    // Create the new template format format
+    // Create the new template format
     const reshaped = {
       type: "template",
       payload: {

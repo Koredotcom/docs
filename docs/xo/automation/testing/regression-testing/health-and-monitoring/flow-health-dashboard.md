@@ -161,7 +161,7 @@ To view the intent summary and identify the issues, follow these steps:
 3. In this test suite, the test case1 has failed because it has an incorrect data type selected for the **Date** field as shown below:  
 <img src="../images/fh-img19.png" alt="Sample execution result" title="Sample execution result" style="border: 1px solid gray;zoom:50%;"/>
 
-4. Text assertion fails because there is a mismatch between the _Expected_ and _Actual_ output. For more information, see [Test Case Assertion](../../conversation-testing/test-case-assertion){:target="_blank"}. 
+4. Text assertion fails because there is a mismatch between the _Expected_ and _Actual_ output. For more information, see [Test Case Assertion](../conversation-testing/test-case-assertion.md){:target="_blank"}. 
 
 5. Click the **X** icon to close the Intent Details window.
 

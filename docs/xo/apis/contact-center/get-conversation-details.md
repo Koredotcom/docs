@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Get Conversation Details API
 
 This API retrieves detailed information about a specific conversation session. It provides participant details, transfer history, queue activity, conversation status, notes, and dispositions.
@@ -119,7 +121,7 @@ curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{botI
   "userInfo": {
     "firstName": "Test",
     "lastName": "User",
-    "email": "Test.user@test.com",
+    "email": "john.doe@example.com",
     "phoneNumber": "9999999999",
     "activationStatus": "active"
   }

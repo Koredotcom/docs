@@ -7,7 +7,7 @@ The Service Node is a component type in a dialog task that you can use to add an
 The setup of a Service node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the Service node.
-2. Add a Service node in the designated place. For steps related to adding nodes, [refer here](../using-the-dialog-builder-tool.md#add-nodes){:target="_blank"}.
+2. Add a Service node in the designated place. For steps related to adding nodes, [add node to dialog](../using-the-dialog-builder-tool.md){:target="_blank"}.
 
     !!! note
 
@@ -54,23 +54,32 @@ To configure the Component Properties tab, please follow the steps below:
 
 7. Click the **Auth** tab to create a new Authorization Profile or select an existing profile. For more information, see the [Authorization Overview](../../../../app-settings/dev-tools/bot-authorization/bot-authentication.md) article.
 
-8. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
+8. Select **Advanced** to open the **Advanced Options** panel.
 
-9. Add the sample response(s) you want the Service Node to return.
+    * **Access Using a Connector** – Select *All URLs are in public domain* for public URLs, or *URLs are behind a firewall and a connector has been setup* for enterprise firewall access.
+
+    * **De-identification of PII Data** – Select *De-identify PII data and Redact Digital Forms data* to mask sensitive info (use `.original` suffix when original values are required), or *Use original values* to send unmasked data.
+
+    * **Client Certificate Exchange** – Enable to enforce mutual authentication with client and server certificates, adding a strong security layer against unauthorized access.
+
+    <img src="../images/service-node-img12-advanced-options.png" alt="Advaced Options" title="Advaced Options" style="border:1px solid gray;zoom:70%;">
+ 
+9. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
+10. Add the sample response(s) you want the Service Node to return.
 
     <img src="../images/service-node-img4-add-sample-response.png" alt="Service node - Sample response" title="Service node - Sample response" style="border:1px solid gray;zoom:70%;">
 
     Depending on the Service Type selected, refer to one of the following sections in this topic:
 
-    1. [Defining a Custom Service](#custom)
+    1. [Defining a Custom Service](#define-a-custom-service)
     2. [Defining a URL to Convert to Image](#define-a-url-to-convert-to-image)
     3. [Defining HTML to Convert to Image](#define-html-to-convert-to-image)
     4. [Defining Alert Subscription Service](#define-an-alert-subscription-service)
     5. [Defining Data Service](#define-a-data-service)
 
- 10.  Enable the **PII Redaction for API responses**.  
+11.  Enable the **PII Redaction for API responses**.  
     
-       * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add.** 
+       * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add**. Refer [Examples of Path Definitions](#examples-of-path-definitions).
 
        * Select one of the following options about how you want to **display** the sensitive data to non-authorized users:
          * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
@@ -92,13 +101,207 @@ To configure the Component Properties tab, please follow the steps below:
         For more information, see [Redacting Personally Identifiable Information ](../../../../app-settings/advanced-settings/pii-data-masking.md){:target="_blank"}.  
        <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"> 
 
-11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
+12. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
 
 !!! Note
 
     Post v11.3 release:  
      1.  **Service Call Timeout** and **Timeout Error Handling Behavior** settings have been moved from Component Properties to Instance Properties within the Service Node.  
      2.  The modifications made are exclusive to the particular dialog task and will not impact any other dialog tasks utilizing the same Service Node.
+
+
+
+
+#### Examples of Path Definitions
+
+Use these examples to learn how to define redaction paths for different data structures. Each example includes the API response, path syntax, and redacted result.
+
+!!! note
+
+    PII redaction requires you to specify exact paths to the fields you want to redact. PII redaction applies only to Custom Service nodes.
+
+**1. Key-Value Pairs**
+
+API response:
+
+
+```
+{
+  "customerId": 78901,
+  "fullName": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+```
+
+
+Path to redact: body.email
+
+After redaction:
+
+
+```
+{
+  "customerId": 78901,
+  "fullName": "Jane Doe",
+  "email": "####"
+}
+```
+
+
+**2. Array of Objects**
+
+API response:
+
+
+```
+{
+  "orders": [
+    { 
+     "orderId": 501, 
+     "creditCard": "4111-1111-1111-1111" 
+    },
+    { 
+     "orderId": 502,
+     "creditCard": "5555-5555-5555-4444"
+    }
+  ]
+}
+```
+
+
+Path to redact: body.orders.$.creditCard
+
+After redaction:
+
+
+```
+{
+  "orders": [
+    { "orderId": 501, "creditCard": "####" },
+    { "orderId": 502, "creditCard": "####" }
+  ]
+}
+```
+
+!!! note
+
+    Index-based redaction, such as `orders[0].creditCard,` is not allowed. Access path for one key in all records (`orders.$.creditCard`).
+
+
+**3. Nested Objects**
+
+API response:
+
+
+```
+{
+  "profile": {
+    "user": {
+      "id": 321,
+      "name": "Robert Smith",
+      "contact": {
+        "phone": "+1-202-555-0188",
+        "address": "742 Evergreen Terrace"
+      }
+    }
+  }
+}
+```
+
+
+Path to redact: body.profile.user.contact.phone
+
+After redaction:
+
+
+```
+{
+  "profile": {
+    "user": {
+      "id": 321,
+      "name": "Robert Smith",
+      "contact": {
+        "phone": "####",
+        "address": "742 Evergreen Terrace"
+      }
+    }
+  }
+}
+```
+
+
+!!! note
+
+    Redacting a parent object like `body.profile.user` automatically redacts all child keys.
+
+**4. Composite Objects**
+
+API response:
+
+
+```
+{
+  "meta": { "page": 1, "size": 2 },
+  "users": [
+    { "id": 1, "ssn": "123-45-6789", "email": "alpha@example.com" },
+    { "id": 2, "ssn": "987-65-4321", "email": "beta@example.com" }
+  ]
+}
+```
+
+
+Path to redact: (`body.users.$.ssn`) and (`body.users.$.email`)
+
+After redaction:
+
+
+```
+{
+  "meta": { "page": 1, "size": 2 },
+  "users": [
+    { "id": 1, "ssn": "####", "email": "####" },
+    { "id": 2, "ssn": "####", "email": "####" }
+  ]
+}
+```
+
+!!! note
+
+    If you redact an entire object and then try to access its child keys in downstream nodes, the task fails.
+
+**5. Headers**
+
+API response headers:
+
+
+```
+{
+  "headers": {
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "requestId": "abcd-1234-xyz-9999"
+  }
+}
+```
+
+
+Path to redact: headers.authorization
+
+After redaction:
+
+
+```
+{
+  "headers": {
+    "authorization": "####",
+    "requestId": "abcd-1234-xyz-9999"
+  }
+}
+```
+
+!!! note
+
+    Redacted values apply consistently across debug logs, conversation history, task execution logs, and NLP insights. Test your redaction paths in debug logs to ensure sensitive data is properly masked before deploying.
+
 
 
 #### Pre-processor Script
@@ -227,7 +430,7 @@ You can define the Service Type as:
     4. **DELETE** – Deletes the content of an existing target resource.
     5. **GET** – Returns the content of an existing target resource
 
-5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, http://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
+5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, https://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     1. Optionally, click **Show Advanced**, and select  
 
         1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. 
@@ -340,7 +543,7 @@ The following is an example for converting HTML to an image:
 
 * HTML: Print Wide HTML Tables
 
-* http://salman-w.blogspot.com/2013/04/printing-wide-html-tables.html
+* https://salman-w.blogspot.com/2013/04/printing-wide-html-tables.html
 
 */
 
@@ -469,7 +672,7 @@ Define the expected behavior of this alert if an upgraded version of the underly
 
         !!! Note
         
-            Your AI Agent should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../../administration/data/data-table/#assignments){:target="_blank"}.
+            Your AI Agent should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../administration/data/data-table.md#assignments){:target="_blank"}.
 
 2. In the **Request Definition** section, click **Define Request** to specify the operation you want to perform. [Click here for details.](../../../../administration/data/data-as-service.md){:target="_blank"}
 

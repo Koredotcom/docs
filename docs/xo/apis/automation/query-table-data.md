@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Query Data (Table) API
 
 Used to get data from Data Table.

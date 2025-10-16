@@ -17,6 +17,7 @@ theme:
     - navigation.top
     - navigation.path
     - navigation.footer    
+    - navigation.instant
     - search.suggest
     - search.highlight    
     - content.tabs.link
@@ -50,7 +51,17 @@ plugins:
         'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
         'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
-        'integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
+        'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
+        'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
+        'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
+        'contactcenter/configurations/settings/llm-streaming.md': 'generative-ai-tools/streaming-responses.md'
+        'contact-center/case-management-apis/create-a-case.md': 'apis/case-management-apis/create-a-case.md'
+        'contact-center/case-management-apis/create-a-task.md': 'apis/case-management-apis/create-a-task.md'
+        'contact-center/case-management-apis/get-cases.md': 'apis/case-management-apis/get-cases.md'
+        'contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
+        'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
+        'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
+
 extra:
   version:
     provider: mike
@@ -121,7 +132,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      base_path: .
 
 copyright: |
   © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
@@ -185,8 +197,9 @@ nav:
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
+        - Quality AI: release-notes/11.x/quality-ai.md 
         - Voice Gateway: release-notes/11.x/voice-gateway.md
-        - Platform Services: release-notes/11.x/platform-services.md          
+        - Platform Services: release-notes/11.x/platform-services.md         
       - Upgrade Guides:
         - Benefits of XO v11: getting-started/benefits-xo11.md
         - Automation AI: getting-started/migration-path-xo10-to-xo11.md
@@ -294,7 +307,7 @@ nav:
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - Testing:
       - About Test and Debug: automation/testing/test-and-debug-overview.md
-      - Test (Talk to Bot): automation/testing/talk-to-bot.md
+      - Test: automation/testing/talk-to-bot.md
       - DialogGPT based Apps:
         - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
       - NLP based Apps:
@@ -450,24 +463,26 @@ nav:
         - System Settings: 
           - Co-Browse: contactcenter/configurations/settings/co-browse.md
           - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
-          - Replace Customer Column Data With User ID: contactcenter/configurations/settings/replace-customer-column-data-with-user-id.md
+          - Obscure Customer Info in Analytics - Interactions: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
           - Automatic Away Status for Agent Inactivity: contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
           - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
           - Reject Calls With a Delayed First Response: contactcenter/configurations/settings/reject-calls-with-delayed-first-response.md
-          - LLM Streaming: contactcenter/configurations/settings/llm-streaming.md
           - Translation Configurations: contactcenter/configurations/settings/translation-configurations.md
           - Real Time Sentiment Analysis: contactcenter/configurations/settings/real-time-sentiment-analysis.md
           - Wrap-up Code Prediction: contactcenter/configurations/settings/wrap-up-code-prediction.md
+    - Performance Management:
       - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
+    - Flows:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
+      - Debug Logs: contactcenter/flows-and-routing/debugging-and-troubleshooting.md
     - Routing:
       - Contact Center AI Routing: contactcenter/routing/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md
       - Skills: contactcenter/routing/skills/skill-management.md
-    - Agent Console:
+    - Console:
       - Introduction to the Console: console/agent-console-introduction.md
       - Conversation Tray: console/conversation-tray.md
       - Incoming Interactions: console/managing-incoming-interactions.md
@@ -498,12 +513,14 @@ nav:
     - Getting Started:     
       - Setup Guide: quality-ai/getting-started/setup-guide.md
       - Best Practices for Auto QA Configuration: quality-ai/getting-started/best-practices-for-auto-qa-config.md      
-      - AI Assisted Manual Audit: quality-ai/ai-assisted-manual-audit.md      
+      - AI-Assisted Manual Audit: quality-ai/ai-assisted-manual-audit.md  
+    - Onboarding: quality-ai/getting-started/quality-ai-onboarding.md    
     - Analyze:
       - Dashboard:
         - Supervisor Dashboard: quality-ai/analyze/dashboard.md
-        - Supervisor View (Agent-Specific Dashboard): quality-ai/analyze/Supervisor-view-agent-dashboard.md
-        - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md                          
+        - Supervisor View with Agent-Specific Dashboard: quality-ai/analyze/supervisor-view-agent-specific-dashboard.md
+        - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md
+        - Agent Dashboard - Supervisor Evaluation: quality-ai/analyze/agent-dashboard-supervisor-evaluation.md                         
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
       - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md
       - Conversation Mining: 
@@ -513,7 +530,7 @@ nav:
       - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md            
     - Coach:
         - Coaching Assignments: 
-          - Supervisor View: quality-ai/coach/coaching-assignments-supervisor-view.md
+          - Supervisor Evaluation: quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md
           - Agent View: quality-ai/coach/coaching-assignments-agent-view.md 
         - Coaching Monitor: quality-ai/coach/coaching-monitor.md        
     - Configure:
@@ -534,6 +551,7 @@ nav:
       - Connectors: 
           - Introduction: quality-ai/connectors/connector-intro.md
           - Amazon S3: quality-ai/connectors/amazon-s3.md
+      - Conversation Sources: quality-ai/configure/conversation-sources.md
       - Settings: 
         - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
         - Quality AI General Settings: quality-ai/configure/quality-ai-general-settings.md
@@ -577,6 +595,7 @@ nav:
       - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
+      - SDK Fields and Details: agentai/integration/AgentAI-webSDK/sdk-fields-and-details.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
       - View Customized Events: agentai/integration/AgentAI-webSDK/view-customized-events.md
       - My Bot Tab: agentai/integration/AgentAI-webSDK/mybot-tabs.md
@@ -717,11 +736,15 @@ nav:
         - Rate Limits:
           - Automation AI: apis/automation/rate-limit.md
           - Contact Center AI: apis/automation/rate-limit-ccai.md
+          - Quality AI: apis/automation/rate-limit-quality-ai.md
+          - Case Management: apis/automation/rate-limit-case-management.md
         - API List:          
           - Automation AI: apis/automation/api-list.md
           - Search AI: apis/searchai/api-list.md
-          - Contact Center AI: apis/contact-center/contact-center-api-list.md
-          - Agent AI: apis/agent-ai/apis-list.md
+          - Contact Center AI: apis/contact-center/api-list.md
+          - Agent AI: apis/agent-ai/api-list.md
+          - Quality AI: apis/quality-ai/api-list.md
+          - Case Management: apis/case-management-apis/api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
@@ -750,8 +773,10 @@ nav:
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
     - Search AI:
       - Answer Insights: analytics/searchai/answer-insights.md
-    - GenAI Analytics:
-      - LLM and GenAI Usage Logs: analytics/genai-analytics/llm-usage-logs.md
+    - GenAI Analytics: 
+      - GenAI Dashboard: analytics/genai-analytics/genai-dashboard.md
+      - Performance Analytics: analytics/genai-analytics/genai-performance-analytics.md
+      - GenAI Logs: analytics/genai-analytics/llm-usage-logs.md
     - Automation:
       - Performance Dashboard: analytics/automation/performance-dashboard.md
       - Conversation Insights: analytics/automation/conversation-insights.md

@@ -44,7 +44,7 @@ You can add utterances in two ways:
             To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
 
     2. Select rules, as required, from the **Add Rules** list and click **Add**.
-      <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
+      <img src="../agent-coaching-images/select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
        
     3. All added rules are displayed on the left, and the AI starts searching for more utterances that are similar in meaning to the utterances of your selected rules.
     

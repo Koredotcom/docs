@@ -107,7 +107,7 @@ Steps to authorize a Microsoft Graph action using developer credentials:
         
         * **Refresh Token URL** – The refresh token URL of the Microsoft Azure Portal.  
 
-          To register an Azure App, read the [Adding the Microsoft Teams Channel](../../../../channels/add-microsoft-teams-channel.md){:target="_blank"} article.
+          To register an Azure App, read the [Adding the Microsoft Teams Channel](../../../../channels/add-microsoft-teams-channel.md{:target="_blank"} article.
 
         <img src="../images/ms-graph-action-img6.png" alt="Auth credentials" title="Auth credentials" style="border: 1px solid gray;zoom:50%;"/>
 

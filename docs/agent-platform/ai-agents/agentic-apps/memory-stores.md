@@ -1,10 +1,10 @@
 # Memory Stores in Agentic Apps
 
-Memory stores in Agentic Apps enable agents to retain, access, and manipulate information during a session or across multiple sessions or interactions. They are essential for building intelligent, personalized, and context-aware experiences by maintaining data during agent workflow executions.
+Memory stores in Agentic Apps enable agents to retain, access, and manipulate information during a session or across multiple sessions or interactions. They're essential for building intelligent, personalized, and context-aware experiences by maintaining data during agent workflow executions.
 
 Agentic Apps support two main types of memory:
 
-* **Session Meta Memory**: Default temporary memory for contextual data within a session. This is a default read-only system memory and cannot be directly updated by users. 
+* **Session Meta Memory**: Default temporary memory for contextual data within a session. This is a default read-only system memory and can't be directly updated by users. 
 * **Custom Memory Stores**: Persistent, user-defined stores that can be read and written to using code tools. The lifetime of the memory store varies as per the access type assigned to the store during creation. 
 
 ## Memory Page
@@ -26,9 +26,9 @@ To set up Memory store, provide the following details.
 
 **Basic Information**
 
-**Name**: Provide a user-friendly name for the store. Once a store is created, this name can be updated but it does not change the technical name of the store. 
+**Name**: Provide a user-friendly name for the store. Once a store is created, this name can be updated but it does't change the technical name of the store. 
 
-**Technical Name**: Provide a unique name for the store. This name **cannot be modified** after the store is created. Note that this name should not have any special characters or spaces. This is the name that is used within prompts and code tools to refer to the memory store. 
+**Technical Name**: Provide a unique name for the store. This name **cannot be modified** after the store is created. Note that this name should't have any special characters or spaces. This is the name that's used within prompts and code tools to refer to the memory store. 
 
 **Description**: Provide a brief summary describing the intended usage or purpose of this memory store.
 
@@ -83,7 +83,7 @@ This section is used to control data access and retention.
 * **Application-wide**: Data is scoped to the app level. This data is available to all users throughout the application, irrespective of the sessions. 
 * **Session-level**: Data is only available within the same session. 
 
-**Retention Policy**: This field specifies how long the data is retained, irrespective of the access type value. This can be set to **session-level,** in which case it is retained only for the duration of a session. Alternatively, you can specify the time( 1 day, 1 week, or 1 month) for which the data must be retained before automatically removing it from the memory store. 
+**Retention Policy**: This field specifies how long the data is retained, irrespective of the access type value. This can be set to **session-level,** in which case it's retained only for the duration of a session. Alternatively, you can specify the time( 1 day, 1 week, or 1 month) for which the data must be retained before automatically removing it from the memory store. 
 
 !!!note
     Set appropriate retention periods based on specific usage of the data to balance performance, cost, and compliance.
@@ -151,7 +151,7 @@ Field-name: name of the field as defined in the schema of the memory store.
 Agentic Apps provide **Memory Stores** to persist data across interactions. These stores can be **read from within prompts, workflow tools, and code tools**, but can be **updated or deleted via code tools or workflow tools**.
 
 * A Memory store can be **referenced in tools using its technical name only.**
-* *sessionMeta* cannot be manipulated via code tools. 
+* *sessionMeta* can't be manipulated via code tools. 
 
 ### Supported Languages
 
@@ -216,7 +216,7 @@ memory.set_content(<store_name>,<data_object>)
 
 **Javascript Examples**
 
-  1. To update the name in a record. Based on the access type of the memory store, if the corresponding record does not already exist, the following method will create a new record and set the firstname as John. 
+  1. To update the name in a record. Based on the access type of the memory store, if the corresponding record does't already exist, the following method will create a new record and set the firstname as John. 
   ``` 
   await memory.set_content("employee",{"firstname":"John"})
   ```
@@ -261,7 +261,7 @@ For detailed instructions on how to access memory from workflow tools and exampl
 
 ## Session Meta Memory
 
-The `sessionMeta`memory store is the **default memory store** used in Agentic Apps for handling metadata and session-specific information. It is typically used to:
+The `sessionMeta`memory store is the **default memory store** used in Agentic Apps for handling metadata and session-specific information. It's typically used to:
 
 
 
@@ -288,7 +288,7 @@ This memory store follows the following schema:
 ```
 
 
-The **metadata** field is used to maintain any contextual metadata information. ***Developers can update this field only via the APIs or while accessing the platform via XO or AI for Work.***
+The **metadata** field is used to maintain any contextual metadata information. ***Developers can update this field only via the APIs or while accessing the platform through AI for Service or AI for Work.***
 
 The **sessionInfo** is a system-populated object that contains metadata about the current session. It includes the following fields:
 
@@ -318,4 +318,4 @@ For example, you can add the user name to the prompt as follows if the metadata 
 
 The name of the employee is {{memory.sessionMeta.metadata.empName}}
 
-Note: This is a read-only memory store and cannot be updated via tools. However, you can update the metadata field in sessionMeta via APIs. Refer to [this to learn more](../../apis/agentic-apps/execute.md).
+Note: This is a read-only memory store and can't be updated via tools. However, you can update the metadata field in sessionMeta via APIs. Refer to [this to learn more](../../apis/agentic-apps/execute.md).
