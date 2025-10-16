@@ -62,7 +62,7 @@ The API response includes the **model ID** and the **guardrail deployment status
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://gale.kore.ai</code>.
+   <td>The environment URL. For example, <code>https://ai-for-process.kore.ai</code>.
    </td>
    <td>String
    </td>

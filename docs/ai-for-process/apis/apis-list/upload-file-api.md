@@ -71,7 +71,7 @@ This method directly hits the endpoint and returns the <code>fileId</code> and `
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://gale.kore.ai</code>.
+   <td>The environment URL. For example, <code>https://ai-for-process.kore.ai</code>.
    </td>
    <td>String
    </td>
@@ -83,7 +83,7 @@ This method directly hits the endpoint and returns the <code>fileId</code> and `
 ### Sample Request
 
 ```js
-curl --location 'https://gale.kore.ai/api/public/files' \
+curl --location 'https://ai-for-process.kore.ai/api/public/files' \
 --header 'x-api-key: xxxxx' \
 --form 'file=@"postman-cloud:///1efxxxxe-bxx9-4xx0-bxx3-14xxxxxxxxx9"' \
 --form 'fileContext="bulkImport"'
@@ -217,7 +217,7 @@ The API initializes the file upload process and returns a <code>session ID</code
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://gale.kore.ai</code>
+   <td>The environment URL. For example, <code>https://ai-for-process.kore.ai</code>
    </td>
    <td>String
    </td>
@@ -229,7 +229,7 @@ The API initializes the file upload process and returns a <code>session ID</code
 #### Sample Request
 
 ```js
-curl --location 'https://preprod-gale.kore.ai/api/public/files/session/start' \
+curl --location 'https://ai-for-process.kore.ai/api/public/files/session/start' \
 --header 'x-api-key: kg-b9xxxxxc-cxxf-5xxf-8xxe-6xxxxxxxxxx8-3xxxxx2a-exxa-4xx8-8xx5-exxxx1axxxxxd' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -392,7 +392,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://gale.kore.ai</code>
+   <td>The environment URL. For example, <code>https://ai-for-process.kore.ai</code>
    </td>
    <td>String
    </td>
@@ -414,7 +414,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
 #### Sample Request
 
 ```js
-curl --location 'https://preprod-gale.kore.ai/api/public/files/session/14xxxxxd-0xx4-4xxf-axx1-69xxxxxxxxx8' \
+curl --location 'https://ai-for-process.kore.ai/api/public/files/session/14xxxxxd-0xx4-4xxf-axx1-69xxxxxxxxx8' \
 --header 'x-api-key: {{apikey}}' \
 --header 'Content-Type: application/json' \
 --form 'file=@"postman-cloud:///1exxxxxc-9xxd-4xx0-8xxa-3xxxxxxxxxxa"' \
@@ -541,7 +541,7 @@ This API merges the uploaded chunks and finalizes the process using the `session
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://gale.kore.ai</code>
+   <td>The environment URL. For example, <code>https://ai-for-process.kore.ai</code>
    </td>
    <td>String
    </td>

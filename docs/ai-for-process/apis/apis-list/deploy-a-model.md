@@ -51,7 +51,7 @@ The API response includes the **model ID** and the **model deployment status**. 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://gale.kore.ai</code>.
+   <td>The environment URL. For example, <code>https://ai-for-process.kore.ai</code>.
    </td>
    <td>String
    </td>
@@ -122,7 +122,7 @@ curl --location 'https://dev-agent-platform.kore.ai/api/public/models/cm-2xxxxxx
 **For a Finetune Model Source**
 
 ```js
-curl --location 'https://preprod-gale.kore.ai/api/public/models/cm-6xxxxxxxxxxxxxxxxxx9/deploy?modelType=fineTune' \
+curl --location 'https://ai-for-process.kore.ai/api/public/models/cm-6xxxxxxxxxxxxxxxxxx9/deploy?modelType=fineTune' \
 --header 'x-api-key: kg-2xxxxxxxxxxxxxxxxxxf-7xxxxxxx-7xx8-4xxf-8xx7-dxxxxxxxxxx3' \
 --header 'Content-Type: application/json' \
 --data '{

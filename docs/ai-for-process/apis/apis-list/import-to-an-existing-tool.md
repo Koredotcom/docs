@@ -49,7 +49,7 @@ After triggering the import, the response returns a <code>dockStatusId</code>. U
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, https://gale.kore.ai
+   <td>The environment URL. For example, https://ai-for-process.kore.ai
    </td>
    <td>String
    </td>

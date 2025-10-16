@@ -1,6 +1,6 @@
-# Accessing GALE
+# Accessing AI for Process
 
-By signing up and creating an account, you can efficiently manage GALE's modules and collaborate with your team on projects in one place.
+By signing up and creating an account, you can efficiently manage AI for Process' modules and collaborate with your team on projects in one place.
 
 ## Supported Browsers
 
@@ -8,22 +8,12 @@ Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Int
 
 ## GALE Account Creation Using SSO
 
-You can sign up for GALE at [https://gale.kore.ai/](https://gale.kore.ai/){:target="_blank"}.
+You can sign up for AI for Process at [AI for Process](https:///www.example.com)
 
-When you sign up for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how the process works based on the domain of your email address:
+When you sign up for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how it works:
 
-**Email Address with Kore.com Domain**
-
-* If your email address ends with "@kore.com" (e.g., <john@kore.com>), you are automatically granted access to GALE.
-* You can directly create an account with your Kore.com email without any additional steps.
-
-**Email Address with a Different Domain**
-
-* If your email address has a different domain (e.g., <john@doe.com>), you cannot directly create an account.
-* The Kore team needs to invite you to join GALE.
+* The Kore team invites you to join AI for Process.
 * Once invited, you can then proceed to create an account using your email address.
-
-This ensures that only users with a Kore.com email can self-register, while others need authorization from the Kore team to gain access.
 
 ## Accounts
 
@@ -89,7 +79,7 @@ An account owner or master admin can perform the following functions:
 
 ## New Account Sign Up and Activation
 
-If you do not have an account on GALE, visit this home page [link](https://gale.kore.ai/){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}.
+If you do not have an account on GALE, visit this home page [link](https://ai-for-process.kore.ai){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}.
 
 You can sign up on GALE in one of the following ways:
 
@@ -166,7 +156,7 @@ If the verification link or code expires or becomes invalid, the system prompts 
 
 ## Sign in to GALE
 
-Once you sign up and activate your GALE account, you can sign in for the first time on the [login page](https://qa-gale.kore.ai/){:target="_blank"} using one of the following methods:
+Once you sign up and activate your GALE account, you can sign in for the first time on the [login page](https://ai-for-process.kore.ai/){:target="_blank"} using one of the following methods:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

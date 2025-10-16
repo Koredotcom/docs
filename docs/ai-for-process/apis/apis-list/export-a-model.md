@@ -49,7 +49,7 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://gale.kore.ai</code>
+   <td>The environment URL. For example, <code>https://ai-for-process.kore.ai</code>
    </td>
    <td>String
    </td>
@@ -95,7 +95,7 @@ No parameters are passed.
    "status": "SUCCESS",
    "percentageComplete": 100,
    "response": {
-       "downloadUrl": "https://gale.kore.ai/api/v1/account/xxxxxx"
+       "downloadUrl": "https://ai-for-process.kore.aiapi/v1/account/xxxxxx"
   }
 }
 ```
