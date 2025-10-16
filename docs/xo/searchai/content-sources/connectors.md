@@ -20,6 +20,7 @@ During each synchronization cycle, the connector performs **incremental updates*
 
 Refer to the [Connector Directory](connectors/connector-directory.md) for the complete list of applications supported via connectors. For any specific integration requirements, please [contact us](https://kore.ai/contact-us/). 
 
+
 ## Authorization Support for Connectors
 
 Search AI supports two types of authorization mechanisms. 
@@ -28,13 +29,13 @@ Search AI supports two types of authorization mechanisms.
 To use this type of authorization, provide your **username** and **password**. 
 
 2. **OAuth 2.0**: The OAuth 2.0 framework allows third-party applications to access resources on behalf of a user without sharing the credentials. It involves the exchange of access tokens between the client application and the authorization server. 
-To use this type of authorization mechanism, **register Search AI as an Inbound OAuth client in your backend application.**
+To use this type of authorization mechanism, **register Search AI as an Inbound OAuth client in your application.**
 
 OAuth 2.0 protocol defines several grant types for different use cases. Each grant type is designed to address specific authorization scenarios. 
 
 Currently, SearchAI supports the following grant types:
 
-1. **Client credentials Grant Type**: In this type, the client application(SearchAI, here) directly accesses the resources from the backend application. The client sends the client ID and client secret and gets an access token to access the resources directly. 
+1. **Client credentials Grant Type**: In this type, the client application(SearchAI, here) directly accesses the resources from the application. The client sends the client ID and client secret and gets an access token to access the resources directly. 
     For this type of authentication, provide the **client ID** and **client secret** generated after registering Search AI as an OAuth client application. 
 
 2. **Authorization Code Grant Type**: In the type, the client application(SearchAI) accesses the resources on behalf of a user. Here’s how it works:
@@ -63,13 +64,13 @@ The Connectors are available under the Content Section. There are two tabs that 
 
 ### Adding a content source using Connector
 
-To set up a new connector, select the application connector from All connectors and provide the configuration details. Choose it from the list of supported connectors and enter the configuration details. For comprehensive instructions on setting up connectors, refer to the [specific connector documentation](connectors/connector-directory.md).
+To set up a new connector, select the application connector from All Connectors and provide the configuration details. Choose it from the list of supported connectors and enter the configuration details. For comprehensive instructions on setting up connectors, refer to the [specific connector documentation](connectors/connector-directory.md).
 
 **Setup Steps**
 
 **Step 1: Authentication**: Provide the necessary authentication details (OAuth credentials, API keys, tokens, etc) to establish a connection with the external application. 
 
-**Step 2: Manage Content**: Choose the type of content to be ingested. Apply filters as needed and optionally customize field mappings to align source fields with the Search AI schema.
+**Step 2: Manage Content**: Choose the type of content to be ingested. Apply filters as needed and optionally customize field mappings to align source fields with the Search AI schema. 
 
 **Step 3: Permissions**: Select the permission level for the users to access content. 
 
@@ -91,18 +92,28 @@ When configuring a connector, you can define the type of content to be ingested 
 
 Refer to the specific connector documentation for a detailed list of supported content types (objects) for each integration.
 
+### Unified Schema for Content Ingestion
+
+All the data ingested into Search AI through connectors is stored using a Unified Schema. This schema provides a standardized structure for representing content, ensuring consistency across diverse data sources such as Google Drive, Salesforce, SharePoint, and others.
+
+By default, content fields retrieved from external connectors are automatically mapped to the most relevant fields in the Unified Schema. This ensures that data from multiple systems follows a consistent format and can be processed and searched uniformly within Search AI. Use the Field Mapping section to update the mapping of fields in the third party application to that in Search AI for specific requirements.
+
+In addition to the default fields, you can extend the Unified Schema by adding custom fields to meet specific business or integration requirements.
+
+Learn more about the [Unified Schema and how to add custom fields to the schema here](connectors/unified-schema.md). 
+
 ### Selecting Content Type
 
 Under the **Ingestion** section,
 
 * Choose the content types you want to ingest. 
-* For some connectors, you can apply **filters** to enable **selective ingestion**, for example: ingesting only content created within a specific timeframe, belonging to a particular category, or assigned to specific users.
+* For some connectors, you can apply **filters** to enable **selective ingestion**, for example, ingesting only content created within a specific timeframe, belonging to a particular category, or assigned to specific users.
 
 Note: Filters are available only if supported by the specific connector.
 
 ### Field Mapping
 
-Field Mapping allows you to align fields from the source application with **Search AI’s standard schema**. This ensures that ingested data is accurately transferred, normalized, and indexed for optimal search and retrieval.
+Field Mapping allows you to align fields from the source application with [Search AI’s unified schema](connectors/unified-schema.md). This ensures that ingested data is accurately transferred, normalized, and indexed for optimal search and retrieval.
 
 Use the Field Mapping section to map fields from the source (connector) to the corresponding Search AI fields. This ensures that content is accurately transferred, transformed, and indexed for optimal search and analysis.
 
@@ -121,7 +132,7 @@ If the source application stores the document creator as authorDetails.fullName,
 context.doc_created_by_name = context?.raw_json?.authorDetails?.fullName;
 ```
 
-**Manage Schema**: Access the Manage Schema option to view the schema fields of the application and customize their descriptions. This helps users understand how and when to use this field.
+**Manage Schema**: Access the Manage Schema option to view the schema fields of the application and customize their descriptions. This helps users understand how and when to use this field. Learn more about [the default document fields here](connectors/unified-schema.md).
 
 ![Manage Schema](images/manage-schema.png "Manage Schema")
 
@@ -149,9 +160,9 @@ For more information about RACL implementation in Search AI, see [RACL support](
 
 ## Sync and Ingest Content
 
-By default, when a connector is added, the content is't ingested from the third-party application until a **Sync** operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
+By default, when a connector is added, the content isn't ingested from the third-party application until a **Sync** operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
 
-Note that the files larger than 15MB will be skipped during the ingestion process. Ensure your files are within the size limit for proper ingestion. To increase this limit, reach out to[ our support team](https://kore.ai/support/). 
+Note that the files larger than 15MB are skipped during the ingestion process. Ensure your files are within the size limit for proper ingestion. To increase this limit, reach out to[ the support team](https://kore.ai/support/). 
 
 To initiate a sync operation manually, click the **Save and Sync** button at any time. 
 
@@ -184,7 +195,7 @@ The JSON view provides detailed information of the ingested content. The ingeste
 **Stopping the Synchronization**
 
 * If you manually stop synchronization using the **Stop Sync** option while the sync job is actively running, it will halt immediately. Any content that has already been ingested at the time of stopping will be available for search.
-* If the sync job is queued when you select Stop Sync, the synchronization will be canceled and will not proceed.
+* If the sync job is queued when you select Stop Sync, the synchronization will be canceled and won't proceed.
 
 **Schedule Sync**
 
