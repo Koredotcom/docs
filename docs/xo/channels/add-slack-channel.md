@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Slack Channel
 
 To set up the Slack channel on the Platform and interact with an AI Agent using a Slack account, you must associate the AI Agent with a Slack app.

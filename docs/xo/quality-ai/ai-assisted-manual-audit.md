@@ -386,7 +386,7 @@ Display the following fields:
 
 #### By AI Agent 
 
-Delivers advanced sentiment analysis through GenAI features, enabling the **Post-Interaction Sentiment Analytics and Key Emotion Moments** option. This feature enhances post-interaction insights by analyzing agent conversations for deeper emotional and sentiment context. With the integration of **GenAI Copilot, **it leverages Quality AI with LLMs to generate detailed post-interaction sentiment analysis and highlight key emotional moments within conversations.
+Delivers advanced sentiment analysis through GenAI features, enabling the **Post-Interaction Sentiment Analytics and Key Emotion Moments** option. This feature enhances post-interaction insights by analyzing agent conversations for deeper emotional and sentiment context. With the integration of **GenAI Copilot**, it leverages Quality AI with LLMs to generate detailed post-interaction sentiment analysis and highlight key emotional moments within conversations.
 
 **Key Capabilities:**
 

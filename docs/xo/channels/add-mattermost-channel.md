@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Mattermost Channel
 
 You can connect Kore.ai assistants to your Mattermost account using either:

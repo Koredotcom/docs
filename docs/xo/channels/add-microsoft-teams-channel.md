@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Microsoft Teams Channel
 
 You can add Microsoft Teams as a delivery channel to your Kore.ai Assistant to allow it to interact with end-users using Microsoft Teams.
