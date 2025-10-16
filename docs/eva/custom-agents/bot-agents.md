@@ -1,10 +1,10 @@
 # Bot Agents
 
-Administrators can create bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the XO Platform can be seamlessly integrated, allowing actions to be executed directly when a workflow is triggered and eliminating the need for other platforms.
+Administrators can create bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the AI for Service Platform can be seamlessly integrated, allowing actions to be executed directly when a workflow is triggered and eliminating the need for other platforms.
 
-For complex workflows involving multiple system integrations and logic, users can build bots using the XO Platform. These bots can be triggered through conversations using the UI or NLP intent, streamlining the entire process.
+For complex workflows involving multiple system integrations and logic, users can build bots using the AI for Service Platform. These bots can be triggered through conversations using the UI or NLP intent, streamlining the entire process.
 
-For example, consider a Fund Transfer Bot Agent. By creating this bot on the XO Platform, you can automate fund transfers to clients' designated accounts, capturing key details such as client names, account information, and transfer amounts. Once integrated with your organization’s systems, the bot allows seamless conversational interactions, simplifying fund transfer operations.
+For example, consider a Fund Transfer Bot Agent. By creating this bot on the AI for Service Platform, you can automate fund transfers to clients' designated accounts, capturing key details such as client names, account information, and transfer amounts. Once integrated with your organization’s systems, the bot allows seamless conversational interactions, simplifying fund transfer operations.
 
 You can create a new agent or import an existing one.
 
@@ -28,7 +28,7 @@ To import an existing Bot Agent:
 ### Create a New Bot Agent
 
 You can create a new Bot agent to assist users in completing various tasks by
-utilizing the Bot created using the XO Platform. [Learn
+utilizing the Bot created using the AI for Service Platform. [Learn
 more.](https://docs.kore.ai/xo/getting-started/building-a-virtual-assistant/)
 
 To create a new Bot Agent, follow these steps:
@@ -41,14 +41,14 @@ To create a new Bot Agent, follow these steps:
 2.  On the Bot Agents page, click **+Create
     Agent.![](images/create-agent.png)**
 
-3.  You must link your Bot built on the XO Platform with **AI for Work** and
+3.  You must link your Bot built on the AI for Service Platform with **AI for Work** and
     create a webhook channel. [Learn
     more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).
     
     To create a webhook channel on the Bot and
     complete the integration process, follow these steps:
 
-    1.  Log in to the **XO Platform**. Open the virtual assistant or bot you
+    1.  Log in to the **AI for Service Platform**. Open the virtual assistant or bot you
         want to add the channels to. Navigate to **Deploy \> Channels**\> **Add
         More\>Webhook**. The Webhook dialog will
         appear.![](images/webhook.png)
@@ -148,5 +148,5 @@ status update.
 
 !!! note
 
-    * See [Alert](./alert-task.md) that allows developers to integrate conversation hold and resume functionality within XO Bots.
+    * See [Alert](./alert-task.md) that allows developers to integrate conversation hold and resume functionality within AI for Service Bots.
     * See [Notify](./notify-api.md) that allows developers to send interactive notifications to the users.
