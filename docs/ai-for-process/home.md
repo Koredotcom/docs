@@ -1,7 +1,7 @@
 ---
 template: home/home.html
-title: GALE
+title: AI for Process
 social:
   cards_layout_options:
-    title: Documentation that simply works
+    title: AI for Process documentation
 ---

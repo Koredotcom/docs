@@ -23,7 +23,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 Steps to access and view agent audit logs:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your GALE account.
+1. Sign in to your AI for Process account.
 2. On the top navigation bar, click **Agents**.
 3. On the **All agents** page, click the desired agent.
 4. In the left navigation pane, click **Audit logs**. The Audit logs page is displayed. 

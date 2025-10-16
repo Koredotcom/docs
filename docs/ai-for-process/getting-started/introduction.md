@@ -34,7 +34,7 @@ Agents, Models, and Prompts are the key components of GALE that work together to
 
 The diagram below shows GALE's comprehensive AI platform. The platform manages AI agents, models, and data integrations. It offers tools for development, deployment, and monitoring. The image also illustrates how GALE connects with external systems and users. This creates a complete ecosystem for AI operations.
 
-<img src="../images/gale-architecture-diagram.png" alt="Gale Architecture" title="Gale Architecture" style="border: 0px solid gray; zoom:100%;">
+<img src="../images/architecture-diagram.png" alt="Gale Architecture" title="Gale Architecture" style="border: 0px solid gray; zoom:100%;">
 
 === "GALE Core Offerings"
 

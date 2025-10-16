@@ -115,13 +115,6 @@ Alternatively, enter your email address and click **Continue** to sign up via em
 <p>You can sign in by entering the password if the email address is registered.</p>
 </div>
 
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>GALE is accessible by invitation only. If your email domain is different from Kore.ai, the system prompts you to request the Kore.ai admin for access.</p>
-</div>
-
-<img src="../images/gale-accessible-by-invitation-only.png" alt="invitation only" title="invitation only" style="border: 1px solid gray; zoom:75%;">
-
 Once the admin accepts your request via an invitation, you can complete the sign-up process.
 
 <ol start="3"><li>To sign up via email, enter your <b>Full Name</b> and <b>Password</b>, and click <b>Create Account</b>.</li></ol>
@@ -271,7 +264,7 @@ A mismatch in the **New password** and **Confirm password** fields displays an <
 
 After signing in, you are redirected based on the number of accounts you have joined. If you have one account, the system will redirect you to the **Agents** section of that account’s UI. If no agents are added to your account, the following page is displayed.
 
-<img src="../images/gale-landing-page.png" alt="gale landing page" title="gale landing page" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/landing-page.png" alt="gale landing page" title="gale landing page" style="border: 1px solid gray; zoom:75%;">
 
 **Choose from Multiple Accounts**
 
