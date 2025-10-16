@@ -9,14 +9,7 @@ Additionally, you can activate Conversation Intelligence, which helps ensure adh
 Yoc can access the **Quality AI** by navigating to **Quality AI** > **Configure** > **Settings** > **Quality AI General Settings**.  
 <img src="../settings/images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
 
-The QA has the following sections:
-
-* Auto QA
-* Agent Score Card
-* Bookmarks
-* Agent Access to Scored Interactions
-* Hide auditor details for agent
-* Quality AI Express
+The Quality AI General Settings include: 
 
 ### Auto QA
 

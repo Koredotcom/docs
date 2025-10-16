@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Cisco Webex Teams
 
 To add the Cisco Webex Teams (formerly Cisco Webex) channel to your AI Agent, the developer must create a dedicated AI Agent app and an integration app in Cisco Webex Teams.
