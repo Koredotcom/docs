@@ -1,6 +1,6 @@
 # About Agentic Apps
 
-Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They are intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), agentic apps can reason, adapt, and act without requiring constant human intervention.
+Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They're intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), agentic apps can reason, adapt, and act without requiring constant human intervention.
 
 ## Key Components
 
@@ -20,41 +20,15 @@ Key responsibilities include:
 * Resolving conflicts between agent outputs.
 * Verifying and validating responses before presenting to the user.
 
-The Agent Platform follows the Supervisor Pattern for its orchestrator. In this design, a central orchestrator functions as the supervisor, responsible for coordinating the activities of the various agents.
+The Agent Platform offers two types of orchestration patterns - the Supervisor pattern and the Adaptive Network pattern.
 
 ### Supervisor Pattern
 
-The Supervisor Pattern is an architectural pattern used in the design of agentic apps, where a central component called the "orchestrator" acts as a supervisor to manage and coordinate multiple AI agents. This pattern helps to efficiently handle complex tasks by breaking them down into smaller sub-tasks and delegating them to specialized agents.
+The Supervisor Pattern is an architectural pattern used in the design of agentic apps, where a central component called the "orchestrator" acts as a supervisor to manage and coordinate multiple AI agents. This pattern helps to efficiently handle complex tasks by breaking them down into smaller sub-tasks and delegating them to specialized agents. [Learn More](../supervisor.md).
 
-Here's how the Supervisor Pattern works and helps in agentic apps:
+### Adaptive Network Pattern
 
-1. User Input: The user provides input or a query to the agentic app.
-1. Orchestrator Analysis: The orchestrator, acting as the supervisor, receives the user input and analyzes it to understand the intent and context.
-1. Task Decomposition: The orchestrator breaks down the complex task into smaller, manageable sub-tasks that individual agents can handle.
-1. Agent Selection: Based on the nature of the sub-tasks, the orchestrator selects the most suitable agents to handle each one. This selection is based on the agents' specialized knowledge and capabilities.
-1. Task Delegation: The orchestrator assigns the sub-tasks to the selected agents and provides them with the necessary information and context.
-1. Agent Execution: Each agent independently works on its assigned sub-task, utilizing its specific skills, knowledge, and tools. Agents may interact with external systems or APIs to gather information or perform actions.
-1. Result Aggregation: Once the agents complete their sub-tasks, they return the results to the orchestrator.
-1. Conflict Resolution: If conflicts or inconsistencies arise in the results provided by different agents, the orchestrator resolves them to ensure a coherent outcome.
-1. Response Generation: The orchestrator combines the results from the agents and generates a final response to the user's query.
-
-Benefits of the Supervisor Pattern:
-
-* Modularity: The Supervisor Pattern enables a modular design, where each agent specializes in a specific domain or task.
-* Scalability: By distributing tasks among multiple agents, the agentic app can handle complex tasks and scale effectively.
-* Specialization: Agents can be designed to possess in-depth knowledge and skills in specific areas, resulting in more accurate and effective task execution.
-* Flexibility: The orchestrator can dynamically select and coordinate agents based on the task requirements, enabling the system to adapt to different scenarios.
-* Fault Tolerance: If an agent fails or provides incorrect results, the orchestrator can detect and handle the issue, ensuring the overall system remains functional.
-
-The Supervisor Pattern provides a structured approach to designing agentic apps, enabling efficient coordination and collaboration among AI agents to deliver intelligent and automated solutions.
-
-**Example:** In a banking app, to transfer funds from a savings account to pay off a loan, the orchestrator:
-
-1. Fetches information from the loan agent regarding the amount to be paid.
-1. Checks the savings account balance using the Transaction Manager.
-1. Pays off the loan after confirming with the user.
-1. Ensures both actions are completed successfully and in the correct order.
-1. Confirms the transaction to the user.
+The Adaptive Network Orchestration Pattern is an architectural approach for designing agentic applications in which specialized AI agents dynamically transfer task control and context to one another based on the task's requirements. In contrast to the supervisor orchestration pattern, which relies on a single controlling entity, this approach is decentralized, flexible, and adaptive. This allows agents to evaluate tasks and hand them off to the most suitable agent with relevant expertise. [Learn more](../adaptive-network.md).
 
 ### Agents
 
@@ -91,7 +65,7 @@ The process of an agent using tools follows this sequence:
 
 1. **Task Planning:** After receiving a user query via the orchestrator, the agent determines that it requires external functionality or data to fulfill the query.
 1. **Tool Identification:** The agent selects the most suitable tool for the task at hand.
-1. **Parameter Preparation:** Using LLM capabilities, the agent extracts relevant entities (e.g., location, date, user preference) and maps them to the required input format.
+1. **Parameter Preparation:** Using LLM capabilities, the agent extracts relevant entities (for example, location, date, user preference) and maps them to the required input format.
 1. **Tool Invocation:** The agent calls the tool, passing the prepared parameters.
 1. **Execution:** The tool processes the input and performs the necessary action.
 1. **Result Processing:** The agent processes the tool's output, validating, formatting, or using it for the next workflow step.
@@ -112,7 +86,7 @@ A Banking Assistant built as an Agentic App demonstrates how multiple specialize
 
 ![Banking Example](images/banking-example.png "Banking example")
 
-* The orchestrator manages communication between users and banking agents.
+* The orchestrator (Supervisor, in this case) manages communication between users and banking agents.
 * Specialized agents handle loans, transactions, cards, and more.
 * Each agent utilizes tools with built-in business logic to complete specific tasks.
 
@@ -120,9 +94,11 @@ This approach ensures an organized, automated, and scalable banking solution.
 
 <hr>
 
-#### Related Links
+### Related Links
 
 * [About AI Agents](../overview.md)
+* [Supervisor Pattern](../supervisor.md)
+* [Adaptive Network Pattern](../adaptive-network.md)
 * [Create an Agentic App](./create-app.md)
 * [Set up AI Agents](../create-agent.md)
 * [Configure Tools for Agents](../tools/overview.md)
