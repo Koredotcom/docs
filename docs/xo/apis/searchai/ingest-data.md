@@ -10,7 +10,7 @@ This API allows you to ingest and index data into the SearchAI application. You 
 * After uploading, include the `fileId` from the **Upload File API** response in the **Ingest API** to process the file content.
 * Currently, only uploading of PDF, docx, ppt or txt is supported. If any other type of file is sent for ingestion, the API throws error. 
 
-## Ingesting Strucutured Data
+## Ingesting Structured Data
 
 * To ingest structured data, add the content to the body of the request object in the API. Ensure that the data corresponds to the **Chunk Fields** listed in the table below.
 * **File Structure**: The JSON file must adhere to a specific structure for SearchAI to interpret the data correctly:
