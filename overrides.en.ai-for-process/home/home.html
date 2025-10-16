@@ -1,0 +1,769 @@
+<script>
+
+    var link = document.createElement("link");
+    link.setAttribute("rel", "icon");
+    link.setAttribute("href", "../images/gale_favicon.svg");
+    
+    var head = document.getElementsByTagName("head")[0];
+    head.appendChild(link);
+    
+    </script>
+<div class="kore-home-cntr gale">
+    {% extends "main.html" %}
+
+    <!-- Render hero under tabs -->
+    {% block tabs %}
+      {{ super() }}
+    
+      <!-- Additional styles for landing page -->
+      <style>
+    
+        /* Application header should be static for the landing page */
+        .md-header {
+          position: initial;
+        }
+    
+        /* Remove spacing, as we cannot hide it completely */
+        .md-main__inner {
+          margin: 0;
+        }
+    
+        /* Hide main content for now */
+        .md-content {
+          display: none;
+        }
+    
+        /* Hide table of contents */
+        @media screen and (min-width: 60em) {
+          .md-sidebar--secondary {
+            display: none;
+          }
+        }
+    
+        /* Hide navigation */
+        @media screen and (min-width: 76.25em) {
+          .md-sidebar--primary {
+            display: none;
+          }
+        }
+      </style>
+    
+      <!-- Hero for landing page -->
+        <style>
+      /* Banner styles start */
+        .mdc-main-banner{
+            background-image: url(assets/mdc-banner.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 110px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+        }
+        [data-md-color-scheme=slate] .mdc-main-banner {
+            background-image: none;
+            background-color: transparent;
+        }
+        .mdc-main-banner h1{
+            color: var(--md-default-fg-color--light);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            margin: 0px;
+        }
+        /* Banner styles end */
+
+
+        /* Banner search styles start */
+        .mdc-search{
+            width: 524px;
+            margin: auto;
+            position: relative;
+            transform: translateY(-20px);
+        }
+        .mdc-search-input{
+            padding: 11px 18px 11px 42px;
+            border-radius: 9.038px;
+            border: 0px solid var(--gray-300, #D0D5DD);
+            background: var(--base-white, #FFF);
+            box-shadow: 0px 1.13px 2.259px 0px rgba(16, 24, 40, 0.05);
+            outline: 0px;
+            width: 100%;
+        }
+        .mdc-search-icon{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: default;
+            width: 54px;
+        }
+        /* Banner search styles end */
+
+         /* Explore section styles start */
+        .mdc-explore-wrapper{
+            display: flex;
+            justify-content: center;
+            margin-top: 24px;
+        }
+        .mdc-explore-block{
+            display: flex;
+            padding: var(--spacing-sm, 8px) 16px;
+            gap: 16px;
+            border-radius: 66px;
+            border: 1px solid var(--gray-200, #EAECF0);
+            background: var(--base-white, #FFF);
+            align-items: center;
+        }
+        .mdc-explore-block .mdc-explore-block-info{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .mdc-explore-block .explore-icon{
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(33deg, #9747FF -0.23%, #8DCFFF 94.28%);
+        }
+        .explore-content{
+            color: var(--gray-500, #667085);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        .explore-content span{
+            color: var(--gray-900, #0000008a);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            margin-right: 8px;
+        }
+        .mdc-explore-block-action span{
+            color: var(--md-typeset-a-color);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; 
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+        /* Explore section styles End */
+
+        /* Services section styles start */
+        .mdc-services{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-gap: 14px;
+            margin-top: 14px;
+            justify-content: space-between;
+        }
+        .mdc-services-block{
+            display: flex;
+            border-radius: var(--radius-md, 8px);
+            padding: 14px;
+            border: 1px solid var(--gray-200, #EAECF0);
+            background: var(--base-white, #FFF);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+            gap: 14px;
+            cursor: pointer;
+        }
+
+        .mdc-services-block:hover{
+            background: #e9f2ff47;
+        }
+        .mdc-services-title{
+            color: var(--gray-900, #0000008a);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            margin: 0;
+        }
+        .mdc-services-des{
+            color: var(--gray-500, #0000008a);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            margin: 5px 0px 10px 0px;
+        }
+        .mdc-services-action{
+            color: var(--md-typeset-a-color);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-decoration: none;
+        }
+         /* Services section styles end */
+
+         /* Browse by offering section styles start */
+        .mdc-browse-by-offering{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background: var(--gray-50, #F9FAFB);
+            border-radius: 8px;
+            padding: 0px 64px;
+        }
+        .mdc-main-title{
+            color: var(--gray-900, #101828);
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px; 
+            margin: 0;
+        }
+        .mdc-nav-tabs{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            list-style-type: none;
+            padding: 0px;
+            flex-wrap: wrap;
+        }
+        .mdc-nav-tabs .mdc-nav-item{
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        .mdc-nav-tabs .mdc-nav-item .mdc-nav-link{
+            color: var(--gray-500, #667085);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            line-height: 20px;
+        }
+        .mdc-nav-tabs .mdc-nav-item:hover{
+            background: var(--primary-50, #EFF4FF);
+        }
+        .mdc-nav-tabs .mdc-nav-item:hover .mdc-nav-link{
+            background: var(--primary-50, #EFF4FF);
+            color: var(--md-typeset-a-color) !important;
+        }
+        .mdc-nav-tabs .mdc-nav-item.active{
+            background: var(--primary-50, #EFF4FF) !important;
+        }
+        .mdc-nav-tabs .mdc-nav-item.active .mdc-nav-link{
+            color: var(--md-typeset-a-color) !important;
+
+        }
+        .mdc-offering-data{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 12px;
+            padding-bottom: 20px;
+        }
+        .mdc-offering-data-block{
+            padding: var(--spacing-md, 16px);
+            border-radius: var(--radius-md, 8px);
+            transition: all 0.5s ease-in;
+            cursor: pointer;
+        }
+        .mdc-offering-data-block:hover{
+            box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+            background-color: #fff;
+        }
+        .mdc-offering-data-block .mdc-offering-header{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--gray-900, #101828);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+        .mdc-filter-icon{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mdc-offering-data-block:hover .mdc-filter-icon{
+            background: var(--primary-50, #EFF4FF);
+        }
+        .mdc-offering-data-block:hover .mdc-filter-icon svg path{
+            fill: var(--md-typeset-a-color) !important;
+        }
+        .mdc-offering-info{
+            color: var(--gray-500, #667085);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        .mdc-offering-action{
+            color: var(--md-typeset-a-color);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px; 
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+        /* Browse by offering section styles end */
+
+         /* Whats new section styles start */
+        .mdc-whats-new{
+            padding: 14px 0px;
+            display: flex;
+            gap: 24px;
+        }
+        .mdc-whats-new-left{
+            width: 50%;
+            padding: 0px 60px 0px 0px;
+        }
+        .mdc-heading{
+            color: var(--md-default-fg-color--light);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px; 
+            margin: 0px 0px 12px 0px;
+        }
+        .mdc-des{
+            color: var(--gray-500, #667085);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin: 0px 0px 24px 0px;
+        }
+        .mdc-whats-new-block{
+            margin-bottom: 12px;
+        }
+        .mdc-whats-new-title{
+            color: var(--gray-900, #101828);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px; 
+            padding-left: 20px;
+            position: relative;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+        }
+        .mdc-whats-new-title::before{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            border: 1.6px solid var(--purple-200, #D9D6FE);
+            background-color: var(--purple-600, #6938EF);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .mdc-whats-new-des{
+            padding-left: 20px;
+            position: relative;
+        }
+        .mdc-whats-new-des p{
+            color: var(--gray-500, #667085);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            padding: 12px 0px;
+            margin: 0px;
+        }
+        .mdc-whats-new-des span{
+            color: var(--gray-400, #98A2B3);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        .mdc-whats-new-des::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            border-left: 1px dashed var(--purple-300, #BDB4FE);
+            left: 3px;
+            top: 0;
+        }
+        .mdc-whats-new-block span{
+            color: var(--gray-400, #98A2B3);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px; 
+        }
+        .mdc-whats-new-right{
+            width: 50%;            
+            position: relative;
+            height: max-content;
+        }
+        .arrow-image{
+            position: absolute;
+            left: -61.309px;
+            top: -22.697px;
+            background-image: url(assets/quirky-paper-plane-with-dotted-line.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 138px;
+            height: 118px;
+        }
+        .mdc-whats-new-right h4{
+            color: var(--gray-900, #101828);
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0px;
+            line-height: 28px; 
+        }
+        .mdc-whats-new-right p{
+            margin: 0px;
+            color: var(--gray-700, #344054);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin: 8px 0px 40px 0px;
+        }
+        .mdc-email-notifi{
+            display: flex;
+            align-items: center;
+        }
+        .mdc-email-notifi .input-email{
+            padding: 10px 14px;
+            border-radius: var(--radius-md, 8px) 0px 0px var(--radius-md, 8px);
+            border: 1px solid var(--gray-300, #D0D5DD);
+            background: var(--base-white, #FFF);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            color: var(--gray-500, #667085);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            width: 100%;
+        }
+        .mdc-email-notifi  .send-btn{
+            padding: 10px 16px;
+            border-radius: 0px var(--radius-md, 8px) var(--radius-md, 8px) 0px;
+            border: 1px solid var(--gray-300, #D0D5DD);
+            background: var(--gray-50, #F9FAFB);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            color: var(--gray-500, #667085);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+        .relase-note-action{
+            color: var(--md-typeset-a-color);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            display: inline-block;
+            text-decoration: none;
+        }
+         /* Whats new section styles end */
+
+
+        .mdc-spacing{
+            height: 64px;
+        }
+
+         /* hepler section styles start */
+        .mdc-help-wrapper{
+            border-bottom: 1px solid var(--gray-200, #EAECF0);
+            padding: 16px 0px 40px 0px;
+        }
+        .mdc-help-title{
+            color: var(--gray-700, #344054);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            gap: 12px;
+            display: flex;
+            align-items: center;
+            margin: 0px;
+        }
+        .mdc-helpline-centers{
+            display: flex;
+            justify-content: center;
+            margin-top: 48px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .mdc-helpline-block{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .mdc-helpline-block .mdc-helpline-title{
+            color: #000;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+        .mdc-helpline-block .mdc-helpline-action{
+            color: var(--md-typeset-a-color);
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            line-height: 24px;
+        }
+         /* hepler section styles end */
+
+         /*Media quires for home page */
+         @media screen and (max-width:767px) {
+          .mdc-search{
+            width: 100%;
+            padding: 0px 20px;
+          }
+          .mdc-explore-wrapper{
+            margin-top: 15px;
+            padding: 0px 20px;
+          }
+          .mdc-explore-block{
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+          }
+          .mdc-explore-block-info{
+            flex-direction: column;
+            text-align: center;
+          }
+          .mdc-services{
+            padding: 0px 20px;
+          }
+          .mdc-browse-by-offering{
+            padding: 0px 20px;
+          }
+          .mdc-whats-new{
+            padding: 24px 20px;
+    flex-direction: column;
+
+          }
+          .mdc-whats-new-left{
+            padding: 0px;
+          }
+          .mdc-whats-new-right{
+            width: 100%;
+            padding: 20px !important;
+          }
+          .mdc-help-title{
+            justify-content: center;
+          }
+          .mdc-helpline-centers{
+            margin-top: 20px !important;
+            gap: 10px;
+          }
+          .mdc-main-banner h1{
+            font-size: 18px;
+          }
+        }
+        [data-md-color-scheme=slate] .mdc-services-block{
+            background: #2e303d;
+            border-color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-services-block:hover{
+            background: #2e303d;
+            border-color: #fff;
+        }
+        [data-md-color-scheme=slate] .mdc-services-title{
+          color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-services-des{
+          color: #fff;
+        }
+        [data-md-color-scheme=slate] .mdc-explore-block{
+            background: #2e303d;
+        }
+        [data-md-color-scheme=slate] .explore-content span{
+          color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .explore-content{
+          color: #fff;
+        }
+        [data-md-color-scheme=slate] .mdc-browse-by-offering{
+          background: #2e303d;
+        }
+        [data-md-color-scheme=slate] .mdc-main-title, [data-md-color-scheme=slate] .mdc-heading,[data-md-color-scheme=slate] .mdc-whats-new-title,[data-md-color-scheme=slate]  .mdc-whats-new-right h4{
+            color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-offering-data-block:hover{
+            border: 1px solid #fff;
+            background: #2e303d !important;
+        }
+        [data-md-color-scheme=slate]  .mdc-nav-tabs .mdc-nav-item .mdc-nav-link{
+            color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-offering-data-block .mdc-offering-header{
+            color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-offering-info, [data-md-color-scheme=slate] .mdc-des, [data-md-color-scheme=slate] .mdc-whats-new-des p, [data-md-color-scheme=slate] .mdc-whats-new-block span,[data-md-color-scheme=slate] .mdc-whats-new-right p{
+            color: #fff;
+        }
+        [data-md-color-scheme=slate]  .mdc-offering-data-block .mdc-filter-icon svg path{
+            fill: var(--md-default-fg-color--light) !important;
+        }
+        [data-md-color-scheme=slate] .mdc-offering-data-block:hover .mdc-filter-icon svg path{
+            fill: var(--md-typeset-a-color) !important;
+        }
+        [data-md-color-scheme=slate]  .mdc-whats-new-right{
+            background: transparent;
+           border: 1px solid var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate]  .mdc-email-notifi .input-email,[data-md-color-scheme=slate]  .mdc-email-notifi .send-btn{
+            border-color: var(--md-default-fg-color--light);
+            background: transparent;
+            color: #fff;
+        }
+        [data-md-color-scheme=slate] .mdc-whats-new-title svg path{
+          fill: #fff !important;
+        }
+        [data-md-color-scheme=slate] .mdc-helpline-block .mdc-helpline-title{
+           color: var(--md-default-fg-color--light)
+        }
+        [data-md-color-scheme=slate] .mdc-helpline-block svg path{
+           color: var(--md-default-fg-color--light)
+        }
+        </style>
+      <section class="mdx-container">
+        <div class="mdc-main-banner">
+            <h1>Welcome to GALE Documentation</h1>
+        </div>
+        <main class="mdc-main md-grid">
+            <!--Banner search Start-->
+            <!-- <div class="mdc-search">
+                <input type="text" class="mdc-search-input">
+                <span class="mdc-search-icon">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" >
+                      <path d="M19.8465 20.2705L15.7512 16.1752M17.9636 10.856C17.9636 15.0155 14.5916 18.3876 10.432 18.3876C6.27241 18.3876 2.90039 15.0155 2.90039 10.856C2.90039 6.69636 6.27241 3.32434 10.432 3.32434C14.5916 3.32434 17.9636 6.69636 17.9636 10.856Z" stroke="#98A2B3" stroke-width="1.8829" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </div> -->
+             <!--Banner search End-->
+    
+            <!--Explore section start-->
+            <div class="mdc-explore-wrapper">
+                <div class="mdc-explore-block">
+                    <div class="mdc-explore-block-info">
+                        <div class="explore-icon">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path opacity="0.16" d="M9.16675 2.59485L10.3229 5.60076C10.5109 6.08958 10.6049 6.33399 10.7511 6.53957C10.8806 6.72178 11.0398 6.88098 11.222 7.01054C11.4276 7.15672 11.672 7.25072 12.1608 7.43873L15.1667 8.59485L12.1608 9.75097C11.672 9.93898 11.4276 10.033 11.222 10.1792C11.0398 10.3087 10.8806 10.4679 10.7511 10.6501C10.6049 10.8557 10.5109 11.1001 10.3229 11.5889L9.16675 14.5948L8.01063 11.5889C7.82262 11.1001 7.72862 10.8557 7.58244 10.6501C7.45287 10.4679 7.29368 10.3087 7.11147 10.1792C6.90589 10.033 6.66148 9.93898 6.17266 9.75097L3.16675 8.59485L6.17265 7.43873C6.66148 7.25072 6.90589 7.15672 7.11147 7.01054C7.29368 6.88098 7.45287 6.72178 7.58243 6.53957C7.72862 6.33399 7.82262 6.08958 8.01063 5.60076L9.16675 2.59485Z" fill="white"/>
+                                <path d="M3.49992 15.2615V11.9282M3.49992 5.26153V1.92819M1.83325 3.59486H5.16659M1.83325 13.5949H5.16659M9.16659 2.59486L8.01047 5.60077C7.82246 6.08959 7.72846 6.334 7.58227 6.53958C7.45271 6.72179 7.29352 6.88099 7.11131 7.01055C6.90572 7.15673 6.66131 7.25073 6.17249 7.43874L3.16659 8.59486L6.17249 9.75098C6.66131 9.93899 6.90572 10.033 7.11131 10.1792C7.29352 10.3087 7.45271 10.4679 7.58227 10.6501C7.72846 10.8557 7.82246 11.1001 8.01047 11.589L9.16659 14.5949L10.3227 11.589C10.5107 11.1001 10.6047 10.8557 10.7509 10.6501C10.8805 10.4679 11.0397 10.3087 11.2219 10.1792C11.4274 10.033 11.6719 9.93898 12.1607 9.75098L15.1666 8.59486L12.1607 7.43874C11.6719 7.25073 11.4274 7.15673 11.2219 7.01055C11.0397 6.88099 10.8805 6.72179 10.7509 6.53958C10.6047 6.334 10.5107 6.08959 10.3227 5.60077L9.16659 2.59486Z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="explore-content">
+                           <span>GALE</span>a platform that empowers enterprises to build Gen AI agents.
+                        </div>
+                    </div>
+                    <div class="mdc-explore-block-action">
+                        <a href="../getting-started/introduction/">
+                          <span>Get Started <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
+                            <path d="M4.66675 10.5948H16.3334M16.3334 10.5948L10.5001 4.76151M16.3334 10.5948L10.5001 16.4282" stroke="#6c91d5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></span>                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+             <!--Explore section end-->
+    
+             <!--Services section start-->
+            <section class="mdc-services">
+                <a href="../agents/overview/"  class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/agents.svg" alt="Agents">
+                    </div>
+                    <div  class="mdc-services-info">
+                        <h4 class="mdc-services-title">Agents</h4>
+                        <p class="mdc-services-des">Create AI-powered workflows to automate processes, streamline tasks, and generate insights.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+                <a href="../models/overview/"  class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/models.svg" alt="Models">
+                    </div>
+                    <div class="mdc-services-info">
+                        <h4 class="mdc-services-title">Models</h4>
+                        <p class="mdc-services-des">Integrate, fine-tune, and access both base and hosted models within GALE for seamless utilization.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+                <a href="../playground/about-prompt-studio/"  class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/playground.svg" alt="Playground">
+                    </div>
+                    <div class="mdc-services-info">
+                        <h4 class="mdc-services-title">Prompts</h4>
+                        <p class="mdc-services-des">Test and optimize prompts across different AI models to achieve the best performance.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+                <a  href="../evaluation/overview/" class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/evaluation.svg" alt="Evaluation">
+                    </div>
+                    <div class="mdc-services-info">
+                        <h4 class="mdc-services-title">Evaluation</h4>
+                        <p class="mdc-services-des">Evaluate LLM performance against customizable evaluators for in-depth insights and analysis.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+            
+            </section>
+            <!--Services section end-->
+    
+            <div class="mdc-spacing"></div>
+ 
+            <!--Whats new section start-->
+            <section class="mdc-whats-new">
+                <div class="mdc-whats-new-left">
+                    <h2 class="mdc-heading">Accelerate your AI Adoption with GALE</h2>
+                    <p class="mdc-des">Accelerate and scale your AI adoption securely, with reliable performance and flexible deployment tailored to your business needs.</p>
+                    <div class="mdc-whats-new-block">
+                        <h4 class="mdc-whats-new-title">Deploy fine-tuned, open source, or external models</h4>
+                        <div class="mdc-whats-new-des">
+                            <p>Deploy a model quickly in just a few steps - select the model, review parameters and hardware, and then deploy.</p>                            
+                        </div>
+                     </div>
+                     <div class="mdc-whats-new-block">
+                        <h4 class="mdc-whats-new-title">Experiment and refine prompts using prompt studio</h4>
+                        <div class="mdc-whats-new-des">
+                            <p>Create a prompt, add examples, add one or more LLMs, generate responses, and compare the results.</p>                            
+                        </div>
+                     </div>
+                     <div class="mdc-whats-new-block">
+                        <h4 class="mdc-whats-new-title">Convert your experiment into a ready to use AI-powered Agent</h4>
+                        <div class="mdc-whats-new-des">
+                            <p>Create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required.</p>                            
+                        </div>
+                     </div>
+                     <a href="../getting-started/introduction/" class="relase-note-action">Get Started</a>
+                </div>
+                
+                <div class="mdc-whats-new-right">
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/ktJrwUAWEAY" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GALE  Overview" frameborder="0" allow="autoplay; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                </div>
+
+            </section>
+             <!--Whats new section End-->
+
+
+
+
+
+            <!-- <div class="mdc-spacing"></div> -->
+    
+            <!--Documentation help start-->
+            
+            <!--Documentation help end-->
+        </main>
+      </section>
+    {% endblock %}
+    
+    <!-- Content -->
+    {% block content %}{% endblock %}
+    
+    <!-- Application footer -->
+    {% block footer %}{% endblock %}
+</div>
