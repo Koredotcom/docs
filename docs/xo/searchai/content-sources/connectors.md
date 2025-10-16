@@ -14,7 +14,7 @@ By leveraging these connectors, organizations can deliver a unified and intellig
 Once a connector is configured and authentication is completed:
 
 * Data from the third-party application is ingested, indexed, and made available for search within Search AI.
-* The **access privileges **of the content are maintained as per the privileges assigned to the user in the third-party repository. This ensures that only the files accessible to the user in the third-party application are visible to the user via Search AI as well. 
+* The **access privileges** of the content are maintained as per the privileges assigned to the user in the third-party repository. This ensures that only the files accessible to the user in the third-party application are visible to the user via Search AI as well. 
 
 During each synchronization cycle, the connector performs **incremental updates**, retrieving only newly added or modified data based on change timestamps. Any content that has already been indexed and remains unchanged is skipped, ensuring efficient and optimized syncing.
 
@@ -63,7 +63,7 @@ The Connectors are available under the Content Section. There are two tabs that 
 
 ### Adding a content source using Connector
 
-To set up a new connector, select the application connector from All connectors and provide the configuration details. Choose it from the list of supported connectors and enter the configuration details.  For comprehensive instructions on setting up connectors, refer to the [specific connector documentation](connectors/connector-directory.md).
+To set up a new connector, select the application connector from All connectors and provide the configuration details. Choose it from the list of supported connectors and enter the configuration details. For comprehensive instructions on setting up connectors, refer to the [specific connector documentation](connectors/connector-directory.md).
 
 **Setup Steps**
 
@@ -96,7 +96,7 @@ Refer to the specific connector documentation for a detailed list of supported c
 Under the **Ingestion** section,
 
 * Choose the content types you want to ingest. 
-* For some connectors, you can apply **filters** to enable **selective ingestion**, e.g., ingesting only content created within a specific timeframe, belonging to a particular category, or assigned to specific users.
+* For some connectors, you can apply **filters** to enable **selective ingestion**, for example: ingesting only content created within a specific timeframe, belonging to a particular category, or assigned to specific users.
 
 Note: Filters are available only if supported by the specific connector.
 
@@ -149,9 +149,9 @@ For more information about RACL implementation in Search AI, see [RACL support](
 
 ## Sync and Ingest Content
 
-By default, when a connector is added, the content is not ingested from the third-party application until a **Sync** operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
+By default, when a connector is added, the content is't ingested from the third-party application until a **Sync** operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
 
-Note that the files larger than 15MB will be skipped during the ingestion process.  Ensure your files are within the size limit for proper ingestion. To increase this limit, reach out to[ our support team](https://kore.ai/support/). 
+Note that the files larger than 15MB will be skipped during the ingestion process. Ensure your files are within the size limit for proper ingestion. To increase this limit, reach out to[ our support team](https://kore.ai/support/). 
 
 To initiate a sync operation manually, click the **Save and Sync** button at any time. 
 
@@ -195,7 +195,7 @@ The automatic sync can be scheduled as a one-time activity or to be performed at
 ![Enable scheduler](images/schedule-sync.png "Enable Scheduler")
 
 
-To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation.  Once set, the scheduler automatically ingests content using the connector at regular intervals. 
+To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation. Once set, the scheduler automatically ingests content using the connector at regular intervals. 
 
 ![Recurring Sync](images/connectors/recurrent-sync.PNG "Recurring Sync")
 
@@ -206,7 +206,7 @@ To disable automatic synchronization at any time, use the **Schedule Sync** slid
 After the connector is configured and the source is connected, you can enable or disable the connection temporarily. When a connector is disabled, sync operation is temporarily disabled. This may be useful for testing, particularly when there is more than one connector configured with your Search AIst application. 
 
 !!!Note
-    Disabling a connector does not delete the ingested content. It disables any future data synchronization operation with the third-party application. The sync is resumed based on the configuration after the connector is enabled again.
+    Disabling a connector doesn't delete the ingested content. It disables any future data synchronization operation with the third-party application. The sync is resumed based on the configuration after the connector is enabled again.
 
 To enable or disable a connector, use the corresponding Action buttons.
 ![Disable Connector](images/disable-connector.png "Disable Connector")
