@@ -1,5 +1,5 @@
 {
- "kore-image": {
+ "Insert HTML code for image": {
 	"scope": "markdown",
  	"prefix": "kore-image",
  	"body": [
@@ -8,16 +8,16 @@
  	"description": "Insert an image with HTML syntax in MD."
  },
 
- "kore-procedure": {
+ "Add a procedure": {
  	"scope": "markdown",
 	"prefix": "kore-procedure",
  	"body": [
-		" 1. Go to [portal-name](https://portal-url). \n 1. Select **UI menu** > **Option**. \n 1. Some instructions \n \t <img src=\"insert-relative-file-path.png\" alt=\"image-alt-text-for-accessibility\" title=\"title-of-the-image\" style=\"border: 1px solid gray; zoom:100%;\"> \n 1. More instructions. \n 1. More instructions. \n 1. More instructions. \n 1. More instructions."
+		" 1. Go to [portal-name](https://portal-url). \n 1. Select **UI menu** > **Option**. \n 1. Some instructions \n \n \t\t <img src=\"insert-relative-file-path.png\" alt=\"image-alt-text-for-accessibility\" title=\"title-of-the-image\" style=\"border: 1px solid gray; zoom:100%;\"> \n\n 1. More instructions. \n 1. More instructions. \n 1. More instructions. \n \n \t\t <img src=\"insert-relative-file-path.png\" alt=\"image-alt-text-for-accessibility\" title=\"title-of-the-image\" style=\"border: 1px solid gray; zoom:100%;\"> \n\n  1. More instructions."
 	],
  	"description": "Insert a procedure."
  },
 
- "kore-note": {
+ "Add a note": {
  	"scope": "markdown",
  	"prefix": "kore-note",
  	"body": [
@@ -26,7 +26,7 @@
  	"description": "Insert a note block."
  },
 
-"kore-rn-entry": {
+"Add RN complex structure": {
  	"scope": "markdown",
  	"prefix": "kore-rn-entry",
  	"body": [
@@ -36,33 +36,34 @@
 		"",
 		"<u>Patch Release</u>",
 		"",
-		"<font size=\"4\">category1</font>",
+		"\n <font size=\"4\">Category1</font>",
 		"",
 		"**Feature name**",
 		"",
-		"feature description goes here. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
+		"feature description. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
 		"",
 		"**Feature name**",
 		"",
-		"feature description goes here. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
+		"feature description. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
 		"",
-		"<font size=\"4\">category2</font>",
-		"",
-		"**Feature name**",
-		"",
-		"feature description goes here. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
+		"\n <font size=\"4\">Category2</font>",
 		"",
 		"**Feature name**",
 		"",
-		"feature description goes here. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
+		"feature description. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
+		"",
+		"**Feature name**",
+		"",
+		"feature description. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
 		"",
 		"<hr>",
+		"",
 	],
  	"description": "Insert a release note entry."
  },
 
 
- "kore-table-md-3column": {
+ "MD table 3 col": {
 	"scope": "markdown",
 	"prefix": "kore-table-md-3column",
   	"body": [
@@ -77,7 +78,7 @@
   "description": "Insert a 3 column table."
 },
 
- "kore-table-md-4column": {
+ "MD table 4 col": {
 	"scope": "markdown",
   	"prefix": "kore-table-md-4column",
   	"body": [
@@ -92,11 +93,11 @@
   "description": "Insert a 4 column table."
 },
 
-"kore-table-html-3column": {
+"HTML table 3 col 4 row": {
 	"scope": "markdown",
   	"prefix": "kore-table-html-3column",
   	"body": [
-		"<table>",
+		"<table border=\"1\">",
 		"  <thead>",
 		"    <tr>",
 		"      <th>Header 1</th>",

@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the LivePerson Channel
 
 The Kore.ai XO Platform lets you easily connect with the LivePerson channel to quickly identify your customers’ intent and power your conversational experiences.

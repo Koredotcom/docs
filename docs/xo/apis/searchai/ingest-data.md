@@ -10,7 +10,7 @@ This API allows you to ingest and index data into the SearchAI application. You 
 * After uploading, include the `fileId` from the **Upload File API** response in the **Ingest API** to process the file content.
 * Currently, only uploading of PDF, docx, ppt or txt is supported. If any other type of file is sent for ingestion, the API throws error. 
 
-## Ingesting Strucutured Data
+## Ingesting Structured Data
 
 * To ingest structured data, add the content to the body of the request object in the API. Ensure that the data corresponds to the **Chunk Fields** listed in the table below.
 * **File Structure**: The JSON file must adhere to a specific structure for SearchAI to interpret the data correctly:
@@ -25,7 +25,7 @@ This API allows you to ingest and index data into the SearchAI application. You 
     * Set the sourceType as “web”.
     * Provide the URLs of the pages to be crawled in the URLs array under the documents field. 
 * The web crawl uses the crawl configuration for the source set in Search AI.
-* If an existing URL is provided,  it is recrawled. If a new URL is provided, it is crawled if the crawl configuration permits. 
+* If an existing URL is provided,  it is crawled again. If a new URL is provided, it is crawled if the crawl configuration permits. 
 
 
 ## API Specifications
@@ -193,7 +193,7 @@ Note that the fields inside the chunks object should correspond to the chunk fie
 ```
 where, urls contains the list of urls to be crawled.
 
-Note that the URLs field should point to the list of URLs that need to be crawled. If a URL is already crawled, it is recrawled. If a URL is new, it is crawled if the crawl configuration of the source permits. 
+Note that the URLs field should point to the list of URLs that need to be crawled. If a URL is already crawled, it is crawled again. If a URL is new, it is crawled if the crawl configuration of the source permits. 
 
 
 ### Sample Request - Ingesting Content from Files

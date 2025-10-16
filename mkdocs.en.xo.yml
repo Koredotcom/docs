@@ -527,7 +527,8 @@ nav:
         - Introduction: quality-ai/analyze/conversation-mining-overview.md
         - Interactions: quality-ai/analyze/conversation-mining-interactions.md 
         - Audit Allocations: quality-ai/analyze/conversation-mining-audit-allocations.md
-      - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md            
+      - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md
+      - Topic Discovery: quality-ai/analyze/topic-discovery.md           
     - Coach:
         - Coaching Assignments: 
           - Supervisor Evaluation: quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md
@@ -545,6 +546,9 @@ nav:
             - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
             - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md              
       - Agent Scorecards: quality-ai/configure/agent-scorecards.md
+      - Taxonomy Builder: 
+          - Overview: quality-ai/configure/taxonomy-builder/overview.md
+          - Taxonomy Setup: quality-ai/configure/taxonomy-builder/setup-taxonomy.md
       - Quality Express:     
         - Quality AI Express: quality-ai/getting-started/quality-ai-express.md
         - AWS S3 Connector Setup Guide: quality-ai/getting-started/aws-s3-connector-setup-guide.md   
