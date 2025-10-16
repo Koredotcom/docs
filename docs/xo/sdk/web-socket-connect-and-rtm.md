@@ -217,7 +217,7 @@ This section describes the Bot Status Event JSON responses sent to the Platform 
 
 **Event Type:** `/bot_active`
 
-**Description:**Triggered when a WebSocket connection is established with the bot.
+**Description:** Triggered when a WebSocket connection is established with the bot.
 
 The following payload is used to send a response message to the Platform.
 
@@ -234,7 +234,7 @@ The following payload is used to send a response message to the Platform.
     "formLinkExpiry": 300, 
      "submitExpiry": 600
 }, 
-"traceId": "4a663e27051cd294" 
+"traceId": "4a663e27051cxxxx" 
 }
 ```
 **Event Type:** /`botKitUnreachable`
@@ -274,7 +274,7 @@ This section describes the Form Event JSON responses sent to the Platform from t
 
 **Event Type:** `/form_delivered`
 
-**Description:**Triggered when a form is delivered to a user.
+**Description:** Triggered when a form is delivered to a user.
 
 The following payload is used to send a response message to the Platform.
 
@@ -299,7 +299,7 @@ The following payload is used to send a response message to the Platform.
 
 **Event Type:** `/form_submitted`
 
-**Description:**Triggered when a form is submitted by a user.
+**Description:** Triggered when a form is submitted by a user.
 
 The following payload is used to send a response message to the XO Platform.
 
@@ -353,7 +353,7 @@ This section describes the Session Event JSON responses sent to the Kore.ai XO P
 
 **Event Type:** `/session_start`
 
-**Description:**Triggered when a session starts using an On-Connect event or message.
+**Description:** Triggered when a session starts using an On-Connect event or message.
 
 The session starts in the following scenarios:
 
@@ -375,7 +375,7 @@ The following payload is used to send a response message to the Platform.
     "device": "Other"
   },
   "sessionId": "6426bf7e916562382331xxxx",
-  "traceId": "a33d81825f3b1a77"
+  "traceId": "a33d81825f3bxxxx"
 }
 ```
 **Event Type:** `/session_end`
