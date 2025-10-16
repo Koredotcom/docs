@@ -2,7 +2,7 @@
 
 Steps to access the Agent monitor page:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your AI for Process account.
+1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in) to your AI for Process account.
 2. On the top navigation bar, click **Agents**.
 3. On the **All agents** page, click the desired agent.  
 

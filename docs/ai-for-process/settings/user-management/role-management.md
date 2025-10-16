@@ -988,7 +988,7 @@ The **Role Management Dashboard** on the Settings console displays key informati
 
 To access the dashboard, follow the steps below:
 
-1. [Log in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to AI for Process and click **Settings** on the top menu.
+1. [Log in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to AI for Process and click **Settings** on the top menu.
 2. Click **Users Management** > **Role Management** on the left menu.
 <img src="../images/access-role-management.png" alt="access role management" title="access role management" style="border: 1px solid gray; zoom:80%;">
 

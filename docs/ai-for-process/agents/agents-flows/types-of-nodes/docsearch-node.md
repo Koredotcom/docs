@@ -68,7 +68,7 @@ After fetching the Search AI application credentials, configuring the source, an
 
 **Steps to integrate Search AI in AI for Process**
 
-1. [Sign in](../../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your AI for Process account.
+1. [Sign in](../../../getting-started/sign-up-sign-in.md){:target="_blank"} to your AI for Process account.
 2. [Navigate](../../../settings/settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** console.
 3. Click **Integrations** on the left navigation menu.
 4. Scroll down to **Search AI** and click **Link an App**.

@@ -6,7 +6,7 @@ The Billing section helps you monitor and analyze your AI for Process platform e
 
 Steps to access the Usage page:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your AI for Process account.
+1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in) to your AI for Process account.
 2. On the top navigation bar, click **Settings**.
 3. On the left navigation pane, click **Billing** > **Usage**.
 

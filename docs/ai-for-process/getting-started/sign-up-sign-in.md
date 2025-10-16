@@ -79,7 +79,7 @@ An account owner or master admin can perform the following functions:
 
 ## New Account Sign Up and Activation
 
-If you do not have an account on AI for Process, visit this home page [link](https://ai-for-process.kore.ai){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}.
+If you do not have an account on AI for Process, visit this home page [link](https://ai-for-process.kore.ai){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#update-this){:target="_blank"}.
 
 You can sign up on AI for Process in one of the following ways:
 
@@ -234,7 +234,7 @@ If both the entries do not match, you cannot proceed.</div>
 <ol start="5"><li>Click <b>Reset Password</b>.</li>
 <img src="../images/reset-password.png" alt="reset password" title="reset password" style="border: 1px solid gray; zoom:75%;"></ol>
 
-The password is reset successfully. On the [Sign In](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} page, enter the new password for your email account.
+The password is reset successfully. On the [Sign In](./sign-up-sign-in.md){:target="_blank"} page, enter the new password for your email account.
 
 #### Change Expired Password
 
@@ -254,7 +254,7 @@ A mismatch in the **New password** and **Confirm password** fields displays an <
 
 After signing in, you are redirected based on the number of accounts you have joined. If you have one account, the system will redirect you to the **Agents** section of that account’s UI. If no agents are added to your account, the following page is displayed.
 
-<img src="../images/landing-page.png" alt="gale landing page" title="gale landing page" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/landing-page.png" alt="landing page" title="landing page" style="border: 1px solid gray; zoom:75%;">
 
 **Choose from Multiple Accounts**
 
@@ -283,7 +283,7 @@ Once you sign up on AI for Process, you must create an account to access and man
 
 To create an account, follow the steps below:
 
-1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to AI for Process using SSO or email.
+1. [Sign in](./sign-up-sign-in.md){:target="_blank"} to AI for Process using SSO or email.
 2. Click the **Account Profile** icon on the top right corner.
 3. Click **+ Create New Account**.
 <img src="../images/click-create-account.png" alt="click create new account" title="click create new account" style="border: 1px solid gray; zoom:75%;">
@@ -371,7 +371,7 @@ When you make an account default, the system automatically redirects you to its 
 
 **When Signing In for the first time**
 
-1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to AI for Process.
+1. [Sign in](./sign-up-sign-in.md){:target="_blank"} to AI for Process.
 
 2. Hover over the required account and click **Set as Default** on the following page:
 <img src="../images/set-as-default.png" alt="set as default" title="set as default" style="border: 1px solid gray; zoom:75%;">

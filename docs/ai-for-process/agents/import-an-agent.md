@@ -16,7 +16,7 @@ Once the import is complete, the agent flow canvas is updated with the latest co
 
 To initiate an agent creation journey through the import functionality, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your AI for Process account.
+1. [Sign in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your AI for Process account.
 2. Click **Agents** on the top menu.
 3. Do one of the following based on your requirements:
 
@@ -87,7 +87,7 @@ When you import an agent as a version, you must upload all the following files:
 
 To import an agent as a version, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your AI for Process account.
+1. [Sign in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your AI for Process account.
 2. Click **Agents** on the top menu.
 <img src="../images/agents-select.png" alt="select agents" title="select agents" style="border: 1px solid gray; zoom:75%;">
 

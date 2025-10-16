@@ -90,7 +90,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 To access the **Settings** Console on AI for Process, follow the steps below:
 
-1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to AI for Process using your credentials. To enable and sign in using SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
+1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to AI for Process using your credentials. To enable and sign in using SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 
 2. Click **Settings** on the top menu.
 <img src="../images/settings-menu.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
