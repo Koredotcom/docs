@@ -1,6 +1,6 @@
 # File Upload API
 
-The API can upload a file to the local server for seamless usage in multimodal nodes and across the GALE application. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> as the response, which can be used to take further action on the file. 
+The API can upload a file to the local server for seamless usage in multimodal nodes and across the AI for Process application. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> as the response, which can be used to take further action on the file. 
 
 The following file upload modes are supported:
 

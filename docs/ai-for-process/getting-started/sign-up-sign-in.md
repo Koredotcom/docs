@@ -6,18 +6,18 @@ By signing up and creating an account, you can efficiently manage AI for Process
 
 Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Internet Explorer mode in Microsoft Edge is not supported.
 
-## GALE Account Creation Using SSO
+## AI for Process Account Creation Using SSO
 
 You can sign up for AI for Process at [AI for Process](https:///www.example.com)
 
-When you sign up for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how it works:
+When you sign up for AI for Process using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how it works:
 
 * The Kore team invites you to join AI for Process.
 * Once invited, you can then proceed to create an account using your email address.
 
 ## Accounts
 
-While you sign up for GALE, you must do the following:
+While you sign up for AI for Process, you must do the following:
 
 **Create an Account**
 
@@ -30,7 +30,7 @@ While you sign up for GALE, you must do the following:
 
 **Master Admin Role**
 
-When you create the first user account on GALE, you automatically become the **Master Admin** or **Owner**. [Learn more](./sign-up-sign-in.md/#create-an-account){:target="_blank"}.
+When you create the first user account on AI for Process, you automatically become the **Master Admin** or **Owner**. [Learn more](./sign-up-sign-in.md/#create-an-account){:target="_blank"}.
 
 This role provides access to default permissions and administrative capabilities:
 
@@ -79,21 +79,21 @@ An account owner or master admin can perform the following functions:
 
 ## New Account Sign Up and Activation
 
-If you do not have an account on GALE, visit this home page [link](https://ai-for-process.kore.ai){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}.
+If you do not have an account on AI for Process, visit this home page [link](https://ai-for-process.kore.ai){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}.
 
-You can sign up on GALE in one of the following ways:
+You can sign up on AI for Process in one of the following ways:
 
-* **Create a new account**: GALE allows signing up using a valid email address. You can sign up to create a personal account or even set up your enterprise account in Kore AIi. After you sign up for the account, you automatically become the account’s admin, which allows you to invite other users to the account.
+* **Create a new account**: AI for Process allows signing up using a valid email address. You can sign up to create a personal account or even set up your enterprise account in Kore AIi. After you sign up for the account, you automatically become the account’s admin, which allows you to invite other users to the account.
 * **Join an existing enterprise account**: If your enterprise is already on Kore.ai, you can join the account in one of the following ways:
   * Your enterprise account’s Admin sends you an invite. If you haven’t already received the invitation email, reach out to them for access.
   * You can sign up using your enterprise email account. You will then be prompted to either join the enterprise network or create a personal account.
 
-### Steps to Sign Up and Activate Your GALE Account
+### Steps to Sign Up and Activate Your AI for Process Account
 
 1. On the login page, click **Sign Up**.
 <img src="../images/sign-up-page.png" alt="sign up page" title="sign up page" style="border: 1px solid gray; zoom:75%;">
 
-2. Choose an SSO profile to sign in to your account and access GALE.
+2. Choose an SSO profile to sign in to your account and access AI for Process.
 <img src="../images/choose-sso-profile.png" alt="choose sso profile" title="choose sso profile" style="border: 1px solid gray; zoom:75%;">
 
 Alternatively, enter your email address and click **Continue** to sign up via email.
@@ -128,9 +128,9 @@ Once the admin accepts your request via an invitation, you can complete the sign
 
 ### Account Activation
 
-After you initiate the sign-up process, GALE sends an email to the address you provided. This email contains a verification link and a code to activate your account.
+After you initiate the sign-up process, AI for Process sends an email to the address you provided. This email contains a verification link and a code to activate your account.
 
-Look for the verification email from GALE in your inbox. If you don’t see it, check your spam or junk folder.
+Look for the verification email from AI for Process in your inbox. If you don’t see it, check your spam or junk folder.
 
 Do one of the following to validate your account:
 
@@ -154,9 +154,9 @@ Verification links and codes have an expiration time set at the application leve
 
 If the verification link or code expires or becomes invalid, the system prompts you to request a new one. Follow the instructions to complete the verification process.
 
-## Sign in to GALE
+## Sign in to AI for Process
 
-Once you sign up and activate your GALE account, you can sign in for the first time on the [login page](https://ai-for-process.kore.ai/){:target="_blank"} using one of the following methods:
+Once you sign up and activate your AI for Process account, you can sign in for the first time on the [login page](https://ai-for-process.kore.ai/){:target="_blank"} using one of the following methods:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -176,7 +176,7 @@ Then, enter your password and click **Login**.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>Once you create an account, you will receive 75 model credits and 10,000 agent runs by default to start using GALE's features.</p>
+<p>Once you create an account, you will receive 75 model credits and 10,000 agent runs by default to start using AI for Process's features.</p>
 </div>
 
 ### Failed Login and Account Locking
@@ -205,7 +205,7 @@ When your account is locked, you can attempt to log in using an alternative meth
 
 You can reset your password in the following scenarios:
 
-* If you do not remember the correct password to log in to GALE.
+* If you do not remember the correct password to log in to AI for Process.
 * You want to change the password at regular intervals due to security reasons.
 
 To reset, follow the steps below:
@@ -250,7 +250,7 @@ A mismatch in the **New password** and **Confirm password** fields displays an <
 
 <img src="../images/old-new-password-mismatch.png" alt="passwords mismatch" title="passwords mismatch" style="border: 1px solid gray; zoom:75%;">
 
-## GALE Landing Page
+## AI for Process Landing Page
 
 After signing in, you are redirected based on the number of accounts you have joined. If you have one account, the system will redirect you to the **Agents** section of that account’s UI. If no agents are added to your account, the following page is displayed.
 
@@ -266,14 +266,14 @@ Click the account you want to access. The system redirects you to the **Agents**
 
 ## Create an Account
 
-Once you sign up on GALE, you must create an account to access and manage GALE’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts){:target="_blank"} about GALE accounts.  
+Once you sign up on AI for Process, you must create an account to access and manage AI for Process’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts){:target="_blank"} about AI for Process accounts.  
 
 
 
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<ul><li>Each email address can only be associated with one GALE account.</li>
+<ul><li>Each email address can only be associated with one AI for Process account.</li>
 <li>If you do not have sufficient model credits and agent runs in your account, you will have only limited access to modules and features.</li>
 </ul>
 </div>
@@ -283,7 +283,7 @@ Once you sign up on GALE, you must create an account to access and manage GALE�
 
 To create an account, follow the steps below:
 
-1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using SSO or email.
+1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to AI for Process using SSO or email.
 2. Click the **Account Profile** icon on the top right corner.
 3. Click **+ Create New Account**.
 <img src="../images/click-create-account.png" alt="click create new account" title="click create new account" style="border: 1px solid gray; zoom:75%;">
@@ -371,7 +371,7 @@ When you make an account default, the system automatically redirects you to its 
 
 **When Signing In for the first time**
 
-1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE.
+1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to AI for Process.
 
 2. Hover over the required account and click **Set as Default** on the following page:
 <img src="../images/set-as-default.png" alt="set as default" title="set as default" style="border: 1px solid gray; zoom:75%;">
@@ -395,7 +395,7 @@ When you are mapped to multiple accounts, you can switch to the required one aft
 
 ## Related Information
 
-* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about using the GALE admin features.
+* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about using the AI for Process admin features.
 * [Users](../settings/user-management/users.md){:target="_blank"}- Manage users seamlessly in your account.
 * [Roles](../settings/user-management/role-management.md){:target="_blank"}- Manage system and custom roles and permissions in your account.
 * [Billing](../settings/billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption in your account, set limits and view usage trends.

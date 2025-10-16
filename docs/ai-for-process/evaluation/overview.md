@@ -1,6 +1,6 @@
 # Overview
 
-Evaluation Studio is a comprehensive tool in GALE for assessing LLM performance. It offers users the flexibility to select from a variety of pre-existing evaluators to measure model effectiveness. Users can upload and organize datasets (including inputs and outputs) into designated projects for evaluation, with adjustable thresholds and scoring metrics for customization based on specific needs. With Evaluation Studio, users can assess datasets against models, analyze results, and gain insights through a streamlined, user-friendly interface tailored to their selected criteria.
+Evaluation Studio is a comprehensive tool in AI for Process for assessing LLM performance. It offers users the flexibility to select from a variety of pre-existing evaluators to measure model effectiveness. Users can upload and organize datasets (including inputs and outputs) into designated projects for evaluation, with adjustable thresholds and scoring metrics for customization based on specific needs. With Evaluation Studio, users can assess datasets against models, analyze results, and gain insights through a streamlined, user-friendly interface tailored to their selected criteria.
 
 
 ## Key Features
@@ -28,7 +28,7 @@ Evaluation Studio is an essential tool for managing, evaluating, and optimizing 
 
 The following outlines the key actions at each stage of the Evaluation Studio user journey:
 
-1. [**Create a project**](./create-project.md): Log in to GALE, go to Evaluation Studio, and create a project.
+1. [**Create a project**](./create-project.md): Log in to AI for Process, go to Evaluation Studio, and create a project.
 
 2. [**Create an evaluation**](./create-evaluation.md): Create an evaluation for your project.
 

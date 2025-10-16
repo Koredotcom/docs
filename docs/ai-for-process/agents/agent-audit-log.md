@@ -1,6 +1,6 @@
 # Audit Logs
 
-GALE’s comprehensive Audit Logs provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
+AI for Process’s comprehensive Audit Logs provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
 
 This empowers admins to ensure compliance with internal policies and regulations, while proactively mitigating risks like data privacy breaches and algorithmic bias.
 
@@ -33,7 +33,7 @@ Steps to access and view agent audit logs:
 
 ## Dashboard Information
 
-The Audit Logs dashboard displays the following information to collectively provide a comprehensive overview of activities within your GALE account:
+The Audit Logs dashboard displays the following information to collectively provide a comprehensive overview of activities within your AI for Process account:
 
 * **Event Name:** Describes the specific event or action that occurred.
 * **Category:** Identifies the module or entity affected by the event.

@@ -15,7 +15,7 @@ This [Users](./users.md){:target="_blank"} page provides detailed instructions a
 
 **Users Management** streamlines user administration and enhances operational efficiency. 
 
-It also supports various administrative features influenced by the roles and permissions assigned at the account or agent level. This includes actions you can perform on both external and existing GALE users:
+It also supports various administrative features influenced by the roles and permissions assigned at the account or agent level. This includes actions you can perform on both external and existing AI for Process users:
 
 - **System Roles**: Predefined roles with default permissions for basic system functionality. [Learn more](./role-management.md/#manage-system-roles){:target="_blank"}.
 - **Custom Roles**: User-defined roles tailored to specific needs with customized access definitions for module-wise permissions. [Learn more](./role-management.md/#manage-custom-roles){:target="_blank"}.
@@ -28,6 +28,6 @@ Once you invite a user or import users data, you can change their roles, assign/
 
 ## Related Information
 
-* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other GALE admin features.
+* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other AI for Process admin features.
 * **Role Management** - [Learn more](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
 * **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.

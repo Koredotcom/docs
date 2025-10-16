@@ -1,6 +1,6 @@
 # Role Management 
 
-GALE’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for both account and agent features on the platform. 
+AI for Process’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for both account and agent features on the platform. 
 
 Thus, the roles can be classified based on role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
 
@@ -22,7 +22,7 @@ When you [invite](../../getting-started/sign-up-sign-in.md/#invite-a-user-to-you
 
     * Each role comes with specific permissions and access levels to determine what features the user can access, modify, or manage. [Learn more](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. 
 
-    GALE supports the following roles in the **Settings** console:
+    AI for Process supports the following roles in the **Settings** console:
 
     * **Default Role**: A system-generated role with internally defined set of permissions and access levels. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
 
@@ -73,7 +73,7 @@ A **Master Admin** has complete control over the account's core functionalities 
 
 An **Agent Admin** has complete control over the core functionalities of agents, such as deployment, configuration, sharing, deletion, monitoring, etc.
 
-GALE supports the following roles:
+AI for Process supports the following roles:
 
 #### System-defined Roles
 
@@ -198,7 +198,7 @@ The Settings console supports two types of access: “_Yes_” indicates the use
 
 A **Role Type** defines the module-wise scope and access level for the defined permissions and associated actions.
 
-The following Role Types are defined on GALE:
+The following Role Types are defined on AI for Process:
 
 * **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to features at the account level like models, agents, other users, integrations, and security permissions.
 * **Agent**:  When a user is invited to an agent, they receive an Agent role. The role type manages access to features at the agent level like agent creation, deployment, versioning, deletion, monitoring, API integration, experimentation, export, etc.
@@ -791,7 +791,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Monitor agents and models on the GALE level
+   <td>Monitor agents and models on the AI for Process level
    </td>
    <td>Yes
    </td>
@@ -988,7 +988,7 @@ The **Role Management Dashboard** on the Settings console displays key informati
 
 To access the dashboard, follow the steps below:
 
-1. [Log in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE and click **Settings** on the top menu.
+1. [Log in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to AI for Process and click **Settings** on the top menu.
 2. Click **Users Management** > **Role Management** on the left menu.
 <img src="../images/access-role-management.png" alt="access role management" title="access role management" style="border: 1px solid gray; zoom:80%;">
 
@@ -1290,6 +1290,6 @@ Like a system role, you can duplicate a custom role, which copies the name, role
 
 ## Related Information
 
-* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other GALE admin features.
+* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other AI for Process admin features.
 * **Users Management** - [Learn more](../user-management/users.md){:target="_blank"} about managing users in your account.
 * **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.

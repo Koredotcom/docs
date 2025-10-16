@@ -76,7 +76,7 @@ Steps to add and configure the node:
 
     !!! note
 
-        Tools are deployed Agents whose details are provided to the model. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each GenAI node. For more information, see [**Tool Calling in GALE**](./../tool-calling.md). 
+        Tools are deployed Agents whose details are provided to the model. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each GenAI node. For more information, see [**Tool Calling in AI for Process**](./../tool-calling.md). 
 
     1. **Add tools**: Click **Add Tools** to add a tool (deployed agent).
     2. **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.  
@@ -102,7 +102,7 @@ The node’s output is stored in a context variable. You can access the variable
 
 !!! note
 
-    GALE can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.
+    AI for Process can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.
 
 ## Image to Text (OCR) Node
 

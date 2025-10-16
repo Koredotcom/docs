@@ -1,6 +1,6 @@
 # DocSearch Node
 
-The **DocSearch Node** in GALE's Agent Flow improves how information is found and processed. It uses advanced searching called Retrieval Augmented Generation (RAG). 
+The **DocSearch Node** in AI for Process's Agent Flow improves how information is found and processed. It uses advanced searching called Retrieval Augmented Generation (RAG). 
 
 By connecting to your **Search AI** App, the DocSearch Node provides high-quality search results that are relevant to the current context. These results are delivered right inside the agent workflow.
 
@@ -15,7 +15,7 @@ By connecting to your **Search AI** App, the DocSearch Node provides high-qualit
     <ul><li><b>Retrieval & Pre-processing</b>: Powerful search algorithms query external data (e.g., web pages, databases). Retrieved data is pre-processed through tokenization, stemming, and stop-word removal.</li>
     <li><b>Grounded Generation</b>: Pre-processed data integrates with the LLM, enriching its context for more accurate, informative, and engaging responses.</li></ul>
 <ul><li><b>Integration with SearchAI</b>     
-    <ul><li>The DocSearch Node connects to a configured <b>Search AI App</b> via GALE’s integration page.</li>
+    <ul><li>The DocSearch Node connects to a configured <b>Search AI App</b> via AI for Process’s integration page.</li>
     <li>It accesses indexed resources from the <b>Sources</b> repository within Search AI to retrieve relevant information.</li></ul></li>
     <li><b>Dynamic Input Queries</b></li>
     <ul><li>Accepts search input either as a variable or static text.</li>
@@ -47,13 +47,13 @@ By connecting to your **Search AI** App, the DocSearch Node provides high-qualit
 
 Configuring the DocSearch Node consists of the following steps:
 
-1. [Set up a Search AI application and the information source for GALE integration](./docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
-2. [Link the Search AI application in GALE](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"}.
+1. [Set up a Search AI application and the information source for AI for Process integration](./docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
+2. [Link the Search AI application in AI for Process](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"}.
 3. [Add and configure the DocSearch node](./docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"}.
 
 ## Step 1: Set up Search AI App
 
-The integration of Search AI with GALE involves setting up a Search AI application, configuring it for integration, and modifying GALE to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
+The integration of Search AI with AI for Process involves setting up a Search AI application, configuring it for integration, and modifying AI for Process to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
 
 Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-introduction/#creating-and-managing-jwt-apps-in-xo-platform){:target="_blank"} to complete the configuration.
 
@@ -62,13 +62,13 @@ Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-int
 <p>To receive answers from Search AI, you must enable the <b><i>Answer Generation</i></b> option under the <b>API scopes</b> section.</p></div>
 
 
-## Step 2: Link the Search AI App in GALE
+## Step 2: Link the Search AI App in AI for Process
 
-After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in GALE. 
+After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in AI for Process. 
 
-**Steps to integrate Search AI in GALE**
+**Steps to integrate Search AI in AI for Process**
 
-1. [Sign in](../../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your GALE account.
+1. [Sign in](../../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your AI for Process account.
 2. [Navigate](../../../settings/settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** console.
 3. Click **Integrations** on the left navigation menu.
 4. Scroll down to **Search AI** and click **Link an App**.
@@ -115,14 +115,14 @@ Alternatively, click the node and change the value for **Node Name** in the conf
 
 <ol start="5"><li>Enter an input variable for dynamic inputs or plaintext for hard-coded inputs in the <b>Query</b> field. This field captures the user’s search query.
 <img src="../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Select the <b>Search AI connection</b> you set up in <a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-gale" target="_blank">Step 2</a> on the GALE integration page.
+<li>Select the <b>Search AI connection</b> you set up in <a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-gale" target="_blank">Step 2</a> on the AI for Process integration page.
 <img src="../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Use search to look up and select the required connection.</p></div>
 
-To set up a new connection, click **+ New Connection**. This will redirect you to the GALE Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"} to complete the integration.
+To set up a new connection, click **+ New Connection**. This will redirect you to the AI for Process Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"} to complete the integration.
 
 <ol start="7"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
 <img src="../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;"></li></ol>

@@ -32,7 +32,7 @@ Steps to import a dataset:
 
     1. **Upload from device**: Click the Upload file link and select your CSV file saved on your local machine.
     2. **Import production data**: Click Proceed and fill in the required fields in the Import production data dialog:
-        1. **Models**: Choose the model deployed in production (open-source or commercial). You can select any model used in GALE within Agents, Prompts, and endpoints. Only data related to the selected model will be retrieved from Model Traces.
+        1. **Models**: Choose the model deployed in production (open-source or commercial). You can select any model used in AI for Process within Agents, Prompts, and endpoints. Only data related to the selected model will be retrieved from Model Traces.
         2. **Source**: Select the specific source where the model is deployed, such as Agents, Prompts, or endpoints. You can also select the ‘All’ option to import data from all available sources or specify individual sources like specific prompts or agents. For example, you can select a specific agent to see how the model is performing within that agent.
         3. **Date**: Set the desired date range for the data you want to import. By default, the last 30 days are selected.
         4. **Columns**: The system automatically fetches the input and output columns by default. If you need more detailed analysis, you can select additional columns such as request ID, input tokens, response time, and other relevant metrics. The selected columns will appear in the evaluation table.  
@@ -56,7 +56,7 @@ Steps to import a dataset:
 
 The Run a Prompt option enables users to generate customized data based on a specific model and prompt. This feature streamlines data creation and enables easy edits and adjustments for continuous improvements.
  
-For instance, if you want to replace the manual effort of summarizing customer conversations with a fine-tuned model, you can use Evaluation studio to evaluate its summaries. Start by bringing your conversations as input and deploying the fine-tuned model in GALE. Then, in Evaluation studio, select 'Run a prompt' and choose your fine-tuned model. In the prompt, you can specify 'summarize the {{input}}' (column as a variable). This variable will capture the conversations, and based on the additional prompt instructions, the model will generate the summary. Finally, you can assign desired evaluators to evaluate the output produced by the fine-tuned model. 
+For instance, if you want to replace the manual effort of summarizing customer conversations with a fine-tuned model, you can use Evaluation studio to evaluate its summaries. Start by bringing your conversations as input and deploying the fine-tuned model in AI for Process. Then, in Evaluation studio, select 'Run a prompt' and choose your fine-tuned model. In the prompt, you can specify 'summarize the {{input}}' (column as a variable). This variable will capture the conversations, and based on the additional prompt instructions, the model will generate the summary. Finally, you can assign desired evaluators to evaluate the output produced by the fine-tuned model. 
  
 **Key Benefits**
 

@@ -1,6 +1,6 @@
 # About APIs
 
-GALE provides secured APIs to manage agents/tools, models, guardrails, prompts, files, and evaluations. Developers can perform key activities like deployment, import/export, monitoring, analytics, billing, and reporting using these APIs at the appropriate endpoints.
+AI for Process provides secured APIs to manage agents/tools, models, guardrails, prompts, files, and evaluations. Developers can perform key activities like deployment, import/export, monitoring, analytics, billing, and reporting using these APIs at the appropriate endpoints.
 
 ## API Key Authentication
 
@@ -22,7 +22,7 @@ API keys are typically included in request headers or parameters to validate acc
 
 ## How to Find the API Key?
 
-1. [Login](../getting-started/sign-up-sign-in.md#sign-in-to-gale){:target="_blank"} to GALE and [access](../settings/settings-overview.md#access-settings-console){:target="_blank"} the **Settings** Console.
+1. [Login](../getting-started/sign-up-sign-in.md#sign-in-to-gale){:target="_blank"} to AI for Process and [access](../settings/settings-overview.md#access-settings-console){:target="_blank"} the **Settings** Console.
 
 2. On the left menu, click **Security & Control** -> **Management API keys**.
 
@@ -82,7 +82,7 @@ Currently, the following APIs are available:
    <td>To export a trained AI model from the system.</td>
   </tr>
   <tr><td><a href="../apis-list/deploy-a-model/" target="_blank">Deploy a Model API</a></td>
-   <td>To deploy a model into the environment in the <strong><em>Ready to Deploy</em></strong> state and configure its parameters. The initial deployment must be done manually in the GALE account. Consecutive deployments must happen via the public API.
+   <td>To deploy a model into the environment in the <strong><em>Ready to Deploy</em></strong> state and configure its parameters. The initial deployment must be done manually in the AI for Process account. Consecutive deployments must happen via the public API.
    </td>
   </tr>
   <tr><td><a href="../apis-list/undeploy-a-model/" target="_blank">Undeploy a Model API</a></td>

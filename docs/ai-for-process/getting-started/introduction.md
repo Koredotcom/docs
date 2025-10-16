@@ -1,14 +1,14 @@
-# Introducing All-new GALE Platform
+# Introducing All-new AI for Process Platform
 
-GALE is a new platform for building LLM-powered AI agents. It offers tools to create Gen AI agents quickly. These agents can easily fit into your current systems and workflows. 
+AI for Process is a new platform for building LLM-powered AI agents. It offers tools to create Gen AI agents quickly. These agents can easily fit into your current systems and workflows. 
 
-You don't need to be an AI expert to use GALE. It has ready-to-use AI models and simple tools. The platform uses a drag-and-drop interface. This makes it easy to create and deploy custom AI agents. GALE offers both open-source and commercial AI models. You can fine-tune these models as needed. The platform lets you chain workflows and set up guardrails without coding. When your AI agent is ready, GALE helps you deploy it using an API.
+You don't need to be an AI expert to use AI for Process. It has ready-to-use AI models and simple tools. The platform uses a drag-and-drop interface. This makes it easy to create and deploy custom AI agents. AI for Process offers both open-source and commercial AI models. You can fine-tune these models as needed. The platform lets you chain workflows and set up guardrails without coding. When your AI agent is ready, AI for Process helps you deploy it using an API.
 
 <hr>
 
 ## Key Components
 
-Agents, Models, and Prompts are the key components of GALE that work together to enable businesses to leverage AI capabilities effectively.
+Agents, Models, and Prompts are the key components of AI for Process that work together to enable businesses to leverage AI capabilities effectively.
 
 === "Agents"
 
@@ -18,13 +18,13 @@ Agents, Models, and Prompts are the key components of GALE that work together to
 
 === "Models"
 
-    Models are the core of GALE. Based on your needs, you can choose from fine-tuned, commercial, or open-source AI models. Once you've selected the right models, you can easily integrate them into your AI agents. Guardrails ensure the models generate outputs responsibly and follow defined constraints. Additionally, you can deploy these AI agents via API endpoints and integrate them with your existing systems as required.
+    Models are the core of AI for Process. Based on your needs, you can choose from fine-tuned, commercial, or open-source AI models. Once you've selected the right models, you can easily integrate them into your AI agents. Guardrails ensure the models generate outputs responsibly and follow defined constraints. Additionally, you can deploy these AI agents via API endpoints and integrate them with your existing systems as required.
     
     [Learn more about Models :octicons-arrow-right-24:](../models/overview.md)
 
 === "Prompts"
 
-    GALE's Prompts Studio allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. It helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.
+    AI for Process's Prompts Studio allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. It helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.
     
     [Learn more about Prompts :octicons-arrow-right-24:](../playground/about-prompt-studio.md)
 
@@ -32,11 +32,11 @@ Agents, Models, and Prompts are the key components of GALE that work together to
 
 ## Comprehensive Platform for AI Operations
 
-The diagram below shows GALE's comprehensive AI platform. The platform manages AI agents, models, and data integrations. It offers tools for development, deployment, and monitoring. The image also illustrates how GALE connects with external systems and users. This creates a complete ecosystem for AI operations.
+The diagram below shows AI for Process's comprehensive AI platform. The platform manages AI agents, models, and data integrations. It offers tools for development, deployment, and monitoring. The image also illustrates how AI for Process connects with external systems and users. This creates a complete ecosystem for AI operations.
 
 <img src="../images/architecture-diagram.png" alt="Gale Architecture" title="Gale Architecture" style="border: 0px solid gray; zoom:100%;">
 
-=== "GALE Core Offerings"
+=== "AI for Process Core Offerings"
 
     * LLM OPS: Includes Auto Scaling, Security, Observability, Monitoring, and Analytics.
 
@@ -50,17 +50,17 @@ The diagram below shows GALE's comprehensive AI platform. The platform manages A
 
 === "Integration"
 
-    * REST API: Connects GALE to Your Systems.
+    * REST API: Connects AI for Process to Your Systems.
 
     * Kore Solutions: Interfaces with Your Users.
 
 === "External Components"
 
-    * Your Systems: Interact with GALE through the REST API.
+    * Your Systems: Interact with AI for Process through the REST API.
 
-    * Your Users: Access GALE via Kore Solutions.
+    * Your Users: Access AI for Process via Kore Solutions.
 
-    * Your Data: Connect your data to GALE.
+    * Your Data: Connect your data to AI for Process.
 
 === "Kore Stack"
 
@@ -70,12 +70,12 @@ The diagram below shows GALE's comprehensive AI platform. The platform manages A
 
 ## Deployment of AI at Scale
 
-GALE provides enterprise-grade features to deploy AI at scale:
+AI for Process provides enterprise-grade features to deploy AI at scale:
 
 * Security: Your data and intellectual property are protected by robust security measures.
 
-* Scalability: As your AI applications grow and user numbers increase, GALE automatically scales to meet demand while maintaining consistent performance.
+* Scalability: As your AI applications grow and user numbers increase, AI for Process automatically scales to meet demand while maintaining consistent performance.
 
 * Flexible Deployment: Based on your organization's preferences, you can deploy AI models on the cloud or on-premises infrastructure.
 
-With GALE's enterprise-ready capabilities, you can confidently scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.
+With AI for Process's enterprise-ready capabilities, you can confidently scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.

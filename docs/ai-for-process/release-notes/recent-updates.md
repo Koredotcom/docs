@@ -1,6 +1,6 @@
 # Release Notes
 
-This document provides information on the feature updates and enhancements introduced in the recent GALE releases.
+This document provides information on the feature updates and enhancements introduced in the recent AI for Process releases.
 
 ## v1.0.9 February 10, 2025
 
@@ -12,10 +12,10 @@ This update includes new features and feature enhancements summarized below.
 
 * Added JSON Input and Output Types in Agent/Tool: Users can now pass and generate JSON data as input and output parameters. This ensures flexible data handling and runtime validation, with error messages for inconsistencies.
 * Added Enum Input Type in Agent/Tool: Users can now pass enumerated values as input parameters, ensuring only predefined values are accepted, with validation and error messages for invalid inputs.
-* Added Image-to-Text Support (OCR): GALE agents can now process images using external models like OpenAI (GPT-4, GPT-4-turbo) and Anthropic (Claude Sonnet Vision), allowing users to upload a single image for text generation. The new ‘Image to Text’ node supports image URLs or binary, base64-encoded images with model-specific input formats and temporary storage during the agent run.
+* Added Image-to-Text Support (OCR): AI for Process agents can now process images using external models like OpenAI (GPT-4, GPT-4-turbo) and Anthropic (Claude Sonnet Vision), allowing users to upload a single image for text generation. The new ‘Image to Text’ node supports image URLs or binary, base64-encoded images with model-specific input formats and temporary storage during the agent run.
 * Added Source Column on Monitoring Page: A new 'Source' column on the monitoring page shows whether a tool is run via an Agentic app (displaying the app name) or called through an API endpoint (showing the API key).
 * Added Public File Upload API: Users can now upload files via an API, receiving a unique file URL and file ID in response for use in multimodal nodes and managing file availability across the application.
-* AWQ-Marlin Support in GALE: AWQ-Marlin is now the default for models using AWQ with vLLM, providing improved throughput while maintaining accuracy. This update supports models in Prompt studio, model endpoints, and agents without requiring any UI changes.
+* AWQ-Marlin Support in AI for Process: AWQ-Marlin is now the default for models using AWQ with vLLM, providing improved throughput while maintaining accuracy. This update supports models in Prompt studio, model endpoints, and agents without requiring any UI changes.
 * Distributed Traceability for Agents and Models: Added support for distributed traceability across agents and models. Each component now generates and maintains its own x-trace-id for operations while supporting parent_trace_id for tracking parent-child relationships between component interactions.
 
 **Feature Enhancements**
@@ -38,8 +38,8 @@ This update includes new features, enhancements, security fixes, and bug fixes s
 
 **New Features**
 
-* Evaluation Studio: GALE’s new Evaluation Studio serves as a comprehensive tool for assessing LLM performance. The platform offers users the flexibility to either select from a variety of pre-existing evaluators or design their own to measure model effectiveness. Users can upload and organize datasets, which include inputs and outputs, into designated projects. The evaluation process accommodates adjustable thresholds and scoring metrics, allowing customization based on specific evaluator needs. [Learn more](../evaluation/overview.md).
-* Public API Support: Users can now generate and manage API keys with customizable expiration dates and scopes (e.g., deploying models or agents). The API endpoints enables users to deploy, undeploy, import, and export GALE agents, models, and guardrails with the appropriate permissions.
+* Evaluation Studio: AI for Process’s new Evaluation Studio serves as a comprehensive tool for assessing LLM performance. The platform offers users the flexibility to either select from a variety of pre-existing evaluators or design their own to measure model effectiveness. Users can upload and organize datasets, which include inputs and outputs, into designated projects. The evaluation process accommodates adjustable thresholds and scoring metrics, allowing customization based on specific evaluator needs. [Learn more](../evaluation/overview.md).
+* Public API Support: Users can now generate and manage API keys with customizable expiration dates and scopes (e.g., deploying models or agents). The API endpoints enables users to deploy, undeploy, import, and export AI for Process agents, models, and guardrails with the appropriate permissions.
 
 **Feature Enhancements**
 
@@ -78,7 +78,7 @@ This update includes new features, feature enhancements, and security enhancemen
 **New Features**
 
 * Unified External Model Request & Response Structure: Introducing a wrapper endpoint to standardize request and response formats for all external AI models. The wrapper converts model-specific outputs to a unified structure, resulting in a consistent API, simplified integration, and improved maintainability.
-* Knowledge Node: Introducing a new node on the agent canvas, allowing users to search documents within GALE workflows by integrating with Search AI. Users can connect accounts, configure searches, and use optional meta filters to narrow results.
+* Knowledge Node: Introducing a new node on the agent canvas, allowing users to search documents within AI for Process workflows by integrating with Search AI. Users can connect accounts, configure searches, and use optional meta filters to narrow results.
 * Function Calling in Gen AI Node: Implemented support for function calling (happy path) within the Gen AI Node in the Agent, including basic debugging capabilities.
 * Prompt Integration in Gen AI Node: Prompt studio is now integrated into Gen AI nodes, simplifying the use of prompts and AI models while enhancing accessibility and productivity. Users can easily manage and customize prompts in the studio, and seamlessly integrate them with the Gen AI nodes.
 
@@ -102,11 +102,11 @@ This update includes new features, feature enhancements, and security enhancemen
 
 **New Features**
 
-* Export and import agents: The new agent export functionality allows users to export GALE agents as self-contained packages. Users can import the agents from the files, preserving node configurations, variables, and settings.
+* Export and import agents: The new agent export functionality allows users to export AI for Process agents as self-contained packages. Users can import the agents from the files, preserving node configurations, variables, and settings.
 * Increased token limits and hyper-parameter changes for external models.
 * Better validation for open-source model files under 500MB to streamline imports (files over 500MB continue to use server-side validation).
 * Added support for Llama3.2 (1B, 3B) and Mistral-Nemo-12b open-source and fine-tuned models.
-* Added support for using IAM roles to access AWS services like S3 and KMS, in addition to the existing key-based authentication for customers running GALE on an AWS VPC environment.
+* Added support for using IAM roles to access AWS services like S3 and KMS, in addition to the existing key-based authentication for customers running AI for Process on an AWS VPC environment.
 
 
 **Feature Enhancements**
@@ -235,7 +235,7 @@ This update includes new features, enhancements, and bug fixes, summarized below
 
 * Configure SSO and login experience
 * Integrate new External Models from - Google and Anthropic
-* Added Google Gemma 2 models as Open Source Models in GALE
+* Added Google Gemma 2 models as Open Source Models in AI for Process
 * Support for AWQ (Activation-aware Weight Quantization) for model inference optimization
 * Support for No Timeout option in the API node in Agent for Async execution mode and other fixes
 

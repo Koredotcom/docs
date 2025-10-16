@@ -66,7 +66,7 @@ API nodes can be configured in either synchronous or asynchronous mode:
 * **Node paused at**: The timestamp when the node paused waiting for the asynchronous response.
 * **Node resumed at**: The timestamp is when the node resumes after receiving the response.
 * **Total wait time**: The total duration between the node pausing and resuming, indicating the time spent waiting for the API.
-* **Node processing time**: The time GALE spends processing the node after it resumes from the pause.
+* **Node processing time**: The time AI for Process spends processing the node after it resumes from the pause.
 
 
 #### Time Breakdown for Gen AI Nodes
@@ -74,4 +74,4 @@ API nodes can be configured in either synchronous or asynchronous mode:
 Similar to API nodes, Gen AI nodes also involve external service calls (for example, to AI models). For Gen AI nodes, the following two key timing metrics are shown  in the debug log:
 
 * **Node processing time**: The time taken by the node to complete the execution.
-* **LLM response time**: The time taken for the connected AI model to return a response to GALE's Gen AI node.
+* **LLM response time**: The time taken for the connected AI model to return a response to AI for Process's Gen AI node.

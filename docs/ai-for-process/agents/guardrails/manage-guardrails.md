@@ -1,6 +1,6 @@
 # Manage Guardrails
 
-To use input and output scanners in GALE, you need to deploy them first. Once deployed, a scanner will be available across all your agents on the platform.
+To use input and output scanners in AI for Process, you need to deploy them first. Once deployed, a scanner will be available across all your agents on the platform.
 
 Steps to deploy a scanner:
 

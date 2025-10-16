@@ -1,6 +1,6 @@
 # Add an External Model using API Integration
 
-You can connect an external model to GALE using API integration. This feature extends GALE's functionality by allowing you to bring in models from external sources.
+You can connect an external model to AI for Process using API integration. This feature extends AI for Process's functionality by allowing you to bring in models from external sources.
 
 ## Add an External Model
 
@@ -68,7 +68,7 @@ Steps to add an external model using API integration:
 
 ## Manage Custom API Integrations
 
-Once the integration is successful and the inference toggle is ON, you can use the model across GALE. You can also turn the inferencing OFF if needed.
+Once the integration is successful and the inference toggle is ON, you can use the model across AI for Process. You can also turn the inferencing OFF if needed.
 
 To manage an integration, click the three-dot icon corresponding to its name and choose from the following options:  
 

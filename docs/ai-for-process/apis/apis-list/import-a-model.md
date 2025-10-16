@@ -1,6 +1,6 @@
 # Import a Model API
 
-The API imports a model in chunks into the GALE environment. The import process includes the following steps and APIs:
+The API imports a model in chunks into the AI for Process environment. The import process includes the following steps and APIs:
 
 * [Start Import Session](./import-a-model.md/#start-import-session){:target="_blank"} - Import Model - Start Session API.
 * [Upload Model in Chunks](./import-a-model.md/#upload-model-in-chunks){:target="_blank"} - Import Model - Chunk Upload API.

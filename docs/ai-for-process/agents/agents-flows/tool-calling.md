@@ -1,6 +1,6 @@
-# Tool Calling in GALE
+# Tool Calling in AI for Process
 
-Tools enable language models to perform tasks or retrieve external information during agent flows. This empowers developers to build dynamic workflows that combine LLM capabilities with custom business logic. A tool can be any external or internal service, API, or a function that the model uses to perform specific tasks. Examples of tools include third-party APIs, AI models, databases, or built-in functions that enhance the flow’s capabilities. In GALE, tools are essentially deployed agents.
+Tools enable language models to perform tasks or retrieve external information during agent flows. This empowers developers to build dynamic workflows that combine LLM capabilities with custom business logic. A tool can be any external or internal service, API, or a function that the model uses to perform specific tasks. Examples of tools include third-party APIs, AI models, databases, or built-in functions that enhance the flow’s capabilities. In AI for Process, tools are essentially deployed agents.
 
 ## What is Tool Calling?
 
@@ -10,15 +10,15 @@ During the flow, when the model reaches a step that requires a tool, it triggers
 
 Tool calling helps the agent access additional resources, retrieve data, and perform tasks, making it more powerful and able to handle complex workflows effectively.
 
-## How Tool Calling Works in GALE
+## How Tool Calling Works in AI for Process
 
-In GALE, the tool calling feature within the GenAI nodes expands the model’s capabilities by integrating additional tools for more efficient and precise task completion. Within an agent workflow, the GenAI node can invoke additional resources to complete tasks enhancing the node's capabilities beyond its internal functions.  
+In AI for Process, the tool calling feature within the GenAI nodes expands the model’s capabilities by integrating additional tools for more efficient and precise task completion. Within an agent workflow, the GenAI node can invoke additional resources to complete tasks enhancing the node's capabilities beyond its internal functions.  
  
 The following outlines the typical steps involved in a tool calling process:
 
 1. **Input Data**: The model receives a query or input from the user.
 2. **Processing**: The model analyzes the request and determines which tools or additional resources are needed. It then maps the user's query to predefined tools configured in the GenAI node.
-3. **Tool Call**: GALE triggers the mapped tool with the necessary arguments.
+3. **Tool Call**: AI for Process triggers the mapped tool with the necessary arguments.
 4. **Tool Execution**: The called tool performs its tasks, such as running a search, generating an image, or fetching specific information.
 5. **Output**: The tool's result is returned to the GenAI node, which may process it further or deliver the final output to the user. The model combines the results from the various tools and generates a cohesive, informative response for the user.
 
@@ -57,7 +57,7 @@ The model generates the tool call for the Get Weather API, which includes the ne
     * `location: "Paris"`
     * `unit: "Celsius"`
 
-The model sends this information in the response body, asking GALE to trigger the weather tool.
+The model sends this information in the response body, asking AI for Process to trigger the weather tool.
 
 **Step 4: Tool Call 1 - Weather API**  
 The Get Weather tool is triggered, and the external Weather API returns the following data:
@@ -113,7 +113,7 @@ The user receives the final output, which includes both the weather update and t
 
 Tool calling functionality is available when commercial models are added to a GenAI node. However, only specific commercial models support this feature. Currently, Kore-hosted and Hugging Face models do not support tool calling. 
 
-Below is a list of models across various platforms that currently support tool calling in GALE:
+Below is a list of models across various platforms that currently support tool calling in AI for Process:
 
 **OpenAI**
 

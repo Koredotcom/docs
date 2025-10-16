@@ -1,6 +1,6 @@
 # Deploy an Agent
 
-GALE supports both synchronous and asynchronous agent deployment modes.
+AI for Process supports both synchronous and asynchronous agent deployment modes.
 
 !!! Note
 

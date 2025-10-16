@@ -1,6 +1,6 @@
 # Import an Agent 
 
-Using import functionality, GALE enables you to create a new agent or add it as a version to an existing agent in your account. The import process preserves agent configuration while handling environment variables, errors, and role permissions.
+Using import functionality, AI for Process enables you to create a new agent or add it as a version to an existing agent in your account. The import process preserves agent configuration while handling environment variables, errors, and role permissions.
 
 Creating a new agent involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported agent a unique name to avoid conflicts with existing agents. [Learn more](./import-an-agent.md/#import-to-create-a-new-agent){:target="_blank"}.
 
@@ -16,7 +16,7 @@ Once the import is complete, the agent flow canvas is updated with the latest co
 
 To initiate an agent creation journey through the import functionality, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your GALE account.
+1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your AI for Process account.
 2. Click **Agents** on the top menu.
 3. Do one of the following based on your requirements:
 
@@ -87,7 +87,7 @@ When you import an agent as a version, you must upload all the following files:
 
 To import an agent as a version, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your GALE account.
+1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your AI for Process account.
 2. Click **Agents** on the top menu.
 <img src="../images/agents-select.png" alt="select agents" title="select agents" style="border: 1px solid gray; zoom:75%;">
 
@@ -142,7 +142,7 @@ When importing environment variables during agent version import, conflicts may 
 
 You must resolve conflicting variables by either keeping the existing value (of the version being replaced) or replacing them (with values from the imported agent) to ensure a smooth import process.
 
-When GALE detects conflicting environment variables, it displays the following window. To resolve conflicts, follow the steps below:
+When AI for Process detects conflicting environment variables, it displays the following window. To resolve conflicts, follow the steps below:
 
 1. Select the **Conflicting variables** tab.
 2. Select either **Overwrite** to replace the existing variable with the imported one or select **Keep existing**.

@@ -1,8 +1,8 @@
 # Export an Agent
 
-GALE offers the ability to export specific agent versions from your account as self-contained packages for data preservation and sharing. This feature also allows users to transfer agent configurations without compromising the integrity and security of the agent setup.
+AI for Process offers the ability to export specific agent versions from your account as self-contained packages for data preservation and sharing. This feature also allows users to transfer agent configurations without compromising the integrity and security of the agent setup.
 
-When you export an agent, GALE automatically creates a *.zip* file named after the agent. For example, if the agent is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*". You can save this folder in the desired location on your local machine. 
+When you export an agent, AI for Process automatically creates a *.zip* file named after the agent. For example, if the agent is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*". You can save this folder in the desired location on your local machine. 
 
 The exported package can be reimported to create a new agent or add it as a version to an existing one, ensuring seamless restoration.
 
@@ -24,7 +24,7 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 To export an agent’s version, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your GALE account. To enable and sign in via SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
+1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your AI for Process account. To enable and sign in via SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 2. Click **Agents** on the top menu.
 3. Select the relevant tab to view the agent.
 4. Click the required agent’s name to proceed further.

@@ -1,6 +1,6 @@
 # About Agents
 
-Agents can automate processes, streamline workflows, generate insights, and create outputs like deal summaries or emails. GALE's agent builder empowers you to create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required. You can easily configure settings, combine multiple workflows, and integrate with systems like AWS.
+Agents can automate processes, streamline workflows, generate insights, and create outputs like deal summaries or emails. AI for Process's agent builder empowers you to create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required. You can easily configure settings, combine multiple workflows, and integrate with systems like AWS.
 
 ### Key Features
 

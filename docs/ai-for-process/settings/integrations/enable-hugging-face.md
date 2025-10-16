@@ -1,6 +1,6 @@
 # Enable Hugging Face
 
-GALE seamlessly integrates with the Hugging Face platform, allowing you to incorporate cutting-edge text generation and text-to-text generation models. Any publicly available Hugging Face model can be swiftly deployed via GALE with minimal effort. To utilize private or exclusive Hugging Face models, you can effortlessly establish a connection by supplying your Hugging Face access tokens. This facilitates GALE in unleashing the complete capabilities of your Hugging Face account, regardless of whether you possess public or private assets.
+AI for Process seamlessly integrates with the Hugging Face platform, allowing you to incorporate cutting-edge text generation and text-to-text generation models. Any publicly available Hugging Face model can be swiftly deployed via AI for Process with minimal effort. To utilize private or exclusive Hugging Face models, you can effortlessly establish a connection by supplying your Hugging Face access tokens. This facilitates AI for Process in unleashing the complete capabilities of your Hugging Face account, regardless of whether you possess public or private assets.
 
 **To integrate with your hugging face account, follow these steps**:
 
