@@ -1,6 +1,6 @@
 # About Agentic Apps
 
-Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They are intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), agentic apps can reason, adapt, and act without requiring constant human intervention.
+Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They're intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), agentic apps can reason, adapt, and act without requiring constant human intervention.
 
 ## Key Components
 
@@ -24,7 +24,7 @@ The Agent Platform follows the Supervisor Pattern for its orchestrator. In this 
 
 ### Supervisor Pattern
 
-The Supervisor Pattern is an architectural pattern used in the design of agentic apps, where a central component called the "orchestrator" acts as a supervisor to manage and coordinate multiple AI agents. This pattern helps to efficiently handle complex tasks by breaking them down into smaller sub-tasks and delegating them to specialized agents.
+The Supervisor Pattern is an architectural pattern used in the design of agentic apps, where a central component called the orchestrator acts as a supervisor to manage and coordinate multiple AI agents. This pattern helps to efficiently handle complex tasks by breaking them down into smaller sub-tasks and delegating them to specialized agents.
 
 Here's how the Supervisor Pattern works and helps in agentic apps:
 
@@ -62,10 +62,10 @@ Agents are specialized, autonomous workers that possess the knowledge and resour
 
 Agents utilize various tools to enhance their capabilities. After receiving a user query from the orchestrator, the agent selects the most suitable tool, prepares the required input parameters, invokes the tool, processes the result, and returns the output to the orchestrator or user.
 
-**Example:** In a banking application, specialized agents handle various user queries:
+**Example:** In a banking app, specialized agents handle various user queries:
 
 * A savings account agent processes fund transfers, adds new payees, displays balances, and performs other related tasks.
-* A loan agent manages loan applications and payments.
+* A loan agent manages loan apps and payments.
 * A card management agent handles PIN resets or card blocking.
 
 Each agent is tailored to its specific domain, ensuring efficient and accurate handling of queries and actions.
@@ -91,7 +91,7 @@ The process of an agent using tools follows this sequence:
 
 1. **Task Planning:** After receiving a user query via the orchestrator, the agent determines that it requires external functionality or data to fulfill the query.
 1. **Tool Identification:** The agent selects the most suitable tool for the task at hand.
-1. **Parameter Preparation:** Using LLM capabilities, the agent extracts relevant entities (e.g., location, date, user preference) and maps them to the required input format.
+1. **Parameter Preparation:** Using LLM capabilities, the agent extracts relevant entities (for example: location, date, user preference) and maps them to the required input format.
 1. **Tool Invocation:** The agent calls the tool, passing the prepared parameters.
 1. **Execution:** The tool processes the input and performs the necessary action.
 1. **Result Processing:** The agent processes the tool's output, validating, formatting, or using it for the next workflow step.
