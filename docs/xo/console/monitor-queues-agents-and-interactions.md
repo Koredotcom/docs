@@ -191,7 +191,7 @@ Steps to transfer all Calls/Chats/Emails in Agent Queue:
 3. A bottom action bar appears, displaying a **"Transfer"** button.
 4. From the queue dropdown, choose a destination queue.  
     <img src="../images/select-queue (2).png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
-5. Click **Transfer**. The selected conversations are reassigned to the chosen queue. \
+5. Click **Transfer**. The selected conversations are reassigned to the chosen queue.  
     <img src="../images/transfer.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:70%;">
 
 #### Force Close
