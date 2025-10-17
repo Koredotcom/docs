@@ -10,7 +10,7 @@ When you [invite](../../getting-started/sign-up-sign-in.md/#invite-a-user-to-you
 
 1. **Master Admin Role**
 
-    * When you [create an account](../../getting-started/sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}, you automatically become the account owner and are assigned the **Master Admin** role. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
+    * When you [create an account](../../getting-started/sign-up-sign-in.md){:target="_blank"}, you automatically become the account owner and are assigned the **Master Admin** role. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
 
     * As the Master Admin, you have the highest level of access, allowing you to create, modify, and delete permissions for custom roles and manage users in your account.
 

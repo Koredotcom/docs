@@ -22,7 +22,7 @@ API keys are typically included in request headers or parameters to validate acc
 
 ## How to Find the API Key?
 
-1. [Login](../getting-started/sign-up-sign-in.md#sign-in-to-gale){:target="_blank"} to AI for Process and [access](../settings/settings-overview.md#access-settings-console){:target="_blank"} the **Settings** Console.
+1. [Login](../getting-started/sign-up-sign-in.md){:target="_blank"} to AI for Process and [access](../settings/settings-overview.md#access-settings-console){:target="_blank"} the **Settings** Console.
 
 2. On the left menu, click **Security & Control** -> **Management API keys**.
 
