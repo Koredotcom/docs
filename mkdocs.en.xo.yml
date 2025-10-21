@@ -837,6 +837,7 @@ nav:
       - Advanced Settings:
         - PII Settings: app-settings/advanced-settings/pii-data-masking.md
         - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
+        - System Settings: app-settings/advanced-settings/system-settings.md
       - Change Logs: app-settings/change-logs.md
       - Delete App: app-settings/delete-app.md
     - Billing & Payments:

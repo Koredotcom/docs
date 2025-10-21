@@ -384,7 +384,7 @@ This app will be used in studio script.
         <img src="../images/channels_voice-6.png" alt="channels_voice" title="channels_voice" style="border: 1px solid gray; zoom:80%;">
         * **Bot ID and Account ID**: **Channels** > **Chat** section of the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
         <img src="../images/channels-chat-7.png" alt="channels-chat" title="channels-chat" style="border: 1px solid gray; zoom:80%;">
-        * **Token**: Create a JSON Web Token on [jwt.io](http://jwt.io) with the following details.
+        * **Token**: Create a JSON Web Token on [jwt.io](https://www.jwt.io) with the following details.
             * Payload: {"appId": &lt;Bot Client ID>}
             * Header: {"alg": "HS256","typ": "JWT"}
             * Secret: Your Kore.ai Client Secret.
