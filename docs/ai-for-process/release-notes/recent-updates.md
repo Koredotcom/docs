@@ -1,4 +1,4 @@
-# Release Notes
+# AI for Process Release Notes
 
 This document provides information on the feature updates and enhancements introduced in the recent AI for Process releases.
 
