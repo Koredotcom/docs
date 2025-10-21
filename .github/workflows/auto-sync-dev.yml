@@ -1,18 +1,19 @@
-name: Auto-sync dev branches from upstream
+name: Auto-sync from Kore prod repo (non-ff is allowed)
 
 on:
   schedule:
-    - cron: "0 6 * * *"
-  workflow_dispatch:
+    - cron: "0 */12 * * *"   # every 12h
+  workflow_dispatch: {}      # run manually from Actions tab
 
 permissions:
-  contents: write
+  contents: write            # required to push to your fork
 
 env:
-  UPSTREAM: Koredotcom/docs      # ← set to upstream "owner/repo"
+  UPSTREAM: Koredotcom/docs
+  DEFAULT_BRANCH: dev
 
 jobs:
-  sync-dev-branches:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout fork
@@ -20,37 +21,24 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Add upstream & fetch
         run: |
           git remote add upstream https://github.com/${{ env.UPSTREAM }}.git
           git fetch upstream --prune
-          git fetch origin --prune
 
-      - name: Sync dev* branches (fast-forward only)
-        shell: bash
+      - name: Merge upstream -> fork (allow non-ff)
         run: |
-          set -euo pipefail
-          mapfile -t DEV_BRANCHES < <(git ls-remote --heads upstream \
-            | awk '{print $2}' | sed 's#refs/heads/##' | grep -E '^dev')
-
-          if [[ ${#DEV_BRANCHES[@]} -eq 0 ]]; then
-            echo "No upstream dev* branches found."; exit 0
+          git checkout "$DEFAULT_BRANCH"
+          # Try a regular merge (creates a merge commit if needed)
+          if git merge --no-edit "upstream/$DEFAULT_BRANCH"; then
+            git push origin "$DEFAULT_BRANCH"
+            echo "Synced with upstream (merge completed)."
+          else
+            echo "::error ::Merge conflicts detected. Resolve manually in your fork, then re-run."
+            exit 1
           fi
-
-          for BR in "${DEV_BRANCHES[@]}"; do
-            echo "==> Syncing $BR"
-            if git show-ref --verify --quiet "refs/remotes/origin/$BR"; then
-              git checkout -B "$BR" "origin/$BR"
-              if git merge --ff-only "upstream/$BR"; then
-                git push origin "$BR"
-                echo "Synced $BR."
-              else
-                echo "Skipped $BR (non fast-forward required)."
-              fi
-            else
-              # Create the branch in the fork from upstream (initial publish)
-              git checkout -B "$BR" "upstream/$BR"
-              git push -u origin "$BR"
-              echo "Published $BR to fork."
-            fi
-          done
