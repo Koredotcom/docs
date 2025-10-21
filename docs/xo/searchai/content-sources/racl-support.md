@@ -90,7 +90,6 @@ SearchAI applies the same logic to other connectors. For example, if a ServiceNo
 3. **Public Access**: Where the content has no specific permissions associated with it and is accessible to all. In this case, no access control is required. The racl fields in the indexed content are set to *, as shown below. Any file indexed in this way will be accessible to all the users.
 ![Public Access](images/connectors/racl/public-access.png "public-access")
 
-
 #### View Permission Information
 
 To view and verify the user permissions in the Answer Index, go to the **Browse page**, open the JSON view of a chunk corresponding to the file, and verify the contents of the `sys_racl` field. 
