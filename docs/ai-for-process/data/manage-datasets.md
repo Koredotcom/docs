@@ -15,7 +15,7 @@ Steps to upload a dataset:
 
     !!! note
 
-        Files uploaded in the Playground or model fine-tuning wizard are automatically saved in the Data tab for future use.
+        Files uploaded in Prompts Studio or Models fine-tuning wizard are automatically saved in the Data tab for future use.
 
 
 ## Download or Delete a Dataset

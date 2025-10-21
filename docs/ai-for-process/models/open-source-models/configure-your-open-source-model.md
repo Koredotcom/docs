@@ -11,7 +11,7 @@ You can configure a specific timeout for your model's endpoint. Enter the timeou
 
 !!! note 
 
-    Timeout precedence: Agent timeout > Node timeout > Model timeout.    
+    Timeout precedence: Tool > Node timeout > Model timeout.    
 
 ## Undeploy the Model 
 

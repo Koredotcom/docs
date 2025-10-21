@@ -4,7 +4,7 @@
 
 
 ## API Endpoint
-After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in AI for Process. 
+After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in Agent Platform. 
 
 The API endpoint is available in 3 formats.
 

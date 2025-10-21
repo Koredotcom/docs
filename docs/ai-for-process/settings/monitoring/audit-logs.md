@@ -2,11 +2,11 @@
 
 ## Overview
 
-AI for Process’s comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
+Agent Platform’s comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
 
 This empowers admins to ensure compliance with internal policies and regulations, while proactively mitigating risks like data privacy breaches and algorithmic bias. 
 
-Each log entry includes the following to provide actionable insights on account and agent-level activities:
+Each log entry includes the following to provide actionable insights on account and tool-level activities:
 
 - Event name and category.
 - The user who performed the action.
@@ -24,7 +24,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>The <b>IP Address</b> is fetched from the user’s current network.</li>
-<li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Agent ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
+<li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Tool ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
 
 ## Account-Level Audit Logs
 
@@ -301,11 +301,11 @@ Additionally, you can set **custom filters** based on a specific category, event
 
   <table>
   <tr>
-     <td colspan="3" align="center"><strong>Category</strong>: Agents
+     <td colspan="3" align="center"><strong>Category</strong>: Tools
    </td>
    </tr>
   <tr>
-   <td colspan="3"><b>Metadata</b>: <strong><i>Agent ID</i></strong> and <strong><i>Agent Name</i></strong> are displayed for all the category events below.
+   <td colspan="3"><b>Metadata</b>: <strong><i>Tool ID</i></strong> and <strong><i>Tool Name</i></strong> are displayed for all the category events below.
    </td>
   </tr>
      <tr>
@@ -317,18 +317,18 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Agent created
+   <td>Tool created
    </td>
-   <td>Tracks the creation of an agent in the account.
+   <td>Tracks the creation of a tool in the account.
    </td>
    <td align="center">
    -
    </td>
   </tr>
   <tr>
-   <td>Agent deleted
+   <td>Tool deleted
    </td>
-   <td>Tracks the deletion of an agent in the account.
+   <td>Tracks the deletion of a tool in the account.
    </td>
    <td>
 <ul>
@@ -563,11 +563,11 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
 </table>
 
-## Agent-Level Audit Logs
+## Tool-Level Audit Logs
 
 <div class="admonition warning">
 <p class="admonition-title">Universal Metadata</p>
-<p>The <b>User ID</b>, <b>IP Address</b>, and <b>Agent ID</b> are shown for audit log entries across all modules, in addition to module and category-specific metadata listed in the table below.</p></div>
+<p>The <b>User ID</b>, <b>IP Address</b>, and <b>Tool ID</b> are shown for audit log entries across all modules, in addition to module and category-specific metadata listed in the table below.</p></div>
 
 <table>
   <tr>
@@ -585,7 +585,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Role Changed
    </td>
-   <td>Tracks the change of an agent role for an account user by a user.
+   <td>Tracks the change of a tool role for an account user by a user.
    </td>
    <td rowspan="3" align="center">-
    </td>
@@ -593,23 +593,23 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Invited users
    </td>
-   <td>Tracks the invitation of one or more users to the account at the agent level.
+   <td>Tracks the invitation of one or more users to the account at the tool level.
    </td>
   </tr>
   <tr>
    <td>Removed Users
    </td>
-   <td>Tracks the removal of one or more users from the account at the agent level.
+   <td>Tracks the removal of one or more users from the account at the tool level.
    </td>
   </tr>
   </table>
   <table>
   <tr>
-   <td colspan="4" align="center"><strong>Category</strong>: Agent Management
+   <td colspan="4" align="center"><strong>Category</strong>: Tool Management
    </td>
   </tr>
   <tr>
-   <td colspan="4" ><strong>Agent version</strong>,<strong> API mode</strong>,<strong> sync/async</strong>, and<strong> URL </strong>are displayed for all the category events below.
+   <td colspan="4" ><strong>Tool version</strong>,<strong> API mode</strong>,<strong> sync/async</strong>, and<strong> URL </strong>are displayed for all the category events below.
 <p style="text-align: center">
 <strong> </strong>
    </td>
@@ -623,14 +623,14 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Agent Deployed</td>
-   <td>Tracks the agent deployments in the account.</td>
+   <td>Tool Deployed</td>
+   <td>Tracks the tool deployments in the account.</td>
    <td rowspan="2" align="center">-</td>
   </tr>
   <tr>
-   <td>Agent Undeployed
+   <td>Tool Undeployed
    </td>
-   <td>Tracks the agent undeployments in the account.
+   <td>Tracks the tool undeployments in the account.
    </td>
   </tr>
   <tr>
@@ -648,7 +648,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Version Created
    </td>
-   <td>Tracks the agent version creation.
+   <td>Tracks the tool version creation.
    </td>
    <td rowspan="8" colspan="2" align="center">-
    </td>
@@ -656,7 +656,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Version Deleted
    </td>
-   <td>Tracks the agent version deletion.
+   <td>Tracks the tool version deletion.
    </td>
   </tr>
   <tr>
@@ -664,37 +664,37 @@ Additionally, you can set **custom filters** based on a specific category, event
 <p>
  
    </td>
-   <td>Tracks the agent API Key creation.
+   <td>Tracks the tool API Key creation.
    </td>
   </tr>
   <tr>
    <td>API Key deleted
    </td>
-   <td>Tracks the agent API Key deletion.
+   <td>Tracks the tool API Key deletion.
    </td>
   </tr>
   <tr>
-   <td>Agent description updated
+   <td>Tool description updated
 <p>
  
    </td>
-   <td>Tracks the agent description update done.
+   <td>Tracks the tool description update done.
    </td>
   </tr>
   <tr>
-   <td>Agent name updated
+   <td>Tool name updated
 <p>
  
    </td>
-   <td>Tracks the agent name update done.
+   <td>Tracks the tool name update done.
    </td>
   </tr>
   <tr>
-   <td>Agent exported
+   <td>Tool exported
 <p>
  
    </td>
-   <td>Tracks the agent export done.
+   <td>Tracks the tool export done.
    </td>
   </tr>
   <tr>
@@ -819,14 +819,14 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 To access and view audit logs, follow the steps below:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in){:target="_blank"} to your AI for Process account. To enable and sign in via SSO, click [here](../security-and-control/single-sign-on.md){:target="_blank"}.
-2. Navigate to the [Settings](https://galeadmin-kore.github.io/docs/gale/settings/settings-overview/#access-settings-console){:target="_blank"} console.
+1. [Sign in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../security-and-control/single-sign-on.md){:target="_blank"}.
+2. Navigate to the [Settings](../../settings/settings-overview.md/#access-settings-console){:target="_blank"} console.
 3. Click **Monitoring** > **Audit Logs** on the left navigation menu.
 <img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
 
 ## Dashboard Information
 
-The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your AI for Process account:
+The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your Agent Platform account:
 
 * **Event Name:** Describes the specific event or action that occurred.
 * **Category:** Identifies the module or entity affected by the event.
@@ -988,16 +988,16 @@ The downloaded *.CSV* file is automatically named as <code><em>Account_Audit_Log
 
 <img src="../images/csv-file-export-audit-logs.png" alt="csv file example" title="csv file example" style="border: 1px solid gray; zoom:75%;">
 
-AI for Process’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
+Agent Platform’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
 
 You can confidently scale AI initiatives with event-based user activity logs to manage compliance and ensure responsible use of generative AI.
 
 ## Related Information
 
-* [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other AI for Process admin features.
+* [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
-* [Agent Flow Change Logs](../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to an agent's flow.
+* [Tool Flow Change Logs](../../tools/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 
 
 

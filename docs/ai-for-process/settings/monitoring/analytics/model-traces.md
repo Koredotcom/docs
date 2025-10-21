@@ -35,7 +35,7 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 ## Best Practices
 
-* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on AI for Process to optimize usage.
+* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on Agent Platform to optimize usage.
 * Analyze successful versus failed runs to compare model performance over time and identify failure patterns using failure rates for all model types.
 * Identify model runs with low or high response times using P90 and P99 thresholds and isolate under-performing runs for further investigation.
 * Apply time-based and record filters for focused and accurate analysis.
@@ -131,7 +131,7 @@ The UI summarizes key metrics for the selected period, offering actionable insig
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Hosting Credits apply only to AI for Process’s open-source and fine-tuned models and are not displayed for external models.</p></div>
+<p>Hosting Credits apply only to Agent Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
 
 <img src="../images/hosting-credits.png" alt="hosting credits" title="hosting credits" style="border: 1px solid gray; zoom:75%;">
 
@@ -321,7 +321,7 @@ The table below summarizes the available columns along with their supported oper
    <td rowspan="3" >
 <ul>
 
-<li><strong>Agent</strong>: The request was sent to the model from an agent. <a href="https://docs.kore.ai/gale/agents/overview/" target="_blank">Learn more</a>.</li>
+<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="https://docs.kore.ai/gale/agents/overview/" target="_blank">Learn more</a>.</li>
 
 <li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="https://docs.kore.ai/gale/playground/using-prompt-studio/" target="_blank">Learn more</a>.</li>
 
@@ -436,7 +436,7 @@ Displays the following model run metadata to analyze the model’s performance.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Deployment Version is displayed only for AI for Process's open-source and fine-tuned models, not for external models.</p></div>
+<p>The Deployment Version is displayed only for Agent Platform's open-source and fine-tuned models, not for external models.</p></div>
 
 <img src="../images/meta-data-model-traces.png" alt="metadata" title="metadata" style="border: 1px solid gray; zoom:75%;">
 
@@ -444,8 +444,8 @@ Displays the following model run metadata to analyze the model’s performance.
 
 ## Related Information
 
-* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other AI for Process admin features.
+* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
-* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for agents, set limits, and track usage trends.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
 
