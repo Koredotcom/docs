@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Agent Activity API
 
 To get the agent status in real-time or changes stacked every 30 seconds.

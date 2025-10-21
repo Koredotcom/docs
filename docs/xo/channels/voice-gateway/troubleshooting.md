@@ -35,3 +35,9 @@ If a request is not being assigned to an available agent and the app is respondi
     In the WebSocket (WS), check if the URL **sbc1-korevg-np.kore.ai** (or the environment-specific URL) is used. Verify that both agent and Voice Gateway are connected.
 
     Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response is not received, it indicates an issue with Voice Gateway. You can report this to the Support team.
+
+## TTS Error During Voice Call
+
+If a “TTS ERROR” appears when making a Voice Call and executing the Start Flow tied to an automation, it indicates that the voice name was not properly selected in the configuration.
+
+Even if you select a voice and save the configuration, the system may not register the selection. To resolve this issue, reselect the desired voice and then make a minor edit in the flow description (for example, add or remove a character). This action prompts the system to recognize the change, ensuring that the TTS (Text-to-Speech) functions correctly and the audio plays as expected.

@@ -189,6 +189,10 @@ The modules can be accessed on the XO11 platform by clicking the Product Switche
     * Agent AI
 * The license conversion process is integrated into the broader upgrade framework to ensure uninterrupted service access for customers during the transition.
 
+!!! note
+
+    When upgrading an account associated with SmartAssist, the instance bot does not initially appear in XO v11. Contact the Support team, to execute a migration script to make the instance bot visible in XO v11 for that account. Afterward, the instance bot must be upgraded, which then becomes the Contact Center AI instance. At this stage, the SmartAssist configurations are properly migrated to Contact Center AI.
+
 ### Upgrade Access Matrix
 
 #### Enterprise Standard

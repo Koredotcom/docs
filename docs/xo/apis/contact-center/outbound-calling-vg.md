@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Outbound Calling API (Voice Gateway)
 
 Outbound calls can be made to external customers using Voice Gateway. The answering machine detection feature can be enabled on outbound calls to indicate whether a person or a machine has answered a call.

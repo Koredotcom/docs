@@ -1,6 +1,4 @@
-<!-----
-
------>
+--8<-- "includes/agentai-api-back-link.md"
 
 # Raw Data API v2
 

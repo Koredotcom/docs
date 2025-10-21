@@ -1,3 +1,5 @@
+--8<-- "includes/cm-api-back-link.md"
+
 # Get Tasks API
 
 The API enables you to retrieve task data from the case management system with required filters for status, priority, assignment, channels, and date ranges.
@@ -7,7 +9,7 @@ The API enables you to retrieve task data from the case management system with r
 | **Endpoint**      | [`https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/getTasks`](https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/getTasks) |
 | **Content Type**  | `application/json`                                                                                                                                         |
 | **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).               |
-| **API Scope**     | Case Management Configuration.                                                                                                                             |
+| **[API Scope](../automation/api-introduction.md#associating-api-scopes)**     | Case Management Configuration.                                                                                                                             |
 
 ## Path parameters
 

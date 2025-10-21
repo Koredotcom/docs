@@ -10,7 +10,7 @@ To answer this query, the agent must:
 * Verify ticket availability
 * Find hotel availability
 
-**Without MCP:** The agent would require three separate integrations with custom logic for each system.
+**Without MCP:** The agent would require three separate tool integrations with custom logic for each system.
 
 **With MCP:** The agent interacts with all three systems through a single, consistent interface, dramatically simplifying development and reducing complexity.
 
@@ -24,7 +24,7 @@ The following key features make MCP a powerful solution for connecting AI models
 
 * Open Standard: Universal standardized protocol for AI and Tool integration.
 * Simplified Development: The MCP client can communicate with all the available tools in the MCP server through the same interface.
-* Scalable Architecture: Easy to add new tools to Agents without custom integration.
+* Scalable Architecture: Easy to add new tools to agents without custom integration.
 * Universal Compatibility: Regardless of which MCP server is used, all compatible MCP clients communicate using a standardized protocol, ensuring seamless interoperability without additional adjustments.
 
 ## How MCP Works

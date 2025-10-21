@@ -1,4 +1,6 @@
-# **Advance Search API - V2**
+--8<-- "includes/searchai-api-back-link.md"
+
+# Advance Search API - V2
 
 This API enables you to retrieve answers and search results related to a specific query. By default, the API returns answers. Along with the search results and answers, the API also provides details about the chunks used and metadata information associated with those chunks.  
 

@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding Genesys Cloud CX Messaging as a Channel
 
 The Platform now allows you to add **Genesys Cloud CX Messaging** as a messaging channel for your AI Agent. Genesys Cloud CX Messaging integration helps instantly share your ideas with people inside your organization with the persistent chat history feature to start a conversation with your colleagues and continue it anywhere, anytime.

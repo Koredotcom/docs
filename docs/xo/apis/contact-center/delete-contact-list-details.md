@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Delete Contact List Details API
 
 Use this API to delete an existing contact list associated with a campaign.

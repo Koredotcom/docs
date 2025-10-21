@@ -226,8 +226,8 @@ Parameters:
     ```json
     {
         OnAgentTransferPayload ","
-        requestId ":1501244156289,"
-        botId ":"st - b4a22e86 - e95b - 575 c - b888 - e106d083a251 ","
+        requestId ":150124415xxxx,"
+        botId ":"st - b4a22e86 - e95b - 575 c - b888 - e106d083xxxx ","
         callbackUrl ":"https://platform.kore.ai/api/botsdk/stream/st-b4a22e86-e95b-575c-b888-e106d083a251/serviceCallback/1501244156289","context": ...
     }
     ```
@@ -359,7 +359,7 @@ Triggered when an agent transfers the chat to another agent or queue.
         "aId": "a-81b9991-1b19-4c38-b881-8513a4a2xxxx",
         "id": "u-bd64378a-117c-52c4-a6ae-7fff5647xxxx",
         "name": "nbk hero1",
-        "sipURI": "sip:support_production_a-81b9991-1b19-4c38-b881-8513a4a2490e@gautham.kore.ai:XXXX"
+        "sipURI": "sip:support_production_a-81b9991-1b19-4c38-b881-8513a4a2490e@john.kore.ai:XXXX"
       }
     ],
     "transferredBy": "u-a6808d57-9abd-5ce4-aa04-871d8a6axxxx",
@@ -630,6 +630,6 @@ These events are associated with the application subscribing to botkit event typ
         “type”:”events”, 
         “from”:”bot”, 
         “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} 
-        “preDefinedEvent”:{“type”:”MESSAGE_READ”, “id”:”&lt;msg-id>”}, “customEvent”:{“string”},”traceId”:”6b12f4cc73c806dd”
+        “preDefinedEvent”:{“type”:”MESSAGE_READ”, “id”:”&lt;msg-id>”}, “customEvent”:{“string”},”traceId”:”6b12f4cc73c8xxxx”
     }
     ```

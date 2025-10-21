@@ -448,7 +448,7 @@ Please refer to this [link](flow-health-dashboard.md#faqs-summary){:target="_bla
 ### NLP- Small Talk Summary
 
 The **Small Talk Summary** panel displays the [recommendation scores](#health-and-monitoring-metrics) generated for Small Talk interactions from the latest batch test executions.  
-<img src=../images/hm-22.png alt="Small Talk Summary" title="Small Talk Summary" style="border: 1px solid  gray; zoom:50%;"/>  
+<img src="../images/hm-22.png" alt="Small Talk Summary" title="Small Talk Summary" style="border: 1px solid  gray; zoom:50%;"/>  
 
 
 **Small Talk button**: Click this button to view the group name and the relevant user utterances, and Bot utterances.  

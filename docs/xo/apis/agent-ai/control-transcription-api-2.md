@@ -1,3 +1,5 @@
+--8<-- "includes/agentai-api-back-link.md"
+
 # Control Transcription API v2
 
 This API controls transcription and call recording sessions for Agent AI SIP-REC calls on third-party agent desktops during user-agent interactions. It lets you start, pause, resume, end/stop transcription and call recordings for a specific conversation by sending the appropriate action.

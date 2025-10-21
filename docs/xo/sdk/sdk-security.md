@@ -273,7 +273,7 @@ Below is the decoded sample JWE header:
 { 
 "alg": "RSA-OAEP", 
 "enc": "A128CBC-HS256",
-"kid": "k-ffb4hty69-750a-44af-91c1-de0bvcf6a", 
+"kid": "k-ffb4hty69-750a-44af-91c1-de0bvxxxx", 
 "typ": "JWT"
 }
 ```

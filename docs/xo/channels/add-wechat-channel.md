@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the WeChat Channel
 
 To set up WeChat as a channel, you need to register for a WeChat Official Account. You also need to enable webhook integrations for the Platform to send and receive messages.

@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Update a Particular Skill
 
 To update the particular skill with the given `streamId`, `skillGroupId`, and `skillId`.

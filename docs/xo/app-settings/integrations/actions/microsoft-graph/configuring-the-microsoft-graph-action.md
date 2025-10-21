@@ -10,8 +10,8 @@ This article explains how to enable, authorize, configure, and install the Micro
 The Kore.ai XO Platform supports basic authentication to allow a Microsoft Graph integration to exchange data. For more information, see [App Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}. 
 The Kore.ai XO Platform supports the following authorization types for the Microsoft Graph integration:
 
-* **Pre-Authorize the Integration** – To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token..
-* **Allow Users to Authorize the Integration** – This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s Microsoft Graph app to access an access token at runtime.
+* **Pre-Authorize the Integration**: To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token..
+* **Allow Users to Authorize the Integration**: This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s Microsoft Graph app to access an access token at runtime.
 
 !!! note
 
@@ -67,7 +67,7 @@ Steps to authorize a Microsoft Graph action using developer credentials:
 
 1. Go to **App Settings** > **Integrations** > **Actions** and select the **Microsoft Graph** action.
 2. In the **Configurations** dialog, select the **Authorization** tab.
-3. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **OAuth** option.  
+3. **Authorization Type**: Select the **Pre-authorize the Integration** option, and then select the **OAuth** option.  
 <img src="../images/ms-graph-action-img2.png" alt="Authorization type-OAuth" title="Authorization type-OAuth" style="border: 1px solid gray;zoom:50%;"/>
 
     **System Authorization**
@@ -94,18 +94,18 @@ Steps to authorize a Microsoft Graph action using developer credentials:
     <img src="../images/ms-graph-action-img5.png" alt="Auth mechanism type" title="Auth mechanism type" style="border: 1px solid gray;zoom:50%;"/>
 
     * Enter the following authentication credentials for the OAuth v2 mechanism:
-        * **Call back URL** – The call back URL of the Kore.ai XO Platform.
-        * **Identity Provider Name** – The name of your custom authorization profile.
-        * **Client ID** – The client ID of the Microsoft App that you created in the Azure Portal.
-        * **Client Secret Key** – The client secret value of the Microsoft App that you can generate in the Azure portal.
-        * **Authorization URL** – The authorization URL of the Microsoft Azure Portal.
-        * **Token Request URL** – The token request URL of the Microsoft Azure Portal.
-        * **Scope** – You must enter this scope value:
+        * **Call back URL**: The call back URL of the Kore.ai XO Platform.
+        * **Identity Provider Name**: The name of your custom authorization profile.
+        * **Client ID**: The client ID of the Microsoft App that you created in the Azure Portal.
+        * **Client Secret Key**: The client secret value of the Microsoft App that you can generate in the Azure portal.
+        * **Authorization URL**: The authorization URL of the Microsoft Azure Portal.
+        * **Token Request URL**: The token request URL of the Microsoft Azure Portal.
+        * **Scope**: You must enter this scope value:
             ```
             email Mail.ReadWrite Mail.Send offline_access openid profile User.Read Tasks.ReadWrite Calendars.ReadWrite MailboxSettings.Read
             ```
         
-        * **Refresh Token URL** – The refresh token URL of the Microsoft Azure Portal.  
+        * **Refresh Token URL**: The refresh token URL of the Microsoft Azure Portal.  
 
           To register an Azure App, read the [Adding the Microsoft Teams Channel](../../../../channels/add-microsoft-teams-channel.md{:target="_blank"} article.
 
@@ -135,7 +135,7 @@ Steps to authorize a Microsoft Graph action at a user level:
 
 1. Go to **App Settings** > **Integrations** > **Actions**, and select the **Microsoft Graph** action.
 2. In the Configurations dialog, select the **Authorization** tab.
-3. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select **OAuth** option.  
+3. **Authorization Type**: Select the **Allow Users to Authorize the Integration** option, and then select **OAuth** option.  
 <img src="../images/ms-graph-action-img9.png" alt="Auth type - OAuth" title="Auth type - OAuth" style="border: 1px solid gray;zoom:50%;"/>
 
     **System Authorization**

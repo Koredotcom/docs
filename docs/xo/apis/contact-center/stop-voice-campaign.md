@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Stop Voice Campaign API
 
 Use this API to stop an active Voice campaign for a given stream ID and campaign ID.

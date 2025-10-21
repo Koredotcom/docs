@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Debug Logs API
 
 To fetch debug logs of a specific conversation.

@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Add RingCentral Engage as a Channel
 
 To set up **RingCentral Engage** as a channel, you must complete the following steps:
