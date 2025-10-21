@@ -17,6 +17,7 @@ theme:
     - navigation.top
     - navigation.path
     - navigation.footer    
+    - navigation.instant
     - search.suggest
     - search.highlight    
     - content.tabs.link
@@ -54,12 +55,12 @@ plugins:
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'contactcenter/configurations/settings/llm-streaming.md': 'generative-ai-tools/streaming-responses.md'
-        'contact-center/case-management-apis/create-a-case.md': 'case-management-apis/create-a-case.md'
-        'contact-center/case-management-apis/create-a-task.md': 'case-management-apis/create-a-task.md'
-        'contact-center/case-management-apis/get-cases.md': 'case-management-apis/get-cases.md'
-        'contact-center/case-management-apis/get-tasks.md': 'case-management-apis/get-tasks.md'
-        'contact-center/case-management-apis/update-a-case.md': 'case-management-apis/update-a-case.md'
-        'contact-center/case-management-apis/update-a-task.md': 'case-management-apis/update-a-task.md'
+        'contact-center/case-management-apis/create-a-case.md': 'apis/case-management-apis/create-a-case.md'
+        'contact-center/case-management-apis/create-a-task.md': 'apis/case-management-apis/create-a-task.md'
+        'contact-center/case-management-apis/get-cases.md': 'apis/case-management-apis/get-cases.md'
+        'contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
+        'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
+        'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
 
 extra:
   version:
@@ -526,7 +527,8 @@ nav:
         - Introduction: quality-ai/analyze/conversation-mining-overview.md
         - Interactions: quality-ai/analyze/conversation-mining-interactions.md 
         - Audit Allocations: quality-ai/analyze/conversation-mining-audit-allocations.md
-      - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md            
+      - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md
+      - Topic Discovery: quality-ai/analyze/topic-discovery.md           
     - Coach:
         - Coaching Assignments: 
           - Supervisor Evaluation: quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md
@@ -544,6 +546,9 @@ nav:
             - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
             - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md              
       - Agent Scorecards: quality-ai/configure/agent-scorecards.md
+      - Taxonomy Builder: 
+          - Overview: quality-ai/configure/taxonomy-builder/overview.md
+          - Taxonomy Setup: quality-ai/configure/taxonomy-builder/setup-taxonomy.md
       - Quality Express:     
         - Quality AI Express: quality-ai/getting-started/quality-ai-express.md
         - AWS S3 Connector Setup Guide: quality-ai/getting-started/aws-s3-connector-setup-guide.md   
@@ -740,10 +745,10 @@ nav:
         - API List:          
           - Automation AI: apis/automation/api-list.md
           - Search AI: apis/searchai/api-list.md
-          - Contact Center AI: apis/contact-center/contact-center-api-list.md
-          - Agent AI: apis/agent-ai/apis-list.md
+          - Contact Center AI: apis/contact-center/api-list.md
+          - Agent AI: apis/agent-ai/api-list.md
           - Quality AI: apis/quality-ai/api-list.md
-          - Case Management: apis/case-management-apis/case-management-api-list.md
+          - Case Management: apis/case-management-apis/api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md

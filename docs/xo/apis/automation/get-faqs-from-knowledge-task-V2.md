@@ -1,6 +1,6 @@
-# Get FAQs – KG V2
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Get FAQs – KG V2
 
 To get a list of questions and nodes under the Knowledge task. This API supports parameters like botId, language, mode (configured/published), and nodeName.
 

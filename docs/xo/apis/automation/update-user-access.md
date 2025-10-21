@@ -1,6 +1,6 @@
-# Update User Access API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Update User Access API
 
 To add or remove the ability to access App Builder to create new bots.
 

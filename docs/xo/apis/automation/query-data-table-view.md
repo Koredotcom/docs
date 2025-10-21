@@ -1,6 +1,6 @@
-# Query Data (View) API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Query Data (View) API
 
 Used to get data from Table View.
 

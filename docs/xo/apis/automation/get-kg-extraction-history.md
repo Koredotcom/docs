@@ -1,6 +1,6 @@
-# Get Extractions History – KG
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Get Extractions History – KG
 
 To get the KG extractions’ history as a list.
 

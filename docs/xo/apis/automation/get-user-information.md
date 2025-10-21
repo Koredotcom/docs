@@ -1,6 +1,6 @@
-# Get User Information
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Get User Information
 
 To retrieve the user details.
 

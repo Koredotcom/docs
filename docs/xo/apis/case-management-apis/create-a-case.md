@@ -1,6 +1,6 @@
-# Create a case API
+--8<-- "includes/cm-api-back-link.md"
 
---8<-- "includes/casemanagementai-api-note.md"
+# Create a case API
 
 This API lets you to create a new case in the case management system.
 
@@ -9,7 +9,7 @@ This API lets you to create a new case in the case management system.
 | **Endpoint**      | [`https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createCase`](https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/createCase) |
 | **Content Type**  | `application/json`                                                                                                                                             |
 | **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                 |
-| **API Scope**     | Case Management Configuration.                                                                               
+| **[API Scope](../automation/api-introduction.md#associating-api-scopes)**     | Case Management Configuration.                                                                               
 
 ## Path parameters
 

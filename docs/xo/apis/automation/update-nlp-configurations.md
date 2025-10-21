@@ -1,6 +1,6 @@
-# Update NLP Configurations
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Update NLP Configurations
 
 To update the NLP thresholds and configurations.
 

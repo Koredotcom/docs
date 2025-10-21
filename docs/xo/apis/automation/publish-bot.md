@@ -1,6 +1,6 @@
-# Publish Bot API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Publish Bot API
 
 To initiate a publish request for a bot.
 

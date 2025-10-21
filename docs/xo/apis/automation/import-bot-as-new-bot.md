@@ -1,6 +1,6 @@
-# Import Bot as a New Bot API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Import Bot as a New Bot API
 
 To create a new bot in the account owner’s Builder Tool using the _File IDs_ generated when uploading the files to the local server.
 You can import a bot using either individual Definition, Config, Functions and Icon files, or you can directly use the zip file that is creating while performing bot export. In this case you will need to upload the zip file and use the File ID thus generated.

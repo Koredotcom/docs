@@ -2,7 +2,6 @@
 
 The following tables list the APIs available for Automation AI, grouped by the functionality they address:
 
-- [Automation AI API List](#automation-ai-api-list)
   - [Bot Definition APIs](#bot-definition-apis)
   - [NLP Training APIs](#nlp-training-apis)
   - [Analytics APIs](#analytics-apis)

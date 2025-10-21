@@ -1,6 +1,6 @@
-# Bot Export – Status API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Bot Export – Status API
 
 Gets the status of Bot Export request and also provides the download link of the bot export copy after the export is completed. Refer here for initiating [Bot Export API](bot-export.md).
 

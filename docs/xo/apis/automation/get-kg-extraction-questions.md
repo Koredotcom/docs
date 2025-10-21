@@ -1,6 +1,6 @@
-# Get Extraction Questions – KG
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Get Extraction Questions – KG
 
 To get the list of KG Extraction Questions.
 

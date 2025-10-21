@@ -1,6 +1,6 @@
-# Get All Contact Details Of Voice Campaigns
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Get All Contact Details Of Voice Campaigns
 
 Retrieves the current status and contact details of a voice campaign.
 

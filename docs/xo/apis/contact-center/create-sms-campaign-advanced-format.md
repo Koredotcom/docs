@@ -1,6 +1,6 @@
-# Create SMS Campaign (Advanced Format) API
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Create SMS Campaign (Advanced Format) API
 
 Use this API to create an SMS campaign with advanced formatting using the specified experience flow and contact list.
 

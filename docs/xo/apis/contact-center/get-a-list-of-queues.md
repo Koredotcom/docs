@@ -1,6 +1,6 @@
-# Get a List of Queues
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Get a List of Queues
 
 To create a queue with the given `streamId`.
 

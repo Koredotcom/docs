@@ -1,7 +1,7 @@
 
-# ML Utterances Import API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# ML Utterances Import API
 
 To import the ML Utterances into a bot.
 

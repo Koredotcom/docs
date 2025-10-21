@@ -177,7 +177,7 @@ nav:
       - Guardrails: assistant-configuration/guardrails.md
       - Orchestration Settings: assistant-configuration/orchestration-settings.md
       - Channels:
-        - MS Teams: 
+        - Microsoft Teams: 
           - Overview: channels/ms-teams/microsoft-teams.md
           - Configuration: channels/ms-teams/microsoft-teams-config.md
       - Announcements: assistant-configuration/announcements.md

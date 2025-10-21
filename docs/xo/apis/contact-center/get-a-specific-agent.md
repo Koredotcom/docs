@@ -1,6 +1,6 @@
-# Get a Specific Agent
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Get a Specific Agent
 
 To retrieve the details of a particular agent with the given `botId` and `agent Id`.
 

@@ -1,6 +1,6 @@
-# Create Bulk Contacts
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Create Bulk Contacts
 
 To create bulk contact from a CSV file with the given stream Id.
 

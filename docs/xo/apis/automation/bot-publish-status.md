@@ -1,6 +1,6 @@
-# Bot Publish Status – API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Bot Publish Status – API
 
 To fetch the publish status of the given agent or the last completed status request for the agent. To initiate the Publish API, refer [here](../automation/publish-bot.md).
 

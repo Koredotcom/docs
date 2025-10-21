@@ -1,6 +1,6 @@
-# Debug Logs API
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Debug Logs API
 
 To fetch debug logs of a specific conversation.
 

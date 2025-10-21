@@ -1,6 +1,6 @@
-# Delete Voice Campaign API
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Delete Voice Campaign API
 
 Use this API to delete an active Voice campaign for a given stream ID and campaign ID.
 

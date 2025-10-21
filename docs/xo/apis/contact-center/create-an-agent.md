@@ -1,6 +1,6 @@
-# Create an Agent
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Create an Agent
 
 To add an agent with the given Stream Id.
 

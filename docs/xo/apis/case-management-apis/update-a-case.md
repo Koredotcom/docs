@@ -1,6 +1,6 @@
-# Update a Case API
+--8<-- "includes/cm-api-back-link.md"
 
---8<-- "includes/casemanagementai-api-note.md"
+# Update a Case API
 
 This API allows you to update an existing case in the case management system.
 
@@ -9,7 +9,7 @@ This API allows you to update an existing case in the case management system.
 | **Endpoint**      | [`https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/updateCase/{{caseId}}`](https://{{host}}/caseManagement/api/public/analytics/{{streamId}}/updateCase/{{caseId}}) |
 | **Content Type**  | `application/json`                                                                                                                                                                   |
 | **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                                          |
-| **API Scope**     | Case Management Configuration.                                                                                                                                                       |
+| **[API Scope](../automation/api-introduction.md#associating-api-scopes)**     | Case Management Configuration.                                                                                                                                                       |
 
 ## Path parameters
 

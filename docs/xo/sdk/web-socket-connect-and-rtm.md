@@ -27,9 +27,9 @@ This section describes how to format the request to post a message in a chat wit
     "assertion": "{{JWT Token}}",
     "botInfo": {
         "chatBot": "{{Bot Name}}",
-        "taskBotId": "st-f74a3430-3b19-55a3-be41-1ab1a35c4685"
+        "taskBotId": "st-f74a3430-3b19-55a3-be41-1ab1a35cxxxx"
     }
-)
+}
 ```
 
 #### **Sample cURL**
@@ -37,7 +37,7 @@ This section describes how to format the request to post a message in a chat wit
 ```json
 curl 'https://{{APIHost}}/api/1.1/oAuth/token/jwtgrant' \
   -H 'content-type: application/json'  \
-  --data-binary '{"assertion":"{JWT Token}}","botInfo":{"chatBot":"{{Bot Name}}","taskBotId":"st-f74a3430-3b19-55a3-be41-1ab1a35c4685"}}
+  --data-binary '{"assertion":"{JWT Token}}","botInfo":{"chatBot":"{{Bot Name}}","taskBotId":"st-f74a3430-3b19-55a3-be41-1ab1a35cxxxx"}}
 ```
 
 #### Response
@@ -53,12 +53,12 @@ The following sample JSON response shows the `accessToken` and the user associat
         "issuedDate": "2019-02-28T06:52:23.160Z"        //access token issuedDate
     },
     "userInfo": {
-        "userId": "u-4f6c68e0-551a-5dd9-a33a-1af3dc9cadcc",        // user id which is unique for the user and can be used at bot messages api
-        "accountId": "5c66514d09ab3565deb2e30a",        // account id in which the user is present
-        "orgId": "o-88aad7f1-0d32-5765-93d7-f40c80402114",        // organization id of the user
-        "identity": "cs-5b08ed1e-5fa7-5aaa-9c21-28bf8c90b739/admin1212@qakore.xyz",        //identity of user from the channel perspective
+        "userId": "u-4f6c68e0-551a-5dd9-a33a-1af3dc9cxxxx",        // user id which is unique for the user and can be used at bot messages api
+        "accountId": "5c66514d09ab3565debxxxxx",        // account id in which the user is present
+        "orgId": "o-88aad7f1-0d32-5765-93d7-f40c8040xxxx",        // organization id of the user
+        "identity": "cs-5b08ed1e-5fa7-5aaa-9c21-28bf8c90xxxx/admin1212@qakore.xyz",        //identity of user from the channel perspective
         "enrollType": "free",        //Enrollment type (Free/ Paid etc)
-        "managedBy": "5c66514d09ab3565deb2e30a",        //(The account id)
+        "managedBy": "5c66514d09ab3565debxxxxa",        //(The account id)
         "fName": "",        //first name of the user (fetched if the user is registered on the Platform)
         "lName": ""        //last name of the user (fetched if the user is registered on the Platform)
     }
@@ -76,13 +76,14 @@ https://{{APIHost}}/api/1.1/rtm/start
 This section describes how to format the request to get the web socket URL with the `/api/1.1/rtm/start` endpoint based on the following JSON syntax.
 
 !!!note
-  This URL is short-lived and expires in 30 seconds. You must ensure it is used to connect before expiration.
+   
+    This URL is short-lived and expires in 30 seconds. You must ensure it is used to connect before expiration.
 
 ```json
 {
     "botInfo": {
         "chatBot": "Twitter",
-        "taskBotId": "st-f74a3430-3b19-55a3-be41-1ab1a35c4685"
+        "taskBotId": "st-f74a3430-3b19-55a3-be41-1ab1a35cxxxx"
     }
 }
 ```
@@ -95,7 +96,7 @@ The `accessToken` is passed in the `bearer` parameter in the Authorization heade
 curl 'https://{{APIHost}}/api/1.1/rtm/start' \
   -H 'content-type: application/json' \
   -H 'Authorization: bearer {{accessToken}}' \
-  --data-binary '{"botInfo":{"chatBot":"{{Bot Name}}","taskBotId":"st-f74a3430-3b19-55a3-be41-1ab1a35c4685"}'
+  --data-binary '{"botInfo":{"chatBot":"{{Bot Name}}","taskBotId":"st-f74a3430-3b19-55a3-be41-1ab1a35cxxxx"}'
 ```
 
 #### Response
@@ -105,7 +106,7 @@ The following sample JSON response shows the WebSocket URL.
 
 ```json
 {
-  "url":"wss://xxx.yyy.com:443/rtm/bot?sid=GhKrtrEC61g7hAnmvKAVnJIHG0DS1Lzv"
+  "url":"wss://xxx.yyy.com:443/rtm/bot?sid=GhKrtrEC61g7hAnmvKAVnJIHG0DSxxxx"
 }
 ```
 
@@ -133,7 +134,7 @@ This section describes the RTM Client Event JSON responses sent to the Platform 
     "resourceid": "/bot.message",
     "botInfo": {
         "chatBot": "CNN",
-        "taskBotId": "st-8aaf0939-c34a-5976-8e2e-5c91e685b2ce"
+        "taskBotId": "st-8aaf0939-c34a-5976-8e2e-5c91e685xxxx"
     },
     "id": 1466692440896
 }
@@ -178,7 +179,7 @@ The following payload is sent when a message from the client app is processed.
    ],
     "botInfo": {
         "chatBot": "CNN",
-        "taskBotId": "st-8aaf0939-c34a-5976-8e2e-5c91e685b2ce"
+        "taskBotId": "st-8aaf0939-c34a-5976-8e2e-5c91e685xxxx"
     },
     "createdOn": "2016-06-23T14:34:00.025Z",
     "icon": "https://devbots.kore.com/api/getMediaStream/market/f-683e82be-fc25-5921-bf41-4104780f71c2.png"
@@ -196,7 +197,7 @@ The following sample payload is sent to the client app.
 {
     "botInfo": {
         "chatBot": "CNN",
-        "taskBotId": "st-8aaf0939-c34a-5976-8e2e-5c91e685b2ce"
+        "taskBotId": "st-8aaf0939-c34a-5976-8e2e-5c91e685xxxx"
     },
     "from": "self",
     "message": {
@@ -216,7 +217,7 @@ This section describes the Bot Status Event JSON responses sent to the Platform 
 
 **Event Type:** `/bot_active`
 
-**Description:**Triggered when a WebSocket connection is established with the bot.
+**Description:** Triggered when a WebSocket connection is established with the bot.
 
 The following payload is used to send a response message to the Platform.
 
@@ -225,15 +226,15 @@ The following payload is used to send a response message to the Platform.
 { 
   "type": "bot_active", 
   "from": "bot", 
-   "botInfo": { "chatBot": "Natasha", 
-   "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac" }, 
-   "sessionId": "642d2f34f7eb45387a7be64e", "formMetaInfo": 
+   "botInfo": { "chatBot": "John", 
+   "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3xxxx" }, 
+   "sessionId": "642d2f34f7eb45387a7xxxx", "formMetaInfo": 
 { 
    "isSecured": true, 
     "formLinkExpiry": 300, 
      "submitExpiry": 600
 }, 
-"traceId": "4a663e27051cd294" 
+"traceId": "4a663e27051cxxxx" 
 }
 ```
 **Event Type:** /`botKitUnreachable`
@@ -251,16 +252,16 @@ The following payload is used to send a response message to the Platform.
   "from": "bot",
   "botInfo": {
     "chatBot": "new bot hangouts",
-    "taskBotId": "st-f3ad01a6-a034-519a-84ab-40043a4c368f",
+    "taskBotId": "st-f3ad01a6-a034-519a-84ab-40043a4cxxxx",
     "botType": "default",
     "remoteAddress": "115.114.88.222",
     "hostDomain": "https://bots.kore.ai",
     "os": "Linux",
     "device": "Other",
-    "userId": "u-f6b20c0b-c7bd-57e1-a762-d9a0590acefc"
+    "userId": "u-f6b20c0b-c7bd-57e1-a762-d9a0590axxxx"
   }
   "message": "Sorry, there was an error in continuing the conversation. Please retry.",
-  "traceId": "c070f2b7de24920a",
+  "traceId": "c070f2b7de24xxxx",
   "timestamp": 1693394943443
 } 
 ```
@@ -273,7 +274,7 @@ This section describes the Form Event JSON responses sent to the Platform from t
 
 **Event Type:** `/form_delivered`
 
-**Description:**Triggered when a form is delivered to a user.
+**Description:** Triggered when a form is delivered to a user.
 
 The following payload is used to send a response message to the Platform.
 
@@ -283,22 +284,22 @@ The following payload is used to send a response message to the Platform.
   "type": "form_delivered", 
   "from": "bot", 
    "botInfo": { 
-      "chatBot": "Natasha", 
-      "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac" 
+      "chatBot": "John", 
+      "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3xxxx" 
     }, 
-   "sessionId": "642d2f34f7eb45387a7be64e", "formMetaInfo": 
+   "sessionId": "642d2f34f7eb45387a7bxxxx", "formMetaInfo": 
       { 
         "isSecured": true, 
         "formLinkExpiry": 300, 
         "submitExpiry": 600
       }, 
-    "traceId": "4a663e27051cd294" 
+    "traceId": "4a663e27051cxxxx" 
 } 
 ```
 
 **Event Type:** `/form_submitted`
 
-**Description:**Triggered when a form is submitted by a user.
+**Description:** Triggered when a form is submitted by a user.
 
 The following payload is used to send a response message to the XO Platform.
 
@@ -308,16 +309,16 @@ The following payload is used to send a response message to the XO Platform.
   "type": "form_submitted",
   "from": "bot",
   "botInfo": {
-    "chatBot": "Natasha",
-    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+    "chatBot": "John",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3xxxx"
   },
-  "sessionId": "642d2f34f7eb45387a7be64e",
+  "sessionId": "642d2f34f7eb45387a7bxxxx",
   "formMetaInfo": {
     "isSecured": true,
     "formLinkExpiry": 300,
     "submitExpiry": 600
   },
-  "traceId": "4a663e27051cd294"
+  "traceId": "4a663e27051cxxxx"
 }
 ```
 **Event Type:** `/form_failure`
@@ -331,16 +332,16 @@ The following payload is used to send a response message to the XO Platform.
   "type": "form_failure",
   "from": "bot",
   "botInfo": {
-    "chatBot": "Natasha",
-    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+    "chatBot": "John",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3xxxx"
   },
-  "sessionId": "642d2f34f7eb45387a7be64e",
+  "sessionId": "642d2f34f7eb45387a7bxxxx",
   "formMetaInfo": {
     "isSecured": true,
     "formLinkExpiry": 300,
     "submitExpiry": 600
   },
-  "traceId": "4a663e27051cd294"
+  "traceId": "4a663e27051cxxxx"
 }
 ```
 
@@ -352,7 +353,7 @@ This section describes the Session Event JSON responses sent to the Kore.ai XO P
 
 **Event Type:** `/session_start`
 
-**Description:**Triggered when a session starts using an On-Connect event or message.
+**Description:** Triggered when a session starts using an On-Connect event or message.
 
 The session starts in the following scenarios:
 
@@ -368,13 +369,13 @@ The following payload is used to send a response message to the Platform.
   "from": "bot",
   "botInfo": {
     "chatBot": "jarvis_new_import",
-    "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356def8",
+    "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356xxxx",
     "hostDomain": "https://localhost",
     "os": "Linux",
     "device": "Other"
   },
-  "sessionId": "6426bf7e916562382331ba89",
-  "traceId": "a33d81825f3b1a77"
+  "sessionId": "6426bf7e916562382331xxxx",
+  "traceId": "a33d81825f3bxxxx"
 }
 ```
 **Event Type:** `/session_end`
@@ -394,13 +395,13 @@ The following payload is used to send a response message to the Platform.
   "from": "bot",
   "botInfo": {
     "chatBot": "jarvis_new_import",
-    "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356def8",
+    "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356xxxx",
     "hostDomain": "https://localhost",
     "os": "Linux",
     "device": "Other"
   },
-  "sessionId": "6426bf7e916562382331ba89",
-  "traceId": "a33d81825f3b1a77"
+  "sessionId": "6426bf7e916562382331xxxx",
+  "traceId": "a33d81825f3bxxxx"
 }
 ```
 ## Agent Transfer Events
@@ -420,16 +421,16 @@ The following payload is used to send a response message to the Platform.
   "type": "agent_session_start",
   "from": "bot",
   "botInfo": {
-    "chatBot": "Natasha",
-    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+    "chatBot": "John",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3xxxx"
   },
-  "sessionId": "642d2f34f7eb45387a7be64e",
+  "sessionId": "642d2f34f7eb45387a7bxxxx",
   "formMetaInfo": {
     "isSecured": true,
     "formLinkExpiry": 300,
     "submitExpiry": 600
   },
-  "traceId": "4a663e27051cd294"
+  "traceId": "4a663e27051cxxxx"
 }
 ```
 
@@ -444,16 +445,16 @@ The following payload is used to send a response message to the Platform.
   "type": "agent_session_end",
   "from": "bot",
   "botInfo": {
-    "chatBot": "Natasha",
-    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+    "chatBot": "John",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3xxxx"
   },
-  "sessionId": "642d2f34f7eb45387a7be64e",
+  "sessionId": "642d2f34f7eb45387a7bxxxx",
   "formMetaInfo": {
     "isSecured": true,
     "formLinkExpiry": 300,
     "submitExpiry": 600
   },
-  "traceId": "4a663e27051cd294"
+  "traceId": "4a663e27051cxxxx"
 }
 ```
 ## User Input Event
@@ -473,16 +474,16 @@ The following payload is used to send a response message to the Platform.
   "type": "waiting_for_user_input",
   "from": "bot",
   "botInfo": {
-    "chatBot": "Natasha",
-    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+    "chatBot": "John",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3xxxx"
   },
-  "sessionId": "642d2f34f7eb45387a7be64e",
+  "sessionId": "642d2f34f7eb45387a7bxxxx",
   "formMetaInfo": {
     "isSecured": true,
     "formLinkExpiry": 300,
     "submitExpiry": 600
   },
-  "traceId": "4a663e27051cd294"
+  "traceId": "4a663e27051cxxxx"
 }
 ```
 ## Get Conversation History
@@ -518,7 +519,7 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
   "moreAvailable": false,
   "messages": [
     {
-      "_id": "ms-8a83d099-dd93-5b6b-836b-ac77bdfe9d4a",
+      "_id": "ms-8a83d099-dd93-5b6b-836b-ac77bdfexxxx",
       "channels": [
         {
           "type": "rtm"
@@ -526,18 +527,18 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
       ],
       "type": "incoming",
       "status": "sent to cs",
-      "createdBy": "u-211f287f-17c8-51ac-b768-15c68e19afb2",
-      "lmodifiedBy": "u-211f287f-17c8-51ac-b768-15c68e19afb2",
+      "createdBy": "u-211f287f-17c8-51ac-b768-15c68e19xxxx",
+      "lmodifiedBy": "u-211f287f-17c8-51ac-b768-15c68e19xxxx",
       "lmodifiedOn": "2019-12-03T05:07:44.008Z",
-      "botId": "st-2f579dbf-9dc1-548c-972f-f19d33160a07",
-      "orgId": "o-44741779-1971-5ab9-a0f7-aaf4e21dbe4e",
-      "accountId": "5a675150ff600b3d7665d2a6",
+      "botId": "st-2f579dbf-9dc1-548c-972f-f19d3316xxxx",
+      "orgId": "o-44741779-1971-5ab9-a0f7-aaf4e21dxxxx",
+      "accountId": "5a675150ff600b3d7665xxxx",
       "isBB": 0,
       "ms": 1,
       "chnl": "rtm",
       "components": [
         {
-          "_id": "cp-1edc5033-a9cb-5011-8b2b-5986b7fa45cc",
+          "_id": "cp-1edc5033-a9cb-5011-8b2b-5986b7faxxxx",
           "cT": "text",
           "data": {
             "text": "Hi"
@@ -549,10 +550,10 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
       "timestampValue": 1575349664097,
       "__v": 0,
       "lang": "en",
-      "sessionId": "5de5eda04cdcff145752dbf6",
+      "sessionId": "5de5eda04cdcff145752xxxx",
       "nodeType": 0,
       "tr0_I": "dg-61e5609f-76e7-5c42-b66f-7bb8b3af2433:intent0",
-      "tr0_O": "dg-61e5609f-76e7-5c42-b66f-7bb8b3af2433:entity1:4a04988ee640428d1847fc433081be0b",
+      "tr0_O": "dg-61e5609f-76e7-5c42-b66f-7bb8b3af2433:entity1:4a04988ee640428d1847fc433081xxxx",
       "tr0_T": "0",
       "tr_isSS": 1,
       "resourceid": "messagestore",
@@ -563,7 +564,7 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
       }
     },
     {
-      "_id": "ms-80e8dbf3-ca69-5ee2-a2c1-1c6a70100c08",
+      "_id": "ms-80e8dbf3-ca69-5ee2-a2c1-1c6a7010xxxx",
       "channels": [
         {
           "type": "rtm"
@@ -572,10 +573,10 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
       "type": "outgoing",
       "status": "pending",
       "lmodifiedOn": "2019-12-03T05:07:45.165Z",
-      "createdBy": "u-211f287f-17c8-51ac-b768-15c68e19afb2",
+      "createdBy": "u-211f287f-17c8-51ac-b768-15c68e19xxxx",
       "components": [
         {
-          "_id": "cp-209a0641-130b-57ce-b0d3-d651691084bb",
+          "_id": "cp-209a0641-130b-57ce-b0d3-d6516910xxxx",
           "cT": "text",
           "data": {
             "text": "Please enter the text to comment on the issue"
@@ -583,9 +584,9 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
           "thumbnails": []
         }
       ],
-      "botId": "st-2f579dbf-9dc1-548c-972f-f19d33160a07",
-      "orgId": "o-44741779-1971-5ab9-a0f7-aaf4e21dbe4e",
-      "accountId": "5a675150ff600b3d7665d2a6",
+      "botId": "st-2f579dbf-9dc1-548c-972f-f19d3316xxxx",
+      "orgId": "o-44741779-1971-5ab9-a0f7-aaf4e21dxxxx",
+      "accountId": "5a675150ff600b3d7665xxxx",
       "tN": "Add Comment to Issue",
       "isBB": 0,
       "ms": 1,
@@ -594,7 +595,7 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
       "createdOn": "2019-12-03T05:07:45.171Z",
       "timestampValue": 1575349665171,
       "__v": 0,
-      "sessionId": "5de5eda04cdcff145752dbf6",
+      "sessionId": "5de5eda04cdcff145752xxxx",
       "resourceid": "messagestore",
       "tags": {
         "messageTags": [],

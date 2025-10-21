@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Twilio SMS Channel
 
 To add Twilio SMS as a channel, set up a messaging service in Twilio to manage message delivery and routing. Once the bot is added, end-users can interact with your bot through text messages.

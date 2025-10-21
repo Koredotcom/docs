@@ -1,6 +1,6 @@
-# Manage SDK Push Notifications APIs
+--8<-- "includes/automationai-api-back-link.md"
 
---8<-- "includes/automationai-api-note.md"
+# Manage SDK Push Notifications APIs
 
 For managing the SDK push notifications, the platform provides the following APIs:
 

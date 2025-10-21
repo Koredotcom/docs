@@ -1,6 +1,6 @@
-# Create SMS Campaign (Without SMS Template) API
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Create SMS Campaign (Without SMS Template) API
 
 Use this API to create an SMS campaign without a template.
 

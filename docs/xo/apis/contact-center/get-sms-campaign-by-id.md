@@ -1,6 +1,6 @@
-# Get SMS Campaign API
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Get SMS Campaign API
 
 Use this API to fetch complete details of an existing SMS campaign using the campaign ID.
 

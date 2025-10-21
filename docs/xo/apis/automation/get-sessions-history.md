@@ -1,7 +1,6 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Sessions History API
-
---8<-- "includes/automationai-api-note.md"
 
 This API retrieves the conversation sessions created. It returns information such as session metadata, user and bot identifiers, session duration, language, status, and other relevant metrics.
 

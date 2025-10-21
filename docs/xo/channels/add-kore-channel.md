@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Kore.ai Channel
 
 Adding the Kore.ai channel to your assistant allows end-users to interact with it using the Kore.ai Messaging application available as a web, desktop, or mobile client.

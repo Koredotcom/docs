@@ -1,6 +1,6 @@
-# Historical Agent Status Summary
+--8<-- "includes/ccai-api-back-link.md"
 
---8<-- "includes/ccai-api-note.md"
+# Historical Agent Status Summary
 
 To retrieve the self reported status (available, busy, away, etc.) and ACD status (interacting, idle) of every agent for each bucket in the given time interval.
 
