@@ -23,7 +23,17 @@ System prompts are optional. You can use the toggle to enable or disable it as n
 For assistance, you can click "Generate prompt" to help expand your prompt into a more detailed and elaborative prompt.  
 
     <img src="../images/promptcanvas_human_prompt.png" alt="Human prompt" title="Human prompt" style="border: 1px solid gray; zoom:80%;">
- 
+
+3. In the **Response JSON schema** field, you can define a JSON schema to structure the model's responses.
+
+    This step is optional and depends on the selected model. If the chosen model supports the response format, you can use this feature. If not, the schema will be included with the prompt, allowing the model to determine whether it can respond in the requested format. By default, if no schema is provided, the model will respond with plain text.
+
+    Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Ensure the schema follows the standard outlined here: [Defining JSON schema](../ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}. If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.
+
+
+    <img src="../images/prompts_json.png" alt="JSON schema" title="JSON schema" style="border: 1px solid gray; zoom:80%;">
+
+
 You can also click the "Prompt library" icon (highlighted in yellow in the image above) to explore a selection of templates that contain carefully crafted prompts designed for various use cases.
 
 !!! note
@@ -68,10 +78,10 @@ Test your prompts with different AI models to identify which one best aligns wit
 
 1. In the prompt canvas, click the **Select Model** field.
 A list of models is displayed in the drop-down list.
-2. Select your preferred model for your prompts.
+2. Select your preferred model and connection for your prompts.
 3. To add multiple models, select different models in the columns on the right.  
 
-    <img src="../images/prompt_selectmodels_example.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/prompt_studio_models.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:80%;">
 
     You can also click the model settings icon to adjust the model parameters like temperature, top k, top p, and max tokens.
 

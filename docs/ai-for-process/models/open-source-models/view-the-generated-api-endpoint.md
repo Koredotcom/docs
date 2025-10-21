@@ -14,12 +14,11 @@ The API endpoint is available in 3 formats.
 
 To view the API Endpoint, follow these steps:
 
-
 1. Click the required model from the models listing. Click the **Model Endpoint** tab in the left panel on the **Models** page of your open-source model. The API endpoint created for this open-source model is displayed.
 
 1. To use this model as a service, the generated code is helpful. Click the **Copy** icon to copy and share the API Endpoint.
 
-    <img src="../images/view-generated-api-endpoint.png" alt="Deplyed Model API Endpoint" title="Deplyed Model API Endpoint" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/new_endpoint.png" alt="Deplyed Model API Endpoint" title="Deplyed Model API Endpoint" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 
@@ -28,9 +27,32 @@ To view the API Endpoint, follow these steps:
 
 You can either embed the curl or the code that is generated into your own applications or use it externally. 
 
+### Structured Output Support
+
+Open-source models can return responses in a structured JSON format using the `response_format` parameter, aligned with OpenAI schema style.
+
+You can use this capability in two ways:
+
+* Through API calls: Add the response_format parameter to the model endpoint when calling the deployed model externally.
+* Within the Tool builder canvas: Define the schema directly in the builder. The platform automatically attaches it as the response_format parameter for structured output.
+
+This capability is supported on v2/chat/completions endpoints for selected open-source models. Older endpoints (v1/completions) do not support structured output. For the list of models that support structured output, see [Supported Models for Structured Output](../supported-models.md#supported-models-for-structured-output).
+
+Supported schema data types include: string, number, boolean, integer, object, array, enum, and anyOf.
+
+**How it works**:
+
+* Add a `response_format` field to your request body.
+* If provided, the model attempts to return a response in JSON object matching the defined schema.
+* If not provided, the model responds with standard text output.
+
+
+!!! note
+
+    If a model supports both tool calls and JSON Schema, tool calls take precedence, and the schema will be ignored.
+
 
 ## Deployment History
-
 
 After deploying a model, you can modify its parameters and redeploy the updated version. The deployment history table tracks the complete life cycle of the model, offering detailed information for each version. This includes the deployment name, the timestamp when it was deployed, the deployment duration, the individual who performed the deployment, and other relevant details. 
 
