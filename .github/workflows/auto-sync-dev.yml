@@ -2,7 +2,7 @@ name: Auto-sync dev branches from upstream
 
 on:
   schedule:
-    - cron: "0 */6 * * *"    # Every 6 hours UTC
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
