@@ -1,21 +1,15 @@
-# Virtual Assistant Health and Monitoring
+# Health and Monitoring
 
-The **Health and Monitoring** dashboard offers a goal-driven approach to improving the accuracy of the virtual assistant’s Natural Language Processing (NLP) model. The training data is analyzed along with the test coverage and test results of the test suites to provide insights into the NLP Model’s performance.
+The **Health and Monitoring** dashboard offers a goal-driven approach to improving the accuracy of the app’s Natural Language Processing (NLP) model. The training data is analyzed along with the test coverage and test results of the test suites to provide insights into the NLP Model’s performance.
 
 This dashboard lets you achieve the following:
 
-* Run the test suites against the in-development version of the bot to see the Virtual Assistant’s health.
+* Run the test suites against the in-development version of the app to see the health.
 * Review the test execution summary for every intent type.
-* Drill down and view the coverage and key metrics of the virtual assistant determined by the Batch Test and Conversation Test executions.
+* Drill down and view the coverage and key metrics of the app determined by the Batch Test and Conversation Test executions.
 * Identify incorrect intent patterns, short training utterances, incorrect entity annotations, and training recommendations and take corrective action.
 * View the expected and matched results, and the detailed NLP analysis.
 * Tag specific test case results that need follow-up actions and collaborate with your team to improve the performance.
-
-!!! note
-
-    The Health & Monitoring Dashboard is available only post 9.3 release, i.e. post-July 24, 2022.
-    This feature only considers the latest In-development test executions.
-
 
 
 ## Navigating to Health and Monitoring
@@ -29,8 +23,8 @@ To navigate to the **Health and Monitoring** dashboard, follow these steps:
 
 The **Health and Monitoring** Dashboard is divided into two sections that include the following:
 
-1. **NLP**: This panel extracts all test suite results from Batch Testing and presents insights into your test cases with performance analytics. The key components of this panel include the execution summary, the **key performance metrics**, and the **total test coverage** of the selected test suites for the Dialog intents, FAQs, Small Talks, and Traits. The key [recommendation scores](#health-and-monitoring-metrics) presented here depict if your virtual assistant is trained sufficiently or not.
-2. **Flow**: This panel summarizes the coverage of all the conversation flows by the Virtual Assistant you’ve defined including its performance, intents’ coverage and transitions. [Learn more](../flow-health-dashboard/){:target="_blank"}. The key components of the **Flow** panel include transition coverage and intent summary panels for the test suites. [Learn more](../flow-health-dashboard/#flow-dashboard-components){:target="_blank"}.
+1. **NLP**: This panel extracts all test suite results from Batch Testing and presents insights into your test cases with performance analytics. The key components of this panel include the execution summary, the **key performance metrics**, and the **total test coverage** of the selected test suites for the Dialog intents, FAQs, Small Talks, and Traits. The key [recommendation scores](#health-and-monitoring-metrics) presented here depict if your virtual app is trained sufficiently or not.
+2. **Flow**: This panel summarizes the coverage of all the conversation flows by the app Assistant you’ve defined including its performance, intents’ coverage and transitions. [Learn more](flow-health-dashboard.md){:target="_blank"}. The key components of the **Flow** panel include transition coverage and intent summary panels for the test suites. [Learn more](flow-health-dashboard.md#flow-dashboard-components){:target="_blank"}.
 
 
 
@@ -53,17 +47,17 @@ The following metrics extracted from Batch Testing results are displayed in two 
 * **Recall Score**: Defines the fraction of the relevant utterances that are successfully identified and is calculated as the ratio of true positives over actual positives (sum of true positives and false negatives).
 * **Total Test Coverage %**: The average of the Total Test Coverage scores for **Dialog Intents**, **FAQs**, **Small Talk**, **Traits**, and **Entities**.
 
-These metrics help gain actionable insights into your test cases to perform [ML Model Validation](../../../../natural-language/training/model-validation/){:target="_blank"}.
+These metrics help gain actionable insights into your test cases to perform [ML Model Validation](../../../natural-language/training/model-validation.md){:target="_blank"}.
 
 
 ### Flow Health Metrics
 
-The Flow Health metrics display all the test suite results from the conversation testing and present insights into your test cases with performance analytics. [Learn more](../flow-health-dashboard/#flow-metrics){:target="_blank"}.
+The Flow Health metrics display all the test suite results from the conversation testing and present insights into your test cases with performance analytics. [Learn more](flow-health-dashboard.md#flow-metrics){:target="_blank"}.
 
 
 ## Test Cases Detailed Analysis
 
-To get the detailed NLP data of all the test cases executed for all the test suites that are considered in the VA, click the **View Test Cases** link in the **NLP** section.
+To get the detailed NLP data of all the test cases executed for all the test suites that are considered in the app, click the **View Test Cases** link in the **NLP** section.
 
 <img src="../images/hm-4.png" alt="detailed NLP data" title="detailed NLP data" style="border: 1px solid  gray; zoom:50%;"/>
 
@@ -124,7 +118,7 @@ The following tags are available for intents, entities, and traits:
 * **Add Negative Pattern**: Indicates that the user has to add a negative pattern to the intent/entity/trait test execution.
 * **NeedNLPHelp**: Indicates that the test execution requires explicit NLP help.
 * **Needs Negative Pattern**: Indicates that the intent/entity/trait test execution needs a negative pattern to execute as expected.
-* **Needs Training**: Indicates that the virtual assistant needs training for the identified intent/entity/trait after the test execution.
+* **Needs Training**: Indicates that the app needs training for the identified intent/entity/trait after the test execution.
 * **New Intent**: Indicates a new intent during test execution.
 
 Hover over the desired entry, and click the **detailed view** icon.  
@@ -151,14 +145,14 @@ Click the **expansion arrow** icon under **Entity** to view the entity order exp
 
 The **NLP Analysis** section displays the detailed view of the historic analysis generated at the time of the test case execution for failed and successful test cases. For the selected intent type, this section gives an overview of the intents that are qualified (the definitive and probable matches) and disqualified to serve as crucial information for users trying to decode the reason for failed test cases. The following details are displayed as a graphical representation in this section:
 
-* [Traits](../../../../natural-language/training/traits){:target="_blank"} (if applicable)
-* [Machine Learning (ML) engine](../../../testing-your-bot-with-nlp/#ml-model){:target="_blank"}
-* [Fundamental Meaning (FM) engine](../../../testing-your-bot-with-nlp/#fm-model){:target="_blank"}
-* [Knowledge Graph (KG) engine](../../../testing-your-bot-with-nlp/#knowledge-graph){:target="_blank"}
-* [Trait Rule](../../../../natural-language/training/traits/#trait-association-rules){:target="_blank"} (if applicable)
-* [Ranking and Resolver](../../../testing-your-bot-with-nlp/#ranking-and-resolver)
+* [Traits](../../../natural-language/training/traits.md){:target="_blank"} (if applicable)
+* [Machine Learning (ML) engine](../../testing-your-bot-with-nlp.md#ml-model){:target="_blank"}
+* [Fundamental Meaning (FM) engine](../../testing-your-bot-with-nlp.md#fm-model){:target="_blank"}
+* [Knowledge Graph (KG) engine](../../testing-your-bot-with-nlp.md#knowledge-graph){:target="_blank"}
+* [Trait Rule](../../../natural-language/training/traits.md#trait-association-rules){:target="_blank"} (if applicable)
+* [Ranking and Resolver](../../testing-your-bot-with-nlp.md#ranking-and-resolver)
 
-This is different from analyzing the test results under **Utterance Testing** where the current analysis information is displayed based on the changes to the trained data. [Learn more](../../../testing-your-bot-with-nlp/#analyzing-the-test-results){:target="_blank"}.
+This is different from analyzing the test results under **Utterance Testing** where the current analysis information is displayed based on the changes to the trained data. [Learn more](../../testing-your-bot-with-nlp.md#analyzing-the-test-results){:target="_blank"}.
 
 To view the **NLP Analysis** section, follow these steps:
 
@@ -181,13 +175,13 @@ For **Flow Health**, clicking the **View Test Suites** link displays the followi
 * Not Executed
 * Pass percentage
 
-Please click [here](../flow-health-dashboard/#flow-metrics){:target="_blank"} to learn more about Test Suite Performance and Test Coverage Analysis.
+Please click [here](flow-health-dashboard.md#flow-metrics){:target="_blank"} to learn more about Test Suite Performance and Test Coverage Analysis.
 
 
 
 #### Utterance Testing
 
-Based on the test case failures, you can retrain your virtual assistant using the **Utterance testing** option for all possible user utterances and inputs. Training is how you enhance the performance of the NLP engine to prioritize one task or user intent over another based on the user input. To learn more, please refer to this [link](../../../testing-your-bot-with-nlp/){:target="_blank"}.
+Based on the test case failures, you can retrain your app using the **Utterance testing** option for all possible user utterances and inputs. Training is how you enhance the performance of the NLP engine to prioritize one task or user intent over another based on the user input. To learn more, please refer to this [link](../../testing-your-bot-with-nlp.md){:target="_blank"}.
 
 To navigate to the **Utterance Testing** window, click the **go to utterance testing** (magic wand) icon on the **Test Cases – Detailed Analysis** page.  
 <img src="../images/hm-13.png" alt="go to utterance testing" title="go to utterance testing" style="border: 1px solid  gray; zoom:50%;"/>
@@ -195,7 +189,7 @@ To navigate to the **Utterance Testing** window, click the **go to utterance tes
 
 In the **Utterance Testing** window shown below, you can do the following:
 
-* Test & [Train](../../../testing-your-bot-with-nlp/#training-the-assistant){:target="_blank"} your virtual assistant based on these [recommendations ](../../../../natural-language/training/machine-learning-engine/#training-recommendations){:target="_blank"} to understand different user utterances and match them with intents and entities.
+* Test & [Train](../../testing-your-bot-with-nlp.md#training-the-assistant){:target="_blank"} your app based on these [recommendations ](../../../natural-language/training/machine-learning-engine.md#training-recommendations){:target="_blank"} to understand different user utterances and match them with intents and entities.
 * View the **NLP analysis** flow and **Fields/Entities** analysis data including the confidence score based on the NER training.
 * Use the **Mark as an incorrect match** link to match the user input with the right intent when it is mapped to an incorrect task.  
   <img src="../images/hm-14.png" alt="Utterance Testing window" title="Utterance Testing window" style="border: 1px solid  gray; zoom:50%;"/>
@@ -272,7 +266,7 @@ table, th, td {
   <tr>
    <td><strong>Parent Intent</strong>
    </td>
-   <td><a href="../../../../intelligence/sub-intents-and-follow-up-intents" target="_blank">Learn more</a>.
+   <td>An output context is added to the parent intent and an input context of the same name is added to the newly created child intent.
    </td>
    <td>Yes
    </td>
@@ -286,7 +280,7 @@ table, th, td {
    </td>
    <td>The status of the intent or task against which the intent is identified. Possible values include <strong>Configured</strong> or <strong>Published</strong>.
 <br>
-.
+
    </td>
    <td>Yes
    </td>
@@ -313,11 +307,11 @@ table, th, td {
    <td>Displays the individual scores for the following
 <ul>
 
-<li><a href="../../../testing-your-bot-with-nlp/#ml-model" target="_blank">Machine Learning (ML) score</a>
+<li>Machine Learning (ML) score
 
-<li><a href="../../../testing-your-bot-with-nlp/#fm-model" target="_blank">Fundamental Meaning (FM) score</a>
+<li>Fundamental Meaning (FM) score
 
-<li><a href="../../../testing-your-bot-with-nlp/#ranking-and-resolver" target="_blank">Ranking and Resolver (RR) score</a>
+<li>Ranking and Resolver (RR) score
 </li>
 </ul>
    </td>
@@ -331,7 +325,7 @@ table, th, td {
   <tr>
    <td><strong>Entity Name</strong>
    </td>
-   <td>Please refer to Entities in <a href="#navigating-to-the-test-case-details-section">this</a> section..
+   <td>Please refer to Entities in <a href="#navigating-to-the-test-case-details-section">this</a> section.
    </td>
    <td>No
    </td>
@@ -394,24 +388,24 @@ table, th, td {
 
 ## Dialog Intent Flow Health
 
-Please refer to this [link](../flow-health-dashboard/#dialog-intent-summary){:target="_blank"} for more information.
+Please refer to this [link](flow-health-dashboard.md#dialog-intent-summary){:target="_blank"} for more information.
 
 The following sections can be accessed from the **Dialog Intent Summary** panel:
 
 
 ### Conversation Test Results Analysis
 
-Please refer to this [link](../flow-health-dashboard/#conversation-test-results-analysis){:target="_blank"} for more information.
+Please refer to this [link](flow-health-dashboard.md#conversation-test-results-analysis){:target="_blank"} for more information.
 
 
 ### Transitions Coverage
 
-Please refer to this [link](../flow-health-dashboard/#transitions-coverage){:target="_blank"} for more information.
+Please refer to this [link](flow-health-dashboard.md#transitions-coverage){:target="_blank"} for more information.
 
 
 ### View Intents Summary
 
-Please refer to this [link ](../flow-health-dashboard/#view-intent-summary){:target="_blank"} for more information.
+Please refer to this [link ](flow-health-dashboard.md#view-intent-summary){:target="_blank"} for more information.
 
 View Recommendations
 
@@ -434,12 +428,12 @@ The **FAQ Summary** section displays the [recommendation scores](#health-and-mon
 
 
 
-**Viewing Additional FAQ Recommendations**: For **FAQ Details**, clicking **View Recommendations** will display the report that was already run during the previous run time. To know how to view and manage additional recommendations, please refer to this [link](../../../../natural-language/training/training-validations/#how-to-use-the-nlu-validate-model){:target="_blank"}.  
+**Viewing Additional FAQ Recommendations**: For **FAQ Details**, clicking **View Recommendations** will display the report that was already run during the previous run time. To know how to view and manage additional recommendations, please refer to this [link](../../../natural-language/training/training-validations.md#how-to-use-the-nlu-validate-model){:target="_blank"}.  
 <img src="../images/hm-18.png" alt="Viewing Additional FAQ Recommendations" title="Viewing Additional FAQ Recommendations" style="border: 1px solid  gray; zoom:50%;"/>
 
 <img src="../images/hm-19.png" alt="Report" title="Report" style="border: 1px solid  gray; zoom:50%;"/>  
 
-**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](../../../../../answers/knowledge-ai/knowledge-graph-analysis){:target="_blank"}.  
+**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](../../../knowledge-ai/knowledge-graph-analysis.md){:target="_blank"}.  
 <img src="../images/hm-20.png" alt="Knowledge Graph button" title="Knowledge Graph button" style="border: 1px solid  gray; zoom:50%;"/>
 
 
@@ -448,13 +442,13 @@ The **FAQ Summary** section displays the [recommendation scores](#health-and-mon
 
 ### Flow- FAQs Summary
 
-Please refer to this [link](../flow-health-dashboard/#faqs-summary){:target="_blank"} for more information.
+Please refer to this [link](flow-health-dashboard.md#faqs-summary){:target="_blank"} for more information.
 
 
 ### NLP- Small Talk Summary
 
 The **Small Talk Summary** panel displays the [recommendation scores](#health-and-monitoring-metrics) generated for Small Talk interactions from the latest batch test executions.  
-<img src=../images/hm-22.png alt="Small Talk Summary" title="Small Talk Summary" style="border: 1px solid  gray; zoom:50%;"/>  
+<img src="../images/hm-22.png" alt="Small Talk Summary" title="Small Talk Summary" style="border: 1px solid  gray; zoom:50%;"/>  
 
 
 **Small Talk button**: Click this button to view the group name and the relevant user utterances, and Bot utterances.  
@@ -463,7 +457,7 @@ The **Small Talk Summary** panel displays the [recommendation scores](#health-an
 
 ### Flow- Small Talk Summary
 
-Please refer to this [link](../flow-health-dashboard/#small-talk){:target="_blank"} for more information.
+Please refer to this [link](flow-health-dashboard.md#small-talk){:target="_blank"} for more information.
 
 
 ## Trait and Entity Summary Information
@@ -480,12 +474,12 @@ The **Trait Summary** and **Entity Summary** sections display the [recommendatio
 
 **Test Coverage and Test Results Analysis**
 
-Please refer to [Test Coverage](#test-coverage) and [Test Results Analysis](#nlp-test-results-analysis) for information on the sub-sections of these summary panels.
+Please refer to [Test Coverage](#test-coverage) and [Test Results Analysis](#viewing-specific-test-results) for information on the sub-sections of these summary panels.
 
 
 ## NLP Batch Test Results Summary for Universal Bots
 
-The XO Platform now displays batch test results for Universal bots for each test run in the summary view for [FAQs](#nlp-faqs-summary), [Dialog Intents](#dialog-intent-summary), and [Small Talk](#nlp-small-talk-summary) during Batch Testing. The actionable insights help understand the test coverage and NLP performance for each intent type in the Universal Bot.
+The Platform now displays batch test results for Universal bots for each test run in the summary view for [FAQs](#nlp-faqs-summary), [Dialog Intents](#dialog-intent-summary), and [Small Talk](#nlp-small-talk-summary) during Batch Testing. The actionable insights help understand the test coverage and NLP performance for each intent type in the Universal Bot.
 
 The only difference between Standard and Universal Bots is that the insights derived are based on the intents of all the linked bots. For instance, the intent coverage is based on the comparison of the intents covered in the test suite and the total number of intents present in all the linked bots. 
 
@@ -741,9 +735,9 @@ The summary of all the metrics displayed is given below:
 
 **View Intents Not Covered**
 
-This feature helps identify the intents not covered so as to include them in the test data for better and holistic [testing of the virtual assistant](../../../testing-your-bot-with-nlp/#testing-the-assistant){:target="_blank"}. Click the **three-dot menu** on the right side of the panel to view the list of **intents not covered** in batch testing.  
+This feature helps identify the intents not covered so as to include them in the test data for better and holistic [testing of the assistant](../../testing-your-bot-with-nlp.md#testing-the-assistant){:target="_blank"}. Click the **three-dot menu** on the right side of the panel to view the list of **intents not covered** in batch testing.  
 <img src="../images/hm-38.png" alt="Training data-intents not covered" title="Training data-intents not covered" style="border: 1px solid  gray; zoom:50%;"/> 
 
 
-You can include the intents from this list to retrain your virtual assistant and improve performance.  
+You can include the intents from this list to retrain your app and improve performance.  
 <img src="../images/hm-39.png" alt="Training data-Not covered intents" title="Training data-Not covered intents" style="border: 1px solid  gray; zoom:50%;"/> 

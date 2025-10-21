@@ -38,11 +38,9 @@ SearchAI enables ingesting content from **items within boards** on Monday, makin
 
 ## Authorization Support 
 
-Search AI supports interaction with Monday using both the **Monday API token** and the **OAuth 2.0 **authentication mechanism. 
-
+Search AI supports interaction with Monday using both the **Monday API token** and the **OAuth 2.0** authentication mechanism. 
 
 ## Monday Configuration
-
 
 ### Generate Monday API Token
 
@@ -60,7 +58,7 @@ Refer to [this](https://developer.monday.com/api-reference/docs/authentication) 
 * Go to the **app's OAuth** page. Enable the following scopes for the app. 
     * boards:read
     * users:read
-* Go to the **Redirect URL** tab on the same page and enter one of the following URLs depending upon your XO platform deployment. Click Save. 
+* Go to the **Redirect URL** tab on the same page and enter one of the following URLs depending upon your AI for Service platform deployment. Click Save. 
     * JP Region Callback URLs:[ https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
     * DE Region Callback URLs:[ https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
     * Prod Callback URLs: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback?__hstc=59894770.28210ac89bd49725c54c92ebeabe794b.1663135555706.1715322786391.1715330815958.698&__hssc=59894770.1.1715330815958&__hsfp=659442714)
@@ -71,7 +69,7 @@ Refer to [this ](https://developer.monday.com/apps/docs/oauth)for more details.
 
 ### Monday Connector Configuration in Search AI
 
-Provide the following fields while configuring the Monday connector in Search AI. 
+Enter the following fields while configuring the Monday connector in Search AI. 
 
 1. **Name**: Unique identifier for the connector. 
 2. **Authorization Type**: Select Personal Access Token or OAuth 2.0. Personal Access Token here refers to the user’s global API token. For OAuth 2.0, provide the client credentials. 
@@ -80,4 +78,4 @@ The following properties are used to map the content from the Monday application
 
 ## RACL Support
 
-Currently, access control is implemented for the Monday Connector in Search AI using the **BoardID **of the board. For every item in the board, the `sys_racl `field contains the board ID as a permission entity. To associate users with this permission entity, use the [Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md). 
+Currently, access control is implemented for the Monday Connector in Search AI using the **BoardID** of the board. For every item in the board, the `sys_racl `field contains the board ID as a permission entity. To associate users with this permission entity, use the [Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md). 

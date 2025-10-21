@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Get FAQs – KG V2
 
 To get a list of questions and nodes under the Knowledge task. This API supports parameters like botId, language, mode (configured/published), and nodeName.
@@ -159,7 +161,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 ## Sample Request
 
 ```json
-curl --location 'http://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?limit=3&offset=0&search=&type=all&language=en&state=configured&nodeName=A&withallchild=true' \
+curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?limit=3&offset=0&search=&type=all&language=en&state=configured&nodeName=A&withallchild=true' \
 --header 'auth: eyJfxxxxxI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWJjZTZiMfxxxxxNTFkYS1iYjNhLWY5MzkwMDM0Mjg2ZiJ9.40rpnPhnY1CnDPwWfxxxxx'
  
 ```

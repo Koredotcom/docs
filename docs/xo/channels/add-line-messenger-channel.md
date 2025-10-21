@@ -1,13 +1,15 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the LINE Channel
 
-To add the LINE channel to your Kore.ai bot, you must set up a webhook integration to configure the connection between LINE and Kore.ai. Adding the LINE channel to your Kore.ai assistant allows end-users to interact with it using their _LINE_ accounts. To add the LINE channel to your bot, you must also have or create a LINE account.
+To add the LINE channel to your Kore.ai assistant, you must set up a webhook integration to configure the connection between LINE and Kore.ai. Adding the LINE channel to your Kore.ai assistant allows end-users to interact with it using their _LINE_ accounts. To add the LINE channel to your AI Agent, you must also have or create a LINE account.
 
 
 ## Step 1: Create a LINE Provider
 
 
 
-1. Log in to your [LINE Developer account portal](https://developers.line.me/), and click **Create a new provider**. If you already have a _Provider_ that you want to use for this bot, then choose the provider from the Provider _List_.
+1. Log in to your [LINE Developer account portal](https://developers.line.me/), and click **Create a new provider**. If you already have a _Provider_ that you want to use for this AI Agent, then choose the provider from the Provider _List_.
 <img src="../images/line.png" alt="line channel" title="line channel" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -18,8 +20,6 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 
 ## Step 2: Add a Channel on LINE
 
-
-
 1. Under **Create a new channel**, provide the required details.
 2. Click **Create** to review and proceed with channel creation.
 <img src="../images/line2.png" alt="channel creation" title="channel creation" style="border: 1px solid gray; zoom:70%;">
@@ -27,9 +27,6 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 !!! note
 
     The Kore.ai XO Platform uses PUSH_MESSAGE APIs to deliver non-interactive messages to end-users. These scenarios include cases like alert notifications, session closure messages, and any other scenario where the replyToken from the LINE channel is either not available or expired. These API calls may be charged; review the LINE plan options and select the appropriate plan that suits your needs.
-
-
-
 
 
 ## Step 3: Enable the Channel
@@ -66,6 +63,6 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 
 We recommend that you review additional options available for your LINE channels like group behavior, auto-replies, and greetings messages.
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md).

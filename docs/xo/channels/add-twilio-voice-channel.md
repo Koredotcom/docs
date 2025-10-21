@@ -1,6 +1,8 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Twilio Voice Channel
 
-To add Twilio Voice as a channel to your Kore.ai assistant, you must get a Twilio phone number and set up a webhook integration to communicate with the virtual assistance (VA).
+To add Twilio Voice as a channel to your Kore.ai assistant, you must get a Twilio phone number and set up a webhook integration to communicate with the AI Agent.
 
 
 ## Before you begin
@@ -9,7 +11,7 @@ Twilio Voice for assistants is designed to work on voice-based channels. Before 
 
 
 
-* Twilio Voice does not support enterprise virtual assistants that require user authorization to communicate.
+* Twilio Voice does not support enterprise AI Agents that require user authorization to communicate.
 * Tasks that require the user's authorization to communicate with external systems must not be included.
 * Webhook Nodes work asynchronously and are not supported on Twilio Voice.
 * Use only dialog tasks for the best user experience.
@@ -71,7 +73,7 @@ To enable the Twilio Voice Channel:
 For details regarding the configuration of voice properties at the Dialog Task level, refer to [Configuring Voice Call Settings for a Node](../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings).
 
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users with the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users with the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement](adding-channels-to-your-bot.md).
 

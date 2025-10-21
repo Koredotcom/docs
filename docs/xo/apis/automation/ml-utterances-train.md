@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # ML Utterances Train API
 
 To initiate the ML training for a bot.
@@ -35,7 +37,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Train ML
+<li>App Builder: Train ML
 
 <li>Admin Console: Test and Train > Train ML
 </li>
@@ -67,7 +69,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td>The <strong>Bot ID</strong> or <strong>Stream ID</strong> to be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <strong>Bot ID</strong> or <strong>Stream ID</strong> to be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -85,7 +87,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotId}}/ml/train' \
 
 !!! note 
 
-    If the bot language is not included in the header, the default English language is considered for the training. Find the list of supported bot languages [here](../../app-settings/language-management/building-multi-language-bots.md#supported-va-languages).
+    If the bot language is not included in the header, the default English language is considered for the training. Find the list of supported bot languages [here](../../app-settings/language-management/building-multi-language-bots.md).
 
 
 ## Body Parameters

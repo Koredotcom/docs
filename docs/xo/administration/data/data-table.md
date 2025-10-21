@@ -1,6 +1,6 @@
 # Data Table
 
-You can create a data table and share it with virtual assistants, apps and process assistants.
+You can create a data table and share it with AI Agents, apps and process assistants.
 
 Step to create a new table:
 
@@ -15,7 +15,7 @@ Step to create a new table:
     2. **Description** of the Data Table.
     3. **Columns** to be included in the Table.
     4. **Indexes** for the Table.
-    5. **Bot Assignments** to let virtual assistants access data in this table.
+    5. **Bot Assignments** to let AI Agent access data in this table.
     6. **App Assignments** to let apps access data in this table.
     7. **Process Assignments** to let a process app access data in this table.  
 
@@ -68,9 +68,9 @@ This includes:
 
 You can define the assignments for each of the data tables as follows:
 
-* **Assign bots:**
-    * Assign bots with Read, Write, and Delete permissions. You can select the bots from the list presented, these will be the list of bots owned by you and shared with you.
-    * Only the assigned bots will be allowed to access the data from the data table using the Service Nodes in the Dialog Tasks of that bot.
+* **Assign apps:**
+    * Assign apps with Read, Write, and Delete permissions. You can select the apps from the list presented, these will be the list of apps owned by you and shared with you.
+    * Only the assigned apps will be allowed to access the data from the data table using the Service Nodes in the Dialog Tasks of that app.
 
 * **Assign apps:**
     * Assign apps with Read, Write, and Delete permissions.
@@ -197,10 +197,10 @@ The Kore.ai XO Platform allows you to share Data Tables by assigning them to bot
 
 **Note**: In the **Shared Tables** tab, you can view only the tables shared with a user who has permission to view. When you share the data tables with users, they cannot edit or update the table or view definitions.
 
-The bot or process developers can see the data table definitions using a [**Service node**](../data-as-service/){:target="_blank"}.
+The bot or process developers can see the data table definitions using a [Service node](data-as-service.md){:target="_blank"}.
 
-* From the Data Service Request Definition, users can select the Get Data action and click Test to view metadata. For more information, read the [Get Data](../data-as-service/#get-data){:target="_blank"} section in Data as a Service post.
-* Users can also see all column names while configuring Add Data or Update Data actions. For more information, read the [Add Data](../data-as-service/#add-data){:target="_blank"} section in the Data as a Service post.
+* From the Data Service Request Definition, users can select the Get Data action and click Test to view metadata. For more information, read the [Get Data](data-as-service.md#get-data){:target="_blank"} section in Data as a Service post.
+* Users can also see all column names while configuring Add Data or Update Data actions. For more information, read the [Add Data](data-as-service.md#add-data){:target="_blank"} section in the Data as a Service post.
 
 
 ## Reserve Words

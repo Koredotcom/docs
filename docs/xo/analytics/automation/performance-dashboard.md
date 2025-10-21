@@ -1,11 +1,11 @@
 # Performance Dashboard
 
-After you publish a Virtual Assistant (VA), you can monitor its performance using the Performance dashboard. This dashboard provides insights into metrics such as the number of intents identified, tasks completed successfully, and any service or script failures that occur during interactions. You can use these insights to identify areas where your virtual assistant needs improvement. For example, if you see that many intents are not identified, you can train the virtual assistant for those unidentified intents.
+After you publish the AI Agents, you can monitor its performance using the Performance dashboard. This dashboard provides insights into metrics such as the number of intents identified, tasks completed successfully, and any service or script failures that occur during interactions. You can use these insights to identify areas where your AI Agents needs improvement. For example, if you see that many intents are not identified, you can train the AI Agents for those unidentified intents.
 
 **To view the Performance dashboard, follow the steps**: 
 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. **The Analytics** panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/performance-dashboard-overview.png" alt="Performance Dashboard Overview" title="Performance Dashboard Overview" style="border: 1px solid gray; zoom:80%;">
 
@@ -16,14 +16,9 @@ After you publish a Virtual Assistant (VA), you can monitor its performance usin
     <img src="../images/performance-dashboard.png" alt="Performance Dashboard" title="Performance Dashboard" style="border: 1px solid gray; zoom:100%;">
 
 
-!!! note
-
-    The Performance dashboard is available only post-9.2 release, i.e. post April 09, 2022.
-
-
 ## Performance Dashboard Metrics
 
-The Performance Dashboard provides insights to understand the virtual assistant’s NLP performance and integration metrics. The Performance Dashboard is categorized into four categories to identify how a virtual assistant performs. These categories are mentioned below:
+The Performance Dashboard provides insights to understand the AI Agents’s NLP performance and integration metrics. The Performance Dashboard is categorized into four categories to identify how an AI Agent performs. These categories are mentioned below:
 
 
 ### Intent Identification Rate
@@ -49,13 +44,13 @@ Below are the widgets that are used to provide insights:
   <tr>
    <td>Intent Identification Trend
    </td>
-   <td>A line chart that displays the total number of intents that were classified by the virtual assistant versus the total number of intents that were unclassified by the virtual assistant over a period of time.
+   <td>A line chart that displays the total number of intents that were classified by the AI Agents versus the total number of intents that were unclassified by the AI Agents over a period of time.
    </td>
   </tr>
   <tr>
    <td>Popular Intents
    </td>
-   <td>Displays a table with data insights on the number of times the virtual assistant identified the given intent from the user utterances in active and closed conversations.
+   <td>Displays a table with data insights on the number of times the AI Agents identified the given intent from the user utterances in active and closed conversations.
 <p>
 The following fields are displayed:
 <ul>
@@ -84,7 +79,7 @@ The following fields are displayed:
 
 ### Goal Completion Rate
 
-The goal completion metrics show how many tasks a virtual assistant completes and fails within a selected time. The [failed tasks](task-execution-logs.md#failed-task) include both abandoned and incomplete tasks. The task is any interaction like Dailog, FAQs, or alerts. [Learn more.](../../administration/analytics.md#chat-history-details)
+The goal completion metrics show how many tasks an AI Agent completes and fails within a selected time. The [failed tasks](task-execution-logs.md#failed-task) include both abandoned and incomplete tasks. The task is any interaction like Dailog, FAQs, or alerts. [Learn more.](../../administration/analytics.md#chat-history-details)
 
 Listed below are the widgets that could help in providing information about these details:
 

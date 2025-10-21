@@ -4,7 +4,7 @@ This API imports a new tool by providing the necessary **file IDs**, ensuring al
 
 To import a tool, follow the steps below:
 
-1. **Upload Files**: Use the [File Upload API](./upload-file-api.md){:target="_blank"} to upload the files for the flow definition, app definition, and environment variables. [Learn more](../../tools/import-a-tool.md/#import-to-create-a-new-tool){:target="_blank"}. This API returns unique **file IDs** for each file. 
+1. **Upload Files**: Use the [File Upload API](./upload-file-api.md){:target="_blank"} to upload the files for the flow definition, app definition, and environment variables. [Learn more](../../ai-agents/tools/import-a-tool.md/#import-to-create-a-new-tool){:target="_blank"}. This API returns unique **file IDs** for each file. 
 2. **Import the Tool**: Call the [Import Tools API](../apis-list/import-a-new-tool.md){:target="_blank"} using the retrieved **file IDs** along with the tool name.
 3. **Track import Status**: The API response returns a <code>dockStatusId</code> that helps monitor the import progress using the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"}.
 
@@ -19,7 +19,7 @@ To import a tool, follow the steps below:
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{{host}}/api/public/tools/import</code>
+   <td><code>https://{host}/api/public/tools/import</code>
    </td>
   </tr>
   <tr>
@@ -36,7 +36,7 @@ To import a tool, follow the steps below:
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
+**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Query Parameters
 
@@ -54,7 +54,7 @@ To import a tool, follow the steps below:
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
    </td>
    <td>String
    </td>
@@ -66,7 +66,7 @@ To import a tool, follow the steps below:
 ## Sample Request
 
 ```js
-curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import' \
+curl --location 'https://{host}/api/public/tools/import' \
 --header 'x-api-key: kg-90xxxxx5-9xxe-5xxf-9xx7-9xxxxxxxxxx4-55xxxxx4-axx9-4xx2-axx2-fxxxxxxxxxxa' \
 --header 'Content-Type: application/json' \
 --data '{

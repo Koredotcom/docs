@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Data Delete API
 
 Used to delete data from Data Table.

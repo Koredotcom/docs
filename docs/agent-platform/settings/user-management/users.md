@@ -1,4 +1,4 @@
-# Users
+# Invite and Manage Account Users
 
 The **Users** feature simplifies account administration through centralized tools for inviting, importing, and managing users. The tools work together to streamline user administration and ensure efficient collaboration, access control, and status monitoring.
 
@@ -31,22 +31,18 @@ The dashboard displays user counts by status:
 
 <img src="../images/users-count.png" alt="users count" title="users count" style="border: 1px solid gray; zoom:75%;">
 
-It also shows detailed user information, including name, email, role, and status. For information on default system roles, click [here](../user-management/role-management.md/#system-defined-roles){:target="_blank"}.
+It also shows detailed user information, including name, email, role, and status. For information on default system roles, click [here](../user-management/role-management.md#system-defined-roles){:target="_blank"}.
 
 ## Add a New User
 
-The  **Settings** Console provides two ways to add a new user to the system:
+The **Settings** Console provides two ways to add a new user to the system:
 
 * Email invitation
-* Import _.txt_ or _.csv_ file with user information in the predefined format.
+* Import _.txt_ or _.csv_ file with user information in the pre-defined format.
 
 ### Invite (Email Invitation)
 
-Click [here](../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"} to see the step-by-step instructions on how to add a user via email invitation.
-
-### Resend Invite
-
-Invitations expire after 15 days. You can send a new email invitation to the user. [Learn more](../../getting-started/sign-up-sign-in.md/#resend-email-invitation){:target="_blank"}.
+See [Invite a User](../user-management/invite-a-user.md){:target="_blank"} to learn how to add a user to your account via email invitation.
 
 ### Import (Bulk Import)
 
@@ -69,11 +65,15 @@ The import feature allows administrators to add multiple users at once using .tx
 
 The steps mentioned below, allow you to import users' data from a designated file into Agent Platform.
 
-1. Navigate to **Users Management** > **Users** on the left menu.
-2. Click **Add New User**, and select **Import**.
-<img src="../images/import-user.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
 
-3. Perform one of the following actions on the **Import Users** page:
+2. Click **Settings** on the navigation bar.
+3. Navigate to **Users Management** > **Users** on the left menu.
+4. Click **Add New User**, and select **Import**.
+   <img src="../images/import-user.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
+5. Perform one of the following actions on the **Import Users** page:
 
 * Click **Upload File**, then select and upload the user info file from your system.
 <img src="../images/click-upload-file.png" alt="click upload file" title="click upload file" style="border: 1px solid gray; zoom:75%;">
@@ -86,8 +86,8 @@ The steps mentioned below, allow you to import users' data from a designated fil
 
     <img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;">
 
-* The fields are predefined in the sample file, and the data requirements are shown below:
-<img src="../images/prefefined-fields.png" alt="predefined fields" title="predefined fields" style="border: 1px solid gray; zoom:75%;">
+* The fields are pre-defined in the sample file, and the data requirements are shown below:
+<img src="../images/pre-defined-fields.png" alt="pre-defined fields" title="pre-defined fields" style="border: 1px solid gray; zoom:75%;">
 
 * Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error, as shown in the screenshot below.
 <img src="../images/mismatch-error.png" alt="fields mismatch error" title="fields mismatch error" style="border: 1px solid gray; zoom:75%;">
@@ -111,7 +111,7 @@ Click **OK** to see the imported users on the dashboard.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The imported users are assigned the <b>Viewer</b> system role by default, which you can change. <a href="https://agentplatform-kore.github.io/docs/agent-platform/settings/user-management/role-management/#system-defined-roles" target="_blank">Learn more</a>.</p>
+<p>The imported users are assigned the <b>Viewer</b> system role by default, which you can change. <a href="../role-management/#system-defined-roles" target="_blank">Learn more</a>.</p> 
 </div>
 
 <img src="../images/imported-entries.png" alt="imported entries" title="imported entries" style="border: 1px solid gray; zoom:75%;">
@@ -237,7 +237,7 @@ The role is updated for the selected users.
 
 ## Related Information
 
-* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other Agent Platform admin features.
+* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
 * **Role Management** - [Learn more](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
 * **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
 

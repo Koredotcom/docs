@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Get Batch Test Suites API
 
 To get the list of Batch Test Suites available for a bot.
@@ -36,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Management
+<li>App Builder: Batch Tests Management
 
 <li>Admin Console: Batch Tests Management
 </li>

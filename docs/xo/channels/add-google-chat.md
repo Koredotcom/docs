@@ -1,6 +1,8 @@
-# Adding the Google Chat Channel
+--8<-- "includes/digital-channels-back-link.md"
 
-Adding Google Chat as a channel to your Kore.ai assistant allows end-users to chat with it using Google Chat. This article shows you how to set it up.
+# Adding the Hangouts Chat Channel
+
+Adding Hangouts Chat as a channel to your Kore.ai assistant allows end-users to chat with it using Hangouts Chat. This article shows you how to set it up.
 
 
 ## Step 1: Enable the Google Chat API
@@ -74,18 +76,19 @@ Once your service account has been created, you need to manage the keys correspo
 A JSON file will be generated and you need to copy the _client_email_, and _private_key_ that needs to be input into the XO Platform. .
 
 
-## Step 4: Configure the Google Chat Channel
+## Step 4: Configure the Hangouts Chat Channel
 
-In the XO Platform, select the VA you’re working with, then go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Google Chat** > **Configurations**.
-
+In the XO Platform, select the AI Agent you’re working with, then go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Hangouts Chat** > **Configurations**.
 
 1. Enter the following configuration details:
     1. **Client Email** – Copy the value of the _client_email_ field present in the credentials JSON file of your Service Account and enter it here.
-    2. **Private Key** – Copy the value of the _private_key_ field present in the credentials JSON file of your Service Account and enter it here
-2. Select the **Yes** and click **Save** to enable Google Chat channel.
+    2. **Private Key** – Copy the value of the _private_key_ field present in the credentials JSON file of your Service Account and enter it here.
+
+2. Enable **Proactive Notifications** to send  relevant updates to the users without requiring them to initiate interaction with the app first.
+
+3. Select **Yes** and click **Save** to enable Hangouts Chat channel.
 <img src="../images/google_chat12.png" alt="save channel" title="save channel" style="border: 1px solid gray; zoom:70%;">
 
-
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

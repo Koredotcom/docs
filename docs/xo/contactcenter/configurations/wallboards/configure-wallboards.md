@@ -16,25 +16,62 @@ Steps to create a wallboard:
 
 3. Enter the following details to create the wallboard:
     1. **Name**: Enter the name of the wallboard.
-    2. **Wallboard Description **(optional): Enter the description of the wallboard.
-    3. **Wallboard Type**: Center Wide.
-    4. **Queues**: Select the queues for which the data will be shown. If you do not select any queues, all queues will be displayed by default.
-    5. **Channels**: Select the channels for which the data will be shown. If you do not select any channels, all channels will be selected by default.
-    6. **Time Period**: Select the duration to display data from the dropdown options.
-        1. Last 15 minutes,
-        2. Last 30 minutes,
-        3. Last 1 hour,
-        4. Last 2 hours,
-        5. Last 8 hours,
-        6. Last 12 hours,
-        7. Today.
-    7. **Enable Scroll Text** (Optional): Turn on the Enable Scroll Text toggle to add text that scrolls horizontally at the bottom of the wallboard page. Enter the text in the Message dialog box and select the Scroll Speed from the following options:
-        8. Slow,
-        9. Medium,
-        10. Fast.  
+    2. **Wallboard Description** (optional): Enter the description of the wallboard.
+    3. **Wallboard Type**: Center Wide (default), Queue Specific.  
+        <img src="../images/wallboard-type.png" alt="Wallboard Type" title="Wallboard Type" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Create**. A confirmation message is displayed and the wallboard is created.
-    <img src="../images/ccai-create-wallboard.png" alt="Create Wallboard" title="Create Wallboard" style="border: 1px solid gray; zoom:80%;">
+### Center Wide
+
+1. **Display to**: Select the queues to which the data will be shown.
+2. **Queues**: Select the queues for which the data will be shown. If you do not select any queues, all queues will be displayed by default.
+3. **Channels**: Select the channels for which the data will be shown. If you do not select any channels, all channels will be selected by default.
+4. **Time Period**: Select the duration to display data from the dropdown options.
+    1. Last 15 minutes,
+    2. Last 30 minutes,
+    3. Last 1 hour,
+    4. Last 2 hours,
+    5. Last 8 hours,
+    6. Last 12 hours,
+    7. Today.
+5. **Enable Scroll Text** (Optional): Turn on the Enable Scroll Text toggle to add text that scrolls horizontally at the bottom of the wallboard page. Enter the text in the Message dialog box and select the Scroll Speed from the following options:  
+    1. Slow,
+    2. Medium,  
+    3. Fast.  
+
+6. Click **Create**. A confirmation message is displayed, and the wallboard is created.  
+    <img src="../images/add-wallboard.png" alt="Create Center Wide Wallboard" title="Create Center Wide Wallboard" style="border: 1px solid gray; zoom:80%;">
+
+### Queue Specific
+
+1. **Display Top 3 Performers**: Select an option and choose the top three insights from the available categories.
+    | **Multiple Insights**                                                                 | **One Insight**                                                                     |
+    |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+    | Select the top 3 different metrics of agents displayed                                | Select the top 3 specific metrics of agents displayed                                |
+    | **Insights** (applies to both columns)                                                |                                                                                      |
+    | **Top Closed** <br> Agents with the highest number of closed conversations              | **Top Closed**                                                                       |
+    | **Top Answered** <br> Agents with the highest number of answered conversations          | **Top Answered**                                                                     |
+    | **Top CSAT** <br> Agents with the highest customer satisfaction rating                  | **Top CSAT**                                                                         |
+    | **Top Occupancy Rate** <br> Agents with a higher occupancy rate                         | **Top Occupancy Rate**                                                               |
+    | **Top Average First Response Time** <br> Agents with the best first response time       | **Top Average First Response Time**                                                  |
+
+2. **Display to**: Select the queues to which the data will be shown.
+3. **Queues**: Select the queues for which the data will be shown. If you do not select any queues, all queues will be displayed by default.
+4. **Channels**: Select the channels for which the data will be shown. If you do not select any channels, all channels will be selected by default.
+5. **Time Period**: Select the duration to display data from the dropdown options.
+    1. Last 15 minutes,
+    2. Last 30 minutes,
+    3. Last 1 hour,
+    4. Last 2 hours,
+    5. Last 8 hours,
+    6. Last 12 hours,
+    7. Today.
+6. **Enable Scroll Text** (Optional): Turn on the Enable Scroll Text toggle to add text that scrolls horizontally at the bottom of the wallboard page. Enter the text in the Message dialog box and select the Scroll Speed from the following options:  
+    1. Slow,
+    2. Medium,  
+    3. Fast.  
+
+7. Click **Create**. A confirmation message is displayed, and the wallboard is created.  
+    <img src="../images/create-queue-specific-wallboard.png" alt="Create Queue Specific Wallboard" title="Create Queue Specific Wallboard" style="border: 1px solid gray; zoom:80%;">
 
 ## Edit a Wallboard
 
@@ -44,7 +81,7 @@ Steps to edit a wallboard:
     <img src="../images/ccai-edit-button.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Make the required changes and click **Update**.  
-<img src="../images/ccai-edit-wallboard.png" alt="Edit Wallboard" title="Edit Wallboard" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/edit-wallboard.png" alt="Edit Wallboard" title="Edit Wallboard" style="border: 1px solid gray; zoom:80%;">
 
 ## Delete a Wallboard
 

@@ -1,6 +1,8 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Microsoft Teams Channel
 
-You can add Microsoft Teams as a delivery channel to your Kore.ai Virtual Assistant to allow it to interact with end-users using Microsoft Teams.
+You can add Microsoft Teams as a delivery channel to your Kore.ai Assistant to allow it to interact with end-users using Microsoft Teams.
 
 
 ## Prerequisites
@@ -14,7 +16,7 @@ You can add Microsoft Teams as a delivery channel to your Kore.ai Virtual Assist
 
 ## Step 1: Create an Azure Bot
 
-Create an Azure Bot and configure it on the Kore.ai XO Platform to establish a communication channel between Microsoft Teams and the platform.
+Create an Azure Bot and configure it on the Platform to establish a communication channel between Microsoft Teams and the platform.
 
 
 1. Log in to the [Azure portal](https://portal.azure.com/), and click **+ Create a resource** from the portal menu.
@@ -38,7 +40,7 @@ Create an Azure Bot and configure it on the Kore.ai XO Platform to establish a c
 
 ## Step 2: Configure the Resource App Id and Password
 
-Generate a new App Password and Client Secret to configure the Azure Bot on the Kore.ai XO Platform.
+Generate a new App Password and Client Secret to configure the Azure Bot on the Platform.
 
 
 1. On the **Configurations** tab, click the **Manage**  option next to the **Microsoft App ID** field.
@@ -47,7 +49,7 @@ Generate a new App Password and Client Secret to configure the Azure Bot on the 
 2. Choose **Certificates & secrets** in the left navigation bar, and create a new client secret on the page:
     * Click the **+ New client secret** option.
     * Provide the necessary details, and then click the **Add** option.
-3. Copy the **Value** of the new client secret and provide it in the **App Password** field present on the **Configurations** tab of the Kore.ai XO Platform. [Refer Step 3: Enable Microsoft Teams Channel.](#step-3-enable-microsoft-teams-channel) 
+3. Copy the **Value** of the new client secret and provide it in the **App Password** field present on the **Configurations** tab of the Platform. [Refer Step 3: Enable Microsoft Teams Channel.](#step-3-enable-microsoft-teams-channel) 
 <img src="../images/MS_Team7.png" alt="enable channel" title="enable channel" style="border: 1px solid gray; zoom:70%;">
 
 4. Close the **Certificates and secrets** section to return the **Configuration** section of the resource using the breadcrumbs.
@@ -58,7 +60,7 @@ Generate a new App Password and Client Secret to configure the Azure Bot on the 
 
 ## Step 3: Enable Microsoft Teams Channel
 
-Configure the MS Teams credentials on the Kore.ai XO Platform to establish communication between both.
+Configure the MS Teams credentials on the Platform to establish communication between both.
 
 
 1. On the platform, select the assistant, and then go to the **Channels & Flows** > **Channels** > **Digital** > **All** menu.
@@ -138,7 +140,7 @@ To do so, create an MS Teams app, associate the bot with it, and then publish th
 
 ## Step 5: Approve the MS Teams App Publish Request
 
-The request to publish the MS Teams App must be approved by an MS Teams Admin. Log in to the [MS Teams Admin Portal](https://admin.teams.microsoft.com/) and proceed to **Teams apps > Manage apps**. Search for the app that you published in the earlier step. Select the app and change the Publishing status to **Published**. This completes the process for publishing your bot for your Teams users.
+The request to publish the MS Teams App must be approved by an MS Teams Admin. Log in to the [MS Teams Admin Portal](https://admin.teams.microsoft.com/) and proceed to **Teams apps > Manage apps**. Search for the app that you published in the earlier step. Select the app and change the Publishing status to **Published**. This completes the process for publishing your app for your Teams users.
 
 
 ## Step 6: Configure Proactive Notifications [Optional]
@@ -177,7 +179,7 @@ To enable Proactive Notifications, follow these steps:
     * TeamsAppInstallation.ReadWriteForUser.All
     * User.Read.All
 
-    ![add permissions](../images/MS_Team24.png "add permissions")
+    ![add permissions](images/MS_Team24.png "add permissions")
 
     !!! note
 
@@ -331,6 +333,6 @@ if(channelActionMetadata){
 
 ### Related Links
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

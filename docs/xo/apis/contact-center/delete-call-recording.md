@@ -1,10 +1,12 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Delete Call Recording API
 
 This API is used to delete Voice Call Recordings. The response varies based on whether the execution is successful or not.
 
 | **Method**        | DELETE                                                                                   |
 |---------------|------------------------------------------------------------------------------------------|
-| **Endpoints**     | `https://{{host}}/api/public/bot/{{:streamId}}/v2/recordings?sessionId={{sessionId}}` |
+| **Endpoints**     | `https://{{host}}/api/public/bot/{{botId}}/v2/recordings?sessionId={{sessionId}}` |
 | **Content Type**  | `application/json`                                                                      |
 | Authorization | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**     | Delete Recordings
@@ -13,8 +15,8 @@ This API is used to delete Voice Call Recordings. The response varies based on w
 
 | **PARAMETER** | **DESCRIPTION**                                    | **TYPE**           |
 |-----------|------------------------------------------------|----------------|
-| host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| streamId | Bot ID or Stream ID. You can access it from the General Settings page of the bot. | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| botId | botId or streamId. You can get it from the App Settings page.| string, required |
 
 ## Query Parameter
 
@@ -25,8 +27,8 @@ This API is used to delete Voice Call Recordings. The response varies based on w
 ## Sample Request
 
 ```
-curl --location --request DELETE 'https://{{host}}/api/1.1/public/bot/st-b110e148-7428-5295-960b-099e8167xxxx/recordings?sessionId=6627b9adb9af28711b78xxxx' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTQ0YTIzOTNmLTk4MTEtNWY3Mi04NGUyLTM0YTY4MzI4N2I1ZCJ9.kW9tN1gTUW7QjFrHvwBp-EcRu8QhBK223Xi2NgZxxxx'
+curl --location --request DELETE 'https://{{host}}/api/1.1/public/bot/{{botID}}/recordings?sessionId=6627b9adb9af28711b78xxxx' \
+--header 'auth: <token>>'
 ```
 
 ## Sample Request

@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Twilio SMS Channel
 
 To add Twilio SMS as a channel, set up a messaging service in Twilio to manage message delivery and routing. Once the bot is added, end-users can interact with your bot through text messages.
@@ -50,7 +52,7 @@ To add the Twilio Channel, pursue the following steps:
     
     !!! Note
     
-        The callback URL includes the **streamId** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+        The callback URL includes the **streamId** in the API request to identify the AI Agent being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
  
 
 12. Click **Step 4: Add compliance info**. The success message is displayed and then, click **Complete Messaging Service Setup**.  

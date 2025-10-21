@@ -1,19 +1,21 @@
 # Interactions Dashboard
 
-Interactions store the bot interactions. You can use the logs to review your bot’s performance and troubleshoot issues with conversations.
+Interactions store the AI Agents interactions. You can use the logs to review your AI Agent’s performance and troubleshoot issues with conversations.
 
 To view the Interactions dashboard, follow the steps:
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
-2. Click **Interactions** under the **Contact Center** section of the **Analytics** panel. The **Interactions** dashboard is displayed on the right side of the page.  
-<img src="../images/navigation-interactions-report.png" alt="Navigation Interactions Report" title="Navigation Interactions Report" style="border: 1px solid gray; zoom:80%;">
+1. Go to **CONTACT CENTER AI** > **Analytics** > **Interactions**.  
+    <img src="../images/interactions-page.png" alt="Interactions Page" title="Interactions Page" style="border: 1px solid gray; zoom:80%;">
 
-3. On this page, the following details of the logs are displayed in a table:
+2. On this page, the following details of the logs are displayed in a table:
 
   * CUSTOMER: The contact who initiated the conversation.
      * Direction (Icon): The direction of the conversation –  Inbound or Outbound.
     * LANGUAGE (Icon): The language of the conversation.
     * CHANNEL (Icon): The Channel of the conversation – Voice, Chat, or Email.
+
+    Administrators can configure the system to hide customer Email IDs and Phone Numbers in the Interactions dashboard, Details slider, and Export file. Instead, the system displays the internal User ID. [Learn more](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md).
+
 * ACTIONS: You can download recordings and transcripts, and copy the following Identifiers:
     * User ID
     * Session ID
@@ -32,7 +34,7 @@ To view the Interactions dashboard, follow the steps:
     * Error: Error is a disruption to an ongoing conversation, resulting in an error message. Failure of integrated systems results in errors.
     * Completed (Drop Off): Completed (Drop Off) refers to a voice call where there was no response from the user, and the conversation ends.
     * Completed (User Hangup): Completed (User Hangup) refers to a voice call where the user ends the conversation.
-    * Completed (Bot Hangup): Completed (Bot Hangup) refers to a voice call where the task is completed, and the bot ends the conversation.
+    * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the task is completed, and the AI Agents ends the conversation.
     * Completed: Completed refers to a chat conversation where the task is completed, and the conversation ends.
 
 ### Supervisor Actions
@@ -69,6 +71,7 @@ The search feature on Interactions allows supervisors to do the following:
     * Complete matches receive the highest rank in the search results.
     * Results that match all single words of a phrase receive the next priority.
     * Results that receive the last priority are those where only a few words of a phrase match.
+* The search also provides an option to sort results by timestamp. By default, search results appear in order of relevance, with the most relevant results listed first. You can click the Start Time column to sort results by timestamp in either ascending or descending order.  
 * Ignore common words like Articles, Pronouns, and Prepositions while matching.
 
 How it works:
@@ -76,36 +79,45 @@ How it works:
 1. Enter a word or phrase in the search field and click the **Search** icon.
 
 2. The count of search results is displayed.  
-<img src="../images/search-interactions-1.png" alt="Search Interactions 1" title="Search Interactions 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/search-interactions-1.png" alt="Search Interactions 1" title="Search Interactions 1" style="border: 1px solid gray; zoom:80%;">
 
 3. When you click a conversation, the Insights to Logs window is displayed. Enter the word or phrase in the search field to prompt the system to search for it in the conversation.  
-<img src="../images/search-interactions-2.png" alt="Search Interactions 2" title="Search Interactions 2" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/search-interactions-2.png" alt="Search Interactions 2" title="Search Interactions 2" style="border: 1px solid gray; zoom:80%;">
 
 4. The system displays the count of the occurrences of the word or phrase along with the highlighted results.  
-<img src="../images/search-interactions-3.png" alt="Search Interactions 3" title="Search Interactions 3" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/search-interactions-3.png" alt="Search Interactions 3" title="Search Interactions 3" style="border: 1px solid gray; zoom:80%;">
 
-## Export Conversation Data, Transcripts, and Events
+!!! Note
 
-The conversation data, transcripts, and events can be exported as a .csv file and downloaded to the local system from the dashboard.
+    The search button works in two ways. By default, OpenSearch is enabled in all standard cloud deployments. However, if your deployment is on a Virtual Private Cloud (VPC) or a custom setup, OpenSearch must be deployed separately. When OpenSearch is available, you can use the full search functionality. If OpenSearch is not deployed, the search button still works, but it supports only ID-based searches.
+
+## Export/Download Recording, Transcripts, Latency Report, and Events
+
+The recording, transcripts, latency reports, and events can be downloaded to the local system from the dashboard.
 
 Steps to export conversation data/transcripts:
 
 1. Select the conversations and click **Export**.  
     <img src="../images/export-button.png" alt="Export Button" title="Export Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Export Conversation Data**, **Export Transcripts**, or **Export Events** as required.  
-    <img src="../images/export-fields.png" alt="Export Options" title="Export Options" style="border: 1px solid gray; zoom:80%;">  
+2. Click **Export Conversation Data**, **Export Transcripts**, or **Export Events** as required.
 
     or
 
-    Click **Download Recording** or **Download Transcript**.  
-    <img src="../images/download-options.png" alt="Download Options" title="Download Options" style="border: 1px solid gray; zoom:80%;"> 
+    Click **Download Recording**, **Download Transcript**, or **Download Latency Report**. The transcript and latency report are downloaded in .csv format.  
+    <img src="../images/download-options-interactions.png" alt="Download Options" title="Download Options" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! Notes
 
         * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
         * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
         * Up to 25 conversations can be selected for exporting transcripts. If a selected conversation does not have a transcript or the system cannot retrieve one, a blank transcript is exported for that conversation.
+        * A status message is displayed at the start of the export. On completion, the file is downloaded.
+        * The following [Call Control Parameters](../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters) must be added to view the Download Latency Report option.
+            `notifySttLatency = true`  
+            `vadEnable = true`  
+            `vadVendor = silero`
+
 3. A status message is displayed at the start of the export. On completion, the file is downloaded.
 
 Steps to Preview and Download Events:
@@ -142,6 +154,34 @@ Steps to Preview and Download Events:
         11. After-Call Work (ACW)  
         12. Conversation Closure  
 
+## Edit Dispositions from the Interactions Tab
+
+Supervisors can edit or override disposition codes after a conversation ends. Agents assign dispositions during live sessions, but once the session completes, supervisors can review and revise the assigned codes directly from the Interactions Tab. This capability ensures accurate categorization of interactions and supports streamlined post-conversation workflows. Administrators can enable this functionality for specific roles. [Learn more](../../user-management/role-management.md#permissions).
+
+Key Highlights:
+
+* Improved auditing and compliance
+* Accurate reporting and resolution tracking
+* Reduced dependency on agents for post-call updates
+* Agents receive a notification when a supervisor updates a disposition.
+
+Steps to edit dispositions:
+
+1. Select a completed interaction for which the disposition has to be revised.
+2. Select the **DETAILS** tab in the Insights to Logs window.
+3. Click **Edit Disposition**.  
+    <img src="../images/edit-disposition-button.png" alt="Edit Disposition" title="Edit Disposition" style="border: 1px solid gray; zoom:70%;">
+
+4. Make the necessary changes to the dispositions and click **Save**.  
+    <img src="../images/edit-disposition-pop-up.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:70%;">
+
+5. Click **View Logs**.  
+    <img src="../images/view-logs.png" alt="View Logs" title="View Logs" style="border: 1px solid gray; zoom:70%;">  
+
+    The disposition logs are displayed.
+
+    <img src="../images/disposition-log-details.png" alt="Disposition Log Details" title="Disposition Log Details" style="border: 1px solid gray; zoom:70%;">  
+
 ## Filters
 
 To avoid repeatedly filtering your choices, you can create and save multiple filters on the Interactions tab.
@@ -149,13 +189,13 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 ### Create Filter
 
 1. Click the **Filter** button.  
-<img src="../images/create-filters-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **New Filter**.  
-<img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:70%;">
 
 3. Select the IDs, Queues, Channels, Agents, Status, CSAT, and Custom Tags.  
-<img src="../images/create-filters-3.png" alt="Create Filters 3" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-3.png" alt="Create Filters 3" title="Create Filters 1" style="border: 1px solid gray; zoom:70%;">
 
     Select from the below available options:
     1. Clear – Clears the selection.
@@ -164,7 +204,7 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 
 4. Click **Save & Apply**.
 5. On the pop-up window, enter a name for the filter and click **Save & Apply**.  
-<img src="../images/create-filters-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filters-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:70%;">
 
 A confirmation message is displayed, and the filter is created.
 
@@ -255,19 +295,21 @@ Icons beside the Insights to Logs header show the Direction (inbound or outbound
 <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
 
 **TRANSCRIPT**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
-<img src="../images/transcript-tab.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
+<img src="../images/transcripts.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
 
 The transcripts tab also shows the call transfer stages:
 
 * **User transferred to Agent** - When the Automation transfers the voice call to Agent.
 * **User transferred to Automation** - When the Agent transfers the voice call back to Automation.  
-<img src="../images/transfer-stages.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-stage.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:70%;">
+* **Max no-input attempts reached** - when the automation triggers the respective AI Agent behavior for exceeding maximum retries.  
+    <img src="../images/transcript-insights-to-logs.png" alt="Max No-Input Attempts Reached" title="Max No-Input Attempts Reached" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
     * When customers are placed on hold (either themselves or by an agent), the system will not display transcripts of any customer speech during the hold period. 
 
-    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties)
+    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties).
 
 **DETAILS**: This tab shows the following details:
 
@@ -285,8 +327,8 @@ The transcripts tab also shows the call transfer stages:
 **Notes**: Notes added to the conversation (view only)  
 **Snooze Count**: Number of times the conversation was snoozed  
 **Snooze Duration**: Duration for which the conversation was snoozed  
-**Session-level tags**: Session-level tags assigned to the conversation.    
-<img src="../images/details-tab-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
+**Session-level tags**: Session-level tags assigned to the conversation.  
+<img src="../images/details-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
 
 **USER**: This tab shows the following details:
 
@@ -296,7 +338,7 @@ The transcripts tab also shows the call transfer stages:
 **Channel User ID**: The user ID of the conversation channel.  
 **User ID**: Agent’s user ID.  
 **User-level tags**: User-level tags assigned to the conversation.  
-<img src="../images/user-tab.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/user-insights-to-logs.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
 
 **IDENTIFIERS**: This tab shows the following details:
 
@@ -348,13 +390,28 @@ The following recording settings can be configured:
 
     You can choose either as a single file or separate files.
 
-    * **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
+!!! Note
 
-        <img src="../images/download-as-single-file.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
+    * The retention period for voice call recordings can be configured based on customer requests. You can raise a request with us, and we will set it up accordingly.  
 
-    * **Download as separate files**: If you choose this option, you can select the files and download them.  
+    * Once the configured retention period ends, the recordings are permanently deleted.  
 
-        <img src="../images/download-as-separate-files.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+    * Customers who opt in will receive an email 7 days before deletion and a confirmation email after deletion.  
+
+    * After deletion, the following message will be displayed to users: “Recording not available. It may have been deleted as per your data retention policy.”  
+    
+    * All actions—including retention configuration and recording deletions—are logged and accessible in the Admin Console.
+
+* **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
+
+    <img src="../images/single-recording.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
+
+* **Download as separate files**: If you choose this option, you can select the files and download them.  
+
+    <img src="../images/multiple-recording.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+
+The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
+<img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
 
 * Duration: The increment and the countdown counters appear when the audio plays. The total duration of the audio is displayed before the audio plays.  
     <img src="../images/duration.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
@@ -365,7 +422,7 @@ The following recording settings can be configured:
     
         * If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
 
-A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#call-recording-control).  
+A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../app-settings/advanced-settings/system-settings.md#call-recording-control).  
 <img src="../images/recording-disabled.png" alt="No Recording Available" title="No Recording Available" style="border: 1px solid gray; zoom:80%;">  
 
 List of recording status and messages:
@@ -404,7 +461,7 @@ List of recording status and messages:
   <tr>
    <td>partial_download_failed
    </td>
-   <td>Unable to fetch the recording. Please click the button below to retry. \
+   <td>Unable to fetch the recording. Please click the button below to retry.
 <strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue. Please contact your administrator’ message appears.
    </td>
   </tr>
@@ -413,7 +470,7 @@ List of recording status and messages:
    </td>
    <td>Unable to fetch the recording. Please click the button below to retry.
 <p>
-<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue. 
+<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue.
    </td>
   </tr>
   <tr>
@@ -430,24 +487,363 @@ List of recording status and messages:
 
 Diagnostics is located at the top right corner of the Insights to Logs.
 
-<img src="../images/diagnostics.png" alt="Diagnostics" title="Diagnostics" style="border: 1px solid gray; zoom:80%;">
-
 !!! Note
 
     This option is available only for voice interactions.
 
-Clicking **Diagnostics** shows the following tabs:
+<img src="../images/diagnostics.png" alt="Diagnostics" title="Diagnostics" style="border: 1px solid gray; zoom:80%;">  
 
-**Flow**:
+Clicking Diagnostics shows the following tabs:
 
-<img src="../images/flow-tab.png" alt="Flow" title="Flow" style="border: 1px solid gray; zoom:80%;">
+### Flow
 
-**Quality of Service (QoS)**:
+The Flow tab provides a detailed timeline of call signaling and media flow between endpoints. This interface displays the sequence of SIP messages and RTCP packets exchanged during a call, allowing Agents and Supervisors to track the complete communication flow and troubleshoot connection issues.  
+<img src="../images/flow-tab.png" alt="Flow Tab" title="Flow Tab" style="border: 1px solid gray; zoom:70%;">  
 
-<img src="../images/qos-tab.png" alt="QoS" title="QoS" style="border: 1px solid gray; zoom:80%;">
+The top row displays the IP addresses of all endpoints involved in the communication.
 
-You can export the report in the following formats:
+Example:
+
+* 50.19.12.248
+* 172.31.11.64
+* 172.31.11.62
+* 172.31.11.64
+
+**SIP Message Flow**
+
+The interface shows SIP signaling messages exchanged between endpoints:
+
+1. **INVITE**
+    * Direction: 50.19.12.248 to 172.31.11.64
+    * Port: 5060 → 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+2. **100 (Trying)**
+    * Direction: 172.31.11.64 to 50.19.12.248
+    * Port: 5060 ← 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+3. **200 (OK)**
+    * Direction: 172.31.11.64 to 50.19.12.248
+    * Port: 5060 ← 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+4. **ACK**
+    * Direction: 50.19.12.248 to 172.31.11.64
+    * Port: 5060 → 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
+The interface also shows RTCP media packets exchanged between endpoints:
+
+1. **RTCP (First packet)**
+    * Direction: 172.31.11.62 to 172.31.11.64
+    * Port: 5060 → 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+2. **RTCP (Second packet)**
+    * Direction: 172.31.11.62 to 172.31.11.64
+    * Port: 5060 → 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
+**How to Use**
+
+1. **Track Call Setup**: Follow the initial INVITE, 100 Trying, 200 OK, and ACK sequence to verify proper call establishment.
+2. **Analyze Response Times**: Note the timestamps to identify any delays in message processing.
+3. **Monitor Media Flow**: Review RTCP packets to ensure media is flowing properly between endpoints.
+4. **Identify Issues**: Look for missing messages or unexpected responses that might indicate connection problems.
+5. **Export Data**: Use the export options to save the communication flow for further analysis.
+
+### QoS (Quality of Service) 
+The QoS tab provides detailed network metrics for call monitoring and troubleshooting. It offers comprehensive data visualization of network performance indicators to help Agents and Supervisors analyze call quality.  
+<img src="../images/qos-tab.png" alt="QoS Tab" title="QoS Tab" style="border: 1px solid gray; zoom:70%;">  
+
+**Packets**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. Packets
+   </td>
+   <td>Minimum number of packets transmitted (320)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. Packets
+   </td>
+   <td>Average number of packets transmitted (249.25)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. Packets
+   </td>
+   <td>Maximum number of packets transmitted (602)
+   </td>
+  </tr>
+</table>
+
+**Octets**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. Octets
+   </td>
+   <td>Minimum number of octets/bytes transmitted (238047)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. Octets
+   </td>
+   <td>Average number of octets/bytes transmitted (238047)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. Octets
+   </td>
+   <td>Maximum number of octets/bytes transmitted (802234)
+   </td>
+  </tr>
+</table>
+
+**Highest_Seq_No**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. Highest_Seq_No
+   </td>
+   <td>Minimum sequence number (2)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. Highest_Seq_No
+   </td>
+   <td>Average sequence number (249625)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. Highest_Seq_No
+   </td>
+   <td>Maximum sequence number (435756)
+   </td>
+  </tr>
+</table>
+
+**IA (Inter Arrival) Jitter**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. IA Jitter
+   </td>
+   <td>Minimum inter-arrival jitter (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. IA Jitter
+   </td>
+   <td>Average inter-arrival jitter (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. IA Jitter
+   </td>
+   <td>Maximum inter-arrival jitter (4)
+   </td>
+  </tr>
+</table>
+
+**LSR (Last Sender Report)**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. LSR
+   </td>
+   <td>Minimum last sender report (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. LSR
+   </td>
+   <td>Average last sender report (3445503.34)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. LSR
+   </td>
+   <td>Maximum last sender report (3445503.34)
+   </td>
+  </tr>
+</table>
+
+**MOS (Mean Opinion Score)**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. MOS
+   </td>
+   <td>Minimum Mean Opinion Score (4.34)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. MOS
+   </td>
+   <td>Average Mean Opinion Score (2.32)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. MOS
+   </td>
+   <td>Maximum Mean Opinion Score (5.74)
+   </td>
+  </tr>
+</table>
+
+**Packets_Lost**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. Packets_Lost
+   </td>
+   <td>Minimum number of lost packets (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. Packets_Lost
+   </td>
+   <td>Average number of lost packets (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. Packets_Lost
+   </td>
+   <td>Maximum number of lost packets (1)
+   </td>
+  </tr>
+</table>
+
+The interface displays IP connection information in expandable rows, showing source and destination IP addresses (for example, 172.31.11.62 → 172.31.11.62).
+
+The bottom bar chart visualizes call metrics over time. The x-axis shows timestamps (2024-04-15), and the y-axis represents metric values from 0 to 100.
+
+### Agents
+
+The Agents tab provides comprehensive call information for agents and supervisors, displaying detailed metrics for all participants on a call. This enables a better understanding of interactions and assists with troubleshooting issues. The following data points are shown on this tab:  
+<img src="../images/mos-jitter.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
+
+<table>
+  <tr>
+   <td>Field Name
+   </td>
+   <td>Description
+   </td>
+  </tr>
+  <tr>
+   <td>Participant Name
+   </td>
+   <td>Name identifier of the person involved in the call. External Agents are marked with an "External Agent" tag.
+   </td>
+  </tr>
+  <tr>
+   <td>Call Status
+   </td>
+   <td>Indicates whether the participant is currently "In-Call" or has "Left" the call.
+   </td>
+  </tr>
+  <tr>
+   <td>Start Timestamp
+   </td>
+   <td>Date and time when the participant joined the call.
+   </td>
+  </tr>
+  <tr>
+   <td>End Timestamp
+   </td>
+   <td>Date and time when the participant left the call. Displays "NA" for participants currently in the call.
+   </td>
+  </tr>
+  <tr>
+   <td>Average MOS (Mean Operating Score)
+   </td>
+   <td>MOScore average value represents the participant's overall call quality.
+   </td>
+  </tr>
+  <tr>
+   <td>Call Exit Reason
+   </td>
+   <td>Categorized reason why the participant left the call (for example, "Disconnected", "Transfer", "Call Ended").
+   </td>
+  </tr>
+  <tr>
+   <td>Call Exit Description
+   </td>
+   <td>Detailed explanation providing additional context about why the participant exited the call.
+   </td>
+  </tr>
+  <tr>
+   <td>MOS (min, max, average)
+   </td>
+   <td>Minimum, maximum, and average MOScore values measuring voice quality during the call. Hovering over the tooltip displays the industry standard value.
+   </td>
+  </tr>
+  <tr>
+   <td>Jitter (min, max, average)
+   </td>
+   <td>The minimum, maximum, and average jitter measurements indicate variations in packet delivery timing. Hovering over the tooltip displays the industry standard value.
+   </td>
+  </tr>
+  <tr>
+   <td>Packets Lost (min, max, average)
+   </td>
+   <td>The minimum, maximum, and average count of data packets that failed to reach their destination.
+   </td>
+  </tr>
+</table>
+
+### Export
+
+You can export the following reports:
 
 * Export PCAP
 * Export TEXT.  
-    <img src="../images/export-option.png" alt="Export Option" title="Export Option" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/export.png" alt="Export Reports" title="Export Reports" style="border: 1px solid gray; zoom:80%;"> 

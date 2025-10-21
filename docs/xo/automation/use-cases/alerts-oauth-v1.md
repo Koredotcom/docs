@@ -1,6 +1,6 @@
 # Alert Task – OAuth v1
 
-We have seen how an Alert task can be set up in the XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this article , we will see how authorization for the alert tasks can be set up using the OAuth v1.
+We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform. In this article , we will see how authorization for the alert tasks can be set up using the OAuth v1.
 
 ## How it Works 
 
@@ -15,7 +15,7 @@ OAuth is an open protocol to allow secure authorization in a simple and standard
 
 To begin your configuration, follow the steps below:
 
-1. Select the VA you want to work with.
+1. Select the App you want to work with.
 2. Go to **Build** > **Conversation Skills** > **Alert Tasks**. 
 3. Select the task you want to work with. 
 4. Click the **API Request** tab within the Alert Task.
@@ -128,10 +128,10 @@ To add authorization fields:
 <img src="../images/add-auth-field.png" alt="add auth field" title="add auth field" style="border: 1px solid gray; zoom:75%;">
 
 2. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required.
-    * **Header** – The VA expects the authorization fields as part of the header of the request.
-    * **Payload** – The VA expects the authorization fields as part of the content of the body of the request.
-    * **Query String** – The VA expects the authorization fields as a query in the body of the request.
-    * **Path Param** – The VA expects the authorization fields as part of the URL path for the request.
+    * **Header** – The AI Agent expects the authorization fields as part of the header of the request.
+    * **Payload** – The AI Agent expects the authorization fields as part of the content of the body of the request.
+    * **Query String** – The AI Agent expects the authorization fields as a query in the body of the request.
+    * **Path Param** – The AI Agent expects the authorization fields as part of the URL path for the request.
 3. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 4. In the **Field Value** field, enter the value for the **Field Key** specified.
 5. Click **Add**. The new authorization field is added in the **Authorization Fields** section.

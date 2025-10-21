@@ -1,3 +1,4 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Sessions History API
 
@@ -15,7 +16,7 @@ This API retrieves the conversation sessions created. It returns information suc
    <td><strong>Endpoint</strong>
    </td>
    <td><code>https://{{host}}/api/public/bot/{{BotID}}/getSessions?containmentType={{containmentType}}</code>
-<p>
+<br>
 and <code>https://{{host}}/api/public/getSessions?containmentType={{containmentType}}</code>for BAC
    </td>
   </tr>
@@ -29,7 +30,7 @@ and <code>https://{{host}}/api/public/getSessions?containmentType={{containmentT
    <td><strong>Authorization</strong>
    </td>
    <td><code>auth: {{JWT}}</code>
-<p>
+<br>
 See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a>
    </td>
   </tr>
@@ -39,7 +40,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Bot Sessions
+<li>App Builder: Bot Sessions
 
 <li>ORAdmin Console: Bot Analytics > Bot Sessions
 </li>
@@ -48,11 +49,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
 </table>
 
-
-
 ## Path Parameters
-
-
 <table>
   <tr>
    <td><strong>PARAMETER</strong>
@@ -74,10 +71,10 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
   <tr>
    <td>containmentType
-<p>
+<br>
 <strong>(introduced in ver9.0)</strong>
    </td>
-   <td>Use to filter the results based on the type of the session i.e Self-service vs. Drop-off vs. Agent Transfer \
+   <td>Use to filter the results based on the type of the session, that is, Self-service vs. Drop-off vs. Agent Transfer
 Valid values:
 <ul>
 
@@ -137,10 +134,25 @@ curl --location --request POST 'https://{{host}}/api/public/bot/{{BotId}}/getSes
      --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
      --header 'Content-Type: application/json' \
      --data-raw '{
-        "sessionId": ["6465cf6e4769ed4e822b82a1","6465cf6e47Q9ed4e822b82a1"]
+        "sessionId": ["6465cf6e4769ed4e822bxxxx","6465cf6e47Q9ed4e822bxxxx"]
      }
 ```
 
+**For specific external call Ids**
+
+These external call Ids are provided by the 3rd party agent desktops we have integrated with and are distinct from the actual call IDs
+
+```
+curl --location POST 'https://{{host}}/api/public/bot/{{BotId}}/getSessions?callId={{callId}}' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "skip": 0,
+    "limit": 100,
+    "dateFrom": "2025-03-17",
+    "dateTo": "2025-03-19"
+}'
+```
 
 ## Request Body Parameters
 
@@ -149,57 +161,71 @@ curl --location --request POST 'https://{{host}}/api/public/bot/{{BotId}}/getSes
   <tr>
    <td><strong>PARAMETER</strong>
    </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
    <td><strong>REQUIRED/OPTIONAL</strong>
+   </td>
+   <td><strong>TYPE</strong>
+   </td>      
+   <td><strong>DESCRIPTION</strong>
    </td>
   </tr>
   <tr>
    <td>userId
    </td>
-   <td>The ID of the user whose conversation history to access. Can be a user email id or enterprise assigned unique id.
-   </td>
    <td>Optional
+   </td>
+   <td>String
+   </td>      
+   <td>The ID of the user whose conversation history to access. Can be a user email id or enterprise assigned unique id.
    </td>
   </tr>
   <tr>
    <td>skip/offset
    </td>
-   <td>The number of messages to be skipped.
-   </td>
    <td>Optional
+   </td>
+   <td>Number
+   </td>      
+   <td>The number of messages to be skipped.
    </td>
   </tr>
   <tr>
    <td>limit
    </td>
-   <td>The number of messages to be shown on each page.
-<p>
-The latest sessions are returned first; the sessions are returned in descending order of start time.
-   </td>
    <td>Optional
+   </td>
+   <td>Number
+   </td>      
+   <td>The number of messages to be shown on each page.
+<br>
+The latest sessions are returned first; the sessions are returned in descending order of start time.
    </td>
   </tr>
   <tr>
    <td>dateFrom
    </td>
-   <td>Takes the date format yyyy-mm-dd
-<p>
-(or) yyyy-mm-ddThh:mm:ss.msZ
-<p>
-eg:2019-04-01 (or) 2019-04-01T13:25:58.515Z. If not provided, calculated as 7 days behind <em>dataTo</em>.
-   </td>
    <td>Optional
+   </td>
+   <td>Date
+   </td>      
+   <td>Takes the date format yyyy-mm-dd
+<br>
+(or) yyyy-mm-ddThh:mm:ss.msZ
+<br>
+For example, 2019-04-01 (or) 2019-04-01T13:25:58.515Z. If not provided, calculated as 7 days behind <em>dataTo</em>.
    </td>
   </tr>
   <tr>
    <td>dateTo
    </td>
+   <td>Optional
+   </td>
+   <td>Date
+   </td>    
    <td>Takes the date format yyyy-mm-dd
-<p>
+<br>
 (or) yyyy-mm-ddThh:mm:ss.msZ
-<p>
-eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 days from <em>dateFrom</em>. If <em>dateFrom</em> is also not provided then set to <strong>Today</strong>.
+<br>
+For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 days from <em>dateFrom</em>. If <em>dateFrom</em> is also not provided then set to <strong>Today</strong>.
 <ul>
 
 <li>The <strong>dateTo</strong> or <strong>dateFrom</strong> parameter accepts the YYYY-MM-DD date format. The time format is considered as a GMT zone in the API endpoint via Sessions API.
@@ -208,20 +234,25 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
 </li>
 </ul>
    </td>
-   <td>Optional
-   </td>
   </tr>
   <tr>
    <td>tags
    </td>
-   <td>Meta tags to filter the conversations.
-   </td>
    <td>Optional
+   </td>
+   <td>Object
+   </td>    
+   <td>Meta tags to filter the conversations.
    </td>
   </tr>
   <tr>
    <td>sessionType
-<p>
+   </td>
+   <td>Optional
+   </td>
+   <td>String
+   </td>    
+<br>
 (introduced in v8.0)
    </td>
    <td>Type to filter the conversations – can be:
@@ -233,27 +264,28 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
 </li>
 </ul>
    </td>
-   <td>Optional
-   </td>
   </tr>
   <tr>
    <td>sessionId
-<p>
-(introduced in v10.1.3)
-   </td>
-   <td>An array of session IDs to filter the conversations. It can have a maximum of 50 session IDs. (Duplicate session IDs are ignored, but they are counted.)
-<p>
-<strong>Note</strong>: If you use ‘sessionId’ in the Body, other parameters/filters are ignored.
    </td>
    <td>Optional
    </td>
+   </td>
+   <td>
+   </td>      
+<br>
+(introduced in v10.1.3)
+   </td>
+   <td>An array of session IDs to filter the conversations. It can have a maximum of 50 session IDs. (Duplicate session IDs are ignored, but they are counted.)
+<br>
+<strong>Note</strong>: If you use ‘sessionId’ in the Body, other parameters/filters are ignored.
+  </td>
   </tr>
 </table>
 
-
 !!!Note
+    
     The duration between _dateTo_ and _dateFrom_ should be less than 7 days, else an error will be thrown.
-
 
 ## Sample Response
 
@@ -291,7 +323,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
      "noOfTasksExecuted": 0
    }
   ]
-]
+}
 ```
 
 **For _selfService_ sessions**
@@ -356,9 +388,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
 }
 ```
 
-
 **For _agent_ sessions**
-
 
 
 ```
@@ -390,8 +420,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
 }
 ```
 
-
-**For one or more session Ids
+**For one or more session Ids**
 
 ```json
 {
@@ -399,10 +428,10 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
     "moreAvailable": false,
     "sessions": [
         {
-            "sessionId": "6465cf6e4769ed4e822b82a1",
-            "botId": "st-dc600cf5-b1c5-581e-a2c3-eb81fe39c927",
+            "sessionId": "6465cf6e4769ed4e822bxxxx",
+            "botId": "st-dc600cf5-b1c5-581e-a2c3-eb81fe39xxxx",
             "channel": "rtm",
-            "userId": "u-8c4ca335-3152-5622-9cbb-51c6daf6c12f",
+            "userId": "u-8c4ca335-3152-5622-9cbb-51c6daf6xxxx",
             "start_time": "2023-05-18T07:10:38.695Z",
             "end_time": "2023-05-18T07:10:39.201Z",
             "session_lang": [
@@ -421,10 +450,60 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
         }
     ],
     "invalidSessions": [
-        "6465cf6e47Q9ed4e822b82a1"
+        "6465cf6e47Q9ed4e822bxxxx"
     ]
 }
 
+```
+
+**For specific external Call Ids**
+
+```
+{
+    "total": 1,
+    "moreAvailable": false,
+    "sessions": [
+        {
+            "sessionId": "67d97c8fd495b147d9c3xxxx",
+            "botId": "st-89cf14ef-145e-5263-994e-5d757325xxxx",
+            "channel": "korevg",
+            "userId": "u-c3c0b243-becc-5cce-a845-f681a62dxxxx",
+            "start_time": "2025-03-18T14:00:47.505Z",
+            "end_time": "2025-03-18T14:01:37.518Z",
+            "session_lang": [
+                "en"
+            ],
+            "sessionType": "interactive",
+            "isDeveloper": false,
+            "sessionStatus": "closed",
+            "tags": {
+                "userTags": [],
+                "sessionTags": [
+                    {
+                        "value": "1",
+                        "name": "welcomeMessageTwilio"
+                    },
+                    {
+                        "value": "+1123456789",
+                        "name": "callerNumber"
+                    },
+                    {
+                        "value": "1",
+                        "name": "voiceAgentTransferStart"
+                    },
+                    {
+                        "value": "1",
+                        "name": "audioCodesCallDisconnect"
+                    }
+                ],
+                "altText": []
+            },
+            "noOfMessagesExchanged": 4,
+            "noOfTasksExecuted": 1,
+            "containmentType": "agent"
+        },
+    ]
+}
 ```
 
 ## Response Body Parameters
@@ -434,76 +513,100 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
   <tr>
    <td><strong>PARAMETER</strong>
    </td>
+   <td><strong>TYPE</strong>
+   </td>   
    <td><strong>DESCRIPTION</strong>
    </td>
   </tr>
   <tr>
    <td>total
    </td>
+   <td>Number
+   </td>    
    <td>The total number of records identified as per the API request parameters. The response will include a maximum of X records. If more than X records are identified, then the ‘moreAvailable’ field in the response will have the value as ‘True’.
-<p>
+<br>
 It is recommended to programmatically iterate the request by dynamically updating the values of the ‘skip’ and ‘limit’ parameters in the request.
    </td>
   </tr>
   <tr>
    <td>moreAvailable
    </td>
+   <td>Boolean
+   </td>    
    <td>Indicates if the API has returned all the records or if more are available, based on the pagination criteria.
-<p>
+<br>
 <strong>True</strong> if more records are available. <strong>False</strong> if there are no more records to be retrieved.
    </td>
   </tr>
   <tr>
    <td>sessions
    </td>
+   <td>Object
+   </td>    
    <td>Contains complete information about the session.
    </td>
   </tr>
   <tr>
    <td>sessions.sessionId
    </td>
+   <td>String
+   </td>    
    <td>The unique identifier for the session record.
    </td>
   </tr>
   <tr>
    <td>sessions.botId
    </td>
+   <td>String
+   </td>    
    <td>Bot ID or Stream ID.
    </td>
   </tr>
   <tr>
    <td>sessions.channel
    </td>
+   <td>String
+   </td>    
    <td>The channel in which the end user is having the conversation: sms, email, rtm, slack, skype, twitter, msteams, api, kore, facebook, or skypeforbusiness.
    </td>
   </tr>
   <tr>
    <td>sessions.userId
    </td>
+   <td>String
+   </td>    
    <td>The user Id of the end user who is having a conversation with the bot.
    </td>
   </tr>
   <tr>
    <td>sessions.start_time
    </td>
+   <td>Date
+   </td>    
    <td>The start time of the session. (ISO Date format YYYY-MM-DDThh:mm:ss.mmmZ)
    </td>
   </tr>
   <tr>
    <td>sessions.end_time
    </td>
+   <td>Date
+   </td>    
    <td>The end time of the session. (ISO Date format YYYY-MM-DDThh:mm:ss.mmmZ)
    </td>
   </tr>
   <tr>
    <td>sessions.session_lang
    </td>
+   <td>Array
+   </td>    
    <td>All the languages in which the conversation happened during the session.
    </td>
   </tr>
   <tr>
    <td>sessions.sessionType
    </td>
+   <td>String
+   </td>    
    <td>The type to filter the conversations:
 <ul>
 
@@ -517,78 +620,104 @@ It is recommended to programmatically iterate the request by dynamically updatin
   <tr>
    <td>sessions.containmentType
    </td>
+   <td>String
+   </td>    
    <td>Used to filter the results based on the type of the session: selfservice, dropOff, or agent.
    </td>
   </tr>
   <tr>
    <td>sessions.isDeveloper
    </td>
+   <td>Boolean
+   </td>    
    <td>Informs whether the session was initiated by a developer; 1 for Yes, 0 for No.
    </td>
   </tr>
   <tr>
    <td>sessions.sessionStatus
    </td>
+   <td>String
+   </td>    
    <td>The status of the session – active or closed.
    </td>
   </tr>
   <tr>
    <td>sessions.tags
    </td>
+   <td>Object
+   </td>    
    <td>Meta tags to filter the sessions.
    </td>
   </tr>
   <tr>
    <td>sessions.tags.userTags
    </td>
+   <td>Array
+   </td>    
    <td>User tags object; custom tags added to the user’s profile information.
    </td>
   </tr>
   <tr>
    <td>sessions.tags.userTags.value
    </td>
+   <td>Dynamic Field (Mixed Type)
+   </td>    
    <td>Tag’s value.
    </td>
   </tr>
   <tr>
    <td>sessions.tags.userTags.name
    </td>
+   <td>String
+   </td>   
    <td>Tag’s name.
    </td>
   </tr>
   <tr>
    <td>sessions.tags.sessionTags
    </td>
+   <td>Array
+   </td>   
    <td>Session tags object; custom tags added to the conversation session.
    </td>
   </tr>
   <tr>
    <td>sessions.tags.sessionTags.value
    </td>
+   <td>Dynamic Field (Mixed Type)
+   </td>   
    <td>Tag’s value.
    </td>
   </tr>
   <tr>
    <td>sessions.tags.sessionTags.name
    </td>
+   <td>String
+   </td>   
    <td>Tag’s name.
    </td>
   </tr>
   <tr>
    <td>sessions.noOfMessagesExchanged
    </td>
+   <td>Number
+   </td>   
    <td>The number of messages exchanged in the session.
    </td>
   </tr>
   <tr>
    <td>sessions.noOfTasksExecuted
    </td>
+   <td>Number
+   </td>   
    <td>The number of tasks executed in the session.
    </td>
   </tr>
   <tr>
    <td>invalidSessions
    </td>
+   <td>Array
+   </td>   
    <td>An array listing session IDs that were not found.
    </td>
   </tr>

@@ -1,6 +1,6 @@
 # Alert Task – WebHook API Request
 
-In this article, we will see how to configure an API Request for a WebHook service Alert Task. You can learn more about Alert Tasks <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>.
+In this article, we will see how to configure an API Request for a WebHook service Alert Task. [Alert task](../use-cases/alert-tasks.md).
 
 For an Alert task with the **Connection Type** specified as **Webhook**, you will need to define:
 
@@ -63,7 +63,7 @@ For example, in the following **Response Sample**, you may only want to expose t
          "24x24":"https://koreteam.atlassian.net/secure/useravatar?size=small&ownerId=john.doe&avatarId=11801",
          "48x48":"https://koreteam.atlassian.net/secure/useravatar?ownerId=john.doe&avatarId=11801"
       },
-      "emailAddress":"john.doe@kore.com",
+      "emailAddress":"john.doe@example.com",
       "key":"john.doe",
       "name":"john.doe",
       "self":"https://koreteam.atlassian.net/rest/api/2/user?username=john.doe"

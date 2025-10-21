@@ -2,7 +2,7 @@
 
 This API enables users to import configurations, datasets, or updates into an existing tool, allowing modifications without creating a new one. It ensures seamless integration by updating the tool with the provided tool data, flow data, and environment variables files.
 
-After triggering the import, the response returns a <code>dockStatusId</code>. Use this ID to call the [Get Dock Status API](../../apis-list/get-dock-status.md){:target="_blank"} and verify the status of the tool import process.
+After triggering the import, the response returns a <code>dockStatusId</code>. Use this ID to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify the status of the tool import process.
 
 <table>
   <tr>
@@ -31,7 +31,7 @@ After triggering the import, the response returns a <code>dockStatusId</code>. U
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../../overview.md#how-to-find-the-api-key){:target="_blank"}.
+**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Query Parameters
 
@@ -49,7 +49,7 @@ After triggering the import, the response returns a <code>dockStatusId</code>. U
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, https://agent-platform.kore.ai</td>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code></td>
    <td>String
    </td>
    <td>Required
@@ -71,7 +71,7 @@ After triggering the import, the response returns a <code>dockStatusId</code>. U
 ## Sample Request
 
 ```js
-curl --location 'https://agent-platform.kore.ai/api/public/tools/a-fbxxxxxf4-20x5-58xb-8b94-00xxxxxxxx5/import' \
+curl --location 'https://{host}/api/public/tools/a-fbxxxxxf4-20x5-58xb-8b94-00xxxxxxxx5/import' \
 --header 'x-api-key: kg-90xxxxx5-9xxe-5xxf-9xx7-9f4xxxxxxxx4-55xxxxx4-axx9-4xx2-axx2-fbcxxxxxxxxa' \
 --header 'Content-Type: application/json' \
 --data '{

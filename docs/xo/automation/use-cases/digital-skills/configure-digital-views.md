@@ -4,11 +4,11 @@ In this help document, we will explore how a user can view his/her account detai
 
 We will also see how the Panel can be hosted on Web/Mobile Client using the Widget SDK.
 
-For details on what Digital Views are and how it is implemented on the XO Platform, click [here](../digital-views/){:target="_blank"}.
+For details on what Digital Views are and how it is implemented on the XO Platform, click [here](digital-views.md){:target="_blank"}.
 
 ## Illustration with an Example
 
-Consider a Banking Bot trying to address the following scenarios:
+Consider a Banking App trying to address the following scenarios:
 
 <video src="../../images/bank-bot.mp4" controls="controls" style="max-width: 730px;">
     </video>
@@ -17,9 +17,9 @@ This document gives a detailed step-by-step approach to achieving all the above-
 
 ## Prerequisites
 
-* Bot building knowledge
-* A [Banking Bot](../../../../how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant){:target="_blank"} with a **Get Balance** dialog as mentioned below.
-* [Get Balance](../../../../how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/){:target="_blank"} – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
+* App building knowledge
+* A Banking App with a **Get Balance** dialog as mentioned below.
+* Get Balance – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
     
     <img src="../../images/get-balance-dialog-task.png" alt="get balance" title="get balance" style="border: 1px solid gray; zoom:75%;">
     
@@ -46,7 +46,7 @@ var message = {
         {
             "title": "Account View",
             "sub_title": output,
-            "icon": "https://kore.ai/wp-content/uploads/banking-home.png",
+            "icon": "https://kore.ai/uploads/banking-home.png",
         }
     ]
 };
@@ -65,11 +65,11 @@ We will be creating two Widgets to trigger a Dialog Task.
 
 First, let us see how to configure a Widget to display balance from the current account of the user with the steps below:
 
-1. Navigate to **Virtual Assistant > Automation AI > Digital Skills > Digital Views**.
+1. Navigate to **Automation AI > Digital Skills > Digital Views**.
 2. Click the **Create Widget** button.
 3. Give a Widget Name and a Display Name.
 4. Set the **Source**, we are triggering Dialog Task, hence select _Dialog Task_.
-    * **Select Dialog Task** as _Get Balance_, as per our use case
+    * **Select Dialog Task** as _Get Balance_, as per our use case.
     * In the **Entity Assignment**, set the following entities (you can select from the drop box that appears as you type) as per the Dialog Task requirement:
 
         * **AccountType** to _current;_
@@ -122,7 +122,7 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
 
     <img src="../../images/new-widget-json.png" alt="New widget - JSON" title="New widget - JSON" style="border: 1px solid gray; zoom:75%;">
 
-3. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, [refer here](../../../../sdk/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
+3. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, [refer here](../../../sdk/widget-sdk-message-formatting-and-templates.md){:target="_blank"}.
 
     ```
     var message =
@@ -164,7 +164,7 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
 
 ## Publish
 
-To publish the Bot first enable channels:
+To publish the App first enable channels:
 
 1. From left navigation menu, select **Channel** for publishing. For our use case we will select both Web/Mobile Client and Widget SDK channels.
 2. Select the channels and from **Configurations** tab, make a note of the **Bot Name**, **Bot Id**, **Client Id** and **Client Secret**.
@@ -173,7 +173,7 @@ To publish the Bot first enable channels:
 
 ## Hosting
 
-We will be hosting the Panels in the web/mobile client. Click [here](/docs/xo/app-settings/dev-tools/kore-ai-web-sdk/){:target="_blank"} for more details on the Widget SDK usage.
+We will be hosting the Panels in the web/mobile client. Click [here](../../../app-settings/dev-tools/kore-ai-web-sdk.md){:target="_blank"} for more details on the Widget SDK usage.
 
 1. Download the Kore.ai Widget SDK, go to this [link](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}, and then click **Download**.
 2. Extract all files to the _…/SDKApp/sdk_ folder.

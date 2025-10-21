@@ -1,6 +1,6 @@
 # Freshdesk Connector 
 
-Freshdesk is a customer support and helpdesk platform designed to help organizations efficiently manage customer queries, track tickets, and deliver exceptional support experiences. The Search AI connector for Freshdesk supports the ingestion and indexing of **Tickets. **By using the Search AI connector, you can enable advanced search functionalities that help your team quickly find relevant ticket information, improving response times and overall efficiency.
+Freshdesk is a customer support and helpdesk platform designed to help organizations efficiently manage customer queries, track tickets, and deliver exceptional support experiences. The Search AI connector for Freshdesk supports the ingestion and indexing of **Tickets**. By using the Search AI connector, you can enable advanced search functionalities that help your team quickly find relevant ticket information, improving response times and overall efficiency.
 
 <span style="text-decoration:underline;">Specifications</span>
 
@@ -50,7 +50,7 @@ Search AI uses Freshdesk APIs to access the content. Hence, the API key is requi
  
 ## Configure Freshdesk Connector in Search AI
 
-Go to the **Authorization page** of the Freshdesk Connector, provide the following configuration fields, and click **Connect**. 
+Go to the **Authorization page** of the Freshdesk Connector, enter the following configuration fields, and click **Connect**. 
 
 * **Name**- Unique name for the connector.
 * **Host URL**- Provide the host URL.

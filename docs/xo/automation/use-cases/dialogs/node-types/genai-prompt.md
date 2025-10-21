@@ -1,8 +1,6 @@
 # Prompt Node
 
-
-The Prompt Node lets bot developers leverage the full potential of LLM and Generative AI models to quickly build their own prompts. Developers can select a specific AI model, tweak its settings, and preview the response for the prompt. The node allows developers to creatively leverage LLMs by defining the prompt using conversation context and the response from the LLMs in defining the subsequent conversation flow.
-
+The Prompt Node lets app developers leverage the full potential of LLM and Generative AI models to quickly build their own prompts. Developers can select a specific AI model, tweak its settings, and preview the response for the prompt. The node allows developers to creatively leverage LLMs by defining the prompt using conversation context and the response from the LLMs in defining the subsequent conversation flow.
 
 ## Node Behavior
 
@@ -12,18 +10,18 @@ You can work with this node like with any other node within Dialog Tasks and can
 
 1. On reaching the Prompt Node, the platform parses any variable used in the prompt and constructs the request using the Prompt and the Advanced Settings.
 2. An API call is made to the model with the request.
-3. The [response is stored in the context object](#about-responses) as part of the dialog context and can be used to define the transitions or any other part of the bot configuration.
-4. The platform exits from the Prompt Node node when a successful response is received, or the defined timeout condition is met.
+3. The [response is stored in the context object](#about-responses) as part of the dialog context and can be used to define the transitions or any other part of the app configuration.
+4. The platform exits from the Prompt Node when a successful response is received, or the defined timeout condition is met.
 
 
 ## Enable the Node
 
-By default, the feature/node is disabled. To enable the feature, see [Dynamic Conversations Features](../../../../generative-ai-tools/dynamic-conversations-features.md).
+By default, the feature/node is disabled. To enable the feature, see [GenAI Features](../../../../generative-ai-tools/genai-features.md).
 
 ## Add the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the Prompt Node.
-2. Click **Gen AI** and then click **Prompt Node**. Alternatively, you can drag and drop the **Prompt Node** node to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+2. Click **Gen AI** and then click **Prompt Node**. Alternatively, you can drag and drop the **Prompt Node** node to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../using-the-dialog-builder-tool.md){:target="_blank"}.
 3. The Prompt Node window is displayed with the **Component Properties** tab selected by default.
 
     <img src="../images/canvas.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
@@ -66,13 +64,13 @@ On the **Instance Properties** tab, you can configure the instance-specific fiel
 
 #### Custom Tags
 
-In this section, you can add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can add tags for the following:
+In this section, you can add Custom Meta Tags to the conversation flow to profile AI Agent-user conversations and derive business-critical insights from usage and execution metrics. You can add tags for the following:
 
 * **Message**: Define custom tags to be added to the current message in the conversation.
 * **User**: Define custom tags to be added to the user’s profile information.
 * **Session**: Define custom tags to be added to the current conversation session.
 
-For more information on custom tags, see [Custom Meta Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+For more information on custom tags, see [Custom Meta Tags](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
 
 ### Connections Properties
@@ -81,7 +79,7 @@ For more information on custom tags, see [Custom Meta Tags](../../../../../analy
 
     If the node is at the bottom in the sequence, then only the connection property is visible.
 
-On the **Connections** tab, you can set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} for a detailed setup guide.
+On the **Connections** tab, you can set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../node-connections/nodes-conditions.md){:target="_blank"} for a detailed setup guide.
 
 <img src="../images/genai-propmpt(2).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -114,7 +112,7 @@ The responses are captured in a specific format, as shown below.
 "context":{
 "GenAIPrompt": {
     "NodeName": {
-      "id": "cmpl-7UbzLTumD9ALpfa1mcpf15dK3RnWM",
+      "id": "cmpl-7UbzLTumD9ALpfa1mcpf15dK3xxxx",
       "object": "text_completion",
       "created": 1687530223,
       "model": "text-davinci-003",

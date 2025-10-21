@@ -1,14 +1,14 @@
-# Multi-bot Agent AI Integration with Genesys
+# Multi-app Agent AI Integration with Genesys
 
-Multi-bot Integration of Agent AI in Genesys is a significant enhancement to our solution. Previously limited to a single bot and a department-specific approach, the solution has now been upgraded to support multiple bots and a queue-based functionality. This enhancement enables Genesys Cloud CX to offer a more flexible and scalable solution for businesses seeking to leverage AI to improve agent efficiency and customer satisfaction across multiple departments.
+Multi-app Integration of Agent AI in Genesys is a significant enhancement to our solution. Previously limited to a single app and a department-specific approach, the solution has now been upgraded to support multiple bots and a queue-based functionality. This enhancement enables Genesys Cloud CX to offer a more flexible and scalable solution for businesses seeking to leverage AI to improve agent efficiency and customer satisfaction across multiple departments.
 
-This document provides detailed, step-by-step instructions for setting up the multi-bot integration of the AgentAssist widget in the Genesys environment.
+This document provides detailed, step-by-step instructions for setting up the multi-app integration of the Agent AI widget in the Genesys environment.
 
-* [Step 1: Create and configure a Data Table on the XO Platform](#step-1-create-and-configure-a-data-table-on-the-xo-platform)
+* [Step 1: Create and configure a Data Table on the XO Platform](#step-1-create-and-configure-a-data-table-on-ai-for-service)
 
 * [Step 2: Get Genesys Oauth ID](#step-2-get-genesys-oauth-id)
 
-* [Step 3: Create an Interaction Widget in Genesys for AgentAssist](#step-3-create-an-interaction-widget-in-genesys-for-agentassist)
+* [Step 3: Create an Interaction Widget in Genesys for Agent AI](#step-3-create-an-interaction-widget-in-genesys-for-agent-ai)
 
 * [Step 4: Provide Interaction Widget access to agents](#step-4-provide-interaction-widget-access-to-agents)
 
@@ -19,34 +19,34 @@ This document provides detailed, step-by-step instructions for setting up the mu
 ## **Prerequisites**
 
 1. Genesys Cloud account with Admin rights.
-2. [Kore.ai](https://agentassist.kore.ai/) Agent AI instance.
+2. [Kore.ai](https://platform.kore.ai/){:target="_blank"} Agent AI instance.
 3. Familiarity with creating a Group in Genesys.
 
-## **Step 1: Create and configure a Data Table on the XO Platform**
+## **Step 1: Create and configure a Data Table on Ai for Service**
 
-Kore.ai matches the third-party queue name with the "QueueIdentifier" credential name in its bot credentials to render the appropriate bot.
+Kore.ai matches the third-party queue name with the "QueueIdentifier" credential name in its app credentials to render the appropriate bot.
 
-Kore.ai uses Data Tables to store bot credentials, including:
+Kore.ai uses Data Tables to store app credentials, including:
 
-* **BotId**: A unique identifier assigned to a bot.
+* **BotId**: A unique identifier assigned to an app.
 * **ClientId**: An identifier provided to a client application.
 * **ClientSecret**: A secret key or password associated with the ClientId.
-* **AgentAssistWidgetURL**: URL that points to the AgentAssist widget.
+* **Agent AIWidgetURL**: URL that points to the Agent AI widget.
 * **AudiohookEnabled**: A setting or flag indicating whether audio processing is enabled for the bot.
-* **QueueIdentifier**: Third-party identifier (company/department) name. It’s a unique identifier to fetch bot details at run time.
+* **QueueIdentifier**: Third-party identifier (company/department) name. It’s a unique identifier to fetch the app details at run time.
 
-Bot credentials are fetched based on Genesys desktop queue names. If the Genesys queue name is of the “&lt;QUEUEIDENTIFIER>&lt;QDELIMITER>XXXXX” format, for example “ALPHAINC_CUSTOMERSERVICE_16092024,” then:
+App credentials are fetched based on Genesys desktop queue names. If the Genesys queue name is of the “&lt;QUEUEIDENTIFIER>&lt;QDELIMITER>XXXXX” format, for example “ALPHAINC_CUSTOMERSERVICE_16092024,” then:
 
 * QueueIdentifier = **ALPHAINC** and qDelimiter = “**_**”.
 * Update the QueueIdentifier in the Kore datatable.
-* Update the qDelimiter in the “[Create an Interaction Widget in Genesys for AgentAssist](#step-3-create-an-interaction-widget-in-genesys-for-agentassist)” section.
+* Update the qDelimiter in the “[Create an Interaction Widget in Genesys for Agent AI](#step-3-create-an-interaction-widget-in-genesys-for-agent-ai)” section.
 
 ### Creating a New Data Table
 
-Create a Data Table to store bot credentials on the XO Platform.
+Create a Data Table to store app credentials on the XO Platform.
 
-1. Sign in to Kore.ai [botbuilder](http://bots.kore.ai/botbuilder).
-2. Click **Data** > **Data Tables**.
+1. Sign in to Kore.ai [appbuilder](https://platform.kore.ai){:target="_blank"}. 
+2. Click **Data** > **Data Tables**. 
 3. Click **New Table**.  
 <img src="../images/data-table-new-table-1.png" alt="new-table" title="new-table" style="border: 1px solid gray; zoom:80%;">
 
@@ -63,7 +63,7 @@ Create a Data Table to store bot credentials on the XO Platform.
 
       4.3.1. AudiohookEnabled
 
-      4.3.2. AgentAssistWidgetURL
+      4.3.2. Agent AIWidgetURL
         
       4.3.3. ClientSecret
         
@@ -75,7 +75,7 @@ Create a Data Table to store bot credentials on the XO Platform.
     
     4.4. **Indexes** for the table.
     
-    4.5. **Bot Assignments** to let virtual assistants access data in this table.
+    4.5. **Bot Assignments** to let AI Agent access data in this table.
     
     4.6. **App Assignments** to let apps access data in this table.
     
@@ -89,7 +89,7 @@ Create a Data Table to store bot credentials on the XO Platform.
         You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page:  
      <img src="../images/new-app-4.png" alt="new-app" title="new-app" style="border: 1px solid gray; zoom:80%;">
 
-    4.7. **Process Assignments** to let a process app access data in this table.
+    4.7. **Process Assignments** to let a process app access data in this table.  
 5. Click **Create** to create the new data table.  
 <img src="../images/creating-new-data-table-5.png" alt="creating-new-data-table" title="creating-new-data-table" style="border: 1px solid gray; zoom:80%;">
 
@@ -97,14 +97,14 @@ Create a Data Table to store bot credentials on the XO Platform.
 
 Set up necessary permissions and app assignments and insert bot-specific data into the Data Table.
 
-1. Sign in to Kore.ai [botbuilder](http://bots.kore.ai/botbuilder).
+1. Sign in to Kore.ai [botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Click **Data** > **Apps**.
 3. Select the **App** with write access to the Data Table where you want to add information.  
 <img src="../images/copying-client-id-and-secret-6.png" alt="copying-client-id-and-secret" title="copying-client-id-and-secret" style="border: 1px solid gray; zoom:80%;">
 
 4. Copy **Client ID** and **Client Secret** of the App.
-5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token).
-6. Insert data into the Data Table by following this [doc](https://developer.kore.ai/docs/bots/api-guide/data-insert-api/). Use the JWT Token created in the previous step.
+5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
+6. Insert data into the Data Table by following this [doc](./../../../apis/automation/data-insert.md){:target="_blank"}. Use the JWT Token created in the previous step.
 
     **API Body Payload Structure:**
 
@@ -116,7 +116,7 @@ Set up necessary permissions and app assignments and insert bot-specific data in
             "ClientId": <Kore ClientId>,
             "ClientSecret": <Kore ClientSecret>,
             "AudiohookEnabled": "true" / "false",
-            "AgentAssistWidgetURL": <Kore AgentAssist Widget URL>
+            "Agent AIWidgetURL": <Kore Agent AI Widget URL>
         }
     }
     ```  
@@ -141,7 +141,7 @@ A Genesys OAuth ID is required to complete the URL formation for the Genesys int
 5. Select **Token Implicit Grant (Browser)** in the **Grant Types** section.  
 <img src="../images/client-details-section-10.png" alt="client-details-section" title="client-details-section" style="border: 1px solid gray; zoom:80%;">
 
-6. Add [https://agentassist.kore.ai/koreaiaa-genesys/](https://agentassist.kore.ai/koreaiaa-genesys/) in the _Authorized redirect URIs (one per line)_ section. Replace “agentassist.kore.ai” with the domain where your AgentAssist is hosted.
+6. Add [https://Agent AI.kore.ai/koreaiaa-genesys/](https://Agent AI.kore.ai/koreaiaa-genesys/) in the _Authorized redirect URIs (one per line)_ section. Replace “Agent AI.kore.ai” with the domain where your Agent AI is hosted.
 7. Add the following list of scopes in the **Scope** section:
 
     * conversations
@@ -159,11 +159,11 @@ A Genesys OAuth ID is required to complete the URL formation for the Genesys int
 
     <img src="../images/redirect-uri-and-scope-11.png" alt="redirect-uri-and-scope" title="redirect-uri-and-scope" style="border: 1px solid gray; zoom:80%;">
 
-After saving the configuration, you will get the **Client Id** of the created OAuth client. Copy the ID and have it available for [Step 3](#step-3-create-an-interaction-widget-in-genesys-for-agentassist).
+After saving the configuration, you will get the **Client Id** of the created OAuth client. Copy the ID and have it available for [Step 3](#step-3-create-an-interaction-widget-in-genesys-for-agent-ai).
 
-## **Step 3: Create an Interaction Widget in Genesys for AgentAssist**
+## **Step 3: Create an Interaction Widget in Genesys for Agent AI**
 
-Create a new Interaction Widget. This widget is hosted in the Genesys agent desktop and provides the AgentAssist solution features to agents.
+Create a new Interaction Widget. This widget is hosted in the Genesys agent desktop and provides the Agent AI solution features to agents.
 
 **Steps to create an Interaction Widget**
 
@@ -171,7 +171,7 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 2. Click **Admin** > **Integrations**.  
 <img src="../images/genesys-admin-integrations-12.png" alt="genesys-admin-integrations" title="genesys-admin-integrations" style="border: 1px solid gray; zoom:80%;">
 
-3. If you have not created an Interaction Widget for AgentAssist, install a new Interaction Widget by clicking the **Integrations** tab on the right side of the page.  
+3. If you have not created an Interaction Widget for Agent AI, install a new Interaction Widget by clicking the **Integrations** tab on the right side of the page.  
 <img src="../images/install-an-interaction-widget-13.png" alt="install-an-interaction-widget" title="install-an-interaction-widget" style="border: 1px solid gray; zoom:80%;">   
 <img src="../images/new-interaction-widget-14.png" alt="new-interaction-widget" title="new-interaction-widget" style="border: 1px solid gray; zoom:80%;">
  
@@ -184,14 +184,14 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 <img src="../images/interaction-widget-configuration-tab-16.png" alt="interaction-widget-configuration-tab" title="interaction-widget-configuration-tab" style="border: 1px solid gray; zoom:80%;">
 
 7. In the **Application URL** field, enter the following structure:  
-<code>https://agentassist.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=<strong>&lt;genesys-oauth-Id>&multibot=true&x_metadata=&lt;?x=%7B%22datatable%22%xxxxx></strong></code>.  
-Replace “agentassist.kore.ai” with the domain where your AgentAssist is hosted. The “<code>x_metadata</code>” value equals the url<code>-encoded string</code> of JSON object.  
+<code>https://Agent AI.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=<strong>&lt;genesys-oauth-Id>&multibot=true&x_metadata=&lt;?x=%7B%22datatable%22%xxxxx></strong></code>.  
+Replace “Agent AI.kore.ai” with the domain where your Agent AI is hosted. The “<code>x_metadata</code>” value equals the url<code>-encoded string</code> of JSON object.  
 
     7.1. For the **oauthId** value, use the **OAuth ID** from [Step 2](#step-2-get-genesys-oauth-id).
 
     7.2. For the <strong>x_metadata</strong> value:
 
-    7.2.1. Sign in to [Kore botbuilder](https://bots.kore.ai/botbuilder/login).
+    7.2.1. Sign in to [Kore botbuilder](https://bots.kore.ai/botbuilder/login){:target="_blank"}.
     
     7.2.2. Click <strong>Data</strong> > <strong>Data Tables,</strong> and copy the <strong>Data Table</strong> name:  
         <img src="../images/copying-data-table-name-17.png" alt="copying-data-table-name" title="copying-data-table-name" style="border: 1px solid gray; zoom:80%;">
@@ -202,7 +202,7 @@ Replace “agentassist.kore.ai” with the domain where your AgentAssist is host
     7.2.4. Copy the <strong>Client ID</strong> and <strong>Client Secret</strong> values.  
         <img src="../images/copying-client-id-and-secret-values-19.png" alt="copying-client-id-and-secret-values" title="copying-client-id-and-secret-values" style="border: 1px solid gray; zoom:80%;">
     
-    7.2.5. Create a JWT Token using the <strong>Client ID</strong> and <strong>Client Secret</strong> by following this [doc](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token).
+    7.2.5. Create a JWT Token using the <strong>Client ID</strong> and <strong>Client Secret</strong> by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
 
     7.2.6. Generate a JSON object with the specified structure and then convert it into a url-encoded string:
 
@@ -241,11 +241,11 @@ To view the Interaction Widget, agents must have the following accesses:
 
 An Interaction Widget uses Group Membership to determine who can view it on the agent desktop.
 
-1. Use an existing Group, if your agents are already part of it. Otherwise, create a new Group for AgentAssist permission.
+1. Use an existing Group, if your agents are already part of it. Otherwise, create a new Group for Agent AI permission.
 2. Name the Group as **KoreAA-Agents** or similar to distinguish it.
-3. Add any agent to allow them to use the AgentAssist functionality. You can utilize more than one Group, if required.
-4. Go back to the **Integrations** section and open the **Interaction Widget** created in [Step 2](https://docs.kore.ai/agentassist/uncategorized/agentassist-integration-in-genesys-manual-steps/#Step_2_Interaction_Widget). 
-5. On the **Configuration** tab, add access using the Group you identified or created for AgentAssist in the Group Filtering option.  
+3. Add any agent to allow them to use the Agent AI functionality. You can utilize more than one Group, if required.
+4. Go back to the **Integrations** section and open the **Interaction Widget** created in [this doc](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md/#create-an-interaction-widget-in-genesys-for-agent-ai){:target="_blank"}. 
+5. On the **Configuration** tab, add access using the Group you identified or created for Agent AI in the Group Filtering option.  
 
 You may also utilize Queue Filtering (optional).  
 <img src="../images/group-filtering-21.png" alt="group-filtering" title="group-filtering" style="border: 1px solid gray; zoom:80%;">
@@ -277,7 +277,7 @@ The final step is to install Audiohook for voice streaming, if using Kore-manage
 2. Go to **Admin** > **Integrations** > **Integrations**.
 3. Enter “audiohook” in the search bar.  
 <img src="../images/search-audiohook-23.png" alt="search-audiohook" title="search-audiohook" style="border: 1px solid gray; zoom:80%;">  
-Audiohook integration requires specific configuration values to support AgentAssist configuration.
+Audiohook integration requires specific configuration values to support Agent AI configuration.
 
 4. Install a new audiohook app by clicking the **Integrations** button on the top-right corner.  
 <img src="../images/install-new-audiohook-24.png" alt="install-new-audiohook" title="install-new-audiohook" style="border: 1px solid gray; zoom:80%;">  
@@ -289,21 +289,21 @@ Audiohook integration requires specific configuration values to support AgentAss
     5.1. **Channel** value should be both.
 
     5.2. The **Connection URI** format should be similar to  
-    wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true), but add “multiBot=true” parameter to it. 
+    wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&Agent AI=true](https://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&Agent AI=true), but add “multiBot=true” parameter to it. 
 
     !!! note
 
-        This configuration can be done for a single bot present in Kore.ai Data Table.
+        This configuration can be done for a single app present in Kore.ai Data Table.
 
-6. Get **sipuri=sip:&lt;sip-string>** from **AgentAssist** > **Voice** channel.  
+6. Get **sipuri=sip:&lt;sip-string>** from **Agent AI** > **Voice** channel.  
 <img src="../images/sip-identifier-27.png" alt="sip-identifier" title="sip-identifier" style="border: 1px solid gray; zoom:80%;">
 
-7. Use the following reference from **AgentAssist.kore.ai**, **Bot Channel** configuration page to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
+7. Use the following reference from **Agent AI**, **Bot Channel** configuration page to fetch **App ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
 <img src="../images/for-token-generation-28.png" alt="for-token-generation" title="for-token-generation" style="border: 1px solid gray; zoom:80%;">
 
-    7.1. Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token) to generate the token (token= &lt;token>.)
+    7.1. Follow the steps of [API Introduction](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} to generate the token (token= &lt;token>.)
 
-8. Add credentials in the **Credentials** tab. Use the **ClientID** and **ClientSecret** of the bot you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
+8. Add credentials in the **Credentials** tab. Use the **ClientID** and **ClientSecret** of the app you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
 <img src="../images/credential-tab-29.png" alt="credential-tab" title="credential-tab" style="border: 1px solid gray; zoom:80%;">
 
 9. Click **Save**.

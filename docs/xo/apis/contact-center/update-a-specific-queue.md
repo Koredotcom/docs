@@ -1,10 +1,12 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Update a Specific Queue
 
 To update a specific queue with the given`streamId` and `queuesId`.
 
 | **Method**       | PUT                                                                           |
 |--------------|-------------------------------------------------------------------------------|
-| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/{id}`        |
+| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/{{queueId}}`        |
 | **Content Type** | `application/json`                                                           |
 | **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | Configuration                                                                 |
@@ -13,14 +15,14 @@ To update a specific queue with the given`streamId` and `queuesId`.
 
 | **Parameter**  | **Description**                                                      | **Type**     |
 |------------|------------------------------------------------------------------|----------|
-| host       | Environment URL, for example, https://platform.kore.ai       | string   |
-| botId      | BotId or StreamId. You can access it from the General Settings page of the bot. | string   |
+| host       | Environment URL, for example, `https://platform.kore.ai`       | string   |
+| streamId      | botId or streamId. You can get it from the App Settings page. | string   |
 | id         | Can be taken from the /queues GET API.                           | string   |
 
 ## Sample Request
 
 ```
-curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{streamId}/queues/qu-57e6188-bd69-41d8-b200-d92e17c4xxxx' \
+curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/{{queueId}}' \
   -H 'accept: application/json' \
   -H 'accountId: 62cd37c6f35860734283xxxx' \
   -H 'Content-Type: application/json' \

@@ -1,15 +1,12 @@
 # Agent Transfer Integrations
 
+Kore.ai’s Agent Transfer allows you to configure the most popular integrations to hand over conversations seamlessly without the need to use BotKit. These agent transfer integrations are hosted by the Platform, and there is no need to host any custom BotKit.
 
-## Introduction
-
-Kore.ai’s Agent Transfer allows you to configure the most popular integrations to hand over conversations seamlessly without the need to use BotKit. These agent transfer integrations are hosted by the Kore.ai XO Platform, and there is no need to host any custom BotKit.
-
-Agent transfer refers to the process of handing over a customer’s conversation from one agent to another within a conversational virtual assistant (VA) platform. This is typically done when the current agent is unable to assist the customer with their issue or request, or if the customer requests to speak with a different agent.
+Agent transfer refers to the process of handing over a customer’s conversation from one agent to another within an AI Agent platform. This is typically done when the current agent is unable to assist the customer with their issue or request, or if the customer requests to speak with a different agent.
 
 **Agent Transfer** integrations are available under the **App Settings > Integration** menu. You can enable any integration by providing the required configurations. You can also enable multiple agent integrations as per your business requirement. For example, if you have a Custom integration, i.e., BotKit, and an integration with Genesys chat. You can make one of them as default and map channels to agent systems. 
 
-You can also find these configurations as part of the Agent Transfer node. The Kore.ai XO platform hands over the conversation to an agent during the dialog execution when the conversation reaches the agent node.
+You can also find these configurations as part of the Agent Transfer node. The Platform hands over the conversation to an agent during the dialog execution when the conversation reaches the agent node.
 
 Agent Transfer node now allows you to define the IVR properties required to hand off the call back to the IVR system. Instead of using entity or message nodes to define the transfer tags, you can now configure them as part of the agent node. This ensures that the agent hand-offs on the IVR channel are tracked appropriately for containment purposes.
 
@@ -33,7 +30,7 @@ The platform supports the following agent transfer integrations.
   <tr>
    <td>Custom
    </td>
-   <td>The BotKit SDK agent provided by the Kore.ai XO Platform.
+   <td>The BotKit SDK agent provided by the AI for Service.
    </td>
    <td><a href="../how-to-configure-agent-transfer/" target="_blank">Learn more</a>
    </td>
@@ -108,11 +105,10 @@ The platform supports the following agent transfer integrations.
 
 ## Limitations
 
-The following limitations apply to all supported agent transfers and the XO Platform integration:
+The following limitations apply to all supported agent transfers and the Platform integration:
 
-* Currently, the attachments are only supported for ServiceNow integration.
-* Sharing end-user details with agents is not directly supported. For example, populating the customer (end-user) information directly on _ServiceNow_ is not supported.
-* There is no in-built provision for customers to end the conversation/chat with the agent.
+* Currently, the attachments are only supported for ServiceNow and Genesys integration.
+* The platform does not provide a built-in option for end-users to end a live agent chat, except when using Salesforce integration.
 
 
 ## Deleting an Agent Transfer Integration
@@ -121,7 +117,7 @@ You can delete an external agent transfer integration that is configured but no 
 
 **Important Notes**:
 
-* When you delete the default Agent Transfer integration for the channels, the XO platform will ask for the confirmation if you wish to use the other configured agent as the default agent system.
+* When you delete the default Agent Transfer integration for the channels, the Platform will ask for the confirmation if you wish to use the other configured agent as the default agent system.
 * If you delete the only Agent Transfer integration that was configured, all configurations are removed from the agent transfer node in all dialog tasks where this agent node is added.
 
 Steps to delete a configured agent transfer integration:
@@ -142,86 +138,54 @@ Steps to delete a configured agent transfer integration:
 ## User-Bot Chat Transcript Link to Live Agents
 
 
-When the platform transfers a user conversation to a live agent, the agent receives a link to view the conversation the user had with the bot before the transfer. This provides context for what the user might expect from the live agent. This link can be accessed 10 times.
+When the platform transfers a user conversation to a live agent, the agent receives a link to view the conversation the user had with the app before the transfer. This provides context for what the user might expect from the live agent. This link can be accessed 10 times.
 
 !!! note
 
     Links generated after the v11.4.1 release can be accessed 10 times.
 
 
+## User-Bot Chat Conversation Summary to Live Agents
 
-## Attachment Sharing with Live Agent
+When the platform transfers a user to a live agent, it sends an AI-generated summary of the user-app conversation directly to the agent window, along with the chat history link. This helps agents quickly understand the conversation context before interacting with the user.
 
-Users can now send files to agents during conversations. This improves communication and helps solve issues faster. This feature is currently available only for ServiceNow agent integration.
-
-The user and agent can share multiple files up to 25 MB each in over 22 file formats. The user and agent can download attachments up to five times within forty-eight hours of sharing.
+By default, the feature is disabled. To enable, go to the dialog task and open the agent transfer node. In the Instance Properties panel, enable the Conversation Summary toggle for that node. Ensure that GenAI - [Conversation Summarization](../../../generative-ai-tools/genai-features.md) feature is enabled.
 
 !!! note
 
-    Currently, this feature is available only with ServiceNow (Tokyo, Utah, and Vancouver) agent integration with the mobile SDK channel. 
+    The Conversation Summary applies to each agent transfer node. If the same Agent Transfer node is used in multiple dialogs, you need to configure the summary individually for each instance.
+
+
+
+
+## Attachment Sharing with Live Agent
+
+Users can now send files to agents during conversations. This enhances communication and facilitates the resolution of issues more efficiently. This feature is currently available only for [ServiceNow](./servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md) and [Genesys](configuring-the-genesys-agent.md) agent integration.
+
+The user and agent can share multiple files, each up to 25 MB in size, in over 22 file formats. The user and agent can download attachments up to five times within forty-eight hours of sharing.
+
+!!! note
+
+    Currently, ServiceNow and Genesys integration supports attachment sharing only through the WebSDK channel.
 
 
 ### Supported File Formats
 
-The VA supports sharing the following file formats.
+The AI Agent supports sharing the following file formats.
 
 
-<table>
-  <tr>
-   <td><strong>Category</strong>
-   </td>
-   <td><strong>File Formats</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Document Formats
-   </td>
-   <td>.pdf, .doc, .docx, .txt, .xml
-   </td>
-  </tr>
-  <tr>
-   <td>Spreadsheet Formats
-   </td>
-   <td>.xls, .xlsx, .csv
-   </td>
-  </tr>
-  <tr>
-   <td>Presentation Formats
-   </td>
-   <td>.ppt, .pptx
-   </td>
-  </tr>
-  <tr>
-   <td>Image Formats
-   </td>
-   <td>.jpg, .jpeg, .png, .gif
-   </td>
-  </tr>
-  <tr>
-   <td>Archive Formats
-   </td>
-   <td>.zip, .rar
-   </td>
-  </tr>
-  <tr>
-   <td>Audio Formats
-   </td>
-   <td>.mp3, .wav
-   </td>
-  </tr>
-  <tr>
-   <td>Video Formats
-   </td>
-   <td>.mp4, .avi
-   </td>
-  </tr>
-  <tr>
-   <td>Web Formats
-   </td>
-   <td>.html, .htm
-   </td>
-  </tr>
-</table>
+
+| Category   | ServiceNow File Formats   | Genesys File Formats     |
+|--------------|---------|------------|
+| Document Formats    | .pdf, .doc, .docx, .txt, .xml    | .pdf, .doc, .docx, .txt |
+| Spreadsheet Formats | .xls, .xlsx, .csv                | .xls, .xlsx, .csv |
+| Presentation Formats| .ppt, .pptx                      | .ppt, .pptx  |
+| Image Formats  | .jpg, .jpeg, .png, .gif  | .jpg, .jpeg, .png, .gif, .bmp, .tif |
+| Archive Formats     | .zip, .rar   | .zip  |
+| Audio Formats       | .mp3, .wav   | NA     |
+| Video Formats       | .mp4, .avi    | NA    |
+| Web Formats         | .html, .htm | .htm, .html  |
+
 
 
 

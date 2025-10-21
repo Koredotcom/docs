@@ -1,10 +1,10 @@
 # Import and Export a Knowledge Graph
 
-You can build a Knowledge Graph in a CSV or JSON file and upload it to a VA. Similarly, you can export the existing Knowledge Graph to CSV or JSON. Exporting a Knowledge Graph helps you edit it in a spreadsheet or import it to another VA.
+You can build a Knowledge Graph in a CSV or JSON file and upload it to an AI Agent. Similarly, you can export the existing Knowledge Graph to CSV or JSON. Exporting a Knowledge Graph helps you edit it in a spreadsheet or import it to another AI Agent.
 
 The allowed limit is a maximum of 50k FAQs spread across a maximum of 20k nodes.
 
-The XO Platform allows you to import any VA with a file size up to 50MB. If you try to import a bot with more than 50MB size, the import process fails.
+The XO Platform allows you to import any AI Agent with a file size up to 50MB. If you try to import an AI Agent with more than 50MB size, the import process fails.
 
 ## Import
 
@@ -15,7 +15,7 @@ The XO Platform allows you to import any VA with a file size up to 50MB. If you 
 
 To import a Knowledge Graph, follow the steps below:
 
-1. To import the KG and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
+1. To import the KG and go to **Automation AI** > **Knowledge AI** > **FAQs**.
 2. In the top right corner, click **more** icon.
 3. Click **Import** option on the respective Knowledge Graph.
     ![alt_text](images/kg-more.png )
@@ -33,13 +33,13 @@ To import a Knowledge Graph, follow the steps below:
 After the import is complete, the success message appears in a dialog box. 
 8. Click **Done**.
 
-The hierarchy is displayed in the Knowledge Graph which you can edit and use to train your VA.
+The hierarchy is displayed in the Knowledge Graph which you can edit and use to train your AI Agent.
 
 ## Export
 
 To export a Knowledge Graph, follow the below steps:
 
-1. To export the KG and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
+1. To export the KG and go to **Automation AI** > **Knowledge AI** > **FAQs**.
 2. In the top right corner, click **more** icon.
      ![alt_text](images/kg-more.png )
 

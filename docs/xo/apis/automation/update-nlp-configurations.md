@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Update NLP Configurations
 
 To update the NLP thresholds and configurations.
@@ -36,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: NLP Configurations
+<li>App Builder: NLP Configurations
 
 <li>Admin Console: Test > NLP Configurations & Train
 </li>
@@ -68,7 +70,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td>The <em>Bot ID</em> or <em>Stream ID</em> that can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <em>Bot ID</em> or <em>Stream ID</em> that can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -157,7 +159,7 @@ The parameters depend on the threshold configuration that needs to be updated. T
 
 #### Machine Learning Engine
 
-This section refers to the configurations related to the Machine Learning engine. For details on the configurations, please click [here](../../../automation/natural-language/training/machine-learning-engine).
+This section refers to the configurations related to the Machine Learning engine. For details on the configurations, please click [here](../../automation/natural-language/training/machine-learning-engine.md).
 
 
 ```json

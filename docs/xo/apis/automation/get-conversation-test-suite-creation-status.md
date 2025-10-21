@@ -1,6 +1,8 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Conversation Test Suite Creation Status API
 
-To get the creation/import request status of the Conversation Test Suite against a unique Import ID and provide the download link for the results file after the test execution is complete. Please refer to [Create (Import) a Test Suite API ](../create-conversation-test-suite) to learn more.
+To get the creation/import request status of the Conversation Test Suite against a unique Import ID and provide the download link for the results file after the test execution is complete. Please refer to [Create (Import) a Test Suite API ](create-conversation-test-suite.md) to learn more.
 
 <table>
   <tr>
@@ -35,7 +37,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Conversation Tests Management
+<li>App Builder: Conversation Tests Management
 
 <li>Admin Console: Conversation Tests Management
 </li>
@@ -69,7 +71,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>StreamID</strong>
    </td>
-   <td>The  <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The  <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>

@@ -112,14 +112,14 @@ To add additional authorization fields, click **Add** in the **Authorization Fie
 
 ## Authorization Check URL
 
-In the **Authorization Check URL** field, optionally define a URL that can be used to test the authentication settings from the XO Platform before you deploy the VA with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example,
+In the **Authorization Check URL** field, optionally define a URL that can be used to test the authentication settings from the XO Platform before you deploy the AI Agent with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example,
 
 [https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json](https://kore.somecompany.com/sap/opu/odata/sap/%7B%7Bauthfield1%7D%7D/?$format=json)
 
 
 ## Access Using a Connector
 
-In the **Access Using a Connector** section, select **Yes** to enable access for Kore.ai assistants using the Kore.ai Connector agent. If your domain does not have any active Kore.ai Connectors defined, a warning message is displayed to contact the Admin Console system administrator. For more information, see [Using the Kore.ai Connector](../../../../administration/kore-ai-connector){:target="_blank"} in the Admin Console documentation.
+In the **Access Using a Connector** section, select **Yes** to enable access for Kore.ai assistants using the Kore.ai Connector agent. If your domain does not have any active Kore.ai Connectors defined, a warning message is displayed to contact the Admin Console system administrator.
 
 Click **Save** to save the authorization settings and close the **New Authorization Mechanism** dialog.
 

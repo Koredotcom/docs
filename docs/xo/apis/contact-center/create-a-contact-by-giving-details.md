@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Create a Contact by Giving Details
 
 To create a contact with the given stream Id.
@@ -14,7 +16,7 @@ To create a contact with the given stream Id.
 | **PARAMETER** | **DESCRIPTION**                                                                                         | **TYPE**         |
 |---------------|---------------------------------------------------------------------------------------------------------|------------------|
 | host          | Environment URL, for example, https://platform.kore.ai                                                | string, required |
-| BotId         | BotId or StreamId. You can access it from the General Settings page of the bot.                         | string, required |
+| BotId         | BotId or StreamId. You can access it from the App Settings page of the bot.                         | string, required |
 | accountId     | Your Account ID.                                                                                        | string, required |
 | contacts      | Contact details, for example, firstName, salutation, phoneNumber, countryCode, extension.               | string, required |
 

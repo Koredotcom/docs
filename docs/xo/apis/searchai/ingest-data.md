@@ -1,6 +1,8 @@
-# **Ingest Data API**
+--8<-- "includes/searchai-api-back-link.md"
 
-This API allows you to ingest and index data into the SearchAI application. You can directly ingest structured data as chunk fields using the API or ingest an uploaded document. 
+# Ingest Data API
+
+This API allows you to ingest and index data into the SearchAI application. You can directly ingest structured data as chunk fields using the API,  ingest an uploaded document, or use this API to perform incremental web crawling to web sources that already exist in the application. 
 
 ## Ingesting Documents
 
@@ -8,7 +10,7 @@ This API allows you to ingest and index data into the SearchAI application. You 
 * After uploading, include the `fileId` from the **Upload File API** response in the **Ingest API** to process the file content.
 * Currently, only uploading of PDF, docx, ppt or txt is supported. If any other type of file is sent for ingestion, the API throws error. 
 
-## Ingesting Strucutured Data
+## Ingesting Structured Data
 
 * To ingest structured data, add the content to the body of the request object in the API. Ensure that the data corresponds to the **Chunk Fields** listed in the table below.
 * **File Structure**: The JSON file must adhere to a specific structure for SearchAI to interpret the data correctly:
@@ -16,147 +18,15 @@ This API allows you to ingest and index data into the SearchAI application. You 
     * The JSON file should consist of an **array of objects**, where each object represents a chunk of data.
     * The fields in each chunk must correspond to the chunk fields listed in the table below.
 
+## Crawling Web Pages
 
-## Supported Chunk Fields
+* This API can be used for incremental web crawling. The API will add the ingested content corresponding to an existing web source in Search AI. 
+    * The sourceName in the API must match the Source Title for the web domain added in Search AI. 
+    * Set the sourceType as “web”.
+    * Provide the URLs of the pages to be crawled in the URLs array under the documents field. 
+* The web crawl uses the crawl configuration for the source set in Search AI.
+* If an existing URL is provided,  it is crawled again. If a new URL is provided, it is crawled if the crawl configuration permits. 
 
-<table>
-  <tr>
-   <td>Field name
-   </td>
-   <td>Description
-   </td>
-   <td>Mandatory
-   </td>
-  </tr>
-  <tr>
-   <td>chunkText
-   </td>
-   <td>This is the content that will be used to render the final answer to the user for extractive answers and will be sent to the LLM for generative answers.
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>recordUrl
-   </td>
-   <td>This is the URL used to generate user references. References explain where the content was originally sourced from.
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>sourceACL
-   </td>
-   <td>This field stores the list of user identities that have access to the information stored in this chunk
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>sourceUrl
-   </td>
-   <td>This is the URL of the primary source. For example, for content from the Kore website, if recordUrl: <a href="https://kore.ai/products">www.kore.ai/products</a>, set sourceUrl: www.kore.ai. If this is empty, it is set to the same value as the recordUrl.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>chunkMeta
-   </td>
-   <td>This field can be used to store any metadata associated with the chunk. This can be used to further process the content in the application, generate embeddings etc.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>chunkTitle
-   </td>
-   <td>This is the title that will be used to render the final answer to the user for extractive answers and it will be sent to the LLM for generative answers.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfa1
-   </td>
-   <td>This custom field of type array is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfa2
-   </td>
-   <td>This custom field of type array is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfa3
-   </td>
-   <td>This custom field of type array is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfa4
-   </td>
-   <td>This custom field of type array is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfa5
-   </td>
-   <td>This custom field of type array is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfs1
-   </td>
-   <td>This custom field of type string is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfs2
-   </td>
-   <td>This custom field of type string is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfs3
-   </td>
-   <td>This custom field of type string is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfs4
-   </td>
-   <td>This custom field of type string is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>cfs5
-   </td>
-   <td>This custom field of type string is available for users to use according to their requirements.
-   </td>
-   <td>No
-   </td>
-  </tr>
-</table>
 
 ## API Specifications
 
@@ -182,9 +52,7 @@ This API allows you to ingest and index data into the SearchAI application. You 
   <tr>
    <td><strong>Authorization</strong>
    </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="../api-introduction/#generating-the-jwt-token"">How to generate the JWT Token</a>.
+   <td><code>auth: {{JWT Token}}</code>
    </td>
   </tr>
   <tr>
@@ -218,7 +86,7 @@ See <a href="../api-introduction/#generating-the-jwt-token"">How to generate the
    </td>
    <td>Required
    </td>
-   <td>The environment URL. For example, <code>https://platform.kore.ai</code>
+   <td>The environment URL. For example, <code>https://platform.example.org</code>
    </td>
   </tr>
   <tr>
@@ -264,6 +132,7 @@ See <a href="../api-introduction/#generating-the-jwt-token"">How to generate the
 <li>“json” - to upload structured data in the form of chunk fields , sent via the request object. When sourceType is json, even if file ID is present it will not be considered</li>
 
 <li>“file” - to upload documents based on file ID. When sourceType is file only file ID is considered. If chunk payload is present it will be ignored. </li>
+<li>“web” - to crawl web pages using the URLs provided in the payload. </li>
 </ul>
    </td>
   </tr>
@@ -272,88 +141,81 @@ See <a href="../api-introduction/#generating-the-jwt-token"">How to generate the
    </td>
    <td>Yes
    </td>
-   <td>Depending upon the  value of the sourceType, this field can either be used to pass the chunks fields in JSON format or it can be used to pass the reference of the file containing the chunk fields in JSON format. 
-   
-   <strong>For ingesting chunks directly, use the following format.</strong>
-<p>
-“sourceName”: “Abc”,  \
-“sourceType” : “json”,
-<p>
-"documents": [
-<p>
-    {
-<p>
-      "title": "Cybersecurity",
-<p>
-      "chunks": [
-<p>
-        {
-<p>
-          "chunkText": "Cybersecurity is the practice of protecting systems,    networks, and programs from digital attacks. With the rise of cyber threats like ransomware and data breaches, cybersecurity has become a critical concern for businesses and governments worldwide.",
-<p>
-          "recordUrl": "https://www.cybersafe.com/",
-<p>
-          "chunkTitle": "The Importance of Cybersecurity",
-<p>
-          "chunkMeta": {
-<p>
-            "Role": "Dev"
-<p>
-          }
-<p>
-        }
-<p>
-      ]
-<p>
-Note that the fields inside the chunks object should correspond to the chunk fields. To view the chunk fields, refer to the<strong> Chunk Browser</strong>. 
-<p>
-<strong>For ingesting content from a file, pass the following information in this field.</strong>
-<p>
-“sourceName”: “Abc”,
-“sourceType” : “file”,
-“documents”: [
-<p>
-      {
-<p>
-         "fileId": "f12455"
-<p>
-      }
-<p>
-  ]
-<p>
-where, fileId is the unique identifier of the uploaded file. 
-<p>
-Use <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/upload-file/">Upload File API</a> to upload the file to the application. This API will return the fileId in response which should be used in the Ingest API to ingest and index content of the file. 
-   </td>
+   <td>Depending upon the  value of the sourceType, this field can be used for:
+   <ol>
+    <li> Passing the chunks fields in JSON format. </li>
+    <li> Passing the reference of the file containing the chunk fields in JSON format. </li> 
+    <li> Passing the web URLs to be crawled.</li>
+   </ol></td>
   </tr>
 </table>
 
+### Sample Request - Ingesting Chunks directly
 
-
-## Sample Request
-
+**For ingesting chunks directly, use the following format.**
 
 ```json
-curl --location 'https://{{your-instance}}/api/public/bot/st-44xxxxxxxxxxxxxxxd8f39e4/ingest-data' \
---header 'auth: eyJhbGciOxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxYzkwLTMxYTAtNWJlZS1iZWI5LTJmMGZhZTg4NWMzZCJ9.lLIkckd3mQuP-glk9YVj-wXYE-8wGRlTaTHmZshaGdE' \
---header 'Content-Type: application/json' \
---data '{
-    "sourceName": "JsonSource",
-    "sourceType": "json",
-    "documents": [
+“sourceName”: “Abc”,  
+“sourceType” : “json”,
+"documents": [
+    {
+      "title": "Cybersecurity",
+      "chunks": [
         {
-            "title": "Cybersecurity",
-            "chunks": [
-                {
-                    "chunkText": "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. With the rise of cyber threats like ransomware and data breaches, cybersecurity has become a critical concern for businesses and governments worldwide.",
-    "recordUrl": "https://www.cybersafe.com/",
-    "chunkTitle": "The Importance of Cybersecurity",
-                    "chunkMeta": {
-                        "Role": "dEV"
-                    }
-                }
-            ]
+          "chunkText": "Cybersecurity is the practice of protecting systems,    networks, and programs from digital attacks. With the rise of cyber threats like ransomware and data breaches, cybersecurity has become a critical concern for businesses and governments worldwide.",
+          "recordUrl": "https://www.example.com/cybersecurity",
+          "chunkTitle": "The Importance of Cybersecurity"
         }
-    ]
-}'
+      ]
 ```
+
+Note that the fields inside the chunks object should correspond to the chunk fields. To view the chunk fields, refer to the **Chunk Browser**. 
+
+
+### Sample Request - Incremental Web Crawl
+
+**For crawling web pages, use the following format.**
+
+```json
+{
+  “sourceName”: “myWebDomain”,  
+  “sourceType” : “web”,
+  "documents": [
+
+    {
+
+      "urls": ["https://example.com/docs/", "https://example.com/product-guide/","https://example.com/user-guide/"]
+
+    }
+
+  ]
+}
+```
+where, urls contains the list of urls to be crawled.
+
+Note that the URLs field should point to the list of URLs that need to be crawled. If a URL is already crawled, it is crawled again. If a URL is new, it is crawled if the crawl configuration of the source permits. 
+
+
+### Sample Request - Ingesting Content from Files
+
+**For ingesting content from a file, pass the following information in this field.**
+
+```json
+{
+“sourceName”: “Abc”,  
+“sourceType” : “file”, 
+“documents”: [
+
+      {
+
+         "fileId": "f12455"
+
+      }
+
+  ]
+}
+```
+
+where, fileId is the unique identifier of the uploaded file.
+
+Use the [Upload File API](../automation/upload-file.md) to upload the file to the application. This API will return the fileId in response, which should be used in the Ingest API to ingest and index the content of the file. 

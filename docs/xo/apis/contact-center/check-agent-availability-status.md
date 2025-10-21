@@ -1,10 +1,12 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Check Agent Availability Status
 
 To check the availability of agents based on specified skill IDs, queue IDs, and agent IDs.
 
 | **METHOD**   | POST                                                                                   |
 |--------------|---------------------------------------------------------------------------------------------|
-| **Endpoint** | `http://{{host}}/agentassist/api/v1/public/{{botId}}/agents/availability` |
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{botId}}/agents/availability` |
 | **Content-Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Configuration |
@@ -14,12 +16,12 @@ To check the availability of agents based on specified skill IDs, queue IDs, and
 | **Parameter** | **Description** | **Type** |
 |------------|---------------|------------|
 | host | Environment URL, for example, https://platform.kore.ai | string, required |
-| botId | BotId or StreamId. You can access it from the bot's General Settings page. | string, required |
+| botId | BotId or StreamId. You can access it from the App Settings page. | string, required |
 
 ## Sample Request
 
 ```
-curl --location --request POST 'http://localhost/agentassist/api/v1/public/<botId>/agents/availability' \
+curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/<botId>/agents/availability' \
 --header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --header 'accountId: <accountId>' \

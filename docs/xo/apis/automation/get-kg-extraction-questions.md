@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Get Extraction Questions – KG
 
 To get the list of KG Extraction Questions.
@@ -36,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Manage Knowledge Graph
+<li>App Builder: Manage Knowledge Graph
 
 <li>Admin Console: Manage Knowledge Graph
 </li>
@@ -74,7 +76,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
    <td>The <em>Stream ID</em> that can be accessed under <strong>General Settings</strong>
 <p>
-on the Bot Builder.
+on the App Builder.
    </td>
    <td>Required
    </td>

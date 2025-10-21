@@ -191,19 +191,21 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
 
 1. **Answer Mode**: These settings let you define how conversations get answered on each channel (Digital – Chats, and Emails, as well as Voice).
 2. **Conversation Status Control**: These options let you define how conversation status behaves and the messages triggered by status changes.
-3. **Call Recording Control**: These settings let you configure call recording behavior. If enabled, you can further enable options to allow Agents and Virtual Assistants to Pause/Resume call recording.
+3. **Call Recording Control**: These settings let you configure call recording behavior. If enabled, you can further enable options to allow Human Agents and AI Agents to Pause/Resume call recording.
 4. **Transfers**: This section lets you define settings related to External Transfers, Skill Match, and Transfer Destination Control.
 5. **Skill Modification**: You can decide if the agents can modify skills attached to a conversation.
 6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
-6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
 7. **Snooze**: This setting allows agents to temporarily pause conversations that are waiting for a reply from the customer’s end or any necessary action or item on the agent’s side.
-8. **Additional Routing Configuration**: Administrators can select from the following routing options that complement existing routing configurations through queues.
+8. **Blended Agents**: The Blended Mode enables agents to handle voice and digital interactions simultaneously. It is designed to optimize agent capacity, improve efficiency, and align with modern contact center best practices.
+9. **Additional Routing Configuration**: Administrators can select from the following routing options that complement existing routing configurations through queues.
     * Fairer Workload distribution.
     * Hold interaction in queue until the wait time expires.
-9. **Call Acceptance Behaviour**: This setting allows the call to be accepted while the connection message plays in the background instead of waiting for it to finish.
-These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.  
-10. **Blended Mode**: The Blended Mode enables agents to handle voice and digital interactions simultaneously. It is designed to optimize agent capacity, improve efficiency, and align with modern contact center best practices.  
-    <img src="../images/agent-settings-tab.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
+10. **Enable Dial Tone Until Agent Connects**: This setting plays a dial tone to the customer until the connection with the agent is established after the user hears connected tone.
+These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.
+
+11. Total Digital Conversation Limit: This setting prevents digital overload by limiting the total number of active conversations across all channels.  
+
+    <img src="../images/agent-settings.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Answer Mode
 
@@ -236,6 +238,19 @@ These settings are grouped and presented as closed groups when first opening the
 Turn on the toggle to add an explicit reject button for incoming conversations. This applies only in manual acceptance mode. This toggle is turned off by default.  
 <img src="../images/explicit-reject-button-toggle.png" alt="Explicit Reject Toggle" title="Explicit Reject Toggle" style="border: 1px solid gray; zoom:90%;">
 
+### Honor Agent Wait Before Queue Timeout  
+
+**When enabled:**  
+
+* If a conversation is assigned to an agent and enters the agent's wait state, the queue wait timeout does not trigger.  
+* The conversation remains in the agent wait state until the agent wait timeout expires.
+* After the agent wait timeout is exceeded, the system checks the queue wait timeout condition.  
+
+**When disabled (default):**  
+
+* The queue wait timeout runs in parallel and may close the conversation even while it is in the agent wait state.  
+<img src="../images/honor-agent-wait-before-queue-timeout.png" alt="Honor Agent Wait" title="Honor Agent wait" style="border: 1px solid gray; zoom:90%;">
+
 ## Conversation Status Control
 
 The Conversation Status Control settings are available for the following channels: Live Chat, Messaging, Voice, and Emails.
@@ -247,23 +262,26 @@ Different statuses apply to each channel. Watch the short demo below to see what
 
 Conversation statuses apply in certain conditions for specific channels. These are listed in the table below:
 
-| **Status**                  | **Applicability**                                                                        | **Channel**             | **Message** | **Variables**                                                                                                     |
-|-----------------------------|------------------------------------------------------------------------------------------|-------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
-| **On Connect**              | When the agent connects                                                                  | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-|                             |                                                                                          | Voice                   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name                                               |
-| **Due Reminder For Agent**  | If the agent’s response time is greater than the set percentile of overdue conversations | Live Chat, Messaging.   | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Agent Inactivity**        | If the agent has not responded to an overdue conversation for the set time               | Live Chat               | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Overdue**                 | If the agent has not responded for the set amount of time                                | Live Chat, Messaging.   | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Idle Reminder For Customer** | If the customer’s response time is greater than the set percentile of total idle customer conversations | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Idle**                    | If the customer has not responded for the set amount of time                             | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **Auto Expire**             | If the customer’s response time is greater than the set amount of time                   | Live Chat               | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-|                             |                                                                                          |                         | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name                                               |
-| **On Interruption**         | If the agent disconnects unexpectedly                                                    | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
-| **On Close**                | If the agent closes the conversation                                                     | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Status**                                   | **Applicability**                                                                 | **Channel**            | **Message**  | **Variables**                                                                 |
+|----------------------------------------------|-----------------------------------------------------------------------------------|------------------------|--------------|-------------------------------------------------------------------------------|
+| **On Connect**                               | When the agent connects                                                           | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+|                                              |                                                                                   | Voice                  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| **Due Reminder For Agent**                   | If the agent’s response time is greater than the set percentile of overdue conversations | Live Chat, Messaging.  | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Overdue**                                  | If the agent has not responded for the set amount of time                         | Live Chat, Messaging.  | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Agent Inactivity**                         | If the agent has not responded to an overdue conversation for the set time        | Live Chat              | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Snooze**                                   | If agent marked the customer on Snooze                                            | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
+|                                              |                                                                                   |                        | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
+| **On Agent Interruption**                    | If the agent disconnects unexpectedly                                             | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **On Customer Interruption after Agent Transfer** | If customer gets disconnected unexpectedly, conversations will wait with agent     | Live Chat              | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
+|                                              |                                                                                   |                        | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| **On Customer Interruption in Queue**        | If the customer gets disconnected unexpectedly, conversations will wait in the queue |                        | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| **Idle Reminder For Customer**               | If the customer’s response time is greater than the set percentile of total idle customer conversations | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Idle**                                     | If the customer has not responded for the set amount of time                      | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+| **Auto Expire**                              | If the customer’s response time is greater than the set amount of time            | Live Chat              | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+|                                              |                                                                                   |                        | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| **On Close**                                 | If the agent closes the conversation                                              | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
 
 ### Conversation Statuses by Channel (Email)
-
-Here is the HTML table converted into Markdown format:
 
 | **Status**                       | **Applicability**                                                                                                                   | **Channel** | **Message** | **Variables**                                                              |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|----------------------------------------------------------------------------|
@@ -311,30 +329,25 @@ See the tables in [Conversation Statuses by Channel (Live Chat, Messaging, and V
 Once you configure your Conversation Statuses and Messaging, click **Save** at the bottom right of the Agent Settings screen.
 <img src="../images/save-button.png" alt="Save Conversation Status" title="Save Conversation Status" style="border: 1px solid gray; zoom:80%;">
 
-## Call Recording Control
-
-By default, Contact Center AI records all voice interactions. Contact Center AI admins can disable call recording for all voice interactions.  
-<img src="../images/call-recording-control.png" alt="Call Recording Control" title="Call Recording Control" style="border: 1px solid gray; zoom:80%;">
-
 ### Allow Agent to Pause/Resume
 
 By default, the Allow Agent to Pause/Resume feature is disabled. However, admins can enable it for agents handling voice interactions, allowing them to pause the recording during the call.
 <img src="../images/allow-agent-to-pause-resume.png" alt="Allow Agents to Pause/Resume Call Recording" title="Allow Agents to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-### Allow Virtual Assistant Dialogs to Pause/Resume
+### Allow Assistant Dialogs to Pause/Resume
 
-By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. However, admins can enable it for virtual assistants (automation) handling voice interactions, allowing them to pause the recording when collecting [Personally Identifiable Information (PII)](../../configurations/advanced-settings/handling-sensitive-data.md).  
-<img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" title="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
+By default, the Allow Assistant to Pause/Resume feature is disabled. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting Personally Identifiable Information (PII).  
+<img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Assistant Dialogs to Pause/Resume Call Recording" title="Allow Assistant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording) tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
+Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
 
-Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
+Changes to the Call Recording Control settings are logged on the [Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
 
 ## Transfers
 
 ### Transfer to External Contacts
 
-If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions) to learn more.  
+If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions){:target="_blank"} to learn more.  
 <img src="../images/transfer-to-external-contacts.png" alt="Enable Transfer to External Contacts" title="Enable Transfer to External Contacts" style="border: 1px solid gray; zoom:80%;">
 
 ### Enforce Skill Match for Transfers
@@ -394,21 +407,36 @@ This feature allows agents to temporarily pause conversations that are awaiting 
 By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.  
 <img src="../images/snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
 
+## Blended Agents
+
+Administrators can turn on the toggle to enable the functionality, allowing agents to handle both voice and digital interactions concurrently, optimizing agent capacity, improving efficiency, and aligning with modern contact center best practices. By default, the blended agents functionality is disabled. For more information on the changes when blended mode is enabled see [Key Changes with Blended Mode](../agent-management/agent-management.md#key-changes-with-blended-mode).  
+<img src="../images/blended-agents-toggle.png" alt="Blended Agents Toggle" title="Blended Agents Toggle" style="border: 1px solid gray; zoom:80%;">
+
 ## Additional Routing Configuration
 
 Administrators can select from the following routing options that complement existing routing configurations through queues.
 
 **Fairer Workload distribution**: When enabled, this feature distributes tasks evenly across agents, which reduces overload, improves focus, and can decrease completion times.
 
-**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability. 
-<img src="../images/additional-routing-configurations.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
+**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability.
 
-## Call Acceptance Behaviour
+**Omit Language in Routing**: When enabled, the system ignores language during routing. Routing continues to consider skill, proficiency, availability, capacity, and other applicable parameters.
 
-By default, the call acceptance behaviour functionality is disabled. Administrators can turn on the toggle to enable the functionality, allowing the call to be accepted while the connection message plays in the background instead of waiting for it to finish, enhancing agent efficiency and reducing call handling time by enabling immediate call acceptance without waiting for the connection message to finish.  
-<img src="../images/call-acceptance-behaviour.png" alt="Call Acceptance Behavior" title="Call Acceptance Behavior" style="border: 1px solid gray; zoom:80%;">
+When disabled (Default), the system includes language as a routing criterion along with skill, proficiency, availability, and other parameters.  
+<img src="../images/additional-routing-config.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
 
-## Blended Agents
+## Enable Dial Tone Until Agent Connects
 
-Administrators can turn on the toggle to enable the functionality, allowing agents to handle both voice and digital interactions concurrently, optimizing agent capacity, improving efficiency, and aligning with modern contact center best practices. By default, the blended agents functionality is disabled. For more information on the changes when blended mode is enabled see [Key Changes with Blended Mode](../agent-management/agent-management.md#key-changes-with-blended-mode).  
-<img src="../images/blended-agents-toggle.png" alt="Blended Agents Toggle" title="Blended Agents Toggle" style="border: 1px solid gray; zoom:80%;">
+By default, the enable dial tone until agent connects functionality is disabled. Administrators can turn on the toggle and click Save to enable the functionality. When enabled, a dial tone is played to the customer until the connection with the agent is established after the user hears a connected tone.  
+<img src="../images/enable-dial-tone.png" alt="Enable Dial Tone Until Agents Connect" title="Enable Dial Tone Until Agents Connect" style="border: 1px solid gray; zoom:80%;">
+
+## Total Digital Conversation Limit
+
+This setting allows admins to configure a maximum total digital conversation limit for an agent while adhering to the per-channel limits that are configured. [Learn more](../../../user-management/manage-users.md).  
+
+!!! Note
+
+    You can set the total conversation limit for a user only from the User section. This setting is not available in the user profile under the Monitor tab.  
+
+When the Total digital conversation limit is reached,  an agent will move to System Busy status. This setting is disabled by default.  
+<img src="../images/total-digital-conversations-enable.png" alt="Enable Total Digital Conversations Limit" title="Enable Total Digital Conversations Limit" style="border: 1px solid gray; zoom:80%;">

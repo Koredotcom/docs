@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Get FAQs – KG
 
 To get a list of questions and nodes under the Knowledge task. This API supports parameters like  ktId and parentId (node ID).
@@ -35,7 +37,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Manage Knowledge Graph
+<li>App Builder: Manage Knowledge Graph
 
 <li>Admin Console: Manage Knowledge Graph
 </li>
@@ -69,7 +71,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotId</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -428,7 +430,7 @@ No body parameters are passed.
                             "rules": [
                                 {
                                     "condition": "context.session.UserContext.emailId",
-                                    "value": "harini.nemani@kore.com",
+                                    "value": "john.doe@example.com",
                                     "op": "eq"
                                 }
                             ]

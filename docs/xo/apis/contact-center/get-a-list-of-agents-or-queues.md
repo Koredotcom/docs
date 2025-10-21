@@ -1,10 +1,12 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Get a List of Agents or Queues
 
 To get all agents if you have `queuesIds` and all the queues if you have `agentIds`.
 
 | **Method** | POST |
 |--------|------|
-| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/agents` |
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{botId}}/queues/agents` |
 | **Content Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Configuration |
@@ -13,17 +15,17 @@ To get all agents if you have `queuesIds` and all the queues if you have `agentI
 
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
 |-----------|-------------|------|
-| host | Environment URL, for example, https://platform.kore.ai | string, required |
-| botId | botId or streamId. You can access it from the General Settings page of the bot. | string, required |
+| host | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| botId |botId or streamId. You can get it from the App Settings page. | string, required |
 
 ## Sample Request
 
 When `queueIds` are passed:
 ```
-curl --location 'http://localhost/agentassist/api/v1/public/st-0aae83f7-49c7-58c8-921a-29d84d03xxxx/queues/agents' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/{{botId}}/queues/agents' \
 --header 'accept: application/json' \
---header 'accountId: 64dc99337ac0b4d3d684xxxx' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTdlZjBkY2IwLTQ1ZTItNTY3YS1hYzMyLTkwNTA1NzdmMWIyYiJ9.7t145BjU0eZDdlnXYazmqkVT-8WpDIUgCquQM0Uxxxx' \
+--header 'accountId: {{accountId}}' \
+--header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --data '{
     "queueIds":["qu-70d0451-bb2a-4cc9-9bdb-ec5c1cccxxxx"]
@@ -31,10 +33,10 @@ curl --location 'http://localhost/agentassist/api/v1/public/st-0aae83f7-49c7-58c
 ```
 When `agentIds` are passed:
 ```
-curl --location 'http://localhost/agentassist/api/v1/public/st-0aae83f7-49c7-58c8-921a-29d84d03xxxx/queues/agents' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/{{botId}}/queues/agents' \
 --header 'accept: application/json' \
---header 'accountId: 64dc99337ac0b4d3d684xxxx' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTdlZjBkY2IwLTQ1ZTItNTY3YS1hYzMyLTkwNTA1NzdmMWIyYiJ9.7t145BjU0eZDdlnXYazmqkVT-8WpDIUgCquQM0Uxxxx' \
+--header 'accountId: {{accountId}}' \
+--header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --data '{
     "agentIds":["a-3eab367-e201-4c77-b392-3d3972b8xxxx"]

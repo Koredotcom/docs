@@ -1,15 +1,10 @@
-# AgentAssist Playbook (Beta)
-
-
-## Overview
+# AgentAssist Playbook
 
 Contact center agents are expected to provide the best customer experience despite high call volumes and complex interactions. To empower agents in this endeavor, AgentAssist introduces the Playbook feature—a standard tool offering structured guidance for handling customer interactions.
-
 
 ## Why Playbook?
 
 For effective communication with customers, agents must follow a standard approach of greeting, validating, issue-handling, and closing the conversation. Supervisors may add more to these steps based on other factors. Also, at times, the agents have to follow a situation-specific approach that does not follow the standard structured steps. The Playbook lets supervisors create both standard and situation-specific guidance. On the AgentAssist widget, the standard guidance is always available, but the situation-specific guidance appears only when a configured situation occurs.
-
 
 ## How does the Playbook Help?
 
@@ -19,25 +14,18 @@ Supervisors can leverage this feature to gain valuable insights into agent adher
 
 This document is a comprehensive guide to the Playbook feature and meant for contact center supervisors.
 
-
 ## Playbook Types
 
 AgentAssist lets you create two types of playbooks:
 
-
-
 * **Primary Playbook**: These are standard playbooks that are triggered for all assigned agents. Primary playbooks consist of Open and Close stages, with multiple steps within each stage. The step progression can be either sequential or random. For example, a primary playbook named “Greet the Customer” applies to all assigned agents, requiring them to initiate conversations with a customer greeting as the first step. Subsequent steps, such as validation or issue handling, can follow sequentially or randomly based on the setup.
 * **Dynamic Playbook**: These are situation-specific playbooks that trigger based on specific configured scenarios. For example, a playbook named “Competitor Mention” triggers when a competitor is mentioned in a conversation. Dynamic playbooks have a single stage but can have multiple steps within the stage. A lightbulb icon appears on the AgentAssist widget to indicate that an utterance has matched an existing Dynamic playbook. The agent must click the icon to follow the playbook for that specific situation.
 
-
 ### Steps to Create a Primary Playbook
 
-
-
-1. Sign in to the XO Platform.
+1. Sign in to [XO Platform](https://platform.kore.ai/){:target="_blank"}.
 2. Click **AgentAI** > **EXPERIENCE** > **Agent Playbook**.
 <img src="./../playbook-images/agent-playbook-path.png" alt="agent-playbook-path" title="agent-playbook-path" style="border: 1px solid gray;">
-
     
 3. Click **+New Playbook**.
 4. Enter and select the following details in the **General Settings** page:
@@ -80,7 +68,6 @@ For help, refer to the [Field Description](#field-description-general-settings) 
             1. **Initiated**: Select **Initiated** to indicate the playbook should trigger once the Dialog task is initiated.
             2. **Completed**: Select **Completed** to indicate the playbook should trigger once the Dialog task is completed.
 7. Click **Save**.
-
 
 ### Field Description – General Settings
 
@@ -154,13 +141,11 @@ For help, refer to the [Field Description](#field-description-general-settings) 
 
 The Playbook Configuration section explains the setup process of a playbook. A playbook has two main categories–Stages and Steps–with Stages as the primary and Steps as the secondary category. By default, Stages are available as Open and Close. There can be multiple steps inside each stage, and you can choose how step progression (sequential or random) takes place.
 
-
 ### Step Configuration
 
 Steps are the secondary categories that reside under Stages. By default, the Primary playbooks have three steps under the Open stage and two steps under the Close stage. You can add more steps based on the requirement.
 
 #### Creating a Step in Primary Playbooks
-
 
 1. Create a **Primary** playbook. For help, refer to [Steps to create a Primary Playbook](#steps-to-create-a-primary-playbook).
 2. Click **+ Add Step**. The **Step Configuration** page appears.
@@ -180,9 +165,7 @@ Steps are the secondary categories that reside under Stages. By default, the Pri
 9. Select the **Delete** button against Yes or No to delete them.
 10. Click **Save** to complete the process.
 
-
 #### Creating a Step in Dynamic Playbooks
-
 
 1. Create a Dynamic playbook. For help, refer to the [Steps to Create a Dynamic Playbook](#steps-to-create-a-dynamic-playbook) section.
 2. Click **+ Add Stage**.
@@ -191,20 +174,16 @@ Steps are the secondary categories that reside under Stages. By default, the Pri
 5. Click **+ Add Step**.
 6. For further steps, follow step-3 onwards of the [Creating a Step in Primary Playbooks](#creating-a-step-in-primary-playbooks) section.
 
-
 ### Step Adherence
 
 You can set up how you want to determine an agent’s adherence to a step completion (manual/automatic). For manual setup, skip the Step Adherence section during a playbook creation, and the agent has to manually click the step completion button in the AgentAssist widget. For automatic setup, the system determines step completion based on the input you have set up. This section explains how to set up automatic step adherence.
 
 The system dynamically determines an agent’s step adherence through one of the selected inputs. Available inputs for selection are:
 
-
-
 * **By Utterance**: The system determines an agent’s compliance/adherence to a step completion by listening to some specific utterances from the agent or the customer that indicate completion of a step. Utterances can be of two types:
     * Agent Utterance: Agent’s utterances that indicate completion of a step.
     * Customer Utterance: Customer’s utterances that indicate completion of a step.
 * **By Dialog Execution**: The system determines an agent’s compliance/adherence to a step by watching a Dialog Task execution run by the agent in the AgentAssist widget.
-
 
 #### Steps to set up Step Adherence
 
@@ -232,14 +211,12 @@ This section deals with the process of assigning the playbooks. Here, you can ch
 * **Trigger for all Interactions**: The Playbook will be visible for all interactions and all agents.
 * **Trigger for Selected Agents**: The Playbook will only be visible to the selected agents or groups.
 
-
 ### Steps to Assign a Playbook
 
 1. Create a playbook. For help, refer to [Steps to create a Primary Playbook](#steps-to-create-a-primary-playbook).
 2. Click the **Assign** button in the **General Settings** page.
 3. Select whom you want to assign the playbook.
 4. Click **Save**.
-
 
 ## Edit or Delete a Playbook
 
@@ -257,7 +234,6 @@ This section explains the process of editing and deleting an existing playbook. 
 5. Make changes as required.
 6. Click the **Update** button to complete the process.
 
-
 ### Steps to Delete a Playbook
 
 1. Sign in to the XO Platform.
@@ -268,21 +244,18 @@ This section explains the process of editing and deleting an existing playbook. 
 
 4. Click **Yes** in the confirmation window.
 
-
 ## Edit or Delete a Step
 
 You can edit and delete an existing step, as required. This process is the same for both Primary and Dynamic playbooks.
 
-
 ### Editing a Step
 
 1. Sign in to the XO Platform.
-2. Click **Configuration **>** Playbook**.
+2. Click **Configuration** > **Playbook**.
 3. Click the **Edit** button against the playbook for which you want to edit a step.
 4. Click the step you want to edit.
 5. Make your updates on the **Step Configuration** page.
 6. Click **Update** to complete the process.
-
 
 ## Deleting a Step
 

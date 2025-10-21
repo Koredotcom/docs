@@ -1,17 +1,17 @@
 # Context Object
 
-The `Context` object is the container object that persists data for dialog execution and across all intents i.e. dialog tasks, action, alert & info tasks, and FAQs. Kore.ai’s natural language processing (NLP) engine populates the intent identified, entities extracted, and history into this object. Keys from the `Context` object are used in the dialog task and intent transition conditions. Also, the `context` object can be accessed with additional system and session variables. 
+The `Context` object is the container object that persists data for dialog execution and across all intents i.e., dialog tasks, action, alert & info tasks, and FAQs. Kore.ai’s natural language processing (NLP) engine populates the intent identified, entities extracted, and history into this object. Keys from the `Context` object are used in the dialog task and intent transition conditions. Also, the `context` object can be accessed with additional system and session variables. 
 
-The syntax when using an `Context` object key in a URL is to enclose the object name in double brackets as shown next:
+The syntax when using a `Context` object key in a URL is to enclose the object name in double brackets, as shown next:
  `https://quora.com/{{context.entities.topic}}/rss`
 
 The `Context` object can also be referenced in a script node as well as for dynamic values in an entity node and passed in the payload response to the Kore.ai SDK. You can update the `Context` object key values based on business logic to influence the dialog task execution.
 
 !!!note
     
-    The context object has a size limit of 1024 KB. The platform notifies the bot designers when the size of the context object exceeds the limit. 
+    The context object has a size limit of 1024 KB. The platform notifies the app designers when the size of the context object exceeds the limit. 
     
-    We recommend you review these notifications and modify the bot definition to keep the context object size under the limit. In the upcoming releases, the platform will discard conversations if the context size exceeds the limit.
+    We recommend you review these notifications and modify the app definition to keep the context object size under the limit. In the upcoming releases, the platform will discard conversations if the context size exceeds the limit.
 
 The platform also creates and maintains Session Variables which can be referred to from [here](../../automation/use-cases/using-session-and-context-variables.md).
 The following table describes the `Context` object keys. These can be classified into Global and Dialog contexts based on when they are created and populated. Click [here](../../app-settings/advanced-settings/bot-sessions.md#implementation) for details.
@@ -74,7 +74,9 @@ The following table describes the `Context` object keys. These can be classified
 <p>
 <code>         context.accdata[0].transfers.length);</code>
 <p>
-<code>  }</code>
+<code>  }</code>  
+   Use the flag, <code>reuseEntityWords: true</code>,  as part of the pre-conditions to enable entity values extracted in a parent dialog to be automatically available and reused in downstream dialogs without needing to prompt the user again.
+
    </td>
   </tr>
   <tr>
@@ -90,7 +92,6 @@ The following table describes the `Context` object keys. These can be classified
   <tr>
    <td>currentLanguage
 <p>
-(introduced in ver7.1)
    </td>
    <td>Global
    </td>
@@ -102,7 +103,6 @@ The following table describes the `Context` object keys. These can be classified
   <tr>
    <td>suggestedLanguages
 <p>
-(introduced in ver7.1)
    </td>
    <td>Global
    </td>
@@ -126,7 +126,7 @@ The following table describes the `Context` object keys. These can be classified
 <li><code>state</code> – The status of the object for the timestamp indicated. One of: 
 <ul>
  
-<li><code>processing</code> – The Bots Platform begins processing of the node
+<li><code>processing</code> – The Platform begins processing of the node
  
 <li><code>processed</code> – The node and node connections are processed, the following node is found but the dialog has not yet moved to that node.
  
@@ -471,7 +471,7 @@ The following is a payload response that contains a context object:
          "5":"500",
          "TestData-Ent":"1000234",
          "ec1":"Enterprise Context session variable from processor",
-         "Enterprise_G_Smith_Email":"george.smith@kore.com",
+         "Enterprise_J_Doe_Email":"john.doe@example.com",
          "enterprisesessiondialog":"enterprisesessiondialogvalue",
          "enterprisecustomprocessor":"enterprisecustomprocessorvalue",
          "enterprisepreprocessor":"enterprisepreprocessorvalue",
@@ -496,7 +496,7 @@ The following is a payload response that contains a context object:
          "jTitle":"Documentation Manager",
          "profImage":"profile.png",
          "activationStatus":"active",
-         "emailId":"help.docs@kore.com",
+         "emailId":"john.doe@example.com",
          "firstName":"Help",
          "lastName":"Docs",
          "orgId":"o-b30656ae-XXXX-XXXX-9181-065f7de34be9",
@@ -504,7 +504,7 @@ The following is a payload response that contains a context object:
          "customData":null,
          "identities":[
             {
-               "val":"help.docs@kore.com",
+               "val":"john.doe@example.com",
                "type":"email"
             },
             {

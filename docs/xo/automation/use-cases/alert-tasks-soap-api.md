@@ -1,16 +1,16 @@
 # Alert Task – SOAP API Request
 
-In this article, we see how to configure an API Request for a SOAP service, as part of an Alert Task. Learn more about Alert tasks <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>.
+In this article, we see how to configure an API Request for a SOAP service, as part of an Alert Task. [Alert task](../use-cases/alert-tasks.md).
 
 ## SOAP API Request Overview
 
 For a task with the **Connection Type** specified as **Webservice** and the **Connection Mode** set to **SOAP** you need to define:
 
-* **Authentication** – If required for your alert task, you need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key as mentioned <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">here</a>.
-* **WSDL URL** – Define the URL that contains your WSDL data. When the URL is retrieved, you can choose from a list of Available Operations based on the WSDL, and then customize the user input fields, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/#define-the-wsdl-url" target="_blank">Learn more</a>.
-* **Access Using a connector** – Specify if your Bots Platform is installed on-premises and you want to user the Kore.ai Connector agent. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/#access-using-a-connector" target="_blank">Learn more</a>.
-* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/#add-the-response-sample" target="_blank">Learn more</a>.
-* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/#website-preview-content" target="_blank">Learn more</a>.
+* **Authentication** – If required for your alert task, you need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key.
+* **WSDL URL** – Define the URL that contains your WSDL data. When the URL is retrieved, you can choose from a list of Available Operations based on the WSDL, and then customize the user input fields.
+* **Access Using a connector** – Specify if your Platform is installed on-premises and you want to user the Kore.ai Connector agent.
+* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user.
+* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. 
 
 Click **Save** to save the API request settings.
 
@@ -103,7 +103,7 @@ To define end-user fields for a task, follow the steps below:
 
 <li>Click <strong>Save</strong>. To add additional items, click <strong>Add Option</strong> again. Edit or remove options in the <strong>Actions</strong> column for options.</li>
 
-<li><strong>Dynamic Dropdown</strong> – Displays a drop-down list dynamically populated at runtime based on the response from a URL for your Bot, for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated dropdown.</li>
+<li><strong>Dynamic Dropdown</strong> – Displays a drop-down list dynamically populated at runtime based on the response from a URL for your AI Agent, for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated dropdown.</li>
 <ul>
  
 <li><strong>Use Separate WDSL</strong> – Add the WDSL URL, then click <strong>Get WDSL Description</strong>. You can then follow the same steps mentioned below.</li>
@@ -203,14 +203,14 @@ To define end-user fields for a task, follow the steps below:
 
 <li><strong>Email</strong> – User can input a valid email address.
 
-<li><strong>Object</strong> – Data from a Bot can be received as JSON objects, for example, as location details defined as: 
+<li><strong>Object</strong> – Data from an app can be received as JSON objects, for example, as location details defined as: 
  “location” : { 
                “lat” : 17.4374614, 
                “lng” : 78.4482878 
             } 
 where you can refer to the properties in a request chain or task request as location.lat, and location.lng.
 
-<li><strong>Array</strong> – Users can pass a comma-separated list of values to the Bot. For example, in <em>Google Calendar</em>, multiple attendees with data can be passed as: 
+<li><strong>Array</strong> – Users can pass a comma-separated list of values to the app. For example, in <em>Google Calendar</em>, multiple attendees with data can be passed as: 
 “attendees”: [“user1”, “user2”, “user3”]When selected, specify the <strong>Type</strong> for the array of end-user input as one of: 
 <ul>
  
@@ -242,7 +242,7 @@ where you can refer to the properties in a request chain or task request as loca
    </td>
    <td>Specify if the task input field should be visible or hidden from the end-user.
 <p>
-The <strong>Visibility</strong> field can also be set to <strong>Custom</strong> field where data is captured from the user but not used as a query parameter or payload field. For example, with a <em>JIRA</em> bot, posting a comment on a ticket using an @mention tag as shown below:
+The <strong>Visibility</strong> field can also be set to <strong>Custom</strong> field where data is captured from the user but not used as a query parameter or payload field. For example, with a <em>JIRA</em> app, posting a comment on a ticket using an @mention tag as shown below:
 <p>
 “@Mike, please look into this issue”
 <p>
@@ -282,9 +282,9 @@ The default <strong>Visibility</strong> field setting is <strong>Visible</strong
 To get started with defining access using a connector for a task, follow these steps:
 
 1. On the **API Request** tab, expand the **Access using a connector** section.
-2. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Bots using the Kore.ai Connector agent. 
+2. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Apps using the Kore.ai Connector agent. 
 
-    This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/administration/security-and-control/security-module-overview/" target="_blank">Using the Kore.ai Connector</a>.
+    This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. 
 
     <img src="../images/access-using-a-connector.png" alt="access using a connector" title="access using a connector" style="border: 1px solid gray; zoom:75%;">
 
@@ -313,7 +313,7 @@ By default, website preview links are disabled. The following illustration is an
 
 When enabled, define the path to the preview links in the payload in the **Path to the Link (toPreview)** field, if the path is not in the root of the payload. 
 
-For example, in the following code example from an RSS payload, the path to the preview is… “item”: “title”: “U.S. to Boost Refugee Intake by 30,000 by 2017”, “guid”: { “-isPermaLink”: “false”, “#text”: “SB12418904751422433479504581245034032986752” }, “link”: “http://www.wsj.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian”
+For example, in the following code example from an RSS payload, the path to the preview is… “item”: “title”: “U.S. to Boost Refugee Intake by 30,000 by 2017”, “guid”: { “-isPermaLink”: “false”, “#text”: “SB12418904751422433479504581245034032986752” }, “link”: “https://www.wsj.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian”
 
 When **Preview website link content in Post** is enabled, select preview objects such as:
 

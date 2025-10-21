@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Cisco Tropo Channel
 
 
@@ -9,7 +11,7 @@
 Adding the Cisco Tropo channel to your Kore.ai assistant is a three-step process to allow end-users to interact using their _Tropo_ accounts. To complete this procedure, you must already have a _Tropo_ account and be a member of a _Tropo_ team.
 
 
-To get started, go to the XO Platform and select the VA that you want to add the Cisco Tropo channel to, then follow the steps below. .
+To get started, go to the XO Platform and select theAI Agent that you want to add the Cisco Tropo channel to, then follow the steps below. .
 
 
 ## Step 1: Configure your Tropo App
@@ -23,7 +25,7 @@ To get started, go to the XO Platform and select the VA that you want to add the
 
     !!! Note
 
-        The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+        The Callback URL now includes the **_streamid_** in the API request to identify the AI Agent being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual app activity.
 
 4. Click on **Create App** to complete the app creation. You will be redirected to the _Details_ page of your app.  
 <img src="../images/tropo-img2.png" alt="App details" title="App details" style="border: 1px solid gray; zoom:60%;">
@@ -42,10 +44,10 @@ Next, navigate to the Configurations tab to review and complete the channel setu
 3. Click **Next** or select the **Configurations** tab. 
 4. Provide the app details you configured within Tropo: the **Application Name, Application Type** and **Phone Number**. 
 5. Enter the **API Key** retrieved from within Tropo.
-6. Choose whether you want to **send a VCF contact card** upon the installation of your VA on this channel.
+6. Choose whether you want to **send a VCF contact card** upon the installation of your AI Agent on this channel.
 7. Select **Yes** and click **Save** to enable the channel.  
 <img src="../images/tropo-img4.png" alt="Enable channel" title="Enable channel" style="border: 1px solid gray; zoom:60%;">
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot).
+After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your App](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../changelog/folder/adding-channels-to-your-bot)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

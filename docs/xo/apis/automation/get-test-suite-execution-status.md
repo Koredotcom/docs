@@ -1,4 +1,6 @@
 
+--8<-- "includes/automationai-api-back-link.md"
+
 # Get the Execution Status and Summary of a Test Suite API
 
 To get the status of the Conversation Test Suite Execution request against a unique **_testSuiteId_** if the request is in progress, and provide the download link for the results file after the test execution is complete.
@@ -36,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Conversation Tests Execution
+<li>App Builder: Conversation Tests Execution
 
 <li>Admin Console: Conversation Tests Execution
 </li>
@@ -67,7 +69,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>StreamID</strong>
    </td>
-   <td>The  <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The  <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -113,7 +115,7 @@ No Body parameters are passed.
 
 
 
-* When the request in in progress.
+* When the request in progress.
 
 
 ```json

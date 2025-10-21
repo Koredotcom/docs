@@ -1,76 +1,28 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Queues API
 
 To get the Queues/Skills associated with an `accountId`.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>GET
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoints
-   </td>
-   <td><code>https://{{host}}/agentassist/api/public/analytics/account/{{Accountid}}<a href="http://localhost/agentassist/api/public/analytics/account/63fb9a0f90425b644d3eb069/queues">/queues</a></code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content-Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>WFM Integration
-   </td>
-  </tr>
-</table>
+| Method            | GET                                                                                                                                     |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Endpoint**      | `https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/queues`                                             |
+| **Content-Type**  | `application/json`                                                                                                           |
+| **Authorization** |  `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope**     | WFM Integration                                                                                                                         |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>AccountId
-   </td>
-   <td>The unique Id associated with the account.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **Parameter** | **Description**                                                                                 | **Type**          |
+| ------------- | ----------------------------------------------------------------------------------------------- | ----------------- |
+| `host`        | The environment URL. Example: `https://platform.kore.ai` | string (required) |
+| `accountId`   | The unique identifier for the account.                                                          | string (required) |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5b36bcf8a8c7101exxxx/queues' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWYyYjdmM2Y5LWE0Y2EtNWRhYS04ODRjLThlZDQxYjM2MWRjOSJ9.lYyONpEEmSYdQo7CIOpHWqz4pQE-PgAN2lLYz3-xxxx' \
+curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/queues' \
+--header 'auth: <token>' \
 --header 'Content-Type: application/json'
 ```
 
@@ -88,37 +40,8 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5
 
 ## Body Parameters
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>accountId
-   </td>
-   <td>The unique Id associated with the account. For example, 63fb9a0f90425b644d3ec070.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>collectionPointId
-   </td>
-   <td>Unique identifier for the collection point (queue). For example, qu-59bb17e-0cae-46b0-8d80-a8a8ac34e55c.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>Description
-   </td>
-   <td>Description of the collection point or queue (for example, "Default Queue"). For example, Default Queue.
-   </td>
-   <td>String
-   </td>
-  </tr>
-</table>
+| **Parameter**       | **Description**                                                                                                   | **Type** |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------- | -------- |
+| `accountId`         | Unique identifier for the account. Example: `63fb9a0f90425b644d3exxxx`.                                | String   |
+| `collectionPointId` | Unique identifier for the collection point (queue). Example: `qu-59bb17e-0cae-46b0-8d80-a8a8ac34xxxx`. | String   |
+| `description`       | Description of the collection point or queue. Example: `Default Queue`.                                | String   |

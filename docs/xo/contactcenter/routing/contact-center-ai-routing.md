@@ -18,7 +18,7 @@ Contact Center AI provides a variety of routing methods to suit different operat
 3. **Advanced Routing(V2)**
     2. **Routing to Preferred Agent**: Overrides skill-based rules to prioritize agent-specific requests.
     3. **Time-based Skill Relaxation**: When no agents possess all required skills, conversations are routed using a partial skill match based on skill expiry.
-4. **Load Balanced Routing(V3):** Used in simpler environments, this method focuses on skill eligibility within a queue while ignoring proficiency matching. Conversations are assigned based on the agent's **oldest last assignment time**, ensuring fair distribution. When multiple agents match the required skills, the conversation is routed to the agent with the longest last acceptance timeline, preventing recently assigned agents from being prioritized. This ensures a balanced workload among agents. [Learn more](../agent-and-supervisors/agent-management/agent-management.md#load-balanced-agent-routing).
+4. **Load Balanced Routing(V3):** Used in simpler environments, this method focuses on skill eligibility within a queue while ignoring proficiency matching. Conversations are assigned based on the agent's **oldest last assignment time**, ensuring fair distribution. When multiple agents match the required skills, the conversation is routed to the agent with the longest last acceptance timeline, preventing recently assigned agents from being prioritized. This ensures a balanced workload among agents. [Learn more](../agent-and-supervisors/agent-management/agent-management.md).
 5. **Reprioritization**: Allows reprioritizing conversations during queue transfers to adapt to changing customer or business demands.
 6. **Routing Fallback**: Invokes the 'No Agents Available' flow if no agents are logged into the system or invokes the ‘Out of Operational Hours Flow’ if the conversations are received outside configured working hours.
 
@@ -83,6 +83,10 @@ Contact Center AI determines the best-suited agent for a conversation based on:
     * Current load (for digital interactions).
 
 Agents are ranked based on these parameters. The best agent is selected from this ranking. Alternatively, a **Load balanced routing** method can be employed for simpler environments, which focuses solely on skill eligibility within a queue.
+
+!!! Note
+
+    If an agent is marked as a preferred agent, the interaction will wait until the preferred agent’s timeout period expires before routing to standard agents.
 
 ## Key Benefits
 

@@ -1,19 +1,19 @@
 # Context Management
 
-Effective context management is important because it allows Virtual Assistants to interact with users in a way that is easier, quicker, more helpful, and less robotic and scripted. Contextual data helps users complete tasks faster and allows you to create more natural, human-like back and forth conversations.
+Effective context management is important because it allows AI Agents to interact with users in a way that is easier, quicker, more helpful, and less robotic and scripted. Contextual data helps users complete tasks faster and allows you to create more natural, human-like back and forth conversations.
 
 For example, let us consider the following conversation:
 
 <div class="admonition note">
 <p class="admonition-title">Example</p>
 <p><b>User</b>: What is the cost of an Economy flight ticket from London to Paris on Aug 15, 2022?</p>
-<p><b>VA</b>: It's €242.</p>
+<p><b>AI Agents</b>: It's €242.</p>
 <p><b>User</b>: Great! I would like to book it.</p>
 </div>
 
-In the above conversation, the _booking_ is in the context of an economy flight on Aug. 15, 2022. The VA should not be asking the user whether they would like to book a flight or a hotel; what their departure and destination cities are or when they want to fly. 
+In the above conversation, the _booking_ is in the context of an economy flight on Aug. 15, 2022. The AI Agents should not be asking the user whether they would like to book a flight or a hotel; what their departure and destination cities are or when they want to fly. 
 
-The context from the previous intent should already be available to the VA, so it can handle the intent according to the existing contextual data. 
+The context from the previous intent should already be available to the AI Agents, so it can handle the intent according to the existing contextual data. 
 
 The XO Platform allows you to capture and reuse contextual data for a large variety of scenarios, so you can create more complex use cases and redefine the enterprise customer experience. The following are examples of a few such scenarios:
 
@@ -25,16 +25,16 @@ For example, User utterance _what are the extra charges?_ should be responded wi
 * **Sharing Entity Values across Intents**: Entity values or conversation flows can be driven using the previous intent’s context information. 
 For example, The _City Name_ entity in _Check Weather_ intent can be pre-populated if the user has executed _Check Flight Status_ intent and has provided value for the _Destination City_ entity.
 
-This document talks about the concepts behind the implementation of context management in the XO Platform. For a detailed step-by-step example, click [here](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#interruptions-hierarchy){target="_blank"}.
+This document talks about the concepts behind the implementation of context management in the XO Platform. For a detailed step-by-step example, click [here](./conversation-management/manage-interruptions.md#interruptions-hierarchy){target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Example</p>
 <p><b>User</b>: When is my flight to Singapore?</p>
-<p><b>VA</b>: Your flight from New York to Singapore is confirmed for Jun 20th.</p>
+<p><b>AI Agents</b>: Your flight from New York to Singapore is confirmed for Jun 20th.</p>
 <p><b>User</b>: Do I need a Visa?</p>
-<p><b>VA</b>: Yes, you need a visa to visit Singapore for business or tourism?</p>
+<p><b>AI Agents</b>: Yes, you need a visa to visit Singapore for business or tourism?</p>
 <p><b>User</b>: I would like to apply for one.</p>
-<p><b>VA</b>: Sure I can help with a Visa to Singapore. Let me know the duration of the stay.</p></div>
+<p><b>AI Agents</b>: Sure I can help with a Visa to Singapore. Let me know the duration of the stay.</p></div>
 `
 To achieve the above conversation, the context object can be used as follows:
 
@@ -55,7 +55,7 @@ Context management involves the following steps:
 
 ### Output Context
 
-**Context Tags** are generated and stored in the **context object** to be used for managing the assistant’s behavior and user experience. The Platform creates a context object for every user intent, like dialog tasks and FAQs. [Learn more](/docs/xo/automation/intelligence/context-object/){target="_blank"}.
+**Context Tags** are generated and stored in the **context object** to be used for managing the assistant’s behavior and user experience. The Platform creates a context object for every user intent, like dialog tasks and FAQs. [Learn more](context-object.md){target="_blank"}.
 
 **Default Contexts Tags**
 
@@ -118,7 +118,7 @@ Intent pre-conditions for dialog intents are set to define when a dialog is dete
 <img src="../images/dialog-tasks-preconditions.png" alt="dialog tasks precondition" title="dialog tasks precondition" style="border: 1px solid gray; zoom:75%;">
 
 * Dialog intents with pre-conditions are detected only if the defined pre-conditions are met.
-* The intent with a precondition set is treated as a sub-intent and will be part of the [Linked Task Exception](/docs/xo/automation/intelligence/sub-intents-and-follow-up-intents/#linked-task-exceptions){target="_blank"} behavior from the Dialog level Hold and Resume settings.
+* The intent with a precondition set is treated as a sub-intent and will be part of the [Linked Task Exception](sub-intents-and-follow-up-intents.md#linked-task-exceptions){target="_blank"} behavior from the Dialog level Hold and Resume settings.
 
 #### Alert Tasks
 
@@ -143,7 +143,7 @@ Contextual intent detection helps in detecting relevant intents using the output
 
 #### Tasks
 
-You can define _Rules_ for identifying contextually relevant intents by using output context tags the same as traits [Learn more](/docs/xo/automation/natural-language/training/traits/){target="_blank"}.
+You can define _Rules_ for identifying contextually relevant intents by using output context tags the same as traits [Learn more](../natural-language/training/traits.md){target="_blank"}.
 
 #### Knowledge Graph
 

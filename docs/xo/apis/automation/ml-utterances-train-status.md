@@ -1,3 +1,4 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # ML Utterance Train Status API
 
@@ -37,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Train ML
+<li>App Builder: Train ML
 
 <li>Admin Console: Test and Train > Train ML
 </li>
@@ -70,7 +71,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td>The <strong>Bot ID</strong> or <strong>Stream ID</strong> to be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <strong>Bot ID</strong> or <strong>Stream ID</strong> to be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>

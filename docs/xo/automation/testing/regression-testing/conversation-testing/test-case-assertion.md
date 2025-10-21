@@ -9,10 +9,10 @@ This section describes the types of assertions available for different intent ty
 
 **Dialog Node Assertions**
 
-If the virtual assistant’s response is from a Dialog node, then the following assertions are available:
+If the app’s response is from a Dialog node, then the following assertions are available:
 
 * **Flow Assertion:** A Flow assertion tests the flow of the path traversed by every user input during a conversation to check whether the responses are provided from the correct node or not. It helps to detect and handle any deviations from the expected flow.
-    * It refers to the tasks, nodes, FAQs, or standard responses that were triggered during the flow execution. This ensures that the bot has traversed the same path as expected.
+    * It refers to the tasks, nodes, FAQs, or standard responses that were triggered during the flow execution. This ensures that the app has traversed the same path as expected.
     * It is enabled by default. You can disable it if required.
     * This section shows the summary on the right side of the Test Suite panel:
         * Expected Node
@@ -35,7 +35,7 @@ If the virtual assistant’s response is from a Dialog node, then the following 
     For example, in the following test case, the city name entered by the user can be different every time. It is marked as dynamic for that specific test case to pass.  
     <img src="../images/tca-img3.png" alt="Example-Test case details" title="Example-Test case details" style="border: 1px solid gray;zoom:50%;"/>  
       
-    The test case and text assertion can be seen as passed in the [Result Summary](../test-case-execution-summary/#result-summary){:target="_blank"}. If the text is not marked as dynamic, the test case would fail.  
+    The test case and text assertion can be seen as passed in the [Result Summary](test-case-execution-summary.md#result-summary){:target="_blank"}. If the text is not marked as dynamic, the test case would fail.  
     <img src="../images/tca-img4.png" alt="Result summary" title="Result summary" style="border: 1px solid gray;zoom:50%;"/>
 
 * **Context Assertion:** A context assertion can be used to test the presence of specific context variables during a conversation. By using a context assertion, you can verify that the correct context variables are present at a specific point in the conversation, which can be helpful for ensuring the smooth and successful execution of the conversation flow.  
@@ -54,19 +54,19 @@ If the virtual assistant’s response is from a Dialog node, then the following 
         !!! note
         
             The Context assertion label is added or removed to the test case in a validated chat based on whether it is enabled or disabled. As you add one pair, text boxes to add another pair get displayed. Once added, the saved key-value pairs are retained even if the assertion is disabled. 
-            If the VA response is from a **FAQ** or **Small Talk or Standard Response**, the Flow assertion has only **Expected Node**. The behavior of Text and Context assertions is the same as how it is for Dialog intent.
+            If the app response is from a **FAQ** or **Small Talk or Standard Response**, the Flow assertion has only **Expected Node**. The behavior of Text and Context assertions is the same as how it is for Dialog intent.
 
 
 
 ## Dynamic Text Marking
 
-The dynamic text annotation feature in the **Expected Output** allows you to annotate a section of the text. You can add one or more annotations for a VA response.  
+The dynamic text annotation feature in the **Expected Output** allows you to annotate a section of the text. You can add one or more annotations for a app response.  
 
-During test execution, the annotated portion of the text is ignored by the platform for text assertion. You can view all the added annotations of VA’s responses and be able to remove them.
+During test execution, the annotated portion of the text is ignored by the platform for text assertion. You can view all the added annotations of app’s responses and be able to remove them.
 
 !!! note
 
-    Even if the value of the specific marked text is different, the test cases are marked as a success during execution. This feature is handy when different values are expected every time you interact with the bot.
+    Even if the value of the specific marked text is different, the test cases are marked as a success during execution. This feature is handy when different values are expected every time you interact with the app.
 
 
 The following steps explain the dynamic text marking with an example:
@@ -99,7 +99,7 @@ On the Conversation Testing landing page, in the **Test Suite Details** grid, cl
 
   * [Dialog Intents](#dialog-intents)
   * [FAQs](#faqs)
-  * [Small Talks](#small-talks)
+  * [Small Talks](#small-talk)
 
 
 ### Dialog Intents
@@ -110,13 +110,13 @@ This page provides transition coverage information and details of transitions ac
 
 The following details are displayed in the **Transition Coverage** section:  
 
-  * **Total Transitions** – Total number of unique transitions available in the VA definition across all the intents.  
+  * **Total Transitions** – Total number of unique transitions available in the app definition across all the intents.  
   * **Covered** – Count and percentage of unique transitions covered as part of the Test Case definition against the Total Transitions list.  
   * **Not Covered** – Count and percentage of unique transitions not covered as part of the Test Case definition against the Total Transitions list.  
   
 <img src="../images/tca-img12.png" alt="Transition coverage" title="Transition coverage" style="border: 1px solid gray;zoom:50%;"/>
 
-For example, the VA has total 292 transitions, out of which the coverage is as follows:
+For example, the app has total 292 transitions, out of which the coverage is as follows:
 
   * Covered – 15 Transitions and 5.14%
   * Not Covered – 277 Transitions and 94.86%
@@ -174,7 +174,7 @@ All the Small Talks covered in the test cases are displayed in this tab in two c
   * Pattern  
   * Group
 
-To know more about Patterns and Groups, see [Small Talk](../../../../use-cases/small-talk){:target="_blank"}.
+To know more about Patterns and Groups, see [Small Talk](../../../use-cases/small-talk.md){:target="_blank"}.
 
 <img src="../images/tca-img17.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:50%;"/>
 

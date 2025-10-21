@@ -1,10 +1,12 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Update a Particular Skill
 
-To update the particular skill with the given Stream Id, Skill Group Id, and Skill Id.
+To update the particular skill with the given `streamId`, `skillGroupId`, and `skillId`.
 
 | **Method**     | PUT                                                                                        |
 |------------|-------------------------------------------------------------------------------------------|
-| **Endpoint**   | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills/{skillId}` |
+| **Endpoint**   | `https://{{host}}/agentassist/api/v1/public/{{botId}}/skill-groups/{{skillGroupId}}/skills/{skillId}` |
 | **Content Type** | `application/json`                                                                         |
 | Authorization | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**  | SmartAssist Analytics                                                                      |
@@ -13,9 +15,9 @@ To update the particular skill with the given Stream Id, Skill Group Id, and Ski
 
 | **PARAMETER** | **DESCRIPTION**                                                         | **TYPE**          |
 |-----------|---------------------------------------------------------------------|---------------|
-| host      | Environment URL, for example, https://platform.kore.ai          | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
-| skillId   | Id of the Skill.                                                   | string, required |
+| host      | Environment URL, for example, `https://platform.kore.ai`          | string, required |
+| streamId     | botId or streamId. You can get it from the App Settings page. | string, required |
+| skillId   | ID of the Skill.                                                   | string, required |
 
 ## Sample Request
 

@@ -1,3 +1,4 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Add Questions from Extract – KG
 
@@ -37,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Manage Knowledge Graph
+<li>App Builder: Manage Knowledge Graph
 
 <li>Admin Console: Manage Knowledge Graph
 </li>
@@ -73,7 +74,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotId</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> page.
    </td>
    <td>Required
    </td>
@@ -99,7 +100,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>language</strong>
    </td>
-   <td>The Bot language which is identified by the language acronym. For example, <em>en</em> for English and <em>de</em> for German. The user can set the default language of the bot.
+   <td>The agent language which is identified by the language acronym. For example, <em>en</em> for English and <em>de</em> for German. The user can set the default language of the bot.
    </td>
    <td>Required
    </td>
@@ -121,23 +122,22 @@ curl --location 'https://platform.kore.ai/api/public/bot/botID/faqs/bulk?languag
 "faqs": [
 {
 "questionPayload": {
-    "question": "question", //question - GET EXTRACTION QUESTION(https://developer.kore.ai/docs/bots/api-guide/get-extraction-questions-kg/)
+    "question": "question", //question - GET EXTRACTION QUESTION
     "tagsPayload": []
 },
 "answerPayload": [{
-    "text": "", //answer - GET EXTRACTION QUESTION(https://developer.kore.ai/docs/bots/api-guide/get-extraction-questions-kg/)
+    "text": "", //answer - GET EXTRACTION QUESTION
     "type": "basic",
     "channel": "default"
 }],
-"knowledgeTaskId": "645e0aab1ee65252a433d457", // "_id" - GET KNOWLEDGE TASKS(https: //developer.kore.ai/docs/bots/api-guide/get-knowledgetasks-kg/)
+"knowledgeTaskId": "645e0aab1ee65252a433d457", // "_id" - GET KNOWLEDGE TASKS
 "subQuestions": [],
 "responseType": "message",
 "subAnswers": [],
 "streamId": "botId",
-"parent": "f1324935-341d-5b0e-8551-c705a2eb58b9", //"parent" - GET KNOWLEDGE TASKS(https: //developer.kore.ai/docs/bots/api-guide/get-knowledgetasks-kg/)
+"parent": "f1324935-341d-5b0e-8551-c705a2eb58b9", //"parent" - GET KNOWLEDGE TASKS
 "leafterm": "Botname", 
-"qsId": "qna-f6014fd0-f8e8-5cb1-b952-cf9e57091ffc" // "_id" -  GET EXTRACTION QUESTION(https://developer.kore.ai/docs/bots/api-guide/get-extraction-questions-kg/)
-}'
+"qsId": "qna-f6014fd0-f8e8-5cb1-b952-cf9e57091ffc" // "_id" -  GET EXTRACTION QUESTION
 ```
 
 ## Body Parameters

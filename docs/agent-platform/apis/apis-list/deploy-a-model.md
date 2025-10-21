@@ -14,7 +14,7 @@ The API response includes the **model ID** and the **model deployment status**. 
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{<i>host</i>}/api/public/models/:{<i>modelId</i>}/deploy?modelType={<i>modelType</i>}</code>
+   <td><code>https://{host}/api/public/models/:{<i>modelId</i>}/deploy?modelType={<i>modelType</i>}</code>
    </td>
   </tr>
   <tr>
@@ -31,7 +31,7 @@ The API response includes the **model ID** and the **model deployment status**. 
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
+**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Query Parameters
 
@@ -51,7 +51,7 @@ The API response includes the **model ID** and the **model deployment status**. 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code> https://agent-platform.kore.ai</code>.
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>.
    </td>
    <td>String
    </td>
@@ -91,7 +91,7 @@ The API response includes the **model ID** and the **model deployment status**. 
 **For an Opensource Model Source**
 
 ```js
-curl --location 'https://agent-platform.kore.ai/api/public/models/cm-2xxxxxxxxxxxxxxxxxx0/deploy?modelType=openSource' \
+curl --location 'https://{host}/api/public/models/cm-2xxxxxxxxxxxxxxxxxx0/deploy?modelType=openSource' \
 --header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -122,7 +122,7 @@ curl --location 'https://agent-platform.kore.ai/api/public/models/cm-2xxxxxxxxxx
 **For a Finetune Model Source**
 
 ```js
-curl --location ' https://agent-platform.kore.ai/api/public/models/cm-6xxxxxxxxxxxxxxxxxx9/deploy?modelType=fineTune' \
+curl --location ' https://{host}/api/public/models/cm-6xxxxxxxxxxxxxxxxxx9/deploy?modelType=fineTune' \
 --header 'x-api-key: kg-2xxxxxxxxxxxxxxxxxxf-7xxxxxxx-7xx8-4xxf-8xx7-dxxxxxxxxxx3' \
 --header 'Content-Type: application/json' \
 --data '{

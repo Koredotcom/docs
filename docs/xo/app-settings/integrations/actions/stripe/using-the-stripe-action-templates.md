@@ -6,13 +6,13 @@ Steps to create a dialog task using the Stripe action templates:
 
 
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 3. On the Dialog Task pop-up, under the Integration, select the Stripe option to view the action templates.  
 <img src="../images/stripe-tem-img2.png" alt="Integration - Stripe" title="Integration - Stripe" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/stripe-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -78,7 +78,7 @@ The following Stripe actions are supported in this release:
 
 Steps to create a customer in the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _Create a Customer_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img4.png" alt="Create a Customer dialog task is added" title="Create a Customer dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -141,7 +141,7 @@ Steps to create a customer in the Stripe integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create a customer as shown below:  
+5. Follow the prompts in the App console to create a customer as shown below:  
 <img src="../images/stripe-tem-img6.png" alt="VA prompt to create customer" title="VA prompt to create customer" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -149,7 +149,7 @@ Steps to create a customer in the Stripe integration:
 
 Steps to view all customers in the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _List All Customers_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img7.png" alt="List All Customers dialog task is added" title="List All Customers dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -408,7 +408,7 @@ Steps to view all customers in the Stripe integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all customers as shown below:  
+5. Follow the prompts in the App console to view all customers as shown below:  
 <img src="../images/stripe-tem-img9.png" alt="List all customers - Edit Request" title="List all customers - Edit Request" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -416,7 +416,7 @@ Steps to view all customers in the Stripe integration:
 
 Steps to create an invoice in the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _Create an Invoice_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img10.png" alt="Create an Invoice dialog task is added" title="Create an Invoice dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -447,7 +447,7 @@ Steps to create an invoice in the Stripe integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create an invoice as shown below:  
+5. Follow the prompts in the App console to create an invoice as shown below:  
 <img src="../images/stripe-tem-img13.png" alt="VA prompt to create an invoice" title="VA prompt to create an invoice" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -455,7 +455,7 @@ Steps to create an invoice in the Stripe integration:
 
 Steps to fetch all invoices from the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _List All Invoices_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img14.png" alt="List All Invoices dialog task is added" title="List All Invoices dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -878,9 +878,9 @@ Steps to fetch all invoices from the Stripe integration:
         "custom_fields": null,
         "customer": "cus_MbY9Ce4b1x2QD6",
         "customer_address": null,
-        "customer_email": "trag.24.04@gmail.com",
-        "customer_name": "Tanmay Agrawal",
-        "customer_phone": "7000028161",
+        "customer_email": "john.doe@example.com",
+        "customer_name": "John Doe",
+        "customer_phone": "70000xxxx",
         "customer_shipping": null,
         "customer_tax_exempt": "none",
         "customer_tax_ids": [],
@@ -977,9 +977,9 @@ Steps to fetch all invoices from the Stripe integration:
         "custom_fields": null,
         "customer": "cus_MbY9Ce4b1x2QD6",
         "customer_address": null,
-        "customer_email": "trag.24.04@gmail.com",
-        "customer_name": "Tanmay Agrawal",
-        "customer_phone": "7000028161",
+        "customer_email": "john.doe@example.com",
+        "customer_name": "John Doe",
+        "customer_phone": "700xxxxxx",
         "customer_shipping": null,
         "customer_tax_exempt": "none",
         "customer_tax_ids": [],
@@ -1057,14 +1057,14 @@ Steps to fetch all invoices from the Stripe integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all invoices.
+5. Follow the prompts in the App console to view all invoices.
 
 
 ### Create a Payment Intent
 
 Steps to create a payment intent in the Stripe integration:
 
-1. Refer to the [Installing the Stripe templates ](../configuring-the-stripe-action/#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Stripe templates ](configuring-the-stripe-action.md#step-2-install-the-stripe-action-templates){:target="_blank"}section to install this template.
 2. The _Create a Payment Intent_ dialog task is added with the following components:  
 <img src="../images/stripe-tem-img16.png" alt="Create a Payment Intent dialog task is added" title="Create a Payment Intent dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -1078,5 +1078,5 @@ Steps to create a payment intent in the Stripe integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create payment intents as shown below:  
+5. Follow the prompts in the App console to create payment intents as shown below:  
 <img src="../images/stripe-tem-img18.png" alt="VA prompt to Create a Payment Intent" title="VA prompt to Create a Payment Intent" style="border: 1px solid gray;zoom:50%;"/>

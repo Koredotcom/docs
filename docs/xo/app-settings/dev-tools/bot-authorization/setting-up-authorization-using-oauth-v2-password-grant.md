@@ -11,10 +11,10 @@ The oAuth v2 Password grant type authorization method allows apps to exchange a 
 
 
 
-1. The XO Platform redirects the user to a login dialog at the web application.
+1. The Platform redirects the user to a login dialog at the web application.
 2. The user authenticates.
 3. The web application redirects the user back to the XO Platform with an access token.
-4. The XO Platform validates the access token.
+4. The Platform validates the access token.
 5. The access token allows the XO Platform to access a protected resource at the provider, on behalf of the user.
 
 
@@ -131,7 +131,7 @@ By default, authorization fields are configured as part of the header of the req
 
 ## Defining the Token URLs
 
-In the **Token URL** field, optionally define a URL that can be used to test the authorization settings from XO Platform before you deploy the VA with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example,
+In the **Token URL** field, optionally define a URL that can be used to test the authorization settings from XO Platform before you deploy the AI Agent with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example,
 
 http://{tenant}.someCompany.com/test/{{tokenId}}
 
@@ -146,7 +146,7 @@ For situations when there may be authentication errors, enter the **Auth Error S
 
 ## Access using the Connector
 
-In the **Access Using a Connector** section, select **Yes** to enable access for Kore.ai Bots using the Kore.ai Connector agent. If your domain does not have any active Kore.ai Connectors defined, a warning message is displayed to contact the Bots Admin Console System Administrator. For more information, see [Using the Kore.ai Connector](../../../../administration/kore-ai-connector){:target="_blank"} in the Bots Admin Console documentation.
+In the **Access Using a Connector** section, select **Yes** to enable access for AI Agent using the Kore.ai Connector agent. If your domain does not have any active Kore.ai Connectors defined, a warning message is displayed to contact the Admin Console System Administrator.
 
 Click **Save Auth** to save the authorization settings and close the **New Authorization Mechanism** dialog.
 

@@ -1,15 +1,8 @@
-
-
+--8<-- "includes/automationai-api-back-link.md"
 
 # LLM and Generative AI Usage Logs API
 
-	
-
-		
-
-			
-
-This API lets you get the LLM & Generative AI Usage Logs for both Co-Pilot and Dynamic Conversation features.
+This API lets you get the LLM & Generative AI Usage Logs for GenAI features.
 
 
 <table>
@@ -45,7 +38,7 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Fetch Gen AI and LLM Usage Logs
+<li>App Builder: Fetch Gen AI and LLM Usage Logs
 
 <li>Admin Console: API Scopes > Gen AI and LLM Usage Logs
 </li>
@@ -105,7 +98,7 @@ curl --location 'https://{{host}}/1.1/public/bot/st-f3195ec3-72aa-5317-92/getLLM
     "skip": "5",
     "isDeveloper": true,
     "channel": ["msteams", "rtm"],
-    "featureName": ["dynamicEntity"],
+    "featureName": ["Agent Node"],
     "taskId": "dg-d4924db4-xxxx-5b4d-ae51-aa5c7be4xxxx",
     "channelUserIds": ["29:1gmwl6k7ohtdhxxxx7kvu1yiek_qri4grpmd0k_am9dpzwttw"],
     "userIds": ["u-40b3eafc-xxxx-55f2-83e8-cf4d0fbxxxx"],

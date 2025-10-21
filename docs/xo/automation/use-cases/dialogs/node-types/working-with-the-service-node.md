@@ -7,7 +7,7 @@ The Service Node is a component type in a dialog task that you can use to add an
 The setup of a Service node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the Service node.
-2. Add a Service node in the designated place. For steps related to adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+2. Add a Service node in the designated place. For steps related to adding nodes, [add node to dialog](../using-the-dialog-builder-tool.md){:target="_blank"}.
 
     !!! note
 
@@ -30,12 +30,12 @@ To configure the Component Properties tab, please follow the steps below:
 
 1. On the **Component Properties** tab, enter the **Name** and **Display Name** of your Service node. 
 2. Choose a **Service Type** from the drop-down list:
-    1. **Custom Service** – Define an API request to a third-party web service. This is the default setting.
-    2. **HTML to Image** – Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
-    3. **URL to Image** – Define a web page URL to load to render an image.
-    4. **Custom Authentication Service** – Define a URL to a third-party application that provides the authentication services necessary for the task flow. [Learn more](../../implementing-custom-authentication){:target="_blank"}.
-    5. **Alert Subscription Service** – Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
-    6. **Data Service** – Define CRUD operations to query and manipulate the data for any given data table/table view.
+    1. **Custom Service**: Define an API request to a third-party web service. This is the default setting.
+    2. **HTML to Image**: Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
+    3. **URL to Image**: Define a web page URL to load to render an image.
+    4. **Custom Authentication Service**: Define a URL to a third-party application that provides the authentication services necessary for the task flow. [Learn more](../implementing-custom-authentication.md){:target="_blank"}.
+    5. **Alert Subscription Service**: Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
+    6. **Data Service**: Define CRUD operations to query and manipulate the data for any given data table/table view.
 
 3. Based on the service type selected, select the **Type/Sub Type** from the respective drop-down lists or Auth URL.
 4. Define the **Pre-processor Script** to pass the input parameters dynamically for executing a Service Node’s API call. [Learn more](#pre-processor-script).
@@ -52,32 +52,41 @@ To configure the Component Properties tab, please follow the steps below:
 
     <img src="../images/service-node-img3-define-request-dialog.png" alt="Service node - Define request dialog" title="Service node - Define request dialog" style="border:1px solid gray;zoom:70%;">
 
-7. Click the **Auth** tab to create a new Authorization Profile or select an existing profile. For more information, see the [Bot Authorization Overview](../../../../../app-settings/dev-tools/bot-authorization/bot-authentication/) article.
+7. Click the **Auth** tab to create a new Authorization Profile or select an existing profile. For more information, see the [Authorization Overview](../../../../app-settings/dev-tools/bot-authorization/bot-authentication.md) article.
 
-8. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
+8. Select **Advanced** to open the **Advanced Options** panel.
 
-9. Add the sample response(s) you want the Service Node to return.
+    * **Access Using a Connector**: Select *All URLs are in public domain* for public URLs, or *URLs are behind a firewall and a connector has been setup* for enterprise firewall access.
+
+    * **De-identification of PII Data**: Select *De-identify PII data and Redact Digital Forms data* to mask sensitive info (use `.original` suffix when original values are required), or *Use original values* to send unmasked data.
+
+    * **Client Certificate Exchange**: Enable to enforce mutual authentication with client and server certificates, adding a strong security layer against unauthorized access.
+
+    <img src="../images/service-node-img12-advanced-options.png" alt="Advaced Options" title="Advaced Options" style="border:1px solid gray;zoom:70%;">
+ 
+9. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
+10. Add the sample response(s) you want the Service Node to return.
 
     <img src="../images/service-node-img4-add-sample-response.png" alt="Service node - Sample response" title="Service node - Sample response" style="border:1px solid gray;zoom:70%;">
 
     Depending on the Service Type selected, refer to one of the following sections in this topic:
 
-    1. [Defining a Custom Service](#custom)
+    1. [Defining a Custom Service](#define-a-custom-service)
     2. [Defining a URL to Convert to Image](#define-a-url-to-convert-to-image)
     3. [Defining HTML to Convert to Image](#define-html-to-convert-to-image)
     4. [Defining Alert Subscription Service](#define-an-alert-subscription-service)
     5. [Defining Data Service](#define-a-data-service)
 
- 10.  Enable the **PII Redaction for API responses**.  
+11.  Enable the **PII Redaction for API responses**.  
     
-       * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add.** 
+       * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add**. Refer [Examples of Path Definitions](#examples-of-path-definitions).
 
        * Select one of the following options about how you want to **display** the sensitive data to non-authorized users:
-         * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
+         * **Redaction**: Redact the sensitive data with a unique random alphanumeric value.
          
-         * **Replacement** – Replace the data with a static value that you enter in the Sensitive Entity settings.
+         * **Replacement**: Replace the data with a static value that you enter in the Sensitive Entity settings.
          
-         * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
+         * **Mask with character**: Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
         
        * Under **Redaction of PII Data**, you can specify the format for presenting this API response containing PII data in messages and post-processing:
 
@@ -89,10 +98,10 @@ To configure the Component Properties tab, please follow the steps below:
             
                 These options only affect the respective instance during runtime or live interaction. PII data is always redacted/masked in chat history and internal logs, irrespective of the option selected here.
 
-        For more information, see [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}.  
+        For more information, see [Redacting Personally Identifiable Information ](../../../../app-settings/advanced-settings/pii-data-masking.md){:target="_blank"}.  
        <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"> 
 
-11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+12. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
 
 !!! Note
 
@@ -101,11 +110,205 @@ To configure the Component Properties tab, please follow the steps below:
      2.  The modifications made are exclusive to the particular dialog task and will not impact any other dialog tasks utilizing the same Service Node.
 
 
+
+
+#### Examples of Path Definitions
+
+Use these examples to learn how to define redaction paths for different data structures. Each example includes the API response, path syntax, and redacted result.
+
+!!! note
+
+    PII redaction requires you to specify exact paths to the fields you want to redact. PII redaction applies only to Custom Service nodes.
+
+**1. Key-Value Pairs**
+
+API response:
+
+
+```
+{
+  "customerId": 78901,
+  "fullName": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+```
+
+
+Path to redact: body.email
+
+After redaction:
+
+
+```
+{
+  "customerId": 78901,
+  "fullName": "Jane Doe",
+  "email": "####"
+}
+```
+
+
+**2. Array of Objects**
+
+API response:
+
+
+```
+{
+  "orders": [
+    { 
+     "orderId": 501, 
+     "creditCard": "4111-1111-1111-1111" 
+    },
+    { 
+     "orderId": 502,
+     "creditCard": "5555-5555-5555-4444"
+    }
+  ]
+}
+```
+
+
+Path to redact: body.orders.$.creditCard
+
+After redaction:
+
+
+```
+{
+  "orders": [
+    { "orderId": 501, "creditCard": "####" },
+    { "orderId": 502, "creditCard": "####" }
+  ]
+}
+```
+
+!!! note
+
+    Index-based redaction, such as `orders[0].creditCard,` is not allowed. Access path for one key in all records (`orders.$.creditCard`).
+
+
+**3. Nested Objects**
+
+API response:
+
+
+```
+{
+  "profile": {
+    "user": {
+      "id": 321,
+      "name": "Robert Smith",
+      "contact": {
+        "phone": "+1-202-555-0188",
+        "address": "742 Evergreen Terrace"
+      }
+    }
+  }
+}
+```
+
+
+Path to redact: body.profile.user.contact.phone
+
+After redaction:
+
+
+```
+{
+  "profile": {
+    "user": {
+      "id": 321,
+      "name": "Robert Smith",
+      "contact": {
+        "phone": "####",
+        "address": "742 Evergreen Terrace"
+      }
+    }
+  }
+}
+```
+
+
+!!! note
+
+    Redacting a parent object like `body.profile.user` automatically redacts all child keys.
+
+**4. Composite Objects**
+
+API response:
+
+
+```
+{
+  "meta": { "page": 1, "size": 2 },
+  "users": [
+    { "id": 1, "ssn": "123-45-6789", "email": "alpha@example.com" },
+    { "id": 2, "ssn": "987-65-4321", "email": "beta@example.com" }
+  ]
+}
+```
+
+
+Path to redact: (`body.users.$.ssn`) and (`body.users.$.email`)
+
+After redaction:
+
+
+```
+{
+  "meta": { "page": 1, "size": 2 },
+  "users": [
+    { "id": 1, "ssn": "####", "email": "####" },
+    { "id": 2, "ssn": "####", "email": "####" }
+  ]
+}
+```
+
+!!! note
+
+    If you redact an entire object and then try to access its child keys in downstream nodes, the task fails.
+
+**5. Headers**
+
+API response headers:
+
+
+```
+{
+  "headers": {
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "requestId": "abcd-1234-xyz-9999"
+  }
+}
+```
+
+
+Path to redact: headers.authorization
+
+After redaction:
+
+
+```
+{
+  "headers": {
+    "authorization": "####",
+    "requestId": "abcd-1234-xyz-9999"
+  }
+}
+```
+
+!!! note
+
+    Redacted values apply consistently across debug logs, conversation history, task execution logs, and NLP insights. Test your redaction paths in debug logs to ensure sensitive data is properly masked before deploying.
+
+
+
 #### Pre-processor Script
 
 The Pre-processor Script helps execute a custom JavaScript code within the Service Node to manipulate existing values or set new ones within the context and pass the input parameters dynamically for executing an API call using the Service Node. It works similarly to the Script Node. [Learn more](#configure-the-node).
 
-With the Pre-processor Script, the Platform does not have to process additional Script nodes to execute a single service node.
+With the Pre-processor Script, the Platform doesn't have to process additional Script nodes to execute a single service node.
 
 Steps to Configure a Pre-processor Script
 
@@ -142,22 +345,22 @@ The steps to configure a Post-processor Script are the same as the Pre-processor
 
     The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
 
-Use the Instance Properties to set user tags, timeout duration, and bot behavior for timeouts and service call failures.
+Use the Instance Properties to set user tags, timeout duration, and app behavior for timeouts and service call failures.
 
 1. On the Service node properties panel, click the **Instance Properties** tab.
     <img src="../images/service-node-img5-timeout-error-handling2.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;">
-2. In the **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls. Also, decide how the bot can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:
+2. In the **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls. Also, decide how the AI Agent can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:
     * **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **60 Seconds**. The default value is 20 Seconds.
-    * **Timeout Error Handling**: Choose how the bot should respond when the timeout occurs.
+    * **Timeout Error Handling**: Choose how the AI Agent should respond when the timeout occurs.
         * **Close the Task and trigger Task Execution Failure Event** (default), or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
-    *  **Service Call Failure Handling**: Choose how the bot should respond when the service call failure occurs. 
+    *  **Service Call Failure Handling**: Choose how the AI Agent should respond when the service call failure occurs. 
         * **Close the Task and trigger Task Execution Failure Event** (default), or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.   
 
       
 
-3. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+3. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent’s conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
 
 
@@ -169,7 +372,7 @@ Use the Instance Properties to set user tags, timeout duration, and bot behavior
     * The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
     * The connection properties would be present only if this is the bottommost node of a sequence.
 
-To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions){:target="_blank"}
+To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../node-connections/nodes-conditions.md){:target="_blank"}
 
 The Connection Path property offers three default variants:
 
@@ -204,49 +407,49 @@ The Connection Path property offers three default variants:
 
 You can define the Service Type as:
 
-* **Custom Service** – Define an API request to a third-party web service. This is the default setting.
-* **HTML to Image** – Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
-* **URL to Image** – Define a web page URL to load to render an image.
-* **Custom Authentication Service** – Define a URL to a third-party application that provides the authentication services necessary for the task flow.
-* **Alert Subscription Service** – Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
-* **Data Table Service** – Define CRUD operations to query and manipulate the data for any given data table/table view assigned to the Virtual Assistant.
+* **Custom Service**: Define an API request to a third-party web service. This is the default setting.
+* **HTML to Image**: Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
+* **URL to Image**: Define a web page URL to load to render an image.
+* **Custom Authentication Service**: Define a URL to a third-party application that provides the authentication services necessary for the task flow.
+* **Alert Subscription Service**: Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
+* **Data Table Service**: Define CRUD operations to query and manipulate the data for any given data table/table view assigned to the AI Agent.
 
 
 ### Define a Custom Service
 
 1. When you select **Custom Service** in the **Service Type**, then in the **Sub-Type** field, select one of the options:
-    1. **REST** – The API web service is using REST services.
-    2. **SOAP** – The API web service is using SOAP services.
+    1. **REST**: The API web service is using REST services.
+    2. **SOAP**: The API web service is using SOAP services.
 
 2. In the **Request Definition** section, click **Define Request** to specify the settings for the web service type.
 3. The **Define Request for &lt; _Service Node Name_ >** dialog is displayed as shown in the following illustration.
 4. In the **Request URL** field, in the first field, select the HTTP method used for the request. You can select:
-    1. **POST**– Used to send data to the server. For example, customer information, file upload, and so forth using HTML forms.
-    2. **PUT**– Replaces the content of the target resource with the content sent.
-    3. **PATCH** – Appends the content of an existing target resource with the content sent.
-    4. **DELETE** – Deletes the content of an existing target resource.
-    5. **GET** – Returns the content of an existing target resource
+    1. **POST**: Used to send data to the server. For example, customer information, file upload, and so forth using HTML forms.
+    2. **PUT**: Replaces the content of the target resource with the content sent.
+    3. **PATCH**: Appends the content of an existing target resource with the content sent.
+    4. **DELETE**: Deletes the content of an existing target resource.
+    5. **GET**: Returns the content of an existing target resource
 
-5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, http://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
+5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, https://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     1. Optionally, click **Show Advanced**, and select  
 
-        1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. For more information, refer to [Using the Kore.ai Connector](../../../../../administration/kore-ai-connector){:target="_blank"}.  
-        2. **Yes** in the **De-Identification of PII Data** to redact any sensitive information types that users share with your assistants. For more information, refer to [Redacting Personally Identifiable Information](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}
+        1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. 
+        2. **Yes** in the **De-Identification of PII Data** to redact any sensitive information types that users share with your assistants. For more information, refer to [Redacting Personally Identifiable Information](../../../../app-settings/advanced-settings/pii-data-masking.md){:target="_blank"}
     
-    2. In the **Auth** tab, select the type of authorization needed for this service node call, or define a new authorization type if needed. For more information, refer to [Setting Up Authentication](../../../../../app-settings/dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
+    2. In the **Auth** tab, select the type of authorization needed for this service node call, or define a new authorization type if needed. For more information, refer to [Setting Up Authentication](../../../../app-settings/dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.
     3. In the **Headers** tab, specify the headers as key/value pairs if required to access the specified request URL.  Authentication headers are auto-generated based on the authorization type specified on the **Auth** tab. You need to define any other standard headers. For example, Content-type, Accept, or any custom headers. Headers defined here are only applicable to this service node.
     4. In the **Body** tab, select the body content type. You can select:
-        * **application/x-www-form-urlencoded** – Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
-        * **application/json** – Use JSON to transmit data between the Kore.ai servers and your VA’s web application. Any JSON is sent with the request without any processing.
-        * **application/xml** – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
+        * **application/x-www-form-urlencoded**: Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
+        * **application/json**: Use JSON to transmit data between the Kore.ai servers and your AI Agent’s web application. Any JSON is sent with the request without any processing.
+        * **application/xml**: For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     
     5. In the **Test Request** tab, click **Test** to optionally send your API request URL using the specified Auth type, HTTP headers, and body parameters, if defined. The response is displayed in the text area. Click **Save as Sample Response** to save the test response as the sample response for this node.
     6. Click **Save** to save the request for the service node and close the **Define Request for &lt; _Service Node Name_ >** dialog.
 
 6. In the **Sample Response** section, optionally click **Add Sample Response** to display the **Add Sample Response** dialog that you can use to manually enter or paste a sample response.
 7. Optionally, in the **Add Sample Response** drop-down list, you can select:
-    1. **JSON** – A list of JSON key/value pairs available in the request URL response used in other nodes as variables.
-    2. **RAW** – A list of key/value pairs that are used in other nodes as variables.
+    1. **JSON**: A list of JSON key/value pairs available in the request URL response used in other nodes as variables.
+    2. **RAW**: A list of key/value pairs that are used in other nodes as variables.
 
 8. In the **Instance Properties** section under **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls. Also, decide how the bot can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:
     * **Timeout(Seconds)**: Select the maximum wait time from the drop-down list. The timeout range can be any value between _1 Second_ to _60 Seconds_. The default value is **20 Seconds**.
@@ -340,7 +543,7 @@ The following is an example for converting HTML to an image:
 
 * HTML: Print Wide HTML Tables
 
-* http://salman-w.blogspot.com/2013/04/printing-wide-html-tables.html
+* https://salman-w.blogspot.com/2013/04/printing-wide-html-tables.html
 
 */
 
@@ -418,7 +621,7 @@ To set up an alert subscription service, follow the below steps:
     
         To create an alert subscription service, you must base it on an existing alert task. Users are auto-subscribed to the alert task on reaching the associated service node in the dialog.
 
-4. On the Smart/Automatic Alerts dialog box, select an alert task from the **Choose Alert** drop-down list. The list consists of only the published alert tasks related to your VA.
+4. On the Smart/Automatic Alerts dialog box, select an alert task from the **Choose Alert** drop-down list. The list consists of only the published alert tasks related to your AI Agent.
 5. Enter the necessary information as explained below.
 
 
@@ -457,21 +660,21 @@ Configure when to expire sending alerts to the users from one of the following o
 
 Define the expected behavior of this alert if an upgraded version of the underlying alert task (the published alert that you have selected at the beginning) is published.
 
-1. **Remove Existing Instances –** All existing subscriptions of this smart alert are removed and users will no longer receive notifications. Users are auto-subscribed to the upgraded alert task only when they execute the dialog and reach the service node in the dialog journey.
-2. **Allow Users To Manually Upgrade Subscription –** Users will receive an upgrade notification on the selected channel which is a link that guides them through to upgrade their auto-subscription. If the upgrade is successful, the user will receive a success notification.
+1. **Remove Existing Instances**: All existing subscriptions of this smart alert are removed and users will no longer receive notifications. Users are auto-subscribed to the upgraded alert task only when they execute the dialog and reach the service node in the dialog journey.
+2. **Allow Users To Manually Upgrade Subscription**: Users will receive an upgrade notification on the selected channel which is a link that guides them through to upgrade their auto-subscription. If the upgrade is successful, the user will receive a success notification.
 
 
 ### Define a Data Service
 
 1. When you select **Data Service** in the **Service Type**, the **Type** setting provides two options:
-    1. Table – choose this option to perform CRUD operations on the data table.
-    2. View – choose this option to fetch data from a table view.
+    1. Table: choose this option to perform CRUD operations on the data table.
+    2. View: choose this option to fetch data from a table view.
 
         !!! Note
         
-            Your VA should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../../administration/data/data-table/#assignments){:target="_blank"}.
+            Your AI Agent should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../administration/data/data-table.md#assignments){:target="_blank"}.
 
-2. In the **Request Definition** section, click **Define Request** to specify the operation you want to perform. [Click here for details.](../../../../../administration/data/data-as-service){:target="_blank"}
+2. In the **Request Definition** section, click **Define Request** to specify the operation you want to perform. [Click here for details.](../../../../administration/data/data-as-service.md){:target="_blank"}
 
 
 ## Next Steps

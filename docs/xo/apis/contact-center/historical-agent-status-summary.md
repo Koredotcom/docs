@@ -1,10 +1,12 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Historical Agent Status Summary
 
 To retrieve the self reported status (available, busy, away, etc.) and ACD status (interacting, idle) of every agent for each bucket in the given time interval.
 
 | **Method**       | POST                                                          |
 |--------------|---------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/public/analytics/1.1/account/{{accountId}}//userstatus` |
+| **Endpoint**     | `https://{{host}}/agentassist/api/public/analytics/1.1/account/{{accountId}}/userstatus` |
 | **Content Type** | `application/json`                                            |
 | Authorization| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                         |
@@ -13,7 +15,7 @@ To retrieve the self reported status (available, busy, away, etc.) and ACD statu
 
 | **Parameter**  | **Description**                                    | **Type**        |
 |------------|------------------------------------------------|-------------|
-| Host       | The Environment URL. For example, https://platform.kore.ai | string, required |
+| Host       | The Environment URL. For example, `https://platform.kore.ai` | string, required |
 | accountId  | The accountId                                 | string, required |
 | limit      | Number of agents to be displayed in the response. Default: 50. Example: 50 | integer, optional |
 | offset     | Number of response documents needed to be skipped. Default: 0 | integer, optional |
@@ -21,10 +23,10 @@ To retrieve the self reported status (available, busy, away, etc.) and ACD statu
 ## Sample Request
 
 ```
-curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}//userstatus' \
+curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/userstatus' \
 --header 'auth: {jwt-code}' \
 --header 'Content-Type: application/json' \
---header 'iId: st-e19dd469-90f5-5655-b0b2-858de901xxxx' \
+--header 'IId: {{IId}}' \
 --data-raw '{
 "filter":{
  "agents":["jsmith@domain.com","username@domain.com"],
@@ -44,7 +46,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
 |------------------|-----------------------------------------|-------------------------------------------|
 | `auth`          | JWT authentication token. For example, `{jwt-code}`     |      required                        |
 | `Content-Type`  | Request body format. For example, `application/json` |  required                      |
-| `iId`           | Stream or application id. For example, `st-e19dd469-90f5-5655-b0b2-858de901xxxx`    | required |
+| `IId`           | Stream or application ID. For example, `st-e19dd469-90f5-5655-b0b2-858de901xxxx`    | required |
 
 ## Request Body Parameters
 
@@ -55,7 +57,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
 | dateFilter   | Object with start date, end date, and time zone offset as the fields. It contains the following details to filter the result set. | required  |
 | startDate    | The start date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`. | date, required |
 | endDate      | The end date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`. | date, required |
-| timeZoneOffSet | The time zone offset. For example, `-330,630,-500`.                     | number, required |
+| timeZoneOffSet | The time zone offset. For example, `-330,630,-500`.                     | number, optional |
 | granularity  | The ISO-8601 format is the input. For example, `PT15M, PT30M, PT1H, PT2H, PT4H, PT8H, PT12H, PT24H`. | String, Required |
 
 ## Sample Response
@@ -67,7 +69,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
     "offset": 0,
     "data": [
         {
-            "userId": "u-0572f8c7-970b-5c78-ab20-e9c1a10f2ad4",
+            "userId": "u-0572f8c7-970b-5c78-ab20-e9c1a10fxxxx",
             "firstName": "Nick",
             "lastName": "J",
             "email": "nick.j@domain.com",
@@ -75,7 +77,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
             "timeInterval": []
         },
         {
-            "userId": "u-05ca6ec1-05d3-5915-b874-29f24aa45bdf",
+            "userId": "u-05ca6ec1-05d3-5915-b874-29f24aa4xxxx",
             "firstName": "Charan",
             "lastName": "0929",
             "email": "charan951517@domain.com",
@@ -83,7 +85,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
             "timeInterval": []
         },
         {
-            "userId": "u-0dbab89e-b373-5dd2-8a9b-cf2d8e54dddf",
+            "userId": "u-0dbab89e-b373-5dd2-8a9b-cf2d8e54xxxx",
             "firstName": "John",
             "lastName": "Smith",
             "email": "john.smith@domain.com",
@@ -91,7 +93,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
             "timeInterval": []
         },
         {
-            "userId": "u-22948759-ced0-5cca-bbd3-abd91946e328",
+            "userId": "u-22948759-ced0-5cca-bbd3-abd91946xxxx",
             "firstName": "test agent",
             "lastName": "01",
             "email": "testagent@domain.com",
@@ -99,7 +101,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
             "timeInterval": []
         },
         {
-            "userId": "u-22ebdbd2-64b5-5ba9-9285-754276ecca27",
+            "userId": "u-22ebdbd2-64b5-5ba9-9285-754276ecxxxx",
             "firstName": "John",
             "lastName": "Doe",
             "email": "john.doe@domain.com",
@@ -107,7 +109,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
             "timeInterval": []
         },
         {
-            "userId": "u-29f05090-1440-5c80-8096-7eb47c07a2b5",
+            "userId": "u-29f05090-1440-5c80-8096-7eb47c07xxxx",
             "firstName": "Jane",
             "lastName": "Doe",
             "email": "jane.doe@domain.com",
@@ -115,7 +117,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
             "timeInterval": []
         },
         {
-            "userId": "u-2b991240-7f3e-53a1-a09c-aba82a4cac1d",
+            "userId": "u-2b991240-7f3e-53a1-a09c-aba82a4cxxxx",
             "firstName": "Joce",
             "lastName": "Tay",
             "email": "joce.tay@domain.com",

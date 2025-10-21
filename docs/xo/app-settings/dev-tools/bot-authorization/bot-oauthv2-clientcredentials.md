@@ -12,9 +12,12 @@ The Client Credentials grant type is used when applications request an access to
 To configure this authorization method for your assistant, follow these steps:
 
 1. Open the assistant for which you want to configure an Authorization profile.
-2. From the left menu, click **App Settings**, then select **Dev Tools > Authorization Profiles**.
-3. Click **New**. The **New Authorization Mechanism** dialog opens.  
+
+2. From the left menu, click **App Settings**, then select **Dev Tools > Authorization Profiles**.  
 <img src="../images/basic-auth-img2.png" alt="Auth profiles - Add" title="Auth profiles - Add" style="border: 1px solid gray;zoom:80%;"/>
+
+3. Click **New**. The **New Authorization Mechanism** dialog opens.  
+<img src="../images/new-auth.png" alt="Auth profiles - Add" title="Auth profiles - Add" style="border: 1px solid gray;zoom:80%;"/>
 
 4. In the **Authorization Type** drop-down list, select **oauth v2 client credentials**.
 5. In the **Name** field, enter the name for your authorization.
@@ -48,7 +51,7 @@ Please define the fields as explained in the following table:
   <tr>
    <td>Client ID
    </td>
-   <td>The ID of the Kore.ai client. The XO Platform accepts a maximum length of 255 characters.
+   <td>The ID of the Kore.ai client. The Platform accepts a maximum length of 255 characters.
    </td>
   </tr>
   <tr>
@@ -92,10 +95,10 @@ By default, authorization fields are configured as part of the header of the tas
 <img src="../images/oauth-v2-clientcredentials-img3.png" alt="Authorization fields" title="Authorization fields" style="border: 1px solid gray;zoom:80%;"/>
 
 1. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required.
-    1. **Header** – The VA expects the authorization fields as part of the header of the request.
-    2. **Payload** – The VA expects the authorization fields as part of the content of the body of the request.
-    3. **Query String** – The VA expects the authorization fields as a query in the body of the request.
-    4. **Path Param** – The VA expects the authorization fields as part of the URL path for the request.
+    1. **Header** – The AI Agent expects the authorization fields as part of the header of the request.
+    2. **Payload** – The AI Agent expects the authorization fields as part of the content of the body of the request.
+    3. **Query String** – The AI Agent expects the authorization fields as a query in the body of the request.
+    4. **Path Param** – The AI Agent expects the authorization fields as part of the URL path for the request.
 
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.
@@ -106,11 +109,8 @@ By default, authorization fields are configured as part of the header of the tas
 
 After you save the authentication, you can test your authorization definition on the **Authentication** page when you click **Test** before continuing to develop the remaining steps of your task. When you click **Test**, the test is executed using the authentication token URLs and the **Client ID** and **Client Secret Key**. If tenancy was defined, the **Test Authorization** dialog is displayed.
 
-Click **Test** to begin the authorization test. 
-
+Click **Test** to begin the authorization test.  
 <img src="../images/oauth-v2-clientcredentials-img4.png" alt="Testing the auth" title="Testing the auth" style="border: 1px solid gray;zoom:80%;"/>
 
 
-When the validation of authorization is complete, the results of the validation, either success or failure, are displayed. If the authorization fails, the _Auth Test Failed_ message is displayed along with the **Headers** and **Response** tabs as shown in the following illustration.
-
-<img src="../images/oauth-v2-clientcredentials-img5.png" alt="Auth test failed" title="Auth test failed" style="border: 1px solid gray;zoom:80%;"/>
+When the validation of authorization is complete, the results of the validation, either success or failure, are displayed. If the authorization fails, the _Auth Test Failed_ message is displayed along with the **Headers** and **Response**.

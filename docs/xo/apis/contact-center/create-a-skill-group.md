@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Create a Skill Group
 
 To add a Skill Group with the given Stream Id.
@@ -14,7 +16,7 @@ To add a Skill Group with the given Stream Id.
 | **PARAMETER** | **DESCRIPTION**                                                    | **TYPE**           |
 |-----------|----------------------------------------------------------------|----------------|
 | host      | Environment URL, for example, https://platform.kore.ai     | string, required |
-| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| BotId     | BotId or StreamId. You can access it from the App Settings page of the bot. | string, required |
 
 ## Sample Request
 

@@ -1,6 +1,8 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Sunshine Conversations Channel
 
-Virtual Assistants built on the Kore.ai XO Platform can be deployed on the **Sunshine Conversations** platform. This channel integration supports conversations with virtual assistants and provides a seamless hand-off to agents on **Zendesk**.
+AI Agents built on the Kore.ai Platform can be deployed on the **Sunshine Conversations** platform. This channel integration supports conversations with AI Agents and provides a seamless hand-off to agents on **Zendesk**.
 
 
 ## Authorizing the Kore.ai Integration to Sunshine Conversations
@@ -22,13 +24,11 @@ To enable the integration, you need to provide authorization using your Zendesk 
 
 The Kore.ai XO Platform lets you hand off the conversation to your Zendesk agents via **Zendesk Switchboard** using the **Agent Transfer** node.
 
-The **Switchboard Integration API** is used to route the user’s conversations from Zendesk to the XO platform. This API has a pass control system to decide whether the conversation is to be routed to a Bot or a live agent.
+The **Switchboard Integration API** is used to route the user’s conversations from Zendesk to the XO platform. This API has a pass control system to decide whether the conversation is to be routed to an AI Agent or a live agent.
 
-The **Pass Control** action is triggered as a part of the event where the conversation is switched to the Bot or the agent helpdesk, and also during conversation closure. 
+The **Pass Control** action is triggered as a part of the event where the conversation is switched to the App or the agent helpdesk, and also during conversation closure. 
 
 Developers can define custom metadata to be sent with the existing metadata from the XO Platform to Zendesk. The additional metadata can also be used to create a Zendesk ticket.
-
-
 
 **Capturing the Session Closure Metadata**
 
@@ -44,12 +44,12 @@ For example: When you provide `SessionKey` as **key** and `apikeyvalue` as **val
 
 * The Platform does not trigger the session closure message when the Agent transfer is initiated, and the conversation is not handed over back to the platform again.
 * When the Conversation is handed over to the Platform after the agent transfer, the session closure functionality works as usual.
-* For all the new bots or existing bots that do not have at least one **SessionClosure** metadata tag, the **SessionClosure** switch is turned off by default.
-* For all the existing bots that have at least one **SessionClosure** metadata tag, the switch is turned on by default.
-*  The Platform introduces the[ KoreUtil.getSunshineConversationsMetadata](../apis/automation/koreutil-libraries.md#koreutilgetsunshineconversationsmetadata) function to let a Bot developer fetch the stored metadata (Get API operation), and use it for the following:
+* For all the new Apps or existing apps that do not have at least one **SessionClosure** metadata tag, the **SessionClosure** switch is turned off by default.
+* For all the existing apps that have at least one **SessionClosure** metadata tag, the switch is turned on by default.
+*  The Platform introduces the [KoreUtil.getSunshineConversationsMetadata](../apis/automation/koreutil-libraries.md#koreutilgetsunshineconversationsmetadata) function to let a App developer fetch the stored metadata (Get API operation), and use it for the following:
     * Entities where JavaScript is supported like advanced messages for a prompt, script nodes, etc.
     * Simple messages like plain text prompts.
-* Any additional changes or updates to the channel configurations should go through the[ Bot Publish](../deploy/publishing-bot.md) cycle.
+* Any additional changes or updates to the channel configurations should go through the [App Publish](../deploy/publishing-bot.md) cycle.
 
 **Selecting the Default and Next Integrations for Transferring Control**
 
@@ -72,7 +72,7 @@ You can review and edit these Switchboard integrations for newly created or pre-
 
 5. Select the required option for the following integrations in the **Switchboard Configuration** window:
     1. **Default Switchboard Integration**: Select the primary contact point for users in your Sunshine Conversations application.
-    2. **Next Switchboard Integration to Kore.ai**: Select the next switchboard integration to which the control of a VA conversation is passed from Kore.ai.
+    2. **Next Switchboard Integration to Kore.ai**: Select the next switchboard integration to which the control of an AI Agent conversation is passed from Kore.ai.
     3. **Next Switchboard Integration to Agent**: Select the next switchboard integration to which control is transferred after an agent conversation with a user. 
 
         ![alt_text](images/sunshine-(3).png "image_tooltip")
@@ -211,13 +211,13 @@ To trigger various message templates, you must use a specific JavaScript format 
             {
                 type: 'reply',
                 text: 'English',
-                iconUrl: 'http://imgur.com/taco.png',
+                iconUrl: 'https://example.com/english.png',
                 payload: 'Hollywood'
             },
             {
                 type: 'reply',
                 text: 'Hindi',
-                iconUrl: 'http://imgur.com/burrito.png',
+                iconUrl: 'https://example.com/hindi.png',
                 payload: 'Bollywood'
             }
         ]

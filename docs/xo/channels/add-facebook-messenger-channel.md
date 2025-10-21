@@ -1,6 +1,8 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Facebook Messenger Channel
 
-To add the Facebook Messenger channel to your Virtual Assistant, you need a **Facebook Developer** account. With this account, you can configure the connection between Facebook Messenger and Kore.ai. Enabling the Facebook Messenger Channel on the Bot Builder helps your users chat with the Virtual Assistant using their **Facebook** accounts.
+To add the Facebook Messenger channel to your AI Agent, you need a **Facebook Developer** account. With this account, you can configure the connection between Facebook Messenger and Kore.ai. Enabling the Facebook Messenger Channel on the App Builder helps your users chat with the AI Agent using their **Facebook** accounts.
 
 The steps to enable this channel are simple and summarized below:
 
@@ -116,7 +118,7 @@ To configure the **Client ID** and **Client Secret** for the app, follow the ste
 <img src="../images/fbm19.png" alt="Facebook Messenger Developer" title="Facebook Messenger Developer" style="border: 1px solid gray; zoom:70%;">
 
 
-3. On the Kore.ai Bot Builder, navigate to the **Configurations** section of the Facebook Messenger channel and paste these values in their respective fields.
+3. On the Kore.ai App Builder, navigate to the **Configurations** section of the Facebook Messenger channel and paste these values in their respective fields.
 <img src="../images/fbm20.png" alt="Facebook messenger channel" title="Facebook messenger channel" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -138,6 +140,6 @@ On the Kore.ai XO Platform, enable the **Facebook Messenger** channel to complet
 
 3. Click **Save**.
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

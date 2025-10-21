@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Create a Queue
 
 To create a queue with the given `streamId`.
@@ -14,7 +16,7 @@ To create a queue with the given `streamId`.
 | **PARAMETER** | **DESCRIPTION**                                                         | **TYPE**         |
 |---------------|--------------------------------------------------------------------------|------------------|
 | host          | Environment URL, for example, https://platform.kore.ai                | string, required |
-| streamId      | You can access it from the General Settings page of the bot.             | string, required |
+| streamId      | You can access it from the App Settings page of the bot.             | string, required |
 
 ## Sample Request
 

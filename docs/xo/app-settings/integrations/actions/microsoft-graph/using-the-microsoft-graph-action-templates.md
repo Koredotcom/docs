@@ -4,13 +4,13 @@ You can use the **Prebuilt Action Templates** from your Microsoft Graph integrat
 
 Steps to create a dialog task using Microsoft Graph action templates:
 
-1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+1. Go to **Automation AI** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
 
 3. On the Dialog Task pop-up, under the Integration, select the **Microsoft Graph** option to view the action templates.  
 <img src="../images/ms-graph-tem-img2.png" alt="Integration - Microsoft Graph" title="Integration - Microsoft Graph" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+4. If you haven't configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
 <img src="../images/ms-graph-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -76,12 +76,12 @@ The following Microsoft Graph actions are supported:
 
 Steps to view all events in the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"} section to install this template.
 2. The _List All Events_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img4.png" alt="List All Events dialog task is added" title="List All Events dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
-    1. **listallEvents** – A user intent to view all events.
-    2. **listAllEventsService** – A bot action service to view all events in an external integration. Click the **Plus** icon to expand to view the _listAllEventsService_ bot action component properties.
+    1. **listallEvents**: A user intent to view all events.
+    2. **listAllEventsService**: A bot action service to view all events in an external integration. Click the **Plus** icon to expand to view the _listAllEventsService_ bot action component properties.
     3. In the **Component Properties** window, To add one or more responses, scroll down and click **+Add Response**.  
     <img src="../images/ms-graph-tem-img5.png" alt="Add Response" title="Add Response" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -89,7 +89,7 @@ Steps to view all events in the Microsoft Graph integration:
 
         ```
         {
-        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('purushottamKumar1215%40outlook.com')/events",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40outlook.com')/events",
         "value": [
         {
         "@odata.etag": "W/\"72QERTxLykaU1e+TybdcNQAAG8nV2w==\"",
@@ -157,8 +157,8 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": "tanmay.agrawal@kore.com ",
-        "address": "tanmay.agrawal@kore.com "
+        "name": "john.doe@example.com ",
+        "address": "john.doe@example.com "
         }
         },
         {
@@ -168,19 +168,19 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": " purushottam.kumar@kore.com",
-        "address": " purushottam.kumar@kore.com"
+        "name": " john.doe@example.com",
+        "address": " john.doe@example.com"
         }
         }
         ],
         "organizer": {
         "emailAddress": {
-        "name": "Purushottam Kumar",
-        "address": "purushottamKumar1215@outlook.com"
+        "name": "John Doe",
+        "address": "john.doe@outlook.com"
         }
         },
         "onlineMeeting": null,
-        "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('purushottamKumar1215@outlook.com')/calendars('AQMkADAwATNiZmYAZC01N2E2LTYyZDYtMDACLTAERTxLykaU1e_')/$ref",
+        "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('john.doe@outlook.com')/calendars('AQMkADAwATNiZmYAZC01N2E2LTYyZDYtMDACLTAERTxLykaU1e_')/$ref",
         "calendar@odata.navigationLink": "https://graph.microsoft.com/v1.0/users"
         },
         {
@@ -249,8 +249,8 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": "aa@gmail.com ",
-        "address": "aa@gmail.com "
+        "name": "john.doe@example.com ",
+        "address": "john.doe@example.com "
         }
         },
         {
@@ -260,15 +260,15 @@ Steps to view all events in the Microsoft Graph integration:
         "time": "0001-01-01T00:00:00Z"
         },
         "emailAddress": {
-        "name": " bb@yahoo.com",
-        "address": " bb@yahoo.com"
+        "name": "jane.doe@example.com",
+        "address": " jane.doe@example.com"
         }
         }
         ],
         "organizer": {
         "emailAddress": {
-        "name": "Purushottam Kumar",
-        "address": "purushottamKumar1215@outlook.com"
+        "name": "john doe",
+        "address": "john.doe@example.com"
         }
         },
         "onlineMeeting": null,
@@ -281,11 +281,11 @@ Steps to view all events in the Microsoft Graph integration:
         }
         ```
 
-    4. **listAllEventstMessage** – A message node with the script to display responses for various events.
+    4. **listAllEventstMessage**: A message node with the script to display responses for various events.
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all events as shown below:  
+5. Follow the prompts in the App console to view all events as shown below:  
 <img src="../images/ms-graph-tem-img6.png" alt="VA prompt to view all events" title="VA prompt to view all events" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You can now view events in the Microsoft Graph system.
@@ -295,12 +295,12 @@ Steps to view all events in the Microsoft Graph integration:
 
 Steps to view all to-do lists in the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates ](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
 2. The _List All Todo Lists_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img7.png" alt="List All Todo Lists dialog task is added" title="List All Todo Lists dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
-    1. **listAllToDolists** – A user intent to view all to-do lists.
-    2. **listAllToDoListService** – A bot action service to get all the to do lists and send an an email from an external integration. Click the **Plus** icon to expand to view the _listAllToDoListService_ bot action component properties.
+    1. **listAllToDolists**: A user intent to view all to-do lists.
+    2. **listAllToDoListService**: A bot action service to get all the to do lists and send an email from an external integration. Click the **Plus** icon to expand to view the _listAllToDoListService_ bot action component properties.
     3. In the Component Properties window, to add one or more responses, scroll down and click **+Add Response**:  
     <img src="../images/ms-graph-tem-img8.png" alt="Add response" title="Add response" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -308,7 +308,7 @@ Steps to view all to-do lists in the Microsoft Graph integration:
 
         ```
         {
-        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('purushottamkumar1215%40outlook.com')/todo/lists",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john1215%40outlook.com')/todo/lists",
         "value": [
         {
         "@odata.etag": "W/\"72QERTxLykaU1e+TybdcNQAAHgSugA==\"",
@@ -369,11 +369,11 @@ Steps to view all to-do lists in the Microsoft Graph integration:
         ]
         ```
 
-    4. **listAllTodoListsMessage** – A message node with script to display responses for various to-do lists.
+    4. **listAllTodoListsMessage**: A message node with script to display responses for various to-do lists.
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to view all to-do lists as shown below.  
+5. Follow the prompts in the App console to view all to-do lists as shown below.  
 <img src="../images/ms-graph-tem-img9.png" alt="VA prompt to view All Todo Lists" title="VA prompt to view All Todo Lists" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You can now view all to-do lists in the Microsoft Graph system.
@@ -383,15 +383,15 @@ Steps to view all to-do lists in the Microsoft Graph integration:
 
 Steps to create an event in the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates ](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
 2. The _Create an Event_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img10.png" alt="Create an Event dialog task is added" title="Create an Event dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
-    1. **createEvent** – A user intent to create an event.
-    2. **eventSubject**, **startDate**, **startTime**, **endDate**, **endTime**, and **attendeesEmailAddresses** – Entity nodes for gathering the required event details
-    3. **getMailboxSettingsService** – A bot action service to fetch information about the mailbox and user’s time zone from an external integration. Click the **Plus** icon to expand to view the _getMailboxSettingsService_ bot action component properties.
-    4. **entityFormatterScript** – A script to format all email entities of event attendees.
-    5. **createEventService** – A bot action service to create an event in an external integration. Click the **Plus** icon to expand to view the _createEventService_ bot action component properties.
+    1. **createEvent**: A user intent to create an event.
+    2. **eventSubject**, **startDate**, **startTime**, **endDate**, **endTime**, and **attendeesEmailAddresses**: Entity nodes for gathering the required event details
+    3. **getMailboxSettingsService**: A bot action service to fetch information about the mailbox and user’s time zone from an external integration. Click the **Plus** icon to expand to view the _getMailboxSettingsService_ bot action component properties.
+    4. **entityFormatterScript**: A script to format all email entities of event attendees.
+    5. **createEventService**: A bot action service to create an event in an external integration. Click the **Plus** icon to expand to view the _createEventService_ bot action component properties.
     6. In the **Component Properties** window, click **Edit Request** to modify the request parameters.  
     <img src="../images/ms-graph-tem-img11.png" alt="Edit request" title="Edit request" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -411,7 +411,7 @@ Steps to create an event in the Microsoft Graph integration:
         "attendees": [
         {
         "emailAddress": {
-        "address": "purushottam.kumar@gmail.com"
+        "address": "john.doe@example.com"
         }
         }
         ] }
@@ -421,7 +421,7 @@ Steps to create an event in the Microsoft Graph integration:
 
         ```
         {
-        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('purushottamKumar1215%40outlook.com')/events/$entity",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40outlook.com')/events/$entity",
         "@odata.etag": "W/\"72QERTxLykaU1e+TybdcNQAAKxxx==\"",
         "id": "AQMkADAwATNiZmYAZC01N2E2LTYyZDYtMDACLTAwCgBGAAADiea_kiTHkkGyRB2nztFSRQcA72QERTxLykaU1e_=",
         "createdDateTime": "2022-12-28T14:53:39.8527171Z",
@@ -502,11 +502,11 @@ Steps to create an event in the Microsoft Graph integration:
         }
         ```
 
-    7. **createEventMessage** – A message node with the script to display responses to create events.
+    7. **createEventMessage**: A message node with the script to display responses to create events.
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create an event as shown below.  
+5. Follow the prompts in the App console to create an event as shown below.  
 <img src="../images/ms-graph-tem-img12.png" alt="VA prompt to create an event" title="VA prompt to create an event" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You can now view this event in the Microsoft Graph system.
@@ -516,13 +516,13 @@ Steps to create an event in the Microsoft Graph integration:
 
 Steps to create a to-do list in the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates ](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
 2. The _create a todo list_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img13.png" alt="Create a Todo list dialog task is added" title="Create a Todo List dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
-    1. **createTodolist** – A user intent to create a task list.
-    2. **listName** – An entity node to gather the name of the todo list.
-    3. **createTodolistService** – A bot action service to create a todo list in an external integration. Click the Plus icon to expand to view the _createTodoListService_ bot action component properties.
+    1. **createTodolist**: A user intent to create a task list.
+    2. **listName**: An entity node to gather the name of the todo list.
+    3. **createTodolistService**: A bot action service to create a todo list in an external integration. Click the Plus icon to expand to view the _createTodoListService_ bot action component properties.
     4. In the Component Properties window, click the **Edit Request** link to edit the request parameters as shown below.  
     <img src="../images/ms-graph-tem-img14.png" alt="Edit request" title="Edit request" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -540,7 +540,7 @@ Steps to create a to-do list in the Microsoft Graph integration:
 
         ```
         {
-        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('purushottamkumar1215%40outlook.com')/todo/lists/$entity",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40outlook.com')/todo/lists/$entity",
         "@odata.etag": "W/\"72QERTxLykaU1e+Tybdcxsxxxxx==\"",
         "displayName": "Postman created list3 (1)",
         "isOwner": true,
@@ -550,11 +550,11 @@ Steps to create a to-do list in the Microsoft Graph integration:
         }
         ```
 
-    5. **createTodolistMessage** – A message node with the script to display responses to create to-do lists.
+    5. **createTodolistMessage**: A message node with the script to display responses to create to-do lists.
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create a todo list as shown below.  
+5. Follow the prompts in the App console to create a todo list as shown below.  
 <img src="../images/ms-graph-tem-img15.png" alt="VA prompt to create todo list" title="VA prompt to create todo list" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You can now view this todo list in the Microsoft Graph system.
@@ -564,14 +564,14 @@ Steps to create a to-do list in the Microsoft Graph integration:
 
 Steps to send email from the Microsoft Graph integration:
 
-1. Refer to the [Installing the Microsoft Graph templates ](../configuring-the-microsoft-graph-action/#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
+1. Refer to the [Installing the Microsoft Graph templates ](configuring-the-microsoft-graph-action.md#step-2-install-the-microsoft-graph-action-templates){:target="_blank"}section to install this template.
 2. The _Send email_ dialog task is added with the following components:  
 <img src="../images/ms-graph-tem-img16.png" alt="Send EMail dialog task is added" title="Send EMail dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
-    1. **sendEmail** -: A user intent to send an email.
-    2. **mailSubject**, **mailContent**, and **receipentsEmailAddresses**– Entity nodes for sending the email to users.
-    3. **prepareEmailIdsScript** – A bot action service to fetch email ID in an external integration.
-    4. **sendEmailService** – A bot action service to send email from an external integration. Click the Plus icon to expand to view the sendEmailService bot action component properties.
+    1. **sendEmail**: A user intent to send an email.
+    2. **mailSubject**, **mailContent**, and **receipentsEmailAddresses**: Entity nodes for sending the email to users.
+    3. **prepareEmailIdsScript**: A bot action service to fetch email ID in an external integration.
+    4. **sendEmailService**: A bot action service to send email from an external integration. Click the Plus icon to expand to view the sendEmailService bot action component properties.
     5. In the Component Properties window, click the **Edit Request** link to modify the request parameters as shown below:  
     <img src="../images/ms-graph-tem-img17.png" alt="Edit request" title="Edit request" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -600,9 +600,9 @@ Steps to send email from the Microsoft Graph integration:
         }
         ```
 
-    6. **sendMailMessage**– A message node with the script to display responses to send emails.
+    6. **sendMailMessage**: A message node with the script to display responses to send emails.
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to send an email, as shown below.  
+5. Follow the prompts in the App console to send an email, as shown below.  
 <img src="../images/ms-graph-tem-img18.png" alt="VA prompt to send email" title="VA prompt to send email" style="border: 1px solid gray;zoom:50%;"/>

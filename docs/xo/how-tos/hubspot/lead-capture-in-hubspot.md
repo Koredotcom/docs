@@ -1,4 +1,4 @@
-# Lead Capture in HubSpot Using AI Chatbot
+# Lead Capture in HubSpot Using AI Agent
 
 You can automate the capture of a lead’s details on chat channels by Installing the Lead Capture for HubSpot CRM. 
 
@@ -83,7 +83,7 @@ Create your own custom authorization profile to obtain an access token and use i
     5. **Lead Capture Setup:** Define the Lead Capture setup and the information to be captured.  
     <img src="../images/install_template.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
 4. Click **Finish**.
-5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
+5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Use Cases** > **Dialogs**.  
 <img src="../images/dialog-task.png" alt="dialog-task" title="dialog-task" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 3: Train the Chatbot for the Dialog Task and Test it

@@ -21,12 +21,17 @@ By setting up the Google Drive connector in Search AI, you can extend the search
   <tr>
    <td>File type Support
    </td>
-   <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html \
-Note: Password-protected files in any format are not supported
+   <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html 
+   
+   Note: Password-protected files in any format are not supported
    </td>
   </tr>
     <tr>
    <td>RACL Support </td>
+   <td>Yes </td>
+  </tr>
+   <tr>
+   <td>Automatic Permission Entities Resolution </td>
    <td>Yes </td>
   </tr>
 </table>
@@ -45,7 +50,7 @@ Follow the steps listed below to set up and enable access to the content on your
 1. Login to your[ Google developer console](https://console.cloud.google.com/) and [Create a Google Cloud project](https://developers.google.com/workspace/guides/create-project). If you are using an existing project, skip this step.
 2. [Find Google Drive API and enable it](https://developers.google.com/workspace/guides/enable-apis) in your Google Cloud project.
 3. To enable OAuth 2.0 authentication, [configure OAuth consent](https://developers.google.com/workspace/guides/configure-oauth-consent). Provide the name of the application, email address, app logo, and developer contact information. 
-![OAuth Consent](../images/googledrive/oauth-consent.png "OAuth Consent")
+![OAuth Consent](images/googledrive/oauth-consent.png "OAuth Consent")
 
 4. Set up permissions for the application. Under Scopes, click on _ADD OR REMOVE SCOPES_. Select the following scopes for Google Drive API and click on _UPDATE _at the bottom of the page.
 
@@ -53,31 +58,31 @@ Follow the steps listed below to set up and enable access to the content on your
     * …/auth/drive.appdata
     * …/auth/drive 
 
-    ![Permissions](../images/googledrive/permissions.png "Permissions")
-    ![Scopes](../images/googledrive/scope.png "Scopes")
+    ![Permissions](images/googledrive/permissions.png "Permissions")
+    ![Scopes](images/googledrive/scope.png "Scopes")
 
 5. Set the user type for the application as external. Go to the _OAuth Consent screen_ and click on _MAKE EXTERNAL_ to change the user type to External. 
 
-    ![User Type](../images/googledrive/user-type.png "User Type")
+    ![User Type](images/googledrive/user-type.png "User Type")
 
 6. While you are still in development or testing mode, you can set the publishing status of the application to Testing. In testing mode, only the users added can access the application while in production mode, the application is available publicly to everyone with a Google account. 
-![Publishing Status](../images/googledrive/publishing-status.png "Publishing Status")
+![Publishing Status](images/googledrive/publishing-status.png "Publishing Status")
 If the publishing status is set to Testing, you can add your test users by clicking on _ADD USERS_ on the same page. 
-![Add Users](../images/googledrive/add-users.png "Add Users")
+![Add Users](images/googledrive/add-users.png "Add Users")
 
 7. [Create OAuth access credentials](https://developers.google.com/workspace/guides/create-credentials) to authenticate the client (SearchAI). Enter the _Application type_ as _Web Application_ and give it a name. Add the URL of your  Search AI deployment as _Authorized redirect URIs_ and click _CREATE_.
 
 You can use one of the following URLs as per your region.
 
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Region Callback URL: https://idp.kore.com/workflows/callback
+* JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
+* DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
+* Prod Region Callback URL: https://idp.kore.com/workflows/callback
 
-![OAuth Credentials](../images/googledrive/oauth-credentials.png "OAuth Credentials")
+![OAuth Credentials](images/googledrive/oauth-credentials.png "OAuth Credentials")
 
    This will generate the client ID. Download your credentials. The downloaded file is in JSON format and has **client id and client secret** amongst other fields. 
 
-![Download Credentials](../images/googledrive/download-credentials.png "Download Credentials")
+![Download Credentials](images/googledrive/download-credentials.png "Download Credentials")
 
 
 ## Step 2: Configuring the Google Drive connector in SearchAI
@@ -86,15 +91,15 @@ You can use one of the following URLs as per your region.
 2. Configure the authorization parameters for the connector and click **Connect**.
     * **Name**- Unique name for the connector.
     * **Authorization Type** - Search AI supports **OAuth 2.0 for Google Drive.** Set this field accordingly.
-    * **Grant Type** - Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports **Authorization Code Grant Type for Google Drive**. Refer to [this for more information on Grant types](../../connectors.md).
+    * **Grant Type** - Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports **Authorization Code Grant Type for Google Drive**. Refer to [this for more information on Grant types](../connectors.md).
     * **Client ID** - The client ID generated after registering SearchAI for OAuth authentication. 
     * **Client Secret**- The secret generated after registering SearchAI for OAuth authentication.  
 
-![Authorization](../images/googledrive/auth-tab.png "Authorization")
+![Authorization](images/googledrive/auth-tab.png "Authorization")
 
 Once the connection is successfully established, to synchronize the content at any time, go to the **Configurations** tab and click **Sync Now.** Go to the **Content** tab to view the content ingested into the application. 
 
-![Content](../images/googledrive/content-tab.png "Content")
+![Content](images/googledrive/content-tab.png "Content")
 
 ### Content Ingestion 
 
@@ -106,7 +111,7 @@ After successfully connecting to Google Drive, the next step is to do the Synchr
     1. Sync All Content - This option ingests all the data from Google Drive. 
     2. Sync Specific Content - This option allows you to select the content to be ingested into the SearchAI application. Click on the **Configure** option. The following widget allows you to set up rules for filtering content. Set up rules and click **Save and Test**.
 
-![Configuration](../images/googledrive/config-tab.png "Configuration")
+![Configuration](images/googledrive/config-tab.png "Configuration")
 
 ### Content Filtering Rules
 
@@ -118,7 +123,7 @@ Each rule gives you the option to choose the location on the drive from where th
 
 Next, define conditions to choose the content from the selected location. To define a condition, specify a parameter, operator, and the value for the parameter.  For example, if you want to ingest all the files in a given folder set up a filter as shown below:
 
-![Example](../images/googledrive/example1.png "Example")
+![Example](images/googledrive/example1.png "Example")
 
 You can define conditions based on the following parameters or add your parameters too. Refer to [this](https://developers.google.com/drive/api/guides/ref-search-terms) for more information on the query parameters and the values that the parameters can take. 
 
@@ -137,11 +142,11 @@ You can define conditions based on the following parameters or add your paramete
 
 * You can have any number of rules in a filter. For example, to include all the files from a specific folder and all the files with a keyword in the filename, you can set up a filter as:
 
-![Example](../images/googledrive/example2.png "Example")
+![Example](images/googledrive/example2.png "Example")
 
 * You can define more than one condition to a rule to filter specific content. For example, to ingest only PDF files from a given folder, you can set up a filter as:
 
-![Example](../images/googledrive/example3.png "Example")
+![Example](images/googledrive/example3.png "Example")
 
 ## **Access Control**
 
@@ -156,21 +161,21 @@ SearchAI application supports **file-level** permissions through Google Drive Co
 
 * **People with access**: SearchAI reads user information for the files and allows users to view them if they have permission to do so. Any user with view or read access to a file can access generated answers.
 
-For instance, if two users have read access to a file, corresponding indexed content will have the user information as shown below. \
+For instance, if two users have read access to a file, corresponding indexed content will have the user information as shown below.
 
-![People With Access](./images/googledrive/racl/example1.png "Example")
+![People With Access](images/googledrive/racl/example1.png "Example")
 
 Similarly, if the files are accessible to a user and a user group in Google Drive, the corresponding content will have the information as shown below, where [hr-team@example.com](mailto:hr-team@example.com) is the permission entity created corresponding to the group.  
 
-![User Groups](./images/googledrive/racl/example2.png "User Groups")
+![User Groups](images/googledrive/racl/example2.png "User Groups")
 
 * **Anyone with Link**: This is treated as public access. All the users can access a file with this type of access permission.  
 
-![Anyone with Link](./images/googledrive/racl/example3.png "Anyone with Link")
+![Anyone with Link](images/googledrive/racl/example3.png "Anyone with Link")
 
 * **Domain Specific Access**: SearchAI supports this type of access and verifies the user identity against the specified domain name.
 
-![Domain level Access](./images/googledrive/racl/example4.png "Domain Level Access")
+![Domain level Access](images/googledrive/racl/example4.png "Domain Level Access")
 
 
 ### **Handling User Groups or Domain level access in Google Drive**
@@ -191,6 +196,6 @@ You can enable or disable RACL for any content ingested from Google Drive using 
 
 You can configure this while connecting to Google Drive for the first time. To update the permissions at any time, go to the Permissions & Security tab and modify them. The updated permissions apply to the content ingested during the next sync activity. 
 
-![Permissions Config](./images/googledrive/racl/permissions.png "RACL Enable")
+![Permissions Config](images/googledrive/racl/permissions.png "RACL Enable")
 
 

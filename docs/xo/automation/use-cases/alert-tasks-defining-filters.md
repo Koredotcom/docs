@@ -2,7 +2,7 @@
 
 You can define filters for end-users to limit the results of an alert task to the results an end-user needs. For example, you can define a filter for the name, or account, or business. 
 
-When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">Learn more</a>.
+When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. [Alert task](../use-cases/alert-tasks.md).
 
 ## Defining Filters
 
@@ -56,10 +56,10 @@ Define the fields described in the following table to create a new filter for a 
 </li> 
 </ul>
 
-<li><strong>Dynamic Dropdown</strong> – Displays a drop-down list dynamically populated at runtime based on the response from a URL for your Bot, for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated drop-down. 
+<li><strong>Dynamic Dropdown</strong> – Displays a drop-down list dynamically populated at runtime based on the response from a URL for your App, for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated drop-down. 
 <ul>
  
-<li><strong>Endpoint URL</strong> – The VA’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
+<li><strong>Endpoint URL</strong> – The AI Agent’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
  
 <li><strong>Endpoint Content Type</strong> – One of these content types expected from the specified endpoint URL: JSON, RSS, XML, Encoded JSON, CSV, or Text.
  
@@ -92,7 +92,7 @@ Define the fields described in the following table to create a new filter for a 
 <li><strong>Type Ahead</strong> – Displays a dynamically populated drop-down list of choices to the user at runtime when the user enters three or more characters that match the search results based on the response from the URL defined for the task. For example, a list of projects for a <em>JIRA</em> task notification message. Define the following properties for a dynamically populated drop-down. 
 <ul>
  
-<li><strong>Endpoint URL</strong> – The Va’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
+<li><strong>Endpoint URL</strong> – The AI Agent’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
  
 <li><strong>Endpoint Content Type</strong> – The content type expected from the specified endpoint URL. One of: JSON, RSS, XML, URL Encoded JSON, CCV, Text, Twitter Encoded JSON, Multipart/Form-data, or Multipart/Related.
  
@@ -113,10 +113,10 @@ Define the fields described in the following table to create a new filter for a 
 </li> 
 </ul>
 
-<li><strong>Dynamic Checkbox</strong> – Displays a list of choices that the end-user can select one or more from, which are dynamically populated at runtime based on the response from a URL for your VA , for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated list of choices as checkboxes. 
+<li><strong>Dynamic Checkbox</strong> – Displays a list of choices that the end-user can select one or more from, which are dynamically populated at runtime based on the response from a URL for your AI Agent , for example, a list of projects for a <em>JIRA</em> task notification. Define the following properties for a dynamically populated list of choices as checkboxes. 
 <ul>
  
-<li><strong>Endpoint URL</strong> – The VA’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
+<li><strong>Endpoint URL</strong> – The AI Agent’s endpoint URL, for example, https://app.asana.com/api/1.0/workspaces.
  
 <li><strong>Endpoint Content Type</strong> – The content type expected from the specified endpoint URL. One of: JSON, RSS, XML, Encoded JSON, CSV, or Text.
  

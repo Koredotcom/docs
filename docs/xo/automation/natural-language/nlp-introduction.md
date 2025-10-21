@@ -1,24 +1,24 @@
 # Natural Language Processing
 
-Conversational VAs enable machines to interact organically with users and deliver high-quality customer experiences. The key for a conversational VA to understand human interactions lies in its ability to identify the user’s intention (Intent Detection), extract useful information (Entity Extraction), and map them to relevant actions or tasks (Dialog Task execution). [Learn more](../../../virtual-assistants-overview/#how-do-conversational-virtual-assistants-work){:target="_blank"} about how Conversational VAs work and the key components that define their functioning.
+Conversational VAs enable machines to interact organically with users and deliver high-quality customer experiences. The key for an app to understand human interactions lies in its ability to identify the user’s intention (Intent Detection), extract useful information (Entity Extraction), and map them to relevant actions or tasks (Dialog Task execution). [Learn more](../../automation/about-automation-ai.md){:target="_blank"} about how Conversational VAs work and the key components that define their functioning.
 
-**Natural Language Processing (NLP)** is the science of deducing the intention and related information from natural conversations. The conversation flow in Kore.ai virtual assistants passes through various Natural Language Understanding (NLU) engines and conversation engines before the VA decides upon action and response.
+**Natural Language Processing (NLP)** is the science of deducing the intention and related information from natural conversations. The conversation flow in app passes through various Natural Language Understanding (NLU) engines and conversation engines before the decides upon action and response.
 
-This article gives an overview of the NLP flow within a Kore.ai virtual assistant and demonstrates how a developer can leverage the XO Platform’s features to build efficient VAs that elevate customer experiences..
+This article gives an overview of the NLP flow within a app and demonstrates how a developer can leverage the Platform’s features to build efficient VAs that elevate customer experiences..
 
-## Kore.ai’s NLP Approach
+## NLP Approach
 
-The Kore.ai Experience Optimization (XO) Platform employs a multi-engine approach to natural language, which combines the following three models for optimal outcomes:
+The Kore.ai Experience Optimization Platform employs a multi-engine approach to natural language, which combines the following three models for optimal outcomes:
 
 * **Fundamental Meaning (FM):** A computational linguistics approach that is built on ChatScript. The model analyzes the structure of a user’s utterance to identify each word by meaning, position, conjugation, capitalization, plurality, and other factors;
 * **Machine Learning (ML):** Kore.ai uses state-of-the-art NLP algorithms and models for machine learning to enable VAs to be trained and to gradually improve their intelligence;
 * **Knowledge Graph Engine (KG):** The Knowledge Graph helps you turn your static FAQ text into an intelligent and personalized conversational experience.
 
-With its three-fold approach, the XO Platform enables you to accelerate the Natural Language Understanding (NLU) performance of the virtual assistant and achieve optimal accuracy with relatively less training data. Kore.ai automatically enables the trained NLP capabilities to all built-in and custom VAs, and powers the way they communicate, understand, and respond to a user request.
+With its three-fold approach, the Platform enables you to accelerate the Natural Language Understanding (NLU) performance of the app and achieve optimal accuracy with relatively less training data. Kore.ai automatically enables the trained NLP capabilities to all built-in and custom VAs, and powers the way they communicate, understand, and respond to a user request.
 
 ## NLP Building Blocks
 
-When a virtual assistant built on the XO Platform receives a user utterance, it is processed to identify the user intent, extract any additional information (entities), and then answer the user via a task execution. NLP is mostly concerned with the first two – intent detection and entity extraction.
+When a app built on the Platform receives a user utterance, it is processed to identify the user intent, extract any additional information (entities), and then answer the user via a task execution. NLP is mostly concerned with the first two – intent detection and entity extraction.
 
 <img src="../images/nlp-building-blocks.png" alt="nlp building blocks" title="nlp building blocks" style="border: 1px solid gray; zoom:75%;">
 
@@ -26,7 +26,7 @@ When a virtual assistant built on the XO Platform receives a user utterance, it 
 
 The Conversation Flow involves the following steps:
 
-1. **NLP Analysis**: The user utterance goes through a series of NLP engines for entity extraction and intent detection. You can extend the out-of-the-box NLP functionality to use your own engine. You can install the [BotKit SDK](../../../sdk/bot-sdk-introduction/){:target="_blank"} and easily integrate the virtual assistant with any 3rd party NLP engine. The output from the 3rd party NLP engine complements the outputs from Kore.ai thus adding to the efficiency and accuracy of the engine. The engines provided by the XO Platform are as follows:
+1. **NLP Analysis**: The user utterance goes through a series of NLP engines for entity extraction and intent detection. You can extend the out-of-the-box NLP functionality to use your own engine. You can install the [BotKit SDK](../../sdk/bot-sdk-introduction.md){:target="_blank"} and easily integrate the app with any 3rd party NLP engine. The output from the 3rd party NLP engine complements the outputs from Kore.ai thus adding to the efficiency and accuracy of the engine. The engines provided by the Platform are as follows:
     * **Fundamental Meaning Engine** which breaks up the utterances based on the grammar constructs;
     * **Machine Learning Engine** which classifies individual words in the utterance, using an example-based, auto-learning training process;
     * **Knowledge Collection Engine** which mostly deals with FAQ type user queries. It can also be configured to trigger tasks in response to the user query;
@@ -48,7 +48,7 @@ The Conversation Flow involves the following steps:
 
 ## NLP Training
 
-In the previous section, we have seen the NLP process of the Kore.ai virtual assistant, but it needs some training on your part to ensure that the process proceeds as per your requirements. So, how do you train a fully functional VA to achieve the best results? How do you make maximum use of the features above?
+In the previous section, we have seen the NLP process of the Kore.ai app, but it needs some training on your part to ensure that the process proceeds as per your requirements. So, how do you train a fully functional app to achieve the best results? How do you make maximum use of the features above?
 
 We will see some basic guidelines for NLP training in this section, before going into the details of each of the NLU engines.
 
@@ -71,58 +71,58 @@ Based on this, a user utterance undergoes the following preprocessing before an 
 
 ### Scoping
 
-The first step in NLP training is to define the scope of the VA, narrowing down the problem the Virtual Assistant will need to solve. This helps in configuring the various training nuances you will require. This involves brainstorming sessions with various stakeholders like SMEs/BAs, Conversation Experience Designers, VA Developers, NLP Analysts/Data Engineers, NLP Trainers, and Testers.
+The first step in NLP training is to define the scope of the app, narrowing down the problem the Virtual Assistant will need to solve. This helps in configuring the various training nuances you will require. This involves brainstorming sessions with various stakeholders like SMEs/BAs, Conversation Experience Designers, app Developers, NLP Analysts/Data Engineers, NLP Trainers, and Testers.
 
-The basic guidelines we suggest to keep in mind while scoping the VA are the following:
+The basic guidelines we suggest to keep in mind while scoping the app are the following:
 
 
 
-* **Start with a problem to solve** – get a clear idea of what the VA is supposed to accomplish. Talk to business analysts and VA developers to understand the requirements and the actual functionality of the Virtual Assistant.
+* **Start with a problem to solve** – get a clear idea of what the app is supposed to accomplish. Talk to business analysts and app developers to understand the requirements and the actual functionality of the Virtual Assistant.
 * **Create a list of Intents** – this will streamline the entire process
-    * For each intent, identify the key results that the VA is aiming to accomplish;
+    * For each intent, identify the key results that the app is aiming to accomplish;
     * The focus should be on the needs of the user, not the platform requirements.
 
 * **Detail out example conversations** – both user utterances and responses
-    * Create user personas and think about the conversations they might engage in with your VA. 
+    * Create user personas and think about the conversations they might engage in with your app. 
     * Think through edge cases, follow-ups, and clarifying questions;
-    * You can leverage the Storyboard feature of the platform if it has not been already used for the VA development phase.
+    * You can leverage the Storyboard feature of the platform if it has not been already used for the app development phase.
 
 * **Brainstorm what an end user might ask as part of achieving their intent** – these would be the alternate utterances for every intent. Try to also include idioms and slang.
 
 
 ## Kore.ai’s NLU Engines and When to Use Them
 
-We have seen above that the Kore.ai XO Platform offers three main engines for NLU:
+We have seen above that the Platform offers three main engines for NLU:
 
 * Machine Learning (ML)
 * Fundamental Meaning (FM)
 * Knowledge Collection  / Knowledge Graph (KG)
 
-When do you use each engine? Each of these engines has settings and configurations. Our article on [Optimizing NLP to Improve VA Performance](../training/optimizing-bots/){:target="_blank"} discusses this in more detail. Here we will list out some broad guidelines as to which engine to use when.
+When do you use each engine? Each of these engines has settings and configurations. Our article on [Optimizing NLP to Improve Performance](./training/optimizing-bots.md){:target="_blank"} discusses this in more detail. Here we will list out some broad guidelines as to which engine to use when.
 
 ### Machine Learning Engine
 
-Machine Learning (ML) is the recommended engine for training a VA. The reason for this is its flexibility and auto-learn feature. Given a few examples, the engine learns and is capable of understanding similar new utterances. The training utterances need not be full sentences, as the ML can learn from phrases too.
+Machine Learning (ML) is the recommended engine for training a app. The reason for this is its flexibility and auto-learn feature. Given a few examples, the engine learns and is capable of understanding similar new utterances. The training utterances need not be full sentences, as the ML can learn from phrases too.
 
 If you have a large corpus for each intent that you are planning to implement, then use Machine Learning. If you don’t have a corpus it would be a good idea to develop one. In the long run, it is better to spend time building a large corpus and use ML rather than going for the other less time-consuming, easier options.
 
-The way you define a large corpus could differ depending on the intents. For example, if the intentions are very different from each other and can be understood using their sample data like “Find Flight” or “Change Sear“, then a corpus of 200-300 for each intent is sufficient. However, if intents are closer to each other (and usually start with a similar utterance, such as “Change Seat” and “Change Flight”, then the corpus should be in 1000s.
+The way you define a large corpus could differ depending on the intents. For example, if the intentions are very different from each other and can be understood using their sample data like “Find Flight” or “Change Sear“, then a corpus of 200-300 for each intent is sufficient. However, if intents are closer to each other and usually start with a similar utterance, such as “Change Seat” and “Change Flight”, then the corpus should be in 1000s.
 
-Similarly, if you are planning to use Deep Neural Networks, you need a higher number of samples for better predictions of both True Positives and True Negatives, as these networks are data-hungry. [Learn more](../../tools/intent-discovery/#train-the-utterances){:target="_blank"}.
+Similarly, if you are planning to use Deep Neural Networks, you need a higher number of samples for better predictions of both True Positives and True Negatives, as these networks are data-hungry. [Learn more](../tools/intent-discovery.md#train-the-utterances){:target="_blank"}.
 
 ### Knowledge Graph Engine
 
-If your intents are more query-like in nature than transactional tasks or if the content is in documents and you want the VA to answer user queries from documents, then use Knowledge Collection. This engine can also be used to trigger dialog tasks in response to user queries thus incorporating other features available within the Kore.ai XO Platform.
+If your intents are more query-like in nature than transactional tasks or if the content is in documents and you want the app to answer user queries from documents, then use Knowledge Collection. This engine can also be used to trigger dialog tasks in response to user queries thus incorporating other features available within the Kore.ai Platform.
 
-If you have a lot of Intents and do not have time to prepare alternate utterances, but you are able to manually annotate some important terms, use Knowledge Collection. It is advisable to spend some time building a corpus and going for Machine Learning since annotation in the Knowledge Graph works in a similar way to ML’s auto-learning process. [Learn more](../../../answers/knowledge-ai/knowledge-graph-training/){:target="_blank"}.
+If you have a lot of Intents and do not have time to prepare alternate utterances, but you are able to manually annotate some important terms, use Knowledge Collection. It is advisable to spend some time building a corpus and going for Machine Learning since annotation in the Knowledge Graph works in a similar way to ML’s auto-learning process. [Learn more](../knowledge-ai/knowledge-graph-training.md){:target="_blank"}.
 
 ### Fundamental Meaning Engine
 
-If you have cases where users employ idiomatic sentences or command-like sentences or if you are not too strict about some false positives then use the Fundamental Meaning (FM) engine. [Learn more](../training/fundamental-meaning/){:target="_blank"}.
+If you have cases where users employ idiomatic sentences or command-like sentences or if you are not too strict about some false positives then use the Fundamental Meaning (FM) engine. [Learn more](./training/fundamental-meaning.md){:target="_blank"}.
 
-## NLP Organization within the XO Platform
+## NLP Organization within the Platform
 
-To get started optimizing your VA’s NLP, you need to select the VA you’re working with, then access  **Automation > Natural Language**. The NLP options are categorized under various headings for your convenience:
+To get started optimizing your app’s NLP, access  **Automation > Natural Language**. The NLP options are categorized under various headings for your convenience:
 
-* **Training** – In the Training section, you can define how the NLP interpreter recognizes and responds to the user input for a VA, and then train the interpreter to recognize the correct user intent.
+* **Training** – In the Training section, you can define how the NLP interpreter recognizes and responds to the user input for a app, and then train the interpreter to recognize the correct user intent.
 * **NLU Config** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.

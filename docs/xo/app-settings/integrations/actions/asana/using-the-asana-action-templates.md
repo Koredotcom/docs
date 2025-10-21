@@ -6,9 +6,8 @@ You can use the **Prebuilt Action Templates** from your Asana integration to aut
 Steps to create a dialog task using Asana action templates:
 
 1. Ensure that you have configured [Asana](configuring-the-asana-action.md){:target="_blank"} and [installed templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} successfully.
-If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-2.  Go to **Automation AI** >**Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.  
+2.  Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.  
 
 
 3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
@@ -74,7 +73,7 @@ The following Asana action is supported in the latest version of the XO Platform
 
 Steps to fetch a task with ID from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _Get Task by Id_ dialog task is added with the following components:  
 <img src="../images/asana-action-img13.png" alt="Dialog task is added" title="Dialog task is added" style="border: 1px solid gray;zoom:50%;"/>  
     1. **getTaskById**: A user intent to fetch a task with ID from the Asana space.
@@ -124,8 +123,8 @@ Steps to fetch a task with ID from the Asana integration:
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to find a task with ID on Asana.
-6. Enter the task ID when prompted by the VA as shown below:  
+5. Follow the prompts in the AI Agent console to find a task with ID on Asana.
+6. Enter the task ID when prompted by the AI Agent as shown below:  
 <img src="../images/asana_template-img7.png" alt="Enter Task ID" title="Enter Task ID" style="border: 1px solid gray;zoom:50%;"/>
 
 7. You will notice that a task is found with the ID on Asana. Expand and click the **View Task** button.  
@@ -139,7 +138,7 @@ Steps to fetch a task with ID from the Asana integration:
 
 Steps to fetch tasks created by a user from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _Find Tasks Created by User_ dialog task is added with the following components:  
 <img src="../images/asana-template-img10-find_tasks.png" alt="Add dialog task to find tasks" title="Add dialog task to find tasks" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -215,10 +214,10 @@ Steps to fetch tasks created by a user from the Asana integration:
 3. **createdTaskMessage** – A message node with script to display responses to find tasks by a user.
 4. Click the **Train** tab to complete the Dialog task training.
 5. Click the **Talk to Bot** icon to test and debug the dialog task.
-6. Follow the prompts in the VA console to find tasks created with user ID on Asana as shown below:  
+6. Follow the prompts in the App console to find tasks created with user ID on Asana as shown below:  
 <img src="../images/asana-template-img12-find_tasks5.png" alt="Find tasks with user ID" title="Find tasks with user ID" style="border: 1px solid gray;zoom:50%;"/>
 
-7. Enter the user ID when prompted by the VA as shown below:  
+7. Enter the user ID when prompted by the AI Agent as shown below:  
 <img src="../images/asana-template-img13-find_tasks6.png" alt="Enter user ID" title="Enter user ID" style="border: 1px solid gray;zoom:50%;"/>
 
 8. You will notice that a task is found with the ID on Asana. Expand and click the **View Task** button.
@@ -230,7 +229,7 @@ Steps to fetch tasks created by a user from the Asana integration:
 
 Steps to fetch tasks created by a user from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _FindTasks Assigned to a User_ dialog task is added with the following components:  
 <img src="../images/asana-template-img15-find_task_assigned.png" alt="Dialog task to find task assigned to user is added" title="Dialog task to find task assigned to user is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -306,10 +305,10 @@ Steps to fetch tasks created by a user from the Asana integration:
 3. **assignedTaskMessage** – A message node with script to display responses to find tasks assigned to the user.
 4. Click the **Train** tab to complete the Dialog task training.
 5. Click the **Talk to Bot** icon to test and debug the dialog task.
-6. Follow the prompts in the VA console to find a task with ID on Asana as shown below:  
+6. Follow the prompts in the App console to find a task with ID on Asana as shown below:  
 <img src="../images/asana-template-img17-find_task_assigned3.png" alt="Find task" title="Find task" style="border: 1px solid gray;zoom:50%;"/>
 
-7. Enter the user ID when prompted by the VA as shown below:  
+7. Enter the user ID when prompted by the AI Agent as shown below:  
 <img src="../images/asana-template-img18-find_task_assigned4.png" alt="Enter task ID" title="Enter task ID" style="border: 1px solid gray;zoom:50%;"/>
 
 8. You will notice that a task is found with the ID on Asana. Expand and click the **View Task** button.
@@ -319,7 +318,7 @@ Steps to fetch tasks created by a user from the Asana integration:
 
 Steps to retrieve all projects from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _List All Projects_ dialog task is added with the following components:  
 <img src="../images/asana-template-img19-list_all_projects.png" alt="Dialog task for listing tasks" title="Dialog task for listing tasks" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -372,7 +371,7 @@ Steps to retrieve all projects from the Asana integration:
 3. **listProjectMessage** – A message node with script to display responses to find all projects..
 4. Click the **Train** tab to complete the Dialog task training.
 5. Click the **Talk to Bot** icon to test and debug the dialog task.
-6. Follow the prompts in the VA console to view all projects on Asana as shown below:  
+6. Follow the prompts in the App console to view all projects on Asana as shown below:  
 <img src="../images/asana-template-img21-list_all_projects2.png" alt="VA prompt to list projects" title="VA prompt to list projects" style="border: 1px solid gray;zoom:50%;"/> 
 
 7. You will notice that all projects are found on Asana. Expand and click the **View Project** button.
@@ -382,7 +381,7 @@ Steps to retrieve all projects from the Asana integration:
 
 Steps to retrieve all users from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](../configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the Asana Templates](configuring-the-asana-action.md#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _List All Users_ dialog task is added with the following components:  
 <img src="../images/asana-template-img22list_all_users.png" alt="Dialog task to list users" title="Dialog task to list users" style="border: 1px solid gray;zoom:50%;"/> 
 
@@ -415,7 +414,7 @@ Steps to retrieve all users from the Asana integration:
 3. **listAllUsersMessage** – A message node with script to display responses to find all projects.
 4. Click the **Train** tab to complete the Dialog task training.
 5. Click the **Talk to Bot** icon to test and debug the dialog task.
-6. Follow the prompts in the VA console to view all users on Asana as shown below:  
+6. Follow the prompts in the App console to view all users on Asana as shown below:  
 <img src="../images/asana-template-img24-list_all_users2.png" alt="Prompt in VA" title="Prompt in VA" style="border: 1px solid gray;zoom:50%;"/>
 
 7. You will notice that all users are found on Asana. Expand and click the **View User** button.

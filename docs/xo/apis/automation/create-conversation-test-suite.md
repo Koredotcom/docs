@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Create (Import) a Test Suite API
 
 To create a conversation test suite by importing the test cases from a given file. This API returns **_dsId_**, the ID to check the import status.
@@ -35,7 +37,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Conversation Tests Management
+<li>App Builder: Conversation Tests Management
 
 <li>Admin Console: Conversation Tests Management
 </li>
@@ -66,7 +68,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
   <tr>
    <td>StreamID</td>
-   <td>The Stream ID can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The Stream ID can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>

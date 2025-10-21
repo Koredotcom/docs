@@ -1,4 +1,5 @@
-# The All-new AI for Work Platform
+# Introduction to AI for Work
+
 AI for Work is a unified enterprise platform that significantly enhances enterprise productivity by automating routine tasks and enabling employees to focus on high-value work. The platform addresses three critical enterprise challenges:
 
 * Information Silos: Employees struggle to locate information spread across multiple systems.
@@ -41,7 +42,7 @@ AI for Work is designed to provide a unified and flexible framework for implemen
     
     * Pre-built Agents: AI for Work includes a set of pre-configured AI agents that can be easily customized and integrated into workflows.
     
-    * Custom Agents: Enterprises can develop their own custom AI agents tailored to their specific requirements.       
+    * Custom Agents: Enterprises can develop their own custom AI agents tailored to their specific requirements.
 
 4. **Enterprise RAG Engine**: This component powers intelligent information retrieval and processing capabilities within the platform.
         

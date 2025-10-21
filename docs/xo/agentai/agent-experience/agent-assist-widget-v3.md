@@ -1,6 +1,6 @@
-# AgentAssist Widget
+# Agent AI Widget
 
-The Agent AI is an AI powered virtual assistant to optimize contact center agent performance. It offers seamless assistance, promoting enhanced productivity and improved customer satisfaction. Its user-friendly interface and real-time support capabilities let agents effortlessly solve complex customer interactions.
+The Agent AI is an AI powered solution to optimize contact center agent performance. It offers seamless assistance, promoting enhanced productivity and improved customer satisfaction. Its user-friendly interface and real-time support capabilities let agents effortlessly solve complex customer interactions.
 
 The following features are available in the Agent AI widget:
 
@@ -20,30 +20,31 @@ The following features are available in the Agent AI widget:
 * **Image or file attachment**: Allows image or file attachments during live conversations.
 * **Theme selection**: Allows customization of the widget appearance by letting you select a Dark or Light theme.
 * **In-line Digital Form**: Lets you easily collect customer information during live conversations.
+* **Agentic Copilot**: The Agentic Copilot runs end-to-end conversations autonomously with Agents supervising the conversations. Agents can cancel, override, or edit the Agentic conversations, as needed. 
 
 <img src="../widget-images/agent-assist-widget-v3-appearance.png" alt="agent-assist-widget-v3-appearance.png" title="agent-assist-widget-v3-appearance.png" style="border: 1px solid gray; zoom:80%;">
 
 ## Widget Tabs
 
-The widget consists of four tabs–Search, My Bot, Assist, Transcript (for Voice channel)–and two buttons (Settings and theme) to help agents perform different tasks and activities.
+The widget consists of five tabs—Search, My AI Agent (Bot), Assist, Transcript (for Voice channel), More–and two buttons (Settings and theme) to help agents perform different tasks and activities.
 
-**Agent AI tabs:**
+**Agent AI tabs**:
 
 <img src="../WidgetContentUpdate_3.3.0/agent-assist-widget-tabs.png" alt="agent-assist-widget-tabs.png" title="agent-assist-widget-tabs.png" style="border: 1px solid gray; zoom:80%;">
 
 ### Search Tab
 
-This tab shows all configured Dialog Tasks at the bot level and also gives search capabilities, wherein agents can search Dialog Tasks, frequently asked questions (FAQ), Generative AI answers, web pages, files, and more. The content in this section dynamically updates based on agent interactions. Agents can scroll through the list to get visibility of all the automations that are readily available to execute. If you click the “Run with Agent input” button, the dialog moves to the My Bot section, and you can run the dialog from there.
+This tab shows all configured Dialog Tasks at the app level and also gives search capabilities, wherein agents can search Dialog Tasks, frequently asked questions (FAQ), Generative AI answers, web pages, files, and more. The content in this section automatically updates based on agent interactions. Agents can scroll through the list to view all available automations. Selecting the “Run with Agent input” button moves the Dialog Task to the **My AI Agent (Bot)** section, where it can be executed. The search functionality automatically updates the library list to match the search query. As you type, relevant words and phrases appear in real time.
 
-<img src="../WidgetContentUpdate_3.3.0/search-tab.png" alt="updated-search-bar" title="updated-search-bar" style="border: 1px solid gray; zoom:80%;">
+<img src="../WidgetContentUpdate_3.3.0/updated-search-functionality.png" alt="updated-search-functionality" title="updated-search-functionality" style="border: 1px solid gray; zoom:80%;">
 
 The following buttons are available in this section:
 
 * **Run button**: For Dialog Tasks. Click to run a configured Dialog Task.
-* **Run with Agent’s input**: Click this button to run a Dialog Task with agent’s input. The agent can customize the content and decide whether to send a dialog or not. Selecting this option automatically moves you to the My Bot section.
+* **Run with Agent’s input**: Click this button to run a Dialog Task with agent’s input. The agent can customize the content and decide whether to send a dialog or not. Selecting this option automatically moves you to the My AI Agent (Bot) section.
 * **Spyglass icon**: After entering the search content, click the “spyglass” icon in the search bar or press the “Enter” key to search.
 
-#### Timeout and Server Errors
+#### Timeout, Server Errors, and No Search Results
 The **Search** tab displays error messages for searches exceeding 10 seconds, dialog tasks not configured, and server issues.
 
 * Timeout/dialog tasks not configured:  
@@ -52,34 +53,40 @@ The **Search** tab displays error messages for searches exceeding 10 seconds, di
 <img src="../WidgetContentUpdate_3.3.0/timeout-second-time.png" alt="timeout-second-time" title="timeout-second-time" style="border: 1px solid gray; zoom:80%;">
 * Server errors:  
 <img src="../WidgetContentUpdate_3.3.0/server-error.png" alt="server-error" title="server-error" style="border: 1px solid gray; zoom:80%;">
+* Dialog Tasks not found:  
+<img src="../WidgetContentUpdate_3.3.0/dialog-tasks-not-found.png" alt="dialog-tasks-not-found" title="dialog-tasks-not-found" style="border: 1px solid gray; zoom:80%;">
+* No matching search results:  
+<img src="../WidgetContentUpdate_3.3.0/no-matching-search-results.png" alt="no-matching-search-results" title="no-matching-search-results" style="border: 1px solid gray; zoom:80%;">
 
-### My Bot Tab
+### My AI Agent (Bot) Tab
 
-My Bot functionality allows agents to run the entire automation by themselves. Agents provide inputs to the bot and obtain the desired results.
+My AI Agent (Bot) functionality allows agents to run the entire automation by themselves. Agents provide inputs to the app and obtain the desired results.
 
-My Bot tab displays the list of “next best action” suggestions for the agent based on the current conversation status and other interaction parameters.
+My AI Agent (Bot) tab displays the list of “next best action” suggestions for the agent based on the current conversation status and other interaction parameters.
 
 <img src="../widget-images/mybot-tab.png" alt="mybot-tab.png" title="mybot-tab.png" style="border: 1px solid gray; zoom:80%;">
 
-My bot functionality can be used in multiple circumstances (but not limited to): 
+My AI Agent (Bot) functionality can be used in multiple circumstances (but not limited to): 
 
 * If Automation fails, the agent can rerun it by providing inputs manually, which helps to reduce the average handle time (AHT) and makes it less frustrating for customers as they don’t have to repeat the same information.
-* Agents can run MyBot automation in parallel and seek information directly from the bot.
+* Agents can run My AI Agent (Bot) automation in parallel and seek information directly from the app.
 
 ### Assist Tab
 
-The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, Agent Coaching progression, a “bulb” icon (if there is a Dynamic Playbook match), and a summary generation button. For these features to be available, they should be configured on your device. This tab accepts file or image attachments during live conversations up to the size of 25 MB. If the file or image is not automatically detected, you can override and manually attach the file. It also features the "up" and "down" arrow buttons to scroll to the first and last messages in the Assist tab (these buttons appear only after the messages in the Assist tab are large enough to require a scroll bar). 
+The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Agentic Copilot messages, Dialog Tasks, Playbooks, Agent Coaching progression, a “bulb” icon (if there is a Dynamic Playbook match), and a summary generation button. For these features to be available, they should be configured on your device. This tab accepts file or image attachments during live conversations up to the size of 25 MB. If the file or image is not automatically detected, you can override and manually attach the file. It also features the "up" and "down" arrow buttons to scroll to the first and last messages in the Assist tab (these buttons appear only after the messages in the Assist tab are large enough to require a scroll bar). 
 
 <img src="../widget-images/assist-tab.jpg" alt="assist-tab" title="assist-tab" style="border: 1px solid gray; zoom:80%;">  
 
 The Assist tab facilitates the following:
 
 * Guide agents through conversations by providing the best response suggestions.
+* Display Agentic Copilot messages. After the configured **Welcome Events** are executed, the message *"Agentic Copilot is actively listening to your conversation and ready to assist automatically."* is displayed. 
+    * Delays auto sending messages, allowing agents to cancel or manually send messages, and works across parallel chats.  
 * Automatic retrieval of information from knowledge base (KB) based on user intent.
 * Provide structured training and coaching to agents.
-* Run bot for customers based on customer-provided information.
+* Run app for customers based on customer-provided information.
 * Provide a historical view to look at the previously executed automation.
-* View Conversation History for chat conversations– The **History** tab shows the record of user-bot interaction.
+* View Conversation History for chat conversations– The **History** tab shows the record of user-app interaction.
 * Send/Copy button.
 * Quickly scroll up and down to the first and last messages with the help of the **up**/**down** arrows.
 * Feedback for Dialog Task and Knowledge AI.
@@ -89,8 +96,27 @@ The Assist tab facilitates the following:
 
 The Assist tab features the following:
 
- * **Running Playbook stages:** Shows the total and adhered stages of a running playbook. For example, 1/3 means 1 out of 3 stages of a playbook has been adhered to.
- * **Proceed to Close:** This button is available when a playbook is running. Clicking this button leads to a change in the playbook running status from Open to Close, and agents are prompted to ask if the customer needs any other help before ending the call.
+* **Running Playbook stages:** Shows the total and adhered stages of a running playbook. For example, 1/3 means 1 out of 3 stages of a playbook has been adhered to.
+* **Proceed to Close:** This button is available when a playbook is running. Clicking this button leads to a change in the playbook running status from Open to Close, and agents are prompted to ask if the customer needs any other help before ending the call.
+* **Agentic Copilot messages**: The messages appear with a “Sending” button that delays auto-send for up to 10 seconds, based on the value set in the **Set message delay before auto send** field in the **Agent AI Widget Settings** section). During this time, Agents can click the **x** icon next to the **sending** button to cancel auto-send and choose to send or copy the message manually. 
+
+    The auto-send functionality works uninterrupted across multiple parallel chats. The following screenshot shows the auto-send functionality button in progress along with the **Override** button:  
+    <img src="../widget-images/agentic-app-in-widget.png" alt="agentic-app-in-widget" title="agentic-app-in-widget" style="border: 1px solid gray; zoom:80%;"> 
+
+   * To cancel auto sending, click “x” beside the “sending” button:  
+    <img src="../widget-images/agentic-app-messages.png" alt="agentic-app-messages" title="agentic-app-messages" style="border: 1px solid gray; zoom:80%;"> 
+
+       * Click the “copy” icon to copy the message to the “chat response” field.
+       * Click the “Send” button to send the message manually.
+       * Click “Override” to discard the Agentic prompt and enter your own response manually.
+       * To stop/resume the “auto send” function, click the “stop/resume” icon in the top-right corner of the Agent AI widget, next to the “pause/resume” icon.
+       * To pause or resume the Agentic app function, click the “pause/resume” icon in the top-right corner of the Agent AI widget. 
+   * When the **Allow Auto Send Message** feature is enabled, the timer for each Agentic response starts only after the previous message is sent.  
+   * If the view doesn’t auto-scroll to the latest message, an **arrow** appears at the bottom-right, showing the number of stacked Agentic messages. Click the **arrow** to scroll to the latest messages.  
+   * To regenerate a failed Agentic response, double-click the corresponding customer message.
+   * If Agentic Copilot fails to send a response, the auto-send feature is disabled automatically.  
+   * For messages outside the app’s defined scope, Agentic indicates it is not trained to respond. 
+
 * **Playbook adherence button**: If a Playbook is running, adherence to a step happens automatically when the agent’s utterance matches exactly with the Playbook step adherence utterance. If it doesn’t match, the agent can click this button to indicate a step has been completed (adhered).
 * **Send/Copy buttons**: These two buttons appear for Playbooks (if enabled) and Dialog Tasks. Click **Send** to send the exact message appearing on the widget, or click **Copy** to customize the message before sending it to the customer.
 * **Up/down arrow buttons**: These buttons appear only after the messages in the Assist tab are large enough to require a scroll bar. Click the **up** and **down** arrows to go to the first and last messages respectivly.
@@ -177,22 +203,47 @@ Scenario 2: Smart Assist Application Suite
 The Transcription feature is available only for the voice calls. When a call begins, the Transcript tab displays the real-time transcription of conversations between agents and customers in text format. The transcriptions are available for the agent throughout the session and provide a historical record for future reference. Agents can read through and copy/paste it. If the Auto-scroll Widget Content toggle is enabled in the Widget Settings page, the system automatically navigates to the last message content for new utterances. Agents can manually scroll up and down to read through the content.  
 <img src="../widget-images/transcript-tab.png" alt="transcript-tab.png" title="transcript-tab.png" style="border: 1px solid gray; zoom:80%;">
 
+### More Tab
+
+The **More** (ellipsis) button lets agents share overall feedback on the Agent AI widget. Agents can select up to five positive or negative options and add comments (if the comment box is enabled). 
+!!! note
+
+    If the conversation is transferred, feedback from both agents is saved in the logs. 
+
+#### Steps to Submit Overall Widget Feedback
+
+1. Click the **More** (ellipsis) button > **Feedback**.  
+    <img src="../widget-images/overall-widget-feedback-button.png" alt="overall-widget-feedback-button" title="overall-widget-feedback-button" style="border: 1px solid gray; zoom:80%;">  
+
+2. Click one of the tabs—**Satisfied** or **Unsatisfied**. 
+
+    !!! note
+
+        Select **Satisfied** for positive and **Unsatisfied** for negative feedback messages.  
+
+    <img src="../widget-images/positive-feedback.png" alt="positive-feedback" title="positive-feedback" style="border: 1px solid gray; zoom:80%;">  
+
+3. Select the feedback messages from the list, and enter any additional comments. In the following screenshot, agent has selected the **Unsatisfied** tab, the **Irrelevant Dialogs** message, and entered a comment:  
+    <img src="../widget-images/additional-comments.png" alt="widget-images/additional-comments" title="widget-images/additional-comments" style="border: 1px solid gray; zoom:80%;">  
+
+4. Click **Submit**.
+
 ### Settings
 
 The Settings tab gives you access to set:
 
-* The listening mode of the bot
-* Auto-scroll functionality of the content in the Assist, My Bot, and Transcript tabs.
-* Available documents and FAQs
-* Option to choose a language  
+* The listening mode of the app.
+* Auto-scroll functionality of the content in the Assist, My AI Agent (Bot), and Transcript tabs.
+* Available documents and FAQs.
+* Option to choose a language.  
 <img src="../WidgetContentUpdate_3.3.0/widget-settings-section.png" alt="settings-tab-updated" title="settings-tab-updated" style="border: 1px solid gray; zoom:80%;">
 
 #### Proactive Mode
 
-The Proactive Mode toggle allows you to put the bot in listening mode. You can turn off the toggle if it is not working as expected.
+The Proactive Mode toggle allows you to put the app in listening mode. You can turn off the toggle if it is not working as expected.
 
 #### Auto-Scroll Content
-The Auto-Scroll Content toggle lets you manage the scrolling functionality of content in the Assist, My Bot, and Transcript tabs. You can turn on or off the toggle, as required.
+The Auto-Scroll Content toggle lets you manage the scrolling functionality of content in the Assist, My AI Agent (Bot), and Transcript tabs. You can turn on or off the toggle, as required.
 
 #### Help & Support
 
@@ -220,8 +271,8 @@ Agent Ai V3 introduces many additional features and updates over Agent AI V2. Th
 The following UI updates are done:
 
 * **Tab Configuration**:
-    * V2 features three tabs - **Assist**, **Library**, and **My Bot** - and a search bar at the bottom.
-    * V3 features four tabs - **Search**, **My Bot**, **Assist**, and **Settings**.
+    * V2 features three tabs - **Assist**, **Library**, and **My AI Agent (Bot)** - and a search bar at the bottom.
+    * V3 features four tabs - **Search**, **My AI Agent (Bot)**, **Assist**, and **Settings**.
 * **Library Tab Transformation**: The **Library** tab in V2 has been transformed into the **Search** tab in V3.
 * **Tab Placement**: In V2, tabs are positioned at the top but in V3 they are moved to the bottom of the screen.
 * **Sentiment Analysis** **Display**: The **Sentiment Analysis** display is always visible in V3, but it was visible only upon a customer utterance match in V2. V3 has badges, an icon (for example, Positive, Negative and Neutral), and an emoji for every customer utterance. Clicking the badge takes you to the sentiment graph (as was the case in V2).

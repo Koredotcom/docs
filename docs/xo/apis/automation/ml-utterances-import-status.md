@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # ML Utterances Import Status API
 
 To get the status of the ML utterances import request made through Import ML Utterances API.
@@ -36,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Utterances Import
+<li>App Builder: Utterances Import
 
 <li>Admin Console: Test and Train > Utterances Import
 </li>

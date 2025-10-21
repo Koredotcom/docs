@@ -1,3 +1,5 @@
+--8<-- "includes/searchai-api-back-link.md"
+
 # RACL Resolver APIs
 
 When Access Control is enabled for content ingested from a specific connector, SearchAI requires user identity information to be included in the Search API request. This identity data is used to determine the user's access rights and ensure the appropriate content is returned. The RACL Resolver APIs manage the fields that handle the transmission of identity information within the Search API, ensuring secure and accurate access resolution.

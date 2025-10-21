@@ -24,39 +24,12 @@ You can find the Waiting Flows Live Board by navigating to **Contact Center AI**
 
 The Waiting Flows section displays the following fields:
 
-<table>
-  <tr>
-   <td><strong>FIELD</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Name
-   </td>
-   <td>The name of the Waiting Experience entry.
-   </td>
-  </tr>
-  <tr>
-   <td>
-Skill Rule
-   </td>
-   <td>The skill rules that have been configured for the entry. The waiting experience. Conversations matching these skill rules will go through the waiting experience configured within this entry.
-   </td>
-  </tr>
-  <tr>
-   <td>Description
-   </td>
-   <td>The description of the Waiting Experience entry.
-   </td>
-  </tr>
-  <tr>
-   <td>Edit (Icon)
-   </td>
-   <td>This icon lets you access the configuration window for a Waiting Experience entry, where you can update the available options.
-   </td>
-  </tr>
-</table>
+| **FIELD**     | **DESCRIPTION**                                                                                                                                               |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name          | The name of the Waiting Experience entry.                                                                                                                     |
+| Skill Rule    | The skill rules that have been configured for the entry. Conversations matching these skill rules will go through the waiting experience configured in this entry. |
+| Description   | The description of the Waiting Experience entry.                                                                                                              |
+| Edit (Icon)   | This icon lets you access the configuration window for a Waiting Experience entry, where you can update the available options.                                 |
 
 ## Add Waiting Experience
 

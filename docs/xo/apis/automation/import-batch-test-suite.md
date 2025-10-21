@@ -1,3 +1,4 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Import Batch Test Suite API
 
@@ -37,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Management
+<li>App Builder: Batch Tests Management
 
 <li>Admin Console: Batch Tests Management
 </li>
@@ -70,7 +71,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td>The <em>Bot ID</em> or <em>Stream ID</em> that can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <em>Bot ID</em> or <em>Stream ID</em> that can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -92,9 +93,19 @@ curl --location --request POST \
          "fileName": "5ff70b47a664d31999d9202c",
          "fileType": "json",
          "importType": "update",
-         "name": "hgf"
+         "name": "hgf",
+         "engine": "dgpt"
         }'
 ```
+!!! note
+
+    * If [engine = "regression" (or) empty] or engine is not provided, it will execute for ML Batch Testing.
+
+    * If engine is set to "dgpt", it will execute for Dialog GPT Batch Testing.
+
+
+
+
 
 ## Body Parameters
 

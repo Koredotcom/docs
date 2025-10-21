@@ -1,6 +1,8 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Channel Enablement API
 
-To initiate enable a channel for a virtual assistant.
+To initiate enable a channel for an AI Agent.
 
 <table>
   <tr>
@@ -37,7 +39,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Not Applicable
+<li>App Builder: Not Applicable
 
 <li>Admin Console: Channel Management
 </li>

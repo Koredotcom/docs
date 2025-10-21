@@ -1,6 +1,6 @@
 # Alert Task – Advanced Settings
 
-In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">Learn more</a>.
+In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user.  [Alert task](../use-cases/alert-tasks.md).
 
 ## Overview
 
@@ -12,7 +12,7 @@ To define advanced settings for a task, on the **Settings** tab, click the **Exp
 
 ## Initial Polling Setup
 
-Initial polling is an option you can define to enable display of events to end-users immediately after they set up the task. For example, for a Travel News VA , you can enable initial polling to show the last 10 news posts immediately after the end-user adds the task to their application. If initial polling is not defined, the task polling begins after the specified **Trigger Interval** has elapsed.
+Initial polling is an option you can define to enable display of events to end-users immediately after they set up the task. For example, for a Travel News AI Agent , you can enable initial polling to show the last 10 news posts immediately after the end-user adds the task to their application. If initial polling is not defined, the task polling begins after the specified **Trigger Interval** has elapsed.
 
 To enable and configure initial polling, in the **Perform Initial Poll** section, select **Yes**. In the **No of posts** field, enter the number of previous posts that should be posted immediately in the end-user application, as shown in the following illustration.
 

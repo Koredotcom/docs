@@ -12,15 +12,10 @@ This dashboard displays graphs and charts derived from real-time feedback data f
 * The overall score for the given period and its trend.
 * The comprehensive feedback results with an option to export the results for review.
 
-!!! note
-
-    The **Feedback Dashboard** is available in Release 10.0.0 (January 2023).
-
-
 
 **To view the Feedback dashboard, follow the steps**: 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/navigate-to-feedback-dashboard.png" alt="Navigate to Feedback Dashboard" title="Navigate to Feedback Dashboard" style="border: 1px solid gray; zoom:80%;">
 
@@ -31,8 +26,6 @@ This dashboard displays graphs and charts derived from real-time feedback data f
 ## Dashboard Filters
 
 The **Feedback Dashboard** displays analytics data on the **Feedback Survey responses** from customers based on the following filters:
-
-
 
 *  **Date**: Indicates the date range to filter the conversation sessions and capture the survey feedback responses.
 
@@ -59,7 +52,7 @@ The filter options include the following:
     <img src="../images/dashboard-filters-3.png" alt="Dashboard Filters 3" title="Dashboard Filters 3" style="border: 1px solid gray; zoom:80%;">
 
 
-2. **Survey Name**: This is the feedback survey name provided when creating a feedback survey under **Build** > **Configurations** > **Feedback Survey**. You can either select **All Surveys** to capture the Feedback Survey analytics data of all the surveys configured for the virtual assistant or a specific survey name from the dropdown list.
+2. **Survey Name**: This is the feedback survey name provided when creating a feedback survey under **Build** > **Configurations** > **Feedback Survey**. You can either select **All Surveys** to capture the Feedback Survey analytics data of all the surveys configured for the AI Agents or a specific survey name from the dropdown list.
 
 
     <img src="../images/dashboard-filters-4.png" alt="Dashboard Filters 4" title="Dashboard Filters 4" style="border: 1px solid gray; zoom:80%;">
@@ -185,7 +178,7 @@ For the **Like/Dislike** survey type, the line graph displays the **respondentsâ
 
 ### User-level Feedback
 
-This information grid represents the metadata for the _Total number of conversations_ for every unique conversation path between the virtual assistant and the user. This grid summarizes and lists the data of all the feedback surveys mapped to the selected **survey type** filter. The fields for which data is displayed are:
+This information grid represents the metadata for the _Total number of conversations_ for every unique conversation path between the AI Agents and the user. This grid summarizes and lists the data of all the feedback surveys mapped to the selected **survey type** filter. The fields for which data is displayed are:
 
 
 <table>
@@ -222,7 +215,7 @@ This information grid represents the metadata for the _Total number of conversat
   <tr>
    <td><strong>Channel</strong>
    </td>
-   <td>The conversation channel of the user and virtual assistant interaction. This can be a web/mobile client or a messaging platform.
+   <td>The conversation channel of the user and AI Agents interaction. This can be a web/mobile client or a messaging platform.
    </td>
   </tr>
   <tr>

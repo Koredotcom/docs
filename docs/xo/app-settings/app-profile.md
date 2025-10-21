@@ -43,7 +43,7 @@ Modify one or more of the settings described in the following table.
   <td>
   Use the following options to configure the use of Search AI Answers.
   
-  <b>Intent Identification Priority</b>: This priority is used when the bot needs to identify the intent from the initial user utterances. This can take the following values:
+  <b>Intent Identification Priority</b>: This priority is used when the app needs to identify the intent from the initial user utterances. This can take the following values:
   
    <ul> 
     <li> Automation first, Search AI as Fallback: The assistant prioritizes the automation framework for identifying the intent and answering the user input. If intent identification or action fails, the assistant uses the Search AI to generate a response.</li>
@@ -59,9 +59,9 @@ Modify one or more of the settings described in the following table.
    <td>
 <ul>
 
-<li>Select <strong>General Public</strong> if the App is for public use for both managed and unmanaged users in your domain. VA assignments are not required and when the Bots Admin deploys the VA, it is available for use by all domain users. Use this option to make a VA widely available for all user types.
+<li>Select <strong>General Public</strong> if the App is for public use for both managed and unmanaged users in your domain. App assignments are not required and when the Apps Admin deploys the App, it is available for use by all domain users. Use this option to make an App widely available for all user types.
 
-<li>Select <strong>Enterprise Users</strong> if the App is for managed users only in a domain, for example, for your employees or paid customers. After the Bots Admin approves and deploys this VA, it is not available to any managed users unless explicitly assigned by the Bots Admin. Use this option when you want to control which managed users in your domain can access and set up this VA on their devices.
+<li>Select <strong>Enterprise Users</strong> if the App is for managed users only in a domain, for example, for your employees or paid customers. After the Apps Admin approves and deploys this app, it is not available to any managed users unless explicitly assigned by the Apps Admin. Use this option when you want to control which managed users in your domain can access and set up this AI Agent on their devices.
 Once the <strong>Target Audience</strong> is defined and saved, you cannot change them.
 </li>
 </ul>
@@ -82,18 +82,18 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
   <tr>
    <td>Variable Namespaces
    </td>
-   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components. <a href="../integrations/managing-namespace" target="_blank"></a>.
+   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components.
    </td>
   </tr>
   <tr>
    <td>Subdomain (aka Tenancy URL)
    </td>
-   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the VA, for example, <em>kore</em>, for the <em>www.<strong>kore</strong>.someWebService.com</em> tenant-specific URL. When enabled define the following properties:
+   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the AI Agent, for example, <em>iana</em>, for the <em>www.<strong>iana</strong>.org</em> tenant-specific URL. When enabled define the following properties:
 <ul>
 
-<li><strong>Help Hint</strong> – The text displayed to the end-user to prompt the user to enter a tenant-specific URL for the VA.
+<li><strong>Help Hint</strong> – The text displayed to the end-user to prompt the user to enter a tenant-specific URL for the AI Agent.
 
-<li><strong>Base URL</strong> – The base URL for the VA that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://{tenant}.someWebService.com</em> where <em>{tenant}</em>, including the braces, represents the tenant name.
+<li><strong>Base URL</strong> – The base URL for the AI Agent that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://www.{iana}.org/</em> where <em>{iana}</em>, including the braces, represents the tenant name.
 </li>
 </ul>
    </td>
@@ -114,7 +114,7 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
   <tr>
    <td>Error Message(s)
    </td>
-   <td>Edit or add custom <strong>HTTP Status Codes</strong> and error messages for your VA. For more information, see <a href="#customizing-error-messages">Customizing Error Messages</a>.
+   <td>Edit or add custom <strong>HTTP Status Codes</strong> and error messages for your AI Agent. For more information, see <a href="#customizing-error-messages">Customizing Error Messages</a>.
    </td>
   </tr>
 </table>
@@ -123,13 +123,13 @@ Any edits made to the **App Profile** are auto-saved.
 
 ## Customizing Error Messages
 
-In the Builder, each VA and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai VAs and tasks. When you create a VA or a task, you can add or customize error messages for HTTP Status codes in the **Error Messages** section of the VA or task settings. 
+In the Builder, each AI Agent and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai Agents and tasks. When you create an AI Agent or a task, you can add or customize error messages for HTTP Status codes in the **Error Messages** section of the AI Agent or task settings. 
 
 <img src="../images/app-prof-img2-general-settings-error-messages.png" alt="Error Messages" title="Error Messages" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Custom Status Codes
 
-There are approximately 25 HTTP Status codes defined by default for a VA or task. **To customize an HTTP Status code**
+There are approximately 25 HTTP Status codes defined by default for an AI Agent or task. **To customize an HTTP Status code**
 
   1. Open the app or task in UXO.
   2. Navigate to **Settings**.
@@ -150,7 +150,9 @@ There are approximately 25 HTTP Status codes defined by default for a VA or task
   <img src="../images/app-prof-img4-general-settings-error-messages-setup-actions.png" alt="Action on Error" title="Action on Error" style="border: 1px solid gray;zoom:50%;"/>   
 
   7. In the **Message** field (available only for the default messages), enter the text message displayed to the end-user.
+
   8. In the **Error Recurrence** field, specify the number of consecutive error codes must be returned before the action is executed. By default, the **Error Recurrence** field is set to ” 1 “.
+  
   9. Click **Add** to save and close the **Setup Error Message** dialog for your custom error message.
 
 To create a new HTTP Status code, click **Add Error Message**, define the fields for your new code as described in the preceding section, and then click **Add.**

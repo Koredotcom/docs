@@ -51,7 +51,7 @@ Field name
   <tr>
    <td>sourceUrl
    </td>
-   <td>This is the URL of the primary source. For example, for content from the Kore website, if recordUrl: <a href="www.kore.ai/products">www.kore.ai/products</a>, set sourceUrl: www.kore.ai. If this is empty, it is set to the same value as the recordUrl. 
+   <td>This is the URL of the primary source. For example, for content from the Kore website, if recordUrl: www.example.org/products, set sourceUrl: www.example.org. If this is empty, it is set to the same value as the recordUrl. 
    </td>
    <td>No 
    </td>
@@ -172,7 +172,7 @@ Click **Proceed**. This will ingest content from the files into the application.
 
 ![Files](./images/json/files.png "Files")
 
-To add more content to the connector, add JSON Connector again,** select the same source name** as before, and add more files. 
+To add more content to the connector, add JSON Connector again,**select the same source name** as before, and add more files. 
 
 ![Add Files](./images/json/add-files.png "Add Files")
 

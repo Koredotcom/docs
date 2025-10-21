@@ -1,10 +1,12 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Get a specific Conversation
 
 Get a particular conversation by providing the Conversation Id.
 
 | **Method**       | GET                                                                                          |
 |--------------|----------------------------------------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations/{{conversation-id}}` |
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations/{{conversationId}}` |
 | **Content Type** | `application/json`                                                                          |
 | **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                                                                           |
 | **API Scope**    | SmartAssist Analytics                                                                       |
@@ -13,8 +15,8 @@ Get a particular conversation by providing the Conversation Id.
 
 | **PARAMETER** | **DESCRIPTION**                                      | **TYPE**           |
 |-----------|--------------------------------------------------|----------------|
-| host      | The Environment URL. For example, https://platform.kore.ai | string, required |
-| streamId  | Bot ID or Stream ID. You can access it from the General Settings page of the bot. | string, required |
+| host      | The Environment URL. For example, `https://platform.kore.ai` | string, required |
+| streamId  | botId or streamId. You can get it from the App Settings page. | string, required |
 
 ## Sample Request
 

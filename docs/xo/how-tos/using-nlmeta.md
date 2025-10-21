@@ -1,24 +1,21 @@
 
-
-
 # Using nlMeta
 
-
-Sometimes, one wants to control the flow of the virtual assistant by taking an alternate path to improve the user’s experience.
+Sometimes, one wants to control the flow of the assistant by taking an alternate path to improve the user’s experience.
 
 Consider the following scenarios:
 
 
-
 1. The NLP engine might have identified an intent based on the user's utterance. However, based on additional information gathered from the backend systems, the webpage where the SDK is hosted, or any other external information, a different task might be more suitable.
-2. Consider a flight booking virtual assistant that greets the user with the best ongoing deals as part of the Welcome message. Based on the user selection, the ‘book flight’ task can be programmatically invoked by prepopulating the travel details, like source city, destination city, travel, etc., from the deal information presented to the user.
 
-Kore.ai provides a way to programmatically pass information to the virtual assistant using *nlMeta* data. This can be used in the BotKit SDK, Widget SDK, and Web SDK to pass information like intent to be triggered, entity values, and other task settings, as needed.
+2. Consider a flight booking assistant that greets the user with the best ongoing deals as part of the Welcome message. Based on the user selection, the ‘book flight’ task can be programmatically invoked by prepopulating the travel details, like source city, destination city, travel, etc., from the deal information presented to the user.
+
+Kore.ai provides a way to programmatically pass information to the assistant using *nlMeta* data. This can be used in the BotKit SDK, Widget SDK, and Web SDK to pass information like intent to be triggered, entity values, and other task settings, as needed.
 
 
 ## nlMeta
 
-The *nlMeta* is an object that can be used to pass information on to the bot. The bot would use this information to execute the intent specified therein before attempting to decode any other information.
+The *nlMeta* is an object that can be used to pass information on to the AI Agent. The AI Agent would use this information to execute the intent specified therein before attempting to decode any other information.
 
 
 ## Sample
@@ -27,12 +24,12 @@ The following is a sample of how the *nlMeta* object needs to be populated:
 
      'nlMeta': {
 
-            'intent': '&lt;intent_name>',  
-            'childBotName': '&lt;child_bot_name>',
-            'isRefresh': &lt;true/false>, 
+            'intent': '<intent_name>',  
+            'childBotName': '<child_bot_name>',
+            'isRefresh': <true/false>, 
             'entities': {      
-			'&lt;entity1_value>': value1,
-                        '&lt;entity2_value>': value2,
+			'<entity1_value>': value1,
+                        '<entity2_value>': value2,
 			},
       	    'interruptionOptions': {
                'hr': {
@@ -60,13 +57,13 @@ The following are the parameters that can be used in this object:
   <tr>
    <td>nlMeta
    </td>
-   <td>An object for natural language information for the bot
+   <td>An object for natural language information for the AI Agent
    </td>
   </tr>
   <tr>
    <td>intent
    </td>
-   <td>Intent identified via 3rd party, which needs to be triggered by the bot
+   <td>Intent identified via 3rd party, which needs to be triggered by the AI Agent
    </td>
   </tr>
   <tr>
@@ -96,7 +93,7 @@ The following are the parameters that can be used in this object:
   <tr>
    <td>interruptionOptions
    </td>
-   <td>This is to indicate the interruption behavior in case any task is in progress when the bot receives this nlMeta information. Values can be:
+   <td>This is to indicate the interruption behavior in case any task is in progress when the AI Agent receives this nlMeta information. Values can be:
 <ul>
 
 <li>discardAll – to discard current and previous tasks, if any
@@ -162,12 +159,12 @@ The following are the parameters that can be used in this object:
 </table>
 
 
-In case, the requested task is not found the bot would respond with a standard response “Dialog task required for conversation not available”.
+In case, the requested task is not found the AI Agent would respond with a standard response “Dialog task required for conversation not available”.
 
 
 ## Usage
 
-As mentioned, *nlMeta* can be populated and sent to the virtual assistant via BotKit SDK, and web/widget SDK. The following illustrates how it can be accomplished:
+As mentioned, *nlMeta* can be populated and sent to the assistant via BotKit SDK, and web/widget SDK. The following illustrates how it can be accomplished:
 
 **BotKit SDK** – as part of *metaInfo* object: 
 

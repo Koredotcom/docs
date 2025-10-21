@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Get ChangeLogs API
 
 To get the list of changes made to the bot definition for a given date period.
@@ -36,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Logs History
+<li>App Builder: Logs History
 
 <li>Admin Console: Logs > Bot Audit Logs
 </li>
@@ -642,3 +644,7 @@ curl -X GET \
     }
 ]
 ```
+
+### Related Link
+
+* [Change Log](../../app-settings/change-logs.md)

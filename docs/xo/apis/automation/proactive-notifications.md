@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Proactive Notifications API
 
 Proactive Notifications allow enterprises to engage with their end users (customers or employees) by providing relevant and timely updates.
@@ -43,7 +45,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Proactive Messages
+<li>App Builder: Proactive Messages
 
 <li>Admin Console: Channel Management > Proactive Messages
 </li>
@@ -75,9 +77,9 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotId</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
 <p>
-<strong>Note</strong>: This is required only for Bot Builder API scope of Proactive Messages.
+<strong>Note</strong>: This is required only for App Builder API scope of Proactive Messages.
    </td>
    <td>Required
    </td>

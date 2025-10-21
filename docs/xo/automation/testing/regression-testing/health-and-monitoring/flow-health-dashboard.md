@@ -3,23 +3,23 @@
 
 ## Introduction 
 
-The **Flow Health** dashboard summarizes how well the flows of Virtual Assistant (VA) are performing and shows the coverage of intents and transitions in the bot definition. The Flow Health dashboard displays the overall pass or fail percentage of test cases with options to view the transitions coverage. 
+The **Flow Health** dashboard summarizes how well the flows of app are performing and shows the coverage of intents and transitions in the app definition. The Flow Health dashboard displays the overall pass or fail percentage of test cases with options to view the transitions coverage. 
 
 The Flow Health dashboard also shows the summary of user intents that are covered and missed in test cases. You can review the uncovered intents and add relevant test cases to cover missing user intents in the test suite. 
 
 You can also use the test result analysis to identify the issues in the dialog task definitions and fix them with actionable recommendations to improve overall NLU and Flow health.
 
-**Note**: The Flow Health Dashboard is available on the XO Platform version 10.0, released on Jan 21st, 2023.
+**Note**: The Flow Health Dashboard is available on the Platform version 10.0, released on Jan 21st, 2023.
 
 
 ### Use-Case Scenario
 
-In this article, the Hotel Booking virtual assistant is used as an example to understand the flow of transitions and test results analysis. The Hotel Booking VA has the _Search A Hotel_, _Book a Hotel, Get User Data, Show User Data, and Raise Complain_ dialog intents with various test cases in the test suites in the Conversation Testing module.
+In this article, the Hotel Booking app is used as an example to understand the flow of transitions and test results analysis. The Hotel Booking app has the _Search A Hotel_, _Book a Hotel, Get User Data, Show User Data, and Raise Complain_ dialog intents with various test cases in the test suites in the Conversation Testing module.
 
-A transition shows how a user intent is transferred from one sequence to another sequence in a dialog task. A transition is a flow of intent between two sequences. It has a **From** sequence and a **To** sequence.  For example, **Book a Hotel** is a user intent in a dialog task. A **entCity** is an entity node in the **Gather Booking Data - Location** sequence within dialog flow to which the **book a hotel** user intent is transitioned, and after going through all the nodes in this sequence, it transitions to the **Gather Booking data - Stay Period** sequence. From there, after all nodes in it are executed, it transitions to **Gather Booking data - Room and Guest details** and finally **MAke reservation and show Confirmation** sequences. Therefore, in the **Book a Hotel** task, you have three transitions in total. For more information, see [User Intent](../../../../use-cases/dialogs/node-types/working-with-the-user-intent-node){:target="_blank"}.  
+A transition shows how a user intent is transferred from one sequence to another sequence in a dialog task. A transition is a flow of intent between two sequences. It has a **From** sequence and a **To** sequence.  For example, **Book a Hotel** is a user intent in a dialog task. A **entCity** is an entity node in the **Gather Booking Data - Location** sequence within dialog flow to which the **book a hotel** user intent is transitioned, and after going through all the nodes in this sequence, it transitions to the **Gather Booking data - Stay Period** sequence. From there, after all nodes in it are executed, it transitions to **Gather Booking data - Room and Guest details** and finally **MAke reservation and show Confirmation** sequences. Therefore, in the **Book a Hotel** task, you have three transitions in total. For more information, see [User Intent](../../../../automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md){:target="_blank"}.  
 <img src="../images/fh-img1.png" alt="Use case - book a hotel" title="Use case - book a hotel" style="border: 1px solid gray;zoom:50%;"/>
 
-Once you record a conversation flow, save it and run it in the _Conversation Testing_ module.  The conversation testing module helps in knowing how a dialog task performs. For example, if you have a **Get User Data** dialog task and want to see how this dialog task is performing, you can create a **Show User Data** test suite with various test cases. Run the **Show User Data** test suite and see whether it was completed _successfully_, _failed_, _paused_, or _not executed_. For more information, see the [Conversation Testing](../../conversation-testing/conversation-testing-landing-page/){:target="_blank"} article.
+Once you record a conversation flow, save it and run it in the _Conversation Testing_ module.  The conversation testing module helps in knowing how a dialog task performs. For example, if you have a **Get User Data** dialog task and want to see how this dialog task is performing, you can create a **Show User Data** test suite with various test cases. Run the **Show User Data** test suite and see whether it was completed _successfully_, _failed_, _paused_, or _not executed_. For more information, see the [Conversation Testing](../conversation-testing/conversation-testing-landing-page.md){:target="_blank"} article.
 
 The test suite results are tracked in the _Conversation Testing,_ and the analytics for test suites are displayed in the **Flow Health** dashboard.  
 
@@ -48,7 +48,7 @@ View the overall percentage of the test case results in the test suites with the
   <img src="../images/fh-img3.png" alt="Flow Metrics" title="Flow Metrics" style="border: 1px solid gray;zoom:50%;"/>
 
 
-1. Click the **View Test Suites** link to view all the test suites that are considered in the VA with the following details:
+1. Click the **View Test Suites** link to view all the test suites that are considered in the app with the following details:
     1. **Test Suite**  – The name of the test suite.
     2. **Result** – The result of the test suite, such as Passed, Failed, Aborted, or Not Executed.
     3. **Duration** – The duration for the execution of the test suite.
@@ -95,7 +95,7 @@ The Flow Health dashboard calculates the number of transitions in a dialog and s
 
 The percentage of transitions coverage is displayed as follows: 
 
-  * **Total Transitions Covered** – Shows all covered transitions out to total transitions in the VA definition. 
+  * **Total Transitions Covered** – Shows all covered transitions out to total transitions in the app definition. 
   * **Covered** – Shows the number of transitions that are covered in the test cases.
   * **Not Covered** – Shows the percentage of total transitions that are not covered in the test cases.
 
@@ -112,7 +112,7 @@ The percentage of transitions coverage is displayed as follows:
 2. Click the <img src="../images/fh-tilda-icon.png"> icon beside **Not Covered** percentage to view missed transitions.  
 <img src="../images/coverage-status.png" alt="Missed Transitions" title="Missed Transitions" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Create a new test suite and record missed transitions to cover them. For more information, see [Conversation Testing](../../conversation-testing/conversation-testing-landing-page/){:target="_blank"}.
+3. Create a new test suite and record missed transitions to cover them. For more information, see [Conversation Testing](../conversation-testing/conversation-testing-landing-page.md){:target="_blank"}.
 
 4. Click the <img src="../images/fh-down-icon.png"> icon to search and filter the dialog intent tasks for which you want to see the transitions coverage. You can filter transitions using the _From Node_, _To Node,_ and _Coverage Status_ filters.  
 
@@ -161,7 +161,7 @@ To view the intent summary and identify the issues, follow these steps:
 3. In this test suite, the test case1 has failed because it has an incorrect data type selected for the **Date** field as shown below:  
 <img src="../images/fh-img19.png" alt="Sample execution result" title="Sample execution result" style="border: 1px solid gray;zoom:50%;"/>
 
-4. Text assertion fails because there is a mismatch between the _Expected_ and _Actual_ output. For more information, see [Test Case Assertion](../../conversation-testing/test-case-assertion){:target="_blank"}. 
+4. Text assertion fails because there is a mismatch between the _Expected_ and _Actual_ output. For more information, see [Test Case Assertion](../conversation-testing/test-case-assertion.md){:target="_blank"}. 
 
 5. Click the **X** icon to close the Intent Details window.
 

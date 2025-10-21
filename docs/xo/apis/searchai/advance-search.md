@@ -1,4 +1,6 @@
-# **Advance Search API - V2**
+--8<-- "includes/searchai-api-back-link.md"
+
+# Advance Search API - V2
 
 This API enables you to retrieve answers and search results related to a specific query. By default, the API returns answers. Along with the search results and answers, the API also provides details about the chunks used and metadata information associated with those chunks.  
 
@@ -94,6 +96,30 @@ This API enables you to retrieve answers and search results related to a specifi
    <td>No
    </td>
   </tr>
+    <tr>
+   <td>metaFilters
+   </td>
+  
+   <td>This parameter can be used to define rules to filter out the results from the Answer Index before using them for generating the answer. This parameter takes an array of rules with conditions. For instance, to use only web pages to answer a query, set the filters as shown below.
+   
+  <pre>
+    "metaFilters": [
+        {
+        "condition": "AND",
+        "rules": [
+            {
+            "fieldName": "sourceType",
+            "fieldValue": [
+                "web"
+            ],
+            "operator": "contains"
+            }]
+        }]
+    </pre>
+   </td> <td>No
+   </td>
+  </tr>
+
   <tr>
    <td>isFacetsEnable
    </td>
@@ -102,6 +128,101 @@ This API enables you to retrieve answers and search results related to a specifi
    <td>No
    </td>
   </tr>
+  <tr>
+   <td>customData
+   </td>
+   <td>Custom data to be sent in the request. This data can be used to further process or filter the search results in the application. This can also be used to pass previous conversations as context or to set user context like user identity, location, etc. 
+   </td>
+   <td>No
+   </td>
+  </tr>
+   <tr>
+   <td>raclEntityIds</td>
+  
+   <td>Array of RACL values. This field specifies the <strong>RACL (Role-Based Access Control List)</strong> values to be used to determine accessible content. It can include both <strong>user identities</strong> (e.g., email addresses) and <strong>permission entity IDs </strong>(e.g., user groups).
+   
+   When raclEntityIds is passed in the API request, Search AI exclusively uses the provided values in raclEntityIds to identify accessible content. No additional mapping between user identities and permission entities is performed to resolve content accessibility. For each value in raclEntityIds, only the content where the sys_racl field contains a matching value will be accessible in the response. For instance,
+  
+  <pre>
+  raclEntityIds: [
+    “123234”, // Permission Entity ID
+    “[user@example.com](mailto:user@example.com)” // User Identity
+  ]</pre>
+  
+  <ul>
+  <li>Content with a sys_racl field that includes either "123234" or "user@example.com" will be accessible.</li>
+  <li> The API will not perform additional lookups to identify content accessible to other related permission entities for "user@example.com".</li>
+  </ul>
+  This parameter enables granular control over content accessibility by explicitly specifying allowed entities. It ensures strict adherence to the provided values without relying on broader permission mappings.
+
+  “raclEntityIds” takes precendence over any key set to use via RACL resolver API. So even if that is configured whenever “raclEntityIds” is present we will only honor that. 
+
+
+   </td>
+    <td>No </td>
+  </tr>
+
+  <tr>
+  <td>dynamicPromptSelection </td>
+  <td>Specifies the prompt and model to be used to generate the answer in this API call. If not provided, the API will use the default model and prompt configured at the application level. This field accepts the following three parameters:
+  
+  <ul>
+  <li><strong>integrationName:</strong> Specifies the name of the GenAI provider. Supported values include:
+    <ul>
+      <li>"openai"</li>
+      <li>"azure"</li>
+      <li>"korexo"</li>
+      <li>custom integration name (must exactly match the name defined in the configuration)</li>
+    </ul>
+  </li>
+  <li><strong>model:</strong> Name of the specific LLM model to be used for answer generation. This must match the model name defined in the GenAI configuration exactly.</li>
+  <li><strong>promptName:</strong> Name of the prompt to be used to generate the answer. Use "Default" to apply the default prompt configured in the application.</li>
+  </ul>
+
+  <p><strong>Example:</strong></p>
+  <pre>
+  "dynamicPromptSelection" : {
+    "integrationName" : "openai",
+    "model" : "GPT-3.5
+  "promptName" : "testprompt"
+  }
+  </pre>
+
+  <p><strong>Note:</strong></p>
+  <ul>
+    <li>This field is optional. If omitted, the system uses the default model and prompt configured at the application level.</li>
+    <li>All values, integrationName, model, and promptName, are <strong>case sensitive</strong>.</li>
+    <li>Ensure that the specified model and prompt are correctly <strong>configured and published under GenAI settings.</strong></li>
+    <li>When using a <strong>custom LLM</strong>, the integrationName must match the exact name defined in the custom integration settings.</li>
+    <li>To use the <strong>default prompt configured in the application</strong>, set promptName as “Default”.</li>
+    <li>Since you cannot add a new prompt for Kore XO GPT, set prompt=”Default”.</li>
+    <li>For Kore XO GPT (korexo):
+      <ul>
+        <li>The model must be set to "XO-GPT".</li>
+        <li>The prompt must be "Default" (custom prompts are not supported).</li>
+      </ul>
+    </li>
+  </ul>
+  </td>
+  <td> No </td>
+  </tr>
+   <tr>
+   <td> includeMetaDataAnswers</td>
+<td>This field can fetch specific chunk metadata fields in the response along with the default fields. The requested fields are returned as part of the graph_answer field in the response. If a metadata field listed in this object does not exist, the field is returned in the response with a null value. For instance, to fetch the author name(a metadata field) and subtitle(a custom field) additionally from the chunks, include the following in the request payload. 
+<pre>
+"IncludeMetaDataAnswers": ["chunkMeta.author", “subtitle”]. 
+</pre>
+Note that for metadata fields, use the field name along with the root name, such as <pre>chunkMeta.x</pre>, as shown in the above example.
+</td>
+<td>No</td>
+</tr>
+<tr>
+   <td> includeChunksInResponse </td>
+<td>This can be set to true or false. When set to true, the response will also include a list of qualified chunks. The chunk information is stored in the response's chunk_result field.</td>
+<td>No</td>
+
+
+   </tr>
 </table>
 
 **Sample Request**
@@ -116,9 +237,9 @@ This API enables you to retrieve answers and search results related to a specifi
 ```
 
 
-**Response**
+## Response
 
-The response to the API is in JSON format. Some of the key fields in the response are:
+The response to the API is in JSON format. Some key fields in the response, which are part of the `template` field, are listed below.
 
 * **results**: This field contains the details of the search results. The results are grouped by source type as the key value. The chunks from a document are grouped together. For instance, if the relevant chunks include 3 from one document in Google Drive and one from a file, the results would be listed as shown below. 
 
@@ -243,7 +364,7 @@ The response to the API is in JSON format. Some of the key fields in the respons
       "doc_path": [
         "1WwUhdGPqWnQgPgKI_xpa9Ts_pjK1ijOs"
       ],
-      "recordUrl": "https://drive.google.com/file/d/1vEZTjr9VtQrFePRCJGimfX5cs5y7ITGP/view?usp=drivesdk",
+      "recordUrl": "https://drive.google.com/file/d/1vEZTxxxxxxxxxxxxxxxxxs5y7ITGP/view?usp=drivesdk",
       "updatedOn": "2025-02-05T08:35:29.652Z",
       "sourceAcl": [
         "*"
@@ -282,7 +403,7 @@ The response to the API is in JSON format. Some of the key fields in the respons
       "type": "pdf",
       "chunkId": "chk-2f50e2c3-f332-4416-b22b-7c260cfd1c4a",
       "createdOn": "2025-02-05T08:35:28.883Z",
-      "sourceUrl": "https://drive.google.com/file/d/1KSitTWrY9iBIJT3yD9P2k2fS3uSK9R5L/view?usp=drivesdk",
+      "sourceUrl": "https://drive.google.com/file/d/1KSixxxxxxxxxxxxxx2fS3uSK9R5L/view?usp=drivesdk",
       "chunkText": [
         "Page\t13    Source: Henry Fund Model1    <span class=\"highlightText\">Microsoft</span>  has  continued  to  grow  its  dividend  payout  steadily in the past. As it released its first quarter earnings  for fiscal 2022, we used the first quarter dividend times 4  to forecast the annual dividend for the current fiscal year.  Microsoft&#x27;s dividend increases fluctuate between 0.12 and  0.24, and we took the more frequently occurring value of  0.20 for future dividend increases. See the chart below for  a forecast of the dividend.1    Source: Henry Fund Model1    We learned from Microsoft&#x27;s 10K report that as of June 30,  2021, $8.7 billion of stock is available for repurchase under  the company&#x27;s stock repurchase program. The repurchase  program  is subject  to  liquidity needs, market, regulatory requirements,  and other  factors. As  shown  in  the  chart  below, we  followed the company&#x27;s guidance amount  for  the repurchase forecast.    Source: Henry Fund Model1    According to our model, <span class=\"highlightText\">Microsoft</span> Corp. has 2022 GAAP  earnings  per  share  of  $9.52, "
       ],
@@ -295,7 +416,7 @@ The response to the API is in JSON format. Some of the key fields in the respons
       "doc_path": [
         "0APDb_kca5iWJUk9PVA"
       ],
-      "recordUrl": "https://drive.google.com/file/d/1KSitTWrY9iBIJT3yD9P2k2fS3uSK9R5L/view?usp=drivesdk",
+      "recordUrl": "https://drive.google.com/file/d/1KSxxxxxxxxxxxxxxxxxxxxSK9R5L/view?usp=drivesdk",
       "updatedOn": "2025-02-05T08:35:28.883Z",
       "sourceAcl": [
         "*"
@@ -371,4 +492,46 @@ The response to the API is in JSON format. Some of the key fields in the respons
             ]
         },
 ```
+Additionally, the response also includes the following fields, not within the template field.
 
+* **llmResponseTime**: This field records the time taken(in milliseconds) by the language model to generate the response (in case of Generative Answers). 
+* **retrievalResponseTime**: This field records the time taken(in milliseconds) by Search AI to retrieve the relevant chunks and process them.
+
+## Example of Using Custom Data Request parameter
+
+**Example 1. To pass user information**
+```json
+  "customData": {
+        "userContext": {
+              "userName": "John",
+              "userId": "john.smith@example.com",
+              "emailId": "john.smith@example.com"
+            }
+    }
+```
+
+**Example 2. To pass user location**
+
+```json
+  "customData": {
+    "userContext": {
+    "location": "Germany"
+      }
+  }
+```
+
+**Example 3. To pass the previous conversation as context to the Query Rephrasing Agent.**
+
+```json
+  "customData": {
+    "previousConversation": [
+    {
+    "query": "What is the leave policy for America?",
+    "answer": "The leave policy in the U.S. varies by employer, but the Family and Medical Leave Act (FMLA) allows eligible employees to take up to 12 weeks of unpaid leave for certain family and medical reasons. Paid leave policies depend on the employer."
+    },
+    {
+    "query": "How do I reset my company email password?",
+    "answer": "You can reset your company email password by visiting the IT support portal and selecting 'Forgot Password.' Follow the instructions to reset your password. If you need further assistance, contact the IT helpdesk."
+    }]
+  }
+```

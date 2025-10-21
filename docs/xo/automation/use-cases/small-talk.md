@@ -1,16 +1,16 @@
 # Small Talk
 
-**Small Talk** refers to the casual conversations that a Virtual Assistant can have with end users. The ability to engage end users in casual conversations helps your assistant socialize better with customers and improves recall rates.
+**Small Talk** refers to the casual conversations that a AI Agent can have with end users. The ability to engage end users in casual conversations helps your assistant socialize better with customers and improves recall rates.
 
-The Small Talk conversation is designed as a series of interaction volleys between the assistant and the user. VAs that can answer social inputs like _How Are You?_ are more likely to create a positive impression and help build an invaluable connection with the user.
+The Small Talk conversation is designed as a series of interaction volleys between the assistant and the user. AI Agents that can answer social inputs like _How Are You?_ are more likely to create a positive impression and help build an invaluable connection with the user.
 
-You can find Small Talk on the Unified XO Platform under **Automation AI > Virtual Assistant > Use Cases > Small Talk**.
+You can find Small Talk on the Unified XO Platform under **Automation AI > Use Cases > Small Talk**.
 
 <img src="../images/small-talk-navigation.png" alt="Small Talk Navigation" title="Small Talk Navigation" style="border: 1px solid gray; zoom:75%;">
 
 ## Benefits
 
-Positive interactions are key to businesses today, especially in the context of CRM automation. Even when people know that they are not being assisted by a human, they still appreciate the occasional joke, casual chat or other friendly cues that make human-to-human conversations more engaging. This is why a Virtual Assistant that can handle small talk improves the experience for your users or customers.
+Positive interactions are key to businesses today, especially in the context of CRM automation. Even when people know that they are not being assisted by a human, they still appreciate the occasional joke, casual chat or other friendly cues that make human-to-human conversations more engaging. This is why an AI Agent that can handle small talk improves the experience for your users or customers.
 
 The Small Talk Engine within the XO Platform lets you configure the conversational elements that are specific to your business context, so that you can create a conversational VA that recognizes when people make small talk and responds accordingly, thus providing a friendly experience, rather than one that feels dry and technical. 
 
@@ -18,10 +18,10 @@ The Small Talk Engine within the XO Platform lets you configure the conversation
 
 The Small Talk Engine provides the following features:
 
-* **_Custom Small Talk_** allows you to build a personality and train the VA to conduct casual conversations around your areas of interest.
-* **Nested conversations** help answer follow-ups during a conversation and make the VA more engaging.
+* **_Custom Small Talk_** allows you to build a personality and train the AI Agent to conduct casual conversations around your areas of interest.
+* **Nested conversations** help answer follow-ups during a conversation and make the AI Agent more engaging.
 * **Emoji identification**: The XO Platform can identify the emojis in user utterances and respond accordingly, using Small Talk.
-* **Small Talk works with intent detection.** Interjections, such as *hello* at the start of an utterance will not be considered as small talk. For example, the user’s utterance *Hello, I need to book a flight* will be matched with the intent: *book a flight*, so the VA will address the user’s need, rather than use Small Talk.
+* **Small Talk works with intent detection.** Interjections, such as *hello* at the start of an utterance will not be considered as small talk. For example, the user’s utterance *Hello, I need to book a flight* will be matched with the intent: *book a flight*, so the AI Agent will address the user’s need, rather than use Small Talk.
 
 ## Overview
 
@@ -38,16 +38,16 @@ The various user queries in Small Talk are categorized into groups and assigned 
 Following are the various terms associated with Small Talk:
 
 1. **Groups** – Based upon the purpose and content, Small Talk is categorized into groups.
-2. **User Queries** – For each group, you can add User Queries, Alternate Queries, and Child Queries. Queries are formed using patterns. [Learn more](../../natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}.
+2. **User Queries** – For each group, you can add User Queries, Alternate Queries, and Child Queries. Queries are formed using patterns. [Learn more](../natural-language/training/fundamental-meaning.md#manage-patterns-and-rules){:target="_blank"}.
 3. **Bot Responses** – Each User Query must be associated with a bot response. These can be in plain text format or JavaScript. You can specify channel-specific responses. You can also enter multiple responses, one of which will be picked randomly by the Platform at runtime.
 
 ## Default Small Talk
 
-Small Talk is a VA-level task that is configured automatically. When you create a new VA, the Small Talk is generated by default.
+Small Talk is a App-level task that is configured automatically. When you create a new App, the Small Talk is generated by default.
 
 !!! Note
 
-    When you open the Small Talk Task in an existing VA, you will be informed of the migration of standard responses related to greetings to the Small Talk feature. You can choose not to Proceed and continue with the Standard Responses.
+    When you open the Small Talk Task in an existing App, you will be informed of the migration of standard responses related to greetings to the Small Talk feature. You can choose not to Proceed and continue with the Standard Responses.
 
     If you proceed with the migration, the Greetings will be permanently deleted from the Standard Responses section and cannot be retrieved.
 
@@ -61,7 +61,7 @@ The following are the messages under the Greetings group (these are the Standard
   <tr>
    <td>Response when User says Hi
    </td>
-   <td>Shown when the user says <em>hi</em>, <em>hello</em>, <em>hey</em>, etc, or just enters the VA’s name.
+   <td>Shown when the user says <em>hi</em>, <em>hello</em>, <em>hey</em>, etc, or just enters the App’s name.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -126,13 +126,13 @@ comment`est`vous comment`ca`va ca`va
   <tr bgcolor="#FAFAFA">
    <td>User implies to end the conversation (eg. ‘good night’, ‘bye’, ‘ttyl’)
    </td>
-   <td>This condition occurs only for Dialog tasks for which the following Follow-up Tasks Setting is configured: “Yes, at the end of this dialog ask the user to select and perform a task from ‘Follow-up task’ list in the Dialog settings.” The VA shows this message when it presents the Follow-Up Intents array to the user at the end of the Dialog.
+   <td>This condition occurs only for Dialog tasks for which the following Follow-up Tasks Setting is configured: “Yes, at the end of this dialog ask the user to select and perform a task from ‘Follow-up task’ list in the Dialog settings.” The AI Agent shows this message when it presents the Follow-Up Intents array to the user at the end of the Dialog.
    </td>
   </tr>
   <tr>
    <td>User says thanks
    </td>
-   <td>Shown when the user thanks the VA.
+   <td>Shown when the user thanks the AI Agent.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -147,14 +147,14 @@ comment`est`vous comment`ca`va ca`va
 
 ## Customize Small Talk
 
-This section provides step-by-step guidance on the general set up and group configurations to customize Small Talk for your VA.
+This section provides step-by-step guidance on the general set up and group configurations to customize Small Talk for your AI Agent.
 
 ### General Setup
 
-To add Small Talk to your VA, follow the below steps:
+To add Small Talk to your AI Agent, follow the below steps:
 
-1. Open the VA to which you want to add Small Talk;
-2. From the top menu, navigate to **Automation AI > Virtual Assistant > Use Cases > Small Talk**.
+1. Open the AI Agent to which you want to add Small Talk;
+2. From the top menu, navigate to **Automation AI > Use Cases > Small Talk**.
 3. You need to start by adding a **New Group.**
 4. Next, you need to add **User Queries** and **App Responses**.
 
@@ -179,7 +179,7 @@ From the Small Talk editor that opens you can enter User Utterance – App Respo
 On hovering over any Small Talk group, you have the options to:
 
 * **Delete** the group.
-* **Settings** that will allow you to **Manage Variable Namespaces** by associating a variable namespace to use with this Small Talk group. This option is visible only when the variable namespace is enabled for the VA. For more information, refer to [this](../../../app-settings/managing-namespace/){:target="_blank"} link.
+* **Settings** that will allow you to **Manage Variable Namespaces** by associating a variable namespace to use with this Small Talk group. This option is visible only when the variable namespace is enabled for the AI Agent. For more information, refer to [this](../../app-settings/managing-namespace.md){:target="_blank"} link.
 
     <img src="../images/manage-variable-namespaces.png" alt="Manage Variable Namespaces" title="Manage Variable Namespaces" style="border: 1px solid gray; zoom:75%;">
 
@@ -214,7 +214,7 @@ Once you create/import a group, you can add/modify the query-response pairs.
 
     <img src="../images/add-query-response.gif" alt="Add Query Response" title="Add Query Response" style="border: 1px solid gray; zoom:75%;">
 
-3. Queries are designed using patterns. [Learn more](../../natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}.
+3. Queries are designed using patterns. [Learn more](../natural-language/training/fundamental-meaning.md#manage-patterns-and-rules){:target="_blank"}.
 
 4. For each User Query, you can enter **alternate questions** that depict a different way the user might ask the same query.
 
@@ -238,13 +238,13 @@ Once you create/import a group, you can add/modify the query-response pairs.
 
     <img src="../images/delete-qr-pair-child.png" alt="Delete query response pair child" title="Delete query response pair child" style="border: 1px solid gray; zoom:75%;">
 
-10. Responses are **Channel-specific** and **Java Script** formatted. By clicking the **Settings** (gear icon) that appears next to the response, when you hover over it you will reach the Manage Response window. Here is where you can configure the following:
+10. Responses are **Channel-specific** and **JavaScript** formatted. By clicking the **Settings** (gear icon) that appears next to the response, when you hover over it you will reach the Manage Response window. Here is where you can configure the following:
   * Add a default message to be displayed on all channels.
   * For channel-specific responses:
     * Click **+ Add Response**.
     * Click the **New Prompt Message**.
     * Select **Channel**.
-    * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">Learn more</a>.
+    * Enter the response in standard text or in JavaScript using the Advanced Mode. If applicable Select a Template. 
     
       <img src="../images/message-response-channel.png" alt="message response channel" title="message response channel" style="border: 1px solid gray; zoom:75%;">
     
@@ -332,7 +332,7 @@ The context persists until one of the below scenarios occurs:
 
 ## Training
 
-Once you have made changes to the Small Talk, it needs to be trained for the VA to pick up the Small Talk. Click  **Train** on the Small Talk editor screen to train the assistant.
+Once you have made changes to the Small Talk, it needs to be trained for the AI Agent to pick up the Small Talk. Click  **Train** on the Small Talk editor screen to train the assistant.
 
 !!! Note
 
@@ -350,7 +350,7 @@ Once you have made changes to the Small Talk, it needs to be trained for the VA 
 * Intents and Knowledge Collection will take precedence over Small Talk i.e. when Intents (or FAQs) and Small Talk are detected, preference is given to Intents (or FAQs).
 * Any Small Talk identified is displayed after Ranking & Resolver.
 * Small talk is language-specific. If your assistant is multilingual, then you can design Small Talk in each of the enabled languages.
-* Interruption Behavior for Small Talk is handled using the following options under **Virtual Assistant > Conversation Management > Manage Interruptions > Interruption Behavior for Small Talk** 
+* Interruption Behavior for Small Talk is handled using the following options under **Automation AI > Conversation Management > Manage Interruptions > Interruption Behavior for Small Talk** 
 * Respond to Small Talk and resume the on-hold task – this is the default setting.
 * Execute the Small Talk using <b><i>Hold & Resume</i></b> settings.
 

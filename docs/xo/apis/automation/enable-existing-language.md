@@ -1,6 +1,8 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Enable an Existing Language API
 
-To enable an existing language for a virtual assistant.
+To enable an existing language for an AI Agent.
 
 
 <table>
@@ -38,7 +40,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Language Configuration
+<li>App Builder: Language Configuration
 
 <li>Admin Console: Language Settings > Language Management
 </li>

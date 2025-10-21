@@ -1,51 +1,114 @@
-# Introducing All-new Agent Platform
+# Introduction to Agent Platform
 
-We are excited to announce the first version of Agent Platform, our enterprise-grade multi-tool orchestration platform. The all-new Agent Platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent tools across service, work, and process automation while maintaining enterprise-grade security and governance. 
+The all-new Agent Platform is an enterprise-grade multi-agent orchestration platform. The platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while upholding enterprise-grade security and governance.
 
-## Comprehensive Capabilities
+The Agent Platform supports two distinct paradigms for building intelligent AI applications:
 
-The Agent Platform offers comprehensive capabilities across the AI lifecycle, empowering organizations to efficiently scale and manage AI deployments.
+* **Dialog Agents** (Orchestrated Autonomy, Structured Flow Approach): This paradigm, powered by DialogGPT and Agent Node, offers a structured flow approach to enable a dynamic conversational experience. While responses are still somewhat deterministic, Dialog Agents can adapt to variations in input, handle multi-turn interactions with greater ease, recognize user intent, extract key information autonomously, and leverage context across conversations. This results in a more responsive and interactive AI that can assist users intelligently within defined boundaries. [Learn more :octicons-arrow-right-24:](../dialog-agents/dialoggpt.md){:target="_blank"}
 
-* End-to-end AI ecosystem for developing, deploying, and managing AI applications.
-* No-code interface for rapid development by technical and non-technical users.
-* Extension SDKs for custom AI solutions.
-* Advanced multi-agent orchestration for complex workflows.
-* Search and data connectors for Agentic RAG capabilities.
-* Prompt management and evaluation systems for optimizing AI behavior.
-* Standardized Agent Protocol for interoperability between AI systems.
-* Pre-built templates and solutions in the marketplace for accelerated development.
-* Proven scalability and reliability for mission-critical applications.
-* Built-in compliance, audit trails, and security for reduced regulatory risk.
+* **AI Agents** (Full Autonomy, Reasoning-Driven Approach): This paradigm represents the highest level of AI sophistication, enabling the development of autonomous agents capable of human-like interaction. AI Agents, orchestrated by the AI Agent Orchestrator and leveraging Tools, function as multi-agent systems with reasoning and persistent memory. They possess a deep contextual understanding, grasp nuances, and tailor their responses based on the interaction history. The reasoning engine enables AI Agents to generate consistent responses through situational analysis, rather than relying on preset paths, resulting in fluid and natural conversations that adapt to ever-changing contexts. With AI Agents, AI can become a true collaborator capable of strategic thinking, problem-solving, and autonomous execution. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/overview.md){:target="_blank"}
+
+Both paradigms leverage the platform's core AI capabilities, which include Search/RAG, AI Models and Prompt Management, an Evaluation and Testing Framework, and AI Safety controls.
 
 
 ## Key Components
-The Platform's capabilities are powered by its key components that work together to deliver comprehensive automation solutions throughout your organization.
 
-<img src="../images/agent-platform-overview.png" alt="Agent Platform" title="Agent Platform">
+The Platform's key components provide comprehensive capabilities that empower organizations to efficiently scale and manage AI deployments across the AI lifecycle.
 
-* **Agentic Apps**: Build intelligent AI systems that work together autonomously. Create AI assistants that reason, plan actions, and collaborate as a team to handle complex business processes with human-like intelligence.
+<img src="../images/agent-platform-components.png" alt="Agent Platform" title="Agent Platform">
 
-* **Actions / Tools**: Connect your AI to real-world systems and data. With low-code and custom options, create tools that let AI tools interact with business systems.
 
-* **Models**: Choose and optimize the right AI models for your needs. Fine-tune models for specific tasks, deploy open-source options, or connect to external providers while maintaining control.
+### Multi-Agent Orchestration
 
-* **Prompts**: The Prompt Studio helps create, test, and manage instructions that control AI model responses. Collaborate, experiment, and deploy optimized prompts.
+It enables users to define agent behaviors, skills, and integrations through low-code, declarative programming. This enables both technical and non-technical users to easily create and manage intelligent agents. It gives agents advanced reasoning and planning skills, enabling them to analyze their environment, act effectively, and learn from the outcomes to operate autonomously and adaptably. 
 
-* **AI Safety**: Protect sensitive information and control AI outputs. Anonymize private data, establish content guardrails, and control access based on user roles for responsible, compliant AI use.
+It also provides real-time streaming of agent interactions across voice and chat channels, enabling seamless user experiences and dynamic agent-based applications.
 
-* **Evaluation**: Measure and improve AI performance systematically through custom scoring criteria using AI models as evaluators.
 
-* **Observability**: Gain complete visibility into AI system operations with end-to-end tracing, explainable AI, and thought streaming.
+### Tools
 
-* **Analytics**: Track usage patterns and performance metrics through intuitive dashboards to optimize system performance and demonstrate ROI.
+Tools are reusable components that agents can invoke to perform specific tasks or access external systems and data sources. The platform supports various methods for creating Tools:
 
-* **Agent Protocol**: Standardize communication across AI systems with an API supporting multimodal content and real-time streaming. Allows integrating with tools built on external platforms with full support for request/response exchange, streaming of responses and logs. 
+* Visual Workflow Builders for low-code Tool development
 
-* **No-Code Development**: Accelerate AI application development through structured no-code tooling. Business teams can actively participate alongside technical staff, accelerating time to market and fostering collaboration.
+* Custom coding in JavaScript and Python for advanced Tool logic
 
-* **Extension SDKs**: The platform offers SDKs all the key components like for Agentic Apps, Tools, RAG, and Traces, enabling teams to quickly build custom components across the entire AI workflow that are compatible with the platform's security and governance frameworks.
+* Pre-built connectors to popular enterprise applications and data sources
 
-* **Enterprise-Grade CI/CD**: Deploy and manage AI applications with industrial-strength processes supporting multiple environments and granular versioning.
+* Integration with external APIs and services
 
-* **Collaboration and Governance**: Work together securely with multi-user collaboration, customizable roles and permissions, and detailed audit logs.
+
+### Search / RAG 
+
+It enables agents to retrieve relevant information from connected enterprise data sources and knowledge bases to enhance their responses and decision-making. It uses a hybrid approach to retrieval, combining multiple methods to deliver the most relevant and comprehensive results. It supports agentic retrieval, where multiple agents collaborate and coordinate their efforts to efficiently find and retrieve information. 
+
+Additionally, it is context-aware, taking into account the specific context and requirements of each retrieval request. By considering factors such as user preferences, current tasks, and previous interactions, the retrieved data can be tailored to the specific needs of the user or application.
+
+
+### Interaction Context
+
+It provides comprehensive management of the interaction state throughout its entire lifecycle. By keeping a record of previous interactions, user preferences, and relevant data, the component enables agents to maintain continuity and provide contextually appropriate responses.
+
+### AI Model Management
+
+It facilitates the easy deployment and management of AI models, including fine-tuning for specific domains. It also supports the effortless deployment of open-source models and integration with third-party model providers.
+
+### Prompt Management
+
+Prompt Studio and Library enable efficient prompt design, management, reuse, and collaboration across teams. It enables real-time co-editing, commenting, version tracking, and integration with the overall Agent Platform for seamless deployment.
+
+### Evaluation and Testing Framework
+
+The framework provides a comprehensive evaluation of agent performance, combining both AI-driven automated assessments and insights from human evaluators. Customizable scoring rubrics and real-time performance monitoring allow organizations to tailor evaluation criteria and enhance agent performance.
+
+### AI Safety Controls 
+
+It ensures responsible and safe agent operations while maintaining user trust and complying with data protection regulations. It anonymizes personally identifiable information (PII) and sensitive data and uses input and output guardrails, including advanced content filtering, to maintain appropriate content standards and ensure respectful communication. Granular role-based access controls ensure that users can only access data relevant to their job functions.
+
+### Analytics and Observability
+
+The platform offers deep insights into agent performance and usage through detailed analytics and end-to-end observability. Key capabilities include:
+
+* Detailed activity data capture from underlying models and applications.
+* Session logs, conversation histories, and usage metrics.
+* Intuitive dashboards and visualizations for monitoring KPIs.
+* End-to-end tracing of agent orchestration for debugging and optimization.
+* Explainability features for understanding agent decision-making.
+* Streaming of agent thoughts for transparency and human collaboration.
+
+### Agent Protocol
+
+The platform provides a standardized Agent Protocol for seamless communication and integration between agents, tools, and external systems. The protocol supports multimodal content, real-time streaming, and flexible API design. This enables agents to comprehend and generate various data types, process information in real-time, and seamlessly integrate with external systems.
+
+### SDKs
+
+Comprehensive SDKs are available for developers to efficiently build and integrate various aspects of the Agent Platform, including custom Agents, Tools, Search/RAG capabilities, and observability Traces.
+
+### Enterprise Grade CI/CD
+
+The platform offers granular versioning and multi-stage deployment capabilities to support a rigorous software development lifecycle for agent-based solutions. It allows organizations to establish separate environments (e.g., QA, UAT, Prod) for thorough testing and validation, ensures consistent deployments, and streamlines the development process to deliver high-quality, reliable solutions.
+
+### Collaboration and Audit
+
+The platform facilitates streamlined collaboration among teams, enabling them to efficiently develop, test, and deploy agent-based solutions. It offers customizable roles and permissions to ensure clear responsibilities and access levels, promoting transparency and accountability within the team. Additionally, comprehensive audit logs track all activities, maintaining traceability, accountability, and compliance.
+
+### Marketplace
+
+It provides a comprehensive library of pre-built Agents, Tools, and extensions across diverse domains and use cases. This accelerates development by offering customizable templates, connectors, and sample implementations from the Marketplace.
+
+## Deciding the Right Paradigm or Approach
+
+When selecting the appropriate paradigm for your use case, consider the following factors:
+
+* Level of autonomy required.
+* Complexity of the tasks and decision-making.
+* Need for contextual understanding and adaptability.
+* Degree of structure and predictability in the interaction flow.
+
+**Dialog Agents** are well-suited for orchestrated autonomy, offering semi-predictable responses, conversational fluidity, intent awareness, and context awareness. 
+
+**AI Agents** provide full autonomy with deep contextual understanding, reasoning capabilities, and fluid, human-like interactions.
+
+Regardless of the chosen paradigm, the platform's core capabilities ensure enterprise-grade security, robust performance, and seamless integration with existing systems and processes.
+
 <hr>

@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # RCS Business Messaging
 
 **RCS Business Messaging** is the evolution of mobile messaging, increasing and improving the ways in which people and businesses communicate. It provides brands with the opportunity to increase their engagement with customers by making use of business messaging using assistants and artificial intelligence (AI). **Google RBM** allows companies to send visually rich messages that encourage customers to interact.
@@ -18,7 +20,7 @@ To request access to enable Google RCS Business messaging as a channel
 
 
 
-1. From the XO Platform platform, open the assistant that you want to enable Google RCS Business Messaging.
+1. From the XO Platform, open the assistant that you want to enable Google RCS Business Messaging.
 2. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **RCS Business Messaging**.
 3. Select the **Configurations** tab.
 4. See **Request Access** to _Yes_
@@ -130,8 +132,8 @@ After having verified your bot agent, you can launch for end users by following 
 5. Kore.ai support team will contact you with a **questionnaire** which will be submitted to Google RCS Business Messaging team for approval on your behalf.
 6. A **consent email** will be sent to the brand employee (as mentioned by you in the request form filled in step 1) by Kore.ai Support and the response will be forwarded to the Google RCS team.
 7. Once Google RCS Business Messaging team reviews the Bot Agent and approves, you will receive a confirmation email from Kore.ai support team.
-8. Your VA’s users can now start using the RCS Messaging by opting for the same.
+8. Your AI Agent’s users can now start using the RCS Messaging by opting for the same.
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

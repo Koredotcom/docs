@@ -28,13 +28,13 @@ In the case of **Error Prompts**, if you have enabled the _Present Prompts in th
 
 ## Configure the User Prompt
 
-You can add or edit the prompts or VA messages from the **Component Properties** tab of an Entity, Confirmation, or Message node.
+You can add or edit the prompts or AI Agent messages from the **Component Properties** tab of an Entity, Confirmation, or Message node.
 In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for the Message node, they are referred to as Responses.
 
 1. On the dialog task builder, click the **+** icon next to the respective node for which you want to configure the prompts or responses.
 2. Select **Confirmation (or Entity or Message) > New Confirmation (or Entity or Message)** Node.
 3. The **Confirmation (or Entity or Message)** window is displayed with the **Components Properties** tab selected by default.
-4. Under the **User Prompts** (or VA Responses) section:
+4. Under the **User Prompts** (or Responses) section:
 
     1. If you only want to change the default sample message, hover on the message text and then click the **edit** (<img src="../images/prompt-editor-edit-icon.png">) icon. The editor appears and here you can edit the message.
 
@@ -53,7 +53,7 @@ In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for 
 
         <img src="../images/prompt-editor-select-channel.png" alt="Select channel" title="Select channel" style="border:1px solid gray;zoom:70%;">
 
-    5. You can use one of of the several available templates to create/edit your message:
+    5. You can use one of the several available templates to create/edit your message:
         * [**Text**](#plain-text-prompts) - Plain textual message. This template is selected by default.
         * [**Buttons**](#button-prompts) (Not available for Message node) - You can use this template if you want to let the user choose from multiple options. For example, in a Banking app, your prompt can have buttons with captions **Deposit**, **Withdrawl**, **Apply for Credit Card**, **Money Transfer** etc that can be configured to trigger the corresponding task.
         * [**Quick Reply**](#quick-reply-template) (Not available for Message node) - You can use this prompt for quick reply, i.e. a limited option of replies. For example, in a prompt that asks user whether they need any more help, you can have quick reply with options **Yes** and **No**.
@@ -68,7 +68,7 @@ In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for 
 
 5. Click **Save** after composing the message.
 
-To add any more VA responses, repeat from step 4b.
+To add any more responses, repeat from step 4b.
 
 !!! Note
 
@@ -143,13 +143,13 @@ The plain text tab supports the following markups:
    </td>
   </tr>
   <tr>
-   <td>[Link](http://www.google.com)
+   <td>[Link](https://www.google.com)
    </td>
-   <td><a href="http://www.google.com/">Link</a>
+   <td><a href="https://www.google.com/">Link</a>
    </td>
   </tr>
   <tr>
-   <td>![Image](https://kbob.github.io/images/sample-4.jpg)
+   <td>![Image](https://kbob.github.io/images/sample-4.jpg) 
    </td>
    <td><img src="../images/prompt-editor-sample-4.jpg" width="" alt="alt_text" title="image_tooltip">
    </td>
@@ -305,7 +305,7 @@ print("Visibility: " + context.humidity+"\n");
 print("Humidity: " + context.visibility+"\n");
 ```
 
-For more information, see [Using Session and Context Variables in Tasks](../../using-session-and-context-variables).
+For more information, see [Using Session and Context Variables in Tasks](../using-session-and-context-variables.md).
 
 ## Channel-Specific User Prompts
 
@@ -314,8 +314,8 @@ To define a channel-specific response, select the **Custom JavaScript** template
 
 While configuring prompts, please note that:
 
-* You can have more than one response configured for a channel. The bot randomly chooses if more than one response is configured for any given channel. This holds true for all-channel responses too if no other channel-specific responses are configured.
-* If any channel-specific override is present, the platform will use that over the _‘All channel’_ response while responding on that specific channel. For example, if you have a specific message for MS Teams, the bot prefers that specific prompt while responding to a user over the MS Teams channel instead of the ‘All channel’ prompt.
+* You can have more than one response configured for a channel. The AI Agent randomly chooses if more than one response is configured for any given channel. This holds true for all-channel responses too if no other channel-specific responses are configured.
+* If any channel-specific override is present, the platform will use that over the _‘All channel’_ response while responding on that specific channel. For example, if you have a specific message for MS Teams, the AI Agent prefers that specific prompt while responding to a user over the MS Teams channel instead of the ‘All channel’ prompt.
 
 !!! Note
 
@@ -396,7 +396,7 @@ var message = {};
         .length; i++) {
         text = text.concat(indexArray[i] +
             ') ' + response.choices[
-                i] + '\\n');
+                i] + '\\n';
     }
     message.text = text;
 print(JSON.stringify(message));

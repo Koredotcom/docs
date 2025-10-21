@@ -29,7 +29,7 @@ Steps to manage notifications:
     <img src="../images/settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
 3. Notifications can be managed for the following:  
-    <img src="../images/notification-preferences.png" alt="Notification Preferences" title="Notification Preferences" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/notification-preference.png" alt="Notification Preferences" title="Notification Preferences" style="border: 1px solid gray; zoom:70%;">
 
     !!! Notes
 
@@ -41,10 +41,11 @@ Steps to manage notifications:
 
 ### Repeat Notifications
 
-Repeated notifications for incoming interactions at configurable intervals can be enabled to ensure prompt attention to incoming conversations and transfers. This helps to:
-* Minimize missed interactions.
-* Improve response times.
-* Enhance overall customer satisfaction and SLA compliance.
+Repeated notifications for incoming interactions at configurable intervals can be enabled to ensure prompt attention to incoming conversations and transfers. This helps to:  
+
+* Minimize missed interactions.  
+* Improve response times.  
+* Enhance overall customer satisfaction and SLA compliance.  
 
 #### Enable Repeat Notifications
 
@@ -61,6 +62,22 @@ Steps to enable repeat notifications for incoming interactions:
 <img src="../images/duration-dropdown.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Save** to update the notification settings.
+
+#### Incoming Call Notification From Speaker When Headphones Are Connected
+
+Agents can receive incoming calls and interaction notification sounds through their system speakers or monitor, even when a headset is connected. The conversation audio continues through the headset or default system audio device, ensuring clear separation between alert sounds and ongoing communication.
+
+This option appears only when the ‘Incoming Interactions’ permission is enabled. Learn more.
+
+It affects notifications for voice calls, consult calls, chats, and other events under the Incoming Interactions category.
+
+When enabled, the notification sound plays on both the system speaker and the headset.  
+<img src="../images/notification-enabled.png" alt="Enabled Notification" title="Enabled Notification" style="border: 1px solid gray; zoom:70%;">
+
+When disabled (default), the sound follows the default audio route (usually the headset).  
+<img src="../images/disabled-default.png" alt="Disbaled Notification" title="Disabled Notification" style="border: 1px solid gray; zoom:70%;">
+
+Users can customize this setting based on their preference for alert audibility.
 
 ## User Diagnostics
 
@@ -127,17 +144,26 @@ Steps to check your video device:
 
         If you don't see your video, select another camera. If the camera is not part of your computer, check your settings to ensure your system recognizes it.
 
-**Connectivity**: You can evaluate the client's network access by checking the connectivity, bandwidth, and hardware access through a loopback connection to our telephony infrastructure.
+**Connectivity**: You can evaluate the client's network access by checking the connectivity, bandwidth, and server reachability through a loopback connection to our telephony infrastructure.
 
-**Connectivity and Bandwidth Tests**: This test verifies hardware access and establishes a loopback connection to the telephony infrastructure to assess the client's network connectivity.
+**Connectivity, Bandwidth, and Server Reachability Tests**: Users can run a connectivity test to verify STUN/TURN results, ensuring their network supports real-time communication. They can also initiate a test call that sends a static audio stream and returns metrics such as jitter, packet loss, and MOS, helping to assess call reachability and audio quality.
 
-Steps to perform the connectivity and bandwidth tests:
+Administrators can view detailed test results to diagnose and resolve connectivity or audio issues efficiently.
 
-1. Click **Start Test**. The progress is displayed.  
-<img src="../images/start-test.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:90%;">
+Steps to perform the connectivity, bandwidth, and server reachability tests:
 
-2. Once the test is completed, the Expected Call Quality is displayed along with detailed test results. You can copy the result by clicking Copy Results.  
-<img src="../images/test-results.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:90%;">
+1. Click **Start Test**.  
+    <img src="../images/start-tests.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:70%;">
+
+    The progress is displayed.  
+    <img src="../images/test-progress.png" alt="Test Progress" title="Test Progress" style="border: 1px solid gray; zoom:70%;">
+
+2. Once the test is completed, the detailed test results are displayed. You can copy the result by clicking **Copy Results**.  
+    <img src="../images/test-result.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:70%;">
+
+!!! Note
+
+    This feature is only available when using Kore's Twilio account. It's not supported for SIP trunk setups.
 
 ## Connection Handling
 
@@ -232,6 +258,39 @@ To configure the responses under a new layout for a particular conversation, fol
 The below example illustrates the process of adding the Agent AI widget to a layout.  
 <img src="../images/adding-agent-ai.gif" alt="Adding Agent AI" title="Adding Agent AI" style="border: 1px solid gray; zoom:80%;">
 
+## Maximize External Widgets
+
+The Maximize Widgets enables agents to expand external widgets in the Agent Console to a larger, resizable view. This allows agents to access complete information within widgets without changing the fixed layout configured by supervisors or admins. Only external widgets display the maximize option.
+
+Steps to maximize external widgets:
+
+1. In the Agent Console, a Maximize icon is displayed on the external widgets.
+2. Click the **Maximize** icon.  
+    <img src="../images/expand-icon.png" alt="Maximize Icon" title="Maximize Icon" style="border: 1px solid gray; zoom:80%;">
+
+    * The widget expands in a full page view within the application interface (not a separate browser window).
+    * The expanded widget occupies the screen and remains resizable and draggable within console boundaries.  
+        <img src="../images/expanded-window.png" alt="Expanded Window" title="Expanded Window" style="border: 1px solid gray; zoom:80%;"> 
+
+    * A disclaimer appears in the original widget tab: *“The information in this widget is now displayed in the expanded view.”*  
+        <img src="../images/widget-disclaimer.png" alt="Disclaimer" title="Disclaimer" style="border: 1px solid gray; zoom:80%;">
+
+3. Interact with the widget in the expanded view.
+
+!!! Note
+
+    Only one widget can be maximized at a time.
+
+4. Move between conversations if required.
+
+    * The maximized widget automatically refreshes and displays content relevant to the selected conversation.  
+    * For widgets not tied to conversations, the widget remains accessible in the expanded view regardless of conversation context.
+
+5. Close or minimize the expanded widget.
+
+    * The widget returns to its original position and size in the layout.  
+    * The overlay is dismissed when the agent closes or minimizes it manually.
+
 ### Refresh a Widget
 
 The widget level refresh button enables customers to refresh a widget individually, eliminating the need to refresh the entire application, and keeping widgets up-to-date with the latest information.
@@ -247,3 +306,42 @@ The **Chat** feature is used for internal communication between agents and super
 
 Clicking the **Chat** icon opens a new display to view the available agents, search for a particular agent, see chat history, and call the agent.  
 <img src="../images/internal-chat.png" alt="Internal Chat" title="Internal Chat" style="border: 1px solid gray; zoom:60%;">
+
+## Help
+
+The purpose of Help is to assist users in understanding and effectively using the interface by providing contextual guidance, instructions, and troubleshooting tips directly within the application.
+
+The Help icon is located in the top right corner.  
+<img src="../images/help-icon.png" alt="Help Icon" title="Help Icon" style="border: 1px solid gray; zoom:60%;">
+
+Click the help icon to view the following support options.
+
+* [Introduction to AI for Service](https://platform.kore.ai/builder/app/console)
+* [Help & Documentation](https://docs.kore.ai/xo/home/)
+* [Community](https://community.kore.ai/)
+* [What's New in v11.x.x](./../getting-started/whats-new-in-xo-platform.md)
+* [Contact Us](https://support.kore.ai)
+* [Academy](https://academy.kore.ai/)
+* [Submit a Request](https://kore.canny.io/)
+* Report voice issue for current call - When an agent faces any problem related to the agent console, they can report an issue.  
+    <img src="../images/support-options.png" alt="Support Options" title="Support Options" style="border: 1px solid gray; zoom:60%;">
+
+### Reporting Issues for Voice Calls
+
+Click **Report voice issue for the current call** to display a pop-up with the following information:
+
+1. Select the category of the issue from the following options, and select the issue from the available options:
+
+    * Audio Clarity
+    * Connection Problems
+    * Voice Transmission
+    * Other Issues (Please specify below)  
+        <img src="../images/report-issue-window.png" alt="Report Issue Window" title="Report Issue Window" style="border: 1px solid gray; zoom:70%;">
+
+2. Add a brief description of the issue and upload a screenshot.  
+    <img src="../images/description-screenshot.png" alt="Description and Screenshot" title="Description and Screenshot" style="border: 1px solid gray; zoom:70%;">
+
+3. Click **Submit**. A notification appears, and a pop-up is displayed.  
+    <img src="../images/report-submitted.png" alt="Confirmation Message" title="Confirmation Message" style="border: 1px solid gray; zoom:70%;">  
+
+    Click **Done** to close the Window or click **Download Logs** to export the logs. The communications team receives a report by mail to analyze the issue.

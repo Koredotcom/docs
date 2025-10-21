@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Data Insert (Bulk) API
 
 Used to insert bulk data into Data Table.

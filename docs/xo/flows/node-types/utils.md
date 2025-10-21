@@ -6,7 +6,7 @@ This document explains the script nodes, call flows, and supported utils with ex
 
 ### Context | Instance Bot
 
-All the instance bot’s `context.session` variables will be moved under context.
+All the instance bot’s `{{context.session}}` variables will be moved under context.
 
 Example:
 
@@ -51,6 +51,21 @@ _And access the properties from the variable_
 ```
 var userId = cbCtx.UserContext._id
 ```
+
+### Context| Identify Returning Contact Center AI (CCAI) Customers Within 24 Hours
+
+This context variable identifies whether a CCAI customer is a returning caller within 24 hours of the previous call. It applies to both digital and voice channels.
+
+Syntax (Digital):
+
+`context.session.BotUserSession.isReturn24hCC`
+
+Syntax (Voice):
+
+`{{JSON.stringify(context.session.UserSession.isRepeatedVoiceUser)}}`
+
+* The value is set to `true,` if the same user contacts the contact center within **24 hours** of their previous interaction.
+* The value is set to `false` for first-time or non-returning users.
 
 ## Content Variables
 
@@ -104,15 +119,16 @@ userSessionUtils.setVoiceChatUserLang("de");
 
 Agent Utils is a library available for any programmatic modifications or updates you (the developer) may want to make.
 
-### Change SIP URI and Phone Number
+### Change SIP URI, Phone Number, and set Referred by
 
-Using the following Agent Utils method/script, you can change the SIP URI and the phone number.
+Using the following Agent Utils method/script, you can change the SIP URI,  phone number, and set the Referred by number of your choice.
 
 Syntax
 
 ```
 agentUtils.setTransferSipURI( {{sip URI}} )
 agentUtils.setTransferPhoneNumber( {{phoneNumber}} )
+agentUtils.setReferredBy("+1xxxxxxxxx")
 ```
 
 Example
@@ -120,6 +136,7 @@ Example
 ```
 agentUtils.setTransferSipURI("sip:+123344234000@2.3.4.5:5060")
 agentUtils.setTransferPhoneNumber("+12345434000")
+agentUtils.setReferredBy("+1902323242424")
 ```
 
 ### Set User Info
@@ -140,8 +157,8 @@ In the below example, static data is used to set the user info.
 ```
 const userInfo = {
 "firstName": "John",
-"lastName": "Smith",
-"email": "jsmith316@gmail.com",
+"lastName": "Doe",
+"email": "john.doe@example.com",
 "phoneNumber": "407-876-8654",
 "country": "USA",
 "city": "Philadelphia",
@@ -237,7 +254,7 @@ agentUtils.setNamedAgents(['agentId1', 'agentId2'])
 Example
 
 ```
-agentUtils.setNamedAgents(['a-e1427c4-8e7d-4728-8e6c-64281b235ad7', 'a-e1427c4-8e7d-4728-8e6c-64281b235ad8'])
+agentUtils.setNamedAgents(['a-e1427c4-8e7d-4728-8e6c-64281b23xxxx', 'a-e1427c4-8e7d-4728-8e6c-64281b23xxxx'])
 ```
 
 ### Set Agent Matching Conditions
@@ -278,6 +295,82 @@ agentUtils.setExternalAgentRecordingControl({record: "stop"})
 agentUtils.setExternalAgentRecordingControl({record: "pause"})
 agentUtils.setExternalAgentRecordingControl({record: "resume"})
 ```
+
+### Enable/Disable Transcripts and Voice Call Recordings for Contact Center AI
+
+Using these functions, bot developers can control whether transcripts and recordings are available to agents during transfers to the Contact Center AI Desktop. You can use these functions to:
+
+* Control transcript availability during agent transfers
+* Control recording generation during agent transfers
+* Apply both controls simultaneously when needed
+
+#### Disabling Transcripts
+
+To disable voice call recordings before initiating an agent transfer:
+
+Syntax:
+
+```
+agentUtils.setAgentTranscribe({transcribe: false});
+```
+
+* Transcripts will not be accessible to the agent on both the 'Live Interaction' and 'Interactions' pages.
+* The following note will appear near the transcripts widget on the 'Interactions' page:  
+“**Note**: Certain parts of this call were not transcribed due to the applied transcription settings”.
+
+#### Disabling Recordings
+
+To disable recordings before initiating an agent transfer:
+
+Syntax:
+
+```
+agentUtils.setAgentRecordingControl({record: "stop"});
+```
+
+* Voice call recordings will not be generated for that agent interaction.
+* The following note will appear near the recording widget on the 'Interactions' page:  
+ “**Note**: Certain parts of this call were not recorded due to the applied recording settings.”  
+* If recordings are disabled at the global account level, the existing note content will be displayed instead.
+
+#### Disabling Both Transcripts and Recordings
+
+To disable both transcripts and recordings before initiating an agent transfer:
+
+Syntax:
+
+```
+agentUtils.setAgentTranscribe({transcribe: false});
+agentUtils.setAgentRecordingControl({record: "stop"});
+```
+
+* Combines the effects of both individual controls as described above
+
+**Example**:
+
+Below is an example of how to disable both transcripts and recordings before transferring to an agent:
+
+```
+// In a script node before agent transfer
+try {
+  // Disable transcripts for the agent
+  agentUtils.setAgentTranscribe({transcribe: false});
+
+
+  // Disable recording for the agent interaction
+  agentUtils.setAgentRecordingControl({record: "stop"});
+
+
+  // Now proceed with agent transfer
+  // Your agent transfer code here...
+}
+```
+
+!!! Notes
+
+    * These controls should be applied before initiating the agent transfer.
+    * The functionality works specifically with transfers to Kore Agent Desktop.
+    * The controls affect only the specified agent interaction, not the entire conversation.
 
 ## userSessionUtils
 

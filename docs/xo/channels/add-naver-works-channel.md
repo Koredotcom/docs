@@ -1,19 +1,21 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Naver Works Channel
 
 **Naver Works** is the business messaging channel for Naver Corporation, a prominent internet services company in South Korea. The channel can be used by anyone with a screen similar to Naver/LINE service. It allows communication with users on the **_LINE_** service and the Naver Works users from other companies.
 
 The steps to configure Naver Works are summarized below:
 
-* [Create a Virtual Assistant (VA) on the Naver Works Developer Portal](#step-1-create-a-virtual-assistant-on-naver-works).
+* [Create an AI Agent on the Naver Works Developer Portal](#step-1-create-an-ai-agent-on-naver-works).
 * [Add a Client Application on the portal](#step-2-add-a-client-app).
-* [Authorize the Virtual Assistant](#step-3-authorize-the-virtual-assistant).
-* [Add the Virtual Assistant](#step-4-add-the-virtual-assistant-on-the-line-works-admin-console) on the [Line Works Admin Console](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fconsole%2F).
+* [Authorize the AI Agent](#step-3-authorize-the-ai-agent).
+* [Add the AI Agent](#step-4-add-the-ai-agent-on-the-line-works-admin-console) on the [Line Works Admin Console](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fconsole%2F).
 * [Enable the channel on the Kore.ai XO Platform](#step-5-enable-the-channel).
 
 
-### Step 1: Create a Virtual Assistant on Naver Works
+### Step 1: Create an AI Agent on Naver Works
 
-To set up Naver Works as a channel, you must create a VA on Line works and enable a callback for the XO Platform to exchange messages. To create a VA, follow the steps below:
+To set up Naver Works as a channel, you must create an AI Agent on Line works and enable a callback for the XO Platform to exchange messages. To create an AI Agent, follow the steps below:
 
 
 1. Log in to [Line Works Developer Console](https://developers.worksmobile.com/) and click the **Bot** left menu item.
@@ -26,9 +28,9 @@ To set up Naver Works as a channel, you must create a VA on Line works and enabl
 
     !!! note
 
-        Please add the registered VA in the **Admin** section to conduct thorough testing. After adding the VA, switch to Public to show all members.
+        Please add the registered AI Agent in the **Admin** section to conduct thorough testing. After adding the AI Agent, switch to Public to show all members.
 
-The new Virtual Assistant is listed on the **Bot** page.
+The new AI Agent is listed on the **Bot** page.
 
 <img src="../images/naverworks2.png" alt="naverworks API" title="naverworks bot page" style="border: 1px solid gray; zoom:70%;">
 
@@ -75,19 +77,19 @@ The next step is to add a client application to integrate with the Kore.ai XO Pl
 12. Click **Save** on the **Manage Client Apps** page.
 
 
-### Step 3: Authorize the Virtual Assistant
+### Step 3: Authorize the AI Agent
 
-After adding the client app, the next step is to authorize the VA to allow the integration with your Naver Works bot. To authorize, follow the steps below:
+After adding the client app, the next step is to authorize the AI Agent to allow the integration with your Naver Works bot. To authorize, follow the steps below:
 
 
 1. In the **Configurations** section for Naver Works on the Kore.ai XO Platform, click the **Authorize** button.  <img src="../images/naverworks12.png" alt="authorize naverworks" title="authorize naverworks" style="border: 1px solid gray; zoom:70%;">
 
-2. The system redirects to the **Line Works Developer Console** to complete the VA authorization.
+2. The system redirects to the **Line Works Developer Console** to complete the AI Agent authorization.
 
 
-### Step 4: Add the Virtual Assistant on the Line Works Admin Console
+### Step 4: Add the AI Agent on the Line Works Admin Console
 
-To add the VA to the Line Works Admin Console, follow the steps below:
+To add the AI Agent to the Line Works Admin Console, follow the steps below:
 
 
 1. Navigate to the [Line Works Admin Console](https://admin.worksmobile.com/).
@@ -99,7 +101,7 @@ To add the VA to the Line Works Admin Console, follow the steps below:
 
 4. Set **_Public_** as the Bot visibility to make it searchable for all the users in the Naver Works Messenger with the steps below:
 
-5. Click the required VA on the **Bot** page.
+5. Click the required AI Agent on the **Bot** page.
 
 6.  In the **Bot Info** window, click **Edit**.  
 <img src="../images/naverworks15.png" alt="naverworks bot info" title="naverworks bot info" style="border: 1px solid gray; zoom:70%;">

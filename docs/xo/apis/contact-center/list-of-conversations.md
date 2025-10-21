@@ -1,6 +1,8 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # List of Conversations
 
-Get the list of conversations with the given stream Id.
+Get the list of conversations with the given `streamId`.
 
 | **Method**      | GET                                                       |
 |-------------|-----------------------------------------------------------|
@@ -13,8 +15,8 @@ Get the list of conversations with the given stream Id.
 
 | **PARAMETER**  | **DESCRIPTION**                                               | **TYPE**         |
 |------------|-----------------------------------------------------------|--------------|
-| host       | The Environment URL. For example, https://platform.kore.ai | string, required |
-| streamId   | Bot ID or Stream ID. You can access it from the General Settings page of the bot. | string, required |
+| host       | The Environment URL. For example, `https://platform.kore.ai` | string, required |
+| streamId   | botId or streamId. You can get it from the App Settings page. | string, required |
 | accountId  | Your Account ID.                                          | string, required |
 
 ## Sample Request

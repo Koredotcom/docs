@@ -1,3 +1,4 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Get Dashboard Widget Data
 
@@ -39,7 +40,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Custom Reports
+<li>App Builder: Custom Reports
 
 <li>Admin Console: Custom Reports > Custom Reports
 </li>

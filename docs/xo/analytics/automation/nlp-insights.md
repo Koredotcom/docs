@@ -1,11 +1,11 @@
 # NLP Insights
 
-The NLP Insights feature helps you gain in-depth insights into the analytics data and assess your virtual assistant’s performance in identifying and executing tasks. You can improve your VA’s performance based on the insights. 
+The NLP Insights feature helps you gain in-depth insights into the analytics data and assess your AI Agent’s performance in identifying and executing tasks. You can improve your AI Agent’s performance based on the insights. 
 
 **To view the NLP Insights dashboard, follow the steps**: 
 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 <img src="../images/navigating-to-nlp.png" alt="Navigating to NLP" title="Navigating to NLP" style="border: 1px solid gray; zoom:80%;"> 
 
 2. Click the **NLP Insights** under the **Automation** section of the **Analytics** panel. The **NLP Insights dashboard** is displayed on the right side of the page.
@@ -13,14 +13,12 @@ The NLP Insights feature helps you gain in-depth insights into the analytics dat
 
 The **NLP Insights** page shows the specific information in the following sections:
 
-
-
 * Intent Found: Number of identified intents
 * Intent Not Found: Number of unidentified intents
 * Unhandled Utterances: Number of unhandled utterances
 * Pinned: Pinned NLP Insight records. Specific records are pinned to highlight them for easy access and viewing.
 
-In the latest version of the XO Platform, the **NLP Insights** section retains only the NLP-related analytics data for task identification. The new Task Execution Logs section displays the analytics data related to a VA’s task execution.
+In the latest version of the Platform, the **NLP Insights** section retains only the NLP-related analytics data for task identification. The new Task Execution Logs section displays the analytics data related to a AI Agent’s task execution.
 
 
 ## NLP Analytics Fields
@@ -45,14 +43,14 @@ The following is an example of Intent Found:
 
 _User: I want to know my order confirmation_
 
-_VA: Would you like to switch to Track Order_
+_AI Agents: Would you like to switch to Track Order_
 
 _User: Yes_
 
-_VA: Let’s log you in. \
+_AI Agents: Let’s log you in. \
       How would you like to go ahead – Log in or Guest?_
 
-In the above conversation, the user utterance of _‘knowing the order confirmation status’_ is recognized by the VA and successfully mapped to the Track Order intent.
+In the above conversation, the user utterance of _‘knowing the order confirmation status’_ is recognized by the AI Agents and successfully mapped to the Track Order intent.
 
 **Description of the Intent Found Fields**
 
@@ -69,7 +67,7 @@ The following table lists the fields on the Intent Fount tab with descriptions:
   <tr>
    <td>Utterances
    </td>
-   <td>The utterances that are identified by the VA. The details on the tab are grouped by utterances based on similarity by default. To turn off grouping by utterance, click the <strong>Utterances </strong>header and disable the <strong>Group by Utterances</strong> option.
+   <td>The utterances that are identified by the AI Agents. The details on the tab are grouped by utterances based on similarity by default. To turn off grouping by utterance, click the <strong>Utterances </strong>header and disable the <strong>Group by Utterances</strong> option.
    </td>
   </tr>
   <tr>
@@ -99,7 +97,7 @@ This information is available for the data generated <span style="text-decoratio
    </td>
    <td>The UserID of the end user related to the conversation. You can view the metrics based on either <strong>Kore User ID</strong> or <strong>Channel User ID</strong>.
 <p>
-Channel-specific IDs are shown only for the users who have interacted with the VA during the selected period.
+Channel-specific IDs are shown only for the users who have interacted with the AI Agents during the selected period.
    </td>
   </tr>
   <tr>
@@ -107,7 +105,7 @@ Channel-specific IDs are shown only for the users who have interacted with the V
    </td>
    <td>The language in which the conversation occurred.
 <p>
-If it is a multi-lingual VA, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
+If it is a multi-lingual AI Agents, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
    </td>
   </tr>
   <tr>
@@ -122,7 +120,7 @@ If it is a multi-lingual VA, you can select specific languages to filter the con
 
 ### Intent Not Found
 
-Intent Not Found includes all the user utterances that the platform is not able to identify with a dialog task or FAQ either due to invalid training, less training data, or the intent unavailability in the virtual assistant.
+Intent Not Found includes all the user utterances that the platform is not able to identify with a dialog task or FAQ either due to invalid training, less training data, or the intent unavailability in the AI Agents.
 
 See the following table and Features section to know more:
 
@@ -133,9 +131,9 @@ Example of Intent Not Found:
 
 _User: I want to know my account statement_
 
-_VA: I’m sorry, I did not recognize the value you have entered. Please select a value from the list._
+_AI Agents: I’m sorry, I did not recognize the value you have entered. Please select a value from the list._
 
-In the above conversation, the VA does not recognize the user utterance of _‘knowing the account statement’_. It could be due to invalid training, less training, or unavailability of intents in the virtual assistant.
+In the above conversation, the AI Agent does not recognize the user utterance of _‘knowing the account statement’_. It could be due to invalid training, less training, or unavailability of intents in the AI Agents.
 
 **Description of Intent Not Found Fields**
 
@@ -152,7 +150,7 @@ The following table lists the fields on the Intent Not Found tab with descriptio
   <tr>
    <td>Utterances
    </td>
-   <td>The utterances that are not identified by the VA. The details on the tab are grouped by utterances based on similarity by default. To turn off grouping by utterance, click the <strong>Utterances </strong>header and disable the <strong>Group by Utterances</strong> option.
+   <td>The utterances that are not identified by the AI Agents. The details on the tab are grouped by utterances based on similarity by default. To turn off grouping by utterance, click the <strong>Utterances </strong>header and disable the <strong>Group by Utterances</strong> option.
    </td>
   </tr>
       <tr>
@@ -174,7 +172,7 @@ This information is available for data generated <span style="text-decoration:un
    </td>
    <td>The UserID of the end user related to the conversation. You can view the metrics based on either <strong>Kore User id</strong> or <strong>Channel User Id</strong>.
 <p>
-Channel-specific ids are shown only for the users who have interacted with the VA during the selected period.
+Channel-specific ids are shown only for the users who have interacted with the AI Agents during the selected period.
    </td>
   </tr>
   <tr>
@@ -182,7 +180,7 @@ Channel-specific ids are shown only for the users who have interacted with the V
    </td>
    <td>The language in which the conversation occurred.
 <p>
-If it is a multi-lingual VA, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
+If it is a multi-lingual AI Agents, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
    </td>
   </tr>
   <tr>
@@ -197,7 +195,7 @@ If it is a multi-lingual VA, you can select specific languages to filter the con
 
 ### Unhandled Utterances
 
-The Unhandled Utterances help analyze the unidentified inputs received from the users during a task execution at an **entity node, message node**, or **confirmation** node. These insights allow you to identify the need for additional training or new intents and enhance the existing NLU model of the VAs.
+The Unhandled Utterances help analyze the unidentified inputs received from the users during a task execution at an **entity node, message node**, or **confirmation** node. These insights allow you to identify the need for additional training or new intents and enhance the existing NLU model of the AI Agents.
 
 In an unhandled utterance, the following new fields are available:
 
@@ -221,7 +219,7 @@ See the following table and Features section to know more.
 
 Unhandled Utterance Examples
 
-The following examples show the conversations between the VA and user, with unhandled utterances captured at **Entity**, **Message**, and **Confirmation** nodes.
+The following examples show the conversations between the AI Agents and user, with unhandled utterances captured at **Entity**, **Message**, and **Confirmation** nodes.
 
 **At an Entity Node**:
 
@@ -229,13 +227,13 @@ For example, when the user provides an invalid input at entity or confirmation n
 
 _User: I want my account statement_
 
-_VA: Please enter your Customer Id_
+_AI Agents: Please enter your Customer Id_
 
 _User: Where do I find it?_
 
-_VA: Sorry, that is an incorrect input. Please enter your Customer Id_
+_AI Agents: Sorry, that is an incorrect input. Please enter your Customer Id_
 
-In the above conversation, if the VA doesn’t recognize _“where to find customer id”_ as an intent or entity, then this utterance is  categorized under Unhandled Utterances.
+In the above conversation, if the AI Agent doesn’t recognize _“where to find customer id”_ as an intent or entity, then this utterance is  categorized under Unhandled Utterances.
 
 **At a Message Node**:
 
@@ -243,35 +241,35 @@ For example, when the user provides an invalid input at a message node as follow
 
 _User: I want to book a flight for today_
 
-_VA: Enter the flight number
+_AI Agents: Enter the flight number
 User: 12434
-VA: Enter number of seats required
+AI Agents: Enter number of seats required
 User: 3 
-VA: Your flight is booked. Would you like to:
+AI Agents: Your flight is booked. Would you like to:
 1. Book a Hotel 
 2. Book a sightseeing tour
 User: I want to Cancel the Flight
-VA: I’m sorry, I don’t understand. Please enter again._
+AI Agents: I’m sorry, I don’t understand. Please enter again._
 
-In the above conversation, if the VA doesn’t recognize the intent name “cancel flight” as an input at the message node. The intent identification fails and the utterance is categorized under Unhandled Utterances.
+In the above conversation, if the AI Agent doesn’t recognize the intent name “cancel flight” as an input at the message node. The intent identification fails and the utterance is categorized under Unhandled Utterances.
 
 **At Confirmation Node**:
 
 For example, when the user provides an invalid input at a confirmation node as follows:
 
-_VA: How may I help you_
+_AI Agents: How may I help you_
 
 _User: I want to book a flight_
 
-_VA: Enter the number of seats_
+_AI Agents: Enter the number of seats_
 
 _User: 2_
 
-_VA: Please confirm if you want two seats_
+_AI Agents: Please confirm if you want two seats_
 
 _User: I want to hire a cab_
 
-_VA: I cannot understand it, can you rephrase it_
+_AI Agents: I cannot understand it, can you rephrase it_
 
 In the preceding conversation, when a user enters ‘I want to hire a cab’ at the confirmation node, it is not recognized and logged under Unhandled Utterances.
 
@@ -324,7 +322,7 @@ This information is available for analytics generated after<span style="text-dec
    </td>
    <td>The UserID of the end user related to the conversation. You can view the metrics based on either <strong>Kore User id</strong> or <strong>Channel User Id</strong>.
 <p>
-Channel-specific ids are shown only for the users who have interacted with the VA during the selected period.
+Channel-specific ids are shown only for the users who have interacted with the AI Agents during the selected period.
    </td>
   </tr>
   <tr>
@@ -332,7 +330,7 @@ Channel-specific ids are shown only for the users who have interacted with the V
    </td>
    <td>The language in which the conversation occurred.
 <p>
-If it is a multi-lingual VA, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
+If it is a multi-lingual AI Agents, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
    </td>
   </tr>
   <tr>
@@ -386,7 +384,7 @@ To know the usual type of issues, see Failed Task – Type of Issues.
    </td>
    <td>The UserID of the end user related to the conversation. You can view the metrics based on either <strong>Kore User id</strong> or <strong>Channel User Id</strong>.
 <p>
-Channel-specific ids are shown only for the users who have interacted with the VA during the selected period.
+Channel-specific ids are shown only for the users who have interacted with the AI Agents during the selected period.
    </td>
   </tr>
   <tr>
@@ -394,7 +392,7 @@ Channel-specific ids are shown only for the users who have interacted with the V
    </td>
    <td>The language in which the conversation occurred.
 <p>
-If it is a multi-lingual VA, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
+If it is a multi-lingual AI Agents, you can select specific languages to filter the conversations that occurred in those languages. The page shows the conversations that occurred in all enabled languages by default.
    </td>
   </tr>
   <tr>
@@ -724,7 +722,7 @@ If the intent has been answered from a document, this section provides the follo
 
 ### NLP Analysis
 
-This tab provides a visual representation of the NLP Analysis, including intent scoring and selection.  See Testing and Training a Virtual Assistant and Ranking and Resolver for more information.
+This tab provides a visual representation of the NLP Analysis, including intent scoring and selection.  See Testing and Training an AI Agents and Ranking and Resolver for more information.
 
    <img src="../images/NLP-analysis.png" alt="NLP Analysis" title="NLP Analysis" style="border: 1px solid gray; zoom:80%;">
 
@@ -740,15 +738,19 @@ Chat History provides visibility into the user information by capturing the foll
  * **User Profile**: Provides a 360-degree view of the user and their usage metrics.
 * **User Conversation Sessions**: Lists all the sessions of the user in the given period with the selected utterance section expanded.
 * **Go to Selected Utterance**: When you click this icon, the selected utterance is highlighted in orange (see the preceding screenshot).
-* **X-Trace ID**– A unique ID assigned to each incoming message. The Id is also included in all the logs maintained by the Platform.. When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message Id** associated with the message.
+* **X-Trace Id**– A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform.
+* **K-Trace Id** – This is Kore’s monitoring trace ID. This ID is useful for debugging purposes.
+
+When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message Id** associated with the message.
 <img src="../images/chat-history-1.png" alt="Chat History-1" title="Chat History-1" style="border: 1px solid gray; zoom:60%;">
 
-* Click the **Message Id** to view the **X-Trace ID** associated with a message in the Chat History.
+* Click the **Message Id** to view the **X-Trace Id** and **K-Trace Id** associated with a message in the Chat History.  
+
 <img src="../images/xtraceid.png" alt="Chat History-2" title="Chat History-2" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
 
-    The **X-Trace ID** is retained in the logs for 30 days. Once the **X-Trace ID** is expired, you see a tooltip message as ‘`X-Trace Id: Trace records for this message are not available`‘.
+    The **X-Trace Id** and **K-Trace Id** are retained in the logs for 30 days. Once expired, you see a tooltip message as ‘`Trace records for this message are not available`‘.
 
 
 The following user information details are displayed on the **Chat History** tab:
@@ -786,7 +788,7 @@ The following user information details are displayed on the **Chat History** tab
   <tr>
    <td>Latest Interaction
    </td>
-   <td>Last time the user interacted with the VA.
+   <td>Last time the user interacted with the AI Agents.
    </td>
   </tr>
   <tr>
@@ -874,7 +876,7 @@ The following user information details are displayed on the **Chat History** tab
   <tr>
    <td>Agent Transfer Tag
    </td>
-   <td>The session where the user is transferred to an agent. Sessions should be considered even if the user returns to the VA.
+   <td>The session where the user is transferred to an agent. Sessions should be considered even if the user returns to the AI Agents.
    </td>
   </tr>
   <tr>
@@ -986,9 +988,9 @@ The Chat History tab allows you to access the exact message or conversation for 
 <img src="../images/gp-chathistory.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:60%;">
 
 
-## Train the Virtual Assistant
+## Train the AI Agents
 
-You can train the specific intents and utterances from the Intent Found, Intent Not Found, and Unhandled Utterances tabs. To do so, hover over a row in any of these tabs, and click the **Train **icon. It opens the Test & Train page, where you can train the Virtual Assistant. For more information, see  Testing and Training a Virtual Assistant.
+You can train the specific intents and utterances from the Intent Found, Intent Not Found, and Unhandled Utterances tabs. To do so, hover over a row in any of these tabs, and click the **Train **icon. It opens the Test & Train page, where you can train the AI Agents. For more information, see  Testing and Training an AI Agent.
 
 
 ## Data Export

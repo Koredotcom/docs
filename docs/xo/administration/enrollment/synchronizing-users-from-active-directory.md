@@ -13,11 +13,6 @@ Kore.ai can synchronize with your LDAP Active Directory to match the member info
 
 If a Kore.ai user leaves your company and is deactivated in Active Directory, Kore.ai can automatically deactivate the Kore.ai account during the next scheduled Active Directory synchronization. Your company’s Active Directory is never modified during synchronization.
 
-!!! Note
-
-    Post v8.1, the support for Kore.ai Directory Agent for AD Sync has been discontinued. You can use the Cloud Connector option discussed in detail in this document or use the public APIs for synchronizing your users, [click here for details](../../../apis/api-list/#admin-apis){:target="_blank"}.
-
-
 **Prerequisites**
 
 To configure Active Directory synchronization, you must:
@@ -59,7 +54,7 @@ In the following procedure, the cloud-based connection settings dialogs are desc
 1. On the **Connection** tab, define the following fields:  
 <img src="../images/synchronizing-users-from-active-directory-img2.png" alt="Connection tab" title="Connection tab" style="border: 1px solid gray;zoom:70%;"/>
 
-2. **Host Name** – The name of the domain host, for example, MyCompany.com or 10.12.6.151.
+2. **Host Name** – The name of the domain host, for example, www.iana.org or 10.12.6.151.
 3. **Server Port** – The port number for the domain host, for example, 10042.
 4. **Base DN** – The server location for users and groups in a domain, for example, dc=kore,dc=com.
 5. **User ID** – The username for authentication to connect to the domain controller.

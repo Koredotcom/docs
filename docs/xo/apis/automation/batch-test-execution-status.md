@@ -1,7 +1,8 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Batch Test Execution Status API
 
-To get the status of the Batch Test Execution request against a unique ‘Request Id’ and provide the download link for the results file after the test execution is complete. Please refer to the [Batch Test Execution API](../batch-test-execution) to learn more.
+To get the status of the Batch Test Execution request against a unique ‘Request Id’ and provide the download link for the results file after the test execution is complete. Please refer to the [Batch Test Execution API](batch-test-execution.md) to learn more.
 
 
 <table>
@@ -37,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Execution
+<li>App Builder: Batch Tests Execution
 
 <li>Admin Console: Not Applicable
 </li>
@@ -71,7 +72,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td>The <em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the App Builder.
    </td>
    <td>Required
    </td>
@@ -158,7 +159,7 @@ When the test execution is completed \
             "failedUtteranceCount": 1,
             "failedEntitiesCount": 0
         },
-        "fileUrl": "http://hostname/api/getMediaStream/media/f-c6071507-a603-59ed-8d2b-5ec344be3696.csv?e=1689769306&n=2501205681&s=IkxtTVdUdTd4c3J6WTFaSWp0MUZHWHlaNjR5bEdmaEJPczNrdU42RHB6TWc9Ig$$&clientfilename=test1-26-06-23.csv&batchtesting=true"
+        "fileUrl": "https://hostname/api/getMediaStream/media/f-c6071507-a603-59ed-8d2b-5ec344be3696.csv?e=1689769306&n=2501205681&s=IkxtTVdUdTd4c3J6WTFaSWp0MUZHWHlaNjR5bEdmaEJPczNrdU42RHB6TWc9Ig$$&clientfilename=test1-26-06-23.csv&batchtesting=true"
     }
 }
 

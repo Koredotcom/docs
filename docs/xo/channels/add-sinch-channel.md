@@ -1,6 +1,8 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Sinch Channel
 
-Virtual Assistants built on the XO Platform can be deployed on the **Sinch Conversation API** platform. 
+AI Agents built on the Platform can be deployed on the **Sinch Conversation API** platform. 
 
 The **Sinch Conversation API** allows developers to create robust omnichannel messaging experiences across multiple interaction channels.
 
@@ -12,17 +14,17 @@ The **Sinch Conversation API** allows developers to create robust omnichannel me
 
 **Prerequisites**
 
-* Access to the XO Platform Bot Builder. [Learn more](../getting-started/accessing-the-platform.md){:target="_blank"}.
-* A working virtual assistant on the XO Platform to test the channel enablement. [Learn more](../getting-started/building-a-virtual-assistant.md){:target="_blank"}.
+* Access to the XO Platform App Builder. [Learn more](../getting-started/accessing-the-platform.md){:target="_blank"}.
+* A working AI Agent on the XO Platform to test the channel enablement. [Learn more](../getting-started/building-a-virtual-assistant.md){:target="_blank"}.
 * Enabling the Sinch Conversation API requires [signing up](https://dashboard.sinch.com/signup){:target="_blank"} on the Sinch developer dashboard.
 
-To set up the channel, you must associate the VA with a Sinch app and set up the required delivery channel. The steps to complete the channel enablement are summarized below:
+To set up the channel, you must associate the AI Agent with a Sinch app and set up the required delivery channel. The steps to complete the channel enablement are summarized below:
 
-1. [Capture the Sinch Project Access keys for Authentication](../channels/add-sinch-channel.md/#step-1-capture-the-sinch-project-access-keys-for-authentication){:target="_blank"}.
-2. [Create an App](../channels/add-sinch-channel.md/#step-2-create-an-app){:target="_blank"}.
-3. [Configure the Webhook URL](../channels/add-sinch-channel.md/#step-3-configure-the-webhook-url){:target="_blank"}.
-4. [Configure the delivery channel](../channels/add-sinch-channel.md/#step-4-configure-the-delivery-channel){:target="_blank"}.
-5. [Enable the Channel on the XO Platform](../channels/add-sinch-channel.md/#step-5-enable-the-channel-on-the-xo-platform){:target="_blank"}.
+1. [Capture the Sinch Project Access keys for Authentication](#step-1-capture-the-sinch-project-access-keys-for-authentication).
+2. [Create an App](#step-2-create-an-app).
+3. [Configure the Webhook URL](#step-3-configure-the-webhook-url).
+4. [Configure the delivery channel](#step-4-configure-the-delivery-channel).
+5. [Enable the Channel on the Platform](#step-5-enable-the-channel-on-the-xo-platform).
 
 ## Step 1: Capture the Sinch Project Access keys for Authentication
 
@@ -40,7 +42,7 @@ To create an access key, follow the steps below:
     This page shows your project(s) and corresponding Project ID(s) and a list of your Access keys and the corresponding KEY IDs.
 
 <ol start="4"><li>In the top left corner of your screen, next to the <i>Sinch</i> logo, select the desired project from the <b>Project</b> dropdown.</li>
-<li>Copy and save the <b>Project ID</b> of your project. Paste it into the relevant field on the XO Platform’s Sinch <b>Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.</li>
+<li>Copy and save the <b>Project ID</b> of your project. Paste it into the relevant field on the XO Platform’s Sinch <b>Configurations</b> page.</li>
 
 <img src="../images/copy-project-id.png" alt="copy project id" title="copy project id" style="border: 1px solid gray; zoom:75%;"></ol>
 
@@ -62,7 +64,7 @@ The <b>Key</b> is created, and the <i>Key ID</i> & <i>Key Secret</i> are generat
 
 <img src="../images/key-id-and-secret.png" alt="key id and secret" title="key id and secret" style="border: 1px solid gray; zoom:75%;"></ol>
 
-<ol start ="8"><li>Copy the <b>Key ID</b> and <b>Key Secret</b> and paste them into the relevant field on the XO Platform’s <b>Sinch Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.</li></ol>
+<ol start ="8"><li>Copy the <b>Key ID</b> and <b>Key Secret</b> and paste them into the relevant field on the XO Platform’s <b>Sinch Configurations</b> page.</li></ol>
 
 <div class="admonition warning">
 <p class="admonition-title"><b>Important</b></p>
@@ -77,6 +79,9 @@ You are returned to the **Access Keys** page, where your new key is displayed in
 <p class="admonition-title"><b>Note</b></p>
 <p>The <b>KEY SECRET</b> is only displayed when a new <i>Access key</i> is created.</p>
 </div>
+
+
+
 
 ## Step 2: Create An App
 
@@ -104,7 +109,7 @@ Follow the steps below to create an app. Alternatively, you can use [API calls](
 The newly created APP is displayed in the <b>Apps</b> section.
 <img src="../images/new-app-id.png" alt="new app id" title="new app id" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Click the <b>App Name</b> and go to the <b>App Details</b> screen.</li>
-<li>Copy and save the <b>App ID</b> displayed in the <b>Configuration</b> section. Paste it into the relevant field on the XO Platform’s <b>Sinch Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.</li>
+<li>Copy and save the <b>App ID</b> displayed in the <b>Configuration</b> section. Paste it into the relevant field on the XO Platform’s <b>Sinch Configurations</b> page.</li>
 <img src="../images/copy-and-save-app-id.png" alt="copy and save app id" title="copy and save app id" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ## Step 3: Configure the Webhook URL
@@ -120,7 +125,7 @@ The **New webhook** form is displayed.
 <img src="../images/new-webhook-form.png" alt="new webhook form" title="new webhook form" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>In the <b>Target type</b> dropdown, select <i>HTTP</i>.</li>
-<li>In the <b>Target URL</b> field, copy and paste the <b>WebHook URL</b> value from the XO Platform’s <b>Channels</b> > <b>Sinch</b> > <b>Configurations</b> section. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.</li>
+<li>In the <b>Target URL</b> field, copy and paste the <b>WebHook URL</b> value from the XO Platform’s <b>Channels</b> > <b>Sinch</b> > <b>Configurations</b> section.</li>
 <li>In the <b>Secret token</b> field, copy and paste the value for <b>Verify Token</b> from the XO Platform’s <b>Channels</b> > <b>Sinch</b> > <b>Configurations</b> section. This token enables the webhook to validate against your chosen endpoint.</li>
 <img src="../images/paste-in-sinch-configurations.png" alt="configure on xo" title="configure on xo" style="border: 1px solid gray; zoom:75%;"></ol>
 <ol start="6"><li>In the <b>Triggers</b> dropdown, select all the triggers you want to add to the webhook.</li>
@@ -155,19 +160,19 @@ To enable the channel on the UXO Platform, follow the steps below:
 <ol start="4"><li>Click the <b>Configurations</b> tab.</li>
 <li>Copy the relevant field values from your <b>Sinch Conversation API</b> app and paste them into the relevant fields as follows:</li></ol>
 
-* **Sinch Region Base URL**: Copied in Step 3 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_2_Create_An_App){:target="_blank"}.
+* **Sinch Region Base URL**: Copied in Step 3 [here](#step-2-create-an-app){:target="_blank"}.
 
-* **Project ID**: Copied in Step 5 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_1_Capture_the_Sinch_Project_Access_keys_for_Authentication){:target="_blank"}.
+* **Project ID**: Copied in Step 5 [here](#step-1-capture-the-sinch-project-access-keys-for-authentication){:target="_blank"}.
 
-* **Access Key Id** and **Access Key Secret**: Copied in Step 8 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_1_Capture_the_Sinch_Project_Access_keys_for_Authentication){:target="_blank"}.
+* **Access Key Id** and **Access Key Secret**: Copied in Step 8 [here](#step-1-capture-the-sinch-project-access-keys-for-authentication){:target="_blank"}.
 
-* **App ID**: Copied in Step 6 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_2_Create_An_App){:target="_blank"}.
+* **App ID**: Copied in Step 6 [here](#step-2-create-an-app){:target="_blank"}.
 
 <ol start="5"><li>Select '<b>Yes</b>’ for <b>Enable Channel</b>.</li>
 <li>Click <b>Save</b>.</li>
 <img src="../images/xo-platform-sinch.png" alt="xo platform sinch configurations" title="xo platform sinch configurations" style="border: 1px solid gray; zoom:75%;"></ol>
 
-After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your app. [Learn more](../deploy/publishing-bot.md){:target="_blank"}.
 
 ## Message Types
 
@@ -186,7 +191,7 @@ Conversation API uses generic message types to send the same message to multiple
 
 Sinch message templates are predefined, structured formats for sending recurring or standardized messages across channels like WhatsApp, SMS, and other supported platforms.
 
-These templates ensure compliance with the channel’s messaging policies, especially for platforms like WhatsApp that require pre-approved templates for certain messages, such as notifications or service updates. Message templates can be used during virtual assistant conversations to structure the messages. The default template types include:
+These templates ensure compliance with the channel’s messaging policies, especially for platforms like WhatsApp that require pre-approved templates for certain messages, such as notifications or service updates. Message templates can be used during AI Agent conversations to structure the messages. The default template types include:
 
 * [Text](https://developers.sinch.com/docs/conversation/channel-support/whatsapp/template-support/#text-template){:target="_blank"}
 * [Media (Document, Video, and Image)](https://developers.sinch.com/docs/conversation/channel-support/whatsapp/template-support/#media-template){:target="_blank"}
@@ -195,6 +200,6 @@ These templates ensure compliance with the channel’s messaging policies, espec
 * [Authentication](https://developers.sinch.com/docs/conversation/channel-support/whatsapp/template-support/#authentication-template){:target="_blank"}
 * [Carousel](https://developers.sinch.com/docs/conversation/channel-support/whatsapp/template-support/#carousel-template){:target="_blank"}
 
-For additional assistance with using Message Templates and Types for your Sinch channel on the UXO Platform, please [contact](https://kore.ai/support/){:target="_blank"} our developer support team.
+For additional assistance with using Message Templates and Types for your Sinch channel on the Platform, please [contact](https://kore.ai/support/){:target="_blank"} our developer support team.
 
-To learn more about working with messaging channels within the UXO Platform, please see [Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}
+To learn more about working with messaging channels within the UXO Platform, please see [Channel Enablement.](adding-channels-to-your-bot.md){:target="_blank"}

@@ -11,9 +11,9 @@ This flexible system gives developers complete control over conversation managem
 It allows you to include the types of conversations that you want DialogGPT to handle in user interactions. The following are the supported conversation types. Dialogs and FAQs are enabled by default and can not be disabled.
 
 
-* **Dialogs**: Dialogs are the virtual assistant's building blocks, enabling it to perform tasks and interact with users.
+* **Dialogs**: Dialogs are the AI Agents building blocks, enabling it to perform tasks and interact with users.
 * **FAQs**: Pre-defined questions and answers that provide quick and informative responses to common inquiries.
-* **Conversation Intents**: Common phrases in user interactions with the virtual assistant.
+* **Conversation Intents**: Common phrases in user interactions with An AI Agent.
 * **Knowledge from Search AI**: Deliver answers directly from enterprise data sources for users’ questions.
 
 To manage the conversation types, click **Settings**, turn the toggle on/off to enable/disable the conversation type and click **Save**.
@@ -23,14 +23,19 @@ To manage the conversation types, click **Settings**, turn the toggle on/off to 
 
 ## Model Configurations
 
-The Model Configurations card lets you choose the models for Shortlisting Relevant Chunks and Conversation Management (Orchestration).
+Use the Model Configurations card to select the models for Shortlisting Relevant Chunks and Conversation Management (Orchestration).
 
-* **Shortlisting Relevant Chunks**: 
-The XO Platform supports **MPNet**, **BGE-M3**, **LaBSE**, and **E5 embedding** models, with more options coming soon. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine. The recommended model is BGE-M3
+* **Shortlisting Relevant Chunks**: The supported models are **MPNet**, **BGE-M3**, **LaBSE**, and **E5 embedding**. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine. The recommended model is BGE-M3.
 
+* **Maximum no. of Chunks to Shortlist (Knowledge from Search AI)**: Enter the maximum number of chunks to be shortlisted from Search AI. These chunks will be sent to the LLM for answer generation. The default value is 5. Click "[Go to Search AI](../searchai/retrieval.md)" to access the Search AI chunks retrieval settings.
 
-* **Conversation Management**: 
-Currently, **OpenAI GPT-4o**, **OpenAI GPT-4o mini**, and **Azure OpenAI GPT-4o** models are supported for user intent detection and execution plans. You can configure Temperature, Max Tokens, and Conversation History Length in advanced settings. In most cases, the default settings work fine. Support for the major commercial models will be available in the upcoming months. However, you can always bring your own model via the custom LLM integration route.  
+* **Conversation Management**: The supported LLMs help detect user intent and create execution plans. You can configure advanced settings such as Temperature, Max Tokens, and Conversation History Length. The default settings are sufficient for most use cases. Support for major commercial models will be introduced in the coming months. However, you can always integrate your own model through the custom LLM integration option. Conversation Management currently supports the following LLMs:
+    * OpenAI GPT-4o
+    * OpenAI GPT-4o mini
+    * Azure OpenAI GPT-4o
+    * Amazon Bedrock
+    * XO GPT - DialogGPT
+  
 
 To configure the model and settings, click **Settings**. Select the model, adjust the settings if necessary, and click **Save**.
 
@@ -49,7 +54,9 @@ The following is the intent event fulfillment behavior.
 * **Ambiguous Intents Identified**: Define the flow when ambiguous intent is identified. You can configure how the system should handle such situations.
     * Present Qualified Intents (Default): Display a list of intents for the user to select or respond to. The task chosen (Dialog, FAQ, or Answer) is triggered.
     * Execute Dialog task: Select the dialog task to execute.
-* **Answer Generation**: This event handles user inputs that need answers generated from Search AI documents. When Knowledge from Search AI is enabled in DialogGPT, the system activates the Answer Generation event and adds the default event handler to the bot.
+* **Answer Generation**: This event handles user inputs that need answers generated from Search AI documents. When Knowledge from Search AI is enabled in DialogGPT, the system activates the Answer Generation event and adds the default event handler to the App.
+
+* **Multiple Intents**: Define Multi-Intent fulfillment logic when the Conversation Orchestrator detects multiple intents in a user’s utterance. Users can modify the predefined Multi-Intent fulfillment dialog, gaining greater control and flexibility. By default, the platform executes the predefined dialog (Multiintent) to handle the Multi-Intent event.
 
 To manage an intent, click the respective settings. Define the event configuration, use the toggle to enable/disable the intent type, and click save.
 

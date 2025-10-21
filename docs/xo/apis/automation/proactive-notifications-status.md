@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Proactive Notification Status API
 
 To fetch the status of Proactive Notifications API.
@@ -34,7 +36,7 @@ To fetch the status of Proactive Notifications API.
    <td>
 <ul>
 
-<li>Bot Builder: Proactive Messages
+<li>App Builder: Proactive Messages
 
 <li>Admin Console: Channel Management > Proactive Messages
 </li>
@@ -65,9 +67,9 @@ To fetch the status of Proactive Notifications API.
   <tr>
    <td><strong>BotId</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong>on the Bot Builder.
+   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong>on the App Builder.
 <p>
-<strong>Note</strong>: This is required only for Bot Builder API scope of Proactive Messages.
+<strong>Note</strong>: This is required only for App Builder API scope of Proactive Messages.
    </td>
    <td>Required
    </td>

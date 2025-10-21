@@ -1,3 +1,4 @@
+--8<-- "includes/automationai-api-back-link.md"
 
 # Get Analytics API
 
@@ -37,7 +38,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td>
 <ul>
 
-<li>Bot Builder: Metrics
+<li>App Builder: Metrics
 
 <li>Admin Console: Not Applicable
 </li>
@@ -130,6 +131,8 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-xxxxx
   <tr>
    <td><strong>PARAMETER</strong>
    </td>
+   <td><strong>REQUIRED/OPTIONAL</strong>
+   </td>   
    <td><strong>TYPE</strong>
    </td>
    <td><strong>DESCRIPTION</strong>
@@ -138,8 +141,10 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-xxxxx
   <tr>
    <td>type
    </td>
-   <td>string, required
+   <td>Required
    </td>
+   <td>String
+   </td>   
    <td>Indicates the type of metrics for which you can retrieve data:
 <ul>
 
@@ -161,24 +166,30 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-xxxxx
   <tr>
    <td>filters
    </td>
-   <td>object, required
+   <td>Required
    </td>
+   <td>Object
+   </td>   
    <td>A set of filters to narrow down the analytics data.
    </td>
   </tr>
   <tr>
    <td>filters.from
    </td>
-   <td>string, required
+   <td>Required
    </td>
+   <td>String
+   </td>   
    <td>The start timestamp for the data retrieval.
    </td>
   </tr>
   <tr>
    <td>filters.to
    </td>
-   <td>string, required
+   <td>Required
    </td>
+   <td>String
+   </td>   
    <td>The end timestamp for the data retrieval.
    </td>
   </tr>
@@ -193,8 +204,10 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-xxxxx
   <tr>
    <td>filters.channel
    </td>
-   <td>array of strings, optional
+   <td>Optional
    </td>
+   <td>Array of strings
+   </td>   
    <td>An array containing channel names to filter data by; the default channel is “rtm”.
 <p>
 Accepted channels are:
@@ -260,15 +273,19 @@ Accepted channels are:
   <tr>
    <td>filters.channel.channelUIds
    </td>
-   <td>array of strings, optional
+   <td>Optional
    </td>
+   <td>Array of strings
+   </td> 
    <td>The end-user’s identity provided by the channel.
    </td>
   </tr>
   <tr>
    <td>filters.isAmbiguous
    </td>
-   <td>boolean, optional
+   <td>Optional
+   </td>
+   <td>Boolean
    </td>
    <td>Whether to include ambiguous intents or not – set to <em>true</em> or <em>false</em>.
    </td>
@@ -276,7 +293,9 @@ Accepted channels are:
   <tr>
    <td>filters.isDeveloper
    </td>
-   <td>boolean, optional
+   <td>Optional
+   </td>
+   <td>Boolean
    </td>
    <td>Whether to include developer metrics – set to <em>true</em> or <em>false</em>.
    </td>
@@ -284,7 +303,9 @@ Accepted channels are:
   <tr>
    <td>filters.trained
    </td>
-   <td>boolean, optional
+   <td>Optional
+   </td>
+   <td>Boolean
    </td>
    <td>Whether to include trained intents or not – set to <em>true</em> or <em>false</em>.
    </td>
@@ -292,15 +313,19 @@ Accepted channels are:
   <tr>
    <td>filter.taskId
    </td>
-   <td>array of strings, optional
+   <td>Optional
    </td>
+   <td>Array of strings
+   </td>   
    <td>To filter based on the task IDs.
    </td>
   </tr>
   <tr>
    <td>filters.userId
    </td>
-   <td>array of strings, optional
+   <td>Optional
+   </td>
+   <td>Array of strings
    </td>
    <td>To filter based on user IDs.
    </td>
@@ -308,7 +333,9 @@ Accepted channels are:
   <tr>
    <td>filters.tags
    </td>
-   <td>object, optional
+   <td>Optional
+   </td>
+   <td>Object
    </td>
    <td>Meta tags to filter the records.
 <p>
@@ -346,8 +373,10 @@ Usage example:
   <tr>
    <td>sort
    </td>
-   <td>object, optional
+   <td>Optional
    </td>
+   <td>Object
+   </td>   
    <td>An object containing the sorting criteria to apply to the data being retrieved:
 <ul>
 
@@ -370,15 +399,19 @@ Usage example:
   <tr>
    <td>limit
    </td>
-   <td>integer, required
+   <td>Required
    </td>
+   <td>Number
+   </td>   
    <td>Indicates the number of records to be returned in the result set.
    </td>
   </tr>
   <tr>
    <td>skip
    </td>
-   <td>integer, required
+   <td>Required
+   </td>
+   <td>Number
    </td>
    <td>The number of records to be skipped from the result set.
    </td>
@@ -677,12 +710,16 @@ Usage example:
   <tr>
    <td><strong>PARAMETER</strong>
    </td>
+   <td><strong>TYPE</strong>
+   </td>   
    <td><strong>DESCRIPTION</strong>
    </td>
   </tr>
   <tr>
    <td>moreAvailable
    </td>
+   <td>Boolean
+   </td>   
    <td>Indicates if the API has returned all the records or if more are available, based on the pagination criteria.
 <p>
 <strong>True</strong> if more records are available. <strong>False</strong> if there are no more records to be retrieved.
@@ -691,186 +728,248 @@ Usage example:
   <tr>
    <td>result
    </td>
+   <td>Array of objects
+   </td>   
    <td>Contains complete information about the metrics.
    </td>
   </tr>
   <tr>
    <td>id
    </td>
+   <td>String
+   </td>   
    <td>The unique identifier for the record.
    </td>
   </tr>
   <tr>
    <td>messagesId
    </td>
+   <td>String
+   </td>   
    <td>The unique identifier for the message record.
    </td>
   </tr>
   <tr>
    <td>sessionId
    </td>
+   <td>String
+   </td>   
    <td>The unique identifier for the session.
    </td>
   </tr>
   <tr>
    <td>utterance
    </td>
+   <td>String
+   </td>   
    <td>The user utterance/input.
    </td>
   </tr>
   <tr>
    <td>intent
    </td>
+   <td>String
+   </td>   
    <td>The identified intent for the user’s utterance/input.
    </td>
   </tr>
   <tr>
    <td>userId
    </td>
+   <td>String
+   </td>   
    <td>The unique identifier for the user.
    </td>
   </tr>
   <tr>
    <td>channelUId
    </td>
+   <td>String
+   </td>   
    <td>The end-user’s identity provided by the channel. It can be the user’s email ID or enterprise-assigned unique ID.
    </td>
   </tr>
   <tr>
    <td>language
    </td>
+   <td>String
+   </td>   
    <td>The language in which the conversation happened with the bot.
    </td>
   </tr>
   <tr>
    <td>timestamp
    </td>
+   <td>String
+   </td>   
    <td>The response date is converted into timestamp format.
    </td>
   </tr>
   <tr>
    <td>pinned
    </td>
+   <td>Boolean
+   </td>   
    <td>Indicates whether the message is pinned – <em>true</em> or <em>false</em>.
    </td>
   </tr>
   <tr>
    <td>channel
    </td>
+   <td>String
+   </td>   
    <td>Name of the channel through which the conversation occurred.
    </td>
   </tr>
   <tr>
    <td>winningIntent
    </td>
+   <td>Array
+   </td>   
    <td>An array containing the winning intent(s) for the utterance.
    </td>
   </tr>
   <tr>
    <td>isAmbiguous
    </td>
+   <td>Boolean
+   </td>   
    <td>Indicates whether the intent is ambiguous – <em>true</em> or <em>false.</em>
    </td>
   </tr>
   <tr>
    <td>ambiguousIntents
    </td>
+   <td>Array
+   </td>   
    <td>An array of ambiguous intents, if applicable.
    </td>
   </tr>
   <tr>
    <td>taskName
    </td>
+   <td>String
+   </td>   
    <td>The name of the task associated with the conversation.
    </td>
   </tr>
   <tr>
    <td>nodeName
    </td>
+   <td>String
+   </td>   
    <td>The node name. This parameter is retrieved only for the <em>Performance</em> metric.
    </td>
   </tr>
   <tr>
    <td>type
    </td>
+   <td>String
+   </td>   
    <td>The type of the node. This parameter is retrieved only for the <em>Performance</em> metric.
    </td>
   </tr>
   <tr>
    <td>status
    </td>
+   <td>String
+   </td>   
    <td>The status of the task. This parameter is retrieved only for the <em>Performance</em> metric.
    </td>
   </tr>
   <tr>
    <td>statusCode
    </td>
+   <td>String
+   </td>   
    <td>The status code of the task. This parameter is retrieved only for the <em>Performance</em> metric.
    </td>
   </tr>
   <tr>
    <td>responseTime
    </td>
+   <td>String
+   </td>   
    <td>The response time for the task. This parameter is retrieved only for the <em>Performance</em> metric.
    </td>
   </tr>
   <tr>
    <td>flow
    </td>
+   <td>Array
+   </td>   
    <td>An array of task flows.
    </td>
   </tr>
   <tr>
    <td>taskId
    </td>
+   <td>String
+   </td>   
    <td>The unique identifier for the task.
    </td>
   </tr>
   <tr>
    <td>koralogstatusId
    </td>
+   <td>String
+   </td>   
    <td>The unique identifier for the koralog status.
    </td>
   </tr>
   <tr>
    <td>customTags
    </td>
+   <td>Object
+   </td>   
    <td>Custom tags added to the user’s profile.
    </td>
   </tr>
   <tr>
    <td>customTags.userTags
    </td>
+   <td>Array
+   </td>   
    <td>User tags added to the user’s profile information.
    </td>
   </tr>
   <tr>
    <td>userTags.name
    </td>
+   <td>String
+   </td>   
    <td>Tag’s name.
    </td>
   </tr>
   <tr>
    <td>userTags.value
    </td>
+   <td>String
+   </td>   
    <td>Tag’s value.
    </td>
   </tr>
   <tr>
    <td>customTags.sessionTags
    </td>
+   <td>Array
+   </td>   
    <td>Custom tags added to the conversation session.
    </td>
   </tr>
   <tr>
    <td>customTags.messagesTags
    </td>
+   <td>Array
+   </td>   
    <td>Meta tags to filter the conversations.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis
    </td>
+   <td>Object
+   </td>   
    <td>Contains natural language analysis results, including intent recognition and other natural language processing details.
 <p>
 The ‘NLAnalysis’ object includes multiple sub-objects such as ‘intentRescoring’, ‘nlProcessing’, ‘ml’ (machine learning analysis), ‘fm’ (fundamental meaning analysis), ‘faq’ (frequently asked questions analysis), and finalResolver. Each of these sub-objects contains information related to the analysis process, such as linguistic analysis, intent recognition, and the elimination of unlikely intents, etc.
@@ -879,6 +978,8 @@ The ‘NLAnalysis’ object includes multiple sub-objects such as ‘intentResco
   <tr>
    <td>NLAnalysis.debugTitle
    </td>
+   <td>String
+   </td>   
    <td>The metric type in the NL Analysis. Possible values are:
 <ul>
 
@@ -900,252 +1001,336 @@ The ‘NLAnalysis’ object includes multiple sub-objects such as ‘intentResco
   <tr>
    <td>NLAnalysis.result
    </td>
+   <td>String
+   </td>   
    <td>The result of the NL analysis. For example, the result can be an unhandled utterance or a failed task.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.messageStoreId
    </td>
+   <td>String
+   </td>   
    <td>A unique identifier for the message stored in the system.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.channelId
    </td>
+   <td>String
+   </td>   
    <td>The identifier for the channel where the conversation took place.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.bot
    </td>
+   <td>String
+   </td>   
    <td>The name of the bot that handled the conversation.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.botid
    </td>
+   <td>String
+   </td>   
    <td>The unique identifier for the bot.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.skipConversation
    </td>
+   <td>Boolean
+   </td>   
    <td>If set to true, skips the conversation record. If false, do not skip the conversation.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.task
    </td>
+   <td>String
+   </td>   
    <td>The name of the task associated with the conversation.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.botLanguage
    </td>
+   <td>String
+   </td>   
    <td>The language used by the bot.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nluLanguage
    </td>
+   <td>String
+   </td>   
    <td>The language in which the NLP training happened for that particular bot language.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.taskId
    </td>
+   <td>String
+   </td>   
    <td>The unique identifier for the task associated with the conversation.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.isDeveloper
    </td>
+   <td>Boolean
+   </td>   
    <td>Whether the session was initiated by a developer –  <em>true</em> or <em>false</em>.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.reason
    </td>
+   <td>Object
+   </td>   
    <td>The NL analysis reason object.              
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.reason.cause
    </td>
+   <td>String
+   </td>   
    <td>The cause for NL analysis failure. For example, the script node failure.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.reason.causeId
    </td>
+   <td>String
+   </td>   
    <td>The NL analysis cause id.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.fields
    </td>
+   <td>String
+   </td>   
    <td>The fields; Contains additional fields associated with the interaction.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.logSequenceId
    </td>
+   <td>String
+   </td>   
    <td>The unique log sequence identifier.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.intentStatus
    </td>
+   <td>String
+   </td>   
    <td>The status of the intent.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.subType
    </td>
+   <td>String
+   </td>   
    <td>The task subtype.  For example, a dialog.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.channelInfo
    </td>
+   <td>String
+   </td>   
    <td>The bot channel information.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.input
    </td>
+   <td>Array
+   </td>   
    <td>An array containing the user’s input.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.taskContextId
    </td>
+   <td>String
+   </td>   
    <td>The unique task context identifier.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.intentRescoring
    </td>
+   <td>Boolean
+   </td>   
    <td>Indicates whether intent rescoring was enabled – <em>true</em> or <em>false</em>. (<em>true</em> means the system may reevaluate and rescore intents during the processing of the user’s input.)
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.isPreferDefinitiveMatch
    </td>
+   <td>Boolean
+   </td>   
    <td>Indicates whether the system prefers a definitive match when recognizing intents – <em>true</em> or <em>false</em>.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.scoringModel
    </td>
+   <td>String
+   </td>   
    <td>The scoring model used for intent recognition. Possible value – <em>original</em>.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.toneAnalysis
    </td>
-   <td>The toneAnalysis object; Contains the tone analysis of the task. <a href="../../automation/intelligence/sentiment-management/tone-analysis">Learn more</a>.
+   <td>Object
+   </td>   
+   <td>The toneAnalysis object; Contains the tone analysis of the task. 
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing
    </td>
+   <td>Object
+   </td>   
    <td>The nlProcessing object; Contains information about the linguistic analysis and natural language processing of the user’s input.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.originalInput
    </td>
+   <td>String
+   </td>   
    <td>The original user input.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.spellCorrectedInput
    </td>
+   <td>String
+   </td>   
    <td>If spelling correction is applied, it would contain the corrected user input. (Null indicates no spelling correction applied.)
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.canonical
    </td>
+   <td>String
+   </td>   
    <td>The canonical representation of the input; typically represents a normalized or recognized form of the user’s input.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.wordAnalysis
    </td>
+   <td>Array
+   </td>   
    <td>An array of objects, each containing a detailed analysis of individual words in the user’s input.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.wordAnalysis.index
    </td>
+   <td>Number
+   </td>   
    <td>The position of the word in the input.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.wordAnalysis.word
    </td>
+   <td>String
+   </td>   
    <td>The recognized/analyzed word.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.wordAnalysis.ignored
    </td>
+   <td>Boolean
+   </td>   
    <td>Indicates whether the word was ignored in the analysis – <em>true</em> or <em>false</em>.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.wordAnalysis.pos
    </td>
+   <td>String
+   </td>   
    <td>Part-of-speech tagging for the word.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.wordAnalysis.role
    </td>
+   <td>String
+   </td>   
    <td>The role or function of the word in the context.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.wordAnalysis.original
    </td>
+   <td>String
+   </td>   
    <td>The original word.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.nlProcessing.wordAnalysis.processedWord
    </td>
+   <td>String
+   </td>   
    <td>The processed word.
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.ml
    </td>
+   <td>Object
+   </td>   
    <td>The ml object; Contains information related to machine learning analysis, including intent recognition and elimination of unlikely intents. (Most of the parameters/values returned by the object are used internally.)
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.fm
    </td>
+   <td>Object
+   </td>    
    <td>The fm object; Contains information related to fundamental meaning analysis, provides insights into the scoring, matching, and elimination of tasks, etc. (Most of the parameters/values returned by the object are used internally.)   
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.faq
    </td>
+   <td>Object
+   </td>    
    <td>The faq object; Contains detailed information about the analysis of user input related to faq. (Most of the parameters/values returned by the object are used internally.)  
    </td>
   </tr>
   <tr>
    <td>NLAnalysis.finalResolver
    </td>
+   <td>Object
+   </td>    
    <td>The finalResolver object; Contains information related to the final resolution process and the determination of the response or action to be taken based on the user’s input. (Most of the parameters/values returned by the object are used internally.)
    </td>
   </tr>
   <tr>
    <td>totalCount
    </td>
+   <td>Number
+   </td>    
    <td>The total number of records identified as per the API request parameters.
    </td>
   </tr>

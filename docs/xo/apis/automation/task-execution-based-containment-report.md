@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Task Execution-Based Containment Report API
 
 This task-wise Containment Report offers a comparative analysis of the impact of task executions on overall containment. It breaks down task-wise successes and failures by containment type, including Drop-off, Self-service, and Agent Hand-off, providing a detailed overview for better understanding and decision-making.
@@ -32,7 +34,7 @@ This task-wise Containment Report offers a comparative analysis of the impact of
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token" target="_blank">How to generate the JWT Token.</a>
+</a>
    </td>
   </tr>
   <tr>
@@ -41,7 +43,7 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    <td>
 <ul>
 
-<li>Bot Builder: Metrics
+<li>App Builder: Metrics
 
 <li>Admin Console: Not Applicable
 </li>
@@ -49,6 +51,8 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    </td>
   </tr>
 </table>
+
+Refer [How to generate the JWT Token](../../apis/automation/api-introduction.md#generating-the-jwt-token).
 
 ## Path Parameters
 
@@ -75,7 +79,7 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    </td>
    <td>Required
    </td>
-   <td>Bot ID or Stream ID can be accessed from the <strong>General Settings</strong> page of the virtual assistant.
+   <td>Bot ID or Stream ID can be accessed from the <strong>General Settings</strong> page in the application.
    </td>
   </tr>
   <tr>
@@ -283,7 +287,7 @@ The response returns the API Response ID "**_id**" (as highlighted in the sample
   <tr>
    <td>streamId
    </td>
-   <td>Can be accessed from the General Settings page of the Virtual Assistant.
+   <td>Can be accessed from the General Settings page of the application.
    </td>
   </tr>
   <tr>
@@ -307,7 +311,7 @@ The response returns the API Response ID "**_id**" (as highlighted in the sample
   <tr>
    <td>createdBy
    </td>
-   <td>The user ID of the end user who created the task execution-based report for a virtual assistant.
+   <td>The user ID of the end user who created the task execution-based report.
    </td>
   </tr>
   <tr>
@@ -522,7 +526,7 @@ If a task is executed more than once within a single conversation session and yi
    </td>
    <td>Total number of conversation sessions that are marked as Self-service during which the specified task is executed (Success or Failure).
 <p>
-Self-service sessions refer to the conversations that the virtual assistant contains.
+Self-service sessions refer to the conversations that the AI Agent contains.
    </td>
   </tr>
   <tr>
@@ -539,7 +543,7 @@ A session is classified as <em>Drop-off</em> when the user abandons the conversa
 
 <li>The last utterance of the user does not detect any intent.
 
-<li>The virtual assistant stops responding due to any reason.
+<li>The AI Agent stops responding due to any reason.
 </li>
 </ul>
    </td>

@@ -1,6 +1,7 @@
 # Alert Task – Configuring the Schedule
 
-As seen <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>, alert tasks only reach out to a web service for data when the VA makes a request. 
+
+As seen [Alert task](../use-cases/alert-tasks.md), alert tasks only reach out to a web service for data when AI Agent makes a request. 
 
 For each task, you need to define when, and how often the web service is queried for data for an alert message. You can define the scheduling options presented to the end-user when the task is set up, as well as the default schedule for the task. This article explains how to do so.
 

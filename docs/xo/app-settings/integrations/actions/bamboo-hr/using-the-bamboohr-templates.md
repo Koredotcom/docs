@@ -5,9 +5,8 @@ You can use the **Prebuilt Action Templates** from your BambooHR integration to 
 Steps to create a dialog task using the BambooHR action templates:
 
 1. Ensure that you have configured [Bamboo HR](configuring-the-bamboohr-action.md){:target="_blank"} and [installed templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} successfully.
-If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
+2. Go to **Automation AI** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
 
 3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
@@ -89,7 +88,7 @@ The following BambooHR actions are supported:
 
 Steps to create an employee in the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The Create an Employee dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img4-create-employee.png" alt="Create Employee dialog task" title="Create Employee dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -111,7 +110,7 @@ Steps to create an employee in the BambooHR integration:
     5. **createEmployeeMessage** – A message node with script to display responses for various scenarios.
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to create an employee as shown below:  
+5. Follow the prompts in the App console to create an employee as shown below:  
 <img src="../images/bamboo-hr-tem-img6-create-employee1.png" alt="Employee creation" title="Employee creation" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Click View Employee to view employee details in the BambooHR:  
@@ -121,7 +120,7 @@ Steps to create an employee in the BambooHR integration:
 
 Steps to find an employee by ID from the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 
 2. The _Get Employee by ID_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img8-get-employee.png" alt="Get Employee ID task" title="Get Employee ID task" style="border: 1px solid gray;zoom:50%;"/>
@@ -144,7 +143,7 @@ Steps to find an employee by ID from the BambooHR integration:
     5. **getEmployeeMessage** – A message node with script to display responses for various scenarios.
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
-5. Follow the prompts in the VA console to find an employee as shown below:  
+5. Follow the prompts in the App console to find an employee as shown below:  
 <img src="../images/bamboo-hr-tem-img10-get-employee2.png" alt="Find an employee" title="Find an employee" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Click View Employee to view employee details in the BambooHR.
@@ -154,7 +153,7 @@ Steps to find an employee by ID from the BambooHR integration:
 
 Steps to view all employees in the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The _List All Employees_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img11-list-employees.png" alt="List all employees" title="List all employees" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -212,7 +211,7 @@ Steps to view all employees in the BambooHR integration:
  
     5. **listAllEmployeesMessage** – A message node with script to display responses for various scenarios.
 3. Click the **Talk to Bot** icon to test and debug the dialog task.
-4. Follow the prompts in the VA console to view all employees as shown below:
+4. Follow the prompts in the App console to view all employees as shown below:
 <img src="../images/bamboo-hr-tem-img13-list-employees2.png" alt="Request" title="Request" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -220,7 +219,7 @@ Steps to view all employees in the BambooHR integration:
 
 Steps to update an employee in the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The _Update an Employee_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img14-update-employee.png" alt="Update Employee dialog task" title="Update Employee dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -244,7 +243,7 @@ Steps to update an employee in the BambooHR integration:
     6. **getEmployeeByIdService** – A bot action service to find an employee by an ID from an external integration. Click the Plus icon to expand to view the getEmployeeByIdService bot action component properties.
     7. **updateEmployeeMessage** – A message node with script to display responses for various scenarios.
 3. Click the **Talk to Bot** icon to test and debug the dialog task.
-4. Follow the prompts in the VA console to update an employee as shown below:  
+4. Follow the prompts in the App console to update an employee as shown below:  
 <img src="../images/bamboo-hr-tem-img17-update-employee3.png" alt="Update employee" title="Update employee" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Click View Employee to view employee details in the BambooHR.
@@ -254,7 +253,7 @@ Steps to update an employee in the BambooHR integration:
 
 Steps to fetch all time off requests from the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank} section to install this template.
 2. The Get All Time Off Requests dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img18-get-time-off.png" alt="Get Time Off Request dialog" title="Get Time Off Request dialog" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -342,7 +341,7 @@ Steps to fetch all time off requests from the BambooHR integration:
 
     4. **getTimeoffRequestsMessage** – A message node with script to display responses for various scenarios.
 3. Click the Talk to Bot icon to test and debug the dialog task.
-4. Follow the prompts in the VA console to get all time off requests as shown below:  
+4. Follow the prompts in the App console to get all time off requests as shown below:  
 <img src="../images/bamboo-hr-tem-img20-get-time-off2.png" alt="Get all time off requests" title="Get all time off requests" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -350,7 +349,7 @@ Steps to fetch all time off requests from the BambooHR integration:
 
 Steps to get a list of who is out from the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The _Get a List of Who Is Out_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img21-get-who-out.png" alt="Get a list of Who is Out dialog task" title="Get a list of Who is Out dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -362,14 +361,14 @@ Steps to get a list of who is out from the BambooHR integration:
     5. **getListWhoIsOutMessage** – A message node with script to display responses for various scenarios.
 
 3. Click the **Talk to Bot** icon to test and debug the dialog task.
-4. Follow the prompts in the VA console to get a list of who is out.
+4. Follow the prompts in the App console to get a list of who is out.
 
 
 ### Update a Request Status
 
 Steps to update a request status in the BambooHR integration:
 
-1. Refer to the [Installing the BambooHR templates](../configuring-the-bamboohr-action/#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
+1. Refer to the [Installing the BambooHR templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} section to install this template.
 2. The _Update a Request Status_ dialog task is added with the following components:  
 <img src="../images/bamboo-hr-tem-img23-update-request-status.png" alt="Update Request Status dialog task" title="Update Request Status dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -392,5 +391,5 @@ Steps to update a request status in the BambooHR integration:
 
     6. **updateRequestStatusMessage** – A message node with script to display responses for various scenarios.
 3. Click the **Talk to Bot** icon to test and debug the dialog task.
-4. Follow the prompts in the VA console to update a request as shown below:  
+4. Follow the prompts in the App console to update a request as shown below:  
 <img src="../images/bamboo-hr-tem-img26-update-request-status.png" alt="Update Request" title="Update Request" style="border: 1px solid gray;zoom:50%;"/>

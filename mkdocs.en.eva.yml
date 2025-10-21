@@ -2,6 +2,7 @@ site_name: Kore ai Docs
 site_author: Kore ai Content Experience Team
 docs_dir: 'docs/eva/'
 site_dir: 'site/ai-for-work/'
+site_url: https://docs.kore.ai/ai-for-work/
 repo_name: Koredotcom/docs
 repo_url: https://github.com/Koredotcom/docs
 extra_css:
@@ -40,6 +41,9 @@ plugins:
   - search:
       lang: tr
   - glightbox   
+  - redirects:
+      redirect_maps:
+        'getting-started/quick-start-guide.md': 'getting-started/setup-guide.md'
 extra:
   version:
     provider: mike
@@ -59,8 +63,7 @@ extra:
           name: This page could be improved
           data: 0
           note: >-                       
-            Thanks for your feedback! Help us improve this page by
-            using our <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Feedback Form<a>.            
+            Thanks for your feedback!            
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -112,57 +115,85 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Overview: getting-started/introduction.md   
-    - Setup Guide: getting-started/setup-guide.md
-    - Accessing AI for Work: getting-started/accessing-ai-for-work.md    
-    - Using AI for Work Assistant: getting-started/how-to-use.md        
+    - Introduction to AI for Work: getting-started/introduction.md
+    - Accessing AI for Work: getting-started/accessing-ai-for-work.md
+    - Setup Guide: getting-started/setup-guide.md 
+    - Using AI for Work Assistant: getting-started/how-to-use.md
+    - Marketplace: getting-started/marketplace.md
     - Release Notes:
       - Release Updates: release-notes/release-updates.md
   - Custom Agents:
-    - Overview: custom-agents/overview.md
+    - About Custom Agents: custom-agents/overview.md
+    - Enterprise Knowledge: 
+      - Source: custom-agents/enterprise-knowledge.md
+      - Connect Search AI: custom-agents/connect-search-ai.md
+      - Connect Agentic App: custom-agents/connect-agentic-app.md
+      - Connect Amazon Q: custom-agents/connect-amazon-q.md
     - AI Agents: 
       - Prompt Agents: custom-agents/prompt-agents.md 
-      - GALE Agents: custom-agents/gale-agents.md  
-      - Bot Agents: 
-        - Import/Create: custom-agents/bot-agent.md
-        - Alert Task: custom-agents/alert-task.md
-        - Notify API: custom-agents/notify-bot-agent-api.md     
-    - AI Search: 
-      - RAG Agents: custom-agents/rag-agent.md
-      - Enterprise Knowledge: custom-agents/enterprise-knowledge.md
       - API Agents: custom-agents/api-agents.md 
-    - Agentic App: 
-      - Standard Apps: custom-agents/agentic-apps.md
-      - Advanced Apps: custom-agents/advanced-agentic-apps.md
+      - Search Agents: custom-agents/search-agents.md
+      - Agentic Flows: custom-agents/agentic-flows.md
+      - Autonomous Agents: custom-agents/autonomous-agent.md      
+    - Other Agents: 
+      - Bot Agents: custom-agents/bot-agents.md
+      - Workflow Agents: custom-agents/workflow-agents.md 
+    - Agent Management:
+      - Agent Options: custom-agents/agent-options.md
+      - Agent Testing: custom-agents/agent-testing.md
+      - Agent Creation: custom-agents/agent-creation.md
+      - Agent Version: custom-agents/agent-version.md
+      - Alert Task: custom-agents/alert-task.md
+      - Notify API: custom-agents/notify-api.md
   - Pre-built Agents:
-    - Overview: pre-built-agents/overview.md
+    - About Pre-built Agents: pre-built-agents/overview.md
   - Pre-built Solutions:
-    - Overview: pre-built-solutions/overview.md
+    - About Pre-built Solution: pre-built-solutions/overview.md
     - IT Assist: pre-built-solutions/itassist.md
-    - HR Assist: pre-built-solutions/hrassist.md
-    - Recruit Assist: pre-built-solutions/recruitassist.md
+    - HR Assist: pre-built-solutions/hrassist.md    
   - Analytics: 
-    - Overview: analytics/overview.md
+    - Analytics Overview: analytics/overview.md
     - Dashboard View: analytics/dashboard-view.md
     - Data View: analytics/data-view.md
   - Administration:
-    - Overview: admin-overview.md
-    - Assist Configuration:
-      - LLM Configuration: assistant-configuration/llm-configuration.md
-      - Business Rules: assistant-configuration/business-rules.md
-      - Email Template: assistant-configuration/email-template.md
-      - Rate Limit: assistant-configuration/rate-limit.md
+    - Admin Console Overview: Administration/overview.md
+    - Workspace: Administration/workspace.md
+    - Account Hub: Administration/account-hub.md
+    - Workspace Management:
+      - Account Workspace: workspace-management/account-workspace.md
+      - Personal Workspace: workspace-management/personal-workspace.md
+    - Integration:
+      - Amazon Q: integration/amazon-q.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing your users.md
       - Manage Groups: user-management/managing-your-groups.md
+    - LLM Configuration:
+      - General Purpose: llm-configuration/general-purpose.md
+      - Business Rules: llm-configuration/business-rules.md
+    - Assist Configuration:
+      - Email Template: assistant-configuration/email-template.md
+      - Rate Limit: assistant-configuration/rate-limit.md
+      - Guardrails: assistant-configuration/guardrails.md
+      - Orchestration Settings: assistant-configuration/orchestration-settings.md
+      - Channels:
+        - Microsoft Teams: 
+          - Overview: channels/ms-teams/microsoft-teams.md
+          - Configuration: channels/ms-teams/microsoft-teams-config.md
+      - Announcements: assistant-configuration/announcements.md
     - Security: 
       - SSO: security/sso.md
-      - IP Restriction: security/ip-restriction.md
       - Domain Management: security/domain-management.md
-      - Kore Connector: security/kore-connector.md
       - Service Accounts: security/service-accounts.md
+      - Data Settings: security/data-settings.md
+      - Enterprise Encryption: 
+        - Setup: security/enterprise-encryption.md
+        - Aws: security/aws-enterprise-encryption.md
+        - Azure: security/azure-enterprise-encryption.md
+    - Audit Log:
+      - Audit Log Management: audit-log/audit-log-management.md
+      - Audit Log API: audit-log/audit-log-api.md
     - APIs:  
       - Authorization: APIs/authorization.md
-      - Audit Log API: APIs/audit-log-api.md
+      
       

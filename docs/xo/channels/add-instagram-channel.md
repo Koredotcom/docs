@@ -1,9 +1,9 @@
-
+--8<-- "includes/digital-channels-back-link.md"
 
 
 # Adding Instagram Channel
 
-You can set up the Instagram channel on the XO Platform to enable users to interact with your Virtual Assistant (VA) using their Instagram accounts.
+You can set up the Instagram channel on the XO Platform to enable users to interact with your AI Agent using their Instagram accounts.
 
 The setup process consists of the following steps:
 
@@ -123,7 +123,7 @@ Configure the XO platform's Webhook callback URL in the Meta app. This allows th
 
 
 
-7. In the XO Platform, select the VA and go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Instagram** > **Configurations tab**.
+7. In the XO Platform, select the AI Agent and go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Instagram** > **Configurations tab**.
 <img src="../images/insta3.png" alt="Instagram" title="" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -139,13 +139,13 @@ Configure the XO platform's Webhook callback URL in the Meta app. This allows th
 
 ## Step 6: Submit the App for Approval
 
-Submit the Meta Developer app for approval. See[ How to Submit Your App](https://developers.facebook.com/docs/messenger-platform/app-review#submission). Once approved, you can enable the Instagram channel for your VA. 
+Submit the Meta Developer app for approval. See[ How to Submit Your App](https://developers.facebook.com/docs/messenger-platform/app-review#submission). Once approved, you can enable the Instagram channel for your AI Agent. 
 
 !!! note
 
     Add testers to test the Instagram channel before submitting the app for approval. To add, navigate to **App** > **App roles** > **Add People** > **Tester**.
 
-After enabling the channel and verifying all the configurations, you can publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 
@@ -160,7 +160,7 @@ Instagram [Icebreakers](https://developers.facebook.com/docs/messenger-platform/
 
 ### Persistent Menu
 
-Configure a static [menu](https://developers.facebook.com/docs/messenger-platform/instagram/features/persistent-menu) of options that users can access anytime during conversations with your virtual assistant. This menu provides quick access to key features and common queries, enhancing user interaction.
+Configure a static [menu](https://developers.facebook.com/docs/messenger-platform/instagram/features/persistent-menu) of options that users can access anytime during conversations with your AI Agent. This menu provides quick access to key features and common queries, enhancing user interaction.
 
 
 
