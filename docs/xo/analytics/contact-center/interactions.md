@@ -37,7 +37,7 @@ To view the Interactions dashboard, follow the steps:
     * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the task is completed, and the AI Agents ends the conversation.
     * Completed: Completed refers to a chat conversation where the task is completed, and the conversation ends.
 
-### Supervisor Actions
+## Supervisor Actions
 
 Supervisors can view ongoing interactions on the Interactions tab. They can intervene as a supervisor, similar to the Monitor tab, and join, reassign, or change the queue of any interaction visible on the Interactions tab.
 
@@ -427,61 +427,15 @@ A message is displayed to the user on the Transcript tab when Call Recording Con
 
 List of recording status and messages:
 
-<table>
-  <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td><strong>Message</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>failed
-   </td>
-   <td>Media generation failed due to some technical issue. Please contact your administrator
-   </td>
-  </tr>
-  <tr>
-   <td>media_unavailable
-   </td>
-   <td>No audio recording found in the server. Please contact your administrator
-   </td>
-  </tr>
-  <tr>
-   <td>call_in_progress
-   </td>
-   <td>Media unavailable while call is in progress. Please recheck once the call has ended.
-   </td>
-  </tr>
-  <tr>
-   <td>media_in_progress
-   </td>
-   <td>Media generation is in progress. Please wait for a few minutes.
-   </td>
-  </tr>
-  <tr>
-   <td>partial_download_failed
-   </td>
-   <td>Unable to fetch the recording. Please click the button below to retry.
-<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue. Please contact your administrator’ message appears.
-   </td>
-  </tr>
-  <tr>
-   <td>partial_upload_failed
-   </td>
-   <td>Unable to fetch the recording. Please click the button below to retry.
-<p>
-<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue.
-   </td>
-  </tr>
-  <tr>
-   <td>partial_failed
-   </td>
-   <td>Unable to fetch the recording. Please click the button below to retry.
-<p>
-<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue.
-   </td>
-  </tr>
-</table>
+| **Status**              | **Message** |
+|--------------------------|-------------|
+| **failed**               | Media generation failed due to some technical issue. Please contact your administrator. |
+| **media_unavailable**    | No audio recording found in the server. Please contact your administrator. |
+| **call_in_progress**     | Media unavailable while call is in progress. Please recheck once the call has ended. |
+| **media_in_progress**    | Media generation is in progress. Please wait for a few minutes. |
+| **partial_download_failed** | Unable to fetch the recording. Please click the button below to retry.<br>**Note:** A “Fetch Again” button appears. Users can click this button three times. If it still fails, the message *‘Media generation failed due to some technical issue. Please contact your administrator’* appears. |
+| **partial_upload_failed**   | Unable to fetch the recording. Please click the button below to retry.<br>**Note:** A “Fetch Again” button appears. Users can click this button three times. If it still fails, the message *‘Media generation failed due to some technical issue.’* appears. |
+| **partial_failed**          | Unable to fetch the recording. Please click the button below to retry.<br>**Note:** A “Fetch Again” button appears. Users can click this button three times. If it still fails, the message *‘Media generation failed due to some technical issue.’* appears. |
 
 ## Diagnostics
 

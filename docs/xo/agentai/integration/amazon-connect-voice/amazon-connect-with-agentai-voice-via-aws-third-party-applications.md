@@ -191,7 +191,7 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
         1. Go to **Agent AI** > **Flows & Channels** > **Voice Gateway**. 
         2. Click **SIP Numbers** > **Configure SIP Trunk**. 
         3. Select **Agent AI**, under the **Product Selection** section. 
-        4. Enter [172.23.12.0/24,172.23.13.0/24](http://172.23.12.0/24,172.23.13.0/24) in the **List of IP Address** field, for the US region. 
+        4. Enter [172.23.12.0/24,172.23.13.0/24] in the **List of IP Address** field, for the US region. 
         <img src="../images/configure-sip-trunk.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
 
         5. Copy the **SIP URI** and paste inside the **contact attributes sipUri** field inside Amazon Connect flow. 

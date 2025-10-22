@@ -1,51 +1,61 @@
 # RACL Support
 
-RACL refers to the method of controlling access to specific resources or information based on the roles of individual users within the organization. Through RACL, the enterprise search application can ensure that users only see answers and access documents or information relevant to their organizational roles. This helps maintain data security, confidentiality, and compliance with organizational policies and regulations.
+RACL is a method for managing access to resources based on user roles within an organization. It ensures that users can only view responses and access documents relevant to their assigned roles—helping maintain data security, confidentiality, and compliance with organizational policies.
 
 ## RACL In Search AI
-In the context of SearchAI, this feature allows users to access answers only from the content they can access. In other words, SearchAI displays content based on the end user’s identity. 
 
-Each file or knowledge base article has associated user access permissions. During data ingestion, this information is fetched from the third-party application and stored in the indexed content, along with other details about the content. When a user submits a query to SearchAI, the application identifies all pertinent content that the user can access and then presents the best answer to the user from the identified content.   
+SearchAI enforces access control by ensuring users receive answers only from content they're authorized to view.
 
-Access control in SearchAI can be summarized with the following flowchart. 
+Each file or knowledge base article includes user access permissions. During data ingestion, SearchAI retrieves this information from the third-party app and stores it in the indexed content alongside other metadata. When a user submits a query, SearchAI identifies all content the user can access and selects the best-matching answer from that subset.
+
+Access control in SearchAI follows the flow in the following illustration: 
 
 ![Overview](images/connectors/racl/overview1.png "RACL overview")
 
+Query responses can vary based on the user's access. For example:
 
-The response to a query can vary depending on the end user’s identity.  Consider two users, where one can access the company’s policy documents and the other can only access the FAQs. If a policy description is requested, the first user will see the response generated from the policy document (assuming the best match to the query). On the other hand, since the second user cannot access the policy document, he will see the response generated from the FAQs (assuming the next best match). The response will differ in this case depending on the content of the two documents. 
+* User A has access to policy documents.
+* User B can only view FAQs.
 
+If both users request a policy description:
+
+* User A receives a response sourced from the policy document (assuming it best matches the query).
+* User B receives a response sourced from the FAQs (assuming it's the next best match).
+The content of each response will differ based on the source document.
+
+To support validation and troubleshooting, SearchAI includes a **Document Access Viewer** in the UI. This feature provides document-level visibility into which users or entities can access specific content, helping administrators confirm permission enforcement before testing or deployment.
 
 ## RACL Implementation in SearchAI
 
 **Ingestion and Indexing**
 
-During the ingestion process, SearchAI imports the permissions (list of users, user groups, or user criteria- depending on the specific connector) that define who can access a particular file or article, along with the content and metadata. This access information is stored within the indexed content. Specifically, it is stored in the sys_racl field with every chunk.
+During the ingestion process, SearchAI imports the permissions (list of users, user groups, or user criteria- depending on the specific connector) that define who can access a particular file or article, along with the content and metadata. This access information is stored within the indexed content. Specifically, it's stored in the `sys_racl` field with every chunk.
 
 **Access Control Logic**
 
-When a user submits a query to the application, results are displayed only if the user’s identity is listed in the sys_racl field of the content from which the results are derived.
+When a user submits a query to the app, results are displayed only if the user’s identity is listed in the `sys_racl` field of the content from which the results are derived.
 
-Example: Consider a Google Drive file owned by John and shared with Smitha and Abby. In this case, the sys_racl field will contain the identities of all three users. As a result, any answers generated from this file will be accessible only to John, Smitha, and Abby.
+For example: Consider a Google Drive file owned by John and shared with Smitha and Abby. In this case, the `sys_racl` field will contain the identities of all three users. As a result, any answers generated from this file is accessible only to John, Smitha, and Abby.
 
-Due to variations in the nature of permissions and scopes across different connectors, distinct sets of permissions are used to fetch this information from the content. When a specific content contains information about a group of users, a Permission Entity is created corresponding to it and populated in the sys_racl field for the content. For more specific details on how the sys_racl field is populated for a connector, refer to the documentation of the respective connector.
+Due to variations in the nature of permissions and scopes across different connectors, distinct sets of permissions are used to fetch this information from the content. When a specific content contains information about a group of users, a **Permission Entity** is created corresponding to it and populated in the `sys_racl` field for the content. For more specific details on how the `sys_racl` field is populated for a connector, refer to the documentation of the respective connector.
 
 ### Step 1: Retrieving and Storing Access Information
 
-When RACL is enabled, the connector fetches document permissions along with its content from the source using the APIs provided by the source or the third-party application (e.g., Google Drive).  The type of permissions depends on the supported mechanism in the backend application. For specific details, refer to the documentation of the respective connector.
+When RACL is enabled, the connector fetches document permissions along with its content from the source using the APIs provided by the source or the third-party app (for example: Google Drive).  The type of permissions depends on the supported mechanism in the backend app. For specific details, refer to the documentation of the respective connector.
 
-The permissions retrieved from the document are stored in the sys_racl field in the Answer Index.
+The permissions retrieved from the document are stored in the `sys_racl` field in the **Answer Index**.
 
 The permissions for an item can be broadly categorized into the following types:
 
-1. **Individual permissions**– The content (file, knowledge article, etc.) directly specifies the list of user identities that can access it ( for example, user1@example.com, user2@example.com, etc.).In this case, user identities are retrieved and stored in the racl field of the indexed content as shown below.
+1. **Individual permissions**: The content (file, knowledge article, etc.) directly specifies the list of user identities that can access it ( for example, user1@example.com, user2@example.com, etc). In this case, user identities are retrieved and stored in the racl field of the indexed content as shown below.
 
-```json
-"sys_racl": [
- "abraham.lincoln@example.com",
- "bernard.laboy@example.com"
- ],
-
-```
+    ```json
+    "sys_racl": [
+     "abraham.lincoln@example.com",
+     "bernard.laboy@example.com"
+     ],
+    
+    ```
 
 2. **Group Permissions**- The content specifies a group of users or a criterion that defines who can access it (for example, devteam@example.com). When the access information retrieved from the content refers to group permissions, SearchAI uses Permission Entities. A unique permission entity is created for each group or user criterion associated with the content. For example, if a Google Drive file is accessible to two individuals, “john.doe@example.com”, “smitha.joseph@example.com”, and to all the members of the group “testteam@example.com”, SearchAI will fetch the access list and store it in the indexed content. In this case, the first two entries correspond to the users, and the third corresponds to the permission entity created for the group. 
 
@@ -73,26 +83,27 @@ The permissions for an item can be broadly categorized into the following types:
 
 Similarly, if a ServiceNow article gives access to two user criteria, SearchAI will create two permission entities corresponding to the user criteria. The article’s manager and owners will also be granted access. Hence, the sys_racl field will be something like this: the first two entries are for the permission entities, and the next two are for the article’s owners and managers.
 
-```json
-"sys_racl": [
- "25431493ff4221009b20ffffffffffe0",
- "29b4e0c9873023000e3dd61e36cb0b42",
- "abraham.lincoln@example.com",
- "bernard.laboy@example.com"
-]
-```
+    ```json
+    "sys_racl": [
+     "25431493ff4221009b20ffffffffffe0",
+     "29b4e0c9873023000e3dd61e36cb0b42",
+     "abraham.lincoln@example.com",
+     "bernard.laboy@example.com"
+    ]
+    ```
 
-Note 
-* The content and format of the permission entity can vary between connectors.
-* For some connectors, Search AI also fetches the individual users belonging to the group or user criteria and automatically associates them with the corresponding permission entity. Refer to specific connector information for more details. 
+    !!! note
+    
+    * The content and format of the permission entity may vary across connectors.
+    * For some connectors, Search AI also retrieves individual users associated with a group or user criterion and automatically links them to the corresponding permission entity. Refer to connector-specific documentation for details.
+    ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")
 
 3. **Public Access**: Where the content has no specific permissions associated with it and is accessible to all. In this case, no access control is required. The racl fields in the indexed content are set to *, as shown below. Any file indexed in this way will be accessible to all the users.
 ![Public Access](images/connectors/racl/public-access.png "public-access")
 
-
 #### View Permission Information
 
-To view and verify the user permissions in the Answer Index, go to the **Browse page**, open the JSON view of a chunk corresponding to the file, and verify the contents of the sys_racl field. 
+To view and verify the user permissions in the Answer Index, go to the **Browse page**, open the JSON view of a chunk corresponding to the file, and verify the contents of the `sys_racl` field. 
 
 ![Chunk Viewer](images/connectors/racl/chunk-viewer.png "Chunk Viewer")
 
@@ -104,13 +115,13 @@ The user identity is matched against the racl fields in the chunks. In case, the
 
 * **Passing User Identities in Search APIs**
 
-    When the user interacts with SearchAI via APIs(Answer Generation API), the user must send the identity information along with other fields in the request object. The user cannot access restricted content unless the identity information is passed.
+    When the user interacts with SearchAI via APIs(Answer Generation API), the user must send the identity information along with other fields in the request object. The user can't access restricted content unless the identity information is passed.
 
 
     SearchAI allows passing user identity through both the request header as well as the request body in the API. The system admin configures this. Contact your system admin to learn about the variable name and format for passing the user identity information in the search APIs. 
 
 
-    For instance, if the user identity information is mapped to a field named ‘useremail’ sent as part of Request Headers, invoke theadvancedSearch API accordingly. 
+    For instance, if the user identity information is mapped to a field named ‘useremail’ sent as part of Request Headers, invoke the `advancedSearch` API accordingly. 
 
 
     ```
@@ -130,15 +141,13 @@ The user identity is matched against the racl fields in the chunks. In case, the
 
     When using an SDK to perform a search using the SearchAI application, you can embed the user identity information into the SDK code so that the application can identify the user and perform access checks as needed. 
 
+### Step 3: Resolving user identity
 
-
-#### Step 3: Resolving user identity
-
-When access to content is defined using user groups or user criteria (rather than individual users), SearchAI creates a Permission Entity to represent that group in the indexed content. This entity is stored in the sys_racl field but does not contain individual user details.
+When access to content is defined using user groups or user criteria (rather than individual users), SearchAI creates a Permission Entity to represent that group in the indexed content. This entity is stored in the sys_racl field but does't contain individual user details.
 
 To enforce access control at query time, SearchAI must resolve which individual users belong to each Permission Entity.
 
-For example, if a file is accessible only to employees in the HR department, SearchAI indexes the file with a Permission Entity representing that department and does not have information about the individual users associated with the department. However, at query time, it must know which specific users (e.g., jane.doe@example.com, john.smith@example.com) are in the HR department to determine access.
+For example, if a file is accessible only to employees in the HR department, SearchAI indexes the file with a Permission Entity representing that department and does't have information about the individual users associated with the department. However, at query time, it must know which specific users (for example: jane.doe@example.com, john.smith@example.com) are in the HR department to determine access.
 
 In such a case, SearchAI needs additional information to determine the association between the users and the groups. 
 
@@ -149,15 +158,27 @@ For some connectors, SearchAI can automatically resolve permission entities into
 * Fetching user group/user criterion membership data from the source system.
 * Maintaining up-to-date mappings internally.
 
-Refer to the specific connector’s documentation to see if automatic permission entity resolution is supported.
+Refer to connector-specific documentation to see if automatic permission entity resolution is supported.
 
 **Manual Resolution via APIs**
 
-For other connectors, this must be manually done with the help of Permission Entity APIs. Permission Entity APIs can be used to manage the user-to-permission entity associations. Learn more about [Permission Entity APIs here](../../apis/searchai/permission-entity-apis.md). Refer to individual connector documentation to learn about the support of automatic permission entity resolution. 
+For other connectors, this must be manually done with the help of Permission Entity APIs. Permission Entity APIs can be used to manage the user-to-permission entity associations. Learn more about [Permission Entity APIs here](../../apis/searchai/permission-entity-apis.md). Refer to connector-specific documentation to learn about the support of automatic permission entity resolution.
+
+## Alerts & Issues
+
+SearchAI includes a dedicated **Alerts & Issues** tab to help administrators identify and troubleshoot sync-related problems across connectors. This view surfaces:
+
+* API failures during sync
+* Warnings such as rate-limit hits
+* Status indicators like “Partial Success” for incomplete group syncs
+
+The tab improves visibility into sync health and simplifies issue resolution across both content and permission pipelines.
+
+![Alerts & Issues](images/connectors/racl/alerts-issues.png "Alerts & Issues")
 
 ## Set up 
 
-RACL is currently supported for content ingested from connectors only. 
+RACL supports content ingested through connectors only. 
 
 ### Enabling RACL
 
@@ -178,18 +199,22 @@ When RACL is enabled, i.e., the access is changed from Public Access to Restrict
 
 **From Restricted Access to Public Access**
 
-When the access is changed from Restricted  Access to Public Access, the connector automatically disables the RACL feature and makes the content publicly available. Sync operation is not required in this case. 
+When the access is changed from Restricted  Access to Public Access, the connector automatically disables the RACL feature and makes the content publicly available. Sync operation is't required in this case. 
 
 
 ### RACL Scheduler
 
-Access permissions to documents often change more frequently than the content itself. To ensure these changes are automatically reflected, use the RACL scheduler. RACL scheduler works independently from the content scheduler. To configure a scheduler for RACL updates:
+Access permissions to documents often change more frequently than the content itself. To ensure these changes are reflected automatically, use the RACL scheduler, which operates independently from the content scheduler.
 
-* Go to the Permissions section of the connector.
+Permission syncs are now logged separately from content syncs. A new **Sync Scope** column identifies RACL-specific syncs as **Permission Sync**, improving traceability and simplifying troubleshooting.
+
+To configure the RACL scheduler:
+
+* Open the Permissions section of the connector.
 * Enable the Permissions Sync Scheduled option.
 * Set the desired time and frequency for syncing access control information.
 
-If the RACL scheduler is disabled, permission updates will occur in sync with the content scheduler.
+If the RACL scheduler is disabled, permission updates will occur during content syncs.
 
 
 ## Tailored Solutions for your RACL Requirements

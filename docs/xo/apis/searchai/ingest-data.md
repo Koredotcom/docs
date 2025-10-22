@@ -25,7 +25,7 @@ This API allows you to ingest and index data into the SearchAI application. You 
     * Set the sourceType as “web”.
     * Provide the URLs of the pages to be crawled in the URLs array under the documents field. 
 * The web crawl uses the crawl configuration for the source set in Search AI.
-* If an existing URL is provided,  it is recrawled. If a new URL is provided, it is crawled if the crawl configuration permits. 
+* If an existing URL is provided,  it is crawled again. If a new URL is provided, it is crawled if the crawl configuration permits. 
 
 
 ## API Specifications
@@ -193,7 +193,7 @@ Note that the fields inside the chunks object should correspond to the chunk fie
 ```
 where, urls contains the list of urls to be crawled.
 
-Note that the URLs field should point to the list of URLs that need to be crawled. If a URL is already crawled, it is recrawled. If a URL is new, it is crawled if the crawl configuration of the source permits. 
+Note that the URLs field should point to the list of URLs that need to be crawled. If a URL is already crawled, it is crawled again. If a URL is new, it is crawled if the crawl configuration of the source permits. 
 
 
 ### Sample Request - Ingesting Content from Files
