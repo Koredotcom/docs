@@ -47,7 +47,28 @@ The permissions for an item can be broadly categorized into the following types:
 
 ```
 
-2. **Group Permissions**- The content specifies a group of users or a criterion that defines who can access it (for example, search-devteam@example.com). When the access information retrieved from the content refers to group permissions, SearchAI uses Permission Entities. A unique permission entity is created for each group or user criterion associated with the content. For example, if a Google Drive file is accessible to two individuals, “john.divi@kore.com”, “smitha.joseph@kore.com”, and to all the members of the group “searchassisttest@gmail.com”, SearchAI will fetch the access list and store it in the indexed content. In this case, the first two entries correspond to the users, and the third corresponds to the permission entity created for the group. 
+2. **Group Permissions**- The content specifies a group of users or a criterion that defines who can access it (for example, devteam@example.com). When the access information retrieved from the content refers to group permissions, SearchAI uses Permission Entities. A unique permission entity is created for each group or user criterion associated with the content. For example, if a Google Drive file is accessible to two individuals, “john.doe@example.com”, “smitha.joseph@example.com”, and to all the members of the group “testteam@example.com”, SearchAI will fetch the access list and store it in the indexed content. In this case, the first two entries correspond to the users, and the third corresponds to the permission entity created for the group. 
+
+```json
+"sourceId": "fs-18107a80-7bf7-57d9-9a8f-96835bdbffad",
+"recordTitle": "Apple.pdf",
+"pageNumber": 8,
+"docId": "fc-c874e889-623f-5bc9-b592-59e7ce93c64e",
+"recordUrl": "https://drive.google.com/file/d/16vygQOBSrEnapKYwzUCrDSX-CrKPn_Ixg/view?usp=drivesdk#page=8",
+"searchIndexId": "sid=3c882ad9-600d-5ab3-ad0b-67d8a3af3d95",
+
+"sourceAcl": [
+    "john.doe@example.com",
+    "smitha.joseph@example.com",
+    "testteam@example.com"
+],
+
+"chunkType": "text",
+"chunkId": "chk-e94xxxxxxxxxxx-55-4aac-9e57-69977c61feec",
+"createdOn": "2024-06-13T10:15:33.679195022",
+"chunkContent": "recordTitle : Apple.pdf; chunkText : The document provides an overview of emerging technologies adopted by enterprises in 2025, including advancements in edge computing, container orchestration, and AI-powered monitoring tools. It summarizes performance evaluations conducted across various cloud providers such as Azure, AWS, and Google Cloud, focusing on scalability and data governance. The analysis also covers recent partnerships between enterprises and startups to enhance automation, improve developer experience, and streamline infrastructure provisioning."
+```
+
 ![Group Permissions](images/connectors/racl/group-permissions.png "Group Permissions")
 
 Similarly, if a ServiceNow article gives access to two user criteria, SearchAI will create two permission entities corresponding to the user criteria. The article’s manager and owners will also be granted access. Hence, the sys_racl field will be something like this: the first two entries are for the permission entities, and the next two are for the article’s owners and managers.
@@ -93,10 +114,10 @@ The user identity is matched against the racl fields in the chunks. In case, the
 
 
     ```
-    curl --location --request POST 'https://my-xo.kore.ai/api/public/stream/st-670f1a12-9xxxxxx5c3f/advancedSearch?useremail=myemail@example.com' \
+    curl --location --request POST 'https://my-xo.domain.ai/api/public/stream/st-670f1a12-9xxxxxx5c3f/advancedSearch?useremail=myemail@example.com' \
     --header 'Content-Type: application/json' \
     --header 'integration-service: general' \
-    --header 'service-host: https://solutions-pilot.kore.ai/api/1.1/public/tables/' \
+    --header 'service-host: https://solutions-pilot.domain.ai/api/1.1/public/tables/' \
     --header 'datatable: pushnotificationstable-dev' \
     --header 'Auth: eyJhbGciOiJIUzxxxxxxxxxxxxxxxxxxxxxxZ9GbULGdQaPQ' \
     --data-raw '{
