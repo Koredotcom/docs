@@ -1,9 +1,13 @@
 # Define a Card Layout with Group By Report
 
 With some tasks, you may want to add a link to a message sent to a user that contains data too large for a message, for example, a message with a picture, abstract, and a link to a full article or report. This topic describes how to define a card layout with group by report that displays a related set of data groups, for example, a weekly appointment calendar summary.
-The card layout with group by report type can be displayed to an end-user when the URL for this report type is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the card layout with group by report called My Calendar Weekly Summary. The message contains the title of the summary report, but not the detailed data.
+The card layout with group by report type can be displayed to an end-user when the URL for this report type is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the card layout with group by report called **My Calendar Weekly Summary**. The message contains the title of the summary report, but not the detailed data.  
 
-When the user clicks the link in the message, a card layout with group by report is displayed with a detailed list of grouped items with a card header, optional card description, and a header row as shown in the following illustration for the _My Calendar Weekly Summary_ report as a list of calendar appointments scheduled for the upcoming week.
+<img src="./images/report_tasks_cardlayout.png" alt="weekly calender" title="weekly calender" style="border:1px solid gray; zoom:60%;">
+
+When the user clicks the link in the message, a card layout with group by report is displayed with a detailed list of grouped items with a card header, optional card description, and a header row as shown in the following illustration for the _My Calendar Weekly Summary_ report as a list of calendar appointments scheduled for the upcoming week.  
+
+<img src="./images/report_tasks_cardlayout_weekly_summary.png" alt="weekly summary" title="weekly summary" style="border:1px solid gray; zoom:60%;">
 
 ## To define a card layout with group by report
 
@@ -23,7 +27,9 @@ To complete the following procedure, you must have already defined a task, such 
 7. In the **Template** drop-down list, select **Card Layout With Group By**.
 8. Click **Edit Template**. The **Card Layout Configuration** dialog is displayed.
 9. In the **Card Title** text area, enter your custom JavaScript to display the title data for your card, for example, a static title such as `print("Today's Summary Report");` or you can use payload keys, for example, `print(summary);`.
-10. Click **Add Item**. The **Item Configuration** dialog is displayed as shown in the following illustration.
+10. Click **Add Item**. The **Item Configuration** dialog is displayed as shown in the following illustration.  
+<img src="./images/column_configuration.png" alt="Column Configuration" title="Column Configuration" style="border:1px solid gray; zoom:60%;">  
+
 11. In the **Item Name** field, enter the first column title, for example, _When_.
 12. In the  **Data Type** field, select one of the following data types for the information displayed in the column:  
     1. **String**
@@ -52,7 +58,9 @@ To complete the following procedure, you must have already defined a task, such 
 15. In the **Display it as HTML** section, select **Yes** if the column value contains HTML content.
 16. In the **Group by this column** section, click **Yes** if the report items are to be grouped by this item.
 17. In the **Action Payload Key Mapping** field, you can display a response key as a link by mapping an action response key, for example, _createdDate_, to the **Item Value** field displayed to the end-user as the item **When** as shown in the previous illustration.
-18. Click **Done**. The **Card Layout Configuration** dialog is displayed with the new column added as shown in the following illustration.
+18. Click **Done**. The **Card Layout Configuration** dialog is displayed with the new column added as shown in the following illustration.  
+<img src="./images/table_configuration.png" alt="Table Configuration" title="Table Configuration" style="border:1px solid gray; zoom:60%;">  
+
 19. Repeat Steps 10 – 19 for each additional column in the report, click **Save** to save the column configurations, and then click **Close**.
 20. In the **Report Template Definition** section, click **Save** to save the card layout with group by report.
 
