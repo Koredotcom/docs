@@ -4,15 +4,11 @@ The Platform Web SDK is a powerful tool for integrating the Platform bots into w
 
 ## How the Web SDK Works and Resource Utilization
 
-
 * The Platform Web SDK consists of JavaScript libraries that are embedded into the client web application to enable communication with the Platform bots over a web socket.
 * The SDK libraries run on the client side in the user's web browser. This means the SDK itself does not consume server-side resources.
 * The main resource utilization will be the hosting of the SDK files (JavaScript, CSS, etc.) and serving them to the client. This is minimal overhead, similar to serving other static web assets.
 
-
 ## Session Management between Web SDK and Bot Platform
-
-
 
 * The Web SDK uses JSON Web Tokens (JWTs) to establish a secure session with the Platform on behalf of the end user.
 * When the SDK is initialized, it calls a client-provided assertion function that generates a signed JWT containing the user identity and client app credentials. To make the signing secure, this assertion function will internally call the JWT generation service to get the JWT.
@@ -22,14 +18,9 @@ The Platform Web SDK is a powerful tool for integrating the Platform bots into w
 
 ## JWT Flow
 
-
-
-
 ![JWT Flow](images/JWT-flow.png "JWT Flow")
 
-
 ## Stateless Web SDK and Session Persistence
-
 
 * The Web SDK is stateless on the server side. All session states are stored on the client side in the user's browser.
 * If a user's request gets routed to a different web server in your Active-Active setup, their bot session will persist uninterrupted.
@@ -38,17 +29,11 @@ The Platform Web SDK is a powerful tool for integrating the Platform bots into w
 
 ## Minimum Server Requirements
 
-
-
 * Given the Web SDK runs client-side and simply needs the static files served, the minimum server requirements are quite low.
 * A server with 2 CPUs and 4 GB RAM should be more than adequate to serve the Web SDK files as part of a web application.
 * The real consideration is the expected traffic and concurrent users for your application as a whole rather than the Web SDK specifically.
 
-
 ## Security of the Web SDK and JWT Service
-
-
-
 
 * The Web SDK uses secure web sockets (wss://) for all communication with the Platform, encrypting data end-to-end.
 * User authentication is handled via signed JWTs, ensuring only authorized clients can establish bot sessions.
@@ -63,8 +48,6 @@ The Platform Web SDK is a powerful tool for integrating the Platform bots into w
     * Generate and sign the JWT using the client credentials and return it to the Web SDK.
 
 The JWT service should be hosted on infrastructure that matches your security and compliance requirements. A few recommendations:
-
-
 
 * Host the service on HTTPS with a valid SSL certificate.
 * Ensure the server has restricted access and follows security best practices (regular patching, minimal attack surface, etc.).

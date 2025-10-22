@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Twitter Channel
 
 To set up Twitter as a channel, you must associate the bot with a Twitter account, define a Twitter app, and enable the integration. To add Twitter as a channel, follow the below steps:
