@@ -21,7 +21,7 @@ This API retrieves a paginated list of Agent AI conversation records within a sp
 | `host` | Yes | The environment URL. For example, `https://platform.kore.ai`. |
 | `botid` | Yes | The unique bot identifier. Example: `st-79a76d65-d540-5b33-96d5-9bf3eebxxxxx` |
 
-## Header Parameter
+## Header Parameters
 
 | **Parameter** | **Type** | **Required** | **Description** |
 |----------------|-----------|--------------|-----------------|
