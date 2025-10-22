@@ -109,7 +109,7 @@ Follow these steps to configure an Agentic Copilot app:
 
 4. Enter the following information under the **App Information** section:
     * **App Name**: Enter a name for the new app. For example, Travel Agent. The character limit is set to 50.
-    * **Domain URL**: Enter the Agentic platform’s host URL. For example, [agent-platform.kore.ai](http://agent-platform.kore.ai).
+    * **Domain URL**: Enter the Agentic platform’s host URL. For example, [agent-platform.kore.ai](https://agent-platform.kore.ai).
     * **Environment**: Enter the environment name as configured in the “Environment” section of the Agentic Platform.
     * **App ID**: Enter the Agentic app ID in use.
     * **API Key**: Enter the API key as configured in the “API Keys” section of the Agentic Platform.
