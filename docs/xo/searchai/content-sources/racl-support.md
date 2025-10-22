@@ -78,10 +78,7 @@ The permissions for an item can be broadly categorized into the following types:
     "createdOn": "2024-06-13T10:15:33.679195022",
     "chunkContent": "recordTitle : Apple.pdf; chunkText : The document provides an overview of emerging technologies adopted by enterprises in 2025, including advancements in edge computing, container orchestration, and AI-powered monitoring tools. It summarizes performance evaluations conducted across various cloud providers such as Azure, AWS, and Google Cloud, focusing on scalability and data governance. The analysis also covers recent partnerships between enterprises and startups to enhance automation, improve developer experience, and streamline infrastructure provisioning."
     ```
-
-    ![Group Permissions](images/connectors/racl/group-permissions.png "Group Permissions")
-
-    Similarly, if a ServiceNow article gives access to two user criteria, SearchAI will create two permission entities corresponding to the user criteria. The article’s manager and owners will also be granted access. Hence, the sys_racl field will be something like this: the first two entries are for the permission entities, and the next two are for the article’s owners and managers.        
+  Similarly, if a ServiceNow article gives access to two user criteria, SearchAI will create two permission entities corresponding to the user criteria. The article’s manager and owners will also be granted access. Hence, the sys_racl field will be something like this: the first two entries are for the permission entities, and the next two are for the article’s owners and managers.        
 
     ```json
     "sys_racl": [
@@ -98,6 +95,7 @@ Note:
 * For some connectors, Search AI also retrieves individual users associated with a group or user criterion and automatically links them to the corresponding permission entity. Refer to connector-specific documentation for details.
 
 3. **Public Access**: Where the content has no specific permissions associated with it and is accessible to all. In this case, no access control is required. The racl fields in the indexed content are set to *, as shown below. Any file indexed in this way will be accessible to all the users.
+
 ![Public Access](images/connectors/racl/public-access.png "public-access")
 
 #### View Permission Information

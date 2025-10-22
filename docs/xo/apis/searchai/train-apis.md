@@ -2,7 +2,7 @@
 
 # Train APIs
 
-## Train API
+## Initiate Training API
 
 This API is used to train the Search AI application. You can use it to train the application with all the ingested content or with specific content. Note that this initiates the training process, which may take a while depending on the amount of content for which the training has to be done. To check the status of the training process, use the Training Status API.
 
