@@ -185,7 +185,7 @@ nav:
         - Overview: security/sso-overview.md
         - OIDC: security/oidc.md
         - SAML: security/saml.md
-        - WFSC: security/wfsc.md  
+        - WSFC: security/wsfc.md  
       - Domain Management: security/domain-management.md
       - Service Accounts: security/service-accounts.md
       - Data Settings: security/data-settings.md
