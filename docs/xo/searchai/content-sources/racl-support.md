@@ -84,8 +84,7 @@ The permissions for an item can be broadly categorized into the following types:
     
     * The content and format of the permission entity may vary across connectors.
     * For some connectors, Search AI also retrieves individual users associated with a group or user criterion and automatically links them to the corresponding permission entity. Refer to connector-specific documentation for details.
-    
- ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")
+    ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")
 
 3. **Public Access**: Where the content has no specific permissions associated with it and is accessible to all. In this case, no access control is required. The racl fields in the indexed content are set to *, as shown below. Any file indexed in this way will be accessible to all the users.
 ![Public Access](images/connectors/racl/public-access.png "public-access")
