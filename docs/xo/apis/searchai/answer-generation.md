@@ -237,8 +237,8 @@ This parameter enables granular control over content accessibility by explicitly
   "customData": {
         "userContext": {
               "userName": "John",
-              "userId": "john.smith@kore.com",
-              "emailId": "john.smith@kore.com"
+              "userId": "john.smith@example.com",
+              "emailId": "john.smith@example.com"
             }
     }
 ```

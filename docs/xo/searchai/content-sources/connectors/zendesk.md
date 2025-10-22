@@ -234,9 +234,9 @@ For instance,
 
 ```json
   "sys_racl": [
-            "peter.mark@kore.com", //assignee of the ticket
+            "peter.mark@example.com", //assignee of the ticket
             "customer@example.com", //submitter of the ticket
-            "support.lead@company.com", //collaborator on the ticket
+            "support.lead@example.com", //collaborator on the ticket
             "17812171469852" // organization ID
         ],
 ```
