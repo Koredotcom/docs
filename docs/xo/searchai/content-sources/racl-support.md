@@ -59,17 +59,17 @@ The permissions for an item can be broadly categorized into the following types:
 
 2. **Group Permissions**: Content may include access rules that define who can view it—such as individual users or group-based criteria (for example, `search-devteam@example.com`). To represent these rules, SearchAI creates Permission Entities, with one entity generated for each user or group criterion.
 
-For example, if a Google Drive file is shared with two users `john.divi@kore.com`, `smitha.joseph@kore.com` and one group `searchassisttest@gmail.com`, SearchAI retrieves the access list and stores it in the indexed content. The individual users are stored directly, while the group is represented by a permission entity.
-
-These entities are visible in the UI. The Permission Entities View allows administrators to:
-
-* Inspect each group
-* View associated users and subgroups
-* Validate access mappings
-
-Groups are interactive. Selecting a group opens a slider with detailed membership information. If any subgroup fails to sync, the group’s status is marked as Partial Success. ![Group Permissions](images/connectors/racl/group-permissions.png "Group Permissions")
-
-SearchAI applies the same logic to other connectors. For example, if a ServiceNow article grants access to two user criteria, SearchAI creates two corresponding permission entities. The article’s manager and owners also receive access. In this case, the `sys_racl` field includes both permission entities and individual users:
+    For example, if a Google Drive file is shared with two users `john.divi@kore.com`, `smitha.joseph@kore.com` and one group `searchassisttest@gmail.com`, SearchAI retrieves the access list and stores it in the indexed content. The individual users are stored directly, while the group is represented by a permission entity.
+    
+    These entities are visible in the UI. The Permission Entities View allows administrators to:
+    
+    * Inspect each group
+    * View associated users and subgroups
+    * Validate access mappings
+    
+    Groups are interactive. Selecting a group opens a slider with detailed membership information. If any subgroup fails to sync, the group’s status is marked as Partial Success. ![Group Permissions](images/connectors/racl/group-permissions.png "Group Permissions")
+    
+    SearchAI applies the same logic to other connectors. For example, if a ServiceNow article grants access to two user criteria, SearchAI creates two corresponding permission entities. The article’s manager and owners also receive access. In this case, the `sys_racl` field includes both permission entities and individual users:
 
     ```json
     "sys_racl": [
@@ -85,8 +85,7 @@ SearchAI applies the same logic to other connectors. For example, if a ServiceNo
     * The content and format of the permission entity may vary across connectors.
     * For some connectors, Search AI also retrieves individual users associated with a group or user criterion and automatically links them to the corresponding permission entity. Refer to connector-specific documentation for details.
     
-    ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")
-
+ ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")
 
 3. **Public Access**: Where the content has no specific permissions associated with it and is accessible to all. In this case, no access control is required. The racl fields in the indexed content are set to *, as shown below. Any file indexed in this way will be accessible to all the users.
 ![Public Access](images/connectors/racl/public-access.png "public-access")
