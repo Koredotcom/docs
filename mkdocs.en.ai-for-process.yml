@@ -116,5 +116,53 @@ nav:
     - Accessing AI for Process: getting-started/sign-up-sign-in.md        
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
- 
+  - Workflows: 
+    - About Workflow Tools: workflows/workflow-tools.md
+    - Create a Workflow Tool: workflows/create-a-new-tool.md
+    - Import a Tool: workflows/import-a-tool.md
+    - Tool Flows:
+      - About Flows: workflows/tool-flows/flows-overview.md
+      - About Tool Calling: workflows/tool-flows/tool-calling.md
+      - Manage Flows: 
+        - Manage Nodes in Flows: workflows/tool-flows/manage-flow-nodes.md
+        - Manage Input and Output: workflows/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+        - Run the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a Version of the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+      - Types of Nodes: 
+        - AI Node: 
+          - About AI Nodes: workflows/tool-flows/types-of-nodes/ai-node.md
+          - Text to Text Node: workflows/tool-flows/types-of-nodes/text-to-text-node.md
+          - Text to Image Node: workflows/tool-flows/types-of-nodes/text-to-image-node.md
+          - Audio to Text Node: workflows/tool-flows/types-of-nodes/audio-to-text-node.md
+          - Image to Text Node: workflows/tool-flows/types-of-nodes/image-to-text-node.md
+        - Integration Node: workflows/tool-flows/types-of-nodes/integration-node.md
+        - API Node: workflows/tool-flows/types-of-nodes/api-node.md
+        - Function Node: workflows/tool-flows/types-of-nodes/function-node.md
+        - Condition Node: workflows/tool-flows/types-of-nodes/condition-node.md
+        - DocSearch Node: workflows/tool-flows/types-of-nodes/docsearch-node.md 
+        - Loop Node: workflows/tool-flows/types-of-nodes/loop-node.md  
+        - Human Node: workflows/tool-flows/types-of-nodes/human-node.md 
+        - End Node: workflows/tool-flows/types-of-nodes/end-node.md 
+      - Tool Flow Change Log: workflows/tool-flows/tool-canvas-change-log.md    
+    - Sharing & Permissions: 
+      - Manage User Roles and Permissions: workflows/manage-user-roles-and-permissions.md
+    - Workflow Endpoint: 
+      - Deploy a Tool: workflows/deploy-a-tool.md
+    - API Keys: 
+      - Create an API Key: workflows/create-a-new-api-key.md 
+    - Workflow Monitor: 
+      - About Tool Monitor: workflows/tool-monitor/about-tool-monitor.md
+      - Accessing Tool Monitor: workflows/tool-monitor/accessing-tool-monitor.md
+      - Understanding Tool Monitor: workflows/tool-monitor/understanding-the-tool-monitor-interface.md
+    - Guardrails:
+      - About Guardrails: workflows/guardrails/overview.md
+      - Add a Scanner: workflows/guardrails/add-a-scanner.md
+      - Test Guardrail: workflows/guardrails/test-guardrail.md
+      - Manage Guardrails: workflows/guardrails/manage-guardrails.md
+    - Audit Logs:
+      - Tool Audit Logs: workflows/tool-audit-log.md
+    - Configurations:
+      - Configure a Tool: workflows/configure-a-tool.md
+      - Export a Tool: workflows/export-a-tool.md
+      - Import Tool as a Version: workflows/import-a-tool/#import-tool-as-a-version 
       
