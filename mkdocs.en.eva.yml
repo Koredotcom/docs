@@ -182,7 +182,11 @@ nav:
           - Configuration: channels/ms-teams/microsoft-teams-config.md
       - Announcements: assistant-configuration/announcements.md
     - Security: 
-      - SSO: security/sso.md
+      - SSO: 
+        - Overview: security/sso-overview.md
+        - OIDC: security/oidc.md
+        - SAML: security/saml.md
+        - WFSC: security/wfsc.md  
       - Domain Management: security/domain-management.md
       - Service Accounts: security/service-accounts.md
       - Data Settings: security/data-settings.md
