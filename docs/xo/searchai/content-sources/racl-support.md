@@ -80,10 +80,11 @@ SearchAI applies the same logic to other connectors. For example, if a ServiceNo
     ]
     ```
 
-!!! note
-  * The content and format of the permission entity may vary across connectors.
-  * For some connectors, Search AI also retrieves individual users associated with a group or user criterion and automatically links them to the corresponding permission entity. Refer to connector-specific documentation for details.
-
+    !!! note
+    
+    * The content and format of the permission entity may vary across connectors.
+    * For some connectors, Search AI also retrieves individual users associated with a group or user criterion and automatically links them to the corresponding permission entity. Refer to connector-specific documentation for details.
+    
     ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")
 
 
