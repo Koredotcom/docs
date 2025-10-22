@@ -27,7 +27,7 @@ To support validation and troubleshooting, SearchAI includes a **Document Access
 
 ## RACL Implementation in SearchAI
 
-**Ingestion and Indexing**
+**Ingestion and Indexing**  
 
 During the ingestion process, SearchAI imports the permissions (list of users, user groups, or user criteria- depending on the specific connector) that define who can access a particular file or article, along with the content and metadata. This access information is stored within the indexed content. Specifically, it's stored in the `sys_racl` field with every chunk.
 
@@ -41,9 +41,9 @@ Due to variations in the nature of permissions and scopes across different conne
 
 ### Step 1: Retrieving and Storing Access Information
 
-When RACL is enabled, the connector fetches document permissions along with its content from the source using the APIs provided by the source or the third-party app (for example: Google Drive).  The type of permissions depends on the supported mechanism in the backend app. For specific details, refer to the documentation of the respective connector.
+When RACL is enabled, the connector fetches document permissions along with its content from the source using the APIs provided by the source or the third-party app (for example: Google Drive).  The type of permissions depends on the supported mechanism in the third-party application. For specific details, refer to the documentation of the respective connector.
 
-The permissions retrieved from the document are stored in the `sys_racl` field in the **Answer Index**.
+The permissions retrieved from the document are stored in the `sys_racl` field in the ingested content.
 
 The permissions for an item can be broadly categorized into the following types:
 
@@ -92,20 +92,21 @@ Similarly, if a ServiceNow article gives access to two user criteria, SearchAI w
     ]
     ```
 
-    !!! note
-    
-    * The content and format of the permission entity may vary across connectors.
-    * For some connectors, Search AI also retrieves individual users associated with a group or user criterion and automatically links them to the corresponding permission entity. Refer to connector-specific documentation for details.
-    ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")
+Note:
+
+* The content and format of the permission entity may vary across connectors.
+* For some connectors, Search AI also retrieves individual users associated with a group or user criterion and automatically links them to the corresponding permission entity. Refer to connector-specific documentation for details.
 
 3. **Public Access**: Where the content has no specific permissions associated with it and is accessible to all. In this case, no access control is required. The racl fields in the indexed content are set to *, as shown below. Any file indexed in this way will be accessible to all the users.
 ![Public Access](images/connectors/racl/public-access.png "public-access")
 
 #### View Permission Information
 
-To view and verify the user permissions in the Answer Index, go to the **Browse page**, open the JSON view of a chunk corresponding to the file, and verify the contents of the `sys_racl` field. 
+To view and verify the user permissions in the ingested content, go to the Content page and open the JSON view corresponding to the file, and verify the contents of the `sys_racl` field. The same can also be verified in the Chunk Viewer. 
 
 ![Chunk Viewer](images/connectors/racl/chunk-viewer.png "Chunk Viewer")
+
+The individual permission entities and users are listed under the Permissions page. Group tab lists the permission entities created corresponding to all the user groups having access to the ingested content and the Users tab lists all the individual users or entities having access to the ingested content. ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")
 
 ### Step 2: Verifying user identities
 
@@ -164,17 +165,6 @@ Refer to connector-specific documentation to see if automatic permission entity 
 
 For other connectors, this must be manually done with the help of Permission Entity APIs. Permission Entity APIs can be used to manage the user-to-permission entity associations. Learn more about [Permission Entity APIs here](../../apis/searchai/permission-entity-apis.md). Refer to connector-specific documentation to learn about the support of automatic permission entity resolution.
 
-## Alerts & Issues
-
-SearchAI includes a dedicated **Alerts & Issues** tab to help administrators identify and troubleshoot sync-related problems across connectors. This view surfaces:
-
-* API failures during sync
-* Warnings such as rate-limit hits
-* Status indicators like “Partial Success” for incomplete group syncs
-
-The tab improves visibility into sync health and simplifies issue resolution across both content and permission pipelines.
-
-![Alerts & Issues](images/connectors/racl/alerts-issues.png "Alerts & Issues")
 
 ## Set up 
 
@@ -195,7 +185,7 @@ This enables SearchAI to read and apply user-specific access permissions from th
 
 **From Public Access to Restricted Access**
 
-When RACL is enabled, i.e., the access is changed from Public Access to Restricted access, **manually initiate a sync** from the connector. This ensures the connector fetches and indexes the latest permission data. If an automatic sync with the connector is scheduled for the future, updated permissions take effect after the **next sync** activity.
+When RACL is enabled, that is, the access is changed from Public Access to Restricted access, manually initiate a sync from the connector. This ensures the connector fetches and indexes the latest permission data. If an automatic sync with the connector is scheduled for the future, updated permissions take effect after the next sync activity.
 
 **From Restricted Access to Public Access**
 
@@ -216,6 +206,18 @@ To configure the RACL scheduler:
 
 If the RACL scheduler is disabled, permission updates will occur during content syncs.
 
+<!-----
+### Alerts & Issues
+
+SearchAI includes a dedicated **Alerts & Issues** tab to help administrators identify and troubleshoot sync-related problems across connectors. This view provides insights into the following types of issues.
+
+* API failures during sync.
+* Status indicators like “Partial Success” for incomplete group syncs.
+
+The tab improves visibility into sync health and simplifies issue resolution across both content and permission pipelines.
+
+![Alerts & Issues](images/connectors/racl/alerts-issues.png "Alerts & Issues")
+----->
 
 ## Tailored Solutions for your RACL Requirements
 
