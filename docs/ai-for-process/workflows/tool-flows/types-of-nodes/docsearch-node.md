@@ -131,7 +131,7 @@ After fetching the Search AI application credentials, configuring the source, an
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>If you do not provide any meta filters, the query is applied to all the documents uploaded to that connection.</li>
+<p><ul><li>If you don't provide any meta filters, the query is applied to all the documents uploaded to that connection.</li>
 <li>The filters can be a context variable in the flow depending on the builder’s requirement.</li></ul></p></div>
 
 <p><b>Managing Errors</b></p>
@@ -153,7 +153,7 @@ To run and test the flow, follow the steps below:
 
      <img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
-   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
+   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
 
 <div class="admonition note">
 <p class="admonition-title">Accessing the Output</p>

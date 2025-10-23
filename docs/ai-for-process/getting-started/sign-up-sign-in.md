@@ -395,7 +395,7 @@ When you are mapped to multiple accounts, you can switch to the required one aft
 
 ## Related Information
 
-* [Settings Console](../../overview.md){:target="_blank"}- Learn more about using the AI for Process admin features.
+* [Settings Console](../../ai-for-process/settings/overview.md){:target="_blank"}- Learn more about using the AI for Process admin features.
 * [Users](../settings/user-management/users.md){:target="_blank"}- Manage users seamlessly in your account.
 * [Roles](../settings/user-management/role-management.md){:target="_blank"}- Manage system and custom roles and permissions in your account.
 * [Billing](../settings/billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption in your account, set limits and view usage trends.
