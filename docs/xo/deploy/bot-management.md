@@ -30,7 +30,7 @@ You can import tasks and configurations of a specific agent into a new or existi
 
 !!! note
 
-        Bot imports are not supported. Only App imports are allowed.  Follow the [upgrade journey](../getting-started/migration-path-xo10-to-xo11.md) to upgrade your XO10 Bot to an XO11 App.
+        Bot imports are not supported. Only App imports are allowed. Follow the [upgrade journey](../getting-started/migration-path-xo10-to-xo11.md) to upgrade your XO10 Bot to an XO11 App.
 . 
 
 #### Steps in Importing to an Existing AI Agent
