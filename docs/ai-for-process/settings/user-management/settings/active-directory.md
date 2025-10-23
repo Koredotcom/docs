@@ -230,4 +230,4 @@ For a **failed** sync, you will receive the following email:
 
 An alternative way to add users to your account (without using AD sync) is to invite them via email. 
 
-To learn more about other administrator features on the **Settings** Console, click [here](../../../administration/overview.md){:target="_blank"}.
+To learn more about other administrator features on the **Settings** Console, click [here](../../../settings/overview.md){:target="_blank"}.

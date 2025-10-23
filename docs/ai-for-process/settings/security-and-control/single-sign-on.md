@@ -540,4 +540,4 @@ As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-par
 
 ## Related Information
 
-* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../settings/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.

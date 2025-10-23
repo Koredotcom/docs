@@ -1124,7 +1124,7 @@ When adding multiple filters to refine your audit log queries, you can use the *
 <p class="admonition-title">Note</p>
 <p>Consistency in operator usage is required for each filtering step. This means you need to use either the AND operator or the OR operator throughout all criteria.
 
-Both operators cannot be used together.</p></div>
+Both operators can't be used together.</p></div>
 
 <img src="../images/operators-mutually-exclusive.png" alt="mutually exclusive operators" title="mutually exclusive operators" style="border: 1px solid gray; zoom:75%;">
 
