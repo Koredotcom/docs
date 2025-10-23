@@ -2,9 +2,9 @@
 
 The Agent Platform offers a secure and streamlined way to manage authorization when integrating with external web services. By configuring **Authorization (Auth) Profiles**, users can enforce access control policies while ensuring data privacy and regulatory compliance.
 
-Whether connecting to external or commercial models via custom APIs or integrating tools through the AI or API node, the platform provides a structured framework to handle user authorization. This simplifies security configurations, strengthens access control, and enables smooth identity verification across various services.
+Whether connecting to external or commercial models via custom APIs or integrating workflows through the AI or API node, the platform provides a structured framework to handle user authorization. This simplifies security configurations, strengthens access control, and enables smooth identity verification across various services.
 
-Key capabilities of managing Auth Profiles on the Agent Platform include:
+Key capabilities of managing Auth Profiles on the AI for Process include:
 
 
 
@@ -21,11 +21,10 @@ Verify that identity and authorization tokens are correctly passed to external s
 
 To access the feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. Click **Security & Control** > **Authorization profile** on the left navigation menu.
+2. Click **Security & Control** > **Authorization profile** on the left navigation menu.
 <img src="../images/auth-profile-access.png" alt="auth profile access" title="auth profile access" style="border: 1px solid gray; zoom:75%;">
 
 
@@ -205,7 +204,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
     A unique URL assigned to a specific tenant (organization, customer, or user group) within a multi-tenant system. It is used to differentiate and isolate data, authorization, and access for each tenant. You must select one of the following options based on your auth profile:
 <ul>
 
-<li>No, this tool and all of its tasks do not have tenancy URLs.</li>
+<li>No, this workflow and all of its tasks do not have tenancy URLs.</li>
 
 <li>Yes, some tasks will have tenancy URLs and the user will need to provide that to successfully authenticate.</li>
 </ul>

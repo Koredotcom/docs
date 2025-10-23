@@ -7,9 +7,8 @@ AI for Process' **Settings** console is a centralized management interface that 
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Integrations](../settings/integrations/about-integrations.md){:target="_blank"} 
 5. [Manage Custom Scripts](../settings/manage-custom-scripts/custom-scripts.md){:target="_blank"}
-6. [Manage Guardrails](../guardrails/manage-guardrails.md){:target="_blank"} 
-7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Workflows Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
-8. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
+6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Workflows Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
+7. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
 ## Levels of Users Management 
 
@@ -70,7 +69,7 @@ Additionally, you can do the following:
 
 **Integrations**
 
-Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the workflows automation flow. [Learn more](../settings/integrations/about-integrations.md){:target="_blank"}.
+Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../workflows/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the workflows automation flow. [Learn more](../settings/integrations/about-integrations.md){:target="_blank"}.
 
 **Manage Custom Scripts**
 
@@ -100,7 +99,7 @@ Other capabilities include:
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all workflows. [Learn more](../guardrails/manage-guardrails.md){:target="_blank"}.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all workflows. 
 
 **Monitoring**
 
