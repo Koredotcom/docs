@@ -45,7 +45,7 @@ Quality AI supports three conversation sources:
 
 Steps to create a Quality AI application via the XO platform:
 
-1. Access to the **AI for Service** [Homepage](../../getting-started/accessing-the-platform.md){:target="_blank"}.
+1. Access to the [AI for Service](../../getting-started/accessing-the-platform.md){:target="_blank"}.
 
 1. Log in through **Email** or **SSO** (Google or Office 365). 
 
