@@ -27,6 +27,6 @@ To enable SSO:
 
 Choose the appropriate protocol for your organization and refer to the detailed configuration guide:
 
-* [OpenID Connect Configuration](https://docs.google.com/document/u/0/d/1H6UP6gAgx5Lo8sZgl3AchDQzrW3cjjxe2MIQvjFdY4M/edit)
-* [SAML Configuration](https://docs.google.com/document/u/0/d/1POLUEgzioLZaxI4Obuw5Z08qsKfGgzyPdaMlJBDLEM0/edit)
-* [WS-Federation Configuration](https://docs.google.com/document/d/1IRfPXvR0iFYSFKgZe7beb21XiP-8GnL82ONJGzMb4rM/edit)
+* [OpenID Connect Configuration](../security/oidc.md)
+* [SAML Configuration](../security/saml.md)
+* [WS-Federation Configuration](../security/wsfc.md)
