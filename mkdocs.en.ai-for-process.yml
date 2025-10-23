@@ -117,13 +117,13 @@ nav:
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
   - Workflows: 
-    - About Workflow Tools: workflows/workflow-tools.md
-    - Create a Workflow Tool: workflows/create-a-new-tool.md
-    - Import a Tool: workflows/import-a-tool.md
-    - Tool Flows:
-      - About Flows: workflows/tool-flows/flows-overview.md
+    - About Workflows: workflows/workflow-tools.md
+    - Create a Workflow: workflows/create-a-new-tool.md
+    - Import a Workflow: workflows/import-a-tool.md
+    - Workflows:
+      - About Workflow builder: workflows/tool-flows/flows-overview.md
       - About Tool Calling: workflows/tool-flows/tool-calling.md
-      - Manage Flows: 
+      - Manage Workflows: 
         - Manage Nodes in Flows: workflows/tool-flows/manage-flow-nodes.md
         - Manage Input and Output: workflows/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
         - Run the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
@@ -143,28 +143,28 @@ nav:
         - Loop Node: workflows/tool-flows/types-of-nodes/loop-node.md  
         - Human Node: workflows/tool-flows/types-of-nodes/human-node.md 
         - End Node: workflows/tool-flows/types-of-nodes/end-node.md 
-      - Tool Flow Change Log: workflows/tool-flows/tool-canvas-change-log.md    
+      - Workflow Change Log: workflows/tool-flows/tool-canvas-change-log.md    
     - Sharing & Permissions: 
       - Manage User Roles and Permissions: workflows/manage-user-roles-and-permissions.md
     - Workflow Endpoint: 
-      - Deploy a Tool: workflows/deploy-a-tool.md
+      - Deploy a Workflow: workflows/deploy-a-tool.md
     - API Keys: 
       - Create an API Key: workflows/create-a-new-api-key.md 
     - Workflow Monitor: 
-      - About Tool Monitor: workflows/tool-monitor/about-tool-monitor.md
-      - Accessing Tool Monitor: workflows/tool-monitor/accessing-tool-monitor.md
-      - Understanding Tool Monitor: workflows/tool-monitor/understanding-the-tool-monitor-interface.md
+      - About Workflow Monitor: workflows/tool-monitor/about-tool-monitor.md
+      - Accessing Workflow Monitor: workflows/tool-monitor/accessing-tool-monitor.md
+      - Understanding Workflow Monitor: workflows/tool-monitor/understanding-the-tool-monitor-interface.md
     - Guardrails:
       - About Guardrails: workflows/guardrails/overview.md
       - Add a Scanner: workflows/guardrails/add-a-scanner.md
       - Test Guardrail: workflows/guardrails/test-guardrail.md
       - Manage Guardrails: workflows/guardrails/manage-guardrails.md
     - Audit Logs:
-      - Tool Audit Logs: workflows/tool-audit-log.md
+      - Workflow Audit Logs: workflows/tool-audit-log.md
     - Configurations:
-      - Configure a Tool: workflows/configure-a-tool.md
-      - Export a Tool: workflows/export-a-tool.md
-      - Import Tool as a Version: workflows/import-a-tool/#import-tool-as-a-version 
+      - Configure a Workflow: workflows/configure-a-tool.md
+      - Export a Workflow: workflows/export-a-tool.md
+      - Import Workflow as a Version: workflows/import-a-tool/#import-tool-as-a-version 
   - Models: 
     - About Models: models/overview.md 
     - Model Factory: 
@@ -221,7 +221,7 @@ nav:
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md
       - Analytics:
-        - Tools Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
+        - Workflow Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
         - Model Traces: settings/monitoring/analytics/model-traces.md
       - Custom Scripts: settings/monitoring/monitoring-custom-scripts.md
