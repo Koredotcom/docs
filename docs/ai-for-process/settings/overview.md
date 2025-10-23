@@ -1,6 +1,6 @@
 # Settings Console for Account Admins
 
-Agent Platform’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage Agent Platform’s system configurations to manage the following:
+AI for Process' **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage Agent Platform’s system configurations to manage the following:
 
 1. [Users](../settings/user-management/users.md){:target="_blank"}
 2. [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
