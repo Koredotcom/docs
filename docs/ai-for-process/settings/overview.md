@@ -7,7 +7,7 @@ AI for Process' **Settings** console is a centralized management interface that 
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Integrations](../settings/integrations/about-integrations.md){:target="_blank"} 
 5. [Manage Custom Scripts](../settings/manage-custom-scripts/custom-scripts.md){:target="_blank"}
-6. [Manage Guardrails](../guardrails/manage-guardrails.md){:target="_blank"} 
+6. [Manage Guardrails](../workflows/guardrails/manage-guardrails.md){:target="_blank"} 
 7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
 8. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
@@ -70,7 +70,7 @@ Additionally, you can do the following:
 
 **Integrations**
 
-Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the Tools automation flow. [Learn more](../settings/integrations/about-integrations.md){:target="_blank"}.
+Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../workflows/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the Tools automation flow. [Learn more](../settings/integrations/about-integrations.md){:target="_blank"}.
 
 **Manage Custom Scripts**
 
@@ -100,7 +100,7 @@ Other capabilities include:
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../guardrails/manage-guardrails.md){:target="_blank"}.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../workflows/guardrails/manage-guardrails.md){:target="_blank"}.
 
 **Monitoring**
 
@@ -165,7 +165,7 @@ The following modules and features are supported on the **Settings** Console:
 <p><a href="../../settings/user-management/role-management" target="_blank">Role Management</a></p>
 <ul>
 <li>A summarized view of the total roles available in the system and the number of system and custom roles are displayed.</li>
-<li>View, assign, and reassign system/ default or custom roles. <strong>You cannot edit or delete system roles.</strong></li>
+<li>View, assign, and reassign system/ default or custom roles. <strong>You can't edit or delete system roles.</strong></li>
 <li>Create a copy or duplicate of a system role as a custom role and manage its permissions and access levels.</li>
 <li>Add, delete, edit permissions’ access for, and duplicate custom roles.</li>
 <li>For tool and account role types, assign/unassign permissions and set access levels for various module aspects like tools, models, prompts, billing, integrations, guardrails, security and control settings, and user management tasks.</li>
@@ -176,7 +176,7 @@ The following modules and features are supported on the **Settings** Console:
 <li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to Agent Platform seamlessly. Enable automatic data sync between the AD and Agent Platform daily, weekly, or monthly.</li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across Agent Platform. Select profile fields and allow edits by the end user.
 </li>
-<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they are added to your account.
+<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they're added to your account.
 </li>
 </ul>
    </td>
@@ -270,7 +270,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
           <tr>
    <td><a href="../../settings/monitoring/monitoring-custom-scripts" target="_blank">Monitoring - Custom Scripts</a></td>
-   <td>Review and monitor key performance indicators for each internal or external script run that is executed on the Agent Platform via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
+   <td>Review and monitor key performance indicators for each internal or external script run that's executed on the Agent Platform via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
       <td><ul><li>Select a single date or date range to view specific, time-based script performance metrics.</li>
       <li>Analyze failed runs and identify failure patterns.</li>
 <li>Analyze each successful/failed run to ensure optimal usage.</li>
@@ -301,7 +301,3 @@ The following modules and features are supported on the **Settings** Console:
 <li>Edit or delete the app as required.</li></ul></td>
   </tr>
 </table>
-
-
-
-

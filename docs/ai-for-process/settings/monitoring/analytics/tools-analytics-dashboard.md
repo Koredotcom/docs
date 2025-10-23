@@ -2,7 +2,7 @@
 
 The **Tools Analytics Dashboard** offers a unified and comprehensive tool for tracking and analyzing the performance of the deployed tools and their specific versions within your account.
 
-It provides valuable insights into metrics such as successful or failed tool runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../ai-agents/tools/tool-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a tool flow.
+It provides valuable insights into metrics such as successful or failed tool runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../workflows/tool-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a tool flow.
 
 Key metrics are displayed intuitively using visually engaging graphs and dynamic widgets, which update based on the selected filters. 
 
@@ -33,7 +33,7 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 
 To access the **Tools Analytics** dashboard, follow the steps below:
 
-1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. [Navigate](../../../settings/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Analytics**.
 3. Click the **Tools Analytics** tab on the right-hand side screen.
 <img src="../images/agents-analytics-tab.png" alt="tools analytics tab" title="tools analytics tab" style="border: 1px solid gray; zoom:75%;">
@@ -106,8 +106,8 @@ To select a custom date range, select the start and end dates on the widget.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>Only consecutive dates can be selected for a date range. For example, alternate or random date selections are not allowed.</li>
-<li>Multiple date range selections are not supported.</li></ul></p></div>
+<p><ul><li>Only consecutive dates can be selected for a date range. For example, alternate or random date selections aren't allowed.</li>
+<li>Multiple date range selections aren't supported.</li></ul></p></div>
 
 The other options you can select include:
 
@@ -189,7 +189,7 @@ You can do the following to analyze tool performance:
 
 **Single Day**
 
-* View the average tool response time for each hourly request within a day. For instance, if the tool executes 100 requests between 12 PM and 1 PM, each with its own response time, the average of these values is represented by the graph line.  Hover over the corresponding data point on the graph to view the ART for a specific hour. The tooltip shows the selected date & time, ART for the hour, and the no.of requests processed during that hour.
+* View the average tool response time for each hourly request within a day. For instance, if the tool executes 100 requests between 12 PM and 1 PM, each with its own response time, the average of these values is represented by the graph line. Hover over the corresponding data point on the graph to view the ART for a specific hour. The tooltip shows the selected date & time, ART for the hour, and the no.of requests processed during that hour.
 * View the overall ART, which is the total of the ART for all hours combined during the selected day.
 
 <img src="../images/overall-art.png" alt="overall art" title="overall art" style="border: 1px solid gray; zoom:75%;">
@@ -232,12 +232,12 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 <ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li></ul>
 
    * Start Node
-   * [AI Node](../../../ai-agents/tools/tool-flows/types-of-nodes/ai-node.md){:target="_blank"}
-   * [Function Node](../../../ai-agents/tools/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
-   * [Condition Node](../../../ai-agents/tools/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
-   * [API Node](../../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
-   * [DocSearch Node](../../../ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
-   * [End Node](../../../ai-agents/tools/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
+   * [AI Node](../../../workflows/tool-flows/types-of-nodes/ai-node.md){:target="_blank"}
+   * [Function Node](../../../workflows/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
+   * [Condition Node](../../../workflows/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
+   * [API Node](../../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
+   * [DocSearch Node](../../../workflows/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
+   * [End Node](../../../workflows/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
 
 <p><b>Best Practices</b></p>
 
@@ -258,7 +258,7 @@ The widget-level filters include the following:
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p><ul><li>Changes made to the filters in the expanded view of a widget do not affect the main dashboard or the global filters.</li>
+<p><ul><li>Changes made to the filters in the expanded view of a widget don't affect the main dashboard or the global filters.</li>
 <li>Hover over the required data point to view widget analytics data.</li></ul></p></div>
 
 To expand a widget, hover over the top-right corner of the widget, and click the **Double-arrow** icon.
@@ -283,8 +283,8 @@ The **Tools Analysis Dashboard** offers actionable and customized insights on th
 
 ## Related Information
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
-* [Tool Flow Change Logs](../../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+* [Settings Console](../../../settings/overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
+* [Tool Flow Change Logs](../../../workflows/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.

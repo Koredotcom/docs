@@ -1,6 +1,6 @@
 # Integration with Third-party Services
 
-The **Integrations** feature connects your Agent Platform account to third-party services, streamlining access to external tools and automating workflows. Once connected, you can use these integrations from the Tool Flow canvas to build high-quality AI applications. [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
+The **Integrations** feature connects your Agent Platform account to third-party services, streamlining access to external tools and automating workflows. Once connected, you can use these integrations from the Tool Flow canvas to build high-quality AI applications. [Learn more](../../workflows/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
 The Agent Platform supports 120+ integrations with different authorization types. To enable secure access, create a connection using third-party authentication to verify users. The main authentication methods are:
 

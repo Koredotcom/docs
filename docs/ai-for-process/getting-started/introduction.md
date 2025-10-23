@@ -8,13 +8,7 @@ You don't need to be an AI expert to use AI for Process. It has ready-to-use AI 
 
 ## Key Components
 
-Agents, Models, and Prompts are the key components of AI for Process that work together to enable businesses to leverage AI capabilities effectively.
-
-=== "Agents"
-
-    Agents allow you to create AI-powered workflows and automation with little to no coding required. Using a visual drag-and-drop interface, you can easily configure settings and combine multiple complex workflows. Guardrails ensure the models within these workflows operate responsibly, adhering to societal norms and your business requirements. The agents can seamlessly integrate with AWS, expanding the range of use cases. This user-friendly approach empowers you to leverage AI capabilities across various applications without extensive technical expertise.
-    
-    [Learn more about Agents :octicons-arrow-right-24:](../agents/overview.md)
+Models and Prompts are the key components of AI for Process that work together to enable businesses to leverage AI capabilities effectively.
 
 === "Models"
 
@@ -26,7 +20,7 @@ Agents, Models, and Prompts are the key components of AI for Process that work t
 
     AI for Process's Prompts Studio allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. It helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.
     
-    [Learn more about Prompts :octicons-arrow-right-24:](../playground/about-prompt-studio.md)
+    [Learn more about Prompts :octicons-arrow-right-24:](../prompts/about-prompt-studio.md)
 
 <hr>
 

@@ -68,7 +68,7 @@
 
 To access the feature, follow the steps below:
 
-1. [Navigate](../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. [Navigate](../../settings/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Custom scripts**.
    <img src="../images/access-custom-script-monitoring.png" alt="custom scripts monitoring" title="custom scripts monitoring" style="border: 1px solid gray; zoom:75%;">
 
