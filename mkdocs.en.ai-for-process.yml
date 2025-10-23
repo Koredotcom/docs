@@ -120,10 +120,9 @@ nav:
     - About Workflows: workflows/workflow-tools.md
     - Create a Workflow: workflows/create-a-new-tool.md
     - Import a Workflow: workflows/import-a-tool.md
-    - Workflows:
-      - About Workflow builder: workflows/tool-flows/flows-overview.md
-      - About Tool Calling: workflows/tool-flows/tool-calling.md
-      - Manage Workflows: 
+    - Workflow Builder:
+      - About Workflow Builder: workflows/tool-flows/flows-overview.md
+      - Manage Flows: 
         - Manage Nodes in Flows: workflows/tool-flows/manage-flow-nodes.md
         - Manage Input and Output: workflows/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
         - Run the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
