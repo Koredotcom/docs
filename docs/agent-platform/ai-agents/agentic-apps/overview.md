@@ -1,7 +1,6 @@
 # About Agentic Apps
 
 Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They're intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), agentic apps can reason, adapt, and act without requiring constant human intervention.
-Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They're intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), agentic apps can reason, adapt, and act without requiring constant human intervention.
 
 ## Key Components
 
