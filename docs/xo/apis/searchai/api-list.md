@@ -16,4 +16,5 @@ The following table lists the APIs available for Search AI, which allows users t
 | [Answer Insights](./answer-insights.md) | To initiate the export of answer insights data to a file | Answer Insights |
 | [Jobs](./jobs.md) | To get the details of a job | Answer Generation |
 | [Feedback](./feedback.md) | To share the feedback on an answer | Feedback for Search AI |
+| [Training APIs](train-apis.md) | Training related APIs | Answer Generation |
 
