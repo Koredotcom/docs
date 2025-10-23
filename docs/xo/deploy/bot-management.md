@@ -133,7 +133,7 @@ To import an AI Agent while creating it, follow these steps:
 
     * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
-        2. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _appDefinition.json_ and _config.json_ files respectively.
+        2. Click the **Choose File** buttons next to the **App Definition File** field and **App Config File** field, and upload the _appDefinition.json_ and _config.json_ files respectively.
         3. Optionally, upload the custom script file from the imported agent if any. The file size is limited to 500kb.
 
     * Import by uploading **ZIP file**:
