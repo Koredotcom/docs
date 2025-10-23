@@ -108,8 +108,8 @@ To select a custom date range, select the start and end dates on the widget.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>Only consecutive dates can be selected for a date range. For example, alternate or random date selections are not allowed.</li>
-<li>Multiple date range selections are not supported.</li></ul></p></div>
+<p><ul><li>Only consecutive dates can be selected for a date range. For example, alternate or random date selections aren't allowed.</li>
+<li>Multiple date range selections aren't supported.</li></ul></p></div>
 
 The other options you can select include:
 
@@ -240,6 +240,12 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
    * [API Node](../../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
    * [DocSearch Node](../../../workflows/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
    * [End Node](../../../workflows/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
+   * [AI Node](../../../workflows/tool-flows/types-of-nodes/ai-node.md){:target="_blank"}
+   * [Function Node](../../../workflows/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
+   * [Condition Node](../../../workflows/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
+   * [API Node](../../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
+   * [DocSearch Node](../../../workflows/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
+   * [End Node](../../../workflows/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
 
 <p><b>Best Practices</b></p>
 
@@ -260,7 +266,7 @@ The widget-level filters include the following:
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p><ul><li>Changes made to the filters in the expanded view of a widget do not affect the main dashboard or the global filters.</li>
+<p><ul><li>Changes made to the filters in the expanded view of a widget don't affect the main dashboard or the global filters.</li>
 <li>Hover over the required data point to view widget analytics data.</li></ul></p></div>
 
 To expand a widget, hover over the top-right corner of the widget, and click the **Double-arrow** icon.

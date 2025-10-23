@@ -18,7 +18,7 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Users with only <b>Viewer</b> permissions cannot export an tool.</p></div>
+<p>Users with only <b>Viewer</b> permissions can't export an tool.</p></div>
 
 ## Steps to Export a Tool
 
@@ -43,7 +43,7 @@ The export process begins, and a success message is displayed after the tool val
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Once export begins, the selected version cannot be changed.
+<p>Once export begins, the selected version can't be changed.
 </p></div>
 
 ## Exported Information
@@ -52,7 +52,7 @@ The exported package includes the following JSON files encapsulating the tool’
 
 * ***flow_definition.json***: It includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.
 * ***app_definition.json:*** It includes general information about the tool version and guardrails.
-* ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](../tools/configure-a-tool.md){:target="_blank"}.
+* ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](../workflows/configure-a-tool.md){:target="_blank"}.
 
 <img src="../images/exported-files.png" alt="exported files" title="exported files" style="border: 1px solid gray; zoom:75%;">
 

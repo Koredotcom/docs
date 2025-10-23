@@ -4,7 +4,7 @@ Using import functionality, you can create a new tool or add it as a version to 
 
 When a tool is imported, its prompts, properties, and linked tools with their configurations are carried over. This ensures that the tool works seamlessly in the new system. Additionally, any models present in the exported tool — specifically external and open-source models — will be automatically linked and integrated. If any child tools are missing or there are conflicts, the system will notify you.
 
-Creating a new tool involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported tool a unique name to avoid conflicts with existing tool. [Learn more](../tools/import-a-tool.md/#import-to-create-a-new-tool){:target="_blank"}.
+Creating a new tool involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported tool a unique name to avoid conflicts with existing tool. [Learn more](../workflows/import-a-tool.md/#import-to-create-a-new-tool){:target="_blank"}.
 
 When importing a tool version to a parent tool, the imported flow definition becomes the new in-dev version, overriding the flow, app definition, and environment variable files. The previous version is renamed and saved in the list, with optional backup of the current version available.
 
@@ -71,8 +71,8 @@ The imported tool is listed under **All tools** and **My tools** on the **Tools*
 <p><ul><li>The status of the imported tool is set to <b>In Development</b>.</li>
 <li>The node types, tool descriptions, input and output variables, scanners, and sync/async setup are kept intact during the import.</li>
 <li>If the AI node's model doesn't match any available models in the current account, the model field is kept empty, but all prompt definitions are imported.</li>
-<li>API keys are not transferred during the import process.</li>
-<li>The imported tool cannot be shared with other users.</li></p></div>
+<li>API keys are't transferred during the import process.</li>
+<li>The imported tool can't be shared with other users.</li></p></div>
 
 **Failure Scenarios**
 
@@ -119,7 +119,7 @@ If you choose not to back up/export the tool configurations, unselect the back-u
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><i>Tool Name</i> is not required since the current version’s name is assigned.</p></div>
+<p><i>Tool Name</i> is't required since the current version’s name is assigned.</p></div>
 
 The imported tool is validated, and if no errors exist, the tool is imported successfully.
 
@@ -163,7 +163,7 @@ To cancel the import process during the conflicting environment variables resolu
 
 ## Related Links
 
-* [Create a Tool](../tools/create-a-new-tool.md){:target="_blank"}- Create a new tool and configure its flow.
-* [Export a Tool](../tools/export-a-tool.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.
-* [Deploy a Tool](../tools/deploy-a-tool.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for tool integration.
-* [Configure a Tool](../tools/configure-a-tool.md){:target="_blank"}- Modify the tool's details, configure settings, or undeploy and delete it if unused.
+* [Create a Tool](../workflows/create-a-new-tool.md){:target="_blank"}- Create a new tool and configure its flow.
+* [Export a Tool](../workflows/export-a-tool.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.
+* [Deploy a Tool](../workflows/deploy-a-tool.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for tool integration.
+* [Configure a Tool](../workflows/configure-a-tool.md){:target="_blank"}- Modify the tool's details, configure settings, or undeploy and delete it if unused.

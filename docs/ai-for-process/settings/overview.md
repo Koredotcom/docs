@@ -162,7 +162,7 @@ The following modules and features are supported on the **Settings** Console:
 <p><a href="../../settings/user-management/role-management" target="_blank">Role Management</a></p>
 <ul>
 <li>A summarized view of the total roles available in the system and the number of system and custom roles are displayed.</li>
-<li>View, assign, and reassign system/ default or custom roles. <strong>You cannot edit or delete system roles.</strong></li>
+<li>View, assign, and reassign system/ default or custom roles. <strong>You can't edit or delete system roles.</strong></li>
 <li>Create a copy or duplicate of a system role as a custom role and manage its permissions and access levels.</li>
 <li>Add, delete, edit permissions’ access for, and duplicate custom roles.</li>
 <li>For workflow and account role types, assign/unassign permissions and set access levels for various module aspects like workflows, models, prompts, billing, integrations, guardrails, security and control settings, and user management tasks.</li>
@@ -173,7 +173,7 @@ The following modules and features are supported on the **Settings** Console:
 <li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to AI for Process seamlessly. Enable automatic data sync between the AD and AI for Process daily, weekly, or monthly.</li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across AI for Process. Select profile fields and allow edits by the end user.
 </li>
-<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they are added to your account.
+<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they're added to your account.
 </li>
 </ul>
    </td>
@@ -267,7 +267,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
           <tr>
    <td><a href="../../settings/monitoring/monitoring-custom-scripts" target="_blank">Monitoring - Custom Scripts</a></td>
-   <td>Review and monitor key performance indicators for each internal or external script run that is executed on the AI for Process via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
+   <td>Review and monitor key performance indicators for each internal or external script run that's executed on the Agent Platform via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
       <td><ul><li>Select a single date or date range to view specific, time-based script performance metrics.</li>
       <li>Analyze failed runs and identify failure patterns.</li>
 <li>Analyze each successful/failed run to ensure optimal usage.</li>
@@ -298,7 +298,3 @@ The following modules and features are supported on the **Settings** Console:
 <li>Edit or delete the app as required.</li></ul></td>
   </tr>
 </table>
-
-
-
-

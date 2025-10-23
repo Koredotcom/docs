@@ -7,7 +7,7 @@ You can customize the tool’s actions (how the tool responds) and enhance the a
 * **Pre-built templates**: These ready-to-deploy templates come with use-case scenarios and pre-configured integrations, like an email auto-replier or an automated grading system.
 * **Customizable templates**: The various node types in the tool flow on the Agent Platform allow you to tailor the tool flow to your business needs.
 
-Tool templates are the foundation for building AI tools. They provide a structure for workflows, ensuring a smooth user experience. They are a reliable and efficient starting point for automating tasks like lead capture, order scheduling, and customer support.  
+Tool templates are the foundation for building AI tools. They provide a structure for workflows, ensuring a smooth user experience. They're a reliable and efficient starting point for automating tasks like lead capture, order scheduling, and customer support.  
 
 **Key Benefits**
 
@@ -101,11 +101,11 @@ To access a tool template, follow the steps below:
 <ol start="7"><li>Click <b>Install</b> to connect to the Marketplace and import the tool template, including its pre-configured flow.</li>
 <img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></ol>
 
-The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../tools/tool-templates.md/#view-and-manage-tool-flow){:target="_blank"}.
+The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../workflows/tool-templates.md/#view-and-manage-tool-flow){:target="_blank"}.
 
 **Important Considerations** 
 
-* Once you install a **tool template**, it is listed in the **My Tools** section.
+* Once you install a **tool template**, it's listed in the **My Tools** section.
 * A *PDF* document with the key details listed below is displayed. You can download and save this page for future reference.
     * Input to the Agent
     * Output from the Agent
@@ -132,7 +132,7 @@ To modify your tool's general details, such as its name and description, asynchr
 2. On the left navigation menu, click **Configurations**.
    <img src="../images/configurations-tools.png" alt="configurations" title="configurations" style="border: 1px solid gray; zoom:75%;">  
 
-3. Perform the required action on the page like tool renaming or [deletion](../tools/tool-templates.md/#delete-a-tool-template){:target="_blank"}. To configure other tool options, refer [here](../tools/configure-a-tool.md){:target="_blank"}.
+3. Perform the required action on the page like tool renaming or [deletion](../workflows/tool-templates.md/#delete-a-tool-template){:target="_blank"}. To configure other tool options, refer [here](../workflows/configure-a-tool.md){:target="_blank"}.
 
 ### View and Manage Tool Flow
 

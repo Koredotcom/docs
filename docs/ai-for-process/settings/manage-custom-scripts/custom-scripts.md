@@ -4,7 +4,7 @@ The AI for Process now allows admins to import, deploy, and manage custom script
 
 A powerful script deployment wizard enables users to easily upload, configure, and deploy custom scripts in isolated containers. By leveraging container isolation, this feature enhances security while providing flexibility in configuring runtime and scaling settings.
 
-Once deployed, these scripts can be run via the [API node’s](../../workflows/tool-flows/types-of-nodes/ai-node.md){:target="_blank"} endpoint when building the workflow. Additionally, the custom scripts can be embedded in the [Function node](../../workflows/tool-flows/types-of-nodes/function-node.md){:target="_blank"} of the workflow automation and executed when the node flow is run.
+Once deployed, these scripts can be run via the [API node’s](../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"} endpoint when building the tool flow. Additionally, the custom scripts can be embedded in the [Function node](){:target="_blank"} of the tool automation flow and executed when the node flow is run.
 
 
 On the **Manage Custom Scripts** page, admins can upload a complete script project file, including all definitions and logic, without writing any code in the function node. This allows them to seamlessly port their code or project from a local system into the product and start using it immediately.
@@ -796,7 +796,7 @@ To add a deployed custom script via the endpoint into the API node, follow the s
 
     * In the **Auth Profiles** section, select the required option from the list of configured profiles to enable user authentication for the node. [Learn more](../security-and-control/authorization-profile.md){:target="_blank"} about Auth Profiles. 
     
-    If authentication is not required, select **None** (the default option).
+    If authentication isn't required, select **None** (the default option).
 
     * In the **Headers** tab, specify the Key and Value pair details. For example, **Key**: *Content-Type* **Value**: *application/json*.
     * The **Body** tab is displayed for all request types except GET. Select the body content type from the drop-down list:
@@ -811,6 +811,6 @@ To add a deployed custom script via the endpoint into the API node, follow the s
 
     ## Related Links
     
-    * **Settings Console** - [Learn more](../overview.md){:target="_blank"} about other AI for Process admin features.
+    * **Settings Console** - [Learn more](../../settings/overview.md){:target="_blank"} about other Agent Platform admin features.
     * **API Node** - [Learn more](../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"} about configuring the API node via endpoint.
 

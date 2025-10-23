@@ -4,7 +4,7 @@ Workflow Tools can automate processes, streamline workflows, generate insights, 
 
 ### Key Features
 
-* **Tool Flow**: A visual no-code/low-code builder for creating and managing tool flows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a tool](./create-a-new-tool.md){target="_blank"} from scratch, [import an existing tool](./import-a-tool.md){target="_blank"}, or [access prebuilt tool flows using the tool templates](../tools/tool-templates.md){target="_blank"} available in the marketplace.
+* **Tool Flow**: A visual no-code/low-code builder for creating and managing tool flows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a tool](./create-a-new-tool.md){target="_blank"} from scratch, [import an existing tool](./import-a-tool.md){target="_blank"}, or [access prebuilt tool flows using the tool templates](../workflows/tool-templates.md){target="_blank"} available in the marketplace.
 
 * **Sharing & Permissions**: Account owners can invite users to collaborate on specific Tools. Invited users can access the Models and Data modules for the invited account and see only the Tools to which they are invited. [Learn more](./manage-user-roles-and-permissions.md).
 
@@ -14,7 +14,7 @@ Workflow Tools can automate processes, streamline workflows, generate insights, 
 
 * **Tool Monitor**: Track and analyze your tools' performance across multiple runs, gaining a comprehensive, time-based view of tool activities to optimize your AI operations. [Learn more](./tool-monitor/about-tool-monitor.md).
 
-* **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](../../guardrails/add-a-scanner.md).
+* **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](../../ai-for-process/workflows/guardrails/add-a-scanner.md).
 
 * **Audit Logs**: Track the audit logs of all activities within your tool flows and quickly troubleshoot issues with real-time event tracking. [Learn more](./tool-audit-log.md).
 

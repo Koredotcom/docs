@@ -4,7 +4,7 @@ By signing up and creating an account, you can efficiently manage AI for Process
 
 ## Supported Browsers
 
-Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Internet Explorer mode in Microsoft Edge is not supported.
+Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Internet Explorer mode in Microsoft Edge isn't supported.
 
 ## AI for Process Account Creation Using SSO
 
@@ -35,7 +35,7 @@ When you create the first user account on AI for Process, you automatically beco
 This role provides access to default permissions and administrative capabilities:
 
 * **Invite Team Members**: Invite others to join your account via the **Settings** page to collaborate on agents, models, experiments, and other modules.
-* **Administrative Tasks**: Manage account users, including adding, deleting, and modifying user profiles, and assigning roles and permissions. [Learn more](../settings/settings-overview.md){:target="_blank"}.
+* **Administrative Tasks**: Manage account users, including adding, deleting, and modifying user profiles, and assigning roles and permissions. [Learn more](../settings/overview.md){:target="_blank"}.
 
 **Joining and Switching Accounts**
 
@@ -57,14 +57,14 @@ You can assign a system or custom role to a user in your account. This user can 
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For a custom role, you can enable <b>Invite User</b>. For a system role, editing this permission is not allowed.</p>
+<p>For a custom role, you can enable <b>Invite User</b>. For a system role, editing this permission isn't allowed.</p>
 </div>
 
 ### Account Owner Privileges
 
 An account owner or master admin can perform the following functions:
 
-* Access the **Settings** page. [Learn more](../settings/settings-overview.md){:target="_blank"}.
+* Access the **Settings** page. [Learn more](../settings/overview.md){:target="_blank"}.
 * Add users via email invite or file import to their account.
 * Delete users from their account (possible only when the user has deleted all the agents they’ve created).
 * Manage data for user profiles, sessions/devices, agents, and models in their accounts.
@@ -74,12 +74,12 @@ An account owner or master admin can perform the following functions:
 * Enable/disable Account or Agent permissions and set access levels for custom roles.
 * Configure Active Directory synchronization of user data from another organization. Set up periodic and automatic refresh, and view sync history to track updates.
 * Configure the ability to view and edit user profile fields.
-* Set up which users will receive email notifications when they are added to the admin’s account.
+* Set up which users will receive email notifications when they're added to the admin’s account.
 * Manage guardrail scanners and configured integrations for the account.
 
 ## New Account Sign Up and Activation
 
-If you do not have an account on AI for Process, visit this home page [link](https://ai-for-process.kore.ai){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#update-this){:target="_blank"}.
+If you don't have an account on AI for Process, visit this home page [link](https://ai-for-process.kore.ai){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#update-this){:target="_blank"}.
 
 You can sign up on AI for Process in one of the following ways:
 
@@ -205,7 +205,7 @@ When your account is locked, you can attempt to log in using an alternative meth
 
 You can reset your password in the following scenarios:
 
-* If you do not remember the correct password to log in to AI for Process.
+* If you don't remember the correct password to log in to AI for Process.
 * You want to change the password at regular intervals due to security reasons.
 
 To reset, follow the steps below:
@@ -216,7 +216,7 @@ To reset, follow the steps below:
 2. Enter your email address on the **Forgot Password** page and click **Send reset link**.
 <img src="../images/send-reset-link.png" alt="send reset link" title="send reset link" style="border: 1px solid gray; zoom:75%;">
 
-You will receive instructions via email on how to reset your password. Check your Spam folder to see if the email does not appear in your inbox. Click **Resend email** if you have not received it.
+You will receive instructions via email on how to reset your password. Check your Spam folder to see if the email doesn't appear in your inbox. Click **Resend email** if you haven't received it.
 
 <img src="../images/resend-email.png" alt="resend email" title="resend email" style="border: 1px solid gray; zoom:75%;">
 
@@ -229,7 +229,7 @@ Please refer to the validation instructions [here](../getting-started/sign-up-si
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-If both the entries do not match, you cannot proceed.</div>
+If both the entries don't match, you can't proceed.</div>
 
 <ol start="5"><li>Click <b>Reset Password</b>.</li>
 <img src="../images/reset-password.png" alt="reset password" title="reset password" style="border: 1px solid gray; zoom:75%;"></ol>
@@ -274,7 +274,7 @@ Once you sign up on AI for Process, you must create an account to access and man
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul><li>Each email address can only be associated with one AI for Process account.</li>
-<li>If you do not have sufficient model credits and agent runs in your account, you will have only limited access to modules and features.</li>
+<li>If you don't have sufficient model credits and agent runs in your account, you will have only limited access to modules and features.</li>
 </ul>
 </div>
 
@@ -300,7 +300,7 @@ The new account creation is successful. The account you are currently using is i
 
 ## Invite a User to Your Account
 
-As an account owner, you can invite new users in your organization and collaborate with them. However, you cannot invite users to an account someone else owns.
+As an account owner, you can invite new users in your organization and collaborate with them. However, you can't invite users to an account someone else owns.
 
 To invite a user, follow the steps below:
 
@@ -315,9 +315,9 @@ To invite a user, follow the steps below:
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please note the following when adding an email address:</p>
-<ul><li>The system does not accept a space in front, between, or after the mail ID.</li>
-<li>You cannot add just a word; a domain should be attached to it.</li>
-<li>An empty value is not accepted.</li>
+<ul><li>The system doesn't accept a space in front, between, or after the mail ID.</li>
+<li>You can't add just a word; a domain should be attached to it.</li>
+<li>An empty value isn't accepted.</li>
 <li>You must correct every entered email before sending the invite, else the <b>invite</b> button is disabled.</li>
 <li>If there is an error then the email with the issue is highlighted.</li></ul>
 </div>
@@ -343,7 +343,7 @@ A success message appears to indicate that your invitation has been sent.
 
 ## Resend Email Invitation
 
-An email invitation link remains valid for **15 days** from the date it is sent. After this period, the link expires, and the user will no longer be able to join your account using it. In this case, you'll need to send a new email invitation with a fresh link.
+An email invitation link remains valid for **15 days** from the date it's sent. After this period, the link expires, and the user will no longer be able to join your account using it. In this case, you'll need to send a new email invitation with a fresh link.
 
 On the **Users** dashboard of the **Settings** Console, an **Alert** icon appears in the **Status** column for the recipient, if their invitation link has expired. Hovering over the icon displays the message "_Invitation link has expired_."
 
@@ -395,7 +395,7 @@ When you are mapped to multiple accounts, you can switch to the required one aft
 
 ## Related Information
 
-* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about using the AI for Process admin features.
+* [Settings Console](../../ai-for-process/settings/overview.md){:target="_blank"}- Learn more about using the AI for Process admin features.
 * [Users](../settings/user-management/users.md){:target="_blank"}- Manage users seamlessly in your account.
 * [Roles](../settings/user-management/role-management.md){:target="_blank"}- Manage system and custom roles and permissions in your account.
 * [Billing](../settings/billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption in your account, set limits and view usage trends.
