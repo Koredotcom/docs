@@ -14,8 +14,8 @@ Workflow Tools can automate processes, streamline workflows, generate insights, 
 
 * **Tool Monitor**: Track and analyze your tools' performance across multiple runs, gaining a comprehensive, time-based view of tool activities to optimize your AI operations. [Learn more](./tool-monitor/about-tool-monitor.md).
 
-* **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](../../ai-for-process/workflows/guardrails/add-a-scanner.md).
+* **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](guardrails/add-a-scanner.md){:target="_blank"}.
 
-* **Audit Logs**: Track the audit logs of all activities within your tool flows and quickly troubleshoot issues with real-time event tracking. [Learn more](./tool-audit-log.md).
+* **Audit Logs**: Track the audit logs of all activities within your tool flows and quickly troubleshoot issues with real-time event tracking. [Learn more](./tool-audit-log.md){:target="_blank"}.
 
-* **Configurations**: Manage your tool's general details, define reusable values and configurations using environment variables, and undeploy the tool. [Learn more](./configure-a-tool.md).
+* **Configurations**: Manage your tool's general details, define reusable values and configurations using environment variables, and undeploy the tool. [Learn more](./configure-a-tool.md){:target="_blank"}.

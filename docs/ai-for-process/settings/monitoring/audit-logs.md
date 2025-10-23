@@ -1079,7 +1079,7 @@ This customization helps you focus on relevant audit logs, making it easier to t
 
 ### Steps to Add a Custom Filter
 
-1. [Navigate](../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console. 
+1. [Navigate](../../settings/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console. 
 2. Navigate to **Monitoring** > **Audit Logs**  on the left menu.
 3. Click the **Filter** icon.
 4. Click **+Add Filter**.

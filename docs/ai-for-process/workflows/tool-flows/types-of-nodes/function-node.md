@@ -253,7 +253,7 @@ To deploy a custom script, follow the steps below:
 
 * Click **Deploy custom scripts**.
 * The system navigates to the **Settings** > **Manage custom scripts** page.
-* Follow the steps mentioned [here](../../../../ai-for-process/settings/manage-custom-scripts/custom-scripts.md/#import-and-deploy-a-custom-script){:target="_blank"} to deploy a custom script.
+* Follow the steps mentioned [here](../../../settings/manage-custom-scripts/custom-scripts.md#import-and-deploy-a-custom-script){:target="_blank"} to deploy a custom script.
 
    Once an existing or new script is deployed (after a project is imported), it appears in the **Script name** list for the **Function** node.
 

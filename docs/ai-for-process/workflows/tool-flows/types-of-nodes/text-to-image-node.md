@@ -88,14 +88,14 @@ The generated image output is available only in PNG format. Once created, the im
 **Important Considerations**
 
 * The node generates high-quality images based on the provided prompts and configurations.
-* The generated images are available forever and do not have an expiry period.
+* The generated images are available forever and don't have an expiry period.
 * The model uses an input scanner in the node to detect and filter banned words or topics. If a banned topic is included in the input prompts, an error is generated and displayed in the debug window when the flow is executed.
-* Performance tracking is available under **Settings** -> **Model Analytics Dashboard** -> **Open-source Models** tab. [Learn more](../../../../ai-for-process/settings/monitoring/analytics/model-analytics-dashboard.md){target="_blank"}. 
+* Performance tracking is available under **Settings** -> **Model Analytics Dashboard** -> **Open-source Models** tab. [Learn more](../../../settings/monitoring/analytics/model-analytics-dashboard.md){target="_blank"}. 
 
 The metrics include:
 
 * **Number of images generated** since the supported models are charged based on this count.
-* **Input tokens** since the Stable Diffusion models usually support a small number of tokens, and tracking the counts is necessary. [Learn more](../../../../ai-for-process/settings/monitoring/analytics/model-analytics-dashboard.md/#tokens){:target="_blank"}.
+* **Input tokens** since the Stable Diffusion models usually support a small number of tokens, and tracking the counts is necessary. [Learn more](../../../settings/monitoring/analytics/model-analytics-dashboard.md/#tokens){:target="_blank"}.
 
 
 ## Add and Configure a Text to Image Node

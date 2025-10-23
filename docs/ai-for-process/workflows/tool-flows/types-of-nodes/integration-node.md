@@ -35,8 +35,8 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
 ## Prerequisites
 
-* You must add at least one service provider connection before configuring the node by clicking <b>+ Add Connection</b>. The system redirects to <b>Settings</b> -> <b>Integrations</b> page. Follow the steps [here](../../../../ai-for-process/settings/integrations/about-integrations.md/#add-a-connection-to-set-up-integration){:target="_blank"} to complete the process.
-* Always test the selected connection in the <b>Settings</b> console to ensure successful integration. [Learn more](../../../../ai-for-process/settings/integrations/about-integrations.md/#test-connection){:target="_blank"}.
+* You must add at least one service provider connection before configuring the node by clicking <b>+ Add Connection</b>. The system redirects to <b>Settings</b> -> <b>Integrations</b> page. Follow the steps [here](../../../settings/integrations/about-integrations.md#add-a-connection-to-set-up-integration){:target="_blank"} to complete the process.
+* Always test the selected connection in the <b>Settings</b> console to ensure successful integration. [Learn more](../../../settings/integrations/about-integrations.md/#test-connection){:target="_blank"}.
 
 ## Add and Configure an Integration Node
 
@@ -53,7 +53,7 @@ In this document, you will learn how to add Integration Nodes to your flows, con
   <img src="../images/add-int-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
 ### Step 3: Configure the Node
 
-* In the **Integration** window, either search for the required service or select from the listed options. [See](../../../../ai-for-process/settings/integrations/about-integrations.md/#supported-integrations){:target="_blank"} the list of supported pre-built integrations.
+* In the **Integration** window, either search for the required service or select from the listed options. [See](../../../settings/integrations/about-integrations.md/#supported-integrations){:target="_blank"} the list of supported pre-built integrations.
    <img src="../images/integrations-list.png" alt="integrations list" title="integrations list" style="border: 1px solid gray; zoom:75%;">
 
 * Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
