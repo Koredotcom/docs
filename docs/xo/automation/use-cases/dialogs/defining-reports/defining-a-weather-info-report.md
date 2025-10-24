@@ -44,7 +44,7 @@ To complete the following procedure, you must have already defined a task, such 
 14. In the **Display it as HTML** section, select **Yes** if the column value contains HTML content.
 15. In the **Is this column Sortable** section, select Yes if the end-user should be able to sort the column.
 16. Click **Done**. The **Table Configuration** dialog is displayed with the new column added as shown in the following illustration.  
-<img src="../defining-reports/images/weather-info-report-table_configuration.png" alt="Table Configuration" title="Table Configuration" style="border:1px solid gray; zoom:70%;">
+<img src="../images/weather-info-report-table_configuration.png" alt="Table Configuration" title="Table Configuration" style="border:1px solid gray; zoom:70%;">
 
 17. Repeat Steps 8 – 16 for each additional column in the report, click **Save** to save the column configurations, and then click **Close**.
 18. In the **Report Template Definition** section, click **Save** to save the weather info report
