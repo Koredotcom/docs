@@ -640,6 +640,7 @@ Steps to resend an email:
     <img src="../images/resend-email.png" alt="Resend Email" title="Resend Email" style="border: 1px solid gray; zoom:70%;">
 
     The email composer opens with the recipient details and original email content prefilled. (Optional) Update the email content.
+
 3. Click **Send**.  
     <img src="../images/resend-email.png" alt="Resend Button" title="Resend Button" style="border: 1px solid gray; zoom:70%;">
 
@@ -747,7 +748,7 @@ Steps to send an outbound email:
     Drafts are automatically saved and remain accessible in the following scenarios:
 
     1. After an agent logout and subsequent login.
-    2. Network interruptions and subsequent reconnections.
+    2. Network interruptions and subsequent re-connections.
     3. The current email content is saved as a draft if the editor is closed.
     4. Drafts are saved only after the mandatory fields (recipient, subject, queue, and email body) are updated.
 
@@ -1079,7 +1080,7 @@ When agents click the sentiment indicator, a graph appears, visually representin
 * Agents can see the read status on the last message sent. If the messages are stacked, the read status will appear only against the most recent one.  
 <img src="../images/stacked-messages.png" alt="Stacked Messages, Timestamp, and Read Status" title="Stacked Messages, Timestamp, and Read Status" style="border: 1px solid gray; zoom:80%;">
 
-# Behavior When Login Prep Status is Enabled
+## Behavior When Login Prep Status is Enabled
 
 A message appears on the console for the duration configured on the [Agent Status](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-status-management) page. This status allows an agent to prepare themselves before they start receiving interactions.  
 <img src="../images/login-prep-status.png" alt="Login Prep Status Enabled" title="Login Prep Status Enabled" style="border: 1px solid gray; zoom:80%;">
@@ -1095,9 +1096,9 @@ Agents can choose the following options:
 
 **Keep Away Status** – Clicking this button keeps the status as Away. If agents click Keep Away Status, they remain in the ‘Away’ state with a notification displayed for the ‘Away’ status. Agents can mark themselves as ‘Available’ when they are ready to receive conversations.
 
-# Behavior During Active Interactions
+## Behavior During Active Interactions
 
-## If Auto-Answer Is Enabled, Transfer and End are Disabled Until the First Agent Response
+### If Auto-Answer Is Enabled, Transfer and End are Disabled Until the First Agent Response
 
 If the Auto Answer mode is enabled in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#voice), the Transfer/End buttons do not display on the Live Interaction pane until the assigned agent sends the first message.
 
@@ -1107,12 +1108,12 @@ Below is what the Agent Console looks like **before the first message** from the
 Below is what the Agent Console looks like **after the first message** from the agent:  
 <img src="../images/after-first-message-from-agent.png" alt="After First Message From Agent" title="After First Message From Agent" style="border: 1px solid gray; zoom:80%;">
 
-## Behavior When an Agent Changes Their Status
+### Behavior When an Agent Changes Their Status
 
 A warning message displays if an agent changes their status to **_Away_** or a custom status tagged to _Away_ during an active interaction.  
 <img src="../images/set-status-to-away.png" alt="Set Status to Away" title="Set Status to Away" style="border: 1px solid gray; zoom:50%;">
 
-## Behavior When an Agent Tries Logging Out
+### Behavior When an Agent Tries Logging Out
 
 Contact Center AI does not permit agents to log out during an ongoing conversation.
 
@@ -1121,13 +1122,13 @@ If an agent tries to log out during an ongoing conversation, Contact Center AI p
 If an agent logs out suddenly (the browser is closed or the system crashes, for example), then the counter for Agent inactivity starts and after the threshold, any active conversations are assigned back to the Queue.  
 <img src="../images/logout-restricted.png" alt="Logout Restricted" title="Logout Restricted" style="border: 1px solid gray; zoom:50%;">
 
-## Behavior When an Agent Does Not Accept/Send a Response Within a Specified Time
+### Behavior When an Agent Does Not Accept/Send a Response Within a Specified Time
 
 If an agent does not accept/send a response within a specified time, the system automatically changes the status to **Away (Idle)**.
 This status is not available for selection by an agent.  
 <img src="../images/away-idle.png" alt="Away (Idle)" title="Away (Idle)" style="border: 1px solid gray; zoom:80%;">
 
-## Behavior When No Agents are Available
+### Behavior When No Agents are Available
 
 If no agents are logged in, conversations will wait in the queue till the maximum wait time specified for the queue.
 After the queue max timeout occurs, the "[no agents available](../contactcenter/flows-and-routing/conditional-flows.md#no-agents-available-flow)" flow is triggered. This is enabled at the account level for new accounts and applies to all channels.

@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Proactive Notification Status API
 
 To fetch the status of Proactive Notifications API.

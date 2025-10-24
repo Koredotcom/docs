@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Import Bot as a New Bot API
 
 To create a new bot in the account owner’s Builder Tool using the _File IDs_ generated when uploading the files to the local server.

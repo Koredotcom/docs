@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the Facebook Messenger Channel
 
 To add the Facebook Messenger channel to your AI Agent, you need a **Facebook Developer** account. With this account, you can configure the connection between Facebook Messenger and Kore.ai. Enabling the Facebook Messenger Channel on the App Builder helps your users chat with the AI Agent using their **Facebook** accounts.

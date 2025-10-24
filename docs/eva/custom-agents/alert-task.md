@@ -1,6 +1,6 @@
 # Handling Alert Tasks for Agents
 
-The Bot, Workflow, and Autonomous Agents module of the AI for Work app allows developers to integrate conversation hold and resume functionality within XO Bots. This document provides a procedural overview of how Dialogflow handles brief pauses (holds) and subsequent resumption.
+The Bot, Workflow, and Autonomous Agents module of the AI for Work app allows developers to integrate conversation hold and resume functionality within AI for Service Bots. This document provides a procedural overview of how Dialogflow handles brief pauses (holds) and subsequent resumption.
 
 ## Core Concepts
 

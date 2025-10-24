@@ -1,3 +1,5 @@
+--8<-- "includes/agentai-api-back-link.md"
+
 # Hooks API for Internal Transfers
 
 This API supports internal transfer events, reducing reliance on UI socket events. It captures transfer data initiated outside the UI, sends via API payloads, and displays in the Agent AI widget.

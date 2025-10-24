@@ -1,3 +1,5 @@
+--8<-- "includes/qualityai-api-back-link.md"
+
 # Auto QA Reporting API
 
 This API provides reporting interaction level Auto QA scoring and qualification of metrics relevant to the interaction based on the form associated with the QA. 

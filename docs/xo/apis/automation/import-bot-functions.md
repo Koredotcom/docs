@@ -1,4 +1,6 @@
-# **Import Bot Functions API**
+--8<-- "includes/automationai-api-back-link.md"
+
+# Import Bot Functions API
 
 This API allows you to import bot functions from a specified file.
 

@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Queue Size
 
 To get the queueDetails by giving queueId and filters with the given `streamId`.

@@ -284,6 +284,10 @@ Steps to configure Voice Preferences:
 
     <img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:80%;">
 
+!!! Note
+
+    If a “TTS ERROR” appears when you dial a Voice Call and execute the Start Flow attached to an automation, the issue might occur because the voice name is not properly selected in the configuration. Even if you select a voice and save the changes, the system might not register the selection. Reselect the voice and make a small edit in the flow description (for example, add or remove a character). This action prompts the system to recognize the change and ensures that the TTS functions correctly and the audio plays as expected.
+
 ### Configure ASR (Automatic Speech Recognition)
 
 #### Configure Primary and Fallback ASR/TTS

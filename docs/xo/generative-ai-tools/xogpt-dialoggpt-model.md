@@ -341,7 +341,7 @@ Sample Input
 
 {
 
-"ID": "kZryjJQBY6hZN8s7spcH",
+"ID": "kZryjJQBY6hZN8s7xxxx",
 
 "Name": "Virtual Consultation",
 
@@ -349,7 +349,7 @@ Sample Input
 
 "Description": "Schedule or initiate virtual consultations with healthcare providers",
 
-"appId": "st-f4bf93b5-d644-44fb-b9be-a540dedda4eb",
+"appId": "st-f4bf93b5-d644-44fb-b9be-a540deddxxxx",
 
 "appName": "qxLm9qat"
 
@@ -357,7 +357,7 @@ Sample Input
 
 {
 
-"ID": "jZryjJQBY6hZN8s7spcH",
+"ID": "jZryjJQBY6hZN8s7xxxx",
 
 "Name": "Get Definition of Disease",
 
@@ -365,7 +365,7 @@ Sample Input
 
 "Description": "Get descriptions of a medical condition on request",
 
-"appId": "st-cdff109c-6fe4-4d2b-9b11-1112b567362f",
+"appId": "st-cdff109c-6fe4-4d2b-9b11-1112b567xxxx",
 
 "appName": "TFkjZQUq"
 
@@ -381,7 +381,7 @@ Sample Input
 
 {
 
-"ID": "lJryjJQBY6hZN8s7spcH",
+"ID": "lJryjJQBY6hZN8s7xxxx",
 
 "score": 0.63696957,
 
@@ -389,7 +389,7 @@ Sample Input
 
 "Alternate Questions": [],
 
-"appId": "st-d6687199-8859-4fcb-822f-af6dc0e390b4",
+"appId": "st-d6687199-8859-4fcb-822f-af6dc0e3xxxx",
 
 "appName": "jSOOVqRG"
 
@@ -405,11 +405,11 @@ Sample Input
 
 {
 
-"docID": "fc-a3894938-12b2-4b7f-bb86-274e2feeada0",
+"docID": "fc-a3894938-12b2-4b7f-bb86-274e2feexxxx",
 
 "docName": "Discharge process | Fortis Healthcare",
 
-"chunkID": "chk-b65b4772-ad41-4632-8c39-09c6b014a7c2",
+"chunkID": "chk-b65b4772-ad41-4632-8c39-09c6b01xxxx",
 
 "score": 1,
 
@@ -430,7 +430,7 @@ Output:
 "winning_intents": ["9Ham9fDB:Can I consult a doctor online?", "qxLm9qat:Virtual Consultation"]
 }
 ```
-
+4
 **Example 2: multiple_intents**
 
 Sample Input
@@ -456,7 +456,7 @@ Sample Input
 
 {
 
-"ID": "eksOZ5MB5L_rgqT07Sib",
+"ID": "eksOZ5MB5L_rgqT0xxxx",
 
 "Name": "Apply Credit Card",
 
@@ -464,7 +464,7 @@ Sample Input
 
 "Description": "Provide information and assistance in applying for a credit card. I want to apply for a credit card. Is the sample user utterance.",
 
-"appId": "st-b77e8fa8-ab2c-4bcb-a4f6-1e481d5b8ad9",
+"appId": "st-b77e8fa8-ab2c-4bcb-a4f6-1e481d5bxxxx",
 
 "appName": "RzWixwEa"
 
@@ -472,7 +472,7 @@ Sample Input
 
 {
 
-"ID": "e0sOZ5MB5L_rgqT07Sib",
+"ID": "e0sOZ5MB5L_rgqT0xxxx",
 
 "Name": "Apply Home Loan",
 
@@ -480,7 +480,7 @@ Sample Input
 
 "Description": "Provide information and assistance in applying for a home loan. I would like to apply for a home loan. Is the sample user utterance.",
 
-"appId": "st-f695cbb4-e64d-4524-92fa-d6e047a4fa8a",
+"appId": "st-f695cbb4-e64d-4524-92fa-d6e047a4xxxx",
 
 "appName": "HvQ0049Q"
 
@@ -488,7 +488,7 @@ Sample Input
 
 {
 
-"ID": "eUsOZ5MB5L_rgqT07Sib",
+"ID": "eUsOZ5MB5L_rgqT0xxxx",
 
 "Name": "Apply Car Loan",
 
@@ -496,7 +496,7 @@ Sample Input
 
 "Description": "Provide information and assistance in applying for a car loan. Can you help me apply for a car loan? Is the sample user utterance.",
 
-"appId": "st-8a9c39ef-d5da-404c-ad75-0dcda69cde7e",
+"appId": "st-8a9c39ef-d5da-404c-ad75-0dcda69cxxxx",
 
 "appName": "6c7bdqDW"
 
@@ -512,7 +512,7 @@ Sample Input
 
 {
 
-"ID": "oksOZ5MB5L_rgqT07Sib",
+"ID": "oksOZ5MB5L_rgqT0xxxx",
 
 "score": 0.7379093,
 
@@ -520,7 +520,7 @@ Sample Input
 
 "Alternate Questions": [],
 
-"appId": "st-e33962a9-a4ba-4945-9f8a-951b3c5ef37a",
+"appId": "st-e33962a9-a4ba-4945-9f8a-951b3c5exxxx",
 
 "appName": "FWdE3Gtv"
 
@@ -528,7 +528,7 @@ Sample Input
 
 {
 
-"ID": "p0sOZ5MB5L_rgqT07Sib",
+"ID": "p0sOZ5MB5L_rgqT0xxxx",
 
 "score": 0.65209055,
 
@@ -536,7 +536,7 @@ Sample Input
 
 "Alternate Questions": [],
 
-"appId": "st-53651233-caee-46e2-8305-f3265c93940e",
+"appId": "st-53651233-caee-46e2-8305-f3265c93xxxx",
 
 "appName": "4YC0HJYi"
 
@@ -544,7 +544,7 @@ Sample Input
 
 {
 
-"ID": "rEsOZ5MB5L_rgqT07Sib",
+"ID": "rEsOZ5MB5L_rgqT0xxxx",
 
 "score": 0.60929346,
 
@@ -552,7 +552,7 @@ Sample Input
 
 "Alternate Questions": [],
 
-"appId": "st-b5446efd-2afa-4e35-a1ef-1d81f49efa1e",
+"appId": "st-b5446efd-2afa-4e35-a1ef-1d81f49exxxx",
 
 "appName": "mvFiwtma"
 
@@ -568,11 +568,11 @@ Sample Input
 
 {
 
-"docID": "fc-ee287d4e-3ee0-5e96-8b38-7fc14bd62639",
+"docID": "fc-ee287d4e-3ee0-5e96-8b38-7fc14bd6xxxx",
 
 "docName": "Home loan .pdf",
 
-"chunkID": "chk-106b01f5-04cf-49a2-b9e1-70140029a524",
+"chunkID": "chk-106b01f5-04cf-49a2-b9e1-70140029xxxx",
 
 "score": 0.32762766,
 
@@ -582,11 +582,11 @@ Sample Input
 
 {
 
-"docID": "fc-ee287d4e-3ee0-5e96-8b38-7fc14bd62639",
+"docID": "fc-ee287d4e-3ee0-5e96-8b38-7fc14bd6xxxx",
 
 "docName": "Home loan .pdf",
 
-"chunkID": "chk-e0cc57dc-aef8-4543-9600-0e4cad9956d7",
+"chunkID": "chk-e0cc57dc-aef8-4543-9600-0e4cad99xxxx",
 
 "score": 1.5174901,
 
@@ -642,7 +642,7 @@ Output:
 
 {
 
-"ID": "gksOZ5MB5L_rgqT07Sib",
+"ID": "gksOZ5MB5L_rgqT0xxxx",
 
 "Name": "Change Address",
 
@@ -650,7 +650,7 @@ Output:
 
 "Description": "Update the registered address for the user's bank account. I need to change the address on file. Is the sample user utterance.",
 
-"appId": "st-5d48dd57-b37d-4b3a-97cf-acb49d69a423",
+"appId": "st-5d48dd57-b37d-4b3a-97cf-acb49d6xxxx",
 
 "appName": "ooNsySJK"
 
@@ -658,7 +658,7 @@ Output:
 
 {
 
-"ID": "5rgNjZMBCH6z08AN_rwA",
+"ID": "5rgNjZMBCH6z08AN_xxx",
 
 "Name": "Close Account",
 
@@ -666,7 +666,7 @@ Output:
 
 "Description": "Process a request to close an existing bank account. I want to close my checking account. Is the sample user utterance.",
 
-"appId": "st-940072d5-0bde-4815-a8f1-efde48c90962",
+"appId": "st-940072d5-0bde-4815-a8f1-efde48c9xxxx",
 
 "appName": "6VpxGM89"
 
@@ -711,7 +711,7 @@ Output:
 
 {
 
-"ID": "gksOZ5MB5L_rgqT07Sib",
+"ID": "gksOZ5MB5L_rgqT0xxxx",
 
 "Name": "Change Address",
 
@@ -719,7 +719,7 @@ Output:
 
 "Description": "Update the registered address for the user's bank account. I need to change my address on file. Is the sample user utterance.",
 
-"appId": "st-81eb7684-8627-492f-894e-63ca462c3c3a",
+"appId": "st-81eb7684-8627-492f-894e-63ca462cxxxx",
 
 "appName": "KhBKv8T6"
 
@@ -735,7 +735,7 @@ Output:
 
 {
 
-"ID": "o0sOZ5MB5L_rgqT07Sib",
+"ID": "o0sOZ5MB5L_rgqT0xxxx",
 
 "score": 0.5700793,
 
@@ -743,7 +743,7 @@ Output:
 
 "Alternate Questions": [],
 
-"appId": "st-013e912d-d2de-43c9-a6d9-87a36f3f2fe2",
+"appId": "st-013e912d-d2de-43c9-a6d9-87a36f3fxxxx",
 
 "appName": "7JRpXO3t"
 
@@ -759,11 +759,11 @@ Output:
 
 {
 
-"docID": "fc-ee287d4e-3ee0-5e96-8b38-7fc14bd62639",
+"docID": "fc-ee287d4e-3ee0-5e96-8b38-7fc14bd6xxxx",
 
 "docName": "Home loan .pdf",
 
-"chunkID": "chk-83b985a0-b6fc-4080-afef-58d7b6bcc710",
+"chunkID": "chk-83b985a0-b6fc-4080-afef-58d7b6bcxxxx",
 
 "score": 1.01792,
 
@@ -832,7 +832,7 @@ Output:
 
 {
 
-"ID": "uZl0RZQBY6hZN8s77ahh",
+"ID": "uZl0RZQBY6hZN8s7xxxx",
 
 "score": 0.5770545,
 
@@ -840,7 +840,7 @@ Output:
 
 "Alternate Questions": [],
 
-"appId": "st-af62a4d0-7fe7-4de7-bff7-95b732ec0471",
+"appId": "st-af62a4d0-7fe7-4de7-bff7-95b732ecxxxx",
 
 "appName": "LpwxnlOL"
 
@@ -856,11 +856,11 @@ Output:
 
 {
 
-"docID": "fc-79e1079a-d1a4-53c8-9d40-6b28c743128e",
+"docID": "fc-79e1079a-d1a4-53c8-9d40-6b28c743xxxx",
 
 "docName": "employee-policy-manual-02-2016 (1).pdf",
 
-"chunkID": "chk-cc678e78-048a-418c-ac5b-fb31bd337d5b",
+"chunkID": "chk-cc678e78-048a-418c-ac5b-fb31bd33xxxx",
 
 "score": 1.10397,
 

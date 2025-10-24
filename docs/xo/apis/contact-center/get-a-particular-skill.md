@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Get a Particular Skill
 
 To retrieve the details of a particular skill with the given Stream Id, Skill Group Id, and Skill Id.

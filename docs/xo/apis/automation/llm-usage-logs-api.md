@@ -1,13 +1,6 @@
-
-
+--8<-- "includes/automationai-api-back-link.md"
 
 # LLM and Generative AI Usage Logs API
-
-	
-
-		
-
-			
 
 This API lets you get the LLM & Generative AI Usage Logs for GenAI features.
 

@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # Adding the WhatsApp Business Messaging Channel
 
 Users can select any of the following messaging partners to enable WhatsApp Business messaging:

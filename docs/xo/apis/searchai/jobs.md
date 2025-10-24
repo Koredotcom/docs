@@ -1,3 +1,5 @@
+--8<-- "includes/searchai-api-back-link.md"
+
 # Jobs API
 
 This API is used to get the details of a job. The response of this API varies as per the type of the job. 

@@ -1,6 +1,4 @@
-<!-----
-
------>
+--8<-- "includes/agentai-api-back-link.md"
 
 # Raw Data API v2
 
@@ -1315,7 +1313,7 @@ Example: "false" without the double-quotes
    </td>
    <td>Links in the Answer clicked by the Agent.
 <p>
-Example: ["<a href="http://www.google.com/">http://www.google.com</a>"]
+Example: ["<a href="https://www.google.com/">https://www.google.com</a>"]
    </td>
   </tr>
   <tr>

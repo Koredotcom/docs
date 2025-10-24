@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Delete a Specific Agent from a Particular Agent Group
 
 To delete a particular agent with the given `streamId` and `agentId`.

@@ -1,5 +1,6 @@
-# Connector APIs
+--8<-- "includes/searchai-api-back-link.md"
 
+# Connector APIs
 
 ## Get Connectors
 
@@ -90,7 +91,7 @@ This API returns the list of connectors configured for an application. For each 
             "_id": "fcon-73d16e4a-282a-5c41-9ca7-8aec4dd04c63",
             "name": "myConnector",
             "type": "json",
-            "createdBy": "xyz@kore.com",
+            "createdBy": "john.doe@example.com",
             "isActive": true,
             "sourceId": "fs-cf813bb4-xxxxxxxx-bf25-604c528f9782",
             "resourceid": "findlyConnectors",

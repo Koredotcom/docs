@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Update an Agent Group
 
 To update a particular agent group with the given `streamId` and `agentGroupId`.

@@ -23,10 +23,9 @@ AgentAssist lets you create two types of playbooks:
 
 ### Steps to Create a Primary Playbook
 
-1. Sign in to the XO Platform.
+1. Sign in to [XO Platform](https://platform.kore.ai/){:target="_blank"}.
 2. Click **AgentAI** > **EXPERIENCE** > **Agent Playbook**.
-<img src="./../playbook-images/agent-playbook-path.png" alt="agent-playbook-path" title="agent-playbook-path" style="border: 1px solid gray;">
-    
+<img src="./../playbook-images/agent-playbook-path.png" alt="agent-playbook-path" title="agent-playbook-path" style="border: 1px solid gray;">  
 3. Click **+New Playbook**.
 4. Enter and select the following details in the **General Settings** page:
     1. Enter a name in the **Playbook Name** field.
@@ -251,7 +250,7 @@ You can edit and delete an existing step, as required. This process is the same 
 ### Editing a Step
 
 1. Sign in to the XO Platform.
-2. Click **Configuration **>** Playbook**.
+2. Click **Configuration** > **Playbook**.
 3. Click the **Edit** button against the playbook for which you want to edit a step.
 4. Click the step you want to edit.
 5. Make your updates on the **Step Configuration** page.

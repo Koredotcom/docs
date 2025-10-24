@@ -1,4 +1,6 @@
-# **Advance Search API - V2**
+--8<-- "includes/searchai-api-back-link.md"
+
+# Advance Search API - V2
 
 This API enables you to retrieve answers and search results related to a specific query. By default, the API returns answers. Along with the search results and answers, the API also provides details about the chunks used and metadata information associated with those chunks.  
 
@@ -137,7 +139,7 @@ This API enables you to retrieve answers and search results related to a specifi
    <tr>
    <td>raclEntityIds</td>
   
-   <td>Array of RACL values. This field specifies the <strong>RACL (Role-Based Access Control List)</strong> values to be used to determine accessible content. It can include both <strong>user identities</strong> (e.g., email addresses) and <strong>permission entity IDs </strong>(e.g., user groups).
+   <td>Array of RACL values. This field specifies the <strong>RACL (Role-Based Access Control List)</strong> values to be used to determine accessible content. It can include both <strong>user identities</strong> (for example, email addresses) and <strong>permission entity IDs </strong>(for example, user groups).
    
    When raclEntityIds is passed in the API request, Search AI exclusively uses the provided values in raclEntityIds to identify accessible content. No additional mapping between user identities and permission entities is performed to resolve content accessibility. For each value in raclEntityIds, only the content where the sys_racl field contains a matching value will be accessible in the response. For instance,
   
@@ -149,11 +151,11 @@ This API enables you to retrieve answers and search results related to a specifi
   
   <ul>
   <li>Content with a sys_racl field that includes either "123234" or "user@example.com" will be accessible.</li>
-  <li> The API will not perform additional lookups to identify content accessible to other related permission entities for "user@example.com".</li>
+  <li> The API won't perform additional lookups to identify content accessible to other related permission entities for "user@example.com."</li>
   </ul>
   This parameter enables granular control over content accessibility by explicitly specifying allowed entities. It ensures strict adherence to the provided values without relying on broader permission mappings.
 
-  “raclEntityIds” takes precendence over any key set to use via RACL resolver API. So even if that is configured whenever “raclEntityIds” is present we will only honor that. 
+ When raclEntityIds is provided, the system prioritizes it over any keys configured through the RACL Resolver API and ignores those configurations.
 
 
    </td>
@@ -192,12 +194,12 @@ This API enables you to retrieve answers and search results related to a specifi
     <li>All values, integrationName, model, and promptName, are <strong>case sensitive</strong>.</li>
     <li>Ensure that the specified model and prompt are correctly <strong>configured and published under GenAI settings.</strong></li>
     <li>When using a <strong>custom LLM</strong>, the integrationName must match the exact name defined in the custom integration settings.</li>
-    <li>To use the <strong>default prompt configured in the application</strong>, set promptName as “Default”.</li>
-    <li>Since you cannot add a new prompt for Kore XO GPT, set prompt=”Default”.</li>
+    <li>To use the <strong>default prompt configured in the application</strong>, set promptName as “Default.”</li>
+    <li>Since you can't add a new prompt for Kore XO GPT, set prompt=”Default”.</li>
     <li>For Kore XO GPT (korexo):
       <ul>
-        <li>The model must be set to "XO-GPT".</li>
-        <li>The prompt must be "Default" (custom prompts are not supported).</li>
+        <li>The model must be set to "XO-GPT."</li>
+        <li>The prompt must be "Default" (custom prompts aren't supported).</li>
       </ul>
     </li>
   </ul>
@@ -206,7 +208,7 @@ This API enables you to retrieve answers and search results related to a specifi
   </tr>
    <tr>
    <td> includeMetaDataAnswers</td>
-<td>This field can fetch specific chunk metadata fields in the response along with the default fields. The requested fields are returned as part of the graph_answer field in the response. If a metadata field listed in this object does not exist, the field is returned in the response with a null value. For instance, to fetch the author name(a metadata field) and subtitle(a custom field) additionally from the chunks, include the following in the request payload. 
+<td>This field can fetch specific chunk metadata fields in the response along with the default fields. The requested fields are returned as part of the graph_answer field in the response. If a metadata field listed in this object doesn't exist, the field is returned in the response with a null value. For instance, to fetch the author name(a metadata field) and subtitle(a custom field) additionally from the chunks, include the following in the request payload. 
 <pre>
 "IncludeMetaDataAnswers": ["chunkMeta.author", “subtitle”]. 
 </pre>
@@ -248,7 +250,7 @@ The response to the API is in JSON format. Some key fields in the response, whic
       {
         "docId": "fc-4f2ef8b5-e05d-555a-8fb9-dc8a1ceb514b",
         "recordTitle": "Copy of Microsoft.pdf",
-        "recordUrl": "https://drive.google.com/file/d/1vEZTjr9VtQrFePRCJGimfX5cs5y7ITGP/view?usp=drivesdk",
+        "recordUrl": "https://drive.google.com/file/d/1vEZTjr9VtQxxxxxxxxxxxxxxxxxxxxxxTGP/view?usp=drivesdk",
         "chunkResults": [
           "chk-f6bf3fb8-5adf-427e-b97a-0893af7be94f",
           "chk-864bf33b-bfad-4c08-9b93-bff1a663ae07",
@@ -263,7 +265,7 @@ The response to the API is in JSON format. Some key fields in the response, whic
       {
         "docId": "fc-e1d1181b-4b23-58df-8346-e4c728259c4d",
         "recordTitle": "SALESFORCECOM_20230130_0000.pdf",
-        "recordUrl": "https://staging-xo.korebots.com/api/getMediaStream/findly/f-7ead54e7-f34b-5858-bb26-b6295f39fa4e.pdf?n=2345813963&s=IjZZeXA4M1ZzZTVCT0k3Z3NMYkN2UjJjQ2RBV215bmZsd0xSU1h2ZFdnRVU9Ig$$",
+        "recordUrl": "https://domain.com/api/getMediaStream/******/f-7ead54e7-f34b-5858-bb26-b6295f39fa4e.pdf?n=2345813963&s=IjZZeXA4M1ZzZTVCT0k3Z3NMxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdnRVU9Ig$$",
         "chunkResults": [
           "chk-84e2c8ca-dc0f-4372-b3ff-36368ab4dea3"
         ]
@@ -327,7 +329,7 @@ The response to the API is in JSON format. Some key fields in the response, whic
 ```
 
 
-* **chunk_result**: This field contains the array of all the chunks used for answers or search results. Each item in the array contains the details of the chunks and their metadata.  This information can be used for reference to the chunks using the chunk id. 
+* **chunk_result**: This field contains the array of all the chunks used for answers or search results. Each item in the array contains the details of the chunks and their metadata. This information can be used for reference to the chunks using the chunk id. 
 
 ```json
 "chunk_result": [
@@ -438,7 +440,7 @@ The response to the API is in JSON format. Some key fields in the response, whic
 ```
 
 
-* **facets**: This field contains information about the filters configured on the UI. Corresponding to each unique value of the selected field in a filter, a bucket is created.  Each bucket has a key value that identifies its contents, along with a count of the total chunks and total documents associated with that bucket. For example, if a filter is applied to the field "createdBy," buckets will be generated containing the unique values of this field. 
+* **facets**: This field contains information about the filters configured on the UI. Corresponding to each unique value of the selected field in a filter, a bucket is created. Each bucket has a key value that identifies its contents, along with a count of the total chunks and total documents associated with that bucket. For example, if a filter is applied to the field "createdBy," buckets will be generated containing the unique values of this field. 
 
 ```json
 "facets": [

@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Get Contact List Details API
 
 Use this API to retrieve the full details of a specific contact list using its ID.

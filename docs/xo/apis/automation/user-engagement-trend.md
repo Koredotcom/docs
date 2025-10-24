@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # User Engagement Trend API
 
 To provide the number of users who have interacted with the bot in a given period across different time intervals.

@@ -1,4 +1,6 @@
 
+--8<-- "includes/automationai-api-back-link.md"
+
 # ML Utterances Import API
 
 To import the ML Utterances into a bot.

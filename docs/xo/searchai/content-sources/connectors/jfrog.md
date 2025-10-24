@@ -35,11 +35,11 @@ The connector enables Search AI to access JFrog repositories for indexing artifa
 
 ## Connector Configuration
 
-Search AI integrates with JFrog via APIs.  To establish this connection, you need a valid Identity Token with admin permissions for the target projects and repositories.
+Search AI integrates with JFrog via APIs. To establish this connection, you need a valid Identity Token with admin permissions for the target projects and repositories.
 
 ### Create an Identity Token in JFrog
 
-1. Sign in to your [JFrog](http://jfrog-dev.kore.ai/ui/login){:target="_blank"} Artifactory account.
+1. Sign in to your [JFrog](https://jfrog-dev.kore.ai/ui/login){:target="_blank"} Artifactory account.
 
 2. Go to your **User Profile** > **Identity Token**.
 
@@ -58,7 +58,7 @@ On the Authentication page, provide the following details:
 * **API Key**: Enter the identity token generated from your JFrog Artifactory account.
 * **Host URL**: Enter the base URL of your JFrog Artifactory instance.
 
-Ensure that the domain name is explicitly defined. For example: `http://jfrog-xxxx/`
+Ensure that the domain name is explicitly defined. For example: `https://jfrog-xxxx/`
 
 After entering all details, click **Connect** to validate access and proceed with the configuration.
 

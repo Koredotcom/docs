@@ -45,19 +45,19 @@ Quality AI supports three conversation sources:
 
 Steps to create a Quality AI application via the XO platform:
 
-1. Access to the **AI for Service** [Homepage](../../../xo/getting-started/accessing-the-platform.md).
+1. Access to the **AI for Service** [Homepage](../../getting-started/accessing-the-platform.md){:target="_blank"}.
 
-2. Log in through **Email** or **SSO** (Google or Office 365). 
+1. Log in through **Email** or **SSO** (Google or Office 365). 
 
-3. Sign up for a new account if you do not have the account. [Learn more](https://docs.kore.ai/xo/getting-started/accessing-the-platform/).  
+2. Sign up for a new account if you do not have the account. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
 <img src="../Onboarding/images/xo-landing-page.png" alt="XO Landing Page" title="XO Landing Page" style="border: 1px solid gray; zoom:80%;">
 
-4. Select the **New App** dropdown located at the upper right corner of the XO landing page.
+1. Select the **New App** dropdown located at the upper right corner of the XO landing page.
 
-5. Click **+ New App**.   
+2. Click **+ New App**.   
 <img src="../Onboarding/images/navigate-to new-app.png" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
 
-6. Select **Quality AI**.   
+1. Select **Quality AI**.   
 <img src="../Onboarding/images/Quality-ai-new-user.png" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
@@ -66,7 +66,7 @@ Steps to create a Quality AI application via the XO platform:
         
         * For existing users, the **Get Started** screen displays a **Contact us** option to proceed. The subsequent Guided Onboarding steps are skipped, and the user is taken directly to the **Basic Configuration Settings** section.
 
-7. Proceed with the following guided setup steps (in case of a new user).
+1. Proceed with the following guided setup steps (in case of a new user).
 
 ### Configure Basic Settings
 
