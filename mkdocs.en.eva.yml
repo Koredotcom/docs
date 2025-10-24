@@ -1,14 +1,14 @@
-site_name: Kore ai Docs
-site_author: Kore ai Content Experience Team
+site_name: Inceptionai Docs
+site_author: Inceptionai Content Experience Team
 docs_dir: 'docs/eva/'
 site_dir: 'site/ai-for-work/'
 site_url: https://docs.kore.ai/ai-for-work/
-repo_name: Koredotcom/docs
-repo_url: https://github.com/Koredotcom/docs
+repo_name: inceptionai-public/platform-docs
+repo_url: https://github.com/inceptionai-public/platform-docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
-  favicon: images/Kore_Black.svg
+  favicon: images/favicon.png
   name: material
   custom_dir: overrides.en.eva
   features:
@@ -110,7 +110,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2025 Inceptionai.ai, Inc. - All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
