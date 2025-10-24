@@ -50,7 +50,7 @@ To create a new Bot Agent, follow these steps:
 
     1.  Log in to the **AI for Service Platform**. Open the virtual assistant or bot you
         want to add the channels to. Navigate to **Deploy \> Channels**\> **Add
-        More\>Webhook**. The Webhook dialog will
+        More**\> **Webhook**. The Webhook dialog will
         appear.![](images/webhook.png)
 
     2.  Select your required app from the **Webhook** dialog.

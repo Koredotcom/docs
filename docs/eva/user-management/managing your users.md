@@ -66,8 +66,6 @@ To view the user details page:
 * Hover over the specific username, the **Open** icon will appear. Click **Open**.
 * Click **More** in the last column of the specific user row.  
 
-<img src="../images/users-more.png" alt="users-more" title="users-more" style="border: 1px solid gray; zoom:80%;"> 
-
 From the user details page, you can access the following fields:
 
 * Personal Details
