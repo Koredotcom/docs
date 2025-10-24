@@ -33,7 +33,6 @@ This option allows the admin to manage accounts using Active Directory synchroni
 
 6. Click **Save Configuration** to apply and update all the respective changes. 
 Note: The configuration cannot be saved if the current admin making the changes is not included in the admin DL.  
-<img src="../images/manage-users.png" alt="manage-users" title="manage-users" style="border: 1px solid gray; zoom:80%;"> 
 
 !!!Important Considerations
 

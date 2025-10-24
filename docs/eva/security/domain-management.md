@@ -73,4 +73,3 @@ Partner users can effortlessly navigate between multiple tenant accounts. Each a
 * The Admin Console
 * The Application UI
 
-<img src="../images/account-switcher.png" alt="saccount-switcher" title="account-switcher" style="border: 1px solid gray; zoom:80%;">
