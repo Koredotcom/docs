@@ -2,7 +2,7 @@
 
 # Get All Conversations Data – Call Details
 
-To retrieve the raw data for all conversations in a very detailed view. The days’ range cannot be more than seven days.
+To retrieve the raw data for all conversations in a detailed view. The days’ range can't be more than seven days.
 
 | **Method** | POST |
 |--------|------|
@@ -22,7 +22,7 @@ To retrieve the raw data for all conversations in a very detailed view. The days
 
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
 |-----------|-------------|------|
-| limit | Specifies the number of bot records to retrieve, with a maximum limit of 100. For example, 50 | integer, optional |
+| limit | Specifies the number of conversation records to retrieve, with a maximum limit of 100. For example, 50 | integer, optional |
 | offset | Defines the number of pages to skip or retrieve. Defaults to 0 if unspecified, with a maximum value of 10. For example, 10 | integer, optional |
 
 ## Sample Request
