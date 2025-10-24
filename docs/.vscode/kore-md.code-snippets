@@ -1,0 +1,136 @@
+{
+ "Insert HTML code for image": {
+	"scope": "markdown",
+ 	"prefix": "kore-image",
+ 	"body": [
+	   "<img src=\"insert-relative-file-path.png\" alt=\"image-alt-text-for-accessibility\" title=\"title-of-the-image\" style=\"border: 1px solid gray; zoom:100%;\">"
+ 	],
+ 	"description": "Insert an image with HTML syntax in MD."
+ },
+
+ "Add a procedure": {
+ 	"scope": "markdown",
+	"prefix": "kore-procedure",
+ 	"body": [
+		" 1. Go to [portal-name](https://portal-url). \n 1. Select **UI menu** > **Option**. \n 1. Some instructions \n \n \t\t <img src=\"insert-relative-file-path.png\" alt=\"image-alt-text-for-accessibility\" title=\"title-of-the-image\" style=\"border: 1px solid gray; zoom:100%;\"> \n\n 1. More instructions. \n 1. More instructions. \n 1. More instructions. \n \n \t\t <img src=\"insert-relative-file-path.png\" alt=\"image-alt-text-for-accessibility\" title=\"title-of-the-image\" style=\"border: 1px solid gray; zoom:100%;\"> \n\n  1. More instructions."
+	],
+ 	"description": "Insert a procedure."
+ },
+
+ "Add a note": {
+ 	"scope": "markdown",
+ 	"prefix": "kore-note",
+ 	"body": [
+		"!!! note \n \n    Note content goes here."
+	],
+ 	"description": "Insert a note block."
+ },
+
+"Add RN complex structure": {
+ 	"scope": "markdown",
+ 	"prefix": "kore-rn-entry",
+ 	"body": [
+		"## version Month date, year",
+		"",
+		"<u>Minor Release</u>",
+		"",
+		"<u>Patch Release</u>",
+		"",
+		"\n <font size=\"4\">Category1</font>",
+		"",
+		"**Feature name**",
+		"",
+		"feature description. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
+		"",
+		"**Feature name**",
+		"",
+		"feature description. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
+		"",
+		"\n <font size=\"4\">Category2</font>",
+		"",
+		"**Feature name**",
+		"",
+		"feature description. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
+		"",
+		"**Feature name**",
+		"",
+		"feature description. [Learn more :octicons-arrow-right-24:](link-to-md-file)",
+		"",
+		"<hr>",
+		"",
+	],
+ 	"description": "Insert a release note entry."
+ },
+
+
+ "MD table 3 col": {
+	"scope": "markdown",
+	"prefix": "kore-table-md-3column",
+  	"body": [
+    	"| Col1   | Col2     | Col3     |",
+    	"|--------|----------|----------|",
+    	"|        |          |          |",
+    	"|        |          |          |",
+    	"|        |          |          |",
+    	"|        |          |          |",
+    	"|        |          |          |",	
+  ],
+  "description": "Insert a 3 column table."
+},
+
+ "MD table 4 col": {
+	"scope": "markdown",
+  	"prefix": "kore-table-md-4column",
+  	"body": [
+  	  "| Col1   | Col2     | Col3     | Col4     |",
+  	  "|--------|----------|----------|----------|",
+ 	   "|        |          |          |          |",
+ 	   "|        |          |          |          |",
+ 	   "|        |          |          |          |",
+ 	   "|        |          |          |          |",
+ 	   "|        |          |          |          |",
+ 	 ],
+  "description": "Insert a 4 column table."
+},
+
+"HTML table 3 col 4 row": {
+	"scope": "markdown",
+  	"prefix": "kore-table-html-3column",
+  	"body": [
+		"<table border=\"1\">",
+		"  <thead>",
+		"    <tr>",
+		"      <th>Header 1</th>",
+		"      <th>Header 2</th>",
+		"      <th>Header 3</th>",
+		"    </tr>",
+		"  </thead>",
+		"  <tbody>",
+		"    <tr>",
+		"      <td>Row 1, Col 1</td>",
+		"      <td>Row 1, Col 2</td>",
+		"      <td>Row 1, Col 3</td>",
+		"    </tr>",
+		"    <tr>",
+		"      <td>Row 2, Col 1</td>",
+		"      <td>Row 2, Col 2</td>",
+		"      <td>Row 2, Col 3</td>",
+		"    </tr>",
+		"    <tr>",
+		"      <td>Row 3, Col 1</td>",
+		"      <td>Row 3, Col 2</td>",
+		"      <td>Row 3, Col 3</td>",
+		"    </tr>",
+		"    <tr>",
+		"      <td>Row 4, Col 1</td>",
+		"      <td>Row 4, Col 2</td>",
+		"      <td>Row 4, Col 3</td>",
+		"    </tr>",
+		"  </tbody>",
+		"</table>"
+	],
+  "description": "Insert a 3-column, 4-row HTML table"
+},
+
+
+}
