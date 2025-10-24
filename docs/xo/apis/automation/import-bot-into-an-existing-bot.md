@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Import Bot into an Existing Bot API
 
 To import the bot definition file to an existing bot for a current version upgrade or previous version restoration.

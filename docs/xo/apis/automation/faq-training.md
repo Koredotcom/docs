@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # FAQ Training API
 
 To initiate the training of the knowledge graph.

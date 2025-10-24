@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Proactive Notifications API v2
 
 The Proactive Notifications API V2 enables sending various types of messages to users via `IVR`, `Hangout`, `Webhook` and `Whatsapp` channels. 
@@ -122,15 +124,14 @@ Sends a non-personalized message to multiple users.
 
 ```
 "identities": [
-  { "spaceId": "AAQAPWibMjE" },
-  { "spaceId": "o7ZNt8AAAAE" }
+  { "spaceId": "AAQAPWixxxx" },
+  { "spaceId": "o7ZNt8Axxxx" }
 ]
 ```
 
 **Custom Message**
 
 Sends a personalized message if `customMessage` is specified, else uses the main message.
-
 
 ```
 {
@@ -156,8 +157,8 @@ Sends a personalized message if `customMessage` is specified, else uses the main
 
 ```
 "identities": [
-  { "spaceId": "AAQAPWibMjE", "customMessage": "Hi John, your package is on the way!" },
-  { "spaceId": "o7ZNt8AAAAE" }
+  { "spaceId": "AAQAPWixxxx", "customMessage": "Hi John, your package is on the way!" },
+  { "spaceId": "o7ZNt8Axxxx" }
 ]
 ```
 
@@ -190,11 +191,10 @@ Personalizes the message using dynamic parameters.
 
 ```
 "identities": [
-  { "spaceId": "AAQAPWibMjE", "parameters": { "name": "Charlie", "refId": "XYZ-789" } },
-  { "spaceId": "o7ZNt8AAAAE" }
+  { "spaceId": "AAQAPWixxxx", "parameters": { "name": "Charlie", "refId": "XYZ-789" } },
+  { "spaceId": "o7ZNt8Axxxx" }
 ]
 ```
-
 
 **Template-Based Message**
 
@@ -222,8 +222,8 @@ Uses templates with optional parameter substitution.
 
 ```
 "identities": [
-  { "spaceId": "AAQAPWibMjE", "parameters": { "name": "Charlie", "orderId": "XYZ-789" } },
-  { "spaceId": "o7ZNt8AAAAE" }
+  { "spaceId": "AAQAPWixxxx", "parameters": { "name": "Charlie", "orderId": "XYZ-789" } },
+  { "spaceId": "o7ZNt8AAxxxx" }
 ]
 ```
 **whatsapp:**
@@ -393,8 +393,8 @@ Uses templates with optional parameter substitution.
 
 ```
 {
-   "_id": "ds-d0f6fed2-87ff-52b7-bf2b-a15216f0a563",
-   "streamId": "st-736ff917-d836-55b4-9a6b-3dad20c09af3",
+   "_id": "ds-d0f6fed2-87ff-52b7-bf2b-a15216f0xxxx",
+   "streamId": "st-736ff917-d836-55b4-9a6b-3dad20c0xxxx",
    "jobType": "PROACTIVE_NOTIFICATIONS_API",
    "action": "PROACTIVE_NOTIFICATIONS",
    "status": "IN_PROGRESS",
@@ -403,7 +403,7 @@ Uses templates with optional parameter substitution.
    "store": {
        "identitiesCount": 2
    },
-   "createdBy": "u-ecff03e8-ba90-532e-ab7b-209082d91936",
+   "createdBy": "u-ecff03e8-ba90-532e-ab7b-209082d9xxxx",
    "lMod": "2025-05-22T05:37:56.000Z",
    "countOfDockStatuses": 1,
    "createdOn": "2025-05-22T05:37:56.693Z",

@@ -1,3 +1,5 @@
+--8<-- "includes/searchai-api-back-link.md"
+
 # Answer Generation API
 
 This API allows you to fetch answers to a query from SearchAI corresponding to the input query and the meta filters sent in the request body. Additionally, this API also returns debug information about the qualified chunks used to generate answers.
@@ -235,8 +237,8 @@ This parameter enables granular control over content accessibility by explicitly
   "customData": {
         "userContext": {
               "userName": "John",
-              "userId": "john.smith@kore.com",
-              "emailId": "john.smith@kore.com"
+              "userId": "john.smith@example.com",
+              "emailId": "john.smith@example.com"
             }
     }
 ```

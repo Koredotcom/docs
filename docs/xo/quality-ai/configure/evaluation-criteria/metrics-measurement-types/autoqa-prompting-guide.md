@@ -1,6 +1,6 @@
 # AutoQA - GenAI By Question Metric Prompting Guide
 
-# Overview
+## Overview
 
 This guide helps you craft effective prompts for LLM-based adherence detection that achieve high precision and recall. Well-structured prompts are specific, measurable, and account for real-world conversation variations.
 
@@ -13,7 +13,6 @@ Every effective AutoQA prompt should include:
 1. **Context Setting** - Define the evaluation scenario
 2. **Pass Criteria** - Specific behaviours that constitute success
 3. **Fail Criteria** - Clear indicators of non-compliance
-
 
 ### Template Structure
 

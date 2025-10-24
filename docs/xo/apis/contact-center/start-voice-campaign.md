@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-api-back-link.md"
+
 # Start Voice Campaign API
 
 Use this API to start an active Voice campaign for a given stream ID and campaign ID.

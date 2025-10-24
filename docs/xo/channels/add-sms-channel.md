@@ -1,3 +1,5 @@
+--8<-- "includes/digital-channels-back-link.md"
+
 # SMS Channel
 
 ## Overview

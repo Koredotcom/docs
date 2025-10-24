@@ -1,5 +1,6 @@
-# **Permission Entity APIs**
+--8<-- "includes/searchai-api-back-link.md"
 
+# Permission Entity APIs
 
 ## Get Permission Entities
 
@@ -137,9 +138,9 @@ This API lists all the permission entities associated with a connector.
 [
     {
         "_id": "fpe-82e99097-7532-506b-af42-363cbe5bb59c",
-        "entityId": "SearchAssist-qa@kore.com",
+        "entityId": "john.doe@example.com",
         "meta": {},
-        "name": "SearchAssist-qa",
+        "name": "John",
         "userIds": [],
         "sourceType": "googleDrive",
         "type": "googleGroup"
@@ -235,9 +236,9 @@ This API returns the details of the request permission entity. It lists the user
 ```
 {
     "_id": "fpe-82e99097-7532-506b-af42-363cbe5bb59c",
-    "entityId": "SearchAssist-qa@kore.com",
+    "entityId": "john.doe@example.com",
     "meta": {},
-    "name": "SearchAssist-qa",
+    "name": "John",
     "userIds": [],
     "sourceType": "googleDrive",
     "type": "googleGroup"
@@ -329,7 +330,7 @@ To associate a user with a permission entity, use the following as the request b
 
 ```
 {
-"userList":["john@kore.com"]
+"userList":["john@example.com"]
 }
 ```
 
@@ -415,7 +416,7 @@ To delete a user from a permission entity, use the following as the request body
 
 ```
 {
-    "userList":["john@kore.com"]
+    "userList":["john@example.com"]
 }
 ```
 

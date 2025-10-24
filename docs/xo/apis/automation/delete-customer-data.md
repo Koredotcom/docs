@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Delete Customer Data API
 
 This API is Used to delete customer data.

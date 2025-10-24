@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Remove Users from Account
 
 To remove users from an account.

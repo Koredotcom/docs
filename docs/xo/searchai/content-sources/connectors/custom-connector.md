@@ -33,7 +33,7 @@ Follow the steps listed below to get started.
 1. Go to the **Connectors** page.
 1. Select **Custom Connector** and configure it with the following details:
     * **Name**: A unique name for the connector.
-    * **Endpoint**: The URL of the hosted service. This is the endpoint of the API that provides the content. Also, specify the HTTP method for the API. For the default implementation of the Connector Service, the endpoint is GET http://&lt;serverip>/getContent
+    * **Endpoint**: The URL of the hosted service. This is the endpoint of the API that provides the content. Also, specify the HTTP method for the API. For the default implementation of the Connector Service, the endpoint is GET https://&lt;serverip>/getContent
     * Under the **Headers**, add the following key and value. The value is the auth value set in the .env file in the service. This is required to establish secure communication with the service. For the default implementation of the service, use it as it is. If there is a change in the auth mechanism in the service, change it accordingly.
         Key: Authorization.
         Value: &lt;Your-Auth-Key>

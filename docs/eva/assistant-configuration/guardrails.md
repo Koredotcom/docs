@@ -10,7 +10,7 @@ Guardrails is an advanced security and compliance framework designed to protect 
 
 Get started with Guardrails in four simple steps to secure your AI interactions and protect sensitive data:
 
-1. Navigate to the Guardrails section in **Account Hub.
+1. Navigate to the Guardrails section in **Account Hub**.
 
 <img src="../images/guardrails-account.png" alt="guardrails-account" title="guardrails-account" style="border: 1px solid gray; zoom:80%;">
 

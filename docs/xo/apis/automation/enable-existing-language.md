@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Enable an Existing Language API
 
 To enable an existing language for an AI Agent.

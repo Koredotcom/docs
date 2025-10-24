@@ -66,8 +66,6 @@ To view the user details page:
 * Hover over the specific username, the **Open** icon will appear. Click **Open**.
 * Click **More** in the last column of the specific user row.  
 
-<img src="../images/users-more.png" alt="users-more" title="users-more" style="border: 1px solid gray; zoom:80%;"> 
-
 From the user details page, you can access the following fields:
 
 * Personal Details
@@ -91,7 +89,7 @@ The User Roles feature allows administrators to control user access through pred
 ### **Creating Custom Roles**
 1. Click **Manage role** from the user management interface.
 2. Select **Add Role** or equivalent option to create a new role.
-3. **Role name: **Enter a descriptive name for the custom role. Use clear, meaningful names that reflect the role's purpose 
+3. **Role name**: Enter a descriptive name for the custom role. Use clear, meaningful names that reflect the role's purpose 
 <img src="../images/user-role-2.png" alt="user-details" title="user-details" style="border: 1px solid gray; zoom:80%;"> 
 
     **Access Permissions**: Choose one or multiple permissions from the provided list. Users will only see the modules corresponding to the permissions they are granted.
@@ -102,16 +100,14 @@ The User Roles feature allows administrators to control user access through pred
     * Security
     * Analytics
 
-    **Color**:Choose a unique color identifier for the role, this color serves as a visual indicator throughout the system.
+    **Color**: Choose a unique color identifier for the role, this color serves as a visual indicator throughout the system.
 !!! note
 
     At least one Access Permission must be selected to enable role creation.
 
 ## Top Navigation Menu
 
-This section describes the commands available on the Top Navigation Menu.  
-
-<img src="../images/top-menu.png" alt="top-menu" title="top-menu" style="border: 1px solid gray; zoom:80%;"> 
+This section describes the commands available on the Top Navigation Menu. 
 
 1. User Enrollments
 
@@ -146,5 +142,4 @@ This section describes the commands available on the Top Navigation Menu.
 
     3. To invite users by sending emails, select the **Add manual** radio button.
     4. Enter the email address of the user. You can send invitations to multiple users at a given time.  
-    <img src="../images/add-manual.png" alt="add-manual" title="add-manual" style="border: 1px solid gray; zoom:80%;"> 
-    5. Click **Invite.**
+    5. Click **Invite**.

@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Billing Sessions API
 
 This API retrieves the list of individual billing sessions created for an app so that you can review them for correctness and reconciliation.

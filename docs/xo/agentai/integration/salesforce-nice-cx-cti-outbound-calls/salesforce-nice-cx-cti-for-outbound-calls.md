@@ -353,7 +353,7 @@ This app will be used in studio script.
         <img src="../images/configure-sip-trunk_6.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
         2. **Bot ID and Account ID**: **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal.  
         <img src="../images/web-mobile-client_7.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;"> 
-        3. **Token**: Create a JSON Web Token on [jwt.io](http://jwt.io/){:target="_blank"} with the following details.
+        3. **Token**: Create a JSON Web Token on [jwt.io](https://www.jwt.io/){:target="_blank"} with the following details.
             1. Payload: {“appId”: &lt;Bot Client ID>}
             2. Header: {“alg”: “HS256″,”typ”: “JWT”}
             3. Secret: Your Kore.ai Client Secret.

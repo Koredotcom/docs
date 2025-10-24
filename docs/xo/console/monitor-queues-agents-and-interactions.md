@@ -184,14 +184,14 @@ Steps to transfer all Calls/Chats/Emails in Agent Queue:
 2. Select one or more conversations. An option to select all or clear the selection is available.  
     <img src="../images/select-conversations.png" alt="Select Conversations" title="Select Conversations" style="border: 1px solid gray; zoom:70%;">
 
-!!! Note
+    !!! Note
 
-    At least one conversation must be selected to proceed.
+        At least one conversation must be selected to proceed.
 
 3. A bottom action bar appears, displaying a **"Transfer"** button.
 4. From the queue dropdown, choose a destination queue.  
     <img src="../images/select-queue (2).png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
-5. Click **Transfer**. The selected conversations are reassigned to the chosen queue. \
+5. Click **Transfer**. The selected conversations are reassigned to the chosen queue.  
     <img src="../images/transfer.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:70%;">
 
 #### Force Close
@@ -199,11 +199,11 @@ Steps to transfer all Calls/Chats/Emails in Agent Queue:
 1. Selecting Force Close activates multi-selection mode.
 2. Select one or more conversations.
 
-!!! Note
+    !!! Note
 
-    * At least one conversation must be selected to proceed.  
-    * When a conversation is force-closed—either individually or through a bulk action—a system-generated disposition is automatically attached to the conversation. This behavior applies to both indefinite and timed slot release scenarios.  
-    * If an agent has already selected a disposition for a conversation before it is force-closed, the agent-selected disposition will not be saved. The system-generated disposition will be applied instead.
+        * At least one conversation must be selected to proceed.  
+        * When a conversation is force-closed—either individually or through a bulk action—a system-generated disposition is automatically attached to the conversation. This behavior applies to both indefinite and timed slot release scenarios.  
+        * If an agent has already selected a disposition for a conversation before it is force-closed, the agent-selected disposition will not be saved. The system-generated disposition will be applied instead.
 
 3. A bottom action bar appears, displaying a Force Close button.
 4. Click **Force Close**.  

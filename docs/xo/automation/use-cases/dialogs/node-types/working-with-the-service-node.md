@@ -30,12 +30,12 @@ To configure the Component Properties tab, please follow the steps below:
 
 1. On the **Component Properties** tab, enter the **Name** and **Display Name** of your Service node. 
 2. Choose a **Service Type** from the drop-down list:
-    1. **Custom Service** – Define an API request to a third-party web service. This is the default setting.
-    2. **HTML to Image** – Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
-    3. **URL to Image** – Define a web page URL to load to render an image.
-    4. **Custom Authentication Service** – Define a URL to a third-party application that provides the authentication services necessary for the task flow. [Learn more](../implementing-custom-authentication.md){:target="_blank"}.
-    5. **Alert Subscription Service** – Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
-    6. **Data Service** – Define CRUD operations to query and manipulate the data for any given data table/table view.
+    1. **Custom Service**: Define an API request to a third-party web service. This is the default setting.
+    2. **HTML to Image**: Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
+    3. **URL to Image**: Define a web page URL to load to render an image.
+    4. **Custom Authentication Service**: Define a URL to a third-party application that provides the authentication services necessary for the task flow. [Learn more](../implementing-custom-authentication.md){:target="_blank"}.
+    5. **Alert Subscription Service**: Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
+    6. **Data Service**: Define CRUD operations to query and manipulate the data for any given data table/table view.
 
 3. Based on the service type selected, select the **Type/Sub Type** from the respective drop-down lists or Auth URL.
 4. Define the **Pre-processor Script** to pass the input parameters dynamically for executing a Service Node’s API call. [Learn more](#pre-processor-script).
@@ -56,11 +56,11 @@ To configure the Component Properties tab, please follow the steps below:
 
 8. Select **Advanced** to open the **Advanced Options** panel.
 
-    * **Access Using a Connector** – Select *All URLs are in public domain* for public URLs, or *URLs are behind a firewall and a connector has been setup* for enterprise firewall access.
+    * **Access Using a Connector**: Select *All URLs are in public domain* for public URLs, or *URLs are behind a firewall and a connector has been setup* for enterprise firewall access.
 
-    * **De-identification of PII Data** – Select *De-identify PII data and Redact Digital Forms data* to mask sensitive info (use `.original` suffix when original values are required), or *Use original values* to send unmasked data.
+    * **De-identification of PII Data**: Select *De-identify PII data and Redact Digital Forms data* to mask sensitive info (use `.original` suffix when original values are required), or *Use original values* to send unmasked data.
 
-    * **Client Certificate Exchange** – Enable to enforce mutual authentication with client and server certificates, adding a strong security layer against unauthorized access.
+    * **Client Certificate Exchange**: Enable to enforce mutual authentication with client and server certificates, adding a strong security layer against unauthorized access.
 
     <img src="../images/service-node-img12-advanced-options.png" alt="Advaced Options" title="Advaced Options" style="border:1px solid gray;zoom:70%;">
  
@@ -82,11 +82,11 @@ To configure the Component Properties tab, please follow the steps below:
        * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add**. Refer [Examples of Path Definitions](#examples-of-path-definitions).
 
        * Select one of the following options about how you want to **display** the sensitive data to non-authorized users:
-         * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
+         * **Redaction**: Redact the sensitive data with a unique random alphanumeric value.
          
-         * **Replacement** – Replace the data with a static value that you enter in the Sensitive Entity settings.
+         * **Replacement**: Replace the data with a static value that you enter in the Sensitive Entity settings.
          
-         * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
+         * **Mask with character**: Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
         
        * Under **Redaction of PII Data**, you can specify the format for presenting this API response containing PII data in messages and post-processing:
 
@@ -308,7 +308,7 @@ After redaction:
 
 The Pre-processor Script helps execute a custom JavaScript code within the Service Node to manipulate existing values or set new ones within the context and pass the input parameters dynamically for executing an API call using the Service Node. It works similarly to the Script Node. [Learn more](#configure-the-node).
 
-With the Pre-processor Script, the Platform does not have to process additional Script nodes to execute a single service node.
+With the Pre-processor Script, the Platform doesn't have to process additional Script nodes to execute a single service node.
 
 Steps to Configure a Pre-processor Script
 
@@ -407,28 +407,28 @@ The Connection Path property offers three default variants:
 
 You can define the Service Type as:
 
-* **Custom Service** – Define an API request to a third-party web service. This is the default setting.
-* **HTML to Image** – Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
-* **URL to Image** – Define a web page URL to load to render an image.
-* **Custom Authentication Service** – Define a URL to a third-party application that provides the authentication services necessary for the task flow.
-* **Alert Subscription Service** – Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
-* **Data Table Service** – Define CRUD operations to query and manipulate the data for any given data table/table view assigned to the AI Agent.
+* **Custom Service**: Define an API request to a third-party web service. This is the default setting.
+* **HTML to Image**: Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
+* **URL to Image**: Define a web page URL to load to render an image.
+* **Custom Authentication Service**: Define a URL to a third-party application that provides the authentication services necessary for the task flow.
+* **Alert Subscription Service**: Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
+* **Data Table Service**: Define CRUD operations to query and manipulate the data for any given data table/table view assigned to the AI Agent.
 
 
 ### Define a Custom Service
 
 1. When you select **Custom Service** in the **Service Type**, then in the **Sub-Type** field, select one of the options:
-    1. **REST** – The API web service is using REST services.
-    2. **SOAP** – The API web service is using SOAP services.
+    1. **REST**: The API web service is using REST services.
+    2. **SOAP**: The API web service is using SOAP services.
 
 2. In the **Request Definition** section, click **Define Request** to specify the settings for the web service type.
 3. The **Define Request for &lt; _Service Node Name_ >** dialog is displayed as shown in the following illustration.
 4. In the **Request URL** field, in the first field, select the HTTP method used for the request. You can select:
-    1. **POST**– Used to send data to the server. For example, customer information, file upload, and so forth using HTML forms.
-    2. **PUT**– Replaces the content of the target resource with the content sent.
-    3. **PATCH** – Appends the content of an existing target resource with the content sent.
-    4. **DELETE** – Deletes the content of an existing target resource.
-    5. **GET** – Returns the content of an existing target resource
+    1. **POST**: Used to send data to the server. For example, customer information, file upload, and so forth using HTML forms.
+    2. **PUT**: Replaces the content of the target resource with the content sent.
+    3. **PATCH**: Appends the content of an existing target resource with the content sent.
+    4. **DELETE**: Deletes the content of an existing target resource.
+    5. **GET**: Returns the content of an existing target resource
 
 5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, https://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     1. Optionally, click **Show Advanced**, and select  
@@ -439,17 +439,17 @@ You can define the Service Type as:
     2. In the **Auth** tab, select the type of authorization needed for this service node call, or define a new authorization type if needed. For more information, refer to [Setting Up Authentication](../../../../app-settings/dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.
     3. In the **Headers** tab, specify the headers as key/value pairs if required to access the specified request URL.  Authentication headers are auto-generated based on the authorization type specified on the **Auth** tab. You need to define any other standard headers. For example, Content-type, Accept, or any custom headers. Headers defined here are only applicable to this service node.
     4. In the **Body** tab, select the body content type. You can select:
-        * **application/x-www-form-urlencoded** – Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
-        * **application/json** – Use JSON to transmit data between the Kore.ai servers and your AI Agent’s web application. Any JSON is sent with the request without any processing.
-        * **application/xml** – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
+        * **application/x-www-form-urlencoded**: Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
+        * **application/json**: Use JSON to transmit data between the Kore.ai servers and your AI Agent’s web application. Any JSON is sent with the request without any processing.
+        * **application/xml**: For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     
     5. In the **Test Request** tab, click **Test** to optionally send your API request URL using the specified Auth type, HTTP headers, and body parameters, if defined. The response is displayed in the text area. Click **Save as Sample Response** to save the test response as the sample response for this node.
     6. Click **Save** to save the request for the service node and close the **Define Request for &lt; _Service Node Name_ >** dialog.
 
 6. In the **Sample Response** section, optionally click **Add Sample Response** to display the **Add Sample Response** dialog that you can use to manually enter or paste a sample response.
 7. Optionally, in the **Add Sample Response** drop-down list, you can select:
-    1. **JSON** – A list of JSON key/value pairs available in the request URL response used in other nodes as variables.
-    2. **RAW** – A list of key/value pairs that are used in other nodes as variables.
+    1. **JSON**: A list of JSON key/value pairs available in the request URL response used in other nodes as variables.
+    2. **RAW**: A list of key/value pairs that are used in other nodes as variables.
 
 8. In the **Instance Properties** section under **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls. Also, decide how the bot can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:
     * **Timeout(Seconds)**: Select the maximum wait time from the drop-down list. The timeout range can be any value between _1 Second_ to _60 Seconds_. The default value is **20 Seconds**.
@@ -660,15 +660,15 @@ Configure when to expire sending alerts to the users from one of the following o
 
 Define the expected behavior of this alert if an upgraded version of the underlying alert task (the published alert that you have selected at the beginning) is published.
 
-1. **Remove Existing Instances –** All existing subscriptions of this smart alert are removed and users will no longer receive notifications. Users are auto-subscribed to the upgraded alert task only when they execute the dialog and reach the service node in the dialog journey.
-2. **Allow Users To Manually Upgrade Subscription –** Users will receive an upgrade notification on the selected channel which is a link that guides them through to upgrade their auto-subscription. If the upgrade is successful, the user will receive a success notification.
+1. **Remove Existing Instances**: All existing subscriptions of this smart alert are removed and users will no longer receive notifications. Users are auto-subscribed to the upgraded alert task only when they execute the dialog and reach the service node in the dialog journey.
+2. **Allow Users To Manually Upgrade Subscription**: Users will receive an upgrade notification on the selected channel which is a link that guides them through to upgrade their auto-subscription. If the upgrade is successful, the user will receive a success notification.
 
 
 ### Define a Data Service
 
 1. When you select **Data Service** in the **Service Type**, the **Type** setting provides two options:
-    1. Table – choose this option to perform CRUD operations on the data table.
-    2. View – choose this option to fetch data from a table view.
+    1. Table: choose this option to perform CRUD operations on the data table.
+    2. View: choose this option to fetch data from a table view.
 
         !!! Note
         
