@@ -97,62 +97,62 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
     "numResults": 10,
     "data": [
         {
-            "sessionId": "68db745779cb8cebd651b8e3",
+            "sessionId": "68db745779cb8cebd651xxxx",
             "channel": "Web/Mobile Client",
             "sessionStartTime": "2025-09-30T11:40:31",
             "sessionEndTime": "2025-09-30T11:40:42",
-            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a07899",
-            "userId": "u-ae9c9170-7a27-5cf5-89ab-e345d9e715be",
-            "channelSpecificUserId": "uat02dec@yopmail.com",
-            "orgId": "o-5a0da1e4-2df3-5cec-9ee4-af0b2efd3c4f",
+            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a0xxxx",
+            "userId": "u-ae9c9170-7a27-5cf5-89ab-e345d9e7xxxx",
+            "channelSpecificUserId": "john.doe@example.com",
+            "orgId": "o-5a0da1e4-2df3-5cec-9ee4-af0b2efdxxxx",
             "smartStatus": "CLOSED AT BOT",
             "reason": "",
             "disconnectingEvent": "",
             "errorDetails": "",
             "finalStatus": "BotResolved",
             "automationBotIDs": [
-                "st-e5c6ae6b-c388-5acd-93b7-bada87a7363f"
+                "st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx"
             ]
         },
         {
-            "sessionId": "68db74b379cb8cebd651bbd8",
+            "sessionId": "68db74b379cb8cebd651xxxx",
             "channel": "Web/Mobile Client",
             "sessionStartTime": "2025-09-30T11:42:03",
             "sessionEndTime": "2025-09-30T11:42:16",
-            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a07899",
-            "userId": "u-ae9c9170-7a27-5cf5-89ab-e345d9e715be",
-            "channelSpecificUserId": "uat02dec@yopmail.com",
-            "orgId": "o-5a0da1e4-2df3-5cec-9ee4-af0b2efd3c4f",
+            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a0xxxx",
+            "userId": "u-ae9c9170-7a27-5cf5-89ab-e345d9e7xxxx",
+            "channelSpecificUserId": "jane.doe@example.com",
+            "orgId": "o-5a0da1e4-2df3-5cec-9ee4-af0b2efdxxxx",
             "smartStatus": "CLOSED AT BOT",
             "reason": "",
             "disconnectingEvent": "",
             "errorDetails": "",
             "finalStatus": "BotResolved",
             "automationBotIDs": [
-                "st-e5c6ae6b-c388-5acd-93b7-bada87a7363f"
+                "st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx"
             ]
         },
         {
-            "sessionId": "68db74e179cb8cebd651c010",
+            "sessionId": "68db74e179cb8cebd651xxxx",
             "channel": "Web/Mobile Client",
             "sessionStartTime": "2025-09-30T11:42:49",
             "sessionEndTime": "2025-09-30T11:42:56",
-            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a07899",
-            "userId": "u-ae9c9170-7a27-5cf5-89ab-e345d9e715be",
-            "channelSpecificUserId": "uat02dec@yopmail.com",
-            "orgId": "o-5a0da1e4-2df3-5cec-9ee4-af0b2efd3c4f",
+            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a0xxxx",
+            "userId": "u-ae9c9170-7a27-5cf5-89ab-e345d9e7xxxx",
+            "channelSpecificUserId": "john.doe@example.com",
+            "orgId": "o-5a0da1e4-2df3-5cec-9ee4-af0b2efdxxxx",
             "smartStatus": "CLOSED AT BOT",
             "reason": "",
             "disconnectingEvent": "",
             "errorDetails": "",
             "finalStatus": "BotResolved",
             "automationBotIDs": [
-                "st-e5c6ae6b-c388-5acd-93b7-bada87a7363f"
+                "st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx"
             ]
         },
         {
-            "conversationId": "c-b48e690-7d7c-4e72-9855-a669d6883031",
-            "sessionId": "68db819479cb8cebd651cc67",
+            "conversationId": "c-b48e690-7d7c-4e72-9855-a669d688xxxx",
+            "sessionId": "68db819479cb8cebd651xxxx",
             "channel": "Voice",
             "isVoicemail": "NO",
             "Direction": "Inbound",
@@ -161,7 +161,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
             "reason": "Requires Supervisor Attention",
             "disconnectingEvent": "Agent Hangup",
             "errorDetails": "",
-            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a07899",
+            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a0xxxx",
             "dispositions": [
                 "Requires Supervisor Attention"
             ],
@@ -172,12 +172,12 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                 "caller": "+13213xxxxx",
                 "callee": "+13343xxxxx",
                 "callerHost": "54.172.60.2",
-                "userId": "u-4245d01e-6124-587a-85b2-939fe3cf27ab",
+                "userId": "u-4245d01e-6124-587a-85b2-939fe3cfxxxx",
                 "dialedNumber": "+13343xxxxx",
                 "agentTransferConfig": {
                     "skillsIds": [
-                        "6834045b2e9b90fa31c8bee7",
-                        "6834045b2e9b90fa31c8bee7"
+                        "6834045b2e9b90fa31c8xxxx",
+                        "6834045b2e9b90fa31c8xxxx"
                     ],
                     "overrideAgents": false,
                     "overrideValues": [],
@@ -186,11 +186,11 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                             "isEnabled": false
                         }
                     },
-                    "automationBotId": "st-e5c6ae6b-c388-5acd-93b7-bada87a7363f",
+                    "automationBotId": "st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx",
                     "lastIntentName": "Pay Bill",
                     "lastIntentuserInput": "Can you please pay my bill?",
                     "dialog_tone": [],
-                    "accountId": "674daf4bc9d17f4dc07034a4"
+                    "accountId": "674daf4bc9d17f4dc070xxxx"
                 },
                 "workinghours": {
                     "workdays": "mon,tue,wed,thu,fri",
@@ -204,16 +204,16 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                 "activationStatus": "active",
                 "firstName": "",
                 "lastName": "",
-                "orgId": "o-2b41857b-a1cb-5862-8faf-e3d99c3a0ff4",
-                "_id": "u-4245d01e-6124-587a-85b2-939fe3cf27ab",
-                "accountId": "60625df27092898e35d9cee5",
+                "orgId": "o-2b41857b-a1cb-5862-8faf-e3d99c3axxxx",
+                "_id": "u-4245d01e-6124-587a-85b2-939fe3cfxxxx",
+                "accountId": "60625df27092898e35d9xxxx",
                 "identities": [
                     {
-                        "val": "cs-259844d3-7827-5f33-ae7c-9d790e6d7548/9884fdd7-8546-4db8-bb66-5a7fef188120",
+                        "val": "cs-259844d3-7827-5f33-ae7c-9d790e6d7548/9884fdd7-8546-4db8-bb66-5a7fef18xxxx",
                         "type": "mapped"
                     },
                     {
-                        "val": "674daf4bc9d17f4dc07034a4/korevg/9884fdd7-8546-4db8-bb66-5a7fef188120",
+                        "val": "674daf4bc9d17f4dc07034a4/korevg/9884fdd7-8546-4db8-bb66-5a7fef18xxxx",
                         "type": "mapped"
                     }
                 ],
@@ -223,17 +223,17 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
             },
             "sessionStartTime": "2025-09-30T12:37:00",
             "sessionEndTime": "2025-09-30T12:38:06",
-            "channelSpecificUserId": "674daf4bc9d17f4dc07034a4/korevg/9884fdd7-8546-4db8-bb66-5a7fef188120",
-            "userId": "u-4245d01e-6124-587a-85b2-939fe3cf27ab",
+            "channelSpecificUserId": "674daf4bc9d17f4dc070xxxx/korevg/9884fdd7-8546-4db8-bb66-5a7fef18xxxx",
+            "userId": "u-4245d01e-6124-587a-85b2-939fe3cfxxxx",
             "destinations": [
                 {
                     "destinationType": "QueueEntry",
-                    "queueId": "qu-7a58cc5-0599-4609-817c-873d83841576",
+                    "queueId": "qu-7a58cc5-0599-4609-817c-873d8384xxxx",
                     "queueName": "Default Queue",
                     "CallbackOpted": false,
                     "EnterTime": "2025-09-30T12:37:11",
                     "respondingAgent": {
-                        "agentId": "u-e3f58196-0f28-5419-9601-dc136e8dd405",
+                        "agentId": "u-e3f58196-0f28-5419-9601-dc136e8dxxxx",
                         "agentNotes": [
                             "The customer requested to pay their bill. The bot acknowledged the request and informed the customer that an agent would be required to assist with the bill payment. The bot asked the customer to hold while connecting to an available agent. The agent then joined the conversation and greeted the customer."
                         ],
@@ -254,20 +254,20 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                             }
                         ],
                         "JoinedUsers": [],
-                        "email": "agent5user26may@example.com",
-                        "name": "agent5 user5",
+                        "email": "john.doe@example.com",
+                        "name": "John Doe",
                         "acceptedTime": "2025-09-30T12:37:20",
                         "assignedAt": "2025-09-30T12:37:16"
                     }
                 }
             ],
             "automationBotIDs": [
-                "st-e5c6ae6b-c388-5acd-93b7-bada87a7363f"
+                "st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx"
             ]
         },
         {
-            "conversationId": "c-c880eb2-0a78-416e-a5b6-b210d033db55",
-            "sessionId": "68db79e679cb8cebd651c6c4",
+            "conversationId": "c-c880eb2-0a78-416e-a5b6-b210d033xxxx",
+            "sessionId": "68db79e679cb8cebd651xxxx",
             "channel": "Voice",
             "isVoicemail": "NO",
             "Direction": "Inbound",
@@ -276,7 +276,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
             "reason": "Requires Supervisor Attention",
             "disconnectingEvent": "Bot Hangup",
             "errorDetails": "",
-            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a07899",
+            "botId": "st-1d7611fa-908a-5f0c-8871-f7ea97a0xxxx",
             "dispositions": [
                 "Requires Supervisor Attention"
             ],
@@ -287,12 +287,12 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                 "caller": "+13213xxxxx",
                 "callee": "+133434xxxxx",
                 "callerHost": "54.xxx.xx.1",
-                "userId": "u-c1ca58fb-2208-52f8-9f9c-d542316e8e78",
+                "userId": "u-c1ca58fb-2208-52f8-9f9c-d542316exxxx",
                 "dialedNumber": "+133434xxxxx",
                 "agentTransferConfig": {
                     "skillsIds": [
-                        "6834045b2e9b90fa31c8bee7",
-                        "6834045b2e9b90fa31c8bee7"
+                        "6834045b2e9b90fa31c8xxxx",
+                        "6834045b2e9b90fa31c8xxxx"
                     ],
                     "overrideAgents": false,
                     "overrideValues": [],
@@ -301,11 +301,11 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                             "isEnabled": false
                         }
                     },
-                    "automationBotId": "st-e5c6ae6b-c388-5acd-93b7-bada87a7363f",
+                    "automationBotId": "st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx",
                     "lastIntentName": "Pay Bill",
                     "lastIntentuserInput": "Can you please pay my bill?",
                     "dialog_tone": [],
-                    "accountId": "674daf4bc9d17f4dc07034a4"
+                    "accountId": "674daf4bc9d17f4dc070xxxx"
                 },
                 "workinghours": {
                     "workdays": "mon,tue,wed,thu,fri",
@@ -319,16 +319,16 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                 "activationStatus": "active",
                 "firstName": "",
                 "lastName": "",
-                "orgId": "o-2b41857b-a1cb-5862-8faf-e3d99c3a0ff4",
-                "_id": "u-c1ca58fb-2208-52f8-9f9c-d542316e8e78",
-                "accountId": "60625df27092898e35d9cee5",
+                "orgId": "o-2b41857b-a1cb-5862-8faf-e3d99c3axxxx",
+                "_id": "u-c1ca58fb-2208-52f8-9f9c-d542316exxxx",
+                "accountId": "60625df27092898e35d9xxxx",
                 "identities": [
                     {
-                        "val": "cs-259844d3-7827-5f33-ae7c-9d790e6d7548/c246a41e-91c1-418f-a4c3-a5d4ad599f43",
+                        "val": "cs-259844d3-7827-5f33-ae7c-9d790e6dxxxx/c246a41e-91c1-418f-a4c3-a5d4ad59xxxx",
                         "type": "mapped"
                     },
                     {
-                        "val": "674daf4bc9d17f4dc07034a4/korevg/c246a41e-91c1-418f-a4c3-a5d4ad599f43",
+                        "val": "674daf4bc9d17f4dc070xxxx/korevg/c246a41e-91c1-418f-a4c3-a5d4ad59xxxx",
                         "type": "mapped"
                     }
                 ],
@@ -338,19 +338,19 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
             },
             "sessionStartTime": "2025-09-30T12:04:14",
             "sessionEndTime": "2025-09-30T12:06:08",
-            "channelSpecificUserId": "674daf4bc9d17f4dc07034a4/korevg/c246a41e-91c1-418f-a4c3-a5d4ad599f43",
-            "userId": "u-c1ca58fb-2208-52f8-9f9c-d542316e8e78",
+            "channelSpecificUserId": "674daf4bc9d17f4dc070xxxx/korevg/c246a41e-91c1-418f-a4c3-a5d4ad59xxxx",
+            "userId": "u-c1ca58fb-2208-52f8-9f9c-d542316exxxx",
             "destinations": [
                 {
                     "destinationType": "QueueEntry",
-                    "queueId": "qu-7a58cc5-0599-4609-817c-873d83841576",
+                    "queueId": "qu-7a58cc5-0599-4609-817c-873d8384xxxx",
                     "queueName": "Default Queue",
                     "CallbackOpted": true,
                     "CallbackOptedTime": "2025-09-30T06:34:48.810Z",
                     "userCallbackAcceptTime": "2025-09-30T06:35:00.589Z",
                     "EnterTime": "2025-09-30T12:04:23",
                     "respondingAgent": {
-                        "agentId": "u-e3f58196-0f28-5419-9601-dc136e8dd405",
+                        "agentId": "u-e3f58196-0f28-5419-9601-dc136e8dxxxx",
                         "agentNotes": [
                             "The customer requested to pay their bill. The bot acknowledged the request and informed the customer that an agent would be required to assist with the bill payment process. The customer agreed to hold, and the bot connected them to an available agent. The agent then took over the conversation."
                         ],
@@ -364,27 +364,27 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                         "afterCallWorkEndTime": "2025-09-30T12:06:13",
                         "ConsultingAgents": [
                             {
-                                "name": "+919550159731",
+                                "name": "Jane Doe",
                                 "acceptedTime": "2025-09-30T12:05:45",
                                 "assignedAt": "2025-09-30T12:05:36",
                                 "consultingEndTime": "2025-09-30T12:05:58"
                             }
                         ],
                         "JoinedUsers": [],
-                        "email": "agent5user26may@example.com",
-                        "name": "agent5 user5",
+                        "email": "john.doe@example.com",
+                        "name": "John Doe",
                         "acceptedTime": "2025-09-30T12:05:00",
                         "assignedAt": "2025-09-30T12:04:48"
                     }
                 }
             ],
             "automationBotIDs": [
-                "st-e5c6ae6b-c388-5acd-93b7-bada87a7363f"
+                "st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx"
             ]
         },
 {
-            "conversationId": "c-252425a-903a-469e-b16d-eee318e3d736",
-            "sessionId": "68dcfba48d99cc7cd125be74",
+            "conversationId": "c-252425a-903a-469e-b16d-eee318e3xxxx",
+            "sessionId": "68dcfba48d99cc7cd125xxxx",
             "channel": "Web/Mobile Client",
             "isVoicemail": "NO",
             "Direction": "Inbound",
@@ -393,17 +393,17 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
             "smartStatus": "CLOSED",
             "reason": "",
             "disconnectingEvent": "Agent Closed",
-            "botId": "st-df029793-114e-55ab-9d80-8777af8abf68",
+            "botId": "st-df029793-114e-55ab-9d80-8777af8axxxx",
             "dispositions": [],
             "dispositionRemarks": [],
             "metaInfo": {
-                "firstName": "Jimmy",
-                "lastName": "Conroy",
-                "email": "Ethan13@example.com",
+                "firstName": "John",
+                "lastName": "Doe",
+                "email": "john.doe@example.com",
                 "phoneNumber": "150551xxxxx",
                 "identities": [
                     {
-                        "val": "cs-ddee2921-797d-5751-8786-bf060407f5a9/22f2681a-23d9-420a-9852-5bdab917afd61f1ce2a8-b737-48ee-89b3-bfeeacb32716",
+                        "val": "cs-ddee2921-797d-5751-8786-bf060407f5a9/22f2681a-23d9-420a-9852-5bdab917afd61f1ce2a8-b737-48ee-89b3-bfeeacb3xxxx",
                         "type": "mapped"
                     }
                 ],
@@ -412,52 +412,52 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     "overrideValues": [],
                     "assistEvents": {
                         "startEvent": {
-                            "botId": "st-df029793-114e-55ab-9d80-8777af8abf68",
+                            "botId": "st-df029793-114e-55ab-9d80-8777af8axxxx",
                             "isEnabled": false
                         }
                     },
-                    "automationBotId": "st-df029793-114e-55ab-9d80-8777af8abf68",
+                    "automationBotId": "st-df029793-114e-55ab-9d80-8777af8axxxx",
                     "lastIntentName": "agent transfer",
                     "dialog_tone": []
                 },
-                "ipAddress": "115.114.88.222",
+                "ipAddress": "123.xxx.xx.xxx",
                 "hostDomain": "https://eu-platform.kore.ai",
                 "os": "Windows"
             },
             "customerinfo": {
-                "CustomerPhone": "15055150310",
+                "CustomerPhone": "1234567890",
                 "CenterPhone": "",
-                "CustomerFirstName": "Jimmy",
-                "CustomerLastName": "Conroy",
-                "CustomerEmail": "Ethan13@example.com"
+                "CustomerFirstName": "Jane",
+                "CustomerLastName": "Doe",
+                "CustomerEmail": "jane.doe@example.com"
             },
             "sessionStartTime": "2025-10-01T15:30:04",
             "sessionEndTime": "2025-10-01T15:31:01",
-            "channelSpecificUserId": "cs-ddee2921-797d-5751-8786-bf060407f5a9/22f2681a-23d9-420a-9852-5bdab917afd61f1ce2a8-b737-48ee-89b3-bfeeacb32716",
-            "userId": "u-fb8994f9-3a52-58ed-8f73-81204e78c40f",
+            "channelSpecificUserId": "cs-ddee2921-797d-5751-8786-bf060407f5a9/22f2681a-23d9-420a-9852-5bdab917afd61f1ce2a8-b737-48ee-89b3-bfeeacb3xxxx",
+            "userId": "u-fb8994f9-3a52-58ed-8f73-81204e7xxxx",
             "destinations": [
                 {
                     "destinationType": "QueueEntry",
-                    "queueId": "qu-577416d-3745-40e7-904c-85ba1a043491",
+                    "queueId": "qu-577416d-3745-40e7-904c-85ba1a04xxxx",
                     "queueName": "Default Queue",
                     "CallbackOpted": false,
                     "EnterTime": "2025-10-01T15:30:23",
                     "nonRespondingAgents": [
                         {
-                            "agentId": "u-3ea001b4-664a-58b6-8108-b8bca375c166",
+                            "agentId": "u-3ea001b4-664a-58b6-8108-b8bca375xxxx",
                             "agentNotes": [
                                 "The customer requested to connect with an agent. The bot acknowledged the request and initiated the transfer process, asking the customer to hold."
                             ],
                             "destinationType": "AgentSegment",
-                            "email": "tharun.y@example.com",
-                            "name": "Tharun Europe",
+                            "email": "john.doe@example.com",
+                            "name": "John Doe",
                             "assignedAt": "2025-10-01T15:30:35",
                             "nonResponseEvent": "Supervisor Reassigned"
                         }
                     ]
                 },
                 {
-                    "agentId": "u-3ea001b4-664a-58b6-8108-b8bca375c166",
+                    "agentId": "u-3ea001b4-664a-58b6-8108-b8bca375xxxx",
                     "agentNotes": [
                         "The customer requested to connect with an agent. The bot acknowledged the request and initiated the transfer process, asking the customer to hold."
                     ],
@@ -469,8 +469,8 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     "afterCallWorkEndTime": "2025-10-01T15:31:32",
                     "ConsultingAgents": [],
                     "JoinedUsers": [],
-                    "email": "tharun.y@example.com",
-                    "name": "Tharun Europe",
+                    "email": "jane.doe@example.com",
+                    "name": "Jane Doe",
                     "acceptedTime": "2025-10-01T15:30:45",
                     "assignedAt": "2025-10-01T15:30:42"
                 }
@@ -493,7 +493,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | sessionEndTime | YYYY-MM-DDTHH SS | End time of the session. | 2023-01-10 2:25:54 |
 | botId | type-prefixed-guid | Identifier of the bot involved. | st-ae8470ab-8ecb-51fb-8e13-c87dc66fxxxx |
 | userId | type-prefixed-guid | SmartAssist’s own generated user ID. | u-8413fd99-4ded-5f6d-8c1a-176dc66xxxx |
-| channelSpecificUserId | no known format | User ID passed by the channel. | uat02dec@example.com |
+| channelSpecificUserId | no known format | User ID passed by the channel. | jane.doe@example.com |
 | orgId | type-prefixed-guid | The organization ID. | o-5a0da1e4-2df3-5cec-9ee4-af0b2efd3c4f |
 | smartStatus | String | The live status of the session. | CLOSED |
 | Reason | character string | The reason for the status. | NO AGENTS AVAILABLE |
@@ -506,9 +506,9 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | dispositions | array of strings | Disposition assigned to the conversation. | [ "Requires Supervisor Attention" ] |
 | dispositionRemarks | array of strings | Remarks or notes related to the disposition from the agent. | [ "CUSTOMER needs help with Products and Sales. AGENT will connect her with an agent." ] |
 | metaInfo | object | Contains custom information, set by automation. | — |
-| metaInfo.caller | string | Phone number of the caller. | +13213643492 |
-| metaInfo.callee | string | Phone number of the callee. | +13343445731 |
-| metaInfo.callerHost | string | IP address of the caller. | 54.172.60.2 |
+| metaInfo.caller | string | Phone number of the caller. | +132136xxxxx |
+| metaInfo.callee | string | Phone number of the callee. | +133434xxxxx |
+| metaInfo.callerHost | string | IP address of the caller. | 54.xxx.xx.2 |
 | metaInfo.userId | string | Unique identifier of the user. | u-4245d01e-6124-587a-85b2-939fe3cf27ab |
 | metaInfo.dialedNumber | string | Number dialed by the caller. | +13343445731 |
 | metaInfo.agentTransferConfig | object | Contains configuration for agent transfer including skills, bot, and last intent. | — |
@@ -522,7 +522,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | metaInfo.agentTransferConfig.lastIntentuserInput | string | Input posted by the user. | Can you please pay my bill? |
 | metaInfo.agentTransferConfig.dialog_tone | array | Dialog tone settings. | — |
 | metaInfo.agentTransferConfig.accountId | string | Agent account ID for transfer configuration. | 674daf4bc9d17f4dc07034a4 |
-| metaInfo.ipAddress | String | IP address from which the user accessed the session. | 103.172.203.180 |
+| metaInfo.ipAddress | String | IP address from which the user accessed the session. | 103.xxx.xxx.xxx |
 | metaInfo.hostDomain | String | Domain of the platform instance handling the interaction. | https://eu-platform.kore.ai |
 | metaInfo.os | String | Operating system of the user’s device. | Windows |
 | metaInfo.customerinfo | Object | Contains customer details captured during the session. | — |
@@ -530,7 +530,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | metaInfo.customerinfo.CenterPhone | String | Contact number of the service center. | "" |
 | metaInfo.customerinfo.CustomerFirstName | String | Customer’s first name. | Jimmy |
 | metaInfo.customerinfo.CustomerLastName | String | Customer’s last name. | Conroy |
-| metaInfo.customerinfo.CustomerEmail | String | Customer’s email address. | Ethan13@example.com |
+| metaInfo.customerinfo.CustomerEmail | String | Customer’s email address. | jane.doe@example.com |
 | metaInfo.workinghours | object | Defines the agent’s working days and hours. | — |
 | metaInfo.workinghours.workdays | String | The working days of the agent. | mon,tue,wed,thu,fri |
 | metaInfo.workinghours.workstart | String | The time when the agent begins accepting calls. | 8:00 AM |
@@ -569,22 +569,22 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | destinations.respondingAgent.afterCallWorkEndTime | YYYY-MM-DDTHH SS | Time when this agent completed post-call work. | 2023-01-10 2:25:54 |
 | destinations.respondingAgent.ConsultingAgents | array of objects | Contains details of internal/external agents to whom the call was transferred. | — |
 | destinations.respondingAgent.ConsultingAgents.isMerged | Boolean | Indicates whether the agent’s record is merged with another. | True |
-| destinations.respondingAgent.ConsultingAgents.name | string | Name or phone number of the external agent. | +919550159731 |
+| destinations.respondingAgent.ConsultingAgents.name | string | Name or phone number of the external agent. | +919550xxxxxx |
 | destinations.respondingAgent.ConsultingAgents.acceptedTime | String (ISO 8601 datetime) | Timestamp when external agent accepted the call. | 2025-09-30T12:05:45 |
 | destinations.respondingAgent.ConsultingAgents.assignedAt | String (ISO 8601 datetime) | Timestamp when the call was assigned to the external agent. | 2025-09-30T12:05:36 |
 | destinations.respondingAgent.ConsultingAgents.consultingEndTime | String (ISO 8601 datetime) | Timestamp when the call ended. | 2025-09-30T12:05:58 |
 | destinations.respondingAgent.JoinedUsers | array | Users who joined the call. | — |
-| destinations.respondingAgent.email | string | Agent’s email address. | jared.smith@example.com |
-| destinations.respondingAgent.name | character string | Agent’s name. | Diarmuid O’Scannlain |
+| destinations.respondingAgent.email | string | Agent’s email address. | jane.doe@example.com |
+| destinations.respondingAgent.name | character string | Agent’s name. | jane doe |
 | destinations.respondingAgent.assignedAt | YYYY-MM-DDTHH SS | Time at which this contact was assigned to this Agent. | 2023-01-10 2:25:54 |
 | destinations.respondingAgent.acceptedTime | YYYY-MM-DDTHH SS | Time at which this Agent accepted the contact. | 2023-01-10 2:25:54 |
-| destinations.nonRespondingAgents | Array of objects | Details of agents assigned but did not respond. | — |
+| destinations.nonRespondingAgents | Array of objects | Details of agents assigned but didn't respond. | — |
 | destinations.nonRespondingAgents.agentId | String | Unique identifier of non-responding agent. | u-3ea001b4-664a-58b6-8108-b8bca375c166 |
 | destinations.nonRespondingAgents.agentNotes | Array of Strings | Notes or remarks for the interaction. | The customer initiated a conversation with the bot for various requests, including connecting to an agent. |
 | destinations.nonRespondingAgents.destinationType | String | Segment type of the interaction. | AgentSegment |
-| destinations.nonRespondingAgents.email | String | Email address of the agent. | tharun@example.com |
-| destinations.nonRespondingAgents.name | String | Full name of the assigned agent. | Tharun Europe |
+| destinations.nonRespondingAgents.email | String | Email address of the agent. | jane.doe@example.com |
+| destinations.nonRespondingAgents.name | String | Full name of the assigned agent. | Jane doe |
 | destinations.nonRespondingAgents.assignedAt | String (ISO 8601 datetime) | Timestamp when the agent was assigned. | 2025-10-01T13:08:55 |
-| destinations.nonRespondingAgents.nonResponseEvent | String | Reason the agent did not respond. | Ignored |
+| destinations.nonRespondingAgents.nonResponseEvent | String | Reason the agent didn't respond. | Ignored |
 | userleveltags | array of tag objects | All user-level tags associated with this session. | {"name": "accountnum","value": "121413243141234132"} |
 | sessionleveltags | array of tag objects | All session-level tags associated with this session. | {"name": "audioCodesCallDisconnect","value": "1"} |
