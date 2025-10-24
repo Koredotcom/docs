@@ -27,7 +27,6 @@ To complete the following procedure, you must have already defined a task, such 
 6. In the **Template** drop-down list, select **Weather Info**.
 7. Click **Edit Template**. The **Table Configuration** dialog is displayed.
 8. Click **Add Column**. The **Column Configuration** dialog is displayed as shown in the following illustration.  
-
 <img src="../images/weather-info-report-coloumn configuration.png" alt="Column Configuration" title="Column Configuration" style="border:1px solid gray; zoom:70%;">
 
 9. In the **Column Name** field, enter the first column title, for example, _Get 3 Day Forecast_.
@@ -45,8 +44,7 @@ To complete the following procedure, you must have already defined a task, such 
 14. In the **Display it as HTML** section, select **Yes** if the column value contains HTML content.
 15. In the **Is this column Sortable** section, select Yes if the end-user should be able to sort the column.
 16. Click **Done**. The **Table Configuration** dialog is displayed with the new column added as shown in the following illustration.  
- 
-<img src="../images/weather-info-report-table_configuration.png" alt="Table Configuration" title="Table Configuration" style="border:1px solid gray; zoom:70%;">
+<img src="../defining-reports/images/weather-info-report-table_configuration.png" alt="Table Configuration" title="Table Configuration" style="border:1px solid gray; zoom:70%;">
 
 17. Repeat Steps 8 – 16 for each additional column in the report, click **Save** to save the column configurations, and then click **Close**.
 18. In the **Report Template Definition** section, click **Save** to save the weather info report
