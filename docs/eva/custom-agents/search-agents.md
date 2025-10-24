@@ -4,7 +4,7 @@ Search agents combine retrieval and generation techniques to provide accurate an
 
 Users can connect SearchAI applications or Amazon Q Indices in Search Agents with a simple description. **Search** AI allows you to configure and index content from various knowledge bases, files, and websites in the application, which is then used to dynamically provide answers to user queries. Amazon Q indexes enterprise data in your AWS cloud, using 90+ connectors for AWS and non-AWS systems. This provides a comprehensive search across your organization's knowledge base while maintaining data sovereignty.
 
-With Search AI, configure the application to index all relevant information from various sources, such as the company website, documentation sites, product guides, and FAQ pages. With Amazon Q, you can index the data in your own AWS cloud. Once the content source is configured, create a **RAG Agent** that can interact with your chosen search solution to retrieve and generate accurate, up-to-date information. This agent will respond to user queries that match with description or purpose given during agent creation. For use cases when a search index should act as the default knowledge repository (without a given description for intent), please connect it within [Enterprise Knowledge](https://docs.google.com/document/u/0/d/1CQ5sn2honhl1BXIDkwSxMtGqa8HiwsEtaYIQv9OZIcA/edit).
+With Search AI, configure the application to index all relevant information from various sources, such as the company website, documentation sites, product guides, and FAQ pages. With Amazon Q, you can index the data in your own AWS cloud. Once the content source is configured, create a **RAG Agent** that can interact with your chosen search solution to retrieve and generate accurate, up-to-date information. This agent will respond to user queries that match with description or purpose given during agent creation. For use cases when a search index should act as the default knowledge repository (without a given description for intent), please connect it within Enterprise Knowledge.
 
 
 ### Prerequisites
@@ -15,7 +15,7 @@ Before creating a RAG Agent, ensure that your chosen search solution is configur
 
 * [Create a search AI](https://docs.kore.ai/searchassist/getting-started/build-and-publish-your-first-searchassist-app/) application.
 * [Configure content sources](https://docs.kore.ai/searchassist/manage-content-sources/content-overview/) in the application.
-* Fine-tune the application [search settings](https://docs.kore.ai/xo/searchai/chunk-browser/) to generate appropriate responses.
+* Fine-tune the application search settings to generate appropriate responses.
 * [Enable Answers](https://docs.kore.ai/searchassist/concepts/personalizing-results/about-answers/).
 * Train the application.
 * Enable the [Client Channel for communication](https://docs.kore.ai/searchassist/administration/web-sdk-integration/#Step_1_Configure_Channel_and_credentials). Ensure that the appropriate API scope is enabled for the application.
@@ -53,7 +53,7 @@ In the **Search Index Options**, you can choose between:
 
 #### Option 1: Search AI
 
-If you select **Search AI**, provide the following details for integration. These details are available in the **Search AI app** on the **Credentials** page under the **Manage** tab, click **Dev Tools,** and choose the **Web/Mobile SDK** tab. Refer to[ this](https://docs.kore.ai/xo/app-settings/dev-tools/kore-ai-web-sdk/) for more details.
+If you select **Search AI**, provide the following details for integration. These details are available in the **Search AI app** on the **Credentials** page under the **Manage** tab, click **Dev Tools,** and choose the **Web/Mobile SDK** tab.
 
 * **URL**: Select your Search AI instance where the application is hosted.
 * **App ID**: Application ID of the Search AI app.
@@ -61,7 +61,7 @@ If you select **Search AI**, provide the following details for integration. Thes
 * **Client Secret ID**: A secret key generated for secure interaction.
 * **Search ID**: Unique identifier of the client generated in Search AI.
 
-You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/api-introduction/) in your AI for Service platform's App channel:
+You need to associate four API Scopes in your AI for Service platform's App channel:
 
 * Answer Generation
 * Permission Entity Management

@@ -28,8 +28,7 @@ To import an existing Bot Agent:
 ### Create a New Bot Agent
 
 You can create a new Bot agent to assist users in completing various tasks by
-utilizing the Bot created using the AI for Service Platform. [Learn
-more.](https://docs.kore.ai/xo/getting-started/building-a-virtual-assistant/)
+utilizing the Bot created using the AI for Service Platform.
 
 To create a new Bot Agent, follow these steps:
 
@@ -42,11 +41,9 @@ To create a new Bot Agent, follow these steps:
     Agent.![](images/create-agent.png)**
 
 3.  You must link your Bot built on the AI for Service Platform with **AI for Work** and
-    create a webhook channel. [Learn
-    more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).
+    create a webhook channel.
     
-    To create a webhook channel on the Bot and
-    complete the integration process, follow these steps:
+    To create a webhook channel on the Bot and complete the integration process, follow these steps:
 
     1.  Log in to the **AI for Service Platform**. Open the virtual assistant or bot you
         want to add the channels to. Navigate to **Deploy \> Channels**\> **Add
@@ -95,7 +92,7 @@ activated, follow the integration steps to complete the process:
 
      b. **Access Token**: This field is automatically populated with the necessary endpoint.
 
-     c. **Webhook URL**: Enter the URL obtained from the Bot Webhook dialog. For detailed information about webhooks, [Learn more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).![](images/add-bot.png)
+     c. **Webhook URL**: Enter the URL obtained from the Bot Webhook dialog. For detailed information about webhooks! [](images/add-bot.png)
 
      d. **Bot client ID** : Enter the client identifier retrieved from the Bot Webhook dialog.
 

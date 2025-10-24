@@ -1,6 +1,6 @@
 # AI for Work in Marketplace
 
-The [Marketplace](https://kore.ai/marketplace/) offers **AI for Work**, a central hub where users can discover, understand, and implement various AI-powered work agents.
+The Marketplace offers **AI for Work**, a central hub where users can discover, understand, and implement various AI-powered work agents.
 
 <img src="../images/Marketplace_1.png" alt="Marketplace" title="Marketplace" style="border: 0px solid gray; zoom:100%;">
 

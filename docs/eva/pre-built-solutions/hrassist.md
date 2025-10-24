@@ -4,5 +4,3 @@ HR Assist is an AI-powered customizable unified virtual assistant solution that 
 
 HR Assist can help you deliver tailored engagement at scale across all employees, enriching their experience along their journey from recruitment to retirement.  
 <img src="../images/pre-built-solutions-hr-assist.png" alt="pre-built-solutions-hr assist-hr-assist" title="pre-built-solutions-hr-assist" style="border: 1px solid gray; zoom:80%;"> 
-
-For more information, visit the [HR Assist documentation portal](https://docs.kore.ai/hrassist/). 

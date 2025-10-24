@@ -165,6 +165,4 @@ To set up the AI for Work application in your Microsoft Entra ID (formerly Azure
         * **Application (client) ID**
         * **Directory (tenant) ID**
     * Copy these values along with the client secret to configure in AI for Work.
-6. **Complete Configuration in AI for Work**:
-    * Follow the detailed steps in the official guide: [Create and Register App in Microsoft Entra ID](https://docs.kore.ai/wp-content/uploads/2025/07/Create-and-Register-InAlpha-App-in-Microsoft-Entra-ID.pdf)
-7. **Save** the configuration in AI for Work.
+6. **Save** the configuration in AI for Work.

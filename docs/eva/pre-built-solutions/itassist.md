@@ -4,5 +4,3 @@ IT Assist is an AI-powered all-in-one solution that provides a customizable virt
 
 IT Assist can help you generate fewer IT tickets by enabling employee self-service and augmenting Help Desk workflows with Generative Al-Assisted technology to resolve outstanding tickets faster.  
 <img src="../images/pre-built-solutions.png" alt="pre-built-solutions-it assist" title="pre-built-solutions-it assist" style="border: 1px solid gray; zoom:80%;"> 
-
-For more information, visit the [IT Assist documentation portal](https://docs.kore.ai/itassist/). 

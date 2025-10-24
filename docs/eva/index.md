@@ -1,6 +1,6 @@
 <!-- ---
 template: home.html
-title: Kore ai
+title: Inception AI
 ---
 
-Welcome to Kore.ai. -->
+Welcome to Inceptionai.ai. -->

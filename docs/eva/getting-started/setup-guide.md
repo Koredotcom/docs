@@ -15,7 +15,7 @@ AI for Work setup consists of the following steps:
 
 ### Step 1: Sign Up for a New AI for Work Account
 
-To sign up for a new account, contact the [Sales team](https://kore.ai/contact-us/).
+To sign up for a new account, contact your organization's administrator.
 
 ### Step 2: Configure User Enrollments, SSO, and Service Accounts
 
