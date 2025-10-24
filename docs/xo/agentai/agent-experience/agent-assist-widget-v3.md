@@ -119,7 +119,7 @@ The Assist tab features the following:
 
 * **Playbook adherence button**: If a Playbook is running, adherence to a step happens automatically when the agent’s utterance matches exactly with the Playbook step adherence utterance. If it doesn’t match, the agent can click this button to indicate a step has been completed (adhered).
 * **Send/Copy buttons**: These two buttons appear for Playbooks (if enabled) and Dialog Tasks. Click **Send** to send the exact message appearing on the widget, or click **Copy** to customize the message before sending it to the customer.
-* **Up/down arrow buttons**: These buttons appear only after the messages in the Assist tab are large enough to require a scroll bar. Click the **up** and **down** arrows to go to the first and last messages respectivly.
+* **Up/down arrow buttons**: These buttons appear only after the messages in the Assist tab are large enough to require a scroll bar. Click the **up** and **down** arrows to go to the first and last messages respectively.
 * **Resume button**: This button applies to the Playbooks and appears while switching to another playbook while one is already running.
 * **List View**: This is an entity list button. When clicked, a pop-up displays a list of all entity entries present in the conversation.
 * **Generate Summary**: This buttons lets agents generate on-demand summary up to two times per agent, per conversation.
