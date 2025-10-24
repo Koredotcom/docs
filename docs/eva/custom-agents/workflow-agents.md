@@ -79,8 +79,6 @@ steps outlined below:
         endpoint. Once the agent completes its process, Workflow posts the response
         back to the specified endpoint.
 
-    ![](images/config_workflow_Flow.png)
-
 2.  For Async Mode, enter the **POST URL** and **Access
     token**.![](images/async.png)  
     To configure async mode with the Workflow Platform, copy the **POST URL** and
@@ -91,7 +89,7 @@ steps outlined below:
 
     2.  On the **Agents** tab, click the name of the agent that you want to
         integrate and then click **Agent endpoint** in the left
-        navigation.![](images/agent_endpoint.png)
+        navigation.
 
     3.  Select the **Async push** to enable asynchronous response handling and
         click the settings icon next to the **Async push**
@@ -99,35 +97,32 @@ steps outlined below:
 
     4.  Next, paste the copied **POST URL** and **Access Token** into the
         appropriate fields on the **Sync/Async mode setup** page.  
-        ![](images/access_token.png)
 
     5.  Click **Save** to save the configuration.
 
 3.  Next, on the **Define API** page, click on the **CURL Import**
-    option.![](images/curl_import.png)
+    option.
 
 4.  The **Import URL** dialog is displayed.
-    ![](images/import_url_input.png)To get the curl, follow the
-    steps outlined below:
+    To get the curl, follow the steps outlined below:
 
     1.  Navigate to the Workflow Platform. Open the agent you want to add the
         channels to.
 
     2.  On the **Agents** tab, click the name of the agent that you want to
         integrate and then click **Agent endpoint** in the left
-        navigation.![](images/agent_endpoint.png)
+        navigation.
 
     3.  Copy the appropriate cURL to use in the platform to complete the
         integration. Use the sync cURL for sync mode and the async cURL for asyn
-        mode.![](images/curl.png)
+        mode.
 
 5.  In the **Import URL,**  paste the **cURL**  that you have fetched from the
-    Workflow Agent.![](images/import_url.png)
+    Workflow Agent.
 
 6.  Click **Import** to add the cURL
 
 7.  Click **Run** to fetch the API details.  
-    ![](images/fetch-workflow.png)
 
 8.  After fetching the API details, enter the API key value. To get the API key:
 
@@ -135,13 +130,13 @@ steps outlined below:
         that you want to integrate.
 
     2.  In the left navigation, click **API Keys**, then select **Create new
-        key**.![](images/API-Key.png)
+        key**.
 
     3.  In the popup window, click on the **Generate Key** button. Once the API
         key is generated, click **Copy and Close** to copy the key and to exit.
 
 9.  In the API key value field, paste the key that you have copied from the Workflow
-    Agent and click **Continue**.![](images/generate-key.png)
+    Agent and click **Continue**.
 
 
 10.  The API response output displays all the keys received in the response.
@@ -191,9 +186,7 @@ accessible throughout the flow and will be automatically displayed in “AI for
 Work”. This makes it easy to view and manage the data exchange between the agent
 and the connected platform.
 
-![](images/input_output.png)
-
-##  User Interaction with Sync and Async Flows
+## User Interaction with Sync and Async Flows
 
 The end-user experience varies between sync and async flows in the Workflow Agent,
 offering flexibility in response times and delivery methods.
@@ -206,13 +199,9 @@ displays the output directly within the current session. This mode is ideal for
 cases where the file processing can be completed within a short timeframe (up to
 60 seconds), allowing users to quickly retrieve answers.
 
-![](images/sync_mode.png)
-
 In **async mode**, the process accommodates more complex queries that may
 require additional processing time. Users still select an agent and enter their
 queries. However, instead of receiving immediate results, they are
 notified in a notification section once the query is processed. This approach
 makes async mode particularly suited to cases where the query might take more
 than 60 seconds to execute.
-
-![](images/async_mode.png)

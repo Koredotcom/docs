@@ -83,7 +83,6 @@ extra:
           note: >-                       
             Thanks for your feedback!
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - extra_js/feedback.js
 markdown_extensions:
@@ -834,6 +833,7 @@ nav:
       - Advanced Settings:
         - PII Settings: app-settings/advanced-settings/pii-data-masking.md
         - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
+        - System Settings: app-settings/advanced-settings/system-settings.md
       - Change Logs: app-settings/change-logs.md
       - Delete App: app-settings/delete-app.md
     - Billing & Payments:
