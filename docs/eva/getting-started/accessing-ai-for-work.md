@@ -1,9 +1,10 @@
 # Accessing AI for Work
 
-As per the [User Enrollments](../user-management/user-enrollments.md) configured by the admin, users can log in to AI for Work here: [AI for Work](https://work.kore.ai/login){:target="_blank"}
+Admins configure [user enrollments](../user-management/user-enrollments.md) to let users log in to AI for Work at [https://dev-productivity.inceptionai.app/login](https://dev-productivity.inceptionai.app/login){:target="_blank"}
 
-Admins can also enable users to log in using Google or Microsoft Office profiles. Login with [SSO](../security/sso.md) is available only after your email domain is configured for Single Sign-On.
+Admins can also let users log in using the following methods:
 
-## Supported Browsers
-Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox.
+* Use Google Workspace or Microsoft Office profiles.
+* Use organization's login after they configure [Single Sign-on](../security/sso.md).
 
+We support the latest versions of Google Chrome, Microsoft Edge, Apple Safari, and Mozilla Firefox browsers.

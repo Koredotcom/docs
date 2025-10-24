@@ -124,7 +124,7 @@ Step 1: Set Up a Trusted Token Issuer (OIDC IdP) in IAM Identity Center
 2. Go to **Settings** → **Authentication** tab.
 3. Under **Trusted token issuers**, click **Create trusted token issuer.**
 4. Configure the following:
-    * **Issuer URL**: Enter `https://work.kore.ai` (this must match the `iss` claim in JWT).
+    * **Issuer URL**: Enter `https://dev-productivity.inceptionai.app` (this must match the `iss` claim in JWT).
     * **Display name**: Provide a descriptive name for identification.
     * **User attributes**: Map the required user attributes according to your organization's needs.
 5. Save the configuration and confirm the trusted token issuer has been successfully added.
