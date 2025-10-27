@@ -27,7 +27,9 @@ This release introduces the following two new generative AI features powered by 
 * By Value Adherence Validation: Check if extracted metric values match predefined reference data and return binary adherence scores.
 
 * By Value Metric Extraction: Extract metric values from messages by users, AI agents, or humans. 
-[Learn more :octicons-arrow-right-24:](../../../xo/generative-ai-tools/genai-features-qualityai.md)
+[Learn more :octicons-arrow-right-24:](./../../generative-ai-tools/genai-features-qualityai.md)
+
+
 <hr>
 
 ## v11.18.0 September 27, 2025
