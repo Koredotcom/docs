@@ -1,6 +1,7 @@
 # Automation AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
+
 ## v11.19.0 October 25, 2025
 
 <u>Minor Release</u>  
@@ -10,6 +11,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 <font size="4">Agent Node</font>  
 
 **LLM Text Response Streaming over Web/Mobile SDK**  
+
 AI for Service now offers real-time LLM response streaming for Web/Mobile SDK chat conversations. This feature reduces latency and improves user engagement through incremental message delivery via Agent and Prompt Nodes. Users can select from existing streaming prompt templates or create custom ones. Existing voice streaming prompts remain fully compatible.
 
 **Agent Node - Default Intent Detection Settings**

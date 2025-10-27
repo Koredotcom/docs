@@ -82,8 +82,8 @@ The default App language is **English**. Follow these steps to add a new languag
   b. Under Output, choose one of the following options:  
   
   * GenAI: Rephrase Responses to transform responses into the primary language of your AI Agent using rephrasing features.  
-  * Translation Engine to translate responses into the AI Agent’s default language using a translation service.
-
+  * Translation Engine to translate responses into the AI Agent’s default language using a translation service.  
+  
   To configure the translation engine, refer to [Manage Translation Services](managing-translation-services.md).
 
 5. Select Save to apply your changes.

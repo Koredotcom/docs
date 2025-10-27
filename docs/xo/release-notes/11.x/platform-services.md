@@ -2,6 +2,33 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.19.0 October 25, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4"> Channels </font>
+
+**Multiple Files Upload Support in WebSDK**  
+
+WebSDK now enables users to upload multiple files simultaneously in a single action. Users can select up to 10 files at once, with each file limited to 25 MB. The platform returns all file URLs as an array for seamless integration with downstream workflows. The maximum file count is configurable to accommodate different organizational needs. 
+
+<font size="4"> Admin Console </font>
+
+**Integrated Admin Console Experience**  
+
+The Admin Console is now accessible directly within the AI for Service interface through a full-page modal, eliminating the need to open separate browser tabs or re-authenticate. Administrators can access all administrative functions by selecting "Admin Console" from the profile dropdown menu. The integrated experience provides an uninterrupted workflow, maintains context between administrative and primary tasks, and preserves all existing Admin Console functionality within a modern, responsive interface.
+
+
+<font size="4"> APIs </font>
+
+**Public API Response Payload Encryption**
+
+AI for Service now supports Response Payload Encryption to protect sensitive data in Public API responses. When enabled, each response is encrypted using a client-provided public key, ensuring that only the intended client can decrypt and access the data. The feature strengthens data confidentiality, maintains integrity across API communications, and provides an additional layer of enterprise-grade security.
+
+<hr>
+
 ## v11.18.0 September 27, 2025
 
 <u> Minor Release </u>
