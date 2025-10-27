@@ -363,7 +363,11 @@ A confirmation is displayed once the refresh is completed, and the updated data 
 
     The system will not immediately update changes to the data (for example, new interactions and status changes). These changes will appear after the next auto-refresh.
 
-## Transfer Conversations to a Human Agent
+## Transfer all Calls/Chats/Emails to a Human Agent
+
+Supervisors can transfer or end multiple conversations at once across all supported digital channels, including chat, email, and voice. It improves workload management by allowing bulk actions directly from the Monitor tab. By default, the option is disabled for Agents and Custom roles. Supervisors, Admins, Owners, and App Developers can access the feature when permissions are explicitly granted—role-based permissions control access.
+
+### Transfer Conversations to a Human Agent
 
 Steps to transfer all Calls/Chats/Emails in the Agent Queue:
 
@@ -412,6 +416,13 @@ Steps to transfer all Calls/Chats/Emails in the Agent Queue:
     <img src="../images/force-close.png" alt="Forece Close" title="Force Close" style="border: 1px solid gray; zoom:70%;">
 5. A confirmation pop-up is displayed. Click **Confirm**. The selected conversations are closed across their respective channels.  
     <img src="../images/confirm-close.png" alt="Confirm Close" title="Confirm Close" style="border: 1px solid gray; zoom:70%;">
+
+#### Post-Action Behavior
+
+After completing the transfer or end actions, the interface:
+
+* Exits selection mode.  
+* Updates the conversation list.  
 
 ### Check Profile
 
