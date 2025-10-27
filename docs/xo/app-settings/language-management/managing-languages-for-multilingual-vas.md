@@ -70,21 +70,19 @@ The default App language is **English**. Follow these steps to add a new languag
 2. On the Language Management page, in the ***Standard Languages*** section, click the **+ Add Language** to add languages.
 3. The Platform will display all the languages that are supported. Click **Configure** to enable a language.
 4. Once you click configure, you can set up the following language configurations:  
+<img src="../images/dgpt_language_management.png" alt="Multilingual setting" title="Multilingual setting" style="border: 1px solid gray;zoom:50%;"/>  
 
-  <img src="../images/dgpt_language_management.png" alt="Multilingual setting" title="Multilingual setting" style="border: 1px solid gray;zoom:50%;"/>  
-  
+ a.  Under Input, choose one of the following options:  
 
-  a.  Under Input, choose one of the following options:  
+   * Use original user input to process input in its original language using Dialog GPT’s multi-lingual models.  
+   * Translation Engine to translate user input into the AI Agent’s default language using a translation service.
   
-  * Use original user input to process input in its original language using Dialog GPT’s multi-lingual models.  
-  * Translation Engine to translate user input into the AI Agent’s default language using a translation service.
+ b. Under Output, choose one of the following options:  
   
-  b. Under Output, choose one of the following options:  
+   * GenAI: Rephrase Responses to transform responses into the primary language of your AI Agent using rephrasing features.  
+   * Translation Engine to translate responses into the AI Agent’s default language using a    translation service.  
   
-  * GenAI: Rephrase Responses to transform responses into the primary language of your AI Agent using rephrasing features.  
-  * Translation Engine to translate responses into the AI Agent’s default language using a translation service.  
-  
-   To configure the translation engine, refer to [Manage Translation Services](managing-translation-services.md).
+      To configure the translation engine, refer to [Manage Translation Services](managing-translation-services.md).
 
 5. Select Save to apply your changes.
 
