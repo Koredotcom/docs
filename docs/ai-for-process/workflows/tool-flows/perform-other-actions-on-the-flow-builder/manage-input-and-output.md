@@ -1,11 +1,11 @@
 # Manage Input and Output
 
-Tool flows allow you to define input and output variables, which become accessible as context objects throughout the execution of the flow.
+Workflows allow you to define input and output variables, which become accessible as context objects throughout the execution of the flow.
 
-* **Input Variables**: The input variables provide initial data to the tool flow. 
-* **Output Variables**: The output variables store and make accessible the derived values from the flow. You must define output variables to capture the results you want to return from the tool.
+* **Input Variables**: The input variables provide initial data to the workflow. 
+* **Output Variables**: The output variables store and make accessible the derived values from the workflow. You must define output variables to capture the results you want to return from the workflow.
 
-## Using Variables in the Tool Flow
+## Using Variables in the Workflow
 
 Once the input and output variables are defined, you can access these variables using the context object syntax and use them throughout the flow:
 
@@ -16,7 +16,7 @@ Once the input and output variables are defined, you can access these variables 
 
 Steps to add input variables:
 
-1. On the top of the Tool flow canvas, click the **Manage I/O** button.
+1. On the top of the  Workflow canvas, click the **Manage I/O** button.
 Alternatively, you can click the **Start** node. The **Manage Input & Output** dialog is displayed.  
 <img src="../images/adding_input_output_variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;">
 
@@ -58,7 +58,7 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
 
 Steps to add output variables:
 
-1. On the top of the canvas of the Tools page, click the **Manage I/O** button. The **Manage Input & Output** dialog is displayed.
+1. On the top of the canvas of the Workflow page, click the **Manage I/O** button. The **Manage Input & Output** dialog is displayed.
 
 2. On the **Output** tab, click the **+ Add output variable** button. The **Enter output variable** dialog is displayed.  
  <img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:50%;">

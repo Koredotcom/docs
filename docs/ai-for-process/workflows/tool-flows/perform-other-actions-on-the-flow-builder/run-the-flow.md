@@ -1,13 +1,13 @@
-# Run Tool Flows
+# Run Workflows
 
-You can run and test a flow to see how it works in real time. When you run a flow, it generates a context object and stores it temporarily at the node level, allowing you to monitor progress through the debug log.
+You can run and test a workflow to see how it works in real time. When you run a workflow, it generates a context object and stores it temporarily at the node level, allowing you to monitor progress through the debug log.
 
 The output includes key information such as the start and end times, the total time to run the flow, and any unresolved issues or errors that may have occurred during execution.
 
 
-**Steps to run the flow**:
+**Steps to run the workflow**:
 
-1. On the top right corner of the tool canvas, click the **Run flow** icon.
+1. On the top right corner of the workflow canvas, click the **Run flow** icon.
 
     <img src="./../images/run-the-flow.png" alt="Run the Flow" title="Run the Flow" style="border: 1px solid gray; zoom:80%;">
 

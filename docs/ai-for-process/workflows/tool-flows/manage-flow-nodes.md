@@ -1,8 +1,8 @@
-# Manage Nodes in Tool Flow
+# Manage Nodes in Workflow
 
-A flow consists of a sequence of nodes connected on the flow builder canvas. You can easily add nodes to the canvas, connect them, rename, rearrange, and delete them as needed.
+A flow consists of a sequence of nodes connected on the workflow builder canvas. You can easily add nodes to the canvas, connect them, rename, rearrange, and delete them as needed.
 
-The Tool Flow builder lets you visually design workflows by arranging and connecting nodes on a canvas.
+The Workflow builder lets you visually design workflows by arranging and connecting nodes on a canvas.
 
 This page covers how to:
 
@@ -16,13 +16,13 @@ This page covers how to:
 
 Every new flow begins with a **Start** node, which is automatically placed on the canvas by default. This node acts as the entry point and must be connected to at least one other node to form a valid flow.
 
-To ensure the tool functions properly, all nodes must be connected—directly or indirectly—to the Start node. If any initial nodes are not linked to the Start node, the flow may malfunction or fail to execute as expected. You can drag and drop the Start node (as well as any other nodes) anywhere on the canvas.
+To ensure the workflow functions properly, all nodes must be connected—directly or indirectly—to the Start node. If any initial nodes aren't linked to the Start node, the workflow may malfunction or fail to execute as expected. You can drag and drop the Start node (as well as any other nodes) anywhere on the canvas.
 
 You can add nodes to the canvas in three ways:
 
 1. **Drag from the bottom panel**: Scroll through available node types and drag them onto the canvas.
-2. **Use the left panel (Assets)**: Select and place preconfigured nodes directly onto the canvas from the left panel.
-3. **Use the blue plus icon (+) on a node**: Hover over the grey dot on any node (including Start) to reveal a blue plus icon (+). Click to see options:
+2. **Use the left panel (Assets)**: Select and place pre-configured nodes directly onto the canvas from the left panel.
+3. **Use the blue plus icon (+) on a node**: Hover over the grey dot on any node (including Start) to reveal a blue plus icon (+). Select to see options:
     * **Add new node** – Instantly places a new node on the canvas and connects it.
     * **Add existing node** – Allows you to select a previously added node.
 
@@ -36,7 +36,7 @@ To rename a node:
 2. Select **Rename** from the context menu.
 3. In the **Node Name** field of the configuration panel (which appears on the right), enter the new name.
 
-Use clear, descriptive names to make your flow easy to understand. For example, Rename a generic “Function Node” to something meaningful like “Validate Email Input”.
+Use clear, descriptive names to make your flow easy to understand. For example, Rename a generic Function Node to something meaningful like Validate Email Input.
 
 <img src="../images/rename_node_new.png" alt="Rename a Node" title="Rename a Node" style="border: 1px solid gray; zoom:80%;">
 
@@ -64,14 +64,14 @@ Optional layout options:
 
 ## Connect Nodes
 
-In Flow Builder, node connections determine how tasks flow from one node to another — either sequentially or through multiple parallel branches.
+In Workflow Builder, node connections determine how tasks flow from one node to another — either sequentially or through multiple parallel branches.
 
 You can create and manage connections in the following ways:
 
 * **Canvas-based (visual):** Drag and drop to connect nodes directly on the canvas.
 * **Node configuration panel:** Define success and failure paths from within the node’s property panel.
 
-Once the nodes are on the canvas, how you connect them decides how they run. Flow Builder supports two main execution types:
+Once the nodes are on the canvas, how you connect them decides how they run. Workflow Builder supports two main execution types:
 
 * **Sequential** – Tasks run one after another, in a defined order.
 * **Parallel** – Tasks run simultaneously across separate branches.
@@ -104,7 +104,7 @@ These execution patterns define how tasks run across a workflow—either one aft
 
 <li>Multiple tasks are independent and can run at the same time.</li>
 
-<li>Speed up workflows with tasks that do not rely on each other's output.</li>
+<li>Speed up workflows with tasks that don't rely on each other's output.</li>
 </ul>
    </td>
   </tr>
@@ -199,21 +199,21 @@ A sales assistant agent uses a sequential pattern to assess and score leads. Fir
 **Option 1: Drag-to-Connect**
 
 1. Hover over the **blue + icon** or **grey connector dot** on the source node.
-2. Click and **drag a line** to the destination node.
+2. Select and **drag a line** to the destination node.
 3. A connection line is drawn between the nodes, with an arrow indicating the direction of the node connection.
 
 <img src="../images/connect-nodes-new.gif" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;">
 
 **Option 2: Use the Blue + Icon**
 
-1. Hover over the existing node, click the **blue + icon,** and then choose **Add New** or **Add Existing**.
+1. Hover over the existing node, select the **blue + icon,** and then choose **Add New** or **Add Existing**.
 The selected node is added and connected in sequence.
 
 <img src="../images/blue_plus_icon.png" alt="Blue plus icon" title="Blue plus icon" style="border: 1px solid gray; zoom:80%;">
 
 **Option 3: Use the Connections Panel**
 
-1. Click on the node to open the **Configuration Panel** on the right.
+1. Select on the node to open the **Configuration Panel** on the right.
 2. Go to the **Connections** tab.
 3. Under **On Success** or **On Failure**, use the dropdown to:
     * Add a new node.
@@ -233,16 +233,16 @@ The selected node is added and connected in sequence.
 
 ### Designing Parallel Flows
 
-In a parallel flow, multiple branches run at the same time from the same parent node. Each branch can perform an independent task, allowing for faster, more efficient workflows—especially when tasks do not rely on each other.
+In a parallel flow, multiple branches run at the same time from the same parent node. Each branch can perform an independent task, allowing for faster, more efficient workflows—especially when tasks don't rely on each other.
 
-Flow Builder supports parallel execution to help you build faster and more flexible workflows—great for multi-channel actions, or when several tasks need to happen at once.
+Workflow Builder supports parallel execution to help you build faster and more flexible workflows—great for multi-channel actions, or when several tasks need to happen at once.
 
 *Example Scenario: Content Distribution Flow*
 In a marketing automation workflow, once a campaign is approved, the workflow triggers multiple parallel nodes to publish content to LinkedIn, Twitter, and Email. Each platform-specific task runs independently but starts simultaneously.
 
 **Parallel Design Patterns**
 
-Flow Builder supports several ways to structure parallel logic, depending on how your tasks are organized:
+Workflow Builder supports several ways to structure parallel logic, depending on how your tasks are organized:
 
 * **Simple Parallel**
 A single node branches out to multiple child nodes, each running independently.
@@ -257,7 +257,7 @@ A parallel branch contains its own parallel branches.
 <img src="../images/nested_parallel.png" alt="Nested parallel" title="Nested parallel" style="border: 1px solid gray; zoom:80%;">
 
 * **Conditional + Parallel**
-Combine condition nodes with parallel execution. Based on logic (e.g., if/else), different sets of parallel branches are triggered.
+Combine condition nodes with parallel execution. Based on logic (for example: if/else), different sets of parallel branches are triggered.
 *Example: If status is "new", run onboarding tasks in parallel. If "existing", skip them.*
 
 <img src="../images/conditional_parallel.png" alt="Conditional parallel" title="Conditional parallel" style="border: 1px solid gray; zoom:80%;">
@@ -271,7 +271,7 @@ You can design parallel execution using either the Canvas or the Connections Pan
 1. Hover over the existing node and click the blue + icon.
 2. Select one of the following options to add multiple nodes as parallel branches:
     1. **Add new**: Creates and connects a new node as a parallel path.
-    2. **Add existing**: Selects from already defined nodes that are not part of the current branch.
+    2. **Add existing**: Selects from already defined nodes that aren't part of the current branch.
 
 The selected node is added, and a connection line is automatically drawn between the nodes.
 
@@ -371,7 +371,7 @@ You can also manage connections from the Configuration Panel:
   <tr>
    <td>Error when connecting to a previous node
    </td>
-   <td>Backward looping is not allowed
+   <td>Backward looping isn't allowed
    </td>
    <td>Reconnect the node to a valid forward step in the flow
    </td>
@@ -379,7 +379,7 @@ You can also manage connections from the Configuration Panel:
 </table>
 
 
-## Tips for Better Flow Design
+## Tips for Better Workflow Design
 
 * Use **parallel** structures to speed up independent tasks.
 * Use **sequential** paths when steps depend on the results of prior steps.
@@ -393,7 +393,7 @@ You can also manage connections from the Configuration Panel:
 
 ## Monitoring & Logs
 
-The Flow Builder provides a detailed view to help you monitor execution and debug workflows effectively. Whether your flow runs sequentially or in parallel, logs display key information such as inputs, outputs, runtime, and token usage per node.
+The Workflow Builder provides a detailed view to help you monitor execution and debug workflows effectively. Whether your flow runs sequentially or in parallel, logs display key information such as inputs, outputs, runtime, and token usage per node.
 
 ### View Sequential Execution in Logs
 
@@ -419,7 +419,7 @@ When a flow includes parallel branches, the Debug Logs panel helps you trace eac
 **Behavior**
 
 * All branches run at the same time, but logs help you follow what happened in each path.
-* The flow waits for all parallel branches to complete before moving to the next step.
+* The workflow waits for all parallel branches to complete before moving to the next step.
 * End nodes from all branches are tracked, and their outputs are combined before passing to the next node. 
 
 
