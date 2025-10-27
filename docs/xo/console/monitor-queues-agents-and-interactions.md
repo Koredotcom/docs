@@ -164,11 +164,11 @@ Steps to change the queue for a conversation:
 
 When a call is converted to a voicemail, it can be viewed in the Monitor tab. Supervisors can view voicemails in waiting status and “Assign” to an agent or “Change Queue”.
 
-### Transfer all Calls/Chats/Emails in Agent Queue
+## Transfer all Calls/Chats/Emails in Agent Queue or to Human Agents
 
 Supervisors can transfer or end multiple conversations at once across all supported digital channels, including chat, email, and voice. It improves workload management by allowing bulk actions directly from the Monitor tab. By default, the option is disabled for Agents and Custom roles. Supervisors, Admins, Owners, and App Developers can access the feature when permissions are explicitly granted—role-based permissions control access.
 
-Steps to transfer all Calls/Chats/Emails in Agent Queue:
+Steps to transfer all Calls/Chats/Emails in the Agent Queue or to a specific agent:
 
 1. Open the **Monitor** tab.
 2. Select a queue. A panel appears with all active and waiting conversations.
@@ -178,11 +178,11 @@ Steps to transfer all Calls/Chats/Emails in Agent Queue:
     * Force Close  
         <img src="../images/transfer-options (2).png" alt="Transfer Options" title="Transfer Options" style="border: 1px solid gray; zoom:70%;">
 
-#### Transfer Conversations
+### Transfer Conversations to a Queue
 
 1. Selecting Transfer Conversations activates multi-selection mode.
-2. Select one or more conversations. An option to select all or clear the selection is available.  
-    <img src="../images/select-conversations.png" alt="Select Conversations" title="Select Conversations" style="border: 1px solid gray; zoom:70%;">
+2. Click the Queue radio button and select one or more conversations. An option to select all or clear the selection is available.  
+    <img src="../images/select-queue-option.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -190,9 +190,36 @@ Steps to transfer all Calls/Chats/Emails in Agent Queue:
 
 3. A bottom action bar appears, displaying a **"Transfer"** button.
 4. From the queue dropdown, choose a destination queue.  
-    <img src="../images/select-queue (2).png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/choose-queue.png" alt="Choose Queue" title="Choose Queue" style="border: 1px solid gray; zoom:70%;">
 5. Click **Transfer**. The selected conversations are reassigned to the chosen queue.  
-    <img src="../images/transfer.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/transfer-queue-button.png" alt="Transfer to Queue" title="Transfer to Queue" style="border: 1px solid gray; zoom:70%;">
+
+!!! note
+
+    If a conversation in the queue honors the agent wait time, it is not available for bulk transfer.
+
+### Transfer Conversations to a Human Agent
+
+1. Selecting Transfer Conversations activates multi-selection mode.
+2. Click the Agent radio button and select one or more conversations. An option to select all or clear the selection is available.  
+    <img src="../images/select-agent-option.png" alt="Select Agent" title="Select Agent" style="border: 1px solid gray; zoom:70%;">
+
+    !!! Note
+
+        At least one conversation must be selected to proceed.
+
+3. A bottom action bar appears, displaying a **"Transfer"** button.
+4. From the agent dropdown, choose an agent.  
+    <img src="../images/choose-agent.png" alt="Choose Agent" title="Choose Agent" style="border: 1px solid gray; zoom:70%;">
+5. Click **Transfer**. The selected conversations are reassigned to the chosen queue.  
+    <img src="../images/transfer-agent-button.png" alt="Transfer to Agent" title="Transfer to Agent" style="border: 1px solid gray; zoom:70%;">
+
+!!! note
+
+    * Conversations cannot be transferred when the agent is on a live call.  
+    * Conversations cannot be transferred to offline agents.  
+    * Blended agents must be configured to transfer digital and voice conversations together.  
+    * A pop-up appears when a conversation is transferred to an agent who has reached full capacity. Select Transfer to assign the conversation to the agent.
 
 #### Force Close
 
@@ -423,6 +450,7 @@ Steps to Join a conversation:
 2. A confirmation pop-up appears. Click **Confirm** to join.
 
 ### Listen and Whisper [Voice Calls]
+
 Listen and Whisper functionalities enhance supervisors’ oversight and support capabilities in real-time voice conversations.
 
 Listen: This allows supervisors to discreetly monitor live voice conversations between agents and customers. By enabling this feature, supervisors can stay informed about ongoing interactions without participating directly, ensuring they are always aware of the dialogue and can step in if necessary.
