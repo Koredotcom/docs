@@ -30,6 +30,7 @@ You can import into a bot using either individual Definition, Config, Functions 
   </tr>
 </table>
 
+
 ## Query Parameters
 
 <table>
@@ -95,6 +96,7 @@ curl -X POST \
 }
 }'
 ```
+
 ## Sample Request
 
 ```json
@@ -110,6 +112,7 @@ curl -X POST \
 ```
 
 ## Body Parameters
+
 
 <table>
   <tr>

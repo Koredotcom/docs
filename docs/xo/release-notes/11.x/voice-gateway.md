@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.19.0 October 25, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Call Recording</font>
+
+**Voice Call Recording – Failure Scenario Handling**
+
+When fetching a voice call recording, the system displays context-specific messages. If the initial fetch or subsequent retries fail, users are prompted to retry, with unlimited attempts allowed, and a 15-minute wait message for repeated failures. If the 24-hour job fails, a final message advises contacting the administrator, with no action button displayed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+
+<font size="4">Text-to-Speech (TTS)</font>
+
+**Agent Platform – Text Streaming Support for Deepgram and ElevenLabs TTS**
+
+Agent Platform now supports end-to-end streaming via the Voice Gateway for Deepgram and ElevenLabs TTS engines, delivering real-time AI agent voice responses. A new ‘TTS Streaming’ flag in the Automation Node controls this feature. When enabled, it automatically disables the Real-time Voice Interactions flag to prevent conflicts. Streaming provides low-latency audio playback, gracefully falls back to standard TTS if interrupted, maintains full backward compatibility with existing configurations, and captures streaming latency metrics for monitoring performance. [Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md#full-autonomy)
+
+<font size="4">Configuration</font>
+
+**Voice Call Recording Retention Configuration**
+
+Administrators can now manage voice call recording retention settings directly in the UI. They can choose from various pre-approved retention durations, with default settings automatically applied based on the customer type. Additionally, administrators can enable optional reminder and acknowledgment emails for recordings that are at least one month old. Upon reaching the end of its retention period, a recording is automatically deleted, and customers receive notifications. All modifications to retention settings and notification preferences are recorded in the Admin Console. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/system-settings.md#data-retention-period)
+
+<hr>
+
 ## v11.18.0 September 27, 2025
 
 <u>Minor Release</u>
