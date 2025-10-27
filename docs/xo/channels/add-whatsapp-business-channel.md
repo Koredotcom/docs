@@ -524,9 +524,9 @@ If you are opting for Temporary Authorization: Retrieve App ID & App Secret.
 
     f. Copy the **Callback URL** from the **Platform Configuration Page** and paste it into the Valid OAuth Redirect URLs of App Setting page of Meta developer page.
 
-        !!! note
+    !!! note
 
-            We recommends you verify the Callback URL using the Redirect URL Validator to ensure the accuracy of the path URL.  
+          We recommends you verify the Callback URL using the Redirect URL Validator to ensure the accuracy of the path URL.  
     
     <img src="../images/Validauth-redirecturl.png" alt="Validauth-redirecturl" title="Validauth-redirecturl" style="border: 1px solid gray; zoom:70%;">
 
