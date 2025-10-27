@@ -71,7 +71,7 @@ The default App language is **English**. Follow these steps to add a new languag
 3. The Platform will display all the languages that are supported. Click **Configure** to enable a language.
 4. Once you click configure, you can set up the following language configurations:  
 
-  <img src="../images/dgpt_language_management.png" alt="Multilingual setting" title="Multilingual setting" style="border: 1px solid gray;zoom:50%;"/>  
+<img src="../images/dgpt_language_management.png" alt="Multilingual setting" title="Multilingual setting" style="border: 1px solid gray;zoom:50%;"/>  
   
 
   a.  Under Input, choose one of the following options:  

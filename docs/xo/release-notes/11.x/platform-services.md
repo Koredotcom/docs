@@ -20,7 +20,6 @@ WebSDK now enables users to upload multiple files simultaneously in a single act
 
 The Admin Console is now accessible directly within the AI for Service interface through a full-page modal, eliminating the need to open separate browser tabs or re-authenticate. Administrators can access all administrative functions by selecting "Admin Console" from the profile dropdown menu. The integrated experience provides an uninterrupted workflow, maintains context between administrative and primary tasks, and preserves all existing Admin Console functionality within a modern, responsive interface.
 
-
 <font size="4"> APIs </font>
 
 **Public API Response Payload Encryption**
