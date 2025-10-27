@@ -33,8 +33,7 @@ Steps to create a JWT Client App from the Platform:
 
 
     * **Enforce Response Payload Encryption**: Provide the public key used by the Platform to encrypt Public API response payloads that include Token Introspection and User Information data. Use the same key to decrypt the payload. Refer [How Response Payload Encryption Works](#how-response-payload-encryption-works).    
-    
-    <img src="../images/create-a-jwt-app.png" alt="Create a new JWT App" title="Create a new JWT App" style="border: 1px solid gray; zoom:50%;">  
+     <img src="../images/create-a-jwt-app.png" alt="Create a new JWT App" title="Create a new JWT App" style="border: 1px solid gray; zoom:50%;">  
 
 
 
@@ -42,9 +41,9 @@ Steps to create a JWT Client App from the Platform:
 
 6. Select the app name from the JWT App drop-down list to see the app’s details, such as App name and its ID, client ID and its Secret. 
 
-!!! note
+    !!! note
 
-    Use the **Client ID** and **Client Secret** of the client app from above to generate a JWT token. This token must be passed as a part of each API request for authorization.
+        Use the **Client ID** and **Client Secret** of the client app from above to generate a JWT token. This token must be passed as a part of each API request for authorization.
 
 
 
