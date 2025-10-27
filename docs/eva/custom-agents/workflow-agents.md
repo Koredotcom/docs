@@ -14,34 +14,33 @@ You can create a new agent or import an existing one.
 
 To import an existing Workflow agent:
 
-1.  Click the **Import Agent** button located in the upper-right
-    corner.![](images/import-workflow.png)
+1. Click the **Import Agent** button located in the upper-right corner.
+<img src="../images/import-workflow.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-2.  Select the .ZIP file of the existing
-    agent.![](images/import-workflow-agent.png)
+1. Select the .ZIP file of the existing agent.
+<img src="../images/import-workflow-agent.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-3.  Click **Import** to complete the process. The imported agent will appear on the Workflow Agents page.
+1. Click **Import** to complete the process. The imported agent will appear on the Workflow Agents page.
 
 ## Create Workflow Agent
 
 To create a Workflow Agent, follow the steps outlined below:
 
-1.  In the **Admin Console**, click **AI Agents** from the left pane, and then select **Workflow Agents**. A list of available workflow agents will be
-    displayed.![](images/AI_agent_workflow.png)
+1. In the **Admin Console**, click **AI Agents** from the left pane, and then select **Workflow Agents**. A list of available workflow agents will be displayed.
+<img src="../images/AI_agent_workflow.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-2.  On the Workflow Agents page, click **+Create
-    Agent**.![](images/create_agent.png)
+1. On the Workflow Agents page, click **+Create Agent**.
+<img src="../images/create_agent.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-3.  The **Workflow** / **Workflow Agent creation** wizard will take you
-    through the following steps:
+1. The **Workflow** / **Workflow Agent creation** wizard will take you through the following steps:
 
-    1.   [Step 1: Define the purpose of the Agent](#details)
+    1. [Step 1: Define the purpose of the Agent](#details)
 
-    2.   [Step 2: Configure Workflow Flow](#configure)
+    2. [Step 2: Configure Workflow Flow](#configure)
 
-    3.   [Step 3: Preview the Agent configuration](#preview)
+    3. [Step 3: Preview the Agent configuration](#preview)
 
-    4.   [Step 4: Publish the Agent](#publish)
+    4. [Step 4: Publish the Agent](#publish)
 
 ### Step 1: Details and Purpose
 
@@ -55,8 +54,7 @@ For instance, if an agent called "Sales Buddy" is created to handle user
 queries, specifying its purpose helps this agent whenever a user sends a query
 related to any cross-sell or upsell product.
 
-![](images/detail_and_purpose_workflow.png)
-
+<img src="../images/detail_and_purpose_workflow.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 2: Configure Workflow Flow
 
@@ -79,31 +77,24 @@ steps outlined below:
         endpoint. Once the agent completes its process, Workflow posts the response
         back to the specified endpoint.
 
-2.  For Async Mode, enter the **POST URL** and **Access
-    token**.![](images/async.png)  
-    To configure async mode with the Workflow Platform, copy the **POST URL** and
-    **Access Token** from the agent, then follow the steps outlined below.
+2.  For Async Mode, enter the **POST URL** and **Access token**.
+<img src="../images/async.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-    1.  Navigate to the Workflow Platform. Open the agent you want to add the
-        channels to.
+To configure async mode with the Workflow Platform, copy the **POST URL** and **Access Token** from the agent, then follow the steps outlined below.
 
-    2.  On the **Agents** tab, click the name of the agent that you want to
-        integrate and then click **Agent endpoint** in the left
-        navigation.
+1.  Navigate to the Workflow Platform. Open the agent you want to add the channels to.
 
-    3.  Select the **Async push** to enable asynchronous response handling and
-        click the settings icon next to the **Async push**
-        option.![](images/async_push.png)
+2.  On the **Agents** tab, click the name of the agent that you want to integrate and then click **Agent endpoint** in the left  navigation.
 
-    4.  Next, paste the copied **POST URL** and **Access Token** into the
-        appropriate fields on the **Sync/Async mode setup** page.  
+3.  Select the **Async push** to enable asynchronous response handling and click the settings icon next to the **Async push** option.
+<img src="../images/async_push.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-    5.  Click **Save** to save the configuration.
+4.  Next, paste the copied **POST URL** and **Access Token** into the appropriate fields on the **Sync/Async mode setup** page.  
 
-3.  Next, on the **Define API** page, click on the **CURL Import**
+5.  Click **Save** to save the configuration.
+6.   Next, on the **Define API** page, click on the **CURL Import**
     option.
-
-4.  The **Import URL** dialog is displayed.
+7.  The **Import URL** dialog is displayed.
     To get the curl, follow the steps outlined below:
 
     1.  Navigate to the Workflow Platform. Open the agent you want to add the
@@ -117,14 +108,14 @@ steps outlined below:
         integration. Use the sync cURL for sync mode and the async cURL for asyn
         mode.
 
-5.  In the **Import URL,**  paste the **cURL**  that you have fetched from the
+8.  In the **Import URL,**  paste the **cURL**  that you have fetched from the
     Workflow Agent.
 
-6.  Click **Import** to add the cURL
+9.  Click **Import** to add the cURL
 
-7.  Click **Run** to fetch the API details.  
+10. Click **Run** to fetch the API details.  
 
-8.  After fetching the API details, enter the API key value. To get the API key:
+11. After fetching the API details, enter the API key value. To get the API key:
 
     1.  Navigate to the Workflow Platform. On the **Agents** tab, click on the agent
         that you want to integrate.
@@ -135,22 +126,20 @@ steps outlined below:
     3.  In the popup window, click on the **Generate Key** button. Once the API
         key is generated, click **Copy and Close** to copy the key and to exit.
 
-9.  In the API key value field, paste the key that you have copied from the Workflow
+12. In the API key value field, paste the key that you have copied from the Workflow
     Agent and click **Continue**.
 
+13. The API response output displays all the keys received in the response. These keys are used to map the specific value that should be shown to the end user.
+<img src="../images/response.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-10.  The API response output displays all the keys received in the response.
-    These keys are used to map the specific value that should be shown to the
-    end user.![](images/response.png)
-
-11.  Click **Continue** to move to the next step.
+14. Click **Continue** to move to the next step.
 
 ### Step 3: Appearance and Behavior
 
 The **Appearance and Behavior** section displays sample queries to test the agent’s behavior.
 
 1. Click **+Add Query** to input additional test queries.
-2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer to , refer [Notifications](../custom-agents/notify-api.md)</a>.
+2. Enable **Allow End User Notification** toggle to enable notification configuration and agent trigger setup, For detailed instructions, refer to , refer [Notifications](../custom-agents/notify-api.md).
 3. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period.
 4. Once validated, click **Publish** to move to the final step.
 
