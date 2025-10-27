@@ -132,15 +132,15 @@ curl -X GET \
             "containsPanelOrWidget": false,
             "jwtApps": [
                 {
-                    "clientId": "cs-483dc744-437b-5f2d-9ed1-4ba184749f8c",
-                    "clientSecret": "Odmu1w3u4CJyy+Wf+HyajzynShxDLbC4WVVAuNLRFu8=",
+                    "clientId": "cs-483dc744-437b-5f2d-9ed1-4ba184xxxxxx",
+                    "clientSecret": "Odmu1w3u4CJyy+Wf+HyajzynShxDLbC4WVVAuxxxxx=",
                     "jtiClaimEnforced": false,
                     "jweEncryptionEnforced": false,
                     "createdOn": "2024-10-23T06:56:29.208Z"
                 },
                 {
-                    "clientId": "cs-2780cff8-e162-5bcf-8669-afbeac37adb3",
-                    "clientSecret": "IFAiz8e0cFWr5Z9CntcSdrDTqfvDU9rFSjxdo2Q1+XE=",
+                    "clientId": "cs-2780cff8-e162-5bcf-8669-afbeacxxxxx",
+                    "clientSecret": "IFAiz8e0cFWr5Z9CntcSdrDTqfvDU9rFSjxdoxxxxxx=",
                     "jtiClaimEnforced": false,
                     "jweEncryptionEnforced": false,
                     "createdOn": "2024-11-03T13:38:49.680Z"
@@ -165,15 +165,15 @@ curl -X GET \
             "containsPanelOrWidget": false,
             "jwtApps": [
                 {
-                    "clientId": "cs-b953d13d-00d0-502e-8aa9-1475df5f3302",
-                    "clientSecret": "P3/nrNBfUF1hUY6pdSj0h7sEpGkM8Hb45kRRncNPPpQ=",
+                    "clientId": "cs-b953d13d-00d0-502e-8aa9-1475df5xxxxx",
+                    "clientSecret": "P3/nrNBfUF1hUY6pdSj0h7sEpGkM8Hb45kRRncxxxxxx",
                     "jtiClaimEnforced": false,
                     "jweEncryptionEnforced": false,
                     "createdOn": "2024-09-20T12:39:06.059Z"
                 },
                 {
-                    "clientId": "cs-a934fd93-6ab4-548c-98bd-3ec5497aafc3",
-                    "clientSecret": "FOTP/OYZhn1py7W1stKtz+xFAF7MrabQCLvccOzP4AU=",
+                    "clientId": "cs-a934fd93-6ab4-548c-98bd-3ec5497axxxxx",
+                    "clientSecret": "FOTP/OYZhn1py7W1stKtz+xFAF7MrabQCLvccOxxxxx",
                     "jtiClaimEnforced": false,
                     "jweEncryptionEnforced": false,
                     "createdOn": "2024-09-20T12:39:08.364Z"

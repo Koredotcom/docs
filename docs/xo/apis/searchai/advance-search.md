@@ -451,12 +451,12 @@ The response to the API is in JSON format. Some key fields in the response, whic
     "subtype": "value",
     "buckets": [
       {
-        "key": "u-fec9538c-98b8-5503-a2ed-679de486e3d9",
+        "key": "u-fec9538c-xxxx-xxxx-xxxx-679de486e3d9",
         "chunk_count": 240,
         "doc_count": 14
       }, 
       {
-        "key": "u-fec9538c-98b8-5503-a2ed-679de34323ed",
+        "key": "u-fec9538c-xxxx-xxxx-xxxx-679de34323ed",
         "chunk_count": 100,
         "doc_count": 4
       }

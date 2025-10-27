@@ -427,15 +427,19 @@ A message is displayed to the user on the Transcript tab when Call Recording Con
 
 List of recording status and messages:
 
-| **Status**              | **Message** |
-|--------------------------|-------------|
-| **failed**               | Media generation failed due to some technical issue. Please contact your administrator. |
-| **media_unavailable**    | No audio recording found in the server. Please contact your administrator. |
-| **call_in_progress**     | Media unavailable while call is in progress. Please recheck once the call has ended. |
-| **media_in_progress**    | Media generation is in progress. Please wait for a few minutes. |
-| **partial_download_failed** | Unable to fetch the recording. Please click the button below to retry.<br>**Note:** A “Fetch Again” button appears. Users can click this button three times. If it still fails, the message *‘Media generation failed due to some technical issue. Please contact your administrator’* appears. |
-| **partial_upload_failed**   | Unable to fetch the recording. Please click the button below to retry.<br>**Note:** A “Fetch Again” button appears. Users can click this button three times. If it still fails, the message *‘Media generation failed due to some technical issue.’* appears. |
-| **partial_failed**          | Unable to fetch the recording. Please click the button below to retry.<br>**Note:** A “Fetch Again” button appears. Users can click this button three times. If it still fails, the message *‘Media generation failed due to some technical issue.’* appears. |
+| **State**               | **Message** |
+|-------------------------|-------------|
+| **failed**              | Media generation failed due to a technical issue. Please contact your administrator. |
+| **media_unavailable**   | No audio recording found on the server. Please contact your administrator. |
+| **call_in_progress**    | Media unavailable while the call is in progress. Please recheck once the call has ended. |
+| **media_in_progress**   | Media generation is in progress. Please wait for a few minutes. |
+| **partial_download_failed** | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue. Please contact your administrator.” appears. |
+| **partial_upload_failed**   | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue” appears. |
+| **partial_failed**      | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue” appears. |
+| **fetching_in_progress** | Generating your call recording... This may take a few minutes. Please wait. |
+| **initial_fetch_failed** | We couldn’t load the call recording. Please try again. |
+| **retry_failed**        | Still unable to fetch the recording. Please try again after 15 minutes. <br>**Note**: Do not restrict the number of times users can click the Retry button. Also, do not restrict job execution after 24 hours based on the number of retries. |
+| **24hr_retry_failed**   | We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance. |
 
 ## Diagnostics
 

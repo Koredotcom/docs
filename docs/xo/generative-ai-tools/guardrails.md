@@ -70,6 +70,12 @@ The Guardrails are currently available for the following features and will gradu
 ### Automation AI Features
 
 * Agent Node
+* DialogGPT - Conversation Management
+  
+    !!! note
+
+        DialogGPT returns only the detected intent, so guardrails apply to the LLM input prompt, not the output response. Currently, only the Restrict Toxicity and Restrict Topics guardrails apply to DialogGPT interactions.
+
 * Rephrase Responses
 
 ### Search AI Features
@@ -86,59 +92,59 @@ The Guardrails are currently available for the following features and will gradu
 
 
 
-## Guardrails Configuration
+## Manage Guardrails
 
 By default, all the guardrails are disabled. To turn the guardrails on/off for a feature, go to feature Advanced Settings. Toggle the LLM Input and LLM Ouput as required, and click **Save**.
 
 Platform user's can also enable/disable the guardrails from the feature-specific node.
 
 
-### Enable the Guardrails
+=== "Enable the Guardrails"
 
-Steps to enable a Guardrail:
-
-
-
-1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
-<img src="../images/guardrails6.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
-
-2. Turn on the **Status** toggle for the required guardrail. The advanced settings are displayed.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
-
-3. Turn on the **Enable All** toggle or the individual feature **LLM Input** and **LLM Output** toggles as required. 
-
-    * In the Filter Responses, add one or more regular expressions to specify which LLM responses you want to filter out or remove.  <img src="../images/guardrails5.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
-
-
-4. Click **Save**. The success message is displayed.
-
-
-### Disable the Guardrails
-
-You can disable the guardrails if you don't want to use them. Disabling a guardrail will reset all the respective settings.
-
-Steps to disable a Guardrail:
+    Steps to enable a Guardrail:
 
 
 
-1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
-2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:45%;">
-3. Click **Disable**. The success message is displayed.
+    1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
+    <img src="../images/guardrails6.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+
+    2. Turn on the **Status** toggle for the required guardrail. The advanced settings are displayed.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+
+    3. Turn on the **Enable All** toggle or the individual feature **LLM Input** and **LLM Output** toggles as required. 
+
+        * In the Filter Responses, add one or more regular expressions to specify which LLM responses you want to filter out or remove.  <img src="../images/guardrails5.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
-### Edit the Guardrails
-
-Steps to edit a Guardrail:
+    4. Click **Save**. The success message is displayed.
 
 
+=== "Disable the Guardrails"
 
-1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
-2. Click **more** (three dots) and click **Edit**. The advanced settings are displayed.  <img src="../images/guardrails4.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+    You can disable the guardrails if you don't want to use them. Disabling a guardrail will reset all the respective settings.
 
-3. Toggle on/off the **LLM Input** and **LLM Output** as required.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:60%;">
-
-4. Click **Save**. The success message is displayed.
+    Steps to disable a Guardrail:
 
 
+
+    1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
+    2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:45%;">
+    3. Click **Disable**. The success message is displayed.
+
+
+=== "Edit the Guardrails"
+
+    Steps to edit a Guardrail:
+
+
+
+    1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
+    2. Click **more** (three dots) and click **Edit**. The advanced settings are displayed.  <img src="../images/guardrails4.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+
+    3. Toggle on/off the **LLM Input** and **LLM Output** as required.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:60%;">
+
+    4. Click **Save**. The success message is displayed.
+
+<hr>
 
 ## Guardrails Runtime Behavior
 
@@ -188,6 +194,14 @@ For example, the debug logs display two entries: one for the LLM input and anoth
 
 Fallback behavior lets the system determine the optimal course of action when the Guardrails are violated. Each feature has a different fallback behavior, which can be selected in the feature's advanced settings.
 
+Steps to change the fallback behavior:
+
+
+1. Navigate to the GenAI features advanced settings. For example, for the Agent Node go to **Generative AI Tools** > **GenAI Features** > **Agent Node** > **Advance Settings**.  
+<img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+
+2. Select the fallback behavior as required.
+3. Click **Save**.
 
 ### Automation AI Features
 
@@ -201,14 +215,10 @@ You can define the fallback behavior in the following two ways.
 * Trigger the Task Execution Failure Event
 * Skip the current node and jump to a particular node: The system skips the node and transitions to the node the user selects. By default, ‘End of Dialog’ is selected.
 
-Steps to change the fallback behavior:
+**DialogGPT - Conversation Management**
 
+By default, when DialogGPT guardrails are violated, the Platform displays a breach message and triggers an end-of-task event.
 
-1. Go to **Generative AI Tools** > **GenAI Features** > **Agent Node** > **Advance Settings**.  
-<img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
-
-2. Select the fallback behavior as required.
-3. Click **Save**.
 
 
 **Rephrase Dialog Response**
@@ -229,4 +239,4 @@ By default, when the guardrail is violated, the system uses the "Trigger the Tas
 * Query Transformation
 * Result Type Classification
 * Transform Documents with LLM  
-<img src="../images/ansgen-fallback.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/ansgen-fallback.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:60%;">
