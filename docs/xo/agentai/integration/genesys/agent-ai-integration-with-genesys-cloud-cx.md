@@ -269,7 +269,7 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
 
 Set up necessary permissions and app assignments and insert AI Agent-specific data into the Data Table.
 
-1. Sign in to Kore.ai [XO Platform](http://platform.kore.ai){:target="_blank"}.
+1. Sign in to Kore.ai [XO Platform](https://platform.kore.ai){:target="_blank"}.
 2. Click **Data** > **Apps**.
 3. Select the **App** with “write” access to the Data Table where you want to add information.  
 <img src="../kore-data-table/app-write-access-10.png" alt="app-write-access" title="app-write-access" style="border: 1px solid gray; zoom:80%;">  
@@ -579,7 +579,7 @@ The final step is to install Audiohook for voice streaming, if using Kore-manage
 
     1. **Channel** value should be both.
     2. The **Connection URI** format should be similar to 
-    wss://{**Kore Voice Gateway(KVG)**}[/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true). 
+    wss://{**Kore Voice Gateway(KVG)**}[/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true]. 
 
         !!! notes
 

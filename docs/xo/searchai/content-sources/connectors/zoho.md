@@ -170,7 +170,7 @@ A record can be further shared with users other than the default access. A recor
 
     ```
         { 
-        "sys_racl": ["john@kore.com"] 
+        "sys_racl": ["john.doe@example.com"] 
     }
     ```
 

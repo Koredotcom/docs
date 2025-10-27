@@ -8,7 +8,7 @@ This document provides detailed step-by-step instructions for implementing AI fo
 
 **Objective:** Establish communication between AI for Work and Azure Bot Service.
 
-1. Log in to the **AI for Work Admin Console**.
+1. Log in to the AI for Work's **Admin Console**.
 2. Navigate to **Channels** → **Microsoft Teams and Copilot**.
 3. Copy the **Webhook URL** (you will use this in Azure Bot configuration).
 
@@ -148,7 +148,7 @@ Deploy the AI for Work application to Microsoft Teams for user access.
 
 <img src="../images/teams_8.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
-**Upload to Microsoft Teams Admin Cente**
+**Upload to Microsoft Teams Admin Center**
 
 **Prerequisites Verification**: Ensure you have **Upload Custom App** permissions in the Microsoft Teams Admin Center. Verify organizational policies allow custom app installations.
 
