@@ -22,7 +22,7 @@ The Agent node's Intent Detection now defaults to "Prefer user input as intent a
 
 **Multi-language Support**
 
-DialogGPT has expanded its intent identification and orchestration capabilities to include non-English languages, allowing users to fully leverage its power in multilingual applications. The process for adding new languages is streamlined, allowing users to easily configure LLM-based or traditional translation engines for user input and AI agent responses. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-dialog-gpt-enabled-ai-agent)
+DialogGPT has expanded its intent identification and orchestration capabilities to include non-English languages, allowing users to fully leverage its power in multilingual applications. The process for adding new languages is streamlined, allowing users to easily configure LLM-based or traditional translation engines to translate the user input and AI agent responses. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-dialog-gpt-enabled-ai-agent)
 
 **Pre-intent Input Guardrails Support**
 
