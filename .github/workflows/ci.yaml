@@ -31,7 +31,13 @@ jobs:
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.en.agent-platform.yml
-            
+      - name: Build EN AI for Process docs
+        uses: ./
+        with:
+          entrypoint: mkdocs
+          args: build --config-file=mkdocs.en.ai-for-process.yml
+          
+
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site
 
