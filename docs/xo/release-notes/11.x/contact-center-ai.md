@@ -123,7 +123,7 @@ Contact Center AI nodes now support debug logging within the Flow Builder, exten
 
 **Bulk Transfer and End of Calls, Chats, and Emails in Agent Queues**
 
-App Owner, Administrators, Supervisors, and App Developers can bulk transfer or end multiple conversations across chat, email, and voice channels directly from the Monitor tab. Users can select a queue, view active conversations, and perform multi-selection to transfer conversations to another queue or end them with a confirmation. This update streamlines workload management, improves operational flexibility, and reduces manual effort in handling agent queues. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#transfer-all-callschatsemails-in-agent-queue-or-to-human-agents)
+App Owner, Administrators, Supervisors, and App Developers can bulk transfer or end multiple conversations across chat, email, and voice channels directly from the Monitor tab. Users can select a queue, view active conversations, and perform multi-selection to transfer conversations to another queue or end them with a confirmation. This update streamlines workload management, improves operational flexibility, and reduces manual effort in handling agent queues. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#transfer-conversations-to-a-queue)
 
 <font size="4">API</font>
 
