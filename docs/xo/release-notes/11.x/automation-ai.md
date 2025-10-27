@@ -12,11 +12,11 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **LLM Text Response Streaming over Web/Mobile SDK**  
 
-AI for Service now offers real-time LLM response streaming for Web/Mobile SDK chat conversations. This feature reduces latency and improves user engagement through incremental message delivery via Agent and Prompt Nodes. Users can select from existing streaming prompt templates or create custom ones. Existing voice streaming prompts remain fully compatible.
+AI for Service now offers real-time LLM response streaming for Web/Mobile SDK chat conversations. This feature reduces latency and improves user engagement through incremental message delivery via Agent and Prompt Nodes. Users can select from existing streaming prompt templates or create custom ones. Existing voice streaming prompts remain fully compatible. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/streaming-responses.md#current-capabilities) 
 
 **Agent Node - Default Intent Detection Settings**
 
-The Agent node's Intent Detection now defaults to "Prefer user input as intent and proceed with Hold & Resume settings”. The "Ask the user how to proceed" option is removed to streamline configuration, standardize user input handling, and improve the overall end-user experience. This change applies to both new and existing Agent nodes, with current nodes automatically updated for backward compatibility.
+The Agent node's Intent Detection now defaults to "Prefer user input as intent and proceed with Hold & Resume settings”. The "Ask the user how to proceed" option is removed to streamline configuration, standardize user input handling, and improve the overall end-user experience. This change applies to both new and existing Agent nodes, with current nodes automatically updated for backward compatibility. [Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#instance-properties)
 
 <font size="4">DialogGPT</font>  
 
@@ -26,7 +26,7 @@ DialogGPT has expanded its intent identification and orchestration capabilities 
 
 **Pre-intent Input Guardrails Support**
 
-DialogGPT now supports pre-intent input guardrails to scan and block harmful content before it reaches language models during intent identification. This enhancement addresses security vulnerabilities and compliance risks, complementing the platform's existing PII protection and standard guardrails.
+DialogGPT now supports pre-intent input guardrails to scan and block harmful content before it reaches language models during intent identification. This enhancement addresses security vulnerabilities and compliance risks, complementing the platform's existing PII protection and standard guardrails. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md)
 
 
 <hr>
