@@ -1,101 +1,96 @@
 # Bot Agents
 
-Administrators can create bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the AI for Service Platform can be seamlessly integrated, allowing actions to be executed directly when a workflow is triggered and eliminating the need for other platforms.
+Administrators creates bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the AI for Service Platform integrate seamlessly, allowing actions to execute directly when a workflow triggers, eliminating the need for other platforms.
 
-For complex workflows involving multiple system integrations and logic, users can build bots using the AI for Service Platform. These bots can be triggered through conversations using the UI or NLP intent, streamlining the entire process.
+For complex workflows involving multiple system integrations and logic, users build bots using the AI for Service Platform. Users trigger these bots through conversations using the UI or NLP intent, streamlining the entire process.
 
-For example, consider a Fund Transfer Bot Agent. By creating this bot on the AI for Service Platform, you can automate fund transfers to clients' designated accounts, capturing key details such as client names, account information, and transfer amounts. Once integrated with your organization’s systems, the bot allows seamless conversational interactions, simplifying fund transfer operations.
+For example, consider a Fund Transfer Bot Agent. By creating this bot on the AI for Service Platform, automate fund transfers to clients' designated accounts, capturing key details such as client names, account information, and transfer amounts. Once integrated with your organization's systems, the bot allows seamless conversational interactions, simplifying fund transfer operations.
 
-You can create a new agent or import an existing one.
+Create a new agent or import an existing one.
 
--   [Import existing bot agent](#import-existing-bot-agent)
+- [Import existing bot agent](#import-existing-bot-agent)
 
--   [Create a new bot agent](#create-a-new-bot-agent)
+- [Create a bot agent](#create-a-bot-agent)
 
 ## Import existing Bot Agent
 
 To import an existing Bot Agent:
 
-1.  Click the **Import** **Agent** button located in the upper-right
+1. Click the **Import Agent** button located in the upper-right
     corner.![](images/import_bot.png)
 
-2.  Select the .ZIP file of the existing
+2. Select the .ZIP file of the existing
     agent.![](images/import_bot-agent.png)
 
-3.  Click **Import** to complete the process. The imported agent will appear on
+3. Click **Import** to complete the process. The imported agent appears on
     the Bot Agents page.
 
-### Create a New Bot Agent
+## Create a Bot Agent
 
-You can create a new Bot agent to assist users in completing various tasks by
+Create a new Bot agent to assist users in completing various tasks by
 utilizing the Bot created using the AI for Service Platform. [Learn
 more.](https://docs.kore.ai/xo/getting-started/building-a-virtual-assistant/)
 
 To create a new Bot Agent, follow these steps:
 
-1.  In the **Admin Console**, click **AI Agents** from the left pane, and then
-    select **Bot Agents**. A list of available bot agents will be displayed.
+1. In the **Admin Console**, click **AI Agents** from the left pane, and then
+    select **Bot Agents**. Displays a list of available bot agents.
 
     ![](images/bot-agent.png)
 
-2.  On the Bot Agents page, click **+Create
+2. On the Bot Agents page, click **+Create
     Agent.![](images/create-agent.png)**
 
-3.  You must link your Bot built on the AI for Service Platform with **AI for Work** and
+3. You must link your Bot built on the AI for Service Platform with **AI for Work** and
     create a webhook channel. [Learn
     more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).
-    
-    To create a webhook channel on the Bot and
-    complete the integration process, follow these steps:
 
-    1.  Log in to the **AI for Service Platform**. Open the virtual assistant or bot you
+To create a webhook channel on the Bot and complete the integration process, follow these steps:
+
+ 1. Log in to the **AI for Service Platform**. Open the virtual assistant or bot you
         want to add the channels to. Navigate to **Deploy \> Channels**\> **Add
-        More**\> **Webhook**. The Webhook dialog will
-        appear.![](images/webhook.png)
+        More**\> **Webhook**. The Webhook dialog 
+        appears.![](images/webhook.png)
 
-    2.  Select your required app from the **Webhook** dialog.
+ 2. Select your required app from the **Webhook** dialog.
         ![](images/webhook_select_app.png)
 
-    3.  Copy the **Bot client ID** and **Bot secret ID** to use in the **AI for
+ 3. Copy the **Bot client ID** and **Bot secret ID** to use in the **AI for
         Work** platform to complete the
         integration.![](images/webhook_botID.png)
 
-    4.  Under the **Configured Channels** section, click the <**Name of the Bot**> you have created and want to integrate with **AI for Work**. The channel you have created is now enabled.
+ 4. Under the **Configured Channels** section, click the <**Name of the Bot**> you have created and want to integrate with **AI for Work**, enables the channel.
 
-        **Note**: You can create a new client app for your app by providing the
-        JWT tokens generated using the **Post URL** and **Access tokens**
-        available in the **Add bot agents** dialog in the **Add Bot** section.
+note!!!
+     Create a new client app for your app by providing the JWT tokens generated using the **Post URL** and **Access tokens** available in the **Add bot agents** dialog in the **Add Bot** section.
 
-4. The **Prompt Agent creation** wizard will take you through the following
+1. The **Prompt Agent creation** wizard will take you through the following
     steps:
 
-    1.  [Step 1: Define and Purpose](#step-1-details-and-purpose)
+    1. [Step 1: Define and Purpose](#step-1-details-and-purpose)
 
-    2.  [Step 2: Add Bot](#step-2-add-bot)
+    2. [Step 2: Add Bot](#step-2-add-bot)
 
-    3.  [Step 3: Appearance and Behavior](#step-3-appearance-and-behavior)
+    3. [Step 3: Appearance and Behavior](#step-3-appearance-and-behavior)
 
-    4.  [Step 4: Publish Bot Agent](#step-4-publish)
+    4. [Step 4: Publish Bot Agent](#step-4-publish)
 
 #### Step 1: Details and Purpose
 
-Provide a suitable and unique name for the agent and describe its purpose. Defining the agent’s purpose enables it to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed.
+Provide a suitable and unique name for the agent and describe its purpose. Defining the agent's purpose enables it to accurately recognize its capabilities and effectively utilize them to respond to user queries aligned with the specified intent. Clearly outline the specific use cases for which you designed the agent.
 ![](images/detail-purpose.png)
 
 #### Step 2: Add Bot
 
-The Add Bot feature enables seamless integration of a virtual assistant created
-on the platform with your system. To establish this connection, ensure
-that the webhook channel is enabled on the Virtual Assistant. Once
-activated, follow the integration steps to complete the process:
+The Add Bot feature enables seamless integration of a bot created on the platform with your system. To establish this connection, ensure you enable the webhook channel on the bot. Once activated, follow the integration steps to complete the process:
 
 1. In the **Add Bot** enter the following:
-     
-     a. **Post URL**: This field is automatically populated with the necessary endpoint.
 
-     b. **Access Token**: This field is automatically populated with the necessary endpoint.
+     a. **Post URL**: Populates the field with the necessary endpoint.
 
-     c. **Webhook URL**: Enter the URL obtained from the Bot Webhook dialog. For detailed information about webhooks, [Learn more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).![](images/add-bot.png)
+     b. **Access Token**: Populates the field with the necessary endpoint.
+
+     c. **Webhook URL**: Enter the URL from the Bot Webhook dialog. For detailed information about webhooks, [Learn more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).![](images/add-bot.png)
 
      d. **Bot client ID** : Enter the client identifier retrieved from the Bot Webhook dialog.
 
@@ -123,24 +118,18 @@ Publish your agent and define access permissions and enablement.
     * **Limited Users**: Grant access to specific workspace users or groups added in publish settings of workspace.
 * **Enablement Type**: Configure how users interact with the agent:
     * **Always Enabled**: The agent remains active and cannot be disabled.
-    * **Users Choice**: Users can enable or disable the agent as needed.
+    * **Users Choice**: Users enable or disable the agent as needed.
 
 Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
 
-The user can see this agent in the **Agents list** on the **Agents** page.
+View this agent in the **Agents list** on the **Agents** page.
 
-**Note**: On the Agents list page, you can click the three dots icon
-corresponding to the agent's name and publish the agent later if necessary.
+note!!!
+     On the Agents list page, click the three dots icon corresponding to the agent's name and publish the agent later if necessary.
 
 ## User Interaction
 
-Interacting with the Bot Agent is designed to simplify communication and task
-execution. Users can initiate a conversation by typing a command. The bot
-responds promptly, guiding users through the required steps. For example, if
-performing a task like a fund transfer, users simply need to engage with the bot
-by providing key details such as the client’s name, account information, and the
-transfer amount. Once the task is completed, the bot provides a confirmation or
-status update.
+Interacting with the bot agent simplifies communication and task execution. Users initiate a conversation by typing a command. The bot responds promptly, guiding users through the required steps. For example, if performing a task like a fund transfer, users simply need to engage with the bot by providing key details such as the client's name, account information, and transfer amount. Once you complete the task, the bot provides a confirmation or status update.
 
 ![](images/user-interaction_1.png)
 

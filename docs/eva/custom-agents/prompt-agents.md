@@ -84,7 +84,7 @@ To create a new Prompt Agent, follow these steps:
 
     3.  [Step 3: Business Rules](#step-3-business-rules)
 
-    4.  [Step 4: Appearance and Behaviour](#step-4-appearance-and-behavior)
+    4.  [Step 4: Appearance and Behavior](#step-4-appearance-and-behavior)
     
     5.  [Step 5: Publish](#step-5-publish-prompt-agent)
 
@@ -102,15 +102,15 @@ In the Sources section, you can configure the following fields:
 -  [User Input](#user-input)
 -  [Knowledge](#knowledge)
 -  [Prompts](#prompts)
--  [Multiprompt](#multiprompt)
--  [Multiresponse](#multiresponse)
+-  [Multi prompt](#multi prompt)
+-  [Multi response](#multi response)
 
  The parameters fields are provided based on the purpose of the agent you provided in
 the previous step. For example, if the purpose is "summarization", fields might
 include Word Count, Summary Format
 etc.<img src="../images/source_gpt.png" alt="source_gpt" title="source_gpt" style="border: 1px solid gray; zoom:70%;">
 
-##### <a id="User Input">User Input</a>
+##### User Input
 
 To configure user input, follow the steps outlined below:
 
@@ -141,7 +141,7 @@ To configure user input, follow the steps outlined below:
     and click **Done**.
 
 
-##### <a id="knowledge">Knowledge</a>
+##### Knowledge
 
 1. Click the **+ Upload** button to upload a file containing knowledge that the
     Prompt agent can use to generate responses. This uploaded information may also
@@ -163,7 +163,7 @@ To configure user input, follow the steps outlined below:
 3. Toggle the **Show to users** button to display this prompt to the user. After switching the toggle to ON, you can choose between **Read-only** or **Editable** modes.
     <img src="../images/show_to_users.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
-##### <a id="prompts">Prompts</a>
+##### Prompts
 
 A default prompt is automatically generated based on the purpose defined earlier
 and can be customized using variables. For example, if the purpose is "Job
@@ -172,7 +172,7 @@ Responsibilities etc”.
 
 Enable the Show to users toggle button to show this prompt to the user. Once you click the toggle button to ON, you can select whether you want it in **Read-only** or **Editable**.
 
-##### <a id="multiprompt">Multiprompt</a>
+##### Multi prompt
 
 For a multi-prompt setup within the agent builder, users can generate multiple prompts and select one from the prompt selector option field based on the specific context. 
 
@@ -188,7 +188,7 @@ Once you add multiple prompts, the prompt option will appear under the prompt se
     to drag and drop them to change their order.
 4.  Click **Done**.
 
-##### <a id="multiresponse">Multi Response</a>
+##### Multi Response
 
 To allow users to generate multiple responses,
 
@@ -196,11 +196,11 @@ To allow users to generate multiple responses,
     the output settings.  
 
 2. Enable **Skip Form Display** to automatically bypass forms. This feature intelligently prevents conflicts with Multi-Response and shows messages for incompatible settings. Smart query analysis now identifies when all required entities are present initially, and forms will only appear if mandatory fields are missing.
- <img src="../images/output_setings.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/output_settings.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Continue** to move to the next step.
 
-#### <a id="preview">Step 3: Business Rules</a>
+#### Step 3: Business Rules
 
 Set rules for entity selection and responses based on keywords.
 
@@ -210,12 +210,12 @@ You have options to set either an Entity Rule or Answering Rule.
 
 <img src="../images/Business_Rule.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
-#### <a id="preview">Step 4: Appearance and Behavior </a>
+#### Step 4: Appearance and Behavior
 
 In the **Appearance and Behavior** section, a list of sample queries are displayed. If needed,
 you can add additional queries by clicking the **+ Add Query** button. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period. Once you're ready, click **Publish** to proceed to the next step.<img src="../images/preview.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
-#### <a id="publish">Step 5: Publish Prompt Agent</a>
+#### Step 5: Publish Prompt Agent
 
 Publish your agent and define access permissions and enablement.
 

@@ -358,7 +358,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 <font size="4">Feature Enhancements</font>
 
-**Impovised Enterprise Knowledge Agent**:
+**Improvised Enterprise Knowledge Agent**:
 
 * If relevant answers are not found within the Enterprise Knowledge base, the system will now automatically utilize LLM models with integrated web search to address queries.
 * Users can now directly select web search as an agent for their queries. This provides a functionality comparable to web search features found in platforms like ChatGPT.

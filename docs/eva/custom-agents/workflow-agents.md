@@ -43,7 +43,7 @@ To create a Workflow Agent, follow the steps outlined below:
 
     4.   [Step 4: Publish the Agent](#publish)
 
-### <a id="details">Step 1: Details and Purpose</a>
+### Step 1: Details and Purpose
 
 Provide a suitable and unique name for the agent and describe the purpose of the
 agent. Defining the agent’s purpose enables “AI for work” to accurately
@@ -58,7 +58,7 @@ related to any cross-sell or upsell product.
 ![](images/detail_and_purpose_workflow.png)
 
 
-###   <a id="configure">Step 2: Configure Workflow Flow</a>
+### Step 2: Configure Workflow Flow
 
 You must integrate **Workflow Flow** with the **Workflow** platform and create a
 channel. To set up a channel and complete the integration process, follow the
@@ -145,7 +145,7 @@ steps outlined below:
 
 11.  Click **Continue** to move to the next step.
 
-###  <a id="preview">Step 3: Appearance and Behavior
+### Step 3: Appearance and Behavior
 
 The **Appearance and Behavior** section displays sample queries to test the agent’s behavior.
 
@@ -154,7 +154,7 @@ The **Appearance and Behavior** section displays sample queries to test the agen
 3. Enable **Clear End-User Chat History** toggle to automatically delete the agent's chat history for end users after a specified period.
 4. Once validated, click **Publish** to move to the final step.
 
-###    <a id="publish">Step 4: Publish
+### Step 4: Publish
 
 Publish your agent and define access permissions and enablement.
 
