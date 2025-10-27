@@ -72,9 +72,9 @@ The Guardrails are currently available for the following features and will gradu
 * Agent Node
 * DialogGPT - Conversation Management
   
-  !!! note
+    !!! note
 
-      DialogGPT returns only the detected intent, so guardrails apply to the LLM input prompt, not the output response. Currently, only the Restrict Toxicity and Restrict Topics guardrails apply to DialogGPT interactions.
+        DialogGPT returns only the detected intent, so guardrails apply to the LLM input prompt, not the output response. Currently, only the Restrict Toxicity and Restrict Topics guardrails apply to DialogGPT interactions.
 
 * Rephrase Responses
 

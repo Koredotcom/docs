@@ -26,7 +26,7 @@ DialogGPT has expanded its intent identification and orchestration capabilities 
 
 **Pre-intent Input Guardrails Support**
 
-DialogGPT now supports pre-intent input guardrails to scan and block harmful content before it reaches language models during intent identification. This enhancement addresses security vulnerabilities and compliance risks, complementing the platform's existing PII protection and standard guardrails. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md)
+DialogGPT now supports pre-intent input guardrails to scan and block harmful content before it reaches language models during intent identification. This enhancement addresses security vulnerabilities and compliance risks, complementing the platform's existing PII protection and standard guardrails. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md#guardrails-applicability-and-availability)
 
 
 <hr>

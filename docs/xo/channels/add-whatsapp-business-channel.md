@@ -485,7 +485,7 @@ If you are opting for Permanent Authorization, get a Permanent Token. Refer [Cre
 7. Click Generate New Token.
 8. Copy and save your token.
 
-If you are opting for Temporary Authorization: Retrieve App ID & App Secret
+If you are opting for Temporary Authorization: Retrieve App ID & App Secret.
 
 1. Go to your **App Dashboard**.
 2. Click the **App Settings** tab.
@@ -505,7 +505,7 @@ If you are opting for Temporary Authorization: Retrieve App ID & App Secret
     !!! note
 
         The **Facebook Login for Business** is not available as default. Therefore, Kore recommends that you search for it to add under the My products section. Ignore, if it is already available. 
-         
+
     <img src="../images/Products-add products.png" alt="Products-add products" title="Products-add products" style="border: 1px solid gray; zoom:70%;">
 
 2. Now, click the **Settings** tab of Facebook Login for Business.  
