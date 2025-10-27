@@ -62,6 +62,39 @@ To update an already enabled language for an assistant, follow the below steps:
     - After you have configured a new language, to make the new language work, you must re-publish the AI Agent. Until then, the AI Agent continues to function with the previously published languages.  
     - The default Synonym library is available only for English, French, Spanish, German, and Chinese languages. However, you can add custom synonyms for any language.
 
+## Adding a language to a Dialog GPT-enabled AI Agent
+
+The default App language is **English**. Follow these steps to add a new language for your Dialog GPT-enabled AI Agent:
+
+1. Go to **App Settings > Configurations > Language Management**.
+2. On the Language Management page, in the ***Standard Languages*** section, click the **+ Add Language** to add languages.
+3. The Platform will display all the languages that are supported. Click **Configure** to enable a language.
+4. Once you click configure, you can set up the following language configurations:  
+  <img src="../images/dgpt_language_management.png" alt="Multilingual setting" title="Multilingual setting" style="border: 1px solid gray;zoom:50%;"/>
+
+
+  a.  Under Input, choose one of the following options: 
+
+    * Use original user input to process input in its original language using Dialog GPT’s multi-lingual models.
+
+    * Translation Engine to translate user input into the AI Agent’s default language using a translation service.
+
+  b. Under Output, choose one of the following options:
+
+    * GenAI: Rephrase Responses to transform responses into the primary language of your AI Agent using rephrasing features.
+
+    * Translation Engine to translate responses into the AI Agent’s default language using a translation service.
+
+  To configure the translation engine, refer to [Manage Translation Services](managing-translation-services.md).
+
+5. Select Save to apply your changes.
+
+
+To edit the language configuration, select the language that is already enabled in the ***Standard Languages*** section, or select **Edit** in the ***Localization Configurations*** section.
+
+Update the configurations and then click **Save**.  
+<img src="../images/localization_configuration.png" alt="Manage language" title="Manage language" style="border: 1px solid gray;zoom:50%;"/>
+
 ## Switching Languages 
 
 If you have configured multiple languages for an AI Agent, you can switch the language to configure the AI Agent from the top right corner (language dropdown) from within any area of your AI Agent. The dropdown will display all the other supported languages with the corresponding NLU model that is configured for the language. 
