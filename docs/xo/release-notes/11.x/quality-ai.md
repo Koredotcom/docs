@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
-## v11.19.0 September 27, 2025
+## v11.19.0 October 25, 2025
 
 <u>Minor Release</u>
 
@@ -27,8 +27,7 @@ This release introduces the following two new generative AI features powered by 
 * By Value Adherence Validation: Check if extracted metric values match predefined reference data and return binary adherence scores.
 
 * By Value Metric Extraction: Extract metric values from messages by users, AI agents, or humans. 
-
-[Learn more :octicons-arrow-right-24:](../../quality-ai/configure/taxonomy-builder/overview.md)
+[Learn more :octicons-arrow-right-24:](../../../xo/generative-ai-tools/genai-features-qualityai.md)
 <hr>
 
 ## v11.18.0 September 27, 2025
