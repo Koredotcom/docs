@@ -25,7 +25,7 @@ The Admin Console is now accessible directly within the AI for Service interface
 
 **Public API Response Payload Encryption**
 
-AI for Service now supports Response Payload Encryption to protect sensitive data in Public API responses. When enabled, each response is encrypted using a client-provided public key, ensuring that only the intended client can decrypt and access the data. The feature strengthens data confidentiality, maintains integrity across API communications, and provides an additional layer of enterprise-grade security.
+AI for Service now supports Response Payload Encryption to protect sensitive data in Public API responses. When enabled, each response is encrypted using a client-provided public key, ensuring that only the intended client can decrypt and access the data. The feature strengthens data confidentiality, maintains integrity across API communications, and provides an additional layer of enterprise-grade security. [Learn more :octicons-arrow-right-24:](../../apis/automation/api-introduction.md#creating-and-managing-jwt-apps-in-the-platform)
 
 <hr>
 

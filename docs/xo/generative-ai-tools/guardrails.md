@@ -71,10 +71,11 @@ The Guardrails are currently available for the following features and will gradu
 
 * Agent Node
 * DialogGPT - Conversation Management
-
+  
   !!! note
 
       DialogGPT returns only the detected intent, so guardrails apply to the LLM input prompt, not the output response. Currently, only the Restrict Toxicity and Restrict Topics guardrails apply to DialogGPT interactions.
+
 * Rephrase Responses
 
 ### Search AI Features
@@ -238,4 +239,4 @@ By default, when the guardrail is violated, the system uses the "Trigger the Tas
 * Query Transformation
 * Result Type Classification
 * Transform Documents with LLM  
-<img src="../images/ansgen-fallback.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/ansgen-fallback.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:60%;">
