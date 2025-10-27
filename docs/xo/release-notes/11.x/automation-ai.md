@@ -10,9 +10,9 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Agent Node</font>  
 
-**LLM Text Response Streaming over Web/Mobile SDK**  
+**LLM Text Response Streaming Over Web/Mobile SDK**  
 
-AI for Service now offers real-time LLM response streaming for Web/Mobile SDK chat conversations. This feature reduces latency and improves user engagement through incremental message delivery via Agent and Prompt Nodes. Users can select from existing streaming prompt templates or create custom ones. Existing voice streaming prompts remain fully compatible. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/streaming-responses.md#current-capabilities) 
+AI for Service now offers real-time LLM response streaming for Web/Mobile SDK chat conversations. This feature reduces latency and improves user engagement through incremental message delivery via Agent and Prompt Nodes. The streaming capability is available only for V1 prompts in Agent Nodes and does not support tool calling. Users can select from existing streaming prompt templates or create custom ones. Existing voice streaming prompts remain fully compatible. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/streaming-responses.md#current-capabilities) 
 
 **Agent Node - Default Intent Detection Settings**
 
