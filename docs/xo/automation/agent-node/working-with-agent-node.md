@@ -218,8 +218,8 @@ Configure advanced controls for this node instance as follows:
 This applies only to String and Description entities: Select one of these options to determine the course of action if AI Agent encounters an entity as a part of the user utterance:
 
 * **Accept input as entity value and discard the detected intent**: The AI Agent captures the user entry as a string or description and ignores the intent.
-* **Prefer user input as intent and proceed with Hold & Resume settings**: The user input is considered for intent detection, and the AI Agent proceeds according to the Hold & Resume settings.
-* **Ask the user how to proceed**: Allow the user to specify if they meant intent or entity.
+* **Prefer user input as intent and proceed with Hold & Resume settings (default)**: The user input is considered for intent detection, and the AI Agent proceeds according to the Hold & Resume settings.
+
 
 **Interruptions Behavior**
 

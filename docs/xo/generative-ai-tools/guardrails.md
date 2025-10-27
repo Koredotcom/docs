@@ -70,6 +70,11 @@ The Guardrails are currently available for the following features and will gradu
 ### Automation AI Features
 
 * Agent Node
+* DialogGPT - Conversation Management
+
+  !!! note
+
+      DialogGPT returns only the detected intent, so guardrails apply to the LLM input prompt, not the output response. Currently, only the Restrict Toxicity and Restrict Topics guardrails apply to DialogGPT interactions.
 * Rephrase Responses
 
 ### Search AI Features
@@ -188,6 +193,14 @@ For example, the debug logs display two entries: one for the LLM input and anoth
 
 Fallback behavior lets the system determine the optimal course of action when the Guardrails are violated. Each feature has a different fallback behavior, which can be selected in the feature's advanced settings.
 
+Steps to change the fallback behavior:
+
+
+1. Navigate to the GenAI features advanced settings. For example, for the Agent Node go to **Generative AI Tools** > **GenAI Features** > **Agent Node** > **Advance Settings**.  
+<img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+
+2. Select the fallback behavior as required.
+3. Click **Save**.
 
 ### Automation AI Features
 
@@ -201,14 +214,10 @@ You can define the fallback behavior in the following two ways.
 * Trigger the Task Execution Failure Event
 * Skip the current node and jump to a particular node: The system skips the node and transitions to the node the user selects. By default, ‘End of Dialog’ is selected.
 
-Steps to change the fallback behavior:
+**DialogGPT - Conversation Management**
 
+By default, when DialogGPT guardrails are violated, the Platform displays a breach message and triggers an end-of-task event.
 
-1. Go to **Generative AI Tools** > **GenAI Features** > **Agent Node** > **Advance Settings**.  
-<img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
-
-2. Select the fallback behavior as required.
-3. Click **Save**.
 
 
 **Rephrase Dialog Response**

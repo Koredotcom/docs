@@ -470,7 +470,22 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 4. On the app in the app dashboard, Click on your created app.  
 <img src="../images/Apps.png" alt="Apps" title="widget sdk configuration" style="border: 1px solid gray; zoom:70%;">
 
-#### Step 2: Retrieve App ID & App Secret
+#### Step 2: Get Permanent Token, App ID, & App Secret
+
+If you are opting for Permanent Authorization, get a Permanent Token. Refer [Creating a Permanent Access Token](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/). 
+
+
+
+1. Go to Business Settings.
+2. Select the business account your app is associated with.
+3. Below Users, click System Users.
+4. Click Add.
+5. Name the system user, choose Admin as the user role, and click Create System User.
+6. Select the WhatsApp Business Messaging permission.
+7. Click Generate New Token.
+8. Copy and save your token.
+
+If you are opting for Temporary Authorization: Retrieve App ID & App Secret
 
 1. Go to your **App Dashboard**.
 2. Click on the **App Settings** tab.
@@ -516,12 +531,33 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
     <img src="../images/Phone-app-secrets.png" alt="Phone-app-secrets" title="Phone-app-secrets" style="border: 1px solid gray; zoom:70%;">
 
+
+
+
+
+#### Step 4: Select Authorization Type
+
+Enter the Phone Number ID and select the connection Authorization Type.
+
+
+
+* If you select Temporary Authorization, enter the **App ID** and **App Secret ID** from step 2, and **Authorize** the channel. Temporary tokens expire every two months and must be reauthorized to keep the channel active.  
+<img src="../images/temporary-authorization.png" alt="Temporary Authorization" title="Temporary Authorization" style="border: 1px solid gray; zoom:70%;">
+
+* If you select the Permanent Authorization, enter the **Permanent Token** from step 2 provided by the Meta. Refer [Creating a Permanent Access Token](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/).  
+<img src="../images/permanent-token.png" alt="Permanent Authorization" title="Permanent Authorization" style="border: 1px solid gray; zoom:70%;">
+
+
+
+ 
+
 #### Step 5: Verify the Webhook URL and Token
 
-1. From the **Platform App builder Configuration Page**, copy the **URL** and **Token**.  
+1. From the **Platform App builder Configuration Page**, copy the **URL** and **Token**.
 
-    **Note:** Kore recommends you verify the Token and Callback URL by publishing your application. This ensures your token and URL is valid.  
-   <img src="../images/verify-call-back.png" alt="verify-call-back" title="verify-call-back" style="border: 1px solid gray; zoom:70%;">
+    !!! note
+
+        We recommends you verify the Token and Callback URL by publishing your application. This ensures your token and URL is valid.  
 
 2. Paste them in the **Callback URL** and **Verify token** respectively of the **Configuration** section under the **WhatsApp** section in the left navigation bar.  
 <img src="../images/Verify-save.png" alt="Verify-save" title="Verify-save" style="border: 1px solid gray; zoom:70%;">
@@ -542,4 +578,3 @@ Finally, enable the channel on the Platform to start receiving WhatsApp messages
 1. Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with   the app first.
 2. Select “*Yes*” for **Enable Channel**.
 3. Click **Save**.  
-<img src="../images/whatsapp25.png" alt="Enable_the_Channel" title="Enable_the_Channel" style="border: 1px solid gray; zoom:70%;">
