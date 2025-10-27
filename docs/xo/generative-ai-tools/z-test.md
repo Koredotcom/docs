@@ -11,7 +11,7 @@
 
 The LLM Token Usage gives you comprehensive visibility into LLM token consumption and performance across AI for Service. You can track token consumption, request volume, and median latency by module, model, and feature, with detailed breakdowns available in the Performance Analytics section. These insights help organizations monitor feature adoption, manage infrastructure costs, optimize AI capabilities, and make informed scaling decisions.
 
-Token Data Collection¶
+Token Data Collection
 
 The Platform automatically captures usage data for pre-built models (OpenAI, Azure OpenAI, and Anthropic) regardless of the prompts used. For custom models and Amazon Bedrock models, you must map the Request and Response Token Keys in the custom prompts to enable tracking. Without this mapping, the Platform can't calculate consumption, which may result in unmonitored usage and unexpected costs.
 

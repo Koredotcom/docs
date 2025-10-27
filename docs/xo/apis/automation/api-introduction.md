@@ -10,6 +10,7 @@ Authentication of the API requests involves the following two steps:
     * **Admin Console API Scopes**: Account administrators can assign API Scopes to the app to access respective features in any AI Agents built into their accounts on the Platform.
 
 
+
 ## Creating and Managing JWT Apps in XO Platform
 
 Steps to create a JWT Client App from the Platform:
@@ -29,6 +30,9 @@ Steps to create a JWT Client App from the Platform:
     * **Enforce JTI (JWT ID) Claim** – Once enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
 
     * **Enforce JWE Encryption** (Generating JWT token) – To access the Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
+
+
+    * **Enforce Response Payload Encryption**: Provide the public key used by the Platform to encrypt Public API response payloads that include Token Introspection and User Information data. Use the same key to decrypt the payload.
     <img src="../images/create-a-jwt-app.png" alt="Create a new JWT App" title="Create a new JWT App" style="border: 1px solid gray; zoom:50%;">
 
 5. Click **Next** and **Done**.
