@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Keyword Search with Audit Filtering**
 
-The new Keyword Search Filter feature lets users easily locate and analyze conversations. Users can search for keywords and refine results by speaker, including or excluding keywords. Each search result links directly to the QA audit screen, where keyword matches are highlighted in the transcript, along with speaker labels and QA evaluation details. This ultimately leads to improved audit accuracy, traceability, and filtering flexibility. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/topic-discovery.md)
+The new Keyword Search Filter feature lets users easily locate and analyze conversations. Users can search for keywords and refine results by speaker, including or excluding keywords. Each search result links directly to the QA audit screen, where keyword matches are highlighted in the transcript, along with speaker labels and QA evaluation details. This ultimately leads to improved audit accuracy, traceability, and filtering flexibility. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md)
 
 <font size="4">Analytics</font>
 
