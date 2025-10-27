@@ -219,7 +219,8 @@ Steps to transfer all Calls/Chats/Emails in the Agent Queue or to a specific age
     * Conversations cannot be transferred when the agent is on a live call.  
     * Conversations cannot be transferred to offline agents.  
     * Blended agents must be configured to transfer digital and voice conversations together.  
-    * A pop-up appears when a conversation is transferred to an agent who has reached full capacity. Select Transfer to assign the conversation to the agent.
+    * A pop-up appears when a conversation is transferred to an agent who has reached full capacity. Select Transfer to assign the conversation to the agent.  
+    * Conversations in the TERMINATED, TRANSIENT_DROPOFF, and TRANSIENT_CLOSED states cannot be transferred or selected. A disabled cursor appears on hover, and these conversations are excluded when users click Select All.
 
 #### Force Close
 

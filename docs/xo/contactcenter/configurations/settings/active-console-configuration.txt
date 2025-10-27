@@ -11,7 +11,3 @@ Steps to enable active console configuration:
 
 2. The functionality is enabled by default. Turn off the toggle to disable it.  
     <img src="../images/console-config-disabled.png" alt="Console Config Disabled" title="Config Console Disabled" style="border: 1px solid gray; zoom:70%;">
-
-### Related Link
-
-* [Behavior When the Console is Opened on Multiple Tabs, Devices, or Browsers](../../../console/interacting-with-customers.md#behavior-when-the-console-is-opened-on-multiple-tabs-devices-or-browsers)
