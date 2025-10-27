@@ -1,14 +1,14 @@
-# Import a Tool
+# Import a Workflow
 
-Using import functionality, you can create a new tool or add it as a version to an existing tool in your account. The import process preserves tool configuration while handling environment variables, errors, and role permissions.
+Using import functionality, you can create a new workflow or add it as a version to an existing workflow in your account. The import process preserves workflow configuration while handling environment variables, errors, and role permissions.
 
-When a tool is imported, its prompts, properties, and linked tools with their configurations are carried over. This ensures that the tool works seamlessly in the new system. Additionally, any models present in the exported tool — specifically external and open-source models — will be automatically linked and integrated. If any child tools are missing or there are conflicts, the system will notify you.
+When a workflow is imported, its prompts, properties, and linked workflows with their configurations are carried over. This ensures that the workflow works seamlessly in the new system. Additionally, any models present in the exported workflow — specifically external and open-source models — will be automatically linked and integrated. If any child workflows are missing or there are conflicts, the system will notify you.
 
-Creating a new tool involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported tool a unique name to avoid conflicts with existing tool. [Learn more](../workflows/import-a-tool.md/#import-to-create-a-new-tool){:target="_blank"}.
+Creating a new workflow involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported workflow a unique name to avoid conflicts with existing workflow. [Learn more](../workflows/import-a-tool.md/#import-to-create-a-new-tool){:target="_blank"}.
 
-When importing a tool version to a parent tool, the imported flow definition becomes the new in-dev version, overriding the flow, app definition, and environment variable files. The previous version is renamed and saved in the list, with optional backup of the current version available.
+When importing a workflow version to a parent workflow, the imported flow definition becomes the new in-dev version, overriding the flow, app definition, and environment variable files. The previous version is renamed and saved in the list, with optional backup of the current version available.
 
-Once the import is complete, the tool flow canvas is updated with the latest configuration changes.
+Once the import is complete, the workflow canvas is updated with the latest configuration changes.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -28,7 +28,7 @@ Once the import is complete, the tool flow canvas is updated with the latest con
 
 ## Import to Create a New Tool 
 
-To initiate a tool creation journey through the import functionality, follow the steps below:
+To initiate a tool creation journey through the import functionality, follow these steps:
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
