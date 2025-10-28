@@ -5,11 +5,12 @@ Connecting with Weights and Biases (WandB) allows users to link to the platform,
 **To integrate with your Weights and Biases (WandB) account, follow these steps**:
 
 
-1. Click the **Settings** icon on the top navigation bar of the application. The **Integrations** page is displayed.
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-    <img src="../images/navigate-to-settings.png" alt="Navigate to Settings" title="Navigate to Settings" style="border: 1px solid gray; zoom:80%;">
+2. Click **Integrations** on the left menu.
 
-1. Click the **Weights & Biases** option from the list of Integrations. The Weights & Biases section is expanded.
+3. Click the **Weights & Biases** option from the list of Integrations. The Weights & Biases section is expanded.
 
     <img src="../images/add-w&b-connection.png" alt="Add W&B Connection" title="Add W&B Connection" style="border: 1px solid gray; zoom:80%;">
 

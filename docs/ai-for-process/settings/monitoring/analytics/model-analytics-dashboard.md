@@ -39,7 +39,6 @@ To access the **Model Analytics** dashboard, follow the steps below:
 
 2. On the left menu, select **Monitoring** > **Analytics**.
 3. Click the **Model Analytics** tab on the right-hand side screen.
-<img src="../images/model-analysis-dashboard-access.png" alt="model analytics dashboard" title="model analytics dashboard" style="border: 1px solid gray; zoom:75%;">
 
 The system loads the **Model Analytics** dashboard with data for the last 7 days, which is the default time range selection. You can select the required period to generate data.
 

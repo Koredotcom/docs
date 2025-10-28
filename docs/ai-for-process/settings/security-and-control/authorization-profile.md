@@ -25,8 +25,6 @@ To access the feature, follow the steps below:
    <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Security & Control** > **Authorization profile** on the left navigation menu.
-<img src="../images/auth-profile-access.png" alt="auth profile access" title="auth profile access" style="border: 1px solid gray; zoom:75%;">
-
 
 ## Supported Auth Models
 
@@ -101,8 +99,6 @@ If the mandatory fields are left blank, validation error messages appear, as sho
 <img src="../images/save-new-auth.png" alt="save new auth" title="save new auth" style="border: 1px solid gray; zoom:75%;"></ol>
 
 A success message is displayed, and the new auth profile is added to the **Authorization Profile** page.
-
-<img src="../images/profile-created-message.png" alt="success message" title="success message" style="border: 1px solid gray; zoom:75%;">
 
 ## Define Authorization Fields
 

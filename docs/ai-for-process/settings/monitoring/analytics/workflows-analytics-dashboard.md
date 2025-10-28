@@ -1,6 +1,6 @@
 # Workflows Performance Analytics
 
-The **Workflow Analytics Dashboard** offers a unified and comprehensive workflow for tracking and analyzing the performance of the deployed workflows and their specific versions within your account.
+The **Workflows Analytics Dashboard** offers a unified and comprehensive workflow for tracking and analyzing the performance of the deployed workflows and their specific versions within your account.
 
 It provides valuable insights into metrics such as successful or failed workflow runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../workflows/tool-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a workflow.
 
@@ -29,22 +29,21 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 * Compare workflow performance over time by analyzing successful versus failed runs, and identifying failure patterns.
 * Prioritize node execution based on rate limits subscription for your account.
 
-## Navigate to the Workflow Analytics Dashboard
+## Access the Workflows Analytics Dashboard
 
-To access the **Workflow Analytics** dashboard, follow the steps below:
+To access the **Workflows Analytics** dashboard, follow the steps below:
 
 1. Log in → In AI for Process Modules top menu → Click **Settings**.
    <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 2. On the left menu, select **Monitoring** > **Analytics**.
-3. Click the **Workflow Analytics** tab on the right-hand side screen.
-<img src="../images/agents-analytics-tab.png" alt="Workflow Analytics tab" title="Workflow Analytics tab" style="border: 1px solid gray; zoom:75%;">
+3. Click the **Workflows Analytics** tab on the right-hand side screen.
 
-The system loads the **Workflow Analytics** dashboard with data for the last 7 days, which is the **default time range selection**. You can select the required period to generate data.
+The system loads the **Workflows Analytics** dashboard with data for the last 7 days, which is the **default time range selection**. You can select the required period to generate data.
 
 ## Key Performance Metrics
 
-The **Workflow Analytics** Dashboard supports the following account and workflow-specific metrics to provide actionable insights.
+The **Workflows Analytics** Dashboard supports the following account and workflow-specific metrics to provide actionable insights.
 
 ### Account-Level Metrics
 
@@ -68,14 +67,14 @@ For detailed statistics on the total events and the runs executed by each node, 
 
 <img src="../images/info-icon.png" alt="info icon" title="info icon" style="border: 1px solid gray; zoom:75%;">
 
-To generate and view the required Workflow Analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+To generate and view the required Workflows Analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 
-### workflow-specific Metrics
+### Workflow-specific Metrics
 
 The following metrics help analyze the performance of the selected workflow and version in your account during the selected period:
 
-* **workflow Runs**: Depicts the success and failure trends of the workflow runs the selected workflow version executes.
-* **Avg. workflow Response Time**: Displays the selected workflow version’s ART to the requests received during the selected period.
+* **Workflow Runs**: Depicts the success and failure trends of the workflow runs the selected workflow version executes.
+* **Avg. Workflow Response Time**: Displays the selected workflow version’s ART to the requests received during the selected period.
 * **Nodes Execution**: Displays the event-based node execution graph for all the node types on a single day or across the selected date range. **Nodes are executed up to the rate limit threshold subscription for your account**.
 
 To view the required data, use the [Global Timeline Filters](./workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} and [Workflow Performance Filters](./workflows-analytics-dashboard.md/#workflow-performance-filters){:target="_blank"}. 
@@ -143,7 +142,7 @@ The following widget-level filters apply exclusively to [workflow-specific metri
 
 ## Workflow Performance Data Widgets
 
-The **Workflow Analytics** dashboard displays the widgets mentioned below to represent the [Workflow-specific performance metrics](../analytics/workflows-analytics-dashboard.md/#workflow-specific-metrics){:target="_blank"}. The graphs update automatically when a different workflow version is selected.
+The **Workflows Analytics** dashboard displays the widgets mentioned below to represent the [Workflow-specific performance metrics](../analytics/workflows-analytics-dashboard.md/#workflow-specific-metrics){:target="_blank"}. The graphs update automatically when a different workflow version is selected.
 
 ### How it Works
 
@@ -257,7 +256,7 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 
 ## Expanded Widget View
 
-You can expand any widget on the **Workflow Analytics Dashboard** for a drill down view of analytics trends. Each expanded view enables you to apply widget-level filters, offering a focused analysis of workflow performance for that widget.
+You can expand any widget on the **Workflows Analytics Dashboard** for a drill down view of analytics trends. Each expanded view enables you to apply widget-level filters, offering a focused analysis of workflow performance for that widget.
 
 The widget-level filters include the following:
 

@@ -23,12 +23,11 @@ The AI for Process supports 120+ integrations with different authorization types
 
 To access the feature, follow the steps below:
 
-1. Log in → In AI for Process Modules → Click **Autonomous Agents**.
-   <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** → On the left navigation menu → Click **Integrations**.
-    <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
-
+2. On the left navigation menu → Click **Integrations**.
+    
 ## Key Features
 
 The features supported on the **Integrations** page include:
@@ -1780,7 +1779,7 @@ To add a connection and configure an integration, follow the steps below:
 A success message appears after setup.
 
 You will be redirected to the following page, where all the connections for the provider are listed.
-<img src="../images/integration-summary.png" alt="integration summary" title="integration summary" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/established-integration-aip.png" alt="integration summary" title="integration summary" style="border: 1px solid gray; zoom:75%;">
 
 ### Manage Connection Errors
 

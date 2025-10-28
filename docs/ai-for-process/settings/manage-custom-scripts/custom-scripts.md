@@ -45,8 +45,7 @@ To access the custom scripts wizard, follow the steps below:
    <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Manage Custom Scripts** on the left menu.
-   <img src="../images/access-manage-custom-scripts.png" alt="manage custom scripts" title="manage custom scripts" style="border: 1px solid gray; zoom:75%;">
-
+   
 ## Import and Deploy a Custom Script
 
 To import and add a custom script, follow the steps below:
@@ -248,8 +247,7 @@ The next step is to review all the configuration details before deploying the sc
 The following message is displayed when the script deployment progresses, and the status changes to “*Deploying*”.
 <img src="../images/initiated-deployment.png" alt="initiated deployment" title="initiated deployment" style="border: 1px solid gray; zoom:75%;">
  
-Once the script is deployed successfully, the following message is displayed, and the status changes to “*Deployed*”. 
-<img src="../images/deployed-success.png" alt="deployed success" title="deployed success" style="border: 1px solid gray; zoom:75%;">
+Once the script is deployed successfully, a success message is displayed, and the status changes to “*Deployed*”. 
 
 **Email Notification**
 
@@ -559,8 +557,6 @@ To delete, follow the steps below on the **Manage Custom Scripts** page:
 
 A success message is displayed, and the script is permanently removed. 
 
-<img src="../images/delete-script-confirmation.png" alt="script deletion" title="script deletion" style="border: 1px solid gray; zoom:75%;">
- 
 To see when **delete** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}.
 
 
