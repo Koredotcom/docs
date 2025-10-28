@@ -220,7 +220,7 @@ nav:
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md
       - Analytics:
-        - Workflow Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
+        - Workflow Analytics Dashboard: settings/monitoring/analytics/workflows-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
         - Model Traces: settings/monitoring/analytics/model-traces.md
       - Custom Scripts: settings/monitoring/monitoring-custom-scripts.md

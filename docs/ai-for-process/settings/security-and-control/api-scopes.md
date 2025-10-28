@@ -110,7 +110,6 @@ To access this feature, follow the steps below:
    <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Security & Control** > **API Scopes** on the left navigation menu.
-    <img src="../images/click-api-scopes.png" alt="select api scopes" title="select api scopes" style="border: 1px solid gray; zoom:75%;">
 
 ## Implement API Scoping
 

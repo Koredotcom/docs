@@ -34,10 +34,10 @@ Steps to add and configure the node:
 
 ### Step 1: Open Workflow Builder
 
-* Log in → AI for Process.
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 * Select your workflow → Click **Go to Flow**.
-  <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 2: Add the API Node
 

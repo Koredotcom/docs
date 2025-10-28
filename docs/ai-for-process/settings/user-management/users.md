@@ -69,7 +69,7 @@ The steps mentioned below, allow you to import users' data from a designated fil
    <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 2. On the **Users** dashboard, click **Add New User**, and select **Import**.
-   <img src="../images/import-user.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/add-new-user-aip.png" alt="add user" title="add user" style="border: 1px solid gray; zoom:75%;">
 
 3. Perform one of the following actions on the **Import Users** page:
 

@@ -2,7 +2,7 @@
 
 AI nodes are multimodal components that utilize LLMs for specialized tasks, transforming workflows by supporting diverse file types. These nodes can process and generate various media formats, such as text, images, and audio, within a single workflow. Their adaptability enables developers to build dynamic systems that seamlessly handle and manipulate multiple data types.
 
-Each AI node processes inputs and generates responses, which can be integrated into broader workflows within the tool flow. AI nodes are categorized into the following types:
+Each AI node processes inputs and generates responses, which can be integrated into broader workflows within the workflow. AI nodes are categorized into the following types:
 
 * **Text to Text Nodes**
 
@@ -14,7 +14,7 @@ Each AI node processes inputs and generates responses, which can be integrated i
 
     * Convert textual descriptions into visual representations/relevant images based on the instructions and keywords you provide.
     * Used for generating AI art, concept sketches, and synthetic images.
-    * Example: AI-driven design tools, creative content generation. [Learn more](../types-of-nodes/text-to-image-node.md){:target="_blank"}.
+    * Example: AI-driven design workflows, creative content generation. [Learn more](../types-of-nodes/text-to-image-node.md){:target="_blank"}.
 
 * **Audio to Text Nodes** 
 
@@ -26,5 +26,5 @@ Each AI node processes inputs and generates responses, which can be integrated i
 
     * Extract meaningful text from images.
     * Used for OCR (Optical Character Recognition), image captioning, and content analysis.
-    * Example: AI-powered document scanners, and accessibility tools. [Learn more](../types-of-nodes/image-to-text-node.md){:target="_blank"}.
+    * Example: AI-powered document scanners, and accessibility workflows. [Learn more](../types-of-nodes/image-to-text-node.md){:target="_blank"}.
 

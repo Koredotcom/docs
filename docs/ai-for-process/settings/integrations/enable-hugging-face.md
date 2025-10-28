@@ -8,9 +8,6 @@ AI for Process seamlessly integrates with the Hugging Face platform, allowing yo
    <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Integrations** on the left menu.
-
-    <img src="../images/navigate-to-settings.png" alt="Navigate to Settings" title="Navigate to Settings" style="border: 1px solid gray; zoom:80%;">
-
 3. Click the **Hugging Face** option from the list of Integrations. The Hugging Face section is expanded.
 
     <img src="../images/add-hugging-face-connection.png" alt="Add Hugging Face Connection" title="Add Hugging Face Connection" style="border: 1px solid gray; zoom:80%;">

@@ -1058,8 +1058,7 @@ To access and view audit logs, follow the steps below:
    <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Monitoring** > **Audit Logs** on the left menu.
-   <img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
-
+   
 ## Dashboard Information
 
 The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your AI for Process account:
@@ -1217,8 +1216,7 @@ To export audit logs, follow the steps below:
 2. Click the **Export** icon next to the **Filter By** icon.
 <img src="../images/export-audit-logs.png" alt="export audit logs" title="export audit logs" style="border: 1px solid gray; zoom:75%;">
 
-The following message is displayed once the file is downloaded. The file can be found in the configured location in your system.
-<img src="../images/success-message-export-audit-logs.png" alt="success message" title="success message" style="border: 1px solid gray; zoom:75%;">
+A success message is displayed once the file is downloaded. The file can be found in the configured location in your system.
 
 The downloaded *.CSV* file is automatically named as <code><em>Account_Audit_Logs</em></code>. The schema of the output file is shown below.
 
