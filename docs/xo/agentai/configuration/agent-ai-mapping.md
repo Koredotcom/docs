@@ -26,11 +26,11 @@ Configuring the Agentic Copilot app to a queue enables autonomous task execution
     7. Set the timer for the **Set message delay before auto send** field by using the slider. You can set it to a maximum of 60 seconds.
     8. Click **Save**.  
 
-    <img src="../agent-ai-mapping-images/configure-copilot-app.png" alt="configure-copilot-app" title="configure-copilot-app" style="border: 1px solid gray; zoom:80%;">  
+        <img src="../agent-ai-mapping-images/configure-copilot-app.png" alt="configure-copilot-app" title="configure-copilot-app" style="border: 1px solid gray; zoom:80%;">  
 
-!!! note
+        !!! note
 
-    This feature is available only to Contact Center AI (CCAI) users at this time. 
+            This feature is available only to Contact Center AI (CCAI) users at this time. 
 
 ## Add or Delete a Queue Configuration
 
