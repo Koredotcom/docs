@@ -12,133 +12,131 @@ Once the import is complete, the workflow canvas is updated with the latest conf
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Users with only <b>Viewer</b> permissions can't import a tool.</p></div>
+<p>Users with only <b>Viewer</b> permissions can't import a workflow.</p></div>
 
 ## Best Practices
 
-* **Export the tool first**: Always export the current tool version before importing. This ensures you have all the necessary configurations.
+* **Export the workflow first**: Always export the current workflow version before importing. This ensures you have all the necessary configurations.
 
-* **Check the environment and load dependencies**: Ensure the new environment is set up with all required dependencies such as models, linked tools, and other configurations before importing. This helps ensure compatibility and smooth functionality after the import.
+* **Check the environment and load dependencies**: Ensure the new environment is set up with all required dependencies such as models, linked workflows, and other configurations before importing. This helps ensure compatibility and smooth functionality after the import.
     * Verify that the correct model is already available in the new environment.
-    * Ensure any linked tools are already present in the new environment, by the same name as it's preferred for auto linking.
+    * Ensure any linked workflows are already present in the new environment, by the same name as it's preferred for auto linking.
     * Check environment variables and configuration files to prevent any mismatches.
 
-* **Import the parent tool and version**: After verifying the dependencies in the new environment, import the parent tool and any associated versions. Ensure there are no conflicts with existing tools.
+* **Import the parent workflow and version**: After verifying the dependencies in the new environment, import the parent workflow and any associated versions. Ensure there are no conflicts with existing workflows.
 
 
-## Import to Create a New Tool 
+## Import to Create a New Workflow 
 
-To initiate a tool creation journey through the import functionality, follow these steps:
+To initiate a workflow creation journey through the import functionality, follow these steps:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top navigation bar.
-3. Do one of the following based on your requirements:
+2. Do one of the following based on your requirements:
 
-<ul><li>If you don't have any existing tools and want to create one by importing from another environment, click <b>Import Tool</b>.
+<ul><li>If you don't have any existing workflows and want to create one by importing from another environment, click <b>Import workflow</b>.
 <img src="../images/agent_platform/import_tool.png" alt="import tool" title="import tool" style="border: 1px solid gray; zoom:75%;"></li>
-<li>If you already have tools deployed, the following page is displayed. To import a tool, select the relevant tab on the <b>Tools</b> dashboard and click the <b>Import tool</b> icon.
+<li>If you already have workflows deployed, the following page is displayed. To import a workflow, select the relevant tab on the <b>WOrkflows</b> dashboard and click the <b>Import workflow</b> icon.
 <img src="../images/agent_platform/import_tool.png" alt="click import tool" title="click import tool" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
-<ol start="4"><li>In the <b>Import tool</b> window, providing the following information is mandatory.</li>
-<ul><li><b>Tool Name</b>: Provide a unique tool name.</li>
-<li><b>Flow definition file</b>: Upload the required <b>flow_definition.json</b> file from your local directory. The file includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.</li></ul></ol>
+<ol start="4"><li>In the <b>Import workflow</b> window, providing the following information is mandatory.</li>
+<ul><li><b>Workflow Name</b>: Provide a unique workflow name.</li>
+<li><b>Flow definition file</b>: Upload the required <b>flow_definition.json</b> file from your local directory. The file includes the workflow's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.</li></ul></ol>
 
 Providing the following information is optional:
 
-* **App definition file**: Upload the required **app_definition.json** file, which includes general information about the tool version and guardrails
-* **Environment variable file**: Upload the required **env_variables.json** file, which includes the environment variables set for the tool. 
+* **App definition file**: Upload the required **app_definition.json** file, which includes general information about the workflow version and guardrails
+* **Environment variable file**: Upload the required **env_variables.json** file, which includes the environment variables set for the workflow. 
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>The <b>Import</b> button is enabled when the required information is provided.</li>
-<li>AI node models and guardrail configurations may not be available in the current account. Reconfigure them before running the tool.</li>
-<li>The model name from the original tool is imported as a placeholder into the AI node's <b>Select Model</b> field. Later, you can assign a value from the available options.</li>
+<li>AI node models and guardrail configurations may not be available in the current account. Reconfigure them before running the workflow.</li>
+<li>The model name from the original workflow is imported as a placeholder into the AI node's <b>Select Model</b> field. Later, you can assign a value from the available options.</li>
 <li>The values for <b>System Prompt</b>, <b>Prompt</b>, <b>Timeout</b>, and <b>Hyperparameters</b> are imported for the AI node.</li></ul></p></div>
 
 <ol start="5"><li>Click <b>Import</b>.</li>
 <img src="../images/agent_platform/click-import-new.png" alt="click import" title="click import" style="border: 1px solid gray; zoom:75%;"></ol>
 
-Once the import is complete, the system will redirect you to the **Tool Flow** page, where you can access the new tool’s flow canvas by clicking **Go to flow**.
+Once the import is complete, the system will redirect you to the **Workflow** page, where you can access the new workflow's canvas by clicking **Go to flow**.
 <img src="../images/agent_platform/tool_flow.png" alt="tool flow page" title="tool flow page" style="border: 1px solid gray; zoom:75%;">
 
-The imported tool is listed under **All tools** and **My tools** on the **Tools** dashboard.
+The imported workflow is listed under **All Workflows** and **My Workflows** on the **Workflow** dashboard.
 
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p><ul><li>The status of the imported tool is set to <b>In Development</b>.</li>
-<li>The node types, tool descriptions, input and output variables, scanners, and sync/async setup are kept intact during the import.</li>
+<p><ul><li>The status of the imported workflow is set to <b>In Development</b>.</li>
+<li>The node types, workflow descriptions, input and output variables, scanners, and sync/async setup are kept intact during the import.</li>
 <li>If the AI node's model doesn't match any available models in the current account, the model field is kept empty, but all prompt definitions are imported.</li>
 <li>API keys are't transferred during the import process.</li>
-<li>The imported tool can't be shared with other users.</li></p></div>
+<li>The imported workflow can't be shared with other users.</li></p></div>
 
 **Failure Scenarios**
 
-The import may fail due to an incompatible tool version, a corrupt file, an internal error, or missing guardrails in the current account, triggering an error notification.
+The import may fail due to an incompatible workflow version, a corrupt file, an internal error, or missing guardrails in the current account, triggering an error notification.
 
-## Import Tool as a Version
+## Import WOrkflow as a Version
 
-Use the **Import** functionality under **Tools** > **Configurations** to add a tool as a version of a parent tool, replacing the existing one. You should back up the current in-development version to preserve its configuration definitions. The export file is saved as '<code>Exported_<i>ToolName</i>.zip</code>.’
+Use the **Import** functionality under **Workflows** > **Configurations** to add a workflow as a version of a parent workflow, replacing the existing one. You should back up the current in-development version to preserve its configuration definitions. The export file is saved as '<code>Exported_<i>Workflow Name</i>.zip</code>.’
 
-When you import an tool as a version, you must upload all the following files:
+When you import an workflow as a version, you must upload all the following files:
 
-* **Flow definition file**: Upload the required **flow_definition.json** file from your local directory. The file includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.
-* **App definition file**: Upload the required **app_definition.json** file, which includes general information about the tool version and guardrails.
-* **Environment variable file**: Upload the required **env_variables.json** file, which includes the environment variables set for the tool. Any conflicts between environment variables in the parent tool and the imported version must be resolved. [Learn more](./configure-a-tool.md#manage-environment-variables){:target="_blank"}.
+* **Flow definition file**: Upload the required **flow_definition.json** file from your local directory. The file includes the workflow's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.
+* **App definition file**: Upload the required **app_definition.json** file, which includes general information about the workflow version and guardrails.
+* **Environment variable file**: Upload the required **env_variables.json** file, which includes the environment variables set for the workflow. Any conflicts between environment variables in the parent workflow and the imported version must be resolved. [Learn more](./configure-a-tool.md#manage-environment-variables){:target="_blank"}.
 
-### Steps to Import a Tool
+### Steps to Import a Workflow
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To import a tool as a version, the parent tools must be deployed in your account.</p></div>
+<p>To import a workflow as a version, the parent workflows must be deployed in your account.</p></div>
 
-To import a tool as a version, follow the steps below:
+To import a workflow as a version, follow the steps below:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
-2. Click the **Tools** tab on the top navigation bar, and select the tool you want to import. 
+1. Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+2. Click the **Workflows** tab on the top navigation bar, and select the workflow you want to import. 
 3. Click **Configurations** on the left menu.
-4. Scroll down to the **Import tool** section and click **Import**.
+4. Scroll down to the **Import workflow** section and click **Import**.
     <img src="../images/agent_platform/import_tool_config.png" alt="import tool configuration" title="import tool configuration" style="border: 1px solid gray; zoom:75%;">
 
-5. (Optional) In the following dialog, select the **Back up your current tool** option to preserve the data of the version being replaced.
+5. (Optional) In the following dialog, select the **Back up your current workflow** option to preserve the data of the version being replaced.
 
     <img src="../images/agent_platform/backup_tool.png" alt="import confirmation" title="import confirmation" style="border: 1px solid gray; zoom:75%;">
 
 **NOTE**
 
-Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. [Learn more](export-a-tool.md){:target="_blank"}.
+Backing up automatically exports and saves the .zip package of the workflow definition files to the designated location when the import is initiated. [Learn more](export-a-tool.md){:target="_blank"}.
 
-If you choose not to back up/export the tool configurations, unselect the back-up option and proceed to the next step.
+If you choose not to back up/export the workflow configurations, unselect the back-up option and proceed to the next step.
 
 <ol start="6"><li>Click <b>Import</b> in the confirmation dialog.</li>
-<li>In the <b>Import Tool</b> window, upload the required JSON files and click <b>Import</b>.</li></ol>
+<li>In the <b>Import WOrkflow</b> window, upload the required JSON files and click <b>Import</b>.</li></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><i>Tool Name</i> is't required since the current version’s name is assigned.</p></div>
+<p><i>Workflow Name</i> is't required since the current version’s name is assigned.</p></div>
 
-The imported tool is validated, and if no errors exist, the tool is imported successfully.
+The imported workflow is validated, and if no errors exist, the workflow is imported successfully.
 
-The imported version is added under the parent tool.
+The imported version is added under the parent workflow.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p><ul><li>The status of the parent tool is set to "<b>In Development</b>.”</li>
+<p><ul><li>The status of the parent workflow is set to "<b>In Development</b>.”</li>
 <li><b>Updated on</b> reflects the date the version was imported.</li></ul></p></div>
 
 ### Conflicting Environment Variables
 
-When importing environment variables during tool version import, conflicts may arise between those of the parent tool and the imported version. If neither tool has environment variables, no conflicts occur.
+When importing environment variables during workflow version import, conflicts may arise between those of the parent workflow and the imported version. If neither workflow has environment variables, no conflicts occur.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>Verify the environment variables before importing. For conflicting values, the existing ones are retained if not changed.</p></div>
 
-You must resolve conflicting variables by either keeping the existing value (of the version being replaced) or replacing them (with values from the imported tool) to ensure a smooth import process.
+You must resolve conflicting variables by either keeping the existing value (of the version being replaced) or replacing them (with values from the imported workflow) to ensure a smooth import process.
 
 When conflicting environment variables are detected, it displays the following window. To resolve conflicts, follow the steps below:
 
@@ -163,7 +161,7 @@ To cancel the import process during the conflicting environment variables resolu
 
 ## Related Links
 
-* [Create a Tool](../workflows/create-a-new-tool.md){:target="_blank"}- Create a new tool and configure its flow.
-* [Export a Tool](../workflows/export-a-tool.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.
-* [Deploy a Tool](../workflows/deploy-a-tool.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for tool integration.
-* [Configure a Tool](../workflows/configure-a-tool.md){:target="_blank"}- Modify the tool's details, configure settings, or undeploy and delete it if unused.
+* [Create a Workflow](../workflows/create-a-new-tool.md){:target="_blank"}- Create a new workflow and configure its flow.
+* [Export a Workflow](../workflows/export-a-tool.md){:target="_blank"}- Export the set configurations of a workflow for data sharing and preservation.
+* [Deploy a Workflow](../workflows/deploy-a-tool.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for workflow integration.
+* [Configure a Workflow](../workflows/configure-a-tool.md){:target="_blank"}- Modify the workflow's details, configure settings, or undeploy and delete it if unused.

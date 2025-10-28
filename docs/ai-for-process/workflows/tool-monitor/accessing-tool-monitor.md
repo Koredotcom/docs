@@ -1,28 +1,27 @@
-# Accessing Tool Monitor
+# Accessing Workflow Monitor
 
-Steps to access the tool monitor page:
+Steps to access the workflow monitor page:
 
-1. Log in to your Agent Platform account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
    
-2. On the top navigation bar, click **Tools**.
-3. On the **All tools** page, click the desired tool.  
+2. On the **Workflows** page, click the desired workflow.  
 
-    Ensure that the status of the selected tool is ‘Deployed’. Tool monitoring is only available for tool deployed in production. Tools that are in debugging or design phases are not tracked here. 
+    Ensure that the status of the selected workflow is deployed. Workflow monitoring is only available for workflow deployed in production. Workflows that are in debugging or design phases aren't tracked here. 
 
     <img src="../images/agent_monitor_new.png" alt="All agents" title="All agents" style="border: 1px solid gray; zoom:80%;">
 
-4. In the left navigation pane, click **Tool monitor**. The Tool monitor page is displayed.  
+3. In the left navigation pane, click **Workflow monitor**. The Workflow monitor page is displayed.  
 <img src="../images/agent_monitor_dashboard.png" alt="Agent monitor dashboard" title="Agent monitor dashboard" style="border: 1px solid gray; zoom:80%;">
 
-5. Click one of the following tabs to see the data for the deployed tools:
+4. Click one of the following tabs to see the data for the deployed workflows:
     * **All runs**
     * **Model runs**
 
-    For more information, see [Understanding Tool Monitor](../tool-monitor/understanding-the-tool-monitor-interface.md).
+    For more information, see [Understanding Workflow Monitor](../tool-monitor/understanding-the-tool-monitor-interface.md).
 
-6. Click each row for detailed information on each tool run or model run. A detailed view panel opens on the right.  
+5. Click each row for detailed information on each workflow run or model run. A detailed view panel opens on the right.  
 
     For more information, see [Viewing detailed run information](../tool-monitor/understanding-the-tool-monitor-interface.md#viewing-detailed-run-information).
 
-7. (Optional) To filter or search the list of runs or calls on the Tool monitor page, see [Searching and filtering](../tool-monitor/understanding-the-tool-monitor-interface.md#searching-and-filtering-information).
+6. (Optional) To filter or search the list of runs or calls on the Workflow monitor page, see [Searching and filtering](../tool-monitor/understanding-the-tool-monitor-interface.md#searching-and-filtering-information).

@@ -1,10 +1,10 @@
-# Understanding Tool Monitor
+# Understanding Workflow Monitor
 
-The Tool Monitor capabilities are shown on the following tabs:
+The Workflow Monitor capabilities are shown on the following tabs:
 
-* **All runs**: It shows comprehensive data on all tool run instances and provides a comprehensive record of all the endpoint calls made to the tool. 
+* **All runs**: It shows comprehensive data on all workflow run instances and provides a comprehensive record of all the endpoint calls made to the workflow. 
 
-* **Model runs**: This tab shows specific data on AI node run instances, focusing on endpoint calls made to AI nodes within the tool.
+* **Model runs**: This tab shows specific data on AI node run instances, focusing on endpoint calls made to AI nodes within the workflow.
 
 Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
@@ -12,21 +12,21 @@ Both tabs include summary metrics at the top of the page, including total runs/r
 
 ## All Runs
 
-The All runs tab provides the following information for each tool run:
+The All runs tab provides the following information for each workflow run:
 
 * **Run ID**: The unique identifier for the flow.
 * **Status**: The current state of the request. It displays one of the following statuses:
     * **In Progress**: The request is being processed.
     * **Waiting**: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
     * **Success**: The request has been completed successfully.
-    * **Failed**: The request was not completed successfully.
-* **Response time**: The duration the tool takes to complete a request and provide an output.
+    * **Failed**: The request wasn't completed successfully.
+* **Response time**: The duration the workflow takes to complete a request and provide an output.
 * **Nodes executed**: The total number of nodes executed in the run.
 * **Start time**: The time when the request is initiated.
 * **End time**: The time the response is received.
-* **Source**: Based on whether the tool was run using an **Agentic App** or an **API endpoint**, the following information is displayed:
-    * **Agentic App** - The name of the Agentic App used to run the tool.
-    * **API Key**: The API key name used to execute the tool. (This is the name provided in the API keys page when you created a new API key. If you did not provide a name, the system uses the default name ‘*Secret Key*’. You can have multiple API keys for a single tool).
+* **Source**: Based on whether the workflow was run using an **Agentic App** or an **API endpoint**, the following information is displayed:
+    * **Agentic App** - The name of the Agentic App used to run the workflow.
+    * **API Key**: The API key name used to execute the workflow. (This is the name provided in the API keys page when you created a new API key. If you didn't provide a name, the system uses the default name ‘*Secret Key*’. You can have multiple API keys for a single workflow).
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -35,8 +35,8 @@ The All runs tab provides the following information for each tool run:
 
 You can also see the following metrics on the top of the page: 
 
-* **TOTAL RUNS**: The total number of tool runs. 
-* **RESPONSE TIME**: The average response time of all the tool runs. It is measured by the following two metrics:
+* **TOTAL RUNS**: The total number of workflow runs. 
+* **RESPONSE TIME**: The average response time of all the workflow runs. It's measured by the following two metrics:
     * **P90**: This metric represents the response time below which 90% of the requests fall.
     * **P99**: This metric represents the response time below which 99% of the requests fall.
 * **FAILURE RATE**: The percentage of failed runs.
@@ -45,9 +45,9 @@ These metrics are dependent on the selected date range, filters, and search crit
 
 ## 	Model Runs
 
-Each AI node in the tool is recorded as a separate request in the Model runs tab of the Tool monitor page. For example, if three AI nodes are used in a tool, three separate requests for each of the three AI nodes are displayed.
+Each AI node in the workflow is recorded as a separate request in the Model runs tab of the Workflow monitor page. For example, if three AI nodes are used in a workflow, three separate requests for each of the three AI nodes are displayed.
 
-If your tool currently does not have any AI nodes, this section will remain empty. Once you add AI nodes, the Model runs will begin to reflect here.
+If your workflow doesn't have any AI nodes, this section will remain empty. Once you add AI nodes, the Model runs will begin to reflect here.
 
 The Model runs tab provides the following information for each AI node call:
 
@@ -56,9 +56,9 @@ The Model runs tab provides the following information for each AI node call:
     * **In Progress**: The request is being processed.
     * **Waiting**: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
     * **Success**: The request has been completed successfully.
-    * **Failed**: The request was not completed successfully.
+    * **Failed**: The request wasn't completed successfully.
 * **Node name**: The name of the AI node.
-* **Model name**: The model that is used for the AI node.
+* **Model name**: The model that's used for the AI node.
 * **Response time**: The amount of time taken by the AI node to complete the request.
 * **Start time**: The time when the AI node has started its execution.
 * **End time**: The time when the AI node has completed its execution.
@@ -66,7 +66,7 @@ The Model runs tab provides the following information for each AI node call:
 You can also see the following metrics on the top of the page:
 
 * **TOTAL REQUESTS**: The total number of AI node requests.
-* **RESPONSE TIME**: The average response time of all the AI node requests. It is measured by the following two metrics:
+* **RESPONSE TIME**: The average response time of all the AI node requests. It's measured by the following two metrics:
     * **P90**: This metric represents the response time below which 90% of the requests fall.
     * **P99**: This metric represents the response time below which 99% of the requests fall.
 * **FAILURE RATE**: The percentage of instances in which the AI node has failed in execution.
@@ -75,61 +75,61 @@ These metrics are dependent on the selected date range, filters, and search crit
 
 ## Viewing Detailed Run Information
 
-Clicking each row in either the All runs tab or the Model runs tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Tool flow canvas. [Learn more](../tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"}.
+Clicking each row in either the All runs tab or the Model runs tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the workflow canvas. [Learn more](../tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"}.
 
 <img src="../images/agent_monitor_viewing_run_information.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
 
 The panel displays the following details:
 
 *  **Run ID/Request ID**: The unique identifier for the flow.
-* **Response Time**: The duration the tool takes to complete a request and provide an output.
+* **Response Time**: The duration the workflow takes to complete a request and provide an output.
 *  **Debug icon**: Clicking this icon displays the debug log details.
-*  **Input**: The Input section displays the input sent to the tool.
+*  **Input**: The Input section displays the input sent to the workflow.
 *  **Flow log**: The flow log section displays the information of each node.
     * **Success**: Displays the log as in the debug panel.
     * **Failure**: Displays failure details as in the debug panel.
 
         For AI nodes, when you expand the node you can see the information related to each node along with the scanner information.
 
-*  **Output section**: The Output section displays the tool's output (for successful runs). You can copy the output and view tokens.
+*  **Output section**: The Output section displays the workflow's output (for successful runs). You can copy the output and view tokens.
 
     <img src="../images/agent_monitor_viewing_run_information_detailed.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
 
 
-## Understanding the Impact of Timeouts on Tool Endpoints
+## Understanding the Impact of Timeouts on Workflow Endpoints
 
-The impact of timeouts on tool endpoints depends on whether the process is synchronous (Sync) or asynchronous (Async). **Sync** requests are handled and fulfilled immediately, while **Async** requests may pause and show a ‘Waiting’ status until a response is received. If the response time is longer or the timeout is set to infinite, the system will wait indefinitely until the external system responds.
+The impact of timeouts on workflow endpoints depends on whether the process is synchronous (Sync) or asynchronous (Async). **Sync** requests are handled and fulfilled immediately, while **Async** requests may pause and show a ‘Waiting’ status until a response is received. If the response time is longer or the timeout is set to infinite, the system will wait indefinitely until the external system responds.
 
-Below are the four scenarios showing how timeouts affect the tool endpoint, along with the corresponding status on the Tool monitoring page:
+Below are the four scenarios showing how timeouts affect the workflow endpoint, along with the corresponding status on the Workflow monitoring page:
 
-**Tool 'Sync' & API node 'Sync'**:
+**Workflow 'Sync' & API node 'Sync'**:
 
 * Request immediately fulfilled, no specific message to the endpoint.
 * 'In-progress' status while running.
 
-**Tool 'Sync' & API node 'Async' (API node timeout <  Sync timeout)**:
+**Workflow 'Sync' & API node 'Async' (API node timeout <  Sync timeout)**:
 
-* Tool API retrieves data, flow executes as 'In-progress' status, and the response is sent.
-* External requests: Tool execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when tool execution resumes.
+* Workflow API retrieves data, flow executes as 'In-progress' status, and the response is sent.
+* External requests: Workflow execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when workflow execution resumes.
 
-**Tool 'Async' & API node 'Sync'**:
+**Workflow 'Async' & API node 'Sync'**:
 
-* Tool executes, and the response is sent to the callback URL.
+* Workflow executes, and the response is sent to the callback URL.
 * 'In-progress' status while flow is running.
 
-**Tool 'Async' & API node 'Async' (API node timeout < Tool Async timeout OR both are set to infinite)**:
+**Workflow 'Async' & API node 'Async' (API node timeout < Workflow Async timeout OR both are set to infinite)**:
 
-* External requests: Tool execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when tool execution resumes.
+* External requests: Workflow execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when workflow execution resumes.
 * If the external system tries the same callback URL again, it will be notified that the request has already been fulfilled.
 
 
-The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see [Configure a tool](../configure-a-tool.md){:target="_blank"} and [API Node](../tool-flows/types-of-nodes/api-node.md){:target="_blank"}.
+The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see [Configure a workflow](../configure-a-tool.md){:target="_blank"} and [API Node](../tool-flows/types-of-nodes/api-node.md){:target="_blank"}.
 
 ## Searching and Filtering Information
 
 ### Manual Search
 
-Use the search box in the top right corner of the Tool monitor page to find specific runs or calls based on keywords.
+Use the search box in the top right corner of the Workflow monitor page to find specific runs or calls based on keywords.
 
 ### Time-based Search
 
@@ -137,7 +137,7 @@ Use the calendar option to search for runs or calls from a specific time period.
 
 Steps to use the time-based search:
 
-1. Click the calendar button in the top right corner of the Tool monitor page.
+1. Click the calendar button in the top right corner of the Workflow monitor page.
 
 2. Select a predefined time range or set custom dates.
 
@@ -146,7 +146,7 @@ Steps to use the time-based search:
 
 ### Custom Filters
 
-Use the filter option to filter the information displayed in the Tool monitor dashboard by applying custom filters. These filters allow you to select specific columns, apply operators such as **Is** **Equal To** or **Is Not Equal To,** and then specify the desired value.
+Use the filter option to filter the information displayed in the Workflow monitor dashboard by applying custom filters. These filters allow you to select specific columns, apply operators such as **Is** **Equal To** or **Is Not Equal To,** and then specify the desired value.
 
 You can also add multiple filters using AND/OR operators for more precise results.
 
@@ -157,11 +157,11 @@ Steps to use the filters:
 3. Select options for Column, Operator, and Value.
 4. Click **Apply**.
 
-## Tool Run Errors
+## Workflow Run Errors
 
-In the **All runs** section, any error that occurs via the endpoint during an tool run is displayed in a separate window for the specified *Run ID*.
+In the **All runs** section, any error that occurs via the endpoint during an workflow run is displayed in a separate window for the specified *Run ID*.
 
-To view detailed error information, click on the corresponding tool run entry in the **Tool Monitor** dashboard.
+To view detailed error information, click on the corresponding workflow run entry in the **Workflow Monitor** dashboard.
 
 
 An error message includes the following information:
@@ -174,15 +174,15 @@ An error message includes the following information:
 
 The errors are classified as follows:
 
-* **Authorization:** An error that occurs during API key authorization of a tool.
-* **Data Validation:** Any discrepancy detected when validating input fields and API calls during a tool run.
+* **Authorization:** An error that occurs during API key authorization of a workflow.
+* **Data Validation:** Any discrepancy detected when validating input fields and API calls during a workflow run.
 * **Content Filter:** Breaches of guardrail threshold limits during AI node execution.
 * **Internal Server Error:** Technical issues encountered with the internal server.
 * **Network**: Technical issues encountered with the network connectivity.
 
 ### Error Scenarios 
 
-The table below lists the errors that can occur in the **Tool Monitoring** dashboard, including the error categories and HTTP status codes:
+The table below lists the errors that can occur in the **Workflow Monitoring** dashboard, including the error categories and HTTP status codes:
 
 
 <table>
@@ -199,7 +199,7 @@ The table below lists the errors that can occur in the **Tool Monitoring** dashb
   <tr>
    <td>Mandatory input field
    </td>
-   <td>A mandatory input field is missing for the tool run.
+   <td>A mandatory input field is missing for the workflow run.
    </td>
    <td rowspan="4" >Data Validation
    </td>
