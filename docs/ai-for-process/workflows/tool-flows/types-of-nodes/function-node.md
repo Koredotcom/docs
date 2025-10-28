@@ -1,6 +1,6 @@
 # Function Node - Empower Workflows with Custom Code
 
-The Function node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
+The Function node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your workflows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
 
 ## Key Capabilities
 
@@ -20,7 +20,7 @@ The Function node is a powerful component that enables you to extend your automa
 
 ## How It Works
 
-The Function Node integrates seamlessly into your tool flows, accepting inputs from previous nodes and passing processed outputs to subsequent nodes. You can either write code directly in the built-in editor or reference custom functions from deployed scripts. The node supports both static and dynamic inputs through context variables, making it adaptable to various automation scenarios.
+The Function Node integrates seamlessly into your workflows, accepting inputs from previous nodes and passing processed outputs to subsequent nodes. You can either write code directly in the built-in editor or reference custom functions from deployed scripts. The node supports both static and dynamic inputs through context variables, making it adaptable to various automation scenarios.
 
 <img src="./../images/function_node_new.png" alt="Function Node" title="Function Node" style="border: 1px solid gray; zoom:40%;">
 
@@ -35,9 +35,10 @@ Steps to add and configure the node:
 
 ### Step 1: Open Flow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
-  <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+
+* Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add the Function Node
 
@@ -132,7 +133,7 @@ To write a custom function code from scratch (define its logic and flow), follow
 
 #### Context Variables for Dynamic Inputs
 
-Before you [run the flow](../types-of-nodes/function-node.md/#step-3-run-the-tool-flow){:target="_blank"}, provide clear instructions for the model to follow by [adding the input variable(s)](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"} using **context variables**. Context variables allow you to include dynamic values in the script that a node executes to generate its output. The JSON code editor supports both **JavaScript** and **Python** formats.
+Before you [run the flow](#step-3-run-the-workflow){:target="_blank"}, provide clear instructions for the model to follow by [adding the input variable(s)](#dynamic-inputs){:target="_blank"} using **context variables**. Context variables allow you to include dynamic values in the script that a node executes to generate its output. The JSON code editor supports both **JavaScript** and **Python** formats.
 
 #### Syntaxes for the Context Input
 
@@ -150,11 +151,9 @@ For example, `context["steps"]["Start"]["Q3balance"]`
 
 The above syntaxes fetch the variable “*Q3balance*” that you define in the **Start** node. [Learn more](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"}.
 
-
-
 ### Using Agent Memory in the script
 
-Memory Stores in Agentic Apps enable agents to retain, access, and manipulate information during a session or across sessions. The data stored in memory can be extremely useful for providing context and state persistence within the tools. The Function node supports accessing agent memory, allowing you to create dynamic, context-aware, and stateful logic directly within the node.
+Memory Stores in Agentic Apps enable agents to retain, access, and manipulate information during a session or across sessions. The data stored in memory can be extremely useful for providing context and state persistence within the workflows. The Function node supports accessing agent memory, allowing you to create dynamic, context-aware, and stateful logic directly within the node.
 
 **When to Use**
 
@@ -162,9 +161,7 @@ Some of the common use cases include:
 
 * Retaining and reusing information across different steps in an agent execution.
 * Enabling conditional logic based on past user interactions or stored data.
-* Sharing data between tools without explicitly passing it as input parameters.
-
-[Learn More about Memory Stores.](../../../agentic-apps/memory-stores.md)
+* Sharing data between workflows without explicitly passing it as input parameters.
 
 #### Memory Store Data Format
 
@@ -312,7 +309,7 @@ The next step is to map input arguments of the selected function to static or dy
     <li>The <b>Add</b> button lets you dynamically pass arguments to your function. The coding language must support additional arguments, and these should be defined at the function parameter level. If the function does not support additional arguments, the operation may fail.</li></ul></p>
     </div>
 
-* Input argument mapping is required for deployment. You can test the function and tool, but you cannot deploy until the mapping errors shown below are fixed. 
+* Input argument mapping is required for deployment. You can test the function and workflow, but you cannot deploy until the mapping errors shown below are fixed. 
  <img src="../images/input-validation.png" alt="input validation error" title="input validation error" style="border: 1px solid gray; zoom:75%;">
  
 #### Step 4: Test the Script and Function Configuration
@@ -329,7 +326,7 @@ To test the custom function configuration, follow the steps below:
 
 ### Results Panel
 
-In this example, for a Banking tool flow, the `appendCustomerName` function from the `GenerateFullName` script is executed with `firstName` and `lastName` as input arguments. The function combines them to generate the full name. After execution, the following details appear in the Results panel:
+In this example, for a Banking workflow, the `appendCustomerName` function from the `GenerateFullName` script is executed with `firstName` and `lastName` as input arguments. The function combines them to generate the full name. After execution, the following details appear in the Results panel:
 
 **Input**
 
@@ -403,7 +400,7 @@ To run the flow for dynamic inputs, follow the steps below:
 <img src="../images/add-input-vars-function-node.png" alt="add input var" title="add input var" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Click <b>Save</b>.</li></ol>
 
-Once you define the input variables, you must [add the output variable(s)](../types-of-nodes/function-node.md/#step-2-add-the-output-variable){:target="_blank"} and [run the flow](../types-of-nodes/function-node.md/#step-3-run-the-tool-flow){:target="_blank"}.
+Once you define the input variables, you must [add the output variable(s)](../types-of-nodes/function-node.md/#step-2-add-the-output-variable){:target="_blank"} and [run the flow](#step-3-run-the-workflow){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
@@ -422,9 +419,9 @@ To define the output variable, follow the steps below:
 <li>Click <b>Save</b>.</li>
 <img src="../images/save-output-variable-window.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
-### Step 3: Run the Tool Flow
+### Step 3: Run the Workflow
 
-To run and test the tool flow, follow the steps below:
+To run and test the workflow, follow the steps below:
 
 1. Click the **Run Flow** button at the top-right corner of the flow builder.
 <img src="../images/run-flow-function-node.png" alt="run flow" title="run flow" style="border: 1px solid gray; zoom:75%;">  
@@ -435,7 +432,7 @@ To run and test the tool flow, follow the steps below:
     <img src="../images/generate-output-function-node.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">  
 
 
-The **Debug** window generates the flow log and results for the given input(s), as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow. 
+The **Debug** window generates the flow log and results for the given input(s), as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow. 
 
 <img src="../images/debug-log-function-node.png" alt="debug log" title="debug log" style="border: 1px solid gray; zoom:75%;">  
 
@@ -448,16 +445,16 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see the available variables, nodes, and node outputs.</p>
+<p>AI for Process can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see the available variables, nodes, and node outputs.</p>
 </div>
 
-## Import, Export, and Share a Tool with Function Node
+## Import, Export, and Share a Workflow with Function Node
 
-**Import a Tool**
+**Import a Workflow**
 
-When you import a tool, a *.zip* package is imported from your local system with the flow definition, app definition, and environment variables JSON files from another environment. [Learn more](../../import-a-tool.md){:target="_blank"}.
+When you import a workflow, a *.zip* package is imported from your local system with the flow definition, app definition, and environment variables JSON files from another environment. [Learn more](../../import-a-tool.md){:target="_blank"}.
 
-If the tool contains a Function node, its configuration is automatically fetched and populated in the new environment (tools automation flow) where the tool is being imported.
+If the workflow contains a Function node, its configuration is automatically fetched and populated in the new environment (workflows automation) where the workflow is being imported.
 
 ### Script Linking Behavior
 
@@ -467,9 +464,9 @@ If the tool contains a Function node, its configuration is automatically fetched
 
    <img src="../images/import-validation.png" alt="import validation" title="import validation" style="border: 1px solid gray; zoom:75%;"> 
 
-**Export a Tool**
+**Export a Workflow**
 
-When you export a tool that contains a Function node, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-tool.md){:target="_blank"}.
+When you export a workflow that contains a Function node, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-tool.md){:target="_blank"}.
 
 The following confirmation window is displayed before the export begins.
 
@@ -478,11 +475,11 @@ The following confirmation window is displayed before the export begins.
 Do one of the following:
 
 * If you’re unsure, click **Let me check**.
-* If all necessary components such as AI models, linked tools, and custom scripts or functions are already in place, click **Yes, I will take care**.
+* If all necessary components such as AI models, linked workflows, and custom scripts or functions are already in place, click **Yes, I will take care**.
 
-**Share a Tool**
+**Share a workflow**
 
-When you share a tool with another user within the same account, all configurations of the Function node are retained and available to the recipient as well.
+When you share a workflow with another user within the same account, all configurations of the Function node are retained and available to the recipient as well.
 
 ## Related Links
 

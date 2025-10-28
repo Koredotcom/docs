@@ -7,7 +7,7 @@ The Human Node introduces a human-in-the-loop capability within automation workf
 * **Customizable Input Requests** – Send a request with fields tailored to collect the information or decision needed.
 * **Timeout Handling** – Define how the workflow behaves if no response is received (e.g., Terminate, Skip & Continue).
 * **Error Handling** – Configure the outcome if the request fails or cannot be delivered.
-* **Sync or Async Modes (Tool level)** – Execution runs synchronously or asynchronously based on the tool’s endpoint configuration.
+* **Sync or Async Modes (workflow level)** – Execution runs synchronously or asynchronously based on the workflow’s endpoint configuration.
 
 ## Common Use Cases
 
@@ -20,10 +20,10 @@ The Human Node introduces a human-in-the-loop capability within automation workf
 
 The Human Node serves as a flexible pause point within an automated workflow, enabling seamless integration of human decisions. When the workflow reaches this node, it sends a custom request payload to the configured endpoint.
 
-The execution behavior depends on the tool’s endpoint configuration:
+The execution behavior depends on the workflow’s endpoint configuration:
 
 * In Sync mode, the workflow starts, sends the request to the human, waits for the human’s input, and generates the output — all within the timeout set at the endpoint.
-* In Async mode, the workflow sends an immediate acknowledgement and continues execution. The Human node notifies the pre-configured callback URL when the request is sent to the human, when the human’s input is received, and when the final tool output is generated and delivered.
+* In Async mode, the workflow sends an immediate acknowledgement and continues execution. The Human node notifies the pre-configured callback URL when the request is sent to the human, when the human’s input is received, and when the final workflow output is generated and delivered.
 
 Built-in mechanisms handle timeouts, duplicate or late responses, and delivery failures to ensure the workflow progresses as configured. This provides visibility and traceability into decisions through the Debug Panel without disrupting the overall flow.
 
@@ -45,9 +45,10 @@ Steps to add and configure a Human node:
 
 ### Step 1: Open Flow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
-  <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+
+* Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add the Human Node
 
@@ -147,7 +148,7 @@ Once you have configured the Human node and connected it to the workflow, you ca
 
 ### Step 2: Running the Flow
 
-Depending on the Tool endpoint configuration, the Human node can run in two modes: Sync (Synchronous) or Async (Asynchronous).
+Depending on the workflow endpoint configuration, the Human node can run in two modes: Sync (Synchronous) or Async (Asynchronous).
 
 #### **Running in Sync Mode**
 
@@ -164,7 +165,7 @@ Here is a step-by-step execution of the Human node in Sync mode:
     * A reviewer responds within time → continues along the Success path.
     * A timeout occurs → follows the selected Timeout option (Terminate or Skip & Continue).
     * A failure occurs → follows the Failure path.
-5. **Final output**: The tool’s final output - including the reviewer’s response (or error/timeout details) - is returned as the sync response and displayed in the Debug Panel.
+5. **Final output**: The workflow’s final output - including the reviewer’s response (or error/timeout details) - is returned as the sync response and displayed in the Debug Panel.
 
 <table>
   <tr>
@@ -231,7 +232,7 @@ Here is a step-by-step execution of the Human node in Sync mode:
   <tr>
    <td>6. Sync endpoint timeout (after reviewer response)
    </td>
-   <td>The reviewer responded, but the endpoint timed out before the tool could finally end execution
+   <td>The reviewer responded, but the endpoint timed out before the workflow could finally end execution
    </td>
    <td>Timeout error JSON
    </td>
@@ -243,23 +244,23 @@ Here is a step-by-step execution of the Human node in Sync mode:
 
 #### **Running in Async Mode**
 
-In Async mode, the workflow does not pause at the Human node. Instead, the workflow sends an immediate acknowledgement and continues execution. The Human node notifies the pre-configured callback URL when the request is sent to the human, when the human’s input is received, and when the final tool output is generated and delivered.the workflow continues immediately, while the reviewer’s input is processed in the background.
+In Async mode, the workflow does not pause at the Human node. Instead, the workflow sends an immediate acknowledgement and continues execution. The Human node notifies the pre-configured callback URL when the request is sent to the human, when the human’s input is received, and when the final workflow output is generated and delivered.the workflow continues immediately, while the reviewer’s input is processed in the background.
 
 For example, when you don’t want the workflow to block waiting for a human, which is critical for efficiency in large or automated workflows.
 
 Here is the execution of the Human node in Async mode:
 
-1. **Request received**: As soon as the tool gets a request, it sends an acknowledgement back to the requestor system.
+1. **Request received**: As soon as the workflow gets a request, it sends an acknowledgement back to the requestor system.
 2. **Workflow execution**: The workflow then starts execution, reaches the Human node, and sends a request payload to the configured endpoint.
 3. **Callback generation**: The Human node generates and shares a callback URL and request ID, which the downstream service uses to return the reviewer’s response. The callback URL remains valid only for the configured wait time.
-4. **Waiting status update**: When the tool reaches the Human node and is waiting for input, a status update is sent to the pre-configured URL (URL set when configuring the tool’s async endpoint).
+4. **Waiting status update**: When the workflow reaches the Human node and is waiting for input, a status update is sent to the pre-configured URL (URL set when configuring the workflow’s async endpoint).
 5. **Reviewer receives and responds**: The downstream service delivers the request to the reviewer. Once the reviewer provides input, the response is sent back to the callback URL. Late or duplicate responses are ignored.
-6. **Continuing execution status update**: After receiving data from the human, the tool continues execution from the Human node. A status update for the tool output is sent to the pre-configured URL (URL set when configuring the tool’s async endpoint]).
+6. **Continuing execution status update**: After receiving data from the human, the workflow continues execution from the Human node. A status update for the workflow output is sent to the pre-configured URL (URL set when configuring the workflow’s async endpoint]).
 7. **Outcome handling**:
     * Reviewer responds in time **→** Workflow resumes at the configured Success path.
     * No response before timeout **→** Workflow follows the configured timeout option (Terminate or Skip & Continue).
     * Failure in delivery **→** Workflow follows the Failure path.
-8. **Final output**: The tool’s final output - including the reviewer’s response, or error/timeout details - is sent to the pre-configured callback URL and logged in the Debug Panel.
+8. **Final output**: The workflow’s final output - including the reviewer’s response, or error/timeout details - is sent to the pre-configured callback URL and logged in the Debug Panel.
 
 
 <table>

@@ -1,6 +1,6 @@
 # Condition Node - Automate Conditional Flows
 
-The Condition Node helps you control the flow of your tool based on whether specific logical conditions are met. You can define rules using context variables, node outputs, or custom values to create dynamic branching.
+The Condition Node helps you control the flow of your workflow based on whether specific logical conditions are met. You can define rules using context variables, node outputs, or custom values to create dynamic branching.
 
 Based on whether conditions are met, the workflow follows different paths, giving you precise control over execution.
 
@@ -15,7 +15,7 @@ Whether you need a simple true/false evaluation or a more complex branching usin
 
 !!! note
     
-    Due to security reasons, a condition can be called a maximum of 10 times in a tool flow. Exceeding this limit will result in an error.
+    Due to security reasons, a condition can be called a maximum of 10 times in a workflow. Exceeding this limit will result in an error.
 
 ## Key Capabilities
 
@@ -40,16 +40,16 @@ The Condition Node dynamically controls workflow paths by evaluating data agains
 
 <img src="../images/condition_node_new.png" alt="Condition node" title="Condition node" style="border: 1px solid gray; zoom:75%;">
 
-In this document, you will learn how to set up a Condition Node in a tool flow, including adding it at the appropriate location and configuring its properties.
+In this document, you will learn how to set up a Condition Node in a workflow, including adding it at the appropriate location and configuring its properties.
 
 ## Add and Configure a Condition Node
 
 ### Step 1: Open Flow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+* Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add the Condition Node
 

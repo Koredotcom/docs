@@ -30,7 +30,7 @@ A retail bank uses the **DocSearch Node** to automate responses to frequently as
 
 ## How It Works
 
-The **DocSearch Node** integrates seamlessly into your tool flows, accepting user queries as static text or dynamic variables referencing other node outputs. It connects to a pre-configured Search AI App on the platform to retrieve relevant content from your Sources repository using a Retrieval-Augmented Generation (RAG) framework. You can define meta filters manually or fetch them via the Answer Generation API to generate refined, context-aware responses. The node fully integrates within the canvas and optionally allows redirection to the full Search AI interface.
+The **DocSearch Node** integrates seamlessly into your workflows, accepting user queries as static text or dynamic variables referencing other node outputs. It connects to a pre-configured Search AI App on the platform to retrieve relevant content from your Sources repository using a Retrieval-Augmented Generation (RAG) framework. You can define meta filters manually or fetch them via the Answer Generation API to generate refined, context-aware responses. The node fully integrates within the canvas and optionally allows redirection to the full Search AI interface.
 
 <img src="../images/how-doc-search-works.png" alt="how doc search works" title="how doc search works" style="border: 1px solid gray; zoom:75%;">
 
@@ -40,14 +40,14 @@ In this document, you will learn how to add and configure DocSearch Nodes with S
 
 Configuring the DocSearch Node consists of the following steps:
 
-1. [Set up a Search AI application and the information source for Agent Platform integration](../types-of-nodes/docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
-2. [Link the Search AI application in Agent Platform](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
+1. [Set up a Search AI application and the information source for AI for Process integration](../types-of-nodes/docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
+2. [Link the Search AI application in AI for Process](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-ai-for-process){:target="_blank"}.
 3. [Add and configure the DocSearch node](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"}.
 4. [Test the Flow](../types-of-nodes/docsearch-node.md/#step-4-test-the-flow) you have built.
 
 ## Step 1: Set up Search AI App
 
-The integration of Search AI with Agent Platform involves setting up a Search AI application, configuring it for integration, and modifying Agent Platform to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
+The integration of Search AI with AI for Process involves setting up a Search AI application, configuring it for integration, and modifying AI for Process to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
 
 Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-introduction/#creating-and-managing-jwt-apps-in-xo-platform){:target="_blank"} to complete the configuration.
 
@@ -56,16 +56,15 @@ Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-int
 <p>To receive answers from Search AI, you must enable the <b><i>Answer Generation</i></b> option under the <b>API scopes</b> section.</p></div>
 
 
-## Step 2: Link the Search AI App in Agent Platform
+## Step 2: Link the Search AI App in AI for Process
 
-After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in Agent Platform. 
+After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in AI for Process. 
 
-**Steps to integrate Search AI in Agent Platform**
+**Steps to integrate Search AI in AI for Process**
 
-* Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+* Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-* Click **Settings** on the top navigation bar.
 * Click **Integrations** on the left navigation menu.
 * Scroll down to **Search AI** and click **Link an App**.
   <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
@@ -91,10 +90,10 @@ After fetching the Search AI application credentials, configuring the source, an
 
 ### Step 3(A): Open Flow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
-* Select your tool → Click **Go to Flow**.
+* Select your workflow → Click **Go to Flow**.
 
 ### Step 3(B): Add the Node
 
@@ -117,14 +116,14 @@ After fetching the Search AI application credentials, configuring the source, an
   You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."
    <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;">
    
- * Select the <b>Search AI connection</b> you set up in <a href="#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
+ * Select the <b>Search AI connection</b> you set up in <a href="#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the AI for Process integration page.
    <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;">
 
    <div class="admonition note">
    <p class="admonition-title">Note</p>
    <p>Use search to look up and select the required connection.</p></div>
 
-  To set up a new connection, click **+ New Connection**. This will redirect you to the Agent Platform Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"} to complete the integration.
+  To set up a new connection, click **+ New Connection**. This will redirect you to the AI for Process Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-ai-for-process){:target="_blank"} to complete the integration.
 
  * (Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
 <img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;">
@@ -153,7 +152,7 @@ To run and test the flow, follow the steps below:
 
      <img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
-   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
+   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow.
 
 <div class="admonition note">
 <p class="admonition-title">Accessing the Output</p>
@@ -164,12 +163,12 @@ path}}</code>. For example, it
 could be <code>context.steps.DocSearch.response.response.answer</code> in one case or <code>context.steps.DocSearch.response.response.response.answer</code> in another.
 
 Check the sample response from Search AI to find the correct key that holds the content.
-Use that key in your tool flow. You may also need to extract multiple chunks from different keys.</p></div>
+Use that key in your workflow. You may also need to extract multiple chunks from different keys.</p></div>
 
 ## Related Links
 
-* [Manage Nodes in Tool Flow](./../manage-flow-nodes.md){:target="_blank"} - Add and manage nodes on the canvas.
-* [Run Tool Flow](./../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} - Run and test an tool flow in real time.
+* [Manage Nodes in Workflow](./../manage-flow-nodes.md){:target="_blank"} - Add and manage nodes on the canvas.
+* [Run Workflow](./../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} - Run and test an workflow in real time.
 
 
 

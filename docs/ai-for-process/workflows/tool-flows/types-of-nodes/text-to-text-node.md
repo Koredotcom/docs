@@ -8,7 +8,7 @@ The Text to Text node is part of the AI node family in the Workflow Builder, ena
 * **LLM Model Selection**: Choose from pre-configured models with optional hyperparameter tuning (temperature, top-k, top-p, max tokens).
 * **Structured Output Support**: Define JSON schemas for predictable and parseable responses from the model.
 * **Prompt Templates & Versioning**: Load and customize prompt versions, with support for variable mapping and editing.
-* **Tool Calling Integration**: Enable the model to autonomously call external tools during execution (if supported).
+* **Workflow Calling Integration**: Enable the model to autonomously call external workflows during execution (if supported).
 * **Timeout Configuration**: Control the duration for which the model can run before triggering a timeout error.
 
 ## Common Use Cases
@@ -21,7 +21,7 @@ The Text to Text node is part of the AI node family in the Workflow Builder, ena
 
 ## How It Works
 
-Once placed in the workflow, the Text to Text node takes input from previous nodes and sends a prompt to the selected AI model. Based on your configuration—prompt, schema, and model settings—it returns a response to the context variable for use in the next step. Execution can optionally involve tool calls, and success/failure paths allow routing based on the outcome.
+Once placed in the workflow, the Text to Text node takes input from previous nodes and sends a prompt to the selected AI model. Based on your configuration—prompt, schema, and model settings—it returns a response to the context variable for use in the next step. Execution can optionally involve workflow calls, and success/failure paths allow routing based on the outcome.
 
 <img src="../images/text_to_text_node_new.png" alt="Text to Text Node" title="Text to Text Node" style="border: 1px solid gray; zoom:60%;">
 
@@ -34,10 +34,10 @@ Setting up a Text to Text node in a workflow involves adding the node at the app
 
 ### Step 1: Open Workflow Builder
 
-* Log in → AI for Process.
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 * Select your workflow → Click **Go to Flow**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 2: Add the Text to Text Node
 
@@ -116,24 +116,24 @@ Click the **Connections** icon and select the **Go to Node** for success and fai
 
     <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
-### Step 5: Add Tools
+### Step 5: Add Workflows
 
-To add tools, click the **Tool Calling** icon. When you select a model that supports tool calling, the ‘*Tool calling available*’ tab is displayed in the Properties panel. You can configure tool calling settings from this tab.
+To add workflows, click the **Workflow Calling** icon. When you select a model that supports workflow calling, the ‘*workflow calling available*’ tab is displayed in the Properties panel. You can configure workflow calling settings from this tab.
 
 !!! note
 
-    When you attach workflows to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
+    When you attach workflows to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate workflows. You can select up to three workflows for each AI node. For more information, see [**Workflow Calling in AI for Process**](./../tool-calling.md). 
 
-* **Add Tools**: Click **Add Tools** to add a tool.
+* **Add Workflows**: Click **Add Workflows** to add a workflow.
 
-* **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.
+* **Select workflows**: The Workflows dialog displays a list of workflows available in your account. Select the appropriate workflows and click **Add workflows**. Once added, the selected workflows will appear on the workflows tab, indicating that they have been successfully attached.
 
-* **Configure tool settings**:
-    * In the Tool configuration section, configure the following:
-        * **Exit node execution after**: Specify the number of model calls to use as the exit criteria. For example, if you set this to 5 calls and the LLM continues making tool calls without providing a final answer, the system will exit to the failure path.
+* **Configure workflow settings**:
+    * In the Workflow configuration section, configure the following:
+        * **Exit node execution after**: Specify the number of model calls to use as the exit criteria. For example, if you set this to 5 calls and the LLM continues making workflow calls without providing a final answer, the system will exit to the failure path.
     * In the Additional settings section, configure the following:
-        * **Tool choice**: Select *Auto* or *Required*. This option determines whether the model will automatically decide when to make a tool call (Auto), or if a tool call is required every time (Required). The default setting is Auto.
-        * **Parallel tool calls**: Select *True* to enable the model to execute multiple tool calls simultaneously. Select *False* if you want the model to execute tool calls sequentially, optimizing for the best possible outcome.  
+        * **workflow choice**: Select *Auto* or *Required*. This option determines whether the model will automatically decide when to make a workflow call (Auto), or if a workflow call is required every time (Required). The default setting is Auto.
+        * **Parallel workflow calls**: Select *True* to enable the model to execute multiple workflow calls simultaneously. Select *False* if you want the model to execute workflow calls sequentially, optimizing for the best possible outcome.  
         
     <img src="./../images/tool_calling_configuration.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
@@ -152,4 +152,4 @@ The node’s output is stored in a context variable. You can access the variable
 
 !!! note
 
-    Agent Platform can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.
+    AI for Process can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.

@@ -24,7 +24,7 @@ By placing the Function and Text-to-Image nodes inside the Loop node, the workfl
 * **Configurable Error Handling**: Choose how the loop handles errors during iterations: *Continue on error*, *Remove failed results, or Terminate execution.*
 * **Success and Error Paths**: Define distinct downstream logic for successful completion or failure of the loop.
 * **Debugging and Inspection**: Visualize loop runs, drill down into each iteration, and trace output and failures for detailed analysis.
-* **Workflow Portability**: Loop configuration persists across exports, imports, tool sharing, and deployment.
+* **Workflow Portability**: Loop configuration persists across exports, imports, workflow sharing, and deployment.
 
 ## Common Use Cases
 
@@ -54,8 +54,10 @@ The Loop node contains a section or block where you can place supported child no
 
 ### Step 1: Open Flow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+
+* Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add a Loop Node
 

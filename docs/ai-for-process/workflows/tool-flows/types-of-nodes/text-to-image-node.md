@@ -108,7 +108,8 @@ The metrics include:
 
 ### Step 1: Open Workflow Builder
 
-* Log in → AI for Process.
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 * Select your workflow → Click **Go to Flow**.
 
