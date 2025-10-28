@@ -53,7 +53,7 @@ A creative marketing team can use the system to instantly generate images for em
 
 ## How It Works
 
-The **Text to Image** node fits seamlessly into your tool flows, accepting descriptive inputs from previous nodes and returning AI-generated image URLs as outputs. You can define prompts directly within the node, select the processing model, and specify what the image should include or exclude, along with aspect ratio, steps, and batch count. The node supports both static and dynamic inputs via context variables, enabling automated image generation across a wide range of use cases, from marketing creatives to content illustration.
+The **Text to Image** node fits seamlessly into your workflows, accepting descriptive inputs from previous nodes and returning AI-generated image URLs as outputs. You can define prompts directly within the node, select the processing model, and specify what the image should include or exclude, along with aspect ratio, steps, and batch count. The node supports both static and dynamic inputs via context variables, enabling automated image generation across a wide range of use cases, from marketing creatives to content illustration.
 
 <img src="../images/how-text-to-image-works.png" alt="how text to image works" title="how text to image works" style="border: 1px solid gray; zoom:75%;">
 
@@ -106,12 +106,11 @@ The metrics include:
 </div>
 
 
-### Step 1: Open Flow Builder
+### Step 1: Open Workflow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
-     <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+* Log in → AI for Process.
 
-* Select your tool → Click **Go to Flow**.
+* Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add the Node
 
@@ -203,6 +202,6 @@ To run and test the flow, follow the steps below:
 
      <img src="../images/generate-output-text-to-image.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
-The **Debug** window generates the flow log and results, as shown below. [Learn more](../types-of-nodes/text-to-image-node.md/#step-3-run-the-flow){:target="_blank"} about running the tool flow.
+The **Debug** window generates the flow log and results, as shown below. [Learn more](../types-of-nodes/text-to-image-node.md/#step-3-run-the-flow){:target="_blank"} about running the workflow.
 
 <img src="../images/debug-window-text-to-image.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">

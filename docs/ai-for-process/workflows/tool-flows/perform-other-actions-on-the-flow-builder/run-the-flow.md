@@ -37,7 +37,7 @@ The debug log shows the following key details:
 * **Flow-level log details**: Get an overview of logs at the flow level, including initiation and progress.
 * **Node-level information**: For each flow initiation, detailed logs are provided for each node, which include the success or failure status.
 * **Node success/failure links**: Links to additional details if a node succeeds or fails.
-* **Tool calling details**: Provides detailed logs of any tools called during the tool flow's execution (available only for AI nodes). It records when tools are triggered, the inputs passed to them (JSON), responses or results received, and any errors that occurred during tool calling. A separate panel shows detailed tool traces, including step-by-step logs of each tool’s execution. This helps track the performance and usage of the tools in the flow.
+* **Tool calling details**: Provides detailed logs of any workflows called during the workflow execution (available only for AI nodes). It records when workflow are triggered, the inputs passed to them (JSON), responses or results received, and any errors that occurred during workflow calling. A separate panel shows detailed workflow traces, including step-by-step logs of each workflow's execution. This helps track the performance and usage of the workflow in the flow.
 * **Node metrics**: For each node, the following metrics are available:
     * **Initiated On**: The timestamp for when the node was triggered.
     * **Executed On**: The timestamp for when the node execution was completed.
@@ -48,7 +48,7 @@ For deeper analysis, users can expand the debug panel to full screen. This mode 
 
 * All nodes are aligned to the left for readability.
 * Clicking on any node reveals its input, output, and metrics in a side-by-side format.
-* Linked tool call details (for AI nodes) are also available in the same panel.
+* Linked workflow call details (for AI nodes) are also available in the same panel.
 
 ## Time Metrics for API and AI Nodes
 

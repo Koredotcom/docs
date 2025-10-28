@@ -27,7 +27,7 @@ A sample use case involves an insurance company evaluating vehicle damage to str
 
 ## How it Works
 
-The **Image to Text** node integrates smoothly into your tool flows by accepting image file URLs and generating descriptive or structured text output for downstream nodes. You can configure the node by selecting a supported model and providing a valid image URL in PNG, JPEG, or JPG format. Use the System Prompt to define the model’s role (e.g., insurance evaluator), and the Prompt to specify the task, such as answering a question or extracting details. Prompts support dynamic context variables, enabling flexible, data-driven automation scenarios.
+The **Image to Text** node integrates smoothly into your workflows by accepting image file URLs and generating descriptive or structured text output for downstream nodes. You can configure the node by selecting a supported model and providing a valid image URL in PNG, JPEG, or JPG format. Use the System Prompt to define the model’s role (for example, insurance evaluator), and the Prompt to specify the task, such as answering a question or extracting details. Prompts support dynamic context variables, enabling flexible, data-driven automation scenarios.
 
 <img src="../images/how-image-to-text-works.png" alt="how image to text works" title="how image to text works" style="border: 1px solid gray; zoom:75%;">
 
@@ -40,12 +40,11 @@ In this document, you will learn how to add the node to your flows, configure it
 <p>Before proceeding, you must add an external LLM to your account.</p>
 </div>
 
-### Step 1: Open Flow Builder
+### Step 1: Open Workflow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+* Log in → AI for Process.
 
-* Select your tool → Click **Go to Flow**.
+* Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add the Node
 
@@ -67,7 +66,7 @@ In this document, you will learn how to add the node to your flows, configure it
        <p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are supported.</p>
        </div>
 
-    * Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the tool endpoint.
+    * Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the workflow endpoint.
 
       <div class="admonition note">
       <p class="admonition-title">Key Considerations</p>
