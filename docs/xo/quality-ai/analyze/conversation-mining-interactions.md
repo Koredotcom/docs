@@ -614,9 +614,4 @@ Once filters are saved, the following customization options are available:
     <img src="../conversation-mining/images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
 =======
 10. Click the **Filtered Interactions**, which allows you to view the real-time conversation interactions count based on your filter selections or matched filter criteria. This count dynamically gets updated when any filters are applied or removed.   
-<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
->>>>>>> Stashed changes
-=======
-10. Click the **Filtered Interactions**, which allows you to view the real-time conversation interactions count based on your filter selections or matched filter criteria. This count dynamically gets updated when any filters are applied or removed.   
-<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
->>>>>>> Stashed changes
+<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">
