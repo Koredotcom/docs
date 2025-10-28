@@ -348,19 +348,19 @@ The following languages and dialects are supported:
 | English (Kenya)       | English (United Kingdom) |
 | English (New Zealand) | English (United States)  |
 
-## Best Practices
+### Best Practices
 
-### Multi-Language App Setup
+#### Multi-Language App Setup
 
 This guide details the process for setting up a multilingual App that can switch languages based on the caller's selection. We'll cover the steps for both the **Experience Flow** (how the call is routed) and the **Dialog Flow** (how the AI Agent responds).
 
-### Understanding the Use Case
+**Understanding the Use Case**
 
 The primary goal is to let a caller choose their preferred language (for example, by pressing a number on their phone) and have the AI Agent immediately start communicating with them in that language. This ensures a smooth, user-friendly experience from the very first interaction.
 
 Steps to configure a Multilingual App:
 
-### Step 1: Add Languages to Your Platform
+**Step 1: Add Languages to Your Platform**
 
 Before you can use a language in an APP, you need to enable it on the platform.
 
@@ -369,11 +369,11 @@ Before you can use a language in an APP, you need to enable it on the platform.
 3. Click **+ Add Language** and select the languages your AI Agent will support, such as English, Hindi, and Telugu.  
     <img src="../images/language-management.png" alt="Language Management" title="Language Management" style="border: 1px solid gray; zoom:70%;">
 
-### Step 2: Configure the Flow
+**Step 2: Configure the Flow**
 
 The Flow is the first part of your journey, where you'll present the caller with language options and then set the chosen language.
 
-#### The DTMF Approach (IVR Menu)
+**The DTMF Approach (IVR Menu)**
 
 The most common way to let a caller choose a language is through an **Interactive Voice Response (IVR)** menu.
 
@@ -414,7 +414,7 @@ The most common way to let a caller choose a language is through an **Interactiv
     * Reference configuration of the entire flow.  
         <img src="../images/reference-config.png" alt="Reference Config" title="Reference Config" style="border: 1px solid gray; zoom:70%;">
 
-### Step 3: Configure the Dialog Flow
+**Step 3: Configure the Dialog Flow**
 
 The Dialog Flow is the AI Agent's conversation logic. Ensure the AI Agent's responses are in the correct language.
 
@@ -430,7 +430,7 @@ The Dialog Flow is the AI Agent's conversation logic. Ensure the AI Agent's resp
 
 5. Repeat this process for every language that the AI Agent supports. Switch the language selector and add the corresponding text for each node. This makes it easy to manage a single flow with all language variations.
 
-#### Advanced Configuration (ASR & TTS)
+**Advanced Configuration (ASR & TTS)**
 
 For more precise control, you can customize the Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) settings for each language.
 
@@ -445,7 +445,7 @@ For more precise control, you can customize the Automatic Speech Recognition (AS
 
 For more details on these advanced settings, refer to the [Call Control Parameters](../voice-gateway/speech-customization.md#supported-call-control-parameters).
 
-### Step 4: Publish and Test
+**Step 4: Publish and Test**
 
 Once the Flow and Dialogs are configured, publish the flows and perform thorough testing. Dial the number and ensure that the language selection works correctly and that the AI Agent responds in the chosen language.
 
