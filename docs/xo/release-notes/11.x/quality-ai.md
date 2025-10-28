@@ -18,7 +18,8 @@ The new Keyword Search Filter feature lets users easily locate and analyze conve
 
 **Scheduled Reporting for Quality AI**
 
-The Quality AI Reporting feature provides comprehensive data export capabilities for AutoQA and Conversation Intelligence insights. This enables QA Managers, Supervisors, and authorized users to generate, schedule, and download detailed reports covering interaction details, agent performance metrics, and adherence to evaluation metrics. 
+The Quality AI Reporting feature provides comprehensive data export capabilities for AutoQA and Conversation Intelligence insights. This enables QA Managers, Supervisors, and authorized users to generate, schedule, and download detailed reports covering interaction details, agent performance metrics, and adherence to evaluation metrics.
+[Learn more :octicons-arrow-right-24:](../../quality-ai/analytics/scheduled-reporting-for-quality-ai.md) 
 
 **New Generative AI Features**
 

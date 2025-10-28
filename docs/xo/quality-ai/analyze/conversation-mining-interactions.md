@@ -330,6 +330,15 @@ This feature allows you to search, filter, and review conversations using specif
 | **Filtered Keywords Interactions**  | Displays the count of filtered interactions (for example, “Filtered Interactions: 22”) containing the selected keywords after filters are applied.
 
 ### Manage Saved Filters
+<<<<<<< Updated upstream
+
+#### Apply Filters
+
+    * Click **Apply** to save the filter settings. The applied settings, regardless of any category filter selected, are stored as an **Unsaved Filter** on the Conversation Mining dashboard page.        
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+=======
 
 #### Apply Filters
 
@@ -348,6 +357,104 @@ This feature allows you to search, filter, and review conversations using specif
 
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
+
+![alt_text](images/image2.png "image_tooltip")
+
+    * In the **Save Filter** window, enter the **Filter Name**, and enable the toggle option **Make this the default view** if required.        
+
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image3.png "image_tooltip")
+
+    * Click **Save & Apply** in the Save Filter window to set the Unsaved Filter as the **default view filter** in the dashboard.        
+
+<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+![alt_text](images/image4.png "image_tooltip")
+
+#### View Saved Filters
+
+    * Click the newly set default view filter or any Unsaved Filter dropdown to view all the newly created **Saved Filters**. \
+
+<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+![alt_text](images/image5.png "image_tooltip")
+
+    * All the **Unsaved Filters **and their associated Saved Filters are displayed.
+
+#### Clear Filters
+
+    * Click **Clear** to reset all applied filters. This resets all the **Filter By** options or categories displayed.        
+
+<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+![alt_text](images/image6.png "image_tooltip")
+
+    * Click **Clear All** to remove or clear all queue filters.
+       
+
+<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+![alt_text](images/image7.png "image_tooltip")
+
+#### Close Filter Panel
+
+    * Click the Cross (**X**) icon to close the filter panel.         
+
+<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+![alt_text](images/image8.png "image_tooltip")
+
+#### View Filtered Interactions
+
+* Click **Filtered Interactions** to view the real-time conversation interactions count based on your selected or matched filter criteria. This count dynamically updates whenever filters are applied or removed.  
+<img src="./conversation-mining/images/saved-filters-options.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
+
+#### Saved Filters Customization Options
+
+Once filters are saved, the following customization options are available:
+
+* **Copy**: Creates a duplicate of the saved filter. 
+
+* **Mark as default**: Sets the selected filter as the default filter whenever the Call Mining tab is opened.
+
+* **Edit Filter**: Allows modification of the details of a saved filter.
+
+* **Delete Filter**: Removes the selected saved filter permanently.
+    <img src="./conversation-mining/images/saved-filters-options.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
+
+
+## Manage Saved Filters
+
+1. Click **Clear** to reset all applied filters. This applies to all the **Filter By** options or categories displayed.  
+<img src="./conversation-mining/images/clear.png" alt="Clear" title="Clear" style="border: 1px solid gray; zoom:80%;">
+
+2. Click **Clear All** to remove or clear all queue filters.  
+<img src="./conversation-mining/images/clear-all.png" alt="Clear All" title="Clear All" style="border: 1px solid gray; zoom:80%;">
+ 
+3. Click the **Cross** (X) icon to close the filter panel.  
+<img src="./conversation-mining/images/cross-icon.png" alt="Cross" title="Cross" style="border: 1px solid gray; zoom:80%;">  
+
+4. Click **Save & Apply** to save the selected filter category details to proceed.    
+<img src="./conversation-mining/images/save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">  
+
+5. Click **Apply** to save the filter settings, regardless of any category filter selected, which is stored as an **Unsaved Filter** in the **Conversation Mining** dashboard page.      
+<img src="./conversation-mining/images/unsaved-filter.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
+    !!! Note
+>>>>>>> Stashed changes
+
+![alt_text](images/image1.png "image_tooltip")
+
+        **Note**: If interactions are not used for audit allocation, you can apply filters without saving. To assign audit allocations, save and name filters for easy reference in future audits.
+
+#### Save Filters
+
+    * Click **Save & Apply** to save the selected filter category details and proceed.   
+
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+<<<<<<< Updated upstream
 
 ![alt_text](images/image2.png "image_tooltip")
 
@@ -505,6 +612,10 @@ Once filters are saved, the following customization options are available:
 
     Removes the selected saved filter permanently.  
     <img src="../conversation-mining/images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
+=======
+10. Click the **Filtered Interactions**, which allows you to view the real-time conversation interactions count based on your filter selections or matched filter criteria. This count dynamically gets updated when any filters are applied or removed.   
+<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
+>>>>>>> Stashed changes
 =======
 10. Click the **Filtered Interactions**, which allows you to view the real-time conversation interactions count based on your filter selections or matched filter criteria. This count dynamically gets updated when any filters are applied or removed.   
 <img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
