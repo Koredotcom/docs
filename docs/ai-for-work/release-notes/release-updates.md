@@ -108,7 +108,7 @@ Key Highlights:
 
 Enhanced SAML Single Sign-On (SSO) configuration by showing account-specific fields that users can use in their SAML configuration, making the SSO setup seamless.
 
-[Learn more :octicons-arrow-right-24:](../security/sso.md#saml)
+[Learn more :octicons-arrow-right-24:](../security/saml.md)
 
 **Agent Icons Upgrade**
 

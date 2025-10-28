@@ -102,8 +102,8 @@ In the Sources section, you can configure the following fields:
 -  [User Input](#user-input)
 -  [Knowledge](#knowledge)
 -  [Prompts](#prompts)
--  [Multi prompt](#multi prompt)
--  [Multi response](#multi response)
+-  [Multi prompt](#multi-prompt)
+-  [Multi response](#multi-response)
 
  The parameters fields are provided based on the purpose of the agent you provided in
 the previous step. For example, if the purpose is "summarization", fields might
