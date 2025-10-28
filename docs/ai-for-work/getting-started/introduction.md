@@ -48,7 +48,7 @@ AI for Work is designed to provide a unified and flexible framework for implemen
         
 5. **Security & Compliance**: This layer ensures the platform adheres to enterprise security standards and compliance regulations.  
     
-6. **Development Tools**: 
+6. **Development Tools**:
 
     * No-Code Tools: AI for Work provides no-code tools that allow users to build and customize AI solutions without requiring programming skills.
     
