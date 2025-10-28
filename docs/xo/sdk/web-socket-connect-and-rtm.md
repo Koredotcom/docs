@@ -47,7 +47,7 @@ The following sample JSON response shows the `accessToken` and the user associat
 ```javascript
 {
   "authorization": {
-        "accessToken": "ZdV2OL_UZ_MvHog-rs8k9KJFNWBICvquSc3jpeaRDE_-", // access token to user at /api/rtm
+        "accessToken": "ZdV2OL_UZ_MvHog-rs8k9KJFNWBICvquSc3xxxxxxx_-", // access token to user at /api/rtm
         "token_type": "bearer",
         "expiresDate": "2019-06-28T06:52:23.160Z",       //expiry date for access token
         "issuedDate": "2019-02-28T06:52:23.160Z"        //access token issuedDate
