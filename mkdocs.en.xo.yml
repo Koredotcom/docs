@@ -559,7 +559,8 @@ nav:
       - Settings: 
         - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
         - Quality AI General Settings: quality-ai/configure/quality-ai-general-settings.md
-        - Language Settings: quality-ai/configure/language-settings.md         
+        - Language Settings: quality-ai/configure/language-settings.md
+      - Analytics: quality-ai/analytics/scheduled-reporting-for-quality-ai.md        
   - Agent AI:
     - About Agent AI: agentai/about-agent-ai.md
     - Set up Agent AI:
