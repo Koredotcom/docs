@@ -1,21 +1,21 @@
 # Condition Node - Automate Conditional Flows
 
-The Condition Node helps you control the flow of your tool based on whether specific logical conditions are met. You can define rules using context variables, node outputs, or custom values to create dynamic branching.
+The Condition Node helps you control the flow of your workflow based on whether specific logical conditions are met. You can define rules using context variables, node outputs, or custom values to create dynamic branching.
 
 Based on whether conditions are met, the workflow follows different paths, giving you precise control over execution.
 
 The node can handle three types of conditions:
 
 * **If**: It directs the flow to a specific path if criteria (Node, Context, or Value) are met.
-* **Else**: It defines the fallback path that the flow follows when the IF condition is not met .
-* **Else If**: It allows you to configure another set of criteria (Node, Context, or Value) to be met when the initial 'If' condition is not satisfied.
+* **Else**: It defines the fallback path that the flow follows when the IF condition isn't met .
+* **Else If**: It allows you to configure another set of criteria (Node, Context, or Value) to be met when the initial 'If' condition isn't satisfied.
 
 Whether you need a simple true/false evaluation or a more complex branching using AND, OR, or multiple ELSE IF checks, the Condition node enables precise control over decision logic.
 
 
 !!! note
     
-    Due to security reasons, a condition can be called a maximum of 10 times in a tool flow. Exceeding this limit will result in an error.
+    Due to security reasons, a condition can be called a maximum of 10 times in a workflow. Exceeding this limit will result in an error.
 
 ## Key Capabilities
 
@@ -40,14 +40,15 @@ The Condition Node dynamically controls workflow paths by evaluating data agains
 
 <img src="../images/condition_node_new.png" alt="Condition node" title="Condition node" style="border: 1px solid gray; zoom:75%;">
 
-In this document, you will learn how to set up a Condition Node in a tool flow, including adding it at the appropriate location and configuring its properties.
+In this document, you will learn how to set up a Condition Node in a workflow, including adding it at the appropriate location and configuring its properties.
 
 ## Add and Configure a Condition Node
 
-### Step 1: Open Flow Builder
+### Step 1: Open Workflow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log in → AI for Process.
+
+* Select your workflow → Click **Go to Flow**.
 
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 

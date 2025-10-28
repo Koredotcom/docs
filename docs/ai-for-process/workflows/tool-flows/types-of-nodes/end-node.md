@@ -4,19 +4,20 @@ End nodes let you display the flow's outputs upon success or an error message in
 
 ## Add and Configure an End Node
 
-Setting up an End node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up an End node in a workflow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
-### Step 1: Open Flow Builder
+### Step 1: Open Workflow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log in → AI for Process.
+
+* Select your workflow → Click **Go to Flow**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 2: Add the End Node
 
-* In the flow builder, click the “**+**” icon on any existing node on the canvas and select **End** from the pop-up menu. 
+* In the workflow builder, click the “**+**” icon on any existing node on the canvas and select **End** from the pop-up menu. 
 * Alternatively, drag the **End** node from the Assets panel onto the canvas.
 
 ### Step 3: Configure the Node
@@ -43,15 +44,10 @@ Steps to add and configure the node:
 
 If you want to show multiple outputs or messages, click **Add a Key** to add the key and value details for the same.
 
-### Step 4: Test the Flow
+### Step 4: Test the Workflow
 
-Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
+Finally, test the workflow and fix any issues found. Click the **Run Flow** button at the top-right corner of the workflow builder and follow the onscreen instructions.
 
 !!! failure "Standard Error"
 
     When the value for the output variable is not defined, a list of unresolved outputs is displayed.
-
-
-
-
-
