@@ -1,18 +1,18 @@
 # Customizing the Agent AI Widget
 
-The Agent AI Settings page allows users to set the Agent AI widget’s appearance. On this page, users can decide what features they want on the widget, channel-specific settings, and the URL opening behavior.
+The **Agent AI Settings** page allows users to configure the appearance of the Agent AI widget. On this page, users can choose which features to include in the widget, set channel-specific preferences, and define the URL opening behavior. 
 
-The Agent AI Settings page has the following sections:
+This page has the following sections:
 
 * Agent AI Channel Specific Settings
 * Agent AI General Settings
 
 ## Agent AI Channel-Specific Settings
 
-This section lets you set your preferences based on the channels. It has three channels – Chat, Voice, and Email – with a channel-specific default selection of options. The following option toggles are available to select under this section:
+This section lets you set your preferences based on the channels–Chat, Voice, and Email–with a channel-specific default selection of options. The following option toggles are available to select under this section:
 
-* **Proactive Mode**: This widget automates intent identification, entity extraction, and transcripts generation. It lets you have automatic (proactive) transcripts logging and intent suggestions. When enabled, you can also use the “Automatic Dialog Task Entity Extraction” option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcripts logging. However, you can still use greetings, search bar, and My AI Agent (Bot) automations. By default, this widget is enabled for all three channels.
-    * The Assist tab/Run button remains in the disabled state. Only Run with agent’s input will be available.
+* **Proactive Mode**: This widget automates intent identification, entity extraction, and transcript generation. It enables automatic (proactive) transcript logging and intent suggestions. When enabled, you can also use the “Automatic Dialog Task Entity Extraction” option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcript logging. However, you can still use the greetings, search bar, and My AI Agent (Bot) automations. By default, this widget is enabled for all three channels.
+    * The Assist tab/Run button remains disabled. Only Run with agent’s input will be available.
     * The Playbook feature functions as follows:
         * For Dynamic playbooks, identification through the bulb icon and adherence are not functional, but tick-off and step progression continue to function.
         * For Primary playbooks, the automatic adherence or automatic tick-off does not happen.
@@ -24,7 +24,7 @@ This section lets you set your preferences based on the channels. It has three c
 
     If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels. 
 
-* **Agentic Copilot**: The Agentic Copilot feature enables you to have autonomous, end-to-end task execution. Agents monitor the conversations and can cancel, override, or edit the messages. In this section, you can select a language, enable/disable this feature, select an app, select to auto send messages, and set a timer (up to 10 seconds) for auto sending messages. 
+* **Agentic Copilot**: The Agentic Copilot feature enables you to have autonomous, end-to-end task execution. Agents monitor the conversations and can cancel, override, or edit the messages. In this section, you can select a language, enable/disable this feature, select the **Enable for all Agents** or **Enable for Specific Queues** option, select an app, select to auto send messages, and set a timer (up to 60 seconds) for auto sending messages. 
 
 * **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My AI Agent (Bot), and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection. 
 
@@ -75,12 +75,21 @@ This section lets you set your preferences based on the channels. It has three c
     * Select or clear the **Automatic Dialog Task Entity Extraction** option.
 7. Turn the toggle **on** or **off** against each widget, as required.
 8. For the **Agentic Copilot** feature: 
-    1. Select a language from the language list.
-    2. Click the toggle to Enable/Disable the Agentic Copilot feature.
-    3. Select an app from the **Select Agentic App** list.
-    4. Click to select the **Allow auto send Message** option. Clearing this option cancels all unsent or new Agentic messages.  
-    5. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 60 seconds. 
-    <img src="../widget-settings-images/agentic-copilot-setting.png" alt="agentic-copilot-setting" title="agentic-copilot-setting" style="border: 1px solid gray; zoom:80%;"> 
+    * Select a language from the language list.
+    * Click the toggle to Enable/Disable the Agentic Copilot feature.
+    * Select an option:
+        * **Enable for all Agents**: The selected app is enabled for all queues.
+            1. Select an app from the **Select Agentic App** list.
+            2. Click to select the **Allow auto send Message** option. Clearing this option cancels all unsent or new Agentic messages.
+            3. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 60 seconds.  
+
+            <img src="../widget-settings-images/agentic-copilot-all-agents.png" alt="agentic-copilot-all-agents" title="agentic-copilot-all-agents" style="border: 1px solid gray; zoom:80%;">  
+
+        * **Enable for Specific Queues**: Select this option to assign specific apps to selected queues in the **[Agent AI Mapping](../configuration/agent-ai-mapping.md)** section.  
+            1. Click **Open AI Feature Mapping** to navigate to the Agent AI Mapping section.
+            2. Click **learn more** to read about queue configuration.  
+            
+                <img src="../widget-settings-images/agentic-copilot-specific-agents.png" alt="agentic-copilot-specific-agents" title="agentic-copilot-specific-agents" style="border: 1px solid gray; zoom:80%;">  
 
 9. Turn the **toggle** on or off for **Control Transcript Visibility between Agents** (for Voice channel only), and select one of the following options: 
     * Use public APIs to control transcription 
