@@ -6,7 +6,7 @@ Configurable AI agents designed for quick deployment and workflow integration wi
 
 * **Workflow Agents**: Create agents that integrates tools in Agent platform, enhancing interaction and enabling smooth workflow execution. [Learn more](./workflow-agents.md).
 
-* **Bot Agents**: Connect your **XO** bot to create agents that smoothly integrate and interact with it, enabling seamless workflow execution. [Learn more](./bot-agents.md).
+* **Bot Agents**: Connect your **AI for Service** bot to create agents that smoothly integrate and interact with it, enabling seamless workflow execution. [Learn more](./bot-agents.md).
 
 * **Search Agents**: In AI for Work, RAG agents are implemented through **Search AI** applications that index content from various sources, allowing them to retrieve relevant information and generate precise responses to user queries. [Learn more](./search-agents.md)
 

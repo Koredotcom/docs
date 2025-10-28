@@ -45,7 +45,7 @@ Email sessions can now remain active until manually closed, with configurable ti
 
 **Bulk Transfer of Chats, Calls and Emails to a Human Agent**
 
-Supervisors can transfer multiple chats, calls, and emails simultaneously from the Agents or Queue tabs to specific agents or queues. Transfers respect agent capacity, channel eligibility, and status restrictions, and automatically notifies of failures or overload situations. Role-based permissions control access, and blended accounts are required for multi-channel transfers. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#transfer-conversations-to-a-human-agent)
+Supervisors can transfer multiple chats, calls, and emails simultaneously from the Agents or Queue tabs to specific agents or queues. Transfers respect agent capacity, channel eligibility, and status restrictions, and automatically notifies of failures or overload situations. Role-based permissions control access, and blended accounts are required for multi-channel transfers. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#transfer-all-callschatsemails-to-a-human-agent)
 
 <font size="4">API</font>
 

@@ -97,9 +97,9 @@ To change the agent icon, click on the agent logo located above the agent's name
 
 #### Step 2: Source
 
-In the Sources section, you can configure the following fields 
+In the Sources section, you can configure the following fields:
 
--  [User Input](#userinput)
+-  [User Input](#user-input)
 -  [Knowledge](#knowledge)
 -  [Prompts](#prompts)
 -  [Multiprompt](#multiprompt)
@@ -110,7 +110,7 @@ the previous step. For example, if the purpose is "summarization", fields might
 include Word Count, Summary Format
 etc.<img src="../images/source_gpt.png" alt="source_gpt" title="source_gpt" style="border: 1px solid gray; zoom:70%;">
 
-##### User Input
+##### <a id="User Input">User Input</a>
 
 To configure user input, follow the steps outlined below:
 
@@ -157,7 +157,7 @@ To configure user input, follow the steps outlined below:
 2.  Select the model required from the **Model selection** drop-down list, which
     displays all the integrated
     models. To know more about model integration, click
-    [here](../llm-configuration/general-purpose.md#custom-llm-integration).
+    [here](../llm-configuration/general-purpose.md#custom-llm-configuration).
     <img src="../images/model.png" alt="URL_content_gpt" title="URL_content_gpt" style="border: 1px solid gray; zoom:70%;">
 
 3. Toggle the **Show to users** button to display this prompt to the user. After switching the toggle to ON, you can choose between **Read-only** or **Editable** modes.
