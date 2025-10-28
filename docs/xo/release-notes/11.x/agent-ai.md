@@ -17,11 +17,10 @@ The Agent AI **Channel Specific Settings** > **Agentic Copilot** now includes tw
 * Enable for all agents: Enables the selected app for all queues.
 * Enable for specific queues: Enables the selected app for selected queues.
 
-[Learn more :octicons-arrow-right-24:]
 
 **Conversation Logs Display Identifiers and Sentiment Data**
 
-The Conversation Logs section now displays Session ID, Bot ID, Conversation ID, and User ID, with copy buttons. It also displays Overall Sentiment, which, when hovered over, shows the detailed user sentiment journey. [Learn more :octicons-arrow-right-24:]
+The Conversation Logs section now displays Session ID, Bot ID, Conversation ID, and User ID, with copy buttons. It also displays Overall Sentiment, which, when hovered over, shows the detailed user sentiment journey. 
 
 <font size="4">API Enhancement</font>
 
@@ -33,7 +32,7 @@ This API generates duration-based, paginated Agent AI conversation records, prov
 
 **Agentic Copilot Support for ServiceNow Agent AI Widget**
 
-Agent AI integration with ServiceNow now supports Proactive Mode through Agentic Copilot, providing agents with real-time, context-driven suggestions. [Learn more :octicons-arrow-right-24:]
+Agent AI integration with ServiceNow now supports Proactive Mode through Agentic Copilot, providing agents with real-time, context-driven suggestions. 
 
 <hr>
 

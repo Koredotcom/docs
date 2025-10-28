@@ -91,19 +91,13 @@ Publish your agent and define access permissions and enablement.
 
 The initial step employs the RAG (Retrieval Augmented Generation) agent to conduct a comprehensive analysis of NVIDIA's market performance. The agent processes indexed files to evaluate current market indicators and historical performance patterns.
 
-<img src="../images/Agentic_App_12.png" alt="Market Analysis" title="Market Analysis" style="border: 1px solid gray; zoom:70%;">
-
 #### Step 2: Company Share Owners
 
 During the second step, the system uses the API agent to retrieve detailed ownership information from the client database. This procedure produces a comprehensive overview of existing shareholders, which includes institutional investors, individual stakeholders, and client portfolio allocations.
 
-<img src="../images/Agentic_App_13.png" alt="Company Share Owners" title="Company Share Owners" style="border: 1px solid gray; zoom:70%;">
-
 #### Step 3: Client Information and Risk Factor
 
 The third step activates the Prompt agent to perform a thorough risk evaluation and develop strategic recommendations. Based on the consolidated data from previous steps, the agent formulates hold or sell recommendations.
-
-<img src="../images/Agentic_App_14.png" alt="Client Information and Risk Factor" title="Client Information and Risk Factor" style="border: 1px solid gray; zoom:70%;">
 
 #### Step 4: Compose an Email
 
@@ -114,8 +108,6 @@ The final step automatically generates a professional email that synthesizes all
 * Professional business format with clear sections.
 * Data visualizations and tables where applicable.
 * Formal closing with contact details.
-
-<img src="../images/Agentic_App_15.png" alt="Email Format" title="Email Format" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
 

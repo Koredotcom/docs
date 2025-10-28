@@ -21,7 +21,7 @@ Key Improvements
 * Connected Systems and Data Sources: Omni Search integrates with Google Calendar, Gmail, Jira, HubSpot, Zendesk, and Company Policies.
 
 !!!note
-     * This beta feature is available only for Kore accounts (Internal).
+     * This beta feature is available only for internal accounts.
      * To use Omni Search, users must add connections (for Gmail, Google Calendar). Without these, the system can't retrieve or link data across services.
 
 **Agent Version Control System**
@@ -69,7 +69,7 @@ The system generates custom Microsoft Teams app manifests with organizational br
 
 **Amazon Q Integration with AI for Work**
 
-AI for Work now supports Amazon Q integration as both an Enterprise Knowledge source and a specialized Search Agent, providing customers with hybrid search capabilities across Kore SearchAI and Amazon Q indices. Query routing uses AI-driven intent recognition to distribute requests between Kore and Q indices optimally.
+AI for Work now supports Amazon Q integration as both an Enterprise Knowledge source and a specialized Search Agent, providing customers with hybrid search capabilities across SearchAI and Amazon Q indices. Query routing uses AI-driven intent recognition to distribute requests.
 
 AI-driven intent recognition automatically routes queries to the most relevant index, ensuring accurate and context-aware responses. Administrators can configure Amazon Q either as the default enterprise knowledge source or as a contextual search agent for specialized queries.
 

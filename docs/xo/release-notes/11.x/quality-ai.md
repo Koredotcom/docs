@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Keyword Search with Audit Filtering**
 
-The new Keyword Search Filter feature lets users easily locate and analyze conversations. Users can search for keywords and refine results by speaker, including or excluding keywords. Each search result links directly to the QA audit screen, where keyword matches are highlighted in the transcript, along with speaker labels and QA evaluation details. This ultimately leads to improved audit accuracy, traceability, and filtering flexibility. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/topic-discovery.md)
+The new Keyword Search Filter feature lets users easily locate and analyze conversations. Users can search for keywords and refine results by speaker, including or excluding keywords. Each search result links directly to the QA audit screen, where keyword matches are highlighted in the transcript, along with speaker labels and QA evaluation details. This ultimately leads to improved audit accuracy, traceability, and filtering flexibility. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md)
 
 <font size="4">Analytics</font>
 
@@ -27,7 +27,9 @@ This release introduces the following two new generative AI features powered by 
 * By Value Adherence Validation: Check if extracted metric values match predefined reference data and return binary adherence scores.
 
 * By Value Metric Extraction: Extract metric values from messages by users, AI agents, or humans. 
-[Learn more :octicons-arrow-right-24:](../../../xo/generative-ai-tools/genai-features-qualityai.md)
+[Learn more :octicons-arrow-right-24:](./../../generative-ai-tools/genai-features-qualityai.md)
+
+
 <hr>
 
 ## v11.18.0 September 27, 2025

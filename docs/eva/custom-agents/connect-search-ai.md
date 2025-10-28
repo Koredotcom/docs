@@ -16,7 +16,7 @@ To connect Search AI complete the following instructions:
     * **Client Secret ID**: A secret key generated for secure interaction.
     * **Search ID**: Unique identifier of the client generated in Search AI.
 
-You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/api-introduction/) in your XO platforms App's channel:
+You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/api-introduction/) in your AI for Service platforms App's channel:
 
 * Answer Generation
 * Permission Entity Management
