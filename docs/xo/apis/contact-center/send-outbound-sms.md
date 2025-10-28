@@ -28,10 +28,10 @@ This API enables sending outbound SMS messages through the platform's generic SM
 ```
 curl --location 'https://{{host}}/api/public/bot/st-26d52ba6-7a77-56b2-be4e-a8db1da7e440/outboundsms' \
 --header 'Content-Type: application/json;charset=UTF-8' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy1kYzZlY2RmZC1jYmE3LTUwNTUtYTk4My1mZmZhMTE1NWEzZjUifQ.03LljsV8Not1NMbo-3Y-pJvNWjB6J8dTciPGPx-8h4Q' \
+--header 'auth: <token>' \
 --data '{
-    "fromNo": "+16693422058",
-    "toNo": "+9179876543210"
+    "fromNo": "+19876543210",
+    "toNo": "+911234567890"
 }'
 ```
 
