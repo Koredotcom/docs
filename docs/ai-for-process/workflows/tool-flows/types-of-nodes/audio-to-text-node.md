@@ -33,7 +33,7 @@ The **Audio to Text** node processes uploaded customer service call recordings a
 
 ## How It Works
 
-The Audio to Text Node integrates seamlessly into your tool flows, accepting audio inputs, whether as files or URLs from previous nodes and passing the transcribed text to subsequent nodes. You can configure parameters such as the processing model, translation preferences, timestamp inclusion, and prompt instructions to tailor the transcription process to your specific needs. The node supports both static and dynamic inputs via context variables, making it highly adaptable for a wide range of voice-driven automation scenarios.
+The Audio to Text Node integrates seamlessly into your workflows, accepting audio inputs, whether as files or URLs from previous nodes and passing the transcribed text to subsequent nodes. You can configure parameters such as the processing model, translation preferences, timestamp inclusion, and prompt instructions to tailor the transcription process to your specific needs. The node supports both static and dynamic inputs via context variables, making it highly adaptable for a wide range of voice-driven automation scenarios.
 
 <img src="../images/how-audio-to-text-works.png" alt="how audio to text works" title="how audio to text works" style="border: 1px solid gray; zoom:75%;">
 
@@ -81,7 +81,7 @@ The following audio file formats are supported by the node:
 
 ### Processing Model
 
-The **Agent Platform** uses **OpenAI Whisper-1** for transcription.
+AI for Process uses **OpenAI Whisper-1** for transcription.
 
 **Use Cases**
 
@@ -101,7 +101,7 @@ This node is commonly used for:
 
 ### Important Considerations
 
-* Audio uploads and settings are handled by the [File Upload API](../../../../apis/apis-list/upload-file-api.md){:target="_blank"}.
+* Audio uploads and settings are handled by the [File Upload API](){:target="_blank"}.
 
 * OpenAI Whisper automatically removes offensive and banned words during transcription. 
 * Performance tracking is available under **Settings** > **Model Analytics Dashboard** > **External Models** tab. [Learn more](../../../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}. 
@@ -124,10 +124,10 @@ Metrics include:
 
 ### Step 1: Open Flow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
-* Select your tool → Click **Go to Flow**.
+* Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add the Node
 
@@ -141,7 +141,7 @@ Metrics include:
 
 * Enter or select the following **General Settings**:
     * **Node Name**: Enter an appropriate name for the node. For example, “*CustomerSupportConversation*.”
-    * Provide the input variable that is set for the node for the **Audio File** field. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
+    * Provide the input variable that is set for the node for the **Audio File** field. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md){:target="_blank"}.
     * Select a model from the list of configured models.
     * (Optional) Turn on the toggle for the following to enable the respective feature:
          * **Translation**: Translate other languages supported by the model to English.
@@ -224,7 +224,7 @@ To run and test the flow, follow the steps below:
 
 * Click <b>Generate Output</b>.
 
-  The **Debug** window generates the flow log and results, as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
+  The **Debug** window generates the flow log and results, as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow.
 
    <img src="../images/debug-window-audio-to-text.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">
 

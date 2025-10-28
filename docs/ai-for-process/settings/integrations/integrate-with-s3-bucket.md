@@ -1,6 +1,6 @@
 # Integrate with S3 Bucket
 
-The S3 Storage Integration functionality broadens Agent Platform's capabilities by enabling connectivity with your AWS S3 account. It empowers you to import files from S3 and leverage them in developing high-quality AI applications for enterprises.
+The S3 Storage Integration functionality broadens AI for Process' capabilities by enabling connectivity with your AWS S3 account. It empowers you to import files from S3 and leverage them in developing high-quality AI applications for enterprises.
 
 **To integrate with your S3 account, follow these steps**:
 
@@ -43,11 +43,11 @@ You can test your connection after you provide the details to verify the accurac
         If the connection fails a red icon is displayed corresponding to the name of the connection on the Connections list.
 
 
-## **How to use files from the connected S3 Buckets in the Tool Flow Builder**
+## **How to use files from the connected S3 Buckets in the Workflow Builder**
 
 Once a connection is created and the integration of S3 Bucket is successful you can use the files in the Flow builder canvas.
 
-**To use the files in the tools flow builder, follow these steps**:
+**To use the files in the Workflow builder, follow these steps**:
 
 1. Create an **Input variable** with type **Remote File**. 
 

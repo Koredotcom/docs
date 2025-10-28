@@ -8,11 +8,11 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 
 **Key Features**
 
-* **Global timeline Filters** provide a comprehensive view of performance across all workflows in your account. [Learn more](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+* **Global timeline Filters** provide a comprehensive view of performance across all workflows in your account. [Learn more](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 
-* **Workflow Performance Filters** offer a detailed analysis of individual runs, response times, and node executions during the selected period for the selected workflow and version. [Learn more](../analytics/tools-analytics-dashboard.md/#workflow-performance-filters){:target="_blank"}.
+* **Workflow Performance Filters** offer a detailed analysis of individual runs, response times, and node executions during the selected period for the selected workflow and version. [Learn more](../analytics/workflows-analytics-dashboard.md/#workflow-performance-filters){:target="_blank"}.
 
-* An **expanded view of analytics widgets** include filters to customize data display. [Learn more](../analytics/tools-analytics-dashboard.md/#expanded-widget-view){:target="_blank"}.
+* An **expanded view of analytics widgets** include filters to customize data display. [Learn more](../analytics/workflows-analytics-dashboard.md/#expanded-widget-view){:target="_blank"}.
 * Hovering over a data point on the **dynamic and interactive line graph** reveals the real-time information for that specific period, providing a focused view of workflow performance.
 * You can obtain **hourly performance analysis** for a workflow on a specific day or review **daily performance trends** when selecting a date range filter.
 * Click the **Refresh icon** shown below to ensure you have the latest dashboard data available to make informed decisions.
@@ -52,15 +52,15 @@ The following metrics summarize the counts for workflows, runs, and node executi
 
 * **Number of workflows**: The total number of workflows deployed within your account during the selected period. This includes workflows and all their versions managed by all the users of your account. 
 
-    To view data for a specific workflow and its version deployed in your account, use the **Workflows Performance** filters. [Learn more](../analytics/tools-analytics-dashboard.md/#workflow-performance-filters){:target="_blank"}.
+    To view data for a specific workflow and its version deployed in your account, use the **Workflows Performance** filters. [Learn more](../analytics/workflows-analytics-dashboard.md/#workflow-performance-filters){:target="_blank"}.
 
 * **Number of runs**: The total count of success and failure workflow runs or node executions completed by all deployed workflows in your account during the specified period. 
 
-For detailed statistics on each status for the selected date/date range, see the **workflow Runs** widget. [Learn more](../analytics/tools-analytics-dashboard.md/#workflow-runs){:target="_blank"}.
+For detailed statistics on each status for the selected date/date range, see the **workflow Runs** widget. [Learn more](../analytics/workflows-analytics-dashboard.md/#workflow-runs){:target="_blank"}.
 
 * **Number of times nodes are executed**: The event-driven execution counts for different node types during a workflow run. 
 
-For detailed statistics on the total events and the runs executed by each node, see the **Nodes Execution** widget. [Learn more](../analytics/tools-analytics-dashboard.md/#nodes-execution){:target="_blank"}.
+For detailed statistics on the total events and the runs executed by each node, see the **Nodes Execution** widget. [Learn more](../analytics/workflows-analytics-dashboard.md/#nodes-execution){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -68,7 +68,7 @@ For detailed statistics on the total events and the runs executed by each node, 
 
 <img src="../images/info-icon.png" alt="info icon" title="info icon" style="border: 1px solid gray; zoom:75%;">
 
-To generate and view the required Workflow Analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+To generate and view the required Workflow Analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 
 ### workflow-specific Metrics
 
@@ -78,7 +78,7 @@ The following metrics help analyze the performance of the selected workflow and 
 * **Avg. workflow Response Time**: Displays the selected workflow version’s ART to the requests received during the selected period.
 * **Nodes Execution**: Displays the event-based node execution graph for all the node types on a single day or across the selected date range. **Nodes are executed up to the rate limit threshold subscription for your account**.
 
-To view the required data, use the [Global Timeline Filters](./tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} and [Workflow Performance Filters](./tools-analytics-dashboard.md/#workflow-performance-filters){:target="_blank"}. 
+To view the required data, use the [Global Timeline Filters](./workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} and [Workflow Performance Filters](./workflows-analytics-dashboard.md/#workflow-performance-filters){:target="_blank"}. 
 
 ## Global Timeline Filters
 
@@ -127,7 +127,7 @@ The other options you can select include:
 
 ## Workflow Performance Filters
 
-The following widget-level filters apply exclusively to [workflow-specific metrics](../analytics/tools-analytics-dashboard.md/#workflow-specific-metrics){:target="_blank"}, providing real-time analytics when used with a [Global Timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. 
+The following widget-level filters apply exclusively to [workflow-specific metrics](../analytics/workflows-analytics-dashboard.md/#workflow-specific-metrics){:target="_blank"}, providing real-time analytics when used with a [Global Timeline filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. 
 
 * **Workflow Name**: Select the deployed workflow from the list to see the associated analytics data.
 
@@ -143,17 +143,17 @@ The following widget-level filters apply exclusively to [workflow-specific metri
 
 ## Workflow Performance Data Widgets
 
-The **Workflow Analytics** dashboard displays the widgets mentioned below to represent the [Workflow-specific performance metrics](../analytics/tools-analytics-dashboard.md/#workflow-specific-metrics){:target="_blank"}. The graphs update automatically when a different workflow version is selected.
+The **Workflow Analytics** dashboard displays the widgets mentioned below to represent the [Workflow-specific performance metrics](../analytics/workflows-analytics-dashboard.md/#workflow-specific-metrics){:target="_blank"}. The graphs update automatically when a different workflow version is selected.
 
 ### How it Works
 
-1. Select the required date/range in the [global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+1. Select the required date/range in the [global timeline filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 2. Select the **workflow Name** and (optional) **workflow Version**.
 3. The widgets display an hourly graph for 24 hours on a single day and a daily graph for the respective metrics for a date range.
 
 ### workflow Runs
 
-This widget features two dynamic graphs illustrating successful and failed requests executed by the workflow during the selected period in the [global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Total Number of Requests**, while the X-axis indicates the **Date**. 
+This widget features two dynamic graphs illustrating successful and failed requests executed by the workflow during the selected period in the [global timeline filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Total Number of Requests**, while the X-axis indicates the **Date**. 
 
 **Key Features**
 
@@ -178,7 +178,7 @@ You can do the following to analyze workflow performance:
 
 ### Avg. Workflow Response Time
 
-This widget features a line graph illustrating the ART taken by the workflow version to execute each request during the selected period in the [global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Avg. Response Time**, while the X-axis indicates the **Date**. 
+This widget features a line graph illustrating the ART taken by the workflow version to execute each request during the selected period in the [global timeline filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Avg. Response Time**, while the X-axis indicates the **Date**. 
 
 **Key Features**
 
@@ -217,7 +217,7 @@ You can do the following to analyze workflow performance:
 
 ### Nodes Execution
 
-This widget displays a line graph showing the number of nodes (including all node types) executed for each event run during a workflow for the selected workflow version and period (as selected in the [Global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters)){:target="_blank"}. The Y-axis represents the **Number of Nodes Executed**, while the X-axis shows the **Date**.
+This widget displays a line graph showing the number of nodes (including all node types) executed for each event run during a workflow for the selected workflow version and period (as selected in the [Global timeline filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters)){:target="_blank"}. The Y-axis represents the **Number of Nodes Executed**, while the X-axis shows the **Date**.
 
 **Rate Limit**
 
@@ -261,8 +261,8 @@ You can expand any widget on the **Workflow Analytics Dashboard** for a drill do
 
 The widget-level filters include the following:
 
-* [Global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}
-* [Workflow Performance Filters](../analytics/tools-analytics-dashboard.md/#workflow-performance-filters){:target="_blank"}
+* [Global timeline filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}
+* [Workflow Performance Filters](../analytics/workflows-analytics-dashboard.md/#workflow-performance-filters){:target="_blank"}
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>

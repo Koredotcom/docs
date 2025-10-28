@@ -7,7 +7,7 @@ AI for Process' **Settings** console is a centralized management interface that 
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Integrations](../settings/integrations/about-integrations.md){:target="_blank"} 
 5. [Manage Custom Scripts](../settings/manage-custom-scripts/custom-scripts.md){:target="_blank"}
-6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Workflows Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
+6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Workflows Analytics Dashboard](../settings/monitoring/analytics/workflows-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
 7. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
 ## Levels of Users Management 
@@ -104,7 +104,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 **Monitoring**
 
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
-- Review workflow performance metrics and take informed decisions on the **Workflows Analytics** dashboard. [Learn more](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}.
+- Review workflow performance metrics and take informed decisions on the **Workflows Analytics** dashboard. [Learn more](../settings/monitoring/analytics/workflows-analytics-dashboard.md){:target="_blank"}.
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 * Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 * Track custom script executions across runs and logs for deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently. [Learn more](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
@@ -186,7 +186,7 @@ The following modules and features are supported on the **Settings** Console:
 <li>Create and configure secure connections across multiple categories like marketing, AI, sales, and more.</li>
 <li>Pre-authorize the connection using the required auth method.</li>
 <li>Add authorization credentials to secure the connection when users interact with the workflow.</li>
-<li>Use the configured connection in the <a href="../../ai-agents/tools/tool-flows/types-of-nodes/integration-node" target="_blank">Integration node</a> to seamlessly access third-party services while building the workflow.</li>
+<li>Use the configured connection in the <a href="./../workflows/tool-flows/types-of-nodes/integration-node" target="_blank">Integration node</a> to seamlessly access third-party services while building the workflow.</li>
 </ul>
    </td>
   </tr>
@@ -200,7 +200,7 @@ The following modules and features are supported on the **Settings** Console:
 <li>Review and deploy the custom script into the platform.</li>
 <li>Perform actions like re-deploy, delete, export and more on the deployed scripts based on the current status.</li>
 <li>View and manage the Overview, Deployment history, Endpoint, and API Keys pages for the script.</li>
-<li>Select and execute the configured custom script through the <a href="../../ai-agents/tools/tool-flows/types-of-nodes/function-node" target="_blank">Function node</a> of the workflows flow.</li>
+<li>Select and execute the configured custom script through the <a href="./../workflows/tool-flows/types-of-nodes/function-node" target="_blank">Function node</a> of the workflows flow.</li>
 </ul>
    </td>
   </tr>
@@ -238,7 +238,7 @@ The following modules and features are supported on the **Settings** Console:
    <li>Search for the required audit log from the listed entries.</li></ul></td>
   </tr>
     <tr>
-   <td><a href="../../settings/monitoring/analytics/tools-analytics-dashboard" target="_blank">Monitoring - Workflows Analytics Dashboard</a></td>
+   <td><a href="../../settings/monitoring/analytics/workflows-analytics-dashboard" target="_blank">Monitoring - Workflows Analytics Dashboard</a></td>
    <td>Get actionable insights into successful and failed workflow runs, average workflow response time, and drill down into nodes execution data to enable informed decisions on workflow deployments, optimize their performance, and accelerate system efficiency.</td>
    <td><ul><li>Select a single date or date range to view periodic workflow performance metrics.</li>
    <li>Make performance comparison between different workflow versions.</li>
@@ -267,7 +267,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
           <tr>
    <td><a href="../../settings/monitoring/monitoring-custom-scripts" target="_blank">Monitoring - Custom Scripts</a></td>
-   <td>Review and monitor key performance indicators for each internal or external script run that's executed on the Agent Platform via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
+   <td>Review and monitor key performance indicators for each internal or external script run that's executed on AI for Process via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
       <td><ul><li>Select a single date or date range to view specific, time-based script performance metrics.</li>
       <li>Analyze failed runs and identify failure patterns.</li>
 <li>Analyze each successful/failed run to ensure optimal usage.</li>

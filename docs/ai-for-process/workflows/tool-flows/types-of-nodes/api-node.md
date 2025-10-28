@@ -1,6 +1,6 @@
 # API Node - Automate API Calls
 
-The API Node enables you to seamlessly connect your tool to external systems and fetch real-time data by making REST or SOAP API calls. Whether you're enriching customer records, retrieving transaction status, or pushing updates, the API node helps you integrate third-party services directly into your workflow logic. With support for both synchronous and asynchronous operations, the node offers flexibility for a wide range of automation needs.
+The API Node enables you to seamlessly connect your workflow to external systems and fetch real-time data by making REST or SOAP API calls. Whether you're enriching customer records, retrieving transaction status, or pushing updates, the API node helps you integrate third-party services directly into your workflow logic. With support for both synchronous and asynchronous operations, the node offers flexibility for a wide range of automation needs.
 
 ## Key Capabilities
 
@@ -28,14 +28,16 @@ The API Node enables seamless integration with external services by sending and 
 
 ## Add and Configure an API Node
 
-Setting up an API node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up an API node in a workflow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
 ### Step 1: Open Flow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log in → In AI for Process Modules top menu → Click **Workflows**.
+  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+
+* Select your workflow → Click **Go to Flow**.
   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 2: Add the API Node
@@ -96,7 +98,7 @@ Click the added node to open its properties dialog box. The General Settings for
     </li>
   </ul>
 
-  <strong>Note</strong>: Ensure the "<strong>No timeout</strong>" setting is selected for both the API node and the tool to avoid timeout errors.
+  <strong>Note</strong>: Ensure the "<strong>No timeout</strong>" setting is selected for both the API node and the workflow to avoid timeout errors.
 </td>
   </tr>
   <tr>
