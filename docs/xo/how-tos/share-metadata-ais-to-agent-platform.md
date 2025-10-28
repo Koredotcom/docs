@@ -22,7 +22,7 @@ Developers can define and expose XO variables as metadata, which are then made a
 
 
 * Ensure the required variable is defined in AI for Service. For details, see [Using Variables](../app-settings/variables/using-bot-variables.md).
-* Ensure an Agentic app is created in the Agent platform. For steps, see [Create an Agentic App](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/create-app/).
+* Ensure an Agentic app is created in the Agent Platform. For steps, see [Create an Agentic App](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/create-app/).
 * Ensure the Agentic app is integrated with AI for Service using the Automation node. To configure, see [Full Autonomy](../flows/node-types/automation.md#full-autonomy).
 
 
