@@ -83,7 +83,7 @@ This section lets you set your preferences based on the channels–Chat, Voice, 
             2. Click to select the **Allow auto send Message** option. Clearing this option cancels all unsent or new Agentic messages.
             3. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 60 seconds.  
 
-            <img src="../widget-settings-images/agentic-copilot-all-agents.png" alt="agentic-copilot-all-agents" title="agentic-copilot-all-agents" style="border: 1px solid gray; zoom:80%;">  
+                <img src="../widget-settings-images/agentic-copilot-all-agents.png" alt="agentic-copilot-all-agents" title="agentic-copilot-all-agents" style="border: 1px solid gray; zoom:80%;">  
 
         * **Enable for Specific Queues**: Select this option to assign specific apps to selected queues in the **[Agent AI Mapping](../configuration/agent-ai-mapping.md)** section.  
             1. Click **Open AI Feature Mapping** to navigate to the Agent AI Mapping section.
