@@ -78,15 +78,15 @@ To create a new Prompt Agent, follow these steps:
 3.  The **Prompt Agent creation** wizard will take you through the following
     steps:
 
-    1.  [Step 1: Details and Purpose](#step-1-details-and-purpose)
+     - [Step 1: Details and Purpose](#step-1-details-and-purpose)
 
-    2.  [Step 2: Source Configuration](#step-2-source)
+     -  [Step 2: Source Configuration](#step-2-source)
 
-    3.  [Step 3: Business Rules](#step-3-business-rules)
+     -  [Step 3: Business Rules](#step-3-business-rules)
 
-    4.  [Step 4: Appearance and Behavior](#step-4-appearance-and-behavior)
+     - [Step 4: Appearance and Behavior](#step-4-appearance-and-behavior)
     
-    5.  [Step 5: Publish](#step-5-publish-prompt-agent)
+     -  [Step 5: Publish](#step-5-publish-prompt-agent)
 
 #### Step 1: Details and Purpose
 

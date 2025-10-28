@@ -66,14 +66,6 @@ To create a webhook channel on the Bot and complete the integration process, fol
 
 The **Prompt Agent creation** wizard will take you through the following steps:
 
-    1. [Step 1: Define and Purpose](#step-1-details-and-purpose)
-
-    2. [Step 2: Add Bot](#step-2-add-bot)
-
-    3. [Step 3: Appearance and Behavior](#step-3-appearance-and-behavior)
-
-    4. [Step 4: Publish Bot Agent](#step-4-publish)
-
 #### Step 1: Details and Purpose
 
 Provide a suitable and unique name for the agent and describe its purpose. Defining the agent's purpose enables it to accurately recognize its capabilities and effectively utilize them to respond to user queries aligned with the specified intent. Clearly outline the specific use cases for which you designed the agent.

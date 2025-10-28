@@ -1,6 +1,6 @@
 # Workflow Agent
 
-The Workflow Agent allows users to integrate tools in Agent platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently.
+The Workflow Agent allows users to integrate tools in Agent Platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently.
 
 The Agent leverages APIs and combines retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. These highly configurable agents allow users to select and fine-tune models from various options within the Workflow platform. Once configured, these agents dynamically adapt to user inputs, providing real-time, intelligent responses.
 
@@ -34,13 +34,13 @@ To create a Workflow Agent, follow the steps outlined below:
 
 1. The **Workflow** / **Workflow Agent creation** wizard will take you through the following steps:
 
-    1. [Step 1: Define the purpose of the Agent](#details)
+     - [Step 1: Define the purpose of the Agent](#step-1-details-and-purpose)
 
-    2. [Step 2: Configure Workflow Flow](#configure)
+     - [Step 2: Configure Workflow Flow](#step-2-configure-workflow-flow)
 
-    3. [Step 3: Preview the Agent configuration](#preview)
+     - [Step 3: Preview the configuration](#step-3-appearance-and-behavior)
 
-    4. [Step 4: Publish the Agent](#publish)
+     - [Step 4: Publish the Agent](#step-4-publish)
 
 ### Step 1: Details and Purpose
 
