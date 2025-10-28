@@ -1,12 +1,12 @@
 # Integration Node – Enhance Workflows with External Services
 
-The **Integration Node** is a powerful and flexible component that acts as a run-time engine for securely connecting to third-party services, enabling seamless data exchange and automation through configured actions and auto-generated JSON. It leverages pre-configured connections and authentication methods to serve as a bridge between your tool and external platforms, supporting actions such as exporting data from a site or fetching broken back links within your automation without any coding effort.
+The **Integration Node** is a powerful and flexible component that acts as a run-time engine for securely connecting to third-party services, enabling seamless data exchange and automation through configured actions and auto-generated JSON. It leverages pre-configured connections and authentication methods to serve as a bridge between your workflow and external platforms, supporting actions such as exporting data from a site or fetching broken back links within your automation without any coding effort.
 
 ## Key Capabilities
 
 * **No-Code Service Integration**: Embed prebuilt third-party services or actions into your automation flow without writing any code.
 * **Secure Connections**: Leverage tested and authenticated connections to ensure secure data exchange with external services.
-* **Flexible Configuration**: Customize the node directly on the Tool Flow canvas and seamlessly connect it with other nodes to fit your automation needs.
+* **Flexible Configuration**: Customize the node directly on the Workflow canvas and seamlessly connect it with other nodes to fit your automation needs.
 
 
 ## Common Use Cases
@@ -14,12 +14,12 @@ The **Integration Node** is a powerful and flexible component that acts as a run
 * **CRM & Marketing Automation**: Connect CRM systems with marketing platforms to trigger personalized campaigns based on customer data and behavior, such as automatically launching email sequences when a lead is captured.
 * **Workflow Automation**: Automate tasks across apps, such as creating a project task when a support ticket is raised.
 * **Payment Gateways**: Securely process online transactions through integrated third-party payment providers.
-* **SaaS Integrations**: Enable seamless connections between SaaS tools (e.g., CRM, email marketing, e-commerce) to streamline daily workflows.
+* **SaaS Integrations**: Enable seamless connections between SaaS tools (for example, CRM, email marketing, e-commerce) to streamline daily workflows.
 
 
 ## Example Use Case
 
-Let’s consider an example where the **Integration Node** can be used to automate the tracking of broken back links for a website. The workflow begins with a manual input of the target URL via the Start node. The Integration Node connects to a third-party SEO tool (e.g., Ahrefs) and calls an API to fetch back link data filtered for broken links.
+Let’s consider an example where the **Integration Node** can be used to automate the tracking of broken back links for a website. The workflow begins with a manual input of the target URL via the Start node. The Integration Node connects to a third-party SEO tool (for example, Ahrefs) and calls an API to fetch back link data filtered for broken links.
 
 Using pre-configured authentication, the request returns a structured response with broken URLs, referring pages, and status codes. This data is then passed to the next node for formatting or further use.
 
@@ -27,11 +27,11 @@ Results can be emailed, mapped to a dashboard, or used to trigger follow-up acti
 
 ## How It Works
 
-The **Integration Node** integrates seamlessly into your tool flows, using configured connections and authentication mechanisms to securely interact with external services. It accepts inputs from previous nodes, executes third-party actions based on the selected service and parameters, and passes results to subsequent nodes. You can configure actions through the UI, use context variables for dynamic inputs, and customize prebuilt JSON code, making it ideal for automating a wide range of integration scenarios.
+The **Integration Node** integrates seamlessly into your workflows, using configured connections and authentication mechanisms to securely interact with external services. It accepts inputs from previous nodes, executes third-party actions based on the selected service and parameters, and passes results to subsequent nodes. You can configure actions through the UI, use context variables for dynamic inputs, and customize prebuilt JSON code, making it ideal for automating a wide range of integration scenarios.
 
 <img src="../images/how-integration-node-works.png" alt="how integration node works" title="how integration node works" style="border: 1px solid gray; zoom:75%;">
 
-In this document, you will learn how to add Integration Nodes to your flows, configure them with connections and action parameters, handle inputs and outputs, and test your implementations.
+In this document, you will learn how to add Integration Nodes to your workflows, configure them with connections and action parameters, handle inputs and outputs, and test your implementations.
 
 ## Prerequisites
 
@@ -40,12 +40,11 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
 ## Add and Configure an Integration Node
 
-### Step 1: Open Flow Builder
+### Step 1: Open Workflow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
-     <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+* Log in → AI for Process.
 
-* Select your tool → Click **Go to Flow**.
+* Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add the Node
 
@@ -175,7 +174,7 @@ This step is required because the **Start node** must have at least one **output
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
-<p>Before running the flow, resolve the tool flow errors that appear when you click the <b>Warning</b> icon.</p>
+<p>Before running the flow, resolve the workflow errors that appear when you click the <b>Warning</b> icon.</p>
 </div>
 
   <img src="../images/check-errors.png" alt="errors" title="errors" style="border: 1px solid gray; zoom:75%;">
@@ -191,7 +190,7 @@ To run and test the flow, follow the steps below:
    <img src="../images/click-generate-op.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
  
 
-The **Debug** window generates the flow log and output from the inputs provided. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
+The **Debug** window generates the flow log and output from the inputs provided. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow.
 
 ## Access the Node’s Output
 
@@ -199,6 +198,6 @@ The node’s output is stored in a context variable. You can access the variable
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
-<p>Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see available variables and nodes, including the nodes' outputs.</p>
+<p>AI for Process can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see available variables and nodes, including the nodes' outputs.</p>
 </div>
 

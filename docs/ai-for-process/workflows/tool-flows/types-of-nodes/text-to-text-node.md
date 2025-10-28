@@ -1,6 +1,6 @@
 # Text to Text Node - Automate Text Transformation
 
-The Text to Text node is part of the AI node family in the Tool Builder, enabling the dynamic transformation of input text into a desired text output within a single workflow step. It leverages large language models (LLMs) to produce content that adheres to specific tone, structure, and instructions defined via prompts. This node is ideal for tasks involving summarization, rewriting, generation, and formatting of text data.
+The Text to Text node is part of the AI node family in the Workflow Builder, enabling the dynamic transformation of input text into a desired text output within a single workflow step. It leverages large language models (LLMs) to produce content that adheres to specific tone, structure, and instructions defined via prompts. This node is ideal for tasks involving summarization, rewriting, generation, and formatting of text data.
 
 ## Key Capabilities
 
@@ -17,7 +17,7 @@ The Text to Text node is part of the AI node family in the Tool Builder, enablin
 * **Tone or Style Adjustment**: Refine a message to convey a more professional, friendly, technical, or other desired tone.
 * **Keyword-Based Generation**: Produce text using given inputs like names, topics, or key phrases.
 * **Error Explanation or Log Analysis**: Extract, explain, or simplify technical content.
-* **Content Rewriting**: Modify existing text to enhance clarity, structure, or purpose (e.g., simplifying instructions).
+* **Content Rewriting**: Modify existing text to enhance clarity, structure, or purpose (for example, simplifying instructions).
 
 ## How It Works
 
@@ -30,17 +30,18 @@ In this document, you will learn how to add the node to your flows, configure it
 
 ## Add and Configure a Text to Text Node
 
-Setting up a Text to Text node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up a Text to Text node in a workflow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
-### Step 1: Open Flow Builder
+### Step 1: Open Workflow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log in → AI for Process.
+
+* Select your workflow → Click **Go to Flow**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 2: Add the Text to Text Node
 
-* In the flow builder, click the “**+**” icon on any existing node on the canvas and select **AI** > **Text to Text** from the pop-up menu. 
+* In the Workflow builder, click the “**+**” icon on any existing node on the canvas and select **AI** > **Text to Text** from the pop-up menu. 
 * Alternatively, drag the **Text to Text** node under **AI** from the Assets panel onto the canvas.
 
 ### Step 3: Configure the Node
@@ -86,7 +87,7 @@ Setting up a Text to Text node in a tool flow involves adding the node at the ap
 
         !!! note 
 
-            Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
+            Timeout precedence: Workflow timeout *is greater than* Node timeout *is greater than* Model timeout.
 
     5. **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
         You can define a JSON schema to structure the model's response if the chosen model supports the response format. By default, if no schema is provided, the model will respond with plain text.
@@ -121,7 +122,7 @@ To add tools, click the **Tool Calling** icon. When you select a model that supp
 
 !!! note
 
-    When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
+    When you attach workflows to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
 
 * **Add Tools**: Click **Add Tools** to add a tool.
 
