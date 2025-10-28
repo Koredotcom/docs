@@ -142,7 +142,7 @@ For detailed steps, see [Add an External Model Using API Integration](external-m
 
 ## Supported Open-Source Models
 
-Agent Platform currently supports over thirty open-source models and provides them as a service. Platform-hosted models can be optimized prior to deployment, making them ideal for private environments or specialized applications.
+AI for Process supports over thirty open-source models and provides them as a service. Platform-hosted models can be optimized prior to deployment, making them ideal for private environments or specialized applications.
 
 The supported models and their variants are given below:
 
