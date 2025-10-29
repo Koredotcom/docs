@@ -66,7 +66,7 @@ The **Interactions** dashboard includes the following elements:
 
     * **Navigation/Clickable link**: When the user clicks on a conversation to audit, it opens the Audit screen with preserved filters.
 
-    * **Filter Integration**: The applied keyword filters on the Conversation Mining/Interactions page are saved in sessions. The session preserves filters across pages and views; integrates with other filters using AND logic, and maintains active filter states throughout navigation.  
+    * **Filter Integration**: The applied keyword filters on the Conversation Mining (Interactions) page are saved in sessions. The session preserves filters across pages and views; integrates with other filters using AND logic, and maintains active filter states throughout navigation.  
 <img src="../conversation-mining/images/keywords-interactions.png" alt="Keywords Column" title="Keywords Column" style="border: 1px solid gray; zoom:80%;">
 
 * **Kore Evaluation Score**: Displays the Auto QA score for an interaction based on the evaluation form completed by agents. Hover over the warning icon to see the agent’s API processing status (Pass, Fail, or Disabled). Click a conversation to open the Conversation Mining page for related Audit, Conversation Details, and Logs.
@@ -148,10 +148,10 @@ Steps to Add New Filter:
 1. Click the **Filters** dropdown shown in the upper-right corner to add a new filter. 
 
 2. Click the **+ Add New Filter**.   
-<img src="../conversation-mining/images/conversation-mining-interaction-new-filters.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">  
+<img src="../conversation-mining/images/conversation-mining-interaction-new-filters.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:80%;">  
 
 3. Select a **Filter By** category.   
-<img src="../conversation-mining/images/conversation-mining-interaction-filters-category.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/conv-mining-interactions-new-filter.png" alt="Filter By" title="Filter By" style="border: 1px solid gray; zoom:80%;">
 
 ## Filter Categories
 
@@ -169,7 +169,7 @@ To filter the Efficiency, do the following:
 2. Select **Audit Status** to view conversations that are **Audited**, **Assigned**, or **Not Assigned**.     
 <img src="../conversation-mining/images/audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:80%;">
 
-3. Enter the **Conversation ID**, a unique identifier to search for specific conversations (for example, ticket number).
+3. Enter the **Conversation ID**, a unique identifier to search for specific conversations (for example, ticket number).  
 <img src="../conversation-mining/images/conversation-mining-id.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:80%;">
 
 4. Enter the **Custom Conversation ID** by entering a user-defined or custom conversation identifier (for example, external ID mapping).  
@@ -209,13 +209,13 @@ To filter the Efficiency, do the following:
 
 This category captures the emotional and qualitative aspects of the customer journey.
 
-##### Sentiment Trend
+#### Sentiment Trend
 
 Enables you to track how the customer's or agent’s sentiment changes throughout the conversation, from start to finish. 
 
-**Starting**: Select the Starting sentiment trend from the dropdown to define the initial emotional tone of a conversation. 
+* **Opening**: Select the Starting sentiment trend from the dropdown to define the initial emotional tone of a conversation. 
 
-**Closing**: Select the Closing sentiment trend from the dropdown to define the final emotional tone of a conversation. 
+* **Closing**: Select the Closing sentiment trend from the dropdown to define the final emotional tone of a conversation. 
 
 Example: You can choose sentiment values such as Positive, Negative, or Neutral for both the starting and closing points to map the emotional journey across the interaction.  
 <img src="../conversation-mining/images/experience-sentiment-trend.png" alt="Sentiment Trend" title="Sentiment Trend" style="border: 1px solid gray; zoom:80%;">
@@ -279,6 +279,8 @@ This detects the number of escalations raised to the Supervisor by a customer.
 
 ### Filter by Behaviour
 
+This category analyzes interaction dynamics and conduct between agents and customers. 
+
 #### Metric Name
 
 This filter enables supervisors to view interactions by specific evaluation metrics. Use radio buttons to filter by Pass or Fail and select a metric from the drop-down list to refine results.  
@@ -286,7 +288,7 @@ This filter enables supervisors to view interactions by specific evaluation metr
 
 #### Metric Qualification
 
-The selected evaluation metric appears as a tag below the input field, and you can clear it by clicking X. When opened from the Adherence Heatmap, filters apply automatically. If queues are selected, only metrics from those queues’ forms appear. The filter retrieves interactions where the metric applies, letting you view failed or adhered interactions using radio buttons.   
+The selected evaluation metric appears as a tag below the input field, and you can clear it by clicking **X**. When opened from the Adherence Heatmap, filters apply automatically. If queues are selected, only metrics from those queues’ forms appear. The filter retrieves interactions where the metric applies, letting you view failed or adhered interactions using radio buttons.   
 <img src="../conversation-mining/images/metric-qualification.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
 
 #### Language
@@ -329,56 +331,72 @@ This feature allows you to search, filter, and review conversations using specif
 
 ## Manage Saved Filters
 
-1. Click **Clear** to reset all applied filters. This applies to all the **Filter By** options or categories displayed.
-<img src="../analyze/conversation-mining/images/clear.png" alt="Clear" title="Clear" style="border: 1px solid gray; zoom:80%;">
+### Apply Filters
 
-2. Click **Clear All** to remove or clear all queue filters.  
-<img src="../analyze/conversation-mining/images/clear-all.png" alt="Clear All" title="Clear All" style="border: 1px solid gray; zoom:80%;">
- 
-3. Click the **Cross** (X) icon to close the filter panel.  
-<img src="../analyze/conversation-mining/images/cross-icon.png" alt="Cross" title="Cross" style="border: 1px solid gray; zoom:80%;">  
+* Click **Apply** to save the filter settings. 
 
-4. Click **Save & Apply** to save the selected filter category details to proceed.    
-<img src="../analyze/conversation-mining/images/save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">  
+* The applied settings, regardless of any category filter selected, are stored as an **Unsaved Filter** on the **Conversation Mining** dashboard page.  
+ <img src="../conversation-mining/images/conversation-mining-unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:50%;"> 
 
-5. Click **Apply** to save the filter settings, regardless of any category filter selected, which is stored as an **Unsaved Filter** in the **Conversation Mining** dashboard page.      
-<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
     !!! Note
 
-        If interactions are not used for audit allocation, you can apply the filter without saving. To assign audit allocations, save and name filters for easy reference in future audits.
+        If interactions are not used for audit allocation, you can apply filters without saving. To assign audit allocations, save and name filters for easy reference in future audits.
 
-6. Click the **Save & Apply** button in the **Save Filter** to set the **Unsaved Filter** as the default view filter in the **Conversation Mining** dashboard page.     
-<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
+### Save Filters
 
-7. In the **Save** Filter, enter the **Filter Name**, and enable the toggle option to **Make this the default view**.      
-<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
+* Click **Save & Apply** to save the selected filter category details and proceed.  
+ <img src="../conversation-mining/images/interactions-save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:50%;"> 
 
-8. Click the newly set default view filter or any **Unsaved Filter** dropdown to view all the newly created **Saved Filters**.  
-<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
+* In the **Save Filter** window, enter the Filter Name, and enable the toggle option **Make this the default view** if required.  
+ <img src="../conversation-mining/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:50%;"> 
 
-9. All the **Unsaved Filters** and Saved Filters tagged under it are displayed.   
-<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
+* Click **Save & Apply** in the **Save Filter** window to set the **Unsaved Filter** as the default view filter in the **Interactions** dashboard.  
+ <img src="../conversation-mining/images/default-view-in-dashboard.png" alt="Default View Filter" title="Default View Filter" style="border: 1px solid gray; zoom:50%;"> 
 
-10. Click the **Filtered Interactions**, which allows you to view the real-time conversation interactions count based on your filter selections or matched filter criteria. This count dynamically gets updated when any filters are applied or removed.   
-<img src="./conversation-mining/images/conversation-mining-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
+### View Saved Filters
+
+* Click the newly set default view filter or any Unsaved Filter dropdown to view all the newly created Saved Filters.  
+
+* All the Unsaved Filters and their associated Saved Filters are displayed.  
+ <img src="../conversation-mining/images/conversation-interaction-saved-filters.png" alt="Clear" title="Clear" style="border: 1px solid gray; zoom:50%;"> 
+
+### Clear Filters
+
+* Click **Clear** to reset all applied filters. This resets all the Filter By options or categories displayed.  
+ <img src="../conversation-mining/images/interactions-clear-filter.png" alt="Clear" title="Clear" style="border: 1px solid gray; zoom:50%;"> 
+
+* Click **Clear All** to remove or clear all queue filters.   
+ <img src="../conversation-mining/images/interactions-clear-all.png" alt="Clear All" title="Clear All" style="border: 1px solid gray; zoom:50%;"> 
+
+### Close Filter Panel
+
+* Click the Cross **X** icon to close the filter panel.  
+ <img src="../conversation-mining/images/interactions-close-filter-panel.png" alt="Cross Icon" title="Cross Icon" style="border: 1px solid gray; zoom:50%;"> 
+
+### View Filtered Interactions
+
+* Click **Filtered Interactions** to view the real-time conversation interactions count based on your selected or matched filter criteria. 
+
+* This count dynamically updates whenever filters are applied or removed.    
+<img src="../conversation-mining/images/conv-mining-filtered-interactions.png" alt="Filtered Interactions" title="Filtered Interactions" style="border: 1px solid gray; zoom:80%;"> 
 
 #### Saved Filters Customization Options
 
-Once the new filter is saved, you get the following filter options to:  
+Once filters are saved, the following customization options are available:  
 
 * **Copy**
 
-    Allows you to create another saved copy of the filter.
+    Creates a duplicate of the saved filter.
 
 * **Mark as default**
 
-    Allows you to apply the newly created filter as a default filter whenever the call mining tab is opened.
+    Sets the selected filter as the default filter whenever the Call Mining tab is opened.
 
 * **Edit Filter**
 
-    Allows you to edit a saved filter.
+    Allows modification of the details of a saved filter.
 
 * **Delete Filter**
 
-    Allows you to delete the saved filter.   
+    Removes the selected saved filter permanently.  
     <img src="../conversation-mining/images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
