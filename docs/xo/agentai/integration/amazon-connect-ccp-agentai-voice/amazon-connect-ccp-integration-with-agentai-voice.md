@@ -97,7 +97,7 @@ This function is responsible for returning all the credentials required to rende
     See the following image for AWS Connect Access URL: 
     <img src="../images/aws-connect-access-url_8.png" alt="aws-connect-access-url" title="aws-connect-access-url" style="border: 1px solid gray; zoom:80%;">  
 
-3. The next step is to add an <span id="apigateway">API Gateway</span> to access this Lambda:
+3. The next step is to add an <span id="apigateway">**API Gateway**</span> to access this Lambda:
     * Go to **Configuration** > **Triggers**.
     * Click **Add trigger**.
     * Select **API Gateway**.
