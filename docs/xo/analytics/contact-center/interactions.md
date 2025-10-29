@@ -451,7 +451,7 @@ After every voice call, the system automatically tries to fetch the call recordi
 
 However, sometimes there may be a short delay or a temporary issue that prevents the recording from appearing immediately in your dashboard.
 
-**What you might see in the Recordings widget**
+**What You Might See in the widget**
 
 Below are the different status messages you may notice and what they mean:
 
@@ -462,7 +462,7 @@ Below are the different status messages you may notice and what they mean:
 | **Still unable to fetch the recording. Please try again after 15 minutes.**                                             | The system retried but still couldn’t get the recording.                                                                     | Wait for about 15 minutes and click **Retry** again.                                                                           |
 | **We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance.** | The system made multiple attempts (including automated background jobs) but couldn’t retrieve the recording from the server. | Contact your administrator or support team for help. Our team reviews the logs and attempts to recover the recording manually. |
 
-**Behind the scenes**
+**Behind the Scenes**
 
 The platform automatically attempts to fetch the call recording 10 minutes after the call is completed.  
 
@@ -471,7 +471,7 @@ The platform automatically attempts to fetch the call recording 10 minutes after
 
 Even without a manual retry, background jobs will continue to make periodic attempts to retrieve the recording.
 
-**Common reasons for delay or failure**
+**Common Reasons for Delay or Failure**
 
 * Temporary network or connectivity issues between Kore’s system and the recording server.  
 
@@ -481,7 +481,7 @@ Even without a manual retry, background jobs will continue to make periodic atte
 
 * Rarely, a system error or missing call metadata prevents proper retrieval.
 
-**Tips for users**
+**Tips for Users**
 
 * Wait at least **10 minutes** after the call ends before expecting the recording to appear.  
 
@@ -489,7 +489,7 @@ Even without a manual retry, background jobs will continue to make periodic atte
 
 * If the issue persists beyond 24 hours, contact your administrator or raise a support ticket with details such as **Call ID**, **Timestamp**, and **Caller Number**.  
 
-**Need more help?**
+**Need more Help?**
 
 If your call recording still isn’t available after following the steps above, contact your system administrator or Kore Support with your call details. Our team will investigate and share updates once the issue is resolved.
 
