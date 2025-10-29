@@ -597,6 +597,7 @@ nav:
       - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
       - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
+      - Amazon Connect CCP Integration with Agent AI Voice: agentai/integration/amazon-connect-ccp-agentai-voice/amazon-connect-ccp-integration-with-agentai-voice.md 
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
       - SDK Fields and Details: agentai/integration/AgentAI-webSDK/sdk-fields-and-details.md
