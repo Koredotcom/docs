@@ -119,7 +119,7 @@ nav:
   - Workflows: 
     - About Workflows: workflows/workflow-tools.md
     - Create a Workflow: workflows/create-a-workflow.md
-    - Import a Workflow: workflows/import-a-tool.md
+    - Import a Workflow: workflows/import-a-workflow.md
     - Workflow Builder:
       - About Workflow Builder: workflows/tool-flows/flows-overview.md
       - Manage Flows: 
@@ -146,7 +146,7 @@ nav:
     - Sharing & Permissions: 
       - Manage User Roles and Permissions: workflows/manage-user-roles-and-permissions.md
     - Workflow Endpoint: 
-      - Deploy a Workflow: workflows/deploy-a-tool.md
+      - Deploy a Workflow: workflows/deploy-a-workflow.md
     - API Keys: 
       - Create an API Key: workflows/create-a-new-api-key.md 
     - Workflow Monitor: 
@@ -161,8 +161,8 @@ nav:
     - Audit Logs:
       - Workflow Audit Logs: workflows/tool-audit-log.md
     - Configurations:
-      - Configure a Workflow: workflows/configure-a-tool.md
-      - Export a Workflow: workflows/export-a-tool.md
+      - Configure a Workflow: workflows/configure-a-workflow.md
+      - Export a Workflow: workflows/export-a-workflow.md
       - Import Workflow as a Version: workflows/import-a-tool/#import-tool-as-a-version 
   - Models: 
     - About Models: models/overview.md 

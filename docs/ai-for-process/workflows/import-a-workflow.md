@@ -31,7 +31,7 @@ Once the import is complete, the workflow canvas is updated with the latest conf
 To initiate a workflow creation journey through the import functionality, follow these steps:
 
 1. Log in → In AI for Process Modules top menu → Click **Workflows**.
-  
+
     <img src="../workflows/tool-flows/types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 2. Do one of the following based on your requirements:
@@ -163,6 +163,6 @@ To cancel the import process during the conflicting environment variables resolu
 ## Related Links
 
 * [Create a Workflow](create-a-workflow.md){:target="_blank"}- Create a new workflow and configure its flow.
-* [Export a Workflow](../workflows/export-a-tool.md){:target="_blank"}- Export the set configurations of a workflow for data sharing and preservation.
-* [Deploy a Workflow](../workflows/deploy-a-tool.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for workflow integration.
-* [Configure a Workflow](../workflows/configure-a-tool.md){:target="_blank"}- Modify the workflow's details, configure settings, or undeploy and delete it if unused.
+* [Export a Workflow](export-a-workflow.md){:target="_blank"}- Export the set configurations of a workflow for data sharing and preservation.
+* [Deploy a Workflow](deploy-a-workflow.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for workflow integration.
+* [Configure a Workflow](configure-a-workflow.md){:target="_blank"}- Modify the workflow's details, configure settings, or undeploy and delete it if unused.
