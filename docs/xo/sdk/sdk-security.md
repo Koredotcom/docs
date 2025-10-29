@@ -359,7 +359,7 @@ Let’s see an example of how you can verify and decrypt the JWE, assuming you h
 ```python
 import jwt
 # Sample JWE token
-jwe_token = "eyJhbGciOiJSUzI1NiIs...JWE Ciphertext and other components...UkSIsIm4iOiJqYW1lc3RpY3Nl..."
+jwe_token = "eyJhbGciOiJSUzI1xxxxx...JWE Ciphertext and other components...UkSIsIm4iOiJqYW1lc3Rpxxxx..."
 
 # Sample JWE public key (in JWK format)
 jwe_public_key = {

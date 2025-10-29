@@ -39,7 +39,7 @@ curl --location --request POST
 22185c4ee76476b6-06c5d613d9143b-1e462c6d-1fa400-185c4ee764897d%22%2C%22%24device_id%22%3A%20%22185c4ee76476b6-06c5d613d9143
 b-1e462c6d-1fa400-185c4ee764897d%22%7D; mp_7888bdd5fedfd65f44bb9a3100fa9e80_mixpanel=%7B%22distinct_id%22%3A%20%22185c96da
 2076ba-0f4b0a432b9049-1e462c6d-1fa400-185c96da208b46%22%2C%22%24device_id%22%3A%20%22185c96da2076ba-0f4b0a432b9049-1e462c6
-d-1fa400-185c96da208b46%22%7D' \
+d-1fa400-185c96da208b46%xxxxx' \
       --header 'referer: https://smartassist.kore.ai/desktop/console' \
       --header 'sec-ch-ua: "Not_A Brand";v="99", "Brave";v="109", 
       "Chromium";v="109"' \
@@ -54,9 +54,7 @@ d-1fa400-185c96da208b46%22%7D' \
       --header 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
       --header 'x-request-id: ed914d3f-9985-47a5-8ab2-84573c68xxxx' \
       --header 'x-timezone-offset: -330' \
-      --header 'auth: 
-      eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiY3MtMTY5ZmVhZGItYzU3Mi01NTZlLWEzODYtNjgxNmMxNzM3YzQ2In0.3hb7YvEv3W
-piCYcLo9PUpKLmy05cBvk1D1ZJt0UjhQU' \
+      --header 'auth: <token>' \
       --form 'result_file=@"/home/johnsmith/Documents/john/sample.csv"'
 ```
 

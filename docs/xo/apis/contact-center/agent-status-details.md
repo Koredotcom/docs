@@ -29,8 +29,7 @@ To show the self-reported status (available, busy, away, etc.) in the given time
 
 ```
 curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/63f07d26f04465685df4xxxx/agentstatusdetails?limit=8&offset=0' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy1iMDIzM2M2Ny0zMjJlLTVkMWEtOWZiNy0z
-NjZlN2Y1OTE1YTcifQ.d_q_yz0CKAm5w0TLbB2Rfpf_aMDPMBytThCMNiHCX5A' \
+--header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --header 'iId: st-e19dd469-90f5-5655-b0b2-858de901xxxx' \
 --data-raw '{

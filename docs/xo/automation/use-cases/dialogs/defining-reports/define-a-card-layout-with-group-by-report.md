@@ -58,7 +58,7 @@ To complete the following procedure, you must have already defined a task, such 
 15. Click **Done**. The **Card Layout Configuration** dialog is displayed with the new column added as shown in the following illustration.  
 <img src="../images/table_configuration.png" alt="Table Configuration" title="Table Configuration" style="border:1px solid gray; zoom:60%;">  
 
-16. Repeat Steps 10 – 19 for each additional column in the report, click **Save** to save the column configurations, and then click **Close**.
+16. Repeat Steps 8 – 15 for each additional column in the report, click **Save** to save the column configurations, and then click **Close**.
 17. In the **Report Template Definition** section, click **Save** to save the card layout with group by report.
 
     The table is saved _Successfully saved response data_ message is displayed at the top of the page.

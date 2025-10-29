@@ -780,8 +780,8 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 ```js
 curl --location 'https://{{host}}/api/public/ssoconfig' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTVjNDkzYmY3LTYxYWMtNWFlZC1hMTMzLTQ0ZGE3MmU0MmNlYyJ9.4XiqSkquaGSbmmW9SK0TY1wS1E-35gHvi6ZsQYt2Umc' \
---header 'Content-Type: application/json' \
+--header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTVjNDkzYmY3LTYxYWMtNWFlZC1hMTMzLTQ0ZGE3MmU0MmNlYyJ9.4XiqSkquaGSbmmW9SK0TY1wS1E-35gHvi6ZsQYt2Umc' 
+--header 'Content-Type: application/json' 
 --data '{
    "SSO_Authentication":"enable",
    "SSOProtocol": "saml",

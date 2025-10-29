@@ -28,6 +28,12 @@ You can import tasks and configurations of a specific agent into a new or existi
 
 **Before you Begin** The _config.json_ file consists of variables that need values for the target agent. Share the file with the relevant developers or enter suitable values yourself for the variables before importing the agent definition into a new AI Agent.
 
+!!! note
+
+    
+     Bot imports are not supported. Only App imports are allowed. Follow the [upgrade journey](../getting-started/migration-path-xo10-to-xo11.md) to upgrade your XO10 Bot to an XO11 App.
+ 
+
 #### Steps in Importing to an Existing AI Agent
 
 To import an AI Agent, follow these steps:
@@ -133,7 +139,7 @@ To import an AI Agent while creating it, follow these steps:
 
     * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
-        2. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _appDefinition.json_ and _config.json_ files respectively.
+        2. Click the **Choose File** buttons next to the **App Definition File** field and **App Config File** field, and upload the _appDefinition.json_ and _config.json_ files respectively.
         3. Optionally, upload the custom script file from the imported agent if any. The file size is limited to 500kb.
 
     * Import by uploading **ZIP file**:
@@ -220,10 +226,6 @@ To import an AI Agent while creating it, follow these steps:
 ## Exporting an AI Agent
 
 You can export an agent’s definition and configuration using the Export option.
-
-!!! Note
-
-    **Forward Compatibility is NOT SUPPORTED**. That is, Export from a lower (not an end-of-life) version to a higher supported version is allowed for all the agents. However, an agent export from a higher environment and import to an environment running a lower version or lower patch is not supported.
 
 When you export an agent, it downloads a zipped file with the following parameters:
 
