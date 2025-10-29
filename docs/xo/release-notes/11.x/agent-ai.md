@@ -10,17 +10,17 @@ This document provides information on the feature updates and enhancements intro
 
 **Agentic Copilot Enablement for Specific Queues**
 
-Admins and supervisors can now enable Agentic Copilot apps for specific agent queues via the **Agent AI Mapping** section, allowing them to try the feature with select agents before enabling it for a larger agent base. 
+Admins and supervisors can now enable Agentic Copilot apps for specific agent queues via the **Agent AI Mapping** section, allowing them to try the feature with select agents before enabling it for a larger agent base. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/agent-ai-mapping.md/#configure-agentic-copilot-apps)
 
 The Agent AI **Channel Specific Settings** > **Agentic Copilot** now includes two options: 
 
 * Enable for all agents: Enables the selected app for all queues.
-* Enable for specific queues: Enables the selected app for selected queues.
-
+* Enable for specific queues: Enables the selected app for selected queues.  
+ [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings)
 
 **Conversation Logs Display Identifiers and Sentiment Data**
 
-The Conversation Logs section now displays Session ID, Bot ID, Conversation ID, and User ID, with copy buttons. It also displays Overall Sentiment, which, when hovered over, shows the detailed user sentiment journey. 
+The Conversation Logs section now displays Session ID, Bot ID, Conversation ID, and User ID, with copy buttons. It also displays Overall Sentiment, which, when hovered over, shows the detailed user sentiment journey. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-conversation-logs.md/#identifiers)
 
 <font size="4">API Enhancement</font>
 
