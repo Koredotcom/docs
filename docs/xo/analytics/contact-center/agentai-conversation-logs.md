@@ -1,4 +1,4 @@
-The **Conversation Logs** is a library of all conversations agents have with their customers. It lets you access and review past interactions and agent names, access Voice Call Recordings, and compare edited summaries with the original versions. You can also create, edit, delete, and save search filters, and set a default filter.
+The **Conversation Logs** is a library of all conversations agents have with their customers. It lets you access and review past interactions, view agent names, copy conversation identifiers, view the overall sentiment, access voice call recordings, and view the overall widget feedback. You can also compare edited conversation summaries with their original versions. Additionally, you can create, edit, delete, and save search filters, and set a default filter.
 
 ## Accessing the Conversation Logs
 Steps to access the Conversation Logs:
@@ -10,20 +10,20 @@ Steps to access the Conversation Logs:
 3. Click the arrow next to **Conversation ID** or **Time** to sort this table accordingly.  
 <img src="../conversation_logs/sorting-conversation-logs-through-id-or-time-2.png" alt="sorting-conversation-logs-through-id-or-time" title="sorting-conversation-logs-through-id-or-time" style="border: 1px solid gray; zoom:80%;">   
 
-    * **Clear Filters**: Click to remove all filters (Time and Custom) and return to the default view (Today). 
-    * **CONVERSATION ID**: A unique identification number assigned to each conversation. It helps identify and track specific interactions. 
-    * **TIME**: The date and time when a conversation took place. 
-    * **AGENT**: Agents involved in a conversation.  
-    
-        <div class="admonition note">
-        <p class="admonition-title">Note</p>
-        <p>Only the agents who participate in at least one conversation appear in the filter.</p>
-        </div>  
+4. Click a **CONVERSATION ID** to view the corresponding conversation summary, edited summary (if any), identifiers, Voice Call Recording, overall widget feedback, and the conversation record.  
 
-    * **CHANNEL**: The communication mode of the conversation – Voice or Chat. This information helps differentiate between different types of interactions. 
-    * **DURATION**: The length of time a conversation lasted. It indicates the time taken to resolve customer queries.  
+| **Field**         | **Description**                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------|
+| **Clear Filters**  | Removes all filters (Time and Custom) and returns to the default view (Today).                                   |
+| **Conversation ID**| A unique identification number assigned to each conversation. It helps identify and track specific interactions. |
+| **Time**           | The date and time when a conversation took place.                                                                |
+| **Agent**          | Agents involved in a conversation.                                                                               |
+| **Channel**        | The communication mode of the conversation—Voice or Chat. This information helps differentiate interaction types.|
+| **Duration**       | The length of time a conversation lasted. It indicates how long it took to resolve customer queries.             |
 
-4. Click a **CONVERSATION ID** to view the corresponding conversation summary, edited summary (if any), Voice Call Recording, and the conversation record.  
+!!! note
+
+    Only the agents who participate in at least one conversation appear in the filter.  
 
 ### AI Summary
 
@@ -37,9 +37,44 @@ To view the conversation summary, click to expand the **AI Summary** section.
 * The following image displays the error message for failed summary generation and the agent-entered summary:   
     <img src="../conversation_logs/failed-summary-error.png" alt="failed-summary-error" title="failed-summary-error" style="border: 1px solid gray; zoom:80%;">  
 
-### Voice Call Recording
+### Show Identifiers and other details
 
-This section displays the recorded voice calls (if any). You can play, pause, rewind, fast-forward, and download the recordings.  
+This section includes the following subsections: 
+
+* **Identifiers**: Always available.
+* **Voice Call Recording**: Appears only for voice channels.
+* **Overall Widget Feedback**: Appears only when the widget has received feedback.
+
+These subsections are hidden by default, and you must expand this section to view them.
+
+#### Identifiers
+
+Each conversation has a few unique identifiers that help track it. The Identifiers subsection includes these identifiers, allows you to copy them, and shows the overall sentiment of the conversation. It displays the following details: 
+
+* **Widget Active Time**: Shows the duration of a conversation.
+* **Session ID**: Shows the unique ID number assigned for each conversation. 
+* **Bot ID**: Shows the unique identity number of the bot handling a conversation.
+* **Conversation ID**: A unique identification number assigned to each conversation.
+* **User ID**: A unique identifier for the customer participating in the conversation.
+* **Overall Sentiment**: Shows the overall sentiment of the conversation—Positive, Neutral, or Negative. Hovering over this field shows the sentiment graph.
+
+!!! notes
+
+    * The Agent Coaching feature must be enabled for the Overall Sentiment appearance.
+    * If Agentic Copilot is enabled, both Session ID and User ID display as N/A. 
+
+**Steps to view the Identifiers subsection** 
+
+1. Click to expand the **Show Identifiers and other details** section.
+2. Click to expand the **Identifier** subsection.  
+    <img src="../conversation_logs/identifiers.png" alt="identifiers" title="identifiers" style="border: 1px solid gray; zoom:80%;">  
+
+3. Click the “copy” button against the Session ID, Conversation ID, Bot ID, and User ID fields.
+4. Click the **Overall Sentiment** value field to view the **Sentiment Analysis** graph.
+
+#### Voice Call Recording
+
+This subsection appears only for the voice channel and displays the recorded voice calls (if any). You can play, pause, rewind, fast-forward, and download the recordings.  
 
 !!! note
     This section appears only if call recordings are enabled.  
@@ -62,6 +97,14 @@ To view the voice call recording, click to expand the **Voice Call Recording** s
 
     * If recordings are unavailable:  
         <img src="../conversation_logs/unavailable-recording.png" alt="unavailable-recording" title="unavailable-recording" style="border: 1px solid gray; zoom:80%;">  
+
+#### Overall Widget Feedback
+
+This subsection appears only if the widget has received feedback from agents. It displays the total number and the details of the feedback—agent name, feedback reason, and other comments.
+
+To view this subsection, click to expand **Overall Widget Feedback**.  
+
+<img src="../conversation_logs/overall-widget-feedback.png" alt="overall-widget-feedback" title="overall-widget-feedback" style="border: 1px solid gray; zoom:80%;">  
 
 ## Filter Conversation Logs
 
