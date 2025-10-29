@@ -88,16 +88,16 @@ This function is responsible for returning all the credentials required to rende
 1. Download the Lambda [from here](https://github.com/Koredotcom/korecc-twilio/raw/master/AmazonConnect/lambdas/KoreAgentAssistCCP.zip){:target="_blank"} and upload it to the function once you create a new Lambda function.
 2. **Environment variable List**:
     * **agentassistUrl**: https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
-    * **botId**: <Agent AI Bot Id>
-    * **clientId**: <Agent AI Client Id>
-    * **clientSecret**: <Agent AI Client Secret>
+    * **botId**: [Agent AI Bot Id]
+    * **clientId**: [Agent AI Client Id]
+    * **clientSecret**: [Agent AI Client Secret]
     * **languageCode**: en
-    * **awsConnectURL**: <Aws Connect Access URL>/connect/ccp-v2/ 
+    * **awsConnectURL**: [Aws Connect Access URL]/connect/ccp-v2/ 
 
     See the following image for AWS Connect Access URL: 
     <img src="../images/aws-connect-access-url_8.png" alt="aws-connect-access-url" title="aws-connect-access-url" style="border: 1px solid gray; zoom:80%;">  
 
-3. The next step is to add an API Gateway to access this Lambda:
+3. The next step is to add an <span id="apigateway">API Gateway</span> to access this Lambda:
     * Go to **Configuration** > **Triggers**.
     * Click **Add trigger**.
     * Select **API Gateway**.
@@ -173,7 +173,7 @@ This function is responsible for returning all the credentials required to rende
 ### Contact Control Panel (CCP) as Agent Desktop 
 
 * The CCP solution is hosted in [https://agentassist.kore.ai/integrations/amzn/ccp-voice/](https://agentassist.kore.ai/integrations/amzn/ccp-voice/). You can also use the same URL to load your Amazon Connect instance and Agent AI in the same page.  
-* First-time users are redirected to the [configure](https://agentassist.kore.ai/integrations/amzn/ccp-voice/configure/) page, where they must paste the [copied API Gateway URL](#function-2-retrieve-agent-ai-widget-credentials)  
+* First-time users are redirected to the [configure](https://agentassist.kore.ai/integrations/amzn/ccp-voice/configure/) page, where they must paste the <a href="#apigateway">copied API Gateway URL</a>  
     <img src="../images/ccp-as-agent-desktop_19.png" alt="ccp-as-agent-desktop" title="ccp-as-agent-desktop" style="border: 1px solid gray; zoom:80%;">  
 
 * Once you paste the above URL and click the **SAVE DETAILS** button, it redirects you to the CCP screen and a dummy Agent AI widget loads up. Initially, it asks you to log in with your Amazon Connect credentials, and only after successful authentication, the Amazon Connect CCP is visible. 
