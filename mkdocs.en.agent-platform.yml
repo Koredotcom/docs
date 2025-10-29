@@ -195,7 +195,7 @@ nav:
         - Audit Logs:
           - Tool Audit Logs: ai-agents/tools/tool-audit-log.md
         - Configurations:
-          - Configure a Tool: ai-agents/tools/configure-a-tool.md
+          - Manage your Tool: ai-agents/tools/configure-a-tool.md
           - Export a Tool: ai-agents/tools/export-a-tool.md
           - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
       - Code Tools: 
