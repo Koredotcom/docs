@@ -173,9 +173,7 @@ This function is responsible for returning all the credentials required to rende
 ### Contact Control Panel (CCP) as Agent Desktop 
 
 * The CCP solution is hosted in [https://agentassist.kore.ai/integrations/amzn/ccp-voice/](https://agentassist.kore.ai/integrations/amzn/ccp-voice/). You can also use the same URL to load your Amazon Connect instance and Agent AI in the same page.  
-* First-time users are redirected to the [configure](https://agentassist.kore.ai/integrations/amzn/ccp-voice/configure/) page, where they must paste the <a href="#apigateway">copied API Gateway URL</a>  
-    <img src="../images/ccp-as-agent-desktop_19.png" alt="ccp-as-agent-desktop" title="ccp-as-agent-desktop" style="border: 1px solid gray; zoom:80%;">  
-
+* First-time users are redirected to the [configure](https://agentassist.kore.ai/integrations/amzn/ccp-voice/configure/) page, where they must paste the <a href="#apigateway">copied API Gateway URL</a>   
 * Once you paste the above URL and click the **SAVE DETAILS** button, it redirects you to the CCP screen and a dummy Agent AI widget loads up. Initially, it asks you to log in with your Amazon Connect credentials, and only after successful authentication, the Amazon Connect CCP is visible. 
 * Amazon Connect Contact Control Panel is used as the Agent Desktop to track new conversations on the client side and render the conversation-specific Agent AI widget within the Agent Desktop.  
     <img src="../images/agentai-widget_20.png" alt="agentai-widget" title="agentai-widget" style="border: 1px solid gray; zoom:80%;">  
