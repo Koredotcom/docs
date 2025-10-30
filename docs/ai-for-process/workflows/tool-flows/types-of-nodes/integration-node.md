@@ -42,8 +42,8 @@ In this document, you will learn how to add Integration Nodes to your workflows,
 
 ### Step 1: Open Workflow Builder
 
-* Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+* Log in to your AI for Process account.
+  <img src="../images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 * Select your workflow → Click **Go to Flow**.
 
