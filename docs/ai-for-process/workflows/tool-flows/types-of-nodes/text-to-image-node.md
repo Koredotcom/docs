@@ -18,7 +18,7 @@ Configuration options allow you to specify input prompts and control output form
 
 * **Step-based Image Refinement**: Fine-tune image quality with adjustable step counts—up to **30 steps** recommended for balancing detail and performance. 
 
-* **Batch Generation**: Generate up to **5 image variants** in a single run (e.g., color and black-and-white versions for different audiences). 
+* **Batch Generation**: Generate up to **5 image variants** in a single run (for example, color and black-and-white versions for different audiences). 
 
 * **High-Quality Output Format**: Images are generated in **PNG format** and returned as **URLs** for seamless integration into workflows. 
 
@@ -108,15 +108,15 @@ The metrics include:
 
 ### Step 1: Open Workflow Builder
 
-* Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+* Log in to your AI for Process account.
+  <img src="../images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 * Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add the Node
 
 * Click the "**+**" icon for **Text to Image** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Text to Image**.
-  <img src="../images/text-to-image-add-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/text-to-image-add-node.png" alt="add node" title="add node" style="border: 0px solid gray; zoom:75%;">
 
 ### Step 3: Configure the Node
 

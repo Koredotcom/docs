@@ -42,20 +42,20 @@ In this document, you will learn how to add the node to your flows, configure it
 
 ### Step 1: Open Workflow Builder
 
-* Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+* Log in to your AI for Process account.
+  <img src="../images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 * Select your workflow → Click **Go to Flow**.
 
 ### Step 2: Add the Node
 
 * Click the "**+**" icon for **Image to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Image to text**.
-  <img src="../images/access-image-to-text-node.png" alt="access node" title="access node" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/access-image-to-text-node.png" alt="access node" title="access node" style="border: 0px solid gray; zoom:75%;">
 
 ### Step 3: Configure the Node
 
 * Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
-  <img src="../images/properties-panel-open.png" alt="properties panel" title="properties panel" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/properties-panel-open.png" alt="properties panel" title="properties panel" style="border: 0px solid gray; zoom:75%;">
 
 * Enter or select the following **General Settings**:
 

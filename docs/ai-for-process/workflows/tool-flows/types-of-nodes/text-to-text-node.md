@@ -34,7 +34,7 @@ Setting up a Text to Text node in a workflow involves adding the node at the app
 
 ### Step 1: Open Workflow Builder
 
-* Log in → In AI for Process Modules top menu → Click **Workflows**.
+* Log in to your AI for Process account.
   <img src="../images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 * Select your workflow → Click **Go to Flow**.
