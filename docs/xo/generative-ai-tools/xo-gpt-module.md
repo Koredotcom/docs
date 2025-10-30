@@ -7,9 +7,6 @@ Current capabilities include Answer Generation, Conversation Summarization, User
 
 
 
-!!! note
-
-    The module is currently available only for English interactions. The respective models are available in global deployments on US Cloud (https://platform.kore.ai) and DE Cloud (https://de-platform.kore.ai).
 
 
 ## Benefits of Using the Module

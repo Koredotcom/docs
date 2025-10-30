@@ -245,6 +245,193 @@ Steps to delete a SIP number:
 
 3. The sip number is deleted.
 
+### Best Practices
+
+#### Voice Calls - Failures and Fallback Handling
+
+**Overview**
+
+This document outlines the comprehensive failure handling and fallback mechanisms available for voice calls in the Kore platform. The system provides three distinct layers of failure handling to ensure robust call management and graceful degradation in the event of issues.
+
+The failure handling mechanisms are designed to address different types of failures at various stages of the call lifecycle, from initial call establishment to ongoing conversation management and error recovery.
+
+**Failure Handling Mechanisms**
+
+**1. App-Level Settings - Answer Call on Bot Response**
+
+**Purpose**
+
+The "Answer Call on Bot Response" functionality controls the timing of call answering behavior. When enabled, the system delays answering the call until the first AI Agent response is prepared and ready for delivery.
+
+**Configuration**
+
+**Location**: App-level settings
+
+AI for Service > App Settings > Advanced Settings > System Settings  
+<img src="../images/delayed-first-response.png" alt="System Settings" title="System Settings" style="border: 1px solid gray; zoom:70%;">
+
+* **Default Value**: `false` (disabled)
+
+**Behavior**:  
+
+* **Enabled (<code>true</code>)**: Call is answered only when the first AI Agent response is ready.  
+* **Disabled (<code>false</code>)**: Call is answered immediately, with AI Agent response preparation occurring after call establishment.
+
+**Use Cases**
+
+* **SIP-Specific Error Handling**: Ideal for systems requiring SIP response codes for failure detection.  
+* **Source System Integration**: Enables upstream systems to handle AI Agent unresponsiveness through standard SIP signaling.  
+* **Quality Assurance**: Ensures users only hear prepared, ready responses.
+
+**Technical Benefits**
+
+* Prevents dead air or silence during AI Agent response preparation.  
+* Provides clear SIP signaling for upstream system integration.  
+* Enables proactive failure detection before call establishment.
+
+**Cons**
+
+Configuring this setting will result in frequent call drops if we have many script/service nodes, which will delay the initial AI Agent response and prevent the call from being answered.
+
+**2. Experience Flow Settings - Bot No Input Section**
+
+**Purpose**
+
+The Bot No Input section provides configuration options for handling scenarios where the AI Agent becomes unresponsive after a successful initial response.
+
+**Location**: Experience Flow → Bot No Input Section → BotNoInputGiveUp
+
+AI for Service > Contact Center AI > Start Flows > Create a ‘New Start Flow’ or update an existing ‘Start Flow’  
+<img src="../images/bot-no-input.png" alt="Bot no Input" title="Bot no Input" style="border: 1px solid gray; zoom:70%;">
+
+**Available Options**
+
+1. **End Call**: Automatically terminates the call when the AI Agent's unresponsiveness is detected.  
+2. **SIP URI Target Transfer**: Transfers the call to a specified SIP URI target.
+
+**Operational Behavior**
+
+* **Trigger Condition**: The AI Agent fails to respond within the configured timeout interval.  
+* **Prerequisite**: First AI Agent response must have been successfully delivered.  
+* **Detection Method**: Timeout-based monitoring of AI Agent responsiveness.
+
+**Configuration Parameters**
+
+* **Timeout Interval**: Configurable duration for AI Agent response detection.  
+* **Action Type**: End call or transfer to target.  
+* **SIP URI Target**: Destination for call transfer (when transfer option is selected).
+
+**3. Automation Node Error Handling - OnError Path**
+
+**Purpose**
+
+Provides explicit error handling for various types of system failures that can occur during call processing, including dialog flow errors, ASR (Automatic Speech Recognition) failures, and TTS (Text-to-Speech) errors.
+
+**Supported Error Types**
+
+* **Dialog Flow Errors**: Task failure events and flow execution errors.  
+* **ASR Errors**: Speech recognition failures and timeout issues.  
+* **TTS Errors**: Text-to-speech synthesis failures.  
+* **Bot Failures**: Explicit AI Agent processing errors.
+
+**Configuration**
+
+**Location**: Experience Flow → Automation Node → OnError Path
+
+AI for Service > Contact Center AI > Start Flows > Add an Automation Node > Error Handling  
+<img src="../images/error-handling.png" alt="Error Handling" title="Error Handling" style="border: 1px solid gray; zoom:70%;">
+
+* **Trigger Events**: System-detected errors and exceptions.  
+* **Response Actions**: Configurable error handling workflows.
+
+**Error Handling Capabilities**
+
+* **Custom Error Workflows**: Define specific actions for different error types.  
+* **Graceful Degradation**: Maintain call continuity during error conditions.  
+* **User Communication**: Provide appropriate feedback to callers during error scenarios.
+
+**Implementation Guidelines**
+
+**When to Use Each Mechanism**
+
+**Use App-Level Settings When**:
+
+* Integration with SIP-aware source systems is required.  
+* Upstream failure detection and handling capabilities exist.  
+* Call quality requirements mandate prepared responses only.  
+* SIP response codes are needed for system integration.
+
+**Use Experience Flow Settings When**:
+
+* First AI Agent response delivery is successful.  
+* Ongoing AI Agent responsiveness monitoring is required.  
+* Fallback targets or graceful call termination are needed.  
+* User experience continuity is prioritized.
+
+**Use OnError Path When**:
+
+* Comprehensive error handling is required.  
+* Multiple error types need specific handling.  
+* Custom error workflows are necessary.  
+* System resilience is a priority.
+
+**Configuration Priority**
+
+1. **Always Configure**: OnError path handling (universal applicability).  
+2. **Conditionally Configure**: App-level settings (based on SIP integration needs).  
+3. **Scenario-Specific**: Experience flow settings (based on user experience requirements).
+
+**Configuration Recommendations**
+
+1. **Always implement OnError path handling** for comprehensive error coverage.  
+2. **Evaluate SIP integration requirements** before enabling AI Agent-level settings.  
+3. **Define clear timeout values** for AI Agent responsiveness detection.
+
+**Use Case Scenarios**
+
+**Scenario 1: SIP-Integrated Environment**
+
+**Configuration**:
+
+* App-Level: Answer Call on Bot Response = true  
+* Experience Flow: BotNoInputGiveUp = Transfer to SIP URI  
+* OnError Path: Custom error handling workflow
+
+**Behavior**:
+
+* Call answered only when the bot response is ready.  
+* SIP codes are available for the upstream system handling.  
+* Unresponsive bot triggers transfer to fallback target.  
+* Explicit errors are handled through a custom workflow.
+
+**Scenario 2: Direct Call Environment**
+
+**Configuration**:
+
+* App-Level: Answer Call on Bot Response = false  
+* Experience Flow: BotNoInputGiveUp = End call  
+* OnError Path: Standard error messaging
+
+**Behavior**:
+
+* Immediate call answering for a better user experience.  
+* AI Agent unresponsiveness results in call termination.  
+* Errors handled with standard user messaging.
+
+**Scenario 3: High-Availability Environment**
+
+**Configuration:**
+
+* App-Level: Answer Call on Bot Response = true  
+* Experience Flow: BotNoInputGiveUp = Transfer to backup system  
+* OnError Path: Comprehensive error recovery workflows
+
+**Behavior**:
+
+* Quality-assured response delivery.  
+* Multiple fallback layers for different failure types.  
+* Maximum call continuity and user experience preservation.
+
 ## ASR and TTS
 
 ### Voice Preferences
