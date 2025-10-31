@@ -24,8 +24,8 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 To export an workflow's version, follow the steps below:
 
-1. Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your AI for Process account.
+  <img src="../images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 2. Select the workflow you want to export. The Workflow flow page is displayed. 
 3. Click **Configurations** on the left navigation menu.
