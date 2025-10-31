@@ -210,9 +210,9 @@ Example: JIRA Bot
         "result": "successintent",
         "messageStoreId": "xxx",
         "bot": "Public APIs",
-        "botid": "st-6ecb5ba2-5e31-5a40-b918-8cbee40f3fdb",
+        "botid": "st-6ecb5ba2-5e31-xxxx-xxxx-8cbee40f3fdb",
         "task": "Book a ticket",
-        "taskId": "dg-18219164-c11c-5605-9c29-d2e632ec3646",
+        "taskId": "dg-18219164-c11c-xxxx-xxxx-d2e632ec3646",
         "intentStatus": "published",
         "subType": "dialog",
         "input": [
@@ -220,9 +220,9 @@ Example: JIRA Bot
         ],
         "identifiedVia": "cs em",
         "language": "en",
-        "userId": "u-5dad2ccd-b271-5c00-a338-2e6e25e1ec91",
+        "userId": "u-5dad2ccd-b271-xxxx-xxxx-2e6e25e1ec91",
         "time": "2019-06-27T11:48:28.250Z",
-        "_id": "f-19f149a6-25e3-5c85-8793-679bfd26acf5",
+        "_id": "f-19f149a6-25e3-xxxx-xxxx-679bfd26acf5",
         "traits": {},
         "toneAnalysis": {},
         "nlProcessing": {
@@ -262,7 +262,7 @@ Example: JIRA Bot
                 {
                     "count": 2,
                     "score": 11643.33,
-                    "botid": "st-6ecb5ba2-5e31-5a40-b918-8cbee40f3fdb",
+                    "botid": "st-6ecb5ba2-5e31-xxxx-xxxx-8cbee40f3fdb",
                     "botname": "Public APIs",
                     "activity": "Book a ticket",
                     "activityType": 1,
@@ -352,7 +352,7 @@ Example: JIRA Bot
         "finalResolver": {
             "ranking": [
                 {
-                    "taskId": "dg-18219164-c11c-5605-9c29-d2e632ec3646",
+                    "taskId": "dg-18219164-c11c-xxxx-xxxx-d2e632ec3646",
                     "intent": "Book a ticket",
                     "activityType": "dialog",
                     "state": "published",
@@ -360,7 +360,7 @@ Example: JIRA Bot
                     "scoring": {
                         "count": 2,
                         "score": 11643.33,
-                        "botid": "st-6ecb5ba2-5e31-5a40-b918-8cbee40f3fdb",
+                        "botid": "st-6ecb5ba2-5e31-xxxx-xxxx-8cbee40f3fdb",
                         "botname": "Public APIs",
                         "activity": "Book a ticket",
                         "activityType": 1,
@@ -454,7 +454,7 @@ Example: JIRA Bot
             "winningIntent": [
                 {
                     "intent": "Book a ticket",
-                    "taskId": "dg-18219164-c11c-5605-9c29-d2e632ec3646",
+                    "taskId": "dg-18219164-c11c-xxxx-xxxx-d2e632ec3646",
                     "activityType": "dialog",
                     "state": "published",
                     "score": 11643.33
@@ -463,10 +463,10 @@ Example: JIRA Bot
             "entities": []
         }
     },
-    "streamId": "st-6ecb5ba2-5e31-5a40-b918-8cbee40f3fdb",
+    "streamId": "st-6ecb5ba2-xxxx-xxxx-b918-8cbee40f3fdb",
     "streamName": "Public APIs",
-    "seqLogId": "f-19f149a6-25e3-5c85-8793-679bfd26acf5",
-    "_id": "f-19f149a6-25e3-5c85-8793-679bfd26acf5",
+    "seqLogId": "f-19f149a6-25e3-xxxx-xxxx-679bfd26acf5",
+    "_id": "f-19f149a6-25e3-xxxx-xxxx-679bfd26acf5",
     "name": "Public APIs",
     "input": [
         "book a ticket"
