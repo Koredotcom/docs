@@ -30,7 +30,7 @@ To import a tool as a version, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. If you choose not to back up/export the tool configurations, unselect the back-up option and proceed to the next step.</p><div>
+<p>Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. If you choose not to back up/export the tool configurations, unselect the back-up option and proceed to the next step.</p></div>
 
 <ol start="6"><li>Click <b>Import</b> in the confirmation dialog.</li>
 <li>In the <b>Import Tool</b> window, upload the required JSON files and click <b>Import</b>.</li></ol>
