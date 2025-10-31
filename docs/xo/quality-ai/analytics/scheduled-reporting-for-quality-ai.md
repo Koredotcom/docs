@@ -272,7 +272,7 @@ Export evaluation metric adherence data with aggregated compliance statistics.
 
 * **Filter Selection**: Select the required **Filter** types to segment summary data by organizational dimensions. 
 
-    * Available filter types**: Queues, Channel, Language, Agents, Agent Groups.
+    **Available filter types**: Queues, Channel, Language, Agents or Agent Groups.
 
 * **Optional Fields**: Add the aggregated metrics in the **Optional Fields** if required.
 
