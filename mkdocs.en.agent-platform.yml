@@ -197,7 +197,7 @@ nav:
         - Configurations:
           - Manage your Tool: ai-agents/tools/configure-a-tool.md
           - Export a Tool: ai-agents/tools/export-a-tool.md
-          - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
+          - Import Tool as a Version: ai-agents/tools/import-a-tool-as-a-version.md
       - Code Tools: 
         - About Code Tools: ai-agents/tools/code-tools.md
         - Create a Code Tool: ai-agents/tools/create-a-code-tool.md
