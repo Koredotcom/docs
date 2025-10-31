@@ -1,4 +1,4 @@
-# Import Tool as a Version
+# Import a Tool as a Version
 
 Use the **Import** functionality under **Tools** > **Configurations** to add a tool as a version of a parent tool. You should back up the current in-development version to preserve its configuration definitions. The export file is saved as '<code>Exported_<i>ToolName</i>.zip</code>.’
 
@@ -58,7 +58,9 @@ When importing environment variables during tool version import, conflicts may a
 
 You must resolve conflicting variables by either keeping the existing value (of the version being replaced) or replacing them (with values from the imported tool) to ensure a smooth import process.
 
-When conflicting environment variables are detected, it displays the following window. To resolve conflicts, follow the steps below:
+### Steps to Resolve Conflicting Variables
+
+When conflicting environment variables are detected, you must resolve them with the following steps:
 
 1. Select the **Conflicting variables** tab.
 2. Select either **Overwrite** to replace the existing variable with the imported one or select **Keep existing**.
