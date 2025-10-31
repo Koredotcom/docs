@@ -2,17 +2,15 @@
 
 Steps to access the workflow monitor page:
 
-1. Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your AI for Process account.
+  <img src="../images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
    
 2. On the **Workflows** page, click the desired workflow.  
 
     Ensure that the status of the selected workflow is deployed. Workflow monitoring is only available for workflow deployed in production. Workflows that are in debugging or design phases aren't tracked here. 
 
-    <img src="../images/agent_monitor_new.png" alt="All agents" title="All agents" style="border: 1px solid gray; zoom:80%;">
-
 3. In the left navigation pane, click **Workflow monitor**. The Workflow monitor page is displayed.  
-<img src="../images/agent_monitor_dashboard.png" alt="Agent monitor dashboard" title="Agent monitor dashboard" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent_monitor_new.png" alt="Agent monitor dashboard" title="Agent monitor dashboard" style="border: 0px solid gray; zoom:80%;">
 
 4. Click one of the following tabs to see the data for the deployed workflows:
     * **All runs**

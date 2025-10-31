@@ -39,7 +39,7 @@ Steps to deploy a workflow:
 <img src="../images/agent_platform/tool_endpoint.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:70%;">
 
 5. The workflow is deployed and the **Sync** and **Async poll** endpoints are generated.  
-<img src="../images/new_endpoint.png" alt="Sync Async Poll" title="Sync Async Poll" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/new_endpoint.png" alt="Sync Async Poll" title="Sync Async Poll" style="border: 0px solid gray; zoom:70%;">
 
 6. If you want to generate an Async push endpoint for the workflow, do the following:
     1. Click the **Async push** tab and click **Enable**/**Settings**.  

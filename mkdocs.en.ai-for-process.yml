@@ -150,9 +150,9 @@ nav:
     - API Keys: 
       - Create an API Key: workflows/create-a-new-api-key.md 
     - Workflow Monitor: 
-      - About Workflow Monitor: workflows/tool-monitor/about-tool-monitor.md
-      - Accessing Workflow Monitor: workflows/tool-monitor/accessing-tool-monitor.md
-      - Understanding Workflow Monitor: workflows/tool-monitor/understanding-the-tool-monitor-interface.md
+      - About Workflow Monitor: workflows/tool-monitor/about-workflow-monitor.md
+      - Accessing Workflow Monitor: workflows/tool-monitor/accessing-workflow-monitor.md
+      - Understanding Workflow Monitor: workflows/tool-monitor/understanding-the-workflow-monitor-interface.md
     - Guardrails:
       - About Guardrails: workflows/guardrails/overview.md
       - Add a Scanner: workflows/guardrails/add-a-scanner.md
