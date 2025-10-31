@@ -1,6 +1,6 @@
 # Function Node - Empower Workflows with Custom Code
 
-The Function node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your workflows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
+The Function node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your workflows, you can manipulate variables in ways that preset nodes can't achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
 
 ## Key Capabilities
 
@@ -34,8 +34,7 @@ Steps to add and configure the node:
 
 ### Step 1: Open Workflow Builder
 
-* Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+* Log in to your AI for Process account.
 
 * Select your workflow → Click **Go to Flow**.
 

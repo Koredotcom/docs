@@ -62,8 +62,8 @@ After fetching the Search AI application credentials, configuring the source, an
 
 **Steps to integrate Search AI in AI for Process**
 
-* Log in → In AI for Process Modules top menu → Click **Settings**.
-   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
+* Log in to your AI for Process account. Click **Settings**.
+   <img src="../aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 * Click **Integrations** on the left navigation menu.
 * Scroll down to **Search AI** and click **Link an App**.
