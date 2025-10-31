@@ -379,7 +379,7 @@ Steps to transfer all Calls/Chats/Emails in the Agent Queue:
     * Force Close  
 
 5. Selecting Transfer Conversations activates multi-selection mode.
-6. Click the Agent radio button and select one or more conversations.
+6. Click the Agent radio button and select one or more conversations.  
     <img src="../images/select-agent-option.png" alt="Select Agent" title="Select Agent" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note

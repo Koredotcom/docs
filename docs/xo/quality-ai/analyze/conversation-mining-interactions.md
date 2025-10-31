@@ -55,17 +55,7 @@ The **Interactions** dashboard includes the following elements:
 
         * **AND**: All keywords matched.
         * **OR**: Partial keyword match.
-
-    * **Preview Snippet**: Shows a quick insight (for example, 30 words) of the transcript or conversation surrounding the first keyword match.
-
-    * **Context Preview**: Shows a tooltip or snippet preview when you hover or click on it. 
-
-    * **Speaker Match Icons**: Indicates visually which participant (Agent, Customer, or Both) mentioned specific keywords within a conversation.
-
-    * **Exclusion Confirmation**: Indicates that no excluded keywords are found in the conversation, ensuring that irrelevant topics are absent.
-
-    * **Navigation/Clickable link**: When the user clicks on a conversation to audit, it opens the Audit screen with preserved filters.
-
+    
     * **Filter Integration**: The applied keyword filters on the Conversation Mining (Interactions) page are saved in sessions. The session preserves filters across pages and views; integrates with other filters using AND logic, and maintains active filter states throughout navigation.  
 <img src="../conversation-mining/images/keywords-interactions.png" alt="Keywords Column" title="Keywords Column" style="border: 1px solid gray; zoom:80%;">
 
