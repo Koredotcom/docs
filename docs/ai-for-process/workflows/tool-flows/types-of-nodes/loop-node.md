@@ -54,8 +54,7 @@ The Loop node contains a section or block where you can place supported child no
 
 ### Step 1: Open Workflow Builder
 
-* Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+* Log in to your AI for Process account.
 
 * Select your workflow → Click **Go to Flow**.
 

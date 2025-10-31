@@ -1,6 +1,6 @@
 # Human Node – Pause for Review and Approval
 
-The Human Node introduces a human-in-the-loop capability within automation workflows. It allows workflows to pause and incorporate human judgment into automated processes. Designated users can review, approve, or provide input before the workflow continues, ensuring critical steps are validated, decisions are accurate, and compliance requirements are met. This capability is especially useful when certain decisions cannot be automated and require manual validation, oversight, or confirmation.
+The Human Node introduces a human-in-the-loop capability within automation workflows. It allows workflows to pause and incorporate human judgment into automated processes. Designated users can review, approve, or provide input before the workflow continues, ensuring critical steps are validated, decisions are accurate, and compliance requirements are met. This capability is especially useful when certain decisions can't be automated and require manual validation, oversight, or confirmation.
 
 ## Key Capabilities
 
@@ -45,8 +45,7 @@ Steps to add and configure a Human node:
 
 ### Step 1: Open Flow Builder
 
-* Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+* Log in to your AI for Process account.
 
 * Select your workflow → Click **Go to Flow**.
 
@@ -62,7 +61,7 @@ You can insert a Human node on the canvas using any of the following methods:
 
 Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
  
-You can rename the node (e.g., ManagerApproval, QualityCheck) or add a description to provide context.
+You can rename the node (for example, ManagerApproval, QualityCheck) or add a description to provide context.
 
 **1. View Request Destination**
 

@@ -66,14 +66,14 @@ After fetching the Search AI application credentials, configuring the source, an
    <img src="../aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 * Click **Integrations** on the left navigation menu.
-* Scroll down to **Search AI** and click **Link an App**.
-  <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
+* Scroll down to **Search AI** and click **Add connection**.
+  <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 0px solid gray; zoom:75%;">
 
 * In the **Search AI** window, provide the required information that you copied from the Search AI app in 
 [Step 1](./docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
 * Click **Test** to test the connection.
-* If the connection is successful, click **Confirm**.
-  <img src="./../images/searchai-connection-form.png" alt="searchai connection form" title="searchai connection form" style="border: 1px solid gray; zoom:75%;">
+* If the connection is successful, click **Save**.
+  <img src="./../images/searchai-connection-form.png" alt="searchai connection form" title="searchai connection form" style="border: 0px solid gray; zoom:75%;">
 
   A success message is displayed and the connection is listed for Search AI.
    <img src="./../images/listed-connection.png" alt="listed connection" title="listed connection" style="border: 1px solid gray; zoom:75%;">
