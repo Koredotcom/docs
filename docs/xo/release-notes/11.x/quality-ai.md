@@ -2,6 +2,37 @@
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
+## v11.19.0 October 25, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Analyze</font>
+
+**Keyword Search with Audit Filtering**
+
+The new Keyword Search Filter feature lets users easily locate and analyze conversations. Users can search for keywords and refine results by speaker, including or excluding keywords. Each search result links directly to the QA audit screen, where keyword matches are highlighted in the transcript, along with speaker labels and QA evaluation details. This ultimately leads to improved audit accuracy, traceability, and filtering flexibility. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md)
+
+<font size="4">Analytics</font>
+
+**Scheduled Reporting for Quality AI**
+
+The Quality AI Reporting feature provides comprehensive data export capabilities for AutoQA and Conversation Intelligence insights. This enables QA Managers, Supervisors, and authorized users to generate, schedule, and download detailed reports covering interaction details, agent performance metrics, and adherence to evaluation metrics.
+[Learn more :octicons-arrow-right-24:](../../quality-ai/analytics/scheduled-reporting-for-quality-ai.md) 
+
+**New Generative AI Features**
+
+This release introduces the following two new generative AI features powered by the latest GPT-4o and GPT-4o-mini models with default prompts:
+
+* By Value Adherence Validation: Check if extracted metric values match predefined reference data and return binary adherence scores.
+
+* By Value Metric Extraction: Extract metric values from messages by users, AI agents, or humans. 
+[Learn more :octicons-arrow-right-24:](./../../generative-ai-tools/genai-features-qualityai.md)
+
+
+<hr>
+
 ## v11.18.0 September 27, 2025
 
 <u>Minor Release</u>

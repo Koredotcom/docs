@@ -28,7 +28,7 @@ The prerequisites are listed below:
 
 To perform the Kore-Unblu integration, follow the below steps:
 
-1. Log in to the Kore AI Agent platform with valid credentials.
+1. Log in to the Kore AI Agent Platform with valid credentials.
 2. Select the **Build** tab from the top menu
 3. Go to **Integrations** select the **Agent Transfer** option
 4. On the Agent Transfer page, next to **App Name**, click **Add** (you can select an existing app from the drop-down if you have already created one)

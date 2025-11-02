@@ -1,10 +1,36 @@
 # Agent AI Mapping 
 
-The **Agent AI Mapping** feature lets administrators assign dialog tasks to specific queues. This controls which dialog tasks agents see in the **Proactive** mode (**Assist** tab) and in the **Library** during runtime, including transfer scenarios. At runtime, agents see only the dialog tasks assigned to their queue, ensuring a streamlined and focused experience. 
+The **Agent AI Mapping** feature allows administrators to assign **Agentic Copilot apps** and **Dialog Tasks** to specific queues. By mapping an Agentic Copilot app to a queue, administrators can enable end-to-end autonomous task execution for agents in that queue. Mapped Dialog Tasks appear in the **Assist** tab (Proactive mode) and the **Library** during runtime, ensuring that agents can access only the tasks relevant to their queue for a streamlined and focused experience. 
+
+## Configure Agentic Copilot Apps
+
+Configuring the Agentic Copilot app to a queue enables autonomous task execution for agents in that queue. This section describes how to configure this app for one or more queues.  
 
 !!! note
 
-    This feature is available only to Contact Center AI (CCAI) users at this time. 
+    To configure this app, Agentic Copilot must be enabled in Widget Settings. If disabled, the following image appears, prompting you to click **Open Widget Settings**: 
+
+<img src="../agent-ai-mapping-images/open-widget-settings.png" alt="open-widget-settings" title="open-widget-settings" style="border: 1px solid gray; zoom:80%;">   
+
+### Steps to configure an Agentic Copilot app 
+
+1. Click the “edit” button against the newly added queue.
+2. Perform the following tasks:
+    1. Select the **Agentic Copilot** tab.
+    2. Enable **Agentic Copilot** by using the toggle (if disabled).
+    3. Click to select a **channel**—**Chat**, **Voice**, or **Email**.
+    4. Select a **language** from the language list. The language selected during queue creation appears by default, but you can change it, if required.
+    5. Select one or multiple apps from the **Select Agentic App** dropdown list.
+        1. Click **Add selected** if you have selected multiple apps.
+    6. Click to select the **Allow auto send Message** option. Clearing this option cancels all unsent or new Agentic messages.
+    7. Set the timer for the **Set message delay before auto send** field by using the slider. You can set it to a maximum of 60 seconds.
+    8. Click **Save**.  
+
+        <img src="../agent-ai-mapping-images/configure-copilot-app.png" alt="configure-copilot-app" title="configure-copilot-app" style="border: 1px solid gray; zoom:80%;">  
+
+        !!! note
+
+            This feature is available only to Contact Center AI (CCAI) users at this time. 
 
 ## Add or Delete a Queue Configuration
 
@@ -36,23 +62,25 @@ To delete a queue, click the “delete” button against it, and then click **De
 
 <img src="../agent-ai-mapping-images/delete-queue.png" alt="delete-queue" title="delete-queue" style="border: 1px solid gray; zoom:80%;">  
 
-## Assign Apps, Channels, Languages, and Dialog Tasks
+## Configure Dialog Tasks
 
-This section describes the process of assigning apps, channels, languages, and dialog tasks to a queue. To do that: 
+Only the configured Dialog Tasks appear in the **Assist** tab (Proactive mode) and the **Library** during runtime, ensuring agents access only the tasks relevant to their queue. This section describes the process of assigning dialog tasks to a queue. 
+
+### Steps to configure a Dialog Task
 
 1. Click the “edit” button against the newly added queue.
 2. Perform the following tasks:
-    1. Click to select a **channel**—Chat, Voice, or Email.
+    1. Click to select a **channel**—**Chat**, **Voice**, or **Email**.
     2. Select a **language** from the language list. The language selected during queue creation appears by default, but you can change it, if required.
     3. Select an app from the Apps list.
     4. Select one of the following options:
         1. Select **Allow Dialog Tasks**, if you want selected dialog tasks to appear at runtime.
-        2. Select **Don’t Allow Dialog Tasks**, if you don’t want dialog tasks to appear at runtime. 
+        2. Select **Don’t Allow Dialog Tasks** if you don’t want dialog tasks to appear at runtime. If you select this option, the following message appears during runtime.  
             <img src="../agent-ai-mapping-images/no-dialogs.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;"> 
 
     5. If you select **Allow Dialog Tasks**, proceed with the following: 
         3. Select the **dialog tasks** available for the app. 
-        4. Click **Select All**, to select all available dialog tasks. The number of selected dialog tasks appear next to the **Dialog Task** section. 
+        4. Click **Select All** to select all available dialog tasks. The number of selected dialog tasks appears next to the **Dialog Task** section. 
             <img src="../agent-ai-mapping-images/queue-configuration.png" alt="queue-configuration" title="queue-configuration" style="border: 1px solid gray; zoom:80%;">  
 
 3. Click **Save**.
@@ -62,7 +90,5 @@ This section describes the process of assigning apps, channels, languages, and d
 This section describes the process of editing an available queue configuration. To do that:
 
 1. Click the “edit” button against a queue you want to modify.
-2. Select an app **bot** from the AppsBot list. 
-    <img src="../agent-ai-mapping-images/select-an-app.png" alt="select-an-app" title="select-an-app" style="border: 1px solid gray; zoom:80%;">  
-
+2. Select **Agentic Copilot** or **Dialog Task**. 
 3. Make the necessary changes, and then click **Save**.
