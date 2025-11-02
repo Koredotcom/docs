@@ -2,7 +2,6 @@ name: Auto-sync from Kore prod repo (non-ff is allowed)
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # every 12h
   workflow_dispatch: {}      # run manually from Actions tab
 
 permissions:
