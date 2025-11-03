@@ -4,7 +4,7 @@ Workflow can automate processes, streamline workflows, generate insights, and pr
 
 ### Key Features
 
-* **Workflow**: A visual no-code/low-code builder for creating and managing workflows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a workflow](./create-a-workflow.md){target="_blank"} from scratch, [import an existing tool](import-a-workflow.md){target="_blank"}, or [access prebuilt tool flows using the tool templates](../workflows/tool-templates.md){target="_blank"} available in the marketplace.
+* **Workflow**: A visual no-code/low-code builder for creating and managing workflows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a workflow](./create-a-workflow.md){target="_blank"} from scratch or [import an existing workflow](import-a-workflow.md){target="_blank"}.
 
 * **Sharing & Permissions**: Account owners can invite users to collaborate on specific workflows. Invited users can access the Models and Data modules for the invited account and see only the workflows to which they're invited. [Learn more](./manage-user-roles-and-permissions.md).
 
