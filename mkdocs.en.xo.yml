@@ -643,7 +643,6 @@ nav:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
       - DialogGPT FAQs: generative-ai-tools/dgpt-faq.md  
-      - Rollout Plan: generative-ai-tools/dgpt-upcoming-features.md
     - Safeguards:
       - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
