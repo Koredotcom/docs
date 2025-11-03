@@ -608,6 +608,7 @@ nav:
       - Dialog Tab: agentai/integration/AgentAI-webSDK/dialog.md
       - Transcript Events: agentai/integration/AgentAI-webSDK/transcript-events.md
       - Search Tab: agentai/integration/AgentAI-webSDK/searchtab-events.md
+      - Agent Coaching Events: agentai/integration/agentai-websdk/coaching-events.md
       - Playbooks Events: agentai/integration/AgentAI-webSDK/sdk-Playbooks.md
       - Internal Transfer: agentai/integration/AgentAI-webSDK/internal-transfer-process.md
       - Sentiment Chart: agentai/integration/AgentAI-webSDK/sentiment-charts.md
