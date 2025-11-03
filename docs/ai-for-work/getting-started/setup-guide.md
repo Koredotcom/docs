@@ -23,7 +23,7 @@ To sign up for a new account, contact the [Sales team](https://kore.ai/contact-u
     [Learn more](../user-management/user-enrollments.md).
 
 - Set up SSO for easy access using your identity provider.
-    [Learn more](../security/sso.md).
+    [Learn more](../security/sso-overview.md).
 
 - Add service accounts (Google, Microsoft, LDAP) to get user profiles and distribution lists for inviting users.
     [Learn more](../security/service-accounts.md).
