@@ -62,7 +62,6 @@ extra:
           note: >-                       
             Thanks for your feedback!           
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - extra_js/feedback.js
 markdown_extensions:
@@ -196,9 +195,9 @@ nav:
         - Audit Logs:
           - Tool Audit Logs: ai-agents/tools/tool-audit-log.md
         - Configurations:
-          - Configure a Tool: ai-agents/tools/configure-a-tool.md
+          - Manage your Tool: ai-agents/tools/configure-a-tool.md
           - Export a Tool: ai-agents/tools/export-a-tool.md
-          - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
+          - Import Tool as a Version: ai-agents/tools/import-a-tool-as-a-version.md
       - Code Tools: 
         - About Code Tools: ai-agents/tools/code-tools.md
         - Create a Code Tool: ai-agents/tools/create-a-code-tool.md
@@ -228,6 +227,8 @@ nav:
     - How Tos:
       - Share Contextual Metadata with AI for Service: ai-agents/agentic-apps/howto/share-context-with-AIforService.md
       - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md
+      - Initiate Live Agent Handoff from Agentic Apps: ai-agents/agentic-apps/howto/initiate-live-agent-handoff.md
+      - Use Metadata passed via APIs in Agentic Apps: ai-agents/agentic-apps/howto/use-metadata.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
@@ -326,8 +327,8 @@ nav:
   - APIs: 
     - Agentic Apps:
       - About Agentic App APIs: apis/agentic-apps/overview.md
-      - APIs List: apis/agentic-apps/overview/#apis-list
+      - API List: apis/agentic-apps/overview/#api-list
     - Tools:
       - About Tools APIs: apis/overview.md
-      - APIs List: apis/overview/#apis-list
+      - API List: apis/overview/#api-list
   - Marketplace: ai-agents/agentic-apps/marketplace.md
