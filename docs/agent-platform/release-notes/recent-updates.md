@@ -6,6 +6,43 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
+This update includes filler messages for improved voice experiences, BYOK encryption key support, AWS Bedrock integration enhancements, and internal security enhancements through expanded encryption coverage.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Enhance Waiting Experience**
+
+Agent Platform now provides filler messages to improve voice experiences during processing delays. These messages keep users engaged while the system prepares responses, and can be configured in two ways:
+
+* Static messages: Pre-written responses for consistent communication.
+* Dynamic messages: AI-generated responses tailored to the conversation context.
+
+<font size="4">AI Safety, Security, and Governance</font>
+
+**Bring Your Own Keys (BYOK) Encryption**
+
+Agent Platform introduces Bring Your Own Keys (BYOK) functionality, enabling integration with key management systems. This enhancement gives enterprises complete control over their encryption keys and helps them to meet stringent compliance, security, and regulatory requirements. 
+
+Currently, the platform supports integration with Azure Key Vault and AWS Key Management Service. 
+
+<font size="4">AI Engineering Tools</font>
+
+**AWS Bedrock Integration: Predefined API Mapping for Models**
+
+Users can now easily integrate with AWS Bedrock by selecting a provider schema — Anthropic (messages) or OpenAI (chat completion). The platform automatically maps model requests and responses to the chosen format, simplifying configuration and ensuring API compatibility.
+
+**Internal Security Improvements**
+
+Enhanced internal security through expanded encryption across core services.
+
+
+<hr>
+
+
+## v1.2.0 September 27, 2025
+
+<u> Minor Release </u>
+
 ​​This update includes a new knowledge base test tool for real-time validation, rolling context windows for better conversation management, and support for the latest GPT-5 family and other leading AI models. Additional improvements include streamlined workflow testing, custom model integration, and structured output support for open-source models.
 
 <font size="4">Multi-Agent Orchestration</font>
