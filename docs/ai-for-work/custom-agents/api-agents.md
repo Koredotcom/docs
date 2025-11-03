@@ -235,7 +235,7 @@ Follow these steps to add field options:
     1. If the schema API is mapped:
         1. Click **Map Value**, the JSON object is displayed.
         2. Select the field that will be passed to the API.
-        3. Click **Map Lable**, the JSON object is displayed.
+        3. Click **Map Label**, the JSON object is displayed.
         4. Select the field which will be displayed to the user.
         5. Rest all the choices are automatically populated.
     2. If the schema API is not mapped, manually enter map value and map label for each choice. For example, if you have high, medium, and low priority choices.
@@ -417,7 +417,7 @@ All the 3 variables here (headers, body and queryParams) are pointing to the [da
     ```
         {
         key : 'jql',
-        value : 'assigneee = currentUser()', 
+        value : 'assignee = currentUser()', 
         enabled : true/false
     }
 

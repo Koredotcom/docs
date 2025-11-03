@@ -1,6 +1,6 @@
 site_name: Kore ai Docs
 site_author: Kore ai Content Experience Team
-docs_dir: 'docs/eva/'
+docs_dir: 'docs/ai-for-work/'
 site_dir: 'site/ai-for-work/'
 site_url: https://docs.kore.ai/ai-for-work/
 repo_name: Koredotcom/docs
@@ -10,7 +10,7 @@ extra_css:
 theme:
   favicon: images/Kore_Black.svg
   name: material
-  custom_dir: overrides.en.eva
+  custom_dir: overrides.en.ai-for-work
   features:
     - navigation.tabs
     - navigation.sections
