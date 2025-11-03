@@ -227,6 +227,8 @@ nav:
     - How Tos:
       - Share Contextual Metadata with AI for Service: ai-agents/agentic-apps/howto/share-context-with-AIforService.md
       - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md
+      - Initiate Live Agent Handoff from Agentic Apps: ai-agents/agentic-apps/howto/initiate-live-agent-handoff.md
+      - Use Metadata passed via APIs in Agentic Apps: ai-agents/agentic-apps/howto/use-metadata.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 

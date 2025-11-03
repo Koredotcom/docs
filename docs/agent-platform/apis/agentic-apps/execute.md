@@ -808,7 +808,7 @@ You can attach a file to a session and use it in the current execution. This is 
   "Attachments": {
      "enable": true,
      "includeFiles": "[f-123]", //Array of fileId's to include in the session.
-     "exludeFiles": "[f-456]" //Array of fileId's to exclude from session.
+     "excludeFiles": "[f-456]" //Array of fileId's to exclude from session.
   }
   "isAsync": false
 }
