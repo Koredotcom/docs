@@ -38,7 +38,7 @@ The left-right navigation displays the detailed metrics at each point, with acce
 
 ## Tokens Per Agent
 
-This displays a graphical representation of the number of tokens per agen. You can switch between different periods for the view, including **Day**, **Week**, and **Month**.
+This displays a graphical representation of the number of tokens per agent. You can switch between different periods for the view, including **Day**, **Week**, and **Month**.
 
 <img src="../images/token-per-agent.png" alt="token-per-agent" title="token-per-agent" style="border: 1px solid gray; zoom:80%;">
 

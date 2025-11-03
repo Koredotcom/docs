@@ -5,7 +5,7 @@ Integrating Azure Key Vault with our application establishes a secure connection
 1. Authorize our application in your Azure tenant.
 2. Configure your Key Vault and encryption key.
 3. Grant the necessary access permissions to our application.
-4. Complete the integration by sharing required information and approving connections.
+4. Complete the integration by sharing required information and approving connections. 
 
 ## Authorize our application in your Azure tenant
 

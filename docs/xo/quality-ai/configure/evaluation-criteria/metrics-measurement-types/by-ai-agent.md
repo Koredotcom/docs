@@ -59,11 +59,11 @@ To configure By AI Agent metrics, ensure the following prerequisites are met:
 
 * The By AI Agent metric type is in private beta.
 
-* You have access to Kore.ai's AI Agent platform and a deployed agent.
+* You have access to Kore.ai's AI Agent Platform and a deployed agent.
 
 * You have the endpoint URL and API key for your AI agent service.
 
-* Your AI agent is configured to provide Quality AI-compatible responses. 
+* Your AI agent is configured to provide Quality AI-compatible responses.
 
     !!! Note
 

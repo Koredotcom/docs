@@ -25,7 +25,7 @@ jobs:
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.eva.yml
+          args: build --config-file=mkdocs.en.ai-for-work.yml
       - name: Build EN Agent Platform docs
         uses: ./
         with:

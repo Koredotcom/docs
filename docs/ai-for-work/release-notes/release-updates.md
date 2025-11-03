@@ -108,7 +108,7 @@ Key Highlights:
 
 Enhanced SAML Single Sign-On (SSO) configuration by showing account-specific fields that users can use in their SAML configuration, making the SSO setup seamless.
 
-[Learn more :octicons-arrow-right-24:](../security/sso.md#saml)
+[Learn more :octicons-arrow-right-24:](../security/saml.md)
 
 **Agent Icons Upgrade**
 
@@ -358,7 +358,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 <font size="4">Feature Enhancements</font>
 
-**Impovised Enterprise Knowledge Agent**:
+**Improvised Enterprise Knowledge Agent**:
 
 * If relevant answers are not found within the Enterprise Knowledge base, the system will now automatically utilize LLM models with integrated web search to address queries.
 * Users can now directly select web search as an agent for their queries. This provides a functionality comparable to web search features found in platforms like ChatGPT.

@@ -25,8 +25,8 @@ The Notify API enables developers to send interactive notifications to AI for Wo
 
 ```
 
-curl --location --request POST 'https://work.example.ai/api/1.1/public/agents/ag-4405269f-4510-5ae2-bcea-6d356yvsu01/notify' \
---header 'authorization: EypCddcFH6sgaJJkWj6k-Wbz6meimT09RXbTYDnYB3FA8$' \
+curl --location --request POST 'https://work.example.ai/api/1.1/public/agents/ag-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/notify' \
+--header 'authorization: <YOUR_AUTH_TOKEN>' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "to": "john.doe@example.com",
@@ -42,7 +42,7 @@ curl --location --request POST 'https://work.example.ai/api/1.1/public/agents/ag
             "utterance": "submit action 1",
             "payload": {
                 "transactionId": "tx-qwe2cd11",
-                "sessionId": "s-reryt21rt",
+                "sessionId": "s-hr3wx21rt",
                 "event": "laptopRequest"
             }
         }
