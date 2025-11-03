@@ -4,7 +4,7 @@ Workflow can automate processes, streamline workflows, generate insights, and pr
 
 ### Key Features
 
-* **Workflow**: A visual no-code/low-code builder for creating and managing workflows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a workflow](./create-a-workflow.md){target="_blank"} from scratch, [import an existing tool](import-a-workflow.md){target="_blank"}, or [access prebuilt tool flows using the tool templates](../workflows/tool-templates.md){target="_blank"} available in the marketplace.
+* **Workflow**: A visual no-code/low-code builder for creating and managing workflows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a workflow](./create-a-workflow.md){target="_blank"} from scratch or [import an existing workflow](import-a-workflow.md){target="_blank"}.
 
 * **Sharing & Permissions**: Account owners can invite users to collaborate on specific workflows. Invited users can access the Models and Data modules for the invited account and see only the workflows to which they're invited. [Learn more](./manage-user-roles-and-permissions.md).
 
@@ -12,7 +12,7 @@ Workflow can automate processes, streamline workflows, generate insights, and pr
 
 * **API Keys**: Create API keys for your deployed workflows to access them from external systems securely. Share these keys only with trusted users. [Learn more](./create-a-new-api-key.md).
 
-* **Workflow Monitor**: Track and analyze your workflows' performance across multiple runs, gaining a comprehensive, time-based view of tool activities to optimize your AI operations. [Learn more](./tool-monitor/about-workflow-monitor.md).
+* **Workflow Monitor**: Track and analyze your workflows' performance across multiple runs, gaining a comprehensive, time-based view of tool activities to optimize your AI operations. [Learn more](./workflow-monitor/about-workflow-monitor.md).
 
 * **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](guardrails/add-a-scanner.md){:target="_blank"}.
 
