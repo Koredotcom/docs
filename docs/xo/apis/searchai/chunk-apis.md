@@ -76,7 +76,7 @@ This API returns the complete list of chunks that satisfy the given condition in
   <tr>
    <td>filters
    </td>
-   <td>This field is used to set the filters for selecting the chunks. Fiters contains 
+   <td>This field is used to set the filters for selecting the chunks. Filters contains 
 <ul>
 
 <li>Conditions: This is an array of conditions where each condition is a set of operands, which are applied on the conditions and the conditions to be applied.  </li>
@@ -84,7 +84,7 @@ This API returns the complete list of chunks that satisfy the given condition in
 <li>Operand: The operand to be applied on all the conditions in the array. 
 
 <p>
-For instance, if the value of the filter field is set as shown below, then a logical OR operation is performed on the chunks using source name field, another logical OR is performed on chunks using the Record Title, and then an AND operation is performed on chunks filtered by above two conditions to further filter the resultset. 
+For instance, if the value of the filter field is set as shown below, then a logical OR operation is performed on the chunks using source name field, another logical OR is performed on chunks using the Record Title, and then an AND operation is performed on chunks filtered by above two conditions to further filter the result set. 
 <code>
   "conditions": [
     {

@@ -3,7 +3,7 @@
 
 Help Scout is a customer support platform designed for businesses to manage customer communications efficiently. It offers features such as shared inboxes, knowledge bases, live chat, and robust reporting, making it a key tool for teams aiming to deliver seamless support experiences.
 
-Search AI enables easy integration with Helpscout and ingests **Article**-related content, facilitating easy and efficient search. 
+Search AI enables easy integration with HelpScout and ingests **Article**-related content, facilitating easy and efficient search. 
 
 <span style="text-decoration:underline;">HelpScout Connector Specifications</span>
 

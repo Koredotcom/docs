@@ -213,12 +213,12 @@ The raclEntityIds parameter takes precedence over any keys configured through th
     <li>All values, integrationName, model, and promptName, are <strong>case sensitive</strong>.</li>
     <li>Ensure that the specified model and prompt are correctly <strong>configured and published under GenAI settings.</strong></li>
     <li>When using a <strong>custom LLM</strong>, the integrationName must match the exact name defined in the custom integration settings.</li>
-    <li>To use the <strong>default prompt configured in the application</strong>, set promptName as “Default”.</li>
-    <li>Since you cannot add a new prompt for Kore XO GPT, set prompt=”Default”.</li>
-    <li>For Kore XO GPT (korexo):
+    <li>To use the <strong>default prompt configured in the application</strong>, set promptName as “Default.”</li>
+    <li>Since you can't add a new prompt for Kore XO GPT, set prompt=”Default”.</li>
+    <li>For Kore XO GPT:
       <ul>
         <li>The model must be set to "XO-GPT".</li>
-        <li>The prompt must be "Default" (custom prompts are not supported).</li>
+        <li>The prompt must be "Default" (custom prompts aren't supported).</li>
       </ul>
     </li>
   </ul>
