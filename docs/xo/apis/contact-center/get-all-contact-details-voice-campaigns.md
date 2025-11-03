@@ -73,7 +73,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/{{c
                 "botOutboundStatusDetail": "Client side"
             },
             {
-                "phoneNumber": "12566020200",
+                "phoneNumber": "125xxxx0200",
                 "uniqueId": "",
                 "dialerOutcome": "completed",
                 "numberOfAttemptsSoFar": 1,

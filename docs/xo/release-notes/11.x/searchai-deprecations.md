@@ -5,7 +5,7 @@ The latest release of Search AI introduces important updates to improve the perf
 
 ## Deprecation Timeline
 
-**Automatic Migration Date: October 18 - October 20, 2025**
+**Automatic Migration Date: November 14, 2025**
 
 <table>
   <tr>
@@ -83,7 +83,7 @@ This deprecation is essential to:
 
 **Impact on Existing Applications**
 
-After October 20, your existing applications will automatically switch to BGE V2 and VDR.
+After November 14, your existing applications will automatically switch to BGE V2 and VDR.
 
 **What will Change**
 
@@ -151,7 +151,7 @@ If your application is still using the old crawler, we will automatically migrat
 * Better content quality with intelligent filtering of irrelevant text
 * Reduced resource usage means lower costs and better platform stability
 
-*Note: The new crawler was released on May 31, 2025. New applications automatically use it, while existing applications can upgrade early via banner notification or will be automatically migrated by October 30.*
+*Note: The new crawler was released on May 31, 2025. New applications automatically use it, while existing applications can upgrade early via banner notification or will be automatically migrated by November 14.*
 
 
 **How to Upgrade**
@@ -238,7 +238,7 @@ If you are using a re-ranker, to update the re-ranker model, follow the instruct
 
 ## Timelines
 
-The existing applications will be automatically migrated in batches between **18th–20th October 2025**. Upon completion of the migration, you will receive a pop-up notification confirming the upgrade.
+The existing applications will be automatically migrated in batches by November 14, 2025. Upon completion of the migration, you will receive a pop-up notification confirming the upgrade.
 
 <table>
   <tr>
@@ -250,19 +250,19 @@ The existing applications will be automatically migrated in batches between **18
   <tr>
    <td><strong>Now</strong>
    </td>
-   <td>Test new features by creating new applications
+   <td>Test new features by creating new applications.
    </td>
   </tr>
   <tr>
-   <td><strong>Between October 18, 2025 - October 20, 2025</strong>
+   <td><strong>November 14, 2025</strong>
    </td>
-   <td>Automatic migration of all existing applications
+   <td>Automatic migration of all existing applications.
    </td>
   </tr>
   <tr>
-   <td><strong>After October 20</strong>
+   <td><strong>After November 14, 2025</strong>
    </td>
-   <td>Legacy models and old crawlers will no longer be available
+   <td>Legacy models and old crawlers will no longer be available.
    </td>
   </tr>
 </table>
@@ -284,7 +284,7 @@ You may notice improvements in search accuracy due to the superior BGE V2 model.
 
 ### Can I still use the old crawler?
 
-No, after October 20, only the new crawler will be available. However, the new crawler provides significant performance and reliability improvements.
+No, after November 14, 2025, only the new crawler will be available. However, the new crawler provides significant performance and reliability improvements.
 
 
 ### What if my application breaks after migration?

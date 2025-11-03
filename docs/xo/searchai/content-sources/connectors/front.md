@@ -1,6 +1,6 @@
 # Front Connector
 
-Front is a customer communication hub that streamlines conversations, enhances team collaboration, and provides a unified view of messages from various channels with the help of team inboxes and knowledgebase capabilities. Using the Search AI connector for Front, you can ingest and index content from your Front knowledge bases and enable efficient search capabilities on the content.
+Front is a customer communication hub that streamlines conversations, enhances team collaboration, and provides a unified view of messages from various channels with the help of team inboxes and knowledge base capabilities. Using the Search AI connector for Front, you can ingest and index content from your Front knowledge bases and enable efficient search capabilities on the content.
 
 <span style="text-decoration:underline;">Specifications</span>
 
@@ -14,7 +14,7 @@ Front is a customer communication hub that streamlines conversations, enhances t
   <tr>
    <td><b>Content Supported</b>
    </td>
-   <td>Knowledgebase Articles
+   <td>Knowledge Base Articles
    </td>
   </tr>
   <tr>
@@ -45,7 +45,7 @@ Search AI uses Front APIs to access the content. Hence, it requires an API token
 
 1. Sign in to Front Account. Ensure that the account has admin access. 
 2. Navigate to Settings and the Developer section. 
-3. Go to the API token tab. Click **Create Token** and enter a name for the token. Select the scopes required to access knowledgebase articles. Click **Create**.
+3. Go to the API token tab. Click **Create Token** and enter a name for the token. Select the scopes required to access knowledge base articles. Click **Create**.
 4. Copy the generated API token. This token will be required for connector configuration in Search AI.
 
 
@@ -67,7 +67,7 @@ Upon sync, Search AI ingests **Knowledge base articles** from all the associated
 
 ## RACL Support
 
-RACL is implemented on the basis of type of visibility of the knowledgebase in Front. 
+RACL is implemented on the basis of type of visibility of the knowledge base in Front. 
 
 **For Internal Knowledge Bases:**
 

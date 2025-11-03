@@ -68,7 +68,7 @@ Upon sync, Search AI ingests **Solution articles** from the Freshservice account
 
 Additional information about the articles, such as author, folder, category, etc., is captured in the metadata fields of the content. 
 
-Note: Articles in subfolders within a folder are not supported. 
+Note: Articles in sub-folders within a folder aren't supported. 
 
 
 ## RACL Support
@@ -77,7 +77,7 @@ The visibility of published articles ingested from Freshservice into the Search 
 
 Note: For the Freshservice account, the users associated with a group in Freshservice are automatically added to the corresponding permission entity in Search AI. However, if there is any update to the groups after the ingestion of data in Search AI, use the Permission Entity APIs to update the associations. 
 
-### **1. All Users**
+### 1. All Users
 
 Files in these folders are visible to everyone.
 
@@ -87,7 +87,7 @@ Files in these folders are visible to everyone.
 ---
 
 
-### <strong>2. Logged-In Users</strong>
+### 2. Logged-In Users
 
 Files in these folders are accessible to all logged-in users, including agents and requesters.
 
@@ -96,17 +96,17 @@ Files in these folders are accessible to all logged-in users, including agents a
 * <code>sys_racl</code></strong>: Set to the domain name of the Freshservice account.
 
 <strong>Example</strong>:
-If the domain is <code>koredotai</code>, the <code>sys_racl</code> field appears as:
+If the domain is <code>mydomaindotai</code>, the <code>sys_racl</code> field appears as:
 
 
 
 ```
-"sys_racl": ["koredotai"]
+"sys_racl": ["mydomaindotai"]
 ```
 ---
 
 
-### **3. Agents Only**
+### 3. Agents Only
 
 Access to files in these folders is restricted to agents.
 
@@ -115,9 +115,9 @@ Access to files in these folders is restricted to agents.
 * <code>sys_racl</code></strong>: Set to <code>${domain}_agents</code>.
 
 <strong>Example</strong>: 
-If the domain is <code>koredotai</code>, the <code>sys_racl</code> field appears as: 
+If the domain is <code>mydomaindotai</code>, the <code>sys_racl</code> field appears as: 
 ```
-"sys_racl": ["koredotai_agents"]
+"sys_racl": ["mydomaindotai_agents"]
 ```
 
 

@@ -103,9 +103,9 @@ This API returns the content requested.
         "sourceType": "jira",
         "raw_data": "...",
         "base_url": "",
-        "title": "Debugging Request:  UXO Stagging -testing",
-        "content": "Debugging Request: UXO Stagging -testing Request for debugging in the UXO Staging\nAssignee: John\nProject ID: 10000\nIssue Type: Task\nProject Name: Searchassist_Test\nIssue Status: To Do\nReporter: Jacob\nComments:  Continue Working on it.. Give the Latest Update ",
-        "url": "https://searchassistjira.atlassian.net/browse/xx-2",
+        "title": "Debugging Request",
+        "content": "Debugging Request Request for debugging in the Staging setup\nAssignee: John\nProject ID: 10000\nIssue Type: Task\nProject Name: My Project\nIssue Status: To Do\nReporter: Jacob\nComments:  Continue Working on it.. Give the Latest Update ",
+        "url": "https://myprojectjira.atlassian.net/browse/xx-2",
         "type": "Task",
         "comments": " Please Update the status."
     },
@@ -334,7 +334,7 @@ Similarly, if
   <tr>
    <td>nextCursor
    </td>
-   <td>This field is used for cursor based pagination. The first time API request is made without this field. It returns the first set of data. The response of the API includes a cursor value that should be passed in the next request. The cursor identifies a specific item in the dataset, which serves as the starting point for the next page of results. Use the cursor value as provided in the previous response object. When the field nextCursor set as null, it indicates the end of resultset.
+   <td>This field is used for cursor based pagination. The first time API request is made without this field. It returns the first set of data. The response of the API includes a cursor value that should be passed in the next request. The cursor identifies a specific item in the dataset, which serves as the starting point for the next page of results. Use the cursor value as provided in the previous response object. When the field nextCursor set as null, it indicates the end of result set.
    </td>
    <td>No
    </td>
