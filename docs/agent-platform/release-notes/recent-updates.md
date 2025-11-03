@@ -10,7 +10,7 @@ This update includes filler messages for improved voice experiences, BYOK encryp
 
 <font size="4">Multi-Agent Orchestration</font>
 
-**Enhanced Waiting Experience for Voice Interactions**
+**Enhanced Waiting Experience**
 
 Agent Platform now introduces an improved waiting experience that uses configurable filler messages to keep users engaged during processing delays in voice interactions. These messages can be configured in two ways:
 
