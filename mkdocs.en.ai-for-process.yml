@@ -121,28 +121,28 @@ nav:
     - Create a Workflow: workflows/create-a-workflow.md
     - Import a Workflow: workflows/import-a-workflow.md
     - Workflow Builder:
-      - About Workflow Builder: workflows/tool-flows/flows-overview.md
+      - About Workflow Builder: workflows/workflow-builder/flows-overview.md
       - Manage Flows: 
-        - Manage Nodes in Flows: workflows/tool-flows/manage-flow-nodes.md
-        - Manage Input and Output: workflows/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
-        - Run the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
-        - Create a Version of the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+        - Manage Nodes in Flows: workflows/workflow-builder/manage-flow-nodes.md
+        - Manage Input and Output: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+        - Run the Flow: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a Version of the Flow: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
         - AI Node: 
-          - About AI Nodes: workflows/tool-flows/types-of-nodes/ai-node.md
-          - Text to Text Node: workflows/tool-flows/types-of-nodes/text-to-text-node.md
-          - Text to Image Node: workflows/tool-flows/types-of-nodes/text-to-image-node.md
-          - Audio to Text Node: workflows/tool-flows/types-of-nodes/audio-to-text-node.md
-          - Image to Text Node: workflows/tool-flows/types-of-nodes/image-to-text-node.md
-        - Integration Node: workflows/tool-flows/types-of-nodes/integration-node.md
-        - API Node: workflows/tool-flows/types-of-nodes/api-node.md
-        - Function Node: workflows/tool-flows/types-of-nodes/function-node.md
-        - Condition Node: workflows/tool-flows/types-of-nodes/condition-node.md
-        - DocSearch Node: workflows/tool-flows/types-of-nodes/docsearch-node.md 
-        - Loop Node: workflows/tool-flows/types-of-nodes/loop-node.md  
-        - Human Node: workflows/tool-flows/types-of-nodes/human-node.md 
-        - End Node: workflows/tool-flows/types-of-nodes/end-node.md 
-      - Workflow Change Log: workflows/tool-flows/tool-canvas-change-log.md    
+          - About AI Nodes: workflows/workflow-builder/types-of-nodes/ai-node.md
+          - Text to Text Node: workflows/workflow-builder/types-of-nodes/text-to-text-node.md
+          - Text to Image Node: workflows/workflow-builder/types-of-nodes/text-to-image-node.md
+          - Audio to Text Node: workflows/workflow-builder/types-of-nodes/audio-to-text-node.md
+          - Image to Text Node: workflows/workflow-builder/types-of-nodes/image-to-text-node.md
+        - Integration Node: workflows/workflow-builder/types-of-nodes/integration-node.md
+        - API Node: workflows/workflow-builder/types-of-nodes/api-node.md
+        - Function Node: workflows/workflow-builder/types-of-nodes/function-node.md
+        - Condition Node: workflows/workflow-builder/types-of-nodes/condition-node.md
+        - DocSearch Node: workflows/workflow-builder/types-of-nodes/docsearch-node.md 
+        - Loop Node: workflows/workflow-builder/types-of-nodes/loop-node.md  
+        - Human Node: workflows/workflow-builder/types-of-nodes/human-node.md 
+        - End Node: workflows/workflow-builder/types-of-nodes/end-node.md 
+      - Workflow Change Log: workflows/workflow-builder/workflow-canvas-change-log.md    
     - Sharing & Permissions: 
       - Manage User Roles and Permissions: workflows/manage-user-roles-and-permissions.md
     - Workflow Endpoint: 
@@ -150,9 +150,9 @@ nav:
     - API Keys: 
       - Create an API Key: workflows/create-a-new-api-key.md 
     - Workflow Monitor: 
-      - About Workflow Monitor: workflows/tool-monitor/about-workflow-monitor.md
-      - Accessing Workflow Monitor: workflows/tool-monitor/accessing-workflow-monitor.md
-      - Understanding Workflow Monitor: workflows/tool-monitor/understanding-the-workflow-monitor-interface.md
+      - About Workflow Monitor: workflows/workflow-monitor/about-workflow-monitor.md
+      - Accessing Workflow Monitor: workflows/workflow-monitor/accessing-workflow-monitor.md
+      - Understanding Workflow Monitor: workflows/workflow-monitor/understanding-the-workflow-monitor-interface.md
     - Guardrails:
       - About Guardrails: workflows/guardrails/overview.md
       - Add a Scanner: workflows/guardrails/add-a-scanner.md
