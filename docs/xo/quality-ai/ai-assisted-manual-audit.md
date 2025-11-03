@@ -302,6 +302,26 @@ Displays Agent-specific performance data metrics.
 * **Empathy Score**: Agent utterance empathy measurement.    
 <img src="../ai-assist-manual-edit/images/agent-speech-insights.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
 
+#### **Audit-Specific Conversation Detail View**
+
+The Audit screen integrates keyword search functionality directly into the conversation evaluation workflow. Filters applied on the **Conversation Mining** page carry over to this Audit screen. The conversation detail view presents the full transcript of the call or chat.
+
+
+| **Feature** | **Description** |
+|--------------|-----------------|
+| **Timeline Integration** | • Visual markers on the conversation timeline show exact keyword match positions, enabling quick timestamp-based navigation.<br>• Click the timeline marker to jump directly to that keyword match in the transcript for quick navigation.<br>• Links keywords to transcript locations, related QA questions, and their corresponding scores. |
+| **Keyword Highlighting in Transcript** | • Keyword matches are automatically highlighted inline in the transcript, making it easy to spot relevant terms instantly.<br>• Highlights are color-coded (up to 8 distinct colors) to match timeline markers, aiding visual consistency.<br>• Excluded keywords are not highlighted. |
+| **QA Question Mapping (Compliance) and Navigation** | • Keyword matches are linked to relevant QA questions and scoring impact in the AI Overview panel.<br>• Matches display speaker attribution and count (e.g., “Refund – Customer”, “Order – Agent”).<br>• Matches are clickable, enabling traceability and quick verification of required terms (e.g., compliance scripts and disclosures).<br>• Users can filter and navigate by keyword hits, speaker turns, or QA-mapped segments, improving evaluation efficiency. |
+| **Enhanced Context Display** | • When a keyword is selected, the surrounding transcript is expanded.<br>• Displays speaker labels (Agent speech, Customer speech), sentiment, and QA impact for each match. |
+| **Keyword Highlight in Audit View** | • Displays transcripts with keyword highlights and navigation.<br>• Helps auditors visually review conversations and assess QA relevance. |
+| **Expand and Collapse View** | • Allows toggling of the *Keywords Found* panel:<br>&nbsp;&nbsp;– **Expanded View:** This keyword filter is active and fully visible with all keywords listed.<br>&nbsp;&nbsp;– **Collapsed View:** Only panel header shown, maximizing transcript space.<br>&nbsp;&nbsp;– **Hidden:** Panel not shown when no keyword filters are applied.<br>• **Default:** Expanded when keywords are filtered, collapsed when no keyword filters are active. |
+| **Flexibility Keyword Filtering** | • Users can filter, navigate, and clear keywords without impacting other filters.<br>• Navigation supports viewing only specific keyword matches or filtering by speaker (Agent only or Customer only). |
+| **Speaker Labels** | • Each speaker (Agent or Customer) is clearly labeled, helping users follow the dialogue flow seamlessly. |
+| **AI Overview Panel** | • Displays keyword context and its relevance to QA evaluation.<br>• Highlights if the keyword relates to any compliance violations.<br>• Shows if keyword presence/absence affects question scoring.<br>• Shows sentiment at the time of keyword mention. |
+| **Session Preservation** | • Filters are saved in the user session until manually cleared. |
+| **Clear Filter Keywords** | • Removes all keyword filters (both include and exclude) from the transcript, but other filters (date, sentiment, QA score) remain active. |
+ <img src="./ai-assist-manual-edit/images/keyword-by-question-audit.png" alt="Audit-Specific Conversation" title="Audit-Specific Conversation" style="border: 1px solid gray; zoom:50%;"> 
+
 #### By Question
 
 The **By Question** section in the audit interface evaluates agent performance on specific inquiry types using configurable evaluation forms. Each criterion is scored individually, supported by AI-powered quality assurance, which ensures precision and consistency. This question-level approach supports targeted feedback and continuous process improvement. 

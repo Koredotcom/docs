@@ -113,7 +113,6 @@ You can now publish the Azure bot on your MS Teams account so that your users ca
 
 To do so, create an MS Teams app, associate the bot with it, and then publish the app.
 
-
 1. [Log in](https://teams.microsoft.com/) to the MS Teams account with admin credentials.
 
 2. Click **Ellipsis […]** in the left navigation bar and then select the **Developer Portal** icon to launch the Apps builder.  

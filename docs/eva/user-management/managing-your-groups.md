@@ -76,24 +76,20 @@ You may want to create one or more groups of users in your account for users wit
 You may need to modify the members of a group. This topic describes how to modify the common group properties and the membership of an existing group.
 
 1. In the **User Management** module, on the **User groups** page, in the **GROUP NAME** column, click the name of the group to modify.
-2. The specific group page opens. You can modify the group description, Add users, and delete users from the group. To delete users, hover over the username you want to delete, and the delete icon will appear. 
+
+2. The specific group page opens. You can modify the group description, Add users, and delete users from the group. To delete users, hover over the username you want to delete, and the delete icon will appear.
 
 3. Click **Back.** Your updates are auto-saved.
-
-<img src="../images/add-user.png" alt="add-user" title="add-user" style="border: 1px solid gray; zoom:80%;"> 
 
 ## Deletion
 
 You may no longer need a group of users in your account. Complete the steps in the following procedure to delete a group.
 
 1. In the **User Management** module, on the **User groups** page, in the **GROUP NAME** column, click the name of the group to modify.
+
 2. The specific group page opens. Click the delete icon.  
-<img src="../images/delete-user.png" alt="delete-user" title="delete-user" style="border: 1px solid gray; zoom:80%;"> 
 
 3. In the **Delete User group** confirmation dialog, click **Delete**.  
-
-    <img src="../images/delete-user-group.png" alt="delete-user-group" title="delete-user-group" style="border: 1px solid gray; zoom:80%;"> 
-
 
     !!! Warning
   

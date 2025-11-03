@@ -2,6 +2,35 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.19.0 October 25, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Agent Node</font>  
+
+**LLM Text Response Streaming Over Web/Mobile SDK**  
+
+AI for Service now offers real-time LLM response streaming for Web/Mobile SDK chat conversations. This feature reduces latency and improves user engagement through incremental message delivery via Agent and Prompt Nodes. The streaming capability is available only for V1 prompts in Agent Nodes and does not support tool calling. Users can select from existing streaming prompt templates or create custom ones. Existing voice streaming prompts remain fully compatible. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/streaming-responses.md#current-capabilities) 
+
+**Agent Node - Default Intent Detection Settings**
+
+The Agent node's Intent Detection now defaults to "Prefer user input as intent and proceed with Hold & Resume settings”. The "Ask the user how to proceed" option is removed to streamline configuration, standardize user input handling, and improve the overall end-user experience. This change applies to both new and existing Agent nodes, with current nodes automatically updated for backward compatibility. [Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#instance-properties)
+
+<font size="4">DialogGPT</font>  
+
+**Multi-language Support**
+
+DialogGPT has expanded its intent identification and orchestration capabilities to include non-English languages, allowing users to fully leverage its power in multilingual applications. The process for adding new languages is streamlined, allowing users to easily configure LLM-based or traditional translation engines to translate the user input and AI agent responses. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-dialog-gpt-enabled-ai-agent)
+
+**Pre-intent Input Guardrails Support**
+
+DialogGPT now supports pre-intent input guardrails to scan and block harmful content before it reaches language models during intent identification. This enhancement addresses security vulnerabilities and compliance risks, complementing the platform's existing PII protection and standard guardrails. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md#guardrails-applicability-and-availability)
+
+
+<hr>
+
 ## v11.18.0 September 27, 2025
 
 <u> Minor Release </u>

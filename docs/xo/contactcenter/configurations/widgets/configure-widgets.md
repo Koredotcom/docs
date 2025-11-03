@@ -26,10 +26,26 @@ Steps to add an external widget:
 5. If you want to remove an icon, click the **Delete (bin)** button on the right side. You can re-upload an icon afterward as needed.  
 <img src="../images/delete-icon-button.png" alt="Delete Icon Button" title="Delete Icon Button" style="border: 1px solid gray; zoom:80%;">
 
-6. The **URL** is the address of the system or webpage that you want to integrate as a widget. You can create a dynamic URL and select variables from a static list or based on custom variables that reside inside the meta-info of the conversation. Select parameters from the **{} Variable** drop-down. The available variables are _Agent Id, Customer Email Id, Conversation Id, Agent First Name, Customer First Name, Customer Last Name, Customer phone Number, and Agent Last Name._ You can also insert a custom variable of the type:
-    ```
-    {{context.metaInfo.&lt;yourCustomVarName>}}.
-    ```
+6. The **URL** is the address of the system or webpage that you want to integrate as a widget. You can create a dynamic URL and select variables from a static list or based on custom variables that reside inside the meta-info of the conversation. Select parameters from the **{} Variable** drop-down. The available variables are _Agent Id, Customer Email Id, Conversation Id, Agent First Name, Customer First Name, Customer Last Name, Customer phone Number, and Agent Last Name._ You can also insert a custom variable.
+
+    The Insert Custom variable feature enables you to use metadata or custom keys configured in Agent Utilities as dynamic variables. This capability allows you to customize widget URLs based on customer-specific metadata. Agents can embed metadata values directly into URLs by using variable expressions in the following format:
+
+    `{{context.metaInfo.<yourCustomVarName>}}`
+
+    When the widget loads, the system replaces the variable with the corresponding metadata value stored in the context.metaInfo object.
+
+    Example
+
+    In the URL field of a widget configuration, you can define a dynamic Kore website link as shown below:
+
+    https://www.kore.com/?id={{context.metaInfo.<yourCustomVarName>}}
+
+    When rendered, <yourCustomVarName> dynamically resolves to the actual metadata value associated with the current session.
+
+    For example, if context.metaInfo.customerId = 12345, the URL resolves to:
+
+    https://www.kore.com/?id=12345
+
 7. The **Failure URL** displays in case the intended page does not load. You can set the same variables as for the main URL above.  
 <img src="../images/url-and-failure-url.png" alt="URL and Failure URL" title="URL and Failure URL" style="border: 1px solid gray; zoom:80%;">
 

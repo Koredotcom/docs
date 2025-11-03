@@ -1,3 +1,5 @@
+--8<-- "includes/agentai-api-back-link.md"
+
 # Duration-Based Conversation Records
 
 This API retrieves a paginated list of Agent AI conversation records within a specified date range. 

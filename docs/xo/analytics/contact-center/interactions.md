@@ -392,7 +392,7 @@ The following recording settings can be configured:
 
 !!! Note
 
-    * The retention period for voice call recordings can be configured based on customer requests. You can raise a request with us, and we will set it up accordingly.  
+    * The retention period for voice call recordings can be configured from [Data Retention Period](../../app-settings/advanced-settings/system-settings.md#data-retention-period)
 
     * Once the configured retention period ends, the recordings are permanently deleted.  
 
@@ -427,15 +427,71 @@ A message is displayed to the user on the Transcript tab when Call Recording Con
 
 List of recording status and messages:
 
-| **Status**              | **Message** |
-|--------------------------|-------------|
-| **failed**               | Media generation failed due to some technical issue. Please contact your administrator. |
-| **media_unavailable**    | No audio recording found in the server. Please contact your administrator. |
-| **call_in_progress**     | Media unavailable while call is in progress. Please recheck once the call has ended. |
-| **media_in_progress**    | Media generation is in progress. Please wait for a few minutes. |
-| **partial_download_failed** | Unable to fetch the recording. Please click the button below to retry.<br>**Note:** A “Fetch Again” button appears. Users can click this button three times. If it still fails, the message *‘Media generation failed due to some technical issue. Please contact your administrator’* appears. |
-| **partial_upload_failed**   | Unable to fetch the recording. Please click the button below to retry.<br>**Note:** A “Fetch Again” button appears. Users can click this button three times. If it still fails, the message *‘Media generation failed due to some technical issue.’* appears. |
-| **partial_failed**          | Unable to fetch the recording. Please click the button below to retry.<br>**Note:** A “Fetch Again” button appears. Users can click this button three times. If it still fails, the message *‘Media generation failed due to some technical issue.’* appears. |
+| **State**               | **Message** |
+|-------------------------|-------------|
+| **failed**              | Media generation failed due to a technical issue. Please contact your administrator. |
+| **media_unavailable**   | No audio recording found on the server. Please contact your administrator. |
+| **call_in_progress**    | Media unavailable while the call is in progress. Please recheck once the call has ended. |
+| **media_in_progress**   | Media generation is in progress. Please wait for a few minutes. |
+| **partial_download_failed** | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue. Please contact your administrator.” appears. |
+| **partial_upload_failed**   | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue” appears. |
+| **partial_failed**      | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue” appears. |
+| **fetching_in_progress** | Generating your call recording... This may take a few minutes. Please wait. |
+| **initial_fetch_failed** | We couldn’t load the call recording. Please try again. |
+| **retry_failed**        | Still unable to fetch the recording. Please try again after 15 minutes. <br>**Note**: Do not restrict the number of times users can click the Retry button. Also, do not restrict job execution after 24 hours based on the number of retries. |
+| **24hr_retry_failed**   | We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance. |
+
+### Troubleshooting
+
+#### Why can’t I see my call recording?
+
+**Overview**
+
+After every voice call, the system automatically tries to fetch the call recording from the recording server. In most cases, the recording becomes available within 10 minutes.
+
+However, sometimes there may be a short delay or a temporary issue that prevents the recording from appearing immediately in your dashboard.
+
+**What You Might See in the widget**
+
+Below are the different status messages you may notice and what they mean:
+
+| **Status message**                                                                                                      | **What it means**                                                                                                            | **What you can do**                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Generating your call recording...** This may take a few minutes.                                                      | The recording server is still processing the call audio.                                                                     | No action needed — please wait for 10 minutes and refresh the page.                                                            |
+| **We couldn’t load the call recording. Please try again.**                                                              | There was a temporary issue fetching the recording.                                                                          | Click **Retry** to try fetching the recording again.                                                                           |
+| **Still unable to fetch the recording. Please try again after 15 minutes.**                                             | The system retried but still couldn’t get the recording.                                                                     | Wait for about 15 minutes and click **Retry** again.                                                                           |
+| **We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance.** | The system made multiple attempts (including automated background jobs) but couldn’t retrieve the recording from the server. | Contact your administrator or support team for help. Our team reviews the logs and attempts to recover the recording manually. |
+
+**Behind the Scenes**
+
+The platform automatically attempts to fetch the call recording 10 minutes after the call is completed.  
+
+* If the recording is available, it is made accessible to the user.  
+* If the recording retrieval fails, users can manually retry fetching it. Also, the system will automatically retry fetching the recording after 24 hours.  
+
+Even without a manual retry, background jobs will continue to make periodic attempts to retrieve the recording.
+
+**Common Reasons for Delay or Failure**
+
+* Temporary network or connectivity issues between Kore’s system and the recording server.  
+
+* High server load delaying recording generation.  
+
+* Recording file not yet finalized or still being processed by the recording server.  
+
+* Rarely, a system error or missing call metadata prevents proper retrieval.
+
+**Tips for Users**
+
+* Wait at least **10 minutes** after the call ends before expecting the recording to appear.  
+
+* Use the **Retry** button if the recording doesn’t show up.  
+
+* If the issue persists beyond 24 hours, contact your administrator or raise a support ticket with details such as **Call ID**, **Timestamp**, and **Caller Number**.  
+
+**Need more Help?**
+
+If your call recording still isn’t available after following the steps above, contact your system administrator or Kore Support with your call details. Our team will investigate and share updates once the issue is resolved.
 
 ## Diagnostics
 
