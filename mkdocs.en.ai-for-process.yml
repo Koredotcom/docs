@@ -117,7 +117,7 @@ nav:
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
   - Workflows: 
-    - About Workflows: workflows/workflow-tools.md
+    - About Workflows: workflows/workflow.md
     - Create a Workflow: workflows/create-a-workflow.md
     - Import a Workflow: workflows/import-a-workflow.md
     - Workflow Builder:

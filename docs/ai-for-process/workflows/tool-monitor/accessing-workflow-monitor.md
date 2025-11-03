@@ -16,10 +16,10 @@ Steps to access the workflow monitor page:
     * **All runs**
     * **Model runs**
 
-    For more information, see [Understanding Workflow Monitor](../tool-monitor/understanding-the-tool-monitor-interface.md).
+    For more information, see [Understanding Workflow Monitor](../tool-monitor/understanding-the-workflow-monitor-interface.md).
 
 5. Click each row for detailed information on each workflow run or model run. A detailed view panel opens on the right.  
 
-    For more information, see [Viewing detailed run information](../tool-monitor/understanding-the-tool-monitor-interface.md#viewing-detailed-run-information).
+    For more information, see [Viewing detailed run information](../tool-monitor/understanding-the-workflow-monitor-interface.md#viewing-detailed-run-information).
 
-6. (Optional) To filter or search the list of runs or calls on the Workflow monitor page, see [Searching and filtering](../tool-monitor/understanding-the-tool-monitor-interface.md#searching-and-filtering-information).
+6. (Optional) To filter or search the list of runs or calls on the Workflow monitor page, see [Searching and filtering](../tool-monitor/understanding-the-workflow-monitor-interface.md#searching-and-filtering-information).

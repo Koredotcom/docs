@@ -78,7 +78,7 @@ The imported workflow is listed under **All Workflows** and **My Workflows** on 
 
 The import may fail due to an incompatible workflow version, a corrupt file, an internal error, or missing guardrails in the current account, triggering an error notification.
 
-## Import WOrkflow as a Version
+## Import Workflow as a Version
 
 Use the **Import** functionality under **Workflows** > **Configurations** to add a workflow as a version of a parent workflow, replacing the existing one. You should back up the current in-development version to preserve its configuration definitions. The export file is saved as '<code>Exported_<i>Workflow Name</i>.zip</code>.’
 
@@ -86,7 +86,7 @@ When you import an workflow as a version, you must upload all the following file
 
 * **Flow definition file**: Upload the required **flow_definition.json** file from your local directory. The file includes the workflow's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.
 * **App definition file**: Upload the required **app_definition.json** file, which includes general information about the workflow version and guardrails.
-* **Environment variable file**: Upload the required **env_variables.json** file, which includes the environment variables set for the workflow. Any conflicts between environment variables in the parent workflow and the imported version must be resolved. [Learn more](./configure-a-tool.md#manage-environment-variables){:target="_blank"}.
+* **Environment variable file**: Upload the required **env_variables.json** file, which includes the environment variables set for the workflow. Any conflicts between environment variables in the parent workflow and the imported version must be resolved. [Learn more](./configure-a-workflow.md#manage-environment-variables){:target="_blank"}.
 
 ### Steps to Import a Workflow
 
@@ -109,7 +109,7 @@ To import a workflow as a version, follow the steps below:
 
 **NOTE**
 
-Backing up automatically exports and saves the .zip package of the workflow definition files to the designated location when the import is initiated. [Learn more](export-a-tool.md){:target="_blank"}.
+Backing up automatically exports and saves the .zip package of the workflow definition files to the designated location when the import is initiated. [Learn more](export-a-workflow.md){:target="_blank"}.
 
 If you choose not to back up/export the workflow configurations, unselect the back-up option and proceed to the next step.
 

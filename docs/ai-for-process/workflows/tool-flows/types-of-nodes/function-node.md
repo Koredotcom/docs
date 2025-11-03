@@ -450,7 +450,7 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 
 **Import a Workflow**
 
-When you import a workflow, a *.zip* package is imported from your local system with the flow definition, app definition, and environment variables JSON files from another environment. [Learn more](../../import-a-tool.md){:target="_blank"}.
+When you import a workflow, a *.zip* package is imported from your local system with the flow definition, app definition, and environment variables JSON files from another environment. [Learn more](../../import-a-workflow.md){:target="_blank"}.
 
 If the workflow contains a Function node, its configuration is automatically fetched and populated in the new environment (workflows automation) where the workflow is being imported.
 
@@ -464,7 +464,7 @@ If the workflow contains a Function node, its configuration is automatically fet
 
 **Export a Workflow**
 
-When you export a workflow that contains a Function node, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-tool.md){:target="_blank"}.
+When you export a workflow that contains a Function node, its configuration should be available in the `callflow.json` file within the exported package. [Learn more](../../export-a-workflow.md){:target="_blank"}.
 
 The following confirmation window is displayed before the export begins.
 

@@ -46,7 +46,7 @@ When workflow tools are created under the **Tools** menu, they function as unive
 
 In contrast, when workflow tools are created within the Agentic App, they're scoped exclusively to that app. You can also import a workflow tool from the library into the Agentic App. Any modifications or updates made to these imported tools apply only to the local copy and don't affect the version available in the Tools library. To ensure that changes take effect, the tool must be deployed within the app. 
 
-For more information on Workflow tools, see [Workflow Tools](../workflows/workflow-tools.md).
+For more information on Workflow tools, see [Workflow Tools](../workflows/workflow.md).
 
 
 ### Code Tools

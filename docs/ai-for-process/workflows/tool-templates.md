@@ -132,7 +132,7 @@ To modify your tool's general details, such as its name and description, asynchr
 2. On the left navigation menu, click **Configurations**.
    <img src="../images/configurations-tools.png" alt="configurations" title="configurations" style="border: 1px solid gray; zoom:75%;">  
 
-3. Perform the required action on the page like tool renaming or [deletion](../workflows/tool-templates.md/#delete-a-tool-template){:target="_blank"}. To configure other tool options, refer [here](../workflows/configure-a-tool.md){:target="_blank"}.
+3. Perform the required action on the page like tool renaming or [deletion](../workflows/tool-templates.md/#delete-a-tool-template){:target="_blank"}. To configure other tool options, refer [here](../workflows/configure-a-workflow.md){:target="_blank"}.
 
 ### View and Manage Tool Flow
 
