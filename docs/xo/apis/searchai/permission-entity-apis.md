@@ -149,7 +149,7 @@ This API lists all the permission entities associated with a connector.
         "_id": "fpe-5963cdfb-8401-5b90-8115-4c7624057733",
         "entityId": "2ftst48234234jf-ef",
         "meta": {},
-        "name": "searchassist dev",
+        "name": "dev",
         "userIds": [],
         "sourceType": "serviceNow",
         "type": "usercriteria"

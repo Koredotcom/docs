@@ -23,7 +23,7 @@ To enable an efficient and quick search of your content available in Azure Stora
   <tr>
    <td>Generative Answer Support
    </td>
-   <td>.txt, .pdf, .rtf, .msword, .doc, .docx, .ppt, .pptx
+   <td>.txt, .pdf, .rtf, .doc, .docx, .ppt, .pptx
    </td>
   </tr>
 </table>

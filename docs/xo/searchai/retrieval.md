@@ -14,5 +14,11 @@ Choose the preferred chunk retrieval strategy for retrieving answer chunks from 
 * **Similarity Score Threshold**: This setting allows users to specify the minimum similarity score required for an answer chunk to be considered relevant. Chunks with scores below this threshold are discarded. This parameter can take any value between 0 and 100. The greater the value of this field, the more similarity score is required.
 * **Proximity Threshold:** This parameter can be used to determine how closely retrieved chunks should be located to the highest-ranking chunk. Chunks beyond this threshold are discarded. This parameter can take any value between 0 and 50. The lower the value of the proximity threshold, the closer the chunks are.
 * **Top Chunks**: This field specifies the maximum number of qualified answer chunks to be considered for generating answers. In the case of generative answers, these number of top chunks are sent to the LLM as the context for generating an answer to the user query. 
+* **Token budget for chunks**: Set the maximum tokens to determine how many qualified chunks will be sent to the LLM. Consider your LLM context window, instructions, conversation context, and expected response length to determine the maximum token budget for chunks. The total number of tokens used for chunks, prompt, query, conversation context, and the expected response must be less than the LLM's maximum context window. [Learn More about Token Management](best-practices/llm-selection.md#token-management).
 
-**By default, the Hybrid Retrieval mechanism is used, and the Top Chunks number is set to 10.**
+!!! note "Default Configuration"
+    Retrieval Mechanism: Hybrid Retrieval
+    Similarity Score: 20
+    Proximity Threshold: 20
+    Top K Chunks: 20
+    Token budget for chunks: 20000

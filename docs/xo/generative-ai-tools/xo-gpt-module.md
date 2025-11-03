@@ -49,5 +49,5 @@ The Kore.ai XO GPT module currently supports the following features:
 
 * **Rephrase User Query**: This XO GPT model utilizes the app domain knowledge and conversation history to expand and rephrase user queries for improved understanding by downstream NLP components. This includes better recognition of contextual intents, entity co-referencing, and more. [Learn more](genai-features.md#automation-ai-genai-features).
 
-* **Vector Generation (Image & Text)**: This feature helps create vector embeddings for text and image data ingested data in the Search AI application.  When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature. [Learn more](genai-features.md#search-ai-genai-features).
+* **Vector Generation (Image & Text)**: This feature helps create vector embeddings for text and image data ingested data in the Search AI application. When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature. [Learn more](genai-features.md#search-ai-genai-features).
 
