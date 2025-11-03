@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-This update includes filler messages for improved voice experiences, BYOK encryption key support, AWS Bedrock integration enhancements, and internal security enhancements through expanded encryption coverage.
+This update includes filler messages for improved voice experiences, BYOK encryption key support, and AWS Bedrock integration enhancements.
 
 <font size="4">Multi-Agent Orchestration</font>
 
@@ -24,10 +24,6 @@ Agent Platform now introduces an improved waiting experience that uses configura
 Agent Platform introduces Bring Your Own Keys (BYOK) functionality, enabling integration with key management systems. This enhancement gives enterprises complete control over their encryption keys and helps them to meet stringent compliance, security, and regulatory requirements. 
 
 Currently, the platform supports integration with Azure Key Vault and AWS Key Management Service.
-
-**Internal Security Improvements**
-
-Enhanced internal security through expanded encryption across core services.
 
 
 <font size="4">AI Engineering Tools</font>
