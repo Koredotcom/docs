@@ -816,7 +816,7 @@ nav:
       - Import & Export App: deploy/bot-management.md
     - Data:
       - About Data Tables and Views: administration/data/data-tables-and-views.md
-      - Guideines: administration/data/using-data-table.md
+      - Guidelines: administration/data/using-data-table.md
       - Data Table: administration/data/data-table.md
       - Table view: administration/data/table-views.md
       - App Definition: administration/data/app-definition.md
