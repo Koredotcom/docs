@@ -2,7 +2,7 @@
 
 Kore.ai’s Agent Transfer allows you to configure the most popular integrations to hand over conversations seamlessly without the need to use BotKit. These agent transfer integrations are hosted by the Platform, and there is no need to host any custom BotKit.
 
-Agent transfer refers to the process of handing over a customer’s conversation from one agent to another within an AI Agent platform. This is typically done when the current agent is unable to assist the customer with their issue or request, or if the customer requests to speak with a different agent.
+Agent transfer refers to the process of handing over a customer’s conversation from one agent to another within an AI Agent Platform. This is typically done when the current agent is unable to assist the customer with their issue or request, or if the customer requests to speak with a different agent.
 
 **Agent Transfer** integrations are available under the **App Settings > Integration** menu. You can enable any integration by providing the required configurations. You can also enable multiple agent integrations as per your business requirement. For example, if you have a Custom integration, i.e., BotKit, and an integration with Genesys chat. You can make one of them as default and map channels to agent systems. 
 

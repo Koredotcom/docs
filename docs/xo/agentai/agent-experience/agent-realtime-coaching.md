@@ -450,7 +450,7 @@ AgentAssist allows you to add multiple rule triggers. It lets you set different 
 
         For creating multiple rule triggers, it is mandatory to choose **And** or **Or**. When you choose “And,” the rule triggers add up. When you choose “Or,” the rule triggers set to either of the rules. Here’s an example of this functionality:
 
-    <img src="../agent-coaching-images/and-or-condition-explanation-37.png" alt="and-or-condition-explanation" title="and-or-codition-explanation" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-coaching-images/and-or-condition-explanation-37.png" alt="and-or-condition-explanation" title="and-or-condition-explanation" style="border: 1px solid gray; zoom:80%;">
 
 The **And** condition ensures that rule triggers **1** and **2** are combined, and the **Or** condition ensures that either the combination of the first two rule triggers (**1+2**) or the third rule trigger (**3**) becomes applicable.
 

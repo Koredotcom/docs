@@ -1,23 +1,23 @@
 # Amazon Q Integration with AI for Work
 
-In addition to Kore’s Search and Data AI solution, AI for Work provides the ability to connect with external search indexes such as Amazon Q. This integration allows customers to leverage connectors configured in their Q Index application on top of the ones available in Kore.
+In addition to Search and Data AI solution, AI for Work provides the ability to connect with external search indexes such as Amazon Q. This integration allows customers to leverage connectors configured in their Q Index application on top of the ones available.
 
 ### Key Benefits 
 
 * Data Sovereignty: Maintain data indexing within the AWS cloud using Amazon Q, eliminating the need for partner cloud storage.
-* Unified, Context-aware search: Retrieve insights and documents from 90+ enterprise connectors ([Kore Connectors](https://docs.kore.ai/xo/searchai/content-sources/connectors/connector-directory/) + [Amazon Q Connectors](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connectors-list.html)), including AWS and non-AWS systems.
+* Unified, Context-aware search: Retrieve insights and documents from 90+ enterprise connectors ([Connectors](https://docs.kore.ai/xo/searchai/content-sources/connectors/connector-directory/) + [Amazon Q Connectors](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connectors-list.html)), including AWS and non-AWS systems.
 * Agentic actions, not just Search: Automate workflows—schedule meetings, update records, generate presentations—all with your search context.
-* Flexible routing: AI-driven query routing uses intent recognition to send requests to the right retriever (Kore or Q Index).
+* Flexible routing: AI-driven query routing uses intent recognition to send requests to the right retriever.
 * Security and Permissions: E2E data encryption both at rest and transit, cross-account connectivity with granular access control.
 * Simplified user authentication : Amazon Q index provides a [Trusted Token Issuer](https://docs.aws.amazon.com/singlesignon/latest/userguide/using-apps-with-trusted-token-issuer.html) (TTI) mechanism to issue their own security tokens. Users just need to login once from Kore.ai to get answers from Q index, without the need for authenticating a second time.
 
-## How is Amazon Q different from Kore’s RAG Search Solution
+## How is Amazon Q different from RAG Search Solution
 
-Kore’s [Search and Data AI](https://kore.ai/agent-platform/search-data-ai/) Solution comes with [70+ connectors](https://docs.kore.ai/xo/searchai/content-sources/connectors/connector-directory/) and the flexibility to build custom ones, giving enterprises deep control over how data is ingested, extracted, and configured. This allows users to experiment, fine-tune, and choose the indexing and retrieval methods that best fit their unique business needs.
+[Search and Data AI](https://kore.ai/agent-platform/search-data-ai/) Solution comes with [70+ connectors](https://docs.kore.ai/xo/searchai/content-sources/connectors/connector-directory/) and the flexibility to build custom ones, giving enterprises deep control over how data is ingested, extracted, and configured. This allows users to experiment, fine-tune, and choose the indexing and retrieval methods that best fit their unique business needs.
 
 Amazon Q, on the other hand, provides [40+ connectors](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connectors-list.html) with a strong focus on simplicity and accuracy. It delivers a managed, standardized indexing and retrieval experience designed to meet enterprise-grade accuracy benchmarks without requiring extensive customization.
 
-## Augmenting search in AI for Work with Amazon Q index 
+## Augmenting search in AI for Work with Amazon Q index
 
 Amazon Q can be integrated with AI for Work through two configuration approaches, each suited to different needs and data architectures.
 

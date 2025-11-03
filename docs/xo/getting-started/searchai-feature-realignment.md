@@ -13,7 +13,14 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
   </tr>
   <tr>
-   <td>FAQ Support
+   <td>Search Results
+   </td>
+   <td>Available(via APIs)
+   </td>
+   <td>Currently, the Search Results can only be accessed via the <a href="../../apis/searchai/advance-search/">search API</a>.  <a href="../../searchai/search-results/">Learn More.</a>
+   </td>
+  </tr>
+  <td>FAQ Support
    </td>
    <td>Available( under the Automation AI Module)
    </td>
@@ -181,7 +188,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Deprecated
    </td>
-   <td>Custom interfaces can be built using <a href="../../apis/searchai/api-list/">Search AI’s public APIs</a>. By default, the AI for Service Platform offers agent experiences available across<a href="../../channels/adding-channels-to-your-bot/"> 40+ channels.</a> 
+   <td>Custom interfaces can be built using <a href="../../apis/searchai/api-list/">Search AI’s public APIs</a>. Developers can build their own interface and directly invoke the Advanced Search API to fetch and display results. By default, the AI for Service Platform offers agent experiences available across<a href="../../channels/adding-channels-to-your-bot/"> 40+ channels.</a> 
    </td>
   </tr>
   <tr>

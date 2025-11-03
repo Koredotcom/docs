@@ -1,0 +1,237 @@
+site_name: Kore ai Docs
+site_author: Kore ai Content Experience Team
+docs_dir: 'docs/ai-for-process/'
+site_dir: 'site/ai-for-process/'
+repo_name: Koredotcom/docs
+repo_url: https://github.com/Koredotcom/docs
+extra_css:
+    - stylesheets/extra_kore.css
+theme:
+  favicon: images/gale_favicon.svg
+  name: material
+  custom_dir: overrides.en.ai-for-process
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.path
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - header.autohide
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: indigo
+      accent: lime
+plugins:
+  - search:
+      lang: tr
+  - glightbox   
+extra:
+  version:
+    provider: mike
+  generator: false
+  analytics:
+    provider: google
+    property: G-560BYJFH0P
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-                       
+            Thanks for your feedback! Help us improve this page by
+            using our <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Feedback Form<a>.            
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - extra_js/feedback.js
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this Page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: |
+  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+nav:
+  - Home : home.md
+  - Getting Started: 
+    - AI for Process Overview: getting-started/introduction.md
+    - Accessing AI for Process: getting-started/sign-up-sign-in.md        
+    - Release Notes:
+      - Recent Updates: release-notes/recent-updates.md
+  - Workflows: 
+    - About Workflow Tools: workflows/workflow-tools.md
+    - Create a Workflow Tool: workflows/create-a-new-tool.md
+    - Import a Tool: workflows/import-a-tool.md
+    - Tool Flows:
+      - About Flows: workflows/tool-flows/flows-overview.md
+      - About Tool Calling: workflows/tool-flows/tool-calling.md
+      - Manage Flows: 
+        - Manage Nodes in Flows: workflows/tool-flows/manage-flow-nodes.md
+        - Manage Input and Output: workflows/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+        - Run the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a Version of the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+      - Types of Nodes: 
+        - AI Node: 
+          - About AI Nodes: workflows/tool-flows/types-of-nodes/ai-node.md
+          - Text to Text Node: workflows/tool-flows/types-of-nodes/text-to-text-node.md
+          - Text to Image Node: workflows/tool-flows/types-of-nodes/text-to-image-node.md
+          - Audio to Text Node: workflows/tool-flows/types-of-nodes/audio-to-text-node.md
+          - Image to Text Node: workflows/tool-flows/types-of-nodes/image-to-text-node.md
+        - Integration Node: workflows/tool-flows/types-of-nodes/integration-node.md
+        - API Node: workflows/tool-flows/types-of-nodes/api-node.md
+        - Function Node: workflows/tool-flows/types-of-nodes/function-node.md
+        - Condition Node: workflows/tool-flows/types-of-nodes/condition-node.md
+        - DocSearch Node: workflows/tool-flows/types-of-nodes/docsearch-node.md 
+        - Loop Node: workflows/tool-flows/types-of-nodes/loop-node.md  
+        - Human Node: workflows/tool-flows/types-of-nodes/human-node.md 
+        - End Node: workflows/tool-flows/types-of-nodes/end-node.md 
+      - Tool Flow Change Log: workflows/tool-flows/tool-canvas-change-log.md    
+    - Sharing & Permissions: 
+      - Manage User Roles and Permissions: workflows/manage-user-roles-and-permissions.md
+    - Workflow Endpoint: 
+      - Deploy a Tool: workflows/deploy-a-tool.md
+    - API Keys: 
+      - Create an API Key: workflows/create-a-new-api-key.md 
+    - Workflow Monitor: 
+      - About Tool Monitor: workflows/tool-monitor/about-tool-monitor.md
+      - Accessing Tool Monitor: workflows/tool-monitor/accessing-tool-monitor.md
+      - Understanding Tool Monitor: workflows/tool-monitor/understanding-the-tool-monitor-interface.md
+    - Guardrails:
+      - About Guardrails: workflows/guardrails/overview.md
+      - Add a Scanner: workflows/guardrails/add-a-scanner.md
+      - Test Guardrail: workflows/guardrails/test-guardrail.md
+      - Manage Guardrails: workflows/guardrails/manage-guardrails.md
+    - Audit Logs:
+      - Tool Audit Logs: workflows/tool-audit-log.md
+    - Configurations:
+      - Configure a Tool: workflows/configure-a-tool.md
+      - Export a Tool: workflows/export-a-tool.md
+      - Import Tool as a Version: workflows/import-a-tool/#import-tool-as-a-version 
+  - Models: 
+    - About Models: models/overview.md 
+    - Model Factory: 
+      - Fine-Tuned Models:
+        - Managing Fine-Tuned Models: models/fine-tune-models/managing-fine-tuned-models.md 
+        - Create a Model: models/fine-tune-models/create-a-fine-tuned-model.md
+        - Deploy a Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
+        - Model Settings:
+          - Overview: models/fine-tune-models/model-settings-overview.md
+          - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
+          - API Keys: models/fine-tune-models/generate-an-api-key.md
+          - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
+        - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
+    - Model Hub:
+      - Open-Source Models:
+        - Managing Open-Source Models: models/open-source-models/open-source-summary.md
+        - Import a Model: models/open-source-models/importing-models.md
+        - Deploy a Model:
+          - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
+          - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+        - Model Optimization Techniques: models/open-source-models/model-optimization.md 
+        - Model Settings:
+          - Model Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
+          - API Keys: models/open-source-models/generate-an-api-key-open-source.md
+          - Configurations: models/open-source-models/configure-your-open-source-model.md
+      - External Models: 
+        - Managing External Models: models/external-models/managing-external-models.md
+        - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
+        - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
+    - Supported Models: models/supported-models.md        
+  - Prompts:
+    - About Prompt Studio: prompts/overview.md
+    - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
+    - Using Prompt Studio: prompts/using-prompt-studio.md
+    - Advanced Features: prompts/advanced-features.md
+    - More Options on Prompt Studio: prompts/options-prompt-canvas.md
+  - Administration: 
+    - About Settings: settings/overview.md
+    - About Workspaces: settings/workspaces/workspace-mgmt.md
+    - User Management:
+      - Overview: settings/user-management/overview.md
+      - User Management: settings/user-management/users.md
+      - Invite a User: settings/user-management/invite-a-user.md
+      - Add Users from Active Directory: settings/user-management/settings/active-directory.md
+      - Role Management: settings/user-management/role-management.md
+    - Integrations:
+      - About Integrations: settings/integrations/about-integrations.md
+      - Enable Hugging Face: settings/integrations/enable-hugging-face.md
+      - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
+      - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
+    - Manage Custom Scripts:
+      - Deploy and Manage Scripts: settings/manage-custom-scripts/custom-scripts.md 
+    - Monitoring: 
+      - About Monitoring: settings/monitoring/overview.md
+      - Audit Logs: settings/monitoring/audit-logs.md
+      - Analytics:
+        - Tools Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
+        - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
+        - Model Traces: settings/monitoring/analytics/model-traces.md
+      - Custom Scripts: settings/monitoring/monitoring-custom-scripts.md
+    - Security & Control:
+      - Single Sign On: settings/security-and-control/single-sign-on.md
+      - Authorization Profile: settings/security-and-control/authorization-profile.md
+      - API Scopes: settings/security-and-control/api-scopes.md
+    - Billing:
+      - Billing and Usage: settings/billing/billing-and-usage.md
+      - Managing Usage Limits: settings/billing/managing-usage-limits.md
+    - Data: 
+      - Manage Data: settings/data/manage-datasets.md
+      

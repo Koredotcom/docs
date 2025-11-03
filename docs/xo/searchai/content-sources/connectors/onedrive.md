@@ -150,25 +150,25 @@ It can also be shared as a link as follows.
 * The user groups to which the file is shared are added as permission entities to the `sys_racl` field. Corresponding users( part of the user groups) must be added manually using the Permission Entity APIs. 
 * If the link is shared to a domain, the users of the given domain are automatically identified using the domain name.
 
-For instance, if Charles is the owner of a file and he shared it with a user group ‘[searchassist@Kore.com](mailto:searchassist@Kore.com)’ and an external user ‘[xyz@example.com](mailto:xyz@example.com), the `sys_racl` field would be like:
+For instance, if Charles is the owner of a file and he shared it with a user group ‘[test@example.com]’ and an external user ‘[xyz@other-example.com], the `sys_racl` field would be like:
 
 
 ```
 "sys_racl": [
     "E083437f-d330-4ad7-8a02-87018187be46", //permission entity id corresponding to the user group.
-    "charles@koraqa1.com" //owner of the file
+    "charles@example.com", //owner of the file
+    "xyz@other-example.com"
 ]
 ```
 
 If Charles also allowed all the employees of his organization to access the file, the `sys_racl` field would be as shown below. 
 
-```
+```json
 "sys_racl": [
-  "koreaisoftware.onmicrosoft.com",
-  "koraqa1.com",
-  "kora.ai",
+  "example.com",
   "e083437f-d330-4ad7-8a02-87018187be46",//permission entity id corresponding to the user group.
-  "charles@koraqa1.com" //owner of the file
+  "charles@example.com", //owner of the file
+  "xyz@other-example.com"
 ]
 ```
 

@@ -59,7 +59,7 @@ To configure your SDK, you must define the following keys in your config.json fi
     <td>leastNodeVersion: The minimum required version of Node.js on which the application must run. Ensure the version is 10 or higher.</td>
   </tr>
   <tr>
-    <td>"credentials": {<br>"apikey": "tz4fhIiIPg6c1JHnP7tiZBtGfeCtCydlv6rbc6k4acw=",<br>"appId": "cs-9a909c58-c5a9-569d-aa7c-1f36f94b23ad",<br>"st-67890":{<br>"apikey": "test_api_key2",<br>"appId": "test_app_id2"<br>}<br>}</td>
+    <td>"credentials": {<br>"apikey": "tz4fhIiIPg6c1JHnP7tiZBtGfeCtCydlv6rxxxxxxxx=",<br>"appId": "cs-9a909c58-c5a9-569d-aa7c-1f36f94b23ad",<br>"st-67890":{<br>"apikey": "test_api_key2",<br>"appId": "test_app_id2"<br>}<br>}</td>
     <td>
       apikey: The Client Secret value generated on the Platform when registering your SDK app.<br>
       appId: The Client ID value generated on the Platform when registering your SDK app.<br>
