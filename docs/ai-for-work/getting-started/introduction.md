@@ -30,7 +30,7 @@ AI for Work is designed to provide a unified and flexible framework for implemen
 
 **Key Layers and Components of the Platform**:
 
-<img src="../images/ai-for-work-architecture-diagram.svg" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;">
+<img src="../images/ai-for-work-architecture-diagram.svg" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
 
 1. **Access Points**: Users can access AI for Work through a web-based interface or mobile applications.   
     
@@ -48,7 +48,7 @@ AI for Work is designed to provide a unified and flexible framework for implemen
         
 5. **Security & Compliance**: This layer ensures the platform adheres to enterprise security standards and compliance regulations.  
     
-6. **Development Tools**: 
+6. **Development Tools**:
 
     * No-Code Tools: AI for Work provides no-code tools that allow users to build and customize AI solutions without requiring programming skills.
     
