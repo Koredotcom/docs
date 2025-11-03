@@ -16,6 +16,6 @@ Workflow can automate processes, streamline workflows, generate insights, and pr
 
 * **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](guardrails/add-a-scanner.md){:target="_blank"}.
 
-* **Audit Logs**: Track the audit logs of all activities within your workflows and quickly troubleshoot issues with real-time event tracking. [Learn more](./tool-audit-log.md){:target="_blank"}.
+* **Audit Logs**: Track the audit logs of all activities within your workflows and quickly troubleshoot issues with real-time event tracking. [Learn more](./workflow-audit-log.md){:target="_blank"}.
 
 * **Configurations**: Manage your tool's general details, define reusable values and configurations using environment variables, and undeploy the tool. [Learn more](configure-a-workflow.md){:target="_blank"}.

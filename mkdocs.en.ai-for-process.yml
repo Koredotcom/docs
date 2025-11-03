@@ -159,11 +159,11 @@ nav:
       - Test Guardrail: workflows/guardrails/test-guardrail.md
       - Manage Guardrails: workflows/guardrails/manage-guardrails.md
     - Audit Logs:
-      - Workflow Audit Logs: workflows/tool-audit-log.md
+      - Workflow Audit Logs: workflows/workflow-audit-log.md
     - Configurations:
       - Configure a Workflow: workflows/configure-a-workflow.md
       - Export a Workflow: workflows/export-a-workflow.md
-      - Import Workflow as a Version: workflows/import-a-tool/#import-tool-as-a-version 
+      - Import Workflow as a Version: workflows/import-a-workflow/#import-workflow-as-a-version 
   - Models: 
     - About Models: models/overview.md 
     - Model Factory: 
