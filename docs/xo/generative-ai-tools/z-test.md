@@ -6,12 +6,68 @@
 ## Overview
 
 ### Models
+
+To use LLM and Generative AI features, configure the integration with a pre-built LLM, a custom LLM, or the XO GPT Module. You can use dynamic variables for provider authorization and enable token consumption. You can also add newly launched language models, such as OpenAI, Azure OpenAI, and Anthropic, with the required authentication, even if their prompt templates are not yet available in the Platform.
+
 ### Prompts
-### Token Usage
+
+Create a custom prompt or use a Platform provided prompt template, apply the model and prompt to the GenAI feature, and enable it. Create [ New Prompts](prompts-library.md) in the prompts library.
+
+
+
+### Dynamic Variables
+
+The platform now enables seamless configuration of custom and pre-built LLMs, including newly launched ones, by allowing you to use content, context, and environment variables, including secure ones. Secure Variables, particularly for environment settings, function just as smoothly as the current system ensures.
+
+
+
+!!! note
+
+    * Runtime features can use content and environment variables.
+    * Designtime features can use content, context, and environment variables.
+
+
+
+
+**Key Advantages**
+
+**Avoid Misuse of API Keys**: The system minimizes the risk of unauthorized access by utilizing secure environment variables for API keys. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
+
+**Track Team-Wise Consumption**: Implementing tracking mechanisms for API key usage allows teams to monitor their consumption, enabling better resource allocation and identifying potential inefficiencies.
+
+**Rotate Your API Keys**: Regularly rotating API keys enhances security by limiting the risk associated with compromised keys. A well-defined rotation schedule ensures that even if a key is leaked, it becomes useless after a predetermined period.
+
+Ensure all necessary variables are set up before configuring the LLM. For more details, see [App Variables](../app-settings/variables/using-bot-variables.md).
+
+The following table lists the fields you can configure as dynamic variables for each LLM provider.
+
+| LLM Provider   | Fields Supported as Dynamic Variables        |
+| ------------------ | -------------- |
+| Azure OpenAI   | API Key, Sub-Domain, Model Deployment IDs      |
+| OpenAI        | API Key             |
+| Anthropic      | API Key                 |
+| Amazon Bedrock | IAM Role ARN, Amazon STS API, Amazon Resource Name (ARN), Endpoint, Headers |
+| Custom LLM     | Endpoint, Authorization, Headers               |
+
+
+
+### Provider's New LLM Integration
+
+
+The Platform enables you to integrate newly launched language models into the out-of-box integration framework (OpenAI, Azure OpenAI, and Anthropic) with the required authentication. This ensures that newly launched models are immediately available without waiting for the platform to add them. Initially, these models don't include a pre-built/system prompt template, but you must create custom prompts for immediate use. Over time, the platform adds system prompts and templates while maintaining security and ensuring seamless adoption.
+
+
+**Key Benefits**
+
+* **Immediate Access to New Models**: Quickly access and utilize newly launched language models without waiting for platform-specific prompt development.
+* **Custom Prompt Support**: Create custom prompts for new models, ensuring immediate usability while the platform gradually develops system prompts over time.
+* **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.
+
+### Token Usage Limits
 
 The LLM Token Usage gives you comprehensive visibility into LLM token consumption and performance across AI for Service. You can track token consumption, request volume, and median latency by module, model, and feature, with detailed breakdowns available in the Performance Analytics section. These insights help organizations monitor feature adoption, manage infrastructure costs, optimize AI capabilities, and make informed scaling decisions.
 
-Token Data Collection
+**Token Data Collection**
 
 The Platform automatically captures usage data for pre-built models (OpenAI, Azure OpenAI, and Anthropic) regardless of the prompts used. For custom models and Amazon Bedrock models, you must map the Request and Response Token Keys in the custom prompts to enable tracking. Without this mapping, the Platform can't calculate consumption, which may result in unmonitored usage and unexpected costs.
 
@@ -28,80 +84,62 @@ Usage limits can be set during initial model setup or anytime after configuratio
   
   <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
 
-### Dynamic Variables
-
-The platform now enables seamless configuration of custom and pre-built LLMs, including newly launched ones, by allowing you to use content, context, and environment variables, including secure ones. Secure Variables, particularly for environment settings, function just as smoothly as the current system ensures.
-
-Ensure all necessary variables are set up before configuring the LLM. For more details, see [App Variables](../app-settings/variables/using-bot-variables.md).
-
-
-!!! note
-
-    Runtime features can use content and environment variables. Designtime features can use content, context, and environment variables.
-
-
-**Key Advantages**
-
-**Avoid Misuse of API Keys**: The system minimizes the risk of unauthorized access by utilizing secure environment variables for API keys. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
-
-**Track Team-Wise Consumption**: Implementing tracking mechanisms for API key usage allows teams to monitor their consumption, enabling better resource allocation and identifying potential inefficiencies.
-
-**Rotate Your API Keys**: Regularly rotating API keys enhances security by limiting the risk associated with compromised keys. A well-defined rotation schedule ensures that even if a key is leaked, it becomes useless after a predetermined period.
-
-### Provider's New LLM Integration
-
-        * For Azure OpenAI, you can set the API Key, Sub-Domain, and Model Deployment IDs as dynamic variables.
-        * For OpenAI and Anthropic, only the API Key can be configured as a dynamic variable.
-
-The Platform enables you to integrate newly launched language models into the out-of-box integration framework (OpenAI, Azure OpenAI, and Anthropic) with the required authentication. This ensures that newly launched models are immediately available without waiting for the platform to add them. Initially, these models do not include a pre-built/system prompt template, but you must create custom prompts for immediate use. Over time, the platform adds system prompts and templates while maintaining security and ensuring seamless adoption.
-
-
-**Key Benefits**
-
-* **Immediate Access to New Models**: Quickly access and utilize newly launched language models without waiting for platform-specific prompt development.
-* **Custom Prompt Support**: Create custom prompts for new models, ensuring immediate usability while the platform gradually develops system prompts over time.
-* **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.
-
 ## Model Providers
 
-### Authorization Flow
+To use LLM and Generative AI features, you must configure the integration with a pre-built or custom LLM or XO GPT Module.
 
-###	Integrate OpenAI Models
+Review the model and feature support matrix for the [GenAI Features](genai-features.md).
 
-**Configure OpenAI Integration**
+### Authorization
 
-Steps to configure a OpenAI LLM:
+The Authorization step establishes a secure connection between the Platform and the selected LLM provider, such as Azure OpenAI, OpenAI, or Anthropic. During this step, you provide authentication details that allow the Platform to communicate with the provider’s APIs on your behalf.
 
-
-1. Go to **Generative AI Tools** > **Models Library**.  
-
-
-2. Click **Configure Now** for Azure Open AI, Open AI, or Anthropic.
-3. On the **Authorization** tab:
-    * For **Azure OpenAI**, enter details like the **API Key** and **User Sub Domain**. In the models section, toggle on the required **model** and enter **Deployment ID**.  
-    <img src="../images/configazure.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
-    * For **OpenAI** and **Anthropic**, enter the **API Key**.  
-    <img src="../images/configopenai.png" alt="OpenAI" title="" style="border: 1px solid gray; zoom:70%;">
-
-4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
-5. The Connection Status pop-up is displayed.
-    * If a connection is successful, click **NEXT**.  
-    <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.  
-    <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+| Provider     | Required Fields   | Description  |
+| ------------ | ------ | -------- |
+| Azure OpenAI | API Key, User Sub-Domain, Deployment ID | The API Key authenticates your Azure account. The User Sub-Domain identifies your Azure resource endpoint. The Deployment ID specifies the deployed model that the Platform connects to. |
+| OpenAI       | API Key                                 | Authenticates your OpenAI account and grants access to models.  |
+| Anthropic    | API Key                                 | Authenticates your Anthropic account and grants access to models.   |
+|Amazon Bedrock|Access Key ID, Secret Access Key, Region, Model ID|The Access Key ID and Secret Access Key authenticate your AWS account. The Region identifies the AWS service region. The Model ID specifies the Amazon Bedrock model to connect to.|
+|Custom LLM|Endpoint, Authorization, Headers|The Endpoint specifies the API URL for the LLM. The Authorization field defines the authentication method or credentials. The Headers field includes any additional key-value pairs required for the request.|
 
 
-
-6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Refer [Token Usage](#token-usage).  <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
-7. Click **Save**.
-8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.
-9. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
+You can replace static authorization values with dynamic variables to keep credentials secure and reusable across environments. When you use dynamic variables, the Platform substitutes the actual values during runtime. This approach prevents exposure of sensitive information and simplifies updates when credentials change.
 
 ###	Integrate Azure OpenAI Models
 
+The Platform now provides Azure OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access Azure OpenAI models directly from the Platform. You can authorize all models using dynamic variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform does not provide system prompts or templates, so you must use custom prompts.
+
+Steps to configure an Azure OpenAI:
+
+
+1. Go to **Generative AI Tools** > **Models Library**.
+2. Click **Configure Now** for Azure OpenAI and click **Next**.
+3. On the **Authorization** tab,
+    * Fill in the Authorization details.
+    * Toggle on the required **model** and enter the **Deployment ID**.
+    * (Optional) In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, Model **Description**, and **Deployment ID**. Click **Add Model**. The current model is saved with a custom tag in the available models list. Toggle on the **model**. If you want to add more models, repeat the step. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled.
+4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
+5. The Connection Status pop-up is displayed.
+    * If a connection is successful, click **NEXT**.
+    * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
+6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings.
+7. Click **Save**.
+8. The confirmation pop-up is displayed. Click **Confirm & Save**.
+9. The configured model is listed in the Models Library. The next step is to enable[ GenAI Features](https://docs.kore.ai/xo/generative-ai-tools/genai-features/).
+
+###	Integrate OpenAI Models
+
+The Platform now provides OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access OpenAI models directly from the Platform. You can authorize all models using dynamic variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform does not provide system prompts or templates, so you must use custom prompts.
+
+Steps to configure an OpenAI:
+
+
+
 ###	Integrate Anthropic Models
 
+The Platform now provides Anthropic as an out-of-the-box (OOB) integration. This integration enables users to access newly launched Anthropic models directly from the Platform. You can authorize models using dynamic variables. The Platform does not provide system prompts or templates for these models, so you must use custom prompts.
 
+Steps to configure an Anthropic:
 
 
 ###	Amazon Bedrock LLM Integration Framework
@@ -234,7 +272,7 @@ Steps to integrate an Amazon Bedrock:
 
 7. Click **Save**.
 
-8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.  
+8. The confirmation pop-up is displayed. Click **Confirm & Save**.  
   
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
@@ -283,7 +321,7 @@ Steps to Integrate a Custom LLM:
 6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Refer [Token Usage](#token-usage).  <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
 
 7. Click **Save**.
-8. The token path confirmation pop-up is displayed. Click **Confirm & Save**.
+8. The confirmation pop-up is displayed. Click **Confirm & Save**.
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
 
