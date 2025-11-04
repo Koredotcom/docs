@@ -23,7 +23,7 @@ Customize timing, message frequency, and content to maintain a smooth conversati
 
 **Note**: This feature is currently in preview and can be enabled upon request.
 
-[Learn more :octicons-arrow-right-24:](../settings/security-and-control/encryption-key-mgmt.md#bring-your-own-key)
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md#waiting-experience)
 
 <font size="4">AI Safety, Security, and Governance</font>
 
