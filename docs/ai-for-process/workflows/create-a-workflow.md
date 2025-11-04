@@ -1,11 +1,11 @@
 # Create a Workflow
 
-You can create a new workflow to leverage models, build flows, and later deploy it as an endpoint. You can start the workflow creation journey from the Tools page. The page also allows you to manage your existing tools and view the tools that have been shared with you by others.
+You can create a new workflow to leverage models, build flows, and later deploy it as an endpoint. You can start the workflow creation journey from the Workflows page. The page also allows you to manage your existing workflows and view the workflows that have been shared with you by others.
 
-Steps to create a tool:
+Steps to create a Workflow:
 
 1. Log in to your account.
-   <img src="../tool-flows/types-of-nodes/images/access-workflows.png" alt="access workflow" title="access workflow" style="border: 1px solid gray; zoom:75%;">
+   <img src="../types-of-nodes/images/access-workflows.png" alt="access workflow" title="access workflow" style="border: 1px solid gray; zoom:75%;">
    
 1. On the **Workflows** page, select **Create new workflow**. The **New workflow** dialog box is displayed.
 

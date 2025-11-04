@@ -1,13 +1,13 @@
 # Workspace 
 
-A *workspace* represents a logical grouping of applications, tools, and configurations, typically organized by teams or projects. Workspaces bring organization and structure to how apps are grouped and accessed. It determines **what apps and data are accessible**, **what actions are allowed**, and **which configurations apply** based on the currently selected workspace.
+A *workspace* represents a logical grouping of applications, workflows, and configurations, typically organized by teams or projects. Workspaces bring organization and structure to how apps are grouped and accessed. It determines **what apps and data are accessible**, **what actions are allowed**, and **which configurations apply** based on the currently selected workspace.
 
-By default, when a new account is created, a default workspace is created and assigned. When a new app is created, it is automatically associated with the workspace. 
+By default, when a new account is created, a default workspace is created and assigned. When a new app is created, it's automatically associated with the workspace. 
 
 Points to Note:
 
-* Every app is tied to a specific workspace. It cannot be moved or accessed across workspaces (use import/export to move apps across workspaces).
-* Tools created within a workspace are only available to apps in that workspace. (use import/export to move tools across workspaces).
+* Every app is tied to a specific workspace. It can't be moved or accessed across workspaces (use import/export to move apps across workspaces).
+* Workflows created within a workspace are only available to apps in that workspace. (use import/export to move workflows across workspaces).
 * All configurations, including AI Model configurations, settings, auth profiles, and permissions, are maintained separately for each workspace.
 * Each workspace has its own set of deployment environments.
 
@@ -22,9 +22,9 @@ Clicking the workspace name opens a drop-down list of all accessible workspaces.
 ![alt_text](images/switcher.png "image_tooltip")
 
 
-Click on **Browse all Workspaces** to view the complete list of workspaces.  On switching between workspaces, 
+Click on **Browse all Workspaces** to view the complete list of workspaces. On switching between workspaces, 
 
-* The apps and tools are refreshed to show the ones from the new workspace. 
+* The apps and workflows are refreshed to show the ones from the new workspace. 
 * Permissions are also based on the user's role in the new workspace. 
 * Settings, memory stores, models, and deployment environments reflect workspace-specific configurations. 
 
