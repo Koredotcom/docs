@@ -1,4 +1,4 @@
-[:octicons-arrow-left-24: Back to API List](../../apis/overview.md/#api-list)
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
 
 # Deploy a Tool API
 
