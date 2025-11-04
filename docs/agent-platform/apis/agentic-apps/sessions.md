@@ -1,4 +1,4 @@
-[:octicons-arrow-left-24: Back to API List](../../apis/agentic-apps/overview.md/#api-list)
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
 
 # Sessions API
 

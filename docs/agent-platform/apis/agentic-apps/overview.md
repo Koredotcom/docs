@@ -2,7 +2,6 @@
 
 The Agent Protocol API enables programmatic interaction with your agents, allowing you to manage conversational sessions, execute agent logic, retrieve responses, and track asynchronous tasks.
 
-
 ## Working with Agent Protocol APIs
 
 
@@ -29,18 +28,6 @@ x-api-key: YOUR_API_KEY
 
 
 Note: API keys are **app-specific**. They are not shared across accounts or workspaces. Ensure that you use the API key associated with the correct app when making requests. 
-
-## API List
-
-The following table lists the Agent Protocol APIs that allow users to interact with agents and manage sessions. 
-
-| **API**             | **Description**                                                                                       |
-|-----------------|---------------------------------------------------------------------------------------------------|
-| [Sessions API](sessions.md)    | Creates, retrieves, or ends a session with an agent to maintain conversation context.             |
-| [Runs API](execute.md)        | Sends user input to an agent within a session and receives a response.                            |
-| [File Attachment APIs](upload.md) | Upload or delete attachments to a conversation. These attachments can be referenced during an agent run as context|
-| [Create App API](create-app.md) | Create a new Agentic App.|
-
 
 ## Key Concepts and Terminologies
 
@@ -185,3 +172,7 @@ Sample Response
 
 * Authorization is only required once per user (across sessions) or until the token expires.
 * If one or more authorizations are pending, all of them must be completed before continuing. If the required authorization is not completed, the associated tools will return an error upon invocation.
+
+## See Also
+
+* [List of available APIs](../../apis/list-of-apis.md).
