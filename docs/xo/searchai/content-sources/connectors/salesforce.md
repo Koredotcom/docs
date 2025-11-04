@@ -97,7 +97,7 @@ Select and add the following to the **Selected OAuth Scopes**.
   * Full access (full)
   * Perform requests at any time (refresh_token, offline_access)
 
-Note that currently, Search AI does not support the PKCE Salesforce feature; hence **disable the field ‘Require Proof Key for Code Exchange (PKCE).**
+Note that currently, Search AI doesn't support the PKCE Salesforce feature; hence **disable the field ‘Require Proof Key for Code Exchange (PKCE).**
 
 Leave other settings as default and click **Save** and **Continue**. The summary page for the application will be displayed as shown below. 
 

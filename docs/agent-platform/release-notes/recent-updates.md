@@ -2,6 +2,42 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.3.0 November 3, 2025
+
+<u> Minor Release </u>
+
+This update includes filler messages for improved voice experiences, BYOK encryption key support, and AWS Bedrock integration enhancements.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Enhanced Waiting Experience**
+
+Agent Platform now introduces an improved waiting experience that uses configurable filler messages to keep users engaged during processing delays in voice interactions. These messages can be configured in two ways:
+
+* Static messages: Pre-written responses for consistent communication.
+* Dynamic messages: AI-generated responses tailored to the conversation context.
+
+<font size="4">AI Safety, Security, and Governance</font>
+
+**Bring Your Own Keys (BYOK) Encryption**
+
+Agent Platform introduces Bring Your Own Keys (BYOK) functionality, enabling integration with key management systems. This enhancement gives enterprises complete control over their encryption keys and helps them to meet stringent compliance, security, and regulatory requirements. 
+
+Currently, the platform supports integration with Azure Key Vault and AWS Key Management Service.
+
+
+<font size="4">AI Engineering Tools</font>
+
+**AWS Bedrock Integration: Predefined API Mapping for Models**
+
+Users can now easily integrate with AWS Bedrock by selecting a provider schema — Anthropic (messages) or OpenAI (chat completion). The platform automatically maps model requests and responses to the chosen format, simplifying configuration and ensuring API compatibility.
+
+
+
+
+<hr>
+
+
 ## v1.2.0 September 27, 2025
 
 <u> Minor Release </u>
