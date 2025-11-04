@@ -6,7 +6,7 @@ This API supports internal transfer events, reducing reliance on UI socket event
 
 | Method         | POST |
 |-------------------|-----------|
-| Endpoint       | `https://{{host}}/api/v1/hooks/{{botId}}` |
+| Endpoint       | `https://{{host}}/agentassist/api/v1/hooks/{{botId}}` |
 | Content Type   | `application/json` |
 | Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
 
