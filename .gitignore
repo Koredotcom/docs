@@ -7,3 +7,4 @@ _pdf
 vendor/
 .bundle/
 .cspell.json
+.vscode/settings.json
