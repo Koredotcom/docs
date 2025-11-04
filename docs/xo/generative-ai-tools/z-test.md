@@ -1,6 +1,6 @@
 
 
-# LLM Integration
+# LLM Integration (DRAFT)
 
 
 ## Overview
@@ -22,13 +22,6 @@ The Platform now enables seamless configuration of custom and pre-built LLMs, in
 
 
 
-!!! note
-
-    * Runtime features can use content and environment variables.
-    * Designtime features can use content, context, and environment variables.
-
-
-
 
 **Key Advantages**
 
@@ -38,7 +31,15 @@ The Platform now enables seamless configuration of custom and pre-built LLMs, in
 
 **Rotate Your API Keys**: Regularly rotating API keys enhances security by limiting the risk associated with compromised keys. A well-defined rotation schedule ensures that even if a key is leaked, it becomes useless after a predetermined period.
 
-Ensure all necessary variables are set up before configuring the LLM. For more details, see [App Variables](../app-settings/variables/using-bot-variables.md).
+Ensure all necessary variables are set up before configuring the LLM. For more details, see [App Variables](../app-settings/variables/using-bot-variables.md)
+
+
+!!! note
+
+    * Runtime features can use content and environment variables.
+    * Designtime features can use content, context, and environment variables.
+
+
 
 The following table lists the fields you can configure as dynamic variables for each LLM provider.
 
@@ -98,7 +99,8 @@ The Platform enables you to integrate newly launched language models into the ou
 
 * **Immediate Access to New Models**: Quickly access and utilize newly launched language models without waiting for platform-specific prompt development.
 * **Custom Prompt Support**: Create custom prompts for new models, ensuring immediate usability while the platform gradually develops system prompts over time.
-* **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.
+* **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.  
+<img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
 ### Token Usage
 
@@ -170,6 +172,7 @@ The Platform now provides OpenAI as an out-of-the-box (OOB) integration. This in
 
 Steps to configure an OpenAI:
 
+(WIP - based on Azure OpenAI feedback)
 
 
 ###	Integrate Anthropic
@@ -178,8 +181,10 @@ The Platform now provides Anthropic as an out-of-the-box (OOB) integration. This
 
 Steps to configure an Anthropic:
 
+(WIP - based on Azure OpenAI feedback)
 
-###	Amazon Bedrock LLM Integration Framework
+
+###	Integrate Amazon Bedrock
 
 The Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the Platform. The users can create custom prompts for their specific use cases and use the connected models across GenAI features. While Amazon Bedrock is available as an OOB integration, the Platform doesn't provide any system prompts or templates. Users can only use the model with the help of custom prompts.
 
