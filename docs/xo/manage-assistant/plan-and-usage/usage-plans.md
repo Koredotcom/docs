@@ -10,7 +10,7 @@ Kore.ai XO Platform offers the following plans:
 * Advanced: Everything in Essential plus higher limits and more advanced features to help your AI Chatbot do more.
 * Enterprise: Everything in Advanced plus enterprise features, custom pricing, and highest limits designed for enterprise.
 
-For more information on plans, features, and pricing, visit our [Plan Comparison and Pricing](https://kore.ai/pricing) page.
+
 
 
 ## Billing Session
@@ -29,7 +29,7 @@ For more information on plans, features, and pricing, visit our [Plan Comparison
     * Named Seats: Each agent gets a dedicated seat. For example, if 100 agents work across 3 shifts, you will be billed for 100 seats.
     * Concurrent Seats: This is based on the maximum number of simultaneously logged-in agents. For example, if a maximum of 50 agents work per shift across 3 shifts (150 total agents), you will be billed only for 50 seats.  
 * Agent AI: It’s billed per the agent seats, similar to Contact Center AI as explained above.
-* Add-ons: They are billed separately from the plan. For details, see the Add-ons and Services section on the [pricing](https://kore.ai/pricing/) page. 
+* Add-ons: They are billed separately from the plan. 
 
 ## Navigating to Plan and Usage
 

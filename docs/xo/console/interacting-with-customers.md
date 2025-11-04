@@ -513,7 +513,7 @@ During a conversation, agents can click the **Emoji** icon to react to the conve
 
 ## Sending Attachments to Customers
 
-During a conversation, agents can click the **Attachments** icon to share attachments with customers.
+During a conversation, agents can click the **Attachments** icon to share attachments with customers. The attached files are stored in the Amazon S3 bucket.
 
 !!! Note
 
@@ -696,7 +696,7 @@ You can choose from a library of configured standard responses.
 3. Click the Standard Response from the list to use that response in the email.  
 <img src="../images/standard-response-filled.png" alt="Send Standard Response" title="Send Standard Response" style="border: 1px solid gray; zoom:70%;">
 
-    **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a ‘**View More**’ button is displayed.
+    **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a ‘**View More**’ button is displayed. Attachments received in emails are stored in the Amazon S3 bucket. 
 
     Click the **Attachment** icon to select and upload files.  
         <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:70%;">
