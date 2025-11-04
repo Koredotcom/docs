@@ -10,30 +10,30 @@ This update includes filler messages for improved voice experiences, BYOK encryp
 
 <font size="4">Multi-Agent Orchestration</font>
 
-**Enhanced Waiting Experience**
+**Waiting Experience**
 
-Agent Platform now introduces an improved waiting experience that uses configurable filler messages to keep users engaged during processing delays in voice interactions. These messages can be configured in two ways:
+Agent Platform now introduces a new feature that keeps users engaged during voice interactions when the AI Agent needs additional processing time, using configurable filler messages to update them on the current state.
+
+These messages can be configured in two ways:
 
 * Static messages: Pre-written responses for consistent communication.
 * Dynamic messages: AI-generated responses tailored to the conversation context.
 
+Customize timing, message frequency, and content to maintain a smooth conversational flow.
+
 <font size="4">AI Safety, Security, and Governance</font>
 
-**Bring Your Own Keys (BYOK) Encryption**
+**Bring Your Own Keys (BYOK) for Encryption**
 
-Agent Platform introduces Bring Your Own Keys (BYOK) functionality, enabling integration with key management systems. This enhancement gives enterprises complete control over their encryption keys and helps them to meet stringent compliance, security, and regulatory requirements. 
+Agent Platform introduces Bring Your Own Keys (BYOK) encryption, enabling enterprises to secure their data while retaining full control and management of their encryption keys. This feature seamlessly integrates with enterprise Key Management Systems, helping organizations meet stringent compliance, security, and regulatory requirements. 
 
-Currently, the platform supports integration with Azure Key Vault and AWS Key Management Service.
-
+The platform currently supports integration with Azure Key Vault and AWS Key Management Service.
 
 <font size="4">AI Engineering Tools</font>
 
 **AWS Bedrock Integration: Predefined API Mapping for Models**
 
 Users can now easily integrate with AWS Bedrock by selecting a provider schema — Anthropic (messages) or OpenAI (chat completion). The platform automatically maps model requests and responses to the chosen format, simplifying configuration and ensuring API compatibility.
-
-
-
 
 <hr>
 
