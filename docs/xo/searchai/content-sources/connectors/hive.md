@@ -68,7 +68,7 @@ Search AI supports the ingestion of Actions from designated projects within your
 To start content ingestion,
 
 1. Navigate to the **Configuration** tab of the connector and select the **Sync Specific Content**. 
-1. Click **configure**, and then select the projects to ingest actions from. Currently, only actions within a project are ingested. Actions from subprojects are not ingested.
+1. Click **configure**, and then select the projects to ingest actions from. Currently, only actions within a project are ingested. Actions from sub-projects aren't ingested.
 1. To ingest content from both a project and its sub-projects, select all relevant projects within the hierarchy.
 1. Click **Save**. 
 1. Click **Sync Now** to start the ingestion process immediately. Alternatively, schedule sync at regular intervals using the scheduler.

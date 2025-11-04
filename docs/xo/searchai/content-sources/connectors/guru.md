@@ -62,7 +62,7 @@ Go to the Connectors home page in Search AI. Select Guru Connector. Provide the 
 
 Upon successful synchronization, the connector ingests the **Cards** from all the spaces in the workspace. 
 
-For each card, it ingests the card's content along with its metadata like creation date, updation date, URL, comments, project to which it belongs, workspace to which it belongs, etc. 
+For each card, it ingests the card's content along with its metadata like creation date, update date, URL, comments, project to which it belongs, workspace to which it belongs, etc. 
 
 
 ## RACL Support

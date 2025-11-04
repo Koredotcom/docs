@@ -8,7 +8,7 @@ repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
-  favicon: images/kore_favicon.svg
+  favicon: images/Kore_logo_new.svg
   name: material
   custom_dir: overrides
   features:
@@ -608,6 +608,7 @@ nav:
       - Dialog Tab: agentai/integration/AgentAI-webSDK/dialog.md
       - Transcript Events: agentai/integration/AgentAI-webSDK/transcript-events.md
       - Search Tab: agentai/integration/AgentAI-webSDK/searchtab-events.md
+      - Agent Coaching Events: agentai/integration/AgentAI-webSDK/coaching-events.md
       - Playbooks Events: agentai/integration/AgentAI-webSDK/sdk-Playbooks.md
       - Internal Transfer: agentai/integration/AgentAI-webSDK/internal-transfer-process.md
       - Sentiment Chart: agentai/integration/AgentAI-webSDK/sentiment-charts.md
@@ -642,7 +643,6 @@ nav:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
       - DialogGPT FAQs: generative-ai-tools/dgpt-faq.md  
-      - Rollout Plan: generative-ai-tools/dgpt-upcoming-features.md
     - Safeguards:
       - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
@@ -815,7 +815,7 @@ nav:
       - Import & Export App: deploy/bot-management.md
     - Data:
       - About Data Tables and Views: administration/data/data-tables-and-views.md
-      - Guideines: administration/data/using-data-table.md
+      - Guidelines: administration/data/using-data-table.md
       - Data Table: administration/data/data-table.md
       - Table view: administration/data/table-views.md
       - App Definition: administration/data/app-definition.md
