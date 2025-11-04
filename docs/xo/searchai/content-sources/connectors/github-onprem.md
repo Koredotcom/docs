@@ -56,7 +56,7 @@ Search AI supports two types of authentication for communication with GitHub.
 
 To use **a Personal Access Token** for authentication, go to the [Developer Settings](https://github.com/settings/tokens) in your GitHub account and generate a token. 
 
-To use **OAuth authentication**, r[egister a new OAuth application](https://github.com/settings/developers). Provide the basic details of the app. Use one of the following as the callback URLs, depending on your region or deployment. 
+To use **OAuth authentication**, [register a new OAuth application](https://github.com/settings/developers). Provide the basic details of the app. Use one of the following as the callback URLs, depending on your region or deployment.
 
 
 

@@ -85,10 +85,10 @@ A **Search AI node** can be placed in the automation workflows when there is a n
 
     print(JSON.stringify(reshaped));
     ```
-* **Return Qualified Chunks**: This option allows the user to receive only the chunks of data that meet the specified criteria. 
-* In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the app has the variable namespace enabled. You can go with the task-level settings or customize them for this node. For more information, refer to [Managing Namespaces](../../../../app-settings/managing-namespace.md)
- 
 
+* **Return Qualified Chunks**: This option allows the user to receive only the chunks of data that meet the specified criteria.  
+* In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the app has the variable namespace enabled. You can go with the task-level settings or customize them for this node. For more information, refer to [Managing Namespaces](../../../../app-settings/managing-namespace.md).
+ 
 ### Instance Properties
 
 !!! Note
