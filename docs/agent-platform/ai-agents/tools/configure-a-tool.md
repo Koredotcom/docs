@@ -1,4 +1,4 @@
-# Configure a Tool
+# Manage Your Tool
 
 You can modify your tool's general details, such as its name and description, asynchronous configuration, and environment variables. You can also undeploy, and delete the tool if it's not in use.
 

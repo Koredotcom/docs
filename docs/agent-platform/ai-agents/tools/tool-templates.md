@@ -76,7 +76,7 @@ To access a tool template, follow the steps below:
 
 2. Click **Tools** on the top navigation bar to access the **Tools** dashboard.
 3. If you are adding your first tool, click **Tool templates**.
-<img src="../images/first-tool-teplate.png" alt="first tool" title="first tool" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/first-tool-template.png" alt="first tool" title="first tool" style="border: 1px solid gray; zoom:60%;">
 
       Otherwise, click either the **All Tools** or **My Tools** tab. Then, click **Tool Templates** to access the Tools library/Marketplace.
 
