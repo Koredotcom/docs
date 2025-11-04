@@ -18,7 +18,7 @@ Create a custom prompt or use a Platform provided prompt template, apply the mod
 
 ### Dynamic Variables
 
-The Platform now enables seamless configuration of custom and pre-built LLMs, including newly launched ones, by allowing you to use content, context, and environment variables, including secure ones. Secure Variables, particularly for environment settings, function just as smoothly as the current system ensures.
+The Platform now enables seamless configuration of custom and pre-built LLMs, including newly launched ones, by allowing you to use content, context, and environment variables, including secure ones. Secure Variables, particularly for environment settings, function as smoothly as the current system ensures.
 
 
 
@@ -54,7 +54,7 @@ The following table lists the fields you can configure as dynamic variables for 
 === "Pre-built LLM"
 
 
-    In case of Azure OpenAI, you enter the variable for API Key, User Sub Doman, and Deployment ID.
+    In case of Azure OpenAI, you enter the variable for API Key, User Sub Domain, and Deployment ID.
     <img src="../images/azurellmdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
     In the next step, enter the sample values in the Test Connection pop-up. You can select the checkbox to save these values for future use.  
@@ -144,7 +144,7 @@ You can replace static authorization values with dynamic variables to keep crede
 
 ###	Integrate Azure OpenAI
 
-The Platform now provides Azure OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access Azure OpenAI models directly from the Platform. You can authorize all models using dynamic variablees and integrate newly launched language models into the OOB integration. For newly launched models, the Platform does not provide system prompts or templates, so you must use custom prompts.
+The Platform now provides Azure OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access Azure OpenAI models directly from the Platform. You can authorize all models using dynamic variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform does not provide system prompts or templates, so you must use custom prompts.
 
 Steps to configure an Azure OpenAI:
 
@@ -387,7 +387,7 @@ Steps to enable Kore.ai XO GPT Models.
 ## Managing LLM Integrations (Reset or Delete)
 
 
-If not using a configured LLM, you can reset/delete the LLM-specific integration using the **Reset Configuration/Delete** option. You can reset the OpanAI, Azure OpenAI, Anthropic, and Kore.ai XO GPT integration while you can delete the custom integrations.
+If not using a configured LLM, you can reset/delete the LLM-specific integration using the **Reset Configuration/Delete** option. You can reset the OpenAI, Azure OpenAI, Anthropic, and Kore.ai XO GPT integration while you can delete the custom integrations.
 
 When you reset/delete the integration, the system does the following:
 
@@ -405,7 +405,7 @@ When you reset/delete the integration, the system does the following:
 Follow these steps:
 
 1. Go to **Generative AI Tools** > **Models Library**.
-2. Click three dots (more icons) for the LLM Integration and then click the **Reset Configuration/Delete** you wusing-session-and-context-variables/ant to reset/delete.  
+2. Click three dots (more icons) for the LLM Integration and then click the **Reset Configuration/Delete** you using-session-and-context-variables/ant to reset/delete.  
 3. Click **Reset/Delete** in the confirmation dialog.  
 4. The success message is displayed.
 
