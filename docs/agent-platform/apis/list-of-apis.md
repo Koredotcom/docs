@@ -4,7 +4,7 @@
 
 The following APIs let users interact with agents and manage sessions.
 
-| Col1   | Col2     |
+| Use cases   | APIs     |
 |--------|----------|
 |  Create, retrieve, or end a session with an agent to maintain conversation context      |     [Sessions API](agentic-apps/sessions.md)     |
 |  User input to an agent within a session and receives a response      |  [Runs API](agentic-apps/execute.md) |
