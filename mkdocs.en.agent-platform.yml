@@ -318,17 +318,15 @@ nav:
     - Security & Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
       - Authorization Profile: settings/security-and-control/authorization-profile.md
+      - Key Management: settings/security-and-control/encryption-key-mgmt.md
       - API Scopes: settings/security-and-control/api-scopes.md
     - Billing:
       - Billing and Usage: settings/billing/billing-and-usage.md
       - Managing Usage Limits: settings/billing/managing-usage-limits.md
     - Data: 
       - Manage Data: settings/data/manage-datasets.md
-  - APIs: 
-    - Agentic Apps:
+  - APIs:
       - About Agentic App APIs: apis/agentic-apps/overview.md
-      - API List: apis/agentic-apps/overview/#api-list
-    - Tools:
       - About Tools APIs: apis/overview.md
-      - API List: apis/overview/#api-list
+      - APIs List: apis/list-of-apis.md
   - Marketplace: ai-agents/agentic-apps/marketplace.md
