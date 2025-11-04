@@ -21,6 +21,10 @@ These messages can be configured in two ways:
 
 Customize timing, message frequency, and content to maintain a smooth conversational flow.
 
+**Note**: This feature is currently in preview and can be enabled upon request.
+
+[Learn more :octicons-arrow-right-24:](../settings/security-and-control/encryption-key-mgmt.md#bring-your-own-key)
+
 <font size="4">AI Safety, Security, and Governance</font>
 
 **Bring Your Own Keys (BYOK) for Encryption**
@@ -29,6 +33,8 @@ Agent Platform introduces Bring Your Own Keys (BYOK) encryption, enabling enterp
 
 The platform currently supports integration with Azure Key Vault and AWS Key Management Service.
 
+[Learn more :octicons-arrow-right-24:](../settings/security-and-control/encryption-key-mgmt.md#bring-your-own-key)
+
 <font size="4">AI Engineering Tools</font>
 
 **AWS Bedrock Integration: Predefined API Mapping for Models**
@@ -36,7 +42,6 @@ The platform currently supports integration with Azure Key Vault and AWS Key Man
 Users can now easily integrate with AWS Bedrock by selecting a provider schema — Anthropic (messages) or OpenAI (chat completion). The platform automatically maps model requests and responses to the chosen format, simplifying configuration and ensuring API compatibility.
 
 <hr>
-
 
 ## v1.2.0 September 27, 2025
 
