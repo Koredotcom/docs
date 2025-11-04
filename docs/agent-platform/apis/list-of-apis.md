@@ -13,11 +13,15 @@ The following APIs let users interact with agents and manage sessions.
 
 ## API for File Management
 
-To upload a small or large public file in the [supported formats](apis-list/upload-file-api.md), use [File Upload API](apis-list/upload-file-api.md).
+| Use cases   | APIs     |
+|--------|----------|
+| Upload a small or large public file in the [supported formats](apis-list/upload-file-api.md). | [File Upload API](apis-list/upload-file-api.md) |
 
 ## API to View Process Status
 
-To check the status of an ongoing or completed job related to tools or models, use [Get Dock Status API](apis-list/get-dock-status.md).
+| Use cases   | APIs     |
+|--------|----------|
+| Check the status of an ongoing or completed job related to tools or models | [Get Dock Status API](apis-list/get-dock-status.md) |
 
 ## APIs to Manage Tools
 
