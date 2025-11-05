@@ -4,7 +4,7 @@ The By Value metric validates agent adherence to customer-specific information, 
 
 This combines advanced extraction logic with configurable business rules to verify the accuracy of financial and service-related information mentioned during agent-customer interactions. This is designed for scalable, AI-driven quality assurance, which captures real-world conversation nuances and logs results automatically, eliminating the need for manual review.
 
-## Why to Use
+## Why to Use This Metric
 
 * Automates manual QA by verifying agent-mentioned customer data without reviewing transcripts.
 
@@ -42,7 +42,7 @@ Make sure that the following GenAI features are enabled:
     * By Value Metric Extraction for Quality AI  
     <img src="../images/by-value-genAI features.png" alt="By Value Adherence" title="By Value Adherence" style="border: 1px solid gray; zoom:70%;">  
 
-## Configure by Value Metrics
+## Configure by Value Metric
 
 1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
@@ -349,7 +349,7 @@ Make sure that the following GenAI features are enabled:
 
             * **Not Applicable (NA)**: Indicates the metric is not accounted for if the agent’s expected value is not present and excluded for score calculation (trigger condition not met; evaluation skipped or interest rate metric is skipped, and customer has only asked about account balance).
 
-        #### Custom Script-based Adherence
+        #### Custom Script-Based Adherence
 
         * **Description**: Uses a rule-based script to enforce specific logic to check adherence. Suitable for more deterministic or compliance-critical scenarios.
 
@@ -367,7 +367,7 @@ Make sure that the following GenAI features are enabled:
 
 10. Click **Create** to save and apply the agent answer metric configuration.
 
-### Edit or Delete By Value Metrics
+### Edit or Delete By Value Metric
 
 Steps to edit or delete any existing **By Vlaue** evaluation metrics:
 
@@ -400,7 +400,7 @@ This section outlines the limitations and dependencies associated with modifying
 
 This section describes the warnings and prerequisites you must address before deleting a metric.
 
-**Steps to proceed**:
+**Steps to Proceed**:
 
 1. If the metric is used in any evaluation form, the system displays a warning message.
 
