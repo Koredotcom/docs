@@ -128,6 +128,7 @@ nav:
         - Run the Flow: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/run-the-flow.md
         - Create a Version of the Flow: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
+        - Start Node: workflows/workflow-builder/types-of-nodes/start-node.md
         - AI Node: 
           - About AI Nodes: workflows/workflow-builder/types-of-nodes/ai-node.md
           - Text to Text Node: workflows/workflow-builder/types-of-nodes/text-to-text-node.md
@@ -164,6 +165,8 @@ nav:
       - Configure a Workflow: workflows/configure-a-workflow.md
       - Export a Workflow: workflows/export-a-workflow.md
       - Import Workflow as a Version: workflows/import-a-workflow/#import-workflow-as-a-version 
+  - Inbox: 
+    - About Inbox: workflows/inbox.md
   - Models: 
     - About Models: models/overview.md 
     - Model Factory: 
