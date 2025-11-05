@@ -3,17 +3,39 @@
 # LLM Integration (DRAFT)
 
 
-## Overview
+The Platform enables you to configure and integrate with leading LLM providers, bring-your-own (BYO) models, and the Kore.ai XO GPT module to power your AI Agent's generative AI capabilities. This integration framework provides a comprehensive solution for enterprises to leverage language models while maintaining security, monitoring usage, and controlling costs.
 
-The Platform enables you to configure with the leading LLM providers, bring-your-own (BYO) model, and Kore.ai XO GPT module. You can apply dynamic variables for secure provider authorization and monitor token usage.
+## Key Capabilities
 
-### Models
+The LLM Integration framework supports multiple approaches to connect language models:
 
-To use LLM and Generative AI features, configure the integration with a pre-built LLM, a custom LLM, or the XO GPT Module. The Platform enables the immediate addition of new language models as system models for OpenAI, Azure OpenAI, and Anthropic without waiting for the platform to make the new models available.
- 
-### Prompts
+* **Pre-built Integrations**: Direct connections to Azure OpenAI, OpenAI, Anthropic, and Amazon Bedrock with out-of-the-box support.
+* **Custom LLM Integration**: A flexible framework to connect any externally hosted or enterprise-hosted language model.
+* **Kore.ai XO GPT**: Fine-tuned models optimized for enterprise conversational AI, including conversation summarization, query rephrasing, and dialog orchestration.
 
-Create a custom prompt or use a Platform provided prompt template, apply the model and prompt to the GenAI feature, and enable it. Create [ New Prompts](prompts-library.md) in the prompts library.
+## Core Components
+
+The integration system consists of three essential components that work together:
+
+* **Models**: Configure connections to pre-built LLMs, custom LLMs, or the XO GPT Module. The Platform supports immediate addition of newly launched language models from OpenAI, Azure OpenAI, and Anthropic without waiting for platform updates.
+
+* **Prompts**: Create custom streaming or non-streaming prompts or use Platform provided streaming or non-streaming prompt templates. Manage your prompts through the centralized Prompts Library. Refer [Prompts Library](prompts-library.md).
+
+* **GenAI Features**: The Generative AI features acceleraes an AI Agent development and enhance performance. Apply models and prompts to GenAI features to enable specific capabilities. Refer [Enable Feature GenAI Features](genai-features.md).
+
+
+
+## Security Flexibility
+
+The Platform provides robust security measures and flexible integration options:
+
+* **Dynamic Variables and Secure Authorization**: Utilize content, context, and environment variables, including secure ones, for seamless LLM configuration. This approach ensures API keys remain protected while enabling flexible authorization across different environments.
+
+* **Immediate Model Access**: Newly launched models from supported providers can be integrated immediately using custom prompts while system prompts are developed.
+
+* **Token Usage Monitoring**: Comprehensive visibility into token consumption across modules, models, and features with configurable usage limits and notifications.
+
+This integration framework enables enterprises to leverage the power of language models while maintaining control over security, costs, and performance across their conversational AI implementations.
 
 
 ### Dynamic Variables
@@ -129,7 +151,7 @@ To use LLM and Generative AI features, you must configure the integration with a
 
 Review the model and feature support matrix for the [GenAI Features](genai-features.md).
 
-### Authorization
+### Integration Authorization
 
 The Authorization step establishes a secure connection between the Platform and the selected LLM provider, such as Azure OpenAI, OpenAI, or Anthropic. During this step, you provide authentication details that allow the Platform to communicate with the provider’s APIs on your behalf.
 
@@ -144,7 +166,7 @@ The Authorization step establishes a secure connection between the Platform and 
 
 You can replace static authorization values with dynamic variables to keep credentials secure and reusable across environments. When you use dynamic variables, the Platform substitutes the actual values during runtime. This approach prevents exposure of sensitive information and simplifies updates when credentials change.
 
-###	Integrate Azure OpenAI
+###	Azure OpenAI Integration
 
 The Platform now provides Azure OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access Azure OpenAI models directly from the Platform. You can authorize all models using dynamic variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform does not provide system prompts or templates, so you must use custom prompts.
 
@@ -166,7 +188,7 @@ Steps to configure an Azure OpenAI:
 8. The confirmation pop-up is displayed. Click **Confirm & Save**.
 9. The configured model is listed in the Models Library. The next step is to enable[ GenAI Features](https://docs.kore.ai/xo/generative-ai-tools/genai-features/).
 
-###	Integrate OpenAI
+###	OpenAI Integration
 
 The Platform now provides OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access OpenAI models directly from the Platform. You can authorize all models using dynamic variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform does not provide system prompts or templates, so you must use custom prompts.
 
@@ -175,7 +197,7 @@ Steps to configure an OpenAI:
 (WIP - based on Azure OpenAI feedback)
 
 
-###	Integrate Anthropic
+###	Anthropic Integration
 
 The Platform now provides Anthropic as an out-of-the-box (OOB) integration. This integration enables users to access newly launched Anthropic models directly from the Platform. You can authorize models using dynamic variables. The Platform does not provide system prompts or templates for these models, so you must use custom prompts.
 
@@ -184,7 +206,7 @@ Steps to configure an Anthropic:
 (WIP - based on Azure OpenAI feedback)
 
 
-###	Integrate Amazon Bedrock
+###	Amazon Bedrock Integration
 
 The Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the Platform. The users can create custom prompts for their specific use cases and use the connected models across GenAI features. While Amazon Bedrock is available as an OOB integration, the Platform doesn't provide any system prompts or templates. Users can only use the model with the help of custom prompts.
 
@@ -318,7 +340,7 @@ Steps to integrate an Amazon Bedrock:
   
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
-###	Integrate Custom LLM Integration
+###	Integrate Custom LLM
 
 The Platform now enables enterprises to power up their AI Agent with any Large Language Model (LLM) of their preference. The bring-your-own (BYO) model framework supports integrations with externally hosted models by third parties as well as models hosted by the enterprises themselves. It allows the creation of custom prompts that are optimized for their specific purposes and models. This generic framework works seamlessly with the Auth Profiles module of the platform, enabling enterprises to use the authentication mechanism of their choice.
 
