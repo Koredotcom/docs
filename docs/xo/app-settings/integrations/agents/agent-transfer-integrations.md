@@ -22,8 +22,7 @@ Voice Gateway supports agent transfers using **SIP signaling methods** such as *
 * **External agents** – via phone number or SIP endpoint.  
 
 Voice Gateway also provides configuration options to manage:
-
-* Wait time before a transfer times out.  
+  
 * Fallback behavior when SIP REFER fails with specific error codes (4xx, 5xx, or 6xx).  
 * Handling call flow in **Experience Designer** when a transfer fails.  
 
