@@ -520,7 +520,6 @@ Count: Two
 
 **User interface (UI)** – The means by which the user and a computer system interact.
 
-**Universal bot** – A bot that has the power to communicate with other bots to complete tasks on its behalf.
 
 **Unstructured data** – Unstructured data and documents, in this instance, refers to sources that are typically text-heavy and free-flowing. Such documents or data can still contain dates, numbers, and facts, but they lack a pre-defined data model or structure and overall consistency. The XO Platform supports semantic search against unstructured data and the training of bots from unstructured documents.
 

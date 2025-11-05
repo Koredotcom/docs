@@ -43,7 +43,7 @@ Key Capabilities:
 * Management of common conversation intents such as pausing, repeating information, restarting conversations, and transferring to human agents.
 * Identifying the granular intents based on the knowledge graph. DialogGPT uses an LLM to orchestrate the conversation, ask clarifying questions, and determine the granular intent.
 * Out-of-the-box event handlers to fulfill the user’s request.
-* Identifying the child bot intents from Universal Bot without the need for Bot Scoping Training; applicable for Universal Bots.
+
 
 With DialogGPT, businesses can overcome the limitations of traditional models, ensuring their agents provide a more accurate, responsive, and efficient user experience, all while simplifying the development process.
 

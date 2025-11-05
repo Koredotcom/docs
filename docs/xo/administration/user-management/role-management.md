@@ -497,8 +497,7 @@ Following is the list of permissions that can be assigned to a Bot role:
 
 ### Built-in Bot Roles
 
-The following Bot roles are created by default. These roles are applicable for standard bots, sample, and smart bots. For universal bots, the tasks access control will be applied to the Linked Bots.
-
+The following Bot roles are created by default. These roles are applicable for standard bots, sample, and smart bots. 
 <table border="1">
   <tr>
    <td><strong>PERMISSION</strong>
