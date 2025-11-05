@@ -25,7 +25,7 @@ The integration system consists of three essential components that work together
 
 
 
-## Security Flexibility
+## Security and Flexibility
 
 The Platform provides robust security measures and flexible integration options:
 
@@ -63,9 +63,9 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
 
 
 
-The following table lists the fields you can configure as dynamic variables for each LLM provider.
+The following table lists the fields you can configure as variables for each LLM provider.
 
-| LLM Provider   | Fields Supported as Dynamic Variables        |
+| LLM Provider   | Fields Supported as Variables        |
 | ------------------ | -------------- |
 | Azure OpenAI   | API Key, Sub-Domain, Model Deployment IDs      |
 | OpenAI        | API Key             |
@@ -164,11 +164,11 @@ The Authorization step establishes a secure connection between the Platform and 
 |Custom LLM|Endpoint, <br>Authorization, <br>Headers|The Endpoint specifies the API URL for the LLM. <br>The Authorization field defines the authentication method or credentials. <br>The Headers field includes any additional key-value pairs required for the request.|
 
 
-You can replace static authorization values with dynamic variables to keep credentials secure and reusable across environments. When you use dynamic variables, the Platform substitutes the actual values during runtime. This approach prevents exposure of sensitive information and simplifies updates when credentials change.
+You can replace static authorization values with variables to keep credentials secure and reusable across environments. When you use variables, the Platform substitutes the actual values during runtime. This approach prevents exposure of sensitive information and simplifies updates when credentials change.
 
 ###	Azure OpenAI Integration
 
-The Platform now provides Azure OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access Azure OpenAI models directly from the Platform. You can authorize all models using dynamic variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform does not provide system prompts or templates, so you must use custom prompts.
+The Platform now provides Azure OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access Azure OpenAI models directly from the Platform. You can authorize all models using variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform doesn't provide system prompts or templates, so you must use custom prompts.
 
 Steps to configure an Azure OpenAI:
 
@@ -176,7 +176,7 @@ Steps to configure an Azure OpenAI:
 1. Go to **Generative AI Tools** > **Models Library**.
 2. Click **Configure Now** for Azure OpenAI and click **Next**.
 3. On the **Authorization** tab:
-    * Fill in the Authorization details.
+    * Fill in the [Authorization](#integration-authorization) details.
     * Toggle on the required **model** and enter the **Deployment ID**.
     * (Optional) In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, Model **Description**, and **Deployment ID**. Click **Add Model**. The current model is saved with a custom tag in the available models list. Toggle on the **model**. If you want to add more models, repeat the step. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled.
 4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
@@ -190,7 +190,7 @@ Steps to configure an Azure OpenAI:
 
 ###	OpenAI Integration
 
-The Platform now provides OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access OpenAI models directly from the Platform. You can authorize all models using dynamic variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform does not provide system prompts or templates, so you must use custom prompts.
+The Platform now provides OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access OpenAI models directly from the Platform. You can authorize all models using variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform doesn't provide system prompts or templates, so you must use custom prompts.
 
 Steps to configure an OpenAI:
 
@@ -199,7 +199,7 @@ Steps to configure an OpenAI:
 
 ###	Anthropic Integration
 
-The Platform now provides Anthropic as an out-of-the-box (OOB) integration. This integration enables users to access newly launched Anthropic models directly from the Platform. You can authorize models using dynamic variables. The Platform does not provide system prompts or templates for these models, so you must use custom prompts.
+The Platform now provides Anthropic as an out-of-the-box (OOB) integration. This integration enables users to access newly launched Anthropic models directly from the Platform. You can authorize models using variables. The Platform doesn't provide system prompts or templates for these models, so you must use custom prompts.
 
 Steps to configure an Anthropic:
 
@@ -329,16 +329,19 @@ Steps to integrate an Amazon Bedrock:
 5. On the request prompt pop-up, enter the test payload and click **Test** to check the connection. You can also save the test payload using the check box. 
     <img src="../images/abr-payload.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
 6. The Connection Status pop-up is displayed.    
-    * If a connection is successful, click **Next**. If the LLM connection is successful during the test call, it displays a confirmation message.  
+    * If a connection is successful, click **Next**. 
 
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.
+     * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
+
 6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Refer [Token Usage](#token-usage).
 
-7. Click **Save**.
+7. Click **Save**. The confirmation pop-up is displayed.
 
-8. The confirmation pop-up is displayed. Click **Confirm & Save**.  
+8. Click **Confirm & Save**.  
   
 8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
+
+
 
 ###	Integrate Custom LLM
 
