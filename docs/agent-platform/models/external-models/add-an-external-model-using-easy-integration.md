@@ -84,7 +84,7 @@ For example: "Content-Type": "application/json"
 
 In the **Model configurations** section, select one of the following options to define your model’s API behavior:
 
-**Option A: Default** 
+**Option A: Default**
 
 Use this option to manually configure all API components and control how requests and responses are structured
 
@@ -101,12 +101,7 @@ Use this option to manually configure all API components and control how request
 Use this option to automatically map known API formats for supported providers. This mode simplifies setup by applying pre-defined request/response mappings and enables advanced LLM features without manual configuration.
 
 * **Provider Templates** – Choose a schema such as OpenAI (Chat Completions) or Anthropic (Messages).
-* **Model Features** – Enable capabilities like:
-    * Structured response
-    * Tool calling
-    * Data generation
-    * Streaming
-    * Modalities support (Text-to-Text, Text-to-Image, etc.)
+* **Model Features** – Enable capabilities like Structured response, Tool calling, Data generation, Streaming, and Modalities support (Text-to-Text, Text-to-Image, etc.).
 
 Each option determines how your model communicates with the platform and how responses are parsed. For more details, see [**Default**](../external-models/add-an-external-model-using-api-integration.md#option-a-default) and [**Existing Provider Structures**](../external-models/add-an-external-model-using-api-integration.md#option-b-existing-model-provider-structures).
 
