@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+
 # Create Agentic App API
 
 Provides an endpoint to create a new Agentic App. 
@@ -13,8 +15,7 @@ Provides an endpoint to create a new Agentic App.
   <tr>
    <td>Endpoint
    </td>
-   <td>https://&lt;agent-platform-env>.&lt;domain>.com/public/api/v1/apps/createApp
-   </td>
+   <td>https://&lt;agent-platform-env>.&lt;domain>.ai/api/public/apps/createApp  </td>
   </tr>
   <tr>
    <td>Content-type 
@@ -47,7 +48,7 @@ Provides an endpoint to create a new Agentic App.
   <tr>
    <td>accountid
    </td>
-   <td>Accound Id to be used for app creation.
+   <td>Account Id to be used for app creation.
    </td>
    <td>Yes
    </td>
@@ -95,12 +96,12 @@ Provides an endpoint to create a new Agentic App.
   <tr>
    <td>appIcon
    </td>
-   <td>Details of the icon to be used for the app. Use the following fields to describe the app icon. If this field is not provided, a random icon is used for the app. 
+   <td>Details of the icon to be used for the app. Use the following fields to describe the app icon. If this field isn't provided, a random icon is used for the app. 
 <ul>
 
-<li>name (required, string): Identifier for the logo to be used as the app icon; allowed values are “logo1-logo10”.</li>
+<li>name (required, string): Identifier for the logo to be used as the app icon; allowed values are “logo1-logo10.”</li>
 
-<li>type(required, string): Must always be set to "logo".</li>
+<li>type(required, string): Must always be set to "logo."</li>
 
 <li>color(required, string): Hexadecimal color code for the icon. Example: #RRGGBB. </li>
 </ul>
@@ -126,7 +127,7 @@ Provides an endpoint to create a new Agentic App.
 
 
 ```curl
-curl --location 'https://&lt;agent-platform-env>.&lt;domain>.com/public/api/v1/apps/createApp' \ 
+curl --location 'https://&lt;agent-platform-env>.&lt;domain>.ai/api/public/apps/createApp' \ 
 --header 'Content-Type: application/json' \ 
 --header 'x-api-key: your-api-key' \ 
 </code>--header 'accountid: axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx45' \ 

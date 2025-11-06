@@ -307,8 +307,7 @@ For each status, you can configure the following:
 1. **The response time after which the status should trigger**: This can be set in either as a percent value of a total or as minutes and seconds.
     1. The statuses for which you can set a percent value are: _Due Reminder For Agent_, and _Idle Reminder For Customer._
     2. The statuses that do not require percentile or response time configuration are: _On Connect, On Interruption_, and _On Close_.  
-        <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">  
-        <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">  
+        <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">   
     The following applies to emails:
     3. The statuses for which you can set a response time (in hours) are _Due Reminder for Agent Inactivity_, and _Due Reminder for Auto Expiry_.
     4. The status for which there is no response time is _On Close_.
@@ -321,18 +320,14 @@ For each status, you can configure the following:
 2. **The messaging goes out to either the user or the agent**. Status
 Messages can be edited by clicking the Edit icon under the Message column.  
     <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
-    <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
 
     1. Each status lets you edit the message text, add variables and select the language.  
-        <img src="../images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
-    1. Each status lets you edit the message text, add variables and select the language.  
-        <img src="../images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/on-connect.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
 
-    2. **To add a variable**, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
-    2. **To add a variable**, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
-    For example: `{{agentFirstName}}` becomes Christine Mark.  
+    2. To add a variable, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
+    For example: `{{agentFirstName}}` becomes John.
         <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
-        <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
+    
 See the tables in [Conversation Statuses by Channel (Live Chat, Messaging, and Voice)](#conversation-statuses-by-channel-live-chat-messaging-and-voice) and [Conversation Statuses by Channel (Email)](#conversation-statuses-by-channel-email) for details on available variables.
 
 Once you configure your Conversation Statuses and Messaging, click **Save** at the bottom right of the Agent Settings screen.

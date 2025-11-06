@@ -88,12 +88,12 @@ This decoupling of the MCP server from the client allows for greater flexibility
 8. The LLM generates a final natural language response.
  *"The weather in Dubai today is partly cloudy with a temperature of 36°C and light winds from the northwest."*
 
-[Learn More.](https://docs.anthropic.com/en/docs/agents-and-tools/mcp)
+[Learn More.](https://docs.anthropic.com/en/docs/agents-and-tools/mcp){:target="_blank"} 
 
 Agentic Apps enable seamless integration with the MCP server, allowing the apps to use the tools hosted by the MCP server. 
 
 **Key Points:**
 
 * Currently, only **tool discovery and invocation** from MCP servers are supported. 
-* Currently, dynamic updates from the MCP server, such as changes to tool definitions or newly added tools, are not automatically reflected in the Agent Platform. Developers must manually reconfigure the MCP server and reselect the tools to apply updates. 
+* Currently, dynamic updates from the MCP server, such as changes to tool definitions or newly added tools, aren't automatically reflected in the Agent Platform. Developers must manually reconfigure the MCP server and reselect the tools to apply updates. 
 * Agent Platform supports both **SSE-based and HTTP-based MCP server endpoint configurations**.

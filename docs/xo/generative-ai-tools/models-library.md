@@ -264,9 +264,10 @@ Steps to integrate an Amazon Bedrock:
 5. On the request prompt pop-up, enter the test payload and click **Test** to check the connection. You can also save the test payload using the check box. 
     <img src="../images/abr-payload.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
 6. The Connection Status pop-up is displayed.    
-    * If a connection is successful, click **Next**. If the LLM connection is successful during the test call, it displays a confirmation message.  
+    * If a connection is successful, click **Next**. 
 
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.
+     * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
+
 6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options. Ensure to map the Request and Response Token Key in the custom prompt. 
     * Maximum Tokens: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
     * Duration: Set duration in days after which the token limit resets automatically. You can set a maximum duration of 90 days.

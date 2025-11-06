@@ -2,7 +2,7 @@
 
 The By Dialog Task metric helps to determine how consistently agents follow predefined scripts, workflows, or behavioral steps during customer interactions. These playbooks are designed to enforce best practices, ensure compliance, and drive high-quality outcomes in customer service and support environments. 
 
-## Why Use Dialog Task Metrics
+## Why Use Dialog Task Metric
 
 By configuring and monitoring **Playbook Adherence** metrics, you can:
 
@@ -64,7 +64,7 @@ Before configuring or using Dialog Task metrics, ensure the following:
 
     * For time-bound analysis, define clear boundaries in seconds (**Voice**) or message counts (**Chat**).
 
-## Configure By Dialog Task
+## Configure By Dialog Task Metric
 
 This configures a metric based on adherence to the execution of dialog tasks.
 
@@ -92,9 +92,9 @@ Configure the following settings:
 
 5. Click **Create** to save the new metric configuration.
 
-## Managing By Dialog Task Metrics
+## Managing By Dialog Task Metric
 
-### Edit or Delete By Dialog Task Metrics
+### Edit or Delete By Dialog Task Metric
 
 Steps to edit any existing **By Dialog Task** metrics:
 

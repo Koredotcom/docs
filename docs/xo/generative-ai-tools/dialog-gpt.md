@@ -24,7 +24,7 @@ DialogGPT is an intelligent, agentic orchestration engine that powers natural co
 ## How DialogGPT Works
 
 DialogGPT is an agentic orchestrator, managing the entire conversation flow from intent identification to fulfillment. It enhances intent detection and conversation handling with zero training.  
-<img src="../images/gpt10new1.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/dialog-gpt-process.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
 
 
 DialogGPT's functionality is built on a three-step process:
