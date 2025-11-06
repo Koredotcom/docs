@@ -50,6 +50,7 @@ plugins:
         'getting-started/virtual-assistants-overview.md': 'getting-started/building-a-virtual-assistant.md'
         'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
         'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
+        'generative-ai-tools/dgpt-upcoming-features.md': 'generative-ai-tools/dialog-gpt.md'
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
         'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
