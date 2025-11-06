@@ -1,12 +1,9 @@
 
 # About LLM Integration (DRAFT)
 
-
 The Platform enables you to configure and integrate with leading LLM providers, bring-your-own (BYO) models, and the Kore.ai XO GPT module to power your AI Agent's generative AI capabilities. This integration framework provides a comprehensive solution for enterprises to leverage language models while maintaining security, monitoring usage, and controlling costs.
 
-## Key Capabilities
-
-### Integration Options
+## Integration Options
 
 The LLM Integration framework supports multiple approaches to connect language models:
 
@@ -16,7 +13,7 @@ The LLM Integration framework supports multiple approaches to connect language m
 
 <img src="../images/models-library-home.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
-### Authorization
+## Authorization
 
 
 The Authorization step establishes a secure connection between the Platform and the selected LLM provider, such as Azure OpenAI, OpenAI, or Anthropic. During this step, you provide authentication details that allow the Platform to communicate with the provider’s APIs on your behalf.
@@ -32,12 +29,12 @@ The Authorization step establishes a secure connection between the Platform and 
 
 You can replace static authorization values with variables to keep credentials secure and reusable across environments. When you use variables, the Platform substitutes the actual values during runtime. This approach prevents exposure of sensitive information and simplifies updates when credentials change.
 
-#### Dynamic Variables
+### Dynamic Variables
 
 The Platform now enables seamless configuration of custom and pre-built LLMs, including newly launched ones, by allowing you to use content, context, and environment variables, including secure ones. Secure Variables, particularly for environment settings, function as smoothly as the current system ensures.
 
 
-**Key Advantages**
+Key Advantages
 
 **Avoid Misuse of API Keys**: The system minimizes the risk of unauthorized access by utilizing secure environment variables for API keys. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
 
@@ -48,7 +45,7 @@ The Platform now enables seamless configuration of custom and pre-built LLMs, in
 Ensure all necessary variables are set up before configuring the LLM. For more details, see [App Variables](../app-settings/variables/using-bot-variables.md)
 
 
-!!! note
+!!! note "Variable Access by Feature Type"
 
     * Runtime features can use content and environment variables.
     * Designtime features can use content, context, and environment variables.
@@ -102,8 +99,7 @@ You can use the variables to authorize the integration, as shown in the followin
 <hr>
 
 
-
-### Manage Usage Limit
+## Manage Usage Limit
 
 The LLM Usage gives you comprehensive visibility into LLM usage consumption and performance across AI for Service. You can track usage consumption, request volume, and median latency by module, model, and feature, with detailed breakdowns available in the Performance Analytics section. These insights help organizations monitor feature adoption, manage infrastructure costs, optimize AI capabilities, and make informed scaling decisions.
 
@@ -117,13 +113,22 @@ Usage limits can be set during initial LLM integration or anytime after it's com
 To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options.
 
     
-* Maximum Tokens: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
-* Duration: Set duration in days after which the token limit resets automatically. You can set a maximum duration of 90 days.
-* Schedule Start Date: Set the date today onwards for the usage cycle.
-* Usage Notification: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
+* **Maximum Tokens**: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
+* **Duration**: Set duration in days after which the token limit resets automatically. You can set a maximum duration of 90 days.
+* **Schedule Start Date**: Set the date today onwards for the usage cycle.
+* **Usage Notification**: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
   
-  * Send Notification at: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
-  * Send to Users: Enter the email addresses of users who should receive the usage notification email.  
+  * **Send Notification at**: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
+  * **Send to Users**: Enter the email addresses of users who should receive the usage notification email.  
   <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
 
 
+## Get Started 
+
+Get your LLM integration operational in five steps - from provider selection to enabling GenAI features for your AI Agent:
+
+1. Choose your LLM provider
+2. Configure authorization
+3. Integrate models
+4. Create prompts
+5. Enable GenAI features
