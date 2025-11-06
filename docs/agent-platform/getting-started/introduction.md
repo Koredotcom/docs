@@ -20,7 +20,7 @@ The Platform's key components provide comprehensive capabilities that empower or
 
 ### Multi-Agent Orchestration
 
-It enables users to define agent behaviors, skills, and integrations through low-code, declarative programming. This enables both technical and non-technical users to easily create and manage intelligent agents. It gives agents advanced reasoning and planning skills, enabling them to analyze their environment, act effectively, and learn from the outcomes to operate autonomously and adaptably. 
+It enables users to define agent behaviors, skills, and integrations through low-code, declarative programming. This enables both technical and non-technical users to easily create and manage intelligent agents. It gives agents advanced reasoning and planning skills, enabling them to analyze their environment, act effectively, and learn from the outcomes to operate autonomously and flexibly. 
 
 It also provides real-time streaming of agent interactions across voice and chat channels, enabling seamless user experiences and dynamic agent-based applications.
 

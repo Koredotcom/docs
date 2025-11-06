@@ -150,7 +150,7 @@ curl --location ' https://{host}/api/public/models/cm-6xxxxxxxxxxxxxxxxxx9/deplo
       "optimizationType": "",
       "quantizationType": ""
     },
-    "isDeployedPreviouly": true
+    "isDeployedPreviously": true
   }'
 ```
 

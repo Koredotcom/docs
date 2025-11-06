@@ -34,8 +34,8 @@ Configuration options allow you to specify input prompts and control output form
 
     **OpenAI Models**
 
-    * Dall-e-2 
-    * Dall-e-3
+    * DALL·E 2 
+    * DALL·E 3
 
 ## Common Use Cases
 
