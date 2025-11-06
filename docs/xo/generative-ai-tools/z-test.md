@@ -36,11 +36,11 @@ The Platform now enables seamless configuration of custom and pre-built LLMs, in
 
 Key Advantages
 
-**Avoid Misuse of API Keys**: The system minimizes the risk of unauthorized access by utilizing secure environment variables for API keys. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
+* **Avoid Misuse of API Keys**: The system minimizes the risk of unauthorized access by utilizing secure environment variables for API keys. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
 
-**Track Team-Wise Consumption**: Implementing tracking mechanisms for API key usage allows teams to monitor their consumption, enabling better resource allocation and identifying potential inefficiencies.
+* **Track Team-Wise Consumption**: Implementing tracking mechanisms for API key usage allows teams to monitor their consumption, enabling better resource allocation and identifying potential inefficiencies.
 
-**Rotate Your API Keys**: Regularly rotating API keys enhances security by limiting the risk associated with compromised keys. A well-defined rotation schedule ensures that even if a key is leaked, it becomes useless after a predetermined period.
+* **Rotate Your API Keys**: Regularly rotating API keys enhances security by limiting the risk associated with compromised keys. A well-defined rotation schedule ensures that even if a key is leaked, it becomes useless after a predetermined period.
 
 Ensure all necessary variables are set up before configuring the LLM. For more details, see [App Variables](../app-settings/variables/using-bot-variables.md)
 
@@ -128,7 +128,6 @@ To track token consumption, enable the Token Usage Limit toggle and configure th
 Get your LLM integration operational in five steps - from provider selection to enabling GenAI features for your AI Agent:
 
 1. Choose your LLM provider
-2. Configure authorization
-3. Integrate models
-4. Create prompts
-5. Enable GenAI features
+2. Configure authorization and integrate models
+3. Create prompts
+4. Enable GenAI features
