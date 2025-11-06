@@ -95,7 +95,7 @@ This section lets you set your preferences based on the channels–Chat, Voice, 
         !!! note
             The **Search AI** and **Agentic App** fields are disabled until they are configured. A warning message prompts you to configure them before use.  
 
-12. Click **Save** to save your settings.
+12. Click **Save** to save your settings.  
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent AI General Settings
