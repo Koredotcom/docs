@@ -4,6 +4,8 @@ To use LLM and Generative AI features, you must configure the integration with a
 
 Review the model and feature support matrix for the [GenAI Features](genai-features.md).
 
+<img src="../images/models-library-home.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
+
 ## Prebuilt Model Integrations
 
 The Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompt templates and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the Platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
@@ -20,20 +22,19 @@ The Platform now provides Azure OpenAI as an out-of-the-box (OOB) integration. T
 Steps to configure an Azure OpenAI:
 
 
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Click **Configure Now** for Azure OpenAI and click **Next**.
-3. On the **Authorization** tab:
-    * Fill in the Authorization details.
-    * Toggle on the required **model** and enter the **Deployment ID**.
-    * (Optional) In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, Model **Description**, and **Deployment ID**. Click **Add Model**. The current model is saved with a custom tag in the available models list. Toggle on the **model**. If you want to add more models, repeat the step. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled.
+1. Go to **Generative AI Tools** > **Models Library** > **Configure Now** for Azure OpenAI, then click **Next**.
+3. Complete the [Authorization](models-library.md#authorization).
+
+4. In the model section, toggle on the required **model** and enter the **Deployment ID**.
+
+5. (Optional) click **+Add** to configure [Provider's New LLM](#providers-new-llm).
 4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
 5. The Connection Status pop-up is displayed.
-    * If a connection is successful, click **NEXT**.
+    * If a connection is successful, click **Next**.
     * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
-6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings.
-7. Click **Save**.
-8. The confirmation pop-up is displayed. Click **Confirm & Save**.
-9. The configured model is listed in the Models Library. The next step is to enable[ GenAI Features](genai-features.md).
+6. (Optional) enable Token Usage Limit toggle to track [LLM Usage Limit](models-library.md#manage-usage-limit). You can set the limit anytime after it's completion from more options.
+7. Click **Save**. The confirmation pop-up is displayed.
+8. Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
 ###	OpenAI Integration
 
@@ -41,7 +42,17 @@ The Platform now provides OpenAI as an out-of-the-box (OOB) integration. This in
 
 Steps to configure an OpenAI:
 
-(WIP - based on Azure OpenAI feedback)
+1. Go to **Generative AI Tools** > **Models Library** > **Configure Now** for OpenAI, then click **Next**.
+2. Complete the [Authorization](models-library.md#authorization).
+
+3. (Optional) in the model section, click **+Add** to configure [Provider's New LLM](#providers-new-llm).
+4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
+5. The Connection Status pop-up is displayed.
+    * If a connection is successful, click **Next**.
+    * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
+6. (Optional) enable Token Usage Limit toggle to track [LLM Usage Limit](models-library.md#manage-usage-limit). You can set the limit later from the More options menu.
+7. Click **Save**. The confirmation pop-up is displayed.
+8. Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
 
 ###	Anthropic Integration
@@ -50,7 +61,17 @@ The Platform now provides Anthropic as an out-of-the-box (OOB) integration. This
 
 Steps to configure an Anthropic:
 
-(WIP - based on Azure OpenAI feedback)
+1. Go to **Generative AI Tools** > **Models Library** > **Configure Now** for OpenAI, then click **Next**.
+2. Complete the [Authorization](models-library.md#authorization).
+
+3. In the model section, click **+Add** to configure [Provider's New LLM](#providers-new-llm).
+4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
+5. The Connection Status pop-up is displayed.
+    * If a connection is successful, click **Next**.
+    * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
+6. (Optional) enable Token Usage Limit toggle to track [LLM Usage Limit](models-library.md#manage-usage-limit). You can set the limit anytime after it's completion from more options.
+7. Click **Save**. The confirmation pop-up is displayed.
+8. Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
 
 ###	Amazon Bedrock Integration
@@ -158,8 +179,7 @@ To complete the registration:
 Steps to integrate an Amazon Bedrock:
 
 
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Click **Amazon Bedrock**.
+1. Go to **Generative AI Tools** > **Models Library** > **Configure Now** for Amazon Bedrock.
 3. On the **Authorization** tab, provide the following details.
     * **Provider Name**: Enter a name to identify the provider or group of language models you want to connect.
     * **Model Name**: Give a unique name to the language model you’re connecting with.
@@ -175,18 +195,14 @@ Steps to integrate an Amazon Bedrock:
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 5. On the request prompt pop-up, enter the test payload and click **Test** to check the connection. You can also save the test payload using the check box. 
     <img src="../images/abr-payload.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
-6. The Connection Status pop-up is displayed.    
-    * If a connection is successful, click **Next**. 
+6. The Connection Status pop-up is displayed.
+    * If a connection is successful, click **Next**.
+    * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
 
-     * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
-
-6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Refer [Token Usage](#token-usage).
+6. (Optional) enable Token Usage Limit toggle to track [LLM Usage Limit](models-library.md#manage-usage-limit). You can set the limit anytime after it's completion from more options.
 
 7. Click **Save**. The confirmation pop-up is displayed.
-
-8. Click **Confirm & Save**.  
-  
-8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
+8. Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
 
 ### Provider's New LLM
@@ -201,6 +217,17 @@ The Platform enables you to integrate newly launched language models into the ou
 * **Custom Prompt Support**: Create custom prompts for new models, ensuring immediate usability while the platform gradually develops system prompts over time.
 * **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.  
 <img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
+**How to Add New LLM**
+
+You can add new LLM during initial LLM integration or anytime after it's completion using more option.
+
+For example, Azure OpenAI. On the authorization tab, go to the **Models** section and click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description**, **Deployment ID**, then click **Next**. If you want to add more models, repeat the step. 
+
+* Model ID is assigned by the LLM provider.
+* Model Display Name is user-defined and used across the platform after integration is enabled.<img src="./images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
+
 
 ## Custom LLM Integration 
 
@@ -219,36 +246,29 @@ Steps to Integrate a Custom LLM:
 
 
 
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Click **Custom LLM**.
+1. Go to **Generative AI Tools** > **Models Library** > **Configure Now** for Custom LLM.
 3. On the **Configuration** tab, enter the details like **Integration Name**, **Model Name**, **Endpoint**, and **Headers**.  
-<img src="../images/customint.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/customllm-configuration.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
 
-4. On the **Auth** tab, select an existing authorization profile from the drop-down or create a new profile to use for this request. For more information, see the[ App Authorization Overview](../app-settings/dev-tools/bot-authorization/bot-authentication.md) article. 
-    ![alt_text](images/llm-integration(15).png  )
+4. On the **Auth** tab, select an existing authorization profile from the drop-down or create a new profile to use for this request. For more information, see the[ App Authorization Overview](../app-settings/dev-tools/bot-authorization/bot-authentication.md) article.  
 
     !!! note
 
         OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration.  
 
         
-
 5. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 6. On the request prompt pop-up, enter the test payload and click **Next** to check the connection. You can also save the test payload using the check box.  
 <img src="../images/custompayload.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
 7. The Connection Status pop-up is displayed.
-    * If a connection is successful, click **Save**.  
+    * If a connection is successful, click **Next**.
+    * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.  
 
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details. Click **Next** to save the configuration with an unsuccessful connection.  
+6. (Optional) enable Token Usage Limit toggle to track [LLM Usage Limit](models-library.md#manage-usage-limit). You can set the limit anytime after it's completion from more options.
 
-
-
-6. (Optional) To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Refer [Token Usage](#token-usage).
-
-7. Click **Save**.
-8. The confirmation pop-up is displayed. Click **Confirm & Save**.
-8. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
+7. Click **Save**. The confirmation pop-up is displayed.
+8. Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
 
 
