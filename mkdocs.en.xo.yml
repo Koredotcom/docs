@@ -601,20 +601,20 @@ nav:
       - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
       - Amazon Connect CCP Integration with Agent AI Voice: agentai/integration/amazon-connect-ccp-agentai-voice/amazon-connect-ccp-integration-with-agentai-voice.md 
     - Agent AI Web SDK:
-      - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
-      - SDK Fields and Details: agentai/integration/AgentAI-webSDK/sdk-fields-and-details.md
-      - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
-      - View Customized Events: agentai/integration/AgentAI-webSDK/view-customized-events.md
-      - My Bot Tab: agentai/integration/AgentAI-webSDK/mybot-tabs.md
-      - Dialog Tab: agentai/integration/AgentAI-webSDK/dialog.md
-      - Transcript Events: agentai/integration/AgentAI-webSDK/transcript-events.md
-      - Search Tab: agentai/integration/AgentAI-webSDK/searchtab-events.md
-      - Agent Coaching Events: agentai/integration/AgentAI-webSDK/coaching-events.md
-      - Playbooks Events: agentai/integration/AgentAI-webSDK/sdk-Playbooks.md
-      - Internal Transfer: agentai/integration/AgentAI-webSDK/internal-transfer-process.md
-      - Sentiment Chart: agentai/integration/AgentAI-webSDK/sentiment-charts.md
-      - Other Events: agentai/integration/AgentAI-webSDK/other-events.md
-      - Error Codes: agentai/integration/AgentAI-webSDK/error-codes.md
+      - Introduction: agentai/integration/websdk/introduction.md
+      - SDK Fields and Details: agentai/integration/websdk/sdk-fields-and-details.md
+      - Customize SDK: agentai/integration/websdk/customize-your-sdk.md
+      - View Customized Events: agentai/integration/websdk/view-customized-events.md
+      - My Bot Tab: agentai/integration/websdk/mybot-tabs.md
+      - Dialog Tab: agentai/integration/websdk/dialog.md
+      - Transcript Events: agentai/integration/websdk/transcript-events.md
+      - Search Tab: agentai/integration/websdk/searchtab-events.md
+      - Agent Coaching Events: agentai/integration/websdk/coaching-events.md
+      - Playbooks Events: agentai/integration/websdk/sdk-Playbooks.md
+      - Internal Transfer: agentai/integration/websdk/internal-transfer-process.md
+      - Sentiment Chart: agentai/integration/websdk/sentiment-charts.md
+      - Other Events: agentai/integration/websdk/other-events.md
+      - Error Codes: agentai/integration/websdk/error-codes.md
   - GenAI Tools:
     - About GenAI Tools: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
