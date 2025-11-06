@@ -14,6 +14,7 @@ The LLM Integration framework supports multiple approaches to connect language m
 * **Custom LLM Integration**: A flexible framework to connect any externally hosted or enterprise-hosted language model.
 * **Kore.ai XO GPT**: Fine-tuned models optimized for enterprise conversational AI, including conversation summarization, query rephrasing, and dialog orchestration.
 
+<img src="../images/models-library-home.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
 ### Authorization
 
@@ -22,7 +23,7 @@ The Authorization step establishes a secure connection between the Platform and 
 
 | Provider     | Required Fields   | Description  |
 | ------------ | ------ | -------- |
-| Azure OpenAI | API Key, <br>User Sub-Domain, <br><br>Deployment ID | The API Key authenticates your Azure account. <br>The User Sub-Domain identifies your Azure resource endpoint. <br>The Deployment ID specifies the deployed model that the Platform connects to. |
+| Azure OpenAI | API Key, <br>User Sub-Domain, <br>Deployment ID | The API Key authenticates your Azure account. <br>The User Sub-Domain identifies your Azure resource endpoint. <br>The Deployment ID specifies the deployed model that the Platform connects to. |
 | OpenAI       | API Key                                 | Authenticates your OpenAI account and grants access to models.  |
 | Anthropic    | API Key                                 | Authenticates your Anthropic account and grants access to models.   |
 |Amazon Bedrock|Access Key ID and Secret Access Key, <br>Region, <br>Model ID|The Access Key ID and Secret Access Key authenticate your AWS account. <br>The Region identifies the AWS service region. <br>The Model ID specifies the Amazon Bedrock model to connect to.|
@@ -64,13 +65,13 @@ The following table lists the fields you can configure as variables for each LLM
 | Amazon Bedrock | IAM Role ARN, Amazon STS API, Amazon Resource Name (ARN), Endpoint, Headers |
 | Custom LLM     | Endpoint, Authorization, Headers               |
 
-You can use variables for LLM authorization during integration, as shown in the following example.
+You can use the variables to authorize the integration, as shown in the following examples.
 
 
 === "Pre-built LLM"
 
 
-    For example, Azure OpenAI.
+    For example, Azure OpenAI. Enter the varibles.  
     <img src="../images/azurellmdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
     In the next step, enter the sample values in the Test Connection pop-up. You can select the checkbox to save these values for future use.  
@@ -79,18 +80,14 @@ You can use variables for LLM authorization during integration, as shown in the 
 
 === "Provider's New LLM"
 
-    For example, Azure OpenAI.
-    In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description**, **Deployment ID** and click **Add Model**. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled. 
+    For example, Azure OpenAI. Enter the varibles. Refer [Provider's New LLM](configure-llm-integration.md). 
     <img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
  
-    <img src="../images/azuredynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-
     In the next step, enter the sample values in the Test Connection pop-up. You can select the checkbox to save these values for future use.  
     <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
 === "Amazon Bedrock" 
 
- 
     You can use the variable for AM Role ARN, Amazon STS API, Amazon Resource Name (ARN), Endpoint, and Headers (optional).
     <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
 
@@ -115,7 +112,9 @@ The LLM Usage gives you comprehensive visibility into LLM usage consumption and 
 The Platform automatically captures usage data for pre-built models (OpenAI, Azure OpenAI, and Anthropic) regardless of the prompts used. For custom models and Amazon Bedrock models, you must map the Request and Response Token Keys in the custom prompts to enable tracking. Without this mapping, the Platform can't calculate consumption, which may result in unmonitored usage and unexpected costs.
 
 
-Usage limits can be set during initial model setup or anytime after configuration completion from more options. To track token consumption, enable the Token Usage Limit toggle and configure the following fields. 
+Usage limits can be set during initial LLM integration or anytime after it's completion from more options. To track token consumption, enable the Token Usage Limit toggle and configure the following fields. 
+
+To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options.
 
     
 * Maximum Tokens: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
