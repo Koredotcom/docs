@@ -313,11 +313,11 @@ For each status, you can configure the following:
     4. The status for which there is no response time is _On Close_.
     5. The statuses for which you can set a response time (in hours and minutes) are _Overdue_, Agent _Inactivity_, _Agent Offline_, _Customer Idle_, and _Auto Expire_.
 
-!!! note
+    !!! note
 
-    The configurable limit for Overdue, Agent Inactivity, and Auto Expire for the Email channel is 30 days.
+        The configurable limit for Overdue, Agent Inactivity, and Auto Expire for the Email channel is 30 days.
 
-2. **The messaging goes out to either the user or the agent**. Status
+2. The messaging goes out to either the user or the agent. Status
 Messages can be edited by clicking the Edit icon under the Message column.  
     <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
 
