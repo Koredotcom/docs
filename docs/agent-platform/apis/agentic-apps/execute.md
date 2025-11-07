@@ -88,7 +88,7 @@ Sends input to the Agentic app within a specific session and retrieves the respo
 
 <li>sessionIdentity(lowest priority)</li>
 
-Refer to [this](overview.md) for a detailed description.
+Refer to <a href="../overview">this</a> for a detailed description.
 </ol>
    </td>
    <td>Yes
@@ -98,9 +98,8 @@ Refer to [this](overview.md) for a detailed description.
    <td>input
    </td>
    <td>An array of user inputs to the Agentic application. Each object includes:
-<p><p>
-- type: currently only "text" is supported.
-- content: the actual user input string.
+<p>- type: currently only "text" is supported.</p>
+<p>- content: the actual user input string.</p>
    </td>
    <td>Yes
    </td>

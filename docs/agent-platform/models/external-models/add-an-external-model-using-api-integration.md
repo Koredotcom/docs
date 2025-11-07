@@ -12,7 +12,6 @@ The steps to add an external model using API integration are given below:
 2. Click **Add a model**. The **Add an external model** dialog is displayed.
 
 3. Select the **Custom integration** option to connect models via API integration, and click **Next**.
-<img src="../images/add-external-model-api-integration1.png" alt="Add External Model API Integration" title="Add External Model API Integration" style="border: 1px solid gray; zoom:60%;">
 
 4. On the **Custom API integration** dialog, enter the **Connection name** and **Model endpoint URL**.  
 <img src="../images/custom-api-integration-general-details.png" alt="Custom API Integration General Details" title="Custom API Integration General Details" style="border: 1px solid gray; zoom:80%;">
@@ -21,7 +20,6 @@ The steps to add an external model using API integration are given below:
 <img src="../images/set-auth-profile-parameter.png" alt="set auth profile" title="set auth profile" style="border: 1px solid gray; zoom:80%;">
 
 6. In the **Headers** section, specify the headers such as **Key** and **Value** that need to be sent along with the request payload. 
-<img src="../images/custom-api-integration-headers.png" alt="Custom API Integration Headers" title="Custom API Integration Headers" style="border: 1px solid gray; zoom:80%;">
 
 7. In the Model configurations section, select one of the following options to define your model’s API behavior:
 
@@ -99,7 +97,7 @@ With the Default option, you must manually define the request payload variables,
   * **Modalities Support**: Specifies the modalities supported by the model. Enabling this flag allows the model to run Text-to-Text, Text-to-Image, Image-to-Text, and Audio-to-Text tasks for seamless downstream integration within the [Tools Flow](../../ai-agents/tools/tool-flows/flows-overview.md){:target="_blank"}.
   <img src="../images/model-features-list.png" alt="model features" title="model features" style="border: 1px solid gray; zoom:75%;">
  
-**Body**: In this section, choose a provider to set the API reference. The platform uses this mapping to resolve your model’s request-response structure. The available options include:
+**Body**: In this section, specify the **model name** to be included in the request body and select a provider to set the API reference. The platform uses this mapping to resolve the model’s request-response structure. The available options include:
 
   * **Anthropic (Messages)**:  Specifies that the selected model follows the request-response structure similar to [Anthropic’s Messages API](https://docs.anthropic.com/en/api/messages){:target="_blank"}.
   * **OpenAI (Chat Completions)**: Specifies that the selected model follows the request-response structure similar to [OpenAI’s Chat Completions API](https://platform.openai.com/docs/api-reference/chat){:target="_blank"}.

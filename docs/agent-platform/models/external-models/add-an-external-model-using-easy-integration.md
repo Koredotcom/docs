@@ -18,7 +18,7 @@ Steps to add the Anthropic Claude-V1 model using easy integration:
 4. Select the **Easy integration** option to integrate models from Open AI, Anthropic, Google, or Cohere and click **Next**.
 5. Select a provider to integrate with and click **Next**.
 
-    <img src="../images/easy-integration.png" alt="Easy Integration" title="Easy Integration" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/easy-integration.png" alt="Easy Integration" title="Easy Integration" style="border: 1px solid gray; zoom:65%;">
 
     A pop-up with the list of all the Anthropic models that are supported in Agent Platform is displayed.
     
@@ -26,7 +26,7 @@ Steps to add the Anthropic Claude-V1 model using easy integration:
 
     <img src="../images/select-model.png" alt="Select Model" title="Select Model" style="border: 1px solid gray; zoom:50%;">
 
-6. Select the required **Model** from the options listed and click **Next**.
+6. Select the required **Model** and enter a **Connection name**.
 
 7. Enter the respective API key you have received from the provider in the **API key** field and click **Confirm** to start the integration.
 
@@ -84,8 +84,24 @@ For example: "Content-Type": "application/json"
 
 In the **Model configurations** section, select one of the following options to define your model’s API behavior:
 
-* Default – Manually define variables, request body, and JSON path mappings for models.
-* Existing Provider Structures – Automatically apply pre-defined schemas to map requests and responses.
+**Option A: Default**
+
+Use this option to manually configure all API components and control how requests and responses are structured
+
+* **Variables** – Define Prompt variables (mandatory) and add Custom variables as needed.
+* **Request Body** – Manually construct the payload and insert dynamic values using `{{variable}}`. Ensure the body follows the model’s expected JSON structure.
+* **Test Response** – Click Test, enter the prompt inputs, and verify that the model returns a valid response.
+* **JSON Path Mapping** – Specify JSON keys for:
+    * **Output path** – e.g., `choices[0].message.content`
+    * **Input tokens** – e.g., `usage.prompt_tokens`
+    * **Output tokens** – e.g., `usage.completion_tokens`
+
+**Option B: Existing Provider Structures**
+
+Use this option to automatically map known API formats for supported providers. This mode simplifies setup by applying pre-defined request/response mappings and enables advanced LLM features without manual configuration.
+
+* **Provider Templates** – Choose a schema such as OpenAI (Chat Completions) or Anthropic (Messages).
+* **Model Features** – Enable capabilities like Structured response, Tool calling, Data generation, Streaming, and Modalities support (Text-to-Text, Text-to-Image, etc.).
 
 Each option determines how your model communicates with the platform and how responses are parsed. For more details, see [**Default**](../external-models/add-an-external-model-using-api-integration.md#option-a-default) and [**Existing Provider Structures**](../external-models/add-an-external-model-using-api-integration.md#option-b-existing-model-provider-structures).
 

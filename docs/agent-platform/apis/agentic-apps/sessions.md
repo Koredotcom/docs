@@ -89,7 +89,7 @@ Establishes a new conversation session for a specific user with the Agentic App.
 
 <li>sessionIdentity(lowest priority)</li>
 
-Refer to [this](overview.md) for a detailed description.
+Refer to <a href="../overview">this</a> for a detailed description.
 </ol>
    </td>
   </tr>
@@ -115,7 +115,7 @@ Refer to [this](overview.md) for a detailed description.
 
 ### Response
 
-Returns details of the newly created session, which are required for managing and continuing conversations. The response also includes **document upload configuration** and **allowed file types**, enabling clients to validate uploads in advance and prevent unnecessary failures. The fields in the response include:
+Returns details of the newly created session, which are required for managing and continuing conversations. The response also includes document upload configuration and allowed file types, enabling clients to validate uploads in advance and prevent unnecessary failures. The fields in the response include:
 
 
 
@@ -173,27 +173,7 @@ Returns details of the newly created session, which are required for managing an
   }
 }
 ```
-
-#### Sample Response 
-
-
-```
-{
-  "session": {
-    "sessionId": "s-a302e3c6-308b-4a0a-9a5f-a01a5846fae1",
-    "sessionReference": "Se_skwos333",
-    "userReference": "usr_1a2b3c4d5e",
-    "status": "idle",
-    "userId": "u-4c2221e1-46c2-53c5-9876-fd6699052c15",
-    "createdAt": "2025-02-17T19:07:00.070Z"
-  }
-}
-```
-
-**Note:** When a new session is initiated, and the application requires permissions for OAuth authorization from the user, the API response includes a special event of type `IDP_Redirect`.
-
-This event provides a URL that the user must visit to complete the authorization process. If the required authorization is not completed, the associated tools will return an error upon invocation.
-
+**Note**: When a new session is initiated, and the application requires permissions for OAuth authorization from the user, the API response includes a special event of type `IDP_Redirect`. This event provides a URL that the user must visit to complete the authorization process. If the required authorization isn't completed, the associated tools will return an error upon invocation.
 
 ```json
 {
@@ -516,7 +496,9 @@ Fetches the details of a given session. You must provide either a *sessionId* or
 </table>
 
 
-Note: Either *sessionId* or *sessionReference* must be provided to identify the session. 
+!!!note
+  
+  Either sessionId or sessionReference must be provided to identify the session. 
 
 
 ### Sample Response

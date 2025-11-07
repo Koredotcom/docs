@@ -912,7 +912,7 @@ The following third-party integrations are available on the Agent Platform:
    </td>
   </tr>
   <tr>
-   <td>Junglescout
+   <td>Jungle Scout
    </td>
    <td>Jungle Scout assists Amazon sellers with product research, sales estimates, and competitive insights to optimize inventory, pricing, and listing strategies.
    </td>

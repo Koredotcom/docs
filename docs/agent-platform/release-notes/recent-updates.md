@@ -66,7 +66,7 @@ The Agent Platform now provides enhanced context handling for conversations with
 
 **Improved Workflow Tool Testing Experience**
 
-The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardised output format.
+The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardized output format.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md#test-a-workflow-tool)
 
@@ -250,7 +250,7 @@ This update introduces support for a new set of AI models in the Agent Platform,
     * Azure OpenAI - GPT-4.1, GPT-4.1-Nano, GPT-4.1-Mini, O1, O1-Mini, O3-Mini
 
 * Text to Image Node (External models)
-    * OpenAI - dall-e-2 and dall-e-3
+    * OpenAI - DALL·E 2 and DALL·E 3
 
 * Open-source Model
     * Xiaomi Mimo-7B--VL-RL
@@ -1093,7 +1093,7 @@ Platform users can now set up an Authorization Profile using OAuth v2 in the Set
 
 <font size="4">Feature Enhancements</font>
 
-* Upgraded the TRL version of ml-training-service to support DPO RLHF fine-tuning, ensuring seamless functionality with custom parameters.
+* Upgraded the TRL version of ml-training-service to support DPO Reinforcement Learning from Human Feedback (RLHF) fine-tuning, ensuring seamless functionality with custom parameters.
 
 
 <font size="4">Bug Fixes</font>

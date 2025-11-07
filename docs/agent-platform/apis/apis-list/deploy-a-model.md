@@ -150,7 +150,7 @@ curl --location ' https://{host}/api/public/models/cm-6xxxxxxxxxxxxxxxxxx9/deplo
       "optimizationType": "",
       "quantizationType": ""
     },
-    "isDeployedPreviouly": true
+    "isDeployedPreviously": true
   }'
 ```
 
@@ -456,7 +456,7 @@ The following deployment parameters can be configured and passed in the body:
    </td>
   </tr>
   <tr>
-   <td><b>guardrail</b>
+   <td><b>modelId</b>
    </td>
    <td>The model that was deployed.
    </td>
