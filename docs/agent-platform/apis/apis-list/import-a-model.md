@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+
 # Import a Model API
 
 The API imports a model in chunks into the Agent Platform environment. The import process includes the following steps and APIs:
@@ -6,7 +8,9 @@ The API imports a model in chunks into the Agent Platform environment. The impor
 * [Upload Model in Chunks](./import-a-model.md/#upload-model-in-chunks){:target="_blank"} - Import Model - Chunk Upload API.
 * [Complete the Import Process](./import-a-model.md/#complete-the-import-process){:target="_blank"} - Import Model- Completion API.
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Start Import Session
 
@@ -67,9 +71,9 @@ The **Import Model - Start Session API** is executed in this step. The API initi
 ### Sample Request
 
 ```js
-curl --location 'https://{host}/api/public/files/session/start' \
---header 'x-api-key: kg-1xxxxxx8-3xxf-5xxa-9xx7-0xxxxxxxxxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aacd8xxxx' \
---header 'Content-Type: application/json' \
+curl --location 'https://{host}/api/public/files/session/start' 
+--header 'x-api-key: kg-1xxxxxx8-3xxf-5xxa-9xx7-0xxxxxxxxxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aacd8xxxx' 
+--header 'Content-Type: application/json' 
 --data '{
     "fileContext": "model",
     "totalChunks": 1,
@@ -126,7 +130,7 @@ curl --location 'https://{host}/api/public/files/session/start' \
   <tr>
    <td><strong>fileName</strong>
    </td>
-   <td>Name of the file being uploaded. Forr example, “<em>example_model22.tar</em>”
+   <td>Name of the file being uploaded. For example, “<em>example_model22.tar</em>”
    </td>
    <td>String
    </td>
@@ -272,10 +276,10 @@ The **Import Model - Chunk Upload** API uploads a file chunk for model import. T
 ### Sample Request
 
 ```js
-curl --location 'https://{host}/api/public/files/session/5cxxxxxb-5xx5-4xxa-bxx1-35xxxxxxxxxe' \
---header 'x-api-key: kg-11xxxxx8-3xxf-5xxa-9xx7-0xxxxxxxxxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aacdxxxx' \
---header 'Content-Type: application/json' \
---form 'file=@"postman-cloud:///1exxxxx8-7xx4-4xx0-axx0-1dxxxxxxxxxd"' \
+curl --location 'https://{host}/api/public/files/session/5cxxxxxb-5xx5-4xxa-bxx1-35xxxxxxxxxe' 
+--header 'x-api-key: kg-11xxxxx8-3xxf-5xxa-9xx7-0xxxxxxxxxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aacdxxxx' 
+--header 'Content-Type: application/json' 
+--form 'file=@"postman-cloud:///1exxxxx8-7xx4-4xx0-axx0-1dxxxxxxxxxd"' 
 --form 'chunkNumber="0"'
 ```
 
@@ -423,7 +427,7 @@ The **Import Model- Complete** API completes the model import process after all 
 ### Sample Request
 
 ```js
-curl --location --request POST 'https://{host}/api/public/files/session/5cxxxxxb-xxx5-4xxa-bxx1-35xxxxxxxxxe/complete' \
+curl --location --request POST 'https://{host}/api/public/files/session/5cxxxxxb-xxx5-4xxa-bxx1-35xxxxxxxxxe/complete' 
 --header 'x-api-key: kg-11xxxxx8-xxxf-5xxa-9xx7-07dxxxx3xxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aaxxxxxx'
 ```
 
@@ -489,7 +493,7 @@ No parameters are passed.
   <tr>
    <td><strong>status</strong>
    </td>
-   <td>The current status of the job (<em>SUCCESS</em>, <em>IN PROGRES</em>S, or <em>FAILED</em>).
+   <td>The current status of the job (<em>SUCCESS</em>, <em>IN_ PROGRESS</em>, or <em>FAILED</em>).
    </td>
    <td>String
    </td>

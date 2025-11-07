@@ -132,11 +132,14 @@ If the source application stores the document creator as authorDetails.fullName,
 context.doc_created_by_name = context?.raw_json?.authorDetails?.fullName;
 ```
 
-**Manage Schema**: Access the Manage Schema option to view the schema fields of the application and customize their descriptions. This helps users understand how and when to use this field. Learn more about [the default document fields here](connectors/unified-schema.md).
+**Manage Schema**: Use the Manage Schema option to view the application's schema fields and customize their descriptions. This helps users understand how and when to use this field. Learn more about [the default document fields here](connectors/unified-schema.md).
 
 ![Manage Schema](images/manage-schema.png "Manage Schema")
 
-**New Field**: Define new custom fields to be ingested from the connector. You can add upto 50 custom fields. 
+**New Field**: Define new custom fields to be ingested from the connector. custom fields (45 custom strings and 5 custom arrays). When creating a new field, define the following.
+Field Name: The unique identifier for the field. It's used in scripts, APIs, and prompts. This has to be selected from the list of custom fields available(starting with cfs or cfa) and can't be edited after saving. 
+Display Name: The name of the field visible in the UI.
+
 
 Use the **Test Script** option to validate your transformation and verify the output after execution. Only after a successful test, the field mappings are updated. 
 

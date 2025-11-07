@@ -5,11 +5,14 @@
 
 The following XO GPT Live Models are available for various supported features.
 
+!!! note
+    
+    For non-English languages, XO GPT is available for industry-established generic use cases. If additional support is required for a specific language-related use case, we recommend using the Agent Platform.
+
 | XO GPT Model                  | Supported Feature            | Model Version | Base Model            | Languages Supported                      | Deployed Region | Deployment Date |
 |-------------------------------|------------------------------|---------------|-----------------------|------------------------------------------|-----------------|-----------------|
 | Answer Generation Model       | Answer Generation            | [Version 3.0](xogpt-answer-generation-model.md#version-30)   | Llama 3.1 8B Instruct | English, French,  German, Japanese, Polish, Spanish,  | US <br><br>   DE   <br><br> EU         | 6th May 2025 <br>  6th May 2025 <br> 6th May 2025   |
-| Conversation Summarization Model | Conversation Summarization | [Version 2.0](xogpt-conversation-summarization-model.md#version-20)   | Mistral 7B Instruct v0.2 | English, French, German, Japanese, Polish, Simplified Chinese, Spanish, Traditional Chinese, Turkish |  US <br><br>   DE    | 23th Sep 2025<br>23th Sep 2025|
-| Conversation Summarization Model |Conversation Summarization | [Version 2.0](xogpt-conversation-summarization-model.md#version-20)   | Mistral 7B Instruct v0.2  | English, French, German, Japanese, Polish, Simplified Chinese, Spanish, Traditional Chinese, Turkish |  JP  | 20th Dec 2024 ||                             
+| Conversation Summarization Model | Conversation Summarization | [Version 2.0](xogpt-conversation-summarization-model.md#version-20)   | Mistral 7B Instruct v0.2 | English, French, German, Japanese, Polish, Simplified Chinese, Spanish, Traditional Chinese, Turkish |  US <br><br>   DE <br><br>  JP  | 23th Sep 2025<br>23th Sep 2025<br>20th Dec 2024 |                           
 | Response Rephrasing Model     | Rephrase Dialog Responses    | [Version 1.0](xogpt-response-rephrasing-model.md#version-10)   | Mistral 7B Instruct v0.2 | English                                  |  US <br><br>   DE             | 1st Jun 2024 <br>   3rd Sep 2024    |
 | User Query Paraphrasing Model | Rephrase User Query          | [Version 1.0](xogpt-user-query-paraphrasing-model.md#version-10)   | Mistral 7B Instruct v0.2 | English                                  |  US <br><br>   DE              | 1st Jun 2024 <br>   3rd Sep 2024     |
 |DialogGPT Model |DialogGPT - Conversation Orchestration| [Version 1.1](xogpt-dialoggpt-model.md) |Llama-3.1-8B-Instruct|English, French, German, Japanese, Polish, Spanish| US <br><br> DE | 26th May, 2025 <br> 26th May, 2025|

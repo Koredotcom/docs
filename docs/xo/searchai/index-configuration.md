@@ -208,11 +208,11 @@ For instance, if the first field combination(higher in order, placed first) is c
 
 ### Vector Coverage
 
-If the field combinations defined for a vector column do not cover certain content types, embeddings will not be generated for those content types. As a result, those content types will not be semantically matched using that particular vector column during search.
+If the field combinations defined for a vector column don't cover certain content types, embeddings won't be generated for those content types. As a result, those content types won't be semantically matched using that particular vector column during search.
 
 In such a case, the application automatically [rebalances the weights](#automatic-weight-rebalancing) among available vectors.
 
-For instance, if Vector 2 is configured with fields that apply only to web files, then embeddings will be generated only for web content in Vector 2. Other content types—such as PDFs or connector-based files—will not have embeddings in Vector 2 and therefore will not contribute to semantic matching for that vector column.
+For instance, if Vector 2 is configured with fields that apply only to web files, then embeddings will be generated only for web content in Vector 2. Other content types, such as PDFs or connector-based files, won't have embeddings in Vector 2 and therefore won't contribute to semantic matching for that vector column.
 
 
 ### Assigning Weights to Vectors
@@ -364,9 +364,9 @@ configured for all sources and uses fields a,b)
 </table>
 
 
-For all chunks generated from any sources other than web pages, embeddings will not be generated corresponding to vector 2. Now, unless the weights are rebalanced, the total weightage used to compute the final relevance score of Chunks 2, 3, and 4 would be incomplete, leading to inaccurate or biased scoring. Rebalancing ensures that the missing weight from vector 2 is proportionally distributed among the remaining vectors. 
+For all chunks generated from any sources other than web pages, embeddings won't be generated corresponding to vector 2. Now, unless the weights are rebalanced, the total weight used to compute the final relevance score of Chunks 2, 3, and 4 would be incomplete, leading to inaccurate or biased scoring. Rebalancing ensures that the missing weight from vector 2 is proportionally distributed among the remaining vectors. 
 
-In this example, for chunks for which Vector 2 embeddings are not available, the 20% weight is redistributed proportionally between Vector 1 and Vector 3. Adjusted weight is calculated using the following formula:
+In this example, for chunks for which Vector 2 embeddings aren't available, the 20% weight is redistributed proportionally between Vector 1 and Vector 3. Adjusted weight is calculated using the following formula:
 
 Adjusted Weight = Original Weight + ((Unavailable Weight × Original Weight)/ Sum of Available Weights)
 

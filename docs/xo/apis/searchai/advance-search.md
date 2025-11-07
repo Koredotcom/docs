@@ -196,7 +196,7 @@ This API enables you to retrieve answers and search results related to a specifi
     <li>When using a <strong>custom LLM</strong>, the integrationName must match the exact name defined in the custom integration settings.</li>
     <li>To use the <strong>default prompt configured in the application</strong>, set promptName as “Default.”</li>
     <li>Since you can't add a new prompt for Kore XO GPT, set prompt=”Default”.</li>
-    <li>For Kore XO GPT (korexo):
+    <li>For Kore XO GPT:
       <ul>
         <li>The model must be set to "XO-GPT."</li>
         <li>The prompt must be "Default" (custom prompts aren't supported).</li>
@@ -264,7 +264,7 @@ The response to the API is in JSON format. Some key fields in the response, whic
     "data": [
       {
         "docId": "fc-e1d1181b-4b23-58df-8346-e4c728259c4d",
-        "recordTitle": "SALESFORCECOM_20230130_0000.pdf",
+        "recordTitle": "SampleFile_20230130_0000.pdf",
         "recordUrl": "https://domain.com/api/getMediaStream/******/f-7ead54e7-f34b-5858-bb26-b6295f39fa4e.pdf?n=2345813963&s=IjZZeXA4M1ZzZTVCT0k3Z3NMxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdnRVU9Ig$$",
         "chunkResults": [
           "chk-84e2c8ca-dc0f-4372-b3ff-36368ab4dea3"
@@ -372,7 +372,7 @@ The response to the API is in JSON format. Some key fields in the response, whic
       "chunkType": "Text",
       "doc_id": "1vEZTjr9VtQrFePRCJGimfX5cs5y7ITGP",
       "doc_updated_on": "2025-01-10T15:55:08.060Z",
-      "cfs1": "Manasa",
+      "cfs1": "test value",
       "sys_file_type": "pdf",
       "createdBy": "u-fec9538c-98b8-5503-a2ed-679de486e3d9",
       "sourceType": "googleDrive",
@@ -424,7 +424,7 @@ The response to the API is in JSON format. Some key fields in the response, whic
       "chunkType": "Text",
       "doc_id": "1KSitTWrY9iBIJT3yD9P2k2fS3uSK9R5L",
       "doc_updated_on": "2024-11-25T14:03:09.256Z",
-      "cfs1": "Manasa",
+      "cfs1": "Sample Value",
       "sys_file_type": "pdf",
       "createdBy": "u-fec9538c-98b8-5503-a2ed-679de486e3d9",
       "sourceType": "googleDrive",
@@ -451,12 +451,12 @@ The response to the API is in JSON format. Some key fields in the response, whic
     "subtype": "value",
     "buckets": [
       {
-        "key": "u-fec9538c-98b8-5503-a2ed-679de486e3d9",
+        "key": "u-fec9538c-xxxx-xxxx-xxxx-679de486e3d9",
         "chunk_count": 240,
         "doc_count": 14
       }, 
       {
-        "key": "u-fec9538c-98b8-5503-a2ed-679de34323ed",
+        "key": "u-fec9538c-xxxx-xxxx-xxxx-679de34323ed",
         "chunk_count": 100,
         "doc_count": 4
       }

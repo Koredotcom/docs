@@ -51,7 +51,7 @@ This API allows you to fetch answers to a query from SearchAI corresponding to t
 
 ```
 curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-5224-b70b-656c4eef768e/advancedSearch' \
---header 'auth: eyJhbGciOiJnR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy05Yzg5MGMwOS1kMzQ5LTUzZjctYmIwZC1jYWEwZGIwOGNmMTkifQ.K2DWFPthcsTlltPTcR1irzjlxr4LYUzknxeTRfANolo' \
+--header 'auth: <your-auth-key>' \
 --header 'Content-Type: application/json' \
 --data '{
  "query": "Info on Conversational AI",
@@ -122,7 +122,7 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
    </td>
    <td>No
    </td>
-   <td>This can be set to true or false. When set to ‘true’, the response will include answers. Conversely, when set to ‘false’, the response will omit the answer to the query. However, you can still use the includeChunksInResponse field to see the qualified chunks in the response. By default, it is set to true.
+   <td>This can be set to true or false. When set to ‘true’, the response will include answers. Conversely, when set to ‘false’, the response will omit the answer to the query. However, you can still use the includeChunksInResponse field to see the qualified chunks in the response. By default, it's set to true.
    </td>
   </tr>
     <tr>
@@ -133,7 +133,7 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
   <tr>
    <td>IncludeMetaDataAnswers</td>
    <td>No </td>
-   <td>This field can fetch specific chunk metadata fields in the response along with the default fields.The requested fields are returned as part of the <b>graph_answer</b> field in the response. If a metadata field listed in this object does not exist, the field is returned in the response with a null value.
+   <td>This field can fetch specific chunk metadata fields in the response along with the default fields. The requested fields are returned as part of the <b>graph_answer</b> field in the response. If a metadata field listed in this object doesn't exist, the field is returned in the response with a null value.
    
    For instance, to fetch the author name(a metadata field) and subtitle(a custom field) additionally from the chunks, include the following in the request payload. 
       
@@ -149,7 +149,7 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
    <td>No </td>
    <td>Array of RACL values
 
-This field specifies the <strong>RACL (Role-Based Access Control List)</strong> values to be used to determine accessible content. It can include both <strong>user identities</strong> (e.g., email addresses) and <strong>permission entity IDs </strong>(e.g., user groups).
+This field specifies the <strong>RACL (Role-Based Access Control List)</strong> values to be used to determine accessible content. It can include both <strong>user identities</strong> (for example, email addresses) and <strong>permission entity IDs </strong>(for example, user groups).
 
 When raclEntityIds is passed in the API request, Search AI exclusively uses the provided values in raclEntityIds to identify accessible content. No additional mapping between user identities and permission entities is performed to resolve content accessibility. For each value in raclEntityIds, only the content where the sys_racl field contains a matching value will be accessible in the response.
 
@@ -159,18 +159,17 @@ For instance,
 raclEntityIds: [
 
 “123234”, // Permission Entity ID
-
-“[user@example.com](mailto:user@example.com)” // User Identity
+“user@example.com” // User Identity
 
 ]</pre>
 
 <ul>
 <li>Content with a sys_racl field that includes either "123234" or "user@example.com" will be accessible.</li>
-<li> The API will not perform additional lookups to identify content accessible to other related permission entities for "user@example.com".</li>
+<li> The API will not perform additional lookups to identify content accessible to other related permission entities for "user@example.com."</li>
 </ul>
 This parameter enables granular control over content accessibility by explicitly specifying allowed entities. It ensures strict adherence to the provided values without relying on broader permission mappings.
 
-“raclEntityIds” takes precendence over any key set to use via RACL resolver API. So even if that is configured whenever “raclEntityIds” is present we will only honor that. 
+The raclEntityIds parameter takes precedence over any keys configured through the RACL Resolver API. If raclEntityIds is provided, it will be used exclusively, and any configuration from the RACL Resolver API will be ignored.
 
 
    </td>
@@ -214,12 +213,12 @@ This parameter enables granular control over content accessibility by explicitly
     <li>All values, integrationName, model, and promptName, are <strong>case sensitive</strong>.</li>
     <li>Ensure that the specified model and prompt are correctly <strong>configured and published under GenAI settings.</strong></li>
     <li>When using a <strong>custom LLM</strong>, the integrationName must match the exact name defined in the custom integration settings.</li>
-    <li>To use the <strong>default prompt configured in the application</strong>, set promptName as “Default”.</li>
-    <li>Since you cannot add a new prompt for Kore XO GPT, set prompt=”Default”.</li>
-    <li>For Kore XO GPT (korexo):
+    <li>To use the <strong>default prompt configured in the application</strong>, set promptName as “Default.”</li>
+    <li>Since you can't add a new prompt for Kore XO GPT, set prompt=”Default”.</li>
+    <li>For Kore XO GPT:
       <ul>
         <li>The model must be set to "XO-GPT".</li>
-        <li>The prompt must be "Default" (custom prompts are not supported).</li>
+        <li>The prompt must be "Default" (custom prompts aren't supported).</li>
       </ul>
     </li>
   </ul>
