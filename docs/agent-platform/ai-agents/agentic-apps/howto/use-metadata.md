@@ -2,7 +2,7 @@
 
 Metadata is structured data that provides additional context about a session, user, or request. When interacting with the Agent Platform via the [execute API](../../../apis/agentic-apps/execute.md), developers can provide custom metadata in every request using the metadata field. This enriches agent context, enabling personalized, stateful, and relevant experiences. 
 
-The agent platform automatically stores this information in its default sessionMeta memory store, according to a specific, defined schema, making it easily accessible within the session. 
+The Agent Platform automatically stores this information in its default sessionMeta memory store, according to a specific, defined schema, making it easily accessible within the session. 
 
 The stored metadata can then be referenced in prompts, allowing agents to respond dynamically based on context passed via the Metadata fields. 
 
@@ -14,7 +14,7 @@ Below is a complete example demonstrating how metadata is passed, stored, and ac
 
 ### 1. API Call with Metadata
 
-A typical request to the execute API includes a metadata field as shown below. In the example shown below, additional user information is passed to the app via the metadata field.
+A typical request to the execute API includes a metadata field as shown below. In the following example, additional user information is passed to the app via the metadata field.
 
 
 ```json
@@ -47,7 +47,7 @@ A typical request to the execute API includes a metadata field as shown below. I
 }
 ```
 
-[Learn More about the Execute API.](../../../apis/agentic-apps/execute.md).
+[Learn More about the Execute API.](../../../apis/agentic-apps/execute.md)
 
 
 ### 2. How This Appears in Session Memory
