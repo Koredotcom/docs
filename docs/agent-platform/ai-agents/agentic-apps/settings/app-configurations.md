@@ -75,4 +75,4 @@ Enable this setting to allow real-time **streaming of the response in Playground
 
 ### Delete Agentic App
 
-Use this to permanently delete the agentic app and all associated data. 
+Use this to permanently delete the Agentic App and all associated data. 

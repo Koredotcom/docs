@@ -18,38 +18,40 @@ Creating an Agentic App broadly consists of the following steps:
 2. Click on the **+New App** on the **Agentic Apps** page. This page also lists the existing apps in the workspace.  
 ![Create App](images/createapp/list-apps.png "Agentic App Creation")
 
-2. Enter or select the following details: 
+3. Enter or select the following details: 
 ![Create App](images/createapp/create-app.png "Agentic App Creation")
 
 
     * **Name**: Provide a name for the app that reflects its core function.
     * **Icon**: Select an icon for the app.
-    * **Description**: Write a description explaining its main features and goals. This will help to set the scope and context of the application and ensure the application does not respond to queries based on pre-trained knowledge.
+    * **Description**: Write a description explaining its main features and goals. This will help to set the scope and context of the application and ensure the application doesn't respond to queries based on pre-trained knowledge.
     * **AI Model**: Choose an appropriate model and connection for the application.
 
-3. Click **Create App**.  
-After the app is created, the app **overview** is displayed. Move to the next steps of configuring agents and tools. 
+4. Click **Create App**.  
 
-For a completely configured app, the **Overview** section provides a structured summary of the app, including linked agents, tools, and knowledge bases, organized into four sections for easy navigation and usability.
+After the app is created, the app **overview** is displayed. The Overview section provides a structured summary of the app, including linked agents, tools, and knowledge bases. 
 
-* **App Summary** displays essential app details with an **Edit** option for configuration changes.
+* **App Summary** displays essential app details like the LLM selected, orchestration pattern, with an **Edit** option for configuration changes.
 * **The Agents** section shows the autonomous agents of the app. The list displays information about the agents associated with the app, including their name, description, and linked tools. 
 * **The Tools** section lists the different types of tools associated with the agents in the Agentic app.
 * **The Knowledge** section displays knowledge bases associated with the Agentic app.
+
+By default, certain configurations are pre-selected when creating a new app. If you need to review or modify these configurations, go to the [App Profile](app-profile.md) and make necessary changes. [Learn More](app-profile.md). Move to the next steps of configuring agents and tools.
+
 ---
 
 ### Step 2: Define or Set Up Agents
 
 Configure agents with appropriate roles and responsibilities within the application.  
-See [How to set up an agent](./../create-agent.md).
-
-Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for Agent Platform](diagnostics-for-agent-platform.md).
+See [How to set up an agent](./../create-agent.md) for detailed instructions.
 
 ---
 
 ### Step 3: Simulate or Test the Behavior of the App and the Agents
 
-Simulate different scenarios to evaluate agent interactions and responses.  
+Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for Agent Platform](diagnostics-for-agent-platform.md).
+
+Next, simulate different scenarios to evaluate agent interactions and responses.  
 See [Simulate and Test the App](./../agentic-apps/app-testing.md).
 
 ---
@@ -60,8 +62,3 @@ Finalize configurations and deploy the app for end users. See [App Deployment](.
 
 ---
 
-## App Overview
-
-The Overview page provides a comprehensive summary of your app after it has been successfully set up. This page displays essential details, including the tools and agents that have been configured for the app.
-
-By default, certain configurations are pre-selected when creating a new app. If you need to review or modify these configurations, go to the [app profile](app-profile.md) and make necessary changes. [Learn More](app-profile.md).

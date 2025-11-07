@@ -62,10 +62,7 @@ Next, define the agents for the application. The app would require the following
 **Tools**
 
 1. **Prism Query Generator (Workflow Tool)** - Analyzes user input and generates a SQL-like query structure. For instance, if the user query is "Show contracts signed with vendors in 2023 above $500,000.", the output should be “SELECT * FROM contracts WHERE vendor_signed_year = 2023 AND value > 500000;”. 
-
 Prism Query Generator can be a standard workflow tool designed as shown below. ![Agent Flow](images/prism-query-generator.png "Agent Flow")
-
-
 2. **Query Processing Tool(Code Tool)** - Executes the generated query using Supabase APIs and returns results. For the above query, this tool finds the high-value contracts as requested by the user. The Query Processing Tool can be a code tool that takes the query as input and invokes an API call with the query as its input. The following code can be used to invoke the API and find the relevant contracts. 
 
 ```json
