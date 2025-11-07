@@ -27,11 +27,9 @@ Customize timing, message frequency, and content to maintain a smooth conversati
 
 <font size="4">AI Safety, Security, and Governance</font>
 
-**Bring Your Own Keys (BYOK) for Encryption**
+**Bring Your Own Key Encryption for Public Cloud SaaS Deployments**
 
-Agent Platform introduces Bring Your Own Keys (BYOK) encryption, enabling enterprises to secure their data while retaining full control and management of their encryption keys. This feature seamlessly integrates with enterprise Key Management Systems, helping organizations meet stringent compliance, security, and regulatory requirements. 
-
-The platform currently supports integration with Azure Key Vault and AWS Key Management Service.
+Agent Platform has introduced Bring Your Own Keys (BYOK) encryption for public cloud SaaS deployments, enabling enterprises to secure their data while retaining full control and management of their encryption keys. This feature seamlessly integrates with enterprise Key Management Systems (Azure Key Vault and AWS Key Management Service) to help meet compliance and security needs.
 
 [Learn more :octicons-arrow-right-24:](../settings/security-and-control/encryption-key-mgmt.md#bring-your-own-key)
 

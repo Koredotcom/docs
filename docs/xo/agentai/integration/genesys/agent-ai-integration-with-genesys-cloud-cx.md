@@ -9,7 +9,7 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
 ## Definitions
 | **Section/Group** | **Key** | **Definition** | **Reference** |
 |--------------------|---------|---------------|---------------|
-| Generate Oauth ID to enable Kore Services to Connect with Genesys<br>+<br>Create an Interaction Widget in Genesys for Agent AI | Agent AI URL | The domain of the Agent AI. | - If it is legacy Agent AI, URL is [https://agentassist.kore.ai](https://agentassist.kore.ai){:target="_blank"}<br>- If it is UXO, URL is [https://platform.kore.ai](https://platform.kore.ai){:target="_blank"}<br>- If it is on-prem, the URL is the origin where your Agent AI is hosted. |
+| Generate Oauth ID to enable Kore Services to Connect with Genesys<br>+<br>Create an Interaction Widget in Genesys for Agent AI | <span id="AAI">Agent AI URL</span> | The domain of the Agent AI. | - If it is legacy Agent AI, URL is [https://agentassist.kore.ai](https://agentassist.kore.ai){:target="_blank"}<br>- If it is UXO, URL is [https://platform.kore.ai](https://platform.kore.ai){:target="_blank"}<br>- If it is on-prem, the URL is the origin where your Agent AI is hosted. |
 |  | Client App | To use any Kore AI Agent SDKs, a client app must be created to get the authentication credentials to communicate between the Kore AI Agent and Agent AI.<br>**Note:** Only the default Client App is supported. | [https://docs.kore.ai/xo/channels/add-web-mobile-client/adding-the-webmobile-client-channel](../../../channels/add-web-mobile-client.md){:target="_blank"} |
 | Create an Interaction Widget in Genesys for Agent AI | Custom Data / x_passthru_metadata | Use this to pass information to Kore AI Agent. |  |
 | Capture AI Agent Information in Kore Data Table | Secure Custom Data / KvpConfig | Use this to pass sensitive information to Kore AI Agent. | [https://docs.kore.ai/xo/sdk/sdk-security/json-web-encryption-jwe](../../../sdk/sdk-security.md/#json-web-encryption-jwe){:target="_blank"} |
@@ -91,64 +91,34 @@ This step involves creating a Genesys Data Table with Agent AI bot details.
 
     !!! note
 
-        **Reference Key** label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.   
-5. Click the “pencil” icon to edit a data table.  
+        **Reference Key** label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.  
+
+    5. Click the “pencil” icon to edit a data table.  
     <img src="../images/pencil-icon.png" alt="pencil-icon" title="pencil-icon" style="border: 1px solid gray; zoom:80%;">   
 
         !!! note 
             Do not click on the data table name.  
 
-6. Click the **Add Field** button under **Custom Fields** to create five custom fields to provide the AgentAssist configuration. Set the data type for all custom fields as **String** while adding.  
+5. Click the **Add Field** button under **Custom Fields** to create five custom fields to provide the AgentAssist configuration. Set the data type for all custom fields as **String** while adding.  
     <img src="../images/custom-fields-add-field.png" alt="custom-fields-add-field" title="custom-fields-add-field" style="border: 1px solid gray; zoom:80%;">  
 
     <img src="../images/add-field-string.png" alt="add-field-string" title="add-field-string" style="border: 1px solid gray; zoom:80%;">   
 
-7. Add the custom fields with Bot details.  
+6. Add the custom fields with Bot details.  
     <img src="../images/bot-details.png" alt="bot-details" title="bot-details" style="border: 1px solid gray; zoom:80%;">  
 
-8. Follow the below conventions for other custom fields. Use the exact names, including upper/lower case.  
+7. Follow the below conventions for other custom fields. Use the exact names, including upper/lower case.  
 
-These values are found in the **Agent AI** > **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details** section.
+These values are found in the **Agent AI** > **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details** section. 
 
-<table>
-  <tr>
-   <td>
-Field Label 
-   </td>
-   <td>                    Default Value
-   </td>
-  </tr>
-  <tr>
-   <td>AgentAssist URL
-   </td>
-   <td><a href="#aurl">Agent AI URL</a>
-   </td>
-  </tr>
-  <tr>
-   <td>Bot Id
-   </td>
-   <td>st-8cb94691-xxxx-xxxx-xxxx-xxxxxxxx
-   </td>
-  </tr>
-  <tr>
-   <td>Client Id
-   </td>
-   <td>cs-b60f544d-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-   </td>
-  </tr>
-  <tr>
-   <td>Client Secret
-   </td>
-   <td>&lt;secret-key from AgentAssist>
-   </td>
-  </tr>
-  <tr>
-   <td>is Audiohook Enabled
-   </td>
-   <td>true / false
-   </td>
-  </tr>
-</table>
+|                      |                                         |
+|----------------------|-----------------------------------------|
+| **Field Label**          | **Default Value**                           |
+| AgentAssist URL      | <a href="#AAI">Agent AI URL</a>                            |
+| Bot Id               | st-8cb94691-xxxx-xxxx-xxxx-xxxxxxxx     |
+| Client Id            | cs-b60f544d-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
+| Client Secret        | &lt;secret-key from AgentAssist>        |
+| is Audiohook Enabled | true / false                            | 
 
 !!! notes
 
@@ -317,7 +287,7 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
 4. Enter the **app name**, **description**, and **token duration** in the **App Name**, **Description**, and **Token Duration** fields. 
 5. Select **Token Implicit Grant (Browser)** in the **Grant Types** section.  
     <img src="../kore-data-table/token-implicit-grant-14.png" alt="token-implicit-grant" title="token-implicit-grant" style="border: 1px solid gray; zoom:80%;"> 
-6. Add {[Agent AI URL](https://platform.kore.ai)}/koreaiaa-genesys/ in the **Authorized redirect URIs** field. 
+6. Add {<a href="#AAI">[Agent AI URL]</a>}/koreaiaa-genesys/ in the **Authorized redirect URIs** field. 
 7. Add the following list of scopes in the **Scope** section: 
     * conversations
     * conversations:readonly
@@ -398,11 +368,11 @@ The “`x_metadata`” value equals the `URL`-`encoded string` of the JSON objec
 
         ```
         {
-           			"datatable": {
-                			"name": <paste datatable name>,
-                			"token": <paste token created in previous step>,
-                			"qDelimiter": <Paste the special character used in the queue name to distinguish the QueueIdentifier from the remaining part of the queue name>
-            			}
+                       "datatable": {
+                            "name": <paste datatable name>,
+                            "token": <paste token created in previous step>,
+                            "qDelimiter": <Paste the special character used in the queue name to distinguish the QueueIdentifier from the remaining part of the queue name>
+                        }
         }
         Website for url encoding - urlencoder
         ```
@@ -751,7 +721,7 @@ For first time users, use the POST API and for existing users, use the PUT API t
             "KvpConfig": <KVPs of SecureCustomData>,
             "JWEPublicKey": <Public Key assigned to Client App>,
             "Algorithm": "HS256",
-    	   "isAgentAISDK": "True"
+           "isAgentAISDK": "True"
         }
     }
 ```

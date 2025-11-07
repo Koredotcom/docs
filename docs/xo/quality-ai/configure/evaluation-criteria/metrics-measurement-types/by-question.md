@@ -22,7 +22,7 @@ By verifying the accuracy of responses, it supports focused feedback, targeted c
 
 * **Training Assessment**: To measure how well agents follow prescribed interaction patterns during customer conversations.
 
-* **Compliance Monitoring**: To verif, how agents deliver critical information, such as disclaimers, privacy policies, or regulatory statements (privacy policies, disclaimers).
+* **Compliance Monitoring**: To verify, how agents deliver critical information, such as disclaimers, privacy policies, or regulatory statements (privacy policies, disclaimers).
 
 * **Performance Standardization**: To apply consistent evaluation criteria across agents and interactions.
 
@@ -46,7 +46,7 @@ The metric operates through a **question-driven evaluation process** with two ma
 
 * Ideal for conditional scenarios where specific responses are required only in certain contexts.
 
-## Configure by Question Metrics
+## Configure by Question Metric
 
 1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
@@ -253,7 +253,7 @@ The metric operates through a **question-driven evaluation process** with two ma
 
 1. Click **Create** to save and activate the By Question configured adherence metric.
 
-## Edit or Delete By Question Metrics
+## Edit or Delete By Question Metric
 
 Steps to edit or delete any existing **By Question** evaluation metrics:
 
