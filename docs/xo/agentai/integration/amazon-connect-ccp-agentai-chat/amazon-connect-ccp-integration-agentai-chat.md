@@ -28,7 +28,7 @@ The integration requires the following components:
 ## Set up an Amazon Connect instance
 
 1. Sign in to your **Amazon Connect** instance.
-2. Go to **Amazon Connect **>** Instances**.
+2. Go to **Amazon Connect**> **Instances**.
 3. Click **Add an instance** to create a new Amazon Connect instance.  
     <img src="../images/add-an-instance_1.png" alt="add-an-instance" title="add-an-instance" style="border: 1px solid gray; zoom:80%;">  
 
@@ -68,7 +68,7 @@ The new instance you created is listed in Amazon Connect.
     <img src="../images/approved-origins_8.png" alt="approved-origins" title="approved-origins" style="border: 1px solid gray; zoom:80%;">  
 
 3. Go to the **Overview** option of the current instance, and click the **URL**. A new web page opens in a different tab with the following screenshot:  
-<img src="../images/amazon-connect-signin-page_9.png" alt="amazon-connect-signin-page" title="amazon-connect-signin-page" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/amazon-connect-signin-page_9.png" alt="amazon-connect-signin-page" title="amazon-connect-signin-page" style="border: 1px solid gray; zoom:40%;">  
 
 4. Sign in with the Administrator credentials you created while creating the instance.  
 This credential gives you admin access to the contact center, allowing you to modify flows and groups, as required.  
@@ -77,9 +77,9 @@ This credential gives you admin access to the contact center, allowing you to mo
 
 1. Get the code base from [this](https://github.com/Koredotcom/korecc-twilio/tree/master/AmazonConnect/Chat_CCP){:target="_blank"} URL.
 2. Change the backend URL in **config.js** under the **scripts/config** folder. This backend URL should provide the bot details and Agent AI iframe token.  
-3. Change the ccpUrl in **initCCP.js**. The ccpUrl should be in the following format: \
+3. Change the ccpUrl in **initCCP.js**. The ccpUrl should be in the following format:   
 *https://[amazon-connect-instance].my.connect.aws/connect/ccp-v2*
-4. Run any light-weight server to access this as a web page. \
+4. Run any light-weight server to access this as a web page.   
 *Example: `python  -m http.server [port-number]`* 
 5. After entering the **local host URL**, you should be able to see the following screen:  
     <img src="../images/welcome-page_10.png" alt="welcome-page" title="welcome-page" style="border: 1px solid gray; zoom:80%;">  
@@ -101,7 +101,7 @@ This credential gives you admin access to the contact center, allowing you to mo
 4. Paste the code into any HTML file, and run a sample application server.  
 *`python  -m http.server [port-number]`*  
 5. You should be able to see the following screen for the chat widget:  
-    <img src="../images/chat-widget_14.png" alt="chat-widget" title="chat-widget" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/chat-widget_14.png" alt="chat-widget" title="chat-widget" style="border: 1px solid gray; zoom:40%;">  
 
     * The following screenshot shows **Amazon Connect** integrated with **Agent AI**:  
         <img src="../images/amazon-connect-with-agentai-chat_15.png" alt="amazon-connect-with-agentai-chat" title="amazon-connect-with-agentai-chat" style="border: 1px solid gray; zoom:80%;">   
