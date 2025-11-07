@@ -327,6 +327,8 @@ nav:
       - Manage Data: settings/data/manage-datasets.md
   - APIs:
       - About Agentic App APIs: apis/agentic-apps/overview.md
+  - APIs:
+      - About Agentic App APIs: apis/agentic-apps/overview.md
       - About Tools APIs: apis/overview.md
       - APIs List: apis/list-of-apis.md
   - Marketplace: ai-agents/agentic-apps/marketplace.md
