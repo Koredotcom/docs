@@ -30,7 +30,7 @@ jobs:
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.agent-platform.yml
+          args: build --strict --config-file=mkdocs.en.agent-platform.yml
       - name: Build EN AI for Process docs
         uses: ./
         with:
