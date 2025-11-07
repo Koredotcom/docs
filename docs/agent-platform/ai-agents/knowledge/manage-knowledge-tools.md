@@ -16,7 +16,7 @@ To associate the Agentic application with a knowledge tool, open the application
 
 To add a new knowledge tool to the application, select one of the following options from the **Create Knowledge Base** drop-down at the top of the page.
 
-* **Create from existing sources** - Associate the Agentic application with an existing Search AI application. If the associated application has indexed content , it becomes readily accessible for use in the agentic app.
+* **Create from existing sources** - Associate the Agentic application with an existing Search AI application. If the associated application has indexed content , it becomes readily accessible for use in the Agentic app.
 * **Create from scratch** - This allows you to create a new Search AI application from scratch. This involves creating a new Search AI application, setting up indexing configurations, and adding content sources to the application for ingestion. Learn More.
 
 ### Create from existing sources
