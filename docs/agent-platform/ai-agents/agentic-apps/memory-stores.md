@@ -7,13 +7,6 @@ Agentic Apps support two main types of memory:
 * **Session Meta Memory**: Default temporary memory for contextual data within a session. This is a default read-only system memory and can't be directly updated by users. 
 * **Custom Memory Stores**: Persistent, user-defined stores that can be read and written to using code tools. The lifetime of the memory store varies as per the access type assigned to the store during creation. 
 
-## Memory Page
-
-The Memory page displays session meta memory and custom memory stores as individual cards, offering clear visibility into each store’s details and access type. It integrates the new memory functionality into existing workflows and shows the total number of memory stores in the app.
-
-<img src="../images/memory-page.png" alt="Memory Interface" title="Memory Interface" style="border: 1px solid gray; style=zoom:70%;">
-
-
 ## Creating Memory Stores
 
 To create a new memory store, go to the Memory page in the app and click on **Create new**.  
@@ -133,7 +126,7 @@ This section is used to control data access and retention.
 </table>
 
 
-**Review** and **save** the configuration to create the memory store. 
+Review and Save the configuration to create the memory store. 
 
 
 ## Accessing Memory Stores from Prompts
@@ -148,18 +141,18 @@ Field-name: name of the field as defined in the schema of the memory store.
 
 ## Accessing Memory Stores from Code Tools
 
-Agentic Apps provide **Memory Stores** to persist data across interactions. These stores can be **read from within prompts, workflow tools, and code tools**, but can be **updated or deleted via code tools or workflow tools**.
+Agentic Apps provide Memory Stores to persist data across interactions. These stores can be *read from within prompts, workflow tools, and code tools*, but can be *updated or deleted via code tools or workflow tools*.
 
-* A Memory store can be **referenced in tools using its technical name only.**
+* A Memory store can be *referenced in tools using its technical name only.*
 * *sessionMeta* can't be manipulated via code tools. 
 
 ### Supported Languages
 
-Memory operations can be performed using **JavaScript** or **Python** in code tools.
+Memory operations can be performed using JavaScript or Python in code tools.
 
 
-* In **JavaScript**, memory methods are **async** and return a **Promise**. Use them with **await** keyword. 
-* In **Python**, methods are **synchronous** and return values directly. 
+* In JavaScript, memory methods are *async* and return a *Promise*. Use them with *await* keyword. 
+* In Python, methods are *synchronous* and return values directly. 
 
 
 ### Reading from Memory Store
@@ -172,8 +165,8 @@ memory.get_content(<store_name>,<projections>)
 
 **Parameters:**
 
-* **store_name**: *(string)* The technical name of the memory store.
-* **projections** *(optional)*: JSON object specifying the fields to retrieve. If omitted, the entire record is returned.
+* store_name(string): The technical name of the memory store.
+* projections(optional): JSON object specifying the fields to retrieve. If omitted, the entire record is returned.
 
 **Javascript Examples**:
 
@@ -199,20 +192,19 @@ Use the following format to create or update a record in the memory store. This 
 
 * Creates a new record if none exists.
 * Updates the existing record if one is found (based on sessionID, userId, or applicationId, depending on the store’s access type).
-
-```
-memory.set_content(<store_name>,<data_object>)
-```
+  ```json
+  memory.set_content(<store_name>,<data_object>)
+  ```
 
 **Parameters:**
 
 * store_name(string): the technical name of the store. 
 * data_object:  A JSON object representing the fields to write or update in the memory store.
 
-**Note**
-
-* Records are stored based on the memory store’s access context: **session**, **user**, or **application**.
-* Fields not included in the update are retained as-is.
+!!!note
+  
+  * Records are stored based on the memory store’s access context: **session**, **user**, or **application**.
+  * Fields not included in the update are retained as-is.
 
 **Javascript Examples**
 
