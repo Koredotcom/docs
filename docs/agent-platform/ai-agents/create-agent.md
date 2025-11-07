@@ -5,7 +5,7 @@ Setting up an agent involves defining its intended purpose, configuring its core
 
 <img src="../images/agent-anatomy.png" alt="Anatomy of an Agent" title="Anatomy of an Agent" style="border: 1px solid gray; zoom:65%;">
 
-## Agents Page
+<!-- ## Agents Page
 
 The **Agents** page displays all agents associated with the Agentic app as individual cards, providing clear visibility into each agent's connected tools and configuration status. It shows the total number of agents in the app.
 
@@ -17,14 +17,11 @@ Key highlights
 * Displays the total agent count in the page header, with **Explore Marketplace** and **New Agent** options always visible.
 
 <img src="../images/agents-listing-page.png" alt="Agent Listing Page" title="Agent Listing Page" style="zoom:70%; border: 1px solid gray;">
+-->
 
 ## Create an Agent
 
-To add a new agent to an app, go to the Agents Apps page, choose the App, and then click **+New Agent**. 
-
-![Add Agent](images/new-agent-pw1.png "Add Agent")
-
-You can also set up the agent during the app creation process. 
+To add a new agent to an app, go to the Agents Apps page, choose the App, and then click **+New Agent**. You can also set up the agent during the app creation process. 
 
 ![Add Agent](images/new-agent-pw.png "Add Agent")
 
