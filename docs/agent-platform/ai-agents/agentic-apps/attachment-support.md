@@ -18,7 +18,8 @@ For selected file types, the platform extracts the content and uses it as contex
 3. Agents use the extracted content to provide contextually relevant responses.
 
 
-!!!abstract Example
+!!!abstract "Examples"
+
   When applying for a job through an HR Assistant agent, users can simply upload their resume instead of manually entering personal and professional details. The assistant automatically extracts the necessary information and uses it in the conversation.
 
 ## File Metadata extraction

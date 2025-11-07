@@ -2,7 +2,7 @@
 
 Prerequisites:
 
-* Add an AI Model that supports tool-calling capabilities. The Agent Platform currently supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
+* Add an AI Model that supports tool-calling capabilities. The Agent Platform supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
 
 
 ## Steps to Create an Agentic App
@@ -13,9 +13,9 @@ Creating an Agentic App broadly consists of the following steps:
 
 ### Step 1: Create an Agentic App
 
-1. Sign in to the [Agent Platform](https://agent-platform.kore.ai/auth/login){:target="_blank"} and go to **Autonomous Agents**.![Create App](images/createapp/home.png "Agentic App Creation")
+1. Sign in to the [Agent Platform](https://agent-platform.kore.ai/auth/login){:target="_blank"} and go to Autonomous Agents. ![Create App](images/createapp/home.png "Agentic App Creation")
 
-2. Click on the **+New App** on the **Agentic Apps** page. This page also lists the existing apps in the workspace.  
+2. Click on the +New App on the Agentic Apps page. This page also lists the existing apps in the workspace.  
 ![Create App](images/createapp/list-apps.png "Agentic App Creation")
 
 3. Enter or select the following details: 
@@ -29,7 +29,7 @@ Creating an Agentic App broadly consists of the following steps:
 
 4. Click **Create App**.  
 
-After the app is created, the app **overview** is displayed. The Overview section provides a structured summary of the app, including linked agents, tools, and knowledge bases. 
+After the app is created, the app overview is displayed. The Overview section provides a structured summary of the app, including linked agents, tools, and knowledge bases. 
 
 * **App Summary** displays essential app details like the LLM selected, orchestration pattern, with an **Edit** option for configuration changes.
 * **The Agents** section shows the autonomous agents of the app. The list displays information about the agents associated with the app, including their name, description, and linked tools. 

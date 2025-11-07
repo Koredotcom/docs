@@ -33,6 +33,6 @@ Users are provided with actionable controls within the diagnostics report to add
 
 * Triaged Issues: Displays previously ignored or resolved errors/warnings for audit visibility.<br>
 * Navigation Links: Allows users to click into specific sections and jump directly to the affected component in the app.<br>
-* Fix Options: Each error or warning includes a **Fix now** or **Ignore** action, enabling immediate remediation or deferral.
+* Fix Options: Each error or warning includes a Fix now or Ignore action, enabling immediate remediation or deferral.
 
 ![Create App](images/createapp/no-errors.png "No errors")
