@@ -2,7 +2,7 @@
 
 Prerequisites:
 
-* Add an AI Model that supports tool-calling capabilities. The Agent Platform currently supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
+* Add an AI Model that supports tool-calling capabilities. The (In)Agent Platform currently supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
 
 
 ## Steps to Create an Agentic App
@@ -13,7 +13,7 @@ Creating an Agentic App broadly consists of the following steps:
 
 ### Step 1: Create an Agentic App
 
-1. Sign in to the Agent Platform and go to **Autonomous Agents**.![Create App](images/createapp/home.png "Agentic App Creation")
+1. Sign in to the (In)Agent Platform and go to **Autonomous Agents**.![Create App](images/createapp/home.png "Agentic App Creation")
 
 2. Click on the **+New App** on the **Agentic Apps** page. This page also lists the existing apps in the workspace.  
 ![Create App](images/createapp/list-apps.png "Agentic App Creation")
@@ -43,7 +43,7 @@ For a completely configured app, the **Overview** section provides a structured 
 Configure agents with appropriate roles and responsibilities within the application.  
 See [How to set up an agent](./../create-agent.md).
 
-Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for Agent Platform](diagnostics-for-agent-platform.md).
+Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for (In)Agent Platform](diagnostics-for-agent-platform.md).
 
 ---
 

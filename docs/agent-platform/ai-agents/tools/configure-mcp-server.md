@@ -64,14 +64,14 @@ If the MCP server includes pre-authorized tools that access Personally Identifia
 
 ## FAQs
 
-**What are MCP tools in the context of the Agent Platform?**
+**What are MCP tools in the context of the (In)Agent Platform?**
 
-In Agent Platform, MCP Tools refer to the tools exposed by MCP servers.
+In (In)Agent Platform, MCP Tools refer to the tools exposed by MCP servers.
 
 **Can I manage multiple MCP servers within an Agentic App?**
 
 Yes, an agentic app can be configured to connect to one or more MCP servers, each exposing its own set of tools.
 
-**Does Agent Platform automatically fetch the latest set of tools from the MCP server?**
+**Does (In)Agent Platform automatically fetch the latest set of tools from the MCP server?**
 
-Currently, the Agent Platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.
+Currently, the (In)Agent Platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.

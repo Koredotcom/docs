@@ -46,7 +46,7 @@ In this document, you will learn how to set up a Condition Node in a tool flow, 
 
 ### Step 1: Open Flow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
+* Log in → In (In)Agent Platform Modules → Click **Tools**.
 * Select your tool → Click **Go to Flow**.
 
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">

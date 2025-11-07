@@ -1,13 +1,13 @@
 # Connect with External Agents
 
-Enterprises often utilize AI agents built on diverse platforms, resulting in a multi-vendor environment. Rebuilding these agents from scratch to work together is costly and inefficient. To solve this, the Agent Platform introduces a Proxy Agent Architecture, a central integration layer that enables seamless connectivity between the existing external agents and the platform. 
+Enterprises often utilize AI agents built on diverse platforms, resulting in a multi-vendor environment. Rebuilding these agents from scratch to work together is costly and inefficient. To solve this, the (In)Agent Platform introduces a Proxy Agent Architecture, a central integration layer that enables seamless connectivity between the existing external agents and the platform. 
 
 Proxy Agent acts as an intermediary, seamlessly relaying communication between the platform and external agents. This approach ensures the translation of protocols while maintaining the performance, security, and functional integrity of the existing agent ecosystem.
 
 
 ## Prerequisites
 
-The External Agents connected to the Agent Platform must adhere to the Agent Protocol.
+The External Agents connected to the (In)Agent Platform must adhere to the Agent Protocol.
 
 ## Set Up
 
@@ -58,7 +58,7 @@ The proxy agent offers a secure and streamlined method for integrating external 
 
 ## Request and Response formats for the External Agent
 
-The Proxy Agent sends the request and response to the Eternal Agent in a specific format. The external agent is expected to consume the input and provide the output in this format for seamless integration. If the external agent varies in its request or response formats, it is recommended to create an adapter that processes the request from the Agent Platform Proxy Agent and converts it according to the external agent's specifications. Similarly, the response from the external agent should be formatted as per the specifications below.
+The Proxy Agent sends the request and response to the Eternal Agent in a specific format. The external agent is expected to consume the input and provide the output in this format for seamless integration. If the external agent varies in its request or response formats, it is recommended to create an adapter that processes the request from the (In)Agent Platform Proxy Agent and converts it according to the external agent's specifications. Similarly, the response from the external agent should be formatted as per the specifications below.
 
 ### Request Format
 
@@ -157,9 +157,9 @@ If your external agent does not follow the expected format discussed above
 
 * Create an adapter to translate incoming and outgoing data.
 * Adapter should:
-    * Accept Agent Platform-defined request structure.
+    * Accept (In)Agent Platform-defined request structure.
     * Convert it to the format required by your external agent.
-    * Reformat the external agent's response to match the Agent Platform’s response structure.
+    * Reformat the external agent's response to match the (In)Agent Platform’s response structure.
 
 ![alt_text](images/externalagents/adapter.png "image_tooltip")
 

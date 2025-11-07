@@ -20,7 +20,7 @@ Key responsibilities include:
 * Resolving conflicts between agent outputs.
 * Verifying and validating responses before presenting to the user.
 
-The Agent Platform follows the Supervisor Pattern for its orchestrator. In this design, a central orchestrator functions as the supervisor, responsible for coordinating the activities of the various agents.
+The (In)Agent Platform follows the Supervisor Pattern for its orchestrator. In this design, a central orchestrator functions as the supervisor, responsible for coordinating the activities of the various agents.
 
 ### Supervisor Pattern
 

@@ -1,13 +1,13 @@
-# Share Contextual Metadata from Agent Platform to AI for Service
+# Share Contextual Metadata from (In)Agent Platform to AI for Service
 
 Agent Platform offers seamless context sharing with AI for service using **event-driven handoffs**. This can be useful to pass the control back to AI for Service for agent transfer or workflow execution without losing any valuable contextual data or conversation history. 
 
 ## How It Works
 
-Contextual metadata is transferred from the Agent Platform to AI for Service using **configured system events** and parameter mapping during the handoff process.
+Contextual metadata is transferred from the (In)Agent Platform to AI for Service using **configured system events** and parameter mapping during the handoff process.
 
 
-### Step 1: Configure the Handoff event in Agent Platform
+### Step 1: Configure the Handoff event in (In)Agent Platform
 
 1. Go to **Settings** > **Events** and enable the Agent Transfer Event.
 2. Set Event Conditions: Configure the specific conditions that trigger the event. Use the **Description** field to specify the condition or logic that triggers the event (e.g., fallback, confidence drop, intent match, explicit request). By default, this event is triggered whenever a conversation needs to be transferred to a human agent.
@@ -31,9 +31,9 @@ Contextual metadata is transferred from the Agent Platform to AI for Service usi
 
 ### Step 2: Handle the metadata in AI for Service Experience Flow
 
-The parameters passed from Agent Platform become available in the AI for Service Experience Flow under the Automation node context.
+The parameters passed from (In)Agent Platform become available in the AI for Service Experience Flow under the Automation node context.
 
-Use the following format to access the metadata passed from the Agent Platform. 
+Use the following format to access the metadata passed from the (In)Agent Platform. 
 
 
 ```json

@@ -5,7 +5,7 @@ Instead of building a tool flow from scratch, **Tool Templates** enable you to a
 You can customize the tool’s actions (how the tool responds) and enhance the automation flow. Simply select a template and import it into the Tools dashboard with zero coding efforts. The template types you can leverage include:
 
 * **Pre-built templates**: These ready-to-deploy templates come with use-case scenarios and pre-configured integrations, like an email auto-replier or an automated grading system.
-* **Customizable templates**: The various node types in the tool flow on the Agent Platform allow you to tailor the tool flow to your business needs.
+* **Customizable templates**: The various node types in the tool flow on the (In)Agent Platform allow you to tailor the tool flow to your business needs.
 
 Tool templates are the foundation for building AI tools. They provide a structure for workflows, ensuring a smooth user experience. They are a reliable and efficient starting point for automating tasks like lead capture, order scheduling, and customer support.  
 
@@ -33,7 +33,7 @@ The **Tools Library Marketplace** offers more than 50 prebuilt tool templates fo
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Agent Platform integrates with the AI for Service marketplace.</p>
+<p>The (In)Agent Platform integrates with the AI for Service marketplace.</p>
 </div>
 
 **Categories**

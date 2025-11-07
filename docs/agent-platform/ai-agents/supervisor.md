@@ -52,4 +52,4 @@ The Supervisor Pattern implements a systematic workflow with clearly defined sta
     * The orchestrator synthesizes a unified response from the combined results of the agents.
     * Delivers the final output to the user.
 
-[Learn more](./agentic-apps/overview.md) - how this pattern is used for orchestrating multiple AI Agents by the Agent Platform.
+[Learn more](./agentic-apps/overview.md) - how this pattern is used for orchestrating multiple AI Agents by the (In)Agent Platform.

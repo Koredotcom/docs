@@ -1,6 +1,6 @@
 # Settings Console for Account Admins
 
-Agent Platform’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage Agent Platform’s system configurations to manage the following:
+(In)Agent Platform’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage (In)Agent Platform’s system configurations to manage the following:
 
 1. [Users](../settings/user-management/users.md){:target="_blank"}
 2. [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
@@ -15,9 +15,9 @@ Agent Platform’s **Settings** console is a centralized management interface th
 
 The **Settings** Console provides administrators comprehensive control and visibility on the user management features available at the following levels, facilitating proactive and improved management.
 
-* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire Agent Platform account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including tool creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
+* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire (In)Agent Platform account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including tool creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
 
-* **Tool level**: User management within the Agent Platform is focused on tool management, emphasizing individual tool deployments and configurations. Each tool's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting tools, assigning roles, overseeing deployments, configuring guardrails, and managing API apps and keys.
+* **Tool level**: User management within the (In)Agent Platform is focused on tool management, emphasizing individual tool deployments and configurations. Each tool's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting tools, assigning roles, overseeing deployments, configuring guardrails, and managing API apps and keys.
 
 This post describes how to access the **Settings** Console and summarizes the modules and features available.
 
@@ -57,7 +57,7 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 * Configuring the connection to your AD.
 * Importing user data from all or specific organization units.
 * Selecting and managing default AD user fields, or adding custom fields, and defining inclusion and exclusion rules for data import and sync.
-* Configuring AD auto sync schedules to ensure user data on Agent Platform remains up-to-date.
+* Configuring AD auto sync schedules to ensure user data on (In)Agent Platform remains up-to-date.
 
 Additionally, you can do the following:
 
@@ -82,7 +82,7 @@ You can also:
 
 - Re-deploy the script after updates or changes.
 
-- Use the script in multiple locations across the Agent Platform, such as in the **Function node** of a tool automation flow.
+- Use the script in multiple locations across the (In)Agent Platform, such as in the **Function node** of a tool automation flow.
 
 Other capabilities include:
 
@@ -118,9 +118,9 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 ## Access Settings Console
 
-To access the **Settings** Console on Agent Platform, follow the steps below:
+To access the **Settings** Console on (In)Agent Platform, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.
@@ -150,7 +150,7 @@ The following modules and features are supported on the **Settings** Console:
 <ul>
 <li>All users across your enterprise network accounts are listed here.</li> 
 <li>A summarized view of the total invited users, active, inactive, and locked users is displayed.</li>
-<li>The user listing with information on all the users across the Agent Platform accounts is displayed with the Name, Email ID, Account Role, and Status is displayed. The account owner is highlighted.</li>
+<li>The user listing with information on all the users across the (In)Agent Platform accounts is displayed with the Name, Email ID, Account Role, and Status is displayed. The account owner is highlighted.</li>
 <li>You can add a new user by sending bulk or individual email invites. Alternatively,  import the user information file directly to the console.</li>
 <li>Set user role when sending the email invite to one of the following:
 <ul>
@@ -173,8 +173,8 @@ The following modules and features are supported on the **Settings** Console:
 
 <p><a href="../../settings/user-management/settings/active-directory" target="_blank">Settings</a></p>
 <ul>
-<li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to Agent Platform seamlessly. Enable automatic data sync between the AD and Agent Platform daily, weekly, or monthly.</li>
-<li><strong>User Settings</strong>: Set up the visibility of user profile information across Agent Platform. Select profile fields and allow edits by the end user.
+<li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to (In)Agent Platform seamlessly. Enable automatic data sync between the AD and (In)Agent Platform daily, weekly, or monthly.</li>
+<li><strong>User Settings</strong>: Set up the visibility of user profile information across (In)Agent Platform. Select profile fields and allow edits by the end user.
 </li>
 <li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they are added to your account.
 </li>
@@ -270,7 +270,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
           <tr>
    <td><a href="../../settings/monitoring/monitoring-custom-scripts" target="_blank">Monitoring - Custom Scripts</a></td>
-   <td>Review and monitor key performance indicators for each internal or external script run that is executed on the Agent Platform via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
+   <td>Review and monitor key performance indicators for each internal or external script run that is executed on the (In)Agent Platform via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
       <td><ul><li>Select a single date or date range to view specific, time-based script performance metrics.</li>
       <li>Analyze failed runs and identify failure patterns.</li>
 <li>Analyze each successful/failed run to ensure optimal usage.</li>
@@ -286,14 +286,14 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
      <tr>
    <td><a href="../../settings/security-and-control/authorization-profile" target="_blank">Security and Control - Authorization Profile</a></td>
-   <td>Allows users to configure authorization profiles using the <b>OAuth2</b> industry standard. With auth profiles, users can efficiently manage and reuse authentication and permission settings across the Agent Platform, eliminating the need to create new authentication mechanisms each time secure access is required.</td>
+   <td>Allows users to configure authorization profiles using the <b>OAuth2</b> industry standard. With auth profiles, users can efficiently manage and reuse authentication and permission settings across the (In)Agent Platform, eliminating the need to create new authentication mechanisms each time secure access is required.</td>
       <td><ul><li>Set up new authorization field for your authorization profiles.</li>
 <li>Configure the required auth parameters, including additional auth fields.</li>
 <li>Edit or delete existing auth profiles.</li></ul></td>
   </tr>
   <tr>
    <td><a href="../../settings/security-and-control/api-scopes" target="_blank">Security and Control - API Scopes</a></td>
-   <td>Create and manage API-scoped apps, assign API keys, and select scopes to control access to specific endpoints. Restrict access to authorized users and prevent unauthorized use across the Agent Platform.</td>
+   <td>Create and manage API-scoped apps, assign API keys, and select scopes to control access to specific endpoints. Restrict access to authorized users and prevent unauthorized use across the (In)Agent Platform.</td>
       <td><ul><li>Create an API app.</li>
       <li>Select the required API scopes while configuring the app.</li>
 <li>Generate one or more API keys to provide secure access for authorized users.</li>

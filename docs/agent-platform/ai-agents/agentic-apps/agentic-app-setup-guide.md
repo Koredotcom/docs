@@ -1,6 +1,6 @@
 # Agentic App Setup Guide
 
-This guide walks you through setting up your first Agentic App on the Agent Platform. By following these steps, you'll learn how to create an account, configure your app, thoroughly test it, and deploy it to production.
+This guide walks you through setting up your first Agentic App on the (In)Agent Platform. By following these steps, you'll learn how to create an account, configure your app, thoroughly test it, and deploy it to production.
 
 ## Setup Process
 
@@ -13,15 +13,15 @@ The Agentic App setup process consists of the following phases:
 
 ### 1. Foundation Phase
 
-1. **Sign Up for the Agent Platform**: The Agent Platform onboarding journey starts with creating an account. Upon successful signup, the platform will automatically provision a dedicated workspace for your projects.</br>
-If you've already set up AI for Service, both your existing workspaces and shared workspaces will be visible, but you'll need separate access permission from workspace owners to use shared workspaces in the Agent Platform.
-1. **Configuring Large Language Models (LLMs)**: The Agent Platform leverages the power of LLMs to enable the intelligence of your agents. The platform supports integration with various LLM providers, including OpenAI, Azure OpenAI, Anthropic, and Gemini. Select the preferred model based on your specific use case and configure it. [Learn more](../../models/overview.md){:target="_blank"}.
-2. **Create an Agentic App**: An Agentic App is the core application you will build on the Agent Platform. You can create an Agentic App from scratch on the platform, import a pre-built app, or install an existing one from the marketplace. [Learn more](create-app.md){:target="_blank"}.
+1. **Sign Up for the (In)Agent Platform**: The (In)Agent Platform onboarding journey starts with creating an account. Upon successful signup, the platform will automatically provision a dedicated workspace for your projects.</br>
+If you've already set up AI for Service, both your existing workspaces and shared workspaces will be visible, but you'll need separate access permission from workspace owners to use shared workspaces in the (In)Agent Platform.
+1. **Configuring Large Language Models (LLMs)**: The (In)Agent Platform leverages the power of LLMs to enable the intelligence of your agents. The platform supports integration with various LLM providers, including OpenAI, Azure OpenAI, Anthropic, and Gemini. Select the preferred model based on your specific use case and configure it. [Learn more](../../models/overview.md){:target="_blank"}.
+2. **Create an Agentic App**: An Agentic App is the core application you will build on the (In)Agent Platform. You can create an Agentic App from scratch on the platform, import a pre-built app, or install an existing one from the marketplace. [Learn more](create-app.md){:target="_blank"}.
 
 ### 2. Configuration Phase
 
 1. **Set Up Agents**: Configure individual intelligent agents within your application, assigning them specific roles, responsibilities, and potentially initial capabilities. Define how they will leverage the configured LLMs and available tools to perform their tasks. [Learn more](../create-agent.md){:target="_blank"}.
-2. **Knowledge Integration**: The Agent Platform provides Retrieval-Augmented Generation (RAG)-based search functionality across diverse content sources, including enterprise knowledge bases, document repositories, FAQs, and external systems, through the Search AI application. This advanced RAG-driven integration empowers your autonomous agents to deliver accurate, context-aware, and timely responses by leveraging relevant information from connected knowledge sources. [Learn more](../knowledge/overview.md){:target="_blank"}.
+2. **Knowledge Integration**: The (In)Agent Platform provides Retrieval-Augmented Generation (RAG)-based search functionality across diverse content sources, including enterprise knowledge bases, document repositories, FAQs, and external systems, through the Search AI application. This advanced RAG-driven integration empowers your autonomous agents to deliver accurate, context-aware, and timely responses by leveraging relevant information from connected knowledge sources. [Learn more](../knowledge/overview.md){:target="_blank"}.
 3. **Configure Tools**: Tools enable agents to execute tasks by interacting with external systems, retrieving data, and triggering workflows. They serve as functional extensions of an agent’s intelligence, allowing seamless interaction with third-party applications, logic-based operations, and workflow automation.
     * **Workflow Tool**: These provide a no-code, visual interface for designing and orchestrating agent actions. Users can define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes that benefit from structured execution. [Learn more](../tools/workflow-tools.md){:target="_blank"}.
     * **Code Tool**: Designed for flexibility and precision, Code Tools allow agents to execute custom scripts for tailored operations. Developers can leverage JavaScript or Python to implement advanced logic, integrate with intricate systems, and automate complex workflows where predefined configurations are insufficient. [Learn more](inline-tools.md){:target="_blank"}.

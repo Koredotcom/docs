@@ -40,14 +40,14 @@ In this document, you will learn how to add and configure DocSearch Nodes with S
 
 Configuring the DocSearch Node consists of the following steps:
 
-1. [Set up a Search AI application and the information source for Agent Platform integration](../types-of-nodes/docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
-2. [Link the Search AI application in Agent Platform](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
+1. [Set up a Search AI application and the information source for (In)Agent Platform integration](../types-of-nodes/docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
+2. [Link the Search AI application in (In)Agent Platform](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
 3. [Add and configure the DocSearch node](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"}.
 4. [Test the Flow](../types-of-nodes/docsearch-node.md/#step-4-test-the-flow) you have built.
 
 ## Step 1: Set up Search AI App
 
-The integration of Search AI with Agent Platform involves setting up a Search AI application, configuring it for integration, and modifying Agent Platform to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
+The integration of Search AI with (In)Agent Platform involves setting up a Search AI application, configuring it for integration, and modifying (In)Agent Platform to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
 
 Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-introduction/#creating-and-managing-jwt-apps-in-xo-platform){:target="_blank"} to complete the configuration.
 
@@ -56,11 +56,11 @@ Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-int
 <p>To receive answers from Search AI, you must enable the <b><i>Answer Generation</i></b> option under the <b>API scopes</b> section.</p></div>
 
 
-## Step 2: Link the Search AI App in Agent Platform
+## Step 2: Link the Search AI App in (In)Agent Platform
 
-After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in Agent Platform. 
+After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in (In)Agent Platform. 
 
-**Steps to integrate Search AI in Agent Platform**
+**Steps to integrate Search AI in (In)Agent Platform**
 
 * Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">

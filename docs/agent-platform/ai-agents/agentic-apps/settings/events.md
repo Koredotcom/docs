@@ -3,10 +3,10 @@
 Events in the Agentic App signify critical moments within a user's conversation journey. These events are essential for managing important transitions, including the initiation and conclusion of conversations, as well as the handoff to human agents. By capturing these natural dialogue transitions, these system events aim to enhance clarity, consistency, and control over the conversational flow. By standardizing how conversations begin, evolve, and conclude, the app facilitates a seamless user experience.
 
 Events are automatically triggered by the application at specific points in the conversation, based on the conditions described in each event’s **description** field. These descriptions define the conversational context or user action that causes the event to fire.
-The Agent Platform enables developers to configure and customize the app’s behavior in response to these events, allowing tailored responses, workflows, or actions that align with the intent and flow of the conversation.
+The (In)Agent Platform enables developers to configure and customize the app’s behavior in response to these events, allowing tailored responses, workflows, or actions that align with the intent and flow of the conversation.
 
 
-Currently, Agent Platform supports the following three system events. By default, all the events are disabled. Go to the *Events* page under Settings, click on the *edit* icon to enable and configure them.
+Currently, (In)Agent Platform supports the following three system events. By default, all the events are disabled. Go to the *Events* page under Settings, click on the *edit* icon to enable and configure them.
 
 ![Events](images/events/home.png "Events Page")
 
@@ -29,7 +29,7 @@ To enable and configure the Welcome event, follow these steps:
 By default, this event is triggered when an agent handoff is requested in a conversation. Use the Description field of the event to configure the detection of this event. Use the following properties to configure the event. 
 
 * **Status** - Enable this to allow the agent to trigger this event. 
-* **Invoke Human Agent** - Currently, Agent Handoff can be handled only through the Automation Node in AI for Service. When the event is triggered, the Agent Platform sends session information via the variables listed below to the specified automation node within the AI for Service flows. The automation node subsequently processes the agent transfer request according to the connection rules established for the transfer in the node.
+* **Invoke Human Agent** - Currently, Agent Handoff can be handled only through the Automation Node in AI for Service. When the event is triggered, the (In)Agent Platform sends session information via the variables listed below to the specified automation node within the AI for Service flows. The automation node subsequently processes the agent transfer request according to the connection rules established for the transfer in the node.
 * **LLM Collected Event Parameters**: Define one or more fields to capture key details from the conversation when this event is triggered. This feature leverages the LLM to extract relevant information from the conversation context and populate the defined fields. These fields can then be passed to an agent during handoff. For example, you might configure a field to capture an interaction summary, which the agent can use for context during live support. To configure these parameters, specify the parameter name and describe the expected content in the field. The application uses the LLM to infer and fill in these fields based on the ongoing conversation.
 * **System Defined Parameters**: Use this option to define fields that capture specific details from the conversation, which must be passed to an external system. Unlike LLM-collected parameters, these do not rely on the LLM. Instead, they are directly retrieved from the existing context or memory.
 These fields are useful for passing data, such as user IDs, user choices, etc, that is already available during the conversation. To configure system-defined parameters:
