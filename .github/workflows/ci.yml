@@ -22,7 +22,7 @@ jobs:
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.en.business-productivity.yml
-      - name: Build EN Agent Platform docs
+      - name: Build EN (In)Agent Platform docs
         uses: ./
         with:
           entrypoint: mkdocs
