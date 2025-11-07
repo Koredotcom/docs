@@ -27,7 +27,7 @@ Steps to create a JWT Client App from the Platform:
 
 5. Select **Enforce JTI**, **JWE**, or both as per your requirements to secure the connections with the Platform:
 
-    * **Enforce JTI (JWT ID) Claim** – Once enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
+    * **Enforce JTI (JWT ID) Claim** – After enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
 
     * **Enforce JWE Encryption** (Generating JWT token) – To access the Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
 
@@ -105,7 +105,7 @@ You can define apps to securely access the data from data tables and data views.
 
 ## Associating API Scopes
 
-Once you create a client JWT app, you can associate it with API scopes.
+After you create a client JWT app, you can associate it with API scopes.
 
 
 ### Adding API Scopes in the XO Platform
@@ -136,7 +136,7 @@ Steps to associate API Scopes to a Client App from the Admin Console:
 
 5. Click the **Manage Apps** link to create a new app.
 
-6. Once you select an app, the **Client ID** and **Client Secret** appear. Copy these values.
+6. After you select an app, the **Client ID** and **Client Secret** appear. Copy these values.
 
 7. Under the Scopes section, select the appropriate Scopes to allow the client app to access the respective APIs. [Learn more](../../administration/security-and-control/api-scopes.md).
 
@@ -295,12 +295,13 @@ Steps to associate API Scopes to a Client App from the Admin Console:
 </table>
 
 
-!!!note
-    Once enabled, the API Scopes must be Published. [Follow the Publish](../../deploy/publishing-bot.md) process to ensure that the API Scopes are selected.
+!!! note
+    
+    After enabled, the API Scopes must be Published. [Follow the Publish](../../deploy/publishing-bot.md) process to ensure that the API Scopes are selected.
 
 ## Generating the JWT Token
 
-Once you have associated the API scopes with a client app, you must generate the JWT token for API requests.
+After you have associated the API scopes with a client app, you must generate the JWT token for API requests.
 
 Steps to generate the token:
 
