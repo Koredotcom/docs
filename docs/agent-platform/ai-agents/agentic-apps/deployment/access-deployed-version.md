@@ -1,6 +1,6 @@
 # Access Deployed Version
 
-Integrating and managing a deployed Agentic app involves embedding it within your website, ensuring secure access, and monitoring user activity. Seamless integration is achieved through the Webclient Script, authentication is managed via generated API keys, and user actions are tracked using audit logs, all of which contribute to a secure, branded, and user-friendly experience.
+Integrating and managing a deployed Agentic app involves embedding it within your application, ensuring secure access, and monitoring user activity. Seamless integration is achieved through the Webclient Script, authentication is managed via generated API keys, and user actions are tracked using audit logs, all of which contribute to a secure, branded, and user-friendly experience.
 
 ## Integrate the App within a Website via Webclient Script
 
@@ -8,14 +8,14 @@ The Webclient Script provides a simple integration method for embedding the Agen
 
 ### Key Features and Benefits 
 
-* **Single-Script Integration:** Add the application with just one `<script>` tag.
-* **Seamless User Experience:** Users can interact directly with the app within your website.
-* **Customizable Appearance:** Configure to match your brand's look and feel.
-* **Seamless Session Management:** Maintains user context and authentication state between the site and the app.
+* Single-Script Integration: Add the application with just one `<script>` tag.
+* Seamless User Experience: Users can interact directly with the app within your website.
+* Customizable Appearance: Configure to match your brand's look and feel.
+* Seamless Session Management: Maintains user context and authentication state between the site and the app.
 
 ### Steps to Access the Webclient Script for an App
 
-1. Go to the **Environments** page of the app.
+1. Go to the Environments page of the app.
 1. Select the environment tile for which you want to access the script.  
    <img src="../images/webclient-script.png" alt="Webclient script" title="Webclient script" style="border: 1px solid gray; zoom:80%;">
 1. Click **Embed Code**.  
