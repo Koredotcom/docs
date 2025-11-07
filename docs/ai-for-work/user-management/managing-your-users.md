@@ -81,8 +81,6 @@ The User Roles feature allows administrators to control user access through pred
 ### **Modifying Existing Roles**
 
 1. Click on the existing role you want to modify.
-<img src="../images/user-role-1.png" alt="user-details" title="user-details" style="border: 1px solid gray; zoom:80%;"> 
-
 2. Select the desired role.
 3. Confirm changes.
 
