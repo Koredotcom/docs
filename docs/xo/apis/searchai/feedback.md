@@ -128,7 +128,7 @@ This API is used to capture user feedback and store it within Search AI, where i
 
 
 ```json
-curl --location 'https://staging-xo.korebots.com/api/public/bot/st-66c4xxxx-6eae-5ada-b0f8-a2022e945a10/search/feedback' \
+curl --location 'https://env.domain.com/api/public/bot/st-66c4xxxx-6eae-5ada-b0f8-a2022e945a10/search/feedback' \
 --header 'auth: eyJhbGciOiJaxxxxxxx_abcd' \
 --header 'Content-Type: application/json' \
 --data '{

@@ -218,6 +218,24 @@ A previous script node has not set the “isCustomerX” context tag.
 <strong>Extracted Value</strong> “none”
    </td>
   </tr>
+<tr>
+   <td><strong>isCurrencyCode</strong>
+   </td>
+   <td>true/false
+   </td>
+   <td>This parameter determines currency code identification in multilingual setups — True enables identification, while False disables it.
+   </td>
+  </tr>
+  <tr>
+   <td colspan="3" >Example
+<br>
+<code>{</code>
+<br>
+<code>"isCurrencyCode": &lt;true/false></code>
+<br>
+<code>}</code>
+   </td>
+  </tr>
 </table>
 
 

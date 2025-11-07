@@ -52,7 +52,7 @@ The exported package includes the following JSON files encapsulating the workflo
 
 * ***flow_definition.json***: It includes the workflow's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.
 * ***app_definition.json:*** It includes general information about the workflow version and guardrails.
-* ***env_variables.json***: It includes the environment variables set for the workflow. [Learn more](../workflows/configure-a-tool.md){:target="_blank"}.
+* ***env_variables.json***: It includes the environment variables set for the workflow. [Learn more](../workflows/configure-a-workflow.md){:target="_blank"}.
 
 <img src="../images/exported-files.png" alt="exported files" title="exported files" style="border: 1px solid gray; zoom:75%;">
 
@@ -68,6 +68,6 @@ The file information is displayed as follows:
 
 ## Related Links
 
-* [Import a workflow](./import-a-tool.md){:target="_blank"} - Create a workflow by importing configurations or add it as a version to an existing workflow.
-* [Deploy a workflow](./deploy-a-tool.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for workflow integration.
-* [Configure a workflow](./configure-a-tool.md){:target="_blank"} - Modify the workflow's details, configure settings, or undeploy and delete it if unused.
+* [Import a workflow](./import-a-workflow.md){:target="_blank"} - Create a workflow by importing configurations or add it as a version to an existing workflow.
+* [Deploy a workflow](./deploy-a-workflow.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for workflow integration.
+* [Configure a workflow](./configure-a-workflow.md){:target="_blank"} - Modify the workflow's details, configure settings, or undeploy and delete it if unused.

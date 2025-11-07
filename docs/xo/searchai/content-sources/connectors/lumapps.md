@@ -97,7 +97,7 @@ In LumApps, content is managed using various content types. Search AI enables th
 
 Each page, post, news item, or custom content item is ingested as a separate document in Search AI. 
 
-The **resource_type** field identifies whether the record is a content object or a community post. The **doc_source_type** field in the ingested content specifies the type of content object (e.g., page, news, or custom). The content field contains the textual content from the ingested record. Other details like title, URL, creation, and updation date are captured in respective fields.
+The **resource_type** field identifies whether the record is a content object or a community post. The **doc_source_type** field in the ingested content specifies the type of content object (for example, page, news, or custom). The content field contains the textual content from the ingested record. Other details like title, URL, creation, and update date are captured in respective fields.
 
 
 ### Handling attachments in LumApps
