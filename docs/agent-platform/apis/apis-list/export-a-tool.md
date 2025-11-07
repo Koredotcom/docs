@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+
 # Export a Tool API
 
 This API exports a tool's configuration and associated data, including its flow  for backup, sharing, or reuse. It allows users to generate an export of a specific tool along with its deployed call flow.
@@ -33,7 +35,9 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 **How to obtain toolId or callflowId for the API?**
 
@@ -93,8 +97,8 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
 ## Sample Request
 
 ```js
-curl --location --request POST 'https://{host}/api/public/tools/a-3xxxxxxxxxxxxxxxxxx3/export' \
---header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxxxxxx3' \
+curl --location --request POST 'https://{host}/api/public/tools/a-3xxxxxxxxxxxxxxxxxx3/export' 
+--header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxxxxxx3' 
 --header 'Content-Type: application/json'
 ```
 

@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+
 # Sessions API
 
 Endpoints for managing conversational sessions with your Agentic App.

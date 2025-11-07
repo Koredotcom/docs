@@ -15,12 +15,12 @@ The Marketplace is ideal for professionals seeking rapid prototyping, scalable d
 
 ## Usage approaches
 
-### Deploy the complete app
+### Install a complete app
 
 Start with a fully functional agentic app:
 
 * Select a pre-built app matching your business needs.
-* Deploy as-is for immediate value.
+* Install the app to create agents and tools in your workspace.
 * Customize agents and tools to fit specific requirements.
 
 ### Enhance existing app
@@ -45,8 +45,6 @@ Extend your current app:
 
 3. Choose the required tools from the dropdown menus, then select **Install App > Proceed to Import**.
 
-       <img src="../images/proceed-to-import.png" alt="Install the app" title="Install the app" style="border: 1px solid gray; zoom:80%;">
-
 4. **Setup is complete**:
     * The app, agents, and tools are created in your workspace.
     * (Optional) Connect to Search AI for knowledge base integration. [Learn more about Knowledge Tool Integration](../knowledge/overview.md){:target="_blank"}.
@@ -66,9 +64,9 @@ Extend your current app:
 
 2. Browse by category and select an agent to view its capabilities, associated tools, model compatibility, and language support.
 
-    <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 2px solid gray; zoom:50%;">
 
-3. Select **Select Tools > Install**, then proceed with **Import**.
+3. Choose **Select Tools > Install**, then proceed with **Import**.
 
     <img src="../images/import-an-agent.png" alt="Agent import" title="Agent import" style="border: 1px solid gray; zoom:30%;">
 
@@ -80,7 +78,7 @@ Before testing and deploying an Agentic app, use the Diagnostics to validate its
 
 ### Simulate and Test
 
-Before deploying, validate your configuration:
+Before deployment, validate your configuration:
 
 * Assess agent responses and behaviors.
 * Confirm tool integrations.
@@ -93,7 +91,7 @@ See [Simulate and Test the App](app-testing.md){:target="_blank"}.
 After successful testing:
 
 * Finalize configurations.
-* Deploy across target environments.
+* Deploy the app across target environments.
 * Monitor performance and usage.
 
 See [App Deployment Guide](../agentic-apps/deployment/app-deployment.md){:target="_blank"}.

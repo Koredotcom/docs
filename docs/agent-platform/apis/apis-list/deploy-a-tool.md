@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+
 # Deploy a Tool API
 
 This API deploys a specific tool into an environment. It allows the user to control the deployment process either synchronously or asynchronously, depending on the value of the <code>isAsync</code> parameter.
@@ -32,7 +34,9 @@ The API response includes the **tool ID** and the **tool deployment status**. Af
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Path Parameters
 
@@ -72,9 +76,9 @@ The API response includes the **tool ID** and the **tool deployment status**. Af
 ## Sample Request
 
 ```js
-curl --location 'https://{host}/api/public/tools/a-0xxxxxxxxxxxxxxxxxxe/deploy' \
---header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxxxb-9xx5-cxxxxxxxxx3' \
---header 'Content-Type: application/json' \
+curl --location 'https://{host}/api/public/tools/a-0xxxxxxxxxxxxxxxxxxe/deploy' 
+--header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxxxb-9xx5-cxxxxxxxxx3' 
+--header 'Content-Type: application/json' 
 --data '{
   "isAsync": false
 }'
