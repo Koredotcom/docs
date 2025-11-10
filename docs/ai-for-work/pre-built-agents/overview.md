@@ -15,7 +15,7 @@ Currently, the following prebuilt agents are available:
 * **Jira** - It can retrieve issues based on user queries using entity filters and effortlessly create Jira issues using AI intelligence derived from action items.
 * **HubSpot** - It helps in pulling deals based on user queries.
 * **Google Calendar** - It can create calendar events, fetch the events based on filters, check colleagues' availability, and send quick messages in case of a delay in joining meetings.
-* **Google mail** - It can get emails based on user queries fetching entities, send responses as emails, set individual emails as context, and ask for follow-ups.
+* **Google Mail** - It can get emails based on user queries fetching entities, send responses as emails, set individual emails as context, and ask for follow-ups.
 * **Google Drive** - It can fetch files based on user queries and filters, set individual files as context, and ask follow-up questions.
 
 ## Publish a Pre-Built Agent
