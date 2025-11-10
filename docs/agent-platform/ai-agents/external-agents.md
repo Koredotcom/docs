@@ -16,7 +16,7 @@ The External Agents connected to the Agent Platform must adhere to the Agent Pro
 
 ### Enabling External Agents
 
-Go to the app's **Overview** page. Click the edit icon at the top right of the App Profile section and enable **External Agents** as shown below. 
+Go to the app's Overview page. Click the edit icon at the top-right of the App Profile section and enable External Agents as shown below. 
 
 ![Enable External Agent](images/externalagents/enable-agent.png "Enable External Agent")
 
@@ -33,16 +33,16 @@ Provide the following configuration details for the external agent and click **S
 
 * **External Platform**: Give a unique and identifiable name of the platform to which this external agent connects.
 * **Request Definition**: Define the complete structure and configuration required for the proxy agent to call the external agent via its API. This includes specifying the HTTP method, endpoint URL, headers, request body, and expected response format. 
-    * HTTP Method - Specify the HTTP method used by the API call (e.g., GET, POST, PUT, DELETE).
-    * URL - Enter the full endpoint URL to which the request will be sent. 
+    * HTTP Method - Specify the HTTP method used by the API call (for example, GET, POST, PUT, DELETE).
+    * URL - Enter the full endpoint URL to which the request will be sent.
     * Request Headers - Key-value pairs sent with the request to provide context or authorization.
-    * Request Body - If the method supports or requires a payload (e.g., POST, PUT), specify the body structure. Refer to the Request and Response format of the agent below. 
+    * Request Body - If the method supports or requires a payload (for example, POST, PUT), specify the body structure. Refer to the Request and Response format of the agent below. 
     * Response - The response from the API is displayed here when the Test is initiated with sample values.
 
 Click on the Test button to initiate a sample request to the external agents and verify the connection and response format. 
 
 * **Asynchronous Integration** - This property specifies whether the response expected from the external agent is synchronous or asynchronous. If this field is enabled, the proxy agent shows a URL that can be used as a callback URL from the external agent.
-* **Timeout** - This property specifies the maximum duration (in seconds) the proxy agent will wait for a response from the external agent. If a response is not received within this specified time, the request is considered to have failed due to a timeout error.
+* **Timeout** - This property specifies the maximum duration (in seconds) the proxy agent will wait for a response from the external agent. If a response isn't received within this specified time, the request is considered to have failed due to a timeout error.
 * **Route Response to User** - When enabled, the response from the external agent is directly presented to the user, bypassing the supervisor. This allows response to be presented in real time. Also, the response is delivered as it is without any modification or enrichment. This is ideal for scenarios where real-time responsiveness is prioritized and the external agent is fully trusted to handle user queries independently.
 
 ## Key Characteristics of the Proxy Agent
@@ -95,10 +95,10 @@ Following is the format of the request object sent from the Proxy agent to the e
 * sessionIdentity: This field is used to maintain sessions in conversations. This field can be used to specify app sessions or user sessions. 
 * input: This field is used to pass the actual input to the external agent. 
 * debug: This field enables debug mode in the external agent. Set the ‘enable’ field to true and debugMode to “thoughts”. If debugging is enabled, the response from the external agent is expected to include debug information. 
-* stream: This field enables the streaming of the response from the external agent. Set the ‘enable’ field to true and set streamMode to one of the following: token or messages. The ‘streamMode’ refers to how **AI-generated responses are streamed back to the user**.
-    * Token - Streams output **token-by-token**
-    * Messages - Streams **complete message chunks**. 
-    **Currently, only messages are supported.** 
+* stream: This field enables the streaming of the response from the external agent. Set the ‘enable’ field to true and set streamMode to one of the following: token or messages. The ‘streamMode’ refers to how AI-generated responses are streamed back to the user.
+    * Token - Streams output token-by-token
+    * Messages - Streams complete message chunks. 
+  Currently, only messages are supported.
 * metadata: This field allows users to pass metadata information. This data is then available in the sessionMeta memory and is available for the duration of the session. 
 
 Learn More about the fields [here](../apis/agentic-apps/execute.md). 
@@ -153,7 +153,7 @@ Where,
 
 ## Handling Format Variations
 
-If your external agent does not follow the expected format discussed above
+If your external agent doesn't follow the expected format, follow the steps listed below. 
 
 * Create an adapter to translate incoming and outgoing data.
 * Adapter should:
