@@ -7,9 +7,9 @@ This document provides detailed instructions on integrating the Agent AI widget 
 This section outlines the essential components, credentials, and permissions required for integrating Agent AI Chat with ServiceNow.
 
 * Required Components:
-    * ServiceNow Developer Instance
-        * Washington DC release or higher
-        * Configured to receive desktop chats
+    * ServiceNow Instance
+    * Xanadu, Yokohama, or Zurich release
+    * Configured to receive desktop chats
     * Agent AI Account
         * Enabled Web/Mobile channel
         * Required AI Agent credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **agent ai** > **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
@@ -114,11 +114,11 @@ This section details the steps to set up the Agent AI app configuration.
 #### V2-V3 Migration
 
 * For version 2 (v2) of Agent AI, **https://agentassist.kore.ai** (or the domain where the Agent AI is hosted), you should add this to the Agent AI URL.  
-Sample v2 URL: https\://<domain-name\>.kore.ai
+Sample v2 URL: https://<domain-name\>.kore.ai
 
-* For version 3 (v3), you must copy the Agent AI widget URL from the Agent UXO v11 Channel configuration and paste it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. 
+* For version 3 (v3), you must copy the Agent AI widget URL from the Agent UXO v11 Channel configuration and paste it into the Agent AI URL field. For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. 
 
-    Sample v3 URL: https\://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
+    Sample v3 URL: https://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
 
 ### Step 3: Test the Integration
 
