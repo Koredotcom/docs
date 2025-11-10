@@ -108,8 +108,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -498,6 +498,7 @@ nav:
         - Voice Campaigns: contactcenter/campaigns/campaign-management/voice-campaigns.md
         - SMS Campaigns: contactcenter/campaigns/campaign-management/sms-campaigns.md
         - Proactive Web Campaigns: contactcenter/campaigns/campaign-management/proactive-web-campaigns.md
+        - Logs: contactcenter/campaigns/campaign-management/logs.md
       - List Management: contactcenter/campaigns/list-management/list-management.md
       - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
