@@ -1,7 +1,5 @@
 
-
-
-# About LLM Integration
+# About LLM Integration (DRAFT)
 
 The Platform enables you to configure and integrate with leading LLM providers, bring-your-own (BYO) models, and the Kore.ai XO GPT module to power your AI Agent's generative AI capabilities. This integration framework provides a comprehensive solution for enterprises to leverage language models while maintaining security, monitoring usage, and controlling costs.
 
@@ -78,7 +76,7 @@ You can use the variables to authorize the integration, as shown in the followin
 
 === "Provider's New LLM"
 
-    For example, Azure OpenAI. Refer [Provider's New LLM](configure-llm-integration.md#providers-new-llm). 
+    For example, Azure OpenAI. Refer [Provider's New LLM](configure-llm-integration.md). 
     <img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
  
     In the next step, enter the sample values in the Test Connection pop-up. You can select the checkbox to save these values for future use.  
@@ -120,9 +118,5 @@ To track token consumption, enable the Token Usage Limit toggle and configure th
   * **Send Notification at**: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
   * **Send to Users**: Enter the email addresses of users who should receive the usage notification email.  
   <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
-
-
-
-
 
 
