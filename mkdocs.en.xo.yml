@@ -621,7 +621,8 @@ nav:
     - About GenAI Tools: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
     - Models Library:
-      - LLM Integration: generative-ai-tools/models-library.md
+      - About LLM Integration: generative-ai-tools/models-library.md
+      - Configure LLM Integration: generative-ai-tools/configure-llm-integration.md
       - Kore.ai XO GPT Module: 
         - About XO GPT Module: generative-ai-tools/xo-gpt-module.md
         - XO GPT Model Specifications:
