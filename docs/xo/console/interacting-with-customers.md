@@ -204,13 +204,13 @@ In addition to After Call Work (ACW), Agents also have access to the following c
 
 ## Voicemail
 
-If auto answer mode is enabled in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings), the transcript and recording appear automatically in the conversation tray of the agent.
+If auto answer mode is enabled in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings), the transcript and recording appear automatically in the conversation tray of the agent.  
+<img src="../images/next-in-queue-voicemail.png" alt="Next in Queue - Voicemail" title="Next in Queue - Voicemail" style="border: 1px solid gray; zoom:50%;">
 
-If manual mode is enabled, a notification is displayed on the [Next in Queue Notification](../console/managing-incoming-interactions.md#next-in-queue-notifications) panel. The agent must accept the voicemail, although no inbound conversation slots are consumed.  
-<img src="../images/next-in-queue-voicemail.png" alt="Next in Queue (Voicemail)" title="Next in Queue (Voicemail)" style="border: 1px solid gray; zoom:50%;">
+If manual mode is enabled, a notification is displayed on the [Next in Queue Notification](../console/managing-incoming-interactions.md#next-in-queue-notifications) panel. The agent must accept the voicemail, although no inbound conversation slots are consumed.
 
 When the agent accepts the voicemail, the transcript and recording are displayed on the interaction pane. The agent can play, transfer, call (outbound), and download the voicemail from the interaction pane.  
-<img src="../images/voicemail-playback.png" alt="Voicemail Playback" title="Voicemail Playback" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/voicemail-playback.png" alt="Voicemail Playback" title="Voicemail Playback" style="border: 1px solid gray; zoom:70%;">
 
 ### Callback Option
 
@@ -220,10 +220,10 @@ You can call the customer as follows:
 <img src="../images/callback button.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:50%;">
 
 2. The outbound call dialer is displayed. Click the **Call** button to initiate the outbound call.  
-<img src="../images/dialpad-call-button.png" alt="Dialpad Call Button" title="Dialpad Call Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/dialpad-call-button.png" alt="Dialpad Call Button" title="Dialpad Call Button" style="border: 1px solid gray; zoom:70%;">
 
 3. The agent can continue the conversation.  
-<img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:70%;">
 
 ### Consult Call, Conference Call, and Warm Transfer for Voice Calls
 

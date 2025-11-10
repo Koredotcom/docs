@@ -73,7 +73,7 @@ You can make the report public by following the above steps and clicking **Switc
 
     !!!Note
 
-        A private report is not visible to other users on the REPORTS tab.
+         A private report is not visible to other users on the REPORTS tab.
 
 ### Adding Filters
 

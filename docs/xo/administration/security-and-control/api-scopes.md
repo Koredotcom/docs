@@ -153,18 +153,6 @@ The following API scopes are available for this feature.
    </td>
   </tr>
   <tr>
-   <td><strong>Getlinkedbotdetails</strong>
-   </td>
-   <td>Allows retrieval of linked bot details for Universal Bots (UB).
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Addlinkedbot</strong>
-   </td>
-   <td>Assign this scope to add a linked bot to a Universal Bot (UB).
-   </td>
-  </tr>
-  <tr>
    <td><strong>ConversationTests</strong>
    </td>
    <td>Assign this scope to manage and execute conversation test suites, including creation, deletion, and status retrieval.

@@ -530,7 +530,7 @@ Key benefits
 * Create custom prompts for new models from scratch or by importing an existing prompt from another model.
 * Maintain platform security and authentication standards while eliminating integration delays.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#providers-new-llm-integration)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/configure-llm-integration.md#providers-new-llm)
 
 **Answer Generation Guardrails**
 
@@ -788,7 +788,7 @@ Key benefits:
 
 * Enterprise-grade security.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#amazon-bedrock-llm-integration-framework)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/configure-llm-integration.md#amazon-bedrock-integration)
 
 <font size="4">Channels</font>
 
@@ -896,7 +896,7 @@ Key benefits:
 * Improve testing and development processes.
 * Enable flexible deployment for multi-tenant applications.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#llm-integration-using-dynamic-variables)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#dynamic-variables)
 
 **Enhanced Guardrails Framework for GenAI**
 

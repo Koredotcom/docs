@@ -190,7 +190,7 @@ The Batch Testing feature now supports multi-app routing, enabling users to eval
 
 **Enhancement of Batch Testing Public APIs to support creation and management of test suites**
 
-As part of the ongoing Batch Testing support for DialogGPT, several enhancements are being introduced to the public APIs. These changes ensure compatibility with new test formats, support for Universal Bots (Multi-App Routing), and maintain flexibility to handle both NLP-based and DialogGPT-based applications.
+As part of the ongoing Batch Testing support for DialogGPT, several enhancements are being introduced to the public APIs. These changes ensure compatibility with new test formats, support for Multi-App Routing, and maintain flexibility to handle both NLP-based and DialogGPT-based applications.
 [Learn more :octicons-arrow-right-24:](../../apis/automation/batch-test-execution.md#sample-request)
 
 <font size="4">Agent Transfer</font>
@@ -726,7 +726,7 @@ Key Benefits
 The implementation of DialogGPT is planned in three phases:
 
 * Phase 1 (included in this release): Focuses on core capabilities like the main DialogGPT flow, RAG pipeline, conversation orchestrator, and handling of common conversation intents.
-* Phase 2 (future release): Introduces advanced features such as Universal Bot support, granular intent identification, custom entity extraction, and new XO GPT models.
+* Phase 2 (future release): Introduces advanced features such as Multi-App Routing support, granular intent identification, custom entity extraction, and new XO GPT models.
 * Phase 3 (future release): Includes extended capabilities like multilingual support and implementation of guardrails.  
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
@@ -1331,7 +1331,7 @@ Key Capabilities
 * Dynamic Response Generation: Creates contextually appropriate responses based on user data and history.
 * Model Flexibility: Supports various model options, including commercial, custom, or Kore.ai's XO GPT models.
 * Granular Intent Resolution: Refines broad queries into specific, actionable intents using domain knowledge.
-* Universal App Capability: Powers the universal app (bot) capabilities with intelligent and dynamic routing to the appropriate agent.
+* Multi App Routing Capability: Powers the Parent app capabilities with intelligent and dynamic routing to the appropriate agent.
 
 Key Benefits
 
