@@ -198,9 +198,7 @@ You can decide how to distribute the AI for Work app in Microsoft Teams:
 !!!note
 
     Selected users must also exist in the **Account Hub** for access.  
-
-<img src="../images/teams_10.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
-
+    
 ## Troubleshooting Guide
 
 **Bot Not Responding in Microsoft Teams**

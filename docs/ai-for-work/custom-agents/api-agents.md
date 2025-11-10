@@ -254,16 +254,21 @@ A key function of the Field Meta Resolver is retrieving the id of entities extra
 Follow these steps to add a field meta resolver:
 
 1. Click the **+** (Plus) icon in the field meta resolver for the field type object.
+
 2. Click **CURL Import**. You can also use a dictionary instead of a CURL import. Learn [how to create one](#dictionary).
 <img src="../images/agent(28).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
+
 3. The import URL pop-up is displayed. Paste the URL and click **Import**.
 <img src="../images/image15.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
+
 4. Type in the **Sample Input** and click **Run**.
 <img src="../images/agent(29).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
+
 5. The Output Fields are displayed.
-<img src="../images/agent(10).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
+
 6. Close the pop-up. The ID resolver is displayed.
 <img src="../images/agent(26).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
+
 7. Click **Continue**.
 
 #### Dictionary
@@ -389,10 +394,7 @@ Click **Answering Rule** and enter the **Rule**. Click **Activate** and click **
 
 ### Function Signature
 
-The script is actually an IIFE
-(<https://developer.mozilla.org/en-US/docs/Glossary/IIFE>), which is invoked for
-each query with three arguments: *headers*, *body*, and *queryParams*.
-
+The script is actually an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE), which is invoked for each query with three arguments: *headers*, *body*, and *queryParams*.
 
 
 ```
@@ -405,9 +407,6 @@ each query with three arguments: *headers*, *body*, and *queryParams*.
 
 ```
 
-
-
-**Note:** Avoid changing or editing the above function signature.
 
 All the 3 variables here (headers, body and queryParams) are pointing to the [data api's](#data-api) *header*, *body* and *queryParams*. you can manipulate them as per your need to prepare api payload.
 
