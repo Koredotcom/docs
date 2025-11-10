@@ -24,10 +24,8 @@ The Platform offers the following plans:
 ### Product-Specific Billing Sessions
 
 * Automation AI: A billing session is 15 minutes of user conversation with the bot. For example, if a user converses with the bot for 31 minutes, it would be counted as 3 sessions (0-15, 16-30, 31-End).
-
-   Billing sessions are tracked at the individual app or bot level. In dynamic routing scenarios, the Parent app functions as a standalone app with its own billing sessions. When the Parent app routes a user query to a linked app, that billing session is attributed to the linked app, not the Parent app.
-
-   When you select the Parent app in the Admin Console or pass its ID via the API, the system returns only the Parent app's direct sessions; it doesn't include sessions routed from the Parent app to linked apps.
+    * Billing sessions are tracked at the individual app or bot level. In dynamic routing scenarios, the Parent app functions as a standalone app with its own billing sessions. When the Parent app routes a user query to a linked app, that billing session is attributed to the linked app, not the Parent app.  
+    When you select the Parent app in the Admin Console or pass its ID via the API, the system returns only the Parent app's direct sessions; it doesn't include sessions routed from the Parent app to linked apps.
 
 
 * Search AI: This is included in Automation AI, and the same billing session is applied. 
@@ -41,7 +39,7 @@ The Platform offers the following plans:
 
 To access the **Plan and Usage**, follow the steps below:
 
-1. Log in to the XO Platform and select the app to see its **Plan and Usage**.
+1. Log in to the Platform and select the app to see its **Plan and Usage**.
 2. Navigate to **Product Switcher > Billing > Manage > Plan and Usage**.  
 <img src="../images/navigating-to-plan-and-usage.gif" alt="Navigating to Plan and Usage" title="Navigating to Plan and Usage" style="border: 1px solid gray;"/>
 
@@ -260,9 +258,9 @@ The following table describes the automatic emails triggered by the system when 
    </td>
   </tr>
   <tr>
-   <td>Add-on XO Voice Gateway with ASR and TTS
+   <td>Add-on platform Voice Gateway with ASR and TTS
    </td>
-   <td>This email confirms the successful activation of the recipient's subscription for the XO Voice Gateway add-on with ASR and TTS, indicating that payment has been processed.
+   <td>This email confirms the successful activation of the recipient's subscription for the platform Voice Gateway add-on with ASR and TTS, indicating that payment has been processed.
    </td>
   </tr>
   <tr>
