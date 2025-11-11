@@ -139,6 +139,10 @@ This section lets you configure how to autogenerate a conversation summary at th
    * **Universal App**: The backend logic detects it and populates its associated Child Apps. You can expand each Child App to view and select its dialog task.  
    * **Child App/Normal/Singular App**: The Dialog Tasks list displays dialogs linked to the selected app, and you can select any from the displayed list.  
 
+!!! note
+
+    Conversation Summary confiuration is applicable only for third-party agent desktops.
+
 #### Steps to set Conversation Summary 
 
 1. Sign in to **AI for Service** > **Agent AI**.
