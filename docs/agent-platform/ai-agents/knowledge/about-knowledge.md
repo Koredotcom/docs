@@ -6,7 +6,7 @@ Agentic Apps manage knowledge through the **Knowledge Tools**. Knowledge Tools a
 
 By leveraging Search AI capabilities, Knowledge Tools can access information from a wide range of sources, including internal knowledge bases, document repositories, FAQs, and third-party systems, ensuring that responses are not only accurate but also aligned with enterprise knowledge. 
 
-Integrated seamlessly through the **AI for Service** platform, these tools enable autonomous agents to understand user intent in natural language, retrieve relevant content, and generate meaningful and business-aware responses in real time. 
+Integrated seamlessly through the **(In)Business Customer Experience** platform, these tools enable autonomous agents to understand user intent in natural language, retrieve relevant content, and generate meaningful and business-aware responses in real time. 
 
 ![About Knowledge](images/about-knowledge.png "About Knowledge Tools")
 

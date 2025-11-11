@@ -8,7 +8,7 @@ You can set the sync/async mode configuration for the tool endpoint. If you chan
 
 Steps to enable and configure the asynchronous mode:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+1. Log in to your account and click **Tools** under **(In)Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 2. Click the **Tools** tab on the top navigation bar, and select the tool to modify its configuration. The Tool Flow page is displayed.

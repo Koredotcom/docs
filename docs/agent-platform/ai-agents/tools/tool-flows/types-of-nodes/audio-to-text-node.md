@@ -81,7 +81,7 @@ The following audio file formats are supported by the node:
 
 ### Processing Model
 
-The **Agent Platform** uses **OpenAI Whisper-1** for transcription.
+The **(In)Agent Platform** uses **OpenAI Whisper-1** for transcription.
 
 **Use Cases**
 

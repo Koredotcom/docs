@@ -1,6 +1,6 @@
 # Export a Tool
 
-Agent Platform offers the ability to export specific tool versions from your account as self-contained packages for data preservation and sharing. This feature also allows users to transfer tool configurations without compromising the integrity and security of the tool setup.
+(In)Agent Platform offers the ability to export specific tool versions from your account as self-contained packages for data preservation and sharing. This feature also allows users to transfer tool configurations without compromising the integrity and security of the tool setup.
 
 When you export a tool, (In)Agent Platform automatically creates a *.zip* file named after the tool. For example, if the tool is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*". You can save this folder in the desired location on your local machine. 
 
@@ -24,7 +24,7 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 To export an tool’s version, follow the steps below:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+1. Log in to your account and click **Tools** under **(In)Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 2. Click the **Tools** tab on the top navigation bar, and select the tool you want to export. The Tool flow page is displayed. 

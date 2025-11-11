@@ -1,6 +1,6 @@
 # Track Events and Actions For a Tool
 
-Agent Platform’s comprehensive Audit Logs provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
+(In)Agent Platform’s comprehensive Audit Logs provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
 
 This empowers admins to ensure compliance with internal policies and regulations, while proactively mitigating risks like data privacy breaches and algorithmic bias.
 
@@ -23,7 +23,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 Steps to access and view tool audit logs:
 
-1. Log in to your (In)Agent Platform account and click **Tools** under **Agent Platform Modules**.
+1. Log in to your (In)Agent Platform account and click **Tools** under **(In)Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 2. On the **All tools** page, click the desired tool.
 3. In the left navigation pane, click **Audit logs**. The Audit logs page is displayed. 

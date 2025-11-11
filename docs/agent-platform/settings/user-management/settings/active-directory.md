@@ -18,7 +18,7 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 
 ## Steps to Configure AD Sync 
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="nav user" title="nav user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.

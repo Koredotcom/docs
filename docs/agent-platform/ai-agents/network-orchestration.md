@@ -102,7 +102,7 @@ Configure the delegation rules for all the agents in the app:
     7. Select the fallback agent or event from the list. 
     8. Set the condition under which it should be triggered. 
 
-    **Note**: When an event is selected as the fallback delegation, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent via AI for Service, the fallback triggers that specific behavior.
+    **Note**: When an event is selected as the fallback delegation, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent via (In)Business Customer Experience, the fallback triggers that specific behavior.
 
 
 ## Passing Information Between Agents

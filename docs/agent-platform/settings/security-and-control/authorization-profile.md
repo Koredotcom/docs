@@ -21,7 +21,7 @@ Verify that identity and authorization tokens are correctly passed to external s
 
 To access the feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.

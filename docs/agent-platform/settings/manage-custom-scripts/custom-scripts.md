@@ -41,7 +41,7 @@ The key steps in managing custom scripts are:
 
 To access the custom scripts wizard, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.
@@ -721,7 +721,7 @@ To [deploy the script](../manage-custom-scripts/custom-scripts.md/#import-and-de
 
 ## API Keys
 
-Agent Platform provides secure access to deployed scripts through authenticated requests. You must create an API key to manage access to a deployed script’s endpoint across the platform. 
+(In)Agent Platform provides secure access to deployed scripts through authenticated requests. You must create an API key to manage access to a deployed script’s endpoint across the platform. 
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>

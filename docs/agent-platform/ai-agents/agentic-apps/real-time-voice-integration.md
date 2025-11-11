@@ -1,6 +1,6 @@
 # Real Time Voice Integration
 
-Agent Platform supports **real-time voice interaction** powered by advanced Voice AI models. This feature allows users to engage in natural conversations with AI agents through voice, as spoken input is recognized, processed, and responded to with minimal delay.
+(In)Agent Platform supports **real-time voice interaction** powered by advanced Voice AI models. This feature allows users to engage in natural conversations with AI agents through voice, as spoken input is recognized, processed, and responded to with minimal delay.
 
 ## Enabling Voice Support
 
@@ -25,4 +25,4 @@ Click the settings icon to customize the configuration of the AI model.
     * Silence Duration: Duration of silence before the application considers the user’s message has ended
     * Type: Select the type of voice activity detection to use
 
-When an agentic app is integrated with an AI for Service application through the Automation Node for voice integration, the Voice Gateway utilizes the voice capabilities of the model set up in the agentic app.
+When an agentic app is integrated with an (In)Business Customer Experience application through the Automation Node for voice integration, the Voice Gateway utilizes the voice capabilities of the model set up in the agentic app.

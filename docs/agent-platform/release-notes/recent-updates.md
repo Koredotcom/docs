@@ -12,7 +12,7 @@ This update includes filler messages for improved voice experiences, BYOK encryp
 
 **Waiting Experience**
 
-Agent Platform now introduces a new feature that keeps users engaged during voice interactions when the AI Agent needs additional processing time, using configurable filler messages to update them on the current state.
+(In)Agent Platform now introduces a new feature that keeps users engaged during voice interactions when the AI Agent needs additional processing time, using configurable filler messages to update them on the current state.
 
 These messages can be configured in two ways:
 
@@ -29,7 +29,7 @@ Customize timing, message frequency, and content to maintain a smooth conversati
 
 **Bring Your Own Key Encryption for Public Cloud SaaS Deployments**
 
-Agent Platform has introduced Bring Your Own Keys (BYOK) encryption for public cloud SaaS deployments, enabling enterprises to secure their data while retaining full control and management of their encryption keys. This feature seamlessly integrates with enterprise Key Management Systems (Azure Key Vault and AWS Key Management Service) to help meet compliance and security needs.
+(In)Agent Platform has introduced Bring Your Own Keys (BYOK) encryption for public cloud SaaS deployments, enabling enterprises to secure their data while retaining full control and management of their encryption keys. This feature seamlessly integrates with enterprise Key Management Systems (Azure Key Vault and AWS Key Management Service) to help meet compliance and security needs.
 
 [Learn more :octicons-arrow-right-24:](../settings/security-and-control/encryption-key-mgmt.md#bring-your-own-key)
 
@@ -337,9 +337,9 @@ The Playground now supports voice input, allowing users to interact with agentic
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md)
 
 
-**Support for Metadata Injection from AI for Service Platform**
+**Support for Metadata Injection from (In)Business Customer Experience Platform**
 
-Developers can now leverage enhanced integration with the AI for Service platform by passing metadata, such as channel information or user data, into the Agentic App. This metadata is made available within agent prompts and tools, enabling more contextual and dynamic interactions.
+Developers can now leverage enhanced integration with the (In)Business Customer Experience platform by passing metadata, such as channel information or user data, into the Agentic App. This metadata is made available within agent prompts and tools, enabling more contextual and dynamic interactions.
 
 
 <font size="4">No-code & Pro-code Tools</font>
@@ -565,7 +565,7 @@ Key features
 
 **AWS Bedrock Models Integration**
 
-Agent Platform now offers secure connections to Amazon Bedrock-hosted models. This integration uses role-based authentication via IAM Role ARN, Model ARN, and custom endpoints. A guided setup form simplifies configuration with built-in validation and testing. The Platform seamlessly manages credential refreshing by assuming an AWS role and fetching temporary credentials through STS to reliably invoke the Bedrock models.
+(In)Agent Platform now offers secure connections to Amazon Bedrock-hosted models. This integration uses role-based authentication via IAM Role ARN, Model ARN, and custom endpoints. A guided setup form simplifies configuration with built-in validation and testing. The Platform seamlessly manages credential refreshing by assuming an AWS role and fetching temporary credentials through STS to reliably invoke the Bedrock models.
 
 Key benefits
 
@@ -579,7 +579,7 @@ Key benefits
 
 **Pre-authorize Integration using Basic Auth**
 
-Agent Platform now supports Basic Authentication for pre-authorizing third-party integrations. Admins need to set up the connection once using the *API Key* and *Secret*. After that, users don’t need to re-authenticate unless the connection expires.
+(In)Agent Platform now supports Basic Authentication for pre-authorizing third-party integrations. Admins need to set up the connection once using the *API Key* and *Secret*. After that, users don’t need to re-authenticate unless the connection expires.
 
 Key benefits
 
@@ -636,7 +636,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Memory Stores for Contextual Interactions with Read/Write support via Code Tools**
 
-Agent Platform now supports persistent **Memory Stores** to retain contextual data, enabling more personalized and intelligent agent interactions. These stores can be directly accessed within prompts and programmatically managed via code tools to support dynamic, stateful behavior. The memory stores can be used to maintain user preferences, conversation history, or custom data.
+(In)Agent Platform now supports persistent **Memory Stores** to retain contextual data, enabling more personalized and intelligent agent interactions. These stores can be directly accessed within prompts and programmatically managed via code tools to support dynamic, stateful behavior. The memory stores can be used to maintain user preferences, conversation history, or custom data.
 
 Key benefits
 
@@ -803,7 +803,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Knowledge Integration with (In)Agent Platform**
 
-The (In)Agent Platform now integrates with AI for Service search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
+The (In)Agent Platform now integrates with (In)Business Customer Experience search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
 
 Key features
 
@@ -816,7 +816,7 @@ Key features
 
 **Export and Import Agentic Apps, Agents, and Tools**
 
-Agent Platform now supports both importing and exporting of application configurations, agent definitions, and tool setups. This feature simplifies the process of reusing, sharing, and backing up components across different workspaces and environments. Users can export components in a standardized format and later import them to quickly replicate configurations, reducing manual effort and ensuring consistency across different deployment environments. 
+(In)Agent Platform now supports both importing and exporting of application configurations, agent definitions, and tool setups. This feature simplifies the process of reusing, sharing, and backing up components across different workspaces and environments. Users can export components in a standardized format and later import them to quickly replicate configurations, reducing manual effort and ensuring consistency across different deployment environments. 
 
 Key features
 
@@ -889,7 +889,7 @@ Users can now select an existing authorization profile from the Auth tab when co
 
 **Support for New Integration Node**
 
-Agent Platform introduces the Integration node in Tool Flow to help users connect to supported third-party services and perform specific actions for different use cases. It supports form-based and JSON configuration for easy, no-code integration into automation flows.
+(In)Agent Platform introduces the Integration node in Tool Flow to help users connect to supported third-party services and perform specific actions for different use cases. It supports form-based and JSON configuration for easy, no-code integration into automation flows.
 
 
 <font size="4">Models</font>
@@ -959,7 +959,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Seamless Integration of Third-Party Agents**
 
-Agent Platform now supports the integration of external agents via a proxy agent architecture, allowing enterprises to leverage their existing investments in agents built on various platforms. 
+(In)Agent Platform now supports the integration of external agents via a proxy agent architecture, allowing enterprises to leverage their existing investments in agents built on various platforms. 
 
 Key benefits
 
@@ -968,20 +968,20 @@ Key benefits
 * Ability to combine and orchestrate cross-platform agent capabilities.
 
 
-**Integration with AI for Service**
+**Integration with (In)Business Customer Experience**
 
-Agent Platform now seamlessly integrates with AI for Service. This integration simplifies the creation of highly contextual, self-service automation experiences from AI for Service using multi-agent orchestration powered by Agentic Apps.
+(In)Agent Platform now seamlessly integrates with (In)Business Customer Experience. This integration simplifies the creation of highly contextual, self-service automation experiences from (In)Business Customer Experience using multi-agent orchestration powered by Agentic Apps.
 
 Key benefits
 
-* Ability to integrate fully autonomous applications from the AI for Service.
-* Leverage AI for Service channel integrations while using (In)Agent Platform capabilities.
+* Ability to integrate fully autonomous applications from the (In)Business Customer Experience.
+* Leverage (In)Business Customer Experience channel integrations while using (In)Agent Platform capabilities.
 * Streamlined user experience with shared authentication and session management.
 
 
 **Voice Integration in Agentic Apps**
 
-AI for Service and (In)Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
+(In)Business Customer Experience and (In)Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
 
 Key features
 
@@ -1052,7 +1052,7 @@ Key features
 
 **AI Agent’s Thought Streaming**
 
-Agent Platform now introduces thought streaming that provides insights into the AI Agent’s reasoning and planning process behind its decisions and actions. This enables users to understand how the agent analyzes, decides, and responds to the user's query. Thought Streaming promotes transparency, helps build trust, and improves overall engagement. 
+(In)Agent Platform now introduces thought streaming that provides insights into the AI Agent’s reasoning and planning process behind its decisions and actions. This enables users to understand how the agent analyzes, decides, and responds to the user's query. Thought Streaming promotes transparency, helps build trust, and improves overall engagement. 
 Real-time insights into the decision process also serve as a tool to identify issues and improve performance.
 
 

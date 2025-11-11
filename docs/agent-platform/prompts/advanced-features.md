@@ -5,7 +5,7 @@ Prompt Studio offers a suite of features designed to streamline and enhance your
 
 ## Using Test Data
 
-Agent Platform provides two ways to work with test data:
+(In)Agent Platform provides two ways to work with test data:
 
 * **Import test data**: Upload a CSV file with your data to  populate variables in your prompts automatically.
 * **Generate test data**: Create synthetic datasets in a quick automated way significantly reducing the time required for manual data creation. AI analyzes the prompt and its variables to understand the context and then generates the corresponding values for each variable.

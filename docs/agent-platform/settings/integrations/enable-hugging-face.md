@@ -1,10 +1,10 @@
 # Enable Hugging Face
 
-Agent Platform seamlessly integrates with the Hugging Face platform, allowing you to incorporate cutting-edge text generation and text-to-text generation models. Any publicly available Hugging Face model can be swiftly deployed via (In)Agent Platform with minimal effort. To utilize private or exclusive Hugging Face models, you can effortlessly establish a connection by supplying your Hugging Face access tokens. This facilitates (In)Agent Platform in unleashing the complete capabilities of your Hugging Face account, regardless of whether you possess public or private assets.
+(In)Agent Platform seamlessly integrates with the Hugging Face platform, allowing you to incorporate cutting-edge text generation and text-to-text generation models. Any publicly available Hugging Face model can be swiftly deployed via (In)Agent Platform with minimal effort. To utilize private or exclusive Hugging Face models, you can effortlessly establish a connection by supplying your Hugging Face access tokens. This facilitates (In)Agent Platform in unleashing the complete capabilities of your Hugging Face account, regardless of whether you possess public or private assets.
 
 **To integrate with your hugging face account, follow these steps**:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.

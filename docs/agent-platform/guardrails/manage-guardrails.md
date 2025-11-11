@@ -4,7 +4,7 @@ To use input and output scanners in (In)Agent Platform, you need to deploy them 
 
 Steps to deploy a scanner:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.

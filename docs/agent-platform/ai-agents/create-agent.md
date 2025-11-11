@@ -117,7 +117,7 @@ They serve as a guide to ensure the agent operates within its scope and delivers
 
 ## Knowledge
 
-Agent Platform provides powerful search functionality across diverse content sources using\the **Search AI** application, which supports Retrieval-Augmented Generation (RAG)-based search across enterprise knowledge bases, document repositories, FAQs, and external systems. This advanced RAG-driven integration empowers autonomous agents to deliver accurate, context-aware, and timely responses by leveraging relevant information from connected knowledge sources.
+(In)Agent Platform provides powerful search functionality across diverse content sources using\the **Search AI** application, which supports Retrieval-Augmented Generation (RAG)-based search across enterprise knowledge bases, document repositories, FAQs, and external systems. This advanced RAG-driven integration empowers autonomous agents to deliver accurate, context-aware, and timely responses by leveraging relevant information from connected knowledge sources.
 
 You can link to one or more Search AI applications in the same workspace and account and access them as Knowledge Tools for the agent to answer user queries. Each Search AI app can be integrated with multiple content sources. 
 

@@ -8,7 +8,7 @@ Account owners can invite users to collaborate on specific tools. Invited users 
 
 Steps to invite users to your Tool:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+1. Log in to your account and click **Tools** under **(In)Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 2. Click the **Tools** tab on the top navigation bar, and select the required tool.

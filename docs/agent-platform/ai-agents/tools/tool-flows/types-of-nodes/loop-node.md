@@ -54,7 +54,7 @@ The Loop node contains a section or block where you can place supported child no
 
 ### Step 1: Open Flow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
+* Log in → In **(In)Agent Platform Modules** → Click **Tools**.
 * Select your tool → Click **Go to Flow**.
 
 ### Step 2: Add a Loop Node

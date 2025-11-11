@@ -1,6 +1,6 @@
 # Manage Scopes and Keys for API Apps
 
-Agent Platform introduces **API scopes** in the **Settings** console, moving from unrestricted management API keys to more secure, scoped API key-based application management.
+(In)Agent Platform introduces **API scopes** in the **Settings** console, moving from unrestricted management API keys to more secure, scoped API key-based application management.
 
 Users can select specific scopes for managing tools, models, and guardrails. This allows for the creation of internal applications with restricted access to only the necessary API endpoints. By limiting API access, this feature reduces security risks, allowing administrators to generate multiple API keys and ensure secure, controlled access for authorized personnel.
 
@@ -106,7 +106,7 @@ The following API scopes are available for this feature.
 
 To access this feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.

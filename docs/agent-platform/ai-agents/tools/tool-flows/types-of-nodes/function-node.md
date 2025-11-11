@@ -35,7 +35,7 @@ Steps to add and configure the node:
 
 ### Step 1: Open Flow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
+* Log in → In **(In)Agent Platform Modules** → Click **Tools**.
 * Select your tool → Click **Go to Flow**.
   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
@@ -448,7 +448,7 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see the available variables, nodes, and node outputs.</p>
+<p>(In)Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see the available variables, nodes, and node outputs.</p>
 </div>
 
 ## Import, Export, and Share a Tool with Function Node

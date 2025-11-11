@@ -13,7 +13,7 @@ Without rich, relevant context, even the most sophisticated AI agents operate wi
 
 ## Knowledge Integration
 
-Agent Platform enables easy integration with Search AI via **AI for Service** and offers seamless search capabilities on content from various sources. The Search AI application is at the core of this integration, which facilitates **Retrieval-Augmented Generation (RAG)-based search** across various content sources, such as enterprise knowledge bases, document repositories, FAQs, and third-party systems.
+(In)Agent Platform enables easy integration with Search AI via **(In)Business Customer Experience** and offers seamless search capabilities on content from various sources. The Search AI application is at the core of this integration, which facilitates **Retrieval-Augmented Generation (RAG)-based search** across various content sources, such as enterprise knowledge bases, document repositories, FAQs, and third-party systems.
 
 This advanced RAG-based architecture enables autonomous agents to deliver context-aware, accurate, and timely responses using information from knowledge sources.
 
@@ -68,7 +68,7 @@ From this page, you can also create a new Search AI application:
 
 1. Click **+ New Integration**.
 2. Provide a name and description for your application.
-3. Once the application is created, click **Manage Content** to open it in **AI for Service**.
+3. Once the application is created, click **Manage Content** to open it in **(In)Business Customer Experience**.
 4. Configure the application as needed to suit your use case.
 
 To include these integrations in your Agentic App, go to the Knowledge page of the corresponding app and add them.  

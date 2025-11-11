@@ -10,7 +10,7 @@ In the following steps, you will learn how to add an input scanner. The steps to
 
 Steps to add a Scanner:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+1. Log in to your account and click **Tools** under **(In)Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 2. In the **Tools** section, click the name of the tool to which you want to add the scanner. The Tool flow page is displayed. 

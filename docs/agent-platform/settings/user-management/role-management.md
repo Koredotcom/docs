@@ -1,6 +1,6 @@
 # Manage Roles, Permissions and Access Levels
 
-Agent Platform’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. 
+(In)Agent Platform’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. 
 
 Thus, the roles can be classified based on the role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
 
@@ -66,7 +66,7 @@ A **Tool Admin** has complete control over the core functionalities of tools, su
 
 An **App Admin** has full access to almost all the core Platform features relating to Agentic Apps.
 
-Agent Platform supports the following roles:
+(In)Agent Platform supports the following roles:
 
 #### System-defined Roles
 
@@ -1822,7 +1822,7 @@ The **Role Management** Dashboard displays key information related to system and
 
 To access the dashboard, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.

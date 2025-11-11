@@ -1,6 +1,6 @@
 # Manage Single Sign On for Account Sign In
 
-Agent Platform provides users with a default sign-in flow as the standard authentication method. However, for organizations seeking enhanced security and convenience, administrators can enable **Single Sign-On (SSO)** through the **Settings** console.
+(In)Agent Platform provides users with a default sign-in flow as the standard authentication method. However, for organizations seeking enhanced security and convenience, administrators can enable **Single Sign-On (SSO)** through the **Settings** console.
 
 By activating SSO, users can access their (In)Agent Platform accounts using a single set of secure credentials managed by an external Identity Provider (IDP). This setup streamlines the login process and integrates users into a unified authentication framework.
 
@@ -15,7 +15,7 @@ SSO is a powerful option for organizations looking to balance convenience and se
 <p class="admonition-title">Note</p>
 <p>Only account owners and admins can enable/disable SSO from the <b>Settings</b> console.</p></div>
 
-Agent Platform supports SSO for the following protocols and providers:
+(In)Agent Platform supports SSO for the following protocols and providers:
 <table>
   <tr>
    <td><strong>Protocol</strong>
@@ -69,7 +69,7 @@ Agent Platform supports SSO for the following protocols and providers:
 
 To access the SSO feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.

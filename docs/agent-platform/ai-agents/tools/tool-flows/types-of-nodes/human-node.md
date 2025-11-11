@@ -45,7 +45,7 @@ Steps to add and configure a Human node:
 
 ### Step 1: Open Flow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
+* Log in → In **(In)Agent Platform Modules** → Click **Tools**.
 * Select your tool → Click **Go to Flow**.
   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 

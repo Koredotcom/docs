@@ -33,7 +33,7 @@ The **Tools Library Marketplace** offers more than 50 prebuilt tool templates fo
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The (In)Agent Platform integrates with the AI for Service marketplace.</p>
+<p>The (In)Agent Platform integrates with the (In)Business Customer Experience marketplace.</p>
 </div>
 
 **Categories**
@@ -71,7 +71,7 @@ The **Tools Library Marketplace** offers more than 50 prebuilt tool templates fo
 
 To access a tool template, follow the steps below:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+1. Log in to your account and click **Tools** under **(In)Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Tools** on the top navigation bar to access the **Tools** dashboard.
