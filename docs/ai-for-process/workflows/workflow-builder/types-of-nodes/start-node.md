@@ -1,20 +1,154 @@
 # Start Node - Automate Workflow Initiation
 
-Every new workflow begins with a Start node, which is automatically placed on the canvas by default. This node acts as the entry point and must be connected to at least one other node to form a valid flow.
+The Start node is the mandatory entry point for every workflow. When you create a new workflow, the Start node is automatically added to the canvas. Every workflow must begin with this node to function properly.
 
-To ensure the workflow functions properly, all nodes must be connected, directly or indirectly, to the Start node. If any initial nodes are not linked to the Start node, the flow may malfunction or fail to execute as expected. You can drag and drop the Start node (as well as any other nodes) anywhere on the canvas.
+Key requirements
 
-The Start node supports event and time-based workflows to address diverse use cases and enhance results with the following configurable features. You can enable one or both features based on the use case.
+* The Start node must connect to at least one other node.
+* All workflow nodes must have a connection path back to the Start node.
+* Unconnected nodes will cause the workflow to fail.
 
-* **Trigger**: To run workflows when a specific event occurs. For example, if a customer fails to maintain the required quarterly balance, an email can be triggered to their registered email ID through a configured third-party service such as Gmail. Learn more about the feature.
-* **Scheduler**: To run workflows at fixed intervals and times. For example, run a scheduled check on the 5th of every month to shortlist the customers who do not maintain the average quarterly balance in their accounts, and trigger an SMS to them. Here, the start date and start time can be set for a specific time zone.  Learn more about the feature.
+!!! note
 
-You can add other nodes to the Start node or the other nodes in the canvas in three ways:
+    You can reposition the Start node and all other nodes by dragging them anywhere on the canvas.
 
-* **Drag from the bottom panel**: Scroll through available node types and drag them onto the canvas.
-* **Use the left panel (Assets)**: Select and place pre-configured nodes directly onto the canvas from the left panel.
-* **Use the blue plus icon (+) on the node**: Hover over the grey dot on any node (including Start) to reveal a blue plus icon (+). Click to see options:
-    * **Add new** – Instantly places a new node on the canvas and connects it.
-    * **Add existing** – Allows you to select a previously added node.
+## Automation Features
 
-For more information on managing nodes in a workflow from a Start node, refer to this link.
+The Start node provides two powerful automation options that can be used individually or together: Event Triggers and Scheduled Execution.
+
+### Event Triggers
+
+Event triggers automatically execute your workflow when specific events occur in connected applications. For example, when a customer's account balance falls below the quarterly minimum, the workflow can automatically send an email notification via integrated services such as Gmail.
+
+### Scheduled Execution
+
+The scheduler executes your workflow at predetermined times or intervals. For example, you can schedule a workflow to run on the 5th of each month to identify customers below minimum balance thresholds and send automated SMS notifications. The scheduler supports custom time zones for global operations.
+
+## Configure the Start Node
+
+The Start node is the entry point for your workflow. Configure it to define inputs, outputs, triggers, and schedules.
+
+### Steps to configure the node
+
+1. Navigate to **Workflows** in the top menu and select your workflow and click **Go to Flow**.
+
+2. The Start node appears by default. Click the node to configure the following:
+
+* **Input**: Define initial data for your workflow.
+* **Output**: Specify variables to capture workflow results.
+* **Add Trigger**: Configure event-based triggers from third-party apps. For details, see step 3.
+* **Add Schedule**: Set time-based automation for your workflow. For details, see step 4.
+
+3. Add event-based triggers:
+
+    **Prerequisites:** Integration connection, third-party apps added, and auth profile configured.
+
+    **Steps to add**:
+
+    a. Click Add Trigger and select your integration app.
+    b. Enable the trigger and select a connection.
+    c. Choose your trigger event and configure parameters.
+    d. Save and test the workflow.
+
+    **Note**: Triggers must be active and enabled. Attachments from triggers are accessible via URL for 24 hours.
+
+4. Configure time-based schedules:
+
+    a. Click the Schedule icon and enable the scheduler.
+    b. Set frequency (Daily, Weekly, Monthly, Once, Cron, or Custom).
+    c. Configure start date, time, and time zone.
+    d. Save and test the workflow.
+
+### Test the Workflow
+
+Click Run Flow to test your configuration and verify the outputs.
+
+### Supported Third-Party Services for Triggers
+
+| Service provider | No. of triggers |
+|------------------|-----------------|
+| Asana | 1 |
+| Canvas | 6 |
+| Coda | 4 |
+| Discord | 1 |
+| Fireflies | 1 |
+| Gmail | 2 |
+| GitHub | 6 |
+| Google Calendar | 7 |
+| Google Docs | 3 |
+| Google Drive | 7 |
+| Google Sheets | 2 |
+| Google Slides | 1 |
+| Google Super | 16 |
+| Hubspot | 2 |
+| Jira | 3 |
+| Linear | 3 |
+| Mailchimp | 4 |
+| Notion | 5 |
+| OneDrive | 8 |
+| Outlook | 5 |
+| Pipedrive | 3 |
+| Salesforce | 7 |
+| Slack | 9 |
+| Slackbot | 9 |
+| Spotify | 3 |
+| Stripe | 7 |
+| TimelinesAI | 1 |
+| Todoist | 1 |
+| Trello | 5 |
+| YouTube | 4 |
+| Zendesk | 2 |
+
+
+### Schedule Frequencies
+
+<table>
+  <tr>
+   <td><strong>Frequency</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Daily
+   </td>
+   <td>Runs every day
+   </td>
+  </tr>
+  <tr>
+   <td>Weekly
+   </td>
+   <td>Runs every 7 days on a selected day of the week
+   </td>
+  </tr>
+  <tr>
+   <td>Monthly
+   </td>
+   <td>Runs on a specific date each month
+   </td>
+  </tr>
+  <tr>
+   <td>Once
+   </td>
+   <td>Runs at selected date and time
+   </td>
+  </tr>
+  <tr>
+   <td>Cron
+   </td>
+   <td>Runs based on a custom cron expression
+   </td>
+  </tr>
+  <tr>
+   <td>Custom
+   </td>
+   <td>Repeats every N days or weeks
+   </td>
+  </tr>
+</table>
+
+## Troubleshooting
+
+**Undefined output variables**: A list of unresolved outputs is display.
+
+**Inactive triggers**: Re-deploy the workflow or retest the auth profile in Settings → Security & Control.
