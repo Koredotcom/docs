@@ -23,7 +23,6 @@ If both users request a policy description:
 * User B receives a response sourced from the FAQs (assuming it's the next best match).
 The content of each response will differ based on the source document.
 
-To support validation and troubleshooting, SearchAI includes a **Document Access Viewer** in the UI. This feature provides document-level visibility into which users or entities can access specific content, helping administrators confirm permission enforcement before testing or deployment.
 
 ## RACL Implementation in SearchAI
 
@@ -100,11 +99,13 @@ Note:
 
 #### View Permission Information
 
-To view and verify the user permissions in the ingested content, go to the Content page and open the JSON view corresponding to the file, and verify the contents of the `sys_racl` field. The same can also be verified in the Chunk Viewer. 
+To view and verify the user permissions in the ingested content, go to the Content page and open the JSON view corresponding to the file, and verify the contents of the `sys_racl` field. The same information is also available in individual chunks created from the ingested content and can  be verified in the Chunk Viewer. 
 
 ![Chunk Viewer](images/connectors/racl/chunk-viewer.png "Chunk Viewer")
 
-The individual permission entities and users are listed under the Permissions page. Group tab lists the permission entities created corresponding to all the user groups having access to the ingested content and the Users tab lists all the individual users or entities having access to the ingested content. ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")
+Alternatively, 
+
+<!--The individual permission entities and users are listed under the Permissions page. Group tab lists the permission entities created corresponding to all the user groups having access to the ingested content and the Users tab lists all the individual users or entities having access to the ingested content. ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")-->
 
 ### Step 2: Verifying user identities
 

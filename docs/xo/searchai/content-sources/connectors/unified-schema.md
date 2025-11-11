@@ -316,7 +316,7 @@ The following are the default fields of the Unified Schema.
   <tr>
    <td>downvote_count
    </td>
-   <td>Number of downvotes received by the item (for example, post, comment, or answer).
+   <td>Number of down votes received by the item (for example, post, comment, or answer).
    </td>
    <td>No
    </td>
@@ -868,7 +868,7 @@ The following are the default fields of the Unified Schema.
   <tr>
    <td>upvote_count
    </td>
-   <td>Number of upvotes received by the item.
+   <td>Number of up votes received by the item.
    </td>
    <td>No
    </td>

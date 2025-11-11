@@ -4,13 +4,13 @@ Plan and Usage help you manage your apps and workspaces while keeping track of t
 
 ## Plan Comparison
 
-Kore.ai XO Platform offers the following plans:
+The Platform offers the following plans:
 
 * Essential: Everything you need to get started building an AI Chatbot.
 * Advanced: Everything in Essential plus higher limits and more advanced features to help your AI Chatbot do more.
 * Enterprise: Everything in Advanced plus enterprise features, custom pricing, and highest limits designed for enterprise.
 
-For more information on plans, features, and pricing, visit our [Plan Comparison and Pricing](https://kore.ai/pricing) page.
+
 
 
 ## Billing Session
@@ -24,18 +24,22 @@ For more information on plans, features, and pricing, visit our [Plan Comparison
 ### Product-Specific Billing Sessions
 
 * Automation AI: A billing session is 15 minutes of user conversation with the bot. For example, if a user converses with the bot for 31 minutes, it would be counted as 3 sessions (0-15, 16-30, 31-End).
+    * Billing sessions are tracked at the individual app or bot level. In dynamic routing scenarios, the Parent app functions as a standalone app with its own billing sessions. When the Parent app routes a user query to a linked app, that billing session is attributed to the linked app, not the Parent app.  
+    When you select the Parent app in the Admin Console or pass its ID via the API, the system returns only the Parent app's direct sessions; it doesn't include sessions routed from the Parent app to linked apps.
+
+
 * Search AI: This is included in Automation AI, and the same billing session is applied. 
 * Contact Center AI: It’s billed per the agent seats:
     * Named Seats: Each agent gets a dedicated seat. For example, if 100 agents work across 3 shifts, you will be billed for 100 seats.
     * Concurrent Seats: This is based on the maximum number of simultaneously logged-in agents. For example, if a maximum of 50 agents work per shift across 3 shifts (150 total agents), you will be billed only for 50 seats.  
 * Agent AI: It’s billed per the agent seats, similar to Contact Center AI as explained above.
-* Add-ons: They are billed separately from the plan. For details, see the Add-ons and Services section on the [pricing](https://kore.ai/pricing/) page. 
+* Add-ons: They are billed separately from the plan. 
 
 ## Navigating to Plan and Usage
 
 To access the **Plan and Usage**, follow the steps below:
 
-1. Log in to the XO Platform and select the app to see its **Plan and Usage**.
+1. Log in to the Platform and select the app to see its **Plan and Usage**.
 2. Navigate to **Product Switcher > Billing > Manage > Plan and Usage**.  
 <img src="../images/navigating-to-plan-and-usage.gif" alt="Navigating to Plan and Usage" title="Navigating to Plan and Usage" style="border: 1px solid gray;"/>
 
@@ -174,49 +178,49 @@ The following table describes the automatic emails triggered by the system when 
   <tr>
    <td>Workspace approval request
    </td>
-   <td>This email notifies the account owner about an access request for their Kore.ai account, asking for approval or denial of the request, with a prompt to contact for further details or concerns.
+   <td>This email notifies the account owner about an access request for their platform account, asking for approval or denial of the request, with a prompt to contact for further details or concerns.
    </td>
   </tr>
   <tr>
    <td>Workspace approval accepted
    </td>
-   <td>This email confirms the acceptance of an access request to the specified Kore.ai workspace, welcoming the recipient to collaborate with their team and offering assistance for a smooth onboarding experience.
+   <td>This email confirms the acceptance of an access request to the specified platform workspace, welcoming the recipient to collaborate with their team and offering assistance for a smooth onboarding experience.
    </td>
   </tr>
   <tr>
    <td>Workspace approval rejected
    </td>
-   <td>This email informs the recipient that their request for access to a specific Kore.ai workspace has been declined by the account owner, offering further clarification and support if needed.
+   <td>This email informs the recipient that their request for access to a specific platform workspace has been declined by the account owner, offering further clarification and support if needed.
    </td>
   </tr>
   <tr>
    <td>Invite new user to account from admin console
    </td>
-   <td>This email invites the recipient to join a Kore.ai workspace, providing steps to accept the invitation and start collaborating, along with contact details for any support needed during the process.
+   <td>This email invites the recipient to join a platform workspace, providing steps to accept the invitation and start collaborating, along with contact details for any support needed during the process.
    </td>
   </tr>
   <tr>
    <td>Invite existing user to account from admin console
    </td>
-   <td>This email invites the recipient to join a Kore.ai workspace, providing steps to accept the invitation and offering support for any issues.
+   <td>This email invites the recipient to join a platform workspace, providing steps to accept the invitation and offering support for any issues.
    </td>
   </tr>
   <tr>
    <td>Invite new user from bot
    </td>
-   <td>This email invites the recipient to join an app on Kore.ai, providing steps to accept the invitation.
+   <td>This email invites the recipient to join an app on platform, providing steps to accept the invitation.
    </td>
   </tr>
   <tr>
    <td>Invite existing user from bot (user is not part of the account)
    </td>
-   <td>This email invites the recipient to join an app on Kore.ai, following an administrator's invitation, with steps to access the app's features and support details for assistance if needed.
+   <td>This email invites the recipient to join an app on platform, following an administrator's invitation, with steps to access the app's features and support details for assistance if needed.
    </td>
   </tr>
   <tr>
    <td>Invite existing user from bot(user is part of the account)
    </td>
-   <td>This email invites the recipient, via a bot, to join an app on Kore.ai, providing steps to access the app's features, along with support details.
+   <td>This email invites the recipient, via a bot, to join an app on platform, providing steps to access the app's features, along with support details.
    </td>
   </tr>
   <tr>
@@ -254,9 +258,9 @@ The following table describes the automatic emails triggered by the system when 
    </td>
   </tr>
   <tr>
-   <td>Add-on XO Voice Gateway with ASR and TTS
+   <td>Add-on platform Voice Gateway with ASR and TTS
    </td>
-   <td>This email confirms the successful activation of the recipient's subscription for the XO Voice Gateway add-on with ASR and TTS, indicating that payment has been processed.
+   <td>This email confirms the successful activation of the recipient's subscription for the platform Voice Gateway add-on with ASR and TTS, indicating that payment has been processed.
    </td>
   </tr>
   <tr>

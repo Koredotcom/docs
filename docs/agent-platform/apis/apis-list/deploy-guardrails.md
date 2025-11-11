@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+
 # Deploy Guardrails API
 
 This API deploys predefined **guardrails** to enhance security, compliance, and content moderation in AI interactions. These guardrails act as filters or constraints to ensure safe and appropriate AI responses.
@@ -42,7 +44,9 @@ The API response includes the **model ID** and the **guardrail deployment status
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Path Parameters
 

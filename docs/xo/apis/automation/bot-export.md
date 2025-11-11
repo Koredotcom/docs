@@ -271,10 +271,10 @@ Usage:
 
 ```json
 {
-    "_id": "ber-a59b2599-9209-57f8-a3ad-3109e08e427a",
-    "streamId": "st-6fa10d24-9091-5c38-b457-1e33a82b115e",
+    "_id": "ber-a59b2599-xxxx-xxxx-a3ad-3109e08e427a",
+    "streamId": "st-6fa10d24-xxxx-xxxx-b457-1e33a82b115e",
     "status": "pending",
-    "createdBy": "u-ccdc35ab-3541-5642-bd74-df7ae1afcfe6",
+    "createdBy": "u-ccdc35ab-xxxx-5xxxx-bd74-df7ae1afcfe6",
     "exportType": "latest",
     "requestType": "Botexport",
     "createdOn": "2024-09-30T08:12:03.442Z",

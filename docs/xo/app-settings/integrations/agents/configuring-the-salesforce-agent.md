@@ -209,47 +209,19 @@ Create a custom client deployment that can be referenced in public REST API endp
 9. Create and publish your new deployment, which takes a few minutes. Don’t navigate away from the page until it’s complete.
 
 
-#### Step 2: Retrieve Organization ID
 
-
-
-1. Log in to your Salesforce account.
-2. Click on your profile icon in the top right corner and select Setup.
-3. In the Quick Find search bar on the left panel, type Company Information and select it. 
-Under Company Information, locate the field Salesforce.com Organization ID.
-4. Copy the Organization ID for future use.  
-<img src="../images/miaw1.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
-
-
-
-#### Step 3: Retrieve the Organization Base URL
-
+#### Step 2: Retrieve Organization ID, Organization Base URL, and Developer Name
 
 
 1. Log in to your Salesforce account.
-2. Click on your profile icon in the top right corner and select Setup.
-3. In the Quick Find search bar on the left panel, type My Domain and select My Domain under Company Settings.
-4. Locate the field Current My Domain URL.
-5. Copy this URL for integration purposes.  
-<img src="../images/miaw2.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
+2. Click your profile icon in the top-right corner, then select Setup.
+3. In the Quick Find search bar on the left panel, type Embedded Service Deployments and select it. Select the Messaging Channel and then select Code Snippet.  <img src="../images/miaw-embedded-system.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
 
-
-#### Step 4: Retrieve Developer Name
+4. From the Code Snippet, copy Organization ID, Organization Base URL, and Developer Name.  <img src="../images/miaw-code-snippet.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
 
 
 
-1. Log in to your Salesforce account.
-2. Click on your profile icon in the top right corner and select Setup.
-3. In the Quick Find search bar on the left panel, navigate to:
-4. Platform Tools > Feature Settings > Service > Messaging > Messaging Settings.
-5. Locate and click on the Messaging Channel for which you want to retrieve the Developer Name.
-6. The Developer Name will be displayed within the channel details.
-7. Copy the Developer Name for future use.  
-<img src="../images/miaw3.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
-<img src="../images/miaw4.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
-
-
-#### Step 5: Enable the Salesforce Agent
+#### Step 3: Enable the Salesforce Agent
 
 1. Log in to the Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Select an AI Agent for which you want to configure the Salesforce agent.

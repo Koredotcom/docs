@@ -8,7 +8,7 @@ repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
-  favicon: images/kore_favicon.svg
+  favicon: images/Kore_logo_new.svg
   name: material
   custom_dir: overrides
   features:
@@ -50,6 +50,7 @@ plugins:
         'getting-started/virtual-assistants-overview.md': 'getting-started/building-a-virtual-assistant.md'
         'generative-ai-tools/co-pilot-features.md': 'generative-ai-tools/genai-features.md'
         'generative-ai-tools/dynamic-conversations-features.md': 'generative-ai-tools/genai-features.md'
+        'generative-ai-tools/dgpt-upcoming-features.md': 'generative-ai-tools/dialog-gpt.md'
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
         'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
@@ -107,8 +108,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -462,8 +463,9 @@ nav:
         - System Settings: 
           - Co-Browse: contactcenter/configurations/settings/co-browse.md
           - Supervisor Join/Exit Notification to User: contactcenter/configurations/settings/supervisor-join-exit-notification-to-user.md
-          - Obscure Customer Info in Analytics - Interactions: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
           - Automatic Away Status for Agent Inactivity: contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md
+          - Obscure Customer Info in Analytics - Interactions: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
+          - Email Settings: contactcenter/configurations/settings/email-settings.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
           - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
@@ -496,6 +498,7 @@ nav:
         - Voice Campaigns: contactcenter/campaigns/campaign-management/voice-campaigns.md
         - SMS Campaigns: contactcenter/campaigns/campaign-management/sms-campaigns.md
         - Proactive Web Campaigns: contactcenter/campaigns/campaign-management/proactive-web-campaigns.md
+        - Logs: contactcenter/campaigns/campaign-management/logs.md
       - List Management: contactcenter/campaigns/list-management/list-management.md
       - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
@@ -558,7 +561,8 @@ nav:
       - Settings: 
         - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
         - Quality AI General Settings: quality-ai/configure/quality-ai-general-settings.md
-        - Language Settings: quality-ai/configure/language-settings.md         
+        - Language Settings: quality-ai/configure/language-settings.md
+      - Analytics: quality-ai/analytics/scheduled-reporting-for-quality-ai.md        
   - Agent AI:
     - About Agent AI: agentai/about-agent-ai.md
     - Set up Agent AI:
@@ -596,25 +600,29 @@ nav:
       - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
       - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
+      - Amazon Connect CCP Integration with Agent AI Voice: agentai/integration/amazon-connect-ccp-agentai-voice/amazon-connect-ccp-integration-with-agentai-voice.md 
+      - Amazon Connect CCP Integration with Agent AI Chat: agentai/integration/amazon-connect-ccp-agentai-chat/amazon-connect-ccp-integration-agentai-chat.md
     - Agent AI Web SDK:
-      - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
-      - SDK Fields and Details: agentai/integration/AgentAI-webSDK/sdk-fields-and-details.md
-      - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
-      - View Customized Events: agentai/integration/AgentAI-webSDK/view-customized-events.md
-      - My Bot Tab: agentai/integration/AgentAI-webSDK/mybot-tabs.md
-      - Dialog Tab: agentai/integration/AgentAI-webSDK/dialog.md
-      - Transcript Events: agentai/integration/AgentAI-webSDK/transcript-events.md
-      - Search Tab: agentai/integration/AgentAI-webSDK/searchtab-events.md
-      - Playbooks Events: agentai/integration/AgentAI-webSDK/sdk-Playbooks.md
-      - Internal Transfer: agentai/integration/AgentAI-webSDK/internal-transfer-process.md
-      - Sentiment Chart: agentai/integration/AgentAI-webSDK/sentiment-charts.md
-      - Other Events: agentai/integration/AgentAI-webSDK/other-events.md
-      - Error Codes: agentai/integration/AgentAI-webSDK/error-codes.md
+      - Introduction: agentai/integration/websdk/introduction.md
+      - SDK Fields and Details: agentai/integration/websdk/sdk-fields-and-details.md
+      - Customize SDK: agentai/integration/websdk/customize-your-sdk.md
+      - View Customized Events: agentai/integration/websdk/view-customized-events.md
+      - My Bot Tab: agentai/integration/websdk/mybot-tabs.md
+      - Dialog Tab: agentai/integration/websdk/dialog.md
+      - Transcript Events: agentai/integration/websdk/transcript-events.md
+      - Search Tab: agentai/integration/websdk/searchtab-events.md
+      - Agent Coaching Events: agentai/integration/websdk/coaching-events.md
+      - Playbooks Events: agentai/integration/websdk/sdk-Playbooks.md
+      - Internal Transfer: agentai/integration/websdk/internal-transfer-process.md
+      - Sentiment Chart: agentai/integration/websdk/sentiment-charts.md
+      - Other Events: agentai/integration/websdk/other-events.md
+      - Error Codes: agentai/integration/websdk/error-codes.md
   - GenAI Tools:
     - About GenAI Tools: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
     - Models Library:
-      - LLM Integration: generative-ai-tools/models-library.md
+      - About LLM Integration: generative-ai-tools/models-library.md
+      - Configure LLM Integration: generative-ai-tools/configure-llm-integration.md
       - Kore.ai XO GPT Module: 
         - About XO GPT Module: generative-ai-tools/xo-gpt-module.md
         - XO GPT Model Specifications:
@@ -639,7 +647,6 @@ nav:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
       - DialogGPT FAQs: generative-ai-tools/dgpt-faq.md  
-      - Rollout Plan: generative-ai-tools/dgpt-upcoming-features.md
     - Safeguards:
       - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
@@ -812,7 +819,7 @@ nav:
       - Import & Export App: deploy/bot-management.md
     - Data:
       - About Data Tables and Views: administration/data/data-tables-and-views.md
-      - Guideines: administration/data/using-data-table.md
+      - Guidelines: administration/data/using-data-table.md
       - Data Table: administration/data/data-table.md
       - Table view: administration/data/table-views.md
       - App Definition: administration/data/app-definition.md

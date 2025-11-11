@@ -6,6 +6,11 @@ Streaming responses in large language models (LLMs) enable real-time, incrementa
 
 The Platform support the voice-based channel [Voice Gateway](../channels/voice-gateway/configure-voice-gateway.md) for GenAI features, including Agent Node, with Deepgram as the supported TTS engine. Additionally, we provide seamless integration with models from OpenAI and Azure OpenAI. Our Custom Prompt capability enables integration with other LLMs, allowing businesses to use non-system models by defining their own prompts, provided the LLM supports streaming.
 
+The Platform delivers real-time LLM response streaming for chat conversations on [Web/Mobile SDK](../sdk/bot-sdk-introduction.md) Channels. Agent Node and Prompt Node deliver AI responses token by token, showing incremental replies to boost engagement and reduce latency. Text streaming activates when a streaming prompt is selected at the node level, even if the feature-level prompt doesn't use streaming.
+
+The streaming capability is available only for [V1 prompts](../automation/agent-node/prompt-setup.md) in Agent Nodes and doesn't support tool calling.
+
+
 ### Benefits of Streaming
 
 * Real-Time Output: Generates and displays text instantly, reducing wait times.

@@ -2,6 +2,59 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.19.0 October 25, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Email Inline Suggestions and Contact Management**
+
+Agents now receive inline email suggestions as they type in the To, CC, and BCC fields, pulled from a company-wide address book. Administrators can manage the contact list using a CSV upload, including names, emails, and tags. The system prevents duplicate or invalid addresses while allowing multiple contact selection. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+**Email Threading Support**
+
+Contact Center AI now supports email conversation threading using standard email headers. Previously, emails sent to external clients appeared as separate messages even within the same thread. To resolve this, threading logic has been implemented using Message-ID and Reference headers, ensuring replies are correctly linked to their original email chains. This enhancement enables seamless conversation continuity, so both internal users and external recipients view related messages as part of the same thread. Existing console threading remains available for backward compatibility. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+**Email Forwarding**
+
+Agents can forward email conversations to internal or external recipients, preserving the full thread. Forwards include "Fwd:" prefix, maintain all formatting, images, links, and attachments (with per-file selection), and allow adding custom text before sending.  
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+**Editable TO, CC, and BCC Fields in Email Replies and Forward**
+
+Agents can now edit TO, CC, and BCC fields when replying, replying all, or forwarding emails, with support for multiple recipients and validation. Replies preserve threading using Message-ID and Reply-To. Forward opens with empty fields. Administrators can enable or disable this feature account-wide; it is enabled by default. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+<font size="4">Configuration</font>
+
+**Queue-Level OnConnect Message Configuration for All Channels**
+
+Administrators can now configure queue-specific OnConnect messages for all channels, including Email, with the default message acting as a fallback. Queue-level messages override the global message, providing context-aware greetings for customers while maintaining existing Voice and Chat behavior. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#conversation-statuses-by-channel-live-chat-messaging-and-voice)
+
+**End-of-Conversation Event Triggers on User Chat Termination**
+
+Administrators can configure a custom command that contains at least 6 characters, including one special character. When a user types this command, it automatically triggers the End-of-Conversation Event on the Agent AI Widget. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#conversation-statuses-by-channel-live-chat-messaging-and-voice)
+
+**Extend Email Session Timers**
+
+Email sessions can now remain active until manually closed, with configurable timers extending up to 30 days. Administrators can adjust queue wait time, overdue, inactivity, and auto-expiry settings to prevent premature session closure. Default settings remain unchanged for backward compatibility. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration)
+
+<font size="4">Analytics</font>
+
+**Bulk Transfer of Chats, Calls and Emails to a Human Agent**
+
+Supervisors can transfer multiple chats, calls, and emails simultaneously from the Agents or Queue tabs to specific agents or queues. Transfers respect agent capacity, channel eligibility, and status restrictions, and automatically notifies of failures or overload situations. Role-based permissions control access, and blended accounts are required for multi-channel transfers. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#transfer-all-callschatsemails-to-a-human-agent)
+
+<font size="4">API</font>
+
+**Call Details API: Callback and External Transfer Tracking**
+
+The Call Details API now captures callback and external transfer events with new tracking fields. QueueEntry includes CallbackOpted, CallbackOptedTime, and CallbackInitiatedTime for both caller and system-initiated callbacks. AgentTransfer objects add ExternalTransferTime and ExternalTransferDestination fields for transfers to external parties, improving call-handling metrics and reporting accuracy. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+
+<hr>
+
 ## v11.18.0 September 27, 2025
 
 <u>Minor Release</u>
@@ -70,7 +123,7 @@ Contact Center AI nodes now support debug logging within the Flow Builder, exten
 
 **Bulk Transfer and End of Calls, Chats, and Emails in Agent Queues**
 
-App Owner, Administrators, Supervisors, and App Developers can bulk transfer or end multiple conversations across chat, email, and voice channels directly from the Monitor tab. Users can select a queue, view active conversations, and perform multi-selection to transfer conversations to another queue or end them with a confirmation. This update streamlines workload management, improves operational flexibility, and reduces manual effort in handling agent queues. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#transfer-all-callschatsemails-in-agent-queue)
+App Owner, Administrators, Supervisors, and App Developers can bulk transfer or end multiple conversations across chat, email, and voice channels directly from the Monitor tab. Users can select a queue, view active conversations, and perform multi-selection to transfer conversations to another queue or end them with a confirmation. This update streamlines workload management, improves operational flexibility, and reduces manual effort in handling agent queues. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#transfer-conversations-to-a-queue)
 
 <font size="4">API</font>
 
@@ -1966,7 +2019,7 @@ The User Diagnostics (♡) icon is at the top right corner of the Agent Console.
 
 **Set Voice Chat on Voice Gateway Account**
 
-Administrators can use a Utils method/script inside the script node to set up voice chat in accounts configured with Voice Gateway. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-voice-chat-on-koreai-voice-gateway-account)
+Administrators can use a Utils method/script inside the script node to set up voice chat in accounts configured with Voice Gateway. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-voice-chat-on-voice-gateway-account)
 
 **Handling ASR Fallback Using Call Control Parameters**
 

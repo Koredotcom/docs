@@ -137,7 +137,7 @@ For a detailed document on the implementation, [refer here](kore-unblu-integrati
         "timestamp" : 1594113137065.0,
         "eventType" : "bot.dialog.opened",
         "accountId" : "wZvcAnbBSpOps9oteH-Oxw",
-        "dialogToken" : "qG8dFE7ZQPW1p6qcI293hQ-c-QY7P7MNqTCuM6FHT-m-FSQ",
+        "dialogToken" : "qG8dFE7ZQPW1p6qcI293hQ-c-QY7P7MNqxxxxxxxx-m-FSQ",
         "dialogType" : "ONBOARDING",
         "counterpartPerson" : {
         "type" : "PersonData",

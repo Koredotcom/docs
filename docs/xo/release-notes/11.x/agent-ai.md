@@ -2,6 +2,40 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.19.0 October 25, 2025
+
+<u>Minor Release</u>
+
+<font size="4">UI Enhancements</font>
+
+**Agentic Copilot Enablement for Specific Queues**
+
+Admins and supervisors can now enable Agentic Copilot apps for specific agent queues via the **Agent AI Mapping** section, allowing them to try the feature with select agents before enabling it for a larger agent base. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/agent-ai-mapping.md/#configure-agentic-copilot-apps)
+
+The Agent AI **Channel Specific Settings** > **Agentic Copilot** now includes two options: 
+
+* Enable for all agents: Enables the selected app for all queues.
+* Enable for specific queues: Enables the selected app for selected queues.  
+ [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings)
+
+**Conversation Logs Display Identifiers and Sentiment Data**
+
+The Conversation Logs section now displays Session ID, Bot ID, Conversation ID, and User ID, with copy buttons. It also displays Overall Sentiment, which, when hovered over, shows the detailed user sentiment journey. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-conversation-logs.md/#identifiers)
+
+<font size="4">API Enhancement</font>
+
+**API for Duration-Based Conversation Record Generation**
+
+This API generates duration-based, paginated Agent AI conversation records, providing time-bound insights into product performance. It supports a maximum date range of seven days. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/api-for-duration-based-conversation-records.md) 
+
+<font size="4">Integration Enhancement</font>
+
+**Agentic Copilot Support for ServiceNow Agent AI Widget**
+
+Agent AI integration with ServiceNow now supports Proactive Mode through Agentic Copilot, providing agents with real-time, context-driven suggestions. 
+
+<hr>
+
 ## v11.18.0 September 27, 2025
 
 <u>Minor Release</u>

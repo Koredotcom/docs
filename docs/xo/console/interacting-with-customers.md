@@ -204,13 +204,13 @@ In addition to After Call Work (ACW), Agents also have access to the following c
 
 ## Voicemail
 
-If auto answer mode is enabled in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings), the transcript and recording appear automatically in the conversation tray of the agent.
+If auto answer mode is enabled in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings), the transcript and recording appear automatically in the conversation tray of the agent.  
+<img src="../images/next-in-queue-voicemail.png" alt="Next in Queue - Voicemail" title="Next in Queue - Voicemail" style="border: 1px solid gray; zoom:50%;">
 
-If manual mode is enabled, a notification is displayed on the [Next in Queue Notification](../console/managing-incoming-interactions.md#next-in-queue-notifications) panel. The agent must accept the voicemail, although no inbound conversation slots are consumed.  
-<img src="../images/next-in-queue-voicemail.png" alt="Next in Queue (Voicemail)" title="Next in Queue (Voicemail)" style="border: 1px solid gray; zoom:50%;">
+If manual mode is enabled, a notification is displayed on the [Next in Queue Notification](../console/managing-incoming-interactions.md#next-in-queue-notifications) panel. The agent must accept the voicemail, although no inbound conversation slots are consumed.
 
 When the agent accepts the voicemail, the transcript and recording are displayed on the interaction pane. The agent can play, transfer, call (outbound), and download the voicemail from the interaction pane.  
-<img src="../images/voicemail-playback.png" alt="Voicemail Playback" title="Voicemail Playback" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/voicemail-playback.png" alt="Voicemail Playback" title="Voicemail Playback" style="border: 1px solid gray; zoom:70%;">
 
 ### Callback Option
 
@@ -220,10 +220,10 @@ You can call the customer as follows:
 <img src="../images/callback button.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:50%;">
 
 2. The outbound call dialer is displayed. Click the **Call** button to initiate the outbound call.  
-<img src="../images/dialpad-call-button.png" alt="Dialpad Call Button" title="Dialpad Call Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/dialpad-call-button.png" alt="Dialpad Call Button" title="Dialpad Call Button" style="border: 1px solid gray; zoom:70%;">
 
 3. The agent can continue the conversation.  
-<img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:70%;">
 
 ### Consult Call, Conference Call, and Warm Transfer for Voice Calls
 
@@ -513,7 +513,7 @@ During a conversation, agents can click the **Emoji** icon to react to the conve
 
 ## Sending Attachments to Customers
 
-During a conversation, agents can click the **Attachments** icon to share attachments with customers.
+During a conversation, agents can click the **Attachments** icon to share attachments with customers. The attached files are stored in the Amazon S3 bucket.
 
 !!! Note
 
@@ -615,8 +615,25 @@ Steps to snooze a conversation:
 
 Agents can view and respond to emails on the console. The emails appear on the console as follows:
 
-**Threaded email structure**: A threaded email structure features a visible distinction between agent and user emails.  
+**Threaded email structure**: A threaded email structure features a visible distinction between agent and user emails. Previously, emails sent to external clients appeared as separate messages even within the same thread. To resolve this, threading logic is implemented using Message-ID and Reference headers, ensuring replies are correctly linked to their original email chains. This enables seamless conversation continuity, so both internal users and external recipients view related messages as part of the same thread.  
 <img src="../images/threaded-email-structure.png" alt="Threaded Email Structure" title="Threaded Email Structure" style="border: 1px solid gray; zoom:70%;">
+
+**_Agents_**
+
+* Emails display as properly threaded conversations in email clients.
+* Replies from customers automatically map to the correct conversation, reducing confusion.
+
+**_Customers_**
+
+* Emails appear as part of a single, continuous thread, improving readability and context.
+
+**_Supervisors and Admins_**
+
+* Greater consistency between conversation records and customer-facing email threads.
+
+!!! note
+
+    The system stores the metadata for all inbound and outbound messages.
 
 **Collapsible email tiles**: This allows agents to minimize or expand email threads as needed, reducing clutter and improving the organization of the email inbox.  
 <img src="../images/collapsible-email-tiles.png" alt="Collpsible Email Tiles" title="Collpsible Email Tiles" style="border: 1px solid gray; zoom:70%;">
@@ -647,11 +664,25 @@ Steps to resend an email:
     * The re-sent email is sent as a new interaction but linked to the original interaction.  
     * The interaction log marks the message as **Resent** for clarity.
 
+**Forward Emails**: When a user selects Forward, a new email draft opens with the subject prefixed by “Fwd:”. The previous mail information appears when forwarding is initiated. All previous attachments are included, with the option to select which ones to forward. Users can edit recipients, add text, and send the email. The sent message retains headers indicating the forwarded content within the email body.  
+<img src="../images/forward-email-button.png" alt="Forward Email" title="Forward Email" style="border: 1px solid gray; zoom:70%;">
+
 **Arrival Summary**: Every email conversation begins with an Arrival summary once an agent accepts it. For more information about the arrival summary, refer to [Arrival Summary](#arrival-summary).  
 <img src="../images/email-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
 
 **Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.  
 <img src="../images/cc-and-bcc.png" alt="CC and BCC" title="CC and BCC" style="border: 1px solid gray; zoom:70%;">
+
+If [Inline Email ID Suggestions](../contactcenter/configurations/settings/email-settings.md) is enabled, the inline suggestions are displayed in the To, CC, and BCC fields.
+
+**_Agents_**
+
+* Can add or remove recipients dynamically when replying or forwarding emails.
+* Send to multiple recipients using comma-separated email IDs.
+
+**_Supervisors/Admins_**
+
+* Configure whether agents can modify distribution lists.
 
 **Standard Responses**:
 You can choose from a library of configured standard responses.
@@ -665,7 +696,7 @@ You can choose from a library of configured standard responses.
 3. Click the Standard Response from the list to use that response in the email.  
 <img src="../images/standard-response-filled.png" alt="Send Standard Response" title="Send Standard Response" style="border: 1px solid gray; zoom:70%;">
 
-    **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a ‘**View More**’ button is displayed.
+    **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a ‘**View More**’ button is displayed. Attachments received in emails are stored in the Amazon S3 bucket. 
 
     Click the **Attachment** icon to select and upload files.  
         <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:70%;">

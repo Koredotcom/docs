@@ -62,7 +62,6 @@ extra:
           note: >-                       
             Thanks for your feedback!           
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - extra_js/feedback.js
 markdown_extensions:
@@ -82,8 +81,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       options:
         custom_icons:
           - overrides.en.agent-platform/.icons      
@@ -182,9 +181,9 @@ nav:
         - Audit Logs:
           - Tool Audit Logs: ai-agents/tools/tool-audit-log.md
         - Configurations:
-          - Configure a Tool: ai-agents/tools/configure-a-tool.md
+          - Manage your Tool: ai-agents/tools/configure-a-tool.md
           - Export a Tool: ai-agents/tools/export-a-tool.md
-          - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
+          - Import Tool as a Version: ai-agents/tools/import-a-tool-as-a-version.md
       - Code Tools: 
         - About Code Tools: ai-agents/tools/code-tools.md
         - Create a Code Tool: ai-agents/tools/create-a-code-tool.md
@@ -211,6 +210,8 @@ nav:
     - How Tos:
       - Share Contextual Metadata with AI for Service: ai-agents/agentic-apps/howto/share-context-with-AIforService.md
       - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md
+      - Initiate Live Agent Handoff from Agentic Apps: ai-agents/agentic-apps/howto/initiate-live-agent-handoff.md
+      - Use Metadata passed via APIs in Agentic Apps: ai-agents/agentic-apps/howto/use-metadata.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
@@ -300,17 +301,15 @@ nav:
     - Security & Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
       - Authorization Profile: settings/security-and-control/authorization-profile.md
+      - Key Management: settings/security-and-control/encryption-key-mgmt.md
       - API Scopes: settings/security-and-control/api-scopes.md
     - Billing:
       - Billing and Usage: settings/billing/billing-and-usage.md
       - Managing Usage Limits: settings/billing/managing-usage-limits.md
     - Data: 
       - Manage Data: settings/data/manage-datasets.md
-  - APIs: 
-    - Agentic Apps:
+  - APIs:
       - About Agentic App APIs: apis/agentic-apps/overview.md
-      - APIs List: apis/agentic-apps/overview/#apis-list
-    - Tools:
       - About Tools APIs: apis/overview.md
-      - APIs List: apis/overview/#apis-list
+      - APIs List: apis/list-of-apis.md
   - Marketplace: ai-agents/agentic-apps/marketplace.md

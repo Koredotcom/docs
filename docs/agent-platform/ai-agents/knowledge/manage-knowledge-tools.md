@@ -80,9 +80,9 @@ Click **Create**. This action creates a new Search AI application within the sam
 
 ## Test the Knowledge Base
 
-Before finalising the tool, you can test its functionality directly within the Agentic App to ensure it works as expected. Click **Test your knowledge base**, and provide the required input parameters. View the generated sample response to verify the correct execution of the tool.
+Before finalizing the tool, you can test its functionality directly within the Agentic App to ensure it works as expected. Click **Test your knowledge base**, and provide the required input parameters. View the generated sample response to verify the correct execution of the tool.
 
-The response includes both the script output and detailed logs. These logs provide visibility into the underlying SearchAI operations and can be used to troubleshoot errors, analyse performance, and refine query behaviour. Users can update the configurations on the left-hand side, selecting chunks, answers, or both, and the responses are generated accordingly based on these choices.
+The response includes both the script output and detailed logs. These logs provide visibility into the underlying SearchAI operations and can be used to troubleshoot errors, analyze performance, and refine query behavior. Users can update the configurations on the left-hand side, selecting chunks, answers, or both, and the responses are generated accordingly based on these choices.
 
 ![Test the Knowledge Base](images/test-knowledgebase-tool.png "Test the Knowledge Base")
 

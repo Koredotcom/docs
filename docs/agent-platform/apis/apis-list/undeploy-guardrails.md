@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+
 # Undeploy Guardrails API
 
 This API removes the previously deployed guardrails that regulate AI interactions.
@@ -32,7 +34,9 @@ Once undeployed, the guardrails become inactive. The API response includes the *
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Path Parameters
 
@@ -82,9 +86,9 @@ Once undeployed, the guardrails become inactive. The API response includes the *
 ## Sample Request
 
 ```js
-curl --location 'https://{host}/api/public/guardrails/undeploy' \
---header 'x-api-key: kg-axxxxxxx-xxxx-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3' \
---header 'Content-Type: application/json' \
+curl --location 'https://{host}/api/public/guardrails/undeploy' 
+--header 'x-api-key: kg-axxxxxxx-xxxx-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3' 
+--header 'Content-Type: application/json' 
 --data '{"name": "Ban topics"}'
 ```
 

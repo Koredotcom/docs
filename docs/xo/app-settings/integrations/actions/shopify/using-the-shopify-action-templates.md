@@ -190,7 +190,7 @@ Steps to find an order using an order ID:
         "tax_lines": [],
         "taxes_included": false,
         "test": false,
-        "token": "b69588d7e98c979b1d036ecd2f281661",
+        "token": "b69588d7e98c979b1d036ecd2f2xxxxx",
         "total_discounts": "0.00",
         "total_discounts_set": {
         "shop_money": {
@@ -494,7 +494,7 @@ Steps to find orders by customer Id in Shopify:
         "tax_lines": [],
         "taxes_included": false,
         "test": false,
-        "token": "b69588d7e98c979b1d036ecd2f281661",
+        "token": "b69588d7e98c979b1d036ecd2f2xxxxx",
         "total_discounts": "0.00",
         "total_discounts_set": {
         "shop_money": {

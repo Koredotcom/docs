@@ -15,7 +15,7 @@ The default App language is **English**. Follow these steps to add a new languag
   
     **Note:** You can also search for a language by entering its name in the Search field.
 
-4. Once you click configure, you can setup the following language configurations:  
+4. After you click configure, you can setup the following language configurations:  
 <img src="../images/mlva-img6-new-lang-config.png" alt="Setup language configuations" title="Setup language configurations" style="border: 1px solid gray;zoom:50%;"/>  
   
     a. **Choose the NLU Language** – Allows you to select any supported language as the NLU model to train your assistant.
@@ -35,7 +35,7 @@ The default App language is **English**. Follow these steps to add a new languag
     c. **Manage Translations** – In case the Translation Engine is not configured, click the **Configure** link to set up the translation engine for your assistant. To learn how to enable Input Translation or Runtime Response Translation, [refer to this article](managing-translation-services.md){:target="_blank"}.  
     <img src="../images/mlva-img10-enable-translation.png" alt="Manage translations" title="Manage translations" style="border: 1px solid gray;zoom:50%;"/>
 
-5. Once you have configured translations, click **Enable** to add/enable a new language for the assistant.
+5. After you have configured translations, click **Enable** to add/enable a new language for the assistant.
 
 
 ## Updating a language for an existing AI Agent
@@ -55,12 +55,41 @@ To update an already enabled language for an assistant, follow the below steps:
     c. **Update Manage Translations** – You can enable/disable input translation or runtime response translation based on your needs.  
   <img src="../images/mlva-img11-update-lang.png" alt="Manage language" title="Manage language" style="border: 1px solid gray;zoom:50%;"/>
 
-4. Click the **Update** button once all the necessary changes are made.
+4. Click the **Update** after all the necessary changes are made.
 
 !!! note
 
     - After you have configured a new language, to make the new language work, you must re-publish the AI Agent. Until then, the AI Agent continues to function with the previously published languages.  
     - The default Synonym library is available only for English, French, Spanish, German, and Chinese languages. However, you can add custom synonyms for any language.
+
+## Adding a language to a Dialog GPT-enabled AI Agent
+
+The default App language is **English**. Follow these steps to add a new language for your Dialog GPT-enabled AI Agent:
+
+1. Go to **App Settings > Configurations > Language Management**.
+2. On the Language Management page, in the ***Standard Languages*** section, click the **+ Add Language** to add languages.
+3. The Platform will display all the languages that are supported. Click **Configure** to enable a language.
+4. After you click configure, you can set up the following language configurations:  
+<img src="../images/dgpt_language_management.png" alt="Multilingual setting" title="Multilingual setting" style="border: 1px solid gray;zoom:50%;"/>  
+
+    a.  Under Input, choose one of the following options:  
+
+      * Use original user input to process input in its original language using Dialog GPT’s multi-lingual models.  
+      * Translation Engine to translate user input into the AI Agent’s default language using a translation service.
+  
+    b. Under Output, choose one of the following options:  
+  
+      * GenAI: Rephrase Responses to transform responses into the primary language of your AI Agent using rephrasing features.  
+      * Translation Engine to translate responses into the AI Agent’s default language using a    translation service.  
+  
+      To configure the translation engine, refer to [Manage Translation Services](managing-translation-services.md).
+
+5. Select Save to apply your changes.
+
+To edit the language configuration, select the language that is already enabled in the ***Standard Languages*** section, or select **Edit** in the ***Localization Configurations*** section.
+
+Update the configurations and then click **Save**.  
+<img src="../images/localization_configuration.png" alt="Manage language" title="Manage language" style="border: 1px solid gray;zoom:50%;"/>
 
 ## Switching Languages 
 
@@ -81,7 +110,7 @@ Languages can be enabled or disabled by going to **Build > Configurations > Lang
 <img src="../images/mlva-img13-enable-disable-lang.png" alt="Enable or disable language" title="Enable or disable language" style="border: 1px solid gray;zoom:50%;"/>  
     
 
-Once you have configured and enabled a language you can:
+After you have configured and enabled a language you can:
 
   * Disable or deactivate a language that is previously enabled for the AI Agent. The actual language-specific data that has been added while enabling the language will continue to exist in the AI Agent even after disabling the language. Disabling would prevent the users from talking  to the assistant in that language (can be viewed in the AI Agent export copy)
   * If a language is disabled you can enable it again, since the data is preserved, you need not enter all the details.

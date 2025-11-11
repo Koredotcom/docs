@@ -1,18 +1,18 @@
 # Customizing the Agent AI Widget
 
-The Agent AI Settings page allows users to set the Agent AI widget’s appearance. On this page, users can decide what features they want on the widget, channel-specific settings, and the URL opening behavior.
+The **Agent AI Settings** page allows users to configure the appearance of the Agent AI widget. On this page, users can choose which features to include in the widget, set channel-specific preferences, and define the URL opening behavior. 
 
-The Agent AI Settings page has the following sections:
+This page has the following sections:
 
 * Agent AI Channel Specific Settings
 * Agent AI General Settings
 
 ## Agent AI Channel-Specific Settings
 
-This section lets you set your preferences based on the channels. It has three channels – Chat, Voice, and Email – with a channel-specific default selection of options. The following option toggles are available to select under this section:
+This section lets you set your preferences based on the channels–Chat, Voice, and Email–with a channel-specific default selection of options. The following option toggles are available to select under this section:
 
-* **Proactive Mode**: This widget automates intent identification, entity extraction, and transcripts generation. It lets you have automatic (proactive) transcripts logging and intent suggestions. When enabled, you can also use the “Automatic Dialog Task Entity Extraction” option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcripts logging. However, you can still use greetings, search bar, and My AI Agent (Bot) automations. By default, this widget is enabled for all three channels.
-    * The Assist tab/Run button remains in the disabled state. Only Run with agent’s input will be available.
+* **Proactive Mode**: This widget automates intent identification, entity extraction, and transcript generation. It enables automatic (proactive) transcript logging and intent suggestions. When enabled, you can also use the “Automatic Dialog Task Entity Extraction” option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcript logging. However, you can still use the greetings, search bar, and My AI Agent (Bot) automations. By default, this widget is enabled for all three channels.
+    * The **Assist** tab/**Run** button remains disabled. Only **Run with agent’s input** is available.
     * The Playbook feature functions as follows:
         * For Dynamic playbooks, identification through the bulb icon and adherence are not functional, but tick-off and step progression continue to function.
         * For Primary playbooks, the automatic adherence or automatic tick-off does not happen.
@@ -24,7 +24,7 @@ This section lets you set your preferences based on the channels. It has three c
 
     If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels. 
 
-* **Agentic Copilot**: The Agentic Copilot feature enables you to have autonomous, end-to-end task execution. Agents monitor the conversations and can cancel, override, or edit the messages. In this section, you can select a language, enable/disable this feature, select an app, select to auto send messages, and set a timer (up to 10 seconds) for auto sending messages. 
+* **Agentic Copilot**: The Agentic Copilot feature enables you to have autonomous, end-to-end task execution. Agents monitor the conversations and can cancel, override, or edit the messages. In this section, you can select a language, enable/disable this feature, select the **Enable for all Agents** or **Enable for Specific Queues** option, select an app, select to auto send messages, and set a timer (up to 60 seconds) for auto sending messages. 
 
 * **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My AI Agent (Bot), and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection. 
 
@@ -53,16 +53,7 @@ This section lets you set your preferences based on the channels. It has three c
 
         * Continue from the Last Message: The chat history page scrolls down to the bottom of the page (last message).
 
-        * Configure Dialog Task: The user has to select one of the dialog tasks associated with an app from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.
-
-* **Transcript Tab**: This widget appears only for the **Voice** channel and lets you control the appearance of the Transcript tab in the Agent AI widget. By default, this widget is enabled.
-
-* **Auto Summarization**: This widget lets you automatically generate a summary of the conversation when it ends. Agents can copy the summary and save it into the **Notes** or **Remark** field while closing the conversation. By default, this widget is enabled for Voice and Chat channels only, and it also has the option to select the **Submit** button.
-
-    Third-party agent desktops can use the **Auto Summarization Model** widget to manage the automatic summarization process. They can select Kore’s default automatic summarization or the “Custom Dialog Task“ option, which lets them select a language-specific dialog task, enabling them to customize the Conversation Summary.
-
-    !!! note
-        The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
+        * Configure Dialog Task: The user has to select one of the dialog tasks associated with an app from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.  
 
 ### Steps to set channel specific preferences
 
@@ -75,12 +66,21 @@ This section lets you set your preferences based on the channels. It has three c
     * Select or clear the **Automatic Dialog Task Entity Extraction** option.
 7. Turn the toggle **on** or **off** against each widget, as required.
 8. For the **Agentic Copilot** feature: 
-    1. Select a language from the language list.
-    2. Click the toggle to Enable/Disable the Agentic Copilot feature.
-    3. Select an app from the **Select Agentic App** list.
-    4. Click to select the **Allow auto send Message** option. Clearing this option cancels all unsent or new Agentic messages.  
-    5. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 60 seconds. 
-    <img src="../widget-settings-images/agentic-copilot-setting.png" alt="agentic-copilot-setting" title="agentic-copilot-setting" style="border: 1px solid gray; zoom:80%;"> 
+    * Select a language from the language list.
+    * Click the toggle to Enable/Disable the Agentic Copilot feature.
+    * Select an option:
+        * **Enable for all Agents**: The selected app is enabled for all queues.
+            1. Select an app from the **Select Agentic App** list.
+            2. Click to select the **Allow auto send Message** option. Clearing this option cancels all unsent or new Agentic messages.
+            3. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 60 seconds.  
+
+                <img src="../widget-settings-images/agentic-copilot-all-agents.png" alt="agentic-copilot-all-agents" title="agentic-copilot-all-agents" style="border: 1px solid gray; zoom:80%;">  
+
+        * **Enable for Specific Queues**: Select this option to assign specific apps to selected queues in the **[Agent AI Mapping](../configuration/agent-ai-mapping.md)** section.  
+            1. Click **Open AI Feature Mapping** to navigate to the Agent AI Mapping section.
+            2. Click **learn more** to read about queue configuration.  
+            
+                <img src="../widget-settings-images/agentic-copilot-specific-agents.png" alt="agentic-copilot-specific-agents" title="agentic-copilot-specific-agents" style="border: 1px solid gray; zoom:80%;">  
 
 9. Turn the **toggle** on or off for **Control Transcript Visibility between Agents** (for Voice channel only), and select one of the following options: 
     * Use public APIs to control transcription 
@@ -95,24 +95,7 @@ This section lets you set your preferences based on the channels. It has three c
         !!! note
             The **Search AI** and **Agentic App** fields are disabled until they are configured. A warning message prompts you to configure them before use.  
 
-12. Enable or disable the **Auto Summarization** toggle.
-13. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
-14. Select or clear the **Submit** button under the **Auto Summarization** section.
-
-    Under the **Auto Summarization Model** section, select:
-
-    * **OOTB Kore Summarization**: For Kore’s default auto summarization.
-
-    * **Custom Dialog Task**: To select a language-specific dialog task that is displayed based on the selected language. The Custom Dialog Task field displays a list of dialog tasks or child apps based on app selection at the app level. At the app level, if you have selected:
-
-        * **Universal App**: The backend logic detects it and populates its associated Child Apps. You can expand each Child App to view and select its dialog task.
-
-        * **Child App/Normal/Singular App**: The Dialog Tasks list displays dialogs linked to the selected app, and you can select any from the displayed list.
-
-        !!! note
-            The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
-
-14. Click **Save** to save your settings.
+12. Click **Save** to save your settings.  
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent AI General Settings

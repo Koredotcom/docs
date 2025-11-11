@@ -14,7 +14,7 @@ Steps to enable Real Time Sentiment Analysis:
 
 2. Turn on the toggle to enable Real Time Sentiment Analysis. This feature is disabled by default.
 
-    **_To use this feature, you must configure a custom model and enable the appropriate prompt in GenAI Tools_**. [Learn more](../../../generative-ai-tools/models-library.md#llm-integration).  
+    **_To use this feature, you must configure a custom model and enable the appropriate prompt in GenAI Tools_**. [Learn more](../../../generative-ai-tools/models-library.md).  
 
     <img src="../images/advanced-settings-real-time-sentiment-toggle.png" alt="Real-Time Sentiment Analysis Toggle" title="Real-Time Sentiment Analysis Toggle" style="border: 1px solid gray; zoom:70%;">
 

@@ -539,13 +539,6 @@ The following is an example for converting HTML to an image:
 
 <script>
 
-/*
-
-* HTML: Print Wide HTML Tables
-
-* https://salman-w.blogspot.com/2013/04/printing-wide-html-tables.html
-
-*/
 
 $(function() {
 

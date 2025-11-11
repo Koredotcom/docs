@@ -67,12 +67,6 @@ The following are the parameters that can be used in this object:
    </td>
   </tr>
   <tr>
-   <td>childBotName
-   </td>
-   <td>Only used in case of a universal bot to identify the child bot's intent to trigger
-   </td>
-  </tr>
-  <tr>
    <td>entities
    </td>
    <td>Object with entity-value pairs as needed by the intent to be triggered
