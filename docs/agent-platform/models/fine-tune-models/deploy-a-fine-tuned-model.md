@@ -63,6 +63,6 @@ To deploy your fine-tuned model, follow these steps:
 
 7. Click **Deploy**.
 
-    After the deployment process is complete the status is changed to “Deployed”. You can now infer this model across Agent Platform and externally. The deployment of your model will start and after the deployment process is complete, you can find the API endpoint created for your fine-tuned model.
+    After the deployment process is complete the status is changed to “Deployed”. You can now infer this model across (In)Agent Platform and externally. The deployment of your model will start and after the deployment process is complete, you can find the API endpoint created for your fine-tuned model.
 
 

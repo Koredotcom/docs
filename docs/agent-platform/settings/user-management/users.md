@@ -12,7 +12,7 @@ The **Users** feature simplifies account administration through centralized tool
 * **Status Tracking**: Monitor user statuses (active, inactive, locked) from a centralized dashboard.
 * **Account Unlocking**: Quickly unlock user accounts that have been locked due to failed login attempts.
 * **User Search**: Easily find specific users using the search functionality.
-* **User Deletion**: Remove individual or multiple users from your Agent Platform account as needed.
+* **User Deletion**: Remove individual or multiple users from your (In)Agent Platform account as needed.
 
 **Best Practices**
 
@@ -25,7 +25,7 @@ The **Users** feature simplifies account administration through centralized tool
 
 The dashboard displays user counts by status:
 
-* **Active**: Users with active accounts who can interact with other Agent Platform users.
+* **Active**: Users with active accounts who can interact with other (In)Agent Platform users.
 * **Inactive**: Users invited by the admin but who have yet to join or accept the invitation.
 * **Locked**: Users who have exceeded 5 failed login attempts and their accounts have been locked.
 
@@ -51,7 +51,7 @@ The import feature allows administrators to add multiple users at once using .tx
 **Key Considerations**
 
 * Valid file types are _.txt_ or _.csv_. No other file types are allowed.
-* The file must contain the required user information, such as name, email ID, and status, to create a user profile in your Agent Platform account.
+* The file must contain the required user information, such as name, email ID, and status, to create a user profile in your (In)Agent Platform account.
 * Each row should contain information for ONE user.
 * You can use accepted delimiters like Comma (","), Pipe ("|"), Semi-Colon (";"), and Tab in the file.
 * The first row in the file should be the field name used to identify the user data.
@@ -63,7 +63,7 @@ The import feature allows administrators to add multiple users at once using .tx
 
 #### Import User Data File
 
-The steps mentioned below, allow you to import users' data from a designated file into Agent Platform.
+The steps mentioned below, allow you to import users' data from a designated file into (In)Agent Platform.
 
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
@@ -145,12 +145,12 @@ The following window is displayed with the import date and time, the importing u
 
 ## Delete a User/Bulk Delete
 
-The **Delete** feature removes a user you’re managing from your Agent Platform account.
+The **Delete** feature removes a user you’re managing from your (In)Agent Platform account.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>Only users included as Admin in the system with the required permissions can access the <b>Settings</b> Console.</p>
-<p><ul><li>Deleting a user revokes their access and removes their data from your account. However, the user can still access their personal account on Agent Platform. To rejoin your account, you must invite them again via email.</li>
+<p><ul><li>Deleting a user revokes their access and removes their data from your account. However, the user can still access their personal account on (In)Agent Platform. To rejoin your account, you must invite them again via email.</li>
 <li>You cannot delete users if they have created and manage tools in your account. The user must first remove all active tools before they can be deleted.</li></ul></p></div>
 
 **Steps to delete a user**
@@ -237,7 +237,7 @@ The role is updated for the selected users.
 
 ## Related Information
 
-* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
+* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other (In)Agent Platform admin features.
 * **Role Management** - [Learn more](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
 * **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
 

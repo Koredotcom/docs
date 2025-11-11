@@ -20,7 +20,7 @@ Key responsibilities include:
 * Resolving conflicts between agent outputs.
 * Verifying and validating responses before presenting to the user.
 
-The Agent Platform offers two types of orchestration patterns - the Supervisor pattern and the Adaptive Network pattern.
+The (In)Agent Platform offers two types of orchestration patterns - the Supervisor pattern and the Adaptive Network pattern.
 
 ### Supervisor Pattern
 

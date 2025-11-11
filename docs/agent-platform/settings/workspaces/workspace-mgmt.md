@@ -11,7 +11,7 @@ Points to Note:
 * All configurations, including AI Model configurations, settings, auth profiles, and permissions, are maintained separately for each workspace.
 * Each workspace has its own set of deployment environments.
 
-The current workspace is displayed at the top right corner in the Agent Platform UI. 
+The current workspace is displayed at the top right corner in the (In)Agent Platform UI. 
 
 ![alt_text](images/home.png "Workspace")
 

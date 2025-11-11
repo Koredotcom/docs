@@ -1060,7 +1060,7 @@ To access and view audit logs, follow the steps below:
 
 ## Dashboard Information
 
-The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your Agent Platform account:
+The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your (In)Agent Platform account:
 
 * **Event Name:** Describes the specific event or action that occurred.
 * **Category:** Identifies the module or entity affected by the event.
@@ -1229,7 +1229,7 @@ You can confidently scale AI initiatives with event-based user activity logs to 
 
 ## Related Information
 
-* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other (In)Agent Platform admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
 * [Tool Flow Change Logs](../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.

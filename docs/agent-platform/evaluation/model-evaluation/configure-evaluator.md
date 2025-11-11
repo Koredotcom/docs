@@ -228,7 +228,7 @@ Steps to add an evaluator:
 
 2. From the list of Quality and Safety evaluators, select the desired evaluator.
 3. In the Evaluators dialog, fill in these details:
-    1. **Model**: Choose the model you want to use as an evaluator. This model will assess the input and/or output and generate a score. Only the models(open-source and external) deployed in Agent Platform will appear in the search dropdown.
+    1. **Model**: Choose the model you want to use as an evaluator. This model will assess the input and/or output and generate a score. Only the models(open-source and external) deployed in (In)Agent Platform will appear in the search dropdown.
     2. **Model Configuration**: Select the appropriate model hyperparameters such as Temperature, Output token limit, Top P etc.
     3. **Prompt**: Click to view the system prompt. The prompt associated with the system evaluator is view-only. While you can view the prompt, it cannot be edited.
     4. **Map variables**: Map the variables in the prompt to the corresponding columns in your imported dataset. This ensures the evaluator uses the right data for its analysis. 
@@ -265,7 +265,7 @@ Steps to add an evaluator:
     1. **Evaluator Name**: Enter a name for the evaluator.
     2. **Evaluator Type**: Select the category for the evaluator: **Quality** or **Safety**.
     3. **Description**: Provide a brief description of the evaluator, explaining its purpose and function.
-    4. **Model**: Choose the model you want to use for evaluation. This model will assess the input and/or output and generate a score. Only the models deployed in Agent Platform appear in the search dropdown. Both open-source and the external models are considered here.
+    4. **Model**: Choose the model you want to use for evaluation. This model will assess the input and/or output and generate a score. Only the models deployed in (In)Agent Platform appear in the search dropdown. Both open-source and the external models are considered here.
     5. **Model Configuration**: Select the appropriate model hyperparameters such as Temperature, Output token limit, Top P etc.
     6. **Prompt**: Enter the prompt that will guide the model in evaluating the input/output. You can also click ‘Template’ to use built-in evaluator templates, which you can then customize as needed.  
 

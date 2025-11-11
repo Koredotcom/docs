@@ -1,6 +1,6 @@
 # Integrate with S3 Bucket
 
-The S3 Storage Integration functionality broadens Agent Platform's capabilities by enabling connectivity with your AWS S3 account. It empowers you to import files from S3 and leverage them in developing high-quality AI applications for enterprises.
+The S3 Storage Integration functionality broadens (In)Agent Platform's capabilities by enabling connectivity with your AWS S3 account. It empowers you to import files from S3 and leverage them in developing high-quality AI applications for enterprises.
 
 **To integrate with your S3 account, follow these steps**:
 

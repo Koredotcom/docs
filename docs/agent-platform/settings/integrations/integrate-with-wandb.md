@@ -1,6 +1,6 @@
 # Integrate with Weights and Biases
 
-Connecting with Weights and Biases (WandB) allows users to link to the platform, ensuring that the fine-tuning data associated with the model being refined in Agent Platform is seamlessly transmitted to the WandB console for additional analytics.
+Connecting with Weights and Biases (WandB) allows users to link to the platform, ensuring that the fine-tuning data associated with the model being refined in (In)Agent Platform is seamlessly transmitted to the WandB console for additional analytics.
 
 **To integrate with your Weights and Biases (WandB) account, follow these steps**:
 

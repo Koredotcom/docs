@@ -1,6 +1,6 @@
 # Managing External Models 
 
-The External Models tab in the Models section allows you to connect and manage models hosted outside the platform. These include provider-hosted models (such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock) as well as custom models integrated via API. Once connected, these models can be used within the Agent Platform.
+The External Models tab in the Models section allows you to connect and manage models hosted outside the platform. These include provider-hosted models (such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock) as well as custom models integrated via API. Once connected, these models can be used within the (In)Agent Platform.
 
 You can connect external models to the platform in two ways:
 
@@ -55,4 +55,4 @@ When adding connections:
 
 When multiple API keys are configured, each connection appears separately in the Connections list for the model, making it easier to manage access and switch between keys as needed.
 
-Once added, the model name and its connection name appear across the Agent Platform — including in Agentic apps, Prompt Studio, Tools, Evaluation Studio, Model Traces & Analytics, Audit Logs, Billing, and other areas — so wherever you select a model, you can choose from its available connection names if multiple connections are configured. In Agentic apps, you can assign the model connection name at the Agent or Supervisor level for granular control. 
+Once added, the model name and its connection name appear across the (In)Agent Platform — including in Agentic apps, Prompt Studio, Tools, Evaluation Studio, Model Traces & Analytics, Audit Logs, Billing, and other areas — so wherever you select a model, you can choose from its available connection names if multiple connections are configured. In Agentic apps, you can assign the model connection name at the Agent or Supervisor level for granular control. 

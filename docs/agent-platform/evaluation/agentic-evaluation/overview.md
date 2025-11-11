@@ -28,9 +28,9 @@ Agentic Evaluation enables you to analyze the real-world performance of deployed
 
 ## Agentic Evaluation User Journey
 
-The following outlines the key actions at each stage of the Agentic Evaluation user journey in Agent Platform:
+The following outlines the key actions at each stage of the Agentic Evaluation user journey in (In)Agent Platform:
 
-1. [**Create a project**](./create-project.md): Log in to the Agent Platform, navigate to Evaluation Studio, and create a new project for your AI agent evaluation.
+1. [**Create a project**](./create-project.md): Log in to the (In)Agent Platform, navigate to Evaluation Studio, and create a new project for your AI agent evaluation.
 2. [**Create an evaluation**](./create-evaluation.md): After setting up a project, create an evaluation to organize and analyze imported session data.
 3. [**Import production data**](./import-production-data.md): Import live session data from your deployed Agentic apps. You can filter by various parameters such as app version, environment, and time range to focus on specific datasets for evaluation.
 4. [**Configure evaluators**](./configure-evaluators.md): Select from predefined evaluators to assess various aspects of AI agent performance.

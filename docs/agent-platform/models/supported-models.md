@@ -1,6 +1,6 @@
-# Supported AI Models on Agent Platform
+# Supported AI Models on (In)Agent Platform
 
-The Agent Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Inception-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
+The (In)Agent Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Inception-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
 
 ## Supported AI Models for Agents and Supervisors
 
@@ -494,7 +494,7 @@ The following table lists the models that support structured JSON output:
 
 With Easy Integration, you can quickly connect to external model providers, such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock. No infrastructure setup is needed—just authenticate and start deploying models within flows, tools, or agents.
 
-Here is the list of all the external models supported in Agent Platform:
+Here is the list of all the external models supported in (In)Agent Platform:
 
 
 <table>

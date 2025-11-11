@@ -1,8 +1,8 @@
 # Integration with Third-party Services
 
-The **Integrations** feature connects your Agent Platform account to third-party services, streamlining access to external tools and automating workflows. Once connected, you can use these integrations from the Tool Flow canvas to build high-quality AI applications. [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
+The **Integrations** feature connects your (In)Agent Platform account to third-party services, streamlining access to external tools and automating workflows. Once connected, you can use these integrations from the Tool Flow canvas to build high-quality AI applications. [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
-The Agent Platform supports 120+ integrations with different authorization types. To enable secure access, create a connection using third-party authentication to verify users. The main authentication methods are:
+The (In)Agent Platform supports 120+ integrations with different authorization types. To enable secure access, create a connection using third-party authentication to verify users. The main authentication methods are:
 
 * **API**: Authenticate by passing a token (usually in headers or query parameters). Used for API Key or Access Token integrations.
 * **OAuth2**: Uses the OAuth2 industry-standard authorization framework to grant limited access to resources on a service without sharing passwords. The auth method uses the following concepts:
@@ -23,7 +23,7 @@ The Agent Platform supports 120+ integrations with different authorization types
 
 To access the feature, follow the steps below:
 
-1. Log in → In Agent Platform Modules → Click **Autonomous Agents**.
+1. Log in → In (In)Agent Platform Modules → Click **Autonomous Agents**.
    <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** → On the left navigation menu → Click **Integrations**.
@@ -43,7 +43,7 @@ The features supported on the **Integrations** page include:
 * **Search Integration**: Enter the name in the **Search** field for full or partial matches.
 <img src="../images/search-integration.png" alt="search integration" title="search integration" style="border: 1px solid gray; zoom:75%;">
 
-* **Category Dropdown List**: The Agent Platform supports multiple categories based on the purpose of the integration, such as AI and Machine Learning, Marketing and Social Media, E-commerce, and more. Select the relevant category or categories in the list and click **Apply** to view the corresponding integrations.
+* **Category Dropdown List**: The (In)Agent Platform supports multiple categories based on the purpose of the integration, such as AI and Machine Learning, Marketing and Social Media, E-commerce, and more. Select the relevant category or categories in the list and click **Apply** to view the corresponding integrations.
 <img src="../images/select-category-of-integration.png" alt="change category" title="change category" style="border: 1px solid gray; zoom:75%;">
 
 
@@ -60,7 +60,7 @@ The features supported on the **Integrations** page include:
 
 ## Supported Integrations
 
-The following third-party integrations are available on the Agent Platform:
+The following third-party integrations are available on the (In)Agent Platform:
 
 <table>
   <tr>
@@ -1733,7 +1733,7 @@ To add a connection and configure an integration, follow the steps below:
         **OAuth2**
 
         * Provide the connection name and select the configured **Auth Profile** in the **Custom** for authentication by the integration. [Learn more](../security-and-control/authorization-profile.md#add-authorization-profile){:target="_blank"} about adding an auth profile to your account.
-        * **Custom auth**: Allows you to use a tailored authentication process, set up in the Agent Platform, to connect to a service. This is an alternative to using any standard authentication flows like API or OAuth2 provided by the service.
+        * **Custom auth**: Allows you to use a tailored authentication process, set up in the (In)Agent Platform, to connect to a service. This is an alternative to using any standard authentication flows like API or OAuth2 provided by the service.
         * Once an Auth Profile is selected, all its credentials are fetched and automatically populate the corresponding fields such as **Redirect URL**, **Scopes**, **Base URL**, and more.
         * No need to re-authenticate unless the authorization profile is deleted from your account.
         * Connecting to a provider with a deleted auth profile results in an error.
@@ -1852,7 +1852,7 @@ To delete an integration, follow the steps below:
 
   <div class="admonition warning">
   <p class="admonition-title">Caution</p>
-  <p>This action is irreversible and will remove all associations of the connection from the Agent Platform.</p></div>
+  <p>This action is irreversible and will remove all associations of the connection from the (In)Agent Platform.</p></div>
   <img src="../images/delete-connection.png" alt="delete connection" title="delete connection" style="border: 1px solid gray; zoom:75%;">
 
   A success message appears, and the connection is removed from the system.

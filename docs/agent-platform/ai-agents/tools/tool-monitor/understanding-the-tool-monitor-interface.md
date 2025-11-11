@@ -17,7 +17,7 @@ The All runs tab provides the following information for each tool run:
 * **Run ID**: The unique identifier for the flow.
 * **Status**: The current state of the request. It displays one of the following statuses:
     * **In Progress**: The request is being processed.
-    * **Waiting**: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Waiting**: The request is outside of (In)Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
     * **Success**: The request has been completed successfully.
     * **Failed**: The request was not completed successfully.
 * **Response time**: The duration the tool takes to complete a request and provide an output.
@@ -54,7 +54,7 @@ The Model runs tab provides the following information for each AI node call:
 * **Request ID**: The unique identifier of the AI node request.
 * **Status**: The current state of the request. It displays one of the following statuses: 
     * **In Progress**: The request is being processed.
-    * **Waiting**: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Waiting**: The request is outside of (In)Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
     * **Success**: The request has been completed successfully.
     * **Failed**: The request was not completed successfully.
 * **Node name**: The name of the AI node.
@@ -239,7 +239,7 @@ The table below lists the errors that can occur in the **Tool Monitoring** dashb
   <tr>
    <td>Network Issues:- Request timeout on the server
    </td>
-   <td>Temporary network or Agent Platform server connection issue.
+   <td>Temporary network or (In)Agent Platform server connection issue.
    </td>
    <td>Network
    </td>

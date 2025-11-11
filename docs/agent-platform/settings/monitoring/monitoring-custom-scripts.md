@@ -1,6 +1,6 @@
 # Monitoring Custom Script Runs and Logs
 
-**Monitoring Custom Scripts** provides comprehensive visibility into custom script performance on the Agent Platform. It tracks executions across API nodes, Function nodes, and API calls for the selected period, enabling users to view run-level data, analyze logs, and monitor key metrics. Advanced filtering and search capabilities support precise analysis, effective troubleshooting, and proactive issue resolution.
+**Monitoring Custom Scripts** provides comprehensive visibility into custom script performance on the (In)Agent Platform. It tracks executions across API nodes, Function nodes, and API calls for the selected period, enabling users to view run-level data, analyze logs, and monitor key metrics. Advanced filtering and search capabilities support precise analysis, effective troubleshooting, and proactive issue resolution.
 
 **Key Benefits**
 
@@ -328,7 +328,7 @@ The record view offers log-specific insights at the script run level after each 
 
 ## Enhanced Logging for gVisor Monitoring
 
-The Agent Platform offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*xxxxlogger*).
+The (In)Agent Platform offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*xxxxlogger*).
 
 **Key Considerations**
 

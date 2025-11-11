@@ -32,7 +32,7 @@ Steps to import a dataset:
 
     1. **Upload from device**: Click the Upload file link and select your CSV file saved on your local machine.
     2. **Import production data**: Click Proceed and fill in the required fields in the Import production data dialog:
-        1. **Models**: Choose the model deployed in production (open-source or commercial). You can select any model used in Agent Platform within Tools, Prompts, and endpoints. Only data related to the selected model will be retrieved from Model Traces.
+        1. **Models**: Choose the model deployed in production (open-source or commercial). You can select any model used in (In)Agent Platform within Tools, Prompts, and endpoints. Only data related to the selected model will be retrieved from Model Traces.
         2. **Source**: Select the specific source where the model is deployed, such as Tools, Prompts, or endpoints. You can also select the ‘All’ option to import data from all available sources or specify individual sources like specific prompts or tools. For example, you can select a specific tool to see how the model is performing within that tool.
         3. **Date**: Set the desired date range for the data you want to import. By default, the last 30 days are selected.
         4. **Columns**: The system automatically fetches the input and output columns by default. If you need more detailed analysis, you can select additional columns such as request ID, input tokens, response time, and other relevant metrics. The selected columns will appear in the evaluation table.  
@@ -61,7 +61,7 @@ Steps to import a dataset:
 
 The Run a Prompt option enables users to generate customized data based on a specific model and prompt. This feature streamlines data creation and enables easy edits and adjustments for continuous improvements.
  
-For instance, if you want to replace the manual effort of summarizing customer conversations with a fine-tuned model, you can use Evaluation studio to evaluate its summaries. Start by bringing your conversations as input and deploying the fine-tuned model in Agent Platform. Then, in Evaluation studio, select 'Run a prompt' and choose your fine-tuned model. In the prompt, you can specify 'summarize the {{input}}' (column as a variable). This variable will capture the conversations, and based on the additional prompt instructions, the model will generate the summary. Finally, you can assign desired evaluators to evaluate the output produced by the fine-tuned model. 
+For instance, if you want to replace the manual effort of summarizing customer conversations with a fine-tuned model, you can use Evaluation studio to evaluate its summaries. Start by bringing your conversations as input and deploying the fine-tuned model in (In)Agent Platform. Then, in Evaluation studio, select 'Run a prompt' and choose your fine-tuned model. In the prompt, you can specify 'summarize the {{input}}' (column as a variable). This variable will capture the conversations, and based on the additional prompt instructions, the model will generate the summary. Finally, you can assign desired evaluators to evaluate the output produced by the fine-tuned model. 
  
 **Key Benefits**
 
@@ -93,7 +93,7 @@ After running the prompt, the following additional options are available:
 
 Evaluation Studio offers the ability to run an API, enabling users to fetch content from external APIs or deployed tools directly into their evaluation process. This feature enables the integration of live data or model outputs from deployed agents, providing greater flexibility in the evaluation process.
 
-As a user, you can add a column in Evaluation Studio that triggers an API call to fetch content. This allows you to integrate external data, retrieve agent outputs, and incorporate them into your evaluation. Once the content is fetched, you can evaluate it using human or AI evaluators for in-depth analysis. Using the Run an API feature, you can also fetch outputs from models hosted outside of Agent Platform. The external model can use the input rows in Evaluation Studio as its input, process the data, and provide the output for each row.
+As a user, you can add a column in Evaluation Studio that triggers an API call to fetch content. This allows you to integrate external data, retrieve agent outputs, and incorporate them into your evaluation. Once the content is fetched, you can evaluate it using human or AI evaluators for in-depth analysis. Using the Run an API feature, you can also fetch outputs from models hosted outside of (In)Agent Platform. The external model can use the input rows in Evaluation Studio as its input, process the data, and provide the output for each row.
 
 This functionality enhances the evaluation process by providing greater flexibility, allowing users to use external data and models in Evaluation Studio.
 
@@ -130,7 +130,7 @@ This functionality enhances the evaluation process by providing greater flexibil
 
 Follow this example to set up and run an API call inside Evaluation Studio:
 
-1. **Create and deploy a tool:** Set up your tool and deploy it in Agent Platform.
+1. **Create and deploy a tool:** Set up your tool and deploy it in (In)Agent Platform.
 2. **Copy the tool endpoint:** From the **Tool Endpoint** tab, copy the deployed API's URL.  
 <img src="../../images/tool_endpoint.png" alt="Copy tool endpoint" title="Copy tool endpoint" style="border: 1px solid gray; zoom:80%;">
 

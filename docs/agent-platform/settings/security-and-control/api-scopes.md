@@ -67,7 +67,7 @@ The following API scopes are available for this feature.
   <tr>
    <td>Import Model
    </td>
-   <td> Import a model in chunks into the Agent Platform environment. <a href="../../../apis/apis-list/import-a-model" target="_blank">Learn more</a>.
+   <td> Import a model in chunks into the (In)Agent Platform environment. <a href="../../../apis/apis-list/import-a-model" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>

@@ -1,6 +1,6 @@
-# Agent Platform Release Notes
+# (In)Agent Platform Release Notes
 
-This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
+This document provides information on the feature updates and enhancements introduced in the recent (In)Agent Platform releases.
 
 ## v1.3.0 November 3, 2025
 
@@ -57,7 +57,7 @@ The new test feature at the app level allows users to enter queries directly and
 
 **Enhanced Context Management**
 
-The Agent Platform now provides enhanced context handling for conversations with rolling context windows. Configure the number of recent messages to use as conversation context by setting a message count limit. When this limit is reached, the oldest messages are automatically removed to make room for new ones. This prevents context overflow and keeps conversations focused on relevant, up-to-date information.
+The (In)Agent Platform now provides enhanced context handling for conversations with rolling context windows. Configure the number of recent messages to use as conversation context by setting a message count limit. When this limit is reached, the oldest messages are automatically removed to make room for new ones. This prevents context overflow and keeps conversations focused on relevant, up-to-date information.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-profile.md)
 
@@ -94,7 +94,7 @@ Inception-hosted open-source models now support structured JSON output through t
 
 **Expanded Model Support**
 
-The Agent Platform now supports additional AI models, providing greater flexibility for various use cases. These models include comprehensive platform integration with System Prompts, Tool Calling, Prompt Studio, Evaluation Studio, Tools, Parallel Tool Calling, Model Analytics, Audit Logs, Model Traces, Agentic Apps, and Image-to-Text Support.
+The (In)Agent Platform now supports additional AI models, providing greater flexibility for various use cases. These models include comprehensive platform integration with System Prompts, Tool Calling, Prompt Studio, Evaluation Studio, Tools, Parallel Tool Calling, Model Analytics, Audit Logs, Model Traces, Agentic Apps, and Image-to-Text Support.
 
 * OpenAI Models GPT-5 Family: gpt-5-2025-08-07, gpt-5-mini-2025-08-07, gpt-5-nano-2025-08-07, and gpt-5-chat-latest
 * Anthropic Model: claude-opus-4-1-20250805
@@ -225,7 +225,7 @@ Key enhancements:
 
 **Single Model, Multiple Deployments**
 
-The Agent Platform now allows multiple deployments and connections to be configured for a single model. Previously, only one API key was supported per model-provider combination. Now, multiple API keys can be configured for the same model, offering improved flexibility, better usage tracking, and enhanced control.
+The (In)Agent Platform now allows multiple deployments and connections to be configured for a single model. Previously, only one API key was supported per model-provider combination. Now, multiple API keys can be configured for the same model, offering improved flexibility, better usage tracking, and enhanced control.
 
 Across the platform, users can select their desired connection or deployment directly without being tied to a specific model. This means agents and supervisors can use different connections for various tasks, ensuring requests are routed to the appropriate endpoints based on their purpose.
 
@@ -241,7 +241,7 @@ Key benefits:
 
 **Expanded Model Support**
 
-This update introduces support for a new set of AI models in the Agent Platform, providing greater flexibility in selecting the suitable model for a specific use case. The newer models include:
+This update introduces support for a new set of AI models in the (In)Agent Platform, providing greater flexibility in selecting the suitable model for a specific use case. The newer models include:
 
 * Agents and Supervisors
     * OpenAI -  o3-mini
@@ -317,7 +317,7 @@ Restoring an App version now includes the associated MCP Server configuration, e
 
 **Enhanced External Agent Integration**
 
-The Agent Platform now offers enhanced flexibility and performance for integrating with external agents.
+The (In)Agent Platform now offers enhanced flexibility and performance for integrating with external agents.
 
 * Flexible Response Routing: Directly stream external agent responses to users for faster interactions, or route through the orchestrator for complex orchestration needs.
 * Contextual Metadata Passthrough: Pass structured contextual metadata with agent requests for seamless context continuity, improved personalization, and smoother system integration.
@@ -380,9 +380,9 @@ Key highlights:
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/create-a-code-tool.md)
 
-**Custom Script Functionality Extended Across All Agent Platform Tools**
+**Custom Script Functionality Extended Across All (In)Agent Platform Tools**
 
-The Agent Platform now fully supports custom scripts across all modules.
+The (In)Agent Platform now fully supports custom scripts across all modules.
 
 Key highlights:
 
@@ -410,7 +410,7 @@ Key highlights:
 
 **Export All Runs and Logs Data**
 
-Admins can now export and download All Runs and Logs from the Monitoring Custom Scripts dashboard as a <code><em>.csv</em></code> file, following the schema and file-naming conventions defined in the Agent Platform. [Learn more :octicons-arrow-right-24:](../settings/monitoring/monitoring-custom-scripts.md/#export-runs-and-logs-data){:target="_blank"}
+Admins can now export and download All Runs and Logs from the Monitoring Custom Scripts dashboard as a <code><em>.csv</em></code> file, following the schema and file-naming conventions defined in the (In)Agent Platform. [Learn more :octicons-arrow-right-24:](../settings/monitoring/monitoring-custom-scripts.md/#export-runs-and-logs-data){:target="_blank"}
 
  
 <hr>
@@ -426,12 +426,12 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Simplified App Creation Process**
 
-The Agent Platform has simplified the app creation process, making it faster and more user-friendly. Users can set up apps with fewer configurations upfront that capture only the essential information. This enhancement reduces the setup time and improves the overall onboarding experience. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/create-app.md)
+The (In)Agent Platform has simplified the app creation process, making it faster and more user-friendly. Users can set up apps with fewer configurations upfront that capture only the essential information. This enhancement reduces the setup time and improves the overall onboarding experience. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/create-app.md)
 
 
 **Updates to Agent Protocol**
 
-The Agent Platform now supports a **Universal Session Closure** API for consistent and reliable session management. It enables seamless session termination across integrations, addressing issues such as orphaned sessions and incomplete closures and ensuring a unified approach to managing session lifecycle. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/sessions.md)
+The (In)Agent Platform now supports a **Universal Session Closure** API for consistent and reliable session management. It enables seamless session termination across integrations, addressing issues such as orphaned sessions and incomplete closures and ensuring a unified approach to managing session lifecycle. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/sessions.md)
 
 
 **Enhanced Document Upload Feature**
@@ -497,7 +497,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Preferred Agent Support**
 
-The Agent Platform now supports direct agent invocation through the new Preferred Agent capability in the Agent Protocol. External systems consuming Apps or agents can now call specific agents directly, bypassing the supervisor routing layer for improved performance. 
+The (In)Agent Platform now supports direct agent invocation through the new Preferred Agent capability in the Agent Protocol. External systems consuming Apps or agents can now call specific agents directly, bypassing the supervisor routing layer for improved performance. 
 
 [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
 
@@ -510,7 +510,7 @@ The import/export feature now supports MCP server configurations and Memory Stor
 
 **Typeahead Support for Memory Access**
 
-The Agent Platform now includes type-ahead functionality across Code Tools and prompt editors, providing developers with contextual suggestions while they write. This enhancement streamlines variable referencing and reduces common development errors.
+The (In)Agent Platform now includes type-ahead functionality across Code Tools and prompt editors, providing developers with contextual suggestions while they write. This enhancement streamlines variable referencing and reduces common development errors.
 
 
 **Improved User Interface**
@@ -524,7 +524,7 @@ The Simulate feature has been transformed into Playground with enhanced debuggin
 
 **Parallel Execution in Workflow Builder**
 
-The Agent Platform now supports parallel execution within the workflow builder. You can create and trigger multiple branches simultaneously in a single flow — a major upgrade alongside traditional sequential execution.
+The (In)Agent Platform now supports parallel execution within the workflow builder. You can create and trigger multiple branches simultaneously in a single flow — a major upgrade alongside traditional sequential execution.
 
 Key benefits
 
@@ -551,7 +551,7 @@ Key improvements
 
 **MCP Tool Execution and Validation**
 
-The Agent Platform now enables direct testing of MCP tools during the design phase. Previously, developers could only view MCP tool definitions and had to wait for complete agent execution to test functionality. This enhancement allows immediate tool validation with sample data once the MCP servers are configured.
+The (In)Agent Platform now enables direct testing of MCP tools during the design phase. Previously, developers could only view MCP tool definitions and had to wait for complete agent execution to test functionality. This enhancement allows immediate tool validation with sample data once the MCP servers are configured.
 
 Key features
 
@@ -602,7 +602,7 @@ The *Account ID* is now visible in the usage summary section, making it easy to 
 
 **Usage Trend and Credits Calculation for Guardrails and Custom Scripts**
 
-The Agent Platform now shows usage data for Guardrails and Custom Scripts under Billing Usage. Admins can view module-wise credit allocation, usage, and balance using pie charts, line graphs, and other key metrics. Usage trends across linked accounts help track credit usage, negative balances, limits, and billing adjustments for the selected period.
+The (In)Agent Platform now shows usage data for Guardrails and Custom Scripts under Billing Usage. Admins can view module-wise credit allocation, usage, and balance using pie charts, line graphs, and other key metrics. Usage trends across linked accounts help track credit usage, negative balances, limits, and billing adjustments for the selected period.
 
 
 **Added Instructions for Structured Output**
@@ -655,7 +655,7 @@ Agentic Apps now offers a configuration to enable or disable Thought streaming. 
 
 **Document Upload Limits**
 
-The Agent Platform now supports configurable document upload limits within the platform. Developers can define restrictions on the maximum number of files that the users can upload, the maximum file size, and the maximum token limit for each file. Files exceeding the token threshold are automatically ignored. This ensures more efficient, controlled, and optimized ingestion of contextual information.
+The (In)Agent Platform now supports configurable document upload limits within the platform. Developers can define restrictions on the maximum number of files that the users can upload, the maximum file size, and the maximum token limit for each file. Files exceeding the token threshold are automatically ignored. This ensures more efficient, controlled, and optimized ingestion of contextual information.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md)
 
@@ -664,7 +664,7 @@ The Agent Platform now supports configurable document upload limits within the p
 
 **MCP Server Integration for Tool Calling**
 
-The Agent Platform now supports integration with MCP (Model Context Protocol) servers, enabling seamless access to external tools. With this enhancement, admins can configure MCP servers and make tools available to agents for invocation during runtime workflows.
+The (In)Agent Platform now supports integration with MCP (Model Context Protocol) servers, enabling seamless access to external tools. With this enhancement, admins can configure MCP servers and make tools available to agents for invocation during runtime workflows.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/mcp-tools.md)
 
@@ -727,7 +727,7 @@ Users can add empty, inline-editable columns in model evaluations to manually in
 
 **Enhanced Workspace Switcher**
 
-The Workspace switcher in the Agent Platform has been enhanced, allowing users to view workspaces with a clear understanding of their roles. Users can easily distinguish between their workspaces and others' workspaces, along with the workspace owner's information.
+The Workspace switcher in the (In)Agent Platform has been enhanced, allowing users to view workspaces with a clear understanding of their roles. Users can easily distinguish between their workspaces and others' workspaces, along with the workspace owner's information.
 
 [Learn more :octicons-arrow-right-24:](../settings/workspaces/workspace-mgmt.md)
 
@@ -787,7 +787,7 @@ A new role type, ‘App’, enables users to configure, develop, and deploy agen
 
 **Integrations – Audit Logs, Roles, and Permissions**
 
-The Agent Platform now generates audit logs for the Integrations module in the Settings console, allowing admin users to track events such as adding, disabling, editing, and deleting third-party integrations.
+The (In)Agent Platform now generates audit logs for the Integrations module in the Settings console, allowing admin users to track events such as adding, disabling, editing, and deleting third-party integrations.
 Permissions and access levels for creating, deleting, updating, testing, and disabling Integrations are now defined for account-level roles such as Master Admin, Admin, Member, and Viewer.
 
 
@@ -801,9 +801,9 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 <font size="4">Agentic Apps</font>
 
-**Knowledge Integration with Agent Platform**
+**Knowledge Integration with (In)Agent Platform**
 
-The Agent Platform now integrates with AI for Service search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
+The (In)Agent Platform now integrates with AI for Service search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
 
 Key features
 
@@ -848,7 +848,7 @@ Key features
 
 **Support for System Events**
 
-The Agent Platform now supports handling key system events, including welcome events, agent handoff, and end-of-conversation events. This enhancement enables the platform to effectively manage critical stages of a conversation, including initiation, closure, error handling, and scenarios that require human intervention. By offering more control over conversation flow, this feature significantly improves the user experience. 
+The (In)Agent Platform now supports handling key system events, including welcome events, agent handoff, and end-of-conversation events. This enhancement enables the platform to effectively manage critical stages of a conversation, including initiation, closure, error handling, and scenarios that require human intervention. By offering more control over conversation flow, this feature significantly improves the user experience. 
 
 Key features 
 
@@ -915,7 +915,7 @@ Users can now select preconfigured custom OAuth 2.0 auth profiles to preauthoriz
 
 **Centralized Integrations Management**
 
-A dedicated Integrations section has been added to manage all external service integrations on the Agent Platform. Users can now go to Settings → Integrations to:
+A dedicated Integrations section has been added to manage all external service integrations on the (In)Agent Platform. Users can now go to Settings → Integrations to:
 
 * View all supported integrations in one place.
 * Search and filter integrations by category and authorization type.
@@ -975,13 +975,13 @@ Agent Platform now seamlessly integrates with AI for Service. This integration s
 Key benefits
 
 * Ability to integrate fully autonomous applications from the AI for Service.
-* Leverage AI for Service channel integrations while using Agent Platform capabilities.
+* Leverage AI for Service channel integrations while using (In)Agent Platform capabilities.
 * Streamlined user experience with shared authentication and session management.
 
 
 **Voice Integration in Agentic Apps**
 
-AI for Service and Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
+AI for Service and (In)Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
 
 Key features
 
@@ -1060,7 +1060,7 @@ Real-time insights into the decision process also serve as a tool to identify is
 
 **Introducing Tool Templates**
 
-The Agent Platform now supports Tool Templates—a library of 23 prebuilt templates integrated with third-party services. Instead of building tool flows from scratch, users can install a ready-to-use template based on their category and task, requiring zero coding effort. Each template includes a preconfigured tool flow of nodes that the users can customize. Once installed, the system automatically adds all predefined elements—nodes, flows, and configurations—to the Tools Flow canvas. The users can then modify the node settings as needed.
+The (In)Agent Platform now supports Tool Templates—a library of 23 prebuilt templates integrated with third-party services. Instead of building tool flows from scratch, users can install a ready-to-use template based on their category and task, requiring zero coding effort. Each template includes a preconfigured tool flow of nodes that the users can customize. Once installed, the system automatically adds all predefined elements—nodes, flows, and configurations—to the Tools Flow canvas. The users can then modify the node settings as needed.
 
 
 **Structured Output in AI nodes**
@@ -1121,13 +1121,13 @@ This update includes new features and enhancements summarized below.
 
 * JSON schema validation for JSON input type: Users can now define and validate JSON schemas for the JSON input type in Tools. A new JSON editor with schema definition and validation ensures that input data matches the required format, with detailed error messages during agent runs and endpoint failures.
 * Mapping environment variables in Tools: Tool builders can now specify and map environment variables when adding tools within an AI node. They can select existing environment variables from the tool’s configuration or context variables or enable tool-specific environment variables.
-* Deepseek model support: Added support for deploying Deepseek models from Hugging Face on existing Agent Platform hardware. Users can now deploy models like *Deepseek-R1-Distill-Qwen-1.5B*, *Deepseek-R1-Distill-Llama-8B*, *Deepseek-R1-Distill-Qwen-14B*, and *Deepseek-R1-Distill-Qwen-7B*. These models are now available in the list of open-source models. This support is only available for the models listed above through Hugging Face connections.
+* Deepseek model support: Added support for deploying Deepseek models from Hugging Face on existing (In)Agent Platform hardware. Users can now deploy models like *Deepseek-R1-Distill-Qwen-1.5B*, *Deepseek-R1-Distill-Llama-8B*, *Deepseek-R1-Distill-Qwen-14B*, and *Deepseek-R1-Distill-Qwen-7B*. These models are now available in the list of open-source models. This support is only available for the models listed above through Hugging Face connections.
 * Text-to-Image support: The AI node now supports Text-to-image generation within the tools flow. In prompts, users can specify image details and attributes, including elements to include or exclude. Using the Stable Diffusion model, the system generates images in line with the given instructions/keywords. The output is converted to a URL for further usage. Developers can now seamlessly generate and modify images using text-based instructions for creative purposes like generating marketing content, etc.
 * Audio-to-Text support: The AI node now supports Audio-to-text conversion for multi-speaker, multilingual conversations using the OpenAI Whisper model. It transcribes audio, removes banned words, and translates other languages into English. Users can customize transcription style, proper nouns, punctuation, and context through prompt inputs, ensuring accurate results.
-* Support for Open AI Whisper and Anthropic Claude Sonnet Vision: Agent Platform now supports the following external commercial models in its modules and workflows:
+* Support for Open AI Whisper and Anthropic Claude Sonnet Vision: (In)Agent Platform now supports the following external commercial models in its modules and workflows:
     * Open AI Whisper
     * Anthropic Claude Sonnet Vision
-* Support for Stable Diffusion: Agent Platform now supports the following variants of the Stable Diffusion open-source models in its modules and workflows:
+* Support for Stable Diffusion: (In)Agent Platform now supports the following variants of the Stable Diffusion open-source models in its modules and workflows:
     * stable-diffusion-xl-base-1.0
     * stable-diffusion-2-1
     * stable-diffusion-v1-5
