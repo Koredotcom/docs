@@ -2,7 +2,7 @@
 
 # Update a Task API
 
-This API allows you to update an existing task in the case management system.
+This API lets you to update an existing task in the case management system.
 
 | **METHOD**        | **POST**                                                                                                                                                                             |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -17,14 +17,14 @@ This API allows you to update an existing task in the case management system.
 | **Parameter** | **Description**                                                                                          | **Type**           |
 | ------------- | -------------------------------------------------------------------------------------------------------- | ------------------ |
 | `host`        | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/)                     | `string`, required |
-| `streamId`    | Bot or Stream identifier (from bot General Settings). Example: `st-084d3c5e-376a-559f-9987-a012bb2bxxxx` | `string`, required |
-| `taskId`      | Unique task identifier. Example: `ti-73acd32-0123-4114-9891-00a950aaxxxx`                                | `string`, required |
+| `streamId`    | Bot or Stream identifier (from bot General Settings). Example: `st-084d3c5e-376a-559f-xxxx-a012bbxxxxxx` | `string`, required |
+| `taskId`      | Unique task identifier. Example: `ti-73acd32-0123-xxxx-9891-00a950xxxxxx`                                | `string`, required |
 
 ## Header parameters
 
 | **Parameter** | **Description**                                                                         | **Type**           |
 | ------------- | --------------------------------------------------------------------------------------- | ------------------ |
-| `accountId`   | Account identifier associated with the API request. Example: `6639f7bd58c97ffac03bxxxx` | `string`, required |
+| `accountId`   | Account identifier associated with the API request. Example: `6639f7bd5xxxxffac03bxxxx` | `string`, required |
 
 
 **Request sample**

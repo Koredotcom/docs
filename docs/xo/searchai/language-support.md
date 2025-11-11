@@ -295,7 +295,7 @@ Use this guidance to ensure your multilingual setup is aligned with the most eff
 
 ### Language-Specific Extraction Capabilities
 
-The table below outlines the supported content extraction methods for widely used languages, enabling you to select the most effective approach for processing multilingual content.
+The following table outlines the supported content extraction methods for widely used languages, enabling you to select the most effective approach for processing multilingual content.
 
 
 <table>
@@ -318,9 +318,9 @@ The table below outlines the supported content extraction methods for widely use
    </td>
   </tr>
   <tr>
-   <td><strong>Image Extraction</strong>
+   <td><strong>Image based Document Extraction</strong>
    </td>
-   <td>English, Ukrainian, Spanish, Russian, Italian, German, French
+   <td>English, Spanish, Italian, German, French
    </td>
   </tr>
   <tr>

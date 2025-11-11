@@ -29,7 +29,7 @@ This pattern follows a sequential approach to resolve a user query with the help
 
 ## Difference between the Supervisor Pattern and the Delegation Pattern
 
-In the **Supervisor pattern**, a central Supervisor mediates every interaction between agents or between an agent and the user. The Supervisor handles decision-making, task routing, and overall flow coordination. Agents do not need to be aware of other agents' roles or specializations. This allows the Supervisor to invoke multiple agents in parallel, but introduces latency since every interaction happens via the Supervisor.
+In the **Supervisor pattern**, a central Supervisor mediates every interaction between agents or between an agent and the user. The Supervisor handles decision-making, task routing, and overall flow coordination. Agents don't need to be aware of other agents' roles or specializations. This allows the Supervisor to invoke multiple agents in parallel, but introduces latency since every interaction happens via the Supervisor.
 
 In contrast, the **Network pattern** has agents aware of other agents' specializations. They can directly hand off tasks to the most suitable agent or interact with the user themselves. The responsibility of routing lies with the agents based on their understanding of the task, rather than relying on a central coordinator. The flow is usually sequential, where one agent evaluates the task and delegates it to another specialized agent as needed.
 
@@ -56,7 +56,7 @@ The delegation process:
 1. The Welcome Agent receives the query.
 2. It analyzes the intent and context.
 3. Based on indicators (“can’t access”) and delegation rules, the query is initially routed to the IT Assistant.
-4. The IT Assistant checks for technical issues (login problems, system errors). It interacts with the user for additional information. If the issue is not IT-related, the task is re-delegated to the Finance Assistant.
+4. The IT Assistant checks for technical issues (login problems, system errors). It interacts with the user for additional information. If the issue isn't IT-related, the task is re-delegated to the Finance Assistant.
 5. The Finance Assistant verifies the payroll system, identifies access restrictions, and resolves the issue by granting proper access or sending the payslip directly.
 
 
@@ -97,7 +97,7 @@ Configure the delegation rules for all the agents in the app:
     
     For example, the following agent can delegate tasks to three specialized agents—Finance Assistant, HR Assistant, and IT Assistant —depending on the nature of the task.  ![Delegation Rules](images/network/example.png "Delegation Rules")
 
-3. **Fallback Behavior**: Select an agent or event to take over the conversation when this agent cannot complete a task itself and cannot identify any other agent that can complete the task. You can configure another agent or event to automatically take over the conversation. This ensures that unresolved tasks are always routed to the correct fallback, and no task or conversation remains unresolved. 
+3. **Fallback Behavior**: Select an agent or event to take over the conversation when this agent can't complete a task itself and can't identify any other agent that can complete the task. You can configure another agent or event to automatically take over the conversation. This ensures that unresolved tasks are always routed to the correct fallback, and no task or conversation remains unresolved. 
     6. Click on **Add Fallback Delegation**.
     7. Select the fallback agent or event from the list. 
     8. Set the condition under which it should be triggered. 

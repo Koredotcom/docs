@@ -91,7 +91,7 @@ Note:
 ## RACL Support
 
 ### Knowledge Articles
-SearchAI offers access control for content ingested from ServiceNow Knowledgebases. Currently, **SearchAI enforces access control at the knowledge base level.**
+SearchAI offers access control for content ingested from ServiceNow Knowledge bases. Currently, **SearchAI enforces access control at the knowledge base level.**
 
 To learn the basics of RACL in SearchAI, refer to this. 
 
@@ -99,8 +99,8 @@ To learn the basics of RACL in SearchAI, refer to this.
 
 In ServiceNow, user access to knowledge base articles can be defined in three ways:
 
-1. Owners of the Knowledgebase
-2. Managers of the Knowledgebase
+1. Owners of the Knowledge base
+2. Managers of the Knowledge base
 3. User Criteria with specific access permissions (Can Read and Can Contribute)
 
 ![User criteria](images/servicenow/racl/user-criteria.png "User criteria")
@@ -112,13 +112,13 @@ User Criteria in ServiceNow is a method to group users based on specific conditi
 
 By default, SearchAI grants access to the following:
 
-* **Owners** of the Knowledgebase – This list of owners will be added directly in the racl field in the indexed content.
-* **Managers** of the Knowledgebase – This list of managers will be added directly in the racl field of the indexed content.
+* **Owners** of the Knowledgebase - This list of owners will be added directly in the racl field in the indexed content.
+* **Managers** of the Knowledgebase - This list of managers will be added directly in the racl field of the indexed content.
 * **Individual users** listed under each **User Criteria** with Can Read and Can Contribute permissions.  
 
 ![Individual Users](images/servicenow/racl/individual-users.png "Individual Users")
 
-Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default.  Users associated with other conditions (e.g., department or role) are not automatically included. Therefore, these users cannot access articles unless they are explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledgebase is John@example.com and the knowledgebase can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. 
+Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default. Users associated with other conditions (for example, department or role) aren't automatically included. Therefore, these users can't access articles unless they're explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledge base is John@example.com and the knowledge base can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. 
 
 ```json
 "sourceAcl": [`

@@ -146,7 +146,18 @@ Metrics include:
     * (Optional) Turn on the toggle for the following to enable the respective feature:
          * **Translation**: Translate other languages supported by the model to English.
          * **Timestamps**: The date and time at which each dialog was spoken.
-    * Provide the instructions that you want the model to follow for **Prompt**.  User prompts define specific questions or requests for the model. Provide clear instructions for the model to follow, using context variables for dynamic inputs in the recommended syntax: `{{context.variable_name}}`. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt using `{{context.conversation}}`. You may include simple instructions regarding the style of the transcription, correct words or proper nouns, in case the model could not figure out what the spoken word was, fix punctuations, add context, and more.
+    * Provide clear instructions you want the model to follow when processing the node in the **Prompt** field, such as specific questions or requests  
+    
+      You can use a hardcoded instruction like "<i>Use direct speech and highlight words related to problems and challenges in the voice/audio file</i>," when a static audio file URL input is provided in the Start node. 
+    
+      Alternatively, you can add dynamic prompt instructions referencing different audio file URLs from the Start node using the syntax: `{{context.steps.Start.variable_name}}`, where <i>variable_name</i> stores the audio file URL. 
+      
+      For example, if “<i>ConversationFile</i>” stores the audio file URL (passed dynamically during runtime), you can reference it in the prompt using the syntax <code>{{context.steps.Start.ConversationFile}}</code>, as shown below.
+      <img src="../images/dynamic-prompt-example.png" alt="dynamic prompt example" title="dynamic prompt example" style="border: 1px solid gray; zoom:75%;">
+    
+      You may include simple instructions regarding the style of the transcription, correct words or proper nouns, in case the model could not figure out what the spoken word was, fix punctuations, add context, and more. 
+      
+      For example, "<i>Use a clean verbatim transcription style by omitting filler words such as “um,” “uh,” or “you know.” Correct any misheard or unclear words, especially product names, company names, and technical terms. Ensure proper punctuation and sentence casing to make the transcript easy to read. If a word is not clear, mark it as "inaudible" with a timestamp. Add short speaker labels (Customer: and Agent:) and make light contextual corrections for grammar and clarity without altering the original meaning."</i>
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>

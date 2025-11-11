@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+
 # Managing Uploads
 
 ## Upload API

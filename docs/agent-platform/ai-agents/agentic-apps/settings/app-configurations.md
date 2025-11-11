@@ -26,8 +26,27 @@ Learn more about [Attachment Support in User Interactions](../attachment-support
 
 ### Thought Streaming
 
-This field allows updating the prompt used for Thought Streaming. Click on **Modify Prompt** and provide the prompt for the LLM. 
+This field allows updating the prompt used for Thought Streaming. Click Modify Prompt, then provide the prompt for the LLM. 
 
+### Waiting Experience 
+
+This feature allows you to configure how users are engaged during processing delays in voice interactions. Setting up appropriate wait-time interactions helps create a smoother and more human-like experience for users while they wait. The waiting experience begins automatically when a processing delay is detected and stops once the system response or the following action is available. Enable this feature to configure.
+
+!!!note
+    This feature is currently enabled only on request.
+
+
+**Waiting Experience Configuration**
+
+* Initial Delay: The time (in milliseconds) before the first message is played. This can take any value between 100 and 60,000 ms. 
+* Interval Duration: The time gap (in milliseconds) between subsequent waiting messages.
+* Maximum Message Count: Maximum number of filler messages to play during a single wait period. This can take any value between 1 and 20. 
+* Waiting Experience Style: 
+    * Static Messages: Use predefined messages that play during wait times in the response. Use the Add Message option to include multiple messages. Messages are displayed in random order during each waiting period.
+    * Dynamic Messages: Use AI-generated messages to make interactions more natural and personalized. Note that using dynamic messages incurs additional LLM costs. Provide the following configurations for dynamic messages. 
+        * AI Model - Select an AI model optimized for the agent’s specifications to ensure accurate and efficient task handling.
+        * AI Model Timeout -The maximum duration (in milliseconds) to wait for an AI model’s response.
+        * Context Window Limit - The maximum number of messages retained in the session context. Once the limit is reached, older messages are automatically removed to manage memory and context size. The AI model uses this context to generate dynamic messages. 
 
 ## Playground Settings
 

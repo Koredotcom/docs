@@ -2,6 +2,26 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.19.0 October 25, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4"> Channels </font>
+
+**Multiple Files Upload Support in WebSDK**  
+
+WebSDK v3 now enables users to upload multiple files simultaneously in a single action. Users can select up to 10 files at once, with each file limited to 25 MB. The platform returns all file URLs as an array for seamless integration with downstream workflows. The maximum file count is configurable to accommodate different organizational needs. 
+
+<font size="4"> APIs </font>
+
+**Public API Response Payload Encryption**
+
+AI for Service now supports Response Payload Encryption to protect sensitive data in Public API responses. When enabled, each response is encrypted using a client-provided public key, ensuring that only the intended client can decrypt and access the data. The feature strengthens data confidentiality, maintains integrity across API communications, and provides an additional layer of enterprise-grade security. [Learn more :octicons-arrow-right-24:](../../apis/automation/api-introduction.md#creating-and-managing-jwt-apps-in-the-platform)
+
+<hr>
+
 ## v11.18.0 September 27, 2025
 
 <u> Minor Release </u>
@@ -510,7 +530,7 @@ Key benefits
 * Create custom prompts for new models from scratch or by importing an existing prompt from another model.
 * Maintain platform security and authentication standards while eliminating integration delays.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#providers-new-llm-integration)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/configure-llm-integration.md#providers-new-llm)
 
 **Answer Generation Guardrails**
 
@@ -768,7 +788,7 @@ Key benefits:
 
 * Enterprise-grade security.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#amazon-bedrock-llm-integration-framework)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/configure-llm-integration.md#amazon-bedrock-integration)
 
 <font size="4">Channels</font>
 
@@ -876,7 +896,7 @@ Key benefits:
 * Improve testing and development processes.
 * Enable flexible deployment for multi-tenant applications.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#llm-integration-using-dynamic-variables)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#dynamic-variables)
 
 **Enhanced Guardrails Framework for GenAI**
 

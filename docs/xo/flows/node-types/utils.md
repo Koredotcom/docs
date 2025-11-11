@@ -103,9 +103,9 @@ setCallFlowVariable("user_id", context.UserContext._id)
 var userId =  getCallFlowVariable("user_id")
 ```
 
-## Set Voice Chat on Kore.ai Voice Gateway Account
+## Set Voice Chat on Voice Gateway Account
 
-Using the following Utils method/script inside the script node, you can set up voice chat in accounts configured with Kore.ai Voice Gateway.
+Using the following Utils method/script inside the script node, you can set up voice chat in accounts configured with Voice Gateway.
 
 Syntax:
 ```
@@ -114,6 +114,22 @@ userSessionUtils.setLanguageTranslationAPIKey("AIzaSyBnk4hBmHuLjeIzScNAxAdhy0REx
 userSessionUtils.setVoiceChatAgentLang("en");
 userSessionUtils.setVoiceChatUserLang("de");
 ```
+
+## Set Preferred Language for Translation
+
+During automation, the system can detect the user's language and set it as the preferred translation language. The following code can be added to a script node to achieve this.
+
+Syntax:
+
+```
+agentUtils.setUserPreferredLanguage("langCode");
+```
+
+Example:
+
+```
+agentUtils.setUserPreferredLanguage("fr")  
+``` 
 
 ## Agent Utils
 

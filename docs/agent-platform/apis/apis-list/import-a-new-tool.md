@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+
 # Import a New Tool API
 
 This API imports a new tool by providing the necessary **file IDs**, ensuring all the necessary configurations, including the tool’s flow data, app definitions, and environment variables are correctly imported. After triggering the import, the response returns a <code>dockStatusId</code>. Use this ID to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify the successful import of the tool.
@@ -36,7 +38,9 @@ To import a tool, follow the steps below:
   </tr>
 </table>
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-create-the-api-key){:target="_blank"}.
+**Where can I find the API key?**
+
+To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
 
 ## Query Parameters
 
@@ -66,9 +70,9 @@ To import a tool, follow the steps below:
 ## Sample Request
 
 ```js
-curl --location 'https://{host}/api/public/tools/import' \
---header 'x-api-key: kg-90xxxxx5-9xxe-5xxf-9xx7-9xxxxxxxxxx4-55xxxxx4-axx9-4xx2-axx2-fxxxxxxxxxxa' \
---header 'Content-Type: application/json' \
+curl --location 'https://{host}/api/public/tools/import' 
+--header 'x-api-key: kg-90xxxxx5-9xxe-5xxf-9xx7-9xxxxxxxxxx4-55xxxxx4-axx9-4xx2-axx2-fxxxxxxxxxxa' 
+--header 'Content-Type: application/json' 
 --data '{
     "toolDataFileId": "67bxxxxxxxxxxxxxxxxxxxxc",
     "flowDataFileId": "67bxxxxxxxxxxxxxxxxxxxx2",

@@ -63,10 +63,12 @@ Select how you want to handle user conversations based on your business needs an
 
 * **Environment:** Select the appropriate environment where your app will be deployed. This setting applies only to the execution after the flow is published. The environment must be created within the Agentic App.
 
-* **Real-time Voice Interactions:** Enable **Real-time Voice Interactions** powered by multi-modal language models for seamless, low-latency, and context-aware conversations. 
-This feature allows users to engage in two-way voice streaming through the **Kore Voice Gateway**, enhancing automation with AI models. 
+* **Real-time Voice Interactions**: Enable **Real-time Voice Interactions** powered by multi-modal language models for seamless, low-latency, and context-aware conversations.
+This feature allows users to engage in two-way voice streaming through the **Voice Gateway**, enhancing automation with AI models.
 When real-time voice interaction is enabled, Kore Voice Gateway uses the underlying models configured in Agent Platform to add voice capabilities to the application.  
-<img src="../images/full-autonomy.png" alt="Full Autonomy" title="Full Autonomy" style="border: 1px solid gray; zoom:70%;">
+
+* **TTS Streaming**: TTS Streaming sends LLM responses to TTS for real-time audio playback, supporting only Deepgram TTS and ElevenLabs TTS. Enabling Real-time Voice Interactions disables TTS Streaming, and enabling TTS Streaming disables Real-time Voice Interactions. If both are disabled, the system defaults to non-streaming mode. Both features are disabled by default.  
+<img src="../images/full-autonomy-options.png" alt="Full Autonomy" title="Full Autonomy" style="border: 1px solid gray; zoom:70%;">
 
 ### Connection Rules
 

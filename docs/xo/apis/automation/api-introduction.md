@@ -10,7 +10,8 @@ Authentication of the API requests involves the following two steps:
     * **Admin Console API Scopes**: Account administrators can assign API Scopes to the app to access respective features in any AI Agents built into their accounts on the Platform.
 
 
-## Creating and Managing JWT Apps in XO Platform
+
+## Creating and Managing JWT Apps in the Platform
 
 Steps to create a JWT Client App from the Platform:
 
@@ -26,18 +27,54 @@ Steps to create a JWT Client App from the Platform:
 
 5. Select **Enforce JTI**, **JWE**, or both as per your requirements to secure the connections with the Platform:
 
-    * **Enforce JTI (JWT ID) Claim** – Once enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
+    * **Enforce JTI (JWT ID) Claim**: After enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
 
-    * **Enforce JWE Encryption** (Generating JWT token) – To access the Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
-    <img src="../images/create-a-jwt-app.png" alt="Create a new JWT App" title="Create a new JWT App" style="border: 1px solid gray; zoom:50%;">
+    * **Enforce JWE Encryption** (Generating JWT token): To access the Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
+
+
+    * **Enforce Response Payload Encryption**: Provide the public key used by the Platform to encrypt Public API response payloads that include Token Introspection and User Information data. Use the same key to decrypt the payload. Refer [How Response Payload Encryption Works](#how-response-payload-encryption-works).    
+     <img src="../images/create-a-jwt-app.png" alt="Create a new JWT App" title="Create a new JWT App" style="border: 1px solid gray; zoom:50%;">  
+
+
 
 5. Click **Next** and **Done**.
 
 6. Select the app name from the JWT App drop-down list to see the app’s details, such as App name and its ID, client ID and its Secret. 
 
-!!! note
+    !!! note
 
-    Use the **Client ID** and **Client Secret** of the client app from above to generate a JWT token. This token must be passed as a part of each API request for authorization.
+        Use the **Client ID** and **Client Secret** of the client app from above to generate a JWT token. This token must be passed as a part of each API request for authorization.
+
+
+
+
+
+### How Response Payload Encryption Works
+
+When enabled, Response Payload Encryption secures Public API responses by encrypting the payload before delivery. This ensures that only the intended client who owns the corresponding private key can decrypt and access the data. This feature adds an extra layer of protection for sensitive data, ensuring confidentiality and integrity across all API communications. 
+
+This option applies only to Public API responses for the following endpoints:
+
+* Session History
+* Get Analytics
+* Get Conversation Details
+* Get User Information
+* Get User Roles Details
+
+
+When you enable this option, the Platform:
+
+
+
+1. Generates a unique encryption key for each API response. 
+2. Encrypts the response data using that key. 
+
+3. Encrypts the key itself with the client-provided public key. 
+
+4. Returns the encrypted data, protected key, and related information to the client. 
+
+5. The client then uses its private key to decrypt the encryption key and access the original response payload. 
+
 
 
 ## Creating and Managing Apps in Admin Console
@@ -68,7 +105,7 @@ You can define apps to securely access the data from data tables and data views.
 
 ## Associating API Scopes
 
-Once you create a client JWT app, you can associate it with API scopes.
+After you create a client JWT app, you can associate it with API scopes.
 
 
 ### Adding API Scopes in the XO Platform
@@ -81,7 +118,7 @@ Steps to associate API Scopes to a Client JWT App from the Platform:
 
 3. The app’s **Client ID** and **Client Secret** are displayed on the screen. Copy these values. 
 
-4. Select the appropriate **Automation** or **Contact Center** scopes to allow the client app to access the respective APIs. (If appropriate scopes are not selected, then the client apps cannot access the APIs).
+4. Select the appropriate **Automation** or **Contact Center** scopes to allow the client app to access the respective APIs. (If appropriate scopes aren't selected, then the client apps can't access the APIs).
 
 5. Click **Save**.
 
@@ -99,7 +136,7 @@ Steps to associate API Scopes to a Client App from the Admin Console:
 
 5. Click the **Manage Apps** link to create a new app.
 
-6. Once you select an app, the **Client ID** and **Client Secret** appear. Copy these values.
+6. After you select an app, the **Client ID** and **Client Secret** appear. Copy these values.
 
 7. Under the Scopes section, select the appropriate Scopes to allow the client app to access the respective APIs. [Learn more](../../administration/security-and-control/api-scopes.md).
 
@@ -258,12 +295,13 @@ Steps to associate API Scopes to a Client App from the Admin Console:
 </table>
 
 
-!!!note
-    Once enabled, the API Scopes must be Published. [Follow the Publish](../../deploy/publishing-bot.md) process to ensure that the API Scopes are selected.
+!!! note
+    
+    After enabled, the API Scopes must be Published. [Follow the Publish](../../deploy/publishing-bot.md) process to ensure that the API Scopes are selected.
 
 ## Generating the JWT Token
 
-Once you have associated the API scopes with a client app, you must generate the JWT token for API requests.
+After you have associated the API scopes with a client app, you must generate the JWT token for API requests.
 
 Steps to generate the token:
 

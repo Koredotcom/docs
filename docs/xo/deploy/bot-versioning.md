@@ -19,7 +19,7 @@ Using this option, you as a developer can:
 * view and manage all versions available for the agent; and
 * restore the agent to a previous version.
 
-Versioning is supported in Standard and Universal Bots.
+Versioning is supported in Parent App and Linked Apps.
 
 This option can be accessed from the **Deploy** option from the left menu, under the menu option **Deploy Management -> App Versions.**
 

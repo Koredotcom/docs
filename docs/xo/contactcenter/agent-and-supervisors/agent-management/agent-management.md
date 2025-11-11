@@ -260,12 +260,15 @@ Different statuses apply to each channel. Watch the short demo below to see what
 
 ### Conversation Statuses by Channel (Live Chat, Messaging, and Voice)
 
-Conversation statuses apply in certain conditions for specific channels. These are listed in the table below:
+Conversation statuses apply under specific conditions for certain channels. These are listed in the table below:
 
 | **Status**                                   | **Applicability**                                                                 | **Channel**            | **Message**  | **Variables**                                                                 |
 |----------------------------------------------|-----------------------------------------------------------------------------------|------------------------|--------------|-------------------------------------------------------------------------------|
-| **On Connect**                               | When the agent connects                                                           | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
-|                                              |                                                                                   | Voice                  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| **On Waiting**                               | Enable/disable a command based user side chat termination                                                           | Messaging  | User Side Conversation End      | Configure `'{{endChat}}'` Variable |
+|                                              |                                                                                   | Messaging                  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time.            |
+| **On Connect (Default Message(s))**                               | When the agent connects                                                           | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
+|                                              |                                                                                   | Voice                  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.            |
+| **On Connect (Queue Specific Message(s))**                   | When the agent connects | Live Chat, Messaging, Voice.  | To Queue     | Time Left to Inactivity, Time Left to Expiry. |
 | **Due Reminder For Agent**                   | If the agent’s response time is greater than the set percentile of overdue conversations | Live Chat, Messaging.  | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
 | **Overdue**                                  | If the agent has not responded for the set amount of time                         | Live Chat, Messaging.  | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
 | **Agent Inactivity**                         | If the agent has not responded to an overdue conversation for the set time        | Live Chat              | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
@@ -285,15 +288,17 @@ Conversation statuses apply in certain conditions for specific channels. These a
 
 | **Status**                       | **Applicability**                                                                                                                   | **Channel** | **Message** | **Variables**                                                              |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|----------------------------------------------------------------------------|
-| Overdue                          | If the agent has not responded for the set amount of time (in hours and minutes).                                                    | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
-| Due Reminder for Agent Inactivity| If the agent’s response time is under the set amount of time (in hours).                                                            | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
-| Agent Inactivity                 | The conversation will be moved back to Queue, once it turns overdue if the agent has not responded for the set amount of time (in hours and minutes). | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
-| Agent Offline                    | If an agent gets disconnected unexpectedly, conversations will wait in queue for a set amount of time (in hours and minutes).       | Email       | To Agent    |                                                                            |
-| Customer Idle                    | If the customer has not responded for the set amount of time (in hours and minutes) since the last agent response.                  | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
-| Due Reminder for Auto Expiry     | If the customer’s response time is under the set amount of time (in hours) before Auto Expiry.                                      | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
-| Auto Expire                      | Once the conversation turns idle if the customer does not respond for the set amount of time (in hours and minutes) the interaction expires. | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| **On Connect (Default Message(s))**                         | When the agent connects                                                   | Email       | To User    | Time Left to Inactivity, <br>Time Left to Expiry.|
+| **On Connect (Queue Specific Message(s))**                          | When the agent connects                                                    | Email       | To Queue    | Time Left to Inactivity, <br>Time Left to Expiry. |
+| **Overdue**                          | If the agent has not responded for the set amount of time (in hours and minutes).                                                    | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| **Due Reminder for Agent Inactivity**| If the agent’s response time is under the set amount of time (in hours).                                                            | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| **Agent Inactivity**                 | The conversation will be moved back to Queue, once it turns overdue if the agent has not responded for the set amount of time (in hours and minutes). | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| **Agent Offline**                    | If an agent gets disconnected unexpectedly, conversations will wait in queue for a set amount of time (in hours and minutes).       | Email       | To Agent    |                                                                            |
+| **Customer Idle**                    | If the customer has not responded for the set amount of time (in hours and minutes) since the last agent response.                  | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| **Due Reminder for Auto Expiry**     | If the customer’s response time is under the set amount of time (in hours) before Auto Expiry.                                      | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| **Auto Expire**                      | Once the conversation turns idle if the customer does not respond for the set amount of time (in hours and minutes) the interaction expires. | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 |                                  |                                                                                                                                     |             | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
-| On Close                         | If the conversation is closed by the agent.                                                                                         | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| **On Close**                         | If the conversation is closed by the agent.                                                                                         | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 
 ### Conversation Status Configuration
 
@@ -301,29 +306,28 @@ For each status, you can configure the following:
 
 1. **The response time after which the status should trigger**: This can be set in either as a percent value of a total or as minutes and seconds.
     1. The statuses for which you can set a percent value are: _Due Reminder For Agent_, and _Idle Reminder For Customer._
-    2. The statuses for which you can set a response time (in minutes and seconds) are: _Overdue, Agent Inactivity, Idle_, and _Auto Expire_.
-    3. The statuses that do not require percentile or response time configuration are: _On Connect, On Interruption_, and _On Close_.  
-        <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">  
-        <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">  
+    2. The statuses that do not require percentile or response time configuration are: _On Connect, On Interruption_, and _On Close_.  
+        <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">   
     The following applies to emails:
-    4. The statuses for which you can set a response time (in hours) are _Due Reminder for Agent Inactivity_, and _Due Reminder for Auto Expiry_.
-    5. The status for which there is no response time is _On Close_.
-    6. The statuses for which you can set a response time (in hours and minutes) are _Overdue_, Agent _Inactivity_, _Agent Offline_, _Customer Idle_, and _Auto Expire_.
-2. **The messaging goes out to either the user or the agent**. Status
+    3. The statuses for which you can set a response time (in hours) are _Due Reminder for Agent Inactivity_, and _Due Reminder for Auto Expiry_.
+    4. The status for which there is no response time is _On Close_.
+    5. The statuses for which you can set a response time (in hours and minutes) are _Overdue_, Agent _Inactivity_, _Agent Offline_, _Customer Idle_, and _Auto Expire_.
+
+    !!! note
+
+        The configurable limit for Overdue, Agent Inactivity, and Auto Expire for the Email channel is 30 days.
+
+2. The messaging goes out to either the user or the agent. Status
 Messages can be edited by clicking the Edit icon under the Message column.  
     <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
-    <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
 
     1. Each status lets you edit the message text, add variables and select the language.  
-        <img src="../images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
-    1. Each status lets you edit the message text, add variables and select the language.  
-        <img src="../images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/on-connect.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
 
-    2. **To add a variable**, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
-    2. **To add a variable**, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
-    For example: `{{agentFirstName}}` becomes Christine Mark.  
+    2. To add a variable, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
+    For example: `{{agentFirstName}}` becomes John.
         <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
-        <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
+    
 See the tables in [Conversation Statuses by Channel (Live Chat, Messaging, and Voice)](#conversation-statuses-by-channel-live-chat-messaging-and-voice) and [Conversation Statuses by Channel (Email)](#conversation-statuses-by-channel-email) for details on available variables.
 
 Once you configure your Conversation Statuses and Messaging, click **Save** at the bottom right of the Agent Settings screen.
@@ -419,6 +423,10 @@ Administrators can select from the following routing options that complement exi
 **Fairer Workload distribution**: When enabled, this feature distributes tasks evenly across agents, which reduces overload, improves focus, and can decrease completion times.
 
 **Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability.
+
+!!! note
+
+    The configurable limit for the queue max timeout for the Email channel is 30 days. 
 
 **Omit Language in Routing**: When enabled, the system ignores language during routing. Routing continues to consider skill, proficiency, availability, capacity, and other applicable parameters.
 

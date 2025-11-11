@@ -31,4 +31,20 @@ Steps to enable Answer Call on First Bot/AI Agent Response:
 2. Turn on the toggle to enable the functionality.  
     <img src="../images/answer-call-bot-response.png" alt="Answer Call Enabled" title="Answer Call Enabled" style="border: 1px solid gray; zoom:70%;">
 
-    When calls transfer from an existing telephony provider to Kore, a connection event triggers once the call connects and the bot begins responding. In rare cases, the AI Agent’s response may be delayed due to processing or latency. This setting sends the connection event only when the AI Agent’s first response plays and plays a dial tone in the meantime, keeping callers engaged.
+    When calls transfer from an existing telephony provider to platform, a connection event triggers once the call connects and the bot begins responding. In rare cases, the AI Agent’s response may be delayed due to processing or latency. This setting sends the connection event only when the AI Agent’s first response plays and plays a dial tone in the meantime, keeping callers engaged.
+
+## Data Retention Period
+
+The Data Retention Period feature allows administrators to configure how long voice call recordings are retained. Users can select retention periods ranging from 1 day to 7 years using a dropdown, with default values set by customer type. The feature includes email notifications for deletion reminders (optional, disabled if retention is less than 1 month) and mandatory deletion acknowledgements. All changes to retention settings and email preferences are recorded in audit logs, along with counts of successful or failed recording deletions. By default, new customers and applications have a retention period of 3 months, while existing customers retain recordings for 7 years. Only App Owners or Supervisors can modify these settings.
+
+Steps to configure the data retention period.
+
+1. Click **Data Retention Period**.  
+    <img src="../images/data-retention-period-option.png" alt="Data Retention Period" title="Data Retention Period" style="border: 1px solid gray; zoom:70%;">
+
+2. Select the required duration for data retention.
+    
+ Select the check box (optional) to enable email notifications, 5 days before deletion of voice call recordings. Email subscription is available only for retention periods above 30 days.  
+    <img src="../images/define-data-retention-period.png" alt="Define Data Retention Period" title="Define Data Retention Period" style="border: 1px solid gray; zoom:70%;">
+
+3. Click **Save** to apply the changes.
