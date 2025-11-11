@@ -8,8 +8,8 @@ This section outlines the essential components, credentials, and permissions req
 
 * Required Components:
     * ServiceNow Instance
-    * Xanadu, Yokohama, or Zurich release
-    * Configured to receive desktop chats
+        * Xanadu, Yokohama, or Zurich release
+        * Configured to receive desktop chats
     * Agent AI Account
         * Enabled Web/Mobile channel
         * Required AI Agent credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **agent ai** > **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
