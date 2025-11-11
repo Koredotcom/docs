@@ -71,9 +71,10 @@ Steps to revise the access:
 
 You can make the report public by following the above steps and clicking **Switch to Public**. The report is then accessible to everyone.
 
-    !!!Note
+!!! Note
 
-         A private report is not visible to other users on the REPORTS tab.
+    A private report is not visible to other users on the REPORTS tab.
+
 
 ### Adding Filters
 
