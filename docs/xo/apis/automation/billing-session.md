@@ -4,6 +4,10 @@
 
 This API retrieves the list of individual billing sessions created for an app so that you can review them for correctness and reconciliation.
 
+Billing sessions are tracked at the individual app or bot level. In dynamic routing scenarios, the Parent app functions as a standalone app with its own billing sessions. When the Parent app routes a user query to a linked app, that billing session is attributed to the linked app, not the Parent app.
+
+When you select the Parent app in the Admin Console or pass its ID via the API, the system returns only the Parent app's direct sessions; it doesn't include sessions routed from the Parent app to linked apps.
+
 
 <table>
   <tr>

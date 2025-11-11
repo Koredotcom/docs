@@ -239,7 +239,7 @@ The following metrics and their total counts are displayed:
 * **Rejected**: Count of interactions explicitly rejected by an agent using the reject button.
 * **Unanswered**: Count of interactions assigned to an agent where the agent did not pick up the interaction within the acceptance timeout.  
 
-The channel selection status appears on the Agents tab beside the Agent’s name. Active channels appear in Green and the disabled channels appear in Amber color.  
+The channel selection status appears on the Agents tab beside the Agent’s name. Active channels appear in Green and the disabled channels appear in Gray color.  
 <img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">  
 If an agent selects a channel and logs out at the end of the day, the previously selected channel persists when the agent starts a new session. Active channels appear in green, while disabled channels appear in amber for the supervisor.
 
@@ -425,6 +425,8 @@ After completing the transfer or end actions, the interface:
 * Updates the conversation list.  
 
 ### Check Profile
+
+The profile can be accessed by either clicking on the agent or hovering over the agent.
 
 Steps to check the agent profile:
 
