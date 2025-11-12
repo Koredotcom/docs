@@ -75,8 +75,6 @@ On clicking any cluster, you navigate to the **Cluster View** page and view all 
 
 <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
 
-
-
 #### Display More Intents and Clusters
 
 On the Conversation Insights page, the number of intents to be displayed is adjusted using pagination,  in the **Intents per page** drop-down in the treemap view. You can select the intents that can be viewed per page here as per the requirement. Click **Next** to view the intents on the next page.
@@ -158,7 +156,6 @@ The **Intent View** page displays all the available clusters, utterances, and ot
 ## Utterance Validation
 
 The utterances grouped in the clusters can be validated and trained for an existing intent or a new intent, based on the requirements. Training the utterances and discovering new intents improves the performance of your AI Agents.
-
 
 
 * Click any Utterance displayed in the grid on the **Intent View** or **Cluster View** pages.
