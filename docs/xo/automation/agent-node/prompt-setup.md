@@ -118,20 +118,20 @@ For a more practical approach, the differences through scenarios can make the co
 
 * Scenario 1: Maintaining a Legacy assistance 
 
-  A banking assistance that has predefined customer verification steps and strict entity collection. 
-  
-  Uses **V1 prompts** because it requires explicit entity handling and manual exit scenarios. 
+    A banking assistance that has predefined customer verification steps and strict entity collection. 
+    
+    Uses **V1 prompts** because it requires explicit entity handling and manual exit scenarios. 
 
 * Scenario 2: Automating Customer Support 
   
-  An AI Agent that dynamically suggests troubleshooting steps based on customer queries. 
+    An AI Agent that dynamically suggests troubleshooting steps based on customer queries. 
 
-  Uses **V2 prompts** because it needs tool integration and dynamic execution. 
+    Uses **V2 prompts** because it needs tool integration and dynamic execution. 
 
 * Scenario 3: Handling a Mixed Workflow 
 
-  A AI Agent for insurance claims processing that requires predefined data collection but also uses external tools for verification. 
-  Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. 
+    A AI Agent for insurance claims processing that requires predefined data collection but also uses external tools for verification. 
+    Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. 
 
 
 ### Regular vs. Streaming Prompts

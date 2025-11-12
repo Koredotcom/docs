@@ -52,9 +52,11 @@ Streaming prompts deliver responses incrementally as the model generates them, a
 * Format Requirements:
   * Both require responses to include conv_status , AI Agent response, and collected entities.
   * Streaming prompts must structure this content for incremental delivery.
+
 * Error Handling:
   * Regular prompts can be fully validated before delivery.
   * Streaming prompts require careful prompt engineering as corrections cannot be made mid-stream.
+
 * Analytics:
   * Streaming responses include additional metrics like TTFT (Time to First Token).
   * Response Duration for streaming measures time from first to last token.
