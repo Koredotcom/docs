@@ -1,13 +1,13 @@
 # Human Node – Pause for Review and Approval
 
-The Human Node introduces a human-in-the-loop capability within automation workflows. It allows workflows to pause and incorporate human judgment into automated processes. Designated users can review, approve, or provide input before the workflow continues, ensuring critical steps are validated, decisions are accurate, and compliance requirements are met. This capability is especially useful when certain decisions can't be automated and require manual validation, oversight, or confirmation.
+The Human Node introduces a human-in-the-loop capability within automation workflows. It allows workflows to pause and incorporate human judgment into automated processes. Designated users can review, approve, or provide input before the workflow continues, ensuring critical steps are validated, decisions are accurate, and compliance requirements are met. This capability is especially useful when certain decisions cannot be automated and require manual validation, oversight, or confirmation.
 
 ## Key Capabilities
 
-* **Customizable Input Requests** – Send a request with fields tailored to collect the information or decision needed.
-* **Timeout Handling** – Define how the workflow behaves if no response is received (e.g., Terminate, Skip & Continue).
-* **Error Handling** – Configure the outcome if the request fails or cannot be delivered.
-* **Sync or Async Modes (workflow level)** – Execution runs synchronously or asynchronously based on the workflow’s endpoint configuration.
+* **Customizable Input Requests** – Send approval requests with fields tailored to collect the exact information or decision required from reviewers.
+* **Timeout Handling** – Define how the workflow behaves if no response is received within the specified time (for example, *Terminate* or *Skip and Continue*).
+* **Error Handling** – Configure what happens if the request fails to send or an unexpected error occurs during execution.
+* **Inbox Integration** – All Human-in-the-Loop (HITL) approval requests are routed automatically to the reviewers’ Inbox (Personal or Group tab) for action and tracking.
 
 ## Common Use Cases
 
@@ -18,378 +18,182 @@ The Human Node introduces a human-in-the-loop capability within automation workf
 
 ## How it Works
 
-The Human Node serves as a flexible pause point within an automated workflow, enabling seamless integration of human decisions. When the workflow reaches this node, it sends a custom request payload to the configured endpoint.
+The Human Node serves as a flexible pause point within an automated workflow, enabling seamless integration of human decisions. When the workflow reaches this node, it sends an approval request to the assigned user’s Inbox.
 
 The execution behavior depends on the workflow’s endpoint configuration:
 
-* In Sync mode, the workflow starts, sends the request to the human, waits for the human’s input, and generates the output — all within the timeout set at the endpoint.
-* In Async mode, the workflow sends an immediate acknowledgement and continues execution. The Human node notifies the pre-configured callback URL when the request is sent to the human, when the human’s input is received, and when the final workflow output is generated and delivered.
+* In Sync mode,  the workflow starts, sends the request to the human, waits for the human’s input, and generates the output — all within the timeout set at the endpoint.
+* In Async mode,  the workflow sends an immediate acknowledgement and continues execution. The Human node automatically delivers the approval request to the configured reviewer through the platform’s Inbox. The workflow continues once the reviewer responds or the configured timeout is reached.
 
 Built-in mechanisms handle timeouts, duplicate or late responses, and delivery failures to ensure the workflow progresses as configured. This provides visibility and traceability into decisions through the Debug Panel without disrupting the overall flow.
 
-<img src="../images/human_node.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
-
-In this document, you’ll learn how to add a Human node to your canvas, configure custom input requests, define reviewer fields, and customize timeout and error-handling behavior.
+In this document, you’ll learn how to add a Human node to your canvas, configure approval requests for reviewers, define input fields, and customize timeout and error-handling behavior within the workflow.
 
 ## Add and Configure a Human Node
 
-The Human node introduces a manual review checkpoint within a workflow. When the workflow reaches this node, it sends a custom request and then resumes based on the response/timeout/failure condition.
+The Human node introduces a manual review checkpoint within a workflow. When the workflow reaches this node, it sends an approval request to the designated reviewers and then resumes execution based on the response/timeout/failure condition.
 
-The node lets you:
+**Before you begin**
 
-* Define the custom input fields required from the reviewer.
-* Configure the request details (endpoint, headers, body).
-* Specify behavior for timeouts or errors.
+Open your workflow and add the Human node to the canvas. [Learn more about adding nodes](../manage-flow-nodes.md#add-nodes).
 
-Steps to add and configure a Human node:
+**Steps to configure a Human node**:
 
-### Step 1: Open Flow Builder
+Click the Human node to open its properties dialog box. You can rename the node (for example, ManagerApproval, QualityCheck) or add a description to provide context. 
 
-* Log in to your AI for Process account.
+### 1. Select Request Destination
 
-* Select your workflow → Click **Go to Flow**.
+The **Send & wait for response** field specifies where the request will be sent for human review.
 
-### Step 2: Add the Human Node
+* Select **Account Inbox** as the destination.
+* Choose one of the following options:
+    * **Everyone:** Send the approval request to all workspace members.
+    * **Specific Users:** Restrict the request to selected users. Enter their email addresses in the **Select User (email)** field. Only members within the current workspace are suggested.
+* When the flow execution reaches the Human node, an approval request is automatically sent to the reviewer’s **Inbox**.
 
-You can insert a Human node on the canvas using any of the following methods:
+For details on how to view, assign, and act on approval requests, see **[Inbox](../../inbox.md)**. 
 
-* Assets Panel: Drag the Human node from the tray to the canvas.
-* Bottom Tray: Click the Human node from the quick access section below the canvas.
-* Plus Icon: Click the plus (+) icon when hovering between nodes and select the Human node from the insert menu.
+<img src="../images/workflow_everyone.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
 
-### Step 3: Configure the Node
+### 2. Configure the Review Note
 
-Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
- 
-You can rename the node (for example, ManagerApproval, QualityCheck) or add a description to provide context.
+Define how the request will appear to the reviewer:
 
-**1. View Request Destination**
+* **Subject line** - Email subject or message title.
+* **Message body** - Instructions or context for the reviewer. The context is resolved at run-time.
 
-In the **Send & wait for response** field, the currently supported option is *Custom Request*. This specifies where the request will be sent for human review.
+<img src="../images/workflow_reviewnote.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
 
-<img src="../images/human_node_request.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
+### 3. Configure Timeout Behavior
 
-**2. Define Request details**
+In the Wait for response field, choose how long the node should wait for a response:
 
-Select Request Definition to configure how the Human node sends requests and fetches data.
+* **No timeout** – Workflow waits indefinitely until the reviewer responds.
+* **Set timeout** – Default 120 seconds (you can customize the value and unit: seconds, minutes, hours, days).
 
-1. Click **Define Request** to open the Edit Request dialog.
-2. Provide the following details:
-    1. **Request Type**: Only POST is supported for Human nodes.
-    2. **API Endpoint URL**: Enter the endpoint or paste a cURL command.
-3. **Auth profiles:** Choose an existing profile or provide authorization details:
-    * Pre-authorize the integration: Use pre-configured credentials (e.g., system token, client credentials).
-    * Allow users to authorize the integration: Require each end user to authenticate dynamically.
-4. **Headers**: Add key-value pairs as needed. Automatically included headers are: CallbackURL and Token (read-only, applied in all debug and test requests).
-5. **Body (Payload)**: At runtime, the Human node automatically generates the request body by combining: Input fields defined in Step 4 and the Reviewer note defined in Step 5.
-You can add extra keys for testing purposes, but these additional keys are ignored at runtime.
-6. Click **Test** to validate the request and view the response.
-7. Click **Save** to apply the configuration.
+<img src="../images/workflow_wait for response.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
 
+### 4. Define Node Outcomes
 
-**3. Add Input Fields**
+In the **Add Connection** tab, specify how the workflow proceeds after the review step ends.
 
-In the **Input Fields** section, define the fields required from the reviewer. Supported field types include: Text, Number, Boolean, Date.
+The Human node supports multiple outcome paths that determine how the workflow proceeds after human input. These paths can now be configured based on reviewer decisions or system conditions.
 
-1. For each field, you can:
-    * Set a default value.
-    * Mark it as required or optional.
-    * Map it to context variables (e.g., pre-fill text with `{{context.user.name}}`).
-2. Click **Payload preview** to see how the full payload will be sent to the downstream configured in the request URL.
-
-For example, you can create two fields for an approval flow:
-
-* Approval (dropdown: Approved / Rejected)
-* Comments (text field for reviewer notes)
-
-<img src="../images/human_node_inputfields.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
-
-**4. Configure the Review Note**
-
-* Define how the request will appear to the reviewer:
-    * **Subject line** - Email subject or message title.
-    * **Message body** - Instructions or context for the reviewer. The context is resolved at run-time.
-    * **Assign to** - Reviewer’s email address.
-
-<img src="../images/human_node_review_note.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
-
-**5. Configure Timeout Behavior**
-
-* Choose how long the node should wait for a response:
-    * **No timeout** – Workflow waits indefinitely until the reviewer responds.
-    * **Set timeout** – Default 120 seconds (You can customize value and unit: seconds, minutes, hours, days).
-
-**6. Define Node Outcomes**
-
-In the Add Connection tab, specify how the workflow proceeds once the review step ends. Three outcome paths are available:
-
-* **On Success** – When all the mandatory input fields in the Human node receive a response from the human reviewer.
-    * Workflow continues with the reviewer’s response values.
-    * Select the next node in the flow.
-    * Supports parallel branching.
-* **On Timeout** – No response received from the reviewer within the configured time.
-    * **Terminate** (default): Flow ends via the attached End node. No parallel branching allowed.  
-Note: If the End/Terminate node is deleted, the flow automatically switches to Skip.
-    * **Skip**: Continue with `null/NA` output and move to the next configured node.
-* **On Failure** – An error occurred while sending the request or connecting to the request URL.
-    * Select a fallback node to continue execution.
-    * Supports parallel branching.
-
-## Testing the Flow
-
-Once you have configured the Human node and connected it to the workflow, you can test how it behaves at runtime. Testing validates both the flow logic and the Human node’s interaction with reviewers. When you click Run Flow, the Debug Panel opens and shows how the node executes.
-
-### Step 1: Send Request to Reviewer
-
-* The workflow generates and sends the request via POST to the configured endpoint.
-* Includes necessary headers (CallbackURL, Token) and body (JSON, XML, or URL-encoded key/value pairs).
-* The request is sent to the configured endpoint using a Custom Request.
-
-### Step 2: Running the Flow
-
-Depending on the workflow endpoint configuration, the Human node can run in two modes: Sync (Synchronous) or Async (Asynchronous).
-
-#### **Running in Sync Mode**
-
-In Sync mode, the workflow pauses at the Human node and waits for a reviewer’s response before moving forward. 
-
-For example, approval flows or mandatory checkpoints where execution cannot continue until human input is received.
-
-Here is a step-by-step execution of the Human node in Sync mode:
-
-1. **Workflow reaches the Human node**: The workflow reaches the Human node and sends a request payload to the configured endpoint.
-2. **Request forwarded**: The Human node forwards the payload downstream (e.g., to a channel, platform, or custom system).
-3. **Reviewer input collected**: The downstream service collects the reviewer’s input and sends it back via the callback URL. The callback URL remains active until the configured wait time (Late or duplicate responses are ignored).
-4. **Workflow pauses while waiting/ Outcome handling**:
-    * A reviewer responds within time → continues along the Success path.
-    * A timeout occurs → follows the selected Timeout option (Terminate or Skip & Continue).
-    * A failure occurs → follows the Failure path.
-5. **Final output**: The workflow’s final output - including the reviewer’s response (or error/timeout details) - is returned as the sync response and displayed in the Debug Panel.
-
-<table>
-  <tr>
-   <td>
-<strong>Scenarios in sync mode</strong>
-   </td>
-   <td><strong>What Happens</strong>
-   </td>
-   <td><strong>Debug Panel Output</strong>
-   </td>
-   <td><strong>Flow Outcome</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>1. Reviewer responds successfully
-   </td>
-   <td>Downstream sends the reviewer’s input back before the timeout
-   </td>
-   <td>Response JSON with key–value pairs
-   </td>
-   <td>Workflow continues along the Success path
-   </td>
-  </tr>
-  <tr>
-   <td>2. Channel/platform failure
-   </td>
-   <td>Communication issue prevents response delivery
-   </td>
-   <td>Error message in the Response section
-   </td>
-   <td>Workflow continues along the Failure path
-   </td>
-  </tr>
-  <tr>
-   <td>3. Timeout – Terminate flow option
-   </td>
-   <td>No response before timeout; flow set to Terminate
-   </td>
-   <td>Response JSON with null values
-   </td>
-   <td>Workflow ends along the End/Terminate path
-   </td>
-  </tr>
-  <tr>
-   <td>4. Timeout – Skip & Continue option
-   </td>
-   <td>No response before timeout; flow set to Skip
-   </td>
-   <td>Response JSON with null values
-   </td>
-   <td>Workflow skips the Human node and continues to the next configured node
-   </td>
-  </tr>
-  <tr>
-   <td>5. Sync endpoint timeout (before reviewer response)
-   </td>
-   <td>The endpoint itself times out before the human replies
-   </td>
-   <td>Timeout error JSON
-   </td>
-   <td>Workflow stops with a Timeout error
-   </td>
-  </tr>
-  <tr>
-   <td>6. Sync endpoint timeout (after reviewer response)
-   </td>
-   <td>The reviewer responded, but the endpoint timed out before the workflow could finally end execution
-   </td>
-   <td>Timeout error JSON
-   </td>
-   <td>Workflow stops with Timeout error
-   </td>
-  </tr>
-</table>
-
-
-#### **Running in Async Mode**
-
-In Async mode, the workflow does not pause at the Human node. Instead, the workflow sends an immediate acknowledgement and continues execution. The Human node notifies the pre-configured callback URL when the request is sent to the human, when the human’s input is received, and when the final workflow output is generated and delivered.the workflow continues immediately, while the reviewer’s input is processed in the background.
-
-For example, when you don’t want the workflow to block waiting for a human, which is critical for efficiency in large or automated workflows.
-
-Here is the execution of the Human node in Async mode:
-
-1. **Request received**: As soon as the workflow gets a request, it sends an acknowledgement back to the requestor system.
-2. **Workflow execution**: The workflow then starts execution, reaches the Human node, and sends a request payload to the configured endpoint.
-3. **Callback generation**: The Human node generates and shares a callback URL and request ID, which the downstream service uses to return the reviewer’s response. The callback URL remains valid only for the configured wait time.
-4. **Waiting status update**: When the workflow reaches the Human node and is waiting for input, a status update is sent to the pre-configured URL (URL set when configuring the workflow’s async endpoint).
-5. **Reviewer receives and responds**: The downstream service delivers the request to the reviewer. Once the reviewer provides input, the response is sent back to the callback URL. Late or duplicate responses are ignored.
-6. **Continuing execution status update**: After receiving data from the human, the workflow continues execution from the Human node. A status update for the workflow output is sent to the pre-configured URL (URL set when configuring the workflow’s async endpoint]).
-7. **Outcome handling**:
-    * Reviewer responds in time **→** Workflow resumes at the configured Success path.
-    * No response before timeout **→** Workflow follows the configured timeout option (Terminate or Skip & Continue).
-    * Failure in delivery **→** Workflow follows the Failure path.
-8. **Final output**: The workflow’s final output - including the reviewer’s response, or error/timeout details - is sent to the pre-configured callback URL and logged in the Debug Panel.
+**Outcome Paths and Behavior**
 
 
 <table>
   <tr>
-   <td>
-<strong>Scenario</strong>
+   <td><strong>Path</strong>
    </td>
-   <td><strong>What Happens</strong>
+   <td><strong>Description</strong>
    </td>
-   <td><strong>Debug Panel Output</strong>
-   </td>
-   <td><strong>Flow Outcome</strong>
+   <td><strong>Trigger Condition</strong>
    </td>
   </tr>
   <tr>
-   <td>1. Reviewer responds successfully
+   <td><strong>On Approval</strong>
    </td>
-   <td>Downstream sends the reviewer’s input back before the timeout
+   <td>Workflow continues to the next configured node when the reviewer accepts or approves the request.
+<p>
+In the <strong>On Approve</strong> field, select the next node in the flow.
    </td>
-   <td>Response JSON with key–value pairs
-   </td>
-   <td>Workflow continues along the Success path
-   </td>
-  </tr>
-  <tr>
-   <td>2. Channel/platform failure
-   </td>
-   <td>Communication issue prevents response delivery
-   </td>
-   <td>Error message in the Response section
-   </td>
-   <td>Workflow continues along the Failure path
+   <td>The reviewer selects “Accept” or equivalent approval value.
    </td>
   </tr>
   <tr>
-   <td>3. Timeout – Terminate option
+   <td><strong>On Decline</strong>
    </td>
-   <td>No response before timeout; flow set to Terminate
+   <td>Workflow follows a defined rejection or alternate path when the reviewer declines or rejects the request.
+<p>
+In the <strong>On Decline</strong> field, select the next node in the flow.
    </td>
-   <td>Response JSON with null values
-   </td>
-   <td>Workflow ends along the Terminate path
-   </td>
-  </tr>
-  <tr>
-   <td>4. Timeout – Skip & Continue option
-   </td>
-   <td>No response before timeout; flow set to Skip
-   </td>
-   <td>Response JSON with null values
-   </td>
-   <td>Workflow skips the Human node and continues to the next configured node
+   <td>The reviewer selects “Decline” or equivalent rejection value.
    </td>
   </tr>
   <tr>
-   <td>5. Async endpoint timeout (before reviewer input)
+   <td><strong>On Timeout</strong>
    </td>
-   <td>The endpoint itself times out before the human replies
+   <td>Workflow diverts to the configured timeout path if no response is received within the defined wait period.
+<p>
+Select one of the options:
+<p>
+<strong>Terminate flow</strong> (default): Flow ends via the attached End node.
+<strong>Skip</strong>: Continue with <code>null/NA</code> output and move to the next configured node.
    </td>
-   <td>Timeout error JSON
-   </td>
-   <td>Workflow stops with a Timeout error
+   <td>A timeout occurs before a human response.
    </td>
   </tr>
   <tr>
-   <td>6. Async endpoint timeout (after reviewer input)
+   <td><strong>On Failure</strong>
    </td>
-   <td>The reviewer responded, but the endpoint timed out after
+   <td>Workflow transitions to a distinct error-handling path when an error occurs (for example, a network issue or a delivery failure).
+<p>
+Select a fallback node to continue execution.
+Supports parallel branching.
    </td>
-   <td>Timeout error JSON
-   </td>
-   <td>Workflow stops with a Timeout error
+   <td>Request delivery or system error.
    </td>
   </tr>
 </table>
 
-### Step 3: Capturing and Using Reviewer Responses in the Workflow
+Once configured, the Human node pauses workflow execution at the defined step, sends the approval request to the reviewer’s Inbox, and resumes automatically based on the reviewer’s decision or timeout configuration.
 
-Once the reviewer responds, the Human node captures the input and makes it available for downstream workflow nodes:
+## **Testing the Flow with Inbox Approvals**
 
-* **Capture Response:** Reviewer input is collected as JSON key–value pairs.
-* **Workflow Branching:** Execution continues along the configured Success, Timeout, or Failure path. Branching can be based on the input values.
-* **Accessing Input**: Responses are accessible in downstream nodes via context variables:
-    * Full payload: `{{context.steps.&lt;Nodename>.output}}`
-    * Specific fields: `{{context.steps.&lt;Nodename>.output.Approval}}` or `{{context.steps.&lt;Nodename>.output.Comments}}`
+Once you configure a Human node in a workflow, you can test how approval requests appear and behave in the Inbox during runtime. This validation step ensures that both the workflow logic and Human-in-the-Loop (HITL) interactions work as expected.
 
-<img src="../images/human_node_success.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
+**Step 1: Run the Flow**
 
+1. In the Flow Builder, click **Run Flow** to start execution.
+2. The **Debug Panel** opens automatically and shows each node’s runtime behavior.
+3. When the workflow reaches a Human node, an approval request is automatically generated and sent to the configured reviewers’ Inbox:
+    * **Personal tab** – For requests assigned to yourself.
+    * **Group tab** – For requests assigned to a set of users or the whole workspace.      If the request is sent to a group, users must first assign it to themselves from the **Group** tab before taking action to approve or reject.
 
-## Use Case – Content Publishing Workflow
+**Step 2: Review and Act on the Request**
 
-**Scenario:** A blog post requires manager review before publishing.
+1. In the platform’s top navigation bar, open the **Inbox**.
+2. Locate the new request under the **Pending for Approval** filter.
+3. Open the request to view its **subject**, **description**, and **message**.
+4. Review the provided details, then click **Approve** or **Decline**. You can optionally add comments before submitting your decision.
 
-This example shows how the Human node captures reviewer input and determines the next steps in a content publishing workflow.
+Once submitted:
 
-**Reviewer fields:**
+* The request is removed from the pending list.
+* Its status updates automatically in both the **Inbox** and **Workflow Monitor**.
+* If the request was part of a group, it is marked as completed for all group members. 
 
-You defined the following input fields:
+**Step 3: Verify Results in Workflow Monitor**
 
+1. Open **Workflow Monitor** from the left navigation menu.
+2. Locate your test workflow run.
+3. Click the run entry to open detailed execution logs.
+4. Confirm that:
+    * The Human node shows the correct approval status (`Approved`, `Declined`, or `Expired`).
+    * The flow continues along the expected path (for example, Success, Timeout, or Failure).
 
-* `Approval` (Approved / Rejected)
-* `Comments` (text field for reviewer notes)
+This confirms that the Human node and Inbox integration are configured correctly.
 
-**Sample response from reviewer:**
+**Step 4: Validate Reviewer Responses in Context Variables**
 
+When the reviewer responds, the Human node captures the input and makes it available for downstream nodes in the workflow.
 
-```
-{ 
-  "Approval": "Rejected",  
-  "Comments": "I am not ok with the quality of the blog"  
-}
-```
+You can access this data using context variables:
 
-**Using the response in the workflow:**
+* Full payload: 
+ `{{context.steps.&lt;NodeName>.output}} 
+`
+* Specific fields:  
+ `{{context.steps.&lt;NodeName>.output.Approval}} 
+` `{{context.steps.&lt;NodeName>.output.Comments}}`
 
-You can access these values in subsequent nodes using context variables:
+You can use these fields to build conditional logic — For example, in a Content Publishing workflow:
 
-* Full JSON: `{{context.steps.Review0001.output}}`
-* Specific fields:
-    * `{{context.steps.Review0001.output.Approval}}` → `Rejected`
-    * `{{context.steps.Review0001.output.Comments}}` → `I am not ok with the quality of the blog`
+* If `Approval = Approved` → proceed to publish content.
+* If `Approval = Declined` → route the workflow to revision or feedback steps.
 
-**Workflow behavior based on reviewer decision:**
-
-* If `Approval = Approved`, the workflow continues to the *Publish Content* node and the blog goes live.
-* If `Approval = Rejected`, the workflow routes back to the *Draft* node, assigning the editor to revise the content with the reviewer’s comments.
-
-Note: This routing occurs only when conditional logic is configured based on the reviewer’s response. Without such logic, the workflow does not automatically branch.
-
-### Notes
+## Notes
 
 * **Inside Loops** – If the Human node is inside a loop, the loop will not move to the next iteration until a human response is received. This ensures each cycle gets explicit approval/input.
 * **In Parallel Branches** – When used in parallel branches, the branch merge will wait for the Human node to complete. This prevents the workflow from merging prematurely.

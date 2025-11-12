@@ -18,7 +18,7 @@ The Start node provides two powerful automation options that can be used individ
 
 ### Event Triggers
 
-Event triggers automatically execute your workflow when specific events occur in connected applications. For example, when a customer's account balance falls below the quarterly minimum, the workflow can automatically send an email notification via integrated services such as Gmail.
+Event triggers automatically executes your workflow when specific events occur in connected applications. For example, when a customer's account balance falls below the quarterly minimum, the workflow can automatically send an email notification via integrated services such as Gmail.
 
 ### Scheduled Execution
 
@@ -28,42 +28,44 @@ The scheduler executes your workflow at predetermined times or intervals. For ex
 
 The Start node is the entry point for your workflow. Configure it to define inputs, outputs, triggers, and schedules.
 
-### Steps to configure the node
+Steps to configure the node:
 
-1. Navigate to **Workflows** in the top menu and select your workflow and click **Go to Flow**.
+1. Navigate to **Workflows** in the top menu, select your workflow, and click **Go to Flow**.
 
-2. The Start node appears by default. Click the node to configure the following:
+2. The Start node appears by default in the flow builder. Click the node to open its configuration panel.
 
-* **Input**: Define initial data for your workflow.
-* **Output**: Specify variables to capture workflow results.
-* **Add Trigger**: Configure event-based triggers from third-party apps. For details, see step 3.
-* **Add Schedule**: Set time-based automation for your workflow. For details, see step 4.
+3. Configure the following:
 
-3. Add event-based triggers:
+    * **Input**: Define initial data for your workflow. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md) about adding input variables.
+    * **Output**: Specify variables to capture workflow results. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md) about adding output variables.
+    * **Add Trigger**: Configure event-based triggers from third-party apps. For details, see [Add event-based triggers](../types-of-nodes/start-node.md#add-event-based-triggers).
+    * **Add Schedule**: Set time-based automation for your workflow. For details, see [Add event-based triggers](../types-of-nodes/start-node.md#configure-time-based-schedules).
 
-    **Prerequisites:** Integration connection, third-party apps added, and auth profile configured.
+### Add event-based triggers
 
-    **Steps to add**:
+**Prerequisites:**
 
-    a. Click Add Trigger and select your integration app.
-    b. Enable the trigger and select a connection.
-    c. Choose your trigger event and configure parameters.
-    d. Save and test the workflow.
+* Set up the required integration connection. For details, see [Add a connection](../../../settings/integrations/about-integrations.md#add-a-connection-to-set-up-integration).
+* Add the third-party app to your workspace. For details, see supported [Third-party application](../types-of-nodes/start-node.md#supported-third-party-services-for-triggers)
+* Create an authentication profile to enable and secure the integration. For details, see [Auth profile](../../../settings/security-and-control/authorization-profile.md#add-authorization-profile).
 
-    **Note**: Triggers must be active and enabled. Attachments from triggers are accessible via URL for 24 hours.
+**Steps to configure the node**:
 
-4. Configure time-based schedules:
+1. Click Add Trigger and select your integration app.
+2. Enable the trigger and select a connection. To create a new connection, see [Add a connection](../../../settings/integrations/about-integrations.md#add-a-connection-to-set-up-integration).
+3. Select your trigger event and configure parameters.
+4. Save and test the workflow.
 
-    a. Click the Schedule icon and enable the scheduler.
-    b. Set frequency (Daily, Weekly, Monthly, Once, Cron, or Custom).
-    c. Configure start date, time, and time zone.
-    d. Save and test the workflow.
+**Note**: Triggers must be active and enabled. Attachments from triggers are accessible via URL for 24 hours.
 
-### Test the Workflow
+### Configure time-based schedules
 
-Click Run Flow to test your configuration and verify the outputs.
+1. Click the Schedule icon and enable the scheduler.
+2. Set frequency (Daily, Weekly, Monthly, Once, Cron, or Custom). [Learn more](../types-of-nodes/start-node.md#schedule-frequencies).
+3. Configure start date, start time, and time zone.
+4. Save and test the workflow.
 
-### Supported Third-Party Services for Triggers
+## Supported Third-Party Services for Triggers
 
 | Service provider | No. of triggers |
 |------------------|-----------------|
@@ -100,7 +102,7 @@ Click Run Flow to test your configuration and verify the outputs.
 | Zendesk | 2 |
 
 
-### Schedule Frequencies
+## Schedule Frequencies
 
 <table>
   <tr>
@@ -149,6 +151,16 @@ Click Run Flow to test your configuration and verify the outputs.
 
 ## Troubleshooting
 
-**Undefined output variables**: A list of unresolved outputs is display.
+**Undefined output variables**: If any output variable is not defined, a list of unresolved outputs appears.
 
-**Inactive triggers**: Re-deploy the workflow or retest the auth profile in Settings → Security & Control.
+* Open the Start node and define all required output variables.
+* Save and re-run the workflow.
+
+**Inactive triggers**: A warning appears if a trigger is inactive or has an authentication issue.
+
+* Re-deploy the workflow to refresh connections.
+* Retest the auth profile in **Settings → Security & Control → Authorization profiles**.
+* Ensure the trigger is active before running the workflow.
+
+
+

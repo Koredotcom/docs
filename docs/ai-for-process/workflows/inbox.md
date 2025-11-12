@@ -1,13 +1,13 @@
 # Inbox – Review Human-in-the-Loop Workflow Requests
 
-The Inbox is a dedicated tab in the platform for managing Human-in-the-Loop (HITL) approval requests. It provides a centralized, easy-to-use interface where users can view, process, and track all requests that require human decisions during workflow execution.
+The Inbox is a dedicated tab in the platform for managing Human-in-the-Loop (HITL) approval requests. It provides a centralized, easy-to-use interface that lets users view, process, and track all requests that require human decision-making during workflow execution.
 
-When a workflow reaches a Human node, an approval request automatically appears in the configured reviewers’ Inbox — either in their Personal tab or shared Group tab — depending on how the node is set up.
+When a workflow reaches a Human node, an approval request automatically appears in the configured reviewers’ Inbox — either in their Personal tab or in the shared Group tab — depending on how the node is configured.
 
 **Key Highlights**
 
 * Centralized review experience to manage all pending and processed approval requests in one place.
-* Real-time status updates that reflect reviewer actions immediately.
+* Real-time status updates that reflect reviewer actions in real time.
 * Support for both individual and shared (group-based) review workflows.
 * Advanced filtering and search options to quickly locate requests by requester, status, or keyword.
 * Integrated workflow linkage with direct visibility into progress in Workflow Monitor. 
@@ -15,22 +15,21 @@ When a workflow reaches a Human node, an approval request automatically appears 
 ## Accessing the Inbox
 
 1. Log in to your AI for Process account.
-2. In the top navigation bar, select the **Inbox** tab.
-3. The Inbox opens with two sub-tabs:
+2. In the top navigation bar, select **Inbox**.
+3. The Inbox shows approval requests on the following tabs:
 
-* **Personal** – Displays approval requests assigned directly to you.
+* **Personal** – Displays approval requests assigned to you.
 * **Group** – Displays requests assigned to a team or group. You can assign a request to yourself to take ownership.
 
-4. You can filter requests by status:
-    * **Pending for Approval (default)**
-    * **Approved**
-    * **Declined**
-    * **Expired**
+4. You can filter requests by Status: **Pending for Approval (default)**, **Approved**, **Declined**, and **Expired**.
+
+<img src="../workflows/workflow-builder/types-of-nodes/images/inbox.png" alt="Inbox" title="Inbox" style="border: 1px solid gray; zoom:60%;">
+
 
 ## Respond to Requests
 
 1. On the **Inbox** tab, open the **Personal** tab.
-2. Select a request to open its detailed view. You’ll see:
+2. Select a request to open its detailed view. You see:
     1. **Subject** – Title or summary of the approval request.
     2. **Description** – Additional details or context about the workflow step.
     3. **Message** – Instructions or notes provided by the workflow creator.
