@@ -130,7 +130,7 @@ Each User Criteria is retrieved as a Permission Entity. The permission entity ID
 
 The alphanumeric field “25431493ff4221009b20ffffffffffe0” in the indexed content refers to the Permission Entity corresponding to the user criteria for the article.
 
-If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the [Permission Entity API](https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/) to associate them with the permission entity.
+If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the [Permission Entity API](../../../apis/searchai/permission-entity-apis.md) to associate them with the permission entity.
 
 ### Incidents
 

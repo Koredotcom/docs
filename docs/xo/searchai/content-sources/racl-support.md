@@ -111,7 +111,7 @@ Alternatively,
 
 When a user sends a query, SearchAI uses the user identity information and finds answers from the accessible content only. 
 
-The user identity is matched against the racl fields in the chunks. In case, the user belongs to a group and the group is a permission entity for the content, SearchAI needs additional information about the association of the user with the corresponding permission entity. Refer to the [Handling Group Identities](https://docs.kore.ai/searchassist/manage-content-sources/racl-overview/#Resolving_user_identity) section below.  
+The user identity is matched against the racl fields in the chunks. In case, the user belongs to a group and the group is a permission entity for the content, SearchAI needs additional information about the association of the user with the corresponding permission entity. Refer to the [Handling Group Identities](#step-3-resolving-user-identity) section below.  
 
 * **Passing User Identities in Search APIs**
 

@@ -49,7 +49,7 @@ The Text Extraction Model combines natural language processing (NLP) and machine
 
 Layout-aware chunk extraction is a strategy used to extract data by considering the content's layout and structure. This method allows for the customization of data extraction based on the specific layout or format of the content, which can improve the precision of the extracted information. Configuring the strategy according to specific layout requirements makes it possible to extract chunks of data more effectively, aligning the strategy to the document characteristics. This provides flexibility and granular control over the extraction process, ultimately leading to more accurate and relevant data retrieval for answer generation or other purposes. 
 
-The layout-aware extraction method identifies objects in documents by combining OCR technology, layout detection models, and layout awareness rules. This approach improves SearchAssist's ability to comprehend tables, graphs, and charts in documents and generate answers using this information.
+The layout-aware extraction method identifies objects in documents by combining OCR technology, layout detection models, and layout awareness rules. This approach improves Search AI's ability to comprehend tables, graphs, and charts in documents and generate answers using this information.
 
 **Configuration**: Choose the appropriate **template** for content extraction. Use examples to customize the content format according to the template for optimum extraction results. 
 
