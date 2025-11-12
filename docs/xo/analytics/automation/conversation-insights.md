@@ -245,17 +245,17 @@ The following steps explain how to add an existing intent to an utterance or mul
 1. To map an existing Dialog Task or FAQ, click the **Train** drop-down. (See step 2 under Train the Utterances).
 2. Click the **Dialog Task** option to choose the matching intent for the selected utterance.
 
-    <img src="../images/add-exisitng-intent.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/add-exisitng-intent.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
 
 
 3. Click the button **Add Utterances** to add the intent for the utterances. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**. 
 
-    <img src="../images/add-exisitng-intent-1.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/add-exisitng-intent-1.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
 
 
 4. Click the **FAQ** option from the **Train** drop-down to add the matching FAQ for the selected utterance. 
 
-    <img src="../images/add-exisitng-intent-2.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/add-exisitng-intent-2.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
 
 5. Upon adding the FAQ successfully, a message is displayed as shown below. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**.
  
@@ -343,7 +343,7 @@ True Negatives (TN) refer to instances where the AI Agents correctly identifies 
 In the following example, the user utterance “Extremely Likely” did not match with any defined intent and is categorized as Unidentified intent.
 
 
-<img src="../images/true-negative.png" alt="True Negatve" title="True Negatve" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/true-negative.png" alt="True Negative" title="True Negative" style="border: 1px solid gray; zoom:80%;">
 
 
 
