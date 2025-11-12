@@ -57,7 +57,7 @@ JSON mode supports text generation only.
 * Provide test values to validate the prompt structure.
 * Configure the following output keys:
     * **Text Response Path** – Identifies the location of the AI response in the JSON payload.
-    * **Virtual Assistant Response** – Specifies the response key to display to the end user.
+    * **AI Agent Response** – Specifies the response key to display to the end user.
     * **Exit Scenarios** – Indicates when the conversation should end.
     * **Collected Entities** – Captures specific values from the AI response.
 
@@ -134,141 +134,9 @@ For a more practical approach, the differences through scenarios can make the co
   Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. 
 
 
-### Streaming vs. Regular Prompts
+### Regular vs. Streaming Prompts
 
-####  Structural Differences
-
-
-<table>
-  <tr>
-   <td>    Feature   </td>
-   <td>    Regular Prompts   </td>
-   <td>    Streaming Prompts   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Response Delivery</strong>
-   </td>
-   <td>
-    Full response delivered at once
-   </td>
-   <td>
-    Tokens delivered incrementally as they're generated
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Parameter Requirements</strong>
-   </td>
-   <td>
-    Standard parameters
-   </td>
-   <td>
-    Requires <code>"stream": true</code>
-<p>
-
-    parameter
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Exit Scenarios</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Not supported
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Virtual Assistant Response</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Not supported
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Collected Entities</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Must be included in streamed format
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Tool Call Requests</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Not supported for Agent Node
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Post-Processing</strong>
-   </td>
-   <td>
-    Available
-   </td>
-   <td>
-    Not available
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Guardrails</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Not supported
-   </td>
-  </tr>
-</table>
-
-
-
-#### Implementation Differences
-
-* Format Requirements:
-  * Both require responses to include conv_status , AI Agent response, and collected entities
-  * Streaming prompts must structure this content for incremental delivery
-* Error Handling:
-  * Regular prompts can be fully validated before delivery
-  * Streaming prompts require careful prompt engineering as corrections cannot be made mid-stream
-* Analytics:
-  * Streaming responses include additional metrics like TTFT (Time to First Token)
-  * Response Duration for streaming measures time from first to last token
-
-#### When to Choose Streaming vs. Regular Prompts
-
-Use Streaming When:
-
-* Real-time interaction is critical.
-* Responses are expected to be lengthy.
-* Voice-based applications would benefit from incremental speech.
-* User experience would benefit from immediate feedback.
-
-Use Regular Prompts When:
-
-* Post-processing is needed.
-* Content moderation or guardrails are required.
-* Tool calls are necessary for the Agent Node
-* Interception of responses (with BotKit) is needed.
-* Complete response validation must occur before delivery.
-* Implementing the appropriate prompt type based on your specific use case and requirements will ensure optimal performance and user experience.
+To learn about the structural and implementation differences, as well as when to use Regular or Streaming Prompts, see [Regular vs. Streaming Prompts](../../generative-ai-tools/prompts-library.md#regular-vs-streaming-prompts).
 
 
 
