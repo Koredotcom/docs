@@ -69,7 +69,7 @@ Additionally, you can do the following:
 
 **Integrations**
 
-Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../workflows/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the workflows automation flow. [Learn more](../settings/integrations/about-integrations.md){:target="_blank"}.
+Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../workflows/workflow-builder/types-of-nodes/integration-node.md){:target="_blank"} in the workflows automation flow. [Learn more](../settings/integrations/about-integrations.md){:target="_blank"}.
 
 **Manage Custom Scripts**
 
