@@ -149,7 +149,7 @@ Once you configure a Human node in a workflow, you can test how approval request
 2. The **Debug Panel** opens automatically and shows each node’s runtime behavior.
 3. When the workflow reaches a Human node, an approval request is automatically generated and sent to the configured reviewers’ Inbox:
     * **Personal tab** – For requests assigned to yourself.
-    * **Group tab** – For requests assigned to a set of users or the whole workspace.      If the request is sent to a group, users must first assign it to themselves from the **Group** tab before taking action to approve or reject.
+    * **Group tab** – For requests assigned to a set of users or the whole workspace. If the request is sent to a group, users must first assign it to themselves from the **Group** tab before taking action to approve or reject.
 
 **Step 2: Review and Act on the Request**
 
@@ -170,7 +170,7 @@ Once submitted:
 2. Locate your test workflow run.
 3. Click the run entry to open detailed execution logs.
 4. Confirm that:
-    * The Human node shows the correct approval status (`Approved`, `Declined`, or `Expired`).
+    * The Human node shows the correct approval status (Approved, Declined, or Expired).
     * The flow continues along the expected path (for example, Success, Timeout, or Failure).
 
 This confirms that the Human node and Inbox integration are configured correctly.
@@ -181,18 +181,8 @@ When the reviewer responds, the Human node captures the input and makes it avail
 
 You can access this data using context variables:
 
-* Full payload: 
- `{{context.steps.&lt;NodeName>.output}} 
+ `{{context.steps.<NodeName>.output}}`
 `
-* Specific fields:  
- `{{context.steps.&lt;NodeName>.output.Approval}} 
-` `{{context.steps.&lt;NodeName>.output.Comments}}`
-
-You can use these fields to build conditional logic — For example, in a Content Publishing workflow:
-
-* If `Approval = Approved` → proceed to publish content.
-* If `Approval = Declined` → route the workflow to revision or feedback steps.
-
 ## Notes
 
 * **Inside Loops** – If the Human node is inside a loop, the loop will not move to the next iteration until a human response is received. This ensures each cycle gets explicit approval/input.

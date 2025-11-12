@@ -16,14 +16,14 @@ When a workflow reaches a Human node, an approval request automatically appears 
 
 1. Log in to your AI for Process account.
 2. In the top navigation bar, select **Inbox**.
-3. The Inbox shows approval requests on the following tabs:
+3. The Inbox shows approval requests in the following tabs:
 
-* **Personal** – Displays approval requests assigned to you.
-* **Group** – Displays requests assigned to a team or group. You can assign a request to yourself to take ownership.
+    * **Personal** – Displays approval requests assigned to you.
+    * **Group** – Displays requests assigned to a team or group. You can assign a request to yourself to take ownership.
 
-4. You can filter requests by Status: **Pending for Approval (default)**, **Approved**, **Declined**, and **Expired**.
+4. You can filter requests by Status: **Pending for Approval** (default), **Approved**, **Declined**, and **Expired**.
 
-<img src="../workflows/workflow-builder/types-of-nodes/images/inbox.png" alt="Inbox" title="Inbox" style="border: 1px solid gray; zoom:60%;">
+<img src="../workflow-builder/types-of-nodes/images/inbox.png" alt="Inbox" title="Inbox" style="border: 1px solid gray; zoom:60%;">
 
 
 ## Respond to Requests
@@ -48,13 +48,13 @@ You can review previously processed requests to verify the outcome of your past 
 
 ## Handle Group Requests
 
-Requests assigned to a group appear in the **Group** tab. Any member of the group can view these requests, but only one reviewer can act on each item.
+Requests assigned to a group appear in the Group tab. Any member of the group can view these requests, but only one reviewer can act on each item.
 
 To respond to a group request:
 
 1. Open the **Group** tab and locate the pending request.
-2. Click **Claim Request** to assign it to yourself. Once claimed, the request moves to your **Personal** tab.
+2. Assign the request to yourself. Once claimed, the request moves to your **Personal** tab.
 3. Open the request from your Personal tab and review its details.
 4. Click **Approve** or **Decline**, and optionally add comments to explain your decision.
 
-After you take action, the request is removed from the **Unassigned** list for all group members. Its status updates automatically in both the **Inbox** and **Workflow Monitor**, and it can be viewed later under the appropriate status filter (such as *Expired*) in either the **Group** or **Personal** tab, depending on your configuration.
+After you take action, the request is removed from the Unassigned list for all group members. Its status updates automatically in both the **Inbox** and **Workflow Monitor**, and it can be viewed later under the appropriate status filter (such as *Expired*) in either the **Group** or **Personal** tab, depending on your configuration.

@@ -36,18 +36,18 @@ Steps to configure the node:
 
 3. Configure the following:
 
-    * **Input**: Define initial data for your workflow. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md) about adding input variables.
-    * **Output**: Specify variables to capture workflow results. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md) about adding output variables.
-    * **Add Trigger**: Configure event-based triggers from third-party apps. For details, see [Add event-based triggers](../types-of-nodes/start-node.md#add-event-based-triggers).
-    * **Add Schedule**: Set time-based automation for your workflow. For details, see [Add event-based triggers](../types-of-nodes/start-node.md#configure-time-based-schedules).
+    * **Input**: Define initial data for your workflow. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables) about adding input variables.
+    * **Output**: Specify variables to capture workflow results. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-output-variables) about adding output variables.
+    * **Trigger**: Configure event-based triggers from third-party apps. For details, see [Add event-based triggers](../types-of-nodes/start-node.md#add-event-based-triggers).
+    * **Schedule**: Set time-based automation for your workflow. For details, see [Configure time-based schedules](../types-of-nodes/start-node.md#configure-time-based-schedules).
 
 ### Add event-based triggers
 
 **Prerequisites:**
 
 * Set up the required integration connection. For details, see [Add a connection](../../../settings/integrations/about-integrations.md#add-a-connection-to-set-up-integration).
-* Add the third-party app to your workspace. For details, see supported [Third-party application](../types-of-nodes/start-node.md#supported-third-party-services-for-triggers)
-* Create an authentication profile to enable and secure the integration. For details, see [Auth profile](../../../settings/security-and-control/authorization-profile.md#add-authorization-profile).
+* Add the third-party app to your workspace. For details, see supported [Third-party applications](../types-of-nodes/start-node.md#supported-third-party-services-for-triggers).
+* Create an authentication profile to enable and secure the integration. For details, see [Add Authorization profile](../../../settings/security-and-control/authorization-profile.md#add-authorization-profile).
 
 **Steps to configure the node**:
 
@@ -56,7 +56,11 @@ Steps to configure the node:
 3. Select your trigger event and configure parameters.
 4. Save and test the workflow.
 
-**Note**: Triggers must be active and enabled. Attachments from triggers are accessible via URL for 24 hours.
+<img src="../images/add_trigger.png" alt="triggers" title="triggers" style="border: 1px solid gray; zoom:60%;">
+
+!!! note
+
+    Triggers must be active and enabled. Attachments from triggers are accessible via URL for 24 hours.
 
 ### Configure time-based schedules
 
@@ -64,6 +68,8 @@ Steps to configure the node:
 2. Set frequency (Daily, Weekly, Monthly, Once, Cron, or Custom). [Learn more](../types-of-nodes/start-node.md#schedule-frequencies).
 3. Configure start date, start time, and time zone.
 4. Save and test the workflow.
+
+<img src="../images/scheduler.png" alt="schedule" title="schedule" style="border: 1px solid gray; zoom:60%;">
 
 ## Supported Third-Party Services for Triggers
 
@@ -151,16 +157,16 @@ Steps to configure the node:
 
 ## Troubleshooting
 
-**Undefined output variables**: If any output variable is not defined, a list of unresolved outputs appears.
+1. **Undefined output variables**: If any output variable is not defined, a list of unresolved outputs appears.
 
-* Open the Start node and define all required output variables.
-* Save and re-run the workflow.
+    * Open the Start node and define all required output variables.
+    * Save and re-run the workflow.
 
-**Inactive triggers**: A warning appears if a trigger is inactive or has an authentication issue.
+2. **Inactive triggers**: A warning appears if a trigger is inactive or has an authentication issue.
 
-* Re-deploy the workflow to refresh connections.
-* Retest the auth profile in **Settings → Security & Control → Authorization profiles**.
-* Ensure the trigger is active before running the workflow.
+    * Re-deploy the workflow to refresh connections.
+    * Retest the auth profile in **Settings → Security & Control → Authorization profiles**.
+    * Ensure the trigger is active before running the workflow.
 
 
 
