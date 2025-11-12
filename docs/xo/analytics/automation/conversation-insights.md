@@ -225,7 +225,8 @@ You can also add Intent synonyms, patterns, and traits as required. The followin
 
 A message, **Utterance Uploaded Successfully** is displayed.
 
-    !!! note
+!!! note
+    
     You can also click Re-Run Utterance if you want to train the utterance again.
 
 
