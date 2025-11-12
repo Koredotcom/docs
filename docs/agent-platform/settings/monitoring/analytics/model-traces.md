@@ -135,7 +135,7 @@ The UI summarizes key metrics for the selected period, offering actionable insig
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Hosting Credits apply only to Agent Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
+<p>Hosting Credits apply only to (In)Agent Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
 
 <img src="../images/hosting-credits.png" alt="hosting credits" title="hosting credits" style="border: 1px solid gray; zoom:75%;">
 

@@ -1,6 +1,6 @@
 # Share Contextual Metadata from (In)Agent Platform to (In)Business Customer Experience
 
-(In)Agent Platform offers seamless context sharing with AI for service using **event-driven handoffs**. This can be useful to pass the control back to (In)Business Customer Experience for agent transfer or workflow execution without losing any valuable contextual data or conversation history. 
+(In)Agent Platform offers seamless context sharing with (In)Business Customer Experience using **event-driven handoffs**. This can be useful to pass the control back to (In)Business Customer Experience for agent transfer or workflow execution without losing any valuable contextual data or conversation history. 
 
 ## How It Works
 

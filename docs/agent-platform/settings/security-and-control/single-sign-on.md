@@ -245,7 +245,7 @@ Okta's scalable and customizable platform reduces IT overhead, improves producti
 
 To configure SSO using SAML and Okta, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to (In)Agent Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **SAML** for **Sign-on protocol** and **Okta** for **SSO provider**.
 <img src="../images/saml-okta-selection.png" alt="saml-okta-selection" title="saml-okta-selection" style="border: 1px solid gray; zoom:75%;">
@@ -263,7 +263,7 @@ To configure SSO using SAML and Okta, follow the steps below:
 <img src="../images/create-a-new-app-integration.png" alt="create a new app integration" title="create a new app integration" style="border: 1px solid gray; zoom:75%;"></li>
 <li>On the <b>Create SAML Integration</b> page, provide the <b>App Name</b> under <b>General Settings</b>, and click <b>Next</b>.
 <img src="../images/create-saml-integration.png" alt="create saml integration" title="create saml integration" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Copy the following values from Agent Platform’s SSO setup page and paste them into Okta under <b>Configure SAML</b>:</li>
+<li>Copy the following values from (In)Agent Platform’s SSO setup page and paste them into Okta under <b>Configure SAML</b>:</li>
 <ul><li><b>ACS url for SP initiated SAML flow</b>: Paste into <i>Single sign-on URL</i>.</li>
 <li><b>ACS url for IDP initiated SAML flow</b>: Paste into <i>Audience URI (SP Entity ID)</i>.</li></ul></ol>
 
@@ -301,7 +301,7 @@ To configure SSO using SAML and Okta, follow the steps below:
 <img src="../images/download-certificate-saml.png" alt="download certificate" title="download certificate" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Once the certificate is downloaded, open it in Notepad and copy the data between the <b>BEGIN CERTIFICATE</b> header and <b>END CERTIFICATE</b> footer.
 <img src="../images/okta-certificate-notepad.png" alt="okta certificate" title="okta certificate" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Paste the value into the <b>Certificate</b> field on Agent Platform’s SSO setup page.
+<li>Paste the value into the <b>Certificate</b> field on (In)Agent Platform’s SSO setup page.
 <img src="../images/paste-okta-certificate.png" alt="paste okta certificate" title="paste okta certificate" style="border: 1px solid gray; zoom:75%;"></li>
 
 To add a new certificate, click <b>+ Add new</b>.</ol>
@@ -320,7 +320,7 @@ OneLogin's Single Sign-On (SSO) solution simplifies user access by enabling a si
 
 To configure SSO using SAML and Onelogin, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to (In)Agent Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **SAML** for **Sign-on protocol** and **Onelogin** for **SSO provider**.
 4. Login into the [Onelogin developer portal](https://app.onelogin.com/login){:target="_blank"}.
@@ -332,14 +332,14 @@ To configure SSO using SAML and Onelogin, follow the steps below:
 
 <ol start="6"><li>Search for your (In)Agent Platform app and click <b>Enter</b>.</li>
 <li>Click your app to view the <b>Add App</b> page. Optionally, change the display name or the icons displayed to your users in the <i>OneLogin</i> portal, and then click <b>SAVE</b>. The (In)Agent Platform app has been added to your company apps for <i>OneLogin</i> and is listed on the app page.</li>
-<li>Copy the following values from <b>SSO</b> > <b>Enable SAML2.0</b> on Onelogin and paste them into the relevant fields on Agent Platform’s SSO setup page:</li>
+<li>Copy the following values from <b>SSO</b> > <b>Enable SAML2.0</b> on Onelogin and paste them into the relevant fields on (In)Agent Platform’s SSO setup page:</li>
     <ul><li><b>OneLogin SAML 2.0 Endpoint (HTTP)</b>: Paste into <b>SAML 2.0 endpoint</b>.</li>
     <li><b>OneLogin Issuer URL</b>: Paste into <b>Issuer URL</b>.</li>
     <img src="../images/paste-onelogin-issuer-url.png" alt="paste one login issuer url" title="paste one login issuer url" style="border: 1px solid gray; zoom:75%;"></ul>
 
 <li>In the <b>OneLogin X.509 Certificate</b> field, click <b>View Details</b>. The <b>Standard Strength Certificate (2048-bit)</b> page is displayed.
 <img src="../images/onelogin-view-details.png" alt="one login view details" title="one login view details" style="border: 1px solid gray; zoom:75%;"></li>
-<li>In the <b>X.509 Certificate</b> section, copy the certificate data and then paste it into the <b>X.509 Certificate</b> field on Agent Platform’s SSO setup page.</li>
+<li>In the <b>X.509 Certificate</b> section, copy the certificate data and then paste it into the <b>X.509 Certificate</b> field on (In)Agent Platform’s SSO setup page.</li>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -352,7 +352,7 @@ To add a new certificate, click <b>+Add new</b>.
 <p class="admonition-title">Note</p>
 <p>When multiple certificates are provided, the system uses the latest one. If the latest certificate is invalid, it automatically switches to other available certificates.</p></div>
 
-<ol start="11"><li>Copy the following field values from Agent Platform’s SSO setup page into the relevant fields in Onelogin:</li>
+<ol start="11"><li>Copy the following field values from (In)Agent Platform’s SSO setup page into the relevant fields in Onelogin:</li>
 
 <ul><li>ACS URL for SP Initiated SAML Flow.</li>
 <li>ACS URL for IDP Initiated SAML Flow.</li>
@@ -368,13 +368,13 @@ Once SSO for Onelogin is complete, the system redirects to the **Onelogin Sign i
 
 To configure and enable SSO using SAML for other IDPs of your choice, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to (In)Agent Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **SAML** for **Sign-on protocol** and **Other** for **SSO provider**.
 <img src="../images/other-sso-provider.png" alt="other sso provider" title="other sso provider" style="border: 1px solid gray; zoom:75%;">
 
 4. Fetch the necessary SSO configuration parameters listed in [this](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} table from your app's **Settings** page within the IDP developer portal. 
-5. Paste them into the relevant fields on Agent Platform’s SSO setup page.
+5. Paste them into the relevant fields on (In)Agent Platform’s SSO setup page.
 
 To add a new certificate, click **+Add new**.
 <img src="../images/paste-parameters-other-configuration.png" alt="paste parameters for other provider" title="paste parameters for other provider" style="border: 1px solid gray; zoom:75%;">
@@ -407,15 +407,15 @@ Azure AD Federation with WS-Federation offers seamless SSO integration with Micr
 
 To configure SSO using WS-Federation and Windows Azure, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to (In)Agent Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **WS-Federation** for **Sign-on protocol** and **Windows Azure** to **Configure SSO for WS-Federation**.
 4. Open **Server Manager** on the computer running AD FS, then choose **AD FS** > **Tools** > **AD FS Management**.
 5. Copy **IdP URL** from your IdP metadata (FederationMetadata.xml). You can find your ADFS Federation Metadata file URL on the AD FS server through **ADFS Management** in **ADFS** > **Service** > **Endpoints** > **Metadata**. It should look like this:
 <img src="../images/copy-idp-url.png" alt="copy idp url" title="copy idp url"  style="border: 1px solid gray; zoom:75%;">
 
-6. Paste this value into the **Azure AD sign-on end point url** field on Agent Platform’s SSO setup page.
-7. Copy and paste [this](https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml){:target="_blank"} URL link into the **Azure AD federation metadata document** field on Agent Platform’s SSO setup page.
+6. Paste this value into the **Azure AD sign-on end point url** field on (In)Agent Platform’s SSO setup page.
+7. Copy and paste [this](https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml){:target="_blank"} URL link into the **Azure AD federation metadata document** field on (In)Agent Platform’s SSO setup page.
 <img src="../images/paste-azure-parameters.png" alt="paste azure parameters" title="paste azure parameters"  style="border: 1px solid gray; zoom:75%;">
 
 8. Click **Save**.
@@ -424,11 +424,11 @@ To configure SSO using WS-Federation and Windows Azure, follow the steps below:
 
 To configure and enable SSO using WS-Federation and other IDPs of your choice, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to (In)Agent Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **WS-Federation** for **Sign-on protocol** and **Other** to **Configure SSO for WS-Federation**.
-4. Copy and paste the SSO endpoint URL from the IDP’s portal into **AD sign-on end point url** on Agent Platform’s SSO setup page.
-5. Then, copy and paste the URL for the WS-Federation metadata document from the IDP’s portal into the **AD federation metadata document url** on Agent Platform’s SSO setup page.
+4. Copy and paste the SSO endpoint URL from the IDP’s portal into **AD sign-on end point url** on (In)Agent Platform’s SSO setup page.
+5. Then, copy and paste the URL for the WS-Federation metadata document from the IDP’s portal into the **AD federation metadata document url** on (In)Agent Platform’s SSO setup page.
 <img src="../images/paste-ws-federation-data.png" alt="paste ws federation data" title="paste ws federation data"  style="border: 1px solid gray; zoom:75%;">
 
 6. Click **Save**.
@@ -452,7 +452,7 @@ When a user logs into a system that acts as an IDP and tries to access his (In)A
 
 To configure SSO using OpenId Connect and Google, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to (In)Agent Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **OpenId Connect** for **Sign-on protocol** and **Sign in with Google** to **Configure SSO for OpenId connect**.
 <img src="../images/sign-in-with-google.png" alt="sign in with google" title="sign in with google"  style="border: 1px solid gray; zoom:75%;">

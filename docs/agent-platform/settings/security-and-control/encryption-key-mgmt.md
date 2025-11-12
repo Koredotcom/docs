@@ -38,7 +38,7 @@ When configuring Bring Your Own Key (BYOK), you must provide specific details ba
 
 1. Navigate to Settings -> Key Management.
 2. Click Configure BYOK.
-3. Select the Cloud provider and provide the configuration details. Currently, the Agent platform supports 
+3. Select the Cloud provider and provide the configuration details. Currently, the (In)Agent Platform supports 
     1. Azure Key Management System
     2. AWS
 

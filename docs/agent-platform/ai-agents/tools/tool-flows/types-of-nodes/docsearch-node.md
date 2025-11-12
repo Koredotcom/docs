@@ -41,7 +41,7 @@ In this document, you will learn how to add and configure DocSearch Nodes with S
 Configuring the DocSearch Node consists of the following steps:
 
 1. [Set up a Search AI application and the information source for (In)Agent Platform integration](../types-of-nodes/docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
-2. [Link the Search AI application in (In)Agent Platform](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
+2. [Link the Search AI application in (In)Agent Platform](#step-2-link-the-search-ai-app-in-inagent-platform){:target="_blank"}.
 3. [Add and configure the DocSearch node](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"}.
 4. [Test the Flow](../types-of-nodes/docsearch-node.md/#step-4-test-the-flow) you have built.
 
@@ -124,7 +124,7 @@ After fetching the Search AI application credentials, configuring the source, an
    <p class="admonition-title">Note</p>
    <p>Use search to look up and select the required connection.</p></div>
 
-  To set up a new connection, click **+ New Connection**. This will redirect you to the (In)Agent Platform Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"} to complete the integration.
+  To set up a new connection, click **+ New Connection**. This will redirect you to the (In)Agent Platform Integrations page. Follow the steps mentioned [here](#step-2-link-the-search-ai-app-in-inagent-platform){:target="_blank"} to complete the integration.
 
  * (Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
 <img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;">

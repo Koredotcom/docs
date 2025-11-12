@@ -14,7 +14,7 @@ This document provides step-by-step instructions for configuring and invoking a 
 
 * Both (In)Business Customer Experience and (In)Agent Platform applications must be in the same workspace.
 * The relevant channel flows (for example, chat, voice) must be set up in (In)Business Customer Experience.
-* [AI for service and (In)Agent Platform must be integrated via the Automation Node](../../ai-for-service.md#integrate-an-agentic-app-with-ai-for-service-app).
+* (In)Business Customer Experience and (In)Agent Platform must be integrated via the Automation Node.
 
 
 ## Setting up Live Agent Transfer in the (In)Agent Platform Application
