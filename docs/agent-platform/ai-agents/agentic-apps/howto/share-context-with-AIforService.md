@@ -29,9 +29,9 @@ Contextual metadata is transferred from the (In)Agent Platform to (In)Business C
         ```
 [Learn more](../settings/events.md#agent-handoff-event).
 
-### Step 2: Handle the metadata in (In)Business Customer Experience Experience Flow
+### Step 2: Handle the metadata in (In)Business Customer Experience
 
-The parameters passed from (In)Agent Platform become available in the (In)Business Customer Experience Experience Flow under the Automation node context.
+The parameters passed from (In)Agent Platform become available in the Platform's Experience Flow under the Automation node context.
 
 Use the following format to access the metadata passed from the (In)Agent Platform. 
 
