@@ -310,7 +310,6 @@ Follow these steps to create a URL:
 
 1. To configure the URL, click  **+ Create URL**.
 2. The Open URL pop-up is displayed.  
-<img src="../images/agent(22).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 3. Enter the Static URL. For example, https://team.atlassian.net/browse/.
 
     !!! note
@@ -320,8 +319,8 @@ Follow these steps to create a URL:
 4. The Variable mapper pop-up is displayed. Select the dynamic part of the URL i,e **Key,** and close the pop-up.  
 <img src="../images/agent(6).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 
-5. Click **Done**. The Open option and the configured link are displayed.  
-6.  Click **Continue**.
+1. Click **Done**. The Open option and the configured link are displayed.  
+2.  Click **Continue**.
 
 
 
