@@ -12,12 +12,12 @@ Before creating a RAG Agent, ensure that your chosen search solution is configur
 
 **For Search AI applications**, follow these steps to prepare:
 
-* [Create a search AI](https://docs.kore.ai/searchassist/getting-started/build-and-publish-your-first-searchassist-app/) application.
-* [Configure content sources](https://docs.kore.ai/searchassist/manage-content-sources/content-overview/) in the application.
+* Create a search AI application.
+* Configure content sources in the application.
 * Fine-tune the application search settings to generate appropriate responses.
-* [Enable Answers](https://docs.kore.ai/searchassist/concepts/personalizing-results/about-answers/).
+* Enable Answers.
 * Train the application.
-* Enable the [Client Channel for communication](https://docs.kore.ai/searchassist/administration/web-sdk-integration/#Step_1_Configure_Channel_and_credentials). Ensure that the appropriate API scope is enabled for the application.
+* Enable the Client Channel for communication. Ensure that the appropriate API scope is enabled for the application.
 * The Search AI application is ready for communication.
 
 **For [Amazon Q](../integration/amazon-q.md) integration**, ensure you have:

@@ -30,9 +30,9 @@ You need to associate four API Scope in your AI for Service platforms App's chan
 
 Under the **AI search** agents, go to **Enterprise Knowledge**. Then, use the **Go to Search AI** option to access **the associated Search AI** app.
 
-* [Configure the content sources](https://docs.kore.ai/searchassist/manage-content-sources/content-overview/) on the Search AI application.
+* Configure the content sources on the Search AI application.
 * Fine-tune configurations to get appropriate responses.
-* [Enable Answers](https://docs.kore.ai/searchassist/concepts/personalizing-results/about-answers/).
+* Enable Answers.
 * Train the application.
 
 On the following page in the Admin Console, you can view an overview of the content sources connected to the Enterprise Knowledge, such as uploaded files, indexed webpages, third-party content sources, etc. Each source's associated content or connection status is also indicated. For the third-party connectors, it also indicates the last sync time.
