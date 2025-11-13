@@ -1,6 +1,6 @@
-# Amazon Q Integration with AI for Work
+# Amazon Q Integration with (In)Business Productivity
 
-In addition to Search and Data AI solution, AI for Work provides the ability to connect with external search indexes such as Amazon Q. This integration allows customers to leverage connectors configured in their Amazon Q Index application on top of the ones available.
+In addition to Search and Data AI solution, (In)Business Productivity provides the ability to connect with external search indexes such as Amazon Q. This integration allows customers to leverage connectors configured in their Amazon Q Index application on top of the ones available.
 
 ### Key Benefits 
 
@@ -17,9 +17,9 @@ Search and Data AI Solution comes with 70+ connectors  and the flexibility to bu
 
 Amazon Q, on the other hand, provides [40+ connectors](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connectors-list.html) with a strong focus on simplicity and accuracy. It delivers a managed, standardized indexing and retrieval experience designed to meet enterprise-grade accuracy benchmarks without requiring extensive customization.
 
-## Augmenting Search in AI for Work with Amazon Q Index
+## Augmenting Search in (In)Business Productivity with Amazon Q Index
 
-Amazon Q can be integrated with AI for Work through two configuration approaches, each suited to different needs and data architectures.
+Amazon Q can be integrated with (In)Business Productivity through two configuration approaches, each suited to different needs and data architectures.
 
 When Amazon Q Index is the primary knowledge source, it can be set as the default search destination in [Enterprise Knowledge](../custom-agents/enterprise-knowledge.md) to deliver a consistent search experience across the organization. This involves creating an Amazon Q Index application in AWS with the necessary data sources, enabling Inception as the data accessor, and providing these details when configuring an active Amazon Q Source.
 
@@ -27,7 +27,7 @@ Alternatively, Amazon Q can be leveraged as a specialized search tool alongside 
 
 ### Enterprise Knowledge
 
-When you configure it as a primary enterprise knowledge source, Amazon Q Index serves as the default fallback for queries that don't match specific agents. This configuration is recommended when Amazon Q Index is your main search index in AI for Work. For more information, refer [Enterprise Knowledge](../custom-agents/enterprise-knowledge.md).
+When you configure it as a primary enterprise knowledge source, Amazon Q Index serves as the default fallback for queries that don't match specific agents. This configuration is recommended when Amazon Q Index is your main search index in (In)Business Productivity. For more information, refer [Enterprise Knowledge](../custom-agents/enterprise-knowledge.md).
 
 ### Search Agent
 
@@ -35,7 +35,7 @@ When you have multiple search indices, Amazon Q can be configured as a contextua
 
 ## Getting Started
 
-Follow the below steps to connect your Amazon Q index application in AI for Work.
+Follow the below steps to connect your Amazon Q index application in (In)Business Productivity.
 
 ### Enterprise Knowledge
 
@@ -44,19 +44,19 @@ Use this configuration when Amazon Q Index should serve as your primary knowledg
 1. Navigate to Enterprise Knowledge
     * Access the **Admin Console**.
     * Select **Enterprise Knowledge** from the left navigation pane.
-    <img src="../images/AmazonQ_2.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_2.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 2. Create New Configuration
     * Click **Configure**.
     * Select **Create New**.
     * Choose **Amazon Q** as the knowledge source type.
-    <img src="../images/AmazonQ_3.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_3.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 3. Configure Basic Settings
     * **Source Name**: Enter a unique, descriptive identifier for this knowledge source.
     * **Description**: Provide a clear explanation of the source content and purpose.
 4. Record Tenant ID
     * Copy the displayed **Tenant ID**.
     * You need this ID during AWS data accessor setup.
-    <img src="../images/AmazonQ_3.5.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_3.5.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 5. Configure AWS Connection Details 
  Enter the following information from your AWS environment:
     * **Application ID**: Unique identifier of our Amazon Q Business application.
@@ -67,7 +67,7 @@ Use this configuration when Amazon Q Index should serve as your primary knowledg
 1. Complete Configuration
     * Click **Save** to store the configuration.
     * Mark the source as *Active* to enable it as the default source for queries.
-    <img src="../images/AmazonQ_3.75.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_3.75.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 
 !!!note
      * Enterprise Knowledge becomes the default knowledge source accessible to all users in that workspace, when configured within a specific workspace.
@@ -75,20 +75,20 @@ Use this configuration when Amazon Q Index should serve as your primary knowledg
 
 ### Search Agent
 
-Use this configuration when integrating Amazon Q as an additional search capability alongside existing search indices. This approach works best when you want to govern by description when this index should activate, or when you have limited data available in Q that you want to reference in AI for Work.
+Use this configuration when integrating Amazon Q as an additional search capability alongside existing search indices. This approach works best when you want to govern by description when this index should activate, or when you have limited data available in Q that you want to reference in (In)Business Productivity.
 
 1. Access Search Agent Configuration
     * Navigate to the **Search Agents** section.
     * Click **Create**.
-    <img src="../images/AmazonQ_4.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_4.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
     * Provide input for **Agent Name and Purpose**. This helps the to invoke the agent for relevant user queries.
-    <img src="../images/AmazonQ_4.5.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_4.5.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
     * Select **Amazon Q** as the Index type.
-    <img src="../images/AmazonQ_4.6.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_4.6.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 2. Use Tenant ID
     * Refer to the **Tenant ID** displayed in the configuration screen.
     * Provide this ID during AWS data accessor setup.
-    <img src="../images/AmazonQ_4.7.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_4.7.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 3. Configure AWS Integration Details
 Complete the following fields with information from your AWS setup:
     * **Application ID**: Unique identifier of your Amazon Q Business application.
@@ -99,7 +99,7 @@ Complete the following fields with information from your AWS setup:
 
 ## How to Configure Amazon Q Business Application
 
-To enable Inception's AI for Work to connect with your Amazon Q Business application, you need to complete a one-time configuration using Trusted Token Issuer (TTI). This setup establishes a secure handshake between your Identity Provider (IdP) and AWS Identity Center, allowing ISVs to access your Amazon Q index.
+To enable Inception's (In)Business Productivity to connect with your Amazon Q Business application, you need to complete a one-time configuration using Trusted Token Issuer (TTI). This setup establishes a secure handshake between your Identity Provider (IdP) and AWS Identity Center, allowing ISVs to access your Amazon Q index.
 
 For detailed reference, see the [AWS configuration blog](https://aws.amazon.com/blogs/machine-learning/configuring-amazon-q-business-with-aws-iam-identity-center-trusted-identity-propagation/).
 
@@ -125,7 +125,7 @@ Step 1: Set Up a Trusted Token Issuer (OIDC IdP) in IAM Identity Center
     * **User attributes**: Map the required user attributes according to your organization's needs.
 5. Save the configuration and confirm the trusted token issuer has been successfully added.
 
-<img src="../images/AmazonQ_5.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/AmazonQ_5.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 
 Step 2: Configure Audience Claims
 
@@ -133,7 +133,7 @@ Step 2: Configure Audience Claims
 2. Add or update the claim mapping from the IdP admin interface as needed.
 3. Ensure proper attribute mapping is established between your external IdP and AWS Identity Center.
 
-<img src="../images/AmazonQ_6.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/AmazonQ_6.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 
 Step 3: Add and Assign Users in IAM Identity Center
 
@@ -147,7 +147,7 @@ Step 3: Add and Assign Users in IAM Identity Center
     * Navigate to **IAM Identity Center** → **Applications** → **[Your Q App].**
     * Select **Assign Users/Groups** and complete the assignment configuration.
 
-<img src="../images/AmazonQ_7.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/AmazonQ_7.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 
 Step 4: Create or Configure Q Business Application
 
@@ -157,7 +157,7 @@ Step 4: Create or Configure Q Business Application
 2. **Add users for search access**:
     * Within the Q Business application, add all users who need search access.
     * Ensure these users correspond to the data sources you'll be adding.
-<img src="../images/AmazonQ_8.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/AmazonQ_8.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 
 Step 5: Add Required Data Sources to Amazon Q Index
 
@@ -169,11 +169,11 @@ Step 5: Add Required Data Sources to Amazon Q Index
     * Other enterprise systems as needed
 3. **Configure data source connections** following the [AWS documentation](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/isv-creating-index.html)
 
-  <img src="../images/AmazonQ_9.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+  <img src="../images/AmazonQ_9.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 
 Step 6: Add Inception as a Data Accessor
 
-This final step completes the integration by configuring Inception as a data accessor using the Tenant ID provided during the AI for Work setup.
+This final step completes the integration by configuring Inception as a data accessor using the Tenant ID provided during the (In)Business Productivity setup.
 
 **Data Accessor Configuration Process**
 
@@ -183,12 +183,12 @@ This final step completes the integration by configuring Inception as a data acc
 
 2. **Select data accessor**:
     * Choose Inception from the available data accessor options.
-    <img src="../images/AmazonQ_11.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_11.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 0px solid gray; zoom:100%;">
 
 3. **Configure the External ID**:
-    * Locate the **Tenant ID** displayed in your AI for Work configuration screen.
+    * Locate the **Tenant ID** displayed in your (In)Business Productivity configuration screen.
     * Paste this **Tenant ID** into the **External ID** field in the AWS console.
-    <img src="../images/AmazonQ_12.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_12.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 
 4. **Configure Trusted Token Issuer**: Choose one of the following options:
     * **Use an existing TTI** that you've already configured.
@@ -196,15 +196,15 @@ This final step completes the integration by configuring Inception as a data acc
 5. **Set Data Source Access permissions**:
     * **All data sources**: Grant Inception access to all current and future data sources.
     * **Specific data sources**: Select only the data sources that Inception should access.
-    <img src="../images/AmazonQ_13.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;">
+    <img src="../images/AmazonQ_13.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 0px solid gray; zoom:100%;">
 
 6. **Configure User Access**:
     * **All Users**: Grant access to all users (ensure they are properly added to the application).
     * **Specific Users**: Select individual users who should have access through Inception.
 7. **Complete the integration**:
     * Copy the **Data Accessor Details** from the AWS console.
-    * Return to your **AI for Work** configuration screen. Paste the Data Accessor Details to complete the linkage.
-    <img src="../images/AmazonQ_14.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+    * Return to your **(In)Business Productivity** configuration screen. Paste the Data Accessor Details to complete the linkage.
+    <img src="../images/AmazonQ_14.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 
 ## Technical Details
 
@@ -212,13 +212,13 @@ This final step completes the integration by configuring Inception as a data acc
 
 The architecture comprises several interconnected components that facilitate secure cross-account data access while maintaining strict access controls.
 
-At the infrastructure level, the solution leverages AWS Identity and Access Management (IAM) for authentication and authorization, with AWS Security Token Service (STS) serving as the credential broker. The core components include Amazon Q Index (which stores vector embeddings and metadata), Application code (which handles API routing and token exchange), and the AI for Work application layer (which manages user interactions and business logic). These components communicate via HTTPS using RESTful APIs with AWS Signature Version 4 (SigV4) for request signing.
+At the infrastructure level, the solution leverages AWS Identity and Access Management (IAM) for authentication and authorization, with AWS Security Token Service (STS) serving as the credential broker. The core components include Amazon Q Index (which stores vector embeddings and metadata), Application code (which handles API routing and token exchange), and the (In)Business Productivity application layer (which manages user interactions and business logic). These components communicate via HTTPS using RESTful APIs with AWS Signature Version 4 (SigV4) for request signing.
 
 When processing queries, the data flow begins with user input at the application layer, which routes to either Inception's native retrievers or Amazon Q Index based on predefined routing rules. For Q Index requests, the architecture implements cross-account API calls using OAuth 2.0 tokens that undergo transformation into temporary AWS credentials. 
 
 Query responses from Amazon Q Index contain relevant document snippets with source references rather than complete documents, maintaining both security and performance optimization.
 
-<img src="../images/AmazonQ_1.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/AmazonQ_1.png" alt="(In)Business Productivity Archite(In)Business Productivitye="(In)Business Productivity Architecture" style="border: 1px solid gray; zoom:100%;">
 
 ### Security and User Authentication
 

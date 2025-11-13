@@ -1,6 +1,6 @@
 # Pre-built Agents
 
-AI for Work includes a set of pre-configured AI agents that can be easily customized and integrated into workflows. These agents help streamline operations and enhance productivity.
+(In)Business Productivity includes a set of pre-configured AI agents that can be easily customized and integrated into workflows. These agents help streamline operations and enhance productivity.
 
 Currently, the following prebuilt agents are available:
 
@@ -46,4 +46,4 @@ Steps to publish a pre-built agent:
 2. Click **Publish.** The agent is now available for the users to use in the Agent Store.
  
 Users can open the Agent Store, click **Connect** for the Agent, and follow the on-screen instructions to **Add Connection**.
-Once the connection is added successfully, the agent can take users’ questions or queries using the Ask or Search Anything box on the AI for Work homepage.
+Once the connection is added successfully, the agent can take users’ questions or queries using the Ask or Search Anything box on the (In)Business Productivity homepage.

@@ -1,14 +1,14 @@
-# AI for Work in Marketplace
+# (In)Business Productivity in Marketplace
 
-The Marketplace offers **AI for Work**, a central hub where users can discover, understand, and implement various AI-powered work agents.
+The Marketplace offers **(In)Business Productivity**, a central hub where users can discover, understand, and implement various AI-powered work agents.
 
 <img src="../images/Marketplace_1.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
 
 ## Key Components
 
-**Types of AI for Work agents Available**
+**Types of (In)Business Productivity agents Available**
 
-The marketplace organizes AI for Work agents into two primary sections:
+The marketplace organizes (In)Business Productivity agents into two primary sections:
 
 Apps: Agentic Apps represent more complex, multi-functional AI solutions. Think of these as comprehensive digital assistants that can handle multiple related tasks. Each Agentic App comprises multiple individual agents working together to provide a complete solution. All created Agentic flows will appear in this section.
 
@@ -44,7 +44,7 @@ To install an agent:
 
 1. Click **Install** on the agent’s details page.
 <img src="../images/Marketplace_4.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
-2. You will be directed to the AI for Work Workspaces area.
+2. You will be directed to the (In)Business Productivity Workspaces area.
 3. If you are logged in, you will be prompted to choose a workspace for the agent.
     * Only workspaces authorized to create that specific agent type will be selectable (active).
     * Workspaces lacking the necessary permissions will be grayed out.
@@ -73,9 +73,9 @@ A marketing team member could filter by **Marketing** team and **Content Generat
 
 A team leader might install an Agentic App that combines multiple agents to handle a multi-step process, such as lead generation, qualification, and follow-up.
 
-## Benefits of AI for Work in Marketplace
+## Benefits of (In)Business Productivity in Marketplace
 
-* **Centralized Access**: Discover all available AI for Work agents in a single, searchable platform.
+* **Centralized Access**: Discover all available (In)Business Productivity agents in a single, searchable platform.
 * **Simplified Search**: Easily find the agents you need using categories and filters.
 * **Transparent Information**: Understand each agent's functionality through detailed descriptions and previews before installing.
 * **Effortless Integration**: Add agents to your workspaces quickly and easily.

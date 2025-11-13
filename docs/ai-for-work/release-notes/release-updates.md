@@ -1,6 +1,6 @@
-# AI for Work Release Notes
+# (In)Business Productivity Release Notes
 
-This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
+This document provides information on the feature updates and enhancements introduced in the recent release of (In)Business Productivity.
 
 ## v1.11.0 Sept 24, 2025
 
@@ -12,7 +12,7 @@ This update includes new features and feature enhancement summarized below.
 
 **Omni Search (Beta)**
 
-AI for Work now includes **Omni Search**, powered by smart agentic platform. Omni Search replaces basic direct search with a more sophisticated system that understands your account and user context. It delivers more relevant and accurate results by recognizing who you are, what you have access to, and what you typically need.
+(In)Business Productivity now includes **Omni Search**, powered by smart agentic platform. Omni Search replaces basic direct search with a more sophisticated system that understands your account and user context. It delivers more relevant and accurate results by recognizing who you are, what you have access to, and what you typically need.
 
 Key Improvements
 
@@ -32,7 +32,7 @@ Agents now maintain two distinct versions, **Draft** and **Published**, ensuring
 
 **Support for Google Gemini Models**
 
-AI for Work now supports the latest Google Gemini models:
+(In)Business Productivity now supports the latest Google Gemini models:
 
 * Gemini 2.5 Flash
 * Gemini 2.5 Pro
@@ -61,15 +61,15 @@ This update includes new features and feature enhancements summarized below.
 
 **Channels – Microsoft Teams and Copilot Integration**
 
-AI for Work integrates natively with Microsoft Teams through the Azure Bot Service architecture, enabling users to access AI assistance directly within Microsoft Teams. The integration supports both Multi-Tenant and Single-Tenant authentication models with proactive notification capabilities through dedicated app registration.
+(In)Business Productivity integrates natively with Microsoft Teams through the Azure Bot Service architecture, enabling users to access AI assistance directly within Microsoft Teams. The integration supports both Multi-Tenant and Single-Tenant authentication models with proactive notification capabilities through dedicated app registration.
 
 The system generates custom Microsoft Teams app manifests with organizational branding options (custom name, logo, description) and supports multiple deployment strategies, including organization-wide rollout, selective user groups, or self-service installation.
 
 [Learn more :octicons-arrow-right-24:](../channels/ms-teams/microsoft-teams.md)
 
-**Amazon Q Integration with AI for Work**
+**Amazon Q Integration with (In)Business Productivity**
 
-AI for Work now supports Amazon Q integration as both an Enterprise Knowledge source and a specialized Search Agent, providing customers with hybrid search capabilities across SearchAI and Amazon Q indices. Query routing uses AI-driven intent recognition to distribute requests.
+(In)Business Productivity now supports Amazon Q integration as both an Enterprise Knowledge source and a specialized Search Agent, providing customers with hybrid search capabilities across SearchAI and Amazon Q indices. Query routing uses AI-driven intent recognition to distribute requests.
 
 AI-driven intent recognition automatically routes queries to the most relevant index, ensuring accurate and context-aware responses. Administrators can configure Amazon Q either as the default enterprise knowledge source or as a contextual search agent for specialized queries.
 
@@ -311,7 +311,7 @@ This update includes new features, feature enhancements, and bug fixes summarize
 
 **New Homepage Experience**
 
-AI for Work home page has been redesigned with a focus on visual and navigational enhancements. The new layout prioritizes recently used agents, aiming to boost efficiency and minimize time spent on workflow management.
+(In)Business Productivity home page has been redesigned with a focus on visual and navigational enhancements. The new layout prioritizes recently used agents, aiming to boost efficiency and minimize time spent on workflow management.
 
 The user interface includes: a left panel that can be toggled, a top-right section for **Help**, **Notifications**, and **User Profiles**. Panels adjust automatically based on search queries and browsing history.
 
@@ -327,11 +327,11 @@ Key features
     * Hovering displays controls to rename or delete threads.
     * **Today** section is instantly updated with new chats.
 
-**Introducing AI for Work to Marketplace**
+**Introducing (In)Business Productivity to Marketplace**
 
-The  Marketplace now features AI for Work, a comprehensive collection of intelligent agents designed to enhance productivity and streamline workflows. This central hub allows users to easily discover, understand, and implement various AI-powered work agents tailored to specific needs.
+The  Marketplace now features (In)Business Productivity, a comprehensive collection of intelligent agents designed to enhance productivity and streamline workflows. This central hub allows users to easily discover, understand, and implement various AI-powered work agents tailored to specific needs.
 
-AI for Work in the Marketplace features two main categories: **Apps** (complex, multi-functional AI solutions combining agents for comprehensive workflows) and **Agents** (standalone AI components for specific tasks). The first version introduces Agentic flows in applications, starting with **Prompt Agents** that provide instant text replies.
+(In)Business Productivity in the Marketplace features two main categories: **Apps** (complex, multi-functional AI solutions combining agents for comprehensive workflows) and **Agents** (standalone AI components for specific tasks). The first version introduces Agentic flows in applications, starting with **Prompt Agents** that provide instant text replies.
 
 [Learn more :octicons-arrow-right-24:](./../getting-started/marketplace.md)
 
@@ -449,9 +449,9 @@ Key Benefits:
 
 * Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by Agent Platform, enabling seamless integration.
 
-* Enhanced Content Safeguards: Implemented comprehensive guardrails within AI for Work that automatically detect and filter inappropriate content requests, providing clear and respectful responses when users request content outside permitted boundaries. This feature is in its early phase; an Admin UI for custom guardrail configuration is currently under development and will be available in a future release.
+* Enhanced Content Safeguards: Implemented comprehensive guardrails within (In)Business Productivity that automatically detect and filter inappropriate content requests, providing clear and respectful responses when users request content outside permitted boundaries. This feature is in its early phase; an Admin UI for custom guardrail configuration is currently under development and will be available in a future release.
   
-* Context sharing: Conversation context now flows automatically between AI for Work and Search AI.
+* Context sharing: Conversation context now flows automatically between (In)Business Productivity and Search AI.
 
 <font size="4">Bug Fixes</font>
 
@@ -504,7 +504,7 @@ You can now leverage non-deterministic AI algorithms to autonomously manage comp
 
 * Citations: All agents now include clear citation and action buttons, ensuring consistency across the platform. Previously, Calendar, Contact, and Bot agents lacked citation. This update ensures that all agents are now fully cited with actionable buttons.
 
-* Search AI Connectors: We've expanded support to Search AI Connectors across multiple platforms and services. You can now index through these connectors in SearchAI app and see the results in AI for work.
+* Search AI Connectors: We've expanded support to Search AI Connectors across multiple platforms and services. You can now index through these connectors in SearchAI app and see the results in (In)Business Productivity.
 The latest release includes search connector support for the following services:
 
     * Gmail

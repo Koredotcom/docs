@@ -1,7 +1,7 @@
 
 # Business Rules
 
-AI for Work enables users to define business rules by setting rules for entity selection and responses based on keywords. Business Rules are guidelines or policies that ensure that the generated answers meet the specific criteria and align with the organization's goals.
+(In)Business Productivity enables users to define business rules by setting rules for entity selection and responses based on keywords. Business Rules are guidelines or policies that ensure that the generated answers meet the specific criteria and align with the organization's goals.
 
 Users can find the Business Rules section in the Admin Console, where all the business rules of published custom integrations in the account will be listed. Users have two options for creating business rules:
 

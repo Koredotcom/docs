@@ -74,11 +74,11 @@ Okta provides enterprise-grade identity management with robust security features
   </tr>
 </table>
 
-**Setting up Okta for AI for Work SSO**
+**Setting up Okta for (In)Business Productivity SSO**
 
-To set up the AI for Work application in your Okta environment, you need to create and configure the application, configure SAML settings, and transfer authentication details.
+To set up the (In)Business Productivity application in your Okta environment, you need to create and configure the application, configure SAML settings, and transfer authentication details.
 
-**Prerequisites**: You must have already selected Okta as a SAML provider in the AI for Work Admin Console.
+**Prerequisites**: You must have already selected Okta as a SAML provider in the (In)Business Productivity Admin Console.
 
 **Steps to configure Okta**:
 
@@ -87,8 +87,8 @@ To set up the AI for Work application in your Okta environment, you need to crea
     * Go to **Applications > Add Application > Create Application**.
     * Provide an **App name** and click **Next**.
 3. **Configure SAML Settings**:
-    * In **Configure SAML**, provide the **Single Sign-On URL** from AI for Work:
-        * Log in to AI for Work Admin Console.
+    * In **Configure SAML**, provide the **Single Sign-On URL** from (In)Business Productivity:
+        * Log in to (In)Business Productivity Admin Console.
         * Go to **Security > Single Sign-On.**
         * After enabling SAML and selecting Okta.
         * Copy the **ACS URL for SP-Initiated SAML Flow.**
@@ -102,15 +102,15 @@ To set up the AI for Work application in your Okta environment, you need to crea
     * Click **Finish.**
 5. **Copy Configuration Details**:
     * Go to **Sign On** tab > **Settings** > **View Setup Instructions.**
-    * Copy the following to AI for Work:
+    * Copy the following to (In)Business Productivity:
         * **Identity Provider Single Sign-On URL** → **Okta Single Sign-On URL**
         * **Identity Provider Issuer** → **Identity Provider Issuer**
         * **X.509 Certificate** → **Certificate** field
-6. **Save** the configuration in AI for Work.
+6. **Save** the configuration in (In)Business Productivity.
 
 ### OneLogin Configuration
 
-OneLogin offers a comprehensive identity platform with advanced user provisioning and access management capabilities. Configure these essential fields to establish secure communication between OneLogin and AI for Work.
+OneLogin offers a comprehensive identity platform with advanced user provisioning and access management capabilities. Configure these essential fields to establish secure communication between OneLogin and (In)Business Productivity.
 
 <table>
   <tr>
@@ -163,25 +163,25 @@ OneLogin offers a comprehensive identity platform with advanced user provisionin
   </tr>
 </table>
 
-**Setting up OneLogin for AI for Work SSO**
+**Setting up OneLogin for (In)Business Productivity SSO**
 
-To set up the AI for Work application in your OneLogin environment, you need to create and configure the application, configure SAML settings, and transfer authentication details. 
+To set up the (In)Business Productivity application in your OneLogin environment, you need to create and configure the application, configure SAML settings, and transfer authentication details. 
 
 1. **Configure SSO Settings**:
     * Go to the **SSO** tab
-    * Copy the following to AI for Work:
+    * Copy the following to (In)Business Productivity:
         * **OneLogin SAML 2.0 Endpoint (HTTP)** → **SAML 2.0 Endpoint**
         * **OneLogin Issuer URL** → **Issuer URL**
 2. **Copy Certificate**:
     * Click **View Details** for the X.509 Certificate.
     * Copy only the certificate data (exclude headers and footers).
-    * Paste into AI for Work **X.509 Certificate** field.
-3. **Save** the configuration in AI for Work.
+    * Paste into (In)Business Productivity **X.509 Certificate** field.
+3. **Save** the configuration in (In)Business Productivity.
 
 
 ### Bitium Configuration
 
-Bitium specializes in cloud-based identity and access management with a focus on simplicity and security. These configuration parameters establish the trust relationship between Bitium and AI for Work for seamless authentication.
+Bitium specializes in cloud-based identity and access management with a focus on simplicity and security. These configuration parameters establish the trust relationship between Bitium and (In)Business Productivity for seamless authentication.
 
 <table>
   <tr>
@@ -234,18 +234,18 @@ Bitium specializes in cloud-based identity and access management with a focus on
   </tr>
 </table>
 
-**Setting up Bitium for AI for Work SSO**
+**Setting up Bitium for (In)Business Productivity SSO**
 
-To set up the AI for Work application in your Bitium environment, you need to create and configure the application, configure SAML settings, and transfer authentication details.
+To set up the (In)Business Productivity application in your Bitium environment, you need to create and configure the application, configure SAML settings, and transfer authentication details.
 
 1. **Configure SAML Authentication**:
     * Go to **Manage Organization > Manage Apps > App.**
     * On the **Single Sign-On** tab, select **SAML Authentication.**
-    * Copy the following to AI for Work:
+    * Copy the following to (In)Business Productivity:
         * **Bitium Login URL** → **Single Sign-On URL**
         * **Bitium Logout URL** → **Issuer URL**
         * **X.509 Certificate** → **Certificate** field
-2. **Save** the configuration in AI for Work.
+2. **Save** the configuration in (In)Business Productivity.
 
 ### Other (Generic SAML Provider)
 

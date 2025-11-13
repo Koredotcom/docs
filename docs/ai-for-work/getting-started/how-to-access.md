@@ -1,6 +1,6 @@
-# Accessing AI for Work
+# Accessing (In)Business Productivity
 
-Admins configure [user enrollments](../user-management/user-enrollments.md) to let users log in to AI for Work at [https://work.kore.ai/login](https://work.kore.ai/login)
+Admins configure [user enrollments](../user-management/user-enrollments.md) to let users log in to (In)Business Productivity at [dev-productivity.inceptionai.app](dev-productivity.inceptionai.app).
 
 Admins can also let users log in using the following methods:
 

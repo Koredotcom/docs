@@ -1,22 +1,22 @@
-# Using AI for Work Assistant
+# Using (In)Business Productivity Assistant
 
-Log in to the AI for Work here: [AI for Work Login](https://dev-productivity.inceptionai.app/login){:target="_blank"}
+Log in to the (In)Business Produc(In)Business Productivity: [(In)Business Productivity Login](https://dev-productivity.inceptionai.app/login){:target="_blank"}
 
-The **AI for Work** Assistant is available on the homepage, you can ask an open-ended question to the assistant.
+The **(In)Business Productivity** Assistant is available on the homepage, you can ask an open-ended question to the assistant.
 
 For instance, if you're connected to Jira, you can type “Get my Jira issues” in the **Ask or search anything** search box. The Jira agent will be triggered and retrieve your Jira issues.
 
-**AI for Work** can also manage complex workflows by organizing tasks into a structured sequence, each handled by a specialized “agent.” In this approach, each agent performs a unique function and automatically executes its task in the correct order. By passing information seamlessly from one agent to the next, the flow ensures efficient, sequential completion of each step, allowing multiple instructions to be handled with minimal manual effort. This streamlined solution is known as **Agentic Flow**.
+**(In)Business Productivity** can also manage complex workflows by organizing tasks into a structured sequence, each handled by a specialized “agent.” In this approach, each agent performs a unique function and automatically executes its task in the correct order. By passing information seamlessly from one agent to the next, the flow ensures efficient, sequential completion of each step, allowing multiple instructions to be handled with minimal manual effort. This streamlined solution is known as **Agentic Flow**.
 
 ## File Storage and Data Handling
 
-When users upload files during chat sessions with AI for Work, it's important to understand how these files are stored and managed.
+When users upload files during chat sessions with (In)Business Productivity, it's important to understand how these files are stored and managed.
 
 **File Storage Location**
 
-Files uploaded through the AI for Work Assistant chat interface are stored in managed cloud storage (AWS S3) under a multi-tenant architecture. This applies to:
+Files uploaded through the (In)Business Productivity Assistant chat interface are stored in managed cloud storage (AWS S3) under a multi-tenant architecture. This applies to:
 
-* All file uploads in AI for Work chat sessions.
+* All file uploads in (In)Business Productivity chat sessions.
 * Documents processed through Search AI functionality.
 
 !!!note

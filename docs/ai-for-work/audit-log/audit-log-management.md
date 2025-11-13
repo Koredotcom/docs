@@ -1,6 +1,6 @@
 # Audit Log Management
 
-Audit Log is a tracking mechanism designed to monitor and record all administrative and operational activities across your AI for Work platform. This system creates a comprehensive trail of user actions, providing enhanced security, accountability, and compliance capabilities for enterprise environments.
+Audit Log is a tracking mechanism designed to monitor and record all administrative and operational activities across your (In)Business Productivity platform. This system creates a comprehensive trail of user actions, providing enhanced security, accountability, and compliance capabilities for enterprise environments.
 
 <img src="../Images/audit_log_1.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
 

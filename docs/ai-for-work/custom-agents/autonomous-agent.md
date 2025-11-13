@@ -72,7 +72,7 @@ To import an existing Autonomous Agent:
 
 !!!note
 
-    You cannot directly import agents exported from the Agent Platform. Only Autonomous Agents that were originally created and exported from AI for Work can be imported using this feature.
+    You cannot directly import agents exported from the Agent Platform. Only Autonomous Agents that were originally created and exported from (In)Business Productivity can be imported using this feature.
 
 ## Usage
 

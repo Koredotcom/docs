@@ -1,12 +1,12 @@
 # Managing Your Users
 
-You can manage users in AI for Work **Admin Console** from the **User Management > Users section**.
+You can manage users in (In)Business Productivity **Admin Console** from the **User Management > Users section**.
 
 All users across your network accounts are listed here.  
 
 <img src="../images/users.png" alt="users" title="users" style="border: 1px solid gray; zoom:80%;"> 
 
-The following list describes the columns displayed for each AI for Work user.
+The following list describes the columns displayed for each (In)Business Productivity user.
 
 <table>
   <tr>
@@ -37,7 +37,7 @@ The following list describes the columns displayed for each AI for Work user.
 
 <li>Invited – Users invited by the Admin, but who are yet to join or accept the invitation.</li>
 
-<li>Suspended – The user is suspended by an administrator. The user cannot log on to AI for Work. The status of a Suspended user can be Activated anytime by admin.</li>
+<li>Suspended – The user is suspended by an administrator. The user cannot log on to (In)Business Productivity. The status of a Suspended user can be Activated anytime by admin.</li>
 
 <li>Removed – A user deleted by an admin enters a "soft delete" state for 60 days, after which they are permanently deleted. During this period, the user's status can be changed back to "Active."</li>
 

@@ -8,7 +8,7 @@ Configurable AI agents designed for quick deployment and workflow integration wi
 
 * **Bot Agents**: Connect your **AI for Service** bot to create agents that smoothly integrate and interact with it, enabling seamless workflow execution. [Learn more](./bot-agents.md).
 
-* **Search Agents**: In AI for Work, RAG agents are implemented through **Search AI** applications that index content from various sources, allowing them to retrieve relevant information and generate precise responses to user queries. [Learn more](./search-agents.md)
+* **Search Agents**: In (In)Business Productivity, RAG agents are implemented through **Search AI** applications that index content from various sources, allowing them to retrieve relevant information and generate precise responses to user queries. [Learn more](./search-agents.md)
 
 * **Enterprise Knowledge Agents**: Agents which are pre-configured **Search AI** app that acts as a backup system when specific agents can't handle user queries, providing general search capabilities without any specialized focus. [Learn more](./enterprise-knowledge.md)
 

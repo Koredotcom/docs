@@ -1,12 +1,12 @@
 # Using Single Sign-On (SSO)
 
-Single Sign-On (SSO) enables easy access to **AI for Work** using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing AI for Work, the system can automatically use the same login credentials.
+Single Sign-On (SSO) enables easy access to **(In)Business Productivity** using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and w(In)Business Productivityng (In)Business Productivity, the system can automatically use the same login credentials.
 
 <img src="../images/sso_overview.png" alt="open-id-connect" title="open-id-connect" style="border: 1px solid gray; zoom:80%;">
 
 ## Supported Sign-On Protocols
 
-Administrators can configure Single Sign-On (SSO) authentication for **AI for Work** using one of the following sign-on protocols or methods:
+Administrators can configure Single Sign-On (SSO) authentication for **(In)Business Productivity** using one of the following sign-on protocols or methods:
 
 * **OpenID Connect (OIDC)** - A modern authentication protocol built on OAuth 2.0, providing simple identity verification and user profile information exchange.
 * **Security Assertion Markup Language (SAML)** - A standard protocol for web browser Single Sign-On using secure tokens, eliminating passwords through cryptography and digital signatures.
@@ -14,7 +14,7 @@ Administrators can configure Single Sign-On (SSO) authentication for **AI for Wo
 
 ## Enabling Single Sign-On
 
-Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing **AI for Work**.
+Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing **(In)Business Productivity**.
 
 To enable SSO:
 

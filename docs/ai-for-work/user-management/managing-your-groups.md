@@ -48,7 +48,7 @@ The list of entries in a **User groups** table can be very large. To find one or
 You may want to create one or more groups of users in your account for users with, for example, a related interest, department, or location. Groups created by the admin are not visible to the user and are for administrative purposes only. This topic describes how to define a new group and add users, or existing groups of users to that group.
 
 1. In the **User Management** module, select **User groups**.
-2. Click the **Create group** button to display the **Create user group** dialog to add a new AI for Work group to your account. 
+2. Click the **Create group** button to display the **Create user group** dialog to add a new (In)Business Productivity group to your account. 
 3. In the **Create user group** dialog,
     1. **Group Name** field, enter the name for the group.
     2. Optionally, in the **Description** field, enter a description for the group.

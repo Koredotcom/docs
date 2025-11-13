@@ -1,6 +1,6 @@
 # Notify API
 
-The Notify API enables developers to send interactive notifications to AI for Work users. These notifications can include customizable response options and action buttons. 
+The Notify API enables developers to send interactive notifications to (In)Business Productivity users. These notifications can include customizable response options and action buttons. 
   
 !!! note
 
@@ -70,7 +70,7 @@ curl --location --request POST 'https://work.example.ai/api/1.1/public/agents/ag
    </td>
    <td>Required
    </td>
-   <td>Email address of the AI for Work user (single recipient)
+   <td>Email address of the (In)Business Productivity user (single recipient)
    </td>
   </tr>
   <tr>
@@ -174,7 +174,7 @@ curl --location --request POST 'https://work.example.ai/api/1.1/public/agents/ag
 ```
 
 ## Key Points
-* The email address of the receiver needs to be a valid AI for Work users.
+* The email address of the receiver needs to be a valid (In)Business Productivity users.
 * Custom payload data can be used for tracking and response handling.
-* The ***to*** key in the request payload must be a valid AI for Work user email Id, and it should be singular in the initial implementation.
-* ***actions*** in the request payload will be transmitted to AI for Work users as buttons for input.
+* The ***to*** key in the request payload must be a valid (In)Business Productivity user email Id, and it should be singular in the initial implementation.
+* ***actions*** in the request payload will be transmitted to (In)Business Productivity users as buttons for input.

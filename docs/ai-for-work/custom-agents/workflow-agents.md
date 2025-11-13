@@ -45,7 +45,7 @@ To create a Workflow Agent, follow the steps outlined below:
 ### Step 1: Details and Purpose
 
 Provide a suitable and unique name for the agent and describe the purpose of the
-agent. Defining the agent’s purpose enables “AI for work” to accurately
+agent. Defining the agent’s purpose enables “(In)Business Productivity” to accurately
 recognize the agent’s capabilities and effectively utilize them to respond to
 user queries aligned with the specified intent. It is essential to clearly
 outline the specific use cases for which the agent is designed.

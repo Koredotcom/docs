@@ -1,14 +1,14 @@
 # Microsoft Teams and Copilot Integration - Configuration 
 
-This document provides detailed step-by-step instructions for implementing AI for Work integration with Microsoft Teams. Follow these phases sequentially to ensure proper deployment and functionality.
+This document provides detailed step-by-step instructions for implementing (In)Business Productivity integration with Microsoft Teams. Follow these phases sequentially to ensure proper deployment and functionality.
 
 ## Step-by-Step Implementation Guide
 
 ### Phase 1: Initial Setup and Webhook Configuration
 
-**Objective:** Establish communication between AI for Work and Azure Bot Service.
+**Objective:** Establish communication between (In)Business Productivity and Azure Bot Service.
 
-1. Log in to the AI for Work's **Admin Console**.
+1. Log in to the (In)Business Productivity's **Admin Console**.
 2. Navigate to **Channels** → **Microsoft Teams and Copilot**.
 3. Copy the **Webhook URL** (you will use this in Azure Bot configuration).
 
@@ -31,7 +31,7 @@ Create and configure the Azure Bot that will serve as the communication bridge.
 **Configure Bot Resource**
 
 1. After deployment completes, click **Go to resource** and navigate to **Configuration** in the left sidebar.
-2. Paste the webhook URL copied from the AI for Work platform into the **Messaging endpoint** field and click **Apply** to save the configuration.
+2. Paste the webhook URL copied from the (In)Business Productivity platform into the **Messaging endpoint** field and click **Apply** to save the configuration.
 
 
 ### Phase 3: Authentication and Security Setup
@@ -50,11 +50,11 @@ This phase varies based on your chosen App Type (MultiTenant vs SingleTenant).
 
 1. Enter description and expiry → **Add**.
 2. Copy the **Value** of the client secret (App Password).
-3. Record the **Microsoft App ID** and **App Password** for AI for Work configuration.
+3. Record the **Microsoft App ID** and **App Password** for (In)Business Productivity configuration.
 
 **For Single-Tenant Applications**
 
-Follow the steps for Multi-Tenant setup. Also, note the Tenant ID for AI for Work configuration.
+Follow the steps for Multi-Tenant setup. Also, note the Tenant ID for (In)Business Productivity configuration.
 
 ### Phase 4: Enable Microsoft Teams Channel Integration
 
@@ -100,17 +100,17 @@ Enable the bot to send proactive notifications to users, which is essential for 
   
 3.  Grant **Admin Consent.**
 4.  Generate a **Client Secret** and note down **App ID**, **Directory (Tenant) ID**
-5.  Configure these values in AI for Work under **Microsoft Teams & Copilot Channel Settings**.
+5.  Configure these values in (In)Business Productivity under **Microsoft Teams & Copilot Channel Settings**.
 6.  Generate a **JWT token** for secure communication.
 
 
-### Phase 6: Configure AI for Work Platform
+### Phase 6: Configure (In)Business Productivity Platform
 
-Provide Azure Bot credentials to the AI for Work platform to establish secure communication.
+Provide Azure Bot credentials to the (In)Business Productivity platform to establish secure communication.
 
-**Access AI for Work Configuration:**
+**Access (In)Business Productivity Configuration:**
 
-1. Navigate to your AI for Work Admin Console.
+1. Navigate to your (In)Business Productivity Admin Console.
 2. Locate **Channels** on the left pane.
 3. Select **Microsoft Teams and Copilot**.
 4. Feed the following credentials under the **Configuration**:
@@ -127,7 +127,7 @@ Provide Azure Bot credentials to the AI for Work platform to establish secure co
 
 **Customization Options**
 
-By default, the Microsoft Teams app appears with the name **AI for Work**, the standard AI for Work logo, and the default description. Administrators can customize the application before publishing to Microsoft Teams:
+By default, the Microsoft Teams app appears with the name **(In)Business Productivity**, the standard (In)Business Productivity logo, and the default description. Administrators can customize the application before publishing to Microsoft Teams:
 
 * **App Name** – Choose a custom display name for Microsoft Teams.
 * **Logo** – Upload an organization-specific logo.
@@ -135,16 +135,16 @@ By default, the Microsoft Teams app appears with the name **AI for Work**, the s
 
 **Copilot Enablement**
 
-During configuration, you will be prompted to **Enable Copilot Integration**. It is recommended to enable this option to ensure that Microsoft Teams users can access AI for Work features through Copilot.
+During configuration, you will be prompted to **Enable Copilot Integration**. It is recommended to enable this option to ensure that Microsoft Teams users can access (In)Business Productivity features through Copilot.
 
 
 ### Phase 7: Microsoft Teams Application Deployment
 
-Deploy the AI for Work application to Microsoft Teams for user access.
+Deploy the (In)Business Productivity application to Microsoft Teams for user access.
 
 **Generate Application Manifest**
 
-**Download Manifest**: Upon configuring credentials in the AI for Work platform, generate and download the Microsoft Teams application manifest file. This manifest file contains all the necessary configurations for integrating with Microsoft Teams.
+**Download Manifest**: Upon configuring credentials in the (In)Business Productivity platform, generate and download the Microsoft Teams application manifest file. This manifest file contains all the necessary configurations for integrating with Microsoft Teams.
 
 <img src="../images/teams_8.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
@@ -157,7 +157,7 @@ Deploy the AI for Work application to Microsoft Teams for user access.
 3. Click **Upload new app**.
 <img src="../images/teams_9.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
-4. Select the downloaded manifest file from AI for Work.
+4. Select the downloaded manifest file from (In)Business Productivity.
 5. Wait for upload and validation to complete.
 
 **Configure App Permissions and Policies**
@@ -166,18 +166,18 @@ Deploy the AI for Work application to Microsoft Teams for user access.
 
 After uploading, configure app permission and setup policies.
 
-### Phase 8: User Access Configuration Options in AI for Work
+### Phase 8: User Access Configuration Options in (In)Business Productivity
 
-You can decide how to distribute the AI for Work app in Microsoft Teams:
+You can decide how to distribute the (In)Business Productivity app in Microsoft Teams:
 
 * **Add App for All Users** (Recommended)
 
-    * Automatically adds the AI for Work app for all employees in the organization.
+    * Automatically adds the (In)Business Productivity app for all employees in the organization.
     * All users receive a notification in Microsoft Teams and a **welcome message** when the app is added.
 
 !!!note
 
-    Users must also be provisioned in the **AI for Work Account Hub** to access the app.
+    Users must also be provisioned in the **(In)Business Productivity Account Hub** to access the app.
 
 * **Let Users Add App Themselves**
 
@@ -226,6 +226,6 @@ You can decide how to distribute the AI for Work app in Microsoft Teams:
 * Ensure JWT token generation is working correctly.
 
 
-This integration enables seamless access to AI for Work capabilities within Microsoft Teams, providing users with powerful AI assistance without leaving their collaborative environment. The bot-based architecture ensures secure, scalable communication while maintaining compliance with organizational security policies.
+This integration enables seamless access to (In)Business Productivity capabilities within Microsoft Teams, providing users with powerful AI assistance without leaving their collaborative environment. The bot-based architecture ensures secure, scalable communication while maintaining compliance with organizational security policies.
 
 Regular maintenance of credentials and permissions, along with proper monitoring, will ensure the continued reliable operation of the integration.

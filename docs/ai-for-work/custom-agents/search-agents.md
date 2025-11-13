@@ -38,7 +38,7 @@ The **RAG Agent creation** wizard will take you through the following steps:
 
 ### Step 1: Details and Purpose
 
-Provide a suitable and unique **name** for the agent. Briefly describe the **purpose** of the agent. Defining the agent’s purpose enables the AI for Work Orchestrator to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed so it can be accurately evoked by simple queries by users.
+Provide a suitable and unique **name** for the agent. Briefly describe the **purpose** of the agent. Defining the agent’s purpose enables the (In)Business Productivity Orchestrator to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed so it can be accurately evoked by simple queries by users.
 
 For instance, if an agent is designed to answer all the user queries related to HR policies, specifying it as the purpose helps the system use this agent whenever a user sends a query related to any HR policy.
 
@@ -46,7 +46,7 @@ For instance, if an agent is designed to answer all the user queries related to 
 
 ### Step 2: Configure Search Index
 
-The next step is to configure your search index, which contains the indexed content used for answer generation. AI for Work allows flexible integration with different search solutions based on your enterprise search needs.
+The next step is to configure your search index, which contains the indexed content used for answer generation. (In)Business Productivity allows flexible integration with different search solutions based on your enterprise search needs.
 
 In the **Search Index Options**, you can choose between:
 

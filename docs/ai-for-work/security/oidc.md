@@ -19,7 +19,7 @@ Choose from the supported identity providers. Each provider offers specific feat
 
 ### Google Configuration
 
-Google's OpenID Connect implementation provides enterprise-grade authentication with seamless integration for G Suite domains. Configure these essential fields to establish secure communication between Google and AI for Work.
+Google's OpenID Connect implementation provides enterprise-grade authentication with seamless integration for G Suite domains. Configure these essential fields to establish secure communication between Google and (In)Business Productivity.
 
 <img src="../images/oidc_overview_2.png" alt="open-id-connect" title="open-id-connect" style="border: 1px solid gray; zoom:80%;">
 
@@ -71,11 +71,11 @@ Google's OpenID Connect implementation provides enterprise-grade authentication 
     * Click **Save**.
     * The *Identity Provider information successfully updated* message is displayed at the top of the page.
 
-#### Setting up Google for AI for Work SSO
+#### Setting up Google for (In)Business Productivity SSO
 
-To set up the AI for Work application in your Google Workspace environment, you need to create a service account and configure domain-wide delegation.
+To set up the (In)Business Productivity application in your Google Workspace environment, you need to create a service account and configure domain-wide delegation.
 
-**Prerequisites**: You must have Google Workspace administrator privileges and have already selected Google as an OpenID Connect provider in the AI for Work Admin Console.
+**Prerequisites**: You must have Google Workspace administrator privileges and have already selected Google as an OpenID Connect provider in the (In)Business Productivity Admin Console.
 
 **Steps to configure Google**:
 
@@ -103,11 +103,11 @@ To set up the AI for Work application in your Google Workspace environment, you 
     * Add required OAuth scopes (e.g., `https://www.googleapis.com/auth/admin.directory.user.readonly`).
     * Click **Authorize**.
 5. **Copy Configuration Details**:
-    * From the downloaded JSON key file, copy the following to AI for Work:
+    * From the downloaded JSON key file, copy the following to (In)Business Productivity:
         * **client_email** → **Client Email** field
         * **private_key** → **Private Key** field
     * Enter your G Suite admin email in the **Admin Email** field.
-6. **Save** the configuration in AI for Work.
+6. **Save** the configuration in (In)Business Productivity.
 
 
 ### Microsoft Azure Configuration
@@ -126,11 +126,11 @@ Microsoft Azure Active Directory (now Microsoft Entra ID) provides comprehensive
     * Click **Save**.
     * The *Identity Provider information successfully updated* message is displayed at the top of the page.
 
-#### Setting up Microsoft Azure for AI for Work SSO
+#### Setting up Microsoft Azure for (In)Business Productivity SSO
 
-To set up the AI for Work application in your Microsoft Entra ID (formerly Azure AD) environment, you need to register an application and configure authentication settings.
+To set up the (In)Business Productivity application in your Microsoft Entra ID (formerly Azure AD) environment, you need to register an application and configure authentication settings.
 
-**Prerequisites**: You must have Microsoft Entra ID administrator privileges and have already selected Microsoft Azure as an OpenID Connect provider in the AI for Work Admin Console.
+**Prerequisites**: You must have Microsoft Entra ID administrator privileges and have already selected Microsoft Azure as an OpenID Connect provider in the (In)Business Productivity Admin Console.
 
 **Steps to configure Microsoft Azure**:
 
@@ -138,13 +138,13 @@ To set up the AI for Work application in your Microsoft Entra ID (formerly Azure
     * Log in to [Azure Portal](https://portal.azure.com/).
     * Navigate to **Microsoft Entra ID > App registrations**.
     * Click **New registration**.
-    * Provide an application name (e.g., "AI for Work SSO").
+    * Provide an application name (e.g., "(In)Business Productivity SSO").
     * Select the appropriate supported account types.
-    * Configure the redirect URI (this will be provided by AI for Work).
+    * Configure the redirect URI (this will be provided by (In)Business Productivity).
     * Click **Register**.
 2. **Configure Authentication**:
     * In the registered app, go to **Authentication**.
-    * Add the redirect URI provided by AI for Work.
+    * Add the redirect URI provided by (In)Business Productivity.
     * Configure token configuration settings as required.
     * Enable **ID tokens** under the Implicit grant and hybrid flows.
     * Click **Save**.
@@ -164,6 +164,6 @@ To set up the AI for Work application in your Microsoft Entra ID (formerly Azure
     * From the app overview page, note the following:
         * **Application (client) ID**
         * **Directory (tenant) ID**
-    * Copy these values along with the client secret to configure in AI for Work.
-6. **Complete Configuration in AI for Work**: Create and Register App in Microsoft Entra ID.
-7. **Save** the configuration in AI for Work.
+    * Copy these values along with the client secret to configure in (In)Business Productivity.
+6. **Complete Configuration in (In)Business Productivity**: Create and Register App in Microsoft Entra ID.
+7. **Save** the configuration in (In)Business Productivity.

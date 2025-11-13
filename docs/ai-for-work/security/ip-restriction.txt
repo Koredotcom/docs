@@ -2,7 +2,7 @@
 
 This document provides instructions for setting up IP address restrictions. With IP restriction, administrators can control access to ensure that only authorized IP ranges can interact with the application. 
 
-By default, users can access AI for Work from any IP address, as long as they have valid credentials.
+By default, users can access (In)Business Productivity from any IP address, as long as they have valid credentials.
 
 Additionally, you can restrict access to a specified range of IP addresses. When you specify a list of IP addresses in the **Restrict** section, users within your account attempting to access the Platform from any other IP addresses will be restricted.
 
