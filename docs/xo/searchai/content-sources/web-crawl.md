@@ -73,39 +73,30 @@ When the **JavaScript Rendered** option is enabled, specify the **Crawl Delay fi
 
 * **Crawl Options** - This field can be used to further filter the web pages to crawl from the list of URLs defined using the crawl source. You can choose to crawl and index all the URLs in the crawl source or allow or block specific URLs from being crawled. This configuration can be used to avoid crawling unnecessary web pages from the source, thereby, optimizing indexing for efficient searches. The field can take one of the following values:
     * **Crawl everything** - Use this option when all the URLs in the domain specified by the Crawl Source are to be crawled. By default, when a new domain is added, this option is used, and all the URLs in the domain are used.
-    * **Crawl everything except specific URLs** - Use this option when all the URLs except the blocked URLs are to be crawled. You can add rules to identify the blocked URLs, like _block if URL_ _contains or doesn’t contain _a specific term or if the_ URL is equal to_ a specific URL, as shown below. Select the condition from the drop-down list and specify its values in the text box on the right. 
+    * **Crawl everything except specific URLs** - Use this option when all the URLs except the blocked URLs are to be crawled. You can add rules to identify the blocked URLs, like _block if URL contains or doesn’t contain a specific term or if the URL is equal to a specific URL_, as shown below. Select the condition from the drop-down list and specify its values in the text box on the right. 
         
     ![Crawl Everything except specific URL](images/URL-exclude-conditions.png "Crawl specific URLs")
 
-    * **Crawl only specific URLs** - Use this option when only selected URLs that satisfy a given condition are to be crawled. For example, if only the blog section is to be crawled, you can set the rule as _Allow if URL contains “blog”_.
-        
-    ![Crawl Only Specific URLs](images/URL-include-conditions.png "crawl only specific URLs")
-        
-    You can use any of the following types of conditions to choose the URLs:
-    * **Equals to** - when the URL exactly matches the given value.
-    * **Not equal to** - when the URL doesn't match the given value.
-    * **Contains** - when a given string is found in the URL.
-    * **Does not contain** - When a given string value isn't found in the URL.
-    * **Begins with** - when a given string is found at the beginning of the URL.
-    * **Ends with** - when a given string is found at the end of the URL.
+    * **Crawl only specific URLs** - Use this option when only selected URLs that satisfy a given condition are to be crawled. For example, if only the blog section is to be crawled, you can set the rule as _Allow if URL contains “blog”_. ![Crawl Only Specific URLs](images/URL-include-conditions.png "crawl only specific URLs") You can use any of the following types of conditions to choose the URLs:
+           * **Equals to** - when the URL exactly matches the given value.
+           * **Not equal to** - when the URL doesn't match the given value.
+           * **Contains** - when a given string is found in the URL.
+           * **Does not contain** - When a given string value isn't found in the URL.
+           * **Begins with** - when a given string is found at the beginning of the URL.
+           * **Ends with** - when a given string is found at the end of the URL.
             
     You can **add any number of rules** to selectively choose the URLs from the web domain in the above two options. 
         
     ![Number of rules](images/multiple-include-conditions.png "number of rules")
 
-* **Set Schedule Timer** - Enable this field to schedule the crawling at a particular date and time. You can also set a frequency for recrawling the web domain at regular intervals.  
-
-To set a schedule, enter the following:
+* **Set Schedule Timer** - Enable this field to schedule the crawling at a particular date and time. You can also set a frequency for crawling the web domain at regular intervals. To set a schedule, enter the following:
     * **Date**: The date you want to schedule the first crawl of the web source.
     * **Time**: When you want to schedule the first crawling of the web source. Specify the hours and minutes in a 12-hour format along with the timezone. 
-    * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the frequency of recrawling the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
+    * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the frequency of crawling the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
 
-* **Is this an Authenticated website?** - Enable this field if an authentication mechanism protects the source website. If the website requires authentication, provide relevant information to access the website depending on the authentication method. 
+* **Is this an Authenticated website?** - Enable this field if an authentication mechanism protects the source website. If the website requires authentication, provide relevant information to access the website depending on the authentication method. Search AI web crawling supports the two types of authentication - **Basic Authentication** and **Form-based Authentication**. Both are simple authentication schemes built into the HTTP protocol that are used to protect web resources. Although both mechanisms use a username and password to authenticate the client, the difference is in the way both are implemented. Basic Authentication uses an HTTP header to provide the username and password when making a request to the server. Whereas Form-based authentication uses standard HTML form fields to pass the username and password values to the server via a POST request. Depending on the authentication mechanism supported by the web domain, choose the authentication method from the drop-down menu. 
 
-Search AI web crawling supports the two types of authentication - **Basic Authentication** and **Form-based Authentication**. Both are simple authentication schemes built into the HTTP protocol that are used to protect web resources. Although both mechanisms use a username and password to authenticate the client, the difference is in the way both are implemented. Basic Authentication uses an HTTP header to provide the username and password when making a request to the server. Whereas Form-based authentication uses standard HTML form fields to pass the username and password values to the server via a POST request. Depending on the authentication mechanism supported by the web domain, choose the authentication method from the drop-down menu. 
-
-**Basic HTTP authentication**: Basic HTTP authentication requires auth credentials and other optional auth parameters to be validated to access the website. The authentication URL may or may not be the same as the source URL. So, to enable access to a website,  provide the values for the following fields.
-    ![Basic Auth](images/basic-auth.png "Basic Auth")
+**Basic HTTP authentication**: Basic HTTP authentication requires auth credentials and other optional auth parameters to be validated to access the website. The authentication URL may or may not be the same as the source URL. So, to enable access to a website,  provide the values for the following fields. ![Basic Auth](images/basic-auth.png "Basic Auth")
     <table>
     <tr>
     <td><strong>Field</strong>
@@ -219,7 +210,7 @@ You can edit the configuration for any crawl source at any time. This can be use
 !!!Note
     We can use all the properties of the web crawler except the crawl source. 
 
-Any changes made to the configuration become effective either when you manually recrawl the domain after making the changes or at the next scheduled recrawl time.  
+Any changes made to the configuration become effective either when you manually crawl the domain after making the changes or at the next scheduled crawl time.  
 
 To make any changes in the source configuration, click the source title from the list of configured sources and make appropriate changes under the **Configuration** tab. ![Update a web source](images/update-websource.png "Updating a web source")
 
@@ -317,7 +308,7 @@ This issue occurs when the crawler is unable to start or complete the crawl. It 
    </td>
   </tr>
   <tr>
-   <td>The base URL lacks crawlable links, and the sitemap is missing.
+   <td>The base URL lacks any links to crawl, and the sitemap is missing.
    </td>
    <td>Add webpage URLs to a CSV manually or using an external script, and provide the CSV as a crawl source.
    </td>
