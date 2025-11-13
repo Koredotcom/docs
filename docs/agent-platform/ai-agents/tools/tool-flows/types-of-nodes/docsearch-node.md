@@ -49,8 +49,6 @@ Configuring the DocSearch Node consists of the following steps:
 
 The integration of Search AI with (In)Agent Platform involves setting up a Search AI application, configuring it for integration, and modifying (In)Agent Platform to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
 
-Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-introduction/#creating-and-managing-jwt-apps-in-xo-platform){:target="_blank"} to complete the configuration.
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To receive answers from Search AI, you must enable the <b><i>Answer Generation</i></b> option under the <b>API scopes</b> section.</p></div>
@@ -126,8 +124,8 @@ After fetching the Search AI application credentials, configuring the source, an
 
   To set up a new connection, click **+ New Connection**. This will redirect you to the (In)Agent Platform Integrations page. Follow the steps mentioned [here](#step-2-link-the-search-ai-app-in-inagent-platform){:target="_blank"} to complete the integration.
 
- * (Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
-<img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;">
+ * (Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code.
+  <img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
