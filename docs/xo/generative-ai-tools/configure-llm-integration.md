@@ -1,4 +1,4 @@
-# Configure LLM Integration  (DRAFT)
+# Configure LLM Integration
 
 To use LLM and Generative AI features, you must configure the integration with a pre-built or custom LLM or XO GPT Module.
 
@@ -61,7 +61,7 @@ The Platform now provides Anthropic as an out-of-the-box (OOB) integration. This
 
 Steps to configure an Anthropic:
 
-1. Go to **Generative AI Tools** > **Models Library** > **Configure Now** for OpenAI, then click **Next**.
+1. Go to **Generative AI Tools** > **Models Library** > **Configure Now** for Anthropic, then click **Next**.
 2. Complete the [Authorization](models-library.md#authorization).
 
 3. In the model section, click **+Add** to configure [Provider's New LLM](#providers-new-llm).
@@ -71,7 +71,7 @@ Steps to configure an Anthropic:
     * If it fails, hover over the warning icon to view the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
 6. (Optional) enable Token Usage Limit toggle to track [LLM Usage Limit](models-library.md#manage-usage-limit). You can set the limit anytime after it's completion from more options.
 7. Click **Save**. The confirmation pop-up is displayed.
-8. Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
+8. Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
 
 ###	Amazon Bedrock Integration
@@ -92,7 +92,7 @@ Follow the steps below to configure the IAM role and trust policy:
 
 **1. Create the IAM Role in Your AWS Account**
 
-Create a new IAM role in your AWS account that grants access to invoke Amazon Bedrock models. This role will be assumed by the platform to make Bedrock API calls on your behalf.
+Create a new IAM role in your AWS account that grants access to invoke Amazon Bedrock models. This role is assumed by the platform to make Bedrock API calls on your behalf.
 
 You can follow the IAM role creation setup in the [AWS IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html).
 
@@ -140,7 +140,7 @@ Set the trust policy to allow the platform to assume the IAM role. Replace with 
 ```
 
 
-For private/on-prem deployments, the trust policy should point to your internal AWS IAM role.
+For private/on-prem deployments, the trust policy must point to your internal AWS IAM role.
 
 **3. Set the STS Endpoint**
 
@@ -216,7 +216,7 @@ The Platform enables you to integrate newly launched language models into the ou
 * **Immediate Access to New Models**: Quickly access and utilize newly launched language models without waiting for platform-specific prompt development.
 * **Custom Prompt Support**: Create custom prompts for new models, ensuring immediate usability while the platform gradually develops system prompts over time.
 * **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.  
-<img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
 
 **How to Add New LLM**
 
@@ -225,7 +225,7 @@ You can add new LLM during initial LLM integration or anytime after it's complet
 For example, Azure OpenAI. On the authorization tab, go to the **Models** section and click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description**, **Deployment ID**, then click **Next**. If you want to add more models, repeat the step. 
 
 * Model ID is assigned by the LLM provider.
-* Model Display Name is user-defined and used across the platform after integration is enabled.<img src="./images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+* Model Display Name is user-defined and used across the platform after integration is enabled.<img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
 
 

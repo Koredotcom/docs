@@ -1,6 +1,6 @@
 # Managing User groups
 
-On the **User groups** page in the **User management** module, you can create and manage logically related groups of users, as well as import groups, such as your company Active Directory groups. You can also create a custom group of users, for example, by geographical location, department title, or common interest. The following illustration is an example of the** User** **groups** page in the **User Management** module.
+On the **User groups** page in the **User management** module, you can create and manage logically related groups of users, as well as import groups, such as your company Active Directory groups. You can also create a custom group of users, for example, by geographical location, department title, or common interest. The following illustration is an example of the **User groups** page in the **User Management** module.
 
 <img src="../images/user-group.png" alt="user-group" title="user-group" style="border: 1px solid gray; zoom:80%;"> 
 

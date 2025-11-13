@@ -11,8 +11,8 @@ To view the Interactions dashboard, follow the steps:
 
   * CUSTOMER: The contact who initiated the conversation.
      * Direction (Icon): The direction of the conversation –  Inbound or Outbound.
-    * LANGUAGE (Icon): The language of the conversation.
-    * CHANNEL (Icon): The Channel of the conversation – Voice, Chat, or Email.
+    * Language (Icon): The language of the conversation.
+    * Channel (Icon): The Channel of the conversation – Voice, Chat, or Email.
 
     Administrators can configure the system to hide customer Email IDs and Phone Numbers in the Interactions dashboard, Details slider, and Export file. Instead, the system displays the internal User ID. [Learn more](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md).
 
@@ -52,9 +52,9 @@ Steps to perform supervisor actions:
   <img src="../images/supervisor-actions-1.png" alt="Supervisor Actions 1" title="Supervisor Actions 1" style="border: 1px solid gray; zoom:80%;">
 
 4. Click the ongoing conversation. You can perform the following actions in the conversation:
-    1. Join Conversation
-    2. Assign
-    3. Change Queue  
+    * Join Conversation
+    * Assign
+    * Change Queue  
     <img src="../images/supervisor-actions-2.png" alt="Supervisor Actions 2" title="Supervisor Actions 2" style="border: 1px solid gray; zoom:80%;">
 
 ## Search Interactions
@@ -110,7 +110,7 @@ Steps to export conversation data/transcripts:
     !!! Notes
 
         * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
-        * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
+        * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
         * Up to 25 conversations can be selected for exporting transcripts. If a selected conversation does not have a transcript or the system cannot retrieve one, a blank transcript is exported for that conversation.
         * A status message is displayed at the start of the export. On completion, the file is downloaded.
         * The following [Call Control Parameters](../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters) must be added to view the Download Latency Report option.
@@ -141,18 +141,18 @@ Steps to Preview and Download Events:
     <img src="../images/export-completed.png" alt="Export Completed" title="Export Completed" style="border: 1px solid gray; zoom:80%;">  
 
     The following events and their timestamps are exported for chat and voice conversations.  
-        1. Routing Initiation  
-        2. Conversation Acceptance  
-        3. Conversation Rejection  
-        4. Conversation Transfer  
-        5. Transfer Failures  
-        6. Agent join  
-        7. Agent left  
-        8. Agent Consultation  
-        9. Skill Change  
-        10. Disposition Updates  
-        11. After-Call Work (ACW)  
-        12. Conversation Closure  
+    * Routing Initiation  
+    * Conversation Acceptance  
+    * Conversation Rejection  
+    * Conversation Transfer  
+    * Transfer Failures  
+    * Agent join  
+    * Agent left  
+    * Agent Consultation  
+    * Skill Change  
+    * Disposition Updates  
+    * After-Call Work (ACW)  
+    * Conversation Closure  
 
 ## Edit Dispositions from the Interactions Tab
 
@@ -286,15 +286,20 @@ The Insights to Logs panel provides details of the conversation between the cont
 
 Click the interaction to view the Insights to Logs panel. The following tabs are displayed:
 
-1. TRANSCRIPT – (formerly CHAT HISTORY)  
-2. DETAILS  
-3. USER  
-4. IDENTIFIERS
+* Transcript – (formerly Chat History)  
+* Details  
+* User  
+* Identifiers
 
-Icons beside the Insights to Logs header show the Direction (inbound or outbound), Language, and Channel.  
+Icons beside the Insights to Logs header show the following details:
+
+* Direction (inbound or outbound)
+* Language
+* Sentiment (Positive, Neutral, etc.)
+* Channel (Voice, Chat, or Email)  
 <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
 
-**TRANSCRIPT**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
+**Transcript**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
 <img src="../images/transcripts.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
 
 The transcripts tab also shows the call transfer stages:
@@ -311,44 +316,43 @@ The transcripts tab also shows the call transfer stages:
 
     * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties).
 
-**DETAILS**: This tab shows the following details:
+**Details**: This tab shows the following details:
 
-**Start**: Conversation start time  
-**End**: Conversation end time  
-**Agents**: Name of the agent  
-**Consulting agents**: Name of the consulting agent  
-**Joined Users**: Names of users who joined this conversation  
-**Queues**: The queues where the call was handled  
-**Skills**: The assigned skills  
-**Status**: Conversation status  
-**Mode**: Mode of the conversation  
-**CSAT**: CSAT survey score  
-**Disposition**: Dispositions assigned  
-**Notes**: Notes added to the conversation (view only)  
-**Snooze Count**: Number of times the conversation was snoozed  
-**Snooze Duration**: Duration for which the conversation was snoozed  
-**Session-level tags**: Session-level tags assigned to the conversation.  
+`Start`: Conversation start time  
+`End`: Conversation end time  
+`Agents`: Name of the agent  
+`Consulting agents`: Name of the consulting agent  
+`Joined Users`: Names of users who joined this conversation  
+`Queues`: The queues where the call was handled  
+`Status`: Conversation status  
+`Mode`: Mode of the conversation  
+`CSAT`: CSAT survey score  
+`Disposition`: Dispositions assigned  
+`Notes`: Notes added to the conversation (view only)  
+`Snooze Count`: Number of times the conversation was snoozed  
+`Snooze Duration`: Duration for which the conversation was snoozed  
+`Session-level tags`: Session-level tags assigned to the conversation.  
 <img src="../images/details-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
 
-**USER**: This tab shows the following details:
+**User**: This tab shows the following details:
 
-**Customer Phone**: Customer’s phone number.  
-**Customer Name**: Customer’s name.  
-**Customer Email**: Customer’s email address.  
-**Channel User ID**: The user ID of the conversation channel.  
-**User ID**: Agent’s user ID.  
-**User-level tags**: User-level tags assigned to the conversation.  
+`Customer Phone`: Customer’s phone number.  
+`Customer Name`: Customer’s name.  
+`Customer Email`: Customer’s email address.  
+`Channel User ID`: The user ID of the conversation channel.  
+`User ID`: Agent’s user ID.  
+`User-level tags`: User-level tags assigned to the conversation.  
 <img src="../images/user-insights-to-logs.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
 
-**IDENTIFIERS**: This tab shows the following details:
+**Identifiers**: This tab shows the following details:
 
-**Call ID**: The call ID (for voice calls)  
-**Session ID**: The session ID.  
-**Channel User ID**: The user ID of the conversation channel.  
-**Call Conversation ID**: The conversation ID (for voice calls)  
-**Agent Conversation ID**: The agent conversation ID.  
-**User ID**: The agent’s user ID.  
-**Campaign Instance ID**: The campaign instance ID (for campaigns).
+`Call ID`: The call ID (for voice calls)  
+`Session ID`: The session ID.  
+`Channel User ID`: The user ID of the conversation channel.  
+`Call Conversation ID`: The conversation ID (for voice calls)  
+`Agent Conversation ID`: The agent conversation ID.  
+`User ID`: The agent’s user ID.  
+`Campaign Instance ID`: The campaign instance ID (for campaigns).
 
 Click the **Copy All** button to copy all the identifier details (from the details tab) like:
 
@@ -429,17 +433,17 @@ List of recording status and messages:
 
 | **State**               | **Message** |
 |-------------------------|-------------|
-| **failed**              | Media generation failed due to a technical issue. Please contact your administrator. |
-| **media_unavailable**   | No audio recording found on the server. Please contact your administrator. |
-| **call_in_progress**    | Media unavailable while the call is in progress. Please recheck once the call has ended. |
-| **media_in_progress**   | Media generation is in progress. Please wait for a few minutes. |
-| **partial_download_failed** | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue. Please contact your administrator.” appears. |
-| **partial_upload_failed**   | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue” appears. |
-| **partial_failed**      | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue” appears. |
-| **fetching_in_progress** | Generating your call recording... This may take a few minutes. Please wait. |
-| **initial_fetch_failed** | We couldn’t load the call recording. Please try again. |
-| **retry_failed**        | Still unable to fetch the recording. Please try again after 15 minutes. <br>**Note**: Do not restrict the number of times users can click the Retry button. Also, do not restrict job execution after 24 hours based on the number of retries. |
-| **24hr_retry_failed**   | We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance. |
+| `failed`              | Media generation failed due to a technical issue. Please contact your administrator. |
+| `media_unavailable`   | No audio recording found on the server. Please contact your administrator. |
+| `call_in_progress`    | Media unavailable while the call is in progress. Please recheck once the call has ended. |
+| `media_in_progress`   | Media generation is in progress. Please wait for a few minutes. |
+| `partial_download_failed` | Unable to fetch the recording. Please click the button below to retry.  |
+| `partial_upload_failed`   | Unable to fetch the recording. Please click the button below to retry.  |
+| `partial_failed`      | Unable to fetch the recording. Please click the button below to retry.  |
+| `fetching_in_progress` | Generating your call recording... This may take a few minutes. Please wait. |
+| `initial_fetch_failed` | We couldn’t load the call recording. Please try again. |
+| `retry_failed`        | Still unable to fetch the recording. Please try again after 15 minutes.  |
+| `24hr_retry_failed`  | We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance. |
 
 ### Troubleshooting
 
@@ -457,7 +461,7 @@ Below are the different status messages you may notice and what they mean:
 
 | **Status message**                                                                                                      | **What it means**                                                                                                            | **What you can do**                                                                                                            |
 | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Generating your call recording...** This may take a few minutes.                                                      | The recording server is still processing the call audio.                                                                     | No action needed — please wait for 10 minutes and refresh the page.                                                            |
+| **Generating your call recording...** This may take a few minutes.                                                      | The recording server is still processing the call audio.                                                                     | No action needed — wait for 10 minutes and refresh the page.                                                            |
 | **We couldn’t load the call recording. Please try again.**                                                              | There was a temporary issue fetching the recording.                                                                          | Click **Retry** to try fetching the recording again.                                                                           |
 | **Still unable to fetch the recording. Please try again after 15 minutes.**                                             | The system retried but still couldn’t get the recording.                                                                     | Wait for about 15 minutes and click **Retry** again.                                                                           |
 | **We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance.** | The system made multiple attempts (including automated background jobs) but couldn’t retrieve the recording from the server. | Contact your administrator or support team for help. Our team reviews the logs and attempts to recover the recording manually. |

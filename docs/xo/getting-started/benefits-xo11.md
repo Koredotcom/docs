@@ -531,7 +531,7 @@ Search AI supports advanced embedding models to improve semantic understanding a
 
 <font size="4"> Gen AI Capabilities</font>
 
-* [Custom LLM support](../generative-ai-tools/models-library.md#custom-llm-integration-framework) for answer generation without requiring middleware
+* [Custom LLM support](../generative-ai-tools/configure-llm-integration.md#custom-llm-integration) for answer generation without requiring middleware
 * [Dynamic Models and Prompts for answers](../apis/searchai/advance-search.md) - Support for runtime selection of prompts and LLM models within the answer generation API, allowing developers to tailor responses dynamically based on query intent, user context, or application requirements.
 
 

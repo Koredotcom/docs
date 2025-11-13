@@ -44,6 +44,7 @@ plugins:
   - redirects:
       redirect_maps:
         'getting-started/quick-start-guide.md': 'getting-started/setup-guide.md'
+        'user-management/managing your users.md': 'user-management/managing-your-users.md'
 extra:
   version:
     provider: mike
@@ -165,7 +166,7 @@ nav:
       - Amazon Q: integration/amazon-q.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
-      - Add Users: user-management/managing your users.md
+      - Add Users: user-management/managing-your-users.md
       - Manage Groups: user-management/managing-your-groups.md
     - LLM Configuration:
       - General Purpose: llm-configuration/general-purpose.md

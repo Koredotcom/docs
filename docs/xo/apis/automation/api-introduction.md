@@ -27,9 +27,9 @@ Steps to create a JWT Client App from the Platform:
 
 5. Select **Enforce JTI**, **JWE**, or both as per your requirements to secure the connections with the Platform:
 
-    * **Enforce JTI (JWT ID) Claim** – After enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
+    * **Enforce JTI (JWT ID) Claim**: After enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
 
-    * **Enforce JWE Encryption** (Generating JWT token) – To access the Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
+    * **Enforce JWE Encryption** (Generating JWT token): To access the Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
 
 
     * **Enforce Response Payload Encryption**: Provide the public key used by the Platform to encrypt Public API response payloads that include Token Introspection and User Information data. Use the same key to decrypt the payload. Refer [How Response Payload Encryption Works](#how-response-payload-encryption-works).    
@@ -118,7 +118,7 @@ Steps to associate API Scopes to a Client JWT App from the Platform:
 
 3. The app’s **Client ID** and **Client Secret** are displayed on the screen. Copy these values. 
 
-4. Select the appropriate **Automation** or **Contact Center** scopes to allow the client app to access the respective APIs. (If appropriate scopes are not selected, then the client apps cannot access the APIs).
+4. Select the appropriate **Automation** or **Contact Center** scopes to allow the client app to access the respective APIs. (If appropriate scopes aren't selected, then the client apps can't access the APIs).
 
 5. Click **Save**.
 
