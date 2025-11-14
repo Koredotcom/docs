@@ -440,6 +440,7 @@ nav:
         - User Feedback Handling: searchai/feedback.md
     - How Tos:
         - Integrate Custom Embedding Model: searchai/howto/integrate-custom-embedding-model.md
+        - Use information in Images to Generate Answers: searchai/howto/customize-response-by-channel.md
     - Best Practices: 
         - Data Ingestion: searchai/best-practices/data-ingestion.md
         - Chunking Strategy: searchai/best-practices/chunking-strategy.md
@@ -586,22 +587,29 @@ nav:
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
       - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
-      - Genesys Cloud CX: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md
+      - Cloud CX: 
+        - Genesys Cloud CX: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md
+        - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - NICE CX:
         - NICE MAX Desktop (Chat and Voice): agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
         - NICE MAX Desktop for Outbound Calls: agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md
         - NICE Agent Desktop Voice: agentai/integration/nice-agent-desktop-voice/nice-agent-desktop-voice.md
-      - Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
-      - Salesforce NICE CX-CTI for Outbound Calls: agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md
-      - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
-      - Salesforce OmniChannel Chat (Messaging): agentai/integration/salesforce-omnichannel-chat-messaging/agentai-configuration-with-salesforce-omnichannel-chat-messaging.md
-      - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md
-      - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md 
-      - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
-      - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
-      - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
-      - Amazon Connect CCP Integration with Agent AI Voice: agentai/integration/amazon-connect-ccp-agentai-voice/amazon-connect-ccp-integration-with-agentai-voice.md 
-      - Amazon Connect CCP Integration with Agent AI Chat: agentai/integration/amazon-connect-ccp-agentai-chat/amazon-connect-ccp-integration-agentai-chat.md
+      - Salesforce NICE CX-CTI:
+        - Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
+        - Salesforce NICE CX-CTI for Outbound Calls: agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md
+      - Salesforce:
+        - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
+        - Salesforce OmniChannel Chat (Messaging): agentai/integration/salesforce-omnichannel-chat-messaging/agentai-configuration-with-salesforce-omnichannel-chat-messaging.md
+        - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md
+      - ServiceNow:
+        - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md 
+      - FIVE9:
+        - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
+      - AWS Third Party Applications:
+        - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
+      - Amazon Connect CCP:
+        - Amazon Connect CCP Integration with Agent AI Voice: agentai/integration/amazon-connect-ccp-agentai-voice/amazon-connect-ccp-integration-with-agentai-voice.md 
+        - Amazon Connect CCP Integration with Agent AI Chat: agentai/integration/amazon-connect-ccp-agentai-chat/amazon-connect-ccp-integration-agentai-chat.md
     - Agent AI Web SDK:
       - Introduction: agentai/integration/websdk/introduction.md
       - SDK Fields and Details: agentai/integration/websdk/sdk-fields-and-details.md
@@ -617,6 +625,7 @@ nav:
       - Sentiment Chart: agentai/integration/websdk/sentiment-charts.md
       - Other Events: agentai/integration/websdk/other-events.md
       - Error Codes: agentai/integration/websdk/error-codes.md
+      - Trial for Language Dropdown: agentai/integration/websdk/trial-for-language-dropdown.md 
   - GenAI Tools:
     - About GenAI Tools: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 

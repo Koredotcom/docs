@@ -84,7 +84,7 @@ Note:
 
 ![Example](images/servicenow/example2.png "Example")
 
-* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied.  For instance, the following filter can be used to select published articles with a given Sys Id.
+* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied. For instance, the following filter can be used to select published articles with a given Sys Id.
 
 ![Example](images/servicenow/example3.png "Example")
 
@@ -157,7 +157,7 @@ For each incident in ServiceNow, **Search AI** enforces access control based on 
 * Users associated with the incident through specific incident fields, such as: Creator, Caller, Watch List Users.
 * These users are added to the sys_racl field using their email ID.
 
-**Summary – <code>sys_racl</code> Contents for an Incident Record**
+**Summary - <code>sys_racl</code> Contents for an Incident Record**
 
 To summarize, the **sys_racl** field for an incident record contains:
 
