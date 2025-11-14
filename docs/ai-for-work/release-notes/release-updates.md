@@ -12,7 +12,11 @@ This update includes new feature and feature enhancement summarized below.
 
 **Enterprise Directory**
 
-Introducing the Enterprise Directory – a centralized employee contact management system that allows end users to easily search, filter, and view colleague information across your organization. Currently, admins can configure the directory by feeding data through the Push API source. The platform is now enabled with Enterprise Directory capabilities, featuring intelligent search with customizable filters (Department, Designation, First Name, Location), rich contact cards with profile details, and streamlined contact management for enhanced organizational connectivity.
+Introducing the Enterprise Directory – a centralized employee contact management system that allows end users to easily search, filter, and view colleague information across your organization.
+
+Admins can configure the directory by feeding data through the Push API source. The platform is now enabled with Enterprise Directory capabilities, featuring intelligent search with customizable filters (Department, Designation, First Name, Location), rich contact cards with profile details, and streamlined contact management for enhanced organizational connectivity.
+
+[Learn more :octicons-arrow-right-24:](../user-management/enterprise-directory.md)
 
 <font size="4">Feature Enhancement</font>
 
