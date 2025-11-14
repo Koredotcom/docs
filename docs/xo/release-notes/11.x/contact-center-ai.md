@@ -21,7 +21,7 @@ A new Campaign Logs section has been added to capture and view web campaign acti
 
 <font size="4">API</font>
 
-**Call Details API v1 – Enhanced with Disconnect Event Fields**
+**Call Details API (v1) – Enhanced with Disconnect Event Fields**
 
 The Call Details API (v1) now includes disconnect event fields, providing better visibility into conversation termination details. This enhancement maintains backward compatibility while improving reporting and analytics.
 
