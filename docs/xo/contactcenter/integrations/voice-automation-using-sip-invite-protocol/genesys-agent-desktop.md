@@ -218,7 +218,7 @@ Value: **True**
 
 ## Test Your Integration  
 
-Make a call to the [CCAI Number](#kore-contact-center-ai-configuration-for-automation), purchased as part of the previous steps. After a successful Agent transfer of the call from CCAI to Genesys, the signed-in Genesys agent can accept incoming calls.   
+Make a call to the [CCAI Number](#contact-center-ai-configuration-for-automation), purchased as part of the previous steps. After a successful Agent transfer of the call from CCAI to Genesys, the signed-in Genesys agent can accept incoming calls.   
 
 1. Accept the call in Genesys by clicking the **Answer** button.   
 <img src="../images/accept-call-in-genesys-26.png" alt="accept-call-in-genesys" title="accept-call-in-genesys" style="border: 1px solid gray; zoom:80%;">   
