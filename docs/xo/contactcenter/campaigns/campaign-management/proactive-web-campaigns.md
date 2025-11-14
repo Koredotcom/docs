@@ -375,7 +375,7 @@ Stopping a web campaign resets the data, and a new instance of the campaign is c
 Steps to stop a web campaign:
 
 1. Click the `Stop` button under Actions for the campaign you want to stop.
-2. Click `Stop` to confirm. 
+2. Click `Stop` to confirm.
 
 ### Delete a Proactive Web Campaign
 
@@ -441,7 +441,7 @@ Supervisors can import all campaigns contained in an exported file. Partial impo
 
 | **Condition** | **User Message** | **Description** |
 |----------------|------------------|-----------------|
-| `All campaigns imported successfully` | NN Campaigns imported successfully! | Displays the number of campaigns (**NN**) successfully imported. |
+| `All campaigns imported successfully` | NN Campaigns imported successfully! | Displays the number of campaigns (`NN`) successfully imported. |
 | `Partial import (some failed)` | Import partially successful. XX successfully imported, YY failed. Please see the Campaigns log for more details.| Displays counts of successful (`XX`) and failed (`YY`) imports. |
 
 **Duplicate Campaign Handling**
