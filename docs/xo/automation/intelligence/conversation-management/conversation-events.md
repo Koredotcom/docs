@@ -135,12 +135,7 @@ The following are some of the scenarios and the repeat bot response event behavi
    <td>Group node sub-intent gets prioritized.
    </td>
   </tr>
-  <tr>
-   <td>If the repeat event is enabled in a Standard AI Agent and disabled in the Universal Bot (UB)
-   </td>
-   <td>UB settings take precedence, and the event defined in UB is triggered even if the current conversation context is in a Linked Bot.
-   </td>
-  </tr>
+
 </table>
 
 ### Use Case Scenario

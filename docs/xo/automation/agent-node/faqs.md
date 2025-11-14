@@ -30,7 +30,7 @@ To configure OOB integrations:
 3. The platform verifies these by calling the provider's endpoints.
 4. OOB system models come with default prompts, while dynamically added models require custom prompts. 
 
-[Learn more](../../generative-ai-tools/models-library.md#pre-built-llm-integration).
+[Learn more](../../generative-ai-tools/models-library.md).
 
 
 ### How do I set up a custom model (Bring Your Own Model)?
@@ -44,7 +44,7 @@ To set up a custom model, follow these steps:
 3. The platform will validate the credentials and configure the model.
 4. Once configured, the custom model can be utilized with tailored prompts for various GenAI and LLM features.
 
- [Learn more](../../generative-ai-tools/models-library.md#custom-llm-integration-framework).
+ [Learn more](../../generative-ai-tools/configure-llm-integration.md#custom-llm-integration).
 
 
 ### Are XO GPT models compatible with Agent Nodes?

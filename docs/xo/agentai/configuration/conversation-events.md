@@ -47,7 +47,7 @@ In this section, you can customize greeting messages at the beginning of the con
 1. Click **CONFIGURATION** > **Conversation events** > **Welcome Events**.
 2. Click to expand the **Configure Greeting Messages** section.
 3. Click the **toggle** button to enable it (if it’s in **Disabled** status).
-4. Select a channel – **Chat**,**Voice**, or **Email**.
+4. Select a channel—**Chat**,**Voice**, or **Email**.
 5. Select a language. The app's language appears by default.
 6. Click **+ Add Message** > **New Messages** to add a new greeting message.  
    <img src="../welcome-events-images/adding-new-greeting-messages-2.png" alt="adding-new-greeting-messages" title="adding-new-greeting-messages" style="border: 1px solid gray; zoom:80%;"> 
@@ -96,10 +96,10 @@ In this section, you can select what to run first between the dialog tasks and g
 
 ## Exit Events 
 
-Exit Events mark the end of a customer interaction. This section lets you configure a dialog task, a conversation summary, or an Agentic app to run automatically when the end-of-conversation event triggers. While multiple options are available, you must select one of the following combinations: 
+Exit Events mark the end of a customer interaction. This section lets you configure a dialog task, conversation summary, or an Agentic app to run automatically when the end-of-conversation event triggers. While multiple options are available, you must select one of the following combinations: 
 
-* Configure End of Conversation Dialog Task + Conversation Summary > OOTB Kore Summarization
-* Conversation Summary + Configure End of Conversation Agentic App 
+* **Configure End of Conversation Dialog Task** + **Conversation Summary (OOTB Kore Summarization)**
+* **Conversation Summary** + **Configure End of Conversation Agentic App**  
 
 ### Configure End of Conversation Dialog Task 
 
@@ -112,16 +112,16 @@ This section lets you select a dialog task to run automatically when an exit eve
 3. Click **Exit Events**.  
    <img src="../welcome-events-images/exit-events-1.png" alt="exit-events" title="exit-events" style="border: 1px solid gray; zoom:80%;">  
 
-4. Select a channel – **Chat**, **Voice**, or **Email**. 
+4. Select a channel—**Chat**, **Voice**, or **Email**. 
 5. Click the toggle to enable **Configure End of conversation Dialog Task**.  
-    1. The following confirmation message appears, if the **Conversation Summary** > **Custom Dialog Task** was enabled:  
+   * The following confirmation message appears, if the **Conversation Summary** > **Custom Dialog Task** was enabled:  
     <img src="../welcome-events-images/disable-custom-summarization-2.png" alt="disable-custom-summarization" title="disable-custom-summarization" style="border: 1px solid gray; zoom:80%;">  
 
-        !!! note
+       !!! note
 
-            For new accounts, the **Conversation Summary** > **OOTB Kore Summarization** is enabled by default.  
+           For new accounts, the **Conversation Summary** > **OOTB Kore Summarization** is enabled by default.  
 
-    2. The following confirmation message appears, if the **Configure End of Conversation Agentic App** was enabled:  
+   * The following confirmation message appears, if the **Configure End of Conversation Agentic App** was enabled:  
     <img src="../welcome-events-images/disable-agentic-exit-events-3.png" alt="disable-agentic-exit-events" title="disable-agentic-exit-events" style="border: 1px solid gray; zoom:80%;">  
 
 6. Click **Yes, Proceed**. 
@@ -139,7 +139,7 @@ This section lets you configure how to autogenerate a conversation summary at th
 1. Sign in to **AI for Service** > **Agent AI**.
 2. Go to **Configurations**> **Conversation Events**.
 3. Click **Exit Events**.
-4. Select a channel – **Chat**, **Voice**, or **Email**.
+4. Select a channel—**Chat**, **Voice**, or **Email**.
 5. Click the toggle to enable **Conversation Summary**.
 6. Select either **OOTB Kore Summarization** or **Custom Dialog Task**.
     1. If you select **Custom Dialog Task**, the following confirmation message appears (if the **Configure End of Conversation Dialog Task was enabled**):  

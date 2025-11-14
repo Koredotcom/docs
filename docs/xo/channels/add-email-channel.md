@@ -77,23 +77,17 @@ Steps to publish email addresses in the Kore domain:
 4. A success message is displayed and the email address is published.  
     <img src="../images/email-published.png" alt="Email Address Published" title="Email Address Published" style="border: 1px solid gray; zoom:80%;">
 
-
-
 ## Custom Email Domain
 
 Custom email domains add a professional look to your email communications, reinforcing your brand identity with every email you send or receive. Customers perceive custom emails as established, reliable, and legitimate compared to generic email addresses. For example, You can create [help@yourbusiness.com](mailto:help@yourbusiness.com), a branded email account that uses your organization's domain name instead of a domain provided by Kore.ai. You can add up to three email accounts (sales@, support@, info@, etc.) in each custom domain for better organization and delegation. By granting access to your email accounts within the domain, you can track the activity of the configured accounts, respond to incoming emails, and send outbound emails. Email filters are less likely to flag emails from custom domains as spam, ensuring better deliverability rates.
 
 Currently, we support two types of custom domains: Standard and Advanced. The Standard has a limitation of 5 domains and 5 emails per domain, whereas the Advanced supports 50 domains and 50 emails per domain.
 
-
 ### Standard Custom Domain
 
 Follow these steps to set up a standard custom domain and add an email ID to it.
 
-
 #### Step 1: Create a Standard Custom Domain
-
-
 
 1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
 2. Click **+ New Domain** and select **Custom Domain**.
@@ -102,27 +96,25 @@ Follow these steps to set up a standard custom domain and add an email ID to it.
 
 4. The domain created a success message is displayed.
 
-
 #### Step 2: Create a Custom Email Address
-
-
 
 1. On the Email Channel page, click **+ New Email ID**.
 2. On the email configuration tab, enter the following details.
     1. Email Address
     2. Display Name
-    3. Password
-    4. Enter the following details to set up the mail SSL connection for Incoming and Outgoing emails.
+    3. +Add User Name (If a User Name is added, the system uses it for authentication instead of the email address)
+    4. Password
+    5. Enter the following details to set up the mail SSL connection for Incoming and Outgoing emails.
         * Protocol
         * Incoming/Outgoing email server
         * Port
         * Select “Use SSL to connect” if you want to use a Secure Socket Layer.
-    5. Choose whether to use the custom email for inbound, outbound, or both under **Additional Settings**.
-    6. Choose whether you want to send a contact card to all users as a part of the introduction message under **Send contact card (.VCF)**.
-    7. Under the Enable Channel section, select **Yes** to enable the channel.  
-        <img src="../images/custom-email-configuration.png" alt="Email Configuration" title="Email Configuration" style="border: 1px solid gray; zoom:50%;">
+    6. Choose whether to use the custom email for inbound, outbound, or both under **Additional Settings**.
+    7. Choose whether you want to send a contact card to all users as a part of the introduction message under **Send contact card (.VCF)**.
+    8. Under the Enable Channel section, select **Yes** to enable the channel.  
+        <img src="../images/custom-email-config.png" alt="Email Configuration" title="Email Configuration" style="border: 1px solid gray; zoom:50%;">
 
-    8. Turn on the **Email Template Design (Optional)** toggle to configure the header and footer of the emails that are sent via the configured email address, and do the following:
+    9. Turn on the **Email Template Design (Optional)** toggle to configure the header and footer of the emails that are sent via the configured email address, and do the following:
         1. Click **Edit Header** and **Edit Footer** to configure the header and footer details.  
             <img src="../images/email-template-design.png" alt="Email Template Design" title="Email Template Design" style="border: 1px solid gray; zoom:80%;">
 

@@ -12,7 +12,7 @@ This page has the following sections:
 This section lets you set your preferences based on the channels–Chat, Voice, and Email–with a channel-specific default selection of options. The following option toggles are available to select under this section:
 
 * **Proactive Mode**: This widget automates intent identification, entity extraction, and transcript generation. It enables automatic (proactive) transcript logging and intent suggestions. When enabled, you can also use the “Automatic Dialog Task Entity Extraction” option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcript logging. However, you can still use the greetings, search bar, and My AI Agent (Bot) automations. By default, this widget is enabled for all three channels.
-    * The Assist tab/Run button remains disabled. Only Run with agent’s input will be available.
+    * The **Assist** tab/**Run** button remains disabled. Only **Run with agent’s input** is available.
     * The Playbook feature functions as follows:
         * For Dynamic playbooks, identification through the bulb icon and adherence are not functional, but tick-off and step progression continue to function.
         * For Primary playbooks, the automatic adherence or automatic tick-off does not happen.
@@ -53,16 +53,7 @@ This section lets you set your preferences based on the channels–Chat, Voice, 
 
         * Continue from the Last Message: The chat history page scrolls down to the bottom of the page (last message).
 
-        * Configure Dialog Task: The user has to select one of the dialog tasks associated with an app from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.
-
-* **Transcript Tab**: This widget appears only for the **Voice** channel and lets you control the appearance of the Transcript tab in the Agent AI widget. By default, this widget is enabled.
-
-* **Auto Summarization**: This widget lets you automatically generate a summary of the conversation when it ends. Agents can copy the summary and save it into the **Notes** or **Remark** field while closing the conversation. By default, this widget is enabled for Voice and Chat channels only, and it also has the option to select the **Submit** button.
-
-    Third-party agent desktops can use the **Auto Summarization Model** widget to manage the automatic summarization process. They can select Kore’s default automatic summarization or the “Custom Dialog Task“ option, which lets them select a language-specific dialog task, enabling them to customize the Conversation Summary.
-
-    !!! note
-        The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
+        * Configure Dialog Task: The user has to select one of the dialog tasks associated with an app from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.  
 
 ### Steps to set channel specific preferences
 
@@ -104,24 +95,7 @@ This section lets you set your preferences based on the channels–Chat, Voice, 
         !!! note
             The **Search AI** and **Agentic App** fields are disabled until they are configured. A warning message prompts you to configure them before use.  
 
-12. Enable or disable the **Auto Summarization** toggle.
-13. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
-14. Select or clear the **Submit** button under the **Auto Summarization** section.
-
-    Under the **Auto Summarization Model** section, select:
-
-    * **OOTB Kore Summarization**: For Kore’s default auto summarization.
-
-    * **Custom Dialog Task**: To select a language-specific dialog task that is displayed based on the selected language. The Custom Dialog Task field displays a list of dialog tasks or child apps based on app selection at the app level. At the app level, if you have selected:
-
-        * **Universal App**: The backend logic detects it and populates its associated Child Apps. You can expand each Child App to view and select its dialog task.
-
-        * **Child App/Normal/Singular App**: The Dialog Tasks list displays dialogs linked to the selected app, and you can select any from the displayed list.
-
-        !!! note
-            The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
-
-14. Click **Save** to save your settings.
+12. Click **Save** to save your settings.  
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent AI General Settings

@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - ashishorg-stage
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true      
@@ -20,12 +21,12 @@ jobs:
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.ai-for-work.yml
+          args: build --strict --config-file=mkdocs.en.ai-for-work.yml
       - name: Build EN Agent Platform docs
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.agent-platform.yml
+          args: build --strict --config-file=mkdocs.en.agent-platform.yml
       - name: Build EN AI for Process docs
         uses: ./
         with:

@@ -28,9 +28,9 @@ Steps to configure translation:
 
 ## Runtime / Real-time Translation
 
-At runtime, this configuration translates agent content—including search responses, Dialog Tasks, text-only templates, and conversation transcripts—into the selected language from the list. Agents can switch languages in the CCAI console, which updates the widget content and overrides other language settings. In Conversation Logs, this feature adds options such as a language dropdown list and a dual view of original and translated text. 
+At runtime, this configuration translates agent content—including search responses, Dialog Tasks, text-only templates, and conversation transcripts—into the selected language from the list. Agents can switch languages in the CCAI console, which updates the widget content and overrides other language settings. In Conversation Logs, this feature adds options such as a language dropdown list and a dual view of original and translated text.
 
-### Language Selection on the CCAI Console 
+### Language Selection on the CCAI Console
 
 1. Go to **Contact Center AI** > **Console**, and select a language from the **language** dropdown list.  
     <img src="../images/console-language-selection.png" alt="console-language-selection" title="console-language-selection" style="border: 1px solid gray; zoom:80%;">  
@@ -39,7 +39,11 @@ At runtime, this configuration translates agent content—including search respo
     <img src="../images/console-default-language.png" alt="console-default-language" title="console-default-language" style="border: 1px solid gray; zoom:80%;">  
 
 3. The chat messages in the console and the text-only content in the **Assist**, **Search**, and **My Bot** tabs get translated into the selected language.  
-    <img src="../images/translated-content.png" alt="translated-content" title="translated-content" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/translated-content.png" alt="translated-content" title="translated-content" style="border: 1px solid gray; zoom:80%;">
+
+!!! note "Preferred Language Setting"
+
+    During automation, the system can detect the user’s language and set it as the preferred translation language. To implement this behavior, refer to [Utils](../../../flows/node-types/utils.md#set-preferred-language-for-translation).
 
 ### Conversation Logs Language
 

@@ -111,7 +111,7 @@ The user receives the final output, which includes both the weather update and t
 
 ## Supported Models for Tool Calling
 
-Tool calling functionality is available when commercial models are added to an AI node. However, only specific commercial models support this feature. Currently, Platform-hosted and Hugging Face models do not support tool calling. 
+Tool calling functionality is available when commercial models are added to an AI node. However, only specific commercial models support this feature. Currently, Inception-hosted and Hugging Face models do not support tool calling. 
 
 Below is a list of models across various platforms that currently support tool calling in Agent Platform:
 
