@@ -2,7 +2,7 @@
 
 ## Automatic Speech Recognition (ASR)
 
-Kore supports the following third-party service providers for [ASR services](../voice-gateway/configure-voice-gateway.md#voice-preferences):
+We support the following third-party service providers for [ASR services](../voice-gateway/configure-voice-gateway.md#voice-preferences):
 
 | ASR                          | On-Prem / Cloud     | Languages                                                                                                       | Regions                                                                                                                                                      | Word Error Rate (WER)     | Comments                                                                                                                                                                                                                                           |
 |-----------------------------|---------------------|------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -16,7 +16,7 @@ Kore supports the following third-party service providers for [ASR services](../
 
 ## Text to Speech (TTS)
 
-Kore supports the following third-party service providers for [TTS services](../voice-gateway/configure-voice-gateway.md#voice-preferences):
+We support the following third-party service providers for [TTS services](../voice-gateway/configure-voice-gateway.md#voice-preferences):
 
 | TTS               | On-Prem / Cloud     | Languages                                                                                                   | Regions                                                                                                                        | Comments                                                                                                                                                                                       |
 |-------------------|---------------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -31,7 +31,7 @@ Kore supports the following third-party service providers for [TTS services](../
 
 ## Voice Biometrics
 
-Kore supports the following third-party service providers for voice biometrics:
+We support the following third-party service providers for voice biometrics:
 
 | Voice Biometric Vendor | Voice Biometric Engine | On-Prem / Cloud | Comments            |
 |------------------|-----------------------------------------------|------------------|----------------------|

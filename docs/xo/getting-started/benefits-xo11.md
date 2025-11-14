@@ -43,7 +43,7 @@ Key Capabilities:
 * Management of common conversation intents such as pausing, repeating information, restarting conversations, and transferring to human agents.
 * Identifying the granular intents based on the knowledge graph. DialogGPT uses an LLM to orchestrate the conversation, ask clarifying questions, and determine the granular intent.
 * Out-of-the-box event handlers to fulfill the user’s request.
-* Identifying the child bot intents from Universal Bot without the need for Bot Scoping Training; applicable for Universal Bots.
+
 
 With DialogGPT, businesses can overcome the limitations of traditional models, ensuring their agents provide a more accurate, responsive, and efficient user experience, all while simplifying the development process.
 
@@ -531,7 +531,7 @@ Search AI supports advanced embedding models to improve semantic understanding a
 
 <font size="4"> Gen AI Capabilities</font>
 
-* [Custom LLM support](../generative-ai-tools/models-library.md#custom-llm-integration-framework) for answer generation without requiring middleware
+* [Custom LLM support](../generative-ai-tools/configure-llm-integration.md#custom-llm-integration) for answer generation without requiring middleware
 * [Dynamic Models and Prompts for answers](../apis/searchai/advance-search.md) - Support for runtime selection of prompts and LLM models within the answer generation API, allowing developers to tailor responses dynamically based on query intent, user context, or application requirements.
 
 
