@@ -83,9 +83,9 @@ After fetching the Search AI application credentials, configuring the source, an
 
   <img src="./../images/connection-failure.png" alt="connection failure" title="connection failure" style="border: 1px solid gray; zoom:75%;">
 
-  <div class="admonition note">
-  <p class="admonition-title">Note</p>
-  <p>We support connections through Search AI. You must provide https://platform.xxxx.ai for the <b>Search AI URL</b> field.</p></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We support connections through Search AI. You must provide the Platform URL for the <b>Search AI URL</b> field.</p></div>
 
 ## Step 3: Add and Configure a DocSearch Node
 

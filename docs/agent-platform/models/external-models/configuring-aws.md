@@ -46,7 +46,7 @@ Assign the necessary permissions to the role. An example IAM policy is shown bel
 
 **2. Set the Trust Policy in Your AWS Account**
 
-Set the trust policy to allow the platform to assume the IAM role. Replace `<kore-arn>` with the AWS account ID provided by the platform.
+Set the trust policy to allow the platform to assume the IAM role. Replace `<inceptionai-arn>` with the AWS account ID provided by the platform.
 
 ```
 {
@@ -55,7 +55,7 @@ Set the trust policy to allow the platform to assume the IAM role. Replace `<kor
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "<kore-arn>"
+        "AWS": "<inceptionai-arn>"
       },
       "Action": "sts:AssumeRole"
     }

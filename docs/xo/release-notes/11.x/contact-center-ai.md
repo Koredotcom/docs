@@ -2019,7 +2019,7 @@ The User Diagnostics (♡) icon is at the top right corner of the Agent Console.
 
 **Set Voice Chat on Voice Gateway Account**
 
-Administrators can use a Utils method/script inside the script node to set up voice chat in accounts configured with Voice Gateway. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-voice-chat-on-koreai-voice-gateway-account)
+Administrators can use a Utils method/script inside the script node to set up voice chat in accounts configured with Voice Gateway. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-voice-chat-on-voice-gateway-account)
 
 **Handling ASR Fallback Using Call Control Parameters**
 

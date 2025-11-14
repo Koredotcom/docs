@@ -1,9 +1,9 @@
 # Defining a Weather Info Report
 
-While you can configure a standard Kore.ai alert to provide an alert message to a user with, for example, a weather report for the day, or daily tide report. But what if the user wants a 3-day or 10-day forecast? That’s a lot of data to push into a single message. With the XO Platform, you can define a link in your message that can display the weather data in a formatted table that your end-user can retrieve when needed.
+While you can configure a standard alert to provide an alert message to a user with, for example, a weather report for the day, or daily tide report. But what if the user wants a 3-day or 10-day forecast? That’s a lot of data to push into a single message. With the XO Platform, you can define a link in your message that can display the weather data in a formatted table that your end-user can retrieve when needed.
 The weather info report type can be displayed as a link in a weather alert message as shown in the following illustration for the report called Get 3 Day Forecast.  
 
-<img src="../images/weather_info_alert.png" alt="weather_info_alert" title="weather_info_alert" style="border:1px solid gray; zoom:70%;">
+
 
 When the user clicks the link in the message, a weather report shows the data for the columns defined with a table header, optional table description, and a header row as shown in the following illustration for the _3 Day Forecast_ report.  
 

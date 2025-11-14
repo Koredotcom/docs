@@ -6,7 +6,7 @@ Effective prompts play a crucial role in enhancing response accuracy when intera
 
 ### Prebuilt Prompts
 
-The Platform provide prompts are cdefault/prebuilt prompt for LLMs like OpenAI, Azure OpenAI, and Anthropics Model. 
+The Platform provide default/prebuilt prompt for LLMs like OpenAI, Azure OpenAI, and Anthropic Model. 
 
 
 ### Custom Prompts
