@@ -14,7 +14,7 @@ The By Playbook Adherence metric uses automated quality assurance tools to measu
 
 * **Performance Insights**: Generate actionable data for coaching, training, and process optimization.
 
-## Where to Use Playbook Adherence Metrics
+## Where to Use Playbook Adherence Metric
 
 * **Agent Performance Evaluation**: Assess individual agent compliance with established procedures.
 
@@ -30,7 +30,7 @@ The By Playbook Adherence metric uses automated quality assurance tools to measu
 
 * **Operational Reporting**: Generate reports for management on process compliance and operational efficiency.
 
-## Configure By Playbook Adherence Metrics
+## Configure By Playbook Adherence Metric
 
 1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
@@ -59,7 +59,7 @@ The By Playbook Adherence metric uses automated quality assurance tools to measu
 
  9. Click **Create** to save the new metric for the playbook adherence.
 
-## Edit or Delete By Playbbok Metrics
+## Edit or Delete By Playbook Metric
 
 Steps to edit or delete any existing **By Playbook** evaluation metrics:
 

@@ -10,64 +10,13 @@ Administrators having access to a Five9 Admin Console and with privileges to set
 
 ## Definitions
 
-<table>
-  <tr>
-   <td><strong>Key</strong>
-   </td>
-   <td><strong>Definition</strong>
-   </td>
-   <td><strong>Reference</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><span id="pookie">Agent AI URL</span>
-   </td>
-   <td>The domain of the Agent AI.
-   </td>
-   <td>
-<ul>
-
-<li>If it is legacy Agent AI, URL is <a href="https://agentassist.kore.ai">https://agentassist.kore.ai</a></li>
-
-<li>If it is UXO, URL is <a href="https://platform.kore.ai">https://platform.kore.ai</a></li>
-
-<li>If it is on-prem, the URL is the origin where your Agent AI is hosted.</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Connector
-   </td>
-   <td>Five9 Connector is utilized for displaying the Agent AI iframe within the Five9 Agent Desktop.
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Account ID
-   </td>
-   <td>A unique identifier for an account.
-   </td>
-   <td><strong>Channels > Chat</strong> section of the <strong><a href="https://agentassist.kore.ai">Agent AI</a></strong> configuration portal.
-   </td>
-  </tr>
-  <tr>
-   <td>BotLanguageCode
-   </td>
-   <td>The Language configured in the Kore AI Agent.
-   </td>
-   <td>Refer to the [Supported Languages](../../agent-experience/supported-languages.md){:target="_blank"} doc to get the language code for all the supported languages.
-   </td>
-  </tr>
-  <tr>
-   <td>Queue Identifier
-   </td>
-   <td>It’s a unique identifier in the Data Table to fetch AI Agent details at run time. It can be a skill name or a campaign name.
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
+| **Key** | **Definition** | **Reference** |
+|----------|----------------|---------------|
+| <span id="pookie">Agent AI URL</span> | The domain of the Agent AI. | - If it is legacy Agent AI, the URL is [https://agentassist.kore.ai](https://agentassist.kore.ai){:target="_blank"}.<br> - If it is UXO, the URL is [https://platform.kore.ai](https://platform.kore.ai){:target="_blank"}.<br> - If it is on-prem, the URL is the origin where your Agent AI is hosted. |
+| Connector | The Five9 Connector is utilized for displaying the Agent AI iframe within the Five9 Agent Desktop. |  |
+| Account ID | A unique identifier for an account. | Available under **Channels** > **Chat** in the [Agent AI](https://agentassist.kore.ai){:target="_blank"} configuration portal. |
+| BotLanguageCode | The language configured in the Kore AI Agent. | Refer to the [Supported Languages](../../agent-experience/supported-languages.md){:target="_blank"} document for the language code of all supported languages. |
+| Queue Identifier | A unique identifier in the Data Table used to fetch AI Agent details at run time. It can be a skill name or a campaign name. |  |
 
 ## Configurations on Kore Agent AI
 

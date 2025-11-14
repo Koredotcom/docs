@@ -23,142 +23,23 @@ This document provides detailed instructions on the integration process of the K
 
 ## Definitions
 
-<table>
-  <tr>
-   <td>Section
-   </td>
-   <td>Key
-   </td>
-   <td>Definition
-   </td>
-   <td>Reference
-   </td>
-  </tr>
-  <tr>
-   <td>NICE CX Integration Hubs > Add Agent Assist App
-   </td>
-   <td><span id="AAurl">Agent AI URL</span>
-   </td>
-   <td>The domain of Agent AI.
-   </td>
-   <td>
-<ul>
-
-<li>If it is legacy Agent AI, URL is <a href="https://agentassist.kore.ai/">https://agentassist.kore.ai</a></li>
-
-<li>If it is UXO, URL is <a href="https://platform.kore.ai/">https://platform.kore.ai</a></li>
-
-<li>If it is on-prem, the URL is the origin where your Agent AI is hosted.</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>NICE CX Studio > Import the Voice Script and Configure Parameters
-   </td>
-   <td>AgentAssistWidgetURL
-   </td>
-   <td>URL that points to the Agent AI widget.
-<p>
-For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
-   </td>
-   <td>Channels > Chat section of the <a href="https://platform.kore.ai/">Agent AI</a> configuration portal.
-   </td>
-  </tr>
-  <tr>
-   <td>NICE CX Studio > Import the Voice Script and Configure Parameters
-   </td>
-   <td>BotId
-   </td>
-   <td>A unique identifier assigned to an AI Agent.
-   </td>
-   <td>Channels > Chat section of the <a href="https://platform.kore.ai/">Agent AI</a> configuration portal.
-   </td>
-  </tr>
-  <tr>
-   <td>NICE CX Studio > Import the Voice Script and Configure Parameters
-   </td>
-   <td>ClientId
-   </td>
-   <td>An identifier provided to a client application.
-   </td>
-   <td>Channels > Chat section of the <a href="https://platform.kore.ai/">Agent AI</a> configuration portal.
-   </td>
-  </tr>
-  <tr>
-   <td>NICE CX Studio > Import the Voice Script and Configure Parameters
-   </td>
-   <td>ClientSecret
-   </td>
-   <td>A secret key or password associated with the ClientId.
-   </td>
-   <td>Channels > Chat section of the <a href="https://platform.kore.ai/">Agent AI</a> configuration portal.
-   </td>
-  </tr>
-  <tr>
-   <td>NICE CX Integration Hubs > Add Agent Assist Hub
-   </td>
-   <td>AccountID
-   </td>
-   <td>A unique identifier assigned to an account.
-   </td>
-   <td>Channels > Chat section of the <a href="https://platform.kore.ai/">Agent AI</a> configuration portal.
-   </td>
-  </tr>
-  <tr>
-   <td>NICE CX Integration Hubs > Add Agent Assist Hub
-   </td>
-   <td><span id="KVG">Kore Voice Gateway(KVG)</span>
-   </td>
-   <td>For Saas in US region, value is wss://savg-webserver.kore.ai
-<p>
-For on-prem, refer to the corresponding host.
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
-
+| **Section** | **Key** | **Definition** | **Reference** |
+|--------------|----------|----------------|----------------|
+| NICE CX Integration Hubs > Add Agent Assist App | <span id="AAurl">Agent AI URL</span> | The domain of Agent AI. | - If it is legacy Agent AI, the URL is [https://agentassist.kore.ai](https://agentassist.kore.ai).<br>- If it is UXO, the URL is [https://platform.kore.ai](https://platform.kore.ai).<br>- If it is on-prem, the URL is the origin where your Agent AI is hosted. |
+| NICE CX Studio > Import the Voice Script and Configure Parameters | AgentAssistWidgetURL | URL that points to the Agent AI widget.<br>For example: `https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html` | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
+| NICE CX Studio > Import the Voice Script and Configure Parameters | BotId | A unique identifier assigned to an AI Agent. | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
+| NICE CX Studio > Import the Voice Script and Configure Parameters | ClientId | An identifier provided to a client application. | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
+| NICE CX Studio > Import the Voice Script and Configure Parameters | ClientSecret | A secret key or password associated with the ClientId. | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
+| NICE CX Integration Hubs > Add Agent Assist Hub | AccountID | A unique identifier assigned to an account. | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
+| NICE CX Integration Hubs > Add Agent Assist Hub | <span id="KVG">Kore Voice Gateway (KVG)</span> | For SaaS in the US region, the value is `wss://savg-webserver.kore.ai`.<br>For on-prem, refer to the corresponding host. |  |
 
 **Region Specific URLs**
 
-<table>
-  <tr>
-   <td>Region
-   </td>
-   <td>Agent AI URL
-   </td>
-   <td>UXO URL
-   </td>
-   <td>WSS URL
-   </td>
-   <td>DNS
-   </td>
-  </tr>
-  <tr>
-   <td>US
-   </td>
-   <td><a href="https://agentassist.kore.ai/">https://agentassist.kore.ai</a>
-   </td>
-   <td><a href="https://platform.kore.ai/">https://platform.kore.ai</a>
-   </td>
-   <td>wss://savg-webserver.kore.ai
-   </td>
-   <td>@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com
-   </td>
-  </tr>
-  <tr>
-   <td>JP
-   </td>
-   <td><a href="https://agentassist-jp.kore.ai/">https://agentassist-jp.kore.ai</a>
-   </td>
-   <td><a href="https://jp-platform.kore.ai/">https://jp-platform.kore.ai</a>
-   </td>
-   <td>wss://jp-savg-audiosocket.kore.ai
-   </td>
-   <td>@savg-jp-prod-int-nlb-3989d946fc1ced3b.elb.ap-northeast-1.amazonaws.com
-   </td>
-  </tr>
-</table>
+|            |                                |                             |                                   |                                                                         |
+|------------|--------------------------------|-----------------------------|-----------------------------------|-------------------------------------------------------------------------|
+| **Region** | **Agent AI URL**               | **UXO URL**                 | **WSS URL**                       | **DNS**                                                                 |
+| US         | https://agentassist.kore.ai    | https://platform.kore.ai    | wss://savg-webserver.kore.ai      | @savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com   |
+| JP         | https://agentassist-jp.kore.ai | https://jp-platform.kore.ai | wss://jp-savg-audiosocket.kore.ai | @savg-jp-prod-int-nlb-3989d946fc1ced3b.elb.ap-northeast-1.amazonaws.com | 
 
 ## Configuration Steps
 

@@ -117,27 +117,7 @@ Once you add the test cases, they are listed within your test suite, along with 
 
 If you **Upload a Test Cases File**, you can import an array of test utterances, also known as a Dataset at once in a batch file. The Dataset file must be in a CSV or JSON format and can have a maximum of 1000 utterances. You can download the sample CSV or JSON file formats while creating the test suite.
 
-**Important Tip**:For a Universal Bot, to create a test suite, you can add multiple intents in the CSV/JSON file using the upload method. The format includes the intents and the corresponding app names as follows:
 
-```
-{
-"input": "Utterance",
-"intent": "Intent 1|Intent 2|Intent 3",
-"botName": "Bot 1|Bot 2|Bot 3"
-}
-```
-
-**Example**
-
-```
-{
-"input": "Need to check the multibot function",
-"intent": "Age Predictor|IVRnode|Check Rephase",
-"botName": "Check Bot|XOP211|Check Rephase"
-}
-```
-
-The ability to create test suites manually is not yet available for universal bots.
 
 
 
@@ -991,9 +971,7 @@ The report also provides detailed information on each of the test utterances and
 
 * **Elimination Info** displays why a test failed only when the expected intent does not match the winning intent. The Platform clearly indicates whether the model causes the failure or the Ranking & Resolver (R&R) engine eliminates the intent. The column displays the R&R policy reason when available. Otherwise, it shows the expected intent scores from each engine in this format: FM: [score], ML: [score], FAQ: [score]. To know more, see [Elimination Reason](#view-test-case-details).
 
-#### Batch Test Results for Universal Bots
 
-The Platform now displays Batch Test Results for Universal bots for each test run in the summary view for [FAQs](./health-and-monitoring/virtual-assistants-health-and-monitoring.md#nlp-faqs-summary){:target="_blank"}, [Dialog Intents](./health-and-monitoring/virtual-assistants-health-and-monitoring.md#dialog-intent-summary){:target="_blank"}, and [Small Talk](./health-and-monitoring/virtual-assistants-health-and-monitoring.md#nlp-small-talk-summary){:target="_blank"} during Batch Testing. The actionable insights help understand the test coverage and NLP performance for each intent type in the Universal Bot. [Learn more](./health-and-monitoring/virtual-assistants-health-and-monitoring.md#nlp-batch-test-results-summary-for-universal-bots){:target="_blank"}.
 
 
 
