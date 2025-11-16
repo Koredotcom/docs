@@ -547,7 +547,8 @@ nav:
             - By Value: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-value.md
             - By AI Agent: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md
             - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
-            - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md              
+            - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md
+            - By Hold: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-hold.md              
       - Agent Scorecards: quality-ai/configure/agent-scorecards.md
       - Taxonomy Builder: 
           - Overview: quality-ai/configure/taxonomy-builder/overview.md
