@@ -18,7 +18,7 @@ Default prompts aren't editable. However, you can import a default prompt, custo
 The Platform enables you to craft custom prompts that tailor model behavior for specific use cases and GenAI features. You can create prompts from scratch or import an existing prompt and tailor the content to their specific needs. Custom prompts give you complete control over prompt design, enabling you to align responses with your desired tone, context, and business requirements. This capability is especially useful for organizations with unique needs that go beyond default prompts.
 
 
-For more information on adding prompt for Agent Node, see [Agent Node](../automation/agent-node/prompt-setup.md).
+For more information on adding prompt for Agent Node, see [Agent Node Prompt Setup](../automation/agent-node/prompt-setup.md).
 
 !!! note
 

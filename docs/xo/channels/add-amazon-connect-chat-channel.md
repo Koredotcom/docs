@@ -3,13 +3,15 @@
 
 # Amazon Connect Chat
 
-
-## Create and Configure AWS Lambda for Amazon Connect Integration
-
-This guide explains how to create an **AWS Lambda function** that works with **Amazon Connect** and messages to **Kore.ai** via Webhook.
+This article describes the integration process of Amazon Connect Chat with the Platform.
 
 
-### Step 1: Create a New Lambda Function
+## Step 1: Create and Configure AWS Lambda for Amazon Connect Integration
+
+Create an AWS Lambda function that works with Amazon Connect and messages to the Platform via Webhook.
+
+
+### 1.1 Create a New Lambda Function
 
 
 
@@ -24,19 +26,19 @@ This guide explains how to create an **AWS Lambda function** that works with **A
 4. Click Create function.
 
 
-### Step 2: Add Lambda Function Code
+### 1.2: Add Lambda Function Code
 
 
 
 1. After Lambda is created, scroll down to the Code tab.
 2. In the file list, open index.mjs.
 3. Delete the sample code.
-4. Paste Below Lambda Code (for example, the `.mjs` code that handles SNS → Kore.ai forwarding).
+4. Paste the following Lambda Code (for example, the `.mjs` code that handles SNS → the Platform forwarding).
 5. Click Deploy.
 
 !!! note
 
-    Make sure the file name is `index.mjs` (not `.js`), and the Handler in configuration matches `index.handler`.
+    Make sure the file name is `index.mjs` (not `.js`), and the handler in configuration matches `index.handler`.
 
 
 **Code**:
@@ -151,7 +153,7 @@ async function sendContactDetailsToKoreAI(contactId, instanceId) {
 
 
 
-### Step 3: Add Environment Variables
+### 1.3: Add Environment Variables
 
 
 
@@ -172,7 +174,7 @@ async function sendContactDetailsToKoreAI(contactId, instanceId) {
     <tr>
     <td><code>KORE_WEBHOOK_URL</code>
     </td>
-    <td>Webhook URL from Kore.ai Amazon Connect Channel Configuration page
+    <td>Webhook URL from the Platform Amazon Connect Channel Configuration page
     </td>
     <td><code>https://*****.ngrok-free.app/adapter/hooks/amazonconnect/st-xxxx</code>
     </td>
@@ -180,7 +182,7 @@ async function sendContactDetailsToKoreAI(contactId, instanceId) {
     <tr>
     <td><code>KORE_WEBHOOK_VERIFICATION_TOKEN</code>
     </td>
-    <td>Verification Token from Kore.ai Channel Configuration
+    <td>Verification Token from the Platform Channel Configuration
     </td>
     <td><code>17ceed4151e38bae8d16cd547e0144203***********5e1eac7d888f6dc092a</code>
     </td>
@@ -201,11 +203,11 @@ async function sendContactDetailsToKoreAI(contactId, instanceId) {
 1. Click Save.
 
 
-### Step 4: Connect Lambda to Amazon Connect
+### 1.4: Connect Lambda to Amazon Connect
 
 
 
-1. Go to Amazon Connect Console → click your Instance alias.
+1. Go to Amazon Connect Console and click your Instance alias.
 2. In the left panel, choose Flows.
 3. Scroll down to AWS Lambda functions section.
 4. Click Add Lambda function.
@@ -213,25 +215,25 @@ async function sendContactDetailsToKoreAI(contactId, instanceId) {
 6. Now your Amazon Connect flows can invoke this Lambda.
 
 
-### Step 5: Add IAM Permissions
+### 1.5: Add IAM Permissions
 
 
-#### Open the Lambda Role
+**Open the Lambda Role**
 
 
 
 1. Go to IAM → Roles.
-2. In the search box, enter the role name linked to your Lambda function. \
+2. In the search box, enter the role name linked to your Lambda function. 
  Example: `AmazonConnect_SendContactId-role-********`.
 
 
-#### Edit Permissions
+**Edit Permissions**
 
 
 
-1. Open the role → click Permissions tab.
+1. Open the role and click Permissions tab.
 2. Under Permission policies, locate and click `AWSLambdaBasicExecutionRole-xxxxxx`.
-3. Click JSON tab → then Edit.
+3. Click JSON tab and then Edit.
     1. Add the following policy statement inside the `"Statement"` array:
 
         ```
@@ -245,19 +247,19 @@ async function sendContactDetailsToKoreAI(contactId, instanceId) {
         ```
 
 
-1. Click Review policy → Save changes. 
+1. Click Review policy and Save changes. 
 
 !!! note
 
     For better security, you can later replace `"Resource": "*"` with specific Connect instance ARNs.
 
 
-## Create Amazon SNS Topic for Streaming (Amazon Connect → Kore.ai)
+## Step 2: Create Amazon SNS Topic for Streaming
 
-This document explains how to create and configure an Amazon SNS topic for streaming chat messages from Amazon Connect to Kore.ai via HTTPS.
+Create and configure an Amazon SNS topic for streaming chat messages from Amazon Connect to the Platform via HTTPS.
 
 
-### Step 1: Create SNS Topic
+### 2.1: Create SNS Topic
 
 
 
@@ -271,30 +273,28 @@ This document explains how to create and configure an Amazon SNS topic for strea
 6. Leave other fields as default for now.
 
 
-### Step 2: Set Access Policy (Optional - Can Be Edited Later)
+### 2.2: Set Access Policy 
 
 
 
 1. Scroll to the Access policy section.
-2. Expand the Advanced tab.
-
-    Remove or ensure the following JSON snippet doesn't exists.
- `"Condition": 
- ```
- {`
-
-      "StringEquals": {
-        "AWS:SourceAccount": "**************"
+2. Expand the Advanced tab. Remove or ensure the following JSON snippet doesn't exists.
+ 
+    ```
+    "Condition": {
+    "StringEquals": {
+      "AWS:SourceAccount": "**************"
       }
     }
-```
+    ```
+
 
 
 3. This ensures Amazon Connect or Lambda within your account can publish messages securely to this SNS topic.
 4. Click Create topic.
 
 
-### Step 3: Copy Topic ARN
+### 2.3: Copy Topic ARN
 
 
 
@@ -302,12 +302,12 @@ This document explains how to create and configure an Amazon SNS topic for strea
 2. Under Details, copy the Topic ARN - it looks like this: `arn:aws:sns:us-east-1:***********:AmazonConnect_Streaming_Topic`
 3. Store this ARN safely - you’ll use it as an environment variable in your AWS Lambda function:
     * Variable name: `SNS_TOPIC_ARN`
-    * Value: *(the ARN you just copied)*
+    * Value: *(the ARN you copied)*
 
 
-### Step 4: Create HTTPS Subscription
+### 2.4: Create HTTPS Subscription
 
-Next, create a subscription so SNS can forward messages to Kore.ai via HTTPS. 
+Create a subscription so SNS can forward messages to the Platform via HTTPS. 
 
 
 
@@ -331,7 +331,7 @@ Next, create a subscription so SNS can forward messages to Kore.ai via HTTPS.
     <tr>
     <td><strong>Endpoint</strong>
     </td>
-    <td>Paste the Webhook URL copied from your Kore.ai Amazon Connect Channel Configuration page (e.g., <code>https://abc123.ngrok-free.app/adapter/hooks/amazonconnect/st-e6895fc9-8012-5003-be9b-ab6df08f8eb6</code>)
+    <td>Paste the Webhook URL copied from your the Platform Amazon Connect Channel Configuration page (fpr example, <code>https://abc123.ngrok-free.app/adapter/hooks/amazonconnect/st-e6895fc9-8012-5003-be9b-ab6df08f8eb6</code>)
     </td>
     </tr>
     </table>
@@ -339,8 +339,8 @@ Next, create a subscription so SNS can forward messages to Kore.ai via HTTPS.
 
 
 
-3. Scroll to Subscription filter policy and enable the toggle for “Enable filter policy”.
-4. Click on “Message attributes” → then Enable → and paste the below JSON filter: 
+3. Scroll to Subscription filter policy and enable the toggle for “Enable filter policy.”
+4. Click “Message attributes” → then Enable → and paste the below JSON filter: 
 
     ```
     {
@@ -359,23 +359,23 @@ Next, create a subscription so SNS can forward messages to Kore.ai via HTTPS.
 6. Click Create subscription.
 
 
-### Step 5: Verify Subscription Status
+### 2.5: Verify Subscription Status
 
 
 
 1. Return to Amazon SNS → Subscriptions.
 2. Locate your new subscription.
 3. Check the Status column:
-    * It should show “Confirmed” (SNS automatically sends a confirmation request to the Kore.ai webhook endpoint; Kore.ai responds to confirm it.)
+    * It shows “Confirmed” (SNS automatically sends a confirmation request to the Platform webhook endpoint; the Platform responds to confirm it.)
 4. If status remains “Pending confirmation,” ensure:
     * The Webhook endpoint is reachable (not blocked by firewall).
-    * Kore.ai channel configuration matches the SNS subscription domain.
+    * The Platform channel configuration matches the SNS subscription domain.
 
 
-## Amazon Connect - Create Contact Flow
+## Step 3: Amazon Connect - Create Contact Flow
 
 
-### Prerequisites
+**Prerequisites**
 
 
 
@@ -390,7 +390,7 @@ Next, create a subscription so SNS can forward messages to Kore.ai via HTTPS.
 <img src="../images/aws-flow.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
 
 
-### Step 1: Open Flow Builder
+### 3.1: Open Flow Builder
 
 
 
@@ -400,64 +400,65 @@ Next, create a subscription so SNS can forward messages to Kore.ai via HTTPS.
 4. Click Create flow (top-right) and give it a name (example: `KoreChatFlowPOC1`) and a description.
 
 
-### Step 2: Design the flow on the canvas
+### 3.2: Design the flow on the canvas
 
 The screenshot shows a simple flow sequence: `Entry → Set logging behavior → Play prompt → Invoke Lambda → Wait → Disconnect`. Recreate the same layout:
 
 
 
-1. Entry (Start)
+1. Entry (Start).
     * The designer adds the start block automatically.
-2. Set logging behavior (optional)
+2. Set logging behavior (optional).
     * From the Utilities/Customer blocks, drag Set logging behavior to the canvas.
     * Connect Start → Set logging behavior.
     * Configure (if needed) to enable contact-level logging for debugging.
-3. Play prompt
+3. Play prompt.
     * Drag Play prompt onto the canvas and connect `Set logging behavior → Play prompt`.
     * Configure message text (for example, `hello world`) or use an existing prompt resource.
-4. Invoke AWS Lambda function
+4. Invoke AWS Lambda function.
     * Drag AWS Lambda block onto the canvas and connect the `Play prompt → Lambda` success path.
     * Click the Lambda block to configure:
         * Function ARN / name: select your pre-registered Lambda (for example, `AmazonConnect_SendContactId`).
         * Invocation type: `Synchronous` (use Sync if you want immediate response), otherwise Async (for fire-and-forget).
         * If the Lambda returns attributes you need in flow, map the response to Connect contact attributes.
-5. Wait block (optional)
+5. Wait block (optional).
     * From Flow palette drag Wait and connect Lambda `Success → Wait`.
     * Configure a timeout (screenshot shows 15 minutes). Use this to keep the contact open until async work completes (if needed).
-6. Disconnect
+6. Disconnect.
     * Place a Disconnect block and connect `Wait → Disconnect` or connect Lambda error/time expired paths to `Disconnect`.
-7. Error Paths
+7. Error Paths.
     * Connect Lambda `Error` and PlayPrompt `Error` outputs to a fallback prompt or Disconnect. This ensures graceful handling.
 
 
-### Step 3: Save and publish the flow
+### 3.3: Save and publish the flow
 
 
 
-1. Click Save (top-right).
-2. Click Publish — this makes the flow active and selectable in routing profiles / contact handlers.
+1. Click Save located in the top-right.
+2. Click Publish to makes the flow active and selectable in routing profiles / contact handlers.
 
 
 
--------------------------------------
 
 
+## Step 4: Retrieve the AWS Region, Access Key ID, and Secret
 
-## Steps to Retrieve AWS Region
+### 4.1 Retrieve AWS Region
 
 
 
 1. Log in to your AWS Console.
 2. Navigate to the **Amazon Connect** service.
-3. The AWS Region is displayed in the upper-right corner of the console (e.g., `us-east-1`).  <img src="../images/retrieve-aws-region.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
+3. The AWS Region is displayed in the upper-right corner of the console (for example, `us-east-1`).  
+<img src="../images/retrieve-aws-region.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
 
 
 
 
----
 
 
-## Steps to Retrieve AWS Access Key ID and Secret
+
+### 4.2 Steps to Retrieve AWS Access Key ID and Secret
 
 
 
@@ -465,28 +466,22 @@ The screenshot shows a simple flow sequence: `Entry → Set logging behavior →
 2. Click your account name in the top-right corner and select **Security Credentials** from the drop-down menu.
 3. In the **IAM** dashboard, click **Users** in the navigation pane.
 4. Select the user for whom you want to find the access key ID.
-5. Click on the **Security Credentials** tab for that user.
+5. Click the **Security Credentials** tab for that user.
 6. Either create a new access key or use existing credentials if available.  
 
 <img src="../images/aws-access-key1.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
-
 <img src="../images/aws-access-key2.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
-
 <img src="../images/aws-access-key3.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
 
 
-## Set Custom Participant Display Name
-
-When integrating Amazon Connect chat into an application, you can pass a custom display name for your app.
 
 
 
-
-## Configure the Amazon Connect Chat Channel within the Platform
-
-Next, navigate to the Configurations tab to review and complete the channel setup.
+## Step 4: Configure the Amazon Connect Chat Channel within the Platform
 
 
+
+1. Login to the Platform.
 2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** and select **Amazon Connect Chat**. The channel setup window opens. 
 3. Click **Next** or select the **Configurations** tab.  
 <img src="../images/aws-platform.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
@@ -506,4 +501,4 @@ Next, navigate to the Configurations tab to review and complete the channel setu
 
 After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your App](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
+To learn more about working with Channels within the Platform, see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
