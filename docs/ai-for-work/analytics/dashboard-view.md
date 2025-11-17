@@ -22,6 +22,7 @@ This dashboard presents a graphical representation of token usage trends across 
 <img src="../images/token-used.png" alt="token-used" title="token-used" style="border: 1px solid gray; zoom:80%;">
 
 Metrics displayed for each model include:
+
 * Model Name
 * Total Tokens Used
 * Context Tokens
