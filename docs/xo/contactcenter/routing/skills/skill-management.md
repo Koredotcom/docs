@@ -45,19 +45,19 @@ The following methods are available:
 var loanType = { //creating a sample variable of skill - loan type
     "Car Loan": {
          name: "Car Loan",
-         id: "60b50bec5c4c1a4195b55d88",
+         id: "60b50becxxxxxxxx95b55d88",
     },
     "House Loan": {
          name: "House Loan",
-         id: "60b50c005c4c1a4195b55d89",
+         id: "60b50cxxxxxxxx4195b55d89",
     },
     "Education Loan": {
          name: "Education Loan",
-         id: "60b894198afcca6accc5f466",
+         id: "60b894xxxxxxxx6accc5f466",
     },
     "Gold Loan": {
          name: "Gold Loan",
-         id: "60b8943a8afcca6accc5f467",
+         id: "60b8943xxxxxxxxaccc5f467",
     },
 };
 
