@@ -63,7 +63,7 @@ To create the By Hold Etiquette metric, configure the following:
 1. Define the Basic Configuration of the Hold Etiquette metric**:
 
     * From the **Evaluation Metrics Measurement Type** dropdown, select **By Hold Etiquette**.    
-    <img src="../images/by-value-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;"> 
+    <img src="./images/by-hold-measurement-type.png" alt="By Hold Etiquette Metric" title="By Hold Etiquette Metric" style="border: 1px solid gray; zoom:60%;"> 
         
     * Provide a descriptive metric **Name** (for example, Holding Customer for a long time).
  
@@ -74,7 +74,7 @@ To create the By Hold Etiquette metric, configure the following:
         * You can add/remove languages dynamically.
 
     * Define an evaluation **Question** that clarifies what the evaluation metric measures for each hold instance during agent-customer interactions. For example: "Did the agent inform the customer before placing them on hold?"  
-    <img src="../images/by-value-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;"> 
+    <img src="./images/by-hold-gen-ai-eva-method.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:50%;"> 
 
 1. Choose a **Hold Notification** assessment to verify whether agents properly informed customers before placing them on hold. 
 
@@ -84,25 +84,31 @@ To create the By Hold Etiquette metric, configure the following:
 
             * **Call Resumption**: In the **Description**, enter a customizable definition of expected hold behavior (for example, the agent must inform the customer before placing them on hold, using courteous language and acknowledgement). 
 
-            * **Resumption Behavior Evaluation Window**: Define the time period after a hold ends (for example, within 10 seconds) after which the resumption behavior of an agent is assessed. 
-            <img src="../images/by-value-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;"> 
+            * **Resumption Behavior Evaluation Window**: Define the time period after a hold ends (for example, within 10 seconds) after which the resumption behavior of an agent is assessed.    
+            <img src="./images/by-hold-gen-ai-eva-method.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;"> 
 
             * **Advanced Settings**: Select a hold initiation option to define the time frame for hold notification. The Gen AI evaluates whether agent utterances meet your description criteria.
 
                 * **Last utterance before hold initiation**: Select this to evaluate only the final statement before the hold. In this, silences or dead air before holds are automatically excluded from evaluation. 
 
                 * **Configured window before hold initiation**: Select this to specify a custom time in the notification window (for example, 1-100 seconds) before the hold during which the notification is valid.   
-                <img src="../images/by-value-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">    
-
-               * **Deterministic ML Method**: Uses a machine learning model with embedding-based phrase matching against a curated list of sample utterances. For example, “Please hold for a moment while I find that information”.
+                <img src="./images/hold-advance-settings.png" alt="Advanced Settings" title="Advanced Settings" style="border: 1px solid gray; zoom:60%;">    
+ 
+        * **Deterministic ML Method**: Uses a machine learning model with embedding-based phrase matching against a curated list of sample utterances. For example, “Please hold for a moment while I find that information”.
         
-                !!! note
+            !!! note
 
-                    This uses BGE-m3 embeddings to compare agent utterances to sample phrases and configurable similarity thresholds.
+                This uses BGE-m3 embeddings to compare agent utterances to sample phrases and configurable similarity thresholds.
 
-            * **Answer (Sample Utterances):** Enter or add sample utterances to identify matching agent speech for training the ML model, such as notifying customers before placing them on hold or when resuming a call. To improve accuracy, add multiple variations. Added utterances appear with checkboxes for selection.
+            * **Answer**: Add the sample utterances if no utterances are found. 
+                * You can add multiple utterances for each configured language to notify customers before putting them on hold. Each language maintains its own distinct set of utterances. For example, “I need a moment to get the details. May I put you on hold?”. 
 
-            It supports configuration of evaluation samples across multiple languages, with each language maintaining its own distinct set of utterances (for example, English and Dutch). To include the answers with sample utterances, click **Add**.
+                * You can check/uncheck utterance checkboxes to include or exclude them from the sample list.
+
+                * You can add and delete the required utterances as needed. 
+
+                * Select the similar utterances to include them from the sample list, and click **Add**.  
+                <img src="./metrics-measurement-types/images/answer-sample-utterances.png" alt="Sample Utterances" title="Sample Utterances" style="border: 1px solid gray; zoom:60%;">    
 
             * **Similarity**: Set the minimum**Similarity** threshold score (0-100%, default 60%) that qualifies an agent’s utterance as a match to the sample utterances (indicates how closely the agent has provided a proper hold notification based on similarity to the provided training samples).
   
@@ -113,36 +119,30 @@ To create the By Hold Etiquette metric, configure the following:
                 * **Default**: 60%
 
                 * **Range**: 0-100% in 1% increments                    
-    <img src="../images/by-value-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">   
+                <img src="./images/hold-notification-deterministic.png" alt="Answer Utterances and Similarity" title="Answer Utterances and Similarity" style="border: 1px solid gray; zoom:60%;">  
+                
+1. Specify the **Advanced Settings** time frame to define when to consider the hold intimation, or when the agent must notify customers. 
 
-                * Click **+ Add Utterance **to enter sample utterances if no utterances are found. The agents should use these utterances to inform customers before placing them on hold. 
-
-
-
-                    * You can add multiple utterances to notify customers before putting them on hold. For example, “I need a moment to get the details. May I put you on hold?”.
-                    * Selected utterances form the accepted sample list for recognition of appropriate agent behavior for the model.
-                    * You can check/uncheck utterances to include or exclude them from the model’s accepted sample list.
-
-
-                    * Select the similar utterances to include them from the sample list, and click **Apply**. 
-
-                        **Note**: These utterances help the model recognize the correct way an agent should behave. You can add and delete the required utterances as needed.
-
-1. Specify the **Advanced Settings **time frame to define when to consider the hold intimation, or when the agent must notify customers. 
     * **Hold Intimation Window:** Specify the duration (in seconds) before hold initiation within which the agent must provide the hold notification (for example, 10s, 30s, 60s).
-        * **Last utterance before hold initiation: **Select this to evaluate only the final statement before the hold. 
-        * **Configured window before hold initiation: **Define a custom detection window before placing them on hold. The agent’s utterance within this window is valid for compliance. Configure the window, 1–100 seconds. The agent must define it within a reasonable timeframe.
 
-        **Note**: 
+        * **Last utterance before hold initiation**: Select this to evaluate only the final statement before the hold. 
 
-* If the agent provides notification within the configured window, the metric returns a Pass.
-* If no valid utterance is found or it falls outside the window, the metric returns a Fail. 
-* Silences or dead air before hold are automatically excluded from evaluation. 
+        * **Configured window before hold initiation**: Define a custom detection window before placing them on hold. The agent’s utterance within this window is valid for compliance. Configure the window, 1–100 seconds. The agent must define it within a reasonable timeframe.
+
+        !!! note
+
+            * If the agent provides notification within the configured window, the metric returns a Pass.
+            
+            * If no valid utterance is found or it falls outside the window, the metric returns a Fail. 
+
+            * Silences or dead air before hold are automatically excluded from evaluation. 
+
 6. Configure the **Sub-Criteria** to assess agent behavior related to call hold events. The configuration varies depending on the selected evaluation method (Gen AI-based or Deterministic ML-based). 
 
-    * **Hold Duration Compliance (Optional):** 
+    * **Hold Duration Compliance (Optional)**: 
         * Toggle On the **Hold Duration Compliance** to enable or disable duration-based evaluation.
-        * Enter the **Maximum Acceptable Hold Duration **(1-300 seconds, default: 30 seconds), which represents the maximum time an agent can place a customer on hold before being marked non-compliant.
+
+        * Enter the **Maximum Acceptable Hold Duration** (1-300 seconds, default: 30 seconds), which represents the maximum time an agent can place a customer on hold before being marked non-compliant.
 
     * **Call Resumption Assessment (Optional):** 
         * Toggle on the **Call Resumption Assessment **to evaluate post-hold agent behavior. This evaluates: 
@@ -158,6 +158,7 @@ To create the By Hold Etiquette metric, configure the following:
         * Enter the **Resumption Behavior Evaluation Window** by specifying the time to analyze utterances (range 1 – 120 seconds; default 10 seconds) after the hold ends.
 
         * Assign weight (**Sub Criteria Weightage**) percentages to each active sub-criterion. The total across all sub-criteria must equal 100%. Only editable if this feature is enabled.
+
             * **Sub Criteria Weightage** 
                 * **Hold Notification (Positive Weightage): **Enter the weight that the Hold Notification aspect contributes to the total Hold Etiquette score. This indicates the agent’s courtesy and compliance in notifying customers before placing them on hold.
 

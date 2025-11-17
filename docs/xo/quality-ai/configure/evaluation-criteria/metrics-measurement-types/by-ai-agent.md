@@ -101,15 +101,15 @@ Configure each sub-metric individually by clicking **Edit** button next to weigh
 
 For financial services compliance (UDAP), a single parent metric can evaluate multiple aspects:
 
-* **Fee Disclosure **(Weightage: 25%) - Verifies that all fees are clearly explained.
+* **Fee Disclosure** (Weightage - 25%): Verifies that all fees are clearly explained.
 
-* **Interest Rate Accuracy** (Weightage: 30%) - Ensures correct rate information.
+* **Interest Rate Accuracy** (Weightage - 30%): Ensures correct rate information.
 
-* **Benefit Explanation** (Weightage: 20%) - Confirms benefits are thoroughly described.
+* **Benefit Explanation** (Weightage - 20%): Confirms benefits are thoroughly described.
 
-* **Exclusion Details** (Weightage: 15%) - Validates that exclusions properly are mentioned.
+* **Exclusion Details** (Weightage - 15%): Validates that exclusions properly are mentioned.
 
-* **Terms Clarity** (Weightage: 10%) - Assesses overall clarity of terms.
+* **Terms Clarity** (Weightage - 10%): Assesses overall clarity of terms.
 
 Each sub-metric is evaluated independently with a single API call, providing detailed     justifications for each aspect.
 

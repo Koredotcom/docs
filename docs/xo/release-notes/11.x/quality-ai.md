@@ -8,22 +8,6 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-<font size="4">Configure</font>
-
-**By Transfer Etiquette Evaluation**
-
-This metric type automatically evaluates agent behavior during customer transfer events using GenAI and ML-based checks. It ensures agents follow proper transfer etiquette by informing customers, explaining the reason for the transfer, and confirming their understanding, promoting consistency and enhancing the customer experience.
-
-**By Hold Etiquette Evaluation**
-
-This metric type automatically assesses how agents manage hold scenarios in voice interactions. It verifies adherence to best practices, such as notifying customers, managing hold time appropriately, and resuming conversations clearly, ensuring consistent service quality and actionable coaching insights.
-
-**By AI Agent Etiquette Evaluation**
-
-This metric type enables AI-driven evaluations using agents on the Agent Platform. It features a two-level structure: a parent metric with multiple sub-metrics, each defining its own question, weight, and adherence logic. A single evaluation call analyzes various aspects of conversation, returning structured scores and justifications.
-
-<hr>
-
 ## v11.19.0 October 25, 2025
 
 <u>Minor Release</u>
