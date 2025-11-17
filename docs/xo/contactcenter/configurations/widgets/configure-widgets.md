@@ -44,11 +44,11 @@ Steps to add an external widget:
 
     The system replaces the variable with the actual metadata value when the widget loads. For example, if you configure:
 
-    `https://www.kore.com/?id={{context.metaInfo.customerId}}`
+    `https://www.example.com/?id={{context.metaInfo.customerId}}`
 
     and the metadata contains `context.metaInfo.customerId = 12345`, the widget resolves the URL as:
 
-    `https://www.kore.com/?id=12345`
+    `https://www.example.com/?id=12345`
 
 7. The **Failure URL** displays in case the intended page does not load. You can set the same variables as for the main URL above.  
     <img src="../images/url-and-failure-url.png" alt="URL and Failure URL" title="URL and Failure URL" style="border: 1px solid gray; zoom:80%;">
