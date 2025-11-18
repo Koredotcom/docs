@@ -333,16 +333,16 @@ nav:
         - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
         - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
   - Search AI:
-    - Overview: searchai/about-search-ai.md
+    - About Search AI: searchai/about-search-ai.md
     - Getting Started:
       - About Answers in Search AI: searchai/introduction-to-answers.md
       - Setup Search AI: searchai/setup-search-ai.md
     - Content:
-        - Content Sources: searchai/content-sources/introduction.md
+        - About Content Sources: searchai/content-sources/introduction.md
         - Websites: searchai/content-sources/web-crawl.md
         - Documents: searchai/content-sources/directory.md
         - Connectors:
-          - Introduction: searchai/content-sources/connectors.md
+          - About Connectors: searchai/content-sources/connectors.md
           - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
           - RACL Overview: searchai/content-sources/racl-support.md
           - Aha: searchai/content-sources/connectors/aha.md
@@ -415,7 +415,7 @@ nav:
             - Content Transformation: searchai/content-extraction/transformation.md
         - Content Browser: searchai/chunk-browser.md
         - Workbench:
-            - Introduction: searchai/workbench/introduction.md
+            - About Workbench: searchai/workbench/introduction.md
             - Field Mapping Stage: searchai/workbench/field-mapping.md
             - Custom Script: searchai/workbench/custom-script.md
             - Exclude Document: searchai/workbench/exclude-document.md
