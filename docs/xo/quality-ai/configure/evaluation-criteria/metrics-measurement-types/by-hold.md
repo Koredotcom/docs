@@ -3,11 +3,11 @@
 The By Hold Etiquette metric automatically evaluates how agents manage customer holds during conversations, ensuring consistent adherence to hold standards across all interactions.
 This metric assesses agent behavior across three key aspects:
 
-* Pre-hold notification (mandatory): Verifies that agents inform customers before placing them on hold.
+* **Pre-hold Notification** (mandatory): Verifies that agents inform customers before placing them on hold.
 
-* Hold duration compliance (optional): Checks whether hold times stay within acceptable limits.
+* **Hold Duration Compliance** (optional): Checks whether hold times stay within acceptable limits.
 
-* Call resumption behavior (optional): Evaluates how agents reconnect with customers after a hold.
+* **Call Resumption Behavior** (optional): Evaluates how agents reconnect with customers after a hold.
 
 The metric integrates with telephony systems to detect hold events and can evaluate multiple hold instances within a single conversation. You can configure evaluations using either LLM-based assessments with custom descriptions or ML embedding models trained on sample utterances. Each aspect receives a weighted pass/fail score, giving quality managers clear visibility into hold etiquette performance.
 
@@ -80,6 +80,7 @@ To create the By Hold Etiquette metric, configure the following:
                 This uses BGE-m3 embeddings to compare agent utterances to sample phrases and configurable similarity thresholds.
 
             * **Answer**: Add the sample utterances if no utterances are found. 
+
                 * You can add multiple utterances for each configured language to notify customers before putting them on hold. Each language maintains its own distinct set of utterances. For example, “I need a moment to get the details. May I put you on hold?”. 
 
                 * You can check/uncheck utterance checkboxes to include or exclude them from the sample list.

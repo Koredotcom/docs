@@ -4,8 +4,6 @@
 
 Quality AI is an advanced analytics platform that evaluates post-interaction customer conversations to enhance agent performance and improve the overall customer experience.
 
-Originally part of **Contact Center AI (CCAI)**, Quality AI is now decoupled to function independently or in conjunction with Agent AI or Quality AI Express through file ingestion.
-
 This guide walks you through the onboarding journey, from account access to application setup and configuration.
 
 ## Before You Start
@@ -28,11 +26,11 @@ Quality AI supports three conversation sources:
 
     * Integrates with any CCaaS platform via file transfer-based ingestion (for example, AWS S3).
 
-2. **Integrated with Agent AI**
+1. **Integrated with Agent AI**
 
     * Integrates with third-party desktops through Agent AI.
 
-3. **Bundled with CCAI**
+1. **Bundled with CCAI**
     * Integrates with existing systems for real-time, unified analytics.
 
         !!! note
@@ -49,12 +47,12 @@ Steps to create a Quality AI application via the XO platform:
 
 1. Log in through **Email** or **SSO** (Google or Office 365). 
 
-2. Sign up for a new account if you do not have the account. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
+1. Sign up for a new account if you do not have the account. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
 <img src="../Onboarding/images/xo-landing-page.png" alt="Landing Page" title="Landing Page" style="border: 1px solid gray; zoom:80%;">
 
 1. Select the **New App** dropdown located at the upper right corner of the landing page.
 
-2. Click **+ New App**.   
+1. Click **+ New App**.   
 <img src="../Onboarding/images/navigate-to new-app.png" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
 
 1. Select **Quality AI**.   
@@ -80,27 +78,26 @@ This includes multilingual support, and the default language is English.
 
         Configure an LLM in the GenAI section to enable Quality AI features for non-English languages.
 
-2. Select your preferred language to set it as the default for reports.   
+1. Select your preferred language to set it as the default for reports.   
 <img src="../Onboarding/images/choose-langs.png" alt="Preferred Language" title="Preferred Language" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
         English is the default language, and you cannot edit or remove it.
 
-3. Click **+ Add** to move the selected language into the **Selected Languages** list.  
+1. Click **+ Add** to move the selected language into the **Selected Languages** list.  
 <img src="../Onboarding/images/add-new-lang.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:80%;">
 
-4. Toggle on any language to **Mark as the Default**.   
+1. Toggle on any language to **Mark as the Default**.   
 <img src="../Onboarding/images/set-default-lang.png" alt="Mark Default Language" title="Mark Default Language" style="border: 1px solid gray; zoom:80%;">
     
-5. Turn Off the toggle for a selected language in the **Selected Languages** list to remove it from the default language list.   
-<img src="../Onboarding/images/de-selection-lang.png" alt="Deselect Language" title="Mark Deselect Language" style="border: 1px solid gray; zoom:80%;">
+1. Turn Off the toggle for a selected language in the **Selected Languages** list to remove it from the default language list.   
 
     !!! warning "Default Language Removal"
 
         When you remove the default language, the system stops scoring and analyzing in that language. However, it still shows AI-generated insights (such as topics and names) in the default language, no matter how agents or customers communicate.
 
-6. Click **Confirm** to save your language selections.
+1. Click **Confirm** to save your language selections.
 
 ### Set up and Manage Your Conversation Sources
 
@@ -168,12 +165,12 @@ This allows you to define agent access, audit preferences, and usage policies to
 
 1. Complete all configuration steps.
 
-2. Once configured, **Quality AI** automatically starts processing conversations.
+1. Once configured, **Quality AI** automatically starts processing conversations.
 
-3. Use the workspace **Product Switcher** to access **Quality AI**.    
+1. Use the workspace **Product Switcher** to access **Quality AI**.    
 <img src="../Onboarding/images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:80%;"> 
 
-4. Navigate to **Conversation Sources** under the **Configure** section and select the required conversations to enable and streamline your interaction tracking and routing. 
+1. Navigate to **Conversation Sources** under the **Configure** section and select the required conversations to enable and streamline your interaction tracking and routing. 
 <img src="../Onboarding/images/conversation-sources.png" alt="Conversation Sources" title="Conversation Sources" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! note
