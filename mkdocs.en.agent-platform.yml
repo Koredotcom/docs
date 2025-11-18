@@ -226,7 +226,7 @@ nav:
       - AI for Work: ai-agents/ai-for-work.md
     - How Tos:
       - Share Contextual Metadata with AI for Service: ai-agents/agentic-apps/howto/share-context-with-AIforService.md
-      - Pass Contextual Data from AI for Service to Agent Platform: ai-agents/agentic-apps/howto/docs/agent-platform/ai-agents/agentic-apps/howto/pass-data-from-AIforService-AgentPlatform.md
+      - Pass Contextual Data from AI for Service to Agent Platform: ai-agents/agentic-apps/howto/pass-data-from-AIforService-AgentPlatform.md
       - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md
       - Initiate Live Agent Handoff from Agentic Apps: ai-agents/agentic-apps/howto/initiate-live-agent-handoff.md
       - Use Metadata passed via APIs in Agentic Apps: ai-agents/agentic-apps/howto/use-metadata.md
