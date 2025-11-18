@@ -1,54 +1,33 @@
 # By Hold Etiquette Metric
 
-The Hold Etiquette Evaluation Metric enables the automated, scalable assessment of how agents manage hold scenarios in voice interactions. Verifies all conversations to ensure agents follow proper etiquette, such as informing customers before placing them on hold, managing hold time appropriately, and resuming the conversations clearly and courteously. This helps maintain consistent service standards, supports compliance, and guides targeted coaching for agents. 
+The By Hold Etiquette metric automatically evaluates how agents manage customer holds during conversations, ensuring consistent adherence to hold standards across all interactions.
+This metric assesses agent behavior across three key aspects:
 
-It supports GenAI-based and Deterministic ML-based evaluation methods, integrates with telephony systems for precise event tracking, and provides weighted scoring for customized quality evaluation. The metric applies exclusively to voice interactions. 
+* Pre-hold notification (mandatory): Verifies that agents inform customers before placing them on hold.
 
-## Key Aspects
+* Hold duration compliance (optional): Checks whether hold times stay within acceptable limits.
 
-* **Automated & Consistent Evaluation**: Automatically scores every hold instance to enforce standard hold etiquette and reduce manual effort.
+* Call resumption behavior (optional): Evaluates how agents reconnect with customers after a hold.
 
-* **AI-Driven Insights**: Uses GenAI or deterministic ML models to assess hold notifications, duration compliance, and resumption behavior.
+The metric integrates with telephony systems to detect hold events and can evaluate multiple hold instances within a single conversation. You can configure evaluations using either LLM-based assessments with custom descriptions or ML embedding models trained on sample utterances. Each aspect receives a weighted pass/fail score, giving quality managers clear visibility into hold etiquette performance.
 
-* **Precision & Transparency**: Integrates with telephony systems for millisecond-accurate event tracking and provides a full audit trail with visual timelines and AI justifications.
+## Key Benefits
 
-* **Customer Experience & Coaching**: Identifies poor hold management to minimize frustration and supports targeted agent coaching.
+* Evaluate 100% of hold interactions automatically.
 
-* **Multi-language Configuration**: Supports all application-enabled languages, allowing global deployment.
+* Identify coaching opportunities and compliance gaps.
 
-## When to Use This Metric
+* Improve customer experience during hold scenarios.
 
-Use the By Hold Etiquette metric when:
-
-* You want to automate evaluation across all voice interactions.
-
-* You want to ensure agents consistently follow hold protocols.
-
-* You need to identify and coach agents on poor hold behavior.
-
-* You want a clear audit trail for regulatory review.
-
-## How It Works 
-
-Checks whether customer hold times meet established service standards. Each hold instance in a call is independently evaluated across three configurable aspects:
-
-* **Mandatory Hold Notification (mandatory)**: Confirms whether the agent courteously informed the customer before initiating a hold.
-
-* **Hold Duration Compliance (optional)**: Checks that the customer was kept on hold within acceptable limits. 
-
-* **Call Resumption Behavior (optional)**: Evaluates whether the agent resumed the conversation appropriately after the hold.
-
-The system is integrated with telephony data for millisecond-accurate tracking of hold events and uses AI or deterministic ML models to interpret agent utterances. It reviews 100% of voice conversations, applying weighted scoring to each hold event for consistent quality assurance, compliance monitoring, and coaching insights.
+* Maintain regulatory compliance across all agent conversations.
 
 !!! note
 
-    * Applicable only to voice channel interactions.
-    
-    * Allows you to add one Hold Etiquette metric per evaluation form. 
+    * The metric is available exclusively for voice channel interactions.
 
-    * Each enabled aspect contributes to the overall Hold Etiquette score, calculated per hold instance.
+    * It is limited to one Hold Etiquette metric per evaluation form.
 
-    * The metric is marked as "Not Applicable" if no hold events are detected in that conversation.
+    * It requires telephony integration to accurately detect hold events.
 
 # Metric Setup
 
@@ -110,7 +89,7 @@ To create the By Hold Etiquette metric, configure the following:
                 * Select the similar utterances to include them from the sample list, and click **Add**.  
                 <img src="./metrics-measurement-types/images/answer-sample-utterances.png" alt="Sample Utterances" title="Sample Utterances" style="border: 1px solid gray; zoom:60%;">    
 
-            * **Similarity**: Set the minimum**Similarity** threshold score (0-100%, default 60%) that qualifies an agent’s utterance as a match to the sample utterances (indicates how closely the agent has provided a proper hold notification based on similarity to the provided training samples).
+            * **Similarity**: Set the minimum **Similarity** threshold score (0-100%, default 60%) that qualifies an agent’s utterance as a match to the sample utterances (indicates how closely the agent has provided a proper hold notification based on similarity to the provided training samples).
   
                 * **Orange**: Below threshold (0-60%)
 
@@ -123,7 +102,7 @@ To create the By Hold Etiquette metric, configure the following:
                 
 1. Specify the **Advanced Settings** time frame to define when to consider the hold intimation, or when the agent must notify customers. 
 
-    * **Hold Intimation Window:** Specify the duration (in seconds) before hold initiation within which the agent must provide the hold notification (for example, 10s, 30s, 60s).
+    * **Hold Intimation Window**: Specify the duration (in seconds) before hold initiation within which the agent must provide the hold notification (for example, 10s, 30s, 60s).
 
         * **Last utterance before hold initiation**: Select this to evaluate only the final statement before the hold. 
 
@@ -139,55 +118,66 @@ To create the By Hold Etiquette metric, configure the following:
 
 6. Configure the **Sub-Criteria** to assess agent behavior related to call hold events. The configuration varies depending on the selected evaluation method (Gen AI-based or Deterministic ML-based). 
 
-    * **Hold Duration Compliance (Optional)**: 
+    * **Hold Duration Compliance (Optional)**:
+ 
         * Toggle On the **Hold Duration Compliance** to enable or disable duration-based evaluation.
 
         * Enter the **Maximum Acceptable Hold Duration** (1-300 seconds, default: 30 seconds), which represents the maximum time an agent can place a customer on hold before being marked non-compliant.
 
-    * **Call Resumption Assessment (Optional):** 
-        * Toggle on the **Call Resumption Assessment **to evaluate post-hold agent behavior. This evaluates: 
+    * **Call Resumption Assessment (Optional)**: 
+
+        * Toggle on the **Call Resumption Assessment** to evaluate post-hold agent behavior. This evaluates: 
+
             * How effectively the agent resumes the conversation after a hold.
-            * Whether the agent acknowledges the delay, reconnects context, and proceeds with the solution smoothly. 
+
+            * Whether the agent acknowledges the delay, reconnects context, and proceeds with the solution smoothly.   
+            <img src="./images/sub-criteria-for-genai-deterministic.png" alt="Sub-Criteria" title="Sub-Criteria" style="border: 1px solid gray; zoom:60%;"> 
 
 1. Choose an **Evaluation method** (Gen AI-based or Deterministic ML model) when Call Resumption Assessment is enabled. 
-. 
+ 
     * **Gen AI**: Select this to use large-language-model reasoning to semantically analyze the agent’s communication behavior based on configurable time windows and defined behavior expectations.
 
         * In the **Description** field, define expected resumption behavior. For example, "Agent smoothly resumes the conversation, acknowledges the wait time, and proceeds with relevant information".
 
         * Enter the **Resumption Behavior Evaluation Window** by specifying the time to analyze utterances (range 1 – 120 seconds; default 10 seconds) after the hold ends.
 
-        * Assign weight (**Sub Criteria Weightage**) percentages to each active sub-criterion. The total across all sub-criteria must equal 100%. Only editable if this feature is enabled.
+        * Assign weight percentages to each active sub-criterion.
 
-            * **Sub Criteria Weightage** 
-                * **Hold Notification (Positive Weightage): **Enter the weight that the Hold Notification aspect contributes to the total Hold Etiquette score. This indicates the agent’s courtesy and compliance in notifying customers before placing them on hold.
+            * **Sub Criteria Weightage**:
+ 
+                * **Hold Notification (Positive Weightage)**: Enter the weight that the Hold Notification aspect contributes to the total Hold Etiquette score. This indicates the agent’s courtesy and compliance in notifying customers before placing them on hold.
 
-                * **Hold Duration (Positive Weightage): **Enter the weight contribution of compliance with hold time limits.
+                * **Hold Duration (Positive Weightage)**: Enter the weight contribution of compliance with hold time limits.
 
-                * **Call Resumption (Positive Weightage): **Enter the weight contribution of smooth and contextual post-hold resumption.
+                * **Call Resumption (Positive Weightage)**: Enter the weight contribution of smooth and contextual post-hold resumption.  
+                <img src="./images/by-hold-gen-ai-eva-method.png" alt="Sub Criteria Weightage" title="Sub Criteria Weightage" style="border: 1px solid gray; zoom:50%;">  
 
-    * **Deterministic ML:** Select this to use the BGE-m3 embedding model to match agent utterances against predefined samples. It produces binary results (match/no match) based on configurable similarity thresholds.
+    * **Deterministic ML**: Select this to use the BGE-m3 embedding model to match agent utterances against predefined samples. It produces binary results (match/no match) based on configurable similarity thresholds.
 
-        * In the **Answers **field, based on the selected **Languages **configured, add sample utterances that agents are expected to use. For example, “I need a moment to get the details. May I put you on hold?” If no utterance is found in the window, it's considered an automatic fail or not applicable. 
+        * In the **Answers** field, based on the selected **Languages** configured, add sample utterances that agents are expected to use. For example, “I need a moment to get the details. May I put you on hold?” If no utterance is found in the window, it's considered an automatic fail or not applicable. 
 
-            * Click **+ Add Utterance** to enter new reference utterances. Toggle On/Off to include or exclude them from the active sample list.
+        * Set the **Similarity** threshold (0–100%) to determine how closely the agent’s actual utterance must match the sample list.
 
-        * Set the **Similarity **threshold (0–100%) to determine how closely the agent’s actual utterance must match the sample list.
-
-        * Set the **Resumption Behavior Evaluation Window **to define the timeframe after the hold ends for evaluating resumption behavior (range 1 – 120 seconds; default 10 seconds). 
-
+        * Set the **Resumption Behavior Evaluation Window** to define the timeframe after the hold ends for evaluating resumption behavior (range 1 – 120 seconds; default 10 seconds).   
+        <img src="./images/call-resumption-assessment-determinisic-ml.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:50%;"> 
 
             * **Sub Criteria Weightage** 
                 * **Hold Notification (Positive Weightage): **Enter the scoring weight for detecting Hold Notification. This evaluates whether the agent’s utterance matched a trained “hold” phrase within the similarity threshold.
 
                 * **Hold Duration  (Positive Weightage):** Enter the scoring weight for Hold Duration compliance. This evaluates whether the actual hold time remained within the configured limit.
 
-                * **Call Resumption (Positive Weightage): **Enter the scoring weight for Call Resumption**. **This evaluates whether the agent resumed appropriately after lifting the hold.
-
+                * **Call Resumption (Positive Weightage): **Enter the scoring weight for Call Resumption**. **This evaluates whether the agent resumed appropriately after lifting the hold.  
+                <img src="./images/call-resumption-assessment-determinisic-ml.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:50%;">
                     
 8. Click **Create** (enabled only when all validation checks pass). 
+    
+    !!! note
 
-    **Note**: The **Create **button remains disabled until aspect weights total exactly 100%. If the save is successful, then this metric becomes active and applicable for evaluation. The configured metric appears in the Evaluation Metrics dashboard list.
+        * The Create button remains disabled until aspect weights total exactly 100%. 
+        
+        * If the save is successful, then this metric becomes active and applicable for evaluation. 
+        
+        * The configured metric appears in the Evaluation Metrics dashboard list.
 
 ### Evaluation Scoring Logic
 
@@ -195,19 +185,17 @@ To create the By Hold Etiquette metric, configure the following:
 
 * Weights across sub-criteria (Hold Notification, Hold Duration, Call Resumption) must total 100%.
 
-### Binary Pass/Fail Logic (Deterministic ML)**:
+### Binary Pass/Fail Logic (Deterministic ML)
 
-* **Pass:** Duration ≤ configured threshold
+* **Pass**: Duration ≤ configured threshold
 
-* **Fail:** Duration > configured threshold
+* **Fail**: Duration > configured threshold
 
-**Example***:* Agents who exceeded the maximum hold duration are marked non-compliant. 
+**Example**: Agents who exceeded the maximum hold duration are marked non-compliant. 
 
-### Outcome Scoring (GenAI / Deterministic ML):
+### Outcome Scoring (GenAI / Deterministic ML)
 
-
-
-* **Yes:** Agent’s utterance or behavior matches expected criteria. \
+* **Yes:** Agent’s utterance or behavior matches expected criteria. 
 
 * **No:** No match or missing behavior detected within the evaluation window. 
 

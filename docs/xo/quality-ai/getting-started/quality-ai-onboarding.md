@@ -4,7 +4,7 @@
 
 Quality AI is an advanced analytics platform that evaluates post-interaction customer conversations to enhance agent performance and improve the overall customer experience.
 
-Originally part of **Contact Center AI Interactions (CCAI)**, Quality AI is now decoupled to function independently or in conjunction with Agent AI or Quality AI Express through file ingestion.
+Originally part of **Contact Center AI (CCAI)**, Quality AI is now decoupled to function independently or in conjunction with Agent AI or Quality AI Express through file ingestion.
 
 This guide walks you through the onboarding journey, from account access to application setup and configuration.
 
@@ -35,9 +35,9 @@ Quality AI supports three conversation sources:
 3. **Bundled with CCAI**
     * Integrates with existing systems for real-time, unified analytics.
 
-    !!! note
+        !!! note
 
-        You can access Quality AI as a standalone product via the app switcher and switch or upgrade licenses/conversation sources at any time.
+            You can access Quality AI as a standalone product via the app switcher and switch or upgrade licenses/conversation sources at any time.
 
 ## Onboarding Journey
 
@@ -50,9 +50,9 @@ Steps to create a Quality AI application via the XO platform:
 1. Log in through **Email** or **SSO** (Google or Office 365). 
 
 2. Sign up for a new account if you do not have the account. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
-<img src="../Onboarding/images/xo-landing-page.png" alt="XO Landing Page" title="XO Landing Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/xo-landing-page.png" alt="Landing Page" title="Landing Page" style="border: 1px solid gray; zoom:80%;">
 
-1. Select the **New App** dropdown located at the upper right corner of the XO landing page.
+1. Select the **New App** dropdown located at the upper right corner of the landing page.
 
 2. Click **+ New App**.   
 <img src="../Onboarding/images/navigate-to new-app.png" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
@@ -90,15 +90,15 @@ This includes multilingual support, and the default language is English.
 3. Click **+ Add** to move the selected language into the **Selected Languages** list.  
 <img src="../Onboarding/images/add-new-lang.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:80%;">
 
-4. Toggle on any language in the list to **Mark as the Default**.   
+4. Toggle on any language to **Mark as the Default**.   
 <img src="../Onboarding/images/set-default-lang.png" alt="Mark Default Language" title="Mark Default Language" style="border: 1px solid gray; zoom:80%;">
     
-5. Turn off the toggle for the selected language from the **Selected Languages** list if you want to remove it from the default language list.   
+5. Turn Off the toggle for a selected language in the **Selected Languages** list to remove it from the default language list.   
 <img src="../Onboarding/images/de-selection-lang.png" alt="Deselect Language" title="Mark Deselect Language" style="border: 1px solid gray; zoom:80%;">
 
-!!! warning "Default Language Removal"
+    !!! warning "Default Language Removal"
 
-    Removing the default language disables scoring and analysis for that language. Regardless of how agents or customers interact, AI‑generated insights (such as topics and names) are always shown in the selected default language.
+        When you remove the default language, the system stops scoring and analyzing in that language. However, it still shows AI-generated insights (such as topics and names) in the default language, no matter how agents or customers communicate.
 
 6. Click **Confirm** to save your language selections.
 
@@ -158,11 +158,11 @@ This allows you to define agent access, audit preferences, and usage policies to
     * Audit Agent AI Playbook metrics   
     <img src="../Onboarding/images/app-usage-settings.png" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
 
-    !!! note
+        !!! note
 
-        * Access to both **Agent Access** and **Audit Settings** is disabled by default. 
+            * The system disables access to both **Agent Access** and **Audit Settings** by default. 
         
-        * Show queue config only if **Agent AI or Express** is selected, not **CCAI** alone.
+            * It shows queue configuration only when you select **Agent AI or Quality AI Express**, not **CCAI** alone.
 
 ### Go Live with Quality AI
 
@@ -176,7 +176,7 @@ This allows you to define agent access, audit preferences, and usage policies to
 4. Navigate to **Conversation Sources** under the **Configure** section and select the required conversations to enable and streamline your interaction tracking and routing. 
 <img src="../Onboarding/images/conversation-sources.png" alt="Conversation Sources" title="Conversation Sources" style="border: 1px solid gray; zoom:80%;"> 
 
-      !!! note
+    !!! note
 
         * Use the workspace switcher to manage multiple environments. 
         
