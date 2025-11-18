@@ -37,11 +37,11 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/636f5
 
 | **Parameter**   | **Description**                                                                                                                                                                  | **Type**           |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| `orgId`         | Organization ID associated with the account.                                                                                                                                     | String, required |
+| `orgId`         | Organization ID associated with the account.                                                                                                                                     | `String`, required |
 | `fromTimeStamp` | Start date and time in ISO 8601 format (for example, `2023-01-07T09:45:00Z`). <br>**Note:** Optional if fetching call records from the first available record for initial syncs. | `String`, optional |
-| `toTimeStamp`   | End date and time in ISO 8601 format (for example, `2023-01-08T10:00:00Z`).                                                                                                      | String, required |
-| `skip`          | Number of results to skip for pagination. Default is `0`.                                                                                                                        | Number, optional |
-| `limit`         | Number of contact records to retrieve (for example, `2`).                                                                                                                        | Number, optional |
+| `toTimeStamp`   | End date and time in ISO 8601 format (for example, `2023-01-08T10:00:00Z`).                                                                                                      | `String`, required |
+| `skip`          | Number of results to skip for pagination. Default is `0`.                                                                                                                        | `Number`, optional |
+| `limit`         | Number of contact records to retrieve (for example, `2`).                                                                                                                        | `Number`, optional |
 
 ## Sample Response
 
