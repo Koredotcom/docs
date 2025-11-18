@@ -27,7 +27,7 @@ For more information on adding prompt for Agent Node, see [Agent Node Prompt Set
 
 ## Regular vs. Streaming Prompts
 
-Regular prompts (non-streaming prompts) generate a complete response after the model processes the entire input. They are best suited for tasks where the user expects a full, well-structured output at once, such as summaries, reports, or form completions.
+Regular prompts (non-streaming prompts) generate a complete response after the model processes the entire input. They're best suited for tasks where the user expects a full, well-structured output at once, such as summaries, reports, or form completions.
 
 Streaming prompts deliver responses incrementally as the model generates them, allowing users to see partial results in real-time. You can identify streaming prompts in the Prompt Library by the "streaming" tag displayed alongside the prompt name. Refer to [Streaming Responses](streaming-responses.md).
 
@@ -104,7 +104,7 @@ To add a Custom prompt, follow the steps:
 
     ![alt_text](images/prl(13).png  )
 
-4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. 
+4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto populated based on the input provided while model integration and aren't editable. 
 
 
     ![alt_text](images/prl(3).png  )

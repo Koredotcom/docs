@@ -477,7 +477,7 @@ The screenshot shows a simple flow sequence: `Entry → Set logging behavior →
 
 
 
-## Step 4: Configure the Amazon Connect Chat Channel within the Platform
+## Step 5: Configure the Amazon Connect Chat Channel within the Platform
 
 
 
