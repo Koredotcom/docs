@@ -1,4 +1,4 @@
-# Web Crawl
+# Configure Web Crawl for Websites
 
 Websites usually provide detailed information about an organization's products and services but have numerous pages and links. Finding a particular piece of information on a website can be a time-consuming task. Search AI simplifies this process by indexing the content of websites, enabling the data and information on the web pages to be readily available as answers to the user's queries. 
 

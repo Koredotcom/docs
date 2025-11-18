@@ -338,7 +338,7 @@ nav:
       - About Answers in Search AI: searchai/introduction-to-answers.md
       - Setup Search AI: searchai/setup-search-ai.md
     - Content:
-        - Overview: searchai/content-sources/introduction.md
+        - Content Sources: searchai/content-sources/introduction.md
         - Websites: searchai/content-sources/web-crawl.md
         - Documents: searchai/content-sources/directory.md
         - Connectors:
