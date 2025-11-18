@@ -2,7 +2,7 @@
 
 The By Speech metric is used to assess agent performance during voice interactions in the contact center. It leverages intelligent speech analytics to drive better conversations, coaching, and outcomes. These metrics enable supervisors and quality analysts to identify coaching opportunities, enhance the customer experience, and ensure compliance with regulatory standards.
 
-## Why to Use
+## Why to Use This Metric
 
 Use speech evaluation metrics to:
 
@@ -16,7 +16,7 @@ Use speech evaluation metrics to:
 
 * Evaluate agent's speaking rate and conversation sessions per day and comparison analysis.
 
-## When to Use 
+## When to Use This Metric
 
 Use speech evaluation metrics when:
 
@@ -44,7 +44,7 @@ Before you configure speech metrics, ensure that:
 
 Access **Evaluation Metrics** by navigating to **Quality AI** > **Configure** > **Evaluation Metrics**.
 
-## Configure By Speech Metrics
+## Configure By Speech Metric
 
 1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
@@ -78,7 +78,7 @@ Access **Evaluation Metrics** by navigating to **Quality AI** > **Configure** > 
 
 5. Click **Create** to save the new metric for the Speech.
 
-## Edit or Delete By Speech Metrics
+## Edit or Delete By Speech Metric
 
 Steps to edit or delete any existing **By Speech** evaluation metrics:
 

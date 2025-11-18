@@ -49,7 +49,7 @@ Assign the necessary permissions to the role. An example IAM policy is shown bel
 
 **2. Set the Trust Policy in Your AWS Account**
 
-Set the trust policy to allow the platform to assume the IAM role. Replace `<kore-arn>` with the AWS account ID provided by the platform.
+Set the trust policy to allow the platform to assume the IAM role. Replace `<domain-arn>` with the AWS account ID provided by the platform.
 
 ```
 {
@@ -58,7 +58,7 @@ Set the trust policy to allow the platform to assume the IAM role. Replace `<kor
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "<kore-arn>"
+        "AWS": "<domain-arn>"
       },
       "Action": "sts:AssumeRole"
     }
@@ -91,7 +91,7 @@ To complete the registration:
 1. Raise a support ticket with your IAM role ARN, requesting that it be added to the trust policy.
 2. Wait for confirmation from Support that the role has been registered.
 
-**Note**: Without this step, the platform cannot assume your IAM role. Both your AWS account and Kore.ai’s environment must explicitly trust each other for secure cross-account access.
+**Note**: Without this step, the platform can't assume your IAM role. Both your AWS account and domain’s environment must explicitly trust each other for secure cross-account access.
 
 
 

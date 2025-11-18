@@ -60,8 +60,6 @@ The Ban Topics system centrally manages content restrictions for all organizatio
 
 The Ban Topics system offers a flexible and user-friendly configuration management framework that empowers organizations to tailor content boundaries to their specific needs and policies.
 
-<img src="../images/ban-topics-configuration.png" alt="ban-topics-configuration" title="ban-topics-configuration" style="border: 1px solid gray; zoom:80%;">
-
 * **Template System:** The system incorporates a template system that provides pre-defined sets of content restrictions based on common industry standards or organizational requirements. These templates serve as a starting point for configuration, allowing organizations to quickly implement baseline content controls and then further customize them as needed.
 * **Custom Prompt Development:** The Ban Topics system offers the flexibility to create custom prompts, acknowledging that standard solutions may not always suffice. This capability allows organizations to establish detailed and context-aware content limitations, offering methods for tackling specific compliance needs or internal regulations.
 * **Enable/Disable Functionalities:** Administrators can easily enable or disable both built-in and custom prompt content restrictions as needed for organizational changes or testing.
