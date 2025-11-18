@@ -29,9 +29,9 @@ The metric integrates with telephony systems to detect hold events and can evalu
 
     * It requires telephony integration to accurately detect hold events.
 
-# Metric Setup
+## Metric Setup
 
-## Create By Hold Etiquette Metric
+### Create By Hold Etiquette Metric
 
 To create the By Hold Etiquette metric, configure the following:
 
@@ -186,7 +186,7 @@ For example: "Did the agent inform the customer before placing them on hold?"
 
 * Weights across sub-criteria (Hold Notification, Hold Duration, Call Resumption) must total 100%.
 
-### Binary Pass/Fail Logic (Deterministic ML)
+#### Binary Pass/Fail Logic (Deterministic ML)
 
 * **Pass**: Duration ≤ configured threshold.
 
@@ -194,13 +194,13 @@ For example: "Did the agent inform the customer before placing them on hold?"
 
 **Example**: Agents who exceeded the maximum hold duration are marked non-compliant. 
 
-### Outcome Scoring (GenAI / Deterministic ML)
+#### Outcome Scoring (GenAI / Deterministic ML)
 
 * **Yes**: Agent’s utterance or behavior matches expected criteria. 
 
 * **No**: No match or missing behavior detected within the evaluation window. 
 
-### Weightage Scoring System
+#### Weightage Scoring System
 
 <table>
   <tr>

@@ -22,9 +22,9 @@ The metric integrates with telephony systems to detect transfer initiation event
 
 * Maintain consistent service quality throughout the transfer process.
 
-# Metric Setup
+## Metric Setup
 
-## Create By Transfer Etiquette Metric
+### Create By Transfer Etiquette Metric
 
 To create the By Transfer Etiquette metric, configure the following:
 
@@ -98,9 +98,9 @@ To create the By Transfer Etiquette metric, configure the following:
             
             * The metric appears in the Evaluation Metrics dashboard list.
 
-## Scoring Logic
+### Scoring Logic
 
-### When Transfers Are Detected
+#### When Transfers Are Detected
 
 The system evaluates agent communication based on your configured detection window and evaluation method.
 
