@@ -57,7 +57,7 @@ The left-right navigation displays the detailed metrics at each point, with acce
 
 ## Queries Per Agent
 
-This displays a graphical representation of the number of queries per agent, categorized by agent type, including AI for Service, GPT, Data, Search, and Workflow agents.
+This displays a graphical representation of the number of queries per agent, categorized by agent type, including (In)Business Customer Experience, GPT, Data, Search, and Workflow agents.
 
 You can switch between different periods for the view, including **Day**, **Week**, and **Month**.  
 <img src="../images/queries-per-agent.png" alt="queries-per-agent" title="queries-per-agent" style="border: 1px solid gray; zoom:80%;">

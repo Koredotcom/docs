@@ -60,7 +60,7 @@ If you select **Search AI**, provide the following details for integration. Thes
 * **Client Secret ID**: A secret key generated for secure interaction.
 * **Search ID**: Unique identifier of the client generated in Search AI.
 
-You need to associate four API Scopes in your AI for Service platform's App channel:
+You need to associate four API Scopes in your (In)Business Customer Experience platform's App channel:
 
 * Answer Generation
 * Permission Entity Management

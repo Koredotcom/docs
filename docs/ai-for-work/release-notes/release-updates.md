@@ -447,7 +447,7 @@ Key Benefits:
 
 <font size="4">Feature Enhancements</font>
 
-* Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by Agent Platform, enabling seamless integration.
+* Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by (In)Agent Platform, enabling seamless integration.
 
 * Enhanced Content Safeguards: Implemented comprehensive guardrails within (In)Business Productivity that automatically detect and filter inappropriate content requests, providing clear and respectful responses when users request content outside permitted boundaries. This feature is in its early phase; an Admin UI for custom guardrail configuration is currently under development and will be available in a future release.
   

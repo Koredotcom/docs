@@ -1,6 +1,6 @@
 # Workflow Agent
 
-The Workflow Agent allows users to integrate tools in Agent Platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently.
+The Workflow Agent allows users to integrate tools in (In)Agent Platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently.
 
 The Agent leverages APIs and combines retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. These highly configurable agents allow users to select and fine-tune models from various options within the Workflow platform. Once configured, these agents dynamically adapt to user inputs, providing real-time, intelligent responses.
 

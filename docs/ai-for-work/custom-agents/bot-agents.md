@@ -1,10 +1,10 @@
 # Bot Agents
 
-Administrators creates bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the AI for Service Platform integrate seamlessly, allowing actions to execute directly when a workflow triggers, eliminating the need for other platforms.
+Administrators creates bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the (In)Business Customer Experience Platform integrate seamlessly, allowing actions to execute directly when a workflow triggers, eliminating the need for other platforms.
 
-For complex workflows involving multiple system integrations and logic, users build bots using the AI for Service Platform. Users trigger these bots through conversations using the UI or NLP intent, streamlining the entire process.
+For complex workflows involving multiple system integrations and logic, users build bots using the (In)Business Customer Experience Platform. Users trigger these bots through conversations using the UI or NLP intent, streamlining the entire process.
 
-For example, consider a Fund Transfer Bot Agent. By creating this bot on the AI for Service Platform, automate fund transfers to clients' designated accounts, capturing key details such as client names, account information, and transfer amounts. Once integrated with your organization's systems, the bot allows seamless conversational interactions, simplifying fund transfer operations.
+For example, consider a Fund Transfer Bot Agent. By creating this bot on the (In)Business Customer Experience Platform, automate fund transfers to clients' designated accounts, capturing key details such as client names, account information, and transfer amounts. Once integrated with your organization's systems, the bot allows seamless conversational interactions, simplifying fund transfer operations.
 
 Create a new agent or import an existing one.
 
@@ -30,7 +30,7 @@ To import an existing Bot Agent:
 ## Create a Bot Agent
 
 Create a new Bot agent to assist users in completing various tasks by
-utilizing the Bot created using the AI for Service Platform.
+utilizing the Bot created using the (In)Business Customer Experience Platform.
 
 To create a new Bot Agent, follow these steps:
 
@@ -42,12 +42,12 @@ To create a new Bot Agent, follow these steps:
     Agent**.
     <img src="../images/create-agent.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-3. You must link your Bot built on the AI for Service Platform with **(In)Business Productivity** and
+3. You must link your Bot built on the (In)Business Customer Experience Platform with **(In)Business Productivity** and
     create a webhook channel.
 
 To create a webhook channel on the Bot and complete the integration process, follow these steps:
 
-1. Log in to the **AI for Service Platform**. Open the virtual assistant or bot you want to add the channels to. Navigate to **Deploy** > **Channels** > **Add More** > **Webhook**.
+1. Log in to the **(In)Business Customer Experience Platform**. Open the virtual assistant or bot you want to add the channels to. Navigate to **Deploy** > **Channels** > **Add More** > **Webhook**.
 
 2. Select your required app from the **Webhook** dialog.
 <img src="../images/webhook_select_app.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
@@ -130,5 +130,5 @@ Interacting with the bot agent simplifies communication and task execution. User
 
 !!! note
 
-    * See [Alert](./alert-task.md) that allows developers to integrate conversation hold and resume functionality within AI for Service Bots.
+    * See [Alert](./alert-task.md) that allows developers to integrate conversation hold and resume functionality within (In)Business Customer Experience Bots.
     * See [Notify](./notify-api.md) that allows developers to send interactive notifications to the users.

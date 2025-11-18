@@ -1,6 +1,6 @@
 # Autonomous Agents
 
-Autonomous Agents are AI-powered agents that leverage Agent Platform to autonomously manage complex business tasks and workflows. These agents can rapidly respond to evolving business requirements and circumstances in real time by employing adaptive algorithms for dynamic decision-making. They can significantly increase your organization's operational efficiency and decision-making capabilities by integrating artificial intelligence with business process automation.
+Autonomous Agents are AI-powered agents that leverage (In)Agent Platform to autonomously manage complex business tasks and workflows. These agents can rapidly respond to evolving business requirements and circumstances in real time by employing adaptive algorithms for dynamic decision-making. They can significantly increase your organization's operational efficiency and decision-making capabilities by integrating artificial intelligence with business process automation.
 
 ## Creating Autonomous Agent
 
@@ -35,7 +35,7 @@ Follow these steps to create a new Autonomous Agent:
   
      * **Content Type**: Enter a specific label that tells the API what kind of data you are sending.
 
-     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="../../agent-platform/ai-agents/agentic-apps/deployment/app-deployment.md#create-an-environment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from Agent Platform.
+     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="../../agent-platform/ai-agents/agentic-apps/deployment/app-deployment.md#create-an-environment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from (In)Agent Platform.
 
      1. Click **Curl Import** to open the import interface.
      2. Paste your CURL command into the text box.
@@ -72,11 +72,11 @@ To import an existing Autonomous Agent:
 
 !!!note
 
-    You cannot directly import agents exported from the Agent Platform. Only Autonomous Agents that were originally created and exported from (In)Business Productivity can be imported using this feature.
+    You cannot directly import agents exported from the (In)Agent Platform. Only Autonomous Agents that were originally created and exported from (In)Business Productivity can be imported using this feature.
 
 ## Usage
 
-Autonomous Agents integrate seamlessly with the Agent Platform to provide intelligent, automated assistance for business tasks. You can trigger an agent from the **Compose bar > Agents > agent tab**. Here's how they operate in practice:
+Autonomous Agents integrate seamlessly with the (In)Agent Platform to provide intelligent, automated assistance for business tasks. You can trigger an agent from the **Compose bar > Agents > agent tab**. Here's how they operate in practice:
 
 When deployed, the Autonomous Agent appears as an interactive agent within the AI Work interface. As shown in the example screenshot, users can engage in natural conversations with the agent to accomplish specific tasks. The agent understands the context, process requests, and provides relevant responses based on its configured capabilities.
 

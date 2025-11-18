@@ -4,9 +4,9 @@ Configurable AI agents designed for quick deployment and workflow integration wi
 
 * **Prompt Agents**: Build custom **GPT** agents capable of executing specific tasks by responding to tailored prompts, user inputs, and knowledge. [Learn more](./prompt-agents.md).
 
-* **Workflow Agents**: Create agents that integrates tools in Agent Platform, enhancing interaction and enabling smooth workflow execution. [Learn more](./workflow-agents.md).
+* **Workflow Agents**: Create agents that integrates tools in (In)Agent Platform, enhancing interaction and enabling smooth workflow execution. [Learn more](./workflow-agents.md).
 
-* **Bot Agents**: Connect your **AI for Service** bot to create agents that smoothly integrate and interact with it, enabling seamless workflow execution. [Learn more](./bot-agents.md).
+* **Bot Agents**: Connect your **(In)Business Customer Experience** bot to create agents that smoothly integrate and interact with it, enabling seamless workflow execution. [Learn more](./bot-agents.md).
 
 * **Search Agents**: In (In)Business Productivity, RAG agents are implemented through **Search AI** applications that index content from various sources, allowing them to retrieve relevant information and generate precise responses to user queries. [Learn more](./search-agents.md)
 
@@ -16,4 +16,4 @@ Configurable AI agents designed for quick deployment and workflow integration wi
 
 * **Agentic Flow**: Allows multiple AI agents to execute sequentially in order to efficiently complete and automate complex operations. [Learn more](./agentic-flows.md).
 
-* **Autonomous Agent**: AI-powered solutions that utilize Agent Platform to autonomously manage complex tasks and workflows. [Learn more](./autonomous-agent.md).
+* **Autonomous Agent**: AI-powered solutions that utilize (In)Agent Platform to autonomously manage complex tasks and workflows. [Learn more](./autonomous-agent.md).
