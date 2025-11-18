@@ -63,7 +63,7 @@ To create the By Transfer Etiquette metric, configure the following:
         * Enter a **Description** to define the expected behavior. For example, "Agent must inform the customer about the transfer, explain the reason, and provide destination information". 
         <img src="../images/pre-transfer-comm-assessment.png" alt="Pre-Transfer Communication Assessment" title="Pre-Transfer Communication Assessment" style="border: 1px solid gray; zoom:60%;">  
 
-    * **Deterministic ML Model (BGE-m3)**: Select the Deterministic ML method to compare embedded-based similarity scores against sample reference utterances. For example, "I’d like to transfer this call to another department".
+    * **Deterministic ML Model (BGE-m3)**: Select the Deterministic ML method to compare embedded-based similarity scores against sample reference utterances. For example, "I’d like to transfer this call to another department".   
     <img src="../images/pre-transfer-deterministic-method.png" alt="Deterministic ML Model" title="Deterministic ML Model" style="border: 1px solid gray; zoom:60%;">  
 
         * **Answer**: Add the sample utterances if no utterances are found.
@@ -81,22 +81,22 @@ To create the By Transfer Etiquette metric, configure the following:
 
         * Set the minimum **Similarity** threshold score (0-100%, default 60%). 
 
-            * Below 60%: Orange (does not meet standard)
+            * **Below 60%:** Orange (does not meet standard)
 
-            * 60-100%: Green (meets standard)
+            * **60-100%:** Green (meets standard)   
             <img src="../images/pre-transfer-deterministic-similarity-utterances.png" alt="Deterministic-Similarity-Utterances" title="Deterministic-Similarity-Utterances" style="border: 1px solid gray; zoom:60%;">  
 
         * Select the similar utterances from the sample list for all configured languages to enable the **Create** button.
 
 1. Click **Create**. 
 
-        !!! note
+    !!! note
 
-            * The **Create** button activates only after all validation checks pass.
+        * The **Create** button activates only after all validation checks pass.
 
-            * Once saved, the metric becomes active and ready for evaluation.
+        * Once saved, the metric becomes active and ready for evaluation.
             
-            * The metric appears in the Evaluation Metrics dashboard list.
+        * The metric appears in the Evaluation Metrics dashboard list.
 
 ### Scoring Logic
 
