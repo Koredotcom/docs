@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Agent Login Logout Summary Report
 
 ## Generating the Agent Login Logout Summary Report

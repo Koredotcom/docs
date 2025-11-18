@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Skill Metrics Daily Report
 
 ## Generating Skill Metrics Daily Report
