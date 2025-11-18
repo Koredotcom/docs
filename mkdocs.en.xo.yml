@@ -338,77 +338,76 @@ nav:
       - About Answers in Search AI: searchai/introduction-to-answers.md
       - Setup Search AI: searchai/setup-search-ai.md
     - Content:
-        - Sources:
-            - Overview: searchai/content-sources/introduction.md
-            - Web Crawl: searchai/content-sources/web-crawl.md
-            - Directory: searchai/content-sources/directory.md
-            - Connectors:
-                - Introduction: searchai/content-sources/connectors.md
-                - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
-                - RACL Overview: searchai/content-sources/racl-support.md
-                - Aha: searchai/content-sources/connectors/aha.md
-                - Airtable: searchai/content-sources/connectors/airtable.md
-                - Amazon S3: searchai/content-sources/connectors/amazons3.md
-                - Asana: searchai/content-sources/connectors/asana.md
-                - Azure Storage: searchai/content-sources/connectors/azure.md
-                - BitBucket: searchai/content-sources/connectors/bitbucket.md
-                - Box: searchai/content-sources/connectors/box.md
-                - ClickUp: searchai/content-sources/connectors/clickup.md
-                - Coda: searchai/content-sources/connectors/coda.md
-                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
-                - Confluence Data Center: searchai/content-sources/connectors/confluence-server.md
-                - Custom Connector: searchai/content-sources/connectors/custom-connector.md
-                - Datadog: searchai/content-sources/connectors/datadog.md
-                - DotCMS: searchai/content-sources/connectors/dotcms.md
-                - Dropbox: searchai/content-sources/connectors/dropbox.md
-                - Egnyte: searchai/content-sources/connectors/egnyte.md
-                - Figma: searchai/content-sources/connectors/figma.md
-                - Freshdesk: searchai/content-sources/connectors/freshdesk.md
-                - Freshservice: searchai/content-sources/connectors/freshservice.md
-                - Front: searchai/content-sources/connectors/front.md
-                - GitHub: searchai/content-sources/connectors/github.md
-                - GitHub On-Prem: searchai/content-sources/connectors/github-onprem.md
-                - GitLab: searchai/content-sources/connectors/gitlab.md
-                - Google Drive: searchai/content-sources/connectors/googledrive.md
-                - Guru: searchai/content-sources/connectors/guru.md
-                - HelpScout: searchai/content-sources/connectors/helpscout.md
-                - Hive: searchai/content-sources/connectors/hive.md
-                - HubSpot: searchai/content-sources/connectors/hubspot.md
-                - Jenkins: searchai/content-sources/connectors/jenkins.md
-                - Jfrog: searchai/content-sources/connectors/jfrog.md
-                - Jira: searchai/content-sources/connectors/jira.md
-                - Jira On-Prem: searchai/content-sources/connectors/jira-onprem.md
-                - JSON Connector: searchai/content-sources/connectors/json.md
-                - LumApps: searchai/content-sources/connectors/lumapps.md
-                - Miro: searchai/content-sources/connectors/miro.md
-                - Monday: searchai/content-sources/connectors/monday.md
-                - MS Teams: searchai/content-sources/connectors/msteams.md
-                - Notion: searchai/content-sources/connectors/notion.md
-                - OneDrive: searchai/content-sources/connectors/onedrive.md
-                - OpsGenie: searchai/content-sources/connectors/opsgenie.md
-                - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
-                - PagerDuty: searchai/content-sources/connectors/pagerduty.md
-                - Re:amaze: searchai/content-sources/connectors/reamaze.md
-                - Salesforce: searchai/content-sources/connectors/salesforce.md
-                - ServiceNow: searchai/content-sources/connectors/servicenow.md     
-                - SharePoint: searchai/content-sources/connectors/sharepoint.md
-                - Shopify: searchai/content-sources/connectors/shopify.md
-                - Shortcut: searchai/content-sources/connectors/shortcut.md
-                - Slab: searchai/content-sources/connectors/slab.md
-                - Slack: searchai/content-sources/connectors/slack.md
-                - Teamwork: searchai/content-sources/connectors/teamwork.md
-                - TestRail: searchai/content-sources/connectors/testrail.md
-                - Trello: searchai/content-sources/connectors/trello.md
-                - WordPress: searchai/content-sources/connectors/wordpress.md
-                - Workday: searchai/content-sources/connectors/workday.md
-                - Wrike: searchai/content-sources/connectors/wrike.md
-                - xMatters: searchai/content-sources/connectors/xmatters.md
-                - YouTrack:  searchai/content-sources/connectors/youtrack.md
-                - Zendesk: searchai/content-sources/connectors/zendesk.md 
-                - Zeplin: searchai/content-sources/connectors/zeplin.md
-                - Zoho: searchai/content-sources/connectors/zoho.md
-                - Zoom: searchai/content-sources/connectors/zoom.md
-                - Zulip: searchai/content-sources/connectors/zulip.md
+        - Overview: searchai/content-sources/introduction.md
+        - Websites: searchai/content-sources/web-crawl.md
+        - Documents: searchai/content-sources/directory.md
+        - Connectors:
+          - Introduction: searchai/content-sources/connectors.md
+          - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
+          - RACL Overview: searchai/content-sources/racl-support.md
+          - Aha: searchai/content-sources/connectors/aha.md
+          - Airtable: searchai/content-sources/connectors/airtable.md
+          - Amazon S3: searchai/content-sources/connectors/amazons3.md
+          - Asana: searchai/content-sources/connectors/asana.md
+          - Azure Storage: searchai/content-sources/connectors/azure.md
+          - BitBucket: searchai/content-sources/connectors/bitbucket.md
+          - Box: searchai/content-sources/connectors/box.md
+          - ClickUp: searchai/content-sources/connectors/clickup.md
+          - Coda: searchai/content-sources/connectors/coda.md
+          - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
+          - Confluence Data Center: searchai/content-sources/connectors/confluence-server.md
+          - Custom Connector: searchai/content-sources/connectors/custom-connector.md
+          - Datadog: searchai/content-sources/connectors/datadog.md
+          - DotCMS: searchai/content-sources/connectors/dotcms.md
+          - Dropbox: searchai/content-sources/connectors/dropbox.md
+          - Egnyte: searchai/content-sources/connectors/egnyte.md
+          - Figma: searchai/content-sources/connectors/figma.md
+          - Freshdesk: searchai/content-sources/connectors/freshdesk.md
+          - Freshservice: searchai/content-sources/connectors/freshservice.md
+          - Front: searchai/content-sources/connectors/front.md
+          - GitHub: searchai/content-sources/connectors/github.md
+          - GitHub On-Prem: searchai/content-sources/connectors/github-onprem.md
+          - GitLab: searchai/content-sources/connectors/gitlab.md
+          - Google Drive: searchai/content-sources/connectors/googledrive.md
+          - Guru: searchai/content-sources/connectors/guru.md
+          - HelpScout: searchai/content-sources/connectors/helpscout.md
+          - Hive: searchai/content-sources/connectors/hive.md
+          - HubSpot: searchai/content-sources/connectors/hubspot.md
+          - Jenkins: searchai/content-sources/connectors/jenkins.md
+          - Jfrog: searchai/content-sources/connectors/jfrog.md
+          - Jira: searchai/content-sources/connectors/jira.md
+          - Jira On-Prem: searchai/content-sources/connectors/jira-onprem.md
+          - JSON Connector: searchai/content-sources/connectors/json.md
+          - LumApps: searchai/content-sources/connectors/lumapps.md
+          - Miro: searchai/content-sources/connectors/miro.md
+          - Monday: searchai/content-sources/connectors/monday.md
+          - MS Teams: searchai/content-sources/connectors/msteams.md
+          - Notion: searchai/content-sources/connectors/notion.md
+          - OneDrive: searchai/content-sources/connectors/onedrive.md
+          - OpsGenie: searchai/content-sources/connectors/opsgenie.md
+          - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
+          - PagerDuty: searchai/content-sources/connectors/pagerduty.md
+          - Re:amaze: searchai/content-sources/connectors/reamaze.md
+          - Salesforce: searchai/content-sources/connectors/salesforce.md
+          - ServiceNow: searchai/content-sources/connectors/servicenow.md     
+          - SharePoint: searchai/content-sources/connectors/sharepoint.md
+          - Shopify: searchai/content-sources/connectors/shopify.md
+          - Shortcut: searchai/content-sources/connectors/shortcut.md
+          - Slab: searchai/content-sources/connectors/slab.md
+          - Slack: searchai/content-sources/connectors/slack.md
+          - Teamwork: searchai/content-sources/connectors/teamwork.md
+          - TestRail: searchai/content-sources/connectors/testrail.md
+          - Trello: searchai/content-sources/connectors/trello.md
+          - WordPress: searchai/content-sources/connectors/wordpress.md
+          - Workday: searchai/content-sources/connectors/workday.md
+          - Wrike: searchai/content-sources/connectors/wrike.md
+          - xMatters: searchai/content-sources/connectors/xmatters.md
+          - YouTrack:  searchai/content-sources/connectors/youtrack.md
+          - Zendesk: searchai/content-sources/connectors/zendesk.md 
+          - Zeplin: searchai/content-sources/connectors/zeplin.md
+          - Zoho: searchai/content-sources/connectors/zoho.md
+          - Zoom: searchai/content-sources/connectors/zoom.md
+          - Zulip: searchai/content-sources/connectors/zulip.md
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md
