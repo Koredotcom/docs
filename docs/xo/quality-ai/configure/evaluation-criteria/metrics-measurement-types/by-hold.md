@@ -37,10 +37,12 @@ To create the By Hold Etiquette metric, configure the following:
 
 1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
-1. Click **+ New Evaluation Metric** to select a metric category to define the basic configuration of the Hold Etiquette metric.
+1. Click **+ New Evaluation Metric** to select a metric category.
+
+1. Define the basic configuration of the Hold Etiquette metric.
 
 1. From the **Evaluation Metrics Measurement Type** dropdown, select **By Hold Etiquette**.    
-   <img src="../images/by-hold-measurement-type.png" alt="By Hold Etiquette Metric" title="By Hold Etiquette Metric" style="border: 1px solid gray; zoom:60%;"> 
+<img src="../images/by-hold-measurement-type.png" alt="By Hold Etiquette Metric" title="By Hold Etiquette Metric" style="border: 1px solid gray; zoom:60%;"> 
         
 1. Provide a descriptive metric **Name** (for example, Holding Customer for a long time).
  
@@ -51,8 +53,8 @@ To create the By Hold Etiquette metric, configure the following:
     * You can add/remove languages dynamically.
 
 1. Define an evaluation **Question** that clarifies what the evaluation metric measures for each hold instance during agent-customer interactions. 
-   For example: "Did the agent inform the customer before placing them on hold?"  
-<img src="../images/by-hold-gen-ai-eva-method.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:50%;"> 
+For example: "Did the agent inform the customer before placing them on hold?"  
+<img src="../images/by-hold-basic-config.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:50%;"> 
 
 1. Choose a **Hold Notification** assessment to verify whether agents properly informed customers before placing them on hold. 
 
@@ -87,7 +89,7 @@ To create the By Hold Etiquette metric, configure the following:
                 * You can add and delete the required utterances as needed. 
 
                 * Select the similar utterances to include them from the sample list, and click **Add**.  
-                <img src="../images/answer-sample-utterances.png" alt="Sample Utterances" title="Sample Utterances" style="border: 1px solid gray; zoom:60%;">    
+                <img src="../images/answer-sample-utterances.png" alt="Add Sample Utterances" title="Add Sample Utterances" style="border: 1px solid gray; zoom:60%;">    
 
             * **Similarity**: Set the minimum **Similarity** threshold score (0-100%, default 60%) that qualifies an agent’s utterance as a match to the sample utterances (indicates how closely the agent has provided a proper hold notification based on similarity to the provided training samples).
   
@@ -118,27 +120,27 @@ To create the By Hold Etiquette metric, configure the following:
 
 1. Configure the **Sub-Criteria** to assess agent behavior related to call hold events. The configuration varies depending on the selected evaluation method (Gen AI-based or Deterministic ML-based). 
 
-    * **Hold Duration Compliance (Optional)**:
+    * **Hold Duration Compliance** (Optional):
  
         * Toggle On the **Hold Duration Compliance** to enable or disable duration-based evaluation.
 
         * Enter the **Maximum Acceptable Hold Duration** (1-300 seconds, default: 30 seconds), which represents the maximum time an agent can place a customer on hold before being marked non-compliant.
 
-1. Enable **Call Resumption Assessment (optional)** to evaluate how effectively agents resume the conversation after a hold. This evaluates:
+1. Enable **Call Resumption Assessment** (optional) to evaluate how effectively agents resume the conversation after a hold. This evaluates:
 
     * How effectively the agent resumes the conversation after a hold.
 
     * Whether the agent acknowledges the delay, reconnects context, and proceeds with the solution smoothly.   
     <img src="../images/sub-criteria-for-genai-deterministic.png" alt="Sub-Criteria" title="Sub-Criteria" style="border: 1px solid gray; zoom:60%;"> 
 
-1. Choose an **Evaluation method** (Gen AI-based or Deterministic ML model) when Call Resumption Assessment is enabled. 
+1. Choose an **Evaluation Method** (Gen AI-based or Deterministic ML model) when Call Resumption Assessment is enabled. 
  
     * **Gen AI**: Select this to use large-language-model reasoning to semantically analyze the agent’s communication behavior based on configurable time windows and defined behavior expectations.
 
         * In the **Description** field, define expected resumption behavior. For example, "Agent smoothly resumes the conversation, acknowledges the wait time, and proceeds with relevant information".
 
         * Enter the **Resumption Behavior Evaluation Window** by specifying the time to analyze utterances (range 1 – 120 seconds; default 10 seconds) after the hold ends.  
-        <img src="../images/gen-ai-call-resumption-assessment.png" alt="Gen AI Method Steps" title="Gen AI Method Steps" style="border: 1px solid gray; zoom:60%;"> 
+        <img src="../images/gen-ai-call-resumption-assessment.png" alt="Gen AI Call Resumption Assessment" title="Gen AI Call Resumption Assessment" style="border: 1px solid gray; zoom:60%;"> 
 
         * Assign weight percentages to each active sub-criterion.
 
@@ -158,7 +160,7 @@ To create the By Hold Etiquette metric, configure the following:
         * Set the **Similarity** threshold (0–100%) to determine how closely the agent’s actual utterance must match the sample list.
 
         * Set the **Resumption Behavior Evaluation Window** to define the timeframe after the hold ends for evaluating resumption behavior (range 1 – 120 seconds; default 10 seconds).   
-        <img src="../images/call-resumption-assessment-determinisic-ml.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:70%;"> 
+        <img src="../images/call-resumption-assessment-determinisic-ml.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:70%;">
 
             * **Sub Criteria Weightage**:
  
@@ -167,8 +169,7 @@ To create the By Hold Etiquette metric, configure the following:
                 * **Hold Duration  (Positive Weightage)**: Enter the scoring weight for Hold Duration compliance. This evaluates whether the actual hold time remained within the configured limit.
 
                 * **Call Resumption (Positive Weightage)**: Enter the scoring weight for Call Resumption**. This evaluates whether the agent resumed appropriately after lifting the hold.  
-                <img src="../images/call-resumption-assessment-determinisic-ml.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:70%;">
-                    
+                                   
 8. Click **Create** (enabled only when all validation checks pass). 
     
     !!! note
