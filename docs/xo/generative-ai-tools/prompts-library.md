@@ -18,7 +18,7 @@ Default prompts aren't editable. However, you can import a default prompt, custo
 The Platform enables you to craft custom prompts that tailor model behavior for specific use cases and GenAI features. You can create prompts from scratch or import an existing prompt and tailor the content to their specific needs. Custom prompts give you complete control over prompt design, enabling you to align responses with your desired tone, context, and business requirements. This capability is especially useful for organizations with unique needs that go beyond default prompts.
 
 
-For more information on adding prompt for Agent Node, see [Agent Node](../automation/agent-node/prompt-setup.md).
+For more information on adding prompt for Agent Node, see [Agent Node Prompt Setup](../automation/agent-node/prompt-setup.md).
 
 !!! note
 
@@ -27,7 +27,7 @@ For more information on adding prompt for Agent Node, see [Agent Node](../automa
 
 ## Regular vs. Streaming Prompts
 
-Regular prompts (non-streaming prompts) generate a complete response after the model processes the entire input. They are best suited for tasks where the user expects a full, well-structured output at once, such as summaries, reports, or form completions.
+Regular prompts (non-streaming prompts) generate a complete response after the model processes the entire input. They're best suited for tasks where the user expects a full, well-structured output at once, such as summaries, reports, or form completions.
 
 Streaming prompts deliver responses incrementally as the model generates them, allowing users to see partial results in real-time. You can identify streaming prompts in the Prompt Library by the "streaming" tag displayed alongside the prompt name. Refer to [Streaming Responses](streaming-responses.md).
 
@@ -104,7 +104,7 @@ To add a Custom prompt, follow the steps:
 
     ![alt_text](images/prl(13).png  )
 
-4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. 
+4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto populated based on the input provided while model integration and aren't editable. 
 
 
     ![alt_text](images/prl(3).png  )

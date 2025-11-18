@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Agent Metrics Daily Report
 
 ## Generating the Agent Metrics Daily Report
