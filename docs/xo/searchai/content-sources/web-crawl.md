@@ -2,24 +2,25 @@
 
 Websites usually provide detailed information about an organization's products and services but have numerous pages and links. Finding a particular piece of information on a website can be a time-consuming task. Search AI simplifies this process by indexing the content of websites, enabling the data and information on the web pages to be readily available as answers to the user's queries. 
 
-## Features
+## Key Features
 
-* You can ingest web content through web crawling at regular intervals, allowing you to access the most recent data for efficient searches.
-* Web crawler only needs a base web URL. It automatically discovers the pages on the site using its navigation plan and hyperlinks found on the page. 
-* You can define crawl rules to enable or disable specific pages to be crawled. 
-* There is authentication support to allow a crawler to access restricted content. 
+* **Scheduled crawling**: Automatically ingest web content at regular intervals to ensure search results reflect the latest information.
 
-To manage the data ingested through web pages or to add new web sources, go to the **Websites** page under the **Content** section.
+* **Automatic discovery**: Simply provide a base URL—the crawler automatically discovers pages using site navigation and hyperlinks.
+
+* **Crawl rules**: Define which pages to include or exclude from crawling.
+
+* **Authentication support**: Access restricted content with proper credentials.
+
+To manage ingested web data or add new web sources, navigate to **Content** > **Websites**.
 
 ![Web Crawl](images/web-crawl-home.png "Web Crawl")
 
-## Adding a new web crawler for a web source
+## Adding a New Web Crawler for a Web Source
 
 To add a new web source, click **+Web Crawl**.
 
-![Adding Web Source](images/add-web-crawl.png "Add Web Source")
-
-Alternatively, if some web domains are already configured for crawling, you will see the list on this page. Click **+Web Crawl** on the top right to add a new web domain for crawling.
+Alternatively, if some web domains are already configured for crawling, you will see the list on this page. Click **+Add Web Crawl** on the top right to add a new web domain for crawling.
 
 ![Add new web source](images/existing-webcrawls.png "add a new web source")
 
@@ -45,7 +46,7 @@ You can choose to run the crawl in the background, which allows you to perform o
 2. **Upload Sitemap** - Provide a list of sitemaps as a CSV file and a Base URL. The base URL is used to validate the URLs in the sitemaps. It crawls through all the web pages listed in each sitemap in the CSV file, for which the URL matches the Base URL. If a URL in the sitemap doesn't match the base URL, the crawler skips that URL and doesn't crawl it. The crawl options are used to refine the URLs further for crawling. You can use the [sample sitemap CSV](assets/sample_sitemap.csv "download") to learn the format of the CSV file. 
 3. **Upload URL** - Provide a list of URLs to crawl in the form of a CSV file and a base URL. The base URL is used to validate the URLs in the CSV file. In this case, the crawler goes through all the pages listed in the CSV file that match the Base URL. The URLs that match the base URL are crawled, and those that don't match are skipped. The crawl options are used to refine the URLs further for crawling. In this case, crawl depth and max URL crawl options aren't required. Use the [Sample URL CSV](assets/sample_url.csv "download") to learn about the format of the CSV file.
 
-**Crawl depth** - Each website contains multiple levels of the hierarchy of pages and sub-pages. The source URL is considered at the top of the hierarchy, and other pages linked to the URL create nested layers. Crawl depth refers to the maximum number of nested levels the crawler should reach. This field can take values between 1 and 10. If no value is provided for the field, the default crawl depth is set to 5. 
+**Crawl Depth** - Each website contains multiple levels of the hierarchy of pages and sub-pages. The source URL is considered at the top of the hierarchy, and other pages linked to the URL create nested layers. Crawl depth refers to the maximum number of nested levels the crawler should reach. This field can take values between 1 and 10. If no value is provided for the field, the default crawl depth is set to 5. 
 
 
 **Max URL Limit** - This field refers to the maximum number of URLs to crawl. This field can take any integer value between 1 and 10,000. If no value is provided, the default value is 10. 
