@@ -30,7 +30,6 @@ This release introduces the following two new generative AI features powered by 
 * By Value Metric Extraction: Extract metric values from messages by users, AI agents, or humans. 
 [Learn more :octicons-arrow-right-24:](./../../generative-ai-tools/genai-features-qualityai.md)
 
-
 <hr>
 
 ## v11.18.0 September 27, 2025

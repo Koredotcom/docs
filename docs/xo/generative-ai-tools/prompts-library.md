@@ -18,7 +18,7 @@ Default prompts aren't editable. However, you can import a default prompt, custo
 The Platform enables you to craft custom prompts that tailor model behavior for specific use cases and GenAI features. You can create prompts from scratch or import an existing prompt and tailor the content to their specific needs. Custom prompts give you complete control over prompt design, enabling you to align responses with your desired tone, context, and business requirements. This capability is especially useful for organizations with unique needs that go beyond default prompts.
 
 
-For more information on adding prompt for Agent Node, see [Agent Node](../automation/agent-node/prompt-setup.md).
+For more information on adding prompt for Agent Node, see [Agent Node Prompt Setup](../automation/agent-node/prompt-setup.md).
 
 !!! note
 
@@ -38,12 +38,12 @@ Streaming prompts deliver responses incrementally as the model generates them, a
 |----------|-----------------|-------------------|
 | Response Delivery | Full response delivered at once | Tokens delivered incrementally as they're generated |
 | Parameter Requirements | Standard parameters | Requires `"stream": true` parameter |
-| Exit Scenarios | Fully supported | Not supported |
-| AI Agent Response | Fully supported | Not supported |
-| Collected Entities | Fully supported | Must be included in streamed format |
-| Tool Call Requests | Fully supported | Not supported for Agent Node |
+| Exit Scenarios | Supported | Not supported |
+| AI Agent Response | Supported | Not supported |
+| Collected Entities | Supported | Must be included in streamed format |
+| Tool Call Requests | Supported | Not supported for Agent Node |
 | Post-Processing | Available | Not available |
-| Guardrails | Fully supported | Not supported |
+| Guardrails | Supported | Not supported |
 
 
 
@@ -55,7 +55,7 @@ Streaming prompts deliver responses incrementally as the model generates them, a
 
 * Error Handling:
   * Regular prompts can be fully validated before delivery.
-  * Streaming prompts require careful prompt engineering as corrections cannot be made mid-stream.
+  * Streaming prompts require careful prompt engineering as corrections can't be made mid-stream.
 
 * Analytics:
   * Streaming responses include additional metrics like TTFT (Time to First Token).
