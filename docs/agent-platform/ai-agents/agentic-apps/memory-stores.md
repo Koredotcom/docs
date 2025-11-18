@@ -21,7 +21,7 @@ To set up Memory store, provide the following details.
 
 **Name**: Provide a user-friendly name for the store. Once a store is created, this name can be updated but it does't change the technical name of the store. 
 
-**Technical Name**: Provide a unique name for the store. This name **cannot be modified** after the store is created. Note that this name should't have any special characters or spaces. This is the name that's used within prompts and code tools to refer to the memory store. 
+**Technical Name**: Provide a unique name for the store. This name **can't be modified** once the memory store is created. Note that this name should't have any special characters or spaces. This is the name that's used within prompts and code tools to refer to the memory store. 
 
 **Description**: Provide a brief summary describing the intended usage or purpose of this memory store.
 
@@ -183,7 +183,7 @@ memory.get_content(<store_name>,<projections>)
 
   3. To fetch both first name and location (subset of the complete record), use:
     ```
-    await memory.get_content("employee", {"name": 1, "preflanguage": 1})
+    await memory.get_content("employee", {"name": 1, "location": 1})
     ```
 
 ### Writing to Memory Store
@@ -202,7 +202,6 @@ Use the following format to create or update a record in the memory store. This 
 * data_object:  A JSON object representing the fields to write or update in the memory store.
 
 !!!note
-  
   * Records are stored based on the memory store’s access context: **session**, **user**, or **application**.
   * Fields not included in the update are retained as-is.
 
@@ -290,7 +289,7 @@ The **sessionInfo** is a system-populated object that contains metadata about th
 * userReference - Reference string associated with the user in the session.
 * userId - Unique identifier for the user.
 * runId - Identifier for the specific execution run within the session.
-* timestamp – The date and time when the session information was recorded.
+* timestamp - The date and time when the session information was recorded.
 
 **Scope and Identification**
 

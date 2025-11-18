@@ -119,15 +119,15 @@ Returns details of the newly created session, which are required for managing an
 
 
 
-* **session** – Metadata about the created session.
+* **session** - Metadata about the created session.
     * **sessionId** - A unique identifier for the session.
     * **Status** - Indicates the current state of the session. Possible values: `idle`, `busy`, `error`.
     * **sessionReference** - A unique reference string associated with the session for easier cross-request tracking.
     * **userReference** - Unique reference string for the user associated with the session.
     * **userId** - Internal system-generated identifier for the user.
     * **createdAt** - Timestamp indicating when the session was created.
-* **allowedMimeTypes** – List of supported file formats for uploads.
-* **fileUploadConfig** – File Upload rules configured for the app. These rules apply to both types of documents - uploaded for context extraction and for Metadata generation. The following fields are available in this field. 
+* **allowedMimeTypes** - List of supported file formats for uploads.
+* **fileUploadConfig** - File Upload rules configured for the app. These rules apply to both types of documents - uploaded for context extraction and for Metadata generation. The following fields are available in this field. 
     * **maxFileCount** - Max number of files that can be uploaded. 
     * **maxFileSize** - Max size of each file that can be uploaded. The value is in MBs.
     * **maxTokens** - Specifies the maximum allowed combined size of all uploaded files, measured in tokens. If the total token size exceeds this limit, only files that comply with the threshold are uploaded; files exceeding it will be rejected.
@@ -225,6 +225,12 @@ Lists sessions for the selected app and environment. Supports optional filters s
    <td><strong>Method</strong>
    </td>
    <td>POST
+   </td>
+  </tr>
+   <tr>
+   <td><strong>Base URL</strong>
+   </td>
+   <td>https://&lt;agent-platform-env>.&lt;domain>.com/api/v1/
    </td>
   </tr>
   <tr>

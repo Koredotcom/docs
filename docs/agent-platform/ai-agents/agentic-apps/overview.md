@@ -67,7 +67,7 @@ The process of an agent using tools follows this sequence:
 2. Tool Identification: The agent selects the most suitable tool for the task at hand.
 3. Parameter Preparation: Using LLM capabilities, the agent extracts relevant entities (for example, location, date, user preference) and maps them to the required input format.
 4. Tool Invocation: The agent calls the tool, passing the prepared parameters.
-5. Execution:** The tool processes the input and performs the necessary action.
+5. Execution: The tool processes the input and performs the necessary action.
 6. Result Processing: The agent processes the tool's output, validating, formatting, or using it for the next workflow step.
 7. Output Delivery: The agent sends the result either back to the orchestrator or to the user if the task is complete.
 
