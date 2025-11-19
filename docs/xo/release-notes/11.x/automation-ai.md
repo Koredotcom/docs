@@ -2,6 +2,23 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.19.1 November 19, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">API</font>
+
+**New Lightweight Conversation History API**  
+
+The new lightweight Conversation History (`getMessages`) API is optimized for high-volume conversation summarization, delivering improved performance, reliability, and scalability.
+
+**Mandatory API Response Encryption Based on App Settings**  
+
+The Public API endpoints no longer support the `encrypt=true` query parameter. Response payload encryption is now enforced only through app-level settings, ensuring consistent encryption behavior without parameter-based overrides. Learn more.
+<hr>
+
 ## v11.19.0 October 25, 2025
 
 <u>Minor Release</u>  
@@ -488,7 +505,7 @@ In this update, Agent Node introduces a new version to fully take advantage of t
 **Suppressing "Intent Not Found" Event When Dialog Ends as "Fulfilled"**
 
 The platform incorrectly used to trigger "Intent Not Found" events after successfully completed dialogs, specifically when dialogs ended with Entity or Confirmation nodes, followed by Script or Service nodes.
-A new Advanced NLP Configuration key (Suppress_Fallback_On_TaskFulfilment) has been added that prevents unwanted events when the "End of Task" event is disabled and the Dialog has ended with a "fulfilled" status. This ensures smooth conversation flows for BotKit implementations, handles dialog completion, and prevents disruptions in multi-assistant routing scenarios. 
+A new Advanced NLP Configuration key (Suppress_Fallback_On_TaskFulfillment) has been added that prevents unwanted events when the "End of Task" event is disabled and the Dialog has ended with a "fulfilled" status. This ensures smooth conversation flows for BotKit implementations, handles dialog completion, and prevents disruptions in multi-assistant routing scenarios. 
 [Learn more :octicons-arrow-right-24:](../../automation/natural-language/nlu-configurations/engine-tuning.md#suppress_fallback_on_taskfulfilment)
 
 <font size="4">Channels</font>
