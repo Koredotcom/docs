@@ -12,12 +12,11 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Export and Import Web Campaigns**
 
-The platform now supports exporting campaign artifacts for Proactive Web Campaigns, allowing users to import them into another account. This enhancement simplifies campaign replication and reusability across different environments, ensuring consistency and reducing setup effort. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#export-and-import-web-campaigns)
+The platform now supports exporting and importing artifacts for Proactive Web Campaigns. This feature allows users to easily replicate and reuse entire campaign configurations across different apps, workspaces, or environments, ensuring consistency and significantly reducing setup time. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#export-and-import-web-campaigns)
 
 **Proactive Web Campaign Logs**
 
-A new Campaign Logs section has been added to capture and view web campaign activity. Users can review recent campaign events, apply date-based filters, and export logs for analysis, ensuring better visibility into campaign performance. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/logs.md)  
-<img src="../images/logs-page.png" alt="Logs" title="Logs" style="border: 1px solid gray; zoom:70%;">
+A new Logs section offers enhanced visibility into web campaign activity. Users can review recent campaign events, apply date-based filters, and export logs for analysis, ensuring better visibility into campaign performance. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/logs.md)  
 
 <font size="4">API</font>
 
@@ -76,7 +75,7 @@ Supervisors can transfer multiple chats, calls, and emails simultaneously from t
 
 **Call Details API: Callback and External Transfer Tracking**
 
-The Call Details API now captures callback and external transfer events with new tracking fields. QueueEntry includes CallbackOpted, CallbackOptedTime, and CallbackInitiatedTime for both caller and system-initiated callbacks. AgentTransfer objects add ExternalTransferTime and ExternalTransferDestination fields for transfers to external parties, improving call-handling metrics and reporting accuracy. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+The Call Details API now captures callback and external transfer events with new tracking fields. QueueEntry includes CallbackOpted, CallbackOptedTime, and CallbackInitiatedTime for both caller and system-initiated callbacks. AgentTransfer objects add ExternalTransferTime and ExternalTransferDestination fields for transfers to external parties, improving call-handling metrics and reporting accuracy. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v2.md)
 
 <hr>
 
@@ -1134,7 +1133,7 @@ Email = Email Count; Email conversations ongoing or waiting in a queue.
 
 **Call Termination Tracking Added to Call Details API (v2)**
 
-The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v2.md)
 
 <font size="4">Voice Gateway (v0.9.3-rc4)</font>
 
@@ -1665,7 +1664,7 @@ Key updates:
     * The "Joined Users" column has been added to the CSV version.
     * Shows a pipe-separated list of joined users.
 * Call Details API v2:
-    * A new mandatory "JoinedUsers" array is added. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+    * A new mandatory "JoinedUsers" array is added. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v2.md)
 * Agent Activity Summary Report:
     * Now includes interaction duration for all involved agents and supervisors.
     * The "Interacting" field counts time for primary agents, consultants, and joined users. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/agent-activity-summary-report.md)
