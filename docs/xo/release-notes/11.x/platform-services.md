@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
-This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+This update includes an enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
 <font size="4">Channels</font>
 
