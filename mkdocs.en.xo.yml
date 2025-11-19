@@ -625,8 +625,7 @@ nav:
       - Internal Transfer: agentai/integration/websdk/internal-transfer-process.md
       - Sentiment Chart: agentai/integration/websdk/sentiment-charts.md
       - Other Events: agentai/integration/websdk/other-events.md
-      - Error Codes: agentai/integration/websdk/error-codes.md
-      - Trial for Language Dropdown: agentai/integration/websdk/trial-for-language-dropdown.md 
+      - Error Codes: agentai/integration/websdk/error-codes.md 
   - GenAI Tools:
     - About GenAI Tools: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
