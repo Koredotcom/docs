@@ -124,6 +124,76 @@ Currently, it can only be used for extraction from **PDF files**, uploaded direc
    * **Answer generation isn't supported by Kore XO GPT** when extraction is performed using Image-based extraction strategy.
    * Currently, this strategy is supported for a limited set of languages. Refer to [this](../language-support.md#language-specific-extraction-capabilities) to learn more.
 
+### Default Extraction Strategies
+
+The default extraction strategy automatically selects the most suitable extraction model for each content source and file type. This ensures that content is extracted and chunked in a manner that preserves its structure and enhances retrieval performance.
+
+The table below outlines the extraction strategies used for different content types. Create a custom strategy to override these defaults when needed.
+
+
+<table>
+  <tr>
+   <td>Content Source
+   </td>
+   <td>Content Type
+   </td>
+   <td>Extraction Strategy
+   </td>
+  </tr>
+  <tr>
+   <td>WebPages
+   </td>
+   <td>HTML 
+   </td>
+   <td>Advanced HTML Extraction
+   </td>
+  </tr>
+  <tr>
+   <td>Documents
+   </td>
+   <td>pdf, doc, docx
+   </td>
+   <td>Markdown Extraction
+   </td>
+  </tr>
+  <tr>
+   <td>Documents
+   </td>
+   <td>pptx, txt
+   </td>
+   <td>Text Extraction
+   </td>
+  </tr>
+  <tr>
+   <td>Connectors
+   </td>
+   <td>pdf, doc, docx, html, aspx
+   </td>
+   <td>Markdown Extraction
+   </td>
+  </tr>
+  <tr>
+   <td>Connectors
+   </td>
+   <td>pptx, txt
+   </td>
+   <td>Text Extraction
+   </td>
+  </tr>
+  <tr>
+   <td>Connectors
+   </td>
+   <td>json
+   </td>
+   <td>JSON Extraction
+   </td>
+  </tr>
+</table>
+
+
+!!!note
+
+    This default strategy applies only to applications created after Nov 19, 2025. There will be no impact on applications created before this timeline and will continue to use their extraction configurations as it is. 
 
 ## Deleting a Strategy
 
