@@ -31,7 +31,7 @@ Steps to enable Answer Call on First Bot/AI Agent Response:
 2. Turn on the toggle to enable the functionality.  
     <img src="../images/answer-call-bot-response.png" alt="Answer Call Enabled" title="Answer Call Enabled" style="border: 1px solid gray; zoom:70%;">
 
-    When calls transfer from an existing telephony provider to Kore, a connection event triggers once the call connects and the bot begins responding. In rare cases, the AI Agent’s response may be delayed due to processing or latency. This setting sends the connection event only when the AI Agent’s first response plays and plays a dial tone in the meantime, keeping callers engaged.
+    When calls transfer from an existing telephony provider to platform, a connection event triggers once the call connects and the bot begins responding. In rare cases, the AI Agent’s response may be delayed due to processing or latency. This setting sends the connection event only when the AI Agent’s first response plays and plays a dial tone in the meantime, keeping callers engaged.
 
 ## Data Retention Period
 
@@ -42,21 +42,9 @@ Steps to configure the data retention period.
 1. Click **Data Retention Period**.  
     <img src="../images/data-retention-period-option.png" alt="Data Retention Period" title="Data Retention Period" style="border: 1px solid gray; zoom:70%;">
 
-2. Select the required duration for data retention from the following options:
-    * 1 Day
-    * 7 Days
-    * 1 Month
-    * 3 Months
-    * 6 Months
-    * 1 Year
-    * 2 Years
-    * 3 Years
-    * 4 Years
-    * 5 Years
-    * 6 Years
-    * 7 Years
-
-    Select the check box (optional) to enable email notifications, 5 days before deletion of voice call recordings. Email subscription is available only for retention periods above 30 days.  
+2. Select the required duration for data retention.
+    
+ Select the check box (optional) to enable email notifications, 5 days before deletion of voice call recordings. Email subscription is available only for retention periods above 30 days.  
     <img src="../images/define-data-retention-period.png" alt="Define Data Retention Period" title="Define Data Retention Period" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save** to apply the changes.
