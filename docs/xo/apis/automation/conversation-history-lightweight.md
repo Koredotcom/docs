@@ -1,3 +1,5 @@
+--8<-- "includes/automationai-api-back-link.md"
+
 # Conversation History API - Lightweight
 
 The API provides a lightweight endpoint that returns chat transcripts without additional metadata or payload overhead. It supports high-volume retrieval and minimizes response size to reduce processing time and avoid rate limit issues.

@@ -2,6 +2,30 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.19.1 November 19, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Campaigns</font>
+
+**Export and Import Web Campaigns**
+
+The platform now supports exporting and importing artifacts for Proactive Web Campaigns. This feature allows users to easily replicate and reuse entire campaign configurations across different apps, workspaces, or environments, ensuring consistency and significantly reducing setup time. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#export-and-import-web-campaigns)
+
+**Proactive Web Campaign Logs**
+
+A new Logs section offers enhanced visibility into web campaign activity. Users can review recent campaign events, apply date-based filters, and export logs for analysis, ensuring better visibility into campaign performance. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/logs.md)  
+
+<font size="4">API</font>
+
+**Call Details API (v1) – Enhanced with Disconnect Event Fields**
+
+The Call Details API (v1) now includes disconnect event fields, providing better visibility into conversation termination details. This enhancement maintains backward compatibility while improving reporting and analytics.
+
+<hr>
+
 ## v11.19.0 October 25, 2025
 
 <u>Minor Release</u>
