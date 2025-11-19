@@ -102,7 +102,7 @@ Add a brief description of the use case context to guide the model.
 
 Tools allow the Agent Node to interact with external services, fetching or posting data as needed. When called, they let language models perform tasks or obtain information by executing actions linked to Script, Service, or Search AI nodes. Users can add a maximum of 5 tools to each node.
 
-!!! Note Agent Node Tool Calling and Streaming Support
+!!! Note "Agent Node Tool Calling and Streaming Support"
 
     * V1 Custom JavaScript Prompts: Supports tool calling and streaming as separate capabilities, but not simultaneously.
     * V2 Custom JavaScript Prompts: Supports both tool calling and streaming together using OpenAI/Azure OpenAI response format.
@@ -285,7 +285,7 @@ Tool calling is the ability to identify when external functions are needed, sele
 * **Dynamic Prompt Enhancement**: The Agent Node's prompt is enhanced to include tool definitions and contextual information. Based on user input and ongoing conversation, the language model can dynamically decide whether to generate text or call a tool. The dynamic prompt adaptation ensures that the AI Agent provides the most appropriate response or action at each step of the interaction.
 * **Tool Calling with Streaming Responses**: The Agent Node supports tool calling with streaming, allowing the model to generate responses progressively for faster, more fluid user interactions. The Agent Node supports both tool calling and prompt streaming in custom JavaScript V2 prompts using the OpenAI or Azure OpenAI response format.
 
-!!! Note Agent Node Tool Calling and Streaming Support
+!!! Note "Agent Node Tool Calling and Streaming Support"
 
     * V1 Custom JavaScript Prompts: Supports tool calling and streaming as separate capabilities, but not simultaneously.
     * V2 Custom JavaScript Prompts: Supports both tool calling and streaming together using OpenAI/Azure OpenAI response format.

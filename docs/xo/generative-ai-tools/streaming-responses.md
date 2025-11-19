@@ -8,7 +8,7 @@ The Platform support the voice-based channel [Voice Gateway](../channels/voice-g
 
 The Platform delivers real-time LLM response streaming for chat conversations on [Web/Mobile SDK](../sdk/bot-sdk-introduction.md) Channels. Agent Node and Prompt Node deliver AI responses token by token, showing incremental replies to boost engagement and reduce latency. Text streaming activates when a streaming prompt is selected at the node level, even if the feature-level prompt doesn't use streaming.
 
-!!! Note Agent Node Tool Calling and Streaming Support
+!!! Note "Agent Node Tool Calling and Streaming Support"
 
     * V1 Custom JavaScript Prompts: Supports tool calling and streaming as separate capabilities, but not simultaneously.
     * V2 Custom JavaScript Prompts: Supports both tool calling and streaming together using OpenAI/Azure OpenAI response format.
