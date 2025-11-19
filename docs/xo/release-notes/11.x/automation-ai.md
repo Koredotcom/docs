@@ -8,6 +8,26 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
+<font size="4">Agent Node</font>
+
+
+**Tool Calling with Streaming Responses**
+
+The Agent Node now supports tool calling with streaming, enabling models to deliver responses in real time as they're generated, resulting in faster, more fluid user interactions.
+
+Key features:
+
+* Simplified V2 Prompt Setup: The Custom Prompt page now features a Response Payload Format control (OpenAI, Azure OpenAI, or Custom) for automatic parsing, eliminating the need for manual Post-Processor setup in streaming configurations.
+* Prompt-Level Control: Use the new Streaming Toggle on the V2 prompt page to enable/disable incremental responses.
+
+Backward Compatibility 
+
+All existing V1 and V2 prompts remain unchanged; streaming is disabled by default, preserving existing configurations.
+
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#tool-definition) 
+
+
+
 <font size="4">API</font>
 
 **New Lightweight Conversation History API**  
