@@ -62,7 +62,7 @@ plugins:
         'contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
         'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
         'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
-        'agentai/integration/AgentAI-webSDK/internal-transfer-process/': 'integration/websdk/internal-transfer-process/'
+        'agentai/integration/AgentAI-webSDK/internal-transfer-process.md': 'agentai/integration/websdk/internal-transfer-process.md'
 
 extra:
   version:
