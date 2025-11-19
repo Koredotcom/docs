@@ -2,6 +2,28 @@
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
+## v11.19.1 November 15, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Configure</font>
+
+**New AI-Powered Etiquette Evaluation Metrics**
+
+New AI-powered evaluation metrics automatically assess agent etiquette across different interaction scenarios, ensuring consistent service quality and providing actionable coaching insights:
+
+* **By Transfer Etiquette Evaluation**: It assesses agent conduct during customer transfers, verifying agents inform customers, explain the reason, and confirm understanding before the handoff. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-transfer.md)
+
+* **By Hold Etiquette Evaluation**: It assesses agent adherence to best practices for managing voice interaction hold scenarios, including notification, appropriate hold time, and clear conversation resumption. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-hold.md)
+
+**Enhanced AI Agent Metric**
+
+The enhanced AI Agent metric reduces the number of agent calls, supports weight-based breakdowns across multiple evaluation aspects, and improves the design-time configuration experience. It uses a two-level structure (parent metric and weighted sub-metrics with defined criteria/adherence logic) to analyze multiple conversation aspects in one evaluation, providing structured scores and justifications. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md)
+
+<hr>
+
 ## v11.19.0 October 25, 2025
 
 <u>Minor Release</u>

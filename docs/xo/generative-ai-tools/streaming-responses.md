@@ -43,7 +43,7 @@ The Platform provides Default-Streaming prompts in addition to default (non-stre
 
 Go to **Generative AI Tools** > **GenAI Features** and select the default-streaming prompt for Agent Node. You can also create custom streaming prompts for this model.  
 <img src="../images/default-streaming.png" alt="default-streaming" title="Default Streaming Prompt" style="border: 1px solid gray; zoom:70%;">
-
+automation
 ### Create Custom Streaming Prompts
 
 To create a custom streaming prompt, see [How to add Prompts and Requests](prompts-library.md) and enable the streaming response toggle.
@@ -51,7 +51,7 @@ To create a custom streaming prompt, see [How to add Prompts and Requests](promp
 Ensure that the streamed response follows the Platform's required format:
 
 * conv_status: Indicates whether the conversation has **ended** or is **ongoing**.
-*AI Agent response: The generated response sent to the end user.
+* AI Agent response: The generated response sent to the end user.
 * collected entities: A stringified JSON object containing extracted entities.
 
 !!! note
