@@ -22,7 +22,7 @@ A new Logs section offers enhanced visibility into web campaign activity. Users 
 
 **Call Details API (v1) – Enhanced with Disconnect Event Fields**
 
-The Call Details API (v1) now includes disconnect event fields, providing better visibility into conversation termination details. This enhancement maintains backward compatibility while improving reporting and analytics.
+The Call Details API (v1) now includes disconnect event fields, providing better visibility into conversation termination details. This enhancement maintains backward compatibility while improving reporting and analytics. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v1.md) 
 
 <hr>
 
