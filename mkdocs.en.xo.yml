@@ -645,7 +645,8 @@ nav:
         - XO GPT Feedback Submission: generative-ai-tools/xogpt-feedback-submission.md
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
-      - Streaming Responses: generative-ai-tools/streaming-responses.md 
+      - Streaming Responses: generative-ai-tools/streaming-responses.md
+      - LLM Response Format: generative-ai-tools/llm-response-format.md
     - GenAI Features: 
       - About GenAI Features: generative-ai-tools/genai-features.md
       - Automation AI - GenAI Features: generative-ai-tools/genai-features-automationai.md

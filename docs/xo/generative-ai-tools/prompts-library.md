@@ -42,7 +42,7 @@ Streaming prompts deliver responses incrementally as the model generates them, a
 | Exit Scenarios | Supported | Not supported |
 | AI Agent Response | Supported | Not supported |
 | Collected Entities | Supported | Must be included in streamed format |
-| Tool Call Requests | Supported | Not supported for Agent Node |
+| Tool Call Requests | Supported | Supported |
 | Post-Processing | Available | Not available |
 | Guardrails | Supported | Not supported |
 

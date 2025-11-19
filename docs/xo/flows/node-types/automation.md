@@ -71,7 +71,7 @@ Select how you want to handle user conversations based on your business needs an
 This feature allows users to engage in two-way voice streaming through the **Voice Gateway**, enhancing automation with AI models.
 When real-time voice interaction is enabled, Kore Voice Gateway uses the underlying models configured in Agent Platform to add voice capabilities to the application. You can also enable Real-time Voice Interactions later from the Agent Platform. 
 
-* **TTS Streaming**: TTS Streaming sends LLM responses to TTS for real-time audio playback, supporting only Deepgram TTS and ElevenLabs TTS.
+* **TTS Streaming**: TTS Streaming sends LLM responses to TTS for real-time audio playback, supporting only Deepgram TTS and ElevenLabs TTS.  
 <img src="../images/full-autonomy-options.png" alt="Full Autonomy" title="Full Autonomy" style="border: 1px solid gray; zoom:70%;">
 
 ### Connection Rules
