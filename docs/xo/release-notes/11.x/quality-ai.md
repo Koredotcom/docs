@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
-## v11.19.1 November 15, 2025
+## v11.19.1 November 19, 2025
 
 <u>Patch Release</u>
 
