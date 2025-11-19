@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **New Lightweight Conversation History API**  
 
-The new lightweight Conversation History (`getMessages`) API is optimized for high-volume conversation summarization, delivering improved performance, reliability, and scalability.
+The new lightweight Conversation History (`getMessages`) API is optimized for high-volume conversation summarization, delivering improved performance, reliability, and scalability. [Learn more :octicons-arrow-right-24:](../../apis/automation/conversation-history-lightweight.md)
 
 **Mandatory API Response Encryption Based on App Settings**  
 
