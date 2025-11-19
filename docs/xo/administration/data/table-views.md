@@ -98,7 +98,7 @@ Steps to change the view owner:
 
 ## Share Table Views
 
-The Kore.ai XO Platform allows you to share Table Views by assigning them to bots, process apps, or apps.
+AI for Service allows you to share Table Views by assigning them to bots, process apps, or apps.
 
 !!! Note
 

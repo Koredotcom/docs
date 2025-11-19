@@ -19,4 +19,4 @@ Use the following properties to configure this stage.
 * **Outcome**: Use this section to provide the details of the processing to be done on the selected chunks. 
     * **LLM**: Select the external LLM to be used for processing the chunks.
     * **Prompt**: Choose or define the custom prompt that instructs the LLM on how to process the chunk content.
-    * **Target Field**: Specify the chunk field where the enriched or updated output from the LLM should be stored. The [value of the field set in Response.Path](../../generative-ai-tools/prompts-library.md#how-to-add-prompts-and-requests) is the response of the LLM Stage and is copied to the target field. 
+    * **Target Field**: Specify the chunk field where the enriched or updated output from the LLM should be stored. The [value of the field set in Response.Path](../../generative-ai-tools/prompts-library.md#how-to-add-a-custom-prompt) is the response of the LLM Stage and is copied to the target field. 

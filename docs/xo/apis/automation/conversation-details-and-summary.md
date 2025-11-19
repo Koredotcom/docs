@@ -133,7 +133,7 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exx
 ```json
 {
    "conversationInfo": {
-       "userId": "u-c8c61885-85bb-5db2-bf8e-6fd4a97c58f9",
+       "userId": "u-c8c61885-85bb-xxxx-xxxx-6fd4a97c58f9",
        "callId": "9eb6c49e-f647-4c48-b31c-cc207e3a6080",
        "sessionStartTime": "2023-08-07T11:18:10.195Z",
        "agentHandOffTime": "2023-08-07T11:18:11.304Z",
@@ -143,7 +143,7 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exx
            "phoneNumber": null
        },
        "currentTask": "null",
-       "sessionId": "64d0d2f2bfeaa2d58a566d08"
+       "sessionId": "64d0d2f2bxxxxxxxxa566d08"
    },
    "conversationFlow": [
        {
@@ -163,10 +163,10 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exx
            "status": "pending",
            "createdOn": "2023-08-07T11:18:10.337Z",
            "lmodifiedOn": "2023-08-07T11:18:10.337Z",
-           "createdBy": "u-c8c61885-85bb-5db2-bf8e-6fd4a97c58f9",
+           "createdBy": "u-c8c61885-xxxx-xxxx-bf8e-6fd4a97c58f9",
            "components": [
                {
-                   "_id": "cp-faacd4b7-7fb5-57f1-aef8-455734582c33",
+                   "_id": "cp-faacd4b7-xxxx-xxxx-aef8-455734582c33",
                    "cT": "text",
                    "data": {
                        "text": "Agent transfer initiated"
@@ -191,10 +191,10 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exx
            "status": "pending",
            "createdOn": "2023-08-07T11:18:10.761Z",
            "lmodifiedOn": "2023-08-07T11:18:10.761Z",
-           "createdBy": "u-c8c61885-85bb-5db2-bf8e-6fd4a97c58f9",
+           "createdBy": "u-c8c61885-85bb-xxxx-xxxx-6fd4a97c58f9",
            "components": [
                {
-                   "_id": "cp-8fed6639-fb80-5ea1-9d4c-7a4508d6a266",
+                   "_id": "cp-8fed6639-xxxx-xxxx-xxxx-7a4508d6a266",
                    "cT": "text",
                    "data": {
                        "text": "I will need to get an agent on the line to help you with that. Please hold while I find an available agent."
@@ -207,9 +207,9 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exx
            "ms": 1,
            "lang": "en",
            "agentAssistDetails": {
-               "streamId": "st-86ef3c8d-7021-5f2b-bf6c-8a14ec6fffb0",
+               "streamId": "st-86ef3c8d-xxxx-xxxx-bf6c-8a14ec6fffb0",
                "srcChannel": "",
-               "childBotStreamId": "st-86ef3c8d-7021-5f2b-bf6c-8a14ec6fffb0",
+               "childBotStreamId": "st-86ef3c8d-xxxx-xxxx-bf6c-8a14ec6fffb0",
                "experience": "",
                "userInput": "ConnectToAgent"
            },
@@ -226,15 +226,15 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exx
            ],
            "type": "ctrlmsg",
            "status": "received",
-           "createdBy": "u-c8c61885-85bb-5db2-bf8e-6fd4a97c58f9",
-           "lmodifiedBy": "u-c8c61885-85bb-5db2-bf8e-6fd4a97c58f9",
+           "createdBy": "u-c8c61885-85bb-xxxx-xxxx-6fd4a97c58f9",
+           "lmodifiedBy": "u-c8c61885-xxxx-xxxx-bf8e-6fd4a97c58f9",
            "lmodifiedOn": "2023-08-07T11:34:19.170Z",
            "isBB": 0,
            "ms": 4,
            "sT": 0,
            "components": [
                {
-                   "_id": "cp-125ef7dd-5126-5e17-8828-7f79db72b959",
+                   "_id": "cp-125ef7dd-xxxx-xxxx-8828-7f79db72b959",
                    "cT": "text",
                    "data": {
                        "text": "sending a ctrl message to CS"

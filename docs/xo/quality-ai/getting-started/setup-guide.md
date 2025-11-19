@@ -22,11 +22,11 @@ Follow these steps:
     
 4. **Create New Evaluation Metrics**
 
-    a. Use By Question, Question Answer Pair, and Adherence Types (Static/Dynamic). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md/){:target=”_blank”}.
+    a. Use By Question, Question Answer Pair, Adherence Types (Static/Dynamic). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md/){:target=”_blank”}.
     
-    * [Create New Evaluation Metrics](../configure/evaluation-metrics.md/#create-new-evaluation-metrics){:target=”_blank”}.    
+    b. Evaluation Metrics (Create New Evaluation Metrics). [Learn more](../configure/evaluation-metrics.md/#create-new-evaluation-metric){:target=”_blank”}.    
     
-    b. Set Count Type (Entire Conversation/Time Bound). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md/){:target=”_blank”}.
+    c. Set Count Type (Entire Conversation/Time Bound). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md/){:target=”_blank”}.
     
 5. **Create Evaluation Forms**
 

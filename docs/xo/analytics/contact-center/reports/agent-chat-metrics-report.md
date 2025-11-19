@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Agent Chat Metrics Report
 
 ## Generating the Agent Chat Metrics Report
