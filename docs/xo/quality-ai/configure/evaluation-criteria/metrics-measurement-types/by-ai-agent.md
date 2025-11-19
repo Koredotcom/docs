@@ -72,10 +72,10 @@ Ensure the following before creating a By AI Agent metric:
 
 ### Step 5: Configure Sub-Metrics
 
-Upon successful connection, the system displays all sub-metrics returned by the agentic app with their reference names.   
+After a successful connection, the system displays all sub-metrics provided by the agentic app along with their reference names.     
 <img src="../images/ai-agent-sub-metrics.png" alt="AI Agent Sub-Metrics" title="AI Agent Sub-Metrics" style="border: 1px solid gray; zoom:70%;">
 
-Configure each sub-metric individually by clicking **Edit** button next to weightage. This opens a full-screen interface for comprehensive setup.
+You can configure each sub-metric individually by selecting **Edit** next to the Weightage field. This opens a full-screen configuration panel where you can define the following:
 
 | Field             | Description                                                                  |
 |-------------------|------------------------------------------------------------------------------|
@@ -87,7 +87,7 @@ Configure each sub-metric individually by clicking **Edit** button next to weigh
 
 <img src="../images/sub-metrics-weightage.png" alt="Configure Sub-Metrics" title="Configure Sub-Metrics" style="border: 1px solid gray; zoom:70%;">
 
-1. Click **Create** to save the new metric for AI Agent evaluation.
+Once all details are configured, click **Create** to save the sub-metric for AI Agent evaluation.
 
 ## Setting up Response Format
 
