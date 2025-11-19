@@ -168,7 +168,7 @@ For example: "Did the agent inform the customer before placing them on hold?"
 
                 * **Hold Duration  (Positive Weightage)**: Enter the scoring weight for Hold Duration compliance. This evaluates whether the actual hold time remained within the configured limit.
 
-                * **Call Resumption (Positive Weightage)**: Enter the scoring weight for Call Resumption**. This evaluates whether the agent resumed appropriately after lifting the hold.  
+                * **Call Resumption (Positive Weightage)**: Enter the scoring weight for Call Resumption. This evaluates whether the agent resumed appropriately after lifting the hold.  
                                    
 8. Click **Create** (enabled only when all validation checks pass). 
     
@@ -194,7 +194,7 @@ For example: "Did the agent inform the customer before placing them on hold?"
 
 **Example**: Agents who exceeded the maximum hold duration are marked non-compliant. 
 
-#### Outcome Scoring (GenAI / Deterministic ML)
+#### Outcome Scoring (GenAI/Deterministic ML)
 
 * **Yes**: Agent’s utterance or behavior matches expected criteria. 
 
