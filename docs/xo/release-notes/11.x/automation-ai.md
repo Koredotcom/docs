@@ -16,8 +16,7 @@ The new lightweight Conversation History (`getMessages`) API is optimized for hi
 
 **Mandatory API Response Encryption Based on App Settings**  
 
-The Public API endpoints no longer support the `encrypt=true` query parameter. Response payload encryption is now enforced only through app-level settings, ensuring consistent encryption behavior without parameter-based overrides. Learn more.
-<hr>
+The Public API endpoints no longer support the `encrypt=true` query parameter. Response payload encryption is now enforced only through app-level settings, ensuring consistent encryption behavior without parameter-based overrides.
 
 ## v11.19.0 October 25, 2025
 
