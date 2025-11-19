@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Dialer Campaign History Report
 
 ## Generating the Dialer Campaign History Report

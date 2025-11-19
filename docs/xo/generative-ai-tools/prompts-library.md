@@ -1,21 +1,22 @@
 
 # Prompts Library
 
-Effective prompts play a crucial role in enhancing response accuracy when interacting with LLMs. The new Prompts Library module empowers app designers by enabling them to create and test prompts tailored to their specific use cases. It also displays all newly added/custom and default prompt templates, along with their status (active or inactive).
+Effective prompts are essential for accurate LLM responses. The Prompts Library module enables you to create, test, and manage prompts tailored to specific use cases. It displays all custom and default prompt templates with their current status (active or inactive).
+The prompt post-processor helps you align LLM responses with Platform expectations. Use it to refine outputs, ensuring correct behavior and high-quality interactions at runtime. The post-processor is available for both default and custom prompts.
 
-The post-processor for prompts allows designers to align LLM responses perfectly with the Platform's expectations. Designers can modify the LLM's response to ensure correct behavior and high-quality interactions at runtime. You can add it to both default and custom prompts.
 
 
 ## Default Prompts
 
-The Platform provides default prompt templates designed for pre-built models such as OpenAI and Azure OpenAI. Each prompt aligns with a specific feature and model to support common use cases. These prompts are ready-to-use, offering a simple plug-and-play experience. Simply select a model, choose a prompt, enable the feature, and start using it.
+The Platform provides ready-to-use default prompt templates for pre-built models like OpenAI and Azure OpenAI. Each template is designed for a specific feature and model to support common use cases. Simply select a model, choose a prompt, enable the feature, and start using it.
+Default prompts cannot be edited directly. However, you can import a default prompt, customize it, and save it as a custom prompt for any pre-built or custom LLM.
 
-Default prompts aren't editable. However, you can import a default prompt, customize it, and save it as a custom prompt for either a pre-built or custom LLM.
 
 
 ## Custom Prompts
 
-The Platform enables you to craft custom prompts that tailor model behavior for specific use cases and GenAI features. You can create prompts from scratch or import an existing prompt and tailor the content to their specific needs. Custom prompts give you complete control over prompt design, enabling you to align responses with your desired tone, context, and business requirements. This capability is especially useful for organizations with unique needs that go beyond default prompts.
+Custom prompts let you tailor model behavior for specific use cases and GenAI features. You can build prompts from scratch or import and modify existing ones to meet your needs. Custom prompts give you full control over prompt design, enabling you to align responses with your desired tone, context, and business requirements—particularly valuable for organizations with unique needs beyond standard templates.
+
 
 
 For more information on adding prompt for Agent Node, see [Agent Node Prompt Setup](../automation/agent-node/prompt-setup.md).
@@ -27,7 +28,7 @@ For more information on adding prompt for Agent Node, see [Agent Node Prompt Set
 
 ## Regular vs. Streaming Prompts
 
-Regular prompts (non-streaming prompts) generate a complete response after the model processes the entire input. They are best suited for tasks where the user expects a full, well-structured output at once, such as summaries, reports, or form completions.
+Regular prompts (non-streaming prompts) generate a complete response after the model processes the entire input. They're best suited for tasks where the user expects a full, well-structured output at once, such as summaries, reports, or form completions.
 
 Streaming prompts deliver responses incrementally as the model generates them, allowing users to see partial results in real-time. You can identify streaming prompts in the Prompt Library by the "streaming" tag displayed alongside the prompt name. Refer to [Streaming Responses](streaming-responses.md).
 
@@ -41,7 +42,7 @@ Streaming prompts deliver responses incrementally as the model generates them, a
 | Exit Scenarios | Supported | Not supported |
 | AI Agent Response | Supported | Not supported |
 | Collected Entities | Supported | Must be included in streamed format |
-| Tool Call Requests | Supported | Not supported for Agent Node |
+| Tool Call Requests | Supported | Supported |
 | Post-Processing | Available | Not available |
 | Guardrails | Supported | Not supported |
 
@@ -104,7 +105,7 @@ To add a Custom prompt, follow the steps:
 
     ![alt_text](images/prl(13).png  )
 
-4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. 
+4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto populated based on the input provided while model integration and aren't editable. 
 
 
     ![alt_text](images/prl(3).png  )

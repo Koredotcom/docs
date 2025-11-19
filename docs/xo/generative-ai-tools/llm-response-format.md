@@ -1,4 +1,4 @@
-# Tool Calling Response Format
+# LLM Response Format
 
 The Chat Completions API uses the following response formats, which are identical for both OpenAI and Azure OpenAI.
 

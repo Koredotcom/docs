@@ -53,6 +53,14 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 --data '{
 "startDate":"2025-09-30",
 "endDate":"2025-09-30",
+"selectedFields": [
+        "skills",
+        "customerinfo",
+        "userleveltags",
+        "sessionleveltags"
+    ],
+"queues":[],
+"channels": [],
 "timeZoneOffset":-330
 }'
 
@@ -62,31 +70,25 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 
 | **Header**        | **Description**                                             | **Optional/Required** |
 |-------------------|-------------------------------------------------------------|-----------------------|
-| `accept`            | Desired response format (for example, application/json)                   | Optional              |
-| `accept-language`   | Preferred response language (for example, en-US)             | Optional              |
-| `accountId`         | Unique account identifier                                    | Required              |
-| `app-language`      | Application display language (for example, en)               | Optional              |
-| `content-type`      | Request body format (application/json;charset=UTF-8)         | Required              |
-| `referer`           | Source application name (for example, smartassist)           | Optional              |
-| `auth`              | JWT authentication token                                     | Required              |
-| `IId`               | Stream or application id                                     | Required              |
+| accept            | Desired response format (for example, application/json)                   | Optional              |
+| accept-language   | Preferred response language (for example, en-US)             | Optional              |
+| accountId         | Unique account identifier                                    | Required              |
+| app-language      | Application display language (for example, en)               | Optional              |
+| content-type      | Request body format (application/json;charset=UTF-8)         | Required              |
+| referer           | Source application name (for example, smartassist)           | Optional              |
+| auth              | JWT authentication token                                     | Required              |
+| IId               | Stream or application id                                     | Required              |
 
 ## Request Body Parameters
 
-| **PARAMETER**      | **DESCRIPTION**                                                                                                    | **TYPE**                 |
-|----------------|----------------------------------------------------------------------------------------------------------------|----------------------|
-| `startDate`      | The start date from which the records need to be considered.                                                   | DateTime, required   |
-|                | The date format is: `yyyy-mm-dd HH24:mm:ss`                                                                   |                      |
-|                | For Example, `2022-08-25 07:20:15`                                                                             |                      |
-| `endDate`        | The end date from which the records need to be considered.                                                     | DateTime, required   |
-|                | The date format is: `yyyy-mm-dd HH24:mm:ss`                                                                   |                      |
-|                | For Example, `2022-08-25 18:20:15`                                                                             |                      |
-| `timeZoneOffset` | The time zone offset.                                                                                          | number, required     |
-|                | For Example, `-330,630,-500`                                                                                  |                      |
-|                | NOTE: If the user is in US/New York, then his timeZoneOffset would be 300. For the -ve numbers use the ‘-‘ sign, and for +ve numbers don’t use the sign. For timeZones east of GMT use the -ve sign, for the timeZones west of GMT don’t use any sign. |                      |
-| `channels`       | The different channels.                                                                                       | array[string], optional |
-|                | For Example, `['rtm', 'voice']`                                                                               |                      |
-| `queues`         | The list of queue ids in the instance bots.                                                                   | array[string], optional |
+| Parameter        | Description                                                                                                                                                                                                                                                                                                                                                 | Type                    |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| **startDate**    | The start date from which records are considered. <br> Format: `yyyy-mm-dd HH24:mm:ss` <br> Example: `2022-08-25 07:20:15`                                                                                                                                                                                                                                   | DateTime, required      |
+| **endDate**      | The end date up to which records are considered. <br> Format: `yyyy-mm-dd HH24:mm:ss` <br> Example: `2022-08-25 18:20:15`                                                                                                                                                                                                                                   | DateTime, required      |
+| **timeZoneOffset** | The time zone offset. <br> Examples: `-330`, `630`, `-500` <br> **Note:** For US/New York, the offset is `300`. Use a minus sign for time zones east of GMT; no sign for time zones west of GMT.                                                                                                                                                             | number, required        |
+| **selectedFields** | Specifies which data fields to include in the API response. <br> `skills` - Returns the agent’s areas of expertise or capabilities. <br> `customerinfo` – Includes key customer details such as email, first name, last name, phone number, and other details <br> `userleveltags` – Returns tags assigned at the individual user level for categorization or filtering <br> `sessionleveltags` – Returns tags associated with a specific session or conversation instance. | array[string], optional |
+| **channels**     | The channels to include. <br> Example: `['rtm', 'voice']`                                                                                                                                                                                                                                                                                                    | array[string], optional |
+| **queues**       | The list of queue IDs in the instance bots.                                                                                                                                                                                                                                                                                                                  | array[string], optional |
 
 ## Sample Response
 
@@ -482,107 +484,107 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 
 ## Response Parameters
 
-| **Parameter Name** | **Description** | **Example** | **Type and Format** |
-|--------------------|-----------------|-------------|---------------------|
-| `conversationId` | An ID generated by SmartAssist for this conversation. | c-7b08889-539d-408d-a3e6-9e6ae059xxxx | type-prefixed-guid |
-| `sessionId` | A bot-generated ID for this conversation. | 63bd199c197b3646dadexxxx | internal value |
-| `channel` | Name of the channel. Values – Web/Mobile Client, System Mail, or Voice. | Web / Mobile Client | string |
-| `sessionStartTime` | Start time of the session. | 2023-01-10 2:25:54 | string (ISO 8601 datetime) |
-| `sessionEndTime` | End time of the session. | 2023-01-10 2:25:54 | string (ISO 8601 datetime) |
-| `botId` | Identifier of the bot involved. | st-ae8470ab-8ecb-51fb-8e13-c87dc66fxxxx | type-prefixed-guid |
-| `userId` | SmartAssist’s own generated user ID. | u-8413fd99-4ded-5f6d-8c1a-176dc66xxxx | type-prefixed-guid |
-| `channelSpecificUserId` | User ID passed by the channel. | jane.doe@example.com | — |
-| `orgId` | The organization ID. | o-5a0da1e4-2df3-5cec-9ee4-af0b2efdxxxx | type-prefixed-guid |
-| `smartStatus` | The live status of the session. | CLOSED | string |
-| `Reason` | The reason for the status. | NO AGENTS AVAILABLE | string |
-| `disconnectingEvent` | The final event leading to conversation end. | System Hangup | character string |
-| `errorDetails` | Details of any error that occurred. | — | string |
-| `finalStatus` | Completion status of the conversation. | CLOSED or BotResolved | character string |
-| `automationBotIDs` | List of automation bots involved in the session. | ["st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx"] | array |
-| `isVoicemail` | Indicates if the session was a voicemail. | NO | boolean |
-| `Direction` | Direction of the call. Values: Inbound, Outbound. | Inbound | string |
-| `dispositions` | Disposition assigned to the conversation. | ["Requires Supervisor Attention"] | array of strings |
-| `dispositionRemarks` | Remarks or notes related to the disposition. | ["CUSTOMER needs help with Products and Sales. AGENT will connect her with an agent."] | array of strings |
-| `metaInfo` | Contains custom information, set by automation. | — | object |
-| `metaInfo.caller` | Phone number of the caller. | +132136xxxxx | string |
-| `metaInfo.callee` | Phone number of the callee. | +133434xxxxx | string |
-| `metaInfo.callerHost` | IP address of the caller. | 54.xxx.xx.2 | string |
-| `metaInfo.userId` | Unique identifier of the user. | u-4245d01e-6124-587a-85b2-939fe3cfxxxx | string |
-| `metaInfo.dialedNumber` | Number dialed by the caller. | +1334344xxxx | string |
-| `metaInfo.agentTransferConfig` | Agent transfer settings. | — | object |
-| `metaInfo.agentTransferConfig.skillsIds` | Skill IDs of handling agents. | ["6834045b2e9b90fa31c8xxxx"] | array |
-| `metaInfo.agentTransferConfig.overrideAgents` | Indicates agent override. | false | boolean |
-| `metaInfo.agentTransferConfig.overrideValues` | Override values. | — | array |
-| `metaInfo.agentTransferConfig.assistEvents` | Assist event configuration. | — | object |
-| `metaInfo.agentTransferConfig.assistEvents.startEvent` | Assist start event config. | — | object |
-| `metaInfo.agentTransferConfig.assistEvents.startEvent.startEvent.isEnabled` | Indicates assist is enabled. | false | boolean |
-| `metaInfo.agentTransferConfig.lastIntentName` | Last user intent. | Pay Bill | string |
-| `metaInfo.agentTransferConfig.lastIntentuserInput` | User input text. | Can you please pay my bill? | string |
-| `metaInfo.agentTransferConfig.dialog_tone` | Dialog tone settings. | — | array |
-| `metaInfo.agentTransferConfig.accountId` | Account ID for transfer. | 674daf4bc9d17f4dc070xxxx | string |
-| `metaInfo.ipAddress` | User access IP. | 103.xxx.xxx.xxx | string |
-| `metaInfo.hostDomain` | Domain of the platform. | https://www.example.com | string |
-| `metaInfo.os` | User device OS. | Windows | string |
-| `metaInfo.customerinfo` | Customer details. | — | object |
-| `metaInfo.customerinfo.CustomerPhone` | Customer phone number. | 1505xxxx | string |
-| `metaInfo.customerinfo.CenterPhone` | Service center phone number. | "" | string |
-| `metaInfo.customerinfo.CustomerFirstName` | Customer first name. | Jane | string |
-| `metaInfo.customerinfo.CustomerLastName` | Customer last name. | Doe | string |
-| `metaInfo.customerinfo.CustomerEmail` | Customer email. | jane.doe@example.com | string |
-| `metaInfo.workinghours` | Agent working hours. | — | object |
-| `metaInfo.workinghours.workdays` | Agent workdays. | mon,tue,wed,thu,fri | string |
-| `metaInfo.workinghours.workstart` | Work start time. | 8:00 AM | string |
-| `metaInfo.workinghours.workend` | Work end time. | 5:00 PM | string |
-| `metaInfo.profImage` | Agent profile image. | no-avatar | string |
-| `metaInfo.profColour` | Profile color code. | #ff4500 | string |
-| `metaInfo.jTitle` | Agent job title. | — | string |
-| `metaInfo.dept` | Agent department. | — | string |
-| `metaInfo.activationStatus` | Agent activation status. | active | string |
-| `metaInfo.firstName` | Agent first name. | — | string |
-| `metaInfo.lastName` | Agent last name. | — | string |
-| `metaInfo._id` | Internal user object ID. | u-c1ca58fb-2208-52f8-9f9c-d542316exxxx | string |
-| `metaInfo.identities` | List of mapped identities. | — | array of objects |
-| `metaInfo.identities.val` | Identity value. | cs-259844d3-7827-5f33… | string |
-| `metaInfo.identities.type` | Mapping type. | mapped | string |
-| `metaInfo.transcribeConfig` | Transcription settings. | — | object |
-| `metaInfo.transcribeConfig.transcribe` | Indicates if transcription is enabled. | true | boolean |
-| `destinations` | List of queues or agents the call was transferred to. | — | array of objects |
-| `destinations.destinationType` | Transfer destination type. | QueueEntry | string |
-| `destinations.queueId` | Queue ID. | qu-123dbe9-c752-464d-a9be-1d0e43b6xxxx | type-prefixed-guid |
-| `destinations.queueName` | Queue name. | Residential – Sales | string |
-| `destinations.CallbackOpted` | Indicates callback choice. | True | boolean |
-| `destinations.CallbackOptedTime` | Callback opt-in timestamp. | 2025-09-30T06:34:48.810Z | string (ISO 8601 datetime) |
-| `destinations.userCallbackAcceptTime` | Callback acceptance time. | 2025-09-30T06:35:00.589Z | string (ISO 8601 datetime) |
-| `destinations.EnterTime` | Queue entry timestamp. | 2023-01-10 2:25:54 | string (ISO 8601 datetime) |
-| `destinations.respondingAgent` | Responding agent details. | — | object |
-| `destinations.respondingAgent.agentId` | Agent ID. | u-f3a11f62-57d7-5a9f-a071-787650b1xxxx | type-prefixed-guid |
-| `destinations.respondingAgent.agentNotes` | Agent notes. | ["CUSTOMER has a problem..."] | array of strings |
-| `destinations.respondingAgent.destinationType` | Agent destination type. | AgentSegment | string |
-| `destinations.respondingAgent.status` | Agent handling status. | Answered | string |
-| `destinations.respondingAgent.firstResponseTime` | First response time. | 2023-01-10 2:25:54 | string (ISO 8601 datetime) |
-| `destinations.respondingAgent.firstResponseDuration` | Time to first response (sec). | 20 | integer |
-| `destinations.respondingAgent.interactionEndTime` | Agent interaction end time. | 2023-01-10 2:25:54 | string |
-| `destinations.respondingAgent.interactionDuration` | Interaction duration (sec). | 51 | integer |
-| `destinations.respondingAgent.afterCallWorkDuration` | Post-call work duration. | 8 | integer |
-| `destinations.respondingAgent.afterCallWorkEndTime` | Post-call completion time. | 2023-01-10 2:25:54 | string |
-| `destinations.respondingAgent.ConsultingAgents` | External or internal consulted agents. | — | array of objects |
-| `destinations.respondingAgent.ConsultingAgents.isMerged` | Indicates merge. | True | boolean |
-| `destinations.respondingAgent.ConsultingAgents.name` | External agent contact. | +919550xxxxxx | string |
-| `destinations.respondingAgent.ConsultingAgents.acceptedTime` | Call acceptance time. | 2025-09-30T12:05:45 | string |
-| `destinations.respondingAgent.ConsultingAgents.assignedAt` | Assignment time. | 2025-09-30T12:05:36 | string |
-| `destinations.respondingAgent.ConsultingAgents.consultingEndTime` | Consultation end time. | 2025-09-30T12:05:58 | string |
-| `destinations.respondingAgent.JoinedUsers` | Users who joined. | — | array |
-| `destinations.respondingAgent.email` | Agent email. | jane.doe@example.com | string |
-| `destinations.respondingAgent.name` | Agent name. | Jane Doe | string |
-| `destinations.respondingAgent.assignedAt` | Assignment time. | 2023-01-10 2:25:54 | string |
-| `destinations.respondingAgent.acceptedTime` | Acceptance time. | 2023-01-10 2:25:54 | string |
-| `destinations.nonRespondingAgents` | Agents who did not respond. | — | array of objects |
-| `destinations.nonRespondingAgents.agentId` | Non-responder ID. | u-3ea001b4-664a-58b6-8108-b8bca375xxxx | string |
-| `destinations.nonRespondingAgents.agentNotes` | Notes. | Customer initiated... | array of strings |
-| `destinations.nonRespondingAgents.destinationType` | Segment type. | AgentSegment | string |
-| `destinations.nonRespondingAgents.email` | Agent email. | jane.doe@example.com | string |
-| `destinations.nonRespondingAgents.name` | Agent full name. | Jane doe | string |
-| `destinations.nonRespondingAgents.assignedAt` | Assignment time. | 2025-10-01T13:08:55 | string |
-| `destinations.nonRespondingAgents.nonResponseEvent` | Reason for no response. | Ignored | string |
-| `userleveltags` | All user-level tags for this session. | {"name":"accountnum","value":"121413243141234132"} | array of tag objects |
-| `sessionleveltags` | All session-level tags for this session. | {"name":"audioCodesCallDisconnect","value":"1"} | array of tag objects |
+| Parameter Name | Type and Format | Description | Example |
+|-----------------|-----------------|-------------|---------|
+| conversationId | type-prefixed-guid | An ID generated by SmartAssist for this conversation. | c-7b08889-539d-408d-a3e6-9e6ae059xxxx |
+| sessionId | internal value | A bot-generated ID for this conversation. | 63bd199c197b3646dadexxxx |
+| channel | character string | Name of the channel. Values – Web/Mobile Client, System Mail, or Voice. | Web / Mobile Client |
+| sessionStartTime | YYYY-MM-DDTHH SS | Start time of the session. | 2023-01-10 2:25:54 |
+| sessionEndTime | YYYY-MM-DDTHH SS | End time of the session. | 2023-01-10 2:25:54 |
+| botId | type-prefixed-guid | Identifier of the bot involved. | st-ae8470ab-8ecb-51fb-8e13-c87dc66fxxxx |
+| userId | type-prefixed-guid | SmartAssist’s own generated user ID. | u-8413fd99-4ded-5f6d-8c1a-176dc66xxxx |
+| channelSpecificUserId | no known format | User ID passed by the channel. | jane.doe@example.com |
+| orgId | type-prefixed-guid | The organization ID. | o-5a0da1e4-2df3-5cec-9ee4-af0b2efd3c4f |
+| smartStatus | String | The live status of the session. | CLOSED |
+| Reason | character string | The reason for the status. | NO AGENTS AVAILABLE |
+| disconnectingEvent | character string | The final event leading to the conversation ending. | System Hangup |
+| errorDetails | String | Details of any error that occurred. | — |
+| finalStatus | character string | Completion status of the conversation. | CLOSED or BotResolved |
+| automationBotIDs | Array | List of automation bots involved in the session. | [ "st-e5c6ae6b-c388-5acd-93b7-bada87a7363f" ] |
+| isVoicemail | Boolean | Indicates if the session was a voicemail. | NO |
+| Direction | String | Direction of the call. Values: Inbound, Outbound. | Inbound |
+| dispositions | array of strings | Disposition assigned to the conversation. | [ "Requires Supervisor Attention" ] |
+| dispositionRemarks | array of strings | Remarks or notes related to the disposition from the agent. | [ "CUSTOMER needs help with Products and Sales. AGENT will connect her with an agent." ] |
+| metaInfo | object | Contains custom information, set by automation. | — |
+| metaInfo.caller | string | Phone number of the caller. | +132136xxxxx |
+| metaInfo.callee | string | Phone number of the callee. | +133434xxxxx |
+| metaInfo.callerHost | string | IP address of the caller. | 54.xxx.xx.2 |
+| metaInfo.userId | string | Unique identifier of the user. | u-4245d01e-6124-587a-85b2-939fe3cf27ab |
+| metaInfo.dialedNumber | string | Number dialed by the caller. | +13343445731 |
+| metaInfo.agentTransferConfig | object | Contains configuration for agent transfer including skills, bot, and last intent. | — |
+| metaInfo.agentTransferConfig.skillsIds | array | ID of each skill of the agent handling this conversation. | [ "6834045b2e9b90fa31c8bee7", "6834045b2e9b90fa31c8bee7" ] |
+| metaInfo.agentTransferConfig.overrideAgents | boolean | Indicates whether agent override is enabled. | false |
+| metaInfo.agentTransferConfig.overrideValues | array | Custom override values for agent transfer. | — |
+| metaInfo.agentTransferConfig.assistEvents | object | Configuration for assist-related events. | — |
+| metaInfo.agentTransferConfig.assistEvents.startEvent | object | Configuration details for the assist start event. | — |
+| metaInfo.agentTransferConfig.assistEvents.startEvent.startEvent.isEnabled | boolean | Indicates whether the assist start event is enabled. | false |
+| metaInfo.agentTransferConfig.lastIntentName | string | Last intent posted to the bot by the user. | Pay Bill |
+| metaInfo.agentTransferConfig.lastIntentuserInput | string | Input posted by the user. | Can you please pay my bill? |
+| metaInfo.agentTransferConfig.dialog_tone | array | Dialog tone settings. | — |
+| metaInfo.agentTransferConfig.accountId | string | Agent account ID for transfer configuration. | 674daf4bc9d17f4dc07034a4 |
+| metaInfo.ipAddress | String | IP address from which the user accessed the session. | 103.xxx.xxx.xxx |
+| metaInfo.hostDomain | String | Domain of the platform instance handling the interaction. | https://eu-platform.kore.ai |
+| metaInfo.os | String | Operating system of the user’s device. | Windows |
+| metaInfo.customerinfo | Object | Contains customer details captured during the session. | — |
+| metaInfo.customerinfo.CustomerPhone | String | Customer’s phone number. | 15055150310 |
+| metaInfo.customerinfo.CenterPhone | String | Contact number of the service center. | "" |
+| metaInfo.customerinfo.CustomerFirstName | String | Customer’s first name. | Jimmy |
+| metaInfo.customerinfo.CustomerLastName | String | Customer’s last name. | Conroy |
+| metaInfo.customerinfo.CustomerEmail | String | Customer’s email address. | jane.doe@example.com |
+| metaInfo.workinghours | object | Defines the agent’s working days and hours. | — |
+| metaInfo.workinghours.workdays | String | The working days of the agent. | mon,tue,wed,thu,fri |
+| metaInfo.workinghours.workstart | String | The time when the agent begins accepting calls. | 8:00 AM |
+| metaInfo.workinghours.workend | String | The time when the agent stops accepting calls. | 5:00 PM |
+| metaInfo.profImage | string | Profile image of the agent. | no-avatar |
+| metaInfo.profColour | String | Profile color code. | #ff4500 |
+| metaInfo.jTitle | String | Job title of the agent. | — |
+| metaInfo.dept | String | Department of the agent. | — |
+| metaInfo.activationStatus | String | The activation status of agent. | active |
+| metaInfo.firstName | String | The first name of the agent. | — |
+| metaInfo.lastName | String | The last name of the agent. | — |
+| metaInfo._id | String | Internal identifier for the user object. | u-c1ca58fb-2208-52f8-9f9c-d542316e8e78 |
+| metaInfo.identities | Array of objects | Contains the list of mapped identities for the user. | — |
+| metaInfo.identities.val | string | Mapped identity value. | cs-259844d3-7827-5f33-ae7c-9d790e6d7548/c246a41e-91c1-418f-a4c3-a5d4ad599f43 |
+| metaInfo.identities.type | string | Type of identity mapping. | mapped |
+| metaInfo.transcribeConfig | object | Configuration for call transcription. | — |
+| metaInfo.transcribeConfig.transcribe | Boolean | Indicates whether transcription is enabled for the session. | true |
+| destinations | array of objects | One object for each Queue or Agent that the call was transferred to. | — |
+| destinations.destinationType | String | Destination for any transfer – distinguishes direct-to-agent vs. queue. | QueueEntry |
+| destinations.queueId | type-prefixed-guid | SmartAssist’s internal ID for the Queue. | qu-123dbe9-c752-464d-a9be-1d0e43b6xxxx |
+| destinations.queueName | character string | Name of the queue. | Residential – Sales |
+| destinations.CallbackOpted | Boolean | Indicates whether the customer opted for a callback. | True |
+| destinations.CallbackOptedTime | String (ISO 8601 datetime) | Timestamp when the customer opted for the callback (only if CallbackOpted = true). | 2025-09-30T06:34:48.810Z |
+| destinations.userCallbackAcceptTime | String (ISO 8601 datetime) | Timestamp when the customer accepted the callback initiated by the agent (only if CallbackOpted = true). | 2025-09-30T06:35:00.589Z |
+| destinations.EnterTime | String (ISO 8601 datetime) | Time at which this conversation entered this queue. | 2023-01-10 2:25:54 |
+| destinations.respondingAgent | object | Details of the responding agent. | — |
+| destinations.respondingAgent.agentId | type-prefixed-guid | SmartAssist’s internal ID for the agent. | u-f3a11f62-57d7-5a9f-a071-787650b1xxxx |
+| destinations.respondingAgent.agentNotes | array of strings | Notes provided by the agent. | ["CUSTOMER has a problem with Products and Sales. She needs an agent to help her."] |
+| destinations.respondingAgent.destinationType | string | Type of agent destination. | AgentSegment |
+| destinations.respondingAgent.status | string | Status of the conversation with this respondingAgent. | Answered |
+| destinations.respondingAgent.firstResponseTime | YYYY-MM-DDTHH SS | The time at which this agent first responded. | 2023-01-10 2:25:54 |
+| destinations.respondingAgent.firstResponseDuration | integer | Duration in seconds, from Agent acceptance to first response. | 20 |
+| destinations.respondingAgent.interactionEndTime | YYYY-MM-DDTHH SS | The time at which interaction with this agent ended. | 2023-01-10 2:25:54 |
+| destinations.respondingAgent.interactionDuration | integer | Duration in seconds from Agent acceptance to last utterance. | 51 |
+| destinations.respondingAgent.afterCallWorkDuration | integer | Duration in seconds of post-call work of this agent. | 8 |
+| destinations.respondingAgent.afterCallWorkEndTime | YYYY-MM-DDTHH SS | Time when this agent completed post-call work. | 2023-01-10 2:25:54 |
+| destinations.respondingAgent.ConsultingAgents | array of objects | Contains details of internal/external agents to whom the call was transferred. | — |
+| destinations.respondingAgent.ConsultingAgents.isMerged | Boolean | Indicates whether the agent’s record is merged with another. | True |
+| destinations.respondingAgent.ConsultingAgents.name | string | Name or phone number of the external agent. | +919550xxxxxx |
+| destinations.respondingAgent.ConsultingAgents.acceptedTime | String (ISO 8601 datetime) | Timestamp when external agent accepted the call. | 2025-09-30T12:05:45 |
+| destinations.respondingAgent.ConsultingAgents.assignedAt | String (ISO 8601 datetime) | Timestamp when the call was assigned to the external agent. | 2025-09-30T12:05:36 |
+| destinations.respondingAgent.ConsultingAgents.consultingEndTime | String (ISO 8601 datetime) | Timestamp when the call ended. | 2025-09-30T12:05:58 |
+| destinations.respondingAgent.JoinedUsers | array | Users who joined the call. | — |
+| destinations.respondingAgent.email | string | Agent’s email address. | jane.doe@example.com |
+| destinations.respondingAgent.name | character string | Agent’s name. | jane doe |
+| destinations.respondingAgent.assignedAt | YYYY-MM-DDTHH SS | Time at which this contact was assigned to this Agent. | 2023-01-10 2:25:54 |
+| destinations.respondingAgent.acceptedTime | YYYY-MM-DDTHH SS | Time at which this Agent accepted the contact. | 2023-01-10 2:25:54 |
+| destinations.nonRespondingAgents | Array of objects | Details of agents assigned but didn't respond. | — |
+| destinations.nonRespondingAgents.agentId | String | Unique identifier of non-responding agent. | u-3ea001b4-664a-58b6-8108-b8bca375c166 |
+| destinations.nonRespondingAgents.agentNotes | Array of Strings | Notes or remarks for the interaction. | The customer initiated a conversation with the bot for various requests, including connecting to an agent. |
+| destinations.nonRespondingAgents.destinationType | String | Segment type of the interaction. | AgentSegment |
+| destinations.nonRespondingAgents.email | String | Email address of the agent. | jane.doe@example.com |
+| destinations.nonRespondingAgents.name | String | Full name of the assigned agent. | Jane doe |
+| destinations.nonRespondingAgents.assignedAt | String (ISO 8601 datetime) | Timestamp when the agent was assigned. | 2025-10-01T13:08:55 |
+| destinations.nonRespondingAgents.nonResponseEvent | String | Reason the agent didn't respond. | Ignored |
+| userleveltags | array of tag objects | All user-level tags associated with this session. | {"name": "accountnum","value": "121413243141234132"} |
+| sessionleveltags | array of tag objects | All session-level tags associated with this session. | {"name": "audioCodesCallDisconnect","value": "1"} |
