@@ -111,6 +111,10 @@ This design simplifies configuration and improves entity extraction accuracy.
 * **System tool** – Includes predefined functionality such as `End_Orchestration`, which handles the end of the interaction.
 * **Custom tools** – Defined based on specific business requirements.
 
+#### Response Format in Version 2
+
+Response Payload Format control that lets you define the model’s response schema in advance. When you select OpenAI or Azure OpenAI, the platform automatically parses the response, eliminating the need to manually configure the **Text Response Path** and **Tool Call Request**.
+
 ### Use Case Scenarios
 
 For a more practical approach, the differences through scenarios can make the comparison more engaging.
@@ -391,16 +395,15 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 5. In the Request section, in the Advanced Configuration, select Prompt Version 1 from the drop-down list.  
 <img src="../images/v1dropdown.png" alt="Select Prompt" title="Select Prompt Version" style="border: 1px solid gray; zoom:70%;">
 
-6. Ensure the Stream Response is disabled, as the Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
+6. Ensure the Stream Response is disabled,  as the Agent Node V1 custom JavaScript prompt supports tool calling and streaming as separate capabilities, but not simultaneously.
+
+
 7. You can either create a request from scratch or import the existing prompt from the Library to modify as needed. For example, click **Start from Scratch**. [Learn more](#dynamic-variables).  
 <img src="../images/v1toolcall.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
 7. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**.  
 <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
-
-        The Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
     
 8. Enter the **JavaScript**. The Sample Context Values are displayed. To know more about context values, see [Dynamic Variables](#dynamic-variables).  
 <img src="../images/toolcall2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
@@ -435,7 +438,7 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
         1. On the Post-Processor Script pop-up, enter the Post-Processor Script and click **Save & Test**. The response path keys are updated based on the post-processor script.  
         <img src="../images/postprocessor.png" alt="Post-Processor Script" title="Post-Processor Script" style="border: 1px solid gray; zoom:70%;">     
-        2. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
+        2. The expected LLM response structure is displayed. If the LLM response isn't aligned with the expected response structure, the runtime response might be affected. Click **Save**.
 
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
 <img src="../images/v1andv2.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
@@ -450,16 +453,18 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 #### Add V2 Custom Prompt
 
 For details, see [When to use V2 Prompt.](#version-2-tool-calling-framework)
-To add an Agent Node V2 prompt, follow the steps:
+
+To add an Agent Node V2 streaming prompt, follow the steps:
 
 
 1. Go to **Generative AI Tools** > **Prompts Library** and click **+ New Prompt**.
 2. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**.
-3. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided during model integration and are not editable. 
+3. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto populated based on the input provided during model integration and aren't editable. 
 4. In the Request section, in the Advanced Configuration, select **Prompt Version 2** from the drop-down list. The Switch Version pop-up is displayed. Click **Proceed**.  
 <img src="../images/v2dropdown.png" alt="Select Prompt" title="Select Prompt Version" style="border: 1px solid gray; zoom:70%;">
 
-5. Currently, the Stream Response is not supported for Prompt version 2.
+5. (Optional) toggle the stream responses. By default, the response streaming is disabled. Enabling streaming disables the “Exit Scenario,” “AI Agent Response”, “Collected Entities,” “Tool Call Request,” and "post-processor script."
+
 5. You can either create a Prompt from scratch or import the existing prompt template from the Library to modify as needed. For example, click **Import from Prompts and Requests Library**. The V2 prompt templates are displayed.  
 <img src="../images/v2toolcall.png" alt="Import from Prompts and Requests Library" title="Import from Prompts and Requests Library" style="border: 1px solid gray; zoom:70%;">
 
@@ -479,27 +484,35 @@ To add an Agent Node V2 prompt, follow the steps:
 <img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
 <img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
 
-10. The Actual Response is displayed.  
-<img src="../images/essentialkeysv2.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+10. The Actual Response is displayed.
 
-11. To edit the Post-Processor Script, click **Modify**. On the Pre-Processor Script pop-up, enter the Script and click **Save & Teat**. The response path keys are updated based on the post-processor script.
-  
-    !!! note
+11. Select the Response format from the dropdown.
 
-        Post-Processor Script is mandatory when using V2 prompt.
+    * If response streaming is enabled, select OpenAI or Azure OpenAI, then click **Save**.  
+    <img src="./images/actual-response.png" alt="Response format" title="Response format" style="border: 1px solid gray; zoom:70%;">
+    * If response streaming is disabled:
 
-12. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
-13. Enter the **Text Response Path** and **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.
-14. Click **Test**. The Key Mapping pop-up appears.
+      * Select OpenAI or Azure OpenAI, then click **Save**.
+      * If you select Custom, enter the **Text Response Path** and **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality. Click **Modify** to edit the Post-Processor Script. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.  <img src="./images/custom-response-format.png" alt="Response format" title="Response format" style="border: 1px solid gray; zoom:70%;">
+
+12. (Optional) If you have enabled Token Usage Limits for your Custom Model, map the Request Tokens key and Response Tokens key for accurate token tracking and Analytics. Without proper mapping, the Platform can't calculate token consumption, potentially leading to untracked usage and unexpected costs.
+    * Request Tokens key: `usage.input_tokens`
+    * Response Tokens key: `usage.output_tokens`  
+    <img src="../images/token-mapping.png" alt="token mapping" title="token mapping" style="border: 1px solid gray; zoom:70%;">
+
+13. Click **Test**. The Key Mapping pop-up appears.
     * If all the key mapping is correct, close the pop-up and go to step 15.  
     <img src="../images/keymappingright.png" alt="Key Mapping" title="Key Mapping" style="border: 1px solid gray; zoom:70%;">
     * If the key mapping, actual response, and expected response structures are mismatched, click **Configure** to write the post-processor script.  
     <img src="../images/v2key-map.png" alt="Key Mapping" title="Key Mapping" style="border: 1px solid gray; zoom:70%;">
-15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
-<img src="../images/v1andv2.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
 
-16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
-<img src="../images/selectv2.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+
+
+15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
+<img src="../images/v1andv2new.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
+
+16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tool calling.  
+<img src="../images/selectv2new.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Expected Output Structure
