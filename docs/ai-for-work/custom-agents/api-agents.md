@@ -221,7 +221,7 @@ Follow these steps to add a field value resolver:
 
 Each option includes a label, value, display order, and visibility status. This structure allows for flexible and customizable presentation of choices to the user.
 
-**A crucial feature of Field Options is the mapping between user-friendly labels and technical keys required for API requests**. For example, while a user might see a "Priority" field with options like "High," "Medium," and "Low," the API might use corresponding numerical or string values. This mapping ensures accurate data retrieval by configuring what is displayed to the user and what is sent in API requests.
+A crucial feature of Field Options is the mapping between user-friendly labels and technical keys required for API requests. For example, while a user might see a "Priority" field with options like "High," "Medium," and "Low," the API might use corresponding numerical or string values. This mapping ensures accurate data retrieval by configuring what is displayed to the user and what is sent in API requests.
 
 !!! note
 
