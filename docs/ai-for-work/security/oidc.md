@@ -80,7 +80,7 @@ To set up the AI for Work application in your Google Workspace environment, you 
 **Steps to configure Google**:
 
 1. **Create Service Account**:
-    * Log in to[ Google Cloud Console](https://console.cloud.google.com/).
+    * Log in to[Google Cloud Console](https://console.cloud.google.com/).
     * Navigate to **IAM & Admin > Service Accounts**.
     * Click **Create Service Account**.
     * Provide a service account name and description.
@@ -96,7 +96,7 @@ To set up the AI for Work application in your Google Workspace environment, you 
     * Click **Save**.
     * Note the **Client ID** for the next steps.
 4. **Configure G Suite Admin Console**:
-    * Log in to[ Google Admin Console](https://admin.google.com/).
+    * Log in to[Google Admin Console](https://admin.google.com/).
     * Go to **Security > API Controls > Domain-wide Delegation**.
     * Click **Add new**.
     * Enter the **Client ID** from the service account.
@@ -109,7 +109,6 @@ To set up the AI for Work application in your Google Workspace environment, you 
     * Enter your G Suite admin email in the **Admin Email** field.
 6. **Save** the configuration in AI for Work.
 
-
 ### Microsoft Azure Configuration
 
 Microsoft Azure Active Directory (now Microsoft Entra ID) provides comprehensive identity and access management with robust security features. This configuration enables secure authentication for your organization's users.
@@ -118,13 +117,22 @@ Microsoft Azure Active Directory (now Microsoft Entra ID) provides comprehensive
 
 #### Configuration Steps
 
-1. **Select Identity Provider**:
-    * In the **Configure** section, select **Microsoft Azure**.
-2. **Configure Custom Application**:
-    * **Use Your Microsoft Entra ID App for SSO Login**: Instead of approving the default system-provided app in Microsoft Admin, you can create and configure your own app. Once set up, this app will be used for SSO login for users in your account.
-3. **Save Configuration**:
-    * Click **Save**.
-    * The *Identity Provider information successfully updated* message is displayed at the top of the page.
+1.  **Select Identity Provider**:
+
+    -   In the **Configure** section, select **Microsoft Azure**.
+
+2.  **Configure Custom Application**:
+
+    -   **Use Your Microsoft Entra ID App for SSO Login**: Instead of approving the default system-provided app in Microsoft Admin, you can create and configure your own app. Once set up, this app will be used for SSO login for users in your account.
+    
+    -   **Redirect URL**: The system displays the Redirect URL required for creating your Microsoft Entra ID App. Copy this URL using the copy icon and use it when configuring your app in the Microsoft Azure portal.
+
+3.  **Save Configuration**:
+
+    -   Click **Save**.
+
+    -   The *Identity Provider information successfully updated* message is displayed at the top of the page.
+
 
 #### Setting up Microsoft Azure for AI for Work SSO
 
