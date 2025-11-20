@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Total Volumes Report
 
 ## Generating the Total Volumes Report
