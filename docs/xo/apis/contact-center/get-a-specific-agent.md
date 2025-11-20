@@ -32,7 +32,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/
 
 | **PARAMETER** | **DESCRIPTION**                                                                      | **TYPE**          |
 | ------------- | ------------------------------------------------------------------------------------ | ----------------- |
-| accept        | Specifies the expected response format. Use `application/json` to receive JSON data. | string, required |
+| accept        | Specifies the expected response format. Use application/json to receive JSON data.   | string, required |
 | auth          | JWT token used to authenticate the request.                                          | string, required |
 | accountId     | Unique identifier of the account associated with the request context.                | string, required |
 
@@ -44,7 +44,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/
     "lastName": "Doe",
     "fullName": "John Doe",
     "lFullName": "JDoe",
-    "emailId": "joh.doe@example.com",
+    "emailId": "john.doe@example.com",
     "nickName": "",
     "profImage": "no-avatar",
     "phoneNumber": "",

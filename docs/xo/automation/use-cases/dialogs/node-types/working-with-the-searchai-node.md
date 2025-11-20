@@ -62,7 +62,9 @@ A **Search AI node** can be placed in the automation workflows when there is a n
     * **Present Response to User:** This option is selected by default. It displays the response directly to the user. By default, a standard response template is used for search responses. You can modify the response by clicking **Manage Responses**. 
     * **Store Response in Context Object**: If selected, the user can access the entire payload in the context object “context.SearchAINode.nodename” and modify it later in subsequent nodes.
 
-    Note: If you implement the Search AI feedback mechanism using SearchAINode, ensure that the searchRequestId is included in the channel response. This is handled automatically when the response is presented directly to the user. However, if the SearchAINode response is saved in context and later rendered using a custom template, you must explicitly include the searchRequestId in the response. For instance, if you are using a custom template, add the searchRequestID as shown below.
+        !!! note
+
+            If you implement the Search AI feedback mechanism using SearchAINode, ensure that the searchRequestId is included in the channel response. This is handled automatically when the response is presented directly to the user. However, if the SearchAINode response is saved in context and later rendered using a custom template, you must explicitly include the searchRequestId in the response. For instance, if you are using a custom template, add the searchRequestID as shown below.
 
     ```json
     const searchResponse = context.SearchAINode.SearchAINode;
