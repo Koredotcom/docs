@@ -102,7 +102,7 @@ curl -X POST \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
    -H 'content-type: application/json' \
    -d '{
-  "zipInfo" : "661e717ffad890b38442ea39",
+  "zipInfo" : "661e717xxxx890b3844xxxxx",
   "name":"volkihar",
   "uploadMode":"ZIP"
 }'
@@ -193,8 +193,8 @@ curl -X POST \
 
 ```json
 {
-    "_id": "bir-034fc180-4f84-5c54-a963-5d85b76a36dc",
-    "streamRefId": "46d82741-1edc-536b-92aa-7e58ead9deed",
+    "_id": "bir-034fc180-4f84-xxxx-xxxx-5d85b76a36dc",
+    "streamRefId": "46d82741-1edc-xxxx-xxxx-7e58ead9deed",
     "status": "pending",
     "statusLogs": [
         {
@@ -204,7 +204,7 @@ curl -X POST \
         }
     ],
     "requestType": "Botimport",
-    "createdBy": "u-ed453f8f-131a-5d6f-86fe-03405203199d",
+    "createdBy": "u-ed453f8f-131a-xxxx-xxxx-03405203199d",
     "createdOn": "2024-04-29T11:09:25.312Z",
     "__v": 0
 }

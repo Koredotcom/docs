@@ -168,6 +168,7 @@ nav:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing-your-users.md
       - Manage Groups: user-management/managing-your-groups.md
+      - Enterprise Directory: user-management/enterprise-directory.md
     - LLM Configuration:
       - General Purpose: llm-configuration/general-purpose.md
       - Business Rules: llm-configuration/business-rules.md

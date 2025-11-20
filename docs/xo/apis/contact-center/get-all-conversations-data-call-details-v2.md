@@ -53,6 +53,14 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 --data '{
 "startDate":"2025-09-30",
 "endDate":"2025-09-30",
+"selectedFields": [
+        "skills",
+        "customerinfo",
+        "userleveltags",
+        "sessionleveltags"
+    ],
+"queues":[],
+"channels": [],
 "timeZoneOffset":-330
 }'
 
@@ -73,20 +81,14 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 
 ## Request Body Parameters
 
-| **PARAMETER**      | **DESCRIPTION**                                                                                                    | **TYPE**                 |
-|----------------|----------------------------------------------------------------------------------------------------------------|----------------------|
-| startDate      | The start date from which the records need to be considered.                                                   | DateTime, required   |
-|                | The date format is: `yyyy-mm-dd HH24:mm:ss`                                                                   |                      |
-|                | For Example, `2022-08-25 07:20:15`                                                                             |                      |
-| endDate        | The end date from which the records need to be considered.                                                     | DateTime, required   |
-|                | The date format is: `yyyy-mm-dd HH24:mm:ss`                                                                   |                      |
-|                | For Example, `2022-08-25 18:20:15`                                                                             |                      |
-| timeZoneOffset | The time zone offset.                                                                                          | number, required     |
-|                | For Example, `-330,630,-500`                                                                                  |                      |
-|                | NOTE: If the user is in US/New York, then his timeZoneOffset would be 300. For the -ve numbers use the ‘-‘ sign, and for +ve numbers don’t use the sign. For timeZones east of GMT use the -ve sign, for the timeZones west of GMT don’t use any sign. |                      |
-| channels       | The different channels.                                                                                       | array[string], optional |
-|                | For Example, `['rtm', 'voice']`                                                                               |                      |
-| queues         | The list of queue ids in the instance bots.                                                                   | array[string], optional |
+| Parameter        | Description                                                                                                                                                                                                                                                                                                                                                 | Type                    |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| **startDate**    | The start date from which records are considered. <br> Format: `yyyy-mm-dd HH24:mm:ss` <br> Example: `2022-08-25 07:20:15`                                                                                                                                                                                                                                   | DateTime, required      |
+| **endDate**      | The end date up to which records are considered. <br> Format: `yyyy-mm-dd HH24:mm:ss` <br> Example: `2022-08-25 18:20:15`                                                                                                                                                                                                                                   | DateTime, required      |
+| **timeZoneOffset** | The time zone offset. <br> Examples: `-330`, `630`, `-500` <br> **Note:** For US/New York, the offset is `300`. Use a minus sign for time zones east of GMT; no sign for time zones west of GMT.                                                                                                                                                             | number, required        |
+| **selectedFields** | Specifies which data fields to include in the API response. <br> `skills` - Returns the agent’s areas of expertise or capabilities. <br> `customerinfo` – Includes key customer details such as email, first name, last name, phone number, and other details <br> `userleveltags` – Returns tags assigned at the individual user level for categorization or filtering <br> `sessionleveltags` – Returns tags associated with a specific session or conversation instance. | array[string], optional |
+| **channels**     | The channels to include. <br> Example: `['rtm', 'voice']`                                                                                                                                                                                                                                                                                                    | array[string], optional |
+| **queues**       | The list of queue IDs in the instance bots.                                                                                                                                                                                                                                                                                                                  | array[string], optional |
 
 ## Sample Response
 

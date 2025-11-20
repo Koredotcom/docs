@@ -37,9 +37,9 @@ The Interface displays the following elements:
 
 * **New Evaluation Metrics**: Button to configure new metrics. 
 
-## Create New Evaluation Metrics
+## Create New Evaluation Metric
 
-Steps to create new evaluation metrics:
+Steps to create new evaluation metric:
 
 1. Select the **Evaluation Metrics** tab.    
 <img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics-tab-selection.png" alt="Evaluation Metric" title="Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
@@ -208,7 +208,7 @@ The following measurement types are:
 
     * **Advanced Decision-Making**: Sophisticated judgment calls beyond pattern matching.
 
-    **Used Cases**: 
+    **Use Cases**: 
     
     * **Complex compliance assessments**
     
@@ -246,7 +246,7 @@ The process of managing evaluation metrics includes the following sections:
 
 Steps to edit or delete existing evaluation metrics types:
 
-1. Right-click on any of the existing **Evaluation Metrics Type**.   
+1. Right-click on any of the existing **Evaluation Metrics Type**.    
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit** to update measurement type fields or **Delete** to remove.   

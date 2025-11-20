@@ -2,6 +2,44 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
+## v1.12.0 Nov 13, 2025
+
+<u>Major Release</u>
+
+This update includes new feature and feature enhancement summarized below.
+
+</font></p><font size="4">New Feature</font>
+
+**Enterprise Directory**
+
+Introducing the Enterprise Directory – a centralized employee contact management system that allows end users to easily search, filter, and view colleague information across your organization.
+
+Admins can configure the directory by feeding data through the Push API source. The platform is now enabled with Enterprise Directory capabilities, featuring intelligent search with customizable filters (Department, Designation, First Name, Location), rich contact cards with profile details, and streamlined contact management for enhanced organizational connectivity.
+
+[Learn more :octicons-arrow-right-24:](../user-management/enterprise-directory.md)
+
+<font size="4">Feature Enhancement</font>
+
+**Agent Selection UI/UX Improvements**
+
+The agent selection interface has been redesigned for better usability and clearer navigation, making it easier to choose and configure agents for your workflows.
+
+**Product-Specific Email Templates**
+
+You can now customize email communications with product-specific templates, allowing for more branded and contextually relevant messaging across different products within the platform.
+
+**Work Orchestrator Improvements (Formerly OmniSearch)**
+
+Work Orchestrator has been enhanced with improved sources and citations for better content traceability. Additionally, PDF/PPT generation support has been added, enabling you to create professional reports and presentations directly from your search results.
+
+**Message Timestamps on Hover**
+
+Message timestamps are now visible when hovering over messages, providing better context for conversation history without cluttering the interface.
+
+**Partner Domain Onboarding**
+
+Partner domains can now be onboarded without creating an Enterprise account of their own. This feature resolves the issue where they need a primary account of their own to be added as a partner in an account.
+
 ## v1.11.0 Sept 24, 2025
 
 <u>Major Release</u>

@@ -8,7 +8,10 @@ The Platform support the voice-based channel [Voice Gateway](../channels/voice-g
 
 The Platform delivers real-time LLM response streaming for chat conversations on [Web/Mobile SDK](../sdk/bot-sdk-introduction.md) Channels. Agent Node and Prompt Node deliver AI responses token by token, showing incremental replies to boost engagement and reduce latency. Text streaming activates when a streaming prompt is selected at the node level, even if the feature-level prompt doesn't use streaming.
 
-The streaming capability is available only for [V1 prompts](../automation/agent-node/prompt-setup.md) in Agent Nodes and doesn't support tool calling.
+!!! Note "Agent Node Tool Calling and Streaming Support"
+
+    * V1 Custom JavaScript Prompts: Supports tool calling and streaming as separate capabilities, but not simultaneously.
+    * V2 Custom JavaScript Prompts: Supports both tool calling and streaming together using OpenAI/Azure OpenAI response format.
 
 
 ### Benefits of Streaming
@@ -43,7 +46,7 @@ The Platform provides Default-Streaming prompts in addition to default (non-stre
 
 Go to **Generative AI Tools** > **GenAI Features** and select the default-streaming prompt for Agent Node. You can also create custom streaming prompts for this model.  
 <img src="../images/default-streaming.png" alt="default-streaming" title="Default Streaming Prompt" style="border: 1px solid gray; zoom:70%;">
-
+automation
 ### Create Custom Streaming Prompts
 
 To create a custom streaming prompt, see [How to add Prompts and Requests](prompts-library.md) and enable the streaming response toggle.
@@ -51,7 +54,7 @@ To create a custom streaming prompt, see [How to add Prompts and Requests](promp
 Ensure that the streamed response follows the Platform's required format:
 
 * conv_status: Indicates whether the conversation has **ended** or is **ongoing**.
-*AI Agent response: The generated response sent to the end user.
+* AI Agent response: The generated response sent to the end user.
 * collected entities: A stringified JSON object containing extracted entities.
 
 !!! note

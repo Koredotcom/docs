@@ -1,4 +1,8 @@
-# Generating the Selected Hours Report
+--8<-- "includes/ccai-reports-back-link.md"
+
+# Selected Hours Report
+
+## Generating the Selected Hours Report
 
 The Selected Hours Report shows daily totals of every agent's productive hours. Productive hours are determined by built-in and custom statuses selected by users.
 
