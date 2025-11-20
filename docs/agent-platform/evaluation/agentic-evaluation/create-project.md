@@ -16,7 +16,7 @@ Before running any evaluations, you need to create a project in Evaluation Studi
 3. Click **New Project**.
     1. Enter a name for your project.
     2. Select the Agentic app for which you are creating the project.
-    3. Choose the environment of the Agentic app, such as draft, production, testing, etc. The selected environment will be used for simulation purpose.
+    3. Select the environment for the app (for example, Draft, Testing, or Production). The selected environment determines which version of the agent is used when running simulations.
 
     <img src="../../agentic-evaluation/images/new_project.png" alt="New project dialog" title="New project dialog" style="border: 1px solid gray; zoom:80%;">
 

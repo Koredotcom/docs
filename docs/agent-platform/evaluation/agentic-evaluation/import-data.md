@@ -12,7 +12,7 @@ To evaluate how your AI agents perform in real-world conditions, start by import
 
 Before importing production data users should have already interacted with the app to generate conversation sessions.
 
-**Steps to import production data:**
+Steps to import production data:
 
 1. Click the **Import sessions** button to import the relevant session.
 
@@ -23,7 +23,7 @@ Before importing production data users should have already interacted with the a
 
     <img src="../../agentic-evaluation/images/import_prod_data.png" alt="Import sessions" title="Import sessions" style="border: 1px solid gray; zoom:60%;">
 
-After the import, session data is displayed in the Imported Sessions section, organized into two tabs: **Sessions** and **Traces**.
+After the import, session data is displayed in the **Sessions** and **Traces** tabs.
 
 
 ## Import Simulated Data
@@ -37,13 +37,14 @@ Steps to import simulated data:
 1. Click the **Import sessions** button to import the relevant session.
 
 2. Choose the **Simulation** from which to import sessions and click **Import.**
+
 <img src="../../agentic-evaluation/images/import_session_simulated.png" alt="Import sessions dialog" title="Import sessions dialog" style="border: 1px solid gray; zoom:60%;">
 
 After the import, simulated sessions are displayed in the **Sessions** and **Traces** tabs, just like production data.
 
 ## Understanding the Imported Data
 
-After import, session data is organized into two tabs: Sessions and Traces. These tabs reflect that users can apply evaluators at two levels - session and trace - making it easy to add, run, and review evaluations accordingly.
+Imported data is organized into two tabs: Sessions and Traces. These tabs reflect that users can apply evaluators at two levels - session and trace - making it easy to add, run, and review evaluations accordingly.
 
 * **Sessions**: Displays the list of sessions with details like session ID, number of traces, creation time, and duration. Users can add session-level evaluators here to measure overall outcomes. [Learn more about Session evaluators](./configure-evaluators.md#session-evaluators).
 * **Traces**: Breaks sessions into individual traces, each representing one pair of user input and agentic app response from the whole session. Users can add trace-level evaluators to check specific actions, like whether the correct agent or tool was used. [Learn more about Trace evaluators](./configure-evaluators.md#trace-evaluators).
