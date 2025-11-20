@@ -281,8 +281,9 @@ nav:
       - Agentic Evaluation:
         - About Agentic Evaluation: evaluation/agentic-evaluation/overview.md
         - Create Projects: evaluation/agentic-evaluation/create-project.md
+        - Create Simulations: evaluation/agentic-evaluation/create-simulation.md
         - Create Evaluations: evaluation/agentic-evaluation/create-evaluation.md
-        - Import Datasets: evaluation/agentic-evaluation/import-production-data.md
+        - Import Datasets: evaluation/agentic-evaluation/import-data.md
         - Configure Evaluators: evaluation/agentic-evaluation/configure-evaluators.md
         - Run Evaluations: evaluation/agentic-evaluation/run-evaluation.md
         - View Results: evaluation/agentic-evaluation/view-evaluation-result.md
