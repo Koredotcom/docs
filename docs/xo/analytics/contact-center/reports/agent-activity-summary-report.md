@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Agent Activity Summary Report
 
 ## Generating the Agent Activity Summary Report

@@ -1,15 +1,15 @@
 # Voice Automation and Agent AI Integration with Genesys Cloud CX Agent Desktop via SIP INVITE
 
-This document contains a step-by-step process of handing over a call (via SIP INVITE) initiated from Kore Contact Center AI to Genesys Cloud CX, with Agent AI pre-installed on the Genesys Desktop. 
+This document contains a step-by-step process of handing over a call (via SIP INVITE) initiated from Contact Center AI to Genesys Cloud CX, with Agent AI pre-installed on the Genesys Desktop. 
 
 ## Prerequisites 
 
-* Kore Contact Center AI, Automation AI, and Agent AI accounts with administrator access.
+* Contact Center AI, Automation AI, and Agent AI accounts with administrator access.
 * Genesys Cloud CX account with admin role.
 * Familiarity with creating Architect flow in Genesys.
 * Familiarity with creating External trunk in Genesys.
 
-## Kore Contact Center AI Configuration for Automation 
+## Contact Center AI Configuration for Automation 
 
 - Create/Import App into Automation AI with specific use cases. 
 - Purchase a Phone Number in the **Flows & Channels** > **Channels** > **Voice Gateway** > **Phone Numbers** section, under CCAI.
@@ -51,7 +51,7 @@ This document contains a step-by-step process of handing over a call (via SIP IN
         
         Using the SIP Invite method, you can pass these SIP headers to Genesys. Header keys must not contain spaces. Genesys allows reading up to 10 SIP headers using the **Get SIP Header** node in Architect/Callflow.
 
-## Genesys Side Configuration for Agent Transfer (Kore to Genesys) 
+## Genesys Side Configuration for Agent Transfer  
 
 ### Step 1 – Queue 
 
@@ -61,7 +61,7 @@ If you haven’t created an agent queue to route live agent transfers, create on
 
 #### Create an Inbound Call Flow 
 
-In this section, create a new Inbound Call Flow to transfer the inbound calls from Genesys to SmartAssist.
+In this section, create a new Inbound Call Flow to transfer the inbound calls from Genesys to CCAI.
 
 1. Sign in to [Genesys Cloud](https://login.mypurecloud.com/#/authenticate-adv/org/kore){:target="_blank"}.  
 2. Click **Admin** > **Architect**.  
@@ -72,28 +72,26 @@ In this section, create a new Inbound Call Flow to transfer the inbound calls fr
 
 4. Enter a name and a description in the **Name** and **Description** fields. 
 5. Click **Create Flow**.  
-    <img src="../images/create-flow-8.png" alt="create-flow" title="create-flow" style="border: 1px solid gray; zoom:80%;">  
-
 6. You can create the flow (Add tasks) in the **Main Menu** or create a **Reusable Task** and mark this task as **set this as the starting task** from the three-dot menu.  
 7. After the **Start** node, add a **Get SIP Headers** node in the Architect Flow. 
     1. In the **SIP Headers** node, enter a descriptive name (optional). 
     2. For **SIP Header** **Names**, select the **Literal** and add the following items:
         * x-conversationid 
         * x-koresession-id 
-    3. For storing the **SIP Headers Result**, enter the name as “Task.koreSIPheaders”:	 
+    3. For storing the **SIP Headers Result**, enter the name as **Task.koreSIPheaders**:	 
     <img src="../images/store-sip-headers-result-9.png" alt="store-sip-headers-result" title="store-sip-headers-result" style="border: 1px solid gray; zoom:80%;">  
 
         <div class="admonition note">
         <p class="admonition-title">Note</p>
-        <p>To find any node inside the Architect, click the three vertical dots of that node and select Search Toolbox. </p>
+        <p>To find any node inside the Architect, click the **three vertical dots** of that node, and select **Search Toolbox**. </p>
         </div>  
 
-8. The next node is **Set Participant Data** node in the Architect Flow.  
+8. The next node is **Set Participant Data** node in the **Architect Flow**.  
     1. Inside this node, give any descriptive name.   
     2. Click the **+** button to add a new **Attribute**.   
     3. Enter the Attribute name as **koreSIPHeaders** (don’t change the name; it has to be the same as mentioned here).    
     
-    Assign the value “ToString(Task.koreSIPheaders)” to the above attribute (as an **Expression**).   
+    Assign the value **ToString(Task.koreSIPheaders)** to the above attribute (as an **Expression**).   
 
     <img src="../images/assign-value-as-expression-10.png" alt="assign-value-as-expression" title="assign-value-as-expression" style="border: 1px solid gray; zoom:80%;">   
 
@@ -125,7 +123,7 @@ For **Service Provider**, use **Internal** and add a comment on what the range i
 
 **DID Assignments**    
 
-Assign the number you created to the Call Route from [Step-4](#step-4-call-route). 
+Assign the number you created to the Call Route in [Step-4](#step-4-call-route). 
 
 * Assignee Type: Call Flow
 * DID Number: Your number 
@@ -133,8 +131,6 @@ Assign the number you created to the Call Route from [Step-4](#step-4-call-route
 ### Step 4 – Call Route  
 
 1. Click **Admin** > **Call Routing**.  
-    <img src="../images/admin-call-routing-12.png" alt="admin-call-routing" title="admin-call-routing" style="border: 1px solid gray; zoom:80%;">  
-
 2. Click the **add** button to create a new call route.  
     <img src="../images/add-new-call-route-13.png" alt="add-new-call-route" title="add-new-call-route" style="border: 1px solid gray; zoom:80%;">   
 
@@ -144,15 +140,11 @@ Assign the number you created to the Call Route from [Step-4](#step-4-call-route
 
 ### Step 5 – Trunk  
 
-Configure a trunk that connects the Kore session border controller (SBC) for your region. To configure a trunk, use the following steps:  
+Configure a trunk that connects the session border controller (SBC) for your region. To configure a trunk, use the following steps:  
 
-1. Sign in to [Genesys Cloud](https://login.mypurecloud.com/#/authenticate-adv/org/kore){:target="_blank"} using your Kore credentials.   
+1. Sign in to [Genesys Cloud](https://login.mypurecloud.com/#/authenticate-adv/org/kore){:target="_blank"} using your company credentials.   
 2. Select **Architect**.   
-    <img src="../images/genesys-cloud-architect-15.png" alt="genesys-cloud-architect" title="genesys-cloud-architect" style="border: 1px solid gray; zoom:80%;">  
-
 3. Click **Admin** to open the Admin console.  
-    <img src="../images/open-admin-console-16.png" alt="open-admin-console" title="open-admin-console" style="border: 1px solid gray; zoom:80%;">  
-
 4. Either search with **External Trunks** or click **Telephony** > **External Trunks**.  
 5. Click **+ Create New**.  
 6. Enter a name for the **External Trunk Name** field. 
@@ -164,7 +156,7 @@ Configure a trunk that connects the Kore session border controller (SBC) for you
     <img src="../images/number-plan-site-list-18.png" alt="number-plan-site-list" title="number-plan-site-list" style="border: 1px solid gray; zoom:80%;">  
 
 10. Enter a unique name for **Inbound SIP Termination Identifier**.
-11. The **Inbound Request-URI Reference** appears:  
+11. The **Inbound Request-URI Reference** appears as:  
     <img src="../images/inbound-request-uri-reference-19.png" alt="inbound-request-uri-reference" title="inbound-request-uri-reference" style="border: 1px solid gray; zoom:80%;">   
 
     <div class="admonition note">
@@ -172,7 +164,7 @@ Configure a trunk that connects the Kore session border controller (SBC) for you
     <p>You must add this FQDN Method URL (`sip:+xxxxxxxxxxx@koreSmartassist.byoc.mypurecloud.com`) to the Contact Center AI side **Agent Transfer** [step](#configure-agent-transfer).</p>
     </div>    
 
-12. In the **SIP Access Control** field, add the AI for Service prod voice gateway IPs. This IP address varies based on the regions:   
+12. In the **SIP Access Control** field, add the AI for Service prod voice gateway IPs. This IP address varies based on the region:   
 
     * US Prod:  
         * 3.224.189.218  
@@ -182,7 +174,7 @@ Configure a trunk that connects the Kore session border controller (SBC) for you
         * 13.237.170.233      
     <img src="../images/sip-access-control-field-20.png" alt="sip-access-control-field" title="sip-access-control-field" style="border: 1px solid gray; zoom:80%;">    
 
-13. Click **Media** to expand it, and enable **Recording**. 
+13. Click to expand it **Media**, and enable **Recording**. 
 14. Enable all the **Optional Recording** options. 
 15. Select **Opus** from the **Codec** dropdown list. 
 16. Select the **Dual channel** checkbox.  
@@ -196,7 +188,7 @@ Configure a trunk that connects the Kore session border controller (SBC) for you
     <div class="admonition note">
     <p class="admonition-title">Note</p>
     <p>
-    * If **Media > Recording** is not enabled in the external trunk, end call summary of the Agent AI widget will be unavailable, as Kore middleware requires this setting to receive the **session end** event from Genesys.  
+    * If **Media** > **Recording** is not enabled in the external trunk, end call summary of the Agent AI widget will be unavailable, as the middleware requires this setting to receive the **session end** event from Genesys.   
     * If **Protocol** > **Conversation Headers** is not enabled, the landing summary (User-Bot conversation history and summary) and real-time transcription in the Agent AI widget will not be available.</p>
     </div> 
 
@@ -209,7 +201,7 @@ You must use the same automation bot that was used in the CCAI Automation Flow f
 
 ### Follow the documentation for Agent AI integration with Genesys  
 
-Follow the steps of [Agent AI Integration with Genesys Cloud CX](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md){:target="_blank"} for the Agent AI integration.   
+Follow the steps of [Agent AI Integration with Genesys Cloud CX](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md){:target="_blank"} for the Agent AI integration steps.   
 
 **Configuration Notes**:  
 
@@ -221,28 +213,28 @@ Data Type: **String**
 Value: **True**  
 <img src="../images/genesys-data-table-25.png" alt="genesys-data-table" title="genesys-data-table" style="border: 1px solid gray; zoom:80%;">   
 
-3. Do not configure audiohook  or enable audiohook monitor in the queue level.
-4. Do not add the “**is Audiohook Enabled”** field in the data table.   
+3. Do not configure **audiohook** or enable **audiohook monitor** in the queue level.
+4. Do not add the **is Audiohook Enabled** field in the data table.   
 
 ## Test Your Integration  
 
-Make a call to the [CCAI Number](#kore-contact-center-ai-configuration-for-automation), purchased as part of the previous steps. After successful Agent transfer of the call from SmartAssist to Genesys, the signed in Genesys agent can accept incoming calls.   
+Make a call to the [CCAI Number](#contact-center-ai-configuration-for-automation), purchased as part of the previous steps. After a successful Agent transfer of the call from CCAI to Genesys, the signed-in Genesys agent can accept incoming calls.   
 
 1. Accept the call in Genesys by clicking the **Answer** button.   
 <img src="../images/accept-call-in-genesys-26.png" alt="accept-call-in-genesys" title="accept-call-in-genesys" style="border: 1px solid gray; zoom:80%;">   
 
-2. Click the available **Tools** section, and from there select the interaction widget which you configured in the earlier [steps.](#follow-the-documentation-for-agent-ai-integration-with-genesys).   
+2. Click the available **Tools** section, and from there select the interaction widget you configured in the earlier [steps.](#follow-the-documentation-for-agent-ai-integration-with-genesys).   
 <img src="../images/available-tools-27.png" alt="available-tools" title="available-tools" style="border: 1px solid gray; zoom:80%;">  
 
 3. The Agent AI widget renders on the right side of the Genesys Agent desktop.  
 <img src="../images/agent-ai-widget-28.png" alt="agent-ai-widget" title="agent-ai-widget" style="border: 1px solid gray; zoom:80%;">   
 
-4. Click the **Transcript** tab to see the user-bot conversation history and a summary of the same. This tab also displays the real-time transcripts between the live agent and user.  
+4. Click the **Transcript** tab to see the user-bot conversation history and a summary of the same. This tab also displays the real-time transcripts between the live agent and the user.  
 <img src="../images/transcript-tab-29.png" alt="transcript-tab" title="transcript-tab" style="border: 1px solid gray; zoom:80%;">   
 
 ## Check the Interaction Details in CCAI Interaction   
 
-You can view all interaction details between the user and bot during the call and the conversation between the user and live agent after agent transfer in the CCAI dashboard.   
+You can view all interaction details between the user and the bot during the call and the conversation between the user and the live agent after agent transfer in the CCAI dashboard.   
 
 1. Go to **CCAI** > **Analytics**.  
 2. Click **Contact Center** > **Interactions**.  

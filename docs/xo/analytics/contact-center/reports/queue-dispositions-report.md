@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Queue Dispositions Report
 
 ### Generating the Queue Dispositions Report

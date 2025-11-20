@@ -86,7 +86,7 @@ Once the application is created, you can update its name and description from th
 
 ![App Settings](images/confluencecloud/app-settings.png "App Settings")
 
-Next, configure Authorization code grants to allow SearchAssist to access data. To do so, go to the **Authorization** tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region.
+Next, configure Authorization code grants to allow Search AI to access data. To do so, go to the **Authorization** tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region.
 
 * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
 * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
@@ -253,7 +253,7 @@ SearchAI supports access control for content ingested using Confluence Cloud Con
 
 #### Prerequisites
 
-Access control in SearchAI relies on fetching user’s email address as their unique identity. To ensure proper user identity management in SearchAssist, it is mandatory that the account used for configuring SearchAI must be able to view user email addresses. This typically requires using an admin account or ensuring users have enabled the following necessary settings in their Confluence profiles. 
+Access control in SearchAI relies on fetching user’s email address as their unique identity. To ensure proper user identity management in Search AI, it's mandatory that the account used for configuring SearchAI must be able to view user email addresses. This typically requires using an admin account or ensuring users have enabled the following necessary settings in their Confluence profiles. 
 
 ![Prerequisite](images/confluencecloud/racl/prerequisite.png "image_tooltip")
 
@@ -276,10 +276,10 @@ Pages inherit the space permissions. However, a page can define its own restrict
 
 #### Handling Confluence Cloud Permissions in SearchAI
 
-* **Individual Access**: Users who are added to a space or a specific page within that space are listed in the racl (user identity – email address) field of the indexed content in SearchAssist. Based on their permissions, these users can directly access the content.
+* **Individual Access**: Users who are added to a space or a specific page within that space are listed in the racl (user identity – email address) field of the indexed content in Search AI. Based on their permissions, these users can directly access the content.
 * **Group Access**: If access permissions are granted to user groups, SearchAI creates a corresponding permission entity for the group. In this case, the racl fields in the indexed content will have the permission entity IDs for the groups. To enable access for all users within a group, add the users to the respective permission entity using the Permission Entity APIs. 
 
 
 #### Limitation
 
-* Anonymous Access: SearchAssist does not support anonymous access to content. If a page is publicly accessible or allows anonymous access in Confluence Cloud, SearchAssist will not currently permit viewing of the file content.
+* Anonymous Access: Search AI doesn't support anonymous access to content. If a page is publicly accessible or allows anonymous access in Confluence Cloud, Search AI doesn't permit viewing of the file content.

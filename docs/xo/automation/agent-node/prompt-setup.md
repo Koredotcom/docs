@@ -10,7 +10,7 @@ To ensure consistency and alignment across interactions, apply prompt engineerin
 
 Context Definition:
 
-* Specify the AI Agent’s role (e.g., AI Agent or voice assistant) and the communication channel it operates within (text-based or voice-based).
+* Specify the AI Agent’s role (for example, AI Agent or voice assistant) and the communication channel it operates within (text-based or voice-based).
 * Outline the expected response length, preferred level of verbosity, and formality of responses.
 * Provide a structured interaction goal, detailing the AI Agent’s primary function, such as customer support, appointment scheduling, or troubleshooting guidance.
 * Indicate the company or service the AI Agent represents, ensuring that brand voice, terminology, and industry-specific nuances are reflected in responses.
@@ -37,7 +37,7 @@ The Agent Node supports two prompt versions: **V1 (Legacy)** and **V2 (Enhanced)
 
 ### Version 1 (Legacy Framework)
 
-Version 1 supports both JSON and JavaScript modes. It is suitable for straightforward tasks and enables both tool calling and text generation. Choose Version 1 when:
+Version 1 supports both JSON and JavaScript modes. It's suitable for straightforward tasks and enables both tool calling and text generation. Choose Version 1 when:
 
 
 
@@ -56,10 +56,10 @@ JSON mode supports text generation only.
 * Define dynamic input keys that the platform automatically populates during runtime.
 * Provide test values to validate the prompt structure.
 * Configure the following output keys:
-    * **Text Response Path** – Identifies the location of the AI response in the JSON payload.
-    * **Virtual Assistant Response** – Specifies the response key to display to the end user.
-    * **Exit Scenarios** – Indicates when the conversation should end.
-    * **Collected Entities** – Captures specific values from the AI response.
+    * **Text Response Path**: Identifies the location of the AI response in the JSON payload.
+    * **AI Agent Response**: Specifies the response key to display to the end user.
+    * **Exit Scenarios**: Indicates when the conversation should end.
+    * **Collected Entities**: Captures specific values from the AI response.
 
 If additional processing is needed, add a post-processor script to transform the LLM output as required for the platform. When a post-processor is used, the returned output must include the exact keys defined in the configuration.
 
@@ -90,8 +90,8 @@ Prompt creation in Version 2 eliminates the need to configure multiple output ke
 
 
 
-* **Text Response Path** – Identifies the plain text response path.
-* **Tool Call Request** – Indicates when the model intends to invoke a tool. 
+* **Text Response Path**: Identifies the plain text response path.
+* **Tool Call Request**: Indicates when the model intends to invoke a tool. 
 
 
 The platform no longer requires configuration for **Virtual Assistant Response**, **Exit Scenarios**, or **Collected Entities**. These behaviors are now handled directly within the tools.
@@ -108,8 +108,12 @@ This design simplifies configuration and improves entity extraction accuracy.
 
 
 
-* **System tool** – Includes predefined functionality such as `End_Orchestration`, which handles the end of the interaction.
-* **Custom tools** – Defined based on specific business requirements.
+* **System tool**: Includes predefined functionality such as `End_Orchestration`, which handles the end of the interaction.
+* **Custom tools**: Defined based on specific business requirements.
+
+#### Response Format in Version 2
+
+Response Payload Format control that lets you define the model’s response schema in advance. When you select OpenAI or Azure OpenAI, the platform automatically parses the response, eliminating the need to manually configure the **Text Response Path** and **Tool Call Request**.
 
 ### Use Case Scenarios
 
@@ -118,157 +122,25 @@ For a more practical approach, the differences through scenarios can make the co
 
 * Scenario 1: Maintaining a Legacy assistance 
 
-  A banking assistance that has predefined customer verification steps and strict entity collection. 
-  
-  Uses **V1 prompts** because it requires explicit entity handling and manual exit scenarios. 
+    A banking assistance that has predefined customer verification steps and strict entity collection. 
+    
+    Uses **V1 prompts** because it requires explicit entity handling and manual exit scenarios. 
 
 * Scenario 2: Automating Customer Support 
   
-  An AI Agent that dynamically suggests troubleshooting steps based on customer queries. 
+    An AI Agent that dynamically suggests troubleshooting steps based on customer queries. 
 
-  Uses **V2 prompts** because it needs tool integration and dynamic execution. 
+    Uses **V2 prompts** because it needs tool integration and dynamic execution. 
 
 * Scenario 3: Handling a Mixed Workflow 
 
-  A AI Agent for insurance claims processing that requires predefined data collection but also uses external tools for verification. 
-  Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. 
+    A AI Agent for insurance claims processing that requires predefined data collection but also uses external tools for verification. 
+    Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. 
 
 
-### Streaming vs. Regular Prompts
+### Regular vs. Streaming Prompts
 
-####  Structural Differences
-
-
-<table>
-  <tr>
-   <td>    Feature   </td>
-   <td>    Regular Prompts   </td>
-   <td>    Streaming Prompts   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Response Delivery</strong>
-   </td>
-   <td>
-    Full response delivered at once
-   </td>
-   <td>
-    Tokens delivered incrementally as they're generated
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Parameter Requirements</strong>
-   </td>
-   <td>
-    Standard parameters
-   </td>
-   <td>
-    Requires <code>"stream": true</code>
-<p>
-
-    parameter
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Exit Scenarios</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Not supported
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Virtual Assistant Response</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Not supported
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Collected Entities</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Must be included in streamed format
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Tool Call Requests</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Not supported for Agent Node
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Post-Processing</strong>
-   </td>
-   <td>
-    Available
-   </td>
-   <td>
-    Not available
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <strong>Guardrails</strong>
-   </td>
-   <td>
-    Fully supported
-   </td>
-   <td>
-    Not supported
-   </td>
-  </tr>
-</table>
-
-
-
-#### Implementation Differences
-
-* Format Requirements:
-  * Both require responses to include conv_status , AI Agent response, and collected entities
-  * Streaming prompts must structure this content for incremental delivery
-* Error Handling:
-  * Regular prompts can be fully validated before delivery
-  * Streaming prompts require careful prompt engineering as corrections cannot be made mid-stream
-* Analytics:
-  * Streaming responses include additional metrics like TTFT (Time to First Token)
-  * Response Duration for streaming measures time from first to last token
-
-#### When to Choose Streaming vs. Regular Prompts
-
-Use Streaming When:
-
-* Real-time interaction is critical.
-* Responses are expected to be lengthy.
-* Voice-based applications would benefit from incremental speech.
-* User experience would benefit from immediate feedback.
-
-Use Regular Prompts When:
-
-* Post-processing is needed.
-* Content moderation or guardrails are required.
-* Tool calls are necessary for the Agent Node
-* Interception of responses (with BotKit) is needed.
-* Complete response validation must occur before delivery.
-* Implementing the appropriate prompt type based on your specific use case and requirements will ensure optimal performance and user experience.
+To learn about the structural and implementation differences, as well as when to use Regular or Streaming Prompts, see [Regular vs. Streaming Prompts](../../generative-ai-tools/prompts-library.md#regular-vs-streaming-prompts).
 
 
 
@@ -506,7 +378,7 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
 
 
 ### Add Custom Prompt
-The process involves creating a new prompt in the Prompts Library and writing the JavaScript code to generate the desired JSON object. Users can preview and test the prompt to ensure it generates the expected JSON object. Once the custom prompt is created, users can select it in the Agent Node configuration to leverage its functionality.
+The process involves creating a new prompt in the Prompts Library and writing the JavaScript code to generate the desired JSON object. Users can preview and test the prompt to ensure it generates the expected JSON object. After the custom prompt is created, users can select it in the Agent Node configuration to leverage its functionality.
 
 
 For more information on Custom Prompt, see [Prompts Library](../../generative-ai-tools/prompts-library.md).
@@ -519,20 +391,19 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
 1. Go to **Generative AI Tools** > **Prompts Library** and click **+ New Prompt**.
 3. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**. 
-4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable.
+4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto populated based on the input provided while model integration and aren't editable.
 5. In the Request section, in the Advanced Configuration, select Prompt Version 1 from the drop-down list.  
 <img src="../images/v1dropdown.png" alt="Select Prompt" title="Select Prompt Version" style="border: 1px solid gray; zoom:70%;">
 
-6. Ensure the Stream Response is disabled, as the Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
+6. Ensure the Stream Response is disabled,  as the Agent Node V1 custom JavaScript prompt supports tool calling and streaming as separate capabilities, but not simultaneously.
+
+
 7. You can either create a request from scratch or import the existing prompt from the Library to modify as needed. For example, click **Start from Scratch**. [Learn more](#dynamic-variables).  
 <img src="../images/v1toolcall.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
 7. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**.  
 <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
-
-        The Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
     
 8. Enter the **JavaScript**. The Sample Context Values are displayed. To know more about context values, see [Dynamic Variables](#dynamic-variables).  
 <img src="../images/toolcall2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
@@ -567,7 +438,7 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
         1. On the Post-Processor Script pop-up, enter the Post-Processor Script and click **Save & Test**. The response path keys are updated based on the post-processor script.  
         <img src="../images/postprocessor.png" alt="Post-Processor Script" title="Post-Processor Script" style="border: 1px solid gray; zoom:70%;">     
-        2. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
+        2. The expected LLM response structure is displayed. If the LLM response isn't aligned with the expected response structure, the runtime response might be affected. Click **Save**.
 
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
 <img src="../images/v1andv2.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
@@ -582,16 +453,18 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 #### Add V2 Custom Prompt
 
 For details, see [When to use V2 Prompt.](#version-2-tool-calling-framework)
-To add an Agent Node V2 prompt, follow the steps:
+
+To add an Agent Node V2 streaming prompt, follow the steps:
 
 
 1. Go to **Generative AI Tools** > **Prompts Library** and click **+ New Prompt**.
 2. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**.
-3. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided during model integration and are not editable. 
+3. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto populated based on the input provided during model integration and aren't editable. 
 4. In the Request section, in the Advanced Configuration, select **Prompt Version 2** from the drop-down list. The Switch Version pop-up is displayed. Click **Proceed**.  
 <img src="../images/v2dropdown.png" alt="Select Prompt" title="Select Prompt Version" style="border: 1px solid gray; zoom:70%;">
 
-5. Currently, the Stream Response is not supported for Prompt version 2.
+5. Toggle the stream responses. By default, the response streaming is disabled. Enabling streaming disables the “Exit Scenario,” “AI Agent Response”, “Collected Entities,” “Tool Call Request,” and "post-processor script."
+
 5. You can either create a Prompt from scratch or import the existing prompt template from the Library to modify as needed. For example, click **Import from Prompts and Requests Library**. The V2 prompt templates are displayed.  
 <img src="../images/v2toolcall.png" alt="Import from Prompts and Requests Library" title="Import from Prompts and Requests Library" style="border: 1px solid gray; zoom:70%;">
 
@@ -611,27 +484,35 @@ To add an Agent Node V2 prompt, follow the steps:
 <img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
 <img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
 
-10. The Actual Response is displayed.  
-<img src="../images/essentialkeysv2.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+10. The Actual Response is displayed.
 
-11. To edit the Post-Processor Script, click **Modify**. On the Pre-Processor Script pop-up, enter the Script and click **Save & Teat**. The response path keys are updated based on the post-processor script.
-  
-    !!! note
+11. Select the Response format from the dropdown.
+    * If response streaming is enabled, select OpenAI or Azure OpenAI, then click **Save**.  
+    <img src="../images/actual-response.png" alt="Response format" title="Response format" style="border: 1px solid gray; zoom:70%;">
+    
+    * If response streaming is disabled:
+        
+        * Select OpenAI or Azure OpenAI, then click **Save**.
+        * If you select Custom, enter the **Text Response Path** and **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality. Click **Modify** to edit the Post-Processor Script. The expected LLM response structure is displayed. If the LLM response isn't aligned with the expected response structure, the runtime response might be affected. Click **Save**.  <img src="../images/custom-response-format.png" alt="Response format" title="Response format" style="border: 1px solid gray; zoom:70%;">
 
-        Post-Processor Script is mandatory when using V2 prompt.
+12. (Optional) If you have enabled Token Usage Limits for your Custom Model, map the Request Tokens key and Response Tokens key for accurate token tracking and Analytics. Without proper mapping, the Platform can't calculate token consumption, potentially leading to untracked usage and unexpected costs.
+    * Request Tokens key: `usage.input_tokens`
+    * Response Tokens key: `usage.output_tokens`  
+    <img src="../images/token-mapping.png" alt="token mapping" title="token mapping" style="border: 1px solid gray; zoom:70%;">
 
-12. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
-13. Enter the **Text Response Path** and **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.
-14. Click **Test**. The Key Mapping pop-up appears.
+13. Click **Test**. The Key Mapping pop-up appears.
     * If all the key mapping is correct, close the pop-up and go to step 15.  
     <img src="../images/keymappingright.png" alt="Key Mapping" title="Key Mapping" style="border: 1px solid gray; zoom:70%;">
     * If the key mapping, actual response, and expected response structures are mismatched, click **Configure** to write the post-processor script.  
     <img src="../images/v2key-map.png" alt="Key Mapping" title="Key Mapping" style="border: 1px solid gray; zoom:70%;">
-15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
-<img src="../images/v1andv2.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
 
-16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
-<img src="../images/selectv2.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+
+
+15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
+<img src="../images/v1andv2new.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
+
+16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tool calling.  
+<img src="../images/selectv2new.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Expected Output Structure

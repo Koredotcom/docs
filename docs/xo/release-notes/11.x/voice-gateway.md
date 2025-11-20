@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.19.1 November 19, 2025
+
+<u> Patch Release </u>
+
+This update includes only bug fixes.
+
+<hr>
+
 ## v11.19.0 October 25, 2025
 
 <u>Minor Release</u>
@@ -51,7 +59,7 @@ The node.alternate call control parameter supports additional parameters, includ
 **Play Dial Tone Until AI Agent First Response**
 
 A new configuration option, Answer call on AI Agent first response, is available in  **Automation AI** → **App Settings** → **Advanced Settings** → **System Settings** → **Answer Call on First Bot Response**. When enabled, callers hear a dial tone if the AI Agent’s first response is delayed, preventing silence and reassuring them that the call is connected. The call remains active until the AI Agent responds, with duration controlled on the Session Border Controller (SBC) side. When disabled, the existing behavior continues, where callers hear silence until the AI Agent’s first response. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/system-settings.md#answer-call-on-first-botai-agent-response)  
-<img src="../images/answer-call-rn.png" alt="Play Dial Tone until AI Agent Reponse" title="Play Dial Tone until AI Agent Reponse" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer-call-rn.png" alt="Play Dial Tone until AI Agent Response" title="Play Dial Tone until AI Agent Response" style="border: 1px solid gray; zoom:70%;">
 
 <font size="4">API</font>
 

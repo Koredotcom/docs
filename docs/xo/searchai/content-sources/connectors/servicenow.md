@@ -84,7 +84,7 @@ Note:
 
 ![Example](images/servicenow/example2.png "Example")
 
-* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied.  For instance, the following filter can be used to select published articles with a given Sys Id.
+* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied. For instance, the following filter can be used to select published articles with a given Sys Id.
 
 ![Example](images/servicenow/example3.png "Example")
 
@@ -130,7 +130,7 @@ Each User Criteria is retrieved as a Permission Entity. The permission entity ID
 
 The alphanumeric field “25431493ff4221009b20ffffffffffe0” in the indexed content refers to the Permission Entity corresponding to the user criteria for the article.
 
-If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the [Permission Entity API](https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/) to associate them with the permission entity.
+If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the [Permission Entity API](../../../apis/searchai/permission-entity-apis.md) to associate them with the permission entity.
 
 ### Incidents
 
@@ -157,7 +157,7 @@ For each incident in ServiceNow, **Search AI** enforces access control based on 
 * Users associated with the incident through specific incident fields, such as: Creator, Caller, Watch List Users.
 * These users are added to the sys_racl field using their email ID.
 
-**Summary – <code>sys_racl</code> Contents for an Incident Record**
+**Summary - <code>sys_racl</code> Contents for an Incident Record**
 
 To summarize, the **sys_racl** field for an incident record contains:
 
