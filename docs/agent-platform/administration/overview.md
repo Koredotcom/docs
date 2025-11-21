@@ -7,7 +7,7 @@ Agent Platform’s **Settings** console is a centralized management interface th
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Integrations](../settings/integrations/about-integrations.md){:target="_blank"} 
 5. [Manage Custom Scripts](../settings/manage-custom-scripts/custom-scripts.md){:target="_blank"}
-6. [Manage Guardrails](../guardrails/manage-guardrails.md){:target="_blank"} 
+6. [Manage Guardrails](../guardrails/overview.md){:target="_blank"} 
 7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
 8. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
@@ -100,7 +100,7 @@ Other capabilities include:
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../guardrails/manage-guardrails.md){:target="_blank"}.
+View pre-deployed guardrail models that apply scanners to prompt input and output text across all tools. [Learn more](../guardrails/overview.md){:target="_blank"}.
 
 **Monitoring**
 
@@ -209,7 +209,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><a href="../../guardrails/overview" target="_blank">Manage Guardrails</a></td>
-   <td>Deploy models to make them available for anomaly scanners in all the tools. 
+   <td>View the list of pre-deployed guardrail models available across the platform. 
    </td>
    <td>
 <ul>
