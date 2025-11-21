@@ -62,23 +62,7 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md/#h
    </td>
    <td>Required
    </td>
-   <td>
-    The allowed guardrails include:
-<ul>
-
-<li><strong>Anonymize</strong> – Ensures sensitive information is anonymized.</li>
-
-<li><strong>Ban topics</strong> – Restricts discussions on specific topics.</li>
-
-<li><strong>Prompt injection</strong> – Prevents unauthorized prompt manipulation.</li>
-
-<li><strong>Toxicity</strong> – Detects and filters toxic language.</li>
-
-<li><strong>Bias detection</strong> – Identifies and mitigates biased responses.</li>
-
-<li><strong>Relevance </strong>– Ensures responses stay relevant to the conversation</li>
-</ul>
-   </td>
+  
   </tr>
 </table>
 
@@ -104,6 +88,7 @@ curl --location 'https://{host}/api/public/guardrails/undeploy'
    </td>
    <td><strong>REQUIRED/OPTIONAL</strong>
    </td>
+   <td><strong>VALUES</strong></td>
   </tr>
   <tr>
    <td><strong>name</strong>
@@ -113,6 +98,17 @@ curl --location 'https://{host}/api/public/guardrails/undeploy'
    <td>Enum
    </td>
    <td>Required
+   </td>
+    <td>
+    The allowed guardrails include:
+      <ul>
+      <li><strong>Anonymize</strong> - Ensures sensitive information is anonymized.</li>
+      <li><strong>Ban topics</strong> - Restricts discussions on specific topics.</li>
+      <li><strong>Prompt injection</strong> - Prevents unauthorized prompt manipulation.</li>
+      <li><strong>Toxicity</strong> - Detects and filters toxic language.</li>
+      <li><strong>Bias detection</strong> - Identifies and mitigates biased responses.</li>
+      <li><strong>Relevance </strong> - Ensures responses stay relevant to the conversation</li>
+      </ul>
    </td>
   </tr>
 </table>
@@ -124,7 +120,7 @@ curl --location 'https://{host}/api/public/guardrails/undeploy'
    "dockStatusId": "ds-exxxxxx7-2xx8-5xxc-axx7-caxxxxxxxxx1",
    "toolId": "a-4xxxxxx9-fxx9-5xx7-axx7-9xxxxxxxxxxb",
    "jobType": "GUARDRAILS",
-   "action": "DEPLOY",
+   "action": "UNDEPLOY",
    "status": "SUCCESS"
 }
 ```
@@ -159,7 +155,7 @@ curl --location 'https://{host}/api/public/guardrails/undeploy'
   <tr>
    <td><strong>jobType</strong>
    </td>
-   <td>Type of job being performed. (e.g., "<em>GUARDRAIL</em>").
+   <td>Type of job being performed. (for example, "<em>GUARDRAIL</em>").
    </td>
    <td>String
    </td>
@@ -167,7 +163,7 @@ curl --location 'https://{host}/api/public/guardrails/undeploy'
   <tr>
    <td><strong>action</strong>
    </td>
-   <td>The action performed on the guardrail, i.e. “<em>UNDEPLOY</em>.”.
+   <td>The action performed on the guardrail, “<em>UNDEPLOY</em>.”
    </td>
    <td>String
    </td>

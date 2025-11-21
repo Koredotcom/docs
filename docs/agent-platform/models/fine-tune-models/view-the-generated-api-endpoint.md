@@ -16,7 +16,7 @@ Steps to view the API Endpoint:
 
 The API endpoint is available in 3 formats. You can copy and use the same as required.
 
-### API Endpoint Usecase
+### API Endpoint
 
 You can use the deployed fine-tuned model in Agent Platform for the following use cases:
 

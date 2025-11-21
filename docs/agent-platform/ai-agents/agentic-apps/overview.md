@@ -1,6 +1,6 @@
 # About Agentic Apps
 
-Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They're intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), agentic apps can reason, adapt, and act without requiring constant human intervention.
+Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They're intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), Agentic apps can reason, adapt, and act without requiring constant human intervention.
 
 ## Key Components
 
@@ -10,7 +10,7 @@ Agentic Apps are composed of several key components that enable autonomous decis
 
 ### Orchestrator
 
-The orchestrator is the brain of the agentic app. It manages agent interactions, task delegation, and workflow execution to achieve the app's goals.
+The orchestrator is the brain of the Agentic app. It manages agent interactions, task delegation, and workflow execution to achieve the app's goals.
 
 Key responsibilities include:
 
@@ -24,7 +24,7 @@ The Agent Platform offers two types of orchestration patterns - the Supervisor p
 
 ### Supervisor Pattern
 
-The Supervisor Pattern is an architectural pattern used in the design of agentic apps, where a central component called the "orchestrator" acts as a supervisor to manage and coordinate multiple AI agents. This pattern helps to efficiently handle complex tasks by breaking them down into smaller sub-tasks and delegating them to specialized agents. [Learn More](../supervisor.md).
+The Supervisor Pattern is an architectural pattern used in the design of Agentic apps, where a central component called the "orchestrator" acts as a supervisor to manage and coordinate multiple AI agents. This pattern helps to efficiently handle complex tasks by breaking them down into smaller sub-tasks and delegating them to specialized agents. [Learn More](../supervisor.md).
 
 ### Adaptive Network Pattern
 
@@ -63,13 +63,13 @@ Once the appropriate tool is selected, the agent invokes it by generating a stru
 
 The process of an agent using tools follows this sequence:
 
-1. **Task Planning:** After receiving a user query via the orchestrator, the agent determines that it requires external functionality or data to fulfill the query.
-1. **Tool Identification:** The agent selects the most suitable tool for the task at hand.
-1. **Parameter Preparation:** Using LLM capabilities, the agent extracts relevant entities (for example, location, date, user preference) and maps them to the required input format.
-1. **Tool Invocation:** The agent calls the tool, passing the prepared parameters.
-1. **Execution:** The tool processes the input and performs the necessary action.
-1. **Result Processing:** The agent processes the tool's output, validating, formatting, or using it for the next workflow step.
-1. **Output Delivery:** The agent sends the result either back to the orchestrator or to the user if the task is complete.
+1. Task Planning: After receiving a user query via the orchestrator, the agent determines that it requires external functionality or data to fulfill the query.
+2. Tool Identification: The agent selects the most suitable tool for the task at hand.
+3. Parameter Preparation: Using LLM capabilities, the agent extracts relevant entities (for example, location, date, user preference) and maps them to the required input format.
+4. Tool Invocation: The agent calls the tool, passing the prepared parameters.
+5. Execution: The tool processes the input and performs the necessary action.
+6. Result Processing: The agent processes the tool's output, validating, formatting, or using it for the next workflow step.
+7. Output Delivery: The agent sends the result either back to the orchestrator or to the user if the task is complete.
 
 ### Interaction Context
 

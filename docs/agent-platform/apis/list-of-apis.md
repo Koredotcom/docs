@@ -1,13 +1,13 @@
 # List of Agent Platform APIs
 
-## APIs for Agent Protocol
+## APIs for Agentic Apps
 
 The following APIs let users interact with agents and manage sessions.
 
 | Use cases   | APIs     |
 |--------|----------|
 |  Create, retrieve, or end a session with an agent to maintain conversation context.     |     [Sessions API](agentic-apps/sessions.md)     |
-|  User input to an agent within a session and receives a response.      |  [Runs API](agentic-apps/execute.md) |
+|  Send user input to an agent within a session and receive the agent's response.      |  [Runs API](agentic-apps/execute.md) |
 |  Upload or delete attachments to a conversation. These attachments can be referenced during an agent run as context.      |   [File Attachment APIs](agentic-apps/upload.md)       |
 |    Create a new Agentic App.    |  [Create App API](agentic-apps/create-app.md)   |
 
