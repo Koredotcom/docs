@@ -1,0 +1,226 @@
+# Changelog
+
+All notable changes to the AgenticAI Core SDK will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added - Application Configuration (Nov 2025)
+- App Namespace support for logical grouping of variables (Nov 7)
+- App Variables with environment variable resolution (Nov 7)
+- Namespace-based variable scoping (functional, service, feature-based)
+- Secured and non-secured variable types
+- Template variable support in prompts
+
+### Added - Advanced Features (Oct-Nov 2025)
+- Thought streaming configuration for LLM responses (Oct 31)
+- Filler messages with static and dynamic modes (Oct 23)
+- Dynamic filler messages with LLM generation
+- Static filler message sequences
+
+### Added - Documentation System (Nov 2025)
+- Comprehensive MkDocs documentation with Material theme (Nov 5)
+- Google-style docstrings for all design-time models
+- API reference documentation with mkdocstrings-python
+- Complete CLI interface documentation
+- User guides and tutorials
+- Workspace-focused installation and quickstart guides
+
+### Documentation
+- Complete API reference for all design-time models
+- Design-time models: App, Agent, Tool, LLM Model, Prompt, Memory Store, Icon
+- App Namespace and App Variable documentation with examples
+- User guides: Building Apps, Creating Agents, Working with Tools, Memory Stores, Orchestration
+- Runtime APIs: CLI commands, application lifecycle, deployment workflows
+- Examples: Banking Assistant, Multi-Agent Workflow
+- Contributing guidelines and best practices
+
+## [0.2.0] - 2025-09-29
+
+**Major Release**: Memory Stores, Logging, and Distributed Tracing
+
+### Added - CLI Framework (Sept 2025)
+- Moved CLI from workspace to agentic-core for centralization (Sept 29)
+- Unified CLI interface accessible from workspace projects
+- Command-line interface for application lifecycle management
+- Subcommands: start, archive, deploy, create-env, test, status
+
+### Added - Distributed Tracing (Sept 2025)
+- Langfuse integration for distributed tracing (Sept 17-22)
+- `@tracer.observe()` decorator for tools and orchestrators
+- Trace context propagation across agent calls
+- Parent-child span relationships
+- Support for custom metadata and span names (`span_name`, `kind`)
+- OTEL SDK disabled flag for compatibility
+- Tracer available via `agenticai_core.runtime.trace._langfuse_tracer`
+
+### Added - Memory Store System (July 2025)
+- Memory store configuration models (July 9)
+- `MemoryStore` with JSON schema validation
+- Namespace support (static and dynamic)
+- Retention policies (session, day, week, month)
+- Scope management (user-specific, application-wide, session-level)
+- `MemoryManager` for runtime operations
+- `MemoryRegistry` for global store registration
+- Async memory operations: `set_content()`, `get_content()`, `delete_content()`
+- Memory context manager in `RequestContext`
+- Field projections for efficient data retrieval
+
+### Added - Logging System (July 2025)
+- Structured logging with `Logger` class (July 9)
+- Async logger methods: `debug()`, `info()`, `warning()`, `error()`
+- Automatic session and user context tracking
+- Integration with request context
+- Structured log output with timestamps and metadata
+
+### Added - External Agent Support (Aug 2025)
+- Proxy agent support (Aug 25)
+- External agent configuration in `AppConfigurations`
+- Agent endpoint and communication settings
+- Response routing modes (orchestrator, direct)
+
+### Changed
+- Renamed `base_agent` to `abstract_agent` (May 27)
+- Renamed `base_orchestrator` to `abstract_orchestrator` (May 27)
+- Renamed `MCPRuntime` to `Runtime` (May 26)
+- Replaced MCP with FastMCP for better performance (May 23)
+- RequestContext: Renamed `headers` property to `context` (May 27)
+- Enhanced `AgentMeta` with input, thought, reason, message fields (June 9)
+- Improved KAR archive generation with exclusions
+
+### Fixed
+- Tool args handling in MCP client (May 15)
+- Memory manager async context exit (Sept 1)
+- Archive creation excluding unwanted directories (.venv, venv, __pycache__)
+- Agent runtime and orchestrator signatures (May 27, June 9)
+- Configuration serialization for memory stores (Aug-Sept)
+- Langfuse tracing parent observation mapping (Sept 22)
+- External agent configuration handling (Aug 29)
+
+## [0.1.0] - 2025-05-29
+
+**Initial Release**: Core Framework and Tool System
+
+### Added - Tool Registration (May 2025)
+- `@Tool.register()` decorator for custom tools (May 6, May 22)
+- Automatic tool discovery and registration
+- `ToolsRegistry` for managing registered tools
+- Support for optional name and description parameters in decorator
+- Custom tool integration with agents
+- Tool types: inline, toolLibrary, KNOWLEDGE, MCP
+
+### Added - Application Features (May-Aug 2025)
+- `app.start()` method for starting MCP server (May 29)
+- `app.save()` method for configuration serialization (Apr 24)
+- Custom orchestrator registration
+- Tool registration at runtime
+- Code tools extraction and serialization
+- Memory store registration in runtime
+- Host and port configuration
+
+### Added - Design-Time Models (Apr 2025)
+- `App` - Application configuration
+- `Agent` - AI agent definitions with role, sub_type
+- `Tool` - Tool and capability definitions
+- `ToolMeta` - Lightweight tool metadata
+- `LlmModel` - LLM configuration
+- `Prompt` - System and custom prompts with instructions
+- `Icon` - Visual identifiers
+- `AgentMeta` - Lightweight agent metadata
+- `AgentConfig` - Agent configuration settings
+
+### Added - Runtime Framework (Apr 2025)
+- MCP server implementation with FastMCP (May 23)
+- `AbstractAgent` - Base agent class
+- `AbstractOrchestrator` - Base orchestration class
+- `MessageItem`, `ToolCall`, `ErrorMessage` - Message protocol
+- `AgentRequest`, `AgentResponse` - Request/response models
+- `RequestContext` - Session and context management
+
+### Changed
+- Renamed `base_agent` to `abstract_agent` (May 27)
+- Renamed `base_orchestrator` to `abstract_orchestrator` (May 27)
+- Renamed `MCPRuntime` to `Runtime` (May 26)
+- Replaced MCP with FastMCP for better performance (May 23)
+- RequestContext: Renamed `headers` property to `context` (May 27)
+- Enhanced `AgentMeta` with input, thought, reason, message fields (June 9)
+- Improved KAR archive generation with exclusions
+
+### Fixed
+- Tool args handling in MCP client (May 15)
+- Memory manager async context exit (Sept 1)
+- Archive creation excluding unwanted directories (Apr 29, May 28, June 9)
+- Agent runtime and orchestrator signatures (May 27, June 9)
+- Configuration serialization issues (Apr-Aug)
+- Langfuse tracing parent observation mapping (Sept 22)
+- External agent configuration handling (Aug 29)
+
+## Initial Development - April 2025
+
+### April 9, 2025 - Project Bootstrap
+- Initial commit and repository structure
+- Merged repos to create sub-modules architecture
+
+### April 10, 2025 - Core Agent Implementation
+- Implemented `base_agent` (later renamed to `abstract_agent`)
+- Added `ErrorMessage` for error handling
+- Updated documentation with architecture diagrams
+- Added sequence diagrams and component interaction diagrams
+
+### April 14, 2025 - MCP Runtime
+- Added MCP Runtime for agent execution
+- Registered custom orchestrators in runtime
+- Added `--start` flag to run.py
+- Created setup.sh for environment setup
+- Added `to_dict`, `from_dict` in `AgentMeta`
+
+### April 15, 2025 - MCP Client
+- Added MCP client for testing
+- Fixed MCP server setup
+- Fixed tool args handling
+
+### April 23, 2025 - Documentation
+- Updated runtime and design-time class diagrams
+- Enhanced MCP client README
+
+### April 24, 2025 - Configuration Serialization
+- Implemented `app.save()` method for JSON export
+- Added tool definitions
+- Created bin directory for archives
+- Added orchestratorType and KAR file generation
+
+### April 29, 2025 - Refactoring
+- Moved `src/main.py` to `src/app.py`
+- Moved `ToolMeta` to tool.py
+- Added `app.start()` method for starting server
+- Archive command now skips unwanted directories
+- Renamed `setup.sh` to `.setup.sh`
+
+---
+
+## Version History
+
+- **[0.1.0]** - May 29, 2025 - Initial Release (Core Framework & Tools)
+- **[0.2.0]** - September 29, 2025 - Major Release (Memory, Logging, Tracing, CLI)
+- **[Unreleased]** - November 7, 2025 - App Variables, Namespaces, Documentation & Advanced Features
+
+---
+
+## Author
+
+**Lalit Kumar**  
+Email: lalit.kumar@kore.com
+
+## Contributing
+
+See [Contributing Guide](contributing.md) for details on how to contribute.
+
+## Support
+
+For questions, issues, or feature requests:
+- 📧 Email: lalit.kumar@kore.com
+- 🐛 GitHub Issues: [Create an issue]
+- 💬 Discussions: [Start a discussion]
+
