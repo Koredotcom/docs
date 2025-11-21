@@ -88,10 +88,23 @@ In the **Model configurations** section, select one of the following options to 
 
 Use this option to manually configure all API components and control how requests and responses are structured
 
-* **Variables** – Define Prompt variables (mandatory) and add Custom variables as needed.
-* **Request Body** – Manually construct the payload and insert dynamic values using `{{variable}}`. Ensure the body follows the model’s expected JSON structure.
-* **Test Response** – Click Test, enter the prompt inputs, and verify that the model returns a valid response.
-* **JSON Path Mapping** – Specify JSON keys for:
+* **Variables** – Define Prompt variables (mandatory) and add Custom variables as needed. These input variables are used within your request payload to bind dynamic input values to your payload structure.  
+For example: {{prompt}}, {{system.prompt}}
+* **Request Body** – Provide a sample JSON request body for invoking the model. Use the defined variable placeholders {{variableName}} (such as {{prompt}}) to bind input fields dynamically.
+For example:
+
+      ```
+      {
+         "prompt": "{{prompt}}",
+         "max_tokens": 200,
+         "temperature": 0.7
+      }
+      ```
+
+    **Note**: Ensure the structure of the request body follows the model-specific API schema. Use only supported parameters for the selected Amazon Bedrock model.
+
+* **Test Response** – Provide sample values for your variables and click Test to invoke the model and preview the response.
+* **JSON Path Mapping** – Specify JSON keys to extract relevant output fields from the model response:
     * **Output path** – e.g., `choices[0].message.content`
     * **Input tokens** – e.g., `usage.prompt_tokens`
     * **Output tokens** – e.g., `usage.completion_tokens`

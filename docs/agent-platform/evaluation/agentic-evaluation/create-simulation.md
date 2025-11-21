@@ -73,7 +73,9 @@ To manually create a test scenario:
     * Agentic capability – The specific skill or function being tested.
     * Initial user query – The user’s opening message or intent.
     * Information provided to persona – Any context or background knowledge for the persona.
-    * End condition – The point where the conversation should stop.
+    * End condition – Define the point where the conversation should stop. Enter a condition in plain text that signals when the simulation should end.
+        * The simulation stops automatically if the agent ends the conversation early.
+        * If the agent does not reach the end condition, it stops when it reaches *Max turns*.
     * Max turns – Set a limit for how long the simulated conversation should run.
 4. Click **Save**.
 
