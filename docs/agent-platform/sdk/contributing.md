@@ -2,11 +2,6 @@
 
 Thank you for your interest in contributing to the AgenticAI Core SDK! This document provides guidelines and instructions for contributing to the project.
 
-## Project Maintainer
-
-**Lalit Kumar**  
-Email: [lalit.kumar@kore.com](mailto:lalit.kumar@kore.com)
-
 ## Ways to Contribute
 
 There are many ways to contribute to AgenticAI Core:
@@ -299,10 +294,7 @@ We are committed to providing a welcoming and inclusive environment for all cont
 
 ### Enforcement
 
-Instances of unacceptable behavior may be reported to:
-
-**Lalit Kumar**  
-Email: [lalit.kumar@kore.com](mailto:lalit.kumar@kore.com)
+Instances of unacceptable behavior may be reported to Kore Support.
 
 ## Development Setup Details
 
@@ -362,12 +354,7 @@ By contributing to AgenticAI Core SDK, you agree that your contributions will be
 
 ## Questions?
 
-If you have questions about contributing, please reach out:
+If you have questions about contributing, please contact Kore Support
 
-**Lalit Kumar**  
-📧 Email: [lalit.kumar@kore.com](mailto:lalit.kumar@kore.com)  
-💬 GitHub Discussions: [Link to discussions]  
-🐛 Issues: [Link to issues]
-
-Thank you for contributing to AgenticAI Core! 🎉
+Thank you for contributing to AgenticAI Core!
 

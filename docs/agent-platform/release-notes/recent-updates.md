@@ -6,13 +6,13 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-This release introduces enhanced multi-agent orchestration with environment variables, pre-processors, and customizable knowledge-base queries. Key features include a comprehensive PII Protection Framework, pre-production simulation testing with personas and scenarios, expanded model support (Gemini format and Realtime models), streaming in Model Hub, granular API key permissions, and improved diagnostics. System guardrails are now pre-deployed by default for built-in AI safety.
+This release enables you to expedite your AI agent deployments by running evals at scale with AI-powered simulations that use personas and scenarios. Other key features in this release include global availability of guardrails without the need to deploy per-workspace preprocessors to effectively manage the agent's context, and global PII redaction with selective unmasking support.
 
 <font size="4">Multi-Agent Orchestration</font>
 
 **Environment Variables & Namespace Support**
 
-Agent Platform introduces Environment Variables with namespace support, for secure, reusable, and environment-specific configuration management across the application. Developers can define and manage variables directly within app settings and access them seamlessly in code tools. These variables are automatically resolved at runtime, eliminating the need to hardcode sensitive information such as API keys, endpoints, and tokens. This enhancement simplifies multi-environment deployments and ensures consistent, dynamic configuration across all environments.
+Environment Variables with namespace support enable secure, reusable, and environment-specific configuration management across the application. Developers can centrally define and manage variables and access them seamlessly in Code Tools. These variables are automatically resolved at runtime, eliminating the need to hardcode sensitive information such as API keys, endpoints, and tokens. This enhancement simplifies multi-environment deployments and ensures consistent, dynamic configuration across all environments.
 
 **Pre-Processor for Agent Execution**
 

@@ -210,8 +210,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Author
 
-**Lalit Kumar**  
-Email: lalit.kumar@kore.com
+Kore.ai Engineering team
 
 ## Contributing
 
@@ -219,8 +218,4 @@ See [Contributing Guide](contributing.md) for details on how to contribute.
 
 ## Support
 
-For questions, issues, or feature requests:
-- 📧 Email: lalit.kumar@kore.com
-- 🐛 GitHub Issues: [Create an issue]
-- 💬 Discussions: [Start a discussion]
-
+For questions, issues, or feature requests, contact Kore Support.
