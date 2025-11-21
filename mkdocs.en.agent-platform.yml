@@ -291,9 +291,8 @@ nav:
         - Analyze Evaluations: evaluation/agentic-evaluation/analyze-evaluation.md
     - AI Safety & Governance: 
       - About Guardrails: guardrails/overview.md
-      - Add a Scanner: guardrails/add-a-scanner.md
+      - Enable a Scanner: guardrails/enable-a-scanner.md
       - Test Guardrail: guardrails/test-guardrail.md
-      - Manage Guardrails: guardrails/manage-guardrails.md
   - Administration: 
     - About Settings: administration/overview.md
     - About Workspaces: settings/workspaces/workspace-mgmt.md
