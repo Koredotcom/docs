@@ -46,7 +46,7 @@ Key capabilities
 
 **Streaming Support in Model Hub**
 
-Model Hub now supports streaming via the stream:true parameter, enabling faster token-level responses through Server-Sent Events (SSEs). Streamed chunks are automatically merged into a single final response for complete tracing visibility. Currently, streaming is supported only in Agentic Apps.
+Model Hub now supports streaming via the 'stream:true' parameter for external models, enabling faster token-level responses through Server-Sent Events (SSEs). This allows external models to be used in thought streaming mode for Agentic Apps. Streamed chunks are automatically merged into a single final response for complete tracing visibility. Currently, it’s available only for external models; open-source model streaming support is coming soon.
 
 **Gemini Format Support in External Model Integrations**
 
