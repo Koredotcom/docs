@@ -1,32 +1,31 @@
-# Add Input/Output Scanners
+# Enable Input/Output Scanners
 
-You can add input or output scanners to evaluate prompts or responses in your application. Input scanners assess inputs or prompts sent to the LLM node, while output scanners evaluate the responses received from the LLM.
+Input and output scanners help evaluate prompts and responses within your application.
 
-In the following steps, you will learn how to add an input scanner. The steps to add an output scanner are similar to those for an input scanner. You need to add input and output scanners separately based on your requirements.
+* Input scanners assess user inputs or prompts sent to an AI node.
+* Output scanners evaluate the responses returned from the LLM.
 
 !!! note
 
-    Scanners must be deployed before you add or use them. [Learn more](./manage-guardrails.md).
+    All system scanners are pre-deployed and available by default. You simply enable the scanners you want to use.
 
-Steps to add a Scanner:
+
+The steps below describe how to enable an input scanner. The steps for enabling an output scanner are similar.
+
+Steps to enable an input scanner:
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. In the **Tools** section, click the name of the tool to which you want to add the scanner. The Tool flow page is displayed. 
+2. In the **Tools** section, click the name of the tool where you want to enable scanners. The Tool Flow page opens. 
 
 2. Click **Guardrails** in the left navigation pane. The Guardrails page is displayed.  
-<img src="./../images/navigate-to-guardrails.png" alt="Navigate to Guardrails" title="Navigate to Guardrails" style="border: 1px solid gray; zoom:80%;">
+<img src="./../images/guardrails_predeployed.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:80%;">
 
-3. In the Input Scanners section, click **Add Scanner**, select the required scanners from the pop-up list, and then click **Done**. 
-<img src="./../images/add_a_scanner.png" alt="Add Input Scanner" title="Add Input Scanner" style="border: 1px solid gray; zoom:80%;">
+3. In the Input Scanners section, review the list of pre-deployed scanners and turn on the toggle to each scanner you want to apply.
+<img src="./../images/enable_guardrails.png" alt="Enable Guardrail" title="Enable Guardrail" style="border: 1px solid gray; zoom:80%;">
 
-    The selected scanners are added to the list.  
-    <img src="./../images/added-guardrails.png" alt="Scanner Added" title="Scanner Added" style="border: 1px solid gray; zoom:80%;">
+4. Click the added scanner to configure its settings, which vary depending on the scanner type.
+For example, **Toxicity** includes options such as *Risk Threshold* and *Detection Sensitivity*. 
+<img src="./../images/toxicity-config.png" alt="Configure Settings" title="Configure Settings" style="border: 1px solid gray; zoom:80%;">
 
-4. Click an added scanner to configure its settings, which vary depending on the scanner type.
-For example, **Toxicity** has "Threshold" and "End the flow if the risk score is above" settings, while **Regex** has "Enter patterns to ban", "End the flow if the risk score is above", and "Match type" settings.  
-<img src="./../images/toxicity-scanner-settings.png" alt="Configure Scanner's Settings" title="Configure Scanner's Settings" style="border: 1px solid gray; zoom:80%;">
-
-5. (Optional) To add more scanners, click the plus or **Add Scanner** icon. To remove an unused scanner, click the minus or **Remove Scanner** icon.  
-<img src="./../images/add-remove-scanners.png" alt="Remove Scanner" title="Remove Scanner" style="border: 1px solid gray; zoom:80%;">

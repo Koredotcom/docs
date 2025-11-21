@@ -77,7 +77,7 @@ This prevents customers from utilizing these models for advanced scenarios, such
 This feature removes that limitation by:
 
 * Allowing users to provide complete request/response definitions through the UI or OpenAPI specifications. 
-* Supporting commonly known request/response schemas (e.g., OpenAI Completions, Anthropic Messages).
+* Supporting commonly known request/response schemas (e.g., OpenAI Completions, Anthropic Messages, Google Gemini).
 
 With the Default option, you must manually define the request payload variables, including the model’s static and dynamic body parameters, and generate the response for the configured LLM. In this section, however, you can enable the required features and choose an LLM provider to automatically map the request and response schemas to their standard API format.
 
@@ -101,8 +101,8 @@ With the Default option, you must manually define the request payload variables,
 
   * **Anthropic (Messages)**:  Specifies that the selected model follows the request-response structure similar to [Anthropic’s Messages API](https://docs.anthropic.com/en/api/messages){:target="_blank"}.
   * **OpenAI (Chat Completions)**: Specifies that the selected model follows the request-response structure similar to [OpenAI’s Chat Completions API](https://platform.openai.com/docs/api-reference/chat){:target="_blank"}.
+  * **Google (Gemini)**: Specifies that the selected model follows the request–response structure for Google’s Gemini API, enabling compatibility with Gemini-formatted requests and responses.
   <img src="../images/api-reference-model.png" alt="api reference" title="api reference" style="border: 1px solid gray; zoom:75%;">
-
 
 ## Manage Custom API Integrations
 
