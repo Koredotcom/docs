@@ -23,7 +23,7 @@ When you select the Parent app in the Admin Console or pass its ID via the API, 
 <p>
 <code>https://{{host}}/api/public/bot/{{BotID}}/getBillingSessionsDetails</code>
 <p>
-For Admin Console: <code>https://{{host}}/api/public/getBillingSessionsDetails</code>
+For Admin Console: <code>https://{{host}}/api/public/bots/getBillingSessionsDetails</code>
    </td>
   </tr>
   <tr>
