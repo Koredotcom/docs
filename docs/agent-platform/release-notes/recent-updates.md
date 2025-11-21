@@ -2,6 +2,80 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.3.1 November 21, 2025
+
+<u> Minor Release </u>
+
+This release introduces enhanced multi-agent orchestration with environment variables, pre-processors, and customizable knowledge-base queries. Key features include a comprehensive PII Protection Framework, pre-production simulation testing with personas and scenarios, expanded model support (Gemini format and Realtime models), streaming in Model Hub, granular API key permissions, and improved diagnostics. System guardrails are now pre-deployed by default for built-in AI safety.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Environment Variables & Namespace Support**
+
+Agent Platform introduces Environment Variables with namespace support, for secure, reusable, and environment-specific configuration management across the application. Developers can define and manage variables directly within app settings and access them seamlessly in code tools. These variables are automatically resolved at runtime, eliminating the need to hardcode sensitive information such as API keys, endpoints, and tokens. This enhancement simplifies multi-environment deployments and ensures consistent, dynamic configuration across all environments.
+
+**Pre-Processor for Agent Execution**
+
+Agent Platform introduces a new Pre-Processor capability that allows developers to transform and validate agent context before each execution. This enhancement enables custom logic to run before each agent invocation, allowing it to process incoming data, enrich context, and adjust agent inputs as required. The Pre-Processor supports user-defined scripts in JavaScript and Python.
+
+**Knowledge Base Query Customization**
+
+Agent Platform now lets users control how knowledge base queries are formulated. The new configuration setting allows them to select between two modes:
+
+* Agent Response (default): Uses the LLM to generate intelligent, context-aware queries.
+* Custom Query: Enables precise, user-defined queries using memory and context variables for greater control.
+
+**API Key Permissions and Access Control**
+
+Agent Platform now supports granular permission controls for API keys, allowing precise definition of each key's capabilities. Users can create app-level keys scoped to specific permissions to create, manage, or delete sessions, upload or delete files, and execute agent runs. Existing API keys maintain full backward compatibility.
+
+<font size="4">AI Engineering Tools</font>
+
+**Agentic Evaluation: Introducing Simulations for Agentic Apps**
+
+Evaluation Studio now supports Simulations, enabling teams to generate realistic mock interaction sessions before deploying agentic apps to production. The feature helps validate agent behavior early, detect issues quickly, and assess quality across diverse conditions. Simulation sessions can be reviewed directly and imported into Evaluations, just like production data.
+
+Key capabilities
+
+* Reusable Personas: Create personas representing different communication styles and behaviors.
+* Test Scenarios: Define scenarios to simulate specific tasks, intents, and edge cases.
+* Mock Conversations: Generate realistic conversations (using personas and test scenarios) based on the agentic app's current configuration.
+* Transcript Review: Review transcripts to validate agent behavior and reliability before your agentic app goes live.
+
+[Learn more :octicons-arrow-right-24:](../evaluation/agentic-evaluation/create-simulation.md)
+
+**Streaming Support in Model Hub**
+
+Model Hub now supports streaming via the stream:true parameter, enabling faster token-level responses through Server-Sent Events (SSEs). Streamed chunks are automatically merged into a single final response for complete tracing visibility. Currently, streaming is supported only in Agentic Apps.
+
+**Gemini Format Support in External Model Integrations**
+
+Custom external model integrations now support the Gemini request–response format, in addition to OpenAI Completions and Anthropic Messages. When configuring external models, users can select Google (Gemini) as the provider, with automatic request routing and response parsing for Gemini-formatted requests handled by the Model Hub.
+
+**Realtime Model Support in Custom External Models**
+
+Support has been added for the full set of Realtime models, including:
+
+* gpt-4o-realtime-preview, gpt-4o-realtime-preview-2025-06-03, gpt-4o-realtime-preview-2024-10-01 (400k tokens)
+* gpt-4o-realtime-mini-2025-10-06, gpt-4o-mini-realtime-preview-2024-12-17 (200k tokens)
+* gpt-realtime, gpt-realtime-2025-08-28 (400k tokens)
+* gpt-realtime-mini (200k tokens)
+
+
+<font size="4">AI Safety, Security, and Governance</font>
+
+**New PII Protection Framework**
+
+Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it is never exposed in traces or debug logs and providing end-to-end protection of sensitive data.
+
+**Guardrails Now Available by Default for Built-in AI Safety**
+
+System input and output scanners are now automatically deployed and available by default. Users can review, test, and enable them without manual deployment, ensuring safer, more compliant AI responses. 
+
+
+<hr>
+
+
 ## v1.3.0 November 3, 2025
 
 <u> Minor Release </u>

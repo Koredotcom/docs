@@ -58,7 +58,7 @@ Test scenarios define the context, user intent, and expected outcome for a simul
 
 You can create test scenarios in two ways:
 
-* **[Write test scenarios](../agentic-evaluation/create-simulation.md#write-a-test-scenario)** – Manually define details such as the user query, context, and expected output.
+* **[Write test scenarios](../agentic-evaluation/create-simulation.md#write-test-scenarios)** – Manually define details such as the user query, context, and expected output.
 * **[Generate test scenarios](../agentic-evaluation/create-simulation.md#generate-test-scenarios)** – Automatically generate multiple scenarios using AI, based on your agent’s configured capabilities.
 
 <img src="../../agentic-evaluation/images/test_scenarios_page.png" alt="test scenario" title="test scenario" style="border: 1px solid gray; zoom:60%;">
