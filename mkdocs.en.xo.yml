@@ -565,7 +565,7 @@ nav:
         - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
         - Quality AI General Settings: quality-ai/configure/quality-ai-general-settings.md
         - Language Settings: quality-ai/configure/language-settings.md
-      - Analytics: quality-ai/analytics/scheduled-reporting-for-quality-ai.md        
+         
   - Agent AI:
     - About Agent AI: agentai/about-agent-ai.md
     - Set up Agent AI:
@@ -819,6 +819,10 @@ nav:
         - Introduction to Reports: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
       - Wallboards: analytics/contact-center/wallboards.md 
+    - Quality AI:  
+      - Reports:
+        - Scheduled Reports: analytics/quality-ai/reports/scheduled-reports.md
+        - Reports List: analytics/quality-ai/reports/qm-reports-list.md      
   - Administration:
     - Accounts or Workspaces: manage-assistant/plan-and-usage/accounts-or-workspace-overview.md
     - Users:
