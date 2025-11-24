@@ -1,6 +1,6 @@
 # PII & Guardrails
 
-The personally identifiable information (PII) framework and Guardrails provide essential safety, privacy, and compliance controls that regulate how sensitive data is identified and processed within an Agentic App. These capabilities work together to prevent PII exposure, enforce safety policies, and maintain predictable behavior across all stages of your app.
+The personally identifiable information (PII) framework and Guardrails provide essential safety, privacy, and compliance controls that regulate how sensitive data identifies and processed within an Agentic App. These capabilities work together to prevent PII exposure, enforce safety policies, and maintain predictable behavior across all stages of your app.
 
 ### Core Components
 
@@ -58,15 +58,3 @@ After configuring **Anonymize** and **Deanonymize**, verify compliance with stan
 1. Select the test option.
 2. Provide input data.
 3. Review results and refine scanner settings if necessary.
-
-## Pre-deployed Guardrails
-
-You can view the list of pre-deployed guardrails available for the app.
-
-**To access the guardrails list:**
-
-1. In the top navigation bar, select **Settings**.
-2. In the left menu, select **Manage Guardrails**.
-3. The list of available guardrails is displayed.
-
-<img src="../settings/images/manage-guardrails.png" alt="Pre-deployed Guardrails" title="Pre-deployed Guardrails" style="border: 0px solid gray; zoom:50%;">
