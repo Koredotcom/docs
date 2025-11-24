@@ -170,7 +170,7 @@ The following measurement types are:
 
     * **Dialog flow optimization**
 
-    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md).
+    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md).
 
 1. **By Playbook Adherence**
 
