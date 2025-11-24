@@ -72,9 +72,7 @@ Publish your agent and define access permissions and enablement.
 ### Accessing the Finance Advisor agent
 
 1. Locate the Finance Advisor:
-    * Enter "Finance Advisor" in the search box at the **Home** page. The search results will display a matching flow.  
-    <img src="../images/Agentic_App_10.png" alt="Finance Advisor" title="Finance Advisor" style="border: 1px solid gray; zoom:70%;">
-
+    * Enter `Finance Advisor` in the search box at the **Home** page. The search results will display a matching flow.  
 2. Review flow Configuration:
     * Upon accessing the Finance Advisor agent, you will see a structured sequence of agent flows.
     * Each flow represents a specific stage of financial analysis.
@@ -83,7 +81,6 @@ Publish your agent and define access permissions and enablement.
         * **Edit**: Modify existing step
         * **Delete**: Remove a step
     * Click **Start** to execute the sequence of flows.  
-    <img src="../images/Agentic_App_11.png" alt="Configuration" title="Configuration" style="border: 1px solid gray; zoom:70%;">
 
 ### Flow Execution and Results
 

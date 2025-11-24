@@ -51,6 +51,10 @@ The Conversation History widget shows both inbound and outbound call records, us
     * Direction (Inbound/Outbound)  
         <img src="../images/history-tab.png" alt="History" title="History" style="border: 1px solid gray; zoom:70%;">
 
+    !!! note "Wait Time"
+
+        The widget displays the total time a customer waits before an agent is assigned. This includes the initial queue wait and any additional waits that occur during agent or queue transfers.
+
 * Clicking the conversation displays the transcript.  
     <img src="../images/transcript.png" alt="Transcript" title="Transcript" style="border: 1px solid gray; zoom:70%;">
 
