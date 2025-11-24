@@ -1,17 +1,12 @@
 # Scheduled Reporting for Quality AI
 
-The Quality AI scheduled reporting feature provides comprehensive data export capabilities, including scheduling, execution, and bulk operation management for AutoQA and Conversation Intelligence insights. This enables QA Managers, Supervisors, and authorized users to generate, schedule, and download detailed reports that cover interaction details, agent performance metrics, and evaluation metric adherence across configurable time periods and organizational filters.
+The Quality AI scheduled reporting feature provides a structured framework to monitor, evaluate, and improve agent performance. It enables the tracking of agent productivity, adherence to quality standards, and interaction effectiveness, while offering insights into operational efficiency and evaluation metric compliance. By generating and analyzing scheduled reports, QA managers and supervisors can identify coaching opportunities, ensure alignment with organizational goals, and drive continuous improvement. 
 
-## Key Benefits
+## Reports Tab
 
-* Export comprehensive data for external analysis and business intelligence integration.
-* Create executive dashboards and meet compliance reporting requirements.
-* Integrate quality metrics with business intelligence systems.
-* Automate report generation and delivery with flexible scheduling.
-* Support multi-language reporting capabilities.
-* Maintain an audit trail of all report activities.
+The Reports tab consists of a list of generated reports. You can generate an instance of a new report, download reports, edit, view, and delete reports.
 
-## Access Reports
+## Reports Access 
 
 * **Navigation**: **Quality AI > Analytics > Reports**.
 

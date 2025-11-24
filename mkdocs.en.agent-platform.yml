@@ -116,6 +116,7 @@ nav:
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
     - Accessing Agent Platform: getting-started/sign-up-sign-in.md
+    - Agent Platform IP Addresses: getting-started/ip-addresses.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
     - Quick Start Tutorials:
       - Video Tutorials: 
@@ -285,17 +286,17 @@ nav:
       - Agentic Evaluation:
         - About Agentic Evaluation: evaluation/agentic-evaluation/overview.md
         - Create Projects: evaluation/agentic-evaluation/create-project.md
+        - Create Simulations: evaluation/agentic-evaluation/create-simulation.md
         - Create Evaluations: evaluation/agentic-evaluation/create-evaluation.md
-        - Import Datasets: evaluation/agentic-evaluation/import-production-data.md
+        - Import Datasets: evaluation/agentic-evaluation/import-data.md
         - Configure Evaluators: evaluation/agentic-evaluation/configure-evaluators.md
         - Run Evaluations: evaluation/agentic-evaluation/run-evaluation.md
         - View Results: evaluation/agentic-evaluation/view-evaluation-result.md
         - Analyze Evaluations: evaluation/agentic-evaluation/analyze-evaluation.md
     - AI Safety & Governance: 
       - About Guardrails: guardrails/overview.md
-      - Add a Scanner: guardrails/add-a-scanner.md
+      - Enable a Scanner: guardrails/enable-a-scanner.md
       - Test Guardrail: guardrails/test-guardrail.md
-      - Manage Guardrails: guardrails/manage-guardrails.md
   - Administration: 
     - About Settings: administration/overview.md
     - About Workspaces: settings/workspaces/workspace-mgmt.md
@@ -330,8 +331,41 @@ nav:
       - Managing Usage Limits: settings/billing/managing-usage-limits.md
     - Data: 
       - Manage Data: settings/data/manage-datasets.md
-  - APIs:
+  - API:
       - About Agentic App APIs: apis/agentic-apps/overview.md
       - About Tools APIs: apis/overview.md
       - APIs List: apis/list-of-apis.md
+  - SDK:
+      - About Agent Platform SDK: sdk/index.md
+      - Installation: sdk/getting-started/installation.md
+      - Quick Start: sdk/getting-started/quickstart.md
+      - Core Concepts: sdk/getting-started/concepts.md
+      - User Guide:
+        - Building Applications: sdk/guide/building-apps.md
+        - Creating Agents: sdk/guide/creating-agents.md
+        - Working with Tools: sdk/guide/working-with-tools.md
+        - Memory Stores: sdk/guide/memory-stores.md
+        - Prompts & LLM Config: sdk/guide/prompts-llm.md
+        - Custom Orchestration: sdk/guide/orchestration.md
+      - API Reference:
+        - Overview: sdk/api/index.md
+        - Design-Time Models:
+           - App: sdk/api/designtime/app.md
+           - Agent: sdk/api/designtime/agent.md
+           - Tool: sdk/api/designtime/tool.md
+           - LLM Model: sdk/api/designtime/llm_model.md
+           - Prompt: sdk/api/designtime/prompt.md
+           - Memory Store: sdk/api/designtime/memory_store.md
+           - App Configuration: sdk/api/designtime/app_configuration.md
+           - App Namespace: sdk/api/designtime/app_namespace.md
+           - App Variable: sdk/api/designtime/app_variable.md
+           - Icon: sdk/api/designtime/icon.md
+        - Runtime:
+           - Overview: sdk/api/runtime/index.md 
+      - Examples:
+        - Banking Assistant: sdk/examples/banking-assistant.md
+        - Multi-Agent Workflow: sdk/examples/multi-agent.md
+      - Contributing: sdk/contributing.md
+      - Changelog: sdk/changelog.md
   - Marketplace: ai-agents/agentic-apps/marketplace.md
+  

@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Interaction Details Report
 
 ## Generating the Interaction Details Report

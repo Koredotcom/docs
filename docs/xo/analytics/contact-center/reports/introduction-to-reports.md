@@ -6,11 +6,11 @@ With Contact Center AI, a supervisor can monitor queues, calls, daily tasks, and
 
 You can segregate the reports as follows:
 
-**MY REPORTS**: Displays only the reports created by the current user.
+**My Reports**: Displays only the reports created by the current user.
 
-**ALL REPORTS**: Displays all the reports.
+**All Reports**: Displays all the reports.
 
-**FAVORITES**: Displays reports created by any user and marked as favorites by the current user.
+**Favorites**: Displays reports created by any user and marked as favorites by the current user.
 <img src="../images/reports-page.png" alt="Reports Page Tabs" title="Reports Page Tabs" style="border: 1px solid gray; zoom:70%;">
 
 ## Creating a New Report
@@ -26,9 +26,9 @@ To create a new report:
 
 You can choose different report types from the list, for example, the Agent Activity Summary.
 
-## REPORTS Tab
+## Reports Tab
 
-The REPORTS tab consists of a list of generated reports. You can generate an instance of a new report, download reports, edit, view, and delete reports.
+The Reports tab consists of a list of generated reports. You can generate an instance of a new report, download reports, edit, view, and delete reports.
 
 ### Report Types
 
@@ -44,7 +44,11 @@ When generating a new report, you have the option to select from a list of avail
 * Queue Dispositions Report,
 * Queue Chat Metrics Interval Report,
 * Total Volumes Report,
-* IVR Containment Report.
+* IVR Containment Report,
+* Selected Hours Report,
+* Interaction Details by Segment Report,
+* Skill Metrics Daily Report,
+* Skill Metrics Daily Report.
 
 By clicking the New Report button, you can choose the desired report type from the above list.
 
@@ -71,9 +75,9 @@ Steps to revise the access:
 
 You can make the report public by following the above steps and clicking **Switch to Public**. The report is then accessible to everyone.
 
-    !!!Note
+!!! Note
 
-         A private report is not visible to other users on the REPORTS tab.
+    A private report is not visible to other users on the REPORTS tab.
 
 ### Adding Filters
 
@@ -151,7 +155,7 @@ A list of reports that are run together appears.
 <img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:100%;">  
 All the selected reports will be deleted.
 
-## ACTIONS
+## Actions
 
 For each report, the following actions are allowed:
 

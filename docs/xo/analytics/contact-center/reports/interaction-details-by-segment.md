@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Interaction Details by Segment
 
 ## Generating Interaction Details by Segment Report

@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Latency Report
 
 ## Generating the Latency Report

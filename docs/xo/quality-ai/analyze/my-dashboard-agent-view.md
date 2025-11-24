@@ -4,7 +4,7 @@
 
 **My Dashboard** is a personalized agent dashboard that shows performance insights through supervisor-assigned scorecards. It supports global language settings, with Scorecard widgets offering independent language selection. Agents can track trends, coaching insights, and areas for improvement, such as voice attributes, using Calendar and Channel filters for focused analysis.
 
-### Key Functionalites
+### Key Functionalities
 
 * **Real-time Performance Monitoring**: Access real-time feedback through supervisor scorecards and automated Quality Assurance (QA) scoring.
 

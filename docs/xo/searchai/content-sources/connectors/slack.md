@@ -7,11 +7,11 @@ Slack can be easily integrated with Search AI to search through conversations in
 
 ## Why Use the SearchAI Connector for Slack?
 
-1. **Comprehensive Search Across Channels:** Seamlessly search messages, files, and conversations across public and private Slack channels, ensuring no important detail is missed.
-2. **Enhanced Productivity:** Saves time by quickly surfacing relevant messages, files, and discussions without the need to manually sift through channels.
-3. **Permission-Based Access**: Users can only access the content they are authorized to view.
-4. **Direct Links to Context:** Provides citations and direct links to Slack threads or messages, making it easy to dive into the original context. 
-5. **File attachment:** Provides precise searches for files or attachments shared in Slack using its metadata.
+1. Comprehensive Search Across Channels: Seamlessly search messages, files, and conversations across public and private Slack channels, ensuring no important detail is missed.
+2. Enhanced Productivity: Saves time by quickly surfacing relevant messages, files, and discussions without the need to manually sift through channels.
+3. Permission-Based Access: Users can only access the content they're authorized to view.
+4. Direct Links to Context: Provides citations and direct links to Slack threads or messages, making it easy to dive into the original context. 
+5. File attachment: Provides precise searches for files or attachments shared in Slack using its metadata.
 
 <span style="text-decoration:underline;">Specifications</span>
 
@@ -90,7 +90,7 @@ Note:
 
 After successfully connecting the Search AI connector to the Slack app, go to the **Configuration** tab and set up content synchronization. For immediate sync, use the **Sync Now** option and the **Schedule Sync** option to set up a scheduler to sync the content in the future. 
 
-Upon sync, Search AI ingests **conversations of the past 30 days** from the Slack channels. 
+Upon sync, Search AI ingests conversations of the past 6 months days from the Slack channels. 
 
 When messages from a Slack channel are ingested into SearchAI, two or more consecutive messages may be grouped together based on their context and size. If a message includes attachments, the attachment’s name and URL are also captured as part of the ingested content. Each ingested message always includes the following details in the **content** field:
 
@@ -103,7 +103,7 @@ When messages from a Slack channel are ingested into SearchAI, two or more conse
 **Sample Content**
 
 ```json
-"content": "In the searchai-dev channel, at 2024-12-26T13:20:07.170Z, john.smith messaged: The latest build is available for testing. Please find the release notes attached. This includes an attachment with the file name: release-notes.pdf and its URL: https://files.slack.com/files-pri/T082AFBJX27-F088SA71R4G/download/release-notes.pdf"
+"content": "In the dev channel, at 2024-12-26T13:20:07.170Z, john.smith messaged: The latest build is available for testing. Please find the release notes attached. This includes an attachment with the file name: release-notes.pdf and its URL: https://files.slack.com/files-pri/T082AFBJX27-F088SA71R4G/download/release-notes.pdf"
 ```
 
 
