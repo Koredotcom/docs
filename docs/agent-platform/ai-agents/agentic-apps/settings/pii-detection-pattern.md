@@ -10,4 +10,4 @@
 8. Use **Test Pattern** to validate that your regex detects the correct values and that masking behaves as expected.
 9. Select **Create** to save and activate the PII detection pattern.
 
-<img src="../settings/images/new-pattern.png" alt="PII Detection Pattern" title="PII Detection Pattern" style="border: 0px solid gray; zoom:50%;">
+![PII Detection Pattern](images/new-pattern.png "PII Detection Pattern")
