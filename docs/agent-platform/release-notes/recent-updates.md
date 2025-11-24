@@ -45,16 +45,6 @@ Model Hub now supports streaming via the 'stream:true' parameter for external mo
 
 Custom external model integrations now support the Gemini request–response format, in addition to OpenAI Completions and Anthropic Messages. When configuring external models, users can select Google (Gemini) as the provider, with automatic request routing and response parsing for Gemini-formatted requests handled by the Model Hub.
 
-**Realtime Model Support in Custom External Models**
-
-Support has been added for the full set of Realtime models, including:
-
-* gpt-4o-realtime-preview, gpt-4o-realtime-preview-2025-06-03, gpt-4o-realtime-preview-2024-10-01 (400k tokens)
-* gpt-4o-realtime-mini-2025-10-06, gpt-4o-mini-realtime-preview-2024-12-17 (200k tokens)
-* gpt-realtime, gpt-realtime-2025-08-28 (400k tokens)
-* gpt-realtime-mini (200k tokens)
-
-
 <font size="4">AI Safety, Security, and Governance</font>
 
 **New PII Protection Framework**
