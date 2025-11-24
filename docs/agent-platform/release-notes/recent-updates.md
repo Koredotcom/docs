@@ -29,6 +29,7 @@ Agent Platform now supports granular permission controls for API keys, allowing 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/api-keys.md)
 
 **Agent Invocation Error Handling**
+
 Agent Platform introduces a new error-handling framework that provides configurable timeouts, retry logic, fallback models, and recovery actions for model invocation failures. These enhancements ensure a predictable handling of failures, and improved user experience during model outages.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md#error-handling)
