@@ -1,4 +1,4 @@
-# Search AI Updates
+# Search AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
@@ -26,7 +26,7 @@ These features help admins and developers validate that permissions are correctl
 
 <font size="4">Connector Enhancements</font>
 
-**Slack Connector Enhancements**
+**Slack Connector**
 
 The Slack Connector now offers enhanced flexibility and control for data ingestion:
 
@@ -34,7 +34,7 @@ The Slack Connector now offers enhanced flexibility and control for data ingesti
 * Channel-based standard filtering option and advanced date-range based filtering for targeted ingestion.
 * Support for crawling message history from the past six months.
 
-**Confluence Data Center Enhancements**
+**Confluence Data Center Connector**
 
 The Confluence Data Center connector now includes several enhancements to broaden content coverage and improve indexing control.
 
@@ -43,7 +43,7 @@ The Confluence Data Center connector now includes several enhancements to broade
 * Advanced filtering options for more precise indexing.
 * Incremental sync capability and webhook-based deletion handling are available upon request.
 
-**ServiceNow Enhancements**
+**ServiceNow Connector**
 
 Expired articles are now automatically excluded from indexing, ensuring that only valid and up-to-date content is ingested into Search AI.
 
