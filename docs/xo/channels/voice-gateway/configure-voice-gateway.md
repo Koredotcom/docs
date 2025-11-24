@@ -26,7 +26,7 @@ Steps to buy a new phone number:
 2. Configure an available number with the following steps:
 
     1. Select **Get Number**.
-    2. On the **Forward to Phone Number** page, select whether the number will be reserved for Inbound Calls, Outbound Calls, or both.  
+    2. On the **Forward to Phone Number** page, select whether the number is reserved for Inbound Calls, Outbound Calls, or both.  
     3. Select an App for outbound calls from the dropdown. AgentAI triggers this app when the agent makes an outbound call with this phone number.  
         <img src="../images/phone-number.png" alt="Forward To Phone Number" title="Forward To Phone Number" style="border: 1px solid gray; zoom:60%;">
     4. Select **Done**. A success confirmation message appears.
@@ -110,8 +110,8 @@ Agent AI supports real-time audio streaming through two primary methods:
             <img src="../images/sip-uri.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;"> 
 
             * Under **Domain Name**, provide the following:
-                * **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/deployment-and-operations.md#ips-ports-and-protocols).
-                * **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.  
+                * **Fully Qualified Domain Name (FQDN)**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/deployment-and-operations.md#ips-ports-and-protocols).
+                * **DNS (Domain Name System) Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.  
                 <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;">
 
             * Under **MS Teams**, provide a **Fully Qualified Domain Name** (the domain name that specifies all domain levels, including the top-level domain and the root zone).  
