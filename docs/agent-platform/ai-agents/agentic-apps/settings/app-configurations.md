@@ -72,6 +72,27 @@ Enable this setting to allow real-time streaming of the response in Playground, 
 
 ## Advanced Settings
 
+### Error Handling
+
+Agent Platform provides an error-handling framework to handle failures that occur when an agent’s underlying AI model is invoked. It allows administrators to configure timeouts, retries, fallback models, and fallback behaviors so that user experiences remain predictable and graceful even when model calls fail or are delayed.
+
+* This configuration applies specifically to agent model invocation failures such as timeouts, provider errors, or transient network issues. 
+* All agents within the app inherit this configuration.
+
+Click on *Modify Configuration* to update the timeout and retry behavior. 
+
+* Model Call Timeout: Defines the maximum time (in seconds) the system waits for a model response before marking the model call as failed. If the model doesn't respond within the configured timeout, the call is treated as failed and the retry mechanism kicks in.
+* Retry Handling: Defines how the system behaves when a model call times out. There are two options to follow in this situation. 
+    * Retry with the same model: When enabled, the system will retry the request with the same AI model. Configure the maximum number of retries using the *UPTO* field. This can be used to handle transient provider issues or network issues, giving the primary model a few attempts before switching to a backup model.
+    * Retry with a different model: When enabled, the system will retry the failed request with an alternate AI model after all retries with the first option have been exhausted. Select the alternate model from the drop-down, and specify the maximum number of retries for this model. To skip this step, select *Do not retry with a different model*. This can be used to maintain continuity if the primary model is temporarily unavailable. 
+* Fallback Behavior: This config defines what happens when the model request fails after all retry attempts (if any) have been exhausted.
+    * Send Message: Display a custom message to the user that describes the issue and the next steps. 
+    * Invoke Tool: Allows invoking a tool directly. Select the tool and provide the tool parameters. Provide fixed values for the fields or use memory variables to provide values for the fields. Administrators can provide fixed key–value pairs for the tool parameters or use memory variables to dynamically populate values at runtime. This is useful for actions such as:
+        * Triggering a notification or email.
+        * Logging failure details.
+        * Initiating a fallback recovery workflow.
+        * Informing support systems when repeated model calls fail.
+
 
 ### Delete Agentic App
 

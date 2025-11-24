@@ -14,20 +14,26 @@ This release enables you to expedite your AI agent deployments by running evals 
 
 Environment Variables with namespace support enable secure, reusable, and environment-specific configuration management across the application. Developers can centrally define and manage variables and access them seamlessly in Code Tools. These variables are automatically resolved at runtime, eliminating the need to hardcode sensitive information such as API keys, endpoints, and tokens. This enhancement simplifies multi-environment deployments and ensures consistent, dynamic configuration across all environments.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/variables.md)
+
 **Pre-Processor for Agent Execution**
 
 Agent Platform introduces a new Pre-Processor capability that allows developers to transform and validate agent context before each execution. This enhancement enables custom logic to run before each agent invocation, allowing it to process incoming data, enrich context, and adjust agent inputs as required. The Pre-Processor supports user-defined scripts in JavaScript and Python.
 
-**Knowledge Base Query Customization**
-
-Agent Platform now lets users control how knowledge base queries are formulated. The new configuration setting allows them to select between two modes:
-
-* Agent Response (default): Uses the LLM to generate intelligent, context-aware queries.
-* Custom Query: Enables precise, user-defined queries using memory and context variables for greater control.
+**Note**: This feature is currently in preview and can be enabled upon request.
 
 **API Key Permissions and Access Control**
 
 Agent Platform now supports granular permission controls for API keys, allowing precise definition of each key's capabilities. Users can create app-level keys scoped to specific permissions to create, manage, or delete sessions, upload or delete files, and execute agent runs. Existing API keys maintain full backward compatibility.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/api-keys.md)
+
+**Agent Invocation Error Handling**
+
+Agent Platform introduces a new error-handling framework that provides configurable timeouts, retry logic, fallback models, and recovery actions for model invocation failures. These enhancements ensure a predictable handling of failures, and improved user experience during model outages.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md#error-handling)
+
 
 <font size="4">AI Engineering Tools</font>
 
@@ -52,26 +58,19 @@ Model Hub now supports streaming via the 'stream:true' parameter for external mo
 
 Custom external model integrations now support the Gemini request–response format, in addition to OpenAI Completions and Anthropic Messages. When configuring external models, users can select Google (Gemini) as the provider, with automatic request routing and response parsing for Gemini-formatted requests handled by the Model Hub.
 
-**Realtime Model Support in Custom External Models**
-
-Support has been added for the full set of Realtime models, including:
-
-* gpt-4o-realtime-preview, gpt-4o-realtime-preview-2025-06-03, gpt-4o-realtime-preview-2024-10-01 (400k tokens)
-* gpt-4o-realtime-mini-2025-10-06, gpt-4o-mini-realtime-preview-2024-12-17 (200k tokens)
-* gpt-realtime, gpt-realtime-2025-08-28 (400k tokens)
-* gpt-realtime-mini (200k tokens)
-
-
 <font size="4">AI Safety, Security, and Governance</font>
 
 **New PII Protection Framework**
 
-Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it is never exposed in traces or debug logs and providing end-to-end protection of sensitive data.
+Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it's never exposed in traces or debug logs and providing end-to-end protection of sensitive data.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/guardrails.md)
 
 **Guardrails Now Available by Default for Built-in AI Safety**
 
 System input and output scanners are now automatically deployed and available by default. Users can review, test, and enable them without manual deployment, ensuring safer, more compliant AI responses. 
 
+[Learn more :octicons-arrow-right-24:](../guardrails/overview.md)
 
 <hr>
 
