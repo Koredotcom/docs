@@ -18,13 +18,6 @@ Environment Variables with namespace support enable secure, reusable, and enviro
 
 Agent Platform introduces a new Pre-Processor capability that allows developers to transform and validate agent context before each execution. This enhancement enables custom logic to run before each agent invocation, allowing it to process incoming data, enrich context, and adjust agent inputs as required. The Pre-Processor supports user-defined scripts in JavaScript and Python.
 
-**Knowledge Base Query Customization**
-
-Agent Platform now lets users control how knowledge base queries are formulated. The new configuration setting allows them to select between two modes:
-
-* Agent Response (default): Uses the LLM to generate intelligent, context-aware queries.
-* Custom Query: Enables precise, user-defined queries using memory and context variables for greater control.
-
 **API Key Permissions and Access Control**
 
 Agent Platform now supports granular permission controls for API keys, allowing precise definition of each key's capabilities. Users can create app-level keys scoped to specific permissions to create, manage, or delete sessions, upload or delete files, and execute agent runs. Existing API keys maintain full backward compatibility.
