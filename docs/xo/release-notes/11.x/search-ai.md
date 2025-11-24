@@ -1,4 +1,4 @@
-# Search AI Updates
+# Search AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 

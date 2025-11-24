@@ -1,4 +1,4 @@
-# Quality AI Updates
+# Quality AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
