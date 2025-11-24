@@ -55,7 +55,9 @@ Custom external model integrations now support the Gemini request–response for
 
 **New PII Protection Framework**
 
-Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it is never exposed in traces or debug logs and providing end-to-end protection of sensitive data.
+Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it's never exposed in traces or debug logs and providing end-to-end protection of sensitive data.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/guardrails.md)
 
 **Guardrails Now Available by Default for Built-in AI Safety**
 
