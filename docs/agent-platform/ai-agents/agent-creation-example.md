@@ -1,4 +1,4 @@
-# AI Agent Example: ProcureWise
+# AI Agent Example: ProcurementInfoAgent
 
 This example walks you through the complete process of configuring a new agent-based AI application.
 
@@ -13,13 +13,14 @@ Design an AI application to analyze deals with suppliers, provide critical insig
 
 ## Sample Configuration
 
-**Name**: ProcureWise
+**Name**: ProcurementInfoAgent
 **Description**: An AI application to analyze deals with suppliers, provide critical insights, and answer any questions related to the agreements.
 
 Next, define the agents for the application. The app would require the following agents. 
 
-1. Insights Agent: This agent assists in answering questions that require accessing structured databases to provide information about listing contracts, filtering contracts based on specific criteria, and performing aggregate functions. (e.g., questions involving calculations, sums, counts, averages, calculations based on some conditions, etc.). This agent will not have access to complete contract information.
-2. Research Agent: Extracts all the key details from the contracts and processes the information. This agent cannot respond to the user’s questions but can only act as a facilitator to process information from a document and update it in the database.
+1. Insights Agent: This agent assists in answering questions that require accessing structured databases to provide information about listing contracts, filtering contracts based on specific criteria, and performing aggregate functions. (for example, questions involving calculations, sums, counts, averages, calculations based on some conditions, etc.). This agent won't have access to complete contract information.
+2. Research Agent: Extracts all the key details from the contracts and processes the information. This agent can't respond to the user’s questions but can only act as a facilitator to process information from a document and update it in the database.
+
 ---
 
 ### Agent Configuration - Insights Agent 
@@ -29,7 +30,7 @@ Next, define the agents for the application. The app would require the following
 **Description**- The description of the agent can be as follows:
 
 !!!abstract "Example"
-    This agent helps in answering questions that require accessing structured databases to provide information about listing of contracts, filtering of contracts based on specific criteria, and aggregate functions. (e.g., questions involving calculations, sums, counts, averages, calculations based on some conditions, etc.). This agent will not have access to full contract information.
+    This agent helps in answering questions that require accessing structured databases to provide information about listing of contracts, filtering of contracts based on specific criteria, and aggregate functions. (for example, questions involving calculations, sums, counts, averages, calculations based on some conditions, etc.). This agent won't have access to full contract information.
 
 **Scope**- Define the scope as shown below:
 
@@ -61,52 +62,45 @@ Next, define the agents for the application. The app would require the following
 
 **Tools**
 
-1. **Prism Query Generator (Workflow Tool)** - Analyzes user input and generates a SQL-like query structure. For instance, if the user query is "Show contracts signed with vendors in 2023 above $500,000.", the output should be “SELECT * FROM contracts WHERE vendor_signed_year = 2023 AND value > 500000;”. 
-
-Prism Query Generator can be a standard workflow tool designed as shown below. ![Agent Flow](images/prism-query-generator.png "Agent Flow")
-
-
+1. **Prism Query Generator (Workflow Tool)** - Analyzes user input and generates a SQL-like query structure. For instance, if the user query is "Show contracts signed with vendors in 2023 above $500,000. ," the output should be “SELECT * FROM contracts WHERE vendor_signed_year = 2023 AND value > 500000;.”  Prism Query Generator can be a standard workflow tool designed as shown below. ![Agent Flow](images/prism-query-generator.png "Agent Flow")
 2. **Query Processing Tool(Code Tool)** - Executes the generated query using Supabase APIs and returns results. For the above query, this tool finds the high-value contracts as requested by the user. The Query Processing Tool can be a code tool that takes the query as input and invokes an API call with the query as its input. The following code can be used to invoke the API and find the relevant contracts. 
+    ```json
+    const fetch = require('node-fetch');
 
-```json
-const fetch = require('node-fetch');
+    async function executeSQL(query) {
+        const url = 'https://bldrhpiodbmcvhywchhd.supabase.co/rest/v1/rpc/execute_dynamic_query'; 
+        
+        const headers = {
+            'Content-Type': 'application/json',
+            'apikey': 'eyJ*********************8Q'
+        };
 
-async function executeSQL(query) {
-    const url = 'https://bldrhpiodbmcvhywchhd.supabase.co/rest/v1/rpc/execute_dynamic_query'; 
-    
-    const headers = {
-        'Content-Type': 'application/json',
-        'apikey': 'eyJ*********************8Q'
-    };
+        const body = JSON.stringify({ query });
 
-    const body = JSON.stringify({ query });
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: headers,
+                body: body
+            });
 
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: headers,
-            body: body
-        });
+            const responseData = await response.json();
+            return JSON.stringify(responseData);
 
-        const responseData = await response.json();
-        return JSON.stringify(responseData);
-
-    } catch (error) {
-        console.error('Error:', error.message);
-        return JSON.stringify({ error: 'Error in using API' });
+        } catch (error) {
+            console.error('Error:', error.message);
+            return JSON.stringify({ error: 'Error in using API' });
+        }
     }
-}
 
-// Execute with query parameter
-const query = $query;
-return executeSQL(query);
-```
+    // Execute with query parameter
+    const query = $query;
+    return executeSQL(query);
+    ```
 
-### **Sample User Interaction**
+### Sample User Interaction
 
-**User Prompt:**
-
-Show me the top contract with the highest value in the last one year.
+**User Prompt:** Show me the top contract with the highest value in the last one year.
 
 ![User Prompt](images/user-prompt.png "Agentic App Creation")
 
@@ -129,7 +123,7 @@ Show me the top contract with the highest value in the last one year.
 
 ### **Summary**
 
-With this configuration, ProcureWise demonstrates a clean separation of responsibilities:
+With this configuration, ProcurementInfoAgent demonstrates a clean separation of responsibilities:
 
 * The **Research Agent** is responsible for ingesting and structuring data.
 * The **Insights Agent** delivers user-facing analytics based on structured inputs.

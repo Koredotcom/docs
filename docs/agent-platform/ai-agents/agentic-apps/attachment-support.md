@@ -1,8 +1,8 @@
 # Attachment Support in User Interactions
 
-Agentic Applications support **real-time document sharing during interactions**. Users can upload files directly into the chat, allowing agents to analyze and use document content dynamically when generating responses.
+Agentic Applications support real-time document sharing during interactions. Users can upload files directly into the chat, allowing agents to analyze and use document content dynamically when generating responses.
 
-The platform handles uploaded files in **two ways**, depending on the file types:
+The platform handles uploaded files in two ways, depending on the file types:
 
 * Content Extraction - For specific file types, extracts and uses content as context.
 * Metadata Storage - For all supported file types, stores file information for reference.
@@ -18,9 +18,9 @@ For selected file types, the platform extracts the content and uses it as contex
 3. Agents use the extracted content to provide contextually relevant responses.
 
 
-**Example Use Case**
+!!!abstract "Examples"
 
-When applying for a job through an HR Assistant agent, users can simply upload their resume instead of manually entering personal and professional details. The assistant automatically extracts the necessary information and uses it in the conversation.
+  When applying for a job through an HR Assistant agent, users can simply upload their resume instead of manually entering personal and professional details. The assistant automatically extracts the necessary information and uses it in the conversation.
 
 ## File Metadata extraction
 
@@ -33,9 +33,9 @@ For all supported file types, the platform captures and stores file metadata as 
 * filename: Original filename as uploaded by the user.
 * mimetype: MIME type of the uploaded file.
 * isActive: Indicates if the document is applicable for the current conversation.[ Learn More](#file-state-management).
-* downloadUrl: Direct access URL for file content. This is a temporary link and is **valid and accessible for 30 days** from the date of upload. 
+* downloadUrl: Direct access URL for file content. This is a temporary link and is *valid and accessible for 30 days* from the date of upload. 
 
-This metadata is stored in the system memory, sessionMeta, in the **artifacts** field under the metadata field as shown below. ` `
+This metadata is stored in the system memory, sessionMeta, in the artifacts field under the metadata field as shown below. ` `
 
 
 ```json
@@ -46,13 +46,13 @@ This metadata is stored in the system memory, sessionMeta, in the **artifacts** 
       "filename": "app-export.json",
       "mimetype": "application/json",
       "isActive": false,
-      "downloadUrl": "https://localhost/api/v1/getMediaStream/orgFiles/public?h=dHkwTlA3QmFpVmgxUDAzWmVScmd0eWNLV1Y1dUtrNFV6cU5IdWpycXZPbz0$"
+      "downloadUrl": "https://localhost/api/v1/getMediaStream/orgFiles/public?h=dHkwTlA3QmxxxxxxxxxxxxxxxxxxxxLV1Y1dUtrNFV6cU5IdWpycXZPbz0$"
     }
   ]
 ```
 
 
-This metadata can be used in **Agent and orchestrator prompts** and **code tools** for further processing. 
+This metadata can be used in *Agent and orchestrator prompts* and *code tools* for further processing. 
 
 
 ### Accessing File Metadata from Artifacts 
@@ -190,8 +190,8 @@ This allows you to upload the files. Refer to [this for file limits](settings/ap
 
 Each file has an associated state with it that indicates whether the content extracted from the uploaded file should be used in the current conversation or not. 
 
-* **Active state**: By default, when a file is uploaded, it is in **active** state. This means the content of the file is eligible for use in the current conversation. 
-* **Inactive state**: Uncheck the file in the attachment list to make it **inactive**, which means that the content extracted from the document should not be used for the current conversation. Setting a file to inactive does **not delete or remove** it. The file remains available and can be checked again when required.  
+* **Active state**: By default, when a file is uploaded, it is in *active* state. This means the content of the file is eligible for use in the current conversation. 
+* **Inactive state**: Uncheck the file in the attachment list to make it *inactive*, which means that the content extracted from the document shouldn't be used for the current conversation. Setting a file to inactive doesn't delete or remove it. The file remains available and can be checked again when required.  
 
 For example, if a user uploads multiple documents but only wants the agent to refer to one of them, he can uncheck the irrelevant files, ensuring only the intended file is used for that interaction.
 

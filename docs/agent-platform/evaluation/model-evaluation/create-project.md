@@ -35,7 +35,7 @@ Steps to create a new project:
 4. Click **Create** to submit the project creation request.
 Once the project is created successfully, the system will redirect you to the newly created project’s main page.
 
-5. On the Project page, click the three dots icon in the row of the project you want to manage for the following options:
+5. On the Project page, click the More options icon (three dots) in the row of the project you want to manage for the following options:
     * **Rename**: Use this option to change the project name. 
     * **Delete**: Use this option to delete the project. A confirmation message appears, asking for confirmation to delete the project. If the user confirms, the project and all its associated datasets will be permanently deleted.
     * **Share**: Use this option to share the project with other users by providing email addresses or user identifiers.

@@ -27,7 +27,7 @@ x-api-key: YOUR_API_KEY
 ```
 
 
-Note: API keys are **app-specific**. They are not shared across accounts or workspaces. Ensure that you use the API key associated with the correct app when making requests. 
+Note: API keys are **app-specific**. They're not shared across accounts or workspaces. Ensure that you use the API key associated with the correct app when making requests. 
 
 ## Key Concepts and Terminologies
 
@@ -82,7 +82,7 @@ Session resolution follows a **priority-based approach** to determine how a sess
    <td>Attempts to find an existing session with the given sessionReference.
 <ul>
 
-<li>If a session with the given sessionReference exists, it is retrieved.</li>
+<li>If a session with the given sessionReference exists, it's retrieved.</li>
 
 <li>If no session is found, a new session is created using the sessionReference.</li>
 

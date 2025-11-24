@@ -1,46 +1,27 @@
 # Guardrails for Safety and Compliance
 
-Guardrails are safety measures that ensure AI-generated responses from large language models (LLMs) are appropriate and align with standards. You can deploy various guardrail models and use them to scan the inputs or prompts and output results. The scanners ensure responsible AI interactions while generating responses.
+Guardrails are safety measures that ensure AI-generated responses from large language models (LLMs) remain appropriate and aligned with organizational or regulatory standards. The Agent Platform includes pre-deployed guardrails that scan both user inputs and model outputs to help maintain safe, responsible, and compliant AI interactions.
 
-Supported Scanners:
+!!! note
 
-**Regex Scanner**  
+    Guardrails are pre-deployed by the platform. To view the full list, go to **Settings** in the top navigation bar and select **Manage guardrails** from the left menu.
 
-* Validates prompts based on user-defined regular expression patterns.
-* Allows defining desirable ("good") and undesirable ("bad") patterns for fine-grained prompt validation.
 
-**Anonymize Scanner** 
+## Supported Scanners
 
-* Ensures user prompts remain confidential by removing sensitive data.
-* Helps maintain user privacy and prevents exposure of personal information.
+| **Scanner** | **Description** |
+|------------|-----------------|
+| **Regex** | • Validates prompts using user-defined regular expression patterns.<br>• Supports defining desirable (“good”) and undesirable (“bad”) patterns for fine-grained validation. |
+| **Anonymize** | • Removes sensitive data from user prompts.<br>• Helps maintain privacy and prevents exposure of personal information. |
+| **Ban topics** | • Blocks specific topics (for example, religion) from appearing in prompts.<br>• Helps avoid sensitive or inappropriate discussions. |
+| **Prompt injection** | • Detects attempts to manipulate or override model behavior.<br>• Protects the LLM from malicious or crafted inputs. |
+| **Toxicity** | • Analyzes prompts for toxic or harmful language.<br>• Helps ensure safe and respectful interactions. |
+| **Bias detection** | • Examines model outputs for potential bias.<br>• Helps maintain neutrality and fairness in generated responses. |
+| **Deanonymize** | • Replaces placeholders in model outputs with actual values.<br>• Restores necessary information when needed. |
+| **Relevance** | • Measures similarity between the user’s prompt and the model’s output.<br>• Provides a relevance score to ensure responses stay contextually aligned. |
 
-**Ban Topics Scanner** 
 
-* Restricts specific topics, such as religion, from being introduced in prompts.
-* Maintains acceptable boundaries and avoids potentially sensitive or controversial discussions.
 
-**Prompt Injection Scanner** 
 
-* Protects LLM against crafty input manipulations.
-* Identifies and mitigates injection attempts to ensure secure LLM operation.
 
-**Toxicity Scanner** 
 
-* Analyzes and gauges the toxicity level of prompts.
-* Assists in maintaining healthy and safe online interactions by preventing the dissemination of potentially harmful content.
-
-**Bias Detection Scanner**
-
-* Inspects LLM-generated outputs to detect and evaluate potential biases.
-* Ensures LLM outputs remain neutral and free from unwanted or predefined biases.
-
-**Deanonymize Scanner** 
-    
-* Replaces placeholders in the model's output with real values.
-* Helps restore original information in the output when needed.
-
-**Relevance Scanner** 
-
-* Measures the similarity between the input prompt and the model's output.
-* Provides a confidence score indicating the contextual relevance of the response.
-* Ensures LLM outputs remain aligned with the given input prompt.
