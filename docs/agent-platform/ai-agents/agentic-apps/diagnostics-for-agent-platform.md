@@ -1,10 +1,10 @@
 # Agent Diagnostics
 
-When a user runs Diagnostics from the Agentic App Overview page, the platform initiates a comprehensive validation process. It evaluates key components—including agents, tools, events, memory systems, and app-level orchestration—to detect potential issues before deployment.
+The Agent Platform’s Diagnostics feature provides a comprehensive health check for any Agentic App—whether it uses Supervisor Orchestration or the Adaptive Agent Network. When a user selects Run Diagnostics from the Agentic App Overview page, the platform performs a full validation across all major components, including agents, tools, events, memory systems, and overall orchestration logic.
 
 ![Create App](images/createapp/diagnostics-button.png "Diagnostics button")
 
-Upon completion, the platform displays a detailed report categorizing findings as informational messages, warnings, or errors across all components. For each warning or error, users have the option to address and fix the issue immediately, enabling proactive resolution and reducing risks before deployment.
+After the scan completes, the platform generates a structured report that categorizes findings as informational messages, warnings, or errors. Users can review issues at the app, agent, or tool level, and use the Fix now option to resolve problems directly from the Diagnostics panel, ensuring faster remediation and improved readiness before deployment.
 
 ![Create App](images/createapp/diagnostics-report.png "Diagnostics report")
 
@@ -16,6 +16,16 @@ Key highlights
 * Offers actionable guidance for every issue, facilitating prompt and effective resolution.
 * Employs a consistent, repeatable validation process applying uniform standards across all deployments to ensure scalable, reliable, and proactive detection of issues, helping apps meet defined quality and operational readiness benchmarks before production.
 
+## Steps to Run Diagnostics
+
+1. From the Agentic App Overview page, go to **Run Diagnostics** to start the validation scan.
+1. Review the **Diagnostic Summary**, which displays informational messages, warnings, errors, and the timestamp of the latest run.
+1. Navigate through the component-level views **Overview, Agents, and Tools** to understand issues in each part of the app.
+1. Use **Fix now** on any issue to open the corresponding configuration screen and resolve it immediately.
+1. Re-run Diagnostics at any time to generate an updated report and confirm that all issues have been addressed.
+
+![Diagnostics](images/steps-to-run-diagnostics.png "Diagnostics")
+
 ## Components of the Diagnostics Report
 
 | Section       | Description                                                                                     |
@@ -26,13 +36,3 @@ Key highlights
 | **Events**    | Validates event triggers, workflows, and bindings for correctness and reliability.              |
 | **Memory**    | Assesses memory references and state management readiness.                                      |
 | **System Checks** | Covers platform-level validations such as graph compilation, LLM configuration, environment setup, and logical orchestration. |
-
-![Create App](images/createapp/diagnostics-for-agent-platform.png "Complete diagnostics report")
-
-Users are provided with actionable controls within the diagnostics report to address, ignore, or navigate to identified issues for timely resolution.<br>
-
-* Triaged Issues: Displays previously ignored or resolved errors/warnings for audit visibility.<br>
-* Navigation Links: Allows users to click into specific sections and jump directly to the affected component in the app.<br>
-* Fix Options: Each error or warning includes a Fix now or Ignore action, enabling immediate remediation or deferral.
-
-![Create App](images/createapp/no-errors.png "No errors")
