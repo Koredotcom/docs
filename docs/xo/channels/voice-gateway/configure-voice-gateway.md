@@ -567,11 +567,11 @@ The Flow is the first part of your journey, where you'll present the caller with
 The most common way to let a caller choose a language is through an **Interactive Voice Response (IVR)** menu.
 
 1. Create a new Flow.
-2. After the Start node, drag and drop an [IVR Menu](../../flows/node-types/ivr-menu.md) node.
+2. After the Start node, drag an [IVR Menu](../../flows/node-types/ivr-menu.md) node.
 3. In the IVR Menu node, create prompts for each language option (for example, "Press 1 for English," "Press 2 for Hindi," "Press 3 for Telugu").  
     <img src="../images/ivr-menu.png" alt="IVR Menu" title="IVR Menu" style="border: 1px solid gray; zoom:70%;">
 
-4. For each language option, connect the number key (for example, "1") to a new [Script node](../../flows/node-types/script-task.md). This is the key step where the language will be set.  
+4. For each language option, connect the number key (for example, "1") to a new [Script node](../../flows/node-types/script-task.md). This is the key step where the language is set.  
     <img src="../images/ivr-digit.png" alt="IVR Digit Input" title="IVR Digit Input" style="border: 1px solid gray; zoom:70%;">
 
 5. For each Script node:
@@ -591,7 +591,7 @@ The most common way to let a caller choose a language is through an **Interactiv
 
     Use two-letter language codes in **lowercase**. For example, use "en", not "EN",  "hi", not "HI", 
 
-6. Connect all nodes to a **Run Automation** node. This will trigger the main part of your AI Agent's logic, the Dialog Flow.
+6. Connect all nodes to a **Run Automation** node. This triggers the main part of your AI Agent's logic, the Dialog Flow.
 
 7. Inside the Run Automation node:
 
@@ -611,7 +611,7 @@ The Dialog Flow is the AI Agent's conversation logic. Ensure the AI Agent's resp
 2. The platform enables you to configure different languages within the same flow. Look for a **language selector** on the app header.  
     <img src="../images/language-selector.png" alt="Language Selector" title="Language Selector" style="border: 1px solid gray; zoom:70%;">
 
-3. Select a language (for example, Hindi) from the dropdown. Now, any text you add to nodes are associated with this language.
+3. Select a language (for example, Hindi) from the dropdown. Now, any text you add to nodes associate with this language.
 4. For each node (like a **Message** node or **Entity** node), enter the text in the selected language.
 
     **Example:** For a Message node, if you've selected Hindi, you'll enter the Hindi text in the "Bot Response" box.  
