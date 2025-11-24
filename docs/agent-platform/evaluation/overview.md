@@ -18,13 +18,13 @@ This evaluation is ideal for fine-tuning, comparing, and validating models befor
 
 ### Agentic Evaluation
 
-Agentic Evaluation is designed to assess how effectively an agentic application performs in production. You can:
+Agentic Evaluation is designed to assess how effectively an agentic app performs in both production and pre-production environments. Users can import real session data from deployed apps or generate simulated sessions to test behavior before go-live. You can:
 
-* Import app sessions and trace data
+* Import app sessions and trace from production or simulations
 * Run multi-level evaluations to see how well the app achieves goals, follows workflows, and uses tools
 * Analyze inputs and outputs across supervisors, agents, and tools
 
-Agentic Evaluation enables multi-level evaluation across sessions and traces, offering deep insights into how orchestrators, agents, and tools operate in production. This helps uncover coordination issues, workflow failures, and opportunities for optimization.
+Agentic Evaluation enables multi-level evaluation across sessions and traces, offering deep insights into how orchestrators, agents, and tools behave across real and simulated conditions. This helps uncover coordination issues, workflow failures, and opportunities for optimization.
 
 [Learn more :octicons-arrow-right-24:](./agentic-evaluation/overview.md)
 
@@ -35,6 +35,6 @@ Agentic Evaluation enables multi-level evaluation across sessions and traces, of
 2. Go to the **Agent Platform Modules** menu and select **Evaluation Studio**.
     <img src="../images/evaluation_studio.png" alt="access evaluation studio" title="access evaluation studio" style="border: 1px solid gray; zoom:75%;">
  
-2. On the Evaluation page, select **Model evaluation** or **Agent evaluation** to begin.
+2. On the Evaluation page, select **Model evaluation** or **Agentic evaluation** to begin.
 
     <img src="../images/eval_studio_page.png" alt="Evaluation page" title="Evaluation page" style="border: 1px solid gray; zoom:80%;">

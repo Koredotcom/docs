@@ -77,7 +77,7 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md/#h
 ## Sample Request
 
 ```js
-curl --location --request POST 'https://{host}/api/public/models/cm-9xxxxxxxxxxxxxxxxxx2/export' 
+curl --location --request POST 'https://{host}/api/public/models/cm-dxxxxxxxxxxxxxxxxxx6/export' 
 --header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-xxx-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3'
 ```
 

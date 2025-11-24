@@ -912,7 +912,7 @@ The following third-party integrations are available on the Agent Platform:
    </td>
   </tr>
   <tr>
-   <td>Junglescout
+   <td>Jungle Scout
    </td>
    <td>Jungle Scout assists Amazon sellers with product research, sales estimates, and competitive insights to optimize inventory, pricing, and listing strategies.
    </td>
@@ -1704,7 +1704,7 @@ To add a connection and configure an integration, follow the steps below:
 </div>
 
 1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} **Integrations**.
-2. The next steps depend on whether you are setting up a connection for the first time or want to use an existing connection.
+2. The next steps depend on whether you are setting up a connection for the first time or want to use an existing connection. <br>
     **Case 1**: For a first-time connection, follow these steps:
     
     * (Optional) In the **All Integrations** tab, select the **Category** and **Authorization** from the respective lists to filter the integration options.

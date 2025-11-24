@@ -1,7 +1,7 @@
 # Import Agentic Apps
 
-The Agentic App Import feature enables users to transfer complete application configurations between environments. This capability facilitates the reuse, sharing, and version management of agentic applications.
-The agentic app import feature enables users to transfer complete application configurations between environments. This feature facilitates reuse, sharing, and [version management](deployment/app-deployment.md#version-management){:target="_blank"} of agentic applications.
+The Agentic App Import feature enables users to transfer complete application configurations between environments. This capability facilitates the reuse, sharing, and version management of Agentic applications.
+The Agentic app import feature enables users to transfer complete application configurations between environments. This feature facilitates reuse, sharing, and [version management](deployment/app-deployment.md#version-management){:target="_blank"} of Agentic applications.
 
 ## Prerequisites
 
@@ -12,11 +12,11 @@ The agentic app import feature enables users to transfer complete application co
 
 ## Steps to Import Apps and Agents
 
-To import apps or agents into an agentic app, follow these steps. 
+To import apps or agents into an Agentic app, follow these steps. 
 
-* Go to the **Export/Import** page under the **Deploy** section of the newly created app. 
-* Go to the **Import** tab. 
-* Click the **Import** button and upload the JSON file from which the application is to be imported.  Note that the file size cannot exceed 5MB.
+* Go to the Export/Import page under the Deploy section of the newly created app. 
+* Go to the Import tab. 
+* Click the Import button and upload the JSON file from which the application is to be imported. Note that the file size can't exceed 5MB.
 
 ![alt_text](images/import/import-app.png "image_tooltip")
 
@@ -24,9 +24,9 @@ To import apps or agents into an agentic app, follow these steps.
 
 ![alt_text](images/import/import-file.png "image_tooltip")
 
-* Review the app components before importing. Upon uploading the file, the page shows a summary of all the agentic app components in the JSON file:
+* Review the app components before importing. Upon uploading the file, the page shows a summary of all the Agentic app components in the JSON file:
     * Agentic App Summary - Name and Description of the app. 
-    * Agents - A list of agents, along with their descriptions and the tools associated with each agent. External agents are clearly marked for easy identification. Visual cues on this page will help differentiate between the three types of tools. Note that the workflow tools are not exported with the app exports. They need to be exported individually. Hence, during import, workflow tools must be explicitly linked to the corresponding tools after they are imported. 
+    * Agents - A list of agents, along with their descriptions and the tools associated with each agent. External agents are clearly marked for easy identification. Visual cues on this page help differentiate between the three types of tools. Note that the workflow tools aren't exported with the app exports. They need to be exported individually. Hence, during import, workflow tools must be explicitly linked to the corresponding tools after they're imported. 
     * Tools - a list of tools not associated with any of the agents is listed separately under Tools. 
     * Knowledge tools associated with an app.
     * MCP servers: Servers configured in the app. 
@@ -52,9 +52,9 @@ To import apps or agents into an agentic app, follow these steps.
 ### Key Considerations for Import
 
 * The target application must already exist. 
-* Any existing app configurations will be **overwritten during the import process**.
-* The system attempts to import components in the following order: **tools**, **agents**, and then **application configuration**.
-* The config file cannot exceed 5MB in size.
+* Any existing app configurations will be overwritten during the import process.
+* The system attempts to import components in the following order: tools, agents, and then application configuration.
+* The config file can't exceed 5MB in size.
 * If valid, the platform creates the application with all components.
 * If invalid, the platform displays appropriate error messages, and the import can be completed only after the errors are resolved.
-* Partial imports are not supported.
+* Partial imports aren't supported.

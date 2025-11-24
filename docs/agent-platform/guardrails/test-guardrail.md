@@ -1,6 +1,6 @@
 # Evaluate Guardrails for Efficiency
 
-After adding and configuring the necessary scanners, you can verify that they adhere to the specified standards. Test the effectiveness of an individual scanner or a group of scanners and then tweak the scanner's settings if required.
+After enabling and configuring the necessary scanners, you can verify that they adhere to the specified standards. Test the effectiveness of an individual scanner or a group of scanners and then tweak the scanner's settings if required.
 
 Steps to test the Guardrails or Scanners:
 

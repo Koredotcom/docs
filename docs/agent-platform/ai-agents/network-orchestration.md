@@ -68,7 +68,7 @@ Implementing the Network Pattern in an agentic app requires:
 2. Configuring Delegation & Fallback Rules for the Agents.
 
 
-### 1. Selecting the Orchestration Pattern for the Agentic App	
+### 1. Selecting the Orchestration Pattern for the Agentic App
 
 1. Navigate to the App Profile page by clicking the edit icon in the App Overview.  
 ![App Overview](images/network/overview-page.png "App Overview")
