@@ -61,6 +61,7 @@ Agent Platform introduces a comprehensive PII Protection Framework designed to s
 
 System input and output scanners are now automatically deployed and available by default. Users can review, test, and enable them without manual deployment, ensuring safer, more compliant AI responses. 
 
+[Learn more :octicons-arrow-right-24:](../guardrails/overview.md)
 
 <hr>
 
