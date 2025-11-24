@@ -12,14 +12,14 @@ The dashboard organizes analytics into two primary categories:
 ## Key Features
 
 * Real-time data updates.
-* Customizable time frame and environment filters.
+* Customizable timeframe and environment filters.
 * Trend analysis with historical comparisons.
 * Interactive visualizations with detailed drill-down capabilities.
 * The default view displays the current draft environment.
 
 ## Navigation and Controls
 
-Customize the analytics view by using the dashboard's filtering options and interactive controls:
+Customize the analytics view by using the dashboard's filtering options and interactive controls.
 
 * **Time Frame Selection**: Choose from pre-defined ranges or set custom dates to analyze specific periods.
 * **Environment Filter**: Select specific environments for targeted analysis (defaults to current draft).

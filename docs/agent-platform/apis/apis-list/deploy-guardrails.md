@@ -2,7 +2,7 @@
 
 # Deploy Guardrails API
 
-This API deploys predefined **guardrails** to enhance security, compliance, and content moderation in AI interactions. These guardrails act as filters or constraints to ensure safe and appropriate AI responses.
+This API deploys predefined guardrails to enhance security, compliance, and content moderation in AI interactions. These guardrails act as filters or constraints to ensure safe and appropriate AI responses.
 
 Users can deploy a specific guardrail from a predefined set of options, including:
 
