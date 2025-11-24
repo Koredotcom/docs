@@ -73,7 +73,7 @@ Steps to add coaching assignments:
         You can select more than one bookmark based on the evaluation criteria.    
  
         For example, one set of interactions for the support queue and another set of interactions for the best responses to get populated in the selected interactions box.   
-        <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-selected-iteractions.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
+        <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-selected-interactions.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
 7. Click the **View Interactions** button, and the supervisors can get more insights from the AI-Audit screen related to coaching of the agents, implement training programs, and make informed decisions.  
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-added-interactions-audit-view.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">

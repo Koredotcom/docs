@@ -207,8 +207,7 @@ Enables you to track how the customer's or agent’s sentiment changes throughou
 
 * **Closing**: Select the Closing sentiment trend from the dropdown to define the final emotional tone of a conversation. 
 
-Example: You can choose sentiment values such as Positive, Negative, or Neutral for both the starting and closing points to map the emotional journey across the interaction.  
-<img src="../conversation-mining/images/experience-sentiment-trend.png" alt="Sentiment Trend" title="Sentiment Trend" style="border: 1px solid gray; zoom:80%;">
+**Example:** You can choose sentiment values such as Positive, Negative, or Neutral for both the starting and closing points to map the emotional journey across the interaction.  
 
 #### Emotions
 
