@@ -59,5 +59,5 @@ Note: [Wait Time Experience](../settings/app-configurations.md#waiting-experienc
 **For TTS:**
 
 1. Disable real-time voice in AI for Service. 
-2. Additionally, for streaming the response, enable the TTS Streaming option. ![alt_text](images/voice/tts-streaming.png.png "image_tooltip")
+2. Additionally, for streaming the response, enable the TTS Streaming option. ![alt_text](images/voice/tts-streaming.png "image_tooltip")
 3. No special configuration is required on the Agent Platform side.
