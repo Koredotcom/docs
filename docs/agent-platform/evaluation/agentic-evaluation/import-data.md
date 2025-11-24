@@ -26,8 +26,7 @@ Steps to import production data:
 
     <img src="../../agentic-evaluation/images/import_prod_data.png" alt="Import sessions" title="Import sessions" style="border: 1px solid gray; zoom:60%;">
 
-After the import is complete, the session data appears in the Sessions and Traces tabs on the Evaluation page.
-
+After the import is complete, the session data appears in the Sessions and Traces tabs on the Evaluation page. See [ Understanding the Imported Data](../agentic-evaluation/import-data.md#understanding-the-imported-data).
 
 ## Import Simulated Data
 
