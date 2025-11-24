@@ -469,7 +469,7 @@ The screenshot shows a simple flow sequence: `Entry → Set logging behavior →
 5. Click the **Security Credentials** tab for that user.
 6. Either create a new access key or use existing credentials if available.  
 
-<img src="../images/aws-access-key1.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/aws-access-key.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
 <img src="../images/aws-access-key2.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
 <img src="../images/aws-access-key3.png" alt="Amazon Connect Chat" title="Amazon Connect Chat" style="border: 1px solid gray; zoom:70%;">
 
