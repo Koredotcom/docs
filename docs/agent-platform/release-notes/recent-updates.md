@@ -14,13 +14,19 @@ This release enables you to expedite your AI agent deployments by running evals 
 
 Environment Variables with namespace support enable secure, reusable, and environment-specific configuration management across the application. Developers can centrally define and manage variables and access them seamlessly in Code Tools. These variables are automatically resolved at runtime, eliminating the need to hardcode sensitive information such as API keys, endpoints, and tokens. This enhancement simplifies multi-environment deployments and ensures consistent, dynamic configuration across all environments.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/variables.md)
+
 **Pre-Processor for Agent Execution**
 
 Agent Platform introduces a new Pre-Processor capability that allows developers to transform and validate agent context before each execution. This enhancement enables custom logic to run before each agent invocation, allowing it to process incoming data, enrich context, and adjust agent inputs as required. The Pre-Processor supports user-defined scripts in JavaScript and Python.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agent-management.md)
+
 **API Key Permissions and Access Control**
 
 Agent Platform now supports granular permission controls for API keys, allowing precise definition of each key's capabilities. Users can create app-level keys scoped to specific permissions to create, manage, or delete sessions, upload or delete files, and execute agent runs. Existing API keys maintain full backward compatibility.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/api-keys.md)
 
 <font size="4">AI Engineering Tools</font>
 
