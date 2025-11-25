@@ -63,7 +63,8 @@ plugins:
         'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
         'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
         'agentai/integration/AgentAI-webSDK/internal-transfer-process.md': 'agentai/integration/websdk/internal-transfer-process.md'
-
+        'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md': 'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md'
+        
 extra:
   version:
     provider: mike
@@ -546,7 +547,7 @@ nav:
             - By Speech: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-speech.md 
             - By Value: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-value.md
             - By AI Agent: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md
-            - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
+            - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md
             - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md
             - By Hold: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-hold.md 
             - By Transfer: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-transfer.md             
@@ -565,7 +566,7 @@ nav:
         - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
         - Quality AI General Settings: quality-ai/configure/quality-ai-general-settings.md
         - Language Settings: quality-ai/configure/language-settings.md
-      - Analytics: quality-ai/analytics/scheduled-reporting-for-quality-ai.md        
+         
   - Agent AI:
     - About Agent AI: agentai/about-agent-ai.md
     - Set up Agent AI:
@@ -819,6 +820,10 @@ nav:
         - Introduction to Reports: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
       - Wallboards: analytics/contact-center/wallboards.md 
+    - Quality AI:  
+      - Reports:
+        - Scheduled Reports: analytics/quality-ai/reports/scheduled-reports.md
+        - Reports List: analytics/quality-ai/reports/qm-reports-list.md      
   - Administration:
     - Accounts or Workspaces: manage-assistant/plan-and-usage/accounts-or-workspace-overview.md
     - Users:
