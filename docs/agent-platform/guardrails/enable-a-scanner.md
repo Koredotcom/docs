@@ -7,23 +7,19 @@ Input and output scanners help evaluate prompts and responses within your applic
 
 !!! note
 
-    All system scanners are pre-deployed and available by default. You simply enable the scanners you want to use.
+    All system scanners are pre-deployed and available by default. To use them, you must enable the required scanners in your agentic app or workflow tool.
 
 
-The steps below describe how to enable an input scanner. The steps for enabling an output scanner are similar.
+Steps to enable scanners:
 
-Steps to enable an input scanner:
+1. Log in to your account and open the Guardrails settings in your Agentic app or Tool:
+    * For Agentic apps: Go to **Agentic apps**, select your app, then go to **Settings > PII & Guardrails**, and select the **Guardrails** tab.
+    * For Tools: Go to **Tools**, select the tool you want to configure, and then select **Guardrails**.
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
-2. In the **Tools** section, select the tool where you want to enable scanners. 
-
-3. On the Tool flow page, click **Guardrails** in the left navigation pane.
-
-4. In the Input Scanners section, review the list of pre-deployed scanners and turn on the toggle to each scanner you want to apply.
+2. On the Guardrails page, review the Input scanners and Output scanners tabs.  
+Turn on the toggle next to each pre-deployed scanner you want to apply.
 <img src="../images/enable_guardrails.png" alt="Enable Guardrail" title="Enable Guardrail" style="border: 1px solid gray; zoom:80%;">
 
-5. Click the added scanner to configure its settings, which vary depending on the scanner type.
-For example, **Toxicity** includes options such as *Risk Threshold* and *Detection Sensitivity*. 
+3. To configure scanner settings, click the scanner you enabled, adjust the available options, and then click Save.  
+The available options vary by scanner type. For example, the **Toxicity** scanner includes options such as Risk Threshold and Detection Sensitivity, while the **Regex** scanner includes options such as Scanner mode (Block or Allow), pattern entry fields for defining regex rules, and a Risk threshold slider.
 <img src="../images/toxicity-config.png" alt="Configure Settings" title="Configure Settings" style="border: 1px solid gray; zoom:80%;">
