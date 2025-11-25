@@ -112,8 +112,8 @@ User Criteria in ServiceNow is a method to group users based on specific conditi
 
 By default, SearchAI grants access to the following:
 
-* **Owners** of the Knowledgebase - This list of owners will be added directly in the racl field in the indexed content.
-* **Managers** of the Knowledgebase - This list of managers will be added directly in the racl field of the indexed content.
+* **Owners** of the Knowledge base - This list of owners will be added directly in the racl field in the indexed content.
+* **Managers** of the Knowledge base - This list of managers will be added directly in the racl field of the indexed content.
 * **Individual users** listed under each **User Criteria** with Can Read and Can Contribute permissions.  
 
 ![Individual Users](images/servicenow/racl/individual-users.png "Individual Users")
