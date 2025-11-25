@@ -87,7 +87,7 @@ Steps to create a new report,
 When generating a new report, you can choose from three preconfigured report types:
 
 1. Select **Agent Performance Report** (or any other report type).  
-<img src="../images/create-new-report-category.png" alt="Reports" title="Reports" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/-category.png" alt="Reports" title="Reports" style="border: 1px solid gray; zoom:60%;">
 
 1. Click **Next** to proceed.
 
