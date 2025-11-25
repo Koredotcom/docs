@@ -4,17 +4,17 @@ The Human Node introduces a human-in-the-loop capability within automation workf
 
 ## Key Capabilities
 
-* **Customizable Input Requests** – Send approval requests with fields tailored to collect the exact information or decision required from reviewers.
-* **Timeout Handling** – Define how the workflow behaves if no response is received within the specified time (for example, *Terminate* or *Skip and Continue*).
-* **Error Handling** – Configure what happens if the request fails to send or an unexpected error occurs during execution.
-* **Inbox Integration** – All Human-in-the-Loop (HITL) approval requests are routed automatically to the reviewers’ Inbox (Personal or Group tab) for action and tracking.
+* Customizable Input Requests – Send approval requests with fields tailored to collect the exact information or decision required from reviewers.
+* Timeout Handling – Define how the workflow behaves if no response is received within the specified time (for example, *Terminate* or *Skip and Continue*).
+* Error Handling – Configure what happens if the request fails to send or an unexpected error occurs during execution.
+* Inbox Integration – All Human-in-the-Loop (HITL) approval requests are routed automatically to the reviewers’ Inbox (Personal or Group tab) for action and tracking. [Learn more](../../inbox.md).
 
 ## Common Use Cases
 
-* **Approval Workflows** – Route requests for manager approval (e.g., expenses, leave, procurement).
-* **Quality Assurance** – Insert a human checkpoint to validate AI-generated or automated outputs before publishing.
-* **Compliance Checks** – Require manual review for sensitive or regulated steps.
-* **Exception Handling** – Escalate unusual or edge cases to a reviewer for decision-making.
+* Approval Workflows – Route requests for manager approval (e.g., expenses, leave, procurement).
+* Quality Assurance – Insert a human checkpoint to validate AI-generated or automated outputs before publishing.
+* Compliance Checks – Require manual review for sensitive or regulated steps.
+* Exception Handling – Escalate unusual or edge cases to a reviewer for decision-making.
 
 ## How it Works
 
@@ -137,7 +137,7 @@ Supports parallel branching.
   </tr>
 </table>
 
-Once configured, the Human node pauses workflow execution at the defined step, sends the approval request to the reviewer’s Inbox, and resumes automatically based on the reviewer’s decision or timeout configuration.
+Once configured, the Human node pauses workflow execution at the defined step, sends the approval request to the reviewer’s Inbox, and resumes automatically based on the reviewer’s decision or timeout configuration. [Learn more](../../inbox.md)
 
 ## **Testing the Flow with Inbox Approvals**
 
@@ -150,6 +150,8 @@ Once you configure a Human node in a workflow, you can test how approval request
 3. When the workflow reaches a Human node, an approval request is automatically generated and sent to the configured reviewers’ Inbox:
     * **Personal tab** – For requests assigned to yourself.
     * **Group tab** – For requests assigned to a set of users or the whole workspace. If the request is sent to a group, users must first assign it to themselves from the **Group** tab before taking action to approve or reject.
+
+[Learn more about Inbox.](../../inbox.md)
 
 **Step 2: Review and Act on the Request**
 

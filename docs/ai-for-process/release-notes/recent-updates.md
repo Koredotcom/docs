@@ -2,6 +2,20 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent AI for Process releases.
 
+## v1.0.2 November 7, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, and bug fixes summarized below.
+
+**New Agentic Node**
+
+AI for Process introduces the Agentic App Node, enabling workflows to invoke and interact with Agentic Apps created on the Agent Platform within the same workspace. This feature promotes the reuse of existing Agentic App capabilities and streamlines collaboration for more efficient task execution.
+
+<hr>
+
+
+
 ## v1.0.1 October 14, 2025
 
 <u> Minor Release </u>
