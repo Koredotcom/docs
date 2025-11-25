@@ -8,7 +8,7 @@ Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Int
 
 ## AI for Process Account Creation Using SSO
 
-You can sign up for AI for Process at [AI for Process](https:///www.example.com)
+You can sign up for AI for Process at [AI for Process](https://process.kore.ai/)
 
 When you sign up for AI for Process using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how it works:
 

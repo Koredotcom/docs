@@ -4,19 +4,6 @@ Enterprises may have automated individual tasks, but operational bottlenecks per
 
 AI for Process addresses these challenges by combining AI reasoning, system integration, and process automation into a unified platform. It enables agentic automation that understands inputs, reasons through decisions, coordinates across systems and teams, and autonomously achieves business outcomes. AI for Process connects business intent, intelligence, and execution, orchestrating entire workflows to achieve desired outcomes.
 
-
-## Use Case Examples
-
-AI for Process is suitable for automating a wide range of business processes, for example:
-
-* Customer service workflows that require intelligent routing and response.
-* Document processing and data extraction tasks.
-* Approval workflows with compliance requirements.
-* Cross-system data synchronization and updates.
-* Event-driven business process automation.
-* Multi-step processes that require coordination between different departments or systems.
-
-
 ## Key Capabilities
 
 AI for Process enables enterprise automation through a suite of integrated capabilities. These capabilities are designed to transform the design, execution, and optimization of business processes. They include ready-to-use components for immediate deployment and extensive customization options.
@@ -40,7 +27,7 @@ Key foundational capabilities:
 * **Observability and Governance**: Auditability, transparency, and compliance assurance.
 
 
-## Unified Architecture for Enterprise Productivity
+## Unified Architecture
 
 AI for Process is designed to provide a unified, flexible framework for implementing AI capabilities within an enterprise. It combines pre-built components, customization options, and integration capabilities to address a wide range of business needs while ensuring security and compliance.
 
@@ -82,4 +69,15 @@ Key benefits:
 * Expand automation coverage.
 * Reduce complexity and ownership cost.
 * Unlock outcomes that no single system can achieve alone.
+
+## Use Case Examples
+
+AI for Process is suitable for automating a wide range of business processes, for example:
+
+* Customer service workflows that require intelligent routing and response.
+* Document processing and data extraction tasks.
+* Approval workflows with compliance requirements.
+* Cross-system data synchronization and updates.
+* Event-driven business process automation.
+* Multi-step processes that require coordination between different departments or systems.
 
