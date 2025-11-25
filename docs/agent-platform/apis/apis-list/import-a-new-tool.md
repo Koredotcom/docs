@@ -168,7 +168,7 @@ curl --location 'https://{host}/api/public/tools/import'
    </td>
    <td>String
    </td>
-   <td>E.g: ds-cxxxxxx5-dxxd-5xxf-9xxd-0xxxxx6c5xx8
+   <td>Example: ds-cxxxxxx5-dxxd-5xxf-9xxd-0xxxxx6c5xx8
    </td>
   </tr>
   <tr>
@@ -178,7 +178,7 @@ curl --location 'https://{host}/api/public/tools/import'
    </td>
    <td>String
    </td>
-   <td>e.g., a-8xxxxxxe-6xxe-5xx1-8xxc-b3xxxxx80xx6
+   <td>Example: a-8xxxxxxe-6xxe-5xx1-8xxc-b3xxxxx80xx6
    </td>
   </tr>
   <tr>
@@ -194,7 +194,7 @@ curl --location 'https://{host}/api/public/tools/import'
   <tr>
    <td><strong>action</strong>
    </td>
-   <td>The action that is performed on the tool/model.
+   <td>The action that's performed on the tool/model.
    </td>
    <td>String
    </td>

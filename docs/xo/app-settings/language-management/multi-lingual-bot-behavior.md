@@ -470,7 +470,8 @@ Portuguese (European)
 
 Here we will list out the NLP features and their support.
 
-!!! Note
+
+!!! note
 
       The Spell Correction feature is not supported in Universal Apps.
 
@@ -992,55 +993,3 @@ Hindi
 </table>
 
 
-
-## Universal App Support
-
-Here we will list out, language-wise, the trigger phrases used in training the Universal app in the supported languages.
-
-
-
-| **English** | **German**   | **Spanish**   | **French**    | **Italian**    | **Chinese Simplified** | **Chinese Traditional** |
-|-------------|--------------|---------------|---------------|----------------|------------------------|-------------------------|
-| Ask         | Fragen       | Pedir         | Demander      | Chiedi         | 问                     | 問                      |
-| Tell        | Sagen        | Contar        | Dire          | Raccontare     | 告诉                   | 告訴                   |
-| Search      | Suche        | Buscar        | Chercher      | Ricerca        | 搜索                   | 搜索                   |
-| Open        | Öffnen       | Abierto       | Ouvert        | Aperto         | 打开                   | 打開                   |
-| Load        | Belastung    | Carga         | Charge        | Caricare       | 加载                   | 加載                   |
-| Begin       | Start        | Empezar       | Commencer     | Inizio         | 开始                   | 開始                   |
-| Launch      | Starten      | Lanzamiento   | Lancement     | Lanciare       | 发射                   | 發射                   |
-| Talk to     | Reden mit    | Hablar con    | Parler à      | Parlare a      | 交谈                   | 交談                   |
-| Run         | Lauf         | Correr        | Courir        | Correre        | 跑                     | 跑                      |
-| Exit        | Ausgang      | Salida        | Sortie        | Uscita         | 出口                   | 出口                   |
-
-
-<br>
-
-
-| **English** | **Indonesian**     | **Korean**   | **Dutch**      | **Japanese** | **Finnish**             | **Russian**   |
-|-------------|--------------------|--------------|----------------|--------------|-------------------------|---------------|
-| Ask         | Meminta            | 물어보기       | Vragen         | 頼みます        | Kysyä                   | Спросить      |
-| Tell        | Menceritakan       | 텔            | Vertellen      | 伝えます         | Kertoa                  | сказать       |
-| Search      | Cari               | 검색           | Zoeken         | 探す           | Hae                     | Поиск         |
-| Open        | Buka               | 열다           | Open           | 開いた          | Avata                   | открыто       |
-| Load        | Beban              | 하중           | Laden          | 負荷           | Ladata                  | нагрузка      |
-| Begin       | Mulai              | 시작           | Beginnen       | ベギン          | Alkaa                   | Начать        |
-| Launch      | Meluncurkan        | 시작하다        | Lancering      | 打ち上げ         | Tuoda markkinoille      | запуск        |
-| Talk to     | Berbicara dengan   | 로 토크         | Praten met     | に話す          | Puhua                   | Говорить с    |
-| Run         | Lari               | 운영           | Rennen         | ラン            | Juosta                  | Запустить     |
-| Exit        | Keluar             | 출구           | Uitgang        | 出口           | Poistuminen             | выход         |
-
-
-<br>
-
-| **English** | **Arabic**   | **Portuguese (Brazilian)** | **Polish**    | **Ukrainian**  | **Swedish** | **Kazakh**   |
-|-------------|--------------|-----------------------------|---------------|----------------|-------------|--------------|
-| Ask         | يطلب         | perguntar                   | Zapytać       | запитати       | Fråga       | сұрау        |
-| Tell        | يخبار        | Contar                      | Powiedzieć    | сказати        | Säga        | Tell         |
-| Search      | بحث          | Procurar                    | Szukaj        | Пошук          | Sök         | іздеу        |
-| Open        | افتح         | Aberto                      | otwarty       | відчинено      | Öppna       | ашық         |
-| Load        | حمل          | Carga                       | Załaduj       | навантаження   | Ladda       | жүк          |
-| Begin       | ابدأ         | Início                      | Zaczynać      | почати         | Börja       | Баста        |
-| Launch      | إطلاق        | Lançamento                  | Uruchomić     | запуск         | Lansera     | ұшыру        |
-| Talk to     | تحدث الي     | Falar com                   | Mówić do      | Розмовляти з   | Prata med   | Сөйлесу      |
-| Run         | يركض         | Corre                       | Biegać        | пробіг         | Springa     | жүгіру       |
-| Exit        | خروج         | saída                       | wyjście       | вихід          | utgång      | шығу         |

@@ -1,6 +1,6 @@
 # Linked Services
 
-The **Linked Services** section lets you enhance the capabilities of Agent AI by integrating it with external services. It includes two subsections-**Search AI** and **Agentic Configurations**. While linking with Search AI enhances Agent AI’s search capability across web and mobile platforms, Agentic configuration allows you to configure, manage, and connect the Agentic Copilot apps to enable autonomous, end-to-end management of conversations.
+The **Linked Services** section lets you enhance the capabilities of Agent AI by integrating it with external services. It includes two subsections—**Search AI** and **Agentic Configurations**. While linking with Search AI enhances Agent AI’s search capability across web and mobile platforms, Agentic configuration allows you to configure, manage, and connect the Agentic Copilot apps to enable autonomous, end-to-end management of conversations.
 
 ## Configure Search AI
 

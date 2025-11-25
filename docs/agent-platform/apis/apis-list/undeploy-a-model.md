@@ -2,7 +2,7 @@
 
 # Undeploy a Model API
 
-This API undeploys a model from the environment. The API response includes the **model ID** and the **model undeployment status**. After receiving the response, use the <code>dockStatusId</code> to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify successful model undeployment.
+This API undeploys a model from the environment. The API response includes the model ID, model undeployment status, and the dockStatusId. After receiving the response, use the <code>dockStatusId</code> to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify successful model undeployment.
 
 
 <table>
