@@ -73,9 +73,9 @@ Google's OpenID Connect implementation provides enterprise-grade authentication 
 
 #### Setting up Google for AI for Work SSO
 
-To set up the AI for Work application in your Google Workspace environment, you need to create a service account and configure domain-wide delegation.
+To set up the application in your Google Workspace environment, you need to create a service account and configure domain-wide delegation.
 
-**Prerequisites**: You must have Google Workspace administrator privileges and have already selected Google as an OpenID Connect provider in the AI for Work Admin Console.
+**Prerequisites**: You must have Google Workspace administrator privileges and have already selected Google as an OpenID Connect provider in the Admin Console.
 
 **Steps to configure Google**:
 
@@ -107,7 +107,7 @@ To set up the AI for Work application in your Google Workspace environment, you 
         * **client_email** → **Client Email** field
         * **private_key** → **Private Key** field
     * Enter your G Suite admin email in the **Admin Email** field.
-6. **Save** the configuration in AI for Work.
+6. **Save** the configuration.
 
 ### Microsoft Azure Configuration
 
@@ -133,12 +133,11 @@ Microsoft Azure Active Directory (now Microsoft Entra ID) provides comprehensive
 
     -   The *Identity Provider information successfully updated* message is displayed at the top of the page.
 
-
 #### Setting up Microsoft Azure for AI for Work SSO
 
-To set up the AI for Work application in your Microsoft Entra ID (formerly Azure AD) environment, you need to register an application and configure authentication settings.
+To set up the application in your Microsoft Entra ID (formerly Azure AD) environment, you need to register an application and configure authentication settings.
 
-**Prerequisites**: You must have Microsoft Entra ID administrator privileges and have already selected Microsoft Azure as an OpenID Connect provider in the AI for Work Admin Console.
+**Prerequisites**: You must have Microsoft Entra ID administrator privileges and have already selected Microsoft Azure as an OpenID Connect provider in the Admin Console.
 
 **Steps to configure Microsoft Azure**:
 

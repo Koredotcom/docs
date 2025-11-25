@@ -1,13 +1,13 @@
 
 # General Purpose
 
-Configure Large Language Models (LLMs) for your AI for Work deployment.
+Configure Large Language Models (LLMs) for your deployment.
 
 AI for Work provides secure and seamless integration with leading large language models (LLMs), enabling you to leverage powerful AI capabilities for your virtual assistants and workflows. Choose from pre-configured models from industry-leading providers or integrate your own custom models to suit your specific business needs.
 
 ## What is LLM Configuration?
 
-LLM Configuration allows you to connect and manage various language models for use across AI for Work features. This includes both pre-built integrations with commercial providers and the flexibility to bring your own models.
+LLM Configuration allows you to connect and manage various language models for use across all features. This includes both pre-built integrations with commercial providers and the flexibility to bring your own models.
 
 **Key Capabilities:**
 
