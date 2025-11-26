@@ -1,11 +1,11 @@
 # Deploy and Manage Guardrails 
 
-To use input and output scanners in Agent Platform, you need to deploy them first. Once deployed, a scanner will be available across all your tools on the platform.
+To use input and output scanners in AI for Process, you need to deploy them first. Once deployed, a scanner will be available across all your workflows on the platform.
 
 Steps to deploy a scanner:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your account.
+   <img src="../types-of-nodes/images/access-workflows.png" alt="access workflow" title="access workflow" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.
 3. Click **Manage Guardrails** on the left menu.
