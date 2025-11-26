@@ -1,27 +1,28 @@
 # Integrate with S3 Bucket
 
-The S3 Storage Integration functionality broadens Agent Platform's capabilities by enabling connectivity with your AWS S3 account. It empowers you to import files from S3 and leverage them in developing high-quality AI applications for enterprises.
+The S3 Storage Integration functionality broadens AI for Process' capabilities by enabling connectivity with your AWS S3 account. It empowers you to import files from S3 and leverage them in developing high-quality AI applications for enterprises.
 
 **To integrate with your S3 account, follow these steps**:
 
-1. Click the **Settings** icon on the top navigation bar of the application. The **Integrations** page is displayed.
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-    <img src="../images/navigate-to-settings.png" alt="Navigate to Settings" title="Navigate to Settings" style="border: 1px solid gray; zoom:80%;">
+2. Click **Integrations** on the left menu.
 
-1. Click the **AWS S3 bucket** option from the list of Integrations. The AWS S3 bucket section is expanded.
+3. Click the **AWS S3 bucket** option from the list of Integrations. The AWS S3 bucket section is expanded.
 
     <img src="../images/add-s3-connection.png" alt="Add S3 Connection" title="Add S3 Connection" style="border: 1px solid gray; zoom:80%;">
 
-1. Click **Add connection**. The **AWS S3 bucket** dialog is displayed.
+4. Click **Add connection**. The **AWS S3 bucket** dialog is displayed.
 
     <img src="../images/aws-s3-bucket-connection.png" alt="AWS S3 Bucket Connection" title="AWS S3 Bucket Connection" style="border: 1px solid gray; zoom:60%;">
 
-1. Enter the following details in the dialog to create a connection:
+5. Enter the following details in the dialog to create a connection:
     * Provide a **Connection name**.
     * Enter an **Access key** which is a unique identifier associated with your AWS account.
     * Enter a **Secret key** which is a confidential key paired with the Access Key ID.
     * Enter a **Bucket name** which is configured in the S3 console.
-1. Click **Confirm** to create a connection.
+6. Click **Confirm** to create a connection.
 
 
 ## Testing your connection to S3
@@ -43,11 +44,11 @@ You can test your connection after you provide the details to verify the accurac
         If the connection fails a red icon is displayed corresponding to the name of the connection on the Connections list.
 
 
-## **How to use files from the connected S3 Buckets in the Tool Flow Builder**
+## **How to use files from the connected S3 Buckets in the Workflow Builder**
 
 Once a connection is created and the integration of S3 Bucket is successful you can use the files in the Flow builder canvas.
 
-**To use the files in the tools flow builder, follow these steps**:
+**To use the files in the Workflow builder, follow these steps**:
 
 1. Create an **Input variable** with type **Remote File**. 
 
