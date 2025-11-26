@@ -9,19 +9,19 @@ AI for Process addresses these challenges by combining AI reasoning, system inte
 
 AI for Process enables enterprise automation through integrated capabilities that transform how businesses design, execute, and optimize their processes.
 
-### Process Automation
+#### Process Automation
 
 The platform provides visual, no-code workflow orchestration for creating agent-powered workflows with adaptive process sequencing across teams and systems. Workflows can be triggered automatically from email, system events, schedules, and API calls without manual handoffs. Strategic human-in-the-loop checkpoints enable approval and exception handling, with embedded user-input forms for validation and decision-making at critical points.
 
-### Intelligence and Data
+#### Intelligence and Data
 
 Document intelligence capabilities automate the processing of unstructured inputs, including invoices, forms, claims, and documents. Deep integration with Agent Platform and Agentic Apps enables multi-agent reasoning for complex problem-solving. Memory and context management enable agents to retain information across interactions, enabling personalized, continuous process handling.
 
-### Integration and Infrastructure
+#### Integration and Infrastructure
 
 The platform connects to over 250 pre-built integrations across ERP, CRM, and ITSM systems without replacing existing infrastructure. Multi-model support enables the deployment of commercial models from OpenAI, Google, and Anthropic, as well as fine-tuned and open-source options via HuggingFace. Cloud-agnostic architecture operates seamlessly across AWS, Azure, Google Cloud, on-premise, or hybrid environments.
 
-### Observability and Governance
+#### Observability and Governance
 
 Real-time analytics monitor agent performance, execution metrics, token usage, and resource consumption across models. Complete audit logging maintains time-stamped records of all system activities for security and compliance traceability. Security controls include role-based access control, automated PII masking, data anonymization, and compliance checkpoints throughout workflows.
 
