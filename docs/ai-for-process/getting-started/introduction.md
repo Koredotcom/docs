@@ -26,13 +26,13 @@ The platform connects to over 250 pre-built integrations across ERP, CRM, and IT
 Real-time analytics monitor agent performance, execution metrics, token usage, and resource consumption across models. Complete audit logging maintains time-stamped records of all system activities for security and compliance traceability. Security controls include role-based access control, automated PII masking, data anonymization, and compliance checkpoints throughout workflows.
 
 
-## Unified Architecture
+## Unified Architecture for Enterprise Productivity
 
 AI for Process is designed to provide a unified, flexible framework for implementing AI capabilities within an enterprise. It combines pre-built components, customization options, and integration capabilities to address a wide range of business needs while ensuring security and compliance.
 
 **Key Layers and Components of the Platform**:
 
-<img src="../images/ai-for-process-architecture.svg" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/ai-for-process-architecture.svg" alt="AI for Work Architecture" title="AI for Work Architecture" style="zoom:100%;">
 
 1. **Access Points**: Entry interfaces for users and systems
 It provides entry interfaces for users, systems, and external applications to interact with the platform through various channels, including web-based interfaces, mobile applications, APIs, and direct integrations. 
