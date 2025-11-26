@@ -26,7 +26,7 @@ The platform connects to over 250 pre-built integrations across ERP, CRM, and IT
 Real-time analytics monitor agent performance, execution metrics, token usage, and resource consumption across models. Complete audit logging maintains time-stamped records of all system activities for security and compliance traceability. Security controls include role-based access control, automated PII masking, data anonymization, and compliance checkpoints throughout workflows.
 
 
-## Unified Architecture for Enterprise Productivity
+## Unified Architecture for Enterprise Process Automation
 
 AI for Process is designed to provide a unified, flexible framework for implementing AI capabilities within an enterprise. It combines pre-built components, customization options, and integration capabilities to address a wide range of business needs while ensuring security and compliance.
 
