@@ -1,17 +1,13 @@
 # Enable Hugging Face
 
-Agent Platform seamlessly integrates with the Hugging Face platform, allowing you to incorporate cutting-edge text generation and text-to-text generation models. Any publicly available Hugging Face model can be swiftly deployed via Agent Platform with minimal effort. To utilize private or exclusive Hugging Face models, you can effortlessly establish a connection by supplying your Hugging Face access tokens. This facilitates Agent Platform in unleashing the complete capabilities of your Hugging Face account, regardless of whether you possess public or private assets.
+AI for Process seamlessly integrates with the Hugging Face platform, allowing you to incorporate cutting-edge text generation and text-to-text generation models. Any publicly available Hugging Face model can be swiftly deployed via AI for Process with minimal effort. To utilize private or exclusive Hugging Face models, you can effortlessly establish a connection by supplying your Hugging Face access tokens. This facilitates AI for Process in unleashing the complete capabilities of your Hugging Face account, regardless of whether you possess public or private assets.
 
 **To integrate with your hugging face account, follow these steps**:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
 2. Click **Integrations** on the left menu.
-
-    <img src="../images/navigate-to-settings.png" alt="Navigate to Settings" title="Navigate to Settings" style="border: 1px solid gray; zoom:80%;">
-
 3. Click the **Hugging Face** option from the list of Integrations. The Hugging Face section is expanded.
 
     <img src="../images/add-hugging-face-connection.png" alt="Add Hugging Face Connection" title="Add Hugging Face Connection" style="border: 1px solid gray; zoom:80%;">
@@ -23,10 +19,10 @@ Agent Platform seamlessly integrates with the Hugging Face platform, allowing yo
 5. Enter the following details in the dialog to create a connection:
     * Provide a **Connection name**.
     * Enter an **Access token** which is a unique identifier associated with your Hugging Face account.
-1. Click **Confirm** to create a connection.
 
+6. Click **Confirm** to create a connection.
 
-## **Testing your connection to Hugging Face**
+## Testing your connection to Hugging Face
 
 You can test your connection after you provide the details to verify the accuracy of the details.
 

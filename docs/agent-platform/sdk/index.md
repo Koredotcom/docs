@@ -1,16 +1,23 @@
-# AgenticAI Core SDK
+# AgenticAI Core SDK documentation
 
-Welcome to the **AgenticAI Core SDK** documentation! This SDK enables you to build sophisticated multi-agent AI applications with ease.
+Welcome to the **AgenticAI Core SDK** documentation! This SDK lets you create sophisticated multi-agent AI applications with ease.
 
-## What is AgenticAI Core?
+## What is AgenticAI Core
 
-AgenticAI Core is a Python SDK for building, configuring, and deploying multi-agent AI applications. It provides:
+AgenticAI Core is a Python SDK to create, configure, and deploy multi-agent AI applications. It provides:
 
 - 🤖 **Multi-Agent Orchestration** - Coordinate multiple AI agents working together
 - 🔧 **Tool Integration** - Connect agents to external systems and APIs
 - 💾 **Memory Management** - Persistent storage across conversations
 - 🎯 **Custom Orchestration** - Implement your own agent coordination logic
 - 🔌 **MCP Support** - Model Context Protocol for seamless integration
+
+## Use Cases of Agents
+
+- **Customer Service** - Build intelligent support agents that handle complex queries
+- **Banking & Finance** - Create specialized agents for account management and transactions
+- **Workflow Automation** - Orchestrate multiple agents to handle multi-step processes
+- **Knowledge Management** - Agents with access to knowledge bases and RAG systems
 
 ## Key Features
 
@@ -106,21 +113,13 @@ graph TB
     E --> G[(Storage)]
 ```
 
-## Use Cases
+## Community and Support
 
-- **Customer Service** - Build intelligent support agents that handle complex queries
-- **Banking & Finance** - Create specialized agents for account management and transactions
-- **Workflow Automation** - Orchestrate multiple agents to handle multi-step processes
-- **Knowledge Management** - Agents with access to knowledge bases and RAG systems
-
-## Community & Support
-
-- 📖 [Full Documentation](getting-started/installation.md)
+- 📖 [Documentation](getting-started/installation.md)
 - 💬 [GitHub Discussions](https://github.com/agenticai/agentic-core/discussions)
 - 🐛 [Issue Tracker](https://github.com/agenticai/agentic-core/issues)
 - 📧 [Email Support](mailto:support@agenticai.com)
 
 ## License
 
-AgenticAI Core SDK is licensed under the MIT License. See [LICENSE](https://github.com/agenticai/agentic-core/blob/main/LICENSE) for details.
-
+AgenticAI Core SDK is provided under the MIT License. See [LICENSE](https://github.com/agenticai/agentic-core/blob/main/LICENSE) for details.
