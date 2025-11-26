@@ -294,9 +294,8 @@ if __name__ == "__main__":
 - [Memory Stores](memory-stores.md) - Memory management guide
 - [Custom Orchestration](orchestration.md) - Advanced orchestration
 
-## Need Help?
+## Need Help
 
 - 📖 [API Reference](../api/index.md)
 - 💬 [GitHub Discussions]
-- 📧 Contact: lalit.kumar@kore.com
-
+- 📧 [Support](../index.md#community-and-support)
