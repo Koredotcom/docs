@@ -187,7 +187,7 @@ If you are using a custom prompt for this feature, ensure that the output from t
 ```
 
 * query_type: Must be one of the defined enum values such as TYPE_1 or TYPE_2. Type_1 refers to Search Results and Type_2 refers to answers. 
-* confidence: String value indicating certainty (e.g., High, Medium, Low).
+* confidence: String value indicating certainty (for example, High, Medium, Low).
 * reasoning: A brief explanation for the chosen type.
 
 
@@ -242,5 +242,5 @@ Rephrased Query: What are the interest rates for personal and home loans?
 
 This setting controls how many previous messages (from both the user and the App ) are used to provide context for rephrasing. The default value is 5, and the maximum is 25. If the session history contains fewer messages than the configured number, only the available messages will be sent, even if the set value is higher. 
 
-You can access the Conversation History Length from **Repharse User Query > Advanced Settings**.
+You can access the Conversation History Length from **Rephrase User Query > Advanced Settings**.
 
