@@ -1,10 +1,10 @@
 # Secure Account Access Using Authorization Profiles
 
-The Agent Platform offers a secure and streamlined way to manage authorization when integrating with external web services. By configuring **Authorization (Auth) Profiles**, users can enforce access control policies while ensuring data privacy and regulatory compliance.
+AI for Process offers a secure and streamlined way to manage authorization when integrating with external web services. By configuring **Authorization (Auth) Profiles**, users can enforce access control policies while ensuring data privacy and regulatory compliance.
 
-Whether connecting to external or commercial models via custom APIs or integrating tools through the AI or API node, the platform provides a structured framework to handle user authorization. This simplifies security configurations, strengthens access control, and enables smooth identity verification across various services.
+Whether connecting to external or commercial models via custom APIs or integrating workflows through the AI or API node, the platform provides a structured framework to handle user authorization. This simplifies security configurations, strengthens access control, and enables smooth identity verification across various services.
 
-Key capabilities of managing Auth Profiles on the Agent Platform include:
+Key capabilities of managing Auth Profiles on AI for Process include:
 
 
 
@@ -21,13 +21,10 @@ Verify that identity and authorization tokens are correctly passed to external s
 
 To access the feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. Click **Security & Control** > **Authorization profile** on the left navigation menu.
-<img src="../images/auth-profile-access.png" alt="auth profile access" title="auth profile access" style="border: 1px solid gray; zoom:75%;">
-
+2. Click **Security & Control** > **Authorization profile** on the left navigation menu.
 
 ## Supported Auth Models
 
@@ -102,8 +99,6 @@ If the mandatory fields are left blank, validation error messages appear, as sho
 <img src="../images/save-new-auth.png" alt="save new auth" title="save new auth" style="border: 1px solid gray; zoom:75%;"></ol>
 
 A success message is displayed, and the new auth profile is added to the **Authorization Profile** page.
-
-<img src="../images/profile-created-message.png" alt="success message" title="success message" style="border: 1px solid gray; zoom:75%;">
 
 ## Define Authorization Fields
 
@@ -205,7 +200,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
     A unique URL assigned to a specific tenant (organization, customer, or user group) within a multi-tenant system. It is used to differentiate and isolate data, authorization, and access for each tenant. You must select one of the following options based on your auth profile:
 <ul>
 
-<li>No, this tool and all of its tasks do not have tenancy URLs.</li>
+<li>No, this workflow and all of its tasks do not have tenancy URLs.</li>
 
 <li>Yes, some tasks will have tenancy URLs and the user will need to provide that to successfully authenticate.</li>
 </ul>
@@ -338,7 +333,7 @@ The new field is added to the additional fields list. You can edit or delete thi
 
 ## Add Authorization Field
 
-Authorization fields are data fields used in API requests to verify the identity of a user, system, or application and determine their permissions to access resources. These fields ensure authorization and access control in APIs, particularly for token-based authorization in the Agent Platform.
+Authorization fields are data fields used in API requests to verify the identity of a user, system, or application and determine their permissions to access resources. These fields ensure authorization and access control in APIs, particularly for token-based authorization in AI for Process.
 
 
 To add auth fields, follow the steps below:
@@ -361,7 +356,7 @@ To add auth fields, follow the steps below:
   <tr>
    <td>Field Type
    </td>
-   <td>Defines how authorization data is sent and verified in an API request within the Agent Platform for token-based authorization. The supported types include:
+   <td>Defines how authorization data is sent and verified in an API request within AI for Process for token-based authorization. The supported types include:
 <ul>
 
 <li><strong>Header</strong>: Used to send authorization credentials, such as API tokens.</li>
@@ -418,7 +413,7 @@ Each authorization you add to your account is displayed in the **Authorization P
 
 The **Test** button is enabled when you provide all the fields in the **New authorization mechanism** window. To validate the connection using the configured mechanism, click **Test**.
 
-A new window appears where the Agent Platform tries to establish a connection with the external service through the configured auth profile.
+A new window appears where AI for Process tries to establish a connection with the external service through the configured auth profile.
 
 A successful connection is shown below:
 
