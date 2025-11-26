@@ -1,3 +1,5 @@
+--8<-- "includes/firewall-rules-back-link.md"
+
 # Europe (EU) Firewall Rules
 
 ## Voice Gateway

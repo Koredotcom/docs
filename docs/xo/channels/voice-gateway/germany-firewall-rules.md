@@ -1,3 +1,7 @@
+--8<-- "includes/firewall-rules-back-link.md"
+
+# Germany (DE) Firewall Rules
+
 ## Voice Gateway
 
 | Component                              | Protocol | Source IP | Source Port † | Allowed Destinations                          | Destination Port |
