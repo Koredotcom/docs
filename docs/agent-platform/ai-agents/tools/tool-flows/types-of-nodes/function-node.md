@@ -1,8 +1,3 @@
----
-tags:
-  - workflow_tool
----
-
 # Function Node - Empower Workflows with Custom Code
 
 The Function node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
