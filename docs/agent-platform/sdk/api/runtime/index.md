@@ -29,12 +29,14 @@ app.start(
 ```
 
 **Parameters:**
+
 - `orchestrator_cls`: Custom orchestrator class for agent coordination
 - `custom_tools`: Dictionary of registered custom tools (typically `ToolsRegistry`)
 - `host`: Server host address (default: "127.0.0.1")
 - `port`: Server port (default: 8080)
 
 **Usage:**
+
 ```bash
 # Start from code
 python main.py
@@ -95,10 +97,12 @@ python run.py start [OPTIONS]
 ```
 
 **Options:**
+
 - `--host` - Server host address (default: `127.0.0.1`)
 - `--port` - Server port (default: `8080`)
 
 **Example:**
+
 ```bash
 # Start on localhost
 python run.py start
@@ -108,6 +112,7 @@ python run.py start --host 0.0.0.0 --port 8080
 ```
 
 **What it does:**
+
 - Imports your app module
 - Calls `start()` function with orchestrator and tools
 - Starts MCP server for local testing
@@ -121,13 +126,16 @@ python run.py --archive <project_name>
 ```
 
 **Arguments:**
+
 - `<project_name>` - Name for the archive (creates `bin/<project_name>/`)
 
 **Output:**
+
 - `bin/<project_name>/application.kar` - Deployable ZIP archive (<1MB target)
 - `bin/<project_name>/application.config.json` - Application configuration
 
 **What it does:**
+
 - Calls `create_app()` from your app module
 - Serializes app configuration to JSON
 - Creates KAR archive with:
@@ -137,6 +145,7 @@ python run.py --archive <project_name>
 - Excludes: `.venv/`, large binaries, test files
 
 **Example:**
+
 ```bash
 python run.py --archive banking-app
 
@@ -157,15 +166,19 @@ python run.py -c <env> deploy -f <kar_file>
 ```
 
 **Required Options:**
+
 - `-c <env>` - Environment configuration (loads `.env/<env>`)
 - `-f, --kar` - Path to KAR archive file
 
 **Environment Requirements:**
+
 Requires in `.env/<env>`:
+
 - `KORE_HOST` - Platform endpoint URL
 - `APP_API_KEY` - API authentication key
 
 **Example:**
+
 ```bash
 # Deploy to development
 python run.py -c dev deploy -f bin/banking-app.kar
@@ -175,6 +188,7 @@ python run.py -c prod deploy -f bin/banking-app.kar
 ```
 
 **Output:**
+
 ```
 Deployment successful!
 App ID: app_abc123xyz
@@ -195,14 +209,17 @@ python run.py -c <env> create-env --app <appId> --env <envName> [OPTIONS]
 ```
 
 **Required Options:**
+
 - `-c <env>` - Environment configuration file
 - `--app` - Application ID (from deploy output)
 - `--env` - Environment name (e.g., `development`, `staging`, `production`)
 
 **Optional:**
+
 - `--desc` - Environment description
 
 **Example:**
+
 ```bash
 # Create development environment
 python run.py -c dev create-env \
@@ -226,16 +243,19 @@ python run.py -c <env> status --app <appId> --env <envName>
 ```
 
 **Required Options:**
+
 - `-c <env>` - Environment configuration
 - `--app` - Application ID
 - `--env` - Environment name
 
 **Example:**
+
 ```bash
 python run.py -c dev status --app app_abc123xyz --env development
 ```
 
 **Output:**
+
 - Environment status (active/inactive)
 - Health metrics
 - Last deployment time
@@ -250,16 +270,19 @@ python run.py -c <env> test --app <appId> --env <envName>
 ```
 
 **Required Options:**
+
 - `-c <env>` - Environment configuration
 - `--app` - Application ID
 - `--env` - Environment name to test
 
 **Example:**
+
 ```bash
 python run.py -c dev test --app app_abc123xyz --env development
 ```
 
 **What it does:**
+
 - Sends test requests to deployed application
 - Validates agent responses
 - Tests tool execution
@@ -425,6 +448,7 @@ TRACING_ENABLED=False
 ```
 
 Load configuration:
+
 ```bash
 python run.py -c dev  # Uses .env/dev
 ```
@@ -511,6 +535,7 @@ python run.py -c prod test --app <new_appId> --env production
 ## Troubleshooting
 
 ### Archive Size Issues
+
 ```bash
 # Check archive contents
 unzip -l bin/myProject/application.kar
@@ -522,6 +547,7 @@ unzip -l bin/myProject/application.kar | grep -E "(venv|.venv|__pycache__|.git)"
 ```
 
 ### Deployment Failures
+
 ```bash
 # Verify environment variables
 python -c "import os; print(f'KORE_HOST: {os.getenv(\"KORE_HOST\")}'); print(f'APP_API_KEY: {os.getenv(\"APP_API_KEY\")}')"
@@ -534,6 +560,7 @@ python run.py -c dev deploy -f bin/myProject.kar
 ```
 
 ### Module Import Errors
+
 ```bash
 # Ensure virtual environment is activated
 source .venv/bin/activate
@@ -551,4 +578,3 @@ cat run.py | grep "app_module"
 - [Quick Start Guide](../../getting-started/quickstart.md) - Complete tutorial
 - [App API Reference](../designtime/app.md) - App model details
 - [Installation Guide](../../getting-started/installation.md) - Setup and configuration
-

@@ -155,6 +155,7 @@ footer (optional)
 ```
 
 **Types:**
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -164,6 +165,7 @@ footer (optional)
 - `chore`: Maintenance tasks
 
 **Examples:**
+
 ```
 feat(agent): add support for streaming responses
 
@@ -285,12 +287,14 @@ We are committed to providing a welcoming and inclusive environment for all cont
 ### Our Standards
 
 **Positive behavior:**
+
 - Using welcoming and inclusive language
 - Being respectful of differing viewpoints
 - Gracefully accepting constructive criticism
 - Focusing on what's best for the community
 
 **Unacceptable behavior:**
+
 - Harassment, discrimination, or offensive comments
 - Trolling, insulting/derogatory comments
 - Public or private harassment
@@ -298,7 +302,7 @@ We are committed to providing a welcoming and inclusive environment for all cont
 
 ### Enforcement
 
-Instances of unacceptable behavior may be reported to Kore Support.
+Instances of unacceptable behavior may be reported to Support.
 
 ## Development Setup Details
 
@@ -321,10 +325,12 @@ agentic-core/
 ### Dependencies
 
 Core dependencies:
+
 - `pydantic>=2.0` - Data validation
 - `typing-extensions` - Type hints support
 
 Development dependencies:
+
 - `pytest` - Testing framework
 - `pytest-cov` - Coverage reporting
 - `black` - Code formatter
@@ -332,6 +338,7 @@ Development dependencies:
 - `mypy` - Type checker
 
 Documentation dependencies:
+
 - `mkdocs` - Documentation generator
 - `mkdocs-material` - Material theme
 - `mkdocstrings[python]` - API docs from docstrings
@@ -352,12 +359,6 @@ pytest -m "not slow"
 pytest -s --pdb
 ```
 
-## License
-
-By contributing to AgenticAI Core SDK, you agree that your contributions will be licensed under the same license as the project (MIT License).
-
 ## Questions?
 
-If you have questions about contributing, please contact Kore Support
-
-Thank you for contributing to AgenticAI Core!
+If you have questions about contributing, contact Support.

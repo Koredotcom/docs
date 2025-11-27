@@ -65,6 +65,7 @@ app = App(**app_config)
 ## Memory Store Scopes
 
 ### USER_SPECIFIC
+
 Data unique to each user (recommended for most use cases):
 
 ```python
@@ -76,6 +77,7 @@ MemoryStore(
 ```
 
 ### APPLICATION_WIDE
+
 Global data shared across all users:
 
 ```python
@@ -87,6 +89,7 @@ MemoryStore(
 ```
 
 ### SESSION_LEVEL
+
 Temporary session data cleared when session ends:
 
 ```python
@@ -100,6 +103,7 @@ MemoryStore(
 ## Retention Policies
 
 ### Session-Based
+
 Data cleared when session ends:
 
 ```python
@@ -110,6 +114,7 @@ RetentionPolicy(
 ```
 
 ### Time-Based
+
 Data retained for specified duration:
 
 ```python
