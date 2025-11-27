@@ -116,10 +116,9 @@ graph TB
 ## Community and Support
 
 - 📖 [Documentation](getting-started/installation.md)
+
+<!--
 - 💬 [GitHub Discussions](https://github.com/agenticai/agentic-core/discussions)
 - 🐛 [Issue Tracker](https://github.com/agenticai/agentic-core/issues)
 - 📧 [Email Support](mailto:support@agenticai.com)
-
-## License
-
-AgenticAI Core SDK is provided under the MIT License. See [LICENSE](https://github.com/agenticai/agentic-core/blob/main/LICENSE) for details.
+-->

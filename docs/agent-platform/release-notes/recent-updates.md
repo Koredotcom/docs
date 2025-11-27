@@ -50,9 +50,7 @@ Key capabilities
 
 [Learn more :octicons-arrow-right-24:](../evaluation/agentic-evaluation/create-simulation.md)
 
-**Streaming Support in Model Hub**
 
-Model Hub now supports streaming via the 'stream:true' parameter for external models, enabling faster token-level responses through Server-Sent Events (SSEs). This allows external models to be used in thought streaming mode for Agentic Apps. Streamed chunks are automatically merged into a single final response for complete tracing visibility. Currently, it’s available only for external models; open-source model streaming support is coming soon.
 
 **Gemini Format Support in External Model Integrations**
 
@@ -62,13 +60,13 @@ Custom external model integrations now support the Gemini request–response for
 
 **New PII Protection Framework**
 
-Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it's never exposed in traces or debug logs and providing end-to-end protection of sensitive data.
+Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it's never exposed in traces or debug logs and providing end-to-end protection of sensitive data. Developers can selectively unmask and use original values in tools when needed.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/guardrails.md)
 
 **Guardrails Now Available by Default for Built-in AI Safety**
 
-System input and output scanners are now automatically deployed and available by default. Users can review, test, and enable them without manual deployment, ensuring safer, more compliant AI responses. 
+System input and output scanners are now automatically deployed and available by default without consuming credits. Users can review, test, and enable them without manual deployment, ensuring safer, more compliant AI responses. 
 
 [Learn more :octicons-arrow-right-24:](../guardrails/overview.md)
 
