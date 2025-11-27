@@ -25,7 +25,6 @@ Once the import is complete, the workflow canvas is updated with the latest conf
 
 * **Import the parent workflow and version**: After verifying the dependencies in the new environment, import the parent workflow and any associated versions. Ensure there are no conflicts with existing workflows.
 
-
 ## Import a Workflow 
 
 To initiate a workflow creation journey through the import functionality, follow these steps:
