@@ -19,16 +19,6 @@ You can import into a bot using either individual Definition, Config, Functions 
   | **API Scope**     | - App Builder: Not Applicable <br> - Admin Console: Bot Definition > Bot Import |
 
 
-  <li>App Builder: Not Applicable
-
-  <li>Admin Console: Bot Definition > Bot Import
-  </li>
-  </ul>
-    </td>
-    </tr>
-  </table> 
-
-
 ## Query Parameters
 
 <table>
