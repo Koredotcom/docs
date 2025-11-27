@@ -4,7 +4,7 @@
 
 To import the bot definition file to an existing bot for a current version upgrade or previous version restoration.
 
-You can import into a bot using either individual Definition, Config, Functions and Icon files, or you can directly use the zip file that is creating while performing bot export. In this case you will need to upload the zip file and use the File ID thus generated.
+You can import into a bot using either individual Definition, Config, Functions and Icon files, or you can directly use the zip file that's creating while performing bot export. In this case you need to upload the zip file and use the File ID thus generated.
 
 !!! note
 
@@ -152,7 +152,7 @@ curl -X POST \
    </td>
    <td>Required
    </td>
-   <td>All bot components are imported by default. If needed, you may specify the components to be included in the import.
+   <td>The system imports all bot components by default. If needed, you can specify which components to include in the import.
 <p>
 Usage:
 <p>
@@ -179,16 +179,16 @@ Usage:
    </td>
    <td>Optional
    </td>
-   <td>This will indicate incremental import options for the ML utterances, whether to replace or append. 
+   <td>This indicate incremental import options for the ML utterances, whether to replace or append. 
 <p>
 Usage:
 <p>
 <pre>"options": 
 {
 "utterances": {
-"replace": true
+"replace": true,
 "append":false
- },
+ }
 }</pre>
    </td>
   </tr>
