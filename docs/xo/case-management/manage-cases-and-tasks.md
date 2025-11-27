@@ -165,7 +165,7 @@ The Agent can perform the following actions:
 ### Task Notifications
 
 Agents are notified through the case management system (Console) when any new tasks are assigned.  
-<img src="../images/task-notofications.png" alt="task-notofications" title="task-notofications" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/task-notifications.png" alt="task-notifications" title="task-notifications" style="border: 1px solid gray; zoom:70%;">
 
 ### Access Tasks
 
