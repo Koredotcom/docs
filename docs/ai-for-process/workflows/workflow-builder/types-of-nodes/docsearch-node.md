@@ -63,8 +63,6 @@ After fetching the Search AI application credentials, configuring the source, an
 **Steps to integrate Search AI in AI for Process**
 
 * Log in to your AI for Process account. Click **Settings**.
-   <img src="../aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
-
 * Click **Integrations** on the left navigation menu.
 * Scroll down to **Search AI** and click **Add connection**.
   <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 0px solid gray; zoom:75%;">
@@ -91,7 +89,6 @@ After fetching the Search AI application credentials, configuring the source, an
 ### Step 3(A): Open Workflow Builder
 
 * Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 * Select your workflow → Click **Go to Flow**.
 

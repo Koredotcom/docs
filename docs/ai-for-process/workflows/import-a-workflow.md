@@ -32,16 +32,14 @@ To initiate a workflow creation journey through the import functionality, follow
 
 1. Log in → In AI for Process Modules top menu → Click **Workflows**.
 
-    <img src="../tool-flows/types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
-
     <img src="../workflow-builder/types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 2. Do one of the following based on your requirements:
 
 <ul><li>If you don't have any existing workflows and want to create one by importing from another environment, click <b>Import a workflow</b>.
-<img src="../tool-flows/types-of-nodes/images/import-a-workflow.png" alt="Import a workflow" title="Import a workflow" style="border: 0px solid gray; zoom:75%;"></li>
+<img src="../workflows/workflow-builder/types-of-nodes/images/import-a-workflow.png" alt="Import a workflow" title="Import a workflow" style="border: 0px solid gray; zoom:75%;"></li>
 <li>If you already have workflows deployed, the following page is displayed. To import a workflow, select the relevant tab on the <b>Workflows</b> dashboard and click <b>Import a workflow</b>.
-<img src="../tool-flows/types-of-nodes/images/workflow-dashboard.png" alt="Workflow dashboard" title="Workflow dashboard" style="border: 0px solid gray; zoom:75%;"></li></ul>
+<img src="../workflows/workflow-builder/types-of-nodes/images/workflow-dashboard.png" alt="Workflow dashboard" title="Workflow dashboard" style="border: 0px solid gray; zoom:75%;"></li></ul>
 
 <ol start="4"><li>In the <b>Import workflow</b> window, providing the following information is mandatory.</li>
 <ul><li><b>Workflow Name</b>: Provide a unique workflow name.</li>
@@ -60,10 +58,11 @@ Providing the following information is optional:
 <li>The values for <b>System Prompt</b>, <b>Prompt</b>, <b>Timeout</b>, and <b>Hyperparameters</b> are imported for the AI node.</li></ul></p></div>
 
 <ol start="5"><li>Click <b>Import</b>.</li>
-<img src="../tool-flows/types-of-nodes/images/workflow_instructions.png" alt="click import" title="click import" style="border: 0px solid gray; zoom:75%;"></ol>
+<img src="../workflows/workflow-builder/types-of-nodes/images/workflow_instructions.png" alt="click import" title="click import" style="border: 0px solid gray; zoom:75%;">
+</ol>
 
 Once the import is complete, the system will redirect you to the **Workflow** page, where you can access the new workflow's canvas by clicking **Go to flow**.
-<img src="../tool-flows/types-of-nodes/images/go_to_flow.png" alt="tool flow page" title="tool flow page" style="border: 0px solid gray; zoom:75%;">
+<img src="../workflows/workflow-builder/types-of-nodes/images/go-to-flow.png" alt="tool flow page" title="tool flow page" style="border: 0px solid gray; zoom:75%;">
 
 The imported workflow is listed under **All Workflows** and **My Workflows** on the **Workflow** dashboard.
 
@@ -99,15 +98,15 @@ When you import an workflow as a version, you must upload all the following file
 To import a workflow as a version, follow the steps below:
 
 1. Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../tool-flows/types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+
 2. Click the **Workflows** tab on the top navigation bar, and select the workflow you want to import. 
 3. Click **Configurations** on the left menu.
 4. Scroll down to the **Import a workflow** section and click **Import**.
-    <img src="../tool-flows/types-of-nodes/images/import-a-workflow-canvas.png" alt="import a workflow" title="import a workflow" style="border: 0px solid gray; zoom:75%;">
+    <img src="../workflows/workflow-builder/types-of-nodes/images/import-a-workflow-canvas.png" alt="import a workflow" title="import a workflow" style="border: 0px solid gray; zoom:75%;">
 
 5. (Optional) In the following dialog, select the **Back up your current workflow** option to preserve the data of the version being replaced.
 
-    <img src="../tool-flows/types-of-nodes/images/backup-workflow.png" alt="import confirmation" title="import confirmation" style="border: 0px solid gray; zoom:75%;">
+    <img src="../workflows/workflow-builder/types-of-nodes/images/backup-workflow.png" alt="import confirmation" title="import confirmation" style="border: 0px solid gray; zoom:75%;">
 
 **NOTE**
 
