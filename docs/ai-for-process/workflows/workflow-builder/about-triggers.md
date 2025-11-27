@@ -43,5 +43,5 @@ For detailed configuration steps, see [Start Node – Automate Workflow Initiati
 
 ## Related Topics
 
-* [Start Node – Automate Workflow Initiation](https://aiforprocess-kore.github.io/docs/ai-for-process/workflows/workflow-builder/types-of-nodes/start-node/)
-* [Managing Nodes in a Workflow](https://aiforprocess-kore.github.io/docs/ai-for-process/workflows/workflow-builder/manage-flow-nodes/)
+* [Start Node – Automate Workflow Initiation](../workflow-builder/types-of-nodes/start-node.md)
+* [Managing Nodes in a Workflow](../workflow-builder/manage-flow-nodes.md)
