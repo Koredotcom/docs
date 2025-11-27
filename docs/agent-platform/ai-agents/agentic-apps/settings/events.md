@@ -13,7 +13,7 @@ Currently, Agent Platform supports the following three system events. By default
 
 ## Welcome Event
 
-By default, the Welcome Event is triggered automatically when a new session begins with the application. It is used to deliver personalized greetings and establish the initial context, helping users understand the app's capabilities. This event is triggered only once per session, at the start of the interaction. 
+By default, the Welcome Event is triggered automatically when a new session begins with the application. It's used to deliver personalized greetings and establish the initial context, helping users understand the app's capabilities. This event is triggered only once per session, at the start of the interaction. 
 
 By default, the event is in the Disabled state.
 
@@ -48,7 +48,7 @@ These fields are useful for passing data, such as user IDs, user choices, etc, t
 
 ## End of Conversation Event
 
-By default, this event is triggered when a session ends. It can be used to deliver personalized messages or concluding comments at the end of the interaction.  Use the description field to update the conditions on which the event is triggered 
+By default, this event is triggered when a session ends. It can be used to deliver personalized messages or concluding comments at the end of the interaction. Use the description field to update the conditions on which the event is triggered 
     
 This event is Disabled by default. 
     

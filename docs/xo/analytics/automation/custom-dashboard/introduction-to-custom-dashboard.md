@@ -29,7 +29,7 @@ Custom Dashboards are available along with the other out-of-the-box dashboards i
 
 You can add one or more Dashboards by providing basic details of the Dashboard.
 
-* To add a new dashboard, click on the kabab icon on the top right and select the **New Dashboard** option. Enter the name of the dashboard. You can edit the name of the dashboard anytime.
+* To add a new dashboard, click more icon (three dots) on the top right and select the **New Dashboard** option. Enter the name of the dashboard. You can edit the name of the dashboard anytime.
 * By default, each custom dashboard comes with a Date Filter, allowing you to filter the records for all the widgets in the dashboard. You can choose between 24 hours, 7 Days, and a custom date range. You can also configure and add custom filters, allowing you to filter all the widgets within the dashboard. See Create Custom Filters for Custom Dashboard to know more.
 * Choose a **Color Theme** for your dashboard.
 * You can **Add Widget** to a given Dashboard.

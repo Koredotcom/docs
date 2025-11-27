@@ -4,7 +4,7 @@ Guardrails are safety measures that ensure AI-generated responses from large lan
 
 !!! note
 
-    Guardrails are pre-deployed by the platform. To view the full list, go to **Settings** in the top navigation bar and select **Manage guardrails** from the left menu.
+    Guardrails are pre-deployed by the platform. You can simply enable the scanners you want to use. [Learn more](./enable-a-scanner.md).
 
 
 ## Supported Scanners
@@ -22,6 +22,19 @@ Guardrails are safety measures that ensure AI-generated responses from large lan
 
 
 
+## View Guardrails
 
+You can view the full list of pre-deployed guardrails available across the platform.
+
+To view the list of guardrails:
+
+1. In the top navigation bar, select **Settings**.
+
+2. In the left menu, select **Manage guardrails**. The list of all pre-deployed guardrails is displayed.
+
+
+## Related Links
+
+* [Enable Scanners](./enable-a-scanner.md) - Enable guardrails in your Agentic app or Tool.
 
 

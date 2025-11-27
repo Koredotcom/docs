@@ -1,81 +1,92 @@
-# Introducing All-new AI for Process Platform
+# Introduction to AI for Process
 
-AI for Process is a new platform for building LLM-powered AI agents. It offers tools to create Gen AI agents quickly. These agents can easily fit into your current systems and workflows. 
+Enterprises may have automated individual tasks, but operational bottlenecks persist in complex, cross-functional processes such as onboarding, procure-to-pay, customer claims, and IT operations. These workflows depend on unstructured data, business judgment, and constant exceptions—areas where traditional automation fails.
 
-You don't need to be an AI expert to use AI for Process. It has ready-to-use AI models and simple tools. The platform uses a drag-and-drop interface. This makes it easy to create and deploy custom AI agents. AI for Process offers both open-source and commercial AI models. You can fine-tune these models as needed. The platform lets you chain workflows and set up guardrails without coding. When your AI agent is ready, AI for Process helps you deploy it using an API.
+AI for Process addresses these challenges by combining AI reasoning, system integration, and process automation into a unified platform. It enables agentic automation that understands inputs, reasons through decisions, coordinates across systems and teams, and autonomously achieves business outcomes. AI for Process connects business intent, intelligence, and execution, orchestrating entire workflows to achieve desired outcomes.
 
-<hr>
 
-## Key Components
+## Key Capabilities
 
-Agents, Models, and Prompts are the key components of AI for Process that work together to enable businesses to leverage AI capabilities effectively.
+AI for Process enables enterprise automation through integrated capabilities that transform how businesses design, execute, and optimize their processes.
 
-=== "Agents"
+#### Process Automation
 
-    Agents allow you to create AI-powered workflows and automation with little to no coding required. Using a visual drag-and-drop interface, you can easily configure settings and combine multiple complex workflows. Guardrails ensure the models within these workflows operate responsibly, adhering to societal norms and your business requirements. The agents can seamlessly integrate with AWS, expanding the range of use cases. This user-friendly approach empowers you to leverage AI capabilities across various applications without extensive technical expertise.
-    
-    [Learn more about Agents :octicons-arrow-right-24:](../agents/overview.md)
+The platform provides visual, no-code workflow orchestration for creating agent-powered workflows with adaptive process sequencing across teams and systems. Workflows can be triggered automatically from email, system events, schedules, and API calls without manual handoffs. Strategic human-in-the-loop checkpoints enable approval and exception handling, with embedded user-input forms for validation and decision-making at critical points.
 
-=== "Models"
+#### Intelligence and Data
 
-    Models are the core of AI for Process. Based on your needs, you can choose from fine-tuned, commercial, or open-source AI models. Once you've selected the right models, you can easily integrate them into your AI agents. Guardrails ensure the models generate outputs responsibly and follow defined constraints. Additionally, you can deploy these AI agents via API endpoints and integrate them with your existing systems as required.
-    
-    [Learn more about Models :octicons-arrow-right-24:](../models/overview.md)
+Document intelligence capabilities automate the processing of unstructured inputs, including invoices, forms, claims, and documents. Deep integration with Agent Platform and Agentic Apps enables multi-agent reasoning for complex problem-solving. Memory and context management enable agents to retain information across interactions, enabling personalized, continuous process handling.
 
-=== "Prompts"
+#### Integration and Infrastructure
 
-    AI for Process's Prompts Studio allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. It helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.
-    
-    [Learn more about Prompts :octicons-arrow-right-24:](../playground/about-prompt-studio.md)
+The platform connects to over 250 pre-built integrations across ERP, CRM, and ITSM systems without replacing existing infrastructure. Multi-model support enables the deployment of commercial models from OpenAI, Google, and Anthropic, as well as fine-tuned and open-source options via HuggingFace. Cloud-agnostic architecture operates seamlessly across AWS, Azure, Google Cloud, on-premise, or hybrid environments.
 
-<hr>
+#### Observability and Governance
 
-## Comprehensive Platform for AI Operations
+Real-time analytics monitor agent performance, execution metrics, token usage, and resource consumption across models. Complete audit logging maintains time-stamped records of all system activities for security and compliance traceability. Security controls include role-based access control, automated PII masking, data anonymization, and compliance checkpoints throughout workflows.
 
-The diagram below shows AI for Process's comprehensive AI platform. The platform manages AI agents, models, and data integrations. It offers tools for development, deployment, and monitoring. The image also illustrates how AI for Process connects with external systems and users. This creates a complete ecosystem for AI operations.
 
-<img src="../images/architecture-diagram.png" alt="Gale Architecture" title="Gale Architecture" style="border: 0px solid gray; zoom:100%;">
+## Unified Architecture for Enterprise Process Automation
 
-=== "AI for Process Core Offerings"
+AI for Process is designed to provide a unified, flexible framework for implementing AI capabilities within an enterprise. It combines pre-built components, customization options, and integration capabilities to address a wide range of business needs while ensuring security and compliance.
 
-    * LLM OPS: Includes Auto Scaling, Security, Observability, Monitoring, and Analytics.
+**Key Layers and Components of the Platform**:
 
-    * Your Agents: Features Prompt Engineering, No-Code Builder, Debug, Deploy, and Version Control capabilities.
+<img src="../images/ai-for-process-architecture.svg" alt="AI for Work Architecture" title="AI for Work Architecture" style="zoom:100%;">
 
-    * Your Models: Offers Fine-Tuning, Reinforcement Learning, Deploy, and Version Control options.
+1. **Access Points**: Entry interfaces for users and systems
+It provides entry interfaces for users, systems, and external applications to interact with the platform through various channels, including web-based interfaces, mobile applications, APIs, and direct integrations. 
 
-    * Foundational Models: Includes Commercial Models and Community Models.
+2. **Application Gateway**: Central routing and management hub
+It serves as the central routing and management layer, managing request handling, load balancing, and traffic distribution across the platform. It ensures secure and efficient communication between external access points and internal services.
 
-    * Data Connectors: Consists of API Nodes and Pre-built Integrations.
+3. **Services**: Core business logic and AI processing capabilities
+It contains the core business logic and processing capabilities, including the Workflow Engine, Expert AI Reasoning, multiple AI model integrations, and the Human-in-the-Loop framework. This layer executes automated processes, makes intelligent decisions, and coordinates multi-agent interactions.
 
-=== "Integration"
+4. **Integrations**: Enterprise system connectivity
+It facilitates connectivity with enterprise systems through pre-built connectors, API adapters, and data transformation services. This layer manages bidirectional data flow between AI for Process and existing organizational infrastructure, supporting over 250 enterprise integrations, including common systems such as SharePoint, Salesforce, ServiceNow, enterprise databases, and email systems.
 
-    * REST API: Connects AI for Process to Your Systems.
+5. **Security & Compliance**: Enterprise-grade protection and regulatory frameworks
+It provides enterprise-grade protection through role-based access control, data encryption, audit logging, and regulatory compliance frameworks. This ensures all operations meet organizational and regulatory security standards.
 
-    * Kore Solutions: Interfaces with Your Users.
+6. **Observability & Monitoring**: System performance tracking and analytics
+It delivers comprehensive visibility into system performance, tracking metrics, logs, and traces across all components. This enables proactive issue detection, performance optimization, and detailed analytics for continuous improvement.
 
-=== "External Components"
+## Seamless Integration with Existing Enterprise Ecosystem
 
-    * Your Systems: Interact with AI for Process through the REST API.
+AI for Process is an overlay automation layer designed for seamless integration with your existing enterprise ecosystem, including:
 
-    * Your Users: Access AI for Process via Kore Solutions.
+* ERP (SAP, Oracle)
+* CRM (Salesforce, MS Dynamics)
+* ITSM (ServiceNow, Zendesk)
+* RPA (UiPath, AA, Power Automate)
+* Data platforms and core systems
 
-    * Your Data: Connect your data to AI for Process.
+Key benefits:
 
-=== "Kore Stack"
+* Protect existing investments.
+* Expand automation coverage.
+* Reduce complexity and ownership cost.
+* Unlock outcomes that no single system can achieve alone.
 
-    * Search AI and XO Platform are part of the broader ecosystem.
+## Use Cases
 
-<hr>
+AI for Process is suitable for automating a wide range of business processes, driving value across functional areas in every industry through intelligent automation of complex workflows. The platform follows a function-first approach, focusing on processes that deliver measurable outcomes.
 
-## Deployment of AI at Scale
+Top functional use cases:
 
-AI for Process provides enterprise-grade features to deploy AI at scale:
+* Finance - Invoice Processing: Faster cycle time, lower operational cost.
+* HR - Employee Onboarding & Access Provisioning: Day-1 readiness, significantly fewer manual handoffs.
+* IT - Zero-Touch Ticket Resolution: Higher auto-closure of routine tickets.
+* Procurement - Supplier Onboarding & Management: Higher conversions, reduced manual follow-ups.
+* Customer Support - Complaint/Escalation Management: Significant reduction in non-compliance effort.
 
-* Security: Your data and intellectual property are protected by robust security measures.
+Additional automation scenarios:
 
-* Scalability: As your AI applications grow and user numbers increase, AI for Process automatically scales to meet demand while maintaining consistent performance.
+* Customer service workflows that require intelligent routing and response.
+* Document processing and data extraction tasks.
+* Approval workflows with compliance requirements.
+* Cross-system data synchronization and updates.
+* Event-driven business process automation.
+* Multi-step processes that require coordination between different departments or systems.
 
-* Flexible Deployment: Based on your organization's preferences, you can deploy AI models on the cloud or on-premises infrastructure.
-
-With AI for Process's enterprise-ready capabilities, you can confidently scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.

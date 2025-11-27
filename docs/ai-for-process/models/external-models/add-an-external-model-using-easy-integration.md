@@ -1,6 +1,6 @@
 # Add an External Model using Easy Integration
 
-Easily integrate models from popular providers like OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock using the Easy Integration option in Agent Platform.
+Easily integrate models from popular providers like OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock using the Easy Integration option in AI for Process.
 
 ## Integrate a Model from Anthropic 
 
@@ -20,7 +20,7 @@ Steps to add the Anthropic Claude-V1 model using easy integration:
 
     <img src="../images/easy-integration.png" alt="Easy Integration" title="Easy Integration" style="border: 1px solid gray; zoom:50%;">
 
-    A pop-up with the list of all the Anthropic models that are supported in Agent Platform is displayed.
+    A pop-up with the list of all the Anthropic models that are supported in AI for Process is displayed.
     
     For more information on the list of external models supported, see [Supported models](../supported-models.md).
 
@@ -37,16 +37,16 @@ The model is integrated and is listed in the External models list.
 !!! note
 
     * You can click the 3 dots icon corresponding to the Model name in the list of external models and edit or delete the model.
-    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across Agent Platform. If the toggle button is OFF, it means you cannot infer it anywhere in Agent Platform. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
+    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across AI for Process. If the toggle button is OFF, it means you cannot infer it anywhere in AI for Process. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
 
 
 ## Integrate a Model from Amazon Bedrock
 
-You can easily connect Amazon Bedrock models to the Agent Platform using a guided setup flow. This process enables secure role-based access using your own AWS credentials.
+You can easily connect Amazon Bedrock models to the AI for Process using a guided setup flow. This process enables secure role-based access using your own AWS credentials.
 
 !!! important
 
-    Customers must create an IAM role within their AWS account with the necessary permissions in their AWS account (e.g., access to AWS Bedrock APIs). This role must include a trust policy that allows the Agent Platform’s AWS principal (or a designated IAM role in an AWS account) to assume it. For more information, see [Configuring Amazon Bedrock models](./configuring-aws.md){:target="_blank"}.
+    Customers must create an IAM role within their AWS account with the necessary permissions in their AWS account (e.g., access to AWS Bedrock APIs). This role must include a trust policy that allows the AI for Process’s AWS principal (or a designated IAM role in an AWS account) to assume it. For more information, see [Configuring Amazon Bedrock models](./configuring-aws.md){:target="_blank"}.
 
 
 Steps to add Amazon Bedrock models using easy integration:
@@ -69,7 +69,7 @@ In the AWS Bedrock dialog, configure the following:
 * **Credentials**: 
     * **Identity Access Management (IAM) Role ARN**: Enter the full ARN of your IAM role that has permission to invoke Amazon Bedrock models. This role allows secure cross-account access following least-privilege principles.  
     For more information, see [Setting Up Credentials and Trust Policy (IAM Role & STS)](../external-models/configuring-aws.md#step-1-setting-up-credentials-and-trust-policy-iam-role-and-sts).
-    * **Trusted Principal ARN**: The ARN of the AWS IAM principal (from the Platform) used to assume your IAM role. It’s pre-populated, read-only, and fetched securely — manual input is not required.
+    * **Trusted Principal ARN**: The ARN of the AWS IAM principal (from the AI for Process) used to assume your IAM role. It’s pre-populated, read-only, and fetched securely — manual input is not required.
 
 * **Model Details**: 
     * **Model name:** Enter a custom name to identify this model internally within your workflows.
@@ -105,6 +105,4 @@ For example:
 * Click **Save as draft** to store the configuration without activating it.
 * Or, click **Confirm** to finalize and add the model connection.
 
-Once completed, your model appears in the **External Models** tab. You can now reference this model in your **Prompts** and **Tools** across the platform.
-
-
+Once completed, your model appears in the **External Models** tab. You can now reference this model in your **Prompts** and **Workflow** across the AI for Process.
