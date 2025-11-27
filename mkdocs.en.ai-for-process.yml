@@ -128,7 +128,7 @@ nav:
     - Import a Workflow: workflows/import-a-workflow.md
     - Workflow Builder:
       - About Workflow Builder: workflows/workflow-builder/flows-overview.md
-      - About Trigegrs: workflows/workflow-builder/about-triggers.md
+      - About Triggers: workflows/workflow-builder/about-triggers.md
       - Manage Flows: 
         - Manage Nodes in Flows: workflows/workflow-builder/manage-flow-nodes.md
         - Manage Input and Output: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/manage-input-and-output.md

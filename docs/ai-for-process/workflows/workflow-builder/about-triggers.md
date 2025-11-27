@@ -24,7 +24,7 @@ To use triggers in a workflow:
 * Set up the required connection and authentication profile.
 * Open your workflow in Flow Builder and access the **Start node**, where all triggers are configured.
 
-For detailed configuration steps, see: [Start Node – Automate Workflow Initiation](../workflow-builder/types-of-nodes/start-node.md).
+For detailed configuration steps, see [Start Node – Automate Workflow Initiation](../workflow-builder/types-of-nodes/start-node.md).
 
 <img src="../images/triggers.png" alt="Triggers" title="Add a trigger" style="border: 1px solid gray; zoom:80%;">
 
