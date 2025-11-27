@@ -314,6 +314,9 @@ app.start(
 
 ## Related Documentation
 
+<!--
 - [Custom Orchestrators in workspace](https://github.com/agenticai/workspace)
+-->
+
 - [Building Applications](building-apps.md)
 - [Memory Stores Guide](memory-stores.md)

@@ -13,10 +13,10 @@ The Agentic Evaluation framework supports various evaluation types that collecti
 Agentic Evaluation enables you to analyze the real-world performance of deployed Agentic apps using production data. It helps ensure your supervisors, agents, and tools work together efficiently and deliver high-quality outcomes.
 
 * **Model Trace Analysis**: Import and evaluate app sessions and traces from deployed apps (production data) or simulated sessions.
+* **Simulation Support**: Generate simulated sessions using Personas and Test Scenarios to validate agent behavior before go-live and test edge cases safely.
 * **Multi-level Evaluation**: Assess AI behavior across different layers—sessions (for example, goal achievement or tone), traces (for example, agent selection or tool usage), and specific interactions.
-* **Evaluator Library**: Apply predefined evaluators to assess the quality and effectiveness of agentic app behavior.
-* **Interactive Scorecards**: Visualize scores and drill into specific sessions or traces using clickable cards and detailed views.
-* **Trace Tree Visualization**: Navigate the full execution path—supervisor, agent, and tool—to pinpoint errors, inefficiencies, or optimization opportunities.
+* **Evaluator Library**: Apply predefined evaluators to assess the quality and effectiveness of Agentic app behavior.
+* **Interactive Analysis Tools**: Use scorecards and trace visualizations to explore evaluation results, drill into sessions or traces, and inspect full execution paths—including supervisors, agents, and tools—to pinpoint errors, inefficiencies, or optimization opportunities.
 * **Actionable Insights**: Identify failures, deviations, or redundant interactions to continuously improve your app’s responsiveness, reliability, and user satisfaction.
 
 ## Key Benefits
