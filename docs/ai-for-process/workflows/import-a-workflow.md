@@ -36,9 +36,9 @@ To initiate a workflow creation journey through the import functionality, follow
 2. Do one of the following based on your requirements:
 
 <ul><li>If you don't have any existing workflows and want to create one by importing from another environment, click <b>Import a workflow</b>.
-<img src="../workflows/workflow-builder/types-of-nodes/images/import-a-workflow.png" alt="Import a workflow" title="Import a workflow" style="border: 0px solid gray; zoom:75%;"></li>
+<img src="../workflow-builder/types-of-nodes/images/import-a-workflow.png" alt="Import a workflow" title="Import a workflow" style="border: 0px solid gray; zoom:75%;"></li>
 <li>If you already have workflows deployed, the following page is displayed. To import a workflow, select the relevant tab on the <b>Workflows</b> dashboard and click <b>Import a workflow</b>.
-<img src="../workflows/workflow-builder/types-of-nodes/images/workflow-dashboard.png" alt="Workflow dashboard" title="Workflow dashboard" style="border: 0px solid gray; zoom:75%;"></li></ul>
+<img src="../workflow-builder/types-of-nodes/images/workflow-dashboard.png" alt="Workflow dashboard" title="Workflow dashboard" style="border: 0px solid gray; zoom:75%;"></li></ul>
 
 <ol start="4"><li>In the <b>Import workflow</b> window, providing the following information is mandatory.</li>
 <ul><li><b>Workflow Name</b>: Provide a unique workflow name.</li>

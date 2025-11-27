@@ -327,7 +327,7 @@ The table below summarizes the available columns along with their supported oper
    <td rowspan="3" >
 <ul>
 
-<li><strong>Workflow</strong>: The request was sent to the model from a workflow. <a href="../../../../ai-agents/tools/overview" target="_blank">Learn more</a>.</li>
+<li><strong>Workflow</strong>: The request was sent to the model from a workflow. [Learn more](../../../workflows/overview.md){:target="_blank"}.</li>
 
 <li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="../../../../prompts/using-prompt-studio" target="_blank">Learn more</a>.</li>
 

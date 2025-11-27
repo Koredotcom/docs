@@ -95,8 +95,8 @@ This node is commonly used for:
 
 ### Translation
 
-* Transcribes and translates speech in non-English languages (see [Open AI Whisper-supported language](https://platform.openai.com/docs/guides/speech-to-text#supported-languages){:target="_blank"}) into English when enabled.
-* Inverse translation (English to other languages) is not currently supported.
+* Transcribes and translates speech in non-English languages see [Open AI Whisper-supported language](https://platform.openai.com/docs/guides/speech-to-text#supported-languages){:target="_blank"} into English when enabled.
+* Inverse translation (English to other languages) isn't currently supported.
 
 
 ### Important Considerations
@@ -227,6 +227,3 @@ To run and test the flow, follow the steps below:
   The **Debug** window generates the flow log and results, as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow.
 
    <img src="../images/debug-window-audio-to-text.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">
-
-
-

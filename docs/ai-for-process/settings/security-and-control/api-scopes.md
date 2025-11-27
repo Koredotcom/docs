@@ -43,61 +43,61 @@ The following API scopes are available for this feature.
   <tr>
    <td>Deploy workflow
    </td>
-   <td>Deploy a specific workflow into an environment. It allows the user to control the deployment process either synchronously or asynchronously. <a href="../../../apis/apis-list/deploy-a-tool" target="_blank">Learn more</a>.
+   <td>Deploy a specific workflow into an environment. It allows the user to control the deployment process either synchronously or asynchronously. [Learn more](../../workflows/deploy-a-workflow.md){:target="_blank"}.
    </td>
   </tr>
   <tr>
    <td>Undeploy workflow
    </td>
-   <td>Undeploy a workflow that is deployed in an environment. <a href="../../../apis/apis-list/undeploy-a-tool" target="_blank">Learn more</a>.
+   <td>Undeploy a workflow that is deployed in an environment.
    </td>
   </tr>
   <tr>
    <td>Deploy Model
    </td>
-   <td>Deploy an open-source or fine-tuned model in the <strong><em>Ready to Deploy</em></strong> state. <a href="../../../apis/apis-list/deploy-a-model" target="_blank">Learn more</a>.
+   <td>Deploy an open-source or fine-tuned model in the <strong><em>Ready to Deploy</em></strong> state.
    </td>
   </tr>
   <tr>
    <td>Undeploy Model
    </td>
-   <td>Undeploy a model from the environment. <a href="../../../apis/apis-list/undeploy-a-model" target="_blank">Learn more</a>.
+   <td>Undeploy a model from the environment.
    </td>
   </tr>
   <tr>
    <td>Import Model
    </td>
-   <td> Import a model in chunks into the AI for Process environment. <a href="../../../apis/apis-list/import-a-model" target="_blank">Learn more</a>.
+   <td> Import a model in chunks into the AI for Process environment.
    </td>
   </tr>
   <tr>
    <td>Import workflow
    </td>
-   <td>Import a new workflow into the system. <a href="../../../apis/apis-list/import-a-new-tool" target="_blank">Learn more</a>.
+   <td>Import a new workflow into the system.
    </td>
   </tr>
   <tr>
    <td>Export Model
    </td>
-   <td>Export a trained AI model from the system. <a href="../../../apis/apis-list/export-a-model" target="_blank">Learn more</a>.
+   <td>Export a trained AI model from the system.
    </td>
   </tr>
   <tr>
    <td>Export workflow
    </td>
-   <td>Export a workflow's configuration and associated data.<a href="../../../apis/apis-list/export-a-tool" target="_blank">Learn more</a>.
+   <td>Export a workflow's configuration and associated data.
    </td>
   </tr>
   <tr>
    <td>Deploy Guardrails
    </td>
-   <td>Deploy pre-defined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions. <a href="../../../apis/apis-list/deploy-guardrails" target="_blank">Learn more</a>.
+   <td>Deploy pre-defined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions.
    </td>
   </tr>
   <tr>
    <td>Undeploy Guardrails
    </td>
-   <td>Remove the previously deployed guardrails that regulate AI interactions.<a href="../../../apis/apis-list/undeploy-guardrails" target="_blank" target="_blank"> Learn more</a>.
+   <td>Remove the previously deployed guardrails that regulate AI interactions.
    </td>
   </tr>
 </table>
