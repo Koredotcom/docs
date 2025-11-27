@@ -1,6 +1,6 @@
 # List of Agent Platform APIs
 
-## APIs for Agentic Apps
+## Agentic App APIs
 
 The following APIs let users interact with agents and manage sessions.
 
@@ -11,19 +11,19 @@ The following APIs let users interact with agents and manage sessions.
 |  Upload or delete attachments to a conversation. These attachments can be referenced during an agent run as context.      |   [File Attachment APIs](agentic-apps/upload.md)       |
 |    Create a new Agentic App.    |  [Create App API](agentic-apps/create-app.md)   |
 
-## API for File Management
+## File Management API
 
 | Use cases   | API     |
 |--------|----------|
 | Upload a small or large public file in the [supported formats](apis-list/upload-file-api.md). | [File Upload API](apis-list/upload-file-api.md) |
 
-## API to View Process Status
+## View Process Status API
 
 | Use cases   | API     |
 |--------|----------|
 | Check the status of an ongoing or completed job related to tools or models. | [Get Dock Status API](apis-list/get-dock-status.md) |
 
-## APIs to Manage Tools
+## Manage Tools APIs
 
 | Use cases   | APIs    |
 |--------|----------|
@@ -33,7 +33,7 @@ The following APIs let users interact with agents and manage sessions.
 | Deploy a specific tool into an environment. | [Deploy a Tool API](apis-list/deploy-a-tool.md) |
 | Undeploy a specific tool from an environment. | [Undeploy a Tool API](apis-list/undeploy-a-tool.md) |
 
-## APIs to Manage Models
+## Manage Models APIs
 
 | Use cases  | APIs     |
 |--------|----------|
@@ -42,7 +42,7 @@ The following APIs let users interact with agents and manage sessions.
 | Deploy a model into the environment in the Ready to Deploy state and configure its parameters. The initial deployment must be done manually in the Agent Platform account. Consecutive deployments must happen via the public API.       | [Deploy a Model API](apis-list/deploy-a-model.md)         |
 | Undeploy a model from the environment.      |   [Undeploy a Model API](apis-list/undeploy-a-model.md) |
 
-## APIs to Manage Guardrails
+## Manage Guardrails APIs
 
 | Use cases   | APIs     |
 |--------|----------|

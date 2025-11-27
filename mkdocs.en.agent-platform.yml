@@ -148,6 +148,7 @@ nav:
       - Set up AI Agents: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
+      - Manage Agents: ai-agents/agent-management.md
     - Knowledge:
       - About Search AI: ai-agents/knowledge/overview.md
       - About Knowledge Tools: ai-agents/knowledge/about-knowledge.md
@@ -205,6 +206,7 @@ nav:
       - MCP Tools: 
         - About MCP Tools: ai-agents/tools/mcp-tools.md
         - Configure MCP server: ai-agents/tools/configure-mcp-server.md    
+      - Context Object Structure: ai-agents/context-object.md
     - App Settings:
         - System Events: ai-agents/agentic-apps/settings/events.md
         - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
