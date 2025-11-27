@@ -751,8 +751,6 @@ nav:
             - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
             - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
             - Voice Automation with Genesys Agent Desktop using SIP Invite Protocol: contactcenter/integrations/voice-automation-using-sip-invite-protocol/genesys-agent-desktop.md
-          - Multibot:
-            - Multibot Integration with Genesys: contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
