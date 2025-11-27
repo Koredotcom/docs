@@ -1,6 +1,6 @@
 ---
 tags:
-  - workflow tool
+  - workflow_tool
 ---
 
 # AI Nodes for Advanced LLM Capabilities

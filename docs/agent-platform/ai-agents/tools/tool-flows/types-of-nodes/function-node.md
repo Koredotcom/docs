@@ -1,6 +1,6 @@
 ---
 tags:
-  - workflow tool
+  - workflow_tool
 ---
 
 # Function Node - Empower Workflows with Custom Code
