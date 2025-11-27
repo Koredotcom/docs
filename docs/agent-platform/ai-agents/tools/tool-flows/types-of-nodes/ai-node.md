@@ -1,3 +1,8 @@
+---
+tags:
+  - workflow tool
+---
+
 # AI Nodes for Advanced LLM Capabilities
 
 AI nodes are multimodal components that utilize LLMs for specialized tasks, transforming workflows by supporting diverse file types. These nodes can process and generate various media formats, such as text, images, and audio, within a single workflow. Their adaptability enables developers to build dynamic systems that seamlessly handle and manipulate multiple data types.
