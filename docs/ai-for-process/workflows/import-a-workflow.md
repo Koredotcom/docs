@@ -34,7 +34,7 @@ To initiate a workflow creation journey through the import functionality, follow
 
     <img src="../tool-flows/types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
-    <img src="./workflow-builder/types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
+    <img src="../workflow-builder/types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 2. Do one of the following based on your requirements:
 
