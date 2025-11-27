@@ -13,7 +13,7 @@ theme:
   custom_dir: overrides.en.agent-platform
   icon:
     tag:
-      workflow tool: :octicons-workflow-16:
+    workflow_tool: material/sitemap-outline
   features:
     - navigation.tabs
     - navigation.sections
@@ -50,7 +50,7 @@ extra:
     provider: mike
   generator: false
   tags:
-    workflow_tool: workflow tool
+    workflow_tool: workflow_tool
   analytics:
     provider: google
     property: G-560BYJFH0P
