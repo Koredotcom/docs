@@ -836,8 +836,6 @@ Key benefits
     * Leverage external AI models for more flexible and accurate conversation summaries.
     * Ensure consistent summarization across multiple languages and use cases.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-based-conversation-summary.md)
-
 **Enable/Disable Conversations to Wait Till Queue Timeout**
 
 This configurable setting allows supervisors and admins to enable or disable the waitTillQTimeout property. This enhancement provides better control over how long conversations wait in the queue before transitioning to the no-agent-available flow.
@@ -1066,7 +1064,7 @@ Contact Center supervisors can enable real-time streaming of LLM responses to si
 Key updates:
 
 * Real-time streaming of rephrased responses.
-* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md)
+* Bot delay response behavior controls.
 * Role-based access controls (Full Access for Admins/Supervisors). [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 <font size="4">Campaigns</font>

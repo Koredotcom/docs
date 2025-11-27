@@ -266,7 +266,7 @@ This enhancement ensures greater flexibility and consistency in voice experience
 
 **LLM Streaming Support for Additional TTS Providers**
 
-LLM Streaming is now supported for ElevenLabs and Deepgram TTS. This enhancement enables faster and more natural audio generation across a broader range of text-to-speech (TTS) engines, improving real-time responsiveness and user experience in voice interactions. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md#llm-streaming-for-text-to-speech-tts-providers)
+LLM Streaming is now supported for ElevenLabs and Deepgram TTS. This enhancement enables faster and more natural audio generation across a broader range of text-to-speech (TTS) engines, improving real-time responsiveness and user experience in voice interactions.
 
 <font size="4">Phone Numbers</font>
 
