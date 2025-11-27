@@ -57,11 +57,11 @@ Providing the following information is optional:
 <li>The values for <b>System Prompt</b>, <b>Prompt</b>, <b>Timeout</b>, and <b>Hyperparameters</b> are imported for the AI node.</li></ul></p></div>
 
 <ol start="5"><li>Click <b>Import</b>.</li>
-<img src="../workflows/workflow-builder/types-of-nodes/images/workflow_instructions.png" alt="click import" title="click import" style="border: 0px solid gray; zoom:75%;">
+<img src="../workflow-builder/types-of-nodes/images/workflow_instructions.png" alt="click import" title="click import" style="border: 0px solid gray; zoom:75%;">
 </ol>
 
 Once the import is complete, the system will redirect you to the **Workflow** page, where you can access the new workflow's canvas by clicking **Go to flow**.
-<img src="../workflows/workflow-builder/types-of-nodes/images/go-to-flow.png" alt="tool flow page" title="tool flow page" style="border: 0px solid gray; zoom:75%;">
+<img src="..workflow-builder/types-of-nodes/images/go-to-flow.png" alt="tool flow page" title="tool flow page" style="border: 0px solid gray; zoom:75%;">
 
 The imported workflow is listed under **All Workflows** and **My Workflows** on the **Workflow** dashboard.
 
@@ -101,11 +101,11 @@ To import a workflow as a version, follow the steps below:
 2. Click the **Workflows** tab on the top navigation bar, and select the workflow you want to import. 
 3. Click **Configurations** on the left menu.
 4. Scroll down to the **Import a workflow** section and click **Import**.
-    <img src="../workflows/workflow-builder/types-of-nodes/images/import-a-workflow-canvas.png" alt="import a workflow" title="import a workflow" style="border: 0px solid gray; zoom:75%;">
+    <img src="../workflow-builder/types-of-nodes/images/import-a-workflow-canvas.png" alt="import a workflow" title="import a workflow" style="border: 0px solid gray; zoom:75%;">
 
 5. (Optional) In the following dialog, select the **Back up your current workflow** option to preserve the data of the version being replaced.
 
-    <img src="../workflows/workflow-builder/types-of-nodes/images/backup-workflow.png" alt="import confirmation" title="import confirmation" style="border: 0px solid gray; zoom:75%;">
+    <img src="../workflow-builder/types-of-nodes/images/backup-workflow.png" alt="import confirmation" title="import confirmation" style="border: 0px solid gray; zoom:75%;">
 
 **NOTE**
 
