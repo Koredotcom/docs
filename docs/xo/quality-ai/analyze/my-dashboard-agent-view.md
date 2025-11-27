@@ -2,7 +2,7 @@
 
 ## Overview
 
-**My Dashboard** is a personalized agent dashboard that shows performance insights through supervisor-assigned scorecards. It supports global language settings, with Scorecard widgets offering independent language selection. Agents can track trends, coaching insights, and areas for improvement, such as voice attributes, using Calendar and Channel filters for focused analysis.
+My Dashboard is a personalized agent dashboard that shows performance insights through supervisor-assigned scorecards. It supports global language settings, with Scorecard widgets offering independent language selection. Agents can track trends, coaching insights, and areas for improvement, such as voice attributes, using Calendar and Channel filters for focused analysis.
 
 ### Key Functionalities
 
@@ -18,7 +18,7 @@
 
 ### Access My Dashboard 
 
-Access **My Dashboard** by navigating to **Quality AI** > **ANALYZE** > **My Dashboard**.  
+Navigate to **Quality AI** > **ANALYZE** > **My Dashboard**.  
 <img src="../agent-dashboard/images/my-dashboard-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note

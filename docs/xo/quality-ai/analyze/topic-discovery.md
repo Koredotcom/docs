@@ -47,7 +47,9 @@ Topic Discovery operates on a three-level hierarchical structure:
 
 The Topic Discovery interface consists of powerful filtering controls, interactive visualizations, and detailed analytics views that work together to help you explore conversation data efficiently. Each component is designed to provide immediate insights while allowing you to drill down into specific areas of interest.
 
-Navigation path: **Quality AI** > **ANALYZE** > **Topic Discovery**
+## Access Topic Discovery
+
+Navigate to **Quality AI** > **ANALYZE** > **Topic Discovery**
 
 ### Filters
 
