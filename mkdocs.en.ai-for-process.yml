@@ -148,6 +148,7 @@ nav:
         - DocSearch Node: workflows/workflow-builder/types-of-nodes/docsearch-node.md 
         - Loop Node: workflows/workflow-builder/types-of-nodes/loop-node.md  
         - Human Node: workflows/workflow-builder/types-of-nodes/human-node.md 
+        - Agentic App Node: workflows/workflow-builder/types-of-nodes/agentic-app-node.md
         - End Node: workflows/workflow-builder/types-of-nodes/end-node.md 
       - Workflow Change Log: workflows/workflow-builder/workflow-canvas-change-log.md    
     - Sharing & Permissions: 
