@@ -152,7 +152,7 @@ To run and test the flow, follow the steps below:
 
      <img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
-   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow.
+   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../workflows/workflow-builder/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow.
 
 <div class="admonition note">
 <p class="admonition-title">Accessing the Output</p>
@@ -169,6 +169,3 @@ Use that key in your workflow. You may also need to extract multiple chunks from
 
 * [Manage Nodes in Workflow](./../manage-flow-nodes.md){:target="_blank"} - Add and manage nodes on the canvas.
 * [Run Workflow](./../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} - Run and test an workflow in real time.
-
-
-

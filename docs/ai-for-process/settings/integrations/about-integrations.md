@@ -1,6 +1,6 @@
 # Integration with Third-party Services
 
-The **Integrations** feature connects your AI for Process account to third-party services, streamlining access to external workflows and automating workflows. Once connected, you can use these integrations from the workflow canvas to build high-quality AI applications. [Learn more](../../workflows/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
+The **Integrations** feature connects your AI for Process account to third-party services, streamlining access to external workflows and automating workflows. Once connected, you can use these integrations from the workflow canvas to build high-quality AI applications. [Learn more](../../workflows/workflow-builder/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
 The AI for Process supports 120+ integrations with different authorization types. To enable secure access, create a connection using third-party authentication to verify users. The main authentication methods are:
 
