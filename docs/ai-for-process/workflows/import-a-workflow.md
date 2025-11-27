@@ -61,7 +61,7 @@ Providing the following information is optional:
 </ol>
 
 Once the import is complete, the system will redirect you to the **Workflow** page, where you can access the new workflow's canvas by clicking **Go to flow**.
-<img src="..workflow-builder/types-of-nodes/images/go-to-flow.png" alt="tool flow page" title="tool flow page" style="border: 0px solid gray; zoom:75%;">
+<img src="../workflow-builder/types-of-nodes/images/go-to-flow.png" alt="tool flow page" title="tool flow page" style="border: 0px solid gray; zoom:75%;">
 
 The imported workflow is listed under **All Workflows** and **My Workflows** on the **Workflow** dashboard.
 
