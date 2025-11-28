@@ -369,7 +369,7 @@ Make sure that the following GenAI features are enabled:
 
 ### Edit or Delete By Value Metric
 
-Steps to edit or delete any existing **By Vlaue** evaluation metrics:
+Steps to edit or delete any existing **By Value** evaluation metrics:
 
 1. Right-click on a desired evaluation metric name **By Value** metrics category.     
 <img src="../images/by-value-edit-metrics.png" alt="Edit Evaluation Metrics" title="Edit Evaluation Metrics" style="border: 1px solid gray; zoom:0%;">    

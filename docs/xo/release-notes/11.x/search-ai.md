@@ -14,7 +14,7 @@ Search AI now offers optimized default extraction and chunking strategies tailor
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md#default-extraction-strategies)
 
-<font size="4">RACL Enhancements</font>
+<font size="4">View Document Access Controls</font>
 
 Search AI introduces new UI capabilities to provide greater visibility into RACL implementations. These enhancements are currently available only for the following connectors: Google Drive, HubSpot, Jira, Confluence Cloud, Confluence Server, Bitbucket, SharePoint, ServiceNow, Asana, Guru, and JFrog.
 

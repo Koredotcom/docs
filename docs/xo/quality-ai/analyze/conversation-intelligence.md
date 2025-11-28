@@ -7,14 +7,15 @@ The Conversation Intelligence dashboard displays post-interaction analytics and 
 
 The key sections of this dashboard include:
 
-* **Contact Center Efficiency** – Key Performance Indicators (Average Speed to Answer, Abandonment Rate, CSAT, and Transfer Rate).
-* **Agent Efficacy** – Empathy Score, CSAT, Crutch Word Score, Agent Performance Monitor, and Agent Occupancy.
-* **Customer Experience** – Avg. Wait Time, Net Promoter Score (NPS), Churn Risk, Sentiment Score, Sentiment Monitor, and Customer Churn Monitor.
-* **Insights Mining** –  Topic vs. Sentiment Bubble, Keyword Cloud & Emotions
-* **Interaction Details** – Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
+* **Contact Center Efficiency**: Key Performance Indicators (Average Speed to Answer, Abandonment Rate, CSAT, and Transfer Rate).
+* **Agent Efficacy**: Empathy Score, CSAT, Crutch Word Score, Agent Performance Monitor, and Agent Occupancy.
+* **Customer Experience**: Avg. Wait Time, Net Promoter Score (NPS), Churn Risk, Sentiment Score, Sentiment Monitor, and Customer Churn Monitor.
+* **Insights Mining**:  Topic vs. Sentiment Bubble, Keyword Cloud & Emotions
+* **Interaction Details**: Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
 
-Users can access the **Conversation Intelligence** dashboard from **Quality AI** > **ANALYZE** > **Conversation Intelligence**.  
+## Access Conversation Intelligence 
 
+Navigate to **Quality AI** > **ANALYZE** > **Conversation Intelligence**.   
 <img src="../conversation-intelligence/images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Filters

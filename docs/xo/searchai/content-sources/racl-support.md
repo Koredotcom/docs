@@ -30,7 +30,7 @@ The content of each response will differ based on the source document.
 
 **Access Control Logic**: When a user submits a query to the app, results are displayed only if the user’s identity is listed in the `sys_racl` field of the content from which the results are derived.
 
-For example: Consider a Google Drive file owned by John and shared with Smitha and Abby. In this case, the `sys_racl` field will contain the identities of all three users. As a result, any answers generated from this file is accessible only to John, Smitha, and Abby.
+For example: Consider a Google Drive file owned by John and shared with Casey and Abby. In this case, the `sys_racl` field will contain the identities of all three users. As a result, any answers generated from this file is accessible only to John, Casey, and Abby.
 
 Due to variations in the nature of permissions and scopes across different connectors, distinct sets of permissions are used to fetch this information from the content. When a specific content contains information about a group of users, a **Permission Entity** is created corresponding to it and populated in the `sys_racl` field for the content. For more specific details on how the `sys_racl` field is populated for a connector, refer to the documentation of the respective connector.
 
