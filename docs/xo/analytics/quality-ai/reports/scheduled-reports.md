@@ -87,7 +87,7 @@ Steps to create a new report,
 When generating a new report, you can choose from three preconfigured report types:
 
 1. Select **Agent Performance Report** (or any other report type).  
-<img src="../images/-category.png" alt="Reports" title="Reports" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/report-types.png" alt="Report Types" title="Report Types" style="border: 1px solid gray; zoom:60%;">
 
 1. Click **Next** to proceed.
 
@@ -120,7 +120,7 @@ Defines the parameters specific to each report type, including data sources, fil
 
     * You can select multiple scorecards for comparative analysis.
 
-    * Only interactions evaluated with selected forms or scorecards are included. 
+    * Only interactions evaluated with selected forms or scorecards are included.   
     <img src="../images/agent-config.png" alt="Sample Agent Performance Configuration Report" title="Sample Agent Performance Configuration Report" style="border: 1px solid gray; zoom:60%;">    
 
         !!! Note
