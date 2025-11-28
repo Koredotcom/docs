@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Supervisor Dashboard (QA Dashboard) provides real-time insights of audit results, agent performance, and failure statistics across daily, weekly, and monthly timeframes. By default, the dashboard displays daily reports for all categories, allowing quick insights into quality standards and agent adherence. It supports you in filtering daily reports by language, date, and communication channel.
+The Supervisor Dashboard (QA Dashboard) provides real-time insights of audit results, agent performance, and failure statistics across daily, weekly, and monthly timeframes. By default, the dashboard displays daily reports for all categories, allowing quick insights into quality standards and agent adherence. It helps you in filtering daily reports by language, date, and communication channel.
 
 Key features include:
 
@@ -37,14 +37,14 @@ The dashboard metrics allow you to filter and refine the data displayed across t
 
 #### All Languages 
 
-In the Quality AI dashboard, you can search and filter by language across the dashboard, and apply the language-specific metrics. You can select more than one language or all languages simultaneously.
+In the Quality AI dashboard, you can search and filter by language and apply the language-specific metrics. You can select multiple languages simultaneously.
 
 These metrics are available based on the languages configured at the evaluation metric level under the **Configuration** > **Settings** > **Language Settings**.    
 <img src="../dashboard/images/language-filter.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:100%;">
 
 To filter by language, 
 
-* Locate the **All Languages** filter at the dashboard top.
+* Locate the **All Languages** filter at the top of the dashboard.
 * Select single or multiple languages from the dropdown.
 * Metrics automatically adjust to show language-specific data.
 
@@ -66,7 +66,7 @@ When a language filter is applied, the following widget metrics are updated to r
 
 #### Date Range
 
-Use the **Calendar** to filter data by selecting a date range shown at the top-right of the dashboard, next to All Languages. The displayed data gets updated based on the chosen language and time period.
+Use the **Calendar** to filter data by selecting a date range shown at the top-right of the dashboard, next to **All Languages**. The displayed data gets updated based on the chosen language and time period.
 
 To filter by calendar, 
 
@@ -94,7 +94,7 @@ The following components provide insights through audit results and coaching act
 
 ### Total Audits
 
-Displays the total manual audits count completed.  
+Displays the total number of completed manual audits.    
 <img src="../dashboard/images/total-audits.png" alt="Total Audits" title="Total Audits" style="border: 1px solid gray; zoom:100%;">
 
 ### Avg. Audits per Agent
@@ -125,7 +125,7 @@ Displays and tracks the overall progress score of audits (both pending and compl
 
 * **Pending**: Number of interactions assigned for audit and not yet audited.
 
-* **Audit**: Click the **Audit** button, which navigates you to the **Conversation Mining** > **Audit Allocations** feature, where you can start evaluating interactions. For more information, see [Audit Allocations](../analyze/conversation-mining-audit-allocations.md).    
+* **Audit**: Click the **Audit** button to navigate to the **Conversation Mining** > **Audit Allocations** feature, where you can start evaluating interactions. For more information, see [Audit Allocations](../analyze/conversation-mining-audit-allocations.md){:target="_blank"}.    
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
 ### Evaluation Score 
@@ -142,19 +142,19 @@ You can filter and view flagged or fatal interactions for each form. Additionall
 
 To view adherence with fatal errors or interactions, you should do the following:
 
-* **Evaluation Form**: Choose a form from the dropdown to set it as Default. This allows you to view related adherence data that includes fatal interactions on both the heatmap and QA dashboard.
+* **Evaluation Form**: Choose a form from the dropdown to set it as Default. This allows you to view related data, including fatal interactions, on both the heatmap and QA dashboard.
 
 * **Language Filter**: Use the All Languages drop-down to filter adherence data by language. All languages are selected by default.
 
-* **Tooltip Information**: Hover over the heatmap to see key metrics for the selected agents of the corresponding date, such as adherence percentage, interaction count, and total interactions. 
+* **Tooltip Information**: Hover over the heatmap to view key metrics for the selected agents of the corresponding date, including adherence percentage, interaction count, and total interactions. 
 
 !!! Note
 
-    You must enable **Auto QA** (**Settings** > **Quality AI General Settings**) to generate and configure evaluation forms to generate automated scores.
+    You must enable **Auto QA** (**Settings** > **Quality AI General Settings**) to to configure evaluation forms and generate automated scores.
 
 ### View More Details
 
-Click the **View More Details** button to see detailed trends in agent adherence. For more information, see [Adherence Heatmap](../analyze/adherence-heatmap.md).
+Click the **View More Details** button to see detailed trends in agent adherence. For more information, see [Adherence Heatmap](../analyze/adherence-heatmap.md){:target="_blank"}.
 
 ## Fail Statistics
 
@@ -174,7 +174,7 @@ The chart displays the trend of failed agent interactions as a percentage, based
 
 !!! note
 
-    This **Agent Scorecard** tab only appears on the dashboard if the widget option is enabled in the **Settings** of the [Quality AI General Settings](../configure/quality-ai-general-settings.md).
+    This **Agent Scorecard** tab  appears on the dashboard only when the widget option is enabled in the [Quality AI General Settings](../configure/quality-ai-general-settings.md).
 
 ## Performance Monitor
 
@@ -182,12 +182,12 @@ This displays the overall performance score for the selected language, date rang
 
 ### Evaluation Form
 
-Supervisors can monitor agent performance based on the selected evaluation form assigned with negative weights.
+Supervisors can monitor agent performance using the selected evaluation form with negative weights assigned.
 
 * **Trends**: The Performance Monitor provides a **Trends** view (agent performance) that visualizes the average Kore Evaluation scores (both positive and negative) from agent scorecards on a daily, weekly, and monthly basis.  
 <img src="../dashboard/images/performance-monitor-evaluation-form-trends.png" alt="Performance Monitor Evaluation Form Trends" title="Performance Monitor Evaluation Form Trends" style="border: 1px solid gray; zoom:60%;">
 
-* **Distribution**: This view displays the distribution of both Kore evaluation scores and agents scorecard scores over the last 7 days, 30 days and 90 days.    
+* **Distribution**: This view shows agents are distributed across score bands in increments of 10 over the last 7, 30, and 90 days.    
 <img src="../dashboard/images/performance-monitor-evaluation-form-distribution.png" alt="Performance Monitor Evaluation Form Distribution" title="Performance Monitor Evaluation Form Distribution" style="border: 1px solid gray; zoom:60%;">
 
 #### Agent Scorecard
@@ -204,7 +204,7 @@ Supervisors can monitor agent performance based on the selected evaluation form 
 
 ## Agent Leaderboard
 
-The Agent Leaderboard provides a centralized view to easily identify top and bottom performers, enabling informed decisions about recognizing high achievers and coaching those who need improvement. This widget offers a simplified snapshot of agent performance and functions independently of language selection and communication channels.   
+The Agent Leaderboard provides a centralized view that makes it easy to identify top and bottom performers, enabling informed decisions about recognizing high achievers and coaching those who need improvement. This widget offers a simplified snapshot of agent performance and functions independently of language selection and communication channels.  
 
 !!! note
 
@@ -214,7 +214,7 @@ The Agent Leaderboard provides a centralized view to easily identify top and bot
 
 The **Agent Leaderboard** displays the following elements:
 
-* **Agents**: Displays the agent group name and the queue to which the agent is assigned.
+* **Agents**: Displays the agent group name and the assigned queue.
 
 * **Audit Completed**: Displays the total number of manual audits completed by each agent.
 
@@ -222,11 +222,11 @@ The **Agent Leaderboard** displays the following elements:
 
 * **Kore Evaluation Score**: Displays the average Kore Evaluation Score for each audited interaction.
 
-* **Fail Percentage**: Displays the percentage of failures across all interactions.   
+* **Fail Percentage**: Displays the failure percentage across all interactions.   
 
 ### View Leaderboard
 
-The **View Leaderboard** option allows supervisors, auditors, and managers to see both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](agent-leaderboard.md).
+The **View Leaderboard** option allows supervisors, auditors, and managers to see both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](agent-leaderboard.md){:target="_blank"}.
 
 * Click the **View Leaderboard** button located at the top-right corner to access the **Agent Leaderboard** quickly.    
 <img src="../dashboard/images/view-leaderboard.png" alt="View Leaderboard" title="View Leaderboard" style="border: 1px solid gray; zoom:60%;">
@@ -244,13 +244,15 @@ You can view the **Agent Leaderboard** or **Agent-Specific Dashboard** in the fo
 * Click on any agent to view the individual Agent Leaderboard or Agent-Specific Dashboard.   
 <img src="../dashboard/images/agent-specific-dashboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
+Based on the selection, the **Agent Leaderboard** page displays all listed agents or only the dashboard for the selected agent. 
+
     !!! notes
 
         * If no scorecards are assigned to an agent, the supervisor cannot view that agent's scorecard details. For more information, see [Supervisor View with Agent-Specific Dashboard](supervisor-view-agent-specific-dashboard.md).
 
         * Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. 
     
-        * Bookmarked interactions assist in assigning relevant coaching tasks, with the most recent interactions displayed first. 
+        * Bookmarked interactions help assign relevant coaching tasks, with the most recent interactions displayed first. 
         
-        For more information, see [Supervisor View with Agent-Specific Dashboard](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard - Agent View](../analyze/my-dashboard-agent-view.md).
+        For more information, see [Supervisor View with Agent-Specific Dashboard](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard - Agent View](../analyze/my-dashboard-agent-view.md){:target="_blank"}.
         

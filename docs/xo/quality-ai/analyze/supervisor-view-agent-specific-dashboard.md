@@ -45,9 +45,9 @@ The Dashboard metrics allow you to filter and refine the data displayed across t
 
 You can search and filter by language across the dashboard and apply the language-specific metrics. You can select more than one language or all languages simultaneously. These metrics are based on the languages configured at the evaluation metric level under the **Language Settings**.  
 
-!!! note
+    !!! note
 
-    By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level under **Configuration** > **Settings**.
+        By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level under **Configuration** > **Settings**.
 
 When a language filter is applied, the following widget metrics are updated to reflect data specific to the selected languages:
 
@@ -115,21 +115,21 @@ The Coaching Assignments include the following items:
 
     * **Start Now**: This indicates that the coaching is ready to start.
     
-    !!! note
+        !!! note
             
-        This option is only visible for agents.
+            This option is only visible for agents.
        
     * **Yet to start**: Interactions for an assignment are yet to start.
 
-    !!! note
+        !!! note
             
-        This option is only visible for supervisors.
+            This option is only visible for supervisors.
 
     * **In Progress**: This displays the total number of interactions that have been clicked through for that coaching assignment.
 
     * **Completed**: All interactions clicked through for that assignment.
 
-For more information, see [Coaching Assignments - Supervisor View and Creation](../coach/coaching-assignments-supervisor-view-and-creation.md).  
+For more information, see [Coaching Assignments - Supervisor View and Creation](../coach/coaching-assignments-supervisor-view-and-creation.md){:target="_blank"}.  
 
 #### Scorecard Trend
 
@@ -146,9 +146,9 @@ This functionality supports multilingual performance monitoring, enabling superv
 * Agents can assign different languages to different scorecards, allowing for localized tracking and analysis.  
 <img src="../agent-dashboard/images/my-dashboard-scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
-!!! Note
+    !!! Note
 
-    If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the [**Settings**](../configure/quality-ai-general-settings.md).
+        If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the [**Settings**](../configure/quality-ai-general-settings.md){:target="_blank"}).
 
 #### Avg. Scorecard Score
 
