@@ -292,7 +292,7 @@ The _Identity Provider information successfully updated_ message is displayed at
 
 ### Bitium Configuration
 
-* **Single Sign-On URL** – The HTTP SSO endpoint for _Bitium_ to enable Service Provider intiated SAML flow, for example, [https://www.bitium.com/7655](https://www.bitium.com/7655){:target="_blank"}.
+* **Single Sign-On URL** – The HTTP SSO endpoint for _Bitium_ to enable Service Provider initiated SAML flow, for example, [https://www.bitium.com/7655](https://www.bitium.com/7655){:target="_blank"}.
 * **Issuer URL** – The URL for the _OneLogin_ issuer, for example, [https://bitium.com/7655/saml/82456/metadata.xml](https://bitium.com/7655/saml/82456/metadata.xml){:target="_blank"}.
 * **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
 * **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
@@ -403,13 +403,13 @@ The following data is an example of attribute data passed to Kore.ai in the call
 <AttributeValue>Michael</AttributeValue>
 </Attribute>
 <Attribute Name="LastName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Last Name">
-<AttributeValue>Mehra</AttributeValue>
+<AttributeValue>Doe</AttributeValue>
 </Attribute>
 <Attribute Name="DisplayName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Display Name">
-<AttributeValue>Michael Mehra</AttributeValue>
+<AttributeValue>John Doe</AttributeValue>
 </Attribute>
 <Attribute Name="EmailAddress" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Email">
-<AttributeValue>michael.mehra@acme.com</AttributeValue>
+<AttributeValue>john.doe@example.com</AttributeValue>
 </Attribute>
 ```
 
