@@ -24,16 +24,16 @@ A supervisor can access the agent-specific dashboard in the following ways:
 2. From the **Agent Leaderboard** section, click any agent to view the following agent-specific dashboard **Overview** screen.   
 <img src="../agent-leaderboard/images/agent-leaderboard-supervisor-overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">
 
-!!! note
+    !!! note
 
-    Only authorized users can view automated scores and access QA features. 
-    To enable this functionality, go to **Quality AI** > **Settings** and turn on the following toggle options:
+        Only authorized users can view automated scores and access QA features. 
+        To enable this functionality, go to **Quality AI** > **Settings** and turn on the following toggle options:
 
-    * **Auto QA**, 
+        * **Auto QA**, 
     
-    * **Agent Score Card**
+        * **Agent Score Card**
     
-    * **Agent Access to Scored Interactions** 
+        * **Agent Access to Scored Interactions** 
     
 The **Overview** tab provides the supervisor’s view of the agent dashboard for each agent and includes the following: 
 
@@ -45,9 +45,9 @@ The Dashboard metrics allow you to filter and refine the data displayed across t
 
 You can search and filter by language across the dashboard and apply the language-specific metrics. You can select more than one language or all languages simultaneously. These metrics are based on the languages configured at the evaluation metric level under the **Language Settings**.  
 
-    !!! note
+!!! note
 
-        By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level under **Configuration** > **Settings**.
+    By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level under **Configuration** > **Settings**.
 
 When a language filter is applied, the following widget metrics are updated to reflect data specific to the selected languages:
 
@@ -146,9 +146,9 @@ This functionality supports multilingual performance monitoring, enabling superv
 * Agents can assign different languages to different scorecards, allowing for localized tracking and analysis.  
 <img src="../agent-dashboard/images/my-dashboard-scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
-    !!! Note
+!!! Note
 
-        If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the [**Settings**](../configure/quality-ai-general-settings.md){:target="_blank"}).
+    If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the [**Settings**](../configure/quality-ai-general-settings.md){:target="_blank"}).
 
 #### Avg. Scorecard Score
 

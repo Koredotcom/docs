@@ -51,9 +51,9 @@ To filter by language,
 2. Search or select one or more languages from the dropdown.   
 <img src="../agent-dashboard/images/all-langs.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:60%;">
 
-!!! Note
+    !!! Note
 
-    By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level.
+        By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level.
 
 When a specific language is selected, the following widgets reflect language-specific data:
 

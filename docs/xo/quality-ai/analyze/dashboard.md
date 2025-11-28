@@ -246,13 +246,13 @@ You can view the **Agent Leaderboard** or **Agent-Specific Dashboard** in the fo
 
 Based on the selection, the **Agent Leaderboard** page displays all listed agents or only the dashboard for the selected agent. 
 
-    !!! notes
+!!! notes
 
-        * If no scorecards are assigned to an agent, the supervisor cannot view that agent's scorecard details. For more information, see [Supervisor View with Agent-Specific Dashboard](supervisor-view-agent-specific-dashboard.md).
+    * If no scorecards are assigned to an agent, the supervisor cannot view that agent's scorecard details. For more information, see [Supervisor View with Agent-Specific Dashboard](supervisor-view-agent-specific-dashboard.md).
 
-        * Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. 
+    * Supervisors can also review language-specific agent interactions and evaluation details to support targeted coaching. 
     
-        * Bookmarked interactions help assign relevant coaching tasks, with the most recent interactions displayed first. 
+    * Bookmarked interactions help assign relevant coaching tasks, with the most recent interactions displayed first. 
         
-        For more information, see [Supervisor View with Agent-Specific Dashboard](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard - Agent View](../analyze/my-dashboard-agent-view.md){:target="_blank"}.
+    For more information, see [Supervisor View with Agent-Specific Dashboard](../analyze/supervisor-view-agent-specific-dashboard.md) and [Agent Dashboard - Agent View](../analyze/my-dashboard-agent-view.md){:target="_blank"}.
         
