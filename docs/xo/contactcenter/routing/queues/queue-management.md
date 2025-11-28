@@ -144,7 +144,7 @@ In the **Preferred** tab, you can assign preferred agents to the queue.
 
 1. Under **Preferred Agents**, find the agent you need in the list. You can use the _Search_ field for this purpose. Select the corresponding **Preferred** checkbox to set the agent as preferred.
 
-2. Under **Advanced Settings**, configure the preferred agent timeout. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check expands to the full agent list, and skills match to select the best available agent for the conversation.  
+2. Under **Advanced Settings**, configure the preferred agent timeout. During a preferred agent check, skills are ignored. If a preferred agent isn't assigned and the preferred agent timeout expires, the check expands to the full agent list, and skills match to select the best available agent for the conversation.  
 
 #### Skills
 
@@ -152,7 +152,7 @@ In the **Preferred** tab, you can assign preferred agents to the queue.
 
 2. Choose whether you want the skill to expire and set the time for this. When a skill assignment expires, the conversation routes to other assigned skills.
 
-    When you are ready to save the Queue, select **Create**. The new Queue is then listed among your available queues. You must configure at least the _Settings_ and _Assignment_ tabs to save a queue.
+    When you are ready to save the Queue, select **Create**. The new Queue is then listed among your available queues.
 
 ## Edit a Queue
 
