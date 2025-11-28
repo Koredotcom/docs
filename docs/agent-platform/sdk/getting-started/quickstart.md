@@ -34,11 +34,11 @@ workspace/
 
 ## Step 1: Configure Environment Variables
 
-If you haven't already, create `.env/dev`:
+Create `.env/dev`:
 
 ```bash
 # workspace/.env/dev
-KORE_HOST=https://staging-agent-platform.kore.ai
+KORE_HOST=https://agent-platform.kore.ai
 APP_API_KEY=your_api_key_from_platform
 TRACING_ENABLED=True
 ```
@@ -47,7 +47,7 @@ TRACING_ENABLED=True
 
 ```bash
 # .env/dev
-KORE_HOST=https://staging-agent-platform.kore.ai
+KORE_HOST=https://agent-platform.kore.ai
 APP_API_KEY=your_api_key_from_platform
 TRACING_ENABLED=True
 ```
@@ -237,6 +237,7 @@ uv run client.py
 ```
 
 The MCP client allows you to:
+
 - Discover available tools
 - Execute tool calls
 - Test agent responses
@@ -252,6 +253,7 @@ python run.py --archive banking-app
 ```
 
 This creates:
+
 - `bin/banking-app/application.kar` - Deployable archive (<1MB)
 - `bin/banking-app/application.config.json` - Configuration file
 
@@ -271,6 +273,7 @@ python run.py -c dev deploy -f bin/banking-app.kar
 ```
 
 This will:
+
 - Upload the KAR archive to the platform
 - Return `appId` and `streamId` - **save these for testing**
 
@@ -338,37 +341,45 @@ graph LR
 ```
 
 ### 1. Clone Workspace
+
 - Clone workspace repository
 - Navigate to workspace directory
 
 ### 2. Run Setup
+
 - Execute `.setup.sh`
 - Creates `.venv` and installs dependencies
 - Configure `.env/dev` file
 
 ### 3. Develop
+
 - Write custom tools in `src/tools/`
 - Create orchestrator in `src/orchestrator/`
 - Define application in `src/app.py`
 
 ### 4. Test Locally
+
 - `python run.py start`
 - Test with MCP client (`uv run client.py`)
 - Debug and iterate
 
 ### 5. Archive
+
 - `python run.py --archive myApp`
 - Verify size (<1MB) and contents
 
 ### 6. Deploy
+
 - `python run.py -c dev deploy -f bin/myApp.kar`
 - Create environment: `python run.py -c dev create-env --app <appId> --env dev`
 
 ### 7. Test End-to-End
+
 - `python run.py -c dev test --app <appId> --env dev`
 - Verify deployed functionality
 
 ### 8. Monitor
+
 - Check status: `python run.py -c dev status --app <appId> --env dev`
 - Review logs and traces
 - Monitor performance
@@ -420,6 +431,7 @@ python run.py -c dev status --app <appId> --env dev
 ## Troubleshooting
 
 ### Archive Too Large
+
 ```bash
 # Check if virtual env is included
 unzip -l bin/myProject/application.kar | grep -E "(venv|env/|.venv)"
@@ -428,6 +440,7 @@ unzip -l bin/myProject/application.kar | grep -E "(venv|env/|.venv)"
 ```
 
 ### Deployment Fails
+
 ```bash
 # Verify environment variables
 python -c "import os; print(os.getenv('KORE_HOST'), os.getenv('APP_API_KEY'))"
@@ -437,6 +450,7 @@ python run.py -c dev deploy -f bin/myProject.kar
 ```
 
 ### Tool Not Found
+
 ```bash
 # Ensure tools are imported in src/app.py:
 from src.tools import banking_tools  # This registers the tools via @Tool.register
@@ -451,4 +465,3 @@ from src.tools import banking_tools  # This registers the tools via @Tool.regist
 - [:octicons-arrow-right-24: Working with Tools](../guide/working-with-tools.md) - Advanced tool patterns
 - [:octicons-arrow-right-24: Custom Orchestration](../guide/orchestration.md) - Orchestration guide
 - [:octicons-arrow-right-24: API Reference](../api/index.md) - Full API documentation
-
