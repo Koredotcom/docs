@@ -5,7 +5,7 @@ This feature assists supervisors in analyzing agent performance and identifying 
 ## Supervisor Access to Coaching Assignment Creation
 
 Navigate to **Quality AI** > **ANALYZE** > **Dashboard** > **Agent Leaderboard** > **Overview**.    
-<img src="./coaching-assignments/images/dashboard-overview.png" alt="coaching assignments Dashboard overview" title="coaching assignments Dashboard overview" style="border: 1px solid gray; zoom:70%;">   
+<img src="../coaching-assignments/images/dashboard-overview.png" alt="coaching assignments Dashboard overview" title="coaching assignments Dashboard overview" style="border: 1px solid gray; zoom:70%;">   
 
 ### Add Coaching Assignment
 

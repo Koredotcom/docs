@@ -66,14 +66,14 @@ When a language filter is applied, the following widget metrics are updated to r
 
 #### Date Range
 
-By using the **Calendar** dropdown at the top-right of the dashboard to filter data by date. Data is shown based on the selected language and time period.
+Use the **Calendar** to filter data by selecting a date range shown at the top-right of the dashboard, next to All Languages. The displayed data gets updated based on the chosen language and time period.
 
 To filter by calendar, 
 
 * Click the **Calendar** dropdown.
 * Select the desired date range.
 * Click **Apply** to refresh dashboard data.  
-<img src="../dashboard/images/date-range-filter.png" alt="Date Range calendar" title="Date Range calendar" style="border: 1px solid gray; zoom:100%;">
+<img src="../dashboard/images/calendar drop-down.png" alt="Date Range" title="Date Range" style="border: 1px solid gray; zoom:100%;">
 
 #### Channel
 

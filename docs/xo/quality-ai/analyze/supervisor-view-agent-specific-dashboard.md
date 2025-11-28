@@ -4,7 +4,7 @@
 
 This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It enables supervisors to evaluate performance metrics and pinpoint coaching opportunities at the individual level. 
 
-The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by language, date range, and channels (voice or chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
+The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by Language, [Date Range](../analyze/dashboard.md#date-range){:target="_blank"}, and [Channel](../analyze/dashboard.md#channel){:target="_blank"} (voice or chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
 
 A supervisor can access the agent-specific dashboard in the following ways:
 
@@ -20,7 +20,6 @@ A supervisor can access the agent-specific dashboard in the following ways:
 
 1. Navigate to **Quality AI** > > **ANALYZE** > **Agent Leaderboard**.   
 <img src="../agent-leaderboard/images/agent-leaderboard-agent-selection.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
-
 
 2. From the **Agent Leaderboard** section, click any agent to view the following agent-specific dashboard **Overview** screen.   
 <img src="../agent-leaderboard/images/agent-leaderboard-supervisor-overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">
