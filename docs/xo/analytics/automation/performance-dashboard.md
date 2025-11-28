@@ -79,7 +79,7 @@ The following fields are displayed:
 
 ### Goal Completion Rate
 
-The goal completion metrics show how many tasks an AI Agent completes and fails within a selected time. The [failed tasks](task-execution-logs.md#failed-task) include both abandoned and incomplete tasks. The task is any interaction like Dailog, FAQs, or alerts. [Learn more.](../../administration/analytics.md#chat-history-details)
+The goal completion metrics show how many tasks an AI Agent completes and fails within a selected time. The [failed tasks](task-execution-logs.md#failed-task) include both abandoned and incomplete tasks. The task is any interaction like Dialog, FAQs, or alerts. [Learn more.](../../administration/analytics.md#chat-history-details)
 
 Listed below are the widgets that could help in providing information about these details:
 
