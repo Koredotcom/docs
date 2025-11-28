@@ -736,7 +736,6 @@ Steps to send an outbound email:
 3. The email panel appears, and an email conversation appears on the conversation tray. Enter the recipients' Email addresses, such as john.doe@example.com.  
 
 4. Select a **Queue** from the dropdown.  
-<img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:80%;">
 
 5. Enter the **Subject** and body of the email. The email address appears on the conversation tray and the subject appears as the email thread header.  
 6. You can perform the following actions:
@@ -771,21 +770,21 @@ Steps to send an outbound email:
     The editor window minimizes, and the mail is saved as a draft.  
         <img src="../images/draft-mimized.png" alt="Draft Minimized" title="Draft Minimized" style="border: 1px solid gray; zoom:80%;">
 
-    Drafts are automatically saved and remain accessible in the following scenarios:
+    Drafts are automatically saved and remain available in the following scenarios:
 
     1. After an agent logout and subsequent login.
     2. Network interruptions and subsequent re-connections.
     3. The current email content is saved as a draft if the editor is closed.
     4. Drafts are saved only after the mandatory fields (recipient, subject, queue, and email body) are updated.
 
-    Multiple drafts can be saved for individual email conversations. Each draft is easily identifiable and accessible within its respective email thread.
+    Multiple drafts can be saved for individual email conversations. Each draft is identifiable and available within its respective email thread.
 
     **Delete**:
 
-    Click the **Delete** (bin) icon on the bottom left corner of the editor.  
+    Select the **Delete** icon on the left corner of the editor.  
         <img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation message is displayed. Click **Delete**. The email is deleted.  
+    A confirmation message is displayed. Select **Delete**.  
         <img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 ## Color Codes
@@ -807,19 +806,18 @@ You can add notes on the interaction (customer feedback, key points, next action
 
 To add a new note:
 
-1. Click **Notes**.  
+1. Select **Notes**.  
 <img src="../images/interactions-notes.png" alt="Notes Button" title="Notes Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **+ Add New Note**.  
-<img src="../images/add-notes.gif" alt="Adding Notes" title="Adding Notes" style="border: 1px solid gray; zoom:80%;">
+2. Select **+ Add New Note**.
 
-3. Type the message and click **Save**.
+3. Type the message and select **Save**.
 
 ## Modify Skills in Interactions
 
 To modify skills in a live interaction when the Live Interaction option is selected in [Skill Modification](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#skill-modification):
 
-1. Click the **Add Skills** option on the Skills bar.  
+1. Select the **Add Skills** option on the Skills bar.  
 <img src="../images/add-skills-button.png" alt="Add Skills Button" title="Add Skills Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Select the necessary skills from the drop-down.  
@@ -833,14 +831,14 @@ Contact Center AI allows agents to transfer ongoing conversations to other queue
 
 To transfer a conversation to another queue when the [Enforce Skill Match for Transfers](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#enforce-skill-match-for-transfers) setting is enabled:
 
-1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
     <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for a queue in the search bar on the **Transfer to** window.
-3. Select a queue from the dropdown list. Agents with matching skills are displayed for the queue during the transfer.  
+3. Select a queue from the dropdown list. Agents with matching skills appear for the queue during the transfer.  
     <img src="../images/transfer-to.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Transfer**. The conversation gets transferred to the selected queue.  
+4. Select **Transfer**. The conversation gets transferred to the selected queue.  
     <img src="../images/conversation-transferred.png" alt="Conversation Transferred" title="Conversation Transferred" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
@@ -851,29 +849,29 @@ To transfer a conversation to another queue when the [Enforce Skill Match for Tr
 
 To transfer a conversation to another queue when the [Skill Modification](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#skill-modification) setting is enabled:
 
-1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
     <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Search for a queue in the search bar on the **Transfer to** window. All matching queues are displayed.
-3. Select the queue and click **Next**.  
+2. Search for a queue in the search bar on the **Transfer to** window. All matching queues appear.
+3. Select the queue and select **Next**.  
     <img src="../images/transfer-to-queue.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
 4. You can add or delete skills to the interaction before transferring it to another queue.  
     <img src="../images/add-skills.png" alt="Add or Delete Skills" title="Add or Delete Skills" style="border: 1px solid gray; zoom:80%;">
 
-5. Click **Transfer**. The conversation is transferred to the selected queue.  
+5. Select **Transfer**. The conversation transfers to the selected queue.  
     <img src="../images/conversation-transferred-confirmation.png" alt="Conversation Transferred Confirmation" title="Conversation Transferred Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 **Transfer to Another Agent**
 
 To transfer a conversation to another agent:
 
-1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
     <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an agent in the search bar on the **Transfer to** window.
 3. Select an available agent.
-4. Click **Transfer**. The conversation gets transferred to the selected agent.  
+4. Select **Transfer**. The conversation transfers to the selected agent.  
     <img src="../images/transfer-to-agent.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
@@ -884,12 +882,12 @@ To transfer a conversation to another agent:
 
 An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) to allow external transfer of ongoing customer calls. To transfer a conversation to an external contact from the Agent Console, follow these steps:
 
-1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
     <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an external contact in the search bar on the **Transfer to** window.
 3. Select an available contact.
-4. Click **Transfer**. The conversation gets transferred to the selected contact.  
+4. Select **Transfer**. The conversation transfers to the selected contact.  
     <img src="../images/transfer-to-external-contact.png" alt="Transfer to External Contact" title="Transfer to Extrenal Contact" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -900,22 +898,22 @@ An agent can transfer the call to an external contact during a voice interaction
 
 ## End Interactions
 
-1. To end an interaction session, click the **End** button at the top right of the _Live Interaction_ pane.  
+1. To end an interaction session, select **End** in the _Live Interaction_ pane.  
     <img src="../images/end-button.png" alt="End Interaction Button" title="End Interaction Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Once clicking _End_, you must **confirm** that you want to end the interaction. Click **Yes** to do so, or otherwise, click **No**.  
+2. Once selecting _End_, you must **confirm** that you want to end the interaction. Select **Yes** to do so, or otherwise, select **No**.  
     <img src="../images/end-interaction-window.png" alt="End Interaction pop-up" title="End Interaction pop-up" style="border: 1px solid gray; zoom:60%;">
 
-    Clicking **_Yes_** ends the session and moves the interaction to _After Call Work_.
+    Selecting **_Yes_** ends the session and moves the interaction to _After Call Work_.
 
 ### Timer After Caller Disconnects a Voice Call
 
-When a caller disconnects, agents can either call back or end the call. If an agent does not take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is disabled for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md).
+When a caller disconnects, agents can either call back or end the call. If an agent doesn't take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is turned for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md).
 
-**Timer when the caller disconnects the call**: A depleting timer is displayed on the live interaction pane, with options to end the call or call back.  
+**Timer when the caller disconnects the call**: A depleting timer appears on the live interaction pane, with options to end the call or call back.  
 <img src="../images/end-call.png" alt="End Call Button" title="End Call Button" style="border: 1px solid gray; zoom:80%;">  
 
-**Timer when the caller disconnects during a conference call**: A depleting timer is displayed on the live interaction pane, with options to close or rejoin the conference call.  
+**Timer when the caller disconnects during a conference call**: A depleting timer appears on the live interaction pane, with options to close or rejoin the conference call.  
 <img src="../images/end-conference-call.png" alt="End Conference Call Button" title="End Conference Call Button" style="border: 1px solid gray; zoom:80%;">  
 
 The call transitions to After Call Work (ACW) at the end of the configured timeout duration.
