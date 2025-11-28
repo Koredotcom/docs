@@ -10,7 +10,7 @@ A supervisor can access the agent-specific dashboard in the following ways:
 
 **Approach 1:**
 
-1. Navigate to **Quality AI** > **Dashboard** > **Agent Leaderboard**.  
+1. Navigate to **Quality AI** > **ANALYZE** > **Dashboard** > **Agent Leaderboard**.  
 <img src="../agent-leaderboard/images/dashboard-agent-leaderboard-view.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">  
 
 2. From the **Agent Leaderboard** section, click any agent to view the agent-specific dashboard **Overview** screen.  
@@ -18,7 +18,7 @@ A supervisor can access the agent-specific dashboard in the following ways:
 
 **Approach 2:**
 
-1. Navigate to **Quality AI** > **Agent Leaderboard**.   
+1. Navigate to **Quality AI** > > **ANALYZE** > **Agent Leaderboard**.   
 <img src="../agent-leaderboard/images/agent-leaderboard-agent-selection.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 

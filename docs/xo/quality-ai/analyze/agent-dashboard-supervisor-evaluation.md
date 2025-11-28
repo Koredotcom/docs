@@ -4,7 +4,7 @@ This allows supervisors to drill down into language-specific evaluation data and
 
 ## Access Agent Dashboard - Evaluation
 
-You can access the **Agent-Specific Dashboard** - **Evaluation** by navigating to **Quality AI** > **ANALYZE** > **Dashboard** > **Evaluation**.    
+Navigate to **Quality AI** > **ANALYZE** > **Dashboard** > **Evaluation**.    
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
 ### Filter Options
@@ -50,7 +50,7 @@ After selecting interactions, the supervisor can create a coaching session with 
 
 Steps to add coaching assignments:
 
-1. By default, the following **Add Coaching Assignments** screen is displayed when you select any interactions**.     
+1. By default, the following **Add Coaching Assignments** screen is displayed when you select any interactions.     
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-selection.png" alt="Add Coaching Assignments Selection" title="Add Coaching Assignments Selection" style="border: 1px solid gray; zoom:60%;">
 
 2. Click the **Add Coaching Assignment** button.   
