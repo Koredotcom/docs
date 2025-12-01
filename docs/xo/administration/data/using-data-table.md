@@ -22,7 +22,7 @@ Data tables provide a structured way to store and access low-volume, conversatio
 2. **Data Volume**:
     * Do not use Data Tables to store large datasets or persistent business data unrelated to conversations.
     * Data storage should be limited to low volumes only.
-    * The platform does not guarantee optimal performance for tables that do not adhere to the abovementioned recommendations. 
+    * The platform does not guarantee optimal performance for tables that do not adhere to the above mentioned recommendations. 
     * Consider using a dedicated database or storage solution for larger or unrelated datasets.
     * Generally, the platform recommends the following limits for optimal performance.
     
@@ -38,7 +38,7 @@ Data tables provide a structured way to store and access low-volume, conversatio
         * Cumulative data: The sum of data across all tables should not exceed 500MB
 
 3. **Data Types and Mappings**:
-    * Ensure that data mappings are accurate according to the data types defined in your table columns. This will prevent data integrity issues and facilitate smooth interactions.
+    * Ensure that data mappings are accurate according to the data types defined in your table columns. This prevents data integrity issues and facilitate smooth interactions.
 4. **Optimize Data Storage**:
     * Regularly review and clean up outdated or unnecessary data from your tables.
     * Limit the number of records to what is necessary for effective conversation management.
@@ -63,4 +63,4 @@ For use cases requiring larger data storage or more complex operations, consider
 
 ## Compliance and Monitoring
 
-We will monitor the usage of Data Tables to ensure compliance with these guidelines. Misuse may result in restrictions or loss of access to this feature.
+We monitor the usage of Data Tables to ensure compliance with these guidelines. Misuse may result in restrictions or loss of access to this feature.

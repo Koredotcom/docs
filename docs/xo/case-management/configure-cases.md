@@ -101,7 +101,7 @@ To edit fields:
 To delete fields:
 
 1. On the **Fields** page, click the three dots (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) icon.  
-<img src="../images/delete-fileds.png" alt="Delete Field Page" title="Delete Field Page" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/delete-fields.png" alt="Delete Field Page" title="Delete Field Page" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Delete** to confirm. the following warning pop-up dialog box appears.  
 <img src="../images/delete-confirm.png" alt="Delete Warning" title="Delete Warning" style="border: 1px solid gray; zoom:70%;">
