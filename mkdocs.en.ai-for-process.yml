@@ -172,7 +172,7 @@ nav:
     - Configurations:
       - Configure a Workflow: workflows/configure-a-workflow.md
       - Export a Workflow: workflows/export-a-workflow.md
-      - Import Workflow as a Version: workflows/import-a-workflow/#import-workflow-as-a-version 
+      - Import Workflow as a Version: workflows/import-a-workflow.md
   - Inbox: 
     - About Inbox: workflows/inbox.md
   - Models: 

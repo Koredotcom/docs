@@ -97,7 +97,7 @@ These inputs are used to test the connection and receive a response from the mod
 
      <div class="admonition note">
      <p class="admonition-title">Note</p>
-     <p>Click <b>Save as Draft</b> to save the model. The status will be updated to *Draft*.</p></div></ol>      
+     <p>Click <b>Save as Draft</b> to save the model. The status will be updated to *Draft*.</p></div></ol>
 
 <ol start="9"><li>Click <b>Confirm</b> to save the details and add the external model to the list.</li></ol>
 
