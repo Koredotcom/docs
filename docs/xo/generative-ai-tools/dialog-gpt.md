@@ -45,7 +45,7 @@ The Intelligent Conversation Orchestrator analyzes the retrieved chunks alongsid
 
 ### Step 3: Flow Management and Fulfillment
 
-DialogGPT triggers the resolved intent with the appropriate fulfillment action. It executes dialog tasks or FAQs, generates responses for system intents using Answer Generation, and asks for clarification in case of ambiguous events. It handles multi-intent scenarios by executing tasks sequentially or in parallel, depending on dependencies. Once the task is completed, the system delivers a contextually relevant response or fulfills the user’s requested action while adhering to enterprise business rules and interaction modes, such as text or voice.
+DialogGPT triggers the resolved intent with the appropriate fulfillment action. It executes dialog tasks or FAQs, generates responses for system intents using Answer Generation, and asks for clarification in case of ambiguous events. It handles multi-intent scenarios by executing tasks sequentially or in parallel, depending on dependencies. After the task is completed, the system delivers a contextually relevant response or fulfills the user’s requested action while adhering to enterprise business rules and interaction modes, such as text or voice.
 
 
 ## How to Enable DialogGPT
@@ -68,10 +68,10 @@ Steps:
         By default, Dialogs and FAQs are enabled and cannot be disabled.
 
 4. In the **Model Configuration** section, select the **Model** that can be used to generate the embeddings.  
-The embeddings model settings will apply only to Dialogs and FAQs. For Knowledge from Search AI, the settings in the Search AI app will apply.
+The embeddings model settings applies only to Dialogs and FAQs. For Knowledge from Search AI, the settings in the Search AI app applies.
 5. (Optional) click Show Advanced Settings to view and adjust the Similarity Threshold and Proximity Threshold. In most cases, the default settings work fine.
-6. (Only if Knowledge from Search AI is selected in step no 2 ) Define the maximum number of chunks to be shortlisted from Search AI. These chunks will be sent to the LLM for answer generation. The default value is 5. Click "Go to Search AI" to access the Search AI retrieval settings.
-7. In the **Model Configuration** section, select the  **Conversation Management** **Model** and the **Prompt**, which will determine the user intent and the execution plan.
+6. (Only if Knowledge from Search AI is selected in step no 2 ) Define the maximum number of chunks to be shortlisted from Search AI. These chunks are send to the LLM for answer generation. The default value is 5. Click "Go to Search AI" to access the Search AI retrieval settings.
+7. In the **Model Configuration** section, select the  **Conversation Management** **Model** and the **Prompt**, which determines the user intent and the execution plan.
 7. (Optional) click Show Advanced Settings to view and set the Temperature, Max Tokens, and Conversation History Length. In most cases, the default settings work fine.
 8. Click **Enable DialogGPT**. The DialogGPT home page is displayed.  
 <img src="../images/gpt4.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
@@ -82,7 +82,7 @@ The embeddings model settings will apply only to Dialogs and FAQs. For Knowledge
 
     !!! note
 
-        Disabling the DialogGPT will revert the intent detection to the traditional NLU.
+        Disabling the DialogGPT reverts the intent detection to the traditional NLU.
 
 
 

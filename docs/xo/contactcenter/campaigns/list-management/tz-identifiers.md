@@ -1,3 +1,5 @@
+--8<-- "includes/tz-identifiers-back-link.md"
+
 # Tz Identifiers
 
 Known as tzdata, zoneinfo database, or IANA Time Zone Database, this list provides a standardized naming convention for time zones across the globe.

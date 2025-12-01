@@ -18,7 +18,7 @@ Evaluation Metrics is a key component of the Quality AI module that enables supe
 
 ## Access Evaluation Metrics
 
-Access the Evaluation Metrics by navigating to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.    
+Navigate to **Quality AI** > **CONFIGURE** > **Evaluation Forms** > **Evaluation Metrics**.    
 <img src="../evaluation-criteria/evaluation-metrics/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 ## Interface Elements

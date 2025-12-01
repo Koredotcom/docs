@@ -92,7 +92,7 @@ Yes, small talk is treated as conversational intent. DialogGPT seamlessly integr
 
 #### **What are the limitations of DialogGPT?**
 
-DialogGPT is still evolving, with some features like entity extraction and enhanced response generation planned for Phase 2. Additionally, contextual embeddings for complex scenarios may require domain-specific tuning.
+DialogGPT is evolving, with some features like entity extraction and enhanced response generation planned for Phase 2. Additionally, contextual embeddings for complex scenarios may require domain-specific tuning.
 
 
 #### **Can existing Apps be migrated to DialogGPT?**

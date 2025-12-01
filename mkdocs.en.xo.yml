@@ -24,6 +24,7 @@ theme:
     - content.code.annotation
     - content.code.copy
     - header.autohide
+    - announce.dismiss 
   language: en
   palette:
     - scheme: default

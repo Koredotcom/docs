@@ -176,12 +176,16 @@ docs(api): add examples for Tool.register decorator
 
 ### 1. Update Your Branch
 
+Sync with upstream main branch.
+
+<!--
 ```bash
 # Sync with upstream main
 git remote add upstream https://github.com/agenticai/agentic-core.git
 git fetch upstream
 git rebase upstream/main
 ```
+-->
 
 ### 2. Push Changes
 
@@ -357,4 +361,3 @@ By contributing to AgenticAI Core SDK, you agree that your contributions will be
 If you have questions about contributing, please contact Kore Support
 
 Thank you for contributing to AgenticAI Core!
-
