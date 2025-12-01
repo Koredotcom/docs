@@ -180,7 +180,7 @@ This section describes the steps to be followed, to train the utterances grouped
     All the utterances that are part of the clicked Cluster-Intent pair are displayed. You can select one or all the utterances of the cluster, to initiate the training. You can also go to the intent view by clicking View Details across the intent name from the grid view of the clusters. See Grid View for more information.
 
 
-<img src="../images/train-the-utterance.png" alt="Train The Utterance" title="rain The Utterance" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/train-the-utterance.png" alt="Train The Utterance" title="Train The Utterance" style="border: 1px solid gray; zoom:60%;">
 
 
 The identified utterances belong to any of the following categories:

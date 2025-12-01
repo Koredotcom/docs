@@ -38,7 +38,7 @@ On-demand refers to the live conversation with a customer through any channel (e
 
 ## Offline Conversation
 
-Agents and supervisors can manually create cases based on information that are not linked to real-time interaction, such as Emails, Voice Calls, or Chat messages. This process does not require an active conversation with the customer or access to the console that requires to manage customer issues and inquiries even outside of live interactions.
+Agents and supervisors can manually create cases based on information that are'nt linked to real-time interaction, such as Emails, Voice Calls, or Chat messages. This process does not require an active conversation with the customer or access to the console that requires to manage customer issues and inquiries even outside of live interactions.
 
 The agents can create a case using the following processes: 
 

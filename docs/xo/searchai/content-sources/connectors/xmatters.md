@@ -15,7 +15,7 @@ xMatters is used for incident management and automated alerting, helping teams q
   <tr>
    <td><strong>Supported Content</strong>
    </td>
-   <td>Incidents, Events, Oncalls
+   <td>Incidents, Events, On-Calls
    </td>
   </tr>
   <tr>
