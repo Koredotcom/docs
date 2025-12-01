@@ -215,12 +215,11 @@ Open the Amazon Connect instance and add the last lambda function (koreRetrieveS
     2. Add the following code snippet in a **Script node** immediately after the **Start node**: 
 
         ```
-        setCallFlowVariable('sipHeaders', context.
-        BotUserSession.channels[0].handle.sipHeaders);
-        var headers = getCallFlowVariable
-        ('sipHeaders'); userSessionUtils.
-        put('sipHeaders', headers);
-        ```  
+        setCallFlowVariable('sipHeaders', 
+        context.BotUserSession.channels[0].handle.sipHeaders); var 
+        headers = getCallFlowVariable('sipHeaders'); 
+        userSessionUtils.put('sipHeaders', headers); 
+        ```
 
     3. Click **Test** to test the flow.  
     <img src="../images/test-the-flow-22.png" alt="test-the-flow" title="test-the-flow" style="border: 1px solid gray; zoom:80%;">  
@@ -244,9 +243,10 @@ Ensure the Automation bot used in the CCAI Conditional Flow includes an Agent Tr
     try{ 
     var headers = context.session.UserSession.sipHeaders; 
     if(headers){ 
-    var contactId = headers.find(o => o.name === 'X-Amzn-ConnectContactId'); 
-    if(contactId){ 
-    BotUserSession.put("ContactId", contactId.value); 
+         var contactId = headers.find(o => o.name === 
+    'X-Amzn-ConnectContactId'); 
+         if(contactId){ 
+             BotUserSession.put("ContactId", contactId.value); 
     } 
     } 
     }catch(err){

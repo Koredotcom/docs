@@ -4,13 +4,13 @@
 
 This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It enables supervisors to evaluate performance metrics and pinpoint coaching opportunities at the individual level. 
 
-The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by language, date range, and channels (voice or chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
+The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by Language, [Date Range](../analyze/dashboard.md#date-range){:target="_blank"}, and [Channel](../analyze/dashboard.md#channel){:target="_blank"} (voice or chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
 
 A supervisor can access the agent-specific dashboard in the following ways:
 
 **Approach 1:**
 
-1. Navigate to **Quality AI** > **Dashboard** > **Agent Leaderboard**.  
+1. Navigate to **Quality AI** > **ANALYZE** > **Dashboard** > **Agent Leaderboard**.  
 <img src="../agent-leaderboard/images/dashboard-agent-leaderboard-view.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">  
 
 2. From the **Agent Leaderboard** section, click any agent to view the agent-specific dashboard **Overview** screen.  
@@ -18,23 +18,22 @@ A supervisor can access the agent-specific dashboard in the following ways:
 
 **Approach 2:**
 
-1. Navigate to **Quality AI** > **Agent Leaderboard**.   
+1. Navigate to **Quality AI** > > **ANALYZE** > **Agent Leaderboard**.   
 <img src="../agent-leaderboard/images/agent-leaderboard-agent-selection.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
-
 
 2. From the **Agent Leaderboard** section, click any agent to view the following agent-specific dashboard **Overview** screen.   
 <img src="../agent-leaderboard/images/agent-leaderboard-supervisor-overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">
 
-!!! note
+    !!! note
 
-    Only authorized users can view automated scores and access QA features. 
-    To enable this functionality, go to **Quality AI** > **Settings** and turn on the following toggle options:
+        Only authorized users can view automated scores and access QA features. 
+        To enable this functionality, go to **Quality AI** > **Settings** and turn on the following toggle options:
 
-    * **Auto QA**, 
+        * **Auto QA**, 
     
-    * **Agent Score Card**
+        * **Agent Score Card**
     
-    * **Agent Access to Scored Interactions** 
+        * **Agent Access to Scored Interactions** 
     
 The **Overview** tab provides the supervisor’s view of the agent dashboard for each agent and includes the following: 
 
@@ -116,21 +115,21 @@ The Coaching Assignments include the following items:
 
     * **Start Now**: This indicates that the coaching is ready to start.
     
-    !!! note
+        !!! note
             
-        This option is only visible for agents.
+            This option is only visible for agents.
        
     * **Yet to start**: Interactions for an assignment are yet to start.
 
-    !!! note
+        !!! note
             
-        This option is only visible for supervisors.
+            This option is only visible for supervisors.
 
     * **In Progress**: This displays the total number of interactions that have been clicked through for that coaching assignment.
 
     * **Completed**: All interactions clicked through for that assignment.
 
-For more information, see [Coaching Assignments - Supervisor View and Creation](../coach/coaching-assignments-supervisor-view-and-creation.md).  
+For more information, see [Coaching Assignments - Supervisor View and Creation](../coach/coaching-assignments-supervisor-view-and-creation.md){:target="_blank"}.  
 
 #### Scorecard Trend
 
@@ -149,7 +148,7 @@ This functionality supports multilingual performance monitoring, enabling superv
 
 !!! Note
 
-    If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the [**Settings**](../configure/quality-ai-general-settings.md).
+    If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the [**Settings**](../configure/quality-ai-general-settings.md){:target="_blank"}).
 
 #### Avg. Scorecard Score
 

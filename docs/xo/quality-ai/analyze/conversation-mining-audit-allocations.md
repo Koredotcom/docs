@@ -2,7 +2,9 @@
 
 The Conversation Mining feature helps you to create and assign allocations to auditors for manual quality scoring.
 
-You can access **Audit Allocations** by navigating to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Audit Allocations**.  
+## Access Audit Allocations 
+
+Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Audit Allocations**.  
 <img src="../conversation-mining/images/conversation-mining-audit-allocations.png" alt="Audit Allocations" title="Audit Allocations" style="border: 1px solid gray; zoom:80%;">
 
 The **Audit Allocations** has following key Items:

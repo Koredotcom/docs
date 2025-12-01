@@ -12,7 +12,9 @@ A Supervisor has the following types of permissions for the agent scorecards:
 * No access, to edit, and create agent scorecards and attributes
 * Only view access for the existing agent scorecards and attributes.
 
-You can view Agent Scorecards by navigating to **Quality AI** > **Configure** > **Agent Score Cards**.  
+## Access Agent Score Cards
+
+Navigate to **Quality AI** > **CONFIGURE** > **Agent Score Cards**.  
 <img src="../agent-scorecards/images/agent-scorecard-landing-page.png" alt="Agent Score Card" title="Agent Score Card" style="border: 1px solid gray; zoom:70%;">
 
 ## Create a New Agent Scorecard

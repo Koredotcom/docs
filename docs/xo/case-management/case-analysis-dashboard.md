@@ -45,7 +45,7 @@ In the case management dashboard, agents can access and check the cases and task
 
 The following are the key metrics tracked for cases:
 
-* **Total:** Displays the frequency of cases that are reopened by agents, indicating potential issues with initial resolutions and real-time count valuee.
+* **Total:** Displays the frequency of cases that are reopened by agents, indicating potential issues with initial resolutions and real-time count value.
 
 * **Reopened:** Displays the frequency of cases that are reopened by agents, indicating potential issues with initial resolutions.
 
@@ -63,8 +63,8 @@ The following are the key metrics tracked for cases:
 
 ### Tasks
 
-This feature helps agents to organize, prioritize, and manage their workload by handling individual case realted tasks. Supervisors can assign tasks to agents, to track progress, and to enhance performance improvement of the agents.  
-<img src="../images/dashboad-tasks.png" alt="Tasks" title="Tasks" style="border: 1px solid gray; zoom:70%;">
+This feature helps agents to organize, prioritize, and manage their workload by handling individual case related tasks. Supervisors can assign tasks to agents, to track progress, and to enhance performance improvement of the agents.  
+<img src="../images/dashboard-tasks.png" alt="Tasks" title="Tasks" style="border: 1px solid gray; zoom:70%;">
 
 The following are the key metrics tracked of Tasks:
 

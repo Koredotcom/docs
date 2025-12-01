@@ -287,15 +287,15 @@ Metadata-Driven Vector
 
 In a multi-vector setup, Search AI allows you to assign weights to different vector columns based on their importance. However, not all vector columns may be configured for every content type. For instance, if a vector column is configured only for specific content types, such as web pages or PDFs, it won’t generate embeddings for content from other sources, including connectors or files.
 
-To maintain accurate scoring and prevent underweighting of relevant chunks, the system redistributes the missing vector's weight proportionally among the available vectors. This is referred to as Automatic Weight Rebalancing. 
+To ensure scoring remains accurate and relevant chunks don't receive reduced weighting, the system redistributes the missing vector's weight proportionally among the available vectors. This is referred to as Automatic Weight Rebalancing. 
 
-Automatic weight rebalancing ensures fair and accurate scoring during multi-vector search, even when embeddings are unavailable in certain vector columns for specific content types. It prevents skewed results by proportionally redistributing the missing vector’s weight among the remaining vectors for the chunk, ensuring that relevant content is not underrepresented. This improves retrieval accuracy and eliminates the need for manual adjustments.
+Automatic weight rebalancing ensures fair and accurate scoring during multi-vector search, even when embeddings are unavailable in certain vector columns for specific content types. It prevents skewed results by proportionally redistributing the missing vector’s weight among the remaining vectors for the chunk, ensuring that relevant content isn't underrepresented. This improves retrieval accuracy and eliminates the need for manual adjustments.
 
 For instance, suppose three vectors are configured as follows. 
 
-* Vector 1 – Configured for all sources, uses fields a, b, and assigned weight is 50%
-* Vector 2 – Configured only for web pages, uses fields c, d, and assigned weight is 20%
-* Vector 3 – Configured for all sources, uses fields e,f, and assigned weight is 30%
+* Vector 1 - Configured for all sources, uses fields a, b, and assigned weight is 50%
+* Vector 2 - Configured only for web pages, uses fields c, d, and assigned weight is 20%
+* Vector 3 - Configured for all sources, uses fields e,f, and assigned weight is 30%
 
 So the vectors generated corresponding to the chunks would be something like this:
 
@@ -372,8 +372,8 @@ Adjusted Weight = Original Weight + ((Unavailable Weight × Original Weight)/ Su
 
 This results in the following adjusted weights of embeddings in vectors 1 and 3 corresponding to Chunks 2,3, and 4 :
 
-* Vector 1 – 62.5%
-* Vector 3 – 37.5%
+* Vector 1 - 62.5%
+* Vector 3 - 37.5%
 
 
 ### Points to Note
