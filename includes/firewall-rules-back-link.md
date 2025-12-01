@@ -1,0 +1,1 @@
+[:octicons-arrow-left-24: Back to Firewall Requirements](minimum-system-requirements-and-supported-browsers.md#firewall-requirements)

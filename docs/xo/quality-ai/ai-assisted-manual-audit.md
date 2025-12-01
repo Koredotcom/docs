@@ -30,7 +30,7 @@ Before using AI-Assisted Manual Audit, ensure you have:
 
 ## AI-Assisted Manual Audit Access 
 
-You can access AI-Assisted Manual Audit by navigating to **Quality AI** > **Analyze** > **Conversation Mining** > **Audit Allocations**.  
+Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Audit Allocations**.  
 <img src="../ai-assist-manual-edit/images/audit-allocations.png" alt="AI Assisted Manual Audit Page" title="AI Assisted Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Interface overview
@@ -48,6 +48,7 @@ Supervisors can access the audit screen in the following ways:
 This Audit screen comprises three primary tabs:
 
 * **Audit Tab**
+
     * Main evaluation workspace with transcript and metrics.
 
     * Displays selected metrics as tabs with input capabilities.

@@ -432,6 +432,7 @@ The following model run metadata helps analyze the model’s performance.
 * **Base model**: The Platform-hosted or imported model that executes the request.
 * **Deployment name**: The deployment name of the model.
 * **Deployment version**: Version of the model deployed for the run.
+* **Streaming**: Streams the model’s response token by token in real time.
 * **Response time**: Time taken by the model to generate a response.
 * **Input tokens**: Number of tokens in the request input.
 * **Output tokens**: Number of tokens in the model’s response.

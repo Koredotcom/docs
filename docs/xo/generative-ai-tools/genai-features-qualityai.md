@@ -19,8 +19,8 @@ The following table displays the features and the supported models.
 | Agent Empathy Identification | GPT-4o | GPT-4o | ✅ |
 | By Value Adherence validation for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
 | By Value metric extraction for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
-| By Hold Adherence|GPT-4o | GPT-4o | ✅ |
-| By Transfer Adherence|GPT-4o | GPT-4o | ✅ |
+| By Hold Adherence| GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
+| By Transfer Adherence| GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
 | Churn & Escalation Identification | GPT-4o | GPT-4o | ✅ |
 | Conversation Phase Identification | GPT-4o | GPT-4o | ✅ |
 | Crutch Word Usage Detection | GPT-4o | GPT-4o | ✅ |

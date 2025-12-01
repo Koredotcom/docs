@@ -18,15 +18,13 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 
 ## Steps to Configure AD Sync 
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="nav user" title="nav user" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. Navigate to **Users Management** > **Settings** on the left menu.
-4. Click the **Configure Directory** button in the **Configure sync with directory** section.
+2. On the **Users** dashboard, click the **Configure Directory** button in the **Configure sync with directory** section.
 <img src="../images/configure-directory-button.png" alt="configure directory" title="configure directory" style="border: 1px solid gray; zoom:75%;">
 
-5. Complete the setup by following the steps below in the **Configure Directory** window:
+3. Complete the setup by following the steps below in the **Configure Directory** window:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -124,9 +122,9 @@ To delete a rule, hover over the entry and click the **Delete** icon.
 
 ### Step 4: Schedule Automatic AD Sync
 
-To finish configuring your directory, schedule auto sync for your AD. Enabling auto sync is **_optional_** but highly recommended to keep your AD data on Agent Platform up-to-date. 
+To finish configuring your directory, schedule auto sync for your AD. Enabling auto sync is **_optional_** but highly recommended to keep your AD data on AI for Process up-to-date. 
 
-Auto sync will ensure that any changes in AD, such as user additions or deletions, are automatically reflected on Agent Platform.
+Auto sync will ensure that any changes in AD, such as user additions or deletions, are automatically reflected on AI for Process.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -208,7 +206,7 @@ When you set up AD sync for the first time, the following options appear under *
   <img src="../images/sync-history.png" alt="sync history" title="sync history" style="border: 1px solid gray; zoom:75%;">
 
 * **Manage directory sync**: Displays the **Configure Directory** window where you can edit the existing configurations.
-* **Reset**: Resets the AD sync configurations but retains the last sync data on Agent Platform.
+* **Reset**: Resets the AD sync configurations but retains the last sync data on AI for Process.
 * **Sync Status**: This information summary displays the date of last sync, the total number of users and organization units synchronized, and any errors/issues encountered during the process. 
 
 <div class="admonition note">
@@ -230,4 +228,4 @@ For a **failed** sync, you will receive the following email:
 
 An alternative way to add users to your account (without using AD sync) is to invite them via email. 
 
-To learn more about other administrator features on the **Settings** Console, click [here](../../../administration/overview.md){:target="_blank"}.
+To learn more about other administrator features on the **Settings** Console, click [here](../../../settings/overview.md){:target="_blank"}.
