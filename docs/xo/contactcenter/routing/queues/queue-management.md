@@ -1,6 +1,6 @@
 # Queues
 
-Queues are virtual waiting areas that hold and process incoming requests for conversations between agents and customers. They act as temporary holding points for digital and voice conversations until an agent is assigned.
+Queues are virtual waiting areas that hold and process incoming requests for conversations between agents and customers. They serve as temporary holding points for digital and voice conversations until the system assigns an agent.
 
 All conversations get assigned to queues based on the agent selection logic and skill proficiency match. A conversation can only be in one queue at any given time. When conversations get assigned to a queue, Contact Center AI assigns them to agents. The agent assignment works based on pre-established rules and criteria.
 When a conversation comes in, it gets assigned to a queue, the next step is to check the routing mode.
@@ -17,7 +17,7 @@ All conversations get assigned to queues as they come in. This process depends o
 2. Advanced Routing
 
     * In this case, the conversation first routes to a preferred agent, or a set of preferred agents.
-    * During this check, the system ignores skills. If no preferred agent is assigned and the preferred agent timeout expires, the system expands the search to all agents and matches skills to select the best available agent according to the Simple Routing Mode.
+    * During this check, the system ignores skills. If the system can't assign a preferred agent and the preferred agent timeout expires, it expands the search to all agents and matches skills to select the best available agent according to the Simple Routing Mode.
     * When preferred agents are busy and the consideration pool expands to include all available agents with matching skills, configurable timers for skill expiry enable progressive relaxation of skill match criteria, thereby gradually expanding the agent pool.
 
 3. Conditional Group Routing (CGR)
@@ -100,13 +100,13 @@ This section is available in `Simple` and `Advanced Routing` modes and enables y
 
         If the customer ends the chat before the completion of a transfer, then the transfer is dropped, and the interaction isn't assigned to any queue or agent. This feature only applies to chat conversations and is available if you are using WebSDK v1.0.
 
-5. **Maximum Wait Time**: Specify the maximum time a conversation waits in the queue before the default _No available agent_ flow handles it.
+5. **Maximum Wait Time**: Specify the maximum time a conversation waits in the queue before the default `No available agent` flow handles it.
 6. **After Call Work (ACW)** You can enable or disable ACW.
 
     **ACW Enabled**
 
     1. **Immediate Slot Release**: The slot becomes available immediately when the conversation ends. Agents can finalize the disposition at their convenience.
-    2. **Timed Slot Release**: Agents must complete the disposition within a pre-set time duration, during which the slot will remain occupied. A default 30-second timer appears by default, which administrators can modify. The configurable time duration ranges between a minimum of 10 seconds and a maximum of 15 minutes. If the timer field is blank, an alert message appears to enter a timeout value ranging between 10 seconds and 15 minutes for the timed slot release.
+    2. **Timed Slot Release**: Agents must complete the disposition within a pre-set time duration, during which the slot remains occupied. A default 30-second timer appears by default, which administrators can modify. The configurable time duration ranges between a minimum of 10 seconds and a maximum of 15 minutes. If the timer field is blank, an alert message appears to enter a timeout value ranging between 10 seconds and 15 minutes for the timed slot release.
 
         You can edit the `Is Required?` and `Assignment` fields for disposition sets, including the default [disposition sets](../../agent-and-supervisors/dispositions/manage-dispositions.md#disposition-sets). This enables existing users to switch any configured disposition set to an optional mode.  
 
@@ -180,7 +180,7 @@ There are two ways to assign a conversation to a queue:
 
 ## When the Contact Center Permission is Disabled
 
-Users with full user management access can restrict selected users from participating in contact center interactions until they complete mandatory tasks or meet other requirements. If disabled, the user can't access contact center functionalities or appear in agent status lists. However, users can access Automation AI, Agent AI, or Search AI, based on their assigned roles and permissions. Disabled users appear with a `Disabled` tag in user management and agent selection lists. They do not appear in active analytics dashboards. This supports seamless permission control while preserving user visibility and data integrity.
+Users with full user management access can restrict selected users from participating in contact center interactions until they complete mandatory tasks or meet other requirements. If disabled, the user can't access contact center functionalities or appear in agent status lists. However, users can access Automation AI, Agent AI, or Search AI, based on their assigned roles and permissions. Disabled users appear with a `Disabled` tag in user management and agent selection lists. They don't appear in active analytics dashboards. This supports seamless permission control while preserving user visibility and data integrity.
 
 A pop-up message appears upon selecting queues and a disabled tag appears beside the user.  
 
