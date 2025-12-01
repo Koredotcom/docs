@@ -64,48 +64,48 @@ If the publishing status is set to Testing, you can add your test users by click
     * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
     * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
     * Prod Region Callback URL: https://idp.kore.com/workflows/callback
-10. This will generate the client ID. Download your credentials. The downloaded file is in JSON format and has **client id and client secret** amongst other fields. 
+10. This will generate the client ID. Download your credentials. The downloaded file is in JSON format and has *client id and client secret* amongst other fields. 
 
 ## Step 2: Configuring the Google Drive connector in SearchAI
 
 1. To configure the Google Drive connector, go to the Connectors under Sources and select Google Drive.
 2. Configure the authorization parameters for the connector and click Connect.
     * Name- Unique name for the connector.
-    * Authorization Type - Search AI supports **OAuth 2.0 for Google Drive.** Set this field accordingly.
+    * Authorization Type - Search AI supports *OAuth 2.0 for Google Drive.* Set this field accordingly.
     * Grant Type - Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports Authorization Code Grant Type for Google Drive. Refer to [this for more information on Grant types](../connectors.md).
     * Client ID - The client ID generated after registering SearchAI for OAuth authentication.
     * Client Secret - The secret generated after registering SearchAI for OAuth authentication.  
-3. Once the connection is successfully established, to synchronize the content at any time, go to the **Configurations** tab and click **Sync Now.** Go to the **Content** tab to view the content ingested into the application. 
+3. Once the connection is successfully established, to synchronize the content at any time, go to the *Configurations* tab and click *Sync Now.* Go to the *Content* tab to view the content ingested into the application. 
 
 ![Content](images/googledrive/content-tab.png "Content")
 
 ### Content Ingestion 
 
-After successfully connecting to Google Drive, the next step is to do the Synchronization configuration. This allows the connector to know what content is to be ingested from the drive. To do so, go to the **Configurations** tab and do the following configurations. 
+After successfully connecting to Google Drive, the next step is to do the Synchronization configuration. This allows the connector to know what content is to be ingested from the drive. To do so, go to the *Configurations* tab and do the following configurations. 
 
 * **Schedule Sync**- Enable this option if you want to set up a scheduler to automatically sync content with Google Drive at regular intervals. When enabled, set the time and frequency of the sync operation. The sync job runs at scheduled intervals in the background and ingests any updated content from the application. 
 
 * **Synchronization** - This field allows you to select the content to be ingested from the drive. You can choose to:
     1. Sync All Content - This option ingests all the data from Google Drive. 
-    2. Sync Specific Content - This option allows you to select the content to be ingested into the SearchAI application. Click on the **Configure** option. The following widget allows you to set up rules for filtering content. Set up rules and click **Save and Test**.
+    2. Sync Specific Content - This option allows you to select the content to be ingested into the SearchAI application. Click on the *Configure* option. The following widget allows you to set up rules for filtering content. Set up rules and click *Save and Test*.
 
 ![Configuration](images/googledrive/config-tab.png "Configuration")
 
 ### Content Filtering Rules
 
 Each rule gives you the option to choose the location on the drive from where the content is to be ingested. It can take the following values:
-    * **User Drive** includes only the locations owned by the account for which the Google Drive connector is configured. 
-    * **Shared Drive** includes only the locations shared with the account for which the Google Drive connector is configured. 
-    * **All Drives** include all the locations from the user drive as well as the shared drive. 
-    * **User Domain** 
+* **User Drive** includes only the locations owned by the account for which the Google Drive connector is configured. 
+* **Shared Drive** includes only the locations shared with the account for which the Google Drive connector is configured. 
+* **All Drives** include all the locations from the user drive as well as the shared drive. 
+* **User Domain** 
 
-Next, define conditions to choose the content from the selected location. To define a condition, specify a parameter, operator, and the value for the parameter.  For example, if you want to ingest all the files in a given folder set up a filter as shown below:
+Next, define conditions to choose the content from the selected location. To define a condition, specify a parameter, operator, and the value for the parameter. For example, if you want to ingest all the files in a given folder set up a filter as shown below:
 
 ![Example](images/googledrive/example1.png "Example")
 
 You can define conditions based on the following parameters or add your parameters too. Refer to [this](https://developers.google.com/drive/api/guides/ref-search-terms) for more information on the query parameters and the values that the parameters can take. 
 
-* **Folder Id** - Ingest data specifically from one or more folders. Provide the folder IDs as value. To find the folder ID, navigate to your folder in Google Drive, the unique ID that comes after “folder/” in the URL is the folder ID. For example, if the URL is “https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g,” then the Folder ID would be “1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g.”
+* **Folder Id** - Ingest data specifically from one or more folders. Provide the folder IDs as value. To find the folder ID, navigate to your folder in Google Drive, the unique ID that comes after “folder/” in the URL is the folder ID. For example, if the URL is `https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4nXXXXAXQ7mfUH11g`, then the Folder ID is `1dyUEebJaFnWa3Z4nXXXXAXQ7mfUH11g.`
 
 * **Mime Type** - Ingest a specific type of data. For example, use ‘application/pdf’ to ingest only pdf files from the drive. Supported MIME types include:
     * application/msword
