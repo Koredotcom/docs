@@ -27,7 +27,9 @@ Agentic App Node is most useful at a point in a workflow that involves decisions
 
 The Agentic App node enables seamless integration with the agentic apps to perform complex tasks within a workflow. In a workflow, the Agentic App Node acts as a bridge between the workflow and the agentic app, analyzing the task at hand, determining the optimal tools, and autonomously executing the next steps in the process. 
 
-When the workflow reaches the Agentic App Node, the workflow's contextual data is passed to the agentic app, which interprets the input, decomposes the task if needed, and decides which actions to take and in what order. This enables the workflow to adapt to changing conditions or inputs dynamically, automating complex tasks with greater intelligence and flexibility.
+When the workflow reaches the Agentic App Node, the input is passed to the Agentic app, which interprets it, decomposes the task if needed, performs the necessary processing, and returns the output for the following nodes in the workflow to use. This enables the workflow to handle complex tasks with greater intelligence and flexibility.
+
+Note that the Agentic App Node performs only one turn of communication per execution. For multi-step interactions, include additional Agentic App Nodes at the required points in the workflow.
 
 
 ![Agentic App Node](images/agentic-app/overview.png "Agentic App Node")
@@ -36,8 +38,9 @@ When the workflow reaches the Agentic App Node, the workflow's contextual data i
 
 ## Prerequisites
 
-* The Agentic App to be integrated must belong to the same workspace. 
 * The Agentic App must be deployed.
+* The Agentic App must belong to the same workspace as the workflow. 
+* The user account used to configure the Agentic app in AI for Process must have access to the Agentic app. 
 
 
 ## Add and Configure Agentic Node
