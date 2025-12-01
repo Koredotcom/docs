@@ -10,12 +10,12 @@ This update includes new features and enhancements summarized below.
 
 **OCR Usage & Billing Analytics**
 
-You can now track OCR credit consumption across your workspace with dedicated billing insights. This provides better visibility into document-processing costs and helps teams monitor usage more accurately.
+Users can now track OCR credit consumption across the workspace with dedicated billing insights. This provides better visibility into document-processing costs and helps teams monitor usage more accurately.
 
 Key capabilities:
 
 * OCR credits in Billing Overview: View total OCR usage for any date range alongside other credit categories.
-* OCR included in Usage breakdown chart: Understand how much OCR contributes to your overall consumption.
+* OCR included in Usage breakdown chart: Understand how much OCR contributes to the overall consumption.
 * New OCR tab under Billing → Usage: View detailed OCR deployment usage, including credits used and status.
 
 <hr>
@@ -40,7 +40,7 @@ Key Capabilities:
 
 **Centralized OCR Models Management for Docling and Azure**
 
-The new Manage OCR Models page provides a central location to configure and maintain document-processing engines for your workflows. The page enables you to deploy, update, and manage Docling and Azure Document Intelligence models, ensuring they are ready for use in the Doc Intelligence node.
+The new Manage OCR Models page provides a central location to configure and maintain document-processing engines for your workflows. The page enables users to deploy, update, and manage Docling and Azure Document Intelligence models, ensuring they are ready for use in the Doc Intelligence node.
 
 Key Capabilities:
 
