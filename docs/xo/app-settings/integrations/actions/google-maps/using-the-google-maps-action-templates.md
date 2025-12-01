@@ -13,7 +13,7 @@ Steps to create a dialog task using the Google Maps action templates:
 <img src="../images/google-maps-action-img11-tem-img2.png" alt="Select dialog and proceed" title="Select dialog and proceed" style="border: 1px solid gray;zoom:50%;"/>
 
 5. If you have not configured any integration for your AI Agent, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your AI Agent. For more information, see [Actions Overview](../actions.md){:target="_blank"}.  
-<img src="../images/google-maps-tem-img3.png" alt="Explore intefrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/google-maps-tem-img3.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ## Google Maps Actions
@@ -1139,4 +1139,4 @@ Steps to find locations using the Google Maps coordinates:
 <img src="../images/google-maps-action-img11-tem-img2.png" alt="VA prompts to get location using coordinates" title="VA prompts to get location using coordinates" style="border: 1px solid gray;zoom:50%;"/>
 
 6. To view the location details click and expand the desired item in the results.  
-<img src="../images/google-maps-action-img12-tem-img4.png" alt="View locaiton details" title="View location details" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/google-maps-action-img12-tem-img4.png" alt="View location details" title="View location details" style="border: 1px solid gray;zoom:50%;"/>
