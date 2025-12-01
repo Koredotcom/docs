@@ -7,7 +7,7 @@ Kore.ai offers a single AI ecosystem for all your enterprise use cases. This rep
 * **AI for Service (XO Platform)**: Reimagine quality service with AI agents who respond clearly in real time, while providing human agents with the necessary tools to handle inquiries with skill and confidence. [Learn more](https://docs.kore.ai/xo/home/).
 * **AI for Process**: Streamline business operations with autonomous AI agents that orchestrate complex workflows, optimize processes, and deliver measurable ROI at enterprise scale. [Learn more](https://docs.kore.ai/).
 
-## Doc CI/CD statuses
+## Documentation CI/CD statuses
 
 | Docset | Build | Stage or publish |
 |--------|------------------|--------------------|
