@@ -206,7 +206,7 @@ nav:
         - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
     - Supported Models: models/supported-models.md        
   - Prompts:
-    - About Prompt Studio: prompts/overview.md
+    - About Prompt Studio: prompts/about-prompt-studio.md
     - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
     - Using Prompt Studio: prompts/using-prompt-studio.md
     - Advanced Features: prompts/advanced-features.md

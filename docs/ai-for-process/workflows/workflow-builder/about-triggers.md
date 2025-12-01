@@ -4,12 +4,6 @@ Triggers are an advanced automation feature in AI for Process that allows workfl
 
 Triggers are configured in the Start node. You can use triggers alone or together with the Scheduler.
 
-Examples of Event Triggers
-
-* A customer’s balance drops below the required minimum → the workflow sends an automated email via Gmail.
-* A new document is uploaded → the workflow launches a review process.
-* A support ticket is updated to a *critical* status → the workflow notifies or routes it to the appropriate team.
-
 ## How Triggers Work
 
 * A trigger listens for real-time events from an integrated third-party app.

@@ -2,11 +2,58 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent AI for Process releases.
 
+## v1.0.4 November 24, 2025
+
+<u> Minor Release </u>
+
+This update includes new features and enhancements summarized below.
+
+**OCR Usage & Billing Analytics**
+
+You can now track OCR credit consumption across your workspace with dedicated billing insights. This provides better visibility into document-processing costs and helps teams monitor usage more accurately.
+
+Key capabilities:
+
+* OCR credits in Billing Overview: View total OCR usage for any date range alongside other credit categories.
+* OCR included in Usage breakdown chart: Understand how much OCR contributes to your overall consumption.
+* New OCR tab under Billing → Usage: View detailed OCR deployment usage, including credits used and status.
+
+<hr>
+
+## v1.0.3 November 13, 2025
+
+<u> Minor Release </u>
+
+This update includes new features and enhancements summarized below.
+
+**New Doc Intelligence Node to Automate Document Processing**
+
+The Doc Intelligence Node enables automated document processing directly within your workflows. It supports multiple AI engines, dynamic file inputs, and asynchronous execution for seamless automation. By automatically extracting text, layout, and structured data, it reduces manual effort, accelerates processing, and ensures consistent, accurate information for downstream tasks.
+
+Key Capabilities:
+
+* Supports Docling, OpenAI, Anthropic, and Azure Document Intelligence document-processing engines.
+* Accepts static URLs or workflow context variables as file input.
+* Runs asynchronously to avoid blocking workflows.
+* Extracts structured data for downstream automation.
+* Provides engine-specific configuration options for precise control.
+
+**Centralized OCR Models Management for Docling and Azure**
+
+The new Manage OCR Models page provides a central location to configure and maintain document-processing engines for your workflows. The page enables you to deploy, update, and manage Docling and Azure Document Intelligence models, ensuring they are ready for use in the Doc Intelligence node.
+
+Key Capabilities:
+
+* Deploy new Docling models with custom languages and resource allocation.
+* Manage multiple deployments and model connections.
+* Add and manage Azure Document Intelligence connections using API keys.
+* Enable, disable, or remove OCR models and connections directly from the list.
+
 ## v1.0.2 November 7, 2025
 
 <u> Minor Release </u>
 
-This update includes new features, enhancements, and bug fixes summarized below.
+This update includes a new feature summarized below.
 
 **New Agentic Node**
 
@@ -14,15 +61,12 @@ AI for Process introduces the Agentic App Node, enabling workflows to invoke and
 
 <hr>
 
-
-
 ## v1.0.1 October 14, 2025
 
 <u> Minor Release </u>
 
 This update includes new features, enhancements, and bug fixes summarized below.
 
-<font size="4">Workflows</font>
 
 **Inactivity Alerts for Deployed Workflow Triggers**
 
