@@ -4,7 +4,7 @@ This allows supervisors to drill down into language-specific evaluation data and
 
 ## Access Agent Dashboard - Evaluation
 
-You can access the **Agent-Specific Dashboard** - **Evaluation** by navigating to **Quality AI** > **ANALYZE** > **Dashboard** > **Evaluation**.    
+Navigate to **Quality AI** > **ANALYZE** > **Dashboard** > **Evaluation**.    
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
 ### Filter Options
@@ -50,7 +50,7 @@ After selecting interactions, the supervisor can create a coaching session with 
 
 Steps to add coaching assignments:
 
-1. By default, the following **Add Coaching Assignments** screen is displayed when you select any interactions**.     
+1. By default, the following **Add Coaching Assignments** screen is displayed when you select any interactions.     
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-selection.png" alt="Add Coaching Assignments Selection" title="Add Coaching Assignments Selection" style="border: 1px solid gray; zoom:60%;">
 
 2. Click the **Add Coaching Assignment** button.   
@@ -73,7 +73,7 @@ Steps to add coaching assignments:
         You can select more than one bookmark based on the evaluation criteria.    
  
         For example, one set of interactions for the support queue and another set of interactions for the best responses to get populated in the selected interactions box.   
-        <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-selected-iteractions.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
+        <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-selected-interactions.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">
 
 7. Click the **View Interactions** button, and the supervisors can get more insights from the AI-Audit screen related to coaching of the agents, implement training programs, and make informed decisions.  
 <img src="../agent-leaderboard/images/agent-dashboard-sup-eva-added-interactions-audit-view.png" alt="Agent Dashboard-Sup View" title="Agent Dashboard-Sup View" style="border: 1px solid gray; zoom:60%;">

@@ -30,8 +30,8 @@ Before using AI-Assisted Manual Audit, ensure you have:
 
 ## AI-Assisted Manual Audit Access 
 
-You can access AI-Assisted Manual Audit by navigating to **Quality AI** > **Analyze** > **Conversation Mining** > **Audit Allocations**.  
-<img src="../ai-assist-manual-edit/images/audit-allocations.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
+Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Audit Allocations**.  
+<img src="../ai-assist-manual-edit/images/audit-allocations.png" alt="AI Assisted Manual Audit Page" title="AI Assisted Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Interface overview
 
@@ -48,6 +48,7 @@ Supervisors can access the audit screen in the following ways:
 This Audit screen comprises three primary tabs:
 
 * **Audit Tab**
+
     * Main evaluation workspace with transcript and metrics.
 
     * Displays selected metrics as tabs with input capabilities.
@@ -439,8 +440,8 @@ This feature allows supervisors or administrators to filter and sort compliance 
 
 * **Adhered**: The response fully meets the compliance requirement.
 * **Not Adhered**: The response does not meet the compliance requirement.
-* **Not Applicable**: The question is not relevant to the specific context.	
-<img src="../ai-assist-manual-edit/images/conv-filter.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
+* **Not Applicable**: The question is not relevant to the specific context.	  
+<img src="../ai-assist-manual-edit/images/conversation-filter.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
 
 **Self-Assignment for Audit**
 
@@ -470,7 +471,7 @@ Steps to Self-Assign an Interaction for Audit:
 #### Comments
 
 This section displays all feedback provided by auditors during the evaluation process. It provides a comprehensive list of auditor-submitted notes for each interaction. All the submitted comments appear both in the Conversation **Transcript** and in the **Comments** tab, with commenter details shown based on privacy settings (For example, Hide Auditor Details).  
-<img src="../ai-assist-manual-edit/images/annonymous.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/anonymous.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
 **Message-Level Comments**
 
@@ -500,7 +501,7 @@ Once submitted, message-level comments are displayed:
 
     !!! note
 
-        Auditors or supervisors can add therir comments in the **By Question, By Value**, and in the **By AI Agents** question metrics, when they are self-assigning the audit to themselves. 
+        Auditors or supervisors can add their comments in the **By Question**, **By Value**, and in the **By AI Agents** question metrics, when they are self-assigning the audit to themselves. 
 
 **Comment Types**:
 
@@ -629,9 +630,9 @@ Each row lists a terminated interaction (by an agent), with columns:
 
     * When toggled off, auditor details are visible in the audit screen.
       
-        !!! note
+    !!! note
 
-            Only the supervisors can view the auditor details. The agents are restricted from viewing the auditor details.
+        Only the supervisors can view the auditor details. The agents are restricted from viewing the auditor details.
 
 **Evaluation Marking (Yes/No/N/A):** 
 
@@ -681,7 +682,7 @@ This page shows how to view the conversation history to evaluate interactions:
 * Conversation Details, such as Start Time and End Time, Agent name, Queue, and Customer Phone number. 
 * Audit Details, such as Auditor Name, Audit Date, Audit Score, and Kore Evaluation Score.
 * Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.  
-<img src="../ai-assist-manual-edit/images/ai-assist-conv-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../analyze/conversation-mining/images/conversation-mining-audit-view.png" alt="Audit Page" title="Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Logs
 

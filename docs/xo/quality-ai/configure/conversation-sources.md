@@ -4,7 +4,7 @@ The Conversation Sources enables Quality AI to ingest voice and chat data from C
 
 ## Access Conversation Sources
 
-Access Conversation Sources by navigating to **Quality AI** > **Configuration** > **Conversation Sources**.   
+Navigate to **Quality AI** > **CONFIGURE** > **Conversation Sources**.   
 <img src="../conversation-sources/conversation-sources.png" alt="Conversation Sources" title="Conversation Sources" style="border: 1px solid gray; zoom:80%;">
 
 ## Supported Sources

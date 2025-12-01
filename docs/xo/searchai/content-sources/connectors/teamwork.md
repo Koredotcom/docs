@@ -64,7 +64,7 @@ On the Authentication page of the connector, provide the following information.
 * Authorization Type - Teamwork supports OAuth 2.0. 
 * Grant Type - Set this to Authorization Code
 * Client ID and Client Secret - Use the credentials generated in the Teamwork app. 
-* Domain - Provide the Teamwork domain from where the content is to be ingested. If the complete domain is like [https://&lt;your-specific-teamname>.teamwork.com](https://{yourTeamworkURL}.com/developer), enter “[&lt;your-specific-teamname>](https://{yourTeamworkURL}.com/developer)”.
+* Domain - Provide the Teamwork domain from where the content is to be ingested. If the complete domain is like [https://&lt;your-specific-teamname>.teamwork.com](https://{yourTeamworkURL}.com/developer), enter “[&lt;your-specific-team-name>](https://{yourTeamworkURL}.com/developer)”.
 * Click **Connect**. This initiates the authentication process. 
 
 ## Content Ingestion
