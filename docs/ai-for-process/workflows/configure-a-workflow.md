@@ -9,8 +9,6 @@ You can set the sync/async mode configuration for the workflow endpoint. If you 
 Steps to enable and configure the asynchronous mode:
 
 1. Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
-
 2. Select the workflow to modify its configuration. The Workflow page is displayed.
 3. Click **Configurations** in the left navigation and then click **Setup sync/async**.  
 <img src="../images/setup-sync-async.png" alt="Setup sync/async" title="Setup sync/async" style="border: 1px solid gray; zoom:60%;">

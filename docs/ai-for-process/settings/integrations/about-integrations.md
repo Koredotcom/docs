@@ -1,6 +1,6 @@
 # Integration with Third-party Services
 
-The **Integrations** feature connects your AI for Process account to third-party services, streamlining access to external workflows and automating workflows. Once connected, you can use these integrations from the workflow canvas to build high-quality AI applications. [Learn more](../../workflows/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
+The **Integrations** feature connects your AI for Process account to third-party services, streamlining access to external workflows and automating workflows. Once connected, you can use these integrations from the workflow canvas to build high-quality AI applications. [Learn more](../../workflows/workflow-builder/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
 The AI for Process supports 120+ integrations with different authorization types. To enable secure access, create a connection using third-party authentication to verify users. The main authentication methods are:
 
@@ -1699,7 +1699,7 @@ To add a connection and configure an integration, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can also add a connection directly from the <b>Integration node</b> on the Workflow canvas. <a href="../../../ai-agents/tools/tool-flows/types-of-nodes/integration-node" target="_blank">Learn more</a>.</p>
+<p>You can also add a connection directly from the <b>Integration node</b> on the Workflow canvas. [Learn more](../../workflows/workflow-builder/types-of-nodes/integration-node.md){:target="_blank"}.</p>
 </div>
 
 1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} **Integrations**.

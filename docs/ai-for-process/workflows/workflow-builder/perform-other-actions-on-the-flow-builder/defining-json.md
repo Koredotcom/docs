@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to AI node](../types-of-nodes/image-to-text-node.md#step-3-configure-the-node)
+
 # Defining JSON Schema
 
 You can refer to the following JSON schema format to define your schema:

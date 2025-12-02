@@ -186,7 +186,7 @@ The following modules and features are supported on the **Settings** Console:
 <li>Create and configure secure connections across multiple categories like marketing, AI, sales, and more.</li>
 <li>Pre-authorize the connection using the required auth method.</li>
 <li>Add authorization credentials to secure the connection when users interact with the workflow.</li>
-<li>Use the configured connection in the <a href="./../workflows/tool-flows/types-of-nodes/integration-node" target="_blank">Integration node</a> to seamlessly access third-party services while building the workflow.</li>
+<li>Use the configured connection in the <a href="../../workflow-builder/types-of-nodes/integration-node.md" target="_blank">Integration node</a> to seamlessly access third-party services while building the workflow.</li>
 </ul>
    </td>
   </tr>
@@ -200,12 +200,12 @@ The following modules and features are supported on the **Settings** Console:
 <li>Review and deploy the custom script into the platform.</li>
 <li>Perform actions like re-deploy, delete, export and more on the deployed scripts based on the current status.</li>
 <li>View and manage the Overview, Deployment history, Endpoint, and API Keys pages for the script.</li>
-<li>Select and execute the configured custom script through the <a href="./../workflows/tool-flows/types-of-nodes/function-node" target="_blank">Function node</a> of the workflows flow.</li>
+<li>Select and execute the configured custom script through the <a href="../../workflow-builder/types-of-nodes/function-node" target="_blank">Function node</a> of the workflows flow.</li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><a href="../../guardrails/overview" target="_blank">Manage Guardrails</a></td>
+   <td>[Manage Guardrails](../../agent-platform/guardrails/overview.md){:target="_blank"}</td>
    <td>Deploy models to make them available for anomaly scanners in all the workflows. 
    </td>
    <td>

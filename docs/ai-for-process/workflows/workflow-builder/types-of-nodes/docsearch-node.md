@@ -63,8 +63,6 @@ After fetching the Search AI application credentials, configuring the source, an
 **Steps to integrate Search AI in AI for Process**
 
 * Log in to your AI for Process account. Click **Settings**.
-   <img src="../aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
-
 * Click **Integrations** on the left navigation menu.
 * Scroll down to **Search AI** and click **Add connection**.
   <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 0px solid gray; zoom:75%;">
@@ -91,7 +89,6 @@ After fetching the Search AI application credentials, configuring the source, an
 ### Step 3(A): Open Workflow Builder
 
 * Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 * Select your workflow → Click **Go to Flow**.
 
@@ -152,7 +149,7 @@ To run and test the flow, follow the steps below:
 
      <img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
-   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow.
+   The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../workflows/workflow-builder/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow.
 
 <div class="admonition note">
 <p class="admonition-title">Accessing the Output</p>
@@ -169,6 +166,3 @@ Use that key in your workflow. You may also need to extract multiple chunks from
 
 * [Manage Nodes in Workflow](./../manage-flow-nodes.md){:target="_blank"} - Add and manage nodes on the canvas.
 * [Run Workflow](./../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} - Run and test an workflow in real time.
-
-
-

@@ -2,7 +2,7 @@
 
 The **Workflows Analytics Dashboard** offers a unified and comprehensive workflow for tracking and analyzing the performance of the deployed workflows and their specific versions within your account.
 
-It provides valuable insights into metrics such as successful or failed workflow runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../workflows/tool-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a workflow.
+It provides valuable insights into metrics such as successful or failed workflow runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../workflows/workflow-builder/manage-flow-nodes.md){:target="_blank"} about managing nodes in a workflow.
 
 Key metrics are displayed intuitively using visually engaging graphs and dynamic widgets, which update based on the selected filters. 
 
@@ -190,7 +190,7 @@ You can do the following to analyze workflow performance:
 
 **Single Day**
 
-* View the average workflow response time for each hourly request within a day. For instance, if the workflow executes 100 requests between 12 PM and 1 PM, each with its own response time, the average of these values is represented by the graph line.  Hover over the corresponding data point on the graph to view the ART for a specific hour. The tooltip shows the selected date & time, ART for the hour, and the no.of requests processed during that hour.
+* View the average workflow response time for each hourly request within a day. For instance, if the workflow executes 100 requests between 12 PM and 1 PM, each with its own response time, the average of these values is represented by the graph line. Hover over the corresponding data point on the graph to view the ART for a specific hour. The tooltip shows the selected date & time, ART for the hour, and the no.of requests processed during that hour.
 * View the overall ART, which is the total of the ART for all hours combined during the selected day.
 
 <img src="../images/overall-art.png" alt="overall art" title="overall art" style="border: 1px solid gray; zoom:75%;">
@@ -233,18 +233,12 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 <ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li></ul>
 
    * Start Node
-   * [AI Node](../../../workflows/tool-flows/types-of-nodes/ai-node.md){:target="_blank"}
-   * [Function Node](../../../workflows/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
-   * [Condition Node](../../../workflows/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
-   * [API Node](../../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
-   * [DocSearch Node](../../../workflows/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
-   * [End Node](../../../workflows/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
-   * [AI Node](../../../workflows/tool-flows/types-of-nodes/ai-node.md){:target="_blank"}
-   * [Function Node](../../../workflows/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
-   * [Condition Node](../../../workflows/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
-   * [API Node](../../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
-   * [DocSearch Node](../../../workflows/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
-   * [End Node](../../../workflows/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
+   * [AI Node](../../../workflows/workflow-builder/types-of-nodes/ai-node.md){:target="_blank"}
+   * [Function Node](../../../workflows/workflow-builder/types-of-nodes/function-node.md){:target="_blank"}
+   * [Condition Node](../../../workflows/workflow-builder/types-of-nodes/condition-node.md){:target="_blank"}
+   * [API Node](../../../workflows/workflow-builder/types-of-nodes/api-node.md){:target="_blank"}
+   * [DocSearch Node](../../../workflows/workflow-builder/types-of-nodes/docsearch-node.md){:target="_blank"}
+   * [End Node](../../../workflows/workflow-builder/types-of-nodes/end-node.md){:target="_blank"}
 
 <p><b>Best Practices</b></p>
 
@@ -291,7 +285,7 @@ The **Workflows Analysis Dashboard** offers actionable and customized insights o
 ## Related Information
 
 * [Settings Console](../../overview.md){:target="_blank"}- Learn more about other workflow admin features.
-* [Workflow Change Logs](../../../workflows/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a workflow's flow.
+* [Workflow Change Logs](../../../workflows/workflow-builder/workflow-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a workflow's flow.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for workflows, set limits, and track usage trends.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
