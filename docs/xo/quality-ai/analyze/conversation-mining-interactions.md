@@ -28,7 +28,7 @@ The **Interactions** dashboard includes the following elements:
   <img src="../conversation-mining/images/conversation-mining-interaction-intent-tags.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
 * **Actions**: Allows you to assign the interaction to a bookmark for later reference.  
-<img src="../conversation-mining/images/actions-tags.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
+<img src="./conversation-mining/images/actions-tags.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -38,7 +38,7 @@ The **Interactions** dashboard includes the following elements:
 
     * **Pass**: Displays a green icon when all processes have succeeded, and metric adherence is captured.
 
-    * **Fail**: Displays a red icon when all processes have not succeeded, and metric adherence is not captured.   
+    * **Failed**: Displays a red icon when all processes have not succeeded, and metric adherence is not captured.   
 <img src="../conversation-mining/images/processing-status.png" alt="Processing Status" title="Processing Status" style="border: 1px solid gray; zoom:80%;">
 
 * **Queues**: Shows the queue where the system terminated during the interaction.
@@ -49,9 +49,9 @@ The **Interactions** dashboard includes the following elements:
 
 * **Keywords**: Shows detailed keyword-related information to prioritize conversations by relevance to your keyword filters, such as:
 
-    * **Total Keyword Match Count**: Displays the total number of "Include" keyword matches per interaction. Example: If "refund" appears 1 time, the match count is 1.
+    * **Total Keyword Match Count**: Displays the total number of `Include` keyword matches per interaction. Example: If `refund` appears 1 time, the match count is 1.
 
-    * **Match Type Indicator**: Shows whether the match is found using “AND” or “OR” logic with color coding.
+    * **Match Type Indicator**: Shows whether the match is found using `AND`or `OR` logic with color coding.
 
         * **AND**: All keywords matched.
         * **OR**: Partial keyword match.
@@ -59,7 +59,7 @@ The **Interactions** dashboard includes the following elements:
     * **Filter Integration**: The applied keyword filters on the Conversation Mining (Interactions) page are saved in sessions. The session preserves filters across pages and views; integrates with other filters using AND logic, and maintains active filter states throughout navigation.  
 <img src="../conversation-mining/images/keywords-interactions.png" alt="Keywords Column" title="Keywords Column" style="border: 1px solid gray; zoom:80%;">
 
-* **Kore Evaluation Score**: Displays the Auto QA score for an interaction based on the evaluation form completed by agents. Hover over the warning icon to see the agent’s API processing status (Pass, Fail, or Disabled). Click a conversation to open the Conversation Mining page for related Audit, Conversation Details, and Logs.
+* **Kore Evaluation Score**: Displays the Auto QA score for an interaction based on the evaluation form completed by agents. Hover over the warning icon to see the agent’s API processing status (Pass, Failed, or Disabled). Click a conversation to open the Conversation Mining page for related Audit, Conversation Details, and Logs.
 
 * **Sentiment Trend**: Displays the distribution of positive, negative, and neutral tones across a conversation. It tracks sentiment changes during the call, highlights resolution tone with a special scoring method, and summarizes overall sentiment. 
 
@@ -272,7 +272,7 @@ This category analyzes interaction dynamics and conduct between agents and custo
 
 #### Metric Name
 
-This filter enables supervisors to view interactions by specific evaluation metrics. Use radio buttons to filter by Pass or Fail and select a metric from the drop-down list to refine results.  
+This filter enables supervisors to view interactions by specific evaluation metrics. Use radio buttons to filter by Pass or Failed and select a metric from the drop-down list to refine results.  
 <img src="../conversation-mining/images/metric-name.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
 
 #### Metric Qualification
