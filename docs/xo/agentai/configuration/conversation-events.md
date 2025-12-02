@@ -28,7 +28,7 @@ In this section, you can select a pre-configured dialog task and channel and cho
 4. Click **CONFIGURATION** > **Conversation Events** > **Welcome Events**.
 5. Click to expand the **Configure On-Connect Dialog Task** section.
 6. Click the **toggle** button to enable it (if it’s in **Disabled** status).
-7. Select a channel – **Chat**, **Voice**, or **Email**.
+7. Select a channel—**Chat**, **Voice**, or **Email**.
 8. Select a configured dialog task from the **Select Dialog** list.
 9. Select the **Extract intents from On Connect Dialog task** radio button. 
 
@@ -141,7 +141,7 @@ This section lets you configure how to autogenerate a conversation summary at th
 
 !!! note
 
-    Conversation Summary confiuration is applicable only for third-party agent desktops.
+    Conversation Summary configuration is applicable only for third-party agent desktops.
 
 #### Steps to set Conversation Summary 
 
