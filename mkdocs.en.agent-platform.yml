@@ -212,7 +212,7 @@ nav:
       - MCP Tools: 
         - About MCP Tools: ai-agents/tools/mcp-tools.md
         - Configure MCP server: ai-agents/tools/configure-mcp-server.md    
-      - Context Object Structure: ai-agents/context-object.md
+      - Context Object: ai-agents/context-object.md
     - App Settings:
         - System Events: ai-agents/agentic-apps/settings/events.md
         - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
@@ -241,7 +241,7 @@ nav:
       - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md
       - Initiate Live Agent Handoff from Agentic Apps: ai-agents/agentic-apps/howto/initiate-live-agent-handoff.md
       - Use Metadata passed via APIs in Agentic Apps: ai-agents/agentic-apps/howto/use-metadata.md
-      - Voice Channel integration between AI for Service and Agent Platform: ai-agents/agentic-apps/howto/voice-interactions.md
+      - Real-time Voice Interaction between AI for Service and Agent Platform: ai-agents/agentic-apps/howto/voice-interactions.md
 
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
