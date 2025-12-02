@@ -224,31 +224,31 @@ After completing the transfer or end actions, the interface:
 
 ## Agents
 
-You can check agent details and monitor and intervene in ongoing conversations. The agents in this section are restricted to those assigned to the same queues as you. A list of conversations currently being handled by the agents is displayed with parameters such as state, load, first response, average response, AHT, etc.
+You can check agent details and monitor and intervene in ongoing conversations. Agents in this section are restricted to those assigned to the same queues as you. A list of conversations handled by the agents appear with parameters such as state, load, first response, average response, Average Handle Time (AHT), etc.
 
-Clicking the sort icon allows you to sort the columns in ascending or descending order. The default sorting is by State.
+Selecting the sort icon enables you to sort the columns in ascending or descending order. The default sorting is by State.
 
 !!! Note
 
     Sorting is unavailable for automation interactions. Removing offline agents improves performance when sorting by load, but offline agents will not be visible in this mode.
 
-The following metrics and their total counts are displayed:
+The following metrics and their total counts appear:
 
 * **Completed**: Count of interactions completed and closed by the agent.
 * **Transferred**: Count of interactions an agent has transferred to a queue or another agent.
-* **Rejected**: Count of interactions explicitly rejected by an agent using the reject button.
-* **Unanswered**: Count of interactions assigned to an agent where the agent did not pick up the interaction within the acceptance timeout.  
+* **Rejected**: Count of interactions explicitly rejected by an agent.
+* **Unanswered**: Count of interactions assigned to an agent where the agent didn't pick up the interaction within the acceptance timeout.  
 
 The channel selection status appears on the Agents tab beside the Agent’s name. Active channels appear in Green and the disabled channels appear in Gray color.  
 <img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">  
-If an agent selects a channel and logs out at the end of the day, the previously selected channel persists when the agent starts a new session. Active channels appear in green, while disabled channels appear in amber for the supervisor.
+If an agent selects a channel and logs out at the end of the day, the previously selected channel persists when the agent starts a new session. Active channels appear in green, while disabled channels appear in gray for the supervisor.
 
 * Hovering over an agent’s name displays a pop-up with the following information:
 
     * Agent status (for example, Available, Busy, Inactive).
     * Agent Name and profile icon, email ID, phone number, role.
     * Skills assigned to the agent.
-    * Queues the agent is associated with.
+    * Queues associated with the agent.
     * Agent Groups the agent is part of.  
         <img src="../images/agent-name-hover.png" alt="Agent Name Hover" title="Agents Name Hover" style="border: 1px solid gray; zoom:80%;">  
 
@@ -258,7 +258,7 @@ If an agent selects a channel and logs out at the end of the day, the previously
 * On the monitor tab, select an agent on the left side. The supervisor can view the agent’s ongoing conversation on the right and check the engagement metrics.  
     <img src="../images/agents-details.png" alt="Engagement Metrics" title="Engagement Metrics" style="border: 1px solid gray; zoom:80%;">
 
-* On the right window, click the agent’s name.  Another window opens to the right as shown below. To check the agent engagement metrics, on the right window, click the down arrow as shown below:  
+* On the right window, Select the agent’s name. Another window opens to the right. To check the agent engagement metrics, on the right window, select the down arrow:  
 
     **Chat**, **Messaging**, and **Voice**:
 
