@@ -11,7 +11,6 @@ In the following steps, you will learn how to add an input scanner. The steps to
 Steps to add a Scanner:
 
 1. Log in to your account.
-   <img src="../types-of-nodes/images/access-workflows.png" alt="access workflow" title="access workflow" style="border: 1px solid gray; zoom:75%;">
 
 2. In the **Workflows** section, click the workflow to which you want to add the scanner. The Workflow page is displayed. 
 

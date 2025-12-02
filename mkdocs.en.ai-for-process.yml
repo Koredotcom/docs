@@ -16,6 +16,7 @@ theme:
     - navigation.top
     - navigation.path
     - navigation.footer
+    - navigation.instant
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -59,10 +60,8 @@ extra:
           name: This page could be improved
           data: 0
           note: >-                       
-            Thanks for your feedback! Help us improve this page by
-            using our <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Feedback Form<a>.            
+            Thanks for your feedback!
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - extra_js/feedback.js
 markdown_extensions:
@@ -72,6 +71,11 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - toc:
       permalink: true
       title: On this Page
@@ -106,6 +110,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets:
+      base_path: .
 
 copyright: |
   © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
@@ -113,7 +119,7 @@ nav:
   - Home : home.md
   - Getting Started: 
     - AI for Process Overview: getting-started/introduction.md
-    - Accessing AI for Process: getting-started/sign-up-sign-in.md        
+    - Accessing AI for Process: getting-started/accessing-ai-for-process.md        
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
   - Workflows: 
@@ -122,6 +128,7 @@ nav:
     - Import a Workflow: workflows/import-a-workflow.md
     - Workflow Builder:
       - About Workflow Builder: workflows/workflow-builder/flows-overview.md
+      - About Triggers: workflows/workflow-builder/about-triggers.md
       - Manage Flows: 
         - Manage Nodes in Flows: workflows/workflow-builder/manage-flow-nodes.md
         - Manage Input and Output: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
@@ -142,6 +149,7 @@ nav:
         - DocSearch Node: workflows/workflow-builder/types-of-nodes/docsearch-node.md 
         - Loop Node: workflows/workflow-builder/types-of-nodes/loop-node.md  
         - Human Node: workflows/workflow-builder/types-of-nodes/human-node.md 
+        - Agentic App Node: workflows/workflow-builder/types-of-nodes/agentic-app-node.md
         - End Node: workflows/workflow-builder/types-of-nodes/end-node.md 
       - Workflow Change Log: workflows/workflow-builder/workflow-canvas-change-log.md    
     - Sharing & Permissions: 
@@ -164,7 +172,7 @@ nav:
     - Configurations:
       - Configure a Workflow: workflows/configure-a-workflow.md
       - Export a Workflow: workflows/export-a-workflow.md
-      - Import Workflow as a Version: workflows/import-a-workflow/#import-workflow-as-a-version 
+      - Import Workflow as a Version: workflows/import-a-workflow.md
   - Inbox: 
     - About Inbox: workflows/inbox.md
   - Models: 
@@ -198,7 +206,7 @@ nav:
         - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
     - Supported Models: models/supported-models.md        
   - Prompts:
-    - About Prompt Studio: prompts/overview.md
+    - About Prompt Studio: prompts/about-prompt-studio.md
     - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
     - Using Prompt Studio: prompts/using-prompt-studio.md
     - Advanced Features: prompts/advanced-features.md

@@ -47,7 +47,7 @@ You can add audio input in one of the following ways:
 1. Manually select and upload an audio file in the allowed format.
 2. Configure the **Input variable** by selecting <b><i>Text</i></b> for **Type** in the following window when adding input variables for the node. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}. 
 
-   You must provide the audio file URL when running the flow, as mentioned [here](../../../workflows/tool-flows/types-of-nodes/audio-to-text-node.md/#step-3-run-the-flow){:target="_blank"}.
+   You must provide the audio file URL when running the flow, as mentioned [here](../../../workflows/workflow-builder/types-of-nodes/audio-to-text-node.md/#step-3-run-the-flow){:target="_blank"}.
 
    <img src="../images/select-text-input-type.png" alt="select text type input" title="select text type input" style="border: 1px solid gray; zoom:75%;">
 
@@ -95,8 +95,8 @@ This node is commonly used for:
 
 ### Translation
 
-* Transcribes and translates speech in non-English languages (see [Open AI Whisper-supported language](https://platform.openai.com/docs/guides/speech-to-text#supported-languages){:target="_blank"}) into English when enabled.
-* Inverse translation (English to other languages) is not currently supported.
+* Transcribes and translates speech in non-English languages see [Open AI Whisper-supported language](https://platform.openai.com/docs/guides/speech-to-text#supported-languages){:target="_blank"} into English when enabled.
+* Inverse translation (English to other languages) isn't currently supported.
 
 
 ### Important Considerations
@@ -155,7 +155,7 @@ Metrics include:
       For example, if “<i>ConversationFile</i>” stores the audio file URL (passed dynamically during runtime), you can reference it in the prompt using the syntax <code>{{context.steps.Start.ConversationFile}}</code>, as shown below.
       <img src="../images/dynamic-prompt-example.png" alt="dynamic prompt example" title="dynamic prompt example" style="border: 1px solid gray; zoom:75%;">
     
-      You may include simple instructions regarding the style of the transcription, correct words or proper nouns, in case the model could not figure out what the spoken word was, fix punctuations, add context, and more. 
+      You may include simple instructions regarding the style of the transcription, correct words or proper nouns, in case the model couldn't figure out what the spoken word was, fix punctuations, add context, and more. 
       
       For example, "<i>Use a clean verbatim transcription style by omitting filler words such as “um,” “uh,” or “you know.” Correct any misheard or unclear words, especially product names, company names, and technical terms. Ensure proper punctuation and sentence casing to make the transcript easy to read. If a word is not clear, mark it as "inaudible" with a timestamp. Add short speaker labels (Customer: and Agent:) and make light contextual corrections for grammar and clarity without altering the original meaning."</i>
 
@@ -166,7 +166,7 @@ Metrics include:
                 
     <div class="admonition warning">
     <p class="admonition-title">Standard Error</p>
-    <p>When the Model is not selected, the prompt details are not provided, or both, the error message “<i>Proper data needs to be provided in the LLM node</i>” is displayed.</p>
+    <p>When the Model isn't selected, the prompt details aren't provided, or both, the error message “<i>Proper data needs to be provided in the LLM node</i>” is displayed.</p>
     </div>
 
     * **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
@@ -188,7 +188,7 @@ Metrics include:
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-* Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
+* Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}.
 
     <img src="../images/add-input-variable-audio-to-text.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
@@ -227,6 +227,3 @@ To run and test the flow, follow the steps below:
   The **Debug** window generates the flow log and results, as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the workflow.
 
    <img src="../images/debug-window-audio-to-text.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">
-
-
-

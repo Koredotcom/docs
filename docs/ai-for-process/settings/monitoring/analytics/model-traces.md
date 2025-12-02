@@ -133,7 +133,7 @@ The UI summarizes key metrics for the selected period, offering actionable insig
     * If a model's P90 is 100 seconds, it means that 99% of the requests are completed within 100 seconds.
     * If a model's P99 is 100 seconds, it means that 99% of the requests are completed within 100 seconds.
 * **Failure Rate**: Indicates the number of requests/runs that failed with an error code or were not serviced by the model out of the total requests sent since deployment. For example, if 5 requests failed out of 100, the failure rate displayed is 5%.
-* **Hosting Credits**: Displays the credits consumed in your account by the deployed model based on its usage. Please see the pricing details [here](../../../models/hardware-pricing.md){:target="_blank"}. This metric allows for a comparison of credit consumption against actual model usage.
+* **Hosting Credits**: Displays the credits consumed in your account by the deployed model based on its usage.  This metric allows for a comparison of credit consumption against actual model usage.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -327,7 +327,7 @@ The table below summarizes the available columns along with their supported oper
    <td rowspan="3" >
 <ul>
 
-<li><strong>Workflow</strong>: The request was sent to the model from a workflow. <a href="../../../../ai-agents/tools/overview" target="_blank">Learn more</a>.</li>
+<li><strong>Workflow</strong>: The request was sent to the model from a workflow. [Learn more](../../../workflows/overview.md){:target="_blank"}.</li>
 
 <li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="../../../../prompts/using-prompt-studio" target="_blank">Learn more</a>.</li>
 

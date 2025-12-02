@@ -4,22 +4,22 @@ The AI for Process now allows admins to import, deploy, and manage custom script
 
 A powerful script deployment wizard enables users to easily upload, configure, and deploy custom scripts in isolated containers. By leveraging container isolation, this feature enhances security while providing flexibility in configuring runtime and scaling settings.
 
-Once deployed, these scripts can be run via the [API node’s](../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"} endpoint when building the workflow. Additionally, the custom scripts can be embedded in the [Function node](){:target="_blank"} of the workflow automation flow and executed when the node flow is run.
+Once deployed, these scripts can be run via the [API node’s](../../workflows/workflow-builder/types-of-nodes/api-node.md){:target="_blank"} endpoint when building the workflow. Additionally, the custom scripts can be embedded in the [Function node](){:target="_blank"} of the workflow automation flow and executed when the node flow is run.
 
 
 On the **Manage Custom Scripts** page, admins can upload a complete script project file, including all definitions and logic, without writing any code in the function node. This allows them to seamlessly port their code or project from a local system into the product and start using it immediately.
 
 You can import a custom script with reusable functions and invoke it from anywhere within the platform using a secure API key at the endpoint. This adds flexibility and offers the following benefits to the workflows' automation flow:
 
-* **Task Automation** – Automate repetitive or complex tasks that would otherwise require manual intervention. 
+* **Task Automation**: Automate repetitive or complex tasks that would otherwise require manual intervention. 
 
-* **Secure API Integration** – Integrate custom scripts into the apps using API endpoints and secure authentication. 
+* **Secure API Integration**: Integrate custom scripts into the apps using API endpoints and secure authentication. 
 
-* **Customization** – Implement custom logic or workflows tailored to unique business needs. 
+* **Customization**: Implement custom logic or workflows tailored to unique business needs. 
 
-* **Data Processing** – Transform, filter, or validate data in a way that aligns with specific operational requirements. 
+* **Data Processing**: Transform, filter, or validate data in a way that aligns with specific operational requirements. 
 
-* **Error Handling** – Create tailored error-checking and fallback mechanisms beyond standard system behavior. 
+* **Error Handling**: Create tailored error-checking and fallback mechanisms beyond standard system behavior. 
 
 
 You can import a script by uploading the file in one of the supported formats, validating it, configuring runtime settings and system resources, and deploying scripts after reviewing errors. 
@@ -803,10 +803,10 @@ To add a deployed custom script via the endpoint into the API node, follow the s
     * Click the **Test** button at the top-right corner of the dialog. The API response is displayed on the **Response** tab.
     * Click **Save** at the top-right corner of the dialog.
 
-    Please refer to the [API node](../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"} for more information.
+    Please refer to the [API node](../../workflows/workflow-builder/types-of-nodes/api-node.md){:target="_blank"} for more information.
 
     ## Related Links
     
     * **Settings Console** - [Learn more](../../settings/overview.md){:target="_blank"} about other AI for Process admin features.
-    * **API Node** - [Learn more](../../workflows/tool-flows/types-of-nodes/api-node.md){:target="_blank"} about configuring the API node via endpoint.
+    * **API Node** - [Learn more](../../workflows/workflow-builder/types-of-nodes/api-node.md){:target="_blank"} about configuring the API node via endpoint.
 
