@@ -45,14 +45,14 @@ For more information on auth types, refer to [this](../connectors.md).
 
 When you use basic authentication, no server‑side configuration is required. Go to step 2 to configure the connector in Search AI.
 
-**OAuth 2.0 Authentication**
+**OAuth 2.0**
 
 1. Register Search AI as an OAuth client in Confluence Server.
 2. Configure the connector with the generated OAuth credentials.
 
 ## Step 1: Register the Search AI app in the Confluence Server
 
-* **OAuth 2.0 authentication** requires creating an incoming link under **application links** in the Confluence Server.
+* **OAuth 2.0** requires creating an incoming link under **application links** in the Confluence Server.
 * During setup, use the **Redirect URL** for your region:
 
 | Region   | Redirect URL                                     |
@@ -79,6 +79,7 @@ In Search AI:
     * Basic Auth fields: Connector Name, Username, Password, and Confluence Server host URL.
     * OAuth 2.0 fields: Connector Name, Client ID, Client Secret, Confluence Server Base URL, Domain Name and Grant Type (**Authorization Code grant type** or **Client Credentials**). For more details, refer to [this](../connectors.md).
     * Header Based Authorization fields: Header, Token, and Host URL.
+
 Click **Connect** to initiate authorization.
 
 ### Content Ingestion
