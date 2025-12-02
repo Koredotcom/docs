@@ -14,7 +14,7 @@ If you are using Confluence Data Center to store and manage your content, you ca
   <tr>
    <td>Content Supported
    </td>
-   <td>Knowledge Articles
+   <td>Knowledge Articles, Spaces, Blogs, and Comments
    </td>
   </tr>
   <tr>
@@ -76,7 +76,14 @@ Click **Connect** to initiate the connector authorization process. This complete
 
 ### Content Ingestion
 
-Go to the **Configuration** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Data Center or select specific content.  Note that if there are any attachments to the pages being ingested into the application, then the content from the attachments is also automatically ingested into the application. At present, only PDF format attachments are supported.
+Go to the **Configuration** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Data Center or select specific content. SearchAI now supports ingestion of the following Confluence object types:
+
+* Pages (Knowledge Articles)
+* Spaces (including space metadata and descriptions)
+* Blogs (blog posts and associated metadata)
+* Comments (page comments and discussion threads)
+
+**NOTE**: If there are any attachments to the content being ingested, then the content from the attachments is also automatically ingested into the application. At present, only PDF format attachments are supported.
 
 ![Content Synchronization](images/confluenceserver/content-synchronization.png "Content Synchronization")
 
@@ -86,17 +93,17 @@ The connector allows you to set up rules to selectively ingest content from the 
 
 ![Content Filters](images/confluenceserver/content-filters.png "Content Filters")
 
-The Parameter field can take one of the following values. You can also add other CQL fields defined for your Confluence content. Refer to the complete list of supported fields [here](https://developer.atlassian.com/cloud/confluence/cql-fields/).
+The Parameter field can take one of the following values. You can also add other CQL fields defined for your Confluence content. The following parameters now apply to Pages, Spaces, Blogs, and Comments. Refer to the complete list of supported fields [here](https://developer.atlassian.com/cloud/confluence/cql-fields/).
 
 * Ancestor: Affects the direct child pages/content and descendants of the given content IDs as value. 
 * Content: Affects the content defined using content ID only. 
 * Created: Affects the content with the given creation date. It takes Date as values in the following format “yyyy/mm/dd hh:mm”, “yyyy-mm-dd hh:mm”, “yyyy/mm/dd”, “yyyy-MM-dd”. 
 * Creator: Affects the content created by the User account IDs provided as values. 
 * Label: Affects the content by its label. 
-* Parent: Affects the content under a given parent. 
+* Parent: Affects the content under a given parent. Parent-child evaluation now applies to Pages, Blogs, and threaded Comments. 
 * ID: Affects the content based on its content ID. 
-* Space: Affects the content based on the space that it is available in.
-* Title: Define the rule using the title of the pages
+* Space: Affects the content based on the space that it's available in. Applicable to Pages, Blogs, and Comments.
+* Title: Define the rule using the title of the pages or blogs.
 * User: Define the rule using userId 
 
 The Operator field can take different values depending upon the parameter selected like equals to, not equals to, contains, etc. 
@@ -113,7 +120,10 @@ Similarly, to selectively ingest only the pages created or modified after Jan 1,
 
 Note:
 
-* You can define more than one condition to choose different types of content from the connector using the OR operator. 
+* You can define more than one condition to choose different types of content from the connector using the OR operator.
+* Comments inherit context from their parent page or blog.
+* Spaces can be filtered by space key and space type.
+* Blogs can be filtered by publication date and author.
 * Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024 and having the word ‘SearchAI’ in its title, define the rule as:
 
 ![Content Filters](images/confluenceserver/example3.png "Content Filters")
@@ -122,7 +132,7 @@ Note:
 
 SearchAI supports access control for content ingested using the **Confluence Data Center Connector**. To enable access control on the content, go to the **Permissions and Security** tab and select **Permission Aware** access.
 
-* **Permission Aware** honors the permissions of a user in Confluence Server. Users can only view search results for content they are permitted to access within the Confluence instance.
+* **Permission Aware** honors the permissions of a user in Confluence Server. Users can only view search results for content they're permitted to access within the Confluence instance.
 
 * **Public Access** overrides native Confluence permissions, making all ingested content visible to all users in SearchAI regardless of actual access in Confluence.
 
