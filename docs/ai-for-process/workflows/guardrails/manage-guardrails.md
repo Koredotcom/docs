@@ -5,8 +5,6 @@ To use input and output scanners in AI for Process, you need to deploy them firs
 Steps to deploy a scanner:
 
 1. Log in to your account.
-   <img src="../types-of-nodes/images/access-workflows.png" alt="access workflow" title="access workflow" style="border: 1px solid gray; zoom:75%;">
-
 2. Click **Settings** on the top navigation bar.
 3. Click **Manage Guardrails** on the left menu.
 <img src="./../images/manage-guardrails-new.png" alt="Manage Guardrails" title="Manage Guardrails" style="border: 1px solid gray; zoom:80%;">

@@ -4,9 +4,7 @@ You can create a new workflow to leverage models, build flows, and later deploy 
 
 Steps to create a Workflow:
 
-1. Log in to your account.
-   <img src="../images/access-workflows.png" alt="access workflow" title="access workflow" style="border: 1px solid gray; zoom:75%;">
-   
+1. Log in to your account.  
 1. On the **Workflows** page, select **Create new workflow**. The **New workflow** dialog box is displayed.
 
     <img src="../images/workflow-description.png" alt="Create a workflow" title="Create a workflow" style="border: 0px solid gray; zoom:60%;">
