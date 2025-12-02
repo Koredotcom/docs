@@ -1904,7 +1904,7 @@ Administrators and Supervisors with access to Dashboard > Interactions can now v
 Automatic refresh for filters applied in the Monitor tabs at fixed intervals is implemented to ensure real-time data accuracy.
 
 * Filtered data on Monitor tabs is updated at the specified interval, reflecting real-time changes.
-* New interactions are not immediately added to filtered results but appear after the 5-second update interval. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#auto-refresh-when-filters-are-applied)
+* New interactions are not immediately added to filtered results but appear after the 5-second update interval.
 
 <font size="4">Voice Gateway</font>
 
