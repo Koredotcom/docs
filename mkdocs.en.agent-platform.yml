@@ -122,7 +122,7 @@ nav:
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
     - Accessing Agent Platform: getting-started/sign-up-sign-in.md
-    - Outbound IP Addresses: getting-started/outbound-ip-addresses.md
+    - Outbound IP Addresses: getting-started/outbound-ip-address.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
     - Quick Start Tutorials:
       - Video Tutorials: 
