@@ -72,8 +72,6 @@ Enter the purpose and click **Continue**.
 
 <img src="../images/image11.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 
-[Back to the top](#api-agents){ .md-button }
-
 ## Step 2: Basic Details
 
 In the Basic Details step, you can provide the Agent's name and select a logo. You can choose the logo from preset options or upload a custom image. The name and logo will represent the API agent in the user interface, helping users identify the source of information.
@@ -82,13 +80,9 @@ Enter a name for the **Agent** **Name**, select an appropriate **Logo**, and cli
 
 <img src="../images/image10.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 
-[Back to the top](#api-agents){ .md-button }
-
 ## Step 3: Connection Setup
 
 Connection Setup currently uses admin-provided profiles. The system accesses data using these profiles and admin tokens for all retrieval operations. End users cannot create new connection profiles, meaning all data is fetched using admin credentials.
-
-[Back to the top](#api-agents){ .md-button }
 
 ## Step 4: Actions
 
@@ -747,8 +741,6 @@ When a API agent is triggered, the sample queries are displayed. The user can cl
 
 You can manually add sample queries based on specific system requirements. This can be done using the **+ Add Query** option. Click **Continue**.
 
-[Back to the top](#api-agents){ .md-button }
-
 ### Step 5: Business Rules
 
 Set rules for entity selection and responses based on keywords.
@@ -758,8 +750,6 @@ The rule fills entities in a query when specific keywords are detected. Set rule
 You have options to set either an Entity Rule or Answering Rule.
 
 <img src="../images/api_business.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
-
-[Back to the top](#api-agents){ .md-button }
 
 ## Step 6: Publish
 
@@ -779,5 +769,3 @@ Note: The publishing options are defined in the Workspace settings. For addition
 ## User Interaction
 
 Interacting with the API Agent allows users to access important data quickly. With the no-code API Agent Builder, users can set up agents to connect to their existing systems and retrieve data through simple queries. For example, If a user asks "Get hotel data" or "Retrieve guest information", The API Agent processes these queries and returns the relevant data in a clear format. Users can also refine their queries for more specific information, such as "pull hotel database details" or "Display hotel info".
-
-[Back to the top](#api-agents){ .md-button }

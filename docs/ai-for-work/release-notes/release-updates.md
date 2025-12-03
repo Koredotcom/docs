@@ -40,8 +40,6 @@ Message timestamps are now visible when hovering over messages, providing better
 
 Onboard partner domains without creating an enterprise account of their own. This feature resolves the issue where they need a primary account of their own to be added as a partner in an account.
 
-[Back to the top](#ai-for-work-release-notes){ .md-button }
-
 <hr>
 
 ## v1.11.0 Sept 24, 2025
@@ -90,8 +88,6 @@ Recommended Configuration: Use **Gemini 2.5 Pro** and **2.5 Flash** as defaults 
 Enhanced Personal Workspace support agent sharing across all published users. Shared users can now view and edit agent configurations together before running them, enabling collaborative development and better knowledge sharing across the organization.
 
 [Learn more :octicons-arrow-right-24:](../workspace-management/personal-workspace.md#collaboration-and-sharing)
-
-[Back to the top](#ai-for-work-release-notes){ .md-button }
 
 <hr>
 
@@ -159,8 +155,6 @@ Enhanced SAML Single Sign-On (SSO) configuration by showing account-specific fie
 
 We upgraded the **Agent Icons** across the platform to deliver a more modern, consistent, and visually clear interface. The updated design improves usability, enhances accessibility, and ensures a unified look and feel across the application.
 
-[Back to the top](#ai-for-work-release-notes){ .md-button }
-
 <hr>
 
 ## v1.9.3 July 29, 2025
@@ -219,8 +213,6 @@ New enterprise-grade features for communication and data governance have been ad
 **Code Block UI Enhancement**
 
 Improvised AI-generated code responses with dedicated code block components that feature distinct styling to clearly separate code from regular text. Each code block now includes a built-in **Copy Response** button, eliminating the need to manually select and copy code content. This streamlined approach provides instant clipboard access and improves the overall developer experience.
-
-[Back to the top](#ai-for-work-release-notes){ .md-button }
 
 <hr>
 
@@ -326,8 +318,6 @@ Administrators can now edit user profile information directly from the user deta
 
 Resolved critical chart rendering issues and fixed application crashes that occurred during follow-up question interactions. These fixes significantly enhance system reliability and ensure a smoother user experience when working with data visualizations and conversational features.
 
-[Back to the top](#ai-for-work-release-notes){ .md-button }
-
 <hr>
 
 ## v1.9.1 May 19, 2025
@@ -351,8 +341,6 @@ Conversation titles are now automatically generated, reflecting user intent and 
 **Advanced Intent Recognition**
 
 Enhanced the orchestrator's intent identification capabilities with improved accuracy and response time, enabling better understanding of user requests and precise task routing.
-
-[Back to the top](#ai-for-work-release-notes){ .md-button }
 
 ## v1.9.0 April 30, 2025
 
@@ -431,8 +419,6 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 **Async Bot**: Resolved issue where the delayed response widget continued to display after answers were retrieved from the bots platform.
 
-[Back to the top](#ai-for-work-release-notes){ .md-button }
-
 <hr>
 
 ## v1.8.0 March 26, 2025
@@ -476,8 +462,6 @@ Key Features:
 * Bot Agent Handoff: Implemented UI/UX improvements for a more intuitive and seamless customer interaction process and eliminated friction points during agent transitions to create a smoother support experience.
 * Search AI Integration: Enhanced deep integration capabilities with the SearchAI App and fixed navigation issues from the Enterprise Knowledge Page.
 
-[Back to the top](#ai-for-work-release-notes){ .md-button }
-
 <hr>
 
 ## v1.7.1 March 6, 2025
@@ -519,8 +503,6 @@ Key Benefits:
 * Timezone Optimization: Resolved timezone inconsistencies in logs. The system now properly displays logs based on your local system time, ensuring accurate and relevant time-based analytics.
 
 * Template Rendering Fix:  Fixed an issue where bot templates used to render duplicates when selected or clicked. The fix results in a cleaner and more predictable user interface.
-
-[Back to the top](#ai-for-work-release-notes){ .md-button }
 
 <hr>
 
@@ -578,7 +560,5 @@ The latest release includes search connector support for the following services:
     * Zendesk
     * Confluence
     * Wordpress
-
-[Back to the top](#ai-for-work-release-notes){ .md-button }
 
 <hr>
