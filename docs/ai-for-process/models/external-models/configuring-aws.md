@@ -1,4 +1,4 @@
-[:octicons-arrow-left-24: Back to Add an External Model](../external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-amazon-bedrock)
+[:octicons-arrow-left-24: Back to Add an External Model](../external-models/add-an-external-model-using-easy-integration.md)
 
 # Configuring Amazon Bedrock Models
 
