@@ -119,8 +119,8 @@ Grant the following permissions and click **Save**.
 
 To add permissions to the **Confluence API**:
 
-1. Go to **Granular Scopes** and select **Edit Scopes**.
-1. Add the following permissions:
+* Go to **Granular Scopes** and select **Edit Scopes**.
+* Add the following permissions:
 
     * `read:analytics.content:confluence`
     * `read:attachment:confluence`
@@ -132,14 +132,15 @@ To add permissions to the **Confluence API**:
     * `read:space.permission:confluence`
     * `read:space:confluence`
     * `read:user.property:confluence`
-1. Click **Save**.
-1. For **Classic Scopes** add `read:confluence-groups` and click **Save**.
+
+* Click **Save**.
+* For **Classic Scopes** add `read:confluence-groups` and click **Save**.
 
 ![API Scope](images/confluencecloud/confluenceapi-scope.png "API Scope")
 
 To add permissions to the **Jira API**, go to **Classic Scopes**, select **Edit Scopes**, add `read:jira-user`, and click **Save**.
 
-![API Scope](images/confluencecloud/confluenceapi-scope.png "API Scope")
+![API Scope](images/confluencecloud/jiraapi-scope.png "API Scope")
 
 After adding permissions, go to **Settings** and find the **Client ID** and **Secret** at the end of the page. Save these fields as these will be used for configuring the SearchAI connector in the next step.
 ![Settings](images/confluencecloud/settings.png "Settings")
