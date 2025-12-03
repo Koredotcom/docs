@@ -115,7 +115,6 @@ nav:
   - Home : home.md
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
-    - Accessing Agent Platform: getting-started/sign-up-sign-in.md
     - Agent Platform IP Addresses: getting-started/ip-addresses.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
     - Release Notes:
