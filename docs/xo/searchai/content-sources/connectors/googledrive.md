@@ -22,7 +22,7 @@ By setting up the Google Drive connector in Search AI, you can extend the search
    <td>File type Support
    </td>
    <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html 
-    <p> Note: Password-protected files in any format aren't supported
+    <p> Note: Password-protected files aren't supported.
    </td>
   </tr>
     <tr>
@@ -105,9 +105,9 @@ Next, define conditions to choose the content from the selected location. To def
 
 You can define conditions based on the following parameters or add your parameters too. Refer to [this](https://developers.google.com/drive/api/guides/ref-search-terms) for more information on the query parameters and the values that the parameters can take. 
 
-* **Folder Id** - Ingest data specifically from one or more folders.  Provide the folder IDs as value. To find the folder ID, navigate to your folder in Google Drive, the unique ID that comes after “folder/” in the URL is the folder ID. For example, if the URL is “[https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g](https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g)”, then the Folder ID would be “1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g”.
+* **Folder Id** - Ingest data specifically from one or more folders. Provide the folder IDs as value. To find the folder ID, navigate to your folder in Google Drive, the unique ID that comes after “folder/” in the URL is the folder ID. For example, if the URL is “https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g,” then the Folder ID would be “1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g.”
 
-* **Mime Type** - Ingest a specific type of data. For example, use ‘application/pdf’ to ingest only pdf files from the drive.  Supported MIME types include:
+* **Mime Type** - Ingest a specific type of data. For example, use ‘application/pdf’ to ingest only pdf files from the drive. Supported MIME types include:
     * application/msword
     * application/pdf
     * text/plain
@@ -135,7 +135,7 @@ Google Drive Connector allows you to import user permissions and access lists fr
 
 ### **Handling Google Drive File Permissions**
 
-SearchAI application supports **file-level** permissions through Google Drive Connector. SearchAssist supports the following access types in GDrive. 
+SearchAI application supports **file-level** permissions through Google Drive Connector. Search AI supports the following access types in GDrive. 
 
 * **People with access**: SearchAI reads user information for the files and allows users to view them if they have permission to do so. Any user with view or read access to a file can access generated answers.
 
@@ -158,11 +158,11 @@ Similarly, if the files are accessible to a user and a user group in Google Driv
 
 ### **Handling User Groups or Domain level access in Google Drive**
 
-When a file access is given to a user group or a domain, the group name or domain name is stored as a Permission Entity in SearchAssist. In this case, SearchAssist requires additional information to identify and resolve user identities. You need to associate individual users within the group or the domain to the Permission Entity to enable those users access to the file. 
+When a file access is given to a user group or a domain, the group name or domain name is stored as a Permission Entity in Search AI. In this case, Search AI requires additional information to identify and resolve user identities. You need to associate individual users within the group or the domain to the Permission Entity to enable those users access to the file. 
 
 To correctly associate users with the relevant permission entity, use the Permission Entity APIs.
 
-Example: Suppose a file is shared with a user group, hr-kore@example.com. This group is stored as a permission entity within SearchAssist. If the HR team consists of five members who need access to this file, you should use the[ Permission Entity API](https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/) to add the user IDs of these five team members to the corresponding permission entity.
+Example: Suppose a file is shared with a user group, hr-kore@example.com. This group is stored as a permission entity within Search AI. If the HR team consists of five members who need access to this file, you should use the[ Permission Entity API](../../../apis/searchai/permission-entity-apis.md) to add the user IDs of these five team members to the corresponding permission entity.
 
 
 ### **Enabling RACL**

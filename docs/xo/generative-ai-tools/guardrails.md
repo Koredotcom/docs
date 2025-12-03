@@ -65,7 +65,7 @@ The following matrix outlines guardrail applicability to the LLM input (prompt) 
 | Detect Prompt Injections  | ✅        | ❌         |
 | Filter Responses          | ❌        | ✅         |
 
-The Guardrails are currently available for the following features and will gradually become available for the remaining features.
+The Guardrails are available for the following features and will gradually become available for the remaining features.
 
 ### Automation AI Features
 
@@ -74,7 +74,7 @@ The Guardrails are currently available for the following features and will gradu
   
     !!! note
 
-        DialogGPT returns only the detected intent, so guardrails apply to the LLM input prompt, not the output response. Currently, only the Restrict Toxicity and Restrict Topics guardrails apply to DialogGPT interactions.
+        DialogGPT returns only the detected intent, so guardrails apply to the LLM input prompt, not the output response. Only the Restrict Toxicity and Restrict Topics guardrails apply to DialogGPT interactions.
 
 * Rephrase Responses
 
@@ -94,7 +94,7 @@ The Guardrails are currently available for the following features and will gradu
 
 ## Manage Guardrails
 
-By default, all the guardrails are disabled. To turn the guardrails on/off for a feature, go to feature Advanced Settings. Toggle the LLM Input and LLM Ouput as required, and click **Save**.
+By default, all the guardrails are disabled. To turn the guardrails on/off for a feature, go to feature Advanced Settings. Toggle the LLM Input and LLM Output as required, and click **Save**.
 
 Platform user's can also enable/disable the guardrails from the feature-specific node.
 

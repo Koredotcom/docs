@@ -4,7 +4,7 @@ Utilize generative AI features to supercharge your AI Agent with powerful tools 
 
 ## Model Feature Matrix
 
-The following table displays the features and the supportecd models. 
+The following table displays the features and the supported models. 
 
 (✅ Supported | ❌ Not supported)
 
@@ -44,4 +44,4 @@ Use LLM models for generating similar utterances during design time based on sem
 
 ## Sentiment Analysis
 
-Agents will be able to monitor customer sentiment dynamically during active chat conversations. When enabled, this feature displays a sentiment indicator that updates in real-time based on ongoing conversation analysis.
+Agents can monitor customer sentiment dynamically during active chat conversations. When enabled, this feature displays a sentiment indicator that updates in real-time based on ongoing conversation analysis.

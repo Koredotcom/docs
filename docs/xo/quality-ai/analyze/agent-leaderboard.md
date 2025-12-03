@@ -4,7 +4,7 @@ This **Agent Leaderboard** helps auditors and managers track agent performance a
 
 ## Access Agent Leaderboard 
 
-Access the **Agent Leaderboard** by navigating to **Quality AI** > **ANALYZE** > **Agent Leaderboard**.   
+Navigate to **Quality AI** > **ANALYZE** > **Agent Leaderboard**.   
 <img src="../agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 ### Automated Scoring Details

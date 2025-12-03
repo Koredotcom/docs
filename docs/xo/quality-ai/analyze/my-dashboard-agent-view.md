@@ -2,9 +2,9 @@
 
 ## Overview
 
-**My Dashboard** is a personalized agent dashboard that shows performance insights through supervisor-assigned scorecards. It supports global language settings, with Scorecard widgets offering independent language selection. Agents can track trends, coaching insights, and areas for improvement, such as voice attributes, using Calendar and Channel filters for focused analysis.
+My Dashboard is a personalized agent dashboard that shows performance insights through supervisor-assigned scorecards. It supports global language settings, with Scorecard widgets offering independent language selection. Agents can track trends, coaching insights, and areas for improvement, such as voice attributes, using Calendar and Channel filters for focused analysis.
 
-### Key Functionalites
+### Key Functionalities
 
 * **Real-time Performance Monitoring**: Access real-time feedback through supervisor scorecards and automated Quality Assurance (QA) scoring.
 
@@ -18,7 +18,7 @@
 
 ### Access My Dashboard 
 
-Access **My Dashboard** by navigating to **Quality AI** > **ANALYZE** > **My Dashboard**.  
+Navigate to **Quality AI** > **ANALYZE** > **My Dashboard**.  
 <img src="../agent-dashboard/images/my-dashboard-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
@@ -51,9 +51,9 @@ To filter by language,
 2. Search or select one or more languages from the dropdown.   
 <img src="../agent-dashboard/images/all-langs.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:60%;">
 
-!!! Note
+    !!! Note
 
-    By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level.
+        By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level.
 
 When a specific language is selected, the following widgets reflect language-specific data:
 

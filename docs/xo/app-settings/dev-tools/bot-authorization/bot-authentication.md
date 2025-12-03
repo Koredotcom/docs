@@ -44,8 +44,6 @@ Identification and authorization token generated or provided by a web applicatio
 
 Enables enterprises to use Kerberos SPNEGO authentication flow to connect securely with their internal applications using this security protocol. For more information, see the [Setting Up Kerberos SPNEGO authorization profile](setting-up-the-kerberos-spnego-authorization-profile.md){:target="_blank"} article.
 
-
-
 ## Authorization Options
 
 Each authorization you add to your assistant comes with several options which can be accessed by selecting an authorization profile under **App Settings > Dev Tools > Authorization Profiles.**
@@ -55,8 +53,8 @@ These options are:
 
 
 * **Test** – Click the Test button corresponding to an authorization to use this feature. This option lets you test the authorization profile to ensure that the assistant establishes a connection to the app you linked it with via the authorization. Test steps differ, depending on the authorization model. Please see the documentation relevant to each model for details related to testing. 
-* **Edit** – Click the **gear** icon correspoonding to an authorization, then select **Edit** to reach the editing dialog. Here is where you can edit an existing authorization and change any of the details related to it. 
-* **Delete** – Click the **gear** icon correspoonding to an authorization, then select **Delete**. Confirm your choice if you are sure that you want to delete the authorization profile.
+* **Edit** – Click the **gear** icon corresponding to an authorization, then select **Edit** to reach the editing dialog. Here is where you can edit an existing authorization and change any of the details related to it. 
+* **Delete** – Click the **gear** icon corresponding to an authorization, then select **Delete**. Confirm your choice if you are sure that you want to delete the authorization profile.
 
 !!! warning
     

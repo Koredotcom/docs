@@ -1,6 +1,6 @@
 # RACL Support
 
-RACL is a method for managing access to resources based on user roles within an organization. It ensures that users can only view responses and access documents relevant to their assigned roles—helping maintain data security, confidentiality, and compliance with organizational policies.
+RACL refers to the method of controlling access to specific resources or information based on the roles of individual users within the organization. Through RACL, the enterprise search application can ensure that users only see answers and access documents or information relevant to their organizational roles. This helps maintain data security, confidentiality, and compliance with organizational policies and regulations.
 
 ## RACL In Search AI
 
@@ -26,15 +26,11 @@ The content of each response will differ based on the source document.
 
 ## RACL Implementation in SearchAI
 
-**Ingestion and Indexing**  
+**Ingestion and Indexing**: During the ingestion process, SearchAI imports the permissions (list of users, user groups, or user criteria- depending on the specific connector) that define who can access a particular file or article, along with the content and metadata. This access information is stored within the indexed content. Specifically, it's stored in the `sys_racl` field with every chunk.
 
-During the ingestion process, SearchAI imports the permissions (list of users, user groups, or user criteria- depending on the specific connector) that define who can access a particular file or article, along with the content and metadata. This access information is stored within the indexed content. Specifically, it's stored in the `sys_racl` field with every chunk.
+**Access Control Logic**: When a user submits a query to the app, results are displayed only if the user’s identity is listed in the `sys_racl` field of the content from which the results are derived.
 
-**Access Control Logic**
-
-When a user submits a query to the app, results are displayed only if the user’s identity is listed in the `sys_racl` field of the content from which the results are derived.
-
-For example: Consider a Google Drive file owned by John and shared with Smitha and Abby. In this case, the `sys_racl` field will contain the identities of all three users. As a result, any answers generated from this file is accessible only to John, Smitha, and Abby.
+For example: Consider a Google Drive file owned by John and shared with Casey and Abby. In this case, the `sys_racl` field will contain the identities of all three users. As a result, any answers generated from this file is accessible only to John, Casey, and Abby.
 
 Due to variations in the nature of permissions and scopes across different connectors, distinct sets of permissions are used to fetch this information from the content. When a specific content contains information about a group of users, a **Permission Entity** is created corresponding to it and populated in the `sys_racl` field for the content. For more specific details on how the `sys_racl` field is populated for a connector, refer to the documentation of the respective connector.
 
@@ -103,7 +99,6 @@ To view and verify the user permissions in the ingested content, go to the Conte
 
 ![Chunk Viewer](images/connectors/racl/chunk-viewer.png "Chunk Viewer")
 
-Alternatively, 
 
 <!--The individual permission entities and users are listed under the Permissions page. Group tab lists the permission entities created corresponding to all the user groups having access to the ingested content and the Users tab lists all the individual users or entities having access to the ingested content. ![View permissions groups](images/connectors/racl/view-permissions-groups.png "RACL permissions")-->
 
@@ -111,7 +106,7 @@ Alternatively,
 
 When a user sends a query, SearchAI uses the user identity information and finds answers from the accessible content only. 
 
-The user identity is matched against the racl fields in the chunks. In case, the user belongs to a group and the group is a permission entity for the content, SearchAI needs additional information about the association of the user with the corresponding permission entity. Refer to the [Handling Group Identities](https://docs.kore.ai/searchassist/manage-content-sources/racl-overview/#Resolving_user_identity) section below.  
+The user identity is matched against the racl fields in the chunks. In case, the user belongs to a group and the group is a permission entity for the content, SearchAI needs additional information about the association of the user with the corresponding permission entity. Refer to the [Handling Group Identities](#step-3-resolving-user-identity) section below.  
 
 * **Passing User Identities in Search APIs**
 
@@ -153,12 +148,123 @@ In such a case, SearchAI needs additional information to determine the associati
 
 **Automatic Permission Entity Resolution**
 
-For some connectors, SearchAI can automatically resolve permission entities into individual user identities by:
+For specific connectors, SearchAI automatically resolves permission entities into individual user identities. This process involves:
 
-* Fetching user group/user criterion membership data from the source system.
-* Maintaining up-to-date mappings internally.
+* Fetching group membership data from the source system.
+* Maintaining up-to-date internal mappings between groups and their members.
 
-Refer to connector-specific documentation to see if automatic permission entity resolution is supported.
+This means that a permission entity created for a group is automatically associated with the users of the group. Therefore, the administrators don't need to associate users with the group manually.  
+
+<table>
+  <tr>
+   <td rowspan="8" >
+<ul>
+
+<li>Gdrive</li>
+
+<li>Jira</li>
+
+<li>Sharepoint</li>
+
+<li>Trello</li>
+
+<li>miro</li>
+
+<li>lumapps</li>
+
+<li>Workday</li>
+
+<li>OneDrive</li>
+
+<li>ReAmaze</li>
+
+<li>Bit bucket</li>
+</ul>
+   </td>
+   <td rowspan="8" >
+<ul>
+
+<li>Youtrack</li>
+
+<li>Zulip</li>
+
+<li>box</li>
+
+<li>Shortcut</li>
+
+<li>Zeplin</li>
+
+<li>HelpScout</li>
+
+<li>Slack</li>
+
+<li>Hubspot</li>
+
+<li>PagerDuty</li>
+</ul>
+   </td>
+   <td rowspan="8" >
+<ul>
+
+<li>Zendesk</li>
+
+<li>Ms Teams</li>
+
+<li>Salesforce</li>
+
+<li>hive</li>
+
+<li>Github</li>
+
+<li>Aha</li>
+
+<li>JIRA On-Prem</li>
+
+<li>XMatters SaaS</li>
+
+<li>Guru</li>
+</ul>
+   </td>
+   <td rowspan="8" >
+<ul>
+
+<li>ServiceNow</li>
+
+<li>Confluence Server</li>
+
+<li>JFrog Artifactory On-Prem</li>
+
+<li>JFrog Artifactory Cloud</li>
+
+<li>Confluence cloud</li>
+
+<li>asana</li>
+
+<li>Zoom</li>
+
+<li>Fresh Desk</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+</table>
+
+
+Refer to the specific connector’s documentation to see if automatic permission entity resolution is supported.
+
 
 **Manual Resolution via APIs**
 
@@ -179,6 +285,8 @@ To enable RACL for a connector:
 This enables SearchAI to read and apply user-specific access permissions from the third-party application.
 
 ![Permissions](connectors/images/permissions.png "Permissions")
+
+If the connector supports Automatic Permission Entity Resolution, an additional checkbox is available to enable automatic resolution.
 
 ### Updating RACL permissions
 

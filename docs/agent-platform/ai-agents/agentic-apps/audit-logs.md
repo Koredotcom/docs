@@ -11,6 +11,6 @@ Each log entry includes the following to provide actionable insights on account 
 
 To export the audit logs, follow the steps below:
 
-* Go to the **Audit Logs** page and click the **Export** icon next to the **Filter By** icon. The logs for the given timeframe are downloaded in a csv file.
+* Go to the Audit Logs page and click the Export icon next to the Filter By icon. The logs for the given timeframe are downloaded in a csv file.
 
 ![Audit Logs](images/logs.png "Audit Logs")

@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Agent Metrics Daily Report
 
 ## Generating the Agent Metrics Daily Report
@@ -37,7 +39,7 @@ While generating reports you have two options, Run On Demand and Schedule.
 **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later then it will automatically be generated on the scheduled day and time without the need to click Run.
 
 10. First, the report object is configured (as PDF) and then the report output is generated as PDF. Click the **PDF/Page** icon to download the report.  
-<img src="../images/pdf-agent-metrics-daily-report.png" alt="Agent Metrics Dailt Report PDF" title="Agent Metrics Daily Report PDF" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/pdf-agent-metrics-daily-report.png" alt="Agent Metrics Daily Report PDF" title="Agent Metrics Daily Report PDF" style="border: 1px solid gray; zoom:100%;">
 
     !!! Note
 

@@ -1,6 +1,30 @@
-# Contact Center AI Updates
+# Contact Center AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
+
+## v11.19.1 November 19, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Campaigns</font>
+
+**Export and Import Web Campaigns**
+
+The platform now supports exporting and importing artifacts for Proactive Web Campaigns. This feature allows users to easily replicate and reuse entire campaign configurations across different apps, workspaces, or environments, ensuring consistency and significantly reducing setup time. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#export-and-import-web-campaigns)
+
+**Proactive Web Campaign Logs**
+
+A new Logs section offers enhanced visibility into web campaign activity. Users can review recent campaign events, apply date-based filters, and export logs for analysis, ensuring better visibility into campaign performance. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/logs.md)  
+
+<font size="4">API</font>
+
+**Call Details API (v1) – Enhanced with Disconnect Event Fields**
+
+The Call Details API (v1) now includes disconnect event fields, providing better visibility into conversation termination details. This enhancement maintains backward compatibility while improving reporting and analytics. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v1.md) 
+
+<hr>
 
 ## v11.19.0 October 25, 2025
 
@@ -51,7 +75,7 @@ Supervisors can transfer multiple chats, calls, and emails simultaneously from t
 
 **Call Details API: Callback and External Transfer Tracking**
 
-The Call Details API now captures callback and external transfer events with new tracking fields. QueueEntry includes CallbackOpted, CallbackOptedTime, and CallbackInitiatedTime for both caller and system-initiated callbacks. AgentTransfer objects add ExternalTransferTime and ExternalTransferDestination fields for transfers to external parties, improving call-handling metrics and reporting accuracy. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+The Call Details API now captures callback and external transfer events with new tracking fields. QueueEntry includes CallbackOpted, CallbackOptedTime, and CallbackInitiatedTime for both caller and system-initiated callbacks. AgentTransfer objects add ExternalTransferTime and ExternalTransferDestination fields for transfers to external parties, improving call-handling metrics and reporting accuracy. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v2.md)
 
 <hr>
 
@@ -812,8 +836,6 @@ Key benefits
     * Leverage external AI models for more flexible and accurate conversation summaries.
     * Ensure consistent summarization across multiple languages and use cases.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-based-conversation-summary.md)
-
 **Enable/Disable Conversations to Wait Till Queue Timeout**
 
 This configurable setting allows supervisors and admins to enable or disable the waitTillQTimeout property. This enhancement provides better control over how long conversations wait in the queue before transitioning to the no-agent-available flow.
@@ -1042,7 +1064,7 @@ Contact Center supervisors can enable real-time streaming of LLM responses to si
 Key updates:
 
 * Real-time streaming of rephrased responses.
-* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md)
+* Bot delay response behavior controls.
 * Role-based access controls (Full Access for Admins/Supervisors). [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 <font size="4">Campaigns</font>
@@ -1109,7 +1131,7 @@ Email = Email Count; Email conversations ongoing or waiting in a queue.
 
 **Call Termination Tracking Added to Call Details API (v2)**
 
-The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v2.md)
 
 <font size="4">Voice Gateway (v0.9.3-rc4)</font>
 
@@ -1640,7 +1662,7 @@ Key updates:
     * The "Joined Users" column has been added to the CSV version.
     * Shows a pipe-separated list of joined users.
 * Call Details API v2:
-    * A new mandatory "JoinedUsers" array is added. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+    * A new mandatory "JoinedUsers" array is added. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v2.md)
 * Agent Activity Summary Report:
     * Now includes interaction duration for all involved agents and supervisors.
     * The "Interacting" field counts time for primary agents, consultants, and joined users. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/agent-activity-summary-report.md)

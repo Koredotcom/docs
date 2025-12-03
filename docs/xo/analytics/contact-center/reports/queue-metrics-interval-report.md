@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Queue Metrics Interval Report
 
 ## Generating the Queue Metrics Interval Report

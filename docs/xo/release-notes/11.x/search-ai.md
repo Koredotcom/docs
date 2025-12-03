@@ -1,6 +1,54 @@
-# Search AI Updates
+# Search AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
+
+## v11.19.1 November 19, 2025
+
+<u>Patch Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Enhanced Default Extraction Strategies</font>
+
+Search AI now offers optimized default extraction and chunking strategies tailored to each content type and source, enabling more accurate, efficient data processing automatically. These enhanced defaults are automatically applied to new apps.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md#default-extraction-strategies)
+
+<font size="4">View Document Access Controls</font>
+
+Search AI introduces new UI capabilities to provide greater visibility into RACL implementations. These enhancements are currently available only for the following connectors: Google Drive, HubSpot, Jira, Confluence Cloud, Confluence Server, Bitbucket, SharePoint, ServiceNow, Asana, Guru, and JFrog.
+
+* Permission Entity Viewer: View the groups, sub-groups, and users assigned to each permission entity.
+* Document Permissions: Lists and displays the users and groups who have access to each document.
+
+These features help admins and developers validate that permissions are correctly enforced across the platform.
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md#permission-entities)
+
+<font size="4">Connector Enhancements</font>
+
+**Slack Connector**
+
+The Slack Connector now offers enhanced flexibility and control for data ingestion:
+
+* API key–based authentication, eliminating the need for channel invitations (required earlier with OAuth) to retrieve channel content.
+* Channel-based standard filtering option and advanced date-range based filtering for targeted ingestion.
+* Support for crawling message history from the past six months.
+
+**Confluence Data Center Connector**
+
+The Confluence Data Center connector now includes several enhancements to broaden content coverage and improve indexing control.
+
+* Expanded ingestion support for blogs and spaces, in addition to pages, and comments from both pages and blogs.
+* Space-based standard filters for targeted content selection.
+* Advanced filtering options for more precise indexing.
+* Incremental sync capability and webhook-based deletion handling are available upon request.
+
+**ServiceNow Connector**
+
+Expired articles are now automatically excluded from indexing, ensuring that only valid and up-to-date content is ingested into Search AI.
+
+
+<hr>
 
 ## v11.19.0 October 25, 2025
 

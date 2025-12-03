@@ -1,4 +1,7 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # IVR Containment Report
+
 ## Generating the IVR Containment Report
 
 The IVR Containment Report shows data on all incoming calls. It is a comprehensive report covering all calls made, callers identified, and shows per intent data and outcomes of these conversations on a daily basis. This report requires that the bot designer use certain predefined message tags to be emitted during the execution of intents. This report is applicable for voice calls only.

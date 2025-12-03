@@ -1,6 +1,20 @@
-# Platform Services Updates
+# Platform Services Release Notes
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
+
+## v11.19.1 November 19, 2025
+
+<u> Patch Release </u>
+
+This update includes an enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">Channels</font>
+
+**New Channel Integration: Amazon Connect Chat**
+
+Amazon Connect Chat is now available as a communication channel, enabling real-time user interactions with AI agents. The integration supports both hosted and custom widget configurations. [Learn more :octicons-arrow-right-24:](../../channels/add-amazon-connect-chat-channel.md)
+
+<hr>
 
 ## v11.19.0 October 25, 2025
 

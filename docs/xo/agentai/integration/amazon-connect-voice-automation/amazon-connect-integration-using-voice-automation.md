@@ -121,113 +121,13 @@ You must create three lambda functions for three different purposes. All these l
 **Runtime**: **python**.
 
 The recommended lambda function name and the internal code is given in the following section.  
-Once you paste the lambda code, **deploy** the latest version of the code. Ensure your first and third lambda functions have **DynamoDB** full access. (You can **add permissions** inside the IAM role of the lambda function.) 
+Once you paste the lambda code, deploy the latest version of the code. Ensure your first and third lambda functions have **DynamoDB** full access. (You can **add permissions** inside the IAM role of the lambda function.) 
 
-1. **koreStoreSessionMetadata**: This lambda function is used to expose an API Gateway (Trigger) to get the metadata from Kore Platform and store it in the DynamoDB table. Copy and deploy the following code: 
+1. **koreStoreSessionMetadata**: This lambda function is used to expose an API Gateway (Trigger) to get the metadata from Kore Platform and store it in the DynamoDB table. Copy and deploy the code from [this link](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/AmazonConnect/Metadata%20passing%20via%20External%20voice%20connector/lambdas/koreStoreSessionMetadata.py){:target="_blank"}.  
 
-    ```
-    import json
-    import boto3
-    dynamodb = boto3.resource('dynamodb')
-    table = dynamodb.Table('koreCcSessions')
-    # Ensure the table name matches your DynamoDB setup
-    def lambda_handler(event, context):
-    # Assume the third-party instance sends data in JSON format
-    print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Entered into the lambda for koreStoreSessionMetadata@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
-    print('event', event);
-    query_params = event.get('queryStringParameters')
-    print('query_params', query_params)
-    contactId=''
-    if query_params:
-    # Example: Access specific query parameters
-    contactId = query_params.get('contactId')
-    try:
-    # Attempt to parse the input as JSON
-    data = json.loads(event.get('body'))
-    except (ValueError, TypeError):
-    # If it's not JSON, return the input as is
-    data = event.get('body', {})
-    # Extract data from the incoming request
-    print('contactId', contactId, type(contactId))
-    print('data', data, type(data))
-    # Store the data in DynamoDB
-    table.put_item(
-    Item={
-    'contactId': contactId,
-    'kore_session_data':data
-    }
-    )
-    return {
-    'statusCode': 200,
-    'body': json.dumps('Data stored successfully')
-    }
-    ```   
+2. **AuthenticateBeforeStoringInDynamoDB**: This lambda function is used to add an authentication layer (Authoriser) on the API Gateway mentioned in the previous lambda function (koreStoreSessionMetadata). Copy and deploy the code from [this link](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/AmazonConnect/Metadata%20passing%20via%20External%20voice%20connector/lambdas/AuthenticateBeforeStoringInDynamoDB.py){:target="_blank"}.  
 
-2. **AuthenticateBeforeStoringInDynamoDB**: This lambda function is used to add an authentication layer (Authoriser) on the API Gateway mentioned in the last lambda function (koreStoreSessionMetadata). Copy and deploy the following code: 
-
-    ```
-    import json
-    import os
-    def lambda_handler(event, context):
-    #1 - Log the event
-    print('*********** The event is: ***************')
-    print(event)
-    token  = os.getenv('AUTH_TOKEN', 'abc123')  #Set AUTH_TOKEN value in the lambda environment variable, abc123 is the default value
-    print('*********** The token is: ***************')
-    print(token)
-    #2 - See if the person's token is valid
-    if event['authorizationToken'] == token:
-    auth = 'Allow'
-    else:
-    auth = 'Deny'
-    print(auth)
-    #3 - Construct and return the response
-    authResponse = { "context": {"stringKey": "value","numberKey": "1","booleanKey": "true"},"policyDocument": { "Version": "2012-10-17", "Statement": [{"Action": "execute-api:Invoke", "Resource": ["*"], "Effect": auth}] }}
-    return authResponse
-    ``` 
-    !!! note
-
-        Add “AUTH_TOKEN” as an Environment variable of lambda and enter your desired token value. This value needs to be the same as the Token validation value inside the API Gateway authorizer.  
-
-3. **koreRetrieveSessionMetadata**: This lambda is invoked in the Amazon Connect Contact Flow after the call gets disconnected from Kore and is handed over to Amazon Connect. This lambda returns all the metadata stored in the DynamoDB table using the first lambda. Copy and deploy the following code: 
-
-    ```
-    import json
-    import boto3
-    dynamodb = boto3.resource('dynamodb')
-    table = dynamodb.Table('koreCcSessions') 
-    # Ensure the table name matches your DynamoDB setup
-    def lambda_handler(event, context):
-        
-    # Assume Amazon Connect provides a primary key via Lambda input
-    print('$$$$$$$$$$$$$$$$$$$$$$ Entered into retrieve session details lambda $$$$$$$$$$$$$$$$$$$$')
-    print(json.dumps(event))
-    contactId = event['Details']['Parameters']['contactId']
-    print('contactId from contact flow',contactId)
-
-    # Retrieve the data from DynamoDB
-    response = table.get_item(
-    Key={
-    'contactId': contactId
-    }
-    )
-    print("response", response)
-
-    # Return the data in the format Amazon Connect expects
-    if 'Item' in response:
-    key = {
-    'statusCode': 200,
-    'body': json.dumps(response['Item']['kore_session_data'])
-    }
-    return key
-
-    else:
-
-    return {
-            'statusCode': 404,
-            'body': json.dumps('Data not found')
-            }
-    ```  
+3. **koreRetrieveSessionMetadata**: This lambda is invoked in the Amazon Connect Contact Flow after the call gets disconnected from Kore and is handed over to Amazon Connect. This lambda returns all the metadata stored in the DynamoDB table using the first lambda. Copy and deploy the code from [this link](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/AmazonConnect/Metadata%20passing%20via%20External%20voice%20connector/lambdas/%20koreRetrieveSessionMetadata.py){:target="_blank"}.  
 
 #### Create an API Gateway 
 
@@ -315,12 +215,11 @@ Open the Amazon Connect instance and add the last lambda function (koreRetrieveS
     2. Add the following code snippet in a **Script node** immediately after the **Start node**: 
 
         ```
-        setCallFlowVariable('sipHeaders', context.
-        BotUserSession.channels[0].handle.sipHeaders);
-        var headers = getCallFlowVariable
-        ('sipHeaders'); userSessionUtils.
-        put('sipHeaders', headers);
-        ```  
+        setCallFlowVariable('sipHeaders', 
+        context.BotUserSession.channels[0].handle.sipHeaders); var 
+        headers = getCallFlowVariable('sipHeaders'); 
+        userSessionUtils.put('sipHeaders', headers); 
+        ```
 
     3. Click **Test** to test the flow.  
     <img src="../images/test-the-flow-22.png" alt="test-the-flow" title="test-the-flow" style="border: 1px solid gray; zoom:80%;">  
@@ -344,9 +243,10 @@ Ensure the Automation bot used in the CCAI Conditional Flow includes an Agent Tr
     try{ 
     var headers = context.session.UserSession.sipHeaders; 
     if(headers){ 
-    var contactId = headers.find(o => o.name === 'X-Amzn-ConnectContactId'); 
-    if(contactId){ 
-    BotUserSession.put("ContactId", contactId.value); 
+         var contactId = headers.find(o => o.name === 
+    'X-Amzn-ConnectContactId'); 
+         if(contactId){ 
+             BotUserSession.put("ContactId", contactId.value); 
     } 
     } 
     }catch(err){

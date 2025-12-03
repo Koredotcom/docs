@@ -82,9 +82,9 @@ The following table lists scenarios with expected results in case of a network f
 | If the message is sent successfully      | “Sent” appears on the chat window.                                                                                              |
 | If the network is disrupted              | The chat window is disabled. Undelivered messages appear as “Not Delivered” with the Resend icon in the compose bar’s left corner. |
 | When the network is restored             | The chat window is enabled.                                                                                                     |
-| If the resend icon is clicked            | The message is sent again.                                                                                                      |
-| If the conversation is terminated        | The Resend icon does not appear.                                                                                                |
-| If the page is refreshed                 | The undelivered messages do not appear.                                                                                         |
+| If the resend icon is selected            | The message is sent again.                                                                                                      |
+| If the conversation is terminated        | The Resend icon doesn't appear.                                                                                                |
+| If the page is refreshed                 | The undelivered messages don't appear.                                                                                         |
 
 ## Audio and Video Calls with Customers
 
@@ -105,18 +105,18 @@ Agents can initiate manual outbound calls from the agent console. Following are 
 1. **Initiating Outbound Calls from Any Status**  
     * Agents can initiate outbound calls from any status within the agent interface.
     * Exceptions:  
-        * Agents cannot initiate outbound calls when their status is "System Away" for both Chat and Voice interactions.
-        * Agents cannot initiate outbound calls when their status is "System Busy" for voice interactions.
+        * Agents can't initiate outbound calls when their status is "System Away" for both Chat and Voice interactions.
+        * Agents can't initiate outbound calls when their status is "System Busy" for voice interactions.
 2. **Outbound Calls During Digital Interactions**
     * Agents can initiate an outbound call even when handling digital interactions.
     * If an agent's slots are full and their status is "System Busy," they can still initiate an outbound call.
 3. **Inbound Voice Interaction Restriction**
-    * Agents cannot initiate an outbound call if they are handling an existing inbound voice call.
+    * Agents can't initiate an outbound call if they're handling an existing inbound voice call.
 
 **Outbound Calling Button**
 
 * The outbound calling button is disabled:
-    * When agents are in a status that does not permit outbound calls (for example, System Away for both Chat and Voice interactions, System Busy for Voice interactions).
+    * When agents are in a status that doesn't permit outbound calls (for example, System Away for both Chat and Voice interactions, System Busy for Voice interactions).
     * When agents are handling an inbound voice call.
     * When agents are handling an outbound call.
 
@@ -126,20 +126,23 @@ Agents can initiate a secondary outbound voice call only after completing the on
 
 **Status Updates**
 
-When an agent initiates an outbound call, the system automatically changes the agent's status to "System Busy". This automatic status update helps manage agent availability and workload distribution, ensuring efficient call handling and resource allocation.
+When an agent initiates an outbound call, the system automatically changes the agent's status to `System Busy`. This automatic status update helps manage agent availability and workload distribution, ensuring efficient call handling and resource allocation.
+
+#### Contacts
+
+Selecting contacts shows the list of configured contacts. Agents can search for a contact by entering the name or phone number in the search bar. 
 
 #### Outbound Dialer
 
 The outbound dialer has the following functionalities:
 
-* Search Bar: The search bar on the dialer interface allows agents to enter keywords or partial numbers to find configured contacts quickly.  
-    <img src="../images/dialer-search-bar.png" alt="Search Bar" title="Search Bar" style="border: 1px solid gray; zoom:60%;">
+* Search Bar: The search bar on the dialer interface allows agents to enter keywords or partial numbers to find configured contacts.  
 
 * International Subscriber Dialing (ISD) Code Update: The dialer automatically adjusts the outbound phone number’s ISD code based on the last used country code. This streamlines the process for agents making calls to different regions. For example, if an agent selects India as the country but enters a phone number from the USA, the dialer automatically changes the country to the USA.
 
 * Phone Number Formatting: The system displays the phone number in a standardized format when an agent enters it for dialing, regardless of whether the original number contains hyphens or brackets, as long as the format is valid (for example, 090-1234-5678 or (123) 456-7890).
 
-* Validation and Error Handling: An error message is displayed if an invalid number is entered (for example, incorrect length or characters). The call button is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers.  
+* Validation and Error Handling: An error message appears if an invalid number is entered (for example, incorrect length or characters). The call option is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers.  
     <img src="../images/invalid-phone-number.png" alt="Invalid Phone Number" title="Invalid Phone Number" style="border: 1px solid gray; zoom:70%;">  
 
 * Enable Call Controls during ringing: Turning on this toggle allows agents to use the call control features (mute, hold, keypad, transfer) when the call is in the dialing phase. To enable this functionality, refer to the [Permissions](../user-management/role-management.md#permissions) section.  
@@ -147,31 +150,31 @@ The outbound dialer has the following functionalities:
 
 Agents can make outbound calls to the customers as follows:
 
-1. Click the **+** button on the conversation tray and click Outbound Call. The dial pad is displayed.  
+1. Select **+** on the conversation tray and then select Outbound Call. The dial pad is displayed.  
 <img src="../images/outbound-call-button.png" alt="Outbound Call Button" title="Outbound call Button" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the Calling from button on the Dialer tab, and select the number for placing the outbound call. Agents can use phone numbers or configured SIP trunks while making outbound calls.  
+2. Select the Calling from option on the Dialer tab, and select the number for placing the outbound call. Agents can use phone numbers or configured SIP trunks while making outbound calls.  
 <img src="../images/sip-and-phone-numbers.png" alt="Calling From Number" title="Calling From Number" style="border: 1px solid gray; zoom:60%;">
 
 3. Agents can dial the outbound calls in two ways:
 
-    1. Enter the phone number with the country code, and click the Call button to place the outbound call.  
+    1. Enter the phone number with the country code, and select Call to place the outbound call.  
         <img src="../images/global-dialpad.png" alt="Global Dialpad" title="Global Dialpad" style="border: 1px solid gray; zoom:60%;">
 
-    2. Select the country code from the dropdown, enter the phone number without the country code, and click the Call button to place the outbound call.  
+    2. Select the country code from the dropdown, enter the phone number without the country code, and select the Call option to place the outbound call.  
         <img src="../images/country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">  
 
         The following scenarios are possible:
 
         1. A user enters “123124”:
 
-            1. By default, no country code is selected, and no country code validation is made. A call is directly placed to this number.
+            1. By default, no country code is selected, and no country code is validated. A call is directly placed to this number.
 
-            2. If the user has already dialed a call with a US number, they should be able to change the country code to unknown.
+            2. If the user has dialed a call with a USA number, they should be able to change the country code to unknown.
 
         2. A user pastes “123121”:
 
-            1. Initially, a validation error is displayed if the number does not match the defined format for the default country.
+            1. Initially, a validation error appears if the number doesn't match the defined format for the default country.
 
             2. The user can change the country code to unknown and a call is directly dialed to this number.
 
@@ -181,7 +184,7 @@ Agents can make outbound calls to the customers as follows:
 
         4. User pastes “+919876543”:
 
-            1. A validation error is displayed and the call button is disabled.
+            1. A validation error appears and the call button is disabled.
 
     !!! Note
 

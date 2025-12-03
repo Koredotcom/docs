@@ -148,14 +148,14 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
 [
     {
         "resourceType": "dialog",
-        "resourceId": "dg-606c7f53-e94a-58ff-8b98-d83ce03e6360",
-        "sbResourceId": "dg-606c7f53-e94a-58ff-8b98-d83ce03e6360",
+        "resourceId": "dg-606c7f53-e94a-xxxx-xxxx-d83ce03e6360",
+        "sbResourceId": "dg-606c7f53-e94a-xxxxf-xxxx-d83ce03e6360",
         "status": "SUCCESS",
         "result": {
             "visibility": {
                 "namespace": "enterprise",
                 "namespaceIds": [
-                    "o-23b63f37-89e7-52e9-bc5d-8012cbda0d4a"
+                    "o-23b63f37-89e7-xxxx-xxxx-8012cbda0d4a"
                 ]
             },
             "contextLifeTime": {
@@ -192,7 +192,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "left": 19,
                         "top": 142
                     },
-                    "componentId": "dc-4935f617-c82d-5c39-96d6-4df11f48bd99"
+                    "componentId": "dc-4935f617-xxxx-xxxx-96d6-4df11f48bd99"
                 },
                 {
                     "nodeOptions": {
@@ -224,7 +224,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "left": 9,
                         "top": 312
                     },
-                    "componentId": "dc-a62d7d10-3ed2-5fb8-afc1-1d75b12e0253"
+                    "componentId": "dc-a62d7d10-xxxx-xxxx-afc1-1d75b12e0253"
                 },
                 {
                     "nodeOptions": {
@@ -280,7 +280,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "left": 24,
                         "top": 467
                     },
-                    "componentId": "dc-64fc56de-b475-5071-b839-7615d600bf9b"
+                    "componentId": "dc-64fc56de-xxxx-xxxx-b839-7615d600bf9b"
                 },
                 {
                     "nodeOptions": {
@@ -311,7 +311,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "left": 318,
                         "top": 373
                     },
-                    "componentId": "dc-fb7bb786-8bd8-5f40-a2f9-92642c43ae5c"
+                    "componentId": "dc-fb7bb786-xxxx-xxxx-a2f9-92642c43ae5c"
                 },
                 {
                     "nodeOptions": {
@@ -342,7 +342,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "top": 627,
                         "left": 278
                     },
-                    "componentId": "dc-32f800ce-f457-545c-846f-8e0b64c6c58c"
+                    "componentId": "dc-32f800ce-xxxx7-xxxx-846f-8e0b64c6c58c"
                 }
             ],
             "isPublishedVersion": false,
@@ -376,11 +376,11 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                     "message": ""
                 }
             },
-            "_id": "dg-606c7f53-e94a-58ff-8b98-d83ce03e6360",
-            "refId": "682f9675-07a2-5505-aa75-52fd2c4d1a17",
+            "_id": "dg-606c7f53-e94a-xxxx-xxxx-d83ce03e6360",
+            "refId": "682f9675-07a2-xxxx-xxxx-52fd2c4d1a17",
             "followUpIntents": [
                 {
-                    "refId": "19ad68d9-beb9-5670-ba73-47cf4e8cb1e7",
+                    "refId": "19ad68d9-bxxxx-xxxx-ba73-47cf4e8cb1e7",
                     "transitions": [],
                     "interruptOptions": {
                         "type": {
@@ -399,39 +399,39 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                                 {
                                     "Place": "",
                                     "preDefined": true,
-                                    "entityId": "dc-325a8628-ef8b-5411-853b-f6b51e6f43aa"
+                                    "entityId": "dc-325a8628-xxxx-xxxx-853b-f6b51e6f43aa"
                                 },
                                 {
                                     "Day": "",
                                     "preDefined": true,
-                                    "entityId": "dc-33d98b9a-f332-505b-b370-c63b7d22edc9"
+                                    "entityId": "dc-33d98b9a-xxxx2-xxxx-b370-c63b7d22edc9"
                                 },
                                 {
                                     "Time": "",
                                     "preDefined": true,
-                                    "entityId": "dc-d24a083d-e8e0-51c0-ba25-216ba5439ee2"
+                                    "entityId": "dc-d24a083d-xxxx-xxxx-ba25-216ba5439ee2"
                                 }
                             ],
                             "postAssignments": [
                                 {
                                     "mortType": "",
                                     "preDefined": true,
-                                    "entityId": "dc-29155c38-86f4-5124-b704-e932f55b0623"
+                                    "entityId": "dc-29155c38-xxxx-xxxx-b704-e932f55b0623"
                                 },
                                 {
                                     "frType": "",
                                     "preDefined": true,
-                                    "entityId": "dc-7af53bfd-eff5-5e0d-84c5-24d22d8fa150"
+                                    "entityId": "dc-7af53bfd-xxxx-xxxxd-84c5-24d22d8fa150"
                                 }
                             ]
                         }
                     }
                 }
             ],
-            "botId": "st-b4543a96-49ec-5d95-a120-c6244fc23777",
-            "createdBy": "u-3ae8bd39-a65b-5b2c-b55b-85864a8202c3",
+            "botId": "st-b4543a96-49ec-xxxx-xxxx-c6244fc23777",
+            "createdBy": "u-3ae8bd39-xxxx-xxxx-b55b-85864a8202c3",
             "createdOn": "2018-12-05T07:45:19.391Z",
-            "lModBy": "u-3ae8bd39-a65b-5b2c-b55b-85864a8202c3",
+            "lModBy": "u-3ae8bd39-xxxx-xxxx-b55b-85864a8202c3",
             "lMod": "2018-12-05T07:53:13.000Z",
             "lname": "mortgage",
             "__v": 0,
@@ -442,14 +442,14 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
     },
     {
         "resourceType": "dialog",
-        "resourceId": "dg-b68f22ad-19b8-5894-857a-04156d391b44",
-        "sbResourceId": "dg-b68f22ad-19b8-5894-857a-04156d391b44",
+        "resourceId": "dg-b68f22ad-19b8-xxxx-xxxx-04156d391b44",
+        "sbResourceId": "dg-b68f22ad-xxxx-xxxx-xxxx-04156d391b44",
         "status": "SUCCESS",
         "result": {
             "visibility": {
                 "namespace": "enterprise",
                 "namespaceIds": [
-                    "o-23b63f37-89e7-52e9-bc5d-8012cbda0d4a"
+                    "o-23b63f37-xxxx-xxxx-bc5d-8012cbda0d4a"
                 ]
             },
             "contextLifeTime": {
@@ -488,7 +488,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "left": 175,
                         "top": 64
                     },
-                    "componentId": "dc-4a22c00f-a5f8-5c2b-819b-db264a4a399b"
+                    "componentId": "dc-4a22c00f-xxxx-xxxx-819b-db264a4a399b"
                 },
                 {
                     "nodeOptions": {
@@ -523,7 +523,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "left": 235,
                         "top": 396
                     },
-                    "componentId": "dc-d2794a44-f565-5de3-8073-5321a773c044"
+                    "componentId": "dc-d2794a44-xxxx-xxxx-8073-5321a773c044"
                 },
                 {
                     "nodeOptions": {
@@ -566,7 +566,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "left": 175,
                         "top": 227
                     },
-                    "componentId": "dc-9f065640-c0b6-5e86-8de7-d19997adb487"
+                    "componentId": "dc-9f065640-xxxx-xxxx-8de7-d19997adb487"
                 },
                 {
                     "nodeOptions": {
@@ -600,7 +600,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "left": 768,
                         "top": 404
                     },
-                    "componentId": "dc-8f9c6361-47f7-519b-950d-0b97b5b80ffb"
+                    "componentId": "dc-8f9c6361-xxxx-xxxx-950d-0b97b5b80ffb"
                 },
                 {
                     "nodeOptions": {
@@ -633,7 +633,7 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
                         "left": 786,
                         "top": 58
                     },
-                    "componentId": "dc-45d51547-e374-5b90-ba1a-3fe620f9ab89"
+                    "componentId": "dc-45d51547-xxxx-xxxx-ba1a-3fe620f9ab89"
                 }
             ],
             "isPublishedVersion": false,
@@ -658,12 +658,12 @@ curl -X POST 'https://{{host}}/api/public/bot/{{BotID}}/publish' \
             "interruptOptions": {
                 "priority": "bot"
             },
-            "_id": "dg-b68f22ad-19b8-5894-857a-04156d391b44",
-            "refId": "19ad68d9-beb9-5670-ba73-47cf4e8cb1e7",
-            "botId": "st-b4543a96-49ec-5d95-a120-c6244fc23777",
-            "createdBy": "u-3ae8bd39-a65b-5b2c-b55b-85864a8202c3",
+            "_id": "dg-b68f22ad-19b8-xxxx-xxxx-04156d391b44",
+            "refId": "19ad68d9-beb9-xxxx-xxxx3-47cf4e8cb1e7",
+            "botId": "st-b4543a96-49ec-xxxx-xxxx-c6244fc23777",
+            "createdBy": "u-3ae8bd39-xxxx-xxxx-b55b-85864a8202c3",
             "createdOn": "2018-12-05T07:45:19.402Z",
-            "lModBy": "u-3ae8bd39-a65b-5b2c-b55b-85864a8202c3",
+            "lModBy": "u-3ae8bd39-xxxx-xxxx-b55b-85864a8202c3",
             "lMod": "2018-12-05T07:53:13.000Z",
             "lname": "support",
             "__v": 0,

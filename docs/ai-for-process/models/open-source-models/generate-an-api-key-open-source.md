@@ -1,6 +1,6 @@
 # Generate a New API Key
 
-You can generate an API key for your open-source model and share it with other trusted users. It is essential to have a secure API key when trying to connect to this open-source model in an external ecosystem.  
+You can generate an API key for your open-source model and share it with other trusted users. It's essential to have a secure API key when trying to connect to this open-source model in an external ecosystem.  
 
 **To generate a new API key for your open-source model, follow these steps**:
 

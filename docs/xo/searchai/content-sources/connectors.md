@@ -160,6 +160,29 @@ field in the JSON view of the corresponding content.
 
 For more information about RACL implementation in Search AI, see [RACL support](racl-support.md). 
 
+## Permission Entities
+
+This page displays the permission entities created during ingestion, based on the access information retrieved from the source system. Depending on the connector, a permission entity may represent a user group, user criterion, or any other access-control construct supported by the third-party application.
+
+* Groups tab: Displays only those permission entities (groups) that the logged-in user belongs to or has access to in the source application.
+* Users tab: Displays only the users who are part of the groups that the logged-in user is associated with.
+
+Additionally, you can also view the users and permission entities who have access to a given document in the Content tab. Learn More. 
+
+Currently, this feature is enabled only for the following connectors. 
+
+* Google Drive
+* Hubspot
+* Jira
+* Confluence Cloud
+* Confluence Server
+* BitBucket
+* SharePoint
+* Service Now
+* Asana
+* Guru
+* JFrog
+  
 
 ## Sync and Ingest Content
 
@@ -185,19 +208,17 @@ For both **failed** and **skipped** content, the application provides detailed l
 ![Content Page](images/content-page.png "Content Page")
 
 
-Click on any of the content items to view the details of the ingested content. It provides an overview of the ingested content like file type, URL, preview of the content of the file, etc. Click on **View JSON** to see the details of the ingested content. 
+Click on any of the content items to view the details of the ingested content. It provides an overview of the ingested content like file type, URL, preview of the content of the file, etc.
 
-![View JSON](images/view-json.png "View JSON")
+For each document, you can do the following.
 
+* *View JSON* to see the details of the ingested content. The JSON view provides detailed information of the ingested content. The ingested content and its metadata are captured in standard fields in the Search AI application. For instance, the description or text of the ingested content is set in the content field, the access information is stored in the *sys_racl* field, sourceType suggests the source of the content, and the *meta_data* field captures the meta information of the ingested content. ![JSON View](images/json.png "JSON View")
 
-The JSON view provides detailed information of the ingested content. The ingested content and its metadata are captured in standard fields in the Search AI application. For instance, the description or text of the ingested content is set in the **content** field, the access information is stored in the **sys_racl** field, **sourceType** suggests the source of the content, and the **meta_data** field captures the meta information of the ingested content. 
-
-![JSON View](images/json.png "JSON View")
-
+* *View Permissions* to see the list of users and groups who have access to the given document.  
 
 **Stopping the Synchronization**
 
-* If you manually stop synchronization using the **Stop Sync** option while the sync job is actively running, it will halt immediately. Any content that has already been ingested at the time of stopping will be available for search.
+* If you manually stop synchronization using the *Stop Sync* option while the sync job is actively running, it will halt immediately. Any content that has already been ingested at the time of stopping will be available for search.
 * If the sync job is queued when you select Stop Sync, the synchronization will be canceled and won't proceed.
 
 **Schedule Sync**

@@ -31,7 +31,7 @@ jobs:
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.ai-for-process.yml
+          args: build --strict --config-file=mkdocs.en.ai-for-process.yml
 
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site

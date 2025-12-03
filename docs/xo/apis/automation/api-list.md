@@ -83,6 +83,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 |     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
 | [Find Intent](./find-intent.md) | To obtain the intent recognition result and the scoring from NLP and ML engines. | Intent and Entity Detection | Intent Identification > Intent and Entity Detection |
 | [Conversation History](./conversation-history.md) | To fetch the conversational messages between the AI agent and user in reverse chronological order. | Chat History | Bot Analytics > Chat History |
+| [Conversation History-Lightweight](./conversation-history-lightweight.md) | To fetch high-volume conversation summarization without additional metadata or payload overhead. | Chat History | Bot Analytics > Chat History |
 | [Conversation Summary](./conversation-summary.md) | To summarizes the conversation between a user and an agent. | Conversation Summary | NA  |
 | [Feedback Analytics](./fetch-feedback-survey-scores.md) | To fetch the Feedback Survey Response Data and push it to the Feedback Analytics Dashboard. | Feedback Survey | Bot Analytics > Feedback Analytics |
 | [Debug Logs](./fetch-debug-logs.md) | To get debug logs of a specific conversation. | Debug Logs | NA  |

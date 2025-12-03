@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.19.1 November 19, 2025
+
+<u>Patch Release</u>
+
+This update includes only bug fixes.
+
+<hr>
+
 ## v11.19.0 October 25, 2025
 
 <u>Minor Release</u>
@@ -540,7 +548,7 @@ Genesys Middleware has been enhanced to support Base64-encoded values when passi
 
 **Enhanced Salesforce Package includes Language Parameter**
 
-The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more:octicons-arrow-right-24:](../../agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md/#set-up-agentassist-configuration)
+The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more:octicons-arrow-right-24:](../../agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md/#set-up-the-agentassist-configuration)
 
 **Multi-bot Support for Agent AI Integration with ServiceNow**
 

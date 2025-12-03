@@ -2,9 +2,9 @@
 
 The **Interactions** feature empowers supervisors to review and filter scored interactions in their assigned queues, enabling them to identify crucial conversations for improvement. It offers insights into conversation quality, agent performance, and the customer experience. Supervisors can save custom filters for audits, tailor the view through metadata and columns, apply keyword-based filtering (by speaker, include/exclude words, hide resolved or irrelevant cases), and leverage a timeline-based search with a jump-to-match display for efficient oversight.
 
-## Accessing Interactions
+## Access Interactions
 
-Access **Interactions** by navigating to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interactions**.  
+Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interactions**.  
 <img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
@@ -207,8 +207,7 @@ Enables you to track how the customer's or agent’s sentiment changes throughou
 
 * **Closing**: Select the Closing sentiment trend from the dropdown to define the final emotional tone of a conversation. 
 
-Example: You can choose sentiment values such as Positive, Negative, or Neutral for both the starting and closing points to map the emotional journey across the interaction.  
-<img src="../conversation-mining/images/experience-sentiment-trend.png" alt="Sentiment Trend" title="Sentiment Trend" style="border: 1px solid gray; zoom:80%;">
+**Example:** You can choose sentiment values such as Positive, Negative, or Neutral for both the starting and closing points to map the emotional journey across the interaction.  
 
 #### Emotions
 

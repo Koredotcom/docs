@@ -1,16 +1,15 @@
 # Manage Account Billing and Usage
 
-The **Billing** section helps you monitor and analyze your Agent Platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, guardrails, and custom script deployments to make data-driven decisions about your resource utilization.
+The **Billing** section helps you monitor and analyze your AI for Process expenses through detailed usage metrics and cost breakdowns. You can track computational costs across workflows, models, guardrails, and custom script deployments to make data-driven decisions about your resource utilization.
 
 ## Accessing Usage Information
 
 Steps to access the Usage page:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. On the left navigation pane, click **Billing** > **Usage**.
+2. On the left navigation pane, click **Billing** > **Usage**.
 
 The **Usage** dashboard appears as shown below.
 
@@ -19,10 +18,10 @@ The **Usage** dashboard appears as shown below.
 The Usage page displays the following tabs for billing and usage:
 
 * **Overview**: Provides a high-level summary of your resource consumption including:
-    * **Runs**: Shows current tool run usage against your total allocation.
+    * **Runs**: Shows current workflow run usage against your total allocation.
     * **Credits**: Displays the number of credits consumed out of the total available credits, along with the corresponding percentage. A dynamic pie chart visually represents this data, showing the distribution of total credits, including usage by models and custom script deployments. Each metric is color-coded and identified through a legend for easy reference. Hover over the chart to view the actual values for each usage type.
-    * **Usage Trend**: Visual representation of tool runs and model credit consumption over time.
-* **Tools**: Shows all tool activities and their operational status.
+    * **Usage Trend**: Visual representation of workflow runs and model credit consumption over time.
+* **workflows**: Shows all workflow activities and their operational status.
 * **Models**: Shows the computational costs linked to specific models.
 * **Guardrails**: Shows overall guardrail statistics and credit consumption costs.
 * **Custom Scripts**: Gives a comprehensive view of all the deployed custom scripts’ statistics, including the credits usage trends.
@@ -30,7 +29,7 @@ The Usage page displays the following tabs for billing and usage:
 **Best Practices**
 
 * Regularly monitor your usage trends to optimize resource allocation.
-* Review tools, models, guardrails, and custom scripts to identify cost-saving opportunities.
+* Review workflows, models, guardrails, and custom scripts to identify cost-saving opportunities.
 * Please refer to the hardware profile and the credits consumption chart [here](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"} before deploying custom scripts.
 * Track guardrail deployment duration to manage hardware costs effectively.
 * Hover over the top-right corner of the **Runs** and **Credits** widgets and click the **Refresh** icon to update the latest data.
@@ -39,33 +38,32 @@ The Usage page displays the following tabs for billing and usage:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Use the Calendar bar on all the tabs to search by the number of days using pre-defined date filters—24 hours, 7 days, 30 days, or 90 days. You can also use the Custom option to specify your preferred date range. <a href="../../monitoring/analytics/tools-analytics-dashboard/#global-timeline-filters" target="_blank">Learn more</a>.</p>
+<p>Use the Calendar bar on all the tabs to search by the number of days using pre-defined date filters—24 hours, 7 days, 30 days, or 90 days. You can also use the Custom option to specify your preferred date range. [Learn more](../../../agent-platform/settings/monitoring/analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"}.</p>
 </div>
-
 
 ## Usage Overview
 
-The **Overview** tab summarizes expenses and usage patterns across your tools, models, guardrails, and custom scripts. The following usage information is displayed on the tab:
+The **Overview** tab summarizes expenses and usage patterns across your workflows, models, guardrails, and custom scripts. The following usage information is displayed on the tab:
 
-* **Runs**: This field indicates the usage of tool runs, showing the proportion of capacity consumed compared to the total available runs. For example, if 45 out of 10,000 available tool runs have been utilized, indicating that 0.45% of the total capacity has been consumed.
+* **Runs**: This field indicates the usage of workflow runs, showing the proportion of capacity consumed compared to the total available runs. For example, if 45 out of 10,000 available workflow runs have been utilized, indicating that 0.45% of the total capacity has been consumed.
 * **Credits**: This field displays the total credit usage, showing the proportion of credits used across models, guardrails, and custom scripts compared to the total available credits. It also includes the credits used to host guardrails. For example, if 212 credits have been used out of a total allocation of 300 credits, indicating that 70.72% of your available model credits have been utilized.
-* **Usage trend**: This visual representation shows tool runs, models, guardrails, and custom script credits consumed over time. Use the calendar feature to view changes over a defined timeline, such as daily, weekly, monthly, or any custom date range.
+* **Usage trend**: This visual representation shows workflow runs, models, guardrails, and custom script credits consumed over time. Use the calendar feature to view changes over a defined timeline, such as daily, weekly, monthly, or any custom date range.
 
     <img src="../images/overview-tab.png" alt="Billing Usage trend" title="Billing Usage trend" style="border: 1px solid gray; zoom:80%;">
 
-## Tools Usage
+## Workflows Usage
 
-The Tools tab displays a comprehensive list of tools associated with the account. It includes only those tools that have been deployed at least once; it does not include ‘In development’ tools.  
+The Workflows tab displays a comprehensive list of workflows associated with the account. It includes only those workflows that have been deployed at least once; it does not include ‘In development’ workflows.  
 
 The following usage information is displayed on the tab:
 
-* **Total Tools**: The total number of tools in the account.
-* **Total runs**: The total number of runs by all the tools.
-* **Tool name**: The name assigned to the tool.
-* **Runs**: The number of times the tool was inferred. 
-* **Owner Name**: The name of the user who created the tool.
-* **Last active on**: The date when the tool was last active.
-* **Status**: The tool's status - Deployed, Undeployed, or Deleted.
+* **Total workflows**: The total number of workflows in the account.
+* **Total runs**: The total number of runs by all the workflows.
+* **workflow name**: The name assigned to the workflow.
+* **Runs**: The number of times the workflow was inferred. 
+* **Owner Name**: The name of the user who created the workflow.
+* **Last active on**: The date when the workflow was last active.
+* **Status**: The workflow's status - Deployed, Undeployed, or Deleted.
 
  <img src="../images/tools-tab.png" alt="Billing Tools tab" title="Billing Tools tab" style="border: 1px solid gray; zoom:80%;">
 
