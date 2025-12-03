@@ -1,9 +1,9 @@
 # Test
 
-After you have defined your app and configured one or more tasks, you should test your settings before you publish your NLP-enabled app. Bot owners and developers can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
+After you have defined your app and configured one or more tasks, test your settings before you publish your NLP-enabled app. App owners and developers can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
 
 
-## Testing a App
+## Testing an App
 
 To test your tasks in a messaging window, click the **Test** icon located on the top right corner on the Platform. 
 
