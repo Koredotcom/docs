@@ -1,7 +1,6 @@
 # Confluence Server
 
-If you use Confluence Server to store knowledge content, the Search AI Confluence Server Connector lets you securely index, filter, and search your Confluence data with expanded coverage and improved indexing controls.
-The connector provides enhanced ingestion capabilities, space-based filters, advanced filtering, and optional incremental sync with webhook-based deletion.
+If you are using Confluence Data Center to store and manage your content, you can easily search through that content using the out-of-box connector provided by Search AI.
 
 <span style="text-decoration:underline;">Specifications</span>
 
@@ -15,7 +14,7 @@ The connector provides enhanced ingestion capabilities, space-based filters, adv
   <tr>
    <td>Content Supported
    </td>
-   <td>Knowledge Articles, Spaces, Blogs, and Comments
+   <td>Knowledge Articles
    </td>
   </tr>
   <tr>
@@ -75,35 +74,18 @@ In Search AI:
 1. Go to **Connectors**.
 1. Choose **Confluence (Server)**.
 1. Under **Authentication**, enter the required fields.
-    * Authorization Type: Basic Auth, OAuth 2.0, or Header Based Authorization
-    * Basic Auth fields: Connector Name, Username, Password, and Confluence Server host URL.
-    * OAuth 2.0 fields: Connector Name, Client ID, Client Secret, Confluence Server Base URL, Domain Name and Grant Type (**Authorization Code grant type** or **Client Credentials**). For more details, refer to [this](../connectors.md).
-    * Header Based Authorization fields: Header, Token, and Host URL.
+    * Authorization Type: Basic or OAuth 2.0
+    * Grant Type: Enter the Grant type for OAuth 2.0-based authentication. For Confluence Data Center, Search AI supports two types: Authorization Code grant type and Client Credentials grant type. For more details, refer to [this](../connectors.md).
+    * For Basic Auth, provide the connector name, username, password, and Confluence Data Center host URL.
+    * For OAuth 2.0 Authentication, enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence Data Center base URL and domain name.
 
 Click **Connect** to initiate authorization.
 
 ### Content Ingestion
 
-Go to the **Content** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Server or select specific content. SearchAI now supports ingestion of the following Confluence object types:
-
-* Pages (Knowledge Articles)
-* Spaces (including space metadata and descriptions)
-* Blogs (blog posts and associated metadata)
-* Comments (page comments and discussion threads)
-
-**NOTE**: If there are any attachments to the content being ingested, then the content from the attachments is also automatically ingested into the application. At present, only PDF format attachments are supported.
+Go to the **Configuration** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Data Center or select specific content. Note that if there are any attachments to the pages being ingested into the application, then the content from the attachments is also automatically ingested into the application. At present, only PDF format attachments are supported.
 
 ![Content Synchronization](images/confluenceserver/content-synchronization.png "Content Synchronization")
-
-#### Incremental Sync and Deletion Handling
-
-The Confluence Server connector supports incremental synchronization to ensure efficient content updates. During each sync cycle, only newly created or modified Pages, Blogs, Spaces, and Comments are fetched and updated in SearchAI.
-
-**Deletion Handling**
-
-SearchAI can process deletion events from Confluence using webhook-based notifications. When enabled, webhook callbacks make it possible to automatically remove deleted content—such as pages, blogs, or comments—from the SearchAI index, ensuring that search results always reflect the latest state of Confluence.
-
-These capabilities help maintain accurate and up-to-date indexed content while minimizing ingestion time and system load.
 
 ### Content Filters
 
@@ -139,9 +121,6 @@ Similarly, to selectively ingest only the pages created or modified after Jan 1,
 Note:
 
 * You can define more than one condition to choose different types of content from the connector using the OR operator.
-* Comments inherit context from their parent page or blog.
-* Spaces can be filtered by space key and space type.
-* Blogs can be filtered by publication date and author.
 * Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024 and having the word ‘SearchAI’ in its title, define the rule as:
 
 ![Content Filters](images/confluenceserver/example3.png "Content Filters")
