@@ -3,7 +3,7 @@
 	"scope": "markdown",
  	"prefix": "kore-support",
  	"body": [
-	   "[Contact Support](https://www.kore.ai/support)"
+	   "[contact Support](https://www.kore.ai/support)"
  	],
  	"description": "Contact Support link."
 },
