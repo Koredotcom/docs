@@ -5,6 +5,7 @@ Learn how to create and configure AI agents in the AgenticAI Core SDK.
 ## Overview
 
 Agents are the core building blocks of your application. Each agent is an autonomous entity with:
+
 - Specific role and responsibilities
 - LLM configuration for decision-making
 - Tools to perform actions
@@ -64,6 +65,7 @@ agent = Agent(
 ### REACT (ReAct Pattern)
 
 Reasoning + Acting pattern where the agent iteratively:
+
 1. Reasons about the task
 2. Selects an action (tool)
 3. Observes the result
@@ -78,6 +80,7 @@ agent = Agent(
 ```
 
 **Best for:**
+
 - General purpose tasks
 - Interactive problem-solving
 - Tool-heavy workflows
@@ -95,6 +98,7 @@ agent = Agent(
 ```
 
 **Best for:**
+
 - Complex multi-step tasks
 - Structured workflows
 - Tasks requiring upfront planning

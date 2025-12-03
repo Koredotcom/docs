@@ -1,13 +1,14 @@
 # Changelog
 
-All notable changes to the AgenticAI Core SDK will be documented in this file.
+This article contains the noteworthy changes to the AgenticAI Core SDK.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## Unreleased
 
 ### Added - Application Configuration (Nov 2025)
+
 - App Namespace support for logical grouping of variables (Nov 7)
 - App Variables with environment variable resolution (Nov 7)
 - Namespace-based variable scoping (functional, service, feature-based)
@@ -15,20 +16,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Template variable support in prompts
 
 ### Added - Advanced Features (Oct-Nov 2025)
+
 - Thought streaming configuration for LLM responses (Oct 31)
 - Filler messages with static and dynamic modes (Oct 23)
 - Dynamic filler messages with LLM generation
 - Static filler message sequences
 
 ### Added - Documentation System (Nov 2025)
+
 - Comprehensive MkDocs documentation with Material theme (Nov 5)
-- Google-style docstrings for all design-time models
-- API reference documentation with mkdocstrings-python
+- Google-style `docstrings` for all design-time models
+- API reference documentation with `mkdocstrings-python`
 - Complete CLI interface documentation
 - User guides and tutorials
 - Workspace-focused installation and quickstart guides
 
 ### Documentation
+
 - Complete API reference for all design-time models
 - Design-time models: App, Agent, Tool, LLM Model, Prompt, Memory Store, Icon
 - App Namespace and App Variable documentation with examples
@@ -42,12 +46,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 **Major Release**: Memory Stores, Logging, and Distributed Tracing
 
 ### Added - CLI Framework (Sept 2025)
+
 - Moved CLI from workspace to agentic-core for centralization (Sept 29)
 - Unified CLI interface accessible from workspace projects
 - Command-line interface for application lifecycle management
 - Subcommands: start, archive, deploy, create-env, test, status
 
 ### Added - Distributed Tracing (Sept 2025)
+
 - Langfuse integration for distributed tracing (Sept 17-22)
 - `@tracer.observe()` decorator for tools and orchestrators
 - Trace context propagation across agent calls
@@ -57,6 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tracer available via `agenticai_core.runtime.trace._langfuse_tracer`
 
 ### Added - Memory Store System (July 2025)
+
 - Memory store configuration models (July 9)
 - `MemoryStore` with JSON schema validation
 - Namespace support (static and dynamic)
@@ -69,6 +76,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Field projections for efficient data retrieval
 
 ### Added - Logging System (July 2025)
+
 - Structured logging with `Logger` class (July 9)
 - Async logger methods: `debug()`, `info()`, `warning()`, `error()`
 - Automatic session and user context tracking
@@ -76,12 +84,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Structured log output with timestamps and metadata
 
 ### Added - External Agent Support (Aug 2025)
+
 - Proxy agent support (Aug 25)
 - External agent configuration in `AppConfigurations`
 - Agent endpoint and communication settings
 - Response routing modes (orchestrator, direct)
 
 ### Changed
+
 - Renamed `base_agent` to `abstract_agent` (May 27)
 - Renamed `base_orchestrator` to `abstract_orchestrator` (May 27)
 - Renamed `MCPRuntime` to `Runtime` (May 26)
@@ -91,6 +101,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved KAR archive generation with exclusions
 
 ### Fixed
+
 - Tool args handling in MCP client (May 15)
 - Memory manager async context exit (Sept 1)
 - Archive creation excluding unwanted directories (.venv, venv, __pycache__)
@@ -104,6 +115,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 **Initial Release**: Core Framework and Tool System
 
 ### Added - Tool Registration (May 2025)
+
 - `@Tool.register()` decorator for custom tools (May 6, May 22)
 - Automatic tool discovery and registration
 - `ToolsRegistry` for managing registered tools
@@ -112,6 +124,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tool types: inline, toolLibrary, KNOWLEDGE, MCP
 
 ### Added - Application Features (May-Aug 2025)
+
 - `app.start()` method for starting MCP server (May 29)
 - `app.save()` method for configuration serialization (Apr 24)
 - Custom orchestrator registration
@@ -121,6 +134,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Host and port configuration
 
 ### Added - Design-Time Models (Apr 2025)
+
 - `App` - Application configuration
 - `Agent` - AI agent definitions with role, sub_type
 - `Tool` - Tool and capability definitions
@@ -132,6 +146,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AgentConfig` - Agent configuration settings
 
 ### Added - Runtime Framework (Apr 2025)
+
 - MCP server implementation with FastMCP (May 23)
 - `AbstractAgent` - Base agent class
 - `AbstractOrchestrator` - Base orchestration class
@@ -140,6 +155,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `RequestContext` - Session and context management
 
 ### Changed
+
 - Renamed `base_agent` to `abstract_agent` (May 27)
 - Renamed `base_orchestrator` to `abstract_orchestrator` (May 27)
 - Renamed `MCPRuntime` to `Runtime` (May 26)
@@ -149,6 +165,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved KAR archive generation with exclusions
 
 ### Fixed
+
 - Tool args handling in MCP client (May 15)
 - Memory manager async context exit (Sept 1)
 - Archive creation excluding unwanted directories (Apr 29, May 28, June 9)
@@ -160,16 +177,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Initial Development - April 2025
 
 ### April 9, 2025 - Project Bootstrap
+
 - Initial commit and repository structure
 - Merged repos to create sub-modules architecture
 
 ### April 10, 2025 - Core Agent Implementation
+
 - Implemented `base_agent` (later renamed to `abstract_agent`)
 - Added `ErrorMessage` for error handling
 - Updated documentation with architecture diagrams
 - Added sequence diagrams and component interaction diagrams
 
 ### April 14, 2025 - MCP Runtime
+
 - Added MCP Runtime for agent execution
 - Registered custom orchestrators in runtime
 - Added `--start` flag to run.py
@@ -177,21 +197,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `to_dict`, `from_dict` in `AgentMeta`
 
 ### April 15, 2025 - MCP Client
+
 - Added MCP client for testing
 - Fixed MCP server setup
 - Fixed tool args handling
 
 ### April 23, 2025 - Documentation
+
 - Updated runtime and design-time class diagrams
 - Enhanced MCP client README
 
 ### April 24, 2025 - Configuration Serialization
+
 - Implemented `app.save()` method for JSON export
 - Added tool definitions
 - Created bin directory for archives
 - Added orchestratorType and KAR file generation
 
 ### April 29, 2025 - Refactoring
+
 - Moved `src/main.py` to `src/app.py`
 - Moved `ToolMeta` to tool.py
 - Added `app.start()` method for starting server
@@ -208,14 +232,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## Author
-
-Kore.ai Engineering team
-
 ## Contributing
 
 See [Contributing Guide](contributing.md) for details on how to contribute.
 
 ## Support
 
-For questions, issues, or feature requests, contact Kore Support.
+For questions, issues, or feature requests, contact Support.

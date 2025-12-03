@@ -11,6 +11,9 @@ theme:
   favicon: images/Kore_logo_new.svg
   name: material
   custom_dir: overrides.en.agent-platform
+  icon:
+    tag:
+    workflow_tool: material/sitemap-outline
   features:
     - navigation.tabs
     - navigation.sections
@@ -41,10 +44,13 @@ plugins:
   - search:
       lang: tr
   - glightbox   
+  - tags
 extra:
   version:
     provider: mike
   generator: false
+  tags:
+    workflow_tool: workflow_tool
   analytics:
     provider: google
     property: G-560BYJFH0P
@@ -116,7 +122,7 @@ nav:
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
     - Accessing Agent Platform: getting-started/sign-up-sign-in.md
-    - Agent Platform IP Addresses: getting-started/ip-addresses.md
+    - Outbound IP Addresses: getting-started/outbound-ip-address.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
     - Quick Start Tutorials:
       - Video Tutorials: 
@@ -148,6 +154,7 @@ nav:
       - Set up AI Agents: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
+      - Manage Agents: ai-agents/agent-management.md
     - Knowledge:
       - About Search AI: ai-agents/knowledge/overview.md
       - About Knowledge Tools: ai-agents/knowledge/about-knowledge.md
@@ -205,6 +212,7 @@ nav:
       - MCP Tools: 
         - About MCP Tools: ai-agents/tools/mcp-tools.md
         - Configure MCP server: ai-agents/tools/configure-mcp-server.md    
+      - Context Object: ai-agents/context-object.md
     - App Settings:
         - System Events: ai-agents/agentic-apps/settings/events.md
         - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
@@ -233,7 +241,7 @@ nav:
       - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md
       - Initiate Live Agent Handoff from Agentic Apps: ai-agents/agentic-apps/howto/initiate-live-agent-handoff.md
       - Use Metadata passed via APIs in Agentic Apps: ai-agents/agentic-apps/howto/use-metadata.md
-      - Voice Channel integration between AI for Service and Agent Platform: ai-agents/agentic-apps/howto/voice-interactions.md
+      - Real-time Voice Interaction between AI for Service and Agent Platform: ai-agents/agentic-apps/howto/voice-interactions.md
 
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
