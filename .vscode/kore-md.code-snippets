@@ -1,4 +1,13 @@
 {
+ "Contact Support link": {
+	"scope": "markdown",
+ 	"prefix": "kore-support",
+ 	"body": [
+	   "[Contact Support](https://support.kore.ai/)"
+ 	],
+ 	"description": "Contact Support link."
+},
+
  "Insert HTML code for image": {
 	"scope": "markdown",
  	"prefix": "kore-image",
