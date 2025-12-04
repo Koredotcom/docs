@@ -100,11 +100,11 @@ Steps to export conversation data/transcripts:
 1. Select the conversations and click **Export**.  
     <img src="../images/export-button.png" alt="Export Button" title="Export Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Export Conversation Data**, **Export Transcripts**, or **Export Events** as required.
+2. Select **Export Conversation Data**, **Export Transcripts**, or **Export Events** as required.
 
     or
 
-    Click **Download Recording**, **Download Transcript**, or **Download Latency Report**. The transcript and latency report are downloaded in .csv format.  
+    Select **Download Recording**, **Download Transcript**, or **Download Latency Report**. The transcript and latency report downloads in .csv format.  
     <img src="../images/download-options-interactions.png" alt="Download Options" title="Download Options" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! Notes
@@ -118,21 +118,21 @@ Steps to export conversation data/transcripts:
             `vadEnable = true`  
             `vadVendor = silero`
 
-3. A status message is displayed at the start of the export. On completion, the file is downloaded.
+3. A status message appears at the start of the export. On completion, the file downloads.
 
 Steps to Preview and Download Events:
 
-1. Select the conversations, click **Export**, or click the Ellipsis (**⋮**) icon under Actions.  
+1. Select the conversations, select **Export**, or select the **⋮** icon under Actions.  
     <img src="../images/ellipsis-button-event.png" alt="Ellipsis Button" title="Ellipsis Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Preview Events**.  
+2. Select **Preview Events**.  
     <img src="../images/preview-events.png" alt="Preview Events" title="Preview Events" style="border: 1px solid gray; zoom:80%;">
 
-3. The preview is generated. Click **Download Events**.
+3. Select **Download Events**.
 
     !!! Notes
 
-        * The Download Events option will be unavailable for conversations over 30 days old.
+        * The Download Events option are unavailable for conversations over 30 days old.
         * Events are recorded periodically, so the exported document may not always reflect the entire event history. For a comprehensive record, it is recommended to download the events once the conversation has ended.
 
     <img src="../images/preview-events-page.png" alt="Preview Events Page" title="Preview Events Page" style="border: 1px solid gray; zoom:80%;">
@@ -153,6 +153,68 @@ Steps to Preview and Download Events:
     * Disposition Updates  
     * After-Call Work (ACW)  
     * Conversation Closure  
+
+## Latency Metrics (Beta)
+
+The Latency Metrics feature measures how long each stage of a voice interaction takes-ASR, bot processing, TTS, and the overall end-to-end response time. The following sections define each metric with formulas and examples.
+
+* **ASR Latency**: The time between when the user stops speaking and when the ASR provider returns the complete transcription.
+
+    Formula:
+    `ASR Latency = User stops speaking → ASR returns full transcript`
+
+    Example:
+
+    * User stops speaking: `10:00:05.000`
+    * ASR returns transcript: `10:00:05.450`
+    * ASR Latency = 450 ms
+
+* **Bot Latency**: The time between when the Voice Gateway (VG) sends the transcription to the platform and when VG receives the full response.
+
+    Formula:
+    `Bot Latency = VG sends transcript → VG receives bot response`
+
+    Example:
+
+    * Transcript sent: `10:00:05.450`
+    * Bot response received: `10:00:06.300`
+    * Bot Latency = 850 ms
+
+* **TTS Latency**: The time between when VG sends the bot’s response text to the TTS provider and when VG receives the first byte of synthesized audio (Time to First Byte).
+
+    Formula:
+    `TTS Latency = VG sends TTS request → VG receives first audio byte`
+
+    Notes:
+
+    * Captures only the first audio byte arrival time.
+    * Total TTS audio-generation time isn't shown.
+
+    Example:
+
+    * TTS request sent: `10:00:06.300`
+    * First audio byte received: `10:00:06.700`
+    * TTS Latency = 400 ms
+
+* **End-to-End Latency**: The total time between when the user stops speaking and when the first audio byte plays back to the user.
+
+    Formula:
+    `End-to-End Latency = User stops speaking → First audio byte heard`
+
+    Example:
+
+    * User stops speaking: `10:00:05.000`
+    * First audio byte heard: `10:00:06.700`
+    * End-to-End Latency = 1.7 seconds
+
+Summary Table
+
+| Metric                 | Measures Time Between                                | Represents                                | Example |
+|------------------------|--------------------------------------------------------|--------------------------------------------|---------|
+| ASR Latency            | User stops speaking → ASR full transcript             | Speed of speech recognition                | 450 ms  |
+| Bot Latency            | VG sends transcript → VG gets bot response            | Bot processing and platform delays         | 850 ms  |
+| TTS Latency            | VG sends TTS request → VG receives first audio byte   | TTS responsiveness (Time to First Byte)    | 400 ms  |
+| End-to-End Latency     | User stops speaking → user hears first audio byte     | Full round-trip delay                      | 1.7 s   |
 
 ## Edit Dispositions from the Interactions Tab
 
