@@ -16,6 +16,7 @@ theme:
     workflow_tool: material/sitemap-outline
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
     - navigation.path
@@ -25,7 +26,6 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-    - header.autohide
   language: en
   palette:
     - scheme: default
@@ -121,7 +121,6 @@ nav:
   - Home : home.md
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
-    - Agent Platform IP Addresses: getting-started/ip-addresses.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
