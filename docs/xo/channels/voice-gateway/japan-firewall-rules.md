@@ -19,7 +19,7 @@
 |                                        | UDP      | ANY       | ANY           | 18.182.77.145                                  | 6000-65535      |
 |                                        | TCP      | ANY       | ANY           | 18.182.77.145                                  | 10081           |
 
-## Voice Gateway
+## Voice Gateway (VG)
 
 | Component                            | Protocol | Source IP | Source Port | Destination IP / FQDN | Destination Port Range |
 |--------------------------------------|----------|-----------|-------------|------------------------|------------------------|
@@ -29,7 +29,7 @@
 | ↳                                    | TCP      | ANY       | ANY         | 35.76.183.247          | 8443                   |
 | ↳                                    | TCP/UDP  | ANY       | ANY         | 54.248.11.38           | 5060                   |
 | ↳                                    | TLS      | ANY       | ANY         | 54.248.11.38           | 5061                   |
-| ↳                                    | TLS      | ANY       | ANY         | 54.248.11.38           | 8443                   |
+| ↳                                    | WSS      | ANY       | ANY         | 54.248.11.38           | 8443                   |
 | ↳                                    | UDP      | ANY       | ANY         | 35.76.183.247          | 6000-65535             |
 | ↳                                    | UDP      | ANY       | ANY         | 54.248.11.38           | 6000-65535             |
 

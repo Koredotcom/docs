@@ -6,7 +6,7 @@ The **Monitor** tab lets you monitor live conversations between agents and custo
 
 1. The **Queues** section displays the conversation summary between agents and customers per queue. You only have access to the queues you are assigned to; and to the agents assigned to the same queues as you.
 2. The **Agents** section lets you view agent performance metrics and monitor agent-specific live conversations. Listed agents belong to the same queues you are also assigned to.
-3. The **Interactions** section displays all interactions currently live in Contact Center AI and assigned to agents on the console.
+3. The **Interactions** section displays all interactions live in Contact Center AI and assigned to agents on the console.
 
     !!! Note
 
@@ -16,36 +16,36 @@ The **Monitor** tab lets you monitor live conversations between agents and custo
 
 ## Queues
 
-In this section, you can see all the queues to which you are assigned. The number of conversations waiting to be picked up, the number of already engaged conversations, and a summary of agents assigned to a particular queue along with their current status. In addition to the above details, the supervisor can see the average wait time, max wait time (an indicator of peak load handling capacity), and drop-off rate.
+In this section, you can see all the assigned queues. The dashboard shows the number of conversations waiting to be picked up, the number of engaged conversations, and a summary of agents assigned to the queue along with their current status. The supervisor can see the average wait time, max wait time (an indicator of peak load handling capacity), and drop-off rate.
 
-Clicking the sort icon allows you to sort the columns in ascending/descending order. The default sorting is by Queue Name.
+Selecting the sort icon enables you to sort the columns in ascending/descending order. The default sorting is by Queue Name.
 
 To monitor the agents:
 
-* On the **Monitor** tab, click the **Queue** tab.  
+* On the **Monitor** tab, select the **Queue** tab.  
     <img src="../images/queues-tab.png" alt="Queues Tab" title="Queues Tab" style="border: 1px solid gray; zoom:80%;">
 
-* On the left menu, click a queue that you want to view.  
+* On the left menu, select a queue that you want to view.  
     <img src="../images/queue-name.png" alt="Queue Name" title="Queue Name" style="border: 1px solid gray; zoom:80%;">
 
-* The queue screen appears as shown below:  
+* The queue screen appears as shown:  
     <img src="../images/queues-details.png" alt="Queue Details" title="Queue Details" style="border: 1px solid gray; zoom:70%;">
 
-* Click the agent name. The detailed screen of the agent conversation opens up on the right.  
+* Select the agent name. The detailed screen of the agent conversation opens up on the right.  
 
     **Chat**, **Messaging**, and **Voice**:  
 
-    The assigned agent’s name is shown immediately upon assignment, even if the agent has not yet sent a response.  
+    The assigned agent’s name appears immediately upon assignment, even if the agent hasn't sent a response.  
     <img src="../images/agent-assigned.png" alt="Agent Assigned" title="Agent Assigned" style="border: 1px solid gray; zoom:70%;">
 
 ### Filter
 
-#### Create Filter
+#### Create a Filter
 
-1. Click the **Filter** button.  
+1. Select the **Filter** option.  
     <img src="../images/filter-button.png" alt="Filter Button" title="Filter Button" style="border: 1px solid gray; zoom:80%;"> 
 
-2. Click **New Filter**.  
+2. Select **New Filter**.  
     <img src="../images/new-filter.png" alt="New Filter" title="New Filter" style="border: 1px solid gray; zoom:80%;"> 
 
 3. Select the **Queues**, **Channels**, **Type**, **State**, and **Languages**.
@@ -55,24 +55,24 @@ To monitor the agents:
         You can select from agent groups (list of agents), search for agents, and select from dynamic sub-filters.    
     <img src="../images/filter-options-queues.png" alt="Filter By" title="Filter By" style="border: 1px solid gray; zoom:80%;">  
 
-    Select from the below available options:  
-        1. **Clear** – Clears the selection.  
-        2. **Save & Apply** – Saves the filter, and it appears when selected.  
-        3. **Apply** – Applied for one instance and not saved.
-4. Click **Save & Apply**.
+    Select from the following options:  
+        1. **Clear** - Clears the selection.  
+        2. **Save & Apply** - Saves the filter, and it appears when selected.  
+        3. **Apply** - Applied for one instance and not saved.
+4. Select **Save & Apply**.
 
-5. On the pop-up window, enter a name (up to 20 characters) for the filter and click **Save & Apply**.  
+5. On the pop-up window, enter a name (up to 20 characters) for the filter and select **Save & Apply**.  
     <img src="../images/save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">  
 
-    A confirmation message is displayed and the filter is saved.
+    A confirmation message appears and saves the filter.
 
-6. Click Saved Filters. By default, the system shows the following:
+6. Select Saved Filters. By default, the system shows the following:
 
-    * The Waiting with Agents and Waiting in Queue quick filters are pre-selected. These filters are editable and can be deleted.  
+    * The Waiting with Agents and Waiting in Queue quick filters are pre-selected. These filters can be edited and deleted.  
         <img src="../images/default-filters.png" alt="Default Filters" title="Default Filters" style="border: 1px solid gray; zoom:80%;"> 
     * You can select up to four quick filters. Quick filters appear along with unsaved filters.
-    * If a filter is set as the default but not selected as a quick filter, the system still treats it as a quick filter.
-    * You cannot disable a quick filter while a default filter is applied. To disable the quick filter, first remove the default filter.
+    * If a filter is set as the default but isn't selected as a quick filter, the system treats it as a quick filter.
+    * You can't disable a quick filter while a default filter is applied. To disable the quick filter, first remove the default filter.
 
 #### Edit Filter
 
@@ -188,7 +188,7 @@ Steps to transfer all Calls/Chats/Emails in the Agent Queue:
 
         At least one conversation must be selected to proceed.
 
-3. A bottom action bar appears, displaying a **"Transfer"** button.
+3. A bottom action bar appears, displaying a **"Transfer"** option.
 4. From the queue dropdown, choose a destination queue.  
     <img src="../images/choose-queue.png" alt="Choose Queue" title="Choose Queue" style="border: 1px solid gray; zoom:70%;">
 5. Click **Transfer**. The selected conversations are reassigned to the chosen queue.  
@@ -207,11 +207,11 @@ Steps to transfer all Calls/Chats/Emails in the Agent Queue:
 
         * At least one conversation must be selected to proceed.  
         * When a conversation is force-closed—either individually or through a bulk action—a system-generated disposition is automatically attached to the conversation. This behavior applies to both indefinite and timed slot release scenarios.  
-        * If an agent has already selected a disposition for a conversation before it is force-closed, the agent-selected disposition will not be saved. The system-generated disposition will be applied instead.
+        * If an agent has already selected a disposition for a conversation before it is force-closed, the agent-selected disposition isn't saved. The system-generated disposition is applied instead.
 
-3. A bottom action bar appears, displaying a Force Close button.
-4. Click **Force Close**.  
-    <img src="../images/force-close.png" alt="Forece Close" title="Force Close" style="border: 1px solid gray; zoom:70%;">
+3. A bottom action bar appears, displaying a Force Close icon.
+4. Select **Force Close**.  
+    <img src="../images/force-close.png" alt="Force Close" title="Force Close" style="border: 1px solid gray; zoom:70%;">
 5. A confirmation pop-up is displayed. Click **Confirm**. The selected conversations are closed across their respective channels.  
     <img src="../images/confirm-close.png" alt="Confirm Close" title="Confirm Close" style="border: 1px solid gray; zoom:70%;">
 
@@ -224,31 +224,31 @@ After completing the transfer or end actions, the interface:
 
 ## Agents
 
-You can check agent details and monitor and intervene in ongoing conversations. The agents in this section are restricted to those assigned to the same queues as you. A list of conversations currently being handled by the agents is displayed with parameters such as state, load, first response, average response, AHT, etc.
+You can check agent details and monitor and intervene in ongoing conversations. Agents in this section are restricted to those assigned to the same queues as you. A list of conversations handled by the agents appear with parameters such as state, load, first response, average response, Average Handle Time (AHT), etc.
 
-Clicking the sort icon allows you to sort the columns in ascending or descending order. The default sorting is by State.
+Selecting the sort icon enables you to sort the columns in ascending or descending order. The default sorting is by State.
 
 !!! Note
 
-    Sorting is unavailable for automation interactions. Removing offline agents improves performance when sorting by load, but offline agents will not be visible in this mode.
+    Sorting is unavailable for automation interactions. Removing offline agents improves performance when sorting by load, but offline agents aren't visible in this mode.
 
-The following metrics and their total counts are displayed:
+The following metrics and their total counts appear:
 
 * **Completed**: Count of interactions completed and closed by the agent.
 * **Transferred**: Count of interactions an agent has transferred to a queue or another agent.
-* **Rejected**: Count of interactions explicitly rejected by an agent using the reject button.
-* **Unanswered**: Count of interactions assigned to an agent where the agent did not pick up the interaction within the acceptance timeout.  
+* **Rejected**: Count of interactions explicitly rejected by an agent.
+* **Unanswered**: Count of interactions assigned to an agent where the agent didn't pick up the interaction within the acceptance timeout.  
 
 The channel selection status appears on the Agents tab beside the Agent’s name. Active channels appear in Green and the disabled channels appear in Gray color.  
 <img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">  
-If an agent selects a channel and logs out at the end of the day, the previously selected channel persists when the agent starts a new session. Active channels appear in green, while disabled channels appear in amber for the supervisor.
+If an agent selects a channel and logs out at the end of the day, the previously selected channel persists when the agent starts a new session. Active channels appear in green, while disabled channels appear in gray for the supervisor.
 
 * Hovering over an agent’s name displays a pop-up with the following information:
 
     * Agent status (for example, Available, Busy, Inactive).
     * Agent Name and profile icon, email ID, phone number, role.
     * Skills assigned to the agent.
-    * Queues the agent is associated with.
+    * Queues associated with the agent.
     * Agent Groups the agent is part of.  
         <img src="../images/agent-name-hover.png" alt="Agent Name Hover" title="Agents Name Hover" style="border: 1px solid gray; zoom:80%;">  
 
@@ -258,11 +258,11 @@ If an agent selects a channel and logs out at the end of the day, the previously
 * On the monitor tab, select an agent on the left side. The supervisor can view the agent’s ongoing conversation on the right and check the engagement metrics.  
     <img src="../images/agents-details.png" alt="Engagement Metrics" title="Engagement Metrics" style="border: 1px solid gray; zoom:80%;">
 
-* On the right window, click the agent’s name.  Another window opens to the right as shown below. To check the agent engagement metrics, on the right window, click the down arrow as shown below:  
+* On the right window, Select the agent’s name. Another window opens to the right. To check the agent engagement metrics, on the right window, select the down arrow:  
 
     **Chat**, **Messaging**, and **Voice**:
 
-    <img src="../images/engagement-metric.png" alt="Agent Engagemnt Metrics" title="Agent Engagement Metrics" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/engagement-metric.png" alt="Agent Engagement Metrics" title="Agent Engagement Metrics" style="border: 1px solid gray; zoom:80%;">  
 
     **Email**:  
 
@@ -292,76 +292,76 @@ If an agent selects a channel and logs out at the end of the day, the previously
 
 4. Click **Save & Apply**.  
 
-5. On the pop-up window, enter a name (up to 20 characters) for the filter and click Save & Apply.  
+5. On the pop-up window, enter a name (up to 20 characters) for the filter and select Save & Apply.  
 <img src="../images/save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">  
 
-    A confirmation message is displayed and the filter is saved.
+    A confirmation message appears and saves the filter.
 
-6. Click Saved Filters. By default, the system shows the following:
+6. Select Saved Filters. By default, the system shows the following:
 
     * The Waiting with Agents and Waiting in Queue quick filters are pre-selected. These filters are editable and can be deleted.  
         <img src="../images/agents-default-filters.png" alt="Default Filters" title="Default Filters" style="border: 1px solid gray; zoom:80%;"> 
     * You can select up to four quick filters. Quick filters appear along with unsaved filters.
-    * If a filter is set as the default but not selected as a quick filter, the system still treats it as a quick filter.
-    * You cannot disable a quick filter while a default filter is applied. To disable the quick filter, first remove the default filter.
+    * If a filter is set as the default but not selected as a quick filter, the system treats it as a quick filter.
+    * You can't disable a quick filter while a default filter is applied. To disable the quick filter, first remove the default filter.
 
-#### Edit Filter
+#### Edit a Filter
 
 Steps to edit a filter:
 
-1. Click the **Filters** tab. The Saved Filter name appears.  
+1. Select the **Filters** tab. The Saved Filter name appears.  
 <img src="../images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">  
 
-2. Click the **Edit** button.  
+2. Select **Edit**.  
 <img src="../images/edit-button.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
 
-3. Make the necessary changes and click **Save & Apply**.  
+3. Make the necessary changes and select **Save & Apply**.  
     <img src="../images/edit-agent-filter.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation message is displayed and the filter is updated.
+    A confirmation message appears and updates the filter.
 
-#### Copy Filter
+#### Copy a Filter
 
-1. Click the **Duplicate** button.  
+1. Select **Duplicate**.  
 <img src="../images/duplicate-button.png" alt="Duplicate Button" title="Duplicate Button" style="border: 1px solid gray; zoom:80%;">
 
-2. On the Rename Filter window, enter a name for the filter and click **Save**.  
+2. On the Rename Filter window, enter a name for the filter and select **Save**.  
     <img src="../images/save-copy.png" alt="Save Button" title="Save Button" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation is displayed and a copy of the filter is created.
+    A confirmation appears and creates a copy of the filter.
 
 #### Mark as Default
 
-1. Click the **Mark as Default** button.  
+1. Select **Mark as Default**.  
 <img src="../images/mark-as-default.png" alt="Mark as Default Button" title="Mark as Default Button" style="border: 1px solid gray; zoom:80%;">
 
-2. A confirmation message is displayed and the filter is marked as default.
+    A confirmation message appears and marks the filter as default.
 
-#### Delete Filter
+#### Delete a Filter
 
-1. Click the **Delete** button.  
+1. Select **Delete**.  
 <img src="../images/delete-saved-filter.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
-2. A Delete Filter message appears. Click **Delete**.  
+2. A Delete Filter message appears. select **Delete**.  
     <img src="../images/delete-filter-confirmation.png" alt="Mark as Default Button" title="Mark as Default Button" style="border: 1px solid gray; zoom:80%;">  
 
-    A confirmation message is displayed and the filter is deleted.
+    A confirmation message appears and deletes the filter.
 
-### Auto Refresh When Filters are Applied
+### Auto Refresh When Applying Filters
 
-When a supervisor applies a filter, the page refreshes at fixed intervals to ensure real-time data accuracy. For example, changes in agent status appear after the auto-refresh, keeping the data up to date.
-The page refreshes every 10 seconds to update data changes. Supervisors can pause updates by clicking the **Pause** button.  
+When a supervisor applies a filter, the page refreshes at fixed intervals to verify real-time data accuracy. For example, changes in agent status appear after the auto refresh, keeping the data up to date.
+The page refreshes every 10 seconds to update data changes. Supervisors can pause updates by selecting **Pause**.  
 <img src="../images/pause-button.png" alt="Pause Refresh" title="Pause refresh" style="border: 1px solid gray; zoom:80%;">  
 
-Clicking the **Play** button resumes updates.  
+Selecting the **Play** button resumes updates.  
 <img src="../images/resume-button.png" alt="Resume Refresh" title="Resume refresh" style="border: 1px solid gray; zoom:80%;">  
 
-A confirmation is displayed once the refresh is completed, and the updated data is shown.  
+A confirmation appears on completing the refresh, and shows the updated data.  
 <img src="../images/filter-updated.png" alt="Filter Updated" title="Filter Updated" style="border: 1px solid gray; zoom:80%;">  
 
 !!! Note
 
-    The system will not immediately update changes to the data (for example, new interactions and status changes). These changes will appear after the next auto-refresh.
+    The system doesn't immediately update changes to the data (for example, new interactions and status changes). These changes appear after the next auto-refresh.
 
 ## Transfer all Calls/Chats/Emails to a Human Agent
 
@@ -409,11 +409,11 @@ Steps to transfer all Calls/Chats/Emails in the Agent Queue:
 
         * At least one conversation must be selected to proceed.  
         * When a conversation is force-closed—either individually or through a bulk action—a system-generated disposition is automatically attached to the conversation. This behavior applies to both indefinite and timed slot release scenarios.  
-        * If an agent has already selected a disposition for a conversation before it is force-closed, the agent-selected disposition will not be saved. The system-generated disposition will be applied instead.
+        * If an agent has already selected a disposition for a conversation before it is force-closed, the agent-selected disposition is saved. The system-generated disposition are applied instead.
 
-3. A bottom action bar appears, displaying a Force Close button.
-4. Click **Force Close**.  
-    <img src="../images/force-close.png" alt="Forece Close" title="Force Close" style="border: 1px solid gray; zoom:70%;">
+3. A bottom action bar appears, displaying a Force Close option.
+4. Select **Force Close**.  
+    <img src="../images/force-close.png" alt="Force Close" title="Force Close" style="border: 1px solid gray; zoom:70%;">
 5. A confirmation pop-up is displayed. Click **Confirm**. The selected conversations are closed across their respective channels.  
     <img src="../images/confirm-close.png" alt="Confirm Close" title="Confirm Close" style="border: 1px solid gray; zoom:70%;">
 
