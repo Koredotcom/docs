@@ -43,15 +43,15 @@ Supervisors can view ongoing interactions on the Interactions tab. They can inte
 
 Steps to perform supervisor actions:
 
-1. Click **Interactions** under the **Contact Center** section of the **Analytics** panel. The **Interactions** dashboard is displayed on the right side of the page.
+1. Select **Interactions** under the **Contact Center** section of the **Analytics** panel. The **Interactions** dashboard appears on the right side of the page.
 
-2. Click ( **⋮** ) under ACTIONS and then click **Supervisor View**.  
+2. Select **⋮** under ACTIONS and then select **Supervisor View**.  
 <img src="../images/supervisor-actions.png" alt="Supervisor Actions" title="Supervisor Actions" style="border: 1px solid gray; zoom:80%;">
 
-3. You will be redirected to the interactions section on the MONITOR tab.  
+3. You are redirected to the Interactions section on the Monitor tab.  
   <img src="../images/supervisor-actions-1.png" alt="Supervisor Actions 1" title="Supervisor Actions 1" style="border: 1px solid gray; zoom:80%;">
 
-4. Click the ongoing conversation. You can perform the following actions in the conversation:
+4. Select the ongoing conversation. You can perform the following actions in the conversation:
     * Join Conversation
     * Assign
     * Change Queue  
@@ -62,7 +62,7 @@ Steps to perform supervisor actions:
 You can find the search field on the top right side of the Interactions tab.  
 <img src="../images/search-interactions.png" alt="Search Interactions" title="Search Interactions" style="border: 1px solid gray; zoom:80%;">
 
-The search feature on Interactions allows supervisors to do the following:
+The search feature on Interactions lets supervisors to do the following:
 
 * Search for keywords in both chats and call transcripts.
 * Search the Agent and Disposition notes.
@@ -71,7 +71,7 @@ The search feature on Interactions allows supervisors to do the following:
     * Complete matches receive the highest rank in the search results.
     * Results that match all single words of a phrase receive the next priority.
     * Results that receive the last priority are those where only a few words of a phrase match.
-* The search also provides an option to sort results by timestamp. By default, search results appear in order of relevance, with the most relevant results listed first. You can click the Start Time column to sort results by timestamp in either ascending or descending order.  
+* The search also provides an option to sort results by timestamp. By default, search results appear in order of relevance, with the most relevant results listed first. You can select the Start Time column to sort results by timestamp in either ascending or descending order.  
 * Ignore common words like Articles, Pronouns, and Prepositions while matching.
 
 How it works:
