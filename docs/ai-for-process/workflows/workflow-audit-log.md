@@ -24,7 +24,6 @@ Additionally, you can set **custom filters** based on a specific category, event
 Steps to access and view workflow audit logs:
 
 1. Log in → In AI for Process Modules top menu → Click **Workflows**.
-  <img src="../types-of-nodes/images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 2. On the **All workflows** page, click the desired workflow.
 3. In the left navigation pane, click **Audit logs**. The Audit logs page is displayed. 
 4. Click each row to view more details about the event. For more information, see Workflow-Level Audit Logs. [Learn more](../settings/monitoring/audit-logs.md#workflow-level-audit-logs){:target="_blank"}.

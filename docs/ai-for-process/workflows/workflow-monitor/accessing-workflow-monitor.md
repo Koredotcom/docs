@@ -3,7 +3,6 @@
 Steps to access the workflow monitor page:
 
 1. Log in to your AI for Process account.
-  <img src="../images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
    
 2. On the **Workflows** page, click the desired workflow.  
 

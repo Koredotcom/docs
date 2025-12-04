@@ -5,7 +5,6 @@ You can generate an API key for a workflow and share it with trusted users to en
 Steps to create an API key for your workflow:
 
 1. Log in to your AI for Process account.
-  <img src="../images/access-workflows.png" alt="access workflows" title="access workflows" style="border: 1px solid gray; zoom:75%;">
 
 2. Select the required workflow from the list. 
 

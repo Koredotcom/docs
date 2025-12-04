@@ -73,7 +73,7 @@ To filter by calendar,
 * Click the **Calendar** dropdown.
 * Select the desired date range.
 * Click **Apply** to refresh dashboard data.  
-<img src="../dashboard/images/calendar drop-down.png" alt="Date Range" title="Date Range" style="border: 1px solid gray; zoom:100%;">
+<img src="../dashboard/images/calendar-drop-down.png" alt="Date Range" title="Date Range" style="border: 1px solid gray; zoom:100%;">
 
 #### Channel
 
