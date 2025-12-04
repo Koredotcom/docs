@@ -164,7 +164,7 @@ In the **Preferred** tab, you can assign preferred agents to the queue.
 To delete a queue, follow these steps:
 
 1. Select the **Edit** icon corresponding to the queue you want to edit.
-2. Select**Delete** on the left side and confirm your choice.
+2. Select **Delete** on the left side and confirm your choice.
 
     !!! Note
 
