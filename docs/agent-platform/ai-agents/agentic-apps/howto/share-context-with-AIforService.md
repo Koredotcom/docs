@@ -48,8 +48,3 @@ Use the following format to access the metadata passed from the Agent Platform.
 * ```{{context.steps.queryResolver.userPreferences}}```
 
 <hr>
-
-**Related Links**
-
-* [Integrate with AI for Service](../../ai-for-service.md)
-* [Pass Metadata from AI for Service to Agent Platform](https://docs.kore.ai/xo/how-tos/share-metadata-ais-to-agent-platform/)

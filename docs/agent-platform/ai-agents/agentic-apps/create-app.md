@@ -13,6 +13,7 @@ Creating an Agentic App broadly consists of the following steps:
 
 ### Step 1: Create an Agentic App
 
+1. Sign in to the Agent platform and go to **Autonomous Agents**.![Create App](images/createapp/home.png "Agentic App Creation")
 1. Sign in to the [Agent Platform](https://agent-platform.kore.ai/auth/login){:target="_blank"} and go to Autonomous Agents. ![Create App](images/createapp/home.png "Agentic App Creation")
 
 2. Click on the +New App on the Agentic Apps page. This page also lists the existing apps in the workspace.  
@@ -43,7 +44,9 @@ By default, certain configurations are pre-selected when creating a new app. If 
 ### Step 2: Define or Set Up Agents
 
 Configure agents with appropriate roles and responsibilities within the application.  
-See [How to set up an agent](./../create-agent.md) for detailed instructions.
+See [How to set up an agent](./../create-agent.md).
+
+Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for agent platform](diagnostics-for-agent-platform.md).
 
 ---
 
