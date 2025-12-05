@@ -933,7 +933,7 @@ Steps to update a ticket in the Freshdesk integration:
     1. **updateTicket** – A user intent to update a ticket.
     2. **ticketID**, **updateField**, **email**, **subject**, **description**, **status**, and **priority** – Entity nodes for gathering the required ticket details.
     3. **updateTicketScript** – A bot action service to update a ticket in an external integration. Click the **Plus** icon to expand to view the _updateTicketScript_ bot action component properties.  
-    <img src="../images/freshservice-tem-img14.png" alt="View bot action component properties" title="View bot action component propertiess" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/freshservice-tem-img14.png" alt="View bot action component properties" title="View bot action component properties" style="border: 1px solid gray;zoom:50%;"/>
 
     4. In the Component Properties window, click the "Edit Request" link to edit the request parameters as shown below:  
     <img src="../images/freshservice-tem-img15.png" alt="Edit request" title="Edit request" style="border: 1px solid gray;zoom:50%;"/>

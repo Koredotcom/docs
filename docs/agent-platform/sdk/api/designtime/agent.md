@@ -128,4 +128,3 @@ app_agents = [agent.to_agent_meta() for agent in agents]
 - [Prompt](prompt.md) - Define agent behavior with prompts
 - [Tool](tool.md) - Add capabilities to agents
 - [Icon](icon.md) - Visual identification
-

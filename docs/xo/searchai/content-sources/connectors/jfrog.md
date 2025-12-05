@@ -66,7 +66,7 @@ After entering all details, click **Connect** to validate access and proceed wit
 
 ## Content Ingestion
 
-Upon a successful connection, Search AI ingests artifacts from JFrog Artifactory, enabling intelligent and context-aware responses.  All the artifacts from the various repositories and projects linked to the account used for authentication are ingested into the Search AI application.
+Upon a successful connection, Search AI ingests artifacts from JFrog Artifactory, enabling intelligent and context-aware responses. All the artifacts from the various repositories and projects linked to the account used for authentication are ingested into the Search AI application.
 
 Each artifact is processed as a distinct document in Search AI, with key fields:
 

@@ -242,13 +242,17 @@ schema = {
 ## Retention Policies
 
 ### Session-Based
+
 Data is deleted when the session ends:
+
 ```python
 RetentionPolicy(type=RetentionPeriod.SESSION, value=1)
 ```
 
 ### Time-Based
+
 Data is deleted after a specified time:
+
 ```python
 # 7 days
 RetentionPolicy(type=RetentionPeriod.DAY, value=7)
@@ -272,4 +276,3 @@ RetentionPolicy(type=RetentionPeriod.MONTH, value=6)
 
 - [App](app.md) - Applications define memory stores
 - [Agent](agent.md) - Agents access memory stores via prompts
-

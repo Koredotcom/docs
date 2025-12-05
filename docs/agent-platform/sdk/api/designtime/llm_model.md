@@ -148,17 +148,20 @@ llm = LlmModel(
 ## Parameter Guidelines
 
 ### Temperature (0.0 - 2.0)
+
 - **0.0 - 0.3**: Deterministic, focused responses (good for factual tasks)
 - **0.4 - 0.7**: Balanced creativity and consistency
 - **0.8 - 1.5**: Creative, diverse responses
 - **1.6 - 2.0**: Highly random (experimental)
 
 ### Top P (0.0 - 1.0)
+
 - **0.1 - 0.5**: Very focused sampling
 - **0.6 - 0.9**: Balanced diversity
 - **0.95 - 1.0**: Maximum diversity
 
 ### Max Tokens
+
 - Set based on expected response length
 - Consider context window limits of the model
 
@@ -166,4 +169,3 @@ llm = LlmModel(
 
 - [Agent](agent.md) - Agents use LLM models for decision-making
 - [App](app.md) - Applications can have default LLM configurations
-
