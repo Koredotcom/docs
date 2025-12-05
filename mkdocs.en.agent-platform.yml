@@ -45,6 +45,9 @@ plugins:
       lang: tr
   - glightbox   
   - tags
+  - redirects:
+      redirect_maps:
+        'getting-started/ip-addresses.md': 'getting-started/outbound-ip-address.md'
 extra:
   version:
     provider: mike
