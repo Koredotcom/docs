@@ -82,7 +82,8 @@ plugins:
         'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md': 'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md'
         'quality-ai/coach/coaching-assignments-supervisor-creation.md': 'quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md'
         'quality-ai/coach/coaching-assignments.md': 'quality-ai/coach/coaching-assignments-agent-view.md'
-        
+        'quality-ai/getting-started/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
+        'quality-ai/getting-started/quality-ai-express.md': 'quality-ai/configure/quality-ai-express.md'
 extra:
   version:
     provider: mike
@@ -574,12 +575,9 @@ nav:
       - Taxonomy Builder: 
           - Overview: quality-ai/configure/taxonomy-builder/overview.md
           - Taxonomy Setup: quality-ai/configure/taxonomy-builder/setup-taxonomy.md
-      - Quality Express:     
-        - Quality AI Express: quality-ai/getting-started/quality-ai-express.md
-        - AWS S3 Connector Setup Guide: quality-ai/getting-started/aws-s3-connector-setup-guide.md   
+      - Quality AI Express: quality-ai/configure/quality-ai-express.md           
       - Connectors: 
-          - Introduction: quality-ai/connectors/connector-intro.md
-          - Amazon S3: quality-ai/connectors/amazon-s3.md
+          - AWS S3 Connector Setup Guide: quality-ai/configure/connectors/aws-s3-connector-setup-guide.md          
       - Conversation Sources: quality-ai/configure/conversation-sources.md
       - Settings: 
         - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
