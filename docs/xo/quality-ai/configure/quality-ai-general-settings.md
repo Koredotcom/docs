@@ -8,7 +8,7 @@ Additionally, you can activate Conversation Intelligence, which helps ensure adh
 
 ## Access Quality AI General Settings 
 
-Navigate to **Quality AI** > > **CONFIGURE** > **Settings** > **Quality AI General Settings**.   
+Navigate to **Quality AI** > **CONFIGURE** > **Settings** > **Quality AI General Settings**.   
 <img src="../settings/images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
 
 The Quality AI General Settings include: 

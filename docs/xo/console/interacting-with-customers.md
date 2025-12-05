@@ -130,7 +130,7 @@ When an agent initiates an outbound call, the system automatically changes the a
 
 #### Contacts
 
-Selecting contacts shows the list of configured contacts. Agents can search for a contact by entering the name or phone number in the search bar. 
+Selecting Contacts displays the list of configured contacts. Agents can search for a contact by entering a name or phone number in the search bar.
 
 #### Outbound Dialer
 
@@ -201,9 +201,9 @@ In addition to After Call Work (ACW), Agents also have access to the following c
 * Unmute  
 * Hold  
 * Resume  
-* Recording – Pause and Resume  
-* Transcription – Pause and Resume  
-* Transfer – Internal
+* Recording - Pause and Resume  
+* Transcription - Pause and Resume  
+* Transfer - Internal
 
 ## Voicemail
 
@@ -219,10 +219,10 @@ When the agent accepts the voicemail, the transcript and recording are displayed
 
 You can call the customer as follows:
 
-1. Click the **Call** button on the VOICE MAIL panel.  
+1. Select the **Call** option on the VOICE MAIL panel.  
 <img src="../images/callback button.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:50%;">
 
-2. The outbound call dialer is displayed. Click the **Call** button to initiate the outbound call.  
+2. The outbound call dialer appears. Select the **Call** option to initiate the outbound call.  
 <img src="../images/dialpad-call-button.png" alt="Dialpad Call Button" title="Dialpad Call Button" style="border: 1px solid gray; zoom:70%;">
 
 3. The agent can continue the conversation.  
@@ -244,7 +244,7 @@ The initiating agent can switch to the original customer call if needed, and vic
 
 ##### Consult Call to a Queue (Voice Channel Only)
 
-The “Consult a Call to a Queue” allows agents handling voice calls to initiate a consult with an available agent from a selected queue. When the agent chooses a queue during the consult action, the system displays a list of agents who belong to that queue, are in “Available” status, and are not currently handling any assignments or active calls for that queue. The list appears in alphabetical order. The agent can select one agent from the list, after which a "Consult" button becomes available. Clicking this button initiates a consult call, which proceeds only if the chosen agent remains available at the time of connection.
+The “Consult a Call to a Queue” allows agents handling voice calls to initiate a consult with an available agent from a selected queue. When the agent chooses a queue during the consult action, the system displays a list of agents who belong to that queue, are in “Available” status, and aren't currently handling any assignments or active calls for that queue. The list appears in alphabetical order. The agent can select one agent from the list, after which a "Consult" option becomes available. Selecting this initiates a consult call, which proceeds only if the chosen agent remains available at the time of connection.
 
 During the consult, the agent can use existing call control features such as Swap, Merge, and Transfer. Once the consult call ends—either by the consulting agent or the internal agent—the system automatically routes the agent back to the original caller leg without requiring manual intervention.
 
@@ -261,20 +261,20 @@ When a supervisor joins a call, their slot will be consumed, and their status wi
 
 If an agent leaves the call, the supervisor will have complete control of the conversation.
 
-Each participant in the conference call can transfer the conversation or exit the call. Clicking the transfer button will push the conversation to a queue or a target agent, who will receive an incoming request.
+Each participant in the conference call can transfer the conversation or exit the call. Selecting the transfer option pushes the conversation to a queue or a target agent, who will receive an incoming request.
 
-The CSAT will be linked to the last agent who handled the conversation. If a user drops off, the primary agent (the longest participant) will complete After Call Work (ACW).
+The Customer Satisfaction (CSAT) is linked to the last agent who handled the conversation. If a user drops off, the primary agent (the longest participant) will complete After Call Work (ACW).
 
 #### Warm Transfer
 
-Following the consult or conference call, the initiating agent can proceed with a warm transfer by clicking the “**Forward**” button.
+Following the consult or conference call, the initiating agent can proceed with a warm transfer by clicking **Forward**.
 
 ##### Limitations
 
 | **Category**           | **Sub-category**               | **Detail**                                                                                       | **Scenario**                                                                                                                                                                                                 |
 |-------------------------|--------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Consult Calls           | Ongoing consult call           | A conference call cannot be initiated during an ongoing consult call.                           | -                                                                                                                                                                                                           |
-| Consult Calls           | Post Consult call is merged    | A conference call cannot be initiated during an ongoing consult call.                           | When the agent and user are on call and the agent initiates a consult with the Supervisor: <br> (a) If the consult is merged, then a conference is not allowed. <br> (b) If the Supervisor has dropped from the consult call, then the conference will be allowed. |
+| Consult Calls           | Ongoing consult call           | A conference call can't be initiated during an ongoing consult call.                           | -                                                                                                                                                                                                           |
+| Consult Calls           | Post Consult call is merged    | A conference call can't be initiated during an ongoing consult call.                           | When the agent and user are on call and the agent initiates a consult with the Supervisor: <br> (a) If the consult is merged, then a conference isn't allowed. <br> (b) If the Supervisor has dropped from the consult call, then the conference will be allowed. |
 | Consult Calls           | Ongoing conference call        | Consult calls are restricted during an ongoing conference call.                                 | -                                                                                                                                                                                                           |
 | Consult Calls           | Post-conference call ends      | Consult calls are restricted even if the ongoing conference call ends and the call is only between the user and the agent. | When the agent and user are on a call and the supervisor joins from the monitor tab, it gets converted to a conference call. Even if the Supervisor exits, the call will still be considered a Conference. |
 | Call Transfers/Consult  | Outbound calls                 | Call transfers and Consult calls are restricted to Outbound calls.                              | -                                                                                                                                                                                                           |
@@ -284,10 +284,10 @@ Following the consult or conference call, the initiating agent can proceed with 
 
 Steps to initiate a Call Transfer:
 
-1. Click the **Transfer** button to initiate the transfer.  
+1. Select the **Transfer** option to initiate the transfer.  
 <img src="../images/transfer-consult-call.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
-    Recent transfer results are displayed.  
+    Recent transfer results appear.  
     <img src="../images/transfer-results.png" alt="Recent Transfer Results" title="Recent Transfer Results" style="border: 1px solid gray; zoom:80%;">
 
 2. You can search for an **Agent** or **Queue** to transfer the call.  
@@ -298,7 +298,7 @@ Steps to initiate a Call Transfer:
 * The following options are displayed when an agent is selected:  
 <img src="../images/transfer-options.png" alt="Agent Transfer Options" title="Agent Transfer Options" style="border: 1px solid gray; zoom:30%;">
 
-* Click **Transfer** to directly transfer the call to another agent.  
+* Select **Transfer** to directly transfer the call to another agent.  
 <img src="../images/transfer-agent.png" alt="Agent Transfer" title="Agent Transfer" style="border: 1px solid gray; zoom:50%;">
 
 !!! Note
@@ -307,7 +307,7 @@ Steps to initiate a Call Transfer:
 
 ### Consult Call
 
-* Click **Consult** to initiate a call with another agent while the external call progresses.  
+* Select **Consult** to initiate a call with another agent while the external call progresses.  
 <img src="../images/consult-button.png" alt="Consult Button" title="Consult Button" style="border: 1px solid gray; zoom:30%;">
 
 * A consult call is initiated, and the external call is placed on hold.  
@@ -322,84 +322,84 @@ Steps to initiate a Call Transfer:
 * The initiating agent can continue the conversation with the receiving agent. The following options are available to the initiating agent.  
 <img src="../images/customer-on-hold-Consult.png" alt="Agent Options Consult Call" title="Agent Options Consult Call" style="border: 1px solid gray; zoom:50%;">
 
-* Click the **Swap** button to swap between the external and internal (consult) calls. When switching to the external call, the internal call is placed on hold and the recording is paused.  
+* Select the **Swap** option to swap between the external and internal (consult) calls. When switching to the external call, the internal call is placed on hold and the recording is paused.  
 <img src="../images/swap-button.png" alt="Swap Button" title="Swap Button" style="border: 1px solid gray; zoom:40%;">
 
 ### Conference Call
 
-* Click the **Merge** button to initiate a Conference Call with the customer.  
+* Select the **Merge** option to initiate a Conference Call with the customer.  
 <img src="../images/merge-button.png" alt="Merge Button" title="Merge Button" style="border: 1px solid gray; zoom:50%;">
 
-* The conference call appears on the conversation tray of the receiving agent and a notification is displayed on the top right corner of the agent console.  
+* The conference call appears on the conversation tray of the receiving agent and a notification displays on the right corner of the agent console.  
 <img src="../images/initiate-conference-call.png" alt="Initiate Conference Call" title="Initiate Conference Call" style="border: 1px solid gray; zoom:60%;">
 
 * On accepting the call, the conference call is connected and the agents can no longer interact privately.  
 <img src="../images/conference-call-connected.png" alt="Conference Call Connected" title="Conference Call Connected" style="border: 1px solid gray; zoom:60%;">
 
-* A notification is displayed on the top right corner of the console if the customer drops off during a conference call.  
+* A notification appears on the right corner of the console if the customer drops off during a conference call.  
 <img src="../images/conference-call-terminated.png" alt="Conference Call Terminated" title="Conference Call Terminated" style="border: 1px solid gray; zoom:60%;">
 
 ### Warm Transfer
 
-* Click the **Forward** button to transfer the conversation to another agent.  
+* Select the **Forward** option to transfer the conversation to another agent.  
 <img src="../images/forward-button.png" alt="Forward Button" title="Forward Button" style="border: 1px solid gray; zoom:40%;">
 
-* The initiating agent is disconnected and the conversation appears on the conversation tray of the receiving agent. A notification is displayed on the top right corner of the agent console.  
+* The initiating agent is disconnected and the conversation appears on the conversation tray of the receiving agent. A notification appears on the right corner of the agent console.  
 <img src="../images/initiate-call-forwarding.png" alt="Initiate Call Forwarding" title="Initiate Call Forwarding" style="border: 1px solid gray; zoom:50%;">
 
-* On accepting, the call is transferred to the receiving agent.  
+* On accepting, the call transfers to the receiving agent.  
 <img src="../images/call-transferred.png" alt="Call Transferred" title="Call Transferred" style="border: 1px solid gray; zoom:70%;">
 
 ### Queue Transfer
 
-* The following options are displayed when a queue is selected:  
+* The following options appear when a queue is selected:  
 <img src="../images/queue-transfer-options.png" alt="Queue Transfer Options" title="Queue Transfer Options" style="border: 1px solid gray; zoom:50%;">
 
-* Click **Transfer** to directly transfer the call to another queue.  
+* Select **Transfer** to directly transfer the call to another queue.  
 <img src="../images/transfer-queue.png" alt="Transfer Queue" title="Transfer Queue" style="border: 1px solid gray; zoom:50%;">
 
 ### External Consult and Conference During an Ongoing Interaction
 
 While interacting with a customer, if an agent needs to seek external consultation, they can initiate an outbound call as follows:
 
-1. Click the **Dialpad** icon.  
+1. Select the **Dialpad** icon.  
 <img src="../images/dialpad.png" alt="Dialpad" title="Dialpad" style="border: 1px solid gray; zoom:60%;">
 
 2. The **External Consultation Call** window appears. The external call can be dialed in three ways:
     1. **Manual Dialer**:
 
-        1. Enter the phone number with the country code, and the country’s flag will appear automatically on the left. Click the **🕻** button to initiate an external outbound call.  
+        1. Enter the phone number with the country code, and the country’s flag will appear automatically on the left. Select the **🕻** option to initiate an external outbound call.  
         <img src="../images/dialer.png" alt="Dial Phone Number" title="Dial Phone Number" style="border: 1px solid gray; zoom:50%;">
 
     2. **Contacts Tab**:
-        1. Click the **Contacts** tab, enter the name of the contact in the search bar, and press **enter**.  
+        1. Select the **Contacts** tab, enter the name of the contact in the search bar, and press **enter**.  
         <img src="../images/contacts-tab.png" alt="Contacts Tab" title="Contacts Tab" style="border: 1px solid gray; zoom:70%;">
 
-        2. The search results are displayed. Click the **🕻** button.  
+        2. The search results appear. Select the **🕻** button.  
         <img src="../images/call-button (2).png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
 
-        3. The phone number appears on the dialer tab. Click the **🕻** button to dial the call.  
+        3. The phone number appears on the dialer tab. Select the **🕻** button to dial the call.  
         <img src="../images/contact-call.png" alt="Call Button Dialer" title="Call Button Dialer" style="border: 1px solid gray; zoom:60%;">
 
     3. **Call History Tab**:
 
-        1. Click the **Call History** tab.  
+        1. Select the **Call History** tab.  
         <img src="../images/call-history (2).png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
 
-        2. Click the **🕻** button for the number to which you want to forward the call.  
+        2. Select the **🕻** option for the number to which you want to forward the call.  
         <img src="../images/call-button (3).png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
 
-        3. The phone number appears on the dialer tab. Click the **🕻** button to dial the call.  
+        3. The phone number appears on the dialer tab. Select the **🕻** option to dial the call.  
         <img src="../images/dialer.png" alt="Dialer" title="Dialer" style="border: 1px solid gray; zoom:60%;">
 
 3. The external consult call is connected and the customer is placed on hold. The following options are available with agents during the external consult call:
-    1. **Mute** – Mute the conversation.
-    2. **Hold** – Place the external consult call on hold.
-    3. **Keypad** –  To enter DTMF inputs, enabling users to navigate IVR menus to connect external parties to the conference.
-    4. **Merge** – Merge the external call with the existing inbound call (conference).
-    5. **Forward** – Forward the call to another agent.
-    6. **End** – End the external consult call.
-    7. **Swap** (Top Right Corner)– Swap between the customer and the external call.  
+    1. **Mute** - Mute the conversation.
+    2. **Hold** - Place the external consult call on hold.
+    3. **Keypad** -  To enter DTMF inputs, enabling users to navigate IVR menus to connect external parties to the conference.
+    4. **Merge** - Merge the external call with the existing inbound call (conference).
+    5. **Forward** - Forward the call to another agent.
+    6. **End** - End the external consult call.
+    7. **Swap** (Top Right Corner) - Swap between the customer and the external call.  
     <img src="../images/consult-call-option.png" alt="Consult Call Options" title="Consult call Options" style="border: 1px solid gray; zoom:60%;">
 
     The Call History tab contains records of the outbound calls.  
@@ -656,18 +656,18 @@ Re-sent emails are linked to the original interaction for audit and traceability
 Steps to resend an email:
 
 1. Open the email interaction.
-2. Click the **Resend** button.  
+2. Select the **Resend** option.  
     <img src="../images/resend-email.png" alt="Resend Email" title="Resend Email" style="border: 1px solid gray; zoom:70%;">
 
     The email composer opens with the recipient details and original email content prefilled. (Optional) Update the email content.
 
-3. Click **Send**.  
+3. Select **Send**.  
     <img src="../images/resend-email.png" alt="Resend Button" title="Resend Button" style="border: 1px solid gray; zoom:70%;">
 
     * The re-sent email is sent as a new interaction but linked to the original interaction.  
     * The interaction log marks the message as **Resent** for clarity.
 
-**Forward Emails**: When a user selects Forward, a new email draft opens with the subject prefixed by “Fwd:”. The previous mail information appears when forwarding is initiated. All previous attachments are included, with the option to select which ones to forward. Users can edit recipients, add text, and send the email. The sent message retains headers indicating the forwarded content within the email body.  
+**Forward Emails**: When a user selects Forward, a new email draft opens with the subject prefixed by `Fwd`. The previous mail information appears when forwarding is initiated. All previous attachments are included, with the option to select which ones to forward. Users can edit recipients, add text, and send the email. The sent message retains headers indicating the forwarded content within the email body.  
 <img src="../images/forward-email-button.png" alt="Forward Email" title="Forward Email" style="border: 1px solid gray; zoom:70%;">
 
 **Arrival Summary**: Every email conversation begins with an Arrival summary once an agent accepts it. For more information about the arrival summary, refer to [Arrival Summary](#arrival-summary).  
@@ -690,75 +690,66 @@ If [Inline Email ID Suggestions](../contactcenter/configurations/settings/email-
 **Standard Responses**:
 You can choose from a library of configured standard responses.
 
-1. Click the **Standard Response** icon at the bottom of the email text editor. The count of response templates in each category is displayed.  
+1. Select the **Standard Response** icon at the bottom of the email text editor. The count of response templates in each category appears.  
 <img src="../images/standard-response.png" alt="Standard Response Icon" title="Standard Response Icon" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the category to view the standard response templates in that category.  
+2. Select the category to view the standard response templates in that category.  
 <img src="../images/standard-response-library.png" alt="Standard Response Templates" title="Standard Response Templates" style="border: 1px solid gray; zoom:70%;">
 
-3. Click the Standard Response from the list to use that response in the email.  
+3. Select the Standard Response from the list to use that response in the email.  
 <img src="../images/standard-response-filled.png" alt="Send Standard Response" title="Send Standard Response" style="border: 1px solid gray; zoom:70%;">
 
-    **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a ‘**View More**’ button is displayed. Attachments received in emails are stored in the Amazon S3 bucket. 
+    **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a **View More** option appears. Attachments received in emails are stored in the Amazon S3 bucket. 
 
-    Click the **Attachment** icon to select and upload files.  
+    Select the **Attachment** icon to select and upload files.  
         <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:70%;">
 
     **Notes**: You can add notes on the interaction (customer feedback, key points, next action, suggestions). This section includes any previous notes added by agents while interacting with the same customer.
 
     To add a new note:
 
-    1. Click **Notes**.  
+    1. Select **Notes**.  
         <img src="../images/notes-icon.png" alt="Notes Icon" title="Notes Icon" style="border: 1px solid gray; zoom:80%;">
 
-    2. Click **+ Add New Note**.  
+    2. Select **+ Add New Note**.  
         <img src="../images/add-new-note.png" alt="Add New Note Button" title="Add New Note Button" style="border: 1px solid gray; zoom:80%;">
 
-    3. Type the message and click **Save**. A confirmation message is displayed, and the note is displayed.  
+    3. Type the message and select **Save**. A confirmation message appears  
         <img src="../images/notes-created-confirmation.png" alt="Note Added Confirmation" title="Note Added Confirmation" style="border: 1px solid gray; zoom:80%;">
 
-    4. **Drafts**: If you click the **Close** button on the email editor and there’s content inside, the mail is preserved as a draft. Drafts are accessible at the bottom of the console.  
+    4. **Drafts**: If you select the **Close** option on the email editor and there’s content inside, the mail is preserved as a draft. Drafts are accessible at the bottom of the console.  
         <img src="../images/draft.png" alt="Drafts" title="Drafts" style="border: 1px solid gray; zoom:80%;">
 
 ### Outbound Email
 
-Outbound email functionality is a key feature within Contact Center AI designed to streamline communication between agents and customers through email channels. It is crucial to reach out to customers proactively and provide personalized interactions based on their needs and preferences. Expanding omnichannel capabilities allows customers to be reached through various channels to address their needs. This allows seamless follow-up after interactions to guarantee satisfaction and provide timely support whenever required.
+Outbound email functionality is a key feature within Contact Center AI designed to streamline communication between agents and customers through email channels. It's crucial to reach out to customers proactively and provide personalized interactions based on their needs and preferences. Expanding omnichannel capabilities allows customers to be reached through various channels to address their needs. This allows seamless follow-up after interactions to guarantee satisfaction and provide timely support whenever required.
 
 #### Send Outbound Email
 
 Steps to send an outbound email:
 
-1. Click the **+** button on the top right corner of the conversation tray.  
+1. Select the **+** on the right corner of the conversation tray.  
 <img src="../images/button.png" alt="+ Button" title="+ Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click the **New Mail** button.  
-<img src="../images/new-outbound-email.png" alt="New Email Button" title="New Email Button" style="border: 1px solid gray; zoom:80%;">
+2. Select the **New Mail** option.
 
-3. The email panel is displayed, and an email conversation appears on the conversation tray. Enter the recipients' Email addresses, such as john.doe@xyz.com.  
-<img src="../images/email-panel.png" alt="Email Panel" title="Email Panel" style="border: 1px solid gray; zoom:80%;">
+3. The email panel appears, and an email conversation appears on the conversation tray. Enter the recipients' Email addresses, such as john.doe@example.com.  
 
 4. Select a **Queue** from the dropdown.  
-<img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:80%;">
 
 5. Enter the **Subject** and body of the email. The email address appears on the conversation tray and the subject appears as the email thread header.  
-<img src="../images/email-body.png" alt="Email Body" title="Email Body" style="border: 1px solid gray; zoom:80%;">
-
 6. You can perform the following actions:
 
     **Send**:
 
-    * Click the **Send** Button to send the email.  
+    * Select the **Send** option to send the email.  
         <img src="../images/send-button.png" alt="Send Button" title="Send Button" style="border: 1px solid gray; zoom:80%;">
 
-        A confirmation is displayed, and the email is sent.  
-            <img src="../images/email-sent-confirmation.png" alt="Email sent Confirmation" title="Email Sent Confirmation" style="border: 1px solid gray; zoom:80%;">
+        A confirmation appears, and the email is sent.  
 
     **Send & Close**:
 
-    Click the down arrow button ”**V**” beside Send and click **Send & Close**.  
-        <img src="../images/send-and-close.png" alt="Send & Close Button" title="Send & Close Button" style="border: 1px solid gray; zoom:80%;">
-
-    A confirmation is displayed, and the email is sent. A disposition window appears.   
+    Select the down arrow beside Send and select **Send & Close**. A confirmation appears and the email is sent. A disposition window appears.   
         <img src="../images/disposition-sent-mail.png" alt="Disposition Sent Mail" title="Disposition Sent Mail" style="border: 1px solid gray; zoom:80%;">
     If Wrap-up Code prediction is enabled, a disclaimer appears requesting users to verify the content before using it.  
         <img src="../images/ai-generated-content.png" alt="AI Generated Content" title="AI Generated Content" style="border: 1px solid gray; zoom:80%;">
@@ -773,27 +764,27 @@ Steps to send an outbound email:
 
     **Draft**:
 
-    Click the **X** on the top right corner of the email editor window.  
+    Select the **X** on the right corner of the email editor window.  
         <img src="../images/x-button.png" alt="X-Button" title="X-Button" style="border: 1px solid gray; zoom:80%;">
 
-    The editor window is minimized, and the mail is saved as a draft.  
+    The editor window minimizes, and the mail is saved as a draft.  
         <img src="../images/draft-mimized.png" alt="Draft Minimized" title="Draft Minimized" style="border: 1px solid gray; zoom:80%;">
 
-    Drafts are automatically saved and remain accessible in the following scenarios:
+    Drafts are automatically saved and remain available in the following scenarios:
 
     1. After an agent logout and subsequent login.
     2. Network interruptions and subsequent re-connections.
     3. The current email content is saved as a draft if the editor is closed.
     4. Drafts are saved only after the mandatory fields (recipient, subject, queue, and email body) are updated.
 
-    Multiple drafts can be saved for individual email conversations. Each draft is easily identifiable and accessible within its respective email thread.
+    Multiple drafts can be saved for individual email conversations. Each draft is identifiable and available within its respective email thread.
 
     **Delete**:
 
-    Click the **Delete** (bin) icon on the bottom left corner of the editor.  
+    Select the **Delete** icon on the left corner of the editor.  
         <img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation message is displayed. Click **Delete**. The email is deleted.  
+    A confirmation message is displayed. Select **Delete**.  
         <img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 ## Color Codes
@@ -815,19 +806,18 @@ You can add notes on the interaction (customer feedback, key points, next action
 
 To add a new note:
 
-1. Click **Notes**.  
+1. Select **Notes**.  
 <img src="../images/interactions-notes.png" alt="Notes Button" title="Notes Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **+ Add New Note**.  
-<img src="../images/add-notes.gif" alt="Adding Notes" title="Adding Notes" style="border: 1px solid gray; zoom:80%;">
+2. Select **+ Add New Note**.
 
-3. Type the message and click **Save**.
+3. Type the message and select **Save**.
 
 ## Modify Skills in Interactions
 
 To modify skills in a live interaction when the Live Interaction option is selected in [Skill Modification](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#skill-modification):
 
-1. Click the **Add Skills** option on the Skills bar.  
+1. Select the **Add Skills** option on the Skills bar.  
 <img src="../images/add-skills-button.png" alt="Add Skills Button" title="Add Skills Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Select the necessary skills from the drop-down.  
@@ -841,14 +831,14 @@ Contact Center AI allows agents to transfer ongoing conversations to other queue
 
 To transfer a conversation to another queue when the [Enforce Skill Match for Transfers](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#enforce-skill-match-for-transfers) setting is enabled:
 
-1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
     <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for a queue in the search bar on the **Transfer to** window.
-3. Select a queue from the dropdown list. Agents with matching skills are displayed for the queue during the transfer.  
+3. Select a queue from the dropdown list. Agents with matching skills appear for the queue during the transfer.  
     <img src="../images/transfer-to.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Transfer**. The conversation gets transferred to the selected queue.  
+4. Select **Transfer**. The conversation gets transferred to the selected queue.  
     <img src="../images/conversation-transferred.png" alt="Conversation Transferred" title="Conversation Transferred" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
@@ -859,29 +849,29 @@ To transfer a conversation to another queue when the [Enforce Skill Match for Tr
 
 To transfer a conversation to another queue when the [Skill Modification](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#skill-modification) setting is enabled:
 
-1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
     <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Search for a queue in the search bar on the **Transfer to** window. All matching queues are displayed.
-3. Select the queue and click **Next**.  
+2. Search for a queue in the search bar on the **Transfer to** window. All matching queues appear.
+3. Select the queue and select **Next**.  
     <img src="../images/transfer-to-queue.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
 4. You can add or delete skills to the interaction before transferring it to another queue.  
     <img src="../images/add-skills.png" alt="Add or Delete Skills" title="Add or Delete Skills" style="border: 1px solid gray; zoom:80%;">
 
-5. Click **Transfer**. The conversation is transferred to the selected queue.  
+5. Select **Transfer**. The conversation transfers to the selected queue.  
     <img src="../images/conversation-transferred-confirmation.png" alt="Conversation Transferred Confirmation" title="Conversation Transferred Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 **Transfer to Another Agent**
 
 To transfer a conversation to another agent:
 
-1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
     <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an agent in the search bar on the **Transfer to** window.
 3. Select an available agent.
-4. Click **Transfer**. The conversation gets transferred to the selected agent.  
+4. Select **Transfer**. The conversation transfers to the selected agent.  
     <img src="../images/transfer-to-agent.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
@@ -892,12 +882,12 @@ To transfer a conversation to another agent:
 
 An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) to allow external transfer of ongoing customer calls. To transfer a conversation to an external contact from the Agent Console, follow these steps:
 
-1. Click **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
+1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
     <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an external contact in the search bar on the **Transfer to** window.
 3. Select an available contact.
-4. Click **Transfer**. The conversation gets transferred to the selected contact.  
+4. Select **Transfer**. The conversation transfers to the selected contact.  
     <img src="../images/transfer-to-external-contact.png" alt="Transfer to External Contact" title="Transfer to Extrenal Contact" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -908,22 +898,22 @@ An agent can transfer the call to an external contact during a voice interaction
 
 ## End Interactions
 
-1. To end an interaction session, click the **End** button at the top right of the _Live Interaction_ pane.  
+1. To end an interaction session, select **End** in the _Live Interaction_ pane.  
     <img src="../images/end-button.png" alt="End Interaction Button" title="End Interaction Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Once clicking _End_, you must **confirm** that you want to end the interaction. Click **Yes** to do so, or otherwise, click **No**.  
+2. Once selecting _End_, you must **confirm** that you want to end the interaction. Select **Yes** to do so, or otherwise, select **No**.  
     <img src="../images/end-interaction-window.png" alt="End Interaction pop-up" title="End Interaction pop-up" style="border: 1px solid gray; zoom:60%;">
 
-    Clicking **_Yes_** ends the session and moves the interaction to _After Call Work_.
+    Selecting **_Yes_** ends the session and moves the interaction to _After Call Work_.
 
 ### Timer After Caller Disconnects a Voice Call
 
-When a caller disconnects, agents can either call back or end the call. If an agent does not take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is disabled for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md).
+When a caller disconnects, agents can either call back or end the call. If an agent doesn't take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is turned for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md).
 
-**Timer when the caller disconnects the call**: A depleting timer is displayed on the live interaction pane, with options to end the call or call back.  
+**Timer when the caller disconnects the call**: A depleting timer appears on the live interaction pane, with options to end the call or call back.  
 <img src="../images/end-call.png" alt="End Call Button" title="End Call Button" style="border: 1px solid gray; zoom:80%;">  
 
-**Timer when the caller disconnects during a conference call**: A depleting timer is displayed on the live interaction pane, with options to close or rejoin the conference call.  
+**Timer when the caller disconnects during a conference call**: A depleting timer appears on the live interaction pane, with options to close or rejoin the conference call.  
 <img src="../images/end-conference-call.png" alt="End Conference Call Button" title="End Conference Call Button" style="border: 1px solid gray; zoom:80%;">  
 
 The call transitions to After Call Work (ACW) at the end of the configured timeout duration.

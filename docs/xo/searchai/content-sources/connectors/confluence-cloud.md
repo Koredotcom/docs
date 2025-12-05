@@ -98,32 +98,54 @@ The next step is to grant the necessary permissions. Go to the **Permissions** t
 
 * User Identity API
 * Confluence API
+* Jira API
 
 ![App Permissions](images/confluencecloud/app-permissions.png "App Permissions")
 
-To add permissions to the User Identity API, click the **config** link.
+To add permissions to the **User Identity API**, click the **config** link.
 
 ![App Permissions](images/confluencecloud/permission-config.png "App Permissions")
 
-On the following page, click the Edit Scopes button.
+On the following page, select **Edit Scopes**.
 
 ![API Scope](images/confluencecloud/api-scope.png "API Scope")
 
 Grant the following permissions and click **Save**.
 
-* Read:me
-* Read:account
+* `read:me`
+* `read:account`
 
 ![API Scope](images/confluencecloud/useridentityapi-scope.png "API Scope")
 
-Similarly, for **Confluence API**, go to the **Granular Scopes** and click **Edit Scopes**. Add a read operation filter, select all the filtered permissions, and click **Save**.  
+To add permissions to the **Confluence API**:
+
+* Go to **Granular Scopes** and select **Edit Scopes**.
+* Add the following permissions:
+
+    * `read:analytics.content:confluence`
+    * `read:attachment:confluence`
+    * `read:content-details:confluence`
+    * `read:content.permission:confluence`
+    * `read:content:confluence`
+    * `read:page:confluence`
+    * `read:space-details:confluence`
+    * `read:space.permission:confluence`
+    * `read:space:confluence`
+    * `read:user.property:confluence`
+
+* Click **Save**.
+* For **Classic Scopes** add `read:confluence-groups` and click **Save**.
 
 ![API Scope](images/confluencecloud/confluenceapi-scope.png "API Scope")
+
+To add permissions to the **Jira API**, go to **Classic Scopes**, select **Edit Scopes**, add `read:jira-user`, and click **Save**.
+
+![API Scope](images/confluencecloud/jiraapi-scope.png "API Scope")
 
 After adding permissions, go to **Settings** and find the **Client ID** and **Secret** at the end of the page. Save these fields as these will be used for configuring the SearchAI connector in the next step.
 ![Settings](images/confluencecloud/settings.png "Settings")
 
-You also need the Host URL in Confluence to configure the SearchAI Connector.  To fetch this field, go to the [Confluence home page](https://www.atlassian.com/software/confluence) and click on Profile. 
+You also need the Host URL in Confluence to configure the SearchAI Connector. To fetch this field, go to the [Confluence home page](https://www.atlassian.com/software/confluence) and click on Profile. 
 
 ![Profile](images/confluencecloud/profile-page.png "Profile")
 

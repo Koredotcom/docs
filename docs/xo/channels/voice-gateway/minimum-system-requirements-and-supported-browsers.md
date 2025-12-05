@@ -67,7 +67,7 @@ In Microsoft Edge, you can disable sleep mode for specific sites.
 3. Select **Settings**. The Settings tab appears.
 4. Select **System and performance**.
 5. Under **Never put these sites to sleep**, select **Add**. The Add a site dialog appears.
-6. Type your region domain in the **Site** box using this format **[*].domain**. For example, **[*.]example.com**.
+6. Type your region domain in the **Site** box using this format **[*].domain**. For example, [*.]example.com.
 7. Select **Add**.
 
 #### Google Chrome
@@ -80,7 +80,7 @@ In Google Chrome, you can disable sleep mode for specific sites.
 4. Select **Performance**.
 5. On the Memory tile, locate the **Always keep these sites active** setting and select **Add**. The Add Sites dialog appears.
 6. Select **Add Sites manually**.
-7. Type your region domain in the Site box. For example, **example.com**.
+7. Type your region domain in the Site box. For example, example.com.
 8. Select **Add**.
 
 ## Firewall Requirements
