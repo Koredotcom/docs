@@ -18,7 +18,7 @@ A supervisor can access the agent-specific dashboard in the following ways:
 
 **Approach 2:**
 
-1. Navigate to **Quality AI** > > **ANALYZE** > **Agent Leaderboard**.   
+1. Navigate to **Quality AI** > **ANALYZE** > **Agent Leaderboard**.   
 <img src="../agent-leaderboard/images/agent-leaderboard-agent-selection.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 2. From the **Agent Leaderboard** section, click any agent to view the following agent-specific dashboard **Overview** screen.   

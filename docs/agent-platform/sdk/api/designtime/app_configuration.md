@@ -236,20 +236,26 @@ config = AppConfigurations(**config_dict)
 ## Feature Details
 
 ### Streaming
+
 Enable token-by-token streaming of LLM responses for better user experience.
 
 ### Attachments
+
 Configure file upload capabilities:
+
 - Maximum file count per request
 - Maximum file size in MB
 - Maximum tokens to extract from files
 - Supported file types
 
 ### External Agent
+
 Integrate with external agent systems via HTTP endpoints.
 
 ### Filler Messages
+
 Show contextual messages while agents process requests:
+
 - **Static**: Pre-defined messages shown in sequence
 - **Dynamic**: AI-generated messages based on conversation context
 
@@ -257,4 +263,3 @@ Show contextual messages while agents process requests:
 
 - [App](app.md) - Applications use these configurations
 - [LlmModel](llm_model.md) - Used for dynamic filler messages
-
