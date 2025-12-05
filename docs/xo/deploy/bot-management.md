@@ -23,7 +23,7 @@ You can import tasks and configurations of a specific agent into a new or existi
 
         We strongly recommend you exercise caution and take a backup of the target agent before importing using this option. 
 
-* **Incremental import**: Upgrades the current agent with the configurations available in the import file. Any additional configurations available in the target or imported agent are retained. You can select specific agent components to import from the agent tasks, NLP data, and agent settings. Refer to the Bot Items in the Incremental Import table at the end of the article to learn how the imported agent items replace the target agent’s items in incremental import.
+* **Incremental import**: Upgrades the current agent with the configurations available in the import file. The system retains any additional configurations available in the target or imported agent.. You can select specific agent components to import from the agent tasks, NLP data, and agent settings. Refer to the Bot Items in the Incremental Import table at the end of the article to learn how the imported agent items replace the target agent’s items in incremental import.
 
 **Before you Begin** The _config.json_ file consists of variables that need values for the target agent. Share the file with the relevant developers or enter suitable values yourself for the variables before importing the agent definition into a new AI Agent.
 
@@ -46,7 +46,7 @@ To import an AI Agent, follow these steps:
     * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
         2. Click the **Choose File** buttons next to the **App Definition File** field and **App Config File** fields, and upload the _appDefinition.json_ and _config.json_ files, respectively.
-        3. Optionally, upload the custom script file from the imported agent, if any. The file size is limited to 500kb.
+        3. Optionally, upload the custom script file from the imported agent, if any. The file size limit is 500kb.
         
         <img src="../images/bot-import-custom-script-file1.png" alt="App import - JSON files" title="App import - JSON files" style="border:1px solid gray; zoom:70%;">
 
@@ -59,7 +59,7 @@ To import an AI Agent, follow these steps:
 6. Select one of these import options: **Full Import** or **Incremental Import**. You get a warning to back up your agent before performing the import.
 7. If you select **Full import**, the agent definition in the in-development copy is overwritten with the definition in the import file.
 
-    * If the agent contains one or more additional tasks or languages that aren't present in the import definition, these tasks are marked as deleted and removed when the agent is published.
+    * If the agent contains one or more additional tasks or languages that aren't present in the import definition, When you publish the agent, the system marks the tasks as deleted and removes them.
     * For Generative AI and LLM features, **Full import**:  
 
         * Deletes existing models and prompts in the target app.
@@ -75,17 +75,17 @@ To import an AI Agent, follow these steps:
 
     <img src="../images/bm(4).png" alt="Incremental import" title="Incremental import" style="border:1px solid gray; zoom:60%;">
 
-    * **Flows**: Here you can select the flows to be imported. 
+    * **Flows**: Here you can select the flows you want to import. 
     * **Automation Tasks**: Here, you can select to import Tasks only (with or without comments), Dialog tasks, Digital Forms, Small Talk, or FAQs.
 
         !!! Note
 
             If you want to import one or more Automation Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
-    * **NLP Data**: Here you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns, and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
+    * **NLP Data**: Here you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns, and Standard Responses. You can choose to either append or replace the ML Utterances and Patterns..
             
-        1. **Append** can be used when the utterances in the file must be imported into the agent, and any additional utterances in the agent must be retained (this is the default behavior).
-        2. **Replace** can be used when the utterances in the file must be imported into the agent. Any additional utterances are removed.
+        1. **Append** You can use this when the utterances in the file must be imported into the agent, and any additional utterances in the agent must be retained (this is the default behavior).
+        2. **Replace** You can use this when when the utterances in the file must be imported into the agent. Any additional utterances are removed.
         
             If you are also importing Tasks, the additional utterances related to tasks being imported are removed. 
 
@@ -139,7 +139,7 @@ To import an AI Agent while creating it, follow these steps:
     * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
         2. Click the **Choose File** buttons next to the **App Definition File** field and **App Config File** field, and upload the _appDefinition.json_ and _config.json_ files respectively.
-        3. Optionally, upload the custom script file from the imported agent if any. The file size is limited to 500kb.
+        3. Optionally, upload the custom script file from the imported agent if any. The file size limit is 500kb.
 
     * Import by uploading **ZIP file**:
         1. Choose the **Zip File** radio button.
