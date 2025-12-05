@@ -147,4 +147,3 @@ app = App(**app_dict)
 
 - [:material-book-open: User Guide](../guide/building-apps.md) - Learn how to use these APIs
 - [:material-code-braces: Examples](../examples/banking-assistant.md) - See real-world usage
-

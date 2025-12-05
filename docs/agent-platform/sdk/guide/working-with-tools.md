@@ -30,6 +30,7 @@ async def add(x: int, y: int) -> int:
 ```
 
 **Key Features:**
+
 - Automatic registration to `ToolsRegistry`
 - Access to request context
 - Logging and tracing support
@@ -169,6 +170,7 @@ async def example_tool(param: str):
 ```
 
 **Log Levels:**
+
 - `DEBUG`: Detailed diagnostic information
 - `INFO`: General information about execution
 - `WARNING`: Potentially problematic situations
