@@ -460,6 +460,48 @@ Each import operation creates a detailed entry in the [Campaign Logs](./logs.md)
 
 All successfully imported campaigns display the label `Recently imported`. This label automatically expires at the end of the day.
 
+## Campaign Suppression and Re-evaluation
+
+ChatGPT said:
+
+The system suppresses a campaign for a visitor for any of the following reasons:
+
+* A cooldown period after another campaign executes  
+* An active chat is in progress  
+* A template from another campaign is active  
+* Any other suppression condition  
+
+The system continues to treat the suppressed campaign as a candidate. When the suppression reason is no longer valid, the system again evaluates the campaign when the website URL matches.
+
+Campaign configuration
+
+* Campaign 1
+
+    * Website: Page1  
+    * Rule: Page Visit Count (PVC) ≥ 1
+
+* Campaign 2
+
+    * Website: Page2  
+    * Rule: PVC ≥ 1
+
+* Campaign 3
+
+    * Website: Page1  
+    * Rule: PVC ≥ 1 and Time Spent (TS) = 30 seconds
+
+Example:
+
+* Campaign 2 triggers when the user visits Page 2 and meets the PVC rule.  
+* The system suppresses Campaign 1 when the user navigates to Page 1 because Campaign 2’s template is active.  
+* Campaign 3 triggers when the user closes Campaign 2’s template before 30 seconds because both PVC ≥ 1 and TS = 30 seconds meets the PVC rule. 
+* Campaign 1 does not trigger again when the user closes Campaign 3’s template and remains on Page 1 because the system suppresses it during the same page visit.  
+* Campaign 1 triggers when the user navigates to Page 2 and then back to Page 1 because the URL matches again and the suppression condition clears.  
+
+!!! note 
+ 
+    The suppression and re-evaluation behavior applies to all suppression types. The system uses a consistent suppression and reconsideration flow across all cases.
+
 ## Proactive Web Campaign Plugin for the Web SDK
 
 The Proactive Web Campaign plugin extends the Web SDK, enabling dynamic, rule-based interactions with website visitors. With this plugin, you can define campaigns that trigger actions like displaying messages or starting chats based on visitor behavior.

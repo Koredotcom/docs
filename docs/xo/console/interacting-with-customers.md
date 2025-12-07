@@ -12,7 +12,7 @@ Agents can type their responses in the text editor and send the message by selec
 
 !!! Note
 
-    You can still press **Enter** to send messages. Pressing (ctrl+enter / shift+enter) on Windows and (ctrl+return / shift+return) on Mac creates a new line.
+    You can press **Enter** to send messages. Pressing (ctrl+enter or shift+enter) on Windows and (ctrl+return or shift+return) on Mac creates a new line.
 
 Agents can send a standard response to the customer from a pre-configured library. Press **/** in the text editor to display the standard response templates window.  
 <img src="../images/standard-response-prompt.png" alt="Standard Response Library" title="Standard Response Library" style="border: 1px solid gray; zoom:80%;">
@@ -963,22 +963,20 @@ If ACW is disabled the conversation disappears from the agent console at the end
 
 A Disposition Code is a short label assigned to the outcome of an interaction. [Learn more](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-codes).
 
-Dispositions can be assigned in two ways:
+There are two ways to assign a disposition:
 
 1. During the conversation (Dynamic):
-    1. Click **+ Add Disposition**.  
+    1. Select **+ Add Disposition**.  
         <img src="../images/add-disposition.png" alt="+ Add Disposition" title="+ Add Disposition" style="border: 1px solid gray; zoom:80%;">
 
-    2. Select a disposition from the dropdown menu and click **Save**.  
-        <img src="../images/save-disposition.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:80%;">
+    2. Select a disposition from the dropdown menu and select **Save**.
 
-    3. The disposition is added. You can either **Transfer** or **End** the conversation.  
+    3. The system assigns the disposition. You can either **Transfer** or **End** the conversation.  
         <img src="../images/disposition-added.png" alt="Disposition Added" title="Disposition Added" style="border: 1px solid gray; zoom:80%;">
 
-    4. When you click **End**, a confirmation message is displayed. Click **Yes** to confirm.  
-        <img src="../images/end-interaction.png" alt="End Interaction" title="End Interaction" style="border: 1px solid gray; zoom:80%;">
+    4. When you select **End**, a confirmation message appears. Select **Yes** to confirm.
 
-    5. The **Disposition & Notes** window will appear, and you can make any necessary changes. Click **Close**, and the conversation will close with the disposition attached.  
+    5. The **Disposition & Notes** window appears, and you can make any necessary changes. Select **Close**, and the conversation closes with the disposition attached.  
         <img src="../images/disposition-and-notes.png" alt="Disposition and Notes" title="Disposition and Notes" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -989,12 +987,12 @@ Dispositions can be assigned in two ways:
 
     * Select the **Conversation** in your tray.
     * You must select a **Status** from the following available options:
-        * **Resolved**: Select when the customer query is resolved.
+        * **Resolved**: Select after resolution of customer query.
         * **Abandoned**: Select if the customer has abandoned the conversation and is no longer responding.
-        * **Pending**: Select if the query is still pending resolution.
+        * **Pending**: Select if the query is pending resolution.
         * **Custom**: Administrators can [create custom disposition codes](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
     * Optionally, type a **Description** of your reason for selecting the disposition.
-    * Click **_Close_** to close the conversation.
+    * Select **Close** to close the conversation.
 
 #### Intelligent Disposition Code Suggestions
 
@@ -1002,14 +1000,41 @@ When enabled, agents receive intelligent disposition code suggestions automatica
 
 Steps to receive intelligent disposition code suggestions:
 
-1. Click **End** to close the conversation.  
-    <img src="../images/end.png" alt="End Button" title="End Button" style="border: 1px solid gray; zoom:70%;">
+1. Select **End** to close the conversation.
 
 2. The **Disposition & Notes** window opens with suggested disposition codes.  
     <img src="../images/disposition-window.png" alt="Disposition & Notes" title="Disposition & Notes" style="border: 1px solid gray; zoom:70%;">
 
-3. Agents can select a disposition code to accept it, or choose multiple disposition codes if needed, and then click **Close**.  
-    <img src="../images/select-and-close.png" alt="Close Button" title="Close Button" style="border: 1px solid gray; zoom:70%;">
+3. Agents can select a disposition code to accept it, or choose multiple disposition codes if needed, and then select **Close**.  
+    <img src="../images/select-and-close.png" alt="Close" title="Close" style="border: 1px solid gray; zoom:70%;">
+
+#### Disposition Handling for Campaigns
+
+* The system processes only the active disposition at the end of the conversation.  
+* If the disposition includes a callback, the system posts the scheduled date, time, timezone, and callback type.  
+* The system supports both system-initiated and agent-initiated callback types.  
+
+Do Not Call (DNC) handling
+
+* For Do Not Call - This Campaign, the system inserts the contact phone number and a 3-month validity period into the campaign-level DNC list.
+* For Do Not Call - Ever, the system adds the contact's phone number and a 3-month validity period to the Global DNC list.
+* If a required DNC list isn't configured, the system displays a warning and permits to Continue or Cancel.
+
+    * If the user selects Continue, the system saves the campaign.  
+    * At runtime, the system skips saving to the missing DNC list.  
+
+Call-back and call-list handling
+
+* For Call-Me-Later, the system inserts the contact’s phone number. The agent must configure the scheduled date and time.  
+    <img src="../images/follow-up-disposition.png" alt="Disposition Details" title="Disposition Details" style="border: 1px solid gray; zoom:70%;">
+    
+    The system schedules a callback.  
+    <img src="../images/follow-up-scheduled.png" alt=Scheduled" title="Scheduled" style="border: 1px solid gray; zoom:70%;">
+
+Additional rules
+
+* Editing dispositions after the conversation ends does not change handling.  
+* The system logs errors when payloads are invalid or when required lists are missing.  
 
 ### Translate Conversations in Real Time
 

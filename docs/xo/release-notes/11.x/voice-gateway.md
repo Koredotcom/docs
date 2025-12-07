@@ -2,17 +2,43 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
-## v11.19.0 October 25, 2025
+## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Utils</font>
+
+**Call Transfer Utility**
+
+A new utility function, voiceUtils.transfer enables seamless call transfers between experience flows within the platform or to external phone numbers, maintaining the same session ID and conversation continuity. Transcripts now reflect internal flow transfers for improved tracking and auditing. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#transfer-calls)
+
+<font size="4">Call Transfer</font>
+
+**Support DTMF Input for Caller After External Call Transfer**
+
+The platform now lets callers to provide DTMF input when an agent transfers a call to an external IVR or automated dialog system. This ensures that callers can continue interacting with the destination IVR or AI agent, preserving the intended automated experience without any interference from the human agent’s session.
 
 <font size="4">Inbound and Outbound Calls</font>
 
 **CSAT Survey Enhancements for Inbound and Outbound Voice Calls**
 
 The Voice Gateway now delivers consistent CSAT survey behavior across all inbound and outbound call scenarios, honoring the last agent’s survey settings and callback rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#csat-survey-for-inbound-and-outbound-calls)
+
+<font size="4">ASR and TTS</font>
+
+**Global IVR Property Support for TTS Streaming**
+
+TTS streaming now uses global IVR settings for barge-in, timeouts, prompts, and speech parameters. The update ensures consistent behavior across configuration levels and updates UI text to reflect automatic barge-in for streaming-enabled flows.
+
+**ASR, Bot, and TTS Latency Reporting**
+
+Latency reporting now captures ASR, Bot, and TTS delays at both node and call levels. The report includes end-to-end metrics, detailed call information, and highlights unsupported scenarios with clear notifications when data is unavailable.
+
+**Background Streaming and Background Gather Support**
+
+The platform now supports background streaming and background gathering to improve call performance. A persistent TTS streaming connection can be maintained from the start of a call, reducing response latency and enabling smoother interactions. Configuration is available at both application and experience-flow levels, with automatic fallback and monitoring to ensure reliable execution across supported TTS engines.
 
 <hr>
 
