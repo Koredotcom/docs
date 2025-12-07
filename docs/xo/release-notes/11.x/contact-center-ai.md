@@ -2,6 +2,56 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.19.0 October 25, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Session Transfer and Access Control Enhancements**
+
+The Console enforces controlled session transfers across multiple tabs, windows, or browsers to maintain consistent and secure access. A new event log entry captures session transfer confirmations for improved auditing and compliance. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/active-console-configuration.md)
+
+**Email Send Confirmation for Predefined Responses**
+
+The Agent Console now includes a confirmation step before sending predefined email responses, preventing accidental or incorrect outbound messages. Agents receive a prompt when selecting Send, allowing them to either send the email immediately or review and edit the content first. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+**Default post-contact Survey Trigger**
+
+The post-contact survey trigger now appears enabled by default for agents when survey triggering is configured. This change supports higher survey participation and ensures consistent handling across conversations. Agents can turn it off when needed, and existing applications retain their current behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#csat-survey) 
+
+**Call History Tab Personalization**
+
+The Call History tab now displays only the outbound calls made by the logged-in agent, providing a focused and personalized view of their call activity. [Learn more :octicons-arrow-right-24:](../../console/conversation-tray.md#call-history)
+
+<font size="4">Configuration</font>
+
+**Enhanced OnConnect Message Controls**
+
+OnConnect messages now support Queue, Skill, and Queue + Skill mappings for more targeted communication. The system applies the most specific match while preserving existing queue-based setups. A new toggle lets email OnConnect messages to act as one-time acknowledgment mails, triggering only on the first agent connection when enabled. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#conversation-statuses-by-channel-live-chat-messaging-and-voice)
+
+**Download Restrictions for Interaction Data**
+
+A new permission now controls the ability to download transcripts, recordings, events, and latency reports from the Interactions tab. The Download Interaction Data permission determines who can export sensitive interaction information. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+
+**Enhanced Snooze Controls and Logout Flexibility**
+
+Snooze settings now support custom date-and-time durations alongside quick options, enabling precise follow-ups and improved conversation handling. Agents can log out even when snoozed items remain in the tray, and administrators can configure channel-specific rules, mandatory notes, and message behaviors to support compliance and operational needs. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#snooze)
+
+**Queue-level Phone Number and Email Mapping**
+
+Phone numbers and email addresses can now be configured at the queue level to give agents a focused, relevant selection during outbound actions. This enhancement improves efficiency by showing only queue-mapped options while still supporting access to the full list when permitted. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md)
+
+<font size="4">Flows</font>
+
+**Improved Asynchronous Error Handling in Connect to API Node**
+
+The Connect to API node now supports handling client (4xx) and server (5xx) errors or failure responses in Asynchronous mode. A new ‘Handle API Failure Responses’ option lets flows detect these errors immediately and route execution to the configured onFailure path, preventing hung sessions. [Learn more :octicons-arrow-right-24:](../../flows/node-types/connect-to-api.md#general-settings)
+
+<hr>
+
 ## v11.19.1 November 19, 2025
 
 <u>Patch Release</u>
@@ -12,7 +62,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Export and Import Web Campaigns**
 
-The platform now supports exporting and importing artifacts for Proactive Web Campaigns. This feature allows users to easily replicate and reuse entire campaign configurations across different apps, workspaces, or environments, ensuring consistency and significantly reducing setup time. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#export-and-import-web-campaigns)
+The platform now supports exporting and importing artifacts for Proactive Web Campaigns. This feature lets users to replicate and reuse entire campaign configurations across different apps, workspaces, or environments, ensuring consistency and significantly reducing setup time. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#export-and-import-web-campaigns)
 
 **Proactive Web Campaign Logs**
 

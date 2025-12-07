@@ -13,35 +13,37 @@ Click the **General Settings** icon and configure the following:
 
 1. A **Custom Name** to identify the node.
 2. Select an API **Type** from the following options:
-    1. **REST**: A REST API conforms to the constraints of the REST API architecture and allows interaction with RESTful web services.
-    2. **SOAP**: A SOAP API uses the Simple Object Access Protocol (SOAP), which is a messaging protocol for interchanging data in a decentralized and distributed environment.
+    * **REST**: A REST API follows the standards of the REST API architecture and enables interaction with RESTful web services.
+    * **SOAP**: A SOAP API uses the Simple Object Access Protocol (SOAP), which is a messaging protocol for interchanging data in a decentralized and distributed environment.
 3. Select an **Integration Type** from the following options:
-    3. **Synchronous**: The API returns resources, data, or services immediately.
-    4. **Asynchronous**: The API returns resources, data, or services later based on the number of seconds you select. The default selection is 20s, and the available options range from 8s to 20s.
-4. Under **Request Definition**, configure the API request. Define the _GET, PUT, POST_, or _DELETE_ service request, along with the API call and parameters to pass. To create a new request, click **+ Define Request**.  
+    * **Synchronous**: The API returns resources, data, or services immediately.
+    * **Asynchronous**: The API returns resources, data, or services later based on the number of seconds you select. The default selection is 20s, and the available options range from 8s to 20s.  
+
+        Selecting Handle API Failure Responses (4xx/5xx) instructs the system to treat all 4xx and 5xx responses as failure events. The system then triggers the configured onFailure path to verify the flow continues without hanging.
+4. Under **Request Definition**, configure the API request. Define the `GET`, `PUT`, `POST`, or `DELETE` service request, along with the API call and parameters to pass. To create a new request, select **+ Define Request**.  
 <img src="./../images/request-definition.png" alt="Request Definition" title="Request Definition" style="border: 1px solid gray; zoom:70%;">
 
-Define your API request by following the steps outlined in Define and Test an API Request, available below.
+    Define your API request by following the steps outlined in Define and Test an API Request.
 
-5. Under **Access Using URL Connector**, select “URLs are behind a firewall and a connector has been set up” if the API must be accessed using a configured URL connector.  
-<img src="./../images/access-using-url-connector.png" alt="Access Using URL Connector" title="Access Using URL Connector" style="border: 1px solid gray; zoom:70%;">
+5. Under **Access Using URL Connector**, select `URLs are behind a firewall and a connector has been set up` if the API is accessed using a configured URL connector.  
+    <img src="./../images/access-using-url-connector.png" alt="Access Using URL Connector" title="Access Using URL Connector" style="border: 1px solid gray; zoom:70%;">
 
 #### Define and Test an API Request
 
 To define and test your API request, follow these steps:
 
-* In the **Request Definition** section within the API node’s General Settings, click **+ Define Request**.
+* In the **Request Definition** section within the API node’s General Settings, select **+ Define Request**.
 * The **Define Request** window opens:
 <img src="./../images/define-request-window.png" alt="Define Request" title="Define Request" style="border: 1px solid gray; zoom:70%;">
-* Select the _GET, PUT, POST, PATCH,_ or _DELETE_ call from the list.
+* Select the `GET`, `PUT`, `POST`, `PATCH`, or `DELETE` call from the list.
 <img src="./../images/api-method.png" alt="Method" title="Method" style="border: 1px solid gray; zoom:70%;">
-* Paste your _API call URL_ in the text field and click **Test**.
+* Paste your `API call URL` in the text field and select **Test**.
 <img src="./../images/curl.png" alt="cURL" title="cURL" style="border: 1px solid gray; zoom:70%;">
-* Your API call runs successfully if all the inputs provided are valid. Otherwise, an error message is displayed.
-* Provide the details for the **Header Key** and **Value** pair. You can add a new pair by typing it in the empty fields. You can delete a pair by clicking the **Delete** (Bin) icon next to it.
+* Your API call runs successfully if all the inputs provided are valid. Otherwise, an error message appears
+* Provide the details for the **Header Key** and **Value** pair. You can add a new pair by typing it in the empty fields. You can delete a pair by selecting the **Delete** icon.
 <img src="./../images/headers.png" alt="Headers" title="Headers" style="border: 1px solid gray; zoom:70%;">
 
-* Click **Test Request** and paste the request body code in the text field. The text editor provides the following options:
+* Select **Test Request** and paste the request body code in the text field. The text editor provides the following options:
     * Format JSON data with indentation and line feeds,
     * Compact JSON data by removing white spaces,
     * Sort contents,
@@ -51,13 +53,13 @@ To define and test your API request, follow these steps:
     * Redo action.  
 <img src="./../images/test-request.png" alt="Test Request" title="Test Request" style="border: 1px solid gray; zoom:70%;">
 
-* Click **Save** after you’ve tested the API successfully.
+* Select **Save** after you’ve tested the API successfully.
 
 ### Connection Rules
 
-* Click the **Connection Rules** icon and select the actions that you want the node to trigger when the API call is successful and when the API call fails.
-* For **On Success**, the selected **Go to node** defines how the bot handles a successful API call.
-* For **On Failure**, the selected **Go to node** defines how the bot handles a failed API Call.
+* Select the **Connection Rules** icon and select the actions that you want the node to trigger when the API call is successful and when the API call fails.
+* For **On Success**, the selected **Go to node** defines how the AI Agent handles a successful API call.
+* For **On Failure**, the selected **Go to node** defines how the AI Agent handles a failed API Call.
 <img src="./../images/connection-rules-api.png" alt="Connection Rules" title="Connection Rules" style="border: 1px solid gray; zoom:70%;">
 
 ### Error Handling

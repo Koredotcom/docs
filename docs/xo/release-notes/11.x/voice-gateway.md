@@ -2,6 +2,20 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.19.0 October 25, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Inbound and Outbound Calls</font>
+
+**CSAT Survey Enhancements for Inbound and Outbound Voice Calls**
+
+The Voice Gateway now delivers consistent CSAT survey behavior across all inbound and outbound call scenarios, honoring the last agent’s survey settings and callback rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#csat-survey-for-inbound-and-outbound-calls)
+
+<hr>
+
 ## v11.19.1 November 19, 2025
 
 <u> Patch Release </u>
@@ -18,7 +32,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Call Recording</font>
 
-**Voice Call Recording – Failure Scenario Handling**
+**Voice Call Recording - Failure Scenario Handling**
 
 When fetching a voice call recording, the system displays context-specific messages. If the initial fetch or subsequent retries fail, users are prompted to retry, with unlimited attempts allowed, and a 15-minute wait message for repeated failures. If the 24-hour job fails, a final message advises contacting the administrator, with no action button displayed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
 
