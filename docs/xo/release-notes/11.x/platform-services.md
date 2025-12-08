@@ -26,7 +26,7 @@ The Email Channel now supports more accurate session handling through two new ap
 
 * Channel-Based Sessions: Creates a new session based on the "To" email address. Emails sent to different support addresses always start new sessions, keeping unrelated issues separate.
 
-* Thread-Based Sessions: C Creates a new session based on the email thread's Reference ID. Replies within the same thread continue the session, while new threads start new sessions. Available only when Channel-Based Sessions are enabled.
+* Thread-Based Sessions: Creates a new session based on the email thread's Reference ID. Replies within the same thread continue the session, while new threads start new sessions. Available only when Channel-Based Sessions are enabled.
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#session-creation-settings)
 
