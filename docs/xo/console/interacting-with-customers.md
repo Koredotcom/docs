@@ -1253,7 +1253,7 @@ How to view CSAT scores
 
 3. Select the Details tab to view all interaction information.
 
-4. If the caller completed a CSAT survey, the CSAT Score field appears in the Details tab, as shown in the example.
+4. If the caller completed a CSAT survey, the CSAT Score field appears in the Details tab, as shown in the example.  
     <img src="../images/insights-to-logs-csat.png" alt="CSAT Score" title="CSAT Score" style="border: 1px solid gray; zoom:70%;">
 
 This view enables supervisors and administrators to assess caller satisfaction and evaluate agent performance.
