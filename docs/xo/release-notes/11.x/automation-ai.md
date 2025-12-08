@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+
+## v11.20.0 December 6, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">DialogGPT</font>  
+
+**DialogGPT Now Default for Intent Detection**
+
+DialogGPT is now the default intent identification mode for AI for Service app creation, replacing traditional NLP. This reduces configuration effort and improves conversational accuracy for new AI Agents. [Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md) 
+
+
+**Redesigned Navigation for DialogGPT and NLP-based App**
+
+The platform now provides tailored navigation experiences for DialogGPT and NLP-based apps. By aligning navigation with the app type, the update improves discoverability and helps users navigate the AI Agent creation process with greater clarity and efficiency.
+
+
+**New Playground Option in Evaluation**
+
+A new Playground section in the Evaluation menu combines Debug Logs and Talk to AI Agent in a side-by-side view for DialogGPT apps, providing an integrated testing and debugging experience with synchronized session control and status management.
+
+<hr>
+
+
 ## v11.19.1 November 19, 2025
 
 <u> Patch Release </u>
