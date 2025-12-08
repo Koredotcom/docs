@@ -41,7 +41,7 @@ Steps to configure the node:
     * **Trigger**: Configure event-based triggers from third-party apps. For details, see [Add event-based triggers](../types-of-nodes/start-node.md#add-event-based-triggers).
     * **Schedule**: Set time-based automation for your workflow. For details, see [Configure time-based schedules](../types-of-nodes/start-node.md#configure-time-based-schedules).
 
-### Add event-based triggers
+### Add Event-Based Triggers
 
 **Prerequisites:**
 
@@ -62,7 +62,7 @@ Steps to configure the node:
 
     Triggers must be active and enabled. Attachments from triggers are accessible via URL for 24 hours.
 
-### Configure time-based schedules
+### Configure Time-Based Schedules
 
 1. Click the Schedule icon and enable the scheduler.
 2. Set frequency (Daily, Weekly, Monthly, Once, Cron, or Custom). [Learn more](../types-of-nodes/start-node.md#schedule-frequencies).

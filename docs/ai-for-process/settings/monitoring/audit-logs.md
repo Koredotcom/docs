@@ -1231,7 +1231,7 @@ You can confidently scale AI initiatives with event-based user activity logs to 
 * [Settings Console](../overview.md){:target="_blank"}- Learn more about other AI for Process admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
-* [Workflow Flow Change Logs](../../workflows/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a workflow.
+* [Workflow Flow Change Logs](../../workflows/workflow-builder/workflow-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a workflow.
 
 
 

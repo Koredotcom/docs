@@ -15,7 +15,7 @@ Model Hub empowers you to enhance base models by fine-tuning them directly withi
 
 ## Accessing Model Hub
 
-1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your AI for Process account and click **Model hub** under **AI for Process**.
+1. Log in to your AI for Process account and click **Model hub** under **AI for Process**.
  
 2. On the Models page, you can see three tabs: Fine-tuned Models, Open-source Models, and External Models. Click any tab to explore the corresponding models.
 

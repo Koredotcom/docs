@@ -2,6 +2,55 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.20.0 December 6, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+
+<font size="4">LLM & Generative AI</font>
+
+**Prompts Library: Search and Filter**
+
+The Prompt Library now offers enhanced search, sorting, and multi-select filtering by name, feature, model, type, status, or usage, with a Quick Filter for instant access to system and custom prompts. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md#search-and-filter-prompts)
+
+**Embedding Model Deprecation and Automatic Upgrade**
+
+The Platform deprecates several legacy embedding models to improve system performance. Any application that uses MPNet, LaBSE, E5, or BGE-M3 V1 automatically upgrades to BGE-M3 V2. 
+
+
+<font size="4">Channels</font>
+
+**Enhanced Session Management for Email Channel**
+
+The Email Channel now supports more accurate session handling through two new app-level configurations. These improvements prevent unintended session merging, keep issues separate, and provide a clearer experience across automation and agent workflows.
+
+
+* Channel-Based Sessions: Creates a new session based on the "To" email address. Emails sent to different support addresses always start new sessions, keeping unrelated issues separate.
+* Thread-Based Sessions: Creates a new session based on the email thread's Reference ID. Replies within the same thread continue the session, while new threads start new sessions. Available only when Channel-Based Sessions are enabled. 
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#session-creation-settings)
+
+
+<font size="4">App Settings</font>
+
+
+**Expanded Change Logs for Language Management**
+
+Change log coverage within DialogGPT has been expanded to enhance security and transparency. The system now captures all modifications made in Language Management by the app developer, including enabling or disabling languages and updates to multilingual input/output localization settings.
+
+This enhancement provides complete visibility and traceability for all language-related configurations.
+
+
+**Localization Support for Dialog Components**
+
+A new ‘Locale-specific Responses’ section in Languages Management provides a consolidated view of all language-dependent components, streamlining multilingual app development. Developers can now update prompts and messages for all enabled languages from this single interface.
+
+
+<hr>
+
+
 ## v11.19.1 November 19, 2025
 
 <u> Patch Release </u>

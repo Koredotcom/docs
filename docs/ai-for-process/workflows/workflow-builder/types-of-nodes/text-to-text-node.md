@@ -122,7 +122,7 @@ To add workflows, click the **Workflow Calling** icon. When you select a model t
 
 !!! note
 
-    When you attach workflows to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate workflows. You can select up to three workflows for each AI node. For more information, see [**Workflow Calling in AI for Process**](./../tool-calling.md). 
+    When you attach workflows to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate workflows. You can select up to three workflows for each AI node. 
 
 * **Add Workflows**: Click **Add Workflows** to add a workflow.
 

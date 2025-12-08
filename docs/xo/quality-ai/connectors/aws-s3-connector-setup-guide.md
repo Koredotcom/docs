@@ -5,7 +5,7 @@
 
 The AWS S3 Connector allows you to ingest conversation recordings and chatscripts/transcripts from a configured S3 folder periodically with a customizable schedule into Quality AI Express, allowing you to use the tool with third-party Contact Center as a Service (CCaaS) solutions.
 
-### What You Will Need
+### What You Require
 
 * S3 bucket with read permissions.
 * CSV metadata files with conversation details
@@ -1025,7 +1025,7 @@ json
 
     * **File Access**: Check bucket name, region, and folder paths, and ensure file URLs are accessible.
 
-    * **Format/Metadata**: Ensure the `test.csv` exists with proper structure, and the column headers and timestamps should match the specified formats. 
+    * **Format/Metadata**: Ensure the `test.csv` exists with proper structure, and the column headers and timestamps must match the specified formats. 
 
 ### Step 3: Queue Mapping & Scheduling
 
