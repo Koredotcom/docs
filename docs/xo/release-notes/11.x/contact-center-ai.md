@@ -48,7 +48,9 @@ Phone numbers and email addresses can now be configured at the queue level to gi
 
 **Improved Asynchronous Error Handling in Connect to API Node**
 
-The Connect to API node now supports handling client (4xx) and server (5xx) errors or failure responses in Asynchronous mode. A new ‘Handle API Failure Responses’ option lets flows detect these errors immediately and route execution to the configured onFailure path, preventing hung sessions. [Learn more :octicons-arrow-right-24:](../../flows/node-types/connect-to-api.md#general-settings)
+The Connect to API node now supports handling client (4xx) and server (5xx) errors or failure responses in Asynchronous mode. A new ‘Handle API Failure Responses’ option lets flows detect these errors immediately and route execution to the configured onFailure path, preventing hung sessions. 
+
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/connect-to-api.md#general-settings)
 
 <font size="4">Campaigns</font>
 
