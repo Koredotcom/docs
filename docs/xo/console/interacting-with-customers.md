@@ -1033,7 +1033,7 @@ Call-back and call-list handling
 
 Additional rules
 
-* Editing dispositions after the conversation ends does not change handling.  
+* Editing dispositions after the conversation ends doesn't change handling.  
 * The system logs errors when payloads are invalid or when required lists are missing.  
 
 ### Translate Conversations in Real Time
@@ -1042,13 +1042,13 @@ Agents can translate conversations in real time on the live interaction pane. Ad
 
 Steps to translate real-time conversations:
 
-1. Click the **Translate** button at the top right corner of the live interaction pane.  
+1. Select **Translate** on the live interaction pane.  
     <img src="../images/translate-option.png" alt="Translate Button" title="Translate Button" style="border: 1px solid gray; zoom:70%;">
 
-2. Select the language from the dropdown. Click **Mark as Default** to make it the default language for translation.  
+2. Select the language from the dropdown. Select **Mark as Default** to make it the default language for translation.  
     <img src="../images/select-language-dropdown.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:70%;">
 
-3. The conversation is translated into the selected language.  
+3. The conversation translates into the selected language.  
     <img src="../images/translated-conversation.png" alt="Translated Conversation" title="Translated Conversation" style="border: 1px solid gray; zoom:70%;">  
     <img src="../images/summary.png" alt="Summary" title="Summary" style="border: 1px solid gray; zoom:70%;">
 
@@ -1057,7 +1057,7 @@ Steps to translate real-time conversations:
 You can interact with customers within the **Live Interaction** area of the Agent Console.  
 <img src="../images/information-during-live-interaction.png" alt="Information Provided to Agents during Live Interactions" title="Information Provided to Agents during Live Interactions" style="border: 1px solid gray; zoom:80%;">
 
-The **Live Interaction** area provides access to features and information that can be used during live conversations, as follows:
+The **Live Interaction** area provides access to features and information used during live conversations, as follows:
 
 ## Arrival Summary
 
@@ -1091,7 +1091,7 @@ When the agent types a response during a chat conversation with a customer, the 
 Do the following to enable the typing indicator for chat conversations:
 
 1. To integrate bots chat capability into custom applications, install WebSDK 3.0 on your server. WebSDK 3.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1) for additional information on installing WebSDK 3.0.
-2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 3.0. The Agent Desktop plugin allows the user to interact with the human agent through the AI Agent and supports the following features:
+2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 3.0. The Agent Desktop plugin lets the user to interact with the human agent through the AI Agent and supports the following features:
 
     * Audio Calling
     * Video Calling
@@ -1213,7 +1213,7 @@ CSAT surveys trigger based on the scenarios configured by administrators/supervi
 
     * The system triggers the survey to the customer when the agent selects End with the survey selected.
 
-    * When Administrators select Auto Trigger Survey, the system keeps the option disabled by default. Agents must explicitly enable it to trigger surveys automatically, and they can turn it off when needed.
+    * When you select Auto Trigger Survey, the system keeps the option disabled by default. Agents must explicitly disable it to trigger surveys automatically, and they can turn it off when needed.
 
 For scenarios where the agent actively participates in interactions and the interactions end, the feedback from surveys contributes to their CSAT scores.
 
