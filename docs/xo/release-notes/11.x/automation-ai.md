@@ -25,6 +25,7 @@ The platform now provides tailored navigation experiences for DialogGPT and NLP-
 
 A new Playground section in the Evaluation menu combines Debug Logs and Talk to AI Agent in a side-by-side view for DialogGPT apps, providing an integrated testing and debugging experience with synchronized session control and status management.
 
+
 <hr>
 
 
@@ -226,7 +227,7 @@ This update includes enhancement and bug fixes. The key enhancement included in 
 
 **Sub-Intent Scoping Enhancement**
 
-DialogGPT has been optimised to manage sub-intents using dialog context, moving away from indexing. This change provides a clear separation between top-level intents and sub-intents, thereby improving the accuracy of the intent qualification and also providing developers with greater control. [Learn more :octicons-arrow-right-24:](../../automation/intelligence/sub-intents-and-follow-up-intents.md)
+DialogGPT has been optimized to manage sub-intents using dialog context, moving away from indexing. This change provides a clear separation between top-level intents and sub-intents, thereby improving the accuracy of the intent qualification and also providing developers with greater control. [Learn more :octicons-arrow-right-24:](../../automation/intelligence/sub-intents-and-follow-up-intents.md)
 
 <hr>
 
@@ -241,7 +242,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Configurable Search AI Retrieval Settings**
 
-DialogGPT now allows users to configure chunk limits for Search AI retrieval, enabling them to control the number of chunks retrieved from knowledge sources. This feature improves the response times, contributes to improved intent identification, and optimises token consumption, while providing precise control over the balance between context depth and performance. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
+DialogGPT now allows users to configure chunk limits for Search AI retrieval, enabling them to control the number of chunks retrieved from knowledge sources. This feature improves the response times, contributes to improved intent identification, and optimizes token consumption, while providing precise control over the balance between context depth and performance. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
 
 **Enhanced Discoverability for Automation Node Settings**
 

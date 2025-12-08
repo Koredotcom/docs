@@ -15,6 +15,10 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 The Prompt Library now offers enhanced search, sorting, and multi-select filtering by name, feature, model, type, status, or usage, with a Quick Filter for instant access to system and custom prompts. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md#search-and-filter-prompts)
 
+**Embedding Model Deprecation and Automatic Upgrade**
+
+The Platform deprecates several legacy embedding models to improve system performance. Any application that uses MPNet, LaBSE, E5, or BGE-M3 V1 automatically upgrades to BGE-M3 V2. 
+
 
 <font size="4">Channels</font>
 
