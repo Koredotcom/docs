@@ -580,7 +580,7 @@ nav:
           - Taxonomy Setup: quality-ai/configure/taxonomy-builder/setup-taxonomy.md
       - Quality AI Express: quality-ai/configure/quality-ai-express.md           
       - Connectors: 
-        - AWS S3 Connector Setup Guide: quality-ai/configure/connectors/aws-s3-connector-setup-guide.md          
+        - AWS S3 Connector Setup Guide: quality-ai/configure/connectors/aws-s3-connector-setup-guide.md                  
       - Conversation Sources: quality-ai/configure/conversation-sources.md
       - Settings: 
         - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
