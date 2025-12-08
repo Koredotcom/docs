@@ -16,7 +16,7 @@ The default App language is **English**. Follow these steps to add a new languag
     **Note:** You can also search for a language by entering its name in the Search field.
 
 4. After you click configure, you can setup the following language configurations:  
-<img src="../images/mlva-img6-new-lang-config.png" alt="Setup language configuations" title="Setup language configurations" style="border: 1px solid gray;zoom:50%;"/>  
+<img src="../images/mlva-img6-new-lang-config.png" alt="Setup language configurations" title="Setup language configurations" style="border: 1px solid gray;zoom:50%;"/>  
   
     a. **Choose the NLU Language** – Allows you to select any supported language as the NLU model to train your assistant.
 

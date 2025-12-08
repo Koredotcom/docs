@@ -15,8 +15,6 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 The Prompt Library now offers enhanced search, sorting, and multi-select filtering by name, feature, model, type, status, or usage, with a Quick Filter for instant access to system and custom prompts. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md#search-and-filter-prompts)
 
-
-
 <font size="4">Channels</font>
 
 **Enhanced Session Management for Email Channel**
@@ -37,7 +35,7 @@ The Email Channel now supports more accurate session handling through two new ap
 
 **Localization Support for Dialog Components**
 
-A new ‘Locale-specific Responses’ section in Languages Management provides a consolidated view of all language-dependent components, streamlining multilingual app development. Developers can now update prompts and messages for all enabled languages from this single interface.
+A new ‘Locale-specific Responses’ section in Languages Management provides a consolidated view of all language-dependent components, streamlining multilingual app development. Developers can now update prompts and messages for all enabled languages from this single interface. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#localization-configurations)
 
 
 <hr>

@@ -18,12 +18,12 @@ DialogGPT is now the default intent identification mode for AI for Service app c
 
 **Redesigned Navigation for DialogGPT and NLP-based App**
 
-The platform now provides tailored navigation experiences for DialogGPT and NLP-based apps. By aligning navigation with the app type, the update improves discoverability and helps users navigate the AI Agent creation process with greater clarity and efficiency.
+The platform now provides tailored navigation experiences for DialogGPT and NLP-based apps. By aligning navigation with the app type, the update improves discoverability and helps users navigate the AI Agent creation process with greater clarity and efficiency. [Learn more :octicons-arrow-right-24:](../../getting-started/dialoggpt_based_navigation.md) 
 
 
 **New Playground Option in Evaluation**
 
-A new Playground section in the Evaluation menu combines Debug Logs and Talk to AI Agent in a side-by-side view for DialogGPT apps, providing an integrated testing and debugging experience with synchronized session control and status management.
+A new Playground section in the Evaluation menu combines Debug Logs and Talk to AI Agent in a side-by-side view for DialogGPT apps, providing an integrated testing and debugging experience with synchronized session control and status management. [Learn more :octicons-arrow-right-24:](../../automation/testing/playground.md) 
 
 **Embedding Model Deprecation and Automatic Upgrade**
 
