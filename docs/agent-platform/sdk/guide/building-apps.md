@@ -268,21 +268,25 @@ if __name__ == "__main__":
 ## Best Practices
 
 ### Agent Design
+
 - Keep agents focused on specific domains
 - Provide clear, detailed descriptions
 - Include comprehensive prompts with examples
 
 ### Tool Design
+
 - Make tools atomic and single-purpose
 - Provide detailed descriptions for LLM understanding
 - Handle errors gracefully with meaningful messages
 
 ### Memory Management
+
 - Use appropriate scopes for different data types
 - Set sensible retention policies
 - Define clear schemas for strict validation
 
 ### Orchestration
+
 - Implement robust routing logic
 - Handle edge cases gracefully
 - Maintain conversation context

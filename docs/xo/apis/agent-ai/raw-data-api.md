@@ -17,9 +17,10 @@ This updated version of the Raw Data API offers the following additional convers
 * Total number of words or phrases accepted by the agent
 * Total number of words or phrases entered by the agent
 * Total number of words suggested for correction by the agent
-* Total number of auto-corrected words accepted by the agent
+* Total number of autocorrected words accepted by the agent
 * Conversation Summary existence and agents reading or scrolling through it.
 * Filters such as Agent ID, Channel, Session ID, and Conversation ID. 
+* Custom and Assist tab details.
 
 | **Field**        | **Value**                                                                                                                                                                                                                       |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -76,7 +77,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8
   "conversationIds": ["{{conversationId}}"],
   "sessionIds": ["{{sessionId}}"],
   "channels": ["chat"],
-  "agentIds": ["{{agentId}}"]
+  "agentIds": ["{{agentId}}"]}'
 ```
 ## Request Body Parameters
 
@@ -84,9 +85,8 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8
 |---------------|----------------------------------------------------------------------------------|-------------|
 |`conversationIds`|Array of conversation IDs to filter specific interactions.|Optional|
 |`sessionIds`|Array of session IDs to filter specific AI Agent sessions.|Optional|
-|`channels`| Array of communication channels (e.g., `chat`, `voice`).|Optional|
+|`channels`| Array of communication channels (for example, `chat`, `voice`).|Optional|
 |`agentIds`|Array of agent IDs to filter interactions handled by specific agents.|Optional|
-
 
 ## Sample Response
 
@@ -1178,7 +1178,7 @@ Example: "Cancel account"
    </td>
    <td>How did the agent run it? Using the "Run" button, or the "Run with Agent input" button.
 <p>
-Example: one of "RunAssist", "RunWithAgentInput"
+Example: one of "RunAssist", "RunCustom", or "RunWithAgentInput"
    </td>
   </tr>
   <tr>

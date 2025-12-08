@@ -2,6 +2,36 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+
+## v11.20.0 December 6, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">DialogGPT</font>  
+
+**DialogGPT Now Default for Intent Detection**
+
+DialogGPT is now the default intent identification mode for AI for Service app creation, replacing traditional NLP. This reduces configuration effort and improves conversational accuracy for new AI Agents. [Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md) 
+
+
+**Redesigned Navigation for DialogGPT and NLP-based App**
+
+The platform now provides tailored navigation experiences for DialogGPT and NLP-based apps. By aligning navigation with the app type, the update improves discoverability and helps users navigate the AI Agent creation process with greater clarity and efficiency. [Learn more :octicons-arrow-right-24:](../../getting-started/dialoggpt_based_navigation.md) 
+
+
+**New Playground Option in Evaluation**
+
+A new Playground section in the Evaluation menu combines Debug Logs and Talk to AI Agent in a side-by-side view for DialogGPT apps, providing an integrated testing and debugging experience with synchronized session control and status management. [Learn more :octicons-arrow-right-24:](../../automation/testing/playground.md) 
+
+**Embedding Model Deprecation and Automatic Upgrade**
+
+The legacy embedding models (MPNet, LaBSE, E5, and BGE-M3 V1) are deprecated to improve system performance. Any application that uses one of these models will be automatically upgraded to BGE-M3 V2.
+
+<hr>
+
+
 ## v11.19.1 November 19, 2025
 
 <u> Patch Release </u>
@@ -200,7 +230,7 @@ This update includes enhancement and bug fixes. The key enhancement included in 
 
 **Sub-Intent Scoping Enhancement**
 
-DialogGPT has been optimised to manage sub-intents using dialog context, moving away from indexing. This change provides a clear separation between top-level intents and sub-intents, thereby improving the accuracy of the intent qualification and also providing developers with greater control. [Learn more :octicons-arrow-right-24:](../../automation/intelligence/sub-intents-and-follow-up-intents.md)
+DialogGPT has been optimized to manage sub-intents using dialog context, moving away from indexing. This change provides a clear separation between top-level intents and sub-intents, thereby improving the accuracy of the intent qualification and also providing developers with greater control. [Learn more :octicons-arrow-right-24:](../../automation/intelligence/sub-intents-and-follow-up-intents.md)
 
 <hr>
 
@@ -215,7 +245,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Configurable Search AI Retrieval Settings**
 
-DialogGPT now allows users to configure chunk limits for Search AI retrieval, enabling them to control the number of chunks retrieved from knowledge sources. This feature improves the response times, contributes to improved intent identification, and optimises token consumption, while providing precise control over the balance between context depth and performance. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
+DialogGPT now allows users to configure chunk limits for Search AI retrieval, enabling them to control the number of chunks retrieved from knowledge sources. This feature improves the response times, contributes to improved intent identification, and optimizes token consumption, while providing precise control over the balance between context depth and performance. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
 
 **Enhanced Discoverability for Automation Node Settings**
 

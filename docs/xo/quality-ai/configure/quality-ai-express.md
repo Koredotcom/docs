@@ -6,7 +6,7 @@ Quality AI Express is a specialized version of the Quality AI platform designed 
 
 Quality AI Express delivers powerful AI-driven insights through file-based integration, allowing organizations to maintain their current CCaaS investment while accessing enterprise-grade conversation intelligence and agent performance management capabilities.
 
-## What You Should Know First (Important)
+## What You Must Know First (Important)
 
 **Quality AI Express provides 90% of Quality AI's capabilities** through secure file transfer-based integration. Here's what this means for your implementation:
 
@@ -253,7 +253,7 @@ Quality AI Express integrates with your existing contact center through:
 * **Voice Transcripts**: Pre-transcribed audio conversations.
 * **Metadata**: CSV files containing conversation details and participant information.
 
-Learn more about [AWS S3 Connector Setup Guide](../getting-started/aws-s3-connector-setup-guide.md){:target="_blank"}.
+Learn more about [AWS S3 Connector Setup Guide](./connectors/aws-s3-connector-setup-guide.md){:target="_blank"}.
 
 ## Getting Started
 
@@ -272,7 +272,7 @@ Learn more about [AWS S3 Connector Setup Guide](../getting-started/aws-s3-connec
 5. **Testing & Validation**: Verify data flow and analytics accuracy.
 6. **Production Deployment**: Begin automated quality analysis and reporting.
 
-For detailed setup, learn more about [AWS S3 Connector Setup Guide](../getting-started/aws-s3-connector-setup-guide.md){:target="_blank"}.
+For detailed setup, learn more about [AWS S3 Connector Setup Guide](./connectors/aws-s3-connector-setup-guide.md){:target="_blank"}.
 
 ## Migration Path
 
