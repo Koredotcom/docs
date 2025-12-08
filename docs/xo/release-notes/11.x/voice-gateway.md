@@ -18,7 +18,7 @@ A new utility function, voiceUtils.transfer enables seamless call transfers betw
 
 **Support DTMF Input for Caller After External Call Transfer**
 
-The platform now lets callers to provide DTMF input when an agent transfers a call to an external IVR or automated dialog system. This ensures that callers can continue interacting with the destination IVR or AI agent, preserving the intended automated experience without any interference from the human agent’s session.
+The platform now lets callers to provide DTMF input when an agent transfers a call to an external IVR or automated dialog system. This ensures that callers can continue interacting with the destination IVR or AI agent, preserving the intended automated experience.
 
 <font size="4">Inbound and Outbound Calls</font>
 
@@ -30,15 +30,11 @@ The Voice Gateway now delivers consistent CSAT survey behavior across all inboun
 
 **Global IVR Property Support for TTS Streaming**
 
-TTS streaming now uses global IVR settings for barge-in, timeouts, prompts, and speech parameters. The update ensures consistent behavior across configuration levels and updates UI text to reflect automatic barge-in for streaming-enabled flows.
+TTS streaming now uses global IVR settings for barge-in, timeouts, prompts, and speech parameters. The update ensures consistent behavior across configuration levels.
 
 **ASR, Bot, and TTS Latency Reporting**
 
 Latency reporting now captures ASR, Bot, and TTS delays at both node and call levels. The report includes end-to-end metrics, detailed call information, and highlights unsupported scenarios with clear notifications when data is unavailable. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/latency-report.md)
-
-**Background Streaming and Background Gather Support**
-
-The platform now supports background streaming and background gathering to improve call performance. The system maintains a persistent TTS streaming connection can from the start of a call, reducing response latency and enabling smoother interactions. Configuration is available at both application and experience-flow levels, with automatic fallback and monitoring to ensure reliable execution across supported TTS engines.
 
 <hr>
 

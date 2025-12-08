@@ -53,7 +53,7 @@ To generate a Latency Report:
 
     * **Run On Demand**: When you create a new report or edit an existing one, you can set the report schedule to run on demand.
     * **Schedule**: If you schedule the report for a later time, the system automatically generates it on the scheduled day and time without requiring you to select Run.
-10. Select the CSV icon and generate the output of that report, as shown below.  
+10. Select the CSV icon and generate the output of that report, as follows.  
     <img src="../images/latency-report-csv.png" alt="Generate Output" title="Generate Output" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
