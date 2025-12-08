@@ -1226,18 +1226,34 @@ The system also triggers CSAT surveys in scenarios when there are no active part
 
 For these scenarios, the system assigns the CSAT scores to the interaction.
 
-### CSAT Survey for Inbound and Outbound Calls
+### Supported scenarios for CSAT in voice channels
 
-The Voice Gateway (VG) provides a CSAT survey feature to deliver surveys consistently across inbound and outbound calls. The system records all survey responses for reporting and analysis.
+| **Scenario** | **Description** |
+|---------|-------------|
+| Inbound and outbound calls | The system triggers CSAT at the end of any standard inbound or outbound voice interaction. |
+| Inbound or outbound calls + internal agent transfer | When agents transfer a call internally, the system presents the CSAT survey after the final agent interaction. |
+| Inbound or outbound calls + callback triggered by agent | If an agent initiates a callback and the interaction completes, the system triggers a CSAT survey afterward. |
+| Inbound or outbound calls + internal agent consult involved | When an agent consults another internal agent, the system presents the CSAT survey after the interaction ends. |
+| Inbound or outbound calls + conference (more than two internal agents or supervisor) | When the call involves conferences with multiple internal agents or supervisors, the system applies CSAT once the interaction concludes. |
+| Inbound call + courtesy callback | When the system triggers a courtesy callback, it presents the CSAT survey at the end of the callback interaction. |
 
-`Inbound Calls`
+!!! note 
+ 
+    CSAT surveys do not apply to inbound or outbound calls when the customer interacts with external agents or when an external consult occurs during the call. Only interactions handled fully within the internal agent ecosystem qualify for CSAT.
 
-Inbound calls include internal and external transfers, agent-initiated callbacks, courtesy callbacks, and consult calls. For internal transfers, the survey configuration of the last agent in the call chain takes priority, and the customer receives the survey after the call ends. If the transfer fails, the system routes the call according to fallback rules such as queues or Interactive Voice Response (IVR).
+### Viewing CSAT scores submitted by users
 
-For external transfers, the system triggers surveys based on the internal agent’s survey preference. Agent-initiated callbacks and courtesy callbacks follow agent-specific survey settings. In consult calls, when Agent 1 consults Agent 2 and ends the call, the survey triggers based on the last agent’s configuration. The system stores all survey recordings.
+When callers complete CSAT surveys, the system automatically captures and stores their feedback and scores for review.
 
-`Outbound Calls`
+How to view CSAT scores
 
-Outbound calls include agent-to-caller calls, internal transfers, consult calls, agent-initiated callbacks, and calls using the Outbound Dialout API. During agent-to-caller calls, agents can trigger surveys, and the caller receives the survey immediately after the call ends.
+1. Navigate to the [Interactions Dashboard](../analytics/contact-center/interactions.md).
 
-For internal transfers and consult calls, surveys follow the last agent’s configuration. Agent-initiated callbacks respect agent-specific settings. The system stores all survey recordings.
+2. Open the interaction for which you want to view CSAT details.
+
+3. Select the Details tab to view all interaction information.
+
+4. If the caller completed a CSAT survey, the CSAT Score field appears in the Details tab, as shown in the example.
+    <img src="../images/insights-to-logs-csat.png" alt="CSAT Score" title="CSAT Score" style="border: 1px solid gray; zoom:70%;">
+
+This view enables supervisors and administrators to assess caller satisfaction and evaluate agent performance.

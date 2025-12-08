@@ -24,7 +24,7 @@ The platform now lets callers to provide DTMF input when an agent transfers a ca
 
 **CSAT Survey Enhancements for Inbound and Outbound Voice Calls**
 
-The Voice Gateway now delivers consistent CSAT survey behavior across all inbound and outbound call scenarios, honoring the last agent’s survey settings and callback rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#csat-survey-for-inbound-and-outbound-calls)
+The Voice Gateway now delivers consistent CSAT survey behavior across all inbound and outbound call scenarios, honoring the last agent’s survey settings and callback rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#supported-scenarios-for-csat-in-voice-channels)
 
 <font size="4">ASR and TTS</font>
 
