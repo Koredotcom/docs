@@ -23,7 +23,7 @@ For more information on adding prompt for Agent Node, see [Agent Node Prompt Set
 
 !!! note
 
-    Currently, the custom LLM integration and prompt creation are available only in English.
+    The custom LLM integration and prompt creation are available only in English.
 
 
 ## Regular vs. Streaming Prompts
@@ -81,6 +81,11 @@ Use Streaming Prompts When:
 * Voice-based applications would benefit from incremental speech.
 * User experience would benefit from immediate feedback.
 
+## Search and Filter Prompts
+
+The Quick Filter lets you filter prompts by type: system or custom. Use the dedicated smart search to find prompts by name, feature, or model. Apply smart filters to refine results by prompt type, label, status, model, or feature name. The sort function reorganizes the list based on your selected criteria.  
+<img src="../images/prompt-library-with-search.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;"> 
+
 
 ## How to Add a Custom Prompt
 
@@ -95,10 +100,6 @@ To add a Custom prompt, follow the steps:
 
 
 1. Go to **Generative AI Tools** > **Prompts Library**.
-    <img src="../images/prompts-library.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;"> 
-
-
-
 
 2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
 3. Enter the **prompt name**. Select the **feature** and the respective **model**. 
@@ -175,7 +176,6 @@ For example, double-click the "content" key in the JSON structure and click **Sa
     <img src="../images/token-mapping.png" alt="token mapping" title="token mapping" style="border: 1px solid gray; zoom:70%;">
 
 12. Click **Save**. The request is added and displayed in the **Prompts Library** section.
-<img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
  
 13. Now proceed to enable [GenAI Features](genai-features.md).
 
