@@ -2,6 +2,39 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.4.0 December 6, 2025
+
+<u> Minor Release </u>
+
+This release enhances multi-agent orchestration with Content Variables for centralized data management, a unified Orchestrator interface, and direct tool invocation via the Agent Protocol.
+
+## Multi-Agent Orchestration
+
+**Unified Orchestration Management**
+
+The platform now supports creating Agentic Apps with a single AI Agent, making it easy to deploy use cases that do not require sophisticated multi-agent orchestration. The Adaptive Network Pattern is now generally available for all users. The new Behavioral Guidelines let you centrally manage safety, branding, and other instructions. Along with these updates, a dedicated Orchestrator section makes it easy to switch between the patterns. 
+
+**Introducing Content Variables**
+
+Content Variables provide a centralized way for users to declare data used throughout the application—such as user profiles, customer IDs, and employee IDs. This data becomes automatically accessible to all components, including supervisor prompts, agent definitions, tools, events, and knowledge. It helps streamline context management during execution and eliminates the need for manual configuration.
+
+**Direct Tool Invocation in Agent Platform**
+
+Agent Protocol now supports direct invocation of tools (workflow, code, and MCP tools) while maintaining full access to application context, including memory and environment variables. This enhancement enables developers to execute specific tools programmatically when they know exactly what action is needed—bypassing agent reasoning for faster, more cost-effective, and deterministic execution.
+
+
+## AI Engineering Tools
+
+**New API Scopes for External Connections**
+
+Two new API scopes now provide granular access control for external model connections: View connections for read-only access and Manage connections for full management capabilities.
+
+**New Model Support**
+
+The OpenAI gpt-4o-search-preview model is now supported in Prompts and Workflow tools. The model is optimized for search and RAG workflows, and features multi-chunk document retrieval and grounded response generation.
+
+<hr>
+
 ## v1.3.1 November 21, 2025
 
 <u> Minor Release </u>
