@@ -1,7 +1,6 @@
 # Intro to Admin Console
 
-The Kore.ai Admin Console is where AI agents project administrators can manage Kore.ai assistants and related tasks, users, security, billing, and more, at an organization level. This article provides an overview of the Admin Console, taking you through prerequisites, access options and a  recommended workflow.
-
+Admin Console is where AI agents project administrators can manage assistants and related tasks, users, security, billing, and more, at the organization level. This article provides an overview of the Admin Console, covering prerequisites, access options, and a recommended workflow.
 
 ## Admin Prerequisites
 

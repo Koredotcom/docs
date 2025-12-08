@@ -2,6 +2,108 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.20.0 December 07, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Session Transfer and Access Control Enhancements**
+
+The Console enforces controlled session transfers across multiple tabs, windows, or browsers to maintain consistent and secure access. A new event log entry captures session transfer confirmations for improved auditing and compliance. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/active-console-configuration.md)
+
+**Email Send Confirmation for Predefined Responses**
+
+The Agent Console now includes a confirmation step before sending predefined email responses, preventing accidental or incorrect outbound messages. Agents receive a prompt when selecting Send, allowing them to either send the email immediately or review and edit the content first. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+**Default post-contact Survey Trigger**
+
+The post-contact survey trigger now appears enabled by default for agents when survey triggering is configured. This change supports higher survey participation and ensures consistent handling across conversations. Agents can turn it off when needed, and existing applications retain their current behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#csat-survey) 
+
+**Call History Tab Personalization**
+
+The Call History tab now displays only the outbound calls made by the logged-in agent, providing a focused and personalized view of their call activity. [Learn more :octicons-arrow-right-24:](../../console/conversation-tray.md#call-history)
+
+<font size="4">Configuration</font>
+
+**Enhanced OnConnect Message Controls**
+
+OnConnect messages now support Queue, Skill, and Queue + Skill mappings for more targeted communication. The system applies the most specific match while preserving existing queue-based setups. A new toggle lets email OnConnect messages to act as one-time acknowledgment mails, triggering only on the first agent connection when enabled. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#conversation-statuses-by-channel-live-chat-messaging-and-voice)
+
+**Download Restrictions for Interaction Data**
+
+A new permission now controls the ability to download transcripts, recordings, events, and latency reports from the Interactions tab. The Download Interaction Data permission determines who can export sensitive interaction information. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+
+**Enhanced Snooze Controls and Logout Flexibility**
+
+Snooze settings now support custom date-and-time durations alongside quick options, enabling precise follow-ups and improved conversation handling. Agents can log out even when snoozed items remain in the tray, and administrators can configure channel-specific rules, mandatory notes, and message behaviors to support compliance and operational needs. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#snooze)
+
+**Queue-level Phone Number and Email Mapping**
+
+Phone numbers and email addresses can now be configured at the queue level to give agents a focused, relevant selection during outbound actions. This enhancement improves efficiency by showing only queue-mapped options while still supporting access to the full list when permitted. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md)
+
+<font size="4">Flows</font>
+
+**Improved Asynchronous Error Handling in Connect to API Node**
+
+The Connect to API node now supports handling client (4xx) and server (5xx) errors or failure responses in Asynchronous mode. A new ‘Handle API Failure Responses’ option lets flows detect these errors immediately and route execution to the configured onFailure path, preventing hung sessions. [Learn more :octicons-arrow-right-24:](../../flows/node-types/connect-to-api.md#general-settings)
+
+<font size="4">Campaigns</font>
+
+**Campaign Suppression Behavior**
+
+Supressing for a visitor due to cooldowns, ongoing chats, or another active campaign template, it becomes eligible again once the suppression reason no longer applies. This ensures all campaigns are reconsidered when conditions permit. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#campaign-suppression-and-re-evaluation)
+
+**Global and Campaign-Specific DNCs Now Mandatory**
+
+The platform now enforces the use of both Global and Campaign-specific Do Not Call (DNC) lists to ensure compliance and consistent campaign management. A default Global DNC list is automatically created for new accounts or when Campaigns are enabled. Only one Global DNC can exist at a time, and selecting a DNC list is now mandatory during Voice Campaign creation. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#dnc-lists)
+
+**Handling of DNCs - Global and Non-Global**
+
+Global DNC (GDL) lists automatically apply to all Voice Campaigns, followed by Campaign DNC (CDL) lists. Voice Campaigns use both GDL and CDL for contact filtering, while SMS and Proactive campaigns rely only on their respective DNC lists. Changes to Global DNCs don't impact active or paused campaigns, ensuring campaign stability. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#handling-of-dncs-global-and-non-global)
+
+**Disable Answering Machine Detection (AMD) for Preview and Progressive Modes**
+
+Answering Machine Detection (AMD) is now disabled for Preview and Progressive dialing modes to provide consistent call behavior. For Agentless campaigns, AMD remains available with configurable detection options, offering improved accuracy and reliability in call outcomes. 
+
+**Latest Execution List View**
+
+The Latest Execution List View now displays all calls from the most recent or active campaign run, with key call details. Users can view call information, identify calls excluded by filters or DNC lists, and access conversation details to better understand campaign outcomes. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/dashboard/campaign-dashboard.md#latest-execution)
+
+**Inform Agent Info and Availability**
+
+Campaigns now maintain accurate, real-time information on agent queues, skills, and availability. This enhancement ensures that campaigns always have up-to-date agent data, enabling efficient workload management and appropriate call assignment.
+
+**DNCs - List View UI Changes**
+
+The DNC list view now displays all numbers in a selected DNC list, along with their validity details. Only one list per application can be marked as Global, and marking a new list as Global automatically removes the previous Global status. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#mark-as-global)
+
+**Contact Center AI and Agent Desktop Updates**
+
+Disposition codes now include a Type field for improved categorization. When agents select “Call-Me-Later” or “Agent-Call-Me-Later,” they must specify a callback time, ensuring better scheduling and follow-up accuracy. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#disposition-handling-for-campaigns)
+
+**Contact Lists - Support for Agent-Customer Relationships**
+
+Contact lists can now include Agent IDs to establish direct agent-customer relationships. This enhancement lets campaigns to prioritize high-value customers and use relationship-based dialing to improve engagement efficiency. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#agent-mapping)
+
+**Dynamic Contact Filters**
+
+Campaigns now support dynamic filters, enabling campaign managers to define precise contact subsets based on specific conditions. This feature ensures targeted outreach, improved segmentation, and better campaign performance through automated filtering and updates. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#create-voice-campaigns)
+
+<font size="4">Analytics</font>
+
+**Interactions Dashboard - Email Channel Details**
+
+The dashboard now includes key email fields—Subject, From, To, CC, and BCC—within the transcript for clearer visibility of email interactions. The EmailSubject field is available as an optional column, and all email fields are searchable, helping users  locate relevant conversations. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+**Interactions Dashboard - SmartStatus Filter**
+
+The dashboard now supports filtering by SmartStatus, allowing users to refine conversations using the enhanced status categories. The Details tab displays both the original Status and the new SmartStatus, and search and export actions honor the applied filters. Additional non-default fields, including customer details, queue wait time, and SmartStatus, are available through Manage Columns. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#smartstatus)
+
+<hr>
+
 ## v11.19.1 November 19, 2025
 
 <u>Patch Release</u>
@@ -12,7 +114,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Export and Import Web Campaigns**
 
-The platform now supports exporting and importing artifacts for Proactive Web Campaigns. This feature allows users to easily replicate and reuse entire campaign configurations across different apps, workspaces, or environments, ensuring consistency and significantly reducing setup time. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#export-and-import-web-campaigns)
+The platform now supports exporting and importing artifacts for Proactive Web Campaigns. This feature lets users to replicate and reuse entire campaign configurations across different apps, workspaces, or environments, ensuring consistency and significantly reducing setup time. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#export-and-import-web-campaigns)
 
 **Proactive Web Campaign Logs**
 

@@ -60,6 +60,7 @@ auth_ns = AppNamespace(
 **Important Note**: Namespaces are for logical/functional groupings, NOT environments. The platform handles environment resolution (dev, staging, production) automatically based on deployment context.
 
 ### Functional Namespaces
+
 ```python
 functional_namespaces = [
     AppNamespace(name="authentication", description="User authentication and authorization"),
@@ -70,6 +71,7 @@ functional_namespaces = [
 ```
 
 ### Service Namespaces
+
 ```python
 services = [
     AppNamespace(name="database", description="Database connection settings"),
@@ -80,6 +82,7 @@ services = [
 ```
 
 ### Feature Namespaces
+
 ```python
 features = [
     AppNamespace(name="user_management", description="User account and profile features"),
@@ -145,12 +148,14 @@ namespace = AppNamespace.from_json(json_str)
 ## Best Practices
 
 ### Naming Conventions
+
 - Use lowercase with underscores: `user_management`, `api_service`
 - Be descriptive but concise: `authentication` not `auth_and_user_security_config`
 - Focus on functional areas, not environments: `database` not `prod_db`
 - Use consistent patterns across your application
 
 ### Organization Strategies
+
 ```python
 # Feature-based approach (recommended)
 namespaces = [
@@ -176,7 +181,9 @@ namespaces = [
 ```
 
 ### Default Namespace
+
 Always include a "default" namespace for common variables:
+
 ```python
 default_ns = AppNamespace(
     name="default",
@@ -185,6 +192,7 @@ default_ns = AppNamespace(
 ```
 
 ### Environment Resolution
+
 **Important**: Environments (development, staging, production) are automatically resolved by the platform based on deployment context. Do NOT create namespaces for environments. Instead, use logical/functional namespaces and let the platform handle environment-specific variable resolution.
 
 ```python
@@ -207,4 +215,3 @@ correct_namespaces = [
 - [App Variable](app_variable.md) - Variables are scoped to namespaces
 - [App](app.md) - Applications contain both namespaces and variables
 - [App Configuration](app_configuration.md) - Configuration settings may reference namespaced variables
-

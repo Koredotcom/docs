@@ -12,7 +12,7 @@ The Agent Group section includes the following features:
 
 * You can use the Search field to find a group by name.
 * Each group item shows the Group Name, Description, and the Number of Agents it includes.
-* Clicking any group name reveals the agents who are part of it. Each agent is listed with their name, Edit Action, Role, assigned Skills, and Queues. Learn more about [User Management](../../../user-management/manage-users.md).
+* Clicking any group name reveals the agents who are part of it. Each agent entry shows the agent name, edit action, role, and assigned skills and queues. Learn more about [User Management](../../../user-management/manage-users.md).
 
 ### Pre-configured Groups
 
@@ -25,12 +25,12 @@ There are two pre-configured groups available:
 
 To create a new agent group, follow these steps:
 
-1. On the Agent Groups page, click `Add Group`.  
+1. On the Agent Groups page, select `Add Group`.  
 <img src="../images/add-group-button.png" alt="Add Group Button" title="Add Group Button" style="border: 1px solid gray; zoom:80%;">
 
 2. In the New Group window, provide the input for the following fields:
-    1. `Group Name`–Enter the name of the agent group.
-    2. `Description`–Enter a brief description of the group.
+    * `Group Name` - Enter the agent group name.
+    * `Description` - Enter a brief description.
 
 ### Add Agents to a Group
 
@@ -46,11 +46,11 @@ To learn more about adding or editing agents, see [Edit a User](../../../user-ma
 
 To modify an agent group, follow these steps:
 
-1. On the Agent Groups page, hover over the group that you want to edit, then click the `Edit` icon next to the group name;  
+1. On the Agent Groups page, hover over the group that you want to edit, then select the `Edit` icon next to the group name;  
 <img src="../images/edit-group-button.png" alt="Edit Group Name" title="Edit Group Name" style="border: 1px solid gray; zoom:80%;">
 
 2. In the Edit Group window, make the required changes;
-3. Click `Save`.
+3. Select `Save`.
 
 !!! Note
 
@@ -60,8 +60,8 @@ To modify an agent group, follow these steps:
 
 To delete an agent group, follow these steps:
 
-1. On the Agent Groups page, click the `Edit` icon next to the group you want to delete.
-2. In the Edit Group window, click the `Delete Agent Group` icon at the bottom left.  
+1. On the Agent Groups page, select the `Edit` icon next to the group you want to delete.
+2. In the Edit Group window, select the `Delete Agent Group` icon.  
 
 ## Agent Status Management
 
@@ -117,22 +117,22 @@ The system triggers the System Busy status differently based on whether Blended 
 
 To create a new agent status, follow these steps:
 
-1. In the Agent Status section, click + New Status.
+1. In the Agent Status section, select `+ New Status`.
 2. In the New Status window, enter the following details:
-    1. `Status Name`–Enter the status name.
-    2. `Status Type`–Select the status type: `Away` or `Busy`.
-    3. `Description`–Type in a brief description of the status.
-3. Click `Add & Exit` to create the status and exit the window or click `Add & Stay` to create the status and continue to a new one.  
+    1. `Status Name`-Enter the status name.
+    2. `Status Type`-Select the status type: `Away` or `Busy`.
+    3. `Description`-Type in a brief description of the status.
+3. Select `Add & Exit` to create the status and exit the window or select `Add & Stay` to create the status and continue to a new one.  
 4. The status created successfully success message appears on-screen and the new status adds to the Agent Status list.  
 
 ### Edit an Agent Status
 
 To edit an existing Agent status entry, follow these steps:
 
-1. In the Agent Status section, click the `Edit` icon corresponding to the status entry that you want to modify.  
+1. In the Agent Status section, select the `Edit` icon corresponding to the status entry that you want to modify.  
     <img src="../images/status-edit-button.png" alt="Status Edit Icon" title="Status Edit Icon" style="border: 1px solid gray; zoom:80%;">
 
-2. In the Edit Status window, edit the Status Name, Status Type, and/or Description, then click Update.  
+2. In the Edit Status window, edit the Status Name, Status Type, and or Description, then select Update.  
 3. The Status updated successfully message appears in the window and the modified values reflect in the Agent Status window.  
 
 ### Delete an Agent Status
@@ -144,8 +144,8 @@ To edit an existing Agent status entry, follow these steps:
 
 To delete an existing Agent Status entry, follow these steps:
 
-1. In the Agent Status section, click the `Delete` icon corresponding to the status that you want to delete.
-2. Click `Yes` to confirm.
+1. In the Agent Status section, select the `Delete` icon corresponding to the status that you want to delete.
+2. Select `Yes` to confirm.
 3. A success message appears and the system removes the deleted agent status from the list.
 
 ### Configure Login Prep Status
@@ -154,7 +154,7 @@ Login Prep status ensures agents don't receive interactions immediately after th
 
 Steps to enable and configure Login Prep status:
 
-1. The login prep status isn't available by default. Click the `Edit` button to enable login prep.
+1. The login prep status isn't available by default. Select `Edit` to enable login prep.
 2. On the Edit Status window, turn on the toggle to Enabled.
     You can customize the following fields:
     * Status Name
@@ -163,7 +163,7 @@ Steps to enable and configure Login Prep status:
         * Rule (default 30 seconds)
         * Message
 
-3. Click `Update` to save the changes. A confirmation message appears.
+3. Select `Update` to save the changes. A confirmation message appears.
 
     If enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](../../../console/interacting-with-customers.md#behavior-when-login-prep-status-is-enabled).
 
@@ -178,14 +178,14 @@ Go to Contact Center AI > Agent & Supervisors > Agent Management > Agent Setting
 3. `Call Recording Control`: These settings let you configure call recording behavior. If enabled, you can further enable options to permit Human Agents and AI Agents to Pause/Resume call recording.
 4. `Transfers`: This section lets you define settings related to External Transfers, Skill Match, and Transfer Destination Control.
 5. `Skill Modification`: You can decide if the agents can modify skills attached to a conversation.
-6. `Auto Logout & Auto Close Conversation`: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
+6. `Auto Logout & Auto Close Conversation`: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into After Call Work (ACW) mode.
 7. `Snooze`: This setting enables agents to temporarily pause conversations that are waiting for a reply from the customer’s end or any necessary action or item on the agent’s side.
 8. `Blended Agents`: The Blended Mode enables agents to handle voice and digital interactions simultaneously. It's designed to optimize agent capacity, improve efficiency, and align with modern contact center best practices.
 9. `Additional Routing Configuration`: Administrators can select from the following routing options that complement existing routing configurations through queues.
     * Fairer Workload distribution.
     * Hold interaction in queue until the wait time expires.
 10. `Enable Dial Tone Until Agent Connects`: This setting plays a dial tone to the customer until the system establishes the connection with the agent after the user hears the connected tone.
-    The system groups these settings and presents them as closed groups when you first open the Settings screen. Click any group to view its corresponding options.
+    The system groups these settings and presents them as closed groups when you first open the Settings screen. Select any group to view its corresponding options.
 
 11. Total Digital Conversation Limit: This setting prevents digital overload by limiting the total number of active conversations across all channels.  
 
@@ -193,22 +193,22 @@ Go to Contact Center AI > Agent & Supervisors > Agent Management > Agent Setting
 
 ### Voice
 
-* `Manual`: Agents must click `Accept` to begin their voice interaction with the next customer.
-* `Auto`: Calls are auto answered. The agent doesn't need to click `Accept`.
+* `Manual`: Agents must select `Accept` to begin their voice interaction with the next customer.
+* `Auto`: Calls are auto answered. The agent doesn't need to select `Accept`.
 
 ### Chats
 
-* `Manual`: Agents must click `Accept` to begin chatting with the next customer. Set the acceptance timeout for agents before a chat returns to the queue by entering the number of minutes and seconds.
-* `Auto`: Chats are auto answered, and the agent doesn't need to click `Accept`. Set the first response timeout for agents to respond to new chats.
+* `Manual`: Agents must select `Accept` to begin chatting with the next customer. Set the acceptance timeout for agents before a chat returns to the queue by entering the number of minutes and seconds.
+* `Auto`: Chats are auto answered, and the agent doesn't need to select `Accept`. Set the first response timeout for agents to respond to new chats.
 
 ### Emails
 
-* `Manual`: Agents must click `Accept` to begin their email interaction with the next customer. Set the acceptance timeout for agents before an email returns to the queue by entering the number of minutes and seconds.
-* `Auto`: Emails are auto accepted, and the agent doesn't need to click `Accept`.  
+* `Manual`: Agents must select `Accept` to begin their email interaction with the next customer. Set the acceptance timeout for agents before an email returns to the queue by entering the number of minutes and seconds.
+* `Auto`: Emails are auto accepted, and the agent doesn't need to select `Accept`.  
 
 ### Explicit Reject
 
-Turn on the toggle to add an explicit reject button for incoming conversations. This applies only in manual acceptance mode. This toggle remains off by default.  
+Turn on the toggle to add an explicit reject o incoming conversations. This applies only in manual acceptance mode. This toggle remains off by default.  
 
 ### Honor Agent Wait Before Queue Timeout  
 
@@ -239,7 +239,7 @@ Conversation statuses apply under specific conditions for certain channels. The 
 |                                              |                                                                                   | Messaging                  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time.            |
 | `On Connect (Default Message(s))`                               | When the agent connects                                                           | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
 |                                              |                                                                                   | Voice                  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.            |
-| `On Connect (Queue Specific Message(s))`                   | When the agent connects | Live Chat, Messaging, Voice.  | To Queue     | Time Left to Inactivity, Time Left to Expiry. |
+| `On Connect (Queue  & Skill Specific Messages)`                   | When Queue, Skill, or both match the configured combination<br>(Highest-priority mapping. Supports granular targeting. Overrides Queue-only or Skill-only settings. When multiple entries exist for the same match level, the first one applies in the UI.) | Live Chat, Messaging, Voice.  | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Queue Name, Nick Name. |
 | `Due Reminder For Agent`                   | If the agent’s response time is greater than the set percentile of overdue conversations | Live Chat, Messaging.  | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
 | `Overdue`                                  | If the agent hasn't responded for the set amount of time                         | Live Chat, Messaging.  | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
 | `Agent Inactivity`                         | If the agent hasn't responded to an overdue conversation for the set time        | Live Chat              | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
@@ -260,7 +260,7 @@ Conversation statuses apply under specific conditions for certain channels. The 
 | **Status**                       | **Applicability**                                                                                                                   | **Channel** | **Message** | **Variables**                                                              |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|----------------------------------------------------------------------------|
 | `On Connect (Default Message(s))`                        | When the agent connects                                                   | Email       | To User    | Time Left to Inactivity, <br>Time Left to Expiry.|
-| `On Connect (Queue Specific Message(s))`                          | When the agent connects                                                    | Email       | To Queue    | Time Left to Inactivity, <br>Time Left to Expiry. |
+| `On Connect (Queue  & Skill Specific Messages)`<br>(Acknowledgement Mail Mode)                          | When the Queue, Skill, or both match the configured combination<br>(Controlled through a toggle: “Send OnConnect Message Only for First Agent.” When enabled, the system sends the OnConnect message only once as an acknowledgment email. Subsequent agent assignments in the same email thread don't trigger OnConnect messages.)                                                    | Email       | To User    | Time Left to Inactivity, <br>Agent First Name, <br>Agent Last Name, <br>Agent Nick Name, <br>Queue Name, <br> Skill Name. |
 | `Overdue`                          | If the agent hasn't responded for the set amount of time (in hours and minutes).                                                    | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 | `Due Reminder for Agent Inactivity`| If the agent’s response time is under the set amount of time (in hours).                                                            | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time is moved back to Queue, once it turns overdue if the agent hasn't responded for the set amount of time (in hours and minutes). | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 | `Agent Offline`                    | If an agent gets disconnected unexpectedly, conversations will wait in queue for a set amount of time (in hours and minutes).       | Email       | To Agent    |                                                                            |
@@ -274,8 +274,8 @@ Conversation statuses apply under specific conditions for certain channels. The 
 
 For each status, you can configure the following:
 
-1. The response time after which the status should trigger: This can be set in either as a percent value of a total or as minutes and seconds.
-    1. The statuses for which you can set a percent value are: `Due Reminder For Agent`, and `Idle Reminder For Customer`.
+1. The response time after which the status triggers: Set this either as a percentage value of a total or as minutes and seconds.
+    1. The statuses for which you can set a percentage value are: `Due Reminder For Agent`, and `Idle Reminder For Customer`.
     2. The statuses that don't require percentile or response time configuration are: `On Connect`, `On Interruption`, and `On Close`.  
         <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">   
     The following applies to emails:
@@ -287,20 +287,20 @@ For each status, you can configure the following:
 
         The configurable limit for Overdue, Agent Inactivity, and Auto Expire for the Email channel is 30 days.
 
-2. The messaging goes out to either the user or the agent. Status
-Messages can be edited by clicking the Edit icon under the Message column.  
+2. The messaging goes out to either the user or the agent. Edit Status
+Messages by selecting the Edit icon under the Message column.  
     <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
 
     1. Each status lets you edit the message text, add variables and select the language.  
-        <img src="../images/on-connect.png" alt="Status Message Dialog Box" title="Status Message Dialog Box" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/onconnect-other-channels.png" alt="Status Message Dialog Box" title="Status Message Dialog Box" style="border: 1px solid gray; zoom:80%;">
 
-    2. To add a variable, place the cursor where you want to insert the variable, click the Variable field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
+    2. To add a variable, place the cursor where you want to insert the variable, select the Variable field, then select the one you need. This adds a variable placeholder in your message text, which replaces with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
     For example: `{{agentFirstName}}` becomes John.  
         <img src="../images/auto-expire-messaging.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
 
 See the tables in [Conversation Statuses by Channel (Live Chat, Messaging, and Voice)](#conversation-statuses-by-channel-live-chat-messaging-and-voice) and [Conversation Statuses by Channel (Email)](#conversation-statuses-by-channel-email) for details on available variables.
 
-Once you configure your Conversation Statuses and Messaging, click `Save` at the bottom right of the Agent Settings screen.  
+When you configure your Conversation Statuses and Messaging, select `Save`.  
 <img src="../images/save-button.png" alt="Save Conversation Status" title="Save Conversation Status" style="border: 1px solid gray; zoom:80%;">
 
 ### Allow Agent to Pause/Resume
@@ -310,12 +310,12 @@ By default, the Allow Agent to Pause/Resume feature is disabled. However, admins
 
 ### Allow Assistant Dialogs to Pause/Resume
 
-By default, the Allow Assistant to Pause/Resume feature is not available. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting Personally Identifiable Information (PII).  
+By default, the Allow Assistant to Pause/Resume feature isn't available. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting Personally Identifiable Information (PII).  
 <img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Assistant Dialogs to Pause/Resume Call Recording" title="Allow Assistant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The interactions aren't recorded in the interactions tab for the duration that the recording was stopped/paused.
+Recorded calls are available to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The system doesn't record interactions in the Interactions tab during the period when recording stops or pauses.
 
-Changes to the Call Recording Control settings are logged on the [Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
+The system logs the changes to the Call Recording Control settings on the [Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
 
 ## Transfers
 
@@ -377,14 +377,22 @@ If enabled, the conversation automatically moves to ACW mode after the timeout p
 
 ## Snooze
 
-This feature allows agents to temporarily pause conversations that are awaiting a response from the customer or require any necessary action from the agent.
+This feature lets agents to temporarily pause conversations that are awaiting a customer response or require an action from the agent.
 
-By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.  
-<img src="../images/snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
+By default, the snooze functionality unavailable. Administrators can enable it by turning on the Snooze toggle.
+
+When enabled, the following options are available:
+
+* **Make Snooze Notes Mandatory**: When enabled, agents must add snooze notes before moving a conversation to snooze.  
+
+* **Agent Logout with Snoozed Interactions**: This setting lets agents to log out even when they have snoozed interactions in their tray. Snoozed interactions remain in the agent’s personal inbox and resume when the agent logs in next. Administrators can select the applicable channels from the available options (Live Chat, Messaging, and Email).  
+
+* **Reactivation of Snoozed Interactions on User Message**: When enabled, any incoming user message reactivates the snoozed conversation and moves it to an in-progress state. When disabled, user messages received during snooze don't reactivate the conversation until the agent manually resumes it. Administrators can select the applicable channels from the available options (Live Chat, Messaging, and Email).  
+<img src="../images/snooze-default.png" alt="Snooze" title="Snooze" style="border: 1px solid gray; zoom:80%;">
 
 ## Blended Agents
 
-Administrators can turn on the toggle to enable the functionality, allowing agents to handle both voice and digital interactions concurrently, optimizing agent capacity, improving efficiency, and aligning with modern contact center best practices. By default, the blended agents functionality is disabled. For more information on the changes when blended mode is enabled see [Key Changes with Blended Mode](../agent-management/agent-management.md#key-changes-with-blended-mode).  
+Administrators can turn on the toggle to enable the functionality, allowing agents to handle both voice and digital interactions concurrently, optimizing agent capacity, improving efficiency, and aligning with modern contact center best practices. By default, the blended agents functionality unavailable. For details on blended mode changes, see [Key Changes with Blended Mode](../agent-management/agent-management.md#key-changes-with-blended-mode).  
 <img src="../images/blended-agents-toggle.png" alt="Blended Agents Toggle" title="Blended Agents Toggle" style="border: 1px solid gray; zoom:80%;">
 
 ## Additional Routing Configuration

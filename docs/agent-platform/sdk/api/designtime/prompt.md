@@ -107,22 +107,26 @@ Prompts support template variables that are resolved at runtime:
 ## Best Practices
 
 ### 1. Clear Role Definition
+
 Start with a clear role definition in the system or custom prompt.
 
 ### 2. Structured Instructions
+
 Use instructions for rules and guidelines that should stand out.
 
 ### 3. Context Injection
+
 Use template variables to inject dynamic context like memory store data.
 
 ### 4. Security Guidelines
+
 Always include security protocols in instructions for sensitive applications.
 
 ### 5. Speaking Style
+
 For voice agents, include specific instructions about tone and response format.
 
 ## Related Models
 
 - [Agent](agent.md) - Agents use prompts to define their behavior
 - [App](app.md) - Applications can have orchestrator prompts
-

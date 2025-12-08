@@ -134,6 +134,7 @@ config = LlmModelConfig(
 ```
 
 **Guidelines:**
+
 - Short answers: 500-1000
 - Detailed responses: 1000-2000
 - Long-form content: 2000-4000
@@ -353,6 +354,7 @@ instructions=[
 ### Task-Specific Settings
 
 **Factual Tasks:**
+
 ```python
 LlmModelConfig(
     temperature=0.1,  # Low for consistency
@@ -361,6 +363,7 @@ LlmModelConfig(
 ```
 
 **Creative Tasks:**
+
 ```python
 LlmModelConfig(
     temperature=1.0,  # Higher for creativity
@@ -369,6 +372,7 @@ LlmModelConfig(
 ```
 
 **Balanced:**
+
 ```python
 LlmModelConfig(
     temperature=0.7,
