@@ -18,7 +18,7 @@ The platform now supports creating Agentic Apps with a single AI Agent, making i
 
 Content Variables provide a centralized way for users to declare data used throughout the application—such as user profiles, customer IDs, and employee IDs. This data becomes automatically accessible to all components, including supervisor prompts, agent definitions, tools, events, and knowledge. It helps streamline context management during execution and eliminates the need for manual configuration.
 
-**Direct Tool Invocation in Agent Platform**
+**Direct Tool Invocation in Agent Protocol**
 
 Agent Protocol now supports direct invocation of tools (workflow, code, and MCP tools) while maintaining full access to application context, including memory and environment variables. This enhancement enables developers to execute specific tools programmatically when they know exactly what action is needed—bypassing agent reasoning for faster, more cost-effective, and deterministic execution.
 
