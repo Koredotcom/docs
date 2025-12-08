@@ -18,7 +18,7 @@ DialogGPT is now the default intent identification mode for AI for Service app c
 
 **Redesigned Navigation for DialogGPT and NLP-based App**
 
-The platform now provides tailored navigation experiences for DialogGPT and NLP-based apps. By aligning navigation with the app type, the update improves discoverability and helps users navigate the AI Agent creation process with greater clarity and efficiency. [Learn more :octicons-arrow-right-24:](../../getting-started/dialoggpt_based_navigation.md) 
+The platform now provides tailored navigation experiences for DialogGPT and NLP-based apps. By aligning navigation with the app type, the update improves discoverability and helps users navigate the AI Agent creation process with greater clarity and efficiency. [Learn more :octicons-arrow-right-24:](../../getting-started/dialoggpt-based-navigation.md) 
 
 
 **New Playground Option in Evaluation**

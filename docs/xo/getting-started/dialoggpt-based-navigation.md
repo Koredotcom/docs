@@ -1,3 +1,6 @@
+
+--8<-- "includes/automationai-dialoggpt-back-link.md"
+
 # Redesigned Navigation for DialogGPT-based App
 
 The redesigned navigation experiences for DialogGPT-based apps improve discoverability and help users navigate the AI Agent creation process with greater clarity and efficiency.
