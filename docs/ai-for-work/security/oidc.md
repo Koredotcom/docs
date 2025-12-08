@@ -103,7 +103,7 @@ To set up the application in your Google Workspace environment, you need to crea
     * Add required OAuth scopes (e.g., `https://www.googleapis.com/auth/admin.directory.user.readonly`).
     * Click **Authorize**.
 5. **Copy Configuration Details**:
-    * From the downloaded JSON key file, copy the following to AI for Work:
+    * From the downloaded JSON key file, copy the following to the platform:
         * **client_email** → **Client Email** field
         * **private_key** → **Private Key** field
     * Enter your G Suite admin email in the **Admin Email** field.
@@ -145,13 +145,13 @@ To set up the application in your Microsoft Entra ID (formerly Azure AD) environ
     * Log in to [Azure Portal](https://portal.azure.com/).
     * Navigate to **Microsoft Entra ID > App registrations**.
     * Click **New registration**.
-    * Provide an application name (e.g., "AI for Work SSO").
+    * Provide an application name.
     * Select the appropriate supported account types.
-    * Configure the redirect URI (this will be provided by AI for Work).
+    * Configure the redirect URI.
     * Click **Register**.
 2. **Configure Authentication**:
     * In the registered app, go to **Authentication**.
-    * Add the redirect URI provided by AI for Work.
+    * Add the redirect URI provided by the platform.
     * Configure token configuration settings as required.
     * Enable **ID tokens** under the Implicit grant and hybrid flows.
     * Click **Save**.
@@ -171,6 +171,6 @@ To set up the application in your Microsoft Entra ID (formerly Azure AD) environ
     * From the app overview page, note the following:
         * **Application (client) ID**
         * **Directory (tenant) ID**
-    * Copy these values along with the client secret to configure in AI for Work.
-6. **Complete Configuration in AI for Work**: Create and Register App in Microsoft Entra ID.
-7. **Save** the configuration in AI for Work.
+    * Copy these values along with the client secret to configure in the platform.
+6. **Complete Configuration**: Create and Register App in Microsoft Entra ID.
+7. **Save** the configuration.

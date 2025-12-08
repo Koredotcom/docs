@@ -22,11 +22,11 @@ Create and configure the Azure Bot that will serve as the communication bridge.
 2. Click **+ Create a resource** → Search for **Azure Bot**.
 3. Select **Azure Bot** and configure the following: 
 
-    * **Bot Handle** - Choose a unique name.
-    * **Subscription** – Select your active subscription.
-    * **Resource Group** – Create or reuse an existing group.
-    * **Pricing Tier** – Select based on expected usage.
-    * **App Type** – Select **Multi-Tenant** or **Single-Tenant** based on organizational needs.
+    * **Bot Handle**: Choose a unique name.
+    * **Subscription**: Select your active subscription.
+    * **Resource Group**: Create or reuse an existing group.
+    * **Pricing Tier**: Select based on expected usage.
+    * **App Type**: Select **Multi-Tenant** or **Single-Tenant** based on organizational needs.
 
 **Configure Bot Resource**
 

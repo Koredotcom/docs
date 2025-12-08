@@ -45,6 +45,9 @@ plugins:
       redirect_maps:
         'getting-started/quick-start-guide.md': 'getting-started/setup-guide.md'
         'user-management/managing your users.md': 'user-management/managing-your-users.md'
+        'security/sso.md': 'security/sso-overview.md'
+        'APIs/audit-log-api.md': 'audit-log/audit-log-api.md'
+        'custom-agents/default-rag.md': 'custom-agents/enterprise-knowledge.md'
 extra:
   version:
     provider: mike
