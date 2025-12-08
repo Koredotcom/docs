@@ -8,7 +8,7 @@ This document provides information on the feature updates and enhancements intro
 
 This release enhances multi-agent orchestration with Content Variables for centralized data management, a unified Orchestrator interface, and direct tool invocation via the Agent Protocol.
 
-## Multi-Agent Orchestration
+<font size="4">Multi-Agent Orchestration</font>
 
 **Unified Orchestration Management**
 
@@ -23,7 +23,7 @@ Content Variables provide a centralized way for users to declare data used throu
 Agent Protocol now supports direct invocation of tools (workflow, code, and MCP tools) while maintaining full access to application context, including memory and environment variables. This enhancement enables developers to execute specific tools programmatically when they know exactly what action is needed—bypassing agent reasoning for faster, more cost-effective, and deterministic execution.
 
 
-## AI Engineering Tools
+<font size="4">AI Engineering Tools</font>
 
 **New API Scopes for External Connections**
 
