@@ -1,7 +1,7 @@
 # Search AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
-## v11.20.0 December 6, 2025
+## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>
 

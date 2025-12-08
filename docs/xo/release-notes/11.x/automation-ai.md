@@ -3,7 +3,7 @@
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
 
-## v11.20.0 December 7, 2025
+## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>  
 
