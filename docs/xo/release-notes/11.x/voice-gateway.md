@@ -34,11 +34,11 @@ TTS streaming now uses global IVR settings for barge-in, timeouts, prompts, and 
 
 **ASR, Bot, and TTS Latency Reporting**
 
-Latency reporting now captures ASR, Bot, and TTS delays at both node and call levels. The report includes end-to-end metrics, detailed call information, and highlights unsupported scenarios with clear notifications when data is unavailable.
+Latency reporting now captures ASR, Bot, and TTS delays at both node and call levels. The report includes end-to-end metrics, detailed call information, and highlights unsupported scenarios with clear notifications when data is unavailable. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/latency-report.md)
 
 **Background Streaming and Background Gather Support**
 
-The platform now supports background streaming and background gathering to improve call performance. A persistent TTS streaming connection can be maintained from the start of a call, reducing response latency and enabling smoother interactions. Configuration is available at both application and experience-flow levels, with automatic fallback and monitoring to ensure reliable execution across supported TTS engines.
+The platform now supports background streaming and background gathering to improve call performance. The system maintains a persistent TTS streaming connection can from the start of a call, reducing response latency and enabling smoother interactions. Configuration is available at both application and experience-flow levels, with automatic fallback and monitoring to ensure reliable execution across supported TTS engines.
 
 <hr>
 
