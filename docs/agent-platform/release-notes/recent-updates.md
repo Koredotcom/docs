@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-This release enhances multi-agent orchestration with Content Variables for centralized data management, a unified Orchestrator interface, and direct tool invocation via the Agent Protocol.
+This release enhances multi-agent orchestration with a unified Orchestrator interface, direct tool invocation via Agent Protocol, and Content Variables for centralized data management.
 
 <font size="4">Multi-Agent Orchestration</font>
 
