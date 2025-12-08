@@ -23,7 +23,7 @@ The platform now provides tailored navigation experiences for DialogGPT and NLP-
 
 **New Playground Option in Evaluation**
 
-A new Playground section in the Evaluation menu combines Debug Logs and Talk to AI Agent in a side-by-side view for DialogGPT apps, providing an integrated testing and debugging experience with synchronized session control and status management. [Learn more :octicons-arrow-right-24:](../../automation/testing/playground.md) 
+A new Playground section in the Evaluation menu, purpose-built for developers,  combines Debug Logs and Talk to Bot in a side-by-side view, providing an integrated testing and debugging experience with synchronized session control and status management. [Learn more :octicons-arrow-right-24:](../../automation/testing/playground.md) 
 
 **Embedding Model Deprecation and Automatic Upgrade**
 
