@@ -28,28 +28,11 @@ To retrieve the raw data for all conversations in a detailed view. The days’ r
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/v2/interactiondetails?offset=0&limit=100' \
---header 'authority: {{host}}' \
+curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/v2/callDetails?offset=0&limit=100' \
 --header 'accept: application/json, text/plain, /' \
---header 'accept-langu{{accountId}}' \
---header 'app-language: en' \
---header 'bot-language: en' \
 --header 'content-type: application/json;charset=UTF-8' \
---header 'cookie: _gcl_au=1.11502438879.1669621549; hubspotutk=ef24820cc39323476019ea81d073bc01; __hssrc=1; _hjSessionUser_1992177=eyJpZCI6ImYxYWQ2MxxxxxUxODItNWJjMy05ZGI1LWU1ZjE2ZmViYTE5YiIsImNyZWFxxxxxOjE2Njk2MjE1NDk1NDgsImV4aXN0aW5nIjp0cnVlfQ==; _gid=GA1.21902634580.1670327197; _ga_JW3PWR1JKY=GS1.11670395526.14.01670395526.0.0.0; __hstc=59894770.ef24820cc39323476019ea81d073bc01.1669621552766.1670332174995.1670395535267.15; _ga=GA1.2.174434293.166962xxxx; mp_7888bdd5fedfd65f44bb9a3100fa9e80_mixpanel=%7B%22distinct_id%22%3A%20%22184ebc88e771b7-0efa78ccfb655e-26021151-e1000-184ebc88e788d3%22%2C%22%24device_id%22%3A%20%22184ebc88e771b7-0efa78ccfb655e-26021151-e1000-184ebc88e788d3%2xxxx' \
---header 'referer: https://{{host}}/smartassist/config/queues' \
---header 'sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"' \
---header 'sec-ch-ua-mobile: ?0' \
---header 'sec-ch-ua-platform: "Windows"' \
---header 'sec-fetch-dest: empty' \
---header 'sec-fetch-mode: cors' \
---header 'sec-fetch-site: same-origin' \
---header 'smartassist: true' \
---header 'state: configured' \
---header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36' \
---header 'x-request-id: a7c1651c-1b6b-4fe2-b095-8fa41ebfxxxx' \
---header 'x-timezone: Asia/Calcutta' \
---header 'x-timezone-offset: -330' \
---header 'auth: <token> \
+--header 'auth: <token>' \
+--header 'iId: st-22af7012-341f-54b8-af49-afdcd6c12381' \
 --data '{
 "startDate":"2025-09-30",
 "endDate":"2025-09-30",
