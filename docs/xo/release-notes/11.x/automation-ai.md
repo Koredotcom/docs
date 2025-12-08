@@ -25,6 +25,9 @@ The platform now provides tailored navigation experiences for DialogGPT and NLP-
 
 A new Playground section in the Evaluation menu combines Debug Logs and Talk to AI Agent in a side-by-side view for DialogGPT apps, providing an integrated testing and debugging experience with synchronized session control and status management.
 
+**Embedding Model Deprecation and Automatic Upgrade**
+
+The legacy embedding models (MPNet, LaBSE, E5, and BGE-M3 V1) are deprecated to improve system performance. Any application that uses one of these models will be automatically upgraded to BGE-M3 V2.
 
 <hr>
 
