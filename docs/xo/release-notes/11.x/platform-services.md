@@ -19,7 +19,7 @@ The Prompt Library now offers enhanced search, sorting, and multi-select filteri
 
 **Enhanced Session Management for Email Channel**
 
-The Email Channel now supports more accurate session handling through two new app-level configurations. These improvements prevent unintended session merging, keep issues separate, and provide a clearer experience across automation and agent workflows.
+The Email Channel now supports more accurate session handling through two new app-level configurations. These improvements prevent unintended session merging, preserve context, and provide a clearer experience across automation and agent workflows.
 
 
 * Channel-Based Sessions: Creates a new session based on the "To" email address. Emails sent to different support addresses always start new sessions, keeping unrelated issues separate.
@@ -33,9 +33,9 @@ The Email Channel now supports more accurate session handling through two new ap
 
 
 
-**Localization Support for Dialog Components**
+**Unified Interface for Locale-specific Responses**
 
-A new ‘Locale-specific Responses’ section in Languages Management provides a consolidated view of all language-dependent components, streamlining multilingual app development. Developers can now update prompts and messages for all enabled languages from this single interface. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#localization-configurations)
+A new ‘Locale-specific Responses’ section in Languages Management provides a consolidated view of all language-dependent components - Dialog Components, Standard Responses, Content Variables, and Small Talk, streamlining multilingual app development. Developers can now update prompts and messages for all enabled languages from this single interface. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#localization-configurations)
 
 
 <hr>

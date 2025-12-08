@@ -1,5 +1,5 @@
 
---8<-- "includes/automationai-dialoggpt-back-link.md"
+[:octicons-arrow-left-24: Back to DialogGPT ](../generative-ai-tools/dialog-gpt.md)
 
 # Redesigned Navigation for DialogGPT-based App
 

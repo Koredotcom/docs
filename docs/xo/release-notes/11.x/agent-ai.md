@@ -16,10 +16,6 @@ The Raw Data API now displays Custom tab details in addition to Assist tab detai
 
 The Hooks API now maintains accurate agent context—interaction ID, agent identity, and session continuity—during internal call transfers (cold and warm) across all supported third-party desktops, and no valid agent data appears under ‘Anonymous Agent’. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/hooks-api-for-internal-transfers.md)
 
-**Agent Coaching and Playbooks Data Persistence**
-
-Agent AI now saves the progress of playbook execution, allowing agents to reload or transfer calls without losing their position or completed steps. The system tracks detailed adherence data for enhanced analytics on agent performance and playbook effectiveness while maintaining workflow continuity.
-
 <font size="4">Integration Enhancements</font>
 
 **Salesforce Omni-Channel Integration Supports Email Interactions**

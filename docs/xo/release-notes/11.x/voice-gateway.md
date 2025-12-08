@@ -24,7 +24,7 @@ The platform now lets callers to provide DTMF input when an agent transfers a ca
 
 **CSAT Survey Enhancements for Inbound and Outbound Voice Calls**
 
-The Voice Gateway now delivers consistent CSAT survey behavior across all inbound and outbound call scenarios, honoring the last agent’s survey settings and callback rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#csat-survey-for-inbound-and-outbound-calls)
+The Voice Gateway now delivers consistent CSAT survey behavior across all inbound and outbound call scenarios, honoring the last agent’s survey settings and callback rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#supported-scenarios-for-csat-in-voice-channels)
 
 <font size="4">ASR and TTS</font>
 
@@ -35,6 +35,12 @@ TTS streaming now uses global IVR settings for barge-in, timeouts, prompts, and 
 **ASR, Bot, and TTS Latency Reporting (Beta)**
 
 Latency reporting now captures ASR, Bot, and TTS delays at both node and call levels. The report includes end-to-end metrics, detailed call information, and highlights unsupported scenarios with clear notifications when data is unavailable. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/latency-report.md)
+
+<font size="4">API</font>
+
+**Outbound Dialing API - v2**
+
+The updated API now sends Answering Machine Detection (AMD) configurations during call creation instead of after call connection. This lets AMD to start earlier, improving detection speed and reducing overall latency.
 
 <hr>
 
