@@ -495,7 +495,7 @@ Example:
 * Campaign 2 triggers when the user visits Page 2 and meets the PVC rule.  
 * The system suppresses Campaign 1 when the user navigates to Page 1 because Campaign 2’s template is active.  
 * Campaign 3 triggers when the user closes Campaign 2’s template before 30 seconds because both PVC ≥ 1 and TS = 30 seconds meets the PVC rule. 
-* Campaign 1 does not trigger again when the user closes Campaign 3’s template and remains on Page 1 because the system suppresses it during the same page visit.  
+* Campaign 1 doesn't trigger again when the user closes Campaign 3’s template and remains on Page 1 because the system suppresses it during the same page visit.  
 * Campaign 1 triggers when the user navigates to Page 2 and then back to Page 1 because the URL matches again and the suppression condition clears.  
 
 !!! note 
@@ -506,4 +506,4 @@ Example:
 
 The Proactive Web Campaign plugin extends the Web SDK, enabling dynamic, rule-based interactions with website visitors. With this plugin, you can define campaigns that trigger actions like displaying messages or starting chats based on visitor behavior.
 
-For installation instructions, configuration options, and examples, refer to the README file in the [GitHub repository](https://github.com/Koredotcom/web-kore-sdk/blob/v3/11.9.1/docs/plugins/proactive-web-campaign/README.md){:target="_blank"}.
+For installation instructions, configuration options, and examples, refer to the README file in the [GitHub repository](https://github.com/Koredotcom/web-kore-sdk/blob/v3/11.20.0/docs/plugins/proactive-web-campaign/README.md){:target="_blank"}.

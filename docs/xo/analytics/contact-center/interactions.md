@@ -271,13 +271,10 @@ A confirmation message appears, and creates the filter.
 
 #### SmartStatus
 
-SmartStatus automatically updates an agent’s status based on real-time actions and system events. It reduces the need for manual status changes, improves the accuracy of agent availability, and ensures supervisors always see each agent's current state.
+SmartStatus is a fine-grained, business-relevant version of the conversation status. 
 
-SmartStatus detects events such as call handling, messaging activity, inactivity, or disconnections, and updates the agent’s status accordingly. Administrators can configure rules that define how the system transitions statuses in response to specific triggers. Agents and supervisors can change statuses manually when required; SmartStatus resumes automatic updates after the manual override ends.
-
+SmartStatus detects events such as call handling, messaging activity, inactivity, or disconnections and updates the conversation’s status accordingly.  
 <img src="../images/smart-status.png" alt="Smart Status" title="Smart Status" style="border: 1px solid gray; zoom:70%;">
-
-The feature maintains consistency across all channels and updates presence information instantly in supervisor views. This improves routing decisions, reduces reporting errors, and provides accurate visibility into workforce activity.
 
 #### Filter for Custom Tags [Beta]
 

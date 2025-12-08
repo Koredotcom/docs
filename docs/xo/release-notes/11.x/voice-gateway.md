@@ -32,7 +32,7 @@ The Voice Gateway now delivers consistent CSAT survey behavior across all inboun
 
 TTS streaming now uses global IVR settings for barge-in, timeouts, prompts, and speech parameters. The update ensures consistent behavior across configuration levels.
 
-**ASR, Bot, and TTS Latency Reporting**
+**ASR, Bot, and TTS Latency Reporting (Beta)**
 
 Latency reporting now captures ASR, Bot, and TTS delays at both node and call levels. The report includes end-to-end metrics, detailed call information, and highlights unsupported scenarios with clear notifications when data is unavailable. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/latency-report.md)
 

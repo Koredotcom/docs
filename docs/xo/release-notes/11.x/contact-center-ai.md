@@ -48,13 +48,15 @@ Phone numbers and email addresses can now be configured at the queue level to gi
 
 **Improved Asynchronous Error Handling in Connect to API Node**
 
-The Connect to API node now supports handling client (4xx) and server (5xx) errors or failure responses in Asynchronous mode. A new ‘Handle API Failure Responses’ option lets flows detect these errors immediately and route execution to the configured onFailure path, preventing hung sessions. [Learn more :octicons-arrow-right-24:](../../flows/node-types/connect-to-api.md#general-settings)
+The Connect to API node now supports handling client (4xx) and server (5xx) errors or failure responses in Asynchronous mode. A new ‘Handle API Failure Responses’ option lets flows detect these errors immediately and route execution to the configured onFailure path, preventing hung sessions. 
+
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/connect-to-api.md#general-settings)
 
 <font size="4">Campaigns</font>
 
 **Campaign Suppression Behavior**
 
-Supressing for a visitor due to cooldowns, ongoing chats, or another active campaign template, it becomes eligible again once the suppression reason no longer applies. This ensures all campaigns are reconsidered when conditions permit. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#campaign-suppression-and-re-evaluation)
+The system now reevaluates suppressed campaigns as soon as the suppression condition expires. Campaigns become eligible again when cooldowns end, active chats close, or conflicting campaign templates no longer apply. Because this is an event-driven process, the system reconsiders a suppressed campaign for display only when a new event triggers evaluation. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#campaign-suppression-and-re-evaluation)
 
 **Global and Campaign-Specific DNCs Now Mandatory**
 
@@ -100,7 +102,7 @@ The dashboard now includes key email fields—Subject, From, To, CC, and BCC—w
 
 **Interactions Dashboard - SmartStatus Filter**
 
-The dashboard now supports filtering by SmartStatus, allowing users to refine conversations using the enhanced status categories. The Details tab displays both the original Status and the new SmartStatus, and search and export actions honor the applied filters. Additional non-default fields, including customer details, queue wait time, and SmartStatus, are available through Manage Columns. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#smartstatus)
+The dashboard now supports filtering by SmartStatus, a new, fine-grained, business-relevant version of the conversation status. The Details tab displays both the original Status and the new SmartStatus for the conversations. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#smartstatus)
 
 <hr>
 

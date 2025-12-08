@@ -59,7 +59,7 @@ The Debug window lets you explore the following:
 
 ### NL Analysis
 
-NL Analysis tab shows the task name analysis and recognition scores of each user utterance.  It presents a detailed tone analysis, intent detection, and entity detection performed by the NLP engine. As a part of intent detection, the NL Analysis tab shows the outcomes of Machine Learning, Fundamental Meaning, and Knowledge Graph engines. For a detailed discussion on the scores, see [Training Your Assistant ](testing-your-bot-with-nlp.md){:target="_blank"}topic.
+NL Analysis tab shows the task name analysis and recognition scores of each user utterance. It presents a detailed tone analysis, intent detection, and entity detection performed by the NLP engine. As a part of intent detection, the NL Analysis tab shows the outcomes of Machine Learning, Fundamental Meaning, and Knowledge Graph engines. For a detailed discussion on the scores, see [Training Your Assistant ](testing-your-bot-with-nlp.md){:target="_blank"}topic.
 
 <img src="../images/talk-to-bot-img9.png" alt="End of the dialog flow" title="End of the dialog flow" style="border: 1px solid gray; zoom:80%;"/>
 

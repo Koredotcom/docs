@@ -350,8 +350,8 @@ Steps to Mark as Global:
 
 !!! note 
  
-    * The platform creates a default Global DNC list when an account is created or when Campaigns is enabled. The list contains no phone numbers and is named Default Global DNC.
-    * A DNC list can only be marked as Global. After it is marked, it cannot be unmarked unless another DNC list is marked as Global. When this happens, the previous Global list is automatically unmarked.
+    * The platform creates a default Global DNC list when Campaigns is enabled. The list contains no phone numbers and is named Default Global DNC.
+    * A DNC list can only be marked as Global. After it is marked, it cannot be unmarked until another DNC list is marked as Global. When this happens, the previous Global list is automatically unmarked.
     * A DNC list is mandatory during Voice Campaign creation through both the UI and the API.
 
 ## Handling of DNCs-Global and Non-Global
