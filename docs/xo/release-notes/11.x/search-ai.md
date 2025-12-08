@@ -33,7 +33,7 @@ Search AI enhances the Custom Connector configuration by introducing a new per-h
 
 <font size="4">Deprecation and Automatic Migration Notice</font>
 
-To improve platform performance and stability, Search AI is automatically upgrading legacy embedding models, legacy re-ranker models, and the legacy web crawler. Starting December 6, 2025, the following components will be automatically upgraded in applications where they're in use:
+To improve platform performance and stability, Search AI is automatically upgrading legacy embedding models, legacy re-ranker models, and the legacy web crawler. Starting December 7, 2025, the following components will be automatically upgraded in applications where they're in use:
 
 * Embedding Models: MPNet, LaBSE, E5, and BGE-M3 V1 are upgraded to BGE-M3 V2. Users must trigger training to apply the changes to their index.
 * Re-rankers: MS MARCO Cross Encoder and Mixbread Large are upgraded to BGE Re-ranker. This change applies automatically with no user action required.

@@ -23,11 +23,11 @@ The platform now provides tailored navigation experiences for DialogGPT and NLP-
 
 **New Playground Option in Evaluation**
 
-A new Playground section in the Evaluation menu, purpose-built for developers,  combines Debug Logs and Talk to Bot in a side-by-side view, providing an integrated testing and debugging experience with synchronized session control and status management. [Learn more :octicons-arrow-right-24:](../../automation/testing/playground.md) 
+A new Playground section in the Evaluation menu, purpose-built for developers, combines Debug Logs and Talk to Bot in a side-by-side view, providing an integrated testing and debugging experience with synchronized session control and status management. [Learn more :octicons-arrow-right-24:](../../automation/testing/playground.md) 
 
 **Embedding Model Deprecation and Automatic Upgrade**
 
-The legacy embedding models (MPNet, LaBSE, E5, and BGE-M3 V1) are deprecated to improve system performance. Any application that uses one of these models will be automatically upgraded to BGE-M3 V2.
+The legacy embedding models (MPNet, LaBSE, E5, and BGE-M3 V1) are deprecated to improve system performance. Any application that uses one of these models will be automatically upgraded to use BGE-M3 V2. [Learn more :octicons-arrow-right-24:](searchai-deprecations.md)
 
 <hr>
 
