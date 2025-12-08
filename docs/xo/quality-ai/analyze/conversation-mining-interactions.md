@@ -11,7 +11,7 @@ Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interacti
 
     * Interactions may take a few seconds to appear after a call ends. 
 
-    * If any section of the Agent Interactions dashboard elements displays an "NA" status, it indicates that the corresponding data is not yet available on the Audit Allocations page.
+    * If any section of the Agent Interactions dashboard elements shows **NA** status, the data for that section is not available on the Audit Allocations page.
 
     * Intents, Topics, Keywords, and Emotions in Conversation Mining are always shown in the assigned default language, even if the conversation is in a different language. 
 
@@ -344,7 +344,7 @@ This feature allows you to search, filter, and review conversations using specif
 
 ### View Saved Filters
 
-* Click the newly set default view filter or any Unsaved Filter dropdown to view all the newly created Saved Filters.  
+* Select the set default view filter or any Unsaved Filter dropdown to view all created Saved Filters.  
 
 * All the Unsaved Filters and their associated Saved Filters are displayed.  
  <img src="../conversation-mining/images/conversation-interaction-saved-filters.png" alt="Clear" title="Clear" style="border: 1px solid gray; zoom:50%;"> 
@@ -371,7 +371,7 @@ This feature allows you to search, filter, and review conversations using specif
 
 #### Saved Filters Customization Options
 
-Once filters are saved, the following customization options are available:  
+When filters are saved, the following customization options are available:  
 
 * **Copy**
 
