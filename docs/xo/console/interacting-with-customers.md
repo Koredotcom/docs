@@ -7,21 +7,21 @@
 Agents can respond to customers by typing their messages in the text editor.  
 <img src="../images/compose-bar-blank.png" alt="Blank Text Editor" title="Blank Text Editor" style="border: 1px solid gray; zoom:80%;">
 
-Agents can type their responses in the text editor and send the message by clicking the **Send** button on the bottom right corner. Pressing the **Tab** button on your keyboard shifts the focus to the Send button. You can also press **Tab + Enter** to send a message.  
+Agents can type their responses in the text editor and send the message by selecting **Send**. Pressing **Tab** on your keyboard shifts the focus to the Send icon. You can also press **Tab + Enter** to send a message.  
 <img src="../images/send-response.png" alt="Send Response" title="Send Response" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
-    You can still press **Enter** to send messages. Pressing (ctrl+enter / shift+enter) on Windows and (ctrl+return / shift+return) on Mac creates a new line.
+    You can press **Enter** to send messages. Pressing (ctrl+enter or shift+enter) on Windows and (ctrl+return or shift+return) on Mac creates a new line.
 
 Agents can send a standard response to the customer from a pre-configured library. Press **/** in the text editor to display the standard response templates window.  
 <img src="../images/standard-response-prompt.png" alt="Standard Response Library" title="Standard Response Library" style="border: 1px solid gray; zoom:80%;">
 
 Pressing **Escape** after typing “**/**” closes the standard response window.
 
-**When translation is enabled**: Responses appear in the agent’s selected target language in both the text editor shortcut command and the response widget.
+**Translation enabled**: Responses appear in the agent’s selected target language in both the text editor shortcut command and the response widget.
 
-**When translation is disabled**: Responses appear in the conversation language, as set through [Agent Utils at the time of agent transfer](../flows/node-types/utils.md#set-live-chat-agent-transfer), ensuring they are not limited to the application language.
+**Translation disabled**: Responses appear in the conversation language, as set through [Agent Utils at the time of agent transfer](../flows/node-types/utils.md#set-live-chat-agent-transfer), ensuring they're not limited to the application language.
 
 ### AI-enhanced Compose Text Box
 
@@ -30,12 +30,12 @@ There are three choices available:
 <img src="../images/ai-options-compose-bar.png" alt="AI Enhanced Options" title="AI Enhanced Options" style="border: 1px solid gray; zoom:80%;">
 
 1. **Make more friendly**: This option rephrases the draft response to make it more friendly and informal.
-For example, the formal draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, 1 pm” is rephrased as “Great news! We’ve scheduled your mortgage appointment for Jun 24, 2023, at 1 pm.”
-2. **Make more formal**: This option rephrases the draft response to make it more formal. For example, the draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, at 1 pm” is transformed into a more formal response, “We would like to inform you that your mortgage appointment has been scheduled for Jun 24, 2023, at 1:00 pm.”
-3. **Expand**: This option expands the draft response. For example, the draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, at 1 pm” is elaborated as “We would like to notify you that your mortgage appointment has been successfully scheduled for June 24, 2023. Please arrive promptly at 1:00 pm for your appointment.”
-4. **Rephrase**: This option allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
+This option rephrases the draft response to make it more friendly and informal. For example, it rephrases the formal draft response “Your mortgage appointment is scheduled for Jun 24, 2023, 1 PM” to “Great news! We’ve scheduled your mortgage appointment for Jun 24, 2023, at 1 PM.”
+2. **Make more formal**: This option expands the draft response. For example, it expands the draft response “Your mortgage appointment is scheduled for Jun 24, 2023, at 1 PM” to “We would like to notify you that we've successfully scheduled your mortgage appointment for June 24, 2023. Be available at 1:00 PM for your appointment.”
+3. **Expand**: This option expands the draft response. For example, it elaborates the draft response “Your mortgage appointment is scheduled for Jun 24, 2023, at 1 PM” to “We would like to notify you that your mortgage appointment has been successfully scheduled for June 24, 2023. Be available at 1:00 PM for your appointment.”
+4. **Rephrase**: This option lets agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
 
-    This feature can be enabled from [Generative AI Tools > GenAI Features > Agent Response Rephrasing](../generative-ai-tools/genai-features.md).
+    To enable this, go to [Generative AI Tools > GenAI Features > Agent Response Rephrasing](../generative-ai-tools/genai-features.md).
 
 ### Add/Delete Hyperlinks in the Text Editor
 
@@ -43,7 +43,7 @@ Agents can add/delete hyperlinks in the text editor while responding to the mess
 
 Steps to add/remove hyperlinks:
 
-1. Highlight the text that you want to hyperlink and click the **Add Link** icon.  
+1. Highlight the text that you want to hyperlink and select the **Add Link** icon.  
 <img src="../images/highlight.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:80%;">
 
 2. In the **Add Link** dialog box, do the following:
@@ -57,7 +57,7 @@ Steps to add/remove hyperlinks:
 
             The highlighted text appears in the Text to display field.
 
-3. Click **Ok**. The selected text is hyperlinked.  
+3. Select **Ok** to hyperlink the selected text.  
 <img src="../images/hyperlinked.png" alt="Hyperlinked Text" title="Hyperlinked Text" style="border: 1px solid gray; zoom:80%;">
 
 4. Hover over the hyperlinked text to view the following options:
@@ -69,12 +69,12 @@ Steps to add/remove hyperlinks:
 
 ## Viewing New Messages in the Console
 
-When agents are reviewing earlier parts of a conversation, and a new message arrives while you are scrolled up, a New Message button appears at the bottom of the conversation thread. The button also displays the number of unread messages. To view the latest message, click the New Message button. The most recent message is displayed.  
+When agents are reviewing earlier parts of a conversation, and a new message arrives while you are at the top of the live interaction pane, a New Message icon appears at the bottom of the conversation thread. The icon also displays the number of unread messages. To view the latest message, select the New Message icon. The most recent message appears.  
 <img src="../images/new-message.png" alt="Auto Scroll" title="Auto Scroll" style="border: 1px solid gray; zoom:70%;">
 
 ## Resend Message When Network Disconnects
 
-The following table lists scenarios with expected results in case of a network failure while an agent attempts to send a response.
+The following table lists scenarios with expected results if a network fails while an agent attempts to send a response.
 
 | **SCENARIO**                             | **RESULT**                                                                                                                      |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -589,30 +589,36 @@ Steps to manually redact PII data:
 
 ## Snooze
 
-Waiting for customer responses or time spent on information retrieval can result in prolonged conversations and negatively impact agents’ performance metrics like Average Handle Time (AHT). Snooze allows agents to pause the conversation timer and resume it when the agent responds while freeing up slots for additional conversations.
+Waiting for customer responses or time spent on information retrieval can result in prolonged conversations and negatively impact agents’ performance metrics like Average Handle Time (AHT). Snooze lets agents to pause the conversation timer and resume it when the agent responds while freeing up slots for additional conversations.
 
 Administrators can configure the snooze functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#snooze).
 
 Steps to snooze a conversation:
 
-1. Click the **Snooze** button at the top of the live interaction window.  
+1. Select the **Snooze** button at the top of the live interaction window.  
     <img src="../images/snooze-button.png" alt="Snooze Button" title="Snooze Button" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         The snooze function is not available if the conversation is overdue or a reply is due from the agent.
 
-2. On the **Snooze Conversation Until** pop-up window, select the snooze duration from the available options or select a custom snooze duration.  
-<img src="../images/snooze-duration.png" alt="Snooze Duration" title="Snooze Duration" style="border: 1px solid gray; zoom:80%;">
+2. On the **Snooze Conversation Until** pop-up window, select the snooze duration from the available options or select a custom snooze duration. To select a custom snooze duration, turn on the Custom Snooze toggle and configure the required duration. Agents can choose Today, Tomorrow, or Day After as quick snooze options, or define a custom Date and Time. You can set the maximum snooze date up to 30 days in advance.  
+    <img src="../images/custom-snooze-without-note.png" alt="Snooze without note" title="Snooze without note" style="border: 1px solid gray; zoom:70%;">  
+
+    If Administrators turn on Make Snooze Notes Mandatory in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#snooze), the Reason for Snoozing dialog box appears. Enter the message to display.  
+    <img src="../images/reason-for-snoozing.png" alt="Reason for snooze" title="Reason for snooze" style="border: 1px solid gray; zoom:70%;">  
 
 3. To select a custom snooze duration, turn on the **Custom Snooze** toggle, configure your required snooze duration, and set the snooze duration.  
-<img src="../images/snooze-conversation-till.png" alt="Snooze Conversation Till" title="Snooze Conversation Till" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/snooze-conversation-till.png" alt="Snooze Conversation Till" title="Snooze Conversation Till" style="border: 1px solid gray; zoom:70%;">
 
-4. Click **Apply**. The snooze duration is set, a message appears on the live interaction pane at the top, and an intimation is sent on the live interaction to the agent.  
-<img src="../images/unsnooze-button.png" alt="Unsnooze Button" title="Unsnooze Button" style="border: 1px solid gray; zoom:80%;">
+4. Select **Apply**. The system sets the snooze duration, displays a message at the top of the live interaction pane, and sends an intimation to the agent in the live interaction.
 
-    Hovering over a snoozed conversation in the conversation tray shows the duration for which the conversation is snoozed. It also displays the count of snoozed conversations.  
-        <img src="../images/snooze-hover.png" alt="Snooze Hover" title="Snooze Hover" style="border: 1px solid gray; zoom:80%;">
+    Hovering over a snoozed conversation in the conversation tray displays the snooze duration and the total count of snoozed conversations.  
+        <img src="../images/snooze-hover.png" alt="Snooze Hover" title="Snooze Hover" style="border: 1px solid gray; zoom:70%;">  
+
+!!! note
+
+    Administrators can control how snoozed interactions behave. When Agent Logout with Snoozed Interactions is enabled, agents can log out while snoozed interactions remain in their personal inbox and resume at the next login. When Reactivation of Snoozed Interactions on User Message is enabled, new user messages automatically reactivate snoozed conversations. When disabled, the agent must resume them manually. Both options support Live Chat, Messaging, and Email.
 
 ## Emails
 
@@ -687,38 +693,48 @@ If [Inline Email ID Suggestions](../contactcenter/configurations/settings/email-
 
 * Configure whether agents can modify distribution lists.
 
-**Standard Responses**:
-You can choose from a library of configured standard responses.
+**Standard Responses** (Text editor): Agents can choose from a library of configured standard responses.
 
 1. Select the **Standard Response** icon at the bottom of the email text editor. The count of response templates in each category appears.  
-<img src="../images/standard-response.png" alt="Standard Response Icon" title="Standard Response Icon" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/standard-response.png" alt="Standard Response Icon" title="Standard Response Icon" style="border: 1px solid gray; zoom:60%;">
 
 2. Select the category to view the standard response templates in that category.  
-<img src="../images/standard-response-library.png" alt="Standard Response Templates" title="Standard Response Templates" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/standard-response-library.png" alt="Standard Response Templates" title="Standard Response Templates" style="border: 1px solid gray; zoom:60%;">
 
 3. Select the Standard Response from the list to use that response in the email.  
-<img src="../images/standard-response-filled.png" alt="Send Standard Response" title="Send Standard Response" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/standard-response-filled.png" alt="Send Standard Response" title="Send Standard Response" style="border: 1px solid gray; zoom:60%;">
 
-    **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a **View More** option appears. Attachments received in emails are stored in the Amazon S3 bucket. 
+4. Select **Send**, and then confirm the action in the pop-up window.
 
-    Select the **Attachment** icon to select and upload files.  
-        <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:70%;">
+**Standard Responses** (Widget): Agents can choose a standard response from the Responses widget as follows:
 
-    **Notes**: You can add notes on the interaction (customer feedback, key points, next action, suggestions). This section includes any previous notes added by agents while interacting with the same customer.
+1. Copy and Send options appear when you add a Standard Response.  
+    <img src="../images/copy-response.png" alt="Copy Standard Response" title="Copy Standard Response" style="border: 1px solid gray; zoom:60%;">
 
-    To add a new note:
+2. Select **Send**, and then confirm the action in the pop-up window.
 
-    1. Select **Notes**.  
-        <img src="../images/notes-icon.png" alt="Notes Icon" title="Notes Icon" style="border: 1px solid gray; zoom:80%;">
+    Administrators can enable this feature in the [Email settings](../contactcenter/configurations/settings/email-settings.md).
 
-    2. Select **+ Add New Note**.  
-        <img src="../images/add-new-note.png" alt="Add New Note Button" title="Add New Note Button" style="border: 1px solid gray; zoom:80%;">
+**Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a **View More** option appears. The system stores attachments received in emails in the Amazon S3 bucket. 
 
-    3. Type the message and select **Save**. A confirmation message appears  
-        <img src="../images/notes-created-confirmation.png" alt="Note Added Confirmation" title="Note Added Confirmation" style="border: 1px solid gray; zoom:80%;">
+Select the **Attachment** icon to select and upload files.  
+    <img src="../images/attachments-compose-bar.png" alt="Attachment Icon" title="Attachment Icon" style="border: 1px solid gray; zoom:70%;">
 
-    4. **Drafts**: If you select the **Close** option on the email editor and there’s content inside, the mail is preserved as a draft. Drafts are accessible at the bottom of the console.  
-        <img src="../images/draft.png" alt="Drafts" title="Drafts" style="border: 1px solid gray; zoom:80%;">
+**Notes**: You can add notes on the interaction (customer feedback, key points, next action, suggestions). This section includes any previous notes added by agents while interacting with the same customer.
+
+To add a new note:
+
+1. Select **Notes**.  
+    <img src="../images/notes-icon.png" alt="Notes Icon" title="Notes Icon" style="border: 1px solid gray; zoom:80%;">
+
+2. Select **+ Add New Note**.  
+    <img src="../images/add-new-note.png" alt="Add New Note Button" title="Add New Note Button" style="border: 1px solid gray; zoom:80%;">
+
+3. Type the message and select **Save**. A confirmation message appears  
+    <img src="../images/notes-created-confirmation.png" alt="Note Added Confirmation" title="Note Added Confirmation" style="border: 1px solid gray; zoom:80%;">
+
+4. **Drafts**: If you select the **Close** option on the email editor and there’s content inside, the mail is preserved as a draft. Drafts are accessible at the bottom of the console.  
+    <img src="../images/draft.png" alt="Drafts" title="Drafts" style="border: 1px solid gray; zoom:80%;">
 
 ### Outbound Email
 
@@ -947,22 +963,20 @@ If ACW is disabled the conversation disappears from the agent console at the end
 
 A Disposition Code is a short label assigned to the outcome of an interaction. [Learn more](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-codes).
 
-Dispositions can be assigned in two ways:
+There are two ways to assign a disposition:
 
 1. During the conversation (Dynamic):
-    1. Click **+ Add Disposition**.  
+    1. Select **+ Add Disposition**.  
         <img src="../images/add-disposition.png" alt="+ Add Disposition" title="+ Add Disposition" style="border: 1px solid gray; zoom:80%;">
 
-    2. Select a disposition from the dropdown menu and click **Save**.  
-        <img src="../images/save-disposition.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:80%;">
+    2. Select a disposition from the dropdown menu and select **Save**.
 
-    3. The disposition is added. You can either **Transfer** or **End** the conversation.  
+    3. The system assigns the disposition. You can either **Transfer** or **End** the conversation.  
         <img src="../images/disposition-added.png" alt="Disposition Added" title="Disposition Added" style="border: 1px solid gray; zoom:80%;">
 
-    4. When you click **End**, a confirmation message is displayed. Click **Yes** to confirm.  
-        <img src="../images/end-interaction.png" alt="End Interaction" title="End Interaction" style="border: 1px solid gray; zoom:80%;">
+    4. When you select **End**, a confirmation message appears. Select **Yes** to confirm.
 
-    5. The **Disposition & Notes** window will appear, and you can make any necessary changes. Click **Close**, and the conversation will close with the disposition attached.  
+    5. The **Disposition & Notes** window appears, and you can make any necessary changes. Select **Close**, and the conversation closes with the disposition attached.  
         <img src="../images/disposition-and-notes.png" alt="Disposition and Notes" title="Disposition and Notes" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -973,12 +987,12 @@ Dispositions can be assigned in two ways:
 
     * Select the **Conversation** in your tray.
     * You must select a **Status** from the following available options:
-        * **Resolved**: Select when the customer query is resolved.
+        * **Resolved**: Select after resolution of customer query.
         * **Abandoned**: Select if the customer has abandoned the conversation and is no longer responding.
-        * **Pending**: Select if the query is still pending resolution.
+        * **Pending**: Select if the query is pending resolution.
         * **Custom**: Administrators can [create custom disposition codes](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
     * Optionally, type a **Description** of your reason for selecting the disposition.
-    * Click **_Close_** to close the conversation.
+    * Select **Close** to close the conversation.
 
 #### Intelligent Disposition Code Suggestions
 
@@ -986,14 +1000,41 @@ When enabled, agents receive intelligent disposition code suggestions automatica
 
 Steps to receive intelligent disposition code suggestions:
 
-1. Click **End** to close the conversation.  
-    <img src="../images/end.png" alt="End Button" title="End Button" style="border: 1px solid gray; zoom:70%;">
+1. Select **End** to close the conversation.
 
 2. The **Disposition & Notes** window opens with suggested disposition codes.  
     <img src="../images/disposition-window.png" alt="Disposition & Notes" title="Disposition & Notes" style="border: 1px solid gray; zoom:70%;">
 
-3. Agents can select a disposition code to accept it, or choose multiple disposition codes if needed, and then click **Close**.  
-    <img src="../images/select-and-close.png" alt="Close Button" title="Close Button" style="border: 1px solid gray; zoom:70%;">
+3. Agents can select a disposition code to accept it, or choose multiple disposition codes if needed, and then select **Close**.  
+    <img src="../images/select-and-close.png" alt="Close" title="Close" style="border: 1px solid gray; zoom:70%;">
+
+#### Disposition Handling for Campaigns
+
+* The system processes only the active disposition at the end of the conversation.  
+* If the disposition includes a callback, the system posts the scheduled date, time, timezone, and callback type.  
+* The system supports both system-initiated and agent-initiated callback types.  
+
+Do Not Call (DNC) handling
+
+* For Do Not Call - This Campaign, the system inserts the contact phone number and a 3-month validity period into the campaign-level DNC list.
+* For Do Not Call - Ever, the system adds the contact's phone number and a 3-month validity period to the Global DNC list.
+* If a required DNC list isn't configured, the system displays a warning and permits to Continue or Cancel.
+
+    * If the user selects Continue, the system saves the campaign.  
+    * At runtime, the system skips saving to the missing DNC list.  
+
+Call-back and call-list handling
+
+* For Call-Me-Later, the system inserts the contact’s phone number. The agent must configure the scheduled date and time.  
+    <img src="../images/follow-up-disposition.png" alt="Disposition Details" title="Disposition Details" style="border: 1px solid gray; zoom:70%;">
+    
+    The system schedules a callback.  
+    <img src="../images/follow-up-scheduled.png" alt=Scheduled" title="Scheduled" style="border: 1px solid gray; zoom:70%;">
+
+Additional rules
+
+* Editing dispositions after the conversation ends doesn't change handling.  
+* The system logs errors when payloads are invalid or when required lists are missing.  
 
 ### Translate Conversations in Real Time
 
@@ -1001,13 +1042,13 @@ Agents can translate conversations in real time on the live interaction pane. Ad
 
 Steps to translate real-time conversations:
 
-1. Click the **Translate** button at the top right corner of the live interaction pane.  
+1. Select **Translate** on the live interaction pane.  
     <img src="../images/translate-option.png" alt="Translate Button" title="Translate Button" style="border: 1px solid gray; zoom:70%;">
 
-2. Select the language from the dropdown. Click **Mark as Default** to make it the default language for translation.  
+2. Select the language from the dropdown. Select **Mark as Default** to make it the default language for translation.  
     <img src="../images/select-language-dropdown.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:70%;">
 
-3. The conversation is translated into the selected language.  
+3. The conversation translates into the selected language.  
     <img src="../images/translated-conversation.png" alt="Translated Conversation" title="Translated Conversation" style="border: 1px solid gray; zoom:70%;">  
     <img src="../images/summary.png" alt="Summary" title="Summary" style="border: 1px solid gray; zoom:70%;">
 
@@ -1016,7 +1057,7 @@ Steps to translate real-time conversations:
 You can interact with customers within the **Live Interaction** area of the Agent Console.  
 <img src="../images/information-during-live-interaction.png" alt="Information Provided to Agents during Live Interactions" title="Information Provided to Agents during Live Interactions" style="border: 1px solid gray; zoom:80%;">
 
-The **Live Interaction** area provides access to features and information that can be used during live conversations, as follows:
+The **Live Interaction** area provides access to features and information used during live conversations, as follows:
 
 ## Arrival Summary
 
@@ -1050,7 +1091,7 @@ When the agent types a response during a chat conversation with a customer, the 
 Do the following to enable the typing indicator for chat conversations:
 
 1. To integrate bots chat capability into custom applications, install WebSDK 3.0 on your server. WebSDK 3.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1) for additional information on installing WebSDK 3.0.
-2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 3.0. The Agent Desktop plugin allows the user to interact with the human agent through the AI Agent and supports the following features:
+2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 3.0. The Agent Desktop plugin lets the user to interact with the human agent through the AI Agent and supports the following features:
 
     * Audio Calling
     * Video Calling
@@ -1146,43 +1187,73 @@ If an agent tries to log out during an ongoing conversation, Contact Center AI p
 If an agent logs out suddenly (the browser is closed or the system crashes, for example), then the counter for Agent inactivity starts and after the threshold, any active conversations are assigned back to the Queue.  
 <img src="../images/logout-restricted.png" alt="Logout Restricted" title="Logout Restricted" style="border: 1px solid gray; zoom:50%;">
 
-### Behavior When an Agent Does Not Accept/Send a Response Within a Specified Time
+### Behavior When an Agent Doesn't Accept or Send a Response Within a Specified Time
 
-If an agent does not accept/send a response within a specified time, the system automatically changes the status to **Away (Idle)**.
-This status is not available for selection by an agent.  
+If an agent doesn't accept or send a response within a specified time, the system automatically changes the status to **Away (Idle)**.
+This status isn't available for selection by an agent.  
 <img src="../images/away-idle.png" alt="Away (Idle)" title="Away (Idle)" style="border: 1px solid gray; zoom:80%;">
 
 ### Behavior When No Agents are Available
 
-If no agents are logged in, conversations will wait in the queue till the maximum wait time specified for the queue.
-After the queue max timeout occurs, the "[no agents available](../contactcenter/flows-and-routing/conditional-flows.md#no-agents-available-flow)" flow is triggered. This is enabled at the account level for new accounts and applies to all channels.
+The system keeps conversations in the queue until they reach the queue’s maximum wait time when there are no logged in agents.
+After the queue’s maximum wait time expires, the system triggers the [No Agents Available](../contactcenter/flows-and-routing/conditional-flows.md#no-agents-available-flow)" flow. The system enables this behavior at the account level for new accounts, and it applies to all channels.
 For existing accounts, the existing routing logic is applicable. For accounts wanting to modify their routing logic, contact Support.
 
 ## CSAT Survey
 
 The CSAT (Customer Satisfaction) survey is essential for contact centers because it provides valuable feedback on customer satisfaction levels, enabling continuous improvement of service quality.
 
-CSAT surveys can be triggered based on the scenarios configured by administrators/supervisors while [Creating a Survey](../contactcenter/configurations/surveys/configure-surveys.md#create-a-survey):
+CSAT surveys trigger based on the scenarios configured by administrators/supervisors while [Creating a Survey](../contactcenter/configurations/surveys/configure-surveys.md#create-a-survey):
 
-* **Show to Everyone**: If the “Show to Everyone” scenario is configured while creating the survey, the survey is triggered automatically for every interaction that concludes between an agent and a customer on digital or voice channels.
-* **Show to Every nth User**: If the “Show to nth User” scenario is configured while creating the survey, the survey is triggered automatically for the nth interaction that concludes between an agent and a customer on digital or voice channels. For example: If the frequency is set to 2, then the survey is triggered for every second customer.
-* **Agents can trigger**: If the “Agents can trigger” scenario is configured while creating the survey, the survey can be triggered by agents at any point during the interaction as follows:
-    * Click the **Send Survey** button on the right corner above the text editor. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.  
-    <img src="../images/csat-button.png" alt="CSAT Button" title="CSAT Button" style="border: 1px solid gray; zoom:70%;">
+* **Show to Everyone**: When administrators configure this scenario, the system automatically triggers a survey for every completed interaction between an agent and a customer on digital or voice channels.
+* **Show to Every nth User**: When administrators configure this scenario, the system automatically triggers a survey for every completed nth interaction between an agent and a customer on digital or voice channels. For example: If the set frequency is 2, then the system triggers the survey for every second customer.
+* **Agents can trigger**: When administrators configure this scenario, agents can trigger a survey at any point during the interaction:
+    * Select **Send Survey** on the right corner. Th s highlights the send survey and a survey icon appears on the **End** icon in the live interaction pane.  
+    <img src="../images/csat-button.png" alt="CSAT" title="CSAT" style="border: 1px solid gray; zoom:70%;">
 
-    * The survey is triggered to the customer when the agent clicks the End button with the survey selected.
+    * The system triggers the survey to the customer when the agent selects End with the survey selected.
 
-For the above scenarios where the agent actively participates in interactions and the interactions end, the feedback from surveys contributes to their CSAT scores.
+    * When you select Auto Trigger Survey, the system keeps the option disabled by default. Agents must explicitly disable it to trigger surveys automatically, and they can turn it off when needed.
 
-CSAT surveys can also be triggered in scenarios when there are no active participants:
+For scenarios where the agent actively participates in interactions and the interactions end, the feedback from surveys contributes to their CSAT scores.
+
+The system also triggers CSAT surveys in scenarios when there are no active participants:
 
 * Outside hours of operation
 * No Agents Available flow
 * Agent/Customer side terminations or system terminations due to user inactivity
 * Sub-flows (No agents flow/Out of hours flow)
 
-For these scenarios, the CSAT scores are assigned to the interaction.
+For these scenarios, the system assigns the CSAT scores to the interaction.
 
-!!! Note
+### Supported scenarios for CSAT in voice channels
 
-    CSAT surveys for voice channels apply only to inbound calls where customers contact agents. Support for callbacks and other call types is planned for future releases.
+| **Scenario** | **Description** |
+|---------|-------------|
+| Inbound and outbound calls | The system triggers CSAT at the end of any standard inbound or outbound voice interaction. |
+| Inbound or outbound calls + internal agent transfer | When agents transfer a call internally, the system presents the CSAT survey after the final agent interaction. |
+| Inbound or outbound calls + callback triggered by agent | If an agent initiates a callback and the interaction completes, the system triggers a CSAT survey afterward. |
+| Inbound or outbound calls + internal agent consult involved | When an agent consults another internal agent, the system presents the CSAT survey after the interaction ends. |
+| Inbound or outbound calls + conference (more than two internal agents or supervisor) | When the call involves conferences with multiple internal agents or supervisors, the system applies CSAT once the interaction concludes. |
+| Inbound call + courtesy callback | When the system triggers a courtesy callback, it presents the CSAT survey at the end of the callback interaction. |
+
+!!! note 
+ 
+    CSAT surveys do not apply to inbound or outbound calls when the customer interacts with external agents or when an external consult occurs during the call. Only interactions handled fully within the internal agent ecosystem qualify for CSAT.
+
+### Viewing CSAT scores submitted by users
+
+When callers complete CSAT surveys, the system automatically captures and stores their feedback and scores for review.
+
+How to view CSAT scores
+
+1. Navigate to the [Interactions Dashboard](../analytics/contact-center/interactions.md).
+
+2. Open the interaction for which you want to view CSAT details.
+
+3. Select the Details tab to view all interaction information.
+
+4. If the caller completed a CSAT survey, the CSAT Score field appears in the Details tab, as shown in the example.  
+    <img src="../images/insights-to-logs-csat.png" alt="CSAT Score" title="CSAT Score" style="border: 1px solid gray; zoom:70%;">
+
+This view enables supervisors and administrators to assess caller satisfaction and evaluate agent performance.

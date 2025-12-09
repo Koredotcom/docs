@@ -18,6 +18,20 @@ You can use the Kore.ai Email domain or create your custom Email Domain to confi
 To configure the email domains, go to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.  
 <img src="../images/email-digital-page.png" alt="Email Icon" title="Email Icon" style="border: 1px solid gray; zoom:80%;">
 
+To manage the channel session settings, click settings (gear icon) on the Email channel page.  
+<img src="../images/email-settings.png" alt="Email Settings" title="Email Settings" style="border: 1px solid gray; zoom:80%;">
+
+
+
+## Session Creation Settings
+
+
+**Channel-Based Sessions**: When enabled, the platform creates a new session for each unique "To" email address. Emails sent to the same address continue the existing session, while emails sent to different addresses automatically start new sessions. This keeps issues organized and separate.
+
+**Thread-Based Sessions**: When enabled, the platform creates sessions based on email thread reference headers. Replies within the same thread continue the existing session, while new threads always start fresh sessions. This option is only available when Channel-Based Sessions is enabled.  <img src="../images/email-session-settings.png" alt="Email Settings" title="Email Settings" style="border: 1px solid gray; zoom:80%;">
+
+
+
 ## Kore.ai Email Domain
 
 Contact centers need to enable forwarding to the email address configured in the Contact Center AI system. This ensures that any email received by the contact center from its end customer is automatically forwarded to the Kore domain. The Kore domain is linked to the experience flow, allowing seamless integration and management of customer inquiries.
@@ -33,7 +47,7 @@ Whenever the customer responds to the email thread, it is directed back to the c
 
 Steps to create an email address in the Kore domain:
 
-1. Click the **+ New Email Address** button.  
+1. Click the **+ New Email Address**.  
     <img src="../images/new-kore-email.png" alt="+ New Email Address" title="+ New Email Address" style="border: 1px solid gray; zoom:80%;">
 
 2. Enter the following details.
@@ -126,7 +140,7 @@ Follow these steps to set up a standard custom domain and add an email ID to it.
     9. Click **Preview** to see a preview of the Email template.  
         <img src="../images/custom-template-preview.png" alt="Template Preview" title="Template Preview" style="border: 1px solid gray; zoom:80%;">
 
-3. Click the **Test Connection** button to verify the domain ownership. A success message is displayed below the button upon successful completion.  
+3. Click the **Test Connection** to verify the domain ownership. A success message is displayed.  
     <img src="../images/test-connection.png" alt="Test Connection" title="Test Connection" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Save**.

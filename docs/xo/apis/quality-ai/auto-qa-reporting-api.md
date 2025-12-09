@@ -16,8 +16,8 @@ This API provides reporting interaction level Auto QA scoring and qualification 
 
 | PARAMETER  | DESCRIPTION                                                                                  | TYPE            |
 |------------|----------------------------------------------------------------------------------------------|-----------------|
-| host       | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/)          | string, required|
-| accountId  | The Account Id. For example, `665ae2f3cc61d7d2cf75xxxx`                                       | string, required|
+| host       | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/)          | `string`, required|
+| accountId  | The Account Id. For example, `665ae2f3cc61d7d2cf75xxxx`                                       | `string`, required|
 
 ## Sample Request
 
@@ -32,16 +32,17 @@ curl --location 'https://<host_url>/agentassist/api/v1/public/qualitymanagement/
 "endDate": "2024-06-26 13:36:35",
 "limit": 70
 }'
+
 ```
 
 ## Body Parameters
 
 | PARAMETER | DESCRIPTION                                                                                                             | TYPE            |
 |-----------|-------------------------------------------------------------------------------------------------------------------------|-----------------|
-| offset    | The number of responses the documents need to Skip. The default value is 0. For example, 10.                            | Integer, optional|
-| limit     | The number of conversation records to be displayed in the response. The default value is 100. For example, 70.          | Integer, optional|
+| offset    | The number of responses the documents need to Skip. The default value is 0. For example, 10.                            | `integer`, optional|
+| limit     | The number of conversation records to be displayed in the response. The default value is 100. For example, 70.          | `integer`, optional|
 | startDate | The start date from which the records need to be considered. The date format with UTC based time:      `YYYY-MM-DDTHH24:MM:SS.NNNZ`.  For Example, `2024-07-18T11:33:12.724Z`.      | string, required |
-| endtDate  | The end date from which the records need to be considered. The date format with UTC based time:  `YYYY-MM-DDTHH24:MM:SS.NNNZ`. For Example, `2024-07-18T11:33:12.904Z`.      | string, required |
+| endDate  | The end date from which the records need to be considered. The date format with UTC based time:  `YYYY-MM-DDTHH24:MM:SS.NNNZ`. For Example, `2024-07-18T11:33:12.904Z`.      | string, required |
 | channel   | Option to filter interactions by channel.                                                                                | array, optional  |
 | queues    | Options to filter interactions by queue.                                                                                 | array, optional  |
 
@@ -52,7 +53,7 @@ curl --location 'https://<host_url>/agentassist/api/v1/public/qualitymanagement/
     "results": [
         {
             "conversationId": "{{conversationId}}",
-            "koreEvalutionScore": 75,
+            "koreEvaluationScore": 75,
             "Queues": [
                 {
                     "Queue ID": "{{queueId}}",
@@ -110,7 +111,7 @@ curl --location 'https://<host_url>/agentassist/api/v1/public/qualitymanagement/
         },
         {
             "conversationId": "{{conversationId}}",
-            "koreEvalutionScore": 80,
+            "koreEvaluationScore": 80,
             "Queues": [
                 {
                     "Queue ID": "{{queueId}} ",
@@ -166,7 +167,7 @@ curl --location 'https://<host_url>/agentassist/api/v1/public/qualitymanagement/
         },
         {
             "conversationId": "{{conversationId}}",
-            "koreEvalutionScore": 30,
+            "koreEvaluationScore": 30,
             "Queues": [
                 {
                     "Queue ID": "{{queueId}}",
@@ -209,15 +210,15 @@ curl --location 'https://<host_url>/agentassist/api/v1/public/qualitymanagement/
 
 | PARAMETER           | DESCRIPTION                                                                                           | TYPE    |
 |---------------------|-----------------------------------------------------------------------------------------------------|---------|
-| conversationId      | The conversation id of the record.                                                                   | string  |
-| koreEvalutionScore  | The score returned by NLP for that conversation.                                                     | string  |
-| queues              | Queue details for the conversation.                                                                  | string  |
-| Queue ID            | Queue id of the conversation.                                                                         | string  |
-| Queue Name          | Queue name of the conversation.                                                                       | string  |
-| agents              | Array of agents who have participated in the conversation.                                           | string  |
-| Agent ID            | Agent ID of the conversation.                                                                         | string  |
-| Agent Name          | List of agents names who have participated in the conversation.                                      | string  |
-| metric              | An array of evaluation metrics with which scores are calculated.                                     | array   |
-| Metric ID           | Unique identifier for the metric.                                                                     | string  |
-| Metric Weight       | A numerical value indicating how much influence or impact that metric has in an overall evaluation or scoring system. | integer |
-| Qualification       | Qualification status (YES or NO)                                                                      | boolean |
+| conversationId      | The conversation id of the record.                                                                   | `string`  |
+| koreEvaluationScore  | The score returned by NLP for that conversation.                                                     | `string`  |
+| queues              | Queue details for the conversation.                                                                  | `string`  |
+| Queue ID            | Queue id of the conversation.                                                                         | `string`  |
+| Queue Name          | Queue name of the conversation.                                                                       | `string`  |
+| agents              | Array of agents who have participated in the conversation.                                           | `string`  |
+| Agent ID            | Agent ID of the conversation.                                                                         | `string`  |
+| Agent Name          | List of agents names who have participated in the conversation.                                      | `string`  |
+| metric              | An array of evaluation metrics with which scores are calculated.                                     | `array`   |
+| Metric ID           | Unique identifier for the metric.                                                                     | `string`  |
+| Metric Weight       | A numerical value indicating how much influence or impact that metric has in an overall evaluation or scoring system. | `integer` |
+| Qualification       | Qualification status (YES or NO)                                                                      | `boolean` |

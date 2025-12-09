@@ -270,6 +270,16 @@ curl --location 'https://platform.kore.ai///agentassist/api/v1/hooks/st-XXXX-XXX
    <td>Type of participant. Example: <code>agent</code>.
    </td>
   </tr>
+  <tr>
+   <td><code>participant.customFields</code>
+   </td>
+   <td>Object
+   </td>
+   <td>No
+   </td>
+   <td>Required only if you are using the Quality Module of Kore with Agent AI to perform post-call analysis.
+   </td>
+  </tr>
 </table>
 
 ## Types of Transfers
@@ -543,5 +553,12 @@ Key Takeaways
 
 ## Sample Response
 
-if the request is successful, you get a ```success response (200 OK).
+* If the request is successful, you get a `success response (200 OK).` 
+* If the botId is incorrect, you get the following response (400 Bad Request):  
+
+```
+{
+   "code":400,
+   "message":"Linked bot details could not be found. Please verify that the botId provided in the request body is correct."
+}
 ```

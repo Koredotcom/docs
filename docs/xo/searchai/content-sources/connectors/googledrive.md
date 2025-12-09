@@ -105,7 +105,7 @@ Next, define conditions to choose the content from the selected location. To def
 
 You can define conditions based on the following parameters or add your parameters too. Refer to [this](https://developers.google.com/drive/api/guides/ref-search-terms) for more information on the query parameters and the values that the parameters can take. 
 
-* **Folder Id** - Ingest data specifically from one or more folders. Provide the folder IDs as value. To find the folder ID, navigate to your folder in Google Drive, the unique ID that comes after “folder/” in the URL is the folder ID. For example, if the URL is `https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4nXXXXAXQ7mfUH11g`, then the Folder ID is `1dyUEebJaFnWa3Z4nXXXXAXQ7mfUH11g.`
+* **Folder Id** - Ingest data specifically from one or more folders. Provide the folder IDs as value. To find the folder ID, navigate to your folder in Google Drive, the unique ID that comes after “folder/” in the URL is the folder ID. For example, if the URL is `https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4nXXXXAXQ7mfUH11g`, then the Folder ID is `1dyUEebJaFnWa3Z4nXXXXAXQ7mfUH11g`.
 
 * **Mime Type** - Ingest a specific type of data. For example, use ‘application/pdf’ to ingest only pdf files from the drive. Supported MIME types include:
     * application/msword

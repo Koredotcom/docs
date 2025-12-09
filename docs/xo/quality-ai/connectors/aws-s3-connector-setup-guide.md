@@ -3,16 +3,16 @@
 
 ## Overview
 
-The AWS S3 Connector allows you to ingest conversation recordings and chatscripts/transcripts from a configured S3 folder periodically with a customizable schedule into Quality AI Express, allowing you to use the tool with third-party Contact Center as a Service (CCaaS) solutions.
+The AWS S3 Connector allows you to ingest conversation recordings and chatscripts/transcripts from a configured S3 folder into Quality AI Express on a periodic schedule, enabling you to use the tool with 3rd-party Contact Center as a Service (CCaaS) solutions.
 
-### What You Will Need
+### What You Require
 
 * S3 bucket with read permissions.
 * CSV metadata files with conversation details
 * Audio files (WAV/MP3) or chat transcripts (JSON).
 * Quality AI Express platform access.
 
-### 5-Minute Setup
+### Five Minute Setup
 
 1. **Enable Quality AI Express** in platform settings.
 2. **Upload test.csv** to your S3 folder with sample data.
@@ -168,7 +168,7 @@ Single mixed mono files significantly reduce transcription accuracy without prop
 
 ### Data Flow Architecture
 
-<img src="../images/architecture.png" alt="architecture" title="architecture" style="border: 1px solid gray; zoom:60%;">
+<img src="../configure/connectors/images/architecture.png" alt="architecture" title="architecture" style="border: 1px solid gray; zoom:60%;">
 
 ## Setup Process
 
@@ -182,11 +182,31 @@ Your AWS environment must have:
 
 * **Authentication**: Access keys or an IAM role with read permissions.
 
+    * Access Keys: IAM user with programmatic access (Access Key ID + Secret Access Key). 
+
+    * IAM Role: IAM role with assumed role and list bucket permissions (Role ARN).
+
 * **Network Access**: HTTPS URLs for all audio files.
 
-**Required IAM Permissions**
+#### Authentication Setup in AWS
 
-json
+**Option A: Access Keys (Quick Setup)**
+
+1. Create an IAM user in the AWS Console.
+2. Attach policy with S3 read permissions.
+3. Generate Access Key and Secret Key.
+4. Save credentials securely.
+
+**Option B: IAM Role (Recommended)**
+
+
+1. Create an IAM role in the AWS Console.
+2. Configure a trust relationship for your application/account.
+3. Attach S3 read permissions policy.
+4. Copy Role ARN (format: `arn:aws:iam::123456789012:role/RoleName`).
+
+#### Required IAM Permissions
+
 ```
 {
     "Version": "2012-10-17",
@@ -200,6 +220,21 @@ json
             ]
         }
     ]
+}
+```
+
+**For IAM Role**: The role must also have a trust relationship allowing your application to assume it:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Principal": {
+            "AWS": "arn:aws:iam::YOUR-APPLICATION-ACCOUNT-ID:root"
+        },
+        "Action": "sts:AssumeRole"
+    }]
 }
 ```
 
@@ -685,7 +720,7 @@ json
 
 !!! note
 
-    This format is for organizations that have already transcribed their voice recordings and need to import the text for analysis without re-processing the audio.
+    Chat scripts include real-time messaging interactions across platforms, such as web chat, WhatsApp, and Facebook Messenger.
 
 
 ### JSON Transcript Schema
@@ -944,11 +979,11 @@ json
 
 #### Option 1: Unified Path Structure
 
-<img src="../images/unified-path-structure.png" alt="unified path" title="unified path" style="border: 1px solid gray; zoom:60%;">
+<img src="../configure/connectors/images/unified-path-structure.png" alt="unified path" title="unified path" style="border: 1px solid gray; zoom:60%;">
 
 #### Option 2: Separate Paths
 
-<img src="../images/separate-path-structure.png" alt="separate path" title="separate path" style="border: 1px solid gray; zoom:60%;">
+<img src="../configure/connectors/images/separate-path-structure.png" alt="separate path" title="separate path" style="border: 1px solid gray; zoom:60%;">
 
 ### Validation Checkpoint (Data Preparation)
 
@@ -1011,6 +1046,8 @@ json
 
 2. Expected results:
 
+    * **IAM Role Assumption**: Role assumed successfully
+
     * **Authentication**: Connected successfully.
 
     * **File Path Access**: S3 bucket accessible.
@@ -1019,13 +1056,13 @@ json
 
     * **Metadata Validation**: Required fields confirmed.
 
-    **If any checks fail**:
+    If any checks fail:
 
     * **Authentication**: Verify credentials and IAM permissions.
 
     * **File Access**: Check bucket name, region, and folder paths, and ensure file URLs are accessible.
 
-    * **Format/Metadata**: Ensure the `test.csv` exists with proper structure, and the column headers and timestamps should match the specified formats. 
+    * **Format/Metadata**: Ensure the `test.csv` file exists with the proper structure, and that the column headers and timestamps match the specified formats. 
 
 ### Step 3: Queue Mapping & Scheduling
 
@@ -1084,9 +1121,11 @@ json
 
 <li>Verify access key/secret key accuracy</li>
 
-<li>Check IAM role ARN format</li>
+<li>Check IAM role ARN format or copied correctly</li>
 
 <li>Ensure credentials have not expired</li>
+
+<li>Verify the role exists in the correct AWS account</li>
 </ul>
    </td>
   </tr>
