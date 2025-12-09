@@ -57,7 +57,7 @@ To log in using 2FA on the **Admin Console** as an admin, follow the steps below
 3. Enter the OTP received on your registered email address in the following screen.  
 <img src="../images/two-factor-authentication-for-platform-access-img9.png" alt="BAC Login - enter OTP" title="BAC Login - OTP" style="border: 1px solid gray;zoom:70%;"/>
 
-4. Once you enter the correct OTP and the verification is successful, the following verification success message appears.  
+4. After you enter the correct OTP and the verification is successful, the following verification success message appears.  
 <img src="../images/two-factor-authentication-for-platform-access-img10.png" alt="BAC Login - Verification successful" title="BAC Login - Verification successful" style="border: 1px solid gray;zoom:70%;"/>
 
 The system redirects to the user dashboard after an OTP successful verification.
@@ -86,7 +86,7 @@ To log in using 2FA on the **App Builder Platform** as an end-user, follow the s
     
         Click the button **Resend Code** to regenerate the email OTP verification code if you haven’t received it.
 
-5. Once the OTP is successfully verified, a success message appears, and the system redirects to your dashboard.  
+5. After the OTP is successfully verified, a success message appears, and the system redirects to your dashboard.  
 <img src="../images/two-factor-authentication-for-platform-access-img14.png" alt="Bot Builder Login - verification success" title="Bot Builder Login - verification success" style="border: 1px solid gray;zoom:70%;"/>
 
 
@@ -103,7 +103,7 @@ The Platform introduces the **_Switch to Different Account_** option on the acco
 
 When you click this option, the system redirects to the account selection page where you can select the same/different account from the list to login.
 
-<img src="../images/two-factor-authentication-for-platform-access-img16.png" alt="Account selection page" title="Accoutn selection page" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/two-factor-authentication-for-platform-access-img16.png" alt="Account selection page" title="Account selection page" style="border: 1px solid gray;zoom:70%;"/>
 
 
 **Important Considerations**

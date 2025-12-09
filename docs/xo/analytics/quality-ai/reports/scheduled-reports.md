@@ -39,8 +39,11 @@ On the **Reports** page, you can view all your reports organized by type.
 | **Last Run** | Shows the most recently executed or generated timestamp of the report. |
 | **Next Run** | Shows the scheduled run timestamp for the next automatic run of the report if scheduling is enabled. If scheduling is turned off, it shows **Schedule Disabled**. |
 | **Schedule Toggle** | Shows the toggle switch to enable or disable automation directly from the list. <br><br>**Off (gray)**: Scheduled execution is disabled. <br>**On (blue)**: Scheduled execution is enabled. |
-| **Actions** | - **Play/Run** (<img src="../images/run-icon.png" alt="Run icon" width="18">): Enables you to run or generate the report immediately. <br> - **Edit** (<img src="../images/edit-icon.png" alt="Run icon" width="18">): Enables you to edit the report settings to modify its details (parameters). <br> - **Menu Option** (<img src="../images/ellipsis-icon.png" alt="Run icon" width="18">): Click the vertical ellipsis menu button to view and execute more options, such as view history, clone, favorite/unfavorite, switch to public/private, and delete. |                                  
+| **Actions** | - **Play/Run** (<img src="../images/run-icon.png" alt="Run icon" width="18">): Enables you to run or generate the report immediately. <br> - **Edit** (<img src="../images/edit-icon.png" alt="Run icon" width="18">): Enables you to edit the report settings to modify its details (parameters). <br> - **Menu Option** (<img src="../images/ellipsis-icon.png" alt="Run icon" width="18">): Click the vertical ellipsis menu button to view and execute more options, such as view history, clone, favorite/unfavorite, switch to public/private, and delete.   
+|    
+
 <img src="../images/reports-list-column.png" alt="Reports List Column" title="Reports List Column" style="border: 1px solid gray; zoom:60%;">
+                              
 
 ### Bulk Actions (Search and Filter)
 
@@ -55,7 +58,7 @@ To run the bulk reports,
 1. Select multiple reports using checkboxes. 
 
 1. The **Bulk Run** action menu appears on the top-left of the Reports page.  
-<img src="../images/bulk-actions.png" alt="Bulk Reports" title="Bulk Reports" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/bulk-actions.png" alt="Bulk Reports" title="Bulk Reports" style="border: 1px solid gray; zoom:100%;">
 
 1. Click **Bulk Run** or **Delete** to execute the action (to run or remove all selected reports). A confirmation message appears once you trigger the action. 
 
@@ -63,15 +66,15 @@ To run the bulk reports,
 
         Deleting multiple reports requires confirmation.
 
-# Report Configuration Process
+## Report Configuration Process
 
 With Quality AI, you can create, filter, and schedule reports for automated or on-demand delivery with customizable formats, bulk actions, and secure, role-based access.
 
-## Report Generation Example
+### Report Generation Example
 
 This section provides a visual walkthrough of the report generation process using a sample report. The same process applies to all three report types.
 
-## Creating New Report
+### Creating New Report
 
 Steps to create a new report,
 
@@ -80,14 +83,10 @@ Steps to create a new report,
 1. Click **+ New Report**.   
 <img src="../images/new-report-selection.png" alt="New Report" title="New Report" style="border: 1px solid gray; zoom:60%;">
 
-1. A new report page appears, displaying a list of available report types to create a new report.
+1. A new report page opens, showing the available report types. Choose any one of the preconfigured report options to create a new report.
 
-## Report Type Selection
-
-When generating a new report, you can choose from three preconfigured report types:
-
-1. Select **Agent Performance Report** (or any other report type).  
-<img src="../images/create-new-report-category.png" alt="Reports" title="Reports" style="border: 1px solid gray; zoom:60%;">
+1. Select **Agent Performance Report**.  
+<img src="../images/report-types.png" alt="Report Types" title="Report Types" style="border: 1px solid gray; zoom:60%;">
 
 1. Click **Next** to proceed.
 
@@ -120,7 +119,7 @@ Defines the parameters specific to each report type, including data sources, fil
 
     * You can select multiple scorecards for comparative analysis.
 
-    * Only interactions evaluated with selected forms or scorecards are included. 
+    * Only interactions evaluated with selected forms or scorecards are included.   
     <img src="../images/agent-config.png" alt="Sample Agent Performance Configuration Report" title="Sample Agent Performance Configuration Report" style="border: 1px solid gray; zoom:60%;">    
 
         !!! Note

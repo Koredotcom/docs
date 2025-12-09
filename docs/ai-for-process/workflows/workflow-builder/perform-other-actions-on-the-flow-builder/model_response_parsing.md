@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to AI node](../types-of-nodes/text-to-text-node.md)
+
 # Structured Response Parsing and Context Sharing in Workflows
 
 When given a defined schema, the model produces structured data suitable for reuse across workflow steps. The system automatically parses the response and stores key values in a shared context object, eliminating the need for manual handling and reducing redundancy. This method enables different nodes to "communicate" by accessing shared data—ideal for workflows that involve both text and image handling.

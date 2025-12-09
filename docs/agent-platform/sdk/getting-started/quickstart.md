@@ -9,6 +9,7 @@ This guide walks you through the full lifecycle from development to deployment w
 ## Prerequisites
 
 Complete the [Installation](installation.md) steps first:
+
 - ✅ Cloned the workspace repository
 - ✅ Ran `.setup.sh` to create `.venv` and install dependencies
 - ✅ Configured platform access and API key
@@ -249,6 +250,7 @@ This creates:
 - `bin/banking-app/application.config.json` - Configuration file
 
 Verify archive size:
+
 ```bash
 ls -lh bin/banking-app/application.kar
 # Should be under 1MB

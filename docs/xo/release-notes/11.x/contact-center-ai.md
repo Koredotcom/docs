@@ -836,8 +836,6 @@ Key benefits
     * Leverage external AI models for more flexible and accurate conversation summaries.
     * Ensure consistent summarization across multiple languages and use cases.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-based-conversation-summary.md)
-
 **Enable/Disable Conversations to Wait Till Queue Timeout**
 
 This configurable setting allows supervisors and admins to enable or disable the waitTillQTimeout property. This enhancement provides better control over how long conversations wait in the queue before transitioning to the no-agent-available flow.
@@ -1066,7 +1064,7 @@ Contact Center supervisors can enable real-time streaming of LLM responses to si
 Key updates:
 
 * Real-time streaming of rephrased responses.
-* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md)
+* Bot delay response behavior controls.
 * Role-based access controls (Full Access for Admins/Supervisors). [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 <font size="4">Campaigns</font>
@@ -1906,7 +1904,7 @@ Administrators and Supervisors with access to Dashboard > Interactions can now v
 Automatic refresh for filters applied in the Monitor tabs at fixed intervals is implemented to ensure real-time data accuracy.
 
 * Filtered data on Monitor tabs is updated at the specified interval, reflecting real-time changes.
-* New interactions are not immediately added to filtered results but appear after the 5-second update interval. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#auto-refresh-when-filters-are-applied)
+* New interactions are not immediately added to filtered results but appear after the 5-second update interval.
 
 <font size="4">Voice Gateway</font>
 

@@ -26,9 +26,9 @@ The evaluation form includes chosen metrics with customizable weights totaling 1
 
         You can assign only one evaluation form per queue in the **Chat** and **Voice** channels. 
 
-## Accessing Evaluation Forms
+## Access Evaluation Forms
 
-Access the Evaluation Forms by navigating to **Quality AI** > **Configure** > **Evaluation Forms**.    
+Navigate to **Quality AI** > **CONFIGURE** > **Evaluation Forms**.    
 <img src="../evaluation-criteria/evaluation-forms/images/evaluation-forms.png" alt="Evaluation Forms Tab" title="Evaluation Forms Tab" style="border: 1px solid gray; zoom:80%;">
 
 ## Creating and Configuring Evaluation Forms

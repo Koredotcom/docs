@@ -24,6 +24,7 @@ theme:
     - content.code.annotation
     - content.code.copy
     - header.autohide
+    - announce.dismiss 
   language: en
   palette:
     - scheme: default
@@ -53,6 +54,21 @@ plugins:
         'generative-ai-tools/dgpt-upcoming-features.md': 'generative-ai-tools/dialog-gpt.md'
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
         'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
+        'agentai/integration/AgentAI-webSDK/internal-transfer-process.md': 'agentai/integration/websdk/internal-transfer-process.md'
+        'agentai/integration/AgentAI-webSDK/error-codes.md': 'agentai/integration/websdk/error-codes.md'
+        'agentai/integration/AgentAI-webSDK/customize-your-sdk.md': 'agentai/integration/websdk/customize-your-sdk.md'
+        'agentai/integration/AgentAI-webSDK/introduction.md': 'agentai/integration/websdk/introduction.md'
+        'agentai/integration/AgentAI-webSDK/sdk-fields-and-details.md': 'agentai/integration/websdk/sdk-fields-and-details.md'
+        'agentai/integration/AgentAI-webSDK/view-customized-events.md': 'agentai/integration/websdk/view-customized-events.md'
+        'agentai/integration/AgentAI-webSDK/mybot-tabs.md': 'agentai/integration/websdk/mybot-tabs.md'
+        'agentai/integration/AgentAI-webSDK/dialog.md': 'agentai/integration/websdk/dialog.md'
+        'agentai/integration/AgentAI-webSDK/transcript-events.md': 'agentai/integration/websdk/transcript-events.md'
+        'agentai/integration/AgentAI-webSDK/searchtab-events.md': 'agentai/integration/websdk/searchtab-events.md'
+        'agentai/integration/AgentAI-webSDK/coaching-events.md': 'agentai/integration/websdk/coaching-events.md'
+        'agentai/integration/AgentAI-webSDK/sdk-Playbooks.md': 'agentai/integration/websdk/sdk-Playbooks.md'
+        'agentai/integration/AgentAI-webSDK/sentiment-charts.md': 'agentai/integration/websdk/sentiment-charts.md'
+        'agentai/integration/AgentAI-webSDK/other-events.md': 'agentai/integration/websdk/other-events.md'
+        'contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'contactcenter/configurations/settings/llm-streaming.md': 'generative-ai-tools/streaming-responses.md'
@@ -62,8 +78,10 @@ plugins:
         'contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
         'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
         'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
-        'agentai/integration/AgentAI-webSDK/internal-transfer-process.md': 'agentai/integration/websdk/internal-transfer-process.md'
+        'apis/contact-center/get-all-conversations-data-call-details.md': 'apis/contact-center/get-all-conversations-data-call-details-v1.md'
         'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md': 'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md'
+        'quality-ai/coach/coaching-assignments-supervisor-creation.md': 'quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md'
+        'quality-ai/coach/coaching-assignments.md': 'quality-ai/coach/coaching-assignments-agent-view.md'
         
 extra:
   version:
@@ -144,7 +162,8 @@ nav:
   - Platform:
     - About AI for Service: getting-started/about-xo-platform.md    
     - Getting Started:
-      - Accessing the Platform: getting-started/accessing-the-platform.md   
+      - Accessing the Platform: getting-started/accessing-the-platform.md
+      - Outbound IP Addresses: getting-started/outbound-ip-address.md 
       - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
         - Navigating the Platform: getting-started/navigating-the-platform.md  
@@ -750,8 +769,6 @@ nav:
             - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
             - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
             - Voice Automation with Genesys Agent Desktop using SIP Invite Protocol: contactcenter/integrations/voice-automation-using-sip-invite-protocol/genesys-agent-desktop.md
-          - Multibot:
-            - Multibot Integration with Genesys: contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md

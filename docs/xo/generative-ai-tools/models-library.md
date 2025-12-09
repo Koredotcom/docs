@@ -113,7 +113,7 @@ To track token consumption, enable the Token Usage Limit toggle and configure th
 ### Set Token Limit 
 
 * **Maximum Tokens**: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
-* **Duration**: Set duration in days a  fter which the token limit resets automatically. You can set a maximum duration of 90 days.
+* **Duration**: Set duration in days after which the token limit resets automatically. You can set a maximum duration of 90 days.
 * **Schedule Start Date**: Set the date today onwards for the usage cycle.
 
 ### Enable Usage Notification

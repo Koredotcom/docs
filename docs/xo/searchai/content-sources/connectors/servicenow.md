@@ -63,7 +63,11 @@ If you are using **Basic authentication**, you can skip this step. To use **OAut
 
 * **Host URL**: Host of your ServiceNow instance
 
-Click the **Connect** button to initiate authorization with the application. After the connection is established, go to the **Configurations** tab and click **Sync Now** to ingest content to the application. By default, upon sync, the connector ingests **published knowledge articles, incidents and catalog items** from the ServiceNow instance. 
+Click the *Connect* button to initiate authorization with the application. After the connection is established, go to the *Configurations* tab and click *Sync Now* to ingest content to the application. By default, upon sync, the connector ingests *published knowledge articles, incidents and catalog items* from the ServiceNow instance. 
+
+!!!note
+  
+  Only the articles within their validity date are ingested. Any article that's expired(beyond its Valid To date) isn't ingested.
 
 ## Advanced Filters
 
@@ -112,8 +116,8 @@ User Criteria in ServiceNow is a method to group users based on specific conditi
 
 By default, SearchAI grants access to the following:
 
-* **Owners** of the Knowledgebase - This list of owners will be added directly in the racl field in the indexed content.
-* **Managers** of the Knowledgebase - This list of managers will be added directly in the racl field of the indexed content.
+* **Owners** of the Knowledge base - This list of owners will be added directly in the racl field in the indexed content.
+* **Managers** of the Knowledge base - This list of managers will be added directly in the racl field of the indexed content.
 * **Individual users** listed under each **User Criteria** with Can Read and Can Contribute permissions.  
 
 ![Individual Users](images/servicenow/racl/individual-users.png "Individual Users")
