@@ -76,7 +76,7 @@ An array of objects, each with a type and value, used to identify or create sess
 
 [Refer to this for a detailed description.](overview.md#session-resolution-process)
 
-—----------------------------------------------------------------------------------------------------------------------------
+<hr/>
 
 **input**- Required
 
@@ -100,7 +100,7 @@ For example:
    }
   ```
 
-—----------------------------------------------------------------------------------------------------------------------------
+<hr/>
 
 **debug**- Optional
 
@@ -114,7 +114,7 @@ Controls debug info in the response, useful for troubleshooting, understanding a
 
 *Currently, only thoughts are supported.*
 
-—----------------------------------------------------------------------------------------------------------------------------
+<hr/>
 
 **stream**- Optional
 
@@ -128,7 +128,7 @@ Enable or disable streaming of the agent's response. This object contains two fi
 
 If debug mode is enabled and set to thoughts, irrespective of streamMode, thoughts are always sent as complete messages. 
 
-—----------------------------------------------------------------------------------------------------------------------------
+<hr/>
 
 **isAsync**- Optional
 
@@ -137,7 +137,7 @@ Indicates whether the API should execute asynchronously.
 * false (default): Executes synchronously and returns the result immediately.
 * true: Executes asynchronously. If the callbackURL is provided, the response is shared on the URL else this API returns a <code>runId</code> that can be used to retrieve the status or result later.
 
-—----------------------------------------------------------------------------------------------------------------------------
+<hr/>
 
 **callbackUrl**- Optional 
 
@@ -146,7 +146,7 @@ The endpoint to which the asynchronous response should be sent. Must be a valid,
 * If provided, the platform makes an HTTP POST request to the `callbackURL` with the result payload after the processing is complete.
 * If omitted in an async request, you must use the `runId` to fetch the result manually.
 
-—----------------------------------------------------------------------------------------------------------------------------
+<hr/>
 
 **callbackToken**- Optional
 
@@ -157,7 +157,8 @@ If `callbackToken` is provided, it's included in the HTTP request headers to the
 ```
 `Authorization: Bearer <callbackToken>`
 ```
-—----------------------------------------------------------------------------------------------------------------------------
+
+<hr/>
 
 **attachments**- Optional 
 
@@ -169,21 +170,19 @@ Allows users to associate files with the session. This object takes the followin
 
 Once a file is added to the includeFiles list, it remains associated with the session for its duration unless it's explicitly removed by listing it in excludeFiles.
 
-—----------------------------------------------------------------------------------------------------------------------------
+<hr/>
 
 **metadata**- Optional
 
 Allows users to pass metadata information. This data is stored in sessionMeta and remains available for the duration of the session. 
 
-—----------------------------------------------------------------------------------------------------------------------------
+<hr/>
 
-**invoke **- Optional 
+**invoke**- Optional 
 
 This field allows direct invocation of a specific agent or tool within the application, bypassing the orchestrator. It is particularly useful when the client knows exactly which agent or tool should handle the request. 
 
 The invoke field accepts an array of task objects. Each task object must include:
-
-
 
 * type: 
     * Set this to "agent" to specify the task as an agent invocation. 
@@ -224,11 +223,10 @@ Example: To directly invoke the leaveBalanceById tool in a specific agent, set t
 ```
 
 !!!note
-  The first agent/tool in the tasks array is used for handling the query. If more than one agent/tool is given in this array, the first one is used, and the others are ignored. 
+    The first agent/tool in the tasks array is used for handling the query. If more than one agent/tool is given in this array, the first one is used, and the others are ignored. 
 
 
-
-—----------------------------------------------------------------------------------------------------------------------------
+<hr/>
 
 
 #### Sample Request
