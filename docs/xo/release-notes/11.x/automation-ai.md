@@ -27,7 +27,7 @@ A new Playground section in the Evaluation menu, purpose-built for developers, c
 
 **Embedding Model Deprecation and Automatic Upgrade**
 
-The legacy embedding models (MPNet, LaBSE, E5, and BGE-M3 V1) are deprecated to improve system performance. Any application that uses one of these models will be automatically upgraded to use BGE-M3 V2. [Learn more :octicons-arrow-right-24:](searchai-deprecations.md)
+The legacy embedding models (MPNet, LaBSE, E5, and BGE-M3 V1) are deprecated to improve system performance. Any application that uses one of these models will be automatically upgraded to use BGE-M3 V2. [Learn more :octicons-arrow-right-24:](deprecations.md)
 
 <hr>
 
