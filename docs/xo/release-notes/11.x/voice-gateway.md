@@ -12,7 +12,8 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Call Transfer Utility**
 
-A new utility function, voiceUtils.transfer enables seamless call transfers between experience flows within the platform or to external phone numbers, maintaining the same session ID and conversation continuity. Transcripts now reflect internal flow transfers for improved tracking and auditing. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#transfer-calls)
+A new utility function, voiceUtils.transfer enables seamless call transfers between experience flows within the platform or to external phone numbers, maintaining the same session ID and conversation continuity. Transcripts now reflect internal flow transfers for improved tracking and auditing. 
+[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#transfer-calls)
 
 <font size="4">Call Transfer</font>
 

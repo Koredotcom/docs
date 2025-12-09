@@ -84,6 +84,7 @@ plugins:
         'quality-ai/coach/coaching-assignments.md': 'quality-ai/coach/coaching-assignments-agent-view.md'
         'quality-ai/getting-started/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
         'quality-ai/getting-started/quality-ai-express.md': 'quality-ai/configure/quality-ai-express.md'
+        'release-notes/11.x/searchai-deprecations.md': 'release-notes/11.x/deprecations.md'
 extra:
   version:
     provider: mike
@@ -227,7 +228,7 @@ nav:
         - Automation AI: getting-started/migration-path-xo10-to-xo11.md
         - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
         - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md    
-      - Deprecations: release-notes/11.x/searchai-deprecations.md 
+      - Deprecations: release-notes/11.x/deprecations.md 
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
@@ -372,6 +373,7 @@ nav:
           - Airtable: searchai/content-sources/connectors/airtable.md
           - Amazon S3: searchai/content-sources/connectors/amazons3.md
           - Asana: searchai/content-sources/connectors/asana.md
+          - Axero: searchai/content-sources/connectors/axero.md
           - Azure Storage: searchai/content-sources/connectors/azure.md
           - BitBucket: searchai/content-sources/connectors/bitbucket.md
           - Box: searchai/content-sources/connectors/box.md
@@ -578,7 +580,7 @@ nav:
       - Taxonomy Builder: 
           - Overview: quality-ai/configure/taxonomy-builder/overview.md
           - Taxonomy Setup: quality-ai/configure/taxonomy-builder/setup-taxonomy.md
-      - Quality AI Express: quality-ai/configure/quality-ai-express.md           
+      - Quality AI Express: quality-ai/connectors/aws-s3-connector-setup-guide.md         
       - Connectors: 
         - AWS S3 Connector Setup Guide: quality-ai/configure/connectors/aws-s3-connector-setup-guide.md                  
       - Conversation Sources: quality-ai/configure/conversation-sources.md

@@ -1,6 +1,6 @@
 # Custom Content Connector
 
-Search AI enables content ingestion from diverse sources, including web pages, files, and third-party applications, using built-in crawlers and connectors. For applications that do not have a pre-built connector in Search AI, the **Custom Content Connector** provides a flexible solution. The Custom Content Connector enables seamless integration with unique data sources, allowing organizations to bring in specialized content for a comprehensive, centralized search experience. This flexibility empowers users to access and utilize information from virtually any application.
+Search AI enables content ingestion from diverse sources, including web pages, files, and third-party applications, using built-in crawlers and connectors. For applications that don't have a pre-built connector in Search AI, the **Custom Content Connector** provides a flexible solution. The Custom Content Connector enables seamless integration with unique data sources, allowing organizations to bring in specialized content for a comprehensive, centralized search experience. This flexibility empowers users to access and utilize information from virtually any application.
 
 This Custom Content Connector leverages the application’s REST APIs to index content, facilitated by the **Custom Connector Service** provided by Search AI.
 
@@ -9,7 +9,7 @@ This Custom Content Connector leverages the application’s REST APIs to index c
 
 The custom connector service acts as a middle layer between Search AI and the third-party application. It retrieves content from the application and converts it into an indexable format for Search AI. To fetch the content, the service must be configured with the necessary details, such as REST API endpoints, authorization details, etc. A reference implementation of this service is available for download, providing a base for integrating with third-party applications.
 
-The custom connector service implementation is a basic implementation and serves as a template for integration.  It can be enhanced as per your requirements. The current implementation of the service only supports basic authentication. 
+The custom connector service implementation is a basic implementation and serves as a template for integration. It can be enhanced as per your requirements. The current implementation of the service only supports basic authentication. 
 
 
 ## Setup
@@ -31,13 +31,19 @@ Follow the steps listed below to get started.
 
 
 1. Go to the **Connectors** page.
-1. Select **Custom Connector** and configure it with the following details:
+2. Select **Custom Connector** and configure it with the following details:
     * **Name**: A unique name for the connector.
-    * **Endpoint**: The URL of the hosted service. This is the endpoint of the API that provides the content. Also, specify the HTTP method for the API. For the default implementation of the Connector Service, the endpoint is GET https://&lt;serverip>/getContent
-    * Under the **Headers**, add the following key and value. The value is the auth value set in the .env file in the service. This is required to establish secure communication with the service. For the default implementation of the service, use it as it is. If there is a change in the auth mechanism in the service, change it accordingly.
-        Key: Authorization.
-        Value: &lt;Your-Auth-Key>
-    * Click **Connect** to complete the setup. 
+    * **Endpoint**: The URL of the hosted service. This is the endpoint of the API that provides the content. Also, specify the HTTP method for the API. For the default implementation of the Connector Service, the endpoint is 
+    `GET https://&lt;serverip>/getContent`
+    * Under the *Headers*, add the headers as key-value pairs to be sent as request headers. For the default service implementation, an auth header is required to be sent. The value is the auth value set in the service's .env file. This is required to establish secure communication with the service. For the default service implementation, use it as is. If there is a change in the auth mechanism in the service, change it accordingly.
+      *  Key: Authorization. 
+      *  Value: <Your-Auth-Key>
+        
+    Note: The encoding format for a header can be configured as either base64 or none. For newly added headers, the default encoding is base64.
+      * When set to base64, the value is encoded before being sent.
+      * When set to none, the value is sent as plain text.
+
+3. Click **Connect** to complete the setup. 
 
 
 ## Content Synchronization

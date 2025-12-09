@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
-## v11.20.0 December 7, 2025
+## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>  
 
@@ -13,7 +13,8 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Prompts Library: Search and Filter**
 
-The Prompt Library now offers enhanced search, sorting, and multi-select filtering by name, feature, model, type, status, or usage, with a Quick Filter for instant access to system and custom prompts. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md#search-and-filter-prompts)
+The Prompt Library now offers enhanced search, sorting, and multi-select filtering by name, feature, model, type, status, or usage, with a Quick Filter for instant access to system and custom prompts. 
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md#search-and-filter-prompts)
 
 <font size="4">Channels</font>
 
