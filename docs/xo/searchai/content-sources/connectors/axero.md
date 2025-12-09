@@ -93,7 +93,7 @@ After authentication and a successful sync, the Axero connector ingests the foll
 Each ingested record includes metadata describing the source and structure of the content:
 
 * `doc_source_type` indicates the Axero content type for the record.
-* `content` contains the extracted text or body of the content item.
+* `content` contains the extracted text or body of the content item. Except for files and annoucements, this field also has the summary of the content. 
 * Metadata fields such as `doc_created_by`, `doc_created_on`, `doc_updated_by`, and `doc_updated_on` capture authorship and timestamps.
 * The comments associated with a content item are also present in the comments fields.
 * The connector maps Categories and tags, when available, to their corresponding JSON fields for improved classification and retrieval.
