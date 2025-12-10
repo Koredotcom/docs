@@ -3,6 +3,7 @@
 This feature enables supervisors to review and filter scored interactions within their assigned queues, making it easier to identify conversations that need coaching or attention. It delivers clear insights into conversation quality, agent performance, and customer experience at the conversation level and agent level.
 
 By using these new capabilities, supervisors can:  
+
 * **Review and Filter Interactions Easily**: Access scored interactions within their assigned queues to identify conversations that need coaching or attention.
 
 * **Gain Clear Quality Insights**: Understand conversation quality, agent performance, and customer experience at a glance.
@@ -31,7 +32,7 @@ Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interacti
 
     * If any section of the Agent Interactions dashboard elements shows **NA** status, the data for that section is not available on the Audit Allocations page.
 
-  ## Interactions Dashboard Columns
+## Interactions Dashboard Columns
 
 The **Interactions** dashboard includes the following items:
 
@@ -193,17 +194,17 @@ This provides the underlying cause and need that a conversation relates to. It i
 
 This has the following two options to churn the monitor:
 
-##### Churn Risk
+* **Churn Risk**
 
-Provides the extent of customer churn in a given conversation. In this, the Supervisor can view the churn risk % for a given time period.   
+    Provides the extent of customer churn in a given conversation. In this, the Supervisor can view the churn risk % for a given time period.   
 
-!!! Note
+    !!! Note
 
-    The customer churn is calculated once per interaction. Customer churn is not calculated as a score. 
+        The customer churn is calculated once per interaction. Customer churn is not calculated as a score. 
 
-##### Escalation
+* **Escalation**
 
-This detects the number of escalations raised to the Supervisor by a customer.  
+    This detects the number of escalations raised to the Supervisor by a customer.  
 
 ### Filter by Behavior
 
@@ -224,22 +225,18 @@ Select the languages to add from the dropdown list.
 #### Empathy Score
 
 This measures the level of understanding and compassion shown by the agent towards the customer situation. Provides the extent of empathy like frustration or displeasure that a customer has shown (negative sentiment). A higher score indicates a more empathetic interaction.  
-<img src="../conversation-mining/images/filter-by-behaviour-empathy.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
 
 #### Crutch Word Score
 
 This indicates the extent of filler words (for example, umm, uh, and so on) which is used by the agent. Higher score indicates the higher usage of crutch words.  
-<img src="../conversation-mining/images/filter-by-behaviour-crutch-word.png" alt="Crutch Word Score" title="Crutch Word Score" style="border: 1px solid gray; zoom:80%;">
 
 #### Agent Playbook Adherence 
 
 This shows the Agent AI playbook adherence percentage for that interaction.   
-<img src="../conversation-mining/images/filter-by-behaviour-agent-playbook.png" alt="Agent Playbook Adherence" title="Agent Playbook Adherence" style="border: 1px solid gray; zoom:80%;">
 
 #### Kore Evaluation Score
 
-This shows the automated QA score for an interaction, based on the evaluation form assigned to an interaction’s queue. 
-<img src="../conversation-mining/images/filter-by-behaviour-agent-kore-evaluation.png" alt="Kore Evaluation Score" title="Kore Evaluation Score" style="border: 1px solid gray; zoom:80%;">
+This shows the automated QA score for an interaction, based on the evaluation form assigned to an interaction’s queue.       
 
 ## Manage Saved Filters
 
