@@ -26,37 +26,37 @@ The application triggers an outbound call using an HTTP POST request to the endp
 
 | **PARAMETER** | **DESCRIPTION**                                                                                          | **TYPE**           |
 |-----------|------------------------------------------------------------------------------------------------------|----------------|
-| host      | Environment URL, for example, `https://platform.kore.ai`                                             | string, required |
-| botId     | The botId or streamId. You can access it from the bot’s General Settings page.                       | string, required |
+| `host`      | Environment URL, for example, `https://platform.kore.ai`                                             | string, required |
+| `botId`     | The botId or streamId. You can access it from the bot’s General Settings page.                       | string, required |
 
 ## Body Parameters
 
 | **PARAMETER**           | **DESCRIPTION**                                                                                                                                              | **TYPE**             |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-| botId               | The botId or streamId. You can access it from the bot’s General Settings page.                                                                           | string, required |
-| target              | URI of the target of the outbound call. For example:                                                                                                     | string, required |
+|` botId`               | The botId or streamId. You can access it from the bot’s General Settings page.                                                                           | string, required |
+| `target`              | URI of the target of the outbound call. For example:                                                                                                     | string, required |
 |                     | - “tel:911234567890” with the country code                                                                                                               |                  |
 |                     | - “sip:1234567890@1.23.345.678:1234”                                                                                                                    |                  |
-| caller              | User part for the caller ID of the outbound call. It's the experience flow number in Contact Center AI.                                                | string, required |
-| notifyurl           | Absolute URL of the dialer application where Voice Gateway sends notifications. If not provided, no notifications are sent.                     | string, optional |
-| notifyHeaders           | If these are included in the API payload, these headers will be sent along with AMD notifications to the specified notifyUrl.                     | object, optional |
-| timeoutInMs           | This provides improved control over how long the system should wait for the recipient to answer.                    | number, optional |
-| trunk               | The trunk is a carrier for the account. If not provided, It will pick the default carrier for that account.                                             | string, optional |
-| metadata            | Data to be sent to the bot (can be used to provide information to the bot about the call, such as the name of the target).                            | object, optional |
+| `caller`              | User part for the caller ID of the outbound call. It's the experience flow number in Contact Center AI.                                                | string, required |
+| `notifyurl`           | Absolute URL of the dialer application where Voice Gateway sends notifications. If not provided, no notifications are sent.                     | string, optional |
+| `notifyHeaders`           | If these are included in the API payload, these headers will be sent along with AMD notifications to the specified notifyUrl.                     | object, optional |
+| `timeoutInMs`           | This provides improved control over how long the system should wait for the recipient to answer.                    | number, optional |
+| `trunk`               | The trunk is a carrier for the account. If not provided, It will pick the default carrier for that account.                                             | string, optional |
+| `metadata`            | Data to be sent to the bot (can be used to provide information to the bot about the call, such as the name of the target).                            | object, optional |
 | timers              | An object containing various timeout properties. [Learn more](../contact-center/outbound-calling-vg.md#timers-configuration) | object, optional |
-| machinedetection    | Activates machine (answering machine and fax) detection. Possible values:                                                                               | string, optional |
+| `machinedetection`    | Activates machine (answering machine and fax) detection. Possible values:                                                                               | string, optional |
 |                     | - “disconnect”: Machine detection is enabled, and the call is disconnected in amd.                                                                      |                  |
 |                     | - “detect”: Machine detection is enabled, and the call isn't disconnected in amd.                                                                      |                  |
 |                     | - “disabled”: Machine detection isn't enabled.                                                                                                          |                  |
-| thresholdWordCount | Number of spoken words in a greeting that result in an amd_machine_detected result.                                                                      | number, optional |
-| metadata | Key-value pairs to pass contextual information to the bot.                                                                      | object, optional |
-| callControlParameter | This object enables you to specify dynamic values for the STT provider, language, and related properties, overriding the default settings configured at the application level.                                                                      | object, optional |
-| callControlParameter.sttProvider | Name of the STT provider (for example, deepgram).                                                                      | string, required |
-| callControlParameter.sttLanguage | Whether to return interim transcription results.                                                                      | string, required |
-| callControlParameter.sttLabel | Custom label to identify the STT configuration/session.                                                                      | string, optional |
-| callControlParameter.continuousASRTimeoutInMS| Time (in ms) to wait before stopping ASR after silence.                                                                      | number, optional |
-| callControlParameter.deepgramUtteranceEndMs | Silence threshold (in ms) to determine utterance end (specific to Deepgram).                                                                      | number, optional |
-| callControlParameter.deepgramEndpointing | Duration of silence (in ms) used for endpointing.                                                                      | number, optional |
+| `thresholdWordCount` | Number of spoken words in a greeting that result in an amd_machine_detected result.                                                                      | number, optional |
+| `metadata` | Key-value pairs to pass contextual information to the bot.                                                                      | object, optional |
+| `callControlParameter` | This object enables you to specify dynamic values for the STT provider, language, and related properties, overriding the default settings configured at the application level.                                                                      | object, optional |
+| `callControlParameter.sttProvider` | Name of the STT provider (for example, deepgram).                                                                      | string, required |
+| `callControlParameter.sttLanguage` | Whether to return interim transcription results.                                                                      | string, required |
+| `callControlParameter.sttLabel` | Custom label to identify the STT configuration/session.                                                                      | string, optional |
+| `callControlParameter.continuousASRTimeoutInMS`| Time (in ms) to wait before stopping ASR after silence.                                                                      | number, optional |
+| `callControlParameter.deepgramUtteranceEndMs` | Silence threshold (in ms) to determine utterance end (specific to Deepgram).                                                                      | number, optional |
+| `callControlParameter.deepgramEndpointing` | Duration of silence (in ms) used for endpointing.                                                                      | number, optional |
 
 ### Timers Configuration
 
