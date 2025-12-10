@@ -776,7 +776,7 @@ Steps to send an outbound email:
 
     **Draft**:
 
-    Select the **X** on the right corner of the email editor window.  
+    Select the **X** on the corner of the email editor window.  
         <img src="../images/x-button.png" alt="X-icon" title="X-icon" style="border: 1px solid gray; zoom:80%;">
 
     The editor window minimizes, and saves the mail as a draft.  
