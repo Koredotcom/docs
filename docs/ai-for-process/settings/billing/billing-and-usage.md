@@ -1,6 +1,6 @@
 # Manage Account Billing and Usage
 
-The Billing section helps you monitor and analyze your AI for Process expenses through detailed usage metrics and cost breakdowns. You can track computational costs across workflows, models, guardrails, and custom script deployments to make data-driven decisions about your resource utilization.
+The Billing section helps you monitor and analyze your AI for Process expenses through detailed usage metrics and cost breakdowns. You can track computational costs across workflows, models, guardrails, OCR models, and custom script deployments to make data-driven decisions about your resource utilization.
 
 ## Accessing Usage Information
 
@@ -8,19 +8,19 @@ Steps to access the Usage page:
 
 1. Log in to AI for Process and click **Settings**.
 2. On the left navigation pane, click **Billing** > **Usage**.  
+<img src="../images/ocr_billing_new.png" alt="Usage page" title="Usage page" style="border: 1px solid gray; zoom:75%;">
+
 The Usage page displays the following tabs:
 
-    * **Overview**: Provides a high-level summary of your resource consumption including:
-        * **Workflow runs**: Shows current workflow run usage against your total allocation.
-        * **Credits**: Displays the number of credits consumed out of the total available credits, along with the corresponding percentage. A dynamic pie chart visually represents this data, showing the distribution of total credits, including usage by models and custom script deployments. Each metric is color-coded and identified through a legend for easy reference. Hover over the chart to view the actual values for each usage type.
-        * **Usage trend**: Visual representation of workflow runs and model credit consumption over time.
-    * **Workflows**: Shows all workflow activities and their operational status.
-    * **Models**: Shows the computational costs linked to specific models.
-    * **Guardrails**: Shows overall guardrail statistics and credit consumption costs.
-    * **Custom Scripts**: Gives a comprehensive view of all the deployed custom scripts’ statistics, including the credits usage trends.
-    * **OCR**: Displays OCR model deployments and their credit consumption, helping you track document-processing usage.
-
-<img src="../images/ocr_billing_new.png" alt="Usage page" title="Usage page" style="border: 1px solid gray; zoom:75%;">
+* **Overview**: Provides a high-level summary of your resource consumption including:
+    * **Workflow runs**: Shows current workflow run usage against your total allocation.
+    * **Credits**: Displays the number of credits consumed out of the total available credits, along with the corresponding percentage. A dynamic pie chart visually represents this data, showing the distribution of total credits, including usage by models, guardrails, OCR models, and custom script deployments. Each metric is color-coded and identified through a legend for easy reference. Hover over the chart to view the actual values for each usage type.
+    * **Usage trend**: Visual representation of workflow runs, model credits, custom scripts, and OCR credits consumption over time.
+* **Workflows**: Shows all workflow activities and their operational status.
+* **Models**: Shows the computational costs linked to specific models.
+* **Guardrails**: Shows overall guardrail statistics and credit consumption costs.
+* **Custom Scripts**: Gives a comprehensive view of all the deployed custom scripts’ statistics, including the credits usage trends.
+* **OCR**: Displays OCR model deployments and their credit consumption, helping you track document-processing usage.
 
 ## Best Practices
 
@@ -35,11 +35,11 @@ The Usage page displays the following tabs:
 
 ## Usage Overview
 
-The **Overview** tab summarizes expenses and usage patterns across your workflows, models, guardrails, and custom scripts. The following usage information is displayed on the tab:
+The **Overview** tab summarizes expenses and usage patterns across your workflows, models, guardrails, OCR, and custom scripts. The following usage information is displayed on the tab:
 
 * **Runs**: This field indicates the usage of workflow runs, showing the proportion of capacity consumed compared to the total available runs. For example, if 45 out of 10,000 available workflow runs have been utilized, indicating that 0.45% of the total capacity has been consumed.
-* **Credits**: This field displays the total credit usage, showing the proportion of credits used across models, guardrails, and custom scripts compared to the total available credits. It also includes the credits used to host guardrails. For example, if 212 credits have been used out of a total allocation of 300 credits, indicating that 70.72% of your available model credits have been utilized.
-* **Usage trend**: This visual representation shows workflow runs, models, guardrails, and custom script credits consumed over time. Use the calendar feature to view changes over a defined timeline, such as daily, weekly, monthly, or any custom date range.
+* **Credits**: This field displays the total credit usage, showing the proportion of credits used across models, guardrails, OCR, and custom scripts compared to the total available credits. It also includes the credits used to host guardrails. For example, if 212 credits have been used out of a total allocation of 300 credits, indicating that 70.72% of your available model credits have been utilized.
+* **Usage trend**: This visual representation shows workflow runs, models, guardrails, OCR, and custom script credits consumed over time. Use the calendar feature to view changes over a defined timeline, such as daily, weekly, monthly, or any custom date range.
 
 ## Workflows Usage
 
@@ -186,6 +186,26 @@ Clicking each row on the **Custom scripts** tab opens a panel on the right that 
 Billing and credit calculation emails for custom scripts notify users about credit usage, negative credits threshold breaches, and deployment or undeployment events. Deployment notifications also include the API endpoint access details.
 
 
+## OCR Usage
+
+The OCR tab provides a unified view of all OCR-related credit usage across your workspace, allowing you to:
+
+* Review a list of OCR model deployments
+* See how many credits each deployment consumed
+* Check deployment status and usage history
+
+<img src="../images/ocr_billing_details.png" alt="OCR billing" title="OCR billing" style="border: 1px solid gray; zoom:80%;">
+
+### Viewing Detailed OCR Information
+
+Clicking a row in the OCR tab opens a panel on the right that provides detailed information about the selected OCR deployment, including:
+
+* **Hosting infrastructure:** The compute resources used by the deployment (for example, model configuration or allocated hardware).
+* **Hosting time:** Total time the deployment has been active, shown in hours and minutes.
+* **Credits consumed:** The number of OCR credits used by the deployment.
+* **Total:** The aggregated credit usage across all contributing components for that deployment.
+
+<img src="../images/ocr_billing_detailed.png" alt="OCR billing" title="OCR billing" style="border: 1px solid gray; zoom:80%;">
 
 
 
