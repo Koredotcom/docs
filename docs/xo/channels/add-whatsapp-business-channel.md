@@ -12,7 +12,7 @@ Users can select any of the following messaging partners to enable WhatsApp Busi
 
 ## Adding the WhatsApp Channel using Infobip Application
 
-To complete this procedure, you must already have an **Infobip** account. This is one of the messaging providers for enabling **WhatsApp Business Messaging** on the Platform.
+To complete this procedure, you must have an **Infobip** account. This is one of the messaging providers for enabling **WhatsApp Business Messaging** on the Platform.
 
 Steps to configure **Infobip**:
 
@@ -30,9 +30,9 @@ Steps to configure **Infobip**:
 
     !!! note
 
-        The mobile number should have the country code preceded by a plus (+) sign to activate the Infobip and WhatsApp connections.
+        The mobile number must have the country code preceded by a plus (+) sign to activate the Infobip and WhatsApp connections.
 
-4. Once the number is associated, select the **Senders** tab to view or edit the numbers for **WhatsApp** messaging.  
+4. After associating the number, select the **Senders** tab to view or edit the numbers for **WhatsApp** messaging.  
 <img src="../images/whatsapp3.png" alt="infobib connection" title="infobib connection" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -47,9 +47,9 @@ Steps to configure **Infobip**:
 
     * On the Platform, go to **Channels and Flows** > **Channels** > **Digital** > **All** and click **WhatsApp Business Messaging**.
     * On the **WhatsApp Business Messaging** panel, click the **Configurations** tab and provide inputs for the following fields:
-        * **Messaging Partner** – Select **Infobip** from the dropdown list.
-        * **Phone Number** – Copy and paste the number displayed on the **Infobip** portal for your account under the **Connect** section (please refer to step 3). The Platform now supports **adding multiple phone numbers on the WhatsApp Messaging Channel** for the same AI Agent. The AI Agent responds to only the source number from which it receives the message rather than a common phone number. [Learn more](whatsapp-support-for-multiple-phone-numbers.md).
-        * **Base URL**: Copy the Base URL from this page. This URL is used on the platform to send the messages when the **WhatsApp Business Messaging** channel is enabled.
+        * **Messaging Partner**: Select **Infobip** from the dropdown list.
+        * **Phone Number**: Copy and paste the number displayed on the **Infobip** portal for your account under the **Connect** section (please refer to step 3). The Platform now supports **adding multiple phone numbers on the WhatsApp Messaging Channel** for the same AI Agent. The AI Agent responds to only the source number from which it receives the message rather than a common phone number. [Learn more](whatsapp-support-for-multiple-phone-numbers.md).
+        * **Base URL**: Copy the Base URL from this page. Use this URL sends messages when the **WhatsApp Business Messaging** channel is enabled.
         <img src="../images/whatsapp7.png" alt="infobib messaging partner" title="infobib messaging partner" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -85,12 +85,12 @@ WhatsApp for business communications supports the following messaging types for 
 * **Templates**: Formatted, non-editable, and pre-registered messages approved by WhatsApp.
 * **Free-Form texts**: Free-flowing text messages.
 
-The Platform now supports public APIs for WhatsApp templates on the Infobip channel. These templates can be used during AI Agent conversations to structure the messages exchanged. Since global UI/rich template formats are not supported, the app designer should register the required templates with Infobip and get them approved.
+The Platform now supports public APIs for WhatsApp templates on the Infobip channel. These templates structure the messages exchanged during AI Agent conversations. Since global UI/rich template formats aren't supported, the app designer should register the required templates with Infobip and get them approved.
 
-The Platform automatically decides the payload to be sent to the channels after parsing Advanced Messages (JS) that include one of the following:
+The Platform automatically decides the payload to send to the channels after parsing Advanced Messages (JS) that include one of the following:
 
-* **String**: A free-form text message template is used if the JS result is a string.
-* **Object**: A message template is used if the JS result is an object.
+* **String**: The Platform uses a free-form text message template when the JS result is a string.
+* **Object**: The Platform uses a message template when the JS result is an object.
 
 **Additional Information**
 
@@ -101,7 +101,7 @@ The Platform automatically decides the payload to be sent to the channels after 
 
 ## Adding the WhatsApp Channel Using GupShup Application
 
-The Platform supports integration with **GupShup** to enable WhatsApp business as a channel. In this integration, the platform provides a Webhook URL to be called by GupShup during a conversation to enable events and exchange messages.
+The Platform supports integration with **GupShup** to enable WhatsApp business as a channel. In this integration, the Platform provides a Webhook URL that GupShup calls during a conversation to enable events and exchange messages.
 
 !!! note
 
@@ -163,7 +163,7 @@ Once you have created a GupShup app, you need to create a **WABA** to set up the
 
 5. Enter your details to set up your WhatsApp Business account and click **Next**.
 6. Follow all the instructions on the screen to **Setup the WhatsApp Account, Get WhatsApp Approvals**, and **Complete Verification**.
-7. Once the account is verified with your _Facebook Business ID_, the **WABA ID**, **Mobile number**, and **Password** are displayed.
+7. Once the platform verfies the account with your _Facebook Business ID_, it displays **WABA ID**, **Mobile number**, and **Password**.
 
 
 ### Step 2b: Set up the WABA Parameters on the Platform
@@ -208,7 +208,7 @@ To set up the **Callback URL**, follow the steps below:
           Contact the Gupshup customer support team to help configure the webhook URL on GupShup and enable inbound messages to the app.
 
 
-10. Once the callback is set successfully on the Platform **WhatsApp Business Messaging** window, follow the steps below:
+10. Once you set the callback successfully in the Platform **WhatsApp Business Messaging** window, follow the steps below:
     * (Optional) Enable the **Associate an App** option, if required, and follow the configuration steps.
     * Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.
     * Select **YES** for the **Enable Channel** option.
@@ -217,7 +217,7 @@ To set up the **Callback URL**, follow the steps below:
 
 ### Step 3: Secure the Integration
 
-The Webhook URL used on the WhatsApp Business Messaging Channel for GupShup is a public URL that may cause security vulnerabilities. The Platform enforces an authentication mechanism by securing the webhook URL and associating it with a App. The **Associate an App** feature is used for this purpose.
+The Webhook URL used on the WhatsApp Business Messaging Channel for GupShup is a public URL that may cause security vulnerabilities. The Platform enforces an authentication mechanism by securing the webhook URL and associating it with a App. The **Associate an App** feature serves this purpose.
 
 This feature is available under **Channels and Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging** > **Configurations**.
 
@@ -226,11 +226,11 @@ This feature is available under **Channels and Flows** > **Channels** > **Digita
 
 **How it Works:**
 
-When **Associate an App** is enabled, the following happens:
+When you enable **Associate an App**, the following happens:
 
 
 
-1. The URL is called by **GupShup** (the Callback URL you configure under Settings) where the channel passes the authorization token as the header information.
+1. The **GupShup** (the Callback URL you configure under Settings) calls the URL where the channel passes the authorization token as the header information.
 2. The Platform checks for the JWT Token of the associated app in the Header and accepts the Webhook API call(s).
 3. However, if the Token is missing, the Platform rejects the incoming API call(s) and responds with an error code.
 
@@ -247,8 +247,8 @@ As part of the GupShup WhatsApp channel integration, the Platform supports the f
 
 
 
-* **Templates:** WhatsApp-approved, pre-formatted messages that are not editable.
-* **Free-flowing**: Messages that support all media types are known as “free-form.”
+* **Templates:** WhatsApp-approved, pre-formatted messages that aren't editable.
+* **Free-flowing**: Messages that support all media types as “free-form
 
 You may have to switch between these message types depending on the timing and initiation of the chat.
 
@@ -264,7 +264,7 @@ Message templates typically consist of Header, Body, Footer, and Buttons. For de
 
 The Document with Text template is also supported for outbound messages. With this template, developers can send a document along with informative text for end users to download.
 
-A sample template script is given below:
+The following is the sample template script:
 
 '''
     var msg = {
@@ -285,7 +285,7 @@ A sample template script is given below:
 
 '''
 
-Prior to submitting notifications through the WhatsApp Business Solution or the WhatsApp Cloud Business Solution, it is imperative to create and register your message templates. This step ensures that the templates comply with WhatsApp’s review requirements, facilitating effective communication within the platform.
+Prior to submitting notifications through the WhatsApp Business Solution or the WhatsApp Cloud Business Solution, it's imperative to create and register your message templates. This step ensures that the templates comply with WhatsApp’s review requirements, facilitating effective communication within the platform.
 
 The Platform supports public APIs for the integration and utilization of WhatsApp Outbound Templates on the GupShup channel. Contact Support, our experts to learn more. 
 
@@ -297,12 +297,12 @@ The Platform supports WhatsApp Pay, a digital payment service that enables insta
 
 1. When the end user completes the transaction using the WhatsApp Pay template rendered on the WhatsApp channel, the Platform receives an inbound message.
 2. The Inbound message is in the form of a JSON Object containing payment details and their respective status.
-3. The Platform automatically decides the payload to be sent to the channels after parsing Advanced Messages (JS) that include one of the following:
-    * **String**: A free-form text message template is used if the JS result is a string.
-    * **Object**: A message template is used if the JS result is an object.
+3. The Platform automatically decides the payload to send to the channels after parsing Advanced Messages (JS) that include one of the following:
+    * **String**: Use a free-form text message template when the JS result returns a string.
+    * **Object**: Use message template if the JS result is an object.
 4. The Platform accepts this JSON object format as the **Composite** entity type and stores it in the context object under the respective entity.
 
-An example of a success payload is given below:
+The following sample shows a success payload:
 
 
 ```
@@ -380,22 +380,22 @@ To begin WhatsApp integration via Netcore, copy the API Key from Netcore to the 
 2. On the left navigation menu, click **Settings** > **General Settings**.
 3. Scroll down to the **Integrate API** section.
 4. On the **Integrations** page, click on the **API** tab.
-5. The API Key is hidden for security purposes. Click **Show**. The system will prompt you to enter your account password. Once you enter the password, the API key is accessible.
+5. The system hides the API Key for security purposes. Click **Show**. The system will prompt you to enter your account password. Once you enter the password, the API key is accessible.
 <img src="../images/whatsapp-api-key.png" alt="whatsapp api key" title="whatsapp api key" style="border: 1px solid gray; zoom:75%;">
 
 
 <div class="admonition note">
 <p class="admonition-title"><b>Note</b></p>
 <p><ul><li>To create a new key, click <b>Create API Key</b>, enter a unique name, and click <b>Save</b>.</li>
-<li>Your API key is auto-generated; therefore, you cannot edit it.</li>
-<li>By default, your new API key will be activated (green check) after creation.</li></ul></p>
+<li>Your API key is auto generated; therefore, you can't edit it.</li>
+<li>By default, the system activates your new API key (green check) after creation</li></ul></p>
 </div>
 
 <ol start="6"><li>Copy the <b>API key</b> value and save it for later use.</li></ol>
 
 <div class="admonition warning">
 <p class="admonition-title"><b>Important</b></p>
-<p><ul><li>For security reasons, the key is shown only once; if you do not save it, you won’t be able to view or copy it again. Ensure to store your API key securely.</li>
+<p><ul><li>For security reasons, the platform shows the key only once; if you don't save it, you won’t be able to view or copy it again. Ensure to store your API key securely.</li>
 <li>An API key is unique for each business number. An <b>Access Denied</b> error occurs while running the API key if used incorrectly.</li></ul></p>
 </div>
 
@@ -425,7 +425,7 @@ Finally, enable the channel on the Platform to start receiving WhatsApp messages
 
 1. Navigate to **Deploy** > **Channels** > **WhatsApp Business Messaging** > **Configurations** page.
 2. Select *Netcore* for **Messaging Partner**.
-3. Add the registered WhatsApp Business Messaging phone number(s). A maximum of 20 numbers are allowed.
+3. Add the registered WhatsApp Business Messaging phone number(s). The platform allows a maximum of 20 numbers.
 4. Paste the API Key copied in step 6 [here](#step-1-get-the-api-key){:target="_blank"}.
 5. Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with   the app first.
 6. Select “*Yes*” for **Enable Channel**.
@@ -433,7 +433,7 @@ Finally, enable the channel on the Platform to start receiving WhatsApp messages
 
     <img src="../images/enable-channel-netcore.png" alt="enable netcore" title="enable netcore" style="border: 1px solid gray; zoom:75%;">
 
-The **WhatsApp Business Messaging channel using Netcore** is enabled successfully.
+The platform enables **WhatsApp Business Messaging channel using Netcore**.
 
 ## Adding the WhatsApp Channel Using Meta Cloud API
 
@@ -477,7 +477,7 @@ If you are opting for Permanent Authorization, get a Permanent Token. Refer [Cre
 
 
 1. Go to [Business Settings](https://business.facebook.com/business/loginpage/).
-2. Select the business account your app is associated with.
+2. Select the business account that associates with your app.
 3. Below Users, click System Users.
 4. Click Add.
 5. Name the system user, choose Admin as the user role, and click Create System User.
@@ -538,7 +538,7 @@ Enter the Phone Number ID and select the connection Authorization Type.
 
 
 
-* If you select Temporary Authorization, enter the **App ID** and **App Secret ID** from step 2, and **Authorize** the channel. Temporary tokens expire every two months and must be reauthorized to keep the channel active.  
+* If you select Temporary Authorization, enter the **App ID** and **App Secret ID** from step 2, and **Authorize** the channel. Temporary tokens expire every two months and require reauthorization to keep the channel active.  
 <img src="../images/temporary-authorization.png" alt="Temporary Authorization" title="Temporary Authorization" style="border: 1px solid gray; zoom:70%;">
 
 * If you select the Permanent Authorization, enter the **Permanent Token** from step 2 provided by the Meta. Refer [Creating a Permanent Access Token](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/).  
@@ -560,7 +560,7 @@ Enter the Phone Number ID and select the connection Authorization Type.
 <img src="../images/Verify-save.png" alt="Verify-save" title="Verify-save" style="border: 1px solid gray; zoom:70%;">
     
 3. Click **Verify and save**.
-4. Now, from the Webhook fields, subscribe to the **messages** by enabling the toggle button.
+4. Now, from the Webhook fields, subscribe to the **messages** by enabling the toggle.
 
     !!!note
 
