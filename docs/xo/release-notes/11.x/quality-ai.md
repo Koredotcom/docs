@@ -1,6 +1,6 @@
 # Quality AI Release Notes
 
-This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
+This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases. 
 
 ## v11.20.0 December 07, 2025
 
@@ -26,11 +26,11 @@ QM Express now supports IAM Role (Assume Role) authentication for secure, tempor
 
 Analytics visibility is enhanced across Conversation Mining, Audit workflows, and Agent Dashboards:
 
-* Conversation Mining includes optional columns for Configured Intents, Generated Intents, and Overall Resolution, with color-coded topic sentiment and advanced filters for L1–L3 topics, intents, sentiment, emotion, and resolution.
+* Conversation Mining includes optional columns for Configured Intents, Generated Intents, and Overall Resolution, with color-coded topic sentiment and advanced filters for L1–L3 topics, intents, sentiment, emotion, and resolution. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md)
 
-* The Audit Screen provides deeper topic-level insights with click-through intents and detailed L3 resolution mapping, helping auditors quickly locate where each topic or resolution appears in the transcript.
+* The Audit Screen provides deeper topic-level insights with click-through intents and detailed L3 resolution mapping, helping auditors quickly locate where each topic or resolution appears in the transcript. [Learn more :octicons-arrow-right-24:](../../quality-ai/ai-assisted-manual-audit.md)
 
-* The Agent Dashboard includes scrollable Sentiment and Resolution Insights, with averages, trend indicators, and top or bottom-performing topics. App-level controls enable admins to manage agent access to sentiment and resolution data for flexible team visibility.
+* The Agent Dashboard includes scrollable Sentiment and Resolution Insights, with averages, trend indicators, and top or bottom-performing topics. App-level controls enable admins to manage agent access to sentiment and resolution data for flexible team visibility. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/my-dashboard-agent-view.md)
 
 <font size="4">API Enhancements</font>
 
