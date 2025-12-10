@@ -44,28 +44,28 @@ Agents can add/delete hyperlinks in the text editor while responding to the mess
 Steps to add/remove hyperlinks:
 
 1. Highlight the text that you want to hyperlink and select the **Add Link** icon.  
-<img src="../images/highlight.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/highlight.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:80%;">
 
 2. In the **Add Link** dialog box, do the following:
     * Select the **web address** option and enter the URL in the box, for linking a web page.  
-    <img src="../images/link-to-web-address.png" alt="Link to Web Address" title="Link to Web Address" style="border: 1px solid gray; zoom:60%;">
+        <img src="../images/link-to-web-address.png" alt="Link to Web Address" title="Link to Web Address" style="border: 1px solid gray; zoom:60%;">
 
     * For linking an email address, select the **Email Address** option and enter the email address in the box.  
-    <img src="../images/add-link-email.png" alt="Add Link Email" title="Add Link Email" style="border: 1px solid gray; zoom:60%;">
+        <img src="../images/add-link-email.png" alt="Add Link Email" title="Add Link Email" style="border: 1px solid gray; zoom:60%;">
 
         !!! Note
 
             The highlighted text appears in the Text to display field.
 
 3. Select **Ok** to hyperlink the selected text.  
-<img src="../images/hyperlinked.png" alt="Hyperlinked Text" title="Hyperlinked Text" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/hyperlinked.png" alt="Hyperlinked Text" title="Hyperlinked Text" style="border: 1px solid gray; zoom:80%;">
 
 4. Hover over the hyperlinked text to view the following options:
     * Open
     * Break Link (icon)
     * Edit
 5. Press **Enter** to send the message.  
-<img src="../images/send-message.png" alt="Send Message" title="Send Message" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/send-message.png" alt="Send Message" title="Send Message" style="border: 1px solid gray; zoom:80%;">
 
 ## Viewing New Messages in the Console
 
@@ -151,10 +151,10 @@ The outbound dialer has the following functionalities:
 Agents can make outbound calls to the customers as follows:
 
 1. Select **+** on the conversation tray and then select Outbound Call. The dial pad displays.  
-<img src="../images/outbound-call-button.png" alt="Outbound Call" title="Outbound call" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/outbound-call-button.png" alt="Outbound Call" title="Outbound call" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the Calling from option on the Dialer tab, and select the number for placing the outbound call. Agents can use phone numbers or configured SIP trunks while making outbound calls.  
-<img src="../images/sip-and-phone-numbers.png" alt="Calling From Number" title="Calling From Number" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/sip-and-phone-numbers.png" alt="Calling From Number" title="Calling From Number" style="border: 1px solid gray; zoom:60%;">
 
 3. Agents can dial the outbound calls in two ways:
 
@@ -168,15 +168,15 @@ Agents can make outbound calls to the customers as follows:
 
         1. A user enters “123124”:
 
-            1. By default, the system doesn't select or validate any country code. A call is directly placed to this number.
+            * By default, the system doesn't select or validate any country code. A call is directly placed to this number.
 
-            2. If the user has dialed a call with a USA number, they can change the country code to unknown.
+            * If the user has dialed a call with a USA number, they can change the country code to unknown.
 
         2. A user pastes “123121”:
 
-            1. Initially, a validation error appears if the number doesn't match the defined format for the default country.
+            * Initially, a validation error appears if the number doesn't match the defined format for the default country.
 
-            2. The user can change the country code to unknown and a call is directly dialed to this number.
+            * The user can change the country code to unknown and a call is directly dialed to this number.
 
         3. User pastes/enters “+91987654321”: The system selects India as the country code and dials the call.
 
@@ -216,13 +216,13 @@ When the agent accepts the voicemail, the transcript and recording displays on t
 You can call the customer as follows:
 
 1. Select the **Call** option on the VOICEMAIL panel.  
-<img src="../images/callback button.png" alt="Call Option" title="Call Option" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/callback button.png" alt="Call Option" title="Call Option" style="border: 1px solid gray; zoom:50%;">
 
 2. The outbound call dialer appears. Select the **Call** option to initiate the outbound call.  
-<img src="../images/dialpad-call-button.png" alt="Dialpad Call Option" title="Dialpad Call Option" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/dialpad-call-button.png" alt="Dialpad Call Option" title="Dialpad Call Option" style="border: 1px solid gray; zoom:70%;">
 
 3. The agent can continue the conversation.  
-<img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:70%;">
 
 ### Consult Call, Conference Call, and Warm Transfer for Voice Calls
 
@@ -281,21 +281,21 @@ Following the consult or conference call, the initiating agent can proceed with 
 Steps to initiate a Call Transfer:
 
 1. Select the **Transfer** option to initiate the transfer.  
-<img src="../images/transfer-consult-call.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-consult-call.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:80%;">
 
     Recent transfer results appear.  
     <img src="../images/transfer-results.png" alt="Recent Transfer Results" title="Recent Transfer Results" style="border: 1px solid gray; zoom:80%;">
 
 2. You can search for an **Agent** or **Queue** to transfer the call.  
-<img src="../images/agent-queue-transfer.png" alt="Agent/Queue Transfer" title="Agent/Queue Transfer" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent-queue-transfer.png" alt="Agent/Queue Transfer" title="Agent/Queue Transfer" style="border: 1px solid gray; zoom:80%;">
 
 ### Agent Transfer
 
 * The following options appear on selecting an agent:  
-<img src="../images/transfer-options.png" alt="Agent Transfer Options" title="Agent Transfer Options" style="border: 1px solid gray; zoom:30%;">
+    <img src="../images/transfer-options.png" alt="Agent Transfer Options" title="Agent Transfer Options" style="border: 1px solid gray; zoom:30%;">
 
 * Select **Transfer** to directly transfer the call to another agent.  
-<img src="../images/transfer-agent.png" alt="Agent Transfer" title="Agent Transfer" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/transfer-agent.png" alt="Agent Transfer" title="Agent Transfer" style="border: 1px solid gray; zoom:50%;">
 
 !!! Note
 
@@ -304,99 +304,97 @@ Steps to initiate a Call Transfer:
 ### Consult Call
 
 * Select **Consult** to initiate a call with another agent while the external call progresses.  
-<img src="../images/consult-button.png" alt="Consult" title="Consult" style="border: 1px solid gray; zoom:30%;">
+    <img src="../images/consult-button.png" alt="Consult" title="Consult" style="border: 1px solid gray; zoom:30%;">
 
 * A consult call initiates, and the places external call on hold.  
-<img src="../images/connecting-consult-call.png" alt="Initiate Consult Call" title="Initiate Consult Call" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/connecting-consult-call.png" alt="Initiate Consult Call" title="Initiate Consult Call" style="border: 1px solid gray; zoom:80%;">
 
 * The consult call displays on the conversation tray of the receiving agent.  
-<img src="../images/accept-consult-call.png" alt="Conversation Tray" title="Conversation Tray" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/accept-consult-call.png" alt="Conversation Tray" title="Conversation Tray" style="border: 1px solid gray; zoom:80%;">
 
 * On accepting the call it appears on the Live Interaction pane of the receiving agent.  
-<img src="../images/consult-call-connected.png" alt="Consult Call Connected" title="Consult Call Connected" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/consult-call-connected.png" alt="Consult Call Connected" title="Consult Call Connected" style="border: 1px solid gray; zoom:60%;">
 
 * The initiating agent can continue the conversation with the receiving agent. The following options are available to the initiating agent.  
-<img src="../images/customer-on-hold-Consult.png" alt="Agent Options Consult Call" title="Agent Options Consult Call" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/customer-on-hold-Consult.png" alt="Agent Options Consult Call" title="Agent Options Consult Call" style="border: 1px solid gray; zoom:50%;">
 
 * Select the **Swap** option to swap between the external and internal (consult) calls. When switching to the external call, places the internal call on hold and pauses the recording.  
-<img src="../images/swap-button.png" alt="Swap" title="Swap" style="border: 1px solid gray; zoom:40%;">
+    <img src="../images/swap-button.png" alt="Swap" title="Swap" style="border: 1px solid gray; zoom:40%;">
 
 ### Conference Call
 
 * Select the **Merge** option to initiate a Conference Call with the customer.  
-<img src="../images/merge-button.png" alt="Merge" title="Merge" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/merge-button.png" alt="Merge" title="Merge" style="border: 1px solid gray; zoom:50%;">
 
 * The conference call appears on the conversation tray of the receiving agent and a notification displays on the right corner of the agent console.  
-<img src="../images/initiate-conference-call.png" alt="Initiate Conference Call" title="Initiate Conference Call" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/initiate-conference-call.png" alt="Initiate Conference Call" title="Initiate Conference Call" style="border: 1px solid gray; zoom:60%;">
 
 * On accepting the call, the conference call connects and the agents can no longer interact privately.  
-<img src="../images/conference-call-connected.png" alt="Conference Call Connected" title="Conference Call Connected" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/conference-call-connected.png" alt="Conference Call Connected" title="Conference Call Connected" style="border: 1px solid gray; zoom:60%;">
 
 * A notification appears on the right corner of the console if the customer drops off during a conference call.  
-<img src="../images/conference-call-terminated.png" alt="Conference Call Terminated" title="Conference Call Terminated" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/conference-call-terminated.png" alt="Conference Call Terminated" title="Conference Call Terminated" style="border: 1px solid gray; zoom:60%;">
 
 ### Warm Transfer
 
 * Select the **Forward** option to transfer the conversation to another agent.  
-<img src="../images/forward-button.png" alt="Forward" title="Forward" style="border: 1px solid gray; zoom:40%;">
+    <img src="../images/forward-button.png" alt="Forward" title="Forward" style="border: 1px solid gray; zoom:40%;">
 
 * The initiating agent gets disconnected and the conversation appears on the conversation tray of the receiving agent. A notification appears on the right corner of the agent console.  
-<img src="../images/initiate-call-forwarding.png" alt="Initiate Call Forwarding" title="Initiate Call Forwarding" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/initiate-call-forwarding.png" alt="Initiate Call Forwarding" title="Initiate Call Forwarding" style="border: 1px solid gray; zoom:50%;">
 
 * On accepting, the call transfers to the receiving agent.  
-<img src="../images/call-transferred.png" alt="Call Transferred" title="Call Transferred" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/call-transferred.png" alt="Call Transferred" title="Call Transferred" style="border: 1px solid gray; zoom:70%;">
 
 ### Queue Transfer
 
 * The following options appear on selecting a queue:  
-<img src="../images/queue-transfer-options.png" alt="Queue Transfer Options" title="Queue Transfer Options" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/queue-transfer-options.png" alt="Queue Transfer Options" title="Queue Transfer Options" style="border: 1px solid gray; zoom:50%;">
 
 * Select **Transfer** to directly transfer the call to another queue.  
-<img src="../images/transfer-queue.png" alt="Transfer Queue" title="Transfer Queue" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/transfer-queue.png" alt="Transfer Queue" title="Transfer Queue" style="border: 1px solid gray; zoom:50%;">
 
 ### External Consult and Conference During an Ongoing Interaction
 
 While interacting with a customer, if an agent needs to seek external consultation, they can initiate an outbound call as follows:
 
 1. Select the **Dialpad** icon.  
-<img src="../images/dialpad.png" alt="Dialpad" title="Dialpad" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/dialpad.png" alt="Dialpad" title="Dialpad" style="border: 1px solid gray; zoom:60%;">
 
 2. The **External Consultation Call** window appears. You can dial an external call in three ways:
-    1. **Manual Dialer**:
-
-        1. Enter the phone number with the country code, and the country’s flag appears automatically on the left. Select the **🕻** option to initiate an external outbound call.  
+    1. **Manual Dialer**: Enter the phone number with the country code, and the country’s flag appears automatically on the left. Select the **🕻** option to initiate an external outbound call.  
         <img src="../images/dialer.png" alt="Dial Phone Number" title="Dial Phone Number" style="border: 1px solid gray; zoom:50%;">
 
     2. **Contacts Tab**:
         1. Select the **Contacts** tab, enter the name of the contact in the search bar, and press **enter**.  
-        <img src="../images/contacts-tab.png" alt="Contacts Tab" title="Contacts Tab" style="border: 1px solid gray; zoom:70%;">
+            <img src="../images/contacts-tab.png" alt="Contacts Tab" title="Contacts Tab" style="border: 1px solid gray; zoom:70%;">
 
         2. The search results appear. Select **🕻**.  
-        <img src="../images/call-button (2).png" alt="Call Icon" title="Call Icon" style="border: 1px solid gray; zoom:60%;">
+            <img src="../images/call-button (2).png" alt="Call Icon" title="Call Icon" style="border: 1px solid gray; zoom:60%;">
 
         3. The phone number appears on the dialer tab. Select **🕻** to dial the call.  
-        <img src="../images/contact-call.png" alt="Call Dialer" title="Call Dialer" style="border: 1px solid gray; zoom:60%;">
+            <img src="../images/contact-call.png" alt="Call Dialer" title="Call Dialer" style="border: 1px solid gray; zoom:60%;">
 
     3. **Call History Tab**:
 
         1. Select the **Call History** tab.  
-        <img src="../images/call-history (2).png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
+            <img src="../images/call-history (2).png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
 
         2. Select the **🕻** option for the number to which you want to forward the call.  
-        <img src="../images/call-button (3).png" alt="Call" title="Call" style="border: 1px solid gray; zoom:60%;">
+            <img src="../images/call-button (3).png" alt="Call" title="Call" style="border: 1px solid gray; zoom:60%;">
 
         3. The phone number appears on the dialer tab. Select the **🕻** option to dial the call.  
-        <img src="../images/dialer.png" alt="Dialer" title="Dialer" style="border: 1px solid gray; zoom:60%;">
+            <img src="../images/dialer.png" alt="Dialer" title="Dialer" style="border: 1px solid gray; zoom:60%;">
 
 3. The external consult call connects and places the customer on hold. The following options are available with agents during the external consult call:
-    1. **Mute** - Silence the conversation.
-    2. **Hold** - Place the external consult call on hold.
-    3. **Keypad** -  To enter DTMF inputs, enabling users to navigate IVR menus to connect external parties to the conference.
-    4. **Merge** - Merge the external call with the existing inbound call (conference).
-    5. **Forward** - Forward the call to another agent.
-    6. **End** - End the external consult call.
-    7. **Swap** - Swap between the customer and the external call.  
-    <img src="../images/consult-call-option.png" alt="Consult Call Options" title="Consult call Options" style="border: 1px solid gray; zoom:60%;">
+    * **Mute** - Silence the conversation.
+    * **Hold** - Place the external consult call on hold.
+    * **Keypad** -  To enter DTMF inputs, enabling users to navigate IVR menus to connect external parties to the conference.
+    * **Merge** - Merge the external call with the existing inbound call (conference).
+    * **Forward** - Forward the call to another agent.
+    * **End** - End the external consult call.
+    * **Swap** - Swap between the customer and the external call.  
+        <img src="../images/consult-call-option.png" alt="Consult Call Options" title="Consult call Options" style="border: 1px solid gray; zoom:60%;">
 
     The Call History tab contains records of the outbound calls.  
         <img src="../images/call-history-tab.png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
@@ -741,7 +739,7 @@ Outbound email functionality is a key feature within Contact Center AI designed 
 Steps to send an outbound email:
 
 1. Select the **+** on the right corner of the conversation tray.  
-<img src="../images/button.png" alt="+ option" title="+ option" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/button.png" alt="+ option" title="+ option" style="border: 1px solid gray; zoom:80%;">
 
 2. Select the **New Mail** option.
 
@@ -804,13 +802,13 @@ Steps to send an outbound email:
 Color codes help in easy identification and better readability of conversations on digital channels.
 
 * The blue dot represents a conversation in which an agent is engaged.  
-<img src="../images/blue-dot.png" alt="Blue Dot" title="Blue Dot" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/blue-dot.png" alt="Blue Dot" title="Blue Dot" style="border: 1px solid gray; zoom:80%;">
 
 * The red dot represents an overdue conversation.  
-<img src="../images/red-dot.png" alt="Red Dot" title="Red Dot" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/red-dot.png" alt="Red Dot" title="Red Dot" style="border: 1px solid gray; zoom:60%;">
 
 * New email conversations in the conversations tray.  
-<img src="../images/new-email.png" alt="New Email Notification" title="New Email Notification" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/new-email.png" alt="New Email Notification" title="New Email Notification" style="border: 1px solid gray; zoom:60%;">
 
 ## Add Notes to Interactions
 
@@ -819,7 +817,7 @@ You can add notes on the interaction (customer feedback, key points, next action
 To add a new note:
 
 1. Select **Notes**.  
-<img src="../images/interactions-notes.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/interactions-notes.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:80%;">
 
 2. Select **+ Add New Note**.
 
@@ -830,10 +828,10 @@ To add a new note:
 Modify skills in a live interaction by selecting the Live Interaction option in [Skill Modification](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#skill-modification):
 
 1. Select the **Add Skills** option on the Skills bar.  
-<img src="../images/add-skills-button.png" alt="Add Skills" title="Add Skills" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-skills-button.png" alt="Add Skills" title="Add Skills" style="border: 1px solid gray; zoom:80%;">
 
 2. Select the necessary skills from the drop-down.  
-<img src="../images/skills.png" alt="Select Skills" title="Select Skills" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/skills.png" alt="Select Skills" title="Select Skills" style="border: 1px solid gray; zoom:80%;">
 
 ## Transfer Interactions
 
@@ -946,10 +944,10 @@ If ACW is enabled, then the system manages the conversations based on the ACW co
 * Agents can see a countdown timer when the conversation ends, indicating the time left to provide a disposition.
 * The slot becomes available if the agent submits a disposition or when the timer elapses.
 * The system generates a disposition code and fills any empty disposition fields when agents do not provide dispositions within the allotted time.  
-<img src="../images/timed-slot-release.png" alt="Timed Slot Release" title="Timed Slot Release" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/timed-slot-release.png" alt="Timed Slot Release" title="Timed Slot Release" style="border: 1px solid gray; zoom:80%;">
 
 * When the disposition timer expires, the system displays a message to the agent.  
-<img src="../images/time-expired-message.png" alt="Time Expired Message" title="Time Expired Message" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/time-expired-message.png" alt="Time Expired Message" title="Time Expired Message" style="border: 1px solid gray; zoom:80%;">
 
 * For conversations transferred to another queue, the system applies the final queue’s disposition mode to determine the required dispositions.
 
@@ -981,14 +979,14 @@ There are two ways to assign a disposition:
 
 2. At the end of the conversation:
 
-    * Select the **Conversation** in your tray.
-    * You must select a **Status** from the following available options:
+    1. Select the **Conversation** in your tray.
+    2. You must select a **Status** from the following available options:
         * **Resolved**: Select after resolution of customer query.
         * **Abandoned**: Select if the customer has abandoned the conversation and is no longer responding.
         * **Pending**: Select if the query is pending resolution.
-        * **Custom**: Administrators can [create custom disposition codes](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
-    * Optionally, type a **Description** of your reason for selecting the disposition.
-    * Select **Close** to close the conversation.
+        * **Custom**: Administrators can [create custom disposition codes](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.  
+     Optionally, type a **Description** of your reason for selecting the disposition.
+    3. Select **Close** to close the conversation.
 
 #### Intelligent Disposition Code Suggestions
 
@@ -1067,7 +1065,7 @@ This section displays the live interaction summary with the following details:
 * **Wait Time**: This shows the time that the chat has been waiting for an agent to respond.
 * **Intent**: Shows the customer’s primary purpose for initiating the live interaction.
 * **Sentiment**: Captures the customer sentiments based on their responses.  
-<img src="../images/arrival-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/arrival-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
 
 After accepting the conversation, all interactions by the agent displays after the arrival summary. If generating the arrival summary takes time, a loading indicator appears until the summary is ready. After an agent transfer, Agent 2 sees the entire summary of the prior conversation, displayed immediately after the last message from Agent 1.
 
@@ -1205,7 +1203,7 @@ CSAT surveys trigger based on the scenarios configured by administrators/supervi
 * **Show to Every nth User**: When administrators configure this scenario, the system automatically triggers a survey for every completed nth interaction between an agent and a customer on digital or voice channels. For example: If the set frequency is 2, then the system triggers the survey for every second customer.
 * **Agents can trigger**: When administrators configure this scenario, agents can trigger a survey at any point during the interaction:
     * Select **Send Survey** on the right corner. Th s highlights the send survey and a survey icon appears on the **End** icon in the live interaction pane.  
-    <img src="../images/csat-button.png" alt="CSAT" title="CSAT" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/csat-button.png" alt="CSAT" title="CSAT" style="border: 1px solid gray; zoom:70%;">
 
     * The system triggers the survey to the customer when the agent selects End with the survey selected.
 
