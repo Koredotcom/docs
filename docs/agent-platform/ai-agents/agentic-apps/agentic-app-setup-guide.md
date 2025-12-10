@@ -37,7 +37,7 @@ If you've set up XO, both your existing workspaces and shared workspaces will be
 ### 4. Deployment Phase
 
 1. **Deploy the App**: App deployment involves transitioning an application version from development to live environments in a structured and repeatable way. This ensures that thoroughly tested, stable versions are available to users in designated environments, such as development, staging, or production. [Learn more](deployment/app-deployment.md){:target="_blank"}.
-2. **Integrate the Deployed App with one of the following platforms:**:
+2. **Integrate the Deployed App with one of the following platforms**:
 
     * [AI for Service](../ai-for-service.md){:target="_blank"}
     * [AI for Work](../ai-for-work.md){:target="_blank"}
