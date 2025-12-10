@@ -35,8 +35,8 @@ Language metrics are based on a configuration set at the evaluation metric level
 
 To filter by language, 
 
-1. Select the **All Languages** filter at the top right corner of the dashboard.
-2. Search or select one or more languages from the dropdown.   
+1. Select the **All Languages** filter.
+2. Select one or more languages from the dropdown.   
 <img src="../agent-dashboard/images/all-langs.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note
@@ -135,7 +135,7 @@ Shows agents a clear view of customer sentiment in their own conversations. It h
 
 Agents can view:
 
-* **Average Sentiment Score: **Shows the agent’s average sentiment score across all topics, including positive and negative interaction counts and trend indicators.
+* **Average Sentiment Score**: Shows the agent’s average sentiment score across all topics, including positive and negative interaction counts and trend indicators.
 
 * **Top 5 Highest Sentiment L3 Topics**: Lists the five L3 topics with the highest sentiment scores in descending order.
 
@@ -245,7 +245,7 @@ Navigate to **Quality AI** > **ANALYZE** > **My Dashboard** > **Evaluation**.
 
 The interactions displayed in the Evaluation tab depend on the **Agent Access to Scored Interactions** configuration.
 
-##### Manually Audited Interactions Only
+##### Only Manually Audited Interactions 
 
 Displays only supervisor-audited scores, including:
 

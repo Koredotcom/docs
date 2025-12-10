@@ -80,8 +80,7 @@ When the **Agent Score Card** is enabled from the **Settings**, you can view the
 #### Disable Agent Score Card
 Steps to disable the Agent Score Card:
 
-1. If you turn off the **Agent Score Card** toggle, a confirmation dialog box appears to disable the Agent Scorecard.  
-<img src="../settings/images/disable-agent-scorecard.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:100%;">
+1. Turn off the **Agent Score Card** toggle to disable the Agent Scorecard.  
 
 1. Select **Save** to save the settings.
 
@@ -121,69 +120,65 @@ Steps to disable Bookmarks:
 
 ## Agent Access to Scored Interactions
 
-This feature allows agents to view their supervisor-audited scores to assess and improve their performance and take action accordingly. By default, this feature is disabled. When enabled, this option adds a new tab next to the **Overview** section on the agent dashboard. 
+This feature allows agents to view their supervisor-audited scores to assess and improve their performance and take action accordingly. By default, this feature is disabled. When enabled, this option adds a new tab next to the **Overview** tab on the agent dashboard. 
 
-Agents can use it to view scored interactions audited by a supervisor, accessible via **My Dashboard** > **Overview** > **Evaluation**.   
+Agents can use it to view scored interactions audited by a supervisor, accessible via **My Dashboard** > **Overview** > **Evaluation**.     
 <img src="./settings/quality-ai-general-settings/images/my-dashboard-evaluation.png" alt="Evaluation" title="Evaluation" style="border: 1px solid gray; zoom:100%;">
 
-**Agent Access to Scored Interactions** has the following two options: 
+Agent Access to Scored Interactions has the following two options: 
 
-1. **Only manually audited interactions** 
-    <img src="../settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">
-
-    This allows you only to view the scored interactions audited by the supervisor.	      
-    <img src="../settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">
-
-2. **Manually audited interactions and Auto QA scored interactions**   
-    <img src="../settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">
-
-    You can view both Auto QA scored interactions and supervisor-audited score interactions.   
-    <img src="../settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">
+1. **Only manually audited interactions**: This interaction only allows you to view the scored interactions the supervisor audited.
+     
+2. **Manually audited interactions and Auto QA scored interactions**: This selected interaction allows you to view both Auto QA–scored interactions and the interactions the supervisor audited.  
+<img src="./settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:80%;">
+ 
+Refer to the [Available Interactions Based on Access Settings:octicons-arrow-right-24:](../analyze/my-dashboard-agent-view.md#available-interactions-based-on-access-settings).
 
 ### Agent Dashboard Insights
 
 Controls whether agents can view Sentiment Insights and Resolution Insights on their Agent Dashboard at the app level.
 
-* **When Disabled (default): 
+* **When Disabled (default)**: Agents cannot view sentiment charts, resolution metrics, or topic-level insights. Their dashboard shows only standard information such as coaching assignments, scorecards, and performance data. 
 
-** Agents cannot view sentiment charts, resolution metrics, or topic-level insights. Their dashboard shows only standard information such as coaching assignments, scorecards, and performance data. 
+* **When Enabled**: Agents gain access to additional insights, including:
 
-* **When Enabled: 
-** Agents gain access to additional insights, including:
     * Sentiment trends
     * Topic-level sentiment distribution
     * Resolution rates
-    * Drill-down metrics  
-    <img src="../settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">
+    * Drill-down metrics    
+    <img src="../configure/settings/quality-ai-general-settings/images/agent-dashboard-insights.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">
 
     These insights match those available to supervisors but apply only to the agent’s own conversations and settings.
 
-### Hide Auditor Details for Agent
+### Audit Settings
 
-This feature allows supervisors to hide auditor identity details at the app level from agents being evaluated. 
+The Audit settings have the following two options: 
 
-<img src="../settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">  
+1. **Allow agents to view AI-generated emotions and sentiment insights**: This allows agents to view the emotional indicators and sentiment scores generated by the AI for each interaction. These insights help agents understand customer tone, identify potential issues, and improve the accuracy of their evaluations. When disabled, agents cannot have access to AI-generated emotional or sentiment data in the audit view.
 
-When enabled, agents see the **Anonymous** name instead of the auditor's name for security purposes.
-<img src="../settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">  
+2. **Hide Auditor Details for Agent**: When this setting is enabled, supervisors can hide auditor identity details from agents who are being evaluated. This helps maintain privacy and reduces potential bias by preventing agents from seeing who performed the audit.
 
-## Manual Audit
+When enabled, agents see the **Anonymous** name instead of the auditor's name for security purposes. 
+
+### Manual Audit
 
 This feature allows supervisors to select additional metric types for comprehensive manual quality evaluations.
 
-<img src="../settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">
-
-### Audit Speech Metrics
+#### Audit Speech Metrics
 
 **Purpose:** Provides comprehensive speech analysis capabilities for quality assurance and agent development.
 
 * If **By Speech** is enabled, auditors can input responses for each speech metric (for example, clarity, tone, pace).
+
 * If **By Playbook** is enabled:
+
     * For **By Step**: Show each step and let the auditor input responses step-wise.
+
     * For **the entire Playbook**: Show consolidated evaluation interface.
+
 * All tabs support radio buttons or input fields for auditor responses.
 
-### Audit Playbook Metrics
+#### Audit Playbook Metrics
 
 Evaluates agent adherence to established conversation playbooks and structured interaction protocols. enables the evaluation of speech-related performance indicators during audits.
 
