@@ -251,7 +251,7 @@ If an agent selects a channel and logs out at the end of the day, the previously
     * Agent Groups the agent is part of.  
         <img src="../images/agent-name-hover.png" alt="Agent Name Hover" title="Agents Name Hover" style="border: 1px solid gray; zoom:80%;">  
 
-* The load capacity indicator displays the agent’s overall load capacity. Hovering over the load shows the channel-wise load capacity—for example, Live Chat ⅔ (2 slots out of 3 defined slots engaged) and the total digital conversation limit.
+* The load capacity indicator displays the agent’s overall load capacity. Hovering over the load shows the channel-wise load capacity-for example, Live Chat ⅔ (2 slots out of 3 defined slots engaged) and the total digital conversation limit.  
     <img src="../images/load-capacity-indication.png" alt="Load Capacity Indicator" title="Load Capacity Indicator" style="border: 1px solid gray; zoom:80%;">
 
 * On the monitor tab, select an agent on the left side. The supervisor can view the agent’s ongoing conversation on the right and check the engagement metrics.  
