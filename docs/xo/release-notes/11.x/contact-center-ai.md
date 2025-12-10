@@ -56,7 +56,7 @@ The Connect to API node now supports handling client (4xx) and server (5xx) erro
 
 **Campaign Suppression Behavior**
 
-The system now reevaluates suppressed campaigns as soon as the suppression condition expires. Campaigns become eligible again when cooldowns end, active chats close, or conflicting campaign templates no longer apply. Because this is an event-driven process, the system reconsiders a suppressed campaign for display only when a new event triggers evaluation. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#campaign-suppression-and-re-evaluation)
+The system now reevaluates suppressed campaigns as soon as the suppression condition expires. Campaigns become eligible again when cool downs end, active chats close, or conflicting campaign templates no longer apply. Because this is an event-driven process, the system reconsiders a suppressed campaign for display only when a new event triggers evaluation. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#campaign-suppression-and-re-evaluation)
 
 **Global and Campaign-Specific DNCs Now Mandatory**
 
@@ -124,7 +124,7 @@ A new Logs section offers enhanced visibility into web campaign activity. Users 
 
 <font size="4">API</font>
 
-**Call Details API (v1) – Enhanced with Disconnect Event Fields**
+**Call Details API (v1) - Enhanced with Disconnect Event Fields**
 
 The Call Details API (v1) now includes disconnect event fields, providing better visibility into conversation termination details. This enhancement maintains backward compatibility while improving reporting and analytics. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v1.md) 
 
@@ -153,7 +153,7 @@ Agents can forward email conversations to internal or external recipients, prese
 
 **Editable TO, CC, and BCC Fields in Email Replies and Forward**
 
-Agents can now edit TO, CC, and BCC fields when replying, replying all, or forwarding emails, with support for multiple recipients and validation. Replies preserve threading using Message-ID and Reply-To. Forward opens with empty fields. Administrators can enable or disable this feature account-wide; it is enabled by default. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+Agents can now edit TO, CC, and BCC fields when replying, replying all, or forwarding emails, with support for multiple recipients and validation. Replies preserve threading using Message-ID and Reply-To. Forward opens with empty fields. Administrators can enable or disable this feature account-wide; it's enabled by default. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
 
 <font size="4">Configuration</font>
 
@@ -167,7 +167,7 @@ Administrators can configure a custom command that contains at least 6 character
 
 **Extend Email Session Timers**
 
-Email sessions can now remain active until manually closed, with configurable timers extending up to 30 days. Administrators can adjust queue wait time, overdue, inactivity, and auto-expiry settings to prevent premature session closure. Default settings remain unchanged for backward compatibility. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration)
+Email sessions can now remain active until manually closed, with configurable timers extending up to 30 days. Administrators can adjust queue wait time, overdue, inactivity, and auto expiry settings to prevent premature session closure. Default settings remain unchanged for backward compatibility. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration)
 
 <font size="4">Analytics</font>
 
@@ -233,13 +233,13 @@ The Inbound option in **User Attributes** → **Enable Voice** has been removed 
 
 **Voice Campaigns: Support for Experience Flows Without Phone Numbers**
 
-Voice campaigns can now be associated with experience flows that do not include phone numbers, extending support to agentless, progressive, and preview campaigns. The Caller ID dropdown lists all eligible outbound-only and inbound-outbound numbers, regardless of flow association. For active, scheduled, or paused campaigns, linked numbers and flows cannot be deleted. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md)
+Voice campaigns can now be associated with experience flows that don't include phone numbers, extending support to agentless, progressive, and preview campaigns. The Caller ID dropdown lists all eligible outbound-only and inbound-outbound numbers, regardless of flow association. For active, scheduled, or paused campaigns, linked numbers and flows can't be deleted. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md)
 
 <font size="4">Analytics</font>
 
 **Change Logs for Contact Center AI**
 
-The Contact Center AI logs are now integrated into the Change Logs under **App Settings** → **App Profile**. All CCAI log entries generated after the cutover date are stored in this new repository and displayed in the proper format, including the app name. The Admin Console’s Audit Log will no longer capture CCAI activity after the cutover date; older entries remain accessible there for reference. This ensures a clear separation between Admin Console operations and Contact Center AI change tracking. [Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
+The Contact Center AI logs are now integrated into the Change Logs under **App Settings** → **App Profile**. All CCAI log entries generated after the cutoff date are stored in this new repository and displayed in the proper format, including the app name. The Admin Console’s Audit Log will no longer capture CCAI activity after the cutoff date; older entries remain accessible there for reference. This ensures a clear separation between Admin Console operations and Contact Center AI change tracking. [Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
 
 **Latency Report (Beta)**
 
@@ -277,10 +277,10 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 New advanced settings enable customers to control how end-user information appears in the Interactions dashboard. Three configuration options are available:  
 
-* **Replace Customer Column with User ID on main page** – displays the User ID instead of email or phone in the dashboard.  
-* **Disable Userinfo tab in Details slider** – hides the Userinfo tab from the Details slider.  
+* **Replace Customer Column with User ID on main page** - displays the User ID instead of email or phone in the dashboard.  
+* **Disable Userinfo tab in Details slider** - hides the Userinfo tab from the Details slider.  
 * **Replace Customer Column with User ID in export file** – shows User ID instead of email or phone in exported reports.  
-All options are disabled by default, and customers who do not enable them will see no change in behavior. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md)  
+All options are disabled by default, and customers who don't enable them will see no change in behavior. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md)  
 <img src="../images/obscure-rn.png" alt="Obscuring Customer Information" title="Obscuring Customer Information" style="border: 1px solid gray; zoom:70%;">
 
 <hr>
@@ -299,15 +299,15 @@ The Chat History Tab now supports translation for past digital interactions, usi
 
 **Email Arrival Summarization, AI Content Disclaimer, and Fallback Message**
 
-Email interactions now include arrival summaries with intent, sentiment, queue details, and wait time, bringing feature parity with other channels. All LLM-generated summaries display the disclaimer “_AI-generated content – verify before using_” to ensure transparency. When summarization is disabled or fails, the system shows the fallback message “_Summarization is disabled_.” Existing summarization workflows in other channels remain unaffected. This enhancement improves agent context, supports compliance, and provides clear user feedback. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+Email interactions now include arrival summaries with intent, sentiment, queue details, and wait time, bringing feature parity with other channels. All LLM-generated summaries display the disclaimer “_AI-generated content - verify before using_” to ensure transparency. When summarization is disabled or fails, the system shows the fallback message “_Summarization is disabled_.” Existing summarization workflows in other channels remain unaffected. This enhancement improves agent context, supports compliance, and provides clear user feedback. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
 
 **Improved New Message Handling in Agent Console**
 
-The agent console no longer auto-scrolls when new user messages arrive, preventing disruption during conversation review. Instead, a floating “New Messages” button appears if the agent has scrolled up. Clicking the button scrolls to the latest message, after which the button disappears. This update enhances usability, preserves reading context, and grants agents complete control over when to view new messages. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#viewing-new-messages-in-the-console)
+The agent console no longer auto scrolls when new user messages arrive, preventing disruption during conversation review. Instead, a floating “New Messages” option appears if the agent has scrolled up. Selecting the option scrolls to the latest message, after which the option disappears. This update enhances usability, preserves reading context, and grants agents complete control over when to view new messages. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#viewing-new-messages-in-the-console)
 
 **GenAI-Based Disposition Prediction for Agent Wrap-Up**
 
-Contact Center Agents now receive AI-generated disposition code suggestions at the end of conversations. Using LLM analysis of the full transcript and disposition set metadata, the system recommends the most relevant wrap-up code, which is displayed in the disposition bar with options to accept it with one click or override it manually. This improves accuracy and reduces wrap-up time. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#intelligent-disposition-code-suggestions)  
+Contact Center Agents now receive AI-generated disposition code suggestions at the end of conversations. Using LLM analysis of the full transcript and disposition set metadata, the system recommends the most relevant wrap-up code, which displays in the disposition bar with options to accept it with one click or override it manually. This improves accuracy and reduces wrap-up time. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#intelligent-disposition-code-suggestions)  
 <img src="../images/wrap-up-code-release-notes.png" alt="Agent Wrap-up Code" title="Agent Wrap-up Code" style="border: 1px solid gray; zoom:70%;">
 
 <font size="4">Configuration</font>
@@ -327,7 +327,7 @@ The customId field now supports all special characters except spaces and backsla
 
 **Revised Channel Attachment Rules for Default Welcome Flows**
 
-Administrators can no longer attach channels to the Default Welcome Voice flow or Default Welcome Chat flow. Channels already attached to these flows will continue to function as configured. However, if a channel is reattached to a different flow, it cannot be reattached to a Default Welcome Voice flow or Default Welcome Chat flow. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#attach-a-flow) 
+Administrators can no longer attach channels to the Default Welcome Voice flow or Default Welcome Chat flow. Channels already attached to these flows will continue to function as configured. However, if a channel is reattached to a different flow, it can't be reattached to a Default Welcome Voice flow or Default Welcome Chat flow. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#attach-a-flow) 
 
 **HTML/CSS Email Templates for Response Templates and Surveys**
 
@@ -337,7 +337,7 @@ A Code View option is now available in the email message editor for Response Tem
 
 **Click-to-Call Capability for Web SDK Using Experience Flow Configuration**
 
-The Web SDK now supports a Click-to-Call button, enabling website visitors to start voice calls directly from the UI. Calls route through configured flows, share assistant transcripts with human agents, and support recording, transcription, and ACW. The button is disabled by default and can be configured using the theme editor. Sessions log separately in the dashboard and can be initiated before, during, or after bot/chat interactions. In live chat, the agent receives a closure notice and is redirected to ACW. Multiple SDK configurations and flexible deployment methods (npm, script tag, source modification) are supported. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#inbound-click-to-call-interaction) 
+The Web SDK now supports a Click-to-Call option, enabling website visitors to start voice calls directly from the UI. Calls route through configured flows, share assistant transcripts with human agents, and support recording, transcription, and ACW. The button is disabled by default and can be configured using the theme editor. Sessions log separately in the dashboard and can be initiated before, during, or after bot/chat interactions. In live chat, the agent receives a closure notice and is redirected to ACW. Multiple SDK configurations and flexible deployment methods (npm, script tag, source modification) are supported. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#inbound-click-to-call-interaction) 
 
 <font size="4">Analytics</font>
 
@@ -2284,7 +2284,7 @@ The key features and experience changes are summarized below.
         Deflect to Chat is no longer supported. This change is driven by the limited usage observed among customers, but we remain committed to addressing relevant needs and exploring adding support based on internal use cases.
 
     * **Centralized Publish Module**: To ensure consistency, simplify workflow management, and centralize management tasks, we've introduced a centralized Publish Module. All flows can be published from this module.  
-    <img src="../images/xo-platform-Centralised-Publish-Module.png" alt="Centralized Publish Module" title="Centralized Publish Module" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/xo-platform-centralized-publish-module.png" alt="Centralized Publish Module" title="Centralized Publish Module" style="border: 1px solid gray; zoom:70%;">
 
 * **Channels**:
 
@@ -2312,7 +2312,7 @@ The key features and experience changes are summarized below.
 * **New Campaigns Module**: The new Campaigns module simplifies and enhances outbound efforts across voice and web channels. It offers tools for creating targeted voice campaigns and proactive web campaigns, supported by easy-to-use templates and comprehensive analytics. This allows businesses to efficiently reach their audience, monitor campaign performance, and achieve their objectives with greater precision and effectiveness.
 
     * **Voice Campaigns** :Use the power of voice technology to connect with your audience through personalized messages or interactive experiences. Setting up a new voice campaign is easy—begin with a targeted contact list to ensure your message resonates with the right audience.  
-    <img src="../images/xo-platform-voicecampaign.png" alt="Voice Campaigns" title="Voice Campaigns" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/xo-platform-voice-campaign.png" alt="Voice Campaigns" title="Voice Campaigns" style="border: 1px solid gray; zoom:70%;">
 
     * **Proactive Web Campaigns**: Elevate your online presence with proactive web campaigns to promote your products, services, or brand. Utilizing digital channels, these campaigns are crafted to increase visibility, generate leads, and build brand awareness, ensuring measurable success.  
     <img src="../images/xo-platform-proactive-web-campaign.png" alt="Proactive Web Campaigns" title="Proactive Web Campaigns" style="border: 1px solid gray; zoom:70%;">

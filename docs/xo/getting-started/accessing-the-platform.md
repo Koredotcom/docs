@@ -6,18 +6,30 @@ It offers a comprehensive suite of products, features, and services to help busi
 
 ## Supported Browsers
 
-Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Internet Explorer mode in Microsoft Edge is not supported.
+Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Internet Explorer mode in Microsoft Edge is'nt supported.
 
 ## Accessing AI for Service (XO)
 
-Visit the [Homepage](https://platform.kore.ai/){:target="_blank"}. You will be directed to the login page.
+AI for Service is available in multiple regions. Click the URL to visit your region-specific login page.
+
+* **USA**: [https://platform.kore.ai](https://platform.kore.ai/){:target="_blank"}
+* **Europe (London)**: [https://eu-platform.kore.ai](https://eu-platform.kore.ai/){:target="_blank"}
+* **Europe (Frankfurt)**: [https://de-platform.kore.ai](https://de-bots.kore.ai/){:target="_blank"}
+* **Australia (APAC - Sydney)**: [https://au-platform.kore.ai](https://au-platform.kore.ai/){:target="_blank"}
+* **Japan (APAC - Tokyo)**: [https://jp-platform.kore.ai](https://jp-platform.kore.ai/){:target="_blank"}
+* **India**: [https://ind-platform.kore.ai](https://ind-platform.kore.ai/){:target="_blank"}
+* **UAE**: [https://uae-platform.kore.ai](https://uae-platform.kore.ai/){:target="_blank"}
+
+!!!Note
+    
+    The USA URL is used as an example throughout the documentation. Replace it with the region-specific URL as appropriate.
 
 You can sign up for AI for Service in any of the following two ways:
 
 * **Create a new account**: You can sign up for the platform using your email address. You can sign up to create a personal account or even take the lead in setting up your enterprise’s account in Kore.ai. After you sign up for the account, you automatically become the account’s Admin, which allows you to invite other users to the account.
 
-* **Join an existing enterprise account:** If your enterprise is already on Kore.ai, you can become a part of the account in one of the following ways:
-    * Your enterprise account’s Apps Admin sends you an invite. If you haven’t already received the invitation email, reach out to them for access.
+* **Join an existing enterprise account:** If your enterprise is on Kore.ai, you can become a part of the account in one of the following ways:
+    * Your enterprise account’s Apps Admin sends you an invite. If you haven’t received the invitation email, reach out to them for access.
     * You can sign up using your enterprise email account and you are prompted to either join the enterprise network or create your own personal account.
 
 !!! note "Important Points"
@@ -61,7 +73,7 @@ To sign up for a new account on the Platform, follow these steps:
 
 !!! note
 
-    The platform sends reminder emails with the verification code to the users who have not completed the sign up. The emails are sent to the email id provided by you during sign up, at periodic intervals as per the configurations done at the application level (Kore config level), with a new verificationcode upon expiry of the old ones.  
+    The platform sends reminder emails with the verification code to the users who have not completed the sign up. The emails are sent to the email id provided by you during sign up, at periodic intervals as per the configurations done at the application level (Kore config level), with a new verification code upon expiry of the old ones.  
     If the verification code expires or is invalid, the system displays a message to you, to request a new code to complete the verification process.
  
 Alternatively, you can sign up to the Platform using the Google or Microsoft Office.
@@ -116,10 +128,10 @@ To invite users to your Kore.ai Platform account, follow these steps:
 
         You can choose to invite a single user or bulk users.
 
-5. When the invited user accepts the invitation, they are redirected to the Sign-up page.
+5. When the invited user accepts the invitation, they're redirected to the Sign-up page.
     * If the user is new to the platform, they need to enter the required details to complete the registration. See [New Account Sign-up](../getting-started/accessing-the-platform.md#new-account-sign-up) to know more.
     
-    * If the user’s email address is already registered on the platform, the user is prompted to enter the password to sign in.
+    * If the user’s email address is registered on the platform, the user is prompted to enter the password to sign in.
 
 !!! note
     
@@ -148,7 +160,7 @@ After a user is invited to an account, the administrator can enable the Platform
 
 Team members can join one or multiple Workspaces, or they can create their own. It’s easy to browse Workspaces within the same organization and to switch between them. Here is how it works.
 
-Some of the common scenarios where you can join or sign up to a workspace include the following:
+Some common scenarios where you can join or sign up to a workspace include the following:
 
 * If you are invited by someone to join their workspace.
 * If your enterprise administrator adds you to your enterprise workspace through SSO or API.
@@ -193,7 +205,7 @@ Steps to invite users:
 
 !!! note
 
-    By default, the **Invite Members** option at the Builder level is visible for the admins with the ‘Master Admin’ role. For admins with custom administrator roles, the **Invite** permission should be enabled in the role management.
+    By default, the **Invite Members** option at the Builder level is visible for the admins with the ‘Master Admin’ role. For admins with custom administrator roles, the **Invite** permission must be enabled in the role management.
  
 
 ### Switch Workspaces
