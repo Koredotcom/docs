@@ -10,13 +10,13 @@ The default App language is **English**. Follow these steps to add a new languag
 2. On the Language Management page, in the **_Standard Languages_** section, click the **+ Add Language** to add languages.  
 <img src="../images/mlva-img4-add-lang.png" alt="Add Language" title="Add Language" style="border: 1px solid gray;zoom:50%;"/>
 
-3. The Platform will display all the 100 plus languages that are supported. You can click on the **Configure** button to enable a language.  
+3. The Platform displays all the 100 plus languages that are supported. You can click on the **Configure** button to enable a language.  
 <img src="../images/mlva-img5-config-new-lang.png" alt="Enable Language" title="Enable Language" style="border: 1px solid gray;zoom:50%;"/>  
   
     **Note:** You can also search for a language by entering its name in the Search field.
 
 4. After you click configure, you can setup the following language configurations:  
-<img src="../images/mlva-img6-new-lang-config.png" alt="Setup language configuations" title="Setup language configurations" style="border: 1px solid gray;zoom:50%;"/>  
+<img src="../images/mlva-img6-new-lang-config.png" alt="Setup language configurations" title="Setup language configurations" style="border: 1px solid gray;zoom:50%;"/>  
   
     a. **Choose the NLU Language** – Allows you to select any supported language as the NLU model to train your assistant.
 
@@ -45,10 +45,10 @@ If you want to enable/disable input translation, change the NLU language of the 
 To update an already enabled language for an assistant, follow the below steps:
 
 1. Go to **App Settings > Configurations > Language Management**.
-2. The platform will display all the languages under the **Standard Languages** section.
+2. The platform displays all the languages under the **Standard Languages** section.
 3. Click on the language that is already enabled in the AI Agent. The _Manage Language_ dialog appears, here you can:
 
-    a. **Update the NLU language** – Updating the NLU language will need training for the AI Agent again.
+    a. **Update the NLU language** – Updating the NLU language needs training for the AI Agent again.
 
     b. **Update the dialog prompts** – You can update the language pack file and upload it to update the dialog prompts.
 
@@ -68,11 +68,11 @@ The default App language is **English**. Follow these steps to add a new languag
 
 1. Go to **App Settings > Configurations > Language Management**.
 2. On the Language Management page, in the ***Standard Languages*** section, click the **+ Add Language** to add languages.
-3. The Platform will display all the languages that are supported. Click **Configure** to enable a language.
+3. The Platform displays all the languages that are supported. Click **Configure** to enable a language.
 4. After you click configure, you can set up the following language configurations:  
 <img src="../images/dgpt_language_management.png" alt="Multilingual setting" title="Multilingual setting" style="border: 1px solid gray;zoom:50%;"/>  
 
-    a.  Under Input, choose one of the following options:  
+    a. Under Input, choose one of the following options:  
 
       * Use original user input to process input in its original language using Dialog GPT’s multi-lingual models.  
       * Translation Engine to translate user input into the AI Agent’s default language using a translation service.
@@ -86,21 +86,69 @@ The default App language is **English**. Follow these steps to add a new languag
 
 5. Select Save to apply your changes.
 
-To edit the language configuration, select the language that is already enabled in the ***Standard Languages*** section, or select **Edit** in the ***Localization Configurations*** section.
+To edit the language configuration, select the language that's already enabled in the ***Standard Languages*** section, or select **Edit** in the ***Localization Configurations*** section.
 
 Update the configurations and then click **Save**.  
 <img src="../images/localization_configuration.png" alt="Manage language" title="Manage language" style="border: 1px solid gray;zoom:50%;"/>
 
+## Localization Configurations
+
+The **Localization Configuration** section provides a consolidated workspace for managing all language-specific components used across both DialogGPT-based and NLP-based applications. It gives users a unified view of every dialog component that supports localization and allows them to review, edit, and maintain all language-dependent prompts, messages, and responses in one place. This section simplifies configuration by listing each component, its associated text (messages, prompts, etc.), and the languages enabled in the application.
+
+Select **Configure** under **Manage language-specific responses** to override specific words or phrases and tailor responses for a chosen language.  
+
+<img src="../images/localization_configuration_configure.png" alt="localization_configuration" title="localization_configuration" style="border: 1px solid gray;zoom:50%;"/>
+
+### Response Specific Localisation
+
+This section includes the following categories of language-specific components:
+
+* Dialog Components
+* Standard Responses
+* Small Talk
+* Content Variables
+
+Users can update the localized content for each enabled language directly from this section.  
+
+<img src="../images/rephrase_specific.png" alt="rephrase_specific" title="rephrase_specific" style="border: 1px solid gray;zoom:50%;"/>
+
+Select the **edit** icon in any component row to open the Component Properties panel for that component. The panel displays all language-dependent properties associated with that node, including:
+
+* Component properties
+* IVR properties
+* JavaScript prompts (treated like any other language-specific prompt)
+
+### Filters
+
+Users can filter the list using:
+
+**Component Type**   
+  
+ Only component types that contain prompts appear in the dropdown. Applicable node types include:
+
+  * Agent Node (IVR properties) 
+  * Entity Node (component and IVR properties; overrides create node-specific prompts)
+  * Digital Forms
+  * Message Node (component and IVR properties)
+  * Confirmation Node (component and IVR properties)
+
+**Language**
+
+ Only languages enabled in the app are available for editing. Developers can update prompts for any enabled language from here.  
+ 
+ <img src="../images/filter.png" alt="Filter" title="Filter" style="border: 1px solid gray;zoom:50%;"/>
+
+
 ## Switching Languages 
 
-If you have configured multiple languages for an AI Agent, you can switch the language to configure the AI Agent from the top right corner (language dropdown) from within any area of your AI Agent. The dropdown will display all the other supported languages with the corresponding NLU model that is configured for the language. 
+If you have configured multiple languages for an AI Agent, you can switch the language to configure the AI Agent from the top right corner (language dropdown) from within any area of your AI Agent. The dropdown displays all the other supported languages with the corresponding NLU model that's configured for the language. 
 
 <img src="../images/mlva-img12-switch-language-1.png" alt="Switch language" title="Switch language" style="border: 1px solid gray;zoom:50%;"/>  
 
 
 !!! note
 
-    The language dropdown will display the App Language and NLU language for the languages where the App Language is not equal to NLU language. If the App Language and the NLU language are the same then the language drop down will display only the App Language.
+    The language dropdown displays the App Language and NLU language for the languages where the App Language is not equal to NLU language. If the App Language and the NLU language are the same then the language drop down displays only the App Language.
 
 
 ## Disabling/Enabling Languages
@@ -112,7 +160,7 @@ Languages can be enabled or disabled by going to **Build > Configurations > Lang
 
 After you have configured and enabled a language you can:
 
-  * Disable or deactivate a language that is previously enabled for the AI Agent. The actual language-specific data that has been added while enabling the language will continue to exist in the AI Agent even after disabling the language. Disabling would prevent the users from talking  to the assistant in that language (can be viewed in the AI Agent export copy)
+  * Disable or deactivate a language that's previously enabled for the AI Agent. The actual language-specific data that has been added while enabling the language continues to exist in the AI Agent even after disabling the language. Disabling would prevent the users from talking  to the assistant in that language (can be viewed in the AI Agent export copy)
   * If a language is disabled you can enable it again, since the data is preserved, you need not enter all the details.
 
 !!! note

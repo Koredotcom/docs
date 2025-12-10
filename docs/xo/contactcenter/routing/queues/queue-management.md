@@ -82,7 +82,7 @@ This section displays the following:
 
 1. At the top-right corner of the Configuration page, select **New Queue**.
 2. In the **New Queue** window, you can set up the queue as follows:  
-    <img src="../images/new-queue-button.png" alt="New Queue Button" title="New Queue Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/new-queue-button.png" alt="New Queue Icon" title="New Queue Icon" style="border: 1px solid gray; zoom:80%;">
     1. With **Simple Routing**, you can configure the Queue Settings and Assignments;  
     2. With **Advanced Routings**, you can configure the Queue Settings, Assignments, Preferred Agents, and Skills.
 
@@ -154,6 +154,26 @@ In the **Preferred** tab, you can assign preferred agents to the queue.
 
     When you are ready to save the Queue, select **Create**. The new Queue is then listed among your available queues.
 
+#### Additional Configuration
+
+Select this tab to configure:
+
+Outbound Phone Numbers
+
+Steps to configure outbound phone numbers:
+
+1. Enter the phone numbers or choose from the list.  
+2. Select **Apply** to save the outbound phone numbers.
+
+Outbound Email IDs
+
+Steps to configure outbound email IDs:
+
+1. Enter the email IDs or choose from the list.  
+2. Select **Apply** to save the email IDs.
+
+Administrators can turn on the Queue-level Outbound Numbers or Emails feature from [System Settings](../../configurations/settings/queue-level-outbound-numbers-emails.md) to restrict agents to only see the outbound phone numbers or email addresses assigned to their respective queue.
+
 ## Edit a Queue
 
 1. Select the **Edit** icon corresponding to the queue you want to edit.
@@ -164,7 +184,7 @@ In the **Preferred** tab, you can assign preferred agents to the queue.
 To delete a queue, follow these steps:
 
 1. Select the **Edit** icon corresponding to the queue you want to edit.
-2. Select**Delete** on the left side and confirm your choice.
+2. Select **Delete** on the left side and confirm your choice.
 
     !!! Note
 

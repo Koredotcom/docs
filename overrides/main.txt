@@ -1,0 +1,9 @@
+<!-- 
+{% extends "base.html" %}
+
+{% block announce %}
+  <div class="announcement">
+    <p>🚨 New Feature Alert: Check out the release notes</p>
+  </div>
+{% endblock %}
+-->

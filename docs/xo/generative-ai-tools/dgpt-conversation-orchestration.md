@@ -1,3 +1,5 @@
+
+
 # Conversation Orchestration
 
 Conversation Orchestration in DialogGPT allows you to define and manage Conversation Types while configuring separate Chunk Shortlisting and Conversation Orchestration models. You can turn Intent Events and Conversation Events on or off and choose how each event is fulfilled (by overriding the default fulfillment), ensuring precise and adaptable conversation management that you can confidently rely on.  
@@ -25,7 +27,7 @@ To manage the conversation types, click **Settings**, turn the toggle on/off to 
 
 Use the Model Configurations card to select the models for Shortlisting Relevant Chunks and Conversation Management (Orchestration).
 
-* **Shortlisting Relevant Chunks**: The supported models are **MPNet**, **BGE-M3**, **LaBSE**, and **E5 embedding**. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine. The recommended model is BGE-M3.
+* **Shortlisting Relevant Chunks**: **BGE-M3** is the supported and recommended model. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine.
 
 * **Maximum no. of Chunks to Shortlist (Knowledge from Search AI)**: Enter the maximum number of chunks to be shortlisted from Search AI. These chunks are send to the LLM for answer generation. The default value is 5. Click "[Go to Search AI](../searchai/retrieval.md)" to access the Search AI chunks retrieval settings.
 
