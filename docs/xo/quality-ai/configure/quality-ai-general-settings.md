@@ -166,7 +166,7 @@ This feature allows supervisors to select additional metric types for comprehens
 
 #### Audit Speech Metrics
 
-**Purpose:** Provides comprehensive speech analysis capabilities for quality assurance and agent development.
+**Purpose**: Provides comprehensive speech analysis capabilities for quality assurance and agent development.
 
 * If **By Speech** is enabled, auditors can input responses for each speech metric (for example, clarity, tone, pace).
 
@@ -182,15 +182,15 @@ This feature allows supervisors to select additional metric types for comprehens
 
 Evaluates agent adherence to established conversation playbooks and structured interaction protocols. enables the evaluation of speech-related performance indicators during audits.
 
-### For Non-Audited Interactions
+**For Non-Audited Interactions**
 
-* Agents can only see a non-editable single status:
+* Agents can only view a non-editable single status:
     * Executed
     * Not Executed
     * Not Applicable
 
-### For Manually Audited Interactions
+**For Manually Audited Interactions**
 
-* The agent sees:
-    * Non-selected radio buttons.
+* The agent can view only:
+    * Non-selected radio buttons
     * The supervisor's selected response highlighted
