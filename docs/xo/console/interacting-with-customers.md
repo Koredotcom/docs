@@ -220,9 +220,8 @@ You can call the customer as follows:
 
 2. The outbound call dialer appears. Select the **Call** option to initiate the outbound call.  
     <img src="../images/dialpad-call-button.png" alt="Dialpad Call Option" title="Dialpad Call Option" style="border: 1px solid gray; zoom:70%;">
-
-3. The agent can continue the conversation.  
-    <img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:70%;">
+    
+    The agent can continue the conversation. 
 
 ### Consult Call, Conference Call, and Warm Transfer for Voice Calls
 
