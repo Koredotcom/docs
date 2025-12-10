@@ -150,6 +150,10 @@ Controls whether agents can view Sentiment Insights and Resolution Insights on t
 
     These insights match those available to supervisors but apply only to the agent’s own conversations and settings.
 
+### AI Justification and Evidence
+
+When this setting is enabled, agents can view AI-generated justifications and supporting evidence for each question. These details are shown by question, by value, and by AI Agent metric type, helping agents understand how the AI arrived at specific scores or evaluations.
+
 ### Audit Settings
 
 The Audit settings have the following two options: 
