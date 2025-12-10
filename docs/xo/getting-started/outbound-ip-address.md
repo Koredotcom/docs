@@ -1,6 +1,6 @@
 # AI for Service (XO) Outbound IP Addresses
 
-AI for Service (XO) makes outbound requests from a fixed set of IP addresses within a specific region. If your systems or third-party services enforce IP allowlisting, you must add these IPs to your allowlist. This action ensures that traffic originating from AI for Service is recognized and permitted by your network or external service endpoints.
+AI for Service (XO) makes outbound requests from a fixed set of IP addresses within a specific region. If your systems or third-party services enforce IP allowlisting, you must add these IPs to your firewall or network's allowlist. This action ensures that traffic originating from AI for Service is recognized and permitted by your network or external service endpoints.
 
 ## Region-specific Outbound IP Addresses
 

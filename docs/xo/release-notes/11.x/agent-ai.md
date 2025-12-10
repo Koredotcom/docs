@@ -2,6 +2,47 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.20.0 December 07, 2025
+
+<u>Minor Release</u>
+
+<font size="4">API Enhancements</font>
+
+**Raw Data API Supports Custom Tab Details**
+
+The Raw Data API now displays Custom tab details in addition to Assist tab details. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/raw-data-api.md)
+
+**Enhanced Hooks API for Internal Transfers**
+
+The Hooks API now maintains accurate agent context—interaction ID, agent identity, and session continuity—during internal call transfers (cold and warm) across all supported third-party desktops, and no valid agent data appears under ‘Anonymous Agent’. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/hooks-api-for-internal-transfers.md)
+
+<font size="4">Integration Enhancements</font>
+
+**Salesforce Omni-Channel Integration Supports Email Interactions**
+
+Agent AI integration with Salesforce Omni-Channel now supports email interactions. Agent AI analyzes email bodies, understands customer intent, and generates suggestions such as draft responses, knowledge article recommendations, and next-best actions (NBAs).
+
+**Agent AI Voice Automation-Genesys Integration Supports Metadata Transfer**
+
+The Agent AI Voice Automation-Genesys integration now supports transferring contextual metadata via SIP REFER headers. This enhancement ensures that metadata passes seamlessly during call transfers, is captured, and is displayed in the Agent AI widget within the Genesys desktop, improving the agent experience and reducing handle time.
+
+**Outbound Call Support for NICE CXOne Agent Desktop**
+
+Agent AI integration with NICE CXOne Agent Desktop now supports outbound calls. This enhancement ensures that AI-driven guidance, transcription, and sentiment analysis work correctly for outbound interactions. 
+
+**Enhanced Agent AI Integration with ServiceNow**
+
+The latest Agent AI package on the ServiceNow App Portal supports the Xanadu, Yokohama, and Zurich releases. This release introduces two major enhancements: 
+
+* **Multibot Support**: You can now configure ServiceNow to utilize multiple Agent AI bots across different queues.
+* **Multilanguage Support**: Agent AI now supports dynamic language configuration, ensuring seamless interactions in multiple languages.  
+
+**Salesforce Einstein Bot in Widget Supports Conversation Summary**
+
+The Salesforce Einstein bot automation in the Agent AI widget now generates a user-bot conversation summary for the first agent who receives the conversation. The summary appears in the Assist tab under Landing Summary, helping agents quickly understand the context. 
+
+<hr>
+
 ## v11.19.1 November 19, 2025
 
 <u>Patch Release</u>

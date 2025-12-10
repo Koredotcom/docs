@@ -36,6 +36,8 @@ Two new API scopes now provide granular access control for external model connec
 
 The OpenAI gpt-4o-search-preview model is now supported in Prompts and Workflow tools. The model is optimized for search and RAG workflows, and features multi-chunk document retrieval and grounded response generation.
 
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md#supported-external-models-for-easy-integration)
+
 <hr>
 
 ## v1.3.1 November 21, 2025

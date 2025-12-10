@@ -479,6 +479,14 @@ Allow user to receive request for supervisor support from an agent
    </td>
 </tr>
 <tr>
+   <td><strong>Download Interactions Data</strong>
+   <br>
+Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -1158,6 +1166,14 @@ Allow user to receive request for supervisor support from an agent
    </td>
 </tr>
 <tr>
+   <td><strong>Download Interactions Data</strong>
+   <br>
+Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -1791,6 +1807,14 @@ Allow user to send request for supervisor support
    <td><strong>Receive Supervisor Support</strong>
    <br>
 Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Download Interactions Data</strong>
+   <br>
+Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
    </td>
    <td>Yes
    </td>
@@ -2446,6 +2470,14 @@ Allow user to receive request for supervisor support from an agent
    </td>
 </tr>
 <tr>
+   <td><strong>Download Interactions Data</strong>
+   <br>
+Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -3095,6 +3127,14 @@ Allow user to send request for supervisor support
    <td><strong>Receive Supervisor Support</strong>
    <br>
 Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Download Interactions Data</strong>
+   <br>
+Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
    </td>
    <td>No
    </td>
@@ -3908,6 +3948,15 @@ No</td>
    <td><strong>Receive Supervisor Support</strong>
    <br>
 Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   <br>
+No</td>
+</tr>
+<tr>
+   <td><strong>Download Interactions Data</strong>
+   <br>
+Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
    </td>
    <td>Yes
    <br>

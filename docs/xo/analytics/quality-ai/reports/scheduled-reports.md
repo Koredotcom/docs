@@ -1,6 +1,6 @@
-# Scheduled Reporting
+# Scheduled Reports
 
-The Quality AI scheduled reporting feature provides a structured framework for monitoring, evaluating, and improving agent performance. It enables the tracking of agent productivity, adherence to quality standards, and interaction effectiveness, while providing insights into operational efficiency and compliance with evaluation metrics. By generating and analyzing scheduled reports, QA managers and supervisors can identify coaching opportunities, ensure alignment with organizational goals, and drive continuous improvement. 
+The Quality AI scheduled reports feature provides a structured framework for monitoring, evaluating, and improving agent performance. It enables the tracking of agent productivity, adherence to quality standards, and interaction effectiveness, while providing insights into operational efficiency and compliance with evaluation metrics. By generating and analyzing scheduled reports, QA managers and supervisors can identify coaching opportunities, ensure alignment with organizational goals, and drive continuous improvement. 
 
 ## Reports Tab
 
