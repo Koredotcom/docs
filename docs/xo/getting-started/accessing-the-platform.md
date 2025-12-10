@@ -12,13 +12,13 @@ Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Int
 
 AI for Service is available in multiple regions. Click the URL to visit your region-specific login page.
 
-* **USA**: [https://platform.kore.ai](https://platform.kore.ai/)
-* **Europe (London)**: [https://eu-platform.kore.ai](https://eu-platform.kore.ai/)
-* **Europe (Frankfurt)**: [https://de-platform.kore.ai](https://de-bots.kore.ai/)
-* **Australia (APAC - Sydney)**: [https://au-platform.kore.ai](https://au-platform.kore.ai/)
-* **Japan (APAC - Tokyo)**: [https://jp-platform.kore.ai](https://jp-platform.kore.ai/)
-* **India**: [https://ind-platform.kore.ai](https://ind-platform.kore.ai/)
-* **UAE**: [https://uae-platform.kore.ai](https://uae-platform.kore.ai/)
+* **USA**: [https://platform.kore.ai](https://platform.kore.ai/){:target="_blank"}
+* **Europe (London)**: [https://eu-platform.kore.ai](https://eu-platform.kore.ai/){:target="_blank"}
+* **Europe (Frankfurt)**: [https://de-platform.kore.ai](https://de-bots.kore.ai/){:target="_blank"}
+* **Australia (APAC - Sydney)**: [https://au-platform.kore.ai](https://au-platform.kore.ai/){:target="_blank"}
+* **Japan (APAC - Tokyo)**: [https://jp-platform.kore.ai](https://jp-platform.kore.ai/){:target="_blank"}
+* **India**: [https://ind-platform.kore.ai](https://ind-platform.kore.ai/){:target="_blank"}
+* **UAE**: [https://uae-platform.kore.ai](https://uae-platform.kore.ai/){:target="_blank"}
 
 !!!Note
     
