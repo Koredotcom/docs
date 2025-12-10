@@ -22,7 +22,7 @@ AI for Service is available in multiple regions. Click the URL to visit your reg
 
 !!!Note
     
-    Throughout this documentation, the USA URL is used as an example. Replace it with your region-specific URL from the list above.
+    The USA URL is used as an example throughout the documentation. Replace it with the region-specific URL as appropriate.
 
 You can sign up for AI for Service in any of the following two ways:
 
