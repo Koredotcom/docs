@@ -29,6 +29,8 @@ Follow these steps to configure and deploy a new Docling model:
 
 Once deployment is complete, the model appears in the Deployed list and becomes available for use in the Doc Intelligence Node.
 
+<img src="../images/manage_ocr_docling_new.png" alt="manage OCR" title="manage OCR" style="border: 1px solid gray; zoom:80%;">
+
 ### Manage Existing Deployments
 
 You can view, undeploy, or delete Docling deployments directly from the list using the available actions.

@@ -229,7 +229,7 @@ nav:
     - Manage Custom Scripts:
       - Deploy and Manage Scripts: settings/manage-custom-scripts/custom-scripts.md 
     - Manage Models:
-      - Manage OCR: settings/manage-models/manage-ocr.md   
+      - Manage OCR Models: settings/manage-models/manage-ocr.md   
     - Monitoring: 
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md

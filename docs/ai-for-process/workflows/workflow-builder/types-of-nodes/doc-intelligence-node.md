@@ -1,4 +1,4 @@
-# Doc Intelligence Node – Automate Data Extraction
+# Doc Intelligence Node - Automate Data Extraction
 
 The Doc Intelligence Node enables document analysis and information extraction within workflows. It allows workflows to analyze documents using AI engines such as Docling, OpenAI, Anthropic, or Azure. Users can configure the node to process files from a static URL or workflow context variable, select the appropriate engine, and define engine-specific options to extract structured data or insights.
 
@@ -44,8 +44,8 @@ Begin by opening the Doc node’s properties panel and giving it a clear, descri
 ### 1. Provide File Input
 
 * Enter the **File URL** in the input field. You can use either:
-    * A **static URL**
-    * A **workflow context variable** to pass the document dynamically from upstream steps.
+    * A static URL
+    * A workflow context variable to pass the document dynamically from upstream steps.
 
 ### 2. Select Engine
 
@@ -59,7 +59,7 @@ Begin by opening the Doc node’s properties panel and giving it a clear, descri
 
 Configure engine-specific options to control how the document is processed. 
 
-Options include Async execution, which processes the document in the background without blocking the workflow, and Structured Data extraction, which generates machine-readable outputs for downstream nodes.
+Options include Async execution, which processes the document in the background without blocking the workflow, and Structured data extraction, which generates machine-readable outputs for downstream nodes.
 
 | Engine                 | Default settings                              | Structured data            | Notes |
 |------------------------|------------------------------------------------|-----------------------------|-------|
@@ -77,7 +77,7 @@ For information about supported file types, file size limits, and available mode
 
 Run the flow and verify the flow behaves as expected and fix any errors.
 
-The Debug Panel displays logs, extracted text, structured data, and metadata based on your node configuration.
+The Debug panel displays logs, extracted text, structured data, and metadata based on your node configuration.
 
 <img src="../images/debug_panel.png" alt="Doc node panel" title="Doc node panel" style="border: 1px solid gray; zoom:80%;">
 
